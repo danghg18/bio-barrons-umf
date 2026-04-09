@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Barron's Biologie – UMF Cluj</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2563EB">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Biologie">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#2563EB;--primary-light:#EFF6FF;--primary-mid:#3B82F6;--primary-dark:#1E40AF;
+  --emerald:#059669;--emerald-light:#ECFDF5;
+  --teal:#0891B2;--teal-light:#ECFEFF;
+  --violet:#7C3AED;--violet-light:#F5F3FF;
+  --rose:#E11D48;--rose-light:#FFF1F2;
+  --orange:#EA580C;--orange-light:#FFF7ED;
+  --slate-900:#0F172A;--slate-800:#1E293B;--slate-700:#334155;--slate-600:#475569;
+  --slate-500:#64748B;--slate-400:#94A3B8;--slate-300:#CBD5E1;
+  --slate-200:#E2E8F0;--slate-100:#F1F5F9;--slate-50:#F8FAFC;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Noto Sans',system-ui,sans-serif;background:#EEF2FF;color:var(--slate-700);line-height:1.7;min-height:100vh;transition:background .3s,color .3s;}
+h1,h2,h3,h4,h5,h6,.btn,.cat-label,.prog-num,.ch-name,.cat-badge,.sub{font-family:'Figtree',system-ui,sans-serif;}
+
+/* ── HEADER ── */
+.site-header{
+  background:linear-gradient(135deg,#1E3A8A 0%,#2563EB 55%,#0EA5E9 100%);
+  color:#fff;padding:3rem 2rem 2.5rem;text-align:center;
+  position:relative;overflow:hidden;
+}
+.site-header::before{
+  content:'';position:absolute;top:-90px;right:-80px;width:300px;height:300px;
+  border-radius:50%;background:rgba(255,255,255,.06);pointer-events:none;
+}
+.site-header::after{
+  content:'';position:absolute;bottom:-100px;left:-60px;width:240px;height:240px;
+  border-radius:50%;background:rgba(255,255,255,.04);pointer-events:none;
+}
+.site-header h1{font-size:2.4rem;font-weight:900;letter-spacing:-.5px;position:relative;}
+.site-header p{opacity:.9;margin-top:.5rem;font-size:1rem;font-weight:500;position:relative;}
+.site-header .sub{
+  display:inline-block;margin-top:1rem;
+  background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.28);
+  padding:.32rem 1.1rem;border-radius:2rem;font-size:.82rem;font-weight:800;
+  letter-spacing:.04em;position:relative;
+}
+
+/* ── MAIN ── */
+.container{max-width:1160px;margin:0 auto;padding:2rem 1.5rem 4rem;}
+
+/* ── PROGRESS OVERVIEW ── */
+.progress-banner{
+  background:#fff;border-radius:1rem;
+  box-shadow:0 1px 3px rgba(0,0,0,.05),0 6px 20px rgba(0,0,0,.06);
+  padding:1.4rem 1.8rem;margin-bottom:1.8rem;
+  display:flex;align-items:center;gap:1.8rem;flex-wrap:wrap;
+}
+.prog-stat{text-align:center;min-width:80px;}
+.prog-num{font-size:1.9rem;font-weight:900;color:var(--primary);line-height:1;}
+.prog-lbl{font-size:.68rem;color:var(--slate-400);margin-top:5px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;}
+.prog-divider{width:1px;height:48px;background:var(--slate-200);}
+.prog-bar-section{flex:1;min-width:200px;}
+.prog-bar-section p{font-size:.8rem;color:var(--slate-500);margin-bottom:.5rem;font-weight:700;}
+.prog-track{background:var(--slate-100);border-radius:6px;height:8px;overflow:hidden;}
+.prog-fill{background:linear-gradient(90deg,var(--emerald),#34D399);height:100%;border-radius:6px;}
+
+/* ── INFO BANNER ── */
+.info-banner{
+  background:#fff;border:1px solid var(--slate-200);
+  border-radius:1rem;padding:1.1rem 1.5rem;margin-bottom:2rem;
+  display:flex;align-items:flex-start;gap:.9rem;
+  box-shadow:0 1px 3px rgba(0,0,0,.04);
+}
+.info-banner .icon{
+  width:34px;height:34px;border-radius:8px;background:var(--primary);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;
+}
+.info-banner .icon svg{width:17px;height:17px;fill:#fff;}
+.info-banner h3{font-size:.9rem;font-weight:800;color:var(--slate-800);margin-bottom:.15rem;}
+.info-banner p{font-size:.81rem;color:var(--slate-500);line-height:1.6;}
+
+/* ── LEGEND ── */
+.legend-bar{display:flex;gap:1.4rem;flex-wrap:wrap;margin-bottom:1.8rem;font-size:.79rem;}
+.legend-item{display:flex;align-items:center;gap:.45rem;color:var(--slate-500);font-weight:700;}
+.legend-dot{width:10px;height:10px;border-radius:3px;flex-shrink:0;}
+
+/* ── CATEGORY BLOCK ── */
+.cat-block{
+  background:#fff;border-radius:1.2rem;overflow:hidden;
+  box-shadow:0 1px 3px rgba(0,0,0,.05),0 8px 28px rgba(0,0,0,.07);
+  margin-bottom:1.8rem;
+}
+.cat-header{
+  padding:.85rem 1.4rem;display:flex;align-items:center;gap:.75rem;
+}
+.cat-icon{display:none;}
+.cat-label{font-size:.75rem;font-weight:900;text-transform:uppercase;letter-spacing:.1em;color:#fff;flex:1;}
+.cat-badge{
+  background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.3);
+  color:#fff;font-size:.69rem;font-weight:800;padding:.15rem .6rem;border-radius:1rem;
+}
+.cat-body{padding:1.2rem 1.4rem 1.4rem;}
+
+/* Category color themes */
+.cat-blue .cat-header{background:linear-gradient(135deg,#1E40AF,#2563EB);}
+.cat-teal .cat-header{background:linear-gradient(135deg,#164E63,#0891B2);}
+.cat-violet .cat-header{background:linear-gradient(135deg,#4C1D95,#7C3AED);}
+.cat-rose .cat-header{background:linear-gradient(135deg,#881337,#E11D48);}
+.cat-orange .cat-header{background:linear-gradient(135deg,#7C2D12,#EA580C);}
+.cat-emerald .cat-header{background:linear-gradient(135deg,#064E3B,#059669);}
+
+/* Card top border color per category */
+.cat-blue .ch-card.soon{border-top-color:rgba(37,99,235,.25);}
+.cat-blue .ch-card.done{border-top-color:var(--emerald);}
+.cat-teal .ch-card.soon{border-top-color:rgba(8,145,178,.25);}
+.cat-violet .ch-card.soon{border-top-color:rgba(124,58,237,.25);}
+.cat-rose .ch-card.soon{border-top-color:rgba(225,29,72,.25);}
+.cat-orange .ch-card.soon{border-top-color:rgba(234,88,12,.25);}
+.cat-emerald .ch-card.soon{border-top-color:rgba(5,150,105,.25);}
+
+/* ── CHAPTER CARD GRID ── */
+.chapters-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.9rem;}
+
+/* ── CHAPTER CARD ── */
+.ch-card{
+  background:var(--slate-50);border-radius:.9rem;
+  box-shadow:0 1px 2px rgba(0,0,0,.04),0 2px 8px rgba(0,0,0,.05);
+  overflow:hidden;transition:transform .2s,box-shadow .2s;
+  display:flex;flex-direction:column;position:relative;
+  border-top:3px solid transparent;
+}
+.ch-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.1);}
+.ch-card.done{border-top-color:var(--emerald);background:#fff;}
+.ch-card.soon{opacity:.8;}
+.ch-icon{display:none;}
+.ch-card-head{padding:1rem 1.1rem .5rem;display:flex;align-items:flex-start;}
+.ch-meta{flex:1;}
+.ch-num{font-size:.67rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--slate-400);margin-bottom:.2rem;}
+.ch-name{font-size:.93rem;font-weight:800;color:var(--slate-900);line-height:1.35;}
+.ch-status{display:inline-block;padding:.13rem .6rem;border-radius:1rem;font-size:.67rem;font-weight:800;margin-top:.3rem;}
+.status-done{background:var(--emerald-light);color:var(--emerald);}
+.status-soon{background:var(--slate-100);color:var(--slate-400);}
+.ch-card-body{padding:0 1.1rem .75rem;font-size:.81rem;color:var(--slate-500);flex:1;line-height:1.55;}
+.ch-tags{display:flex;flex-wrap:wrap;gap:.28rem;margin-top:.5rem;}
+.ch-tag{background:#fff;border:1px solid var(--slate-200);border-radius:.5rem;padding:.08rem .5rem;font-size:.67rem;color:var(--slate-600);font-weight:700;}
+.ch-card.done .ch-tag{background:var(--slate-50);}
+.ch-card-foot{padding:.65rem 1.1rem;border-top:1px solid var(--slate-200);display:flex;gap:.5rem;}
+.btn{
+  display:inline-flex;align-items:center;gap:.3rem;padding:.42rem 1rem;
+  border-radius:.65rem;font-size:.79rem;font-weight:800;text-decoration:none;
+  border:none;cursor:pointer;transition:all .2s;font-family:'Figtree',system-ui,sans-serif;
+  touch-action:manipulation;
+}
+*:focus-visible{outline:2px solid var(--primary);outline-offset:2px;border-radius:4px;}
+.btn-primary{background:var(--primary);color:#fff;}
+.btn-primary:hover{background:var(--primary-mid);}
+.btn-outline{background:#fff;color:var(--primary);border:2px solid var(--primary);}
+.btn-outline:hover{background:var(--primary-light);}
+.btn-disabled{background:var(--slate-100);color:var(--slate-300);cursor:default;border:1px solid var(--slate-200);}
+
+/* ── DARK MODE BUTTON ── */
+#dm-btn{
+  position:fixed;bottom:1.5rem;right:1.5rem;background:#fff;color:#555;
+  border:2px solid var(--slate-200);border-radius:50%;width:2.8rem;height:2.8rem;
+  font-size:1.2rem;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.1);
+  display:flex;align-items:center;justify-content:center;z-index:200;
+  transition:all .2s;user-select:none;touch-action:manipulation;
+}
+#dm-btn:hover{box-shadow:0 4px 14px rgba(0,0,0,.16);}
+
+/* ── FOOTER ── */
+footer{
+  text-align:center;padding:1.8rem;color:var(--slate-400);font-size:.78rem;
+  border-top:1px solid var(--slate-200);background:#fff;margin-top:1rem;font-weight:600;
+}
+
+/* ── DARK MODE ── */
+body.dark{
+  background:#0F172A;color:#CBD5E1;
+  --slate-50:#1E293B;--slate-100:#1E293B;--slate-200:#334155;
+}
+body.dark .progress-banner,
+body.dark .info-banner,
+body.dark footer{background:#1E293B;border-color:#334155;}
+body.dark .cat-block{background:#1E293B;box-shadow:0 1px 3px rgba(0,0,0,.3),0 8px 28px rgba(0,0,0,.3);}
+body.dark .ch-card{background:#172033;box-shadow:0 1px 2px rgba(0,0,0,.2);}
+body.dark .ch-card.done{background:#1E293B;}
+body.dark .ch-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.35);}
+body.dark .ch-name{color:#E2E8F0;}
+body.dark .ch-tag{background:#334155;border-color:#475569;color:#94A3B8;}
+body.dark .ch-card-foot{border-top-color:#334155;}
+body.dark .btn-disabled{background:#334155;color:#475569;border-color:#475569;}
+body.dark .btn-outline{background:#1E293B;color:#93C5FD;border-color:#3B82F6;}
+body.dark .btn-outline:hover{background:#0D2545;}
+body.dark .prog-divider{background:#334155;}
+body.dark .prog-track{background:#334155;}
+body.dark .legend-item{color:#64748B;}
+body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
+body.dark .info-banner h3{color:#E2E8F0;}
+
+@media(max-width:600px){
+  .site-header h1{font-size:1.7rem;}
+  .container{padding:1rem 1rem 3rem;}
+  .chapters-grid{grid-template-columns:1fr;}
+  .progress-banner{gap:.8rem;}
+}
+</style>
+</head>
+<body>
+
+<div class="site-header">
+  <h1>Barron's Biologie</h1>
+  <p>Ghid complet pentru admiterea la Medicină – UMF Cluj</p>
+  <span class="sub">23 capitole · Lecții + Grile UMF</span>
+</div>
+
+<div class="container">
+
+  <!-- PROGRESS -->
+  <div class="progress-banner">
+    <div class="prog-stat">
+      <div class="prog-num" id="done-count">1</div>
+      <div class="prog-lbl">Capitol complet</div>
+    </div>
+    <div class="prog-divider"></div>
+    <div class="prog-stat">
+      <div class="prog-num">23</div>
+      <div class="prog-lbl">Total capitole</div>
+    </div>
+    <div class="prog-divider"></div>
+    <div class="prog-bar-section">
+      <p>Progres general (1 / 23)</p>
+      <div class="prog-track"><div class="prog-fill" style="width:4.3%"></div></div>
+    </div>
+  </div>
+
+  <!-- INFO -->
+  <div class="info-banner">
+    <div class="icon">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+    </div>
+    <div>
+      <h3>Cum funcționează</h3>
+      <p>Fiecare capitol are <strong>Lecții</strong> (materie + explicații) și <strong>Grile</strong> (întrebări tip UMF + analiză progres). Conținutul marcat cu <span style="color:#e74c3c;font-weight:700;">*</span> reprezintă informații adăugate față de manual.</p>
+    </div>
+  </div>
+
+  <div class="legend-bar">
+    <div class="legend-item"><div class="legend-dot" style="background:var(--emerald)"></div> Capitol complet</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--slate-300)"></div> În curând</div>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       SECȚIUNEA 1: BAZELE ANATOMIEI
+       ═══════════════════════════════════ -->
+  <div class="cat-block cat-blue">
+    <div class="cat-header">
+      <span class="cat-icon">🔬</span>
+      <span class="cat-label">Bazele Anatomiei &amp; Fiziologiei</span>
+      <span class="cat-badge">4 capitole</span>
+    </div>
+    <div class="cat-body">
+      <div class="chapters-grid">
+
+        <div class="ch-card soon">
+          <div class="ch-card-head"><div class="ch-icon">🏛️</div><div class="ch-meta">
+            <div class="ch-num">Capitolul 1</div>
+            <div class="ch-name">Introducere în anatomie și fiziologie</div>
+            <span class="ch-status status-soon">În curând</span>
+          </div></div>
+          <div class="ch-card-body"><p>Niveluri de organizare, homeostazia, planuri anatomice, terminologie.</p>
+            <div class="ch-tags"><span class="ch-tag">Homeostazie</span><span class="ch-tag">Planuri</span><span class="ch-tag">Organizare</span></div></div>
+          <div class="ch-card-foot"><span class="btn btn-disabled">În curând</span></div>
+        </div>
+
+        <div class="ch-card soon">
+          <div class="ch-card-head"><div class="ch-icon">⚗️</div><div class="ch-meta">
+            <div class="ch-num">Capitolul 2</div>
+            <div class="ch-name">Bazele chimice ale anatomiei și fiziologiei</div>
+            <span class="ch-status status-soon">În curând</span>
+          </div></div>
+          <div class="ch-card-body"><p>Atomi, molecule, legături chimice, apă, pH, macromolecule biologice.</p>
+            <div class="ch-tags"><span class="ch-tag">Atomi</span><span class="ch-tag">pH</span><span class="ch-tag">Proteine</span><span class="ch-tag">ADN</span></div></div>
+          <div class="ch-card-foot"><span class="btn btn-disabled">În curând</span></div>
+        </div>
+
+        <div class="ch-card soon">
+          <div class="ch-card-head"><div class="ch-icon">🔬</div><div class="ch-meta">
+            <div class="ch-num">Capitolul 3</div>
+            <div class="ch-name">Celula și fiziologia celulară</div>
+            <span class="ch-status status-soon">În curând</span>
+          </div></div>
+          <div class="ch-card-body"><p>Structura celulei, organite, membrană, transport, mitoza, meioza.</p>
+            <div class="ch-tags"><span class="ch-tag">Organite</span><span class="ch-tag">Mitoza</span><span class="ch-tag">Transport</span></div></div>
+          <div class="ch-card-foot"><span class="btn btn-disabled">În curând</span></div>
+        </div>
+
+        <div class="ch-card soon">
+          <div class="ch-card-head"><div class="ch-icon">🧫</div><div class="ch-meta">
+            <div class="ch-num">Capitolul 4</div>
+            <div class="ch-name">Țesuturile</div>
+            <span class="ch-status status-soon">În curând</span>
+          </div></div>
+          <div class="ch-card-body"><p>Epitelial, conjunctiv, muscular, nervos – structură, localizare, funcție.</p>
+            <div class="ch-tags"><span class="ch-tag">Epiteliu</span><span class="ch-tag">Conjunctiv</span><span class="ch-tag">Muscular</span><span class="ch-tag">Nervos</span></div></div>
+          <div class="ch-card-foot"><span class="btn btn-disabled">În curând</span></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       SECȚIUNEA 2: TEGUMENT, OASE & MUȘCHI
+       ═══════════════════════════════════ -->
+  <div class="cat-block cat-teal">
+    <div class="cat-header">
+      <span class="cat-icon">🦴</span>
+      <span class="cat-label">Tegument, Oase &amp; Mușchi</span>
+      <span class="cat-badge">5 capitole</span>
+    </div>
+    <div class="cat-body">
+      <div class="chapters-grid">
+
+        <div class="ch-card soon">
+          <div class="ch-card-head"><div class="ch-icon">🩺</div><div class="ch-meta">
+            <div class="ch-num">Capitolul 5</div>
+            <div class="ch-name">Sistemul tegumentar</div>
+            <span class="ch-status status-soon">În curând</span>
+          </div></div>
+          <div class="ch-card-body"><p>Pielea (epiderm, derm, hipoderm), glande, păr, unghii, funcții.</p>
+            <div class="ch-tags"><span class="ch-tag">Epiderm</span><span class="ch-tag">Derm</span><span class="ch-tag">Termoreglare</span></div></div>
+          <div class="ch-card-foot"><span class="btn btn-disabled">În curând</span></div>
+        </div>
+
+        <div class="ch-card soon">
+          <div class="ch-card-head"><div class="ch-icon">🦷</div><div class="ch-meta">
+            <div class="ch-num">Capitolul 6</div>
+            <div class="ch-name">Oasele și articulațiile</div>
+            <span class="ch-status status-soon">În curând</span>
+          </div></div>
+          <div class="ch-card-body"><p>Clasificare oase, structura osului, articulații – tipuri și mobilitate.</p>
+            <div class="ch-tags"><span class="ch-tag">Os compact</span><span class="ch-tag">Articulații</span><span class="ch-tag">Diafiză</span></div></div>
+          <div class="ch-card-foot"><span class="btn btn-disabled">În curând</span></div>
+        </div>
+
+        <div class="ch-card soon">
+          <div class="ch-card-head"><div class="ch-icon">🦴</div><div class="ch-meta">
+            <div class="ch-num">Capitolul 7</div>
+            <div class="ch-name">Sistemul osos</div>
+            <span class="ch-status status-soon">În curând</span>
+          </div></div>
+          <div class="ch-card-body"><p>Scheletul axial și apendicular, craniu, coloana, cutie toracică, membre.</p>
+            <div class="ch-tags"><span class="ch-tag">Schelet axial</span><span class="ch-tag">Craniu</span><span class="ch-tag">Coloană</span></div></div>
+          <div class="ch-card-foot"><span class="btn btn-disabled">În curând</span></div>
+        </div>
+
+        <div class="ch-card soon">
+          <div class="ch-card-head"><div class="ch-icon">💪</div><div class="ch-meta">
+            <div class="ch-num">Capitolul 8</div>
+            <div class="ch-name">Țesutul muscular</div>
+            <span class="ch-status status-soon">În curând</span>
+          </div></div>
+          <div class="ch-card-body"><p>Tipuri de mușchi, structura fibrei musculare, contracția, ATP.</p>
+            <div class="ch-tags"><span class="ch-tag">Sarcomer</span><span class="ch-tag">Actină</span><span class="ch-tag">Miozină</span><span class="ch-tag">ATP</span></div></div>
+          <div class="ch-card-foot"><span class="btn btn-disabled">În curând</span></div>
+        </div>
+
+        <div class="ch-card soon">
+          <div class="ch-card-head"><div class="ch-icon">🏃</div><div class="ch-meta">
+            <div class="ch-num">Capitolul 9</div>
+            <div class="ch-name">Sistemul muscular</div>
+            <span class="ch-status status-soon">În curând</span>
+          </div></div>
+          <div class="ch-card-body"><p>Principalii mușchi ai corpului, denumire, origine, inserție, funcție.</p>
+            <div class="ch-tags"><span class="ch-tag">Mușchi scheletici</span><span class="ch-tag">Grupe musculare</span></div></div>
+          <div class="ch-card-foot"><span class="btn btn-disabled">În curând</span></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       SECȚIUNEA 3: SISTEM NERVOS & SIMȚURI
+       ═══════════════════════════════════ -->
+  <div class="cat-block cat-violet">
+    <div class="cat-header">
+      <span class="cat-icon">🧠</span>
+      <span class="cat-label">Sistem Nervos, Simțuri &amp; Endocrin</span>
+      <span class="cat-badge">4 capitole</span>
+    </div>
+    <div class="cat-body">
+      <div class="chapters-grid">
+
+        <div class="ch-card soon">
+          <div class="ch-card-head"><div class="ch-icon">⚡</div><div class="ch-meta">
+            <div class="ch-num">Capitolul 10</div>
+            <div class="ch-name">Țesutul nervos</div>
+            <span class="ch-status status-soon">În curând</span>
+          </div></div>
+          <div class="ch-card-body"><p>Neuronul, glia, potențial de acțiune, sinapsă, neurotransmițători.</p>
+            <div class="ch-tags"><span class="ch-tag">Neuron</span><span class="ch-tag">Sinapsă</span><span class="ch-tag">Potențial acțiune</span></div></div>
+          <div class="ch-card-foot"><span class="btn btn-disabled">În curând</span></div>
+        </div>
+
+        <div class="ch-card soon">
+          <div class="ch-card-head"><div class="ch-icon">🧠</div><div class="ch-meta">
+            <div class="ch-num">Capitolul 11</div>
+            <div class="ch-name">Organizarea sistemului nervos</div>
+            <span class="ch-status status-soon">În curând</span>
+          </div></div>
+          <div class="ch-card-body"><p>SNC (encefal, măduvă), SNP (somatic, autonom), reflexe.</p>
+            <div class="ch-tags"><span class="ch-tag">SNC</span><span class="ch-tag">SNP</span><span class="ch-tag">Reflex</span><span class="ch-tag">Autonom</span></div></div>
+          <div class="ch-card-foot"><span class="btn btn-disabled">În curând</span></div>
+        </div>
+
+        <div class="ch-card soon">
+          <div class="ch-card-head"><div class="ch-icon">👁️</div><div class="ch-meta">
+            <div class="ch-num">Capitolul 12</div>
+            <div class="ch-name">Organele de simț</div>
+            <span class="ch-status status-soon">În curând</span>
+          </div></div>
+          <div class="ch-card-body"><p>Văz, auz, echilibru, gust, miros – structură și mecanism de percepție.</p>
+            <div class="ch-tags"><span class="ch-tag">Ochi</span><span class="ch-tag">Ureche</span><span class="ch-tag">Receptori</span></div></div>
+          <div class="ch-card-foot"><span class="btn btn-disabled">În curând</span></div>
+        </div>
+
+        <div class="ch-card soon">
+          <div class="ch-card-head"><div class="ch-icon">🔬</div><div class="ch-meta">
+            <div class="ch-num">Capitolul 13</div>
+            <div class="ch-name">Sistemul endocrin</div>
+            <span class="ch-status status-soon">În curând</span>
+          </div></div>
+          <div class="ch-card-body"><p>Glande endocrine, hormoni, feedback negativ/pozitiv, axe hormonale.</p>
+            <div class="ch-tags"><span class="ch-tag">Hormoni</span><span class="ch-tag">Hipofiza</span><span class="ch-tag">Feedback</span><span class="ch-tag">Tiroida</span></div></div>
+          <div class="ch-card-foot"><span class="btn btn-disabled">În curând</span></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       SECȚIUNEA 4: SÂNGE, CARDIOVASCULAR, IMUN
+       ═══════════════════════════════════ -->
+  <div class="cat-block cat-rose">
+    <div class="cat-header">
+      <span class="cat-icon">❤️</span>
+      <span class="cat-label">Sânge, Cardiovascular &amp; Imunitate</span>
+      <span class="cat-badge">3 capitole</span>
+    </div>
+    <div class="cat-body">
+      <div class="chapters-grid">
+
+        <div class="ch-card soon">
+          <div class="ch-card-head"><div class="ch-icon">🩸</div><div class="ch-meta">
+            <div class="ch-num">Capitolul 14</div>
+            <div class="ch-name">Sângele</div>
+            <span class="ch-status status-soon">În curând</span>
+          </div></div>
+          <div class="ch-card-body"><p>Compoziția sângelui, eritrocite, leucocite, trombocite, grupe sanguine.</p>
+            <div class="ch-tags"><span class="ch-tag">Eritrocite</span><span class="ch-tag">Hemoglobina</span><span class="ch-tag">Grupe ABO</span></div></div>
+          <div class="ch-card-foot"><span class="btn btn-disabled">În curând</span></div>
+        </div>
+
+        <div class="ch-card soon">
+          <div class="ch-card-head"><div class="ch-icon">❤️</div><div class="ch-meta">
+            <div class="ch-num">Capitolul 15</div>
+            <div class="ch-name">Sistemul cardiovascular</div>
+            <span class="ch-status status-soon">În curând</span>
+          </div></div>
+          <div class="ch-card-body"><p>Inima, ciclul cardiac, vase sanguine, reglarea presiunii arteriale.</p>
+            <div class="ch-tags"><span class="ch-tag">Inimă</span><span class="ch-tag">Sistolă</span><span class="ch-tag">Tensiune</span><span class="ch-tag">Capilare</span></div></div>
+          <div class="ch-card-foot"><span class="btn btn-disabled">În curând</span></div>
+        </div>
+
+        <div class="ch-card soon">
+          <div class="ch-card-head"><div class="ch-icon">🛡️</div><div class="ch-meta">
+            <div class="ch-num">Capitolul 16</div>
+            <div class="ch-name">Sistemul limfatic și imun</div>
+            <span class="ch-status status-soon">În curând</span>
+          </div></div>
+          <div class="ch-card-body"><p>Limfa, ganglioni, splina, imunitate nespecifică și specifică, anticorpi.</p>
+            <div class="ch-tags"><span class="ch-tag">Limfocite</span><span class="ch-tag">Anticorpi</span><span class="ch-tag">Imunitate</span></div></div>
+          <div class="ch-card-foot"><span class="btn btn-disabled">În curând</span></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       SECȚIUNEA 5: RESPIRATOR & DIGESTIV
+       ═══════════════════════════════════ -->
+  <div class="cat-block cat-orange">
+    <div class="cat-header">
+      <span class="cat-icon">🫁</span>
+      <span class="cat-label">Respirator, Digestiv &amp; Metabolism</span>
+      <span class="cat-badge">3 capitole</span>
+    </div>
+    <div class="cat-body">
+      <div class="chapters-grid">
+
+        <div class="ch-card soon">
+          <div class="ch-card-head"><div class="ch-icon">🫁</div><div class="ch-meta">
+            <div class="ch-num">Capitolul 17</div>
+            <div class="ch-name">Sistemul respirator</div>
+            <span class="ch-status status-soon">În curând</span>
+          </div></div>
+          <div class="ch-card-body"><p>Căi respiratorii, plămâni, schimb gazos, controlul respirației, pH.</p>
+            <div class="ch-tags"><span class="ch-tag">Alveole</span><span class="ch-tag">O₂/CO₂</span><span class="ch-tag">Hemoglobina</span></div></div>
+          <div class="ch-card-foot"><span class="btn btn-disabled">În curând</span></div>
+        </div>
+
+        <div class="ch-card soon">
+          <div class="ch-card-head"><div class="ch-icon">🍽️</div><div class="ch-meta">
+            <div class="ch-num">Capitolul 18</div>
+            <div class="ch-name">Sistemul digestiv</div>
+            <span class="ch-status status-soon">În curând</span>
+          </div></div>
+          <div class="ch-card-body"><p>Tubul digestiv, organe anexe, digestie chimică și mecanică, absorbție.</p>
+            <div class="ch-tags"><span class="ch-tag">Stomac</span><span class="ch-tag">Intestin</span><span class="ch-tag">Ficat</span><span class="ch-tag">Enzime</span></div></div>
+          <div class="ch-card-foot"><span class="btn btn-disabled">În curând</span></div>
+        </div>
+
+        <div class="ch-card soon">
+          <div class="ch-card-head"><div class="ch-icon">⚡</div><div class="ch-meta">
+            <div class="ch-num">Capitolul 19</div>
+            <div class="ch-name">Metabolism și nutriție</div>
+            <span class="ch-status status-soon">În curând</span>
+          </div></div>
+          <div class="ch-card-body"><p>Catabolism, anabolism, glicoliză, ciclul Krebs, ATP, vitamine, minerale.</p>
+            <div class="ch-tags"><span class="ch-tag">ATP</span><span class="ch-tag">Glicoliză</span><span class="ch-tag">Krebs</span><span class="ch-tag">Vitamine</span></div></div>
+          <div class="ch-card-foot"><span class="btn btn-disabled">În curând</span></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       SECȚIUNEA 6: EXCRETOR & ECHILIBRU
+       ═══════════════════════════════════ -->
+  <div class="cat-block cat-emerald">
+    <div class="cat-header">
+      <span class="cat-icon">🫘</span>
+      <span class="cat-label">Sistemul Excretor &amp; Echilibru Intern</span>
+      <span class="cat-badge">2 capitole</span>
+    </div>
+    <div class="cat-body">
+      <div class="chapters-grid">
+
+        <!-- ★ CAPITOL COMPLET ★ -->
+        <div class="ch-card done">
+          <div class="ch-card-head"><div class="ch-icon">🫘</div><div class="ch-meta">
+            <div class="ch-num">Capitolul 20</div>
+            <div class="ch-name">Sistemul urinar</div>
+            <span class="ch-status status-done">Complet</span>
+          </div></div>
+          <div class="ch-card-body">
+            <p>Rinichii, nefronul, filtrarea glomerulară, ADH, aldosteron, SRAA, compoziția urinei, structuri anexe.</p>
+            <div class="ch-tags"><span class="ch-tag">Nefron</span><span class="ch-tag">Filtrare</span><span class="ch-tag">ADH</span><span class="ch-tag">Aldosteron</span><span class="ch-tag">25 grile</span></div>
+          </div>
+          <div class="ch-card-foot">
+            <a class="btn btn-primary" href="sistemul_renal_complet.html">Deschide</a>
+            <a class="btn btn-outline" href="sistemul_renal_complet.html">Grile</a>
+          </div>
+        </div>
+
+        <div class="ch-card soon">
+          <div class="ch-card-head"><div class="ch-icon">💧</div><div class="ch-meta">
+            <div class="ch-num">Capitolul 21</div>
+            <div class="ch-name">Echilibrul hidro-electrolitic și acido-bazic</div>
+            <span class="ch-status status-soon">În curând</span>
+          </div></div>
+          <div class="ch-card-body"><p>Compartimente hidrice, electroliți, pH sanguin, tampon, acidoză, alcaloză.</p>
+            <div class="ch-tags"><span class="ch-tag">pH</span><span class="ch-tag">Tampon</span><span class="ch-tag">Electroliți</span><span class="ch-tag">Acidoză</span></div></div>
+          <div class="ch-card-foot"><span class="btn btn-disabled">În curând</span></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       SECȚIUNEA 7: SISTEM REPRODUCĂTOR
+       ═══════════════════════════════════ -->
+  <div class="cat-block cat-teal">
+    <div class="cat-header">
+      <span class="cat-icon">🧬</span>
+      <span class="cat-label">Sistemul Reproducător</span>
+      <span class="cat-badge">2 capitole</span>
+    </div>
+    <div class="cat-body">
+      <div class="chapters-grid">
+
+        <div class="ch-card soon">
+          <div class="ch-card-head"><div class="ch-icon">♂️</div><div class="ch-meta">
+            <div class="ch-num">Capitolul 22</div>
+            <div class="ch-name">Sistemul reproducător masculin</div>
+            <span class="ch-status status-soon">În curând</span>
+          </div></div>
+          <div class="ch-card-body"><p>Anatomia aparatului reproductor masculin, spermatogeneza, hormoni (FSH, LH, testosteron).</p>
+            <div class="ch-tags"><span class="ch-tag">Spermatogeneză</span><span class="ch-tag">Testosteron</span><span class="ch-tag">FSH/LH</span></div></div>
+          <div class="ch-card-foot"><span class="btn btn-disabled">În curând</span></div>
+        </div>
+
+        <div class="ch-card soon">
+          <div class="ch-card-head"><div class="ch-icon">♀️</div><div class="ch-meta">
+            <div class="ch-num">Capitolul 23</div>
+            <div class="ch-name">Sistemul reproducător feminin</div>
+            <span class="ch-status status-soon">În curând</span>
+          </div></div>
+          <div class="ch-card-body"><p>Anatomia aparatului reproductor feminin, ovogeneza, ciclul menstrual, sarcina.</p>
+            <div class="ch-tags"><span class="ch-tag">Ovogeneză</span><span class="ch-tag">Estrogen</span><span class="ch-tag">Ciclu menstrual</span><span class="ch-tag">Sarcină</span></div></div>
+          <div class="ch-card-foot"><span class="btn btn-disabled">În curând</span></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  Barron's Biologie · Pregătire UMF Cluj · Material educațional personal · 23 capitole
+</footer>
+
+<button id="dm-btn" title="Mod noapte" onclick="toggleDarkMode()">🌙</button>
+
+<script>
+function toggleDarkMode(){
+  const isDark = document.body.classList.toggle('dark');
+  document.getElementById('dm-btn').textContent = isDark ? '☀️' : '🌙';
+  localStorage.setItem('darkMode', isDark ? '1' : '0');
+}
+(function(){
+  if(localStorage.getItem('darkMode')==='1'){
+    document.body.classList.add('dark');
+    document.addEventListener('DOMContentLoaded',function(){
+      const btn=document.getElementById('dm-btn');
+      if(btn) btn.textContent='☀️';
+    });
+  }
+})();
+if('serviceWorker' in navigator){
+  window.addEventListener('load', function(){
+    navigator.serviceWorker.register('sw.js').catch(function(){});
+  });
+}
+</script>
+
+</body>
+</html>
