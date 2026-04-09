@@ -366,6 +366,15 @@ body.dark .gtab-btn{color:#64748B;}
 body.dark .gtab-btn.active{color:#93C5FD;border-bottom-color:#93C5FD;}
 body.dark .quiz-header{background:#1E293B;box-shadow:0 1px 4px rgba(0,0,0,.4);}
 body.dark .quiz-progress{background:#334155;color:#94A3B8;}
+.sync-bar{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;margin-bottom:1rem;padding:.7rem 1rem;background:#EFF6FF;border:1px solid #BFDBFE;border-radius:.7rem;font-size:.82rem;}
+.sync-bar span{color:var(--slate-500);flex:1;min-width:120px;}
+.sync-btn{padding:.38rem .85rem;border-radius:.55rem;border:none;cursor:pointer;font-size:.8rem;font-weight:700;font-family:'Figtree',system-ui,sans-serif;transition:all .18s;}
+.sync-btn.export{background:var(--primary);color:#fff;}
+.sync-btn.export:hover{background:var(--primary-dark);}
+.sync-btn.import{background:#fff;color:var(--primary);border:2px solid var(--primary);}
+.sync-btn.import:hover{background:var(--primary-light);}
+body.dark .sync-bar{background:#0D2545;border-color:#1E40AF;}
+body.dark .sync-btn.import{background:#1E293B;}
 body.dark .question-card{background:#1E293B;border-left-color:#334155;}
 body.dark .option{border-color:#334155;}
 body.dark .option:hover:not(.disabled){border-color:var(--primary);background:#0D2545;}
@@ -1015,6 +1024,11 @@ body.dark mark.hl{background:#3D3000;color:#FEF9C3;}
       <h2>Grile UMF Cluj — Sistemul Urinar</h2>
       <div class="quiz-progress" id="progress-text">0 / 55 completate</div>
       <div class="progress-bar-wrap"><div class="progress-bar" id="progress-bar" style="width:0%"></div></div>
+    </div>
+    <div class="sync-bar">
+      <span>📱 Transferă progresul între dispozitive:</span>
+      <button class="sync-btn export" onclick="exportProgress()">📋 Copiază progresul</button>
+      <button class="sync-btn import" onclick="importProgress()">📥 Importă progresul</button>
     </div>
     <div id="pagination-top" class="pagination-controls" style="display:none">
       <button class="gbtn gbtn-secondary" id="btn-prev-top" onclick="changePage(-1)">← Pagina anterioară</button>
@@ -1944,6 +1958,33 @@ document.addEventListener('mouseup', function(e) {
 
 // ════ INIT ════
 goto('home');
+
+// ── SINCRONIZARE PROGRES ──
+function exportProgress(){
+  var data = {
+    q: localStorage.getItem(STORAGE_KEY) || '{}',
+    a: localStorage.getItem(ANALYSIS_KEY) || '{}'
+  };
+  var code = btoa(unescape(encodeURIComponent(JSON.stringify(data))));
+  navigator.clipboard.writeText(code).then(function(){
+    alert('✅ Codul a fost copiat!\n\nDu-te pe celălalt dispozitiv → Grile → "Importă progresul" și lipește codul.');
+  }).catch(function(){
+    prompt('Copiază manual codul de mai jos:', code);
+  });
+}
+function importProgress(){
+  var code = prompt('Lipește codul de progres (copiat de pe alt dispozitiv):');
+  if(!code || !code.trim()) return;
+  try {
+    var data = JSON.parse(decodeURIComponent(escape(atob(code.trim()))));
+    if(data.q) localStorage.setItem(STORAGE_KEY, data.q);
+    if(data.a) localStorage.setItem(ANALYSIS_KEY, data.a);
+    alert('✅ Progresul a fost importat! Pagina se reîncarcă...');
+    location.reload();
+  } catch(e) {
+    alert('❌ Cod invalid. Asigură-te că ai copiat codul complet.');
+  }
+}
 
 // ── NAV MOBILE TOGGLE ──
 function toggleNav(){
