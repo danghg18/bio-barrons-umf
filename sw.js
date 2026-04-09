@@ -1,4 +1,4 @@
-const CACHE = 'biologie-v1';
+const CACHE = 'biologie-v2';
 const BASE = new URL('./', self.location.href).pathname;
 const ASSETS = [
   BASE + 'index.html',
