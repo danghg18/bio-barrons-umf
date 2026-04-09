@@ -120,17 +120,75 @@ main{margin-left:var(--sidebar);padding:0 2rem 4rem;max-width:1080px;}
 }
 /* ── MOBILE ── */
 @media(max-width:768px){
+  body{font-size:.88rem;overflow-x:hidden;}
   nav{transform:translateX(-100%);transition:transform .28s ease;z-index:150;}
   nav.open{transform:translateX(0);}
-  main{margin-left:0;padding:0 1rem 4rem;}
-  .hero{margin:0 -1rem 2rem;padding:3.8rem 1.2rem 1.8rem;}
-  .gtabs{padding-left:0;margin:0 -1rem 1.5rem;}
-  #top{right:1rem;bottom:4.5rem;}
-  #dm-btn{right:1rem;}
-  #hl-btn{right:1rem;}
+  main{margin-left:0;padding:0 .9rem 5rem;overflow-x:hidden;}
+
+  /* Hero */
+  .hero{margin:0 -.9rem 1.5rem;padding:3.4rem 1rem 1.4rem;}
+  .hero h1{font-size:1.2rem;line-height:1.3;}
+  .hero p{font-size:.82rem;}
+  .badges{gap:.3rem;}
+  .badge{font-size:.72rem;padding:.18rem .6rem;}
+
+  /* Cards & headings */
+  .card{padding:1rem;}
+  .card h2{font-size:1rem;}
+  .card h3{font-size:.88rem;}
+  .sec-head h2{font-size:1.05rem;}
+
+  /* Tabs grile */
+  .gtabs{padding-left:0;margin:0 -.9rem 1.2rem;display:flex;}
+  .gtab-btn{flex:1;padding:10px 6px;font-size:.8rem;text-align:center;}
+
+  /* Quiz header — coloana pe mobil */
+  .quiz-header{flex-direction:column;align-items:flex-start;padding:12px 14px;gap:6px;}
+  .quiz-header h2{font-size:.9rem;margin:0;}
+  .quiz-header .quiz-progress{font-size:.72rem;padding:4px 10px;}
+  .quiz-header .progress-bar-wrap{max-width:none;width:100%;}
+
+  /* Tabs */
+  .gtabs{overflow:hidden;}
+  .gtab-btn{flex:1;padding:10px 4px;font-size:.76rem;}
+
+  /* Paginare — 2 randuri pe mobil */
+  .pagination-controls{flex-wrap:wrap;gap:4px;padding:8px 0;}
+  .pagination-controls .gbtn{min-width:unset;flex:1;padding:7px 8px;font-size:.74rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .page-indicator{font-size:.74rem;padding:5px 8px;order:-1;width:100%;text-align:center;}
+
+  /* Butoane navigare lectii */
+  .page-nav{gap:.4rem;}
+  .page-nav a{padding:.38rem .75rem;font-size:.78rem;}
+
+  /* Sync bar */
+  .sync-bar{flex-direction:column;gap:.4rem;padding:.6rem .8rem;}
+  .sync-bar span{font-size:.76rem;}
+  .sync-btn{width:100%;padding:.45rem;text-align:center;}
+
+  /* Intrebari */
+  .question-card{padding:14px;margin-bottom:14px;}
+  .q-text{font-size:.9rem;}
+  .opt-text{font-size:.83rem;}
+  .gbtn{padding:8px 12px;font-size:.82rem;}
+  .q-actions{gap:6px;}
+
+  /* Tables */
+  table{font-size:.78rem;}
+  th,td{padding:.4rem .6rem;}
+
+  /* Scroll-to-top */
+  #top{right:.8rem;bottom:1.2rem;}
+
+  /* Toggle-uri — ascunse flotant, merg in sidebar */
+  #dm-btn,#hl-btn,#hl-badge{display:none !important;}
+
   #nav-toggle{display:flex;}
   #nav-overlay.open{display:block;}
 }
+
+/* Ascunde flotantele si pe desktop — sunt in sidebar */
+#dm-btn,#hl-btn,#hl-badge{display:none !important;}
 .box{border-left:4px solid;padding:.75rem 1rem;border-radius:0 .6rem .6rem 0;margin:.7rem 0;font-size:.91rem;}
 .box strong{display:block;margin-bottom:.2rem;font-weight:800;}
 .box.blue{border-color:var(--blue);background:var(--blue-light);}
@@ -366,6 +424,22 @@ body.dark .gtab-btn{color:#64748B;}
 body.dark .gtab-btn.active{color:#93C5FD;border-bottom-color:#93C5FD;}
 body.dark .quiz-header{background:#1E293B;box-shadow:0 1px 4px rgba(0,0,0,.4);}
 body.dark .quiz-progress{background:#334155;color:#94A3B8;}
+/* ── SIDEBAR SETĂRI ── */
+.nav-settings-btn{
+  display:flex;align-items:center;gap:.6rem;
+  margin:.08rem .65rem;padding:.55rem .9rem;border-radius:.6rem;
+  color:rgba(255,255,255,.6);text-decoration:none;font-size:.84rem;
+  font-weight:600;transition:all .18s;cursor:pointer;
+  border:none;background:none;width:calc(100% - 1.3rem);text-align:left;
+  font-family:'Figtree',system-ui,sans-serif;
+}
+.nav-settings-btn:hover{color:#fff;background:rgba(255,255,255,.07);}
+.nav-settings-btn.on{color:#fff;background:rgba(255,255,255,.1);}
+.nav-settings-btn .dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;background:rgba(255,255,255,.18);transition:all .18s;}
+.nav-settings-btn.on .dot{background:#FCD34D;}
+.nav-settings-btn.hl-on .dot{background:#FB923C;}
+.nav-divider{height:1px;background:rgba(255,255,255,.07);margin:.5rem .9rem;}
+
 .sync-bar{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;margin-bottom:1rem;padding:.7rem 1rem;background:#EFF6FF;border:1px solid #BFDBFE;border-radius:.7rem;font-size:.82rem;}
 .sync-bar span{color:var(--slate-500);flex:1;min-width:120px;}
 .sync-btn{padding:.38rem .85rem;border-radius:.55rem;border:none;cursor:pointer;font-size:.8rem;font-weight:700;font-family:'Figtree',system-ui,sans-serif;transition:all .18s;}
@@ -442,6 +516,22 @@ body.dark mark.hl{background:#3D3000;color:#FEF9C3;}
 .an-em{background:#FFFBEB;border-left:3px solid #D97706;}
 .an-err-opt-lbl{font-weight:700;margin-bottom:3px;font-size:.85rem;}
 .an-err-opt-txt{font-size:.82rem;color:var(--slate-700);}
+/* ── MOBILE OVERRIDES (după CSS-ul de bază) ── */
+@media(max-width:768px){
+  .gtabs{padding-left:0 !important;margin:0 -.9rem 1.2rem !important;overflow:hidden;}
+  .gtab-btn{flex:1;padding:10px 4px;font-size:.76rem;text-align:center;}
+  .quiz-header{flex-direction:column !important;align-items:flex-start !important;padding:12px 14px;gap:6px;}
+  .quiz-header h2{font-size:.9rem !important;margin:0;}
+  .quiz-progress{font-size:.72rem;padding:4px 10px;}
+  .progress-bar-wrap{max-width:none !important;width:100%;}
+  .pagination-controls{flex-wrap:wrap;gap:4px;padding:8px 0;}
+  .pagination-controls .gbtn{min-width:unset !important;flex:1;padding:7px 8px;font-size:.74rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .page-indicator{font-size:.74rem;padding:5px 8px;order:-1;width:100%;text-align:center;}
+  .sec-head h2{font-size:1.05rem !important;}
+  .card h2{font-size:1rem !important;}
+  .hero h1{font-size:1.2rem !important;line-height:1.3;}
+  .hero p{font-size:.82rem !important;}
+}
 </style>
 </head>
 <body>
@@ -470,6 +560,16 @@ body.dark mark.hl{background:#3D3000;color:#FEF9C3;}
   </div>
   <div class="nav-group-label" id="sub-nav-label" style="display:none">Pe această pagină</div>
   <div id="sub-nav"></div>
+  <div class="nav-divider"></div>
+  <div class="nav-group">
+    <div class="nav-group-label">Setări</div>
+    <button class="nav-settings-btn" id="nav-dm-btn" onclick="toggleDarkMode()">
+      <span class="dot"></span> <span id="nav-dm-label">🌙 Mod noapte</span>
+    </button>
+    <button class="nav-settings-btn" id="nav-hl-btn" onclick="toggleHighlighter()">
+      <span class="dot"></span> <span id="nav-hl-label">🖊 Evidențiator</span>
+    </button>
+  </div>
 </nav>
 <button id="top" onclick="window.scrollTo({top:0,behavior:'smooth'})" style="display:none;align-items:center;justify-content:center;">↑</button>
 <button id="dm-btn" title="Mod noapte" onclick="toggleDarkMode()">🌙</button>
@@ -1632,15 +1732,20 @@ function showToast(msg){
 // ════ DARK MODE ════
 function toggleDarkMode(){
   const isDark = document.body.classList.toggle('dark');
-  document.getElementById('dm-btn').textContent = isDark ? '☀️' : '🌙';
   localStorage.setItem('darkMode', isDark ? '1' : '0');
+  var navBtn = document.getElementById('nav-dm-btn');
+  var navLbl = document.getElementById('nav-dm-label');
+  if(navBtn) navBtn.classList.toggle('on', isDark);
+  if(navLbl) navLbl.textContent = isDark ? '☀️ Mod zi' : '🌙 Mod noapte';
 }
 (function(){
   if(localStorage.getItem('darkMode')==='1'){
     document.body.classList.add('dark');
     document.addEventListener('DOMContentLoaded',function(){
-      const btn=document.getElementById('dm-btn');
-      if(btn) btn.textContent='☀️';
+      var navBtn = document.getElementById('nav-dm-btn');
+      var navLbl = document.getElementById('nav-dm-label');
+      if(navBtn) navBtn.classList.add('on');
+      if(navLbl) navLbl.textContent = '☀️ Mod zi';
     });
   }
 })();
@@ -1650,19 +1755,12 @@ let hlMode = false;
 
 function toggleHighlighter() {
   hlMode = !hlMode;
-  const btn = document.getElementById('hl-btn');
-  const badge = document.getElementById('hl-badge');
-  if (hlMode) {
-    btn.classList.add('active');
-    badge.classList.add('show');
-    document.body.classList.add('hl-mode');
-    showToast('🖊 Evidențiator activat – selectează text!');
-  } else {
-    btn.classList.remove('active');
-    badge.classList.remove('show');
-    document.body.classList.remove('hl-mode');
-    showToast('Evidențiator dezactivat');
-  }
+  document.body.classList.toggle('hl-mode', hlMode);
+  var navBtn = document.getElementById('nav-hl-btn');
+  var navLbl = document.getElementById('nav-hl-label');
+  if(navBtn) navBtn.classList.toggle('hl-on', hlMode);
+  if(navLbl) navLbl.textContent = hlMode ? '🖊 Evidențiator ON' : '🖊 Evidențiator';
+  showToast(hlMode ? '🖊 Evidențiator activat – selectează text!' : 'Evidențiator dezactivat');
 }
 
 document.addEventListener('mouseup', function(e) {
