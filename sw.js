@@ -1,8 +1,9 @@
-const CACHE = 'biologie-v4';
+const CACHE = 'biologie-v5';
 const BASE = new URL('./', self.location.href).pathname;
 const ASSETS = [
   BASE + 'index.html',
   BASE + 'sistemul_renal_complet.html',
+  BASE + 'sistemul_reproducator_masculin.html',
   BASE + 'manifest.json',
   BASE + 'icon-192.png',
   BASE + 'icon-512.png',
@@ -15,7 +16,12 @@ const ASSETS = [
   BASE + 'imagini/ADH_aldosteron_barrons.png.webp',
   BASE + 'imagini/structuri_anexe_barrons.png.webp',
   BASE + 'imagini/sistemul_urinar_imag_noua.png.webp',
-  BASE + 'imagini/alte_organe_excretorii_barrons.png.webp'
+  BASE + 'imagini/alte_organe_excretorii_barrons.png.webp',
+  BASE + 'imagini/sist_rep_masculin_barrons.webp',
+  BASE + 'imagini/spermatogeneza_barrons.webp',
+  BASE + 'imagini/structura_spermatozoid_barrons.webp',
+  BASE + 'imagini/sistem_ducte_barrons.webp',
+  BASE + 'imagini/ducte_organe_masculine_barrons.webp'
 ];
 
 self.addEventListener('install', e => {
