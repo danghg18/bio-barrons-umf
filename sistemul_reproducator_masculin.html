@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cap. 22 – Sistemul Reproducător Masculin · Barron's Biologie</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2563EB">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Biologie">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --blue:#2563EB;--blue-light:#EFF6FF;--blue-mid:#3B82F6;
+  --green:#059669;--green-light:#ECFDF5;
+  --orange:#EA580C;--orange-light:#FFF7ED;
+  --purple:#7C3AED;--purple-light:#F5F3FF;
+  --red:#E11D48;--red-light:#FFF1F2;
+  --teal:#0891B2;--teal-light:#ECFEFF;
+  --gray:#64748B;--gray-light:#F1F5F9;
+  --primary:#2563EB;--primary-light:#EFF6FF;--primary-dark:#1E40AF;
+  --emerald:#059669;--emerald-light:#ECFDF5;
+  --slate-900:#0F172A;--slate-800:#1E293B;--slate-700:#334155;--slate-600:#475569;
+  --slate-500:#64748B;--slate-400:#94A3B8;--slate-300:#CBD5E1;
+  --slate-200:#E2E8F0;--slate-100:#F1F5F9;--slate-50:#F8FAFC;
+  --q-accent:#2563EB;--q-accent-light:#EFF6FF;
+  --sidebar:256px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Noto Sans',system-ui,sans-serif;background:var(--slate-50);color:var(--slate-700);line-height:1.7;}
+h1,h2,h3,h4,h5,h6,.btn,.gbtn,.badge,.page-nav a,.mm-node,.scenario-btn{font-family:'Figtree',system-ui,sans-serif;}
+nav{
+  background:linear-gradient(160deg,#0B1730 0%,#0F2356 100%);
+  width:var(--sidebar);position:fixed;top:0;left:0;height:100vh;
+  overflow-y:auto;padding-bottom:2rem;z-index:100;
+}
+.nav-header{padding:1.2rem 1rem 1.1rem;border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:.5rem;}
+.nav-back{color:rgba(255,255,255,.38);text-decoration:none;font-size:.72rem;display:block;margin-bottom:.8rem;font-weight:600;transition:color .2s;letter-spacing:.01em;}
+.nav-back:hover{color:rgba(255,255,255,.7);}
+.nav-chapter-badge{display:inline-block;background:rgba(147,197,253,.1);border:1px solid rgba(147,197,253,.22);color:#93C5FD;font-size:.63rem;font-weight:800;padding:.13rem .55rem;border-radius:1rem;letter-spacing:.07em;margin-bottom:.55rem;font-family:'Figtree',system-ui,sans-serif;text-transform:uppercase;}
+.nav-chapter-title{color:#fff;font-weight:800;font-size:.97rem;line-height:1.3;font-family:'Figtree',system-ui,sans-serif;}
+.nav-group{padding:.3rem 0 .5rem;}
+.nav-group-label{color:rgba(255,255,255,.28);font-size:.62rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;padding:.7rem 1rem .35rem;}
+nav a{
+  display:flex;align-items:center;gap:.6rem;
+  margin:.08rem .65rem;padding:.55rem .9rem;border-radius:.6rem;
+  color:rgba(255,255,255,.6);text-decoration:none;font-size:.84rem;
+  font-weight:600;transition:all .18s;cursor:pointer;touch-action:manipulation;
+  border-left:none;position:relative;
+}
+nav a::before{
+  content:'';width:7px;height:7px;border-radius:50%;flex-shrink:0;
+  background:rgba(255,255,255,.18);transition:all .18s;
+}
+nav a[data-color="blue"]::before{background:#60A5FA;}
+nav a[data-color="green"]::before{background:#34D399;}
+nav a[data-color="purple"]::before{background:#A78BFA;}
+nav a[data-color="orange"]::before{background:#FB923C;}
+nav a[data-color="teal"]::before{background:#22D3EE;}
+nav a[data-color="emerald"]::before{background:#34D399;}
+nav a:hover{color:#fff;background:rgba(255,255,255,.07);}
+nav a.active{background:rgba(96,165,250,.18);color:#BAD9FF;font-weight:700;}
+nav a.active::before{transform:scale(1.3);}
+nav a.sub{margin-left:1.3rem;font-size:.79rem;color:rgba(255,255,255,.4);}
+nav a.sub::before{display:none;}
+nav a.sub:hover{color:rgba(255,255,255,.75);background:rgba(255,255,255,.05);}
+*:focus-visible{outline:2px solid #93C5FD;outline-offset:2px;border-radius:4px;}
+main{margin-left:var(--sidebar);padding:0 2rem 4rem;max-width:1080px;}
+.page-section{display:none;}
+.page-section.active{display:block;}
+.hero{
+  background:linear-gradient(135deg,#1E3A8A,#2563EB,#0EA5E9);
+  color:#fff;padding:2.5rem 2.5rem 2rem;margin:0 -2rem 2rem;
+  border-radius:0 0 1.5rem 1.5rem;position:relative;overflow:hidden;
+}
+.hero::after{
+  content:'';position:absolute;top:-60px;right:-60px;width:220px;height:220px;
+  border-radius:50%;background:rgba(255,255,255,.05);pointer-events:none;
+}
+.hero h1{font-size:1.85rem;font-weight:900;position:relative;}
+.hero p{opacity:.9;max-width:620px;margin-top:.4rem;font-weight:500;position:relative;}
+.badges{display:flex;gap:.45rem;flex-wrap:wrap;margin-top:.9rem;position:relative;}
+.badge{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.28);color:#fff;padding:.22rem .75rem;border-radius:2rem;font-size:.77rem;font-weight:700;}
+.card{background:#fff;border-radius:1rem;box-shadow:0 1px 3px rgba(0,0,0,.05),0 4px 12px rgba(0,0,0,.04);padding:1.4rem;margin-bottom:1.4rem;}
+.card h2{font-size:1.25rem;font-weight:900;margin-bottom:.8rem;}
+.card h3{font-size:1rem;font-weight:800;margin:.9rem 0 .4rem;}
+.card p{margin-bottom:.6rem;}
+.sec-head{display:flex;align-items:center;gap:.7rem;margin-bottom:1.3rem;padding-bottom:.6rem;border-bottom:2px solid;}
+.sec-head .num{color:#fff;width:2rem;height:2rem;border-radius:.5rem;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.85rem;flex-shrink:0;}
+.sec-head h2{font-size:1.45rem;font-weight:900;}
+.sec-head.blue{border-color:var(--blue);}.sec-head.blue h2{color:var(--blue);}.sec-head.blue .num{background:var(--blue);}
+.sec-head.green{border-color:var(--green);}.sec-head.green h2{color:var(--green);}.sec-head.green .num{background:var(--green);}
+.sec-head.orange{border-color:var(--orange);}.sec-head.orange h2{color:var(--orange);}.sec-head.orange .num{background:var(--orange);}
+.sec-head.purple{border-color:var(--purple);}.sec-head.purple h2{color:var(--purple);}.sec-head.purple .num{background:var(--purple);}
+.sec-head.teal{border-color:var(--teal);}.sec-head.teal h2{color:var(--teal);}.sec-head.teal .num{background:var(--teal);}
+.sec-head.red{border-color:var(--red);}.sec-head.red h2{color:var(--red);}.sec-head.red .num{background:var(--red);}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;}
+@media(max-width:750px){.g2,.g3{grid-template-columns:1fr;}}
+#nav-toggle{
+  display:none;position:fixed;top:.9rem;left:.9rem;z-index:300;
+  background:#1E3A8A;color:#fff;border:none;border-radius:.5rem;
+  width:2.6rem;height:2.6rem;font-size:1.25rem;cursor:pointer;
+  align-items:center;justify-content:center;
+  box-shadow:0 2px 10px rgba(0,0,0,.35);
+}
+#nav-overlay{
+  display:none;position:fixed;inset:0;
+  background:rgba(0,0,0,.45);z-index:149;
+}
+@media(max-width:768px){
+  body{font-size:.88rem;overflow-x:hidden;}
+  nav{transform:translateX(-100%);transition:transform .28s ease;z-index:150;}
+  nav.open{transform:translateX(0);}
+  main{margin-left:0;padding:0 .9rem 5rem;overflow-x:hidden;}
+  .hero{margin:0 -.9rem 1.5rem;padding:3.4rem 1rem 1.4rem;}
+  .hero h1{font-size:1.2rem;line-height:1.3;}
+  .hero p{font-size:.82rem;}
+  .badges{gap:.3rem;}
+  .badge{font-size:.72rem;padding:.18rem .6rem;}
+  .card{padding:1rem;}
+  .card h2{font-size:1rem;}
+  .card h3{font-size:.88rem;}
+  .sec-head h2{font-size:1.05rem;}
+  .gtabs{padding-left:0;margin:0 -.9rem 1.2rem;display:flex;}
+  .gtab-btn{flex:1;padding:10px 6px;font-size:.8rem;text-align:center;}
+  .quiz-header{flex-direction:column;align-items:flex-start;padding:12px 14px;gap:6px;}
+  .quiz-header h2{font-size:.9rem;margin:0;}
+  .quiz-header .quiz-progress{font-size:.72rem;padding:4px 10px;}
+  .quiz-header .progress-bar-wrap{max-width:none;width:100%;}
+  .gtabs{overflow:hidden;}
+  .gtab-btn{flex:1;padding:10px 4px;font-size:.76rem;}
+  .pagination-controls{flex-wrap:wrap;gap:4px;padding:8px 0;}
+  .pagination-controls .gbtn{min-width:unset;flex:1;padding:7px 8px;font-size:.74rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .page-indicator{font-size:.74rem;padding:5px 8px;order:-1;width:100%;text-align:center;}
+  .page-nav{gap:.4rem;}
+  .page-nav a{padding:.38rem .75rem;font-size:.78rem;}
+  .sync-bar{flex-direction:column;gap:.4rem;padding:.6rem .8rem;}
+  .sync-bar span{font-size:.76rem;}
+  .sync-btn{width:100%;padding:.45rem;text-align:center;}
+  .question-card{padding:14px;margin-bottom:14px;}
+  .q-text{font-size:.9rem;}
+  .opt-text{font-size:.83rem;}
+  .gbtn{padding:8px 12px;font-size:.82rem;}
+  .q-actions{gap:6px;}
+  table{font-size:.78rem;}
+  th,td{padding:.4rem .6rem;}
+  #top{right:.8rem;bottom:1.2rem;}
+  #dm-btn,#hl-btn,#hl-badge{display:none !important;}
+  #nav-toggle{display:flex;}
+  #nav-overlay.open{display:block;}
+}
+#dm-btn,#hl-btn,#hl-badge{display:none !important;}
+.box{border-left:4px solid;padding:.75rem 1rem;border-radius:0 .6rem .6rem 0;margin:.7rem 0;font-size:.91rem;}
+.box strong{display:block;margin-bottom:.2rem;font-weight:800;}
+.box.blue{border-color:var(--blue);background:var(--blue-light);}
+.box.green{border-color:var(--green);background:var(--green-light);}
+.box.orange{border-color:var(--orange);background:var(--orange-light);}
+.box.purple{border-color:var(--purple);background:var(--purple-light);}
+.box.red{border-color:var(--red);background:var(--red-light);}
+.box.teal{border-color:var(--teal);background:var(--teal-light);}
+ul.ch{list-style:none;padding:0;}
+ul.ch li{padding:.18rem 0 .18rem 1.3rem;position:relative;}
+ul.ch li::before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:800;}
+.fig{text-align:center;margin:1.6rem auto;max-width:680px;}
+.fig img{max-width:100%;border-radius:1rem;border:1px solid var(--slate-200);padding:.6rem;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.05),0 6px 20px rgba(0,0,0,.07);}
+.fig figcaption{font-size:.78rem;color:var(--slate-400);margin-top:.6rem;font-style:italic;line-height:1.55;}
+.img-txt{display:flex;gap:1.8rem;align-items:flex-start;}
+.img-txt img{width:260px;max-width:38%;border-radius:1rem;border:1px solid var(--slate-200);padding:.5rem;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.05),0 6px 20px rgba(0,0,0,.07);flex-shrink:0;}
+@media(max-width:680px){.img-txt{flex-direction:column;}.img-txt img{width:100%;max-width:100%;padding:.5rem;}}
+table{width:100%;border-collapse:collapse;font-size:.87rem;}
+th{background:var(--blue);color:#fff;padding:.55rem .85rem;text-align:left;font-weight:800;}
+td{padding:.5rem .85rem;border-bottom:1px solid var(--slate-200);}
+tr:nth-child(even) td{background:var(--slate-50);}
+.acc{border:1px solid var(--slate-200);border-radius:.7rem;overflow:hidden;margin:.7rem 0;}
+.acc-head{background:var(--slate-100);padding:.75rem 1rem;cursor:pointer;display:flex;justify-content:space-between;font-weight:800;font-size:.9rem;user-select:none;}
+.acc-head:hover{background:var(--slate-200);}
+.acc-head .arr{transition:transform .3s;}
+.acc-head.open .arr{transform:rotate(180deg);}
+.acc-body{display:none;padding:.9rem 1rem;background:#fff;}
+.acc-body.show{display:block;}
+.flow{display:flex;align-items:center;gap:.3rem;flex-wrap:wrap;margin:.8rem 0;}
+.fb{border:2px solid;border-radius:.5rem;padding:.35rem .75rem;font-size:.82rem;font-weight:700;}
+.fb.blue{border-color:var(--blue);color:var(--blue);background:var(--blue-light);}
+.fb.green{border-color:var(--green);color:var(--green);background:var(--green-light);}
+.fb.orange{border-color:var(--orange);color:var(--orange);background:var(--orange-light);}
+.fb.purple{border-color:var(--purple);color:var(--purple);background:var(--purple-light);}
+.fb.red{border-color:var(--red);color:var(--red);background:var(--red-light);}
+.fb.teal{border-color:var(--teal);color:var(--teal);background:var(--teal-light);}
+.fa{font-size:1.1rem;color:var(--slate-300);}
+.pill{display:inline-block;padding:.08rem .5rem;border-radius:1rem;font-size:.77rem;font-weight:800;margin:0 .1rem;}
+.pill.blue{background:var(--blue-light);color:var(--blue);}
+.pill.green{background:var(--green-light);color:var(--green);}
+.pill.orange{background:var(--orange-light);color:var(--orange);}
+.pill.red{background:var(--red-light);color:var(--red);}
+.summary{background:linear-gradient(135deg,#1E3A8A,#2563EB);color:#fff;border-radius:1rem;padding:1.4rem 1.8rem;margin:1.5rem 0;}
+.summary h3{margin-bottom:.7rem;font-weight:900;}
+.summary ul{padding-left:1.1rem;}
+.summary li{margin:.25rem 0;font-size:.91rem;}
+#top{position:fixed;bottom:1.5rem;right:1.5rem;background:var(--primary);color:#fff;border:none;border-radius:50%;width:2.8rem;height:2.8rem;font-size:1.1rem;cursor:pointer;box-shadow:0 3px 12px rgba(37,99,235,.3);display:none;z-index:200;align-items:center;justify-content:center;}
+.page-nav{display:flex;gap:.8rem;flex-wrap:wrap;margin:1.5rem 0;}
+.page-nav a{background:var(--primary);color:#fff;padding:.5rem 1.2rem;border-radius:.65rem;text-decoration:none;font-weight:800;font-size:.87rem;transition:background .2s;cursor:pointer;}
+.page-nav a:hover{background:var(--blue-mid);}
+.page-nav a.outline{background:#fff;color:var(--primary);border:2px solid var(--primary);}
+.page-nav a.outline:hover{background:var(--blue-light);}
+.gtabs{display:flex;gap:4px;background:#fff;border-bottom:2px solid var(--slate-200);margin:0 -2rem 1.5rem;padding-left:var(--sidebar);}
+.gtab-btn{padding:14px 20px;border:none;background:none;cursor:pointer;font-size:.88rem;color:var(--slate-400);border-bottom:3px solid transparent;margin-bottom:-2px;transition:all .2s;font-weight:700;font-family:'Figtree',system-ui,sans-serif;}
+.gtab-btn.active{color:var(--q-accent);border-bottom-color:var(--q-accent);}
+.gtab-panel{display:none;}
+.gtab-panel.active{display:block;}
+.quiz-header{background:#fff;border-radius:1rem;padding:20px 24px;margin-bottom:20px;display:flex;align-items:center;gap:16px;box-shadow:0 1px 3px rgba(0,0,0,.05),0 4px 12px rgba(0,0,0,.04);}
+.quiz-header h2{flex:1;font-size:1.15rem;color:var(--q-accent);font-weight:900;}
+.quiz-progress{font-size:.83rem;color:var(--slate-400);background:var(--slate-100);padding:6px 14px;border-radius:20px;font-weight:700;}
+.progress-bar-wrap{background:var(--slate-200);border-radius:4px;height:6px;flex:1;max-width:200px;}
+.progress-bar{background:var(--q-accent);height:100%;border-radius:4px;transition:width .3s;}
+.question-card{background:#fff;border-radius:1rem;padding:24px;margin-bottom:20px;box-shadow:0 1px 3px rgba(0,0,0,.05),0 4px 12px rgba(0,0,0,.04);border-left:4px solid var(--slate-200);transition:border-color .3s;}
+.question-card.answered-correct{border-left-color:#059669;}
+.question-card.answered-wrong{border-left-color:#E11D48;}
+.question-card.answered-partial{border-left-color:#D97706;}
+.q-num{font-size:.73rem;font-weight:800;text-transform:uppercase;color:var(--q-accent);letter-spacing:1.5px;margin-bottom:6px;}
+.q-text{font-size:1rem;font-weight:700;margin-bottom:16px;color:var(--slate-800);}
+.options{display:flex;flex-direction:column;gap:8px;}
+.option{display:flex;align-items:flex-start;gap:12px;padding:10px 14px;border:2px solid var(--slate-200);border-radius:.65rem;cursor:pointer;transition:all .15s;user-select:none;}
+.option:hover:not(.disabled){border-color:var(--primary);background:var(--primary-light);}
+.option.selected{border-color:var(--q-accent);background:var(--q-accent-light);}
+.option.disabled{cursor:default;}
+.option.result-correct{border-color:#059669;background:#ECFDF5;}
+.option.result-wrong{border-color:#E11D48;background:#FFF1F2;}
+.option.result-missed{border-color:#D97706;background:#FFFBEB;}
+.opt-letter{width:28px;height:28px;border-radius:50%;background:var(--slate-100);border:2px solid var(--slate-200);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.83rem;flex-shrink:0;transition:all .15s;}
+.option.selected .opt-letter{background:var(--q-accent);border-color:var(--q-accent);color:#fff;}
+.option.result-correct .opt-letter{background:#059669;border-color:#059669;color:#fff;}
+.option.result-wrong .opt-letter{background:#E11D48;border-color:#E11D48;color:#fff;}
+.option.result-missed .opt-letter{background:#D97706;border-color:#D97706;color:#fff;}
+.opt-text{font-size:.88rem;padding-top:3px;line-height:1.5;}
+.opt-icon{margin-left:auto;flex-shrink:0;font-size:1.1rem;}
+.q-actions{margin-top:16px;display:flex;gap:10px;}
+.gbtn{padding:9px 20px;border-radius:.65rem;border:none;cursor:pointer;font-size:.88rem;font-weight:800;transition:all .2s;font-family:'Figtree',system-ui,sans-serif;}
+.gbtn-primary{background:var(--q-accent);color:#fff;}
+.gbtn-primary:hover{background:var(--blue-mid);}
+.gbtn-secondary{background:var(--slate-100);color:var(--slate-700);border:1px solid var(--slate-200);}
+.gbtn-secondary:hover{background:var(--slate-200);}
+.gbtn:disabled{opacity:.5;cursor:default;}
+.explanation{margin-top:16px;border-radius:.8rem;overflow:hidden;border:1px solid var(--slate-200);display:none;}
+.explanation.show{display:block;}
+.expl-header{background:var(--q-accent);color:#fff;padding:10px 16px;font-weight:800;font-size:.87rem;}
+.expl-body{padding:16px;background:#fff;}
+.expl-row{display:flex;align-items:flex-start;gap:4px;margin-bottom:8px;}
+.expl-correct .expl-letter{background:#059669;color:#fff;}
+.expl-wrong .expl-letter{background:#E11D48;color:#fff;}
+.expl-letter{display:inline-block;width:22px;height:22px;border-radius:50%;text-align:center;line-height:22px;font-size:.73rem;font-weight:800;margin-right:8px;flex-shrink:0;}
+.expl-text{font-size:.87rem;line-height:1.55;}
+.lesson-ref{margin-top:12px;padding:10px 14px;background:var(--q-accent-light);border-left:3px solid var(--q-accent);border-radius:0 .6rem .6rem 0;font-size:.82rem;}
+.lesson-ref strong{color:var(--q-accent);}
+.added-note{display:inline;color:#E11D48;font-style:italic;}
+.added-marker{color:#E11D48;font-weight:800;}
+.result-badge{display:inline-block;padding:4px 12px;border-radius:20px;font-size:.79rem;font-weight:800;margin-left:10px;}
+.badge-correct{background:#ECFDF5;color:#059669;}
+.badge-partial{background:#FFFBEB;color:#D97706;}
+.badge-wrong{background:#FFF1F2;color:#E11D48;}
+.pagination-controls{display:flex;align-items:center;justify-content:center;gap:12px;padding:14px 0;margin:8px 0;}
+.pagination-controls .gbtn{min-width:160px;}
+.pagination-controls .gbtn:disabled{opacity:.4;cursor:not-allowed;pointer-events:none;}
+.page-indicator{font-size:.88rem;color:var(--q-accent);font-weight:800;background:var(--q-accent-light);padding:6px 16px;border-radius:20px;white-space:nowrap;}
+.no-data{text-align:center;padding:48px;color:var(--slate-400);background:#fff;border-radius:1rem;}
+.no-data .icon{font-size:3rem;margin-bottom:12px;}
+.toast{position:fixed;bottom:24px;right:24px;background:var(--slate-800);color:#fff;padding:12px 20px;border-radius:.7rem;font-size:.88rem;box-shadow:0 4px 18px rgba(0,0,0,.18);z-index:999;opacity:0;transform:translateY(20px);transition:all .3s;pointer-events:none;font-weight:700;}
+.toast.show{opacity:1;transform:translateY(0);}
+#hl-btn{position:fixed;bottom:5rem;right:1.5rem;background:#fff;color:#555;border:2px solid var(--slate-200);border-radius:50%;width:2.8rem;height:2.8rem;font-size:1.2rem;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.1);display:flex;align-items:center;justify-content:center;z-index:200;transition:all .2s;user-select:none;}
+#hl-btn:hover{box-shadow:0 4px 14px rgba(0,0,0,.16);}
+#hl-btn.active{background:#fef08a;border-color:#eab308;box-shadow:0 3px 12px rgba(234,179,8,.4);}
+#hl-badge{position:fixed;bottom:5.8rem;right:5rem;background:var(--slate-800);color:#fff;font-size:.67rem;font-weight:800;padding:.15rem .45rem;border-radius:.9rem;z-index:201;display:none;white-space:nowrap;}
+#hl-badge.show{display:block;}
+mark.hl{background:#fef08a;color:inherit;border-radius:2px;padding:0 1px;}
+body.hl-mode{cursor:auto;}
+#dm-btn{position:fixed;bottom:8.5rem;right:1.5rem;background:#fff;color:#555;border:2px solid var(--slate-200);border-radius:50%;width:2.8rem;height:2.8rem;font-size:1.2rem;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.1);display:flex;align-items:center;justify-content:center;z-index:200;transition:all .2s;user-select:none;}
+#dm-btn:hover{box-shadow:0 4px 14px rgba(0,0,0,.16);}
+body.dark{background:#0F172A;color:#CBD5E1;--blue-light:#0D2545;--green-light:#052E16;--orange-light:#431407;--purple-light:#2E1065;--red-light:#4C0519;--teal-light:#083344;--gray-light:#1E293B;--gray:#94A3B8;--slate-50:#1E293B;--slate-100:#1E293B;--q-accent-light:#1e2f5c;}
+body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
+body.dark nav{background:linear-gradient(160deg,#06101F 0%,#0A1A3A 100%);}
+body.dark .card{background:#1E293B;box-shadow:0 2px 10px rgba(0,0,0,.4);}
+body.dark td{border-bottom-color:#334155;color:#CBD5E1;}
+body.dark tr:nth-child(even) td{background:#172033;}
+body.dark .acc-head{background:#1E293B;color:#CBD5E1;}
+body.dark .acc-head:hover{background:#334155;}
+body.dark .acc-body{background:#172033;}
+body.dark .gtabs{background:#172033;border-bottom-color:#334155;}
+body.dark .gtab-btn{color:#64748B;}
+body.dark .gtab-btn.active{color:#93C5FD;border-bottom-color:#93C5FD;}
+body.dark .quiz-header{background:#1E293B;box-shadow:0 1px 4px rgba(0,0,0,.4);}
+body.dark .quiz-progress{background:#334155;color:#94A3B8;}
+body.dark .question-card{background:#1E293B;border-left-color:#334155;}
+body.dark .option{border-color:#334155;}
+body.dark .option:hover:not(.disabled){border-color:var(--primary);background:#0D2545;}
+body.dark .option.selected{border-color:var(--primary);background:#0D2545;}
+body.dark .opt-letter{background:#334155;border-color:#475569;}
+body.dark .explanation{border-color:#334155;}
+body.dark .expl-body{background:#1E293B;}
+body.dark .no-data{background:#1E293B;}
+body.dark .gbtn-secondary{background:#334155;color:#CBD5E1;border-color:#475569;}
+body.dark .gbtn-secondary:hover{background:#475569;}
+body.dark .page-nav a.outline{background:#1E293B;color:#93C5FD;}
+body.dark .page-nav a.outline:hover{background:#334155;}
+body.dark .lesson-ref{background:#0D2545;border-left-color:var(--primary);}
+body.dark .page-indicator{background:#0D2545;color:#93C5FD;}
+body.dark #hl-btn{background:#1E293B;border-color:#334155;color:#CBD5E1;}
+body.dark #hl-btn.active{background:#422006;border-color:#eab308;}
+body.dark #hl-badge{background:#475569;}
+body.dark mark.hl{background:#3D3000;color:#FEF9C3;}
+.nav-settings-btn{
+  display:flex;align-items:center;gap:.6rem;
+  margin:.08rem .65rem;padding:.55rem .9rem;border-radius:.6rem;
+  color:rgba(255,255,255,.6);text-decoration:none;font-size:.84rem;
+  font-weight:600;transition:all .18s;cursor:pointer;
+  border:none;background:none;width:calc(100% - 1.3rem);text-align:left;
+  font-family:'Figtree',system-ui,sans-serif;
+}
+.nav-settings-btn:hover{color:#fff;background:rgba(255,255,255,.07);}
+.nav-settings-btn.on{color:#fff;background:rgba(255,255,255,.1);}
+.nav-settings-btn .dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;background:rgba(255,255,255,.18);transition:all .18s;}
+.nav-settings-btn.on .dot{background:#FCD34D;}
+.nav-settings-btn.hl-on .dot{background:#FB923C;}
+.nav-divider{height:1px;background:rgba(255,255,255,.07);margin:.5rem .9rem;}
+.sync-bar{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;margin-bottom:1rem;padding:.7rem 1rem;background:#EFF6FF;border:1px solid #BFDBFE;border-radius:.7rem;font-size:.82rem;}
+.sync-bar span{color:var(--slate-500);flex:1;min-width:120px;}
+.sync-btn{padding:.38rem .85rem;border-radius:.55rem;border:none;cursor:pointer;font-size:.8rem;font-weight:700;font-family:'Figtree',system-ui,sans-serif;transition:all .18s;}
+.sync-btn.export{background:var(--primary);color:#fff;}
+.sync-btn.export:hover{background:var(--primary-dark);}
+.sync-btn.import{background:#fff;color:var(--primary);border:2px solid var(--primary);}
+.sync-btn.import:hover{background:var(--primary-light);}
+body.dark .sync-bar{background:#0D2545;border-color:#1E40AF;}
+body.dark .sync-btn.import{background:#1E293B;}
+@media(max-width:768px){
+  .gtabs{padding-left:0 !important;margin:0 -.9rem 1.2rem !important;overflow:hidden;}
+  .gtab-btn{flex:1;padding:10px 4px;font-size:.76rem;text-align:center;}
+  .quiz-header{flex-direction:column !important;align-items:flex-start !important;padding:12px 14px;gap:6px;}
+  .quiz-header h2{font-size:.9rem !important;margin:0;}
+  .quiz-progress{font-size:.72rem;padding:4px 10px;}
+  .progress-bar-wrap{max-width:none !important;width:100%;}
+  .pagination-controls{flex-wrap:wrap;gap:4px;padding:8px 0;}
+  .pagination-controls .gbtn{min-width:unset !important;flex:1;padding:7px 8px;font-size:.74rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .page-indicator{font-size:.74rem;padding:5px 8px;order:-1;width:100%;text-align:center;}
+  .sec-head h2{font-size:1.05rem !important;}
+  .card h2{font-size:1rem !important;}
+  .hero h1{font-size:1.2rem !important;line-height:1.3;}
+  .hero p{font-size:.82rem !important;}
+}
+</style>
+</head>
+<body>
+
+<button id="nav-toggle" aria-label="Deschide meniu" onclick="toggleNav()">☰</button>
+<div id="nav-overlay" onclick="closeNav()"></div>
+
+<nav id="sidenav">
+  <div class="nav-header">
+    <a href="index.html" class="nav-back">← Toate capitolele</a>
+    <span class="nav-chapter-badge">Capitol 22</span>
+    <div class="nav-chapter-title">Sistemul Reproducător Masculin</div>
+  </div>
+  <div class="nav-group">
+    <div class="nav-group-label">Lecții</div>
+    <a onclick="goto('home')" data-color="blue">Pagina capitolului</a>
+    <a onclick="goto('testiculele')" data-color="blue">Testiculele &amp; Spermatogeneza</a>
+    <a onclick="goto('ducte')" data-color="green">Ducte &amp; Organe Anexe</a>
+    <a onclick="goto('hormoni')" data-color="purple">Hormonii Masculini</a>
+  </div>
+  <div class="nav-group">
+    <div class="nav-group-label">Testare</div>
+    <a onclick="goto('grile')" data-color="emerald">Grile UMF</a>
+  </div>
+  <div class="nav-group-label" id="sub-nav-label" style="display:none">Pe această pagină</div>
+  <div id="sub-nav"></div>
+  <div class="nav-divider"></div>
+  <div class="nav-group">
+    <div class="nav-group-label">Setări</div>
+    <button class="nav-settings-btn" id="nav-dm-btn" onclick="toggleDarkMode()">
+      <span class="dot"></span> <span id="nav-dm-label">🌙 Mod noapte</span>
+    </button>
+    <button class="nav-settings-btn" id="nav-hl-btn" onclick="toggleHighlighter()">
+      <span class="dot"></span> <span id="nav-hl-label">🖊 Evidențiator</span>
+    </button>
+  </div>
+</nav>
+
+<button id="top" onclick="window.scrollTo({top:0,behavior:'smooth'})" style="display:none;align-items:center;justify-content:center;">↑</button>
+<button id="dm-btn" title="Mod noapte" onclick="toggleDarkMode()">🌙</button>
+<div id="hl-badge">Evidențiator ON</div>
+<button id="hl-btn" title="Evidențiator text (galben neon)" onclick="toggleHighlighter()">🖊</button>
+
+<main>
+
+<!-- ══════════════════ HOME ══════════════════ -->
+<div class="page-section active" id="page-home">
+  <div class="hero">
+    <a href="index.html" style="display:inline-block;margin-bottom:.7rem;color:rgba(255,255,255,.75);text-decoration:none;font-size:.82rem;border:1px solid rgba(255,255,255,.35);padding:.2rem .7rem;border-radius:1rem;">← Barron's Biologie – Toate capitolele</a>
+    <h1>♂ Capitolul 22 – Sistemul Reproducător Masculin</h1>
+    <p>Ghid complet pentru admiterea la Medicină – Barron's Biologie, Capitolul 22: Sistemul Reproducător Masculin.</p>
+    <div class="badges">
+      <span class="badge">Testiculele</span>
+      <span class="badge">Spermatogeneză</span>
+      <span class="badge">Meioza</span>
+      <span class="badge">Ducte &amp; Organe Anexe</span>
+      <span class="badge">Testosteron</span>
+      <span class="badge">FSH / LH</span>
+    </div>
+  </div>
+  <div class="card">
+    <h2 style="color:var(--blue);">Harta capitolului</h2>
+    <div class="g2">
+      <div style="background:var(--blue-light);border-radius:.7rem;padding:1.1rem;border:2px solid var(--blue);cursor:pointer;" onclick="goto('testiculele')">
+        <div style="font-size:1.5rem;">🔬</div>
+        <strong style="color:var(--blue);font-size:1rem;">Testiculele &amp; Spermatogeneza</strong>
+        <p style="font-size:.85rem;color:var(--gray);margin-top:.3rem;">Introducere · Testiculele · Scrotul · Dezvoltare · Spermatogeneză · Meioza · Spermatozoizi</p>
+      </div>
+      <div style="background:var(--green-light);border-radius:.7rem;padding:1.1rem;border:2px solid var(--green);cursor:pointer;" onclick="goto('ducte')">
+        <div style="font-size:1.5rem;">🏗️</div>
+        <strong style="color:var(--green);font-size:1rem;">Ducte &amp; Organe Anexe</strong>
+        <p style="font-size:.85rem;color:var(--gray);margin-top:.3rem;">Epididim · Duct deferent · Uretră · Veziculă seminală · Prostată · Glande bulbouretrale · Penis</p>
+      </div>
+      <div style="background:var(--purple-light);border-radius:.7rem;padding:1.1rem;border:2px solid var(--purple);cursor:pointer;" onclick="goto('hormoni')">
+        <div style="font-size:1.5rem;">🧬</div>
+        <strong style="color:var(--purple);font-size:1rem;">Hormonii Masculini</strong>
+        <p style="font-size:.85rem;color:var(--gray);margin-top:.3rem;">FSH · LH · GnRH · Testosteron · Feedback negativ · Caractere sexuale secundare</p>
+      </div>
+      <div style="background:linear-gradient(135deg,#1a5f7a,#27ae60);border-radius:.7rem;padding:1.1rem;color:#fff;cursor:pointer;" onclick="goto('grile')">
+        <div style="font-size:1.5rem;">📝</div>
+        <strong style="font-size:1rem;">Grile UMF</strong>
+        <p style="font-size:.85rem;opacity:.9;margin-top:.3rem;">Întrebări tip grilă · Explicații complete · Analiză progres</p>
+      </div>
+    </div>
+  </div>
+  <div class="summary">
+    <h3>Rezumat rapid pentru examen</h3>
+    <ul>
+      <li><strong>Roluri sistem reproducător:</strong> producerea, stocarea, nutriția și transportul gameților masculini</li>
+      <li><strong>Testiculele:</strong> 2 organe ovalare (~5 cm lungime), dispuse în scrot; produc spermatozoizi și hormoni</li>
+      <li><strong>Scrotul:</strong> formațiune sacciformă suspendată sub perineu; mușchiul dartos asigură aspectul încrețit</li>
+      <li><strong>Temperatura scrotului:</strong> cu câteva grade mai scăzută față de cavitatea abdominală – necesară spermatogenezei</li>
+      <li><strong>Criptorhidia:</strong> necoborârea testiculelor → infertilitate; se tratează chirurgical</li>
+      <li><strong>Spermatogeneza:</strong> spermatogonie → spermatocit primar (2n) → 2 spermatocite secundare (n) → 4 spermatide (n) → 4 spermatozoizi</li>
+      <li><strong>Structura spermatozoidului:</strong> cap (acrozom + nucleu), gât, piesă intermediară (mitocondrii), coadă (flagel)</li>
+      <li><strong>Calea spermei:</strong> tubi seminiferi → rete testis → canale eferente → epididim → duct deferent → duct ejaculator → uretră</li>
+      <li><strong>Organe anexe:</strong> veziculă seminală (60% volum), prostată (30% volum), glande bulbouretrale</li>
+      <li><strong>Spermă:</strong> 2–5 mL ejaculat; ~20–100 milioane spermatozoizi/mL</li>
+      <li><strong>Hormoni:</strong> GnRH (hipotalamus) → FSH + LH (hipofiză anterioară) → testosteron (celule interstițiale Leydig)</li>
+      <li><strong>Testosteron:</strong> controlat de LH; produce și menține caracterele sexuale masculine; stimulează spermatogeneza</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2 style="color:var(--teal);">Fluxul spermei</h2>
+    <div class="flow">
+      <div class="fb blue">Tubi seminiferi</div><span class="fa">→</span>
+      <div class="fb teal">Rețeaua testiculară (rete testis)</div><span class="fa">→</span>
+      <div class="fb green">Canale eferente</div><span class="fa">→</span>
+      <div class="fb orange">Epididim</div><span class="fa">→</span>
+      <div class="fb purple">Duct deferent</div><span class="fa">→</span>
+      <div class="fb red">Duct ejaculator</div><span class="fa">→</span>
+      <div class="fb teal">Uretră</div><span class="fa">→</span>
+      <div class="fb blue">Exterior</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ TESTICULELE ══════════════════ -->
+<div class="page-section" id="page-testiculele">
+  <div class="hero"><h1>🔬 Testiculele &amp; Spermatogeneza</h1><p>Introducere în sistemul reproducător masculin, structura testiculelor, scrotul, spermatogeneza și structura spermatozoizilor.</p></div>
+  <div class="page-nav">
+    <a class="outline" onclick="goto('home')">← Înapoi</a>
+    <a onclick="goto('ducte')">Ducte &amp; Organe Anexe →</a>
+    <a class="outline" onclick="goto('hormoni')">Hormoni</a>
+  </div>
+
+  <section id="intro">
+    <div class="sec-head blue"><div class="num">1</div><h2>22.1. Introducere</h2></div>
+    <div class="card">
+      <p>Sistemul reproducător îndeplinește multiple roluri ce privesc celulele reproducătoare masculine (gameți), cum ar fi:</p>
+      <div class="g2" style="margin:.8rem 0;">
+        <div class="box blue"><strong>Producerea</strong>gameților masculini (spermatozoizi)</div>
+        <div class="box green"><strong>Stocarea</strong>gameților masculini</div>
+        <div class="box orange"><strong>Nutriția</strong>gameților masculini</div>
+        <div class="box purple"><strong>Transportul</strong>gameților masculini</div>
+      </div>
+      <p>În alcătuirea sistemului reproducător masculin și feminin se întâlnesc structuri identice, cum ar fi:</p>
+      <ul class="ch" style="margin-top:.6rem;">
+        <li>două organe de reproducere (gonade) – producătoare de gameți și hormoni;</li>
+        <li>ducte – primesc și transportă gameți;</li>
+        <li>glande și organe anexe – secretă lichide eliberate prin ducte;</li>
+        <li>organe genitale externe – organe și glande auxiliare asociate procesului de reproducere.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="testiculele">
+    <div class="sec-head green"><div class="num">2</div><h2>22.2. Testiculele</h2></div>
+    <div class="card">
+      <p>Testiculele, organe masculine de reproducere, prezintă următoarele caracteristici:</p>
+      <div class="g2" style="margin:.8rem 0;">
+        <ul class="ch">
+          <li>sunt în număr de două;</li>
+          <li>au rolul de a produce spermatozoizi;</li>
+          <li>intervin în reproducerea masculină prin producția de hormoni și spermatozoizi;</li>
+          <li>testiculul: organ de formă ovalară, aplatizat;</li>
+        </ul>
+        <ul class="ch">
+          <li>testiculul măsoară circa 5 cm lungime și 2,5 cm lățime;</li>
+          <li>acestea sunt dispuse în scrot, care le protejează.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="scrot">
+    <div class="sec-head orange"><div class="num">3</div><h2>Scrotul</h2></div>
+    <div class="card">
+      <div class="img-txt">
+        <img src="imagini/sist_rep_masculin_barrons.webp" alt="Sistemul reproducător masculin - vedere lateral stânga în secțiune sagitală">
+        <div>
+          <p>Scrotul este formațiune în formă de sac (sacciformă), ce prezintă pereți groși, cu straturi multiple (multistratificați), suspendată sub perineu și anterior anusului. Scrotul este divizat în două compartimente separate în care se află câte un testicul.</p>
+          <p>Separarea este marcată de <strong>rafeu</strong> (conform DEX, rafeul este o linie de joncțiune a două jumătăți simetrice ale unei formații anatomice sau ale unui organ.), o proeminență îngroșată aflată pe suprafața scrotală.</p>
+          <p>În profunzimea straturilor pielii scrotului este prezent un mușchi neted subțire, denumit <strong>mușchiul dartos</strong>. Prin contracția lui, suprafața scrotului capătă un aspect încrețit. Funcțiile scrotului sunt de a conține testiculele și de a le proteja.</p>
+          <div class="g2" style="margin-top:.8rem;">
+            <div class="box blue"><strong>Structura scrotului</strong>Formațiune sacciformă, pereți multistratificați, suspendată sub perineu și anterior anusului</div>
+            <div class="box green"><strong>Mușchiul dartos</strong>Mușchi neted subțire în profunzimea pielii scrotale; contracția → aspect încrețit</div>
+          </div>
+        </div>
+      </div>
+      <figure class="fig">
+        <figcaption>Figura 22.1 – Sistemul reproducător masculin – vedere lateral stânga în secțiune sagitală.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="dezvoltare">
+    <div class="sec-head teal"><div class="num">4</div><h2>Dezvoltarea testiculelor</h2></div>
+    <div class="card">
+      <p>Dezvoltarea testiculelor are loc încă din perioada fetală, în cavitatea abdominală, lângă rinichi. Testiculele coboară în scrot până la finalul lunii a șaptea de sarcină, prin traversarea musculaturii abdominale. După momentul nașterii, temperatura din scrot înregistrează o valoare cu câteva grade mai scăzută decât cea din cavitatea abdominală.</p>
+      <div class="g2" style="margin:.8rem 0;">
+        <div class="box blue"><strong>Gubernaculum</strong>Cordon de țesut fibros care tracționează testiculele în scrot</div>
+        <div class="box red"><strong>Criptorhidia</strong>Necoborârea testiculelor în scrot; tratament chirurgical; poate determina infertilitate deoarece temperatura crescută din cavitatea abdominală împiedică producerea spermatozoizilor</div>
+      </div>
+      <p>Odată ce testiculul traversează peretele abdominal, acestuia i se atașează vase de sânge, nervi și ductul deferent. Ductul deferent reprezintă o structură tubulară care pornește de la nivelul testiculelor. Ductul deferent, împreună cu structurile anterioare (vase de sânge, nervi) alcătuiesc <strong>cordonul spermatic</strong>.</p>
+      <p>Cele două compartimente ale scrotului sunt unite de cavitatea peritoneală prin intermediul <strong>canalului inghinal</strong> care străbate peritoneul. Acest canal reprezintă un punct de slabă rezistență în peretele abdominal și în peritoneu, putând constitui un loc în care se instalează herniile inghinale. Herniile constituie protruzii (alunecare, deplasare din poziția normală) ale oricărei structuri abdominale prin peretele abdominal.</p>
+      <p>În alcătuirea fiecărui testicul intră numeroși <strong>lobuli</strong> delimitați între ei prin țesut conjunctiv (sept). Aceștia sunt formați din numeroși tubi strâns încolăciți (contorți) care poartă numele de <strong>tubi seminiferi</strong> la nivelul cărora se produc spermatozoizii. Epiteliul tubilor seminiferi este format din:</p>
+      <div class="g2" style="margin:.7rem 0;">
+        <div class="box blue"><strong>Celule germinale</strong>Produc spermatozoizi</div>
+        <div class="box green"><strong>Celule sustentaculare</strong>Celule de susținere; constituie o barieră între tubi și vasele de sânge, protejând spermatozoizii în curs de dezvoltare de sistemul imunitar</div>
+      </div>
+      <p><strong>Celulele interstițiale</strong> se interpun între tubii seminiferi și intervin în producția de hormoni sexuali masculini (androgeni), cuprinzând și testosteronul. La exterior, fiecare testicul este protejat de o capsulă conjunctivă.</p>
+      <p>Prin unirea tubilor seminiferi se formează un plex denumit <strong>rețeaua testiculară (rete testis)</strong>. Din zona superioară a testiculelor pornesc multiple <strong>canale eferente</strong> care drenează rețeaua testiculară și ulterior pătrund într-un tub încolăcit, denumit <strong>epididim</strong> (capul epididimului, epididim, coada epididimului). La acest nivel, spermatozoizii capătă mobilitate și totodată sunt transportați către ductul deferent. Acesta transportă mai departe spermatozoizii către ductul ejaculator, în afara testiculului.</p>
+      <div class="flow" style="margin:1rem 0;">
+        <div class="fb blue">Tubi seminiferi</div><span class="fa">→</span>
+        <div class="fb teal">Tubi drepți</div><span class="fa">→</span>
+        <div class="fb green">Rete testis</div><span class="fa">→</span>
+        <div class="fb orange">Canale eferente</div><span class="fa">→</span>
+        <div class="fb purple">Epididim</div><span class="fa">→</span>
+        <div class="fb red">Duct deferent</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="spermatogeneza">
+    <div class="sec-head purple"><div class="num">5</div><h2>Spermatogeneza</h2></div>
+    <div class="card">
+      <p>Spermatogeneza reprezintă procesul prin care se formează spermatozoizii. Acest proces este inițiat în stratul cel mai extern al celulelor germinale din alcătuirea tubilor seminiferi.</p>
+      <div class="box blue" style="margin:.8rem 0;">
+        <strong>Diviziunea meiotică (reducțională)</strong>Procesul prin care dintr-o celulă cu 46 de cromozomi (diploidă, 2n) se obțin două celule cu 23 de cromozomi (haploidă, n) fiecare.
+      </div>
+      <p>Celulele primordiale (stem) denumite <strong>spermatogonii</strong> trec prin diviziuni mitotice în urma cărora se obțin celule denumite <strong>spermatocite primare</strong> (diploide, 2n, au 46 de cromozomi/celulă) care sunt împinse pe măsură ce se formează, către lumenul sau interiorul tubilor seminiferi.</p>
+      <p>Ulterior, spermatocitele primare trec printr-o primă fază a diviziunii meiotice în urma căreia se obțin dintr-un spermatocit primar, două <strong>spermatocite secundare</strong> (haploide, n, cu 23 de cromozomi/celulă). Urmează apoi faza a doua a meiozei în urma căreia are loc dublarea numărului de celule (rezultă 4 spermatide), însă numărul de cromozomi rămâne neschimbat (tot 23 de cromozomi/celulă). Spermatidele rezultate se maturează și duc la formarea spermatozoizilor din interiorul tubului seminifer.</p>
+
+      <figure class="fig">
+        <img src="imagini/spermatogeneza_barrons.webp" alt="Spermatogeneza">
+        <figcaption>Figura 22.2 – Spermatogeneza.</figcaption>
+      </figure>
+
+      <h3 style="color:var(--blue);margin-top:1.2rem;">Prima fază a diviziunii meiotice</h3>
+      <table style="margin:.8rem 0;">
+        <thead>
+          <tr><th>Faza I</th><th>Procesul</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Profaza I</strong></td><td>În complexul sinaptonemal, cromozomii omologi alcătuiesc o tetradă. Cromatidele acestor cromozomi se suprapun și formează chiasme. Segmentele de cromatide pot trece de pe una pe alta, contribuind astfel la variabilitatea genetică.</td></tr>
+          <tr><td><strong>Metafaza I</strong></td><td>Odată cu alinierea cromozomilor pereche în placa ecuatorială (metafazică), aceștia se grupează independent.</td></tr>
+          <tr><td><strong>Anafaza I</strong></td><td>Are loc separarea cromozomilor pereche și deplasarea lor către polii opuși ai celulei. Centromerii cromozomilor duplicați nu suferă procese de diviziune.</td></tr>
+          <tr><td><strong>Telofaza I și citokineza</strong></td><td>Are loc distribuirea egală a cromozomilor în cele două celule fiice rezultate.</td></tr>
+        </tbody>
+      </table>
+
+      <h3 style="color:var(--purple);margin-top:1.2rem;">A doua fază a diviziunii meiotice</h3>
+      <table style="margin:.8rem 0;">
+        <thead>
+          <tr><th>Faza II</th><th>Procesul</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Interfaza</strong></td><td>Fază intermediară lipsită de replicarea ADN.</td></tr>
+          <tr><td><strong>Profaza II</strong></td><td>Are loc condensarea cromozomilor și deplasarea lor către centrul celulei.</td></tr>
+          <tr><td><strong>Metafaza II</strong></td><td>Alinierea centromerilor la placa ecuatorială.</td></tr>
+          <tr><td><strong>Anafaza II</strong></td><td>Clivarea centromerilor în urma căreia rezultă cromozomi care se deplasează către polii opuși.</td></tr>
+          <tr><td><strong>Telofaza II și citokineza</strong></td><td>Rezultă 4 celule fiice haploide, fiecare având jumătate din numărul de cromozomi (23) ai celulei mamă (46).</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="spermatozoizi">
+    <div class="sec-head teal"><div class="num">6</div><h2>Spermatozoizii</h2></div>
+    <div class="card">
+      <p>Regiunile spermatozoizilor sunt:</p>
+      <div class="g2" style="margin:.8rem 0;">
+        <div class="box blue">
+          <strong>Cap</strong>
+          Ovoid, aplatizat, condensat; prezintă un <strong>nucleu</strong> (elementul cheie al spermatozoidului) cu 23 de cromozomi. Extremitatea cefalică a capului prezintă un <strong>acrozom</strong> (cap acrozomal), care constituie o zonă cu enzime implicate în fertilizare.
+        </div>
+        <div class="box teal">
+          <strong>Gât</strong>
+          Foarte scurt.
+        </div>
+        <div class="box green">
+          <strong>Piesă intermediară</strong>
+          Prezintă microtubuli în jurul cărora se află un strat intern de filamente groase și un strat extern la nivelul căruia se află <strong>mitocondrii</strong>.
+        </div>
+        <div class="box orange">
+          <strong>Coadă</strong>
+          Prezintă filamente groase, în jurul cărora se află o membrană celulară; aceasta funcționează ca un <strong>flagel</strong> și permite înaintarea spermatozoidului.
+        </div>
+      </div>
+
+      <figure class="fig">
+        <img src="imagini/structura_spermatozoid_barrons.webp" alt="Structura spermatozoidului uman">
+        <figcaption>Figura 22.3 – Structura spermatozoidului uman.</figcaption>
+      </figure>
+
+      <div class="box purple" style="margin-top:1rem;">
+        <strong>Bariera sânge–tubi seminiferi</strong>
+        Celulele sustentaculare din alcătuirea epiteliului tubilor seminiferi constituie o barieră între aceștia din urmă și vasele de sânge, cu scopul de a proteja spermatozoizii în curs de dezvoltare de sistemul imunitar.
+      </div>
+      <div class="box blue" style="margin-top:.5rem;">
+        <strong>Rolul celulelor interstițiale în spermatogeneză</strong>
+        Prin producția lor de hormoni sexuali masculini, printre care și testosteron, celulele interstițiale asigură o concentrație crescută de testosteron la nivel testicular. Aceasta este necesară în producția de spermatozoizi (spermatogeneză).
+      </div>
+    </div>
+  </section>
+
+  <div class="page-nav">
+    <a class="outline" onclick="goto('home')">← Înapoi la index</a>
+    <a onclick="goto('ducte')">Ducte &amp; Organe Anexe →</a>
+  </div>
+</div>
+
+<!-- ══════════════════ DUCTE ══════════════════ -->
+<div class="page-section" id="page-ducte">
+  <div class="hero"><h1>🏗️ Ducte &amp; Organe Anexe</h1><p>Căile sistemului reproducător masculin, organele anexe și rolul lor în formarea și transportul spermei.</p></div>
+  <div class="page-nav">
+    <a class="outline" onclick="goto('testiculele')">← Testiculele</a>
+    <a onclick="goto('hormoni')">Hormonii Masculini →</a>
+  </div>
+
+  <section id="cai-ducte">
+    <div class="sec-head blue"><div class="num">1</div><h2>22.3. Ducte și organe anexe</h2></div>
+    <div class="card">
+      <p>O serie de ducte și organe anexe intervin în realizarea funcțiilor fiziologice ale testiculelor prin care spermatozoizii sunt evacuați din organism și își realizează activitatea lor.</p>
+    </div>
+
+    <div class="sec-head green" style="margin-top:1.5rem;"><div class="num">2</div><h2>Căile sistemului reproducător masculin</h2></div>
+    <div class="card">
+      <p>Înainte de a fi evacuați în mediul extern, spermatozoizii ajunși la maturitate traversează un sistem de ducte care prezintă multiple subdiviziuni.</p>
+
+      <h3 style="color:var(--blue);">Epididimul</h3>
+      <p>Prima de acest fel este <strong>epididimul</strong>, un tub alungit, răsucit și încolăcit, dispus în lungul marginii posterioare a testiculelor. Canalele eferente care au originea în rețeaua testiculară (rete testis), aduc în epididim spermatozoizii maturi, dar lipsiți de mobilitate. Legătura dintre tubii contorți și rețeaua testiculară este făcută prin intermediul <strong>tubilor drepți</strong>.</p>
+      <div class="g2" style="margin:.8rem 0;">
+        <div class="box teal">
+          <strong>Funcțiile epididimului</strong>
+          Celulele care căptușesc epididimul adaugă secreții și ajustează compoziția lichidului spermatic. pH-ul lichidului prezintă un caracter acid dat de produșii de degradare ai spermei stocate.
+        </div>
+        <div class="box green">
+          <strong>Mobilitatea spermatozoizilor</strong>
+          În urma unui proces care se întinde pe parcursul a circa două săptămâni, spermatozoizii capătă mobilitate în epididim. Tot la nivelul epididimului se resorb spermatozoizii deteriorați și reziduurile.
+        </div>
+      </div>
+      <p>Porțiunea de început a epididimului se numește <strong>capul epididimului</strong>, iar porțiunea terminală, <strong>coada epididimului</strong>.</p>
+
+      <figure class="fig">
+        <img src="imagini/sistem_ducte_barrons.webp" alt="Sistemul de ducte spermatice cu originea în testicul">
+        <figcaption>Figura 22.4 – Sistemul de ducte spermatice cu originea în testicul.</figcaption>
+      </figure>
+
+      <h3 style="color:var(--orange);">Ductul deferent</h3>
+      <p>La ieșirea din epididim, spermatozoizii pătrund în <strong>ductul deferent</strong> (vas deferens). Rolul acestuia este de a propulsa și a conduce lichidul seminal provenit de la epididimul fiecărui testicul. Ductul deferent reprezintă o extensie în formă de tub a epididimului care traversează canalul inghinal către cavitatea abdominală.</p>
+      <p>La acest nivel, ductul deferent trece lateral de vezica urinară, spre marginea postero-superioară a glandei prostatice. Imediat înainte de a ajunge la aceasta, ductul deferent prezintă o dilatație denumită <strong>ampulă</strong>. La nivelul acesteia, cele două ducte deferente care provin de la fiecare testicul, se unesc cu ductele care vin de la veziculele seminale, formând <strong>ductele ejaculatoare</strong>. Sunt ducte relativ scurte care traversează prostata și ulterior își eliberează conținutul în uretră.</p>
+
+      <h3 style="color:var(--purple);">Uretra</h3>
+      <p>Uretra este cuprinsă între vezica urinară și vârful penisului. Cele 3 porțiuni ale acesteia sunt:</p>
+      <div class="g3" style="margin:.8rem 0;">
+        <div class="box blue">
+          <strong>① Porțiunea prostatică</strong>
+          Uretra prostatică care traversează mijlocul prostatei și primește secreții ei.
+        </div>
+        <div class="box teal">
+          <strong>② Porțiunea membranoasă</strong>
+          Uretra membranoasă care constituie o zonă scurtă ce traversează planșeul muscular al cavității pelviene.
+        </div>
+        <div class="box green">
+          <strong>③ Porțiunea peniană</strong>
+          Uretra peniană care se extinde prin intermediul penisului la orificiul uretral extern situat în vârful penisului. Primește secrețiile glandelor bulbouretrale.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="organe-anexe">
+    <div class="sec-head orange"><div class="num">3</div><h2>Organe Anexe</h2></div>
+    <div class="card">
+      <p>Organele anexe ale sistemului reproducător masculin au rolul de a secreta fluide care sunt necesare în formarea spermei sau funcționează ca organe care asigură transportul ei în cursul copulației (actului sexual).</p>
+      <p>Sunt organe anexe (auxiliare): vezicula seminală, glanda prostatică (prostata), glandele bulbouretrale și penisul.</p>
+
+      <figure class="fig">
+        <img src="imagini/ducte_organe_masculine_barrons.webp" alt="Ductele și organele anexe ale sistemului reproducător masculin - vedere posterioară">
+        <figcaption>Figura 22.5 – Ductele și organele anexe ale sistemului reproducător masculin – vedere posterioară.</figcaption>
+      </figure>
+
+      <h3 style="color:var(--blue);">Vezicula seminală</h3>
+      <div class="box blue" style="margin:.5rem 0;">
+        <strong>Caracteristici:</strong>
+        <ul class="ch" style="margin-top:.5rem;">
+          <li>organ pereche format din structuri în formă de sac (sacciforme), drenate de unele ducte care funcționează ca ductul deferent;</li>
+          <li>secretă și hormoni – prostaglandine care intră în compoziția spermei;</li>
+          <li>asigură nutriția spermatozoizilor în cursul ejaculării prin secreția de fluide nutritive, în special fructoză;</li>
+          <li>fluidul produs prezintă un caracter alcalin astfel încât să neutralizeze aciditatea dezvoltată în epididim;</li>
+          <li>fluidul produs reprezintă circa <strong>60% din volumul total</strong> al lichidului seminal din compoziția spermei.</li>
+        </ul>
+      </div>
+
+      <h3 style="color:var(--green);">Glanda prostatică (prostata)</h3>
+      <div class="box green" style="margin:.5rem 0;">
+        <strong>Caracteristici:</strong>
+        <ul class="ch" style="margin-top:.5rem;">
+          <li>glandă unică;</li>
+          <li>înconjoară uretra;</li>
+          <li>secretă un fluid cu un caracter ușor alcalin care intervine în mobilitatea spermatozoizilor, neutralizând aciditatea naturală din vagin, dar și lichidul seminal (un mediu acid ar afecta mobilitatea spermatozoizilor);</li>
+          <li>în alcătuirea sa intră fibre musculare netede cu rol de suport;</li>
+          <li>creșterea ei în dimensiuni la vârstnici poate face mai dificil procesul de urinare;</li>
+          <li>secreția produsă reprezintă circa <strong>30% din volumul total</strong> al lichidului seminal.</li>
+        </ul>
+      </div>
+
+      <h3 style="color:var(--teal);">Glandele bulbouretrale</h3>
+      <div class="box teal" style="margin:.5rem 0;">
+        <strong>Caracteristici:</strong>
+        <ul class="ch" style="margin-top:.5rem;">
+          <li>două glande mici;</li>
+          <li>se află în apropierea penisului (la baza sa);</li>
+          <li>se deschid în uretra peniană;</li>
+          <li>secretă mucus lubrifiant al capătului penisului și substanțe alcaline care neutralizează aciditatea din vagin și activează spermatozoizii (ajută la mobilitatea spermatozoizilor).</li>
+        </ul>
+      </div>
+
+      <h3 style="color:var(--orange);">Compoziția spermei</h3>
+      <div class="g2" style="margin:.7rem 0;">
+        <div class="box orange">
+          <strong>Conținutul spermei:</strong>
+          <ul class="ch" style="margin-top:.5rem;">
+            <li>spermatozoizi;</li>
+            <li>produșii de secreție ai testiculelor;</li>
+            <li>produșii de secreție ai veziculei seminale;</li>
+            <li>produșii de secreție ai prostatei;</li>
+            <li>produșii de secreție ai glandelor bulbouretrale.</li>
+          </ul>
+        </div>
+        <div class="box purple">
+          <strong>Date cantitative:</strong>
+          Volumul ejaculat: 2–5 mL; ~20–100 milioane spermatozoizi/mL; lichid seminal format din secrețiile glandulare ale glandelor anexe; enzime (protează și alte enzime care intervin în fertilizare).
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 style="color:var(--purple);font-size:1.1rem;margin-bottom:.8rem;">Penisul</h3>
+      <p>Penisul este un organ al actului sexual care intervine în micțiune (transportă urina) și copulație. Se împarte în:</p>
+      <div class="g3" style="margin:.8rem 0;">
+        <div class="box blue"><strong>Rădăcină</strong>Baza penisului</div>
+        <div class="box teal"><strong>Corp (ax)</strong>Corpul penisului</div>
+        <div class="box green"><strong>Gland penian</strong>Asociat cu senzații de plăcere în cursul stimulării sexuale</div>
+      </div>
+      <p>Orificiul uretral extern este înconjurat de gland. Acesta la rândul său este înconjurat de un pliu de piele, denumit <strong>prepuț</strong>. Îndepărtarea lui se face chirurgical și procedeul poartă numele de <strong>circumcizie</strong>.</p>
+      <p>Corpul penisului, în cea mai mare parte a sa, este ocupat de 3 mase de țesut erectil și anume:</p>
+      <div class="g2" style="margin:.7rem 0;">
+        <div class="box orange"><strong>2 corpi cavernoși</strong></div>
+        <div class="box purple"><strong>Corpul spongios</strong></div>
+      </div>
+      <p>Țesutul erectil este alcătuit dintr-un labirint de canale vasculare separate de țesut conjunctiv și fibre musculare netede.</p>
+      <div class="acc" style="margin:1rem 0;">
+        <div class="acc-head" onclick="tog(this)">Mecanismul erecției și ejaculării <span class="arr">▾</span></div>
+        <div class="acc-body">
+          <p>În cursul excitării sexuale, componenta <strong>parasimpatică</strong> a sistemului nervos eliberează impulsuri care duc la dilatarea arteriolelor din țesutul erectil, crescând semnificativ fluxul sanguin în aceste țesuturi și colabarea (turtirea) venelor. Se înregistrează o congestie (un aflux excesiv) cu sânge la nivelul rețelei vasculare și are loc erecția.</p>
+          <p style="margin-top:.6rem;">În cursul apogeului sexual, sperma traversează uretra și ajunge la orificiul uretral extern. După ce sperma a fost ejaculată, componenta <strong>simpatică</strong> a sistemului nervos eliberează impulsuri care duc la constricția arteriolelor, diminuând astfel aportul de sânge. Odată cu evacuarea sângelui din țesutul erectil pe cale venoasă, penisul devine flasc. Cât se mențin stimulii simpatici, vasoconstricția și starea flască persistă.</p>
+          <p style="margin-top:.6rem;">La nivelul căilor sistemului reproducător apar contracții peristaltice care intervin în deplasarea spermei din cursul ejaculării. Glandele anexe se contractă și evacuează produșii lor de secreție care contribuie la creșterea volumului spermei.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-nav">
+    <a class="outline" onclick="goto('testiculele')">← Testiculele</a>
+    <a onclick="goto('hormoni')">Hormonii Masculini →</a>
+  </div>
+</div>
+
+<!-- ══════════════════ HORMONI ══════════════════ -->
+<div class="page-section" id="page-hormoni">
+  <div class="hero"><h1>🧬 Hormonii Masculini</h1><p>Reglarea hormonală a sistemului reproducător masculin: GnRH, FSH, LH și testosteron.</p></div>
+  <div class="page-nav">
+    <a class="outline" onclick="goto('ducte')">← Ducte &amp; Organe Anexe</a>
+    <a onclick="goto('grile')">Grile →</a>
+  </div>
+
+  <section id="hormoni-masculini">
+    <div class="sec-head purple"><div class="num">1</div><h2>22.4. Hormonii masculini</h2></div>
+    <div class="card">
+      <p>Nu numai hormonii masculini intervin în procesul de reproducere masculin. Hipofiza anterioară intervine prin secreția a doi hormoni importanți:</p>
+      <div class="g2" style="margin:.8rem 0;">
+        <div class="box blue">
+          <strong>FSH – Hormon foliculo-stimulant</strong>
+          Stimulează maturarea tubilor seminiferi și spermatogeneza.
+        </div>
+        <div class="box green">
+          <strong>LH – Hormonul luteinizant</strong>
+          Asistă procesul de spermatogeneză și stimulează maturarea celulelor interstițiale (Leydig) cu producția de testosteron.
+        </div>
+      </div>
+      <p>Reglarea eliberării de FSH și LH este făcută de <strong>hipotalamus</strong>, prin secreția de <strong>hormon de eliberare a gonadotropinelor (Gonadotropin Releasing Hormone – GnRH)</strong>. Secreția de GnRH favorizează eliberarea de FSH și LH hipofizar, determinând astfel creșterea concentrației lor în sânge. Alături de cei 2 hormoni hipofizari, GnRH este implicat într-un mecanism de <strong>feedback negativ</strong> cu scopul de a controla sinteza și secreția de testosteron.</p>
+      <div class="flow" style="margin:1rem 0;">
+        <div class="fb purple">Hipotalamus (GnRH)</div><span class="fa">→</span>
+        <div class="fb blue">Hipofiză anterioară (FSH + LH)</div><span class="fa">→</span>
+        <div class="fb orange">Celule interstițiale (Leydig)</div><span class="fa">→</span>
+        <div class="fb green">Testosteron</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testosteron">
+    <div class="sec-head blue"><div class="num">2</div><h2>Testosteronul</h2></div>
+    <div class="card">
+      <p><strong>Testosteronul</strong>, hormon androgen, reprezintă un hormon sexual masculin sintetizat de către celulele interstițiale ale testiculelor și care prezintă următoarele caracteristici:</p>
+      <ul class="ch" style="margin:.7rem 0;">
+        <li>controlul secreției sale este realizat de către LH;</li>
+        <li>la făt – testosteronul exercită control asupra diferențierii țesuturilor specifice sexului masculin și intervine în coborârea testiculelor în scrot;</li>
+        <li>produce și menține caracterele sexuale masculine;</li>
+        <li>până la pubertate, producția de testosteron este scăzută.</li>
+      </ul>
+
+      <h3 style="color:var(--blue);margin-top:1rem;">Funcțiile testosteronului după pubertate</h3>
+      <div class="g2" style="margin:.7rem 0;">
+        <div class="box blue">
+          <strong>① Spermatogeneză &amp; LH</strong>
+          Induce maturarea spermatozoizilor și inhibă producția de LH.
+        </div>
+        <div class="box green">
+          <strong>② Organe anexe</strong>
+          Asigură funcționarea normală a organelor anexe și a ductelor sistemului reproducător masculin.
+        </div>
+        <div class="box orange">
+          <strong>③ Caractere sexuale secundare</strong>
+          Influențează dezvoltarea caracterelor sexuale secundare masculine.
+        </div>
+        <div class="box purple">
+          <strong>④ Metabolism &amp; musculatură</strong>
+          Stimulează procesele metabolice care implică sinteză proteică și de creștere a masei musculare.
+        </div>
+        <div class="box teal">
+          <strong>⑤ Comportament sexual</strong>
+          Influențează comportamentul sexual și apetitul sexual.
+        </div>
+        <div class="box red">
+          <strong>⑥ Alți androgeni</strong>
+          Alți hormoni androgeni accelerează pubertatea și inițiază maturarea sexuală și apariția caracterelor sexuale secundare masculine.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>Rezumat – Reglarea hormonală</h3>
+    <ul>
+      <li><strong>GnRH</strong> (hipotalamus) → stimulează secreția de FSH și LH din hipofiza anterioară</li>
+      <li><strong>FSH</strong> → maturarea tubilor seminiferi + spermatogeneza</li>
+      <li><strong>LH</strong> → maturarea celulelor interstițiale Leydig → producție testosteron</li>
+      <li><strong>Testosteron</strong> → controlat de LH; feedback negativ asupra GnRH, FSH și LH</li>
+      <li><strong>La făt:</strong> testosteron → diferențierea sexuală + coborârea testiculelor în scrot</li>
+      <li><strong>După pubertate:</strong> spermatogeneză, caractere sexuale secundare, sinteză proteică, comportament sexual</li>
+    </ul>
+  </div>
+
+  <div class="page-nav">
+    <a class="outline" onclick="goto('ducte')">← Ducte &amp; Organe Anexe</a>
+    <a onclick="goto('grile')">Grile →</a>
+    <a class="outline" onclick="goto('home')">Pagina capitolului</a>
+  </div>
+</div>
+
+<!-- ══════════════════ GRILE ══════════════════ -->
+<div class="page-section" id="page-grile">
+  <div class="gtabs">
+    <button class="gtab-btn active" onclick="switchGTab('quiz',this)">Grile</button>
+    <button class="gtab-btn" onclick="switchGTab('analysis',this)">Analiză</button>
+  </div>
+
+  <div class="gtab-panel active" id="gtab-quiz">
+    <div class="sync-bar">
+      <span>Sincronizează progresul între dispozitive</span>
+      <button class="sync-btn export" onclick="exportProgress()">↑ Exportă</button>
+      <button class="sync-btn import" onclick="importProgress()">↓ Importă</button>
+    </div>
+    <div class="quiz-header">
+      <h2>Grile UMF – Sistemul Reproducător Masculin</h2>
+      <div class="quiz-progress" id="progress-text">0 / 0 completate</div>
+      <div class="progress-bar-wrap"><div class="progress-bar" id="progress-bar" style="width:0%"></div></div>
+    </div>
+    <div id="questions-container">
+      <div class="no-data">
+        <div class="icon">📝</div>
+        <p>Grilele pentru acest capitol vor fi disponibile în curând.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="gtab-panel" id="gtab-analysis">
+    <div class="no-data">
+      <div class="icon">📊</div>
+      <p>Nu există date de analiză. Completați grilele pentru a vedea statistici.</p>
+    </div>
+  </div>
+</div>
+
+</main>
+<div id="toast" class="toast"></div>
+
+<script>
+// ════ SUB-NAV ════
+const SUB_NAVS = {
+  testiculele: [
+    {h:'intro', l:'22.1 Introducere'},
+    {h:'testiculele', l:'22.2 Testiculele'},
+    {h:'scrot', l:'Scrotul'},
+    {h:'dezvoltare', l:'Dezvoltarea testiculelor'},
+    {h:'spermatogeneza', l:'Spermatogeneza'},
+    {h:'spermatozoizi', l:'Spermatozoizii'},
+  ],
+  ducte: [
+    {h:'cai-ducte', l:'Căile sistemului reproducător'},
+    {h:'organe-anexe', l:'Organe Anexe'},
+  ],
+  hormoni: [
+    {h:'hormoni-masculini', l:'Hormonii masculini'},
+    {h:'testosteron', l:'Testosteronul'},
+  ],
+};
+
+// ════ NAVIGATION ════
+function goto(sec, anchor) {
+  document.querySelectorAll('.page-section').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('#sidenav a').forEach(a => a.classList.remove('active'));
+  const page = document.getElementById('page-' + sec);
+  if (page) page.classList.add('active');
+  const navLinks = document.querySelectorAll('#sidenav a[onclick]');
+  navLinks.forEach(a=>{ if(a.getAttribute('onclick')===`goto('${sec}')`) a.classList.add('active'); });
+  const subNav = document.getElementById('sub-nav');
+  const subLabel = document.getElementById('sub-nav-label');
+  if (SUB_NAVS[sec]) {
+    subLabel.style.display = 'block';
+    subNav.innerHTML = SUB_NAVS[sec].map(n => `<a class="sub" href="#${n.h}" onclick="scrollToAnchor('${n.h}')">${n.l}</a>`).join('');
+  } else {
+    subLabel.style.display = 'none';
+    subNav.innerHTML = '';
+  }
+  window.scrollTo({top:0,behavior:'smooth'});
+  closeNav();
+}
+
+function scrollToAnchor(id) {
+  const el = document.getElementById(id);
+  if (el) setTimeout(() => el.scrollIntoView({behavior:'smooth',block:'start'}), 50);
+}
+
+window.addEventListener('scroll',()=>{ document.getElementById('top').style.display=window.scrollY>300?'flex':'none'; });
+
+// ════ ACCORDION ════
+function tog(h){ h.classList.toggle('open'); h.nextElementSibling.classList.toggle('show'); }
+
+// ════ GRILE TABS ════
+function switchGTab(tab, btn) {
+  document.querySelectorAll('.gtab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.gtab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('gtab-' + tab).classList.add('active');
+  btn.classList.add('active');
+}
+
+// ════ PROGRESS SYNC ════
+const STORAGE_KEY = 'reproducator_masculin_quiz_v1';
+const ANALYSIS_KEY = 'reproducator_masculin_analysis_v1';
+
+function exportProgress(){
+  var data = {
+    q: localStorage.getItem(STORAGE_KEY) || '{}',
+    a: localStorage.getItem(ANALYSIS_KEY) || '{}'
+  };
+  var code = btoa(unescape(encodeURIComponent(JSON.stringify(data))));
+  navigator.clipboard.writeText(code).then(function(){
+    alert('✅ Codul a fost copiat!\n\nDu-te pe celălalt dispozitiv → Grile → "Importă progresul" și lipește codul.');
+  }).catch(function(){
+    prompt('Copiază manual codul de mai jos:', code);
+  });
+}
+
+function importProgress(){
+  var code = prompt('Lipește codul de progres (copiat de pe alt dispozitiv):');
+  if(!code || !code.trim()) return;
+  try {
+    var data = JSON.parse(decodeURIComponent(escape(atob(code.trim()))));
+    if(data.q) localStorage.setItem(STORAGE_KEY, data.q);
+    if(data.a) localStorage.setItem(ANALYSIS_KEY, data.a);
+    alert('✅ Progresul a fost importat! Pagina se reîncarcă...');
+    location.reload();
+  } catch(e) {
+    alert('❌ Cod invalid. Asigură-te că ai copiat codul complet.');
+  }
+}
+
+// ════ DARK MODE ════
+function toggleDarkMode(){
+  const isDark = document.body.classList.toggle('dark');
+  localStorage.setItem('darkMode', isDark ? '1' : '0');
+  const navBtn = document.getElementById('nav-dm-btn');
+  const navLabel = document.getElementById('nav-dm-label');
+  if (isDark) {
+    navBtn.classList.add('on');
+    navLabel.textContent = '☀️ Mod zi';
+  } else {
+    navBtn.classList.remove('on');
+    navLabel.textContent = '🌙 Mod noapte';
+  }
+}
+if(localStorage.getItem('darkMode')==='1'){
+  document.body.classList.add('dark');
+  const navBtn = document.getElementById('nav-dm-btn');
+  const navLabel = document.getElementById('nav-dm-label');
+  if(navBtn) navBtn.classList.add('on');
+  if(navLabel) navLabel.textContent = '☀️ Mod zi';
+}
+
+// ════ HIGHLIGHTER ════
+let hlMode = false;
+function toggleHighlighter() {
+  hlMode = !hlMode;
+  document.body.classList.toggle('hl-mode', hlMode);
+  const hlBtn = document.getElementById('hl-btn');
+  const navHlBtn = document.getElementById('nav-hl-btn');
+  const navHlLabel = document.getElementById('nav-hl-label');
+  if (hlBtn) hlBtn.classList.toggle('active', hlMode);
+  if (navHlBtn) {
+    navHlBtn.classList.toggle('hl-on', hlMode);
+    if(navHlLabel) navHlLabel.textContent = hlMode ? '🖊 Evidențiator ON' : '🖊 Evidențiator';
+  }
+}
+document.addEventListener('mouseup', function(e){
+  if (!hlMode) return;
+  const sel = window.getSelection();
+  if (!sel || sel.isCollapsed || !sel.rangeCount) return;
+  const range = sel.getRangeAt(0);
+  if (!range || range.collapsed) return;
+  try {
+    const mark = document.createElement('mark');
+    mark.className = 'hl';
+    range.surroundContents(mark);
+    sel.removeAllRanges();
+  } catch(err) {}
+});
+
+// ════ NAV MOBILE ════
+function toggleNav(){
+  const nav = document.getElementById('sidenav');
+  const overlay = document.getElementById('nav-overlay');
+  const btn = document.getElementById('nav-toggle');
+  const isOpen = nav.classList.toggle('open');
+  overlay.classList.toggle('open', isOpen);
+  btn.textContent = isOpen ? '✕' : '☰';
+  btn.setAttribute('aria-label', isOpen ? 'Închide meniu' : 'Deschide meniu');
+}
+function closeNav(){
+  const nav = document.getElementById('sidenav');
+  const overlay = document.getElementById('nav-overlay');
+  const btn = document.getElementById('nav-toggle');
+  if(nav.classList.contains('open')){
+    nav.classList.remove('open');
+    overlay.classList.remove('open');
+    btn.textContent = '☰';
+    btn.setAttribute('aria-label', 'Deschide meniu');
+  }
+}
+
+// ════ INIT ════
+(function(){
+  var p = new URLSearchParams(window.location.search);
+  if(p.get('goto') === 'grile' || window.location.hash === '#grile'){
+    goto('grile');
+  } else {
+    goto('home');
+  }
+})();
+</script>
+</body>
+</html>
