@@ -716,36 +716,36 @@ document.querySelectorAll('.cat-ring').forEach(function(svg){
 
 /* ── COMMAND PALETTE DATA ── */
 const CHAPTERS=[
-  {num:1,icon:'🏛️',name:'Introducere în anatomie și fiziologie',cat:'Bazele Anatomiei',color:'#2563EB',colorLight:'#EFF6FF',done:false},
-  {num:2,icon:'⚗️',name:'Bazele chimice ale anatomiei și fiziologiei',cat:'Bazele Anatomiei',color:'#2563EB',colorLight:'#EFF6FF',done:false},
-  {num:3,icon:'🔬',name:'Celula și fiziologia celulară',cat:'Bazele Anatomiei',color:'#2563EB',colorLight:'#EFF6FF',done:false},
-  {num:4,icon:'🧫',name:'Țesuturile',cat:'Bazele Anatomiei',color:'#2563EB',colorLight:'#EFF6FF',done:false},
-  {num:5,icon:'🩺',name:'Sistemul tegumentar',cat:'Tegument, Oase & Mușchi',color:'#0891B2',colorLight:'#ECFEFF',done:false},
-  {num:6,icon:'🦷',name:'Oasele și articulațiile',cat:'Tegument, Oase & Mușchi',color:'#0891B2',colorLight:'#ECFEFF',done:false},
-  {num:7,icon:'🦴',name:'Sistemul osos',cat:'Tegument, Oase & Mușchi',color:'#0891B2',colorLight:'#ECFEFF',done:false},
-  {num:8,icon:'💪',name:'Țesutul muscular',cat:'Tegument, Oase & Mușchi',color:'#0891B2',colorLight:'#ECFEFF',done:false},
-  {num:9,icon:'🏃',name:'Sistemul muscular',cat:'Tegument, Oase & Mușchi',color:'#0891B2',colorLight:'#ECFEFF',done:false},
-  {num:10,icon:'⚡',name:'Țesutul nervos',cat:'Sistem Nervos, Simțuri & Endocrin',color:'#7C3AED',colorLight:'#F5F3FF',done:false},
-  {num:11,icon:'🧠',name:'Organizarea sistemului nervos',cat:'Sistem Nervos, Simțuri & Endocrin',color:'#7C3AED',colorLight:'#F5F3FF',done:false},
-  {num:12,icon:'👁️',name:'Organele de simț',cat:'Sistem Nervos, Simțuri & Endocrin',color:'#7C3AED',colorLight:'#F5F3FF',done:false},
-  {num:13,icon:'🔬',name:'Sistemul endocrin',cat:'Sistem Nervos, Simțuri & Endocrin',color:'#7C3AED',colorLight:'#F5F3FF',done:false},
-  {num:14,icon:'🩸',name:'Sângele',cat:'Sânge, Cardiovascular & Imunitate',color:'#E11D48',colorLight:'#FFF1F2',done:false},
-  {num:15,icon:'❤️',name:'Sistemul cardiovascular',cat:'Sânge, Cardiovascular & Imunitate',color:'#E11D48',colorLight:'#FFF1F2',done:false},
-  {num:16,icon:'🛡️',name:'Sistemul limfatic și imun',cat:'Sânge, Cardiovascular & Imunitate',color:'#E11D48',colorLight:'#FFF1F2',done:false},
-  {num:17,icon:'🫁',name:'Sistemul respirator',cat:'Respirator, Digestiv & Metabolism',color:'#EA580C',colorLight:'#FFF7ED',done:false},
-  {num:18,icon:'🍽️',name:'Sistemul digestiv',cat:'Respirator, Digestiv & Metabolism',color:'#EA580C',colorLight:'#FFF7ED',done:false},
-  {num:19,icon:'⚡',name:'Metabolism și nutriție',cat:'Respirator, Digestiv & Metabolism',color:'#EA580C',colorLight:'#FFF7ED',done:false},
-  {num:20,icon:'🫘',name:'Sistemul urinar',cat:'Sistemul Excretor & Echilibru Intern',color:'#059669',colorLight:'#ECFDF5',done:true,url:'sistemul_renal_complet.html'},
-  {num:21,icon:'💧',name:'Echilibrul hidro-electrolitic și acido-bazic',cat:'Sistemul Excretor & Echilibru Intern',color:'#059669',colorLight:'#ECFDF5',done:false},
-  {num:22,icon:'♂️',name:'Sistemul reproducător masculin',cat:'Sistemul Reproducător',color:'#0891B2',colorLight:'#ECFEFF',done:true,url:'sistemul_reproducator_masculin.html'},
-  {num:23,icon:'♀️',name:'Sistemul reproducător feminin',cat:'Sistemul Reproducător',color:'#0891B2',colorLight:'#ECFEFF',done:false},
+  {num:1,icon:'🏛️',name:'Introducere în anatomie și fiziologie',cat:'Bazele Anatomiei',color:'#2563EB',colorLight:'#EFF6FF',done:false,kw:'homeostaza plan anatomic cavitati regiuni'},
+  {num:2,icon:'⚗️',name:'Bazele chimice ale anatomiei și fiziologiei',cat:'Bazele Anatomiei',color:'#2563EB',colorLight:'#EFF6FF',done:false,kw:'atomi molecule legatura chimica pH acid baza enzima'},
+  {num:3,icon:'🔬',name:'Celula și fiziologia celulară',cat:'Bazele Anatomiei',color:'#2563EB',colorLight:'#EFF6FF',done:false,kw:'membrana nucleu mitocondrie ribozom ATP transport activ pasiv'},
+  {num:4,icon:'🧫',name:'Țesuturile',cat:'Bazele Anatomiei',color:'#2563EB',colorLight:'#EFF6FF',done:false,kw:'epitelial conjunctiv muscular nervos histologie'},
+  {num:5,icon:'🩺',name:'Sistemul tegumentar',cat:'Tegument, Oase & Mușchi',color:'#0891B2',colorLight:'#ECFEFF',done:false,kw:'piele epiderm derm hipoderm par unghie glanda sebacee sudoripara'},
+  {num:6,icon:'🦷',name:'Oasele și articulațiile',cat:'Tegument, Oase & Mușchi',color:'#0891B2',colorLight:'#ECFEFF',done:false,kw:'os articulatie cartilaj sinoviala ligament tendon fractura'},
+  {num:7,icon:'🦴',name:'Sistemul osos',cat:'Tegument, Oase & Mușchi',color:'#0891B2',colorLight:'#ECFEFF',done:false,kw:'schelet coloana vertebrala craniu coasta bazin calciu osteoblast osteoclast'},
+  {num:8,icon:'💪',name:'Țesutul muscular',cat:'Tegument, Oase & Mușchi',color:'#0891B2',colorLight:'#ECFEFF',done:false,kw:'miofibrila actina miozina sarcomere contractie striat neted cardiac'},
+  {num:9,icon:'🏃',name:'Sistemul muscular',cat:'Tegument, Oase & Mușchi',color:'#0891B2',colorLight:'#ECFEFF',done:false,kw:'muschi muschii origine insertie flex extensie biceps triceps'},
+  {num:10,icon:'⚡',name:'Țesutul nervos',cat:'Sistem Nervos, Simțuri & Endocrin',color:'#7C3AED',colorLight:'#F5F3FF',done:false,kw:'neuron sinapsa axon dendrite mielina potential actiune neurotransmitator'},
+  {num:11,icon:'🧠',name:'Organizarea sistemului nervos',cat:'Sistem Nervos, Simțuri & Endocrin',color:'#7C3AED',colorLight:'#F5F3FF',done:false,kw:'creier maduva spinarii nervi SNC SNP simpatic parasimpatic reflex'},
+  {num:12,icon:'👁️',name:'Organele de simț',cat:'Sistem Nervos, Simțuri & Endocrin',color:'#7C3AED',colorLight:'#F5F3FF',done:false,kw:'ochi retina urechea interna cohlee gust miros tactil proprioceptie'},
+  {num:13,icon:'🔬',name:'Sistemul endocrin',cat:'Sistem Nervos, Simțuri & Endocrin',color:'#7C3AED',colorLight:'#F5F3FF',done:false,kw:'hormon hipofiza tiroida suprarenala pancreas insulina glucagon cortizol'},
+  {num:14,icon:'🩸',name:'Sângele',cat:'Sânge, Cardiovascular & Imunitate',color:'#E11D48',colorLight:'#FFF1F2',done:false,kw:'eritrocite leucocite trombocite hemoglobina plasma coagulare grupe sanguine'},
+  {num:15,icon:'❤️',name:'Sistemul cardiovascular',cat:'Sânge, Cardiovascular & Imunitate',color:'#E11D48',colorLight:'#FFF1F2',done:false,kw:'inima cord artere vene capilare tensiune arteriala ciclu cardiac sistola diastola'},
+  {num:16,icon:'🛡️',name:'Sistemul limfatic și imun',cat:'Sânge, Cardiovascular & Imunitate',color:'#E11D48',colorLight:'#FFF1F2',done:false,kw:'limfa ganglioni splina timus anticorpi imunitate limfocite fagocitoza'},
+  {num:17,icon:'🫁',name:'Sistemul respirator',cat:'Respirator, Digestiv & Metabolism',color:'#EA580C',colorLight:'#FFF7ED',done:false,kw:'plamani alveole trahee bronhii ventilatie schimb gaze oxigen CO2 hematoza'},
+  {num:18,icon:'🍽️',name:'Sistemul digestiv',cat:'Respirator, Digestiv & Metabolism',color:'#EA580C',colorLight:'#FFF7ED',done:false,kw:'stomac intestin ficat pancreas absorbtie digestie enzima bila glucoza aminoacizi'},
+  {num:19,icon:'⚡',name:'Metabolism și nutriție',cat:'Respirator, Digestiv & Metabolism',color:'#EA580C',colorLight:'#FFF7ED',done:false,kw:'glicoliza ciclul krebs ATP vitamine minerale BMR calorii lipide proteine'},
+  {num:20,icon:'🫘',name:'Sistemul urinar',cat:'Sistemul Excretor & Echilibru Intern',color:'#059669',colorLight:'#ECFDF5',done:true,url:'sistemul_renal_complet.html',kw:'rinichi nefron glomerul bowman filtrare reabsorbtie ADH aldosteron uree creatinina urina RFG tubul contort TCP TCD ansa henle'},
+  {num:21,icon:'💧',name:'Echilibrul hidro-electrolitic și acido-bazic',cat:'Sistemul Excretor & Echilibru Intern',color:'#059669',colorLight:'#ECFDF5',done:false,kw:'sodiu potasiu clor pH tampon acidoza alcaloza osmolaritate'},
+  {num:22,icon:'♂️',name:'Sistemul reproducător masculin',cat:'Sistemul Reproducător',color:'#0891B2',colorLight:'#ECFEFF',done:true,url:'sistemul_reproducator_masculin.html',kw:'testicul spermatogeneza sperma FSH LH testosteron epididim vas deferens prostata'},
+  {num:23,icon:'♀️',name:'Sistemul reproducător feminin',cat:'Sistemul Reproducător',color:'#0891B2',colorLight:'#ECFEFF',done:false,kw:'ovar ovulatie menstruatie estrogen progesteron uter trompe sarcina'},
 ];
 
 function renderPaletteItems(q){
   const list=document.getElementById('palette-list');
   const needle=q.trim().toLowerCase();
   const results=needle
-    ? CHAPTERS.filter(c=>(c.num+' '+c.name+' '+c.cat).toLowerCase().includes(needle)).slice(0,10)
+    ? CHAPTERS.filter(c=>(c.num+' '+c.name+' '+c.cat+' '+(c.kw||'')).toLowerCase().includes(needle)).slice(0,10)
     : CHAPTERS.filter(c=>c.done).concat(CHAPTERS.filter(c=>!c.done)).slice(0,8);
   if(!results.length){list.innerHTML='<div class="lab-palette-empty">Nicio potrivire. Încearcă "nefron", "ADH", "inimă"…</div>';return;}
   list.innerHTML=results.map(c=>`
