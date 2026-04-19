@@ -314,6 +314,8 @@ tr:nth-child(even) td{background:var(--lab-bg);}
 #hl-badge{position:fixed;bottom:5.8rem;right:5rem;background:var(--slate-800);color:#fff;font-size:.67rem;font-weight:800;padding:.15rem .45rem;border-radius:.9rem;z-index:201;display:none;white-space:nowrap;}
 #hl-badge.show{display:block;}
 mark.hl{background:#fef08a;color:inherit;border-radius:2px;}
+.search-found{border-radius:3px;animation:searchPulse 3s ease-out forwards;}
+@keyframes searchPulse{0%{background:#f59e0b;outline:3px solid #f59e0b;}60%{background:#fef08a;outline:3px solid transparent;}100%{background:transparent;}}
 body.hl-mode{cursor:auto;}
 
 /* ═══ DARK MODE ═══ */
@@ -1511,6 +1513,34 @@ document.getElementById('lab-brand-btn').addEventListener('click', function(e){
   if(window.innerWidth <= 768){ e.preventDefault(); toggleNav(); }
 });
 
+function searchAndScrollTo(term) {
+  setTimeout(function() {
+    var needle = term.toLowerCase();
+    var section = document.querySelector('.page-section.active') || document.body;
+    var walker = document.createTreeWalker(section, NodeFilter.SHOW_TEXT);
+    var found = null;
+    while (walker.nextNode()) {
+      var tn = walker.currentNode;
+      if (tn.parentNode.closest('script,style,nav,button')) continue;
+      if (tn.textContent.toLowerCase().includes(needle)) { found = tn; break; }
+    }
+    if (!found) return;
+    var idx = found.textContent.toLowerCase().indexOf(needle);
+    var range = document.createRange();
+    range.setStart(found, idx);
+    range.setEnd(found, idx + term.length);
+    var span = document.createElement('span');
+    span.className = 'search-found';
+    range.surroundContents(span);
+    span.scrollIntoView({behavior:'smooth', block:'center'});
+    setTimeout(function() {
+      var p = span.parentNode;
+      while (span.firstChild) p.insertBefore(span.firstChild, span);
+      p.removeChild(span);
+    }, 3500);
+  }, 200);
+}
+
 // ════ INIT ════
 (function(){
   var p = new URLSearchParams(window.location.search);
@@ -1519,6 +1549,8 @@ document.getElementById('lab-brand-btn').addEventListener('click', function(e){
   } else {
     goto('home');
   }
+  var q = p.get('q');
+  if (q) searchAndScrollTo(decodeURIComponent(q));
 })();
 </script>
 </body>

@@ -749,7 +749,7 @@ function renderPaletteItems(q){
     : CHAPTERS.filter(c=>c.done).concat(CHAPTERS.filter(c=>!c.done)).slice(0,8);
   if(!results.length){list.innerHTML='<div class="lab-palette-empty">Nicio potrivire. Încearcă "nefron", "ADH", "inimă"…</div>';return;}
   list.innerHTML=results.map(c=>`
-    <button class="lab-palette-item" onclick="${c.done?`window.location.href='${c.url}'`:''}" style="${!c.done?'cursor:default;opacity:.6':''}">
+    <button class="lab-palette-item" onclick="${c.done?`goToChapter('${c.url}')`:''}" style="${!c.done?'cursor:default;opacity:.6':''}">
       <span class="lab-palette-emoji">${c.icon}</span>
       <div>
         <div class="lab-palette-title">Cap. ${String(c.num).padStart(2,'0')} · ${c.name}</div>
@@ -767,6 +767,10 @@ function openPalette(){
 }
 function closePalette(){document.getElementById('palette').style.display='none';}
 function filterPalette(v){renderPaletteItems(v);}
+function goToChapter(url){
+  var q=(document.getElementById('palette-input').value||'').trim();
+  window.location.href=q?url+'?q='+encodeURIComponent(q):url;
+}
 document.getElementById('search-btn').onclick=openPalette;
 document.addEventListener('keydown',function(e){
   if((e.metaKey||e.ctrlKey)&&e.key==='k'){e.preventDefault();openPalette();}
