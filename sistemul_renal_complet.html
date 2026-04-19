@@ -395,7 +395,7 @@ tr:nth-child(even) td{background:var(--lab-bg);}
 #hl-btn.active{background:#fef08a;border-color:#eab308;box-shadow:0 3px 12px rgba(234,179,8,.4);}
 #hl-badge{position:fixed;bottom:5.8rem;right:5rem;background:var(--slate-800);color:#fff;font-size:.67rem;font-weight:800;padding:.15rem .45rem;border-radius:.9rem;z-index:201;display:none;white-space:nowrap;}
 #hl-badge.show{display:block;}
-mark.hl{background:#fef08a;color:inherit;border-radius:2px;padding:0 1px;}
+mark.hl{background:#fef08a;color:inherit;border-radius:2px;}
 body.hl-mode{cursor:auto;}
 
 /* ═══ DARK MODE ═══ */
@@ -1846,33 +1846,37 @@ function toggleHighlighter() {
   showToast(hlMode ? '🖊 Evidențiator activat – selectează text!' : 'Evidențiator dezactivat');
 }
 
-document.addEventListener('mouseup', function(e) {
-  if (!hlMode) return;
-  // Don't highlight inside buttons/inputs/nav
-  if (e.target.closest('button, input, select, textarea, nav, #hl-btn')) return;
-
-  const sel = window.getSelection();
-  if (!sel || sel.isCollapsed || sel.toString().trim() === '') return;
-
-  try {
-    const range = sel.getRangeAt(0);
-    // Avoid highlighting across block boundaries in a way that breaks HTML
+function applyHighlight(range) {
+  const ancestor = range.commonAncestorContainer;
+  const root = ancestor.nodeType === 3 ? ancestor.parentNode : ancestor;
+  const textNodes = [];
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+  while (walker.nextNode()) {
+    if (range.intersectsNode(walker.currentNode)) textNodes.push(walker.currentNode);
+  }
+  textNodes.forEach(function(tn) {
+    if (tn.parentNode && tn.parentNode.classList && tn.parentNode.classList.contains('hl')) return;
+    let start = 0, end = tn.length;
+    if (tn === range.startContainer) start = range.startOffset;
+    if (tn === range.endContainer) end = range.endOffset;
+    if (start >= end) return;
+    const nr = document.createRange();
+    nr.setStart(tn, start);
+    nr.setEnd(tn, end);
     const mark = document.createElement('mark');
     mark.className = 'hl';
-    range.surroundContents(mark);
-    sel.removeAllRanges();
-  } catch(err) {
-    // If surroundContents fails (cross-element selection), use extractContents
-    try {
-      const range = sel.getRangeAt(0);
-      const fragment = range.extractContents();
-      const mark = document.createElement('mark');
-      mark.className = 'hl';
-      mark.appendChild(fragment);
-      range.insertNode(mark);
-      sel.removeAllRanges();
-    } catch(e2) { /* ignore */ }
-  }
+    nr.surroundContents(mark);
+  });
+}
+
+document.addEventListener('mouseup', function(e) {
+  if (!hlMode) return;
+  if (e.target.closest('button, input, select, textarea, nav, #hl-btn')) return;
+  const sel = window.getSelection();
+  if (!sel || sel.isCollapsed || sel.toString().trim() === '') return;
+  const range = sel.getRangeAt(0);
+  sel.removeAllRanges();
+  applyHighlight(range);
 });
 
 // ════ FLOWCHART IIFE ════
