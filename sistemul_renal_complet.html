@@ -1248,7 +1248,7 @@ body.dark .summary li{color:#94A3B8;}
   <div id="gtab-analysis" class="gtab-panel">
     <div style="display:flex;align-items:center;margin-bottom:20px;">
       <h2 style="flex:1;font-size:1.2rem;color:#1a5f7a;">📊 Analiza progresului tău</h2>
-      <button class="gbtn gbtn-danger" onclick="resetAnalysis()" style="margin-left:16px">🗑️ Resetează tot</button>
+      <button class="gbtn gbtn-danger" id="analysis-reset-btn" onclick="resetAnalysis()" style="margin-left:16px">🗑️ Resetează analiza</button>
     </div>
     <div id="analysis-content"></div>
   </div>
@@ -1504,16 +1504,20 @@ const QUESTIONS=[
 
 const STORAGE_KEY='urinar_quiz_v4';
 const ANALYSIS_KEY='urinar_analysis_v4';
+const RUN_META_KEY='urinar_run_done_v1';
 function loadState(){try{return JSON.parse(localStorage.getItem(STORAGE_KEY))||{};}catch(e){return{};}}
 function saveState(s){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(s));}catch(e){}}
 function loadAnalysis(){try{return JSON.parse(localStorage.getItem(ANALYSIS_KEY))||{sessions:[],topicErrors:{},optionErrors:{},totalAttempts:0,totalCorrect:0};}catch(e){return{sessions:[],topicErrors:{},optionErrors:{},totalAttempts:0,totalCorrect:0};}}
 function saveAnalysis(d){try{localStorage.setItem(ANALYSIS_KEY,JSON.stringify(d));}catch(e){}}
+function isRunRecorded(){ return localStorage.getItem(RUN_META_KEY)==='1'; }
+function setRunRecorded(v){ localStorage.setItem(RUN_META_KEY, v?'1':'0'); }
 
 let quizState=loadState();
 const PAGE_SIZE=10;
 let currentPage=1;
 
 function totalPages(){ return Math.ceil(QUESTIONS.length/PAGE_SIZE); }
+function isQuizComplete(){ return QUESTIONS.every(q=>quizState[q.id]&&quizState[q.id].submitted); }
 
 function buildQuiz(resetPage){
   if(resetPage) currentPage=1;
@@ -1592,9 +1596,10 @@ function renderQuestion(q,container){
     const goLink=q.lessonPage?`<a href="#" onclick="goto('${q.lessonPage}');return false;" style="color:#2980b9">${q.lessonPage}</a>`:'';
     explHtml=`<div class="explanation show"><div class="expl-header">💡 Explicații — ${q.topic}</div><div class="expl-body">${items}<div class="lesson-ref">📖 <strong>Găsești în lecție la:</strong> ${q.lessonSection} — ${goLink}</div></div></div>`;
   }
-  const btnLabel=isSubmitted?'🔄 Resetează această întrebare':'✓ Verifică răspunsul';
-  const btnFn=isSubmitted?`resetQuestion(${q.id})`:`submitQuestion(${q.id})`;
-  card.innerHTML=`<div class="q-num">Întrebarea ${q.id} — ${q.topic} ${badge}</div><div class="q-text">${q.text}</div><div class="options" id="opts-${q.id}">${optHtml}</div><div class="q-actions"><button class="gbtn gbtn-primary" onclick="${btnFn}">${btnLabel}</button></div>${explHtml}`;
+  const actionHtml=isSubmitted
+    ? '<div class="q-actions"><button class="gbtn gbtn-secondary" disabled>Răspuns salvat</button></div>'
+    : `<div class="q-actions"><button class="gbtn gbtn-primary" onclick="submitQuestion(${q.id})">✓ Verifică răspunsul</button></div>`;
+  card.innerHTML=`<div class="q-num">Întrebarea ${q.id} — ${q.topic} ${badge}</div><div class="q-text">${q.text}</div><div class="options" id="opts-${q.id}">${optHtml}</div>${actionHtml}${explHtml}`;
   container.appendChild(card);
 }
 
@@ -1648,8 +1653,10 @@ function resetQuestion(qId){
 function resetQuiz(){
   quizState={};
   saveState(quizState);
+  setRunRecorded(false);
   document.getElementById('final-score').classList.remove('show');
   buildQuiz(true);
+  updateAnalysisResetState();
 }
 
 function updateProgress(){
@@ -1657,10 +1664,19 @@ function updateProgress(){
   const total=QUESTIONS.length;
   document.getElementById('progress-text').textContent=`${submitted} / ${total} completate`;
   document.getElementById('progress-bar').style.width=`${(submitted/total)*100}%`;
+  updateAnalysisResetState();
+}
+
+function updateAnalysisResetState(){
+  const btn=document.getElementById('analysis-reset-btn');
+  if(!btn)return;
+  const complete=isQuizComplete();
+  btn.disabled=!complete;
+  btn.title=complete?'':'Finalizează toate întrebările înainte să poți reseta analiza.';
 }
 
 function checkShowFinalScore(){
-  const all=QUESTIONS.every(q=>quizState[q.id]&&quizState[q.id].submitted);
+  const all=isQuizComplete();
   if(!all)return;
   let correct=0,partial=0;
   QUESTIONS.forEach(q=>{
@@ -1677,6 +1693,14 @@ function checkShowFinalScore(){
   circle.className=`score-circle ${pct>=70?'score-good':pct>=40?'score-mid':'score-bad'}`;
   document.getElementById('score-title').textContent=pct>=70?'🎉 Bine făcut!':pct>=40?'📖 Mai studiază puțin!':'💪 Continuă să înveți!';
   document.getElementById('score-sub').textContent=`${correct} corecte complet, ${partial} parțiale, ${QUESTIONS.length-correct-partial} greșite`;
+  if(!isRunRecorded()){
+    const analysis=loadAnalysis();
+    if(!analysis.sessions)analysis.sessions=[];
+    analysis.sessions.push({date:new Date().toLocaleDateString('ro-RO'),att:QUESTIONS.length,cor:correct});
+    saveAnalysis(analysis);
+    setRunRecorded(true);
+    renderAnalysis();
+  }
   scoreEl.scrollIntoView({behavior:'smooth',block:'center'});
 }
 
@@ -1702,12 +1726,6 @@ function recordToAnalysis(qId,selected){
     if(wrongOptions.includes(o.letter))analysis.optionErrors[ok].opts[o.letter].wrongCount++;
     if(missedOptions.includes(o.letter))analysis.optionErrors[ok].opts[o.letter].missedCount++;
   });
-  // session tracking
-  const today=new Date().toLocaleDateString('ro-RO');
-  if(!analysis.sessions)analysis.sessions=[];
-  let sess=analysis.sessions.find(s=>s.date===today);
-  if(!sess){sess={date:today,att:0,cor:0};analysis.sessions.push(sess);}
-  sess.att++;if(isFull)sess.cor++;
   analysis.totalAttempts++;
   if(isFull)analysis.totalCorrect++;
   saveAnalysis(analysis);
@@ -1759,7 +1777,7 @@ function renderAnalysis(){
         <div class="an-stat-box hide-mobile"><div class="an-snum" style="color:#27ae60">${snapshot.totalCorrect}</div><div class="an-slbl">Corecte</div></div>
         <div class="an-stat-box hide-mobile"><div class="an-snum" style="color:#e74c3c">${snapshot.totalWrong}</div><div class="an-slbl">Greșite</div></div>
         <div class="an-stat-box"><div class="an-snum" style="color:${gColor}">${pct}%</div><div class="an-slbl">Acuratețe</div></div>
-        <div class="an-stat-box"><div class="an-snum">${(analysis.sessions||[]).length}</div><div class="an-slbl">Sesiuni</div></div>
+        <div class="an-stat-box"><div class="an-snum">${(analysis.sessions||[]).filter(s=>s.att===QUESTIONS.length).length}</div><div class="an-slbl">Sesiuni</div></div>
       </div>
     </div>
     <div class="an-gauge-inline">
@@ -1770,7 +1788,7 @@ function renderAnalysis(){
   </div>`;
 
   // 3. TIMELINE (stânga) + 4. TOPICE (dreapta) — două coloane
-  const sessions=(analysis.sessions||[]);
+  const sessions=(analysis.sessions||[]).filter(s=>s.att===QUESTIONS.length);
   let leftCol='';
   if(sessions.length>0){
     const chartSessions=[...sessions].slice(-7);
@@ -1905,6 +1923,10 @@ function toggleErrDetails(){
 }
 
 function resetAnalysis(){
+  if(!isQuizComplete()){
+    showToast('Finalizează toate întrebările înainte să resetezi analiza.');
+    return;
+  }
   if(!confirm('Ești sigur că vrei să resetezi TOT progresul din analiză?'))return;
   localStorage.removeItem(ANALYSIS_KEY);
   showToast('Progresul a fost resetat!');
@@ -1916,7 +1938,7 @@ function switchGTab(tab,btn){
   document.querySelectorAll('.gtab-panel').forEach(p=>p.classList.remove('active'));
   document.getElementById('gtab-'+tab).classList.add('active');
   btn.classList.add('active');
-  if(tab==='analysis')renderAnalysis();
+  if(tab==='analysis'){renderAnalysis();updateAnalysisResetState();}
 }
 
 function showToast(msg){
