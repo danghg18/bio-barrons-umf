@@ -643,6 +643,8 @@ body{background:
 .lab-nav a:hover::after{transform:scaleX(1);}
 .lab-topbar-back{justify-self:end;font-size:.82rem;font-weight:800;color:var(--slate-700);text-decoration:none;transition:transform .3s cubic-bezier(.22,1,.36,1), box-shadow .3s cubic-bezier(.22,1,.36,1), border-color .25s ease, color .25s ease;background:#fff;padding:.72rem 1rem;border-radius:999px;border:1px solid rgba(15,23,42,.08);}
 .lab-topbar-back:hover{color:var(--lab-ink);transform:translateY(-1px);box-shadow:0 12px 28px rgba(15,23,42,.08);}
+.lab-topbar-mobile-actions{display:none;}
+.lab-topbar-mobile-btn{display:none;}
 .lesson-search{justify-self:end;display:flex;align-items:center;position:relative;}
 .lesson-search-panel{display:flex;align-items:center;gap:.5rem;max-width:0;opacity:0;overflow:hidden;pointer-events:none;transform:translateX(8px);transition:max-width .22s ease, opacity .18s ease, transform .22s ease;}
 .lesson-search.open .lesson-search-panel{max-width:min(34rem,70vw);opacity:1;pointer-events:auto;transform:none;}
@@ -696,7 +698,7 @@ main{min-width:0;}
 .box{border-left-width:5px;border-radius:0 14px 14px 0;padding:.9rem 1rem;}
 .page-nav{gap:.65rem;margin:0 0 1.2rem;}
 .page-nav a{border-radius:999px;padding:.65rem 1rem;}
-@media(max-width:1024px){.lab-topbar{padding:8px 0 !important;}.lab-topbar-inner{grid-template-columns:minmax(0,1fr) !important;gap:0 !important;padding:0 14px !important;}.lab-nav,.lab-topbar-back,.lesson-search,#nav-toggle{display:none !important;}.ch-layout{display:block;padding:10px 0 56px;}nav{position:fixed;top:0;left:0;width:min(320px,78vw);height:100dvh;max-height:none;padding-top:64px;border-radius:0 22px 22px 0;transform:translateX(-108%);transition:transform .24s ease;z-index:150;box-shadow:0 18px 44px rgba(15,23,42,.16);}nav.open{transform:translateX(0);}#nav-overlay.open{display:block;backdrop-filter:blur(4px);}main{padding:0 12px 4rem;}.hero,.chapter-home .hero,.page-section:not(.chapter-home) .hero{margin:0 0 .8rem !important;padding:1rem .95rem .9rem !important;border-radius:20px !important;}.chapter-home .hero h1{font-size:clamp(1.7rem,7vw,2.2rem) !important;line-height:.95 !important;margin-bottom:.45rem !important;}.chapter-home .hero p,.page-section:not(.chapter-home) .hero p{font-size:.9rem !important;line-height:1.55 !important;}}
+@media(max-width:1024px){.lab-topbar{top:10px !important;padding:0 12px !important;background:transparent !important;border-bottom:none !important;backdrop-filter:none !important;}.lab-topbar::after{display:none !important;}.lab-topbar-inner{grid-template-columns:minmax(0,1fr) auto !important;gap:12px !important;padding:10px 14px !important;background:rgba(255,255,255,.92);border:1px solid rgba(15,23,42,.08);border-radius:999px;box-shadow:0 16px 40px rgba(15,23,42,.08);backdrop-filter:blur(18px);}.lab-brand{min-width:0;}.lab-brand-name{font-size:.94rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}.lab-nav,.lab-topbar-back{display:none !important;}.lab-topbar-mobile-actions{display:flex;align-items:center;gap:8px;justify-self:end;}.lab-topbar-mobile-btn{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:0 14px;border-radius:999px;border:1px solid rgba(15,23,42,.08);background:#fff;color:var(--slate-700);font-size:.8rem;font-weight:800;}.lab-topbar-mobile-btn.icon{width:38px;min-width:38px;padding:0;font-size:1rem;}.lesson-search{display:block !important;position:fixed;top:74px;left:12px;right:12px;z-index:220;pointer-events:none;}.lesson-search-panel{width:100% !important;max-width:none !important;opacity:0 !important;transform:translateY(-8px) !important;pointer-events:none !important;padding:10px 12px;border-radius:24px;background:rgba(255,255,255,.97);border:1px solid rgba(15,23,42,.08);box-shadow:0 18px 40px rgba(15,23,42,.12);}.lesson-search.open{pointer-events:auto;}.lesson-search.open .lesson-search-panel{opacity:1 !important;transform:none !important;pointer-events:auto !important;}.lesson-search-box{min-width:0;}.lesson-search-nav{display:flex;}.ch-layout{display:block;padding:10px 0 56px;}nav{position:fixed;top:0;left:0;width:min(320px,78vw);height:100dvh;max-height:none;padding-top:76px;border-radius:0 22px 22px 0;transform:translateX(-108%);transition:transform .24s ease;z-index:210;box-shadow:0 18px 44px rgba(15,23,42,.16);}nav.open{transform:translateX(0);}#nav-overlay.open{display:block;backdrop-filter:blur(4px);z-index:205;}main{padding:4px 12px 4rem;}.hero,.chapter-home .hero,.page-section:not(.chapter-home) .hero{margin:0 0 .8rem !important;padding:1rem .95rem .9rem !important;border-radius:20px !important;}.chapter-home .hero h1{font-size:clamp(1.7rem,7vw,2.2rem) !important;line-height:.95 !important;margin-bottom:.45rem !important;}.chapter-home .hero p,.page-section:not(.chapter-home) .hero p{font-size:.9rem !important;line-height:1.55 !important;}}
 @media(max-width:768px){.lab-topbar-inner{grid-template-columns:1fr;gap:10px;padding:0 14px;}.lab-nav{display:none;}.lesson-search{justify-self:stretch;}.lesson-search-panel{width:100%;}.lesson-search.open .lesson-search-panel{max-width:100%;}.ch-layout{display:block;padding:16px 0 64px;}nav{top:60px;border-radius:0 22px 22px 0;}main{padding:0 .95rem 4.5rem;}.chapter-home .hero{padding:1.5rem 1.1rem 1.25rem;border-radius:22px;}.chapter-home .hero h1{font-size:1.7rem !important;line-height:1.04;}.chapter-home .hero p{font-size:.9rem !important;}.card{padding:1.1rem;}}
 
 /* static redesign overrides */
@@ -1117,6 +1119,11 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
       </div>
       <span class="lab-brand-name">Biologie<span class="lab-brand-sub">.bb</span></span>
     </a>
+    <div class="lab-topbar-mobile-actions">
+      <button class="lab-topbar-mobile-btn" onclick="goto('home')">Lectii</button>
+      <button class="lab-topbar-mobile-btn" onclick="goto('grile')">Grile</button>
+      <button class="lab-topbar-mobile-btn icon" onclick="openLessonSearchPanel()" aria-label="Cauta in text">⌕</button>
+    </div>
     <nav class="lab-nav">
       <a onclick="goto('home')">Pagina capitolului</a>
       <a onclick="goto('grile')">Grile UMF</a>
@@ -2961,6 +2968,10 @@ function searchAndScrollTo(term, preferredSectionId, preferredHit) {
   setLessonSearchOpen(true, false);
   if (input) input.value = term;
   performLessonSearch(term, preferredSectionId, preferredHit);
+}
+
+function openLessonSearchPanel() {
+  setLessonSearchOpen(true, true);
 }
 
 function setupLessonSearch() {
