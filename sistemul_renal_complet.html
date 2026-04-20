@@ -492,8 +492,10 @@ body.dark .final-score{background:var(--lab-card-bg);}
 body.dark .stat-card,.dark .topic-card,.dark .error-detail-card,.dark .no-data{background:#1E1E1C;}
 body.dark .error-detail-header{background:#1A1A18;border-bottom-color:var(--lab-border);}
 body.dark .topic-bar-wrap,.dark .an-gauge-track,.dark .an-tl-bar-wrap,.dark .an-tc-bar-wrap,.dark .progress-bar-wrap{background:#2A2A28;}
-body.dark .an-stat-box,.dark .an-tl-item,.dark .an-topic-card,.dark .an-accordion-btn,.dark .an-gauge-inline{background:#1E1E1C;}
+body.dark .an-stat-box,.dark .an-tl-item,.dark .an-topic-card,.dark .an-accordion-btn,.dark .an-gauge-inline,.dark .an-evo-card,.dark .an-evo-chart{background:#1E1E1C;}
 body.dark .an-accordion-btn:hover{background:#252523;}
+body.dark .an-evo-kpi{background:#252523;color:#94A3B8;}
+body.dark .an-evo-dot{stroke:#1E1E1C;}
 body.dark .gbtn-secondary{background:#2A2A28;color:#CBD5E1;border-color:#333330;}
 body.dark .gbtn-secondary:hover{background:#333330;}
 body.dark .page-nav a{background:#2A2A28;color:#E2E8F0;}
@@ -538,6 +540,18 @@ body.dark .summary li{color:#94A3B8;}
 .an-sec-h{font-size:.9rem;font-weight:800;color:var(--q-accent);margin:0 0 8px;display:flex;align-items:center;gap:6px;}
 .an-two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px;align-items:start;}
 .an-col{min-width:0;}
+.an-evo-card{background:var(--lab-card-bg);border:1px solid var(--lab-border);border-radius:1rem;padding:14px;margin-bottom:10px;}
+.an-evo-meta{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;margin-bottom:10px;}
+.an-evo-kpis{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;}
+.an-evo-kpi{padding:6px 10px;border-radius:999px;background:var(--slate-50);font-size:.74rem;font-weight:700;color:var(--slate-400);}
+.an-evo-chart{position:relative;height:180px;border-radius:.9rem;background:linear-gradient(180deg,var(--slate-50),transparent);border:1px solid var(--lab-border);padding:10px 10px 8px;overflow:hidden;}
+.an-evo-svg{width:100%;height:132px;display:block;}
+.an-evo-grid{stroke:var(--lab-border);stroke-width:1;}
+.an-evo-bar{opacity:.9;}
+.an-evo-line{fill:none;stroke:var(--q-accent);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
+.an-evo-dot{stroke:#fff;stroke-width:2;}
+.an-evo-axis{display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:8px;margin-top:8px;}
+.an-evo-axis span{font-size:.68rem;color:var(--slate-400);font-weight:700;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .an-timeline{display:flex;flex-direction:column;gap:7px;}
 .an-tl-item{background:var(--lab-card-bg);border:1px solid var(--lab-border);border-radius:.8rem;padding:9px 12px;display:flex;align-items:center;gap:10px;}
 .an-tl-date{font-size:.74rem;color:var(--slate-400);white-space:nowrap;min-width:74px;font-weight:700;}
@@ -570,6 +584,9 @@ body.dark .summary li{color:#94A3B8;}
   .an-two-col{grid-template-columns:1fr;gap:14px;}
   .an-gauge-inline{padding:12px 14px;}
   .an-gauge-meta{flex-direction:column;align-items:flex-start;gap:4px;}
+  .an-evo-meta{flex-direction:column;}
+  .an-evo-kpis{justify-content:flex-start;}
+  .an-evo-chart{height:170px;}
 }
 /* ── MOBILE OVERRIDES ── */
 @media(max-width:768px){
@@ -1722,7 +1739,55 @@ function renderAnalysis(){
   const sessions=(analysis.sessions||[]);
   let leftCol='';
   if(sessions.length>0){
-    leftCol='<div class="an-sec-h">📅 Evoluție în timp</div><div class="an-timeline">';
+    const chartSessions=[...sessions].slice(-7);
+    const maxAtt=Math.max(...chartSessions.map(s=>s.att),1);
+    const chartW=420, chartH=132;
+    const leftPad=16, rightPad=10, topPad=10, bottomPad=18;
+    const innerW=chartW-leftPad-rightPad;
+    const innerH=chartH-topPad-bottomPad;
+    let linePoints='';
+    let bars='';
+    let dots='';
+    let grid='';
+    [0,50,100].forEach(level=>{
+      const y=(topPad+innerH)-((level/100)*innerH);
+      grid+=`<line class="an-evo-grid" x1="${leftPad}" y1="${y}" x2="${chartW-rightPad}" y2="${y}"></line>`;
+    });
+    chartSessions.forEach((s,idx)=>{
+      const sp=Math.round(s.cor/s.att*100);
+      const col=sp>=70?'#27ae60':sp>=40?'#f39c12':'#e74c3c';
+      const x=chartSessions.length===1?leftPad+(innerW/2):leftPad+(idx*(innerW/(chartSessions.length-1)));
+      const y=(topPad+innerH)-((sp/100)*innerH);
+      const barH=Math.max(10,(s.att/maxAtt)*innerH);
+      const barY=topPad+innerH-barH;
+      const barX=Math.max(leftPad,x-14);
+      bars+=`<rect class="an-evo-bar" x="${barX}" y="${barY}" width="28" height="${barH}" rx="8" fill="${col}" opacity="0.22"></rect>`;
+      linePoints+=`${x},${y} `;
+      dots+=`<circle class="an-evo-dot" cx="${x}" cy="${y}" r="4.5" fill="${col}"><title>${s.date}: ${s.cor}/${s.att} (${sp}%)</title></circle>`;
+    });
+    leftCol=`<div class="an-sec-h">📅 Evoluție în timp</div>
+    <div class="an-evo-card">
+      <div class="an-evo-meta">
+        <div>
+          <div style="font-size:.82rem;font-weight:800;color:var(--q-accent);margin-bottom:3px">Acuratețe + volum pe zi / sesiune</div>
+          <div class="an-tc-detail">Linia arată procentul corect, iar barele arată câte întrebări ai rezolvat în ziua respectivă.</div>
+        </div>
+        <div class="an-evo-kpis">
+          <div class="an-evo-kpi">Ultimele ${chartSessions.length} zile</div>
+          <div class="an-evo-kpi">Max ${maxAtt} întrebări</div>
+        </div>
+      </div>
+      <div class="an-evo-chart">
+        <svg class="an-evo-svg" viewBox="0 0 ${chartW} ${chartH}" preserveAspectRatio="none">
+          ${grid}
+          ${bars}
+          <polyline class="an-evo-line" points="${linePoints.trim()}"></polyline>
+          ${dots}
+        </svg>
+        <div class="an-evo-axis">${chartSessions.map(s=>`<span>${s.date}</span>`).join('')}</div>
+      </div>
+    </div>
+    <div class="an-timeline">`;
     [...sessions].reverse().slice(0,5).forEach(s=>{
       const sp=Math.round(s.cor/s.att*100);
       const col=sp>=70?'#27ae60':sp>=40?'#f39c12':'#e74c3c';
