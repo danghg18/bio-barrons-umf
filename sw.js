@@ -1,4 +1,4 @@
-const CACHE = 'biologie-v6';
+const CACHE = 'biologie-v7';
 const BASE = new URL('./', self.location.href).pathname;
 const ASSETS = [
   BASE + 'index.html',
@@ -39,6 +39,20 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
+  // Keep HTML fresh while still allowing offline fallback.
+  if (e.request.mode === 'navigate' || (e.request.headers.get('accept') || '').includes('text/html')) {
+    e.respondWith(
+      fetch(e.request)
+        .then(res => {
+          const copy = res.clone();
+          caches.open(CACHE).then(cache => cache.put(e.request, copy));
+          return res;
+        })
+        .catch(() => caches.match(e.request).then(cached => cached || caches.match(BASE + 'index.html')))
+    );
+    return;
+  }
+
   // Cache-first for local assets, network-first for Google Fonts
   if (e.request.url.includes('fonts.googleapis.com') || e.request.url.includes('fonts.gstatic.com')) {
     e.respondWith(
