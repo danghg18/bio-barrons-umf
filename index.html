@@ -178,6 +178,8 @@ kbd{font-size:11px;padding:2px 6px;border-radius:4px;background:rgba(15,23,42,0.
 .lab-palette-emoji{width:28px;height:28px;border-radius:8px;background:var(--ink-100);display:flex;align-items:center;justify-content:center;font-size:14px;}
 .lab-palette-title{font-size:14px;font-weight:700;color:var(--ink);letter-spacing:-0.01em;}
 .lab-palette-sub{font-size:12px;color:var(--ink-500);margin-top:1px;}
+.lab-palette-match{display:block;font-size:12px;color:var(--ink-600);margin-top:4px;line-height:1.45;}
+.lab-palette-match strong{color:var(--ink);font-weight:800;}
 .lab-palette-tag{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;padding:3px 8px;border-radius:999px;}
 .lab-palette-foot{display:flex;gap:20px;padding:10px 20px;border-top:1px solid var(--ink-200);background:var(--ink-50);font-size:11px;color:var(--ink-500);font-weight:600;}
 
@@ -205,6 +207,7 @@ body.dark .lab-palette-foot{background:#172033;border-top-color:#1E293B;}
 body.dark .lab-palette-item:hover{background:#1E293B;}
 body.dark .lab-palette-emoji{background:#1E293B;}
 body.dark .lab-palette-overlay{background:rgba(0,0,0,0.6);}
+body.dark .lab-palette-match{color:#CBD5E1;}
 body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
 
 /* ── DARK MODE FAB ── */
@@ -741,15 +744,180 @@ const CHAPTERS=[
   {num:23,icon:'♀️',name:'Sistemul reproducător feminin',cat:'Sistemul Reproducător',color:'#0891B2',colorLight:'#ECFEFF',done:false,kw:'ovar ovulatie menstruatie estrogen progesteron uter trompe sarcina'},
 ];
 
-function renderPaletteItems(q){
+const SEARCHABLE_CHAPTERS = CHAPTERS.filter(c => c.done && c.url);
+const SEARCH_INDEX = {
+  ready: false,
+  loading: null,
+  entries: []
+};
+
+function escapeHtml(value){
+  return String(value).replace(/[&<>"']/g, function(ch){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch];
+  });
+}
+
+function normalizeText(value){
+  return String(value || '').replace(/\s+/g,' ').trim();
+}
+
+function getNodeSnippet(text, idx, len){
+  const clean = normalizeText(text);
+  if(!clean) return '';
+  const lower = clean.toLowerCase();
+  const needle = normalizeText(text.slice(idx, idx + len)) || clean.slice(idx, idx + len);
+  const matchAt = lower.indexOf(needle.toLowerCase());
+  const start = Math.max(0, (matchAt >= 0 ? matchAt : idx) - 45);
+  const end = Math.min(clean.length, (matchAt >= 0 ? matchAt : idx) + len + 75);
+  const prefix = start > 0 ? '…' : '';
+  const suffix = end < clean.length ? '…' : '';
+  return prefix + clean.slice(start, end) + suffix;
+}
+
+function buildChapterSearchEntries(chapter, html){
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(html, 'text/html');
+  const entries = [];
+  doc.querySelectorAll('.page-section').forEach(function(section){
+    const sectionId = section.id.replace(/^page-/, '');
+    const sectionTitleNode = section.querySelector('h1,h2,h3');
+    const sectionTitle = normalizeText(sectionTitleNode ? sectionTitleNode.textContent : chapter.name) || chapter.name;
+    const walker = doc.createTreeWalker(section, NodeFilter.SHOW_TEXT);
+    while (walker.nextNode()) {
+      const tn = walker.currentNode;
+      const parent = tn.parentNode;
+      if (!parent || !parent.closest) continue;
+      if (parent.closest('script,style,nav,button')) continue;
+      const raw = String(tn.textContent || '');
+      if (!normalizeText(raw)) continue;
+      entries.push({
+        chapterNum: chapter.num,
+        chapterName: chapter.name,
+        chapterCat: chapter.cat,
+        chapterColor: chapter.color,
+        chapterColorLight: chapter.colorLight,
+        chapterIcon: chapter.icon,
+        url: chapter.url,
+        sectionId: sectionId,
+        sectionTitle: sectionTitle,
+        rawText: raw
+      });
+    }
+  });
+  return entries;
+}
+
+async function ensureSearchIndex(){
+  if (SEARCH_INDEX.ready) return SEARCH_INDEX.entries;
+  if (SEARCH_INDEX.loading) return SEARCH_INDEX.loading;
+  SEARCH_INDEX.loading = Promise.all(SEARCHABLE_CHAPTERS.map(async function(chapter){
+    const res = await fetch(chapter.url);
+    const html = await res.text();
+    return buildChapterSearchEntries(chapter, html);
+  })).then(function(groups){
+    SEARCH_INDEX.entries = groups.flat();
+    SEARCH_INDEX.ready = true;
+    return SEARCH_INDEX.entries;
+  }).catch(function(){
+    SEARCH_INDEX.entries = [];
+    SEARCH_INDEX.ready = false;
+    return [];
+  }).finally(function(){
+    SEARCH_INDEX.loading = null;
+  });
+  return SEARCH_INDEX.loading;
+}
+
+function findTextMatches(query){
+  const needle = query.trim().toLowerCase();
+  if (!needle) return [];
+  const results = [];
+  const hitCounters = Object.create(null);
+  SEARCH_INDEX.entries.forEach(function(entry){
+    const text = String(entry.rawText || '');
+    const lower = text.toLowerCase();
+    let from = 0;
+    const counterKey = entry.url + '::' + entry.sectionId;
+    if (!(counterKey in hitCounters)) hitCounters[counterKey] = 0;
+    while (from < lower.length) {
+      const idx = lower.indexOf(needle, from);
+      if (idx === -1) break;
+      const snippet = getNodeSnippet(text, idx, needle.length);
+      results.push({
+        type: 'match',
+        url: entry.url,
+        chapterNum: entry.chapterNum,
+        chapterName: entry.chapterName,
+        chapterCat: entry.chapterCat,
+        chapterColor: entry.chapterColor,
+        chapterColorLight: entry.chapterColorLight,
+        chapterIcon: entry.chapterIcon,
+        sectionId: entry.sectionId,
+        sectionTitle: entry.sectionTitle,
+        hit: hitCounters[counterKey],
+        snippet: snippet
+      });
+      hitCounters[counterKey] += 1;
+      from = idx + Math.max(1, needle.length);
+      if (results.length >= 30) return results;
+    }
+  });
+  return results.slice(0, 30);
+}
+
+function chapterFallbackResults(needle){
+  return needle
+    ? CHAPTERS.filter(c => (c.num+' '+c.name+' '+c.cat+' '+(c.kw||'')).toLowerCase().includes(needle)).slice(0,10)
+    : CHAPTERS.filter(c=>c.done).concat(CHAPTERS.filter(c=>!c.done)).slice(0,8);
+}
+
+function bindPaletteActions(){
+  document.querySelectorAll('#palette-list [data-url]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      if (btn.dataset.url && btn.dataset.done === 'true') {
+        if (btn.dataset.hit !== undefined && btn.dataset.sectionId) {
+          goToSearchResult(btn.dataset.url, btn.dataset.query || '', btn.dataset.sectionId, btn.dataset.hit);
+          return;
+        }
+        goToChapter(btn.dataset.url);
+      }
+    });
+  });
+}
+
+async function renderPaletteItems(q){
   const list=document.getElementById('palette-list');
   const needle=q.trim().toLowerCase();
-  const results=needle
-    ? CHAPTERS.filter(c=>(c.num+' '+c.name+' '+c.cat+' '+(c.kw||'')).toLowerCase().includes(needle)).slice(0,10)
-    : CHAPTERS.filter(c=>c.done).concat(CHAPTERS.filter(c=>!c.done)).slice(0,8);
+  if(needle){
+    if(!SEARCH_INDEX.ready && SEARCH_INDEX.loading){
+      list.innerHTML='<div class="lab-palette-empty">Caut în textul capitolelor…</div>';
+    }
+    await ensureSearchIndex();
+    if(q !== document.getElementById('palette-input').value) return;
+    const textResults = findTextMatches(needle);
+    if(textResults.length){
+      list.innerHTML=textResults.map(function(r){
+        const safeNeedle = escapeHtml(q.trim());
+        const safeSnippet = escapeHtml(r.snippet).replace(new RegExp(escapeRegExp(safeNeedle), 'ig'), '<strong>$&</strong>');
+        return `
+    <button class="lab-palette-item" data-url="${r.url}" data-query="${escapeHtml(q.trim())}" data-section-id="${r.sectionId}" data-hit="${r.hit}" data-done="true">
+      <span class="lab-palette-emoji">${r.chapterIcon}</span>
+      <div>
+        <div class="lab-palette-title">Cap. ${String(r.chapterNum).padStart(2,'0')} · ${r.chapterName}</div>
+        <div class="lab-palette-sub">${r.sectionTitle}</div>
+        <span class="lab-palette-match">${safeSnippet}</span>
+      </div>
+      <span class="lab-palette-tag" style="color:${r.chapterColor};background:${r.chapterColorLight}">Text</span>
+    </button>`;
+      }).join('');
+      bindPaletteActions();
+      return;
+    }
+  }
+  const results = chapterFallbackResults(needle);
   if(!results.length){list.innerHTML='<div class="lab-palette-empty">Nicio potrivire. Încearcă "nefron", "ADH", "inimă"…</div>';return;}
   list.innerHTML=results.map(c=>`
-    <button class="lab-palette-item" onclick="${c.done?`goToChapter('${c.url}')`:''}" style="${!c.done?'cursor:default;opacity:.6':''}">
+    <button class="lab-palette-item" data-url="${c.url||''}" data-done="${c.done?'true':'false'}" style="${!c.done?'cursor:default;opacity:.6':''}">
       <span class="lab-palette-emoji">${c.icon}</span>
       <div>
         <div class="lab-palette-title">Cap. ${String(c.num).padStart(2,'0')} · ${c.name}</div>
@@ -757,16 +925,29 @@ function renderPaletteItems(q){
       </div>
       <span class="lab-palette-tag" style="color:${c.color};background:${c.colorLight}">${c.done?'Complet':'În curând'}</span>
     </button>`).join('');
+  bindPaletteActions();
+}
+
+function escapeRegExp(value){
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 function openPalette(){
   document.getElementById('palette').style.display='block';
   document.getElementById('palette-input').value='';
   renderPaletteItems('');
+  ensureSearchIndex();
   setTimeout(()=>document.getElementById('palette-input').focus(),50);
 }
 function closePalette(){document.getElementById('palette').style.display='none';}
 function filterPalette(v){renderPaletteItems(v);}
+function goToSearchResult(url, query, sectionId, hit){
+  const params = new URLSearchParams();
+  if(query) params.set('q', query);
+  if(sectionId) params.set('section', sectionId);
+  if(hit !== undefined) params.set('hit', hit);
+  window.location.href = params.toString() ? url + '?' + params.toString() : url;
+}
 function goToChapter(url){
   var q=(document.getElementById('palette-input').value||'').trim();
   window.location.href=q?url+'?q='+encodeURIComponent(q):url;
