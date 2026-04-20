@@ -304,6 +304,58 @@ tr:nth-child(even) td{background:var(--lab-bg);}
 .page-indicator{font-size:.88rem;color:var(--q-accent);font-weight:800;background:var(--q-accent-light);padding:6px 16px;border-radius:20px;white-space:nowrap;}
 .no-data{text-align:center;padding:48px;color:var(--slate-400);background:var(--lab-card-bg);border-radius:1rem;}
 .no-data .icon{font-size:3rem;margin-bottom:12px;}
+
+/* ═══ ANALIZĂ ═══ */
+.an-analysis-top{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(220px,.9fr);gap:14px;align-items:stretch;margin-bottom:18px;}
+.an-stats-wrap{display:flex;flex-direction:column;gap:10px;min-width:0;}
+.an-stats-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;}
+.an-stat-box{background:var(--lab-card-bg);border:1px solid var(--lab-border);border-radius:1rem;padding:14px 8px;text-align:center;min-width:0;}
+.an-snum{font-size:1.6rem;font-weight:900;color:var(--q-accent);}
+.an-slbl{font-size:.7rem;color:var(--slate-400);margin-top:3px;font-weight:700;text-transform:uppercase;letter-spacing:.02em;}
+.an-gauge-inline{background:linear-gradient(180deg,var(--lab-card-bg),var(--slate-50));border:1px solid var(--lab-border);border-radius:1rem;padding:14px 16px;display:flex;flex-direction:column;justify-content:center;min-width:0;}
+.an-gauge-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;}
+.an-gauge-meta strong{font-size:.88rem;color:var(--q-accent);}
+.an-gauge-meta span{font-size:.78rem;color:var(--slate-400);font-weight:600;}
+.an-gauge-track{background:var(--slate-100);border-radius:999px;height:14px;overflow:hidden;margin-bottom:6px;}
+.an-gauge-fill{height:100%;border-radius:8px;transition:width .6s;}
+.an-gauge-labels{display:flex;justify-content:space-between;font-size:.7rem;color:var(--slate-400);font-weight:700;}
+.an-sec-h{font-size:.9rem;font-weight:800;color:var(--q-accent);margin:0 0 8px;display:flex;align-items:center;gap:6px;}
+.an-two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px;align-items:start;}
+.an-col{min-width:0;}
+.an-empty-col{background:var(--lab-card-bg);border:1px solid var(--lab-border);border-radius:.95rem;padding:16px;}
+.an-empty-state{font-size:.84rem;color:var(--slate-400);line-height:1.55;}
+.an-topic-card{background:var(--lab-card-bg);border:1px solid var(--lab-border);border-radius:.9rem;padding:11px 14px;margin-bottom:8px;}
+.an-tc-head{display:flex;align-items:center;margin-bottom:5px;}
+.an-tc-name{flex:1;font-weight:700;font-size:.85rem;}
+.an-tc-score{font-size:.8rem;font-weight:800;}
+.an-tc-bar-wrap{background:var(--slate-100);border-radius:4px;height:7px;margin-bottom:5px;}
+.an-tc-bar{height:100%;border-radius:4px;transition:width .5s;}
+.an-tc-detail{font-size:.74rem;color:var(--slate-400);}
+.an-tc-detail a{color:var(--q-accent);text-decoration:none;}
+.an-accordion-btn{width:100%;background:var(--lab-card-bg);border:1px solid var(--lab-border);border-radius:.8rem;padding:11px 16px;font-size:.87rem;font-weight:700;color:var(--q-accent);cursor:pointer;text-align:left;transition:background .15s, border-color .15s;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between;gap:10px;}
+.an-accordion-btn:hover{background:var(--slate-50);}
+.an-accordion-btn.is-open{border-color:var(--q-accent);}
+.an-accordion-body{display:grid;gap:12px;margin-bottom:8px;}
+.an-accordion-body[hidden]{display:none;}
+.an-accordion-meta{font-size:.78rem;color:var(--slate-400);font-weight:600;}
+.an-err-opt{padding:8px 11px;border-radius:.6rem;margin-bottom:7px;}
+.an-ew{background:#FFF1F2;border-left:3px solid #E11D48;}
+.an-em{background:#FFFBEB;border-left:3px solid #D97706;}
+.an-err-opt-lbl{font-weight:700;margin-bottom:3px;font-size:.85rem;}
+.an-err-opt-txt{font-size:.82rem;color:var(--slate-700);}
+.an-err-card{background:var(--lab-card-bg);border:1px solid var(--lab-border);border-radius:1rem;margin-bottom:12px;overflow:hidden;}
+.an-err-card-head{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--slate-50);border-bottom:1px solid var(--lab-border);}
+.an-err-card-body{padding:12px 14px;}
+.an-err-badge{background:#FFF1F2;color:#E11D48;border:1px solid #FCA5A5;border-radius:20px;padding:2px 10px;font-size:.74rem;font-weight:800;}
+@media(max-width:768px){
+  .an-analysis-top{grid-template-columns:1fr;}
+  .an-stats-row{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .an-stat-box.hide-mobile{display:none;}
+  .an-two-col{grid-template-columns:1fr;gap:14px;}
+  .an-gauge-inline{padding:12px 14px;}
+  .an-gauge-meta{flex-direction:column;align-items:flex-start;gap:4px;}
+}
+
 .toast{position:fixed;bottom:24px;right:24px;background:var(--slate-800);color:#fff;padding:12px 20px;border-radius:.7rem;font-size:.88rem;box-shadow:0 4px 18px rgba(0,0,0,.18);z-index:999;opacity:0;transform:translateY(20px);transition:all .3s;pointer-events:none;font-weight:700;}
 .toast.show{opacity:1;transform:translateY(0);}
 
@@ -359,6 +411,13 @@ body.dark .opt-letter{background:#2A2A28;border-color:#333330;}
 body.dark .explanation{border-color:rgba(255,255,255,.07);}
 body.dark .expl-body{background:#1E1E1C;}
 body.dark .no-data{background:var(--lab-card-bg);}
+body.dark .an-stat-box,.dark .an-topic-card,.dark .an-accordion-btn,.dark .an-err-card,.dark .an-empty-col,.dark .an-gauge-inline{background:#1E1E1C;}
+body.dark .an-accordion-btn:hover{background:#252523;}
+body.dark .an-err-card-head{background:#222220;}
+body.dark .an-gauge-track,.dark .an-tc-bar-wrap{background:#2A2A28;}
+body.dark .an-ew{background:#2D0A12;}
+body.dark .an-em{background:#2D1F00;}
+body.dark .an-err-opt-txt{color:#94A3B8;}
 body.dark .gbtn-secondary{background:#2A2A28;color:#CBD5E1;border-color:#333330;}
 body.dark .gbtn-secondary:hover{background:#333330;}
 body.dark .page-nav a{background:#2A2A28;color:#E2E8F0;}
@@ -1376,26 +1435,90 @@ function recordToAnalysis(qId,selected){
 function renderAnalysis(){
   const analysis=loadAnalysis();
   const container=document.getElementById('analysis-content');
-  const topics=Object.values(analysis.topicErrors);
-  if(topics.length===0){container.innerHTML='<div class="no-data"><div class="icon">📊</div><p>Completați grile pentru a vedea analiza.</p></div>';return;}
-  const statsGrid=`<div class="stats-grid">
-    <div class="stat-card"><div class="stat-num">${topics.reduce((a,t)=>a+t.attempts,0)}</div><div class="stat-label">Întrebări rezolvate</div></div>
-    <div class="stat-card"><div class="stat-num">${topics.reduce((a,t)=>a+t.correct,0)}</div><div class="stat-label">Corecte complet</div></div>
-    <div class="stat-card"><div class="stat-num">${Math.round(topics.reduce((a,t)=>a+t.correct,0)/topics.reduce((a,t)=>a+t.attempts,0)*100)||0}%</div><div class="stat-label">Rată succes</div></div>
+  const topicList=Object.values(analysis.topicErrors);
+  if(topicList.length===0){
+    container.innerHTML='<div class="no-data"><div class="icon">📝</div><h3>Nicio grilă completată încă</h3><p style="margin-top:8px">Mergi la secțiunea <strong>Grile</strong> și rezolvă câteva întrebări pentru a vedea analiza ta.</p></div>';
+    return;
+  }
+  const totalAttempts=topicList.reduce((a,t)=>a+t.attempts,0);
+  const totalCorrect=topicList.reduce((a,t)=>a+t.correct,0);
+  const totalErrors=topicList.reduce((a,t)=>a+t.errors.length,0);
+  const pct=totalAttempts?Math.round(totalCorrect/totalAttempts*100):0;
+  const gColor=pct>=70?'#27ae60':pct>=40?'#f39c12':'#e74c3c';
+  const weakTopics=topicList.filter(t=>t.errors.length>0).sort((a,b)=>b.errors.length-a.errors.length);
+
+  // 1. STATS ROW
+  let html=`<div class="an-analysis-top">
+    <div class="an-stats-wrap">
+      <div class="an-stats-row">
+        <div class="an-stat-box"><div class="an-snum">${totalAttempts}</div><div class="an-slbl">Răspunsuri</div></div>
+        <div class="an-stat-box hide-mobile"><div class="an-snum" style="color:#27ae60">${totalCorrect}</div><div class="an-slbl">Corecte</div></div>
+        <div class="an-stat-box"><div class="an-snum" style="color:#e74c3c">${totalAttempts-totalCorrect}</div><div class="an-slbl">Greșeli</div></div>
+        <div class="an-stat-box"><div class="an-snum" style="color:${gColor}">${pct}%</div><div class="an-slbl">Acuratețe</div></div>
+      </div>
+    </div>
+    <div class="an-gauge-inline">
+      <div class="an-gauge-meta"><strong>Scor general</strong><span>${totalCorrect} / ${totalAttempts} întrebări corecte</span></div>
+      <div class="an-gauge-track"><div class="an-gauge-fill" style="width:${pct}%;background:${gColor}"></div></div>
+      <div class="an-gauge-labels"><span>0%</span><span style="color:#f39c12">40%</span><span style="color:#27ae60">70%</span><span>100%</span></div>
+    </div>
   </div>`;
-  const topicCards=topics.sort((a,b)=>(b.errors.length/b.attempts)-(a.errors.length/a.attempts)).map(t=>{
-    const rate=Math.round(t.correct/t.attempts*100);
-    const barColor=rate>=70?'#27ae60':rate>=40?'#f39c12':'#e74c3c';
-    const errorList=t.errors.slice(-3).map(e=>`<div class="topic-errors">Q${e.qId} · Greșit: ${e.wrongOptions.join(',')||'—'} · Omis: ${e.missedOptions.join(',')||'—'}</div>`).join('');
-    const goLink=t.lessonPage?`<a href="#" onclick="goto('${t.lessonPage}');return false;" style="color:#0891B2">→ Mergi la lecție</a>`:'';
-    return `<div class="topic-card">
-      <div class="topic-header"><div class="topic-name">${t.topic}</div><div class="topic-score">${t.correct}/${t.attempts} corecte</div></div>
-      <div class="topic-bar-wrap"><div class="topic-bar" style="width:${rate}%;background:${barColor}"></div></div>
-      ${errorList}
-      <div style="margin-top:6px;font-size:.8rem;">${goLink}</div>
+
+  let leftCol=`<div class="an-empty-col"><div class="an-sec-h">📅 Evoluție în timp</div><div class="an-empty-state">Acest capitol nu salvează încă sesiuni separate, așa că analiza rămâne concentrată pe scorul general și pe topicele unde apar greșeli.</div></div>`;
+  let rightCol='<div class="an-sec-h">📚 Performanță pe topice</div>';
+  [...topicList].sort((a,b)=>{const pa=a.attempts?a.correct/a.attempts:1,pb=b.attempts?b.correct/b.attempts:1;return pa-pb;}).forEach(t=>{
+    const tp=t.attempts?Math.round(t.correct/t.attempts*100):0;
+    const col=tp>=70?'#27ae60':tp>=40?'#f39c12':'#e74c3c';
+    const icon=tp>=70?'✅':tp>=40?'⚠️':'❌';
+    rightCol+=`<div class="an-topic-card">
+      <div class="an-tc-head"><div class="an-tc-name">${icon} ${t.topic}</div><div class="an-tc-score" style="color:${col}">${tp}%</div></div>
+      <div class="an-tc-bar-wrap"><div class="an-tc-bar" style="width:${tp}%;background:${col}"></div></div>
+      <div class="an-tc-detail">${t.attempts} ${t.attempts===1?'încercare':'încercări'} · ${t.correct} corecte${t.errors.length>0?' · <a href="#" onclick="goto(\''+t.lessonPage+'\');return false;">Revezi: '+t.lessonSection+'</a>':''}</div>
     </div>`;
-  }).join('');
-  container.innerHTML=statsGrid+topicCards;
+  });
+
+  html+=`<div class="an-two-col"><div class="an-col">${leftCol}</div><div class="an-col">${rightCol}</div></div>`;
+
+  // 4. ERORI DETALIATE — colapsibil
+  if(weakTopics.length>0){
+    html+=`<div class="an-sec-h" style="margin-top:10px">🔍 Unde greșești exact</div>
+    <button class="an-accordion-btn" id="an-err-toggle" type="button" aria-expanded="false" onclick="toggleErrDetails()"><span>▾ Vezi detalii greșeli</span><span class="an-accordion-meta">${weakTopics.length} ${weakTopics.length===1?'topic':'topice'}</span></button>
+    <div class="an-accordion-body" id="an-err-body" hidden>`;
+    weakTopics.forEach(t=>{
+      const qs=QUESTIONS.filter(q=>q.topic===t.topic);
+      const wrongCount={},missedCount={};
+      t.errors.forEach(e=>{e.wrongOptions.forEach(o=>{wrongCount[o]=(wrongCount[o]||0)+1;});e.missedOptions.forEach(o=>{missedCount[o]=(missedCount[o]||0)+1;});});
+      let optHtml='';
+      Object.entries(wrongCount).forEach(([letter,cnt])=>{
+        const q=qs[0];if(!q)return;
+        const opt=q.options.find(o=>o.letter===letter);
+        const expl=q.explanations[letter];
+        optHtml+=`<div class="an-err-opt an-ew"><div class="an-err-opt-lbl">✗ Bifat greșit (${cnt}×): ${letter}. ${opt?opt.text:''}</div><div class="an-err-opt-txt">${expl?expl.text:''}</div></div>`;
+      });
+      Object.entries(missedCount).forEach(([letter,cnt])=>{
+        const q=qs[0];if(!q)return;
+        const opt=q.options.find(o=>o.letter===letter);
+        const expl=q.explanations[letter];
+        optHtml+=`<div class="an-err-opt an-em"><div class="an-err-opt-lbl">! Omis (${cnt}×): ${letter}. ${opt?opt.text:''}</div><div class="an-err-opt-txt">${expl?expl.text:''}</div></div>`;
+      });
+      html+=`<div class="an-err-card"><div class="an-err-card-head"><strong>${t.topic}</strong><span class="an-err-badge">${t.errors.length} greșeală(i)</span></div><div class="an-err-card-body">${optHtml}<div class="lesson-ref" style="margin-top:10px">📖 <strong>Revezi:</strong> ${t.lessonSection} — <a href="#" onclick="goto('${t.lessonPage||'testiculele'}');return false;" style="color:var(--q-accent)">${t.lessonPage||'testiculele'}</a></div></div></div>`;
+    });
+    html+='</div>';
+  }
+  container.innerHTML=html;
+}
+
+function toggleErrDetails(){
+  const body=document.getElementById('an-err-body');
+  const btn=document.getElementById('an-err-toggle');
+  if(!body||!btn)return;
+  const open=!body.hasAttribute('hidden');
+  if(open)body.setAttribute('hidden','');
+  else body.removeAttribute('hidden');
+  btn.setAttribute('aria-expanded',open?'false':'true');
+  btn.classList.toggle('is-open',!open);
+  const label=btn.querySelector('span');
+  if(label)label.textContent=`${open?'▾':'▴'} Vezi detalii greșeli`;
 }
 
 function resetAnalysis(){

@@ -492,7 +492,8 @@ body.dark .final-score{background:var(--lab-card-bg);}
 body.dark .stat-card,.dark .topic-card,.dark .error-detail-card,.dark .no-data{background:#1E1E1C;}
 body.dark .error-detail-header{background:#1A1A18;border-bottom-color:var(--lab-border);}
 body.dark .topic-bar-wrap,.dark .an-gauge-track,.dark .an-tl-bar-wrap,.dark .an-tc-bar-wrap,.dark .progress-bar-wrap{background:#2A2A28;}
-body.dark .an-stat-box,.dark .an-gauge-wrap,.dark .an-tl-item,.dark .an-topic-card,.dark .an-hm-row{background:#1E1E1C;}
+body.dark .an-stat-box,.dark .an-tl-item,.dark .an-topic-card,.dark .an-accordion-btn,.dark .an-gauge-inline{background:#1E1E1C;}
+body.dark .an-accordion-btn:hover{background:#252523;}
 body.dark .gbtn-secondary{background:#2A2A28;color:#CBD5E1;border-color:#333330;}
 body.dark .gbtn-secondary:hover{background:#333330;}
 body.dark .page-nav a{background:#2A2A28;color:#E2E8F0;}
@@ -520,49 +521,56 @@ body.dark .summary{background:#0C2713;border-color:rgba(16,185,129,.2);}
 body.dark .summary h3{color:#34D399;}
 body.dark .summary li{color:#94A3B8;}
 
-/* ═══ ANALIZĂ NOUĂ ═══ */
-.an-stats-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin-bottom:20px;}
-.an-stat-box{background:var(--lab-card-bg);border:1px solid var(--lab-border);border-radius:1rem;padding:16px;text-align:center;}
-.an-snum{font-size:1.8rem;font-weight:900;color:var(--q-accent);}
-.an-slbl{font-size:.74rem;color:var(--slate-400);margin-top:3px;font-weight:700;}
-.an-gauge-wrap{background:var(--lab-card-bg);border:1px solid var(--lab-border);border-radius:1rem;padding:16px 20px;margin-bottom:16px;}
-.an-gauge-track{background:var(--slate-100);border-radius:8px;height:14px;overflow:hidden;margin:8px 0 4px;}
+/* ═══ ANALIZĂ ═══ */
+.an-analysis-top{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(220px,.9fr);gap:14px;align-items:stretch;margin-bottom:18px;}
+.an-stats-wrap{display:flex;flex-direction:column;gap:10px;min-width:0;}
+.an-stats-row{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;}
+.an-stat-box{background:var(--lab-card-bg);border:1px solid var(--lab-border);border-radius:1rem;padding:14px 8px;text-align:center;min-width:0;}
+.an-snum{font-size:1.6rem;font-weight:900;color:var(--q-accent);}
+.an-slbl{font-size:.7rem;color:var(--slate-400);margin-top:3px;font-weight:700;text-transform:uppercase;letter-spacing:.02em;}
+.an-gauge-inline{background:linear-gradient(180deg,var(--lab-card-bg),var(--slate-50));border:1px solid var(--lab-border);border-radius:1rem;padding:14px 16px;display:flex;flex-direction:column;justify-content:center;min-width:0;}
+.an-gauge-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;}
+.an-gauge-meta strong{font-size:.88rem;color:var(--q-accent);}
+.an-gauge-meta span{font-size:.78rem;color:var(--slate-400);font-weight:600;}
+.an-gauge-track{background:var(--slate-100);border-radius:999px;height:14px;overflow:hidden;margin-bottom:6px;}
 .an-gauge-fill{height:100%;border-radius:8px;transition:width .6s;}
-.an-gauge-labels{display:flex;justify-content:space-between;font-size:.74rem;color:var(--slate-400);font-weight:700;}
-.an-sec-h{font-size:.93rem;font-weight:800;color:var(--q-accent);margin:20px 0 10px;display:flex;align-items:center;gap:6px;}
-.an-timeline{display:flex;flex-direction:column;gap:8px;margin-bottom:4px;}
-.an-tl-item{background:var(--lab-card-bg);border:1px solid var(--lab-border);border-radius:.8rem;padding:10px 14px;display:flex;align-items:center;gap:12px;}
-.an-tl-date{font-size:.77rem;color:var(--slate-400);white-space:nowrap;min-width:78px;font-weight:700;}
-.an-tl-bar-wrap{flex:1;background:var(--slate-100);border-radius:4px;height:10px;}
+.an-gauge-labels{display:flex;justify-content:space-between;font-size:.7rem;color:var(--slate-400);font-weight:700;}
+.an-sec-h{font-size:.9rem;font-weight:800;color:var(--q-accent);margin:0 0 8px;display:flex;align-items:center;gap:6px;}
+.an-two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px;align-items:start;}
+.an-col{min-width:0;}
+.an-timeline{display:flex;flex-direction:column;gap:7px;}
+.an-tl-item{background:var(--lab-card-bg);border:1px solid var(--lab-border);border-radius:.8rem;padding:9px 12px;display:flex;align-items:center;gap:10px;}
+.an-tl-date{font-size:.74rem;color:var(--slate-400);white-space:nowrap;min-width:74px;font-weight:700;}
+.an-tl-bar-wrap{flex:1;background:var(--slate-100);border-radius:4px;height:9px;}
 .an-tl-bar{height:100%;border-radius:4px;}
-.an-tl-score{font-size:.81rem;font-weight:800;white-space:nowrap;min-width:50px;text-align:right;}
-.an-topic-card{background:var(--lab-card-bg);border:1px solid var(--lab-border);border-radius:.9rem;padding:12px 16px;margin-bottom:10px;}
-.an-tc-head{display:flex;align-items:center;margin-bottom:6px;}
-.an-tc-name{flex:1;font-weight:700;font-size:.87rem;}
-.an-tc-score{font-size:.81rem;font-weight:800;}
-.an-tc-bar-wrap{background:var(--slate-100);border-radius:4px;height:8px;margin-bottom:5px;}
+.an-tl-score{font-size:.78rem;font-weight:800;white-space:nowrap;min-width:52px;text-align:right;}
+.an-topic-card{background:var(--lab-card-bg);border:1px solid var(--lab-border);border-radius:.9rem;padding:11px 14px;margin-bottom:8px;}
+.an-tc-head{display:flex;align-items:center;margin-bottom:5px;}
+.an-tc-name{flex:1;font-weight:700;font-size:.85rem;}
+.an-tc-score{font-size:.8rem;font-weight:800;}
+.an-tc-bar-wrap{background:var(--slate-100);border-radius:4px;height:7px;margin-bottom:5px;}
 .an-tc-bar{height:100%;border-radius:4px;transition:width .5s;}
-.an-tc-detail{font-size:.77rem;color:var(--slate-400);}
+.an-tc-detail{font-size:.74rem;color:var(--slate-400);}
 .an-tc-detail a{color:var(--q-accent);text-decoration:none;}
-.an-hm-legend{display:flex;gap:10px;flex-wrap:wrap;font-size:.74rem;margin-bottom:8px;color:var(--slate-400);font-weight:700;}
-.an-hml{display:flex;align-items:center;gap:4px;}
-.an-hml-dot{width:12px;height:12px;border-radius:3px;}
-.an-heatmap-grid{display:flex;flex-direction:column;gap:7px;margin-bottom:4px;}
-.an-hm-row{background:var(--lab-card-bg);border:1px solid var(--lab-border);border-radius:.8rem;padding:10px 14px;}
-.an-hm-q{font-size:.81rem;font-weight:700;margin-bottom:6px;}
-.an-hm-opts{display:flex;gap:5px;flex-wrap:wrap;}
-.an-hm-opt{width:32px;height:32px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:.77rem;font-weight:800;cursor:help;}
-.an-h-never{background:#ECFDF5;color:#059669;border:2px solid #059669;}
-.an-h-sometimes{background:#FFFBEB;color:#D97706;border:2px solid #D97706;}
-.an-h-often{background:#FFF7ED;color:#EA580C;border:2px solid #EA580C;}
-.an-h-always{background:#FFF1F2;color:#E11D48;border:2px solid #E11D48;}
-.an-h-na{background:var(--slate-100);color:var(--slate-400);border:2px solid var(--slate-200);}
+.an-accordion-btn{width:100%;background:var(--lab-card-bg);border:1px solid var(--lab-border);border-radius:.8rem;padding:11px 16px;font-size:.87rem;font-weight:700;color:var(--q-accent);cursor:pointer;text-align:left;transition:background .15s, border-color .15s;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between;gap:10px;}
+.an-accordion-btn:hover{background:var(--slate-50);}
+.an-accordion-btn.is-open{border-color:var(--q-accent);}
+.an-accordion-body{display:grid;gap:12px;margin-bottom:8px;}
+.an-accordion-body[hidden]{display:none;}
+.an-accordion-meta{font-size:.78rem;color:var(--slate-400);font-weight:600;}
 .an-err-opt{padding:8px 11px;border-radius:.6rem;margin-bottom:7px;}
 .an-ew{background:#FFF1F2;border-left:3px solid #E11D48;}
 .an-em{background:#FFFBEB;border-left:3px solid #D97706;}
 .an-err-opt-lbl{font-weight:700;margin-bottom:3px;font-size:.85rem;}
 .an-err-opt-txt{font-size:.82rem;color:var(--slate-700);}
-
+@media(max-width:768px){
+  .an-analysis-top{grid-template-columns:1fr;}
+  .an-stats-row{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .an-stat-box.hide-mobile{display:none;}
+  .an-two-col{grid-template-columns:1fr;gap:14px;}
+  .an-gauge-inline{padding:12px 14px;}
+  .an-gauge-meta{flex-direction:column;align-items:flex-start;gap:4px;}
+}
 /* ── MOBILE OVERRIDES ── */
 @media(max-width:768px){
   .gtabs{padding-left:0 !important;margin:0 -.9rem 1.2rem !important;overflow:hidden;}
@@ -1693,82 +1701,61 @@ function renderAnalysis(){
   const weakTopics=topicList.filter(t=>t.errors.length>0).sort((a,b)=>b.errors.length-a.errors.length);
 
   // 1. STATS ROW
-  let html=`<div class="an-stats-row">
-    <div class="an-stat-box"><div class="an-snum">${analysis.totalAttempts}</div><div class="an-slbl">Răspunsuri date</div></div>
-    <div class="an-stat-box"><div class="an-snum" style="color:#27ae60">${analysis.totalCorrect}</div><div class="an-slbl">Complet corecte</div></div>
-    <div class="an-stat-box"><div class="an-snum" style="color:#e74c3c">${analysis.totalAttempts-analysis.totalCorrect}</div><div class="an-slbl">Cu greșeli</div></div>
-    <div class="an-stat-box"><div class="an-snum" style="color:${gColor}">${pct}%</div><div class="an-slbl">Acuratețe</div></div>
-    <div class="an-stat-box"><div class="an-snum">${(analysis.sessions||[]).length}</div><div class="an-slbl">Sesiuni</div></div>
-  </div>`;
-
-  // 2. OVERALL GAUGE
-  html+=`<div class="an-gauge-wrap">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
-      <strong style="font-size:.9rem">Scor general</strong>
-      <span style="font-size:.82rem;color:#7f8c8d">${analysis.totalCorrect} / ${analysis.totalAttempts} întrebări corecte</span>
+  let html=`<div class="an-analysis-top">
+    <div class="an-stats-wrap">
+      <div class="an-stats-row">
+        <div class="an-stat-box"><div class="an-snum">${analysis.totalAttempts}</div><div class="an-slbl">Răspunsuri</div></div>
+        <div class="an-stat-box hide-mobile"><div class="an-snum" style="color:#27ae60">${analysis.totalCorrect}</div><div class="an-slbl">Corecte</div></div>
+        <div class="an-stat-box hide-mobile"><div class="an-snum" style="color:#e74c3c">${analysis.totalAttempts-analysis.totalCorrect}</div><div class="an-slbl">Greșeli</div></div>
+        <div class="an-stat-box"><div class="an-snum" style="color:${gColor}">${pct}%</div><div class="an-slbl">Acuratețe</div></div>
+        <div class="an-stat-box"><div class="an-snum">${(analysis.sessions||[]).length}</div><div class="an-slbl">Sesiuni</div></div>
+      </div>
     </div>
-    <div class="an-gauge-track"><div class="an-gauge-fill" style="width:${pct}%;background:${gColor}"></div></div>
-    <div class="an-gauge-labels"><span>0%</span><span style="color:#f39c12">40%</span><span style="color:#27ae60">70%</span><span>100%</span></div>
+    <div class="an-gauge-inline">
+      <div class="an-gauge-meta"><strong>Scor general</strong><span>${analysis.totalCorrect} / ${analysis.totalAttempts} întrebări corecte</span></div>
+      <div class="an-gauge-track"><div class="an-gauge-fill" style="width:${pct}%;background:${gColor}"></div></div>
+      <div class="an-gauge-labels"><span>0%</span><span style="color:#f39c12">40%</span><span style="color:#27ae60">70%</span><span>100%</span></div>
+    </div>
   </div>`;
 
-  // 3. SESSION TIMELINE
+  // 3. TIMELINE (stânga) + 4. TOPICE (dreapta) — două coloane
   const sessions=(analysis.sessions||[]);
+  let leftCol='';
   if(sessions.length>0){
-    html+='<div class="an-sec-h">📅 Evoluție în timp</div><div class="an-timeline">';
-    [...sessions].reverse().slice(0,10).forEach(s=>{
+    leftCol='<div class="an-sec-h">📅 Evoluție în timp</div><div class="an-timeline">';
+    [...sessions].reverse().slice(0,5).forEach(s=>{
       const sp=Math.round(s.cor/s.att*100);
       const col=sp>=70?'#27ae60':sp>=40?'#f39c12':'#e74c3c';
-      html+=`<div class="an-tl-item">
+      leftCol+=`<div class="an-tl-item">
         <div class="an-tl-date">${s.date}</div>
         <div class="an-tl-bar-wrap"><div class="an-tl-bar" style="width:${sp}%;background:${col}"></div></div>
         <div class="an-tl-score" style="color:${col}">${s.cor}/${s.att} (${sp}%)</div>
       </div>`;
     });
-    html+='</div>';
+    leftCol+='</div>';
+  }else{
+    leftCol='<div class="an-sec-h">📅 Evoluție în timp</div><div class="an-topic-card"><div class="an-tc-detail">Sesiunile vor apărea aici după ce salvezi progres pe zile diferite.</div></div>';
   }
 
-  // 4. TOPIC PERFORMANCE
-  html+='<div class="an-sec-h">📚 Performanță pe capitole</div>';
+  let rightCol='<div class="an-sec-h">📚 Performanță pe topice</div>';
   [...topicList].sort((a,b)=>{const pa=a.attempts?a.correct/a.attempts:1,pb=b.attempts?b.correct/b.attempts:1;return pa-pb;}).forEach(t=>{
     const tp=t.attempts?Math.round(t.correct/t.attempts*100):0;
     const col=tp>=70?'#27ae60':tp>=40?'#f39c12':'#e74c3c';
     const icon=tp>=70?'✅':tp>=40?'⚠️':'❌';
-    html+=`<div class="an-topic-card">
+    rightCol+=`<div class="an-topic-card">
       <div class="an-tc-head"><div class="an-tc-name">${icon} ${t.topic}</div><div class="an-tc-score" style="color:${col}">${tp}%</div></div>
       <div class="an-tc-bar-wrap"><div class="an-tc-bar" style="width:${tp}%;background:${col}"></div></div>
       <div class="an-tc-detail">${t.attempts} ${t.attempts===1?'încercare':'încercări'} · ${t.correct} corecte${t.errors.length>0?' · <a href="#" onclick="goto(\''+t.lessonPage+'\');return false;" style="color:#2980b9">Revezi: '+t.lessonSection+'</a>':''}</div>
     </div>`;
   });
 
-  // 5. OPTION HEATMAP
-  const optErr=analysis.optionErrors||{};
-  const hmData=Object.values(optErr).filter(q=>Object.values(q.opts||{}).some(o=>o.wrongCount+o.missedCount>0));
-  if(hmData.length>0){
-    html+='<div class="an-sec-h">🔥 Heatmap greșeli per opțiune</div>';
-    html+='<div class="an-hm-legend"><span class="an-hml"><span class="an-hml-dot" style="background:#eafaf1;border:2px solid #27ae60"></span> Nicio greșeală</span><span class="an-hml"><span class="an-hml-dot" style="background:#fef9e7;border:2px solid #f39c12"></span> 1-2 greșeli</span><span class="an-hml"><span class="an-hml-dot" style="background:#fde8d8;border:2px solid #e59866"></span> 3-4 greșeli</span><span class="an-hml"><span class="an-hml-dot" style="background:#fdedec;border:2px solid #e74c3c"></span> 5+ greșeli</span></div>';
-    html+='<div class="an-heatmap-grid">';
-    hmData.sort((a,b)=>a.qId-b.qId).forEach(qd=>{
-      const q=QUESTIONS.find(q=>q.id===qd.qId);if(!q)return;
-      let optsH='';
-      q.options.forEach(o=>{
-        const od=qd.opts[o.letter];
-        if(!od){optsH+=`<div class="an-hm-opt an-h-na" title="${o.letter}: nu ai răspuns">${o.letter}</div>`;return;}
-        const tot=od.wrongCount+od.missedCount;
-        let cls='an-h-never';
-        if(tot>=5)cls='an-h-always';
-        else if(tot>=3)cls='an-h-often';
-        else if(tot>=1)cls='an-h-sometimes';
-        const tip=od.isCorrect?(tot>0?`${o.letter}: CORECT dar omis de ${od.missedCount}×`:`${o.letter}: ✓ nicio problemă`):(tot>0?`${o.letter}: GREȘIT bifat de ${od.wrongCount}×`:`${o.letter}: ✓ nicio problemă`);
-        optsH+=`<div class="an-hm-opt ${cls}" title="${tip}">${o.letter}</div>`;
-      });
-      html+=`<div class="an-hm-row"><div class="an-hm-q">Q${qd.qId}: ${qd.topic}</div><div class="an-hm-opts">${optsH}</div></div>`;
-    });
-    html+='</div>';
-  }
+  html+=`<div class="an-two-col"><div class="an-col">${leftCol}</div><div class="an-col">${rightCol}</div></div>`;
 
-  // 6. DETAILED ERROR CARDS
+  // 5. ERORI DETALIATE — colapsibil
   if(weakTopics.length>0){
-    html+='<div class="an-sec-h">🔍 Unde greșești exact</div>';
+    html+=`<div class="an-sec-h">🔍 Unde greșești exact</div>
+    <button class="an-accordion-btn" id="an-err-toggle" type="button" aria-expanded="false" onclick="toggleErrDetails()"><span>▾ Vezi detalii greșeli</span><span class="an-accordion-meta">${weakTopics.length} ${weakTopics.length===1?'topic':'topice'}</span></button>
+    <div class="an-accordion-body" id="an-err-body" hidden>`;
     weakTopics.forEach(t=>{
       const qs=QUESTIONS.filter(q=>q.topic===t.topic);
       const wrongCount={},missedCount={};
@@ -1788,8 +1775,22 @@ function renderAnalysis(){
       });
       html+=`<div class="error-detail-card"><div class="error-detail-header"><strong>${t.topic}</strong><span class="error-count-badge">${t.errors.length} greșeală(i)</span></div><div class="error-detail-body">${optHtml}<div class="lesson-ref" style="margin-top:10px">📖 <strong>Revezi:</strong> ${t.lessonSection} — <a href="#" onclick="goto('${t.lessonPage||'nefron'}');return false;" style="color:#2980b9">${t.lessonPage||'nefron'}</a></div></div></div>`;
     });
+    html+='</div>';
   }
   container.innerHTML=html;
+}
+
+function toggleErrDetails(){
+  const body=document.getElementById('an-err-body');
+  const btn=document.getElementById('an-err-toggle');
+  if(!body||!btn)return;
+  const open=!body.hasAttribute('hidden');
+  if(open)body.setAttribute('hidden','');
+  else body.removeAttribute('hidden');
+  btn.setAttribute('aria-expanded',open?'false':'true');
+  btn.classList.toggle('is-open',!open);
+  const label=btn.querySelector('span');
+  if(label)label.textContent=`${open?'▾':'▴'} Vezi detalii greșeli`;
 }
 
 function resetAnalysis(){
