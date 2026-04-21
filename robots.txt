@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bio-barrons-umf.vercel.app/sitemap.xml
+Sitemap: https://danghg18.github.io/bio-barrons-umf/sitemap.xml
