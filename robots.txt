@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://danghg18.github.io/bio-barrons-umf/sitemap.xml
