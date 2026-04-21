@@ -35,9 +35,25 @@
   --lab-border:rgba(15,23,42,0.07);--lab-card-bg:#ffffff;
   --lab-accent:#059669;
   --sidebar:256px;
+  /* ── DESIGN SYSTEM v2 ── */
+  --bg-page:#EEF2FF;--bg-surface:#FFFFFF;--bg-sunken:var(--slate-50);
+  --fg-1:var(--slate-900);--fg-2:var(--slate-700);--fg-3:var(--slate-500);--fg-4:var(--slate-400);
+  --font-display:'Figtree',system-ui,-apple-system,sans-serif;
+  --font-body:'Noto Sans',system-ui,-apple-system,sans-serif;
+  --grad-hero:linear-gradient(135deg,#1E3A8A 0%,#2563EB 55%,#0EA5E9 100%);
+  --grad-nav:linear-gradient(160deg,#0B1730 0%,#0F2356 100%);
+  --grad-progress:linear-gradient(90deg,var(--emerald),#34D399);
+  --shadow-sm:0 1px 3px rgba(0,0,0,.05),0 4px 12px rgba(0,0,0,.04);
+  --shadow-md:0 1px 3px rgba(0,0,0,.05),0 6px 20px rgba(0,0,0,.06);
+  --shadow-lg:0 1px 3px rgba(0,0,0,.05),0 8px 28px rgba(0,0,0,.07);
+  --shadow-hover:0 6px 20px rgba(0,0,0,.10);
+  --shadow-float:0 3px 12px rgba(37,99,235,.30);
+  --r-xs:.5rem;--r-sm:.65rem;--r-md:.9rem;--r-lg:1rem;--r-xl:1.2rem;--r-2xl:1.5rem;
+  --dur-fast:.15s;--dur-base:.2s;--dur-slow:.3s;
+  --ease-default:cubic-bezier(.4,0,.2,1);
 }
 *{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Noto Sans',system-ui,sans-serif;background:var(--lab-bg);color:var(--slate-700);line-height:1.7;}
+body{font-family:'Noto Sans',system-ui,sans-serif;background:var(--bg-page);color:var(--slate-700);line-height:1.7;}
 h1,h2,h3,h4,h5,h6,.btn,.gbtn,.badge,.page-nav a,.mm-node,.scenario-btn{font-family:'Figtree',system-ui,sans-serif;}
 
 /* ── LAYOUT GRID ── */
@@ -414,7 +430,7 @@ body.dark{
   --slate-50:#1E1E1C;--slate-100:#222220;--q-accent-light:#0C2713;
 }
 body.dark #dm-btn{background:#1E1E1C;border-color:rgba(255,255,255,.1);color:#FCD34D;}
-body.dark nav{background:var(--lab-nav-bg);border-right-color:var(--lab-border);}
+body.dark nav{background:var(--grad-nav) !important;border:none !important;}
 body.dark .nav-chapter-title{color:#E2E8F0;}
 body.dark .nav-back{color:rgba(255,255,255,.35);}
 body.dark .nav-back:hover{color:rgba(255,255,255,.7);}
@@ -1133,6 +1149,90 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   #nav-overlay.open{display:block !important;backdrop-filter:blur(4px);}
   main{padding:0 12px 4rem !important;}
 }
+
+/* ══════════════════════════════════════════════
+   DESIGN SYSTEM v2 — DARK NAV · FAB · TYPOGRAPHY
+   ══════════════════════════════════════════════ */
+
+/* ── Dark gradient sidebar (desktop only) ── */
+@media(min-width:1025px){
+  nav#sidenav{background:var(--grad-nav) !important;border:none !important;border-radius:16px !important;}
+  nav#sidenav .nav-header{border-bottom-color:rgba(255,255,255,.08) !important;}
+  nav#sidenav .nav-back{color:rgba(255,255,255,.4) !important;}
+  nav#sidenav .nav-back:hover{color:rgba(255,255,255,.75) !important;}
+  nav#sidenav .nav-chapter-badge{background:rgba(255,255,255,.12) !important;border-color:rgba(255,255,255,.2) !important;color:#fff !important;}
+  nav#sidenav .nav-chapter-title{color:#fff !important;}
+  nav#sidenav .nav-group-label{color:rgba(255,255,255,.28) !important;}
+  nav#sidenav a{color:rgba(255,255,255,.6) !important;}
+  nav#sidenav a:hover{color:#fff !important;background:rgba(255,255,255,.07) !important;}
+  nav#sidenav a.active{background:rgba(16,185,129,.18) !important;color:#6EE7B7 !important;}
+  nav#sidenav a.active::before{transform:scale(1.3) !important;}
+  nav#sidenav .nav-settings-btn{color:rgba(255,255,255,.5) !important;background:none !important;border:none !important;}
+  nav#sidenav .nav-settings-btn:hover{color:#fff !important;background:rgba(255,255,255,.06) !important;}
+  nav#sidenav .nav-settings-btn.on,nav#sidenav .nav-settings-btn.hl-on{background:rgba(255,255,255,.12) !important;color:#fff !important;}
+  nav#sidenav .nav-divider{border-color:rgba(255,255,255,.08) !important;}
+  nav#sidenav .dot{background:rgba(255,255,255,.22) !important;}
+}
+
+/* ── Settings FAB ── */
+#settings-fab{
+  position:fixed;bottom:1.5rem;right:1.5rem;
+  width:52px;height:52px;border-radius:50%;
+  background:var(--primary);color:#fff;border:none;
+  font-size:1.25rem;cursor:pointer;
+  box-shadow:var(--shadow-float);
+  transition:transform var(--dur-base,.2s);
+  z-index:300;display:flex;align-items:center;justify-content:center;
+}
+#settings-fab:hover{transform:scale(1.06);}
+#settings-panel{
+  position:fixed;bottom:5.4rem;right:1.5rem;
+  background:#fff;border:1px solid var(--slate-200);
+  border-radius:14px;box-shadow:var(--shadow-lg);
+  padding:.5rem;min-width:215px;z-index:300;
+  display:none;
+}
+#settings-panel.open{display:block;}
+.settings-opt{
+  display:flex;align-items:center;gap:.55rem;width:100%;
+  background:none;border:none;padding:.55rem .75rem;
+  border-radius:8px;text-align:left;
+  font-family:var(--font-display,'Figtree',sans-serif);font-weight:700;font-size:.85rem;
+  color:var(--slate-700);cursor:pointer;transition:background .15s;
+}
+.settings-opt:hover{background:var(--slate-100);}
+.settings-opt.on{background:var(--primary-light);color:var(--primary);}
+body.dark #settings-panel{background:#1E293B;border-color:#334155;}
+body.dark .settings-opt{color:#CBD5E1;}
+body.dark .settings-opt:hover{background:#334155;}
+body.dark .settings-opt.on{background:#0D2545;color:#BAD9FF;}
+
+/* ── Breadcrumb ── */
+.crumb{font-size:.82rem;color:var(--fg-4,var(--slate-400));margin-bottom:.6rem;font-family:var(--font-display,'Figtree',sans-serif);font-weight:700;}
+.crumb a{color:var(--fg-3,var(--slate-500));text-decoration:none;}
+.crumb a:hover{color:var(--primary);}
+
+/* ── Text structure ── */
+h2.section{font-family:var(--font-display,'Figtree',sans-serif);font-size:1.55rem;font-weight:900;color:var(--fg-1,var(--slate-900));margin:2rem 0 1rem;display:flex;align-items:center;gap:.55rem;letter-spacing:-.3px;line-height:1.25;}
+h2.section .em{font-size:1.7rem;line-height:1;}
+h3.sub{font-family:var(--font-display,'Figtree',sans-serif);font-size:1.05rem;font-weight:800;color:var(--fg-1,var(--slate-900));margin:1.4rem 0 .5rem;}
+.para{margin-bottom:.7rem;font-size:.94rem;line-height:1.7;}
+.para strong{color:var(--fg-1,var(--slate-900));}
+.enum{padding-left:0;list-style:none;margin:.6rem 0;}
+.enum li{padding:.4rem 0 .4rem 2rem;position:relative;font-size:.92rem;line-height:1.55;}
+.enum li::before{content:attr(data-n);position:absolute;left:0;top:.35rem;font-family:var(--font-display,'Figtree',sans-serif);font-weight:900;width:1.4rem;height:1.4rem;border-radius:50%;background:var(--primary);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:.72rem;}
+/* ── Section number badge (replaces .sec-head .num) ── */
+.sec-num{color:#fff;width:2rem;height:2rem;border-radius:.5rem;display:inline-flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:900;flex-shrink:0;}
+.sec-num.blue{background:var(--blue);}
+.sec-num.green{background:var(--green);}
+.sec-num.orange{background:var(--orange);}
+.sec-num.purple{background:var(--purple);}
+.sec-num.teal{background:var(--teal);}
+.sec-num.red{background:var(--red);}
+/* ── Apply text-structure styles to existing lesson content ── */
+section .card p:not([class]),section .card p[style]{font-size:.94rem;line-height:1.7;margin-bottom:.7rem;}
+section .card p strong{color:var(--fg-1,var(--slate-900));}
+section .card h3:not([class]){font-family:var(--font-display,'Figtree',sans-serif);font-size:1.05rem;font-weight:800;color:var(--fg-1,var(--slate-900));margin:1.4rem 0 .5rem;}
 </style>
 </head>
 <body>
@@ -1304,7 +1404,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   </div>
 
   <section id="intro">
-    <div class="sec-head blue"><div class="num">1</div><h2>Introducere</h2></div>
+    <h2 class="section"><span class="sec-num blue">1</span> Introducere</h2>
     <div class="card">
       <div class="img-txt">
         <img src="imagini/sistemul_urinar_imag_noua.png.webp" alt="Sistemul urinar în corp">
@@ -1323,7 +1423,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   </section>
 
   <section id="caract">
-    <div class="sec-head green"><div class="num">2</div><h2>Rinichii</h2></div>
+    <h2 class="section"><span class="sec-num green">2</span> Rinichii</h2>
     <div class="card">
       <p><strong>Rinichii – caracteristici:</strong></p>
       <div class="g2">
@@ -1357,7 +1457,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   </section>
 
   <section id="nefron-intro">
-    <div class="sec-head teal"><div class="num">3</div><h2>Nefronul</h2></div>
+    <h2 class="section"><span class="sec-num teal">3</span> Nefronul</h2>
     <div class="card">
       <p>Unitatea funcțională și structura rinichiului la nivelul căreia se desfășoară formarea urinei se numește <strong>nefron</strong>. Fiecare rinichi conține peste un milion de nefroni. În alcătuirea unui nefron intră:</p>
       <div class="g2" style="margin:.7rem 0 1rem;">
@@ -1393,7 +1493,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   </div>
 
   <section id="struct-nefron">
-    <div class="sec-head blue"><div class="num">1</div><h2>Structura nefronului</h2></div>
+    <h2 class="section"><span class="sec-num blue">1</span> Structura nefronului</h2>
     <div class="card">
       <p>Terminația arteriolelor aferente microscopice este reprezentată de o rețea de capilare, denumită <strong>glomerul</strong>, prezent la nivelul fiecărui nefron. Plasma sanguină din glomerul va traversa pereții permeabili ai capsulei glomerulare (Bowman) în care se află glomerulul și pe calea arteriolei eferente, sângele va ieși din glomerulul renal. Ulterior, arteriola eferentă formează o rețea de capilare denumită <strong>rețeaua capilarelor peritubulare</strong> care se distribuie în jurul tubilor nefronului. Aceste capilare peritubulare se varsă în vene mici, din a căror unire rezultă vene mai mari care vor forma ulterior <strong>vena renală</strong>, care drenează sângele din rinichi.</p>
       <p style="margin:.8rem 0 .4rem;"><strong>Structurile din alcătuirea unui nefron sunt:</strong></p>
@@ -1421,7 +1521,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   </section>
 
   <section id="filtrare">
-    <div class="sec-head teal"><div class="num">2</div><h2>Filtrarea</h2></div>
+    <h2 class="section"><span class="sec-num teal">2</span> Filtrarea</h2>
     <div class="card">
       <p>Filtratul derivat din plasma sanguină traversează fante submicroscopice și pătrunde în capsula Bowman. Procesul care facilitează trecerea substanțelor dizolvate alcătuite din molecule mici și a apei, din capilarele glomerulare în capsula glomerulară Bowman, se numește <strong>filtrare</strong>. Cauzele care permit realizarea filtrării sunt:</p>
       <div class="g2" style="margin:.7rem 0;">
@@ -1451,7 +1551,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   </section>
 
   <section id="reabsorbtie">
-    <div class="sec-head green"><div class="num">3</div><h2>Reabsorbția</h2></div>
+    <h2 class="section"><span class="sec-num green">3</span> Reabsorbția</h2>
     <div class="card">
       <p>Din capsula glomerulară, filtratul ajunge în lumenul (interiorul) tubului contort proximal. Pereții tubului prezintă milioane de microvilozități care îi măresc considerabil suprafața de contact. Procesul de <strong>reabsorbție</strong> se desfășoară la nivelul tubului contort proximal, în cursul căruia, cantități variabile de apă, săruri și alte molecule din lumen, traversează celulele epiteliale tubulare și ajung în capilarele peritubulare. De la acest nivel, sângele este drenat mai departe într-o venă.</p>
       <p>În general transportul moleculelor este specific justificat de transportorii membranari specifici implicați în realizarea lui. Substanțele sunt transportate în exteriorul celulelor tubulare (și ulterior în sângele din capilarele peritubulare) prin intermediul proteinelor transportoare specifice de la nivelul membranelor celulare. Prin transport activ, deci cu consum de ATP ca sursă de energie, se reabsorb glucoza și aminoacizii.</p>
@@ -1501,7 +1601,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   </section>
 
   <section id="secretie">
-    <div class="sec-head red"><div class="num">4</div><h2>Secreția tubulară</h2></div>
+    <h2 class="section"><span class="sec-num red">4</span> Secreția tubulară</h2>
     <div class="card">
       <p>În tubul contort distal se desfășoară un proces activ prin care compuși chimici prezenți în capilarele sanguine peritubulare sunt transportați (excretați) în interiorul tubului contort distal, intrând în alcătuirea filtratului glomerular. Acest proces poartă numele de <strong>secreție tubulară</strong>.</p>
       <p><strong>Molecule secretate tubular sunt:</strong></p>
@@ -1545,7 +1645,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   </div>
 
   <section id="activitate-hormonala">
-    <div class="sec-head blue"><div class="num">1</div><h2>Activitatea hormonală</h2></div>
+    <h2 class="section"><span class="sec-num blue">1</span> Activitatea hormonală</h2>
     <div class="card">
       <p>În determinarea ratei absorbției apei de la nivelul tubului contort distal și a tubului colector intervine permeabilitatea membranei celulelor care alcătuiesc peretele tubului colector. Controlul asupra acesteia este exercitat de <strong>ADH</strong> – hormon antidiuretic, sintetizat de <strong>hipotalamus</strong> și eliberat de către <strong>hipofiză</strong>, partea de lob posterior. Caracterul complex al mecanismului chimic ce determină deschiderea porilor membranei celulare sub influența ADH-ului, favorizează trecerea apei în sânge.</p>
       <p>Secreția de ADH este stimulată atunci când receptorii chimici din hipotalamus (chemoreceptorii) sunt stimulați de variațiile concentrației de sodiu sau a altor ioni în sânge.</p>
@@ -1569,7 +1669,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   </section>
 
   <section id="urina">
-    <div class="sec-head green"><div class="num">2</div><h2>Urina</h2></div>
+    <h2 class="section"><span class="sec-num green">2</span> Urina</h2>
     <div class="card">
       <p>Urina este produsă la nivelul nefronilor.</p>
       <p><strong>Compoziția urinei:</strong></p>
@@ -1630,7 +1730,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   </div>
 
   <section id="structuri-anexe">
-    <div class="sec-head blue"><div class="num">1</div><h2>Structuri anexe</h2></div>
+    <h2 class="section"><span class="sec-num blue">1</span> Structuri anexe</h2>
     <div class="card">
       <p><strong>Structurile anexe ale sistemului urinar sunt:</strong></p>
       <div class="flow" style="margin:.7rem 0 1rem;">
@@ -1648,7 +1748,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   </section>
 
   <section id="uretere">
-    <div class="sec-head green"><div class="num">2</div><h2>Ureterele</h2></div>
+    <h2 class="section"><span class="sec-num green">2</span> Ureterele</h2>
     <div class="card">
       <p><strong>Ureterele – caracteristici:</strong></p>
       <ul class="ch">
@@ -1663,7 +1763,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   </section>
 
   <section id="vezica">
-    <div class="sec-head orange"><div class="num">3</div><h2>Vezica urinară</h2></div>
+    <h2 class="section"><span class="sec-num orange">3</span> Vezica urinară</h2>
     <div class="card">
       <p><strong>Vezica urinară – caracteristici:</strong></p>
       <ul class="ch">
@@ -1680,7 +1780,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   </section>
 
   <section id="uretra">
-    <div class="sec-head teal"><div class="num">4</div><h2>Uretra</h2></div>
+    <h2 class="section"><span class="sec-num teal">4</span> Uretra</h2>
     <div class="card">
       <p><strong>Uretra – caracteristici:</strong></p>
       <ul class="ch">
@@ -1698,7 +1798,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   </section>
 
   <section id="alte-organe">
-    <div class="sec-head purple"><div class="num">5</div><h2>Alte organe excretorii</h2></div>
+    <h2 class="section"><span class="sec-num purple">5</span> Alte organe excretorii</h2>
     <div class="card">
       <p><strong>Alte organe excretorii sunt:</strong></p>
       <div class="g2" style="margin:.7rem 0;">
@@ -1727,7 +1827,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
 <div class="page-section" id="page-mindmap">
   <div class="hero"><h1>🔄 Filtrare Glomerulară – Interactiv</h1><p>Apasă pe fiecare etapă pentru explicații complete. Folosește Play pentru a parcurge animat toți pașii.</p></div>
   <section id="flowchart-section">
-    <div class="sec-head blue"><div class="num">1</div><h2>Cele 5 etape ale filtrării glomerulare</h2></div>
+    <h2 class="section"><span class="sec-num blue">1</span> Cele 5 etape ale filtrării glomerulare</h2>
     <div class="card">
       <p style="color:var(--slate-500);font-size:.87rem;margin-bottom:1.2rem;">Apasă pe orice etapă pentru a vedea explicația completă și mecanismul din spate. Tastează <kbd style="background:var(--slate-100);border:1px solid var(--slate-300);border-radius:3px;padding:0 4px;font-size:.8em;">Enter</kbd> pentru navigare cu tastatura.</p>
       <div class="fc-controls">
@@ -3133,6 +3233,48 @@ if('serviceWorker' in navigator){
     navigator.serviceWorker.register('sw.js').catch(function(){});
   });
 }
+
+// ════ SETTINGS FAB ════
+function toggleSettingsFab(){
+  var panel = document.getElementById('settings-panel');
+  if(panel) panel.classList.toggle('open');
+}
+function syncProgress(){
+  showToast('📱 Funcția de sincronizare va fi disponibilă în curând.');
+  var p = document.getElementById('settings-panel');
+  if(p) p.classList.remove('open');
+}
+function syncFabStates(){
+  var dm = document.getElementById('sfab-dm');
+  var hl = document.getElementById('sfab-hl');
+  if(dm) dm.classList.toggle('on', document.body.classList.contains('dark'));
+  if(hl) hl.classList.toggle('on', typeof hlMode !== 'undefined' && hlMode);
+}
+document.addEventListener('click', function(e){
+  var panel = document.getElementById('settings-panel');
+  var fab   = document.getElementById('settings-fab');
+  if(panel && panel.classList.contains('open') && fab && !panel.contains(e.target) && !fab.contains(e.target)){
+    panel.classList.remove('open');
+  }
+});
+(function(){
+  var origDark = window.toggleDarkMode;
+  if(typeof origDark === 'function'){
+    window.toggleDarkMode = function(){ origDark(); syncFabStates(); };
+  }
+  var origHl = window.toggleHighlighter;
+  if(typeof origHl === 'function'){
+    window.toggleHighlighter = function(){ origHl(); syncFabStates(); };
+  }
+  document.addEventListener('DOMContentLoaded', function(){ syncFabStates(); });
+})();
 </script>
+
+<button id="settings-fab" onclick="toggleSettingsFab()" title="Setări" aria-label="Setări">⚙</button>
+<div id="settings-panel" role="menu" aria-label="Setări lecție">
+  <button class="settings-opt" id="sfab-dm"   onclick="toggleDarkMode()">🌙 Mod noapte</button>
+  <button class="settings-opt" id="sfab-hl"   onclick="toggleHighlighter()">🖊 Evidențiator</button>
+  <button class="settings-opt" id="sfab-sync" onclick="syncProgress()">📱 Transferă progresul</button>
+</div>
 </body>
 </html>

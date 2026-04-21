@@ -35,9 +35,25 @@
   --lab-border:rgba(15,23,42,0.07);--lab-card-bg:#ffffff;
   --lab-accent:#0891B2;
   --sidebar:256px;
+  /* ── DESIGN SYSTEM v2 ── */
+  --bg-page:#EEF2FF;--bg-surface:#FFFFFF;--bg-sunken:var(--slate-50);
+  --fg-1:var(--slate-900);--fg-2:var(--slate-700);--fg-3:var(--slate-500);--fg-4:var(--slate-400);
+  --font-display:'Figtree',system-ui,-apple-system,sans-serif;
+  --font-body:'Noto Sans',system-ui,-apple-system,sans-serif;
+  --grad-hero:linear-gradient(135deg,#1E3A8A 0%,#2563EB 55%,#0EA5E9 100%);
+  --grad-nav:linear-gradient(160deg,#0B1730 0%,#0F2356 100%);
+  --grad-progress:linear-gradient(90deg,var(--emerald),#34D399);
+  --shadow-sm:0 1px 3px rgba(0,0,0,.05),0 4px 12px rgba(0,0,0,.04);
+  --shadow-md:0 1px 3px rgba(0,0,0,.05),0 6px 20px rgba(0,0,0,.06);
+  --shadow-lg:0 1px 3px rgba(0,0,0,.05),0 8px 28px rgba(0,0,0,.07);
+  --shadow-hover:0 6px 20px rgba(0,0,0,.10);
+  --shadow-float:0 3px 12px rgba(8,145,178,.35);
+  --r-xs:.5rem;--r-sm:.65rem;--r-md:.9rem;--r-lg:1rem;--r-xl:1.2rem;--r-2xl:1.5rem;
+  --dur-fast:.15s;--dur-base:.2s;--dur-slow:.3s;
+  --ease-default:cubic-bezier(.4,0,.2,1);
 }
 *{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Noto Sans',system-ui,sans-serif;background:var(--lab-bg);color:var(--slate-700);line-height:1.7;}
+body{font-family:'Noto Sans',system-ui,sans-serif;background:var(--bg-page);color:var(--slate-700);line-height:1.7;}
 h1,h2,h3,h4,h5,h6,.btn,.gbtn,.badge,.page-nav a,.mm-node,.scenario-btn{font-family:'Figtree',system-ui,sans-serif;}
 
 /* ── LAYOUT GRID ── */
@@ -407,7 +423,7 @@ body.dark{
   --slate-50:#1E1E1C;--slate-100:#222220;--q-accent-light:#0A2530;
 }
 body.dark #dm-btn{background:#1E1E1C;border-color:rgba(255,255,255,.1);color:#FCD34D;}
-body.dark nav{background:var(--lab-nav-bg);border-right-color:var(--lab-border);}
+body.dark nav{background:var(--grad-nav) !important;border:none !important;}
 body.dark .nav-chapter-title{color:#E2E8F0;}
 body.dark .nav-back{color:rgba(255,255,255,.35);}
 body.dark .nav-back:hover{color:rgba(255,255,255,.7);}
@@ -1030,6 +1046,90 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   #nav-overlay.open{display:block !important;backdrop-filter:blur(4px);}
   main{padding:0 12px 4rem !important;}
 }
+
+/* ══════════════════════════════════════════════
+   DESIGN SYSTEM v2 — DARK NAV · FAB · TYPOGRAPHY
+   ══════════════════════════════════════════════ */
+
+/* ── Dark gradient sidebar (desktop only) ── */
+@media(min-width:1025px){
+  nav#sidenav{background:var(--grad-nav) !important;border:none !important;border-radius:16px !important;}
+  nav#sidenav .nav-header{border-bottom-color:rgba(255,255,255,.08) !important;}
+  nav#sidenav .nav-back{color:rgba(255,255,255,.4) !important;}
+  nav#sidenav .nav-back:hover{color:rgba(255,255,255,.75) !important;}
+  nav#sidenav .nav-chapter-badge{background:rgba(255,255,255,.12) !important;border-color:rgba(255,255,255,.2) !important;color:#fff !important;}
+  nav#sidenav .nav-chapter-title{color:#fff !important;}
+  nav#sidenav .nav-group-label{color:rgba(255,255,255,.28) !important;}
+  nav#sidenav a{color:rgba(255,255,255,.6) !important;}
+  nav#sidenav a:hover{color:#fff !important;background:rgba(255,255,255,.07) !important;}
+  nav#sidenav a.active{background:rgba(8,145,178,.22) !important;color:#67E8F9 !important;}
+  nav#sidenav a.active::before{transform:scale(1.3) !important;}
+  nav#sidenav .nav-settings-btn{color:rgba(255,255,255,.5) !important;background:none !important;border:none !important;}
+  nav#sidenav .nav-settings-btn:hover{color:#fff !important;background:rgba(255,255,255,.06) !important;}
+  nav#sidenav .nav-settings-btn.on,nav#sidenav .nav-settings-btn.hl-on{background:rgba(255,255,255,.12) !important;color:#fff !important;}
+  nav#sidenav .nav-divider{border-color:rgba(255,255,255,.08) !important;}
+  nav#sidenav .dot{background:rgba(255,255,255,.22) !important;}
+}
+
+/* ── Settings FAB ── */
+#settings-fab{
+  position:fixed;bottom:1.5rem;right:1.5rem;
+  width:52px;height:52px;border-radius:50%;
+  background:var(--primary);color:#fff;border:none;
+  font-size:1.25rem;cursor:pointer;
+  box-shadow:var(--shadow-float);
+  transition:transform var(--dur-base,.2s);
+  z-index:300;display:flex;align-items:center;justify-content:center;
+}
+#settings-fab:hover{transform:scale(1.06);}
+#settings-panel{
+  position:fixed;bottom:5.4rem;right:1.5rem;
+  background:#fff;border:1px solid var(--slate-200);
+  border-radius:14px;box-shadow:var(--shadow-lg);
+  padding:.5rem;min-width:215px;z-index:300;
+  display:none;
+}
+#settings-panel.open{display:block;}
+.settings-opt{
+  display:flex;align-items:center;gap:.55rem;width:100%;
+  background:none;border:none;padding:.55rem .75rem;
+  border-radius:8px;text-align:left;
+  font-family:var(--font-display,'Figtree',sans-serif);font-weight:700;font-size:.85rem;
+  color:var(--slate-700);cursor:pointer;transition:background .15s;
+}
+.settings-opt:hover{background:var(--slate-100);}
+.settings-opt.on{background:var(--primary-light);color:var(--primary);}
+body.dark #settings-panel{background:#1E293B;border-color:#334155;}
+body.dark .settings-opt{color:#CBD5E1;}
+body.dark .settings-opt:hover{background:#334155;}
+body.dark .settings-opt.on{background:#083344;color:#67E8F9;}
+
+/* ── Breadcrumb ── */
+.crumb{font-size:.82rem;color:var(--fg-4,var(--slate-400));margin-bottom:.6rem;font-family:var(--font-display,'Figtree',sans-serif);font-weight:700;}
+.crumb a{color:var(--fg-3,var(--slate-500));text-decoration:none;}
+.crumb a:hover{color:var(--primary);}
+
+/* ── Text structure ── */
+h2.section{font-family:var(--font-display,'Figtree',sans-serif);font-size:1.55rem;font-weight:900;color:var(--fg-1,var(--slate-900));margin:2rem 0 1rem;display:flex;align-items:center;gap:.55rem;letter-spacing:-.3px;line-height:1.25;}
+h2.section .em{font-size:1.7rem;line-height:1;}
+h3.sub{font-family:var(--font-display,'Figtree',sans-serif);font-size:1.05rem;font-weight:800;color:var(--fg-1,var(--slate-900));margin:1.4rem 0 .5rem;}
+.para{margin-bottom:.7rem;font-size:.94rem;line-height:1.7;}
+.para strong{color:var(--fg-1,var(--slate-900));}
+.enum{padding-left:0;list-style:none;margin:.6rem 0;}
+.enum li{padding:.4rem 0 .4rem 2rem;position:relative;font-size:.92rem;line-height:1.55;}
+.enum li::before{content:attr(data-n);position:absolute;left:0;top:.35rem;font-family:var(--font-display,'Figtree',sans-serif);font-weight:900;width:1.4rem;height:1.4rem;border-radius:50%;background:var(--primary);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:.72rem;}
+/* ── Section number badge ── */
+.sec-num{color:#fff;width:2rem;height:2rem;border-radius:.5rem;display:inline-flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:900;flex-shrink:0;}
+.sec-num.blue{background:var(--blue);}
+.sec-num.green{background:var(--green);}
+.sec-num.orange{background:var(--orange);}
+.sec-num.purple{background:var(--purple);}
+.sec-num.teal{background:var(--teal);}
+.sec-num.red{background:var(--red);}
+/* ── Apply text-structure styles to existing lesson content ── */
+section .card p:not([class]),section .card p[style]{font-size:.94rem;line-height:1.7;margin-bottom:.7rem;}
+section .card p strong{color:var(--fg-1,var(--slate-900));}
+section .card h3:not([class]){font-family:var(--font-display,'Figtree',sans-serif);font-size:1.05rem;font-weight:800;color:var(--fg-1,var(--slate-900));margin:1.4rem 0 .5rem;}
 </style>
 </head>
 <body>
@@ -1188,7 +1288,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   </div>
 
   <section id="intro">
-    <div class="sec-head blue"><div class="num">1</div><h2>22.1. Introducere</h2></div>
+    <h2 class="section"><span class="sec-num blue">1</span> 22.1. Introducere</h2>
     <div class="card">
       <p>Sistemul reproducător îndeplinește multiple roluri ce privesc celulele reproducătoare masculine (gameți), cum ar fi:</p>
       <div class="g2" style="margin:.8rem 0;">
@@ -1208,7 +1308,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   </section>
 
   <section id="testiculele">
-    <div class="sec-head green"><div class="num">2</div><h2>22.2. Testiculele</h2></div>
+    <h2 class="section"><span class="sec-num green">2</span> 22.2. Testiculele</h2>
     <div class="card">
       <p>Testiculele, organe masculine de reproducere, prezintă următoarele caracteristici:</p>
       <div class="g2" style="margin:.8rem 0;">
@@ -1227,7 +1327,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   </section>
 
   <section id="scrot">
-    <div class="sec-head orange"><div class="num">3</div><h2>Scrotul</h2></div>
+    <h2 class="section"><span class="sec-num orange">3</span> Scrotul</h2>
     <div class="card">
       <p>Scrotul este formațiune în formă de sac (sacciformă), ce prezintă pereți groși, cu straturi multiple (multistratificați), suspendată sub perineu și anterior anusului. Scrotul este divizat în două compartimente separate în care se află câte un testicul.</p>
       <p>Separarea este marcată de <strong>rafeu</strong> (conform DEX, rafeul este o linie de joncțiune a două jumătăți simetrice ale unei formații anatomice sau ale unui organ.), o proeminență îngroșată aflată pe suprafața scrotală.</p>
@@ -1244,7 +1344,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   </section>
 
   <section id="dezvoltare">
-    <div class="sec-head teal"><div class="num">4</div><h2>Dezvoltarea testiculelor</h2></div>
+    <h2 class="section"><span class="sec-num teal">4</span> Dezvoltarea testiculelor</h2>
     <div class="card">
       <p>Dezvoltarea testiculelor are loc încă din perioada fetală, în cavitatea abdominală, lângă rinichi. Testiculele coboară în scrot până la finalul lunii a șaptea de sarcină, prin traversarea musculaturii abdominale. După momentul nașterii, temperatura din scrot înregistrează o valoare cu câteva grade mai scăzută decât cea din cavitatea abdominală.</p>
       <div class="g2" style="margin:.8rem 0;">
@@ -1272,7 +1372,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   </section>
 
   <section id="spermatogeneza">
-    <div class="sec-head purple"><div class="num">5</div><h2>Spermatogeneza</h2></div>
+    <h2 class="section"><span class="sec-num purple">5</span> Spermatogeneza</h2>
     <div class="card">
       <p>Spermatogeneza reprezintă procesul prin care se formează spermatozoizii. Acest proces este inițiat în stratul cel mai extern al celulelor germinale din alcătuirea tubilor seminiferi.</p>
       <div class="box blue" style="margin:.8rem 0;">
@@ -1316,7 +1416,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   </section>
 
   <section id="spermatozoizi">
-    <div class="sec-head teal"><div class="num">6</div><h2>Spermatozoizii</h2></div>
+    <h2 class="section"><span class="sec-num teal">6</span> Spermatozoizii</h2>
     <div class="card">
       <p>Regiunile spermatozoizilor sunt:</p>
       <div class="g2" style="margin:.8rem 0;">
@@ -1369,7 +1469,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   </div>
 
   <section id="cai-ducte">
-    <div class="sec-head blue"><div class="num">1</div><h2>22.3. Ducte și organe anexe</h2></div>
+    <h2 class="section"><span class="sec-num blue">1</span> 22.3. Ducte și organe anexe</h2>
     <div class="card">
       <p>O serie de ducte și organe anexe intervin în realizarea funcțiilor fiziologice ale testiculelor prin care spermatozoizii sunt evacuați din organism și își realizează activitatea lor.</p>
     </div>
@@ -1421,7 +1521,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   </section>
 
   <section id="organe-anexe">
-    <div class="sec-head orange"><div class="num">3</div><h2>Organe Anexe</h2></div>
+    <h2 class="section"><span class="sec-num orange">3</span> Organe Anexe</h2>
     <div class="card">
       <p>Organele anexe ale sistemului reproducător masculin au rolul de a secreta fluide care sunt necesare în formarea spermei sau funcționează ca organe care asigură transportul ei în cursul copulației (actului sexual).</p>
       <p>Sunt organe anexe (auxiliare): vezicula seminală, glanda prostatică (prostata), glandele bulbouretrale și penisul.</p>
@@ -1527,7 +1627,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   </div>
 
   <section id="hormoni-masculini">
-    <div class="sec-head purple"><div class="num">1</div><h2>22.4. Hormonii masculini</h2></div>
+    <h2 class="section"><span class="sec-num purple">1</span> 22.4. Hormonii masculini</h2>
     <div class="card">
       <p>Nu numai hormonii masculini intervin în procesul de reproducere masculin. Hipofiza anterioară intervine prin secreția a doi hormoni importanți:</p>
       <div class="g2" style="margin:.8rem 0;">
@@ -1551,7 +1651,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   </section>
 
   <section id="testosteron">
-    <div class="sec-head blue"><div class="num">2</div><h2>Testosteronul</h2></div>
+    <h2 class="section"><span class="sec-num blue">2</span> Testosteronul</h2>
     <div class="card">
       <p><strong>Testosteronul</strong>, hormon androgen, reprezintă un hormon sexual masculin sintetizat de către celulele interstițiale ale testiculelor și care prezintă următoarele caracteristici:</p>
       <ul class="ch" style="margin:.7rem 0;">
@@ -2623,6 +2723,48 @@ function setupLessonSearch() {
   var hit = p.get('hit');
   if (q) searchAndScrollTo(decodeURIComponent(q), section, hit);
 })();
+
+// ════ SETTINGS FAB ════
+function toggleSettingsFab(){
+  var panel = document.getElementById('settings-panel');
+  if(panel) panel.classList.toggle('open');
+}
+function syncProgress(){
+  showToast('📱 Funcția de sincronizare va fi disponibilă în curând.');
+  var p = document.getElementById('settings-panel');
+  if(p) p.classList.remove('open');
+}
+function syncFabStates(){
+  var dm = document.getElementById('sfab-dm');
+  var hl = document.getElementById('sfab-hl');
+  if(dm) dm.classList.toggle('on', document.body.classList.contains('dark'));
+  if(hl) hl.classList.toggle('on', typeof hlMode !== 'undefined' && hlMode);
+}
+document.addEventListener('click', function(e){
+  var panel = document.getElementById('settings-panel');
+  var fab   = document.getElementById('settings-fab');
+  if(panel && panel.classList.contains('open') && fab && !panel.contains(e.target) && !fab.contains(e.target)){
+    panel.classList.remove('open');
+  }
+});
+(function(){
+  var origDark = window.toggleDarkMode;
+  if(typeof origDark === 'function'){
+    window.toggleDarkMode = function(){ origDark(); syncFabStates(); };
+  }
+  var origHl = window.toggleHighlighter;
+  if(typeof origHl === 'function'){
+    window.toggleHighlighter = function(){ origHl(); syncFabStates(); };
+  }
+  document.addEventListener('DOMContentLoaded', function(){ syncFabStates(); });
+})();
 </script>
+
+<button id="settings-fab" onclick="toggleSettingsFab()" title="Setări" aria-label="Setări">⚙</button>
+<div id="settings-panel" role="menu" aria-label="Setări lecție">
+  <button class="settings-opt" id="sfab-dm"   onclick="toggleDarkMode()">🌙 Mod noapte</button>
+  <button class="settings-opt" id="sfab-hl"   onclick="toggleHighlighter()">🖊 Evidențiator</button>
+  <button class="settings-opt" id="sfab-sync" onclick="syncProgress()">📱 Transferă progresul</button>
+</div>
 </body>
 </html>
