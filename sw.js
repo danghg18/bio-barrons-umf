@@ -1,9 +1,10 @@
-const CACHE = 'biologie-v7';
+const CACHE = 'biologie-v8';
 const BASE = new URL('./', self.location.href).pathname;
 const ASSETS = [
   BASE + 'index.html',
   BASE + 'sistemul_renal_complet.html',
   BASE + 'sistemul_reproducator_masculin.html',
+  BASE + 'sistemul_reproducator_feminin.html',
   BASE + 'manifest.json',
   BASE + 'icon-192.png',
   BASE + 'icon-512.png',
@@ -21,7 +22,21 @@ const ASSETS = [
   BASE + 'imagini/spermatogeneza_barrons.webp',
   BASE + 'imagini/structura_spermatozoid_barrons.webp',
   BASE + 'imagini/sistem_ducte_barrons.webp',
-  BASE + 'imagini/ducte_organe_masculine_barrons.webp'
+  BASE + 'imagini/ducte_organe_masculine_barrons.webp',
+  BASE + 'img reproducator feminin/ciclul_menstrual_barrons.png.webp',
+  BASE + 'img reproducator feminin/fecundatia_barrons.png.webp',
+  BASE + 'img reproducator feminin/tract_genital_feminin_barrons.png.webp',
+  BASE + 'img reproducator feminin/ovar_lunar_barrons.png.webp',
+  BASE + 'img reproducator feminin/vulva_barrons.png.webp',
+  BASE + 'img reproducator feminin/foite_embrionare_barrons.png.webp',
+  BASE + 'img reproducator feminin/etapele_dezvoltarii_barrons.png.webp',
+  BASE + 'img reproducator feminin/membranele_embrionului_barrons.png.webp',
+  BASE + 'img reproducator feminin/dupa_fecundatie_barrons.png.webp',
+  BASE + 'img reproducator feminin/fat_inainte_nastere_barrons.png.webp',
+  BASE + 'img reproducator feminin/tract_genital_lateral_barrons.png.webp',
+  BASE + 'img reproducator feminin/formare_deav_ovulului_barrons.png.webp',
+  BASE + 'img reproducator feminin/uter_trompe_barrons.png.webp',
+  BASE + 'img reproducator feminin/san_barrons.png.webp'
 ];
 
 self.addEventListener('install', e => {

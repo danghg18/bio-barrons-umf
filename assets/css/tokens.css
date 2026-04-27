@@ -1,0 +1,217 @@
+/* ════════════════════════════════════════════════════════════════
+   Biologie Barrons — Core Tokens
+   Typography, colors, and semantic element styles.
+   Mirrors the live site (danghg18.github.io/bio-barrons-umf).
+   ════════════════════════════════════════════════════════════════ */
+
+/* Webfonts — loaded from Google Fonts (see fonts/README.md for notes) */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  /* ── TYPEFACES ─────────────────────────────────────── */
+  --font-display: 'Figtree', system-ui, -apple-system, sans-serif;  /* headings, buttons, badges, nav */
+  --font-body:    'Noto Sans', system-ui, -apple-system, sans-serif; /* long-form Romanian body copy */
+
+  /* ── PRIMARY (medical blue) ────────────────────────── */
+  --primary:        #2563EB;
+  --primary-light:  #EFF6FF;
+  --primary-mid:    #3B82F6;
+  --primary-dark:   #1E40AF;
+
+  /* ── CATEGORY ACCENTS — 1 per body-system group ────── */
+  --emerald:        #059669;   --emerald-light: #ECFDF5;   /* Excretor + "Complet" success */
+  --teal:           #0891B2;   --teal-light:    #ECFEFF;   /* Bones / Reproductive */
+  --violet:         #7C3AED;   --violet-light:  #F5F3FF;   /* Nervous system */
+  --rose:           #E11D48;   --rose-light:    #FFF1F2;   /* Cardio / destructive */
+  --orange:         #EA580C;   --orange-light:  #FFF7ED;   /* Respiratory / digestive */
+  --amber:          #D97706;   --amber-light:   #FFFBEB;   /* Partial / warning */
+
+  /* ── NEUTRALS (slate scale) ────────────────────────── */
+  --slate-900:      #0F172A;
+  --slate-800:      #1E293B;
+  --slate-700:      #334155;
+  --slate-600:      #475569;
+  --slate-500:      #64748B;
+  --slate-400:      #94A3B8;
+  --slate-300:      #CBD5E1;
+  --slate-200:      #E2E8F0;
+  --slate-100:      #F1F5F9;
+  --slate-50:       #F8FAFC;
+
+  /* ── FOREGROUND / BACKGROUND SEMANTICS ─────────────── */
+  --fg-1:           var(--slate-900);   /* headings */
+  --fg-2:           var(--slate-700);   /* body */
+  --fg-3:           var(--slate-500);   /* secondary / captions */
+  --fg-4:           var(--slate-400);   /* meta, hints */
+  --bg-page:        #EEF2FF;            /* indigo-50 — home page background */
+  --bg-surface:     #FFFFFF;            /* cards, panels */
+  --bg-sunken:      var(--slate-50);    /* inner surfaces */
+  --border:         var(--slate-200);
+
+  /* ── SEMANTIC STATUS ───────────────────────────────── */
+  --ok:             var(--emerald);
+  --ok-bg:          var(--emerald-light);
+  --warn:           var(--amber);
+  --warn-bg:        var(--amber-light);
+  --danger:         var(--rose);
+  --danger-bg:      var(--rose-light);
+
+  /* ── SIGNATURE GRADIENTS ───────────────────────────── */
+  --grad-hero:      linear-gradient(135deg, #1E3A8A 0%, #2563EB 55%, #0EA5E9 100%);
+  --grad-nav:       linear-gradient(160deg, #0B1730 0%, #0F2356 100%);
+  --grad-summary:   linear-gradient(135deg, #1E3A8A, #2563EB);
+  --grad-progress:  linear-gradient(90deg, var(--emerald), #34D399);
+  /* category header gradients */
+  --grad-cat-blue:    linear-gradient(135deg, #1E40AF, #2563EB);
+  --grad-cat-teal:    linear-gradient(135deg, #164E63, #0891B2);
+  --grad-cat-violet:  linear-gradient(135deg, #4C1D95, #7C3AED);
+  --grad-cat-rose:    linear-gradient(135deg, #881337, #E11D48);
+  --grad-cat-orange:  linear-gradient(135deg, #7C2D12, #EA580C);
+  --grad-cat-emerald: linear-gradient(135deg, #064E3B, #059669);
+
+  /* ── RADII ─────────────────────────────────────────── */
+  --r-xs: .5rem;    /* 8px — inputs, tight pills */
+  --r-sm: .65rem;   /* 10px — buttons, option rows */
+  --r-md: .9rem;    /* 14px — cards */
+  --r-lg: 1rem;     /* 16px — larger cards, banners */
+  --r-xl: 1.2rem;   /* 19px — category blocks */
+  --r-2xl: 1.5rem;  /* 24px — hero bottom corners */
+  --r-pill: 2rem;   /* pills, badges, status chips */
+  --r-full: 9999px; /* circles */
+
+  /* ── SHADOWS (two-layer) ───────────────────────────── */
+  --shadow-xs:  0 1px 3px rgba(0,0,0,.04);
+  --shadow-sm:  0 1px 3px rgba(0,0,0,.05), 0 4px 12px rgba(0,0,0,.04);  /* cards */
+  --shadow-md:  0 1px 3px rgba(0,0,0,.05), 0 6px 20px rgba(0,0,0,.06);  /* banners */
+  --shadow-lg:  0 1px 3px rgba(0,0,0,.05), 0 8px 28px rgba(0,0,0,.07);  /* category blocks */
+  --shadow-hover: 0 6px 20px rgba(0,0,0,.10);                            /* card :hover */
+  --shadow-float: 0 3px 12px rgba(37,99,235,.30);                        /* floating action btn */
+
+  /* ── SPACING (rem-based rhythm) ────────────────────── */
+  --space-1: .25rem;
+  --space-2: .5rem;
+  --space-3: .75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+
+  /* ── LAYOUT ────────────────────────────────────────── */
+  --sidebar-w: 256px;
+  --container-max: 1160px;
+  --reading-max: 1080px;
+
+  /* ── MOTION ────────────────────────────────────────── */
+  --ease-default: cubic-bezier(.4, 0, .2, 1);
+  --dur-fast:   .15s;
+  --dur-base:   .2s;
+  --dur-slow:   .3s;
+}
+
+/* ── DARK MODE — triggered by body.dark ─────────────── */
+body.dark {
+  --bg-page:     #0F172A;
+  --bg-surface:  #1E293B;
+  --bg-sunken:   #172033;
+  --border:      #334155;
+  --fg-1:        #E2E8F0;
+  --fg-2:        #CBD5E1;
+  --fg-3:        #94A3B8;
+  --fg-4:        #64748B;
+  --primary-light: #0D2545;
+  --emerald-light: #052E16;
+  --teal-light:    #083344;
+  --violet-light:  #2E1065;
+  --rose-light:    #4C0519;
+  --orange-light:  #431407;
+  --amber-light:   #422006;
+  --slate-50:  #1E293B;
+  --slate-100: #1E293B;
+  --slate-200: #334155;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   BASE + SEMANTIC ELEMENT STYLES
+   ════════════════════════════════════════════════════════════════ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-page);
+  color: var(--fg-2);
+  line-height: 1.7;
+  min-height: 100vh;
+  transition: background var(--dur-slow), color var(--dur-slow);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Display face for headings, buttons, badges, nav, numbers */
+h1, h2, h3, h4, h5, h6,
+.btn, .badge, .pill, .ch-name, .cat-label, .prog-num,
+.page-nav a, .gbtn, .sub {
+  font-family: var(--font-display);
+}
+
+/* Type scale (home/chapter page conventions) */
+h1 { font-size: 2.4rem;  font-weight: 900; letter-spacing: -.5px; line-height: 1.15; }
+h2 { font-size: 1.45rem; font-weight: 900; line-height: 1.25; }
+h3 { font-size: 1rem;    font-weight: 800; line-height: 1.35; }
+h4 { font-size: .93rem;  font-weight: 800; line-height: 1.35; color: var(--fg-1); }
+h5 { font-size: .82rem;  font-weight: 800; line-height: 1.4;  color: var(--fg-3); text-transform: uppercase; letter-spacing: .07em; }
+h6 { font-size: .67rem;  font-weight: 800; line-height: 1.4;  color: var(--fg-4); text-transform: uppercase; letter-spacing: .1em; }
+
+p  { margin-bottom: .6rem; }
+strong { font-weight: 800; color: var(--fg-1); }
+em { font-style: italic; }
+
+/* Links — inline body */
+a { color: var(--primary); text-decoration: none; transition: color var(--dur-base); }
+a:hover { color: var(--primary-dark); }
+
+/* Inline code — sparingly used in the product */
+code {
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  background: var(--slate-100);
+  padding: .08em .35em;
+  border-radius: .3em;
+  font-size: .92em;
+  color: var(--fg-1);
+}
+
+/* Focus ring (used throughout) */
+*:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Figure: figures/diagrams are always framed on white */
+.fig img, .figure img {
+  max-width: 100%;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--border);
+  padding: .6rem;
+  background: #fff;
+  box-shadow: var(--shadow-md);
+}
+.fig figcaption {
+  font-size: .78rem;
+  color: var(--fg-4);
+  margin-top: .6rem;
+  font-style: italic;
+}
+
+/* Tables: blue header row, zebra body */
+table { width: 100%; border-collapse: collapse; font-size: .87rem; }
+th {
+  background: var(--primary);
+  color: #fff;
+  padding: .55rem .85rem;
+  text-align: left;
+  font-weight: 800;
+  font-family: var(--font-display);
+}
+td { padding: .5rem .85rem; border-bottom: 1px solid var(--border); }
+tr:nth-child(even) td { background: var(--bg-sunken); }

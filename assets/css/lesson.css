@@ -1,0 +1,367 @@
+/* ════════════════════════════════════════════════════════════════
+   Biologie Barrons — Lesson + Grile brand uplift overlay.
+   Loads AFTER tokens.css and the page's inline styles.
+   Brings existing markup vocabulary (.hero, .box, .gbtn, .acc-*,
+   .opt) into precise alignment with the brand kit (kit-styles.css).
+   ════════════════════════════════════════════════════════════════ */
+
+/* ── HERO — signature blue gradient banner (kit .site-header) ── */
+.hero {
+  background: var(--grad-hero) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 0 0 var(--r-2xl) var(--r-2xl) !important;
+  padding: 2.6rem 2.5rem 2.2rem !important;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-md) !important;
+}
+.hero::before {
+  content: '' !important;
+  position: absolute !important;
+  top: -90px !important; right: -80px !important;
+  left: auto !important; bottom: auto !important;
+  width: 300px !important; height: 300px !important;
+  background: rgba(255,255,255,.06) !important;
+  border-radius: 50% !important;
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -100px; left: -60px;
+  width: 240px; height: 240px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.04);
+  pointer-events: none;
+}
+.hero h1 {
+  color: #fff !important;
+  font-family: var(--font-display);
+  font-size: 2.2rem !important;
+  font-weight: 900;
+  letter-spacing: -.5px;
+  line-height: 1.12;
+  margin: 0 0 .6rem;
+  position: relative;
+}
+.hero p {
+  color: rgba(255,255,255,.92) !important;
+  font-family: var(--font-body);
+  max-width: 56ch;
+  margin: 0;
+  position: relative;
+  font-weight: 500;
+}
+
+/* Hero badge pills — glassy white-on-gradient (kit .sub style) */
+.hero .badges { margin-top: 1rem; gap: .4rem; position: relative; }
+.hero .badge,
+.hero .badges .badge {
+  background: rgba(255,255,255,.15) !important;
+  border: 1px solid rgba(255,255,255,.28) !important;
+  color: #fff !important;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: .76rem;
+  letter-spacing: .04em;
+  padding: .28rem .85rem !important;
+  border-radius: var(--r-pill) !important;
+  text-transform: none;
+}
+
+/* Dark mode: hero stays its blue gradient (signature element) */
+body.dark .hero { background: var(--grad-hero) !important; }
+body.dark .hero h1 { color: #fff !important; }
+body.dark .hero p { color: rgba(255,255,255,.92) !important; }
+
+/* ── CALLOUT BOX — kit .box pattern, color-keyed ── */
+.box {
+  border-left: 4px solid var(--primary);
+  background: var(--primary-light);
+  padding: .95rem 1.25rem;
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+  margin: 1rem 0;
+  font-size: .94rem;
+  line-height: 1.65;
+  box-shadow: none;
+}
+.box b, .box strong:first-child {
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: var(--fg-1);
+  display: block;
+  margin-bottom: .25rem;
+}
+.box.blue    { border-left-color: var(--primary);  background: var(--primary-light); }
+.box.green,
+.box.emerald { border-left-color: var(--emerald);  background: var(--emerald-light); }
+.box.orange  { border-left-color: var(--orange);   background: var(--orange-light); }
+.box.purple,
+.box.violet  { border-left-color: var(--violet);   background: var(--violet-light); }
+.box.teal    { border-left-color: var(--teal);     background: var(--teal-light); }
+.box.red,
+.box.rose    { border-left-color: var(--rose);     background: var(--rose-light); }
+.box.amber   { border-left-color: var(--amber);    background: var(--amber-light); }
+
+/* ── CARDS — adopt kit shadow recipe ── */
+.card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem;
+  margin-bottom: 1.4rem;
+  transition: box-shadow var(--dur-base);
+}
+
+/* ── SECTION HEAD — colored numeric prefix ── */
+.sec-head .num {
+  font-family: var(--font-display);
+  font-weight: 900;
+  border-radius: var(--r-xs);
+}
+
+/* ── FIGURES — framed white with kit shadow ── */
+.fig img,
+.figure img {
+  border-radius: var(--r-lg);
+  border: 1px solid var(--border);
+  padding: .6rem;
+  background: #fff;
+  box-shadow: var(--shadow-md);
+}
+body.dark .fig img,
+body.dark .figure img { background: #fff; }
+.fig figcaption,
+.fig .caption {
+  font-family: var(--font-body);
+  font-size: .82rem;
+  color: var(--fg-4);
+  margin-top: .6rem;
+  font-style: italic;
+  text-align: center;
+}
+
+/* ── BUTTONS — kit .btn family applied to .gbtn ── */
+.gbtn {
+  font-family: var(--font-display);
+  font-weight: 800;
+  border-radius: var(--r-sm);
+  transition: all var(--dur-base);
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+}
+.gbtn-primary { background: var(--primary); color: #fff; border: none; }
+.gbtn-primary:hover { background: var(--primary-mid); transform: translateY(-1px); }
+.gbtn-secondary {
+  background: var(--bg-surface);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+.gbtn-secondary:hover { background: var(--primary-light); }
+.gbtn-danger { background: var(--danger); color: #fff; border: none; }
+.gbtn-danger:hover { filter: brightness(1.08); }
+
+/* ── QUIZ OPTIONS — kit .opt states (used on grile pages) ── */
+.opt,
+.q-opt {
+  display: flex;
+  align-items: flex-start;
+  gap: .75rem;
+  padding: .7rem .9rem;
+  border: 2px solid var(--border);
+  border-radius: var(--r-sm);
+  margin-bottom: .5rem;
+  cursor: pointer;
+  background: var(--bg-surface);
+  transition: all var(--dur-fast);
+}
+.opt:hover,
+.q-opt:hover { border-color: var(--primary); background: var(--primary-light); }
+.opt .l, .q-opt .letter {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: var(--slate-100);
+  border: 2px solid var(--border);
+  display: inline-flex;
+  align-items: center; justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: .82rem;
+  color: var(--fg-3);
+  flex-shrink: 0;
+  transition: all var(--dur-fast);
+}
+.opt.sel,  .q-opt.sel,  .q-opt.selected { border-color: var(--primary); background: var(--primary-light); }
+.opt.sel .l, .q-opt.sel .letter, .q-opt.selected .letter { background: var(--primary); border-color: var(--primary); color: #fff; }
+.opt.ok,   .q-opt.correct { border-color: var(--emerald); background: var(--emerald-light); cursor: default; }
+.opt.ok .l, .q-opt.correct .letter { background: var(--emerald); border-color: var(--emerald); color: #fff; }
+.opt.no,   .q-opt.wrong   { border-color: var(--rose); background: var(--rose-light); cursor: default; }
+.opt.no .l, .q-opt.wrong .letter { background: var(--rose); border-color: var(--rose); color: #fff; }
+.opt.miss, .q-opt.missed  { border-color: var(--amber); background: var(--amber-light); cursor: default; }
+.opt.miss .l, .q-opt.missed .letter { background: var(--amber); border-color: var(--amber); color: #fff; }
+
+/* Answer state legend chips on grile */
+.badge-correct { background: var(--emerald-light); color: var(--emerald); }
+.badge-wrong   { background: var(--rose-light);    color: var(--rose); }
+.badge-partial { background: var(--amber-light);   color: var(--amber); }
+
+/* ── EXPLAIN PANEL ── */
+.explanation,
+.quiz-explain,
+.expl-body {
+  background: var(--primary-light);
+  border-left: 4px solid var(--primary);
+  padding: .95rem 1.2rem;
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+  margin-top: 1rem;
+  font-family: var(--font-body);
+  font-size: .9rem;
+  line-height: 1.65;
+}
+.explanation strong,
+.quiz-explain strong,
+.expl-body strong { color: var(--primary-dark); font-family: var(--font-display); font-weight: 800; }
+
+/* ── PROGRESS BAR — kit gradient fill ── */
+.prog-bar-fill,
+.prog-fill,
+.progress-bar > .fill,
+.lab-prog-bar-fill {
+  background: var(--grad-progress) !important;
+  border-radius: var(--r-pill);
+  transition: width .5s var(--ease-default);
+}
+
+/* ── FLOATING ACTION BUTTON (Settings) ── */
+.fab,
+#dm-btn,
+.lab-fab {
+  background: var(--primary) !important;
+  color: #fff !important;
+  border: none !important;
+  width: 52px !important; height: 52px !important;
+  border-radius: 50% !important;
+  box-shadow: var(--shadow-float) !important;
+  transition: transform var(--dur-base);
+  font-size: 1.3rem;
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.fab:hover,
+#dm-btn:hover,
+.lab-fab:hover { transform: scale(1.05); }
+
+/* ── ACCORDION (mind-map / details panels) ── */
+.acc, .accordion {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  margin-bottom: .6rem;
+  box-shadow: none;
+  overflow: hidden;
+}
+.acc-head, .accordion-head {
+  width: 100%;
+  padding: .75rem 1rem;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: .92rem;
+  color: var(--fg-1);
+  background: var(--bg-surface);
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background var(--dur-fast);
+}
+.acc-head:hover, .accordion-head:hover { background: var(--slate-50); }
+.acc-body, .accordion-body {
+  padding: .85rem 1rem 1rem;
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border);
+  font-family: var(--font-body);
+  font-size: .9rem;
+  color: var(--fg-2);
+  line-height: 1.7;
+}
+
+/* ── SEMANTIC PILLS / KEYWORD HIGHLIGHTS ── */
+.kterm, .keyword {
+  display: inline-block;
+  padding: 0 .55rem;
+  border-radius: var(--r-pill);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: .85em;
+  background: var(--amber-light);
+  color: var(--amber);
+}
+
+/* ── ENUMERATED LISTS — circled numerals (kit .enum) ── */
+.enum {
+  list-style: none;
+  padding-left: 0;
+  margin: .8rem 0;
+}
+.enum li {
+  position: relative;
+  padding: .45rem 0 .45rem 2.2rem;
+  font-size: .94rem;
+}
+.enum li::before {
+  content: attr(data-n);
+  position: absolute;
+  left: 0; top: .42rem;
+  width: 1.5rem; height: 1.5rem;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: .76rem;
+  display: inline-flex;
+  align-items: center; justify-content: center;
+}
+
+/* ── TOPBAR (lab-topbar legacy) — keep clean & branded ── */
+.lab-topbar {
+  background: rgba(246, 246, 243, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+body.dark .lab-topbar {
+  background: rgba(15, 23, 42, 0.92);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+/* ── TABLES (kit pattern) ── */
+.card table th {
+  background: var(--primary);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 800;
+  padding: .55rem .85rem;
+  text-align: left;
+}
+.card table td {
+  padding: .5rem .85rem;
+  border-bottom: 1px solid var(--border);
+  font-family: var(--font-body);
+}
+.card table tr:nth-child(even) td { background: var(--bg-sunken); }
+
+/* ── DARK-MODE TWEAKS ── */
+body.dark .card { background: var(--bg-surface); border-color: var(--border); }
+body.dark .box.blue    { background: rgba(37,99,235,.12); }
+body.dark .box.green,
+body.dark .box.emerald { background: rgba(5,150,105,.14); }
+body.dark .box.orange  { background: rgba(234,88,12,.14); }
+body.dark .box.violet,
+body.dark .box.purple  { background: rgba(124,58,237,.14); }
+body.dark .box.teal    { background: rgba(8,145,178,.14); }
+body.dark .box.red,
+body.dark .box.rose    { background: rgba(225,29,72,.14); }
+body.dark .opt, body.dark .q-opt { background: var(--bg-surface); border-color: var(--border); }

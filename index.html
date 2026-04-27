@@ -19,6 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/tokens.css">
 <style>
 :root{
   --primary:#2563EB;--primary-mid:#3B82F6;--primary-dark:#1E40AF;--primary-light:#EFF6FF;
@@ -654,8 +655,8 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
           <div class="lab-bento-cat-blurb">Gametogeneză, hormoni sexuali, ciclu reproductiv.</div>
         </div>
         <div class="lab-bento-cat-ring">
-          <svg class="cat-ring" data-done="1" data-total="2" data-color="#0891B2" width="52" height="52" style="display:block"></svg>
-          <div class="lab-bento-cat-ring-inner">1/2</div>
+          <svg class="cat-ring" data-done="2" data-total="2" data-color="#0891B2" width="52" height="52" style="display:block"></svg>
+          <div class="lab-bento-cat-ring-inner">2/2</div>
         </div>
       </div>
       <div class="lab-bento-items">
@@ -670,7 +671,17 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>
           </div>
         </a>
-        <button class="lab-item lab-item-soon"><div class="lab-item-num">23</div><div class="lab-item-emoji">♀️</div><div><div class="lab-item-title">Sistemul reproducător feminin</div><div class="lab-item-tags"><span>Ovogeneză</span><span>Estrogen</span><span>Ciclu menstrual</span><span>Sarcină</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <a href="sistemul_reproducator_feminin.html" class="lab-item lab-item-done">
+          <div class="lab-item-num">23</div>
+          <div class="lab-item-emoji">♀️</div>
+          <div>
+            <div class="lab-item-title">Sistemul reproducător feminin</div>
+            <div class="lab-item-tags"><span>Ovogeneză</span><span>Estrogen</span><span>Ciclu menstrual</span><span>Sarcină</span></div>
+          </div>
+          <div class="lab-item-done-mark">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>
+          </div>
+        </a>
       </div>
     </div>
 
@@ -852,7 +863,7 @@ const CHAPTERS=[
   {num:20,icon:'🫘',name:'Sistemul urinar',cat:'Sistemul Excretor & Echilibru Intern',color:'#059669',colorLight:'#ECFDF5',done:true,url:'sistemul_renal_complet.html',kw:'rinichi nefron glomerul bowman filtrare reabsorbtie ADH aldosteron uree creatinina urina RFG tubul contort TCP TCD ansa henle'},
   {num:21,icon:'💧',name:'Echilibrul hidro-electrolitic și acido-bazic',cat:'Sistemul Excretor & Echilibru Intern',color:'#059669',colorLight:'#ECFDF5',done:false,kw:'sodiu potasiu clor pH tampon acidoza alcaloza osmolaritate'},
   {num:22,icon:'♂️',name:'Sistemul reproducător masculin',cat:'Sistemul Reproducător',color:'#0891B2',colorLight:'#ECFEFF',done:true,url:'sistemul_reproducator_masculin.html',kw:'testicul spermatogeneza sperma FSH LH testosteron epididim vas deferens prostata'},
-  {num:23,icon:'♀️',name:'Sistemul reproducător feminin',cat:'Sistemul Reproducător',color:'#0891B2',colorLight:'#ECFEFF',done:false,kw:'ovar ovulatie menstruatie estrogen progesteron uter trompe sarcina'},
+  {num:23,icon:'♀️',name:'Sistemul reproducător feminin',cat:'Sistemul Reproducător',color:'#0891B2',colorLight:'#ECFEFF',done:true,url:'sistemul_reproducator_feminin.html',kw:'ovar ovulatie menstruatie estrogen progesteron uter trompe sarcina oogeneza fecundatie placenta embrion fat vulva glande mamare'},
 ];
 
 const SEARCHABLE_CHAPTERS = CHAPTERS.filter(c => c.done && c.url);
