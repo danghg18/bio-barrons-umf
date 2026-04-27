@@ -3004,3 +3004,558 @@ body.bb-chapter-redesign #settings-fab {
     padding: 0.28rem 0.5rem !important;
   }
 }
+
+/* Absolute-final compact topbar normalization. */
+body.bb-chapter-redesign.bb-compact-topbar .lab-topbar-inner,
+body.bb-chapter-redesign.bb-no-lesson-search .lab-topbar-inner {
+  grid-template-columns: 190px minmax(120px, 180px) minmax(0, 1fr) 178px !important;
+}
+
+body.bb-chapter-redesign.bb-compact-topbar .lab-nav {
+  grid-column: 2 !important;
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  width: 132px !important;
+  justify-self: center !important;
+  min-width: 0 !important;
+}
+
+body.bb-chapter-redesign.bb-compact-topbar .lab-nav a {
+  display: inline-flex !important;
+  min-height: 38px !important;
+  padding: 0.45rem 1rem !important;
+}
+
+body.bb-chapter-redesign .lab-nav .bb-topbar-extra-link {
+  display: none !important;
+}
+
+body.bb-chapter-redesign.bb-compact-topbar .lab-topbar-back,
+body.bb-chapter-redesign.bb-no-lesson-search .lab-topbar-back {
+  grid-column: 4 !important;
+  justify-self: end !important;
+}
+
+body.bb-chapter-redesign.bb-compact-topbar .lesson-search,
+body.bb-chapter-redesign.bb-no-lesson-search .lesson-search {
+  display: none !important;
+}
+
+@media (max-width: 1024px) {
+  body.bb-chapter-redesign.bb-compact-topbar .lab-topbar-inner,
+  body.bb-chapter-redesign.bb-no-lesson-search .lab-topbar-inner {
+    grid-template-columns: minmax(0, 1fr) auto !important;
+  }
+
+  body.bb-chapter-redesign.bb-compact-topbar .lab-nav,
+  body.bb-chapter-redesign.bb-compact-topbar .lab-topbar-back,
+  body.bb-chapter-redesign.bb-no-lesson-search .lab-topbar-back {
+    display: none !important;
+  }
+}
+
+body.bb-chapter-redesign .brand-star {
+  display: block;
+}
+
+body.bb-chapter-redesign .brand-menu {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  body.bb-chapter-redesign .brand-star {
+    display: none !important;
+  }
+
+  body.bb-chapter-redesign .brand-menu {
+    display: block !important;
+  }
+}
+
+/* Final content parity with the masculine chapter layout. */
+body.bb-chapter-redesign .page-section > section {
+  margin: 0 0 1.85rem !important;
+}
+
+body.bb-chapter-redesign h2.section {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.55rem !important;
+  margin: 2rem 0 1rem !important;
+  padding: 0 !important;
+  border: 0 !important;
+  color: #0f172a !important;
+  font-size: 1.55rem !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.03em !important;
+  line-height: 1.25 !important;
+}
+
+body.bb-chapter-redesign .sec-num {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex: 0 0 auto !important;
+  width: 2rem !important;
+  height: 2rem !important;
+  margin: 0 !important;
+  border-radius: 0.5rem !important;
+  color: #fff !important;
+  background: var(--bb-new-accent) !important;
+  font-size: 0.85rem !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+}
+
+body.bb-chapter-redesign .sec-num.blue {
+  background: var(--blue) !important;
+}
+
+body.bb-chapter-redesign .sec-num.green {
+  background: var(--green) !important;
+}
+
+body.bb-chapter-redesign .sec-num.orange {
+  background: var(--orange) !important;
+}
+
+body.bb-chapter-redesign .sec-num.purple {
+  background: var(--purple) !important;
+}
+
+body.bb-chapter-redesign .sec-num.teal {
+  background: var(--teal) !important;
+}
+
+body.bb-chapter-redesign .sec-num.red {
+  background: var(--red) !important;
+}
+
+body.bb-chapter-redesign .card,
+body.bb-chapter-redesign .summary,
+body.bb-chapter-redesign .chapter-flow {
+  padding: 1.5rem 1.6rem !important;
+  border-radius: 24px !important;
+}
+
+body.bb-chapter-redesign .card h2,
+body.bb-chapter-redesign .summary h3,
+body.bb-chapter-redesign .chapter-flow h2 {
+  margin: 0 0 1rem !important;
+  color: #0f172a !important;
+  font-size: 1.35rem !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.035em !important;
+  line-height: 1.2 !important;
+}
+
+body.bb-chapter-redesign .summary h3 {
+  color: var(--bb-new-accent) !important;
+}
+
+body.bb-chapter-redesign .card p,
+body.bb-chapter-redesign .summary li,
+body.bb-chapter-redesign .card li {
+  color: #475569 !important;
+  font-size: 0.98rem !important;
+  line-height: 1.72 !important;
+}
+
+body.bb-chapter-redesign .card p {
+  margin: 0 0 0.85rem !important;
+}
+
+body.bb-chapter-redesign .card p:last-child {
+  margin-bottom: 0 !important;
+}
+
+body.bb-chapter-redesign .card strong,
+body.bb-chapter-redesign .summary strong {
+  color: #0f172a !important;
+  font-weight: 900 !important;
+}
+
+body.bb-chapter-redesign ul.ch {
+  list-style: none !important;
+  margin: 0.55rem 0 !important;
+  padding: 0 !important;
+}
+
+body.bb-chapter-redesign ul.ch li {
+  position: relative !important;
+  padding: 0.22rem 0 0.22rem 1.35rem !important;
+}
+
+body.bb-chapter-redesign ul.ch li::before {
+  content: "✓" !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0.22rem !important;
+  color: var(--bb-new-accent) !important;
+  font-weight: 900 !important;
+}
+
+body.bb-chapter-redesign .g2,
+body.bb-chapter-redesign .g3 {
+  gap: 1rem !important;
+}
+
+body.bb-chapter-redesign .box:not(.map-card) {
+  border-left-width: 4px !important;
+  border-left-style: solid !important;
+  border-radius: 18px !important;
+  padding: 1rem 1.1rem !important;
+  margin: 0.75rem 0 !important;
+  background: rgba(248, 250, 252, 0.92) !important;
+  color: #475569 !important;
+  font-size: 0.94rem !important;
+  line-height: 1.62 !important;
+  box-shadow: none !important;
+}
+
+body.bb-chapter-redesign .box:not(.map-card) strong {
+  display: block !important;
+  margin-bottom: 0.18rem !important;
+}
+
+body.bb-chapter-redesign .fig {
+  max-width: 680px !important;
+  margin: 1.6rem auto !important;
+  text-align: center !important;
+}
+
+body.bb-chapter-redesign .fig img,
+body.bb-chapter-redesign .img-txt img {
+  max-width: 100% !important;
+  padding: 0.85rem !important;
+  background: #fff !important;
+  border: 1px solid rgba(15, 23, 42, 0.08) !important;
+  border-radius: 22px !important;
+  box-shadow: none !important;
+}
+
+body.bb-chapter-redesign .fig figcaption {
+  margin-top: 0.6rem !important;
+  color: #94a3b8 !important;
+  font-size: 0.78rem !important;
+  font-style: italic !important;
+  line-height: 1.55 !important;
+}
+
+body.bb-chapter-redesign .chapter-map.card {
+  padding: 1.5rem 1.6rem !important;
+}
+
+body.bb-chapter-redesign .chapter-map .map-card {
+  border-left: 1px solid rgba(15, 23, 42, 0.08) !important;
+  border-radius: 22px !important;
+  margin: 0 !important;
+  padding: 1.35rem 1.35rem 1.4rem !important;
+  font-size: 1rem !important;
+  line-height: 1.55 !important;
+}
+
+body.bb-chapter-redesign .chapter-map .map-card strong {
+  display: block !important;
+  margin: 0.25rem 0 0.7rem !important;
+  color: var(--map-accent) !important;
+  font-size: 1.2rem !important;
+  letter-spacing: -0.025em !important;
+  line-height: 1.15 !important;
+}
+
+body.bb-chapter-redesign .chapter-map .map-card p,
+body.bb-chapter-redesign .chapter-map .map-card {
+  color: #64748b !important;
+}
+
+body.bb-chapter-redesign .flow {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 0.65rem !important;
+  margin: 0.8rem 0 !important;
+}
+
+body.bb-chapter-redesign .fb {
+  border: 1px solid rgba(15, 23, 42, 0.08) !important;
+  border-radius: 999px !important;
+  padding: 0.45rem 0.82rem !important;
+  background: #fff !important;
+  font-size: 0.82rem !important;
+  font-weight: 900 !important;
+  line-height: 1.2 !important;
+}
+
+body.bb-chapter-redesign .fa {
+  color: #cbd5e1 !important;
+  font-size: 1rem !important;
+}
+
+@media (max-width: 760px) {
+  body.bb-chapter-redesign h2.section {
+    font-size: 1.22rem !important;
+  }
+
+  body.bb-chapter-redesign .card,
+  body.bb-chapter-redesign .summary,
+  body.bb-chapter-redesign .chapter-flow {
+    padding: 1.1rem !important;
+    border-radius: 20px !important;
+  }
+}
+
+/* Final search/settings behavior requested in review comments. */
+body.bb-chapter-redesign #settings-fab,
+body.bb-chapter-redesign #settings-panel,
+body.bb-chapter-redesign #nav-search-btn {
+  display: none !important;
+}
+
+body.bb-chapter-redesign .lab-topbar-inner {
+  position: relative !important;
+  grid-template-columns: 190px minmax(0, 1fr) auto 178px !important;
+  min-height: 58px !important;
+}
+
+body.bb-chapter-redesign .lab-brand {
+  position: absolute !important;
+  top: 50% !important;
+  left: 24px !important;
+  transform: translateY(-50%) !important;
+  z-index: 2 !important;
+}
+
+body.bb-chapter-redesign .lab-nav {
+  grid-column: 1 / -1 !important;
+  justify-self: center !important;
+  z-index: 1 !important;
+}
+
+body.bb-chapter-redesign .lab-topbar-back {
+  position: absolute !important;
+  top: 50% !important;
+  right: 24px !important;
+  transform: translateY(-50%) !important;
+  z-index: 2 !important;
+}
+
+body.bb-chapter-redesign .lesson-search {
+  grid-column: 3 !important;
+  justify-self: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0 !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: auto !important;
+  right: clamp(210px, 18vw, 260px) !important;
+  transform: translateY(-50%) !important;
+  min-width: 46px !important;
+  width: 46px !important;
+  height: 46px !important;
+  margin-left: 0 !important;
+  pointer-events: auto !important;
+  background: #fff !important;
+  border: 1px solid rgba(15, 23, 42, 0.08) !important;
+  border-radius: 999px !important;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06) !important;
+  overflow: hidden !important;
+  z-index: 2 !important;
+  transition: width 0.2s ease, margin-left 0.2s ease, background-color 0.18s ease, border-color 0.18s ease !important;
+}
+
+body.bb-chapter-redesign .lesson-search.open {
+  width: min(300px, 28vw) !important;
+  margin-left: 0 !important;
+}
+
+body.bb-chapter-redesign.bb-compact-topbar .lesson-search,
+body.bb-chapter-redesign.bb-no-lesson-search .lesson-search {
+  display: flex !important;
+}
+
+body.bb-chapter-redesign .lesson-search-trigger {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 46px !important;
+  height: 46px !important;
+  min-width: 46px !important;
+  padding: 0 !important;
+  border-radius: 999px !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: #64748b !important;
+  box-shadow: none !important;
+  cursor: pointer !important;
+  transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease !important;
+}
+
+body.bb-chapter-redesign .lesson-search-trigger:hover,
+body.bb-chapter-redesign .lesson-search.open .lesson-search-trigger {
+  background: transparent !important;
+  color: var(--bb-new-accent) !important;
+}
+
+body.bb-chapter-redesign .lesson-search:not(.open) .lesson-search-panel {
+  display: flex !important;
+  width: 0 !important;
+  max-width: 0 !important;
+  min-width: 0 !important;
+  height: 46px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  opacity: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+  transform: scale(0.96) !important;
+  box-shadow: none !important;
+}
+
+body.bb-chapter-redesign .lesson-search.open .lesson-search-panel {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  flex: 1 1 auto !important;
+  width: auto !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  height: 46px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  opacity: 1 !important;
+  overflow: visible !important;
+  pointer-events: auto !important;
+  transform: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+body.bb-chapter-redesign .lesson-search.open .lesson-search-box {
+  min-width: 0 !important;
+  height: 46px !important;
+  padding: 0.35rem 0.45rem 0.35rem 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+body.bb-chapter-redesign .lesson-search.open .lesson-search-box > svg {
+  display: none !important;
+}
+
+body.bb-chapter-redesign #bb-sidebar-settings {
+  display: block !important;
+}
+
+body.bb-chapter-redesign #bb-sidebar-settings .nav-divider {
+  margin: 0.85rem 1.05rem !important;
+}
+
+body.bb-chapter-redesign #bb-sidebar-settings .nav-group-label {
+  color: #94a3b8 !important;
+}
+
+body.bb-chapter-redesign #nav-dm-btn,
+body.bb-chapter-redesign #nav-hl-btn {
+  display: flex !important;
+  align-items: center !important;
+  min-height: 40px !important;
+  margin: 0.08rem 0.88rem !important;
+  padding: 0.58rem 0.78rem !important;
+  border: 0 !important;
+  border-radius: 6px !important;
+  background: transparent !important;
+  color: #64748b !important;
+  box-shadow: none !important;
+  font-size: 0.84rem !important;
+  font-weight: 800 !important;
+}
+
+body.bb-chapter-redesign #nav-dm-btn:hover,
+body.bb-chapter-redesign #nav-hl-btn:hover,
+body.bb-chapter-redesign #nav-dm-btn.on,
+body.bb-chapter-redesign #nav-hl-btn.on,
+body.bb-chapter-redesign #nav-hl-btn.hl-on {
+  background: var(--bb-new-accent-light) !important;
+  color: var(--bb-new-accent) !important;
+}
+
+body.bb-chapter-redesign #nav-dm-btn .dot,
+body.bb-chapter-redesign #nav-hl-btn .dot {
+  background: currentColor !important;
+  opacity: 0.55 !important;
+}
+
+body.bb-chapter-redesign .search-found {
+  background: #fef08a !important;
+  border-radius: 4px !important;
+  outline: 2px solid rgba(245, 158, 11, 0.24) !important;
+}
+
+body.bb-chapter-redesign .search-found-current {
+  background: #f59e0b !important;
+  color: #111827 !important;
+  outline: 3px solid rgba(245, 158, 11, 0.36) !important;
+}
+
+body.bb-chapter-redesign .lab-brand-mark .brand-star {
+  display: block !important;
+}
+
+body.bb-chapter-redesign .lab-brand-mark .brand-menu {
+  display: none !important;
+}
+
+@media (max-width: 1024px) {
+  body.bb-chapter-redesign .lab-brand-mark .brand-star {
+    display: none !important;
+  }
+
+  body.bb-chapter-redesign .lab-brand-mark .brand-menu {
+    display: block !important;
+  }
+
+  body.bb-chapter-redesign .lesson-search {
+    grid-column: 2 !important;
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    justify-self: end !important;
+    margin-left: 0 !important;
+  }
+
+  body.bb-chapter-redesign .lab-brand {
+    position: static !important;
+    transform: none !important;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-back {
+    position: static !important;
+    transform: none !important;
+  }
+
+  body.bb-chapter-redesign .lesson-search.open {
+    position: fixed !important;
+    top: 70px !important;
+    left: 12px !important;
+    right: 12px !important;
+    z-index: 220 !important;
+    width: auto !important;
+    margin-left: 0 !important;
+  }
+
+  body.bb-chapter-redesign .lesson-search.open .lesson-search-trigger {
+    display: inline-flex !important;
+  }
+
+  body.bb-chapter-redesign .lesson-search.open .lesson-search-panel {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+  }
+}
