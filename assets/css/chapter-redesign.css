@@ -3916,3 +3916,83 @@ body.bb-chapter-redesign .lab-topbar-actions .lesson-search-trigger {
     z-index: 220 !important;
   }
 }
+
+/* ===========================================================
+   Mobile/tablet responsive refinements
+   - Stack horizontal flow chains vertically with down arrows
+   - Wrap long pill text instead of overflowing
+   - Tighten spacing on small viewports
+   =========================================================== */
+
+body.bb-chapter-redesign .fb {
+  white-space: normal !important;
+  word-break: break-word !important;
+  overflow-wrap: anywhere !important;
+  text-align: center !important;
+  max-width: 100% !important;
+}
+
+@media (max-width: 600px) {
+  body.bb-chapter-redesign .flow {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.4rem !important;
+  }
+
+  body.bb-chapter-redesign .flow .fb {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  body.bb-chapter-redesign .flow .fa {
+    display: block !important;
+    text-align: center !important;
+    transform: rotate(90deg) !important;
+    line-height: 1 !important;
+    margin: 0 auto !important;
+    color: #94a3b8 !important;
+  }
+}
+
+/* Prevent any stray horizontal scroll on small screens. */
+@media (max-width: 600px) {
+  html, body {
+    overflow-x: hidden !important;
+  }
+
+  body.bb-chapter-redesign img,
+  body.bb-chapter-redesign svg,
+  body.bb-chapter-redesign video {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  body.bb-chapter-redesign table {
+    display: block !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+}
+
+/* Tablet refinements: keep pill text readable, prevent topbar squeeze. */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body.bb-chapter-redesign .flow {
+    gap: 0.5rem !important;
+  }
+
+  body.bb-chapter-redesign .fb {
+    font-size: 0.85rem !important;
+  }
+}
+
+/* Mobile pagination buttons: allow label to shrink/wrap so they don't overflow. */
+@media (max-width: 480px) {
+  body.bb-chapter-redesign .pagination-controls .gbtn {
+    padding-left: 0.6rem !important;
+    padding-right: 0.6rem !important;
+    font-size: 0.86rem !important;
+    white-space: normal !important;
+    line-height: 1.2 !important;
+  }
+}
+
