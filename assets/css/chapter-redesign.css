@@ -3559,3 +3559,360 @@ body.bb-chapter-redesign .lab-brand-mark .brand-menu {
     min-width: 0 !important;
   }
 }
+
+/* Shared lesson topbar refinements: compact back action + in-field search navigation. */
+body.bb-chapter-redesign .lab-topbar-back {
+  min-height: 40px !important;
+  padding: 0.5rem 0.82rem !important;
+  border: 1px solid rgba(148, 163, 184, 0.2) !important;
+  border-radius: 999px !important;
+  background: linear-gradient(180deg, rgba(248, 250, 252, 0.92), rgba(241, 245, 249, 0.86)) !important;
+  color: #64748b !important;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06) !important;
+  font-size: 0.86rem !important;
+  font-weight: 850 !important;
+  gap: 0.46rem !important;
+}
+
+body.bb-chapter-redesign .lab-topbar-back-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 1.45rem !important;
+  height: 1.45rem !important;
+  border-radius: 999px !important;
+  background: rgba(148, 163, 184, 0.14) !important;
+  color: inherit !important;
+  font-size: 1.08rem !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+}
+
+body.bb-chapter-redesign .lab-topbar-back-label {
+  display: inline-block !important;
+}
+
+body.bb-chapter-redesign .lab-topbar-back:hover {
+  border-color: color-mix(in srgb, var(--chapter-accent) 20%, rgba(148, 163, 184, 0.22)) !important;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), var(--chapter-accent-light)) !important;
+  color: var(--chapter-accent-dark) !important;
+  transform: translateY(calc(-50% - 1px)) !important;
+}
+
+body.bb-dark.bb-chapter-redesign .lab-topbar-back,
+body.dark.bb-chapter-redesign .lab-topbar-back {
+  border-color: rgba(148, 163, 184, 0.16) !important;
+  background: linear-gradient(180deg, rgba(30, 41, 59, 0.88), rgba(15, 23, 42, 0.9)) !important;
+  color: #cbd5e1 !important;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2) !important;
+}
+
+body.bb-dark.bb-chapter-redesign .lab-topbar-back:hover,
+body.dark.bb-chapter-redesign .lab-topbar-back:hover {
+  background: linear-gradient(180deg, rgba(30, 41, 59, 0.96), rgba(14, 116, 144, 0.18)) !important;
+  color: #e2e8f0 !important;
+}
+
+@media (min-width: 1025px) {
+  body.bb-chapter-redesign .lesson-search {
+    right: clamp(154px, 13vw, 178px) !important;
+    width: 42px !important;
+    min-width: 42px !important;
+    height: 42px !important;
+  }
+
+  body.bb-chapter-redesign .lesson-search.open {
+    width: min(430px, 34vw) !important;
+  }
+
+  body.bb-chapter-redesign .lesson-search-trigger {
+    width: 42px !important;
+    min-width: 42px !important;
+    height: 42px !important;
+  }
+}
+
+body.bb-chapter-redesign .lesson-search.open .lesson-search-panel {
+  min-width: 0 !important;
+}
+
+body.bb-chapter-redesign .lesson-search.open .lesson-search-box {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.42rem !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  padding-right: 0.42rem !important;
+}
+
+body.bb-chapter-redesign .lesson-search.open .lesson-search-box input {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+}
+
+body.bb-chapter-redesign .lesson-search .lesson-search-count,
+body.bb-chapter-redesign .lesson-search .lesson-search-nav,
+body.bb-chapter-redesign .lesson-search .lesson-search-close {
+  display: none !important;
+}
+
+body.bb-chapter-redesign .lesson-search.open.has-query .lesson-search-count {
+  display: inline-flex !important;
+  flex: 0 0 auto !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 42px !important;
+  color: #64748b !important;
+  font-size: 0.72rem !important;
+  font-weight: 850 !important;
+  white-space: nowrap !important;
+}
+
+body.bb-chapter-redesign .lesson-search.open.has-results .lesson-search-nav {
+  display: inline-flex !important;
+  flex: 0 0 auto !important;
+  align-items: center !important;
+  gap: 0.22rem !important;
+}
+
+body.bb-chapter-redesign .lesson-search.open.has-query .lesson-search-close {
+  display: inline-flex !important;
+  flex: 0 0 auto !important;
+}
+
+body.bb-chapter-redesign .lesson-search-btn,
+body.bb-chapter-redesign .lesson-search-close {
+  width: 28px !important;
+  height: 28px !important;
+  min-width: 28px !important;
+  border-radius: 999px !important;
+  border: 1px solid rgba(148, 163, 184, 0.2) !important;
+  background: rgba(248, 250, 252, 0.9) !important;
+  color: #64748b !important;
+  box-shadow: none !important;
+  font-size: 0.86rem !important;
+}
+
+body.bb-chapter-redesign .lesson-search-btn:hover,
+body.bb-chapter-redesign .lesson-search-close:hover {
+  border-color: color-mix(in srgb, var(--chapter-accent) 22%, rgba(148, 163, 184, 0.22)) !important;
+  background: var(--chapter-accent-light) !important;
+  color: var(--chapter-accent-dark) !important;
+}
+
+body.bb-chapter-redesign .lesson-search-btn:disabled {
+  opacity: 0.4 !important;
+  cursor: default !important;
+}
+
+body.bb-dark.bb-chapter-redesign .lesson-search.open .lesson-search-box input,
+body.dark.bb-chapter-redesign .lesson-search.open .lesson-search-box input {
+  color: #0f172a !important;
+}
+
+body.bb-dark.bb-chapter-redesign .lesson-search.open.has-query .lesson-search-count,
+body.dark.bb-chapter-redesign .lesson-search.open.has-query .lesson-search-count {
+  color: #475569 !important;
+}
+
+body.bb-dark.bb-chapter-redesign .lesson-search-btn,
+body.bb-dark.bb-chapter-redesign .lesson-search-close,
+body.dark.bb-chapter-redesign .lesson-search-btn,
+body.dark.bb-chapter-redesign .lesson-search-close {
+  border-color: rgba(148, 163, 184, 0.22) !important;
+  background: rgba(248, 250, 252, 0.92) !important;
+  color: #64748b !important;
+}
+
+@media (max-width: 1024px) {
+  body.bb-chapter-redesign .lab-topbar-inner {
+    grid-template-columns: minmax(0, 1fr) auto auto !important;
+    grid-template-rows: auto !important;
+    align-items: center !important;
+    min-height: 56px !important;
+    padding: 8px 10px !important;
+  }
+
+  body.bb-chapter-redesign .lab-brand {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    min-width: 0 !important;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-mobile-actions {
+    grid-column: 3 !important;
+    grid-row: 1 !important;
+    justify-self: end !important;
+  }
+
+  body.bb-chapter-redesign .lesson-search:not(.open) {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    justify-self: end !important;
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    width: 38px !important;
+    min-width: 38px !important;
+    height: 38px !important;
+    margin: 0 0.32rem 0 0 !important;
+  }
+
+  body.bb-chapter-redesign .lesson-search:not(.open) .lesson-search-trigger {
+    width: 38px !important;
+    min-width: 38px !important;
+    height: 38px !important;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-back:hover {
+    transform: translateY(-1px) !important;
+  }
+
+  body.bb-chapter-redesign .lesson-search.open .lesson-search-box {
+    height: 46px !important;
+  }
+}
+
+@media (max-width: 560px) {
+  body.bb-chapter-redesign .lesson-search.open .lesson-search-box {
+    gap: 0.24rem !important;
+    padding-right: 0.25rem !important;
+  }
+
+  body.bb-chapter-redesign .lesson-search.open.has-query .lesson-search-count {
+    min-width: 34px !important;
+    font-size: 0.66rem !important;
+  }
+
+  body.bb-chapter-redesign .lesson-search-btn,
+  body.bb-chapter-redesign .lesson-search-close {
+    width: 26px !important;
+    height: 26px !important;
+    min-width: 26px !important;
+  }
+}
+
+/* Final topbar layout: keep search and back controls in one action lane. */
+body.bb-chapter-redesign .lab-topbar-inner {
+  grid-template-columns: minmax(180px, 1fr) auto minmax(300px, 1fr) !important;
+  align-items: center !important;
+  gap: 1rem !important;
+}
+
+body.bb-chapter-redesign .lab-nav {
+  grid-column: 2 !important;
+  justify-self: center !important;
+}
+
+body.bb-chapter-redesign .lab-topbar-actions {
+  grid-column: 3 !important;
+  grid-row: 1 !important;
+  justify-self: end !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 0.62rem !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  position: relative !important;
+  z-index: 3 !important;
+}
+
+body.bb-chapter-redesign .lab-topbar-actions .lesson-search {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  left: auto !important;
+  transform: none !important;
+  grid-column: auto !important;
+  flex: 0 0 auto !important;
+  width: 42px !important;
+  min-width: 42px !important;
+  height: 42px !important;
+  margin: 0 !important;
+  z-index: 4 !important;
+}
+
+body.bb-chapter-redesign .lab-topbar-actions .lesson-search.open {
+  width: min(440px, calc(100vw - 360px)) !important;
+}
+
+body.bb-chapter-redesign .lab-topbar-actions .lesson-search.open + .lab-topbar-back {
+  display: none !important;
+}
+
+body.bb-chapter-redesign .lab-topbar-actions .lab-topbar-back {
+  position: static !important;
+  top: auto !important;
+  right: auto !important;
+  left: auto !important;
+  transform: none !important;
+  flex: 0 0 auto !important;
+  min-height: 40px !important;
+  white-space: nowrap !important;
+  z-index: 3 !important;
+}
+
+body.bb-chapter-redesign .lab-topbar-actions .lab-topbar-back:hover {
+  transform: translateY(-1px) !important;
+}
+
+body.bb-chapter-redesign .lab-topbar-actions .lesson-search-trigger {
+  width: 42px !important;
+  min-width: 42px !important;
+  height: 42px !important;
+}
+
+@media (max-width: 1180px) {
+  body.bb-chapter-redesign .lab-topbar-inner {
+    grid-template-columns: minmax(150px, 1fr) auto minmax(230px, 1fr) !important;
+    gap: 0.7rem !important;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-actions .lab-topbar-back-label {
+    max-width: 9.5rem !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  body.bb-chapter-redesign .lab-topbar-inner {
+    grid-template-columns: minmax(0, 1fr) auto auto !important;
+    gap: 0.42rem !important;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-actions {
+    grid-column: 2 !important;
+    justify-self: end !important;
+    gap: 0 !important;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-actions .lab-topbar-back {
+    display: none !important;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-actions .lesson-search:not(.open) {
+    width: 38px !important;
+    min-width: 38px !important;
+    height: 38px !important;
+    margin: 0 !important;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-actions .lesson-search:not(.open) .lesson-search-trigger {
+    width: 38px !important;
+    min-width: 38px !important;
+    height: 38px !important;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-actions .lesson-search.open {
+    position: fixed !important;
+    top: 70px !important;
+    left: 12px !important;
+    right: 12px !important;
+    width: auto !important;
+    z-index: 220 !important;
+  }
+}

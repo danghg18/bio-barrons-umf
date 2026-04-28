@@ -340,6 +340,31 @@
     return '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.8-3.8"/></svg>';
   }
 
+  function normalizeSearchText(value) {
+    const text = String(value || "");
+    try {
+      return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    } catch (error) {
+      return text.toLowerCase();
+    }
+  }
+
+  function buildSearchIndex(text) {
+    let normalized = "";
+    const map = [];
+    const source = String(text || "");
+
+    for (let index = 0; index < source.length; index += 1) {
+      const normalizedChar = normalizeSearchText(source[index]);
+      for (let charIndex = 0; charIndex < normalizedChar.length; charIndex += 1) {
+        normalized += normalizedChar[charIndex];
+        map.push(index);
+      }
+    }
+
+    return { normalized, map };
+  }
+
   function createLessonSearch() {
     const topbar = document.querySelector(".lab-topbar-inner");
     if (!topbar) return null;
@@ -353,12 +378,12 @@
       searchIconSvg() +
       '<input id="lesson-search-input" type="text" placeholder="Caută în lecție..." autocomplete="off">' +
       '<span id="lesson-search-count" class="lesson-search-count">0 / 0</span>' +
-      '</div>' +
       '<div class="lesson-search-nav">' +
       '<button class="lesson-search-btn" id="lesson-search-prev" aria-label="Rezultatul anterior">↑</button>' +
       '<button class="lesson-search-btn" id="lesson-search-next" aria-label="Rezultatul următor">↓</button>' +
       '</div>' +
       '<button class="lesson-search-close" id="lesson-search-close" aria-label="Închide căutarea">×</button>' +
+      '</div>' +
       '</div>';
 
     const back = topbar.querySelector(".lab-topbar-back");
@@ -367,16 +392,21 @@
   }
 
   function unwrapSharedSearchHighlights() {
+    const touchedParents = new Set();
     document.querySelectorAll(".search-found, .search-found-current").forEach(function (mark) {
       if (!mark.parentNode) return;
       const parent = mark.parentNode;
+      touchedParents.add(parent);
       while (mark.firstChild) parent.insertBefore(mark.firstChild, mark);
       parent.removeChild(mark);
+    });
+    touchedParents.forEach(function (parent) {
+      if (parent && typeof parent.normalize === "function") parent.normalize();
     });
   }
 
   function collectSharedSearchMatches(term) {
-    const needle = String(term || "").trim().toLowerCase();
+    const needle = normalizeSearchText(String(term || "").trim());
     if (!needle) return [];
     const matches = [];
 
@@ -390,27 +420,101 @@
         if (parent.closest("script, style, nav, button, input, textarea")) continue;
 
         const text = String(textNode.textContent || "");
-        const lower = text.toLowerCase();
+        const indexedText = buildSearchIndex(text);
+        const lower = indexedText.normalized;
         let from = 0;
         while (from < lower.length) {
           const index = lower.indexOf(needle, from);
           if (index === -1) break;
+          const start = indexedText.map[index];
+          const end = indexedText.map[index + needle.length - 1] + 1;
+          if (typeof start !== "number" || typeof end !== "number") break;
           matches.push({
             sectionId: section.id,
             node: textNode,
-            start: index,
-            end: index + needle.length,
+            start,
+            end,
           });
           from = index + Math.max(1, needle.length);
         }
       }
     });
 
+    if (!matches.length && /\s/.test(needle)) {
+      document.querySelectorAll(".page-section").forEach(function (section) {
+        if (section.id === "page-grile") return;
+        const blocks = section.querySelectorAll("h1, h2, h3, h4, p, li, figcaption, td, th, blockquote, .card, .hero");
+        blocks.forEach(function (block) {
+          if (block.closest("script, style, nav, button, input, textarea")) return;
+          const blockText = normalizeSearchText(block.textContent || "").replace(/\s+/g, " ");
+          if (!blockText.includes(needle.replace(/\s+/g, " "))) return;
+
+          const firstToken = needle.split(/\s+/).find(Boolean);
+          if (!firstToken) return;
+          const walker = document.createTreeWalker(block, NodeFilter.SHOW_TEXT);
+          while (walker.nextNode()) {
+            const textNode = walker.currentNode;
+            const parent = textNode.parentNode;
+            if (!parent || !parent.closest) continue;
+            if (parent.closest("script, style, nav, button, input, textarea")) continue;
+            const indexedText = buildSearchIndex(textNode.textContent || "");
+            const index = indexedText.normalized.indexOf(firstToken);
+            if (index === -1) continue;
+            matches.push({
+              sectionId: section.id,
+              node: textNode,
+              start: indexedText.map[index],
+              end: indexedText.map[index + firstToken.length - 1] + 1,
+            });
+            break;
+          }
+        });
+      });
+    }
+
     return matches.sort(function (a, b) {
       const aHome = document.getElementById(a.sectionId)?.classList.contains("chapter-home") ? 1 : 0;
       const bHome = document.getElementById(b.sectionId)?.classList.contains("chapter-home") ? 1 : 0;
       return aHome - bHome;
     });
+  }
+
+  function normalizeBackAction() {
+    const back = document.querySelector(".lab-topbar-back");
+    if (!back || back.dataset.bbBackRedesignReady === "true") return;
+
+    const label = String(back.textContent || "Toate capitolele").replace("←", "").trim() || "Toate capitolele";
+    back.textContent = "";
+
+    const icon = document.createElement("span");
+    icon.className = "lab-topbar-back-icon";
+    icon.setAttribute("aria-hidden", "true");
+    icon.textContent = "‹";
+
+    const text = document.createElement("span");
+    text.className = "lab-topbar-back-label";
+    text.textContent = label;
+
+    back.appendChild(icon);
+    back.appendChild(text);
+    back.dataset.bbBackRedesignReady = "true";
+  }
+
+  function normalizeTopbarActions() {
+    const topbar = document.querySelector(".lab-topbar-inner");
+    const search = document.getElementById("lesson-search");
+    const back = topbar?.querySelector(".lab-topbar-back");
+    if (!topbar || !search || !back) return;
+
+    let actions = topbar.querySelector(".lab-topbar-actions");
+    if (!actions) {
+      actions = document.createElement("div");
+      actions.className = "lab-topbar-actions";
+      topbar.appendChild(actions);
+    }
+
+    if (search.parentNode !== actions) actions.appendChild(search);
+    if (back.parentNode !== actions) actions.appendChild(back);
   }
 
   function installLessonSearchCollectorOverride() {
@@ -420,7 +524,6 @@
 
   function setupSharedLessonSearch(root) {
     if (!root || root.dataset.bbSharedSearchReady === "true") return;
-    if (typeof window.searchAndScrollTo === "function") return;
 
     const input = root.querySelector("#lesson-search-input");
     const count = root.querySelector("#lesson-search-count");
@@ -434,6 +537,7 @@
     const state = {
       matches: [],
       currentIndex: -1,
+      returnSection: "",
     };
 
     function updateUi() {
@@ -442,6 +546,8 @@
       count.textContent = current + " / " + total;
       prevBtn.disabled = total < 2;
       nextBtn.disabled = total < 2;
+      root.classList.toggle("has-query", input.value.trim().length > 0);
+      root.classList.toggle("has-results", total > 0);
     }
 
     function clear(resetInput) {
@@ -453,7 +559,20 @@
     }
 
     function setOpen(isOpen, shouldFocus) {
+      if (isOpen && !root.classList.contains("open")) {
+        const activeSection = document.querySelector(".page-section.active");
+        state.returnSection = activeSection ? activeSection.id.replace(/^page-/, "") : "";
+      }
       root.classList.toggle("open", !!isOpen);
+      if (!isOpen) {
+        const sectionToRestore = state.returnSection;
+        state.returnSection = "";
+        if (sectionToRestore === "grile" && typeof window.goto === "function") {
+          const activeSection = document.querySelector(".page-section.active");
+          const activeSectionId = activeSection ? activeSection.id.replace(/^page-/, "") : "";
+          if (activeSectionId !== "grile") window.goto("grile");
+        }
+      }
       if (isOpen && typeof window.closeNav === "function") window.closeNav();
       if (isOpen && shouldFocus !== false) {
         setTimeout(function () {
@@ -510,6 +629,7 @@
         if (activeSectionId !== targetSection && typeof window.goto === "function") {
           window.goto(targetSection);
         }
+        root.classList.add("open");
         requestAnimationFrame(function () {
           target.element.scrollIntoView({ behavior: "smooth", block: "center" });
         });
@@ -523,6 +643,7 @@
         clear(false);
         return;
       }
+      root.classList.add("open");
       unwrapSharedSearchHighlights();
       state.matches = collectSharedSearchMatches(cleanTerm);
       state.currentIndex = -1;
@@ -534,30 +655,44 @@
       goTo(0);
     }
 
-    input.addEventListener("input", function () {
+    root.__bbOpenLessonSearch = function (shouldFocus) {
+      setOpen(true, shouldFocus);
+    };
+    root.__bbCloseLessonSearch = function () {
+      clear(true);
+      setOpen(false, false);
+    };
+
+    input.addEventListener("input", function (event) {
+      event.stopImmediatePropagation();
       search(input.value);
-    });
+    }, true);
     input.addEventListener("keydown", function (event) {
       if (event.key === "Enter") {
         event.preventDefault();
+        event.stopImmediatePropagation();
         goTo(state.currentIndex + (event.shiftKey ? -1 : 1));
       }
       if (event.key === "Escape") {
         event.preventDefault();
+        event.stopImmediatePropagation();
         clear(true);
         setOpen(false, false);
       }
-    });
-    prevBtn.addEventListener("click", function () {
+    }, true);
+    prevBtn.addEventListener("click", function (event) {
+      event.stopImmediatePropagation();
       goTo(state.currentIndex - 1);
-    });
-    nextBtn.addEventListener("click", function () {
+    }, true);
+    nextBtn.addEventListener("click", function (event) {
+      event.stopImmediatePropagation();
       goTo(state.currentIndex + 1);
-    });
-    closeBtn.addEventListener("click", function () {
+    }, true);
+    closeBtn.addEventListener("click", function (event) {
+      event.stopImmediatePropagation();
       clear(true);
       setOpen(false, false);
-    });
+    }, true);
     document.addEventListener("keydown", function (event) {
       if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "f") {
         event.preventDefault();
@@ -573,6 +708,7 @@
     if (!root) return;
 
     root.classList.add("bb-search-compact");
+    normalizeLessonSearchLayout(root);
     if (!root.querySelector(".lesson-search-trigger")) {
       const trigger = document.createElement("button");
       trigger.type = "button";
@@ -588,19 +724,58 @@
           else root.classList.remove("open");
           return;
         }
-        if (typeof window.openLessonSearchPanel === "function") {
-          window.openLessonSearchPanel();
-        } else if (typeof window.openLessonSearch === "function") {
-          window.openLessonSearch();
+        if (typeof root.__bbOpenLessonSearch === "function") {
+          root.__bbOpenLessonSearch(true);
         } else {
           root.classList.add("open");
           const input = root.querySelector("#lesson-search-input");
-          if (input) setTimeout(function () { input.focus(); }, 40);
+          if (input) setTimeout(function () { input.focus(); input.select(); }, 40);
         }
       });
     }
 
     setupSharedLessonSearch(root);
+  }
+
+  function syncLessonSearchClasses(root) {
+    const input = root.querySelector("#lesson-search-input");
+    const count = root.querySelector("#lesson-search-count");
+    const value = input ? input.value.trim() : "";
+    const totalMatch = count ? String(count.textContent || "").match(/\/\s*(\d+)/) : null;
+    const total = totalMatch ? Number(totalMatch[1]) || 0 : 0;
+    root.classList.toggle("has-query", value.length > 0);
+    root.classList.toggle("has-results", total > 0);
+  }
+
+  function normalizeLessonSearchLayout(root) {
+    if (root.dataset.bbSearchLayoutReady === "true") return;
+    const box = root.querySelector(".lesson-search-box");
+    const input = root.querySelector("#lesson-search-input");
+    const count = root.querySelector("#lesson-search-count");
+    const nav = root.querySelector(".lesson-search-nav");
+    const close = root.querySelector("#lesson-search-close");
+    if (!box || !input) return;
+
+    [count, nav, close].forEach(function (node) {
+      if (node && node.parentNode !== box) box.appendChild(node);
+    });
+
+    input.addEventListener("input", function () {
+      syncLessonSearchClasses(root);
+    });
+
+    if (count && typeof MutationObserver !== "undefined") {
+      new MutationObserver(function () {
+        syncLessonSearchClasses(root);
+      }).observe(count, {
+        childList: true,
+        characterData: true,
+        subtree: true,
+      });
+    }
+
+    syncLessonSearchClasses(root);
+    root.dataset.bbSearchLayoutReady = "true";
   }
 
   function ensureSidebarSettings() {
@@ -719,6 +894,8 @@
     patchDesktopBrandClose();
     ensureLessonSearchControl();
     installLessonSearchCollectorOverride();
+    normalizeBackAction();
+    normalizeTopbarActions();
     normalizeTopbarShape();
     ensureSidebarSettings();
     normalizeSidebarState();

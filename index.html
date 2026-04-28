@@ -381,7 +381,7 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
     </button>
     <div class="lab-progress-pill">
       <svg id="topbar-ring" width="28" height="28" style="display:block;flex-shrink:0"></svg>
-      <span><strong>2</strong> / 23</span>
+      <span><strong id="topbar-progress-done">0</strong> / <span id="topbar-progress-total">149</span></span>
     </div>
   </div>
 </header>
@@ -414,9 +414,9 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
       <div class="lab-hero-stats">
         <div><div class="lab-hs-n">23</div><div class="lab-hs-l">capitole</div></div>
         <div class="lab-hs-div"></div>
-        <div><div class="lab-hs-n">2</div><div class="lab-hs-l">publicate</div></div>
+        <div><div class="lab-hs-n">3</div><div class="lab-hs-l">lecții</div></div>
         <div class="lab-hs-div"></div>
-        <div><div class="lab-hs-n">1.840</div><div class="lab-hs-l">grile</div></div>
+        <div><div class="lab-hs-n">149</div><div class="lab-hs-l">grile disponibile</div></div>
         <div class="lab-hs-div"></div>
         <div><div class="lab-hs-n">42</div><div class="lab-hs-l">figuri</div></div>
       </div>
@@ -463,10 +463,10 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
       <div class="lab-hero-card lab-hero-card-3">
         <div class="lab-hero-card-tag">Progres total</div>
         <div class="lab-hero-card-mini">
-          <div class="lab-hero-card-mini-num">2</div>
+          <div class="lab-hero-card-mini-num" id="hero-progress-done">0</div>
           <div>
-            <div class="lab-hero-card-mini-lbl">capitole complete</div>
-            <div class="lab-hero-card-mini-sub">din 23 · 8.7% din materie</div>
+            <div class="lab-hero-card-mini-lbl" id="hero-progress-label">grile completate</div>
+            <div class="lab-hero-card-mini-sub" id="hero-progress-sub">din 149 disponibile · 0%</div>
           </div>
         </div>
       </div>
@@ -818,21 +818,62 @@ function drawRing(svgEl, done, total, color) {
   }));
 }
 
-/* Topbar ring (2/23) */
-(function(){
-  const el=document.getElementById('topbar-ring');
-  const size=28,stroke=3,r=(size-stroke)/2,c=2*Math.PI*r;
-  const pct=(2/23)*100,offset=c-(pct/100)*c;
-  el.innerHTML=`
-    <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="rgba(148,163,184,0.2)" stroke-width="${stroke}"/>
-    <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="var(--lab-accent)" stroke-width="${stroke}"
-      stroke-linecap="round" stroke-dasharray="${c.toFixed(2)}" stroke-dashoffset="${c.toFixed(2)}"
-      transform="rotate(-90 ${size/2} ${size/2})"
-      style="transition:stroke-dashoffset 1.2s ease 0.1s" class="ring-arc"/>`;
-  requestAnimationFrame(()=>requestAnimationFrame(()=>{
-    el.querySelector('.ring-arc').style.strokeDashoffset=offset.toFixed(2);
-  }));
-})();
+/* Dynamic quiz progress */
+const QUIZ_PROGRESS_SOURCES = [
+  { key: 'urinar_quiz_v4', total: 80 },
+  { key: 'reproducator_masculin_quiz_v1', total: 69 },
+];
+
+function getStoredQuizState(key) {
+  try {
+    const value = localStorage.getItem(key);
+    if (!value) return {};
+    const parsed = JSON.parse(value);
+    return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : {};
+  } catch (err) {
+    return {};
+  }
+}
+
+function countSubmittedQuestions(state, total) {
+  const submitted = Object.values(state).filter(function(entry) {
+    return entry && entry.submitted === true;
+  }).length;
+  return Math.min(submitted, total);
+}
+
+function getQuizProgress() {
+  return QUIZ_PROGRESS_SOURCES.reduce(function(acc, source) {
+    acc.done += countSubmittedQuestions(getStoredQuizState(source.key), source.total);
+    acc.total += source.total;
+    return acc;
+  }, { done: 0, total: 0 });
+}
+
+function setText(id, value) {
+  const node = document.getElementById(id);
+  if (node) node.textContent = value;
+}
+
+function updateHomepageProgress() {
+  const progress = getQuizProgress();
+  const pct = progress.total ? Math.round((progress.done / progress.total) * 100) : 0;
+
+  setText('topbar-progress-done', String(progress.done));
+  setText('topbar-progress-total', String(progress.total));
+  setText('hero-progress-done', String(progress.done));
+  setText('hero-progress-label', progress.done === 1 ? 'grilă completată' : 'grile completate');
+  setText('hero-progress-sub', `din ${progress.total} disponibile · ${pct}%`);
+
+  const ring = document.getElementById('topbar-ring');
+  if (ring) drawRing(ring, progress.done, progress.total, 'var(--lab-accent)');
+}
+
+updateHomepageProgress();
+window.addEventListener('pageshow', updateHomepageProgress);
+document.addEventListener('visibilitychange', function() {
+  if (!document.hidden) updateHomepageProgress();
+});
 
 /* Category rings */
 document.querySelectorAll('.cat-ring').forEach(function(svg){

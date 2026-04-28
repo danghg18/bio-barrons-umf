@@ -29,7 +29,7 @@ ul.ch{list-style:none;padding:0}ul.ch li{padding:.18rem 0 .18rem 1.3rem;position
 #top{position:fixed;bottom:1.5rem;right:1.5rem;background:#0F172A;color:#fff;border:none;border-radius:50%;width:2.8rem;height:2.8rem;font-size:1.1rem;cursor:pointer;box-shadow:0 3px 12px rgba(15,23,42,.2);display:none;z-index:200;align-items:center;justify-content:center}
 @media(max-width:900px){.lab-nav,.lab-topbar-back{display:none}.ch-layout{display:block;padding:0}#sidenav{position:fixed;top:0;left:0;width:min(320px,82vw);height:100dvh;max-height:none;z-index:210;border-radius:0 20px 20px 0;transform:translateX(-105%);transition:.24s;box-shadow:0 18px 44px rgba(15,23,42,.16)}#sidenav.open{transform:none}main{padding:0 .9rem 4rem}.hero{margin:0 -.9rem 1.3rem;padding:3.3rem 1rem 1.4rem}.hero h1{font-size:1.28rem}.g2,.g3{grid-template-columns:1fr}.card{padding:1rem}.section{font-size:1.05rem}.lab-brand{cursor:pointer}#nav-overlay.open{display:block;position:fixed;inset:0;background:rgba(15,23,42,.24);z-index:205}}
 </style>
-<link rel="stylesheet" href="assets/css/chapter-redesign.css">
+<link rel="stylesheet" href="assets/css/chapter-redesign.css?v=20260428-search10">
 </head>
 <body>
 <header class="lab-topbar"><div class="lab-topbar-inner"><a href="index.html" class="lab-brand" id="brand"><div class="lab-brand-mark">☰</div><span class="lab-brand-name">Biologie<span class="lab-brand-sub">.bb</span></span></a><nav class="lab-nav"><a onclick="goto('home')">Pagina capitolului</a><a onclick="goto('organe')">Organe</a><a onclick="goto('fiziologie')">Fiziologie</a><a onclick="goto('dezvoltare')">Dezvoltare</a></nav><a href="index.html" class="lab-topbar-back">← Toate capitolele</a></div></header>
@@ -94,6 +94,6 @@ function goto(page){document.querySelectorAll('.page-section').forEach(s=>s.clas
 document.getElementById('brand').addEventListener('click',e=>{if(innerWidth<=900){e.preventDefault();document.getElementById('sidenav').classList.add('open');document.getElementById('nav-overlay').classList.add('open')}});
 addEventListener('scroll',()=>{document.getElementById('top').style.display=scrollY>500?'flex':'none'});
 </script>
-<script src="assets/js/chapter-redesign.js"></script>
+<script src="assets/js/chapter-redesign.js?v=20260428-search10"></script>
 </body>
 </html>
