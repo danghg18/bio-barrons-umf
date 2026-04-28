@@ -3996,3 +3996,210 @@ body.bb-chapter-redesign .fb {
   }
 }
 
+/* ===========================================================
+   Mobile topbar polish (≤1024px)
+   - Topbar scrolls with the page (NOT sticky) so it doesn't
+     waste real estate.
+   - Only the search bar floats / sticks when open.
+   - All action icons share one circular outline style + size
+     for a clean, consistent look.
+   =========================================================== */
+@media (max-width: 1024px) {
+  body.bb-chapter-redesign .lab-topbar {
+    position: relative !important;
+    top: 0 !important;
+    padding: 14px 12px 6px !important;
+    background: transparent !important;
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    filter: none !important;
+    transform: none !important;
+    will-change: auto !important;
+    contain: none !important;
+  }
+
+  body.bb-chapter-redesign .lab-topbar::after {
+    display: none !important;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-inner {
+    background: rgba(255, 255, 255, 0.96) !important;
+    border: 1px solid rgba(15, 23, 42, 0.08) !important;
+    border-radius: 999px !important;
+    padding: 6px 10px 6px 8px !important;
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.06) !important;
+    gap: 8px !important;
+    min-height: 52px !important;
+  }
+
+  /* Brand: keep a tidy logo-mark + name row. Mark is the same circular
+     outline footprint as the action buttons. */
+  body.bb-chapter-redesign .lab-brand {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    min-width: 0 !important;
+  }
+
+  body.bb-chapter-redesign .lab-brand-mark {
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    border-radius: 999px !important;
+    background: #0f172a !important;
+    color: #fff !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex: 0 0 auto !important;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.16) !important;
+  }
+
+  body.bb-chapter-redesign .lab-brand-name {
+    font-size: 0.96rem !important;
+    font-weight: 900 !important;
+    letter-spacing: -0.01em !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  /* All action icons: same circular outline pill, same size. */
+  body.bb-chapter-redesign .lab-topbar-mobile-actions,
+  body.bb-chapter-redesign .lab-topbar-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    flex-wrap: nowrap !important;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-mobile-btn,
+  body.bb-chapter-redesign .lab-topbar-actions .lesson-search:not(.open),
+  body.bb-chapter-redesign .lab-topbar-actions .lesson-search:not(.open) .lesson-search-trigger,
+  body.bb-chapter-redesign .lesson-search:not(.open) .lesson-search-trigger {
+    width: 40px !important;
+    min-width: 40px !important;
+    height: 40px !important;
+    border-radius: 999px !important;
+    border: 1px solid rgba(15, 23, 42, 0.1) !important;
+    background: #fff !important;
+    color: #334155 !important;
+    box-shadow: 0 6px 14px rgba(15, 23, 42, 0.05) !important;
+    font-size: 1rem !important;
+    line-height: 1 !important;
+    padding: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-mobile-btn:active {
+    transform: scale(0.96) !important;
+  }
+
+  /* Search closed: behave like the other action icons. */
+  body.bb-chapter-redesign .lab-topbar-actions .lesson-search:not(.open) {
+    position: static !important;
+    flex: 0 0 auto !important;
+    margin: 0 !important;
+    overflow: visible !important;
+  }
+
+  body.bb-chapter-redesign .lesson-search:not(.open) .lesson-search-trigger {
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  /* Search open: float as its own pill at the top of the screen.
+     The rest of the topbar can scroll freely behind it. */
+  body.bb-chapter-redesign .lab-topbar-actions .lesson-search.open,
+  body.bb-chapter-redesign .lab-topbar .lesson-search.open,
+  body.bb-chapter-redesign header .lesson-search.open,
+  body.bb-chapter-redesign .lesson-search.open {
+    position: fixed !important;
+    top: 12px !important;
+    left: 12px !important;
+    right: 12px !important;
+    width: calc(100vw - 24px) !important;
+    max-width: calc(100vw - 24px) !important;
+    height: auto !important;
+    min-width: 0 !important;
+    z-index: 260 !important;
+    background: #fff !important;
+    border: 1px solid rgba(15, 23, 42, 0.1) !important;
+    border-radius: 999px !important;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18) !important;
+    padding: 6px 8px !important;
+    margin: 0 !important;
+  }
+
+  body.bb-chapter-redesign .lesson-search.open .lesson-search-panel {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    opacity: 1 !important;
+    transform: none !important;
+    pointer-events: auto !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  body.bb-chapter-redesign .lesson-search.open .lesson-search-trigger {
+    display: none !important;
+  }
+
+  body.bb-chapter-redesign .lesson-search.open .lesson-search-box {
+    display: flex !important;
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    height: 40px !important;
+    border: 0 !important;
+    background: transparent !important;
+    padding-left: 12px !important;
+  }
+
+  body.bb-chapter-redesign .lesson-search.open .lesson-search-box input {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    font-size: 0.95rem !important;
+  }
+}
+
+/* Tighter spacing on phones below 480px so all 3+ icons fit comfortably. */
+@media (max-width: 480px) {
+  body.bb-chapter-redesign .lab-topbar {
+    padding: 10px 10px 4px !important;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-inner {
+    padding: 5px 8px 5px 6px !important;
+    gap: 6px !important;
+  }
+
+  body.bb-chapter-redesign .lab-brand-name {
+    font-size: 0.92rem !important;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-mobile-actions {
+    gap: 4px !important;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-mobile-btn,
+  body.bb-chapter-redesign .lesson-search:not(.open) .lesson-search-trigger {
+    width: 38px !important;
+    min-width: 38px !important;
+    height: 38px !important;
+  }
+
+  body.bb-chapter-redesign .lab-brand-mark {
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+  }
+}
+
