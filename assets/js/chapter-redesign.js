@@ -805,7 +805,8 @@
         button.className = "nav-settings-btn";
         button.type = "button";
         button.setAttribute("onclick", handlerName + "()");
-        button.innerHTML = '<span class="dot"></span> <span>' + label + "</span>";
+        const labelId = id === "nav-hl-btn" ? ' id="nav-hl-label"' : id === "nav-dm-btn" ? ' id="nav-dm-label"' : "";
+        button.innerHTML = '<span class="dot"></span> <span' + labelId + ">" + label + "</span>";
       }
       button.classList.add("nav-settings-btn");
       button.style.display = "";
@@ -818,6 +819,139 @@
     if (typeof window.toggleHighlighter === "function") {
       moveOrCreateButton("nav-hl-btn", "Evidențiator", "toggleHighlighter");
     }
+  }
+
+  function getHighlighterState() {
+    if (!window.__bbSharedHighlighter) {
+      window.__bbSharedHighlighter = {
+        enabled: false,
+        listenersInstalled: false,
+        toastTimer: null,
+      };
+    }
+    return window.__bbSharedHighlighter;
+  }
+
+  function getHighlighterLabel(button) {
+    if (!button) return null;
+    return document.getElementById("nav-hl-label") || button.querySelector("span:not(.dot)");
+  }
+
+  function syncSharedHighlighterUi() {
+    const state = getHighlighterState();
+    const navButton = document.getElementById("nav-hl-btn");
+    const floatButton = document.getElementById("hl-btn");
+    const label = getHighlighterLabel(navButton);
+
+    document.body.classList.toggle("hl-mode", state.enabled);
+    if (navButton) {
+      navButton.classList.toggle("hl-on", state.enabled);
+      navButton.classList.toggle("on", state.enabled);
+      navButton.setAttribute("aria-pressed", state.enabled ? "true" : "false");
+    }
+    if (floatButton) {
+      floatButton.classList.toggle("active", state.enabled);
+      floatButton.setAttribute("aria-pressed", state.enabled ? "true" : "false");
+    }
+    if (label) label.textContent = state.enabled ? "Evidențiator ON" : "Evidențiator";
+  }
+
+  function showSharedHighlighterToast(message) {
+    if (typeof window.showToast === "function") {
+      window.showToast(message);
+      return;
+    }
+
+    const state = getHighlighterState();
+    let toast = document.querySelector(".bb-highlighter-toast");
+    if (!toast) {
+      toast = document.createElement("div");
+      toast.className = "toast bb-highlighter-toast";
+      document.body.appendChild(toast);
+    }
+    toast.textContent = message;
+    window.clearTimeout(state.toastTimer);
+    state.toastTimer = window.setTimeout(function () {
+      if (toast.parentNode) toast.parentNode.removeChild(toast);
+    }, 1800);
+  }
+
+  function applySharedHighlight(range) {
+    const ancestor = range.commonAncestorContainer;
+    const root = ancestor.nodeType === Node.TEXT_NODE ? ancestor.parentNode : ancestor;
+    if (!root || !root.closest || !root.closest("main, .page-section")) return;
+
+    const pieces = [];
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode: function (node) {
+        const parent = node.parentElement;
+        if (!parent) return NodeFilter.FILTER_REJECT;
+        if (parent.closest("script, style, nav, button, input, textarea, select, svg, mark.hl")) {
+          return NodeFilter.FILTER_REJECT;
+        }
+        if (!range.intersectsNode(node)) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      },
+    });
+
+    while (walker.nextNode()) {
+      const node = walker.currentNode;
+      let start = 0;
+      let end = node.textContent.length;
+      if (node === range.startContainer) start = range.startOffset;
+      if (node === range.endContainer) end = range.endOffset;
+      if (start < end) pieces.push({ node: node, start: start, end: end });
+    }
+
+    pieces.reverse().forEach(function (piece) {
+      const markRange = document.createRange();
+      markRange.setStart(piece.node, piece.start);
+      markRange.setEnd(piece.node, piece.end);
+
+      const mark = document.createElement("mark");
+      mark.className = "hl";
+      markRange.surroundContents(mark);
+    });
+  }
+
+  function handleSharedHighlighterSelection(event) {
+    const state = getHighlighterState();
+    if (!state.enabled) return;
+    if (event.target?.closest?.("button, input, select, textarea, nav, .lesson-search, #hl-btn")) return;
+
+    window.setTimeout(function () {
+      const selection = window.getSelection();
+      if (!selection || selection.isCollapsed || !selection.rangeCount || !selection.toString().trim()) return;
+
+      const range = selection.getRangeAt(0);
+      if (!range || range.collapsed) return;
+
+      applySharedHighlight(range);
+      selection.removeAllRanges();
+    }, event.type === "touchend" ? 80 : 0);
+  }
+
+  function installSharedHighlighter() {
+    const state = getHighlighterState();
+
+    if (typeof window.toggleHighlighter !== "function") {
+      window.toggleHighlighter = function () {
+        const currentState = getHighlighterState();
+        currentState.enabled = !currentState.enabled;
+        syncSharedHighlighterUi();
+        showSharedHighlighterToast(
+          currentState.enabled ? "Evidențiator activat - selectează text." : "Evidențiator dezactivat."
+        );
+      };
+
+      if (!state.listenersInstalled) {
+        document.addEventListener("mouseup", handleSharedHighlighterSelection);
+        document.addEventListener("touchend", handleSharedHighlighterSelection);
+        state.listenersInstalled = true;
+      }
+    }
+
+    syncSharedHighlighterUi();
   }
 
   function watchPageChanges() {
@@ -897,7 +1031,9 @@
     normalizeBackAction();
     normalizeTopbarActions();
     normalizeTopbarShape();
+    installSharedHighlighter();
     ensureSidebarSettings();
+    syncSharedHighlighterUi();
     normalizeSidebarState();
     enhanceHomeHero();
     enhanceSectionHeroes();
