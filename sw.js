@@ -1,4 +1,4 @@
-const CACHE = 'biologie-v19';
+const CACHE = 'biologie-v20';
 const BASE = new URL('./', self.location.href).pathname;
 const ASSETS = [
   BASE + 'index.html',
@@ -8,6 +8,7 @@ const ASSETS = [
   BASE + 'grile_sistemul_reproducator_masculin.html',
   BASE + 'sistemul_reproducator_feminin.html',
   BASE + 'grile_sistemul_reproducator_feminin.html',
+  BASE + 'assets/js/grile-feminin.js',
   BASE + 'manifest.json',
   BASE + 'icon-192.png',
   BASE + 'icon-512.png',
