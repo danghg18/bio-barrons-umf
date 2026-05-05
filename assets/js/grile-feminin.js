@@ -88,81 +88,301 @@ const REASONS={
 41:"Fecundația produce zigot diploid cu 46 cromozomi, are nevoie de enzime acrozomale după capacitație, iar ovulul fecundat se numește zigot. Locul obișnuit este trompa uterină, nu uterul.",
 42:"După fecundație, segmentarea formează morula, aceasta devine blastocist, implantarea înseamnă fixarea în endometru, iar corpul galben continuă să secrete hormoni. Blastocistul nu ajunge imediat în cavitatea uterină."
 };
-let state=loadState();
-let filterUnanswered=false;
+const ANALYSIS_KEY='reproducator_feminin_analysis_v1';
+const RUN_META_KEY='reproducator_feminin_run_recorded_v1';
+const PAGE_SIZE=7;
+let quizState=loadState();
+let currentPage=1;
+
 function byId(id){return document.getElementById(id)}
 function escapeHtml(value){return String(value).replace(/[&<>"']/g,function(ch){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]})}
 function loadState(){try{return JSON.parse(localStorage.getItem(STORAGE_KEY)||'{}')||{}}catch(e){return{}}}
-function saveState(){localStorage.setItem(STORAGE_KEY,JSON.stringify(state))}
+function saveState(s){localStorage.setItem(STORAGE_KEY,JSON.stringify(s))}
+function loadAnalysis(){try{const parsed=JSON.parse(localStorage.getItem(ANALYSIS_KEY)||'{}');return {topicErrors:parsed.topicErrors||{},sessions:parsed.sessions||[]}}catch(e){return{topicErrors:{},sessions:[]}}}
+function saveAnalysis(a){localStorage.setItem(ANALYSIS_KEY,JSON.stringify(a))}
+function isRunRecorded(){return localStorage.getItem(RUN_META_KEY)==='1'}
+function setRunRecorded(v){localStorage.setItem(RUN_META_KEY,v?'1':'0')}
 function sameSet(a,b){return a.length===b.length&&a.every(function(x){return b.includes(x)})}
-function optionExplanation(q,letter){
-  const isCorrect=q.correct.includes(letter);
-  return '<div class="quiz-explanation '+(isCorrect?'ok':'bad')+'"><strong>'+(isCorrect?'Corect':'Greșit')+'.</strong> '+escapeHtml(REASONS[q.id]||'Explicația se bazează pe baremul acestei grile și pe lecția din capitol.')+'</div>';
+function getOptions(q){return Object.keys(q.options).map(function(letter){return {letter:letter,text:q.options[letter]}})}
+function getLessonInfo(q){
+  const t=q.topic.toLowerCase();
+  if(t.includes('ciclu')||t.includes('oogenez')||t.includes('fecunda')||t.includes('hormon')||t.includes('fsh')||t.includes('lh')||t.includes('estrogen')||t.includes('corp galben'))return {section:'23.3 Fiziologia reproducerii',page:'fiziologie'};
+  if(t.includes('uter')||t.includes('ovar')||t.includes('tromp')||t.includes('vagin')||t.includes('gland')||t.includes('genitale')||t.includes('perete')||t.includes('raport'))return {section:'23.2 Ovarele și organele anexe',page:'organe'};
+  return {section:'23.1 Introducere',page:'intro'};
 }
-function cardHtml(q){
-  const saved=state[q.id]||{selected:[],submitted:false};
-  const selected=saved.selected||[];
-  const submitted=!!saved.submitted;
-  const ok=submitted&&sameSet(selected,q.correct);
-  const options=Object.keys(q.options).map(function(letter){
-    let cls='quiz-option';
-    if(selected.includes(letter))cls+=' selected';
-    if(submitted){
-      if(q.correct.includes(letter)&&selected.includes(letter))cls+=' correct';
-      else if(!q.correct.includes(letter)&&selected.includes(letter))cls+=' wrong';
-      else if(q.correct.includes(letter)&&!selected.includes(letter))cls+=' missed';
-    }
-    return '<label class="'+cls+'" data-q="'+q.id+'" data-letter="'+letter+'"><input type="checkbox" '+(selected.includes(letter)?'checked':'')+' '+(submitted?'disabled':'')+'><span class="quiz-letter">'+letter+'</span><span>'+escapeHtml(q.options[letter])+'</span>'+optionExplanation(q,letter)+'</label>';
-  }).join('');
-  return '<article class="quiz-card '+(submitted?'submitted':'')+'" id="female-q'+q.id+'"><div class="quiz-head"><div class="quiz-num">'+q.id+'</div><div><h3 class="quiz-title">'+escapeHtml(q.text)+'</h3><div class="quiz-topic">'+escapeHtml(q.topic)+' · original '+q.original+'</div></div></div><div class="quiz-options">'+options+'</div><div class="quiz-actions"><button class="quiz-btn" onclick="femaleQuizSubmit('+q.id+')" '+(submitted?'disabled':'')+'>Verifică</button><button class="quiz-btn secondary" onclick="femaleQuizClear('+q.id+')">Șterge</button>'+(submitted?'<span class="quiz-result '+(ok?'ok':'bad')+'">'+(ok?'Corect':'Mai verifică')+'</span>':'')+'</div><div class="quiz-key">Barem: <strong>'+q.correct.join(', ')+'</strong></div></article>';
+function explanationFor(q,opt){
+  const isCorrect=q.correct.includes(opt.letter);
+  const verdict=isCorrect?'Corect':'Greșit';
+  const status=isCorrect?'este în barem':'nu intră în barem';
+  return {
+    isCorrect:isCorrect,
+    text:verdict+'. Varianta '+opt.letter+' („'+opt.text+'”) '+status+'. '+(REASONS[q.id]||'Verifică baremul și ideea-cheie din lecție.'),
+    added:isCorrect?'':'Răspuns corect pentru grila aceasta: '+q.correct.join(', ')+'.'
+  };
 }
-function render(){
-  const root=byId('femaleQuiz');
-  if(!root)return;
-  const list=filterUnanswered?QUESTIONS.filter(function(q){return !state[q.id]?.submitted}):QUESTIONS;
-  root.innerHTML=list.map(cardHtml).join('')||'<article class="quiz-card"><strong>Ai completat toate grilele.</strong></article>';
+function totalPages(){return Math.ceil(QUESTIONS.length/PAGE_SIZE)}
+function isQuizComplete(){return QUESTIONS.every(function(q){return quizState[q.id]&&quizState[q.id].submitted})}
+function correctStatus(q,selected){
+  const cSet=new Set(q.correct);
+  const full=selected.length===q.correct.length&&selected.every(function(s){return cSet.has(s)});
+  const partial=!full&&selected.some(function(s){return cSet.has(s)});
+  return {full:full,partial:partial};
+}
+function showToast(msg){
+  let t=byId('female-toast');
+  if(!t){t=document.createElement('div');t.id='female-toast';t.className='toast';document.body.appendChild(t)}
+  t.textContent=msg;t.classList.add('show');
+  setTimeout(function(){t.classList.remove('show')},2200);
+}
+function renderPagination(targetId){
+  const target=byId(targetId);
+  if(!target)return;
+  const total=totalPages();
+  target.innerHTML='<button class="gbtn gbtn-secondary" type="button" onclick="femaleQuizPrevPage()" '+(currentPage<=1?'disabled':'')+'>← Pagina anterioară</button><span class="page-indicator">Pagina '+currentPage+' / '+total+'</span><button class="gbtn gbtn-secondary" type="button" onclick="femaleQuizNextPage()" '+(currentPage>=total?'disabled':'')+'>Pagina următoare →</button>';
+}
+function buildQuiz(keepPosition){
+  const container=byId('female-questions-container');
+  if(!container)return;
+  const total=totalPages();
+  currentPage=Math.min(Math.max(currentPage,1),total);
+  const start=(currentPage-1)*PAGE_SIZE;
+  container.innerHTML='';
+  QUESTIONS.slice(start,start+PAGE_SIZE).forEach(function(q){renderQuestion(q,container)});
+  renderPagination('female-pagination-top');
+  renderPagination('female-pagination-bottom');
   updateProgress();
+  checkShowFinalScore(false);
+  if(!keepPosition)window.scrollTo({top:byId('page-grile')?.offsetTop||0,behavior:'smooth'});
 }
-function updateProgress(){
-  const submitted=QUESTIONS.filter(function(q){return state[q.id]?.submitted});
-  const correct=submitted.filter(function(q){return sameSet(state[q.id].selected||[],q.correct)}).length;
-  const progressText=byId('femaleQuizProgressText');
-  const scoreText=byId('femaleQuizScoreText');
-  const progressBar=byId('femaleQuizProgressBar');
-  const final=byId('femaleQuizFinal');
-  if(progressText)progressText.textContent=submitted.length+' / '+QUESTIONS.length+' completate';
-  if(scoreText)scoreText.textContent=correct+' corecte';
-  if(progressBar)progressBar.style.width=Math.round(submitted.length/QUESTIONS.length*100)+'%';
-  if(final){
-    if(submitted.length===QUESTIONS.length){final.style.display='block';final.innerHTML='<h2>Rezultat final: '+correct+'/'+QUESTIONS.length+'</h2><p>'+correct+' grile corecte complet, '+(QUESTIONS.length-correct)+' de revăzut.</p>'}
-    else final.style.display='none';
+function renderQuestion(q,container){
+  const state=quizState[q.id]||{selected:[],submitted:false};
+  const selected=state.selected||[];
+  const submitted=!!state.submitted;
+  const status=correctStatus(q,selected);
+  let cardClass='',badge='';
+  if(submitted){
+    if(status.full){cardClass='answered-correct';badge='<span class="result-badge badge-correct">Corect</span>'}
+    else if(status.partial){cardClass='answered-partial';badge='<span class="result-badge badge-partial">Parțial</span>'}
+    else{cardClass='answered-wrong';badge='<span class="result-badge badge-wrong">Greșit</span>'}
   }
+  let optHtml='';
+  getOptions(q).forEach(function(opt){
+    const isSel=selected.includes(opt.letter);
+    const isCorr=q.correct.includes(opt.letter);
+    let cls='',icon='';
+    if(submitted){
+      if(isSel&&isCorr){cls='result-correct';icon='✓'}
+      else if(isSel&&!isCorr){cls='result-wrong';icon='✗'}
+      else if(!isSel&&isCorr){cls='result-missed';icon='!'}
+    }else if(isSel)cls='selected';
+    optHtml+='<div class="option '+cls+' '+(submitted?'disabled':'')+'" onclick="femaleQuizToggleOption('+q.id+',\''+opt.letter+'\')"><div class="opt-letter">'+opt.letter+'</div><div class="opt-text">'+escapeHtml(opt.text)+'</div>'+(submitted?'<div class="opt-icon">'+icon+'</div>':'')+'</div>';
+  });
+  let explanationHtml='';
+  if(submitted){
+    let rows='';
+    getOptions(q).forEach(function(opt){
+      const exp=explanationFor(q,opt);
+      rows+='<div class="expl-row '+(exp.isCorrect?'expl-correct':'expl-wrong')+'"><span class="expl-letter">'+(exp.isCorrect?'✓':'✗')+'</span><span class="expl-text"><strong>'+opt.letter+'.</strong> '+escapeHtml(exp.text)+(exp.added?'<span class="added-note">'+escapeHtml(exp.added)+'</span>':'')+'</span></div>';
+    });
+    const lesson=getLessonInfo(q);
+    explanationHtml='<div class="explanation show"><div class="expl-header">Explicații — '+escapeHtml(q.topic)+'</div><div class="expl-body">'+rows+'<div class="lesson-ref"><strong>Găsești în lecție la:</strong> '+escapeHtml(lesson.section)+' — <a href="#" onclick="goto(\''+lesson.page+'\');return false;">'+escapeHtml(lesson.page)+'</a></div></div></div>';
+  }
+  const actions=submitted
+    ? '<div class="q-actions"><button class="gbtn gbtn-secondary" type="button" onclick="femaleQuizClear('+q.id+')">Reîncearcă întrebarea</button></div>'
+    : '<div class="q-actions"><button class="gbtn gbtn-primary" type="button" onclick="femaleQuizSubmit('+q.id+')">Verifică răspunsul</button></div>';
+  const card=document.createElement('article');
+  card.className='question-card '+cardClass;
+  card.id='female-q-'+q.id;
+  card.innerHTML='<div class="q-num">Întrebarea '+q.id+' — '+escapeHtml(q.topic)+' '+badge+'</div><div class="q-text">'+escapeHtml(q.text)+'</div><div class="options" id="female-opts-'+q.id+'">'+optHtml+'</div>'+actions+explanationHtml;
+  container.appendChild(card);
 }
-document.addEventListener('change',function(e){
-  const option=e.target.closest?.('.quiz-option');
-  if(!option||!byId('femaleQuiz')?.contains(option))return;
-  const id=option.dataset.q;
-  const letter=option.dataset.letter;
-  const saved=state[id]||{selected:[],submitted:false};
-  if(saved.submitted)return;
-  saved.selected=e.target.checked?[...new Set([...(saved.selected||[]),letter])]:(saved.selected||[]).filter(function(x){return x!==letter});
-  state[id]=saved;
-  saveState();
-  render();
-});
-window.femaleQuizSubmit=function(id){
-  const saved=state[id]||{selected:[],submitted:false};
-  if(!saved.selected.length)return;
-  saved.submitted=true;
-  state[id]=saved;
-  saveState();
-  render();
-  byId('female-q'+id)?.scrollIntoView({behavior:'smooth',block:'center'});
+function updateOptionDom(qId){
+  const q=QUESTIONS.find(function(item){return item.id===qId});
+  const opts=byId('female-opts-'+qId);
+  if(!q||!opts)return;
+  const state=quizState[qId]||{selected:[],submitted:false};
+  opts.innerHTML=getOptions(q).map(function(opt){
+    const selected=state.selected.includes(opt.letter);
+    return '<div class="option '+(selected?'selected':'')+'" onclick="femaleQuizToggleOption('+q.id+',\''+opt.letter+'\')"><div class="opt-letter">'+opt.letter+'</div><div class="opt-text">'+escapeHtml(opt.text)+'</div></div>';
+  }).join('');
+}
+window.femaleQuizToggleOption=function(qId,letter){
+  const state=quizState[qId]||{selected:[],submitted:false};
+  if(state.submitted)return;
+  const idx=state.selected.indexOf(letter);
+  if(idx>=0)state.selected.splice(idx,1);else state.selected.push(letter);
+  quizState[qId]=state;
+  saveState(quizState);
+  updateOptionDom(qId);
 };
-window.femaleQuizClear=function(id){delete state[id];saveState();render()};
-window.femaleQuizReset=function(){if(confirm('Resetezi progresul pentru grilele de reproducător feminin?')){state={};saveState();render()}};
-window.femaleQuizShowOnlyUnanswered=function(){filterUnanswered=true;render()};
-window.femaleQuizShowAll=function(){filterUnanswered=false;render()};
-window.renderFemaleQuiz=render;
-if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',render);else render();
+window.femaleQuizSubmit=function(qId){
+  const state=quizState[qId]||{selected:[],submitted:false};
+  if(state.selected.length===0){showToast('Selectează cel puțin un răspuns.');return}
+  state.submitted=true;
+  quizState[qId]=state;
+  saveState(quizState);
+  recordToAnalysis(qId,state.selected);
+  buildQuiz(true);
+  byId('female-q-'+qId)?.scrollIntoView({behavior:'smooth',block:'center'});
+};
+window.femaleQuizClear=function(qId){
+  quizState[qId]={selected:[],submitted:false};
+  saveState(quizState);
+  setRunRecorded(false);
+  buildQuiz(true);
+};
+window.femaleQuizPrevPage=function(){if(currentPage>1){currentPage--;buildQuiz(false)}};
+window.femaleQuizNextPage=function(){if(currentPage<totalPages()){currentPage++;buildQuiz(false)}};
+window.femaleQuizReset=function(){
+  if(!confirm('Resetezi progresul pentru grilele de reproducător feminin?'))return;
+  quizState={};
+  saveState(quizState);
+  setRunRecorded(false);
+  byId('female-final-score')?.classList.remove('show');
+  buildQuiz(true);
+  renderAnalysis();
+};
+function updateProgress(){
+  const submitted=QUESTIONS.filter(function(q){return quizState[q.id]?.submitted});
+  const correct=submitted.filter(function(q){return sameSet(quizState[q.id].selected||[],q.correct)}).length;
+  const progress=byId('female-progress-text');
+  const bar=byId('female-progress-bar');
+  if(progress)progress.textContent=submitted.length+' / '+QUESTIONS.length+' completate';
+  if(bar)bar.style.width=Math.round(submitted.length/QUESTIONS.length*100)+'%';
+  updateAnalysisResetState();
+}
+function checkShowFinalScore(shouldScroll){
+  const scoreEl=byId('female-final-score');
+  if(!scoreEl)return;
+  if(!isQuizComplete()){scoreEl.classList.remove('show');return}
+  let correct=0,partial=0;
+  QUESTIONS.forEach(function(q){
+    const selected=(quizState[q.id]||{}).selected||[];
+    const status=correctStatus(q,selected);
+    if(status.full)correct++;else if(status.partial)partial++;
+  });
+  const pct=Math.round(correct/QUESTIONS.length*100);
+  const circle=byId('female-score-circle');
+  if(circle){circle.textContent=correct+'/'+QUESTIONS.length;circle.className='score-circle '+(pct>=70?'score-good':pct>=40?'score-mid':'score-bad')}
+  if(byId('female-score-title'))byId('female-score-title').textContent=pct>=70?'Bine făcut!':pct>=40?'Mai studiază puțin':'Continuă să repeți';
+  if(byId('female-score-sub'))byId('female-score-sub').textContent=correct+' corecte complet, '+partial+' parțiale, '+(QUESTIONS.length-correct-partial)+' greșite';
+  scoreEl.classList.add('show');
+  if(!isRunRecorded()){
+    const analysis=loadAnalysis();
+    analysis.sessions.push({date:new Date().toLocaleDateString('ro-RO'),att:QUESTIONS.length,cor:correct});
+    saveAnalysis(analysis);
+    setRunRecorded(true);
+    renderAnalysis();
+  }
+  if(shouldScroll)scoreEl.scrollIntoView({behavior:'smooth',block:'center'});
+}
+function recordToAnalysis(qId,selected){
+  const q=QUESTIONS.find(function(item){return item.id===qId});
+  if(!q)return;
+  const analysis=loadAnalysis();
+  const lesson=getLessonInfo(q);
+  const status=correctStatus(q,selected);
+  const wrongOptions=selected.filter(function(s){return !q.correct.includes(s)});
+  const missedOptions=q.correct.filter(function(c){return !selected.includes(c)});
+  if(!analysis.topicErrors[q.topic])analysis.topicErrors[q.topic]={topic:q.topic,attempts:0,correct:0,errors:[],lessonSection:lesson.section,lessonPage:lesson.page};
+  analysis.topicErrors[q.topic].attempts++;
+  if(status.full)analysis.topicErrors[q.topic].correct++;
+  else analysis.topicErrors[q.topic].errors.push({qId:qId,date:new Date().toLocaleDateString('ro-RO'),wrongOptions:wrongOptions,missedOptions:missedOptions,selected:selected});
+  saveAnalysis(analysis);
+  renderAnalysis();
+}
+function getCurrentAnalysisSnapshot(){
+  const topicMap={};
+  let totalAnswered=0,totalCorrect=0;
+  QUESTIONS.forEach(function(q){
+    const state=quizState[q.id];
+    if(!state||!state.submitted)return;
+    const lesson=getLessonInfo(q);
+    const selected=state.selected||[];
+    const status=correctStatus(q,selected);
+    totalAnswered++;
+    if(!topicMap[q.topic])topicMap[q.topic]={topic:q.topic,attempts:0,correct:0,errors:[],lessonSection:lesson.section,lessonPage:lesson.page};
+    topicMap[q.topic].attempts++;
+    if(status.full){topicMap[q.topic].correct++;totalCorrect++}
+    else topicMap[q.topic].errors.push({qId:q.id,wrongOptions:selected.filter(function(s){return !q.correct.includes(s)}),missedOptions:q.correct.filter(function(c){return !selected.includes(c)}),selected:selected});
+  });
+  return {topicList:Object.values(topicMap),totalAnswered:totalAnswered,totalCorrect:totalCorrect,totalWrong:totalAnswered-totalCorrect};
+}
+function renderAnalysis(){
+  const container=byId('female-analysis-content');
+  if(!container)return;
+  const analysis=loadAnalysis();
+  const snapshot=getCurrentAnalysisSnapshot();
+  const topicList=snapshot.topicList;
+  if(snapshot.totalAnswered===0){
+    container.innerHTML='<div class="no-data"><h3>Nicio grilă completată încă</h3><p>Mergi la tabul Grile și rezolvă câteva întrebări pentru analiza pe capitole.</p></div>';
+    updateAnalysisResetState();
+    return;
+  }
+  const pct=snapshot.totalAnswered?Math.round(snapshot.totalCorrect/snapshot.totalAnswered*100):0;
+  const color=pct>=70?'#059669':pct>=40?'#D97706':'#E11D48';
+  let html='<div class="an-analysis-top"><div class="an-stats-row"><div class="an-stat-box"><div class="an-snum">'+snapshot.totalAnswered+'</div><div class="an-slbl">Întrebări</div></div><div class="an-stat-box"><div class="an-snum" style="color:#059669">'+snapshot.totalCorrect+'</div><div class="an-slbl">Corecte</div></div><div class="an-stat-box"><div class="an-snum" style="color:#E11D48">'+snapshot.totalWrong+'</div><div class="an-slbl">Greșite</div></div><div class="an-stat-box"><div class="an-snum" style="color:'+color+'">'+pct+'%</div><div class="an-slbl">Acuratețe</div></div></div><div class="an-gauge-inline"><div class="an-gauge-meta"><strong>Scor general</strong><span>'+snapshot.totalCorrect+' / '+snapshot.totalAnswered+' corecte</span></div><div class="an-gauge-track"><div class="an-gauge-fill" style="width:'+pct+'%;background:'+color+'"></div></div><div class="an-gauge-labels"><span>0%</span><span>40%</span><span>70%</span><span>100%</span></div></div></div>';
+  html+='<div class="an-two-col"><div><div class="an-sec-h">Performanță pe topice</div>';
+  topicList.sort(function(a,b){return (a.correct/a.attempts)-(b.correct/b.attempts)}).forEach(function(t){
+    const tp=Math.round(t.correct/t.attempts*100);
+    const col=tp>=70?'#059669':tp>=40?'#D97706':'#E11D48';
+    html+='<div class="an-topic-card"><div class="an-tc-head"><span>'+escapeHtml(t.topic)+'</span><span style="color:'+col+'">'+tp+'%</span></div><div class="an-tc-bar-wrap"><div class="an-tc-bar" style="width:'+tp+'%;background:'+col+'"></div></div><div class="an-tc-detail">'+t.attempts+' întrebări · '+t.correct+' corecte · <a href="#" onclick="goto(\''+t.lessonPage+'\');return false;">Revezi '+escapeHtml(t.lessonSection)+'</a></div></div>';
+  });
+  html+='</div><div><div class="an-sec-h">Sesiuni complete</div>';
+  const sessions=(analysis.sessions||[]).filter(function(s){return s.att===QUESTIONS.length}).slice(-5).reverse();
+  if(!sessions.length)html+='<div class="an-topic-card"><div class="an-tc-detail">Aici apar rezultatele după ce termini toate cele 42 de grile.</div></div>';
+  sessions.forEach(function(s){
+    const sp=Math.round(s.cor/s.att*100);
+    const col=sp>=70?'#059669':sp>=40?'#D97706':'#E11D48';
+    html+='<div class="an-topic-card"><div class="an-tc-head"><span>'+escapeHtml(s.date)+'</span><span style="color:'+col+'">'+s.cor+'/'+s.att+'</span></div><div class="an-tc-bar-wrap"><div class="an-tc-bar" style="width:'+sp+'%;background:'+col+'"></div></div><div class="an-tc-detail">'+sp+'% corecte</div></div>';
+  });
+  html+='</div></div>';
+  const weakTopics=topicList.filter(function(t){return t.errors.length>0}).sort(function(a,b){return b.errors.length-a.errors.length});
+  if(weakTopics.length){
+    html+='<div class="an-sec-h">Unde greșești exact</div><button class="an-accordion-btn" id="female-err-toggle" type="button" onclick="femaleQuizToggleErrDetails()"><span>▾ Vezi detalii greșeli</span><span>'+weakTopics.length+' topice</span></button><div class="an-accordion-body" id="female-err-body" hidden>';
+    weakTopics.forEach(function(t){
+      html+='<div class="an-err-card"><div class="an-err-card-head"><strong>'+escapeHtml(t.topic)+'</strong><span class="an-err-badge">'+t.errors.length+' greșeli</span></div>';
+      t.errors.slice(-4).reverse().forEach(function(err){
+        const q=QUESTIONS.find(function(item){return item.id===err.qId});
+        if(!q)return;
+        html+='<div class="an-err-opt an-ew"><div class="an-err-opt-lbl">Întrebarea '+q.id+' · bifat: '+(err.selected.length?err.selected.join(', '):'nimic')+'</div><div class="an-err-opt-txt">Corect era: '+q.correct.join(', ')+'. '+escapeHtml(REASONS[q.id]||'Revezi explicațiile grilei.')+'</div></div>';
+      });
+      html+='</div>';
+    });
+    html+='</div>';
+  }
+  container.innerHTML=html;
+  updateAnalysisResetState();
+}
+window.femaleQuizToggleErrDetails=function(){
+  const body=byId('female-err-body');
+  const btn=byId('female-err-toggle');
+  if(!body||!btn)return;
+  const open=!body.hasAttribute('hidden');
+  if(open)body.setAttribute('hidden','');else body.removeAttribute('hidden');
+  btn.classList.toggle('is-open',!open);
+  const label=btn.querySelector('span');
+  if(label)label.textContent=(open?'▾':'▴')+' Vezi detalii greșeli';
+};
+function updateAnalysisResetState(){
+  const btn=byId('female-analysis-reset-btn');
+  if(!btn)return;
+  btn.disabled=!isQuizComplete();
+  btn.title=isQuizComplete()?'':'Finalizează toate întrebările înainte să poți reseta analiza.';
+}
+window.femaleQuizResetAnalysis=function(){
+  if(!isQuizComplete()){showToast('Finalizează toate întrebările înainte să resetezi analiza.');return}
+  if(!confirm('Ștergi analiza pentru grilele de reproducător feminin?'))return;
+  localStorage.removeItem(ANALYSIS_KEY);
+  renderAnalysis();
+};
+window.femaleQuizSwitchTab=function(tab,btn){
+  document.querySelectorAll('#page-grile .gtab-panel').forEach(function(panel){panel.classList.remove('active')});
+  document.querySelectorAll('#page-grile .gtab-btn').forEach(function(button){button.classList.remove('active')});
+  byId('gtab-'+tab)?.classList.add('active');
+  btn?.classList.add('active');
+  if(tab==='analysis')renderAnalysis();
+};
+window.renderFemaleQuiz=function(){buildQuiz(true);renderAnalysis()};
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',window.renderFemaleQuiz);else window.renderFemaleQuiz();
 })();
