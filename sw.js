@@ -1,4 +1,4 @@
-const CACHE = 'biologie-v20';
+const CACHE = 'biologie-v21';
 const BASE = new URL('./', self.location.href).pathname;
 const ASSETS = [
   BASE + 'index.html',
@@ -32,11 +32,7 @@ const ASSETS = [
   BASE + 'img reproducator feminin/tract_genital_feminin_barrons.png.webp',
   BASE + 'img reproducator feminin/ovar_lunar_barrons.png.webp',
   BASE + 'img reproducator feminin/vulva_barrons.png.webp',
-  BASE + 'img reproducator feminin/foite_embrionare_barrons.png.webp',
-  BASE + 'img reproducator feminin/etapele_dezvoltarii_barrons.png.webp',
-  BASE + 'img reproducator feminin/membranele_embrionului_barrons.png.webp',
   BASE + 'img reproducator feminin/dupa_fecundatie_barrons.png.webp',
-  BASE + 'img reproducator feminin/fat_inainte_nastere_barrons.png.webp',
   BASE + 'img reproducator feminin/tract_genital_lateral_barrons.png.webp',
   BASE + 'img reproducator feminin/formare_deav_ovulului_barrons.png.webp',
   BASE + 'img reproducator feminin/uter_trompe_barrons.png.webp',
