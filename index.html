@@ -11,6 +11,7 @@
 <meta property="og:description" content="Biologie pentru admitere la UMF Cluj, cu lecții, figuri anatomice și grile UMF.">
 <meta property="og:url" content="https://danghg18.github.io/bio-barrons-umf/">
 <link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="icon-192.png">
 <meta name="theme-color" content="#0F172A">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -168,8 +169,9 @@ kbd{font-size:11px;padding:2px 6px;border-radius:4px;background:rgba(15,23,42,0.
 .lab-footer-blurb{font-size:13px;color:var(--ink-400);line-height:1.55;max-width:300px;}
 .lab-footer-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;}
 .lab-footer-cols h5{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-400);margin-bottom:14px;}
-.lab-footer-cols a{display:block;font-size:14px;color:var(--ink-300);padding:3px 0;font-weight:500;}
+.lab-footer-cols a,.lab-footer-note{display:block;font-size:14px;color:var(--ink-300);padding:3px 0;font-weight:500;}
 .lab-footer-cols a:hover{color:#fff;}
+.lab-footer-note{color:var(--ink-500);}
 .lab-footer-bottom{max-width:1360px;margin:0 auto;padding-top:24px;border-top:1px solid rgba(255,255,255,0.08);display:flex;justify-content:space-between;font-size:12px;color:var(--ink-400);font-weight:600;}
 
 /* ── COMMAND PALETTE ── */
@@ -371,17 +373,17 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
     </a>
     <nav class="lab-nav">
       <a href="#lab-bento">Cuprins</a>
-      <a href="sistemul_renal_complet.html">Lecții</a>
+      <a href="introducere_anatomie_fiziologie.html">Lecții</a>
       <a href="grile_sistemul_urinar.html">Grile UMF</a>
     </nav>
-    <button class="lab-search-btn" id="search-btn">
+    <button class="lab-search-btn" id="search-btn" aria-label="Caută capitol sau termen" title="Caută capitol sau termen">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
       <span>Caută capitol, termen…</span>
       <kbd>⌘K</kbd>
     </button>
     <div class="lab-progress-pill">
       <svg id="topbar-ring" width="28" height="28" style="display:block;flex-shrink:0"></svg>
-      <span><strong id="topbar-progress-done">0</strong> / <span id="topbar-progress-total">149</span></span>
+      <span><strong id="topbar-progress-done">0</strong> / <span id="topbar-progress-total">251</span></span>
     </div>
   </div>
 </header>
@@ -403,8 +405,8 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
         Gândit de un student, pentru studenți.
       </p>
       <div class="lab-hero-cta">
-        <a class="lab-btn lab-btn-primary" href="sistemul_renal_complet.html">
-          Începe cu Capitolul 20
+        <a class="lab-btn lab-btn-primary" href="introducere_anatomie_fiziologie.html">
+          Începe cu Capitolul 1
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </a>
         <a class="lab-btn lab-btn-ghost" href="#lab-bento">
@@ -414,45 +416,45 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
       <div class="lab-hero-stats">
         <div><div class="lab-hs-n">23</div><div class="lab-hs-l">capitole</div></div>
         <div class="lab-hs-div"></div>
-        <div><div class="lab-hs-n">3</div><div class="lab-hs-l">lecții</div></div>
+        <div><div class="lab-hs-n">4</div><div class="lab-hs-l">lecții</div></div>
         <div class="lab-hs-div"></div>
-        <div><div class="lab-hs-n">149</div><div class="lab-hs-l">grile disponibile</div></div>
+        <div><div class="lab-hs-n">251</div><div class="lab-hs-l">grile disponibile</div></div>
         <div class="lab-hs-div"></div>
-        <div><div class="lab-hs-n">42</div><div class="lab-hs-l">figuri</div></div>
+        <div><div class="lab-hs-n">48</div><div class="lab-hs-l">figuri</div></div>
       </div>
     </div>
     <div class="lab-hero-r">
-      <!-- Card 1 – Cap. 20 -->
+      <!-- Card 1 – Cap. 1 -->
       <div class="lab-hero-card lab-hero-card-1">
         <div class="lab-hero-card-top">
-          <span class="lab-chip lab-chip-emerald">Capitolul 20</span>
+          <span class="lab-chip lab-chip-emerald">Capitolul 1</span>
           <span class="lab-chip-done">● Complet</span>
         </div>
         <div class="lab-hero-fig">
-          <img src="imagini/rinichi_si_componente_barrons.png.webp" alt="Rinichi">
+          <img src="img introducere/niveluri_organizare_barrons.png.webp" alt="Niveluri de organizare structurală">
         </div>
         <div class="lab-hero-card-body">
-          <div class="lab-hero-card-emoji">🫘</div>
+          <div class="lab-hero-card-emoji">🏛️</div>
           <div>
-            <div class="lab-hero-card-title">Sistemul urinar</div>
-            <div class="lab-hero-card-sub">Nefron · Filtrare · ADH · 80 grile</div>
+            <div class="lab-hero-card-title">Introducere anatomie</div>
+            <div class="lab-hero-card-sub">Homeostazie · Planuri · Cavități · 60 grile</div>
           </div>
         </div>
         <div class="lab-hero-card-bar">
           <div class="lab-prog-bar"><div class="lab-prog-bar-fill" style="width:100%;background:var(--lab-emerald)"></div></div>
         </div>
       </div>
-      <!-- Card 2 – Cap. 22 -->
+      <!-- Card 2 – Cap. 20 -->
       <div class="lab-hero-card lab-hero-card-2">
         <div class="lab-hero-card-top">
-          <span class="lab-chip lab-chip-teal">Capitolul 22</span>
+          <span class="lab-chip lab-chip-teal">Capitolul 20</span>
           <span class="lab-chip-done">● Complet</span>
         </div>
         <div class="lab-hero-card-body" style="padding:16px 18px;">
-          <div class="lab-hero-card-emoji teal">♂️</div>
+          <div class="lab-hero-card-emoji teal">🫘</div>
           <div>
-            <div class="lab-hero-card-title">Reproducător masculin</div>
-            <div class="lab-hero-card-sub">Spermatogeneză · FSH/LH</div>
+            <div class="lab-hero-card-title">Sistemul urinar</div>
+            <div class="lab-hero-card-sub">Nefron · Filtrare · ADH · 80 grile</div>
           </div>
         </div>
         <div class="lab-hero-card-bar">
@@ -466,7 +468,7 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
           <div class="lab-hero-card-mini-num" id="hero-progress-done">0</div>
           <div>
             <div class="lab-hero-card-mini-lbl" id="hero-progress-label">grile completate</div>
-            <div class="lab-hero-card-mini-sub" id="hero-progress-sub">din 149 disponibile · 0%</div>
+            <div class="lab-hero-card-mini-sub" id="hero-progress-sub">din 251 disponibile · 0%</div>
           </div>
         </div>
       </div>
@@ -516,12 +518,22 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
           <div class="lab-bento-cat-blurb">Fundamentele — organizare, chimie, celulă, țesuturi.</div>
         </div>
         <div class="lab-bento-cat-ring">
-          <svg class="cat-ring" data-done="0" data-total="4" data-color="#2563EB" width="52" height="52" style="display:block"></svg>
-          <div class="lab-bento-cat-ring-inner">0/4</div>
+          <svg class="cat-ring" data-done="1" data-total="4" data-color="#2563EB" width="52" height="52" style="display:block"></svg>
+          <div class="lab-bento-cat-ring-inner">1/4</div>
         </div>
       </div>
       <div class="lab-bento-items">
-        <button class="lab-item lab-item-soon"><div class="lab-item-num">01</div><div class="lab-item-emoji">🏛️</div><div><div class="lab-item-title">Introducere în anatomie și fiziologie</div><div class="lab-item-tags"><span>Homeostazie</span><span>Planuri</span><span>Organizare</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <a href="introducere_anatomie_fiziologie.html" class="lab-item lab-item-done">
+          <div class="lab-item-num">01</div>
+          <div class="lab-item-emoji">🏛️</div>
+          <div>
+            <div class="lab-item-title">Introducere în anatomie și fiziologie</div>
+            <div class="lab-item-tags"><span>Homeostazie</span><span>Planuri</span><span>Organizare</span><span>Cavități</span><span>60 grile</span></div>
+          </div>
+          <div class="lab-item-done-mark">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>
+          </div>
+        </a>
         <button class="lab-item lab-item-soon"><div class="lab-item-num">02</div><div class="lab-item-emoji">⚗️</div><div><div class="lab-item-title">Bazele chimice ale anatomiei și fiziologiei</div><div class="lab-item-tags"><span>Atomi</span><span>pH</span><span>Proteine</span><span>ADN</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
         <button class="lab-item lab-item-soon"><div class="lab-item-num">03</div><div class="lab-item-emoji">🔬</div><div><div class="lab-item-title">Celula și fiziologia celulară</div><div class="lab-item-tags"><span>Organite</span><span>Mitoza</span><span>Transport</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
         <button class="lab-item lab-item-soon"><div class="lab-item-num">04</div><div class="lab-item-emoji">🧫</div><div><div class="lab-item-title">Țesuturile</div><div class="lab-item-tags"><span>Epiteliu</span><span>Conjunctiv</span><span>Muscular</span><span>Nervos</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
@@ -700,7 +712,7 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
 </section>
 
 <!-- ── FEATURES ── -->
-<section class="lab-features">
+<section class="lab-features" id="lab-tools">
   <div class="lab-section-head" style="margin-bottom:32px;">
     <div>
       <div class="lab-eyebrow">Instrumente</div>
@@ -747,6 +759,8 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
       <div>
         <h5>Material</h5>
         <a href="#lab-bento">23 capitole</a>
+        <a href="introducere_anatomie_fiziologie.html">Lecție · Introducere în anatomie</a>
+        <a href="introducere_anatomie_fiziologie.html#grile">Quiz · Introducere în anatomie</a>
         <a href="sistemul_renal_complet.html">Lecție · Sistemul urinar</a>
         <a href="grile_sistemul_urinar.html">Quiz · Sistemul urinar</a>
         <a href="sistemul_reproducator_masculin.html">Lecție · Reproducător masculin</a>
@@ -757,16 +771,16 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
       </div>
       <div>
         <h5>Instrumente</h5>
-        <a href="#">Evidențiator</a>
-        <a href="#">Analiză progres</a>
-        <a href="#">Mod noapte</a>
-        <a href="#">Offline PWA</a>
+        <a href="sistemul_renal_complet.html">Evidențiator</a>
+        <a href="grile_sistemul_urinar.html?goto=grile">Analiză progres</a>
+        <a href="#lab-tools">Mod noapte</a>
+        <a href="#lab-tools">Offline PWA</a>
       </div>
       <div>
         <h5>UMF Cluj</h5>
-        <a href="#">Despre admitere</a>
-        <a href="#">Programa biologie</a>
-        <a href="#">Format grile</a>
+        <span class="lab-footer-note">Despre admitere · în curând</span>
+        <span class="lab-footer-note">Programa biologie · în curând</span>
+        <span class="lab-footer-note">Format grile · în curând</span>
       </div>
     </div>
   </div>
@@ -796,7 +810,7 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
   </div>
 </div>
 
-<button id="dm-btn" title="Mod noapte">🌙</button>
+<button id="dm-btn" title="Mod noapte" aria-label="Comută modul noapte">🌙</button>
 
 <script>
 /* ── DARK MODE ── */
@@ -833,6 +847,7 @@ function drawRing(svgEl, done, total, color) {
 
 /* Dynamic quiz progress */
 const QUIZ_PROGRESS_SOURCES = [
+  { key: 'introducere_quiz_v1', total: 60 },
   { key: 'urinar_quiz_v4', total: 80 },
   { key: 'reproducator_masculin_quiz_v1', total: 69 },
   { key: 'reproducator_feminin_quiz_v1', total: 42 },
@@ -896,7 +911,7 @@ document.querySelectorAll('.cat-ring').forEach(function(svg){
 
 /* ── COMMAND PALETTE DATA ── */
 const CHAPTERS=[
-  {num:1,icon:'🏛️',name:'Introducere în anatomie și fiziologie',cat:'Bazele Anatomiei',color:'#2563EB',colorLight:'#EFF6FF',done:false,kw:'homeostaza plan anatomic cavitati regiuni'},
+  {num:1,icon:'🏛️',name:'Introducere în anatomie și fiziologie',cat:'Bazele Anatomiei',color:'#2563EB',colorLight:'#EFF6FF',done:true,url:'introducere_anatomie_fiziologie.html',kw:'homeostaza homeostazie plan anatomic planuri cavitati regiuni anatomie fiziologie feedback metabolism tesut organ sistem'},
   {num:2,icon:'⚗️',name:'Bazele chimice ale anatomiei și fiziologiei',cat:'Bazele Anatomiei',color:'#2563EB',colorLight:'#EFF6FF',done:false,kw:'atomi molecule legatura chimica pH acid baza enzima'},
   {num:3,icon:'🔬',name:'Celula și fiziologia celulară',cat:'Bazele Anatomiei',color:'#2563EB',colorLight:'#EFF6FF',done:false,kw:'membrana nucleu mitocondrie ribozom ATP transport activ pasiv'},
   {num:4,icon:'🧫',name:'Țesuturile',cat:'Bazele Anatomiei',color:'#2563EB',colorLight:'#EFF6FF',done:false,kw:'epitelial conjunctiv muscular nervos histologie'},
