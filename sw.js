@@ -1,8 +1,9 @@
-const CACHE = 'biologie-v27';
+const CACHE = 'biologie-v28';
 const BASE = new URL('./', self.location.href).pathname;
 const ASSETS = [
   BASE + 'index.html',
   BASE + 'introducere_anatomie_fiziologie.html',
+  BASE + 'celula_si_fiziologia_celulara.html',
   BASE + 'sistemul_renal_complet.html',
   BASE + 'grile_sistemul_urinar.html',
   BASE + 'sistemul_reproducator_masculin.html',
@@ -25,6 +26,11 @@ const ASSETS = [
   BASE + 'img introducere/planuri_barrons.png.webp',
   BASE + 'img introducere/cavitatile_corpului_barrons.png.webp',
   BASE + 'img introducere/regiuni_anatomice_barrons.png.webp',
+  BASE + 'img celula/celula_barrons.png.webp',
+  BASE + 'img celula/tipuri_de_celule_barrons.png.webp',
+  BASE + 'img celula/osmoza_barrons.png.webp',
+  BASE + 'img celula/mozaic_fluid_barrons.png.webp',
+  BASE + 'img celula/endocitoza_barrons.png.webp',
   BASE + 'imagini/rinichi_si_componente_barrons.png.webp',
   BASE + 'imagini/nefron_detaliat_barrons.png.webp',
   BASE + 'imagini/functia_nefron_barrons.png.webp',

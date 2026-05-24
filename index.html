@@ -420,7 +420,7 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
         <div class="lab-hs-div"></div>
         <div><div class="lab-hs-n">251</div><div class="lab-hs-l">grile disponibile</div></div>
         <div class="lab-hs-div"></div>
-        <div><div class="lab-hs-n">48</div><div class="lab-hs-l">figuri</div></div>
+        <div><div class="lab-hs-n">53</div><div class="lab-hs-l">figuri</div></div>
       </div>
     </div>
     <div class="lab-hero-r">
@@ -518,8 +518,8 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
           <div class="lab-bento-cat-blurb">Fundamentele — organizare, chimie, celulă, țesuturi.</div>
         </div>
         <div class="lab-bento-cat-ring">
-          <svg class="cat-ring" data-done="1" data-total="4" data-color="#2563EB" width="52" height="52" style="display:block"></svg>
-          <div class="lab-bento-cat-ring-inner">1/4</div>
+          <svg class="cat-ring" data-done="2" data-total="4" data-color="#2563EB" width="52" height="52" style="display:block"></svg>
+          <div class="lab-bento-cat-ring-inner">2/4</div>
         </div>
       </div>
       <div class="lab-bento-items">
@@ -535,7 +535,17 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
           </div>
         </a>
         <button class="lab-item lab-item-soon"><div class="lab-item-num">02</div><div class="lab-item-emoji">⚗️</div><div><div class="lab-item-title">Bazele chimice ale anatomiei și fiziologiei</div><div class="lab-item-tags"><span>Atomi</span><span>pH</span><span>Proteine</span><span>ADN</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
-        <button class="lab-item lab-item-soon"><div class="lab-item-num">03</div><div class="lab-item-emoji">🔬</div><div><div class="lab-item-title">Celula și fiziologia celulară</div><div class="lab-item-tags"><span>Organite</span><span>Mitoza</span><span>Transport</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <a href="celula_si_fiziologia_celulara.html" class="lab-item lab-item-done">
+          <div class="lab-item-num">03</div>
+          <div class="lab-item-emoji">🔬</div>
+          <div>
+            <div class="lab-item-title">Celula și fiziologia celulară</div>
+            <div class="lab-item-tags"><span>Organite</span><span>Membrană</span><span>Transport</span><span>ATP</span></div>
+          </div>
+          <div class="lab-item-done-mark">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>
+          </div>
+        </a>
         <button class="lab-item lab-item-soon"><div class="lab-item-num">04</div><div class="lab-item-emoji">🧫</div><div><div class="lab-item-title">Țesuturile</div><div class="lab-item-tags"><span>Epiteliu</span><span>Conjunctiv</span><span>Muscular</span><span>Nervos</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
       </div>
     </div>
@@ -760,6 +770,7 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
         <h5>Material</h5>
         <a href="#lab-bento">23 capitole</a>
         <a href="introducere_anatomie_fiziologie.html">Lecție · Introducere în anatomie</a>
+        <a href="celula_si_fiziologia_celulara.html">Lecție · Celula și fiziologia celulară</a>
         <a href="introducere_anatomie_fiziologie.html#grile">Quiz · Introducere în anatomie</a>
         <a href="sistemul_renal_complet.html">Lecție · Sistemul urinar</a>
         <a href="grile_sistemul_urinar.html">Quiz · Sistemul urinar</a>
@@ -913,7 +924,7 @@ document.querySelectorAll('.cat-ring').forEach(function(svg){
 const CHAPTERS=[
   {num:1,icon:'🏛️',name:'Introducere în anatomie și fiziologie',cat:'Bazele Anatomiei',color:'#2563EB',colorLight:'#EFF6FF',done:true,url:'introducere_anatomie_fiziologie.html',kw:'homeostaza homeostazie plan anatomic planuri cavitati regiuni anatomie fiziologie feedback metabolism tesut organ sistem'},
   {num:2,icon:'⚗️',name:'Bazele chimice ale anatomiei și fiziologiei',cat:'Bazele Anatomiei',color:'#2563EB',colorLight:'#EFF6FF',done:false,kw:'atomi molecule legatura chimica pH acid baza enzima'},
-  {num:3,icon:'🔬',name:'Celula și fiziologia celulară',cat:'Bazele Anatomiei',color:'#2563EB',colorLight:'#EFF6FF',done:false,kw:'membrana nucleu mitocondrie ribozom ATP transport activ pasiv'},
+  {num:3,icon:'🔬',name:'Celula și fiziologia celulară',cat:'Bazele Anatomiei',color:'#2563EB',colorLight:'#EFF6FF',done:true,url:'celula_si_fiziologia_celulara.html',kw:'membrana nucleu mitocondrie ribozom ATP transport activ pasiv procariote eucariote fosfolipide osmoza difuziune endocitoza exocitoza organite'},
   {num:4,icon:'🧫',name:'Țesuturile',cat:'Bazele Anatomiei',color:'#2563EB',colorLight:'#EFF6FF',done:false,kw:'epitelial conjunctiv muscular nervos histologie'},
   {num:5,icon:'🩺',name:'Sistemul tegumentar',cat:'Tegument, Oase & Mușchi',color:'#0891B2',colorLight:'#ECFEFF',done:false,kw:'piele epiderm derm hipoderm par unghie glanda sebacee sudoripara'},
   {num:6,icon:'🦷',name:'Oasele și articulațiile',cat:'Tegument, Oase & Mușchi',color:'#0891B2',colorLight:'#ECFEFF',done:false,kw:'os articulatie cartilaj sinoviala ligament tendon fractura'},
