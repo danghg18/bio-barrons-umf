@@ -1,9 +1,10 @@
-const CACHE = 'biologie-v28';
+const CACHE = 'biologie-v30';
 const BASE = new URL('./', self.location.href).pathname;
 const ASSETS = [
   BASE + 'index.html',
   BASE + 'introducere_anatomie_fiziologie.html',
   BASE + 'celula_si_fiziologia_celulara.html',
+  BASE + 'oasele_si_articulatiile.html',
   BASE + 'sistemul_renal_complet.html',
   BASE + 'grile_sistemul_urinar.html',
   BASE + 'sistemul_reproducator_masculin.html',
@@ -17,6 +18,8 @@ const ASSETS = [
   BASE + 'assets/css/lesson.css',
   BASE + 'assets/css/chapter-redesign.css?v=20260504-highlighter1',
   BASE + 'manifest.json',
+  BASE + 'assets/logo-mark.svg',
+  BASE + 'assets/logo-horizontal.svg',
   BASE + 'icon-192.png',
   BASE + 'icon-512.png',
   BASE + 'apple-touch-icon.png',
@@ -31,6 +34,10 @@ const ASSETS = [
   BASE + 'img celula/osmoza_barrons.png.webp',
   BASE + 'img celula/mozaic_fluid_barrons.png.webp',
   BASE + 'img celula/endocitoza_barrons.png.webp',
+  BASE + 'img oase/tipuri_de_oase_barrons.png.webp',
+  BASE + 'img oase/os_lung_barrons.png.webp',
+  BASE + 'img oase/histologie_os_barrons.png.webp',
+  BASE + 'img oase/tipuri_de_articulatii_barrons.png.webp',
   BASE + 'imagini/rinichi_si_componente_barrons.png.webp',
   BASE + 'imagini/nefron_detaliat_barrons.png.webp',
   BASE + 'imagini/functia_nefron_barrons.png.webp',
