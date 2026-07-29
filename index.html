@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Barron's Biologie – UMF Cluj</title>
-<meta name="description" content="Platformă de biologie pentru admiterea la UMF Cluj: 23 de capitole, lecții ilustrate, grile UMF cu explicații și progres de studiu.">
+<meta name="description" content="Platformă de biologie pentru admiterea la UMF Cluj: 7 lecții ilustrate publicate dintr-o programă de 23 de capitole planificate.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://danghg18.github.io/bio-barrons-umf/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Barron's Biologie – UMF Cluj">
-<meta property="og:description" content="Biologie pentru admitere la UMF Cluj, cu lecții, figuri anatomice și grile UMF.">
+<meta property="og:description" content="Biologie pentru admitere la UMF Cluj, cu lecții structurate și figuri anatomice explicate.">
 <meta property="og:url" content="https://danghg18.github.io/bio-barrons-umf/">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" type="image/png" href="icon-192.png">
@@ -41,24 +41,25 @@ a{color:inherit;text-decoration:none;}
 button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
 img{max-width:100%;display:block;}
 *:focus-visible{outline:2px solid var(--primary);outline-offset:2px;border-radius:4px;}
+.lab-skip{position:fixed;top:8px;left:8px;z-index:1002;padding:10px 14px;border-radius:10px;background:var(--ink);color:#fff;font-weight:800;transform:translateY(-160%);transition:transform .15s;}
+.lab-skip:focus{transform:translateY(0);}
 
 /* ── TOPBAR ── */
 .lab-topbar{position:sticky;top:0;z-index:50;background:rgba(246,246,243,0.88);backdrop-filter:blur(12px);border-bottom:1px solid rgba(15,23,42,0.06);}
-.lab-topbar-inner{max-width:1360px;margin:0 auto;padding:14px 28px;display:grid;grid-template-columns:auto 1fr auto auto;align-items:center;gap:24px;}
-.lab-brand{display:inline-flex;align-items:center;gap:10px;}
+.lab-topbar-inner{max-width:1360px;min-height:68px;margin:0 auto;padding:10px 28px;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:24px;}
+.lab-brand{display:inline-flex;align-items:center;justify-self:start;width:max-content;gap:10px;}
 .lab-brand-mark{width:30px;height:30px;border-radius:8px;background:transparent;color:#fff;display:inline-flex;align-items:center;justify-content:center;overflow:hidden;}
 .lab-brand-mark img{width:30px;height:30px;display:block;}
 .lab-brand-name{font-weight:800;font-size:17px;letter-spacing:-0.02em;}
 .lab-brand-sub{color:var(--ink-400);font-weight:600;}
-.lab-nav{display:flex;gap:4px;}
+.lab-nav{display:flex;justify-self:center;width:max-content;gap:2px;padding:4px;background:rgba(255,255,255,.72);border:1px solid rgba(15,23,42,.06);border-radius:12px;box-shadow:0 8px 24px rgba(15,23,42,.035);}
 .lab-nav a{padding:8px 14px;font-size:14px;font-weight:600;color:var(--ink-600);border-radius:8px;transition:all .15s;}
 .lab-nav a:hover{color:var(--ink);background:rgba(15,23,42,.04);}
-.lab-search-btn{display:inline-flex;align-items:center;gap:10px;padding:8px 12px 8px 14px;background:#fff;border:1px solid rgba(15,23,42,0.08);border-radius:10px;color:var(--ink-500);font-size:13px;font-weight:500;min-width:240px;transition:all .15s;}
+.lab-topbar-actions{display:flex;align-items:center;justify-self:end;gap:8px;min-width:0;}
+.lab-search-btn{display:inline-flex;align-items:center;gap:10px;min-height:42px;padding:8px 12px 8px 14px;background:#fff;border:1px solid rgba(15,23,42,0.08);border-radius:10px;color:var(--ink-500);font-size:13px;font-weight:500;min-width:240px;transition:all .15s;}
 .lab-search-btn:hover{border-color:rgba(15,23,42,0.18);color:var(--ink-700);}
 .lab-search-btn span{flex:1;text-align:left;}
 kbd{font-size:11px;padding:2px 6px;border-radius:4px;background:rgba(15,23,42,0.06);border:1px solid var(--border);color:var(--ink-600);font-weight:600;}
-.lab-progress-pill{display:inline-flex;align-items:center;gap:8px;padding:6px 12px 6px 8px;background:#fff;border:1px solid rgba(15,23,42,0.08);border-radius:999px;font-size:13px;font-weight:700;color:var(--ink-600);}
-.lab-progress-pill strong{color:var(--ink);font-weight:900;}
 
 /* ── HERO ── */
 .lab-hero{max-width:1360px;margin:0 auto;padding:52px 28px 88px;}
@@ -101,9 +102,6 @@ kbd{font-size:11px;padding:2px 6px;border-radius:4px;background:rgba(15,23,42,0.
 .lab-hero-card-emoji.teal{background:var(--teal-light);}
 .lab-hero-card-title{font-size:14px;font-weight:800;color:var(--ink);letter-spacing:-0.01em;}
 .lab-hero-card-sub{font-size:11px;color:var(--ink-500);margin-top:2px;font-weight:500;}
-.lab-hero-card-bar{padding:0 18px 12px;}
-.lab-prog-bar{height:4px;border-radius:999px;background:rgba(148,163,184,0.2);overflow:hidden;}
-.lab-prog-bar-fill{height:100%;border-radius:999px;}
 .lab-hero-card-tag{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-500);}
 .lab-hero-card-mini{display:flex;align-items:center;gap:12px;}
 .lab-hero-card-mini-num{font-size:36px;font-weight:900;letter-spacing:-0.03em;line-height:1;color:var(--ink);}
@@ -159,7 +157,7 @@ kbd{font-size:11px;padding:2px 6px;border-radius:4px;background:rgba(15,23,42,0.
 .lab-feature{background:#fff;border:1px solid rgba(15,23,42,0.06);border-radius:20px;padding:24px;transition:all .2s;}
 .lab-feature:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(15,23,42,.06);}
 .lab-feature-icon{width:44px;height:44px;border-radius:12px;background:var(--ink-100);display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:16px;}
-.lab-feature h4{font-size:16px;font-weight:800;color:var(--ink);letter-spacing:-0.01em;margin-bottom:6px;}
+.lab-feature h3{font-size:16px;font-weight:800;color:var(--ink);letter-spacing:-0.01em;margin-bottom:6px;}
 .lab-feature p{font-family:'Noto Sans',sans-serif;font-size:13px;line-height:1.55;color:var(--ink-500);}
 
 /* ── FOOTER ── */
@@ -182,6 +180,8 @@ kbd{font-size:11px;padding:2px 6px;border-radius:4px;background:rgba(15,23,42,0.
 @keyframes palSlide{from{transform:translateY(-12px);opacity:0;}to{transform:translateY(0);opacity:1;}}
 .lab-palette-input{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--ink-200);color:var(--ink-500);}
 .lab-palette-input input{flex:1;background:none;border:none;outline:none;font-size:16px;font-weight:500;color:var(--ink);font-family:inherit;}
+.lab-palette-close{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:8px;color:var(--ink-500);font-size:20px;line-height:1;}
+.lab-palette-close:hover{background:var(--ink-100);color:var(--ink);}
 .lab-palette-list{max-height:440px;overflow-y:auto;padding:8px;}
 .lab-palette-empty{padding:40px 20px;text-align:center;color:var(--ink-500);font-size:14px;}
 .lab-palette-item{display:grid;grid-template-columns:32px 1fr auto;gap:12px;align-items:center;padding:10px 12px;border-radius:10px;width:100%;text-align:left;}
@@ -202,8 +202,9 @@ body.dark{
   --border:rgba(255,255,255,0.06);
 }
 body.dark .lab-topbar{background:rgba(10,14,26,0.88);border-bottom-color:rgba(255,255,255,0.06);}
+body.dark .lab-nav{background:rgba(30,41,59,.82);border-color:rgba(148,163,184,.14);box-shadow:0 10px 28px rgba(0,0,0,.18);}
 body.dark .lab-hero-card,body.dark .lab-bento-cat,body.dark .lab-feature,
-body.dark .lab-search-btn,body.dark .lab-progress-pill,body.dark .lab-hero-floater,
+body.dark .lab-search-btn,body.dark .lab-hero-floater,
 body.dark .lab-btn-ghost,body.dark .lab-badge,body.dark .lab-info-card{
   background:#141A2A;border-color:rgba(255,255,255,0.06);
 }
@@ -220,17 +221,22 @@ body.dark .lab-palette-emoji{background:#1E293B;}
 body.dark .lab-palette-overlay{background:rgba(0,0,0,0.6);}
 body.dark .lab-palette-match{color:#CBD5E1;}
 body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
+body.dark .lab-btn-primary{background:#2563EB;color:#fff;box-shadow:0 8px 24px rgba(37,99,235,.24);}
+body.dark .lab-btn-primary:hover:not(:disabled){background:#3B82F6;box-shadow:0 10px 28px rgba(37,99,235,.32);}
 
 /* ── DARK MODE FAB ── */
-#dm-btn{position:fixed;bottom:20px;right:20px;z-index:1001;width:44px;height:44px;border-radius:50%;background:#fff;border:1px solid rgba(15,23,42,0.12);box-shadow:0 3px 12px rgba(0,0,0,.12);font-size:18px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;}
+#dm-btn{position:static;z-index:1;width:42px;min-width:42px;height:42px;border-radius:12px;background:#fff;border:1px solid rgba(15,23,42,0.1);box-shadow:0 3px 12px rgba(0,0,0,.06);font-size:17px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;}
 #dm-btn:hover{transform:translateY(-2px);}
 
 /* ── RESPONSIVE ── */
 @media(max-width:1024px){
-  .lab-topbar-inner{grid-template-columns:auto 1fr auto auto;gap:16px;}
+  .lab-topbar-inner{grid-template-columns:minmax(0,1fr) auto;gap:16px;}
   .lab-nav{display:none;}
+  .lab-brand{grid-column:1;justify-self:start;}
+  .lab-topbar-actions{grid-column:2;justify-self:end;}
   .lab-search-btn{min-width:auto;}
   .lab-search-btn span{display:none;}
+  .lab-search-btn kbd{display:none;}
 }
 @media(max-width:1100px){
   .lab-topbar-inner{
@@ -247,6 +253,7 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
     border-radius:14px;
   }
   .lab-search-btn span{display:none;}
+  .lab-search-btn kbd{display:none;}
   .lab-hero{padding:22px 22px 44px;}
   .lab-hero-grid{grid-template-columns:1fr;gap:28px;}
   .lab-hero-l{max-width:760px;}
@@ -275,7 +282,7 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
   .lab-section-head{grid-template-columns:1fr;gap:16px;}
   .lab-section-head p{justify-self:start;}
   .lab-footer-top{flex-direction:column;gap:24px;}
-  .lab-footer-cols{grid-template-columns:1fr 1fr;}
+  .lab-footer-cols{grid-template-columns:1fr 1fr;width:100%;}
 }
 @media(max-width:600px){
   .lab-hero{padding:32px 16px 48px;}
@@ -297,7 +304,8 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
   }
   .lab-brand{min-width:0;}
   .lab-brand-name{font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-  .lab-search-btn{
+  .lab-search-btn,
+  #dm-btn{
     width:42px;
     min-width:42px;
     height:42px;
@@ -305,89 +313,88 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
     justify-content:center;
     border-radius:12px;
   }
-  .lab-search-btn kbd,.lab-progress-pill{display:none;}
+  .lab-search-btn kbd{display:none;}
   .lab-hero{padding:12px 14px 28px;}
   .lab-badge{margin-bottom:12px;padding:7px 11px;font-size:10px;line-height:1.3;}
   .lab-hero-title{font-size:clamp(32px,11vw,44px);line-height:0.92;margin-bottom:14px;}
   .lab-hero-lede{font-size:15px;line-height:1.58;margin-bottom:16px;}
   .lab-hero-cta{flex-direction:column;gap:10px;margin-bottom:18px;}
   .lab-btn{width:100%;justify-content:center;min-height:48px;}
-  .lab-hero-stats{
-    display:grid;
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    gap:12px;
-    padding-top:14px;
-    max-width:none;
-  }
-  .lab-hs-div{display:none;}
-  .lab-hero-stats > div{
-    background:#fff;
-    border:1px solid rgba(15,23,42,0.06);
-    border-radius:16px;
-    padding:12px 14px;
-  }
-  .lab-hs-n{font-size:22px;}
-  .lab-hero-r{gap:12px;margin-top:4px;}
-  .lab-hero-card-1 .lab-hero-fig img{height:140px;}
-  .lab-hero-card-top,.lab-hero-card-body,.lab-hero-card-bar{padding-left:14px;padding-right:14px;}
+  .lab-hero-stats,.lab-hero-r{display:none;}
+  .lab-info{padding:0 14px 16px;}
+  .lab-info-card{flex-direction:row;padding:14px;border-radius:16px;gap:12px;}
+  .lab-info-icon{width:32px;height:32px;}
+  .lab-bento{padding:32px 14px 44px;}
   .lab-section-head{margin-bottom:24px;}
   .lab-h2{font-size:clamp(28px,10vw,38px);}
   .lab-section-head p{font-size:14px;line-height:1.6;}
   .lab-bento-grid{gap:12px;}
   .lab-bento-cat{padding:16px;border-radius:18px;}
   .lab-bento-cat-head{
-    grid-template-columns:auto 1fr;
+    grid-template-columns:auto minmax(0,1fr) auto;
     gap:12px;
     margin-bottom:16px;
     padding-bottom:16px;
   }
-  .lab-bento-cat-ring{grid-column:1 / -1;justify-self:start;}
+  .lab-bento-cat-ring{grid-column:3;grid-row:1;justify-self:end;}
   .lab-bento-cat-title{font-size:18px;line-height:1.1;}
   .lab-bento-cat-blurb{font-size:12px;}
   .lab-item{
-    grid-template-columns:28px 28px 1fr;
+    grid-template-columns:28px 28px minmax(0,1fr) auto;
     gap:10px;
     padding:12px;
-    align-items:start;
+    align-items:center;
   }
-  .lab-item-done-mark,.lab-item-soon-mark{grid-column:3;justify-self:start;margin-top:4px;}
+  .lab-item-done-mark,.lab-item-soon-mark{grid-column:4;grid-row:1;justify-self:end;margin-top:0;}
   .lab-item-title{font-size:13px;}
-  .lab-info-card,.lab-feature{padding:16px;border-radius:18px;}
-  .lab-info-card{flex-direction:column;}
+  .lab-feature{padding:16px;border-radius:18px;}
   .lab-features-grid{gap:12px;}
   .lab-footer-bottom{flex-direction:column;align-items:flex-start;gap:10px;}
+  .lab-palette-overlay{padding:12px !important;align-items:flex-start;}
+  .lab-palette{display:flex;flex-direction:column;width:100%;max-height:calc(100dvh - 24px);border-radius:14px;}
+  .lab-palette-list{flex:1 1 auto;min-height:0;max-height:none;}
+  .lab-palette-input{padding:12px 14px;gap:10px;}
+  .lab-palette-foot{display:none;}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important;}
 }
 </style>
+<link rel="stylesheet" href="assets/css/home-redesign.css?v=20260717-atlas5">
 </head>
 <body>
 
 <div class="lab">
 
+<a class="lab-skip" href="#main-content">Sari la conținut</a>
+
 <!-- ── TOPBAR ── -->
 <header class="lab-topbar">
   <div class="lab-topbar-inner">
-    <a class="lab-brand" href="./">
+    <a class="lab-brand" href="index.html">
       <div class="lab-brand-mark">
         <img src="assets/logo-mark.svg" alt="" width="30" height="30">
       </div>
       <span class="lab-brand-name">Biologie<span class="lab-brand-sub">.bb</span></span>
     </a>
-    <nav class="lab-nav">
+    <nav class="lab-nav" aria-label="Navigare principală">
       <a href="#lab-bento">Cuprins</a>
       <a href="introducere_anatomie_fiziologie.html">Lecții</a>
-      <a href="grile_sistemul_urinar.html">Grile UMF</a>
+      <a href="#lab-tools">Instrumente</a>
     </nav>
-    <button class="lab-search-btn" id="search-btn" aria-label="Caută capitol sau termen" title="Caută capitol sau termen">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-      <span>Caută capitol, termen…</span>
-      <kbd>⌘K</kbd>
-    </button>
-    <div class="lab-progress-pill">
-      <svg id="topbar-ring" width="28" height="28" style="display:block;flex-shrink:0"></svg>
-      <span><strong id="topbar-progress-done">0</strong> / <span id="topbar-progress-total">251</span></span>
+    <div class="lab-topbar-actions">
+      <button class="lab-search-btn" id="search-btn" aria-label="Caută capitol sau termen" aria-haspopup="dialog" aria-expanded="false" title="Caută capitol sau termen">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <span>Caută capitol, termen…</span>
+        <kbd>⌘K</kbd>
+      </button>
+      <button id="dm-btn" title="Mod întunecat" aria-label="Activează modul întunecat" aria-pressed="false">🌙</button>
     </div>
   </div>
 </header>
+
+<main id="main-content">
 
 <!-- ── HERO ── -->
 <section class="lab-hero">
@@ -401,8 +408,8 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
         Biologia pentru<br>admitere, <span class="lab-hero-under">rescrisă.</span>
       </h1>
       <p class="lab-hero-lede">
-        23 de capitole, peste <strong>1.800 de grile</strong> în format UMF,
-        figuri anatomice explicate pas-cu-pas și un sistem propriu de progres.
+        <strong>7 lecții publicate</strong> dintr-o programă de 23 de capitole planificate,
+        cu figuri anatomice explicate pas-cu-pas și recapitulări clare.
         Gândit de un student, pentru studenți.
       </p>
       <div class="lab-hero-cta">
@@ -414,72 +421,35 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
           Vezi toate capitolele
         </a>
       </div>
-      <div class="lab-hero-stats">
-        <div><div class="lab-hs-n">23</div><div class="lab-hs-l">capitole</div></div>
-        <div class="lab-hs-div"></div>
-        <div><div class="lab-hs-n">6</div><div class="lab-hs-l">lecții</div></div>
-        <div class="lab-hs-div"></div>
-        <div><div class="lab-hs-n">251</div><div class="lab-hs-l">grile disponibile</div></div>
-        <div class="lab-hs-div"></div>
-        <div><div class="lab-hs-n">57</div><div class="lab-hs-l">figuri</div></div>
-      </div>
     </div>
-    <div class="lab-hero-r">
-      <!-- Card 1 – Cap. 1 -->
-      <div class="lab-hero-card lab-hero-card-1">
-        <div class="lab-hero-card-top">
-          <span class="lab-chip lab-chip-emerald">Capitolul 1</span>
-          <span class="lab-chip-done">● Complet</span>
-        </div>
-        <div class="lab-hero-fig">
-          <img src="img introducere/niveluri_organizare_barrons.png.webp" alt="Niveluri de organizare structurală">
-        </div>
-        <div class="lab-hero-card-body">
-          <div class="lab-hero-card-emoji">🏛️</div>
+    <div class="lab-hero-r" aria-label="Previzualizare din prima lecție">
+      <article class="lab-study-preview">
+        <div class="lab-preview-toolbar">
           <div>
-            <div class="lab-hero-card-title">Introducere anatomie</div>
-            <div class="lab-hero-card-sub">Homeostazie · Planuri · Cavități · 60 grile</div>
+            <span>Capitolul 1</span>
+            <strong>Niveluri de organizare structurală</strong>
+          </div>
+          <span class="lab-preview-status">Lecție disponibilă</span>
+        </div>
+        <div class="lab-preview-body">
+          <figure class="lab-preview-figure">
+            <img src="img introducere/niveluri_organizare_barrons.png.webp" alt="Nivelurile de organizare, de la moleculă la organism" width="1024" height="709" fetchpriority="high">
+            <figcaption>De la moleculă la organism, într-o singură schemă explicată.</figcaption>
+          </figure>
+          <div class="lab-preview-notes">
+            <strong>Firul lecției</strong>
+            <ol>
+              <li><span>01</span>Moleculă și celulă</li>
+              <li><span>02</span>Țesut și organ</li>
+              <li><span>03</span>Sistem de organe</li>
+            </ol>
           </div>
         </div>
-        <div class="lab-hero-card-bar">
-          <div class="lab-prog-bar"><div class="lab-prog-bar-fill" style="width:100%;background:var(--lab-emerald)"></div></div>
+        <div class="lab-preview-progress">
+          <span>Figură + explicație + recapitulare</span>
+          <a href="introducere_anatomie_fiziologie.html">Deschide lecția <span aria-hidden="true">→</span></a>
         </div>
-      </div>
-      <!-- Card 2 – Cap. 20 -->
-      <div class="lab-hero-card lab-hero-card-2">
-        <div class="lab-hero-card-top">
-          <span class="lab-chip lab-chip-teal">Capitolul 20</span>
-          <span class="lab-chip-done">● Complet</span>
-        </div>
-        <div class="lab-hero-card-body" style="padding:16px 18px;">
-          <div class="lab-hero-card-emoji teal">🫘</div>
-          <div>
-            <div class="lab-hero-card-title">Sistemul urinar</div>
-            <div class="lab-hero-card-sub">Nefron · Filtrare · ADH · 80 grile</div>
-          </div>
-        </div>
-        <div class="lab-hero-card-bar">
-          <div class="lab-prog-bar"><div class="lab-prog-bar-fill" style="width:100%;background:var(--lab-teal)"></div></div>
-        </div>
-      </div>
-      <!-- Card 3 – stats -->
-      <div class="lab-hero-card lab-hero-card-3">
-        <div class="lab-hero-card-tag">Progres total</div>
-        <div class="lab-hero-card-mini">
-          <div class="lab-hero-card-mini-num" id="hero-progress-done">0</div>
-          <div>
-            <div class="lab-hero-card-mini-lbl" id="hero-progress-label">grile completate</div>
-            <div class="lab-hero-card-mini-sub" id="hero-progress-sub">din 251 disponibile · 0%</div>
-          </div>
-        </div>
-      </div>
-      <!-- Floaters -->
-      <div class="lab-hero-floater" style="top:14%;left:-4%">
-        <span class="lab-floater-emoji">🧠</span><span>Cap. 11</span>
-      </div>
-      <div class="lab-hero-floater" style="bottom:12%;right:-2%;animation-delay:.8s">
-        <span class="lab-floater-emoji">❤️</span><span>Cap. 15</span>
-      </div>
+      </article>
     </div>
   </div>
 </section>
@@ -492,7 +462,7 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
     </div>
     <div>
       <h3>Cum funcționează</h3>
-      <p>Fiecare capitol are <strong>Lecții</strong> (materie + explicații) și <strong>Grile</strong> (întrebări tip UMF + analiză progres). Conținutul marcat cu <span style="color:#E11D48;font-weight:700;">*</span> reprezintă informații adăugate față de manual.</p>
+      <p>Fiecare lecție restructurează materia în explicații, scheme, tabele și figuri anatomice. Conținutul marcat cu <span style="color:#E11D48;font-weight:700;">*</span> reprezintă informații adăugate față de manual.</p>
     </div>
   </div>
 </div>
@@ -501,10 +471,10 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
 <section id="lab-bento" class="lab-bento">
   <div class="lab-section-head">
     <div>
-      <div class="lab-eyebrow">Cuprins · 7 secțiuni</div>
+      <div class="lab-eyebrow">Programa pentru admitere</div>
       <h2 class="lab-h2">Toate capitolele</h2>
     </div>
-    <p>Organizate pe sisteme. Fiecare capitol — lecții ilustrate + grile UMF cu explicații detaliate.</p>
+    <p>Organizate pe sisteme: 7 lecții sunt publicate, iar programa completă cuprinde 23 de capitole planificate.</p>
   </div>
 
   <div class="lab-bento-grid">
@@ -515,7 +485,7 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
         <div class="lab-bento-cat-emoji">🔬</div>
         <div>
           <div class="lab-bento-cat-eyebrow">Partea I</div>
-          <div class="lab-bento-cat-title">Bazele Anatomiei &amp; Fiziologiei</div>
+          <h3 class="lab-bento-cat-title">Bazele Anatomiei &amp; Fiziologiei</h3>
           <div class="lab-bento-cat-blurb">Fundamentele — organizare, chimie, celulă, țesuturi.</div>
         </div>
         <div class="lab-bento-cat-ring">
@@ -529,13 +499,13 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
           <div class="lab-item-emoji">🏛️</div>
           <div>
             <div class="lab-item-title">Introducere în anatomie și fiziologie</div>
-            <div class="lab-item-tags"><span>Homeostazie</span><span>Planuri</span><span>Organizare</span><span>Cavități</span><span>60 grile</span></div>
+            <div class="lab-item-tags"><span>Homeostazie</span><span>Planuri</span><span>Organizare</span><span>Cavități</span></div>
           </div>
           <div class="lab-item-done-mark">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>
           </div>
         </a>
-        <button class="lab-item lab-item-soon"><div class="lab-item-num">02</div><div class="lab-item-emoji">⚗️</div><div><div class="lab-item-title">Bazele chimice ale anatomiei și fiziologiei</div><div class="lab-item-tags"><span>Atomi</span><span>pH</span><span>Proteine</span><span>ADN</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">02</div><div class="lab-item-emoji">⚗️</div><div><div class="lab-item-title">Bazele chimice ale anatomiei și fiziologiei</div><div class="lab-item-tags"><span>Atomi</span><span>pH</span><span>Proteine</span><span>ADN</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
         <a href="celula_si_fiziologia_celulara.html" class="lab-item lab-item-done">
           <div class="lab-item-num">03</div>
           <div class="lab-item-emoji">🔬</div>
@@ -547,7 +517,7 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>
           </div>
         </a>
-        <button class="lab-item lab-item-soon"><div class="lab-item-num">04</div><div class="lab-item-emoji">🧫</div><div><div class="lab-item-title">Țesuturile</div><div class="lab-item-tags"><span>Epiteliu</span><span>Conjunctiv</span><span>Muscular</span><span>Nervos</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">04</div><div class="lab-item-emoji">🧫</div><div><div class="lab-item-title">Țesuturile</div><div class="lab-item-tags"><span>Epiteliu</span><span>Conjunctiv</span><span>Muscular</span><span>Nervos</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
       </div>
     </div>
 
@@ -557,20 +527,20 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
         <div class="lab-bento-cat-emoji">🦴</div>
         <div>
           <div class="lab-bento-cat-eyebrow">Partea II</div>
-          <div class="lab-bento-cat-title">Tegument, Oase &amp; Mușchi</div>
+          <h3 class="lab-bento-cat-title">Tegument, Oase &amp; Mușchi</h3>
           <div class="lab-bento-cat-blurb">Piele, schelet, articulații, fibra musculară.</div>
         </div>
         <div class="lab-bento-cat-ring">
-          <svg class="cat-ring" data-done="1" data-total="5" data-color="#0891B2" width="52" height="52" style="display:block"></svg>
-          <div class="lab-bento-cat-ring-inner">1/5</div>
+          <svg class="cat-ring" data-done="2" data-total="5" data-color="#0891B2" width="52" height="52" style="display:block"></svg>
+          <div class="lab-bento-cat-ring-inner">2/5</div>
         </div>
       </div>
       <div class="lab-bento-items">
-        <button class="lab-item lab-item-soon"><div class="lab-item-num">05</div><div class="lab-item-emoji">🩺</div><div><div class="lab-item-title">Sistemul tegumentar</div><div class="lab-item-tags"><span>Epiderm</span><span>Derm</span><span>Termoreglare</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">05</div><div class="lab-item-emoji">🩺</div><div><div class="lab-item-title">Sistemul tegumentar</div><div class="lab-item-tags"><span>Epiderm</span><span>Derm</span><span>Termoreglare</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
         <a href="oasele_si_articulatiile.html" class="lab-item lab-item-done"><div class="lab-item-num">06</div><div class="lab-item-emoji">🦴</div><div><div class="lab-item-title">Oasele și articulațiile</div><div class="lab-item-tags"><span>Os compact</span><span>Articulații</span><span>Diafiză</span><span>Osteoane</span></div></div><div class="lab-item-done-mark"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></div></a>
-        <button class="lab-item lab-item-soon"><div class="lab-item-num">07</div><div class="lab-item-emoji">🦴</div><div><div class="lab-item-title">Sistemul osos</div><div class="lab-item-tags"><span>Schelet axial</span><span>Craniu</span><span>Coloană</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
-        <button class="lab-item lab-item-soon"><div class="lab-item-num">08</div><div class="lab-item-emoji">💪</div><div><div class="lab-item-title">Țesutul muscular</div><div class="lab-item-tags"><span>Sarcomer</span><span>Actină</span><span>Miozină</span><span>ATP</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
-        <button class="lab-item lab-item-soon"><div class="lab-item-num">09</div><div class="lab-item-emoji">🏃</div><div><div class="lab-item-title">Sistemul muscular</div><div class="lab-item-tags"><span>Mușchi scheletici</span><span>Grupe musculare</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">07</div><div class="lab-item-emoji">🦴</div><div><div class="lab-item-title">Sistemul osos</div><div class="lab-item-tags"><span>Schelet axial</span><span>Craniu</span><span>Coloană</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <a href="tesutul_muscular.html" class="lab-item lab-item-done"><div class="lab-item-num">08</div><div class="lab-item-emoji">💪</div><div><div class="lab-item-title">Țesutul muscular</div><div class="lab-item-tags"><span>Sarcomer</span><span>Actină</span><span>Miozină</span><span>ATP</span></div></div><div class="lab-item-done-mark"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></div></a>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">09</div><div class="lab-item-emoji">🏃</div><div><div class="lab-item-title">Sistemul muscular</div><div class="lab-item-tags"><span>Mușchi scheletici</span><span>Grupe musculare</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
       </div>
     </div>
 
@@ -580,7 +550,7 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
         <div class="lab-bento-cat-emoji">🧠</div>
         <div>
           <div class="lab-bento-cat-eyebrow">Partea III</div>
-          <div class="lab-bento-cat-title">Sistem Nervos, Simțuri &amp; Endocrin</div>
+          <h3 class="lab-bento-cat-title">Sistem Nervos, Simțuri &amp; Endocrin</h3>
           <div class="lab-bento-cat-blurb">Neuronul, SNC/SNP, percepție, hormoni.</div>
         </div>
         <div class="lab-bento-cat-ring">
@@ -589,10 +559,10 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
         </div>
       </div>
       <div class="lab-bento-items">
-        <button class="lab-item lab-item-soon"><div class="lab-item-num">10</div><div class="lab-item-emoji">⚡</div><div><div class="lab-item-title">Țesutul nervos</div><div class="lab-item-tags"><span>Neuron</span><span>Sinapsă</span><span>Potențial acțiune</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
-        <button class="lab-item lab-item-soon"><div class="lab-item-num">11</div><div class="lab-item-emoji">🧠</div><div><div class="lab-item-title">Organizarea sistemului nervos</div><div class="lab-item-tags"><span>SNC</span><span>SNP</span><span>Reflex</span><span>Autonom</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
-        <button class="lab-item lab-item-soon"><div class="lab-item-num">12</div><div class="lab-item-emoji">👁️</div><div><div class="lab-item-title">Organele de simț</div><div class="lab-item-tags"><span>Ochi</span><span>Ureche</span><span>Receptori</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
-        <button class="lab-item lab-item-soon"><div class="lab-item-num">13</div><div class="lab-item-emoji">🔬</div><div><div class="lab-item-title">Sistemul endocrin</div><div class="lab-item-tags"><span>Hormoni</span><span>Hipofiza</span><span>Feedback</span><span>Tiroida</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">10</div><div class="lab-item-emoji">⚡</div><div><div class="lab-item-title">Țesutul nervos</div><div class="lab-item-tags"><span>Neuron</span><span>Sinapsă</span><span>Potențial acțiune</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">11</div><div class="lab-item-emoji">🧠</div><div><div class="lab-item-title">Organizarea sistemului nervos</div><div class="lab-item-tags"><span>SNC</span><span>SNP</span><span>Reflex</span><span>Autonom</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">12</div><div class="lab-item-emoji">👁️</div><div><div class="lab-item-title">Organele de simț</div><div class="lab-item-tags"><span>Ochi</span><span>Ureche</span><span>Receptori</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">13</div><div class="lab-item-emoji">🔬</div><div><div class="lab-item-title">Sistemul endocrin</div><div class="lab-item-tags"><span>Hormoni</span><span>Hipofiza</span><span>Feedback</span><span>Tiroida</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
       </div>
     </div>
 
@@ -602,7 +572,7 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
         <div class="lab-bento-cat-emoji">❤️</div>
         <div>
           <div class="lab-bento-cat-eyebrow">Partea IV</div>
-          <div class="lab-bento-cat-title">Sânge, Cardiovascular &amp; Imunitate</div>
+          <h3 class="lab-bento-cat-title">Sânge, Cardiovascular &amp; Imunitate</h3>
           <div class="lab-bento-cat-blurb">Sânge, inimă, vase, apărare imună.</div>
         </div>
         <div class="lab-bento-cat-ring">
@@ -611,9 +581,9 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
         </div>
       </div>
       <div class="lab-bento-items">
-        <button class="lab-item lab-item-soon"><div class="lab-item-num">14</div><div class="lab-item-emoji">🩸</div><div><div class="lab-item-title">Sângele</div><div class="lab-item-tags"><span>Eritrocite</span><span>Hemoglobina</span><span>Grupe ABO</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
-        <button class="lab-item lab-item-soon"><div class="lab-item-num">15</div><div class="lab-item-emoji">❤️</div><div><div class="lab-item-title">Sistemul cardiovascular</div><div class="lab-item-tags"><span>Inimă</span><span>Sistolă</span><span>Tensiune</span><span>Capilare</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
-        <button class="lab-item lab-item-soon"><div class="lab-item-num">16</div><div class="lab-item-emoji">🛡️</div><div><div class="lab-item-title">Sistemul limfatic și imun</div><div class="lab-item-tags"><span>Limfocite</span><span>Anticorpi</span><span>Imunitate</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">14</div><div class="lab-item-emoji">🩸</div><div><div class="lab-item-title">Sângele</div><div class="lab-item-tags"><span>Eritrocite</span><span>Hemoglobina</span><span>Grupe ABO</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">15</div><div class="lab-item-emoji">❤️</div><div><div class="lab-item-title">Sistemul cardiovascular</div><div class="lab-item-tags"><span>Inimă</span><span>Sistolă</span><span>Tensiune</span><span>Capilare</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">16</div><div class="lab-item-emoji">🛡️</div><div><div class="lab-item-title">Sistemul limfatic și imun</div><div class="lab-item-tags"><span>Limfocite</span><span>Anticorpi</span><span>Imunitate</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
       </div>
     </div>
 
@@ -623,7 +593,7 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
         <div class="lab-bento-cat-emoji">🫁</div>
         <div>
           <div class="lab-bento-cat-eyebrow">Partea V</div>
-          <div class="lab-bento-cat-title">Respirator, Digestiv &amp; Metabolism</div>
+          <h3 class="lab-bento-cat-title">Respirator, Digestiv &amp; Metabolism</h3>
           <div class="lab-bento-cat-blurb">Schimb gazos, digestie, bioenergetică.</div>
         </div>
         <div class="lab-bento-cat-ring">
@@ -632,9 +602,9 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
         </div>
       </div>
       <div class="lab-bento-items">
-        <button class="lab-item lab-item-soon"><div class="lab-item-num">17</div><div class="lab-item-emoji">🫁</div><div><div class="lab-item-title">Sistemul respirator</div><div class="lab-item-tags"><span>Alveole</span><span>O₂/CO₂</span><span>Hemoglobina</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
-        <button class="lab-item lab-item-soon"><div class="lab-item-num">18</div><div class="lab-item-emoji">🍽️</div><div><div class="lab-item-title">Sistemul digestiv</div><div class="lab-item-tags"><span>Stomac</span><span>Intestin</span><span>Ficat</span><span>Enzime</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
-        <button class="lab-item lab-item-soon"><div class="lab-item-num">19</div><div class="lab-item-emoji">⚡</div><div><div class="lab-item-title">Metabolism și nutriție</div><div class="lab-item-tags"><span>ATP</span><span>Glicoliză</span><span>Krebs</span><span>Vitamine</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">17</div><div class="lab-item-emoji">🫁</div><div><div class="lab-item-title">Sistemul respirator</div><div class="lab-item-tags"><span>Alveole</span><span>O₂/CO₂</span><span>Hemoglobina</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">18</div><div class="lab-item-emoji">🍽️</div><div><div class="lab-item-title">Sistemul digestiv</div><div class="lab-item-tags"><span>Stomac</span><span>Intestin</span><span>Ficat</span><span>Enzime</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">19</div><div class="lab-item-emoji">⚡</div><div><div class="lab-item-title">Metabolism și nutriție</div><div class="lab-item-tags"><span>ATP</span><span>Glicoliză</span><span>Krebs</span><span>Vitamine</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
       </div>
     </div>
 
@@ -644,7 +614,7 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
         <div class="lab-bento-cat-emoji">🫘</div>
         <div>
           <div class="lab-bento-cat-eyebrow">Partea VI</div>
-          <div class="lab-bento-cat-title">Sistemul Excretor &amp; Echilibru Intern</div>
+          <h3 class="lab-bento-cat-title">Sistemul Excretor &amp; Echilibru Intern</h3>
           <div class="lab-bento-cat-blurb">Rinichi, nefron, echilibru hidro-electrolitic.</div>
         </div>
         <div class="lab-bento-cat-ring">
@@ -658,13 +628,13 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
           <div class="lab-item-emoji">🫘</div>
           <div>
             <div class="lab-item-title">Sistemul urinar</div>
-            <div class="lab-item-tags"><span>Nefron</span><span>Filtrare</span><span>ADH</span><span>Aldosteron</span><span>80 grile</span></div>
+            <div class="lab-item-tags"><span>Nefron</span><span>Filtrare</span><span>ADH</span><span>Aldosteron</span></div>
           </div>
           <div class="lab-item-done-mark">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>
           </div>
         </a>
-        <button class="lab-item lab-item-soon"><div class="lab-item-num">21</div><div class="lab-item-emoji">💧</div><div><div class="lab-item-title">Echilibrul hidro-electrolitic și acido-bazic</div><div class="lab-item-tags"><span>pH</span><span>Tampon</span><span>Electroliți</span><span>Acidoză</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">21</div><div class="lab-item-emoji">💧</div><div><div class="lab-item-title">Echilibrul hidro-electrolitic și acido-bazic</div><div class="lab-item-tags"><span>pH</span><span>Tampon</span><span>Electroliți</span><span>Acidoză</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
       </div>
     </div>
 
@@ -674,12 +644,12 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
         <div class="lab-bento-cat-emoji">🧬</div>
         <div>
           <div class="lab-bento-cat-eyebrow">Partea VII</div>
-          <div class="lab-bento-cat-title">Sistemul Reproducător</div>
+          <h3 class="lab-bento-cat-title">Sistemul Reproducător</h3>
           <div class="lab-bento-cat-blurb">Gametogeneză, hormoni sexuali, ciclu reproductiv.</div>
         </div>
         <div class="lab-bento-cat-ring">
-          <svg class="cat-ring" data-done="3" data-total="3" data-color="#0891B2" width="52" height="52" style="display:block"></svg>
-          <div class="lab-bento-cat-ring-inner">3/3</div>
+          <svg class="cat-ring" data-done="2" data-total="2" data-color="#0891B2" width="52" height="52" style="display:block"></svg>
+          <div class="lab-bento-cat-ring-inner">2/2</div>
         </div>
       </div>
       <div class="lab-bento-items">
@@ -699,18 +669,7 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
           <div class="lab-item-emoji">♀️</div>
           <div>
             <div class="lab-item-title">Sistemul reproducător feminin</div>
-            <div class="lab-item-tags"><span>Ovogeneză</span><span>Estrogen</span><span>Ciclu menstrual</span><span>42 grile</span></div>
-          </div>
-          <div class="lab-item-done-mark">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>
-          </div>
-        </a>
-        <a href="sistemul_reproducator_feminin.html#grile" class="lab-item lab-item-done">
-          <div class="lab-item-num">23</div>
-          <div class="lab-item-emoji">♀️</div>
-          <div>
-            <div class="lab-item-title">Grile reproducător feminin</div>
-            <div class="lab-item-tags"><span>42 grile</span><span>Ovare</span><span>Uter</span><span>Fecundație</span></div>
+            <div class="lab-item-tags"><span>Ovogeneză</span><span>Estrogen</span><span>Ciclu menstrual</span></div>
           </div>
           <div class="lab-item-done-mark">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>
@@ -733,59 +692,58 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
   <div class="lab-features-grid">
     <div class="lab-feature">
       <div class="lab-feature-icon">🖊</div>
-      <h4>Evidențiator</h4>
-      <p>Marchează pasaje-cheie chiar în pagina lecției. Persistent, salvat local în browser.</p>
+      <h3>Evidențiator</h3>
+      <p>Marchează pasaje-cheie chiar în pagina lecției și gestionează-le rapid din meniul de studiu.</p>
     </div>
     <div class="lab-feature">
-      <div class="lab-feature-icon">📊</div>
-      <h4>Analiză grile</h4>
-      <p>Vezi pe ce capitole te pregătești bine și unde mai ai nevoie de o tură. Statistici complete.</p>
+      <div class="lab-feature-icon">🔎</div>
+      <h3>Căutare în lecții</h3>
+      <p>Găsește rapid un capitol, un termen sau o explicație în toate lecțiile publicate.</p>
     </div>
     <div class="lab-feature">
       <div class="lab-feature-icon">📱</div>
-      <h4>Funcționează offline</h4>
+      <h3>Funcționează offline</h3>
       <p>Instalabil ca aplicație pe telefon sau laptop. Accesibil și fără internet, oricând.</p>
     </div>
     <div class="lab-feature">
       <div class="lab-feature-icon">🌙</div>
-      <h4>Mod noapte</h4>
+      <h3>Mod noapte</h3>
       <p>Interfață întunecată pentru sesiunile lungi — contrast controlat, fără albastru agresiv.</p>
     </div>
   </div>
 </section>
 
 <!-- ── FOOTER ── -->
+ </main>
+
 <footer class="lab-footer">
   <div class="lab-footer-top">
     <div>
-      <div class="lab-footer-brand">
+      <a class="lab-footer-brand" href="index.html" aria-label="Înapoi la începutul paginii">
         <div class="lab-brand-mark">
           <img src="assets/logo-mark.svg" alt="" width="30" height="30">
         </div>
         <span>Biologie.bb</span>
-      </div>
+      </a>
       <p class="lab-footer-blurb">Material educațional personal pentru pregătirea admiterii la UMF Cluj. Gândit de un student, pentru studenți.</p>
     </div>
     <div class="lab-footer-cols">
       <div>
         <h5>Material</h5>
-        <a href="#lab-bento">23 capitole</a>
+        <a href="#lab-bento">7 lecții publicate · 23 capitole planificate</a>
         <a href="introducere_anatomie_fiziologie.html">Lecție · Introducere în anatomie</a>
         <a href="celula_si_fiziologia_celulara.html">Lecție · Celula și fiziologia celulară</a>
         <a href="oasele_si_articulatiile.html">Lecție · Oasele și articulațiile</a>
-        <a href="introducere_anatomie_fiziologie.html#grile">Quiz · Introducere în anatomie</a>
+        <a href="tesutul_muscular.html">Lecție · Țesutul muscular</a>
         <a href="sistemul_renal_complet.html">Lecție · Sistemul urinar</a>
-        <a href="grile_sistemul_urinar.html">Quiz · Sistemul urinar</a>
         <a href="sistemul_reproducator_masculin.html">Lecție · Reproducător masculin</a>
-        <a href="grile_sistemul_reproducator_masculin.html">Quiz · Reproducător masculin</a>
         <a href="sistemul_reproducator_feminin.html">Lecție · Reproducător feminin</a>
-        <a href="sistemul_reproducator_feminin.html#grile">Quiz · Reproducător feminin</a>
         <a href="#lab-bento">Figuri anatomice</a>
       </div>
       <div>
         <h5>Instrumente</h5>
         <a href="sistemul_renal_complet.html">Evidențiator</a>
-        <a href="grile_sistemul_urinar.html?goto=grile">Analiză progres</a>
+        <a href="#lab-tools">Căutare în lecții</a>
         <a href="#lab-tools">Mod noapte</a>
         <a href="#lab-tools">Offline PWA</a>
       </div>
@@ -793,7 +751,7 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
         <h5>UMF Cluj</h5>
         <span class="lab-footer-note">Despre admitere · în curând</span>
         <span class="lab-footer-note">Programa biologie · în curând</span>
-        <span class="lab-footer-note">Format grile · în curând</span>
+        <span class="lab-footer-note">Plan de studiu · în curând</span>
       </div>
     </div>
   </div>
@@ -807,14 +765,15 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
 
 <!-- ── COMMAND PALETTE ── -->
 <div id="palette" style="display:none" onclick="closePalette()">
-  <div class="lab-palette-overlay" style="position:fixed;inset:0;z-index:200;background:rgba(15,23,42,0.4);backdrop-filter:blur(6px);display:flex;align-items:flex-start;justify-content:center;padding-top:14vh;">
-    <div class="lab-palette" onclick="event.stopPropagation()">
+  <div class="lab-palette-overlay" style="position:fixed;inset:0;z-index:1200;background:rgba(15,23,42,0.4);backdrop-filter:blur(6px);display:flex;align-items:flex-start;justify-content:center;padding-top:14vh;">
+    <div class="lab-palette" role="dialog" aria-modal="true" aria-labelledby="palette-title" onclick="event.stopPropagation()">
       <div class="lab-palette-input">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-        <input id="palette-input" placeholder="Caută capitol, termen, hormon…" oninput="filterPalette(this.value)">
-        <kbd>esc</kbd>
+        <input id="palette-input" aria-label="Caută în lecții" aria-controls="palette-list" placeholder="Caută capitol, termen, hormon…" oninput="filterPalette(this.value)">
+        <span id="palette-title" class="lab-palette-title" hidden>Căutare în lecții</span>
+        <button class="lab-palette-close" type="button" aria-label="Închide căutarea" onclick="closePalette()">×</button>
       </div>
-      <div class="lab-palette-list" id="palette-list"></div>
+      <div class="lab-palette-list" id="palette-list" aria-live="polite"></div>
       <div class="lab-palette-foot">
         <span><kbd>↵</kbd> deschide</span>
         <span><kbd>esc</kbd> închide</span>
@@ -823,23 +782,29 @@ body.dark #dm-btn{background:#1E293B;border-color:#334155;color:#FCD34D;}
   </div>
 </div>
 
-<button id="dm-btn" title="Mod noapte" aria-label="Comută modul noapte">🌙</button>
-
 <script>
 /* ── DARK MODE ── */
+function syncHomeDarkButton(dark){
+  const button=document.getElementById('dm-btn');
+  if(!button)return;
+  button.textContent=dark?'☀️':'🌙';
+  button.setAttribute('aria-pressed',String(dark));
+  button.setAttribute('aria-label',dark?'Activează modul luminos':'Activează modul întunecat');
+  button.title=dark?'Mod luminos':'Mod întunecat';
+}
 (function(){
-  if(localStorage.getItem('darkMode')==='1'){
-    document.body.classList.add('dark');
-    document.getElementById('dm-btn').textContent='☀️';
-  }
+  let dark=false;
+  try{dark=localStorage.getItem('darkMode')==='1';}catch(error){}
+  document.body.classList.toggle('dark',dark);
+  syncHomeDarkButton(dark);
 })();
 document.getElementById('dm-btn').onclick=function(){
-  const d=document.body.classList.toggle('dark');
-  this.textContent=d?'☀️':'🌙';
-  localStorage.setItem('darkMode',d?'1':'0');
+  const dark=document.body.classList.toggle('dark');
+  syncHomeDarkButton(dark);
+  try{localStorage.setItem('darkMode',dark?'1':'0');}catch(error){}
 };
 
-/* ── PROGRESS RINGS ── */
+/* ── CATEGORY RINGS ── */
 function drawRing(svgEl, done, total, color) {
   const size=parseInt(svgEl.getAttribute('width'));
   const stroke=5;
@@ -858,66 +823,6 @@ function drawRing(svgEl, done, total, color) {
   }));
 }
 
-/* Dynamic quiz progress */
-const QUIZ_PROGRESS_SOURCES = [
-  { key: 'introducere_quiz_v1', total: 60 },
-  { key: 'urinar_quiz_v4', total: 80 },
-  { key: 'reproducator_masculin_quiz_v1', total: 69 },
-  { key: 'reproducator_feminin_quiz_v1', total: 42 },
-];
-
-function getStoredQuizState(key) {
-  try {
-    const value = localStorage.getItem(key);
-    if (!value) return {};
-    const parsed = JSON.parse(value);
-    return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : {};
-  } catch (err) {
-    return {};
-  }
-}
-
-function countSubmittedQuestions(state, total) {
-  const submitted = Object.values(state).filter(function(entry) {
-    return entry && entry.submitted === true;
-  }).length;
-  return Math.min(submitted, total);
-}
-
-function getQuizProgress() {
-  return QUIZ_PROGRESS_SOURCES.reduce(function(acc, source) {
-    acc.done += countSubmittedQuestions(getStoredQuizState(source.key), source.total);
-    acc.total += source.total;
-    return acc;
-  }, { done: 0, total: 0 });
-}
-
-function setText(id, value) {
-  const node = document.getElementById(id);
-  if (node) node.textContent = value;
-}
-
-function updateHomepageProgress() {
-  const progress = getQuizProgress();
-  const pct = progress.total ? Math.round((progress.done / progress.total) * 100) : 0;
-
-  setText('topbar-progress-done', String(progress.done));
-  setText('topbar-progress-total', String(progress.total));
-  setText('hero-progress-done', String(progress.done));
-  setText('hero-progress-label', progress.done === 1 ? 'grilă completată' : 'grile completate');
-  setText('hero-progress-sub', `din ${progress.total} disponibile · ${pct}%`);
-
-  const ring = document.getElementById('topbar-ring');
-  if (ring) drawRing(ring, progress.done, progress.total, 'var(--lab-accent)');
-}
-
-updateHomepageProgress();
-window.addEventListener('pageshow', updateHomepageProgress);
-document.addEventListener('visibilitychange', function() {
-  if (!document.hidden) updateHomepageProgress();
-});
-
-/* Category rings */
 document.querySelectorAll('.cat-ring').forEach(function(svg){
   drawRing(svg,+svg.dataset.done,+svg.dataset.total,svg.dataset.color);
 });
@@ -931,7 +836,7 @@ const CHAPTERS=[
   {num:5,icon:'🩺',name:'Sistemul tegumentar',cat:'Tegument, Oase & Mușchi',color:'#0891B2',colorLight:'#ECFEFF',done:false,kw:'piele epiderm derm hipoderm par unghie glanda sebacee sudoripara'},
   {num:6,icon:'🦴',name:'Oasele și articulațiile',cat:'Tegument, Oase & Mușchi',color:'#0891B2',colorLight:'#ECFEFF',done:true,url:'oasele_si_articulatiile.html',kw:'os oase schelet articulatie articulatii cartilaj sinoviala ligament tendon diafiza epifiza metafiza periost endost osteoblast osteocit osteoclast osteon canal central canal perforant os compact os spongios trabecule hidroxiapatita osificare intramembranoasa endocondrala sinartroza amfiartroza diartroza bursa menisc osteoporoza'},
   {num:7,icon:'🦴',name:'Sistemul osos',cat:'Tegument, Oase & Mușchi',color:'#0891B2',colorLight:'#ECFEFF',done:false,kw:'schelet coloana vertebrala craniu coasta bazin calciu osteoblast osteoclast'},
-  {num:8,icon:'💪',name:'Țesutul muscular',cat:'Tegument, Oase & Mușchi',color:'#0891B2',colorLight:'#ECFEFF',done:false,kw:'miofibrila actina miozina sarcomere contractie striat neted cardiac'},
+  {num:8,icon:'💪',name:'Țesutul muscular',cat:'Tegument, Oase & Mușchi',color:'#0891B2',colorLight:'#ECFEFF',done:true,url:'tesutul_muscular.html',kw:'muschi muscular fibra miofibrila actina miozina sarcomer contractie striat scheletic neted cardiac endomisium perimisium epimisium fascia tendon sarcoplasma mitocondrie banda A banda I zona H linia Z ATP fosfocreatina creatin fosfat glicoliza mioglobina hemoglobina acid lactic datorie oxigen'},
   {num:9,icon:'🏃',name:'Sistemul muscular',cat:'Tegument, Oase & Mușchi',color:'#0891B2',colorLight:'#ECFEFF',done:false,kw:'muschi muschii origine insertie flex extensie biceps triceps'},
   {num:10,icon:'⚡',name:'Țesutul nervos',cat:'Sistem Nervos, Simțuri & Endocrin',color:'#7C3AED',colorLight:'#F5F3FF',done:false,kw:'neuron sinapsa axon dendrite mielina potential actiune neurotransmitator'},
   {num:11,icon:'🧠',name:'Organizarea sistemului nervos',cat:'Sistem Nervos, Simțuri & Endocrin',color:'#7C3AED',colorLight:'#F5F3FF',done:false,kw:'creier maduva spinarii nervi SNC SNP simpatic parasimpatic reflex'},
@@ -964,6 +869,12 @@ function escapeHtml(value){
 
 function normalizeText(value){
   return String(value || '').replace(/\s+/g,' ').trim();
+}
+
+function normalizeSearchValue(value){
+  const text=String(value || '');
+  try{return text.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();}
+  catch(error){return text.toLowerCase();}
 }
 
 function getNodeSnippet(text, idx, len){
@@ -1034,13 +945,13 @@ async function ensureSearchIndex(){
 }
 
 function findTextMatches(query){
-  const needle = query.trim().toLowerCase();
+  const needle = normalizeSearchValue(query.trim());
   if (!needle) return [];
   const results = [];
   const hitCounters = Object.create(null);
   SEARCH_INDEX.entries.forEach(function(entry){
     const text = String(entry.rawText || '');
-    const lower = text.toLowerCase();
+    const lower = normalizeSearchValue(text);
     let from = 0;
     const counterKey = entry.url + '::' + entry.sectionId;
     if (!(counterKey in hitCounters)) hitCounters[counterKey] = 0;
@@ -1072,7 +983,7 @@ function findTextMatches(query){
 
 function chapterFallbackResults(needle){
   return needle
-    ? CHAPTERS.filter(c => (c.num+' '+c.name+' '+c.cat+' '+(c.kw||'')).toLowerCase().includes(needle)).slice(0,10)
+    ? CHAPTERS.filter(c => normalizeSearchValue(c.num+' '+c.name+' '+c.cat+' '+(c.kw||'')).includes(needle)).slice(0,10)
     : CHAPTERS.filter(c=>c.done).concat(CHAPTERS.filter(c=>!c.done)).slice(0,8);
 }
 
@@ -1092,7 +1003,7 @@ function bindPaletteActions(){
 
 async function renderPaletteItems(q){
   const list=document.getElementById('palette-list');
-  const needle=q.trim().toLowerCase();
+  const needle=normalizeSearchValue(q.trim());
   if(needle){
     if(!SEARCH_INDEX.ready && SEARCH_INDEX.loading){
       list.innerHTML='<div class="lab-palette-empty">Caut în textul capitolelor…</div>';
@@ -1122,7 +1033,7 @@ async function renderPaletteItems(q){
   const results = chapterFallbackResults(needle);
   if(!results.length){list.innerHTML='<div class="lab-palette-empty">Nicio potrivire. Încearcă "nefron", "ADH", "inimă"…</div>';return;}
   list.innerHTML=results.map(c=>`
-    <button class="lab-palette-item" data-url="${c.url||''}" data-done="${c.done?'true':'false'}" style="${!c.done?'cursor:default;opacity:.6':''}">
+    <button class="lab-palette-item" data-url="${c.url||''}" data-done="${c.done?'true':'false'}" ${!c.done?'disabled aria-disabled="true"':''} style="${!c.done?'cursor:default;opacity:.6':''}">
       <span class="lab-palette-emoji">${c.icon}</span>
       <div>
         <div class="lab-palette-title">Cap. ${String(c.num).padStart(2,'0')} · ${c.name}</div>
@@ -1137,14 +1048,30 @@ function escapeRegExp(value){
   return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
+let paletteReturnFocus=null;
+let palettePreviousOverflow='';
 function openPalette(){
-  document.getElementById('palette').style.display='block';
+  const palette=document.getElementById('palette');
+  if(palette.style.display==='none') paletteReturnFocus=document.activeElement;
+  palette.style.display='block';
+  document.getElementById('search-btn').setAttribute('aria-expanded','true');
+  document.querySelector('.lab').inert=true;
+  document.getElementById('dm-btn').inert=true;
+  palettePreviousOverflow=document.body.style.overflow;
+  document.body.style.overflow='hidden';
   document.getElementById('palette-input').value='';
   renderPaletteItems('');
   ensureSearchIndex();
   setTimeout(()=>document.getElementById('palette-input').focus(),50);
 }
-function closePalette(){document.getElementById('palette').style.display='none';}
+function closePalette(){
+  document.getElementById('palette').style.display='none';
+  document.getElementById('search-btn').setAttribute('aria-expanded','false');
+  document.querySelector('.lab').inert=false;
+  document.getElementById('dm-btn').inert=false;
+  document.body.style.overflow=palettePreviousOverflow;
+  if(paletteReturnFocus&&typeof paletteReturnFocus.focus==='function') paletteReturnFocus.focus();
+}
 function filterPalette(v){renderPaletteItems(v);}
 function goToSearchResult(url, query, sectionId, hit){
   const params = new URLSearchParams();
@@ -1161,6 +1088,18 @@ document.getElementById('search-btn').onclick=openPalette;
 document.addEventListener('keydown',function(e){
   if((e.metaKey||e.ctrlKey)&&e.key==='k'){e.preventDefault();openPalette();}
   if(e.key==='Escape'&&document.getElementById('palette').style.display!=='none'){closePalette();}
+  if(e.key==='Enter'&&document.getElementById('palette').style.display!=='none'&&document.activeElement===document.getElementById('palette-input')){
+    const first=document.querySelector('#palette-list [data-url][data-done="true"]');
+    if(first){e.preventDefault();first.click();}
+  }
+  if(e.key==='Tab'&&document.getElementById('palette').style.display!=='none'){
+    const focusable=Array.from(document.querySelectorAll('#palette input,#palette button:not([disabled])')).filter(el=>el.offsetParent!==null);
+    if(!focusable.length)return;
+    const first=focusable[0];
+    const last=focusable[focusable.length-1];
+    if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
+    else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
+  }
 });
 
 /* ── SERVICE WORKER ── */

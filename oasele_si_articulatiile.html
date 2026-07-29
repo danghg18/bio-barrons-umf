@@ -34,24 +34,25 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
 @media(max-width:900px){.lab-nav,.lab-topbar-back{display:none}.ch-layout{display:block;padding:0}#sidenav{position:fixed;top:0;left:0;width:min(320px,82vw);height:100dvh;max-height:none;z-index:210;border-radius:0 20px 20px 0;transform:translateX(-105%);transition:.24s;box-shadow:0 18px 44px rgba(15,23,42,.16)}#sidenav.open{transform:none}main{padding:0 .9rem 4rem}.hero{margin:0 -.9rem 1.3rem;padding:3.3rem 1rem 1.4rem}.hero h1{font-size:1.28rem}.g2,.g3,.map-grid-split{grid-template-columns:1fr}.card{padding:1rem}.section{font-size:1.05rem}.lab-brand{cursor:pointer}#nav-overlay.open{display:block;position:fixed;inset:0;background:rgba(15,23,42,.24);z-index:205}}
 @media(max-width:640px){.table-wrap table{min-width:0;border:0}.table-wrap thead{display:none}.table-wrap tr{display:block;border:1px solid var(--lab-border);border-radius:.8rem;margin:.75rem 0;overflow:hidden;background:#fff}.table-wrap td{display:grid;grid-template-columns:minmax(112px,38%) 1fr;gap:.75rem;border-bottom:1px solid var(--lab-border);font-size:.82rem}.table-wrap td:last-child{border-bottom:0}.table-wrap td:before{content:attr(data-label);font-weight:900;color:#0F172A}.table-wrap caption{font-size:.86rem}}
 </style>
-<link rel="stylesheet" href="assets/css/chapter-redesign.css?v=20260504-highlighter1">
+<link rel="stylesheet" href="assets/css/chapter-redesign.css?v=20260727-highlighter6">
 </head>
 <body>
-<header class="lab-topbar"><div class="lab-topbar-inner"><a href="index.html" class="lab-brand" id="brand"><div class="lab-brand-mark">☰</div><span class="lab-brand-name">Biologie<span class="lab-brand-sub">.bb</span></span></a><nav class="lab-nav"><a onclick="goto('introducere')">6.1 Introducere</a><a onclick="goto('osul')">6.2 Osul</a><a onclick="goto('articulatii')">6.3 Articulațiile</a></nav><a href="index.html" class="lab-topbar-back">← Toate capitolele</a></div></header>
+<a class="lesson-skip" href="#lesson-content">Sari la conținutul lecției</a>
+<header class="lab-topbar"><div class="lab-topbar-inner"><a href="index.html" class="lab-brand" id="brand"><div class="lab-brand-mark">☰</div><span class="lab-brand-name">Biologie<span class="lab-brand-sub">.bb</span></span></a><nav class="lab-nav" aria-label="Navigare rapidă"><a href="#introducere" onclick="goto('introducere')">6.1 Introducere</a><a href="#osul" onclick="goto('osul')">6.2 Osul</a><a href="#articulatii" onclick="goto('articulatii')">6.3 Articulațiile</a></nav><a href="index.html" class="lab-topbar-back">← Toate capitolele</a></div></header>
 <div id="nav-overlay" onclick="closeNav()"></div>
 <div class="ch-layout">
-<nav id="sidenav">
+<nav id="sidenav" aria-label="Cuprinsul capitolului">
   <div class="nav-header"><div class="nav-chapter-badge">Capitol 6</div><div class="nav-chapter-title">Oasele și articulațiile</div></div>
   <div class="nav-group-label">Lecții</div>
-  <a class="active" onclick="goto('introducere')">6.1 Introducere</a>
-  <a onclick="goto('osul')">6.2 Osul</a>
-  <a onclick="goto('articulatii')">6.3 Articulațiile</a>
+  <a href="#introducere" class="active" onclick="goto('introducere')">6.1 Introducere</a>
+  <a href="#osul" onclick="goto('osul')">6.2 Osul</a>
+  <a href="#articulatii" onclick="goto('articulatii')">6.3 Articulațiile</a>
 </nav>
 
-<main>
+<main id="lesson-content">
 <div class="page-section active" id="page-introducere">
   <div class="hero"><h1>6.1. Introducere</h1><p>Scheletul corpului uman este alcătuit din 206 oase, iar oasele au roluri mecanice, metabolice și hematopoietice.</p></div>
-  <div class="page-nav"><a class="outline" href="index.html">← Toate capitolele</a><a onclick="goto('osul')">6.2 Osul →</a></div>
+  <div class="page-nav"><a class="outline" href="index.html">← Toate capitolele</a><a href="#osul" onclick="goto('osul')">6.2 Osul →</a></div>
   <section>
     <h2 class="section"><span class="sec-num">1</span>Funcțiile oaselor</h2>
     <div class="card">
@@ -71,7 +72,7 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
 
 <div class="page-section" id="page-osul">
   <div class="hero"><h1>6.2. Osul</h1><p>Osul este țesutul conjunctiv cu duritatea cea mai mare din organism.</p></div>
-  <div class="page-nav"><a class="outline" onclick="goto('introducere')">← 6.1 Introducere</a><a onclick="goto('articulatii')">6.3 Articulațiile →</a></div>
+  <div class="page-nav"><a href="#introducere" class="outline" onclick="goto('introducere')">← 6.1 Introducere</a><a href="#articulatii" onclick="goto('articulatii')">6.3 Articulațiile →</a></div>
   <section>
     <h2 class="section"><span class="sec-num">1</span>Alcătuire și proprietăți</h2>
     <div class="card">
@@ -101,7 +102,7 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
       <div class="box amber"><strong>Vertebrele ca oase neregulate</strong>Vertebrele, adică oasele coloanei vertebrale, au formă rectangulară și prelungiri cu aspect de contraforturi sau aripi. Prelungirile funcționează ca punte în care se ancorează tendoane și ligamente, întărind legătura dintre oasele din apropiere, adică oasele adiacente.</div>
       <p>Oasele wormiene, de la nivelul unor suturi craniene, și oasele sesamoide, dispuse la nivelul articulațiilor, de exemplu patelele sau rotulele, sunt oase neregulate.</p>
       <p class="mini-title">Tipuri de oase.</p>
-      <figure class="fig"><img src="img oase/tipuri_de_oase_barrons.png.webp" alt="Tipuri de oase"><figcaption>Figura 6.1 Tipuri de oase.</figcaption></figure>
+      <figure class="fig"><img loading="lazy" decoding="async" src="img oase/tipuri_de_oase_barrons.png.webp" alt="Tipuri de oase"><figcaption>Figura 6.1 Tipuri de oase.</figcaption></figure>
       <h3 class="mini-title">În funcție de localizare</h3>
       <div class="g2">
         <div class="box teal"><strong>Oasele scheletului axial</strong>Reprezintă totalitatea oaselor ce formează axul central al organismului. Exemple: oasele capului, coloana vertebrală și cușca toracică.</div>
@@ -132,7 +133,7 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
         <li><strong>epifiză</strong> - capetele osului.</li>
       </ul>
       <p class="mini-title">Structura unui os lung.</p>
-      <figure class="fig"><img src="img oase/os_lung_barrons.png.webp" alt="Structura unui os lung"><figcaption>Figura 6.2 Structura unui os lung.</figcaption></figure>
+      <figure class="fig"><img loading="lazy" decoding="async" src="img oase/os_lung_barrons.png.webp" alt="Structura unui os lung"><figcaption>Figura 6.2 Structura unui os lung.</figcaption></figure>
       <p><strong>Placa epifizară</strong> este o zonă activă de cartilaj care apare la joncțiunea dintre diafiză și epifiză, zonă denumită <strong>metafiză</strong>, în perioada în care osul este în creștere.</p>
       <p>Prin depunerea de cartilaj la nivelul acestei plăci, capetele osului se îndepărtează și astfel osul crește în lungime. Apoi, cartilajul este înlocuit cu țesut osos.</p>
     </div>
@@ -180,7 +181,7 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
       <p><strong>Periostul</strong> învelește osul și totodată este țesutul conjunctiv din care se vor forma osteocitele. În stadiu inițial, acestea sunt osteoblaste foarte active și intervin în producția de colagen și hidroxiapatită din os.</p>
       <p>Ulterior, prin integrarea lor în osul format, osteoblastele se transformă în osteocite, care hrănesc osul din jurul lor și îndepărtează produșii reziduali.</p>
       <p class="mini-title">Structura histologică a osului.</p>
-      <figure class="fig"><img src="img oase/histologie_os_barrons.png.webp" alt="Structura histologică a osului"><figcaption>Figura 6.3 Structura histologică a osului.</figcaption></figure>
+      <figure class="fig"><img loading="lazy" decoding="async" src="img oase/histologie_os_barrons.png.webp" alt="Structura histologică a osului"><figcaption>Figura 6.3 Structura histologică a osului.</figcaption></figure>
     </div>
   </section>
   <section>
@@ -228,14 +229,14 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
 
 <div class="page-section" id="page-articulatii">
   <div class="hero"><h1>6.3. Articulațiile</h1><p>Articulațiile sunt spațiile în care două sau mai multe oase se întâlnesc, adică se articulează.</p></div>
-  <div class="page-nav"><a class="outline" onclick="goto('osul')">← 6.2 Osul</a><a href="index.html">Toate capitolele</a></div>
+  <div class="page-nav"><a href="#osul" class="outline" onclick="goto('osul')">← 6.2 Osul</a><a href="index.html">Toate capitolele</a></div>
   <section>
     <h2 class="section"><span class="sec-num">1</span>Definiție și clasificare</h2>
     <div class="card">
       <p>Spațiul în care două sau mai multe oase se întâlnesc, adică se articulează, constituie <strong>articulațiile</strong>. În organism sunt numeroase articulații, diferențiate structural și funcțional.</p>
       <p><strong>Artrologia</strong> reprezintă ramura anatomiei care studiază articulațiile.</p>
       <p class="mini-title">Tipuri de articulații.</p>
-      <figure class="fig"><img src="img oase/tipuri_de_articulatii_barrons.png.webp" alt="Tipuri de articulații"><figcaption>Figura 6.4 Tipuri de articulații.</figcaption></figure>
+      <figure class="fig"><img loading="lazy" decoding="async" src="img oase/tipuri_de_articulatii_barrons.png.webp" alt="Tipuri de articulații"><figcaption>Figura 6.4 Tipuri de articulații.</figcaption></figure>
       <p>În funcție de gradul de mișcare, adică mobilitatea pe care o permit, articulațiile se clasifică în sinartroze, amfiartroze și diartroze.</p>
     </div>
   </section>
@@ -300,17 +301,16 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
 
 </main>
 </div>
-<button id="top" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="Înapoi sus">↑</button>
+<button id="top" onclick="scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})" aria-label="Înapoi sus">↑</button>
 <script>
 const pages=['introducere','osul','articulatii'];
 function closeNav(){document.getElementById('sidenav').classList.remove('open');document.getElementById('nav-overlay').classList.remove('open')}
-function goto(page){if(!pages.includes(page))page='introducere';document.querySelectorAll('.page-section').forEach(s=>s.classList.remove('active'));document.getElementById('page-'+page)?.classList.add('active');document.querySelectorAll('#sidenav a').forEach(a=>a.classList.toggle('active',(a.getAttribute('onclick')||'').includes("'"+page+"'")));closeNav();if(location.hash.slice(1)!==page)history.replaceState(null,'','#'+page);window.scrollTo({top:0,behavior:'smooth'})}
-document.getElementById('brand').addEventListener('click',e=>{if(innerWidth<=900){e.preventDefault();document.getElementById('sidenav').classList.add('open');document.getElementById('nav-overlay').classList.add('open')}});
+function goto(page){if(!pages.includes(page))page='introducere';document.querySelectorAll('.page-section').forEach(s=>s.classList.remove('active'));document.getElementById('page-'+page)?.classList.add('active');document.querySelectorAll('#sidenav a').forEach(a=>a.classList.toggle('active',(a.getAttribute('onclick')||'').includes("'"+page+"'")));closeNav();if(location.hash.slice(1)!==page)history.replaceState(null,'','#'+page);window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})}
 addEventListener('scroll',()=>{document.getElementById('top').style.display=scrollY>500?'flex':'none'});
 function handleHash(){const initial=location.hash.slice(1);if(pages.includes(initial))goto(initial);else if(initial)goto('introducere')}
 addEventListener('DOMContentLoaded',handleHash);
 addEventListener('hashchange',handleHash);
 </script>
-<script src="assets/js/chapter-redesign.js?v=20260504-highlighter1"></script>
+<script src="assets/js/chapter-redesign.js?v=20260727-highlighter6"></script>
 </body>
 </html>

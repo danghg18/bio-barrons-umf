@@ -1,2591 +1,433 @@
+/*
+ * Biologie Barron's — canonical chapter experience
+ *
+ * A single, restrained product layer shared by every chapter. The older
+ * lesson files still contain local styles, so this stylesheet deliberately
+ * scopes every rule through body.bb-chapter-redesign and uses !important only
+ * where a legacy declaration or inline value must be neutralised.
+ */
+
 body.bb-chapter-redesign {
-  --bb-shell-shadow: 0 28px 70px rgba(15, 23, 42, 0.08);
-  --bb-card-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
-  --bb-card-shadow-hover: 0 24px 52px rgba(15, 23, 42, 0.1);
-  --bb-soft-border: rgba(15, 23, 42, 0.08);
-  --bb-soft-border-strong: rgba(15, 23, 42, 0.14);
-  --bb-surface: rgba(255, 255, 255, 0.94);
-  --bb-surface-2: #ffffff;
-  --bb-surface-3: #f8fbff;
+  --bb-action: var(--primary, #2563eb);
+  --bb-action-hover: var(--primary-dark, #1e40af);
+  --bb-accent: var(--chapter-accent, var(--primary, #2563eb));
+  --bb-accent-soft: var(--chapter-accent-light, #eff6ff);
+  --bb-accent-line: color-mix(in srgb, var(--bb-accent) 28%, #d7dee8);
+  --bb-canvas: #f4f7fb;
+  --bb-surface: #ffffff;
+  --bb-surface-subtle: #f8fafc;
+  --bb-surface-muted: #eef2f7;
   --bb-ink: #0f172a;
-  --bb-muted: #475569;
-  --bb-muted-soft: #64748b;
-  background:
-    radial-gradient(circle at top right, var(--chapter-accent-light) 0, rgba(255, 255, 255, 0) 34%),
-    radial-gradient(circle at 12% 18%, rgba(37, 99, 235, 0.08) 0, rgba(255, 255, 255, 0) 20%),
-    linear-gradient(180deg, #f7fbff 0%, #eef4ff 42%, #f8fafc 100%) !important;
-  color: var(--bb-muted);
+  --bb-text: #334155;
+  --bb-muted: #64748b;
+  --bb-line: #dbe3ec;
+  --bb-line-strong: #c8d2df;
+  --bb-success: #047857;
+  --bb-warning: #b45309;
+  --bb-danger: #be123c;
+  --bb-highlight: #fde68a;
+  --bb-topbar-h: 64px;
+  --bb-sidebar-w: 264px;
+  --bb-main-w: 960px;
+  --bb-reading-w: 70ch;
+  --bb-radius-sm: 8px;
+  --bb-radius-md: 12px;
+  --bb-radius-lg: 14px;
+  --bb-z-sticky: 100;
+  --bb-z-overlay: 200;
+  --bb-z-drawer: 210;
+  --bb-z-search: 240;
+  --bb-z-toast: 300;
+
+  min-height: 100vh;
+  margin: 0;
+  background: var(--bb-canvas) !important;
+  color: var(--bb-text) !important;
+  font-family: var(--font-body, "Noto Sans", system-ui, sans-serif);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-/* New chapter shell, adapted from the supplied Lab concept */
-body.bb-chapter-redesign {
-  --bb-new-accent: var(--chapter-accent, #0891b2);
-  --bb-new-accent-mid: var(--chapter-accent-mid, #06b6d4);
-  --bb-new-accent-light: var(--chapter-accent-light, #ecfeff);
-  --bb-new-bg: #f7f7f4;
-  --bb-new-line: #e7e3dc;
-  --bb-new-panel: rgba(255, 255, 255, 0.96);
-  background: var(--bb-new-bg) !important;
+body.bb-chapter-redesign::before,
+body.bb-chapter-redesign .hero::before,
+body.bb-chapter-redesign .hero::after,
+body.bb-chapter-redesign .chapter-map .map-card::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
 }
 
-body.bb-chapter-redesign::before {
+body.bb-chapter-redesign *,
+body.bb-chapter-redesign *::before,
+body.bb-chapter-redesign *::after {
+  box-sizing: border-box;
+}
+
+body.bb-chapter-redesign h1,
+body.bb-chapter-redesign h2,
+body.bb-chapter-redesign h3,
+body.bb-chapter-redesign h4,
+body.bb-chapter-redesign h5,
+body.bb-chapter-redesign h6,
+body.bb-chapter-redesign button,
+body.bb-chapter-redesign .badge,
+body.bb-chapter-redesign .page-nav a,
+body.bb-chapter-redesign .nav-chapter-title {
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+}
+
+body.bb-chapter-redesign h1,
+body.bb-chapter-redesign h2,
+body.bb-chapter-redesign h3 {
+  color: var(--bb-ink);
+  text-wrap: balance;
+}
+
+body.bb-chapter-redesign p,
+body.bb-chapter-redesign li,
+body.bb-chapter-redesign figcaption {
+  text-wrap: pretty;
+}
+
+body.bb-chapter-redesign a {
+  color: var(--bb-action);
+}
+
+body.bb-chapter-redesign button,
+body.bb-chapter-redesign [role="button"],
+body.bb-chapter-redesign a[onclick] {
+  cursor: pointer;
+}
+
+body.bb-chapter-redesign :focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--bb-action) 72%, white);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Keep the authored skip link available to keyboards without consuming visible
+   page space until it receives focus. */
+body.bb-chapter-redesign .lesson-skip,
+body.bb-chapter-redesign .lab-skip,
+body.bb-chapter-redesign .bb-skip-link {
+  position: fixed !important;
+  top: 8px !important;
+  left: 8px !important;
+  z-index: 1000 !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 10px 14px !important;
+  color: #ffffff !important;
+  background: var(--bb-ink) !important;
+  border: 0 !important;
+  border-radius: 10px !important;
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+  font-size: 0.85rem !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  text-decoration: none !important;
+  transform: translateY(calc(-100% - 20px)) !important;
+}
+
+body.bb-chapter-redesign .lesson-skip:focus,
+body.bb-chapter-redesign .lesson-skip:focus-visible,
+body.bb-chapter-redesign .lab-skip:focus,
+body.bb-chapter-redesign .lab-skip:focus-visible,
+body.bb-chapter-redesign .bb-skip-link:focus,
+body.bb-chapter-redesign .bb-skip-link:focus-visible {
+  transform: translateY(0) !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Product topbar                                                             */
+/* -------------------------------------------------------------------------- */
+
+body.bb-chapter-redesign .lab-topbar {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: var(--bb-z-sticky) !important;
+  width: 100%;
+  height: var(--bb-topbar-h) !important;
+  min-height: var(--bb-topbar-h) !important;
+  padding: 0 !important;
+  background: var(--bb-surface) !important;
+  border: 0 !important;
+  border-bottom: 1px solid var(--bb-line) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+body.bb-chapter-redesign .lab-topbar::after {
+  content: none !important;
   display: none !important;
 }
 
-body.bb-chapter-redesign .lab-topbar {
-  top: 0 !important;
-  height: 58px;
-  padding: 0 !important;
-  display: flex;
-  align-items: center;
-  background: rgba(247, 247, 244, 0.96) !important;
-  border-bottom: 1px solid var(--bb-new-line) !important;
-  box-shadow: none !important;
-  backdrop-filter: blur(10px) !important;
-}
-
-body.bb-chapter-redesign.dark .lab-topbar {
-  background: rgba(12, 18, 31, 0.96) !important;
-  border-bottom-color: rgba(148, 163, 184, 0.16) !important;
-}
-
-body.bb-chapter-redesign .lab-topbar-inner {
-  width: 100%;
-  max-width: 1440px;
-  min-height: 58px;
-  margin: 0 auto;
+body.bb-chapter-redesign .lab-topbar-inner,
+body.bb-chapter-redesign.bb-compact-topbar .lab-topbar-inner,
+body.bb-chapter-redesign.bb-no-lesson-search .lab-topbar-inner {
+  width: 100% !important;
+  max-width: 1344px !important;
+  height: var(--bb-topbar-h) !important;
+  min-height: var(--bb-topbar-h) !important;
+  margin: 0 auto !important;
   padding: 0 24px !important;
   display: grid !important;
-  grid-template-columns: 190px minmax(180px, 280px) minmax(240px, 390px) 150px;
-  align-items: center;
-  gap: 22px;
+  grid-template-columns: var(--bb-sidebar-w) minmax(0, 1fr) auto !important;
+  grid-template-rows: 1fr !important;
+  align-items: center !important;
+  gap: 32px !important;
   background: transparent !important;
   border: 0 !important;
   border-radius: 0 !important;
   box-shadow: none !important;
 }
 
-body.bb-chapter-redesign .lab-brand-mark {
-  width: 30px;
-  height: 30px;
-  border-radius: 8px;
-  background: #0f172a;
-  color: #fff;
-  box-shadow: none;
-}
-
-body.bb-chapter-redesign .lab-brand-name {
-  font-size: 1rem;
-  font-weight: 900;
-  letter-spacing: -0.04em;
-}
-
-body.bb-chapter-redesign .lab-brand-sub {
-  color: #94a3b8;
-}
-
-body.bb-chapter-redesign .lab-nav {
-  justify-self: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: min(100%, 220px);
-  gap: 2px;
-  padding: 4px;
-  background: #fff;
-  border: 1px solid rgba(15, 23, 42, 0.08);
-  border-radius: 999px;
-  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.04);
-}
-
-body.bb-chapter-redesign .lab-nav a {
-  min-height: 38px;
-  padding: 0.45rem 0.85rem;
-  border-radius: 999px;
-  color: #475569;
-  font-size: 0.88rem;
-  font-weight: 800;
-  text-align: center;
-  line-height: 1.1;
-}
-
-body.bb-chapter-redesign .lab-nav a:hover,
-body.bb-chapter-redesign .lab-nav a.active {
-  background: var(--bb-new-accent-light);
-  color: var(--bb-new-accent);
-  transform: none;
-}
-
-body.bb-chapter-redesign .lesson-search {
-  justify-self: stretch;
-  display: block !important;
-  position: relative !important;
-  inset: auto !important;
-  pointer-events: auto !important;
-}
-
-body.bb-chapter-redesign .lesson-search-panel {
-  width: 100% !important;
-  max-width: none !important;
-  opacity: 1 !important;
-  overflow: visible !important;
+body.bb-chapter-redesign .lab-brand {
+  position: static !important;
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  justify-self: start !important;
+  width: max-content !important;
+  max-width: 100%;
+  min-width: 0;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  color: var(--bb-ink) !important;
+  text-decoration: none;
   transform: none !important;
-  pointer-events: auto !important;
-  padding: 0 !important;
-  display: flex;
+}
+
+body.bb-chapter-redesign .lab-brand-mark {
+  width: 36px !important;
+  min-width: 36px !important;
+  height: 36px !important;
+  display: inline-grid !important;
+  place-items: center !important;
+  overflow: visible !important;
+  color: var(--bb-ink) !important;
   background: transparent !important;
   border: 0 !important;
+  border-radius: 9px !important;
   box-shadow: none !important;
 }
 
-body.bb-chapter-redesign .lesson-search-box {
-  width: 100%;
-  min-width: 0;
-  height: 40px;
-  padding: 0 0.78rem 0 0.9rem !important;
-  gap: 0.6rem;
-  background: #fff !important;
-  border: 1px solid rgba(15, 23, 42, 0.08) !important;
-  border-radius: 999px !important;
-  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.04) !important;
-}
-
-body.bb-chapter-redesign .lesson-search-count,
-body.bb-chapter-redesign .lesson-search-nav,
-body.bb-chapter-redesign .lesson-search-close {
-  display: none !important;
-}
-
-body.bb-chapter-redesign .lab-topbar-back {
-  justify-self: stretch;
-  min-height: 40px;
-  padding: 0.48rem 1rem !important;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #64748b;
-  background: #fff !important;
-  border: 1px solid rgba(15, 23, 42, 0.08) !important;
-  border-radius: 999px !important;
-  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.04) !important;
-  font-size: 0.84rem;
-  font-weight: 800;
-}
-
-body.bb-chapter-redesign .lab-topbar-back:hover {
-  color: var(--bb-new-accent);
-  background: var(--bb-new-accent-light) !important;
-}
-
-body.bb-chapter-redesign .ch-layout {
-  max-width: 1440px;
-  padding: 24px 24px 72px !important;
-  grid-template-columns: 264px minmax(0, 1fr);
-  gap: 26px;
-}
-
-body.bb-chapter-redesign main {
-  max-width: 960px;
-  width: 100%;
-}
-
-body.bb-chapter-redesign #sidenav {
-  top: 82px;
-  padding: 0 0 16px;
-  background: #fff !important;
-  border: 1px solid rgba(15, 23, 42, 0.07);
-  border-radius: 20px;
-  box-shadow: none;
-}
-
-body.bb-chapter-redesign .nav-header {
-  padding: 1.65rem 1.05rem 1.05rem;
-  border-bottom: 1px solid var(--bb-new-line);
-  margin-bottom: 0.45rem;
-}
-
-body.bb-chapter-redesign .nav-chapter-badge {
-  width: max-content;
-  background: var(--bb-new-accent-light);
-  border: 1px solid rgba(8, 145, 178, 0.15);
-  color: var(--bb-new-accent);
-  font-size: 0.66rem;
-  letter-spacing: 0.16em;
-}
-
-body.bb-chapter-redesign .nav-chapter-title {
-  color: #0f172a;
-  font-size: 1.02rem;
-  font-weight: 900;
-  letter-spacing: -0.04em;
-}
-
-body.bb-chapter-redesign .nav-group-label {
-  color: #94a3b8;
-  font-size: 0.64rem;
-  letter-spacing: 0.16em;
-  padding: 0.8rem 1rem 0.38rem;
-}
-
-body.bb-chapter-redesign #sidenav a,
-body.bb-chapter-redesign .nav-settings-btn {
-  min-height: 40px;
-  margin: 0.08rem 0.88rem;
-  padding: 0.58rem 0.78rem;
-  border-radius: 6px;
-  color: #64748b;
-  background: transparent;
-  font-size: 0.84rem;
-  font-weight: 800;
-  border: 0;
-  box-shadow: none;
-}
-
-body.bb-chapter-redesign #sidenav a::before,
-body.bb-chapter-redesign .nav-settings-btn .dot {
-  width: 6px;
-  height: 6px;
-}
-
-body.bb-chapter-redesign #sidenav a:hover,
-body.bb-chapter-redesign #sidenav a.active,
-body.bb-chapter-redesign .nav-settings-btn:hover,
-body.bb-chapter-redesign .nav-settings-btn.on {
-  background: var(--bb-new-accent-light) !important;
-  color: var(--bb-new-accent) !important;
-  transform: none;
-}
-
-body.bb-chapter-redesign .nav-divider {
-  margin: 0.9rem 1.05rem;
-  background: var(--bb-new-line);
-}
-
-body.bb-chapter-redesign .hero,
-body.bb-chapter-redesign .card,
-body.bb-chapter-redesign .summary,
-body.bb-chapter-redesign .quiz-header,
-body.bb-chapter-redesign .sync-bar,
-body.bb-chapter-redesign .legend,
-body.bb-chapter-redesign .question-card,
-body.bb-chapter-redesign .pagination-controls,
-body.bb-chapter-redesign .final-score {
-  background: #fff !important;
-  border: 1px solid rgba(15, 23, 42, 0.06) !important;
-  border-radius: 20px !important;
-  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.03), 0 12px 32px rgba(15, 23, 42, 0.035) !important;
-}
-
-body.bb-chapter-redesign .hero::after {
-  display: none !important;
-}
-
-body.bb-chapter-redesign .chapter-home .hero,
-body.bb-chapter-redesign .page-section:not(.chapter-home) .hero {
+body.bb-chapter-redesign .lab-brand-mark .brand-logo-mark {
+  width: 36px !important;
+  height: 36px !important;
   display: block !important;
-  margin: 0 0 1.6rem !important;
-  padding: 2.5rem 3rem 2.15rem !important;
-  border-radius: 20px !important;
 }
 
-body.bb-chapter-redesign .hero::before,
-body.bb-chapter-redesign .chapter-home .hero::before {
-  height: 5px;
-  background: linear-gradient(90deg, var(--bb-new-accent), var(--bb-new-accent-mid)) !important;
-}
-
-body.bb-chapter-redesign .bb-chapter-kicker,
-body.bb-chapter-redesign .bb-section-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.7rem;
-  margin-bottom: 1.05rem;
-  color: var(--bb-new-accent);
-  font-size: 0.74rem;
-  font-weight: 900;
-  letter-spacing: 0.18em;
-  line-height: 1.45;
-  text-transform: uppercase;
-}
-
-body.bb-chapter-redesign .bb-chapter-kicker::before,
-body.bb-chapter-redesign .bb-section-eyebrow::before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-radius: 999px;
-  background: currentColor;
-}
-
-body.bb-chapter-redesign .chapter-home .hero h1,
-body.bb-chapter-redesign .bb-lab-title {
-  max-width: 10ch;
-  margin: 0 0 1rem;
-  color: #0f172a !important;
-  font-size: clamp(2.85rem, 6vw, 4.95rem) !important;
-  font-weight: 900;
-  letter-spacing: -0.065em;
-  line-height: 0.94 !important;
-}
-
-body.bb-chapter-redesign .bb-title-main,
-body.bb-chapter-redesign .bb-title-accent {
-  display: block;
-}
-
-body.bb-chapter-redesign .bb-title-accent {
-  color: var(--bb-new-accent);
-}
-
-body.bb-chapter-redesign .chapter-home .hero p {
-  max-width: 60ch;
-  color: #64748b !important;
-  font-size: 1.02rem !important;
-  line-height: 1.65 !important;
-}
-
-body.bb-chapter-redesign .chapter-home .badges {
-  margin-top: 1.35rem;
-  gap: 0.62rem;
-  max-width: 38rem;
-}
-
-body.bb-chapter-redesign .chapter-home .badge,
-body.bb-chapter-redesign .bb-section-pill {
-  padding: 0.36rem 0.78rem;
-  background: #fff !important;
-  color: #64748b !important;
-  border: 1px solid rgba(15, 23, 42, 0.08) !important;
-  border-radius: 999px !important;
-  box-shadow: none;
-  font-size: 0.74rem;
-  font-weight: 900;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-body.bb-chapter-redesign .bb-home-dashboard {
+body.bb-chapter-redesign .lab-brand-mark .brand-menu,
+body.bb-chapter-redesign .lab-brand-mark .brand-star {
   display: none !important;
-}
-
-body.bb-chapter-redesign .page-section:not(.chapter-home) .hero h1 {
-  color: #0f172a !important;
-  font-size: clamp(1.85rem, 3vw, 2.65rem) !important;
-  line-height: 1.02 !important;
-  letter-spacing: -0.045em;
-}
-
-body.bb-chapter-redesign .page-section:not(.chapter-home) .hero p {
-  color: #64748b !important;
-  font-size: 0.98rem !important;
-}
-
-body.bb-chapter-redesign .gtabs {
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr;
-  width: 168px;
-  padding: 4px;
-  gap: 2px;
-  background: #fff !important;
-  border: 1px solid rgba(15, 23, 42, 0.08) !important;
-  border-radius: 18px !important;
-  box-shadow: none !important;
-}
-
-body.bb-chapter-redesign .gtab-btn {
-  border-radius: 14px !important;
-  color: #64748b !important;
-  font-weight: 900;
-}
-
-body.bb-chapter-redesign .gtab-btn.active {
-  background: var(--bb-new-accent-light) !important;
-  color: var(--bb-new-accent) !important;
-}
-
-body.bb-chapter-redesign .quiz-header {
-  position: relative;
-  display: grid !important;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  margin: 0 0 1.35rem !important;
-  padding: 2rem 2.35rem !important;
-  overflow: hidden;
-}
-
-body.bb-chapter-redesign .quiz-header::before {
-  content: "";
-  position: absolute;
-  inset: 0 0 auto 0;
-  height: 5px;
-  background: linear-gradient(90deg, var(--bb-new-accent), var(--bb-new-accent-mid));
-}
-
-body.bb-chapter-redesign .quiz-header h2 {
-  max-width: 18ch;
-  color: #0f172a !important;
-  font-size: clamp(1.9rem, 3.5vw, 3.2rem) !important;
-  line-height: 0.96 !important;
-  letter-spacing: -0.06em;
-}
-
-body.bb-chapter-redesign .progress-bar-wrap {
-  height: 6px;
-  background: #f1f5f9;
-}
-
-body.bb-chapter-redesign .progress-bar {
-  background: var(--bb-new-accent) !important;
-}
-
-body.bb-chapter-redesign .sync-bar {
-  background: var(--bb-new-accent-light) !important;
-  border-color: rgba(8, 145, 178, 0.16) !important;
-}
-
-body.bb-chapter-redesign .sync-btn,
-body.bb-chapter-redesign .gbtn {
-  border-radius: 999px !important;
-  font-weight: 900;
-}
-
-body.bb-chapter-redesign .sync-btn.export,
-body.bb-chapter-redesign .gbtn:not(.gbtn-secondary) {
-  background: var(--bb-new-accent) !important;
-}
-
-body.bb-chapter-redesign #dm-btn,
-body.bb-chapter-redesign #hl-btn,
-body.bb-chapter-redesign #settings-fab {
-  right: 20px;
-  background: #fff !important;
-  color: #0f172a !important;
-  border: 1px solid rgba(15, 23, 42, 0.08) !important;
-  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08) !important;
-}
-
-@media (max-width: 1024px) {
-  body.bb-chapter-redesign .lab-topbar {
-    height: auto;
-    padding: 10px 12px 0 !important;
-    background: transparent !important;
-    border-bottom: 0 !important;
-  }
-
-  body.bb-chapter-redesign .lab-topbar-inner {
-    min-height: 52px;
-    grid-template-columns: minmax(0, 1fr) auto !important;
-    padding: 8px 10px !important;
-    background: #fff !important;
-    border: 1px solid rgba(15, 23, 42, 0.08) !important;
-    border-radius: 999px !important;
-    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08) !important;
-  }
-
-  body.bb-chapter-redesign .lab-nav,
-  body.bb-chapter-redesign .lab-topbar-back,
-  body.bb-chapter-redesign .lesson-search {
-    display: none !important;
-  }
-
-  body.bb-chapter-redesign .ch-layout {
-    display: block !important;
-    padding: 16px 0 64px !important;
-  }
-
-  body.bb-chapter-redesign main {
-    max-width: none;
-    padding: 0 14px 4rem !important;
-  }
-
-  body.bb-chapter-redesign #sidenav {
-    top: 0 !important;
-    padding-top: 76px !important;
-    border-radius: 0 22px 22px 0 !important;
-  }
-}
-
-@media (max-width: 760px) {
-  body.bb-chapter-redesign,
-  body.bb-chapter-redesign main {
-    overflow-x: hidden !important;
-  }
-
-  body.bb-chapter-redesign main,
-  body.bb-chapter-redesign .hero,
-  body.bb-chapter-redesign .card,
-  body.bb-chapter-redesign .summary,
-  body.bb-chapter-redesign .quiz-header {
-    max-width: calc(100vw - 28px) !important;
-  }
-
-  body.bb-chapter-redesign .bb-home-copy {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-  }
-
-  body.bb-chapter-redesign .chapter-home .hero,
-  body.bb-chapter-redesign .page-section:not(.chapter-home) .hero,
-  body.bb-chapter-redesign .quiz-header {
-    padding: 1.65rem 1.18rem 1.35rem !important;
-    border-radius: 20px !important;
-  }
-
-  body.bb-chapter-redesign .chapter-home .hero h1,
-  body.bb-chapter-redesign .bb-lab-title {
-    max-width: 9ch;
-    font-size: 2.35rem !important;
-    letter-spacing: -0.055em;
-  }
-
-  body.bb-chapter-redesign .bb-chapter-kicker,
-  body.bb-chapter-redesign .bb-section-eyebrow {
-    font-size: 0.66rem;
-    letter-spacing: 0.13em;
-  }
-
-  body.bb-chapter-redesign .gtabs {
-    width: 100%;
-  }
-}
-
-/* Keep chapter-map numbers and icons from occupying the same corner. */
-body.bb-chapter-redesign .chapter-map .map-card::before {
-  top: 1.02rem !important;
-  right: 1.12rem !important;
-  left: auto !important;
-  z-index: 0 !important;
-  color: rgba(15, 23, 42, 0.07) !important;
-  pointer-events: none !important;
-}
-
-body.bb-chapter-redesign .chapter-map .map-card > div:first-child {
-  position: relative !important;
-  z-index: 1 !important;
-  margin: 0 0 1.15rem !important;
-  flex: 0 0 auto !important;
-}
-
-body.bb-chapter-redesign .chapter-map .map-card strong,
-body.bb-chapter-redesign .chapter-map .map-card p,
-body.bb-chapter-redesign .chapter-map .bb-map-meta {
-  position: relative !important;
-  z-index: 1 !important;
-}
-
-@media (max-width: 760px) {
-  body.bb-chapter-redesign .chapter-map .map-card::before {
-    top: 0.85rem !important;
-    right: 0.9rem !important;
-    font-size: 1.65rem !important;
-  }
-
-  body.bb-chapter-redesign .chapter-map .map-card > div:first-child {
-    width: 50px !important;
-    height: 50px !important;
-    margin-bottom: 1rem !important;
-  }
-}
-
-body.bb-chapter-redesign::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background:
-    linear-gradient(115deg, rgba(255, 255, 255, 0.32), transparent 36%),
-    radial-gradient(circle at bottom left, rgba(15, 23, 42, 0.035), transparent 28%);
-  opacity: 0.9;
-  z-index: -1;
-}
-
-body.bb-chapter-redesign.dark {
-  --bb-shell-shadow: 0 28px 72px rgba(0, 0, 0, 0.35);
-  --bb-card-shadow: 0 18px 46px rgba(0, 0, 0, 0.26);
-  --bb-card-shadow-hover: 0 26px 60px rgba(0, 0, 0, 0.36);
-  --bb-soft-border: rgba(148, 163, 184, 0.14);
-  --bb-soft-border-strong: rgba(148, 163, 184, 0.26);
-  --bb-surface: rgba(10, 17, 31, 0.92);
-  --bb-surface-2: #111c2f;
-  --bb-surface-3: #16243a;
-  --bb-ink: #f8fafc;
-  --bb-muted: #cbd5e1;
-  --bb-muted-soft: #94a3b8;
-  background:
-    radial-gradient(circle at top right, rgba(37, 99, 235, 0.24) 0, rgba(8, 17, 31, 0) 30%),
-    radial-gradient(circle at 14% 20%, rgba(14, 165, 233, 0.12) 0, rgba(8, 17, 31, 0) 18%),
-    linear-gradient(180deg, #08111f 0%, #0d1729 46%, #08111f 100%) !important;
-}
-
-body.bb-chapter-redesign.dark::before {
-  background:
-    linear-gradient(140deg, rgba(255, 255, 255, 0.04), transparent 30%),
-    radial-gradient(circle at bottom left, rgba(255, 255, 255, 0.02), transparent 24%);
-}
-
-body.bb-chapter-redesign .ch-layout {
-  max-width: 1480px;
-  margin: 0 auto;
-  padding: 28px 24px 72px;
-  gap: 28px;
-  align-items: start;
-}
-
-body.bb-chapter-redesign main {
-  min-width: 0;
-}
-
-body.bb-chapter-redesign .lab-topbar {
-  position: sticky;
-  top: 0;
-  padding: 18px 24px 0;
-  background: transparent !important;
-  border-bottom: none !important;
-  backdrop-filter: none !important;
-  z-index: 260;
-}
-
-body.bb-chapter-redesign .lab-topbar::after {
-  display: none !important;
-}
-
-body.bb-chapter-redesign .lab-topbar-inner {
-  max-width: 1480px;
-  margin: 0 auto;
-  padding: 12px 16px 12px 14px;
-  display: grid;
-  grid-template-columns: auto 1fr auto auto;
-  align-items: center;
-  gap: 14px;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid var(--bb-soft-border);
-  border-radius: 999px;
-  box-shadow: var(--bb-shell-shadow);
-}
-
-body.bb-chapter-redesign.dark .lab-topbar-inner {
-  background: rgba(9, 15, 29, 0.94);
-  border-color: var(--bb-soft-border);
-}
-
-body.bb-chapter-redesign .lab-brand {
-  gap: 12px;
-  min-width: 0;
-}
-
-body.bb-chapter-redesign .lab-brand-mark {
-  width: 42px;
-  height: 42px;
-  border-radius: 14px;
-  background: linear-gradient(145deg, #0f172a, #1e3a8a);
-  color: #fff;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
 }
 
 body.bb-chapter-redesign .lab-brand-name {
-  color: var(--bb-ink);
-  font-size: 1.02rem;
-  font-weight: 900;
-  letter-spacing: -0.03em;
+  min-width: 0;
+  overflow: hidden;
+  color: var(--bb-ink) !important;
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+  font-size: 1rem !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.025em !important;
+  line-height: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 body.bb-chapter-redesign .lab-brand-sub {
-  color: var(--bb-muted-soft);
-}
-
-body.bb-chapter-redesign .lab-nav {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-}
-
-body.bb-chapter-redesign .lab-nav a {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  min-height: 44px;
-  padding: 0.72rem 1rem;
-  border-radius: 999px;
-  color: var(--bb-muted);
-  font-size: 0.84rem;
-  font-weight: 800;
-  line-height: 1;
-  transition: background-color var(--dur-base), color var(--dur-base), transform var(--dur-base), box-shadow var(--dur-base);
-}
-
-body.bb-chapter-redesign .lab-nav a::after {
-  display: none;
-}
-
-body.bb-chapter-redesign .lab-nav a:hover,
-body.bb-chapter-redesign .lab-nav a.active {
-  background: var(--chapter-accent-light);
-  color: var(--chapter-accent);
-  transform: translateY(-1px);
-}
-
-body.bb-chapter-redesign .lesson-search {
-  justify-self: end;
-}
-
-body.bb-chapter-redesign .lesson-search-panel {
-  gap: 0.55rem;
-}
-
-body.bb-chapter-redesign .lesson-search-box,
-body.bb-chapter-redesign .lesson-search-btn,
-body.bb-chapter-redesign .lesson-search-close,
-body.bb-chapter-redesign .lab-topbar-back {
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid var(--bb-soft-border);
-  box-shadow: none;
-}
-
-body.bb-chapter-redesign.dark .lesson-search-box,
-body.bb-chapter-redesign.dark .lesson-search-btn,
-body.bb-chapter-redesign.dark .lesson-search-close,
-body.bb-chapter-redesign.dark .lab-topbar-back {
-  background: rgba(15, 23, 42, 0.92);
-  border-color: var(--bb-soft-border);
-}
-
-body.bb-chapter-redesign .lesson-search-box {
-  padding: 0.45rem 0.5rem 0.45rem 0.95rem;
-}
-
-body.bb-chapter-redesign .lesson-search-box input {
-  color: var(--bb-ink);
-}
-
-body.bb-chapter-redesign .lesson-search-btn:hover:not(:disabled),
-body.bb-chapter-redesign .lesson-search-close:hover,
-body.bb-chapter-redesign .lab-topbar-back:hover {
-  background: var(--chapter-accent-light);
-  color: var(--chapter-accent);
-}
-
-body.bb-chapter-redesign .lab-topbar-back {
-  justify-self: end;
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  padding: 0.72rem 1rem;
-  border-radius: 999px;
-  color: var(--bb-muted);
-  font-size: 0.84rem;
-  font-weight: 800;
-}
-
-body.bb-chapter-redesign .lab-topbar-mobile-actions,
-body.bb-chapter-redesign .lab-topbar-mobile-btn {
-  display: none;
-}
-
-body.bb-chapter-redesign #sidenav {
-  background:
-    radial-gradient(circle at top right, rgba(96, 165, 250, 0.22) 0, rgba(11, 23, 48, 0) 26%),
-    linear-gradient(180deg, #0b1730 0%, #0f2356 100%);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 30px;
-  box-shadow: 0 26px 62px rgba(11, 23, 48, 0.28);
-  padding-bottom: 20px;
-  top: 92px;
-}
-
-body.bb-chapter-redesign .nav-header {
-  padding: 1.35rem 1.25rem 1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  margin-bottom: 0.75rem;
-}
-
-body.bb-chapter-redesign .nav-chapter-badge {
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  color: #fff;
-  font-size: 0.66rem;
-  padding: 0.22rem 0.72rem;
-}
-
-body.bb-chapter-redesign .nav-chapter-title {
-  color: #fff;
-  font-size: 1.04rem;
-  letter-spacing: -0.02em;
-}
-
-body.bb-chapter-redesign .nav-group-label {
-  color: rgba(255, 255, 255, 0.42);
-  font-size: 0.63rem;
-  padding: 0.8rem 1.25rem 0.42rem;
-}
-
-body.bb-chapter-redesign #sidenav a {
-  margin: 0.1rem 0.8rem;
-  padding: 0.72rem 0.88rem;
-  border-radius: 16px;
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 0.86rem;
-  font-weight: 700;
-  line-height: 1.35;
-}
-
-body.bb-chapter-redesign #sidenav a::before {
-  width: 8px;
-  height: 8px;
-  opacity: 0.88;
-}
-
-body.bb-chapter-redesign #sidenav a:hover {
-  background: rgba(255, 255, 255, 0.08);
-  color: #fff;
-}
-
-body.bb-chapter-redesign #sidenav a.active {
-  background: rgba(255, 255, 255, 0.15);
-  color: #fff;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
-}
-
-body.bb-chapter-redesign #sidenav a.sub {
-  margin-left: 1rem;
-  padding-left: 1.15rem;
-  color: rgba(255, 255, 255, 0.54);
-}
-
-body.bb-chapter-redesign .nav-divider {
-  height: 1px;
-  margin: 0.8rem 1.2rem;
-  background: rgba(255, 255, 255, 0.1);
-}
-
-body.bb-chapter-redesign .nav-settings-btn {
-  width: calc(100% - 1.6rem);
-  margin: 0.18rem 0.8rem;
-  padding: 0.8rem 0.95rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.72rem;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.04);
-  color: rgba(255, 255, 255, 0.78);
-  font-family: var(--font-display);
-  font-size: 0.83rem;
-  font-weight: 800;
-  text-align: left;
-  transition: background-color var(--dur-base), transform var(--dur-base), color var(--dur-base);
-}
-
-body.bb-chapter-redesign .nav-settings-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  transform: translateY(-1px);
-}
-
-body.bb-chapter-redesign .nav-settings-btn .dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.42);
-  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.05);
-  flex-shrink: 0;
-}
-
-body.bb-chapter-redesign .page-section {
-  animation: bbSectionIn 0.32s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-@keyframes bbSectionIn {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-body.bb-chapter-redesign .hero,
-body.bb-chapter-redesign .card,
-body.bb-chapter-redesign .summary,
-body.bb-chapter-redesign .quiz-header,
-body.bb-chapter-redesign .sync-bar,
-body.bb-chapter-redesign .legend,
-body.bb-chapter-redesign .question-card,
-body.bb-chapter-redesign .pagination-controls,
-body.bb-chapter-redesign .final-score,
-body.bb-chapter-redesign #gtab-analysis > div:first-child,
-body.bb-chapter-redesign .an-stats-wrap,
-body.bb-chapter-redesign .an-gauge-inline,
-body.bb-chapter-redesign .an-evo-card,
-body.bb-chapter-redesign .an-topic-card,
-body.bb-chapter-redesign .an-topic-summary,
-body.bb-chapter-redesign .an-topic-card-list,
-body.bb-chapter-redesign .an-err-card,
-body.bb-chapter-redesign .error-detail-card,
-body.bb-chapter-redesign .no-data {
-  background: var(--bb-surface) !important;
-  border: 1px solid var(--bb-soft-border) !important;
-  border-radius: 28px !important;
-  box-shadow: var(--bb-card-shadow);
-}
-
-body.bb-chapter-redesign.dark .hero,
-body.bb-chapter-redesign.dark .card,
-body.bb-chapter-redesign.dark .summary,
-body.bb-chapter-redesign.dark .quiz-header,
-body.bb-chapter-redesign.dark .sync-bar,
-body.bb-chapter-redesign.dark .legend,
-body.bb-chapter-redesign.dark .question-card,
-body.bb-chapter-redesign.dark .pagination-controls,
-body.bb-chapter-redesign.dark .final-score,
-body.bb-chapter-redesign.dark #gtab-analysis > div:first-child,
-body.bb-chapter-redesign.dark .an-stats-wrap,
-body.bb-chapter-redesign.dark .an-gauge-inline,
-body.bb-chapter-redesign.dark .an-evo-card,
-body.bb-chapter-redesign.dark .an-topic-card,
-body.bb-chapter-redesign.dark .an-topic-summary,
-body.bb-chapter-redesign.dark .an-topic-card-list,
-body.bb-chapter-redesign.dark .an-err-card,
-body.bb-chapter-redesign.dark .error-detail-card,
-body.bb-chapter-redesign.dark .no-data {
-  background: var(--bb-surface-2) !important;
-  border-color: var(--bb-soft-border) !important;
-}
-
-body.bb-chapter-redesign .hero {
-  position: relative;
-  overflow: hidden;
-  margin: 0 0 1.2rem !important;
-  padding: 1.5rem 1.6rem 1.45rem !important;
-}
-
-body.bb-chapter-redesign .hero::before {
-  content: "";
-  position: absolute;
-  inset: 0 0 auto 0;
-  height: 6px;
-  background: linear-gradient(90deg, var(--chapter-accent), var(--primary));
-}
-
-body.bb-chapter-redesign .hero::after {
-  content: "";
-  position: absolute;
-  right: -42px;
-  top: -48px;
-  width: 180px;
-  height: 180px;
-  border-radius: 999px;
-  background: radial-gradient(circle, var(--chapter-accent-light) 0, rgba(255, 255, 255, 0) 68%);
-  opacity: 0.7;
-  pointer-events: none;
-}
-
-body.bb-chapter-redesign .bb-hero-copy {
-  position: relative;
-  z-index: 1;
-}
-
-body.bb-chapter-redesign .chapter-home .hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.92fr);
-  gap: 24px;
-  padding: 2rem 2rem 1.9rem !important;
-}
-
-body.bb-chapter-redesign .chapter-home .hero::before {
-  height: 7px;
-}
-
-body.bb-chapter-redesign .chapter-home .hero h1 {
-  max-width: 10ch;
-  margin-bottom: 0.85rem;
-  font-size: clamp(2.3rem, 4.9vw, 4.65rem) !important;
-  line-height: 0.95 !important;
-  letter-spacing: -0.05em;
-  color: var(--bb-ink) !important;
-}
-
-body.bb-chapter-redesign .chapter-home .hero p {
-  max-width: 60ch;
-  font-size: 1.03rem !important;
-  line-height: 1.6 !important;
   color: var(--bb-muted) !important;
 }
 
-body.bb-chapter-redesign .chapter-home .badges {
-  margin-top: 1.35rem;
-  gap: 0.65rem;
+body.bb-chapter-redesign .lab-menu-trigger {
+  display: none !important;
 }
 
-body.bb-chapter-redesign .chapter-home .badge {
-  padding: 0.44rem 0.84rem;
-  background: rgba(255, 255, 255, 0.84) !important;
-  border: 1px solid rgba(15, 23, 42, 0.08) !important;
-  border-radius: 999px;
-  color: var(--bb-muted) !important;
-  font-size: 0.76rem;
-  font-weight: 800;
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
-}
-
-body.bb-chapter-redesign .bb-home-dashboard {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1.2rem;
-  background:
-    radial-gradient(circle at top right, rgba(255, 255, 255, 0.1) 0, rgba(15, 23, 42, 0) 34%),
-    linear-gradient(180deg, #0f172a 0%, #10244f 100%);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 24px;
-  color: #fff;
-  box-shadow: 0 26px 58px rgba(15, 23, 42, 0.24);
-}
-
-body.bb-chapter-redesign .bb-dashboard-kicker {
-  display: inline-flex;
+body.bb-chapter-redesign .bb-topbar-context {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  justify-self: start !important;
+  min-width: 0;
+  max-width: 100%;
+  display: flex !important;
   align-items: center;
-  gap: 0.45rem;
-  font-family: var(--font-display);
-  font-size: 0.69rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.72);
+  gap: 12px;
 }
 
-body.bb-chapter-redesign .bb-dashboard-kicker::before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  border-radius: 999px;
-  background: #93c5fd;
-  box-shadow: 0 0 0 6px rgba(147, 197, 253, 0.16);
-}
-
-body.bb-chapter-redesign .bb-dashboard-title {
-  margin-top: 0.2rem;
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  font-weight: 900;
-  letter-spacing: -0.03em;
-  color: #fff;
-}
-
-body.bb-chapter-redesign .bb-dashboard-copy {
-  margin: 0.2rem 0 0;
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 0.88rem;
-  line-height: 1.55;
-}
-
-body.bb-chapter-redesign .bb-dashboard-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.72rem;
-}
-
-body.bb-chapter-redesign .bb-dashboard-stat {
-  padding: 0.88rem 0.9rem;
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-body.bb-chapter-redesign .bb-dashboard-label {
-  display: block;
-  font-size: 0.7rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: rgba(255, 255, 255, 0.54);
-}
-
-body.bb-chapter-redesign .bb-dashboard-value {
-  display: block;
-  margin-top: 0.36rem;
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 900;
-  letter-spacing: -0.05em;
-  color: #fff;
-}
-
-body.bb-chapter-redesign .bb-dashboard-note {
-  display: block;
-  margin-top: 0.18rem;
-  color: rgba(255, 255, 255, 0.64);
-  font-size: 0.76rem;
-  line-height: 1.4;
-}
-
-body.bb-chapter-redesign .bb-dashboard-actions {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.58rem;
-}
-
-body.bb-chapter-redesign .bb-home-action {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 44px;
-  padding: 0.84rem 1rem;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.06);
-  color: #fff;
-  font-family: var(--font-display);
-  font-size: 0.82rem;
-  font-weight: 800;
-  transition: transform var(--dur-base), background-color var(--dur-base), border-color var(--dur-base);
-}
-
-body.bb-chapter-redesign .bb-home-action:hover {
-  transform: translateY(-1px);
-  background: rgba(255, 255, 255, 0.12);
-}
-
-body.bb-chapter-redesign .bb-home-action.primary {
-  background: #fff;
-  color: #0f172a;
-}
-
-body.bb-chapter-redesign .bb-home-action.primary:hover {
-  background: var(--chapter-accent-light);
-  color: var(--chapter-accent);
-}
-
-body.bb-chapter-redesign .bb-section-eyebrow {
-  margin-bottom: 0.7rem;
-  font-family: var(--font-display);
-  font-size: 0.7rem;
-  font-weight: 900;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--chapter-accent);
-}
-
-body.bb-chapter-redesign .page-section:not(.chapter-home) .hero h1 {
-  margin-bottom: 0.28rem;
-  font-size: clamp(1.55rem, 2.5vw, 2.25rem) !important;
-  line-height: 1.04;
-  letter-spacing: -0.04em;
-  color: var(--bb-ink) !important;
-}
-
-body.bb-chapter-redesign .page-section:not(.chapter-home) .hero p {
-  max-width: 64ch;
-  font-size: 0.94rem !important;
-  color: var(--bb-muted-soft) !important;
-}
-
-body.bb-chapter-redesign .bb-section-pills {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  margin-top: 1rem;
-}
-
-body.bb-chapter-redesign .bb-section-pill {
-  display: inline-flex;
-  align-items: center;
-  min-height: 34px;
-  padding: 0.42rem 0.78rem;
-  border-radius: 999px;
-  background: var(--chapter-accent-light);
-  border: 1px solid rgba(15, 23, 42, 0.06);
-  color: var(--chapter-accent);
-  font-family: var(--font-display);
-  font-size: 0.74rem;
-  font-weight: 800;
-  line-height: 1;
-}
-
-body.bb-chapter-redesign.dark .bb-section-pill {
-  border-color: rgba(255, 255, 255, 0.08);
-}
-
-body.bb-chapter-redesign .chapter-map {
-  padding: 1.55rem !important;
-}
-
-body.bb-chapter-redesign .chapter-map h2 {
-  margin-bottom: 1.1rem;
-  font-size: 1.25rem !important;
-  color: var(--bb-ink) !important;
-}
-
-body.bb-chapter-redesign .chapter-map .g2,
-body.bb-chapter-redesign .chapter-map .map-grid-split {
-  gap: 16px !important;
-}
-
-body.bb-chapter-redesign .chapter-map .map-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 214px;
-  padding: 1.2rem !important;
-  border-radius: 24px !important;
-  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%) !important;
-  border: 1px solid var(--bb-soft-border-strong) !important;
-  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06) !important;
-  transition: transform var(--dur-base), box-shadow var(--dur-base), border-color var(--dur-base);
-  overflow: hidden;
-}
-
-body.bb-chapter-redesign .chapter-map .map-card:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--bb-card-shadow-hover) !important;
-}
-
-body.bb-chapter-redesign .chapter-map .map-card::before {
-  content: attr(data-map-index);
-  position: absolute;
-  top: 0.95rem;
-  right: 1rem;
-  font-family: var(--font-display);
-  font-size: 2rem;
-  font-weight: 900;
-  letter-spacing: -0.08em;
-  color: rgba(15, 23, 42, 0.08);
-}
-
-body.bb-chapter-redesign .chapter-map .map-card::after {
-  content: "";
-  position: absolute;
-  inset: auto auto 0 0;
-  width: 100%;
-  height: 6px;
-  background: linear-gradient(90deg, var(--map-accent), transparent);
-  opacity: 0.78;
-}
-
-body.bb-chapter-redesign .chapter-map .map-card > div:first-child {
-  width: 54px;
-  height: 54px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 18px;
-  background: var(--map-soft);
-  border: 1px solid rgba(15, 23, 42, 0.06);
-  font-size: 1.5rem;
-  line-height: 1;
-}
-
-body.bb-chapter-redesign .chapter-map .map-card strong {
-  display: block;
-  margin-top: 1rem;
-  font-size: 1.28rem !important;
-  line-height: 1.05 !important;
-  letter-spacing: -0.04em;
-  color: var(--map-accent) !important;
-}
-
-body.bb-chapter-redesign .chapter-map .map-card p {
-  margin-top: 0.66rem !important;
-  margin-bottom: 0 !important;
-  font-size: 0.9rem !important;
-  line-height: 1.58 !important;
-  color: var(--bb-muted) !important;
-}
-
-body.bb-chapter-redesign .bb-map-meta {
-  display: inline-flex;
-  align-items: center;
-  align-self: flex-start;
-  margin-top: 1rem;
-  padding: 0.38rem 0.72rem;
-  border-radius: 999px;
-  background: var(--map-soft);
-  color: var(--map-accent);
-  font-family: var(--font-display);
+body.bb-chapter-redesign .bb-topbar-context-kicker {
+  flex: 0 0 auto;
+  color: var(--bb-accent);
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
   font-size: 0.72rem;
   font-weight: 800;
-}
-
-body.bb-chapter-redesign .chapter-map .map-card.tone-blue {
-  --map-accent: var(--blue);
-  --map-soft: var(--blue-light);
-}
-
-body.bb-chapter-redesign .chapter-map .map-card.tone-green {
-  --map-accent: var(--green);
-  --map-soft: var(--green-light);
-}
-
-body.bb-chapter-redesign .chapter-map .map-card.tone-purple {
-  --map-accent: var(--purple);
-  --map-soft: var(--purple-light);
-}
-
-body.bb-chapter-redesign .chapter-map .map-card.tone-orange {
-  --map-accent: var(--orange);
-  --map-soft: var(--orange-light);
-}
-
-body.bb-chapter-redesign .chapter-map .map-card.tone-teal {
-  --map-accent: var(--teal);
-  --map-soft: var(--teal-light);
-}
-
-body.bb-chapter-redesign .chapter-map .map-card.tone-emerald {
-  --map-accent: var(--emerald);
-  --map-soft: var(--emerald-light);
-}
-
-body.bb-chapter-redesign .chapter-flow,
-body.bb-chapter-redesign .summary {
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(248, 251, 255, 0.96)) !important;
-}
-
-body.bb-chapter-redesign .summary {
-  padding: 1.4rem 1.45rem !important;
-  border-color: rgba(15, 23, 42, 0.06) !important;
-}
-
-body.bb-chapter-redesign .summary h3 {
-  color: var(--chapter-accent) !important;
-}
-
-body.bb-chapter-redesign .card {
-  padding: 1.45rem !important;
-}
-
-body.bb-chapter-redesign .card h2,
-body.bb-chapter-redesign h2.section,
-body.bb-chapter-redesign .sec-head h2,
-body.bb-chapter-redesign .quiz-header h2,
-body.bb-chapter-redesign #gtab-analysis h2 {
-  color: var(--bb-ink);
-  letter-spacing: -0.03em;
-}
-
-body.bb-chapter-redesign .sec-head {
-  margin-bottom: 1.15rem;
-  padding-bottom: 0.8rem;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--bb-soft-border);
-}
-
-body.bb-chapter-redesign .sec-head .num {
-  width: 2.2rem;
-  height: 2.2rem;
-  border-radius: 14px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
-}
-
-body.bb-chapter-redesign .box,
-body.bb-chapter-redesign .lesson-ref,
-body.bb-chapter-redesign .quiz-explain,
-body.bb-chapter-redesign .explanation,
-body.bb-chapter-redesign .expl-body {
-  border-radius: 0 20px 20px 0 !important;
-}
-
-body.bb-chapter-redesign .box {
-  padding: 1rem 1.15rem !important;
-  box-shadow: none;
-}
-
-body.bb-chapter-redesign .fig {
-  margin: 1.55rem auto;
-}
-
-body.bb-chapter-redesign .fig img,
-body.bb-chapter-redesign .img-txt img {
-  border-radius: 22px !important;
-  border-color: var(--bb-soft-border) !important;
-  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.08) !important;
-}
-
-body.bb-chapter-redesign table {
-  border-collapse: separate;
-  border-spacing: 0;
-  overflow: hidden;
-  border: 1px solid var(--bb-soft-border);
-  border-radius: 18px;
-}
-
-body.bb-chapter-redesign th {
-  background: linear-gradient(90deg, var(--chapter-accent), var(--primary)) !important;
-}
-
-body.bb-chapter-redesign td {
-  background: rgba(255, 255, 255, 0.88);
-}
-
-body.bb-chapter-redesign tr:nth-child(even) td {
-  background: var(--bb-surface-3);
-}
-
-body.bb-chapter-redesign .page-nav {
-  gap: 0.78rem !important;
-  margin: 1.25rem 0 0 !important;
-}
-
-body.bb-chapter-redesign .page-nav a,
-body.bb-chapter-redesign .gbtn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 44px;
-  padding: 0.82rem 1rem !important;
-  border-radius: 16px !important;
-  border: 1px solid var(--bb-soft-border) !important;
-  background: rgba(255, 255, 255, 0.92) !important;
-  color: var(--bb-muted) !important;
-  font-size: 0.82rem !important;
-  font-weight: 800 !important;
-  line-height: 1 !important;
-  box-shadow: none;
-  transition: transform var(--dur-base), background-color var(--dur-base), border-color var(--dur-base), color var(--dur-base), box-shadow var(--dur-base);
-}
-
-body.bb-chapter-redesign .page-nav a:hover,
-body.bb-chapter-redesign .gbtn:hover:not(:disabled) {
-  transform: translateY(-1px);
-  background: var(--chapter-accent-light) !important;
-  border-color: rgba(15, 23, 42, 0.06) !important;
-  color: var(--chapter-accent) !important;
-  box-shadow: 0 14px 24px rgba(15, 23, 42, 0.08);
-}
-
-body.bb-chapter-redesign .gbtn.gbtn-primary,
-body.bb-chapter-redesign .page-nav a:not(.outline):last-child {
-  background: linear-gradient(90deg, var(--chapter-accent), var(--primary)) !important;
-  border-color: transparent !important;
-  color: #fff !important;
-  box-shadow: 0 16px 28px rgba(15, 23, 42, 0.14);
-}
-
-body.bb-chapter-redesign .gbtn.gbtn-primary:hover,
-body.bb-chapter-redesign .page-nav a:not(.outline):last-child:hover {
-  background: linear-gradient(90deg, var(--primary), var(--chapter-accent)) !important;
-  color: #fff !important;
-}
-
-body.bb-chapter-redesign .gbtn.gbtn-secondary,
-body.bb-chapter-redesign .page-nav a.outline {
-  background: rgba(255, 255, 255, 0.88) !important;
-  color: var(--bb-muted) !important;
-}
-
-body.bb-chapter-redesign .gbtn.gbtn-danger {
-  background: linear-gradient(90deg, #be123c, #e11d48) !important;
-  border-color: transparent !important;
-  color: #fff !important;
-}
-
-body.bb-chapter-redesign .gtabs {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.36rem;
-  padding: 0.4rem;
-  margin: 0 0 1rem;
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid var(--bb-soft-border);
-  border-radius: 18px;
-  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.05);
-}
-
-body.bb-chapter-redesign .gtab-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 42px;
-  padding: 0.72rem 1rem;
-  border: none;
-  border-radius: 14px;
-  color: var(--bb-muted-soft);
-  font-size: 0.8rem;
-  font-weight: 800;
+  letter-spacing: 0.08em;
   line-height: 1;
-  transition: background-color var(--dur-base), color var(--dur-base), box-shadow var(--dur-base), transform var(--dur-base);
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
-body.bb-chapter-redesign .gtab-btn.active {
-  background: linear-gradient(90deg, var(--chapter-accent), var(--primary));
-  color: #fff;
-  box-shadow: 0 14px 26px rgba(15, 23, 42, 0.12);
-}
-
-body.bb-chapter-redesign .gtab-panel {
-  display: none;
-}
-
-body.bb-chapter-redesign .gtab-panel.active {
-  display: block;
-}
-
-body.bb-chapter-redesign .quiz-header {
-  display: grid !important;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 12px 18px;
-  padding: 1.3rem 1.35rem !important;
-  margin-bottom: 0.9rem !important;
-}
-
-body.bb-chapter-redesign .quiz-header h2 {
-  max-width: 19ch;
-  margin: 0;
-  font-size: clamp(1.3rem, 2.2vw, 1.95rem) !important;
-  line-height: 1.02 !important;
-}
-
-body.bb-chapter-redesign .quiz-progress {
-  justify-self: end;
-  display: inline-flex;
+body.bb-chapter-redesign .bb-topbar-context-copy {
+  min-width: 0;
+  display: flex;
   align-items: center;
-  min-height: 40px;
-  padding: 0.55rem 0.88rem !important;
-  border-radius: 999px;
-  background: var(--chapter-accent-light) !important;
-  color: var(--chapter-accent) !important;
-  font-size: 0.78rem !important;
-  font-weight: 800 !important;
+  gap: 12px;
 }
 
-body.bb-chapter-redesign.bb-compact-topbar .lab-topbar-inner,
-body.bb-chapter-redesign.bb-no-lesson-search .lab-topbar-inner {
-  grid-template-columns: 190px 1fr minmax(160px, 220px) !important;
+body.bb-chapter-redesign .bb-topbar-context-title {
+  max-width: min(35vw, 32rem);
+  overflow: hidden;
+  color: var(--bb-ink);
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+  font-size: 0.94rem;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
+body.bb-chapter-redesign .bb-topbar-context-section {
+  min-width: 0;
+  overflow: hidden;
+  padding-left: 12px;
+  color: var(--bb-muted);
+  border-left: 1px solid var(--bb-line);
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body.bb-chapter-redesign .lab-nav,
 body.bb-chapter-redesign.bb-compact-topbar .lab-nav {
   display: none !important;
 }
 
-body.bb-chapter-redesign.bb-no-lesson-search .lab-topbar-back,
-body.bb-chapter-redesign.bb-compact-topbar .lab-topbar-back {
+body.bb-chapter-redesign .lab-topbar-actions,
+body.bb-chapter-redesign.bb-compact-topbar .lab-topbar-actions,
+body.bb-chapter-redesign.bb-no-lesson-search .lab-topbar-actions {
+  position: static !important;
   grid-column: 3 !important;
-}
-
-body.bb-chapter-redesign .progress-bar-wrap {
-  grid-column: 1 / -1;
-  max-width: none !important;
-  width: 100% !important;
-  height: 12px;
-  border-radius: 999px;
-  background: #e5eefc;
-  overflow: hidden;
-}
-
-body.bb-chapter-redesign.dark .progress-bar-wrap {
-  background: #1e293b;
-}
-
-body.bb-chapter-redesign .progress-bar {
-  height: 100%;
-  border-radius: 999px;
-  background: linear-gradient(90deg, var(--chapter-accent), var(--primary)) !important;
-}
-
-body.bb-chapter-redesign .sync-bar {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto auto;
-  gap: 0.6rem;
-  align-items: center;
-  padding: 0.88rem 1rem !important;
-  margin-bottom: 0.9rem;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(248, 251, 255, 0.96)) !important;
-}
-
-body.bb-chapter-redesign .sync-bar span {
-  font-size: 0.82rem !important;
-  font-weight: 700;
-  color: var(--bb-muted);
-}
-
-body.bb-chapter-redesign .sync-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 42px;
-  padding: 0.72rem 0.9rem;
-  border-radius: 14px;
-  border: 1px solid var(--bb-soft-border);
-  background: #fff;
-  color: var(--bb-muted);
-  font-family: var(--font-display);
-  font-size: 0.78rem;
-  font-weight: 800;
-}
-
-body.bb-chapter-redesign .sync-btn:hover {
-  background: var(--chapter-accent-light);
-  color: var(--chapter-accent);
-}
-
-body.bb-chapter-redesign .legend {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.78rem;
-  align-items: center;
-  padding: 0.88rem 1rem !important;
-  margin-bottom: 0.9rem;
-}
-
-body.bb-chapter-redesign .legend-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.2rem 0;
-  color: var(--bb-muted);
-  font-size: 0.78rem;
-  font-weight: 700;
-}
-
-body.bb-chapter-redesign .legend-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 999px;
-  box-shadow: 0 0 0 6px rgba(15, 23, 42, 0.04);
-}
-
-body.bb-chapter-redesign .question-card {
-  position: relative;
-  padding: 1.3rem 1.35rem 1.2rem !important;
-  margin-bottom: 1rem !important;
-  border-left-width: 1px !important;
-  overflow: hidden;
-}
-
-body.bb-chapter-redesign .question-card::before {
-  content: "";
-  position: absolute;
-  inset: 0 auto auto 0;
-  width: 100%;
-  height: 6px;
-  background: linear-gradient(90deg, rgba(148, 163, 184, 0.55), rgba(148, 163, 184, 0));
-}
-
-body.bb-chapter-redesign .question-card.answered-correct::before {
-  background: linear-gradient(90deg, #059669, rgba(5, 150, 105, 0));
-}
-
-body.bb-chapter-redesign .question-card.answered-wrong::before {
-  background: linear-gradient(90deg, #e11d48, rgba(225, 29, 72, 0));
-}
-
-body.bb-chapter-redesign .question-card.answered-partial::before {
-  background: linear-gradient(90deg, #d97706, rgba(217, 119, 6, 0));
-}
-
-body.bb-chapter-redesign .q-num {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
-  flex-wrap: wrap;
-  color: var(--bb-muted-soft);
-  font-family: var(--font-display);
-  font-size: 0.72rem;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-body.bb-chapter-redesign .q-text {
-  margin: 0.95rem 0 1rem;
-  font-family: var(--font-display);
-  font-size: 1.08rem;
-  font-weight: 800;
-  line-height: 1.45;
-  color: var(--bb-ink);
-}
-
-body.bb-chapter-redesign .result-badge {
-  display: inline-flex;
-  align-items: center;
-  min-height: 32px;
-  padding: 0.3rem 0.7rem;
-  border-radius: 999px;
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 0.06em;
-}
-
-body.bb-chapter-redesign .badge-correct {
-  background: #ecfdf5;
-  color: #047857;
-}
-
-body.bb-chapter-redesign .badge-wrong {
-  background: #fff1f2;
-  color: #be123c;
-}
-
-body.bb-chapter-redesign .badge-partial {
-  background: #fffbeb;
-  color: #b45309;
-}
-
-body.bb-chapter-redesign .options {
-  display: flex;
-  flex-direction: column;
-  gap: 0.68rem;
-}
-
-body.bb-chapter-redesign .option {
-  padding: 0.9rem 1rem !important;
-  border-radius: 18px !important;
-  border: 1px solid var(--bb-soft-border) !important;
-  background: linear-gradient(180deg, rgba(248, 251, 255, 0.92), rgba(255, 255, 255, 0.96));
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
-  transition: transform var(--dur-base), border-color var(--dur-base), background-color var(--dur-base), box-shadow var(--dur-base);
-}
-
-body.bb-chapter-redesign .option:hover:not(.disabled) {
-  transform: translateY(-1px);
-  border-color: rgba(15, 23, 42, 0.1) !important;
-  background: var(--chapter-accent-light);
-  box-shadow: 0 14px 22px rgba(15, 23, 42, 0.07);
-}
-
-body.bb-chapter-redesign .option.selected {
-  background: var(--chapter-accent-light);
-  border-color: rgba(15, 23, 42, 0.06) !important;
-}
-
-body.bb-chapter-redesign .option.result-correct {
-  background: #ecfdf5;
-  border-color: rgba(5, 150, 105, 0.26) !important;
-}
-
-body.bb-chapter-redesign .option.result-wrong {
-  background: #fff1f2;
-  border-color: rgba(225, 29, 72, 0.22) !important;
-}
-
-body.bb-chapter-redesign .option.result-missed {
-  background: #fffbeb;
-  border-color: rgba(217, 119, 6, 0.22) !important;
-}
-
-body.bb-chapter-redesign .opt-letter {
-  width: 36px !important;
-  height: 36px !important;
-  border-radius: 14px !important;
-  background: #fff;
-  border: 1px solid var(--bb-soft-border) !important;
-  color: var(--bb-muted);
-  font-family: var(--font-display);
-  font-size: 0.82rem !important;
-  font-weight: 900;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.82);
-}
-
-body.bb-chapter-redesign .option.selected .opt-letter {
-  background: linear-gradient(180deg, var(--chapter-accent), var(--primary));
-  border-color: transparent !important;
-}
-
-body.bb-chapter-redesign .option.result-correct .opt-letter {
-  background: linear-gradient(180deg, #059669, #10b981);
-  border-color: transparent !important;
-}
-
-body.bb-chapter-redesign .option.result-wrong .opt-letter {
-  background: linear-gradient(180deg, #e11d48, #fb7185);
-  border-color: transparent !important;
-}
-
-body.bb-chapter-redesign .option.result-missed .opt-letter {
-  background: linear-gradient(180deg, #d97706, #f59e0b);
-  border-color: transparent !important;
-}
-
-body.bb-chapter-redesign .opt-text {
-  flex: 1;
-  padding-top: 0.08rem;
-  font-size: 0.93rem;
-  line-height: 1.58;
-  color: var(--bb-muted);
-}
-
-body.bb-chapter-redesign .opt-icon {
-  width: 28px;
-  height: 28px;
-  border-radius: 999px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(15, 23, 42, 0.05);
-  color: var(--bb-muted);
-  font-family: var(--font-display);
-  font-size: 0.78rem;
-  font-weight: 900;
-  flex-shrink: 0;
-}
-
-body.bb-chapter-redesign .option.result-correct .opt-icon {
-  background: rgba(5, 150, 105, 0.12);
-  color: #047857;
-}
-
-body.bb-chapter-redesign .option.result-wrong .opt-icon {
-  background: rgba(225, 29, 72, 0.12);
-  color: #be123c;
-}
-
-body.bb-chapter-redesign .option.result-missed .opt-icon {
-  background: rgba(217, 119, 6, 0.14);
-  color: #b45309;
-}
-
-body.bb-chapter-redesign .q-actions {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 1rem;
-}
-
-body.bb-chapter-redesign .explanation.show {
-  margin-top: 1rem;
-  border-radius: 22px !important;
-  border: 1px solid var(--bb-soft-border) !important;
-  overflow: hidden;
-  background: var(--bb-surface-2) !important;
-  box-shadow: none;
-}
-
-body.bb-chapter-redesign .expl-header {
-  display: flex;
-  align-items: center;
-  gap: 0.55rem;
-  padding: 0.9rem 1rem;
-  background: var(--chapter-accent-light);
-  color: var(--chapter-accent);
-  font-family: var(--font-display);
-  font-size: 0.82rem;
-  font-weight: 900;
-  letter-spacing: -0.01em;
-}
-
-body.bb-chapter-redesign .expl-body {
-  padding: 1rem !important;
-  margin-top: 0 !important;
-  border: none !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-}
-
-body.bb-chapter-redesign .expl-row {
-  display: grid;
-  grid-template-columns: 30px 1fr;
-  gap: 0.72rem;
-  align-items: start;
-  padding: 0.68rem 0;
-  border-bottom: 1px solid var(--bb-soft-border);
-}
-
-body.bb-chapter-redesign .expl-row:last-child {
-  border-bottom: none;
-}
-
-body.bb-chapter-redesign .expl-letter {
-  width: 30px;
-  height: 30px;
-  border-radius: 12px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--chapter-accent-light);
-  color: var(--chapter-accent);
-  font-family: var(--font-display);
-  font-size: 0.78rem;
-  font-weight: 900;
-}
-
-body.bb-chapter-redesign .expl-row.expl-wrong .expl-letter {
-  background: #fff1f2;
-  color: #be123c;
-}
-
-body.bb-chapter-redesign .expl-row.expl-correct .expl-letter {
-  background: #ecfdf5;
-  color: #047857;
-}
-
-body.bb-chapter-redesign .expl-text {
-  font-size: 0.88rem;
-  line-height: 1.65;
-  color: var(--bb-muted);
-}
-
-body.bb-chapter-redesign .added-note {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.36rem;
-  margin-left: 0.5rem;
-  color: #be123c;
-  font-size: 0.78rem;
-  font-weight: 700;
-}
-
-body.bb-chapter-redesign .added-marker {
-  font-family: var(--font-display);
-  font-weight: 900;
-}
-
-body.bb-chapter-redesign .lesson-ref {
-  margin-top: 0.9rem !important;
-  padding: 0.9rem 1rem !important;
-  background: linear-gradient(180deg, rgba(248, 251, 255, 0.96), rgba(255, 255, 255, 0.96)) !important;
-  border: 1px solid var(--bb-soft-border) !important;
-  border-left: 4px solid var(--chapter-accent) !important;
-  color: var(--bb-muted);
-}
-
-body.bb-chapter-redesign .pagination-controls {
-  padding: 0.9rem 1rem !important;
-  justify-content: space-between !important;
-  gap: 0.75rem !important;
-}
-
-body.bb-chapter-redesign .page-indicator {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 42px;
-  padding: 0.5rem 0.92rem !important;
-  border-radius: 999px;
-  background: var(--chapter-accent-light) !important;
-  color: var(--chapter-accent) !important;
-  font-size: 0.78rem !important;
-  font-weight: 800 !important;
-}
-
-body.bb-chapter-redesign .final-score {
-  padding: 1.5rem 1.25rem !important;
-  margin-bottom: 1rem !important;
-  background:
-    radial-gradient(circle at top right, var(--chapter-accent-light) 0, rgba(255, 255, 255, 0) 42%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 251, 255, 0.98)) !important;
-}
-
-body.bb-chapter-redesign .final-score.show {
-  display: block !important;
-}
-
-body.bb-chapter-redesign .score-circle {
-  margin: 0 auto;
-  width: 124px;
-  height: 124px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 999px;
-  font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 900;
-  letter-spacing: -0.05em;
-  background: #eef2ff;
-  border: 10px solid rgba(37, 99, 235, 0.12);
-  color: var(--bb-ink);
-}
-
-body.bb-chapter-redesign .score-circle.score-good {
-  background: #ecfdf5;
-  border-color: rgba(5, 150, 105, 0.14);
-  color: #047857;
-}
-
-body.bb-chapter-redesign .score-circle.score-mid {
-  background: #fffbeb;
-  border-color: rgba(217, 119, 6, 0.16);
-  color: #b45309;
-}
-
-body.bb-chapter-redesign .score-circle.score-bad {
-  background: #fff1f2;
-  border-color: rgba(225, 29, 72, 0.16);
-  color: #be123c;
-}
-
-body.bb-chapter-redesign #gtab-analysis > div:first-child {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.9rem;
-  padding: 1rem 1.05rem !important;
-  margin-bottom: 0.9rem;
-}
-
-body.bb-chapter-redesign #analysis-content {
-  display: grid;
-  gap: 1rem;
-}
-
-body.bb-chapter-redesign .an-analysis-top,
-body.bb-chapter-redesign .an-two-col {
-  gap: 1rem !important;
-}
-
-body.bb-chapter-redesign .an-stats-wrap,
-body.bb-chapter-redesign .an-gauge-inline,
-body.bb-chapter-redesign .an-evo-card,
-body.bb-chapter-redesign .an-topic-card,
-body.bb-chapter-redesign .an-topic-summary,
-body.bb-chapter-redesign .an-topic-card-list,
-body.bb-chapter-redesign .error-detail-card,
-body.bb-chapter-redesign .an-topic-card-list,
-body.bb-chapter-redesign .an-accordion-btn,
-body.bb-chapter-redesign .an-accordion-body,
-body.bb-chapter-redesign .an-tl-item {
-  box-shadow: none;
-}
-
-body.bb-chapter-redesign .an-stat-box,
-body.bb-chapter-redesign .an-topic-card,
-body.bb-chapter-redesign .an-tl-item,
-body.bb-chapter-redesign .an-evo-card,
-body.bb-chapter-redesign .an-gauge-inline,
-body.bb-chapter-redesign .error-detail-card,
-body.bb-chapter-redesign .an-accordion-btn,
-body.bb-chapter-redesign .an-topic-summary,
-body.bb-chapter-redesign .an-topic-card-list {
-  border: 1px solid var(--bb-soft-border) !important;
-  border-radius: 20px !important;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 251, 255, 0.96)) !important;
-}
-
-body.bb-chapter-redesign.dark .an-stat-box,
-body.bb-chapter-redesign.dark .an-topic-card,
-body.bb-chapter-redesign.dark .an-tl-item,
-body.bb-chapter-redesign.dark .an-evo-card,
-body.bb-chapter-redesign.dark .an-gauge-inline,
-body.bb-chapter-redesign.dark .error-detail-card,
-body.bb-chapter-redesign.dark .an-accordion-btn,
-body.bb-chapter-redesign.dark .an-topic-summary,
-body.bb-chapter-redesign.dark .an-topic-card-list {
-  background: var(--bb-surface-2) !important;
-}
-
-body.bb-chapter-redesign .an-sec-h,
-body.bb-chapter-redesign .an-gauge-meta strong {
-  color: var(--chapter-accent) !important;
-  font-size: 0.72rem !important;
-  font-weight: 900 !important;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-body.bb-chapter-redesign .an-stat-box {
-  padding: 0.95rem 0.85rem;
-}
-
-body.bb-chapter-redesign .an-snum {
-  font-family: var(--font-display);
-  font-size: 1.55rem;
-  font-weight: 900;
-  letter-spacing: -0.05em;
-  color: var(--bb-ink);
-}
-
-body.bb-chapter-redesign .an-slbl,
-body.bb-chapter-redesign .an-tc-detail,
-body.bb-chapter-redesign .an-gauge-meta span,
-body.bb-chapter-redesign .an-evo-kpi,
-body.bb-chapter-redesign .an-evo-legend-item,
-body.bb-chapter-redesign .an-accordion-meta,
-body.bb-chapter-redesign .an-err-opt-txt {
-  color: var(--bb-muted-soft) !important;
-}
-
-body.bb-chapter-redesign .an-tc-name,
-body.bb-chapter-redesign .an-tl-date,
-body.bb-chapter-redesign .an-tl-score,
-body.bb-chapter-redesign .error-detail-header strong {
-  color: var(--bb-ink);
-}
-
-body.bb-chapter-redesign .an-tc-bar-wrap,
-body.bb-chapter-redesign .an-gauge-track,
-body.bb-chapter-redesign .an-tl-bar-wrap {
-  background: #e5eefc;
-  border-radius: 999px;
-  overflow: hidden;
-}
-
-body.bb-chapter-redesign.dark .an-tc-bar-wrap,
-body.bb-chapter-redesign.dark .an-gauge-track,
-body.bb-chapter-redesign.dark .an-tl-bar-wrap {
-  background: #1e293b;
-}
-
-body.bb-chapter-redesign .an-accordion-btn {
-  width: 100%;
-  padding: 0.92rem 1rem !important;
-  margin-bottom: 0.9rem;
-  background: var(--bb-surface-2) !important;
-  color: var(--bb-ink) !important;
-  text-align: left;
-}
-
-body.bb-chapter-redesign .an-accordion-body {
-  padding: 0 !important;
-  background: transparent !important;
-  border: none !important;
-}
-
-body.bb-chapter-redesign .error-detail-card {
-  margin-bottom: 0.85rem;
-  overflow: hidden;
-}
-
-body.bb-chapter-redesign .error-detail-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 0.95rem 1rem;
-  border-bottom: 1px solid var(--bb-soft-border);
-}
-
-body.bb-chapter-redesign .error-detail-body {
-  padding: 1rem;
-}
-
-body.bb-chapter-redesign .an-err-opt {
-  padding: 0.78rem 0.9rem;
-  border: 1px solid var(--bb-soft-border);
-  border-radius: 16px;
-  margin-bottom: 0.72rem;
-}
-
-body.bb-chapter-redesign .an-err-opt.an-ew {
-  background: #fff1f2;
-  border-color: rgba(225, 29, 72, 0.14);
-}
-
-body.bb-chapter-redesign .an-err-opt.an-em {
-  background: #fffbeb;
-  border-color: rgba(217, 119, 6, 0.14);
-}
-
-body.bb-chapter-redesign .an-err-opt-lbl {
-  margin-bottom: 0.3rem;
-  font-weight: 800;
-  color: var(--bb-ink);
-}
-
-body.bb-chapter-redesign .no-data {
-  padding: 2rem 1.4rem !important;
-  text-align: center;
-}
-
-body.bb-chapter-redesign .no-data h3 {
-  margin-top: 0.7rem;
-  font-size: 1.2rem;
-  color: var(--bb-ink);
-}
-
-body.bb-chapter-redesign .toast {
-  position: fixed;
-  left: 50%;
-  bottom: 22px;
-  transform: translateX(-50%);
-  min-width: min(90vw, 340px);
-  padding: 0.85rem 1rem;
-  border-radius: 18px;
-  background: rgba(15, 23, 42, 0.94);
-  color: #fff;
-  font-family: var(--font-display);
-  font-size: 0.8rem;
-  font-weight: 800;
-  text-align: center;
-  box-shadow: 0 18px 44px rgba(15, 23, 42, 0.28);
-}
-
-body.bb-chapter-redesign.dark .toast {
-  background: rgba(255, 255, 255, 0.92);
-  color: #0f172a;
-}
-
-body.bb-chapter-redesign #top,
-body.bb-chapter-redesign #dm-btn,
-body.bb-chapter-redesign #hl-btn {
-  width: 52px !important;
-  height: 52px !important;
-  border-radius: 18px !important;
-  border: 1px solid var(--bb-soft-border) !important;
-  background: rgba(255, 255, 255, 0.92) !important;
-  color: var(--bb-muted) !important;
-  box-shadow: var(--bb-card-shadow) !important;
-}
-
-body.bb-chapter-redesign.dark #top,
-body.bb-chapter-redesign.dark #dm-btn,
-body.bb-chapter-redesign.dark #hl-btn {
-  background: rgba(15, 23, 42, 0.92) !important;
-}
-
-body.bb-chapter-redesign #hl-badge {
-  border-radius: 999px;
-  background: #fde047;
-  color: #0f172a;
-  font-family: var(--font-display);
-  font-size: 0.74rem;
-  font-weight: 900;
-}
-
-@media (max-width: 1200px) {
-  body.bb-chapter-redesign .ch-layout {
-    grid-template-columns: 296px minmax(0, 1fr);
-    padding-inline: 18px;
-  }
-
-  body.bb-chapter-redesign .chapter-home .hero {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 1024px) {
-  body.bb-chapter-redesign .lab-topbar {
-    top: 8px !important;
-    padding: 0 12px !important;
-  }
-
-  body.bb-chapter-redesign .lab-topbar-inner {
-    grid-template-columns: minmax(0, 1fr) auto !important;
-    gap: 10px !important;
-    padding: 9px 12px !important;
-  }
-
-  body.bb-chapter-redesign .lab-nav,
-  body.bb-chapter-redesign .lab-topbar-back {
-    display: none !important;
-  }
-
-  body.bb-chapter-redesign .lab-topbar-mobile-actions {
-    display: flex !important;
-    align-items: center;
-    gap: 6px;
-    justify-self: end;
-  }
-
-  body.bb-chapter-redesign .lab-topbar-mobile-btn {
-    display: inline-flex !important;
-    align-items: center;
-    justify-content: center;
-    width: 34px;
-    min-width: 34px;
-    height: 34px;
-    padding: 0;
-    border-radius: 999px;
-    border: 1px solid var(--bb-soft-border);
-    background: rgba(255, 255, 255, 0.94);
-    color: var(--bb-muted);
-    font-size: 0.92rem;
-    font-weight: 900;
-  }
-
-  body.bb-chapter-redesign.dark .lab-topbar-mobile-btn {
-    background: rgba(15, 23, 42, 0.94);
-  }
-
-  body.bb-chapter-redesign .lesson-search {
-    display: block !important;
-    position: fixed !important;
-    top: 72px !important;
-    left: 12px !important;
-    right: 12px !important;
-    z-index: 230 !important;
-    pointer-events: none !important;
-  }
-
-  body.bb-chapter-redesign .lesson-search.open {
-    pointer-events: auto !important;
-  }
-
-  body.bb-chapter-redesign .lesson-search-panel {
-    width: 100% !important;
-    max-width: none !important;
-    padding: 10px 12px !important;
-    border-radius: 24px !important;
-    background: rgba(255, 255, 255, 0.96) !important;
-    border: 1px solid var(--bb-soft-border) !important;
-    box-shadow: var(--bb-shell-shadow) !important;
-  }
-
-  body.bb-chapter-redesign.dark .lesson-search-panel {
-    background: rgba(9, 15, 29, 0.96) !important;
-  }
-
-  body.bb-chapter-redesign .ch-layout {
-    display: block !important;
-    padding: 16px 0 64px !important;
-  }
-
-  body.bb-chapter-redesign #sidenav {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0;
-    width: min(328px, 82vw);
-    height: 100dvh;
-    max-height: none;
-    padding-top: 84px;
-    border-radius: 0 28px 28px 0;
-    transform: translateX(-110%);
-    z-index: 220;
-  }
-
-  body.bb-chapter-redesign #sidenav.open {
-    transform: translateX(0);
-  }
-
-  body.bb-chapter-redesign #nav-overlay.open {
-    display: block;
-    background: rgba(15, 23, 42, 0.32);
-    z-index: 210;
-  }
-
-  body.bb-chapter-redesign main {
-    padding: 4px 12px 4.6rem !important;
-  }
-
-  body.bb-chapter-redesign .sync-bar {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 760px) {
-  body.bb-chapter-redesign .lab-topbar {
-    top: 10px !important;
-  }
-
-  body.bb-chapter-redesign .lab-topbar-inner {
-    gap: 8px !important;
-    padding: 8px 10px !important;
-  }
-
-  body.bb-chapter-redesign .lab-brand-name {
-    font-size: 0.94rem;
-  }
-
-  body.bb-chapter-redesign .lesson-search {
-    top: 68px !important;
-  }
-
-  body.bb-chapter-redesign .hero,
-  body.bb-chapter-redesign .chapter-home .hero,
-  body.bb-chapter-redesign .page-section:not(.chapter-home) .hero {
-    padding: 1.2rem 1rem 1.1rem !important;
-    border-radius: 24px !important;
-  }
-
-  body.bb-chapter-redesign .chapter-home .hero h1 {
-    max-width: none;
-    font-size: 2rem !important;
-  }
-
-  body.bb-chapter-redesign .chapter-home .hero p,
-  body.bb-chapter-redesign .page-section:not(.chapter-home) .hero p {
-    font-size: 0.9rem !important;
-  }
-
-  body.bb-chapter-redesign .bb-home-dashboard {
-    padding: 1rem;
-  }
-
-  body.bb-chapter-redesign .bb-dashboard-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  body.bb-chapter-redesign .chapter-map .g2,
-  body.bb-chapter-redesign .chapter-map .map-grid-split,
-  body.bb-chapter-redesign .g2,
-  body.bb-chapter-redesign .g3,
-  body.bb-chapter-redesign .an-two-col,
-  body.bb-chapter-redesign .an-analysis-top {
-    grid-template-columns: 1fr !important;
-  }
-
-  body.bb-chapter-redesign .chapter-map .map-card {
-    min-height: auto;
-  }
-
-  body.bb-chapter-redesign .chapter-map .map-card strong {
-    font-size: 1.12rem !important;
-  }
-
-  body.bb-chapter-redesign .gtabs {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  body.bb-chapter-redesign .gtab-btn {
-    width: 100%;
-  }
-
-  body.bb-chapter-redesign .quiz-header {
-    grid-template-columns: 1fr;
-  }
-
-  body.bb-chapter-redesign .quiz-progress {
-    justify-self: start;
-  }
-
-  body.bb-chapter-redesign .question-card,
-  body.bb-chapter-redesign .card,
-  body.bb-chapter-redesign .summary,
-  body.bb-chapter-redesign .sync-bar,
-  body.bb-chapter-redesign .legend,
-  body.bb-chapter-redesign .pagination-controls {
-    padding: 1rem !important;
-    border-radius: 22px !important;
-  }
-
-  body.bb-chapter-redesign .q-text {
-    font-size: 0.98rem;
-  }
-
-  body.bb-chapter-redesign .option {
-    padding: 0.86rem 0.9rem !important;
-  }
-
-  body.bb-chapter-redesign .pagination-controls {
-    flex-wrap: wrap;
-  }
-
-  body.bb-chapter-redesign .pagination-controls .gbtn {
-    flex: 1 1 0;
-    min-width: 0 !important;
-  }
-
-  body.bb-chapter-redesign .page-indicator {
-    order: -1;
-    width: 100%;
-  }
-}
-
-/* Final Lab concept overrides. Kept at the end so they win over legacy inline-era rules. */
-body.bb-chapter-redesign {
-  --bb-new-accent: var(--chapter-accent, #0891b2);
-  --bb-new-accent-mid: var(--chapter-accent-mid, #06b6d4);
-  --bb-new-accent-light: var(--chapter-accent-light, #ecfeff);
-  --bb-new-bg: #f7f7f4;
-  --bb-new-line: #e7e3dc;
-  background: var(--bb-new-bg) !important;
-}
-
-body.bb-chapter-redesign::before,
-body.bb-chapter-redesign .hero::after {
-  display: none !important;
-}
-
-body.bb-chapter-redesign .lab-topbar {
-  top: 0 !important;
-  height: 58px !important;
-  padding: 0 !important;
+  grid-row: 1 !important;
+  justify-self: end !important;
+  min-width: 0;
   display: flex !important;
-  align-items: center !important;
-  background: rgba(247, 247, 244, 0.96) !important;
-  border-bottom: 1px solid var(--bb-new-line) !important;
-  box-shadow: none !important;
-  backdrop-filter: blur(10px) !important;
-}
-
-body.bb-chapter-redesign .lab-topbar-inner {
-  width: 100% !important;
-  max-width: 1440px !important;
-  min-height: 58px !important;
-  margin: 0 auto !important;
-  padding: 0 24px !important;
-  display: grid !important;
-  grid-template-columns: 190px minmax(170px, 280px) minmax(240px, 390px) 178px !important;
-  align-items: center !important;
-  gap: 18px !important;
-  background: transparent !important;
-  border: 0 !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-}
-
-body.bb-chapter-redesign .lab-brand-mark {
-  width: 30px !important;
-  height: 30px !important;
-  border-radius: 8px !important;
-  background: #0f172a !important;
-  color: #fff !important;
-  box-shadow: none !important;
-}
-
-body.bb-chapter-redesign .lab-brand-name {
-  font-size: 1rem !important;
-  font-weight: 900 !important;
-  letter-spacing: -0.04em !important;
-}
-
-body.bb-chapter-redesign .lab-brand-sub {
-  color: #94a3b8 !important;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
 }
 
 body.bb-chapter-redesign .lab-topbar-mobile-actions {
   display: none !important;
 }
 
-body.bb-chapter-redesign .lab-nav {
-  justify-self: center !important;
-  display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
-  width: min(100%, 220px) !important;
-  gap: 2px !important;
-  padding: 4px !important;
-  background: #fff !important;
-  border: 1px solid rgba(15, 23, 42, 0.08) !important;
-  border-radius: 999px !important;
-  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.04) !important;
-}
-
-body.bb-chapter-redesign .lab-nav a {
-  min-height: 38px !important;
-  padding: 0.45rem 0.85rem !important;
-  border-radius: 999px !important;
-  color: #475569 !important;
-  font-size: 0.88rem !important;
+body.bb-chapter-redesign .lab-topbar-back {
+  position: static !important;
+  min-height: 44px !important;
+  padding: 5px 14px 5px 6px !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #ffffff !important;
+  background: var(--bb-action) !important;
+  border: 1px solid var(--bb-action) !important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+  font-size: 0.82rem !important;
   font-weight: 800 !important;
-  text-align: center !important;
-  line-height: 1.1 !important;
-}
-
-body.bb-chapter-redesign .lab-nav a:hover,
-body.bb-chapter-redesign .lab-nav a.active {
-  background: var(--bb-new-accent-light) !important;
-  color: var(--bb-new-accent) !important;
+  line-height: 1;
+  text-decoration: none;
   transform: none !important;
 }
 
+body.bb-chapter-redesign .lab-topbar-back:hover {
+  color: #ffffff !important;
+  background: var(--bb-action-hover) !important;
+  border-color: var(--bb-action-hover) !important;
+  transform: none !important;
+}
+
+body.bb-chapter-redesign .lab-topbar-back-icon {
+  width: 32px !important;
+  min-width: 32px !important;
+  height: 32px !important;
+  display: inline-grid !important;
+  place-items: center;
+  color: #ffffff !important;
+  background: color-mix(in srgb, white 14%, transparent) !important;
+  border: 0 !important;
+  border-radius: 7px !important;
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+/* Lesson search */
 body.bb-chapter-redesign .lesson-search {
-  justify-self: stretch !important;
-  display: block !important;
   position: relative !important;
   inset: auto !important;
+  width: 190px !important;
+  min-width: 44px !important;
+  height: 44px !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex: 0 0 auto;
   pointer-events: auto !important;
 }
 
-body.bb-chapter-redesign .lesson-search-panel {
+body.bb-chapter-redesign .lesson-search-trigger {
+  width: 100% !important;
+  height: 44px !important;
+  padding: 0 12px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  color: var(--bb-muted) !important;
+  background: var(--bb-surface-subtle) !important;
+  border: 1px solid var(--bb-line) !important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+}
+
+body.bb-chapter-redesign .lesson-search-trigger::after {
+  content: "Caută în lecție";
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+  font-size: 0.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+body.bb-chapter-redesign .lesson-search:not(.open) .lesson-search-panel {
+  display: none !important;
+}
+
+body.bb-chapter-redesign .lesson-search.open {
+  width: min(430px, 40vw) !important;
+}
+
+body.bb-chapter-redesign .lesson-search.open .lesson-search-trigger {
+  display: none !important;
+}
+
+body.bb-chapter-redesign .lesson-search.open .lesson-search-panel {
+  position: static !important;
+  inset: auto !important;
   width: 100% !important;
   max-width: none !important;
-  opacity: 1 !important;
-  overflow: visible !important;
-  transform: none !important;
-  pointer-events: auto !important;
+  min-width: 0 !important;
   padding: 0 !important;
   display: flex !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  transform: none !important;
   background: transparent !important;
   border: 0 !important;
   box-shadow: none !important;
@@ -2594,1629 +436,2146 @@ body.bb-chapter-redesign .lesson-search-panel {
 body.bb-chapter-redesign .lesson-search-box {
   width: 100% !important;
   min-width: 0 !important;
-  height: 40px !important;
-  padding: 0 0.78rem 0 0.9rem !important;
-  gap: 0.6rem !important;
-  background: #fff !important;
-  border: 1px solid rgba(15, 23, 42, 0.08) !important;
-  border-radius: 999px !important;
-  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.04) !important;
+  height: 44px !important;
+  padding: 0 5px 0 12px !important;
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+  color: var(--bb-muted) !important;
+  background: var(--bb-surface) !important;
+  border: 1px solid var(--bb-accent-line) !important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
 }
 
-body.bb-chapter-redesign .lesson-search-count,
-body.bb-chapter-redesign .lesson-search-nav,
+body.bb-chapter-redesign .lesson-search-box input {
+  flex: 1 1 auto;
+  min-width: 5rem !important;
+  height: 100% !important;
+  padding: 0 !important;
+  color: var(--bb-ink) !important;
+  caret-color: var(--bb-action);
+  background: transparent !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  font-family: var(--font-body, "Noto Sans", system-ui, sans-serif);
+  font-size: 0.9rem;
+}
+
+body.bb-chapter-redesign .lesson-search-box input::placeholder {
+  color: var(--bb-muted) !important;
+  opacity: 1;
+}
+
+body.bb-chapter-redesign .lesson-search-count {
+  flex: 0 0 auto;
+  color: var(--bb-muted);
+  font-size: 0.72rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+body.bb-chapter-redesign .lesson-search-nav {
+  flex: 0 0 auto;
+  display: flex !important;
+  gap: 3px;
+}
+
+body.bb-chapter-redesign .lesson-search-btn,
 body.bb-chapter-redesign .lesson-search-close {
-  display: none !important;
+  width: 32px !important;
+  min-width: 32px !important;
+  height: 32px !important;
+  padding: 0 !important;
+  display: inline-grid !important;
+  place-items: center;
+  color: var(--bb-text) !important;
+  background: var(--bb-surface-subtle) !important;
+  border: 1px solid var(--bb-line) !important;
+  border-radius: 7px !important;
+  box-shadow: none !important;
+  line-height: 1;
 }
 
-body.bb-chapter-redesign .lab-topbar-back {
-  justify-self: end !important;
-  width: max-content !important;
-  min-width: 174px !important;
-  min-height: 40px !important;
-  padding: 0.48rem 1.1rem !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  white-space: nowrap !important;
-  color: #64748b !important;
-  background: #fff !important;
-  border: 1px solid rgba(15, 23, 42, 0.08) !important;
-  border-radius: 999px !important;
-  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.04) !important;
-  font-size: 0.84rem !important;
-  font-weight: 800 !important;
+body.bb-chapter-redesign .lesson-search-btn:hover,
+body.bb-chapter-redesign .lesson-search-close:hover {
+  color: var(--bb-action) !important;
+  border-color: var(--bb-action) !important;
 }
+
+body.bb-chapter-redesign .lesson-search-btn:disabled {
+  opacity: 0.42;
+  cursor: default;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Chapter shell and sidebar                                                  */
+/* -------------------------------------------------------------------------- */
 
 body.bb-chapter-redesign .ch-layout {
-  max-width: 1440px !important;
+  width: 100% !important;
+  max-width: 1344px !important;
+  margin: 0 auto !important;
   padding: 24px 24px 72px !important;
-  grid-template-columns: 264px minmax(0, 1fr) !important;
-  gap: 26px !important;
+  display: grid !important;
+  grid-template-columns: var(--bb-sidebar-w) minmax(0, var(--bb-main-w)) !important;
+  align-items: start !important;
+  justify-content: start !important;
+  gap: 32px !important;
 }
 
 body.bb-chapter-redesign main {
-  max-width: 960px !important;
   width: 100% !important;
+  max-width: var(--bb-main-w) !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 0 4rem !important;
 }
 
 body.bb-chapter-redesign #sidenav {
-  top: 82px !important;
-  padding: 0 0 16px !important;
-  background: #fff !important;
-  border: 1px solid rgba(15, 23, 42, 0.07) !important;
-  border-radius: 20px !important;
+  position: sticky !important;
+  top: calc(var(--bb-topbar-h) + 24px) !important;
+  align-self: start !important;
+  width: 100% !important;
+  height: calc(100vh - var(--bb-topbar-h) - 48px) !important;
+  max-height: calc(100vh - var(--bb-topbar-h) - 48px) !important;
+  padding: 0 0 12px !important;
+  display: flex !important;
+  flex-direction: column;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  background: var(--bb-surface) !important;
+  border: 1px solid var(--bb-line) !important;
+  border-radius: var(--bb-radius-md) !important;
   box-shadow: none !important;
+  transform: none;
 }
 
-body.bb-chapter-redesign .nav-header {
-  padding: 1.65rem 1.05rem 1.05rem !important;
-  border-bottom: 1px solid var(--bb-new-line) !important;
-  margin-bottom: 0.45rem !important;
+body.bb-chapter-redesign .nav-header,
+body.bb-chapter-redesign nav#sidenav .nav-header {
+  flex: 0 0 auto;
+  margin: 0 0 0.45rem !important;
+  padding: 20px 18px 17px !important;
+  background: var(--bb-surface) !important;
+  border: 0 !important;
+  border-bottom: 1px solid var(--bb-line) !important;
 }
 
-body.bb-chapter-redesign .nav-chapter-badge {
-  width: max-content !important;
-  background: var(--bb-new-accent-light) !important;
-  border: 1px solid rgba(8, 145, 178, 0.15) !important;
-  color: var(--bb-new-accent) !important;
-  font-size: 0.66rem !important;
-  letter-spacing: 0.16em !important;
+body.bb-chapter-redesign .nav-chapter-badge,
+body.bb-chapter-redesign nav#sidenav .nav-chapter-badge {
+  min-height: 24px !important;
+  width: max-content;
+  padding: 0 8px !important;
+  display: inline-flex !important;
+  align-items: center;
+  color: var(--bb-accent) !important;
+  background: var(--bb-accent-soft) !important;
+  border: 1px solid var(--bb-accent-line) !important;
+  border-radius: 6px !important;
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+  font-size: 0.68rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
-body.bb-chapter-redesign .nav-chapter-title {
-  color: #0f172a !important;
+body.bb-chapter-redesign .nav-chapter-title,
+body.bb-chapter-redesign nav#sidenav .nav-chapter-title {
+  margin-top: 0.65rem !important;
+  color: var(--bb-ink) !important;
   font-size: 1.02rem !important;
   font-weight: 900 !important;
-  letter-spacing: -0.04em !important;
+  letter-spacing: -0.025em !important;
+  line-height: 1.28 !important;
 }
 
-body.bb-chapter-redesign nav#sidenav .nav-header {
-  border-bottom-color: var(--bb-new-line) !important;
-}
-
-body.bb-chapter-redesign nav#sidenav .nav-chapter-badge {
-  background: var(--bb-new-accent-light) !important;
-  border-color: rgba(8, 145, 178, 0.15) !important;
-  color: var(--bb-new-accent) !important;
-}
-
-body.bb-chapter-redesign nav#sidenav .nav-chapter-title {
-  color: #0f172a !important;
-}
-
-body.bb-chapter-redesign .nav-group-label {
-  color: #94a3b8 !important;
-  font-size: 0.64rem !important;
-  letter-spacing: 0.16em !important;
-  padding: 0.8rem 1rem 0.38rem !important;
+body.bb-chapter-redesign .nav-group-label,
+body.bb-chapter-redesign nav#sidenav .nav-group-label {
+  padding: 0.78rem 18px 0.35rem !important;
+  color: var(--bb-muted) !important;
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+  font-size: 0.7rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 body.bb-chapter-redesign #sidenav a,
-body.bb-chapter-redesign .nav-settings-btn {
-  min-height: 40px !important;
-  margin: 0.08rem 0.88rem !important;
-  padding: 0.58rem 0.78rem !important;
-  border-radius: 6px !important;
-  color: #64748b !important;
+body.bb-chapter-redesign .nav-settings-btn,
+body.bb-chapter-redesign #nav-dm-btn,
+body.bb-chapter-redesign #nav-hl-btn,
+body.bb-chapter-redesign #nav-search-btn {
+  min-height: 44px !important;
+  width: auto !important;
+  margin: 2px 10px !important;
+  padding: 0.65rem 0.78rem !important;
+  display: flex !important;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--bb-text) !important;
   background: transparent !important;
-  font-size: 0.84rem !important;
-  font-weight: 800 !important;
-  border: 0 !important;
+  border: 1px solid transparent !important;
+  border-radius: 8px !important;
   box-shadow: none !important;
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+  font-size: 0.84rem !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+  text-align: left;
+  text-decoration: none;
+  transform: none !important;
+}
+
+body.bb-chapter-redesign #sidenav a::before,
+body.bb-chapter-redesign .nav-settings-btn .dot {
+  content: none !important;
+  display: none !important;
 }
 
 body.bb-chapter-redesign #sidenav a:hover,
 body.bb-chapter-redesign #sidenav a.active,
 body.bb-chapter-redesign .nav-settings-btn:hover,
-body.bb-chapter-redesign .nav-settings-btn.on {
-  background: var(--bb-new-accent-light) !important;
-  color: var(--bb-new-accent) !important;
+body.bb-chapter-redesign .nav-settings-btn.on,
+body.bb-chapter-redesign #nav-dm-btn:hover,
+body.bb-chapter-redesign #nav-dm-btn.on,
+body.bb-chapter-redesign #nav-hl-btn:hover,
+body.bb-chapter-redesign #nav-hl-btn.on,
+body.bb-chapter-redesign #nav-hl-btn.hl-on,
+body.bb-chapter-redesign #nav-search-btn:hover {
+  color: var(--bb-accent) !important;
+  background: var(--bb-accent-soft) !important;
+  border-color: transparent !important;
   transform: none !important;
 }
 
+body.bb-chapter-redesign #sidenav a.sub {
+  min-height: 38px !important;
+  padding-left: 1.05rem !important;
+  color: var(--bb-muted) !important;
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+}
+
 body.bb-chapter-redesign .nav-divider {
-  margin: 0.9rem 1.05rem !important;
-  background: var(--bb-new-line) !important;
+  height: 1px !important;
+  margin: 0.8rem 18px 0.1rem !important;
+  background: var(--bb-line) !important;
+  border: 0 !important;
 }
 
-body.bb-chapter-redesign .hero,
-body.bb-chapter-redesign .card,
-body.bb-chapter-redesign .summary,
-body.bb-chapter-redesign .quiz-header,
-body.bb-chapter-redesign .sync-bar,
-body.bb-chapter-redesign .legend,
-body.bb-chapter-redesign .question-card,
-body.bb-chapter-redesign .pagination-controls,
-body.bb-chapter-redesign .final-score {
-  background: #fff !important;
-  border: 1px solid rgba(15, 23, 42, 0.06) !important;
-  border-radius: 20px !important;
-  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.03), 0 12px 32px rgba(15, 23, 42, 0.035) !important;
+body.bb-chapter-redesign .bb-sidebar-settings {
+  flex: 0 0 auto;
+  margin-top: auto !important;
+  padding-top: 0.35rem;
 }
 
-body.bb-chapter-redesign .chapter-home .hero,
-body.bb-chapter-redesign .page-section:not(.chapter-home) .hero {
+body.bb-chapter-redesign #nav-overlay {
+  display: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Page mastheads and reading rhythm                                          */
+/* -------------------------------------------------------------------------- */
+
+body.bb-chapter-redesign .page-section {
+  opacity: 1 !important;
+  visibility: visible;
+  transform: none !important;
+  animation: none !important;
+}
+
+body.bb-chapter-redesign .page-section.active {
   display: block !important;
-  margin: 0 0 1.6rem !important;
-  padding: 2.5rem 3rem 2.15rem !important;
-  border-radius: 20px !important;
-}
-
-body.bb-chapter-redesign .hero::before,
-body.bb-chapter-redesign .chapter-home .hero::before {
-  height: 5px !important;
-  background: linear-gradient(90deg, var(--bb-new-accent), var(--bb-new-accent-mid)) !important;
 }
 
 body.bb-chapter-redesign .bb-chapter-kicker,
-body.bb-chapter-redesign .bb-section-eyebrow {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 0.7rem !important;
-  margin-bottom: 1.05rem !important;
-  color: var(--bb-new-accent) !important;
-  font-size: 0.74rem !important;
-  font-weight: 900 !important;
-  letter-spacing: 0.18em !important;
-  line-height: 1.45 !important;
-  text-transform: uppercase !important;
-}
-
-body.bb-chapter-redesign .bb-chapter-kicker::before,
-body.bb-chapter-redesign .bb-section-eyebrow::before {
-  content: "" !important;
-  width: 6px !important;
-  height: 6px !important;
-  border-radius: 999px !important;
-  background: currentColor !important;
-}
-
-body.bb-chapter-redesign .chapter-home .hero h1,
-body.bb-chapter-redesign .bb-lab-title {
-  max-width: 10ch !important;
-  margin: 0 0 1rem !important;
-  color: #0f172a !important;
-  font-size: clamp(2.85rem, 6vw, 4.95rem) !important;
-  font-weight: 900 !important;
-  letter-spacing: -0.065em !important;
-  line-height: 0.94 !important;
-}
-
-body.bb-chapter-redesign .bb-title-main,
-body.bb-chapter-redesign .bb-title-accent {
-  display: block !important;
-}
-
-body.bb-chapter-redesign .bb-title-accent {
-  color: var(--bb-new-accent) !important;
-}
-
-body.bb-chapter-redesign .chapter-home .hero p {
-  max-width: 60ch !important;
-  color: #64748b !important;
-  font-size: 1.02rem !important;
-  line-height: 1.65 !important;
-}
-
-body.bb-chapter-redesign .chapter-home .badges {
-  margin-top: 1.35rem !important;
-  gap: 0.62rem !important;
-  max-width: 38rem !important;
-  display: flex !important;
-  flex-wrap: wrap !important;
-}
-
-body.bb-chapter-redesign .chapter-home .badge,
-body.bb-chapter-redesign .bb-section-pill {
-  padding: 0.36rem 0.78rem !important;
-  background: #fff !important;
-  color: #64748b !important;
-  border: 1px solid rgba(15, 23, 42, 0.08) !important;
-  border-radius: 999px !important;
-  box-shadow: none !important;
-  font-size: 0.74rem !important;
-  font-weight: 900 !important;
-  letter-spacing: 0.04em !important;
-  text-transform: uppercase !important;
-  white-space: normal !important;
-}
-
+body.bb-chapter-redesign .bb-section-eyebrow,
+body.bb-chapter-redesign .bb-section-pills,
+body.bb-chapter-redesign .bb-map-meta,
 body.bb-chapter-redesign .bb-home-dashboard {
   display: none !important;
 }
 
-body.bb-chapter-redesign .page-section:not(.chapter-home) .hero h1 {
-  color: #0f172a !important;
-  font-size: clamp(1.85rem, 3vw, 2.65rem) !important;
-  line-height: 1.02 !important;
-  letter-spacing: -0.045em !important;
-}
-
-body.bb-chapter-redesign .page-section:not(.chapter-home) .hero p {
-  color: #64748b !important;
-  font-size: 0.98rem !important;
-}
-
-body.bb-chapter-redesign .gtabs {
-  display: inline-grid !important;
-  grid-template-columns: 1fr 1fr !important;
-  width: 168px !important;
-  padding: 4px !important;
-  gap: 2px !important;
-  background: #fff !important;
-  border: 1px solid rgba(15, 23, 42, 0.08) !important;
-  border-radius: 18px !important;
+body.bb-chapter-redesign .hero,
+body.bb-chapter-redesign .chapter-home .hero,
+body.bb-chapter-redesign .page-section:not(.chapter-home) .hero {
+  position: relative;
+  overflow: visible !important;
+  margin: 0 0 20px !important;
+  padding: 30px 34px !important;
+  display: block !important;
+  color: var(--bb-text) !important;
+  background: var(--bb-surface) !important;
+  border: 1px solid var(--bb-line) !important;
+  border-radius: var(--bb-radius-lg) !important;
   box-shadow: none !important;
 }
 
-body.bb-chapter-redesign .gtab-btn {
-  border-radius: 14px !important;
-  color: #64748b !important;
-  font-weight: 900 !important;
+body.bb-chapter-redesign .chapter-home .hero {
+  padding: 38px 40px !important;
 }
 
-body.bb-chapter-redesign .gtab-btn.active {
-  background: var(--bb-new-accent-light) !important;
-  color: var(--bb-new-accent) !important;
+body.bb-chapter-redesign .bb-hero-copy,
+body.bb-chapter-redesign .bb-home-copy {
+  width: 100%;
+  max-width: 100%;
 }
 
-body.bb-chapter-redesign .quiz-header {
-  position: relative !important;
-  display: grid !important;
-  grid-template-columns: 1fr !important;
-  gap: 1rem !important;
-  margin: 0 0 1.35rem !important;
-  padding: 2rem 2.35rem !important;
-  overflow: hidden !important;
-}
-
-body.bb-chapter-redesign .quiz-header::before {
-  content: "" !important;
-  position: absolute !important;
-  inset: 0 0 auto 0 !important;
-  height: 5px !important;
-  background: linear-gradient(90deg, var(--bb-new-accent), var(--bb-new-accent-mid)) !important;
-}
-
-body.bb-chapter-redesign .quiz-header h2 {
+body.bb-chapter-redesign .chapter-home .hero h1,
+body.bb-chapter-redesign .chapter-home .bb-lab-title {
   max-width: 18ch !important;
-  color: #0f172a !important;
-  font-size: clamp(1.9rem, 3.5vw, 3.2rem) !important;
-  line-height: 0.96 !important;
-  letter-spacing: -0.06em !important;
-}
-
-body.bb-chapter-redesign .progress-bar {
-  background: var(--bb-new-accent) !important;
-}
-
-body.bb-chapter-redesign .sync-bar {
-  background: var(--bb-new-accent-light) !important;
-  border-color: rgba(8, 145, 178, 0.16) !important;
-}
-
-body.bb-chapter-redesign .sync-btn,
-body.bb-chapter-redesign .gbtn {
-  border-radius: 999px !important;
+  margin: 0 0 0.85rem !important;
+  color: var(--bb-ink) !important;
+  font-size: 3rem !important;
   font-weight: 900 !important;
+  letter-spacing: -0.04em !important;
+  line-height: 1.04 !important;
 }
 
-body.bb-chapter-redesign .sync-btn.export,
-body.bb-chapter-redesign .gbtn:not(.gbtn-secondary) {
-  background: var(--bb-new-accent) !important;
+body.bb-chapter-redesign .bb-title-main,
+body.bb-chapter-redesign .bb-title-accent {
+  display: inline !important;
+  color: inherit !important;
 }
 
-body.bb-chapter-redesign #dm-btn,
-body.bb-chapter-redesign #hl-btn,
-body.bb-chapter-redesign #settings-fab {
-  background: #fff !important;
-  color: #0f172a !important;
-  border: 1px solid rgba(15, 23, 42, 0.08) !important;
-  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08) !important;
-}
-
-@media (max-width: 1024px) {
-  body.bb-chapter-redesign .lab-topbar {
-    height: auto !important;
-    padding: 10px 12px 0 !important;
-    background: transparent !important;
-    border-bottom: 0 !important;
-  }
-
-  body.bb-chapter-redesign .lab-topbar-inner {
-    min-height: 52px !important;
-    grid-template-columns: minmax(0, 1fr) auto !important;
-    padding: 8px 10px !important;
-    background: #fff !important;
-    border: 1px solid rgba(15, 23, 42, 0.08) !important;
-    border-radius: 999px !important;
-    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08) !important;
-  }
-
-  body.bb-chapter-redesign .lab-topbar-mobile-actions {
-    display: flex !important;
-  }
-
-  body.bb-chapter-redesign .lab-nav,
-  body.bb-chapter-redesign .lab-topbar-back,
-  body.bb-chapter-redesign .lesson-search {
-    display: none !important;
-  }
-
-  body.bb-chapter-redesign .ch-layout {
-    display: block !important;
-    padding: 16px 0 64px !important;
-  }
-
-  body.bb-chapter-redesign main {
-    max-width: none !important;
-    padding: 0 14px 4rem !important;
-  }
-
-  body.bb-chapter-redesign #sidenav {
-    top: 0 !important;
-    padding-top: 76px !important;
-    border-radius: 0 22px 22px 0 !important;
-  }
-}
-
-@media (max-width: 760px) {
-  body.bb-chapter-redesign .chapter-home .hero,
-  body.bb-chapter-redesign .page-section:not(.chapter-home) .hero,
-  body.bb-chapter-redesign .quiz-header {
-    padding: 1.65rem 1.18rem 1.35rem !important;
-    border-radius: 20px !important;
-  }
-
-  body.bb-chapter-redesign .chapter-home .hero h1,
-  body.bb-chapter-redesign .bb-lab-title {
-    max-width: 9ch !important;
-    font-size: 2.35rem !important;
-    letter-spacing: -0.055em !important;
-  }
-
-  body.bb-chapter-redesign .bb-chapter-kicker,
-  body.bb-chapter-redesign .bb-section-eyebrow {
-    font-size: 0.66rem !important;
-    letter-spacing: 0.13em !important;
-  }
-
-  body.bb-chapter-redesign .gtabs {
-    width: 100% !important;
-  }
-
-  body.bb-chapter-redesign .chapter-home .badges {
-    display: grid !important;
-    grid-template-columns: minmax(0, 1fr) !important;
-    gap: 0.45rem !important;
-    width: 100% !important;
-    max-width: calc(100vw - 72px) !important;
-  }
-
-  body.bb-chapter-redesign .chapter-home .badge {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-    min-width: 0 !important;
-    font-size: 0.62rem !important;
-    padding: 0.28rem 0.5rem !important;
-  }
-}
-
-/* Absolute-final compact topbar normalization. */
-body.bb-chapter-redesign.bb-compact-topbar .lab-topbar-inner,
-body.bb-chapter-redesign.bb-no-lesson-search .lab-topbar-inner {
-  grid-template-columns: 190px minmax(120px, 180px) minmax(0, 1fr) 178px !important;
-}
-
-body.bb-chapter-redesign.bb-compact-topbar .lab-nav {
-  grid-column: 2 !important;
-  display: grid !important;
-  grid-template-columns: 1fr !important;
-  width: 132px !important;
-  justify-self: center !important;
-  min-width: 0 !important;
-}
-
-body.bb-chapter-redesign.bb-compact-topbar .lab-nav a {
-  display: inline-flex !important;
-  min-height: 38px !important;
-  padding: 0.45rem 1rem !important;
-}
-
-body.bb-chapter-redesign .lab-nav .bb-topbar-extra-link {
-  display: none !important;
-}
-
-body.bb-chapter-redesign.bb-compact-topbar .lab-topbar-back,
-body.bb-chapter-redesign.bb-no-lesson-search .lab-topbar-back {
-  grid-column: 4 !important;
-  justify-self: end !important;
-}
-
-body.bb-chapter-redesign.bb-compact-topbar .lesson-search,
-body.bb-chapter-redesign.bb-no-lesson-search .lesson-search {
-  display: none !important;
-}
-
-@media (max-width: 1024px) {
-  body.bb-chapter-redesign.bb-compact-topbar .lab-topbar-inner,
-  body.bb-chapter-redesign.bb-no-lesson-search .lab-topbar-inner {
-    grid-template-columns: minmax(0, 1fr) auto !important;
-  }
-
-  body.bb-chapter-redesign.bb-compact-topbar .lab-nav,
-  body.bb-chapter-redesign.bb-compact-topbar .lab-topbar-back,
-  body.bb-chapter-redesign.bb-no-lesson-search .lab-topbar-back {
-    display: none !important;
-  }
-}
-
-body.bb-chapter-redesign .brand-star {
-  display: block;
-}
-
-body.bb-chapter-redesign .brand-menu {
-  display: none;
-}
-
-@media (max-width: 1024px) {
-  body.bb-chapter-redesign .brand-star {
-    display: none !important;
-  }
-
-  body.bb-chapter-redesign .brand-menu {
-    display: block !important;
-  }
-}
-
-/* Final content parity with the masculine chapter layout. */
-body.bb-chapter-redesign .page-section > section {
-  margin: 0 0 1.85rem !important;
-}
-
-body.bb-chapter-redesign h2.section {
-  display: flex !important;
-  align-items: center !important;
-  gap: 0.55rem !important;
-  margin: 2rem 0 1rem !important;
-  padding: 0 !important;
-  border: 0 !important;
-  color: #0f172a !important;
-  font-size: 1.55rem !important;
-  font-weight: 900 !important;
-  letter-spacing: -0.03em !important;
-  line-height: 1.25 !important;
-}
-
-body.bb-chapter-redesign .sec-num {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  flex: 0 0 auto !important;
-  width: 2rem !important;
-  height: 2rem !important;
+body.bb-chapter-redesign .chapter-home .hero p,
+body.bb-chapter-redesign .page-section:not(.chapter-home) .hero p {
+  max-width: var(--bb-reading-w) !important;
   margin: 0 !important;
-  border-radius: 0.5rem !important;
-  color: #fff !important;
-  background: var(--bb-new-accent) !important;
-  font-size: 0.85rem !important;
+  color: var(--bb-text) !important;
+  font-family: var(--font-body, "Noto Sans", system-ui, sans-serif);
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.7 !important;
+}
+
+body.bb-chapter-redesign .page-section:not(.chapter-home) .hero h1 {
+  max-width: 24ch;
+  margin: 0 0 0.45rem !important;
+  color: var(--bb-ink) !important;
+  font-size: 2rem !important;
   font-weight: 900 !important;
-  line-height: 1 !important;
+  letter-spacing: -0.035em !important;
+  line-height: 1.12 !important;
 }
 
-body.bb-chapter-redesign .sec-num.blue {
-  background: var(--blue) !important;
+body.bb-chapter-redesign .chapter-home .badges,
+body.bb-chapter-redesign .badges {
+  margin-top: 1.15rem !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px !important;
 }
 
-body.bb-chapter-redesign .sec-num.green {
-  background: var(--green) !important;
+body.bb-chapter-redesign .chapter-home .badge,
+body.bb-chapter-redesign .badge {
+  min-height: 28px;
+  padding: 4px 9px !important;
+  display: inline-flex;
+  align-items: center;
+  color: var(--bb-text) !important;
+  background: var(--bb-accent-soft) !important;
+  border: 1px solid var(--bb-accent-line) !important;
+  border-radius: 7px !important;
+  box-shadow: none !important;
+  font-size: 0.76rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.2;
+  text-transform: none !important;
 }
 
-body.bb-chapter-redesign .sec-num.orange {
-  background: var(--orange) !important;
+body.bb-chapter-redesign .page-nav {
+  margin: 0 0 28px !important;
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 8px !important;
 }
 
-body.bb-chapter-redesign .sec-num.purple {
-  background: var(--purple) !important;
+body.bb-chapter-redesign .page-nav a {
+  min-height: 44px !important;
+  padding: 0 15px !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff !important;
+  background: var(--bb-action) !important;
+  border: 1px solid var(--bb-action) !important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+  font-size: 0.84rem !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  text-decoration: none;
+  transform: none !important;
 }
 
-body.bb-chapter-redesign .sec-num.teal {
-  background: var(--teal) !important;
+body.bb-chapter-redesign .page-nav a:hover {
+  color: #ffffff !important;
+  background: var(--bb-action-hover) !important;
+  border-color: var(--bb-action-hover) !important;
+  box-shadow: none !important;
+  transform: none !important;
 }
 
-body.bb-chapter-redesign .sec-num.red {
-  background: var(--red) !important;
+body.bb-chapter-redesign .page-nav a.outline {
+  color: var(--bb-text) !important;
+  background: var(--bb-surface) !important;
+  border: 1px solid var(--bb-line-strong) !important;
 }
 
-body.bb-chapter-redesign .card,
-body.bb-chapter-redesign .summary,
-body.bb-chapter-redesign .chapter-flow {
-  padding: 1.5rem 1.6rem !important;
-  border-radius: 24px !important;
+body.bb-chapter-redesign .page-nav a.outline:hover {
+  color: var(--bb-action) !important;
+  background: var(--bb-surface-subtle) !important;
+  border-color: var(--bb-action) !important;
 }
 
-body.bb-chapter-redesign .card h2,
-body.bb-chapter-redesign .summary h3,
-body.bb-chapter-redesign .chapter-flow h2 {
-  margin: 0 0 1rem !important;
-  color: #0f172a !important;
-  font-size: 1.35rem !important;
+body.bb-chapter-redesign .page-section > section {
+  margin: 0 0 2.25rem !important;
+}
+
+body.bb-chapter-redesign h2.section,
+body.bb-chapter-redesign .sec-head h2 {
+  margin: 0 0 0.9rem !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  color: var(--bb-ink) !important;
+  border: 0 !important;
+  font-size: 1.75rem !important;
   font-weight: 900 !important;
   letter-spacing: -0.035em !important;
   line-height: 1.2 !important;
 }
 
-body.bb-chapter-redesign .summary h3 {
-  color: var(--bb-new-accent) !important;
+body.bb-chapter-redesign .sec-head {
+  margin: 1.7rem 0 0.9rem !important;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 0 !important;
+}
+
+body.bb-chapter-redesign .sec-num,
+body.bb-chapter-redesign .sec-head .num {
+  flex: 0 0 auto !important;
+  width: 34px !important;
+  height: 34px !important;
+  margin: 0 !important;
+  display: inline-grid !important;
+  place-items: center;
+  color: var(--bb-accent) !important;
+  background: var(--bb-accent-soft) !important;
+  border: 1px solid var(--bb-accent-line) !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+  font-size: 0.82rem !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+}
+
+body.bb-chapter-redesign .sec-num.blue,
+body.bb-chapter-redesign .sec-num.green,
+body.bb-chapter-redesign .sec-num.orange,
+body.bb-chapter-redesign .sec-num.purple,
+body.bb-chapter-redesign .sec-num.teal,
+body.bb-chapter-redesign .sec-num.red,
+body.bb-chapter-redesign .sec-head .num {
+  color: var(--bb-accent) !important;
+  background: var(--bb-accent-soft) !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Reading surfaces, callouts and lists                                       */
+/* -------------------------------------------------------------------------- */
+
+body.bb-chapter-redesign .card,
+body.bb-chapter-redesign .summary,
+body.bb-chapter-redesign .chapter-flow {
+  margin-bottom: 1.5rem !important;
+  padding: 26px 28px !important;
+  color: var(--bb-text) !important;
+  background: var(--bb-surface) !important;
+  border: 1px solid var(--bb-line) !important;
+  border-radius: var(--bb-radius-lg) !important;
+  box-shadow: none !important;
+}
+
+body.bb-chapter-redesign .card h2,
+body.bb-chapter-redesign .card h3,
+body.bb-chapter-redesign .summary h2,
+body.bb-chapter-redesign .summary h3,
+body.bb-chapter-redesign .chapter-flow h2 {
+  max-width: var(--bb-reading-w);
+  color: var(--bb-ink) !important;
+}
+
+body.bb-chapter-redesign .card h2,
+body.bb-chapter-redesign .summary h3,
+body.bb-chapter-redesign .chapter-flow h2 {
+  margin: 0 0 0.85rem !important;
+  font-size: 1.35rem !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.025em !important;
+  line-height: 1.25 !important;
+}
+
+body.bb-chapter-redesign .card h3,
+body.bb-chapter-redesign .mini-title {
+  margin: 1.35rem 0 0.45rem !important;
+  color: var(--bb-ink) !important;
+  font-size: 1.02rem !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
 }
 
 body.bb-chapter-redesign .card p,
-body.bb-chapter-redesign .summary li,
-body.bb-chapter-redesign .card li {
-  color: #475569 !important;
-  font-size: 0.98rem !important;
+body.bb-chapter-redesign .summary p,
+body.bb-chapter-redesign .card li,
+body.bb-chapter-redesign .summary li {
+  max-width: var(--bb-reading-w);
+  color: var(--bb-text) !important;
+  font-size: 1rem !important;
   line-height: 1.72 !important;
 }
 
-body.bb-chapter-redesign .card p {
+body.bb-chapter-redesign .card p,
+body.bb-chapter-redesign .summary p {
   margin: 0 0 0.85rem !important;
 }
 
-body.bb-chapter-redesign .card p:last-child {
+body.bb-chapter-redesign .card p:last-child,
+body.bb-chapter-redesign .summary p:last-child {
   margin-bottom: 0 !important;
 }
 
 body.bb-chapter-redesign .card strong,
-body.bb-chapter-redesign .summary strong {
-  color: #0f172a !important;
-  font-weight: 900 !important;
+body.bb-chapter-redesign .summary strong,
+body.bb-chapter-redesign .box strong {
+  color: var(--bb-ink) !important;
+  font-weight: 800 !important;
 }
 
-body.bb-chapter-redesign ul.ch {
-  list-style: none !important;
-  margin: 0.55rem 0 !important;
+body.bb-chapter-redesign .summary {
+  background: var(--bb-accent-soft) !important;
+  border-color: var(--bb-accent-line) !important;
+}
+
+body.bb-chapter-redesign .summary h3 {
+  color: var(--bb-accent) !important;
+}
+
+body.bb-chapter-redesign .g2,
+body.bb-chapter-redesign .compare,
+body.bb-chapter-redesign .term-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 12px !important;
+}
+
+body.bb-chapter-redesign .g3 {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+  gap: 12px !important;
+}
+
+body.bb-chapter-redesign .box,
+body.bb-chapter-redesign .box.blue,
+body.bb-chapter-redesign .box.green,
+body.bb-chapter-redesign .box.orange,
+body.bb-chapter-redesign .box.purple,
+body.bb-chapter-redesign .box.violet,
+body.bb-chapter-redesign .box.red,
+body.bb-chapter-redesign .box.rose,
+body.bb-chapter-redesign .box.teal,
+body.bb-chapter-redesign .box.amber,
+body.bb-chapter-redesign .box.emerald,
+body.bb-chapter-redesign .case-study {
+  margin: 0.7rem 0 !important;
+  padding: 15px 16px !important;
+  color: var(--bb-text) !important;
+  background: color-mix(in srgb, var(--bb-accent) 7%, var(--bb-surface)) !important;
+  border: 1px solid var(--bb-accent-line) !important;
+  border-radius: var(--bb-radius-md) !important;
+  box-shadow: none !important;
+  font-size: 0.94rem !important;
+  line-height: 1.65 !important;
+}
+
+body.bb-chapter-redesign .g2 > .box,
+body.bb-chapter-redesign .g3 > .box,
+body.bb-chapter-redesign .compare > .box,
+body.bb-chapter-redesign .term-grid > .box {
+  height: 100%;
+  margin: 0 !important;
+}
+
+body.bb-chapter-redesign .box strong,
+body.bb-chapter-redesign .case-study strong {
+  display: block !important;
+  margin-bottom: 0.25rem !important;
+  color: var(--bb-ink) !important;
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+  font-weight: 800 !important;
+}
+
+body.bb-chapter-redesign ul.ch,
+body.bb-chapter-redesign .enum {
+  max-width: var(--bb-reading-w);
+  margin: 0.65rem 0 !important;
   padding: 0 !important;
+  list-style: none !important;
 }
 
 body.bb-chapter-redesign ul.ch li {
-  position: relative !important;
-  padding: 0.22rem 0 0.22rem 1.35rem !important;
+  position: relative;
+  padding: 0.3rem 0 0.3rem 1.45rem !important;
 }
 
 body.bb-chapter-redesign ul.ch li::before {
   content: "✓" !important;
-  position: absolute !important;
+  position: absolute;
+  top: 0.3rem;
+  left: 0;
+  color: var(--bb-accent) !important;
+  font-weight: 900;
+}
+
+body.bb-chapter-redesign .enum {
+  counter-reset: none;
+}
+
+body.bb-chapter-redesign .enum li {
+  position: relative;
+  min-height: 32px;
+  padding: 0.35rem 0 0.35rem 2.25rem !important;
+}
+
+body.bb-chapter-redesign .enum li::before {
+  content: attr(data-n) !important;
+  position: absolute;
+  top: 0.28rem !important;
   left: 0 !important;
-  top: 0.22rem !important;
-  color: var(--bb-new-accent) !important;
-  font-weight: 900 !important;
+  width: 28px !important;
+  height: 28px !important;
+  display: inline-grid !important;
+  place-items: center;
+  color: var(--bb-accent) !important;
+  background: var(--bb-accent-soft) !important;
+  border: 1px solid var(--bb-accent-line);
+  border-radius: 50% !important;
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+  font-size: 0.75rem !important;
+  font-weight: 900;
 }
 
-body.bb-chapter-redesign .g2,
-body.bb-chapter-redesign .g3 {
-  gap: 1rem !important;
+body.bb-chapter-redesign .pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0.85rem 0;
 }
 
-body.bb-chapter-redesign .box:not(.map-card) {
-  border-left-width: 4px !important;
-  border-left-style: solid !important;
-  border-radius: 18px !important;
-  padding: 1rem 1.1rem !important;
-  margin: 0.75rem 0 !important;
-  background: rgba(248, 250, 252, 0.92) !important;
-  color: #475569 !important;
-  font-size: 0.94rem !important;
-  line-height: 1.62 !important;
+body.bb-chapter-redesign .term-pill,
+body.bb-chapter-redesign .kterm,
+body.bb-chapter-redesign .keyword,
+body.bb-chapter-redesign .tag,
+body.bb-chapter-redesign .tags span {
+  min-height: 28px;
+  padding: 4px 9px !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--bb-accent) !important;
+  background: var(--bb-accent-soft) !important;
+  border: 1px solid var(--bb-accent-line) !important;
+  border-radius: 7px !important;
   box-shadow: none !important;
-}
-
-body.bb-chapter-redesign .box:not(.map-card) strong {
-  display: block !important;
-  margin-bottom: 0.18rem !important;
-}
-
-body.bb-chapter-redesign .fig {
-  max-width: 680px !important;
-  margin: 1.6rem auto !important;
-  text-align: center !important;
-}
-
-body.bb-chapter-redesign .fig img,
-body.bb-chapter-redesign .img-txt img {
-  max-width: 100% !important;
-  padding: 0.85rem !important;
-  background: #fff !important;
-  border: 1px solid rgba(15, 23, 42, 0.08) !important;
-  border-radius: 22px !important;
-  box-shadow: none !important;
-}
-
-body.bb-chapter-redesign .fig figcaption {
-  margin-top: 0.6rem !important;
-  color: #94a3b8 !important;
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
   font-size: 0.78rem !important;
-  font-style: italic !important;
-  line-height: 1.55 !important;
+  font-weight: 700 !important;
+  line-height: 1.2;
 }
 
+body.bb-chapter-redesign .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0.55rem 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Chapter outline: a numbered reading list, not a card grid                  */
+/* -------------------------------------------------------------------------- */
+
+body.bb-chapter-redesign .chapter-map,
 body.bb-chapter-redesign .chapter-map.card {
-  padding: 1.5rem 1.6rem !important;
+  padding: 24px 28px !important;
+  counter-reset: bb-chapter-map;
+}
+
+body.bb-chapter-redesign .chapter-map h2 {
+  margin: 0 0 0.6rem !important;
+  color: var(--bb-ink) !important;
+  font-size: 1.35rem !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.025em !important;
+}
+
+body.bb-chapter-redesign .chapter-map .g2,
+body.bb-chapter-redesign .chapter-map .g3,
+body.bb-chapter-redesign .chapter-map .map-grid-split {
+  display: block !important;
 }
 
 body.bb-chapter-redesign .chapter-map .map-card {
-  border-left: 1px solid rgba(15, 23, 42, 0.08) !important;
-  border-radius: 22px !important;
+  position: relative !important;
+  min-height: 74px !important;
   margin: 0 !important;
-  padding: 1.35rem 1.35rem 1.4rem !important;
-  font-size: 1rem !important;
+  padding: 17px 16px 17px 62px !important;
+  display: block !important;
+  color: var(--bb-text) !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-bottom: 1px solid var(--bb-line) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  font-size: 0.92rem !important;
   line-height: 1.55 !important;
+  transform: none !important;
+  transition: background-color 160ms ease, color 160ms ease;
+  counter-increment: bb-chapter-map;
+}
+
+body.bb-chapter-redesign .chapter-map .map-card:last-child {
+  border-bottom: 0 !important;
+}
+
+body.bb-chapter-redesign .chapter-map .map-card:hover,
+body.bb-chapter-redesign .chapter-map .map-card:focus-visible {
+  background: var(--bb-accent-soft) !important;
+  border-color: var(--bb-line) !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+body.bb-chapter-redesign .chapter-map .map-card::before {
+  content: counter(bb-chapter-map, decimal-leading-zero) !important;
+  position: absolute !important;
+  top: 18px !important;
+  left: 14px !important;
+  right: auto !important;
+  width: 34px !important;
+  height: 34px !important;
+  display: grid !important;
+  place-items: center;
+  color: var(--bb-accent) !important;
+  background: var(--bb-accent-soft) !important;
+  border: 1px solid var(--bb-accent-line);
+  border-radius: 8px !important;
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+  font-size: 0.75rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 0 !important;
+  line-height: 1 !important;
+  opacity: 1 !important;
+}
+
+body.bb-chapter-redesign .chapter-map .map-card > div:first-child {
+  display: none !important;
 }
 
 body.bb-chapter-redesign .chapter-map .map-card strong {
   display: block !important;
-  margin: 0.25rem 0 0.7rem !important;
-  color: var(--map-accent) !important;
-  font-size: 1.2rem !important;
-  letter-spacing: -0.025em !important;
-  line-height: 1.15 !important;
-}
-
-body.bb-chapter-redesign .chapter-map .map-card p,
-body.bb-chapter-redesign .chapter-map .map-card {
-  color: #64748b !important;
-}
-
-body.bb-chapter-redesign .flow {
-  display: flex !important;
-  align-items: center !important;
-  flex-wrap: wrap !important;
-  gap: 0.65rem !important;
-  margin: 0.8rem 0 !important;
-}
-
-body.bb-chapter-redesign .fb {
-  border: 1px solid rgba(15, 23, 42, 0.08) !important;
-  border-radius: 999px !important;
-  padding: 0.45rem 0.82rem !important;
-  background: #fff !important;
-  font-size: 0.82rem !important;
-  font-weight: 900 !important;
-  line-height: 1.2 !important;
-}
-
-body.bb-chapter-redesign .fa {
-  color: #cbd5e1 !important;
+  margin: 0 0 0.2rem !important;
+  color: var(--bb-ink) !important;
   font-size: 1rem !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.01em !important;
+  line-height: 1.35 !important;
 }
 
-@media (max-width: 760px) {
-  body.bb-chapter-redesign h2.section {
-    font-size: 1.22rem !important;
-  }
-
-  body.bb-chapter-redesign .card,
-  body.bb-chapter-redesign .summary,
-  body.bb-chapter-redesign .chapter-flow {
-    padding: 1.1rem !important;
-    border-radius: 20px !important;
-  }
+body.bb-chapter-redesign .chapter-map .map-card p {
+  max-width: var(--bb-reading-w);
+  margin: 0 !important;
+  color: var(--bb-muted) !important;
+  font-size: 0.88rem !important;
+  line-height: 1.55 !important;
 }
 
-/* Final search/settings behavior requested in review comments. */
-body.bb-chapter-redesign #settings-fab,
-body.bb-chapter-redesign #settings-panel,
-body.bb-chapter-redesign #nav-search-btn {
-  display: none !important;
-}
-
-body.bb-chapter-redesign .lab-topbar-inner {
+/* Some chapter homes use the earlier `.g2/.g3 > .box` vocabulary. Treat those
+   items as the same outline rows without requiring JavaScript to rename them. */
+body.bb-chapter-redesign .chapter-map :is(.g2, .g3, .map-grid-split) > .box {
   position: relative !important;
-  grid-template-columns: 190px minmax(0, 1fr) auto 178px !important;
-  min-height: 58px !important;
-}
-
-body.bb-chapter-redesign .lab-brand {
-  position: absolute !important;
-  top: 50% !important;
-  left: 24px !important;
-  transform: translateY(-50%) !important;
-  z-index: 2 !important;
-}
-
-body.bb-chapter-redesign .lab-nav {
-  grid-column: 1 / -1 !important;
-  justify-self: center !important;
-  z-index: 1 !important;
-}
-
-body.bb-chapter-redesign .lab-topbar-back {
-  position: absolute !important;
-  top: 50% !important;
-  right: 24px !important;
-  transform: translateY(-50%) !important;
-  z-index: 2 !important;
-}
-
-body.bb-chapter-redesign .lesson-search {
-  grid-column: 3 !important;
-  justify-self: auto !important;
-  display: flex !important;
-  align-items: center !important;
-  gap: 0 !important;
-  position: absolute !important;
-  top: 50% !important;
-  left: auto !important;
-  right: clamp(210px, 18vw, 260px) !important;
-  transform: translateY(-50%) !important;
-  min-width: 46px !important;
-  width: 46px !important;
-  height: 46px !important;
-  margin-left: 0 !important;
-  pointer-events: auto !important;
-  background: #fff !important;
-  border: 1px solid rgba(15, 23, 42, 0.08) !important;
-  border-radius: 999px !important;
-  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06) !important;
-  overflow: hidden !important;
-  z-index: 2 !important;
-  transition: width 0.2s ease, margin-left 0.2s ease, background-color 0.18s ease, border-color 0.18s ease !important;
-}
-
-body.bb-chapter-redesign .lesson-search.open {
-  width: min(300px, 28vw) !important;
-  margin-left: 0 !important;
-}
-
-body.bb-chapter-redesign.bb-compact-topbar .lesson-search,
-body.bb-chapter-redesign.bb-no-lesson-search .lesson-search {
-  display: flex !important;
-}
-
-body.bb-chapter-redesign .lesson-search-trigger {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 46px !important;
-  height: 46px !important;
-  min-width: 46px !important;
-  padding: 0 !important;
-  border-radius: 999px !important;
-  border: 0 !important;
-  background: transparent !important;
-  color: #64748b !important;
-  box-shadow: none !important;
-  cursor: pointer !important;
-  transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease !important;
-}
-
-body.bb-chapter-redesign .lesson-search-trigger:hover,
-body.bb-chapter-redesign .lesson-search.open .lesson-search-trigger {
-  background: transparent !important;
-  color: var(--bb-new-accent) !important;
-}
-
-body.bb-chapter-redesign .lesson-search:not(.open) .lesson-search-panel {
-  display: flex !important;
-  width: 0 !important;
-  max-width: 0 !important;
-  min-width: 0 !important;
-  height: 46px !important;
-  padding: 0 !important;
-  border: 0 !important;
-  opacity: 0 !important;
-  overflow: hidden !important;
-  pointer-events: none !important;
-  transform: scale(0.96) !important;
-  box-shadow: none !important;
-}
-
-body.bb-chapter-redesign .lesson-search.open .lesson-search-panel {
-  display: flex !important;
-  align-items: center !important;
-  gap: 0.5rem !important;
-  flex: 1 1 auto !important;
-  width: auto !important;
-  max-width: none !important;
-  min-width: 0 !important;
-  height: 46px !important;
-  padding: 0 !important;
-  border: 0 !important;
-  opacity: 1 !important;
-  overflow: visible !important;
-  pointer-events: auto !important;
-  transform: none !important;
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
-body.bb-chapter-redesign .lesson-search.open .lesson-search-box {
-  min-width: 0 !important;
-  height: 46px !important;
-  padding: 0.35rem 0.45rem 0.35rem 0 !important;
+  min-height: 74px !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 17px 16px 17px 62px !important;
+  display: block !important;
+  color: var(--bb-text) !important;
   background: transparent !important;
   border: 0 !important;
+  border-bottom: 1px solid var(--bb-line) !important;
   border-radius: 0 !important;
   box-shadow: none !important;
+  font-size: 0.92rem !important;
+  line-height: 1.55 !important;
+  transform: none !important;
+  transition: background-color 160ms ease, color 160ms ease;
+  counter-increment: bb-chapter-map;
 }
 
-body.bb-chapter-redesign .lesson-search.open .lesson-search-box > svg {
+body.bb-chapter-redesign .chapter-map :is(.g2, .g3, .map-grid-split) > .box:hover,
+body.bb-chapter-redesign .chapter-map :is(.g2, .g3, .map-grid-split) > .box:focus-visible {
+  background: var(--bb-accent-soft) !important;
+  border-color: var(--bb-line) !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+body.bb-chapter-redesign .chapter-map :is(.g2, .g3, .map-grid-split) > .box::before {
+  content: counter(bb-chapter-map, decimal-leading-zero) !important;
+  position: absolute !important;
+  top: 18px !important;
+  left: 14px !important;
+  width: 34px !important;
+  height: 34px !important;
+  display: grid !important;
+  place-items: center;
+  color: var(--bb-accent) !important;
+  background: var(--bb-accent-soft) !important;
+  border: 1px solid var(--bb-accent-line) !important;
+  border-radius: 8px !important;
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+  font-size: 0.75rem !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+}
+
+body.bb-chapter-redesign .chapter-map :is(.g2, .g3, .map-grid-split) > .box > :is(div, span):first-child:not(:only-child) {
   display: none !important;
 }
 
-body.bb-chapter-redesign #bb-sidebar-settings {
-  display: block !important;
+body.bb-chapter-redesign .chapter-map :is(.g2, .g3, .map-grid-split) > .box strong {
+  margin: 0 0 0.2rem !important;
+  color: var(--bb-ink) !important;
+  font-size: 1rem !important;
+  line-height: 1.35 !important;
 }
 
-body.bb-chapter-redesign #bb-sidebar-settings .nav-divider {
-  margin: 0.85rem 1.05rem !important;
+body.bb-chapter-redesign .chapter-map :is(.g2, .g3, .map-grid-split) > .box p {
+  margin: 0 !important;
+  color: var(--bb-muted) !important;
+  font-size: 0.88rem !important;
+  line-height: 1.55 !important;
 }
 
-body.bb-chapter-redesign #bb-sidebar-settings .nav-group-label {
-  color: #94a3b8 !important;
+body.bb-chapter-redesign .chapter-map > :is(.g2, .g3, .map-grid-split):last-child > .box:last-child {
+  border-bottom: 0 !important;
 }
 
-body.bb-chapter-redesign #nav-dm-btn,
-body.bb-chapter-redesign #nav-hl-btn {
-  display: flex !important;
-  align-items: center !important;
-  min-height: 40px !important;
-  margin: 0.08rem 0.88rem !important;
-  padding: 0.58rem 0.78rem !important;
-  border: 0 !important;
-  border-radius: 6px !important;
-  background: transparent !important;
-  color: #64748b !important;
+body.bb-chapter-redesign .chapter-map .g2:not(:last-child) > .map-card:last-child,
+body.bb-chapter-redesign .chapter-map .g3:not(:last-child) > .map-card:last-child {
+  border-bottom: 1px solid var(--bb-line) !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Figures and tables                                                         */
+/* -------------------------------------------------------------------------- */
+
+body.bb-chapter-redesign .fig,
+body.bb-chapter-redesign .figure {
+  width: 100%;
+  max-width: 780px !important;
+  margin: 2rem auto !important;
+  text-align: center;
+}
+
+body.bb-chapter-redesign .fig img,
+body.bb-chapter-redesign .figure img,
+body.bb-chapter-redesign .img-txt img {
+  max-width: 100% !important;
+  height: auto !important;
+  padding: 10px !important;
+  display: block;
+  background: #ffffff !important;
+  border: 1px solid var(--bb-line-strong) !important;
+  border-radius: var(--bb-radius-md) !important;
   box-shadow: none !important;
-  font-size: 0.84rem !important;
+}
+
+body.bb-chapter-redesign .fig figcaption,
+body.bb-chapter-redesign .fig .caption,
+body.bb-chapter-redesign .figure figcaption {
+  max-width: 68ch;
+  margin: 0.65rem auto 0 !important;
+  color: var(--bb-muted) !important;
+  font-size: 0.8rem !important;
+  font-style: normal !important;
+  line-height: 1.55 !important;
+  text-align: center;
+}
+
+body.bb-chapter-redesign .img-txt {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 24px !important;
+}
+
+body.bb-chapter-redesign .img-txt img {
+  width: min(280px, 38%) !important;
+  flex: 0 0 auto;
+}
+
+body.bb-chapter-redesign .table-wrap {
+  width: 100%;
+  margin: 1.25rem 0 1.5rem !important;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch;
+  background: var(--bb-surface) !important;
+  border: 1px solid var(--bb-line) !important;
+  border-radius: var(--bb-radius-md) !important;
+}
+
+body.bb-chapter-redesign table {
+  width: 100% !important;
+  min-width: 620px;
+  margin: 0 !important;
+  display: table !important;
+  overflow: visible !important;
+  color: var(--bb-text) !important;
+  background: var(--bb-surface) !important;
+  border: 0 !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  font-size: 0.88rem !important;
+}
+
+body.bb-chapter-redesign table caption {
+  padding: 0.8rem 0.9rem !important;
+  color: var(--bb-ink) !important;
+  background: var(--bb-surface-subtle) !important;
+  border-bottom: 1px solid var(--bb-line);
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+  font-size: 0.88rem;
+  font-weight: 800;
+  line-height: 1.4;
+  text-align: left;
+}
+
+body.bb-chapter-redesign table thead {
+  display: table-header-group !important;
+}
+
+body.bb-chapter-redesign table tbody {
+  display: table-row-group !important;
+}
+
+body.bb-chapter-redesign table tr {
+  display: table-row !important;
+  background: transparent !important;
+  border: 0 !important;
+}
+
+body.bb-chapter-redesign table th,
+body.bb-chapter-redesign table td {
+  padding: 0.72rem 0.85rem !important;
+  display: table-cell !important;
+  vertical-align: top;
+  color: var(--bb-text) !important;
+  background: var(--bb-surface) !important;
+  border: 0 !important;
+  border-bottom: 1px solid var(--bb-line) !important;
+  line-height: 1.55;
+  text-align: left;
+}
+
+body.bb-chapter-redesign table th {
+  color: var(--bb-ink) !important;
+  background: var(--bb-accent-soft) !important;
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+  font-size: 0.82rem;
   font-weight: 800 !important;
 }
 
-body.bb-chapter-redesign #nav-dm-btn:hover,
-body.bb-chapter-redesign #nav-hl-btn:hover,
-body.bb-chapter-redesign #nav-dm-btn.on,
-body.bb-chapter-redesign #nav-hl-btn.on,
-body.bb-chapter-redesign #nav-hl-btn.hl-on {
-  background: var(--bb-new-accent-light) !important;
-  color: var(--bb-new-accent) !important;
+body.bb-chapter-redesign table tr:nth-child(even) td {
+  background: var(--bb-surface-subtle) !important;
 }
 
-body.bb-chapter-redesign #nav-dm-btn .dot,
-body.bb-chapter-redesign #nav-hl-btn .dot {
-  background: currentColor !important;
-  opacity: 0.55 !important;
+body.bb-chapter-redesign table tbody tr:last-child td {
+  border-bottom: 0 !important;
 }
+
+body.bb-chapter-redesign table td::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Accordions, process flows and renal interactive                            */
+/* -------------------------------------------------------------------------- */
+
+body.bb-chapter-redesign .acc,
+body.bb-chapter-redesign .accordion {
+  margin: 0.8rem 0 !important;
+  overflow: hidden;
+  color: var(--bb-text) !important;
+  background: var(--bb-surface) !important;
+  border: 1px solid var(--bb-line) !important;
+  border-radius: var(--bb-radius-md) !important;
+  box-shadow: none !important;
+}
+
+body.bb-chapter-redesign .acc-head,
+body.bb-chapter-redesign .accordion-head {
+  width: 100%;
+  min-height: 48px;
+  padding: 0.75rem 0.95rem !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--bb-ink) !important;
+  background: var(--bb-surface-subtle) !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+  font-size: 0.9rem !important;
+  font-weight: 800 !important;
+  line-height: 1.35;
+  text-align: left;
+  user-select: none;
+}
+
+body.bb-chapter-redesign .acc-head:hover,
+body.bb-chapter-redesign .acc-head.open,
+body.bb-chapter-redesign .accordion-head:hover,
+body.bb-chapter-redesign .accordion-head.open {
+  color: var(--bb-accent) !important;
+  background: var(--bb-accent-soft) !important;
+}
+
+body.bb-chapter-redesign .acc-head .arr,
+body.bb-chapter-redesign .accordion-head .arr {
+  flex: 0 0 auto;
+  transition: transform 180ms ease;
+}
+
+body.bb-chapter-redesign .acc-head.open .arr,
+body.bb-chapter-redesign .accordion-head.open .arr {
+  transform: rotate(180deg);
+}
+
+body.bb-chapter-redesign .acc-body,
+body.bb-chapter-redesign .accordion-body {
+  display: none;
+  padding: 0.95rem !important;
+  color: var(--bb-text) !important;
+  background: var(--bb-surface) !important;
+  border-top: 1px solid var(--bb-line) !important;
+  font-size: 0.94rem;
+  line-height: 1.7;
+}
+
+body.bb-chapter-redesign .acc-body.show,
+body.bb-chapter-redesign .accordion-body.show {
+  display: block !important;
+}
+
+body.bb-chapter-redesign .flow {
+  max-width: 100%;
+  margin: 1rem 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+}
+
+body.bb-chapter-redesign .fb,
+body.bb-chapter-redesign .fb.blue,
+body.bb-chapter-redesign .fb.green,
+body.bb-chapter-redesign .fb.orange,
+body.bb-chapter-redesign .fb.purple,
+body.bb-chapter-redesign .fb.red,
+body.bb-chapter-redesign .fb.teal,
+body.bb-chapter-redesign .flow span {
+  max-width: 100%;
+  padding: 0.45rem 0.72rem !important;
+  color: var(--bb-accent) !important;
+  background: var(--bb-accent-soft) !important;
+  border: 1px solid var(--bb-accent-line) !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+  font-size: 0.82rem !important;
+  font-weight: 800 !important;
+  line-height: 1.3 !important;
+  text-align: center;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+}
+
+body.bb-chapter-redesign .fa,
+body.bb-chapter-redesign .flow b {
+  flex: 0 0 auto;
+  color: var(--bb-muted) !important;
+  font-size: 1rem !important;
+  line-height: 1;
+}
+
+body.bb-chapter-redesign .fc-controls {
+  margin: 0 0 1.25rem !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px !important;
+}
+
+body.bb-chapter-redesign .fc-btn-play,
+body.bb-chapter-redesign .fc-btn-reset {
+  min-height: 44px;
+  padding: 0 16px !important;
+  color: var(--bb-text) !important;
+  background: var(--bb-surface) !important;
+  border: 1px solid var(--bb-line-strong) !important;
+  border-radius: 9px !important;
+  box-shadow: none !important;
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+  font-size: 0.84rem !important;
+  font-weight: 800 !important;
+  transform: none !important;
+}
+
+body.bb-chapter-redesign .fc-btn-play {
+  color: #ffffff !important;
+  background: var(--bb-action) !important;
+  border-color: var(--bb-action) !important;
+}
+
+body.bb-chapter-redesign .fc-btn-play:hover {
+  background: var(--bb-action-hover) !important;
+  border-color: var(--bb-action-hover) !important;
+}
+
+body.bb-chapter-redesign .fc-btn-reset:hover {
+  color: var(--bb-action) !important;
+  border-color: var(--bb-action) !important;
+}
+
+body.bb-chapter-redesign .fc-btn-play:disabled,
+body.bb-chapter-redesign .fc-btn-reset:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+body.bb-chapter-redesign .fc-wrap {
+  width: 100%;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+body.bb-chapter-redesign .fc-item,
+body.bb-chapter-redesign .fc-connector,
+body.bb-chapter-redesign .fc-detail {
+  width: 100%;
+  max-width: 620px !important;
+}
+
+body.bb-chapter-redesign .fc-item,
+body.bb-chapter-redesign .fc-connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body.bb-chapter-redesign .fc-node,
+body.bb-chapter-redesign .fc-node.color-blue,
+body.bb-chapter-redesign .fc-node.color-emerald,
+body.bb-chapter-redesign .fc-node.type-result {
+  width: 100% !important;
+  padding: 15px 17px !important;
+  color: var(--bb-text) !important;
+  background: color-mix(in srgb, var(--bb-accent) 6%, var(--bb-surface)) !important;
+  border: 1px solid var(--bb-accent-line) !important;
+  border-radius: var(--bb-radius-md) !important;
+  box-shadow: none !important;
+  transform: none !important;
+  user-select: none;
+}
+
+body.bb-chapter-redesign .fc-node:hover {
+  border-color: var(--bb-accent) !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+body.bb-chapter-redesign .fc-node.fc-active {
+  outline: 3px solid color-mix(in srgb, var(--bb-accent) 26%, transparent) !important;
+  outline-offset: 2px;
+  box-shadow: none !important;
+}
+
+body.bb-chapter-redesign .fc-step,
+body.bb-chapter-redesign .fc-node.color-blue .fc-step,
+body.bb-chapter-redesign .fc-node.color-emerald .fc-step {
+  width: 24px !important;
+  height: 24px !important;
+  margin-right: 0.5rem;
+  display: inline-grid !important;
+  place-items: center;
+  color: #ffffff !important;
+  background: var(--bb-accent) !important;
+  border-radius: 50% !important;
+  font-size: 0.72rem;
+  font-weight: 900;
+}
+
+body.bb-chapter-redesign .fc-title,
+body.bb-chapter-redesign .fc-node.color-blue .fc-title,
+body.bb-chapter-redesign .fc-node.color-emerald .fc-title {
+  display: flex;
+  align-items: center;
+  color: var(--bb-ink) !important;
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+  font-size: 0.96rem !important;
+  font-weight: 800 !important;
+  line-height: 1.35;
+}
+
+body.bb-chapter-redesign .fc-sub,
+body.bb-chapter-redesign .fc-hint,
+body.bb-chapter-redesign .fc-diamond-sub {
+  margin-top: 0.3rem;
+  color: var(--bb-muted) !important;
+  font-size: 0.8rem !important;
+  line-height: 1.55;
+}
+
+body.bb-chapter-redesign .fc-diamond-wrap {
+  position: relative;
+  width: 210px !important;
+  height: 116px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+body.bb-chapter-redesign .fc-diamond-shape {
+  width: 148px !important;
+  height: 86px !important;
+  background: var(--bb-accent-soft) !important;
+  border: 1px solid var(--bb-accent) !important;
+  border-radius: 7px !important;
+  box-shadow: none !important;
+  transform: rotate(45deg) scale(0.87) !important;
+}
+
+body.bb-chapter-redesign .fc-diamond-wrap:hover .fc-diamond-shape,
+body.bb-chapter-redesign .fc-diamond-wrap.fc-active .fc-diamond-shape {
+  border-color: var(--bb-accent) !important;
+  box-shadow: none !important;
+  transform: rotate(45deg) scale(0.87) !important;
+}
+
+body.bb-chapter-redesign .fc-diamond-wrap.fc-active .fc-diamond-shape {
+  outline: 3px solid color-mix(in srgb, var(--bb-accent) 24%, transparent);
+  outline-offset: 2px;
+}
+
+body.bb-chapter-redesign .fc-diamond-text {
+  position: absolute;
+  max-width: 140px;
+  color: var(--bb-accent) !important;
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+  font-size: 0.82rem !important;
+  font-weight: 800;
+  line-height: 1.3;
+  text-align: center;
+  pointer-events: none;
+}
+
+body.bb-chapter-redesign .fc-connector {
+  padding: 0.25rem 0;
+}
+
+body.bb-chapter-redesign .fc-conn-line {
+  position: relative;
+  width: 2px !important;
+  height: 0;
+  background: var(--bb-accent) !important;
+  transition: height 280ms ease;
+}
+
+body.bb-chapter-redesign .fc-conn-line.fc-drawn {
+  height: 36px;
+}
+
+body.bb-chapter-redesign .fc-conn-line::after {
+  content: "↓";
+  position: absolute;
+  bottom: -13px;
+  left: 50%;
+  width: auto;
+  height: auto;
+  color: var(--bb-accent);
+  border: 0 !important;
+  font-size: 0.9rem;
+  font-weight: 900;
+  line-height: 1;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 180ms ease;
+}
+
+body.bb-chapter-redesign .fc-conn-line.fc-drawn::after {
+  opacity: 1;
+}
+
+body.bb-chapter-redesign .fc-detail {
+  max-height: 0;
+  margin: 0 !important;
+  overflow: hidden;
+  opacity: 0;
+  color: var(--bb-text) !important;
+  background: var(--bb-surface-subtle) !important;
+  border: 1px solid transparent !important;
+  border-radius: var(--bb-radius-md) !important;
+  box-shadow: none !important;
+  transition: max-height 260ms ease, opacity 180ms ease, margin 180ms ease;
+}
+
+body.bb-chapter-redesign .fc-detail.fc-open {
+  max-height: 760px !important;
+  margin: 0.5rem 0 0.3rem !important;
+  opacity: 1;
+  border-color: var(--bb-line) !important;
+}
+
+body.bb-chapter-redesign .fc-detail-inner {
+  padding: 1rem 1.1rem !important;
+}
+
+body.bb-chapter-redesign .fc-detail-full {
+  margin-bottom: 0.85rem;
+  color: var(--bb-text) !important;
+  font-size: 0.92rem !important;
+  line-height: 1.7;
+}
+
+body.bb-chapter-redesign .fc-why-label {
+  margin-bottom: 0.4rem;
+  color: var(--bb-muted) !important;
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+  font-size: 0.72rem !important;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+body.bb-chapter-redesign .fc-why-box,
+body.bb-chapter-redesign .fc-why-box.teal,
+body.bb-chapter-redesign .fc-why-box.emerald {
+  padding: 0.8rem 0.9rem !important;
+  color: var(--bb-text) !important;
+  background: var(--bb-accent-soft) !important;
+  border: 1px solid var(--bb-accent-line) !important;
+  border-radius: 9px !important;
+  box-shadow: none !important;
+  font-size: 0.88rem !important;
+  line-height: 1.65;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Feedback, highlighting and legacy floating controls                        */
+/* -------------------------------------------------------------------------- */
 
 body.bb-chapter-redesign .search-found {
-  background: #fef08a !important;
-  border-radius: 4px !important;
-  outline: 2px solid rgba(245, 158, 11, 0.24) !important;
+  padding: 0 0.08em;
+  color: inherit;
+  background: color-mix(in srgb, var(--bb-highlight) 78%, transparent);
+  border-radius: 2px;
 }
 
 body.bb-chapter-redesign .search-found-current {
-  background: #f59e0b !important;
-  color: #111827 !important;
-  outline: 3px solid rgba(245, 158, 11, 0.36) !important;
+  color: var(--bb-ink);
+  background: var(--bb-highlight);
+  outline: 2px solid color-mix(in srgb, #ca8a04 55%, transparent);
+  outline-offset: 1px;
+}
+
+body.bb-chapter-redesign mark.hl {
+  padding: 0 0.08em;
+  color: oklch(42.1% 0.095 57.708) !important;
+  background: oklch(92.4% 0.12 95.746) !important;
+  border-radius: 2px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+body.bb-chapter-redesign [data-highlight-color="yellow"] {
+  --bb-hl-bg: oklch(92.4% 0.12 95.746);
+  --bb-hl-ink: oklch(42.1% 0.095 57.708);
+  --bb-hl-edge: oklch(55.4% 0.135 66.442);
+}
+
+body.bb-chapter-redesign [data-highlight-color="green"] {
+  --bb-hl-bg: oklch(92.5% 0.084 155.995);
+  --bb-hl-ink: oklch(39.3% 0.095 152.535);
+  --bb-hl-edge: oklch(52.7% 0.154 150.069);
+}
+
+body.bb-chapter-redesign [data-highlight-color="blue"] {
+  --bb-hl-bg: oklch(88.2% 0.059 254.128);
+  --bb-hl-ink: oklch(37.9% 0.146 265.522);
+  --bb-hl-edge: oklch(48.8% 0.243 264.376);
+}
+
+body.bb-chapter-redesign [data-highlight-color="pink"] {
+  --bb-hl-bg: oklch(89.9% 0.061 343.231);
+  --bb-hl-ink: oklch(40.8% 0.153 2.432);
+  --bb-hl-edge: oklch(52.5% 0.223 3.958);
+}
+
+body.bb-chapter-redesign [data-highlight-color="violet"] {
+  --bb-hl-bg: oklch(89.4% 0.057 293.283);
+  --bb-hl-ink: oklch(38% 0.189 293.745);
+  --bb-hl-edge: oklch(49.1% 0.27 292.581);
+}
+
+body.bb-chapter-redesign [data-highlight-color="orange"] {
+  --bb-hl-bg: oklch(90.1% 0.076 70.697);
+  --bb-hl-ink: oklch(40.8% 0.123 38.172);
+  --bb-hl-edge: oklch(55.3% 0.195 38.402);
+}
+
+body.bb-chapter-redesign mark.hl[data-highlight-color] {
+  color: var(--bb-hl-ink) !important;
+  background: var(--bb-hl-bg) !important;
+}
+
+body.bb-chapter-redesign .bb-highlighter-palette {
+  width: calc(100% - 1.3rem);
+  margin: 0.2rem 0.65rem 0.6rem;
+  padding: 0.65rem 0.75rem 0.75rem;
+  color: var(--bb-text);
+  background: var(--bb-surface-subtle);
+  border: 1px solid var(--bb-line);
+  border-radius: 10px;
+}
+
+body.bb-chapter-redesign .bb-highlighter-palette[hidden] {
+  display: none !important;
+}
+
+body.bb-chapter-redesign .bb-highlighter-palette-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+  font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+body.bb-chapter-redesign .bb-highlighter-palette-head > span {
+  color: var(--bb-muted);
+}
+
+body.bb-chapter-redesign .bb-highlighter-palette-head strong {
+  color: var(--bb-ink);
+  font-weight: 800;
+}
+
+body.bb-chapter-redesign .bb-highlighter-colors {
+  display: grid;
+  grid-template-columns: repeat(3, 36px);
+  gap: 10px;
+}
+
+body.bb-chapter-redesign .bb-highlighter-color {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  display: inline-grid;
+  place-items: center;
+  padding: 0;
+  color: var(--bb-hl-ink);
+  background: var(--bb-hl-bg);
+  border: 2px solid var(--bb-hl-edge);
+  border-radius: 50%;
+  box-shadow: none;
+  cursor: pointer;
+  transition: transform 160ms cubic-bezier(0.22, 1, 0.36, 1), outline-color 160ms ease-out;
+}
+
+body.bb-chapter-redesign .bb-highlighter-color:hover {
+  transform: scale(1.06);
+}
+
+body.bb-chapter-redesign .bb-highlighter-color:focus-visible {
+  outline: 3px solid var(--bb-action);
+  outline-offset: 2px;
+}
+
+body.bb-chapter-redesign .bb-highlighter-color.is-selected {
+  outline: 2px solid var(--bb-ink);
+  outline-offset: 2px;
+}
+
+body.bb-chapter-redesign .bb-highlighter-check {
+  opacity: 0;
+  font-size: 0.88rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+body.bb-chapter-redesign .bb-highlighter-color.is-selected .bb-highlighter-check {
+  opacity: 1;
+}
+
+body.bb-chapter-redesign #nav-hl-btn.hl-on .dot {
+  background: var(--bb-hl-bg) !important;
+  border: 1px solid var(--bb-hl-edge);
 }
 
 body.bb-chapter-redesign.hl-mode main {
   cursor: text;
 }
 
-body.bb-chapter-redesign mark.hl {
-  background: #fef08a;
-  color: inherit;
-  border-radius: 4px;
-  padding: 0 0.04em;
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
+body.bb-chapter-redesign .toast,
+body.bb-chapter-redesign .bb-highlighter-toast {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: var(--bb-z-toast) !important;
+  max-width: min(360px, calc(100vw - 32px));
+  padding: 12px 15px !important;
+  color: #ffffff !important;
+  background: var(--bb-ink) !important;
+  border: 0 !important;
+  border-radius: 10px !important;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.22) !important;
+  font-size: 0.85rem !important;
+  font-weight: 700;
 }
 
-body.bb-chapter-redesign.dark mark.hl {
-  background: #3d3000;
-  color: #fef9c3;
+body.bb-chapter-redesign #top {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 90;
+  width: 44px !important;
+  height: 44px !important;
+  padding: 0 !important;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff !important;
+  background: var(--bb-action) !important;
+  border: 1px solid var(--bb-action) !important;
+  border-radius: 50% !important;
+  box-shadow: none !important;
 }
 
-body.bb-chapter-redesign .lab-brand-mark .brand-star {
-  display: block !important;
-}
-
-body.bb-chapter-redesign .lab-brand-mark .brand-menu {
+body.bb-chapter-redesign #dm-btn,
+body.bb-chapter-redesign #hl-btn,
+body.bb-chapter-redesign #hl-badge,
+body.bb-chapter-redesign #settings-fab,
+body.bb-chapter-redesign #settings-panel {
   display: none !important;
 }
 
+/* -------------------------------------------------------------------------- */
+/* Dark mode                                                                  */
+/* -------------------------------------------------------------------------- */
+
+body.dark.bb-chapter-redesign {
+  --bb-canvas: #08111f;
+  --bb-surface: #101b2d;
+  --bb-surface-subtle: #152238;
+  --bb-surface-muted: #1b2a42;
+  --bb-ink: #f8fafc;
+  --bb-text: #d6deea;
+  --bb-muted: #aab6c7;
+  --bb-line: #2a3a51;
+  --bb-line-strong: #3a4b64;
+  --bb-accent-soft: color-mix(in srgb, var(--bb-accent) 18%, #101b2d);
+  --bb-accent-line: color-mix(in srgb, var(--bb-accent) 46%, #2a3a51);
+  --bb-highlight: #facc15;
+  background: var(--bb-canvas) !important;
+  color: var(--bb-text) !important;
+}
+
+body.dark.bb-chapter-redesign .fig img,
+body.dark.bb-chapter-redesign .figure img,
+body.dark.bb-chapter-redesign .img-txt img {
+  background: #ffffff !important;
+  border-color: #526178 !important;
+}
+
+body.dark.bb-chapter-redesign .lab-topbar-back-icon {
+  background: color-mix(in srgb, white 16%, transparent) !important;
+}
+
+body.dark.bb-chapter-redesign .search-found-current {
+  color: #111827 !important;
+}
+
+body.dark.bb-chapter-redesign .bb-highlighter-color.is-selected {
+  outline-color: var(--bb-ink);
+}
+
+@media (max-width: 900px) {
+  body.bb-chapter-redesign .bb-highlighter-colors {
+    grid-template-columns: repeat(3, 44px);
+    gap: 10px 12px;
+  }
+
+  body.bb-chapter-redesign .bb-highlighter-color {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.bb-chapter-redesign .bb-highlighter-color {
+    transition: none;
+  }
+
+  body.bb-chapter-redesign .bb-highlighter-color:hover {
+    transform: none;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Responsive layout                                                          */
+/* -------------------------------------------------------------------------- */
+
+@media (min-width: 1241px) {
+  /* Newer normalisation leaves the authored quick navigation in place. It is
+     the desktop context row whenever no generated context block is present. */
+  body.bb-chapter-redesign .lab-topbar-inner:not(:has(> .bb-topbar-context)) > .lab-nav,
+  body.bb-chapter-redesign.bb-compact-topbar .lab-topbar-inner:not(:has(> .bb-topbar-context)) > .lab-nav {
+    position: static !important;
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    justify-self: stretch !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    height: 44px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: stretch !important;
+    gap: 20px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    scrollbar-width: none;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-inner:not(:has(> .bb-topbar-context)) > .lab-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-inner:not(:has(> .bb-topbar-context)) > .lab-nav a {
+    position: relative !important;
+    min-width: max-content;
+    height: 44px !important;
+    padding: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    color: var(--bb-muted) !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    font-family: var(--font-display, "Figtree", system-ui, sans-serif);
+    font-size: 0.78rem !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    text-decoration: none !important;
+    white-space: nowrap;
+    transform: none !important;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-inner:not(:has(> .bb-topbar-context)) > .lab-nav a:hover,
+  body.bb-chapter-redesign .lab-topbar-inner:not(:has(> .bb-topbar-context)) > .lab-nav a.active,
+  body.bb-chapter-redesign .lab-topbar-inner:not(:has(> .bb-topbar-context)) > .lab-nav a[aria-current="page"] {
+    color: var(--bb-accent) !important;
+    background: transparent !important;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-inner:not(:has(> .bb-topbar-context)) > .lab-nav a.active::after,
+  body.bb-chapter-redesign .lab-topbar-inner:not(:has(> .bb-topbar-context)) > .lab-nav a[aria-current="page"]::after {
+    content: "" !important;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: var(--bb-accent) !important;
+    border: 0 !important;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1240px) {
+  body.bb-chapter-redesign {
+    --bb-sidebar-w: 244px;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-inner,
+  body.bb-chapter-redesign.bb-compact-topbar .lab-topbar-inner,
+  body.bb-chapter-redesign.bb-no-lesson-search .lab-topbar-inner,
+  body.bb-chapter-redesign .ch-layout {
+    gap: 24px !important;
+  }
+
+  body.bb-chapter-redesign .bb-topbar-context-section {
+    display: none;
+  }
+
+  body.bb-chapter-redesign .lesson-search {
+    width: 44px !important;
+  }
+
+  body.bb-chapter-redesign .lesson-search-trigger {
+    justify-content: center;
+    padding: 0 !important;
+  }
+
+  body.bb-chapter-redesign .lesson-search-trigger::after {
+    content: none;
+  }
+}
+
 @media (max-width: 1024px) {
+  body.bb-chapter-redesign {
+    --bb-topbar-h: 58px;
+  }
+
+  body.bb-chapter-redesign .lab-topbar {
+    position: sticky !important;
+    top: 0 !important;
+    height: var(--bb-topbar-h) !important;
+    min-height: var(--bb-topbar-h) !important;
+    padding: 0 !important;
+    background: var(--bb-surface) !important;
+    border-bottom: 1px solid var(--bb-line) !important;
+    box-shadow: none !important;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-inner,
+  body.bb-chapter-redesign.bb-compact-topbar .lab-topbar-inner,
+  body.bb-chapter-redesign.bb-no-lesson-search .lab-topbar-inner {
+    width: 100% !important;
+    max-width: none !important;
+    height: var(--bb-topbar-h) !important;
+    min-height: var(--bb-topbar-h) !important;
+    padding: 0 10px !important;
+    display: grid !important;
+    grid-template-columns: auto minmax(0, 1fr) auto !important;
+    grid-template-rows: 1fr !important;
+    align-items: center !important;
+    gap: 8px !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  body.bb-chapter-redesign .lab-brand {
+    grid-column: 2 !important;
+    min-width: 0 !important;
+    cursor: pointer;
+  }
+
+  body.bb-chapter-redesign .lab-menu-trigger {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    width: 44px !important;
+    min-width: 44px !important;
+    height: 44px !important;
+    padding: 0 !important;
+    display: inline-grid !important;
+    place-items: center;
+    color: #ffffff !important;
+    background: var(--bb-action) !important;
+    border: 1px solid var(--bb-action) !important;
+    border-radius: 10px !important;
+    box-shadow: none !important;
+    cursor: pointer;
+  }
+
+  body.bb-chapter-redesign .lab-menu-trigger:hover {
+    background: var(--bb-action-hover) !important;
+    border-color: var(--bb-action-hover) !important;
+  }
+
+  body.bb-chapter-redesign .lab-brand-mark {
+    width: 30px !important;
+    min-width: 30px !important;
+    height: 30px !important;
+    color: var(--bb-ink) !important;
+    background: transparent !important;
+    border-radius: 8px !important;
+  }
+
+  body.bb-chapter-redesign .lab-brand-mark .brand-logo-mark {
+    width: 30px !important;
+    height: 30px !important;
+    display: block !important;
+  }
+
+  body.bb-chapter-redesign .lab-brand-mark .brand-menu,
   body.bb-chapter-redesign .lab-brand-mark .brand-star {
     display: none !important;
   }
 
-  body.bb-chapter-redesign .lab-brand-mark .brand-menu {
-    display: block !important;
+  body.bb-chapter-redesign .lab-brand-name {
+    font-size: 0.94rem !important;
   }
 
-  body.bb-chapter-redesign .lesson-search {
-    grid-column: 2 !important;
+  body.bb-chapter-redesign .bb-topbar-context,
+  body.bb-chapter-redesign .lab-nav,
+  body.bb-chapter-redesign .lab-topbar-mobile-actions {
+    display: none !important;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-actions {
+    grid-column: 3 !important;
+    grid-row: 1 !important;
+    gap: 6px !important;
+  }
+
+  body.bb-chapter-redesign .lesson-search,
+  body.bb-chapter-redesign .lesson-search:not(.open) {
     position: static !important;
-    top: auto !important;
-    left: auto !important;
-    right: auto !important;
-    transform: none !important;
-    justify-self: end !important;
-    margin-left: 0 !important;
-  }
-
-  body.bb-chapter-redesign .lab-brand {
-    position: static !important;
-    transform: none !important;
-  }
-
-  body.bb-chapter-redesign .lab-topbar-back {
-    position: static !important;
-    transform: none !important;
-  }
-
-  body.bb-chapter-redesign .lesson-search.open {
-    position: fixed !important;
-    top: 70px !important;
-    left: 12px !important;
-    right: 12px !important;
-    z-index: 220 !important;
-    width: auto !important;
-    margin-left: 0 !important;
-  }
-
-  body.bb-chapter-redesign .lesson-search.open .lesson-search-trigger {
-    display: inline-flex !important;
-  }
-
-  body.bb-chapter-redesign .lesson-search.open .lesson-search-panel {
-    width: 100% !important;
-    max-width: none !important;
-    min-width: 0 !important;
-  }
-}
-
-/* Shared lesson topbar refinements: compact back action + in-field search navigation. */
-body.bb-chapter-redesign .lab-topbar-back {
-  min-height: 40px !important;
-  padding: 0.5rem 0.82rem !important;
-  border: 1px solid rgba(148, 163, 184, 0.2) !important;
-  border-radius: 999px !important;
-  background: linear-gradient(180deg, rgba(248, 250, 252, 0.92), rgba(241, 245, 249, 0.86)) !important;
-  color: #64748b !important;
-  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06) !important;
-  font-size: 0.86rem !important;
-  font-weight: 850 !important;
-  gap: 0.46rem !important;
-}
-
-body.bb-chapter-redesign .lab-topbar-back-icon {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 1.45rem !important;
-  height: 1.45rem !important;
-  border-radius: 999px !important;
-  background: rgba(148, 163, 184, 0.14) !important;
-  color: inherit !important;
-  font-size: 1.08rem !important;
-  font-weight: 900 !important;
-  line-height: 1 !important;
-}
-
-body.bb-chapter-redesign .lab-topbar-back-label {
-  display: inline-block !important;
-}
-
-body.bb-chapter-redesign .lab-topbar-back:hover {
-  border-color: color-mix(in srgb, var(--chapter-accent) 20%, rgba(148, 163, 184, 0.22)) !important;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), var(--chapter-accent-light)) !important;
-  color: var(--chapter-accent-dark) !important;
-  transform: translateY(calc(-50% - 1px)) !important;
-}
-
-body.bb-dark.bb-chapter-redesign .lab-topbar-back,
-body.dark.bb-chapter-redesign .lab-topbar-back {
-  border-color: rgba(148, 163, 184, 0.16) !important;
-  background: linear-gradient(180deg, rgba(30, 41, 59, 0.88), rgba(15, 23, 42, 0.9)) !important;
-  color: #cbd5e1 !important;
-  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2) !important;
-}
-
-body.bb-dark.bb-chapter-redesign .lab-topbar-back:hover,
-body.dark.bb-chapter-redesign .lab-topbar-back:hover {
-  background: linear-gradient(180deg, rgba(30, 41, 59, 0.96), rgba(14, 116, 144, 0.18)) !important;
-  color: #e2e8f0 !important;
-}
-
-@media (min-width: 1025px) {
-  body.bb-chapter-redesign .lesson-search {
-    right: clamp(154px, 13vw, 178px) !important;
-    width: 42px !important;
-    min-width: 42px !important;
-    height: 42px !important;
-  }
-
-  body.bb-chapter-redesign .lesson-search.open {
-    width: min(430px, 34vw) !important;
+    width: 44px !important;
+    min-width: 44px !important;
+    height: 44px !important;
   }
 
   body.bb-chapter-redesign .lesson-search-trigger {
+    width: 44px !important;
+    min-width: 44px !important;
+    height: 44px !important;
+    padding: 0 !important;
+    justify-content: center;
+    background: var(--bb-surface-subtle) !important;
+  }
+
+  body.bb-chapter-redesign .lesson-search-trigger::after {
+    content: none;
+  }
+
+  body.bb-chapter-redesign .lesson-search.open {
+    position: fixed !important;
+    top: calc(var(--bb-topbar-h) + 8px) !important;
+    right: 8px !important;
+    left: 8px !important;
+    z-index: var(--bb-z-search) !important;
+    width: auto !important;
+    max-width: none !important;
+    height: auto !important;
+    padding: 7px !important;
+    background: var(--bb-surface) !important;
+    border: 1px solid var(--bb-line-strong) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 18px 44px rgba(15, 23, 42, 0.2) !important;
+  }
+
+  body.bb-chapter-redesign .lesson-search.open .lesson-search-panel,
+  body.bb-chapter-redesign .lesson-search.open .lesson-search-box {
+    width: 100% !important;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-back {
+    width: 44px !important;
+    min-width: 44px !important;
+    height: 44px !important;
+    min-height: 44px !important;
+    padding: 0 !important;
+    border-radius: 10px !important;
+    gap: 0 !important;
+    font-size: 0 !important;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-back:not(:has(.lab-topbar-back-icon))::before {
+    content: "←";
+    display: block;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-back-label {
+    display: none !important;
+  }
+
+  body.bb-chapter-redesign .lab-topbar-back-icon {
     width: 42px !important;
     min-width: 42px !important;
     height: 42px !important;
-  }
-}
-
-body.bb-chapter-redesign .lesson-search.open .lesson-search-panel {
-  min-width: 0 !important;
-}
-
-body.bb-chapter-redesign .lesson-search.open .lesson-search-box {
-  display: flex !important;
-  align-items: center !important;
-  gap: 0.42rem !important;
-  width: 100% !important;
-  min-width: 0 !important;
-  padding-right: 0.42rem !important;
-}
-
-body.bb-chapter-redesign .lesson-search.open .lesson-search-box input {
-  flex: 1 1 auto !important;
-  min-width: 0 !important;
-}
-
-body.bb-chapter-redesign .lesson-search .lesson-search-count,
-body.bb-chapter-redesign .lesson-search .lesson-search-nav,
-body.bb-chapter-redesign .lesson-search .lesson-search-close {
-  display: none !important;
-}
-
-body.bb-chapter-redesign .lesson-search.open.has-query .lesson-search-count {
-  display: inline-flex !important;
-  flex: 0 0 auto !important;
-  align-items: center !important;
-  justify-content: center !important;
-  min-width: 42px !important;
-  color: #64748b !important;
-  font-size: 0.72rem !important;
-  font-weight: 850 !important;
-  white-space: nowrap !important;
-}
-
-body.bb-chapter-redesign .lesson-search.open.has-results .lesson-search-nav {
-  display: inline-flex !important;
-  flex: 0 0 auto !important;
-  align-items: center !important;
-  gap: 0.22rem !important;
-}
-
-body.bb-chapter-redesign .lesson-search.open.has-query .lesson-search-close {
-  display: inline-flex !important;
-  flex: 0 0 auto !important;
-}
-
-body.bb-chapter-redesign .lesson-search-btn,
-body.bb-chapter-redesign .lesson-search-close {
-  width: 28px !important;
-  height: 28px !important;
-  min-width: 28px !important;
-  border-radius: 999px !important;
-  border: 1px solid rgba(148, 163, 184, 0.2) !important;
-  background: rgba(248, 250, 252, 0.9) !important;
-  color: #64748b !important;
-  box-shadow: none !important;
-  font-size: 0.86rem !important;
-}
-
-body.bb-chapter-redesign .lesson-search-btn:hover,
-body.bb-chapter-redesign .lesson-search-close:hover {
-  border-color: color-mix(in srgb, var(--chapter-accent) 22%, rgba(148, 163, 184, 0.22)) !important;
-  background: var(--chapter-accent-light) !important;
-  color: var(--chapter-accent-dark) !important;
-}
-
-body.bb-chapter-redesign .lesson-search-btn:disabled {
-  opacity: 0.4 !important;
-  cursor: default !important;
-}
-
-body.bb-dark.bb-chapter-redesign .lesson-search.open .lesson-search-box input,
-body.dark.bb-chapter-redesign .lesson-search.open .lesson-search-box input {
-  color: #0f172a !important;
-}
-
-body.bb-dark.bb-chapter-redesign .lesson-search.open.has-query .lesson-search-count,
-body.dark.bb-chapter-redesign .lesson-search.open.has-query .lesson-search-count {
-  color: #475569 !important;
-}
-
-body.bb-dark.bb-chapter-redesign .lesson-search-btn,
-body.bb-dark.bb-chapter-redesign .lesson-search-close,
-body.dark.bb-chapter-redesign .lesson-search-btn,
-body.dark.bb-chapter-redesign .lesson-search-close {
-  border-color: rgba(148, 163, 184, 0.22) !important;
-  background: rgba(248, 250, 252, 0.92) !important;
-  color: #64748b !important;
-}
-
-@media (max-width: 1024px) {
-  body.bb-chapter-redesign .lab-topbar-inner {
-    grid-template-columns: minmax(0, 1fr) auto auto !important;
-    grid-template-rows: auto !important;
-    align-items: center !important;
-    min-height: 56px !important;
-    padding: 8px 10px !important;
+    background: transparent !important;
   }
 
-  body.bb-chapter-redesign .lab-brand {
-    grid-column: 1 !important;
-    grid-row: 1 !important;
-    min-width: 0 !important;
-  }
-
-  body.bb-chapter-redesign .lab-topbar-mobile-actions {
-    grid-column: 3 !important;
-    grid-row: 1 !important;
-    justify-self: end !important;
-  }
-
-  body.bb-chapter-redesign .lesson-search:not(.open) {
-    grid-column: 2 !important;
-    grid-row: 1 !important;
-    justify-self: end !important;
-    position: static !important;
-    top: auto !important;
-    left: auto !important;
-    right: auto !important;
-    transform: none !important;
-    width: 38px !important;
-    min-width: 38px !important;
-    height: 38px !important;
-    margin: 0 0.32rem 0 0 !important;
-  }
-
-  body.bb-chapter-redesign .lesson-search:not(.open) .lesson-search-trigger {
-    width: 38px !important;
-    min-width: 38px !important;
-    height: 38px !important;
-  }
-
-  body.bb-chapter-redesign .lab-topbar-back:hover {
-    transform: translateY(-1px) !important;
-  }
-
-  body.bb-chapter-redesign .lesson-search.open .lesson-search-box {
-    height: 46px !important;
-  }
-}
-
-@media (max-width: 560px) {
-  body.bb-chapter-redesign .lesson-search.open .lesson-search-box {
-    gap: 0.24rem !important;
-    padding-right: 0.25rem !important;
-  }
-
-  body.bb-chapter-redesign .lesson-search.open.has-query .lesson-search-count {
-    min-width: 34px !important;
-    font-size: 0.66rem !important;
-  }
-
-  body.bb-chapter-redesign .lesson-search-btn,
-  body.bb-chapter-redesign .lesson-search-close {
-    width: 26px !important;
-    height: 26px !important;
-    min-width: 26px !important;
-  }
-}
-
-/* Final topbar layout: keep search and back controls in one action lane. */
-body.bb-chapter-redesign .lab-topbar-inner {
-  grid-template-columns: minmax(180px, 1fr) auto minmax(300px, 1fr) !important;
-  align-items: center !important;
-  gap: 1rem !important;
-}
-
-body.bb-chapter-redesign .lab-nav {
-  grid-column: 2 !important;
-  justify-self: center !important;
-}
-
-body.bb-chapter-redesign .lab-topbar-actions {
-  grid-column: 3 !important;
-  grid-row: 1 !important;
-  justify-self: end !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: flex-end !important;
-  gap: 0.62rem !important;
-  min-width: 0 !important;
-  max-width: 100% !important;
-  position: relative !important;
-  z-index: 3 !important;
-}
-
-body.bb-chapter-redesign .lab-topbar-actions .lesson-search {
-  position: relative !important;
-  top: auto !important;
-  right: auto !important;
-  left: auto !important;
-  transform: none !important;
-  grid-column: auto !important;
-  flex: 0 0 auto !important;
-  width: 42px !important;
-  min-width: 42px !important;
-  height: 42px !important;
-  margin: 0 !important;
-  z-index: 4 !important;
-}
-
-body.bb-chapter-redesign .lab-topbar-actions .lesson-search.open {
-  width: min(440px, calc(100vw - 360px)) !important;
-}
-
-body.bb-chapter-redesign .lab-topbar-actions .lesson-search.open + .lab-topbar-back {
-  display: none !important;
-}
-
-body.bb-chapter-redesign .lab-topbar-actions .lab-topbar-back {
-  position: static !important;
-  top: auto !important;
-  right: auto !important;
-  left: auto !important;
-  transform: none !important;
-  flex: 0 0 auto !important;
-  min-height: 40px !important;
-  white-space: nowrap !important;
-  z-index: 3 !important;
-}
-
-body.bb-chapter-redesign .lab-topbar-actions .lab-topbar-back:hover {
-  transform: translateY(-1px) !important;
-}
-
-body.bb-chapter-redesign .lab-topbar-actions .lesson-search-trigger {
-  width: 42px !important;
-  min-width: 42px !important;
-  height: 42px !important;
-}
-
-@media (max-width: 1180px) {
-  body.bb-chapter-redesign .lab-topbar-inner {
-    grid-template-columns: minmax(150px, 1fr) auto minmax(230px, 1fr) !important;
-    gap: 0.7rem !important;
-  }
-
-  body.bb-chapter-redesign .lab-topbar-actions .lab-topbar-back-label {
-    max-width: 9.5rem !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-  }
-}
-
-@media (max-width: 1024px) {
-  body.bb-chapter-redesign .lab-topbar-inner {
-    grid-template-columns: minmax(0, 1fr) auto auto !important;
-    gap: 0.42rem !important;
-  }
-
-  body.bb-chapter-redesign .lab-topbar-actions {
-    grid-column: 2 !important;
-    justify-self: end !important;
-    gap: 0 !important;
-  }
-
-  body.bb-chapter-redesign .lab-topbar-actions .lab-topbar-back {
-    display: none !important;
-  }
-
-  body.bb-chapter-redesign .lab-topbar-actions .lesson-search:not(.open) {
-    width: 38px !important;
-    min-width: 38px !important;
-    height: 38px !important;
+  body.bb-chapter-redesign .ch-layout {
+    width: 100% !important;
+    max-width: none !important;
     margin: 0 !important;
+    padding: 16px 0 56px !important;
+    display: block !important;
   }
 
-  body.bb-chapter-redesign .lab-topbar-actions .lesson-search:not(.open) .lesson-search-trigger {
-    width: 38px !important;
-    min-width: 38px !important;
-    height: 38px !important;
+  body.bb-chapter-redesign main {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 14px 4rem !important;
   }
 
-  body.bb-chapter-redesign .lab-topbar-actions .lesson-search.open {
+  body.bb-chapter-redesign #sidenav {
     position: fixed !important;
-    top: 70px !important;
-    left: 12px !important;
-    right: 12px !important;
-    width: auto !important;
-    z-index: 220 !important;
+    top: var(--bb-topbar-h) !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    z-index: var(--bb-z-drawer) !important;
+    width: min(320px, 86vw) !important;
+    height: calc(100dvh - var(--bb-topbar-h)) !important;
+    max-height: none !important;
+    padding: 8px 0 14px !important;
+    display: flex !important;
+    background: var(--bb-surface) !important;
+    border: 0 !important;
+    border-right: 1px solid var(--bb-line) !important;
+    border-radius: 0 !important;
+    box-shadow: 16px 0 36px rgba(15, 23, 42, 0.18) !important;
+    transform: translateX(-105%) !important;
+    transition: transform 200ms ease;
+  }
+
+  body.bb-chapter-redesign #sidenav.open {
+    transform: translateX(0) !important;
+  }
+
+  body.bb-chapter-redesign #nav-overlay {
+    position: fixed !important;
+    inset: var(--bb-topbar-h) 0 0 !important;
+    z-index: var(--bb-z-overlay) !important;
+    display: none !important;
+    background: rgba(8, 17, 31, 0.52) !important;
+    border: 0 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  body.bb-chapter-redesign #nav-overlay.open {
+    display: block !important;
+  }
+
+  body.bb-chapter-redesign .hero,
+  body.bb-chapter-redesign .chapter-home .hero,
+  body.bb-chapter-redesign .page-section:not(.chapter-home) .hero {
+    margin: 0 0 16px !important;
+    padding: 24px !important;
+    border-radius: var(--bb-radius-md) !important;
+  }
+
+  body.bb-chapter-redesign .chapter-home .hero h1,
+  body.bb-chapter-redesign .chapter-home .bb-lab-title {
+    max-width: 20ch !important;
+    font-size: 2.25rem !important;
+    line-height: 1.08 !important;
+  }
+
+  body.bb-chapter-redesign .page-section:not(.chapter-home) .hero h1 {
+    font-size: 1.75rem !important;
   }
 }
 
-/* ===========================================================
-   Mobile/tablet responsive refinements
-   - Stack horizontal flow chains vertically with down arrows
-   - Wrap long pill text instead of overflowing
-   - Tighten spacing on small viewports
-   =========================================================== */
+@media (max-width: 700px) {
+  body.bb-chapter-redesign .lab-brand-name {
+    max-width: 9rem;
+  }
 
-body.bb-chapter-redesign .fb {
-  white-space: normal !important;
-  word-break: break-word !important;
-  overflow-wrap: anywhere !important;
-  text-align: center !important;
-  max-width: 100% !important;
-}
+  body.bb-chapter-redesign .card,
+  body.bb-chapter-redesign .summary,
+  body.bb-chapter-redesign .chapter-flow,
+  body.bb-chapter-redesign .chapter-map,
+  body.bb-chapter-redesign .chapter-map.card {
+    padding: 20px !important;
+    border-radius: var(--bb-radius-md) !important;
+  }
 
-@media (max-width: 600px) {
+  body.bb-chapter-redesign h2.section,
+  body.bb-chapter-redesign .sec-head h2 {
+    font-size: 1.45rem !important;
+  }
+
+  body.bb-chapter-redesign .g2,
+  body.bb-chapter-redesign .g3,
+  body.bb-chapter-redesign .compare,
+  body.bb-chapter-redesign .term-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  body.bb-chapter-redesign .img-txt {
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+
+  body.bb-chapter-redesign .img-txt img {
+    width: 100% !important;
+    max-width: 520px !important;
+    margin: 0 auto;
+  }
+
+  body.bb-chapter-redesign .page-nav {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  body.bb-chapter-redesign .page-nav a {
+    width: 100%;
+  }
+
   body.bb-chapter-redesign .flow {
     flex-direction: column !important;
     align-items: stretch !important;
-    gap: 0.4rem !important;
   }
 
-  body.bb-chapter-redesign .flow .fb {
-    width: 100% !important;
-    text-align: center !important;
+  body.bb-chapter-redesign .flow .fb,
+  body.bb-chapter-redesign .flow span {
+    width: 100%;
   }
 
-  body.bb-chapter-redesign .flow .fa {
-    display: block !important;
-    text-align: center !important;
-    transform: rotate(90deg) !important;
-    line-height: 1 !important;
-    margin: 0 auto !important;
-    color: #94a3b8 !important;
-  }
-}
-
-/* Prevent any stray horizontal scroll on small screens. */
-@media (max-width: 600px) {
-  html, body {
-    overflow-x: hidden !important;
+  body.bb-chapter-redesign .flow .fa,
+  body.bb-chapter-redesign .flow > b {
+    align-self: center;
+    transform: rotate(90deg);
   }
 
-  body.bb-chapter-redesign img,
-  body.bb-chapter-redesign svg,
-  body.bb-chapter-redesign video {
-    max-width: 100% !important;
-    height: auto !important;
+  body.bb-chapter-redesign .fc-controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  body.bb-chapter-redesign .fc-btn-play,
+  body.bb-chapter-redesign .fc-btn-reset {
+    width: 100%;
+  }
+
+  body.bb-chapter-redesign .table-wrap {
+    border-radius: 10px !important;
   }
 
   body.bb-chapter-redesign table {
-    display: block !important;
-    overflow-x: auto !important;
-    -webkit-overflow-scrolling: touch !important;
+    min-width: 680px !important;
   }
 }
 
-/* Tablet refinements: keep pill text readable, prevent topbar squeeze. */
-@media (min-width: 601px) and (max-width: 1024px) {
-  body.bb-chapter-redesign .flow {
-    gap: 0.5rem !important;
-  }
-
-  body.bb-chapter-redesign .fb {
-    font-size: 0.85rem !important;
-  }
-}
-
-/* Mobile pagination buttons: allow label to shrink/wrap so they don't overflow. */
-@media (max-width: 480px) {
-  body.bb-chapter-redesign .pagination-controls .gbtn {
-    padding-left: 0.6rem !important;
-    padding-right: 0.6rem !important;
-    font-size: 0.86rem !important;
-    white-space: normal !important;
-    line-height: 1.2 !important;
-  }
-}
-
-/* ===========================================================
-   Mobile topbar polish (≤1024px)
-   - Topbar scrolls with the page (NOT sticky) so it doesn't
-     waste real estate.
-   - Only the search bar floats / sticks when open.
-   - All action icons share one circular outline style + size
-     for a clean, consistent look.
-   =========================================================== */
-@media (max-width: 1024px) {
-  body.bb-chapter-redesign .lab-topbar {
-    position: relative !important;
-    top: 0 !important;
-    padding: 14px 12px 6px !important;
-    background: transparent !important;
-    border-bottom: 0 !important;
-    box-shadow: none !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-    filter: none !important;
-    transform: none !important;
-    will-change: auto !important;
-    contain: none !important;
-  }
-
-  body.bb-chapter-redesign .lab-topbar::after {
-    display: none !important;
-  }
-
-  body.bb-chapter-redesign .lab-topbar-inner {
-    background: rgba(255, 255, 255, 0.96) !important;
-    border: 1px solid rgba(15, 23, 42, 0.08) !important;
-    border-radius: 999px !important;
-    padding: 6px 10px 6px 8px !important;
-    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.06) !important;
-    gap: 8px !important;
-    min-height: 52px !important;
-  }
-
-  /* Brand: keep a tidy logo-mark + name row. Mark is the same circular
-     outline footprint as the action buttons. */
+@media (max-width: 430px) {
   body.bb-chapter-redesign .lab-brand {
-    display: flex !important;
-    align-items: center !important;
-    gap: 10px !important;
-    min-width: 0 !important;
-  }
-
-  body.bb-chapter-redesign .lab-brand-mark {
-    width: 40px !important;
-    height: 40px !important;
-    min-width: 40px !important;
-    border-radius: 999px !important;
-    background: #0f172a !important;
-    color: #fff !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    flex: 0 0 auto !important;
-    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.16) !important;
+    gap: 7px !important;
   }
 
   body.bb-chapter-redesign .lab-brand-name {
-    font-size: 0.96rem !important;
-    font-weight: 900 !important;
-    letter-spacing: -0.01em !important;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
+    max-width: 7.2rem;
+    font-size: 0.9rem !important;
   }
 
-  /* All action icons: same circular outline pill, same size. */
-  body.bb-chapter-redesign .lab-topbar-mobile-actions,
-  body.bb-chapter-redesign .lab-topbar-actions {
-    display: flex !important;
-    align-items: center !important;
-    gap: 6px !important;
-    flex-wrap: nowrap !important;
+  body.bb-chapter-redesign .hero,
+  body.bb-chapter-redesign .chapter-home .hero,
+  body.bb-chapter-redesign .page-section:not(.chapter-home) .hero {
+    padding: 20px !important;
   }
 
-  body.bb-chapter-redesign .lab-topbar-mobile-btn,
-  body.bb-chapter-redesign .lab-topbar-actions .lesson-search:not(.open),
-  body.bb-chapter-redesign .lab-topbar-actions .lesson-search:not(.open) .lesson-search-trigger,
-  body.bb-chapter-redesign .lesson-search:not(.open) .lesson-search-trigger {
-    width: 40px !important;
-    min-width: 40px !important;
-    height: 40px !important;
-    border-radius: 999px !important;
-    border: 1px solid rgba(15, 23, 42, 0.1) !important;
-    background: #fff !important;
-    color: #334155 !important;
-    box-shadow: 0 6px 14px rgba(15, 23, 42, 0.05) !important;
-    font-size: 1rem !important;
-    line-height: 1 !important;
-    padding: 0 !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
+  body.bb-chapter-redesign .chapter-home .hero h1,
+  body.bb-chapter-redesign .chapter-home .bb-lab-title {
+    font-size: 2rem !important;
   }
 
-  body.bb-chapter-redesign .lab-topbar-mobile-btn:active {
-    transform: scale(0.96) !important;
+  body.bb-chapter-redesign .card,
+  body.bb-chapter-redesign .summary,
+  body.bb-chapter-redesign .chapter-flow,
+  body.bb-chapter-redesign .chapter-map,
+  body.bb-chapter-redesign .chapter-map.card {
+    padding: 18px !important;
   }
 
-  /* Search closed: behave like the other action icons. */
-  body.bb-chapter-redesign .lab-topbar-actions .lesson-search:not(.open) {
-    position: static !important;
-    flex: 0 0 auto !important;
-    margin: 0 !important;
-    overflow: visible !important;
+  body.bb-chapter-redesign .chapter-map .map-card {
+    padding-right: 8px !important;
+    padding-left: 54px !important;
   }
 
-  body.bb-chapter-redesign .lesson-search:not(.open) .lesson-search-trigger {
-    border: 0 !important;
-    background: transparent !important;
-    box-shadow: none !important;
+  body.bb-chapter-redesign .chapter-map .map-card::before {
+    left: 8px !important;
   }
 
-  /* Search open: float as its own pill at the top of the screen.
-     The rest of the topbar can scroll freely behind it. */
-  body.bb-chapter-redesign .lab-topbar-actions .lesson-search.open,
-  body.bb-chapter-redesign .lab-topbar .lesson-search.open,
-  body.bb-chapter-redesign header .lesson-search.open,
-  body.bb-chapter-redesign .lesson-search.open {
-    position: fixed !important;
-    top: 12px !important;
-    left: 12px !important;
-    right: 12px !important;
-    width: calc(100vw - 24px) !important;
-    max-width: calc(100vw - 24px) !important;
-    height: auto !important;
-    min-width: 0 !important;
-    z-index: 260 !important;
-    background: #fff !important;
-    border: 1px solid rgba(15, 23, 42, 0.1) !important;
-    border-radius: 999px !important;
-    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18) !important;
-    padding: 6px 8px !important;
-    margin: 0 !important;
+  body.bb-chapter-redesign .fc-controls {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.bb-chapter-redesign,
+  body.bb-chapter-redesign *,
+  body.bb-chapter-redesign *::before,
+  body.bb-chapter-redesign *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+  }
+}
+
+@media print {
+  body.bb-chapter-redesign {
+    background: #ffffff !important;
+    color: #111827 !important;
   }
 
-  body.bb-chapter-redesign .lesson-search.open .lesson-search-panel {
+  body.bb-chapter-redesign .lab-topbar,
+  body.bb-chapter-redesign #sidenav,
+  body.bb-chapter-redesign .page-nav,
+  body.bb-chapter-redesign #top,
+  body.bb-chapter-redesign #nav-overlay {
+    display: none !important;
+  }
+
+  body.bb-chapter-redesign .ch-layout,
+  body.bb-chapter-redesign main {
     width: 100% !important;
     max-width: none !important;
-    min-width: 0 !important;
-    opacity: 1 !important;
-    transform: none !important;
-    pointer-events: auto !important;
-    background: transparent !important;
-    border: 0 !important;
-    box-shadow: none !important;
+    margin: 0 !important;
     padding: 0 !important;
+    display: block !important;
   }
 
-  body.bb-chapter-redesign .lesson-search.open .lesson-search-trigger {
-    display: none !important;
-  }
-
-  body.bb-chapter-redesign .lesson-search.open .lesson-search-box {
-    display: flex !important;
-    flex: 1 1 auto !important;
-    min-width: 0 !important;
-    height: 40px !important;
-    border: 0 !important;
-    background: transparent !important;
-    padding-left: 12px !important;
-  }
-
-  body.bb-chapter-redesign .lesson-search.open .lesson-search-box input {
-    flex: 1 1 auto !important;
-    min-width: 0 !important;
-    font-size: 0.95rem !important;
-  }
-}
-
-/* Tighter spacing on phones below 480px so all 3+ icons fit comfortably. */
-@media (max-width: 480px) {
-  body.bb-chapter-redesign .lab-topbar {
-    padding: 10px 10px 4px !important;
-  }
-
-  body.bb-chapter-redesign .lab-topbar-inner {
-    padding: 5px 8px 5px 6px !important;
-    gap: 6px !important;
-  }
-
-  body.bb-chapter-redesign .lab-brand-name {
-    font-size: 0.92rem !important;
-  }
-
-  body.bb-chapter-redesign .lab-topbar-mobile-actions {
-    gap: 4px !important;
-  }
-
-  body.bb-chapter-redesign .lab-topbar-mobile-btn,
-  body.bb-chapter-redesign .lesson-search:not(.open) .lesson-search-trigger {
-    width: 38px !important;
-    min-width: 38px !important;
-    height: 38px !important;
-  }
-
-  body.bb-chapter-redesign .lab-brand-mark {
-    width: 38px !important;
-    height: 38px !important;
-    min-width: 38px !important;
+  body.bb-chapter-redesign .card,
+  body.bb-chapter-redesign .hero,
+  body.bb-chapter-redesign .summary,
+  body.bb-chapter-redesign .fig img,
+  body.bb-chapter-redesign table {
+    break-inside: avoid;
+    box-shadow: none !important;
   }
 }

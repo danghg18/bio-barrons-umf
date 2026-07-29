@@ -1,8 +1,8 @@
 /* ════════════════════════════════════════════════════════════════
-   Biologie Barrons — Lesson + Grile brand uplift overlay.
+   Biologie Barrons — lesson brand uplift overlay.
    Loads AFTER tokens.css and the page's inline styles.
-   Brings existing markup vocabulary (.hero, .box, .gbtn, .acc-*,
-   .opt) into precise alignment with the brand kit (kit-styles.css).
+   Brings existing lesson markup vocabulary (.hero, .box, .acc-*)
+   into precise alignment with the brand kit (kit-styles.css).
    ════════════════════════════════════════════════════════════════ */
 
 /* ── HERO — signature blue gradient banner (kit .site-header) ── */
@@ -143,99 +143,6 @@ body.dark .figure img { background: #fff; }
   text-align: center;
 }
 
-/* ── BUTTONS — kit .btn family applied to .gbtn ── */
-.gbtn {
-  font-family: var(--font-display);
-  font-weight: 800;
-  border-radius: var(--r-sm);
-  transition: all var(--dur-base);
-  line-height: 1;
-  display: inline-flex;
-  align-items: center;
-  gap: .4rem;
-}
-.gbtn-primary { background: var(--primary); color: #fff; border: none; }
-.gbtn-primary:hover { background: var(--primary-mid); transform: translateY(-1px); }
-.gbtn-secondary {
-  background: var(--bg-surface);
-  color: var(--primary);
-  border: 2px solid var(--primary);
-}
-.gbtn-secondary:hover { background: var(--primary-light); }
-.gbtn-danger { background: var(--danger); color: #fff; border: none; }
-.gbtn-danger:hover { filter: brightness(1.08); }
-
-/* ── QUIZ OPTIONS — kit .opt states (used on grile pages) ── */
-.opt,
-.q-opt {
-  display: flex;
-  align-items: flex-start;
-  gap: .75rem;
-  padding: .7rem .9rem;
-  border: 2px solid var(--border);
-  border-radius: var(--r-sm);
-  margin-bottom: .5rem;
-  cursor: pointer;
-  background: var(--bg-surface);
-  transition: all var(--dur-fast);
-}
-.opt:hover,
-.q-opt:hover { border-color: var(--primary); background: var(--primary-light); }
-.opt .l, .q-opt .letter {
-  width: 28px; height: 28px;
-  border-radius: 50%;
-  background: var(--slate-100);
-  border: 2px solid var(--border);
-  display: inline-flex;
-  align-items: center; justify-content: center;
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: .82rem;
-  color: var(--fg-3);
-  flex-shrink: 0;
-  transition: all var(--dur-fast);
-}
-.opt.sel,  .q-opt.sel,  .q-opt.selected { border-color: var(--primary); background: var(--primary-light); }
-.opt.sel .l, .q-opt.sel .letter, .q-opt.selected .letter { background: var(--primary); border-color: var(--primary); color: #fff; }
-.opt.ok,   .q-opt.correct { border-color: var(--emerald); background: var(--emerald-light); cursor: default; }
-.opt.ok .l, .q-opt.correct .letter { background: var(--emerald); border-color: var(--emerald); color: #fff; }
-.opt.no,   .q-opt.wrong   { border-color: var(--rose); background: var(--rose-light); cursor: default; }
-.opt.no .l, .q-opt.wrong .letter { background: var(--rose); border-color: var(--rose); color: #fff; }
-.opt.miss, .q-opt.missed  { border-color: var(--amber); background: var(--amber-light); cursor: default; }
-.opt.miss .l, .q-opt.missed .letter { background: var(--amber); border-color: var(--amber); color: #fff; }
-
-/* Answer state legend chips on grile */
-.badge-correct { background: var(--emerald-light); color: var(--emerald); }
-.badge-wrong   { background: var(--rose-light);    color: var(--rose); }
-.badge-partial { background: var(--amber-light);   color: var(--amber); }
-
-/* ── EXPLAIN PANEL ── */
-.explanation,
-.quiz-explain,
-.expl-body {
-  background: var(--primary-light);
-  border-left: 4px solid var(--primary);
-  padding: .95rem 1.2rem;
-  border-radius: 0 var(--r-sm) var(--r-sm) 0;
-  margin-top: 1rem;
-  font-family: var(--font-body);
-  font-size: .9rem;
-  line-height: 1.65;
-}
-.explanation strong,
-.quiz-explain strong,
-.expl-body strong { color: var(--primary-dark); font-family: var(--font-display); font-weight: 800; }
-
-/* ── PROGRESS BAR — kit gradient fill ── */
-.prog-bar-fill,
-.prog-fill,
-.progress-bar > .fill,
-.lab-prog-bar-fill {
-  background: var(--grad-progress) !important;
-  border-radius: var(--r-pill);
-  transition: width .5s var(--ease-default);
-}
-
 /* ── FLOATING ACTION BUTTON (Settings) ── */
 .fab,
 #dm-btn,
@@ -364,4 +271,3 @@ body.dark .box.purple  { background: rgba(124,58,237,.14); }
 body.dark .box.teal    { background: rgba(8,145,178,.14); }
 body.dark .box.red,
 body.dark .box.rose    { background: rgba(225,29,72,.14); }
-body.dark .opt, body.dark .q-opt { background: var(--bg-surface); border-color: var(--border); }

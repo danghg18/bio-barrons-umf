@@ -11,7 +11,8 @@
 <meta property="og:description" content="Lecții ilustrate despre sistemul reproducător masculin pentru admiterea la UMF Cluj.">
 <meta property="og:url" content="https://danghg18.github.io/bio-barrons-umf/sistemul_reproducator_masculin.html">
 <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#2563EB">
+<link rel="icon" type="image/png" href="icon-192.png">
+<meta name="theme-color" content="#0891B2">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Biologie">
@@ -38,7 +39,6 @@
   --slate-900:#0F172A;--slate-800:#1E293B;--slate-700:#334155;--slate-600:#475569;
   --slate-500:#64748B;--slate-400:#94A3B8;--slate-300:#CBD5E1;
   --slate-200:#E2E8F0;--slate-100:#F1F5F9;--slate-50:#F8FAFC;
-  --q-accent:#0891B2;--q-accent-light:#ECFEFF;
   /* Laborator tokens */
   --lab-bg:#F6F6F3;--lab-nav-bg:#ffffff;--lab-ink:#0F172A;
   --lab-border:rgba(15,23,42,0.07);--lab-card-bg:#ffffff;
@@ -51,7 +51,6 @@
   --font-body:'Noto Sans',system-ui,-apple-system,sans-serif;
   --grad-hero:linear-gradient(135deg,#1E3A8A 0%,#2563EB 55%,#0EA5E9 100%);
   --grad-nav:linear-gradient(160deg,#0B1730 0%,#0F2356 100%);
-  --grad-progress:linear-gradient(90deg,var(--emerald),#34D399);
   --shadow-sm:0 1px 3px rgba(0,0,0,.05),0 4px 12px rgba(0,0,0,.04);
   --shadow-md:0 1px 3px rgba(0,0,0,.05),0 6px 20px rgba(0,0,0,.06);
   --shadow-lg:0 1px 3px rgba(0,0,0,.05),0 8px 28px rgba(0,0,0,.07);
@@ -63,7 +62,7 @@
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Noto Sans',system-ui,sans-serif;background:var(--bg-page);color:var(--slate-700);line-height:1.7;}
-h1,h2,h3,h4,h5,h6,.btn,.gbtn,.badge,.page-nav a,.mm-node,.scenario-btn{font-family:'Figtree',system-ui,sans-serif;}
+h1,h2,h3,h4,h5,h6,.btn,.badge,.page-nav a,.mm-node,.scenario-btn{font-family:'Figtree',system-ui,sans-serif;}
 
 /* ── LAYOUT GRID ── */
 .ch-layout{display:grid;grid-template-columns:268px 1fr;gap:24px;max-width:none;margin:0;padding:20px 32px 60px 14px;align-items:start;}
@@ -180,27 +179,8 @@ main{margin-left:0;padding:0;min-width:0;}
   .card h2{font-size:1rem;}
   .card h3{font-size:.88rem;}
   .sec-head h2{font-size:1.05rem;}
-  .gtabs{padding-left:0;margin:0 -.9rem 1.2rem;display:flex;}
-  .gtab-btn{flex:1;padding:10px 6px;font-size:.8rem;text-align:center;}
-  .quiz-header{flex-direction:column;align-items:flex-start;padding:12px 14px;gap:6px;}
-  .quiz-header h2{font-size:.9rem;margin:0;}
-  .quiz-header .quiz-progress{font-size:.72rem;padding:4px 10px;}
-  .quiz-header .progress-bar-wrap{max-width:none;width:100%;}
-  .gtabs{overflow:hidden;}
-  .gtab-btn{flex:1;padding:10px 4px;font-size:.76rem;}
-  .pagination-controls{flex-wrap:wrap;gap:4px;padding:8px 0;}
-  .pagination-controls .gbtn{min-width:unset;flex:1;padding:7px 8px;font-size:.74rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-  .page-indicator{font-size:.74rem;padding:5px 8px;order:-1;width:100%;text-align:center;}
   .page-nav{gap:.4rem;}
   .page-nav a{padding:.38rem .75rem;font-size:.78rem;}
-  .sync-bar{flex-direction:column;gap:.4rem;padding:.6rem .8rem;}
-  .sync-bar span{font-size:.76rem;}
-  .sync-btn{width:100%;padding:.45rem;text-align:center;}
-  .question-card{padding:14px;margin-bottom:14px;}
-  .q-text{font-size:.9rem;}
-  .opt-text{font-size:.83rem;}
-  .gbtn{padding:8px 12px;font-size:.82rem;}
-  .q-actions{gap:6px;}
   table{font-size:.78rem;}
   th,td{padding:.4rem .6rem;}
   #top{right:.8rem;bottom:1.2rem;}
@@ -267,148 +247,6 @@ tr:nth-child(even) td{background:var(--lab-bg);}
 .page-nav a.outline{background:#fff;color:var(--lab-ink);border:2px solid var(--lab-ink);}
 .page-nav a.outline:hover{background:var(--slate-50);}
 
-/* ── GRILE ── */
-.gtabs{display:flex;gap:4px;background:var(--lab-card-bg);border-bottom:1px solid var(--lab-border);margin:0 0 1.5rem;padding-left:0;border-radius:12px 12px 0 0;overflow:hidden;}
-.gtab-btn{padding:14px 20px;border:none;background:none;cursor:pointer;font-size:.88rem;color:var(--slate-400);border-bottom:3px solid transparent;margin-bottom:-1px;transition:all .2s;font-weight:700;font-family:'Figtree',system-ui,sans-serif;}
-.gtab-btn.active{color:var(--q-accent);border-bottom-color:var(--q-accent);}
-.gtab-panel{display:none;}
-.gtab-panel.active{display:block;}
-.quiz-header{background:var(--lab-card-bg);border:1px solid var(--lab-border);border-radius:1rem;padding:20px 24px;margin-bottom:20px;display:flex;align-items:center;gap:16px;}
-.quiz-header h2{flex:1;font-size:1.15rem;color:var(--q-accent);font-weight:900;}
-.quiz-progress{font-size:.83rem;color:var(--slate-400);background:var(--slate-100);padding:6px 14px;border-radius:20px;font-weight:700;}
-.progress-bar-wrap{background:var(--slate-200);border-radius:4px;height:6px;flex:1;max-width:200px;}
-.progress-bar{background:var(--q-accent);height:100%;border-radius:4px;transition:width .3s;}
-.question-card{background:var(--lab-card-bg);border-radius:1rem;padding:24px;margin-bottom:20px;border:1px solid var(--lab-border);border-left:4px solid var(--lab-border);transition:border-color .3s;}
-.question-card.answered-correct{border-left-color:#059669;}
-.question-card.answered-wrong{border-left-color:#E11D48;}
-.question-card.answered-partial{border-left-color:#D97706;}
-.q-num{font-size:.73rem;font-weight:800;text-transform:uppercase;color:var(--q-accent);letter-spacing:1.5px;margin-bottom:6px;}
-.q-text{font-size:1rem;font-weight:700;margin-bottom:16px;color:var(--slate-800);}
-.options{display:flex;flex-direction:column;gap:8px;}
-.option{display:flex;align-items:flex-start;gap:12px;padding:10px 14px;border:2px solid var(--lab-border);border-radius:.65rem;cursor:pointer;transition:all .15s;user-select:none;}
-.option:hover:not(.disabled){border-color:var(--q-accent);background:var(--q-accent-light);}
-.option.selected{border-color:var(--q-accent);background:var(--q-accent-light);}
-.option.disabled{cursor:default;}
-.option.result-correct{border-color:#059669;background:#ECFDF5;}
-.option.result-wrong{border-color:#E11D48;background:#FFF1F2;}
-.option.result-missed{border-color:#D97706;background:#FFFBEB;}
-.opt-letter{width:28px;height:28px;border-radius:50%;background:var(--slate-100);border:2px solid var(--slate-200);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.83rem;flex-shrink:0;transition:all .15s;}
-.option.selected .opt-letter{background:var(--q-accent);border-color:var(--q-accent);color:#fff;}
-.option.result-correct .opt-letter{background:#059669;border-color:#059669;color:#fff;}
-.option.result-wrong .opt-letter{background:#E11D48;border-color:#E11D48;color:#fff;}
-.option.result-missed .opt-letter{background:#D97706;border-color:#D97706;color:#fff;}
-.opt-text{font-size:.88rem;padding-top:3px;line-height:1.5;}
-.opt-icon{margin-left:auto;flex-shrink:0;font-size:1.1rem;}
-.q-actions{margin-top:16px;display:flex;gap:10px;}
-.gbtn{padding:9px 20px;border-radius:.65rem;border:none;cursor:pointer;font-size:.88rem;font-weight:800;transition:all .2s;font-family:'Figtree',system-ui,sans-serif;}
-.gbtn-primary{background:var(--q-accent);color:#fff;}
-.gbtn-primary:hover{background:#06B6D4;}
-.gbtn-secondary{background:var(--slate-100);color:var(--slate-700);border:1px solid var(--slate-200);}
-.gbtn-secondary:hover{background:var(--slate-200);}
-.gbtn:disabled{opacity:.5;cursor:default;}
-.explanation{margin-top:16px;border-radius:.8rem;overflow:hidden;border:1px solid var(--lab-border);display:none;}
-.explanation.show{display:block;}
-.expl-header{background:var(--q-accent);color:#fff;padding:10px 16px;font-weight:800;font-size:.87rem;}
-.expl-body{padding:16px;background:#fff;}
-.expl-row{display:flex;align-items:flex-start;gap:4px;margin-bottom:8px;}
-.expl-correct .expl-letter{background:#059669;color:#fff;}
-.expl-wrong .expl-letter{background:#E11D48;color:#fff;}
-.expl-letter{display:inline-block;width:22px;height:22px;border-radius:50%;text-align:center;line-height:22px;font-size:.73rem;font-weight:800;margin-right:8px;flex-shrink:0;}
-.expl-text{font-size:.87rem;line-height:1.55;}
-.lesson-ref{margin-top:12px;padding:10px 14px;background:var(--q-accent-light);border-left:3px solid var(--q-accent);border-radius:0 .6rem .6rem 0;font-size:.82rem;}
-.lesson-ref strong{color:var(--q-accent);}
-.added-note{display:inline;color:#E11D48;font-style:italic;}
-.added-marker{color:#E11D48;font-weight:800;}
-.result-badge{display:inline-block;padding:4px 12px;border-radius:20px;font-size:.79rem;font-weight:800;margin-left:10px;}
-.badge-correct{background:#ECFDF5;color:#059669;}
-.badge-partial{background:#FFFBEB;color:#D97706;}
-.badge-wrong{background:#FFF1F2;color:#E11D48;}
-.pagination-controls{display:flex;align-items:center;justify-content:center;gap:12px;padding:14px 0;margin:8px 0;}
-.pagination-controls .gbtn{min-width:160px;}
-.pagination-controls .gbtn:disabled{opacity:.4;cursor:not-allowed;pointer-events:none;}
-.page-indicator{font-size:.88rem;color:var(--q-accent);font-weight:800;background:var(--q-accent-light);padding:6px 16px;border-radius:20px;white-space:nowrap;}
-.no-data{text-align:center;padding:48px;color:var(--slate-400);background:var(--lab-card-bg);border-radius:1rem;}
-.no-data .icon{font-size:3rem;margin-bottom:12px;}
-
-/* ═══ ANALIZĂ ═══ */
-.an-analysis-top{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(220px,.9fr);gap:14px;align-items:stretch;margin-bottom:18px;}
-.an-stats-wrap{display:flex;flex-direction:column;gap:10px;min-width:0;}
-.an-stats-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;}
-.an-stat-box{background:var(--lab-card-bg);border:1px solid var(--lab-border);border-radius:1rem;padding:14px 8px;text-align:center;min-width:0;}
-.an-snum{font-size:1.6rem;font-weight:900;color:var(--q-accent);}
-.an-slbl{font-size:.7rem;color:var(--slate-400);margin-top:3px;font-weight:700;text-transform:uppercase;letter-spacing:.02em;}
-.an-gauge-inline{background:linear-gradient(180deg,var(--lab-card-bg),var(--slate-50));border:1px solid var(--lab-border);border-radius:1rem;padding:14px 16px;display:flex;flex-direction:column;justify-content:center;min-width:0;}
-.an-gauge-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;}
-.an-gauge-meta strong{font-size:.88rem;color:var(--q-accent);}
-.an-gauge-meta span{font-size:.78rem;color:var(--slate-400);font-weight:600;}
-.an-gauge-track{background:var(--slate-100);border-radius:999px;height:14px;overflow:hidden;margin-bottom:6px;}
-.an-gauge-fill{height:100%;border-radius:8px;transition:width .6s;}
-.an-gauge-labels{display:flex;justify-content:space-between;font-size:.7rem;color:var(--slate-400);font-weight:700;}
-.an-sec-h{font-size:.9rem;font-weight:800;color:var(--q-accent);margin:0 0 8px;display:flex;align-items:center;gap:6px;}
-.an-two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px;align-items:start;}
-.an-col{min-width:0;}
-.an-evo-card{background:var(--lab-card-bg);border:1px solid var(--lab-border);border-radius:1rem;padding:14px;margin-bottom:10px;}
-.an-evo-meta{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;margin-bottom:10px;}
-.an-evo-kpis{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;}
-.an-evo-kpi{padding:6px 10px;border-radius:999px;background:var(--slate-50);font-size:.74rem;font-weight:700;color:var(--slate-400);}
-.an-evo-legend{display:flex;gap:14px;flex-wrap:wrap;margin:8px 0 10px;}
-.an-evo-legend-item{display:flex;align-items:center;gap:7px;font-size:.74rem;font-weight:700;color:var(--slate-400);}
-.an-evo-legend-line{width:18px;height:0;border-top:3px solid var(--q-accent);border-radius:999px;}
-.an-evo-legend-bar{width:14px;height:14px;border-radius:4px;background:rgba(39,174,96,.22);border:1px solid rgba(39,174,96,.35);}
-.an-evo-chart{position:relative;height:180px;border-radius:.9rem;background:linear-gradient(180deg,var(--slate-50),transparent);border:1px solid var(--lab-border);padding:10px 10px 8px;overflow:hidden;}
-.an-evo-svg{width:100%;height:132px;display:block;}
-.an-evo-grid{stroke:var(--lab-border);stroke-width:1;}
-.an-evo-ytext,.an-evo-rtext{fill:var(--slate-400);font-size:10px;font-weight:700;}
-.an-evo-bar{opacity:.9;}
-.an-evo-line{fill:none;stroke:var(--q-accent);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
-.an-evo-dot{stroke:#fff;stroke-width:2;}
-.an-evo-dot-label{fill:var(--q-accent);font-size:10px;font-weight:800;}
-.an-evo-axis{display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:8px;margin-top:8px;}
-.an-evo-axis span{font-size:.68rem;color:var(--slate-400);font-weight:700;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.an-timeline{display:flex;flex-direction:column;gap:7px;}
-.an-tl-item{background:var(--lab-card-bg);border:1px solid var(--lab-border);border-radius:.8rem;padding:9px 12px;display:flex;align-items:center;gap:10px;}
-.an-tl-date{font-size:.74rem;color:var(--slate-400);white-space:nowrap;min-width:74px;font-weight:700;}
-.an-tl-bar-wrap{flex:1;background:var(--slate-100);border-radius:4px;height:9px;}
-.an-tl-bar{height:100%;border-radius:4px;}
-.an-tl-score{font-size:.78rem;font-weight:800;white-space:nowrap;min-width:52px;text-align:right;}
-.an-topic-card{background:var(--lab-card-bg);border:1px solid var(--lab-border);border-radius:.9rem;padding:11px 14px;margin-bottom:8px;}
-.an-tc-head{display:flex;align-items:center;margin-bottom:5px;}
-.an-tc-name{flex:1;font-weight:700;font-size:.85rem;}
-.an-tc-score{font-size:.8rem;font-weight:800;}
-.an-tc-bar-wrap{background:var(--slate-100);border-radius:4px;height:7px;margin-bottom:5px;}
-.an-tc-bar{height:100%;border-radius:4px;transition:width .5s;}
-.an-tc-detail{font-size:.74rem;color:var(--slate-400);}
-.an-tc-detail a{color:var(--q-accent);text-decoration:none;}
-.an-accordion-btn{width:100%;background:var(--lab-card-bg);border:1px solid var(--lab-border);border-radius:.8rem;padding:11px 16px;font-size:.87rem;font-weight:700;color:var(--q-accent);cursor:pointer;text-align:left;transition:background .15s, border-color .15s;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between;gap:10px;}
-.an-accordion-btn:hover{background:var(--slate-50);}
-.an-accordion-btn.is-open{border-color:var(--q-accent);}
-.an-accordion-body{display:grid;gap:12px;margin-bottom:8px;}
-.an-accordion-body[hidden]{display:none;}
-.an-accordion-meta{font-size:.78rem;color:var(--slate-400);font-weight:600;}
-.an-err-opt{padding:8px 11px;border-radius:.6rem;margin-bottom:7px;}
-.an-ew{background:#FFF1F2;border-left:3px solid #E11D48;}
-.an-em{background:#FFFBEB;border-left:3px solid #D97706;}
-.an-err-opt-lbl{font-weight:700;margin-bottom:3px;font-size:.85rem;}
-.an-err-opt-txt{font-size:.82rem;color:var(--slate-700);}
-.an-err-card{background:var(--lab-card-bg);border:1px solid var(--lab-border);border-radius:1rem;margin-bottom:12px;overflow:hidden;}
-.an-err-card-head{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--slate-50);border-bottom:1px solid var(--lab-border);}
-.an-err-card-body{padding:12px 14px;}
-.an-err-badge{background:#FFF1F2;color:#E11D48;border:1px solid #FCA5A5;border-radius:20px;padding:2px 10px;font-size:.74rem;font-weight:800;}
-@media(max-width:768px){
-  .an-analysis-top{grid-template-columns:1fr;}
-  .an-stats-row{grid-template-columns:repeat(3,minmax(0,1fr));}
-  .an-stat-box.hide-mobile{display:none;}
-  .an-two-col{grid-template-columns:1fr;gap:14px;}
-  .an-gauge-inline{padding:12px 14px;}
-  .an-gauge-meta{flex-direction:column;align-items:flex-start;gap:4px;}
-  .an-evo-meta{flex-direction:column;}
-  .an-evo-kpis{justify-content:flex-start;}
-  .an-evo-chart{height:170px;}
-}
-
-.toast{position:fixed;bottom:24px;right:24px;background:var(--slate-800);color:#fff;padding:12px 20px;border-radius:.7rem;font-size:.88rem;box-shadow:0 4px 18px rgba(0,0,0,.18);z-index:999;opacity:0;transform:translateY(20px);transition:all .3s;pointer-events:none;font-weight:700;}
-.toast.show{opacity:1;transform:translateY(0);}
-
 /* ═══ HIGHLIGHTER ═══ */
 #hl-btn{position:fixed;bottom:5rem;right:1.5rem;background:#fff;color:#555;border:2px solid var(--lab-border);border-radius:50%;width:2.8rem;height:2.8rem;font-size:1.2rem;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.08);display:flex;align-items:center;justify-content:center;z-index:200;transition:all .2s;user-select:none;}
 #hl-btn:hover{box-shadow:0 4px 14px rgba(0,0,0,.14);}
@@ -429,7 +267,7 @@ body.dark{
   --blue-light:#0D2545;--green-light:#052E16;--orange-light:#431407;
   --purple-light:#2E1065;--red-light:#4C0519;--teal-light:#083344;
   --gray-light:#1E293B;--gray:#94A3B8;
-  --slate-50:#1E1E1C;--slate-100:#222220;--q-accent-light:#0A2530;
+  --slate-50:#1E1E1C;--slate-100:#222220;
 }
 body.dark #dm-btn{background:#1E1E1C;border-color:rgba(255,255,255,.1);color:#FCD34D;}
 body.dark nav{background:var(--grad-nav) !important;border:none !important;}
@@ -448,38 +286,10 @@ body.dark tr:nth-child(even) td{background:#1A1A18;}
 body.dark .acc-head{background:#222220;color:#CBD5E1;}
 body.dark .acc-head:hover{background:#2A2A28;}
 body.dark .acc-body{background:#1E1E1C;}
-body.dark .gtabs{background:#1A1A18;border-bottom-color:var(--lab-border);}
-body.dark .gtab-btn{color:rgba(255,255,255,.35);}
-body.dark .gtab-btn.active{color:#22D3EE;border-bottom-color:#22D3EE;}
-body.dark .quiz-header{background:var(--lab-card-bg);}
-body.dark .quiz-progress{background:#2A2A28;color:#94A3B8;}
-body.dark .question-card{background:var(--lab-card-bg);border-left-color:rgba(255,255,255,.07);}
-body.dark .option{border-color:rgba(255,255,255,.07);}
-body.dark .option:hover:not(.disabled){border-color:var(--teal);background:#0A2530;}
-body.dark .option.selected{border-color:var(--teal);background:#0A2530;}
-body.dark .opt-letter{background:#2A2A28;border-color:#333330;}
-body.dark .explanation{border-color:rgba(255,255,255,.07);}
-body.dark .expl-body{background:#1E1E1C;}
-body.dark .no-data{background:var(--lab-card-bg);}
-body.dark .an-stat-box,.dark .an-topic-card,.dark .an-accordion-btn,.dark .an-err-card,.dark .an-gauge-inline,.dark .an-evo-card,.dark .an-evo-chart,.dark .an-tl-item{background:#1E1E1C;}
-body.dark .an-accordion-btn:hover{background:#252523;}
-body.dark .an-err-card-head{background:#222220;}
-body.dark .an-gauge-track,.dark .an-tc-bar-wrap,.dark .an-tl-bar-wrap{background:#2A2A28;}
-body.dark .an-evo-kpi{background:#252523;color:#94A3B8;}
-body.dark .an-evo-dot{stroke:#1E1E1C;}
-body.dark .an-evo-ytext,body.dark .an-evo-rtext{fill:#94A3B8;}
-body.dark .an-evo-dot-label{fill:#22D3EE;}
-body.dark .an-ew{background:#2D0A12;}
-body.dark .an-em{background:#2D1F00;}
-body.dark .an-err-opt-txt{color:#94A3B8;}
-body.dark .gbtn-secondary{background:#2A2A28;color:#CBD5E1;border-color:#333330;}
-body.dark .gbtn-secondary:hover{background:#333330;}
 body.dark .page-nav a{background:#2A2A28;color:#E2E8F0;}
 body.dark .page-nav a:hover{background:#333330;}
 body.dark .page-nav a.outline{background:#1E1E1C;color:#22D3EE;border-color:var(--teal);}
 body.dark .page-nav a.outline:hover{background:#0A2530;}
-body.dark .lesson-ref{background:#0A2530;border-left-color:var(--teal);}
-body.dark .page-indicator{background:#0A2530;color:#22D3EE;}
 body.dark #hl-btn{background:#1E1E1C;border-color:rgba(255,255,255,.1);color:#CBD5E1;}
 body.dark #hl-btn.active{background:#422006;border-color:#eab308;}
 body.dark #hl-badge{background:#2A2A28;}
@@ -519,37 +329,13 @@ body.dark .nav-settings-btn{color:rgba(255,255,255,.55);}
 body.dark .nav-settings-btn:hover{color:#fff;background:rgba(255,255,255,.06);}
 body.dark .nav-settings-btn.on{color:#fff;background:rgba(255,255,255,.08);}
 
-.sync-bar{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;margin-bottom:1rem;padding:.7rem 1rem;background:var(--teal-light);border:1px solid rgba(8,145,178,.2);border-radius:.7rem;font-size:.82rem;}
-.sync-bar span{color:var(--slate-500);flex:1;min-width:120px;}
-.sync-btn{padding:.38rem .85rem;border-radius:.55rem;border:none;cursor:pointer;font-size:.8rem;font-weight:700;font-family:'Figtree',system-ui,sans-serif;transition:all .18s;}
-.sync-btn.export{background:var(--teal);color:#fff;}
-.sync-btn.export:hover{background:var(--primary-dark);}
-.sync-btn.import{background:#fff;color:var(--teal);border:2px solid var(--teal);}
-.sync-btn.import:hover{background:var(--teal-light);}
-body.dark .sync-bar{background:#0A2530;border-color:rgba(8,145,178,.2);}
-body.dark .sync-btn.import{background:#1E1E1C;}
-
 /* ── MOBILE OVERRIDES ── */
 @media(max-width:768px){
-  .gtabs{padding-left:0 !important;margin:0 -.9rem 1.2rem !important;overflow:hidden;}
-  .gtab-btn{flex:1;padding:10px 4px;font-size:.76rem;text-align:center;}
-  .quiz-header{flex-direction:column !important;align-items:flex-start !important;padding:12px 14px;gap:6px;}
-  .quiz-header h2{font-size:.9rem !important;margin:0;}
-  .quiz-progress{font-size:.72rem;padding:4px 10px;}
-  .progress-bar-wrap{max-width:none !important;width:100%;}
-  .pagination-controls{flex-wrap:wrap;gap:4px;padding:8px 0;}
-  .pagination-controls .gbtn{min-width:unset !important;flex:1;padding:7px 8px;font-size:.74rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-  .page-indicator{font-size:.74rem;padding:5px 8px;order:-1;width:100%;text-align:center;}
   .sec-head h2{font-size:1.05rem !important;}
   .card h2{font-size:1rem !important;}
   .hero h1{font-size:1.2rem !important;line-height:1.3;}
   .hero p{font-size:.82rem !important;}
 }
-.legend{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:14px;font-size:.8rem;color:var(--slate-500);}
-.legend-item{display:flex;align-items:center;gap:6px;}
-.legend-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
-.gbtn-danger{background:#e74c3c;color:#fff;border:none;}
-.gbtn-danger:hover{background:#c0392b;}
 
 /* ═══ CHAPTER DESIGN OVERRIDES ═══ */
 :root{
@@ -655,23 +441,7 @@ nav a:hover{transform:none;background:rgba(15,23,42,.045);}
 .chapter-home .hero,
 .page-section:not(.chapter-home) .hero,
 .card,
-.summary,
-.quiz-header,
-.sync-bar,
-.legend,
-.final-score,
-.question-card,
-.pagination-controls,
-#gtab-analysis > div:first-child,
-.an-stats-wrap,
-.an-gauge-inline,
-.an-evo-card,
-.an-topic-card,
-.an-topic-empty,
-.an-topic-summary,
-.an-topic-card-list,
-.an-accordion-btn,
-.an-empty{
+.summary{
   background:rgba(255,255,255,.96);
   border:1px solid rgba(15,23,42,.08);
   box-shadow:0 14px 34px rgba(15,23,42,.045);
@@ -723,44 +493,6 @@ nav a:hover{transform:none;background:rgba(15,23,42,.045);}
 .chapter-map .g2{gap:16px !important;}
 .chapter-map .g2 > div{transform:none !important;box-shadow:none;}
 .chapter-map .g2 > div:hover{transform:none;box-shadow:none;}
-#page-grile{padding-bottom:1rem;}
-.gtabs{display:inline-flex;gap:7px;padding:5px;background:rgba(255,255,255,.96);border:1px solid rgba(15,23,42,.08);border-radius:18px;margin:0 0 1rem;overflow:visible;}
-.gtab-btn{padding:.68rem .92rem;border-radius:12px;border:none;margin:0;font-size:.8rem;font-weight:800;color:var(--slate-600);transition:background-color .14s ease,color .14s ease;}
-.gtab-btn.active{background:var(--chapter-accent-light);border:none;color:var(--chapter-accent);}
-.quiz-header{padding:1.15rem 1.2rem;border-radius:20px;margin-bottom:.85rem;}
-.quiz-header h2{font-size:clamp(1.2rem,2vw,1.72rem);line-height:1.05;letter-spacing:-.03em;color:var(--lab-ink);max-width:31rem;}
-.quiz-progress{margin-top:.6rem;font-size:.82rem;font-weight:700;color:var(--slate-600);}
-.progress-bar-wrap{height:7px;border-radius:999px;background:rgba(148,163,184,.18);margin-top:.75rem;overflow:hidden;}
-.progress-bar{border-radius:999px;}
-.sync-bar,.legend{display:flex;flex-wrap:wrap;gap:.65rem;align-items:center;padding:.82rem .9rem;border-radius:18px;margin-bottom:.85rem;}
-.sync-bar span{font-size:.82rem;font-weight:700;color:var(--slate-600);}
-.sync-btn,.gbtn{border-radius:999px;box-shadow:none;transition:background-color .14s ease,color .14s ease,border-color .14s ease;font-size:.8rem;padding:.55rem .95rem;}
-.legend-item{padding:.2rem .1rem;font-size:.8rem;font-weight:600;color:var(--slate-600);}
-.final-score{display:none !important;border-radius:20px;padding:1.2rem 1.1rem;}
-.final-score.show{display:block !important;}
-.final-score .retry-wrap{display:none;}
-.final-score.show .retry-wrap{display:block;}
-.question-card{border-radius:20px;padding:1.15rem 1.2rem;border-left:1px solid rgba(15,23,42,.08);}
-.option{border-radius:14px;transition:border-color .14s ease,background-color .14s ease;padding:9px 12px;}
-.option:hover{transform:none;background:rgba(248,250,252,.88);}
-.opt-letter{border-radius:999px;width:25px;height:25px;font-size:.76rem;}
-.q-num{font-size:.68rem;letter-spacing:.11em;}
-.q-text{font-size:.95rem;line-height:1.62;}
-.opt-text{font-size:.88rem;line-height:1.58;padding-top:1px;}
-.pagination-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:.8rem .95rem;border-radius:18px;margin-top:.85rem;}
-.page-indicator{font-size:.8rem;font-weight:800;color:var(--slate-600);}
-#gtab-analysis > div:first-child{padding:.95rem 1rem;border-radius:20px;}
-#analysis-content{display:grid;gap:16px;}
-.an-analysis-top{gap:16px;margin-bottom:0;}
-.an-stats-wrap,.an-gauge-inline{padding:1rem 1rem;border-radius:18px;}
-.an-stats-row{gap:10px;}
-.an-stat-box{border-radius:16px;background:var(--ink-50);padding:.82rem .78rem;border:1px solid rgba(15,23,42,.06);}
-.an-snum{font-size:1.34rem;letter-spacing:-.03em;}
-.an-slbl{font-size:.66rem;text-transform:uppercase;letter-spacing:.08em;}
-.an-gauge-meta strong,.an-sec-h{font-size:.74rem;text-transform:uppercase;letter-spacing:.1em;color:var(--chapter-accent);}
-.an-gauge-meta span,.an-evo-kpi,.an-evo-legend-item,.an-tc-detail,.an-accordion-meta,.an-err-badge{font-size:.72rem;}
-.an-evo-card,.an-topic-card,.an-topic-empty,.an-topic-summary,.an-topic-card-list{padding:1rem 1rem;border-radius:18px;}
-.an-accordion-btn{border-radius:16px;padding:.78rem .9rem;font-size:.82rem;transition:background-color .14s ease,color .14s ease,border-color .14s ease;}
 #dm-btn,#hl-btn{transition:none;}
 #dm-btn:hover,#hl-btn:hover{transform:none;}
 @media(max-width:768px){
@@ -768,10 +500,6 @@ nav a:hover{transform:none;background:rgba(15,23,42,.045);}
   .lesson-search{width:100%;}
   .lesson-search-box{min-width:0;}
   .lesson-search-count{font-size:.7rem;}
-  .gtabs{display:flex;width:100%;}
-  .gtab-btn{flex:1;justify-content:center;}
-  .sync-bar,.legend,.pagination-controls{padding:.95rem;}
-  .quiz-header,.an-stats-wrap,.an-gauge-inline,.an-evo-card,.an-topic-card,.an-topic-summary,.an-topic-card-list{padding:1rem;}
 }
 
 /* stronger editorial redesign */
@@ -883,7 +611,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   margin-bottom:1rem;
 }
 .summary ul,.card ul{padding-left:1.1rem;}
-.summary li,.card li,.card p,.box,.lesson-ref,.expl-text,.an-tc-detail,.an-err-opt-txt{
+.summary li,.card li,.card p,.box{
   font-size:1rem;
   line-height:1.82;
 }
@@ -923,23 +651,6 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   font-size:.86rem;
 }
 .fa{font-size:1rem;}
-.quiz-header h2,#gtab-analysis h2{
-  font-size:clamp(1.55rem,2.7vw,2.3rem) !important;
-  line-height:.98;
-  letter-spacing:-.045em;
-}
-.q-text{
-  font-size:1.05rem;
-  line-height:1.7;
-}
-.opt-text{
-  font-size:.95rem;
-  line-height:1.7;
-}
-.an-sec-h{
-  font-size:.78rem;
-  letter-spacing:.12em;
-}
 @media(max-width:768px){
   body{font-size:.96rem;}
   .chapter-home .hero{padding:2rem 1.35rem 1.7rem;}
@@ -973,7 +684,7 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
   }
   .badges{gap:.45rem;}
   .badge{font-size:.72rem;padding:.32rem .7rem;}
-  .card,.summary,.quiz-header,.question-card,.pagination-controls,.sync-bar,.legend,.an-stats-wrap,.an-gauge-inline,.an-evo-card,.an-topic-card,.an-topic-summary,.an-topic-card-list{border-radius:18px;}
+  .card,.summary{border-radius:18px;}
   .card,.summary{padding:.95rem;}
   .sec-head{align-items:flex-start;gap:.6rem;}
   .sec-head h2{font-size:1rem;}
@@ -998,53 +709,6 @@ body{font-size:1rem;line-height:1.8;color:#475569;}
     justify-content:center;
     padding:.85rem 1rem;
   }
-  .gtabs{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:8px;
-    padding:0;
-    background:transparent;
-    border:none;
-  }
-  .gtab-btn{
-    min-height:48px;
-    border:1px solid rgba(15,23,42,.08);
-    background:#fff;
-    border-radius:14px;
-    padding:.7rem .85rem;
-  }
-  .quiz-header{padding:1rem;gap:10px;}
-  .quiz-header h2{font-size:1.05rem;max-width:none;}
-  .progress-bar-wrap{width:100%;max-width:none;}
-  .question-card{
-    padding:1rem;
-    margin-bottom:14px;
-  }
-  .q-text{font-size:.94rem;line-height:1.58;}
-  .option{padding:12px;gap:10px;}
-  .opt-text{font-size:.84rem;}
-  .q-actions{
-    flex-direction:column;
-    gap:8px;
-  }
-  .q-actions .gbtn,
-  .pagination-controls .gbtn{
-    width:100%;
-    min-width:0;
-  }
-  .pagination-controls{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:8px;
-    padding:1rem;
-  }
-  .page-indicator{
-    grid-column:1 / -1;
-    width:100%;
-    text-align:center;
-    order:-1;
-  }
-  .toast{left:12px;right:12px;bottom:12px;font-size:.82rem;}
 }
 @media(max-width:1024px){
   .lab-topbar-inner{grid-template-columns:minmax(0,1fr) auto !important;gap:10px !important;padding:9px 12px !important;align-items:center !important;}
@@ -1156,9 +820,11 @@ section .card p:not([class]),section .card p[style]{font-size:.94rem;line-height
 section .card p strong{color:var(--fg-1,var(--slate-900));}
 section .card h3:not([class]){font-family:var(--font-display,'Figtree',sans-serif);font-size:1.05rem;font-weight:800;color:var(--fg-1,var(--slate-900));margin:1.4rem 0 .5rem;}
 </style>
-<link rel="stylesheet" href="assets/css/chapter-redesign.css?v=20260504-highlighter1">
+<link rel="stylesheet" href="assets/css/chapter-redesign.css?v=20260727-highlighter6">
 </head>
 <body>
+
+<a class="lesson-skip" href="#lesson-content">Sari la conținutul lecției</a>
 
 <header class="lab-topbar">
   <div class="lab-topbar-inner">
@@ -1171,11 +837,9 @@ section .card h3:not([class]){font-family:var(--font-display,'Figtree',sans-seri
     </a>
     <div class="lab-topbar-mobile-actions">
       <button class="lab-topbar-mobile-btn" onclick="window.location.href='index.html'" aria-label="Homepage" title="Homepage">⌂</button>
-      <button class="lab-topbar-mobile-btn" onclick="goto('grile')" aria-label="Grile" title="Grile">✓</button>
     </div>
-    <nav class="lab-nav">
-      <a onclick="goto('home')">Pagina capitolului</a>
-      <a onclick="goto('grile')">Grile UMF</a>
+    <nav class="lab-nav" aria-label="Navigare rapidă">
+      <a href="#home" onclick="goto('home')">Pagina capitolului</a>
     </nav>
     <div class="lesson-search" id="lesson-search">
       <div class="lesson-search-panel">
@@ -1197,17 +861,17 @@ section .card h3:not([class]){font-family:var(--font-display,'Figtree',sans-seri
 <div id="nav-overlay" onclick="closeNav()"></div>
 
 <div class="ch-layout">
-<nav id="sidenav">
+<nav id="sidenav" aria-label="Cuprinsul capitolului">
   <div class="nav-header">
     <div class="nav-chapter-badge">Capitol 22</div>
     <div class="nav-chapter-title">Sistemul Reproducător Masculin</div>
   </div>
   <div class="nav-group">
     <div class="nav-group-label">Lecții</div>
-    <a onclick="goto('home')" data-color="blue">Pagina capitolului</a>
-    <a onclick="goto('testiculele')" data-color="blue">Testiculele &amp; Spermatogeneza</a>
-    <a onclick="goto('ducte')" data-color="green">Ducte &amp; Organe Anexe</a>
-    <a onclick="goto('hormoni')" data-color="purple">Hormonii Masculini</a>
+    <a href="#home" onclick="goto('home')" data-color="blue">Pagina capitolului</a>
+    <a href="#testiculele" onclick="goto('testiculele')" data-color="blue">Testiculele &amp; Spermatogeneza</a>
+    <a href="#ducte" onclick="goto('ducte')" data-color="green">Ducte &amp; Organe Anexe</a>
+    <a href="#hormoni" onclick="goto('hormoni')" data-color="purple">Hormonii Masculini</a>
   </div>
   <div class="nav-group-label" id="sub-nav-label" style="display:none">Pe această pagină</div>
   <div id="sub-nav"></div>
@@ -1226,12 +890,12 @@ section .card h3:not([class]){font-family:var(--font-display,'Figtree',sans-seri
   </div>
 </nav>
 
-<button id="top" onclick="window.scrollTo({top:0,behavior:'smooth'})" style="display:none;align-items:center;justify-content:center;">↑</button>
+<button id="top" onclick="window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})" style="display:none;align-items:center;justify-content:center;">↑</button>
 <button id="dm-btn" title="Mod noapte" onclick="toggleDarkMode()">◐</button>
 <div id="hl-badge">Evidențiator ON</div>
 <button id="hl-btn" title="Evidențiator text (galben neon)" onclick="toggleHighlighter()">✎</button>
 
-<main>
+<main id="lesson-content">
 
 <!-- ══════════════════ HOME ══════════════════ -->
 <div class="page-section active chapter-home" id="page-home">
@@ -1264,11 +928,6 @@ section .card h3:not([class]){font-family:var(--font-display,'Figtree',sans-seri
         <div style="font-size:1.5rem;">🧬</div>
         <strong style="color:var(--purple);font-size:1rem;">Hormonii Masculini</strong>
         <p style="font-size:.85rem;color:var(--gray);margin-top:.3rem;">FSH · LH · GnRH · Testosteron · Feedback negativ · Caractere sexuale secundare</p>
-      </div>
-      <div class="map-card tone-teal" style="background:var(--teal-light);border-radius:.7rem;padding:1.1rem;border:2px solid var(--teal);cursor:pointer;" onclick="goto('grile')">
-        <div style="font-size:1.5rem;">📝</div>
-        <strong style="color:var(--teal);font-size:1rem;">Grile UMF</strong>
-        <p style="font-size:.85rem;color:var(--slate-500);margin-top:.3rem;">Întrebări tip grilă · Explicații complete · Analiză progres</p>
       </div>
     </div>
   </div>
@@ -1308,9 +967,9 @@ section .card h3:not([class]){font-family:var(--font-display,'Figtree',sans-seri
 <div class="page-section" id="page-testiculele">
   <div class="hero"><h1>🔬 Testiculele &amp; Spermatogeneza</h1><p>Introducere în sistemul reproducător masculin, structura testiculelor, scrotul, spermatogeneza și structura spermatozoizilor.</p></div>
   <div class="page-nav">
-    <a class="outline" onclick="goto('home')">← Înapoi</a>
-    <a onclick="goto('ducte')">Ducte &amp; Organe Anexe →</a>
-    <a class="outline" onclick="goto('hormoni')">Hormoni</a>
+    <a href="#home" class="outline" onclick="goto('home')">← Înapoi</a>
+    <a href="#ducte" onclick="goto('ducte')">Ducte &amp; Organe Anexe →</a>
+    <a href="#hormoni" class="outline" onclick="goto('hormoni')">Hormoni</a>
   </div>
 
   <section id="intro">
@@ -1363,7 +1022,7 @@ section .card h3:not([class]){font-family:var(--font-display,'Figtree',sans-seri
         <div class="box green"><strong>Mușchiul dartos</strong>Mușchi neted subțire în profunzimea pielii scrotale; contracția → aspect încrețit</div>
       </div>
       <figure class="fig" style="max-width:820px;">
-        <img src="imagini/sist_rep_masculin_barrons.webp" alt="Sistemul reproducător masculin - vedere lateral stânga în secțiune sagitală">
+        <img loading="lazy" decoding="async" src="imagini/sist_rep_masculin_barrons.webp" alt="Sistemul reproducător masculin - vedere lateral stânga în secțiune sagitală">
         <figcaption>Figura 22.1 – Sistemul reproducător masculin – vedere lateral stânga în secțiune sagitală.</figcaption>
       </figure>
     </div>
@@ -1408,11 +1067,12 @@ section .card h3:not([class]){font-family:var(--font-display,'Figtree',sans-seri
       <p>Ulterior, spermatocitele primare trec printr-o primă fază a diviziunii meiotice în urma căreia se obțin dintr-un spermatocit primar, două <strong>spermatocite secundare</strong> (haploide, n, cu 23 de cromozomi/celulă). Urmează apoi faza a doua a meiozei în urma căreia are loc dublarea numărului de celule (rezultă 4 spermatide), însă numărul de cromozomi rămâne neschimbat (tot 23 de cromozomi/celulă). Spermatidele rezultate se maturează și duc la formarea spermatozoizilor din interiorul tubului seminifer.</p>
 
       <figure class="fig">
-        <img src="imagini/spermatogeneza_barrons.webp" alt="Spermatogeneza">
+        <img loading="lazy" decoding="async" src="imagini/spermatogeneza_barrons.webp" alt="Spermatogeneza">
         <figcaption>Figura 22.2 – Spermatogeneza.</figcaption>
       </figure>
 
       <h3 style="color:var(--blue);margin-top:1.2rem;">Prima fază a diviziunii meiotice</h3>
+      <div class="table-wrap">
       <table style="margin:.8rem 0;">
         <thead>
           <tr><th>Faza I</th><th>Procesul</th></tr>
@@ -1424,8 +1084,10 @@ section .card h3:not([class]){font-family:var(--font-display,'Figtree',sans-seri
           <tr><td><strong>Telofaza I și citokineza</strong></td><td>Are loc distribuirea egală a cromozomilor în cele două celule fiice rezultate.</td></tr>
         </tbody>
       </table>
+      </div>
 
       <h3 style="color:var(--purple);margin-top:1.2rem;">A doua fază a diviziunii meiotice</h3>
+      <div class="table-wrap">
       <table style="margin:.8rem 0;">
         <thead>
           <tr><th>Faza II</th><th>Procesul</th></tr>
@@ -1438,6 +1100,7 @@ section .card h3:not([class]){font-family:var(--font-display,'Figtree',sans-seri
           <tr><td><strong>Telofaza II și citokineza</strong></td><td>Rezultă 4 celule fiice haploide, fiecare având jumătate din numărul de cromozomi (23) ai celulei mamă (46).</td></tr>
         </tbody>
       </table>
+      </div>
     </div>
   </section>
 
@@ -1465,7 +1128,7 @@ section .card h3:not([class]){font-family:var(--font-display,'Figtree',sans-seri
       </div>
 
       <figure class="fig">
-        <img src="imagini/structura_spermatozoid_barrons.webp" alt="Structura spermatozoidului uman">
+        <img loading="lazy" decoding="async" src="imagini/structura_spermatozoid_barrons.webp" alt="Structura spermatozoidului uman">
         <figcaption>Figura 22.3 – Structura spermatozoidului uman.</figcaption>
       </figure>
 
@@ -1481,8 +1144,8 @@ section .card h3:not([class]){font-family:var(--font-display,'Figtree',sans-seri
   </section>
 
   <div class="page-nav">
-    <a class="outline" onclick="goto('home')">← Înapoi la index</a>
-    <a onclick="goto('ducte')">Ducte &amp; Organe Anexe →</a>
+    <a href="#home" class="outline" onclick="goto('home')">← Înapoi la index</a>
+    <a href="#ducte" onclick="goto('ducte')">Ducte &amp; Organe Anexe →</a>
   </div>
 </div>
 
@@ -1490,8 +1153,8 @@ section .card h3:not([class]){font-family:var(--font-display,'Figtree',sans-seri
 <div class="page-section" id="page-ducte">
   <div class="hero"><h1>🏗️ Ducte &amp; Organe Anexe</h1><p>Căile sistemului reproducător masculin, organele anexe și rolul lor în formarea și transportul spermei.</p></div>
   <div class="page-nav">
-    <a class="outline" onclick="goto('testiculele')">← Testiculele</a>
-    <a onclick="goto('hormoni')">Hormonii Masculini →</a>
+    <a href="#testiculele" class="outline" onclick="goto('testiculele')">← Testiculele</a>
+    <a href="#hormoni" onclick="goto('hormoni')">Hormonii Masculini →</a>
   </div>
 
   <section id="cai-ducte">
@@ -1519,7 +1182,7 @@ section .card h3:not([class]){font-family:var(--font-display,'Figtree',sans-seri
       <p>Porțiunea de început a epididimului se numește <strong>capul epididimului</strong>, iar porțiunea terminală, <strong>coada epididimului</strong>.</p>
 
       <figure class="fig">
-        <img src="imagini/sistem_ducte_barrons.webp" alt="Sistemul de ducte spermatice cu originea în testicul">
+        <img loading="lazy" decoding="async" src="imagini/sistem_ducte_barrons.webp" alt="Sistemul de ducte spermatice cu originea în testicul">
         <figcaption>Figura 22.4 – Sistemul de ducte spermatice cu originea în testicul.</figcaption>
       </figure>
 
@@ -1553,7 +1216,7 @@ section .card h3:not([class]){font-family:var(--font-display,'Figtree',sans-seri
       <p>Sunt organe anexe (auxiliare): vezicula seminală, glanda prostatică (prostata), glandele bulbouretrale și penisul.</p>
 
       <figure class="fig">
-        <img src="imagini/ducte_organe_masculine_barrons.webp" alt="Ductele și organele anexe ale sistemului reproducător masculin - vedere posterioară">
+        <img loading="lazy" decoding="async" src="imagini/ducte_organe_masculine_barrons.webp" alt="Ductele și organele anexe ale sistemului reproducător masculin - vedere posterioară">
         <figcaption>Figura 22.5 – Ductele și organele anexe ale sistemului reproducător masculin – vedere posterioară.</figcaption>
       </figure>
 
@@ -1639,8 +1302,8 @@ section .card h3:not([class]){font-family:var(--font-display,'Figtree',sans-seri
   </section>
 
   <div class="page-nav">
-    <a class="outline" onclick="goto('testiculele')">← Testiculele</a>
-    <a onclick="goto('hormoni')">Hormonii Masculini →</a>
+    <a href="#testiculele" class="outline" onclick="goto('testiculele')">← Testiculele</a>
+    <a href="#hormoni" onclick="goto('hormoni')">Hormonii Masculini →</a>
   </div>
 </div>
 
@@ -1648,8 +1311,7 @@ section .card h3:not([class]){font-family:var(--font-display,'Figtree',sans-seri
 <div class="page-section" id="page-hormoni">
   <div class="hero"><h1>🧬 Hormonii Masculini</h1><p>Reglarea hormonală a sistemului reproducător masculin: GnRH, FSH, LH și testosteron.</p></div>
   <div class="page-nav">
-    <a class="outline" onclick="goto('ducte')">← Ducte &amp; Organe Anexe</a>
-    <a onclick="goto('grile')">Grile →</a>
+    <a href="#ducte" class="outline" onclick="goto('ducte')">← Ducte &amp; Organe Anexe</a>
   </div>
 
   <section id="hormoni-masculini">
@@ -1730,67 +1392,14 @@ section .card h3:not([class]){font-family:var(--font-display,'Figtree',sans-seri
   </div>
 
   <div class="page-nav">
-    <a class="outline" onclick="goto('ducte')">← Ducte &amp; Organe Anexe</a>
-    <a onclick="goto('grile')">Grile →</a>
-    <a class="outline" onclick="goto('home')">Pagina capitolului</a>
-  </div>
-</div>
-
-<!-- ══════════════════ GRILE ══════════════════ -->
-<div class="page-section" id="page-grile">
-  <div class="gtabs">
-    <button class="gtab-btn active" onclick="switchGTab('quiz',this)">Grile</button>
-    <button class="gtab-btn" onclick="switchGTab('analysis',this)">Analiză</button>
-  </div>
-
-  <div id="gtab-quiz" class="gtab-panel active">
-    <div class="quiz-header">
-      <h2>Grile UMF Cluj — Sistemul Reproducător Masculin</h2>
-      <div class="quiz-progress" id="progress-text">0 / 40 completate</div>
-      <div class="progress-bar-wrap"><div class="progress-bar" id="progress-bar" style="width:0%"></div></div>
-    </div>
-    <div class="sync-bar">
-      <span>Transferă progresul între dispozitive:</span>
-      <button class="sync-btn export" onclick="exportProgress()">Copiază progresul</button>
-      <button class="sync-btn import" onclick="importProgress()">Importă progresul</button>
-    </div>
-    <div id="pagination-top" class="pagination-controls" style="display:none">
-      <button class="gbtn gbtn-secondary" id="btn-prev-top" onclick="changePage(-1)">← Pagina anterioară</button>
-      <span id="page-indicator-top" class="page-indicator">Pagina 1 / 4</span>
-      <button class="gbtn" id="btn-next-top" onclick="changePage(1)">Pagina următoare →</button>
-    </div>
-    <div class="legend">
-      <div class="legend-item"><div class="legend-dot" style="background:#27ae60"></div> Răspuns corect bifat</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#e74c3c"></div> Răspuns greșit bifat</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#f39c12"></div> Răspuns corect omis</div>
-    </div>
-    <div id="final-score" class="final-score" style="display:none">
-      <div id="score-circle" class="score-circle score-good">—</div>
-      <h3 id="score-title">Rezultat final</h3>
-      <p id="score-sub" style="color:#7f8c8d;margin-top:6px;font-size:.9rem"></p>
-      <div class="retry-wrap" style="margin-top:16px"><button class="gbtn gbtn-secondary" onclick="resetQuiz()">Reîncearcă testul</button></div>
-    </div>
-    <div id="questions-container"></div>
-    <div id="pagination-bottom" class="pagination-controls" style="display:none">
-      <button class="gbtn gbtn-secondary" id="btn-prev-bottom" onclick="changePage(-1)">← Pagina anterioară</button>
-      <span id="page-indicator-bottom" class="page-indicator">Pagina 1 / 4</span>
-      <button class="gbtn" id="btn-next-bottom" onclick="changePage(1)">Pagina următoare →</button>
-    </div>
-  </div>
-
-  <div id="gtab-analysis" class="gtab-panel">
-    <div style="display:flex;align-items:center;margin-bottom:20px;">
-      <h2 style="flex:1;font-size:1.2rem;color:#0891B2;">Analiza progresului tău</h2>
-      <button class="gbtn gbtn-danger" id="analysis-reset-btn" onclick="resetAnalysis()" style="margin-left:16px">Resetează analiza</button>
-    </div>
-    <div id="analysis-content"></div>
+    <a href="#ducte" class="outline" onclick="goto('ducte')">← Ducte &amp; Organe Anexe</a>
+    <a href="#home" class="outline" onclick="goto('home')">Pagina capitolului</a>
   </div>
 </div>
 
 </main>
 </div><!-- /.ch-layout -->
 
-<div id="toast" class="toast"></div>
 
 <script>
 // ════ SUB-NAV ════
@@ -1815,6 +1424,7 @@ const SUB_NAVS = {
 
 // ════ NAVIGATION ════
 function goto(sec, anchor) {
+  if (!document.getElementById('page-' + sec)) sec = 'home';
   document.querySelectorAll('.page-section').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('#sidenav a').forEach(a => a.classList.remove('active'));
   document.querySelectorAll('.lab-nav a').forEach(a => a.classList.remove('active'));
@@ -1822,7 +1432,6 @@ function goto(sec, anchor) {
   if (page) page.classList.add('active');
   const topNav = document.querySelectorAll('.lab-nav a');
   if (sec === 'home' && topNav[0]) topNav[0].classList.add('active');
-  if (sec === 'grile' && topNav[1]) topNav[1].classList.add('active');
   const navLinks = document.querySelectorAll('#sidenav a[onclick]');
   navLinks.forEach(a=>{ if(a.getAttribute('onclick')===`goto('${sec}')`) a.classList.add('active'); });
   const subNav = document.getElementById('sub-nav');
@@ -1834,572 +1443,23 @@ function goto(sec, anchor) {
     subLabel.style.display = 'none';
     subNav.innerHTML = '';
   }
-  window.scrollTo({top:0,behavior:'smooth'});
+  window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
   closeNav();
+  const nextUrl = sec === 'home' ? location.pathname + location.search : '#' + sec;
+  if ((sec === 'home' && location.hash) || (sec !== 'home' && location.hash.slice(1) !== sec)) {
+    history.replaceState(null, '', nextUrl);
+  }
 }
 
 function scrollToAnchor(id) {
   const el = document.getElementById(id);
-  if (el) setTimeout(() => el.scrollIntoView({behavior:'smooth',block:'start'}), 50);
+  if (el) setTimeout(() => el.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'}), 50);
 }
 
 window.addEventListener('scroll',()=>{ document.getElementById('top').style.display=window.scrollY>300?'flex':'none'; });
 
 // ════ ACCORDION ════
 function tog(h){ h.classList.toggle('open'); h.nextElementSibling.classList.toggle('show'); }
-
-// ════ QUIZ ENGINE ════
-const QUESTIONS=[
-  {id:1,topic:"Funcțiile gonadei masculine",lessonSection:"Testiculele — Funcții",lessonPage:"testiculele",text:"Care dintre afirmațiile privind funcțiile gonadei masculine sunt adevărate?",options:[{letter:"A",text:"produce celule reproducătoare masculine"},{letter:"B",text:"asigură spermatogeneza"},{letter:"C",text:"secretă hormoni sexuali masculini la nivelul tubilor seminiferi"},{letter:"D",text:"produce gameți masculini la nivelul celulelor interstițiale testiculare"},{letter:"E",text:"sunt controlate prin intermediul hormonilor gonadotropi adenohipofizari: FSH și LH"}],correct:["A","B","E"],explanations:{A:{isCorrect:true,text:"Corect. Gonada masculină (testiculul) produce celule reproducătoare masculine (spermatozoizi) prin spermatogeneză.",added:""},B:{isCorrect:true,text:"Corect. Spermatogeneza este funcția exocrină principală a testiculului, desfășurată la nivelul tubilor seminiferi.",added:""},C:{isCorrect:false,text:"Greșit. Hormonii sexuali masculini (testosteron) sunt secretați de celulele interstițiale (Leydig), nu la nivelul tubilor seminiferi.",added:""},D:{isCorrect:false,text:"Greșit. Gameții masculini se produc la nivelul TUBILOR SEMINIFERI prin spermatogeneză, nu la nivelul celulelor interstițiale.",added:""},E:{isCorrect:true,text:"Corect. Funcțiile testiculare sunt reglate de FSH (stimulează spermatogeneza) și LH (stimulează secreția de testosteron), ambii hormoni adenohipofizari.",added:""}}},
-  {id:2,topic:"Efectele FSH",lessonSection:"Hormoni masculini — FSH",lessonPage:"hormoni",text:"Următoarele efecte aparțin FSH-ului:",options:[{letter:"A",text:"stimulează spermatogeneza"},{letter:"B",text:"stimulează maturarea celulelor interstițiale testiculare"},{letter:"C",text:"stimulează producerea spermei"},{letter:"D",text:"stimulează ovulația"},{letter:"E",text:"stimulează maturarea tubilor seminiferi"}],correct:["A","C","E"],explanations:{A:{isCorrect:true,text:"Corect. FSH (hormonul foliculostimulant) acționează pe celulele Sertoli și stimulează spermatogeneza.",added:""},B:{isCorrect:false,text:"Greșit. Maturarea celulelor interstițiale (Leydig) este stimulată de LH (hormonul luteinizant), nu de FSH.",added:""},C:{isCorrect:true,text:"Corect. FSH stimulează producerea spermei acționând asupra tubilor seminiferi.",added:""},D:{isCorrect:false,text:"Greșit. Ovulația este un fenomen al sistemului reproducător feminin; la bărbat FSH nu stimulează ovulația.",added:""},E:{isCorrect:true,text:"Corect. FSH stimulează maturarea și dezvoltarea tubilor seminiferi, esențiali pentru spermatogeneză.",added:""}}},
-  {id:3,topic:"Efectele LH",lessonSection:"Hormoni masculini — LH",lessonPage:"hormoni",text:"Următoarele efecte aparțin LH-ului:",options:[{letter:"A",text:"stimulează producerea testosteronului la nivel testicular"},{letter:"B",text:"stimulează maturarea celulelor interstițiale testiculare"},{letter:"C",text:"stimulează producția de progesteron în ovare"},{letter:"D",text:"stimulează creșterea tubilor seminiferi testiculari"},{letter:"E",text:"stimulează producerea spermei"}],correct:["A","B","C"],explanations:{A:{isCorrect:true,text:"Corect. LH (hormonul luteinizant) acționează direct pe celulele Leydig (interstițiale) stimulând producerea testosteronului.",added:""},B:{isCorrect:true,text:"Corect. LH stimulează maturarea și activarea celulelor interstițiale Leydig.",added:""},C:{isCorrect:true,text:"Corect. La femei, LH stimulează producția de progesteron în corpul galben. LH are această acțiune generală, nu doar la bărbat.",added:""},D:{isCorrect:false,text:"Greșit. Creșterea și maturarea tubilor seminiferi este stimulată de FSH, nu de LH.",added:""},E:{isCorrect:false,text:"Greșit. Producerea spermei este stimulată de FSH care acționează pe celulele Sertoli din tubii seminiferi.",added:""}}},
-  {id:4,topic:"Tubii seminiferi",lessonSection:"Testiculele — Tubii seminiferi",lessonPage:"testiculele",text:"Selectați afirmațiile corecte privind tubii seminiferi:",options:[{letter:"A",text:"au rol în producerea gameților masculini"},{letter:"B",text:"sunt continuați de tubii drepți"},{letter:"C",text:"se deschid direct în canalul epididimar"},{letter:"D",text:"conțin celule cu rol în secreția de testosteron"},{letter:"E",text:"conțin celule sustentaculare care funcționează ca o barieră între vasele de sânge și tubii seminiferi"}],correct:["A","B","E"],explanations:{A:{isCorrect:true,text:"Corect. Spermatogeneza — producerea gameților masculini — are loc la nivelul tubilor seminiferi.",added:""},B:{isCorrect:true,text:"Corect. Traiectul spermatozoizilor: tubi seminiferi → tubi drepți → rețeaua testiculară → canale eferente → epididim.",added:""},C:{isCorrect:false,text:"Greșit. Tubii seminiferi nu se deschid direct în canalul epididimar. Continuarea este: tubi drepți → rețea testiculară → canale eferente → epididim.",added:""},D:{isCorrect:false,text:"Greșit. Testosteronul este secretat de celulele interstițiale (Leydig) situate ÎNTRE tubii seminiferi, nu în interiorul lor.",added:""},E:{isCorrect:true,text:"Corect. Celulele sustentaculare (Sertoli) formează bariera hemato-testiculară, protejând spermatozoizii în curs de dezvoltare de sistemul imunitar.",added:""}}},
-  {id:5,topic:"Celulele interstițiale",lessonSection:"Testiculele — Celulele Leydig",lessonPage:"testiculele",text:"Selectați afirmațiile adevărate privind celulele interstițiale testiculare:",options:[{letter:"A",text:"sunt localizate între tubii seminiferi"},{letter:"B",text:"secreția lor este controlată de adenohipofiză prin intermediul GnRH-ului"},{letter:"C",text:"secretă testosteron care inhibă sinteza proteică"},{letter:"D",text:"au rol în producerea spermatozoizilor"},{letter:"E",text:"secretă hormoni lipidici cu structură sterolică"}],correct:["A","E"],explanations:{A:{isCorrect:true,text:"Corect. Celulele interstițiale Leydig sunt localizate în țesutul conjunctiv dintre tubii seminiferi.",added:""},B:{isCorrect:false,text:"Greșit. GnRH este secretat de HIPOTALAMUS, nu de adenohipofiză. Celulele interstițiale sunt controlate de LH (hormon adenohipofizar), nu de GnRH direct.",added:""},C:{isCorrect:false,text:"Greșit. Testosteronul are efect ANABOLIC — STIMULEAZĂ sinteza proteică în mușchi și alte țesuturi, nu o inhibă.",added:""},D:{isCorrect:false,text:"Greșit. Producerea spermatozoizilor (spermatogeneza) are loc în tubii seminiferi, nu la nivelul celulelor interstițiale.",added:""},E:{isCorrect:true,text:"Corect. Testosteronul este un hormon steroidic, derivat din colesterol — deci un lipid cu structură sterolică.",added:""}}},
-  {id:6,topic:"Testosteronul — proprietăți",lessonSection:"Hormoni masculini — Testosteronul",lessonPage:"hormoni",text:"Testosteronul:",options:[{letter:"A",text:"este un hormon sintetizat din colesterol"},{letter:"B",text:"secreția lui este controlată de adenohipofiză prin intermediul FSH-ului"},{letter:"C",text:"produce creșterea depozitelor de proteine din țesuturi"},{letter:"D",text:"produce și menține caracterele sexuale"},{letter:"E",text:"inhibă producerea de FSH"}],correct:["A","C","D"],explanations:{A:{isCorrect:true,text:"Corect. Testosteronul este un hormon steroidic sintetizat din colesterol de celulele Leydig.",added:""},B:{isCorrect:false,text:"Greșit. Secreția testosteronului este controlată de LH (hormonul luteinizant), nu de FSH. LH acționează direct pe celulele Leydig.",added:""},C:{isCorrect:true,text:"Corect. Testosteronul are efect anabolic puternic — stimulează sinteza proteică și crește masa musculară.",added:""},D:{isCorrect:true,text:"Corect. Testosteronul produce caracterele sexuale secundare masculine la pubertate și le menține pe tot parcursul vieții adulte.",added:""},E:{isCorrect:false,text:"Greșit. Testosteronul inhibă în principal secreția de LH și GnRH prin feedback negativ. Inhibarea FSH se face indirect prin inhibină (secretată de celulele Sertoli).",added:""}}},
-  {id:7,topic:"Reglarea testosteronului",lessonSection:"Hormoni masculini — Reglarea hormonală",lessonPage:"hormoni",text:"Secreția de testosteron este reglată de:",options:[{letter:"A",text:"concentrația testosteronului plasmatic"},{letter:"B",text:"TSH"},{letter:"C",text:"LH"},{letter:"D",text:"hipofiza anterioară"},{letter:"E",text:"hormonul de eliberare a gonadotropinelor printr-un mecanism de feed-back negativ"}],correct:["A","C","D","E"],explanations:{A:{isCorrect:true,text:"Corect. Concentrația plasmatică a testosteronului reglează propria secreție prin mecanism de feedback negativ la nivelul hipotalamusului și hipofizei.",added:""},B:{isCorrect:false,text:"Greșit. TSH (hormonul tireostimulant) reglează funcția tiroidiană, nu secreția de testosteron.",added:""},C:{isCorrect:true,text:"Corect. LH (hormonul luteinizant) stimulează direct celulele Leydig să producă testosteron.",added:""},D:{isCorrect:true,text:"Corect. Hipofiza anterioară (adenohipofiza) produce LH care reglează secreția de testosteron.",added:""},E:{isCorrect:true,text:"Corect. Axa hipotalamo-hipofizo-gonadică funcționează prin feedback negativ: testosteron ↑ → inhibă GnRH și LH → testosteron ↓.",added:""}}},
-  {id:8,topic:"Spermatogeneza — locul desfășurării",lessonSection:"Testiculele — Spermatogeneza",lessonPage:"testiculele",text:"Spermatogeneza nu este asigurată de:",options:[{letter:"A",text:"celulele interstițiale testiculare"},{letter:"B",text:"veziculele seminale"},{letter:"C",text:"epididim"},{letter:"D",text:"prostată"},{letter:"E",text:"tubii seminiferi"}],correct:["A","B","C","D"],explanations:{A:{isCorrect:true,text:"Corect (nu asigură). Celulele interstițiale Leydig produc testosteron dar NU realizează spermatogeneza.",added:""},B:{isCorrect:true,text:"Corect (nu asigură). Veziculele seminale sunt glande anexe care secretă lichid seminal, nu participă la spermatogeneză.",added:""},C:{isCorrect:true,text:"Corect (nu asigură). Epididimul este locul de MATURARE și STOCARE a spermatozoizilor, nu locul spermatogenezei.",added:""},D:{isCorrect:true,text:"Corect (nu asigură). Prostata este o glandă exocrină anexă care secretă lichid prostatic, fără rol în spermatogeneză.",added:""},E:{isCorrect:false,text:"Greșit (asigură). Tubii seminiferi sunt locul unde SE DESFĂȘOARĂ spermatogeneza — singurul răspuns incorect la această întrebare.",added:""}}},
-  {id:9,topic:"Anatomia testiculului",lessonSection:"Testiculele — Caractere anatomice",lessonPage:"testiculele",text:"Testiculele prezintă următoarele caractere anatomice:",options:[{letter:"A",text:"au rol în procesele de reproducere masculină"},{letter:"B",text:"au formă ovalară"},{letter:"C",text:"sunt localizate în scrot"},{letter:"D",text:"fiecare testicul are aproximativ 5 cm lungime"},{letter:"E",text:"sunt situate în cavitatea pelviană"}],correct:["B","C","D"],explanations:{A:{isCorrect:false,text:"Greșit. Rolul în reproducere este o caracteristică FUNCȚIONALĂ, nu anatomică. Întrebarea vizează caracterele anatomice (formă, localizare, dimensiuni).",added:""},B:{isCorrect:true,text:"Corect. Testiculele au formă ovalară (elipsoidală), ușor turtite lateral — caracter anatomic.",added:""},C:{isCorrect:true,text:"Corect. Testiculele sunt localizate în scrot (afară din cavitatea abdominală), pentru temperatura optimă spermatogenezei (~2°C sub temperatura corpului).",added:""},D:{isCorrect:true,text:"Corect. Fiecare testicul are aproximativ 4–5 cm lungime, 2,5 cm lățime și 3 cm grosime.",added:""},E:{isCorrect:false,text:"Greșit. Testiculele se află în SCROT, nu în cavitatea pelviană. Coborârea lor din cavitatea abdominală are loc în timpul dezvoltării fetale.",added:""}}},
-  {id:10,topic:"Funcțiile organelor reproductive",lessonSection:"Ducte și organe anexe",lessonPage:"ducte",text:"Selectați afirmațiile corecte privind funcțiile organelor sistemului reproducător masculin:",options:[{letter:"A",text:"epididimul transportă spermatozoizii spre canalele eferente"},{letter:"B",text:"ductul deferent transportă spermatozoizii spre ductul ejaculator"},{letter:"C",text:"vezicula seminală secretă prostaglandine"},{letter:"D",text:"scrotul protejează testiculele"},{letter:"E",text:"prostata secretă un lichid alcalin ce conține nutrienți"}],correct:["B","C","D"],explanations:{A:{isCorrect:false,text:"Greșit. Direcția este INVERSĂ: canalele eferente transportă spermatozoizii din rețeaua testiculară SPRE epididim, nu invers.",added:""},B:{isCorrect:true,text:"Corect. Ductul deferent transportă spermatozoizii din epididim spre ampula ductului deferent și mai departe spre ductul ejaculator.",added:""},C:{isCorrect:true,text:"Corect. Veziculele seminale secretă un lichid vâscos, alcalin, bogat în fructoză și prostaglandine.",added:""},D:{isCorrect:true,text:"Corect. Scrotul (punga scrotală) are rol de protecție mecanică a testiculelor și reglare termică (menține temperatura cu ~2°C sub cea corporală).",added:""},E:{isCorrect:false,text:"Greșit. Prostata secretă un lichid ușor alcalin bogat în acid citric și enzime, NU în nutrienți. Nutrienții (fructoza) sunt secretați de veziculele seminale.",added:""}}},
-  {id:11,topic:"Formarea gameților masculini",lessonSection:"Testiculele — Spermatogeneza",lessonPage:"testiculele",text:"Gameții masculini se formează:",options:[{letter:"A",text:"la nivelul testiculului"},{letter:"B",text:"în ductul ejaculator"},{letter:"C",text:"la nivelul gonadei masculine"},{letter:"D",text:"prin spermatogeneză"},{letter:"E",text:"independent de factorii umorali"}],correct:["A","C","D"],explanations:{A:{isCorrect:true,text:"Corect. Spermatozoizii se formează la nivelul testiculului, în tubii seminiferi.",added:""},B:{isCorrect:false,text:"Greșit. Ductul ejaculator este doar o cale de transport, nu un loc de formare a gameților.",added:""},C:{isCorrect:true,text:"Corect. Gonada masculină = testiculul. Gameții masculini se formează în gonada masculină.",added:""},D:{isCorrect:true,text:"Corect. Procesul de formare a gameților masculini se numește spermatogeneză.",added:""},E:{isCorrect:false,text:"Greșit. Spermatogeneza este dependentă de factori umorali: FSH stimulează spermatogeneza prin celulele Sertoli, iar testosteronul (controlat de LH) este esențial.",added:""}}},
-  {id:12,topic:"Meioza I la spermatocit",lessonSection:"Testiculele — Spermatogeneza",lessonPage:"testiculele",text:"În timpul primei diviziuni meiotice, dintr-un spermatocit primar se formează:",options:[{letter:"A",text:"două spermatide"},{letter:"B",text:"două spermatocite secundare"},{letter:"C",text:"un spermatozoid"},{letter:"D",text:"un spermatocit secundar"},{letter:"E",text:"două spermatogonii"}],correct:["B"],explanations:{A:{isCorrect:false,text:"Greșit. Spermatidele se formează din spermatocitele SECUNDARE prin a DOUA diviziune meiotică (meioza II).",added:""},B:{isCorrect:true,text:"Corect. Prima diviziune meiotică (reducțională): 1 spermatocit primar (2n=46) → 2 spermatocite secundare (n=23).",added:""},C:{isCorrect:false,text:"Greșit. Spermatozoidul se formează din spermatidă prin spermiogeneză (diferențiere), nu din spermatocit primar direct.",added:""},D:{isCorrect:false,text:"Greșit. Se formează DOUĂ spermatocite secundare, nu unul singur. Meioza I produce 2 celule fiice.",added:""},E:{isCorrect:false,text:"Greșit. Spermatogoniile sunt celule stem care se află la baza tubilor seminiferi; ele se divid MITOTIC, nu sunt produse de meioza I.",added:""}}},
-  {id:13,topic:"Testiculele — caractere generale",lessonSection:"Testiculele — Structură și funcție",lessonPage:"testiculele",text:"Selectați afirmațiile corecte referitoare la testicule:",options:[{letter:"A",text:"sunt localizate în scrot"},{letter:"B",text:"asigură spermatogeneza"},{letter:"C",text:"produc hormoni sexuali masculini"},{letter:"D",text:"sunt organizate în lobuli"},{letter:"E",text:"au polul anterior și inferior acoperit de epididim"}],correct:["A","B","C","D"],explanations:{A:{isCorrect:true,text:"Corect. Testiculele sunt situate în scrot, exteriorul cavității abdominale.",added:""},B:{isCorrect:true,text:"Corect. Spermatogeneza (funcția exocrină) are loc în tubii seminiferi ai testiculului.",added:""},C:{isCorrect:true,text:"Corect. Celulele Leydig produc testosteron (funcția endocrină a testiculului).",added:""},D:{isCorrect:true,text:"Corect. Testiculul este împărțit de septuri conjunctive în aproximativ 250–300 lobuli, fiecare conținând 1–4 tubi seminiferi.",added:""},E:{isCorrect:false,text:"Greșit. Epididimul acoperă marginea POSTERIOARĂ a testiculului (nu polul anterior și inferior). Se întinde de la polul superior la polul inferior de-a lungul marginii posterioare.",added:""}}},
-  {id:14,topic:"Structura spermatozoidului",lessonSection:"Testiculele — Spermatozoizii",lessonPage:"testiculele",text:"Spermatozoizii prezintă:",options:[{letter:"A",text:"acrozom - care conține enzime cu rol în fertilizare"},{letter:"B",text:"piesa intermediară - lipsită de mitocondrii"},{letter:"C",text:"cap - cu un nucleu care conține 46 de cromozomi"},{letter:"D",text:"coadă - care acționează ca un flagel"},{letter:"E",text:"gât - care prezintă microtubuli, filamente groase și mitocondrii"}],correct:["A","D"],explanations:{A:{isCorrect:true,text:"Corect. Acrozomul (capișon al capului spermatozoidului) conține enzime hidrolitice (hialuronidaza, acrozina) necesare penetrării membranei ovocitului.",added:""},B:{isCorrect:false,text:"Greșit. Piesa intermediară CONȚINE mitocondrii dispuse helicoidal, care produc ATP-ul necesar mișcării cozii.",added:""},C:{isCorrect:false,text:"Greșit. Capul conține un nucleu cu 23 de cromozomi (spermatozoidul este HAPLOID, produsul meiozei).",added:""},D:{isCorrect:true,text:"Corect. Coada spermatozoidului este un flagel alcătuit din axonemă (9+2 microtubuli) care îi conferă motilitate.",added:""},E:{isCorrect:false,text:"Greșit. Mitocondriile se găsesc în PIESA INTERMEDIARĂ, nu în gât. Gâtul (piesă de legătură) este un segment scurt care conectează capul de piesa intermediară.",added:""}}},
-  {id:15,topic:"Celulele testiculare",lessonSection:"Testiculele — Tipuri celulare",lessonPage:"testiculele",text:"La nivelul testiculului întâlnim următoarele tipuri de celule:",options:[{letter:"A",text:"spermatozoizi - gameții masculini"},{letter:"B",text:"celule de susținere - facilitează contactul dintre spermatozoizi și sistemul imun"},{letter:"C",text:"celule interstițiale - secretă testosteron sub acțiunea hormonului luteinizant"},{letter:"D",text:"celule primordiale - formează prin diviziuni meiotice succesive spermatogonii"},{letter:"E",text:"celule sustentaculare - formează o barieră între vasele sanguine și tubii seminiferi"}],correct:["A","C","E"],explanations:{A:{isCorrect:true,text:"Corect. Spermatozoizii sunt prezenți în lumenul tubilor seminiferi, reprezentând stadiul final al spermatogenezei.",added:""},B:{isCorrect:false,text:"Greșit. Celulele de susținere (Sertoli/sustentaculare) ÎMPIEDICĂ contactul dintre spermatozoizi și sistemul imun, formând bariera hemato-testiculară care îi protejează de autoatac imunitar.",added:""},C:{isCorrect:true,text:"Corect. Celulele interstițiale Leydig, stimulate de LH, secretă testosteron.",added:""},D:{isCorrect:false,text:"Greșit. Spermatogoniile se formează din celulele stem germinale prin MITOZE, nu prin meiozăe. Meioza transformă spermatocitele, nu spermatogoniile.",added:""},E:{isCorrect:true,text:"Corect. Celulele sustentaculare (Sertoli) formează bariera hemato-testiculară prin joncțiuni strânse, izolând tubii seminiferi de circulația sanguină.",added:""}}},
-  {id:16,topic:"Uretra masculină",lessonSection:"Ducte — Uretra masculină",lessonPage:"ducte",text:"Selectați afirmațiile corecte referitoare la uretra masculină:",options:[{letter:"A",text:"are trei regiuni succesive: prostatică, peniană, membranoasă"},{letter:"B",text:"străbate corpul spongios al penisului/penisul până la vârf"},{letter:"C",text:"comunică cu vezica urinară la nivelul orificiului uretral extern"},{letter:"D",text:"constituie cale dublă, urinară și spermatică"},{letter:"E",text:"are o lungime de aproximativ 5 cm"}],correct:["B","D"],explanations:{A:{isCorrect:false,text:"Greșit. Ordinea corectă a celor trei segmente ale uretrei masculine este: prostatică → membranoasă → peniană (spongiasă).",added:""},B:{isCorrect:true,text:"Corect. Uretra peniană (spongiasă) parcurge corpul spongios al penisului de la bază până la orificiul uretral extern (meatul urinar).",added:""},C:{isCorrect:false,text:"Greșit. Uretra comunică cu vezica urinară la nivelul orificiului uretral INTERN (col vezical), nu extern. Orificiul extern este deschiderea la vârful penisului.",added:""},D:{isCorrect:true,text:"Corect. La bărbat, uretra servește atât eliminării urinei, cât și ejaculării spermei — constituind o cale dublă.",added:""},E:{isCorrect:false,text:"Greșit. Uretra masculină are aproximativ 20 cm lungime. Lungimea de ~4–5 cm este caracteristică uretrei FEMININE.",added:""}}},
-  {id:17,topic:"Rolul ductelor și glandelor anexe",lessonSection:"Ducte și organe anexe",lessonPage:"ducte",text:"Care dintre afirmațiile privind rolul ductelor și al glandelor anexe ale sistemului reproducător masculin sunt corecte?",options:[{letter:"A",text:"epididimul - sediul dobândirii mobilității spermatozoizilor"},{letter:"B",text:"vezicula seminală - secretă fluide nutritive, bogate în glucoză, necesare spermatozoizilor"},{letter:"C",text:"prostata - produce aproximativ 30% din volumul lichidului seminal"},{letter:"D",text:"glandele bulbouretrale - secretă mucus lubrifiant și substanțe acide care neutralizează alcalinitatea vaginală"},{letter:"E",text:"vezicula seminală - secretă un lichid alcalin, similar epididimului"}],correct:["A","C"],explanations:{A:{isCorrect:true,text:"Corect. Spermatozoizii câștigă mobilitatea în epididim, unde maturează timp de ~2-3 săptămâni.",added:""},B:{isCorrect:false,text:"Greșit. Veziculele seminale secretă lichid bogat în FRUCTOZĂ (nu glucoză) și prostaglandine. Fructoza furnizează energia necesară spermatozoizilor.",added:""},C:{isCorrect:true,text:"Corect. Prostata produce aproximativ 20–30% din volumul lichidului seminal, bogat în acid citric, zinc și enzime proteolitice.",added:""},D:{isCorrect:false,text:"Greșit. Glandele bulbouretrale (Cowper) secretă mucus lubrifiant ALCALIN care neutralizează aciditatea urinei reziduale din uretră și a mediului vaginal acid. Nu secretă substanțe acide.",added:""},E:{isCorrect:false,text:"Greșit. Vezicula seminală secretă lichid alcalin, dar nu similar epididimului. Epididimul nu secretă lichid seminal în același sens — el are rol de maturare și stocare, nu de secreție volumetrică.",added:""}}},
-  {id:18,topic:"Sistemul reproducător — afirmații generale",lessonSection:"Ducte și organe anexe",lessonPage:"ducte",text:"Selectați afirmațiile corecte:",options:[{letter:"A",text:"penisul conține trei organe erectile - corpul cavernos și corpii spongioși"},{letter:"B",text:"veziculele seminale secretă prostaglandine"},{letter:"C",text:"sistemul nervos parasimpatic produce vasodilatație arteriolară la nivelul țesutului erectil"},{letter:"D",text:"sperma conține secreția glandelor bulbouretrale, prostatei, veziculelor seminale, ovarelor și spermatozoizi"},{letter:"E",text:"lichidul spermatic conține și proteaze care previn fertilizarea"}],correct:["B","C"],explanations:{A:{isCorrect:false,text:"Greșit. Penisul conține DOI corpi cavernoși și UN corp spongios (total 3), dar formularea corectă este 'corpii cavernoși' (plural) și 'corpul spongios' (singular), nu invers.",added:""},B:{isCorrect:true,text:"Corect. Veziculele seminale secretă fructoză, prostaglandine și lichid alcalin — componente esențiale ale lichidului seminal.",added:""},C:{isCorrect:true,text:"Corect. Erecția este mediată de sistemul nervos parasimpatic prin vasodilatație arteriolară → umplerea corpilor cavernoși și spongios cu sânge.",added:""},D:{isCorrect:false,text:"Greșit. Sperma nu conține secreție ovariană. Componentele spermei sunt: spermatozoizi + secreții ale epididimului, veziculelor seminale, prostatei și glandelor bulbouretrale.",added:""},E:{isCorrect:false,text:"Greșit. Enzimele proteolitice din spermă (ex. acrozina) FACILITEAZĂ fertilizarea permițând penetrarea membranelor ovocitului. Nu previn fertilizarea.",added:""}}},
-  {id:19,topic:"Hormonul foliculostimulant (FSH)",lessonSection:"Hormoni masculini — FSH",lessonPage:"hormoni",text:"Hormonul foliculostimulant:",options:[{letter:"A",text:"este produs de hipotalamus sub acțiunea GnRH"},{letter:"B",text:"induce spermatogeneza la nivelul celulelor interstițiale testiculare"},{letter:"C",text:"inhibă maturarea tubilor seminiferi"},{letter:"D",text:"la nivelul tubilor seminiferi stimulează transformarea spermatogoniilor în gameți masculini"},{letter:"E",text:"produce și menține caracterele sexuale masculine"}],correct:["D"],explanations:{A:{isCorrect:false,text:"Greșit. FSH este produs de ADENOHIPOFIZĂ (hipofiza anterioară) sub stimularea GnRH hipotalamic. Hipotalamusul produce GnRH, adenohipofiza produce FSH.",added:""},B:{isCorrect:false,text:"Greșit. FSH acționează pe celulele Sertoli din tubii seminiferi, nu pe celulele interstițiale. Celulele interstițiale sunt stimulate de LH.",added:""},C:{isCorrect:false,text:"Greșit. FSH STIMULEAZĂ (nu inhibă) maturarea tubilor seminiferi și spermatogeneza.",added:""},D:{isCorrect:true,text:"Corect. FSH acționează asupra celulelor Sertoli din tubii seminiferi, stimulând producerea unor proteine care susțin transformarea spermatogoniilor în spermatozoizi.",added:""},E:{isCorrect:false,text:"Greșit. Caracterele sexuale secundare masculine sunt produse și menținute de TESTOSTERON, nu de FSH.",added:""}}},
-  {id:20,topic:"Testosteronul — afirmații false",lessonSection:"Hormoni masculini — Testosteronul",lessonPage:"hormoni",text:"Care dintre afirmațiile referitoare la testosteron sunt false?",options:[{letter:"A",text:"sinteza sa este reglată prin feedback pozitiv"},{letter:"B",text:"crește masa musculară dar nu influențează comportamentul sexual"},{letter:"C",text:"este secretat de celulele interstițiale sub acțiunea FSH-ului"},{letter:"D",text:"are efecte anabolizante asupra metabolismului proteic"},{letter:"E",text:"este un hormon androgen produs de testicule"}],correct:["A","B","C"],explanations:{A:{isCorrect:true,text:"Corect (afirmație falsă). Sinteza testosteronului este reglată prin mecanism de FEEDBACK NEGATIV: testosteron ↑ → inhibă GnRH și LH → testosteron ↓. Feedback-ul pozitiv ar fi destabilizator.",added:""},B:{isCorrect:true,text:"Corect (afirmație falsă). Testosteronul influențează atât masa musculară CÂT ȘI comportamentul sexual (libidoul, comportamentul agresiv etc.).",added:""},C:{isCorrect:true,text:"Corect (afirmație falsă). Testosteronul este secretat de celulele interstițiale sub acțiunea LH (nu FSH). FSH acționează pe celulele Sertoli.",added:""},D:{isCorrect:false,text:"Greșit (afirmație adevărată). Testosteronul ARE efecte anabolizante — stimulează sinteza proteică și creșterea masei musculare. Nu este o afirmație falsă.",added:""},E:{isCorrect:false,text:"Greșit (afirmație adevărată). Testosteronul ESTE un hormon androgen produs de testicule (celulele Leydig). Nu este o afirmație falsă.",added:""}}},
-  {id:21,topic:"Scrotul și prostata",lessonSection:"Ducte și organe anexe",lessonPage:"ducte",text:"Selectați afirmațiile corecte:",options:[{letter:"A",text:"în straturile profunde ale pielii scrotului se află mușchiul striat dartos"},{letter:"B",text:"scrotul este situat inferior de perineu"},{letter:"C",text:"rafeul este un mușchi subțire care compartimentează scrotul"},{letter:"D",text:"prostata este situată inferior de vezica urinară"},{letter:"E",text:"prostata se găsește in hipogastru"}],correct:["B","D","E"],explanations:{A:{isCorrect:false,text:"Greșit. Mușchiul dartos este un mușchi NETED (musculatură netedă), nu striat. Este responsabil de modificarea aspectului scrotal (ridare/netezire) în funcție de temperatură.",added:""},B:{isCorrect:true,text:"Corect. Scrotul este o structură situată inferior față de perineu, anterior față de anus.",added:""},C:{isCorrect:false,text:"Greșit. Rafeul scrotal este o linie mediană (cusătură externă vizibilă pe suprafața scrotului), nu un mușchi. Compartimentarea internă este realizată de septul scrotal conjunctiv.",added:""},D:{isCorrect:true,text:"Corect. Prostata este situată imediat inferior de vezica urinară, înconjurând uretra prostatică.",added:""},E:{isCorrect:true,text:"Corect. Hipogastrul (hipogastrium) desemnează etajul inferior al abdomenului/pelvisului, unde se găsește prostata.",added:""}}},
-  {id:22,topic:"Anatomia organelor reproductive — afirmații false",lessonSection:"Ducte și organe anexe",lessonPage:"ducte",text:"Care dintre următoarele afirmații sunt false?",options:[{letter:"A",text:"vezicula seminală este situată posterior de vezica urinară"},{letter:"B",text:"epididimul este situat posterior de testicul"},{letter:"C",text:"epididimul se găsește în scrot"},{letter:"D",text:"vezicula seminală se află anterior de rect"},{letter:"E",text:"prostata nu este străbătută de uretră"}],correct:["E"],explanations:{A:{isCorrect:false,text:"Adevărat (nu este falsă). Veziculele seminale sunt situate posterior și inferior de vezica urinară.",added:""},B:{isCorrect:false,text:"Adevărat (nu este falsă). Epididimul este adosat marginii posterioare a testiculului.",added:""},C:{isCorrect:false,text:"Adevărat (nu este falsă). Epididimul se găsește în scrot, alături de testicul.",added:""},D:{isCorrect:false,text:"Adevărat (nu este falsă). Veziculele seminale sunt situate anterior față de rect, posterior față de vezica urinară.",added:""},E:{isCorrect:true,text:"Corect (afirmație falsă). Prostata ESTE străbătută de uretra prostatică. Aceasta traversează prostata pe toată lungimea ei, de la colet vezical la baza prostatei.",added:""}}},
-  {id:23,topic:"Sistemul reproducător — afirmații adevărate",lessonSection:"Ducte și organe anexe",lessonPage:"ducte",text:"Despre sistemul reproducător masculin sunt adevărate următoarele afirmații:",options:[{letter:"A",text:"secreția prostatică îmbunătățește mobilitatea gameților masculini"},{letter:"B",text:"lichidul secretat de vezicula seminală conține doar nutrienți"},{letter:"C",text:"ductul deferent este locul unde spermatozoizii devin mobili"},{letter:"D",text:"atât prostata cât și glandele bulbouretrale secretă un lichid alcalin"},{letter:"E",text:"epididimul transportă spermatozoizii spre ductul ejaculator"}],correct:["A","D"],explanations:{A:{isCorrect:true,text:"Corect. Lichidul prostatic conține acid citric, zinc și enzime (PSA — antigen specific prostatic) care contribuie la lichefierea spermei și îmbunătățesc mobilitatea spermatozoizilor.",added:""},B:{isCorrect:false,text:"Greșit. Vezicula seminală secretă fructoză (nutrient), prostaglandine și lichid alcalin. NU secretă DOAR nutrienți.",added:""},C:{isCorrect:false,text:"Greșit. Spermatozoizii dobândesc mobilitatea în EPIDIDIM, nu în ductul deferent. Ductul deferent este doar cale de transport.",added:""},D:{isCorrect:true,text:"Corect. Atât prostata (lichid ușor alcalin, pH ~7.3) cât și glandele bulbouretrale (mucus alcalin) secretă lichide alcaline, contribuind la neutralizarea acidității vaginale.",added:""},E:{isCorrect:false,text:"Greșit. Epididimul transportă spermatozoizii spre DUCTUL DEFERENT, nu spre ductul ejaculator. Ductul deferent este cel care ajunge la ductul ejaculator.",added:""}}},
-  {id:24,topic:"Structura testiculului",lessonSection:"Testiculele — Structură",lessonPage:"testiculele",text:"Selectați afirmațiile corecte despre structura testiculului:",options:[{letter:"A",text:"conține țesut conjunctiv și celule endocrine"},{letter:"B",text:"ductul deferent transportă spermatozoizii spre ductul ejaculator"},{letter:"C",text:"testiculul produce atât gameți cât și hormoni"},{letter:"D",text:"stratul cel mai extern al tubilor seminiferi este alcătuit din spermatogonia"},{letter:"E",text:"celulele interstițiale dintre tubii seminiferi secretă testosteron"}],correct:["A","D"],explanations:{A:{isCorrect:true,text:"Corect (structural). Testiculul conține: stroma de țesut conjunctiv (septuri, tunica albuginee) și celule endocrine Leydig — componente structurale identificabile.",added:""},B:{isCorrect:false,text:"Greșit. Ductul deferent este un organ separat de testicul; nu face parte din STRUCTURA testiculului.",added:""},C:{isCorrect:false,text:"Greșit. Aceasta este o descriere FUNCȚIONALĂ, nu structurală. Întrebarea vizează structura (compoziția, organizarea) testiculului.",added:""},D:{isCorrect:true,text:"Corect (structural). La periferia tubilor seminiferi (stratul extern, adiacent membranei bazale) se găsesc spermatogoniile — celulele stem din care pornește spermatogeneza.",added:""},E:{isCorrect:false,text:"Greșit. Afirmația că celulele interstițiale 'secretă testosteron' este o descriere funcțională. Deși localizarea 'dintre tubi' este structurală, accentul pe secreție face afirmația funcțională.",added:""}}},
-  {id:25,topic:"Spermatogeneza — etape",lessonSection:"Testiculele — Spermatogeneza",lessonPage:"testiculele",text:"Selectați afirmațiile corecte despre spermatogeneză:",options:[{letter:"A",text:"spermatidele se divid și formează spermatozoi"},{letter:"B",text:"spermatocitele primare se găsesc la periferia tubilor seminiferi"},{letter:"C",text:"spermatocitele primare rezultă în urma unei diviziuni reducționale"},{letter:"D",text:"spermatidele rezultă în urma unei diviziuni meiotice"},{letter:"E",text:"spermatozoizii sunt haploizi"}],correct:["D","E"],explanations:{A:{isCorrect:false,text:"Greșit. Spermatidele NU se divid. Ele suferă un proces de diferențiere numit SPERMIOGENEZĂ (reorganizarea citoplasmei, formarea flagelului, condensarea nucleului) pentru a deveni spermatozoizi.",added:""},B:{isCorrect:false,text:"Greșit. La periferia tubilor seminiferi (stratul bazal) se găsesc SPERMATOGONIILE, nu spermatocitele primare. Spermatocitele primare sunt într-un strat mai intern.",added:""},C:{isCorrect:false,text:"Greșit. Spermatocitele primare rezultă din MITOZELE spermatogoniilor. Ele suferă ulterior PRIMA diviziune meiotică (reducțională) pentru a produce spermatocite secundare.",added:""},D:{isCorrect:true,text:"Corect. Spermatidele rezultă din spermatocitele secundare prin a DOUA diviziune meiotică (ecuațională). Spermatocit secundar (n=23) → 2 spermatide (n=23).",added:""},E:{isCorrect:true,text:"Corect. Spermatozoizii conțin 23 de cromozomi (haploizi, n), rezultat al meiozei care reduce numărul cromozomilor la jumătate.",added:""}}},
-  {id:26,topic:"Testosteron — afirmații false",lessonSection:"Hormoni masculini — Testosteronul",lessonPage:"hormoni",text:"Care dintre afirmațiile despre testosteron sunt false?",options:[{letter:"A",text:"este un hormon ce acționează pe celulele țintă după ce a strătbătut membrana celulară a celulei țintă"},{letter:"B",text:"contribuie la coborârea testiculelor în scrot"},{letter:"C",text:"stimulează sinteza de proteine în celulele țintă"},{letter:"D",text:"acționează doar după pubertate"},{letter:"E",text:"lipsa lui împiedică spermatogeneza"}],correct:["D"],explanations:{A:{isCorrect:false,text:"Adevărat (nu e falsă). Testosteronul este un hormon steroidic lipofilic care traversează membrana celulară și se leagă de receptori intracelulari.",added:""},B:{isCorrect:false,text:"Adevărat (nu e falsă). Testosteronul fetal contribuie la coborârea testiculelor din cavitatea abdominală în scrot (gubernaculum testis).",added:""},C:{isCorrect:false,text:"Adevărat (nu e falsă). Testosteronul are efect anabolic — stimulează sinteza proteică (creșterea masei musculare).",added:""},D:{isCorrect:true,text:"Corect (afirmație falsă). Testosteronul acționează ÎNCă din VIAȚA FETALĂ (diferențierea organelor sexuale masculine) și în copilărie (în cantități mici). Nu acționează DOAR după pubertate.",added:""},E:{isCorrect:false,text:"Adevărat (nu e falsă). Testosteronul este esențial pentru spermatogeneză; absența lui oprește producerea spermatozoizilor.",added:""}}},
-  {id:27,topic:"Gonadotropinele",lessonSection:"Hormoni masculini — Gonadotropine",lessonPage:"hormoni",text:"Despre gonadotropine sunt adevărate următoarele afirmații:",options:[{letter:"A",text:"sunt glicoproteine ce au receptori membranari la nivelul celulei țintă"},{letter:"B",text:"acționează prin intermediul unui mesager de ordinul 2"},{letter:"C",text:"GnRH este secretat de hipotalamus și ajunge la adenohipofiză prin sistemul port hipotalamo-hipofizar"},{letter:"D",text:"LH controlează funcția endocrină a testiculului"},{letter:"E",text:"FSH stimulează funcția exocrină a testiculului"}],correct:["A","B","D","E"],explanations:{A:{isCorrect:true,text:"Corect. FSH și LH sunt glicoproteine (au lanțuri glucidice) și acționează prin receptori de membrană de tip GPCR pe celulele țintă.",added:""},B:{isCorrect:true,text:"Corect. Gonadotropinele acționează prin receptori cuplați la proteina G → activarea adenilat-ciclazei → creșterea AMPc → activarea protein-kinazei A (mesager secund).",added:""},C:{isCorrect:false,text:"Greșit în context. GnRH (gonadoliberina) NU este o gonadotropină — este un hormon de eliberare. Gonadotropinele sunt FSH și LH (produse de adenohipofiză). GnRH le stimulează pe acestea.",added:""},D:{isCorrect:true,text:"Corect. LH controlează funcția endocrină a testiculului prin stimularea celulelor Leydig să producă testosteron.",added:""},E:{isCorrect:true,text:"Corect. FSH stimulează funcția exocrină a testiculului (spermatogeneza) acționând pe celulele Sertoli din tubii seminiferi.",added:""}}},
-  {id:28,topic:"Spermatozoizii — afirmații adevărate",lessonSection:"Testiculele — Spermatozoizii",lessonPage:"testiculele",text:"Despre spermatozoizi sunt adevărate următoarele afirmații:",options:[{letter:"A",text:"coada conține filamente subțiri, înconjurate de membrana celulară"},{letter:"B",text:"la nivelul gâtului se produce ATP-ul necesar mișcărilor cozii spermatozoidului"},{letter:"C",text:"în timpul dezvoltării, sunt protejați de reacțiile sistemului imunitar de către celulele sustentaculare"},{letter:"D",text:"la nivelul capului este prezent acrozomul care conține materialul genetic, cei 23 de cromozomi"},{letter:"E",text:"celulele interstițiale se găsesc între tubii seminiferi"}],correct:["C"],explanations:{A:{isCorrect:false,text:"Greșit. Coada/flagelul are o structură complexă (axonemă 9+2 microtubuli + fibre externe dense + teacă fibroasă), nu doar 'filamente subțiri înconjurate de membrană'.",added:""},B:{isCorrect:false,text:"Greșit. ATP-ul este produs de mitocondriile din PIESA INTERMEDIARĂ, nu la nivelul gâtului. Gâtul este un segment conector scurt.",added:""},C:{isCorrect:true,text:"Corect. Celulele Sertoli (sustentaculare) formează bariera hemato-testiculară, protejând spermatozoizii în curs de dezvoltare de sistemul imunitar (care altfel i-ar recunoaște ca antigeni străini).",added:""},D:{isCorrect:false,text:"Greșit. Acrozomul conține ENZIME (nu material genetic). Materialul genetic (23 cromozomi) se găsește în NUCLEUL din capul spermatozoidului, nu în acrozom.",added:""},E:{isCorrect:false,text:"Greșit. Afirmația despre celulele interstițiale este corectă anatomic, dar NU este o afirmație despre spermatozoizi — ci despre celulele Leydig.",added:""}}},
-  {id:29,topic:"Căile reproductive masculine",lessonSection:"Ducte și organe anexe",lessonPage:"ducte",text:"Despre căile sistemului reproducător masculin sunt adevărate următoarele afirmații:",options:[{letter:"A",text:"vas deferens ajunge în cavitatea abdominală"},{letter:"B",text:"testicul este învelit la exterior de tunica albugineă"},{letter:"C",text:"ductele ejaculatoare sunt lungi și traversează prostata"},{letter:"D",text:"vezicula seminală secretă prostaglandine"},{letter:"E",text:"glandele bulbouretrale secretă substanțe alcaline ca și prostata și vezicula seminală"}],correct:["A"],explanations:{A:{isCorrect:true,text:"Corect. Ductul deferent (vas deferens) urcă prin canalul inghinal și intră în cavitatea abdominală, înconjurând vezica urinară înainte de a se uni cu ductul veziculei seminale.",added:""},B:{isCorrect:false,text:"Greșit în context. Deși testiculul este acoperit de tunica albuginee (adevărat), acesta nu este o 'cale a sistemului reproducător' — este organul principal, nu o cale de transport.",added:""},C:{isCorrect:false,text:"Greșit. Ductele ejaculatoare sunt SCURTE (aproximativ 2 cm). Ele traversează prostata, dar nu sunt 'lungi'.",added:""},D:{isCorrect:false,text:"Greșit în context. Vezicula seminală este o glandă anexă, nu o 'cale' a sistemului reproducător.",added:""},E:{isCorrect:false,text:"Greșit în context. Glandele bulbouretrale sunt glande anexe, nu 'căi' ale sistemului reproducător.",added:""}}},
-  {id:30,topic:"Organele anexe",lessonSection:"Ducte și organe anexe",lessonPage:"ducte",text:"Despre organele anexe ale sistemului reproducător masculin sunt adevărate următoarele afirmații:",options:[{letter:"A",text:"veziculele seminale produc mai mult de jumătate din volumul total al lichidului seminal"},{letter:"B",text:"penisul este traversat de uretra masculină care este mai lungă decât cea feminină"},{letter:"C",text:"pH-ul lichidului din epididim este acid"},{letter:"D",text:"testiculul este alcătuit din mai mulți lobuli separați de septuri conjunctive"},{letter:"E",text:"epididimul se află în scrot care are pereți multistratidicați"}],correct:["A","B"],explanations:{A:{isCorrect:true,text:"Corect. Veziculele seminale produc aproximativ 60% din volumul lichidului seminal — cea mai mare contribuție dintre toate glandele.",added:""},B:{isCorrect:true,text:"Corect. Uretra masculină (~20 cm) este mult mai lungă decât uretra feminină (~4 cm). Penisul este traversat de uretra peniană.",added:""},C:{isCorrect:false,text:"Greșit. Lichidul din epididim are pH ușor acid în capul epididimului (pentru inhibarea temporară a motilității), dar nu 'acid' în sens general. Mediul spermatic total este alcalin.",added:""},D:{isCorrect:false,text:"Greșit în context. Deși testiculul este organizat în lobuli (adevărat), testiculul NU este un organ ANEXE — este organul principal (gonada).",added:""},E:{isCorrect:false,text:"Greșit. Scrotul nu are 'pereți multistratidicați' în sensul anatomic clasic. Peretele scrotal are mai multe straturi, dar termenul 'multistratidicați' este inexact în context.",added:""}}},
-  {id:31,topic:"Testiculele — caractere",lessonSection:"Testiculele — Structură și localizare",lessonPage:"testiculele",text:"Testiculele:",options:[{letter:"A",text:"au formă ovalară și aplatizată, localizate sub perineu și anterior de anus"},{letter:"B",text:"sunt localizate în scrot"},{letter:"C",text:"sunt separate de rafeul ce divide scrotul în două compartimente"},{letter:"D",text:"prezintă mușchiul dartos, mușchi de tip striat"},{letter:"E",text:"secretă testosteron și mici cantități de progesteron"}],correct:["A","B","C"],explanations:{A:{isCorrect:true,text:"Corect. Testiculele au formă ovalară-aplatizată și sunt localizate în scrot, care este inferior față de perineu și anterior față de anus.",added:""},B:{isCorrect:true,text:"Corect. Testiculele sunt localizate în scrot, în afara cavității abdominale.",added:""},C:{isCorrect:true,text:"Corect. Rafeul scrotal este linia mediană externă care marchează septul intern; acesta divide scrotul în două loje, câte una pentru fiecare testicul.",added:""},D:{isCorrect:false,text:"Greșit. Mușchiul dartos este de tip NETED (musculatură netedă involuntară), nu striat. Se contractă reflex la frig, ridate scrotul.",added:""},E:{isCorrect:false,text:"Greșit. Testiculele secretă testosteron în cantități mari și mici cantități de ESTROGEN (nu progesteron). Progesteronul este specific sistemului feminin.",added:""}}},
-  {id:32,topic:"Spermatogeneza — etape celulare",lessonSection:"Testiculele — Spermatogeneza",lessonPage:"testiculele",text:"Alegeți afirmațiile corecte despre spermatogeneză:",options:[{letter:"A",text:"prin diviziuni mitotice, spermatogoniile produc spermatocite primare"},{letter:"B",text:"spermatidele formează spermatogonii"},{letter:"C",text:"spermatocitele primare sunt celule cu 46 de cromozomi"},{letter:"D",text:"din prima fază a diviziunii meiotice rezultă spermatide, cu 23 de cromozomi"},{letter:"E",text:"spermatozoizii sunt prezenți în lumenul tubului seminifer"}],correct:["A","C","E"],explanations:{A:{isCorrect:true,text:"Corect. Spermatogoniile se divid MITOTIC pentru a produce spermatocite primare (2n=46). Spermatogoniile reprezintă celulele stem ale spermatogenezei.",added:""},B:{isCorrect:false,text:"Greșit. Spermatidele formează SPERMATOZOIZI prin diferențiere (spermiogeneză), nu spermatogonii. Direcția este: spermatidă → spermatozoid.",added:""},C:{isCorrect:true,text:"Corect. Spermatocitele primare sunt celule diploide (2n=46 cromozomi), rezultate din mitozele spermatogoniilor.",added:""},D:{isCorrect:false,text:"Greșit. Din prima diviziune meiotică rezultă SPERMATOCITE SECUNDARE (cu n=23 cromozomi), nu spermatide. Spermatidele apar după a doua diviziune meiotică.",added:""},E:{isCorrect:true,text:"Corect. Spermatozoizii complet formați se găsesc în lumenul tubilor seminiferi înainte de a trece în tubii drepți și mai departe spre epididim.",added:""}}},
-  {id:33,topic:"Structura spermatozoidului — detalii",lessonSection:"Testiculele — Spermatozoizii",lessonPage:"testiculele",text:"Alegeți afirmațiile corecte despre structura spermatozoizilor:",options:[{letter:"A",text:"sunt formați doar din cap și coadă"},{letter:"B",text:"capul conține un nucleu cu 46 de cromozomi"},{letter:"C",text:"acrozomul conține enzime cu rol în fertilizare"},{letter:"D",text:"la nivelul piesei intermediare se găsesc mitocondrii"},{letter:"E",text:"coada conține multiple filamente subțiri"}],correct:["C","D"],explanations:{A:{isCorrect:false,text:"Greșit. Spermatozoidul are 4 componente: cap (cu nucleu și acrozom), gât (piesă de legătură), piesă intermediară (cu mitocondrii) și coadă (flagel).",added:""},B:{isCorrect:false,text:"Greșit. Nucleul spermatozoidului conține 23 de cromozomi (haploid, n). Cei 46 de cromozomi (diploid, 2n) se refac la fertilizare.",added:""},C:{isCorrect:true,text:"Corect. Acrozomul este un capișon al capului spermatozoidului, derivat din aparatul Golgi, care conține enzime hidrolitice (hialuronidaza, acrozina) necesare penetrării zona pellucida.",added:""},D:{isCorrect:true,text:"Corect. Piesa intermediară conține mitocondrii dispuse helicoidal în jurul axonemei. Acestea produc ATP necesar mișcării flagelului.",added:""},E:{isCorrect:false,text:"Greșit. Coada este alcătuită din axonemă cu aranjament 9+2 (9 dublete periferice + 2 microtubuli centrali), nu simple 'filamente subțiri'. Este o structură complexă specifică flagelilor.",added:""}}},
-  {id:34,topic:"Epididimul",lessonSection:"Ducte — Epididimul",lessonPage:"ducte",text:"Epididimul:",options:[{letter:"A",text:"reprezintă subdiviziunea sistemului de ducte la nivelul căreia ajung spermatozoizii maturi și imobili din canalele eferente"},{letter:"B",text:"este un tub alungit situat de-a lungul marginii anterioare a testiculelor"},{letter:"C",text:"reprezintă locul de resorbție a spermatozoizilor deteriorați"},{letter:"D",text:"este locul în care spermatozoizii devin imobili"},{letter:"E",text:"continuă canalele eferente care provin din rețeaua testiculară"}],correct:["A","C","E"],explanations:{A:{isCorrect:true,text:"Corect. Spermatozoizii ajunși din canalele eferente în capul epididimului sunt IMOBILI și immaturi — maturarea și dobândirea motilității au loc în tranzitul prin epididim.",added:""},B:{isCorrect:false,text:"Greșit. Epididimul este situat de-a lungul marginii POSTERIOARE a testiculului, nu anterioare.",added:""},C:{isCorrect:true,text:"Corect. Spermatozoizii deteriorați sau neviabili sunt fagocitați și resorbiți de epididim — funcție importantă de control al calității.",added:""},D:{isCorrect:false,text:"Greșit. Spermatozoizii devin MOBILI (nu imobili) în epididim. Imobilitatea inițială se transformă în motilitate progresivă pe parcursul tranzitului epididimar.",added:""},E:{isCorrect:true,text:"Corect. Epididimul este continuarea directă a canalelor eferente (care provin din rețeaua testiculară/rete testis).",added:""}}},
-  {id:35,topic:"Ductul deferent",lessonSection:"Ducte — Ductul deferent",lessonPage:"ducte",text:"Ductul deferent:",options:[{letter:"A",text:"traversează canalul inghinal înspre cavitatea abdominală"},{letter:"B",text:"are un traseu medial de vezica urinară"},{letter:"C",text:"prezintă o porțiune lărgită numită ampulă"},{letter:"D",text:"împreună cu ductele care vin de la veziculele seminale formează ductele ejaculatoare"},{letter:"E",text:"traversează prostata"}],correct:["A","C","D"],explanations:{A:{isCorrect:true,text:"Corect. Ductul deferent urcă din scrot prin canalul inghinal și intră în cavitatea abdominală/pelvică.",added:""},B:{isCorrect:false,text:"Greșit. Ductul deferent are un traseu LATERAL față de vezica urinară (înconjurând-o lateral și posterior), nu medial.",added:""},C:{isCorrect:true,text:"Corect. Porțiunea terminală a ductului deferent se lărgește formând ampula, care se unește cu ductul veziculei seminale.",added:""},D:{isCorrect:true,text:"Corect. Ampula ductului deferent + ductul veziculei seminale = ductul ejaculator (bilateral). Ductele ejaculatoare traversează prostata.",added:""},E:{isCorrect:false,text:"Greșit. DUCTELE EJACULATOARE traversează prostata, nu ductul deferent. Ductul deferent se termină la nivelul bazei prostatei.",added:""}}},
-  {id:36,topic:"Uretra masculină — segmente",lessonSection:"Ducte — Uretra masculină",lessonPage:"ducte",text:"Despre uretra masculină sunt corecte afirmațiile:",options:[{letter:"A",text:"traversează prostata, planșeul muscular al cavității pelviene și penisul"},{letter:"B",text:"uretra prostatică primește secreția glandelor bulbo-uretrale"},{letter:"C",text:"uretra membranoasă este cea mai lungă"},{letter:"D",text:"uretra peniană se extinde prin penis la orificiul uretral extern"},{letter:"E",text:"uretra peniană primește secreția glandelor bulbo-uretrale"}],correct:["A","C","E"],explanations:{A:{isCorrect:true,text:"Corect. Uretra masculină traversează: (1) prostata — uretra prostatică, (2) planșeul pelvin — uretra membranoasă, (3) penisul — uretra peniană.",added:""},B:{isCorrect:false,text:"Greșit. Glandele bulbouretrale (Cowper) se deschid în uretra MEMBRANOASĂ/BULBARĂ (nu prostatică), în porțiunea de tranziție spre uretra peniană.",added:""},C:{isCorrect:true,text:"Corect conform clasificării din manualul de referință. Uretra peniană (spongiasă) reprezintă segmentul cel mai lung al uretrei masculine.",added:""},D:{isCorrect:false,text:"Greșit. Uretra peniană se extinde de la membrana perineală până la orificiul uretral extern, dar afirmația inversează logica — uretra nu 'se extinde' de la penis, ci parcurge penisul.",added:""},E:{isCorrect:true,text:"Corect. Glandele bulbouretrale se deschid în porțiunea inițială a uretrei spongiase (peniană), adăugând mucus lubrifiant înaintea ejaculării.",added:""}}},
-  {id:37,topic:"Vezicula seminală",lessonSection:"Ducte — Veziculele seminale",lessonPage:"ducte",text:"Selectați afirmațiile corecte referitoare la vezicula seminală:",options:[{letter:"A",text:"ductele ei fuzionează cu ductul deferent"},{letter:"B",text:"secretă prostaglandine"},{letter:"C",text:"produce un lichid acid"},{letter:"D",text:"lichidul produs reprezintă aproximativ 60% din volumul total al lichidului seminal"},{letter:"E",text:"este parte componentă a uretrei masculine"}],correct:["A","B","D"],explanations:{A:{isCorrect:true,text:"Corect. Ductul excretor al veziculei seminale fuzionează cu ampula ductului deferent pentru a forma ductul ejaculator.",added:""},B:{isCorrect:true,text:"Corect. Vezicula seminală secretă fructoză, prostaglandine și lichid alcalin. Prostaglandinele au rol în motilitatea spermatozoizilor și reacțiile mucoasei uterine.",added:""},C:{isCorrect:false,text:"Greșit. Vezicula seminală secretă un lichid ALCALIN (nu acid), bogat în fructoză — important pentru neutralizarea acidității vaginale și furnizarea energiei spermatozoizilor.",added:""},D:{isCorrect:true,text:"Corect. Veziculele seminale produc ~60% din volumul lichidului seminal, reprezentând cel mai mare aport din toate glandele.",added:""},E:{isCorrect:false,text:"Greșit. Vezicula seminală este o glandă anexă a sistemului reproducător, nu o componentă a uretrei masculine.",added:""}}},
-  {id:38,topic:"Prostata",lessonSection:"Ducte — Prostata",lessonPage:"ducte",text:"Prostata:",options:[{letter:"A",text:"secretă un lichid ce contribuie la mobilitatea spermatozoizilor"},{letter:"B",text:"înconjoară uretra"},{letter:"C",text:"secretă un lichid ușor alcalin"},{letter:"D",text:"prin creșterea în dimensiuni poate îngreuna urinarea"},{letter:"E",text:"are rol principal în spermatogeneză"}],correct:["A","B","C","D"],explanations:{A:{isCorrect:true,text:"Corect. Lichidul prostatic (PSA, acid citric, zinc) contribuie la lichefierea coagulului seminal și îmbunătățește mobilitatea spermatozoizilor.",added:""},B:{isCorrect:true,text:"Corect. Prostata înconjoară uretra prostatică imediat sub colul vezical. Această relație anatomică explică simptomele urinare din hipertrofia prostatică.",added:""},C:{isCorrect:true,text:"Corect. Lichidul prostatic are un pH ușor alcalin (~7.3), contribuind la alcalinizarea spermei pentru a contracara aciditatea vaginală.",added:""},D:{isCorrect:true,text:"Corect. Hipertrofia benignă de prostată (HBP) este frecventă la bărbații în vârstă și poate comprima uretra prostatică, îngreunând urinarea.",added:""},E:{isCorrect:false,text:"Greșit. Prostata NU are niciun rol în spermatogeneză. Spermatogeneza are loc exclusiv în tubii seminiferi ai testiculului.",added:""}}},
-  {id:39,topic:"Testosteronul — funcții",lessonSection:"Hormoni masculini — Testosteronul",lessonPage:"hormoni",text:"Testosteronul:",options:[{letter:"A",text:"este produs de celulele dintre tubii seminiferi"},{letter:"B",text:"secreția lui se află sub influența FSH-ului"},{letter:"C",text:"contribuie la coborârea testiculelor în scrot"},{letter:"D",text:"inhibă producerea de LH"},{letter:"E",text:"produce și menține caracterele sexuale secundare"}],correct:["A","C","D","E"],explanations:{A:{isCorrect:true,text:"Corect. Testosteronul este produs de celulele Leydig (interstițiale), situate DINTRE tubii seminiferi, în țesutul conjunctiv al testiculului.",added:""},B:{isCorrect:false,text:"Greșit. Secreția testosteronului se află sub influența LH (nu FSH). LH stimulează direct celulele Leydig.",added:""},C:{isCorrect:true,text:"Corect. Testosteronul fetal (și factorul 3 insulin-like al celulelor Leydig) mediază coborârea testiculelor din cavitatea abdominală în scrot.",added:""},D:{isCorrect:true,text:"Corect. Testosteronul inhibă secreția de LH (și GnRH) prin mecanism de feedback negativ, reglând propria producție.",added:""},E:{isCorrect:true,text:"Corect. Testosteronul determină la pubertate și menține ulterior: creșterea musculară, pilozitatea corporală, îngroșarea vocii, distribuția masculină a grăsimii corporale etc.",added:""}}},
-  {id:40,topic:"Reglarea axei hipotalamo-hipofizo-gonadale",lessonSection:"Hormoni masculini — Reglarea hormonală",lessonPage:"hormoni",text:"Alegeți afirmațiile corecte:",options:[{letter:"A",text:"FSH-ul stimulează maturarea tubilor seminiferi și producerea spermei"},{letter:"B",text:"LH-ul stimulează maturarea celulelor interstițiale"},{letter:"C",text:"LH-ul determină coborârea testiculelor în scrot"},{letter:"D",text:"testosteronul se află sub controlul FSH-ului"},{letter:"E",text:"hipotalamusul controlează direct secreția de testosteron"}],correct:["A","B"],explanations:{A:{isCorrect:true,text:"Corect. FSH stimulează celulele Sertoli și spermatogeneza în tubii seminiferi, contribuind la maturarea tubilor și producerea spermei.",added:""},B:{isCorrect:true,text:"Corect. LH stimulează maturarea și activarea funcțională a celulelor interstițiale Leydig, determinând producerea testosteronului.",added:""},C:{isCorrect:false,text:"Greșit. Coborârea testiculelor în scrot este determinată de TESTOSTERON (și INSL3 — factor insulin-like 3 al celulelor Leydig), nu de LH direct.",added:""},D:{isCorrect:false,text:"Greșit. Testosteronul se află sub controlul LH (nu FSH). LH → celule Leydig → testosteron.",added:""},E:{isCorrect:false,text:"Greșit. Hipotalamusul controlează secreția de testosteron INDIRECT, prin axa: hipotalamus → GnRH → adenohipofiză → LH → testicul → testosteron.",added:""}}},
-  {id:41,topic:"Testiculul — structură",lessonSection:"Testiculele — Structură",lessonPage:"testiculele",text:"Testiculul:",options:[{letter:"A",text:"este un organ aplatizat cu lungime de aproximativ 2,5 cm"},{letter:"B",text:"se găsește în scrot, o structură care are în straturile profunde ale pielii un mușchi format din fibre musculare cu mulți nuclei situați periferic"},{letter:"C",text:"conține spermatogonii care prin diviziuni mitotice formează celule care sunt împinse spre exteriorul tubului seminifer"},{letter:"D",text:"conține tubii drepți ce se deschid în rețeaua testiculară"},{letter:"E",text:"de-a lungul marginii anterioare are atașat epididimul"}],correct:["D"],explanations:{A:{isCorrect:false,text:"Greșit. Testiculul are formă ovalară, nu aplatizată. Lungimea sa este de aproximativ 4–5 cm, nu 2,5 cm — 2,5 cm reprezintă lățimea, nu lungimea.",added:""},B:{isCorrect:false,text:"Greșit. Mușchiul dartos din scrot este alcătuit din fibre musculare NETEDE, nu striate. Fibrele musculare netede au un singur nucleu central, nu nuclei multipli periferici — aceasta este caracteristica fibrelor striate.",added:""},C:{isCorrect:false,text:"Greșit. Spermatogoniile se divid mitotic, iar celulele rezultate sunt împinse spre INTERIORUL (lumenul) tubului seminifer, nu spre exterior. Maturarea spermatogenetică progresează de la periferie spre centrul tubului.",added:""},D:{isCorrect:true,text:"Corect. Tubii drepți (tubuli recti) sunt porțiunea terminală a tubilor seminiferi și se deschid în rețeaua testiculară (rete testis), continuând traseul de transport al spermatozoizilor.",added:""},E:{isCorrect:false,text:"Greșit. Epididimul este atașat de-a lungul marginii POSTERIOARE a testiculului, nu anterioare. Acoperă marginea posterioară de la polul superior la polul inferior.",added:""}}},
-  {id:42,topic:"Spermatogeneza — afirmații adevărate",lessonSection:"Testiculele — Spermatogeneza",lessonPage:"testiculele",text:"Care dintre următoarele afirmații legate de spermatogeneză sunt adevărate?",options:[{letter:"A",text:"începe la nivelul stratului intern de celule germinale din tubii seminiferi"},{letter:"B",text:"spermatogoniile sunt celule diploide"},{letter:"C",text:"spermatocitele primare sunt celule haploide"},{letter:"D",text:"spermatocitele secundare conțin 23 cromozomi"},{letter:"E",text:"în faza a II-a a meiozei, la început are loc replicarea ADN-ului întrucât dintr-o celulă cu 23 cromozomi rezultă două spermatide cu 23 cromozomi fiecare"}],correct:["B","D"],explanations:{A:{isCorrect:false,text:"Greșit. Spermatogeneza începe în stratul EXTERN (periferic) al tubilor seminiferi, unde se află spermatogoniile adosate membranei bazale. Celulele mature se găsesc spre interiorul (lumenul) tubului.",added:""},B:{isCorrect:true,text:"Corect. Spermatogoniile sunt celule stem diploide (2n = 46 cromozomi), situate la periferia tubilor seminiferi, din care pornește spermatogeneza.",added:""},C:{isCorrect:false,text:"Greșit. Spermatocitele primare sunt celule DIPLOIDE (2n = 46 cromozomi). Ele devin haploide abia după prima diviziune meiotică, producând spermatocite secundare cu n = 23 cromozomi.",added:""},D:{isCorrect:true,text:"Corect. Spermatocitele secundare rezultă din prima diviziune meiotică (reducțională) și conțin 23 de cromozomi (n) — sunt celule haploide.",added:""},E:{isCorrect:false,text:"Greșit. În faza a II-a a meiozei NU are loc replicarea ADN-ului. Meioza II este o diviziune ecuațională (similară mitozei) fără fază S de replicare prealabilă. Absența replicării este esențială pentru menținerea numărului haploid.",added:""}}},
-  {id:43,topic:"Spermatozoidul — structură și proprietăți",lessonSection:"Testiculele — Spermatozoizii",lessonPage:"testiculele",text:"Spermatozoidul:",options:[{letter:"A",text:"conține la nivelul acrozomului hormoni cu rol în fertilizare"},{letter:"B",text:"piesa intermediară conține mitocondrii pentru producerea ATP-ului"},{letter:"C",text:"în curs de dezvoltare este protejat de sistemul imunitar prin celulele interstițiale"},{letter:"D",text:"producerea sa este favorizată de un hormon produs de celulele de susținere"},{letter:"E",text:"este o celulă haploidă"}],correct:["B","E"],explanations:{A:{isCorrect:false,text:"Greșit. Acrozomul conține ENZIME hidrolitice (hialuronidaza, acrozina) necesare penetrării zonei pellucida a ovocitului — nu hormoni.",added:""},B:{isCorrect:true,text:"Corect. Piesa intermediară conține mitocondrii dispuse helicoidal în jurul axonemei. Acestea produc prin fosforilare oxidativă ATP-ul necesar mișcării flagelului.",added:""},C:{isCorrect:false,text:"Greșit. Spermatozoizii în curs de dezvoltare sunt protejați de atacul sistemului imunitar prin celulele SUSTENTACULARE (Sertoli), nu interstițiale. Celulele Sertoli formează bariera hemato-testiculară.",added:""},D:{isCorrect:false,text:"Greșit. Celulele de susținere (Sertoli) nu produc hormoni care să favorizeze direct producerea spermatozoizilor. FSH (din adenohipofiză) stimulează celulele Sertoli, iar testosteronul (din celulele Leydig) este esențial pentru spermatogeneză.",added:""},E:{isCorrect:true,text:"Corect. Spermatozoidul este o celulă haploidă (n = 23 cromozomi), rezultat final al meiozei și al spermiogenezei.",added:""}}},
-  {id:44,topic:"Epididimul — caractere",lessonSection:"Ducte — Epididimul",lessonPage:"ducte",text:"Epididimul:",options:[{letter:"A",text:"conține spermatozoizi ce ajung în canalele eferente"},{letter:"B",text:"continuă ductul deferent"},{letter:"C",text:"se găsește în scrot"},{letter:"D",text:"traversează canalul inghinal"},{letter:"E",text:"conține un lichid cu pH acid"}],correct:["C","E"],explanations:{A:{isCorrect:false,text:"Greșit. Direcția este inversă: canalele eferente transportă spermatozoizii din rețeaua testiculară SPRE epididim, nu invers. Spermatozoizii ajung DIN canalele eferente ÎN capul epididimului.",added:""},B:{isCorrect:false,text:"Greșit. Epididimul se continuă cu ductul deferent (coada epididimului → ductul deferent), nu invers. Epididimul continuă canalele eferente, iar coada sa este continuată de ductul deferent.",added:""},C:{isCorrect:true,text:"Corect. Epididimul se găsește în scrot, adosat marginii posterioare a testiculului, împreună cu care alcătuiește conținutul principal al scrotului.",added:""},D:{isCorrect:false,text:"Greșit. Epididimul NU traversează canalul inghinal. Canalul inghinal este traversat de ductul deferent, în drumul său spre cavitatea abdominală.",added:""},E:{isCorrect:true,text:"Corect. Lichidul epididimar are pH ușor acid, datorat produșilor de metabolism ai spermatozoizilor. Acest mediu acid inhibă temporar motilitatea spermatozoizilor, conservând energia până la ejaculare.",added:""}}},
-  {id:45,topic:"Sistemul reproducător masculin — afirmații adevărate",lessonSection:"Ducte și organe anexe",lessonPage:"ducte",text:"Care dintre următoarele afirmații cu privire la sistemul reproducător masculin sunt adevărate?",options:[{letter:"A",text:"ductul deferent străbate prostata"},{letter:"B",text:"vezicula seminală secretă prostaglandine"},{letter:"C",text:"celulele interstițiale funcționează ca o barieră între vasele de sânge și tubii seminiferi"},{letter:"D",text:"spermatocitele primare conțin 46 cromozomi"},{letter:"E",text:"prostata conține fibre musculare netede"}],correct:["B","D","E"],explanations:{A:{isCorrect:false,text:"Greșit. Prostata este traversată de DUCTELE EJACULATOARE (formate din unirea ductului deferent cu ductul veziculei seminale), nu de ductul deferent însuși.",added:""},B:{isCorrect:true,text:"Corect. Veziculele seminale secretă un lichid vâscos alcalin bogat în fructoză și PROSTAGLANDINE, care contribuie la motilitatea spermatozoizilor și reacțiile uterine.",added:""},C:{isCorrect:false,text:"Greșit. Bariera hemato-testiculară dintre vasele de sânge și tubii seminiferi este formată de celulele SUSTENTACULARE (Sertoli), nu de celulele interstițiale (Leydig).",added:""},D:{isCorrect:true,text:"Corect. Spermatocitele primare sunt celule diploide (2n = 46 cromozomi), rezultate din mitozele spermatogoniilor, înainte de a intra în prima diviziune meiotică.",added:""},E:{isCorrect:true,text:"Corect. Stroma prostatei conține fibre musculare netede care contribuie la expulzarea lichidului prostatic în timpul ejaculării.",added:""}}},
-  {id:46,topic:"Sistemul reproducător masculin — afirmații false",lessonSection:"Ducte și organe anexe",lessonPage:"ducte",text:"Care dintre următoarele afirmații cu privire la sistemul reproducător masculin sunt false?",options:[{letter:"A",text:"în cavitatea abdominală ductul deferent trece pe marginea postero-inferioară a prostatei"},{letter:"B",text:"lichidul produs de veziculele seminale reprezintă aproximativ 30% din volumul total al lichidului seminal"},{letter:"C",text:"la nivelul testiculului există septuri ce delimitează lobulii"},{letter:"D",text:"în porțiunea inițială, ductul deferent prezintă o dilatație, ampula"},{letter:"E",text:"GnRH-ul hipofizar este implicat într-un mecanism de feedback negativ"}],correct:["A","B","D","E"],explanations:{A:{isCorrect:true,text:"Corect (afirmație falsă). În cavitatea abdominală, ductul deferent înconjoară VEZICA URINARĂ (lateral și posterior), nu prostata. El ajunge la marginea postero-inferioară a vezicii, nu a prostatei.",added:""},B:{isCorrect:true,text:"Corect (afirmație falsă). Veziculele seminale produc aproximativ 60% (nu 30%) din volumul total al lichidului seminal. 30% reprezintă contribuția prostatei.",added:""},C:{isCorrect:false,text:"Adevărat (nu este falsă). La nivelul testiculului există septurile conjunctive care se desprind din tunica albuginee și delimitează cei aproximativ 250–300 lobuli testiculari.",added:""},D:{isCorrect:true,text:"Corect (afirmație falsă). Ampula ductului deferent se găsește în porțiunea TERMINALĂ (nu inițială) a acestuia, imediat înainte de unirea cu ductul veziculei seminale pentru a forma ductul ejaculator.",added:""},E:{isCorrect:true,text:"Corect (afirmație falsă). GnRH este un hormon HIPOTALAMIC, nu hipofizar. GnRH stimulează adenohipofiza să secrete FSH și LH. Feedbackul negativ este exercitat de testosteron asupra hipotalamusului și adenohipofizei.",added:""}}},
-  {id:47,topic:"Prostata — caractere",lessonSection:"Ducte — Prostata",lessonPage:"ducte",text:"Prostata:",options:[{letter:"A",text:"este o glandă pereche"},{letter:"B",text:"este străbătută de ductele ejaculatoare"},{letter:"C",text:"secretă un lichid puternic alcalin"},{letter:"D",text:"înconjoară porțiunea proximală a ureterului"},{letter:"E",text:"vine în raport posterior cu rectul"}],correct:["B","E"],explanations:{A:{isCorrect:false,text:"Greșit. Prostata este o glandă IMPARĂ (unică), situată median sub vezica urinară. Glandele pereche ale sistemului reproducător masculin sunt veziculele seminale și glandele bulbouretrale.",added:""},B:{isCorrect:true,text:"Corect. Ductele ejaculatoare (formate prin unirea ampulei ductului deferent cu ductul veziculei seminale) traversează prostata și se deschid în uretra prostatică la nivelul colliculus seminalis.",added:""},C:{isCorrect:false,text:"Greșit. Prostata secretă un lichid UȘOR alcalin (pH ~7,3), nu puternic alcalin. Lichidul bogat în conținut alcalin este produs de veziculele seminale. Lichidul prostatic conține acid citric, zinc și PSA.",added:""},D:{isCorrect:false,text:"Greșit. Prostata înconjoară porțiunea proximală a URETREI (uretra prostatică), nu ureterului. Ureterele leagă rinichii de vezica urinară și nu trec prin prostată.",added:""},E:{isCorrect:true,text:"Corect. Prostata vine în raport posterior cu rectul, fapt exploatat clinic în examinarea rectală digitală (tușeu rectal) pentru evaluarea prostatei.",added:""}}},
-  {id:48,topic:"Sistemul reproducător masculin — afirmații adevărate",lessonSection:"Ducte și organe anexe",lessonPage:"ducte",text:"Următoarele afirmații cu privire la sistemul reproducător masculin sunt adevărate:",options:[{letter:"A",text:"FSH-ul stimulează producția celulelor interstițiale testiculare"},{letter:"B",text:"la nivelul penisului există 2 corpi spongioși"},{letter:"C",text:"testosteronul este un hormon anabolizant proteic"},{letter:"D",text:"epididimul este o extensie tubulară a ductului deferent"},{letter:"E",text:"veziculele seminale vin în raport cu fața posterioară a vezicii urinare"}],correct:["C","E"],explanations:{A:{isCorrect:false,text:"Greșit. FSH acționează pe celulele SERTOLI (sustentaculare), stimulând spermatogeneza. Celulele interstițiale (Leydig) sunt stimulate de LH, nu de FSH.",added:""},B:{isCorrect:false,text:"Greșit. La nivelul penisului există UN singur corp spongios (corpus spongiosum) și DOI corpi cavernoși (corpora cavernosa) — total 3 formațiuni erectile.",added:""},C:{isCorrect:true,text:"Corect. Testosteronul are efect anabolic proteic puternic — stimulează sinteza proteinelor musculare și crește masa musculară.",added:""},D:{isCorrect:false,text:"Greșit. Epididimul NU este o extensie a ductului deferent. Relația este inversă: epididimul continuă canalele eferente, iar coada sa se continuă cu ductul deferent.",added:""},E:{isCorrect:true,text:"Corect. Veziculele seminale sunt situate posterior față de vezica urinară, venind în raport cu fața posterioară a acesteia, superior față de prostată.",added:""}}},
-  {id:49,topic:"Sistemul reproducător masculin — afirmații false",lessonSection:"Ducte și organe anexe",lessonPage:"ducte",text:"Următoarele afirmații cu privire la sistemul reproducător masculin sunt false:",options:[{letter:"A",text:"componenta parasimpatică vagală determină dilatarea arteriolelor din țesutul erectil penian"},{letter:"B",text:"volumul cel mai mare din lichidul seminal este produs de veziculele seminale"},{letter:"C",text:"capul epididimului se continuă cu ductul deferent"},{letter:"D",text:"uretra membranoasă străbate planșeul muscular al cavității pelviene"},{letter:"E",text:"testosteronul acționează asupra celulelor țintă prin fixarea de receptori membranari specifici"}],correct:["A","C","E"],explanations:{A:{isCorrect:true,text:"Corect (afirmație falsă). Erecția este mediată de componenta parasimpatică SACRALĂ (nervii pelvici, S2–S4), nu vagală. Nervul vag (X) inervează organe toracice și abdominale, nu organele pelvine.",added:""},B:{isCorrect:false,text:"Adevărat (nu este falsă). Veziculele seminale produc aproximativ 60% din volumul total al lichidului seminal — cel mai mare aport dintre toate glandele.",added:""},C:{isCorrect:true,text:"Corect (afirmație falsă). COADA epididimului se continuă cu ductul deferent, nu capul. Capul (caput) epididimului primește spermatozoizii din canalele eferente.",added:""},D:{isCorrect:false,text:"Adevărat (nu este falsă). Uretra membranoasă traversează diafragma urogenitală (planșeul muscular al cavității pelviene), reprezentând cel mai scurt și mai îngust segment al uretrei masculine.",added:""},E:{isCorrect:true,text:"Corect (afirmație falsă). Testosteronul este un hormon STEROIDIC (lipofilic) care traversează membrana celulară și se leagă de RECEPTORI INTRACELULARI, nu membranari. Receptorii membranari sunt caracteristici hormonilor polipeptidici (FSH, LH).",added:""}}},
-  {id:50,topic:"Sistemul reproducător masculin — afirmații adevărate",lessonSection:"Ducte și organe anexe",lessonPage:"ducte",text:"Care dintre următoarele afirmații cu privire la sistemul reproducător masculin sunt adevărate?",options:[{letter:"A",text:"asupra testiculului acționează hormoni cu structură glicoproteică"},{letter:"B",text:"coada spermatozoidului conține filamente groase"},{letter:"C",text:"spermatidele sunt celule haploide"},{letter:"D",text:"artera testiculară provine din iliaca internă"},{letter:"E",text:"vena gonadală stângă este afluent al venei renale stângi"}],correct:["A","B","C","E"],explanations:{A:{isCorrect:true,text:"Corect. FSH și LH sunt hormoni glicoproteici (au lanțuri glucidice atașate) care acționează pe celulele testiculare prin receptori membranari specifici.",added:""},B:{isCorrect:true,text:"Corect. Flagelul spermatozoidului conține, pe lângă axonemă (9+2 microtubuli), și filamente groase externe (outer dense fibers) care conferă rigiditate și eficiență mișcării.",added:""},C:{isCorrect:true,text:"Corect. Spermatidele rezultă din a doua diviziune meiotică și sunt celule haploide (n = 23 cromozomi). Prin spermiogeneză se diferențiază în spermatozoizi, tot haploizi.",added:""},D:{isCorrect:false,text:"Greșit. Artera testiculară (gonadală) provine direct din AORTA ABDOMINALĂ, nu din iliaca internă — fapt ce reflectă originea embriologică a testiculelor în cavitatea abdominală.",added:""},E:{isCorrect:true,text:"Corect. Vena gonadală stângă (testiculară stângă) se varsă în VENA RENALĂ STÂNGĂ, spre deosebire de vena gonadală dreaptă care se varsă direct în vena cavă inferioară.",added:""}}},
-  {id:51,topic:"A doua diviziune meiotică",lessonSection:"Testiculele — Spermatogeneza",lessonPage:"testiculele",text:"A doua diviziune meiotică este asigurată prin:",options:[{letter:"A",text:"metafaza II - când centromerii se aliniază la placa metafazică"},{letter:"B",text:"interfaza - faza de replicare masivă a ADN-ului"},{letter:"C",text:"profaza II - în care cromozomii se condensează și se deplasează spre periferia celulei"},{letter:"D",text:"anafaza II - ce asigură clivarea centromerilor, cromozomii deplasându-se spre polii opuși"},{letter:"E",text:"telofaza II și citokineza - care duc la formarea a două celule fiice haploide"}],correct:["A","D"],explanations:{A:{isCorrect:true,text:"Corect. În metafaza II, centromerii cromozomilor (fiecare alcătuit din 2 cromatide surori) se aliniază la placa ecuatorială/metafazică, pregătind separarea cromatidelor surori în anafaza II.",added:""},B:{isCorrect:false,text:"Greșit. Interfaza cu replicare masivă a ADN-ului (faza S) precedă meioza I. Între meioza I și meioza II există o interfază scurtă fără replicare ADN — absența replicării este esențială pentru reducerea numărului de cromozomi.",added:""},C:{isCorrect:false,text:"Greșit. În profaza II cromozomii se condensează (corect), dar NU se deplasează spre periferia celulei. Deplasarea spre periferie nu este o etapă specifică meiozei II.",added:""},D:{isCorrect:true,text:"Corect. Anafaza II este etapa cheie a meiozei II: centromerii se clivează (se separă cromatidele surori), iar cromozomii (fostele cromatide) migrează spre polii opuși ai celulei.",added:""},E:{isCorrect:false,text:"Greșit. Din perspectiva procesului complet, din un spermatocit primar se formează 4 spermatide (nu 2). Telofaza II și citokineza produc 2 celule fiice dintr-un spermatocit secundar, dar afirmația că 'duc la formarea a două celule haploide' simplifică incorect întregul proces meioticul.",added:""}}},
-  {id:52,topic:"Anatomia sistemului reproducător — enunțuri corecte",lessonSection:"Ducte și organe anexe",lessonPage:"ducte",text:"Următoarele enunțuri sunt corecte:",options:[{letter:"A",text:"mușchiul dartos se află în straturile superficiale ale pielii scrotului"},{letter:"B",text:"rafeul scrotal delimitează compartimentele testiculare"},{letter:"C",text:"prostata se află posterior față de vezica urinară"},{letter:"D",text:"ductul ejaculator se deschide la nivelul uretrei prostatice"},{letter:"E",text:"epididimul este localizat de-a lungul marginii posterioare a testiculului"}],correct:["B","D","E"],explanations:{A:{isCorrect:false,text:"Greșit. Mușchiul dartos se află în straturile PROFUNDE ale pielii scrotului (nu superficiale), imediat sub derm. Este un mușchi neted responsabil de modificarea aspectului scrotal la variații de temperatură.",added:""},B:{isCorrect:true,text:"Corect. Rafeul scrotal este linia mediană vizibilă extern, iar intern septul conjunctiv corespunzător delimitează cele două compartimente testiculare.",added:""},C:{isCorrect:false,text:"Greșit. Prostata se află INFERIOR față de vezica urinară, nu posterior. Posterior față de prostată se găsește rectul.",added:""},D:{isCorrect:true,text:"Corect. Ductele ejaculatoare traversează prostata și se deschid în uretra prostatică, la nivelul colliculus seminalis (veru montanum).",added:""},E:{isCorrect:true,text:"Corect. Epididimul este un organ alungit situat de-a lungul marginii posterioare a testiculului, de la polul superior (capul/caput) la polul inferior (coada/cauda).",added:""}}},
-  {id:53,topic:"Spermatozoidul — afirmații",lessonSection:"Testiculele — Spermatozoizii",lessonPage:"testiculele",text:"Despre spermatozoid se pot afirma următoarele:",options:[{letter:"A",text:"capul conține nucleu cu 46 de cromozomi"},{letter:"B",text:"la nivelul acrozomului conține enzime cu rol în fertilizare"},{letter:"C",text:"gâtul, foarte scurt, conține microtubuli înconjurați de mitocondrii"},{letter:"D",text:"coada conține filamente groase înconjurate de un înveliș membranos"},{letter:"E",text:"este mobil datorită acțiunii cozii ca un flagel"}],correct:["B","D","E"],explanations:{A:{isCorrect:false,text:"Greșit. Nucleul spermatozoidului conține 23 de cromozomi (celulă HAPLOIDĂ, n). Cele 46 de cromozomi (diploid, 2n) se reconstituie la fertilizare, prin unirea spermatozoidului cu ovocitul.",added:""},B:{isCorrect:true,text:"Corect. Acrozomul conține enzime hidrolitice (hialuronidaza, acrozina, proteaze) esențiale pentru penetrarea straturilor protectoare ale ovocitului în timpul fertilizării.",added:""},C:{isCorrect:false,text:"Greșit. Mitocondriile se găsesc în PIESA INTERMEDIARĂ, nu în gât. Gâtul (piesă de legătură, foarte scurt) conține centrioli și structuri de ancorare.",added:""},D:{isCorrect:true,text:"Corect. Coada (flagelul) spermatozoidului conține filamente groase externe (outer dense fibers) dispuse în jurul axonemei, totul învelit de membrana plasmatică.",added:""},E:{isCorrect:true,text:"Corect. Spermatozoidul este mobil datorită mișcărilor ondulatorii ale cozii (flagelului), generate de interacțiunea dineinei cu microtubulii axonemei, alimentată de ATP-ul mitocondrial.",added:""}}},
-  {id:54,topic:"Sistemul reproducător masculin — afirmații corecte",lessonSection:"Ducte și organe anexe",lessonPage:"ducte",text:"Selectați afirmațiile corecte:",options:[{letter:"A",text:"uretra prostatică străbate planșeul muscular al cavității pelviene"},{letter:"B",text:"uretra peniană primește secreția veziculelor seminale"},{letter:"C",text:"ductul veziculei seminale se unește cu ductul deferent"},{letter:"D",text:"prostata secretă hormoni cunoscuți sub numele de prostaglandine"},{letter:"E",text:"ductul deferent trece medial de vezicula seminală"}],correct:["C","E"],explanations:{A:{isCorrect:false,text:"Greșit. Planșeul muscular al cavității pelviene (diafragma urogenitală) este traversat de uretra MEMBRANOASĂ, nu prostatică. Uretra prostatică traversează prostata.",added:""},B:{isCorrect:false,text:"Greșit. Veziculele seminale se deschid în ductele ejaculatoare, care se varsă în uretra PROSTATICĂ. Uretra peniană primește secreția glandelor bulbouretrale (Cowper).",added:""},C:{isCorrect:true,text:"Corect. Ductul excretor al fiecărei vezicule seminale se unește cu ampula ductului deferent ipsilateral, formând împreună ductul ejaculator (bilateral).",added:""},D:{isCorrect:false,text:"Greșit. Prostaglandinele sunt secretate de VEZICULELE SEMINALE, nu de prostată. Prostata secretă acid citric, zinc și PSA (antigen specific prostatic).",added:""},E:{isCorrect:true,text:"Corect. În drumul său spre baza prostatei, ductul deferent trece MEDIAL față de vezicula seminală, convergând cu aceasta pentru a forma ductul ejaculator.",added:""}}},
-  {id:55,topic:"Prima diviziune meiotică",lessonSection:"Testiculele — Spermatogeneza",lessonPage:"testiculele",text:"Prima diviziune meiotică include următoarele procese:",options:[{letter:"A",text:"anafaza I - cromozomii pereche se separă și se deplasează spre polii opuși ai celulei"},{letter:"B",text:"profaza I - cromatidele cromozomilor omologi formează chiasme"},{letter:"C",text:"telofaza I și citokineza - cromozomii pereche sunt distribuiți inegal între cele două celule fiice"},{letter:"D",text:"metafaza I - cromozomii pereche se aliniază în placa ecuatorială"},{letter:"E",text:"profaza I - segmentele de cromatide sunt fixe, păstrându-și locul pe cromatide, împiedicând apariția anomaliilor"}],correct:["A","B","D"],explanations:{A:{isCorrect:true,text:"Corect. Anafaza I este etapa reducțională cheie: cromozomii omologi (bivalenții) se separă și migrează spre polii opuși, reducând la jumătate numărul cromozomilor în fiecare celulă fiică.",added:""},B:{isCorrect:true,text:"Corect. În profaza I (stadiul pahiten), cromatidele non-surori ale cromozomilor omologi formează chiasme — puncte de schimb de segmente (crossing-over), sursa recombinării genetice.",added:""},C:{isCorrect:false,text:"Greșit. În telofaza I și citokineza, cromozomii sunt distribuiți EGAL între cele două celule fiice (câte un cromozom din fiecare pereche). Distribuția este egală cantitativ, dar numărul este redus la jumătate față de celula mamă.",added:""},D:{isCorrect:true,text:"Corect. În metafaza I, bivalenții (perechile de cromozomi omologi) se aliniază la placa ecuatorială, cu kinetocorele cromozomilor omologi orientate spre poli opuși.",added:""},E:{isCorrect:false,text:"Greșit. În profaza I are loc tocmai schimbul de segmente (crossing-over/recombinare genetică) între cromatidele non-surori. Segmentele NU sunt fixe — recombinarea generează variabilitate genetică.",added:""}}},
-  {id:56,topic:"Organele anexe — caracterizare",lessonSection:"Ducte și organe anexe",lessonPage:"ducte",text:"Despre organele anexe sistemului reproducător masculin se pot afirma următoarele:",options:[{letter:"A",text:"servesc drept organe de transport pentru spermă în timpul copulației"},{letter:"B",text:"asigură formarea tuturor componentelor spermei"},{letter:"C",text:"prin secreția prostatică anihilează aciditatea naturală din vagin"},{letter:"D",text:"glandele bulbouretrale sunt localizate în apropierea vârfului penisului și secretă un mucus lubrifiant"},{letter:"E",text:"asigură formarea lichidului seminal - 30% vezicula seminală, 60% - prostata"}],correct:["A","C"],explanations:{A:{isCorrect:true,text:"Corect. Organele anexe (ducte și glande) servesc drept căi de transport pentru spermă în timpul copulației, asigurând propulsarea și ejacularea acesteia.",added:""},B:{isCorrect:false,text:"Greșit. Spermatozoizii (componenta celulară a spermei) se formează EXCLUSIV în tubii seminiferi ai testiculului. Organele anexe nu produc gameți — ele contribuie doar cu lichidele seminale.",added:""},C:{isCorrect:true,text:"Corect. Secreția prostatică (ușor alcalină, pH ~7,3), alături de celelalte secreții alcaline ale spermei, neutralizează aciditatea vaginală (pH ~4–5), protejând spermatozoizii.",added:""},D:{isCorrect:false,text:"Greșit. Glandele bulbouretrale (Cowper) sunt localizate la BAZA penisului (inferior față de prostată), nu la vârf. Localizarea indicată este incorectă.",added:""},E:{isCorrect:false,text:"Greșit. Proporțiile sunt inversate: VEZICULELE SEMINALE contribuie cu ~60%, iar PROSTATA cu ~30%. Nu invers cum afirmă enunțul.",added:""}}},
-  {id:57,topic:"Epididimul — funcții",lessonSection:"Ducte — Epididimul",lessonPage:"ducte",text:"Epididimul:",options:[{letter:"A",text:"este un duct în care spermatozoizii capătă mobilitate"},{letter:"B",text:"prezintă celule secretante ce ajustează compoziția lichidului spermatic"},{letter:"C",text:"asigură resorbția spermatozoizilor deteriorați și a reziduurilor"},{letter:"D",text:"se continuă cu ductul ejaculator"},{letter:"E",text:"este format dintr-un tub scurt, gros de pe marginea posterioară a testiculelor"}],correct:["A","B","C"],explanations:{A:{isCorrect:true,text:"Corect. Spermatozoizii dobândesc motilitatea progresivă în epididim pe parcursul tranzitului de ~2–3 săptămâni, prin modificările compoziției lichidului epididimar.",added:""},B:{isCorrect:true,text:"Corect. Celulele epiteliale secretante ale epididimului modifică activ compoziția lichidului spermatic prin secreție și resorbție, creând micromediul optim pentru maturarea spermatozoizilor.",added:""},C:{isCorrect:true,text:"Corect. Epididimul are și o funcție de 'control al calității': spermatozoizii deteriorați, anormali sau îmbătrâniți sunt fagocitați și resorbiți de celulele epiteliale epididimale.",added:""},D:{isCorrect:false,text:"Greșit. Epididimul se continuă cu DUCTUL DEFERENT (coada epididimului → ductul deferent), nu cu ductul ejaculator. Ductul ejaculator se formează mult mai departe, prin unirea ductului deferent cu ductul veziculei seminale.",added:""},E:{isCorrect:false,text:"Greșit. Epididimul este format dintr-un tub LUNG și extrem de contort (dacă ar fi derulat, ar măsura ~5–6 metri), nu scurt și gros. Este adosat marginii posterioare a testiculului.",added:""}}},
-  {id:58,topic:"Sistemul reproducător — afirmații corecte",lessonSection:"Ducte și organe anexe",lessonPage:"ducte",text:"Selectați afirmațiile corecte:",options:[{letter:"A",text:"celulele sustentaculare testiculare favorizează acțiunea protectoare a sistemului imunitar asupra spermatozoizilor în curs de dezvoltare"},{letter:"B",text:"creșterea fertilizării spermatozoidului este asigurată de enzimele prezente la nivelul gâtului"},{letter:"C",text:"coada epididimului se continuă cu ductul deferent"},{letter:"D",text:"celulele germinale asigură o concentrație mare de testosteron necesară producției spermatozoizilor"},{letter:"E",text:"energia necesară mișcării spermatozoizilor este asigurată de ATP-ul produs de mitocondriile piesei intermediare"}],correct:["C","E"],explanations:{A:{isCorrect:false,text:"Greșit. Celulele sustentaculare (Sertoli) PROTEJEAZĂ spermatozoizii DE sistemul imunitar (nu favorizează acțiunea sa). Prin joncțiunile strânse, formează bariera hemato-testiculară care izolează spermatozoizii de atacul imunitar.",added:""},B:{isCorrect:false,text:"Greșit. Enzimele care asigură fertilizarea (hialuronidaza, acrozina) se găsesc în ACROZOM (la nivelul capului spermatozoidului), nu la nivelul gâtului. Gâtul nu conține enzime de fertilizare.",added:""},C:{isCorrect:true,text:"Corect. Coada (cauda) epididimului este segmentul terminal al epididimului și se continuă direct cu ductul deferent, care transportă spermatozoizii spre ductul ejaculator.",added:""},D:{isCorrect:false,text:"Greșit. Testosteronul este produs de celulele INTERSTIȚIALE (Leydig), nu de celulele germinale. Celulele germinale sunt cele care prin meioza și spermiogeneză produc spermatozoizii.",added:""},E:{isCorrect:true,text:"Corect. Mitocondriile din piesa intermediară produc ATP prin fosforilare oxidativă. Acest ATP alimentează motorul molecular al flagelului (dineina axonemei), asigurând mișcarea spermatozoidului.",added:""}}},
-  {id:59,topic:"Hormonii reproducerii masculine",lessonSection:"Hormoni masculini — Reglarea hormonală",lessonPage:"hormoni",text:"Hormonii implicați în procesul de reproducere masculin sunt:",options:[{letter:"A",text:"FSH și LH secretați de hipofiza anterioară sub acțiunea GnRH"},{letter:"B",text:"FSH care induce spermatogeneza în celulele interstițiale"},{letter:"C",text:"LH care asistă spermatogeneza și asigură producția de testosteron de către celulele germinale"},{letter:"D",text:"testosteronul ce contribuie la coborârea testiculelor în scrot"},{letter:"E",text:"LH ce stimulează maturarea celulelor interstițiale"}],correct:["A","D","E"],explanations:{A:{isCorrect:true,text:"Corect. FSH și LH sunt secretați de adenohipofiză (hipofiza anterioară) sub stimularea GnRH (gonadoliberina) hipotalamic — baza axei hipotalamo-hipofizo-gonadale.",added:""},B:{isCorrect:false,text:"Greșit. FSH acționează pe celulele SERTOLI (sustentaculare) din tubii seminiferi, nu pe celulele interstițiale. Celulele interstițiale (Leydig) sunt stimulate de LH.",added:""},C:{isCorrect:false,text:"Greșit. LH stimulează celulele INTERSTIȚIALE (Leydig) să producă testosteron, nu celulele germinale. Celulele germinale sunt implicate în spermatogeneză, nu în producerea de testosteron.",added:""},D:{isCorrect:true,text:"Corect. Testosteronul fetal mediază coborârea testiculelor din cavitatea abdominală în scrot, prin acțiunea asupra gubernaculumului testicular.",added:""},E:{isCorrect:true,text:"Corect. LH (hormonul luteinizant) stimulează maturarea și activarea funcțională a celulelor interstițiale Leydig, determinând producerea și secretarea testosteronului.",added:""}}},
-  {id:60,topic:"Formarea spermei — glande participante",lessonSection:"Ducte și organe anexe",lessonPage:"ducte",text:"La formarea spermei participă secreția următoarelor glande:",options:[{letter:"A",text:"prostata - localizată sub vezica urinară"},{letter:"B",text:"glandele vestibulare - ce secretă un lichid vâscos"},{letter:"C",text:"glandele bulbo-uretrale - drenate în uretra prostatică"},{letter:"D",text:"glandele parauretralee"},{letter:"E",text:"veziculele seminale - care secretă un lichid alcalin ce neutralizează aciditatea dezvoltată în epididim"}],correct:["A","E"],explanations:{A:{isCorrect:true,text:"Corect. Prostata, localizată inferior față de vezica urinară, participă la formarea spermei prin secreția lichidului prostatic (~30% din volumul seminal), bogat în acid citric, zinc și PSA.",added:""},B:{isCorrect:false,text:"Greșit. Glandele vestibulare (Bartholin) sunt glande ale sistemului reproducător FEMININ. Nu au niciun rol în formarea spermei masculine.",added:""},C:{isCorrect:false,text:"Greșit. Glandele bulbo-uretrale (Cowper) participă la formarea spermei, dar se drenează în uretra PENIANĂ (spongiasă), nu în uretra prostatică.",added:""},D:{isCorrect:false,text:"Greșit. Glandele parauretralee (Skene) sunt structuri ale aparatului reproducător feminin, omoloage glandelor prostatice masculine. Nu participă la formarea spermei.",added:""},E:{isCorrect:true,text:"Corect. Veziculele seminale contribuie cu ~60% din volumul lichidului seminal — lichid alcalin bogat în fructoză și prostaglandine, care neutralizează aciditatea acumulată în epididim.",added:""}}},
-  {id:61,topic:"Structura testiculului",lessonSection:"Testiculele — Structură",lessonPage:"testiculele",text:"Structura testiculului include:",options:[{letter:"A",text:"lobuli, formați din tubi seminiferi, separați prin țesut conjunctiv"},{letter:"B",text:"epiteliul tubular cu celule germinale pentru producția hormonală"},{letter:"C",text:"celule interstițiale ce asigură spermatogeneza"},{letter:"D",text:"rețeaua testiculară formată prin unirea canalelor eferente"},{letter:"E",text:"canale eferente cu originea în porțiunea inferioară a testiculului"}],correct:["A"],explanations:{A:{isCorrect:true,text:"Corect. Testiculul este structurat în ~250–300 lobuli, fiecare conținând 1–4 tubi seminiferi contorți, separați între ei de septuri de țesut conjunctiv care se desprind din tunica albuginee.",added:""},B:{isCorrect:false,text:"Greșit. Celulele germinale din epiteliul tubilor seminiferi asigură SPERMATOGENEZA (funcție exocrină), nu producția hormonală. Producția hormonală (testosteron) este atribuția celulelor interstițiale Leydig.",added:""},C:{isCorrect:false,text:"Greșit. Spermatogeneza este asigurată de celulele GERMINALE (și Sertoli) din tubii seminiferi. Celulele interstițiale Leydig asigură STEROIDOGENEZA (producerea testosteronului).",added:""},D:{isCorrect:false,text:"Greșit. Rețeaua testiculară (rete testis) este formată prin unirea tubilor drepți (tubuli recti) — terminațiile tubilor seminiferi. Canalele eferente pornesc DIN rețeaua testiculară spre epididim.",added:""},E:{isCorrect:false,text:"Greșit. Canalele eferente au originea în porțiunea SUPERIOARĂ a testiculului (mediastinul testicular, unde se află rețeaua testiculară), nu inferioară.",added:""}}},
-  {id:62,topic:"Ductul deferent — caractere",lessonSection:"Ducte — Ductul deferent",lessonPage:"ducte",text:"Ductul deferent:",options:[{letter:"A",text:"traversează canalul inghinal și ajunge lateral de vezica urinară"},{letter:"B",text:"prezintă o dilatare - ampula - înainte de a ajunge la glanda prostatică"},{letter:"C",text:"intersectează traseul ureterului înainte de a intra în vezica urinară"},{letter:"D",text:"asigură propulsarea lichidului seminal de la epididimul fiecărui testicul"},{letter:"E",text:"se continuă cu epididimul de pe marginea posterioară a testiculului"}],correct:["A","B","C","D"],explanations:{A:{isCorrect:true,text:"Corect. Ductul deferent urcă din scrot, traversează canalul inghinal, intră în cavitatea pelvică și ajunge lateral față de vezica urinară, pe care o înconjoară posterior.",added:""},B:{isCorrect:true,text:"Corect. Porțiunea terminală a ductului deferent se dilată formând ampula, care se unește cu ductul veziculei seminale pentru a forma ductul ejaculator — înainte de a pătrunde în prostată.",added:""},C:{isCorrect:true,text:"Corect. În drumul său spre baza prostatei, ductul deferent încrucișează ureterul (trece anterior față de el), la nivelul feței posterioare a vezicii urinare.",added:""},D:{isCorrect:true,text:"Corect. Ductul deferent propulsează spermatozoizii și lichidul epididimar prin contracțiile musculaturii netede proprii, de la coada epididimului spre ductul ejaculator.",added:""},E:{isCorrect:false,text:"Greșit. Relația este inversă: COADA EPIDIDIMULUI se continuă cu ductul deferent. Ductul deferent este continuarea epididimului — nu invers.",added:""}}},
-  {id:63,topic:"Spermatogeneza — caracterizare",lessonSection:"Testiculele — Spermatogeneza",lessonPage:"testiculele",text:"Spermatogeneza:",options:[{letter:"A",text:"implică diviziunea spermatogoniilor și împingerea acestora spre baza externă a epiteliului"},{letter:"B",text:"este favorizată de temperatura mai scăzută din scrot"},{letter:"C",text:"începe în stratul cel mai extern al celulelor germinale"},{letter:"D",text:"asigură reducerea numărului de cromozomi prin diviziunea meiotică a spermatocitelor primare"},{letter:"E",text:"duce la formarea de spermatide din spermatozoizi"}],correct:["B","C","D"],explanations:{A:{isCorrect:false,text:"Greșit. Celulele rezultate din diviziunile spermatogoniilor sunt împinse spre INTERIORUL (lumenul) tubului seminifer, nu spre baza externă. Maturarea progresează centripet — de la periferie spre centru.",added:""},B:{isCorrect:true,text:"Corect. Spermatogeneza necesită ~34–35°C (cu 2–3°C mai puțin decât temperatura corporală de 37°C). Scrotul menține această temperatură optimă prin poziția extracorporală.",added:""},C:{isCorrect:true,text:"Corect. Spermatogeneza începe în stratul cel mai extern (periferic) al tubilor seminiferi, unde se află spermatogoniile adosate membranei bazale. Pe măsura maturării, celulele migrează spre lumen.",added:""},D:{isCorrect:true,text:"Corect. Spermatocitele primare (2n = 46) intră în prima diviziune meiotică (reducțională), producând spermatocite secundare cu n = 23 cromozomi — reducând la jumătate numărul de cromozomi.",added:""},E:{isCorrect:false,text:"Greșit. Direcția este inversă: spermatidele se formează din spermatocite secundare (prin meioza II), iar din spermatide → spermatozoizi (prin spermiogeneză). Niciodată din spermatozoizi nu se formează spermatide.",added:""}}},
-  {id:64,topic:"Vezicula seminală — caractere",lessonSection:"Ducte — Veziculele seminale",lessonPage:"ducte",text:"Vezicula seminală:",options:[{letter:"A",text:"este un organ impar, format din structuri sacciforme"},{letter:"B",text:"este drenată de ducte ce fuzionează cu ductul deferent, formând ductul ejaculator"},{letter:"C",text:"adaugă fluide nutritive necesare spermatozoizilor în procesul de ejaculare"},{letter:"D",text:"secretă un lichid acid ce anihilează alcalinitatea lichidului produs în epididim"},{letter:"E",text:"este localizată inferior de prostată"}],correct:["B","C"],explanations:{A:{isCorrect:false,text:"Greșit. Veziculele seminale sunt organe PERECHE (există câte una de fiecare parte). Organul impar al sistemului reproducător masculin este prostata.",added:""},B:{isCorrect:true,text:"Corect. Ductul excretor al fiecărei vezicule seminale fuzionează cu ampula ductului deferent ipsilateral pentru a forma ductul ejaculator.",added:""},C:{isCorrect:true,text:"Corect. Vezicula seminală adaugă lichid bogat în fructoză (sursă energetică pentru spermatozoizi), prostaglandine și proteine coagulante — fluide nutritive și funcționale esențiale.",added:""},D:{isCorrect:false,text:"Greșit. Vezicula seminală secretă un lichid ALCALIN (nu acid). Alcalinitatea sa contribuie la neutralizarea acidității vaginale și a mediului acid al epididimului.",added:""},E:{isCorrect:false,text:"Greșit. Veziculele seminale sunt localizate SUPERIOR față de prostată (posterior față de vezica urinară), nu inferior.",added:""}}},
-  {id:65,topic:"Testosteronul — efecte",lessonSection:"Hormoni masculini — Testosteronul",lessonPage:"hormoni",text:"Testosteronul:",options:[{letter:"A",text:"este un hormon androgen sintetizat din colesterol"},{letter:"B",text:"la făt - asigură diferențierea țesuturilor specifice sexului masculin"},{letter:"C",text:"induce maturarea spermatozoizilor în copilărie"},{letter:"D",text:"influențează dezvoltarea caracterelor sexuale secundare masculine"},{letter:"E",text:"stimulează sinteza proteică și creșterea masei musculare"}],correct:["A","B","D","E"],explanations:{A:{isCorrect:true,text:"Corect. Testosteronul este un hormon steroidic androgen sintetizat din colesterol de celulele Leydig, cu structura caracteristică a steroizilor (nucleu steran cu 4 inele).",added:""},B:{isCorrect:true,text:"Corect. Testosteronul fetal (secretat din luna a 3-a de gestație, stimulat inițial de hCG placentar) este esențial pentru diferențierea organelor genitale interne și externe masculine.",added:""},C:{isCorrect:false,text:"Greșit. Spermatogeneza completă și maturarea spermatozoizilor au loc la PUBERTATE și la vârsta adultă, nu în copilărie. În copilărie, nivelul de testosteron este scăzut și insuficient pentru a susține spermatogeneza.",added:""},D:{isCorrect:true,text:"Corect. La pubertate, testosteronul determină apariția și menține caracterele sexuale secundare masculine: pilozitatea facială și corporală, îngroșarea vocii, creșterea organelor genitale etc.",added:""},E:{isCorrect:true,text:"Corect. Testosteronul are efect anabolic proteic puternic — stimulează sinteza de proteine musculare și crește masa musculară, ceea ce explică utilizarea sa (sau a analogilor) în dopaj.",added:""}}},
-  {id:66,topic:"Penisul — enunțuri adevărate",lessonSection:"Ducte și organe anexe",lessonPage:"ducte",text:"Despre penis, următoarele enunțuri sunt adevărate:",options:[{letter:"A",text:"intervenția chirurgicală prin care se îndepărtează prepuțul se numește circumcizie"},{letter:"B",text:"corpul penisului este format din două mase de țesut erectil"},{letter:"C",text:"componenta simpatică a sistemului nervos determină dilatarea arteriolelor din țesutul erectil"},{letter:"D",text:"glandul penian înconjoară orificiul uretral extern"},{letter:"E",text:"țesutul erectil conține un labirint de canale vasculare separate de țesut conjunctiv și fibre musculare netede"}],correct:["A","D","E"],explanations:{A:{isCorrect:true,text:"Corect. Circumcizia este intervenția chirurgicală de îndepărtare a prepuțului, practicată în scop religios, cultural sau medical (ex. fimoza).",added:""},B:{isCorrect:false,text:"Greșit. Corpul penisului este format din TREI mase de țesut erectil: doi corpi cavernoși (dorsolateral) și un corp spongios (ventral, ce conține uretra peniană).",added:""},C:{isCorrect:false,text:"Greșit. Componenta PARASIMPATICĂ (nu simpatică) determină vasodilatația arteriolară, umplerea sinusoidelor erectile și erecția. Componenta simpatică mediază ejacularea și detumescența.",added:""},D:{isCorrect:true,text:"Corect. Glandul penian reprezintă extremitatea distală (capul) penisului și conține orificiul uretral extern (meatul urinar), prin care se elimină urina și sperma.",added:""},E:{isCorrect:true,text:"Corect. Țesutul erectil (corpii cavernoși și spongios) conține sinusoide vasculare — spații vasculare căptușite cu endoteliu, separate de travee de țesut conjunctiv și fibre musculare netede.",added:""}}},
-  {id:67,topic:"Prostata — afirmații corecte",lessonSection:"Ducte — Prostata",lessonPage:"ducte",text:"Selectați afirmațiile corecte referitoare la prostată:",options:[{letter:"A",text:"este o glandă pereche localizată inferior de vezica urinară, anterior de rect"},{letter:"B",text:"conține fibre musculare netede cu rol de suport"},{letter:"C",text:"este divizată în lobuli, separați de septe conjunctive, aflați sub controlul FSH"},{letter:"D",text:"la suprafață este înconjurată de albugineee"},{letter:"E",text:"este străbătută de ductul deferent și ductul veziculei seminale"}],correct:["B"],explanations:{A:{isCorrect:false,text:"Greșit. Prostata este o glandă IMPARĂ (unică, mediană), nu pereche. Localizarea 'inferior de vezica urinară, anterior de rect' este corectă anatomic, dar afirmația este falsă prin cuvântul 'pereche'.",added:""},B:{isCorrect:true,text:"Corect. Stroma prostatei conține fibre musculare netede și țesut fibros conjunctiv, care formează suportul structural al glandelor tubuloalveolare și contribuie la expulzarea lichidului prostatic.",added:""},C:{isCorrect:false,text:"Greșit. Prostata este organizată în zone (nu clasic în lobuli), iar controlul său este asigurat de TESTOSTERON (prin DHT — dihidrotestosteron), nu de FSH. FSH acționează exclusiv pe celulele Sertoli din testicul.",added:""},D:{isCorrect:false,text:"Greșit. Tunica albuginee învelește TESTICULELE, nu prostata. Prostata este acoperită de o capsulă fibro-musculară proprie (capsula prostatică).",added:""},E:{isCorrect:false,text:"Greșit. Prostata este traversată de DUCTELE EJACULATOARE (formate prin unirea ductului deferent cu ductul veziculei seminale) și de uretra prostatică. Ductul deferent și ductul veziculei seminale se unesc ÎNAINTE de a intra în prostată.",added:""}}},
-  {id:68,topic:"Sistemul reproducător — afirmații corecte",lessonSection:"Ducte și organe anexe",lessonPage:"ducte",text:"Următoarele afirmații sunt corecte:",options:[{letter:"A",text:"sperma străbate sfincterele intern și extern ale uretrei"},{letter:"B",text:"congestionarea vasculară a corpilor cavernoși este consecința stimulării simpatice"},{letter:"C",text:"ductul deferent face parte din căile spermatice situate înafara testiculului"},{letter:"D",text:"pH-ul acid al epididimului este datorat produșilor de degradare ai spermei stocate"},{letter:"E",text:"ejaculatul conține spermatozoizi, lichid seminal și hormoni"}],correct:["C","D"],explanations:{A:{isCorrect:false,text:"Greșit. În timpul ejaculării, sfincterul uretral INTERN se ÎNCHIDE (prin contracție simpatică) pentru a preveni ejacularea retrogradă în vezică. Sperma nu traversează sfincterul intern — îl ocoltește prin închiderea sa.",added:""},B:{isCorrect:false,text:"Greșit. Congestionarea vasculară a corpilor cavernoși (erecția) este consecința stimulării PARASIMPATICE (nu simpatice). Parasimpaticul sacral eliberează NO (oxid nitric), producând vasodilatație.",added:""},C:{isCorrect:true,text:"Corect. Ductul deferent face parte din căile spermatice EXTRATESTICULARE (în afara testiculului), alături de epididim, ductul ejaculator și uretră.",added:""},D:{isCorrect:true,text:"Corect. pH-ul acid al lichidului epididimar este rezultatul acumulării produșilor de metabolism și degradare ai spermatozoizilor stocați, coroborat cu activitatea secretorie a epiteliului epididimar.",added:""},E:{isCorrect:false,text:"Greșit. Ejaculatul conține spermatozoizi și lichid seminal (secreția glandelor anexe). Hormonii nu sunt considerați componente standard definitorii ale ejaculatului în descrierea biochimică clasică.",added:""}}},
-  {id:69,topic:"Funcțiile gonadei feminine",lessonSection:"Testiculele — Funcții",lessonPage:"testiculele",text:"Care dintre afirmațiile privind funcțiile gonadei feminine sunt adevărate?",options:[{letter:"A",text:"produce oocite"},{letter:"B",text:"secretă progesteron"},{letter:"C",text:"secretă GnRH, hormon sterolic sintetizat din colesterol"},{letter:"D",text:"conține numeroase grupuri de celule ce formează foliculi"},{letter:"E",text:"se află sub controlul hormonilor tropi: foliculostimulant, luteinizant și melatonină"}],correct:["A","B"],explanations:{A:{isCorrect:true,text:"Corect. Ovarul (gonada feminină) produce oocite prin ovogeneză — funcție exocrină (gametogenică) a gonadei feminine.",added:""},B:{isCorrect:true,text:"Corect. Ovarul secretă progesteron (prin corpul galben, post-ovulație) și estrogeni (prin celulele granuloasei foliculare) — funcții endocrine ale gonadei feminine.",added:""},C:{isCorrect:false,text:"Greșit. GnRH (gonadoliberina) este secretat de HIPOTALAMUS, nu de ovar. Ovarul secretă estrogeni și progesteron (hormoni steroidici derivați din colesterol), dar nu GnRH.",added:""},D:{isCorrect:false,text:"Greșit. Deși ovarul conține foliculi ovarieni (adevărat structural), întrebarea vizează FUNCȚIILE gonadei feminine. Prezența foliculilor este o caracteristică structurală, nu o funcție.",added:""},E:{isCorrect:false,text:"Greșit. Gonada feminină se află sub controlul FSH și LH (hormoni gonadotropi adenohipofizari). Melatonina (secretată de epifiză) nu este un hormon trop gonadal — are rol modulator indirect, nu direct.",added:""}}}
-];
-
-const PAGE_SIZE=10;
-let currentPage=1;
-let quizState={};
-const RUN_META_KEY='reproducator_masculin_run_done_v1';
-
-function loadState(){ try{return JSON.parse(localStorage.getItem('reproducator_masculin_quiz_v1')||'{}')}catch(e){return{}} }
-function saveState(s){ localStorage.setItem('reproducator_masculin_quiz_v1', JSON.stringify(s)); }
-function loadAnalysis(){
-  try{
-    const parsed=JSON.parse(localStorage.getItem('reproducator_masculin_analysis_v1')||'{"topicErrors":{},"sessions":[]}');
-    if(!parsed.topicErrors)parsed.topicErrors={};
-    if(!parsed.sessions)parsed.sessions=[];
-    if(parsed.sessions.length===0&&Object.keys(parsed.topicErrors).length){
-      const totalAttempts=Object.values(parsed.topicErrors).reduce((sum,t)=>sum+(t.attempts||0),0);
-      const totalCorrect=Object.values(parsed.topicErrors).reduce((sum,t)=>sum+(t.correct||0),0);
-      if(totalAttempts>0){
-        parsed.sessions=[{date:new Date().toLocaleDateString('ro-RO'),att:totalAttempts,cor:totalCorrect}];
-      }
-    }
-    return parsed;
-  }catch(e){
-    return{topicErrors:{},sessions:[]};
-  }
-}
-function saveAnalysis(a){ localStorage.setItem('reproducator_masculin_analysis_v1', JSON.stringify(a)); }
-function isRunRecorded(){ return localStorage.getItem(RUN_META_KEY)==='1'; }
-function setRunRecorded(v){ localStorage.setItem(RUN_META_KEY, v?'1':'0'); }
-
-quizState=loadState();
-
-function totalPages(){ return Math.ceil(QUESTIONS.length/PAGE_SIZE); }
-function isQuizComplete(){ return QUESTIONS.every(q=>quizState[q.id]&&quizState[q.id].submitted); }
-
-function buildQuiz(resetPage){
-  if(resetPage) currentPage=1;
-  const container=document.getElementById('questions-container');
-  container.innerHTML='';
-  const start=(currentPage-1)*PAGE_SIZE;
-  const pageQs=QUESTIONS.slice(start, start+PAGE_SIZE);
-  pageQs.forEach(q=>renderQuestion(q,container));
-  updateProgress();
-  updatePagination();
-  checkShowFinalScore();
-}
-
-function changePage(dir){
-  const tp=totalPages();
-  currentPage=Math.max(1,Math.min(tp,currentPage+dir));
-  buildQuiz(false);
-  window.scrollTo({top:document.getElementById('gtab-quiz').offsetTop-80,behavior:'smooth'});
-}
-
-function updatePagination(){
-  const tp=totalPages();
-  const show=tp>1;
-  ['pagination-top','pagination-bottom'].forEach(id=>{
-    document.getElementById(id).style.display=show?'flex':'none';
-  });
-  const label=`Pagina ${currentPage} / ${tp}`;
-  document.getElementById('page-indicator-top').textContent=label;
-  document.getElementById('page-indicator-bottom').textContent=label;
-  document.getElementById('btn-prev-top').disabled=currentPage===1;
-  document.getElementById('btn-prev-bottom').disabled=currentPage===1;
-  document.getElementById('btn-next-top').disabled=currentPage===tp;
-  document.getElementById('btn-next-bottom').disabled=currentPage===tp;
-}
-
-function renderQuestion(q,container){
-  const state=quizState[q.id]||{selected:[],submitted:false};
-  const isSubmitted=state.submitted;
-  const selected=state.selected||[];
-  let cardClass='',badge='';
-  if(isSubmitted){
-    const cSet=new Set(q.correct);
-    const isFully=selected.length===q.correct.length&&selected.every(s=>cSet.has(s));
-    const hasAny=selected.some(s=>cSet.has(s))||q.correct.some(c=>new Set(selected).has(c));
-    if(isFully){cardClass='answered-correct';badge='<span class="result-badge badge-correct">✓ Corect</span>';}
-    else if(selected.length===0||!hasAny){cardClass='answered-wrong';badge='<span class="result-badge badge-wrong">✗ Greșit</span>';}
-    else{cardClass='answered-partial';badge='<span class="result-badge badge-partial">≈ Parțial</span>';}
-  }
-  const card=document.createElement('div');
-  card.className=`question-card ${cardClass}`;
-  card.id=`q-${q.id}`;
-  let optHtml='';
-  q.options.forEach(opt=>{
-    let cls='',icon='';
-    const isSel=selected.includes(opt.letter);
-    const isCorr=q.correct.includes(opt.letter);
-    if(isSubmitted){
-      if(isSel&&isCorr){cls='result-correct';icon='✓';}
-      else if(isSel&&!isCorr){cls='result-wrong';icon='✗';}
-      else if(!isSel&&isCorr){cls='result-missed';icon='!';}
-    }else{if(isSel)cls='selected';}
-    const dis=isSubmitted?'disabled':'';
-    optHtml+=`<div class="option ${cls} ${dis}" onclick="toggleOption(${q.id},'${opt.letter}')"><div class="opt-letter">${opt.letter}</div><div class="opt-text">${opt.text}</div>${isSubmitted?`<div class="opt-icon">${icon}</div>`:''}</div>`;
-  });
-  let explHtml='';
-  if(isSubmitted){
-    let items='';
-    q.options.forEach(opt=>{
-      const expl=q.explanations[opt.letter];
-      if(!expl)return;
-      const cls=expl.isCorrect?'expl-correct':'expl-wrong';
-      const sym=expl.isCorrect?'✓':'✗';
-      const addedHtml=expl.added?`<span class="added-note"><span class="added-marker">*</span>${expl.added}</span>`:'';
-      items+=`<div class="expl-row ${cls}"><span class="expl-letter">${sym}</span><span class="expl-text"><strong>${opt.letter}.</strong> ${expl.text}${addedHtml}</span></div>`;
-    });
-    const goLink=q.lessonPage?`<a href="#" onclick="goto('${q.lessonPage}');return false;" style="color:#0891B2">${q.lessonPage}</a>`:'';
-    explHtml=`<div class="explanation show"><div class="expl-header">💡 Explicații — ${q.topic}</div><div class="expl-body">${items}<div class="lesson-ref">📖 <strong>Găsești în lecție la:</strong> ${q.lessonSection} — ${goLink}</div></div></div>`;
-  }
-  const actionHtml=isSubmitted
-    ? '<div class="q-actions"><button class="gbtn gbtn-secondary" disabled>Răspuns salvat</button></div>'
-    : `<div class="q-actions"><button class="gbtn gbtn-primary" onclick="submitQuestion(${q.id})">✓ Verifică răspunsul</button></div>`;
-  card.innerHTML=`<div class="q-num">Întrebarea ${q.id} — ${q.topic} ${badge}</div><div class="q-text">${q.text}</div><div class="options" id="opts-${q.id}">${optHtml}</div>${actionHtml}${explHtml}`;
-  container.appendChild(card);
-}
-
-function toggleOption(qId,letter){
-  const state=quizState[qId]||{selected:[],submitted:false};
-  if(state.submitted)return;
-  const idx=state.selected.indexOf(letter);
-  if(idx>=0)state.selected.splice(idx,1);else state.selected.push(letter);
-  quizState[qId]=state;
-  saveState(quizState);
-  const q=QUESTIONS.find(q=>q.id===qId);
-  const opts=document.getElementById(`opts-${qId}`);
-  let html='';
-  q.options.forEach(opt=>{
-    const isSel=state.selected.includes(opt.letter);
-    html+=`<div class="option ${isSel?'selected':''}" onclick="toggleOption(${q.id},'${opt.letter}')"><div class="opt-letter">${opt.letter}</div><div class="opt-text">${opt.text}</div></div>`;
-  });
-  opts.innerHTML=html;
-}
-
-function submitQuestion(qId){
-  const state=quizState[qId]||{selected:[],submitted:false};
-  if(state.selected.length===0){showToast('Selectează cel puțin un răspuns!');return;}
-  state.submitted=true;
-  quizState[qId]=state;
-  saveState(quizState);
-  recordToAnalysis(qId,state.selected);
-  const q=QUESTIONS.find(q=>q.id===qId);
-  const card=document.getElementById(`q-${qId}`);
-  const container=document.getElementById('questions-container');
-  const newCard=document.createElement('div');
-  container.replaceChild(newCard,card);
-  renderQuestion(q,{appendChild:(el)=>container.replaceChild(el,newCard)});
-  updateProgress();
-  checkShowFinalScore();
-}
-
-function resetQuestion(qId){
-  quizState[qId]={selected:[],submitted:false};
-  saveState(quizState);
-  const q=QUESTIONS.find(q=>q.id===qId);
-  const card=document.getElementById(`q-${qId}`);
-  const container=document.getElementById('questions-container');
-  const newCard=document.createElement('div');
-  container.replaceChild(newCard,card);
-  renderQuestion(q,{appendChild:(el)=>container.replaceChild(el,newCard)});
-  updateProgress();
-  document.getElementById('final-score').classList.remove('show');
-}
-
-function resetQuiz(){
-  quizState={};
-  saveState(quizState);
-  setRunRecorded(false);
-  document.getElementById('final-score').classList.remove('show');
-  buildQuiz(true);
-  updateAnalysisResetState();
-}
-
-function updateProgress(){
-  const submitted=Object.values(quizState).filter(s=>s.submitted).length;
-  const total=QUESTIONS.length;
-  document.getElementById('progress-text').textContent=`${submitted} / ${total} completate`;
-  document.getElementById('progress-bar').style.width=`${(submitted/total)*100}%`;
-  updateAnalysisResetState();
-}
-
-function updateAnalysisResetState(){
-  const btn=document.getElementById('analysis-reset-btn');
-  if(!btn)return;
-  const complete=isQuizComplete();
-  btn.disabled=!complete;
-  btn.title=complete?'':'Finalizează toate întrebările înainte să poți reseta analiza.';
-}
-
-function checkShowFinalScore(){
-  const all=isQuizComplete();
-  if(!all)return;
-  let correct=0,partial=0;
-  QUESTIONS.forEach(q=>{
-    const sel=(quizState[q.id]||{}).selected||[];
-    const cSet=new Set(q.correct);
-    const isFull=sel.length===q.correct.length&&sel.every(s=>cSet.has(s));
-    if(isFull)correct++;else if(sel.some(s=>cSet.has(s)))partial++;
-  });
-  const scoreEl=document.getElementById('final-score');
-  scoreEl.classList.add('show');
-  const pct=Math.round((correct/QUESTIONS.length)*100);
-  const circle=document.getElementById('score-circle');
-  circle.textContent=`${correct}/${QUESTIONS.length}`;
-  circle.className=`score-circle ${pct>=70?'score-good':pct>=40?'score-mid':'score-bad'}`;
-  document.getElementById('score-title').textContent=pct>=70?'🎉 Bine făcut!':pct>=40?'📖 Mai studiază puțin!':'💪 Continuă să înveți!';
-  document.getElementById('score-sub').textContent=`${correct} corecte complet, ${partial} parțiale, ${QUESTIONS.length-correct-partial} greșite`;
-  if(!isRunRecorded()){
-    const analysis=loadAnalysis();
-    if(!analysis.sessions)analysis.sessions=[];
-    analysis.sessions.push({date:new Date().toLocaleDateString('ro-RO'),att:QUESTIONS.length,cor:correct});
-    saveAnalysis(analysis);
-    setRunRecorded(true);
-    renderAnalysis();
-  }
-  scoreEl.scrollIntoView({behavior:'smooth',block:'center'});
-}
-
-function recordToAnalysis(qId,selected){
-  const analysis=loadAnalysis();
-  const q=QUESTIONS.find(q=>q.id===qId);
-  if(!q)return;
-  const cSet=new Set(q.correct);
-  const isFull=selected.length===q.correct.length&&selected.every(s=>cSet.has(s));
-  const wrongOptions=selected.filter(s=>!cSet.has(s));
-  const missedOptions=q.correct.filter(c=>!selected.includes(c));
-  if(!analysis.topicErrors[q.topic]) analysis.topicErrors[q.topic]={topic:q.topic,attempts:0,correct:0,errors:[],lessonSection:q.lessonSection,lessonPage:q.lessonPage};
-  analysis.topicErrors[q.topic].attempts++;
-  if(isFull)analysis.topicErrors[q.topic].correct++;
-  else analysis.topicErrors[q.topic].errors.push({qId,date:new Date().toLocaleDateString('ro-RO'),wrongOptions,missedOptions,selected});
-  saveAnalysis(analysis);
-  renderAnalysis();
-}
-
-function getCurrentAnalysisSnapshot(){
-  const topicMap={};
-  let totalAnswered=0;
-  let totalCorrect=0;
-  QUESTIONS.forEach(q=>{
-    const state=quizState[q.id];
-    if(!state||!state.submitted)return;
-    totalAnswered++;
-    const selected=state.selected||[];
-    const cSet=new Set(q.correct);
-    const isFull=selected.length===q.correct.length&&selected.every(s=>cSet.has(s));
-    const wrongOptions=selected.filter(s=>!cSet.has(s));
-    const missedOptions=q.correct.filter(c=>!selected.includes(c));
-    if(!topicMap[q.topic])topicMap[q.topic]={topic:q.topic,attempts:0,correct:0,errors:[],lessonSection:q.lessonSection,lessonPage:q.lessonPage};
-    topicMap[q.topic].attempts++;
-    if(isFull){
-      topicMap[q.topic].correct++;
-      totalCorrect++;
-    }else{
-      topicMap[q.topic].errors.push({qId:q.id,wrongOptions,missedOptions,selected});
-    }
-  });
-  return{topicList:Object.values(topicMap),totalAnswered,totalCorrect,totalWrong:totalAnswered-totalCorrect};
-}
-
-function renderAnalysis(){
-  const analysis=loadAnalysis();
-  const container=document.getElementById('analysis-content');
-  const snapshot=getCurrentAnalysisSnapshot();
-  const topicList=snapshot.topicList;
-  if(snapshot.totalAnswered===0){
-    container.innerHTML='<div class="no-data"><div class="icon">📝</div><h3>Nicio grilă completată încă</h3><p style="margin-top:8px">Mergi la secțiunea <strong>Grile</strong> și rezolvă câteva întrebări pentru a vedea analiza ta.</p></div>';
-    return;
-  }
-  const totalAnswered=snapshot.totalAnswered;
-  const totalCorrect=snapshot.totalCorrect;
-  const totalWrong=snapshot.totalWrong;
-  const pct=totalAnswered?Math.round(totalCorrect/totalAnswered*100):0;
-  const gColor=pct>=70?'#27ae60':pct>=40?'#f39c12':'#e74c3c';
-  const weakTopics=topicList.filter(t=>t.errors.length>0).sort((a,b)=>b.errors.length-a.errors.length);
-
-  // 1. STATS ROW
-  let html=`<div class="an-analysis-top">
-    <div class="an-stats-wrap">
-      <div class="an-stats-row">
-        <div class="an-stat-box"><div class="an-snum">${totalAnswered}</div><div class="an-slbl">Întrebări</div></div>
-        <div class="an-stat-box hide-mobile"><div class="an-snum" style="color:#27ae60">${totalCorrect}</div><div class="an-slbl">Corecte</div></div>
-        <div class="an-stat-box"><div class="an-snum" style="color:#e74c3c">${totalWrong}</div><div class="an-slbl">Greșite</div></div>
-        <div class="an-stat-box"><div class="an-snum" style="color:${gColor}">${pct}%</div><div class="an-slbl">Acuratețe</div></div>
-      </div>
-    </div>
-    <div class="an-gauge-inline">
-      <div class="an-gauge-meta"><strong>Scor general</strong><span>${totalCorrect} / ${totalAnswered} întrebări corecte</span></div>
-      <div class="an-gauge-track"><div class="an-gauge-fill" style="width:${pct}%;background:${gColor}"></div></div>
-      <div class="an-gauge-labels"><span>0%</span><span style="color:#f39c12">40%</span><span style="color:#27ae60">70%</span><span>100%</span></div>
-    </div>
-  </div>`;
-
-  const sessions=(analysis.sessions||[]).filter(s=>s.att===QUESTIONS.length);
-  let leftCol='';
-  if(sessions.length>0){
-    const chartSessions=[...sessions].slice(-7);
-    const maxAtt=Math.max(...chartSessions.map(s=>s.att),1);
-    const chartW=420, chartH=132;
-    const leftPad=16, rightPad=10, topPad=10, bottomPad=18;
-    const innerW=chartW-leftPad-rightPad;
-    const innerH=chartH-topPad-bottomPad;
-    let linePoints='';
-    let bars='';
-    let dots='';
-    let dotLabels='';
-    let grid='';
-    let axisLabels='';
-    [0,50,100].forEach(level=>{
-      const y=(topPad+innerH)-((level/100)*innerH);
-      grid+=`<line class="an-evo-grid" x1="${leftPad}" y1="${y}" x2="${chartW-rightPad}" y2="${y}"></line>`;
-      axisLabels+=`<text class="an-evo-ytext" x="0" y="${y+3}">${level}%</text>`;
-    });
-    axisLabels+=`<text class="an-evo-rtext" x="${chartW-34}" y="${topPad+3}">${maxAtt} int</text>`;
-    axisLabels+=`<text class="an-evo-rtext" x="${chartW-18}" y="${topPad+innerH+14}">0</text>`;
-    chartSessions.forEach((s,idx)=>{
-      const sp=Math.round(s.cor/s.att*100);
-      const col=sp>=70?'#27ae60':sp>=40?'#f39c12':'#e74c3c';
-      const x=chartSessions.length===1?leftPad+(innerW/2):leftPad+(idx*(innerW/(chartSessions.length-1)));
-      const y=(topPad+innerH)-((sp/100)*innerH);
-      const barH=Math.max(10,(s.att/maxAtt)*innerH);
-      const barY=topPad+innerH-barH;
-      const barX=Math.max(leftPad,x-14);
-      bars+=`<rect class="an-evo-bar" x="${barX}" y="${barY}" width="28" height="${barH}" rx="8" fill="${col}" opacity="0.22"></rect>`;
-      linePoints+=`${x},${y} `;
-      dots+=`<circle class="an-evo-dot" cx="${x}" cy="${y}" r="4.5" fill="${col}"><title>${s.date}: ${s.cor}/${s.att} (${sp}%)</title></circle>`;
-      dotLabels+=`<text class="an-evo-dot-label" x="${x}" y="${Math.max(12,y-8)}" text-anchor="middle">${sp}%</text>`;
-    });
-    leftCol=`<div class="an-sec-h">Evoluție în timp</div>
-    <div class="an-evo-card">
-      <div class="an-evo-meta">
-        <div>
-          <div style="font-size:.82rem;font-weight:800;color:var(--q-accent);margin-bottom:3px">Acuratețe + volum pe zi / sesiune</div>
-          <div class="an-tc-detail">Linia arată procentul corect, iar barele arată câte întrebări ai rezolvat în ziua respectivă.</div>
-        </div>
-        <div class="an-evo-kpis">
-          <div class="an-evo-kpi">Ultimele ${chartSessions.length} zile</div>
-          <div class="an-evo-kpi">Max ${maxAtt} întrebări</div>
-        </div>
-      </div>
-      <div class="an-evo-legend">
-        <div class="an-evo-legend-item"><span class="an-evo-legend-line"></span><span>Acuratețe (%)</span></div>
-        <div class="an-evo-legend-item"><span class="an-evo-legend-bar"></span><span>Volum (întrebări)</span></div>
-      </div>
-      <div class="an-evo-chart">
-        <svg class="an-evo-svg" viewBox="0 0 ${chartW} ${chartH}" preserveAspectRatio="none">
-          ${grid}
-          ${axisLabels}
-          ${bars}
-          <polyline class="an-evo-line" points="${linePoints.trim()}"></polyline>
-          ${dots}
-          ${dotLabels}
-        </svg>
-        <div class="an-evo-axis">${chartSessions.map(s=>`<span>${s.date}</span>`).join('')}</div>
-      </div>
-    </div>
-    <div class="an-timeline">`;
-    [...sessions].reverse().slice(0,5).forEach(s=>{
-      const sp=Math.round(s.cor/s.att*100);
-      const col=sp>=70?'#27ae60':sp>=40?'#f39c12':'#e74c3c';
-      leftCol+=`<div class="an-tl-item">
-        <div class="an-tl-date">${s.date}</div>
-        <div class="an-tl-bar-wrap"><div class="an-tl-bar" style="width:${sp}%;background:${col}"></div></div>
-        <div class="an-tl-score" style="color:${col}">${s.cor}/${s.att} (${sp}%)</div>
-      </div>`;
-    });
-    leftCol+='</div>';
-  }else{
-    leftCol='<div class="an-sec-h">📅 Evoluție în timp</div><div class="an-topic-card"><div class="an-tc-detail">Sesiunile vor apărea aici după ce salvezi progres pe zile diferite.</div></div>';
-  }
-  let rightCol='<div class="an-sec-h">📚 Performanță pe topice</div>';
-  [...topicList].sort((a,b)=>{const pa=a.attempts?a.correct/a.attempts:1,pb=b.attempts?b.correct/b.attempts:1;return pa-pb;}).forEach(t=>{
-    const tp=t.attempts?Math.round(t.correct/t.attempts*100):0;
-    const col=tp>=70?'#27ae60':tp>=40?'#f39c12':'#e74c3c';
-    const icon=tp>=70?'✅':tp>=40?'⚠️':'❌';
-    rightCol+=`<div class="an-topic-card">
-      <div class="an-tc-head"><div class="an-tc-name">${icon} ${t.topic}</div><div class="an-tc-score" style="color:${col}">${tp}%</div></div>
-      <div class="an-tc-bar-wrap"><div class="an-tc-bar" style="width:${tp}%;background:${col}"></div></div>
-      <div class="an-tc-detail">${t.attempts} ${t.attempts===1?'întrebare':'întrebări'} · ${t.correct} corecte${t.errors.length>0?' · <a href="#" onclick="goto(\''+t.lessonPage+'\');return false;">Revezi: '+t.lessonSection+'</a>':''}</div>
-    </div>`;
-  });
-
-  html+=`<div class="an-two-col"><div class="an-col">${leftCol}</div><div class="an-col">${rightCol}</div></div>`;
-
-  // 4. ERORI DETALIATE — colapsibil
-  if(weakTopics.length>0){
-    html+=`<div class="an-sec-h" style="margin-top:10px">🔍 Unde greșești exact</div>
-    <button class="an-accordion-btn" id="an-err-toggle" type="button" aria-expanded="false" onclick="toggleErrDetails()"><span>▾ Vezi detalii greșeli</span><span class="an-accordion-meta">${weakTopics.length} ${weakTopics.length===1?'topic':'topice'}</span></button>
-    <div class="an-accordion-body" id="an-err-body" hidden>`;
-    weakTopics.forEach(t=>{
-      const qs=QUESTIONS.filter(q=>q.topic===t.topic);
-      const wrongCount={},missedCount={};
-      t.errors.forEach(e=>{e.wrongOptions.forEach(o=>{wrongCount[o]=(wrongCount[o]||0)+1;});e.missedOptions.forEach(o=>{missedCount[o]=(missedCount[o]||0)+1;});});
-      let optHtml='';
-      Object.entries(wrongCount).forEach(([letter,cnt])=>{
-        const q=qs[0];if(!q)return;
-        const opt=q.options.find(o=>o.letter===letter);
-        const expl=q.explanations[letter];
-        optHtml+=`<div class="an-err-opt an-ew"><div class="an-err-opt-lbl">✗ Bifat greșit (${cnt}×): ${letter}. ${opt?opt.text:''}</div><div class="an-err-opt-txt">${expl?expl.text:''}</div></div>`;
-      });
-      Object.entries(missedCount).forEach(([letter,cnt])=>{
-        const q=qs[0];if(!q)return;
-        const opt=q.options.find(o=>o.letter===letter);
-        const expl=q.explanations[letter];
-        optHtml+=`<div class="an-err-opt an-em"><div class="an-err-opt-lbl">! Omis (${cnt}×): ${letter}. ${opt?opt.text:''}</div><div class="an-err-opt-txt">${expl?expl.text:''}</div></div>`;
-      });
-      html+=`<div class="an-err-card"><div class="an-err-card-head"><strong>${t.topic}</strong><span class="an-err-badge">${t.errors.length} greșeală(i)</span></div><div class="an-err-card-body">${optHtml}<div class="lesson-ref" style="margin-top:10px">📖 <strong>Revezi:</strong> ${t.lessonSection} — <a href="#" onclick="goto('${t.lessonPage||'testiculele'}');return false;" style="color:var(--q-accent)">${t.lessonPage||'testiculele'}</a></div></div></div>`;
-    });
-    html+='</div>';
-  }
-  container.innerHTML=html;
-}
-
-function toggleErrDetails(){
-  const body=document.getElementById('an-err-body');
-  const btn=document.getElementById('an-err-toggle');
-  if(!body||!btn)return;
-  const open=!body.hasAttribute('hidden');
-  if(open)body.setAttribute('hidden','');
-  else body.removeAttribute('hidden');
-  btn.setAttribute('aria-expanded',open?'false':'true');
-  btn.classList.toggle('is-open',!open);
-  const label=btn.querySelector('span');
-  if(label)label.textContent=`${open?'▾':'▴'} Vezi detalii greșeli`;
-}
-
-function resetAnalysis(){
-  if(!isQuizComplete()){
-    showToast('Finalizează toate întrebările înainte să resetezi analiza.');
-    return;
-  }
-  if(!confirm('Ești sigur că vrei să ștergi toată analiza?'))return;
-  localStorage.removeItem('reproducator_masculin_analysis_v1');
-  renderAnalysis();
-}
-
-// Init quiz on page load
-buildQuiz(true);
-renderAnalysis();
-updateAnalysisResetState();
-
-// ════ GRILE TABS ════
-function switchGTab(tab, btn) {
-  document.querySelectorAll('.gtab-panel').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.gtab-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('gtab-' + tab).classList.add('active');
-  btn.classList.add('active');
-  if(tab==='analysis') updateAnalysisResetState();
-}
-
-// ════ PROGRESS SYNC ════
-const STORAGE_KEY = 'reproducator_masculin_quiz_v1';
-const ANALYSIS_KEY = 'reproducator_masculin_analysis_v1';
-
-function exportProgress(){
-  var data = {
-    q: localStorage.getItem(STORAGE_KEY) || '{}',
-    a: localStorage.getItem(ANALYSIS_KEY) || '{}'
-  };
-  var code = btoa(unescape(encodeURIComponent(JSON.stringify(data))));
-  navigator.clipboard.writeText(code).then(function(){
-    alert('✅ Codul a fost copiat!\n\nDu-te pe celălalt dispozitiv → Grile → "Importă progresul" și lipește codul.');
-  }).catch(function(){
-    prompt('Copiază manual codul de mai jos:', code);
-  });
-}
-
-function importProgress(){
-  var code = prompt('Lipește codul de progres (copiat de pe alt dispozitiv):');
-  if(!code || !code.trim()) return;
-  try {
-    var data = JSON.parse(decodeURIComponent(escape(atob(code.trim()))));
-    if(data.q) localStorage.setItem(STORAGE_KEY, data.q);
-    if(data.a) localStorage.setItem(ANALYSIS_KEY, data.a);
-    alert('✅ Progresul a fost importat! Pagina se reîncarcă...');
-    location.reload();
-  } catch(e) {
-    alert('❌ Cod invalid. Asigură-te că ai copiat codul complet.');
-  }
-}
 
 // ════ DARK MODE ════
 function toggleDarkMode(){
@@ -2471,30 +1531,12 @@ document.addEventListener('mouseup', function(e){
 });
 
 // ════ NAV MOBILE ════
-var MENU_SVG = '<svg class="brand-menu" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>';
-var CLOSE_SVG = '<svg class="brand-menu" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>';
-function toggleNav(){
-  const nav = document.getElementById('sidenav');
-  const overlay = document.getElementById('nav-overlay');
-  const mark = document.querySelector('#lab-brand-btn .lab-brand-mark');
-  const isOpen = nav.classList.toggle('open');
-  overlay.classList.toggle('open', isOpen);
-  if(mark) mark.innerHTML = isOpen ? CLOSE_SVG : MENU_SVG;
-}
 function closeNav(){
   const nav = document.getElementById('sidenav');
   const overlay = document.getElementById('nav-overlay');
-  const mark = document.querySelector('#lab-brand-btn .lab-brand-mark');
-  if(nav.classList.contains('open')){
-    nav.classList.remove('open');
-    overlay.classList.remove('open');
-    if(mark) mark.innerHTML = MENU_SVG;
-  }
+  nav.classList.remove('open');
+  overlay.classList.remove('open');
 }
-// Logo = hamburger pe mobile
-document.getElementById('lab-brand-btn').addEventListener('click', function(e){
-  if(window.innerWidth <= 1024){ e.preventDefault(); toggleNav(); }
-});
 document.getElementById('sidenav').querySelectorAll('a').forEach(function(a){
   a.addEventListener('click', function(){
     if(window.innerWidth <= 1024) closeNav();
@@ -2550,7 +1592,6 @@ function collectSearchMatches(term) {
   if (!needle) return [];
   var matches = [];
   document.querySelectorAll('.page-section').forEach(function(section) {
-    if (section.id === 'page-grile') return;
     var walker = document.createTreeWalker(section, NodeFilter.SHOW_TEXT);
     while (walker.nextNode()) {
       var tn = walker.currentNode;
@@ -2631,7 +1672,7 @@ function goToLessonSearchResult(index) {
       goto(targetSection);
     }
     requestAnimationFrame(function() {
-      target.element.scrollIntoView({behavior:'smooth', block:'center'});
+      target.element.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth', block:'center'});
     });
   }
   updateLessonSearchUi();
@@ -2738,11 +1779,8 @@ function setupLessonSearch() {
 // ════ INIT ════
 (function(){
   var p = new URLSearchParams(window.location.search);
-  if(p.get('goto') === 'grile' || window.location.hash === '#grile'){
-    goto('grile');
-  } else {
-    goto('home');
-  }
+  var initialSection = p.get('goto') || window.location.hash.slice(1) || 'home';
+  goto(document.getElementById('page-' + initialSection) ? initialSection : 'home');
   setupLessonSearch();
   var q = p.get('q');
   var section = p.get('section');
@@ -2755,12 +1793,7 @@ function toggleSettingsFab(){
   var panel = document.getElementById('settings-panel');
   if(panel) panel.classList.toggle('open');
 }
-function syncProgress(){
-  showToast('📱 Funcția de sincronizare va fi disponibilă în curând.');
-  var p = document.getElementById('settings-panel');
-  if(p) p.classList.remove('open');
-}
-function syncFabStates(){
+function updateFabStates(){
   var dm = document.getElementById('sfab-dm');
   var hl = document.getElementById('sfab-hl');
   if(dm) dm.classList.toggle('on', document.body.classList.contains('dark'));
@@ -2776,13 +1809,13 @@ document.addEventListener('click', function(e){
 (function(){
   var origDark = window.toggleDarkMode;
   if(typeof origDark === 'function'){
-    window.toggleDarkMode = function(){ origDark(); syncFabStates(); };
+    window.toggleDarkMode = function(){ origDark(); updateFabStates(); };
   }
   var origHl = window.toggleHighlighter;
   if(typeof origHl === 'function'){
-    window.toggleHighlighter = function(){ origHl(); syncFabStates(); };
+    window.toggleHighlighter = function(){ origHl(); updateFabStates(); };
   }
-  document.addEventListener('DOMContentLoaded', function(){ syncFabStates(); });
+  document.addEventListener('DOMContentLoaded', function(){ updateFabStates(); });
 })();
 </script>
 
@@ -2790,8 +1823,7 @@ document.addEventListener('click', function(e){
 <div id="settings-panel" role="menu" aria-label="Setări lecție">
   <button class="settings-opt" id="sfab-dm"   onclick="toggleDarkMode()">🌙 Mod noapte</button>
   <button class="settings-opt" id="sfab-hl"   onclick="toggleHighlighter()">🖊 Evidențiator</button>
-  <button class="settings-opt" id="sfab-sync" onclick="syncProgress()">📱 Transferă progresul</button>
 </div>
-<script src="assets/js/chapter-redesign.js?v=20260504-highlighter1"></script>
+<script src="assets/js/chapter-redesign.js?v=20260727-highlighter6"></script>
 </body>
 </html>

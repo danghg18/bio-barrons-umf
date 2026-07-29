@@ -1,347 +1,535 @@
 (function () {
-  function extractTarget(node) {
+  "use strict";
+
+  var state = {
+    drawerReturnFocus: null,
+    searchReturnFocus: null,
+    searchRoot: null,
+    ownedSearch: false,
+    searchTimer: 0,
+    searchMatches: [],
+    searchIndex: -1,
+    suppressNextRouteFocus: false,
+    highlighterEnabled: false,
+    highlighterColor: "yellow",
+    pageCloseNav: null,
+  };
+
+  var HIGHLIGHTER_COLORS = [
+    { id: "yellow", label: "Galben" },
+    { id: "green", label: "Verde" },
+    { id: "blue", label: "Albastru" },
+    { id: "pink", label: "Roz" },
+    { id: "violet", label: "Mov" },
+    { id: "orange", label: "Portocaliu" },
+  ];
+
+  function prefersReducedMotion() {
+    return !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  }
+
+  function safeStorageGet(key) {
+    try {
+      return window.localStorage.getItem(key);
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function safeStorageSet(key, value) {
+    try {
+      window.localStorage.setItem(key, value);
+    } catch (error) {
+      // Storage may be unavailable in private browsing or embedded contexts.
+    }
+  }
+
+  function normalizeHighlighterColor(value) {
+    var candidate = String(value || "").toLowerCase();
+    return HIGHLIGHTER_COLORS.some(function (color) {
+      return color.id === candidate;
+    })
+      ? candidate
+      : "yellow";
+  }
+
+  function getHighlighterColorLabel(value) {
+    var normalized = normalizeHighlighterColor(value);
+    var match = HIGHLIGHTER_COLORS.find(function (color) {
+      return color.id === normalized;
+    });
+    return match ? match.label : "Galben";
+  }
+
+  function getGotoTarget(node) {
     if (!node) return "";
-    const onclick = node.getAttribute("onclick") || "";
-    const match = onclick.match(/goto\('([^']+)'/);
+    var handler = node.getAttribute("onclick") || "";
+    var match = handler.match(/goto\(\s*['\"]([^'\"]+)['\"]/);
     return match ? match[1] : "";
   }
 
-  function countSubsections(sectionId) {
-    if (window.SUB_NAVS && Array.isArray(window.SUB_NAVS[sectionId])) {
-      return window.SUB_NAVS[sectionId].length;
-    }
-    const section = document.getElementById("page-" + sectionId);
-    if (!section) return 0;
-    return section.querySelectorAll("section[id]").length || section.querySelectorAll("section").length;
-  }
-
-  function getProgressNumbers() {
-    const text = document.getElementById("progress-text")?.textContent || "";
-    const match = text.match(/(\d+)\s*\/\s*(\d+)/);
-    if (!match) return { submitted: 0, total: 0 };
-    return {
-      submitted: Number(match[1]) || 0,
-      total: Number(match[2]) || 0,
-    };
-  }
-
-  function getQuestionCount() {
-    if (Array.isArray(window.QUESTIONS)) return window.QUESTIONS.length;
-    return getProgressNumbers().total;
-  }
-
-  function getSubmittedCount() {
-    if (window.quizState && typeof window.quizState === "object") {
-      return Object.values(window.quizState).filter(function (entry) {
-        return entry && entry.submitted;
-      }).length;
-    }
-    return getProgressNumbers().submitted;
-  }
-
-  function ensureHeroCopy(hero) {
-    let copy = hero.querySelector(":scope > .bb-hero-copy");
-    if (copy) return copy;
-
-    copy = document.createElement("div");
-    copy.className = "bb-hero-copy";
-
-    Array.from(hero.children).forEach(function (child) {
-      if (
-        child.classList.contains("bb-hero-copy") ||
-        child.classList.contains("bb-home-dashboard") ||
-        child.classList.contains("bb-section-pills")
-      ) {
-        return;
-      }
-      copy.appendChild(child);
-    });
-
-    hero.prepend(copy);
-    return copy;
-  }
-
-  function getChapterNumber() {
-    const badge = document.querySelector(".nav-chapter-badge")?.textContent || "";
-    const match = badge.match(/\d+/);
-    return match ? match[0] : "";
-  }
-
-  function getCleanTitle(rawTitle) {
-    return (rawTitle || "")
-      .replace(/^[^\p{L}\p{N}]+/u, "")
-      .replace(/^Capitolul\s+\d+\s*[–-]\s*/i, "")
-      .replace(/^\d+(?:\.\d+)*\.\s*/, "")
-      .trim();
-  }
-
-  function renderSplitTitle(titleEl, title) {
-    if (!titleEl || titleEl.dataset.bbTitleReady === "true") return;
-
-    const words = title.split(/\s+/).filter(Boolean);
-    const accent = words.length > 1 ? words.pop() : "";
-    const main = words.join(" ") || title;
-
-    titleEl.textContent = "";
-    titleEl.classList.add("bb-lab-title");
-
-    const mainSpan = document.createElement("span");
-    mainSpan.className = "bb-title-main";
-    mainSpan.textContent = main;
-    titleEl.appendChild(mainSpan);
-
-    if (accent) {
-      titleEl.appendChild(document.createTextNode(" "));
-      const accentSpan = document.createElement("span");
-      accentSpan.className = "bb-title-accent";
-      accentSpan.textContent = accent;
-      titleEl.appendChild(accentSpan);
-    }
-
-    titleEl.dataset.bbTitleReady = "true";
-  }
-
-  function enhanceHomeHero() {
-    const hero = document.querySelector(".chapter-home .hero");
-    if (!hero) return;
-
-    hero.querySelectorAll(".bb-home-dashboard").forEach(function (node) {
-      node.remove();
-    });
-
-    const copy = ensureHeroCopy(hero);
-    copy.classList.add("bb-home-copy");
-
-    const titleEl = copy.querySelector("h1");
-    const title = getCleanTitle(titleEl?.textContent || document.querySelector(".nav-chapter-title")?.textContent);
-    const chapterNumber = getChapterNumber();
-
-    if (!copy.querySelector(".bb-chapter-kicker")) {
-      const kicker = document.createElement("div");
-      kicker.className = "bb-chapter-kicker";
-      kicker.textContent =
-        (chapterNumber ? "Capitol " + chapterNumber + " · " : "") +
-        "UMF Cluj · Barron's Biologie";
-      copy.prepend(kicker);
-    }
-
-    renderSplitTitle(titleEl, title || "Capitol");
-  }
-
-  function enhanceSectionHeroes() {
-    document.querySelectorAll(".page-section:not(.chapter-home) .hero").forEach(function (hero) {
-      const pageSection = hero.closest(".page-section");
-      if (!pageSection) return;
-
-      const sectionId = pageSection.id.replace(/^page-/, "");
-      const copy = ensureHeroCopy(hero);
-      const titleEl = copy.querySelector("h1");
-      if (titleEl && titleEl.dataset.bbSectionTitleReady !== "true") {
-        titleEl.textContent = getCleanTitle(titleEl.textContent);
-        titleEl.dataset.bbSectionTitleReady = "true";
-      }
-
-      if (!copy.querySelector(".bb-section-eyebrow")) {
-        const eyebrow = document.createElement("div");
-        eyebrow.className = "bb-section-eyebrow";
-        eyebrow.textContent = sectionId === "grile" ? "Suprafață de antrenament" : "Lecție";
-        copy.prepend(eyebrow);
-      }
-
-      if (hero.querySelector(".bb-section-pills")) return;
-
-      const pills = document.createElement("div");
-      pills.className = "bb-section-pills";
-
-      let labels;
-      if (sectionId === "grile") {
-        labels = [
-          getQuestionCount() + " întrebări",
-          "feedback pe opțiuni",
-          "analiză progres",
-        ];
-      } else if (sectionId === "mindmap") {
-        const flowNodes = document.querySelectorAll("#fc-wrap .fc-node").length;
-        labels = [
-          (flowNodes || 5) + " etape interactive",
-          "Play / Reset",
-          "explicații complete",
-        ];
-      } else {
-        const subsectionCount = countSubsections(sectionId);
-        labels = [
-          subsectionCount + " subsecțiuni",
-          "lecție ilustrată",
-          "recapitulare rapidă",
-        ];
-      }
-
-      labels.forEach(function (label) {
-        const pill = document.createElement("span");
-        pill.className = "bb-section-pill";
-        pill.textContent = label;
-        pills.appendChild(pill);
-      });
-
-      hero.appendChild(pills);
-    });
-  }
-
-  function enhanceMapCards() {
-    const cards = document.querySelectorAll(".chapter-map .map-card");
-    cards.forEach(function (card, index) {
-      card.removeAttribute("style");
-      card.setAttribute("data-map-index", String(index + 1).padStart(2, "0"));
-
-      if (!card.querySelector(".bb-map-meta")) {
-        const meta = document.createElement("span");
-        meta.className = "bb-map-meta";
-        meta.textContent = /grile/i.test(card.textContent) ? "Antrenament" : "Materie";
-        card.appendChild(meta);
-      }
-    });
-  }
-
-  function normalizeHomeMapCards() {
-    const home = document.querySelector(".chapter-home");
-    if (!home) return;
-
-    const mapCard = Array.from(home.querySelectorAll(":scope > .card")).find(function (card) {
-      return /harta\s+capitolului/i.test(card.querySelector("h2")?.textContent || "");
-    });
-    if (!mapCard) return;
-
-    mapCard.classList.add("chapter-map");
-
-    const grid = mapCard.querySelector(".map-grid-split, .g2, .g3");
-    if (!grid) return;
-
-    const targets = Array.from(document.querySelectorAll("#sidenav a"))
-      .map(extractTarget)
-      .filter(function (target) {
-        return target && target !== "home";
-      });
-
-    const tones = ["blue", "green", "purple", "orange", "teal", "emerald"];
-    const icons = ["🔬", "🧬", "🩺", "📚", "📝", "✨"];
-
-    Array.from(grid.children).forEach(function (item, index) {
-      item.classList.add("map-card");
-
-      const tone =
-        tones.find(function (name) {
-          return item.classList.contains(name) || item.classList.contains("tone-" + name);
-        }) || tones[index % tones.length];
-      item.classList.add("tone-" + tone);
-
-      const first = item.firstElementChild;
-      if (!first || first.tagName !== "DIV" || !first.textContent.trim().match(/^[^\p{L}\p{N}]+$/u)) {
-        const icon = document.createElement("div");
-        icon.textContent = icons[index % icons.length];
-        item.prepend(icon);
-      }
-
-      if (!extractTarget(item)) {
-        const target = targets[index];
-        if (target) {
-          item.setAttribute("onclick", "goto('" + target + "')");
-          item.setAttribute("role", "button");
-          item.setAttribute("tabindex", "0");
-          item.addEventListener("keydown", function (event) {
-            if (event.key === "Enter" || event.key === " ") {
-              event.preventDefault();
-              window.goto?.(target);
-            }
-          });
-        }
-      }
-    });
-  }
-
-  function syncProgressWidgets() {
-    const total = getQuestionCount();
-    const submitted = getSubmittedCount();
-    const pct = total ? Math.round((submitted / total) * 100) : 0;
-
-    document.querySelectorAll("[data-bb-progress-value]").forEach(function (node) {
-      node.textContent = submitted + "/" + total;
-    });
-
-    document.querySelectorAll("[data-bb-progress-note]").forEach(function (node) {
-      node.textContent = total ? pct + "% rezolvat" : "Începe din lecții";
-    });
-  }
-
-  function syncTopbarTabs() {
-    const activeId =
-      document.querySelector(".page-section.active")?.id?.replace(/^page-/, "") || "home";
-    document.querySelectorAll(".lab-nav a").forEach(function (link, index) {
-      if (link.classList.contains("bb-topbar-extra-link")) return;
-      const target = extractTarget(link);
-      if (!link.dataset.bbLabelReady) {
-        if (index === 0) link.textContent = "Lecție";
-        if (target === "grile") link.textContent = "Grile UMF";
-        link.dataset.bbLabelReady = "true";
-      }
-      const isQuiz = target === "grile";
-      const active = isQuiz ? activeId === "grile" : activeId !== "grile";
-      link.classList.toggle("active", active);
-    });
+  function getActiveSectionId() {
+    var active = document.querySelector(".page-section.active");
+    return active ? active.id.replace(/^page-/, "") : "home";
   }
 
   function applyChapterTheme() {
-    const chapter = getChapterNumber();
-    const title = (
-      document.querySelector(".nav-chapter-title")?.textContent ||
-      document.title ||
-      ""
-    ).toLowerCase();
-
-    const themes = {
+    var badge = document.querySelector(".nav-chapter-badge");
+    var match = String(badge ? badge.textContent : document.title).match(/\d+/);
+    var chapter = match ? match[0] : "";
+    var themes = {
+      "1": { accent: "#2563eb", light: "#eff6ff", mid: "#3b82f6" },
+      "3": { accent: "#2563eb", light: "#eff6ff", mid: "#3b82f6" },
+      "6": { accent: "#0891b2", light: "#ecfeff", mid: "#06b6d4" },
+      "8": { accent: "#0891b2", light: "#ecfeff", mid: "#06b6d4" },
       "20": { accent: "#059669", light: "#ecfdf5", mid: "#10b981" },
       "22": { accent: "#0891b2", light: "#ecfeff", mid: "#06b6d4" },
       "23": { accent: "#db2777", light: "#fdf2f8", mid: "#ec4899" },
     };
-
-    let theme = themes[chapter];
-    if (!theme && title.includes("feminin")) theme = themes["23"];
-    if (!theme && title.includes("urinar")) theme = themes["20"];
-    if (!theme && title.includes("masculin")) theme = themes["22"];
+    var theme = themes[chapter];
     if (!theme) return;
 
-    document.body.style.setProperty("--chapter-accent", theme.accent);
-    document.body.style.setProperty("--chapter-accent-light", theme.light);
-    document.body.style.setProperty("--chapter-accent-mid", theme.mid);
-    document.body.style.setProperty("--bb-new-accent", theme.accent);
-    document.body.style.setProperty("--bb-new-accent-light", theme.light);
-    document.body.style.setProperty("--bb-new-accent-mid", theme.mid);
+    [
+      ["--chapter-accent", theme.accent],
+      ["--chapter-accent-light", theme.light],
+      ["--chapter-accent-mid", theme.mid],
+      ["--bb-new-accent", theme.accent],
+      ["--bb-new-accent-light", theme.light],
+      ["--bb-new-accent-mid", theme.mid],
+    ].forEach(function (entry) {
+      document.body.style.setProperty(entry[0], entry[1]);
+    });
   }
 
-  function normalizeBrandMark() {
-    const mark = document.querySelector(".lab-brand-mark");
-    if (!mark || mark.querySelector(".brand-star")) return;
+  function normalizeBrand() {
+    var brand = document.querySelector(".lab-brand");
+    var mark = brand && brand.querySelector(".lab-brand-mark");
+    if (!brand || !mark) return;
 
     mark.innerHTML =
-      '<svg class="brand-star" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.3l-4.8 2.6.9-5.4-3.9-3.8 5.4-.8z"/></svg>' +
-      '<svg class="brand-menu" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>';
+      '<img class="brand-logo-mark" src="assets/logo-mark.svg" alt="" width="30" height="30" decoding="async">';
+    brand.removeAttribute("aria-controls");
+    brand.removeAttribute("aria-expanded");
+    brand.setAttribute("title", "Pagina principală");
   }
 
-  function patchDesktopBrandClose() {
-    if (typeof window.closeNav !== "function" || window.__bbCloseNavPatched) return;
-    const originalCloseNav = window.closeNav;
+  function drawerIcon(open) {
+    var path = open ? "M18 6 6 18M6 6l12 12" : "M3 6h18M3 12h18M3 18h18";
+    return (
+      '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">' +
+      '<path d="' +
+      path +
+      '"/></svg>'
+    );
+  }
+
+  function ensureMenuTrigger() {
+    var topbar = document.querySelector(".lab-topbar-inner");
+    var brand = topbar && topbar.querySelector(".lab-brand");
+    if (!topbar || !brand) return null;
+    var trigger = topbar.querySelector(".lab-menu-trigger");
+    if (!trigger) {
+      trigger = document.createElement("button");
+      trigger.type = "button";
+      trigger.className = "lab-menu-trigger";
+      trigger.setAttribute("aria-controls", "sidenav");
+      topbar.insertBefore(trigger, brand);
+    }
+    trigger.setAttribute("aria-expanded", "false");
+    trigger.setAttribute("aria-label", "Deschide cuprinsul");
+    trigger.setAttribute("title", "Deschide cuprinsul");
+    trigger.innerHTML = drawerIcon(false);
+    return trigger;
+  }
+
+  function ensureSkipLink() {
+    var main = document.querySelector("main");
+    if (!main) return;
+    if (!main.id) main.id = "main-content";
+    var existing = document.querySelector(".lesson-skip, .bb-skip-link");
+    if (existing) {
+      existing.classList.add("lab-skip", "bb-skip-link");
+      existing.href = "#" + main.id;
+      return;
+    }
+
+    var link = document.createElement("a");
+    link.className = "lab-skip bb-skip-link";
+    link.href = "#" + main.id;
+    link.textContent = "Sari la conținut";
+    Object.assign(link.style, {
+      position: "fixed",
+      top: "8px",
+      left: "8px",
+      zIndex: "1000",
+      padding: "10px 14px",
+      borderRadius: "10px",
+      background: "#0f172a",
+      color: "#ffffff",
+      fontWeight: "800",
+      transform: "translateY(-160%)",
+      transition: "transform 150ms ease-out",
+    });
+    link.addEventListener("focus", function () {
+      link.style.transform = "translateY(0)";
+    });
+    link.addEventListener("blur", function () {
+      link.style.transform = "translateY(-160%)";
+    });
+    document.body.prepend(link);
+  }
+
+  function normalizeBackAction() {
+    var topbar = document.querySelector(".lab-topbar-inner");
+    if (!topbar) return;
+    var back = topbar.querySelector(".lab-topbar-back");
+    if (!back) return;
+    back.setAttribute("aria-label", "Înapoi la toate capitolele");
+    back.setAttribute("title", "Toate capitolele");
+    if (back.dataset.bbBackReady === "true") return;
+    var label = back.textContent.replace(/^\s*[←‹]\s*/, "").trim() || "Toate capitolele";
+    back.dataset.bbBackReady = "true";
+    back.innerHTML =
+      '<span class="lab-topbar-back-icon" aria-hidden="true">←</span>' +
+      '<span class="lab-topbar-back-label">' +
+      label +
+      "</span>";
+  }
+
+  function enhanceGotoLinks() {
+    document.querySelectorAll('a[onclick*="goto("]').forEach(function (link) {
+      var target = getGotoTarget(link);
+      if (!target) return;
+
+      link.href = "#" + encodeURIComponent(target);
+      link.removeAttribute("role");
+      link.removeAttribute("tabindex");
+
+      if (link.dataset.bbNativeLink === "true") return;
+      link.dataset.bbNativeLink = "true";
+
+      link.addEventListener(
+        "click",
+        function (event) {
+          if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+            event.stopImmediatePropagation();
+          }
+        },
+        true
+      );
+      link.addEventListener("click", function (event) {
+        if (event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) {
+          event.preventDefault();
+        }
+      });
+    });
+    syncNavigationState();
+  }
+
+  function syncNavigationState(explicitTarget) {
+    var activeId = explicitTarget || getActiveSectionId();
+    document.querySelectorAll("#sidenav a, .lab-nav a").forEach(function (link) {
+      var target = getGotoTarget(link);
+      if (!target) return;
+      var current = target === activeId;
+      link.classList.toggle("active", current);
+      if (current) link.setAttribute("aria-current", "page");
+      else link.removeAttribute("aria-current");
+    });
+  }
+
+  function focusActiveHeading(target) {
+    var section = document.getElementById("page-" + target) || document.querySelector(".page-section.active");
+    var heading = section && section.querySelector("h1");
+    if (!heading) return;
+    if (!heading.hasAttribute("tabindex")) heading.setAttribute("tabindex", "-1");
+    try {
+      heading.focus({ preventScroll: true });
+    } catch (error) {
+      heading.focus();
+    }
+  }
+
+  function patchGoto() {
+    if (typeof window.goto !== "function" || window.goto.__bbSharedWrapper) return;
+    var originalGoto = window.goto;
+
+    function sharedGoto() {
+      var target = arguments[0] || "home";
+      var suppressFocus =
+        state.suppressNextRouteFocus ||
+        !!(state.searchRoot && state.searchRoot.classList.contains("open"));
+      state.suppressNextRouteFocus = false;
+      var result = originalGoto.apply(this, arguments);
+
+      if (prefersReducedMotion()) {
+        window.scrollTo({ top: 0, behavior: "auto" });
+      }
+      window.setTimeout(function () {
+        syncNavigationState(target);
+        if (!suppressFocus) focusActiveHeading(target);
+      }, 0);
+      return result;
+    }
+
+    sharedGoto.__bbSharedWrapper = true;
+    sharedGoto.__bbOriginal = originalGoto;
+    window.goto = sharedGoto;
+  }
+
+  function enhanceMapCardsAndAccordions() {
+    document
+      .querySelectorAll(
+        ".chapter-map .g2 > .box, .chapter-map .g3 > .box, " +
+          ".chapter-map .map-grid-split > .box, .chapter-map .map-card"
+      )
+      .forEach(function (card, index) {
+      card.classList.add("map-card");
+      card.dataset.mapIndex = String(index + 1).padStart(2, "0");
+      if (!getGotoTarget(card)) return;
+      if (card.dataset.bbInteractive === "true") return;
+      card.dataset.bbInteractive = "true";
+      card.setAttribute("role", "button");
+      card.setAttribute("tabindex", "0");
+      card.addEventListener("keydown", function (event) {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          card.click();
+        }
+      });
+      });
+
+    document.querySelectorAll('.acc-head[onclick], .accordion-head[onclick], [onclick*="tog("]').forEach(function (header, index) {
+      if (header.dataset.bbInteractive === "true") return;
+      var panel = header.nextElementSibling;
+      if (!panel) return;
+
+      header.dataset.bbInteractive = "true";
+      header.setAttribute("role", "button");
+      header.setAttribute("tabindex", "0");
+      if (!panel.id) panel.id = "bb-accordion-panel-" + (index + 1);
+      header.setAttribute("aria-controls", panel.id);
+
+      function syncExpanded() {
+        var expanded = header.classList.contains("open") || panel.classList.contains("show");
+        header.setAttribute("aria-expanded", String(expanded));
+        panel.setAttribute("aria-hidden", String(!expanded));
+      }
+
+      syncExpanded();
+      header.addEventListener("click", function () {
+        window.setTimeout(syncExpanded, 0);
+      });
+      header.addEventListener("keydown", function (event) {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          header.click();
+        }
+      });
+    });
+  }
+
+  function isMobileLayout() {
+    return window.matchMedia ? window.matchMedia("(max-width: 1024px)").matches : window.innerWidth <= 1024;
+  }
+
+  function setDrawerClosedState(restoreFocus) {
+    var nav = document.getElementById("sidenav");
+    var overlay = document.getElementById("nav-overlay");
+    var trigger = document.querySelector(".lab-menu-trigger");
+    var main = document.querySelector("main");
+
+    if (nav) {
+      nav.classList.remove("open");
+      if (isMobileLayout()) {
+        nav.setAttribute("aria-hidden", "true");
+        nav.inert = true;
+      } else {
+        nav.removeAttribute("aria-hidden");
+        nav.inert = false;
+      }
+    }
+    if (overlay) {
+      overlay.classList.remove("open");
+      overlay.setAttribute("aria-hidden", "true");
+      overlay.inert = true;
+    }
+    if (trigger) {
+      trigger.setAttribute("aria-expanded", "false");
+      trigger.setAttribute("aria-label", "Deschide cuprinsul");
+      trigger.setAttribute("title", "Deschide cuprinsul");
+      trigger.innerHTML = drawerIcon(false);
+    }
+    if (main) main.inert = false;
+
+    if (restoreFocus && state.drawerReturnFocus && typeof state.drawerReturnFocus.focus === "function") {
+      state.drawerReturnFocus.focus();
+    }
+    state.drawerReturnFocus = null;
+  }
+
+  function openDrawer() {
+    var nav = document.getElementById("sidenav");
+    var overlay = document.getElementById("nav-overlay");
+    var trigger = document.querySelector(".lab-menu-trigger");
+    var main = document.querySelector("main");
+    if (!nav || !isMobileLayout()) return;
+
+    closeSearch(false);
+    state.drawerReturnFocus = document.activeElement;
+    nav.inert = false;
+    nav.removeAttribute("aria-hidden");
+    nav.classList.add("open");
+    if (overlay) {
+      overlay.inert = false;
+      overlay.setAttribute("aria-hidden", "false");
+      overlay.classList.add("open");
+    }
+    if (trigger) {
+      trigger.setAttribute("aria-expanded", "true");
+      trigger.setAttribute("aria-label", "Închide cuprinsul");
+      trigger.setAttribute("title", "Închide cuprinsul");
+      trigger.innerHTML = drawerIcon(true);
+    }
+    if (main) main.inert = true;
+
+    window.setTimeout(function () {
+      var first = nav.querySelector('a[href], button:not([disabled]), [tabindex="0"]');
+      if (first) first.focus();
+    }, 0);
+  }
+
+  function trapDrawerFocus(event) {
+    var nav = document.getElementById("sidenav");
+    if (!nav || !nav.classList.contains("open") || event.key !== "Tab") return false;
+    var focusable = Array.prototype.slice
+      .call(nav.querySelectorAll('a[href], button:not([disabled]), [tabindex="0"]'))
+      .filter(function (node) {
+        return !node.hidden && node.getAttribute("aria-hidden") !== "true";
+      });
+    if (!focusable.length) return false;
+    var first = focusable[0];
+    var last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+    return true;
+  }
+
+  function setupDrawer() {
+    var trigger = document.querySelector(".lab-menu-trigger");
+    var nav = document.getElementById("sidenav");
+    var overlay = document.getElementById("nav-overlay");
+    if (!trigger || !nav) return;
+
+    nav.setAttribute("aria-label", nav.getAttribute("aria-label") || "Navigarea lecției");
+    state.pageCloseNav = typeof window.closeNav === "function" ? window.closeNav : null;
     window.closeNav = function () {
-      originalCloseNav.apply(this, arguments);
-      if (window.innerWidth > 1024) normalizeBrandMark();
+      if (state.pageCloseNav) state.pageCloseNav.apply(this, arguments);
+      setDrawerClosedState(false);
     };
-    window.__bbCloseNavPatched = true;
+
+    trigger.addEventListener(
+      "click",
+      function (event) {
+        if (!isMobileLayout()) return;
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        if (nav.classList.contains("open")) setDrawerClosedState(true);
+        else openDrawer();
+      },
+      true
+    );
+
+    if (overlay) {
+      overlay.addEventListener(
+        "click",
+        function (event) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+          setDrawerClosedState(true);
+        },
+        true
+      );
+    }
+
+    window.addEventListener("resize", function () {
+      setDrawerClosedState(false);
+    });
+    setDrawerClosedState(false);
   }
 
-  function searchIconSvg() {
-    return '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.8-3.8"/></svg>';
+  function searchIcon() {
+    return '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.8-3.8"/></svg>';
   }
 
-  function normalizeSearchText(value) {
-    const text = String(value || "");
+  function createLessonSearch() {
+    var topbar = document.querySelector(".lab-topbar-inner");
+    if (!topbar) return null;
+    var root = document.createElement("div");
+    root.className = "lesson-search";
+    root.id = "lesson-search";
+    root.innerHTML =
+      '<div class="lesson-search-panel">' +
+      '<div class="lesson-search-box">' +
+      searchIcon() +
+      '<input id="lesson-search-input" type="search" aria-label="Caută în lecție" placeholder="Caută în lecție…" autocomplete="off">' +
+      '<span id="lesson-search-count" class="lesson-search-count" aria-live="polite">0 / 0</span>' +
+      '<div class="lesson-search-nav">' +
+      '<button type="button" class="lesson-search-btn" id="lesson-search-prev" aria-label="Rezultatul anterior">↑</button>' +
+      '<button type="button" class="lesson-search-btn" id="lesson-search-next" aria-label="Rezultatul următor">↓</button>' +
+      "</div>" +
+      '<button type="button" class="lesson-search-close" id="lesson-search-close" aria-label="Închide căutarea">×</button>' +
+      "</div></div>";
+    var back = topbar.querySelector(".lab-topbar-back");
+    topbar.insertBefore(root, back || null);
+    return root;
+  }
+
+  function normalizeTopbarActions() {
+    var topbar = document.querySelector(".lab-topbar-inner");
+    var root = state.searchRoot;
+    var back = topbar && topbar.querySelector(".lab-topbar-back");
+    if (!topbar || !root || !back) return;
+
+    var actions = topbar.querySelector(".lab-topbar-actions");
+    if (!actions) {
+      actions = document.createElement("div");
+      actions.className = "lab-topbar-actions";
+      topbar.appendChild(actions);
+    }
+    actions.appendChild(root);
+    actions.appendChild(back);
+  }
+
+  function ensureSearchTrigger(root) {
+    var trigger = root.querySelector(".lesson-search-trigger");
+    if (!trigger) {
+      trigger = document.createElement("button");
+      trigger.type = "button";
+      trigger.className = "lesson-search-trigger";
+      trigger.setAttribute("aria-label", "Caută în lecție");
+      trigger.setAttribute("title", "Caută în lecție (/)");
+      trigger.innerHTML = searchIcon();
+      root.prepend(trigger);
+    }
+    trigger.setAttribute("aria-controls", "lesson-search-input");
+    trigger.setAttribute("aria-expanded", String(root.classList.contains("open")));
+    if (trigger.dataset.bbSearchTrigger !== "true") {
+      trigger.dataset.bbSearchTrigger = "true";
+      trigger.addEventListener("click", function () {
+        if (root.classList.contains("open")) closeSearch(true);
+        else openSearch(true, trigger);
+      });
+    }
+  }
+
+  function normalizeSearchValue(value) {
+    var text = String(value || "");
     try {
       return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
     } catch (error) {
@@ -349,698 +537,667 @@
     }
   }
 
-  function buildSearchIndex(text) {
-    let normalized = "";
-    const map = [];
-    const source = String(text || "");
-
-    for (let index = 0; index < source.length; index += 1) {
-      const normalizedChar = normalizeSearchText(source[index]);
-      for (let charIndex = 0; charIndex < normalizedChar.length; charIndex += 1) {
-        normalized += normalizedChar[charIndex];
-        map.push(index);
+  function indexText(text) {
+    var normalized = "";
+    var map = [];
+    String(text || "").split("").forEach(function (character, sourceIndex) {
+      var chunk = normalizeSearchValue(character);
+      for (var index = 0; index < chunk.length; index += 1) {
+        normalized += chunk[index];
+        map.push(sourceIndex);
       }
-    }
-
-    return { normalized, map };
+    });
+    return { normalized: normalized, map: map };
   }
 
-  function createLessonSearch() {
-    const topbar = document.querySelector(".lab-topbar-inner");
-    if (!topbar) return null;
-
-    const root = document.createElement("div");
-    root.className = "lesson-search";
-    root.id = "lesson-search";
-    root.innerHTML =
-      '<div class="lesson-search-panel">' +
-      '<div class="lesson-search-box">' +
-      searchIconSvg() +
-      '<input id="lesson-search-input" type="text" placeholder="Caută în lecție..." autocomplete="off">' +
-      '<span id="lesson-search-count" class="lesson-search-count">0 / 0</span>' +
-      '<div class="lesson-search-nav">' +
-      '<button class="lesson-search-btn" id="lesson-search-prev" aria-label="Rezultatul anterior">↑</button>' +
-      '<button class="lesson-search-btn" id="lesson-search-next" aria-label="Rezultatul următor">↓</button>' +
-      '</div>' +
-      '<button class="lesson-search-close" id="lesson-search-close" aria-label="Închide căutarea">×</button>' +
-      '</div>' +
-      '</div>';
-
-    const back = topbar.querySelector(".lab-topbar-back");
-    topbar.insertBefore(root, back || null);
-    return root;
-  }
-
-  function unwrapSharedSearchHighlights() {
-    const touchedParents = new Set();
-    document.querySelectorAll(".search-found, .search-found-current").forEach(function (mark) {
-      if (!mark.parentNode) return;
-      const parent = mark.parentNode;
-      touchedParents.add(parent);
+  function clearOwnedSearchMarks() {
+    document.querySelectorAll('.search-found[data-bb-search="true"]').forEach(function (mark) {
+      var parent = mark.parentNode;
+      if (!parent) return;
       while (mark.firstChild) parent.insertBefore(mark.firstChild, mark);
       parent.removeChild(mark);
-    });
-    touchedParents.forEach(function (parent) {
-      if (parent && typeof parent.normalize === "function") parent.normalize();
+      parent.normalize();
     });
   }
 
-  function collectSharedSearchMatches(term) {
-    const needle = normalizeSearchText(String(term || "").trim());
+  function collectOwnedSearchMatches(query) {
+    var needle = normalizeSearchValue(String(query || "").trim());
     if (!needle) return [];
-    const matches = [];
+    var matches = [];
 
     document.querySelectorAll(".page-section").forEach(function (section) {
-      if (section.id === "page-grile") return;
-      const walker = document.createTreeWalker(section, NodeFilter.SHOW_TEXT);
-      while (walker.nextNode()) {
-        const textNode = walker.currentNode;
-        const parent = textNode.parentNode;
-        if (!parent || !parent.closest) continue;
-        if (parent.closest("script, style, nav, button, input, textarea")) continue;
-
-        const text = String(textNode.textContent || "");
-        const indexedText = buildSearchIndex(text);
-        const lower = indexedText.normalized;
-        let from = 0;
-        while (from < lower.length) {
-          const index = lower.indexOf(needle, from);
-          if (index === -1) break;
-          const start = indexedText.map[index];
-          const end = indexedText.map[index + needle.length - 1] + 1;
+      var walker = document.createTreeWalker(section, NodeFilter.SHOW_TEXT);
+      while (walker.nextNode() && matches.length < 300) {
+        var node = walker.currentNode;
+        var parent = node.parentElement;
+        if (!parent || parent.closest("script, style, nav, button, input, textarea, select, svg, mark.hl")) continue;
+        var indexed = indexText(node.textContent || "");
+        var from = 0;
+        while (from < indexed.normalized.length && matches.length < 300) {
+          var found = indexed.normalized.indexOf(needle, from);
+          if (found < 0) break;
+          var start = indexed.map[found];
+          var end = indexed.map[found + needle.length - 1] + 1;
           if (typeof start !== "number" || typeof end !== "number") break;
-          matches.push({
-            sectionId: section.id,
-            node: textNode,
-            start,
-            end,
-          });
-          from = index + Math.max(1, needle.length);
+          matches.push({ sectionId: section.id.replace(/^page-/, ""), node: node, start: start, end: end });
+          from = found + Math.max(needle.length, 1);
         }
       }
     });
+    return matches;
+  }
 
-    if (!matches.length && /\s/.test(needle)) {
-      document.querySelectorAll(".page-section").forEach(function (section) {
-        if (section.id === "page-grile") return;
-        const blocks = section.querySelectorAll("h1, h2, h3, h4, p, li, figcaption, td, th, blockquote, .card, .hero");
-        blocks.forEach(function (block) {
-          if (block.closest("script, style, nav, button, input, textarea")) return;
-          const blockText = normalizeSearchText(block.textContent || "").replace(/\s+/g, " ");
-          if (!blockText.includes(needle.replace(/\s+/g, " "))) return;
-
-          const firstToken = needle.split(/\s+/).find(Boolean);
-          if (!firstToken) return;
-          const walker = document.createTreeWalker(block, NodeFilter.SHOW_TEXT);
-          while (walker.nextNode()) {
-            const textNode = walker.currentNode;
-            const parent = textNode.parentNode;
-            if (!parent || !parent.closest) continue;
-            if (parent.closest("script, style, nav, button, input, textarea")) continue;
-            const indexedText = buildSearchIndex(textNode.textContent || "");
-            const index = indexedText.normalized.indexOf(firstToken);
-            if (index === -1) continue;
-            matches.push({
-              sectionId: section.id,
-              node: textNode,
-              start: indexedText.map[index],
-              end: indexedText.map[index + firstToken.length - 1] + 1,
-            });
-            break;
-          }
-        });
+  function renderOwnedSearchMarks(matches) {
+    var grouped = new Map();
+    matches.forEach(function (match, index) {
+      match.index = index;
+      if (!grouped.has(match.node)) grouped.set(match.node, []);
+      grouped.get(match.node).push(match);
+    });
+    grouped.forEach(function (nodeMatches, node) {
+      nodeMatches.sort(function (a, b) {
+        return b.start - a.start;
       });
-    }
-
-    return matches.sort(function (a, b) {
-      const aHome = document.getElementById(a.sectionId)?.classList.contains("chapter-home") ? 1 : 0;
-      const bHome = document.getElementById(b.sectionId)?.classList.contains("chapter-home") ? 1 : 0;
-      return aHome - bHome;
+      nodeMatches.forEach(function (match) {
+        var range = document.createRange();
+        range.setStart(node, match.start);
+        range.setEnd(node, match.end);
+        var mark = document.createElement("mark");
+        mark.className = "search-found";
+        mark.dataset.bbSearch = "true";
+        mark.dataset.searchIndex = String(match.index);
+        range.surroundContents(mark);
+        match.element = mark;
+      });
     });
   }
 
-  function normalizeBackAction() {
-    const back = document.querySelector(".lab-topbar-back");
-    if (!back || back.dataset.bbBackRedesignReady === "true") return;
-
-    const label = String(back.textContent || "Toate capitolele").replace("←", "").trim() || "Toate capitolele";
-    back.textContent = "";
-
-    const icon = document.createElement("span");
-    icon.className = "lab-topbar-back-icon";
-    icon.setAttribute("aria-hidden", "true");
-    icon.textContent = "‹";
-
-    const text = document.createElement("span");
-    text.className = "lab-topbar-back-label";
-    text.textContent = label;
-
-    back.appendChild(icon);
-    back.appendChild(text);
-    back.dataset.bbBackRedesignReady = "true";
+  function updateOwnedSearchUi() {
+    var count = document.getElementById("lesson-search-count");
+    var previous = document.getElementById("lesson-search-prev");
+    var next = document.getElementById("lesson-search-next");
+    var total = state.searchMatches.length;
+    if (count) count.textContent = (total ? state.searchIndex + 1 : 0) + " / " + total;
+    if (previous) previous.disabled = total < 2;
+    if (next) next.disabled = total < 2;
+    if (state.searchRoot) {
+      var input = document.getElementById("lesson-search-input");
+      state.searchRoot.classList.toggle("has-query", !!(input && input.value.trim()));
+      state.searchRoot.classList.toggle("has-results", total > 0);
+    }
   }
 
-  function normalizeTopbarActions() {
-    const topbar = document.querySelector(".lab-topbar-inner");
-    const search = document.getElementById("lesson-search");
-    const back = topbar?.querySelector(".lab-topbar-back");
-    if (!topbar || !search || !back) return;
-
-    let actions = topbar.querySelector(".lab-topbar-actions");
-    if (!actions) {
-      actions = document.createElement("div");
-      actions.className = "lab-topbar-actions";
-      topbar.appendChild(actions);
+  function goToOwnedSearchMatch(index) {
+    var total = state.searchMatches.length;
+    if (!total) {
+      updateOwnedSearchUi();
+      return;
+    }
+    if (state.searchIndex >= 0 && state.searchMatches[state.searchIndex].element) {
+      state.searchMatches[state.searchIndex].element.classList.remove("search-found-current");
     }
 
-    if (search.parentNode !== actions) actions.appendChild(search);
-    if (back.parentNode !== actions) actions.appendChild(back);
-  }
-
-  function installLessonSearchCollectorOverride() {
-    if (typeof window.collectSearchMatches !== "function") return;
-    window.collectSearchMatches = collectSharedSearchMatches;
-  }
-
-  function setupSharedLessonSearch(root) {
-    if (!root || root.dataset.bbSharedSearchReady === "true") return;
-
-    const input = root.querySelector("#lesson-search-input");
-    const count = root.querySelector("#lesson-search-count");
-    const prevBtn = root.querySelector("#lesson-search-prev");
-    const nextBtn = root.querySelector("#lesson-search-next");
-    const closeBtn = root.querySelector("#lesson-search-close");
-    if (!input || !count || !prevBtn || !nextBtn || !closeBtn) return;
-
-    root.dataset.bbSharedSearchReady = "true";
-
-    const state = {
-      matches: [],
-      currentIndex: -1,
-      returnSection: "",
-    };
-
-    function updateUi() {
-      const total = state.matches.length;
-      const current = total ? state.currentIndex + 1 : 0;
-      count.textContent = current + " / " + total;
-      prevBtn.disabled = total < 2;
-      nextBtn.disabled = total < 2;
-      root.classList.toggle("has-query", input.value.trim().length > 0);
-      root.classList.toggle("has-results", total > 0);
+    state.searchIndex = ((index % total) + total) % total;
+    var match = state.searchMatches[state.searchIndex];
+    if (match.sectionId !== getActiveSectionId() && typeof window.goto === "function") {
+      state.suppressNextRouteFocus = true;
+      window.goto(match.sectionId);
     }
-
-    function clear(resetInput) {
-      unwrapSharedSearchHighlights();
-      state.matches = [];
-      state.currentIndex = -1;
-      if (resetInput) input.value = "";
-      updateUi();
-    }
-
-    function setOpen(isOpen, shouldFocus) {
-      if (isOpen && !root.classList.contains("open")) {
-        const activeSection = document.querySelector(".page-section.active");
-        state.returnSection = activeSection ? activeSection.id.replace(/^page-/, "") : "";
-      }
-      root.classList.toggle("open", !!isOpen);
-      if (!isOpen) {
-        const sectionToRestore = state.returnSection;
-        state.returnSection = "";
-        if (sectionToRestore === "grile" && typeof window.goto === "function") {
-          const activeSection = document.querySelector(".page-section.active");
-          const activeSectionId = activeSection ? activeSection.id.replace(/^page-/, "") : "";
-          if (activeSectionId !== "grile") window.goto("grile");
-        }
-      }
-      if (isOpen && typeof window.closeNav === "function") window.closeNav();
-      if (isOpen && shouldFocus !== false) {
-        setTimeout(function () {
-          input.focus();
-          input.select();
-        }, 40);
-      }
-    }
-
-    function highlight(matches) {
-      const grouped = new Map();
-      matches.forEach(function (match, index) {
-        match.index = index;
-        if (!grouped.has(match.node)) grouped.set(match.node, []);
-        grouped.get(match.node).push(match);
-      });
-
-      grouped.forEach(function (nodeMatches, node) {
-        nodeMatches.sort(function (a, b) {
-          return b.start - a.start;
-        });
-        nodeMatches.forEach(function (match) {
-          const range = document.createRange();
-          range.setStart(node, match.start);
-          range.setEnd(node, match.end);
-          const span = document.createElement("span");
-          span.className = "search-found";
-          span.setAttribute("data-search-index", String(match.index));
-          range.surroundContents(span);
-          match.element = span;
-        });
+    if (match.element) {
+      match.element.classList.add("search-found-current");
+      window.requestAnimationFrame(function () {
+        match.element.scrollIntoView({ behavior: prefersReducedMotion() ? "auto" : "smooth", block: "center" });
       });
     }
+    updateOwnedSearchUi();
+  }
 
-    function goTo(index) {
-      const total = state.matches.length;
-      if (!total) {
-        updateUi();
-        return;
-      }
-      const normalized = ((index % total) + total) % total;
-      if (state.currentIndex >= 0) {
-        const previous = state.matches[state.currentIndex];
-        if (previous.element) previous.element.classList.remove("search-found-current");
-      }
+  function runOwnedSearch(query, preferredSection, preferredHit) {
+    clearOwnedSearchMarks();
+    state.searchMatches = collectOwnedSearchMatches(query);
+    state.searchIndex = -1;
+    if (!state.searchMatches.length) {
+      updateOwnedSearchUi();
+      return;
+    }
+    renderOwnedSearchMarks(state.searchMatches);
 
-      state.currentIndex = normalized;
-      const target = state.matches[normalized];
-      if (target.element) {
-        target.element.classList.add("search-found-current");
-        const targetSection = target.sectionId.replace(/^page-/, "");
-        const activeSection = document.querySelector(".page-section.active");
-        const activeSectionId = activeSection ? activeSection.id.replace(/^page-/, "") : "";
-        if (activeSectionId !== targetSection && typeof window.goto === "function") {
-          window.goto(targetSection);
-        }
-        root.classList.add("open");
-        requestAnimationFrame(function () {
-          target.element.scrollIntoView({ behavior: "smooth", block: "center" });
+    var targetIndex = 0;
+    if (preferredSection) {
+      var sectionMatches = state.searchMatches
+        .map(function (match, index) {
+          return { match: match, index: index };
+        })
+        .filter(function (entry) {
+          return entry.match.sectionId === preferredSection;
         });
+      if (sectionMatches.length) {
+        var hit = Math.max(0, Number(preferredHit) || 0);
+        targetIndex = sectionMatches[Math.min(hit, sectionMatches.length - 1)].index;
       }
-      updateUi();
     }
+    goToOwnedSearchMatch(targetIndex);
+  }
 
-    function search(term) {
-      const cleanTerm = String(term || "").trim();
-      if (!cleanTerm) {
-        clear(false);
-        return;
-      }
-      root.classList.add("open");
-      unwrapSharedSearchHighlights();
-      state.matches = collectSharedSearchMatches(cleanTerm);
-      state.currentIndex = -1;
-      if (!state.matches.length) {
-        updateUi();
-        return;
-      }
-      highlight(state.matches);
-      goTo(0);
+  function resetOwnedSearch(resetInput) {
+    window.clearTimeout(state.searchTimer);
+    clearOwnedSearchMarks();
+    state.searchMatches = [];
+    state.searchIndex = -1;
+    if (resetInput) {
+      var input = document.getElementById("lesson-search-input");
+      if (input) input.value = "";
     }
+    updateOwnedSearchUi();
+  }
 
-    root.__bbOpenLessonSearch = function (shouldFocus) {
-      setOpen(true, shouldFocus);
-    };
-    root.__bbCloseLessonSearch = function () {
-      clear(true);
-      setOpen(false, false);
-    };
+  function setupOwnedSearch(root) {
+    var input = root.querySelector("#lesson-search-input");
+    var previous = root.querySelector("#lesson-search-prev");
+    var next = root.querySelector("#lesson-search-next");
+    var close = root.querySelector("#lesson-search-close");
+    if (!input || !previous || !next || !close) return;
 
-    input.addEventListener("input", function (event) {
-      event.stopImmediatePropagation();
-      search(input.value);
-    }, true);
+    input.addEventListener("input", function () {
+      window.clearTimeout(state.searchTimer);
+      state.searchTimer = window.setTimeout(function () {
+        runOwnedSearch(input.value);
+      }, 140);
+    });
     input.addEventListener("keydown", function (event) {
       if (event.key === "Enter") {
         event.preventDefault();
-        event.stopImmediatePropagation();
-        goTo(state.currentIndex + (event.shiftKey ? -1 : 1));
-      }
-      if (event.key === "Escape") {
-        event.preventDefault();
-        event.stopImmediatePropagation();
-        clear(true);
-        setOpen(false, false);
-      }
-    }, true);
-    prevBtn.addEventListener("click", function (event) {
-      event.stopImmediatePropagation();
-      goTo(state.currentIndex - 1);
-    }, true);
-    nextBtn.addEventListener("click", function (event) {
-      event.stopImmediatePropagation();
-      goTo(state.currentIndex + 1);
-    }, true);
-    closeBtn.addEventListener("click", function (event) {
-      event.stopImmediatePropagation();
-      clear(true);
-      setOpen(false, false);
-    }, true);
-    document.addEventListener("keydown", function (event) {
-      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "f") {
-        event.preventDefault();
-        setOpen(true, true);
+        goToOwnedSearchMatch(state.searchIndex + (event.shiftKey ? -1 : 1));
       }
     });
-    updateUi();
+    previous.addEventListener("click", function () {
+      goToOwnedSearchMatch(state.searchIndex - 1);
+    });
+    next.addEventListener("click", function () {
+      goToOwnedSearchMatch(state.searchIndex + 1);
+    });
+    close.addEventListener("click", function () {
+      closeSearch(true);
+    });
+    updateOwnedSearchUi();
   }
 
-  function ensureLessonSearchControl() {
-    let root = document.getElementById("lesson-search");
-    if (!root) root = createLessonSearch();
+  function syncSearchExpanded() {
+    if (!state.searchRoot) return;
+    var expanded = state.searchRoot.classList.contains("open");
+    var trigger = state.searchRoot.querySelector(".lesson-search-trigger");
+    if (trigger) trigger.setAttribute("aria-expanded", String(expanded));
+    var navButton = document.getElementById("nav-search-btn");
+    if (navButton) navButton.setAttribute("aria-expanded", String(expanded));
+  }
+
+  function openSearch(shouldFocus, returnFocus) {
+    var root = state.searchRoot;
     if (!root) return;
+    setDrawerClosedState(false);
+    state.searchReturnFocus = returnFocus || document.activeElement;
 
-    root.classList.add("bb-search-compact");
-    normalizeLessonSearchLayout(root);
-    if (!root.querySelector(".lesson-search-trigger")) {
-      const trigger = document.createElement("button");
-      trigger.type = "button";
-      trigger.className = "lesson-search-trigger";
-      trigger.setAttribute("aria-label", "Caută în lecție");
-      trigger.setAttribute("title", "Caută în lecție");
-      trigger.innerHTML = searchIconSvg();
-      root.prepend(trigger);
-      trigger.addEventListener("click", function () {
-        if (root.classList.contains("open")) {
-          const closeBtn = root.querySelector("#lesson-search-close");
-          if (closeBtn) closeBtn.click();
-          else root.classList.remove("open");
-          return;
+    if (!state.ownedSearch && typeof window.openLessonSearchPanel === "function") {
+      window.openLessonSearchPanel();
+    } else if (!state.ownedSearch && typeof window.openLessonSearch === "function") {
+      window.openLessonSearch();
+    } else {
+      root.classList.add("open");
+    }
+    root.classList.add("open");
+    syncSearchExpanded();
+
+    if (shouldFocus !== false) {
+      window.setTimeout(function () {
+        var input = document.getElementById("lesson-search-input");
+        if (input) {
+          input.focus();
+          input.select();
         }
-        if (typeof root.__bbOpenLessonSearch === "function") {
-          root.__bbOpenLessonSearch(true);
-        } else {
-          root.classList.add("open");
-          const input = root.querySelector("#lesson-search-input");
-          if (input) setTimeout(function () { input.focus(); input.select(); }, 40);
-        }
+      }, 0);
+    }
+  }
+
+  function closeSearch(restoreFocus) {
+    var root = state.searchRoot;
+    if (!root || !root.classList.contains("open")) return;
+
+    if (state.ownedSearch) {
+      resetOwnedSearch(true);
+      root.classList.remove("open");
+    } else {
+      var close = root.querySelector("#lesson-search-close");
+      if (close) close.click();
+      else root.classList.remove("open");
+    }
+    root.classList.remove("open");
+    syncSearchExpanded();
+
+    if (restoreFocus && state.searchReturnFocus && typeof state.searchReturnFocus.focus === "function") {
+      state.searchReturnFocus.focus();
+    }
+    state.searchReturnFocus = null;
+  }
+
+  function setupSearch() {
+    var existing = document.getElementById("lesson-search");
+    state.ownedSearch = !existing;
+    state.searchRoot = existing || createLessonSearch();
+    if (!state.searchRoot) return;
+
+    var input = state.searchRoot.querySelector("#lesson-search-input");
+    var count = state.searchRoot.querySelector("#lesson-search-count");
+    if (input) input.setAttribute("aria-label", "Caută în lecție");
+    if (count) count.setAttribute("aria-live", "polite");
+    ensureSearchTrigger(state.searchRoot);
+    normalizeTopbarActions();
+
+    if (state.ownedSearch) {
+      setupOwnedSearch(state.searchRoot);
+      window.openLessonSearch = function () {
+        openSearch(true, document.activeElement);
+      };
+    } else {
+      ["openLessonSearch", "openLessonSearchPanel"].forEach(function (name) {
+        var opener = window[name];
+        if (typeof opener !== "function" || opener.__bbSharedWrapper) return;
+        var wrapped = function () {
+          if (!state.searchReturnFocus) state.searchReturnFocus = document.activeElement;
+          var result = opener.apply(this, arguments);
+          state.searchRoot.classList.add("open");
+          syncSearchExpanded();
+          return result;
+        };
+        wrapped.__bbSharedWrapper = true;
+        window[name] = wrapped;
+      });
+      var close = state.searchRoot.querySelector("#lesson-search-close");
+      if (close) {
+        close.addEventListener("click", function () {
+          window.setTimeout(function () {
+            state.searchRoot.classList.remove("open");
+            syncSearchExpanded();
+            if (state.searchReturnFocus && typeof state.searchReturnFocus.focus === "function") {
+              state.searchReturnFocus.focus();
+            }
+            state.searchReturnFocus = null;
+          }, 0);
+        });
+      }
+    }
+
+    if (typeof MutationObserver !== "undefined") {
+      new MutationObserver(syncSearchExpanded).observe(state.searchRoot, {
+        attributes: true,
+        attributeFilter: ["class"],
       });
     }
-
-    setupSharedLessonSearch(root);
+    syncSearchExpanded();
   }
 
-  function syncLessonSearchClasses(root) {
-    const input = root.querySelector("#lesson-search-input");
-    const count = root.querySelector("#lesson-search-count");
-    const value = input ? input.value.trim() : "";
-    const totalMatch = count ? String(count.textContent || "").match(/\/\s*(\d+)/) : null;
-    const total = totalMatch ? Number(totalMatch[1]) || 0 : 0;
-    root.classList.toggle("has-query", value.length > 0);
-    root.classList.toggle("has-results", total > 0);
+  function restoreOwnedSearchFromUrl() {
+    if (!state.ownedSearch) return;
+    var params = new URLSearchParams(window.location.search);
+    var query = String(params.get("q") || "").trim();
+    if (!query) return;
+    var section = String(params.get("section") || "").replace(/^page-/, "");
+    var hit = params.get("hit");
+
+    if (section && document.getElementById("page-" + section) && typeof window.goto === "function") {
+      state.suppressNextRouteFocus = true;
+      window.goto(section);
+    }
+    var input = document.getElementById("lesson-search-input");
+    if (input) input.value = query;
+    openSearch(false, document.querySelector(".lesson-search-trigger"));
+    runOwnedSearch(query, section, hit);
   }
 
-  function normalizeLessonSearchLayout(root) {
-    if (root.dataset.bbSearchLayoutReady === "true") return;
-    const box = root.querySelector(".lesson-search-box");
-    const input = root.querySelector("#lesson-search-input");
-    const count = root.querySelector("#lesson-search-count");
-    const nav = root.querySelector(".lesson-search-nav");
-    const close = root.querySelector("#lesson-search-close");
-    if (!box || !input) return;
-
-    [count, nav, close].forEach(function (node) {
-      if (node && node.parentNode !== box) box.appendChild(node);
-    });
-
-    input.addEventListener("input", function () {
-      syncLessonSearchClasses(root);
-    });
-
-    if (count && typeof MutationObserver !== "undefined") {
-      new MutationObserver(function () {
-        syncLessonSearchClasses(root);
-      }).observe(count, {
-        childList: true,
-        characterData: true,
-        subtree: true,
-      });
+  function ensureSidebarControls() {
+    var nav = document.getElementById("sidenav");
+    if (!nav) return;
+    var group = document.getElementById("nav-search-btn");
+    group = group && group.closest(".nav-group");
+    if (!group) group = document.getElementById("bb-sidebar-settings");
+    if (!group) {
+      group = document.createElement("div");
+      group.className = "nav-group bb-sidebar-settings";
+      group.id = "bb-sidebar-settings";
+      group.innerHTML = '<div class="nav-divider"></div><div class="nav-group-label">Setări</div>';
+      nav.appendChild(group);
     }
 
-    syncLessonSearchClasses(root);
-    root.dataset.bbSearchLayoutReady = "true";
-  }
-
-  function ensureSidebarSettings() {
-    const sidenav = document.getElementById("sidenav");
-    if (!sidenav) return;
-
-    const navSearchButton = document.getElementById("nav-search-btn");
-    let settingsGroup =
-      navSearchButton?.closest(".nav-group") ||
-      document.getElementById("bb-sidebar-settings");
-    if (!settingsGroup) {
-      settingsGroup = document.createElement("div");
-      settingsGroup.className = "nav-group";
-      settingsGroup.innerHTML =
-        '<div class="nav-divider"></div>' +
-        '<div class="nav-group-label">Setări</div>';
-      sidenav.appendChild(settingsGroup);
-    }
-    settingsGroup.id = "bb-sidebar-settings";
-    settingsGroup.classList.add("bb-sidebar-settings");
-
-    function moveOrCreateButton(id, label, handlerName) {
-      let button = document.getElementById(id);
+    function ensureButton(id, label, handler, controls) {
+      var button = document.getElementById(id);
       if (!button) {
         button = document.createElement("button");
+        button.type = "button";
         button.id = id;
         button.className = "nav-settings-btn";
-        button.type = "button";
-        button.setAttribute("onclick", handlerName + "()");
-        const labelId = id === "nav-hl-btn" ? ' id="nav-hl-label"' : id === "nav-dm-btn" ? ' id="nav-dm-label"' : "";
-        button.innerHTML = '<span class="dot"></span> <span' + labelId + ">" + label + "</span>";
+        button.innerHTML = '<span class="dot" aria-hidden="true"></span><span>' + label + "</span>";
+        button.addEventListener("click", handler);
+        group.appendChild(button);
       }
-      button.classList.add("nav-settings-btn");
-      button.style.display = "";
-      settingsGroup.appendChild(button);
+      if (controls) button.setAttribute("aria-controls", controls);
+      return button;
     }
 
-    if (typeof window.toggleDarkMode === "function") {
-      moveOrCreateButton("nav-dm-btn", "Mod noapte", "toggleDarkMode");
-    }
-    if (typeof window.toggleHighlighter === "function") {
-      moveOrCreateButton("nav-hl-btn", "Evidențiator", "toggleHighlighter");
-    }
+    ensureButton(
+      "nav-search-btn",
+      "Caută în lecție",
+      function () {
+        openSearch(true, document.getElementById("nav-search-btn"));
+      },
+      "lesson-search-input"
+    ).setAttribute("aria-expanded", "false");
+    ensureButton("nav-dm-btn", "Mod noapte", function () {
+      if (typeof window.toggleDarkMode === "function") window.toggleDarkMode();
+    });
+    ensureButton("nav-hl-btn", "Evidențiator", function () {
+      if (typeof window.toggleHighlighter === "function") window.toggleHighlighter();
+    });
   }
 
-  function getHighlighterState() {
-    if (!window.__bbSharedHighlighter) {
-      window.__bbSharedHighlighter = {
-        enabled: false,
-        listenersInstalled: false,
-        toastTimer: null,
+  function ensureHighlighterPalette() {
+    var navButton = document.getElementById("nav-hl-btn");
+    if (!navButton) return null;
+    var palette = document.getElementById("bb-highlighter-palette");
+    if (palette) return palette;
+
+    palette = document.createElement("div");
+    palette.id = "bb-highlighter-palette";
+    palette.className = "bb-highlighter-palette";
+    palette.hidden = true;
+    palette.innerHTML =
+      '<div class="bb-highlighter-palette-head"><span>Culoare</span><strong id="bb-highlighter-color-name" aria-live="polite">Galben</strong></div>' +
+      '<div class="bb-highlighter-colors" role="group" aria-label="Culoare evidențiator"></div>';
+
+    var colorsRoot = palette.querySelector(".bb-highlighter-colors");
+    HIGHLIGHTER_COLORS.forEach(function (color) {
+      var button = document.createElement("button");
+      button.type = "button";
+      button.className = "bb-highlighter-color";
+      button.dataset.highlightColor = color.id;
+      button.setAttribute("aria-label", color.label);
+      button.setAttribute("aria-pressed", "false");
+      button.title = color.label;
+      button.innerHTML = '<span class="bb-highlighter-check" aria-hidden="true">✓</span>';
+      button.addEventListener("click", function () {
+        setHighlighterColor(color.id);
+      });
+      colorsRoot.appendChild(button);
+    });
+
+    navButton.setAttribute("aria-controls", palette.id);
+    navButton.insertAdjacentElement("afterend", palette);
+    return palette;
+  }
+
+  function syncHighlighterPaletteUi() {
+    var color = normalizeHighlighterColor(state.highlighterColor);
+    var enabled = document.body.classList.contains("hl-mode");
+    var palette = ensureHighlighterPalette();
+    var navButton = document.getElementById("nav-hl-btn");
+    state.highlighterColor = color;
+    document.body.dataset.highlightColor = color;
+
+    if (navButton) {
+      navButton.dataset.highlightColor = color;
+      navButton.setAttribute("aria-expanded", String(enabled));
+      navButton.title = enabled
+        ? "Evidențiator activ · " + getHighlighterColorLabel(color)
+        : "Activează evidențiatorul";
+    }
+    if (!palette) return;
+    palette.hidden = !enabled;
+
+    var name = document.getElementById("bb-highlighter-color-name");
+    if (name) name.textContent = getHighlighterColorLabel(color);
+    palette.querySelectorAll(".bb-highlighter-color").forEach(function (button) {
+      var selected = button.dataset.highlightColor === color;
+      button.classList.toggle("is-selected", selected);
+      button.setAttribute("aria-pressed", String(selected));
+    });
+  }
+
+  function setHighlighterColor(color) {
+    state.highlighterColor = normalizeHighlighterColor(color);
+    safeStorageSet("highlighterColor", state.highlighterColor);
+    syncHighlighterPaletteUi();
+  }
+
+  function syncDarkModeUi() {
+    var dark = document.body.classList.contains("dark");
+    var label = document.getElementById("nav-dm-label");
+    var navButton = document.getElementById("nav-dm-btn");
+    if (!label && navButton) label = navButton.querySelector("span:not(.dot)");
+    if (label) label.textContent = dark ? "Mod zi" : "Mod noapte";
+
+    [navButton, document.getElementById("dm-btn"), document.getElementById("sfab-dm")].forEach(function (button) {
+      if (!button) return;
+      button.classList.toggle("on", dark);
+      button.setAttribute("aria-pressed", String(dark));
+      button.setAttribute("aria-label", dark ? "Activează modul zi" : "Activează modul noapte");
+      button.setAttribute("title", dark ? "Mod zi" : "Mod noapte");
+    });
+  }
+
+  function setupDarkMode() {
+    var stored = safeStorageGet("darkMode");
+    if (stored === "1") document.body.classList.add("dark");
+    if (stored === "0") document.body.classList.remove("dark");
+
+    if (typeof window.toggleDarkMode === "function" && !window.toggleDarkMode.__bbSharedWrapper) {
+      var pageToggle = window.toggleDarkMode;
+      var wrappedToggle = function () {
+        var result = pageToggle.apply(this, arguments);
+        safeStorageSet("darkMode", document.body.classList.contains("dark") ? "1" : "0");
+        syncDarkModeUi();
+        return result;
+      };
+      wrappedToggle.__bbSharedWrapper = true;
+      window.toggleDarkMode = wrappedToggle;
+    } else if (typeof window.toggleDarkMode !== "function") {
+      window.toggleDarkMode = function () {
+        var dark = document.body.classList.toggle("dark");
+        safeStorageSet("darkMode", dark ? "1" : "0");
+        syncDarkModeUi();
       };
     }
-    return window.__bbSharedHighlighter;
+    syncDarkModeUi();
   }
 
-  function getHighlighterLabel(button) {
-    if (!button) return null;
-    return document.getElementById("nav-hl-label") || button.querySelector("span:not(.dot)");
+  function syncHighlighterUi() {
+    var enabled = document.body.classList.contains("hl-mode");
+    state.highlighterEnabled = enabled;
+    var navButton = document.getElementById("nav-hl-btn");
+    var label = document.getElementById("nav-hl-label");
+    if (!label && navButton) label = navButton.querySelector("span:not(.dot)");
+    if (label) label.textContent = enabled ? "Evidențiator activ" : "Evidențiator";
+
+    [navButton, document.getElementById("hl-btn"), document.getElementById("sfab-hl")].forEach(function (button) {
+      if (!button) return;
+      button.classList.toggle("on", enabled);
+      button.classList.toggle("hl-on", enabled);
+      button.setAttribute("aria-pressed", String(enabled));
+    });
+    syncHighlighterPaletteUi();
   }
 
-  function syncSharedHighlighterUi() {
-    const state = getHighlighterState();
-    const navButton = document.getElementById("nav-hl-btn");
-    const floatButton = document.getElementById("hl-btn");
-    const label = getHighlighterLabel(navButton);
-
-    document.body.classList.toggle("hl-mode", state.enabled);
-    if (navButton) {
-      navButton.classList.toggle("hl-on", state.enabled);
-      navButton.classList.toggle("on", state.enabled);
-      navButton.setAttribute("aria-pressed", state.enabled ? "true" : "false");
-    }
-    if (floatButton) {
-      floatButton.classList.toggle("active", state.enabled);
-      floatButton.setAttribute("aria-pressed", state.enabled ? "true" : "false");
-    }
-    if (label) label.textContent = state.enabled ? "Evidențiator ON" : "Evidențiator";
-  }
-
-  function showSharedHighlighterToast(message) {
-    if (typeof window.showToast === "function") {
-      window.showToast(message);
-      return;
-    }
-
-    const state = getHighlighterState();
-    let toast = document.querySelector(".bb-highlighter-toast");
-    if (!toast) {
-      toast = document.createElement("div");
-      toast.className = "toast bb-highlighter-toast";
-      document.body.appendChild(toast);
-    }
-    toast.textContent = message;
-    window.clearTimeout(state.toastTimer);
-    state.toastTimer = window.setTimeout(function () {
-      if (toast.parentNode) toast.parentNode.removeChild(toast);
-    }, 1800);
-  }
-
-  function applySharedHighlight(range) {
-    const ancestor = range.commonAncestorContainer;
-    const root = ancestor.nodeType === Node.TEXT_NODE ? ancestor.parentNode : ancestor;
+  function applyHighlight(range) {
+    var ancestor = range.commonAncestorContainer;
+    var root = ancestor.nodeType === Node.TEXT_NODE ? ancestor.parentNode : ancestor;
     if (!root || !root.closest || !root.closest("main, .page-section")) return;
-
-    const pieces = [];
-    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+    var pieces = [];
+    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
       acceptNode: function (node) {
-        const parent = node.parentElement;
-        if (!parent) return NodeFilter.FILTER_REJECT;
-        if (parent.closest("script, style, nav, button, input, textarea, select, svg, mark.hl")) {
+        var parent = node.parentElement;
+        if (!parent || parent.closest("script, style, nav, button, input, textarea, select, svg, mark.hl")) {
           return NodeFilter.FILTER_REJECT;
         }
-        if (!range.intersectsNode(node)) return NodeFilter.FILTER_REJECT;
-        return NodeFilter.FILTER_ACCEPT;
+        try {
+          return range.intersectsNode(node) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+        } catch (error) {
+          return NodeFilter.FILTER_REJECT;
+        }
       },
     });
-
     while (walker.nextNode()) {
-      const node = walker.currentNode;
-      let start = 0;
-      let end = node.textContent.length;
-      if (node === range.startContainer) start = range.startOffset;
-      if (node === range.endContainer) end = range.endOffset;
+      var node = walker.currentNode;
+      var start = node === range.startContainer ? range.startOffset : 0;
+      var end = node === range.endContainer ? range.endOffset : node.textContent.length;
       if (start < end) pieces.push({ node: node, start: start, end: end });
     }
-
     pieces.reverse().forEach(function (piece) {
-      const markRange = document.createRange();
-      markRange.setStart(piece.node, piece.start);
-      markRange.setEnd(piece.node, piece.end);
-
-      const mark = document.createElement("mark");
+      var part = document.createRange();
+      part.setStart(piece.node, piece.start);
+      part.setEnd(piece.node, piece.end);
+      var mark = document.createElement("mark");
       mark.className = "hl";
-      markRange.surroundContents(mark);
+      mark.dataset.highlightColor = state.highlighterColor;
+      part.surroundContents(mark);
     });
   }
 
-  function handleSharedHighlighterSelection(event) {
-    const state = getHighlighterState();
-    if (!state.enabled) return;
-    if (event.target?.closest?.("button, input, select, textarea, nav, .lesson-search, #hl-btn")) return;
-
-    window.setTimeout(function () {
-      const selection = window.getSelection();
-      if (!selection || selection.isCollapsed || !selection.rangeCount || !selection.toString().trim()) return;
-
-      const range = selection.getRangeAt(0);
-      if (!range || range.collapsed) return;
-
-      applySharedHighlight(range);
-      selection.removeAllRanges();
-    }, event.type === "touchend" ? 80 : 0);
-  }
-
-  function installSharedHighlighter() {
-    const state = getHighlighterState();
-
-    if (typeof window.toggleHighlighter !== "function") {
-      window.toggleHighlighter = function () {
-        const currentState = getHighlighterState();
-        currentState.enabled = !currentState.enabled;
-        syncSharedHighlighterUi();
-        showSharedHighlighterToast(
-          currentState.enabled ? "Evidențiator activat - selectează text." : "Evidențiator dezactivat."
-        );
-      };
-
-      if (!state.listenersInstalled) {
-        document.addEventListener("mouseup", handleSharedHighlighterSelection);
-        document.addEventListener("touchend", handleSharedHighlighterSelection);
-        state.listenersInstalled = true;
-      }
-    }
-
-    syncSharedHighlighterUi();
-  }
-
-  function watchPageChanges() {
-    syncTopbarTabs();
-    const main = document.querySelector("main");
+  function installHighlightColorObserver() {
+    var main = document.querySelector("main");
     if (!main || typeof MutationObserver === "undefined") return;
 
-    const observer = new MutationObserver(function () {
-      syncTopbarTabs();
-    });
+    function colorizeMark(mark) {
+      if (!mark.dataset.highlightColor) mark.dataset.highlightColor = state.highlighterColor;
+    }
 
-    observer.observe(main, {
-      attributes: true,
-      subtree: true,
-      attributeFilter: ["class"],
-    });
-  }
-
-  function normalizeTopbarShape() {
-    const links = Array.from(document.querySelectorAll(".lab-nav a"));
-    const hasQuizTab = links.some(function (link) {
-      return extractTarget(link) === "grile";
-    });
-    if (!hasQuizTab) {
-      document.body.classList.add("bb-compact-topbar");
-      links.forEach(function (link, index) {
-        if (index === 0) {
-          link.textContent = "Lecție";
-          link.dataset.bbLabelReady = "true";
-          link.classList.add("active");
-        } else {
-          link.remove();
-        }
+    main.querySelectorAll("mark.hl").forEach(colorizeMark);
+    new MutationObserver(function (mutations) {
+      mutations.forEach(function (mutation) {
+        mutation.addedNodes.forEach(function (node) {
+          if (node.nodeType !== Node.ELEMENT_NODE) return;
+          if (node.matches("mark.hl")) colorizeMark(node);
+          node.querySelectorAll("mark.hl").forEach(colorizeMark);
+        });
       });
-    }
-    if (!document.getElementById("lesson-search")) {
-      document.body.classList.add("bb-no-lesson-search");
-    }
+    }).observe(main, { childList: true, subtree: true });
   }
 
-  function normalizeSidebarState() {
-    const links = Array.from(document.querySelectorAll("#sidenav a"));
-    if (!links.length) return;
-    const hasActiveLink = links.some(function (link) {
-      return link.classList.contains("active");
-    });
-    if (!hasActiveLink) links[0].classList.add("active");
+  function installSharedHighlighterSelection() {
+    function handleSelection(event) {
+      if (!state.highlighterEnabled) return;
+      if (event.target && event.target.closest("button, input, textarea, select, nav, .lesson-search")) return;
+      window.setTimeout(function () {
+        var selection = window.getSelection();
+        if (!selection || selection.isCollapsed || !selection.rangeCount || !selection.toString().trim()) return;
+        var range = selection.getRangeAt(0);
+        applyHighlight(range);
+        selection.removeAllRanges();
+      }, event.type === "touchend" ? 60 : 0);
+    }
+    document.addEventListener("mouseup", handleSelection);
+    document.addEventListener("touchend", handleSelection);
   }
 
-  function observeProgress() {
-    syncProgressWidgets();
+  function setupHighlighter() {
+    state.highlighterColor = normalizeHighlighterColor(safeStorageGet("highlighterColor"));
+    ensureHighlighterPalette();
+    if (typeof window.toggleHighlighter === "function" && !window.toggleHighlighter.__bbSharedWrapper) {
+      var pageToggle = window.toggleHighlighter;
+      var wrappedToggle = function () {
+        var result = pageToggle.apply(this, arguments);
+        syncHighlighterUi();
+        return result;
+      };
+      wrappedToggle.__bbSharedWrapper = true;
+      window.toggleHighlighter = wrappedToggle;
+    } else if (typeof window.toggleHighlighter !== "function") {
+      state.highlighterEnabled = safeStorageGet("highlighterMode") === "1";
+      document.body.classList.toggle("hl-mode", state.highlighterEnabled);
+      window.toggleHighlighter = function () {
+        state.highlighterEnabled = !state.highlighterEnabled;
+        document.body.classList.toggle("hl-mode", state.highlighterEnabled);
+        safeStorageSet("highlighterMode", state.highlighterEnabled ? "1" : "0");
+        syncHighlighterUi();
+      };
+      installSharedHighlighterSelection();
+    }
+    installHighlightColorObserver();
+    syncHighlighterUi();
+  }
 
-    const progressTarget = document.getElementById("progress-text");
-    if (!progressTarget || typeof MutationObserver === "undefined") return;
+  function setupGlobalKeyboard() {
+    document.addEventListener(
+      "keydown",
+      function (event) {
+        if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "f") {
+          // Preserve the browser's native Find command and stop legacy page handlers.
+          event.stopImmediatePropagation();
+          return;
+        }
 
-    const observer = new MutationObserver(function () {
-      syncProgressWidgets();
-    });
+        if (trapDrawerFocus(event)) return;
 
-    observer.observe(progressTarget, {
-      childList: true,
-      characterData: true,
-      subtree: true,
-    });
+        if (event.key === "Escape") {
+          var drawerOpen = !!document.querySelector("#sidenav.open");
+          var searchOpen = !!(state.searchRoot && state.searchRoot.classList.contains("open"));
+          if (drawerOpen || searchOpen) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            if (searchOpen) closeSearch(true);
+            if (drawerOpen) setDrawerClosedState(true);
+          }
+          return;
+        }
+
+        if (event.key === "/" && !event.metaKey && !event.ctrlKey && !event.altKey) {
+          var target = event.target;
+          var editing = target && (target.matches("input, textarea, select") || target.isContentEditable);
+          if (editing) return;
+          event.preventDefault();
+          event.stopImmediatePropagation();
+          openSearch(true, document.activeElement);
+        }
+      },
+      true
+    );
+  }
+
+  function normalizeMinorControls() {
+    var top = document.getElementById("top");
+    if (top) top.setAttribute("aria-label", "Înapoi sus");
+  }
+
+  function registerOfflineSupport() {
+    if (!("serviceWorker" in navigator)) return;
+    window.addEventListener(
+      "load",
+      function () {
+        navigator.serviceWorker.register("sw.js").catch(function () {});
+      },
+      { once: true }
+    );
   }
 
   function init() {
-    if (document.body.dataset.bbRedesignReady === "true") return;
-    document.body.dataset.bbRedesignReady = "true";
+    if (!document.body || document.body.dataset.bbSharedReady === "true") return;
+    document.body.dataset.bbSharedReady = "true";
     document.body.classList.add("bb-chapter-redesign");
 
     applyChapterTheme();
-    normalizeBrandMark();
-    patchDesktopBrandClose();
-    ensureLessonSearchControl();
-    installLessonSearchCollectorOverride();
+    normalizeBrand();
+    ensureMenuTrigger();
+    ensureSkipLink();
     normalizeBackAction();
-    normalizeTopbarActions();
-    normalizeTopbarShape();
-    installSharedHighlighter();
-    ensureSidebarSettings();
-    syncSharedHighlighterUi();
-    normalizeSidebarState();
-    enhanceHomeHero();
-    enhanceSectionHeroes();
-    normalizeHomeMapCards();
-    enhanceMapCards();
-    observeProgress();
-    watchPageChanges();
+    enhanceGotoLinks();
+    patchGoto();
+    enhanceMapCardsAndAccordions();
+    setupSearch();
+    ensureSidebarControls();
+    setupDarkMode();
+    setupHighlighter();
+    setupDrawer();
+    setupGlobalKeyboard();
+    normalizeMinorControls();
+    registerOfflineSupport();
+    syncNavigationState();
+    window.setTimeout(restoreOwnedSearchFromUrl, 0);
   }
 
   if (document.readyState === "loading") {
