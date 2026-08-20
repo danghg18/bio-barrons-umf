@@ -1,4 +1,4 @@
-const CACHE = 'biologie-atlas-v8';
+const CACHE = 'biologie-atlas-v9';
 const BASE = new URL('./', self.location.href).pathname;
 const ASSETS = [
   BASE + 'index.html',
@@ -6,10 +6,11 @@ const ASSETS = [
   BASE + 'celula_si_fiziologia_celulara.html',
   BASE + 'oasele_si_articulatiile.html',
   BASE + 'tesutul_muscular.html',
+  BASE + 'tesutul_nervos.html',
   BASE + 'sistemul_renal_complet.html',
   BASE + 'sistemul_reproducator_masculin.html',
   BASE + 'sistemul_reproducator_feminin.html',
-  BASE + 'assets/js/chapter-redesign.js?v=20260727-highlighter6',
+  BASE + 'assets/js/chapter-redesign.js?v=20260820-nervous10',
   BASE + 'assets/css/tokens.css',
   BASE + 'assets/css/lesson.css',
   BASE + 'assets/css/chapter-redesign.css?v=20260727-highlighter6',
@@ -37,6 +38,15 @@ const ASSETS = [
   BASE + 'img oase/tipuri_de_articulatii_barrons.png.webp',
   BASE + 'img muschi/muschiul_striat_barrons.png.webp',
   BASE + 'img muschi/conversia_energetica_musculara_barrons.png.webp',
+  BASE + 'img nervos/SNC_SNP_barrons.png.webp',
+  BASE + 'img nervos/neuroni_cel_gliale_barrons.png.webp',
+  BASE + 'img nervos/tipuri_de_neuroni_barrons.png.webp',
+  BASE + 'img nervos/formarea_tecii_de_mielina_barrons.png.webp',
+  BASE + 'img nervos/arc_reflex_tipic_barrons.png.webp',
+  BASE + 'img nervos/dezechilibru_ionic_barrons.png.webp',
+  BASE + 'img nervos/transmiter_PA_barrons.png.webp',
+  BASE + 'img nervos/neuron_amielinic_mielinic_barrons.png.webp',
+  BASE + 'img nervos/activitatea_sinaptica_barrons.png.webp',
   BASE + 'imagini/rinichi_si_componente_barrons.png.webp',
   BASE + 'imagini/nefron_detaliat_barrons.png.webp',
   BASE + 'imagini/functia_nefron_barrons.png.webp',
