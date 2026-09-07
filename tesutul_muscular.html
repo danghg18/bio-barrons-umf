@@ -38,21 +38,21 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
 </head>
 <body>
 <a class="lesson-skip" href="#lesson-content">Sari la conținutul lecției</a>
-<header class="lab-topbar"><div class="lab-topbar-inner"><a href="index.html" class="lab-brand" id="brand"><div class="lab-brand-mark">☰</div><span class="lab-brand-name">Biologie<span class="lab-brand-sub">.bb</span></span></a><nav class="lab-nav" aria-label="Navigare rapidă"><a href="#tesutul-muscular" onclick="goto('tesutul-muscular')">8.1 Țesutul muscular</a><a href="#muschiul-striat" onclick="goto('muschiul-striat')">8.2 Mușchiul striat</a><a href="#energia" onclick="goto('energia')">8.3 Energia</a></nav><a href="index.html" class="lab-topbar-back">← Toate capitolele</a></div></header>
-<div id="nav-overlay" onclick="closeNav()"></div>
+<header class="lab-topbar"><div class="lab-topbar-inner"><a href="index.html" class="lab-brand" id="brand"><div class="lab-brand-mark">☰</div><span class="lab-brand-name">Biologie<span class="lab-brand-sub">.bb</span></span></a><nav class="lab-nav" aria-label="Navigare rapidă"><a href="#tesutul-muscular">8.1 Țesutul muscular</a><a href="#muschiul-striat">8.2 Mușchiul striat</a><a href="#energia">8.3 Energia</a></nav><a href="index.html" class="lab-topbar-back">← Toate capitolele</a></div></header>
+<div id="nav-overlay"></div>
 <div class="ch-layout">
 <nav id="sidenav" aria-label="Cuprinsul capitolului">
   <div class="nav-header"><div class="nav-chapter-badge">Capitol 8</div><div class="nav-chapter-title">Țesutul muscular</div></div>
   <div class="nav-group-label">Lecții</div>
-  <a href="#tesutul-muscular" class="active" onclick="goto('tesutul-muscular')">8.1 Țesutul muscular</a>
-  <a href="#muschiul-striat" onclick="goto('muschiul-striat')">8.2 Mușchiul striat scheletic</a>
-  <a href="#energia" onclick="goto('energia')">8.3 Energia necesară contracției</a>
+  <a href="#tesutul-muscular" class="active">8.1 Țesutul muscular</a>
+  <a href="#muschiul-striat">8.2 Mușchiul striat scheletic</a>
+  <a href="#energia">8.3 Energia necesară contracției</a>
 </nav>
 
 <main id="lesson-content">
 <div class="page-section active" id="page-tesutul-muscular">
   <div class="hero"><h1>8.1. Țesutul muscular</h1><p>Țesutul muscular este unul din cele patru țesuturi de bază și se distinge prin capacitatea de a se contracta și de a efectua lucru mecanic.</p></div>
-  <div class="page-nav"><a class="outline" href="index.html">← Toate capitolele</a><a href="#muschiul-striat" onclick="goto('muschiul-striat')">8.2 Mușchiul striat scheletic →</a></div>
+  <div class="page-nav"><a class="outline" href="index.html">← Toate capitolele</a><a href="#muschiul-striat">8.2 Mușchiul striat scheletic →</a></div>
   <section>
     <h2 class="section"><span class="sec-num">1</span>Unitatea structurală</h2>
     <div class="card">
@@ -91,7 +91,7 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
 
 <div class="page-section" id="page-muschiul-striat">
   <div class="hero"><h1>8.2. Mușchiul striat scheletic</h1><p>Mușchiul striat scheletic este alcătuit din fascicule de fibre musculare, iar unitatea sa funcțională este sarcomerul.</p></div>
-  <div class="page-nav"><a href="#tesutul-muscular" class="outline" onclick="goto('tesutul-muscular')">← 8.1 Țesutul muscular</a><a href="#energia" onclick="goto('energia')">8.3 Energia necesară contracției →</a></div>
+  <div class="page-nav"><a href="#tesutul-muscular" class="outline">← 8.1 Țesutul muscular</a><a href="#energia">8.3 Energia necesară contracției →</a></div>
   <section>
     <h2 class="section"><span class="sec-num">1</span>Caracteristici de bază</h2>
     <div class="card">
@@ -140,7 +140,7 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
 
 <div class="page-section" id="page-energia">
   <div class="hero"><h1>8.3. Energia necesară contracției musculare</h1><p>Energia utilizată pentru contracția musculară derivă din ATP, care trebuie regenerat în permanență.</p></div>
-  <div class="page-nav"><a href="#muschiul-striat" class="outline" onclick="goto('muschiul-striat')">← 8.2 Mușchiul striat scheletic</a><a href="index.html">Toate capitolele</a></div>
+  <div class="page-nav"><a href="#muschiul-striat" class="outline">← 8.2 Mușchiul striat scheletic</a><a href="index.html">Toate capitolele</a></div>
   <section>
     <h2 class="section"><span class="sec-num">1</span>ATP și fosfocreatina</h2>
     <div class="card">
@@ -178,15 +178,7 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
 </main>
 </div>
 <button id="top" onclick="scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})" aria-label="Înapoi sus">↑</button>
-<script>
-const pages=['tesutul-muscular','muschiul-striat','energia'];
-function closeNav(){document.getElementById('sidenav').classList.remove('open');document.getElementById('nav-overlay').classList.remove('open')}
-function goto(page){if(!pages.includes(page))page='tesutul-muscular';document.querySelectorAll('.page-section').forEach(s=>s.classList.remove('active'));document.getElementById('page-'+page)?.classList.add('active');document.querySelectorAll('#sidenav a').forEach(a=>a.classList.toggle('active',(a.getAttribute('onclick')||'').includes("'"+page+"'")));closeNav();if(location.hash.slice(1)!==page)history.replaceState(null,'','#'+page);window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})}
-addEventListener('scroll',()=>{document.getElementById('top').style.display=scrollY>500?'flex':'none'});
-function handleHash(){const initial=location.hash.slice(1);if(pages.includes(initial))goto(initial);else if(initial)goto('tesutul-muscular')}
-addEventListener('DOMContentLoaded',handleHash);
-addEventListener('hashchange',handleHash);
-</script>
+<script src="assets/js/lesson.js?v=20260907-router1"></script>
 <script src="assets/js/chapter-redesign.js?v=20260907-nervous11"></script>
 </body>
 </html>

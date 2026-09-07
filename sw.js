@@ -1,7 +1,9 @@
-const CACHE = 'biologie-atlas-v14';
+const CACHE = 'biologie-atlas-v16';
 const BASE = new URL('./', self.location.href).pathname;
 const ASSETS = [
   BASE + 'index.html',
+  BASE + 'assets/js/chapters-data.js',
+  BASE + 'assets/js/lesson.js?v=20260907-router1',
   BASE + 'introducere_anatomie_fiziologie.html',
   BASE + 'celula_si_fiziologia_celulara.html',
   BASE + 'oasele_si_articulatiile.html',

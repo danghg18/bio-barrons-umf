@@ -73,6 +73,14 @@
     return active ? active.id.replace(/^page-/, "") : "home";
   }
 
+  function navigateLessonSection(target, options) {
+    if (window.BBLessonNavigation && typeof window.BBLessonNavigation.navigate === "function") {
+      return window.BBLessonNavigation.navigate(target, options || {});
+    }
+    if (typeof window.goto === "function") return window.goto(target);
+    return false;
+  }
+
   function applyChapterTheme() {
     var badge = document.querySelector(".nav-chapter-badge");
     var match = String(badge ? badge.textContent : document.title).match(/\d+/);
@@ -253,6 +261,7 @@
   }
 
   function patchGoto() {
+    if (window.BBLessonNavigation) return;
     if (typeof window.goto !== "function" || window.goto.__bbSharedWrapper) return;
     var originalGoto = window.goto;
 
@@ -462,6 +471,9 @@
     window.addEventListener("resize", function () {
       setDrawerClosedState(false);
     });
+    document.addEventListener("bb:lesson-section-change", function () {
+      setDrawerClosedState(false);
+    });
     setDrawerClosedState(false);
   }
 
@@ -641,9 +653,9 @@
 
     state.searchIndex = ((index % total) + total) % total;
     var match = state.searchMatches[state.searchIndex];
-    if (match.sectionId !== getActiveSectionId() && typeof window.goto === "function") {
+    if (match.sectionId !== getActiveSectionId()) {
       state.suppressNextRouteFocus = true;
-      window.goto(match.sectionId);
+      navigateLessonSection(match.sectionId, { focus: false, source: "search" });
     }
     if (match.element) {
       match.element.classList.add("search-found-current");
@@ -845,9 +857,9 @@
     var section = String(params.get("section") || "").replace(/^page-/, "");
     var hit = params.get("hit");
 
-    if (section && document.getElementById("page-" + section) && typeof window.goto === "function") {
+    if (section && document.getElementById("page-" + section)) {
       state.suppressNextRouteFocus = true;
-      window.goto(section);
+      navigateLessonSection(section, { focus: false, source: "search" });
     }
     var input = document.getElementById("lesson-search-input");
     if (input) input.value = query;
