@@ -83,6 +83,7 @@
       "6": { accent: "#0891b2", light: "#ecfeff", mid: "#06b6d4" },
       "8": { accent: "#0891b2", light: "#ecfeff", mid: "#06b6d4" },
       "10": { accent: "#7c3aed", light: "#f5f3ff", mid: "#8b5cf6" },
+      "11": { accent: "#7c3aed", light: "#f5f3ff", mid: "#8b5cf6" },
       "20": { accent: "#059669", light: "#ecfdf5", mid: "#10b981" },
       "22": { accent: "#0891b2", light: "#ecfeff", mid: "#06b6d4" },
       "23": { accent: "#db2777", light: "#fdf2f8", mid: "#ec4899" },
