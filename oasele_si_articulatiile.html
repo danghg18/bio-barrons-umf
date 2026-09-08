@@ -38,21 +38,21 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
 </head>
 <body>
 <a class="lesson-skip" href="#lesson-content">Sari la conținutul lecției</a>
-<header class="lab-topbar"><div class="lab-topbar-inner"><a href="index.html" class="lab-brand" id="brand"><div class="lab-brand-mark">☰</div><span class="lab-brand-name">Biologie<span class="lab-brand-sub">.bb</span></span></a><nav class="lab-nav" aria-label="Navigare rapidă"><a href="#introducere" onclick="goto('introducere')">6.1 Introducere</a><a href="#osul" onclick="goto('osul')">6.2 Osul</a><a href="#articulatii" onclick="goto('articulatii')">6.3 Articulațiile</a></nav><a href="index.html" class="lab-topbar-back">← Toate capitolele</a></div></header>
-<div id="nav-overlay" onclick="closeNav()"></div>
+<header class="lab-topbar"><div class="lab-topbar-inner"><a href="index.html" class="lab-brand" id="brand"><div class="lab-brand-mark">☰</div><span class="lab-brand-name">Biologie<span class="lab-brand-sub">.bb</span></span></a><nav class="lab-nav" aria-label="Navigare rapidă"><a href="#introducere">6.1 Introducere</a><a href="#osul">6.2 Osul</a><a href="#articulatii">6.3 Articulațiile</a></nav><a href="index.html" class="lab-topbar-back">← Toate capitolele</a></div></header>
+<div id="nav-overlay"></div>
 <div class="ch-layout">
 <nav id="sidenav" aria-label="Cuprinsul capitolului">
   <div class="nav-header"><div class="nav-chapter-badge">Capitol 6</div><div class="nav-chapter-title">Oasele și articulațiile</div></div>
   <div class="nav-group-label">Lecții</div>
-  <a href="#introducere" class="active" onclick="goto('introducere')">6.1 Introducere</a>
-  <a href="#osul" onclick="goto('osul')">6.2 Osul</a>
-  <a href="#articulatii" onclick="goto('articulatii')">6.3 Articulațiile</a>
+  <a href="#introducere" class="active">6.1 Introducere</a>
+  <a href="#osul">6.2 Osul</a>
+  <a href="#articulatii">6.3 Articulațiile</a>
 </nav>
 
 <main id="lesson-content">
 <div class="page-section active" id="page-introducere">
   <div class="hero"><h1>6.1. Introducere</h1><p>Scheletul corpului uman este alcătuit din 206 oase, iar oasele au roluri mecanice, metabolice și hematopoietice.</p></div>
-  <div class="page-nav"><a class="outline" href="index.html">← Toate capitolele</a><a href="#osul" onclick="goto('osul')">6.2 Osul →</a></div>
+  <div class="page-nav"><a class="outline" href="index.html">← Toate capitolele</a><a href="#osul">6.2 Osul →</a></div>
   <section>
     <h2 class="section"><span class="sec-num">1</span>Funcțiile oaselor</h2>
     <div class="card">
@@ -72,7 +72,7 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
 
 <div class="page-section" id="page-osul">
   <div class="hero"><h1>6.2. Osul</h1><p>Osul este țesutul conjunctiv cu duritatea cea mai mare din organism.</p></div>
-  <div class="page-nav"><a href="#introducere" class="outline" onclick="goto('introducere')">← 6.1 Introducere</a><a href="#articulatii" onclick="goto('articulatii')">6.3 Articulațiile →</a></div>
+  <div class="page-nav"><a href="#introducere" class="outline">← 6.1 Introducere</a><a href="#articulatii">6.3 Articulațiile →</a></div>
   <section>
     <h2 class="section"><span class="sec-num">1</span>Alcătuire și proprietăți</h2>
     <div class="card">
@@ -229,7 +229,7 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
 
 <div class="page-section" id="page-articulatii">
   <div class="hero"><h1>6.3. Articulațiile</h1><p>Articulațiile sunt spațiile în care două sau mai multe oase se întâlnesc, adică se articulează.</p></div>
-  <div class="page-nav"><a href="#osul" class="outline" onclick="goto('osul')">← 6.2 Osul</a><a href="index.html">Toate capitolele</a></div>
+  <div class="page-nav"><a href="#osul" class="outline">← 6.2 Osul</a><a href="index.html">Toate capitolele</a></div>
   <section>
     <h2 class="section"><span class="sec-num">1</span>Definiție și clasificare</h2>
     <div class="card">
@@ -301,16 +301,8 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
 
 </main>
 </div>
-<button id="top" onclick="scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})" aria-label="Înapoi sus">↑</button>
-<script>
-const pages=['introducere','osul','articulatii'];
-function closeNav(){document.getElementById('sidenav').classList.remove('open');document.getElementById('nav-overlay').classList.remove('open')}
-function goto(page){if(!pages.includes(page))page='introducere';document.querySelectorAll('.page-section').forEach(s=>s.classList.remove('active'));document.getElementById('page-'+page)?.classList.add('active');document.querySelectorAll('#sidenav a').forEach(a=>a.classList.toggle('active',(a.getAttribute('onclick')||'').includes("'"+page+"'")));closeNav();if(location.hash.slice(1)!==page)history.replaceState(null,'','#'+page);window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})}
-addEventListener('scroll',()=>{document.getElementById('top').style.display=scrollY>500?'flex':'none'});
-function handleHash(){const initial=location.hash.slice(1);if(pages.includes(initial))goto(initial);else if(initial)goto('introducere')}
-addEventListener('DOMContentLoaded',handleHash);
-addEventListener('hashchange',handleHash);
-</script>
+<button id="top" aria-label="Înapoi sus">↑</button>
+<script src="assets/js/lesson.js?v=20260907-router1"></script>
 <script src="assets/js/chapter-redesign.js?v=20260907-nervous11"></script>
 </body>
 </html>

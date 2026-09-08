@@ -408,4 +408,30 @@ Deterministic screenshots compared all three pilot sections at 1440×1000 and 39
 
 Service-worker checks passed for a fresh v16 installation and an open-page v15-to-v16 upgrade. The exact `assets/js/lesson.js?v=20260907-router1` request is precached, the v16 worker claims the existing page, the migrated markup loads after controlled reload, and the lesson works offline with section navigation. Install-time precache requests use `cache: 'reload'` so the new cache cannot be populated from a stale browser HTTP-cache copy during an upgrade. This is the only worker-strategy adjustment in the pilot. The previously documented Google Fonts error when going offline immediately after a first install and before a controlled reload remains unchanged; tested controlled offline use is not worse than the v15 baseline.
 
-The shared router is ready for another individually baselined, simple lesson pilot, but it is not yet safe for a bulk rollout. Before each migration, compare its default route, link forms, map-card behavior, search parameters, inline callers, and focus/drawer behavior. Renal and male reproductive lessons require an explicit design for dynamic `SUB_NAVS`, legacy `?goto` links, local search, and lesson-specific controls. The quiz must be tested separately against its dynamic rendering and saved-state contract. Keep every non-migrated lesson on the legacy path until its own compatibility work is complete.
+At pilot completion, the router was ready for individually baselined simple lessons but not the three legacy implementations. The authorized simple-lesson rollout below supersedes the pilot-only state.
+
+### Completed: simple-lesson router rollout (2026-09-08)
+
+The validated `assets/js/lesson.js` runtime now owns generic routing for all seven simple lessons. This rollout added the existing script before `chapter-redesign.js`, removed local route arrays/functions/listeners and generic back-to-top handlers, and changed authored navigation to semantic hashes in:
+
+| Lesson | Authored default | Routes | Compatibility finding |
+| --- | --- | ---: | --- |
+| `tesutul_muscular.html` | `tesutul-muscular` | 3 | Previously completed pilot; no `home` route |
+| `oasele_si_articulatiile.html` | `introducere` | 3 | No `home` route |
+| `tesutul_nervos.html` | `organizare` | 3 | No `home` route |
+| `sistemul_nervos.html` | `sistem-nervos-central` | 3 | No `home` route; final link still leads to the separate quiz page |
+| `sistemul_reproducator_feminin.html` | `home` | 4 | Top navigation intentionally omits `intro`; sidebar contains every route |
+| `introducere_anatomie_fiziologie.html` | `home` | 6 | Top navigation intentionally omits `introducere`; sidebar contains every route |
+| `celula_si_fiziologia_celulara.html` | `home` | 9 | Top navigation is a four-route subset; seven chapter-map `div` controls became semantic hash anchors |
+
+No shared-router code changed during this rollout: all route/default and partial-topbar differences were already supported by DOM discovery and link-by-link active-state synchronization. The cell chapter's map cards were the only non-anchor route controls in scope; converting them to `<a class="map-card" href="#route">` preserved their layout and gives them native link semantics. Educational text, section IDs, styles, image markup/order, public filenames, and hashes are unchanged. Native section clicks retain the pilot's intentional history behavior: Back and Forward traverse section visits, while programmatic search navigation replaces the current hash.
+
+Each newly migrated lesson was baselined, edited, and tested before work began on the next. Per-lesson checks covered no-hash defaults, every valid direct hash and refresh, invalid hashes, sidebar and available topbar links, previous/next links, Back/Forward, keyboard heading focus, modified clicks, cross-section search, highlighter, dark-mode persistence, back-to-top, 390-pixel drawer operation, overlay and Escape closure, focus trapping/return, route-event closure, and application console errors. A final matrix reran the same suite on all seven migrated lessons; every check passed with zero application console errors.
+
+Visual comparisons covered the default and a non-default section at 1440×1000 and 390×844 for every newly migrated lesson. Image pixels were hidden while retaining their layout boxes to avoid nondeterministic headless WebP rasterization. All 24 new comparisons had zero changed pixels; the six muscular-pilot comparisons remain zero as previously recorded. Direct source checks also confirmed identical educational text, inline styles, image attributes/order, and section IDs for all six newly migrated documents.
+
+The compatibility matrix kept `sistemul_renal_complet.html`, `sistemul_reproducator_masculin.html`, and `grile_sistemul_nervos.html` unchanged. Renal and male direct hashes, legacy `?goto`, all sidebar routes, local cross-section search, mobile drawer, and the wrapped legacy `goto()` path passed. The quiz rendered all 50 questions, navigated all five ranges, accepted and verified an answer, persisted its existing storage record, and passed mobile drawer checks. No application console errors occurred.
+
+`sw.js` remains at v16 and was not modified for this rollout because `lesson.js` and every lesson document were already in its inventory. A fresh v16 install cached the exact versioned router asset, a worker-controlled reload loaded it, and offline direct-hash navigation passed on all seven migrated lessons. The previously documented first-install Google Fonts limitation is unchanged.
+
+The remaining legacy pages still require dedicated migrations. Renal and male need explicit adapters or a shared-router extension for dynamic `SUB_NAVS`, subsection anchors, `?goto`, local search, and lesson-specific controls. The quiz needs a separate router integration around generated range content and its `bb.quiz.sistem-nervos.v1` state contract. Do not add `lesson.js` to any of those three pages as incidental cleanup.

@@ -39,21 +39,21 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
 </head>
 <body>
 <a class="lesson-skip" href="#lesson-content">Sari la conținutul lecției</a>
-<header class="lab-topbar"><div class="lab-topbar-inner"><a href="index.html" class="lab-brand" id="brand"><div class="lab-brand-mark">☰</div><span class="lab-brand-name">Biologie<span class="lab-brand-sub">.bb</span></span></a><nav class="lab-nav" aria-label="Navigare rapidă"><a href="#home" onclick="goto('home')">Pagina capitolului</a><a href="#membrana" onclick="goto('membrana')">Membrană</a><a href="#transport" onclick="goto('transport')">Transport</a><a href="#energie" onclick="goto('energie')">Energie</a></nav><a href="index.html" class="lab-topbar-back">← Toate capitolele</a></div></header>
-<div id="nav-overlay" onclick="closeNav()"></div>
+<header class="lab-topbar"><div class="lab-topbar-inner"><a href="index.html" class="lab-brand" id="brand"><div class="lab-brand-mark">☰</div><span class="lab-brand-name">Biologie<span class="lab-brand-sub">.bb</span></span></a><nav class="lab-nav" aria-label="Navigare rapidă"><a href="#home">Pagina capitolului</a><a href="#membrana">Membrană</a><a href="#transport">Transport</a><a href="#energie">Energie</a></nav><a href="index.html" class="lab-topbar-back">← Toate capitolele</a></div></header>
+<div id="nav-overlay"></div>
 <div class="ch-layout">
 <nav id="sidenav" aria-label="Cuprinsul capitolului">
   <div class="nav-header"><div class="nav-chapter-badge">Capitol 3</div><div class="nav-chapter-title">Celula și fiziologia celulară</div></div>
   <div class="nav-group-label">Lecții</div>
-  <a href="#home" class="active" onclick="goto('home')">Pagina capitolului</a>
-  <a href="#introducere" onclick="goto('introducere')">3.1 Introducere</a>
-  <a href="#structura" onclick="goto('structura')">3.2 Structura celulei</a>
-  <a href="#membrana" onclick="goto('membrana')">Membrana plasmatică</a>
-  <a href="#transport" onclick="goto('transport')">Mișcările moleculare</a>
-  <a href="#nucleu" onclick="goto('nucleu')">Nucleul</a>
-  <a href="#organite" onclick="goto('organite')">Citoplasma și organitele</a>
-  <a href="#energie" onclick="goto('energie')">Celulele și energia</a>
-  <a href="#recapitulare" onclick="goto('recapitulare')">Recapitulare</a>
+  <a href="#home" class="active">Pagina capitolului</a>
+  <a href="#introducere">3.1 Introducere</a>
+  <a href="#structura">3.2 Structura celulei</a>
+  <a href="#membrana">Membrana plasmatică</a>
+  <a href="#transport">Mișcările moleculare</a>
+  <a href="#nucleu">Nucleul</a>
+  <a href="#organite">Citoplasma și organitele</a>
+  <a href="#energie">Celulele și energia</a>
+  <a href="#recapitulare">Recapitulare</a>
 </nav>
 
 <main id="lesson-content">
@@ -66,13 +66,13 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
   <div class="card chapter-map">
     <h2>Harta capitolului</h2>
     <div class="map-grid-split">
-      <div class="map-card" onclick="goto('introducere')"><strong>3.1 Introducere</strong><p>Procariote, eucariote și componentele comune ale celulei.</p></div>
-      <div class="map-card" onclick="goto('structura')"><strong>3.2 Structura celulei</strong><p>Citoplasma și membrana celulară sunt componentele de bază.</p></div>
-      <div class="map-card" onclick="goto('membrana')"><strong>Membrana plasmatică</strong><p>Fosfolipide, colesterol, proteine, glicolipide și glicoproteine.</p></div>
-      <div class="map-card" onclick="goto('transport')"><strong>Mișcările moleculare</strong><p>Difuziune, osmoză, difuziune facilitată, transport activ, endocitoză și exocitoză.</p></div>
-      <div class="map-card" onclick="goto('nucleu')"><strong>Nucleul</strong><p>ADN, histone, cromozomi, înveliș nuclear, nucleoli și cromatină.</p></div>
-      <div class="map-card" onclick="goto('organite')"><strong>Citoplasma și organitele</strong><p>RE, ribozomi, aparat Golgi, lizozomi, mitocondrii, citoschelet, cili și flageli.</p></div>
-      <div class="map-card" onclick="goto('energie')"><strong>Celulele și energia</strong><p>Organizarea celulară, energia de activare și reacțiile exergonice/endergonice.</p></div>
+      <a class="map-card" href="#introducere"><strong>3.1 Introducere</strong><p>Procariote, eucariote și componentele comune ale celulei.</p></a>
+      <a class="map-card" href="#structura"><strong>3.2 Structura celulei</strong><p>Citoplasma și membrana celulară sunt componentele de bază.</p></a>
+      <a class="map-card" href="#membrana"><strong>Membrana plasmatică</strong><p>Fosfolipide, colesterol, proteine, glicolipide și glicoproteine.</p></a>
+      <a class="map-card" href="#transport"><strong>Mișcările moleculare</strong><p>Difuziune, osmoză, difuziune facilitată, transport activ, endocitoză și exocitoză.</p></a>
+      <a class="map-card" href="#nucleu"><strong>Nucleul</strong><p>ADN, histone, cromozomi, înveliș nuclear, nucleoli și cromatină.</p></a>
+      <a class="map-card" href="#organite"><strong>Citoplasma și organitele</strong><p>RE, ribozomi, aparat Golgi, lizozomi, mitocondrii, citoschelet, cili și flageli.</p></a>
+      <a class="map-card" href="#energie"><strong>Celulele și energia</strong><p>Organizarea celulară, energia de activare și reacțiile exergonice/endergonice.</p></a>
     </div>
   </div>
   <div class="summary">
@@ -83,7 +83,7 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
 
 <div class="page-section" id="page-introducere">
   <div class="hero"><h1>3.1. Introducere</h1><p>Teoria celulară afirmă că organismele vii sunt alcătuite din celule, iar biologia corpului uman gravitează în jurul biologiei celulare.</p></div>
-  <div class="page-nav"><a href="#home" class="outline" onclick="goto('home')">← Harta capitolului</a><a href="#structura" onclick="goto('structura')">Structura celulei →</a></div>
+  <div class="page-nav"><a href="#home" class="outline">← Harta capitolului</a><a href="#structura">Structura celulei →</a></div>
   <section>
     <h2 class="section"><span class="sec-num">1</span>Teoria celulară</h2>
     <div class="card">
@@ -100,7 +100,7 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
 
 <div class="page-section" id="page-structura">
   <div class="hero"><h1>3.2. Structura celulei</h1><p>Toate celulele au două componente de bază: citoplasma și membrana celulară, numită și membrană plasmatică.</p></div>
-  <div class="page-nav"><a href="#introducere" class="outline" onclick="goto('introducere')">← Introducere</a><a href="#membrana" onclick="goto('membrana')">Membrana plasmatică →</a></div>
+  <div class="page-nav"><a href="#introducere" class="outline">← Introducere</a><a href="#membrana">Membrana plasmatică →</a></div>
   <section>
     <h2 class="section"><span class="sec-num">1</span>Componente de bază</h2>
     <div class="card">
@@ -115,7 +115,7 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
 
 <div class="page-section" id="page-membrana">
   <div class="hero"><h1>Membrana plasmatică</h1><p>Membrana delimitează celula, îi menține forma și asigură schimburile controlate cu mediul extern.</p></div>
-  <div class="page-nav"><a href="#structura" class="outline" onclick="goto('structura')">← Structura celulei</a><a href="#transport" onclick="goto('transport')">Mișcările moleculare →</a></div>
+  <div class="page-nav"><a href="#structura" class="outline">← Structura celulei</a><a href="#transport">Mișcările moleculare →</a></div>
   <section>
     <h2 class="section"><span class="sec-num">1</span>Modelul mozaicului fluid</h2>
     <div class="card">
@@ -151,7 +151,7 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
 
 <div class="page-section" id="page-transport">
   <div class="hero"><h1>3.3. Mișcările moleculare</h1><p>Membrana plasmatică este semipermeabilă și permite comunicarea controlată dintre citoplasmă și mediul extern.</p></div>
-  <div class="page-nav"><a href="#membrana" class="outline" onclick="goto('membrana')">← Membrana plasmatică</a><a href="#nucleu" onclick="goto('nucleu')">Nucleul →</a></div>
+  <div class="page-nav"><a href="#membrana" class="outline">← Membrana plasmatică</a><a href="#nucleu">Nucleul →</a></div>
   <section>
     <h2 class="section"><span class="sec-num">1</span>Semipermeabilitatea</h2>
     <div class="card">
@@ -228,7 +228,7 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
 
 <div class="page-section" id="page-nucleu">
   <div class="hero"><h1>Nucleul</h1><p>Cu excepția globulelor roșii, celulele umane au nucleu. Nucleul conține informația genetică și controlează sinteza proteică prin ADN.</p></div>
-  <div class="page-nav"><a href="#transport" class="outline" onclick="goto('transport')">← Mișcările moleculare</a><a href="#organite" onclick="goto('organite')">Citoplasma și organitele →</a></div>
+  <div class="page-nav"><a href="#transport" class="outline">← Mișcările moleculare</a><a href="#organite">Citoplasma și organitele →</a></div>
   <section>
     <h2 class="section"><span class="sec-num">1</span>ADN, histone și cromozomi</h2>
     <div class="card">
@@ -255,7 +255,7 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
 
 <div class="page-section" id="page-organite">
   <div class="hero"><h1>Citoplasma și organitele</h1><p>Citoplasma este mediul semilichid al celulei, iar organitele sunt structuri specializate care îndeplinesc funcții celulare diferite.</p></div>
-  <div class="page-nav"><a href="#nucleu" class="outline" onclick="goto('nucleu')">← Nucleul</a><a href="#energie" onclick="goto('energie')">Celulele și energia →</a></div>
+  <div class="page-nav"><a href="#nucleu" class="outline">← Nucleul</a><a href="#energie">Celulele și energia →</a></div>
   <section>
     <h2 class="section"><span class="sec-num">1</span>Citoplasma</h2>
     <div class="card">
@@ -298,7 +298,7 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
 
 <div class="page-section" id="page-energie">
   <div class="hero"><h1>Celulele și energia</h1><p>Organizarea moleculelor și a celulelor necesită energie, iar celulele primesc această energie din hrană.</p></div>
-  <div class="page-nav"><a href="#organite" class="outline" onclick="goto('organite')">← Citoplasma și organitele</a><a href="#recapitulare" onclick="goto('recapitulare')">Recapitulare →</a></div>
+  <div class="page-nav"><a href="#organite" class="outline">← Citoplasma și organitele</a><a href="#recapitulare">Recapitulare →</a></div>
   <section>
     <h2 class="section"><span class="sec-num">1</span>Organizare și energie</h2>
     <div class="card">
@@ -348,7 +348,7 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
 
 <div class="page-section" id="page-recapitulare">
   <div class="hero"><h1>Recapitulare</h1><p>Reia rapid structurile, mecanismele și exemplele esențiale ale capitolului.</p></div>
-  <div class="page-nav"><a href="#energie" class="outline" onclick="goto('energie')">← Celulele și energia</a><a href="#home" onclick="goto('home')">Harta capitolului</a></div>
+  <div class="page-nav"><a href="#energie" class="outline">← Celulele și energia</a><a href="#home">Harta capitolului</a></div>
   <section>
     <h2 class="section"><span class="sec-num">1</span>De reținut</h2>
     <div class="card">
@@ -391,16 +391,8 @@ ul.ch{list-style:none;padding:0;margin:.35rem 0}ul.ch li{padding:.18rem 0 .18rem
 </div>
 </main>
 </div>
-<button id="top" onclick="scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})" aria-label="Înapoi sus">↑</button>
-<script>
-const pages=['home','introducere','structura','membrana','transport','nucleu','organite','energie','recapitulare'];
-function closeNav(){document.getElementById('sidenav').classList.remove('open');document.getElementById('nav-overlay').classList.remove('open')}
-function goto(page){if(!pages.includes(page))page='home';document.querySelectorAll('.page-section').forEach(s=>s.classList.remove('active'));document.getElementById('page-'+page)?.classList.add('active');document.querySelectorAll('#sidenav a').forEach(a=>a.classList.toggle('active',(a.getAttribute('onclick')||'').includes("'"+page+"'")));closeNav();if(location.hash.slice(1)!==page)history.replaceState(null,'','#'+page);window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})}
-addEventListener('scroll',()=>{document.getElementById('top').style.display=scrollY>500?'flex':'none'});
-function handleHash(){const initial=location.hash.slice(1);if(pages.includes(initial))goto(initial);else if(initial)goto('home')}
-addEventListener('DOMContentLoaded',handleHash);
-addEventListener('hashchange',handleHash);
-</script>
+<button id="top" aria-label="Înapoi sus">↑</button>
+<script src="assets/js/lesson.js?v=20260907-router1"></script>
 <script src="assets/js/chapter-redesign.js?v=20260907-nervous11"></script>
 </body>
 </html>

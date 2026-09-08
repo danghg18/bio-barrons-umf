@@ -30,15 +30,15 @@
 </head>
 <body class="bb-chapter-redesign">
 <a class="lesson-skip" href="#lesson-content">Sari la conținutul lecției</a>
-<header class="lab-topbar"><div class="lab-topbar-inner"><a href="index.html" class="lab-brand" id="brand"><div class="lab-brand-mark">☰</div><span class="lab-brand-name">Biologie<span class="lab-brand-sub">.bb</span></span></a><nav class="lab-nav" aria-label="Navigare rapidă"><a href="#sistem-nervos-central" onclick="goto('sistem-nervos-central')">11.1 Sistemul nervos central</a><a href="#sistem-nervos-periferic" onclick="goto('sistem-nervos-periferic')">11.2 Sistemul nervos periferic</a><a href="#sistem-nervos-autonom" onclick="goto('sistem-nervos-autonom')">11.3 Sistemul nervos autonom</a></nav><a href="index.html" class="lab-topbar-back">← Toate capitolele</a></div></header>
-<div id="nav-overlay" onclick="closeNav()"></div>
+<header class="lab-topbar"><div class="lab-topbar-inner"><a href="index.html" class="lab-brand" id="brand"><div class="lab-brand-mark">☰</div><span class="lab-brand-name">Biologie<span class="lab-brand-sub">.bb</span></span></a><nav class="lab-nav" aria-label="Navigare rapidă"><a href="#sistem-nervos-central">11.1 Sistemul nervos central</a><a href="#sistem-nervos-periferic">11.2 Sistemul nervos periferic</a><a href="#sistem-nervos-autonom">11.3 Sistemul nervos autonom</a></nav><a href="index.html" class="lab-topbar-back">← Toate capitolele</a></div></header>
+<div id="nav-overlay"></div>
 <div class="ch-layout">
 <nav id="sidenav" aria-label="Cuprinsul capitolului">
   <div class="nav-header"><div class="nav-chapter-badge">Capitol 11</div><div class="nav-chapter-title">Organizarea sistemului nervos</div></div>
   <div class="nav-group-label">Lecții</div>
-  <a href="#sistem-nervos-central" class="active" onclick="goto('sistem-nervos-central')">11.1 Sistemul nervos central</a>
-  <a href="#sistem-nervos-periferic" onclick="goto('sistem-nervos-periferic')">11.2 Sistemul nervos periferic</a>
-  <a href="#sistem-nervos-autonom" onclick="goto('sistem-nervos-autonom')">11.3 Sistemul nervos autonom (vegetativ)</a>
+  <a href="#sistem-nervos-central" class="active">11.1 Sistemul nervos central</a>
+  <a href="#sistem-nervos-periferic">11.2 Sistemul nervos periferic</a>
+  <a href="#sistem-nervos-autonom">11.3 Sistemul nervos autonom (vegetativ)</a>
   <div class="nav-divider"></div>
   <div class="nav-group-label">Exersează</div>
   <a href="grile_sistemul_nervos.html">Grile interactive 51–100</a>
@@ -47,7 +47,7 @@
 <main id="lesson-content">
 <div class="page-section active" id="page-sistem-nervos-central">
   <div class="hero"><h1>11.1. Sistemul nervos central</h1><p>Sistemul nervos central este principalul centru de interpretare a informației din organism și este compus din encefal și măduva spinării.</p></div>
-  <div class="page-nav"><a class="outline" href="index.html">← Toate capitolele</a><a href="#sistem-nervos-periferic" onclick="goto('sistem-nervos-periferic')">11.2 Sistemul nervos periferic →</a></div>
+  <div class="page-nav"><a class="outline" href="index.html">← Toate capitolele</a><a href="#sistem-nervos-periferic">11.2 Sistemul nervos periferic →</a></div>
 
   <section>
     <h2 class="section"><span class="sec-num">1</span>Organizarea generală</h2>
@@ -167,7 +167,7 @@
 
 <div class="page-section" id="page-sistem-nervos-periferic">
   <div class="hero"><h1>11.2. Sistemul nervos periferic</h1><p>Sistemul nervos periferic cuprinde țesutul nervos aflat în afara encefalului și a măduvei spinării.</p></div>
-  <div class="page-nav"><a class="outline" href="#sistem-nervos-central" onclick="goto('sistem-nervos-central')">← 11.1 Sistemul nervos central</a><a href="#sistem-nervos-autonom" onclick="goto('sistem-nervos-autonom')">11.3 Sistemul nervos autonom →</a></div>
+  <div class="page-nav"><a class="outline" href="#sistem-nervos-central">← 11.1 Sistemul nervos central</a><a href="#sistem-nervos-autonom">11.3 Sistemul nervos autonom →</a></div>
 
   <section>
     <h2 class="section"><span class="sec-num">1</span>Organizarea sistemului nervos periferic</h2>
@@ -233,7 +233,7 @@
 
 <div class="page-section" id="page-sistem-nervos-autonom">
   <div class="hero"><h1>11.3. Sistemul nervos autonom (vegetativ)</h1><p>Sistemul nervos autonom operează involuntar și coordonează funcțiile homeostatice ale viscerelor.</p></div>
-  <div class="page-nav"><a class="outline" href="#sistem-nervos-periferic" onclick="goto('sistem-nervos-periferic')">← 11.2 Sistemul nervos periferic</a><a href="grile_sistemul_nervos.html">Exersează cu grilele 51–100 →</a></div>
+  <div class="page-nav"><a class="outline" href="#sistem-nervos-periferic">← 11.2 Sistemul nervos periferic</a><a href="grile_sistemul_nervos.html">Exersează cu grilele 51–100 →</a></div>
 
   <section>
     <h2 class="section"><span class="sec-num">1</span>Organizarea sistemului nervos autonom</h2>
@@ -266,16 +266,8 @@
 
 </main>
 </div>
-<button id="top" onclick="scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})" aria-label="Înapoi sus">↑</button>
-<script>
-const pages=['sistem-nervos-central','sistem-nervos-periferic','sistem-nervos-autonom'];
-function closeNav(){document.getElementById('sidenav').classList.remove('open');document.getElementById('nav-overlay').classList.remove('open')}
-function goto(page){if(!pages.includes(page))page='sistem-nervos-central';document.querySelectorAll('.page-section').forEach(s=>s.classList.remove('active'));document.getElementById('page-'+page)?.classList.add('active');document.querySelectorAll('#sidenav a').forEach(a=>a.classList.toggle('active',(a.getAttribute('onclick')||'').includes("'"+page+"'")));closeNav();if(location.hash.slice(1)!==page)history.replaceState(null,'','#'+page);window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})}
-addEventListener('scroll',()=>{document.getElementById('top').style.display=scrollY>500?'flex':'none'});
-function handleHash(){const initial=location.hash.slice(1);if(pages.includes(initial))goto(initial);else if(initial)goto('sistem-nervos-central')}
-addEventListener('DOMContentLoaded',handleHash);
-addEventListener('hashchange',handleHash);
-</script>
+<button id="top" aria-label="Înapoi sus">↑</button>
+<script src="assets/js/lesson.js?v=20260907-router1"></script>
 <script src="assets/js/chapter-redesign.js?v=20260907-nervous11"></script>
 </body>
 </html>

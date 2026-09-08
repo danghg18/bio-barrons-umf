@@ -30,21 +30,21 @@
 </head>
 <body class="bb-chapter-redesign">
 <a class="lesson-skip" href="#lesson-content">Sari la conținutul lecției</a>
-<header class="lab-topbar"><div class="lab-topbar-inner"><a href="index.html" class="lab-brand" id="brand"><div class="lab-brand-mark">☰</div><span class="lab-brand-name">Biologie<span class="lab-brand-sub">.bb</span></span></a><nav class="lab-nav" aria-label="Navigare rapidă"><a href="#organizare" onclick="goto('organizare')">10.1 Organizare și celule</a><a href="#fiziologia-nervilor" onclick="goto('fiziologia-nervilor')">10.2 Fiziologia nervilor</a><a href="#sinapsa" onclick="goto('sinapsa')">10.3 Sinapsa</a></nav><a href="index.html" class="lab-topbar-back">← Toate capitolele</a></div></header>
-<div id="nav-overlay" onclick="closeNav()"></div>
+<header class="lab-topbar"><div class="lab-topbar-inner"><a href="index.html" class="lab-brand" id="brand"><div class="lab-brand-mark">☰</div><span class="lab-brand-name">Biologie<span class="lab-brand-sub">.bb</span></span></a><nav class="lab-nav" aria-label="Navigare rapidă"><a href="#organizare">10.1 Organizare și celule</a><a href="#fiziologia-nervilor">10.2 Fiziologia nervilor</a><a href="#sinapsa">10.3 Sinapsa</a></nav><a href="index.html" class="lab-topbar-back">← Toate capitolele</a></div></header>
+<div id="nav-overlay"></div>
 <div class="ch-layout">
 <nav id="sidenav" aria-label="Cuprinsul capitolului">
   <div class="nav-header"><div class="nav-chapter-badge">Capitol 10</div><div class="nav-chapter-title">Țesutul nervos</div></div>
   <div class="nav-group-label">Lecții</div>
-  <a href="#organizare" class="active" onclick="goto('organizare')">10.1 Organizarea și celulele sistemului nervos</a>
-  <a href="#fiziologia-nervilor" onclick="goto('fiziologia-nervilor')">10.2 Fiziologia nervilor</a>
-  <a href="#sinapsa" onclick="goto('sinapsa')">10.3 Sinapsa și neurotransmițătorii</a>
+  <a href="#organizare" class="active">10.1 Organizarea și celulele sistemului nervos</a>
+  <a href="#fiziologia-nervilor">10.2 Fiziologia nervilor</a>
+  <a href="#sinapsa">10.3 Sinapsa și neurotransmițătorii</a>
 </nav>
 
 <main id="lesson-content">
 <div class="page-section active" id="page-organizare">
   <div class="hero"><h1>10.1. Organizarea și celulele sistemului nervos</h1><p>Sistemul nervos are două componente principale: sistemul nervos central și sistemul nervos periferic.</p></div>
-  <div class="page-nav"><a class="outline" href="index.html">← Toate capitolele</a><a href="#fiziologia-nervilor" onclick="goto('fiziologia-nervilor')">10.2 Fiziologia nervilor →</a></div>
+  <div class="page-nav"><a class="outline" href="index.html">← Toate capitolele</a><a href="#fiziologia-nervilor">10.2 Fiziologia nervilor →</a></div>
 
   <section>
     <h2 class="section"><span class="sec-num">1</span>Rolul sistemului nervos</h2>
@@ -121,7 +121,7 @@
 
 <div class="page-section" id="page-fiziologia-nervilor">
   <div class="hero"><h1>10.2. Fiziologia nervilor</h1><p>Sistemul nervos coordonează acele activități care atrag după ele răspunsul la stimuli.</p></div>
-  <div class="page-nav"><a href="#organizare" class="outline" onclick="goto('organizare')">← 10.1 Organizare și celule</a><a href="#sinapsa" onclick="goto('sinapsa')">10.3 Sinapsa și neurotransmițătorii →</a></div>
+  <div class="page-nav"><a href="#organizare" class="outline">← 10.1 Organizare și celule</a><a href="#sinapsa">10.3 Sinapsa și neurotransmițătorii →</a></div>
 
   <section>
     <h2 class="section"><span class="sec-num">1</span>Recepția, transmiterea, integrarea și răspunsul</h2>
@@ -198,7 +198,7 @@
 
 <div class="page-section" id="page-sinapsa">
   <div class="hero"><h1>10.3. Sinapsa și neurotransmițătorii</h1><p>Sinapsa reprezintă joncțiunea dintre doi neuroni sau dintre un neuron și un efector: mușchi sau glandă.</p></div>
-  <div class="page-nav"><a href="#fiziologia-nervilor" class="outline" onclick="goto('fiziologia-nervilor')">← 10.2 Fiziologia nervilor</a><a href="index.html">Toate capitolele</a></div>
+  <div class="page-nav"><a href="#fiziologia-nervilor" class="outline">← 10.2 Fiziologia nervilor</a><a href="index.html">Toate capitolele</a></div>
 
   <section>
     <h2 class="section"><span class="sec-num">1</span>Sinapsa</h2>
@@ -248,16 +248,8 @@
 
 </main>
 </div>
-<button id="top" onclick="scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})" aria-label="Înapoi sus">↑</button>
-<script>
-const pages=['organizare','fiziologia-nervilor','sinapsa'];
-function closeNav(){document.getElementById('sidenav').classList.remove('open');document.getElementById('nav-overlay').classList.remove('open')}
-function goto(page){if(!pages.includes(page))page='organizare';document.querySelectorAll('.page-section').forEach(s=>s.classList.remove('active'));document.getElementById('page-'+page)?.classList.add('active');document.querySelectorAll('#sidenav a').forEach(a=>a.classList.toggle('active',(a.getAttribute('onclick')||'').includes("'"+page+"'")));closeNav();if(location.hash.slice(1)!==page)history.replaceState(null,'','#'+page);window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})}
-addEventListener('scroll',()=>{document.getElementById('top').style.display=scrollY>500?'flex':'none'});
-function handleHash(){const initial=location.hash.slice(1);if(pages.includes(initial))goto(initial);else if(initial)goto('organizare')}
-addEventListener('DOMContentLoaded',handleHash);
-addEventListener('hashchange',handleHash);
-</script>
+<button id="top" aria-label="Înapoi sus">↑</button>
+<script src="assets/js/lesson.js?v=20260907-router1"></script>
 <script src="assets/js/chapter-redesign.js?v=20260907-nervous11"></script>
 </body>
 </html>
