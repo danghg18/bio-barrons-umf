@@ -85,18 +85,10 @@
     var badge = document.querySelector(".nav-chapter-badge");
     var match = String(badge ? badge.textContent : document.title).match(/\d+/);
     var chapter = match ? match[0] : "";
-    var themes = {
-      "1": { accent: "#2563eb", light: "#eff6ff", mid: "#3b82f6" },
-      "3": { accent: "#2563eb", light: "#eff6ff", mid: "#3b82f6" },
-      "6": { accent: "#0891b2", light: "#ecfeff", mid: "#06b6d4" },
-      "8": { accent: "#0891b2", light: "#ecfeff", mid: "#06b6d4" },
-      "10": { accent: "#7c3aed", light: "#f5f3ff", mid: "#8b5cf6" },
-      "11": { accent: "#7c3aed", light: "#f5f3ff", mid: "#8b5cf6" },
-      "20": { accent: "#059669", light: "#ecfdf5", mid: "#10b981" },
-      "22": { accent: "#0891b2", light: "#ecfeff", mid: "#06b6d4" },
-      "23": { accent: "#db2777", light: "#fdf2f8", mid: "#ec4899" },
-    };
-    var theme = themes[chapter];
+    var chapterData = typeof CHAPTERS !== "undefined"
+      ? CHAPTERS.find(function (item) { return String(item.num) === chapter; })
+      : null;
+    var theme = chapterData && chapterData.theme;
     if (!theme) return;
 
     [

@@ -1,0 +1,8 @@
+:root {
+  --chapter-accent: #7C3AED;
+  --chapter-accent-light: #F5F3FF;
+  --chapter-accent-mid: #8B5CF6;
+}
+
+.page-section { display: none; }
+.page-section.active { display: block; }
