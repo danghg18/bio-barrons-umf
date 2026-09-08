@@ -92,7 +92,9 @@ const ASSETS = [
 
 self.addEventListener('install', e => {
   e.waitUntil(
-    caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting())
+    caches.open(CACHE)
+      .then(cache => cache.addAll(ASSETS.map(url => new Request(url, { cache: 'reload' }))))
+      .then(() => self.skipWaiting())
   );
 });
 

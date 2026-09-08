@@ -237,6 +237,7 @@
   }
 
   function syncNavigationState(explicitTarget) {
+    if (window.BBLessonNavigation) return;
     var activeId = explicitTarget || getActiveSectionId();
     document.querySelectorAll("#sidenav a, .lab-nav a").forEach(function (link) {
       var target = getGotoTarget(link);

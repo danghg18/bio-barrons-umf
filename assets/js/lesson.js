@@ -73,16 +73,16 @@
     });
     syncNavigation(route);
 
-    if (options.scroll !== false) {
-      window.scrollTo({ top: 0, behavior: prefersReducedMotion() ? "auto" : "smooth" });
-    }
-    if (options.focus !== false) focusHeading(section);
-
     document.dispatchEvent(
       new CustomEvent("bb:lesson-section-change", {
         detail: { route: route, section: section, source: options.source || "api" },
       })
     );
+
+    if (options.scroll !== false) {
+      window.scrollTo({ top: 0, behavior: prefersReducedMotion() ? "auto" : "smooth" });
+    }
+    if (options.focus !== false) focusHeading(section);
     return true;
   }
 
@@ -110,6 +110,7 @@
   }
 
   function handleSameRouteClick(event) {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     var link = event.target.closest("a[href]");
     var route = routeFromLink(link);
     if (!route || window.location.hash !== link.hash) return;
@@ -122,6 +123,9 @@
     if (!button) return;
     window.addEventListener("scroll", function () {
       button.style.display = window.scrollY > 500 ? "flex" : "none";
+    });
+    button.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: prefersReducedMotion() ? "auto" : "smooth" });
     });
   }
 
