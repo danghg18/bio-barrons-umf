@@ -73,22 +73,22 @@
     return active ? active.id.replace(/^page-/, "") : "home";
   }
 
+  function navigateLessonSection(target, options) {
+    if (window.BBLessonNavigation && typeof window.BBLessonNavigation.navigate === "function") {
+      return window.BBLessonNavigation.navigate(target, options || {});
+    }
+    if (typeof window.goto === "function") return window.goto(target);
+    return false;
+  }
+
   function applyChapterTheme() {
     var badge = document.querySelector(".nav-chapter-badge");
     var match = String(badge ? badge.textContent : document.title).match(/\d+/);
     var chapter = match ? match[0] : "";
-    var themes = {
-      "1": { accent: "#2563eb", light: "#eff6ff", mid: "#3b82f6" },
-      "3": { accent: "#2563eb", light: "#eff6ff", mid: "#3b82f6" },
-      "6": { accent: "#0891b2", light: "#ecfeff", mid: "#06b6d4" },
-      "8": { accent: "#0891b2", light: "#ecfeff", mid: "#06b6d4" },
-      "10": { accent: "#7c3aed", light: "#f5f3ff", mid: "#8b5cf6" },
-      "11": { accent: "#7c3aed", light: "#f5f3ff", mid: "#8b5cf6" },
-      "20": { accent: "#059669", light: "#ecfdf5", mid: "#10b981" },
-      "22": { accent: "#0891b2", light: "#ecfeff", mid: "#06b6d4" },
-      "23": { accent: "#db2777", light: "#fdf2f8", mid: "#ec4899" },
-    };
-    var theme = themes[chapter];
+    var chapterData = typeof CHAPTERS !== "undefined"
+      ? CHAPTERS.find(function (item) { return String(item.num) === chapter; })
+      : null;
+    var theme = chapterData && chapterData.theme;
     if (!theme) return;
 
     [
@@ -229,6 +229,7 @@
   }
 
   function syncNavigationState(explicitTarget) {
+    if (window.BBLessonNavigation) return;
     var activeId = explicitTarget || getActiveSectionId();
     document.querySelectorAll("#sidenav a, .lab-nav a").forEach(function (link) {
       var target = getGotoTarget(link);
@@ -253,6 +254,7 @@
   }
 
   function patchGoto() {
+    if (window.BBLessonNavigation) return;
     if (typeof window.goto !== "function" || window.goto.__bbSharedWrapper) return;
     var originalGoto = window.goto;
 
@@ -462,6 +464,9 @@
     window.addEventListener("resize", function () {
       setDrawerClosedState(false);
     });
+    document.addEventListener("bb:lesson-section-change", function () {
+      setDrawerClosedState(false);
+    });
     setDrawerClosedState(false);
   }
 
@@ -641,9 +646,9 @@
 
     state.searchIndex = ((index % total) + total) % total;
     var match = state.searchMatches[state.searchIndex];
-    if (match.sectionId !== getActiveSectionId() && typeof window.goto === "function") {
+    if (match.sectionId !== getActiveSectionId()) {
       state.suppressNextRouteFocus = true;
-      window.goto(match.sectionId);
+      navigateLessonSection(match.sectionId, { focus: false, source: "search" });
     }
     if (match.element) {
       match.element.classList.add("search-found-current");
@@ -845,9 +850,9 @@
     var section = String(params.get("section") || "").replace(/^page-/, "");
     var hit = params.get("hit");
 
-    if (section && document.getElementById("page-" + section) && typeof window.goto === "function") {
+    if (section && document.getElementById("page-" + section)) {
       state.suppressNextRouteFocus = true;
-      window.goto(section);
+      navigateLessonSection(section, { focus: false, source: "search" });
     }
     var input = document.getElementById("lesson-search-input");
     if (input) input.value = query;

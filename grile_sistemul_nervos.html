@@ -23,10 +23,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/tokens.css">
 <link rel="stylesheet" href="assets/css/lesson.css">
-<style>
-:root{--chapter-accent:#7C3AED;--chapter-accent-light:#F5F3FF;--chapter-accent-mid:#8B5CF6}
-.page-section{display:none}.page-section.active{display:block}
-</style>
+<link rel="stylesheet" href="assets/css/themes/nervous-system.css">
 <link rel="stylesheet" href="assets/css/chapter-redesign.css?v=20260727-highlighter6">
 <link rel="stylesheet" href="assets/css/quiz.css?v=20260907-quiz4">
 </head>
@@ -81,15 +78,8 @@
 
 <button id="top" onclick="scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})" aria-label="Înapoi sus">↑</button>
 
-<script>
-const pages=['grile-51-60','grile-61-70','grile-71-80','grile-81-90','grile-91-100'];
-function closeNav(){document.getElementById('sidenav').classList.remove('open');document.getElementById('nav-overlay').classList.remove('open')}
-function goto(page){if(!pages.includes(page))page='grile-51-60';document.querySelectorAll('.page-section').forEach(s=>s.classList.remove('active'));document.getElementById('page-'+page)?.classList.add('active');document.querySelectorAll('#sidenav a[onclick]').forEach(a=>a.classList.toggle('active',(a.getAttribute('onclick')||'').includes("'"+page+"'")));closeNav();if(location.hash.slice(1)!==page)history.replaceState(null,'','#'+page);window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})}
-addEventListener('scroll',()=>{document.getElementById('top').style.display=scrollY>500?'flex':'none'});
-function handleHash(){const initial=location.hash.slice(1);if(pages.includes(initial))goto(initial);else if(initial)goto('grile-51-60')}
-addEventListener('DOMContentLoaded',handleHash);
-addEventListener('hashchange',handleHash);
-</script>
+<script src="assets/js/chapters-data.js"></script>
+<script src="assets/js/legacy/quiz-navigation.js"></script>
 <script src="assets/js/grile-sistemul-nervos-data.js?v=20260907-quiz4"></script>
 <script src="assets/js/quiz-player.js?v=20260907-quiz4"></script>
 <script src="assets/js/chapter-redesign.js?v=20260907-nervous11"></script>

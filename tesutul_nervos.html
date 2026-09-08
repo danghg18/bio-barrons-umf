@@ -22,29 +22,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/tokens.css">
 <link rel="stylesheet" href="assets/css/lesson.css">
-<style>
-:root{--chapter-accent:#7C3AED;--chapter-accent-light:#F5F3FF;--chapter-accent-mid:#8B5CF6}
-.page-section{display:none}.page-section.active{display:block}
-</style>
+<link rel="stylesheet" href="assets/css/themes/nervous-system.css">
 <link rel="stylesheet" href="assets/css/chapter-redesign.css?v=20260727-highlighter6">
 </head>
 <body class="bb-chapter-redesign">
 <a class="lesson-skip" href="#lesson-content">Sari la conținutul lecției</a>
-<header class="lab-topbar"><div class="lab-topbar-inner"><a href="index.html" class="lab-brand" id="brand"><div class="lab-brand-mark">☰</div><span class="lab-brand-name">Biologie<span class="lab-brand-sub">.bb</span></span></a><nav class="lab-nav" aria-label="Navigare rapidă"><a href="#organizare" onclick="goto('organizare')">10.1 Organizare și celule</a><a href="#fiziologia-nervilor" onclick="goto('fiziologia-nervilor')">10.2 Fiziologia nervilor</a><a href="#sinapsa" onclick="goto('sinapsa')">10.3 Sinapsa</a></nav><a href="index.html" class="lab-topbar-back">← Toate capitolele</a></div></header>
-<div id="nav-overlay" onclick="closeNav()"></div>
+<header class="lab-topbar"><div class="lab-topbar-inner"><a href="index.html" class="lab-brand" id="brand"><div class="lab-brand-mark">☰</div><span class="lab-brand-name">Biologie<span class="lab-brand-sub">.bb</span></span></a><nav class="lab-nav" aria-label="Navigare rapidă"><a href="#organizare">10.1 Organizare și celule</a><a href="#fiziologia-nervilor">10.2 Fiziologia nervilor</a><a href="#sinapsa">10.3 Sinapsa</a></nav><a href="index.html" class="lab-topbar-back">← Toate capitolele</a></div></header>
+<div id="nav-overlay"></div>
 <div class="ch-layout">
 <nav id="sidenav" aria-label="Cuprinsul capitolului">
   <div class="nav-header"><div class="nav-chapter-badge">Capitol 10</div><div class="nav-chapter-title">Țesutul nervos</div></div>
   <div class="nav-group-label">Lecții</div>
-  <a href="#organizare" class="active" onclick="goto('organizare')">10.1 Organizarea și celulele sistemului nervos</a>
-  <a href="#fiziologia-nervilor" onclick="goto('fiziologia-nervilor')">10.2 Fiziologia nervilor</a>
-  <a href="#sinapsa" onclick="goto('sinapsa')">10.3 Sinapsa și neurotransmițătorii</a>
+  <a href="#organizare" class="active">10.1 Organizarea și celulele sistemului nervos</a>
+  <a href="#fiziologia-nervilor">10.2 Fiziologia nervilor</a>
+  <a href="#sinapsa">10.3 Sinapsa și neurotransmițătorii</a>
 </nav>
 
 <main id="lesson-content">
 <div class="page-section active" id="page-organizare">
   <div class="hero"><h1>10.1. Organizarea și celulele sistemului nervos</h1><p>Sistemul nervos are două componente principale: sistemul nervos central și sistemul nervos periferic.</p></div>
-  <div class="page-nav"><a class="outline" href="index.html">← Toate capitolele</a><a href="#fiziologia-nervilor" onclick="goto('fiziologia-nervilor')">10.2 Fiziologia nervilor →</a></div>
+  <div class="page-nav"><a class="outline" href="index.html">← Toate capitolele</a><a href="#fiziologia-nervilor">10.2 Fiziologia nervilor →</a></div>
 
   <section>
     <h2 class="section"><span class="sec-num">1</span>Rolul sistemului nervos</h2>
@@ -63,7 +60,7 @@
       <div class="box violet"><strong>De reținut</strong>Neuronii aferenți (senzitivi) transmit informația către SNC, pe când neuronii eferenți (motori) transmit informația către mușchi și glande.</div>
       <p>Porțiunile motorii ale SNP sunt subîmpărțite în <strong>componenta somatică</strong> și <strong>componenta autonomă (vegetativă)</strong>. Componenta somatică a SNP controlează mușchii scheletici, pe când cea autonomă controlează mușchii involuntari, mușchiul cardiac și glandele.</p>
       <p>Componenta autonomă a SNP prezintă două tipuri de nervi motori. Primul tip, <strong>nervii simpatici</strong>, transportă impulsuri către organe și determină reacții la situații de stres, precum reacția „fight or flight” („luptă sau fugi”). Cel de-al doilea tip, <strong>nervii parasimpatici</strong>, asigură o stare relaxată organismului și stimulează digestia.</p>
-      <figure class="fig"><img loading="lazy" decoding="async" src="img nervos/SNC_SNP_barrons.png.webp" alt="Sistemul nervos central și sistemul nervos periferic"><figcaption>Figura 10.1. Cele două componente principale ale sistemului nervos uman.</figcaption></figure>
+      <figure class="fig"><img loading="lazy" decoding="async" src="assets/images/chapters/nervous-tissue/snc-snp-barrons.png.webp" alt="Sistemul nervos central și sistemul nervos periferic"><figcaption>Figura 10.1. Cele două componente principale ale sistemului nervos uman.</figcaption></figure>
     </div>
   </section>
 
@@ -76,7 +73,7 @@
       <p><strong>Microgliile</strong> sunt celule gliale mici, dispersate în creier și în măduva spinării. Aceste celule acționează în cazul inflamațiilor sau al leziunilor, devenind mobile și fagocitând microorganismele.</p>
       <p>În SNP, <strong>celulele Schwann</strong> se înfășoară în jurul neuronilor localizați în afara sistemului nervos central. Ele sintetizează teaca de mielină ce acoperă neuronii din SNP.</p>
       <div class="box violet"><strong>De reținut</strong>În SNC, teaca de mielină este sintetizată de oligodendrocite, iar în SNP de către celulele Schwann.</div>
-      <figure class="fig"><img loading="lazy" decoding="async" src="img nervos/neuroni_cel_gliale_barrons.png.webp" alt="Relația dintre neuroni și celulele gliale în substanța cenușie și substanța albă"><figcaption>Figura 10.2. Neuronii și celulele gliale din sistemul nervos central. (a) Relația dintre cele două tipuri de celule în substanța cenușie a creierului și a măduvei spinării. (b) Relația dintre celule în substanța albă.</figcaption></figure>
+      <figure class="fig"><img loading="lazy" decoding="async" src="assets/images/chapters/nervous-tissue/neuroni-cel-gliale-barrons.png.webp" alt="Relația dintre neuroni și celulele gliale în substanța cenușie și substanța albă"><figcaption>Figura 10.2. Neuronii și celulele gliale din sistemul nervos central. (a) Relația dintre cele două tipuri de celule în substanța cenușie a creierului și a măduvei spinării. (b) Relația dintre celule în substanța albă.</figcaption></figure>
     </div>
   </section>
 
@@ -91,7 +88,7 @@
       <div class="box violet"><strong>De reținut</strong>Interneuronii se găsesc numai în SNC.</div>
       <p><strong>Corpul celular</strong> al neuronilor reprezintă doar un mic procent din volumul total al celulei. La acest nivel se găsește nucleul și, de asemenea, multe alte organite celulare precum mitocondrii, aparat Golgi și lizozomi. Un organit caracteristic pentru neuron sunt <strong>corpii Nissl</strong>, alcătuiți din reticul endoplasmatic rugos, în care se sintetizează proteine.</p>
       <p><strong>Dendritele</strong>, prelungiri foarte ramificate ale corpului celular, sunt specializate în recepționarea impulsurilor nervoase și transmiterea lor către corpul celular. Suprafața dendritelor prezintă multe formațiuni spinoase prin care ele realizează joncțiuni cu alți neuroni sau cu receptori senzoriali.</p>
-      <figure class="fig"><img loading="lazy" decoding="async" src="img nervos/tipuri_de_neuroni_barrons.png.webp" alt="Neuron multipolar, neuron bipolar și neuron pseudounipolar"><figcaption>Figura 10.3. O reprezentare a celor trei tipuri de neuroni prezenți în sistemul nervos. Neuronii multipolari (a) au numeroase prelungiri, neuronii bipolari (b) au două, iar cei pseudounipolari (c) au una singură, care apoi se ramifică. Detaliile structurii neuronului sunt prezentate în imaginea neuronului multipolar.</figcaption></figure>
+      <figure class="fig"><img loading="lazy" decoding="async" src="assets/images/chapters/nervous-tissue/tipuri-de-neuroni-barrons.png.webp" alt="Neuron multipolar, neuron bipolar și neuron pseudounipolar"><figcaption>Figura 10.3. O reprezentare a celor trei tipuri de neuroni prezenți în sistemul nervos. Neuronii multipolari (a) au numeroase prelungiri, neuronii bipolari (b) au două, iar cei pseudounipolari (c) au una singură, care apoi se ramifică. Detaliile structurii neuronului sunt prezentate în imaginea neuronului multipolar.</figcaption></figure>
       <p>Impulsurile sunt transmise dinspre corpul celular prin intermediul <strong>axonului</strong>. Axonul pornește dintr-o porțiune îngroșată a corpului celular, numită <strong>con de emergență</strong>. Citoplasma din interiorul axonului se numește <strong>axoplasmă</strong>, iar membrana sa, <strong>axolemă</strong>.</p>
       <p>Diametrul axonului este microscopic, dar lungimea sa poate atinge peste un metru. De exemplu, axonii care pornesc din porțiunea inferioară a măduvei spinării și ajung la nivelul labei piciorului pot avea o lungime de până la 1,2 m. Deseori, axonii mai multor neuroni se reunesc, alcătuind <strong>fibre nervoase</strong>, denumite în mod uzual <strong>nervi</strong>.</p>
       <p>La capătul distal, axonul prezintă mii de ramificații microscopice numite <strong>terminații axonale</strong>. Aceste terminații prezintă dilatări, numite <strong>butoni terminali</strong>. La nivelul acestora sunt eliberate, de către neuroni, substanțe chimice denumite <strong>neurotransmițători</strong>. Neurotransmițătorii transmit impulsurile nervoase de la neuron la mușchi, glande sau alți neuroni.</p>
@@ -103,7 +100,7 @@
     <div class="card">
       <p>Există două tipuri de celule responsabile de sinteza tecii izolatoare de mielină a neuronilor. În SNC, oligodendrocitele emit prelungiri, care se înfășoară în jurul axonilor sau dendritelor. În SNP, însuși corpul celulelor Schwann se înfășoară în jurul prelungirilor neuronului. În ambele cazuri, celulele produc o membrană stratificată numită <strong>teacă de mielină</strong>.</p>
       <p>Teaca de mielină izolează axonul. Este compusă în principal din <strong>mielină</strong>, o substanță lipidică de culoare albă, care este componenta principală a membranei oligodendrocitelor și a celulelor Schwann. Mielina izolează reacțiile electrochimice care conduc impulsurile nervoase de-a lungul axonilor. Fibrele mielinice conduc rapid impulsurile nervoase, pe când cele amielinice le conduc mai lent. În sistemul nervos central se găsesc atât axoni mielinici, cât și axoni amielinici.</p>
-      <figure class="fig"><img loading="lazy" decoding="async" src="img nervos/formarea_tecii_de_mielina_barrons.png.webp" alt="Formarea tecii de mielină de către celula Schwann"><figcaption>Figura 10.4. Formarea tecii de mielină pe măsură ce celula Schwann se înfășoară în jurul axonului, prezentată în imagini succesive (a), (b) și (c). Mielina este o substanță de culoare albă, bogată în lipide, din membrana celulei Schwann.</figcaption></figure>
+      <figure class="fig"><img loading="lazy" decoding="async" src="assets/images/chapters/nervous-tissue/formarea-tecii-de-mielina-barrons.png.webp" alt="Formarea tecii de mielină de către celula Schwann"><figcaption>Figura 10.4. Formarea tecii de mielină pe măsură ce celula Schwann se înfășoară în jurul axonului, prezentată în imagini succesive (a), (b) și (c). Mielina este o substanță de culoare albă, bogată în lipide, din membrana celulei Schwann.</figcaption></figure>
       <p>Oligodendrocitele și celulele Schwann își înfășoară membrana celulară în jurul axonilor și dendritelor pentru a forma teaca de mielină. Între două prelungiri succesive ale oligodendrocitelor, respectiv între două celule Schwann succesive, se găsesc spații denumite <strong>nodurile lui Ranvier</strong>. La nivelul acestora axonul nu prezintă mielină.</p>
       <p>Mielina este răspunzătoare pentru culoarea substanței albe din creier și din măduva spinării. Ea intră și în componența substanței albe a nervilor mielinici periferici. Deteriorarea mielinei în SNC poate da naștere unei afecțiuni denumită <strong>scleroză multiplă</strong>.</p>
       <p>Partea externă a tecii de mielină, care înconjoară axonii sau dendritele, se numește <strong>neurilemă</strong>. Neurilema are rol în regenerarea neuronilor lezați.</p>
@@ -121,7 +118,7 @@
 
 <div class="page-section" id="page-fiziologia-nervilor">
   <div class="hero"><h1>10.2. Fiziologia nervilor</h1><p>Sistemul nervos coordonează acele activități care atrag după ele răspunsul la stimuli.</p></div>
-  <div class="page-nav"><a href="#organizare" class="outline" onclick="goto('organizare')">← 10.1 Organizare și celule</a><a href="#sinapsa" onclick="goto('sinapsa')">10.3 Sinapsa și neurotransmițătorii →</a></div>
+  <div class="page-nav"><a href="#organizare" class="outline">← 10.1 Organizare și celule</a><a href="#sinapsa">10.3 Sinapsa și neurotransmițătorii →</a></div>
 
   <section>
     <h2 class="section"><span class="sec-num">1</span>Recepția, transmiterea, integrarea și răspunsul</h2>
@@ -138,7 +135,7 @@
       <p>Neuronii senzitivi, interneuronii și neuronii motori produc impulsuri nervoase pentru a transmite informații. Acești neuroni sunt organizați în <strong>circuite neuronale</strong>. Într-un astfel de circuit, neuronii sunt dispuși de așa manieră, încât axonul unui neuron se termină în apropierea dendritei următorului neuron, fără a o atinge. Joncțiunea dintre doi neuroni alăturați se numește <strong>sinapsă</strong>.</p>
       <p>Actul reflex, ce are ca bază anatomică <strong>arcul reflex</strong>, este un exemplu simplu de activitate nervoasă. Exemplul tipic de arc reflex este <strong>reflexul rotulian</strong>, în care apare extensia gambei la percutarea ligamentului patelar. Un alt exemplu este <strong>reflexul de retragere</strong>, în care un deget atins de un stimul dureros este retras imediat.</p>
       <p>Un reflex ia naștere când un neuron senzitiv recepționează un stimul. Este generat un impuls nervos, care este condus de neuronii senzitivi către interneuronii din sistemul nervos central, care au rol de centru de procesare. Interneuronii comunică cu neuronii motori, fiind generat un impuls, care va fi transmis unui efector, mușchi sau glandă, care va acționa în consecință. În reflexul de retragere, de exemplu, retragerea degetului este determinată de contracția mușchilor.</p>
-      <figure class="fig"><img loading="lazy" decoding="async" src="img nervos/arc_reflex_tipic_barrons.png.webp" alt="Arcul reflex tipic ilustrat prin reflexul de retragere"><figcaption>Figura 10.5. Un arc reflex tipic, ilustrat cu ajutorul reflexului de retragere. Impulsurile iau naștere la nivelul receptorilor dureroși și ajung la măduva spinării prin intermediul neuronilor senzitivi. Interneuronul interpretează impulsul și trimite un răspuns prin intermediul neuronului motor către mușchii efectori, care îndepărtează laba piciorului de stimulul dureros. Observați localizarea corpului celular al neuronului senzitiv, care se află în afara măduvei spinării, într-un ganglion, și pe cea a corpului neuronului motor, situat în măduva spinării.</figcaption></figure>
+      <figure class="fig"><img loading="lazy" decoding="async" src="assets/images/chapters/nervous-tissue/arc-reflex-tipic-barrons.png.webp" alt="Arcul reflex tipic ilustrat prin reflexul de retragere"><figcaption>Figura 10.5. Un arc reflex tipic, ilustrat cu ajutorul reflexului de retragere. Impulsurile iau naștere la nivelul receptorilor dureroși și ajung la măduva spinării prin intermediul neuronilor senzitivi. Interneuronul interpretează impulsul și trimite un răspuns prin intermediul neuronului motor către mușchii efectori, care îndepărtează laba piciorului de stimulul dureros. Observați localizarea corpului celular al neuronului senzitiv, care se află în afara măduvei spinării, într-un ganglion, și pe cea a corpului neuronului motor, situat în măduva spinării.</figcaption></figure>
       <div class="table-wrap">
         <table>
           <caption>Tabelul 10.1. Componentele unui arc reflex</caption>
@@ -163,7 +160,7 @@
       <p>După ce un receptor a fost stimulat, mesajul neuronal este transmis spre SNC prin intermediul unui neuron senzitiv. La originea impulsului nervos stă un eveniment electrochimic datorat modificării distribuției ionilor în celula nervoasă.</p>
       <p>După cum arată și numele, un neuron în repaus nu transmite impulsuri. Într-un neuron în repaus, suprafața externă a membranei celulare are o încărcătură electrică pozitivă, iar citoplasma din interior este electronegativă. Astfel, neuronul în repaus este <strong>polarizat</strong>, fiindcă suprafața internă și cea externă a membranei sale au sarcini electrice opuse. Fiind separate astfel, sarcinile electrice vor determina o acțiune în cazul în care diferența dintre sarcini se modifică. Această diferență se numește <strong>potențial de repaus</strong>.</p>
       <div class="box violet"><strong>De reținut</strong>Un neuron în repaus are o sarcină electrică negativă în interior și una pozitivă în exterior; el este polarizat.</div>
-      <figure class="fig"><img loading="lazy" decoding="async" src="img nervos/dezechilibru_ionic_barrons.png.webp" alt="Dezechilibrul ionic între interiorul și exteriorul unei celule nervoase"><figcaption>Figura 10.6. Dezechilibrul ionic între interiorul și exteriorul unei celule nervoase. Numărul mare de ioni negativi din celulă este pus pe seama moleculelor proteice. Numărul ionilor de sodiu din exteriorul celulei este mai mare decât cel al ionilor de potasiu, ceea ce contribuie la menținerea unei sarcini electrice pozitive în exteriorul celulei.</figcaption></figure>
+      <figure class="fig"><img loading="lazy" decoding="async" src="assets/images/chapters/nervous-tissue/dezechilibru-ionic-barrons.png.webp" alt="Dezechilibrul ionic între interiorul și exteriorul unei celule nervoase"><figcaption>Figura 10.6. Dezechilibrul ionic între interiorul și exteriorul unei celule nervoase. Numărul mare de ioni negativi din celulă este pus pe seama moleculelor proteice. Numărul ionilor de sodiu din exteriorul celulei este mai mare decât cel al ionilor de potasiu, ceea ce contribuie la menținerea unei sarcini electrice pozitive în exteriorul celulei.</figcaption></figure>
       <p>Potențialul de repaus reprezintă un dezechilibru între sarcinile electrice aflate de o parte și de alta a membranei celulare. Într-un neuron în repaus, potențialul de repaus este de aproximativ 70 de milivolți (mV). Prin convenție, acest potențial se exprimă ca <strong>-70 mV</strong> („electronegativ”), pentru că suprafața internă a membranei celulare are o sarcină electrică negativă față de cea pozitivă prezentă pe suprafața externă.</p>
       <p>Potențialul de repaus este rezultatul unui exces de ioni pozitivi în exteriorul membranei celulare, comparativ cu interiorul acesteia. Există, de asemenea, un ușor exces de ioni negativi în citoplasmă, care includ și ionii de fosfat organic. Proteinele citoplasmatice au, de asemenea, o sarcină electrică negativă. Concentrația <strong>ionilor de sodiu</strong> din exteriorul celulei este de peste 10 ori mai mare decât cea din interior, ceea ce îi conferă suprafeței externe a membranei celulare o sarcină pozitivă, comparativ cu interiorul.</p>
       <p>Dezechilibrul ionic din celulele nervoase se datorează mai multor factori. Un factor este reprezentat de o <strong>pompă de sodiu-potasiu</strong> foarte eficientă. Această pompă transportă câte trei ioni de sodiu în afara celulei, prin mecanisme de transport activ, și introduce în celulă câte doi ioni de potasiu. Pompa funcționează împotriva gradientului de concentrație al ionilor și, prin urmare, sunt necesare cantități mari de ATP pentru a furniza suficientă energie. Deoarece mai mulți ioni pozitivi sunt pompați în afara celulei decât sunt introduși în interiorul acesteia, intracelular apare o sarcină electrică negativă.</p>
@@ -176,7 +173,7 @@
     <div class="card">
       <p>Un impuls nervos se numește <strong>potențial de acțiune</strong>. La generarea unui potențial de acțiune, un stimul electric, mecanic sau chimic modifică potențialul de repaus prin deschiderea canalelor de sodiu, permițând intrarea ionilor de sodiu în celulă. Odată cu accesul ionilor de sodiu în celulă, membrana neuronului se <strong>depolarizează</strong>.</p>
       <p>În timpul depolarizării, potențialul de repaus se ridică până la valoarea de aproximativ <strong>-55 mV</strong>, care reprezintă intensitatea prag al unui impuls nervos. În acest moment, canalele de sodiu voltaj-dependente se deschid și un număr și mai mare de ioni de sodiu pătrunde rapid în celulă. Acest influx durează o miime de secundă, apoi canalele se închid. Valoarea potențialului de repaus continuă să crească până la aproximativ <strong>+35 mV</strong> („pozitiv”), având loc o inversare temporară a polarității.</p>
-      <figure class="fig"><img loading="lazy" decoding="async" src="img nervos/transmiter_PA_barrons.png.webp" alt="Propagarea potențialului de acțiune de-a lungul axonului"><figcaption>Figura 10.7. Potențialul de acțiune al unei celule nervoase. (a) Un stimul este aplicat membranei și ionii de sodiu (+) pătrund în celulă; membrana celulară își pierde polaritatea, generând astfel un potențial de acțiune. (b) Membrana adiacentă este depolarizată, iar potențialul de acțiune se propagă; între timp, zona inițială se repolarizează prin acumularea de ioni de potasiu (+), fiind pregătită pentru declanșarea unui nou impuls. (c) Potențialul de acțiune se propagă de-a lungul axonului pe măsură ce sunt depolarizate zone succesive ale membranei.</figcaption></figure>
+      <figure class="fig"><img loading="lazy" decoding="async" src="assets/images/chapters/nervous-tissue/transmiter-pa-barrons.png.webp" alt="Propagarea potențialului de acțiune de-a lungul axonului"><figcaption>Figura 10.7. Potențialul de acțiune al unei celule nervoase. (a) Un stimul este aplicat membranei și ionii de sodiu (+) pătrund în celulă; membrana celulară își pierde polaritatea, generând astfel un potențial de acțiune. (b) Membrana adiacentă este depolarizată, iar potențialul de acțiune se propagă; între timp, zona inițială se repolarizează prin acumularea de ioni de potasiu (+), fiind pregătită pentru declanșarea unui nou impuls. (c) Potențialul de acțiune se propagă de-a lungul axonului pe măsură ce sunt depolarizate zone succesive ale membranei.</figcaption></figure>
       <p>Dacă potențialul de acțiune este suficient de puternic pentru a depolariza zona învecinată a membranei prin deschiderea mai multor canale de sodiu voltaj-dependente, acea zonă se va depolariza și procesul se repetă. Astfel, o <strong>undă de depolarizare</strong> se propagă ca o reacție în lanț. Unda „călătorește” de-a lungul neuronului și reprezintă potențialul de acțiune, sau impulsul nervos.</p>
       <div class="box violet"><strong>De reținut</strong>O zonă activată a unui neuron are o sarcină pozitivă datorită influxului de ioni de sodiu; ea este depolarizată.</div>
       <p>După ce potențialul de acțiune a părăsit zona inițială, membrana începe să se <strong>repolarizeze</strong>. Canalele de sodiu se închid, iar cele de potasiu se deschid, declanșând ieșirea potasiului din celulă. Astfel, sarcina din exterior redevine pozitivă și membrana se repolarizează. Întregul ciclu depolarizare-repolarizare are loc în mai puțin de o milisecundă.</p>
@@ -191,14 +188,14 @@
       <p>Teaca de mielină sintetizată de către oligodendrocite în SNC și celulele Schwann în SNP permite o transmitere mai rapidă a impulsului nervos de-a lungul axonilor și/sau dendritelor mielinizate.</p>
       <p>Deoarece ionii nu pot pătrunde sau ieși din neuron decât la nivelul nodurilor Ranvier prezente între celulele Schwann sau între prelungirile oligodendrocitelor, impulsul „sare” de la nod la nod în loc să progreseze constant de-a lungul neuronului. Acest fenomen poartă numele de <strong>propagare (conducere) saltatorie</strong>.</p>
       <p>Conducerea saltatorie mărește considerabil viteza impulsurilor, permițând reacții mai rapide la stimuli. De exemplu, reacțiile reflexe necesită neuroni mielinici în SNP pentru a putea avea o viteză de reacție mai mare.</p>
-      <figure class="fig"><img loading="lazy" decoding="async" src="img nervos/neuron_amielinic_mielinic_barrons.png.webp" alt="Comparație între propagarea impulsului într-un neuron amielinic și într-un neuron mielinic"><figcaption>Figura 10.8. O comparație între propagarea impulsurilor în neuronii mielinici și cei amielinici. Observați cu cât este mai mare distanța parcursă de impuls în neuronul mielinizat, în aceeași unitate de timp. (a) Conducere continuă. (b) Conducere saltatorie.</figcaption></figure>
+      <figure class="fig"><img loading="lazy" decoding="async" src="assets/images/chapters/nervous-tissue/neuron-amielinic-mielinic-barrons.png.webp" alt="Comparație între propagarea impulsului într-un neuron amielinic și într-un neuron mielinic"><figcaption>Figura 10.8. O comparație între propagarea impulsurilor în neuronii mielinici și cei amielinici. Observați cu cât este mai mare distanța parcursă de impuls în neuronul mielinizat, în aceeași unitate de timp. (a) Conducere continuă. (b) Conducere saltatorie.</figcaption></figure>
     </div>
   </section>
 </div>
 
 <div class="page-section" id="page-sinapsa">
   <div class="hero"><h1>10.3. Sinapsa și neurotransmițătorii</h1><p>Sinapsa reprezintă joncțiunea dintre doi neuroni sau dintre un neuron și un efector: mușchi sau glandă.</p></div>
-  <div class="page-nav"><a href="#fiziologia-nervilor" class="outline" onclick="goto('fiziologia-nervilor')">← 10.2 Fiziologia nervilor</a><a href="index.html">Toate capitolele</a></div>
+  <div class="page-nav"><a href="#fiziologia-nervilor" class="outline">← 10.2 Fiziologia nervilor</a><a href="index.html">Toate capitolele</a></div>
 
   <section>
     <h2 class="section"><span class="sec-num">1</span>Sinapsa</h2>
@@ -215,7 +212,7 @@
     <div class="card">
       <p>Neurotransmițătorii sunt sintetizați continuu și se găsesc în butonii terminali ai axonilor. La acest nivel, ei sunt stocați în vezicule delimitate de o membrană, numite <strong>vezicule sinaptice</strong>.</p>
       <p>Când un impuls nervos ajunge la butonul terminal, canalele de calciu voltaj-dependente se deschid și ionii de calciu din exterior pătrund în axon, determinând eliberarea neurotransmițătorilor din veziculele sinaptice prin exocitoză, la nivelul <strong>membranei presinaptice</strong>.</p>
-      <figure class="fig"><img loading="lazy" decoding="async" src="img nervos/activitatea_sinaptica_barrons.png.webp" alt="Activitatea sinaptică și eliberarea neurotransmițătorilor"><figcaption>Figura 10.9. Activitatea sinaptică. Atunci când un potențial de acțiune ajunge la capătul axonului, moleculele de neurotransmițător (precum acetilcolina) sunt eliberate din veziculele sinaptice prin exocitoză, la nivelul membranei presinaptice. Moleculele traversează fanta sinaptică și se leagă de receptorii de pe suprafața membranei postsinaptice. Acest fenomen generează un potențial de acțiune în neuronul postsinaptic.</figcaption></figure>
+      <figure class="fig"><img loading="lazy" decoding="async" src="assets/images/chapters/nervous-tissue/activitatea-sinaptica-barrons.png.webp" alt="Activitatea sinaptică și eliberarea neurotransmițătorilor"><figcaption>Figura 10.9. Activitatea sinaptică. Atunci când un potențial de acțiune ajunge la capătul axonului, moleculele de neurotransmițător (precum acetilcolina) sunt eliberate din veziculele sinaptice prin exocitoză, la nivelul membranei presinaptice. Moleculele traversează fanta sinaptică și se leagă de receptorii de pe suprafața membranei postsinaptice. Acest fenomen generează un potențial de acțiune în neuronul postsinaptic.</figcaption></figure>
       <p>După ce difuzează în fanta sinaptică, neurotransmițătorii se leagă de receptorii aflați pe membrana dendritelor următorului neuron (<strong>membrana postsinaptică</strong>). Acești receptori sunt niște molecule proteice, care formează canale ionice. Aceste canale se deschid și permit intrarea ionilor de sodiu în dendrită. Dacă există un influx suficient de sodiu, are loc depolarizarea și este generat un nou impuls nervos.</p>
     </div>
   </section>
@@ -248,16 +245,9 @@
 
 </main>
 </div>
-<button id="top" onclick="scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})" aria-label="Înapoi sus">↑</button>
-<script>
-const pages=['organizare','fiziologia-nervilor','sinapsa'];
-function closeNav(){document.getElementById('sidenav').classList.remove('open');document.getElementById('nav-overlay').classList.remove('open')}
-function goto(page){if(!pages.includes(page))page='organizare';document.querySelectorAll('.page-section').forEach(s=>s.classList.remove('active'));document.getElementById('page-'+page)?.classList.add('active');document.querySelectorAll('#sidenav a').forEach(a=>a.classList.toggle('active',(a.getAttribute('onclick')||'').includes("'"+page+"'")));closeNav();if(location.hash.slice(1)!==page)history.replaceState(null,'','#'+page);window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})}
-addEventListener('scroll',()=>{document.getElementById('top').style.display=scrollY>500?'flex':'none'});
-function handleHash(){const initial=location.hash.slice(1);if(pages.includes(initial))goto(initial);else if(initial)goto('organizare')}
-addEventListener('DOMContentLoaded',handleHash);
-addEventListener('hashchange',handleHash);
-</script>
+<button id="top" aria-label="Înapoi sus">↑</button>
+<script src="assets/js/chapters-data.js"></script>
+<script src="assets/js/lesson.js?v=20260907-router1"></script>
 <script src="assets/js/chapter-redesign.js?v=20260907-nervous11"></script>
 </body>
 </html>

@@ -1,0 +1,15 @@
+{
+  "name": "bio-barrons-umf",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate-site-assets.mjs",
+    "generate:check": "node scripts/generate-site-assets.mjs --check",
+    "validate": "node scripts/validate-site.mjs",
+    "test:smoke": "node scripts/smoke-test.mjs",
+    "test": "npm run generate:check && npm run validate && npm run test:smoke"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
+  }
+}
