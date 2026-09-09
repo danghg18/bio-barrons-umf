@@ -1,0 +1,618 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-09T15:37:14.734448+00:00",
+  "title": "Design System: Barron's Biologie – UMF Cluj",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Primary",
+        "tonalRamp": [
+          "oklch(15% 0.2152 262.88)",
+          "oklch(26% 0.2152 262.88)",
+          "oklch(38% 0.2152 262.88)",
+          "oklch(49% 0.2152 262.88)",
+          "oklch(61% 0.2152 262.88)",
+          "oklch(72% 0.2152 262.88)",
+          "oklch(84% 0.2152 262.88)",
+          "oklch(95% 0.2152 262.88)"
+        ]
+      },
+      "primary-light": {
+        "role": "primary",
+        "displayName": "Primary Light",
+        "tonalRamp": [
+          "oklch(15% 0.0142 254.60)",
+          "oklch(26% 0.0142 254.60)",
+          "oklch(38% 0.0142 254.60)",
+          "oklch(49% 0.0142 254.60)",
+          "oklch(61% 0.0142 254.60)",
+          "oklch(72% 0.0142 254.60)",
+          "oklch(84% 0.0142 254.60)",
+          "oklch(95% 0.0142 254.60)"
+        ]
+      },
+      "primary-mid": {
+        "role": "primary",
+        "displayName": "Primary Mid",
+        "tonalRamp": [
+          "oklch(15% 0.1880 259.81)",
+          "oklch(26% 0.1880 259.81)",
+          "oklch(38% 0.1880 259.81)",
+          "oklch(49% 0.1880 259.81)",
+          "oklch(61% 0.1880 259.81)",
+          "oklch(72% 0.1880 259.81)",
+          "oklch(84% 0.1880 259.81)",
+          "oklch(95% 0.1880 259.81)"
+        ]
+      },
+      "primary-dark": {
+        "role": "primary",
+        "displayName": "Primary Dark",
+        "tonalRamp": [
+          "oklch(15% 0.2172 264.38)",
+          "oklch(26% 0.2172 264.38)",
+          "oklch(38% 0.2172 264.38)",
+          "oklch(49% 0.2172 264.38)",
+          "oklch(61% 0.2172 264.38)",
+          "oklch(72% 0.2172 264.38)",
+          "oklch(84% 0.2172 264.38)",
+          "oklch(95% 0.2172 264.38)"
+        ]
+      },
+      "emerald": {
+        "role": "secondary",
+        "displayName": "Emerald",
+        "tonalRamp": [
+          "oklch(15% 0.1274 163.23)",
+          "oklch(26% 0.1274 163.23)",
+          "oklch(38% 0.1274 163.23)",
+          "oklch(49% 0.1274 163.23)",
+          "oklch(61% 0.1274 163.23)",
+          "oklch(72% 0.1274 163.23)",
+          "oklch(84% 0.1274 163.23)",
+          "oklch(95% 0.1274 163.23)"
+        ]
+      },
+      "emerald-light": {
+        "role": "secondary",
+        "displayName": "Emerald Light",
+        "tonalRamp": [
+          "oklch(15% 0.0207 166.11)",
+          "oklch(26% 0.0207 166.11)",
+          "oklch(38% 0.0207 166.11)",
+          "oklch(49% 0.0207 166.11)",
+          "oklch(61% 0.0207 166.11)",
+          "oklch(72% 0.0207 166.11)",
+          "oklch(84% 0.0207 166.11)",
+          "oklch(95% 0.0207 166.11)"
+        ]
+      },
+      "teal": {
+        "role": "secondary",
+        "displayName": "Teal",
+        "tonalRamp": [
+          "oklch(15% 0.1109 221.72)",
+          "oklch(26% 0.1109 221.72)",
+          "oklch(38% 0.1109 221.72)",
+          "oklch(49% 0.1109 221.72)",
+          "oklch(61% 0.1109 221.72)",
+          "oklch(72% 0.1109 221.72)",
+          "oklch(84% 0.1109 221.72)",
+          "oklch(95% 0.1109 221.72)"
+        ]
+      },
+      "teal-light": {
+        "role": "secondary",
+        "displayName": "Teal Light",
+        "tonalRamp": [
+          "oklch(15% 0.0189 200.87)",
+          "oklch(26% 0.0189 200.87)",
+          "oklch(38% 0.0189 200.87)",
+          "oklch(49% 0.0189 200.87)",
+          "oklch(61% 0.0189 200.87)",
+          "oklch(72% 0.0189 200.87)",
+          "oklch(84% 0.0189 200.87)",
+          "oklch(95% 0.0189 200.87)"
+        ]
+      },
+      "violet": {
+        "role": "secondary",
+        "displayName": "Violet",
+        "tonalRamp": [
+          "oklch(15% 0.2466 293.01)",
+          "oklch(26% 0.2466 293.01)",
+          "oklch(38% 0.2466 293.01)",
+          "oklch(49% 0.2466 293.01)",
+          "oklch(61% 0.2466 293.01)",
+          "oklch(72% 0.2466 293.01)",
+          "oklch(84% 0.2466 293.01)",
+          "oklch(95% 0.2466 293.01)"
+        ]
+      },
+      "violet-light": {
+        "role": "secondary",
+        "displayName": "Violet Light",
+        "tonalRamp": [
+          "oklch(15% 0.0161 293.76)",
+          "oklch(26% 0.0161 293.76)",
+          "oklch(38% 0.0161 293.76)",
+          "oklch(49% 0.0161 293.76)",
+          "oklch(61% 0.0161 293.76)",
+          "oklch(72% 0.0161 293.76)",
+          "oklch(84% 0.0161 293.76)",
+          "oklch(95% 0.0161 293.76)"
+        ]
+      },
+      "rose": {
+        "role": "secondary",
+        "displayName": "Rose",
+        "tonalRamp": [
+          "oklch(15% 0.2220 17.58)",
+          "oklch(26% 0.2220 17.58)",
+          "oklch(38% 0.2220 17.58)",
+          "oklch(49% 0.2220 17.58)",
+          "oklch(61% 0.2220 17.58)",
+          "oklch(72% 0.2220 17.58)",
+          "oklch(84% 0.2220 17.58)",
+          "oklch(95% 0.2220 17.58)"
+        ]
+      },
+      "rose-light": {
+        "role": "secondary",
+        "displayName": "Rose Light",
+        "tonalRamp": [
+          "oklch(15% 0.0152 12.42)",
+          "oklch(26% 0.0152 12.42)",
+          "oklch(38% 0.0152 12.42)",
+          "oklch(49% 0.0152 12.42)",
+          "oklch(61% 0.0152 12.42)",
+          "oklch(72% 0.0152 12.42)",
+          "oklch(84% 0.0152 12.42)",
+          "oklch(95% 0.0152 12.42)"
+        ]
+      },
+      "orange": {
+        "role": "secondary",
+        "displayName": "Orange",
+        "tonalRamp": [
+          "oklch(15% 0.1943 41.12)",
+          "oklch(26% 0.1943 41.12)",
+          "oklch(38% 0.1943 41.12)",
+          "oklch(49% 0.1943 41.12)",
+          "oklch(61% 0.1943 41.12)",
+          "oklch(72% 0.1943 41.12)",
+          "oklch(84% 0.1943 41.12)",
+          "oklch(95% 0.1943 41.12)"
+        ]
+      },
+      "orange-light": {
+        "role": "secondary",
+        "displayName": "Orange Light",
+        "tonalRamp": [
+          "oklch(15% 0.0158 73.68)",
+          "oklch(26% 0.0158 73.68)",
+          "oklch(38% 0.0158 73.68)",
+          "oklch(49% 0.0158 73.68)",
+          "oklch(61% 0.0158 73.68)",
+          "oklch(72% 0.0158 73.68)",
+          "oklch(84% 0.0158 73.68)",
+          "oklch(95% 0.0158 73.68)"
+        ]
+      },
+      "amber": {
+        "role": "secondary",
+        "displayName": "Amber",
+        "tonalRamp": [
+          "oklch(15% 0.1574 58.32)",
+          "oklch(26% 0.1574 58.32)",
+          "oklch(38% 0.1574 58.32)",
+          "oklch(49% 0.1574 58.32)",
+          "oklch(61% 0.1574 58.32)",
+          "oklch(72% 0.1574 58.32)",
+          "oklch(84% 0.1574 58.32)",
+          "oklch(95% 0.1574 58.32)"
+        ]
+      },
+      "amber-light": {
+        "role": "secondary",
+        "displayName": "Amber Light",
+        "tonalRamp": [
+          "oklch(15% 0.0214 95.28)",
+          "oklch(26% 0.0214 95.28)",
+          "oklch(38% 0.0214 95.28)",
+          "oklch(49% 0.0214 95.28)",
+          "oklch(61% 0.0214 95.28)",
+          "oklch(72% 0.0214 95.28)",
+          "oklch(84% 0.0214 95.28)",
+          "oklch(95% 0.0214 95.28)"
+        ]
+      },
+      "slate-900": {
+        "role": "neutral",
+        "displayName": "Slate 900",
+        "tonalRamp": [
+          "#0F172A",
+          "#1E293B",
+          "#334155",
+          "#475569",
+          "#94A3B8",
+          "#CBD5E1",
+          "#F1F5F9",
+          "#F8FAFC"
+        ]
+      },
+      "slate-800": {
+        "role": "neutral",
+        "displayName": "Slate 800",
+        "tonalRamp": [
+          "#0F172A",
+          "#1E293B",
+          "#334155",
+          "#475569",
+          "#94A3B8",
+          "#CBD5E1",
+          "#F1F5F9",
+          "#F8FAFC"
+        ]
+      },
+      "slate-700": {
+        "role": "neutral",
+        "displayName": "Slate 700",
+        "tonalRamp": [
+          "#0F172A",
+          "#1E293B",
+          "#334155",
+          "#475569",
+          "#94A3B8",
+          "#CBD5E1",
+          "#F1F5F9",
+          "#F8FAFC"
+        ]
+      },
+      "slate-600": {
+        "role": "neutral",
+        "displayName": "Slate 600",
+        "tonalRamp": [
+          "#0F172A",
+          "#1E293B",
+          "#334155",
+          "#475569",
+          "#94A3B8",
+          "#CBD5E1",
+          "#F1F5F9",
+          "#F8FAFC"
+        ]
+      },
+      "slate-500": {
+        "role": "neutral",
+        "displayName": "Slate 500",
+        "tonalRamp": [
+          "#0F172A",
+          "#1E293B",
+          "#334155",
+          "#475569",
+          "#94A3B8",
+          "#CBD5E1",
+          "#F1F5F9",
+          "#F8FAFC"
+        ]
+      },
+      "slate-400": {
+        "role": "neutral",
+        "displayName": "Slate 400",
+        "tonalRamp": [
+          "#0F172A",
+          "#1E293B",
+          "#334155",
+          "#475569",
+          "#94A3B8",
+          "#CBD5E1",
+          "#F1F5F9",
+          "#F8FAFC"
+        ]
+      },
+      "slate-300": {
+        "role": "neutral",
+        "displayName": "Slate 300",
+        "tonalRamp": [
+          "#0F172A",
+          "#1E293B",
+          "#334155",
+          "#475569",
+          "#94A3B8",
+          "#CBD5E1",
+          "#F1F5F9",
+          "#F8FAFC"
+        ]
+      },
+      "slate-200": {
+        "role": "neutral",
+        "displayName": "Slate 200",
+        "tonalRamp": [
+          "#0F172A",
+          "#1E293B",
+          "#334155",
+          "#475569",
+          "#94A3B8",
+          "#CBD5E1",
+          "#F1F5F9",
+          "#F8FAFC"
+        ]
+      },
+      "slate-100": {
+        "role": "neutral",
+        "displayName": "Slate 100",
+        "tonalRamp": [
+          "#0F172A",
+          "#1E293B",
+          "#334155",
+          "#475569",
+          "#94A3B8",
+          "#CBD5E1",
+          "#F1F5F9",
+          "#F8FAFC"
+        ]
+      },
+      "slate-50": {
+        "role": "neutral",
+        "displayName": "Slate 50",
+        "tonalRamp": [
+          "#0F172A",
+          "#1E293B",
+          "#334155",
+          "#475569",
+          "#94A3B8",
+          "#CBD5E1",
+          "#F1F5F9",
+          "#F8FAFC"
+        ]
+      },
+      "bg-page": {
+        "role": "neutral",
+        "displayName": "Bg Page",
+        "tonalRamp": [
+          "#0F172A",
+          "#1E293B",
+          "#334155",
+          "#475569",
+          "#94A3B8",
+          "#CBD5E1",
+          "#F1F5F9",
+          "#F8FAFC"
+        ]
+      },
+      "bg-surface": {
+        "role": "neutral",
+        "displayName": "Bg Surface",
+        "tonalRamp": [
+          "#0F172A",
+          "#1E293B",
+          "#334155",
+          "#475569",
+          "#94A3B8",
+          "#CBD5E1",
+          "#F1F5F9",
+          "#F8FAFC"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Border",
+        "tonalRamp": [
+          "#0F172A",
+          "#1E293B",
+          "#334155",
+          "#475569",
+          "#94A3B8",
+          "#CBD5E1",
+          "#F1F5F9",
+          "#F8FAFC"
+        ]
+      },
+      "border-strong": {
+        "role": "neutral",
+        "displayName": "Border Strong",
+        "tonalRamp": [
+          "#0F172A",
+          "#1E293B",
+          "#334155",
+          "#475569",
+          "#94A3B8",
+          "#CBD5E1",
+          "#F1F5F9",
+          "#F8FAFC"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Implemented display role; see DESIGN.md for responsive usage."
+      },
+      "editorial": {
+        "displayName": "Editorial",
+        "purpose": "Selective homepage italic, font-style: italic."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Implemented headline role; see DESIGN.md for responsive usage."
+      },
+      "content-heading": {
+        "displayName": "Content Heading",
+        "purpose": "Implemented content heading role; see DESIGN.md for responsive usage."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Implemented body role; see DESIGN.md for responsive usage."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Implemented label role; see DESIGN.md for responsive usage."
+      }
+    },
+    "shadows": [
+      {
+        "name": "reading-surfaces",
+        "value": "none",
+        "purpose": "Default cards, categories and actions."
+      },
+      {
+        "name": "mobile-drawer",
+        "value": "16px 0 36px rgba(15, 23, 42, 0.18)",
+        "purpose": "Temporary lesson navigation overlay."
+      },
+      {
+        "name": "toast",
+        "value": "0 12px 28px rgba(15, 23, 42, 0.22)",
+        "purpose": "Transient lesson feedback."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-default",
+        "value": "cubic-bezier(.4, 0, .2, 1)",
+        "purpose": "Core state-transition token."
+      },
+      {
+        "name": "dur-fast",
+        "value": ".15s",
+        "purpose": "Core state-transition token."
+      },
+      {
+        "name": "dur-base",
+        "value": ".2s",
+        "purpose": "Core state-transition token."
+      },
+      {
+        "name": "dur-slow",
+        "value": ".3s",
+        "purpose": "Core state-transition token."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "640px"
+      },
+      {
+        "name": "lesson-stack",
+        "value": "700px"
+      },
+      {
+        "name": "home-stack",
+        "value": "900px"
+      },
+      {
+        "name": "drawer",
+        "value": "1024px"
+      },
+      {
+        "name": "home-compact",
+        "value": "1100px"
+      },
+      {
+        "name": "lesson-compact",
+        "value": "1240px"
+      },
+      {
+        "name": "narrow-phone",
+        "value": "430px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Homepage starting action.",
+      "html": "<button class=\"ds-primary\">Începe cu Capitolul 1</button>",
+      "css": ".ds-primary{font-family:var(--font-display, Figtree, system-ui, sans-serif);min-height:46px;padding:11px 18px;border:0;border-radius:10px;background:var(--primary,#2563EB);color:var(--bg-surface,#FFFFFF);font-size:14px;font-weight:700;cursor:pointer;transition:background-color 160ms ease;}.ds-primary:hover{background:var(--primary-dark,#1D4ED8);}.ds-primary:focus-visible{outline:2px solid var(--primary,#2563EB);outline-offset:2px;}"
+    },
+    {
+      "name": "Secondary Action",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Supporting curriculum action.",
+      "html": "<button class=\"ds-secondary\">Vezi toate capitolele</button>",
+      "css": ".ds-secondary{font-family:var(--font-display, Figtree, system-ui, sans-serif);min-height:46px;padding:11px 18px;border:1px solid var(--border,#DCE3EC);border-radius:10px;background:transparent;color:var(--fg-2,#334155);font-size:14px;font-weight:700;cursor:pointer;transition:background-color 160ms ease,border-color 160ms ease;}.ds-secondary:hover{background:#e9eef5;border-color:var(--border-strong,#C8D2DF);}.ds-secondary:focus-visible{outline:2px solid var(--primary,#2563EB);outline-offset:2px;}"
+    },
+    {
+      "name": "Search Input",
+      "kind": "input",
+      "refersTo": "search-field",
+      "description": "Input within the search palette.",
+      "html": "<label class=\"ds-search\"><span>Caută în lecție</span><input type=\"search\" placeholder=\"Caută un termen…\"></label>",
+      "css": ".ds-search{font-family:var(--font-display, Figtree, system-ui, sans-serif);display:block;color:var(--fg-3,#64748B);background:var(--bg-surface,#FFFFFF);padding:10px 14px;border:1px solid var(--border,#DCE3EC);border-radius:12px;}.ds-search span{display:block;font-size:.84rem;}.ds-search input{font-family:var(--font-display, Figtree, system-ui, sans-serif);display:block;min-height:44px;width:100%;border:0;background:transparent;color:var(--fg-1,#0F172A);font-size:16px;}.ds-search input:hover{background:var(--bg-sunken,#F8FAFC);}.ds-search input:focus-visible{outline:2px solid var(--primary,#2563EB);outline-offset:2px;}"
+    },
+    {
+      "name": "Active Chapter Navigation",
+      "kind": "nav",
+      "refersTo": "navigation-active",
+      "description": "Current lesson section with a start rule.",
+      "html": "<a class=\"ds-nav\" href=\"#section\" aria-current=\"page\">Membrana celulară</a>",
+      "css": ".ds-nav{font-family:var(--font-display, Figtree, system-ui, sans-serif);display:flex;align-items:center;min-height:44px;padding:.65rem .78rem;border-inline-start:2px solid var(--primary,#2563EB);background:var(--bg-surface,#FFFFFF);color:var(--fg-1,#0F172A);font-size:.84rem;font-weight:700;line-height:1.3;text-decoration:none;}.ds-nav:hover{background:var(--primary-light,#EFF6FF);}.ds-nav:focus-visible{outline:2px solid var(--primary,#2563EB);outline-offset:2px;}"
+    },
+    {
+      "name": "Chapter Term",
+      "kind": "chip",
+      "refersTo": "chapter-term",
+      "description": "A compact term in a blue chapter context.",
+      "html": "<span class=\"ds-term\">Membrană</span>",
+      "css": ".ds-term{font-family:var(--font-display, Figtree, system-ui, sans-serif);display:inline-flex;align-items:center;min-height:28px;padding:4px 9px;border:1px solid color-mix(in srgb,var(--primary,#2563EB) 28%,#d7dee8);border-radius:7px;background:var(--primary-light,#EFF6FF);color:var(--primary,#2563EB);font-size:.78rem;font-weight:700;line-height:1.2;}"
+    },
+    {
+      "name": "Reading Surface",
+      "kind": "card",
+      "refersTo": "reading-card",
+      "description": "Flat lesson content container; specimen text is not authored lesson content.",
+      "html": "<article class=\"ds-card\"><h2>Structura celulei</h2><p>Exemplu de ierarhie pentru textul unei lecții.</p></article>",
+      "css": ".ds-card{font-family:var(--font-display, Figtree, system-ui, sans-serif);padding:24px 28px;border:1px solid var(--border,#DCE3EC);border-radius:12px;background:var(--bg-surface,#FFFFFF);color:var(--fg-2,#334155);}.ds-card h2{margin:0 0 .85rem;color:var(--fg-1,#0F172A);font-size:1.35rem;font-weight:900;line-height:1.25;letter-spacing:-.025em;}.ds-card p{max-width:70ch;margin:0;font-size:1rem;line-height:1.72;}"
+    },
+    {
+      "name": "Numbered Chapter Row",
+      "kind": "custom",
+      "refersTo": "chapter-map-row",
+      "description": "Ruled chapter outline destination.",
+      "html": "<a class=\"ds-row\" href=\"#section\"><span>01</span>Structura celulei</a>",
+      "css": ".ds-row{font-family:var(--font-display, Figtree, system-ui, sans-serif);position:relative;display:block;min-height:74px;padding:17px 16px 17px 62px;border-bottom:1px solid var(--border,#DCE3EC);color:var(--fg-2,#334155);font-size:.92rem;line-height:1.55;text-decoration:none;transition:background-color 160ms ease;}.ds-row span{position:absolute;left:16px;color:var(--primary,#2563EB);font-weight:800;}.ds-row:hover{background:var(--bg-sunken,#F8FAFC);}.ds-row:focus-visible{outline:2px solid var(--primary,#2563EB);outline-offset:2px;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Editorial Biology Textbook",
+    "overview": "The interface is a premium editorial Romanian biology textbook: cool paper, navy ink, precise rules and a restrained blue accent. Figtree gives navigation and educational prose one coherent voice; a selective Fraunces italic supplies the homepage’s editorial signature.\n\nReading hierarchy comes from type, spacing, figures and meaningful grouping. Chapter outlines read as numbered contents lists, and controls remain quiet but clear. The light-only surface supports sustained study without turning publication availability into a claim about a student’s learning progress.",
+    "keyCharacteristics": [
+      "Cool paper and navy ink with restrained blue interaction.",
+      "Figtree for UI and body, selective Fraunces italic for editorial emphasis.",
+      "Flat reading surfaces, fine rules and numbered contents.",
+      "Readable Romanian text, responsive tables and practical touch controls."
+    ],
+    "rules": [
+      {
+        "name": "The Selective Italic Rule",
+        "body": "Use Fraunces italic selectively for the blue homepage word “rescrisă.” Keep lesson prose, navigation, labels and controls in Figtree.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Reading Rule",
+        "body": "Use spacing, fine borders and surface tone to structure reading. Reserve shadows for temporary overlays and feedback.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve Romanian diacritics, authored explanations, figures and semantic table relationships.",
+      "Do use the canonical core tokens and the established surface-specific aliases.",
+      "Do keep prose near 70ch where the lesson layout permits and let figures and tables use the wider content area.",
+      "Do maintain visible keyboard focus, accessible search, reduced-motion behavior and readable phone layouts.",
+      "Do describe chapter counts as publication availability; keep existing quiz results distinct from study progress."
+    ],
+    "donts": [
+      "Don’t introduce Noto Sans or a second body font into the current visual system.",
+      "Don’t turn curriculum lists into floating decorative card grids or add ornamental gradients.",
+      "Don’t obscure phone reading with floating controls; the lesson return-to-top action stays in document flow on small screens.",
+      "Don’t use color alone for quiz correctness, selected controls or navigation state.",
+      "Don’t add study-progress tracking, persistence claims or roadmap features through visual documentation."
+    ]
+  }
+}

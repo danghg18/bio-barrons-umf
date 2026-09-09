@@ -23,3 +23,9 @@ npm test
 5. Run `npm run generate`, then `npm test`. The registry drives homepage publication/search state and themes; the generator updates the sitemap and service-worker inventory, so those files do not need hand editing.
 
 Keep existing `.html` URLs and section hashes stable. Treat lesson prose, figures, tables, quiz questions, answer keys, and explanations as reviewed educational content rather than infrastructure text.
+
+## Interface and regression evidence
+
+The interface is intentionally light-only. Figtree owns reading and controls; Fraunces Italic supplies the homepage accent. See [the UI redesign record](docs/ui-redesign.md) for component ownership, compatibility boundaries, verified behavior, and rollback guidance.
+
+`npm test` includes `npm run test:ui`: every lesson route at ten viewport sizes, protected-content fingerprints, both fonts, legacy theme preferences, storage failure, tables, and keyboard controls. Set `BB_UI_OUTPUT=/absolute/output/path` to save screenshots and its JSON report outside the repository. `tests/educational-content.json` protects the pre-redesign section text, table content, and image order; do not regenerate it for incidental infrastructure changes.
