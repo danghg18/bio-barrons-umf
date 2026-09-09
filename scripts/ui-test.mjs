@@ -110,49 +110,6 @@ try {
   await page.locator('.lesson-search-trigger').click();await page.locator('#lesson-search-input').fill('sistem');await page.waitForTimeout(350);await capture(page,file+'-search');await page.keyboard.press('Escape');
  }
  await page.goto(base+'introducere_anatomie_fiziologie.html');const tableRoute=await page.locator('table.bb-table-stacked').first().evaluate(t=>t.closest('.page-section').id.slice(5));await page.evaluate(r=>BBLessonNavigation.navigate(r,{focus:false}),tableRoute);await page.locator('.page-section.active table').first().scrollIntoViewIfNeeded();await capture(page,'table-desktop');await resize(page, {width:390,height:844});await page.locator('.page-section.active table').first().scrollIntoViewIfNeeded();await capture(page,'table-stacked');
- // Search marks stay inline within an editorial chapter-map description.
- await page.goto(base+'introducere_anatomie_fiziologie.html');
- await page.locator('.lesson-search-trigger').click();await page.locator('#lesson-search-input').fill('metabolism');
- await page.waitForFunction(()=>document.querySelector('.academic-map-description .search-found'));
- for(const width of [390,1440]){
-  await resize(page,{width,height:900});
-  const intact=await page.locator('.academic-map-description').filter({has:page.locator('.search-found')}).first().evaluate(description=>{
-   const mark=description.querySelector('.search-found');const next=mark.nextSibling;
-   if(!next||next.nodeType!==Node.TEXT_NODE)return false;
-   const range=document.createRange();range.setStart(next,0);range.setEnd(next,1);
-   return Math.abs(range.getBoundingClientRect().top-mark.getBoundingClientRect().top)<3;
-  });
-  if(!intact)errors.push('prototype search broke inline description at '+width);
- }
- await page.locator('#lesson-search-input').fill('');await page.waitForFunction(()=>!document.querySelector('.search-found'));
- if(await page.locator('.academic-map-description').count()!==6)errors.push('prototype search clear altered map');
- await page.keyboard.press('Escape');
- // The prototype relocates the same highlighter nodes across the drawer breakpoint.
- await resize(page,{width:1440,height:900});
- await page.goto(base+'introducere_anatomie_fiziologie.html#functii');
- if(!await page.locator('#academic-current-section').textContent().then(t=>t.includes('Funcții')))errors.push('prototype breadcrumb did not follow initial hash');
- if(!await page.locator('#nav-hl-btn').evaluate(x=>!!x.closest('.lab-topbar-actions')))errors.push('prototype desktop highlighter placement');
- if(!await page.locator('body').evaluate(x=>x.classList.contains('hl-mode')))await page.locator('#nav-hl-btn').click();
- await page.locator('.bb-highlighter-color[data-highlight-color="blue"]').click();
- await page.locator('#page-functii .hero p').evaluate(p=>{
-   const range=document.createRange();range.selectNodeContents(p);
-   const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);
-   p.dispatchEvent(new MouseEvent('mouseup',{bubbles:true}));
- });
- await page.waitForFunction(()=>document.querySelector('#page-functii mark.hl[data-highlight-color="blue"]'));
- await resize(page,{width:390,height:844});await page.locator('.lab-menu-trigger').click();
- if(!await page.locator('#nav-hl-btn').evaluate(x=>!!x.closest('#sidenav')))errors.push('prototype mobile highlighter placement');
- if(!await page.locator('.bb-highlighter-color[data-highlight-color="blue"]').getAttribute('aria-pressed').then(x=>x==='true'))errors.push('prototype color lost on resize');
- await page.keyboard.press('Escape');await resize(page,{width:1440,height:900});
- await page.locator('#nav-hl-btn').click();
- const navAfterReading=await page.locator('#page-functii').evaluate(section=>section.querySelector('.page-nav').getBoundingClientRect().top>=section.querySelector('section:last-of-type').getBoundingClientRect().bottom);
- if(!navAfterReading)errors.push('prototype previous/next not below reading');
- await page.locator('#sidenav a[href="#termeni"]').click();
- await page.waitForFunction(()=>document.querySelector('.page-section.active').id==='page-termeni');
- if(!await page.locator('#academic-current-section').textContent().then(t=>t.includes('Termeni')))errors.push('prototype breadcrumb did not follow navigation');
- await page.goBack();
- await page.waitForFunction(()=>document.querySelector('.page-section.active').id==='page-functii');
- if(!await page.locator('#academic-current-section').textContent().then(t=>t.includes('Funcții')))errors.push('prototype breadcrumb did not follow history');
  await page.goto(base+resources[0].url);const first=page.locator('.quiz-question').first();await first.locator('input').first().check();await first.scrollIntoViewIfNeeded();await capture(page,'quiz-selected');await first.locator('.quiz-check').click();await capture(page,'quiz-verified');
  // 200% zoom equivalent CSS viewport: a 1280px browser exposes 640 CSS pixels.
  await resize(page, {width:640,height:400});for(const file of report.pages){await page.goto(base+file);if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1))errors.push(file+': 200% reflow overflow');}

@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/tokens.css?v=20260909-editorial1">
-<link rel="stylesheet" href="assets/css/home.css?v=20260909-academic2">
+<link rel="stylesheet" href="assets/css/home.css?v=20260909-editorial1">
 <script src="assets/js/light-mode.js?v=20260909-editorial1"></script>
 </head>
 <body>
@@ -34,6 +34,9 @@
 <header class="lab-topbar">
   <div class="lab-topbar-inner">
     <a class="lab-brand" href="index.html">
+      <div class="lab-brand-mark">
+        <img src="assets/logo-mark.svg" alt="" width="30" height="30">
+      </div>
       <span class="lab-brand-name">Biologie<span class="lab-brand-sub">.bb</span></span>
     </a>
     <nav class="lab-nav" aria-label="Navigare principală">
@@ -44,7 +47,7 @@
     <div class="lab-topbar-actions">
       <button class="lab-search-btn" id="search-btn" aria-label="Caută capitol sau termen" aria-haspopup="dialog" aria-expanded="false" title="Caută capitol sau termen">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-        <span>Caută</span>
+        <span>Caută capitol, termen…</span>
         <kbd>⌘K</kbd>
       </button>
 
@@ -58,7 +61,6 @@
 <section class="lab-hero">
   <div class="lab-hero-grid">
     <div class="lab-hero-l">
-      <p class="academic-eyebrow">Biologie · Admitere UMF Cluj</p>
       <h1 class="lab-hero-title">
         Biologia<br>pentru admitere,<br><span class="lab-hero-under">rescrisă.</span>
       </h1>
@@ -78,12 +80,22 @@
         </a>
       </div>
     </div>
-    <figure class="academic-plate">
-      <img src="assets/images/chapters/introduction/niveluri-organizare-barrons.png.webp" alt="Nivelurile de organizare ale corpului uman" fetchpriority="high" decoding="async">
-      <figcaption>Figura 1.1 Nivelurile de organizare structurală a corpului uman.</figcaption>
-    </figure>
+
   </div>
 </section>
+
+<!-- ── INFO BANNER ── -->
+<div class="lab-info">
+  <div class="lab-info-card">
+    <div class="lab-info-icon">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+    </div>
+    <div>
+      <h3>Cum funcționează</h3>
+      <p>Fiecare lecție restructurează materia în explicații, scheme, tabele și figuri anatomice. Conținutul marcat cu <span style="color:#E11D48;font-weight:700;">*</span> reprezintă informații adăugate față de manual.</p>
+    </div>
+  </div>
+</div>
 
 <!-- ── BENTO GRID ── -->
 <section id="lab-bento" class="lab-bento">
@@ -98,9 +110,9 @@
   <div class="lab-bento-grid">
 
     <!-- ══ Secțiunea 1: Bazele Anatomiei ══ -->
-    <div class="lab-bento-cat lab-bento-wide">
+    <div class="lab-bento-cat lab-bento-wide" style="--c:#2563EB;--c-mid:#3B82F6;--c-dark:#1E40AF;--c-light:#EFF6FF;">
       <div class="lab-bento-cat-head">
-
+        <div class="lab-bento-cat-emoji">🔬</div>
         <div>
           <div class="lab-bento-cat-eyebrow">Partea I</div>
           <h3 class="lab-bento-cat-title">Bazele Anatomiei &amp; Fiziologiei</h3>
@@ -114,31 +126,31 @@
       <div class="lab-bento-items">
         <a href="introducere_anatomie_fiziologie.html" class="lab-item lab-item-done">
           <div class="lab-item-num">01</div>
-
+          <div class="lab-item-emoji">🏛️</div>
           <div>
             <div class="lab-item-title">Introducere în anatomie și fiziologie</div>
             <div class="lab-item-tags"><span>Homeostazie</span><span>Planuri</span><span>Organizare</span><span>Cavități</span></div>
           </div>
           <div class="lab-item-done-mark">Disponibil</div>
         </a>
-        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">02</div><div><div class="lab-item-title">Bazele chimice ale anatomiei și fiziologiei</div><div class="lab-item-tags"><span>Atomi</span><span>pH</span><span>Proteine</span><span>ADN</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">02</div><div class="lab-item-emoji">⚗️</div><div><div class="lab-item-title">Bazele chimice ale anatomiei și fiziologiei</div><div class="lab-item-tags"><span>Atomi</span><span>pH</span><span>Proteine</span><span>ADN</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
         <a href="celula_si_fiziologia_celulara.html" class="lab-item lab-item-done">
           <div class="lab-item-num">03</div>
-
+          <div class="lab-item-emoji">🔬</div>
           <div>
             <div class="lab-item-title">Celula și fiziologia celulară</div>
             <div class="lab-item-tags"><span>Organite</span><span>Membrană</span><span>Transport</span><span>ATP</span></div>
           </div>
           <div class="lab-item-done-mark">Disponibil</div>
         </a>
-        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">04</div><div><div class="lab-item-title">Țesuturile</div><div class="lab-item-tags"><span>Epiteliu</span><span>Conjunctiv</span><span>Muscular</span><span>Nervos</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">04</div><div class="lab-item-emoji">🧫</div><div><div class="lab-item-title">Țesuturile</div><div class="lab-item-tags"><span>Epiteliu</span><span>Conjunctiv</span><span>Muscular</span><span>Nervos</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
       </div>
     </div>
 
     <!-- ══ Secțiunea 2: Tegument, Oase & Mușchi ══ -->
-    <div class="lab-bento-cat">
+    <div class="lab-bento-cat" style="--c:#0891B2;--c-mid:#06B6D4;--c-dark:#164E63;--c-light:#ECFEFF;">
       <div class="lab-bento-cat-head">
-
+        <div class="lab-bento-cat-emoji">🦴</div>
         <div>
           <div class="lab-bento-cat-eyebrow">Partea II</div>
           <h3 class="lab-bento-cat-title">Tegument, Oase &amp; Mușchi</h3>
@@ -150,18 +162,18 @@
         </div>
       </div>
       <div class="lab-bento-items">
-        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">05</div><div><div class="lab-item-title">Sistemul tegumentar</div><div class="lab-item-tags"><span>Epiderm</span><span>Derm</span><span>Termoreglare</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
-        <a href="oasele_si_articulatiile.html" class="lab-item lab-item-done"><div class="lab-item-num">06</div><div><div class="lab-item-title">Oasele și articulațiile</div><div class="lab-item-tags"><span>Os compact</span><span>Articulații</span><span>Diafiză</span><span>Osteoane</span></div></div><div class="lab-item-done-mark">Disponibil</div></a>
-        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">07</div><div><div class="lab-item-title">Sistemul osos</div><div class="lab-item-tags"><span>Schelet axial</span><span>Craniu</span><span>Coloană</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
-        <a href="tesutul_muscular.html" class="lab-item lab-item-done"><div class="lab-item-num">08</div><div><div class="lab-item-title">Țesutul muscular</div><div class="lab-item-tags"><span>Sarcomer</span><span>Actină</span><span>Miozină</span><span>ATP</span></div></div><div class="lab-item-done-mark">Disponibil</div></a>
-        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">09</div><div><div class="lab-item-title">Sistemul muscular</div><div class="lab-item-tags"><span>Mușchi scheletici</span><span>Grupe musculare</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">05</div><div class="lab-item-emoji">🩺</div><div><div class="lab-item-title">Sistemul tegumentar</div><div class="lab-item-tags"><span>Epiderm</span><span>Derm</span><span>Termoreglare</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <a href="oasele_si_articulatiile.html" class="lab-item lab-item-done"><div class="lab-item-num">06</div><div class="lab-item-emoji">🦴</div><div><div class="lab-item-title">Oasele și articulațiile</div><div class="lab-item-tags"><span>Os compact</span><span>Articulații</span><span>Diafiză</span><span>Osteoane</span></div></div><div class="lab-item-done-mark">Disponibil</div></a>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">07</div><div class="lab-item-emoji">🦴</div><div><div class="lab-item-title">Sistemul osos</div><div class="lab-item-tags"><span>Schelet axial</span><span>Craniu</span><span>Coloană</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <a href="tesutul_muscular.html" class="lab-item lab-item-done"><div class="lab-item-num">08</div><div class="lab-item-emoji">💪</div><div><div class="lab-item-title">Țesutul muscular</div><div class="lab-item-tags"><span>Sarcomer</span><span>Actină</span><span>Miozină</span><span>ATP</span></div></div><div class="lab-item-done-mark">Disponibil</div></a>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">09</div><div class="lab-item-emoji">🏃</div><div><div class="lab-item-title">Sistemul muscular</div><div class="lab-item-tags"><span>Mușchi scheletici</span><span>Grupe musculare</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
       </div>
     </div>
 
     <!-- ══ Secțiunea 3: Sistem Nervos ══ -->
-    <div class="lab-bento-cat">
+    <div class="lab-bento-cat" style="--c:#7C3AED;--c-mid:#8B5CF6;--c-dark:#4C1D95;--c-light:#F5F3FF;">
       <div class="lab-bento-cat-head">
-
+        <div class="lab-bento-cat-emoji">🧠</div>
         <div>
           <div class="lab-bento-cat-eyebrow">Partea III</div>
           <h3 class="lab-bento-cat-title">Sistem Nervos, Simțuri &amp; Endocrin</h3>
@@ -173,17 +185,17 @@
         </div>
       </div>
       <div class="lab-bento-items">
-        <a href="tesutul_nervos.html" class="lab-item lab-item-done"><div class="lab-item-num">10</div><div><div class="lab-item-title">Țesutul nervos</div><div class="lab-item-tags"><span>Neuron</span><span>Sinapsă</span><span>Potențial de acțiune</span><span>Mielină</span></div></div><div class="lab-item-done-mark">Disponibil</div></a>
-        <a href="sistemul_nervos.html" class="lab-item lab-item-done"><div class="lab-item-num">11</div><div><div class="lab-item-title">Organizarea sistemului nervos</div><div class="lab-item-tags"><span>SNC</span><span>Encefal</span><span>Nervi cranieni</span><span>Autonom</span></div></div><div class="lab-item-done-mark">Disponibil</div></a>
-        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">12</div><div><div class="lab-item-title">Organele de simț</div><div class="lab-item-tags"><span>Ochi</span><span>Ureche</span><span>Receptori</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
-        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">13</div><div><div class="lab-item-title">Sistemul endocrin</div><div class="lab-item-tags"><span>Hormoni</span><span>Hipofiza</span><span>Feedback</span><span>Tiroida</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <a href="tesutul_nervos.html" class="lab-item lab-item-done"><div class="lab-item-num">10</div><div class="lab-item-emoji">⚡</div><div><div class="lab-item-title">Țesutul nervos</div><div class="lab-item-tags"><span>Neuron</span><span>Sinapsă</span><span>Potențial de acțiune</span><span>Mielină</span></div></div><div class="lab-item-done-mark">Disponibil</div></a>
+        <a href="sistemul_nervos.html" class="lab-item lab-item-done"><div class="lab-item-num">11</div><div class="lab-item-emoji">🧠</div><div><div class="lab-item-title">Organizarea sistemului nervos</div><div class="lab-item-tags"><span>SNC</span><span>Encefal</span><span>Nervi cranieni</span><span>Autonom</span></div></div><div class="lab-item-done-mark">Disponibil</div></a>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">12</div><div class="lab-item-emoji">👁️</div><div><div class="lab-item-title">Organele de simț</div><div class="lab-item-tags"><span>Ochi</span><span>Ureche</span><span>Receptori</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">13</div><div class="lab-item-emoji">🔬</div><div><div class="lab-item-title">Sistemul endocrin</div><div class="lab-item-tags"><span>Hormoni</span><span>Hipofiza</span><span>Feedback</span><span>Tiroida</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
       </div>
     </div>
 
     <!-- ══ Secțiunea 4: Sânge & Cardiovascular ══ -->
-    <div class="lab-bento-cat">
+    <div class="lab-bento-cat" style="--c:#E11D48;--c-mid:#F43F5E;--c-dark:#881337;--c-light:#FFF1F2;">
       <div class="lab-bento-cat-head">
-
+        <div class="lab-bento-cat-emoji">❤️</div>
         <div>
           <div class="lab-bento-cat-eyebrow">Partea IV</div>
           <h3 class="lab-bento-cat-title">Sânge, Cardiovascular &amp; Imunitate</h3>
@@ -195,16 +207,16 @@
         </div>
       </div>
       <div class="lab-bento-items">
-        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">14</div><div><div class="lab-item-title">Sângele</div><div class="lab-item-tags"><span>Eritrocite</span><span>Hemoglobina</span><span>Grupe ABO</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
-        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">15</div><div><div class="lab-item-title">Sistemul cardiovascular</div><div class="lab-item-tags"><span>Inimă</span><span>Sistolă</span><span>Tensiune</span><span>Capilare</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
-        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">16</div><div><div class="lab-item-title">Sistemul limfatic și imun</div><div class="lab-item-tags"><span>Limfocite</span><span>Anticorpi</span><span>Imunitate</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">14</div><div class="lab-item-emoji">🩸</div><div><div class="lab-item-title">Sângele</div><div class="lab-item-tags"><span>Eritrocite</span><span>Hemoglobina</span><span>Grupe ABO</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">15</div><div class="lab-item-emoji">❤️</div><div><div class="lab-item-title">Sistemul cardiovascular</div><div class="lab-item-tags"><span>Inimă</span><span>Sistolă</span><span>Tensiune</span><span>Capilare</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">16</div><div class="lab-item-emoji">🛡️</div><div><div class="lab-item-title">Sistemul limfatic și imun</div><div class="lab-item-tags"><span>Limfocite</span><span>Anticorpi</span><span>Imunitate</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
       </div>
     </div>
 
     <!-- ══ Secțiunea 5: Respirator & Digestiv ══ -->
-    <div class="lab-bento-cat">
+    <div class="lab-bento-cat" style="--c:#EA580C;--c-mid:#F97316;--c-dark:#7C2D12;--c-light:#FFF7ED;">
       <div class="lab-bento-cat-head">
-
+        <div class="lab-bento-cat-emoji">🫁</div>
         <div>
           <div class="lab-bento-cat-eyebrow">Partea V</div>
           <h3 class="lab-bento-cat-title">Respirator, Digestiv &amp; Metabolism</h3>
@@ -216,16 +228,16 @@
         </div>
       </div>
       <div class="lab-bento-items">
-        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">17</div><div><div class="lab-item-title">Sistemul respirator</div><div class="lab-item-tags"><span>Alveole</span><span>O₂/CO₂</span><span>Hemoglobina</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
-        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">18</div><div><div class="lab-item-title">Sistemul digestiv</div><div class="lab-item-tags"><span>Stomac</span><span>Intestin</span><span>Ficat</span><span>Enzime</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
-        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">19</div><div><div class="lab-item-title">Metabolism și nutriție</div><div class="lab-item-tags"><span>ATP</span><span>Glicoliză</span><span>Krebs</span><span>Vitamine</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">17</div><div class="lab-item-emoji">🫁</div><div><div class="lab-item-title">Sistemul respirator</div><div class="lab-item-tags"><span>Alveole</span><span>O₂/CO₂</span><span>Hemoglobina</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">18</div><div class="lab-item-emoji">🍽️</div><div><div class="lab-item-title">Sistemul digestiv</div><div class="lab-item-tags"><span>Stomac</span><span>Intestin</span><span>Ficat</span><span>Enzime</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">19</div><div class="lab-item-emoji">⚡</div><div><div class="lab-item-title">Metabolism și nutriție</div><div class="lab-item-tags"><span>ATP</span><span>Glicoliză</span><span>Krebs</span><span>Vitamine</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
       </div>
     </div>
 
     <!-- ══ Secțiunea 6: Excretor ══ -->
-    <div class="lab-bento-cat">
+    <div class="lab-bento-cat" style="--c:#059669;--c-mid:#10B981;--c-dark:#064E3B;--c-light:#ECFDF5;">
       <div class="lab-bento-cat-head">
-
+        <div class="lab-bento-cat-emoji">🫘</div>
         <div>
           <div class="lab-bento-cat-eyebrow">Partea VI</div>
           <h3 class="lab-bento-cat-title">Sistemul Excretor &amp; Echilibru Intern</h3>
@@ -239,21 +251,21 @@
       <div class="lab-bento-items">
         <a href="sistemul_renal_complet.html" class="lab-item lab-item-done">
           <div class="lab-item-num">20</div>
-
+          <div class="lab-item-emoji">🫘</div>
           <div>
             <div class="lab-item-title">Sistemul urinar</div>
             <div class="lab-item-tags"><span>Nefron</span><span>Filtrare</span><span>ADH</span><span>Aldosteron</span></div>
           </div>
           <div class="lab-item-done-mark">Disponibil</div>
         </a>
-        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">21</div><div><div class="lab-item-title">Echilibrul hidro-electrolitic și acido-bazic</div><div class="lab-item-tags"><span>pH</span><span>Tampon</span><span>Electroliți</span><span>Acidoză</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
+        <button class="lab-item lab-item-soon" type="button" disabled><div class="lab-item-num">21</div><div class="lab-item-emoji">💧</div><div><div class="lab-item-title">Echilibrul hidro-electrolitic și acido-bazic</div><div class="lab-item-tags"><span>pH</span><span>Tampon</span><span>Electroliți</span><span>Acidoză</span></div></div><div class="lab-item-soon-mark">În curând</div></button>
       </div>
     </div>
 
     <!-- ══ Secțiunea 7: Reproducător ══ -->
-    <div class="lab-bento-cat">
+    <div class="lab-bento-cat" style="--c:#0891B2;--c-mid:#06B6D4;--c-dark:#164E63;--c-light:#ECFEFF;">
       <div class="lab-bento-cat-head">
-
+        <div class="lab-bento-cat-emoji">🧬</div>
         <div>
           <div class="lab-bento-cat-eyebrow">Partea VII</div>
           <h3 class="lab-bento-cat-title">Sistemul Reproducător</h3>
@@ -267,7 +279,7 @@
       <div class="lab-bento-items">
         <a href="sistemul_reproducator_masculin.html" class="lab-item lab-item-done">
           <div class="lab-item-num">22</div>
-
+          <div class="lab-item-emoji">♂️</div>
           <div>
             <div class="lab-item-title">Sistemul reproducător masculin</div>
             <div class="lab-item-tags"><span>Spermatogeneză</span><span>Meioza</span><span>Testosteron</span><span>FSH/LH</span></div>
@@ -276,7 +288,7 @@
         </a>
         <a href="sistemul_reproducator_feminin.html" class="lab-item lab-item-done">
           <div class="lab-item-num">23</div>
-
+          <div class="lab-item-emoji">♀️</div>
           <div>
             <div class="lab-item-title">Sistemul reproducător feminin</div>
             <div class="lab-item-tags"><span>Ovogeneză</span><span>Estrogen</span><span>Ciclu menstrual</span></div>
@@ -299,35 +311,22 @@
   </div>
   <div class="lab-features-grid">
     <div class="lab-feature">
-
+      <div class="lab-feature-icon">🖊</div>
       <h3>Evidențiator</h3>
       <p>Marchează temporar pasaje-cheie și alege culoarea din meniul lecției. Marcajele dispar la reîncărcare.</p>
     </div>
     <div class="lab-feature">
-
+      <div class="lab-feature-icon">🔎</div>
       <h3>Căutare în lecții</h3>
       <p>Găsește rapid un capitol, un termen sau o explicație în toate lecțiile publicate.</p>
     </div>
     <div class="lab-feature">
-
+      <div class="lab-feature-icon">📱</div>
       <h3>Funcționează offline</h3>
       <p>Instalabil ca aplicație pe telefon sau laptop. Accesibil și fără internet, oricând.</p>
     </div>
   </div>
 </section>
-
-<!-- ── INFO BANNER ── -->
-<div class="lab-info">
-  <div class="lab-info-card">
-    <div class="lab-info-icon">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-    </div>
-    <div>
-      <h3>Cum funcționează</h3>
-      <p>Fiecare lecție restructurează materia în explicații, scheme, tabele și figuri anatomice. Conținutul marcat cu <span style="color:#E11D48;font-weight:700;">*</span> reprezintă informații adăugate față de manual.</p>
-    </div>
-  </div>
-</div>
 
 <!-- ── FOOTER ── -->
  </main>
@@ -336,13 +335,16 @@
   <div class="lab-footer-top">
     <div>
       <a class="lab-footer-brand" href="index.html" aria-label="Înapoi la începutul paginii">
+        <div class="lab-brand-mark">
+          <img src="assets/logo-mark.svg" alt="" width="30" height="30">
+        </div>
         <span>Biologie.bb</span>
       </a>
       <p class="lab-footer-blurb">Material educațional personal pentru pregătirea admiterii la UMF Cluj. Gândit de un student, pentru studenți.</p>
     </div>
     <div class="lab-footer-cols">
       <div>
-        <h3>Material</h3>
+        <h5>Material</h5>
         <a href="#lab-bento">9 lecții publicate · 23 capitole planificate</a>
         <a href="introducere_anatomie_fiziologie.html">Lecție · Introducere în anatomie</a>
         <a href="celula_si_fiziologia_celulara.html">Lecție · Celula și fiziologia celulară</a>
@@ -357,13 +359,13 @@
         <a href="#lab-bento">Figuri anatomice</a>
       </div>
       <div>
-        <h3>Instrumente</h3>
+        <h5>Instrumente</h5>
         <a href="sistemul_renal_complet.html">Evidențiator</a>
         <a href="#lab-tools">Căutare în lecții</a>
         <a href="#lab-tools">Offline PWA</a>
       </div>
       <div>
-        <h3>UMF Cluj</h3>
+        <h5>UMF Cluj</h5>
         <span class="lab-footer-note">Despre admitere · în curând</span>
         <span class="lab-footer-note">Programa biologie · în curând</span>
         <span class="lab-footer-note">Plan de studiu · în curând</span>
@@ -380,7 +382,7 @@
 
 <!-- ── COMMAND PALETTE ── -->
 <div id="palette" style="display:none" onclick="closePalette()">
-  <div class="lab-palette-overlay">
+  <div class="lab-palette-overlay" style="position:fixed;inset:0;z-index:1200;background:rgba(15,23,42,0.4);backdrop-filter:blur(6px);display:flex;align-items:flex-start;justify-content:center;padding-top:14vh;">
     <div class="lab-palette" role="dialog" aria-modal="true" aria-labelledby="palette-title" onclick="event.stopPropagation()">
       <div class="lab-palette-input">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
@@ -398,6 +400,6 @@
 </div>
 
 <script src="assets/js/chapters-data.js?v=20260909-editorial1"></script>
-<script src="assets/js/home.js?v=20260909-academic2"></script>
+<script src="assets/js/home.js?v=20260909-editorial1"></script>
 </body>
 </html>
