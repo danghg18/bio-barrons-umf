@@ -1,6 +1,6 @@
 ---
 name: "Barron's Biologie – UMF Cluj"
-description: "Modern Academic Editorial prototype on the homepage and introduction; remaining lessons retain the incumbent system."
+description: "A premium editorial Romanian biology textbook, built for focused admission study."
 colors:
   primary: "#2563EB"
   primary-light: "#EFF6FF"
@@ -32,48 +32,38 @@ colors:
   bg-surface: "#FFFFFF"
   border: "#DCE3EC"
   border-strong: "#C8D2DF"
-  academic-blue: "#2457F5"
-  academic-blue-hover: "#1946D4"
-  academic-soft-blue: "#EEF3FF"
-  academic-selection: "#DCE5FF"
-  academic-ink: "#101828"
-  academic-body: "#475467"
-  academic-muted: "#667085"
-  academic-line: "#E4E7EC"
-  academic-line-strong: "#D0D5DD"
-  academic-note-edge: "#98A2B3"
-  academic-sunken: "#F5F6F8"
 typography:
-  academic-display:
-    fontFamily: "Figtree, system-ui, sans-serif"
-    fontSize: "clamp(48px, 5.6vw, 80px)"
-    fontWeight: 800
+  display:
+    fontFamily: "Figtree, system-ui, -apple-system, sans-serif"
+    fontSize: "clamp(3.6rem, 7.2vw, 6rem)"
+    fontWeight: 900
     lineHeight: 1.02
-    letterSpacing: "-0.04em"
-  academic-editorial:
-    fontFamily: "Fraunces, Georgia, serif"
-    fontSize: "1em"
-    fontWeight: 400
-    lineHeight: 1.1
-  academic-lesson-title:
-    fontFamily: "Figtree, system-ui, sans-serif"
-    fontSize: "clamp(30px, 3.2vw, 44px)"
-    fontWeight: 650
-    lineHeight: 1.16
     letterSpacing: "-0.035em"
-  academic-home-body:
-    fontFamily: "Figtree, system-ui, sans-serif"
-    fontSize: "16px"
-    lineHeight: 1.6
-  academic-lesson-body:
-    fontFamily: "Figtree, system-ui, sans-serif"
-    fontSize: "17px"
-    lineHeight: 1.75
-  incumbent-body:
+  editorial:
+    fontFamily: "Fraunces, Georgia, serif"
+    fontWeight: 400
+  headline:
+    fontFamily: "Figtree, system-ui, -apple-system, sans-serif"
+    fontSize: "2.75rem"
+    fontWeight: 900
+    lineHeight: 1.04
+    letterSpacing: "-0.04em"
+  content-heading:
+    fontFamily: "Figtree, system-ui, -apple-system, sans-serif"
+    fontSize: "1.35rem"
+    fontWeight: 900
+    lineHeight: 1.25
+    letterSpacing: "-0.025em"
+  body:
     fontFamily: "Figtree, system-ui, -apple-system, sans-serif"
     fontSize: "1rem"
     fontWeight: 400
     lineHeight: 1.72
+  label:
+    fontFamily: "Figtree, system-ui, -apple-system, sans-serif"
+    fontSize: "0.84rem"
+    fontWeight: 700
+    lineHeight: 1.3
 rounded:
   xs: ".5rem"
   sm: ".65rem"
@@ -89,8 +79,6 @@ rounded:
   control: "10px"
   term: "7px"
   flat: "0"
-  academic-control: "4px"
-  academic-swatch: "3px"
 spacing:
   "1": ".25rem"
   "2": ".5rem"
@@ -102,121 +90,135 @@ spacing:
   "10": "2.5rem"
   "12": "3rem"
 components:
-  academic-primary-action:
-    backgroundColor: "{colors.academic-blue}"
+  button-primary:
+    backgroundColor: "{colors.primary}"
     textColor: "{colors.bg-surface}"
-    rounded: "{rounded.academic-control}"
-    padding: "10px 18px"
-  academic-primary-action-hover:
-    backgroundColor: "{colors.academic-blue-hover}"
-  academic-search-dialog:
+    rounded: "{rounded.control}"
+    padding: "11px 18px"
+  button-primary-hover:
+    backgroundColor: "{colors.primary-dark}"
+  button-secondary:
+    backgroundColor: "transparent"
+    textColor: "{colors.slate-700}"
+    rounded: "{rounded.control}"
+    padding: "11px 18px"
+  search-field:
+    textColor: "{colors.slate-900}"
+    height: "44px"
+  navigation-active:
     backgroundColor: "{colors.bg-surface}"
-    rounded: "{rounded.academic-control}"
-    width: "min(680px, 100%)"
-  academic-sidebar-route:
-    textColor: "{colors.academic-body}"
+    textColor: "{colors.slate-900}"
     rounded: "{rounded.flat}"
-    padding: "12px 0 12px 12px"
-  academic-sidebar-route-active:
-    textColor: "{colors.academic-ink}"
-  academic-note:
-    backgroundColor: "{colors.academic-sunken}"
-    textColor: "{colors.academic-body}"
-    padding: "20px 24px"
+    typography: "{typography.label}"
+    padding: "0.65rem 0.78rem"
+  chapter-term:
+    backgroundColor: "{colors.primary-light}"
+    textColor: "{colors.primary}"
+    rounded: "{rounded.term}"
+    padding: "4px 9px"
+  reading-card:
+    backgroundColor: "{colors.bg-surface}"
+    textColor: "{colors.slate-700}"
+    rounded: "{rounded.chapter-md}"
+  chapter-map-row:
+    backgroundColor: "transparent"
+    textColor: "{colors.slate-700}"
+    rounded: "{rounded.flat}"
+    padding: "17px 16px 17px 62px"
 ---
 
 # Design System: Barron's Biologie – UMF Cluj
 
 ## Overview
 
-**Creative North Star: "Modern Academic Editorial" — prototype direction, awaiting visual approval.**
+**Creative North Star: "The Editorial Biology Textbook"**
 
-University-press authority, clear medical reference typography and quiet product utilities define the proposed direction. Structure comes from proportion, numbered contents, fine rules and meaningful anatomical imagery. Figtree carries interface and reading text; a selective Fraunces italic provides editorial emphasis. This supports the clarity and supportive, mature character described in PRODUCT.md.
+The interface is a premium editorial Romanian biology textbook: cool paper, navy ink, precise rules and a restrained blue accent. Figtree gives navigation and educational prose one coherent voice; a selective Fraunces italic supplies the homepage’s editorial signature.
 
-**Scope is binding.** Only `index.html` and `introducere_anatomie_fiziologie.html` implement this replacement. Review disposition is **ship at prototype review scope**, not visual approval, publication approval or authorization to migrate the remaining lessons. See `docs/academic-editorial-prototype.md` for the surface brief, evidence and rollout boundary.
-
-The homepage's complete presentation belongs to `assets/css/home.css`. The introduction loads `assets/css/academic-lesson.css` after `tokens.css`, replacing its four former presentation stylesheets. Other lessons and the quiz retain their current stylesheet order and incumbent presentation. Shared `tokens.css` remains unchanged and includes semantic element styling as well as primitives; the prototype intentionally overrides relevant base rules. Do not treat this coexistence as permission for automatic drift repair.
+Reading hierarchy comes from type, spacing, figures and meaningful grouping. Chapter outlines read as numbered contents lists, and controls remain quiet but clear. The light-only surface supports sustained study without turning publication availability into a claim about a student’s learning progress.
 
 **Key Characteristics:**
 
-- Predominantly neutral canvas and white article surfaces, navy ink and blue actions.
-- Numbered, ruled contents instead of decorative chapter tiles.
-- Quiet reading hierarchy and useful anatomical figures.
-- Existing navigation, search and annotation behavior with a new presentation.
+- Cool paper and navy ink with restrained blue interaction.
+- Figtree for UI and body, selective Fraunces italic for editorial emphasis.
+- Flat reading surfaces, fine rules and numbered contents.
+- Readable Romanian text, responsive tables and practical touch controls.
+
+This is the implemented visual system. `assets/css/tokens.css` owns core primitives. `assets/css/home.css` owns the consolidated homepage presentation; `assets/css/chapter-redesign.css` owns the shared lesson shell and final content presentation with legacy adapters. `lesson.css` retains residual widgets, and `quiz.css` supplies quiz-specific presentation last. Existing compatibility selectors are not templates for duplicating a new shell.
 
 ## Colors
 
-### Primary
+The palette combines cool paper neutrals with a clear medical blue. Frontmatter records source values; CSS semantic aliases remain the implementation authority.
 
-The `academic-*` palette applies only to the two prototype pages. `academic-blue` owns the dominant interaction accent, selective hero italic and narrow active-route rule. `academic-blue-hover` deepens primary actions; `academic-soft-blue` signals quiet hover/search states. The brief's approximately 85% neutral, 10% blue and 5% chapter/semantic balance is a direction, not a measured pixel ratio.
-
-### Neutral
-
-`bg-page` and `bg-surface` remain shared canvas and white primitives. Prototype text uses `academic-ink`, `academic-body` and `academic-muted`; separators use `academic-line` and `academic-line-strong`. Sidebar and notes use `academic-sunken`; `academic-note-edge` is a restrained callout edge.
-
-### Incumbent context
-
-Unprefixed primary, slate, border and semantic accent tokens in frontmatter preserve the unchanged `tokens.css` values for other pages. They are not the new prototype palette. Emerald, teal, violet, rose, orange and amber remain available to existing educational and quiz components. Registry chapter colors and emoji remain compatibility data; prototype curriculum and search results do not expose a rainbow of colored tags.
-
-Functional highlighter colors retain separate background/ink/edge values in the introduction stylesheet. They are annotation choices, not brand accents. Search selection uses `academic-selection` with dark ink and a blue current-match outline.
+- **Primary:** `primary` marks actions, links, chapter numbers and the selective editorial word; `primary-dark` is the hover partner and `primary-light` a quiet interaction tint.
+- **Neutral:** `bg-page` is the light-only canvas, `bg-surface` the white reading surface, `slate-900` the heading ink, `slate-700` body text and `slate-500` secondary information. `border` and `border-strong` divide and frame content. `bg-sunken` resolves to `slate-50` in CSS.
+- **Context and status:** the emerald, teal, violet, rose, orange and amber pairs remain available for authored chapter context and semantic states. They are not a mandate to color every chapter block. Quiz correctness and review states retain labels and explanations alongside color.
+- **Search and highlighting:** search matches retain dark ink on the highlight; user-selected highlighter swatches use their existing paired background, ink and edge values. These are functional annotations, not additional brand accents.
 
 ## Typography
 
-The prototype uses Figtree for interface, prose, tables and headings. Fraunces is italic only, used on the homepage word “rescrisă.”; its style is recorded in prose because the frontmatter schema has no fontStyle field. Actual hero weight is 800, rather than the brief's suggested Black weight. The lesson title declares weight 650; the Google Fonts request supplies discrete weights including 600 and 700, so rendering follows browser font matching.
+Figtree is the body and UI family. Fraunces is a selective italic editorial voice; its italic style is documented here because the frontmatter typography schema does not include `fontStyle`.
 
-Homepage hero copy is 17px/1.65 with a 49ch maximum. Homepage section headings are 40px/1.15, weight 700. At 1024px the hero becomes 54px; at 700px it becomes `clamp(38px, 10.3vw, 52px)` and the section headings become 32px. Introduction titles become 36px at 1200px, then 30px/1.2 at 640px. Lesson body becomes 16px/1.75 at 640px; card paragraphs retain a 70ch maximum and hero introductions 66ch.
+**The Selective Italic Rule.** Use Fraunces italic selectively for the blue homepage word “rescrisă.” Keep lesson prose, navigation, labels and controls in Figtree.
 
-Incumbent lessons retain their existing Figtree roles and shared presentation. The `incumbent-body` role records the shared lesson reading convention, not a global override for the prototype. Fonts are still requested through Google Fonts; fallback is system sans-serif or Georgia. First-load offline availability of external fonts is not guaranteed.
+The frontmatter display role describes the desktop homepage heading. On phones it becomes `clamp(2.2rem, 11vw, 3.6rem)` with `1.04` line height and `-0.03em` tracking. Chapter-home headings use the headline role and reduce to `2.25rem` at the drawer breakpoint, then `2rem` at 430px. Lesson cards use the content-heading and body roles; body text has a 70ch reading measure. Homepage introductory copy uses `clamp(1rem, 1.45vw, 1.15rem)` with `1.68` line height, reducing to `0.96rem/1.62` on phones. Avoid forcing one display scale into every surface.
 
 ## Layout
 
-The prototype homepage uses a 1280px maximum container, 28px desktop gutters and a 12-column hero with a 7/5 copy/image split and 24px gap. Hero padding is 64px above and 68px below. Curriculum categories use a 260px descriptive column, 54px gap and numbered rows with 40px / flexible / 100px columns. At 1024px category columns become 220px with 28px gap. At 700px the hero, categories and feature band stack; gutters become 20px, the image follows the copy at full width up to 430px, and row status sits beneath the title. Homepage header height is 68px, then 56px at 700px.
+The homepage is an editorial masthead followed by a ruled curriculum index and study-tool band. Main homepage sections have a 1280px outer maximum with 28px desktop inset. Curriculum categories use a descriptive column beside numbered lesson rows, becoming one column at 900px. Phone hero gutters are 20px; surrounding content follows its authored responsive insets.
 
-The introduction shell has a 1600px outer maximum, a 272px sidebar and a flexible white article lane. The sidebar is sticky below the 68px header and scrolls independently. Main padding is `44px clamp(32px, 5vw, 80px) 48px`; sections are at most 1000px, figures 840px. At 1200px main padding becomes 36px. At 1024px the header becomes 56px, sidebar becomes a `min(320px, 86vw)` drawer, main padding becomes 36px 40px and sections cap at 860px. At 640px main padding becomes 28px 20px 36px, learning grids stack and prepared tables become labelled rows. Other tables retain horizontal scrolling within their wrapper.
+The lesson shell has a 1344px outer maximum, a 264px sidebar and up to 960px main column. Between 1025px and 1240px the sidebar is 244px. The 70ch measure applies to reading text, not to every figure or table. These effective chapter values take precedence over older generic layout variables in `tokens.css`.
 
-The topbar moves from brand/context/utilities to menu/context/search. The same highlighter nodes move into the drawer below 1024px. Previous/next stays in a two-sided row, allows text wrapping and is ordered after section content. Return-to-top is in document flow. Common controls have 44px targets; compact lesson-search arrows are 36px wide, then 32px on phones, while retaining 44px height.
+At 1024px and below the navigation becomes a drawer, the topbar is 58px, and the drawer width is `min(320px, 86vw)`. Main content uses 14px side padding. At 700px, multicolumn learning blocks and previous/next actions stack. At 640px, tables explicitly prepared with `bb-table-stacked` and `data-label` become labelled vertical rows; other tables remain horizontally scrollable rather than losing their relationships. Quiz actions become full width at the same phone breakpoint.
 
-Remaining lessons retain the incumbent 1344px shell maximum, 264px sidebar (244px at the intermediate breakpoint), 58px mobile topbar and their existing per-family responsive rules. Those dimensions are not prototype recommendations.
+Primary controls use at least 44px touch targets; homepage actions are 46px, then 48px on phones. Legacy subordinate navigation links retain their existing smaller sizing. The core spacing rhythm is rem-based in quarter-rem steps; use the documented scale without compressing educational content to fit a decorative composition.
 
 ## Elevation & Depth
 
-**The Flat Reading Rule.** Prototype reading sections use whitespace, rules and neutral tones; figures have no shadow or ornamental frame. The homepage search palette and lesson utilities have borders and no decorative shadow. Scrims communicate modal depth. The introduction drawer uses a 200ms ease-out transform, removed under reduced motion. Both prototype stylesheets disable motion under reduced-motion preferences.
+**The Flat Reading Rule.** Use spacing, fine borders and surface tone to structure reading. Reserve shadows for temporary overlays and feedback.
 
-Shared shadow primitives remain unchanged: the ordinary xs/sm/md/lg/hover shadows are `none`; `shadow-float` remains `0 3px 12px rgba(37,99,235,.30)` for incumbent consumers. Existing lesson drawer/toast shadows are legacy presentation and are not propagated into this prototype.
+Core `shadow-xs`, `shadow-sm`, `shadow-md`, `shadow-lg` and `shadow-hover` are `none`. Reading cards, outlines, homepage categories and primary actions remain flat. The mobile lesson drawer retains `16px 0 36px rgba(15, 23, 42, 0.18)` to signal an overlay; lesson toasts retain `0 12px 28px rgba(15, 23, 42, 0.22)`. Do not propagate these overlay shadows to ordinary content. Motion primarily communicates state, with 150–300ms core durations and reduced-motion overrides.
 
 ## Shapes
 
-Prototype article sections and curriculum rows have square, ruled edges. Primary homepage actions and search dialog use `academic-control`; keyboard hints and highlighter swatches use `academic-swatch`. The retained unprefixed radius/spacing scales describe existing shared widgets and lessons, not a requirement to apply large rounded surfaces to the new direction.
+Use fine rules and square edges for curriculum rows and chapter outlines. Chapter surface radii are 8px, 12px and 14px; common action buttons are 10px. Keyword tags use 7px. The broader core radius scale remains available for existing widgets and figures, so its rem values are preserved exactly in frontmatter rather than rounded to approximate pixels. Do not make every object a pill simply because pill tokens exist.
 
 ## Components
 
-### Buttons and search
+### Buttons
 
-The homepage has one filled blue action and an underlined secondary action. Header navigation and lesson utilities are compact text or functional monochrome symbols. Global search uses a 680px maximum dialog, strong input and quiet result hierarchy. Lesson search remains a shared-controller panel. Focus uses a 2px blue outline with 4px offset, with a quieter 1px gray outline on the focused lesson heading.
+Blue primary actions use white text, a 10px radius and no shadow; the homepage button has `11px 18px` padding. Hover deepens the blue without lifting the control. Secondary homepage actions are transparent with a fine border, while lesson outline actions use white. Quiz checking retains its navy action treatment. Focus remains visible: the core ring is 2px blue with 2px offset; the shared lesson layer uses its 3px mixed-blue ring and 3px offset.
+
+### Inputs and search
+
+Search controls use a white surface, fine border and legible dark input text. The homepage palette is at most 640px wide with a 12px radius, a dark scrim and no decorative shadow. Its input and close action provide 44px targets. Lesson search retains its shared controller, and mobile panels fit within the viewport. Keep labels, keyboard dismissal and dark search-match ink intact.
 
 ### Navigation
 
-The introduction sidebar has a small chapter label, large chapter number, title and numbered section rows. Active navigation has semibold dark text and a 2px blue start rule. The breadcrumb follows shared router events. Mobile drawer accessibility continues to belong to the shared controller; the presentation adapter does not create a second router or focus manager.
+The desktop sidebar is a quiet chapter index. The active row uses navy text, a white surface and a 2px accent start rule with square edges. The mobile drawer preserves its overlay, Escape and focus behavior. Chapter outlines are neutral numbered rows with separators and subtle hover tone. Previous/next actions stack on small screens; return-to-top is in normal document flow at the drawer breakpoint.
 
-### Curriculum and chapter map
+### Tags and reading cards
 
-Homepage rows pair chapter numbers and titles with aligned “Disponibil” or “În curând” labels. Availability is not completion. Registry emoji and ring selectors remain compatibility hooks but are hidden. The introduction chapter map becomes ruled title/description rows, stacking on phones.
+Tags communicate terms or chapter context with a restrained tint, a fine border and compact Figtree labels. Reading cards use white, a fine border and chapter radii with no shadow. Internal hierarchy comes from headings, paragraphs, figures and lists. Preserve authored semantic callouts rather than recoloring all educational distinctions into one undifferentiated surface.
 
-### Reading, figures and tables
+### Figures, tables and quiz feedback
 
-Ordinary information and definition blocks use open content or a fine top rule. Summaries, examples and warning-class notes share a neutral surface and narrow gray edge; authored headings preserve meaning. Figures remain real repository artwork with captions, no cropping or fake anatomical replacements. Tables keep headings, data relationships and opt-in mobile labels. Previous/next links remain ordinary route links.
-
-### Highlighter
-
-Six restrained swatches retain the shared color identifiers and storage behavior. The existing button and palette relocate between desktop utilities and mobile drawer, preserving node identity and handlers. Passage highlights are not persisted. Search and highlighter remain separate functions; presentation does not invent study progress.
+Figures remain on white with their original image and caption relationships. Tables use clear headers, row rules and controlled overflow; labelled stacking is opt-in through the existing table preparation. Quiz options retain native selection controls, explicit result labels and explanations. Existing quiz saved state is a quiz feature; publication counts are availability, and highlights are not persisted passages.
 
 ## Do's and Don'ts
 
-- Do treat this as a two-page prototype awaiting visual review.
-- Do preserve educational prose, figures, captions, Romanian diacritics and URL contracts.
-- Do distinguish `academic-*` tokens from incumbent tokens when adding or reviewing a surface.
-- Do use meaningful imagery, typographic hierarchy, restrained color and visible focus.
-- Don't roll this system into another lesson before approval and an explicit migration task.
-- Don't silently rewrite shared tokens or delete legacy CSS as documentation drift repair.
-- Don't add decorative gradients, emoji chapter identities, progress rings, fake progress or persistent-highlight claims to the prototype.
-- Don't interpret retained semantic colors or old radius tokens as approval for colorful chapter tiles.
+### Do:
+
+- Do preserve Romanian diacritics, authored explanations, figures and semantic table relationships.
+- Do use the canonical core tokens and the established surface-specific aliases.
+- Do keep prose near 70ch where the lesson layout permits and let figures and tables use the wider content area.
+- Do maintain visible keyboard focus, accessible search, reduced-motion behavior and readable phone layouts.
+- Do describe chapter counts as publication availability; keep existing quiz results distinct from study progress.
+
+### Don't:
+
+- Don’t introduce Noto Sans or a second body font into the current visual system.
+- Don’t turn curriculum lists into floating decorative card grids or add ornamental gradients.
+- Don’t obscure phone reading with floating controls; the lesson return-to-top action stays in document flow on small screens.
+- Don’t use color alone for quiz correctness, selected controls or navigation state.
+- Don’t add study-progress tracking, persistence claims or roadmap features through visual documentation.
