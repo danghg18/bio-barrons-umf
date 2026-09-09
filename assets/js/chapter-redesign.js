@@ -897,9 +897,6 @@
       },
       "lesson-search-input"
     ).setAttribute("aria-expanded", "false");
-    ensureButton("nav-dm-btn", "Mod noapte", function () {
-      if (typeof window.toggleDarkMode === "function") window.toggleDarkMode();
-    });
     ensureButton("nav-hl-btn", "Evidențiator", function () {
       if (typeof window.toggleHighlighter === "function") window.toggleHighlighter();
     });
@@ -971,47 +968,6 @@
     state.highlighterColor = normalizeHighlighterColor(color);
     safeStorageSet("highlighterColor", state.highlighterColor);
     syncHighlighterPaletteUi();
-  }
-
-  function syncDarkModeUi() {
-    var dark = document.body.classList.contains("dark");
-    var label = document.getElementById("nav-dm-label");
-    var navButton = document.getElementById("nav-dm-btn");
-    if (!label && navButton) label = navButton.querySelector("span:not(.dot)");
-    if (label) label.textContent = dark ? "Mod zi" : "Mod noapte";
-
-    [navButton, document.getElementById("dm-btn"), document.getElementById("sfab-dm")].forEach(function (button) {
-      if (!button) return;
-      button.classList.toggle("on", dark);
-      button.setAttribute("aria-pressed", String(dark));
-      button.setAttribute("aria-label", dark ? "Activează modul zi" : "Activează modul noapte");
-      button.setAttribute("title", dark ? "Mod zi" : "Mod noapte");
-    });
-  }
-
-  function setupDarkMode() {
-    var stored = safeStorageGet("darkMode");
-    if (stored === "1") document.body.classList.add("dark");
-    if (stored === "0") document.body.classList.remove("dark");
-
-    if (typeof window.toggleDarkMode === "function" && !window.toggleDarkMode.__bbSharedWrapper) {
-      var pageToggle = window.toggleDarkMode;
-      var wrappedToggle = function () {
-        var result = pageToggle.apply(this, arguments);
-        safeStorageSet("darkMode", document.body.classList.contains("dark") ? "1" : "0");
-        syncDarkModeUi();
-        return result;
-      };
-      wrappedToggle.__bbSharedWrapper = true;
-      window.toggleDarkMode = wrappedToggle;
-    } else if (typeof window.toggleDarkMode !== "function") {
-      window.toggleDarkMode = function () {
-        var dark = document.body.classList.toggle("dark");
-        safeStorageSet("darkMode", dark ? "1" : "0");
-        syncDarkModeUi();
-      };
-    }
-    syncDarkModeUi();
   }
 
   function syncHighlighterUi() {
@@ -1168,7 +1124,10 @@
 
   function normalizeMinorControls() {
     var top = document.getElementById("top");
-    if (top) top.setAttribute("aria-label", "Înapoi sus");
+    if (top) {
+      top.setAttribute("aria-label", "Înapoi sus");
+      document.querySelector("main").appendChild(top);
+    }
   }
 
   function registerOfflineSupport() {
@@ -1197,7 +1156,32 @@
     enhanceMapCardsAndAccordions();
     setupSearch();
     ensureSidebarControls();
-    setupDarkMode();
+    document.querySelectorAll('main table').forEach(function (table) {
+      var cells = Array.from(table.querySelectorAll('tbody td'));
+      var simple = cells.length && cells.every(function (cell) {
+        return cell.hasAttribute('data-label') && cell.colSpan === 1 && cell.rowSpan === 1;
+      });
+      if (simple) {
+        table.classList.add('bb-table-stacked');
+        table.setAttribute('role', 'table');
+        table.querySelectorAll('thead, tbody, tfoot').forEach(function (group) { group.setAttribute('role', 'rowgroup'); });
+        table.querySelectorAll('tr').forEach(function (row) { row.setAttribute('role', 'row'); });
+        table.querySelectorAll('th').forEach(function (cell) { cell.setAttribute('role', 'columnheader'); });
+        cells.forEach(function (cell) { cell.setAttribute('role', 'cell'); });
+      }
+      var wrapper = table.closest('.table-wrap');
+      if (!wrapper) {
+        wrapper = document.createElement('div');
+        wrapper.className = 'table-wrap';
+        table.before(wrapper);
+        wrapper.appendChild(table);
+      }
+      if (!simple) {
+        wrapper.tabIndex = 0;
+        wrapper.setAttribute('role', 'region');
+        wrapper.setAttribute('aria-label', table.caption ? table.caption.textContent.trim() : 'Tabel derulabil orizontal');
+      }
+    });
     setupHighlighter();
     setupDrawer();
     setupGlobalKeyboard();

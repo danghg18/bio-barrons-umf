@@ -14,18 +14,19 @@
 <link rel="icon" type="image/png" href="icon-192.png">
 <meta name="theme-color" content="#0891B2">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Biologie">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/tokens.css">
-<link rel="stylesheet" href="assets/css/lesson.css">
-<link rel="stylesheet" href="assets/css/chapters/male-reproductive-system.css">
-<link rel="stylesheet" href="assets/css/chapter-redesign.css?v=20260727-highlighter6">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/tokens.css?v=20260909-editorial1">
+<link rel="stylesheet" href="assets/css/lesson.css?v=20260909-editorial1">
+<link rel="stylesheet" href="assets/css/chapters/male-reproductive-system.css?v=20260909-editorial1">
+<link rel="stylesheet" href="assets/css/chapter-redesign.css?v=20260909-editorial1">
+<script src="assets/js/light-mode.js?v=20260909-editorial1"></script>
 </head>
-<body>
+<body class="bb-chapter-redesign">
 
 <a class="lesson-skip" href="#lesson-content">Sari la conținutul lecției</a>
 
@@ -84,9 +85,7 @@
     <button class="nav-settings-btn" id="nav-search-btn" onclick="openLessonSearch()">
       <span class="dot"></span> <span>Caută în lecție</span>
     </button>
-    <button class="nav-settings-btn" id="nav-dm-btn" onclick="toggleDarkMode()">
-      <span class="dot"></span> <span id="nav-dm-label">Mod noapte</span>
-    </button>
+
     <button class="nav-settings-btn" id="nav-hl-btn" onclick="toggleHighlighter()">
       <span class="dot"></span> <span id="nav-hl-label">Evidențiator</span>
     </button>
@@ -94,7 +93,7 @@
 </nav>
 
 <button id="top" onclick="window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})" style="display:none;align-items:center;justify-content:center;">↑</button>
-<button id="dm-btn" title="Mod noapte" onclick="toggleDarkMode()">◐</button>
+
 <div id="hl-badge">Evidențiator ON</div>
 <button id="hl-btn" title="Evidențiator text (galben neon)" onclick="toggleHighlighter()">✎</button>
 
@@ -604,14 +603,14 @@
 </div><!-- /.ch-layout -->
 
 
-<script src="assets/js/chapters-data.js"></script>
-<script src="assets/js/chapters/male-reproductive-system.js"></script>
+<script src="assets/js/chapters-data.js?v=20260909-editorial1"></script>
+<script src="assets/js/chapters/male-reproductive-system.js?v=20260909-editorial1"></script>
 
 <button id="settings-fab" onclick="toggleSettingsFab()" title="Setări" aria-label="Setări">⚙</button>
 <div id="settings-panel" role="menu" aria-label="Setări lecție">
-  <button class="settings-opt" id="sfab-dm"   onclick="toggleDarkMode()">🌙 Mod noapte</button>
+
   <button class="settings-opt" id="sfab-hl"   onclick="toggleHighlighter()">🖊 Evidențiator</button>
 </div>
-<script src="assets/js/chapter-redesign.js?v=20260907-nervous11"></script>
+<script src="assets/js/chapter-redesign.js?v=20260909-editorial1"></script>
 </body>
 </html>

@@ -1,10 +1,10 @@
 /* Interactive quiz layer for the nervous-system chapter. */
 
 body.bb-quiz-page {
-  --quiz-success: #047857;
+  --quiz-success: var(--ok);
   --quiz-success-soft: #ecfdf5;
   --quiz-success-line: #86efac;
-  --quiz-review: #be123c;
+  --quiz-review: var(--danger);
   --quiz-review-soft: #fff1f2;
   --quiz-review-line: #fecdd3;
 }
@@ -13,8 +13,8 @@ body.bb-quiz-page main {
   max-width: 1040px !important;
 }
 
-body.bb-quiz-page .lesson-search-trigger::after {
-  content: "Caută în grile" !important;
+@media (min-width: 1241px) {
+  body.bb-quiz-page .lesson-search-trigger::after { content: "Caută în grile"; }
 }
 
 body.bb-quiz-page .quiz-nav-link {
@@ -72,7 +72,7 @@ body.bb-quiz-page .quiz-progress-track span {
   display: block;
   width: 0;
   height: 100%;
-  background: var(--bb-accent);
+  background: var(--bb-action);
   border-radius: inherit;
   transition: width 220ms cubic-bezier(.22, 1, .36, 1);
 }
@@ -437,21 +437,6 @@ body.bb-quiz-page .quiz-fatal {
   background: var(--quiz-review-soft);
   border: 1px solid var(--quiz-review-line);
   border-radius: 14px;
-}
-
-body.dark.bb-quiz-page {
-  --quiz-success: #6ee7b7;
-  --quiz-success-soft: color-mix(in srgb, #047857 28%, var(--bb-surface));
-  --quiz-success-line: #047857;
-  --quiz-review: #fda4af;
-  --quiz-review-soft: color-mix(in srgb, #9f1239 24%, var(--bb-surface));
-  --quiz-review-line: #9f1239;
-}
-
-body.dark.bb-quiz-page .quiz-result.is-correct,
-body.dark.bb-quiz-page .quiz-result.is-review,
-body.dark.bb-quiz-page .quiz-result.is-error {
-  color: var(--bb-ink);
 }
 
 @media (max-width: 640px) {

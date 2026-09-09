@@ -13,15 +13,15 @@ body.bb-chapter-redesign {
   --bb-accent: var(--chapter-accent, var(--primary, #2563eb));
   --bb-accent-soft: var(--chapter-accent-light, #eff6ff);
   --bb-accent-line: color-mix(in srgb, var(--bb-accent) 28%, #d7dee8);
-  --bb-canvas: #f4f7fb;
-  --bb-surface: #ffffff;
-  --bb-surface-subtle: #f8fafc;
+  --bb-canvas: var(--bg-page);
+  --bb-surface: var(--bg-surface);
+  --bb-surface-subtle: var(--bg-sunken);
   --bb-surface-muted: #eef2f7;
-  --bb-ink: #0f172a;
-  --bb-text: #334155;
-  --bb-muted: #64748b;
-  --bb-line: #dbe3ec;
-  --bb-line-strong: #c8d2df;
+  --bb-ink: var(--fg-1);
+  --bb-text: var(--fg-2);
+  --bb-muted: var(--fg-3);
+  --bb-line: var(--border);
+  --bb-line-strong: var(--border-strong);
   --bb-success: #047857;
   --bb-warning: #b45309;
   --bb-danger: #be123c;
@@ -43,7 +43,7 @@ body.bb-chapter-redesign {
   margin: 0;
   background: var(--bb-canvas) !important;
   color: var(--bb-text) !important;
-  font-family: var(--font-body, "Noto Sans", system-ui, sans-serif);
+  font-family: var(--font-body, "Figtree", system-ui, sans-serif);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -405,32 +405,46 @@ body.bb-chapter-redesign .lesson-search-trigger::after {
   white-space: nowrap;
 }
 
-body.bb-chapter-redesign .lesson-search:not(.open) .lesson-search-panel {
-  display: none !important;
-}
-
-body.bb-chapter-redesign .lesson-search.open {
-  width: min(430px, 40vw) !important;
-}
-
-body.bb-chapter-redesign .lesson-search.open .lesson-search-trigger {
-  display: none !important;
-}
-
-body.bb-chapter-redesign .lesson-search.open .lesson-search-panel {
-  position: static !important;
-  inset: auto !important;
-  width: 100% !important;
+/* Keep the trigger in the header; reveal the field underneath without reflow. */
+body.bb-chapter-redesign .lesson-search .lesson-search-panel {
+  position: absolute !important;
+  top: calc(100% + 18px) !important;
+  right: 0 !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: min(380px, calc(100vw - 32px)) !important;
   max-width: none !important;
   min-width: 0 !important;
   padding: 0 !important;
   display: flex !important;
+  opacity: 0 !important;
+  visibility: hidden;
+  pointer-events: none !important;
+  transform: translateX(12px) !important;
+  transition: opacity 220ms ease-out, transform 220ms cubic-bezier(.22, 1, .36, 1), visibility 220ms !important;
+  background: var(--bb-surface) !important;
+  border: 0 !important;
+  border-radius: 10px !important;
+  box-shadow: 0 3px 8px rgba(15, 23, 42, .09) !important;
+}
+
+body.bb-chapter-redesign .lesson-search.open .lesson-search-panel {
   opacity: 1 !important;
+  visibility: visible;
   pointer-events: auto !important;
   transform: none !important;
-  background: transparent !important;
-  border: 0 !important;
-  box-shadow: none !important;
+}
+
+body.bb-chapter-redesign .lesson-search.open .lesson-search-trigger {
+  color: var(--bb-accent) !important;
+  border-color: var(--bb-accent-line) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.bb-chapter-redesign .lesson-search .lesson-search-panel {
+    transition: none !important;
+    transform: none !important;
+  }
 }
 
 body.bb-chapter-redesign .lesson-search-box {
@@ -459,7 +473,7 @@ body.bb-chapter-redesign .lesson-search-box input {
   border: 0 !important;
   outline: 0 !important;
   box-shadow: none !important;
-  font-family: var(--font-body, "Noto Sans", system-ui, sans-serif);
+  font-family: var(--font-body, "Figtree", system-ui, sans-serif);
   font-size: 0.9rem;
 }
 
@@ -545,9 +559,9 @@ body.bb-chapter-redesign #sidenav {
   flex-direction: column;
   overflow-x: hidden !important;
   overflow-y: auto !important;
-  background: var(--bb-surface) !important;
-  border: 1px solid var(--bb-line) !important;
-  border-radius: var(--bb-radius-md) !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
   box-shadow: none !important;
   transform: none;
 }
@@ -557,7 +571,7 @@ body.bb-chapter-redesign nav#sidenav .nav-header {
   flex: 0 0 auto;
   margin: 0 0 0.45rem !important;
   padding: 20px 18px 17px !important;
-  background: var(--bb-surface) !important;
+  background: transparent !important;
   border: 0 !important;
   border-bottom: 1px solid var(--bb-line) !important;
 }
@@ -602,12 +616,10 @@ body.bb-chapter-redesign nav#sidenav .nav-group-label {
   line-height: 1.2;
   text-transform: uppercase;
 }
-
 body.bb-chapter-redesign #sidenav a,
 body.bb-chapter-redesign .nav-settings-btn,
-body.bb-chapter-redesign #nav-dm-btn,
 body.bb-chapter-redesign #nav-hl-btn,
-body.bb-chapter-redesign #nav-search-btn {
+body.bb-chapter-redesign #nav-search-btn{
   min-height: 44px !important;
   width: auto !important;
   margin: 2px 10px !important;
@@ -634,21 +646,24 @@ body.bb-chapter-redesign .nav-settings-btn .dot {
   content: none !important;
   display: none !important;
 }
-
 body.bb-chapter-redesign #sidenav a:hover,
-body.bb-chapter-redesign #sidenav a.active,
 body.bb-chapter-redesign .nav-settings-btn:hover,
 body.bb-chapter-redesign .nav-settings-btn.on,
-body.bb-chapter-redesign #nav-dm-btn:hover,
-body.bb-chapter-redesign #nav-dm-btn.on,
 body.bb-chapter-redesign #nav-hl-btn:hover,
 body.bb-chapter-redesign #nav-hl-btn.on,
 body.bb-chapter-redesign #nav-hl-btn.hl-on,
-body.bb-chapter-redesign #nav-search-btn:hover {
+body.bb-chapter-redesign #nav-search-btn:hover{
   color: var(--bb-accent) !important;
   background: var(--bb-accent-soft) !important;
   border-color: transparent !important;
   transform: none !important;
+}
+
+body.bb-chapter-redesign #sidenav a.active {
+  color: var(--bb-ink) !important;
+  background: var(--bb-surface) !important;
+  border-inline-start: 2px solid var(--bb-accent) !important;
+  border-radius: 0 !important;
 }
 
 body.bb-chapter-redesign #sidenav a.sub {
@@ -705,17 +720,17 @@ body.bb-chapter-redesign .page-section:not(.chapter-home) .hero {
   position: relative;
   overflow: visible !important;
   margin: 0 0 20px !important;
-  padding: 30px 34px !important;
+  padding: 16px 0 24px !important;
   display: block !important;
   color: var(--bb-text) !important;
-  background: var(--bb-surface) !important;
-  border: 1px solid var(--bb-line) !important;
+  background: transparent !important;
+  border: 0 !important;
   border-radius: var(--bb-radius-lg) !important;
   box-shadow: none !important;
 }
 
 body.bb-chapter-redesign .chapter-home .hero {
-  padding: 38px 40px !important;
+  padding: 20px 0 28px !important;
 }
 
 body.bb-chapter-redesign .bb-hero-copy,
@@ -726,10 +741,10 @@ body.bb-chapter-redesign .bb-home-copy {
 
 body.bb-chapter-redesign .chapter-home .hero h1,
 body.bb-chapter-redesign .chapter-home .bb-lab-title {
-  max-width: 18ch !important;
+  max-width: 28ch !important;
   margin: 0 0 0.85rem !important;
   color: var(--bb-ink) !important;
-  font-size: 3rem !important;
+  font-size: 2.75rem !important;
   font-weight: 900 !important;
   letter-spacing: -0.04em !important;
   line-height: 1.04 !important;
@@ -746,7 +761,7 @@ body.bb-chapter-redesign .page-section:not(.chapter-home) .hero p {
   max-width: var(--bb-reading-w) !important;
   margin: 0 !important;
   color: var(--bb-text) !important;
-  font-family: var(--font-body, "Noto Sans", system-ui, sans-serif);
+  font-family: var(--font-body, "Figtree", system-ui, sans-serif);
   font-size: 1rem !important;
   font-weight: 400 !important;
   line-height: 1.7 !important;
@@ -898,12 +913,12 @@ body.bb-chapter-redesign .sec-head .num {
 body.bb-chapter-redesign .card,
 body.bb-chapter-redesign .summary,
 body.bb-chapter-redesign .chapter-flow {
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 2rem !important;
   padding: 26px 28px !important;
   color: var(--bb-text) !important;
   background: var(--bb-surface) !important;
-  border: 1px solid var(--bb-line) !important;
-  border-radius: var(--bb-radius-lg) !important;
+  border: 0 !important;
+  border-radius: var(--bb-radius-md) !important;
   box-shadow: none !important;
 }
 
@@ -964,12 +979,12 @@ body.bb-chapter-redesign .box strong {
 }
 
 body.bb-chapter-redesign .summary {
-  background: var(--bb-accent-soft) !important;
-  border-color: var(--bb-accent-line) !important;
+  background: var(--bb-surface-subtle) !important;
+  border-color: var(--bb-line) !important;
 }
 
 body.bb-chapter-redesign .summary h3 {
-  color: var(--bb-accent) !important;
+  color: var(--bb-ink) !important;
 }
 
 body.bb-chapter-redesign .g2,
@@ -1001,8 +1016,8 @@ body.bb-chapter-redesign .case-study {
   margin: 0.7rem 0 !important;
   padding: 15px 16px !important;
   color: var(--bb-text) !important;
-  background: color-mix(in srgb, var(--bb-accent) 7%, var(--bb-surface)) !important;
-  border: 1px solid var(--bb-accent-line) !important;
+  background: var(--bb-surface-subtle) !important;
+  border: 1px solid var(--bb-line) !important;
   border-radius: var(--bb-radius-md) !important;
   box-shadow: none !important;
   font-size: 0.94rem !important;
@@ -1286,6 +1301,15 @@ body.bb-chapter-redesign .chapter-map .g3:not(:last-child) > .map-card:last-chil
   border-bottom: 1px solid var(--bb-line) !important;
 }
 
+/* Informational chapter maps use open rows rather than nested panels. */
+body.bb-chapter-redesign .chapter-home .card > :is(.g2, .g3):not(:has(.map-card)) > .box {
+  padding: 16px 0 !important;
+  border: 0 !important;
+  border-top: 1px solid var(--bb-line) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+
 /* -------------------------------------------------------------------------- */
 /* Figures and tables                                                         */
 /* -------------------------------------------------------------------------- */
@@ -1317,7 +1341,7 @@ body.bb-chapter-redesign .figure figcaption {
   max-width: 68ch;
   margin: 0.65rem auto 0 !important;
   color: var(--bb-muted) !important;
-  font-size: 0.8rem !important;
+  font-size: 0.875rem !important;
   font-style: normal !important;
   line-height: 1.55 !important;
   text-align: center;
@@ -1346,7 +1370,7 @@ body.bb-chapter-redesign .table-wrap {
 
 body.bb-chapter-redesign table {
   width: 100% !important;
-  min-width: 620px;
+  min-width: 0;
   margin: 0 !important;
   display: table !important;
   overflow: visible !important;
@@ -1401,7 +1425,7 @@ body.bb-chapter-redesign table td {
 
 body.bb-chapter-redesign table th {
   color: var(--bb-ink) !important;
-  background: var(--bb-accent-soft) !important;
+  background: var(--bb-surface-subtle) !important;
   font-family: var(--font-display, "Figtree", system-ui, sans-serif);
   font-size: 0.82rem;
   font-weight: 800 !important;
@@ -1418,6 +1442,19 @@ body.bb-chapter-redesign table tbody tr:last-child td {
 body.bb-chapter-redesign table td::before {
   content: none !important;
   display: none !important;
+}
+
+/* Labelled comparisons stack; complex tables preserve their column relationships. */
+body.bb-chapter-redesign .table-wrap { max-width: 100%; min-width: 0; }
+body.bb-chapter-redesign table:not(.bb-table-stacked) { min-width: 620px; }
+@media (max-width: 640px) {
+  body.bb-chapter-redesign table.bb-table-stacked { min-width: 0 !important; display: block !important; }
+  body.bb-chapter-redesign .bb-table-stacked thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  body.bb-chapter-redesign .bb-table-stacked tbody { display: block !important; }
+  body.bb-chapter-redesign .bb-table-stacked tr { display: block !important; border-bottom: 2px solid var(--bb-line-strong) !important; }
+  body.bb-chapter-redesign .bb-table-stacked td { display: block !important; width: 100%; overflow-wrap: anywhere; }
+  body.bb-chapter-redesign .bb-table-stacked td::before { content: attr(data-label) !important; display: block !important; margin-bottom: .35rem; color: var(--bb-ink); font-weight: 700; }
+  body.bb-chapter-redesign .bb-table-stacked caption { display: block; }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -1803,7 +1840,7 @@ body.bb-chapter-redesign .fc-why-box.emerald {
 
 body.bb-chapter-redesign .search-found {
   padding: 0 0.08em;
-  color: inherit;
+  color: var(--bb-ink);
   background: color-mix(in srgb, var(--bb-highlight) 78%, transparent);
   border-radius: 2px;
 }
@@ -1989,52 +2026,11 @@ body.bb-chapter-redesign #top {
   box-shadow: none !important;
 }
 
-body.bb-chapter-redesign #dm-btn,
 body.bb-chapter-redesign #hl-btn,
 body.bb-chapter-redesign #hl-badge,
 body.bb-chapter-redesign #settings-fab,
-body.bb-chapter-redesign #settings-panel {
+body.bb-chapter-redesign #settings-panel{
   display: none !important;
-}
-
-/* -------------------------------------------------------------------------- */
-/* Dark mode                                                                  */
-/* -------------------------------------------------------------------------- */
-
-body.dark.bb-chapter-redesign {
-  --bb-canvas: #08111f;
-  --bb-surface: #101b2d;
-  --bb-surface-subtle: #152238;
-  --bb-surface-muted: #1b2a42;
-  --bb-ink: #f8fafc;
-  --bb-text: #d6deea;
-  --bb-muted: #aab6c7;
-  --bb-line: #2a3a51;
-  --bb-line-strong: #3a4b64;
-  --bb-accent-soft: color-mix(in srgb, var(--bb-accent) 18%, #101b2d);
-  --bb-accent-line: color-mix(in srgb, var(--bb-accent) 46%, #2a3a51);
-  --bb-highlight: #facc15;
-  background: var(--bb-canvas) !important;
-  color: var(--bb-text) !important;
-}
-
-body.dark.bb-chapter-redesign .fig img,
-body.dark.bb-chapter-redesign .figure img,
-body.dark.bb-chapter-redesign .img-txt img {
-  background: #ffffff !important;
-  border-color: #526178 !important;
-}
-
-body.dark.bb-chapter-redesign .lab-topbar-back-icon {
-  background: color-mix(in srgb, white 16%, transparent) !important;
-}
-
-body.dark.bb-chapter-redesign .search-found-current {
-  color: #111827 !important;
-}
-
-body.dark.bb-chapter-redesign .bb-highlighter-color.is-selected {
-  outline-color: var(--bb-ink);
 }
 
 @media (max-width: 900px) {
@@ -2165,6 +2161,19 @@ body.dark.bb-chapter-redesign .bb-highlighter-color.is-selected {
 }
 
 @media (max-width: 1024px) {
+  /* Return action stays in document flow on small screens, never over prose. */
+  body.bb-chapter-redesign #top {
+    position: static !important;
+    display: flex !important;
+    width: max-content !important;
+    min-width: 140px;
+    gap: 12px;
+    margin: 24px 0 0;
+    padding: 0 16px !important;
+    border-radius: var(--bb-radius-sm) !important;
+  }
+  body.bb-chapter-redesign #top::before { content: "Înapoi sus"; font-size: .9rem; font-weight: 700; }
+
   body.bb-chapter-redesign {
     --bb-topbar-h: 58px;
   }
@@ -2284,25 +2293,12 @@ body.dark.bb-chapter-redesign .bb-highlighter-color.is-selected {
     content: none;
   }
 
-  body.bb-chapter-redesign .lesson-search.open {
+  body.bb-chapter-redesign .lesson-search .lesson-search-panel {
     position: fixed !important;
     top: calc(var(--bb-topbar-h) + 8px) !important;
     right: 8px !important;
     left: 8px !important;
-    z-index: var(--bb-z-search) !important;
-    width: auto !important;
-    max-width: none !important;
-    height: auto !important;
-    padding: 7px !important;
-    background: var(--bb-surface) !important;
-    border: 1px solid var(--bb-line-strong) !important;
-    border-radius: 12px !important;
-    box-shadow: 0 18px 44px rgba(15, 23, 42, 0.2) !important;
-  }
-
-  body.bb-chapter-redesign .lesson-search.open .lesson-search-panel,
-  body.bb-chapter-redesign .lesson-search.open .lesson-search-box {
-    width: 100% !important;
+    width: calc(100vw - 16px) !important;
   }
 
   body.bb-chapter-redesign .lab-topbar-back {
@@ -2360,7 +2356,7 @@ body.dark.bb-chapter-redesign .bb-highlighter-color.is-selected {
     width: min(320px, 86vw) !important;
     height: calc(100dvh - var(--bb-topbar-h)) !important;
     max-height: none !important;
-    padding: 8px 0 14px !important;
+    padding: 8px 0 calc(14px + env(safe-area-inset-bottom)) !important;
     display: flex !important;
     background: var(--bb-surface) !important;
     border: 0 !important;
@@ -2394,7 +2390,7 @@ body.dark.bb-chapter-redesign .bb-highlighter-color.is-selected {
   body.bb-chapter-redesign .chapter-home .hero,
   body.bb-chapter-redesign .page-section:not(.chapter-home) .hero {
     margin: 0 0 16px !important;
-    padding: 24px !important;
+    padding: 16px 0 20px !important;
     border-radius: var(--bb-radius-md) !important;
   }
 
@@ -2449,11 +2445,12 @@ body.dark.bb-chapter-redesign .bb-highlighter-color.is-selected {
 
   body.bb-chapter-redesign .page-nav {
     display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: minmax(0, 1fr);
   }
 
   body.bb-chapter-redesign .page-nav a {
     width: 100%;
+    padding: 12px 16px !important;
   }
 
   body.bb-chapter-redesign .flow {
@@ -2486,8 +2483,8 @@ body.dark.bb-chapter-redesign .bb-highlighter-color.is-selected {
     border-radius: 10px !important;
   }
 
-  body.bb-chapter-redesign table {
-    min-width: 680px !important;
+  body.bb-chapter-redesign table:not(.bb-table-stacked) {
+    min-width: 620px;
   }
 }
 
@@ -2504,7 +2501,7 @@ body.dark.bb-chapter-redesign .bb-highlighter-color.is-selected {
   body.bb-chapter-redesign .hero,
   body.bb-chapter-redesign .chapter-home .hero,
   body.bb-chapter-redesign .page-section:not(.chapter-home) .hero {
-    padding: 20px !important;
+    padding: 16px 4px 20px !important;
   }
 
   body.bb-chapter-redesign .chapter-home .hero h1,

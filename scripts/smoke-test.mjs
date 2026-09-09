@@ -58,8 +58,9 @@ try {
   await home.waitForFunction(() => document.querySelectorAll('#palette-list [data-url]').length > 0);
   await home.locator('#palette-input').fill('țesut nervos');
   await home.waitForFunction(() => document.querySelectorAll('#palette-list [data-url]').length > 0);
-  await home.evaluate(() => document.getElementById('dm-btn').click());
-  if (await home.evaluate(() => localStorage.darkMode) !== '1') errors.push('homepage dark mode did not persist');
+  await home.evaluate(() => localStorage.setItem('darkMode', '1'));
+  await home.reload();
+  if (await home.evaluate(() => document.body.classList.contains('dark') || localStorage.getItem('darkMode') !== null)) errors.push('homepage did not retire dark preference');
   await home.close();
 
   for (const file of lessonFiles) {
@@ -89,8 +90,7 @@ try {
     const searchCount = await page.locator('#lesson-search-count').textContent();
     const searchTotal = Number((searchCount.match(/\/\s*(\d+)/) || [])[1]);
     if (!searchTotal) errors.push(`${file}: cross-section search returned no results`);
-    await page.evaluate(() => window.toggleDarkMode());
-    if (await page.evaluate(() => localStorage.darkMode) !== (await page.evaluate(() => document.body.classList.contains('dark') ? '1' : '0'))) errors.push(`${file}: dark preference mismatch`);
+    if (await page.locator('#dm-btn, #nav-dm-btn, #sfab-dm').count() || await page.evaluate(() => document.body.classList.contains('dark') || typeof window.toggleDarkMode !== 'undefined')) errors.push(`${file}: obsolete theme behavior remains`);
     await page.close();
   }
 
@@ -150,6 +150,25 @@ try {
   await first.locator('.quiz-check').click();
   if (!await first.getAttribute('data-question-id')) errors.push('quiz IDs unavailable');
   if (!await quiz.evaluate(() => localStorage.getItem('bb.quiz.sistem-nervos.v1'))) errors.push('quiz state did not persist');
+  // Exact-set scoring, retry, persistence, and reset for all 50 authored IDs.
+  await first.locator('.quiz-retry').click();
+  const questions = await quiz.evaluate(() => BB_NERVOUS_QUIZ.questions.map(q => ({ id:q.id, correct:q.correct })));
+  for (const question of questions) {
+    const card = quiz.locator('[data-question-id="' + question.id + '"]');
+    const route = await card.evaluate(node => node.closest('.page-section').id.slice(5));
+    await quiz.evaluate(route => window.goto(route), route);
+    for (const letter of question.correct) await card.locator('input[value="' + letter + '"]').check();
+    await card.locator('.quiz-check').click();
+    if (!await card.evaluate(node => node.classList.contains('is-correct'))) errors.push(question.id + ': exact answer set scored incorrectly');
+  }
+  await quiz.reload();
+  if (await quiz.locator('.quiz-question.is-correct').count() !== 50) errors.push('quiz reload lost verified answers');
+  await quiz.locator('.page-section.active .quiz-reset-start').click();
+  await quiz.locator('.page-section.active .quiz-reset-cancel').click();
+  if (await quiz.locator('.quiz-question.is-correct').count() !== 50) errors.push('cancel reset changed saved answers');
+  await quiz.locator('.page-section.active .quiz-reset-start').click();
+  await quiz.locator('.page-section.active .quiz-reset-confirm').click();
+  if (await quiz.locator('.quiz-question.is-verified').count()) errors.push('quiz reset failed');
   await quiz.close();
 
   const swPage = await newPage(context);

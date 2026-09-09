@@ -1,24 +1,3 @@
-/* ── DARK MODE ── */
-function syncHomeDarkButton(dark){
-  const button=document.getElementById('dm-btn');
-  if(!button)return;
-  button.textContent=dark?'☀️':'🌙';
-  button.setAttribute('aria-pressed',String(dark));
-  button.setAttribute('aria-label',dark?'Activează modul luminos':'Activează modul întunecat');
-  button.title=dark?'Mod luminos':'Mod întunecat';
-}
-(function(){
-  let dark=false;
-  try{dark=localStorage.getItem('darkMode')==='1';}catch(error){}
-  document.body.classList.toggle('dark',dark);
-  syncHomeDarkButton(dark);
-})();
-document.getElementById('dm-btn').onclick=function(){
-  const dark=document.body.classList.toggle('dark');
-  syncHomeDarkButton(dark);
-  try{localStorage.setItem('darkMode',dark?'1':'0');}catch(error){}
-};
-
 /* ── CANONICAL CATALOG STATE ── */
 function syncChapterCatalog(){
   const byNumber=new Map(CHAPTERS.map(chapter=>[String(chapter.num),chapter]));
@@ -36,46 +15,21 @@ function syncChapterCatalog(){
       link.href=chapter.url;
       while(item.firstChild)link.appendChild(item.firstChild);
       const status=link.querySelector('.lab-item-soon-mark');
-      if(status){status.className='lab-item-done-mark';status.innerHTML='<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>';}
+      if(status){status.className='lab-item-done-mark';status.textContent='Disponibil';}
       item.replaceWith(link);
     }
   });
   document.querySelectorAll('.lab-bento-cat').forEach(function(group){
-    const category=group.querySelector('.lab-bento-cat-title')?.textContent.trim();
-    const records=CHAPTERS.filter(chapter=>chapter.cat===category);
-    const ring=group.querySelector('.cat-ring');
+    const numbers = new Set(Array.from(group.querySelectorAll('.lab-item-num'), node => Number(node.textContent.trim())));
+    const records = CHAPTERS.filter(chapter => numbers.has(Number(chapter.num)));
     const label=group.querySelector('.lab-bento-cat-ring-inner');
-    if(!records.length||!ring)return;
+    if(!records.length)return;
     const done=records.filter(chapter=>chapter.done&&chapter.url).length;
-    ring.dataset.done=String(done);
-    ring.dataset.total=String(records.length);
-    if(label)label.textContent=done+'/'+records.length;
+    if(label)label.textContent=done+' din '+records.length+' lecții disponibile';
   });
 }
 syncChapterCatalog();
-
-/* ── CATEGORY RINGS ── */
-function drawRing(svgEl, done, total, color) {
-  const size=parseInt(svgEl.getAttribute('width'));
-  const stroke=5;
-  const r=(size-stroke)/2;
-  const c=2*Math.PI*r;
-  const pct=total>0?(done/total)*100:0;
-  const offset=c-(pct/100)*c;
-  svgEl.innerHTML=`
-    <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="rgba(148,163,184,0.18)" stroke-width="${stroke}"/>
-    <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="${color}" stroke-width="${stroke}"
-      stroke-linecap="round" stroke-dasharray="${c.toFixed(2)}" stroke-dashoffset="${c.toFixed(2)}"
-      transform="rotate(-90 ${size/2} ${size/2})"
-      style="transition:stroke-dashoffset 1.2s ease 0.1s" class="ring-arc"/>`;
-  requestAnimationFrame(()=>requestAnimationFrame(()=>{
-    svgEl.querySelector('.ring-arc').style.strokeDashoffset=offset.toFixed(2);
-  }));
-}
-
-document.querySelectorAll('.cat-ring').forEach(function(svg){
-  drawRing(svg,+svg.dataset.done,+svg.dataset.total,svg.dataset.color);
-});
+document.querySelectorAll('.lab-item-done-mark').forEach(function (status) { status.textContent = 'Disponibil'; });
 
 /* ── COMMAND PALETTE DATA ── */
 const SEARCHABLE_CHAPTERS = CHAPTERS.filter(c => c.done && c.url);
@@ -263,7 +217,7 @@ async function renderPaletteItems(q){
         <div class="lab-palette-title">Cap. ${String(c.num).padStart(2,'0')} · ${c.name}</div>
         <div class="lab-palette-sub">${c.cat}</div>
       </div>
-      <span class="lab-palette-tag" style="color:${c.color};background:${c.colorLight}">${c.done?'Complet':'În curând'}</span>
+      <span class="lab-palette-tag" style="color:${c.color};background:${c.colorLight}">${c.done?'Disponibil':'În curând'}</span>
     </button>`).join('');
   bindPaletteActions();
 }
@@ -280,7 +234,6 @@ function openPalette(){
   palette.style.display='block';
   document.getElementById('search-btn').setAttribute('aria-expanded','true');
   document.querySelector('.lab').inert=true;
-  document.getElementById('dm-btn').inert=true;
   palettePreviousOverflow=document.body.style.overflow;
   document.body.style.overflow='hidden';
   document.getElementById('palette-input').value='';
@@ -292,7 +245,6 @@ function closePalette(){
   document.getElementById('palette').style.display='none';
   document.getElementById('search-btn').setAttribute('aria-expanded','false');
   document.querySelector('.lab').inert=false;
-  document.getElementById('dm-btn').inert=false;
   document.body.style.overflow=palettePreviousOverflow;
   if(paletteReturnFocus&&typeof paletteReturnFocus.focus==='function') paletteReturnFocus.focus();
 }

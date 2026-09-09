@@ -57,28 +57,6 @@ window.addEventListener('scroll',()=>{ document.getElementById('top').style.disp
 // ════ ACCORDION ════
 function tog(h){ h.classList.toggle('open'); h.nextElementSibling.classList.toggle('show'); }
 
-// ════ DARK MODE ════
-function toggleDarkMode(){
-  const isDark = document.body.classList.toggle('dark');
-  localStorage.setItem('darkMode', isDark ? '1' : '0');
-  const navBtn = document.getElementById('nav-dm-btn');
-  const navLabel = document.getElementById('nav-dm-label');
-  if (isDark) {
-    navBtn.classList.add('on');
-    navLabel.textContent = 'Mod zi';
-  } else {
-    navBtn.classList.remove('on');
-    navLabel.textContent = 'Mod noapte';
-  }
-}
-if(localStorage.getItem('darkMode')==='1'){
-  document.body.classList.add('dark');
-  const navBtn = document.getElementById('nav-dm-btn');
-  const navLabel = document.getElementById('nav-dm-label');
-  if(navBtn) navBtn.classList.add('on');
-  if(navLabel) navLabel.textContent = 'Mod zi';
-}
-
 // ════ HIGHLIGHTER ════
 let hlMode = false;
 function toggleHighlighter() {
@@ -390,9 +368,7 @@ function toggleSettingsFab(){
   if(panel) panel.classList.toggle('open');
 }
 function updateFabStates(){
-  var dm = document.getElementById('sfab-dm');
   var hl = document.getElementById('sfab-hl');
-  if(dm) dm.classList.toggle('on', document.body.classList.contains('dark'));
   if(hl) hl.classList.toggle('on', typeof hlMode !== 'undefined' && hlMode);
 }
 document.addEventListener('click', function(e){
@@ -403,10 +379,6 @@ document.addEventListener('click', function(e){
   }
 });
 (function(){
-  var origDark = window.toggleDarkMode;
-  if(typeof origDark === 'function'){
-    window.toggleDarkMode = function(){ origDark(); updateFabStates(); };
-  }
   var origHl = window.toggleHighlighter;
   if(typeof origHl === 'function'){
     window.toggleHighlighter = function(){ origHl(); updateFabStates(); };

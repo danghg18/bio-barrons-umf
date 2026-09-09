@@ -1,79 +1,4 @@
-/* ════════════════════════════════════════════════════════════════
-   Biologie Barrons — lesson brand uplift overlay.
-   Loads AFTER tokens.css and the page's inline styles.
-   Brings existing lesson markup vocabulary (.hero, .box, .acc-*)
-   into precise alignment with the brand kit (kit-styles.css).
-   ════════════════════════════════════════════════════════════════ */
 
-/* ── HERO — signature blue gradient banner (kit .site-header) ── */
-.hero {
-  background: var(--grad-hero) !important;
-  color: #fff !important;
-  border: none !important;
-  border-radius: 0 0 var(--r-2xl) var(--r-2xl) !important;
-  padding: 2.6rem 2.5rem 2.2rem !important;
-  position: relative;
-  overflow: hidden;
-  box-shadow: var(--shadow-md) !important;
-}
-.hero::before {
-  content: '' !important;
-  position: absolute !important;
-  top: -90px !important; right: -80px !important;
-  left: auto !important; bottom: auto !important;
-  width: 300px !important; height: 300px !important;
-  background: rgba(255,255,255,.06) !important;
-  border-radius: 50% !important;
-  pointer-events: none;
-}
-.hero::after {
-  content: '';
-  position: absolute;
-  bottom: -100px; left: -60px;
-  width: 240px; height: 240px;
-  border-radius: 50%;
-  background: rgba(255,255,255,.04);
-  pointer-events: none;
-}
-.hero h1 {
-  color: #fff !important;
-  font-family: var(--font-display);
-  font-size: 2.2rem !important;
-  font-weight: 900;
-  letter-spacing: -.5px;
-  line-height: 1.12;
-  margin: 0 0 .6rem;
-  position: relative;
-}
-.hero p {
-  color: rgba(255,255,255,.92) !important;
-  font-family: var(--font-body);
-  max-width: 56ch;
-  margin: 0;
-  position: relative;
-  font-weight: 500;
-}
-
-/* Hero badge pills — glassy white-on-gradient (kit .sub style) */
-.hero .badges { margin-top: 1rem; gap: .4rem; position: relative; }
-.hero .badge,
-.hero .badges .badge {
-  background: rgba(255,255,255,.15) !important;
-  border: 1px solid rgba(255,255,255,.28) !important;
-  color: #fff !important;
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: .76rem;
-  letter-spacing: .04em;
-  padding: .28rem .85rem !important;
-  border-radius: var(--r-pill) !important;
-  text-transform: none;
-}
-
-/* Dark mode: hero stays its blue gradient (signature element) */
-body.dark .hero { background: var(--grad-hero) !important; }
-body.dark .hero h1 { color: #fff !important; }
-body.dark .hero p { color: rgba(255,255,255,.92) !important; }
 
 /* ── CALLOUT BOX — kit .box pattern, color-keyed ── */
 .box {
@@ -104,62 +29,12 @@ body.dark .hero p { color: rgba(255,255,255,.92) !important; }
 .box.rose    { border-left-color: var(--rose);     background: var(--rose-light); }
 .box.amber   { border-left-color: var(--amber);    background: var(--amber-light); }
 
-/* ── CARDS — adopt kit shadow recipe ── */
-.card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border);
-  border-radius: var(--r-md);
-  box-shadow: var(--shadow-sm);
-  padding: 1.5rem;
-  margin-bottom: 1.4rem;
-  transition: box-shadow var(--dur-base);
-}
-
 /* ── SECTION HEAD — colored numeric prefix ── */
 .sec-head .num {
   font-family: var(--font-display);
   font-weight: 900;
   border-radius: var(--r-xs);
 }
-
-/* ── FIGURES — framed white with kit shadow ── */
-.fig img,
-.figure img {
-  border-radius: var(--r-lg);
-  border: 1px solid var(--border);
-  padding: .6rem;
-  background: #fff;
-  box-shadow: var(--shadow-md);
-}
-body.dark .fig img,
-body.dark .figure img { background: #fff; }
-.fig figcaption,
-.fig .caption {
-  font-family: var(--font-body);
-  font-size: .82rem;
-  color: var(--fg-4);
-  margin-top: .6rem;
-  font-style: italic;
-  text-align: center;
-}
-
-/* ── FLOATING ACTION BUTTON (Settings) ── */
-.fab,
-#dm-btn,
-.lab-fab {
-  background: var(--primary) !important;
-  color: #fff !important;
-  border: none !important;
-  width: 52px !important; height: 52px !important;
-  border-radius: 50% !important;
-  box-shadow: var(--shadow-float) !important;
-  transition: transform var(--dur-base);
-  font-size: 1.3rem;
-  display: inline-flex; align-items: center; justify-content: center;
-}
-.fab:hover,
-#dm-btn:hover,
-.lab-fab:hover { transform: scale(1.05); }
 
 /* ── ACCORDION (mind-map / details panels) ── */
 .acc, .accordion {
@@ -231,43 +106,3 @@ body.dark .figure img { background: #fff; }
   display: inline-flex;
   align-items: center; justify-content: center;
 }
-
-/* ── TOPBAR (lab-topbar legacy) — keep clean & branded ── */
-.lab-topbar {
-  background: rgba(246, 246, 243, 0.92);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
-}
-body.dark .lab-topbar {
-  background: rgba(15, 23, 42, 0.92);
-  border-bottom-color: rgba(255, 255, 255, 0.08);
-}
-
-/* ── TABLES (kit pattern) ── */
-.card table th {
-  background: var(--primary);
-  color: #fff;
-  font-family: var(--font-display);
-  font-weight: 800;
-  padding: .55rem .85rem;
-  text-align: left;
-}
-.card table td {
-  padding: .5rem .85rem;
-  border-bottom: 1px solid var(--border);
-  font-family: var(--font-body);
-}
-.card table tr:nth-child(even) td { background: var(--bg-sunken); }
-
-/* ── DARK-MODE TWEAKS ── */
-body.dark .card { background: var(--bg-surface); border-color: var(--border); }
-body.dark .box.blue    { background: rgba(37,99,235,.12); }
-body.dark .box.green,
-body.dark .box.emerald { background: rgba(5,150,105,.14); }
-body.dark .box.orange  { background: rgba(234,88,12,.14); }
-body.dark .box.violet,
-body.dark .box.purple  { background: rgba(124,58,237,.14); }
-body.dark .box.teal    { background: rgba(8,145,178,.14); }
-body.dark .box.red,
-body.dark .box.rose    { background: rgba(225,29,72,.14); }
