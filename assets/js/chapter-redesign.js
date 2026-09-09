@@ -470,8 +470,18 @@
     setDrawerClosedState(false);
   }
 
-  function searchIcon() {
-    return '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.8-3.8"/></svg>';
+  function searchIcon(className) {
+    var classAttribute = className ? ' class="' + className + '"' : "";
+    return '<svg' + classAttribute + ' viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.25"/><path d="M15.2 15.2L20 20"/></svg>';
+  }
+
+  function searchArrowIcon(direction) {
+    var path = direction === "previous" ? "M7 14l5-5 5 5" : "M7 10l5 5 5-5";
+    return '<svg class="lesson-search-arrow-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="' + path + '"/></svg>';
+  }
+
+  function searchCloseIcon() {
+    return '<svg class="lesson-search-close-icon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg>';
   }
 
   function createLessonSearch() {
@@ -483,14 +493,14 @@
     root.innerHTML =
       '<div class="lesson-search-panel">' +
       '<div class="lesson-search-box">' +
-      searchIcon() +
+      searchIcon("lesson-search-field-icon") +
       '<input id="lesson-search-input" type="search" aria-label="Caută în lecție" placeholder="Caută în lecție…" autocomplete="off">' +
       '<span id="lesson-search-count" class="lesson-search-count" aria-live="polite">0 / 0</span>' +
       '<div class="lesson-search-nav">' +
-      '<button type="button" class="lesson-search-btn" id="lesson-search-prev" aria-label="Rezultatul anterior">↑</button>' +
-      '<button type="button" class="lesson-search-btn" id="lesson-search-next" aria-label="Rezultatul următor">↓</button>' +
+      '<button type="button" class="lesson-search-btn" id="lesson-search-prev" aria-label="Rezultatul anterior" title="Rezultatul anterior">' + searchArrowIcon("previous") + "</button>" +
+      '<button type="button" class="lesson-search-btn" id="lesson-search-next" aria-label="Rezultatul următor" title="Rezultatul următor">' + searchArrowIcon("next") + "</button>" +
       "</div>" +
-      '<button type="button" class="lesson-search-close" id="lesson-search-close" aria-label="Închide căutarea">×</button>' +
+      '<button type="button" class="lesson-search-close" id="lesson-search-close" aria-label="Închide căutarea" title="Închide căutarea">' + searchCloseIcon() + "</button>" +
       "</div></div>";
     var back = topbar.querySelector(".lab-topbar-back");
     topbar.insertBefore(root, back || null);
@@ -521,7 +531,7 @@
       trigger.className = "lesson-search-trigger";
       trigger.setAttribute("aria-label", "Caută în lecție");
       trigger.setAttribute("title", "Caută în lecție (/)");
-      trigger.innerHTML = searchIcon();
+      trigger.innerHTML = searchIcon("lesson-search-trigger-icon");
       root.prepend(trigger);
     }
     trigger.setAttribute("aria-controls", "lesson-search-input");
@@ -532,6 +542,24 @@
         if (root.classList.contains("open")) closeSearch(true);
         else openSearch(true, trigger);
       });
+    }
+  }
+
+  function upgradeSearchControls(root) {
+    var previous = root.querySelector("#lesson-search-prev");
+    var next = root.querySelector("#lesson-search-next");
+    var close = root.querySelector("#lesson-search-close");
+    if (previous) {
+      previous.innerHTML = searchArrowIcon("previous");
+      previous.title = "Rezultatul anterior";
+    }
+    if (next) {
+      next.innerHTML = searchArrowIcon("next");
+      next.title = "Rezultatul următor";
+    }
+    if (close) {
+      close.innerHTML = searchCloseIcon();
+      close.title = "Închide căutarea";
     }
   }
 
@@ -634,6 +662,25 @@
     }
   }
 
+  function scrollOwnedSearchMatchIntoView(element) {
+    if (!element) return;
+    var topbar = document.querySelector(".lab-topbar");
+    var topbarHeight = topbar ? topbar.getBoundingClientRect().height : 0;
+    var readingAnchor = Math.max(topbarHeight + 24, Math.min(window.innerHeight * 0.28, 220));
+    var targetTop = Math.max(0, window.scrollY + element.getBoundingClientRect().top - readingAnchor);
+    window.scrollTo({
+      top: Math.round(targetTop),
+      behavior: prefersReducedMotion() ? "auto" : "smooth",
+    });
+    element.classList.remove("search-found-arriving");
+    window.requestAnimationFrame(function () {
+      element.classList.add("search-found-arriving");
+      window.setTimeout(function () {
+        element.classList.remove("search-found-arriving");
+      }, 360);
+    });
+  }
+
   function goToOwnedSearchMatch(index) {
     var total = state.searchMatches.length;
     if (!total) {
@@ -653,7 +700,7 @@
     if (match.element) {
       match.element.classList.add("search-found-current");
       window.requestAnimationFrame(function () {
-        match.element.scrollIntoView({ behavior: prefersReducedMotion() ? "auto" : "smooth", block: "center" });
+        scrollOwnedSearchMatchIntoView(match.element);
       });
     }
     updateOwnedSearchUi();
@@ -797,6 +844,7 @@
     if (input) input.setAttribute("aria-label", "Caută în lecție");
     if (count) count.setAttribute("aria-live", "polite");
     ensureSearchTrigger(state.searchRoot);
+    upgradeSearchControls(state.searchRoot);
     normalizeTopbarActions();
 
     if (state.ownedSearch) {
