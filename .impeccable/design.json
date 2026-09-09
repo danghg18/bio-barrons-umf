@@ -1,618 +1,128 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-09T15:37:14.734448+00:00",
+  "generatedAt": "2026-09-09T16:04:56.775939+00:00",
   "title": "Design System: Barron's Biologie – UMF Cluj",
   "extensions": {
     "colorMeta": {
+      "academic-blue": {
+        "role": "primary",
+        "displayName": "Academic action blue"
+      },
+      "academic-ink": {
+        "role": "neutral",
+        "displayName": "Academic navy ink"
+      },
       "primary": {
         "role": "primary",
-        "displayName": "Primary",
-        "tonalRamp": [
-          "oklch(15% 0.2152 262.88)",
-          "oklch(26% 0.2152 262.88)",
-          "oklch(38% 0.2152 262.88)",
-          "oklch(49% 0.2152 262.88)",
-          "oklch(61% 0.2152 262.88)",
-          "oklch(72% 0.2152 262.88)",
-          "oklch(84% 0.2152 262.88)",
-          "oklch(95% 0.2152 262.88)"
-        ]
-      },
-      "primary-light": {
-        "role": "primary",
-        "displayName": "Primary Light",
-        "tonalRamp": [
-          "oklch(15% 0.0142 254.60)",
-          "oklch(26% 0.0142 254.60)",
-          "oklch(38% 0.0142 254.60)",
-          "oklch(49% 0.0142 254.60)",
-          "oklch(61% 0.0142 254.60)",
-          "oklch(72% 0.0142 254.60)",
-          "oklch(84% 0.0142 254.60)",
-          "oklch(95% 0.0142 254.60)"
-        ]
-      },
-      "primary-mid": {
-        "role": "primary",
-        "displayName": "Primary Mid",
-        "tonalRamp": [
-          "oklch(15% 0.1880 259.81)",
-          "oklch(26% 0.1880 259.81)",
-          "oklch(38% 0.1880 259.81)",
-          "oklch(49% 0.1880 259.81)",
-          "oklch(61% 0.1880 259.81)",
-          "oklch(72% 0.1880 259.81)",
-          "oklch(84% 0.1880 259.81)",
-          "oklch(95% 0.1880 259.81)"
-        ]
-      },
-      "primary-dark": {
-        "role": "primary",
-        "displayName": "Primary Dark",
-        "tonalRamp": [
-          "oklch(15% 0.2172 264.38)",
-          "oklch(26% 0.2172 264.38)",
-          "oklch(38% 0.2172 264.38)",
-          "oklch(49% 0.2172 264.38)",
-          "oklch(61% 0.2172 264.38)",
-          "oklch(72% 0.2172 264.38)",
-          "oklch(84% 0.2172 264.38)",
-          "oklch(95% 0.2172 264.38)"
-        ]
-      },
-      "emerald": {
-        "role": "secondary",
-        "displayName": "Emerald",
-        "tonalRamp": [
-          "oklch(15% 0.1274 163.23)",
-          "oklch(26% 0.1274 163.23)",
-          "oklch(38% 0.1274 163.23)",
-          "oklch(49% 0.1274 163.23)",
-          "oklch(61% 0.1274 163.23)",
-          "oklch(72% 0.1274 163.23)",
-          "oklch(84% 0.1274 163.23)",
-          "oklch(95% 0.1274 163.23)"
-        ]
-      },
-      "emerald-light": {
-        "role": "secondary",
-        "displayName": "Emerald Light",
-        "tonalRamp": [
-          "oklch(15% 0.0207 166.11)",
-          "oklch(26% 0.0207 166.11)",
-          "oklch(38% 0.0207 166.11)",
-          "oklch(49% 0.0207 166.11)",
-          "oklch(61% 0.0207 166.11)",
-          "oklch(72% 0.0207 166.11)",
-          "oklch(84% 0.0207 166.11)",
-          "oklch(95% 0.0207 166.11)"
-        ]
-      },
-      "teal": {
-        "role": "secondary",
-        "displayName": "Teal",
-        "tonalRamp": [
-          "oklch(15% 0.1109 221.72)",
-          "oklch(26% 0.1109 221.72)",
-          "oklch(38% 0.1109 221.72)",
-          "oklch(49% 0.1109 221.72)",
-          "oklch(61% 0.1109 221.72)",
-          "oklch(72% 0.1109 221.72)",
-          "oklch(84% 0.1109 221.72)",
-          "oklch(95% 0.1109 221.72)"
-        ]
-      },
-      "teal-light": {
-        "role": "secondary",
-        "displayName": "Teal Light",
-        "tonalRamp": [
-          "oklch(15% 0.0189 200.87)",
-          "oklch(26% 0.0189 200.87)",
-          "oklch(38% 0.0189 200.87)",
-          "oklch(49% 0.0189 200.87)",
-          "oklch(61% 0.0189 200.87)",
-          "oklch(72% 0.0189 200.87)",
-          "oklch(84% 0.0189 200.87)",
-          "oklch(95% 0.0189 200.87)"
-        ]
-      },
-      "violet": {
-        "role": "secondary",
-        "displayName": "Violet",
-        "tonalRamp": [
-          "oklch(15% 0.2466 293.01)",
-          "oklch(26% 0.2466 293.01)",
-          "oklch(38% 0.2466 293.01)",
-          "oklch(49% 0.2466 293.01)",
-          "oklch(61% 0.2466 293.01)",
-          "oklch(72% 0.2466 293.01)",
-          "oklch(84% 0.2466 293.01)",
-          "oklch(95% 0.2466 293.01)"
-        ]
-      },
-      "violet-light": {
-        "role": "secondary",
-        "displayName": "Violet Light",
-        "tonalRamp": [
-          "oklch(15% 0.0161 293.76)",
-          "oklch(26% 0.0161 293.76)",
-          "oklch(38% 0.0161 293.76)",
-          "oklch(49% 0.0161 293.76)",
-          "oklch(61% 0.0161 293.76)",
-          "oklch(72% 0.0161 293.76)",
-          "oklch(84% 0.0161 293.76)",
-          "oklch(95% 0.0161 293.76)"
-        ]
-      },
-      "rose": {
-        "role": "secondary",
-        "displayName": "Rose",
-        "tonalRamp": [
-          "oklch(15% 0.2220 17.58)",
-          "oklch(26% 0.2220 17.58)",
-          "oklch(38% 0.2220 17.58)",
-          "oklch(49% 0.2220 17.58)",
-          "oklch(61% 0.2220 17.58)",
-          "oklch(72% 0.2220 17.58)",
-          "oklch(84% 0.2220 17.58)",
-          "oklch(95% 0.2220 17.58)"
-        ]
-      },
-      "rose-light": {
-        "role": "secondary",
-        "displayName": "Rose Light",
-        "tonalRamp": [
-          "oklch(15% 0.0152 12.42)",
-          "oklch(26% 0.0152 12.42)",
-          "oklch(38% 0.0152 12.42)",
-          "oklch(49% 0.0152 12.42)",
-          "oklch(61% 0.0152 12.42)",
-          "oklch(72% 0.0152 12.42)",
-          "oklch(84% 0.0152 12.42)",
-          "oklch(95% 0.0152 12.42)"
-        ]
-      },
-      "orange": {
-        "role": "secondary",
-        "displayName": "Orange",
-        "tonalRamp": [
-          "oklch(15% 0.1943 41.12)",
-          "oklch(26% 0.1943 41.12)",
-          "oklch(38% 0.1943 41.12)",
-          "oklch(49% 0.1943 41.12)",
-          "oklch(61% 0.1943 41.12)",
-          "oklch(72% 0.1943 41.12)",
-          "oklch(84% 0.1943 41.12)",
-          "oklch(95% 0.1943 41.12)"
-        ]
-      },
-      "orange-light": {
-        "role": "secondary",
-        "displayName": "Orange Light",
-        "tonalRamp": [
-          "oklch(15% 0.0158 73.68)",
-          "oklch(26% 0.0158 73.68)",
-          "oklch(38% 0.0158 73.68)",
-          "oklch(49% 0.0158 73.68)",
-          "oklch(61% 0.0158 73.68)",
-          "oklch(72% 0.0158 73.68)",
-          "oklch(84% 0.0158 73.68)",
-          "oklch(95% 0.0158 73.68)"
-        ]
-      },
-      "amber": {
-        "role": "secondary",
-        "displayName": "Amber",
-        "tonalRamp": [
-          "oklch(15% 0.1574 58.32)",
-          "oklch(26% 0.1574 58.32)",
-          "oklch(38% 0.1574 58.32)",
-          "oklch(49% 0.1574 58.32)",
-          "oklch(61% 0.1574 58.32)",
-          "oklch(72% 0.1574 58.32)",
-          "oklch(84% 0.1574 58.32)",
-          "oklch(95% 0.1574 58.32)"
-        ]
-      },
-      "amber-light": {
-        "role": "secondary",
-        "displayName": "Amber Light",
-        "tonalRamp": [
-          "oklch(15% 0.0214 95.28)",
-          "oklch(26% 0.0214 95.28)",
-          "oklch(38% 0.0214 95.28)",
-          "oklch(49% 0.0214 95.28)",
-          "oklch(61% 0.0214 95.28)",
-          "oklch(72% 0.0214 95.28)",
-          "oklch(84% 0.0214 95.28)",
-          "oklch(95% 0.0214 95.28)"
-        ]
-      },
-      "slate-900": {
-        "role": "neutral",
-        "displayName": "Slate 900",
-        "tonalRamp": [
-          "#0F172A",
-          "#1E293B",
-          "#334155",
-          "#475569",
-          "#94A3B8",
-          "#CBD5E1",
-          "#F1F5F9",
-          "#F8FAFC"
-        ]
-      },
-      "slate-800": {
-        "role": "neutral",
-        "displayName": "Slate 800",
-        "tonalRamp": [
-          "#0F172A",
-          "#1E293B",
-          "#334155",
-          "#475569",
-          "#94A3B8",
-          "#CBD5E1",
-          "#F1F5F9",
-          "#F8FAFC"
-        ]
-      },
-      "slate-700": {
-        "role": "neutral",
-        "displayName": "Slate 700",
-        "tonalRamp": [
-          "#0F172A",
-          "#1E293B",
-          "#334155",
-          "#475569",
-          "#94A3B8",
-          "#CBD5E1",
-          "#F1F5F9",
-          "#F8FAFC"
-        ]
-      },
-      "slate-600": {
-        "role": "neutral",
-        "displayName": "Slate 600",
-        "tonalRamp": [
-          "#0F172A",
-          "#1E293B",
-          "#334155",
-          "#475569",
-          "#94A3B8",
-          "#CBD5E1",
-          "#F1F5F9",
-          "#F8FAFC"
-        ]
-      },
-      "slate-500": {
-        "role": "neutral",
-        "displayName": "Slate 500",
-        "tonalRamp": [
-          "#0F172A",
-          "#1E293B",
-          "#334155",
-          "#475569",
-          "#94A3B8",
-          "#CBD5E1",
-          "#F1F5F9",
-          "#F8FAFC"
-        ]
-      },
-      "slate-400": {
-        "role": "neutral",
-        "displayName": "Slate 400",
-        "tonalRamp": [
-          "#0F172A",
-          "#1E293B",
-          "#334155",
-          "#475569",
-          "#94A3B8",
-          "#CBD5E1",
-          "#F1F5F9",
-          "#F8FAFC"
-        ]
-      },
-      "slate-300": {
-        "role": "neutral",
-        "displayName": "Slate 300",
-        "tonalRamp": [
-          "#0F172A",
-          "#1E293B",
-          "#334155",
-          "#475569",
-          "#94A3B8",
-          "#CBD5E1",
-          "#F1F5F9",
-          "#F8FAFC"
-        ]
-      },
-      "slate-200": {
-        "role": "neutral",
-        "displayName": "Slate 200",
-        "tonalRamp": [
-          "#0F172A",
-          "#1E293B",
-          "#334155",
-          "#475569",
-          "#94A3B8",
-          "#CBD5E1",
-          "#F1F5F9",
-          "#F8FAFC"
-        ]
-      },
-      "slate-100": {
-        "role": "neutral",
-        "displayName": "Slate 100",
-        "tonalRamp": [
-          "#0F172A",
-          "#1E293B",
-          "#334155",
-          "#475569",
-          "#94A3B8",
-          "#CBD5E1",
-          "#F1F5F9",
-          "#F8FAFC"
-        ]
-      },
-      "slate-50": {
-        "role": "neutral",
-        "displayName": "Slate 50",
-        "tonalRamp": [
-          "#0F172A",
-          "#1E293B",
-          "#334155",
-          "#475569",
-          "#94A3B8",
-          "#CBD5E1",
-          "#F1F5F9",
-          "#F8FAFC"
-        ]
-      },
-      "bg-page": {
-        "role": "neutral",
-        "displayName": "Bg Page",
-        "tonalRamp": [
-          "#0F172A",
-          "#1E293B",
-          "#334155",
-          "#475569",
-          "#94A3B8",
-          "#CBD5E1",
-          "#F1F5F9",
-          "#F8FAFC"
-        ]
-      },
-      "bg-surface": {
-        "role": "neutral",
-        "displayName": "Bg Surface",
-        "tonalRamp": [
-          "#0F172A",
-          "#1E293B",
-          "#334155",
-          "#475569",
-          "#94A3B8",
-          "#CBD5E1",
-          "#F1F5F9",
-          "#F8FAFC"
-        ]
-      },
-      "border": {
-        "role": "neutral",
-        "displayName": "Border",
-        "tonalRamp": [
-          "#0F172A",
-          "#1E293B",
-          "#334155",
-          "#475569",
-          "#94A3B8",
-          "#CBD5E1",
-          "#F1F5F9",
-          "#F8FAFC"
-        ]
-      },
-      "border-strong": {
-        "role": "neutral",
-        "displayName": "Border Strong",
-        "tonalRamp": [
-          "#0F172A",
-          "#1E293B",
-          "#334155",
-          "#475569",
-          "#94A3B8",
-          "#CBD5E1",
-          "#F1F5F9",
-          "#F8FAFC"
-        ]
+        "displayName": "Incumbent shared blue (unchanged pages)"
       }
     },
     "typographyMeta": {
-      "display": {
-        "displayName": "Display",
-        "purpose": "Implemented display role; see DESIGN.md for responsive usage."
-      },
-      "editorial": {
-        "displayName": "Editorial",
-        "purpose": "Selective homepage italic, font-style: italic."
-      },
-      "headline": {
-        "displayName": "Headline",
-        "purpose": "Implemented headline role; see DESIGN.md for responsive usage."
-      },
-      "content-heading": {
-        "displayName": "Content Heading",
-        "purpose": "Implemented content heading role; see DESIGN.md for responsive usage."
-      },
-      "body": {
-        "displayName": "Body",
-        "purpose": "Implemented body role; see DESIGN.md for responsive usage."
-      },
-      "label": {
-        "displayName": "Label",
-        "purpose": "Implemented label role; see DESIGN.md for responsive usage."
+      "academic-editorial": {
+        "displayName": "Selective editorial italic",
+        "purpose": "Italic homepage word rescrisă. only."
       }
     },
     "shadows": [
       {
-        "name": "reading-surfaces",
+        "name": "prototype-flat",
         "value": "none",
-        "purpose": "Default cards, categories and actions."
+        "purpose": "Prototype figures, article blocks and palette."
       },
       {
-        "name": "mobile-drawer",
-        "value": "16px 0 36px rgba(15, 23, 42, 0.18)",
-        "purpose": "Temporary lesson navigation overlay."
-      },
-      {
-        "name": "toast",
-        "value": "0 12px 28px rgba(15, 23, 42, 0.22)",
-        "purpose": "Transient lesson feedback."
+        "name": "incumbent-shadow-float",
+        "value": "0 3px 12px rgba(37,99,235,.30)",
+        "purpose": "Unchanged shared token; not a prototype recommendation."
       }
     ],
     "motion": [
       {
-        "name": "ease-default",
-        "value": "cubic-bezier(.4, 0, .2, 1)",
-        "purpose": "Core state-transition token."
-      },
-      {
-        "name": "dur-fast",
-        "value": ".15s",
-        "purpose": "Core state-transition token."
-      },
-      {
-        "name": "dur-base",
-        "value": ".2s",
-        "purpose": "Core state-transition token."
-      },
-      {
-        "name": "dur-slow",
-        "value": ".3s",
-        "purpose": "Core state-transition token."
+        "name": "prototype-drawer",
+        "value": "transform .2s ease-out",
+        "purpose": "Introduction drawer; disabled under reduced motion."
       }
     ],
     "breakpoints": [
       {
-        "name": "phone",
-        "value": "640px"
+        "name": "intro-context",
+        "value": "1200px"
       },
       {
-        "name": "lesson-stack",
-        "value": "700px"
-      },
-      {
-        "name": "home-stack",
-        "value": "900px"
-      },
-      {
-        "name": "drawer",
+        "name": "intro-drawer-home-intermediate",
         "value": "1024px"
       },
       {
-        "name": "home-compact",
-        "value": "1100px"
+        "name": "home-phone",
+        "value": "700px"
       },
       {
-        "name": "lesson-compact",
-        "value": "1240px"
-      },
-      {
-        "name": "narrow-phone",
-        "value": "430px"
+        "name": "intro-phone",
+        "value": "640px"
       }
     ]
   },
   "components": [
     {
-      "name": "Primary Action",
+      "name": "Primary action",
       "kind": "button",
-      "refersTo": "button-primary",
-      "description": "Homepage starting action.",
-      "html": "<button class=\"ds-primary\">Începe cu Capitolul 1</button>",
-      "css": ".ds-primary{font-family:var(--font-display, Figtree, system-ui, sans-serif);min-height:46px;padding:11px 18px;border:0;border-radius:10px;background:var(--primary,#2563EB);color:var(--bg-surface,#FFFFFF);font-size:14px;font-weight:700;cursor:pointer;transition:background-color 160ms ease;}.ds-primary:hover{background:var(--primary-dark,#1D4ED8);}.ds-primary:focus-visible{outline:2px solid var(--primary,#2563EB);outline-offset:2px;}"
+      "description": "Prototype-only presentation specimen; illustrative labels are not new educational content.",
+      "html": "<a class=\"ds-primary\" href=\"#\">Explorează capitolele →</a>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;min-height:46px;background:var(--academic-blue,#2457F5);color:#fff;padding:10px 18px;border-radius:4px;font:600 14px Figtree,system-ui,sans-serif;text-decoration:none}.ds-primary:hover{background:#1946D4} :focus-visible{outline:2px solid #2457F5;outline-offset:4px}",
+      "refersTo": "academic-primary-action"
     },
     {
-      "name": "Secondary Action",
-      "kind": "button",
-      "refersTo": "button-secondary",
-      "description": "Supporting curriculum action.",
-      "html": "<button class=\"ds-secondary\">Vezi toate capitolele</button>",
-      "css": ".ds-secondary{font-family:var(--font-display, Figtree, system-ui, sans-serif);min-height:46px;padding:11px 18px;border:1px solid var(--border,#DCE3EC);border-radius:10px;background:transparent;color:var(--fg-2,#334155);font-size:14px;font-weight:700;cursor:pointer;transition:background-color 160ms ease,border-color 160ms ease;}.ds-secondary:hover{background:#e9eef5;border-color:var(--border-strong,#C8D2DF);}.ds-secondary:focus-visible{outline:2px solid var(--primary,#2563EB);outline-offset:2px;}"
-    },
-    {
-      "name": "Search Input",
-      "kind": "input",
-      "refersTo": "search-field",
-      "description": "Input within the search palette.",
-      "html": "<label class=\"ds-search\"><span>Caută în lecție</span><input type=\"search\" placeholder=\"Caută un termen…\"></label>",
-      "css": ".ds-search{font-family:var(--font-display, Figtree, system-ui, sans-serif);display:block;color:var(--fg-3,#64748B);background:var(--bg-surface,#FFFFFF);padding:10px 14px;border:1px solid var(--border,#DCE3EC);border-radius:12px;}.ds-search span{display:block;font-size:.84rem;}.ds-search input{font-family:var(--font-display, Figtree, system-ui, sans-serif);display:block;min-height:44px;width:100%;border:0;background:transparent;color:var(--fg-1,#0F172A);font-size:16px;}.ds-search input:hover{background:var(--bg-sunken,#F8FAFC);}.ds-search input:focus-visible{outline:2px solid var(--primary,#2563EB);outline-offset:2px;}"
-    },
-    {
-      "name": "Active Chapter Navigation",
+      "name": "Curriculum row",
       "kind": "nav",
-      "refersTo": "navigation-active",
-      "description": "Current lesson section with a start rule.",
-      "html": "<a class=\"ds-nav\" href=\"#section\" aria-current=\"page\">Membrana celulară</a>",
-      "css": ".ds-nav{font-family:var(--font-display, Figtree, system-ui, sans-serif);display:flex;align-items:center;min-height:44px;padding:.65rem .78rem;border-inline-start:2px solid var(--primary,#2563EB);background:var(--bg-surface,#FFFFFF);color:var(--fg-1,#0F172A);font-size:.84rem;font-weight:700;line-height:1.3;text-decoration:none;}.ds-nav:hover{background:var(--primary-light,#EFF6FF);}.ds-nav:focus-visible{outline:2px solid var(--primary,#2563EB);outline-offset:2px;}"
+      "description": "Prototype-only presentation specimen; illustrative labels are not new educational content.",
+      "html": "<a class=\"ds-row\" href=\"#\"><span>01</span><strong>Introducere în anatomie și fiziologie</strong><small>Disponibil →</small></a>",
+      "css": ".ds-row{display:grid;grid-template-columns:40px minmax(0,1fr) 100px;gap:16px;padding:18px 0;border-bottom:1px solid #E4E7EC;color:#667085;text-decoration:none;font:15px/1.4 Figtree,system-ui,sans-serif}.ds-row strong{color:#101828;font-size:17px;font-weight:600}.ds-row small{text-align:right;font-size:12px}.ds-row:hover{background:#EEF3FF}.ds-row:hover strong{color:#2457F5} :focus-visible{outline:2px solid #2457F5;outline-offset:4px}"
     },
     {
-      "name": "Chapter Term",
-      "kind": "chip",
-      "refersTo": "chapter-term",
-      "description": "A compact term in a blue chapter context.",
-      "html": "<span class=\"ds-term\">Membrană</span>",
-      "css": ".ds-term{font-family:var(--font-display, Figtree, system-ui, sans-serif);display:inline-flex;align-items:center;min-height:28px;padding:4px 9px;border:1px solid color-mix(in srgb,var(--primary,#2563EB) 28%,#d7dee8);border-radius:7px;background:var(--primary-light,#EFF6FF);color:var(--primary,#2563EB);font-size:.78rem;font-weight:700;line-height:1.2;}"
+      "name": "Active section",
+      "kind": "nav",
+      "description": "Prototype-only presentation specimen; illustrative labels are not new educational content.",
+      "html": "<a class=\"ds-route\" href=\"#\"><span>1.2</span>Niveluri de organizare</a>",
+      "css": ".ds-route{display:grid;grid-template-columns:30px 1fr;gap:8px;min-height:44px;padding:12px 0 12px 12px;border-left:2px solid #2457F5;font:600 14px/1.45 Figtree,system-ui,sans-serif;color:#101828;text-decoration:none}.ds-route span{font-size:12px;color:#667085}.ds-route:hover{color:#2457F5} :focus-visible{outline:2px solid #2457F5;outline-offset:4px}",
+      "refersTo": "academic-sidebar-route-active"
     },
     {
-      "name": "Reading Surface",
-      "kind": "card",
-      "refersTo": "reading-card",
-      "description": "Flat lesson content container; specimen text is not authored lesson content.",
-      "html": "<article class=\"ds-card\"><h2>Structura celulei</h2><p>Exemplu de ierarhie pentru textul unei lecții.</p></article>",
-      "css": ".ds-card{font-family:var(--font-display, Figtree, system-ui, sans-serif);padding:24px 28px;border:1px solid var(--border,#DCE3EC);border-radius:12px;background:var(--bg-surface,#FFFFFF);color:var(--fg-2,#334155);}.ds-card h2{margin:0 0 .85rem;color:var(--fg-1,#0F172A);font-size:1.35rem;font-weight:900;line-height:1.25;letter-spacing:-.025em;}.ds-card p{max-width:70ch;margin:0;font-size:1rem;line-height:1.72;}"
+      "name": "Search input",
+      "kind": "input",
+      "description": "Prototype-only presentation specimen; illustrative labels are not new educational content.",
+      "html": "<input class=\"ds-search\" aria-label=\"Caută în lecție\" placeholder=\"Caută în lecție\">",
+      "css": ".ds-search{height:44px;width:100%;border:1px solid #D0D5DD;background:#fff;color:#475467;padding:0 12px;font:16px Figtree,system-ui,sans-serif;caret-color:#2457F5}.ds-search:hover{border-color:#98A2B3} :focus-visible{outline:2px solid #2457F5;outline-offset:4px}"
     },
     {
-      "name": "Numbered Chapter Row",
+      "name": "Supplementary note",
       "kind": "custom",
-      "refersTo": "chapter-map-row",
-      "description": "Ruled chapter outline destination.",
-      "html": "<a class=\"ds-row\" href=\"#section\"><span>01</span>Structura celulei</a>",
-      "css": ".ds-row{font-family:var(--font-display, Figtree, system-ui, sans-serif);position:relative;display:block;min-height:74px;padding:17px 16px 17px 62px;border-bottom:1px solid var(--border,#DCE3EC);color:var(--fg-2,#334155);font-size:.92rem;line-height:1.55;text-decoration:none;transition:background-color 160ms ease;}.ds-row span{position:absolute;left:16px;color:var(--primary,#2563EB);font-weight:800;}.ds-row:hover{background:var(--bg-sunken,#F8FAFC);}.ds-row:focus-visible{outline:2px solid var(--primary,#2563EB);outline-offset:2px;}"
+      "description": "Prototype-only presentation specimen; illustrative labels are not new educational content.",
+      "html": "<aside class=\"ds-note\"><strong>Notă suplimentară</strong><p>Exemplu de prezentare a unei note existente.</p></aside>",
+      "css": ".ds-note{border-left:1px solid #98A2B3;background:#F5F6F8;padding:20px 24px;font:15px/1.75 Figtree,system-ui,sans-serif;color:#475467}.ds-note strong{display:block;color:#101828}.ds-note p{margin:8px 0 0} :focus-visible{outline:2px solid #2457F5;outline-offset:4px}",
+      "refersTo": "academic-note"
     }
   ],
   "narrative": {
-    "northStar": "The Editorial Biology Textbook",
-    "overview": "The interface is a premium editorial Romanian biology textbook: cool paper, navy ink, precise rules and a restrained blue accent. Figtree gives navigation and educational prose one coherent voice; a selective Fraunces italic supplies the homepage’s editorial signature.\n\nReading hierarchy comes from type, spacing, figures and meaningful grouping. Chapter outlines read as numbered contents lists, and controls remain quiet but clear. The light-only surface supports sustained study without turning publication availability into a claim about a student’s learning progress.",
+    "northStar": "Modern Academic Editorial — prototype awaiting visual approval",
+    "overview": "Implemented only on the homepage and introduction. Incumbent shared tokens, other lessons and quiz remain unchanged. Ship disposition is limited to prototype review scope.",
     "keyCharacteristics": [
-      "Cool paper and navy ink with restrained blue interaction.",
-      "Figtree for UI and body, selective Fraunces italic for editorial emphasis.",
-      "Flat reading surfaces, fine rules and numbered contents.",
-      "Readable Romanian text, responsive tables and practical touch controls."
+      "Neutral canvas, white article, navy ink and blue actions",
+      "Numbered contents and fine rules",
+      "Real anatomical imagery"
     ],
     "rules": [
       {
-        "name": "The Selective Italic Rule",
-        "body": "Use Fraunces italic selectively for the blue homepage word “rescrisă.” Keep lesson prose, navigation, labels and controls in Figtree.",
-        "section": "typography"
-      },
-      {
         "name": "The Flat Reading Rule",
-        "body": "Use spacing, fine borders and surface tone to structure reading. Reserve shadows for temporary overlays and feedback.",
+        "body": "Use spacing, rules and neutral tone rather than decorative card shadows.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "Do preserve Romanian diacritics, authored explanations, figures and semantic table relationships.",
-      "Do use the canonical core tokens and the established surface-specific aliases.",
-      "Do keep prose near 70ch where the lesson layout permits and let figures and tables use the wider content area.",
-      "Do maintain visible keyboard focus, accessible search, reduced-motion behavior and readable phone layouts.",
-      "Do describe chapter counts as publication availability; keep existing quiz results distinct from study progress."
+      "Preserve educational content and existing behavior.",
+      "Keep the two-page prototype boundary explicit."
     ],
     "donts": [
-      "Don’t introduce Noto Sans or a second body font into the current visual system.",
-      "Don’t turn curriculum lists into floating decorative card grids or add ornamental gradients.",
-      "Don’t obscure phone reading with floating controls; the lesson return-to-top action stays in document flow on small screens.",
-      "Don’t use color alone for quiz correctness, selected controls or navigation state.",
-      "Don’t add study-progress tracking, persistence claims or roadmap features through visual documentation."
+      "Do not migrate remaining lessons before visual approval.",
+      "Do not repair shared styling drift as part of documentation."
     ]
   }
 }
