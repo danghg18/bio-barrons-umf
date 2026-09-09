@@ -195,13 +195,12 @@ async function renderPaletteItems(q){
         const safeSnippet = escapeHtml(r.snippet).replace(new RegExp(escapeRegExp(safeNeedle), 'ig'), '<strong>$&</strong>');
         return `
     <button class="lab-palette-item" data-url="${r.url}" data-query="${escapeHtml(q.trim())}" data-section-id="${r.sectionId}" data-hit="${r.hit}" data-done="true">
-      <span class="lab-palette-emoji">${r.chapterIcon}</span>
       <div>
         <div class="lab-palette-title">Cap. ${String(r.chapterNum).padStart(2,'0')} · ${r.chapterName}</div>
         <div class="lab-palette-sub">${r.sectionTitle}</div>
         <span class="lab-palette-match">${safeSnippet}</span>
       </div>
-      <span class="lab-palette-tag" style="color:${r.chapterColor};background:${r.chapterColorLight}">Text</span>
+      <span class="lab-palette-tag">Text</span>
     </button>`;
       }).join('');
       bindPaletteActions();
@@ -212,12 +211,11 @@ async function renderPaletteItems(q){
   if(!results.length){list.innerHTML='<div class="lab-palette-empty">Nicio potrivire. Încearcă "nefron", "ADH", "inimă"…</div>';return;}
   list.innerHTML=results.map(c=>`
     <button class="lab-palette-item" data-url="${c.url||''}" data-done="${c.done?'true':'false'}" ${!c.done?'disabled aria-disabled="true"':''} style="${!c.done?'cursor:default;opacity:.6':''}">
-      <span class="lab-palette-emoji">${c.icon}</span>
       <div>
         <div class="lab-palette-title">Cap. ${String(c.num).padStart(2,'0')} · ${c.name}</div>
         <div class="lab-palette-sub">${c.cat}</div>
       </div>
-      <span class="lab-palette-tag" style="color:${c.color};background:${c.colorLight}">${c.done?'Disponibil':'În curând'}</span>
+      <span class="lab-palette-tag">${c.done?'Disponibil':'În curând'}</span>
     </button>`).join('');
   bindPaletteActions();
 }
