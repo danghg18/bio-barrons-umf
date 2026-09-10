@@ -8,7 +8,7 @@ const root = new URL('../', import.meta.url);
 const registry = await loadSiteRegistry(root);
 const { chapters, resources } = publishedResources(registry);
 const errors = [];
-const htmlFiles = ['index.html', ...chapters.map(x => x.url), ...resources.map(x => x.url)];
+const htmlFiles = ['index.html', ...(registry.BIO_SITE.pages || []).map(x => x.url), ...chapters.map(x => x.url), ...resources.map(x => x.url)];
 const ids = new Map();
 
 async function exists(path) {
@@ -56,6 +56,27 @@ else {
     const letters = new Set(question.options.map(option => option.letter));
     if (letters.size !== 5 || !Array.isArray(question.correct) || question.correct.some(answer => !letters.has(answer))) errors.push(`quiz question ${question.id}: invalid answer/options`);
   }
+}
+
+// The supplied answer key is independent of the authored dataset.
+const senseContext = { window: {} };
+vm.runInNewContext(await readFile(new URL('assets/js/grile-organe-de-simt-data.js', root), 'utf8'), senseContext);
+const sense = senseContext.window.BB_QUIZ;
+const senseKey = JSON.parse(await readFile(new URL('tests/organe-de-simt-answer-key.json', root), 'utf8'));
+if (!sense || sense.questions.length !== 100 || senseKey.length !== 100) errors.push('sense quiz must contain 100 questions');
+else {
+  if (sense.storageKey !== 'bb.quiz.organe-simt.v1' || sense.version !== 1) errors.push('sense quiz storage contract changed');
+  sense.questions.forEach((question, index) => {
+    const number = index + 1;
+    if (question.id !== `os-${String(number).padStart(3, '0')}` || question.number !== number || question.sourceNumber !== number) errors.push(`sense quiz ${number}: numbering/ID mismatch`);
+    if (question.correct.join('') !== senseKey[index]) errors.push(`sense quiz ${number}: supplied key mismatch`);
+    if (question.options.map(option => option.letter).join('') !== 'ABCDE') errors.push(`sense quiz ${number}: options must be A–E`);
+    for (const option of question.options) {
+      if (!option.text.trim() || (!question.correct.includes(option.letter) && !option.why?.trim())) errors.push(`sense quiz ${number}${option.letter}: missing text/explanation`);
+    }
+    const matchingRanges = sense.ranges.filter(range => number >= range.start && number <= range.end);
+    if (matchingRanges.length !== 1) errors.push(`sense quiz ${number}: range membership mismatch`);
+  });
 }
 
 const jsFiles = [new URL('sw.js', root)];

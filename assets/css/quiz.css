@@ -1,20 +1,154 @@
-/* Interactive quiz layer for the nervous-system chapter. */
+/* Shared interactive quiz layer. */
+
+/* Testing catalog: the homepage's numbered, ruled lesson-list rhythm. */
+body.bb-testing-page .page-section:not(.chapter-home) .hero {
+  margin: 0 0 20px !important;
+  padding: 12px 0 0 !important;
+}
+
+body.bb-testing-page .page-section:not(.chapter-home) .hero p {
+  font-size: 0.9rem !important;
+  line-height: 1.6 !important;
+}
+
+body.bb-testing-page .testing-list {
+  border-top: 1px solid var(--bb-line);
+}
+
+body.bb-testing-page .testing-entry {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid var(--bb-line);
+}
+
+body.bb-testing-page .testing-start {
+  min-width: 0;
+  min-height: 76px;
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 8px;
+  color: var(--bb-ink);
+  text-decoration: none;
+  transition: background-color 150ms ease;
+}
+
+body.bb-testing-page .testing-start:hover {
+  background: var(--bb-surface-muted);
+}
+
+body.bb-testing-page .testing-number {
+  align-self: start;
+  padding-top: 2px;
+  color: var(--bb-action);
+  font-size: 0.8rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+body.bb-testing-page .testing-copy { min-width: 0; }
+
+body.bb-testing-page .testing-entry h2 {
+  margin: 0;
+  color: var(--bb-ink);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  text-wrap: pretty;
+}
+
+body.bb-testing-page .testing-entry p {
+  margin: 4px 0 0;
+  color: var(--slate-600);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  font-variant-numeric: tabular-nums;
+}
+
+body.bb-testing-page .testing-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--bb-action);
+  font-size: 0.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+body.bb-testing-page .testing-action svg { flex-shrink: 0; }
+
+body.bb-testing-page .testing-review {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 8px;
+  color: var(--bb-text);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: var(--bb-line-strong);
+  text-underline-offset: 4px;
+}
+
+body.bb-testing-page .testing-review:hover {
+  color: var(--bb-action);
+  text-decoration-color: currentColor;
+}
+
+body.bb-testing-page .testing-entry a:focus-visible {
+  outline: 2px solid var(--bb-action);
+  outline-offset: -2px;
+}
+
+body.bb-testing-page .testing-help {
+  max-width: 75ch;
+  margin: 16px 0 0;
+  color: var(--slate-600);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  body.bb-testing-page .testing-entry {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    padding-bottom: 4px;
+  }
+
+  body.bb-testing-page .testing-start {
+    grid-template-columns: 24px minmax(0, 1fr) auto;
+    gap: 8px;
+    padding: 12px 4px 0;
+  }
+
+  body.bb-testing-page .testing-review {
+    justify-self: start;
+    margin-left: 28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.bb-testing-page .testing-start { transition: none; }
+}
 
 body.bb-quiz-page {
-  --quiz-success: var(--ok);
+  --quiz-success: #047857;
   --quiz-success-soft: #ecfdf5;
   --quiz-success-line: #86efac;
   --quiz-review: var(--danger);
   --quiz-review-soft: #fff1f2;
   --quiz-review-line: #fecdd3;
+  --quiz-missed: #854d0e;
+  --quiz-missed-soft: #fef9c3;
+  --quiz-missed-line: #eab308;
 }
 
 body.bb-quiz-page main {
   max-width: 1040px !important;
-}
-
-@media (min-width: 1241px) {
-  body.bb-quiz-page .lesson-search-trigger::after { content: "Caută în grile"; }
 }
 
 body.bb-quiz-page .quiz-nav-link {
@@ -27,7 +161,7 @@ body.bb-quiz-page .quiz-nav-link {
 body.bb-quiz-page .quiz-nav-count {
   min-width: 42px;
   padding: 2px 7px;
-  color: var(--bb-muted);
+  color: var(--bb-text);
   background: var(--bb-surface-muted);
   border-radius: 999px;
   font-family: var(--font-display, "Figtree", system-ui, sans-serif);
@@ -74,7 +208,6 @@ body.bb-quiz-page .quiz-progress-track span {
   height: 100%;
   background: var(--bb-action);
   border-radius: inherit;
-  transition: width 220ms cubic-bezier(.22, 1, .36, 1);
 }
 
 body.bb-quiz-page .quiz-hero {
@@ -204,7 +337,7 @@ body.bb-quiz-page .quiz-question-number {
 
 body.bb-quiz-page .quiz-question-status {
   padding: 4px 9px;
-  color: var(--bb-muted);
+  color: var(--bb-text);
   background: var(--bb-surface-muted);
   border-radius: 999px;
   font-family: var(--font-display, "Figtree", system-ui, sans-serif);
@@ -284,6 +417,30 @@ body.bb-quiz-page .quiz-option-wrap.is-selected-extra {
   background: var(--quiz-review-soft);
   border-color: var(--quiz-review-line);
 }
+
+body.bb-quiz-page .quiz-option-wrap.is-missed-answer {
+  background: var(--quiz-missed-soft);
+  border-color: var(--quiz-missed-line);
+}
+
+body.bb-quiz-page .is-missed-answer .quiz-option-letter {
+  color: var(--quiz-missed);
+  background: var(--quiz-missed-soft);
+}
+
+body.bb-quiz-page .is-missed-answer .quiz-option-state,
+body.bb-quiz-page .quiz-key-missed {
+  color: var(--quiz-missed);
+}
+
+body.bb-quiz-page .quiz-feedback-guide {
+  margin: 0 0 20px;
+  font-size: 0.84rem;
+  line-height: 1.7;
+}
+
+body.bb-quiz-page .quiz-key-selected { color: #166534; }
+body.bb-quiz-page .quiz-key-extra { color: #9f1239; }
 
 body.bb-quiz-page .quiz-option {
   min-height: 56px;

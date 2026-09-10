@@ -125,12 +125,7 @@ var lessonSearchState = {
 };
 
 function unwrapSearchHighlights() {
-  document.querySelectorAll('.search-found, .search-found-current').forEach(function(mark) {
-    if (!mark.parentNode) return;
-    var parent = mark.parentNode;
-    while (mark.firstChild) parent.insertBefore(mark.firstChild, mark);
-    parent.removeChild(mark);
-  });
+  window.BBLessonSearchText.clear();
 }
 
 function clearLessonSearch(resetInput) {
@@ -162,55 +157,11 @@ function openLessonSearch() {
 }
 
 function collectSearchMatches(term) {
-  var needle = String(term || '').trim().toLowerCase();
-  if (!needle) return [];
-  var matches = [];
-  document.querySelectorAll('.page-section').forEach(function(section) {
-    var walker = document.createTreeWalker(section, NodeFilter.SHOW_TEXT);
-    while (walker.nextNode()) {
-      var tn = walker.currentNode;
-      var parent = tn.parentNode;
-      if (!parent || !parent.closest) continue;
-      if (parent.closest('script,style,nav,button')) continue;
-      var text = String(tn.textContent || '');
-      var lower = text.toLowerCase();
-      var from = 0;
-      while (from < lower.length) {
-        var idx = lower.indexOf(needle, from);
-        if (idx === -1) break;
-        matches.push({
-          sectionId: section.id,
-          node: tn,
-          start: idx,
-          end: idx + needle.length
-        });
-        from = idx + Math.max(1, needle.length);
-      }
-    }
-  });
-  return matches;
+  return window.BBLessonSearchText.collect(term, { fullSectionId: true });
 }
 
 function highlightLessonMatches(matches) {
-  var grouped = new Map();
-  matches.forEach(function(match, index) {
-    match.index = index;
-    if (!grouped.has(match.node)) grouped.set(match.node, []);
-    grouped.get(match.node).push(match);
-  });
-  grouped.forEach(function(nodeMatches, node) {
-    nodeMatches.sort(function(a, b) { return b.start - a.start; });
-    nodeMatches.forEach(function(match) {
-      var range = document.createRange();
-      range.setStart(node, match.start);
-      range.setEnd(node, match.end);
-      var span = document.createElement('span');
-      span.className = 'search-found';
-      span.setAttribute('data-search-index', String(match.index));
-      range.surroundContents(span);
-      match.element = span;
-    });
-  });
+  window.BBLessonSearchText.render(matches);
 }
 
 function updateLessonSearchUi() {
@@ -233,12 +184,12 @@ function goToLessonSearchResult(index) {
   var normalized = ((index % total) + total) % total;
   if (lessonSearchState.currentIndex >= 0) {
     var currentMatch = lessonSearchState.matches[lessonSearchState.currentIndex];
-    if (currentMatch.element) currentMatch.element.classList.remove('search-found-current');
+    window.BBLessonSearchText.setCurrent(currentMatch, false);
   }
   lessonSearchState.currentIndex = normalized;
   var target = lessonSearchState.matches[normalized];
   if (target.element) {
-    target.element.classList.add('search-found-current');
+    window.BBLessonSearchText.setCurrent(target, true);
     var targetSection = target.sectionId.replace(/^page-/, '');
     var activeSection = document.querySelector('.page-section.active');
     var activeSectionId = activeSection ? activeSection.id.replace(/^page-/, '') : '';
@@ -355,11 +306,18 @@ function setupLessonSearch() {
   var p = new URLSearchParams(window.location.search);
   var initialSection = p.get('goto') || window.location.hash.slice(1) || 'home';
   goto(document.getElementById('page-' + initialSection) ? initialSection : 'home');
-  setupLessonSearch();
-  var q = p.get('q');
-  var section = p.get('section');
-  var hit = p.get('hit');
-  if (q) searchAndScrollTo(decodeURIComponent(q), section, hit);
+  // chapter-redesign.js publishes the shared text matcher later in the page.
+  // Keep the initial route immediate, but bind/restore search after scripts load.
+  function initSearch() {
+    setupLessonSearch();
+    var q = p.get('q');
+    if (q) searchAndScrollTo(q, p.get('section'), p.get('hit'));
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSearch, { once: true });
+  } else {
+    initSearch();
+  }
 })();
 
 // ════ SETTINGS FAB ════

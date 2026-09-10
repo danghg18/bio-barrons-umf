@@ -12,6 +12,7 @@ const { chapters, resources } = publishedResources(registry);
 function sitemapXml() {
   const entries = [
     { url: '', updated: registry.BIO_SITE.updated },
+    ...(registry.BIO_SITE.pages || []),
     ...chapters.map(({ url, updated }) => ({ url, updated })),
     ...resources.map(({ url, updated }) => ({ url, updated }))
   ];
@@ -38,7 +39,7 @@ function remember(reference, fromFile = '') {
   queue.push(clean);
 }
 
-for (const entry of ['index.html', ...chapters.map(item => item.url), ...resources.map(item => item.url)]) remember(entry);
+for (const entry of ['index.html', ...(registry.BIO_SITE.pages || []).map(item => item.url), ...chapters.map(item => item.url), ...resources.map(item => item.url)]) remember(entry);
 
 while (queue.length) {
   const reference = queue.shift();

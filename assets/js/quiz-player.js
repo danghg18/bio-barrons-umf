@@ -1,8 +1,15 @@
 (function () {
   "use strict";
 
-  var quiz = window.BB_NERVOUS_QUIZ;
+  var quiz = window.BB_QUIZ || window.BB_NERVOUS_QUIZ;
   if (!quiz) return;
+
+  var filename = window.location.pathname.split("/").pop();
+  var chapter = CHAPTERS.find(function (item) {
+    return (item.resources || []).some(function (resource) { return resource.url === filename; });
+  });
+  var lessonUrl = chapter ? chapter.url : "sistemul_nervos.html";
+  var lessonName = chapter ? chapter.name : "Organizarea sistemului nervos";
 
   var state = loadState();
 
@@ -63,13 +70,15 @@
   }
 
   function validateData() {
-    var expectedNumber = 51;
-    if (!Array.isArray(quiz.questions) || quiz.questions.length !== 50) {
-      throw new Error("Setul trebuie să conțină exact 50 de grile.");
+    var expectedNumber = quiz.firstNumber || 51;
+    var expectedCount = quiz.questionCount || 50;
+    var idPrefix = quiz.idPrefix || "sn-";
+    if (!Array.isArray(quiz.questions) || quiz.questions.length !== expectedCount) {
+      throw new Error("Setul trebuie să conțină exact " + expectedCount + " de grile.");
     }
     quiz.questions.forEach(function (question) {
       if (question.number !== expectedNumber) throw new Error("Numerotarea grilelor nu este continuă.");
-      if (question.id !== "sn-" + String(question.number).padStart(3, "0")) {
+      if (question.id !== idPrefix + String(question.number).padStart(3, "0")) {
         throw new Error("ID invalid pentru grila " + question.number + ".");
       }
       if (!Array.isArray(question.options) || question.options.length !== 5) {
@@ -77,6 +86,10 @@
       }
       if (question.options.map(function (option) { return option.letter; }).join("") !== "ABCDE") {
         throw new Error("Litere invalide la grila " + question.number + ".");
+      }
+      if (question.sourceNumber !== question.number || !question.correct.length ||
+          question.correct.join("") !== normalizeLetters(question.correct).join("")) {
+        throw new Error("Barem sau număr sursă invalid la grila " + question.number + ".");
       }
       question.options.forEach(function (option) {
         if (question.correct.indexOf(option.letter) === -1 && !option.why) {
@@ -97,7 +110,7 @@
   function renderOption(question, option) {
     var inputId = question.id + "-" + option.letter.toLowerCase();
     var explanationLabel = question.correct.indexOf(option.letter) !== -1
-      ? "De ce afirmația este incorectă"
+      ? (quiz === window.BB_NERVOUS_QUIZ || question.asksFalse ? "De ce afirmația este incorectă" : "Clarificare")
       : "De ce nu se selectează";
     return (
       '<div class="quiz-option-wrap" data-letter="' + option.letter + '">' +
@@ -105,7 +118,7 @@
           '<input id="' + inputId + '" type="checkbox" name="' + question.id + '" value="' + option.letter + '">' +
           '<span class="quiz-option-letter" aria-hidden="true">' + option.letter + '</span>' +
           '<span class="quiz-option-text">' + escapeHtml(option.text) + '</span>' +
-          '<span class="quiz-option-state" aria-hidden="true"></span>' +
+          '<span class="quiz-option-state" id="' + inputId + '-state"></span>' +
         '</label>' +
         '<div class="quiz-option-explanation" id="' + inputId + '-explanation" hidden>' +
           '<strong>' + explanationLabel + '</strong>' +
@@ -148,10 +161,10 @@
     var next = quiz.ranges[index + 1];
     var previousLink = previous
       ? '<a class="outline" href="#' + previous.id + '" onclick="goto(\'' + previous.id + '\')">← Grilele ' + previous.start + '–' + previous.end + '</a>'
-      : '<a class="outline" href="sistemul_nervos.html">← Înapoi la lecție</a>';
+      : '<a class="outline" href="' + lessonUrl + '">← Înapoi la lecție</a>';
     var nextLink = next
       ? '<a href="#' + next.id + '" onclick="goto(\'' + next.id + '\')">Grilele ' + next.start + '–' + next.end + ' →</a>'
-      : '<a href="sistemul_nervos.html">Revezi lecția →</a>';
+      : '<a href="' + lessonUrl + '">Revezi lecția →</a>';
 
     section.innerHTML =
       '<div class="hero quiz-hero">' +
@@ -163,7 +176,7 @@
       '<div class="quiz-progress-panel" aria-label="Progresul grilelor">' +
         '<div class="quiz-progress-copy">' +
           '<strong class="quiz-progress-title">Progres general</strong>' +
-          '<span class="quiz-progress-count" aria-live="polite">0 din 50 verificate</span>' +
+          '<span class="quiz-progress-count" aria-live="polite">0 din ' + quiz.questions.length + ' verificate</span>' +
         '</div>' +
         '<div class="quiz-progress-track" aria-hidden="true"><span></span></div>' +
         '<div class="quiz-progress-meta"><span class="quiz-score">0 răspunsuri exacte</span><span class="quiz-range-score">0/10 în acest set</span></div>' +
@@ -174,6 +187,7 @@
           '<button class="quiz-reset-cancel" type="button" hidden>Anulează</button>' +
         '</div>' +
       '</div>' +
+      '<p class="quiz-feedback-guide">După verificare: <span class="quiz-key-selected">verde — corect bifat</span>; <span class="quiz-key-missed">galben — corect omis</span>; <span class="quiz-key-extra">roșu — bifat în plus</span>.</p>' +
       '<div class="quiz-list">' + questions.map(renderQuestion).join("") + '</div>' +
       '<div class="page-nav quiz-page-nav">' + previousLink + nextLink + '</div>';
   }
@@ -193,17 +207,18 @@
 
     input.checked = selected;
     input.disabled = saved.verified;
-    if (saved.verified && option.why) input.setAttribute("aria-describedby", explanation.id);
+    if (saved.verified) input.setAttribute("aria-describedby", stateLabel.id + (option.why ? " " + explanation.id : ""));
     else input.removeAttribute("aria-describedby");
     wrap.classList.toggle("is-verified", saved.verified);
-    wrap.classList.toggle("is-answer", saved.verified && isAnswer);
+    wrap.classList.toggle("is-answer", saved.verified && isAnswer && selected);
+    wrap.classList.toggle("is-missed-answer", saved.verified && isAnswer && !selected);
     wrap.classList.toggle("is-selected-extra", saved.verified && selected && !isAnswer);
 
     if (!saved.verified) {
       stateLabel.textContent = "";
       explanation.hidden = true;
     } else if (isAnswer) {
-      stateLabel.textContent = "✓ Se selectează";
+      stateLabel.textContent = selected ? "✓ Corect bifat" : "! Corect omis";
       explanation.hidden = !option.why;
     } else {
       stateLabel.textContent = selected ? "× Selectată în plus" : "Nu se selectează";
@@ -275,7 +290,7 @@
     var percentage = Math.round((verified / quiz.questions.length) * 100);
 
     document.querySelectorAll(".quiz-progress-count").forEach(function (node) {
-      node.textContent = verified + " din 50 verificate";
+      node.textContent = verified + " din " + quiz.questions.length + " verificate";
     });
     document.querySelectorAll(".quiz-score").forEach(function (node) {
       node.textContent = correct + (correct === 1 ? " răspuns exact" : " răspunsuri exacte");
@@ -285,7 +300,7 @@
     });
     var sidebarCount = document.getElementById("quiz-sidebar-count");
     var sidebarTrack = document.querySelector("#quiz-sidebar-progress span");
-    if (sidebarCount) sidebarCount.textContent = verified + "/50 verificate";
+    if (sidebarCount) sidebarCount.textContent = verified + "/" + quiz.questions.length + " verificate";
     if (sidebarTrack) sidebarTrack.style.width = percentage + "%";
 
     quiz.ranges.forEach(function (range) {
@@ -405,8 +420,9 @@
         if (label) label.textContent = "Caută în grile";
       });
       if (back) {
-        back.setAttribute("aria-label", "Înapoi la lecția 11");
-        back.setAttribute("title", "Înapoi la lecția 11");
+        back.href = lessonUrl;
+        back.setAttribute("aria-label", "Înapoi la lecție: " + lessonName);
+        back.setAttribute("title", "Înapoi la lecție: " + lessonName);
       }
     }, 0);
   }

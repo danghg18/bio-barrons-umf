@@ -12,6 +12,9 @@
     suppressNextRouteFocus: false,
     highlighterEnabled: false,
     highlighterColor: "yellow",
+    highlighterPaletteOpen: false,
+    settingsOpen: false,
+    setSettingsOpen: null,
     pageCloseNav: null,
   };
 
@@ -365,6 +368,7 @@
       trigger.innerHTML = drawerIcon(false);
     }
     if (main) main.inert = false;
+    if (isMobileLayout() && state.setSettingsOpen) state.setSettingsOpen(false, false);
 
     if (restoreFocus && state.drawerReturnFocus && typeof state.drawerReturnFocus.focus === "function") {
       state.drawerReturnFocus.focus();
@@ -476,12 +480,26 @@
   }
 
   function searchArrowIcon(direction) {
-    var path = direction === "previous" ? "M7 14l5-5 5 5" : "M7 10l5 5 5-5";
-    return '<svg class="lesson-search-arrow-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="' + path + '"/></svg>';
+    var paths = direction === "previous"
+      ? '<path d="M12 19V5"/><path d="m7 10 5-5 5 5"/>'
+      : '<path d="M12 5v14"/><path d="m7 14 5 5 5-5"/>';
+    return '<svg class="lesson-search-arrow-icon" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + paths + "</svg>";
   }
 
   function searchCloseIcon() {
     return '<svg class="lesson-search-close-icon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg>';
+  }
+
+  function highlighterIcon() {
+    return '<svg class="bb-highlighter-icon bb-settings-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="bb-highlighter-icon-fill" d="m13 4 7 7-8 8H5v-7z"/><path d="m9 8 7 7M4 21h10"/></svg>';
+  }
+
+  function settingsIcon() {
+    return '<svg class="bb-settings-toggle-icon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg>';
+  }
+
+  function settingsChevronIcon() {
+    return '<svg class="bb-settings-chevron" viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 8 4 4 4-4"/></svg>';
   }
 
   function createLessonSearch() {
@@ -531,9 +549,9 @@
       trigger.className = "lesson-search-trigger";
       trigger.setAttribute("aria-label", "Caută în lecție");
       trigger.setAttribute("title", "Caută în lecție (/)");
-      trigger.innerHTML = searchIcon("lesson-search-trigger-icon");
       root.prepend(trigger);
     }
+    trigger.innerHTML = searchIcon("lesson-search-trigger-icon");
     trigger.setAttribute("aria-controls", "lesson-search-input");
     trigger.setAttribute("aria-expanded", String(root.classList.contains("open")));
     if (trigger.dataset.bbSearchTrigger !== "true") {
@@ -546,9 +564,13 @@
   }
 
   function upgradeSearchControls(root) {
+    var fieldIcon = root.querySelector(".lesson-search-box > svg");
+    var input = root.querySelector("#lesson-search-input");
     var previous = root.querySelector("#lesson-search-prev");
     var next = root.querySelector("#lesson-search-next");
     var close = root.querySelector("#lesson-search-close");
+    if (fieldIcon) fieldIcon.outerHTML = searchIcon("lesson-search-field-icon");
+    if (input) input.type = "search";
     if (previous) {
       previous.innerHTML = searchArrowIcon("previous");
       previous.title = "Rezultatul anterior";
@@ -560,6 +582,8 @@
     if (close) {
       close.innerHTML = searchCloseIcon();
       close.title = "Închide căutarea";
+      close.setAttribute("aria-hidden", "true");
+      close.tabIndex = -1;
     }
   }
 
@@ -595,57 +619,113 @@
     });
   }
 
-  function collectOwnedSearchMatches(query) {
+  // Highlight/search wrappers are transparent to matching. Authored element
+  // boundaries stay separate, so unrelated labels, cells and blocks cannot join.
+  // One logical hit may own several per-text-node markers; never extract a range
+  // across elements, which would split or clone the student's highlight markup.
+  function collectSearchTextMatches(query, options) {
     var needle = normalizeSearchValue(String(query || "").trim());
     if (!needle) return [];
     var matches = [];
+    var limit = options && options.limit || Infinity;
 
     document.querySelectorAll(".page-section").forEach(function (section) {
-      var walker = document.createTreeWalker(section, NodeFilter.SHOW_TEXT);
-      while (walker.nextNode() && matches.length < 300) {
-        var node = walker.currentNode;
-        var parent = node.parentElement;
-        if (!parent || parent.closest("script, style, nav, button, input, textarea, select, svg, mark.hl")) continue;
-        var indexed = indexText(node.textContent || "");
+      var text = "";
+      var pieces = [];
+      function flush() {
+        var indexed = indexText(text);
         var from = 0;
-        while (from < indexed.normalized.length && matches.length < 300) {
+        while (from < indexed.normalized.length && matches.length < limit) {
           var found = indexed.normalized.indexOf(needle, from);
           if (found < 0) break;
           var start = indexed.map[found];
           var end = indexed.map[found + needle.length - 1] + 1;
-          if (typeof start !== "number" || typeof end !== "number") break;
-          matches.push({ sectionId: section.id.replace(/^page-/, ""), node: node, start: start, end: end });
-          from = found + Math.max(needle.length, 1);
+          // Include a decomposed accent with its final source character.
+          while (end < text.length && /[\u0300-\u036f]/.test(text[end])) end += 1;
+          var parts = pieces.filter(function (piece) {
+            return piece.start < end && piece.end > start;
+          }).map(function (piece) {
+            return { node: piece.node, start: Math.max(start, piece.start) - piece.start,
+              end: Math.min(end, piece.end) - piece.start };
+          });
+          matches.push({ sectionId: options && options.fullSectionId ? section.id : section.id.replace(/^page-/, ""), parts: parts });
+          from = found + needle.length;
         }
+        text = "";
+        pieces = [];
       }
+      function visit(node) {
+        if (matches.length >= limit) return;
+        if (node.nodeType === Node.TEXT_NODE) {
+          var value = node.textContent || "";
+          if (value) pieces.push({ node: node, start: text.length, end: text.length + value.length });
+          text += value;
+          return;
+        }
+        if (node.nodeType !== Node.ELEMENT_NODE) return;
+        if (node.matches("script, style, nav, button, input, textarea, select, svg")) {
+          flush();
+          return;
+        }
+        var transparent = node.matches('mark.hl, .search-found[data-bb-search="true"]');
+        if (!transparent) flush();
+        Array.from(node.childNodes).forEach(visit);
+        if (!transparent) flush();
+      }
+      visit(section);
+      flush();
     });
     return matches;
+  }
+
+  function collectOwnedSearchMatches(query) {
+    return collectSearchTextMatches(query, { limit: 300 });
   }
 
   function renderOwnedSearchMarks(matches) {
     var grouped = new Map();
     matches.forEach(function (match, index) {
       match.index = index;
-      if (!grouped.has(match.node)) grouped.set(match.node, []);
-      grouped.get(match.node).push(match);
-    });
-    grouped.forEach(function (nodeMatches, node) {
-      nodeMatches.sort(function (a, b) {
-        return b.start - a.start;
+      match.elements = [];
+      match.parts.forEach(function (part, partIndex) {
+        if (!grouped.has(part.node)) grouped.set(part.node, []);
+        grouped.get(part.node).push({ match: match, part: part, partIndex: partIndex });
       });
-      nodeMatches.forEach(function (match) {
+    });
+    grouped.forEach(function (nodeParts, node) {
+      nodeParts.sort(function (a, b) {
+        return b.part.start - a.part.start;
+      });
+      nodeParts.forEach(function (entry) {
         var range = document.createRange();
-        range.setStart(node, match.start);
-        range.setEnd(node, match.end);
+        range.setStart(node, entry.part.start);
+        range.setEnd(node, entry.part.end);
         var mark = document.createElement("mark");
         mark.className = "search-found";
         mark.dataset.bbSearch = "true";
-        mark.dataset.searchIndex = String(match.index);
+        mark.dataset.searchIndex = String(entry.match.index);
         range.surroundContents(mark);
-        match.element = mark;
+        entry.match.elements[entry.partIndex] = mark;
+        if (entry.partIndex === 0) entry.match.element = mark;
       });
     });
   }
+
+  function setSearchMatchCurrent(match, current) {
+    if (!match) return;
+    (match.elements || []).forEach(function (element) {
+      element.classList.toggle("search-found-current", current);
+    });
+  }
+
+  // The two legacy controllers retain their routing, URL restoration and UI.
+  // Only their text/marker operations delegate to this shared implementation.
+  window.BBLessonSearchText = {
+    collect: collectSearchTextMatches,
+    render: renderOwnedSearchMarks,
+    clear: clearOwnedSearchMarks,
+    setCurrent: setSearchMatchCurrent,
+  };
 
   function updateOwnedSearchUi() {
     var count = document.getElementById("lesson-search-count");
@@ -688,7 +768,7 @@
       return;
     }
     if (state.searchIndex >= 0 && state.searchMatches[state.searchIndex].element) {
-      state.searchMatches[state.searchIndex].element.classList.remove("search-found-current");
+      setSearchMatchCurrent(state.searchMatches[state.searchIndex], false);
     }
 
     state.searchIndex = ((index % total) + total) % total;
@@ -698,7 +778,7 @@
       navigateLessonSection(match.sectionId, { focus: false, source: "search" });
     }
     if (match.element) {
-      match.element.classList.add("search-found-current");
+      setSearchMatchCurrent(match, true);
       window.requestAnimationFrame(function () {
         scrollOwnedSearchMatchIntoView(match.element);
       });
@@ -918,35 +998,87 @@
       group = document.createElement("div");
       group.className = "nav-group bb-sidebar-settings";
       group.id = "bb-sidebar-settings";
-      group.innerHTML = '<div class="nav-divider"></div><div class="nav-group-label">Setări</div>';
+      group.innerHTML = '<div class="nav-divider"></div>';
       nav.appendChild(group);
     }
 
-    function ensureButton(id, label, handler, controls) {
+    group.id = "bb-sidebar-settings";
+    group.classList.add("bb-sidebar-settings");
+    var oldLabel = group.querySelector(":scope > .nav-group-label");
+    if (oldLabel) oldLabel.remove();
+
+    var toggle = group.querySelector(".bb-settings-toggle");
+    if (!toggle) {
+      toggle = document.createElement("button");
+      toggle.type = "button";
+      toggle.className = "bb-settings-toggle";
+      toggle.setAttribute("aria-controls", "bb-sidebar-settings-panel");
+      toggle.innerHTML = settingsIcon() + '<span>Setări</span>' + settingsChevronIcon();
+      var divider = group.querySelector(":scope > .nav-divider");
+      if (divider) divider.insertAdjacentElement("afterend", toggle);
+      else group.prepend(toggle);
+    }
+
+    var panel = group.querySelector("#bb-sidebar-settings-panel");
+    if (!panel) {
+      panel = document.createElement("div");
+      panel.id = "bb-sidebar-settings-panel";
+      panel.className = "bb-settings-panel";
+      panel.hidden = true;
+      toggle.insertAdjacentElement("afterend", panel);
+    }
+
+    function setSettingsOpen(open, restoreFocus) {
+      state.settingsOpen = !!open;
+      panel.hidden = !state.settingsOpen;
+      group.classList.toggle("is-open", state.settingsOpen);
+      toggle.setAttribute("aria-expanded", String(state.settingsOpen));
+      if (!state.settingsOpen) {
+        setHighlighterPaletteOpen(false);
+        if (restoreFocus && group.contains(document.activeElement)) toggle.focus();
+      }
+    }
+
+    state.setSettingsOpen = setSettingsOpen;
+
+    toggle.addEventListener("click", function () {
+      setSettingsOpen(!state.settingsOpen, true);
+    });
+    toggle.setAttribute("aria-expanded", "false");
+    panel.hidden = true;
+    state.settingsOpen = false;
+
+    function ensureButton(id, label, controls) {
       var button = document.getElementById(id);
       if (!button) {
         button = document.createElement("button");
         button.type = "button";
         button.id = id;
         button.className = "nav-settings-btn";
-        button.innerHTML = '<span class="dot" aria-hidden="true"></span><span>' + label + "</span>";
-        button.addEventListener("click", handler);
-        group.appendChild(button);
+        button.innerHTML = "<span>" + label + "</span>";
       }
+      button.removeAttribute("onclick");
       if (controls) button.setAttribute("aria-controls", controls);
+      panel.appendChild(button);
       return button;
     }
 
-    ensureButton(
-      "nav-search-btn",
-      "Caută în lecție",
-      function () {
-        openSearch(true, document.getElementById("nav-search-btn"));
-      },
-      "lesson-search-input"
-    ).setAttribute("aria-expanded", "false");
-    ensureButton("nav-hl-btn", "Evidențiator", function () {
-      if (typeof window.toggleHighlighter === "function") window.toggleHighlighter();
+    var searchButton = ensureButton("nav-search-btn", "Caută în lecție", "lesson-search-input");
+    searchButton.innerHTML = searchIcon("bb-settings-icon") + "<span>Caută în lecție</span>";
+    searchButton.setAttribute("aria-expanded", "false");
+    searchButton.addEventListener("click", function () {
+      openSearch(true, searchButton);
+    });
+
+    var highlighterButton = ensureButton("nav-hl-btn", "Highlighter", "bb-highlighter-palette");
+    highlighterButton.innerHTML = highlighterIcon() + '<span id="nav-hl-label">Highlighter</span>';
+    highlighterButton.setAttribute("aria-haspopup", "true");
+    highlighterButton.addEventListener("click", function () {
+      setHighlighterPaletteOpen(!state.highlighterPaletteOpen);
+    });
+
+    document.addEventListener("bb:lesson-section-change", function () {
+      setSettingsOpen(false, false);
     });
   }
 
@@ -961,7 +1093,7 @@
     palette.className = "bb-highlighter-palette";
     palette.hidden = true;
     palette.innerHTML =
-      '<div class="bb-highlighter-palette-head"><span>Culoare</span><strong id="bb-highlighter-color-name" aria-live="polite">Galben</strong></div>' +
+      '<div class="bb-highlighter-palette-head"><span>Alege culoarea</span><button class="bb-highlighter-disable" type="button">Oprește</button></div>' +
       '<div class="bb-highlighter-colors" role="group" aria-label="Culoare evidențiator"></div>';
 
     var colorsRoot = palette.querySelector(".bb-highlighter-colors");
@@ -976,13 +1108,35 @@
       button.innerHTML = '<span class="bb-highlighter-check" aria-hidden="true">✓</span>';
       button.addEventListener("click", function () {
         setHighlighterColor(color.id);
+        setHighlighterEnabled(true);
+        setHighlighterPaletteOpen(false, true);
       });
       colorsRoot.appendChild(button);
+    });
+
+    palette.querySelector(".bb-highlighter-disable").addEventListener("click", function () {
+      setHighlighterEnabled(false);
+      setHighlighterPaletteOpen(false, true);
     });
 
     navButton.setAttribute("aria-controls", palette.id);
     navButton.insertAdjacentElement("afterend", palette);
     return palette;
+  }
+
+  function setHighlighterPaletteOpen(open, restoreFocus) {
+    var palette = ensureHighlighterPalette();
+    var navButton = document.getElementById("nav-hl-btn");
+    state.highlighterPaletteOpen = !!open && state.settingsOpen;
+    if (palette) palette.hidden = !state.highlighterPaletteOpen;
+    if (navButton) navButton.setAttribute("aria-expanded", String(state.highlighterPaletteOpen));
+    if (!state.highlighterPaletteOpen && restoreFocus && navButton) navButton.focus();
+  }
+
+  function setHighlighterEnabled(enabled) {
+    var current = document.body.classList.contains("hl-mode");
+    if (current === !!enabled) return;
+    if (typeof window.toggleHighlighter === "function") window.toggleHighlighter();
   }
 
   function syncHighlighterPaletteUi() {
@@ -995,16 +1149,16 @@
 
     if (navButton) {
       navButton.dataset.highlightColor = color;
-      navButton.setAttribute("aria-expanded", String(enabled));
+      navButton.setAttribute("aria-expanded", String(state.highlighterPaletteOpen));
       navButton.title = enabled
-        ? "Evidențiator activ · " + getHighlighterColorLabel(color)
-        : "Activează evidențiatorul";
+        ? "Highlighter activ · " + getHighlighterColorLabel(color)
+        : "Alege culoarea pentru Highlighter";
     }
     if (!palette) return;
-    palette.hidden = !enabled;
+    palette.hidden = !state.highlighterPaletteOpen;
 
-    var name = document.getElementById("bb-highlighter-color-name");
-    if (name) name.textContent = getHighlighterColorLabel(color);
+    var disable = palette.querySelector(".bb-highlighter-disable");
+    if (disable) disable.hidden = !enabled;
     palette.querySelectorAll(".bb-highlighter-color").forEach(function (button) {
       var selected = button.dataset.highlightColor === color;
       button.classList.toggle("is-selected", selected);
@@ -1023,8 +1177,8 @@
     state.highlighterEnabled = enabled;
     var navButton = document.getElementById("nav-hl-btn");
     var label = document.getElementById("nav-hl-label");
-    if (!label && navButton) label = navButton.querySelector("span:not(.dot)");
-    if (label) label.textContent = enabled ? "Evidențiator activ" : "Evidențiator";
+    if (!label && navButton) label = navButton.querySelector("span");
+    if (label) label.textContent = "Highlighter";
 
     [navButton, document.getElementById("hl-btn"), document.getElementById("sfab-hl")].forEach(function (button) {
       if (!button) return;
@@ -1148,11 +1302,21 @@
         if (event.key === "Escape") {
           var drawerOpen = !!document.querySelector("#sidenav.open");
           var searchOpen = !!(state.searchRoot && state.searchRoot.classList.contains("open"));
+          if (state.highlighterPaletteOpen) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            setHighlighterPaletteOpen(false, true);
+            return;
+          }
           if (drawerOpen || searchOpen) {
             event.preventDefault();
             event.stopImmediatePropagation();
             if (searchOpen) closeSearch(true);
             if (drawerOpen) setDrawerClosedState(true);
+          } else if (state.settingsOpen && state.setSettingsOpen) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            state.setSettingsOpen(false, true);
           }
           return;
         }

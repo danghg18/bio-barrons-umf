@@ -7,8 +7,9 @@
     "generate:check": "node scripts/generate-site-assets.mjs --check",
     "validate": "node scripts/validate-site.mjs",
     "test:smoke": "node scripts/smoke-test.mjs",
-    "test": "npm run generate:check && npm run validate && npm run test:smoke && npm run test:ui",
-    "test:ui": "node scripts/ui-test.mjs"
+    "test": "npm run generate:check && npm run validate && npm run test:smoke && npm run test:search && npm run test:ui",
+    "test:ui": "node scripts/ui-test.mjs",
+    "test:search": "node scripts/search-highlighter-test.mjs"
   },
   "devDependencies": {
     "playwright": "1.63.0"

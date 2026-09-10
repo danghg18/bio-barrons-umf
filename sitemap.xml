@@ -2,7 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://danghg18.github.io/bio-barrons-umf/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-10</lastmod>
+  </url>
+  <url>
+    <loc>https://danghg18.github.io/bio-barrons-umf/testare.html</loc>
+    <lastmod>2026-09-10</lastmod>
   </url>
   <url>
     <loc>https://danghg18.github.io/bio-barrons-umf/introducere_anatomie_fiziologie.html</loc>
@@ -29,6 +33,10 @@
     <lastmod>2026-09-07</lastmod>
   </url>
   <url>
+    <loc>https://danghg18.github.io/bio-barrons-umf/organele_de_simt.html</loc>
+    <lastmod>2026-09-10</lastmod>
+  </url>
+  <url>
     <loc>https://danghg18.github.io/bio-barrons-umf/sistemul_renal_complet.html</loc>
     <lastmod>2026-04-21</lastmod>
   </url>
@@ -43,5 +51,9 @@
   <url>
     <loc>https://danghg18.github.io/bio-barrons-umf/grile_sistemul_nervos.html</loc>
     <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://danghg18.github.io/bio-barrons-umf/grile_organele_de_simt.html</loc>
+    <lastmod>2026-09-10</lastmod>
   </url>
 </urlset>

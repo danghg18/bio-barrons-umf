@@ -66,9 +66,10 @@ async function capture(page, name) {
 try {
  const context = await browser.newContext({serviceWorkers:'block',reducedMotion:'reduce'});
  const page = await newPage(context);
- for (const file of ['index.html', ...lessonFiles, ...resources.map(r=>r.url)]) {
+ for (const file of ['index.html', ...(registry.BIO_SITE.pages || []).map(r=>r.url), ...lessonFiles, ...resources.map(r=>r.url)]) {
   await page.goto(base+file); await page.evaluate(()=>document.fonts.ready);
-  const sections = await page.evaluate(()=>[...document.querySelectorAll('.page-section')].map(x=>({id:x.id,text:x.textContent.replace(/\s+/g,' ').trim(),images:[...x.querySelectorAll('img')].map(i=>i.getAttribute('src')),tables:[...x.querySelectorAll('table')].map(t=>t.textContent.replace(/\s+/g,' ').trim())})));
+  // The feedback legend is new interface copy; retain the existing educational-text baseline.
+  const sections = await page.evaluate(()=>[...document.querySelectorAll('.page-section')].map(x=>{const copy=x.cloneNode(true);copy.querySelectorAll('.quiz-feedback-guide').forEach(node=>node.remove());return {id:x.id,text:copy.textContent.replace(/\s+/g,' ').trim(),images:[...x.querySelectorAll('img')].map(i=>i.getAttribute('src')),tables:[...x.querySelectorAll('table')].map(t=>t.textContent.replace(/\s+/g,' ').trim())};}));
   if (protectedContent[file]) {
    const actual = sections.map(s=>({...s,text:hash(s.text),tables:s.tables.map(hash)}));
    if(JSON.stringify(actual)!==JSON.stringify(protectedContent[file])) errors.push(file+': protected content changed');
@@ -106,7 +107,7 @@ try {
   await page.keyboard.press('Shift+Tab');if(!await page.locator('#sidenav').evaluate(x=>x.contains(document.activeElement)))errors.push(file+': reverse focus escaped drawer');
   await page.keyboard.press('Tab');await page.keyboard.press('Escape');if(!await page.locator('.lab-menu-trigger').evaluate(x=>x===document.activeElement))errors.push(file+': drawer focus not returned');
   await page.locator('.lab-menu-trigger').click();await resize(page, {width:1440,height:900});if(await page.locator('main').evaluate(x=>x.inert))errors.push(file+': resize left main inert');
-  if(!await page.locator('body').evaluate(x=>x.classList.contains('hl-mode')))await page.locator('#nav-hl-btn').click();await page.locator('#bb-highlighter-palette').waitFor({state:'visible'});await page.locator('#bb-highlighter-palette').scrollIntoViewIfNeeded();await capture(page,file+'-highlighter');await page.locator('.bb-highlighter-color').last().click();await page.locator('#nav-hl-btn').click();
+  if(!await page.locator('#bb-sidebar-settings-panel').evaluate(x=>x.hidden))errors.push(file+': settings menu did not start collapsed');await page.locator('.bb-settings-toggle').click();await page.locator('#nav-hl-btn').click();await page.locator('#bb-highlighter-palette').waitFor({state:'visible'});await page.locator('#bb-highlighter-palette').scrollIntoViewIfNeeded();await capture(page,file+'-highlighter');await page.locator('.bb-highlighter-color').last().click();if(await page.locator('#bb-highlighter-palette').isVisible())errors.push(file+': highlighter palette stayed open after color selection');if(!await page.locator('body').evaluate(x=>x.classList.contains('hl-mode')))errors.push(file+': highlighter did not activate after color selection');await page.locator('#nav-hl-btn').click();await page.locator('.bb-highlighter-disable').click();
   await page.locator('.lesson-search-trigger').click();await page.locator('#lesson-search-input').fill('sistem');await page.waitForTimeout(350);await capture(page,file+'-search');await page.keyboard.press('Escape');
  }
  await page.goto(base+'introducere_anatomie_fiziologie.html');const tableRoute=await page.locator('table.bb-table-stacked').first().evaluate(t=>t.closest('.page-section').id.slice(5));await page.evaluate(r=>BBLessonNavigation.navigate(r,{focus:false}),tableRoute);await page.locator('.page-section.active table').first().scrollIntoViewIfNeeded();await capture(page,'table-desktop');await resize(page, {width:390,height:844});await page.locator('.page-section.active table').first().scrollIntoViewIfNeeded();await capture(page,'table-stacked');
