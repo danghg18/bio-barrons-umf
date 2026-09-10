@@ -32,7 +32,10 @@ for (const file of htmlFiles) {
   }
 }
 
-if (registry.CHAPTERS.length !== 23) errors.push('chapter registry must contain 23 records');
+const expectedChapterNumbers = [1, 3, 6, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 22, 23];
+if (registry.CHAPTERS.map(chapter => chapter.num).join(',') !== expectedChapterNumbers.join(',')) {
+  errors.push(`chapter registry must contain exactly: ${expectedChapterNumbers.join(', ')}`);
+}
 for (const chapter of chapters) {
   if (!chapter.updated || !chapter.theme) errors.push(`chapter ${chapter.num}: missing generated-site metadata`);
   if (!(await exists(chapter.url))) errors.push(`chapter ${chapter.num}: missing page ${chapter.url}`);

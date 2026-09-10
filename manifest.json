@@ -1,11 +1,11 @@
 {
-  "name": "Barron's Biologie – UMF Cluj",
-  "short_name": "Biologie",
+  "name": "BioMed – Biologie pentru admitere",
+  "short_name": "BioMed",
   "description": "Ghid de studiu biologie pentru pregătirea la UMF Cluj",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#F4F6FA",
-  "theme_color": "#F4F6FA",
+  "background_color": "#F7F8FA",
+  "theme_color": "#F7F8FA",
   "orientation": "any",
   "icons": [
     {

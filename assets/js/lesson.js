@@ -63,6 +63,25 @@
     }
   }
 
+  function getCurrentChapterNum() {
+    if (typeof CHAPTERS !== "undefined") {
+      var filename = window.location.pathname.split("/").pop();
+      var chapter = CHAPTERS.find(function (item) {
+        return item.done && item.url === filename;
+      });
+      if (chapter) return chapter.num;
+    }
+    var badge = document.querySelector(".nav-chapter-badge");
+    var match = String(badge ? badge.textContent : "").match(/\d+/);
+    return match ? Number(match[0]) : 0;
+  }
+
+  function recordStudyVisit(route) {
+    if (!window.BBStudyState || typeof window.BBStudyState.recordVisit !== "function") return;
+    var chapterNum = getCurrentChapterNum();
+    if (chapterNum) window.BBStudyState.recordVisit(chapterNum, route);
+  }
+
   function activate(route, options) {
     var section = routes.get(route);
     if (!section) return false;
@@ -72,6 +91,7 @@
       candidate.classList.toggle("active", candidate === section);
     });
     syncNavigation(route);
+    recordStudyVisit(route);
 
     document.dispatchEvent(
       new CustomEvent("bb:lesson-section-change", {

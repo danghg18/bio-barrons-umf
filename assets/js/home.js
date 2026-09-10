@@ -1,10 +1,10 @@
 /* ── CANONICAL CATALOG STATE ── */
 function syncChapterCatalog(){
-  const byNumber=new Map(CHAPTERS.map(chapter=>[String(chapter.num),chapter]));
-  document.querySelectorAll('.lab-bento-items .lab-item').forEach(function(item){
-    const number=item.querySelector('.lab-item-num')?.textContent.trim();
+  const byNumber=new Map(CHAPTERS.map(chapter=>[Number(chapter.num),chapter]));
+  document.querySelectorAll('.lab-home-catalog .lab-item').forEach(function(item){
+    const number=Number(item.querySelector('.lab-item-num')?.textContent.trim());
     const chapter=byNumber.get(number);
-    if(!chapter)return;
+    if(!chapter){item.remove();return;}
     const title=item.querySelector('.lab-item-title');
     const icon=item.querySelector('.lab-item-emoji');
     if(title)title.textContent=chapter.name;
@@ -17,9 +17,12 @@ function syncChapterCatalog(){
       const status=link.querySelector('.lab-item-soon-mark');
       if(status){status.className='lab-item-done-mark';status.textContent='Disponibil';}
       item.replaceWith(link);
+    }else if(!chapter.done){
+      const status=item.querySelector('.lab-item-soon-mark');
+      if(status)status.textContent='În pregătire';
     }
   });
-  document.querySelectorAll('.lab-bento-cat').forEach(function(group){
+  document.querySelectorAll('.lab-home-catalog .lab-bento-cat').forEach(function(group){
     const numbers = new Set(Array.from(group.querySelectorAll('.lab-item-num'), node => Number(node.textContent.trim())));
     const records = CHAPTERS.filter(chapter => numbers.has(Number(chapter.num)));
     const label=group.querySelector('.lab-bento-cat-ring-inner');
@@ -28,8 +31,159 @@ function syncChapterCatalog(){
     if(label)label.textContent=done+' din '+records.length+' lecții disponibile';
   });
 }
+
+const LESSON_SECTIONS=new Map();
+
+function loadLessonSections(chapter){
+  if(LESSON_SECTIONS.has(chapter.num))return LESSON_SECTIONS.get(chapter.num);
+  const request=fetch(chapter.url).then(function(response){
+    if(!response.ok)throw new Error('Lecția nu a putut fi încărcată.');
+    return response.text();
+  }).then(function(html){
+    const doc=new DOMParser().parseFromString(html,'text/html');
+    return Array.from(doc.querySelectorAll('.page-section')).map(function(section){
+      const heading=section.querySelector('h1, h2, h3');
+      return {
+        id:section.id.replace(/^page-/,''),
+        title:heading?heading.textContent.replace(/\s+/g,' ').trim():'',
+        isHome:section.classList.contains('chapter-home')
+      };
+    }).filter(function(section){return section.id;});
+  }).catch(function(){return [];});
+  LESSON_SECTIONS.set(chapter.num,request);
+  return request;
+}
+
+function ensureProgressStatus(item){
+  let statuses=item.querySelector('.lab-item-statuses');
+  if(statuses)return statuses;
+  statuses=document.createElement('span');
+  statuses.className='lab-item-statuses';
+  const availability=item.querySelector('.lab-item-done-mark');
+  if(availability){
+    availability.replaceWith(statuses);
+    availability.classList.add('lab-item-availability');
+    statuses.appendChild(availability);
+  }
+  const progress=document.createElement('span');
+  progress.className='lab-item-progress';
+  statuses.appendChild(progress);
+  return statuses;
+}
+
+async function syncStudyProgress(){
+  if(!window.BBStudyState)return;
+  await Promise.all(CHAPTERS.filter(function(chapter){return chapter.done&&chapter.url;}).map(async function(chapter){
+    const item=Array.from(document.querySelectorAll('.lab-bento-items .lab-item')).find(function(candidate){
+      return Number(candidate.querySelector('.lab-item-num')?.textContent.trim())===chapter.num;
+    });
+    if(!item)return;
+    const sections=await loadLessonSections(chapter);
+    const progress=window.BBStudyState.getLessonProgress(chapter.num,sections.filter(function(section){
+      return !section.isHome;
+    }).map(function(section){return section.id;}));
+    const statuses=ensureProgressStatus(item);
+    const label=statuses.querySelector('.lab-item-progress');
+    if(!label)return;
+    if(progress.isComplete){
+      label.textContent='Completă';
+      label.className='lab-item-progress is-complete';
+    }else if(progress.completed>0){
+      label.textContent='În progres · '+progress.completed+'/'+progress.total;
+      label.className='lab-item-progress';
+    }else{
+      label.textContent='';
+      label.className='lab-item-progress';
+    }
+  }));
+}
+
+async function syncContinueCard(){
+  const card=document.getElementById('lab-continue');
+  if(!card||!window.BBStudyState)return;
+  const state=window.BBStudyState.getState();
+  const visit=state&&state.lastVisited;
+  const chapter=visit&&CHAPTERS.find(function(entry){return entry.num===Number(visit.chapterNum)&&entry.done&&entry.url;});
+  if(!chapter||typeof visit.sectionId!=='string'||!visit.sectionId){card.hidden=true;return;}
+  const sections=await loadLessonSections(chapter);
+  const section=sections.find(function(entry){return entry.id===visit.sectionId;});
+  if(!section){card.hidden=true;return;}
+  const link=document.getElementById('lab-continue-link');
+  const title=document.getElementById('lab-continue-title');
+  const sectionLabel=document.getElementById('lab-continue-section');
+  link.href=chapter.url+'#'+encodeURIComponent(section.id);
+  title.textContent=chapter.name;
+  sectionLabel.textContent=section.title||'Secțiunea reluată';
+  card.hidden=false;
+}
+
+function syncStudyHomepage(){
+  syncStudyProgress();
+  syncContinueCard();
+}
+
+function quizSummary(title){
+  const range=String(title||'').match(/(\d+)\s*[–-]\s*(\d+)/);
+  if(!range)return String(title||'Grile');
+  const first=Number(range[1]);
+  const last=Number(range[2]);
+  const count=Math.max(0,last-first+1);
+  return count+' de grile · întrebările '+first+'–'+last;
+}
+
+function syncTestingCatalog(){
+  const catalog=document.getElementById('lab-testing-catalog');
+  const count=document.getElementById('lab-testing-count');
+  if(!catalog)return;
+  const byNumber=new Map(CHAPTERS.map(chapter=>[String(chapter.num),chapter]));
+  const quizzes=[];
+  CHAPTERS.forEach(function(chapter){
+    (chapter.resources||[]).filter(resource=>resource.kind==='quiz').forEach(function(resource){
+      quizzes.push({chapter:chapter,resource:resource});
+    });
+  });
+  catalog.querySelectorAll('.lab-item[data-chapter]').forEach(function(original){
+    const chapter=byNumber.get(original.dataset.chapter);
+    if(!chapter)return;
+    const resource=(chapter.resources||[]).find(item=>item.kind==='quiz');
+    let item=original;
+    if(resource&&original.tagName==='BUTTON'){
+      const link=document.createElement('a');
+      link.className=original.className.replace('lab-item-soon','lab-item-done');
+      link.dataset.chapter=original.dataset.chapter;
+      link.href=resource.url;
+      while(original.firstChild)link.appendChild(original.firstChild);
+      original.replaceWith(link);
+      item=link;
+    }
+    const title=item.querySelector('.lab-item-title');
+    const detail=item.querySelector('.lab-item-tags');
+    const status=item.querySelector('.lab-item-done-mark,.lab-item-soon-mark');
+    if(title)title.textContent=chapter.name;
+    if(resource){
+      item.classList.remove('lab-item-soon');
+      item.classList.add('lab-item-done');
+      if(detail)detail.textContent=quizSummary(resource.title);
+      if(status){status.className='lab-item-done-mark';status.textContent='Rezolvă';}
+    }else{
+      if(detail)detail.textContent='Test în pregătire';
+      if(status){status.className='lab-item-soon-mark';status.textContent='În curând';}
+    }
+  });
+  catalog.querySelectorAll('.lab-bento-cat').forEach(function(group){
+    const numbers=new Set(Array.from(group.querySelectorAll('.lab-item[data-chapter]'),item=>Number(item.dataset.chapter)));
+    const available=quizzes.filter(entry=>numbers.has(Number(entry.chapter.num))).length;
+    const label=group.querySelector('.lab-bento-cat-ring-inner');
+    if(label)label.textContent=available+' din '+numbers.size+' '+(numbers.size===1?'test disponibil':'teste disponibile');
+  });
+  if(count)count.textContent=quizzes.length+' '+(quizzes.length===1?'test disponibil':'teste disponibile');
+}
+
 syncChapterCatalog();
-document.querySelectorAll('.lab-item-done-mark').forEach(function (status) { status.textContent = 'Disponibil'; });
+syncTestingCatalog();
+document.querySelectorAll('.lab-home-catalog .lab-item-done-mark').forEach(function (status) { status.textContent = 'Disponibil'; });
+syncStudyHomepage();
+if(window.BBStudyState&&typeof window.BBStudyState.subscribe==='function')window.BBStudyState.subscribe(syncStudyHomepage);
 
 /* ── COMMAND PALETTE DATA ── */
 const SEARCHABLE_CHAPTERS = CHAPTERS.filter(c => c.done && c.url);
@@ -217,7 +371,7 @@ async function renderPaletteItems(q){
         <div class="lab-palette-title">Cap. ${String(c.num).padStart(2,'0')} · ${c.name}</div>
         <div class="lab-palette-sub">${c.cat}</div>
       </div>
-      <span class="lab-palette-tag" style="color:${c.color};background:${c.colorLight}">${c.done?'Disponibil':'În curând'}</span>
+      <span class="lab-palette-tag" style="color:${c.color};background:${c.colorLight}">${c.done?'Disponibil':'În pregătire'}</span>
     </button>`).join('');
   bindPaletteActions();
 }

@@ -16,6 +16,7 @@
     settingsOpen: false,
     setSettingsOpen: null,
     pageCloseNav: null,
+    desktopSidebarHidden: false,
   };
 
   var HIGHLIGHTER_COLORS = [
@@ -201,6 +202,45 @@
       "</span>";
   }
 
+  function ensureLessonResourceNavigation() {
+    if (document.body.classList.contains("bm-reader")) return null;
+    var topbar = document.querySelector(".lab-topbar-inner");
+    if (!topbar || typeof CHAPTERS === "undefined") return null;
+
+    var file = decodeURIComponent(window.location.pathname.split("/").pop() || "index.html");
+    var chapter = CHAPTERS.find(function (item) {
+      return item.done && item.url === file;
+    });
+    var quiz = chapter && (chapter.resources || []).find(function (resource) {
+      return resource.kind === "quiz" && resource.url;
+    });
+    if (!quiz) return null;
+
+    var nav = topbar.querySelector(".bb-resource-nav");
+    if (!nav) {
+      nav = document.createElement("nav");
+      nav.className = "lab-nav bb-resource-nav";
+      topbar.insertBefore(nav, topbar.querySelector(".lab-topbar-back") || null);
+    }
+
+    nav.setAttribute("aria-label", "Navigare între lecție și grile");
+    nav.replaceChildren();
+
+    var lessonLink = document.createElement("a");
+    lessonLink.href = chapter.url;
+    lessonLink.textContent = "Lecție";
+    lessonLink.className = "active";
+    lessonLink.setAttribute("aria-current", "page");
+
+    var quizLink = document.createElement("a");
+    quizLink.href = quiz.url;
+    quizLink.textContent = "Grile";
+    quizLink.title = quiz.title || "Deschide grilele";
+
+    nav.append(lessonLink, quizLink);
+    return nav;
+  }
+
   function enhanceGotoLinks() {
     document.querySelectorAll('a[onclick*="goto("]').forEach(function (link) {
       var target = getGotoTarget(link);
@@ -244,6 +284,16 @@
     });
   }
 
+  function dispatchLegacySectionChange(target, source) {
+    var section = document.getElementById("page-" + target) || document.querySelector(".page-section.active");
+    if (!section) return;
+    document.dispatchEvent(
+      new CustomEvent("bb:lesson-section-change", {
+        detail: { route: target, section: section, source: source || "legacy" },
+      })
+    );
+  }
+
   function focusActiveHeading(target) {
     var section = document.getElementById("page-" + target) || document.querySelector(".page-section.active");
     var heading = section && section.querySelector("h1");
@@ -274,6 +324,7 @@
       }
       window.setTimeout(function () {
         syncNavigationState(target);
+        dispatchLegacySectionChange(target, "legacy");
         if (!suppressFocus) focusActiveHeading(target);
       }, 0);
       return result;
@@ -345,6 +396,7 @@
     var overlay = document.getElementById("nav-overlay");
     var trigger = document.querySelector(".lab-menu-trigger");
     var main = document.querySelector("main");
+    var readerDesktop = document.body.classList.contains("bm-reader") && !isMobileLayout();
 
     if (nav) {
       nav.classList.remove("open");
@@ -354,6 +406,10 @@
       } else {
         nav.removeAttribute("aria-hidden");
         nav.inert = false;
+        if (readerDesktop && state.desktopSidebarHidden) {
+          nav.setAttribute("aria-hidden", "true");
+          nav.inert = true;
+        }
       }
     }
     if (overlay) {
@@ -366,6 +422,13 @@
       trigger.setAttribute("aria-label", "Deschide cuprinsul");
       trigger.setAttribute("title", "Deschide cuprinsul");
       trigger.innerHTML = drawerIcon(false);
+      if (readerDesktop) {
+        var expanded = !state.desktopSidebarHidden;
+        trigger.setAttribute("aria-expanded", String(expanded));
+        trigger.setAttribute("aria-label", expanded ? "Ascunde cuprinsul" : "Deschide cuprinsul");
+        trigger.setAttribute("title", expanded ? "Ascunde cuprinsul" : "Deschide cuprinsul");
+        trigger.innerHTML = '<svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16M5.5 8h1M5.5 12h1"/></svg>';
+      }
     }
     if (main) main.inert = false;
     if (isMobileLayout() && state.setSettingsOpen) state.setSettingsOpen(false, false);
@@ -401,10 +464,9 @@
     }
     if (main) main.inert = true;
 
-    window.setTimeout(function () {
-      var first = nav.querySelector('a[href], button:not([disabled]), [tabindex="0"]');
-      if (first) first.focus();
-    }, 0);
+    var first = Array.from(nav.querySelectorAll('a[href], button:not([disabled]), [tabindex="0"]'))
+      .find(function (node) { return node.getClientRects().length > 0; });
+    if (first) first.focus({ preventScroll: true });
   }
 
   function trapDrawerFocus(event) {
@@ -413,7 +475,7 @@
     var focusable = Array.prototype.slice
       .call(nav.querySelectorAll('a[href], button:not([disabled]), [tabindex="0"]'))
       .filter(function (node) {
-        return !node.hidden && node.getAttribute("aria-hidden") !== "true";
+        return !node.hidden && node.getAttribute("aria-hidden") !== "true" && node.getClientRects().length > 0;
       });
     if (!focusable.length) return false;
     var first = focusable[0];
@@ -444,6 +506,12 @@
     trigger.addEventListener(
       "click",
       function (event) {
+        if (!isMobileLayout() && document.body.classList.contains("bm-reader")) {
+          state.desktopSidebarHidden = !state.desktopSidebarHidden;
+          document.body.classList.toggle("bm-sidebar-hidden", state.desktopSidebarHidden);
+          setDrawerClosedState(false);
+          return;
+        }
         if (!isMobileLayout()) return;
         event.preventDefault();
         event.stopImmediatePropagation();
@@ -582,8 +650,9 @@
     if (close) {
       close.innerHTML = searchCloseIcon();
       close.title = "Închide căutarea";
-      close.setAttribute("aria-hidden", "true");
-      close.tabIndex = -1;
+      close.setAttribute("aria-label", "Închide căutarea");
+      close.removeAttribute("aria-hidden");
+      close.removeAttribute("tabindex");
     }
   }
 
@@ -868,6 +937,9 @@
   function openSearch(shouldFocus, returnFocus) {
     var root = state.searchRoot;
     if (!root) return;
+    if (document.body.classList.contains("bm-reader") && state.setSettingsOpen) {
+      state.setSettingsOpen(false, false);
+    }
     setDrawerClosedState(false);
     state.searchReturnFocus = returnFocus || document.activeElement;
 
@@ -1029,6 +1101,7 @@
     }
 
     function setSettingsOpen(open, restoreFocus) {
+      if (open && document.body.classList.contains("bm-reader")) closeSearch(false);
       state.settingsOpen = !!open;
       panel.hidden = !state.settingsOpen;
       group.classList.toggle("is-open", state.settingsOpen);
@@ -1353,6 +1426,212 @@
     );
   }
 
+  function getStudyChapter() {
+    if (document.body.classList.contains("bb-quiz-page") || document.body.classList.contains("bb-testing-page")) {
+      return null;
+    }
+    if (typeof CHAPTERS === "undefined") return null;
+    var filename = window.location.pathname.split("/").pop();
+    return CHAPTERS.find(function (chapter) {
+      return chapter.done && chapter.url === filename;
+    }) || null;
+  }
+
+  function getStudyRoute(section) {
+    return section && section.id.indexOf("page-") === 0 ? section.id.slice(5) : "";
+  }
+
+  function getNavigationRoute(link) {
+    var legacyTarget = getGotoTarget(link);
+    if (legacyTarget) return legacyTarget;
+    var href = link && link.getAttribute("href");
+    if (!href || href.charAt(0) !== "#") return "";
+    try {
+      return decodeURIComponent(href.slice(1));
+    } catch (error) {
+      return href.slice(1);
+    }
+  }
+
+  function setupStudyProgress() {
+    var study = window.BBStudyState;
+    var chapter = getStudyChapter();
+    var main = document.querySelector("main");
+    var nav = document.getElementById("sidenav");
+    if (!study || !chapter || !main || !nav) return;
+
+    var contentSections = Array.prototype.slice.call(
+      main.querySelectorAll(".page-section[id^='page-']:not(.chapter-home)")
+    );
+    var sectionIds = contentSections.map(getStudyRoute).filter(Boolean);
+    if (!sectionIds.length) return;
+
+    var navHeader = nav.querySelector(".nav-header");
+    var progress = document.createElement("div");
+    progress.className = "bb-lesson-progress";
+    progress.innerHTML =
+      '<div class="bb-lesson-progress-copy"><span>Progres capitol</span><strong>0/' +
+      sectionIds.length +
+      '</strong></div><div class="bb-lesson-progress-track" role="progressbar" aria-label="Progres capitol" aria-valuemin="0" aria-valuemax="' +
+      sectionIds.length +
+      '" aria-valuenow="0"><span></span></div>';
+    if (navHeader) navHeader.insertAdjacentElement("afterend", progress);
+    else nav.prepend(progress);
+
+    var controls = document.createElement("section");
+    controls.className = "bb-lesson-completion";
+    controls.setAttribute("aria-labelledby", "bb-lesson-completion-title");
+    controls.innerHTML =
+      '<div class="bb-lesson-completion-copy"><h2 id="bb-lesson-completion-title">Finalizează lecția</h2>' +
+      '<p class="bb-lesson-completion-status" aria-live="polite"></p></div>' +
+      '<div class="bb-lesson-completion-actions"><button type="button" class="bb-lesson-completion-button">Marchează lecția ca parcursă</button>' +
+      '<a class="bb-next-lesson" hidden></a></div>';
+    main.appendChild(controls);
+
+    var completionButton = controls.querySelector(".bb-lesson-completion-button");
+    var completionStatus = controls.querySelector(".bb-lesson-completion-status");
+    var nextLessonLink = controls.querySelector(".bb-next-lesson");
+    var observer = null;
+    var observedSentinel = null;
+    var fallbackFrame = 0;
+
+    contentSections.forEach(function (section) {
+      var sentinel = document.createElement("span");
+      sentinel.className = "bb-section-end-sentinel";
+      sentinel.setAttribute("aria-hidden", "true");
+      section.appendChild(sentinel);
+    });
+
+    function nextPublishedChapter() {
+      var currentIndex = CHAPTERS.findIndex(function (item) { return item.num === chapter.num; });
+      for (var index = currentIndex + 1; index < CHAPTERS.length; index += 1) {
+        if (CHAPTERS[index].done && CHAPTERS[index].url) return CHAPTERS[index];
+      }
+      return null;
+    }
+
+    function updateNavigation(completedSections) {
+      nav.querySelectorAll("a").forEach(function (link) {
+        var route = getNavigationRoute(link);
+        if (sectionIds.indexOf(route) === -1) return;
+        var completed = completedSections.indexOf(route) !== -1;
+        link.classList.toggle("is-completed", completed);
+        var mark = link.querySelector(".bb-nav-progress-mark");
+        if (!mark) {
+          mark = document.createElement("span");
+          mark.className = "bb-nav-progress-mark";
+          mark.setAttribute("aria-hidden", "true");
+          link.appendChild(mark);
+        }
+        mark.textContent = completed ? "✓" : "";
+      });
+    }
+
+    function renderProgress() {
+      var lessonProgress = study.getLessonProgress(chapter.num, sectionIds);
+      var copy = progress.querySelector(".bb-lesson-progress-copy strong");
+      var bar = progress.querySelector(".bb-lesson-progress-track");
+      copy.textContent = lessonProgress.completed + "/" + lessonProgress.total;
+      bar.setAttribute("aria-valuenow", String(lessonProgress.completed));
+      bar.querySelector("span").style.width =
+        Math.round((lessonProgress.completed / lessonProgress.total) * 100) + "%";
+      updateNavigation(lessonProgress.completedSections);
+
+      completionButton.classList.toggle("is-reset", lessonProgress.isComplete);
+      completionButton.textContent = lessonProgress.isComplete
+        ? "Resetează progresul lecției"
+        : "Marchează lecția ca parcursă";
+      completionStatus.textContent = lessonProgress.isComplete
+        ? "Lecție completă · " + lessonProgress.completed + " din " + lessonProgress.total + " secțiuni parcurse."
+        : lessonProgress.completed + " din " + lessonProgress.total + " secțiuni parcurse.";
+
+      var next = lessonProgress.isComplete ? nextPublishedChapter() : null;
+      if (next) {
+        nextLessonLink.hidden = false;
+        nextLessonLink.href = next.url;
+        nextLessonLink.textContent = "Continuă cu capitolul " + next.num + " →";
+      } else {
+        nextLessonLink.hidden = true;
+        nextLessonLink.removeAttribute("href");
+        nextLessonLink.textContent = "";
+        if (lessonProgress.isComplete) {
+          completionStatus.textContent += " Ai parcurs toate lecțiile disponibile.";
+        }
+      }
+    }
+
+    function activeContentSection() {
+      var active = main.querySelector(".page-section.active");
+      return active && !active.classList.contains("chapter-home") ? active : null;
+    }
+
+    function completeActiveAtEnd() {
+      fallbackFrame = 0;
+      var active = activeContentSection();
+      if (!active) return;
+      var rect = active.getBoundingClientRect();
+      if (rect.bottom >= 0 && rect.bottom <= window.innerHeight + 1) {
+        study.completeSection(chapter.num, getStudyRoute(active));
+      }
+    }
+
+    function scheduleEndCheck() {
+      if (fallbackFrame) return;
+      fallbackFrame = window.requestAnimationFrame(completeActiveAtEnd);
+    }
+
+    function observeActiveSection() {
+      var active = activeContentSection();
+      var sentinel = active && active.querySelector(".bb-section-end-sentinel");
+      if (observer) {
+        if (observedSentinel) observer.unobserve(observedSentinel);
+        observedSentinel = sentinel;
+        if (sentinel) observer.observe(sentinel);
+      }
+      scheduleEndCheck();
+    }
+
+    if (typeof IntersectionObserver !== "undefined") {
+      observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          var section = entry.target.closest(".page-section.active");
+          if (section && !section.classList.contains("chapter-home")) {
+            study.completeSection(chapter.num, getStudyRoute(section));
+          }
+        });
+      });
+    } else {
+      window.addEventListener("scroll", scheduleEndCheck, { passive: true });
+      window.addEventListener("resize", scheduleEndCheck);
+    }
+
+    completionButton.addEventListener("click", function () {
+      var lessonProgress = study.getLessonProgress(chapter.num, sectionIds);
+      if (lessonProgress.isComplete) {
+        if (window.confirm("Resetezi progresul acestei lecții?")) study.resetLesson(chapter.num);
+      } else {
+        study.completeLesson(chapter.num, sectionIds);
+      }
+    });
+
+    document.addEventListener("bb:lesson-section-change", function (event) {
+      var detail = event.detail || {};
+      if (!window.BBLessonNavigation && detail.route) {
+        study.recordVisit(chapter.num, detail.route);
+      }
+      observeActiveSection();
+    });
+    study.subscribe(renderProgress);
+
+    if (!window.BBLessonNavigation) {
+      var initial = document.querySelector(".page-section.active");
+      if (initial) study.recordVisit(chapter.num, getStudyRoute(initial));
+    }
+    renderProgress();
+    observeActiveSection();
+  }
+
   function init() {
     if (!document.body || document.body.dataset.bbSharedReady === "true") return;
     document.body.dataset.bbSharedReady = "true";
@@ -1363,6 +1642,7 @@
     ensureMenuTrigger();
     ensureSkipLink();
     normalizeBackAction();
+    ensureLessonResourceNavigation();
     enhanceGotoLinks();
     patchGoto();
     enhanceMapCardsAndAccordions();
@@ -1396,6 +1676,7 @@
     });
     setupHighlighter();
     setupDrawer();
+    setupStudyProgress();
     setupGlobalKeyboard();
     normalizeMinorControls();
     registerOfflineSupport();

@@ -51,8 +51,10 @@ try {
   const home = await newPage(context);
   await home.goto(`${base}index.html`, { waitUntil:'domcontentloaded' });
   await home.waitForFunction(() => typeof CHAPTERS !== 'undefined');
-  if (await home.locator('.lab-item-done').count() !== 10) errors.push('homepage published-card count changed');
-  if (await home.locator('.lab-item-soon:disabled').count() !== 13) errors.push('homepage unpublished-card count changed');
+  if (await home.locator('.lab-item-done').count() !== chapters.length) errors.push('homepage published-card count changed');
+  if (await home.locator('.lab-item-soon:disabled').count() !== registry.CHAPTERS.filter(chapter => !chapter.done).length) errors.push('homepage unpublished-card count changed');
+  if (await home.locator('#lab-testing-catalog').count()) errors.push('testing catalog should not be embedded in the lesson index');
+  if (await home.locator('.bm-primary-nav a', { hasText:'Testare' }).getAttribute('href') !== 'testare.html') errors.push('homepage testing navigation does not open its separate page');
   await home.evaluate(() => openPalette());
   await home.locator('#palette-input').fill('tesut nervos');
   await home.waitForFunction(() => document.querySelectorAll('#palette-list [data-url]').length > 0);
@@ -63,6 +65,15 @@ try {
   if (await home.evaluate(() => document.body.classList.contains('dark') || localStorage.getItem('darkMode') !== null)) errors.push('homepage did not retire dark preference');
   await home.close();
 
+  const motionContext = await browser.newContext({ serviceWorkers:'block', viewport:{width:1440,height:900} });
+  const motionPage = await newPage(motionContext);
+  await motionPage.goto(`${base}index.html`, { waitUntil:'domcontentloaded' });
+  await motionPage.locator('.bm-primary-nav a', { hasText:'Testare' }).click();
+  await motionPage.waitForURL(`${base}testare.html`);
+  if (await motionPage.locator('.bm-primary-nav a[aria-current="page"]', { hasText:'Testare' }).count() !== 1) errors.push('testing page does not mark the Testare navigation item active');
+  await motionPage.close();
+  await motionContext.close();
+
   for (const file of lessonFiles) {
     const page = await newPage(context);
     await page.goto(`${base}${file}`, { waitUntil:'domcontentloaded' });
@@ -72,7 +83,14 @@ try {
       defaultRoute:document.querySelector('.page-section.active')?.id.slice(5),
       activeCount:document.querySelectorAll('.page-section.active').length
     }));
-    if (await page.locator('.lab-topbar > .lab-topbar-inner > .lab-nav').count()) errors.push(`${file}: duplicate topbar navigation remains`);
+    const chapter = chapters.find(item => item.url === file);
+    const quizResource = chapter?.resources?.find(resource => resource.kind === 'quiz');
+    const resourceNav = page.locator('.lab-topbar > .lab-topbar-inner > .bb-resource-nav');
+    const primaryNav = page.locator('.bm-primary-nav');
+    if (await primaryNav.locator('a').count() !== 2) errors.push(`${file}: main navigation is incomplete`);
+    if (await primaryNav.locator('a').first().textContent() !== 'Lecții') errors.push(`${file}: lesson label changed`);
+    if (await primaryNav.locator('a').nth(1).getAttribute('href') !== 'testare.html') errors.push(`${file}: test catalog link is wrong`);
+    if (await resourceNav.count()) errors.push(`${file}: duplicate topbar navigation`);
     if (state.activeCount !== 1 || !state.defaultRoute) errors.push(`${file}: invalid default route`);
     for (const route of state.routes) {
       await page.goto(`${base}${file}#${encodeURIComponent(route)}`, { waitUntil:'domcontentloaded' });
@@ -111,10 +129,111 @@ try {
     await page.close();
   }
 
+  // Shared study state: exact resume route, automatic section completion,
+  // whole-lesson completion/reset, corrupt data, and unavailable storage.
+  const studyContext = await browser.newContext({ viewport:{width:390,height:844}, reducedMotion:'reduce', serviceWorkers:'block' });
+  const studyPage = await newPage(studyContext);
+  await studyPage.goto(`${base}celula_si_fiziologia_celulara.html#membrana`, { waitUntil:'domcontentloaded' });
+  await studyPage.waitForFunction(() => window.BBStudyState && document.querySelector('.bb-lesson-completion'));
+  const contentRoutes = await studyPage.evaluate(() => [...document.querySelectorAll('.page-section:not(.chapter-home)')].map(section => section.id.slice(5)));
+  const initialStudy = await studyPage.evaluate(() => BBStudyState.getState());
+  if (initialStudy.lastVisited?.chapterNum !== 3 || initialStudy.lastVisited?.sectionId !== 'membrana') errors.push('study state did not record the exact initial lesson section');
+  if (initialStudy.lessons['3']?.completedSections?.includes('membrana')) errors.push('opening a long section marked it complete before reaching the end');
+  await studyPage.locator('#page-membrana .bb-section-end-sentinel').scrollIntoViewIfNeeded();
+  await studyPage.waitForFunction(() => BBStudyState.getState().lessons['3']?.completedSections?.includes('membrana'));
+  const afterScroll = await studyPage.evaluate(routes => BBStudyState.getLessonProgress(3, routes), contentRoutes);
+  if (afterScroll.completed !== 1 || afterScroll.isComplete) errors.push('section-end completion did not remain scoped to the active section');
+  await studyPage.evaluate(() => localStorage.setItem('bb.quiz.sistem-nervos.v1', 'quiz-state-proof'));
+  await studyPage.locator('.bb-lesson-completion-button').click();
+  await studyPage.waitForFunction(routes => BBStudyState.getLessonProgress(3, routes).isComplete, contentRoutes);
+  if (await studyPage.evaluate(() => localStorage.getItem('bb.quiz.sistem-nervos.v1')) !== 'quiz-state-proof') errors.push('study completion changed quiz storage');
+  if (!await studyPage.locator('#sidenav a.is-completed').count() || await studyPage.locator('#sidenav a.is-completed').count() !== contentRoutes.length) errors.push('lesson completion did not update every sidebar section');
+
+  const studyHome = await newPage(studyContext);
+  await studyHome.goto(`${base}index.html`, { waitUntil:'domcontentloaded' });
+  await studyHome.waitForFunction(() => !document.getElementById('lab-continue').hidden);
+  if (await studyHome.locator('#lab-continue-link').getAttribute('href') !== 'celula_si_fiziologia_celulara.html#membrana') errors.push('homepage Continue studying did not preserve the exact section');
+  await studyHome.waitForFunction(() => [...document.querySelectorAll('.lab-item')].some(item => item.querySelector('.lab-item-num')?.textContent.trim() === '03' && item.querySelector('.lab-item-progress')?.textContent === 'Completă'));
+  await studyHome.close();
+
+  studyPage.once('dialog', dialog => dialog.accept());
+  await studyPage.locator('.bb-lesson-completion-button').click();
+  await studyPage.waitForFunction(() => !BBStudyState.getState().lessons['3']);
+  await studyPage.close();
+  await studyContext.close();
+
+  for (const storedValue of ['{invalid-json', JSON.stringify({version:99,lastVisited:{chapterNum:3,sectionId:'membrana',visitedAt:new Date().toISOString()},lessons:{}})]) {
+    const invalidContext = await browser.newContext({ serviceWorkers:'block' });
+    await invalidContext.addInitScript(value => localStorage.setItem('bb.study.v1', value), storedValue);
+    const invalidPage = await newPage(invalidContext);
+    await invalidPage.goto(`${base}index.html`, { waitUntil:'domcontentloaded' });
+    const normalized = await invalidPage.evaluate(() => BBStudyState.getState());
+    if (normalized.version !== 1 || normalized.lastVisited !== null || Object.keys(normalized.lessons).length) errors.push('invalid study state was not normalized safely');
+    await invalidContext.close();
+  }
+
+  const blockedStudyContext = await browser.newContext({ serviceWorkers:'block' });
+  await blockedStudyContext.addInitScript(() => Object.defineProperty(window, 'localStorage', { get(){ throw new DOMException('blocked', 'SecurityError'); } }));
+  const blockedStudyPage = await newPage(blockedStudyContext);
+  await blockedStudyPage.goto(`${base}introducere_anatomie_fiziologie.html#introducere`, { waitUntil:'domcontentloaded' });
+  await blockedStudyPage.waitForFunction(() => window.BBStudyState && document.querySelector('.bb-lesson-progress'));
+  const blockedVisit = await blockedStudyPage.evaluate(() => BBStudyState.getState().lastVisited);
+  if (blockedVisit?.chapterNum !== 1 || blockedVisit?.sectionId !== 'introducere') errors.push('study state in-memory fallback did not record progress');
+  await blockedStudyContext.close();
+
+  const tableContext = await browser.newContext({ viewport:{width:640,height:900}, reducedMotion:'reduce', serviceWorkers:'block' });
+  let tableCount = 0;
+  let stackedTableCount = 0;
+  let scrollingTableCount = 0;
+  for (const file of lessonFiles) {
+    const page = await tableContext.newPage();
+    await page.goto(`${base}${file}`, { waitUntil:'domcontentloaded' });
+    await page.waitForFunction(() => document.body.dataset.bbSharedReady === 'true');
+    const count = await page.locator('main table').count();
+    tableCount += count;
+    for (let index = 0; index < count; index += 1) {
+      const table = page.locator('main table').nth(index);
+      const route = await table.evaluate(node => node.closest('.page-section')?.id.slice(5));
+      if (route) await page.evaluate(value => window.BBLessonNavigation ? BBLessonNavigation.navigate(value, { focus:false }) : window.goto(value), route);
+      const audit640 = await table.evaluate(node => {
+        const stacked = node.classList.contains('bb-table-stacked');
+        const wrapper = node.closest('.table-wrap');
+        return {
+          stacked,
+          labels: [...node.querySelectorAll('tbody td')].every(cell => Boolean(cell.dataset.label)),
+          roles: node.getAttribute('role') === 'table' && [...node.querySelectorAll('thead,tbody,tfoot')].every(group => group.getAttribute('role') === 'rowgroup') && [...node.querySelectorAll('tr')].every(row => row.getAttribute('role') === 'row') && [...node.querySelectorAll('th')].every(cell => cell.getAttribute('role') === 'columnheader') && [...node.querySelectorAll('tbody td')].every(cell => cell.getAttribute('role') === 'cell'),
+          display: getComputedStyle(node).display,
+          fits: node.getBoundingClientRect().width <= wrapper.getBoundingClientRect().width + 1,
+          scrollSemantics: wrapper.tabIndex === 0 && wrapper.getAttribute('role') === 'region' && Boolean(wrapper.getAttribute('aria-label')),
+          horizontallyScrollable: wrapper.scrollWidth > wrapper.clientWidth + 1
+        };
+      });
+      if (audit640.stacked) {
+        stackedTableCount += 1;
+        if (!audit640.labels || !audit640.roles || audit640.display !== 'block' || !audit640.fits) errors.push(`${file}: stacked table ${index + 1} failed 640px labels/roles/reflow`);
+      } else {
+        scrollingTableCount += 1;
+        if (!audit640.scrollSemantics || !audit640.horizontallyScrollable) errors.push(`${file}: complex table ${index + 1} is not an accessible horizontal region`);
+      }
+      await page.setViewportSize({width:641,height:900});
+      if (audit640.stacked && await table.evaluate(node => getComputedStyle(node).display) !== 'table') errors.push(`${file}: stacked table ${index + 1} did not return to tabular layout at 641px`);
+      await page.setViewportSize({width:640,height:900});
+    }
+    await page.close();
+  }
+  if (tableCount !== 20 || stackedTableCount !== 19 || scrollingTableCount !== 1) errors.push(`table contract changed: ${tableCount} total, ${stackedTableCount} stacked, ${scrollingTableCount} scrolling`);
+  await tableContext.close();
+
   const mobile = await browser.newContext({ viewport:{width:390,height:844}, reducedMotion:'reduce' });
   for (const file of [...simpleLessons, 'sistemul_renal_complet.html', 'sistemul_reproducator_masculin.html', ...resources.map(r=>r.url), ...(registry.BIO_SITE.pages || []).map(r=>r.url)]) {
     const page = await newPage(mobile);
     await page.goto(`${base}${file}`, { waitUntil:'domcontentloaded' });
+    if (!await page.locator('.lab-menu-trigger').count()) {
+      if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1)) errors.push(`${file}: mobile page overflows horizontally`);
+      if (file === 'testare.html' && await page.locator('.bm-primary-nav a[aria-current="page"]', { hasText:'Testare' }).count() !== 1) errors.push('testing page lost its mobile current navigation state');
+      await page.close();
+      continue;
+    }
     await page.locator('.lab-menu-trigger').click();
     if (!await page.locator('#sidenav').evaluate(node => node.classList.contains('open'))) errors.push(`${file}: drawer did not open`);
     await page.keyboard.press('Escape');
@@ -128,6 +247,24 @@ try {
 
   const feature = await newPage(context);
   await feature.goto(`${base}tesutul_muscular.html#muschiul-striat`, { waitUntil:'domcontentloaded' });
+  await feature.locator('.lesson-search-trigger').click();
+  const searchUi = await feature.locator('.lesson-search-panel').evaluate(panel => {
+    const controls = [...panel.querySelectorAll('.lesson-search-btn, .lesson-search-close')];
+    const close = panel.querySelector('.lesson-search-close');
+    return {
+      width: panel.getBoundingClientRect().width,
+      flatControls: controls.every(control => {
+        const style = getComputedStyle(control);
+        return style.borderTopWidth === '0px' && style.borderRadius === '0px' && style.backgroundColor === 'rgba(0, 0, 0, 0)';
+      }),
+      closeVisible: close && getComputedStyle(close).display !== 'none' && close.tabIndex === 0 && !close.hasAttribute('aria-hidden')
+    };
+  });
+  if (searchUi.width > 360) errors.push(`lesson search is too wide: ${searchUi.width}px`);
+  if (!searchUi.flatControls) errors.push('lesson search navigation controls are not flat');
+  if (!searchUi.closeVisible) errors.push('lesson search close button is unavailable');
+  await feature.locator('.lesson-search-close').click();
+  if (await feature.locator('.lesson-search').evaluate(node => node.classList.contains('open'))) errors.push('lesson search close button did not close the panel');
   if (!await feature.locator('#bb-sidebar-settings-panel').evaluate(node => node.hidden)) errors.push('settings menu did not start collapsed');
   await feature.locator('.bb-settings-toggle').click();
   await feature.locator('#nav-hl-btn').click();
@@ -179,14 +316,17 @@ try {
   const sense = await newPage(context);
   const senseKey = JSON.parse(await readFile(join(root, 'tests/organe-de-simt-answer-key.json'), 'utf8'));
   await sense.goto(base + 'organele_de_simt.html');
-  await sense.locator('.page-section.active a[href="grile_organele_de_simt.html"]').click();
+  await sense.locator('.bm-primary-nav a[href="testare.html"]').click();
+  await sense.locator('#lab-testing-catalog a[href="grile_organele_de_simt.html"]').click();
   await sense.waitForFunction(() => document.querySelectorAll('.quiz-question').length === 100);
-  if (await sense.locator('.lab-topbar-back').getAttribute('href') !== 'organele_de_simt.html') errors.push('sense quiz back link points at another lesson');
-  await sense.locator('.lab-topbar-back').click();
+  if (await sense.locator('#sidenav a[href="organele_de_simt.html"]').getAttribute('href') !== 'organele_de_simt.html') errors.push('sense quiz back link points at another lesson');
+  await sense.locator('#sidenav a[href="organele_de_simt.html"]').click();
   if (!sense.url().endsWith('organele_de_simt.html')) errors.push('sense quiz back action did not return to its lesson');
   await sense.goto(base + 'testare.html');
-  if (await sense.locator('.testing-entry').count() !== resources.length) errors.push('testing catalog missing a quiz');
-  await sense.locator('.testing-entry a[href="grile_organele_de_simt.html"]').click();
+  if (await sense.locator('#lab-testing-catalog .lab-item').count() !== registry.CHAPTERS.length) errors.push('testing catalog is not organized across every chapter');
+  if (await sense.locator('#lab-testing-catalog .lab-item-done').count() !== resources.length) errors.push('testing catalog missing an available quiz');
+  if (await sense.locator('#lab-testing-catalog .lab-item-soon:disabled').count() !== registry.CHAPTERS.length - resources.length) errors.push('testing catalog future states are incomplete');
+  await sense.locator('#lab-testing-catalog a[href="grile_organele_de_simt.html"]').click();
   await sense.evaluate(() => localStorage.setItem('bb.quiz.sistem-nervos.v1', JSON.stringify({version:1,questions:{'sn-051':{selected:['C','D'],verified:true,correct:true}}})));
   const nervousSaved = await sense.evaluate(() => localStorage.getItem('bb.quiz.sistem-nervos.v1'));
   const senseFirst = sense.locator('#grila-1');

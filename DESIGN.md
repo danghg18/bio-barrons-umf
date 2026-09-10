@@ -144,7 +144,7 @@ Reading hierarchy comes from type, spacing, figures and meaningful grouping. Cha
 - Flat reading surfaces, fine rules and numbered contents.
 - Readable Romanian text, responsive tables and practical touch controls.
 
-This is the implemented visual system. `assets/css/tokens.css` owns core primitives. `assets/css/home.css` owns the consolidated homepage presentation; `assets/css/chapter-redesign.css` owns the shared lesson shell and final content presentation with legacy adapters. `lesson.css` retains residual widgets, and `quiz.css` supplies quiz-specific presentation last. Existing compatibility selectors are not templates for duplicating a new shell.
+This is the implemented visual system. `assets/css/tokens.css` owns core primitives. `assets/css/home.css` owns the consolidated homepage and testing-catalog presentation; `assets/css/chapter-redesign.css` owns the shared lesson shell and final content presentation with legacy adapters. `lesson.css` retains residual widgets, and `quiz.css` supplies quiz-player presentation last. Existing compatibility selectors are not templates for duplicating a new shell.
 
 ## Colors
 
@@ -165,7 +165,7 @@ The frontmatter display role describes the desktop homepage heading. On phones i
 
 ## Layout
 
-The homepage is an editorial masthead followed by a ruled curriculum index and study-tool band. Main homepage sections have a 1280px outer maximum with 28px desktop inset. Curriculum categories use a descriptive column beside numbered lesson rows, becoming one column at 900px. Phone hero gutters are 20px; surrounding content follows its authored responsive insets.
+The homepage is an editorial masthead followed by a ruled curriculum index and study-tool band. `testare.html` is the second top-level catalog page: it uses a compact introduction followed by the same ruled category-and-row structure, with quiz availability independent from lesson availability. Main catalog sections have a 1280px outer maximum with 28px desktop inset. Categories use a descriptive column beside numbered rows, becoming one column at 900px. Phone hero gutters are 16–20px; surrounding content follows its authored responsive insets.
 
 The lesson shell has a 1344px outer maximum, a 264px sidebar and up to 960px main column. Between 1025px and 1240px the sidebar is 244px. The 70ch measure applies to reading text, not to every figure or table. These effective chapter values take precedence over older generic layout variables in `tokens.css`.
 
@@ -195,7 +195,11 @@ Search controls use a white surface, fine border and legible dark input text. Th
 
 ### Navigation
 
-The desktop sidebar is a quiet chapter index. The active row uses navy text, a white surface and a 2px accent start rule with square edges. The mobile drawer preserves its overlay, Escape and focus behavior. Chapter outlines are neutral numbered rows with separators and subtle hover tone. Previous/next actions stack on small screens; return-to-top is in normal document flow at the drawer breakpoint.
+The persistent top navigation treats “Lecții” and “Testare” as two separate catalog pages and marks the current page with text, surface and underline rather than color alone; it remains visible on phones. Inside lessons, the desktop sidebar is a quiet chapter index. The active row uses navy text, a white surface and a 2px accent start rule with square edges. The mobile drawer preserves its overlay, Escape and focus behavior. Chapter outlines are neutral numbered rows with separators and subtle hover tone. Previous/next actions stack on small screens; return-to-top is in normal document flow at the drawer breakpoint.
+
+### Testing catalog
+
+The testing catalog mirrors the lesson curriculum order and category groupings. Every chapter in the canonical registry has one numbered row; only chapters with a quiz resource become links, while the remaining rows are disabled and labelled “În curând.” Counts are derived from the canonical resource metadata, and available rows use the chapter accent plus the explicit action “Rezolvă.” The catalog does not duplicate the lesson sidebar or embed itself in the homepage.
 
 ### Tags and reading cards
 

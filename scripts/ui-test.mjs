@@ -53,7 +53,7 @@ const { createHash } = await import('node:crypto');
 const hash = value => createHash('sha256').update(value).digest('hex');
 const protectedContent = JSON.parse(await readFile(join(root, 'tests/educational-content.json'), 'utf8'));
 const viewports = [[1440,900],[1280,800],[1024,768],[390,844],[430,932],[640,900],[641,900],[768,1024],[1023,768],[1025,768]];
-const report = { viewports, pages: [], tables: 0, fonts: {}, screenshots: [] };
+const report = { viewports, pages: [], tables: 0, stackedTables: 0, scrollingTables: 0, fonts: {}, screenshots: [] };
 async function resize(page, size) {
   await page.setViewportSize(size);
   await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
@@ -80,27 +80,32 @@ try {
    await resize(page, {width,height});
    for (const section of sections.length?sections:[{id:null}]) {
     if(section.id)await page.evaluate(id=>{const r=id.slice(5);if(window.BBLessonNavigation)BBLessonNavigation.navigate(r,{focus:false});else window.goto(r);},section.id);
-    const geometry=await page.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth+1,tableErrors:[...document.querySelectorAll('.page-section.active table')].filter(t=>t.classList.contains('bb-table-stacked')&&innerWidth<=640&&t.getBoundingClientRect().width>t.closest('.table-wrap').getBoundingClientRect().width+1).length,broken:[...document.querySelectorAll('img')].filter(i=>i.complete&&!i.naturalWidth).map(i=>i.src)}));
+    const geometry=await page.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth+1,tableErrors:[...document.querySelectorAll('.page-section.active table')].filter(t=>{const stacked=t.classList.contains('bb-table-stacked');const wrapper=t.closest('.table-wrap');if(stacked)return innerWidth<=640?(getComputedStyle(t).display!=='block'||t.getBoundingClientRect().width>wrapper.getBoundingClientRect().width+1):getComputedStyle(t).display!=='table';return wrapper.tabIndex!==0||wrapper.getAttribute('role')!=='region'||!wrapper.getAttribute('aria-label')||(innerWidth<=640&&wrapper.scrollWidth<=wrapper.clientWidth+1);}).length,broken:[...document.querySelectorAll('img')].filter(i=>i.complete&&!i.naturalWidth).map(i=>i.src)}));
     if(geometry.overflow||geometry.tableErrors||geometry.broken.length)errors.push(file+' '+section.id+' @'+width+': '+JSON.stringify(geometry));
    }
    // Default-route evidence after the full route sweep.
    if(width===1440||width===390){await page.goto(base+file);await page.evaluate(()=>document.fonts.ready);await capture(page,file+'-'+width);}
   }
   report.pages.push(file);
-  report.tables+=await page.locator('table').count();
+  const tableAudit=await page.evaluate(()=>[...document.querySelectorAll('main table')].map(table=>({stacked:table.classList.contains('bb-table-stacked'),labels:[...table.querySelectorAll('tbody td')].every(cell=>Boolean(cell.dataset.label)),roles:table.getAttribute('role')==='table'&&[...table.querySelectorAll('thead,tbody,tfoot')].every(group=>group.getAttribute('role')==='rowgroup')&&[...table.querySelectorAll('tr')].every(row=>row.getAttribute('role')==='row')&&[...table.querySelectorAll('th')].every(cell=>cell.getAttribute('role')==='columnheader')&&[...table.querySelectorAll('tbody td')].every(cell=>cell.getAttribute('role')==='cell')})));
+  report.tables+=tableAudit.length;report.stackedTables+=tableAudit.filter(table=>table.stacked).length;report.scrollingTables+=tableAudit.filter(table=>!table.stacked).length;
+  if(tableAudit.some(table=>table.stacked&&(!table.labels||!table.roles)))errors.push(file+': stacked table labels or roles are incomplete');
  }
+ if(report.tables!==20||report.stackedTables!==19||report.scrollingTables!==1)errors.push(`table contract changed: ${report.tables} total, ${report.stackedTables} stacked, ${report.scrollingTables} scrolling`);
  // Old preference values and failed storage cannot activate a theme or stop startup.
  for (const value of ['1','0',null,'blocked']) {
   const isolated=await browser.newContext({serviceWorkers:'block'});
   await isolated.addInitScript(value=>{if(value==='blocked'){Object.defineProperty(window,'localStorage',{get(){throw new DOMException('blocked','SecurityError');}});}else if(value!==null)localStorage.setItem('darkMode',value);},value);
   const p=await newPage(isolated);
-  for(const file of report.pages){await p.goto(base+file);if(file!=='index.html')await p.waitForFunction(()=>document.body.dataset.bbSharedReady==='true');const state=await p.evaluate(()=>({dark:document.body.classList.contains('dark'),controls:document.querySelectorAll('#dm-btn,#nav-dm-btn,#sfab-dm').length,bg:getComputedStyle(document.body).backgroundColor}));if(state.dark||state.controls||state.bg!=='rgb(244, 246, 250)')errors.push(file+' preference '+value+': '+JSON.stringify(state));}
+  for(const file of report.pages){await p.goto(base+file);if(!['index.html','testare.html'].includes(file))await p.waitForFunction(()=>document.body.dataset.bbSharedReady==='true');const state=await p.evaluate(()=>({dark:document.body.classList.contains('dark'),controls:document.querySelectorAll('#dm-btn,#nav-dm-btn,#sfab-dm').length,bg:getComputedStyle(document.body).backgroundColor}));if(state.dark||state.controls||state.bg!=='rgb(247, 248, 250)')errors.push(file+' preference '+value+': '+JSON.stringify(state));}
   await isolated.close();
  }
  await resize(page, {width:390,height:844});
  await page.goto(base+'index.html');await page.locator('#search-btn').click();await page.locator('#palette-input').fill('țesut nervos');await page.waitForTimeout(350);await capture(page,'global-search');await page.keyboard.press('Escape');if(await page.locator('.lab').evaluate(x=>x.inert))errors.push('global search left inert');
  await page.locator('#lab-bento').scrollIntoViewIfNeeded();await capture(page,'curriculum-mobile');
  await resize(page, {width:1440,height:900});await page.locator('#lab-bento').scrollIntoViewIfNeeded();await capture(page,'curriculum-desktop');
+ await resize(page, {width:390,height:844});await page.goto(base+'testare.html');await page.locator('#lab-testing-catalog').scrollIntoViewIfNeeded();await capture(page,'testing-catalog-mobile');
+ await resize(page, {width:1440,height:900});await page.goto(base+'testare.html');await page.locator('#lab-testing-catalog').scrollIntoViewIfNeeded();await capture(page,'testing-catalog-desktop');
  for(const file of [...lessonFiles,...resources.map(r=>r.url)]){
   await resize(page, {width:390,height:844});await page.goto(base+file);
   await page.locator('.lab-menu-trigger').click();await page.waitForFunction(()=>document.getElementById('sidenav').getBoundingClientRect().left>=0);await capture(page,file+'-drawer');
@@ -119,5 +124,5 @@ try {
  await context.close();
  if(output)await writeFile(join(output,'report.json'),JSON.stringify({...report,errors},null,2));
  if(errors.length)throw new Error(errors.join('\n'));
- console.log(`UI verified ${report.pages.length} pages, ${report.tables} tables, all routes at ${viewports.length} sizes, content integrity, fonts, theme retirement and controls`);
+ console.log(`UI verified ${report.pages.length} pages, ${report.tables} tables (${report.stackedTables} stacked, ${report.scrollingTables} scrolling), all routes at ${viewports.length} sizes, content integrity, fonts, theme retirement and controls`);
 } finally { await browser.close();server.close(); }

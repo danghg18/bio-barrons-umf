@@ -326,6 +326,7 @@ kbd{font-size:11px;padding:2px 6px;border-radius:4px;background:rgba(15,23,42,0.
 }
 
 html {
+  scroll-behavior: smooth;
   scroll-padding-top: 76px;
 }
 
@@ -399,6 +400,12 @@ body .lab-nav .lab-nav-placeholder {
 body .lab-nav a:hover {
   color: var(--home-ink);
   background: #e9eef5;
+}
+
+body .lab-nav a[aria-current="page"] {
+  color: var(--home-ink);
+  background: var(--home-surface);
+  box-shadow: inset 0 -2px 0 var(--home-blue);
 }
 
 body .lab-nav .lab-nav-placeholder {
@@ -767,12 +774,163 @@ body .lab-item-tags {
 
 body .lab-item-done-mark { width: auto; height: auto; padding: 0; background: transparent; color: var(--home-blue-dark); font-size: .75rem; font-weight: 600; }
 
+body .lab-item-statuses {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+  white-space: nowrap;
+}
+
+body .lab-item-progress {
+  min-height: 1em;
+  color: var(--home-muted);
+  font-size: .72rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+body .lab-item-progress.is-complete {
+  color: var(--emerald);
+}
+
 body .lab-item-soon-mark {
   color: var(--home-muted);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0;
   text-transform: none;
+}
+
+/* Resume the learner's last valid lesson section. */
+body .lab-continue {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 28px 24px;
+}
+
+body .lab-continue[hidden] {
+  display: none;
+}
+
+body .lab-continue-link {
+  min-height: 78px;
+  display: grid;
+  grid-template-columns: minmax(120px, .35fr) minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 24px;
+  padding: 18px 22px;
+  border-block: 1px solid var(--home-line-strong);
+  color: var(--home-text);
+  transition: background-color 150ms ease;
+}
+
+body .lab-continue-link:hover {
+  background: var(--home-surface-subtle);
+}
+
+body .lab-continue-label,
+body .lab-continue-action {
+  color: var(--home-blue-dark);
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+body .lab-continue-copy {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+body .lab-continue-copy strong {
+  color: var(--home-ink);
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+body .lab-continue-copy > span {
+  color: var(--home-muted);
+  font-size: .8rem;
+  line-height: 1.4;
+}
+
+body .lab-continue-action {
+  white-space: nowrap;
+}
+
+/* Separate testing catalog */
+body.lab-testing-page .lab-testing-hero {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: clamp(52px, 7vw, 88px) 28px 48px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+  align-items: end;
+  gap: clamp(36px, 7vw, 96px);
+}
+
+body.lab-testing-page .lab-testing-hero h1 {
+  max-width: 12ch;
+  margin: 0 0 20px;
+  color: var(--home-ink);
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 900;
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  text-wrap: balance;
+}
+
+body.lab-testing-page .lab-testing-hero p {
+  max-width: 60ch;
+  margin: 0;
+  color: var(--home-text);
+  font-size: clamp(1rem, 1.45vw, 1.15rem);
+  line-height: 1.68;
+  text-wrap: pretty;
+}
+
+body.lab-testing-page .lab-testing-hero-meta {
+  min-width: 0;
+  padding: 4px 0 4px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-left: 1px solid var(--home-line-strong);
+}
+
+body.lab-testing-page .lab-testing-hero-meta strong {
+  color: var(--violet);
+  font-size: 0.9rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+body.lab-testing-page .lab-testing-hero-meta span {
+  max-width: 38ch;
+  color: var(--home-muted);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+body.lab-testing-page .lab-testing-catalog {
+  padding-top: 48px;
+  border-top: 1px solid var(--home-line);
+}
+
+body.lab-testing-page .lab-testing-catalog .lab-section-head {
+  margin-bottom: 34px;
+}
+
+body.lab-testing-page .lab-testing-catalog .lab-bento-cat-eyebrow,
+body.lab-testing-page .lab-testing-catalog .lab-item-num,
+body.lab-testing-page .lab-testing-catalog .lab-item-done-mark {
+  color: var(--c);
+}
+
+body.lab-testing-page .lab-testing-catalog .lab-item-tags {
+  display: block;
+  font-variant-numeric: tabular-nums;
 }
 
 /* Study-tool band */
@@ -953,12 +1111,27 @@ body .lab-palette-foot {
 /* Responsive */
 @media (max-width: 1100px) {
   body .lab-topbar-inner {
+    grid-template-columns: auto minmax(0, 1fr) auto;
     padding-inline: 22px;
   }
 
+  body .lab-brand,
+  body .lab-topbar-actions {
+    grid-column: auto;
+  }
+
+  body .lab-nav {
+    display: flex;
+  }
+
   body .lab-hero,
+  body .lab-continue,
   body .lab-bento,
   body .lab-features {
+    padding-inline: 22px;
+  }
+
+  body.lab-testing-page .lab-testing-hero {
     padding-inline: 22px;
   }
 
@@ -971,6 +1144,7 @@ body .lab-palette-foot {
     grid-template-columns: minmax(190px, 0.34fr) minmax(0, 1fr);
     gap: 28px;
   }
+
 }
 
 @media (max-width: 900px) {
@@ -996,6 +1170,12 @@ body .lab-palette-foot {
 
   body .lab-bento-cat-blurb {
     max-width: 52ch;
+  }
+
+  body.lab-testing-page .lab-testing-hero {
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    gap: 28px;
   }
 
   body .lab-features-grid {
@@ -1024,8 +1204,18 @@ body .lab-palette-foot {
   body .lab-topbar-inner {
     min-height: 64px;
     padding: 10px 14px;
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: auto minmax(0, 1fr) auto;
     gap: 8px;
+  }
+
+  body .lab-nav {
+    min-width: 0;
+  }
+
+  body .lab-nav a {
+    min-height: 42px;
+    padding-inline: 9px;
+    font-size: 0.8rem;
   }
 
   body .lab-topbar-actions {
@@ -1085,6 +1275,56 @@ body .lab-search-btn{
 
   body .lab-bento {
     padding: 60px 16px 72px;
+  }
+
+  body.lab-testing-page .lab-testing-hero {
+    padding: 36px 16px 32px;
+    gap: 24px;
+  }
+
+  body.lab-testing-page .lab-testing-hero h1 {
+    margin-bottom: 16px;
+    font-size: clamp(2.45rem, 13vw, 3.4rem);
+    line-height: 1;
+    letter-spacing: -0.035em;
+  }
+
+  body.lab-testing-page .lab-testing-hero p {
+    font-size: 0.96rem;
+    line-height: 1.62;
+  }
+
+  body.lab-testing-page .lab-testing-hero-meta {
+    padding: 0;
+    border-left: 0;
+  }
+
+  body.lab-testing-page .lab-testing-catalog {
+    padding-top: 40px;
+  }
+
+  body .lab-continue {
+    padding: 0 16px 20px;
+  }
+
+  body .lab-continue-link {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 5px 14px;
+    padding: 16px 4px;
+  }
+
+  body .lab-continue-label {
+    grid-column: 1 / -1;
+  }
+
+  body .lab-continue-action {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  body .lab-item-statuses {
+    align-items: flex-start;
+    grid-column: 2;
   }
 
   body .lab-section-head {
