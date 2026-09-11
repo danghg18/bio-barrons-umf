@@ -98,7 +98,9 @@ async function syncStudyProgress(){
   }));
 }
 
+let continueGeneration = 0;
 async function syncContinueCard(){
+  const generation = ++continueGeneration;
   const card=document.getElementById('lab-continue');
   if(!card||!window.BBStudyState)return;
   const state=window.BBStudyState.getState();
@@ -106,6 +108,7 @@ async function syncContinueCard(){
   const chapter=visit&&CHAPTERS.find(function(entry){return entry.num===Number(visit.chapterNum)&&entry.done&&entry.url;});
   if(!chapter||typeof visit.sectionId!=='string'||!visit.sectionId){card.hidden=true;return;}
   const sections=await loadLessonSections(chapter);
+  if (generation !== continueGeneration) return;
   const section=sections.find(function(entry){return entry.id===visit.sectionId;});
   if(!section){card.hidden=true;return;}
   const link=document.getElementById('lab-continue-link');

@@ -1,0 +1,30 @@
+{
+  "grile_introducere_anatomie_fiziologie.html": {
+    "dataFile": "assets/js/grile-introducere-data.js",
+    "sha256": "85aaea09009f6da633d6b94bb795cfc0974ada602c9ee5adf84be58c4e9b0436"
+  },
+  "grile_celula.html": {
+    "dataFile": "assets/js/grile-celula-data.js",
+    "sha256": "c9c684d744c9d49e20786e9fd5b7a6e1942b865a0e2885b5b68f4bd5a9de497d"
+  },
+  "grile_sistemul_nervos.html": {
+    "dataFile": "assets/js/grile-sistemul-nervos-data.js",
+    "sha256": "fde9868ba6b8a019ed747967e2353313873ffb04bfc0d3bc14a83fd22026e7ec"
+  },
+  "grile_organele_de_simt.html": {
+    "dataFile": "assets/js/grile-organe-de-simt-data.js",
+    "sha256": "d990b4f09ae33a6502423bc2cffa33eb61709abb50ec42eb208b684b9a6afa3f"
+  },
+  "grile_sistemul_urinar.html": {
+    "dataFile": "assets/js/grile-sistemul-urinar-data.js",
+    "sha256": "aa66b2ec5026e4060e658313a59829c5011f050e6a773bd0bdbcc6c0fdbfb30e"
+  },
+  "grile_sistemul_reproducator_masculin.html": {
+    "dataFile": "assets/js/grile-reproducator-masculin-data.js",
+    "sha256": "b2bb1b8ef08c38c7503a815ea323a2533932b320260f2643848dc3c81a135649"
+  },
+  "grile_sistemul_reproducator_feminin.html": {
+    "dataFile": "assets/js/grile-reproducator-feminin-data.js",
+    "sha256": "a950f2b9856a12520d61f0b0a1fea26a9eb6ff76f8718bdbfe18de944cf2b37e"
+  }
+}

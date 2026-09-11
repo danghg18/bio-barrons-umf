@@ -52,6 +52,8 @@ if (output) await mkdir(output, { recursive: true });
 const { createHash } = await import('node:crypto');
 const hash = value => createHash('sha256').update(value).digest('hex');
 const protectedContent = JSON.parse(await readFile(join(root, 'tests/educational-content.json'), 'utf8'));
+// Quiz layout copy can change; independently lock every authored question/answer/explanation.
+const protectedQuizzes = JSON.parse(await readFile(join(root, 'tests/quiz-content-hashes.json'), 'utf8'));
 const viewports = [[1440,900],[1280,800],[1024,768],[390,844],[430,932],[640,900],[641,900],[768,1024],[1023,768],[1025,768]];
 const report = { viewports, pages: [], tables: 0, stackedTables: 0, scrollingTables: 0, fonts: {}, screenshots: [] };
 async function resize(page, size) {
@@ -70,7 +72,21 @@ try {
   await page.goto(base+file); await page.evaluate(()=>document.fonts.ready);
   // The feedback legend is new interface copy; retain the existing educational-text baseline.
   const sections = await page.evaluate(()=>[...document.querySelectorAll('.page-section')].map(x=>{const copy=x.cloneNode(true);copy.querySelectorAll('.quiz-feedback-guide').forEach(node=>node.remove());return {id:x.id,text:copy.textContent.replace(/\s+/g,' ').trim(),images:[...x.querySelectorAll('img')].map(i=>i.getAttribute('src')),tables:[...x.querySelectorAll('table')].map(t=>t.textContent.replace(/\s+/g,' ').trim())};}));
-  if (protectedContent[file]) {
+  if (protectedQuizzes[file]) {
+   const quiz = await page.evaluate(() => {
+    const data = window.BB_QUIZ || window.BB_NERVOUS_QUIZ;
+    const rendered = data.questions.every(question => {
+     const card = document.getElementById('grila-' + question.number);
+     return card?.querySelector('legend')?.textContent === question.prompt && question.options.every(option => {
+      const wrap = card.querySelector('[data-letter="' + option.letter + '"]');
+      const paragraphs = [...wrap.querySelectorAll('.quiz-option-explanation p')].map(p => p.textContent);
+      return wrap.querySelector('.quiz-option-text').textContent === option.text && paragraphs[0] === (option.why || '') && (!option.added || paragraphs[1] === option.added);
+     });
+    });
+    return {questions: data.questions, rendered};
+   });
+   if (hash(JSON.stringify(quiz.questions)) !== protectedQuizzes[file].sha256 || !quiz.rendered) errors.push(file + ': protected quiz content changed');
+  } else if (protectedContent[file]) {
    const actual = sections.map(s=>({...s,text:hash(s.text),tables:s.tables.map(hash)}));
    if(JSON.stringify(actual)!==JSON.stringify(protectedContent[file])) errors.push(file+': protected content changed');
   }
@@ -87,7 +103,7 @@ try {
    if(width===1440||width===390){await page.goto(base+file);await page.evaluate(()=>document.fonts.ready);await capture(page,file+'-'+width);}
   }
   report.pages.push(file);
-  const tableAudit=await page.evaluate(()=>[...document.querySelectorAll('main table')].map(table=>({stacked:table.classList.contains('bb-table-stacked'),labels:[...table.querySelectorAll('tbody td')].every(cell=>Boolean(cell.dataset.label)),roles:table.getAttribute('role')==='table'&&[...table.querySelectorAll('thead,tbody,tfoot')].every(group=>group.getAttribute('role')==='rowgroup')&&[...table.querySelectorAll('tr')].every(row=>row.getAttribute('role')==='row')&&[...table.querySelectorAll('th')].every(cell=>cell.getAttribute('role')==='columnheader')&&[...table.querySelectorAll('tbody td')].every(cell=>cell.getAttribute('role')==='cell')})));
+  const tableAudit=await page.evaluate(()=>[...document.querySelectorAll('.page-section table')].map(table=>({stacked:table.classList.contains('bb-table-stacked'),labels:[...table.querySelectorAll('tbody td')].every(cell=>Boolean(cell.dataset.label)),roles:table.getAttribute('role')==='table'&&[...table.querySelectorAll('thead,tbody,tfoot')].every(group=>group.getAttribute('role')==='rowgroup')&&[...table.querySelectorAll('tr')].every(row=>row.getAttribute('role')==='row')&&[...table.querySelectorAll('th')].every(cell=>cell.getAttribute('role')==='columnheader')&&[...table.querySelectorAll('tbody td')].every(cell=>cell.getAttribute('role')==='cell')})));
   report.tables+=tableAudit.length;report.stackedTables+=tableAudit.filter(table=>table.stacked).length;report.scrollingTables+=tableAudit.filter(table=>!table.stacked).length;
   if(tableAudit.some(table=>table.stacked&&(!table.labels||!table.roles)))errors.push(file+': stacked table labels or roles are incomplete');
  }
@@ -97,7 +113,7 @@ try {
   const isolated=await browser.newContext({serviceWorkers:'block'});
   await isolated.addInitScript(value=>{if(value==='blocked'){Object.defineProperty(window,'localStorage',{get(){throw new DOMException('blocked','SecurityError');}});}else if(value!==null)localStorage.setItem('darkMode',value);},value);
   const p=await newPage(isolated);
-  for(const file of report.pages){await p.goto(base+file);if(!['index.html','testare.html'].includes(file))await p.waitForFunction(()=>document.body.dataset.bbSharedReady==='true');const state=await p.evaluate(()=>({dark:document.body.classList.contains('dark'),controls:document.querySelectorAll('#dm-btn,#nav-dm-btn,#sfab-dm').length,bg:getComputedStyle(document.body).backgroundColor}));if(state.dark||state.controls||state.bg!=='rgb(247, 248, 250)')errors.push(file+' preference '+value+': '+JSON.stringify(state));}
+  for(const file of report.pages){await p.goto(base+file);if(await p.locator('body.bm-reader').count())await p.waitForFunction(()=>document.body.dataset.bbSharedReady==='true');const state=await p.evaluate(()=>({dark:document.body.classList.contains('dark'),controls:document.querySelectorAll('#dm-btn,#nav-dm-btn,#sfab-dm').length,bg:getComputedStyle(document.body).backgroundColor}));if(state.dark||state.controls||state.bg!=='rgb(247, 248, 250)')errors.push(file+' preference '+value+': '+JSON.stringify(state));}
   await isolated.close();
  }
  await resize(page, {width:390,height:844});

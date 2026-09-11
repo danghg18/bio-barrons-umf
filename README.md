@@ -12,7 +12,7 @@ npx playwright install chromium
 npm test
 ```
 
-`npm run generate` refreshes `sitemap.xml` and the service-worker precache manifest. `npm run validate` checks the registry, links, fragments, local assets, JavaScript syntax, and generated files. `npm run test:smoke` exercises the homepage, every lesson, the quiz, mobile controls, preferences, navigation, and offline loading in Chromium.
+`npm run generate` refreshes `sitemap.xml`, the service-worker precache manifest, and the lightweight `assets/js/quiz-index.js` directory derived from registered quiz datasets. `npm run validate` checks the registry, links, fragments, local assets, JavaScript syntax, and generated files. `npm run test:smoke` exercises the homepage, every lesson, the quizzes, mobile controls, preferences, navigation, and offline loading in Chromium.
 
 ## How to add or publish a chapter
 
@@ -29,3 +29,9 @@ Keep existing `.html` URLs and section hashes stable. Treat lesson prose, figure
 The interface is intentionally light-only. Figtree owns reading and controls; Fraunces Italic supplies the homepage accent. See [the UI redesign record](docs/ui-redesign.md) for component ownership, compatibility boundaries, verified behavior, and rollback guidance.
 
 `npm test` includes `npm run test:ui`: every lesson route at ten viewport sizes, protected-content fingerprints, both fonts, legacy theme preferences, storage failure, tables, and keyboard controls. Set `BB_UI_OUTPUT=/absolute/output/path` to save screenshots and its JSON report outside the repository. `tests/educational-content.json` protects the pre-redesign section text, table content, and image order; do not regenerate it for incidental infrastructure changes.
+
+Quiz content is independently protected by `tests/quiz-content-hashes.json` (all seven original question datasets) and browser checks of every rendered prompt, option and explanation. This allows deliberate quiz interface copy changes without refreshing educational baselines. `npm run test:analytics` covers IndexedDB history, legacy progress, date filters, numbered navigation, storage failure, concurrent tabs and the analytics UI. See [testing and analytics](docs/testing-analytics.md) for the data and navigation contracts.
+
+## Conturi și sincronizare
+
+Supabase adaugă conturi email/parolă, progres sincronizat și notițe pe secțiuni, cu cache local imediat și mod fără cont. Site-ul rămâne static. Vezi [configurarea Supabase](docs/supabase-setup.md) pentru migrare, cheile publice, redirecturi, SMTP, politica de import și izolarea conturilor. `npm run generate` construiește și bundle-ul SDK local; `npm run test:accounts` testează conturile cu mock și politicile SQL în PostgreSQL/PGlite, fără proiect real.

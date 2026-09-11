@@ -228,7 +228,7 @@ try {
   for (const file of [...simpleLessons, 'sistemul_renal_complet.html', 'sistemul_reproducator_masculin.html', ...resources.map(r=>r.url), ...(registry.BIO_SITE.pages || []).map(r=>r.url)]) {
     const page = await newPage(mobile);
     await page.goto(`${base}${file}`, { waitUntil:'domcontentloaded' });
-    if (!await page.locator('.lab-menu-trigger').count()) {
+    if (file === 'testare.html' || file === 'statistici.html' || !await page.locator('.lab-menu-trigger').count()) {
       if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1)) errors.push(`${file}: mobile page overflows horizontally`);
       if (file === 'testare.html' && await page.locator('.bm-primary-nav a[aria-current="page"]', { hasText:'Testare' }).count() !== 1) errors.push('testing page lost its mobile current navigation state');
       await page.close();
@@ -289,6 +289,7 @@ try {
   const first = quiz.locator('.quiz-question').first();
   await first.locator('input[type=checkbox]').first().check();
   await first.locator('.quiz-check').click();
+  await first.locator('.quiz-retry').waitFor({state:'visible'});
   if (!await first.getAttribute('data-question-id')) errors.push('quiz IDs unavailable');
   if (!await quiz.evaluate(() => localStorage.getItem('bb.quiz.sistem-nervos.v1'))) errors.push('quiz state did not persist');
   // Exact-set scoring, retry, persistence, and reset for all 50 authored IDs.
@@ -300,6 +301,7 @@ try {
     await quiz.evaluate(route => window.goto(route), route);
     for (const letter of question.correct) await card.locator('input[value="' + letter + '"]').check();
     await card.locator('.quiz-check').click();
+    await card.locator('.quiz-retry').waitFor({state:'visible'});
     if (!await card.evaluate(node => node.classList.contains('is-correct'))) errors.push(question.id + ': exact answer set scored incorrectly');
   }
   await quiz.reload();
@@ -335,6 +337,7 @@ try {
   await senseFirst.locator('input[value="A"]').check();
   await senseFirst.locator('input[value="B"]').check();
   await senseFirst.locator('.quiz-check').click();
+  await senseFirst.locator('.quiz-retry').waitFor({state:'visible'});
   if (await senseFirst.locator('.is-answer').count() !== 1 || await senseFirst.locator('.is-missed-answer').count() !== 2 || await senseFirst.locator('.is-selected-extra').count() !== 1) errors.push('selected, omitted, and extra feedback are not distinct');
   if (!await senseFirst.locator('.quiz-option-wrap[data-letter="C"] .quiz-option-state').textContent().then(text => text.includes('omis'))) errors.push('omitted feedback has no text label');
   if (await senseFirst.locator('.is-missed-answer').first().evaluate(node=>getComputedStyle(node).backgroundColor) !== 'rgb(254, 249, 195)') errors.push('omitted answer is not yellow');
@@ -350,6 +353,7 @@ try {
     await sense.evaluate(route=>goto(route),route);
     for (const letter of senseKey[number-1]) await card.locator('input[value="'+letter+'"]').check();
     await card.locator('.quiz-check').click();
+    await card.locator('.quiz-retry').waitFor({state:'visible'});
     if (!await card.evaluate(node=>node.classList.contains('is-correct'))) errors.push('sense quiz '+number+': exact-set scoring failed');
   }
   if (await sense.locator('#quiz-sidebar-count').textContent() !== '100/100 verificate') errors.push('sense quiz progress total is wrong');

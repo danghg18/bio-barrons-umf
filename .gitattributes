@@ -1,0 +1,2 @@
+# The minified vendor bundle contains whitespace inside a JavaScript template literal.
+assets/js/vendor/supabase.js -whitespace

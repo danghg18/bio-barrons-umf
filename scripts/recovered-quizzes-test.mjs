@@ -42,6 +42,7 @@ try {
     const card=page.locator(`[data-question-id="${question.id}"]`);
     for(const letter of question.correct) await card.locator(`input[value="${letter}"]`).check();
     await card.locator('.quiz-check').click();
+    await card.locator('.quiz-retry').waitFor({state:'visible'});
     assert.equal(await card.locator('.is-selected-extra').count(),0);
     assert.equal(await card.locator('.is-answer').count(),question.correct.length);
     await page.reload();
@@ -53,6 +54,7 @@ try {
     if(wrong){
       await card.locator(`input[value="${wrong.letter}"]`).check();
       await card.locator('.quiz-check').click();
+      await card.locator('.quiz-retry').waitFor({state:'visible'});
       assert.equal(await card.locator('.is-selected-extra').count(),1);
       assert.equal(await card.locator('.is-missed-answer').count(),question.correct.length);
       assert.ok((await card.locator(`#${question.id}-${wrong.letter.toLowerCase()}-explanation`).textContent()).includes(wrong.why));

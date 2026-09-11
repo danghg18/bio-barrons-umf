@@ -6,6 +6,7 @@
   var listeners = [];
   var canPersist = true;
   var currentState = loadState();
+  var deferredVisit = null;
 
   function emptyState() {
     return { version: VERSION, lastVisited: null, lessons: {} };
@@ -87,7 +88,7 @@
   function loadState() {
     var stored = null;
     try {
-      stored = window.localStorage.getItem(STORAGE_KEY);
+      stored = window.BBUserStorage ? JSON.stringify(window.BBUserStorage.get(STORAGE_KEY)) : window.localStorage.getItem(STORAGE_KEY);
     } catch (error) {
       canPersist = false;
       return emptyState();
@@ -103,7 +104,8 @@
   function persist() {
     if (!canPersist) return;
     try {
-      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(currentState));
+      if (window.BBUserStorage) window.BBUserStorage.set(STORAGE_KEY, currentState);
+      else window.localStorage.setItem(STORAGE_KEY, JSON.stringify(currentState));
     } catch (error) {
       canPersist = false;
     }
@@ -144,6 +146,12 @@
     var chapter = validChapterNum(chapterNum);
     var section = validSectionId(sectionId);
     if (!chapter || !section) return clone(currentState);
+    if (window.BBAuth && (!window.BBAuth.getState().initialized ||
+        (window.BBAuth.getState().user && !window.BBCloudSync?.isHydrated() &&
+         ["offline", "error"].indexOf(window.BBCloudSync?.getState().status) === -1))) {
+      deferredVisit = {chapter: chapterNum, section: sectionId};
+      return clone(currentState);
+    }
     currentState.lastVisited = {
       chapterNum: Number(chapter),
       sectionId: section,
@@ -151,6 +159,22 @@
     };
     return commit("visit");
   }
+
+  function flushDeferredVisit() {
+    if (!deferredVisit || !window.BBAuth?.getState().initialized) return;
+    var user = window.BBAuth.getState().user;
+    if (window.BBUserStorage.owner() !== (user ? user.id : "guest")) return;
+    var visit = deferredVisit;
+    deferredVisit = null;
+    currentState.lastVisited = {chapterNum:Number(visit.chapter), sectionId:validSectionId(visit.section), visitedAt:new Date().toISOString()};
+    commit("visit");
+  }
+  document.addEventListener("bb:cloud-hydrated", flushDeferredVisit);
+  document.addEventListener("bb:auth-ready", function () { if (!window.BBAuth.getState().user) flushDeferredVisit(); });
+  document.addEventListener("bb:sync-change", function (event) {
+    if (["offline", "error"].indexOf(event.detail.status) !== -1 ||
+        (["signedout", "unconfigured"].indexOf(event.detail.status) !== -1 && !window.BBAuth.getState().user)) flushDeferredVisit();
+  });
 
   function completeSection(chapterNum, sectionId) {
     var chapter = validChapterNum(chapterNum);
@@ -233,7 +257,7 @@
   }
 
   window.addEventListener("storage", function (event) {
-    if (event.key !== STORAGE_KEY) return;
+    if (window.BBUserStorage || event.key !== STORAGE_KEY) return;
     try {
       currentState = event.newValue ? normalize(JSON.parse(event.newValue)) : emptyState();
       announce("external-change");
@@ -241,6 +265,11 @@
       currentState = emptyState();
       announce("external-change");
     }
+  });
+
+  document.addEventListener("bb:cache-change", function (event) {
+    currentState = loadState();
+    announce(event.detail.reason);
   });
 
   window.BBStudyState = {

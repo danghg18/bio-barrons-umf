@@ -1,41 +1,6 @@
 (function () {
   'use strict';
 
-  function setupAccount() {
-    const toggle = document.getElementById('pilot-account-toggle');
-    const panel = document.getElementById('pilot-account-panel');
-    if (!toggle || !panel) return;
-    // A URL-only design variant; this is deliberately not an authentication state.
-    if (new URLSearchParams(location.search).get('design') === 'member') {
-      panel.querySelector('h2').textContent = 'Studiul meu';
-      panel.querySelector('p').textContent = 'Progres, notițe și materiale salvate. Spațiul personal este în pregătire.';
-      panel.dataset.designState = 'member';
-    }
-    function close(restore) {
-      panel.hidden = true;
-      toggle.setAttribute('aria-expanded', 'false');
-      if (restore) toggle.focus();
-    }
-    toggle.addEventListener('click', () => {
-      const open = panel.hidden;
-      panel.hidden = !open;
-      toggle.setAttribute('aria-expanded', String(open));
-      if (open) panel.focus({preventScroll:true});
-    });
-    document.addEventListener('click', event => {
-      if (!event.target.closest('.pilot-account')) close(false);
-    });
-    document.addEventListener('keydown', event => {
-      if (event.key === 'Escape' && !panel.hidden) {
-        event.preventDefault();
-        close(true);
-      }
-    });
-    document.addEventListener('focusin', event => {
-      if (!event.target.closest('.pilot-account')) close(false);
-    });
-  }
-
   function setupQuestionDemo() {
     const form = document.getElementById('pilot-demo-question');
     const question = window.BB_NERVOUS_QUIZ?.questions.find(item => item.id === 'sn-058');
@@ -214,7 +179,6 @@
 
   function init() {
     if (document.body.classList.contains('bm-home')) {
-      setupAccount();
       setupQuestionDemo();
     }
     if (document.body.classList.contains('bm-reader')) setupLesson();

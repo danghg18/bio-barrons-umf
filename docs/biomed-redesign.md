@@ -69,3 +69,7 @@ focus order, local reading preferences, legacy subsection placement, and all
 pages at 320px with touch. `test:pilot` remains an alias for this expanded suite.
 The existing smoke, search/highlighter and UI suites retain routing, scoring,
 protected-content, table, storage and offline regression coverage.
+
+## Accounts extension (2026-09-11)
+
+The former account preview is now replaced by the common account dialog on every public page. `account-ui.js` owns that dialog; `site-redesign.js` no longer owns its toggle. `accounts.css` extends the existing BioMed palette and compact toolbar. `notes.js` adds a section-specific desktop panel/mobile dialog on lessons only. The old `design=member` preview no longer changes authentication UI. Auth state, local caches and cloud synchronization live in separate modules; see [Supabase setup](supabase-setup.md). Educational content, routes and quiz keys are preserved.

@@ -22,6 +22,11 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
+  // Auth and private API data must never enter the public PWA cache.
+  const requestUrl = new URL(e.request.url);
+  if (e.request.method !== 'GET' || e.request.headers.has('authorization') ||
+      (requestUrl.origin !== self.location.origin &&
+       !['fonts.googleapis.com', 'fonts.gstatic.com'].includes(requestUrl.hostname))) return;
   // Keep HTML fresh while still allowing offline fallback.
   if (e.request.mode === 'navigate' || (e.request.headers.get('accept') || '').includes('text/html')) {
     e.respondWith(
@@ -31,7 +36,18 @@ self.addEventListener('fetch', e => {
           caches.open(CACHE).then(cache => cache.put(e.request, copy));
           return res;
         })
-        .catch(() => caches.match(e.request).then(cached => cached || caches.match(BASE + 'index.html')))
+        .catch(async () => {
+          const cached = await caches.match(e.request);
+          if (cached) return cached;
+          // Analytics filters are local UI state and always use this same static shell.
+          // Keep the established exact-query behavior for every other public page.
+          const url = new URL(e.request.url);
+          if (url.origin === self.location.origin && ['statistici.html', 'cont.html'].some(file => url.pathname === BASE + file)) {
+            const analytics = await caches.match(url.pathname);
+            if (analytics) return analytics;
+          }
+          return caches.match(BASE + 'index.html');
+        })
     );
     return;
   }

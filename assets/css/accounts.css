@@ -1,0 +1,130 @@
+/* Shared account and section notes surfaces; follows the current BioMed palette. */
+.bb-account-dialog,
+.bb-notes-panel {
+  color: #20262d;
+  background: #fff;
+  font-family: Figtree, system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  box-sizing: border-box;
+  border: 1px solid #e2e5e9;
+  padding: 24px;
+  scrollbar-color: #b5c2bb #f5f7f6;
+  overflow-wrap: anywhere;
+}
+.bb-account-dialog *, .bb-notes-panel * { box-sizing: border-box; }
+.bb-account-dialog [hidden], .bb-notes-panel [hidden] { display: none !important; }
+.bb-account-dialog:not([open]), .bb-notes-panel:not([open]) { display: none; }
+.bb-account-dialog {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: min(440px, calc(100vw - 32px));
+  max-width: none;
+  max-height: calc(100dvh - 32px);
+  border-radius: 12px;
+  overscroll-behavior: contain;
+}
+.bb-account-dialog::backdrop, .bb-notes-panel::backdrop { background: rgb(25 38 34 / 38%); }
+.bb-account-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 18px; }
+.bb-account-heading h2 { margin: 0; color: #20262d; font-size: 24px; font-weight: 650; line-height: 1.2; letter-spacing: -.025em; }
+.bb-account-dialog button, .bb-notes-panel button, .bb-notes-toggle { font: inherit; cursor: pointer; }
+.bb-dialog-close {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 40px; min-width: 40px; height: 40px; padding: 0;
+  border: 0; border-radius: 7px; background: transparent; color: #4c555f;
+}
+.bb-dialog-close:hover { background: #eef1f3; }
+.bb-account-dialog :focus-visible, .bb-notes-panel :focus-visible, .bb-notes-toggle:focus-visible {
+  outline: 2px solid #52776c; outline-offset: 3px;
+}
+.bb-account-form { display: grid; gap: 16px; }
+.bb-account-form label, .bb-notes-editor label { display: block; color: #39473f; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+.bb-account-form input, .bb-notes-editor textarea {
+  width: 100%; color: #20262d; background: #fff; border: 1px solid #bdc7c1;
+  border-radius: 7px; font: inherit; font-size: 16px; padding: 10px 12px; caret-color: #254f45;
+}
+.bb-account-form input::placeholder, .bb-notes-editor textarea::placeholder { color: #66716b; opacity: 1; }
+.bb-account-dialog ::selection, .bb-notes-panel ::selection { color: #16392d; background: #d7e8de; }
+.bb-account-primary, .bb-account-secondary {
+  display: inline-flex; justify-content: center; align-items: center; min-height: 44px; padding: 10px 16px;
+  background: #254f45; color: #fff; border: 1px solid #254f45; border-radius: 7px; font-weight: 600 !important;
+}
+.bb-account-primary:hover { background: #193d33; }
+.bb-account-secondary { background: #fff; color: #254f45; border-color: #bdc7c1; }
+.bb-account-secondary:hover { background: #edf3f0; }
+.bb-account-dialog button:disabled, .bb-notes-panel button:disabled { cursor: wait; opacity: .65; }
+.bb-account-switches { display: flex; gap: 12px 20px; flex-wrap: wrap; margin-top: 14px; }
+.bb-account-link { border: 0; border-radius: 3px; padding: 8px 0; background: transparent; color: #254f45; text-decoration: underline; text-underline-offset: 4px; font-size: 14px !important; text-align: left; }
+.bb-account-link:hover { color: #152f28; }
+.bb-account-email { font-weight: 600; font-size: 17px; margin: 0 0 8px; }
+.bb-account-hint, .bb-account-status, .bb-account-message, .bb-account-footnote { font-size: 13px; color: #56615b; }
+.bb-account-hint { margin: 6px 0 16px; }
+.bb-account-form .bb-account-hint { margin-bottom: 0; }
+.bb-account-status { padding-top: 16px; border-top: 1px solid #e2e5e9; margin: 20px 0 0; }
+.bb-account-status[data-status="error"], .bb-account-message.is-error { color: #943e33; }
+.bb-account-message { color: #254f45; margin: 10px 0 0; }
+.bb-account-message:empty { display: none; }
+.bb-account-tools { display: flex; flex-wrap: wrap; gap: 4px 20px; margin-top: 8px; }
+.bb-account-footnote { margin: 14px 0 0; font-size: 12px; }
+.bb-account-dialog .lab-continue { margin-top: 18px; }
+#pilot-account-toggle.is-authenticated { color: #254f45 !important; background: #edf3f0 !important; }
+.bb-notes-toggle {
+  display: inline-flex; align-items: center; justify-content: center; gap: 7px; flex-shrink: 0;
+  color: #4c555f; background: transparent; min-height: 38px; padding: 7px 10px; border: 1px solid transparent; border-radius: 7px;
+  font-size: 13px !important; font-weight: 550 !important;
+}
+.bb-notes-toggle:hover, .bb-notes-toggle[aria-expanded="true"] { color: #254f45; background: #edf3f0; }
+.bb-notes-panel {
+  position: fixed; inset: 84px 16px 16px auto; margin: 0;
+  width: min(390px, calc(100vw - 32px)); max-width: none; max-height: calc(100dvh - 100px);
+  height: calc(100dvh - 100px); border-radius: 12px;
+  z-index: 510; overflow-y: auto; overscroll-behavior: contain;
+}
+.bb-notes-panel[open] { display: flex; flex-direction: column; }
+.bb-notes-panel .bb-account-heading { flex-shrink: 0; margin-bottom: 14px; }
+.bb-notes-chapter { color: #56615b; font-size: 13px; margin: 0 0 5px; }
+.bb-notes-section { color: #20262d; font-size: 16px; font-weight: 600; margin: 0 0 22px; }
+.bb-notes-guest p { font-size: 14px; color: #56615b; margin: 0 0 20px; }
+.bb-notes-editor { display: flex; flex-direction: column; flex: 1; min-height: 200px; }
+.bb-notes-editor textarea { flex: 1; min-height: 160px; resize: vertical; line-height: 1.65; }
+.bb-notes-meta { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; margin-top: 10px; font-size: 12px; color: #56615b; }
+.bb-notes-meta p { margin: 0; }
+#bb-note-limit { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.bb-account-page { max-width: 700px !important; margin: 64px auto; padding: 0 24px; }
+.bb-account-page h1 { color: #20262d; font-size: clamp(30px, 5vw, 44px); line-height: 1.15; letter-spacing: -.025em; }
+.bb-account-page p { color: #56615b; line-height: 1.7; }
+@media (min-width: 1280px) {
+  body.bb-chapter-redesign.bm-reader.bb-notes-open .ch-layout { padding-right: 410px !important; }
+}
+@media (max-width: 1100px) {
+  .bb-notes-toggle { width: 38px; min-width: 38px; padding: 0; }
+  .bb-notes-toggle span { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (max-width: 768px) {
+  .bb-notes-panel { inset: auto 0 0; width: 100%; height: min(650px, 90dvh); max-height: 90dvh; border-radius: 12px 12px 0 0; padding: 20px; }
+  .bb-account-dialog { padding: 20px; }
+}
+@media (max-width: 700px) {
+  .bb-notes-toggle {
+    position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    width: auto; min-width: 44px; min-height: 44px; padding: 10px 14px;
+    border-color: #bdc7c1; border-radius: 8px; background: #fff; color: #254f45; z-index: 420;
+  }
+  .bb-notes-toggle span { position: static; width: auto; height: auto; overflow: visible; clip-path: none; white-space: normal; }
+  body.bb-chapter-redesign.bm-reader .ch-layout { padding-bottom: 88px !important; }
+  body.bb-chapter-redesign.bm-reader .lab-topbar-inner:has(.lesson-search.open) #bb-notes-toggle,
+  body.bb-chapter-redesign.bm-reader .lab-topbar-inner:has(.lesson-search.open) #pilot-account-toggle { visibility: hidden; }
+}
+@media (max-width: 360px) {
+  body.bb-chapter-redesign.bm-reader .lab-topbar-inner:has(#bb-notes-toggle) .bm-primary-nav a { padding-inline: 6px !important; }
+  body.bb-chapter-redesign.bm-reader .lab-topbar-inner:has(#bb-notes-toggle) .lesson-search,
+  body.bb-chapter-redesign.bm-reader .lab-topbar-inner:has(#bb-notes-toggle) .lesson-search-trigger,
+  body.bb-chapter-redesign.bm-reader .lab-topbar-inner:has(#bb-notes-toggle) .bb-sidebar-settings,
+  body.bb-chapter-redesign.bm-reader .lab-topbar-inner:has(#bb-notes-toggle) .bb-settings-toggle,
+  body.bb-chapter-redesign.bm-reader .lab-topbar-inner:has(#bb-notes-toggle) #pilot-account-toggle { width: 32px !important; min-width: 32px !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bb-account-dialog *, .bb-notes-panel *, .bb-notes-toggle { scroll-behavior: auto; transition: none !important; }
+}
+@media print { .bb-account-dialog, .bb-notes-panel, .bb-notes-toggle, #pilot-account-toggle { display: none !important; } }

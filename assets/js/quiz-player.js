@@ -11,7 +11,15 @@
   var lessonUrl = chapter ? chapter.url : "sistemul_nervos.html";
   var lessonName = chapter ? chapter.name : "Organizarea sistemului nervos";
 
+  var storageAvailable = true;
+  var analyticsAvailable = true;
   var state = loadState();
+  var pendingChecks = new Set();
+  var resetGeneration = 0;
+  var attemptKey = quiz.storageKey + ".attempts.v1";
+  var memoryAttempts = {};
+  var analytics = window.BBQuizAnalytics;
+  var analyticsReady = analytics && analytics.ready ? Promise.resolve(analytics.ready).catch(function () {}) : Promise.resolve();
 
   function escapeHtml(value) {
     return String(value)
@@ -23,7 +31,7 @@
   }
 
   function normalizeLetters(values) {
-    return Array.from(new Set((values || []).filter(function (value) {
+    return Array.from(new Set((Array.isArray(values) ? values : []).filter(function (value) {
       return /^[A-E]$/.test(value);
     }))).sort();
   }
@@ -42,13 +50,13 @@
 
   function loadState() {
     try {
-      var parsed = JSON.parse(window.localStorage.getItem(quiz.storageKey) || "null");
-      if (!parsed || parsed.version !== quiz.version || typeof parsed.questions !== "object") {
+      var parsed = window.BBUserStorage ? window.BBUserStorage.get(quiz.storageKey) : JSON.parse(window.localStorage.getItem(quiz.storageKey) || "null");
+      if (!parsed || parsed.version !== quiz.version || !parsed.questions || typeof parsed.questions !== "object" || Array.isArray(parsed.questions)) {
         return blankState();
       }
       var knownIds = new Set(quiz.questions.map(function (question) { return question.id; }));
       Object.keys(parsed.questions).forEach(function (id) {
-        if (!knownIds.has(id)) delete parsed.questions[id];
+        if (!knownIds.has(id) || !parsed.questions[id] || typeof parsed.questions[id] !== "object") delete parsed.questions[id];
         else {
           parsed.questions[id].selected = normalizeLetters(parsed.questions[id].selected);
           parsed.questions[id].verified = !!parsed.questions[id].verified;
@@ -57,16 +65,62 @@
       });
       return parsed;
     } catch (error) {
+      storageAvailable = false;
       return blankState();
     }
   }
 
-  function saveState() {
+  function saveState(questionId) {
     try {
-      window.localStorage.setItem(quiz.storageKey, JSON.stringify(state));
+      if (questionId) {
+        var updated = state.questions[questionId];
+        var latest = loadState();
+        if (storageAvailable) {
+          latest.questions[questionId] = updated;
+          state = latest;
+        }
+      }
+      if (window.BBUserStorage) {
+        window.BBUserStorage.set(quiz.storageKey, state);
+        storageAvailable = window.BBUserStorage.canPersist();
+      } else window.localStorage.setItem(quiz.storageKey, JSON.stringify(state));
     } catch (error) {
-      // The quiz remains usable when storage is unavailable.
+      storageAvailable = false;
     }
+    syncStorageNotice();
+  }
+
+  function syncStorageNotice() {
+    var notice = document.getElementById("quiz-storage-notice");
+    if (notice) {
+      notice.hidden = storageAvailable && analyticsAvailable;
+      notice.textContent = storageAvailable ? "Statisticile din această sesiune nu pot fi salvate." : "Salvarea locală nu este disponibilă.";
+    }
+  }
+
+  function syncAnalyticsNotice() {
+    if (!analytics || !analytics.getReport) return;
+    Promise.resolve(analytics.getReport()).then(function (report) {
+      analyticsAvailable = report.canPersist !== false;
+      syncStorageNotice();
+    }).catch(function () {
+      analyticsAvailable = false;
+      syncStorageNotice();
+    });
+  }
+
+  function attemptIdFor(questionId, renew) {
+    var attempts = memoryAttempts;
+    try {
+      var storedAttempts = window.BBUserStorage ? (window.BBUserStorage.get(attemptKey) || {}) : JSON.parse(localStorage.getItem(attemptKey) || "{}");
+      if (storedAttempts && typeof storedAttempts === "object" && !Array.isArray(storedAttempts)) attempts = storedAttempts;
+    } catch (_) { /* Memory fallback. */ }
+    if (renew || !attempts[questionId]) {
+      attempts[questionId] = analytics && analytics.newAttemptId ? analytics.newAttemptId() : Date.now() + "-" + Math.random().toString(36).slice(2);
+      try { if (window.BBUserStorage) window.BBUserStorage.set(attemptKey, attempts); else localStorage.setItem(attemptKey, JSON.stringify(attempts)); } catch (_) { storageAvailable = false; }
+    }
+    memoryAttempts = attempts;
+    return attempts[questionId];
   }
 
   function validateData() {
@@ -131,7 +185,7 @@
 
   function renderQuestion(question) {
     return (
-      '<article class="quiz-question" id="grila-' + question.number + '" data-question-id="' + question.id + '">' +
+      '<article class="quiz-question" tabindex="-1" id="grila-' + question.number + '" data-question-id="' + question.id + '">' +
         '<div class="quiz-question-head">' +
           '<span class="quiz-question-number">Grila ' + question.number + '</span>' +
           '<span class="quiz-question-status" aria-hidden="true">Necompletată</span>' +
@@ -161,11 +215,11 @@
     var previous = quiz.ranges[index - 1];
     var next = quiz.ranges[index + 1];
     var previousLink = previous
-      ? '<a class="outline" href="#' + previous.id + '" onclick="goto(\'' + previous.id + '\')">← Grilele ' + previous.start + '–' + previous.end + '</a>'
-      : '<a class="outline" href="' + lessonUrl + '">← Înapoi la lecție</a>';
+      ? '<a class="outline" href="#' + previous.id + '">← Înapoi</a>'
+      : '<span class="quiz-page-disabled" aria-disabled="true">← Înapoi</span>';
     var nextLink = next
-      ? '<a href="#' + next.id + '" onclick="goto(\'' + next.id + '\')">Grilele ' + next.start + '–' + next.end + ' →</a>'
-      : '<a href="' + lessonUrl + '">Revezi lecția →</a>';
+      ? '<a href="#' + next.id + '">Înainte →</a>'
+      : '<span class="quiz-page-disabled" aria-disabled="true">Înainte →</span>';
 
     section.innerHTML =
       '<div class="hero quiz-hero">' +
@@ -182,15 +236,54 @@
         '<div class="quiz-progress-track" aria-hidden="true"><span></span></div>' +
         '<div class="quiz-progress-meta"><span class="quiz-score">0 răspunsuri exacte</span><span class="quiz-range-score">0/' + questions.length + ' în acest set</span></div>' +
         '<div class="quiz-reset" data-reset-state="idle">' +
-          '<button class="quiz-reset-start" type="button">Resetează progresul</button>' +
-          '<span class="quiz-reset-confirmation" hidden>Ștergi toate răspunsurile salvate?</span>' +
-          '<button class="quiz-reset-confirm" type="button" hidden>Da, resetează</button>' +
+          '<button class="quiz-reset-start" type="button">Reia capitolul</button>' +
+          '<span class="quiz-reset-confirmation" hidden>Reiei grilele de la început? Statisticile se păstrează.</span>' +
+          '<button class="quiz-reset-confirm" type="button" hidden>Da, reiau</button>' +
           '<button class="quiz-reset-cancel" type="button" hidden>Anulează</button>' +
         '</div>' +
       '</div>' +
       '<p class="quiz-feedback-guide">După verificare: <span class="quiz-key-selected">verde — corect bifat</span>; <span class="quiz-key-missed">galben — corect omis</span>; <span class="quiz-key-extra">roșu — bifat în plus</span>.</p>' +
       '<div class="quiz-list">' + questions.map(renderQuestion).join("") + '</div>' +
-      '<div class="page-nav quiz-page-nav">' + previousLink + nextLink + '</div>';
+      '<div class="page-nav quiz-page-nav">' + previousLink + '<span class="quiz-page-position">Pagina ' + (index + 1) + ' din ' + quiz.ranges.length + '</span>' + nextLink + '</div>';
+  }
+
+  function renderNavigation() {
+    var root = document.getElementById("quiz-navigation");
+    if (!root) return;
+    var indexed = (window.BB_QUIZ_INDEX || []).find(function (item) { return item.storageKey === quiz.storageKey; });
+    var chapterNum = indexed ? indexed.chapterNum : (chapter ? chapter.num : "");
+    root.innerHTML =
+      '<div class="quiz-sidebar-top">' +
+        '<div class="quiz-sidebar-summary" aria-label="Progres general"><span id="quiz-sidebar-count">0/' + quiz.questions.length + ' verificate</span>' +
+        '<span class="quiz-sidebar-track" id="quiz-sidebar-progress" aria-hidden="true"><span></span></span></div>' +
+        '<div class="quiz-sidebar-links"><a href="testare.html">← Toate testele</a><a href="' + escapeHtml(lessonUrl) + '" title="' + escapeHtml(lessonName) + '">Lecția</a>' +
+        '<a href="statistici.html?capitol=' + encodeURIComponent(chapterNum) + '">Statistici ↗</a></div>' +
+        '<p class="quiz-map-label">Alege grila</p>' +
+        '<p id="quiz-storage-notice" role="status" hidden>Salvarea locală nu este disponibilă.</p>' +
+      '</div>' +
+      '<div class="quiz-map-scroll"><div class="quiz-question-map" aria-label="Grilele capitolului">' + quiz.questions.map(function (question) {
+        var range = quiz.ranges.find(function (item) { return question.number >= item.start && question.number <= item.end; });
+        return '<a href="#grila-' + question.number + '" data-map-question="' + question.id + '" data-range="' + range.id + '"><span class="quiz-map-number">' + question.number + '</span><span class="quiz-map-icon" aria-hidden="true">○</span></a>';
+      }).join("") + '</div></div>' +
+      '<div class="quiz-map-legend"><span>○ Necompletată</span><span>◐ În lucru</span><span>✓ Corectă</span><span>× Greșită</span></div>';
+    syncStorageNotice();
+  }
+
+  function syncQuestionMap() {
+    var active = document.querySelector(".page-section.active");
+    quiz.questions.forEach(function (question) {
+      var link = document.querySelector('[data-map-question="' + question.id + '"]');
+      if (!link) return;
+      var saved = state.questions[question.id];
+      var status = saved && saved.verified ? (saved.correct ? "correct" : "wrong") : (saved && saved.selected.length ? "in-progress" : "incomplete");
+      var labels = {correct: "Corectă", wrong: "Greșită", "in-progress": "În lucru", incomplete: "Necompletată"};
+      var icons = {correct: "✓", wrong: "×", "in-progress": "◐", incomplete: "○"};
+      link.dataset.status = status;
+      link.setAttribute("aria-label", "Grila " + question.number + ": " + labels[status]);
+      link.setAttribute("title", "Grila " + question.number + ": " + labels[status]);
+      link.querySelector(".quiz-map-icon").textContent = icons[status];
+      link.classList.toggle("is-current-range", !!active && active.id === "page-" + link.dataset.range);
+    });
   }
 
   function selectedFromCard(card) {
@@ -282,6 +375,7 @@
   }
 
   function syncProgress() {
+    syncQuestionMap();
     var verified = quiz.questions.filter(function (question) {
       return state.questions[question.id] && state.questions[question.id].verified;
     }).length;
@@ -326,35 +420,63 @@
     var saved = questionState(question);
     if (saved.verified) return;
     saved.selected = selectedFromCard(card);
-    saveState();
+    attemptIdFor(question.id, false);
+    saveState(question.id);
     syncQuestionCard(card, question);
+    syncProgress();
   }
 
-  function handleCheck(button) {
+  async function handleCheck(button) {
     var card = button.closest(".quiz-question");
     var question = quiz.questions.find(function (item) { return item.id === card.dataset.questionId; });
-    var saved = questionState(question);
-    saved.selected = selectedFromCard(card);
+    if (pendingChecks.has(question.id) || questionState(question).verified) return;
+    var selected = selectedFromCard(card);
     var result = card.querySelector(".quiz-result");
-    if (!saved.selected.length) {
+    if (!selected.length) {
       result.className = "quiz-result is-error";
       result.textContent = "Alege cel puțin o variantă înainte de verificare.";
       result.focus({ preventScroll: true });
       return;
     }
-    saved.verified = true;
-    saved.correct = sameLetters(saved.selected, question.correct);
-    saveState();
-    syncQuestionCard(card, question);
-    syncProgress();
-    result.focus({ preventScroll: true });
+    pendingChecks.add(question.id);
+    button.disabled = true;
+    var generation = resetGeneration;
+    try {
+      await analyticsReady;
+      var verify = function () {
+        if (generation !== resetGeneration) return;
+        var latest = loadState();
+        if (storageAvailable) state = latest;
+        if (questionState(question).verified) {
+          syncQuestionCard(card, question);
+          syncProgress();
+          return;
+        }
+        var attemptId = attemptIdFor(question.id, false);
+        var saved = { selected: selected, verified: true, correct: sameLetters(selected, question.correct) };
+        state.questions[question.id] = saved;
+        saveState(question.id);
+        syncQuestionCard(card, question);
+        syncProgress();
+        result.focus({ preventScroll: true });
+        if (analytics && analytics.recordAttempt) {
+          return Promise.resolve(analytics.recordAttempt({storageKey: quiz.storageKey, questionId: question.id, selected: selected, correct: saved.correct, attemptId: attemptId})).catch(function () {});
+        }
+      };
+      if (navigator.locks && navigator.locks.request) await navigator.locks.request("bb-quiz-check:" + quiz.storageKey, verify);
+      else await verify();
+    } finally {
+      pendingChecks.delete(question.id);
+      button.disabled = false;
+    }
   }
 
   function handleRetry(button) {
     var card = button.closest(".quiz-question");
     var question = quiz.questions.find(function (item) { return item.id === card.dataset.questionId; });
     state.questions[question.id] = { selected: [], verified: false, correct: false };
-    saveState();
+    attemptIdFor(question.id, true);
+    saveState(question.id);
     syncQuestionCard(card, question);
     syncProgress();
     var firstInput = card.querySelector('input[type="checkbox"]');
@@ -380,7 +502,10 @@
       setResetConfirmation(root, false);
       root.querySelector(".quiz-reset-start").focus();
     } else if (action.classList.contains("quiz-reset-confirm")) {
+      resetGeneration += 1;
       state = blankState();
+      memoryAttempts = {};
+      try { if (window.BBUserStorage) window.BBUserStorage.set(attemptKey, null); else localStorage.removeItem(attemptKey); } catch (_) { /* Memory fallback. */ }
       saveState();
       syncAllQuestionCards();
       syncProgress();
@@ -393,6 +518,20 @@
   }
 
   function installEvents() {
+    window.addEventListener("storage", function (event) {
+      if (window.BBUserStorage || (event.key !== quiz.storageKey && event.key !== null)) return;
+      state = loadState();
+      syncAllQuestionCards();
+      syncProgress();
+    });
+    document.addEventListener("bb:cache-change", function () {
+      resetGeneration += 1;
+      memoryAttempts = {};
+      state = loadState();
+      syncAllQuestionCards();
+      syncProgress();
+    });
+    document.addEventListener("bb:lesson-section-change", syncQuestionMap);
     document.addEventListener("change", handleQuestionChange);
     document.addEventListener("click", function (event) {
       var check = event.target.closest(".quiz-check");
@@ -437,11 +576,16 @@
 
   function init() {
     try {
+      // Session hydration may finish before DOMContentLoaded listeners are installed.
+      state = loadState();
       validateData();
       quiz.ranges.forEach(renderRange);
+      renderNavigation();
       syncAllQuestionCards();
       syncProgress();
       installEvents();
+      analyticsReady.then(syncAnalyticsNotice);
+      if (analytics && analytics.subscribe) analytics.subscribe(syncAnalyticsNotice);
       customizeSharedControls();
     } catch (error) {
       showFatalError(error);
