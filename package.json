@@ -7,11 +7,13 @@
     "generate:check": "node scripts/generate-site-assets.mjs --check",
     "validate": "node scripts/validate-site.mjs",
     "test:smoke": "node scripts/smoke-test.mjs",
-    "test": "npm run generate:check && npm run validate && npm run test:smoke && npm run test:search && npm run test:ui && npm run test:redesign",
+    "test": "npm run generate:check && npm run validate && npm run test:smoke && npm run test:search && npm run test:ui && npm run test:redesign && npm run test:recovered && npm run test:celula",
     "test:ui": "node scripts/ui-test.mjs",
     "test:search": "node scripts/search-highlighter-test.mjs",
     "test:pilot": "npm run test:redesign",
-    "test:redesign": "node scripts/redesign-test.mjs"
+    "test:redesign": "node scripts/redesign-test.mjs",
+    "test:recovered": "node scripts/recovered-quizzes-test.mjs",
+    "test:celula": "node scripts/celula-quiz-test.mjs"
   },
   "devDependencies": {
     "playwright": "1.63.0"

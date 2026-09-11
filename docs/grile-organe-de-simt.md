@@ -27,3 +27,9 @@ Explicațiile se raportează în primul rând la lecția existentă `organele_de
 Inventarul offline și versiunea cache-ului sunt regenerate prin `npm run generate`; strategia `sw.js` nu este schimbată. O adresă de căutare cu query este o intrare distinctă și este verificată offline după acces online, conform comportamentului existent al workerului.
 
 Verificarea vizuală directă acoperă catalogul, butonul din lecție și răspunsurile corectate la 1440 și 390 px. Suita UI verifică toate cele 14 pagini la zece dimensiuni. Baseline-ul textului educațional al quizului vechi este păstrat; testul exclude numai noua legendă de culori, care este text de interfață.
+
+## Explicații în lecție
+
+Lecția include patru explicații anatomice și funcționale în formulări proprii, cu paragrafe și liste roșii, fără casete sau trimiteri la grile. Ele sunt păstrate numai în secțiunile despre auz și echilibru: regiunile urechii, compartimentele cohleei, organizarea labirinturilor și receptorii vestibulari. Textul original și baremul nu au fost modificate. Clarificările folosesc și sursele educaționale OpenStax citate anterior: [Sensory Perception](https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception) și [Balance](https://openstax.org/books/introduction-behavioral-neuroscience/pages/7-4-balance-a-sense-of-where-you-are).
+
+La echilibru este adăugată imaginea furnizată de utilizator, cu creditul ginamed.ro păstrat, în `assets/images/chapters/sense-organs/labirint-osos-membranos-ginamed.png`. Stilul paragrafelor este local lecției, în `assets/css/chapters/sense-organs.css`.

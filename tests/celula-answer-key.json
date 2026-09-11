@@ -1,0 +1,7 @@
+[
+  "C", "BC", "AC", "ABE", "ACE", "ACD", "BCE", "ABD", "ABDE", "BCD",
+  "ADE", "BDE", "ACD", "BC", "ABDE", "B", "BD", "ABD", "BCD", "AD",
+  "ACDE", "BCE", "ABDE", "AB", "DE", "CDE", "AD", "BCE", "AB", "BE",
+  "AB", "AE", "ABE", "BE", "ABC", "BCD", "E", "CD", "AD", "DE",
+  "ACD", "BCE", "BE", "AB", "ABE", "ABDE", "ABCD", "CDE", "ABC", "D"
+]

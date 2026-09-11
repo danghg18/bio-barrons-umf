@@ -112,7 +112,9 @@ try {
     'celula_si_fiziologia_celulara.html','oasele_si_articulatiile.html','tesutul_muscular.html',
     'tesutul_nervos.html','sistemul_nervos.html','organele_de_simt.html','sistemul_renal_complet.html',
     'sistemul_reproducator_masculin.html','sistemul_reproducator_feminin.html',
-    'grile_sistemul_nervos.html','grile_organele_de_simt.html'];
+    'grile_sistemul_nervos.html','grile_organele_de_simt.html',
+    'grile_introducere_anatomie_fiziologie.html','grile_sistemul_urinar.html',
+    'grile_sistemul_reproducator_masculin.html','grile_sistemul_reproducator_feminin.html'];
   for (const width of [1440,390]) {
     await page.setViewportSize({width,height:900});
     for (const file of files) {

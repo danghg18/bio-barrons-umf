@@ -1,0 +1,53 @@
+{
+  "revision": "810246f",
+  "quizzes": [
+    {
+      "num": 1,
+      "slug": "introducere",
+      "file": "grile_introducere_anatomie_fiziologie.html",
+      "source": "assets/js/grile-introducere.js",
+      "prefix": "ia-",
+      "title": "Introducere în anatomie și fiziologie",
+      "lesson": "introducere_anatomie_fiziologie.html",
+      "dataFile": "assets/js/grile-introducere-data.js",
+      "count": 60,
+      "sha256": "85aaea09009f6da633d6b94bb795cfc0974ada602c9ee5adf84be58c4e9b0436"
+    },
+    {
+      "num": 20,
+      "slug": "sistemul-urinar",
+      "file": "grile_sistemul_urinar.html",
+      "source": "grile_sistemul_urinar.html",
+      "prefix": "ur-",
+      "title": "Sistemul urinar",
+      "lesson": "sistemul_renal_complet.html",
+      "dataFile": "assets/js/grile-sistemul-urinar-data.js",
+      "count": 80,
+      "sha256": "aa66b2ec5026e4060e658313a59829c5011f050e6a773bd0bdbcc6c0fdbfb30e"
+    },
+    {
+      "num": 22,
+      "slug": "reproducator-masculin",
+      "file": "grile_sistemul_reproducator_masculin.html",
+      "source": "grile_sistemul_reproducator_masculin.html",
+      "prefix": "rm-",
+      "title": "Sistemul reproducător masculin",
+      "lesson": "sistemul_reproducator_masculin.html",
+      "dataFile": "assets/js/grile-reproducator-masculin-data.js",
+      "count": 69,
+      "sha256": "b2bb1b8ef08c38c7503a815ea323a2533932b320260f2643848dc3c81a135649"
+    },
+    {
+      "num": 23,
+      "slug": "reproducator-feminin",
+      "file": "grile_sistemul_reproducator_feminin.html",
+      "source": "assets/js/grile-feminin.js",
+      "prefix": "rf-",
+      "title": "Sistemul reproducător feminin",
+      "lesson": "sistemul_reproducator_feminin.html",
+      "dataFile": "assets/js/grile-reproducator-feminin-data.js",
+      "count": 42,
+      "sha256": "a950f2b9856a12520d61f0b0a1fea26a9eb6ff76f8718bdbfe18de944cf2b37e"
+    }
+  ]
+}

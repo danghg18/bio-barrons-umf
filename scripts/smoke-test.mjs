@@ -284,7 +284,7 @@ try {
   await feature.close();
 
   const quiz = await newPage(context);
-  await quiz.goto(`${base}${resources[0].url}`, { waitUntil:'domcontentloaded' });
+  await quiz.goto(`${base}${resources.find(resource => resource.url === 'grile_sistemul_nervos.html').url}`, { waitUntil:'domcontentloaded' });
   await quiz.waitForFunction(() => document.querySelectorAll('.quiz-question').length === 50);
   const first = quiz.locator('.quiz-question').first();
   await first.locator('input[type=checkbox]').first().check();

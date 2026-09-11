@@ -185,12 +185,18 @@ try {
 
       // Real authored text still has stable counts/order through clear + retry.
       await page.evaluate(() => { if (document.body.classList.contains('hl-mode')) window.toggleHighlighter(); });
-      await page.locator('#lesson-search-input').fill('sistem');
+      // The cell questions do not contain the previous universal probe, 'sistem'.
+      const authoredQuery = file === 'grile_celula.html' ? 'membrana' : 'sistem';
+      await page.locator('#lesson-search-input').fill(authoredQuery);
       await page.waitForFunction(() => document.querySelector('.search-found-current'));
       const realMatches = await page.locator('.search-found').evaluateAll(marks => Object.values(marks.reduce((hits, mark) => { const key = mark.dataset.searchIndex; hits[key] ||= { section: mark.closest('.page-section').id.slice(5), text: '', index: key }; hits[key].text += mark.textContent; return hits; }, {})));
       const realCount = await page.locator('#lesson-search-count').textContent();
       assert.ok(realMatches.length > 0);
-      const realHighlight = await page.locator('.search-found').first().evaluate(mark => {
+      const realHighlight = await page.locator('.search-found').evaluateAll(marks => {
+        // Quiz explanations are indexed before verification, but their hidden
+        // text cannot be selected by a student. Highlight an exposed passage.
+        const mark = marks.find(node => !node.closest('[hidden]'));
+        if (!mark) throw new Error('No selectable authored search match');
         const parent = mark.parentElement;
         if (!parent.id) parent.id = 'search-regression-authored';
         const before = document.createRange();
@@ -200,7 +206,7 @@ try {
       await search(page, '', '0 / 0');
       await selectHighlight(page, realHighlight.id, realHighlight.start, realHighlight.end);
       await rememberHighlights(page);
-      await search(page, 'sistem', realCount);
+      await search(page, authoredQuery, realCount);
       await assertHighlights(page);
       assert.deepEqual(await page.locator('.search-found').evaluateAll(marks => Object.values(marks.reduce((hits, mark) => { const key = mark.dataset.searchIndex; hits[key] ||= { section: mark.closest('.page-section').id.slice(5), text: '', index: key }; hits[key].text += mark.textContent; return hits; }, {}))), realMatches);
 
@@ -209,7 +215,7 @@ try {
       const sectionMatches = realMatches.filter(match => match.section === preferred.section);
       const hit = Math.min(1, sectionMatches.length - 1);
       const expected = sectionMatches[hit];
-      await page.goto(base + file + '?' + new URLSearchParams({ q: 'sistem', section: preferred.section, hit: String(hit) }));
+      await page.goto(base + file + '?' + new URLSearchParams({ q: authoredQuery, section: preferred.section, hit: String(hit) }));
       await page.waitForFunction(index => document.querySelector('.search-found-current')?.dataset.searchIndex === index, expected.index);
       assert.equal(await page.locator('.page-section.active').getAttribute('id'), 'page-' + preferred.section);
       await page.goto(base + file + '?' + new URLSearchParams({ q: '100%', section: preferred.section, hit: '0' }));

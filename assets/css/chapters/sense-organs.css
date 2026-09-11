@@ -1,0 +1,13 @@
+/* Local text colors override the shared reader's important prose colors. */
+body.bb-chapter-redesign .page-section .lesson-explanation {
+  margin: 1rem 0;
+}
+body.bb-chapter-redesign .page-section .lesson-explanation p,
+body.bb-chapter-redesign .page-section .lesson-explanation li,
+body.bb-chapter-redesign .page-section .lesson-explanation strong {
+  color: #a32323 !important;
+}
+body.bb-chapter-redesign .page-section .lesson-explanation ul {
+  margin: .5rem 0 .85rem;
+  padding-inline-start: 1.15rem;
+}

@@ -123,6 +123,7 @@
         '<div class="quiz-option-explanation" id="' + inputId + '-explanation" hidden>' +
           '<strong>' + explanationLabel + '</strong>' +
           '<p>' + escapeHtml(option.why || "") + '</p>' +
+          (option.added ? '<p>' + escapeHtml(option.added) + '</p>' : '') +
         '</div>' +
       '</div>'
     );
@@ -179,7 +180,7 @@
           '<span class="quiz-progress-count" aria-live="polite">0 din ' + quiz.questions.length + ' verificate</span>' +
         '</div>' +
         '<div class="quiz-progress-track" aria-hidden="true"><span></span></div>' +
-        '<div class="quiz-progress-meta"><span class="quiz-score">0 răspunsuri exacte</span><span class="quiz-range-score">0/10 în acest set</span></div>' +
+        '<div class="quiz-progress-meta"><span class="quiz-score">0 răspunsuri exacte</span><span class="quiz-range-score">0/' + questions.length + ' în acest set</span></div>' +
         '<div class="quiz-reset" data-reset-state="idle">' +
           '<button class="quiz-reset-start" type="button">Resetează progresul</button>' +
           '<span class="quiz-reset-confirmation" hidden>Ștergi toate răspunsurile salvate?</span>' +
@@ -305,13 +306,14 @@
 
     quiz.ranges.forEach(function (range) {
       var stats = rangeStats(range);
+      var count = range.end - range.start + 1;
       document.querySelectorAll('[data-range-progress="' + range.id + '"]').forEach(function (node) {
-        node.textContent = stats.verified + "/10";
+        node.textContent = stats.verified + "/" + count;
       });
       var section = document.getElementById("page-" + range.id);
       if (section) {
         var rangeScore = section.querySelector(".quiz-range-score");
-        if (rangeScore) rangeScore.textContent = stats.correct + "/10 exacte în acest set";
+        if (rangeScore) rangeScore.textContent = stats.correct + "/" + count + " exacte în acest set";
       }
     });
   }

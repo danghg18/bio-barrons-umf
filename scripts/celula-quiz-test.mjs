@@ -1,0 +1,105 @@
+import assert from 'node:assert/strict';
+import {readFile, mkdir} from 'node:fs/promises';
+import vm from 'node:vm';
+import http from 'node:http';
+import {extname, resolve, sep} from 'node:path';
+import {chromium} from 'playwright';
+
+const root=resolve(import.meta.dirname,'..');
+const key=JSON.parse(await readFile(resolve(root,'tests/celula-answer-key.json'),'utf8'));
+const sandbox={window:{}};
+vm.runInNewContext(await readFile(resolve(root,'assets/js/grile-celula-data.js'),'utf8'),sandbox);
+const data=sandbox.window.BB_QUIZ;
+assert.equal(data.questions.length,50);
+assert.equal(key.length,50);
+assert.equal(data.firstNumber,61);
+assert.equal(data.storageKey,'bb.quiz.celula.v1');
+assert.equal(data.ranges.length,5);
+data.questions.forEach((q,i)=>{
+  assert.equal(q.id,`cel-${String(i+61).padStart(3,'0')}`);
+  assert.equal(q.number,i+61);assert.equal(q.sourceNumber,i+61);
+  assert.equal(q.correct.join(''),key[i]);
+  assert.equal(q.options.map(o=>o.letter).join(''),'ABCDE');
+  assert.ok(q.prompt.trim());
+  q.options.forEach(o=>{assert.ok(o.text.trim());if(!q.correct.includes(o.letter))assert.ok(o.why?.trim());});
+  assert.equal(data.ranges.filter(r=>q.number>=r.start&&q.number<=r.end).length,1);
+});
+const prefix='/bio-barrons-umf/';
+const types={'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.svg':'image/svg+xml','.png':'image/png'};
+const server=http.createServer(async(req,res)=>{
+  try {
+    const path=new URL(req.url,'http://localhost').pathname;
+    const file=resolve(root,path.slice(prefix.length)||'index.html');
+    if(!path.startsWith(prefix)||!file.startsWith(root+sep)) throw Error('Invalid path');
+    const data=await readFile(file);
+    res.writeHead(200,{'Content-Type':types[extname(file)]||'application/octet-stream'});res.end(data);
+  } catch {res.writeHead(404);res.end();}
+});
+await new Promise(done=>server.listen(0,'127.0.0.1',done));
+const base=`http://127.0.0.1:${server.address().port}${prefix}`;
+const browser=await chromium.launch({headless:true});
+try {
+  const context=await browser.newContext({serviceWorkers:'block',reducedMotion:'reduce',viewport:{width:1440,height:1000}});
+  const page=await context.newPage();
+  const errors=[];page.on('pageerror',e=>errors.push(e.message));
+  await page.goto(base+'testare.html');
+  await page.locator('#lab-testing-catalog a[href="grile_celula.html"]').click();
+  await page.waitForFunction(()=>document.body.dataset.bbSharedReady==='true');
+  assert.equal(await page.locator('.quiz-question').count(),50);
+  assert.equal(await page.locator('.quiz-fatal').count(),0);
+  assert.equal(await page.locator('.page-section.active').getAttribute('id'),'page-grile-61-70');
+  assert.equal(await page.locator('#quiz-sidebar-count').textContent(),'0/50 verificate');
+  await page.evaluate(()=>localStorage.setItem('bb.quiz.organe-simt.v1','celula-isolation-proof'));
+  const first=page.locator('[data-question-id="cel-061"]');
+  await first.locator('input[value="A"]').check();
+  await first.locator('.quiz-check').click();
+  assert.equal(await first.locator('.is-selected-extra').count(),1);
+  assert.equal(await first.locator('.is-missed-answer').count(),1);
+  assert.ok(await first.locator('#cel-061-a-explanation').isVisible());
+  await first.locator('.quiz-retry').click();
+  assert.equal(await first.locator('input:checked').count(),0);
+  for (const [i,q] of data.questions.entries()) {
+    const range=data.ranges.find(r=>q.number>=r.start&&q.number<=r.end);
+    await page.evaluate(id=>window.goto(id),range.id);
+    const card=page.locator(`[data-question-id="${q.id}"]`);
+    assert.ok((await card.locator('legend').textContent()).includes(q.prompt));
+    for(const letter of key[i]) await card.locator(`input[value="${letter}"]`).check();
+    await card.locator('.quiz-check').click();
+    assert.ok(await card.evaluate(el=>el.classList.contains('is-correct')),`Exact-set score ${q.number}`);
+  }
+  assert.equal(await page.locator('#quiz-sidebar-count').textContent(),'50/50 verificate');
+  await page.reload();
+  assert.equal(await page.locator('.quiz-question.is-correct').count(),50);
+  assert.equal(await page.locator('.page-section.active').getAttribute('id'),'page-grile-101-110');
+  await page.locator('.page-section.active .quiz-reset-start').click();
+  await page.locator('.page-section.active .quiz-reset-cancel').click();
+  assert.equal(await page.locator('.quiz-question.is-correct').count(),50);
+  await page.locator('.page-section.active .quiz-reset-start').click();
+  await page.locator('.page-section.active .quiz-reset-confirm').click();
+  await page.reload();
+  assert.equal(await page.locator('#quiz-sidebar-count').textContent(),'0/50 verificate');
+  assert.equal(await page.evaluate(()=>localStorage.getItem('bb.quiz.organe-simt.v1')),'celula-isolation-proof');
+  await page.goto(base+'celula_si_fiziologia_celulara.html');
+  await page.locator('.bm-primary-nav a[href="testare.html"]').click();
+  await page.locator('#lab-testing-catalog a[href="grile_celula.html"]').click();
+  assert.equal(await page.locator('.lab-topbar-back').getAttribute('href'),'celula_si_fiziologia_celulara.html');
+  await page.goto(base+'grile_celula.html?q=ribozomii&section=grile-101-110&hit=0');
+  await page.waitForFunction(()=>document.querySelector('.page-section.active')?.id==='page-grile-101-110');
+  assert.ok(await page.locator('.page-section.active .search-found').count());
+  await page.goto(base+'grile_celula.html');
+  await page.waitForFunction(()=>document.body.dataset.bbSharedReady==='true');
+  await mkdir(resolve(root,'tmp/celula-qa'),{recursive:true});
+  await page.screenshot({path:resolve(root,'tmp/celula-qa/desktop.png')});
+  await page.setViewportSize({width:390,height:844});
+  await page.screenshot({path:resolve(root,'tmp/celula-qa/mobile.png')});
+  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+  await page.goto(base+'grile_celula.html#grile-101-110');
+  assert.equal(await page.locator('.page-section.active .quiz-question').count(),10);
+  const last=page.locator('[data-question-id="cel-110"]');
+  await last.locator('input[value="D"]').check();
+  await last.locator('.quiz-check').click();
+  assert.ok(await last.evaluate(el=>el.classList.contains('is-correct')));
+  await last.screenshot({path:resolve(root,'tmp/celula-qa/mobile-110.png')});
+  assert.deepEqual(errors,[]);
+  console.log('Celula: 50 source numbers and independent keys; all exact-set scores, omitted/extra feedback, retry/reset/reload, isolated storage, catalog/lesson links, search and mobile passed.');
+} finally {await browser.close();await new Promise(done=>server.close(done));}
