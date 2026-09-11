@@ -25,6 +25,8 @@
 <link rel="stylesheet" href="assets/css/home.css?v=20260910-testing2">
 <script src="assets/js/light-mode.js?v=20260909-editorial1"></script>
 <link rel="stylesheet" href="assets/css/site-redesign.css?v=20260910-biomed1">
+<link rel="stylesheet" href="assets/css/testing-analytics.css?v=20260911-analytics1">
+<link rel="stylesheet" href="assets/css/accounts.css?v=20260911-accounts1">
 </head>
 <body class="lab-testing-page bm-browse bm-catalog">
 
@@ -55,16 +57,23 @@
 </header>
 
 <main id="main-content">
-  <section class="lab-testing-hero" aria-labelledby="testing-title">
-    <div>
-      <h1 id="testing-title">Testare pe capitole</h1>
-      <p>Alege materia pe care vrei să o verifici, rezolvă grilele și citește explicațiile după fiecare răspuns.</p>
+  <section class="testing-hero" aria-labelledby="testing-title">
+    <div class="testing-intro">
+      <p class="testing-eyebrow">Exersează. Înțelege. Progresează.</p>
+      <h1 id="testing-title">Ce ai învățat,<br><span>pus în practică.</span></h1>
+      <p>Grile pe capitole, explicații la fiecare răspuns și o perspectivă clară asupra progresului tău.</p>
+      <a class="pilot-button" href="#lab-testing-catalog">Alege un capitol <span aria-hidden="true">↓</span></a>
+      <span class="testing-availability" id="lab-testing-count"></span>
     </div>
-    <div class="lab-testing-hero-meta">
-      <strong id="lab-testing-count">6 teste disponibile</strong>
-      <span>Progresul se salvează separat pentru fiecare capitol, în acest browser.</span>
-    </div>
+    <section class="testing-preview" aria-labelledby="testing-activity-title">
+      <div class="analytics-section-head"><div><p class="testing-eyebrow">Ritmul tău de învățare</p><h2 id="testing-activity-title">Activitatea ta</h2></div><span class="analytics-period-note">Ultimele 30 de zile</span></div>
+      <div id="testing-preview-summary" class="testing-preview-summary" aria-live="polite"></div>
+      <div id="testing-activity"><p class="analytics-loading">Se încarcă activitatea…</p></div>
+      <a class="analytics-more" href="statistici.html">Vezi toate statisticile <span aria-hidden="true">↗</span></a>
+    </section>
   </section>
+  <p class="analytics-storage-note" id="analytics-storage-note" role="status" hidden></p>
+  <noscript><p class="analytics-storage-note">Activează JavaScript pentru a rezolva grilele și a vedea statisticile.</p></noscript>
 
   <section id="lab-testing-catalog" class="lab-bento lab-testing-catalog" aria-labelledby="testing-catalog-title">
     <div class="lab-section-head">
@@ -209,7 +218,19 @@
 </div>
 
 <script src="assets/js/chapters-data.js?v=20260909-editorial1"></script>
-<script src="assets/js/home.js?v=20260910-testing2"></script>
-<script src="assets/js/site-redesign.js?v=20260910-biomed1"></script>
+<script src="assets/js/quiz-index.js?v=20260911-accounts1"></script>
+<script src="assets/js/user-storage.js?v=20260911-accounts1"></script>
+<script src="assets/js/study-state.js?v=20260911-accounts1"></script>
+<script src="assets/js/supabase-config.js?v=20260911-accounts1"></script>
+<script src="assets/js/vendor/supabase.js?v=20260911-accounts1"></script>
+<script src="assets/js/supabase-client.js?v=20260911-accounts1"></script>
+<script src="assets/js/auth-state.js?v=20260911-accounts1"></script>
+<script src="assets/js/cloud-sync.js?v=20260911-accounts1"></script>
+<script src="assets/js/home.js?v=20260911-accounts1"></script>
+<script src="assets/js/site-redesign.js?v=20260911-accounts1"></script>
+<script src="assets/js/quiz-analytics.js?v=20260911-accounts1"></script>
+<script src="assets/js/analytics-ui.js?v=20260911-analytics1"></script>
+<script src="assets/js/account-ui.js?v=20260911-accounts1"></script>
+<script src="assets/js/notes.js?v=20260911-accounts1"></script>
 </body>
 </html>

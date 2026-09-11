@@ -134,7 +134,7 @@ try {
       for(const link of await page.locator('.bm-primary-nav a').all()) {
         assert.ok(await link.evaluate(n=>{const r=n.getBoundingClientRect();return n.contains(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2));}),file+' navigation link is covered');
       }
-      assert.equal(await page.locator('#pilot-account-toggle').count(),file==='index.html'?1:0,file+' account scope');
+      assert.equal(await page.locator('#pilot-account-toggle').count(),1,file+' shared account scope');
       await capture(file.replace('.html','')+'-'+width);
       if(!reader) continue;
       const menu=page.locator('.lab-menu-trigger');

@@ -5,7 +5,7 @@
  * Published records also own their lesson theme, last-modified date, URL, and resources.
  * Unpublished chapters intentionally have no URL. Consumers must not mutate this data.
  */
-const BIO_SITE={baseUrl:'https://danghg18.github.io/bio-barrons-umf/',updated:'2026-09-10',pages:[{url:'testare.html',updated:'2026-09-10'}]};
+const BIO_SITE={baseUrl:'https://danghg18.github.io/bio-barrons-umf/',updated:'2026-09-10',pages:[{url:'testare.html',updated:'2026-09-11'},{url:'statistici.html',updated:'2026-09-11'},{url:'cont.html',updated:'2026-09-11'}]};
 const CHAPTERS=[
   {num:1,icon:'🏛️',name:'Introducere în anatomie și fiziologie',cat:'Bazele Anatomiei',color:'#2563EB',colorLight:'#EFF6FF',done:true,url:'introducere_anatomie_fiziologie.html',updated:'2026-05-17',theme:{accent:'#2563EB',light:'#EFF6FF',mid:'#3B82F6'},resources:[{kind:'quiz',title:'Grile 1–60',url:'grile_introducere_anatomie_fiziologie.html',updated:'2026-09-10'}],kw:'homeostaza homeostazie plan anatomic planuri cavitati regiuni anatomie fiziologie feedback metabolism tesut organ sistem'},
   {num:3,icon:'🔬',name:'Celula și fiziologia celulară',cat:'Bazele Anatomiei',color:'#2563EB',colorLight:'#EFF6FF',done:true,url:'celula_si_fiziologia_celulara.html',updated:'2026-05-24',theme:{accent:'#2563EB',light:'#EFF6FF',mid:'#3B82F6'},resources:[{kind:'quiz',title:'Grile 61–110',url:'grile_celula.html',updated:'2026-09-11'}],kw:'membrana nucleu mitocondrie ribozom ATP transport activ pasiv procariote eucariote fosfolipide osmoza difuziune endocitoza exocitoza organite'},

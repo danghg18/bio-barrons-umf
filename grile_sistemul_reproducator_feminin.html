@@ -28,6 +28,8 @@
 <link rel="stylesheet" href="assets/css/quiz.css?v=20260910-sensequiz1">
 <script src="assets/js/light-mode.js?v=20260909-editorial1"></script>
 <link rel="stylesheet" href="assets/css/site-redesign.css?v=20260910-biomed1">
+<link rel="stylesheet" href="assets/css/quiz-navigation.css?v=20260911-quiznav1">
+<link rel="stylesheet" href="assets/css/accounts.css?v=20260911-accounts1">
 </head>
 <body class="bb-chapter-redesign bm-reader bm-quiz bb-quiz-page">
 <a class="lesson-skip" href="#quiz-content">Sari la grile</a>
@@ -44,26 +46,12 @@
 
 <div id="nav-overlay" onclick="closeNav()"></div>
 <div class="ch-layout">
-  <nav id="sidenav" aria-label="Seturile de grile">
+  <nav id="sidenav" aria-label="Navigarea grilelor">
     <div class="nav-header">
       <div class="nav-chapter-badge">Capitol 23</div>
       <div class="nav-chapter-title">Grile · Sistemul reproducător feminin</div>
     </div>
-    <a href="testare.html">← Toate testele</a>
-    <div class="nav-divider"></div>
-    <div class="nav-group-label">Material</div>
-    <a href="sistemul_reproducator_feminin.html">← Sistemul reproducător feminin</a>
-    <div class="nav-divider"></div>
-    <div class="nav-group-label">Seturi de câte 10</div>
-    <a class="quiz-nav-link active" href="#grile-1-10" onclick="goto('grile-1-10')"><span>Grilele 1–10</span><span class="quiz-nav-count" data-range-progress="grile-1-10">0/10</span></a>
-    <a class="quiz-nav-link" href="#grile-11-20" onclick="goto('grile-11-20')"><span>Grilele 11–20</span><span class="quiz-nav-count" data-range-progress="grile-11-20">0/10</span></a>
-    <a class="quiz-nav-link" href="#grile-21-30" onclick="goto('grile-21-30')"><span>Grilele 21–30</span><span class="quiz-nav-count" data-range-progress="grile-21-30">0/10</span></a>
-    <a class="quiz-nav-link" href="#grile-31-40" onclick="goto('grile-31-40')"><span>Grilele 31–40</span><span class="quiz-nav-count" data-range-progress="grile-31-40">0/10</span></a>
-    <a class="quiz-nav-link" href="#grile-41-42" onclick="goto('grile-41-42')"><span>Grilele 41–42</span><span class="quiz-nav-count" data-range-progress="grile-41-42">0/2</span></a>
-    <div class="quiz-sidebar-summary" aria-label="Progres general">
-      <span id="quiz-sidebar-count">0/42 verificate</span>
-      <span class="quiz-sidebar-track" id="quiz-sidebar-progress" aria-hidden="true"><span></span></span>
-    </div>
+    <div id="quiz-navigation"></div>
   </nav>
 
   <main id="quiz-content">
@@ -79,10 +67,21 @@
 <button id="top" onclick="scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})" aria-label="Înapoi sus">↑</button>
 
 <script src="assets/js/chapters-data.js?v=20260909-editorial1"></script>
-<script src="assets/js/legacy/quiz-navigation.js?v=20260910-sensequiz1"></script>
+<script src="assets/js/quiz-index.js?v=20260911-accounts1"></script>
+<script src="assets/js/user-storage.js?v=20260911-accounts1"></script>
+<script src="assets/js/study-state.js?v=20260911-accounts1"></script>
+<script src="assets/js/supabase-config.js?v=20260911-accounts1"></script>
+<script src="assets/js/vendor/supabase.js?v=20260911-accounts1"></script>
+<script src="assets/js/supabase-client.js?v=20260911-accounts1"></script>
+<script src="assets/js/auth-state.js?v=20260911-accounts1"></script>
+<script src="assets/js/cloud-sync.js?v=20260911-accounts1"></script>
+<script src="assets/js/legacy/quiz-navigation.js?v=20260911-quiznav1"></script>
 <script src="assets/js/grile-reproducator-feminin-data.js?v=20260910-recovery1"></script>
-<script src="assets/js/quiz-player.js?v=20260910-recovery1"></script>
+<script src="assets/js/quiz-analytics.js?v=20260911-accounts1"></script>
+<script src="assets/js/quiz-player.js?v=20260911-accounts1"></script>
 <script src="assets/js/chapter-redesign.js?v=20260909-editorial1"></script>
-<script src="assets/js/site-redesign.js?v=20260910-biomed1"></script>
+<script src="assets/js/site-redesign.js?v=20260911-accounts1"></script>
+<script src="assets/js/account-ui.js?v=20260911-accounts1"></script>
+<script src="assets/js/notes.js?v=20260911-accounts1"></script>
 </body>
 </html>

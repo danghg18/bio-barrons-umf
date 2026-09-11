@@ -1,3 +1,9 @@
 .aidesigner/*
 !.aidesigner/.gitkeep
 node_modules/
+# Supabase CLI local state; no credentials or database dumps belong in the site.
+supabase/.temp/
+supabase/.branches/
+.env
+.env.*
+!.env.example
