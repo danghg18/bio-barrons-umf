@@ -227,8 +227,8 @@ window.BB_QUIZ = {
         },
         {
           "letter": "C",
-          "text": "sunt prezente în fovea centrală",
-          "why": "Conurile sunt prezente în foveea centrală, unde sunt concentrate și permit vederea detaliilor. Afirmația este transcrisă corect din PDF, dar C lipsește și din baremul tipărit. Este o neconcordanță a sursei: cerința nu oferă un motiv pentru a exclude această localizare corectă."
+          "text": "lipsesc în foveea centrală",
+          "why": "Afirmația este falsă: celulele cu conuri sunt concentrate în foveea centrală, unde permit vederea fină a detaliilor și diferențierea culorilor. Ele nu lipsesc din această regiune, deci C nu se selectează."
         },
         {
           "letter": "D",
