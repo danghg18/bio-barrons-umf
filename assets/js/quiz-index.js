@@ -10,302 +10,580 @@ window.BB_QUIZ_INDEX = [
       {
         "id": "ia-001",
         "number": 1,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ia-002",
         "number": 2,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
       },
       {
         "id": "ia-003",
         "number": 3,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "ia-004",
         "number": 4,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "D"
+        ]
       },
       {
         "id": "ia-005",
         "number": 5,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "E"
+        ]
       },
       {
         "id": "ia-006",
         "number": 6,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "B",
+          "E"
+        ]
       },
       {
         "id": "ia-007",
         "number": 7,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ia-008",
         "number": 8,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ia-009",
         "number": 9,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "ia-010",
         "number": 10,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "ia-011",
         "number": 11,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "ia-012",
         "number": 12,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "C"
+        ]
       },
       {
         "id": "ia-013",
         "number": 13,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "B",
+          "E"
+        ]
       },
       {
         "id": "ia-014",
         "number": 14,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "E"
+        ]
       },
       {
         "id": "ia-015",
         "number": 15,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "B"
+        ]
       },
       {
         "id": "ia-016",
         "number": 16,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ]
       },
       {
         "id": "ia-017",
         "number": 17,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "B"
+        ]
       },
       {
         "id": "ia-018",
         "number": 18,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ]
       },
       {
         "id": "ia-019",
         "number": 19,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "ia-020",
         "number": 20,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "ia-021",
         "number": 21,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "B",
+          "C"
+        ]
       },
       {
         "id": "ia-022",
         "number": 22,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "B",
+          "C"
+        ]
       },
       {
         "id": "ia-023",
         "number": 23,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ia-024",
         "number": 24,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ia-025",
         "number": 25,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "B",
+          "E"
+        ]
       },
       {
         "id": "ia-026",
         "number": 26,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "ia-027",
         "number": 27,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "ia-028",
         "number": 28,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ia-029",
         "number": 29,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "D"
+        ]
       },
       {
         "id": "ia-030",
         "number": 30,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "B"
+        ]
       },
       {
         "id": "ia-031",
         "number": 31,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "C"
+        ]
       },
       {
         "id": "ia-032",
         "number": 32,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ]
       },
       {
         "id": "ia-033",
         "number": 33,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "C",
+          "D"
+        ]
       },
       {
         "id": "ia-034",
         "number": 34,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "B",
+          "E"
+        ]
       },
       {
         "id": "ia-035",
         "number": 35,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ]
       },
       {
         "id": "ia-036",
         "number": 36,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ]
       },
       {
         "id": "ia-037",
         "number": 37,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "ia-038",
         "number": 38,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "C",
+          "E"
+        ]
       },
       {
         "id": "ia-039",
         "number": 39,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "E"
+        ]
       },
       {
         "id": "ia-040",
         "number": 40,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ia-041",
         "number": 41,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "E"
+        ]
       },
       {
         "id": "ia-042",
         "number": 42,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "C",
+          "E"
+        ]
       },
       {
         "id": "ia-043",
         "number": 43,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ]
       },
       {
         "id": "ia-044",
         "number": 44,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "B",
+          "D"
+        ]
       },
       {
         "id": "ia-045",
         "number": 45,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ia-046",
         "number": 46,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ia-047",
         "number": 47,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ia-048",
         "number": 48,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "E"
+        ]
       },
       {
         "id": "ia-049",
         "number": 49,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ia-050",
         "number": 50,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ia-051",
         "number": 51,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "ia-052",
         "number": 52,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "ia-053",
         "number": 53,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "ia-054",
         "number": 54,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "B",
+          "E"
+        ]
       },
       {
         "id": "ia-055",
         "number": 55,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "B",
+          "C"
+        ]
       },
       {
         "id": "ia-056",
         "number": 56,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ia-057",
         "number": 57,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ia-058",
         "number": 58,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ia-059",
         "number": 59,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "ia-060",
         "number": 60,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ]
       }
     ],
     "ranges": [
@@ -351,252 +629,482 @@ window.BB_QUIZ_INDEX = [
       {
         "id": "cel-061",
         "number": 61,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "C"
+        ]
       },
       {
         "id": "cel-062",
         "number": 62,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "B",
+          "C"
+        ]
       },
       {
         "id": "cel-063",
         "number": 63,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A",
+          "C"
+        ]
       },
       {
         "id": "cel-064",
         "number": 64,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ]
       },
       {
         "id": "cel-065",
         "number": 65,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "cel-066",
         "number": 66,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "cel-067",
         "number": 67,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "cel-068",
         "number": 68,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ]
       },
       {
         "id": "cel-069",
         "number": 69,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "cel-070",
         "number": 70,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "cel-071",
         "number": 71,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "cel-072",
         "number": 72,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "cel-073",
         "number": 73,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "cel-074",
         "number": 74,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "B",
+          "C"
+        ]
       },
       {
         "id": "cel-075",
         "number": 75,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "cel-076",
         "number": 76,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "B"
+        ]
       },
       {
         "id": "cel-077",
         "number": 77,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "B",
+          "D"
+        ]
       },
       {
         "id": "cel-078",
         "number": 78,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ]
       },
       {
         "id": "cel-079",
         "number": 79,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "cel-080",
         "number": 80,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "A",
+          "D"
+        ]
       },
       {
         "id": "cel-081",
         "number": 81,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "cel-082",
         "number": 82,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "cel-083",
         "number": 83,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "cel-084",
         "number": 84,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "A",
+          "B"
+        ]
       },
       {
         "id": "cel-085",
         "number": 85,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "D",
+          "E"
+        ]
       },
       {
         "id": "cel-086",
         "number": 86,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "cel-087",
         "number": 87,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "A",
+          "D"
+        ]
       },
       {
         "id": "cel-088",
         "number": 88,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "cel-089",
         "number": 89,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "A",
+          "B"
+        ]
       },
       {
         "id": "cel-090",
         "number": 90,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "B",
+          "E"
+        ]
       },
       {
         "id": "cel-091",
         "number": 91,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "A",
+          "B"
+        ]
       },
       {
         "id": "cel-092",
         "number": 92,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "A",
+          "E"
+        ]
       },
       {
         "id": "cel-093",
         "number": 93,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ]
       },
       {
         "id": "cel-094",
         "number": 94,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "B",
+          "E"
+        ]
       },
       {
         "id": "cel-095",
         "number": 95,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
       },
       {
         "id": "cel-096",
         "number": 96,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "cel-097",
         "number": 97,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "E"
+        ]
       },
       {
         "id": "cel-098",
         "number": 98,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "C",
+          "D"
+        ]
       },
       {
         "id": "cel-099",
         "number": 99,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "A",
+          "D"
+        ]
       },
       {
         "id": "cel-100",
         "number": 100,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "D",
+          "E"
+        ]
       },
       {
         "id": "cel-101",
         "number": 101,
-        "rangeId": "grile-101-110"
+        "rangeId": "grile-101-110",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "cel-102",
         "number": 102,
-        "rangeId": "grile-101-110"
+        "rangeId": "grile-101-110",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "cel-103",
         "number": 103,
-        "rangeId": "grile-101-110"
+        "rangeId": "grile-101-110",
+        "correct": [
+          "B",
+          "E"
+        ]
       },
       {
         "id": "cel-104",
         "number": 104,
-        "rangeId": "grile-101-110"
+        "rangeId": "grile-101-110",
+        "correct": [
+          "A",
+          "B"
+        ]
       },
       {
         "id": "cel-105",
         "number": 105,
-        "rangeId": "grile-101-110"
+        "rangeId": "grile-101-110",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ]
       },
       {
         "id": "cel-106",
         "number": 106,
-        "rangeId": "grile-101-110"
+        "rangeId": "grile-101-110",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "cel-107",
         "number": 107,
-        "rangeId": "grile-101-110"
+        "rangeId": "grile-101-110",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "cel-108",
         "number": 108,
-        "rangeId": "grile-101-110"
+        "rangeId": "grile-101-110",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "cel-109",
         "number": 109,
-        "rangeId": "grile-101-110"
+        "rangeId": "grile-101-110",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
       },
       {
         "id": "cel-110",
         "number": 110,
-        "rangeId": "grile-101-110"
+        "rangeId": "grile-101-110",
+        "correct": [
+          "D"
+        ]
       }
     ],
     "ranges": [
@@ -637,252 +1145,482 @@ window.BB_QUIZ_INDEX = [
       {
         "id": "sn-051",
         "number": 51,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "C",
+          "D"
+        ]
       },
       {
         "id": "sn-052",
         "number": 52,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "B"
+        ]
       },
       {
         "id": "sn-053",
         "number": 53,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "sn-054",
         "number": 54,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "sn-055",
         "number": 55,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "D",
+          "E"
+        ]
       },
       {
         "id": "sn-056",
         "number": 56,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "sn-057",
         "number": 57,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "sn-058",
         "number": 58,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "sn-059",
         "number": 59,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "E"
+        ]
       },
       {
         "id": "sn-060",
         "number": 60,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ]
       },
       {
         "id": "sn-061",
         "number": 61,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "C",
+          "E"
+        ]
       },
       {
         "id": "sn-062",
         "number": 62,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "sn-063",
         "number": 63,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "sn-064",
         "number": 64,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A",
+          "C"
+        ]
       },
       {
         "id": "sn-065",
         "number": 65,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "sn-066",
         "number": 66,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "D",
+          "E"
+        ]
       },
       {
         "id": "sn-067",
         "number": 67,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "sn-068",
         "number": 68,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "sn-069",
         "number": 69,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
       },
       {
         "id": "sn-070",
         "number": 70,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "sn-071",
         "number": 71,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "A",
+          "E"
+        ]
       },
       {
         "id": "sn-072",
         "number": 72,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "B"
+        ]
       },
       {
         "id": "sn-073",
         "number": 73,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "sn-074",
         "number": 74,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "A",
+          "E"
+        ]
       },
       {
         "id": "sn-075",
         "number": 75,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "A",
+          "C"
+        ]
       },
       {
         "id": "sn-076",
         "number": 76,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "sn-077",
         "number": 77,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "sn-078",
         "number": 78,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "C",
+          "E"
+        ]
       },
       {
         "id": "sn-079",
         "number": 79,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "sn-080",
         "number": 80,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "C",
+          "E"
+        ]
       },
       {
         "id": "sn-081",
         "number": 81,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "sn-082",
         "number": 82,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "sn-083",
         "number": 83,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "sn-084",
         "number": 84,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "sn-085",
         "number": 85,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ]
       },
       {
         "id": "sn-086",
         "number": 86,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "sn-087",
         "number": 87,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "B",
+          "D"
+        ]
       },
       {
         "id": "sn-088",
         "number": 88,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "sn-089",
         "number": 89,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "sn-090",
         "number": 90,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "sn-091",
         "number": 91,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "sn-092",
         "number": 92,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "sn-093",
         "number": 93,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "sn-094",
         "number": 94,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "B",
+          "D"
+        ]
       },
       {
         "id": "sn-095",
         "number": 95,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "D"
+        ]
       },
       {
         "id": "sn-096",
         "number": 96,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "A",
+          "B"
+        ]
       },
       {
         "id": "sn-097",
         "number": 97,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "B",
+          "D"
+        ]
       },
       {
         "id": "sn-098",
         "number": 98,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "A",
+          "B"
+        ]
       },
       {
         "id": "sn-099",
         "number": 99,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "B",
+          "D"
+        ]
       },
       {
         "id": "sn-100",
         "number": 100,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "C"
+        ]
       }
     ],
     "ranges": [
@@ -923,502 +1661,959 @@ window.BB_QUIZ_INDEX = [
       {
         "id": "os-001",
         "number": 1,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "os-002",
         "number": 2,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ]
       },
       {
         "id": "os-003",
         "number": 3,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "os-004",
         "number": 4,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A"
+        ]
       },
       {
         "id": "os-005",
         "number": 5,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "os-006",
         "number": 6,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "os-007",
         "number": 7,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "os-008",
         "number": 8,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "os-009",
         "number": 9,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "os-010",
         "number": 10,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "D",
+          "E"
+        ]
       },
       {
         "id": "os-011",
         "number": 11,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "os-012",
         "number": 12,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "os-013",
         "number": 13,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "os-014",
         "number": 14,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "os-015",
         "number": 15,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ]
       },
       {
         "id": "os-016",
         "number": 16,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "os-017",
         "number": 17,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "D"
+        ]
       },
       {
         "id": "os-018",
         "number": 18,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "os-019",
         "number": 19,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "os-020",
         "number": 20,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "B",
+          "E"
+        ]
       },
       {
         "id": "os-021",
         "number": 21,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "C"
+        ]
       },
       {
         "id": "os-022",
         "number": 22,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "D"
+        ]
       },
       {
         "id": "os-023",
         "number": 23,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "B",
+          "C"
+        ]
       },
       {
         "id": "os-024",
         "number": 24,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "D"
+        ]
       },
       {
         "id": "os-025",
         "number": 25,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "os-026",
         "number": 26,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "os-027",
         "number": 27,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "C",
+          "D"
+        ]
       },
       {
         "id": "os-028",
         "number": 28,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ]
       },
       {
         "id": "os-029",
         "number": 29,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "os-030",
         "number": 30,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "os-031",
         "number": 31,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "os-032",
         "number": 32,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "os-033",
         "number": 33,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "os-034",
         "number": 34,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "E"
+        ]
       },
       {
         "id": "os-035",
         "number": 35,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "B"
+        ]
       },
       {
         "id": "os-036",
         "number": 36,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "os-037",
         "number": 37,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "B",
+          "D"
+        ]
       },
       {
         "id": "os-038",
         "number": 38,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "os-039",
         "number": 39,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "B"
+        ]
       },
       {
         "id": "os-040",
         "number": 40,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ]
       },
       {
         "id": "os-041",
         "number": 41,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "B",
+          "D"
+        ]
       },
       {
         "id": "os-042",
         "number": 42,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "os-043",
         "number": 43,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "os-044",
         "number": 44,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "B",
+          "D"
+        ]
       },
       {
         "id": "os-045",
         "number": 45,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ]
       },
       {
         "id": "os-046",
         "number": 46,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "E"
+        ]
       },
       {
         "id": "os-047",
         "number": 47,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ]
       },
       {
         "id": "os-048",
         "number": 48,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "E"
+        ]
       },
       {
         "id": "os-049",
         "number": 49,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ]
       },
       {
         "id": "os-050",
         "number": 50,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "B",
+          "C"
+        ]
       },
       {
         "id": "os-051",
         "number": 51,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "os-052",
         "number": 52,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "os-053",
         "number": 53,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "os-054",
         "number": 54,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "B",
+          "D"
+        ]
       },
       {
         "id": "os-055",
         "number": 55,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "os-056",
         "number": 56,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "os-057",
         "number": 57,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "B"
+        ]
       },
       {
         "id": "os-058",
         "number": 58,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "os-059",
         "number": 59,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "B",
+          "D"
+        ]
       },
       {
         "id": "os-060",
         "number": 60,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "C",
+          "E"
+        ]
       },
       {
         "id": "os-061",
         "number": 61,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "C",
+          "E"
+        ]
       },
       {
         "id": "os-062",
         "number": 62,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ]
       },
       {
         "id": "os-063",
         "number": 63,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A"
+        ]
       },
       {
         "id": "os-064",
         "number": 64,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "C"
+        ]
       },
       {
         "id": "os-065",
         "number": 65,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "os-066",
         "number": 66,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "os-067",
         "number": 67,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "C",
+          "D"
+        ]
       },
       {
         "id": "os-068",
         "number": 68,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "os-069",
         "number": 69,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "C",
+          "D"
+        ]
       },
       {
         "id": "os-070",
         "number": 70,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "C",
+          "D"
+        ]
       },
       {
         "id": "os-071",
         "number": 71,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ]
       },
       {
         "id": "os-072",
         "number": 72,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "C",
+          "D"
+        ]
       },
       {
         "id": "os-073",
         "number": 73,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "os-074",
         "number": 74,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "B",
+          "E"
+        ]
       },
       {
         "id": "os-075",
         "number": 75,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "C",
+          "E"
+        ]
       },
       {
         "id": "os-076",
         "number": 76,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "C",
+          "E"
+        ]
       },
       {
         "id": "os-077",
         "number": 77,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "B",
+          "D"
+        ]
       },
       {
         "id": "os-078",
         "number": 78,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "C"
+        ]
       },
       {
         "id": "os-079",
         "number": 79,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "B",
+          "C"
+        ]
       },
       {
         "id": "os-080",
         "number": 80,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "C",
+          "E"
+        ]
       },
       {
         "id": "os-081",
         "number": 81,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "B"
+        ]
       },
       {
         "id": "os-082",
         "number": 82,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "D"
+        ]
       },
       {
         "id": "os-083",
         "number": 83,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "os-084",
         "number": 84,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "B",
+          "D"
+        ]
       },
       {
         "id": "os-085",
         "number": 85,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "B",
+          "E"
+        ]
       },
       {
         "id": "os-086",
         "number": 86,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "os-087",
         "number": 87,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "os-088",
         "number": 88,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "os-089",
         "number": 89,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "os-090",
         "number": 90,
-        "rangeId": "grile-81-90"
+        "rangeId": "grile-81-90",
+        "correct": [
+          "C",
+          "E"
+        ]
       },
       {
         "id": "os-091",
         "number": 91,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "A",
+          "E"
+        ]
       },
       {
         "id": "os-092",
         "number": 92,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
       },
       {
         "id": "os-093",
         "number": 93,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "os-094",
         "number": 94,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "os-095",
         "number": 95,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "os-096",
         "number": 96,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
       },
       {
         "id": "os-097",
         "number": 97,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "A"
+        ]
       },
       {
         "id": "os-098",
         "number": 98,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "os-099",
         "number": 99,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "B",
+          "E"
+        ]
       },
       {
         "id": "os-100",
         "number": 100,
-        "rangeId": "grile-91-100"
+        "rangeId": "grile-91-100",
+        "correct": [
+          "A",
+          "C"
+        ]
       }
     ],
     "ranges": [
@@ -1484,402 +2679,777 @@ window.BB_QUIZ_INDEX = [
       {
         "id": "ur-001",
         "number": 1,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ur-002",
         "number": 2,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ur-003",
         "number": 3,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "C",
+          "E"
+        ]
       },
       {
         "id": "ur-004",
         "number": 4,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "ur-005",
         "number": 5,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "B",
+          "C"
+        ]
       },
       {
         "id": "ur-006",
         "number": 6,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "C",
+          "E"
+        ]
       },
       {
         "id": "ur-007",
         "number": 7,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "B"
+        ]
       },
       {
         "id": "ur-008",
         "number": 8,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ur-009",
         "number": 9,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "E"
+        ]
       },
       {
         "id": "ur-010",
         "number": 10,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ur-011",
         "number": 11,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "ur-012",
         "number": 12,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "ur-013",
         "number": 13,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "B"
+        ]
       },
       {
         "id": "ur-014",
         "number": 14,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "ur-015",
         "number": 15,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
       },
       {
         "id": "ur-016",
         "number": 16,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
       },
       {
         "id": "ur-017",
         "number": 17,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "D"
+        ]
       },
       {
         "id": "ur-018",
         "number": 18,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "B"
+        ]
       },
       {
         "id": "ur-019",
         "number": 19,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ur-020",
         "number": 20,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "ur-021",
         "number": 21,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ur-022",
         "number": 22,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "ur-023",
         "number": 23,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "E"
+        ]
       },
       {
         "id": "ur-024",
         "number": 24,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "ur-025",
         "number": 25,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "ur-026",
         "number": 26,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "C",
+          "E"
+        ]
       },
       {
         "id": "ur-027",
         "number": 27,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ur-028",
         "number": 28,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "B",
+          "E"
+        ]
       },
       {
         "id": "ur-029",
         "number": 29,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "B"
+        ]
       },
       {
         "id": "ur-030",
         "number": 30,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ur-031",
         "number": 31,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "C"
+        ]
       },
       {
         "id": "ur-032",
         "number": 32,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "ur-033",
         "number": 33,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "B"
+        ]
       },
       {
         "id": "ur-034",
         "number": 34,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ur-035",
         "number": 35,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ur-036",
         "number": 36,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "B",
+          "D"
+        ]
       },
       {
         "id": "ur-037",
         "number": 37,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "B"
+        ]
       },
       {
         "id": "ur-038",
         "number": 38,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ]
       },
       {
         "id": "ur-039",
         "number": 39,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "C"
+        ]
       },
       {
         "id": "ur-040",
         "number": 40,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "C",
+          "D"
+        ]
       },
       {
         "id": "ur-041",
         "number": 41,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "ur-042",
         "number": 42,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "ur-043",
         "number": 43,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ]
       },
       {
         "id": "ur-044",
         "number": 44,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
       },
       {
         "id": "ur-045",
         "number": 45,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "B",
+          "D"
+        ]
       },
       {
         "id": "ur-046",
         "number": 46,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "C",
+          "D"
+        ]
       },
       {
         "id": "ur-047",
         "number": 47,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "ur-048",
         "number": 48,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "ur-049",
         "number": 49,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "ur-050",
         "number": 50,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "B",
+          "D"
+        ]
       },
       {
         "id": "ur-051",
         "number": 51,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ]
       },
       {
         "id": "ur-052",
         "number": 52,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "C",
+          "E"
+        ]
       },
       {
         "id": "ur-053",
         "number": 53,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "B"
+        ]
       },
       {
         "id": "ur-054",
         "number": 54,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ur-055",
         "number": 55,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ur-056",
         "number": 56,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ]
       },
       {
         "id": "ur-057",
         "number": 57,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ur-058",
         "number": 58,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "B",
+          "D"
+        ]
       },
       {
         "id": "ur-059",
         "number": 59,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
       },
       {
         "id": "ur-060",
         "number": 60,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "B",
+          "C"
+        ]
       },
       {
         "id": "ur-061",
         "number": 61,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A",
+          "D"
+        ]
       },
       {
         "id": "ur-062",
         "number": 62,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "ur-063",
         "number": 63,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ]
       },
       {
         "id": "ur-064",
         "number": 64,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "ur-065",
         "number": 65,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A",
+          "B"
+        ]
       },
       {
         "id": "ur-066",
         "number": 66,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ur-067",
         "number": 67,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ]
       },
       {
         "id": "ur-068",
         "number": 68,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "ur-069",
         "number": 69,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "ur-070",
         "number": 70,
-        "rangeId": "grile-61-70"
+        "rangeId": "grile-61-70",
+        "correct": [
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ur-071",
         "number": 71,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "ur-072",
         "number": 72,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ur-073",
         "number": 73,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "B",
+          "E"
+        ]
       },
       {
         "id": "ur-074",
         "number": 74,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "A",
+          "B"
+        ]
       },
       {
         "id": "ur-075",
         "number": 75,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ur-076",
         "number": 76,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "ur-077",
         "number": 77,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "B",
+          "C"
+        ]
       },
       {
         "id": "ur-078",
         "number": 78,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "C",
+          "E"
+        ]
       },
       {
         "id": "ur-079",
         "number": 79,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "A",
+          "C"
+        ]
       },
       {
         "id": "ur-080",
         "number": 80,
-        "rangeId": "grile-71-80"
+        "rangeId": "grile-71-80",
+        "correct": [
+          "B",
+          "C"
+        ]
       }
     ],
     "ranges": [
@@ -1935,347 +3505,660 @@ window.BB_QUIZ_INDEX = [
       {
         "id": "rm-001",
         "number": 1,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ]
       },
       {
         "id": "rm-002",
         "number": 2,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "rm-003",
         "number": 3,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
       },
       {
         "id": "rm-004",
         "number": 4,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ]
       },
       {
         "id": "rm-005",
         "number": 5,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "E"
+        ]
       },
       {
         "id": "rm-006",
         "number": 6,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "rm-007",
         "number": 7,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "rm-008",
         "number": 8,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "rm-009",
         "number": 9,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "rm-010",
         "number": 10,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "rm-011",
         "number": 11,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "rm-012",
         "number": 12,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "B"
+        ]
       },
       {
         "id": "rm-013",
         "number": 13,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "rm-014",
         "number": 14,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "D"
+        ]
       },
       {
         "id": "rm-015",
         "number": 15,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "rm-016",
         "number": 16,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "B",
+          "D"
+        ]
       },
       {
         "id": "rm-017",
         "number": 17,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "C"
+        ]
       },
       {
         "id": "rm-018",
         "number": 18,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "B",
+          "C"
+        ]
       },
       {
         "id": "rm-019",
         "number": 19,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "D"
+        ]
       },
       {
         "id": "rm-020",
         "number": 20,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
       },
       {
         "id": "rm-021",
         "number": 21,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "rm-022",
         "number": 22,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "E"
+        ]
       },
       {
         "id": "rm-023",
         "number": 23,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "D"
+        ]
       },
       {
         "id": "rm-024",
         "number": 24,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "D"
+        ]
       },
       {
         "id": "rm-025",
         "number": 25,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "D",
+          "E"
+        ]
       },
       {
         "id": "rm-026",
         "number": 26,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "D"
+        ]
       },
       {
         "id": "rm-027",
         "number": 27,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "rm-028",
         "number": 28,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "C"
+        ]
       },
       {
         "id": "rm-029",
         "number": 29,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A"
+        ]
       },
       {
         "id": "rm-030",
         "number": 30,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "B"
+        ]
       },
       {
         "id": "rm-031",
         "number": 31,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
       },
       {
         "id": "rm-032",
         "number": 32,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "rm-033",
         "number": 33,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "C",
+          "D"
+        ]
       },
       {
         "id": "rm-034",
         "number": 34,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "rm-035",
         "number": 35,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "rm-036",
         "number": 36,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "rm-037",
         "number": 37,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ]
       },
       {
         "id": "rm-038",
         "number": 38,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "rm-039",
         "number": 39,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "rm-040",
         "number": 40,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "B"
+        ]
       },
       {
         "id": "rm-041",
         "number": 41,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "D"
+        ]
       },
       {
         "id": "rm-042",
         "number": 42,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "B",
+          "D"
+        ]
       },
       {
         "id": "rm-043",
         "number": 43,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "B",
+          "E"
+        ]
       },
       {
         "id": "rm-044",
         "number": 44,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "C",
+          "E"
+        ]
       },
       {
         "id": "rm-045",
         "number": 45,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "rm-046",
         "number": 46,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "rm-047",
         "number": 47,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "B",
+          "E"
+        ]
       },
       {
         "id": "rm-048",
         "number": 48,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "C",
+          "E"
+        ]
       },
       {
         "id": "rm-049",
         "number": 49,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "rm-050",
         "number": 50,
-        "rangeId": "grile-41-50"
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "rm-051",
         "number": 51,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "D"
+        ]
       },
       {
         "id": "rm-052",
         "number": 52,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "rm-053",
         "number": 53,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "rm-054",
         "number": 54,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "C",
+          "E"
+        ]
       },
       {
         "id": "rm-055",
         "number": 55,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ]
       },
       {
         "id": "rm-056",
         "number": 56,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "C"
+        ]
       },
       {
         "id": "rm-057",
         "number": 57,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
       },
       {
         "id": "rm-058",
         "number": 58,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "C",
+          "E"
+        ]
       },
       {
         "id": "rm-059",
         "number": 59,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "rm-060",
         "number": 60,
-        "rangeId": "grile-51-60"
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "E"
+        ]
       },
       {
         "id": "rm-061",
         "number": 61,
-        "rangeId": "grile-61-69"
+        "rangeId": "grile-61-69",
+        "correct": [
+          "A"
+        ]
       },
       {
         "id": "rm-062",
         "number": 62,
-        "rangeId": "grile-61-69"
+        "rangeId": "grile-61-69",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "rm-063",
         "number": 63,
-        "rangeId": "grile-61-69"
+        "rangeId": "grile-61-69",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "rm-064",
         "number": 64,
-        "rangeId": "grile-61-69"
+        "rangeId": "grile-61-69",
+        "correct": [
+          "B",
+          "C"
+        ]
       },
       {
         "id": "rm-065",
         "number": 65,
-        "rangeId": "grile-61-69"
+        "rangeId": "grile-61-69",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "rm-066",
         "number": 66,
-        "rangeId": "grile-61-69"
+        "rangeId": "grile-61-69",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "rm-067",
         "number": 67,
-        "rangeId": "grile-61-69"
+        "rangeId": "grile-61-69",
+        "correct": [
+          "B"
+        ]
       },
       {
         "id": "rm-068",
         "number": 68,
-        "rangeId": "grile-61-69"
+        "rangeId": "grile-61-69",
+        "correct": [
+          "C",
+          "D"
+        ]
       },
       {
         "id": "rm-069",
         "number": 69,
-        "rangeId": "grile-61-69"
+        "rangeId": "grile-61-69",
+        "correct": [
+          "A",
+          "B"
+        ]
       }
     ],
     "ranges": [
@@ -2326,212 +4209,419 @@ window.BB_QUIZ_INDEX = [
       {
         "id": "rf-001",
         "number": 1,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "B"
+        ]
       },
       {
         "id": "rf-002",
         "number": 2,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "rf-003",
         "number": 3,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "rf-004",
         "number": 4,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "rf-005",
         "number": 5,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "C"
+        ]
       },
       {
         "id": "rf-006",
         "number": 6,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "rf-007",
         "number": 7,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "B",
+          "E"
+        ]
       },
       {
         "id": "rf-008",
         "number": 8,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "rf-009",
         "number": 9,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "rf-010",
         "number": 10,
-        "rangeId": "grile-1-10"
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "D"
+        ]
       },
       {
         "id": "rf-011",
         "number": 11,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "C"
+        ]
       },
       {
         "id": "rf-012",
         "number": 12,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "B"
+        ]
       },
       {
         "id": "rf-013",
         "number": 13,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "rf-014",
         "number": 14,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "D"
+        ]
       },
       {
         "id": "rf-015",
         "number": 15,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
       },
       {
         "id": "rf-016",
         "number": 16,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ]
       },
       {
         "id": "rf-017",
         "number": 17,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "rf-018",
         "number": 18,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "rf-019",
         "number": 19,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "B",
+          "C"
+        ]
       },
       {
         "id": "rf-020",
         "number": 20,
-        "rangeId": "grile-11-20"
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "C"
+        ]
       },
       {
         "id": "rf-021",
         "number": 21,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "C",
+          "D"
+        ]
       },
       {
         "id": "rf-022",
         "number": 22,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "rf-023",
         "number": 23,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "rf-024",
         "number": 24,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "rf-025",
         "number": 25,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "rf-026",
         "number": 26,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "rf-027",
         "number": 27,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ]
       },
       {
         "id": "rf-028",
         "number": 28,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "B",
+          "C"
+        ]
       },
       {
         "id": "rf-029",
         "number": 29,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "B",
+          "C"
+        ]
       },
       {
         "id": "rf-030",
         "number": 30,
-        "rangeId": "grile-21-30"
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ]
       },
       {
         "id": "rf-031",
         "number": 31,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "rf-032",
         "number": 32,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "rf-033",
         "number": 33,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "rf-034",
         "number": 34,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
       },
       {
         "id": "rf-035",
         "number": 35,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ]
       },
       {
         "id": "rf-036",
         "number": 36,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "rf-037",
         "number": 37,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "rf-038",
         "number": 38,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
       },
       {
         "id": "rf-039",
         "number": 39,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ]
       },
       {
         "id": "rf-040",
         "number": 40,
-        "rangeId": "grile-31-40"
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
       },
       {
         "id": "rf-041",
         "number": 41,
-        "rangeId": "grile-41-42"
+        "rangeId": "grile-41-42",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
       },
       {
         "id": "rf-042",
         "number": 42,
-        "rangeId": "grile-41-42"
+        "rangeId": "grile-41-42",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
       }
     ],
     "ranges": [

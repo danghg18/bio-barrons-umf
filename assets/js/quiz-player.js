@@ -54,13 +54,15 @@
       if (!parsed || parsed.version !== quiz.version || !parsed.questions || typeof parsed.questions !== "object" || Array.isArray(parsed.questions)) {
         return blankState();
       }
-      var knownIds = new Set(quiz.questions.map(function (question) { return question.id; }));
+      var knownQuestions = new Map(quiz.questions.map(function (question) { return [question.id, question]; }));
+      // Derive current scores from the current key without creating cloud edits
+      // or changing the historical scores of earlier attempts.
       Object.keys(parsed.questions).forEach(function (id) {
-        if (!knownIds.has(id) || !parsed.questions[id] || typeof parsed.questions[id] !== "object") delete parsed.questions[id];
+        if (!knownQuestions.has(id) || !parsed.questions[id] || typeof parsed.questions[id] !== "object") delete parsed.questions[id];
         else {
           parsed.questions[id].selected = normalizeLetters(parsed.questions[id].selected);
           parsed.questions[id].verified = !!parsed.questions[id].verified;
-          parsed.questions[id].correct = !!parsed.questions[id].correct;
+          parsed.questions[id].correct = parsed.questions[id].verified && sameLetters(parsed.questions[id].selected, knownQuestions.get(id).correct);
         }
       });
       return parsed;

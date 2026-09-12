@@ -1,5 +1,6 @@
 /* Transcriere din PDF-ul furnizat, grilele 1–100, paginile tipărite 90–103.
- * Baremul utilizatorului este autoritatea pentru punctaj; notele semnalează neconcordanțele.
+ * Barem verificat la pagina tipărită 104; grila 3 = CDE, confirmat de utilizator.
+ * Explicațiile disting cerința, convențiile manualului și neconcordanțele sursei.
  * La grila 100, ultima afirmație fără literă tipărită este varianta E.
  */
 window.BB_QUIZ = {
@@ -139,6 +140,7 @@ window.BB_QUIZ = {
       "prompt": "Afirmațiile următoare sunt corecte:",
       "correct": [
         "C",
+        "D",
         "E"
       ],
       "options": [
@@ -159,12 +161,12 @@ window.BB_QUIZ = {
         {
           "letter": "D",
           "text": "discurile Merkel se află în toată pielea și detectează stimulii tactili",
-          "why": "Discurile Merkel detectează atingerea și presiunea ușoară, dar distribuția lor nu este uniformă în toată pielea; formularea generalizatoare nu este acceptată de barem."
+          "why": "Discurile Merkel sunt receptori cutanați pentru atingere și presiune ușoară. Varianta este corectă: prezența lor în piele nu implică o distribuție uniformă, iar enunțul nu afirmă uniformitatea distribuției."
         },
         {
           "letter": "E",
           "text": "canalele semicirculare sunt dispuse la 120 de grade unul față de celălalt și sunt conectate cu utricula",
-          "why": "Baremul furnizat acceptă E. Există însă o neconcordanță în text: canalele semicirculare sunt orientate în planuri aproximativ perpendiculare, nu la 120°. Legătura lor cu utricula este corectă."
+          "why": "Varianta reproduce descrierea din manual: canale dispuse la 120° și conectate cu utricula. Aceasta este explicația acceptării ei în acest test. Precizare anatomică: planurile celor trei canale sunt aproximativ perpendiculare; valoarea de 120° aparține sursei și nu reprezintă descrierea anatomică standard."
         }
       ]
     },
@@ -199,7 +201,7 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "corneea este importantă pentru focalizarea luminii pe retină",
-          "why": "Baremul furnizat exclude E, deși afirmația este corectă din punct de vedere anatomic: corneea refractă lumina și contribuie la focalizarea ei pe retină. Punctajul urmează baremul A."
+          "why": "Cerința se referă la structura ochiului. Focalizarea luminii este o funcție a corneei, deci varianta descrie fiziologia, nu structura cerută. Corneea contribuie într-adevăr la focalizarea luminii pe retină; nu aceasta este greșeala."
         }
       ]
     },
@@ -226,7 +228,7 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "sunt prezente în fovea centrală",
-          "why": "Baremul furnizat exclude C, deși fovea centrală conține conuri și asigură acuitatea vizuală maximă. Punctajul păstrează combinația ADE."
+          "why": "Conurile sunt prezente în foveea centrală, unde sunt concentrate și permit vederea detaliilor. Afirmația este transcrisă corect din PDF, dar C lipsește și din baremul tipărit. Este o neconcordanță a sursei: cerința nu oferă un motiv pentru a exclude această localizare corectă."
         },
         {
           "letter": "D",
@@ -234,7 +236,8 @@ window.BB_QUIZ = {
         },
         {
           "letter": "E",
-          "text": "conțin un pigment a cărui modificare generează impulsuri nervoase la nivelul neuronilor bipolari"
+          "text": "conțin un pigment a cărui modificare generează impulsuri nervoase la nivelul neuronilor bipolari",
+          "why": "Schimbarea pigmentului vizual produce un semnal în fotoreceptor, transmis celulelor bipolare și apoi celor ganglionare. Formularea din manual folosește larg termenul „impulsuri”; fiziologic, celulele bipolare transmit în principal potențiale gradate, iar potențialele de acțiune ale căii optice apar în celulele ganglionare."
         }
       ]
     },
@@ -291,7 +294,7 @@ window.BB_QUIZ = {
         },
         {
           "letter": "B",
-          "text": "doar cu celulele cu bastonaș din foveea centrală",
+          "text": "doar cu celulele cu bastonaș din fovea centrală",
           "why": "Neuronii bipolari se conectează cu ambele tipuri de fotoreceptori; foveea centrală conține conuri, nu bastonașe."
         },
         {
@@ -322,7 +325,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "sunt formați din fibre musculare netede dispuse într-un singur strat",
-          "why": "Irisul are două dispoziții funcționale ale fibrelor musculare: circulare, constrictoare, și radiare, dilatatoare."
+          "why": "Mușchii netezi ai irisului au două orientări: fibre circulare în sfincterul pupilei și fibre radiare în dilatator. Descrierea lor ca un singur strat nu surprinde această organizare."
         },
         {
           "letter": "B",
@@ -484,7 +487,7 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "cristalinul participă la absorbția luminii",
-          "why": "Rolul optic principal al cristalinului este refracția și focalizarea luminii. Absorbția luminii care previne reflexiile interne este asociată straturilor pigmentate."
+          "why": "Rolul optic principal al cristalinului este refracția și focalizarea luminii. Absorbția luminii care previne reflexiile interne este asociată straturilor pigmentate. Aceasta este distincția funcțională folosită de manual; nu înseamnă că cristalinul nu absoarbe deloc radiație luminoasă."
         }
       ]
     },
@@ -632,7 +635,7 @@ window.BB_QUIZ = {
       "id": "os-017",
       "number": 17,
       "sourceNumber": 17,
-      "prompt": "Selectați afirmațiile corecte referitoare la neuronii retinei:",
+      "prompt": "Selectați afirmațiile corecte referitoare la neuronii retinieni:",
       "correct": [
         "A",
         "D"
@@ -682,7 +685,7 @@ window.BB_QUIZ = {
         {
           "letter": "B",
           "text": "celulele cu conuri sunt mai numeroase la nivelul foveei centrale",
-          "why": "Baremul furnizat exclude B. Totuși, foveea centrală are o densitate mare de conuri, astfel că formularea poate fi citită ca adevărată. Punctajul păstrează CDE."
+          "why": "Enunțul cere afirmații despre fiziologia vederii. Distribuția conurilor în foveea centrală este un aspect de anatomie, nu o funcție vizuală. Conurile sunt într-adevăr concentrate aici; varianta nu se selectează deoarece nu răspunde cerinței."
         },
         {
           "letter": "C",
@@ -1009,7 +1012,7 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "nervul olfactiv are originea aparentă la nivelul emisferelor cerebrale",
-          "why": "Baremul furnizat exclude E. Formularea este prea generală: originea aparentă este descrisă la nivelul bulbului olfactiv, pe fața inferioară a lobului frontal. Punctajul păstrează CD."
+          "why": "Originea aparentă a nervului olfactiv este la nivelul bulbului olfactiv, aflat pe fața inferioară a lobului frontal. Aceasta este localizarea precisă de reținut. Varianta spune doar „emisferelor cerebrale”, fără să precizeze bulbul; formularea este imprecisă, dar nu afirmă o origine corticală. Excluderea ei din barem nu trebuie justificată prin atribuirea unei afirmații pe care nu o conține."
         }
       ]
     },
@@ -1097,7 +1100,8 @@ window.BB_QUIZ = {
       "options": [
         {
           "letter": "A",
-          "text": "prezintă o parte proteică diferită la celulele cu conuri și cele cu bastonașe"
+          "text": "prezintă o parte proteică diferită la celulele cu conuri și cele cu bastonașe",
+          "why": "Manualul folosește aici „rodopsină” pentru pigmentul vizual al ambelor tipuri de fotoreceptori și urmărește diferența dintre opsine. În terminologia fiziologică strictă, rodopsina este pigmentul bastonașelor, iar conurile au pigmenți proprii, cu alte opsine."
         },
         {
           "letter": "B",
@@ -1114,7 +1118,8 @@ window.BB_QUIZ = {
         },
         {
           "letter": "E",
-          "text": "modificările ei generează impulsuri nervoase ce se transmit neuronilor bipolari"
+          "text": "modificările ei generează impulsuri nervoase ce se transmit neuronilor bipolari",
+          "why": "Modificarea pigmentului inițiază semnalul transmis de fotoreceptori către celulele bipolare. „Impulsuri” este folosit aici în sensul larg din manual; celulele bipolare funcționează în principal cu potențiale gradate."
         }
       ]
     },
@@ -1132,7 +1137,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "canalele semicirculare sunt perpendiculare unul pe celălalt",
-          "why": "Baremul furnizat exclude A, în acord cu formularea de 120° din lecție. Anatomic, canalele sunt descrise în planuri aproximativ perpendiculare; aceasta este o neconcordanță a materialului, iar punctajul păstrează BCD."
+          "why": "Manualul utilizat de test descrie canalele la 120°, astfel că varianta „perpendiculare” nu este răspunsul urmărit aici. Precizare anatomică: planurile canalelor sunt aproximativ perpendiculare. Diferența provine din sursă, nu dintr-o transcriere greșită a variantei A."
         },
         {
           "letter": "B",
@@ -1286,12 +1291,12 @@ window.BB_QUIZ = {
         {
           "letter": "D",
           "text": "celulele cu bastonașe se găsesc în număr mare la periferia retinei",
-          "why": "Baremul furnizat exclude D, deși afirmația apare ca adevărată și în lecție. Punctajul păstrează numai B."
+          "why": "Întrebarea cere fiziologia vederii. Localizarea bastonașelor la periferia retinei descrie anatomia; ea este adevărată, dar nu răspunde cerinței funcționale."
         },
         {
           "letter": "E",
           "text": "în strabism apar două imagini în loc de una singură",
-          "why": "Baremul furnizat exclude E. Strabismul poate produce vedere dublă, așa cum arată și lecția, deși diplopia nu apare în toate cazurile. Punctajul păstrează numai B."
+          "why": "Strabismul este o tulburare a coordonării ochilor. Varianta descrie o situație patologică, nu fiziologia normală a vederii cerută aici. Vederea binoculară normală formează o singură imagine; strabismul poate produce vedere dublă."
         }
       ]
     },
@@ -1343,7 +1348,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "în urechea medie se găsește un lanț articulat de 3 oscioare: ciocanul, scărița și nicovala",
-          "why": "Ordinea de transmitere este ciocan → nicovală → scăriță. Enumerarea din variantă nu respectă această ordine, deși numește cele trei oscioare; baremul o exclude."
+          "why": "Legăturile lanțului sunt ciocan–nicovală–scăriță: nicovala este interpusă între celelalte două oscioare. Varianta le enumeră în ordinea ciocan–scăriță–nicovală. Aceasta poate explica excluderea dacă se urmărește succesiunea articulațiilor; ca simplă enumerare a celor trei oase, formularea rămâne ambiguă."
         },
         {
           "letter": "B",
@@ -1361,7 +1366,7 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "vibrațiile timpanului se transmit lanțului de 3 oscioare",
-          "why": "Baremul furnizat exclude E, deși afirmația este corectă și este descrisă în lecție. Punctajul rămâne BD."
+          "why": "Transmiterea vibrațiilor de la timpan la oscioare este o funcție a urechii. Enunțul cere caracteristici morfologice, adică de structură, astfel că această afirmație funcțională nu se selectează."
         }
       ]
     },
@@ -1913,7 +1918,7 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "discurile Merckel detectează vibrațiile ușoare",
-          "why": "Discurile Merkel detectează atingerea și presiunea susținută; vibrațiile ușoare sunt asociate corpusculilor Meissner."
+          "why": "În distincția folosită de manual, discurile Merkel sunt asociate stimulilor tactili, iar presiunile și vibrațiile ușoare corpusculilor Meissner. Varianta atribuie discurilor Merkel rolul urmărit aici pentru Meissner."
         },
         {
           "letter": "D",
@@ -1983,7 +1988,7 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "la baza mugurilor gustativi se găsesc papilele linguale",
-          "why": "Relația este inversată: papilele linguale conțin mugurii gustativi în epiteliul lor."
+          "why": "Papilele linguale conțin în epiteliul lor mugurii gustativi; figura din manual îi arată la baza papilelor. Varianta inversează relația, plasând papilele la baza mugurilor."
         },
         {
           "letter": "D",
@@ -2086,7 +2091,7 @@ window.BB_QUIZ = {
         {
           "letter": "B",
           "text": "corpusculii Meissner detectează stimuli tactili",
-          "why": "Baremul furnizat exclude B, deși corpusculii Meissner sunt mecanoreceptori pentru atingere fină și vibrații ușoare. Punctajul păstrează ADE."
+          "why": "Testul urmărește asocierea din manual: Merkel — stimuli tactili; Meissner — presiuni și vibrații ușoare. Aceasta explică excluderea lui B în schema testului. În sens fiziologic larg, Meissner sunt însă receptori tactili pentru atingerea fină; nu trebuie învățat că nu detectează atingerea."
         },
         {
           "letter": "C",
@@ -2121,12 +2126,12 @@ window.BB_QUIZ = {
         {
           "letter": "B",
           "text": "între labirintul osos și cel membranos se află un lichid asemănător lichidului interstițial",
-          "why": "Baremul selectează B ca falsă deoarece lecția compară perilimfa cu lichidul cefalorahidian. Totuși, perilimfa are și o compoziție apropiată de lichidul extracelular; comparațiile nu sunt exclusive. Punctajul păstrează BD."
+          "why": "Lichidul dintre labirintul osos și cel membranos este perilimfa, comparată în manual cu lichidul cefalorahidian. Grila urmărește această asociere și selectează B ca falsă. Precizare: fiziologic, perilimfa seamănă și cu lichidul extracelular, inclusiv cel interstițial; comparația din variantă nu este falsă în sens biologic general."
         },
         {
           "letter": "C",
           "text": "utricula și sacula comunică una cu cealaltă printr-un canal subțire",
-          "why": "Afirmația este acceptată ca adevărată în schema lecției, deci nu se bifează când se cer enunțurile false."
+          "why": "Utricula și sacula sunt conectate prin ductele sistemului endolimfatic. Afirmația despre comunicarea lor este adevărată, deci nu se selectează când se cer enunțurile false."
         },
         {
           "letter": "D",
@@ -2204,7 +2209,7 @@ window.BB_QUIZ = {
         {
           "letter": "D",
           "text": "TNL sunt localizate în vecinătatea discurilor Merkel",
-          "why": "Terminațiile nervoase libere pot fi prezente în regiunile superficiale ale pielii, în vecinătatea complexelor Merkel; baremul consideră afirmația adevărată."
+          "why": "TNL înseamnă terminații nervoase libere. Ele ajung și în epiderm, unde se găsesc complexele Merkel; cele două tipuri de terminații pot fi învecinate. Afirmația nu este una dintre localizările false cerute."
         },
         {
           "letter": "E",
@@ -2275,7 +2280,7 @@ window.BB_QUIZ = {
         {
           "letter": "D",
           "text": "umoarea vitroasă conține o substanță apoasă",
-          "why": "Umoarea vitroasă este un gel transparent; se deosebește de umoarea apoasă, lichidul compartimentului anterior."
+          "why": "În descrierea compartimentelor ochiului, umoarea vitroasă este substanța gelatinoasă din compartimentul posterior; lichidul numit umoare apoasă umple compartimentul anterior. Grila urmărește distincția gelatinos–apos. Vitrosul conține multă apă, deci explicația nu înseamnă că ar fi lipsit de apă."
         },
         {
           "letter": "E",
@@ -2385,7 +2390,7 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "receptorii olfactivi - mucoasa nazală",
-          "why": "Baremul furnizat exclude E, deși asocierea generală este adevărată. Localizarea precisă este mucoasa porțiunii superioare a cavității nazale; punctajul păstrează BCD."
+          "why": "Receptorii olfactivi se află în mucoasa olfactivă din porțiunea superioară a cavității nazale. Asocierea cu mucoasa nazală este corectă ca localizare generală; varianta nu afirmă că receptorii ocupă întreaga mucoasă. E lipsește din baremul tipărit. Preferința pentru localizarea mai precisă din manual poate explica excluderea, dar nu demonstrează că asocierea generală este falsă."
         }
       ]
     },
@@ -2595,7 +2600,7 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "axonii neuronilor multipolari din straturile externe ale retinei formează nervul optic",
-          "why": "Axonii multipolari formează nervul optic, dar corpurile acestor neuroni sunt spre interiorul retinei, nu în straturile externe pigmentate."
+          "why": "Nervul optic este format din axonii neuronilor multipolari, dar acești neuroni aparțin stratului nervos intern al retinei și sunt situați spre corpul vitros. Varianta greșește localizarea lor în straturile externe."
         }
       ]
     },
@@ -2790,7 +2795,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "labirintul osos este umplut cu un lichid asemănător cu cel interstițial",
-          "why": "Baremul furnizat exclude A: lecția compară perilimfa cu lichidul cefalorahidian. Fiziologic, perilimfa este tot un lichid extracelular, astfel că asemănarea cu lichidul interstițial nu este în sine falsă. Punctajul păstrează C."
+          "why": "Labirintul osos conține perilimfă, pe care manualul o compară cu lichidul cefalorahidian; aceasta este asocierea urmărită de grilă. Precizare: perilimfa este un lichid extracelular bogat în sodiu și seamănă și cu lichidul interstițial. Excluderea variantei reflectă comparația din manual, nu dovedește că asemănarea biologică ar fi imposibilă."
         },
         {
           "letter": "B",
@@ -2917,7 +2922,7 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "melanină",
-          "why": "Baremul furnizat exclude E și acceptă răspunsul mai precis B. Melanina din iris contribuie efectiv la culoarea ochilor; varianta nu este biologic falsă, iar punctajul păstrează numai B."
+          "why": "Culoarea ochilor depinde de pigmentarea irisului, inclusiv de cantitatea de melanină. B identifică și locul pigmentului, irisul; E numește doar pigmentul. Totuși, lipsa localizării nu face melanina lipsită de rol: excluderea lui E din baremul tipărit rămâne discutabilă."
         }
       ]
     },
@@ -3119,7 +3124,7 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "impulsurile pentru gust sunt transmise prin ramuri ale nervului vag și ale nervului facial",
-          "why": "Baremul furnizat exclude C și urmărește perechea facial–glosofaringian din lecție. Anatomic, și nervul vag conduce aferențe gustative din regiunea epiglotei; afirmația nu este exclusă ca imposibilă fiziologic. Punctajul păstrează BDE."
+          "why": "Facialul (VII), glosofaringianul (IX) și vagul (X) conduc aferențe gustative din teritorii diferite; vagul participă pentru regiunea epiglotei. Manualul prezintă aici traseul prin VII și IX, ceea ce poate explica excluderea lui C. Totuși, cerința nu limitează gustul la limbă și varianta nu spune „numai”; formularea generală cu VII și X este biologic corectă, iar excluderea din barem rămâne discutabilă."
         },
         {
           "letter": "D",
@@ -3437,12 +3442,12 @@ window.BB_QUIZ = {
         {
           "letter": "D",
           "text": "celulele cu conuri sunt mai numeroase decât celulele cu bastonaș",
-          "why": "La nivelul întregii retine sunt aproximativ 120 de milioane de bastonașe și 6–7 milioane de conuri; bastonașele sunt mai numeroase."
+          "why": "Afirmația inversează raportul numeric: la nivelul întregii retine, cele aproximativ 120 de milioane de bastonașe depășesc cele 6–7 milioane de conuri. În plus, numărul receptorilor este un aspect structural, iar enunțul cere fiziologia vederii."
         },
         {
           "letter": "E",
           "text": "retina se extinde anterior până la porțiunea anterioară a corpului ciliar",
-          "why": "Retina vizuală se întinde până la limita posterioară a corpului ciliar, conform delimitării folosite de lecție."
+          "why": "Enunțul cere fiziologia vederii, iar întinderea retinei este un aspect anatomic. Varianta greșește și reperul din manual: retina vizuală se extinde anterior până la porțiunea posterioară a corpului ciliar, nu până la cea anterioară."
         }
       ]
     },
@@ -3467,7 +3472,7 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "pavilionul urechii participă la conducerea vibrațiilor sonore",
-          "why": "Baremul furnizat exclude C. Pavilionul colectează și dirijează undele sonore spre conductul auditiv extern, deci afirmația poate fi considerată adevărată în sens larg. Punctajul păstrează numai A."
+          "why": "Participarea pavilionului la conducerea vibrațiilor sonore descrie o funcție. Întrebarea cere anatomia urechii, adică structura ei. Pavilionul chiar colectează și dirijează sunetele; varianta este exclusă pentru că nu răspunde cerinței anatomice."
         },
         {
           "letter": "D",

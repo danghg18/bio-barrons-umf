@@ -36,6 +36,16 @@
     }
   }
 
+  function currentCorrect(question, state) {
+    // Older indexes omit keys. New generated indexes allow a direct analytics
+    // visit to reflect corrected keys without rewriting answers or attempts.
+    if (!Array.isArray(question.correct) || !question.correct.length) return !!state.correct;
+    var selected = Array.from(new Set((Array.isArray(state.selected) ? state.selected : []).filter(function (letter) {
+      return /^[A-E]$/.test(letter);
+    }))).sort();
+    return selected.join('') === question.correct.join('');
+  }
+
   function baseline(quiz) {
     var saved = current(quiz);
     return { key: quiz.storageKey, since: new Date().toISOString(), first: {}, unknown: quiz.questions.filter(function (question) {
@@ -234,7 +244,7 @@
         var saved = current(quiz);
         quiz.questions.forEach(function (question) {
           var state = saved[question.id];
-          if (state && state.verified) { stats.current.verified++; if (state.correct) stats.current.correct++; }
+          if (state && state.verified) { stats.current.verified++; if (currentCorrect(question, state)) stats.current.correct++; }
         });
         quizStats.set(quiz.storageKey, stats);
         return stats;

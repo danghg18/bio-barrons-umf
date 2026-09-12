@@ -57,13 +57,17 @@ for (const chapter of chapters) {
       rangeIds.add(id);
       return { id, start, end };
     });
-    const questions = quiz.questions.map(({ id, number }) => {
+    const questions = quiz.questions.map(({ id, number, correct }) => {
       const matches = ranges.filter(range => number >= range.start && number <= range.end);
       if (typeof id !== 'string' || !id || ids.has(id) || !Number.isInteger(number) || numbers.has(number) || matches.length !== 1) {
         throw new Error(`Invalid quiz question ${id} in ${resource.url}`);
       }
       ids.add(id); numbers.add(number);
-      return { id, number, rangeId: matches[0].id };
+      if (!Array.isArray(correct) || !correct.length || correct.some(letter => !/^[A-E]$/.test(letter)) ||
+        [...new Set(correct)].sort().join('') !== correct.join('')) {
+        throw new Error(`Invalid quiz answer key ${id} in ${resource.url}`);
+      }
+      return { id, number, rangeId: matches[0].id, correct };
     });
     quizIndex.push({ chapterNum: chapter.num, name: chapter.name, url: resource.url, storageKey: quiz.storageKey,
       version: quiz.version, questions, ranges });
