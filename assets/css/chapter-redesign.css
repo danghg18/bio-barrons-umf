@@ -786,13 +786,16 @@ body.bb-chapter-redesign .bb-lesson-completion-status {
 
 body.bb-chapter-redesign .bb-lesson-completion-actions {
   display: flex;
-  flex: 0 0 auto;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-end;
   gap: 0.75rem;
 }
 
 body.bb-chapter-redesign .bb-lesson-completion-button,
-body.bb-chapter-redesign .bb-next-lesson {
+body.bb-chapter-redesign .bb-next-lesson,
+body.bb-chapter-redesign .bb-practice-lesson {
   min-height: 44px;
   padding: 0.65rem 1rem;
   display: inline-flex;
@@ -822,12 +825,14 @@ body.bb-chapter-redesign .bb-lesson-completion-button.is-reset {
   border-color: var(--bb-line-strong, var(--bb-line));
 }
 
-body.bb-chapter-redesign .bb-next-lesson {
+body.bb-chapter-redesign .bb-next-lesson,
+body.bb-chapter-redesign .bb-practice-lesson {
   color: var(--bb-accent);
   background: transparent;
 }
 
-body.bb-chapter-redesign .bb-next-lesson:hover {
+body.bb-chapter-redesign .bb-next-lesson:hover,
+body.bb-chapter-redesign .bb-practice-lesson:hover {
   background: var(--bb-accent-soft);
 }
 
@@ -2837,4 +2842,13 @@ body.bb-chapter-redesign #settings-panel{
     break-inside: avoid;
     box-shadow: none !important;
   }
+}
+
+/* The glossary is a settings action, not a chapter-outline navigation row. */
+body.bb-chapter-redesign.bm-reader #nav-glossary-link {
+  margin: 0 !important;
+  padding: 9px 0 !important;
+  min-height: 44px;
+  width: 100%;
+  font-size: 13px !important;
 }

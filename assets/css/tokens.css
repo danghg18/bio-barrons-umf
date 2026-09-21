@@ -8,6 +8,19 @@
 
 :root {
   color-scheme: light;
+  /* Shared compact study surfaces, introduced by the statistics workspace. */
+  --ui-ink: #23473d;
+  --ui-muted: #566b61;
+  --ui-canvas: #f5f7f5;
+  --ui-shell: #e8ede9;
+  --ui-paper: #fff;
+  --ui-soft: #edf3ee;
+  --ui-line: #284d3614;
+  --ui-radius: 24px;
+  --ui-frame-radius: 30px;
+  --ui-ease: cubic-bezier(.22,1,.36,1);
+  --ui-space: 24px;
+  --bm-header-offset: 88px;
   /* ── TYPEFACES ─────────────────────────────────────── */
   --font-display: 'Figtree', system-ui, -apple-system, sans-serif;  /* headings, buttons, badges, nav */
   --font-body:    var(--font-display);

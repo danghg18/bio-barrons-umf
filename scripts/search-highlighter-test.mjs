@@ -185,8 +185,8 @@ try {
 
       // Real authored text still has stable counts/order through clear + retry.
       await page.evaluate(() => { if (document.body.classList.contains('hl-mode')) window.toggleHighlighter(); });
-      // The cell questions do not contain the previous universal probe, 'sistem'.
-      const authoredQuery = file === 'grile_celula.html' ? 'membrana' : 'sistem';
+      // The curriculum-limited cell lesson and its questions use this source term.
+      const authoredQuery = ['grile_celula.html','celula_si_fiziologia_celulara.html'].includes(file) ? 'membrana' : 'sistem';
       await page.locator('#lesson-search-input').fill(authoredQuery);
       await page.waitForFunction(() => document.querySelector('.search-found-current'));
       const realMatches = await page.locator('.search-found').evaluateAll(marks => Object.values(marks.reduce((hits, mark) => { const key = mark.dataset.searchIndex; hits[key] ||= { section: mark.closest('.page-section').id.slice(5), text: '', index: key }; hits[key].text += mark.textContent; return hits; }, {})));

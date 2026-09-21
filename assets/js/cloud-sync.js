@@ -103,6 +103,8 @@
           if (!validIdentity(id, generation) || !navigator.onLine) return;
           if (storage.snapshot().pending[key] !== revision) { again = true; continue; }
           const record = rowFor(key, data.values[key], id);
+          if (record.table === 'notes') await window.BBNoteMedia?.flush(record.row.body, id);
+          if (!validIdentity(id, generation)) return;
           const result = await client.from(record.table).upsert(record.row, {onConflict:record.conflict});
           if (!validIdentity(id, generation)) return;
           if (result.error) throw Error('Cloud write failed');

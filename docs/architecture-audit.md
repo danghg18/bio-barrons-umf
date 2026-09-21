@@ -459,3 +459,25 @@ Visual comparison covered the default section of all 11 pages at 1440×900 and 3
 ### Accounts and progress backend (2026-09-11, explicitly authorized)
 
 An external Supabase backend now owns authenticated study/quiz state and section notes. Deployed pages remain static HTML/CSS/classic JavaScript under the existing Pages subpath. `user-storage.js` provides owner-scoped local persistence and a durable outbox, `study-state.js` retains its API, and `quiz-player.js` uses the same adapter. A generated local Supabase SDK bundle, `supabase-client.js`, `auth-state.js`, `cloud-sync.js`, `account-ui.js` and `notes.js` separate responsibilities. Local analytics are isolated by owner but are not uploaded. The SQL migration enables per-user CRUD RLS on all three tables. See [setup and data policy](supabase-setup.md) for configuration, conflict semantics, dashboard steps and test scope.
+
+
+### Completed: shared catalog and lesson text matching (2026-09-14)
+
+- `assets/js/search-text.js` now owns passage indexing, normalization and match ordering for homepage search and `BBLessonSearchText.collect`. Catalog and lesson consumers load it before their controllers.
+- Inline emphasis and highlight wrappers are transparent. Block elements, badges and controls remain passage boundaries. Phrases normalize whitespace; when a full phrase is absent, all query terms must occur within one passage. Existing `q`, `section` and section-local `hit` links still select the same match in both consumers.
+- `chapter-redesign.js` retains marker rendering, highlighter preservation, scrolling and routing. The renal/male adapters retain their existing API and routing.
+- Homepage results are collapsed chapter groups, with five results shown per expansion batch. The index remains complete; partial loading failures retain available chapters and can be retried.
+- Focused verification: `scripts/search-multiword-test.mjs` exercises cross-inline phrases, multiple terms, extra spaces, diacritics, literal percent signs and navigation through all three lesson controller families. These checks run within `npm run test:search` alongside the catalog and highlighter regression suites.
+
+### Shared note writing and private images (2026-09-18)
+
+`note-content.js` owns the existing rich-note marker and sanitization, with constrained sticky-note and image-reference elements. `note-editor.js` owns one editor implementation for both the lesson panel and notebook sheet; `notes.js` retains only each surface's navigation/presentation. `note-media.js` owns private, account-scoped IndexedDB blobs and Supabase Storage transfer. Note rows retain their existing keys and size limit. The image bucket/policies have a separate local migration; no live schema change or publication is implied. All account pages load media support before `cloud-sync.js`, allowing pending images to finish before their referencing note row is acknowledged. The site remains static under the existing Pages subpath.
+
+
+### Continuous notebook editing (2026-09-18)
+
+The notebook now reconciles persistent section editor instances instead of switching a single section between read/edit views. The shared editor supports unique accessible IDs, one active toolbar, private attachment placement and validated cross-section transfers. The rich-note format adds only a constrained alignment enum; normal DOM order and CSS floats own layout, with no absolute-position canvas or database migration. Notebook presentation and local Caveat typography remain scoped to the notebook stylesheet. Attachment transfer durability and the non-transactional two-note boundary are documented in `docs/supabase-implementation.md`.
+
+### Notebook section availability (2026-09-19)
+
+`npm run generate` now derives `assets/js/notebook-sections.js` from the registered lesson HTML and includes it in the normal freshness check and offline inventory. The notebook loads this small catalog before its controller, so every empty section is writable without a second request for the lesson document. Authored section IDs, heading text and order, including legacy sections, are retained; existing notes still use `note:<chapter>:<section>`. The obsolete section-loading error and retry loop are removed. Image movement controls and dragging are retired; image insertion, captions, resizing, removal and previously saved placement remain available. Sticky-note movement is unchanged.

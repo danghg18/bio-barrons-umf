@@ -15,7 +15,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "sisteme"
       },
       {
         "id": "ia-002",
@@ -25,7 +26,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "C"
-        ]
+        ],
+        "topicId": "tesuturi"
       },
       {
         "id": "ia-003",
@@ -35,7 +37,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "tesuturi"
       },
       {
         "id": "ia-004",
@@ -43,7 +46,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-1-10",
         "correct": [
           "D"
-        ]
+        ],
+        "topicId": "sisteme"
       },
       {
         "id": "ia-005",
@@ -52,7 +56,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "ia-006",
@@ -61,7 +66,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "E"
-        ]
+        ],
+        "topicId": "celula"
       },
       {
         "id": "ia-007",
@@ -71,7 +77,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "functii"
       },
       {
         "id": "ia-008",
@@ -82,7 +89,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "homeostazie"
       },
       {
         "id": "ia-009",
@@ -92,7 +100,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "termeni"
       },
       {
         "id": "ia-010",
@@ -102,7 +111,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "termeni"
       },
       {
         "id": "ia-011",
@@ -112,7 +122,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "termeni"
       },
       {
         "id": "ia-012",
@@ -121,7 +132,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "C"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "ia-013",
@@ -130,7 +142,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "E"
-        ]
+        ],
+        "topicId": "functii"
       },
       {
         "id": "ia-014",
@@ -139,7 +152,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "E"
-        ]
+        ],
+        "topicId": "functii"
       },
       {
         "id": "ia-015",
@@ -148,7 +162,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "B"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "ia-016",
@@ -158,7 +173,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "D"
-        ]
+        ],
+        "topicId": "tesuturi"
       },
       {
         "id": "ia-017",
@@ -166,7 +182,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-11-20",
         "correct": [
           "B"
-        ]
+        ],
+        "topicId": "sisteme"
       },
       {
         "id": "ia-018",
@@ -176,7 +193,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "E"
-        ]
+        ],
+        "topicId": "cavitati"
       },
       {
         "id": "ia-019",
@@ -186,7 +204,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "termeni"
       },
       {
         "id": "ia-020",
@@ -196,7 +215,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "cavitati"
       },
       {
         "id": "ia-021",
@@ -205,7 +225,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "C"
-        ]
+        ],
+        "topicId": "planuri"
       },
       {
         "id": "ia-022",
@@ -214,7 +235,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "C"
-        ]
+        ],
+        "topicId": "homeostazie"
       },
       {
         "id": "ia-023",
@@ -224,7 +246,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "ia-024",
@@ -235,7 +258,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "celula"
       },
       {
         "id": "ia-025",
@@ -244,7 +268,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "E"
-        ]
+        ],
+        "topicId": "tesuturi"
       },
       {
         "id": "ia-026",
@@ -255,7 +280,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "ia-027",
@@ -265,7 +291,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "functii"
       },
       {
         "id": "ia-028",
@@ -275,7 +302,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "homeostazie"
       },
       {
         "id": "ia-029",
@@ -284,7 +312,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "D"
-        ]
+        ],
+        "topicId": "termeni"
       },
       {
         "id": "ia-030",
@@ -292,7 +321,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-21-30",
         "correct": [
           "B"
-        ]
+        ],
+        "topicId": "termeni"
       },
       {
         "id": "ia-031",
@@ -301,7 +331,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "C"
-        ]
+        ],
+        "topicId": "termeni"
       },
       {
         "id": "ia-032",
@@ -311,7 +342,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "E"
-        ]
+        ],
+        "topicId": "planuri"
       },
       {
         "id": "ia-033",
@@ -320,7 +352,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "D"
-        ]
+        ],
+        "topicId": "cavitati"
       },
       {
         "id": "ia-034",
@@ -329,7 +362,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "E"
-        ]
+        ],
+        "topicId": "cavitati"
       },
       {
         "id": "ia-035",
@@ -339,7 +373,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "D"
-        ]
+        ],
+        "topicId": "regiuni"
       },
       {
         "id": "ia-036",
@@ -349,7 +384,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "E"
-        ]
+        ],
+        "topicId": "cavitati"
       },
       {
         "id": "ia-037",
@@ -359,7 +395,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "seroase"
       },
       {
         "id": "ia-038",
@@ -368,7 +405,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "E"
-        ]
+        ],
+        "topicId": "seroase"
       },
       {
         "id": "ia-039",
@@ -376,7 +414,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-31-40",
         "correct": [
           "E"
-        ]
+        ],
+        "topicId": "introducere"
       },
       {
         "id": "ia-040",
@@ -386,7 +425,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "celula"
       },
       {
         "id": "ia-041",
@@ -395,7 +435,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "E"
-        ]
+        ],
+        "topicId": "regiuni"
       },
       {
         "id": "ia-042",
@@ -404,7 +445,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "E"
-        ]
+        ],
+        "topicId": "homeostazie"
       },
       {
         "id": "ia-043",
@@ -414,7 +456,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "E"
-        ]
+        ],
+        "topicId": "termeni"
       },
       {
         "id": "ia-044",
@@ -423,7 +466,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "D"
-        ]
+        ],
+        "topicId": "planuri"
       },
       {
         "id": "ia-045",
@@ -433,7 +477,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "cavitati"
       },
       {
         "id": "ia-046",
@@ -443,7 +488,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "regiuni"
       },
       {
         "id": "ia-047",
@@ -454,7 +500,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "cavitati"
       },
       {
         "id": "ia-048",
@@ -463,7 +510,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "E"
-        ]
+        ],
+        "topicId": "seroase"
       },
       {
         "id": "ia-049",
@@ -473,7 +521,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "ia-050",
@@ -483,7 +532,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "functii"
       },
       {
         "id": "ia-051",
@@ -493,7 +543,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "planuri"
       },
       {
         "id": "ia-052",
@@ -503,7 +554,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "cavitati"
       },
       {
         "id": "ia-053",
@@ -513,7 +565,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "cavitati"
       },
       {
         "id": "ia-054",
@@ -522,7 +575,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "E"
-        ]
+        ],
+        "topicId": "sisteme"
       },
       {
         "id": "ia-055",
@@ -531,7 +585,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "C"
-        ]
+        ],
+        "topicId": "celula"
       },
       {
         "id": "ia-056",
@@ -541,7 +596,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "functii"
       },
       {
         "id": "ia-057",
@@ -552,7 +608,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "homeostazie"
       },
       {
         "id": "ia-058",
@@ -563,7 +620,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "regiuni"
       },
       {
         "id": "ia-059",
@@ -573,7 +631,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "sisteme"
       },
       {
         "id": "ia-060",
@@ -583,7 +642,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "termeni"
       }
     ],
     "ranges": [
@@ -617,6 +677,68 @@ window.BB_QUIZ_INDEX = [
         "start": 51,
         "end": 60
       }
+    ],
+    "topics": [
+      {
+        "id": "introducere",
+        "label": "Anatomie și fiziologie",
+        "lessonUrl": "introducere_anatomie_fiziologie.html#introducere"
+      },
+      {
+        "id": "celula",
+        "label": "Celula și nivelurile de organizare",
+        "lessonUrl": "introducere_anatomie_fiziologie.html?q=Niveluri%20de%20organizare%20structural%C4%83&section=organizare"
+      },
+      {
+        "id": "tesuturi",
+        "label": "Țesuturi și organe",
+        "lessonUrl": "introducere_anatomie_fiziologie.html?q=Niveluri%20de%20organizare%20structural%C4%83&section=organizare"
+      },
+      {
+        "id": "sisteme",
+        "label": "Sisteme de organe și tegument",
+        "lessonUrl": "introducere_anatomie_fiziologie.html?q=Niveluri%20de%20organizare%20structural%C4%83&section=organizare"
+      },
+      {
+        "id": "functii",
+        "label": "Funcțiile organismului",
+        "lessonUrl": "introducere_anatomie_fiziologie.html#functii"
+      },
+      {
+        "id": "homeostazie",
+        "label": "Homeostazie și feedback",
+        "lessonUrl": "introducere_anatomie_fiziologie.html?q=Homeostazia&section=functii"
+      },
+      {
+        "id": "termeni",
+        "label": "Poziția anatomică și termenii direcționali",
+        "lessonUrl": "introducere_anatomie_fiziologie.html#termeni"
+      },
+      {
+        "id": "planuri",
+        "label": "Planurile corpului",
+        "lessonUrl": "introducere_anatomie_fiziologie.html?q=Planuri&section=termeni"
+      },
+      {
+        "id": "cavitati",
+        "label": "Cavitățile corpului",
+        "lessonUrl": "introducere_anatomie_fiziologie.html?q=Cavit%C4%83%C8%9Bile%20%C8%99i%20regiunile%20corpului&section=cavitati"
+      },
+      {
+        "id": "regiuni",
+        "label": "Regiunile abdomino-pelviene",
+        "lessonUrl": "introducere_anatomie_fiziologie.html?q=Cavit%C4%83%C8%9Bile%20%C8%99i%20regiunile%20corpului&section=cavitati"
+      },
+      {
+        "id": "seroase",
+        "label": "Membranele seroase",
+        "lessonUrl": "introducere_anatomie_fiziologie.html?q=Membranele&section=cavitati"
+      },
+      {
+        "id": "recapitulare-mixta",
+        "label": "Recapitulare mixtă",
+        "lessonUrl": "introducere_anatomie_fiziologie.html#home"
+      }
     ]
   },
   {
@@ -632,7 +754,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-61-70",
         "correct": [
           "C"
-        ]
+        ],
+        "topicId": "membrana"
       },
       {
         "id": "cel-062",
@@ -641,7 +764,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "C"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "cel-063",
@@ -650,7 +774,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "C"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "cel-064",
@@ -660,7 +785,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "cel-065",
@@ -670,7 +796,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "cel-066",
@@ -680,7 +807,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "membrana"
       },
       {
         "id": "cel-067",
@@ -690,7 +818,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "organite"
       },
       {
         "id": "cel-068",
@@ -700,7 +829,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "D"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "cel-069",
@@ -711,7 +841,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "membrana"
       },
       {
         "id": "cel-070",
@@ -721,7 +852,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "membrana"
       },
       {
         "id": "cel-071",
@@ -731,7 +863,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "transport"
       },
       {
         "id": "cel-072",
@@ -741,7 +874,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "nucleu"
       },
       {
         "id": "cel-073",
@@ -751,7 +885,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "organite"
       },
       {
         "id": "cel-074",
@@ -760,7 +895,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "C"
-        ]
+        ],
+        "topicId": "organite"
       },
       {
         "id": "cel-075",
@@ -771,7 +907,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "organite"
       },
       {
         "id": "cel-076",
@@ -779,7 +916,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-71-80",
         "correct": [
           "B"
-        ]
+        ],
+        "topicId": "transport"
       },
       {
         "id": "cel-077",
@@ -788,7 +926,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "D"
-        ]
+        ],
+        "topicId": "transport"
       },
       {
         "id": "cel-078",
@@ -798,7 +937,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "D"
-        ]
+        ],
+        "topicId": "nucleu"
       },
       {
         "id": "cel-079",
@@ -808,7 +948,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "organite"
       },
       {
         "id": "cel-080",
@@ -817,7 +958,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "D"
-        ]
+        ],
+        "topicId": "organite"
       },
       {
         "id": "cel-081",
@@ -828,7 +970,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "cel-082",
@@ -838,7 +981,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "transport"
       },
       {
         "id": "cel-083",
@@ -849,7 +993,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "cel-084",
@@ -858,7 +1003,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "B"
-        ]
+        ],
+        "topicId": "organite"
       },
       {
         "id": "cel-085",
@@ -867,7 +1013,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "D",
           "E"
-        ]
+        ],
+        "topicId": "organite"
       },
       {
         "id": "cel-086",
@@ -877,7 +1024,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "nucleu"
       },
       {
         "id": "cel-087",
@@ -886,7 +1034,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "D"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "cel-088",
@@ -896,7 +1045,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "transport"
       },
       {
         "id": "cel-089",
@@ -905,7 +1055,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "B"
-        ]
+        ],
+        "topicId": "transport"
       },
       {
         "id": "cel-090",
@@ -914,7 +1065,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "cel-091",
@@ -923,7 +1075,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "B"
-        ]
+        ],
+        "topicId": "organite"
       },
       {
         "id": "cel-092",
@@ -932,7 +1085,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "E"
-        ]
+        ],
+        "topicId": "organite"
       },
       {
         "id": "cel-093",
@@ -942,7 +1096,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "E"
-        ]
+        ],
+        "topicId": "tipuri-celule"
       },
       {
         "id": "cel-094",
@@ -951,7 +1106,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "E"
-        ]
+        ],
+        "topicId": "membrana"
       },
       {
         "id": "cel-095",
@@ -961,7 +1117,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "C"
-        ]
+        ],
+        "topicId": "transport"
       },
       {
         "id": "cel-096",
@@ -971,7 +1128,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "transport"
       },
       {
         "id": "cel-097",
@@ -979,7 +1137,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-91-100",
         "correct": [
           "E"
-        ]
+        ],
+        "topicId": "organite"
       },
       {
         "id": "cel-098",
@@ -988,7 +1147,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "D"
-        ]
+        ],
+        "topicId": "organite"
       },
       {
         "id": "cel-099",
@@ -997,7 +1157,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "D"
-        ]
+        ],
+        "topicId": "transport"
       },
       {
         "id": "cel-100",
@@ -1006,7 +1167,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "D",
           "E"
-        ]
+        ],
+        "topicId": "organite"
       },
       {
         "id": "cel-101",
@@ -1016,7 +1178,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "organite"
       },
       {
         "id": "cel-102",
@@ -1026,7 +1189,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "tipuri-celule"
       },
       {
         "id": "cel-103",
@@ -1035,7 +1199,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "cel-104",
@@ -1044,7 +1209,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "B"
-        ]
+        ],
+        "topicId": "membrana"
       },
       {
         "id": "cel-105",
@@ -1054,7 +1220,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "E"
-        ]
+        ],
+        "topicId": "transport"
       },
       {
         "id": "cel-106",
@@ -1065,7 +1232,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "nucleu"
       },
       {
         "id": "cel-107",
@@ -1076,7 +1244,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "membrana"
       },
       {
         "id": "cel-108",
@@ -1086,7 +1255,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "transport"
       },
       {
         "id": "cel-109",
@@ -1096,7 +1266,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "C"
-        ]
+        ],
+        "topicId": "transport"
       },
       {
         "id": "cel-110",
@@ -1104,7 +1275,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-101-110",
         "correct": [
           "D"
-        ]
+        ],
+        "topicId": "nucleu"
       }
     ],
     "ranges": [
@@ -1133,6 +1305,38 @@ window.BB_QUIZ_INDEX = [
         "start": 101,
         "end": 110
       }
+    ],
+    "topics": [
+      {
+        "id": "tipuri-celule",
+        "label": "Tipuri de celule",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#introducere"
+      },
+      {
+        "id": "membrana",
+        "label": "Membrana plasmatică",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#membrana"
+      },
+      {
+        "id": "transport",
+        "label": "Transportul prin membrană",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#transport"
+      },
+      {
+        "id": "nucleu",
+        "label": "Nucleul",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#nucleu"
+      },
+      {
+        "id": "organite",
+        "label": "Citoplasma și organitele",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#organite"
+      },
+      {
+        "id": "recapitulare-mixta",
+        "label": "Recapitulare mixtă",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#recapitulare"
+      }
     ]
   },
   {
@@ -1149,7 +1353,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "D"
-        ]
+        ],
+        "topicId": "vegetativ"
       },
       {
         "id": "sn-052",
@@ -1158,7 +1363,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "B"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "sn-053",
@@ -1168,7 +1374,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "diencefal-limbic"
       },
       {
         "id": "sn-054",
@@ -1178,7 +1385,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "trunchi"
       },
       {
         "id": "sn-055",
@@ -1187,7 +1395,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "D",
           "E"
-        ]
+        ],
+        "topicId": "vegetativ"
       },
       {
         "id": "sn-056",
@@ -1198,7 +1407,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "cranieni"
       },
       {
         "id": "sn-057",
@@ -1208,7 +1418,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "impuls"
       },
       {
         "id": "sn-058",
@@ -1218,7 +1429,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "trunchi"
       },
       {
         "id": "sn-059",
@@ -1227,7 +1439,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "E"
-        ]
+        ],
+        "topicId": "vegetativ"
       },
       {
         "id": "sn-060",
@@ -1237,7 +1450,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "D"
-        ]
+        ],
+        "topicId": "vegetativ"
       },
       {
         "id": "sn-061",
@@ -1246,7 +1460,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "E"
-        ]
+        ],
+        "topicId": "maduva"
       },
       {
         "id": "sn-062",
@@ -1256,7 +1471,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "maduva"
       },
       {
         "id": "sn-063",
@@ -1267,7 +1483,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "maduva"
       },
       {
         "id": "sn-064",
@@ -1276,7 +1493,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "C"
-        ]
+        ],
+        "topicId": "maduva"
       },
       {
         "id": "sn-065",
@@ -1286,7 +1504,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "sn-066",
@@ -1295,7 +1514,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "D",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "sn-067",
@@ -1305,7 +1525,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "sn-068",
@@ -1316,7 +1537,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "sn-069",
@@ -1326,7 +1548,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "C"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "sn-070",
@@ -1336,7 +1559,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "sn-071",
@@ -1345,7 +1569,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "sn-072",
@@ -1353,7 +1578,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-71-80",
         "correct": [
           "B"
-        ]
+        ],
+        "topicId": "trunchi"
       },
       {
         "id": "sn-073",
@@ -1364,7 +1590,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "meninge-lcr"
       },
       {
         "id": "sn-074",
@@ -1373,7 +1600,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "E"
-        ]
+        ],
+        "topicId": "cranieni"
       },
       {
         "id": "sn-075",
@@ -1382,7 +1610,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "C"
-        ]
+        ],
+        "topicId": "cranieni"
       },
       {
         "id": "sn-076",
@@ -1392,7 +1621,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "emisfere"
       },
       {
         "id": "sn-077",
@@ -1402,7 +1632,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "diencefal-limbic"
       },
       {
         "id": "sn-078",
@@ -1411,7 +1642,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "E"
-        ]
+        ],
+        "topicId": "cranieni"
       },
       {
         "id": "sn-079",
@@ -1421,7 +1653,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "diencefal-limbic"
       },
       {
         "id": "sn-080",
@@ -1430,7 +1663,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "E"
-        ]
+        ],
+        "topicId": "meninge-lcr"
       },
       {
         "id": "sn-081",
@@ -1440,7 +1674,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "maduva"
       },
       {
         "id": "sn-082",
@@ -1450,7 +1685,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "emisfere"
       },
       {
         "id": "sn-083",
@@ -1460,7 +1696,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "sn-084",
@@ -1470,7 +1707,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "sn-085",
@@ -1480,7 +1718,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "E"
-        ]
+        ],
+        "topicId": "trunchi"
       },
       {
         "id": "sn-086",
@@ -1490,7 +1729,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "cranieni"
       },
       {
         "id": "sn-087",
@@ -1499,7 +1739,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "D"
-        ]
+        ],
+        "topicId": "vegetativ"
       },
       {
         "id": "sn-088",
@@ -1509,7 +1750,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "organizare-snc"
       },
       {
         "id": "sn-089",
@@ -1519,7 +1761,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "sn-090",
@@ -1529,7 +1772,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "sn-091",
@@ -1539,7 +1783,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "cranieni"
       },
       {
         "id": "sn-092",
@@ -1549,7 +1794,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "spinali"
       },
       {
         "id": "sn-093",
@@ -1559,7 +1805,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "vegetativ"
       },
       {
         "id": "sn-094",
@@ -1568,7 +1815,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "D"
-        ]
+        ],
+        "topicId": "vegetativ"
       },
       {
         "id": "sn-095",
@@ -1576,7 +1824,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-91-100",
         "correct": [
           "D"
-        ]
+        ],
+        "topicId": "cranieni"
       },
       {
         "id": "sn-096",
@@ -1585,7 +1834,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "B"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "sn-097",
@@ -1594,7 +1844,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "D"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "sn-098",
@@ -1603,7 +1854,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "B"
-        ]
+        ],
+        "topicId": "impuls"
       },
       {
         "id": "sn-099",
@@ -1612,7 +1864,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "D"
-        ]
+        ],
+        "topicId": "impuls"
       },
       {
         "id": "sn-100",
@@ -1620,7 +1873,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-91-100",
         "correct": [
           "C"
-        ]
+        ],
+        "topicId": "celule-nervoase"
       }
     ],
     "ranges": [
@@ -1649,6 +1903,68 @@ window.BB_QUIZ_INDEX = [
         "start": 91,
         "end": 100
       }
+    ],
+    "topics": [
+      {
+        "id": "organizare-snc",
+        "label": "Organizarea sistemului nervos central",
+        "lessonUrl": "sistemul_nervos.html?q=Organizarea%20general%C4%83&section=sistem-nervos-central"
+      },
+      {
+        "id": "maduva",
+        "label": "Măduva spinării",
+        "lessonUrl": "sistemul_nervos.html?q=M%C4%83duva%20spin%C4%83rii%20%C8%99i%20meningele&section=sistem-nervos-central"
+      },
+      {
+        "id": "meninge-lcr",
+        "label": "Meninge și lichid cefalorahidian",
+        "lessonUrl": "sistemul_nervos.html?q=M%C4%83duva%20spin%C4%83rii%20%C8%99i%20meningele&section=sistem-nervos-central"
+      },
+      {
+        "id": "emisfere",
+        "label": "Emisferele cerebrale",
+        "lessonUrl": "sistemul_nervos.html?q=Emisferele%20cerebrale&section=sistem-nervos-central"
+      },
+      {
+        "id": "diencefal-limbic",
+        "label": "Diencefalul și sistemul limbic",
+        "lessonUrl": "sistemul_nervos.html?q=Diencefalul&section=sistem-nervos-central"
+      },
+      {
+        "id": "trunchi",
+        "label": "Trunchiul cerebral",
+        "lessonUrl": "sistemul_nervos.html?q=Trunchiul%20cerebral&section=sistem-nervos-central"
+      },
+      {
+        "id": "cranieni",
+        "label": "Nervii cranieni",
+        "lessonUrl": "sistemul_nervos.html?q=Nervii%20cranieni&section=sistem-nervos-periferic"
+      },
+      {
+        "id": "spinali",
+        "label": "Nervii spinali și plexurile",
+        "lessonUrl": "sistemul_nervos.html?q=Nervii%20cranieni%20%C8%99i%20spinali&section=sistem-nervos-periferic"
+      },
+      {
+        "id": "vegetativ",
+        "label": "Sistemul nervos autonom",
+        "lessonUrl": "sistemul_nervos.html#sistem-nervos-autonom"
+      },
+      {
+        "id": "impuls",
+        "label": "Impulsul nervos și reflexele",
+        "lessonUrl": "tesutul_nervos.html#fiziologia-nervilor"
+      },
+      {
+        "id": "celule-nervoase",
+        "label": "Neuronii și celulele gliale",
+        "lessonUrl": "tesutul_nervos.html#organizare"
+      },
+      {
+        "id": "recapitulare-mixta",
+        "label": "Recapitulare mixtă",
+        "lessonUrl": "sistemul_nervos.html#sistem-nervos-central"
+      }
     ]
   },
   {
@@ -1666,7 +1982,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "os-002",
@@ -1676,7 +1993,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "D"
-        ]
+        ],
+        "topicId": "receptori"
       },
       {
         "id": "os-003",
@@ -1686,7 +2004,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "os-004",
@@ -1694,7 +2013,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-1-10",
         "correct": [
           "A"
-        ]
+        ],
+        "topicId": "anatomie-ochi"
       },
       {
         "id": "os-005",
@@ -1704,7 +2024,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "retina"
       },
       {
         "id": "os-006",
@@ -1714,7 +2035,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "cale-optica"
       },
       {
         "id": "os-007",
@@ -1724,7 +2046,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "retina"
       },
       {
         "id": "os-008",
@@ -1734,7 +2057,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "anatomie-ochi"
       },
       {
         "id": "os-009",
@@ -1745,7 +2069,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "anatomie-ureche"
       },
       {
         "id": "os-010",
@@ -1754,7 +2079,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "D",
           "E"
-        ]
+        ],
+        "topicId": "anatomie-ureche"
       },
       {
         "id": "os-011",
@@ -1765,7 +2091,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "anatomie-ochi"
       },
       {
         "id": "os-012",
@@ -1775,7 +2102,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "os-013",
@@ -1786,7 +2114,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "os-014",
@@ -1796,7 +2125,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "os-015",
@@ -1806,7 +2136,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "E"
-        ]
+        ],
+        "topicId": "cale-optica"
       },
       {
         "id": "os-016",
@@ -1817,7 +2148,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "anatomie-ochi"
       },
       {
         "id": "os-017",
@@ -1826,7 +2158,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "D"
-        ]
+        ],
+        "topicId": "retina"
       },
       {
         "id": "os-018",
@@ -1836,7 +2169,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "retina"
       },
       {
         "id": "os-019",
@@ -1846,7 +2180,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "anatomie-ureche"
       },
       {
         "id": "os-020",
@@ -1855,7 +2190,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "E"
-        ]
+        ],
+        "topicId": "anatomie-ureche"
       },
       {
         "id": "os-021",
@@ -1864,7 +2200,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "C"
-        ]
+        ],
+        "topicId": "anatomie-ureche"
       },
       {
         "id": "os-022",
@@ -1873,7 +2210,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "D"
-        ]
+        ],
+        "topicId": "anatomie-ureche"
       },
       {
         "id": "os-023",
@@ -1882,7 +2220,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "C"
-        ]
+        ],
+        "topicId": "receptori"
       },
       {
         "id": "os-024",
@@ -1891,7 +2230,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "D"
-        ]
+        ],
+        "topicId": "echilibru"
       },
       {
         "id": "os-025",
@@ -1901,7 +2241,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "gust"
       },
       {
         "id": "os-026",
@@ -1911,7 +2252,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "gust"
       },
       {
         "id": "os-027",
@@ -1920,7 +2262,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "D"
-        ]
+        ],
+        "topicId": "miros"
       },
       {
         "id": "os-028",
@@ -1930,7 +2273,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "D"
-        ]
+        ],
+        "topicId": "miros"
       },
       {
         "id": "os-029",
@@ -1940,7 +2284,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "miros"
       },
       {
         "id": "os-030",
@@ -1951,7 +2296,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "retina"
       },
       {
         "id": "os-031",
@@ -1961,7 +2307,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "os-032",
@@ -1972,7 +2319,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "anatomie-ochi"
       },
       {
         "id": "os-033",
@@ -1982,7 +2330,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "retina"
       },
       {
         "id": "os-034",
@@ -1990,7 +2339,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-31-40",
         "correct": [
           "E"
-        ]
+        ],
+        "topicId": "echilibru"
       },
       {
         "id": "os-035",
@@ -1998,7 +2348,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-31-40",
         "correct": [
           "B"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "os-036",
@@ -2009,7 +2360,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "anatomie-ureche"
       },
       {
         "id": "os-037",
@@ -2018,7 +2370,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "D"
-        ]
+        ],
+        "topicId": "anatomie-ureche"
       },
       {
         "id": "os-038",
@@ -2028,7 +2381,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "gust"
       },
       {
         "id": "os-039",
@@ -2037,7 +2391,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "B"
-        ]
+        ],
+        "topicId": "receptori"
       },
       {
         "id": "os-040",
@@ -2047,7 +2402,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "E"
-        ]
+        ],
+        "topicId": "cale-optica"
       },
       {
         "id": "os-041",
@@ -2056,7 +2412,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "D"
-        ]
+        ],
+        "topicId": "anatomie-ochi"
       },
       {
         "id": "os-042",
@@ -2066,7 +2423,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "anatomie-ochi"
       },
       {
         "id": "os-043",
@@ -2077,7 +2435,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "focalizare"
       },
       {
         "id": "os-044",
@@ -2086,7 +2445,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "D"
-        ]
+        ],
+        "topicId": "anatomie-ochi"
       },
       {
         "id": "os-045",
@@ -2096,7 +2456,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "D"
-        ]
+        ],
+        "topicId": "retina"
       },
       {
         "id": "os-046",
@@ -2105,7 +2466,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "E"
-        ]
+        ],
+        "topicId": "retina"
       },
       {
         "id": "os-047",
@@ -2115,7 +2477,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "D"
-        ]
+        ],
+        "topicId": "auz"
       },
       {
         "id": "os-048",
@@ -2124,7 +2487,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "E"
-        ]
+        ],
+        "topicId": "anatomie-ureche"
       },
       {
         "id": "os-049",
@@ -2134,7 +2498,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "E"
-        ]
+        ],
+        "topicId": "auz"
       },
       {
         "id": "os-050",
@@ -2143,7 +2508,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "C"
-        ]
+        ],
+        "topicId": "gust"
       },
       {
         "id": "os-051",
@@ -2153,7 +2519,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "gust"
       },
       {
         "id": "os-052",
@@ -2163,7 +2530,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "miros"
       },
       {
         "id": "os-053",
@@ -2174,7 +2542,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "tactil"
       },
       {
         "id": "os-054",
@@ -2183,7 +2552,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "D"
-        ]
+        ],
+        "topicId": "auz"
       },
       {
         "id": "os-055",
@@ -2193,7 +2563,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "gust"
       },
       {
         "id": "os-056",
@@ -2203,7 +2574,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "gust"
       },
       {
         "id": "os-057",
@@ -2212,7 +2584,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "B"
-        ]
+        ],
+        "topicId": "miros"
       },
       {
         "id": "os-058",
@@ -2222,7 +2595,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "tactil"
       },
       {
         "id": "os-059",
@@ -2231,7 +2605,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "D"
-        ]
+        ],
+        "topicId": "anatomie-ureche"
       },
       {
         "id": "os-060",
@@ -2240,7 +2615,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "E"
-        ]
+        ],
+        "topicId": "echilibru"
       },
       {
         "id": "os-061",
@@ -2249,7 +2625,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "E"
-        ]
+        ],
+        "topicId": "tactil"
       },
       {
         "id": "os-062",
@@ -2259,7 +2636,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "D"
-        ]
+        ],
+        "topicId": "auz"
       },
       {
         "id": "os-063",
@@ -2267,7 +2645,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-61-70",
         "correct": [
           "A"
-        ]
+        ],
+        "topicId": "anatomie-ochi"
       },
       {
         "id": "os-064",
@@ -2275,7 +2654,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-61-70",
         "correct": [
           "C"
-        ]
+        ],
+        "topicId": "anatomie-ochi"
       },
       {
         "id": "os-065",
@@ -2285,7 +2665,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "anatomie-ochi"
       },
       {
         "id": "os-066",
@@ -2295,7 +2676,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "os-067",
@@ -2304,7 +2686,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "D"
-        ]
+        ],
+        "topicId": "anatomie-ochi"
       },
       {
         "id": "os-068",
@@ -2314,7 +2697,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "anatomie-ochi"
       },
       {
         "id": "os-069",
@@ -2323,7 +2707,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "D"
-        ]
+        ],
+        "topicId": "anatomie-ochi"
       },
       {
         "id": "os-070",
@@ -2332,7 +2717,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "D"
-        ]
+        ],
+        "topicId": "anatomie-ochi"
       },
       {
         "id": "os-071",
@@ -2342,7 +2728,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "D"
-        ]
+        ],
+        "topicId": "accesorii"
       },
       {
         "id": "os-072",
@@ -2351,7 +2738,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "D"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "os-073",
@@ -2361,7 +2749,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "os-074",
@@ -2370,7 +2759,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "E"
-        ]
+        ],
+        "topicId": "auz"
       },
       {
         "id": "os-075",
@@ -2379,7 +2769,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "E"
-        ]
+        ],
+        "topicId": "auz"
       },
       {
         "id": "os-076",
@@ -2388,7 +2779,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "E"
-        ]
+        ],
+        "topicId": "echilibru"
       },
       {
         "id": "os-077",
@@ -2397,7 +2789,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "D"
-        ]
+        ],
+        "topicId": "echilibru"
       },
       {
         "id": "os-078",
@@ -2405,7 +2798,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-71-80",
         "correct": [
           "C"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "os-079",
@@ -2414,7 +2808,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "C"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "os-080",
@@ -2423,7 +2818,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "E"
-        ]
+        ],
+        "topicId": "receptori"
       },
       {
         "id": "os-081",
@@ -2431,7 +2827,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-81-90",
         "correct": [
           "B"
-        ]
+        ],
+        "topicId": "anatomie-ochi"
       },
       {
         "id": "os-082",
@@ -2439,7 +2836,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-81-90",
         "correct": [
           "D"
-        ]
+        ],
+        "topicId": "cale-optica"
       },
       {
         "id": "os-083",
@@ -2449,7 +2847,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "focalizare"
       },
       {
         "id": "os-084",
@@ -2458,7 +2857,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "D"
-        ]
+        ],
+        "topicId": "retina"
       },
       {
         "id": "os-085",
@@ -2467,7 +2867,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "E"
-        ]
+        ],
+        "topicId": "tulburari-vedere"
       },
       {
         "id": "os-086",
@@ -2477,7 +2878,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "auz"
       },
       {
         "id": "os-087",
@@ -2487,7 +2889,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "gust"
       },
       {
         "id": "os-088",
@@ -2498,7 +2901,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "os-089",
@@ -2508,7 +2912,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "anatomie-ochi"
       },
       {
         "id": "os-090",
@@ -2517,7 +2922,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "E"
-        ]
+        ],
+        "topicId": "tulburari-vedere"
       },
       {
         "id": "os-091",
@@ -2526,7 +2932,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "E"
-        ]
+        ],
+        "topicId": "anatomie-ureche"
       },
       {
         "id": "os-092",
@@ -2536,7 +2943,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "C"
-        ]
+        ],
+        "topicId": "gust"
       },
       {
         "id": "os-093",
@@ -2546,7 +2954,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "miros"
       },
       {
         "id": "os-094",
@@ -2557,7 +2966,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "echilibru"
       },
       {
         "id": "os-095",
@@ -2567,7 +2977,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "accesorii"
       },
       {
         "id": "os-096",
@@ -2577,7 +2988,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "C"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "os-097",
@@ -2585,7 +2997,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-91-100",
         "correct": [
           "A"
-        ]
+        ],
+        "topicId": "anatomie-ureche"
       },
       {
         "id": "os-098",
@@ -2595,7 +3008,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "os-099",
@@ -2604,7 +3018,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "E"
-        ]
+        ],
+        "topicId": "tulburari-vedere"
       },
       {
         "id": "os-100",
@@ -2613,7 +3028,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "C"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       }
     ],
     "ranges": [
@@ -2666,6 +3082,78 @@ window.BB_QUIZ_INDEX = [
         "id": "grile-91-100",
         "start": 91,
         "end": 100
+      }
+    ],
+    "topics": [
+      {
+        "id": "receptori",
+        "label": "Simțurile și receptorii",
+        "lessonUrl": "organele_de_simt.html?q=Ochiul%20%C8%99i%20vederea&section=ochiul-si-vederea"
+      },
+      {
+        "id": "anatomie-ochi",
+        "label": "Anatomia ochiului",
+        "lessonUrl": "organele_de_simt.html?q=Anatomie&section=ochiul-si-vederea"
+      },
+      {
+        "id": "retina",
+        "label": "Retina și fotoreceptorii",
+        "lessonUrl": "organele_de_simt.html?q=Anatomie&section=ochiul-si-vederea"
+      },
+      {
+        "id": "accesorii",
+        "label": "Structurile accesorii ale ochiului",
+        "lessonUrl": "organele_de_simt.html?q=Anatomie&section=ochiul-si-vederea"
+      },
+      {
+        "id": "cale-optica",
+        "label": "Calea optică",
+        "lessonUrl": "organele_de_simt.html?q=Fiziologia%20vederii&section=ochiul-si-vederea"
+      },
+      {
+        "id": "focalizare",
+        "label": "Focalizarea imaginilor",
+        "lessonUrl": "organele_de_simt.html?q=Fiziologia%20vederii&section=ochiul-si-vederea"
+      },
+      {
+        "id": "tulburari-vedere",
+        "label": "Tulburările de vedere",
+        "lessonUrl": "organele_de_simt.html?q=Tulbur%C4%83rile%20de%20vedere&section=ochiul-si-vederea"
+      },
+      {
+        "id": "anatomie-ureche",
+        "label": "Anatomia urechii",
+        "lessonUrl": "organele_de_simt.html?q=Anatomia%20urechii&section=urechea-si-auzul"
+      },
+      {
+        "id": "auz",
+        "label": "Fiziologia auzului",
+        "lessonUrl": "organele_de_simt.html?q=Fiziologia%20auzului&section=urechea-si-auzul"
+      },
+      {
+        "id": "gust",
+        "label": "Gustul",
+        "lessonUrl": "organele_de_simt.html?q=Gustul&section=alte-simturi"
+      },
+      {
+        "id": "miros",
+        "label": "Mirosul",
+        "lessonUrl": "organele_de_simt.html?q=Mirosul&section=alte-simturi"
+      },
+      {
+        "id": "tactil",
+        "label": "Simțul tactil și simțurile înrudite",
+        "lessonUrl": "organele_de_simt.html?q=Sim%C8%9Bul%20tactil%20%C8%99i%20sim%C8%9Burile%20%C3%AEnrudite&section=alte-simturi"
+      },
+      {
+        "id": "echilibru",
+        "label": "Echilibrul",
+        "lessonUrl": "organele_de_simt.html?q=Echilibrul&section=alte-simturi"
+      },
+      {
+        "id": "recapitulare-mixta",
+        "label": "Recapitulare mixtă",
+        "lessonUrl": "organele_de_simt.html#ochiul-si-vederea"
       }
     ]
   },
@@ -2685,7 +3173,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "rinichi"
       },
       {
         "id": "ur-002",
@@ -2695,7 +3184,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "rinichi"
       },
       {
         "id": "ur-003",
@@ -2704,7 +3194,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "E"
-        ]
+        ],
+        "topicId": "filtrare"
       },
       {
         "id": "ur-004",
@@ -2714,7 +3205,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "reabsorbtie"
       },
       {
         "id": "ur-005",
@@ -2723,7 +3215,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "C"
-        ]
+        ],
+        "topicId": "contracurent"
       },
       {
         "id": "ur-006",
@@ -2732,7 +3225,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "E"
-        ]
+        ],
+        "topicId": "secretie"
       },
       {
         "id": "ur-007",
@@ -2741,7 +3235,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "B"
-        ]
+        ],
+        "topicId": "filtrare"
       },
       {
         "id": "ur-008",
@@ -2751,7 +3246,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "contracurent"
       },
       {
         "id": "ur-009",
@@ -2760,7 +3256,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "E"
-        ]
+        ],
+        "topicId": "hormoni"
       },
       {
         "id": "ur-010",
@@ -2770,7 +3267,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "vascularizatie"
       },
       {
         "id": "ur-011",
@@ -2780,7 +3278,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "rinichi"
       },
       {
         "id": "ur-012",
@@ -2790,7 +3289,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "vascularizatie"
       },
       {
         "id": "ur-013",
@@ -2799,7 +3299,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "B"
-        ]
+        ],
+        "topicId": "filtrare"
       },
       {
         "id": "ur-014",
@@ -2809,7 +3310,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "reabsorbtie"
       },
       {
         "id": "ur-015",
@@ -2819,7 +3321,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "C"
-        ]
+        ],
+        "topicId": "contracurent"
       },
       {
         "id": "ur-016",
@@ -2829,7 +3332,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "C"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "ur-017",
@@ -2837,7 +3341,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-11-20",
         "correct": [
           "D"
-        ]
+        ],
+        "topicId": "contracurent"
       },
       {
         "id": "ur-018",
@@ -2846,7 +3351,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "B"
-        ]
+        ],
+        "topicId": "secretie"
       },
       {
         "id": "ur-019",
@@ -2855,7 +3361,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "D",
           "E"
-        ]
+        ],
+        "topicId": "reabsorbtie"
       },
       {
         "id": "ur-020",
@@ -2865,7 +3372,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "contracurent"
       },
       {
         "id": "ur-021",
@@ -2876,7 +3384,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "hormoni"
       },
       {
         "id": "ur-022",
@@ -2886,7 +3395,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "contracurent"
       },
       {
         "id": "ur-023",
@@ -2895,7 +3405,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "E"
-        ]
+        ],
+        "topicId": "urina"
       },
       {
         "id": "ur-024",
@@ -2905,7 +3416,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "cai-urinare"
       },
       {
         "id": "ur-025",
@@ -2916,7 +3428,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "excretie"
       },
       {
         "id": "ur-026",
@@ -2925,7 +3438,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "E"
-        ]
+        ],
+        "topicId": "uretere"
       },
       {
         "id": "ur-027",
@@ -2935,7 +3449,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "vascularizatie"
       },
       {
         "id": "ur-028",
@@ -2944,7 +3459,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "E"
-        ]
+        ],
+        "topicId": "rinichi"
       },
       {
         "id": "ur-029",
@@ -2953,7 +3469,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "B"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "ur-030",
@@ -2962,7 +3479,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "D",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "ur-031",
@@ -2971,7 +3489,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "C"
-        ]
+        ],
+        "topicId": "filtrare"
       },
       {
         "id": "ur-032",
@@ -2982,7 +3501,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "contracurent"
       },
       {
         "id": "ur-033",
@@ -2991,7 +3511,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "B"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "ur-034",
@@ -3001,7 +3522,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "excretie"
       },
       {
         "id": "ur-035",
@@ -3011,7 +3533,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "rinichi"
       },
       {
         "id": "ur-036",
@@ -3020,7 +3543,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "D"
-        ]
+        ],
+        "topicId": "excretie"
       },
       {
         "id": "ur-037",
@@ -3029,7 +3553,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "B"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "ur-038",
@@ -3039,7 +3564,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "E"
-        ]
+        ],
+        "topicId": "vascularizatie"
       },
       {
         "id": "ur-039",
@@ -3048,7 +3574,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "C"
-        ]
+        ],
+        "topicId": "uretere"
       },
       {
         "id": "ur-040",
@@ -3057,7 +3584,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "D"
-        ]
+        ],
+        "topicId": "urina"
       },
       {
         "id": "ur-041",
@@ -3067,7 +3595,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "filtrare"
       },
       {
         "id": "ur-042",
@@ -3077,7 +3606,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "vascularizatie"
       },
       {
         "id": "ur-043",
@@ -3087,7 +3617,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "E"
-        ]
+        ],
+        "topicId": "vezica"
       },
       {
         "id": "ur-044",
@@ -3097,7 +3628,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "C"
-        ]
+        ],
+        "topicId": "hormoni"
       },
       {
         "id": "ur-045",
@@ -3106,7 +3638,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "D"
-        ]
+        ],
+        "topicId": "urina"
       },
       {
         "id": "ur-046",
@@ -3115,7 +3648,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "D"
-        ]
+        ],
+        "topicId": "rinichi"
       },
       {
         "id": "ur-047",
@@ -3125,7 +3659,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "urina"
       },
       {
         "id": "ur-048",
@@ -3135,7 +3670,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "reabsorbtie"
       },
       {
         "id": "ur-049",
@@ -3146,7 +3682,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "rinichi"
       },
       {
         "id": "ur-050",
@@ -3155,7 +3692,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "D"
-        ]
+        ],
+        "topicId": "cai-urinare"
       },
       {
         "id": "ur-051",
@@ -3165,7 +3703,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "E"
-        ]
+        ],
+        "topicId": "excretie"
       },
       {
         "id": "ur-052",
@@ -3174,7 +3713,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "E"
-        ]
+        ],
+        "topicId": "urina"
       },
       {
         "id": "ur-053",
@@ -3183,7 +3723,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "B"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "ur-054",
@@ -3194,7 +3735,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "contracurent"
       },
       {
         "id": "ur-055",
@@ -3204,7 +3746,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "ur-056",
@@ -3214,7 +3757,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "D"
-        ]
+        ],
+        "topicId": "rinichi"
       },
       {
         "id": "ur-057",
@@ -3225,7 +3769,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "rinichi"
       },
       {
         "id": "ur-058",
@@ -3234,7 +3779,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "D"
-        ]
+        ],
+        "topicId": "rinichi"
       },
       {
         "id": "ur-059",
@@ -3244,7 +3790,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "C"
-        ]
+        ],
+        "topicId": "vascularizatie"
       },
       {
         "id": "ur-060",
@@ -3253,7 +3800,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "C"
-        ]
+        ],
+        "topicId": "vascularizatie"
       },
       {
         "id": "ur-061",
@@ -3262,7 +3810,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "D"
-        ]
+        ],
+        "topicId": "reabsorbtie"
       },
       {
         "id": "ur-062",
@@ -3272,7 +3821,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "ur-063",
@@ -3282,7 +3832,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "D"
-        ]
+        ],
+        "topicId": "filtrare"
       },
       {
         "id": "ur-064",
@@ -3292,7 +3843,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "reabsorbtie"
       },
       {
         "id": "ur-065",
@@ -3301,7 +3853,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "B"
-        ]
+        ],
+        "topicId": "reabsorbtie"
       },
       {
         "id": "ur-066",
@@ -3312,7 +3865,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "secretie"
       },
       {
         "id": "ur-067",
@@ -3322,7 +3876,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "E"
-        ]
+        ],
+        "topicId": "hormoni"
       },
       {
         "id": "ur-068",
@@ -3332,7 +3887,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "urina"
       },
       {
         "id": "ur-069",
@@ -3343,7 +3899,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "uretere"
       },
       {
         "id": "ur-070",
@@ -3352,7 +3909,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "D",
           "E"
-        ]
+        ],
+        "topicId": "vezica"
       },
       {
         "id": "ur-071",
@@ -3362,7 +3920,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "rinichi"
       },
       {
         "id": "ur-072",
@@ -3373,7 +3932,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "ur-073",
@@ -3382,7 +3942,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "ur-074",
@@ -3391,7 +3952,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "B"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "ur-075",
@@ -3402,7 +3964,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "ur-076",
@@ -3413,7 +3976,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "excretie"
       },
       {
         "id": "ur-077",
@@ -3422,7 +3986,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "C"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "ur-078",
@@ -3431,7 +3996,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "ur-079",
@@ -3440,7 +4006,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "C"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "ur-080",
@@ -3449,7 +4016,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "C"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       }
     ],
     "ranges": [
@@ -3493,6 +4061,73 @@ window.BB_QUIZ_INDEX = [
         "start": 71,
         "end": 80
       }
+    ],
+    "topics": [
+      {
+        "id": "rinichi",
+        "label": "Anatomia și funcțiile rinichilor",
+        "lessonUrl": "sistemul_renal_complet.html#rinichii"
+      },
+      {
+        "id": "vascularizatie",
+        "label": "Vascularizația renală și nefronul",
+        "lessonUrl": "sistemul_renal_complet.html?q=Structura%20nefronului&section=nefron"
+      },
+      {
+        "id": "filtrare",
+        "label": "Filtrarea glomerulară",
+        "lessonUrl": "sistemul_renal_complet.html?q=Filtrarea&section=nefron"
+      },
+      {
+        "id": "reabsorbtie",
+        "label": "Reabsorbția tubulară",
+        "lessonUrl": "sistemul_renal_complet.html?q=Reabsorb%C8%9Bia&section=nefron"
+      },
+      {
+        "id": "contracurent",
+        "label": "Ansa Henle și concentrarea urinei",
+        "lessonUrl": "sistemul_renal_complet.html?q=Reabsorb%C8%9Bia%20s%C4%83rurilor%20%C8%99i%20a%20apei&section=nefron"
+      },
+      {
+        "id": "secretie",
+        "label": "Secreția tubulară",
+        "lessonUrl": "sistemul_renal_complet.html?q=Secre%C8%9Bia%20tubular%C4%83&section=nefron"
+      },
+      {
+        "id": "hormoni",
+        "label": "Reglarea hormonală",
+        "lessonUrl": "sistemul_renal_complet.html?q=Activitatea%20hormonal%C4%83&section=hormoni"
+      },
+      {
+        "id": "urina",
+        "label": "Compoziția și proprietățile urinei",
+        "lessonUrl": "sistemul_renal_complet.html?q=Urina&section=hormoni"
+      },
+      {
+        "id": "uretere",
+        "label": "Ureterele",
+        "lessonUrl": "sistemul_renal_complet.html?q=Structuri%20anexe&section=anexe"
+      },
+      {
+        "id": "vezica",
+        "label": "Vezica urinară și micțiunea",
+        "lessonUrl": "sistemul_renal_complet.html?q=Structuri%20anexe&section=anexe"
+      },
+      {
+        "id": "cai-urinare",
+        "label": "Uretra și căile urinare",
+        "lessonUrl": "sistemul_renal_complet.html?q=Structuri%20anexe&section=anexe"
+      },
+      {
+        "id": "excretie",
+        "label": "Alte organe excretorii",
+        "lessonUrl": "sistemul_renal_complet.html?q=Alte%20organe%20excretorii&section=anexe"
+      },
+      {
+        "id": "recapitulare-mixta",
+        "label": "Recapitulare mixtă",
+        "lessonUrl": "sistemul_renal_complet.html#home"
+      }
     ]
   },
   {
@@ -3510,7 +4145,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "E"
-        ]
+        ],
+        "topicId": "testicule"
       },
       {
         "id": "rm-002",
@@ -3520,7 +4156,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "hormoni"
       },
       {
         "id": "rm-003",
@@ -3530,7 +4167,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "C"
-        ]
+        ],
+        "topicId": "hormoni"
       },
       {
         "id": "rm-004",
@@ -3540,7 +4178,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "E"
-        ]
+        ],
+        "topicId": "testicule"
       },
       {
         "id": "rm-005",
@@ -3549,7 +4188,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "E"
-        ]
+        ],
+        "topicId": "testicule"
       },
       {
         "id": "rm-006",
@@ -3559,7 +4199,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "testosteron"
       },
       {
         "id": "rm-007",
@@ -3570,7 +4211,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "hormoni"
       },
       {
         "id": "rm-008",
@@ -3581,7 +4223,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "spermatogeneza"
       },
       {
         "id": "rm-009",
@@ -3591,7 +4234,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "testicule"
       },
       {
         "id": "rm-010",
@@ -3601,7 +4245,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rm-011",
@@ -3611,7 +4256,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "spermatogeneza"
       },
       {
         "id": "rm-012",
@@ -3619,7 +4265,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-11-20",
         "correct": [
           "B"
-        ]
+        ],
+        "topicId": "spermatogeneza"
       },
       {
         "id": "rm-013",
@@ -3630,7 +4277,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "testicule"
       },
       {
         "id": "rm-014",
@@ -3639,7 +4287,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "D"
-        ]
+        ],
+        "topicId": "spermatozoizi"
       },
       {
         "id": "rm-015",
@@ -3649,7 +4298,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "testicule"
       },
       {
         "id": "rm-016",
@@ -3658,7 +4308,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "D"
-        ]
+        ],
+        "topicId": "uretra"
       },
       {
         "id": "rm-017",
@@ -3667,7 +4318,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "C"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rm-018",
@@ -3676,7 +4328,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "C"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rm-019",
@@ -3684,7 +4337,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-11-20",
         "correct": [
           "D"
-        ]
+        ],
+        "topicId": "hormoni"
       },
       {
         "id": "rm-020",
@@ -3694,7 +4348,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "C"
-        ]
+        ],
+        "topicId": "testosteron"
       },
       {
         "id": "rm-021",
@@ -3704,7 +4359,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rm-022",
@@ -3712,7 +4368,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-21-30",
         "correct": [
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rm-023",
@@ -3721,7 +4378,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "D"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rm-024",
@@ -3730,7 +4388,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "D"
-        ]
+        ],
+        "topicId": "testicule"
       },
       {
         "id": "rm-025",
@@ -3739,7 +4398,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "D",
           "E"
-        ]
+        ],
+        "topicId": "spermatogeneza"
       },
       {
         "id": "rm-026",
@@ -3747,7 +4407,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-21-30",
         "correct": [
           "D"
-        ]
+        ],
+        "topicId": "testosteron"
       },
       {
         "id": "rm-027",
@@ -3758,7 +4419,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "hormoni"
       },
       {
         "id": "rm-028",
@@ -3766,7 +4428,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-21-30",
         "correct": [
           "C"
-        ]
+        ],
+        "topicId": "spermatozoizi"
       },
       {
         "id": "rm-029",
@@ -3774,7 +4437,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-21-30",
         "correct": [
           "A"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rm-030",
@@ -3783,7 +4447,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "B"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rm-031",
@@ -3793,7 +4458,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "C"
-        ]
+        ],
+        "topicId": "testicule"
       },
       {
         "id": "rm-032",
@@ -3803,7 +4469,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "spermatogeneza"
       },
       {
         "id": "rm-033",
@@ -3812,7 +4479,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "D"
-        ]
+        ],
+        "topicId": "spermatozoizi"
       },
       {
         "id": "rm-034",
@@ -3822,7 +4490,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "epididim"
       },
       {
         "id": "rm-035",
@@ -3832,7 +4501,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "deferent"
       },
       {
         "id": "rm-036",
@@ -3842,7 +4512,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "uretra"
       },
       {
         "id": "rm-037",
@@ -3852,7 +4523,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "D"
-        ]
+        ],
+        "topicId": "vezicule"
       },
       {
         "id": "rm-038",
@@ -3863,7 +4535,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "prostata"
       },
       {
         "id": "rm-039",
@@ -3874,7 +4547,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "testosteron"
       },
       {
         "id": "rm-040",
@@ -3883,7 +4557,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "B"
-        ]
+        ],
+        "topicId": "hormoni"
       },
       {
         "id": "rm-041",
@@ -3891,7 +4566,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-41-50",
         "correct": [
           "D"
-        ]
+        ],
+        "topicId": "testicule"
       },
       {
         "id": "rm-042",
@@ -3900,7 +4576,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "D"
-        ]
+        ],
+        "topicId": "spermatogeneza"
       },
       {
         "id": "rm-043",
@@ -3909,7 +4586,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "E"
-        ]
+        ],
+        "topicId": "spermatozoizi"
       },
       {
         "id": "rm-044",
@@ -3918,7 +4596,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "E"
-        ]
+        ],
+        "topicId": "epididim"
       },
       {
         "id": "rm-045",
@@ -3928,7 +4607,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rm-046",
@@ -3939,7 +4619,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rm-047",
@@ -3948,7 +4629,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "E"
-        ]
+        ],
+        "topicId": "prostata"
       },
       {
         "id": "rm-048",
@@ -3957,7 +4639,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rm-049",
@@ -3967,7 +4650,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rm-050",
@@ -3978,7 +4662,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rm-051",
@@ -3987,7 +4672,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "D"
-        ]
+        ],
+        "topicId": "spermatogeneza"
       },
       {
         "id": "rm-052",
@@ -3997,7 +4683,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rm-053",
@@ -4007,7 +4694,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "spermatozoizi"
       },
       {
         "id": "rm-054",
@@ -4016,7 +4704,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rm-055",
@@ -4026,7 +4715,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "D"
-        ]
+        ],
+        "topicId": "spermatogeneza"
       },
       {
         "id": "rm-056",
@@ -4035,7 +4725,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "C"
-        ]
+        ],
+        "topicId": "glande-anexe"
       },
       {
         "id": "rm-057",
@@ -4045,7 +4736,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "C"
-        ]
+        ],
+        "topicId": "epididim"
       },
       {
         "id": "rm-058",
@@ -4054,7 +4746,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rm-059",
@@ -4064,7 +4757,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "hormoni"
       },
       {
         "id": "rm-060",
@@ -4073,7 +4767,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "E"
-        ]
+        ],
+        "topicId": "glande-anexe"
       },
       {
         "id": "rm-061",
@@ -4081,7 +4776,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-61-69",
         "correct": [
           "A"
-        ]
+        ],
+        "topicId": "testicule"
       },
       {
         "id": "rm-062",
@@ -4092,7 +4788,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "deferent"
       },
       {
         "id": "rm-063",
@@ -4102,7 +4799,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "spermatogeneza"
       },
       {
         "id": "rm-064",
@@ -4111,7 +4809,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "C"
-        ]
+        ],
+        "topicId": "vezicule"
       },
       {
         "id": "rm-065",
@@ -4122,7 +4821,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "testosteron"
       },
       {
         "id": "rm-066",
@@ -4132,7 +4832,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "penis"
       },
       {
         "id": "rm-067",
@@ -4140,7 +4841,8 @@ window.BB_QUIZ_INDEX = [
         "rangeId": "grile-61-69",
         "correct": [
           "B"
-        ]
+        ],
+        "topicId": "prostata"
       },
       {
         "id": "rm-068",
@@ -4149,7 +4851,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "D"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rm-069",
@@ -4158,7 +4861,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "B"
-        ]
+        ],
+        "topicId": "gonada-feminina"
       }
     ],
     "ranges": [
@@ -4197,6 +4901,78 @@ window.BB_QUIZ_INDEX = [
         "start": 61,
         "end": 69
       }
+    ],
+    "topics": [
+      {
+        "id": "testicule",
+        "label": "Testiculele și celulele testiculare",
+        "lessonUrl": "sistemul_reproducator_masculin.html?q=Testiculele&section=testiculele"
+      },
+      {
+        "id": "spermatogeneza",
+        "label": "Spermatogeneza și meioza",
+        "lessonUrl": "sistemul_reproducator_masculin.html?q=Spermatogeneza&section=testiculele"
+      },
+      {
+        "id": "spermatozoizi",
+        "label": "Spermatozoizii",
+        "lessonUrl": "sistemul_reproducator_masculin.html?q=Spermatozoizii&section=testiculele"
+      },
+      {
+        "id": "epididim",
+        "label": "Epididimul",
+        "lessonUrl": "sistemul_reproducator_masculin.html?q=C%C4%83ile%20sistemului%20reproduc%C4%83tor%20masculin&section=ducte"
+      },
+      {
+        "id": "deferent",
+        "label": "Ductul deferent",
+        "lessonUrl": "sistemul_reproducator_masculin.html?q=C%C4%83ile%20sistemului%20reproduc%C4%83tor%20masculin&section=ducte"
+      },
+      {
+        "id": "uretra",
+        "label": "Uretra masculină",
+        "lessonUrl": "sistemul_reproducator_masculin.html?q=C%C4%83ile%20sistemului%20reproduc%C4%83tor%20masculin&section=ducte"
+      },
+      {
+        "id": "vezicule",
+        "label": "Vezicula seminală",
+        "lessonUrl": "sistemul_reproducator_masculin.html?q=Organe%20anexe&section=ducte"
+      },
+      {
+        "id": "prostata",
+        "label": "Prostata",
+        "lessonUrl": "sistemul_reproducator_masculin.html?q=Organe%20anexe&section=ducte"
+      },
+      {
+        "id": "glande-anexe",
+        "label": "Glandele anexe și sperma",
+        "lessonUrl": "sistemul_reproducator_masculin.html?q=Organe%20Anexe&section=ducte"
+      },
+      {
+        "id": "penis",
+        "label": "Penisul",
+        "lessonUrl": "sistemul_reproducator_masculin.html?q=Organe%20anexe&section=ducte"
+      },
+      {
+        "id": "hormoni",
+        "label": "Gonadotropinele și reglarea hormonală",
+        "lessonUrl": "sistemul_reproducator_masculin.html#hormoni"
+      },
+      {
+        "id": "testosteron",
+        "label": "Testosteronul",
+        "lessonUrl": "sistemul_reproducator_masculin.html?q=Hormonii%20masculini&section=hormoni"
+      },
+      {
+        "id": "gonada-feminina",
+        "label": "Gonada feminină",
+        "lessonUrl": "sistemul_reproducator_feminin.html?q=Ovarele&section=organe"
+      },
+      {
+        "id": "recapitulare-mixta",
+        "label": "Recapitulare mixtă",
+        "lessonUrl": "sistemul_reproducator_masculin.html#home"
+      }
     ]
   },
   {
@@ -4213,7 +4989,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "B"
-        ]
+        ],
+        "topicId": "ovare"
       },
       {
         "id": "rf-002",
@@ -4223,7 +5000,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rf-003",
@@ -4233,7 +5011,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rf-004",
@@ -4243,7 +5022,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "ovare"
       },
       {
         "id": "rf-005",
@@ -4252,7 +5032,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "C"
-        ]
+        ],
+        "topicId": "ciclu"
       },
       {
         "id": "rf-006",
@@ -4262,7 +5043,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "ciclu"
       },
       {
         "id": "rf-007",
@@ -4271,7 +5053,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "E"
-        ]
+        ],
+        "topicId": "uter"
       },
       {
         "id": "rf-008",
@@ -4282,7 +5065,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "ciclu"
       },
       {
         "id": "rf-009",
@@ -4292,7 +5076,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "trompe"
       },
       {
         "id": "rf-010",
@@ -4301,7 +5086,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "D"
-        ]
+        ],
+        "topicId": "uter"
       },
       {
         "id": "rf-011",
@@ -4310,7 +5096,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "C"
-        ]
+        ],
+        "topicId": "trompe"
       },
       {
         "id": "rf-012",
@@ -4319,7 +5106,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "B"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rf-013",
@@ -4329,7 +5117,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "vagin-vulva"
       },
       {
         "id": "rf-014",
@@ -4338,7 +5127,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "D"
-        ]
+        ],
+        "topicId": "ovare"
       },
       {
         "id": "rf-015",
@@ -4348,7 +5138,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "C"
-        ]
+        ],
+        "topicId": "ovogeneza"
       },
       {
         "id": "rf-016",
@@ -4358,7 +5149,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "E"
-        ]
+        ],
+        "topicId": "ciclu"
       },
       {
         "id": "rf-017",
@@ -4369,7 +5161,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "mamare"
       },
       {
         "id": "rf-018",
@@ -4380,7 +5173,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rf-019",
@@ -4389,7 +5183,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "C"
-        ]
+        ],
+        "topicId": "fecundatie"
       },
       {
         "id": "rf-020",
@@ -4398,7 +5193,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "A",
           "C"
-        ]
+        ],
+        "topicId": "ovare"
       },
       {
         "id": "rf-021",
@@ -4407,7 +5203,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "C",
           "D"
-        ]
+        ],
+        "topicId": "uter"
       },
       {
         "id": "rf-022",
@@ -4417,7 +5214,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "mamare"
       },
       {
         "id": "rf-023",
@@ -4427,7 +5225,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "uter"
       },
       {
         "id": "rf-024",
@@ -4437,7 +5236,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "ciclu"
       },
       {
         "id": "rf-025",
@@ -4448,7 +5248,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "ovogeneza"
       },
       {
         "id": "rf-026",
@@ -4458,7 +5259,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "ciclu"
       },
       {
         "id": "rf-027",
@@ -4468,7 +5270,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "D"
-        ]
+        ],
+        "topicId": "fecundatie"
       },
       {
         "id": "rf-028",
@@ -4477,7 +5280,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "C"
-        ]
+        ],
+        "topicId": "ciclu"
       },
       {
         "id": "rf-029",
@@ -4486,7 +5290,8 @@ window.BB_QUIZ_INDEX = [
         "correct": [
           "B",
           "C"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rf-030",
@@ -4496,7 +5301,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "E"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rf-031",
@@ -4506,7 +5312,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "ovare"
       },
       {
         "id": "rf-032",
@@ -4517,7 +5324,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "trompe"
       },
       {
         "id": "rf-033",
@@ -4527,7 +5335,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "uter"
       },
       {
         "id": "rf-034",
@@ -4537,7 +5346,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "D"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rf-035",
@@ -4547,7 +5357,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "D"
-        ]
+        ],
+        "topicId": "vagin-vulva"
       },
       {
         "id": "rf-036",
@@ -4558,7 +5369,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "mamare"
       },
       {
         "id": "rf-037",
@@ -4568,7 +5380,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "ciclu"
       },
       {
         "id": "rf-038",
@@ -4579,7 +5392,8 @@ window.BB_QUIZ_INDEX = [
           "C",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "ovogeneza"
       },
       {
         "id": "rf-039",
@@ -4589,7 +5403,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "E"
-        ]
+        ],
+        "topicId": "ovogeneza"
       },
       {
         "id": "rf-040",
@@ -4599,7 +5414,8 @@ window.BB_QUIZ_INDEX = [
           "A",
           "B",
           "C"
-        ]
+        ],
+        "topicId": "recapitulare-mixta"
       },
       {
         "id": "rf-041",
@@ -4610,7 +5426,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "C",
           "E"
-        ]
+        ],
+        "topicId": "fecundatie"
       },
       {
         "id": "rf-042",
@@ -4621,7 +5438,8 @@ window.BB_QUIZ_INDEX = [
           "B",
           "D",
           "E"
-        ]
+        ],
+        "topicId": "fecundatie"
       }
     ],
     "ranges": [
@@ -4649,6 +5467,53 @@ window.BB_QUIZ_INDEX = [
         "id": "grile-41-42",
         "start": 41,
         "end": 42
+      }
+    ],
+    "topics": [
+      {
+        "id": "ovare",
+        "label": "Ovarele",
+        "lessonUrl": "sistemul_reproducator_feminin.html?q=Ovarele&section=organe"
+      },
+      {
+        "id": "trompe",
+        "label": "Trompele uterine",
+        "lessonUrl": "sistemul_reproducator_feminin.html?q=Trompele%20uterine&section=organe"
+      },
+      {
+        "id": "uter",
+        "label": "Uterul",
+        "lessonUrl": "sistemul_reproducator_feminin.html?q=Uterul&section=organe"
+      },
+      {
+        "id": "vagin-vulva",
+        "label": "Vaginul și vulva",
+        "lessonUrl": "sistemul_reproducator_feminin.html?q=Vaginul&section=organe"
+      },
+      {
+        "id": "mamare",
+        "label": "Glandele mamare",
+        "lessonUrl": "sistemul_reproducator_feminin.html?q=Glandele%20mamare&section=organe"
+      },
+      {
+        "id": "ciclu",
+        "label": "Ciclul menstrual și reglarea hormonală",
+        "lessonUrl": "sistemul_reproducator_feminin.html?q=Ciclul%20menstrual&section=fiziologie"
+      },
+      {
+        "id": "ovogeneza",
+        "label": "Ovogeneza",
+        "lessonUrl": "sistemul_reproducator_feminin.html?q=Oogeneza&section=fiziologie"
+      },
+      {
+        "id": "fecundatie",
+        "label": "Fecundația și implantarea",
+        "lessonUrl": "sistemul_reproducator_feminin.html?q=Fecunda%C8%9Bia&section=fiziologie"
+      },
+      {
+        "id": "recapitulare-mixta",
+        "label": "Recapitulare mixtă",
+        "lessonUrl": "sistemul_reproducator_feminin.html#home"
       }
     ]
   }

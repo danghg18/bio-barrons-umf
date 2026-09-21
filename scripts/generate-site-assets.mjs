@@ -4,6 +4,7 @@ import { extname } from 'node:path';
 import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
 import { loadSiteRegistry, publishedResources } from './site-registry.mjs';
+import { buildNotebookSections } from './notebook-sections.mjs';
 
 const root = new URL('../', import.meta.url);
 const check = process.argv.includes('--check');
@@ -30,6 +31,51 @@ function sitemapXml() {
 // Generate it before reference discovery and hashing so the precache always sees current bytes.
 const quizIndex = [];
 const storageKeys = new Set();
+const topicRegistry = JSON.parse(await readFile(new URL('data/quiz-topics.json', root), 'utf8'));
+const lessonFiles = new Set(chapters.map(chapter => chapter.url));
+const lessonSources = new Map();
+const normalizeHeading = value => value.replace(/<[^>]*>/g, '').replace(/&amp;/g, '&').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/\s+/g, ' ').trim();
+
+async function validateTopics(quiz) {
+  const entry = topicRegistry[quiz.storageKey];
+  if (!entry || !Array.isArray(entry.topics) || !entry.topics.length || !entry.questionTopics || typeof entry.questionTopics !== 'object' || Array.isArray(entry.questionTopics)) {
+    throw new Error(`Missing topic registry for ${quiz.storageKey}`);
+  }
+  const topicIds = new Set();
+  const topics = [];
+  for (const topic of entry.topics) {
+    if (!topic || typeof topic.id !== 'string' || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(topic.id) || topicIds.has(topic.id) || typeof topic.label !== 'string' || !topic.label.trim()) {
+      throw new Error(`Invalid or duplicate topic in ${quiz.storageKey}`);
+    }
+    topicIds.add(topic.id);
+    if (typeof topic.lessonUrl !== 'string' || !/^[a-z0-9_-]+\.html[?#]/.test(topic.lessonUrl)) throw new Error(`Invalid lesson destination for ${topic.id}`);
+    const destination = new URL(topic.lessonUrl, root);
+    const file = topic.lessonUrl.split(/[?#]/)[0];
+    if (!lessonFiles.has(file) || !destination.href.startsWith(root.href)) throw new Error(`Invalid lesson destination for ${topic.id}`);
+    if (!lessonSources.has(file)) lessonSources.set(file, await readFile(new URL(file, root), 'utf8'));
+    const html = lessonSources.get(file);
+    const route = destination.searchParams.get('section') || decodeURIComponent(destination.hash.slice(1));
+    const sections = [...html.matchAll(/\bid=["']page-([^"']+)["']/g)];
+    const sectionIndex = sections.findIndex(match => match[1] === route);
+    if (sectionIndex < 0 || (destination.hash && destination.hash.slice(1) !== route)) throw new Error(`Invalid lesson route for ${topic.id}`);
+    const query = destination.searchParams.get('q');
+    if (destination.search && (!query || !destination.searchParams.has('section') || [...destination.searchParams.keys()].some(key => !['q', 'section'].includes(key)))) throw new Error(`Invalid lesson destination for ${topic.id}`);
+    if (query) {
+      const section = html.slice(sections[sectionIndex].index, sections[sectionIndex + 1]?.index ?? html.length);
+      const headings = [...section.matchAll(/<h[1-6]\b[^>]*>([\s\S]*?)<\/h[1-6]>/gi)].map(match => normalizeHeading(match[1]));
+      if (!headings.some(heading => heading.includes(normalizeHeading(query)))) throw new Error(`Missing lesson heading for ${topic.id}: ${query}`);
+    }
+    topics.push({ id: topic.id, label: topic.label, lessonUrl: topic.lessonUrl });
+  }
+  const ids = new Set(quiz.questions.map(question => question.id));
+  for (const id of Object.keys(entry.questionTopics)) if (!ids.has(id)) throw new Error(`Unknown question mapping ${id} in ${quiz.storageKey}`);
+  for (const id of ids) {
+    if (!Object.hasOwn(entry.questionTopics, id)) throw new Error(`Missing topic mapping ${id} in ${quiz.storageKey}`);
+    if (!topicIds.has(entry.questionTopics[id])) throw new Error(`Unknown topic for ${id} in ${quiz.storageKey}`);
+  }
+  return { topics, questionTopics: entry.questionTopics };
+}
+
 for (const chapter of chapters) {
   for (const resource of (chapter.resources || []).filter(item => item.kind === 'quiz')) {
     const htmlUrl = new URL(resource.url, root);
@@ -47,6 +93,7 @@ for (const chapter of chapters) {
       throw new Error(`Invalid or duplicate quiz metadata in ${resource.url}`);
     }
     storageKeys.add(quiz.storageKey);
+    const { topics, questionTopics } = await validateTopics(quiz);
     const ids = new Set();
     const numbers = new Set();
     const rangeIds = new Set();
@@ -67,13 +114,24 @@ for (const chapter of chapters) {
         [...new Set(correct)].sort().join('') !== correct.join('')) {
         throw new Error(`Invalid quiz answer key ${id} in ${resource.url}`);
       }
-      return { id, number, rangeId: matches[0].id, correct };
+      return { id, number, rangeId: matches[0].id, correct, topicId: questionTopics[id] };
     });
     quizIndex.push({ chapterNum: chapter.num, name: chapter.name, url: resource.url, storageKey: quiz.storageKey,
-      version: quiz.version, questions, ranges });
+      version: quiz.version, questions, ranges, topics });
   }
 }
+for (const key of Object.keys(topicRegistry)) if (!storageKeys.has(key)) throw new Error(`Unknown quiz topic registry ${key}`);
+if (process.argv.includes('--validate-quiz-topics')) {
+  console.log(`Validated quiz topics: ${quizIndex.length} quizzes, ${quizIndex.reduce((total, quiz) => total + quiz.questions.length, 0)} questions`);
+  process.exit(0);
+}
 await emit('assets/js/quiz-index.js', `/* Generated by scripts/generate-site-assets.mjs. */\nwindow.BB_QUIZ_INDEX = ${JSON.stringify(quizIndex, null, 2)};\n`);
+
+// Derive the notebook's routes/titles from each published lesson once at build
+// time. Emit before discovery/hashing so this local catalog is cached with its
+// current content and --check detects authored section changes.
+const notebookSections = await buildNotebookSections(chapters, root);
+await emit('assets/js/notebook-sections.js', `/* Generated by scripts/generate-site-assets.mjs. */\nwindow.BB_NOTEBOOK_SECTIONS = ${JSON.stringify(notebookSections, null, 2)};\n`);
 
 const external = /^(?:[a-z]+:|\/\/|#|data:|mailto:)/i;
 const discovered = new Map();

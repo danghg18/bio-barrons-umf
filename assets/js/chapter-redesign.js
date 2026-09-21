@@ -656,28 +656,6 @@
     }
   }
 
-  function normalizeSearchValue(value) {
-    var text = String(value || "");
-    try {
-      return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-    } catch (error) {
-      return text.toLowerCase();
-    }
-  }
-
-  function indexText(text) {
-    var normalized = "";
-    var map = [];
-    String(text || "").split("").forEach(function (character, sourceIndex) {
-      var chunk = normalizeSearchValue(character);
-      for (var index = 0; index < chunk.length; index += 1) {
-        normalized += chunk[index];
-        map.push(sourceIndex);
-      }
-    });
-    return { normalized: normalized, map: map };
-  }
-
   function clearOwnedSearchMarks() {
     document.querySelectorAll('.search-found[data-bb-search="true"]').forEach(function (mark) {
       var parent = mark.parentNode;
@@ -688,67 +666,13 @@
     });
   }
 
-  // Highlight/search wrappers are transparent to matching. Authored element
-  // boundaries stay separate, so unrelated labels, cells and blocks cannot join.
-  // One logical hit may own several per-text-node markers; never extract a range
-  // across elements, which would split or clone the student's highlight markup.
+  // Catalog and lesson search share normalization, passage boundaries and hit order.
   function collectSearchTextMatches(query, options) {
-    var needle = normalizeSearchValue(String(query || "").trim());
-    if (!needle) return [];
-    var matches = [];
-    var limit = options && options.limit || Infinity;
-
-    document.querySelectorAll(".page-section").forEach(function (section) {
-      var text = "";
-      var pieces = [];
-      function flush() {
-        var indexed = indexText(text);
-        var from = 0;
-        while (from < indexed.normalized.length && matches.length < limit) {
-          var found = indexed.normalized.indexOf(needle, from);
-          if (found < 0) break;
-          var start = indexed.map[found];
-          var end = indexed.map[found + needle.length - 1] + 1;
-          // Include a decomposed accent with its final source character.
-          while (end < text.length && /[\u0300-\u036f]/.test(text[end])) end += 1;
-          var parts = pieces.filter(function (piece) {
-            return piece.start < end && piece.end > start;
-          }).map(function (piece) {
-            return { node: piece.node, start: Math.max(start, piece.start) - piece.start,
-              end: Math.min(end, piece.end) - piece.start };
-          });
-          matches.push({ sectionId: options && options.fullSectionId ? section.id : section.id.replace(/^page-/, ""), parts: parts });
-          from = found + needle.length;
-        }
-        text = "";
-        pieces = [];
-      }
-      function visit(node) {
-        if (matches.length >= limit) return;
-        if (node.nodeType === Node.TEXT_NODE) {
-          var value = node.textContent || "";
-          if (value) pieces.push({ node: node, start: text.length, end: text.length + value.length });
-          text += value;
-          return;
-        }
-        if (node.nodeType !== Node.ELEMENT_NODE) return;
-        if (node.matches("script, style, nav, button, input, textarea, select, svg")) {
-          flush();
-          return;
-        }
-        var transparent = node.matches('mark.hl, .search-found[data-bb-search="true"]');
-        if (!transparent) flush();
-        Array.from(node.childNodes).forEach(visit);
-        if (!transparent) flush();
-      }
-      visit(section);
-      flush();
-    });
-    return matches;
+    return window.BBSearchText.collect(query, options);
   }
 
   function collectOwnedSearchMatches(query) {
-    return collectSearchTextMatches(query, { limit: 300 });
+    return collectSearchTextMatches(query);
   }
 
   function renderOwnedSearchMarks(matches) {
@@ -1150,6 +1074,16 @@
       setHighlighterPaletteOpen(!state.highlighterPaletteOpen);
     });
 
+    var glossaryLink = document.getElementById("nav-glossary-link");
+    if (!glossaryLink) {
+      glossaryLink = document.createElement("a");
+      glossaryLink.id = "nav-glossary-link";
+      glossaryLink.href = "glosar.html";
+      glossaryLink.className = "nav-settings-btn";
+      glossaryLink.innerHTML = '<svg class="bb-settings-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 5c-3-2-6-2-9-1v15c3-1 6-1 9 1 3-2 6-2 9-1V4c-3-1-6-1-9 1Z"/><path d="M12 5v15"/></svg><span>Glosar</span>';
+    }
+    panel.appendChild(glossaryLink);
+
     document.addEventListener("bb:lesson-section-change", function () {
       setSettingsOpen(false, false);
     });
@@ -1461,7 +1395,7 @@
     if (!study || !chapter || !main || !nav) return;
 
     var contentSections = Array.prototype.slice.call(
-      main.querySelectorAll(".page-section[id^='page-']:not(.chapter-home)")
+      main.querySelectorAll(".page-section[id^='page-']:not(.chapter-home):not([data-curriculum-excluded])")
     );
     var sectionIds = contentSections.map(getStudyRoute).filter(Boolean);
     if (!sectionIds.length) return;
@@ -1482,10 +1416,18 @@
     controls.className = "bb-lesson-completion";
     controls.setAttribute("aria-labelledby", "bb-lesson-completion-title");
     controls.innerHTML =
-      '<div class="bb-lesson-completion-copy"><h2 id="bb-lesson-completion-title">Finalizează lecția</h2>' +
+      '<div class="bb-lesson-completion-copy"><h2 id="bb-lesson-completion-title">Progresul capitolului</h2>' +
       '<p class="bb-lesson-completion-status" aria-live="polite"></p></div>' +
-      '<div class="bb-lesson-completion-actions"><button type="button" class="bb-lesson-completion-button">Marchează lecția ca parcursă</button>' +
+      '<div class="bb-lesson-completion-actions"><button type="button" class="bb-lesson-completion-button">Marchează capitolul ca parcurs</button>' +
       '<a class="bb-next-lesson" hidden></a></div>';
+    var quizResource = (chapter.resources || []).find(function (resource) { return resource.kind === "quiz"; });
+    if (quizResource) {
+      var practice = document.createElement("a");
+      practice.className = "bb-practice-lesson";
+      practice.href = quizResource.url;
+      practice.textContent = "Exersează grilele acestui capitol";
+      controls.querySelector(".bb-lesson-completion-actions").appendChild(practice);
+    }
     main.appendChild(controls);
 
     var completionButton = controls.querySelector(".bb-lesson-completion-button");
@@ -1539,10 +1481,10 @@
 
       completionButton.classList.toggle("is-reset", lessonProgress.isComplete);
       completionButton.textContent = lessonProgress.isComplete
-        ? "Resetează progresul lecției"
-        : "Marchează lecția ca parcursă";
+        ? "Resetează progresul capitolului"
+        : "Marchează capitolul ca parcurs";
       completionStatus.textContent = lessonProgress.isComplete
-        ? "Lecție completă · " + lessonProgress.completed + " din " + lessonProgress.total + " secțiuni parcurse."
+        ? "Capitol parcurs · " + lessonProgress.completed + " din " + lessonProgress.total + " secțiuni parcurse."
         : lessonProgress.completed + " din " + lessonProgress.total + " secțiuni parcurse.";
 
       var next = lessonProgress.isComplete ? nextPublishedChapter() : null;
@@ -1562,7 +1504,7 @@
 
     function activeContentSection() {
       var active = main.querySelector(".page-section.active");
-      return active && !active.classList.contains("chapter-home") ? active : null;
+      return active && contentSections.indexOf(active) !== -1 ? active : null;
     }
 
     function completeActiveAtEnd() {
@@ -1596,7 +1538,7 @@
         entries.forEach(function (entry) {
           if (!entry.isIntersecting) return;
           var section = entry.target.closest(".page-section.active");
-          if (section && !section.classList.contains("chapter-home")) {
+          if (section && contentSections.indexOf(section) !== -1) {
             study.completeSection(chapter.num, getStudyRoute(section));
           }
         });
@@ -1609,7 +1551,7 @@
     completionButton.addEventListener("click", function () {
       var lessonProgress = study.getLessonProgress(chapter.num, sectionIds);
       if (lessonProgress.isComplete) {
-        if (window.confirm("Resetezi progresul acestei lecții?")) study.resetLesson(chapter.num);
+        if (window.confirm("Resetezi progresul acestui capitol?")) study.resetLesson(chapter.num);
       } else {
         study.completeLesson(chapter.num, sectionIds);
       }
@@ -1648,6 +1590,7 @@
     enhanceMapCardsAndAccordions();
     setupSearch();
     ensureSidebarControls();
+    if (window.BBGlossaryNavigation) window.BBGlossaryNavigation.init();
     document.querySelectorAll('main table').forEach(function (table) {
       var cells = Array.from(table.querySelectorAll('tbody td'));
       var simple = cells.length && cells.every(function (cell) {

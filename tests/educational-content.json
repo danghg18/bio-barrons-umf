@@ -2,68 +2,66 @@
   "celula_si_fiziologia_celulara.html": [
     {
       "id": "page-home",
-      "text": "04f3a594568aa0910a9e883cd0446bac22c7c24021c6f5ce336ecf507a5c3d46",
+      "text": "1eb79d63f688ad17b05029f392200b808ac6e24f840856035c5ba16126faa82b",
       "images": [],
       "tables": []
     },
     {
       "id": "page-introducere",
-      "text": "dc38d755a029a8d957cddaf22973a416396c5c13d33f5567fd8f5c897c2f11be",
+      "text": "87783207c7dd02d004f93391a59507a7051253b361136a6786052d21e978d0af",
       "images": [],
       "tables": []
     },
     {
       "id": "page-structura",
-      "text": "e35a4775a53279efa1c4c3a72066a337570123601c14b1edac3e24c860091937",
-      "images": [],
+      "text": "526e0f9ae9a682180d0932e426475edf86a022b5b483e83235a63939c892e6c7",
+      "images": [
+        "assets/images/chapters/cell/figura-3-1-sursa-2022.webp"
+      ],
       "tables": []
     },
     {
       "id": "page-membrana",
-      "text": "c35c8db97e77e56b2ee7653f3c3a00cffd9945d6fa767a0d8a65978833c7d7b2",
-      "images": [
-        "assets/images/chapters/cell/mozaic-fluid-barrons.png.webp"
-      ],
+      "text": "c040a4e7bffab8bed12ca186c9705a1827c8c156297351d337ca97de32276392",
+      "images": [],
       "tables": []
     },
     {
       "id": "page-transport",
-      "text": "50f494272b4ba93fe02cb2124a2fb912282e8fc429e093ee181ad07b6d921b45",
+      "text": "8dbfbdb0c5e30b5d705c65e9ad0f4a047a78a392159f69ec786458d7a8ed1695",
       "images": [
-        "assets/images/chapters/cell/osmoza-barrons.png.webp",
-        "assets/images/chapters/cell/endocitoza-barrons.png.webp"
+        "assets/images/chapters/cell/figura-3-2-sursa-2022.webp",
+        "assets/images/chapters/cell/figura-3-3-sursa-2022.webp"
       ],
       "tables": [
-        "5f00dca2b7c2b44f7cc09c5b1a2464bfbcaaad5bd30352ca947a0c527a3e8586"
+        "00746e88b105f539eba99aa8668de8b9b14c52ae45a6fdc847ab610aa983d31f"
       ]
     },
     {
       "id": "page-nucleu",
-      "text": "f4cb38393f37218d7996806765b67b53520502cda84abbc0d791419589a8f7f0",
+      "text": "d6657536004762a1b1d2e9b02e944c183f681a6bdf475ac40659c3ba81b14643",
       "images": [
-        "assets/images/chapters/cell/tipuri-de-celule-barrons.png.webp"
+        "assets/images/chapters/cell/figura-3-4-sursa-2022.webp"
       ],
       "tables": []
     },
     {
       "id": "page-organite",
-      "text": "450c0555d3f911d0d5eff968d0bc767cdd1b2f02a3fd8498af2925cc1b2bdd8d",
+      "text": "71f3241c9b6414fe941ec2bec8c5bb0c11f6eae49ee71c1de3d2f69d994cca25",
       "images": [
-        "assets/images/chapters/cell/celula-barrons.png.webp"
+        "assets/images/chapters/cell/figura-3-5-sursa-2022.webp"
       ],
       "tables": []
     },
     {
       "id": "page-energie",
-      "text": "59daa5f65fd9b8dd70c081a258d7a0f187b85671c5aa7fc7e3486cec2ed708a1",
+      "text": "5444a653c895e7a1928eb0e88f41d07e056655cd52fe48ce6c6f4f00bcbc4a17",
       "images": [],
-      "tables": [
-        "b50885775d0821347a8dae8f120f3bc8295a706583733f4349fadbc1cb83b773"
-      ]
+      "tables": []
     },
     {
       "id": "page-recapitulare",
-      "text": "bc11796f48439874e3881e54fa846fffe662c7ab80c203987df397a885fcb62e",
+      "text": "afdbeb0fd106e09c7997e7eaf6af1d4653d280f0f341bb4d4448e43006d85926",
       "images": [],
       "tables": []
     }
@@ -103,48 +101,49 @@
   "introducere_anatomie_fiziologie.html": [
     {
       "id": "page-home",
-      "text": "4bd08ddbedb85a8554cace0a576fe86f85fb428a0fa51a63d2297c924581a27c",
+      "text": "74ff273a09b2d879540990a965bf402c6ac6db805445b51bc1310879f7c32d7f",
       "images": [],
       "tables": []
     },
     {
       "id": "page-introducere",
-      "text": "afb95f786752054bc761594453e4e080dc167447714cb549cbafc1960fce8bd5",
+      "text": "3d005f358f6596bf3dde9c8d1f4f3bd495e3c81d5de4746f09d4a2bc4aa0ceb5",
       "images": [],
       "tables": []
     },
     {
       "id": "page-organizare",
-      "text": "e30e20ef02d7e4257ef1089e940059a595283c6a7a0e265f8b2ab56c716e051c",
+      "text": "9257ba0918ffce0ad79ff629df096875364753b4d043af167da789b79e6d3255",
       "images": [
-        "assets/images/chapters/introduction/niveluri-organizare-barrons.png.webp"
+        "assets/images/chapters/introduction/figura-1-1-sursa-2022.webp"
       ],
       "tables": [
-        "74f5731919bcdb75116a600ea49c5721335898368e7dd669d04ea18c87358bc1"
+        "454735ebfe13a1624a84d5567574f7b944fc1a16076e9214ae5c955c9820472b"
       ]
     },
     {
       "id": "page-functii",
-      "text": "cf1f081aca284ed635a8f4f6a7f872de4977da1d8daef64c203247a3b6a0458d",
+      "text": "7e19b71d79935647bc69b9420fb85df4a603430c7aee79f1843d95a9a73735d5",
       "images": [],
       "tables": []
     },
     {
       "id": "page-termeni",
-      "text": "eb3baf01297e085340554e4b130346b0e80ceea3046a959545d4618f9c83a4b4",
+      "text": "bf34c3672677c2265fb79fdec3d4332f065cf1956377414f9e8513f127b9a968",
       "images": [
-        "assets/images/chapters/introduction/pozitie-anatomica-barrons.png.webp",
-        "assets/images/chapters/introduction/termeni-directionali-barrons.png.webp",
-        "assets/images/chapters/introduction/planuri-barrons.png.webp"
+        "assets/images/chapters/introduction/figura-1-2-sursa-2022.webp",
+        "assets/images/chapters/introduction/figura-1-3-sursa-2022.webp"
       ],
-      "tables": []
+      "tables": [
+        "b8e6c14ed45d1a58d3d98a5f86a08ec5792e4eff9f3a0801c8d150643be4afea"
+      ]
     },
     {
       "id": "page-cavitati",
-      "text": "31e9a56e2c2abfdfa006b810a5d1fc98e540a3db99ad9c1ac685eb76b88ce927",
+      "text": "9905a210af25eb8f737589d710be2527d8d338cb1ffa29ec5f3b47b90be608d6",
       "images": [
-        "assets/images/chapters/introduction/cavitatile-corpului-barrons.png.webp",
-        "assets/images/chapters/introduction/regiuni-anatomice-barrons.png.webp"
+        "assets/images/chapters/introduction/figura-1-4-sursa-2022.webp",
+        "assets/images/chapters/introduction/figura-1-5-sursa-2022.webp"
       ],
       "tables": []
     }
@@ -152,228 +151,235 @@
   "oasele_si_articulatiile.html": [
     {
       "id": "page-introducere",
-      "text": "1955425d7641a7cf3890ca2c3b5aea3e123c2417c1e0f41f697e8138975a6202",
+      "text": "bba2a5e48e2db94d31144c067c5e6bd1b12c2a854026999e5224029ed0fadc26",
       "images": [],
-      "tables": []
-    },
-    {
-      "id": "page-osul",
-      "text": "036bfce767961f9ab82e9e19549fb55ee861cab718dec3f5278e9891620c4e87",
-      "images": [
-        "assets/images/chapters/bones-and-joints/tipuri-de-oase-barrons.png.webp",
-        "assets/images/chapters/bones-and-joints/os-lung-barrons.png.webp",
-        "assets/images/chapters/bones-and-joints/histologie-os-barrons.png.webp"
-      ],
       "tables": [
-        "f74604b712bb987b49a713d5f018cf4954f5e245159d8e9863adb6659daf4464"
+        "df7aaa8511bc537513c13b6c3ab2cabaa8ea2850410471a4e88964233f014090"
       ]
     },
     {
-      "id": "page-articulatii",
-      "text": "18aaff6a3a8794c9d1cd444df381e4801a3724cc51ef7e724289057a27b9d083",
+      "id": "page-osul",
+      "text": "93db615494373e1ca87be0217be5dd47feab4174def7f240879c77dad77b8a85",
       "images": [
-        "assets/images/chapters/bones-and-joints/tipuri-de-articulatii-barrons.png.webp"
+        "assets/images/chapters/bones-and-joints/figura-6-1-sursa-2022.webp",
+        "assets/images/chapters/bones-and-joints/figura-6-2-sursa-2022.webp",
+        "assets/images/chapters/bones-and-joints/figura-6-3-sursa-2022.webp"
       ],
       "tables": []
+    },
+    {
+      "id": "page-articulatii",
+      "text": "1badd390a11fd5937576b98032cc369b30191b137469e97d2ee052e979132680",
+      "images": [
+        "assets/images/chapters/bones-and-joints/figura-6-4-sursa-2022.webp",
+        "assets/images/chapters/bones-and-joints/figura-6-6-sursa-2022.webp"
+      ],
+      "tables": [
+        "d0fa25bfa9133ec2eb225b0dea1b7d87bf01ba6acdffa13c6282c232f65a2a52"
+      ]
     }
   ],
   "sistemul_nervos.html": [
     {
       "id": "page-sistem-nervos-central",
-      "text": "907c18b7de08316a9300636ee93ca3d53f2ddbe5b1dbcbccde4f9e2801d8ada3",
+      "text": "4d64ef72edddff60e738edaea7f264b0ae13922bd3b6cae71dad6ee6c2c38242",
       "images": [
-        "assets/images/chapters/nervous-system/regiuni-sn-barrons.png.webp",
-        "assets/images/chapters/nervous-system/structuri-sn-barrons.png.webp",
-        "assets/images/chapters/nervous-system/ms-transversal-barrons.png.webp",
-        "assets/images/chapters/nervous-system/encefal-barrons.png.webp",
-        "assets/images/chapters/nervous-system/lateral-encefal-barrons.png.webp",
-        "assets/images/chapters/nervous-system/ventriculi-cerebrali-barrons.png.webp",
-        "assets/images/chapters/nervous-system/tc-diencefal-barrons.png.webp"
+        "assets/images/chapters/nervous-system/figura-11-1-sursa-2022.webp",
+        "assets/images/chapters/nervous-system/figura-11-2-sursa-2022.webp",
+        "assets/images/chapters/nervous-system/figura-11-3-sursa-2022.webp",
+        "assets/images/chapters/nervous-system/figura-11-4-sursa-2022.webp",
+        "assets/images/chapters/nervous-system/figura-11-5-sursa-2022.webp",
+        "assets/images/chapters/nervous-system/figura-11-6-sursa-2022.webp",
+        "assets/images/chapters/nervous-system/figura-11-7-sursa-2022.webp"
       ],
       "tables": [
-        "c76ec3919e5eb009200cd8f1bcd1b69472095956ad3c4e3ef27e108f85a2634f",
-        "aa58b104e49237b92c3bc0c57b971bd493d043a778e48fd04d02c2ac8627bbd8"
+        "658fc5ce284af8247310cc98f28544cfaa334d564859e3f10a4e3d08d8442ed9",
+        "84355fe7faf1841693149b38e70e36f6bb37f10f1cd4f7a19e24eef21abc9db0"
       ]
     },
     {
       "id": "page-sistem-nervos-periferic",
-      "text": "0f715ca81c52221e322938b3bc35af08a20c98b6926afe25e5a1ea0b84fbdd82",
+      "text": "979c3aff8db0a2ded3192b9979c8bd362b035e299261697e0e5db77b8b6feff1",
       "images": [
-        "assets/images/chapters/nervous-system/nervi-cranieni-barrons.png.webp",
-        "assets/images/chapters/nervous-system/snp-barrons.png.webp"
+        "assets/images/chapters/nervous-system/figura-11-8-sursa-2022.webp",
+        "assets/images/chapters/nervous-system/figura-11-9-sursa-2022.webp"
       ],
       "tables": [
-        "32567cba49d17eea0b7a2ac253cd45b4ff034ac5ca398622e4984d6aa154e920",
+        "60c13c07893b66cab69b447a6442859490266315e9dff87b5ea0108013a4b1e6",
         "ee99f7ff088ab24e910ce0bf9b46bf40fa7ecfa1908849780eff7d82214eede4"
       ]
     },
     {
       "id": "page-sistem-nervos-autonom",
-      "text": "001b68d3a3ef8f4dd3e2a72e3597b4a32ef9d9eaee8db34c4eca2a2f97bdc7d3",
+      "text": "672a638147fc1e44b27953bc56fcd05187a1521550ae7e88c795ea8c7285da27",
       "images": [
-        "assets/images/chapters/nervous-system/snv-barrons.png.webp"
+        "assets/images/chapters/nervous-system/figura-11-10-sursa-2022.webp"
       ],
       "tables": [
-        "4284db945746333e10f526306266f2444254505940297c94945b6a38c04a8ed9"
+        "b443d7320344a86c5737512c6f99738b391490dd11612b43e36c22fc3462c1ef"
       ]
     }
   ],
   "sistemul_renal_complet.html": [
     {
       "id": "page-home",
-      "text": "538a49b5ba5a20d4ba7a25c77d42228387de0fdb4a8fae1d26c1f58d62872f1b",
+      "text": "6d2bb7a4a1953ae120aea31de3c5a57dce2f3714c500724b5914794dd46c7528",
       "images": [],
       "tables": []
     },
     {
       "id": "page-rinichii",
-      "text": "c815905c70643058c984d1859acf11e0d0ee0fd9e326a9de2fdef6b07231bcad",
+      "text": "ac4d464fc58c35da84960a62ce3484f83d0f82b5c759fd2220463eadfb8b395b",
       "images": [
-        "assets/images/chapters/renal-system/sistemul-urinar-imag-noua.png.webp",
-        "assets/images/chapters/renal-system/rinichi-si-componente-barrons.png.webp"
+        "assets/images/chapters/renal-system/figura-20-1-barrons.webp",
+        "assets/images/chapters/renal-system/figura-20-2-barrons.webp",
+        "assets/images/chapters/renal-system/figura-20-3-barrons.webp"
       ],
       "tables": []
     },
     {
       "id": "page-nefron",
-      "text": "56a6df9475736f35bd8e0048f0b672ab12ac9d8376dc15f85774d87be069d793",
+      "text": "3919f5c12627ba132b8a862a1d9dd297983c13007cf3d5c52c7f5c8fea87fb1a",
       "images": [
-        "assets/images/chapters/renal-system/functia-nefron-barrons.png.webp",
-        "assets/images/chapters/renal-system/nefron-detaliat-barrons.png.webp",
-        "assets/images/chapters/renal-system/pasajul-moleculelor-barrons.png.webp",
-        "assets/images/chapters/renal-system/mecanism-contracurent-barrons.png.webp"
+        "assets/images/chapters/renal-system/figura-20-4-barrons.webp",
+        "assets/images/chapters/renal-system/figura-20-5-barrons.webp",
+        "assets/images/chapters/renal-system/figura-20-6-barrons.webp"
       ],
       "tables": [
-        "880d1e9b2077a97dd73004d8f0fe5cd4f81933d3d5e1def2166d0111b9c6519b"
+        "1dae0ecf1ce33f01cf4a4f69c4018bc6eedfe6cd33a17ef0a60756e460527271",
+        "e9d64480fbfd5dd92c10f0167bfb930903d47c10f83538a80cfe837a089286b0"
       ]
     },
     {
       "id": "page-hormoni",
-      "text": "b880490d6aef68f1145d77e6c6166090e91bc1b4be26ec5fc627d1ac512b8ff1",
+      "text": "c63a79be9c941df61932a2f518aae4cce5bc8fe6e2f418ab8d2e7aa8825cb1e5",
       "images": [
-        "assets/images/chapters/renal-system/adh-aldosteron-barrons.png.webp"
+        "assets/images/chapters/renal-system/figura-20-7-barrons.webp"
       ],
       "tables": [
-        "d6d2ce287f786b57eabb655d254f861a6c472e2782cc9721a56457ab4b9ccd98"
+        "85872e652f1708e9019bba6de62ad189104a3754cace948010b0b07320d84d4a"
       ]
     },
     {
       "id": "page-anexe",
-      "text": "e591d8220f71b799bf2f8b92f6f8ab1ba1b98027e26d1f6199589a93c3fd3701",
+      "text": "50929434dd177789f527ae73fc694e1621b22f4b79fcb8288e876664ce0eee47",
       "images": [
-        "assets/images/chapters/renal-system/structuri-anexe-barrons.png.webp",
-        "assets/images/chapters/renal-system/alte-organe-excretorii-barrons.png.webp"
+        "assets/images/chapters/renal-system/figura-20-8-barrons.webp",
+        "assets/images/chapters/renal-system/figura-20-9-barrons.webp"
       ],
       "tables": []
     },
     {
       "id": "page-mindmap",
-      "text": "7044da69f6e8830c4b725609f7bc2dd4c74a84062836ed68ac88577b7397175d",
+      "text": "4ff719cdaf6d8faf699d1d3d9f1499e165035fa87f9d9ec072541ee8ed2ed817",
       "images": [],
-      "tables": []
+      "tables": [
+        "e9d64480fbfd5dd92c10f0167bfb930903d47c10f83538a80cfe837a089286b0"
+      ]
     }
   ],
   "sistemul_reproducator_feminin.html": [
     {
       "id": "page-home",
-      "text": "ca43771e44502c98998ed508f6a0610c7a7abb94ef165bf20debac20f169ce53",
+      "text": "911de6976817855a6665e03ec5cbf5cc9093a64cc2b8c8723c840bf6794c94b4",
       "images": [],
       "tables": []
     },
     {
       "id": "page-intro",
-      "text": "597cea11b45dc91483beaf4e9f2dc2d9d63ad53429b1e434b8103163c3560f95",
+      "text": "3371dbf491aef82c608e3a988b50f9c30d0bee52f0673e55825769c276393b61",
       "images": [
-        "assets/images/chapters/female-reproductive-system/tract-genital-lateral-barrons.png.webp"
+        "assets/images/chapters/female-reproductive-system/figura-23-1-barrons.webp"
       ],
       "tables": []
     },
     {
       "id": "page-organe",
-      "text": "de9ec243508956b60907003e367a9eac34ca7f8e13ac20756a7d08ade616cc42",
+      "text": "f72357f8630268d01d30492f809844a93941d6635cfbc78d6823937c51c568bd",
       "images": [
-        "assets/images/chapters/female-reproductive-system/tract-genital-feminin-barrons.png.webp",
-        "assets/images/chapters/female-reproductive-system/uter-trompe-barrons.png.webp",
-        "assets/images/chapters/female-reproductive-system/vulva-barrons.png.webp",
-        "assets/images/chapters/female-reproductive-system/san-barrons.png.webp"
+        "assets/images/chapters/female-reproductive-system/figura-23-2-barrons.webp",
+        "assets/images/chapters/female-reproductive-system/figura-23-3-barrons.webp",
+        "assets/images/chapters/female-reproductive-system/figura-23-4-barrons.webp",
+        "assets/images/chapters/female-reproductive-system/figura-23-5-barrons.webp"
       ],
       "tables": [
-        "042dc84696de9c28b33956c200fdef07321acfd49c1bb49d255473f542897b02"
+        "0815a60c2229c47bccfef1ec523f837851f20529c0a72e58559e816586e753a6"
       ]
     },
     {
       "id": "page-fiziologie",
-      "text": "d98f333a8a10b4ba049748267dd5f5ac5aea19f5e7f0b46e1146ddc809473285",
+      "text": "38253b8a15e3f9a76de2a32c0580bbea00a63665dec8ee3618cfe9220c262562",
       "images": [
-        "assets/images/chapters/female-reproductive-system/ciclul-menstrual-barrons.png.webp",
-        "assets/images/chapters/female-reproductive-system/formare-deav-ovulului-barrons.png.webp",
-        "assets/images/chapters/female-reproductive-system/ovar-lunar-barrons.png.webp",
-        "assets/images/chapters/female-reproductive-system/fecundatia-barrons.png.webp",
-        "assets/images/chapters/female-reproductive-system/dupa-fecundatie-barrons.png.webp"
+        "assets/images/chapters/female-reproductive-system/figura-23-6-barrons.webp",
+        "assets/images/chapters/female-reproductive-system/figura-23-7-barrons.webp",
+        "assets/images/chapters/female-reproductive-system/figura-23-8-barrons.webp",
+        "assets/images/chapters/female-reproductive-system/figura-23-9-barrons.webp",
+        "assets/images/chapters/female-reproductive-system/figura-23-10-barrons.webp"
       ],
       "tables": [
-        "29ecf8660dfc18d844b819102319086b4da20a912dbcfa0bd71babd8576c4acf"
+        "60025faf4a70d22e19cae22de762e545c977a1ab50d3e8c7ab6fd648e7f5a3ba"
       ]
     }
   ],
   "sistemul_reproducator_masculin.html": [
     {
       "id": "page-home",
-      "text": "b99246ee70146b7f20bc81879ce63fdffc23fba552f9b7e03e3ec374e501c185",
+      "text": "859fd5f4781f782b447ccbaba5e6df2940b15f39461dc262f49826e9f3789f71",
       "images": [],
       "tables": []
     },
     {
       "id": "page-testiculele",
-      "text": "8ad968b58af759f2745458e5c880615d9352865a7a1e57e6c946d04e7a696b80",
+      "text": "2f8e1a9bd7e9001d8847ebe2eb31cfd879522a1e936dcdffbc5b1ebcee4fc8d0",
       "images": [
-        "assets/images/chapters/male-reproductive-system/sist-rep-masculin-barrons.webp",
-        "assets/images/chapters/male-reproductive-system/spermatogeneza-barrons.webp",
-        "assets/images/chapters/male-reproductive-system/structura-spermatozoid-barrons.webp"
+        "assets/images/chapters/male-reproductive-system/figura-22-1-barrons.webp",
+        "assets/images/chapters/male-reproductive-system/figura-22-2-barrons.webp",
+        "assets/images/chapters/male-reproductive-system/figura-22-3-barrons.webp",
+        "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
       ],
       "tables": [
-        "bc5da55c4db7df1b58c52b5dd0338962a3d23efff48bf2157761f9b17a0f56b3",
-        "3a97b139e6b75aa259a04d849d6f5531f308042db15d112fd414bcdcf91e205e"
+        "475fa1912f4baf6fbfe589d9b0b1b1dea16826a18b2887851523f5952b33b0ed"
       ]
     },
     {
       "id": "page-ducte",
-      "text": "928d5bd344fabfdb1214405ac8eaccd6c58e40e787652577ba15b3adc9853d16",
+      "text": "44ce81690dd6479d04733774803df1476e1effc6b1e3b970d44470da857c900f",
       "images": [
-        "assets/images/chapters/male-reproductive-system/sistem-ducte-barrons.webp",
-        "assets/images/chapters/male-reproductive-system/ducte-organe-masculine-barrons.webp"
+        "assets/images/chapters/male-reproductive-system/figura-22-5-barrons.webp"
       ],
       "tables": []
     },
     {
       "id": "page-hormoni",
-      "text": "a4702fb02ab84d6fd3c72d17bd1de7d9d23faa47388569991010fab9b8c8bc58",
+      "text": "6ceb47e5b34819f36dbf6470c4262da0d52c9d8ff5fd13d193664d46d498c165",
       "images": [],
-      "tables": []
+      "tables": [
+        "4e5616b319901b6c7099563bed1485446cc8eb0fd4d295f7aca4781e1cdb6e33"
+      ]
     }
   ],
   "tesutul_muscular.html": [
     {
       "id": "page-tesutul-muscular",
-      "text": "e9174d39f3f4f3171fe8a34603d0265b7cd44a032d206b63369cb4fd5ae1f62a",
+      "text": "0ab66374b88b55f90eddca548febf4616026ca9870230dcfe1ed7a22c2b46674",
       "images": [],
       "tables": [
-        "684ea418087b28dccc16231d5cada0f8cdb62d889ffa595ae9771f6b3a9fe294"
+        "aeb8fc72958340c13244dd72b19cfdc0e51e25ddaafa065e0a953000a0cbc3b4"
       ]
     },
     {
       "id": "page-muschiul-striat",
-      "text": "5aef3e04a1490ae7964d2e6d789b8841b5f625011b2133b4ab45faa1065659d9",
+      "text": "e0d46957461f95afd7f6b23054635ec6b36202a9224e663b704c111f6d52df1d",
       "images": [
-        "assets/images/chapters/muscular-tissue/muschiul-striat-barrons.png.webp"
+        "assets/images/chapters/muscular-tissue/figura-8-1-sursa-2022.webp"
       ],
       "tables": []
     },
     {
       "id": "page-energia",
-      "text": "179882ee3e5f7e2d5d95e92931974cecd507d3a74c111d2671627ba2a54aad75",
+      "text": "364ff1b78680dd81dfcb732661ee2bc4166648d3b8657a14e814ad715d0d64da",
       "images": [
-        "assets/images/chapters/muscular-tissue/conversia-energetica-musculara-barrons.png.webp"
+        "assets/images/chapters/muscular-tissue/figura-8-5-sursa-2022.webp"
       ],
       "tables": []
     }
@@ -381,37 +387,454 @@
   "tesutul_nervos.html": [
     {
       "id": "page-organizare",
-      "text": "c516be4bd2bfd071c2cb76ed68763acceef836fa6df3adbd0b484554ce1fb6cb",
+      "text": "190bc663c390d9e0fa2090a03160eaf10833192499e79250c4d40689664cadd8",
       "images": [
-        "assets/images/chapters/nervous-tissue/snc-snp-barrons.png.webp",
-        "assets/images/chapters/nervous-tissue/neuroni-cel-gliale-barrons.png.webp",
-        "assets/images/chapters/nervous-tissue/tipuri-de-neuroni-barrons.png.webp",
-        "assets/images/chapters/nervous-tissue/formarea-tecii-de-mielina-barrons.png.webp"
+        "assets/images/chapters/nervous-tissue/figura-10-1-sursa-2022.webp",
+        "assets/images/chapters/nervous-tissue/figura-10-2-sursa-2022.webp",
+        "assets/images/chapters/nervous-tissue/figura-10-3-sursa-2022.webp",
+        "assets/images/chapters/nervous-tissue/figura-10-4-sursa-2022.webp"
       ],
       "tables": []
     },
     {
       "id": "page-fiziologia-nervilor",
-      "text": "2063405ed56dcd4b1592c0a8ae50d8926d8181f04188e4ee7cee24c9c2f999d3",
+      "text": "5cda1ff53dc3d1e73f24d73fa0730ebfb9e82a85afd25780ae5b31f7f2297c38",
       "images": [
-        "assets/images/chapters/nervous-tissue/arc-reflex-tipic-barrons.png.webp",
-        "assets/images/chapters/nervous-tissue/dezechilibru-ionic-barrons.png.webp",
-        "assets/images/chapters/nervous-tissue/transmiter-pa-barrons.png.webp",
-        "assets/images/chapters/nervous-tissue/neuron-amielinic-mielinic-barrons.png.webp"
+        "assets/images/chapters/nervous-tissue/figura-10-5-sursa-2022.webp",
+        "assets/images/chapters/nervous-tissue/figura-10-6-sursa-2022.webp",
+        "assets/images/chapters/nervous-tissue/figura-10-7-sursa-2022.webp",
+        "assets/images/chapters/nervous-tissue/figura-10-8-sursa-2022.webp"
       ],
       "tables": [
-        "25729641f44d5717a91406589395a7bbef5039c72768ea7d8d8f4c388d9da81b"
+        "c7e367461a020aa110594e1964cdedb22d2bc5cfeb659e3786b9c2a7856c2f43"
       ]
     },
     {
       "id": "page-sinapsa",
-      "text": "f8509ced93e43a079fcfcb774a4122a175cb5057d48345b64414fd831335e485",
+      "text": "40da69b2df5e2d8b40d7d9d36d5f8b1751212c3c5c042b9613140599046a2ae8",
       "images": [
-        "assets/images/chapters/nervous-tissue/activitatea-sinaptica-barrons.png.webp"
+        "assets/images/chapters/nervous-tissue/figura-10-9-sursa-2022.webp"
       ],
       "tables": [
-        "a1b6a33f6893564eadef128dea8f86a669e1b7a57fa9107d96c04e7c6a852188"
+        "13daa33311ec2d8ecce6588dfd1f7d5a8e7c6276063f302c906d109771049c18"
       ]
+    }
+  ],
+  "organele_de_simt.html": [
+    {
+      "id": "page-ochiul-si-vederea",
+      "text": "ac3d1c6ef05014e3f211195f043a352615963d6edc32b2d0cab9c93f66d65b67",
+      "images": [
+        "assets/images/chapters/sense-organs/figura-12-1-sursa-2022.webp",
+        "assets/images/chapters/sense-organs/figura-12-2-sursa-2022.webp"
+      ],
+      "tables": [
+        "7b0bb286347d4a1bc08e8bb43de00a67963ed44f4ae437e946bf4db4daed11c7",
+        "a0bc0f69681c8c0e5133ece31807fc911ca63887e19bf91f6a06e9334e8652e0"
+      ]
+    },
+    {
+      "id": "page-urechea-si-auzul",
+      "text": "f7a997a6bc727f4ca13ca0399f59734c94487f55bb17fb1cd3bf11326203b516",
+      "images": [
+        "assets/images/chapters/sense-organs/figura-12-3-sursa-2022.webp",
+        "assets/images/chapters/sense-organs/figura-12-4-sursa-2022.webp"
+      ],
+      "tables": []
+    },
+    {
+      "id": "page-alte-simturi",
+      "text": "52a6937aa0aa78e1593dec1de74264d1f383730d4a9411b1beb551062202dbcc",
+      "images": [
+        "assets/images/chapters/sense-organs/figura-12-5-sursa-2022.webp",
+        "assets/images/chapters/sense-organs/figura-12-6-sursa-2022.webp",
+        "assets/images/chapters/sense-organs/figura-12-7-sursa-2022.webp",
+        "assets/images/chapters/sense-organs/figura-12-8-sursa-2022.webp"
+      ],
+      "tables": []
+    }
+  ],
+  "sistemul_endocrin.html": [
+    {
+      "id": "page-descrierea-generala-a-hormonilor",
+      "text": "983200f44ffc6db53ba46f8f9e9e861acb832a4dcde1c222317fceffdb159b6f",
+      "images": [
+        "assets/images/chapters/sistemul-endocrin/figura-13-1.webp"
+      ],
+      "tables": [
+        "fcf4f5fd6c7fbcdff1c80874bd121862aa80c56814d86833a754898799b6e813"
+      ]
+    },
+    {
+      "id": "page-hipofiza-glanda-pituitara",
+      "text": "ce34daf0c7530c2e8bcc97a4b9c8421c354b4900c2d0ecac545e4f0d083cfd06",
+      "images": [
+        "assets/images/chapters/sistemul-endocrin/figura-13-2.webp",
+        "assets/images/chapters/sistemul-endocrin/figura-13-3.webp"
+      ],
+      "tables": [
+        "3693f6a53878565e5f4ac8f177622225091458b6cb38a1bed786372a8efff79c"
+      ]
+    },
+    {
+      "id": "page-glanda-tiroida",
+      "text": "cf11f68879856c7c7276ea4281d3bd51e51433e46bcd8b9fe352fe555181499f",
+      "images": [
+        "assets/images/chapters/sistemul-endocrin/figura-13-4.webp"
+      ],
+      "tables": [
+        "e815c3c966ce49617d172a0cf6dba60f76d4f900fc5ff88f87b713b7b0cbeadd"
+      ]
+    },
+    {
+      "id": "page-glandele-paratiroide",
+      "text": "e99f07ddff37171ba45f40799f007341750bc4653ef5a86b68e4112f53b7c79e",
+      "images": [
+        "assets/images/chapters/sistemul-endocrin/figura-13-5.webp"
+      ],
+      "tables": []
+    },
+    {
+      "id": "page-pancreasul",
+      "text": "2e187bc6db49473405ffde513c4b1b0722e9c0870402e852333fe9e7879e1eb6",
+      "images": [
+        "assets/images/chapters/sistemul-endocrin/figura-13-6.webp",
+        "assets/images/chapters/sistemul-endocrin/figura-13-7.webp"
+      ],
+      "tables": []
+    },
+    {
+      "id": "page-glandele-suprarenale",
+      "text": "4daca27d8af513a2fe4f6c4fab786d58d37f5a1e687a6ab5ac7862fee673c46c",
+      "images": [
+        "assets/images/chapters/sistemul-endocrin/figura-13-8.webp"
+      ],
+      "tables": []
+    },
+    {
+      "id": "page-alte-glande-endocrine",
+      "text": "596ed4fc1ed21a118a8c1057b498c8e471b576ba2ae34be891779da363065e9b",
+      "images": [
+        "assets/images/chapters/sistemul-endocrin/figura-13-9.webp"
+      ],
+      "tables": []
+    }
+  ],
+  "sangele.html": [
+    {
+      "id": "page-functiile-sangelui",
+      "text": "42a8f5779e7ff0d1f0965fe616492a22ce18be09ad8b438994c1b6162a349bc1",
+      "images": [
+        "assets/images/chapters/sangele/figura-14-1.webp"
+      ],
+      "tables": []
+    },
+    {
+      "id": "page-plasma",
+      "text": "e2bf41ae025ec583b49c09e9e5f0c084d82a487253b4b0d95c42b1aba0ef6da8",
+      "images": [],
+      "tables": [
+        "e441efd97d231bd198df94bd2221bdda33c23a22445afb2a759f2443c0ac1891"
+      ]
+    },
+    {
+      "id": "page-globulele-rosii",
+      "text": "fc217932866434db9122090e8c800da4053aabea8649dc55db33818e51d3b92c",
+      "images": [
+        "assets/images/chapters/sangele/figura-14-2.webp",
+        "assets/images/chapters/sangele/figura-14-3.webp"
+      ],
+      "tables": []
+    },
+    {
+      "id": "page-grupele-sanguine",
+      "text": "109c59a5212d4f7b25f17d630090e51b9999b66c16663e8233aeeddb1872c056",
+      "images": [
+        "assets/images/chapters/sangele/figura-14-4.webp"
+      ],
+      "tables": []
+    },
+    {
+      "id": "page-globulele-albe",
+      "text": "6a5daf74137baeaccc0c16914ff45f2730a2a37ede0d14308511efbd0e516958",
+      "images": [
+        "assets/images/chapters/sangele/figura-14-5.webp"
+      ],
+      "tables": [
+        "8579c0407ae85a926c5bc21f1319b28c1b2269dc6a3b61946adb4e5cc32a943c",
+        "4da99a4d772e88c09103c7da8305a7a7e3a91e8c2bc3950ce7e6a349d4c57708"
+      ]
+    },
+    {
+      "id": "page-plachetele-sanguine",
+      "text": "e02d91fb54f3adc4a55cb4663a1880d18689545ce2dbd9151dd8d1950ac944a4",
+      "images": [
+        "assets/images/chapters/sangele/figura-14-6.webp"
+      ],
+      "tables": []
+    },
+    {
+      "id": "page-coagularea-sangelui",
+      "text": "4b7dbabe355248f7c4ad70dc5482c022c94a356c097f6878ca49c10b3f71d5cc",
+      "images": [
+        "assets/images/chapters/sangele/figura-14-7.webp"
+      ],
+      "tables": []
+    }
+  ],
+  "sistemul_cardiovascular.html": [
+    {
+      "id": "page-inima",
+      "text": "b060a0a3e639fba2b442f766bae84b90e72bad8145be2c6c7e88ff04053aceaa",
+      "images": [
+        "assets/images/chapters/sistemul-cardiovascular/figura-15-1.webp"
+      ],
+      "tables": []
+    },
+    {
+      "id": "page-cavitatile-si-vasele-inimii",
+      "text": "e6d780171e0eea9e73acec3cc5943162b872491fc354a699deb3330d75efe8e6",
+      "images": [
+        "assets/images/chapters/sistemul-cardiovascular/figura-15-2.webp"
+      ],
+      "tables": []
+    },
+    {
+      "id": "page-circulatia-sangelui-prin-inima",
+      "text": "a81724fa1812bdd677f725151c6a1d70b807f63d8bc1a5ef8570e8a98ac869db",
+      "images": [
+        "assets/images/chapters/sistemul-cardiovascular/figura-15-3.webp"
+      ],
+      "tables": []
+    },
+    {
+      "id": "page-valvele-cardiace",
+      "text": "dabb4332efffc71dedeb6d3cd56c1005b97a8e4682452d3fef8ccca768851365",
+      "images": [
+        "assets/images/chapters/sistemul-cardiovascular/figura-15-4.webp"
+      ],
+      "tables": [
+        "2dd440786123d144bf2a16617e8ea833d1407f5774e9bc45f195dd8b75f37a5d"
+      ]
+    },
+    {
+      "id": "page-circulatia-coronariana",
+      "text": "86cf2522a1eec9cbed673fefcff5f35c95ae53b46594be4bddef3e574b44d3f2",
+      "images": [
+        "assets/images/chapters/sistemul-cardiovascular/figura-15-5.webp"
+      ],
+      "tables": []
+    },
+    {
+      "id": "page-muschiul-cardiac",
+      "text": "ca159dd0727fc0845a300a15910e0fe696ae3ec3ed0d7cf57b100b0576f45a1e",
+      "images": [
+        "assets/images/chapters/sistemul-cardiovascular/figura-15-6.webp",
+        "assets/images/chapters/sistemul-cardiovascular/figura-15-7.webp"
+      ],
+      "tables": []
+    },
+    {
+      "id": "page-ciclul-cardiac",
+      "text": "e628038fbc068c6cf9100fe166e5ea7f533156809e367091902e2920d4acd8e1",
+      "images": [],
+      "tables": []
+    },
+    {
+      "id": "page-vasele-sanguine",
+      "text": "c93f3f40269e23079dc4d14e33dd90ae4835d971b860f766913e0ae55cae388c",
+      "images": [
+        "assets/images/chapters/sistemul-cardiovascular/figura-15-8.webp"
+      ],
+      "tables": [
+        "75b942fd515576f80255ea417108ffd0f8dcc673dc67d9973124701187cecc33"
+      ]
+    },
+    {
+      "id": "page-tipuri-de-circulatie-sanguina",
+      "text": "f7ff30ad8e205f4a75a1b15c3ece0b6f64bbc27a35913799375ac49d533d9a07",
+      "images": [
+        "assets/images/chapters/sistemul-cardiovascular/figura-15-9.webp",
+        "assets/images/chapters/sistemul-cardiovascular/figura-15-10.webp",
+        "assets/images/chapters/sistemul-cardiovascular/figura-15-11.webp"
+      ],
+      "tables": []
+    }
+  ],
+  "sistemul_limfatic_si_imun.html": [
+    {
+      "id": "page-sistemul-limfatic",
+      "text": "edd2081f9230d9fc8659636323a4f2a8dc885c7dc7e04bc8fedd3d17562c7fe0",
+      "images": [
+        "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-1.webp"
+      ],
+      "tables": []
+    },
+    {
+      "id": "page-nodulii-limfatici",
+      "text": "b94bc12c7ae9f92c56f6eb8f9400237b8d67cf36c8c129c828c3c8c174a9af45",
+      "images": [
+        "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-2.webp",
+        "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-3.webp",
+        "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-4.webp"
+      ],
+      "tables": [
+        "746fe58bbe913e445493b04f3031a4995e346dd7a12beb194acd3cca3c18437b"
+      ]
+    },
+    {
+      "id": "page-timusul",
+      "text": "ea65b7f457ee7846b306b9699171ecc33601501dc021db020f9799fca7c46936",
+      "images": [],
+      "tables": []
+    },
+    {
+      "id": "page-splina",
+      "text": "8f23c738ade70e53abdece79f042a2da71aa4d7d28762ec07d4dcd89d9b12678",
+      "images": [
+        "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-5.webp"
+      ],
+      "tables": []
+    },
+    {
+      "id": "page-limfa",
+      "text": "3695a0b14ea711938a67fbc7849ed24d9a0ec37f9377b77047e6bb50eb1297a5",
+      "images": [],
+      "tables": []
+    }
+  ],
+  "sistemul_respirator.html": [
+    {
+      "id": "page-introducere",
+      "text": "9e1989ee717a2ef8d136503828f18a494f0f875e21f57fa5c7f60e8e0950afa9",
+      "images": [],
+      "tables": []
+    },
+    {
+      "id": "page-anatomie",
+      "text": "bbba87ccaa924b3d5e3fa29130b27c1d752c8e3ef6c8302337994a457405fe46",
+      "images": [
+        "assets/images/chapters/respiratory-system/figura-17-1-barrons.webp",
+        "assets/images/chapters/respiratory-system/figura-17-2-barrons.webp",
+        "assets/images/chapters/respiratory-system/figura-17-3-barrons.webp",
+        "assets/images/chapters/respiratory-system/figura-17-4-barrons.webp",
+        "assets/images/chapters/respiratory-system/figura-17-5-barrons.webp"
+      ],
+      "tables": [
+        "5ad83d2cf0ac14137ad0abdb5cfdc77aaa250ba8e89333752fdbb7754641b3e1"
+      ]
+    },
+    {
+      "id": "page-respiratie",
+      "text": "7bcc75376d4650eb968aa59f1b42ea055d0158b4951a0d7b40e26fbecde7ac52",
+      "images": [
+        "assets/images/chapters/respiratory-system/figura-17-6-barrons.webp",
+        "assets/images/chapters/respiratory-system/figura-17-7-barrons.webp"
+      ],
+      "tables": []
+    },
+    {
+      "id": "page-schimbul-de-gaze",
+      "text": "238c0653ff6f2fe2ef4dc575d289aedf99146e845c474926e0e05e4a8468c3e5",
+      "images": [
+        "assets/images/chapters/respiratory-system/figura-17-8-barrons.webp",
+        "assets/images/chapters/respiratory-system/figura-17-9-barrons.webp"
+      ],
+      "tables": []
+    }
+  ],
+  "sistemul_digestiv.html": [
+    {
+      "id": "page-introducere",
+      "text": "87fa46176822068e914fc54432c8e701e9bd4bb66d95bae6a69202eb7dc151bf",
+      "images": [],
+      "tables": []
+    },
+    {
+      "id": "page-tractul-gastrointestinal",
+      "text": "377e9b5245db686adca5168cac2adab9017981ce6340e691e2263a0156e744d5",
+      "images": [
+        "assets/images/chapters/digestive-system/figura-18-1-barrons.webp",
+        "assets/images/chapters/digestive-system/figura-18-2-barrons.webp",
+        "assets/images/chapters/digestive-system/figura-18-3-barrons.webp",
+        "assets/images/chapters/digestive-system/figura-18-4-barrons.webp"
+      ],
+      "tables": [
+        "1ca656400e03f739c5e721950aa2f6e85250a55bc06a2ffdf7e38ca361f29b31",
+        "4f0f99d68eabb6017315a653748c1cc733dc536c9b34c2f2c1575a2338a5cfdc"
+      ]
+    },
+    {
+      "id": "page-stomacul",
+      "text": "d74218838dd56b88a69f93664ff4703cf7ae55c55c61dea0ef37c8cc3b8d67fb",
+      "images": [
+        "assets/images/chapters/digestive-system/figura-18-5-barrons.webp"
+      ],
+      "tables": [
+        "296010b08244820273e55e1f30b8a6febef7ccefec8cd7d48ad8b6c61a8e20fe"
+      ]
+    },
+    {
+      "id": "page-intestinele",
+      "text": "0ba2bdbbf7a678dede011037269d0554e48268c9b1efd66c8bc2ed28390801d0",
+      "images": [
+        "assets/images/chapters/digestive-system/figura-18-6-barrons.webp",
+        "assets/images/chapters/digestive-system/figura-18-7-barrons.webp",
+        "assets/images/chapters/digestive-system/figura-18-8-barrons.webp"
+      ],
+      "tables": [
+        "51fa4a260b27da5585893fdc43a7c173831fcd0fbbb6e027f3c62180121ca661"
+      ]
+    },
+    {
+      "id": "page-organele-anexe",
+      "text": "758422065bcbed5ecfc303263ca27d2d9525e6546c85def13a55d498397bdb8c",
+      "images": [
+        "assets/images/chapters/digestive-system/figura-18-9-barrons.webp",
+        "assets/images/chapters/digestive-system/figura-18-10-barrons.webp"
+      ],
+      "tables": []
+    }
+  ],
+  "metabolism_si_nutritie.html": [
+    {
+      "id": "page-introducere",
+      "text": "899b40cad8784e777909a70adcb668253a08e2af666c502a31e16dd79e52397b",
+      "images": [],
+      "tables": []
+    },
+    {
+      "id": "page-metabolismul-glucidelor",
+      "text": "244dfcbf43438bac683bf1d1635201d7e7c1ccd2b968b03114f621b500a5c499",
+      "images": [
+        "assets/images/chapters/metabolism-nutrition/figura-19-1-barrons.webp",
+        "assets/images/chapters/metabolism-nutrition/figura-19-8-barrons.webp"
+      ],
+      "tables": [
+        "4eb0b35af7d26a7778d59c2550ba936bcde1933891bb88c4580bf547337a8cd6"
+      ]
+    },
+    {
+      "id": "page-lipide-si-proteine",
+      "text": "57cbc8261762afc54ee79506497a99148dc249a15abd92b02b54e7d46f0e61a1",
+      "images": [
+        "assets/images/chapters/metabolism-nutrition/figura-19-9-barrons.webp"
+      ],
+      "tables": []
+    },
+    {
+      "id": "page-stari-si-minerale",
+      "text": "c90a48d7b5eb92ece35c4a86e98393f1c311fa4e8280096d5779535598077ee2",
+      "images": [
+        "assets/images/chapters/metabolism-nutrition/figura-19-11-barrons.webp"
+      ],
+      "tables": []
+    },
+    {
+      "id": "page-rata-si-temperatura",
+      "text": "eb6c39a150efef928e77cc2ac08266aca25ec4525074a37ce1db22921b684c36",
+      "images": [],
+      "tables": []
     }
   ]
 }

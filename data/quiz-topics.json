@@ -1,0 +1,895 @@
+{
+  "bb.quiz.celula.v1": {
+    "topics": [
+      {
+        "id": "tipuri-celule",
+        "label": "Tipuri de celule",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#introducere"
+      },
+      {
+        "id": "membrana",
+        "label": "Membrana plasmatică",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#membrana"
+      },
+      {
+        "id": "transport",
+        "label": "Transportul prin membrană",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#transport"
+      },
+      {
+        "id": "nucleu",
+        "label": "Nucleul",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#nucleu"
+      },
+      {
+        "id": "organite",
+        "label": "Citoplasma și organitele",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#organite"
+      },
+      {
+        "id": "recapitulare-mixta",
+        "label": "Recapitulare mixtă",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#recapitulare"
+      }
+    ],
+    "questionTopics": {
+      "cel-061": "membrana",
+      "cel-062": "recapitulare-mixta",
+      "cel-063": "recapitulare-mixta",
+      "cel-064": "recapitulare-mixta",
+      "cel-065": "recapitulare-mixta",
+      "cel-066": "membrana",
+      "cel-067": "organite",
+      "cel-068": "recapitulare-mixta",
+      "cel-069": "membrana",
+      "cel-070": "membrana",
+      "cel-071": "transport",
+      "cel-072": "nucleu",
+      "cel-073": "organite",
+      "cel-074": "organite",
+      "cel-075": "organite",
+      "cel-076": "transport",
+      "cel-077": "transport",
+      "cel-078": "nucleu",
+      "cel-079": "organite",
+      "cel-080": "organite",
+      "cel-081": "recapitulare-mixta",
+      "cel-082": "transport",
+      "cel-083": "recapitulare-mixta",
+      "cel-084": "organite",
+      "cel-085": "organite",
+      "cel-086": "nucleu",
+      "cel-087": "recapitulare-mixta",
+      "cel-088": "transport",
+      "cel-089": "transport",
+      "cel-090": "recapitulare-mixta",
+      "cel-091": "organite",
+      "cel-092": "organite",
+      "cel-093": "tipuri-celule",
+      "cel-094": "membrana",
+      "cel-095": "transport",
+      "cel-096": "transport",
+      "cel-097": "organite",
+      "cel-098": "organite",
+      "cel-099": "transport",
+      "cel-100": "organite",
+      "cel-101": "organite",
+      "cel-102": "tipuri-celule",
+      "cel-103": "recapitulare-mixta",
+      "cel-104": "membrana",
+      "cel-105": "transport",
+      "cel-106": "nucleu",
+      "cel-107": "membrana",
+      "cel-108": "transport",
+      "cel-109": "transport",
+      "cel-110": "nucleu"
+    }
+  },
+  "bb.quiz.introducere.v1": {
+    "topics": [
+      {
+        "id": "introducere",
+        "label": "Anatomie și fiziologie",
+        "lessonUrl": "introducere_anatomie_fiziologie.html#introducere"
+      },
+      {
+        "id": "celula",
+        "label": "Celula și nivelurile de organizare",
+        "lessonUrl": "introducere_anatomie_fiziologie.html?q=Niveluri%20de%20organizare%20structural%C4%83&section=organizare"
+      },
+      {
+        "id": "tesuturi",
+        "label": "Țesuturi și organe",
+        "lessonUrl": "introducere_anatomie_fiziologie.html?q=Niveluri%20de%20organizare%20structural%C4%83&section=organizare"
+      },
+      {
+        "id": "sisteme",
+        "label": "Sisteme de organe și tegument",
+        "lessonUrl": "introducere_anatomie_fiziologie.html?q=Niveluri%20de%20organizare%20structural%C4%83&section=organizare"
+      },
+      {
+        "id": "functii",
+        "label": "Funcțiile organismului",
+        "lessonUrl": "introducere_anatomie_fiziologie.html#functii"
+      },
+      {
+        "id": "homeostazie",
+        "label": "Homeostazie și feedback",
+        "lessonUrl": "introducere_anatomie_fiziologie.html?q=Homeostazia&section=functii"
+      },
+      {
+        "id": "termeni",
+        "label": "Poziția anatomică și termenii direcționali",
+        "lessonUrl": "introducere_anatomie_fiziologie.html#termeni"
+      },
+      {
+        "id": "planuri",
+        "label": "Planurile corpului",
+        "lessonUrl": "introducere_anatomie_fiziologie.html?q=Planuri&section=termeni"
+      },
+      {
+        "id": "cavitati",
+        "label": "Cavitățile corpului",
+        "lessonUrl": "introducere_anatomie_fiziologie.html?q=Cavit%C4%83%C8%9Bile%20%C8%99i%20regiunile%20corpului&section=cavitati"
+      },
+      {
+        "id": "regiuni",
+        "label": "Regiunile abdomino-pelviene",
+        "lessonUrl": "introducere_anatomie_fiziologie.html?q=Cavit%C4%83%C8%9Bile%20%C8%99i%20regiunile%20corpului&section=cavitati"
+      },
+      {
+        "id": "seroase",
+        "label": "Membranele seroase",
+        "lessonUrl": "introducere_anatomie_fiziologie.html?q=Membranele&section=cavitati"
+      },
+      {
+        "id": "recapitulare-mixta",
+        "label": "Recapitulare mixtă",
+        "lessonUrl": "introducere_anatomie_fiziologie.html#home"
+      }
+    ],
+    "questionTopics": {
+      "ia-001": "sisteme",
+      "ia-002": "tesuturi",
+      "ia-003": "tesuturi",
+      "ia-004": "sisteme",
+      "ia-005": "recapitulare-mixta",
+      "ia-006": "celula",
+      "ia-007": "functii",
+      "ia-008": "homeostazie",
+      "ia-009": "termeni",
+      "ia-010": "termeni",
+      "ia-011": "termeni",
+      "ia-012": "recapitulare-mixta",
+      "ia-013": "functii",
+      "ia-014": "functii",
+      "ia-015": "recapitulare-mixta",
+      "ia-016": "tesuturi",
+      "ia-017": "sisteme",
+      "ia-018": "cavitati",
+      "ia-019": "termeni",
+      "ia-020": "cavitati",
+      "ia-021": "planuri",
+      "ia-022": "homeostazie",
+      "ia-023": "recapitulare-mixta",
+      "ia-024": "celula",
+      "ia-025": "tesuturi",
+      "ia-026": "recapitulare-mixta",
+      "ia-027": "functii",
+      "ia-028": "homeostazie",
+      "ia-029": "termeni",
+      "ia-030": "termeni",
+      "ia-031": "termeni",
+      "ia-032": "planuri",
+      "ia-033": "cavitati",
+      "ia-034": "cavitati",
+      "ia-035": "regiuni",
+      "ia-036": "cavitati",
+      "ia-037": "seroase",
+      "ia-038": "seroase",
+      "ia-039": "introducere",
+      "ia-040": "celula",
+      "ia-041": "regiuni",
+      "ia-042": "homeostazie",
+      "ia-043": "termeni",
+      "ia-044": "planuri",
+      "ia-045": "cavitati",
+      "ia-046": "regiuni",
+      "ia-047": "cavitati",
+      "ia-048": "seroase",
+      "ia-049": "recapitulare-mixta",
+      "ia-050": "functii",
+      "ia-051": "planuri",
+      "ia-052": "cavitati",
+      "ia-053": "cavitati",
+      "ia-054": "sisteme",
+      "ia-055": "celula",
+      "ia-056": "functii",
+      "ia-057": "homeostazie",
+      "ia-058": "regiuni",
+      "ia-059": "sisteme",
+      "ia-060": "termeni"
+    }
+  },
+  "bb.quiz.sistem-nervos.v1": {
+    "topics": [
+      {
+        "id": "organizare-snc",
+        "label": "Organizarea sistemului nervos central",
+        "lessonUrl": "sistemul_nervos.html?q=Organizarea%20general%C4%83&section=sistem-nervos-central"
+      },
+      {
+        "id": "maduva",
+        "label": "Măduva spinării",
+        "lessonUrl": "sistemul_nervos.html?q=M%C4%83duva%20spin%C4%83rii%20%C8%99i%20meningele&section=sistem-nervos-central"
+      },
+      {
+        "id": "meninge-lcr",
+        "label": "Meninge și lichid cefalorahidian",
+        "lessonUrl": "sistemul_nervos.html?q=M%C4%83duva%20spin%C4%83rii%20%C8%99i%20meningele&section=sistem-nervos-central"
+      },
+      {
+        "id": "emisfere",
+        "label": "Emisferele cerebrale",
+        "lessonUrl": "sistemul_nervos.html?q=Emisferele%20cerebrale&section=sistem-nervos-central"
+      },
+      {
+        "id": "diencefal-limbic",
+        "label": "Diencefalul și sistemul limbic",
+        "lessonUrl": "sistemul_nervos.html?q=Diencefalul&section=sistem-nervos-central"
+      },
+      {
+        "id": "trunchi",
+        "label": "Trunchiul cerebral",
+        "lessonUrl": "sistemul_nervos.html?q=Trunchiul%20cerebral&section=sistem-nervos-central"
+      },
+      {
+        "id": "cranieni",
+        "label": "Nervii cranieni",
+        "lessonUrl": "sistemul_nervos.html?q=Nervii%20cranieni&section=sistem-nervos-periferic"
+      },
+      {
+        "id": "spinali",
+        "label": "Nervii spinali și plexurile",
+        "lessonUrl": "sistemul_nervos.html?q=Nervii%20cranieni%20%C8%99i%20spinali&section=sistem-nervos-periferic"
+      },
+      {
+        "id": "vegetativ",
+        "label": "Sistemul nervos autonom",
+        "lessonUrl": "sistemul_nervos.html#sistem-nervos-autonom"
+      },
+      {
+        "id": "impuls",
+        "label": "Impulsul nervos și reflexele",
+        "lessonUrl": "tesutul_nervos.html#fiziologia-nervilor"
+      },
+      {
+        "id": "celule-nervoase",
+        "label": "Neuronii și celulele gliale",
+        "lessonUrl": "tesutul_nervos.html#organizare"
+      },
+      {
+        "id": "recapitulare-mixta",
+        "label": "Recapitulare mixtă",
+        "lessonUrl": "sistemul_nervos.html#sistem-nervos-central"
+      }
+    ],
+    "questionTopics": {
+      "sn-051": "vegetativ",
+      "sn-052": "recapitulare-mixta",
+      "sn-053": "diencefal-limbic",
+      "sn-054": "trunchi",
+      "sn-055": "vegetativ",
+      "sn-056": "cranieni",
+      "sn-057": "impuls",
+      "sn-058": "trunchi",
+      "sn-059": "vegetativ",
+      "sn-060": "vegetativ",
+      "sn-061": "maduva",
+      "sn-062": "maduva",
+      "sn-063": "maduva",
+      "sn-064": "maduva",
+      "sn-065": "recapitulare-mixta",
+      "sn-066": "recapitulare-mixta",
+      "sn-067": "recapitulare-mixta",
+      "sn-068": "recapitulare-mixta",
+      "sn-069": "recapitulare-mixta",
+      "sn-070": "recapitulare-mixta",
+      "sn-071": "recapitulare-mixta",
+      "sn-072": "trunchi",
+      "sn-073": "meninge-lcr",
+      "sn-074": "cranieni",
+      "sn-075": "cranieni",
+      "sn-076": "emisfere",
+      "sn-077": "diencefal-limbic",
+      "sn-078": "cranieni",
+      "sn-079": "diencefal-limbic",
+      "sn-080": "meninge-lcr",
+      "sn-081": "maduva",
+      "sn-082": "emisfere",
+      "sn-083": "recapitulare-mixta",
+      "sn-084": "recapitulare-mixta",
+      "sn-085": "trunchi",
+      "sn-086": "cranieni",
+      "sn-087": "vegetativ",
+      "sn-088": "organizare-snc",
+      "sn-089": "recapitulare-mixta",
+      "sn-090": "recapitulare-mixta",
+      "sn-091": "cranieni",
+      "sn-092": "spinali",
+      "sn-093": "vegetativ",
+      "sn-094": "vegetativ",
+      "sn-095": "cranieni",
+      "sn-096": "recapitulare-mixta",
+      "sn-097": "recapitulare-mixta",
+      "sn-098": "impuls",
+      "sn-099": "impuls",
+      "sn-100": "celule-nervoase"
+    }
+  },
+  "bb.quiz.organe-simt.v1": {
+    "topics": [
+      {
+        "id": "receptori",
+        "label": "Simțurile și receptorii",
+        "lessonUrl": "organele_de_simt.html?q=Ochiul%20%C8%99i%20vederea&section=ochiul-si-vederea"
+      },
+      {
+        "id": "anatomie-ochi",
+        "label": "Anatomia ochiului",
+        "lessonUrl": "organele_de_simt.html?q=Anatomie&section=ochiul-si-vederea"
+      },
+      {
+        "id": "retina",
+        "label": "Retina și fotoreceptorii",
+        "lessonUrl": "organele_de_simt.html?q=Anatomie&section=ochiul-si-vederea"
+      },
+      {
+        "id": "accesorii",
+        "label": "Structurile accesorii ale ochiului",
+        "lessonUrl": "organele_de_simt.html?q=Anatomie&section=ochiul-si-vederea"
+      },
+      {
+        "id": "cale-optica",
+        "label": "Calea optică",
+        "lessonUrl": "organele_de_simt.html?q=Fiziologia%20vederii&section=ochiul-si-vederea"
+      },
+      {
+        "id": "focalizare",
+        "label": "Focalizarea imaginilor",
+        "lessonUrl": "organele_de_simt.html?q=Fiziologia%20vederii&section=ochiul-si-vederea"
+      },
+      {
+        "id": "tulburari-vedere",
+        "label": "Tulburările de vedere",
+        "lessonUrl": "organele_de_simt.html?q=Tulbur%C4%83rile%20de%20vedere&section=ochiul-si-vederea"
+      },
+      {
+        "id": "anatomie-ureche",
+        "label": "Anatomia urechii",
+        "lessonUrl": "organele_de_simt.html?q=Anatomia%20urechii&section=urechea-si-auzul"
+      },
+      {
+        "id": "auz",
+        "label": "Fiziologia auzului",
+        "lessonUrl": "organele_de_simt.html?q=Fiziologia%20auzului&section=urechea-si-auzul"
+      },
+      {
+        "id": "gust",
+        "label": "Gustul",
+        "lessonUrl": "organele_de_simt.html?q=Gustul&section=alte-simturi"
+      },
+      {
+        "id": "miros",
+        "label": "Mirosul",
+        "lessonUrl": "organele_de_simt.html?q=Mirosul&section=alte-simturi"
+      },
+      {
+        "id": "tactil",
+        "label": "Simțul tactil și simțurile înrudite",
+        "lessonUrl": "organele_de_simt.html?q=Sim%C8%9Bul%20tactil%20%C8%99i%20sim%C8%9Burile%20%C3%AEnrudite&section=alte-simturi"
+      },
+      {
+        "id": "echilibru",
+        "label": "Echilibrul",
+        "lessonUrl": "organele_de_simt.html?q=Echilibrul&section=alte-simturi"
+      },
+      {
+        "id": "recapitulare-mixta",
+        "label": "Recapitulare mixtă",
+        "lessonUrl": "organele_de_simt.html#ochiul-si-vederea"
+      }
+    ],
+    "questionTopics": {
+      "os-001": "recapitulare-mixta",
+      "os-002": "receptori",
+      "os-003": "recapitulare-mixta",
+      "os-004": "anatomie-ochi",
+      "os-005": "retina",
+      "os-006": "cale-optica",
+      "os-007": "retina",
+      "os-008": "anatomie-ochi",
+      "os-009": "anatomie-ureche",
+      "os-010": "anatomie-ureche",
+      "os-011": "anatomie-ochi",
+      "os-012": "recapitulare-mixta",
+      "os-013": "recapitulare-mixta",
+      "os-014": "recapitulare-mixta",
+      "os-015": "cale-optica",
+      "os-016": "anatomie-ochi",
+      "os-017": "retina",
+      "os-018": "retina",
+      "os-019": "anatomie-ureche",
+      "os-020": "anatomie-ureche",
+      "os-021": "anatomie-ureche",
+      "os-022": "anatomie-ureche",
+      "os-023": "receptori",
+      "os-024": "echilibru",
+      "os-025": "gust",
+      "os-026": "gust",
+      "os-027": "miros",
+      "os-028": "miros",
+      "os-029": "miros",
+      "os-030": "retina",
+      "os-031": "recapitulare-mixta",
+      "os-032": "anatomie-ochi",
+      "os-033": "retina",
+      "os-034": "echilibru",
+      "os-035": "recapitulare-mixta",
+      "os-036": "anatomie-ureche",
+      "os-037": "anatomie-ureche",
+      "os-038": "gust",
+      "os-039": "receptori",
+      "os-040": "cale-optica",
+      "os-041": "anatomie-ochi",
+      "os-042": "anatomie-ochi",
+      "os-043": "focalizare",
+      "os-044": "anatomie-ochi",
+      "os-045": "retina",
+      "os-046": "retina",
+      "os-047": "auz",
+      "os-048": "anatomie-ureche",
+      "os-049": "auz",
+      "os-050": "gust",
+      "os-051": "gust",
+      "os-052": "miros",
+      "os-053": "tactil",
+      "os-054": "auz",
+      "os-055": "gust",
+      "os-056": "gust",
+      "os-057": "miros",
+      "os-058": "tactil",
+      "os-059": "anatomie-ureche",
+      "os-060": "echilibru",
+      "os-061": "tactil",
+      "os-062": "auz",
+      "os-063": "anatomie-ochi",
+      "os-064": "anatomie-ochi",
+      "os-065": "anatomie-ochi",
+      "os-066": "recapitulare-mixta",
+      "os-067": "anatomie-ochi",
+      "os-068": "anatomie-ochi",
+      "os-069": "anatomie-ochi",
+      "os-070": "anatomie-ochi",
+      "os-071": "accesorii",
+      "os-072": "recapitulare-mixta",
+      "os-073": "recapitulare-mixta",
+      "os-074": "auz",
+      "os-075": "auz",
+      "os-076": "echilibru",
+      "os-077": "echilibru",
+      "os-078": "recapitulare-mixta",
+      "os-079": "recapitulare-mixta",
+      "os-080": "receptori",
+      "os-081": "anatomie-ochi",
+      "os-082": "cale-optica",
+      "os-083": "focalizare",
+      "os-084": "retina",
+      "os-085": "tulburari-vedere",
+      "os-086": "auz",
+      "os-087": "gust",
+      "os-088": "recapitulare-mixta",
+      "os-089": "anatomie-ochi",
+      "os-090": "tulburari-vedere",
+      "os-091": "anatomie-ureche",
+      "os-092": "gust",
+      "os-093": "miros",
+      "os-094": "echilibru",
+      "os-095": "accesorii",
+      "os-096": "recapitulare-mixta",
+      "os-097": "anatomie-ureche",
+      "os-098": "recapitulare-mixta",
+      "os-099": "tulburari-vedere",
+      "os-100": "recapitulare-mixta"
+    }
+  },
+  "bb.quiz.sistemul-urinar.v1": {
+    "topics": [
+      {
+        "id": "rinichi",
+        "label": "Anatomia și funcțiile rinichilor",
+        "lessonUrl": "sistemul_renal_complet.html#rinichii"
+      },
+      {
+        "id": "vascularizatie",
+        "label": "Vascularizația renală și nefronul",
+        "lessonUrl": "sistemul_renal_complet.html?q=Structura%20nefronului&section=nefron"
+      },
+      {
+        "id": "filtrare",
+        "label": "Filtrarea glomerulară",
+        "lessonUrl": "sistemul_renal_complet.html?q=Filtrarea&section=nefron"
+      },
+      {
+        "id": "reabsorbtie",
+        "label": "Reabsorbția tubulară",
+        "lessonUrl": "sistemul_renal_complet.html?q=Reabsorb%C8%9Bia&section=nefron"
+      },
+      {
+        "id": "contracurent",
+        "label": "Ansa Henle și concentrarea urinei",
+        "lessonUrl": "sistemul_renal_complet.html?q=Reabsorb%C8%9Bia%20s%C4%83rurilor%20%C8%99i%20a%20apei&section=nefron"
+      },
+      {
+        "id": "secretie",
+        "label": "Secreția tubulară",
+        "lessonUrl": "sistemul_renal_complet.html?q=Secre%C8%9Bia%20tubular%C4%83&section=nefron"
+      },
+      {
+        "id": "hormoni",
+        "label": "Reglarea hormonală",
+        "lessonUrl": "sistemul_renal_complet.html?q=Activitatea%20hormonal%C4%83&section=hormoni"
+      },
+      {
+        "id": "urina",
+        "label": "Compoziția și proprietățile urinei",
+        "lessonUrl": "sistemul_renal_complet.html?q=Urina&section=hormoni"
+      },
+      {
+        "id": "uretere",
+        "label": "Ureterele",
+        "lessonUrl": "sistemul_renal_complet.html?q=Structuri%20anexe&section=anexe"
+      },
+      {
+        "id": "vezica",
+        "label": "Vezica urinară și micțiunea",
+        "lessonUrl": "sistemul_renal_complet.html?q=Structuri%20anexe&section=anexe"
+      },
+      {
+        "id": "cai-urinare",
+        "label": "Uretra și căile urinare",
+        "lessonUrl": "sistemul_renal_complet.html?q=Structuri%20anexe&section=anexe"
+      },
+      {
+        "id": "excretie",
+        "label": "Alte organe excretorii",
+        "lessonUrl": "sistemul_renal_complet.html?q=Alte%20organe%20excretorii&section=anexe"
+      },
+      {
+        "id": "recapitulare-mixta",
+        "label": "Recapitulare mixtă",
+        "lessonUrl": "sistemul_renal_complet.html#home"
+      }
+    ],
+    "questionTopics": {
+      "ur-001": "rinichi",
+      "ur-002": "rinichi",
+      "ur-003": "filtrare",
+      "ur-004": "reabsorbtie",
+      "ur-005": "contracurent",
+      "ur-006": "secretie",
+      "ur-007": "filtrare",
+      "ur-008": "contracurent",
+      "ur-009": "hormoni",
+      "ur-010": "vascularizatie",
+      "ur-011": "rinichi",
+      "ur-012": "vascularizatie",
+      "ur-013": "filtrare",
+      "ur-014": "reabsorbtie",
+      "ur-015": "contracurent",
+      "ur-016": "recapitulare-mixta",
+      "ur-017": "contracurent",
+      "ur-018": "secretie",
+      "ur-019": "reabsorbtie",
+      "ur-020": "contracurent",
+      "ur-021": "hormoni",
+      "ur-022": "contracurent",
+      "ur-023": "urina",
+      "ur-024": "cai-urinare",
+      "ur-025": "excretie",
+      "ur-026": "uretere",
+      "ur-027": "vascularizatie",
+      "ur-028": "rinichi",
+      "ur-029": "recapitulare-mixta",
+      "ur-030": "recapitulare-mixta",
+      "ur-031": "filtrare",
+      "ur-032": "contracurent",
+      "ur-033": "recapitulare-mixta",
+      "ur-034": "excretie",
+      "ur-035": "rinichi",
+      "ur-036": "excretie",
+      "ur-037": "recapitulare-mixta",
+      "ur-038": "vascularizatie",
+      "ur-039": "uretere",
+      "ur-040": "urina",
+      "ur-041": "filtrare",
+      "ur-042": "vascularizatie",
+      "ur-043": "vezica",
+      "ur-044": "hormoni",
+      "ur-045": "urina",
+      "ur-046": "rinichi",
+      "ur-047": "urina",
+      "ur-048": "reabsorbtie",
+      "ur-049": "rinichi",
+      "ur-050": "cai-urinare",
+      "ur-051": "excretie",
+      "ur-052": "urina",
+      "ur-053": "recapitulare-mixta",
+      "ur-054": "contracurent",
+      "ur-055": "recapitulare-mixta",
+      "ur-056": "rinichi",
+      "ur-057": "rinichi",
+      "ur-058": "rinichi",
+      "ur-059": "vascularizatie",
+      "ur-060": "vascularizatie",
+      "ur-061": "reabsorbtie",
+      "ur-062": "recapitulare-mixta",
+      "ur-063": "filtrare",
+      "ur-064": "reabsorbtie",
+      "ur-065": "reabsorbtie",
+      "ur-066": "secretie",
+      "ur-067": "hormoni",
+      "ur-068": "urina",
+      "ur-069": "uretere",
+      "ur-070": "vezica",
+      "ur-071": "rinichi",
+      "ur-072": "recapitulare-mixta",
+      "ur-073": "recapitulare-mixta",
+      "ur-074": "recapitulare-mixta",
+      "ur-075": "recapitulare-mixta",
+      "ur-076": "excretie",
+      "ur-077": "recapitulare-mixta",
+      "ur-078": "recapitulare-mixta",
+      "ur-079": "recapitulare-mixta",
+      "ur-080": "recapitulare-mixta"
+    }
+  },
+  "bb.quiz.reproducator-masculin.v1": {
+    "topics": [
+      {
+        "id": "testicule",
+        "label": "Testiculele și celulele testiculare",
+        "lessonUrl": "sistemul_reproducator_masculin.html?q=Testiculele&section=testiculele"
+      },
+      {
+        "id": "spermatogeneza",
+        "label": "Spermatogeneza și meioza",
+        "lessonUrl": "sistemul_reproducator_masculin.html?q=Spermatogeneza&section=testiculele"
+      },
+      {
+        "id": "spermatozoizi",
+        "label": "Spermatozoizii",
+        "lessonUrl": "sistemul_reproducator_masculin.html?q=Spermatozoizii&section=testiculele"
+      },
+      {
+        "id": "epididim",
+        "label": "Epididimul",
+        "lessonUrl": "sistemul_reproducator_masculin.html?q=C%C4%83ile%20sistemului%20reproduc%C4%83tor%20masculin&section=ducte"
+      },
+      {
+        "id": "deferent",
+        "label": "Ductul deferent",
+        "lessonUrl": "sistemul_reproducator_masculin.html?q=C%C4%83ile%20sistemului%20reproduc%C4%83tor%20masculin&section=ducte"
+      },
+      {
+        "id": "uretra",
+        "label": "Uretra masculină",
+        "lessonUrl": "sistemul_reproducator_masculin.html?q=C%C4%83ile%20sistemului%20reproduc%C4%83tor%20masculin&section=ducte"
+      },
+      {
+        "id": "vezicule",
+        "label": "Vezicula seminală",
+        "lessonUrl": "sistemul_reproducator_masculin.html?q=Organe%20anexe&section=ducte"
+      },
+      {
+        "id": "prostata",
+        "label": "Prostata",
+        "lessonUrl": "sistemul_reproducator_masculin.html?q=Organe%20anexe&section=ducte"
+      },
+      {
+        "id": "glande-anexe",
+        "label": "Glandele anexe și sperma",
+        "lessonUrl": "sistemul_reproducator_masculin.html?q=Organe%20Anexe&section=ducte"
+      },
+      {
+        "id": "penis",
+        "label": "Penisul",
+        "lessonUrl": "sistemul_reproducator_masculin.html?q=Organe%20anexe&section=ducte"
+      },
+      {
+        "id": "hormoni",
+        "label": "Gonadotropinele și reglarea hormonală",
+        "lessonUrl": "sistemul_reproducator_masculin.html#hormoni"
+      },
+      {
+        "id": "testosteron",
+        "label": "Testosteronul",
+        "lessonUrl": "sistemul_reproducator_masculin.html?q=Hormonii%20masculini&section=hormoni"
+      },
+      {
+        "id": "gonada-feminina",
+        "label": "Gonada feminină",
+        "lessonUrl": "sistemul_reproducator_feminin.html?q=Ovarele&section=organe"
+      },
+      {
+        "id": "recapitulare-mixta",
+        "label": "Recapitulare mixtă",
+        "lessonUrl": "sistemul_reproducator_masculin.html#home"
+      }
+    ],
+    "questionTopics": {
+      "rm-001": "testicule",
+      "rm-002": "hormoni",
+      "rm-003": "hormoni",
+      "rm-004": "testicule",
+      "rm-005": "testicule",
+      "rm-006": "testosteron",
+      "rm-007": "hormoni",
+      "rm-008": "spermatogeneza",
+      "rm-009": "testicule",
+      "rm-010": "recapitulare-mixta",
+      "rm-011": "spermatogeneza",
+      "rm-012": "spermatogeneza",
+      "rm-013": "testicule",
+      "rm-014": "spermatozoizi",
+      "rm-015": "testicule",
+      "rm-016": "uretra",
+      "rm-017": "recapitulare-mixta",
+      "rm-018": "recapitulare-mixta",
+      "rm-019": "hormoni",
+      "rm-020": "testosteron",
+      "rm-021": "recapitulare-mixta",
+      "rm-022": "recapitulare-mixta",
+      "rm-023": "recapitulare-mixta",
+      "rm-024": "testicule",
+      "rm-025": "spermatogeneza",
+      "rm-026": "testosteron",
+      "rm-027": "hormoni",
+      "rm-028": "spermatozoizi",
+      "rm-029": "recapitulare-mixta",
+      "rm-030": "recapitulare-mixta",
+      "rm-031": "testicule",
+      "rm-032": "spermatogeneza",
+      "rm-033": "spermatozoizi",
+      "rm-034": "epididim",
+      "rm-035": "deferent",
+      "rm-036": "uretra",
+      "rm-037": "vezicule",
+      "rm-038": "prostata",
+      "rm-039": "testosteron",
+      "rm-040": "hormoni",
+      "rm-041": "testicule",
+      "rm-042": "spermatogeneza",
+      "rm-043": "spermatozoizi",
+      "rm-044": "epididim",
+      "rm-045": "recapitulare-mixta",
+      "rm-046": "recapitulare-mixta",
+      "rm-047": "prostata",
+      "rm-048": "recapitulare-mixta",
+      "rm-049": "recapitulare-mixta",
+      "rm-050": "recapitulare-mixta",
+      "rm-051": "spermatogeneza",
+      "rm-052": "recapitulare-mixta",
+      "rm-053": "spermatozoizi",
+      "rm-054": "recapitulare-mixta",
+      "rm-055": "spermatogeneza",
+      "rm-056": "glande-anexe",
+      "rm-057": "epididim",
+      "rm-058": "recapitulare-mixta",
+      "rm-059": "hormoni",
+      "rm-060": "glande-anexe",
+      "rm-061": "testicule",
+      "rm-062": "deferent",
+      "rm-063": "spermatogeneza",
+      "rm-064": "vezicule",
+      "rm-065": "testosteron",
+      "rm-066": "penis",
+      "rm-067": "prostata",
+      "rm-068": "recapitulare-mixta",
+      "rm-069": "gonada-feminina"
+    }
+  },
+  "bb.quiz.reproducator-feminin.v1": {
+    "topics": [
+      {
+        "id": "ovare",
+        "label": "Ovarele",
+        "lessonUrl": "sistemul_reproducator_feminin.html?q=Ovarele&section=organe"
+      },
+      {
+        "id": "trompe",
+        "label": "Trompele uterine",
+        "lessonUrl": "sistemul_reproducator_feminin.html?q=Trompele%20uterine&section=organe"
+      },
+      {
+        "id": "uter",
+        "label": "Uterul",
+        "lessonUrl": "sistemul_reproducator_feminin.html?q=Uterul&section=organe"
+      },
+      {
+        "id": "vagin-vulva",
+        "label": "Vaginul și vulva",
+        "lessonUrl": "sistemul_reproducator_feminin.html?q=Vaginul&section=organe"
+      },
+      {
+        "id": "mamare",
+        "label": "Glandele mamare",
+        "lessonUrl": "sistemul_reproducator_feminin.html?q=Glandele%20mamare&section=organe"
+      },
+      {
+        "id": "ciclu",
+        "label": "Ciclul menstrual și reglarea hormonală",
+        "lessonUrl": "sistemul_reproducator_feminin.html?q=Ciclul%20menstrual&section=fiziologie"
+      },
+      {
+        "id": "ovogeneza",
+        "label": "Ovogeneza",
+        "lessonUrl": "sistemul_reproducator_feminin.html?q=Oogeneza&section=fiziologie"
+      },
+      {
+        "id": "fecundatie",
+        "label": "Fecundația și implantarea",
+        "lessonUrl": "sistemul_reproducator_feminin.html?q=Fecunda%C8%9Bia&section=fiziologie"
+      },
+      {
+        "id": "recapitulare-mixta",
+        "label": "Recapitulare mixtă",
+        "lessonUrl": "sistemul_reproducator_feminin.html#home"
+      }
+    ],
+    "questionTopics": {
+      "rf-001": "ovare",
+      "rf-002": "recapitulare-mixta",
+      "rf-003": "recapitulare-mixta",
+      "rf-004": "ovare",
+      "rf-005": "ciclu",
+      "rf-006": "ciclu",
+      "rf-007": "uter",
+      "rf-008": "ciclu",
+      "rf-009": "trompe",
+      "rf-010": "uter",
+      "rf-011": "trompe",
+      "rf-012": "recapitulare-mixta",
+      "rf-013": "vagin-vulva",
+      "rf-014": "ovare",
+      "rf-015": "ovogeneza",
+      "rf-016": "ciclu",
+      "rf-017": "mamare",
+      "rf-018": "recapitulare-mixta",
+      "rf-019": "fecundatie",
+      "rf-020": "ovare",
+      "rf-021": "uter",
+      "rf-022": "mamare",
+      "rf-023": "uter",
+      "rf-024": "ciclu",
+      "rf-025": "ovogeneza",
+      "rf-026": "ciclu",
+      "rf-027": "fecundatie",
+      "rf-028": "ciclu",
+      "rf-029": "recapitulare-mixta",
+      "rf-030": "recapitulare-mixta",
+      "rf-031": "ovare",
+      "rf-032": "trompe",
+      "rf-033": "uter",
+      "rf-034": "recapitulare-mixta",
+      "rf-035": "vagin-vulva",
+      "rf-036": "mamare",
+      "rf-037": "ciclu",
+      "rf-038": "ovogeneza",
+      "rf-039": "ovogeneza",
+      "rf-040": "recapitulare-mixta",
+      "rf-041": "fecundatie",
+      "rf-042": "fecundatie"
+    }
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "introducere_anatomie_fiziologie.html": {
+    "chapter": 1,
+    "ids": [
+      "brand",
+      "nav-overlay",
+      "sidenav",
+      "lesson-content",
+      "page-home",
+      "page-introducere",
+      "page-organizare",
+      "page-functii",
+      "page-termeni",
+      "page-cavitati",
+      "top"
+    ]
+  },
+  "celula_si_fiziologia_celulara.html": {
+    "chapter": 3,
+    "ids": [
+      "brand",
+      "nav-overlay",
+      "sidenav",
+      "lesson-content",
+      "page-home",
+      "page-introducere",
+      "page-structura",
+      "page-membrana",
+      "page-transport",
+      "page-nucleu",
+      "page-organite",
+      "page-energie",
+      "page-recapitulare",
+      "top"
+    ]
+  },
+  "oasele_si_articulatiile.html": {
+    "chapter": 6,
+    "ids": [
+      "brand",
+      "nav-overlay",
+      "sidenav",
+      "lesson-content",
+      "page-introducere",
+      "page-osul",
+      "page-articulatii",
+      "top"
+    ]
+  },
+  "tesutul_muscular.html": {
+    "chapter": 8,
+    "ids": [
+      "brand",
+      "nav-overlay",
+      "sidenav",
+      "lesson-content",
+      "page-tesutul-muscular",
+      "page-muschiul-striat",
+      "page-energia",
+      "top"
+    ]
+  },
+  "tesutul_nervos.html": {
+    "chapter": 10,
+    "ids": [
+      "brand",
+      "nav-overlay",
+      "sidenav",
+      "lesson-content",
+      "page-organizare",
+      "page-fiziologia-nervilor",
+      "page-sinapsa",
+      "top"
+    ]
+  },
+  "sistemul_nervos.html": {
+    "chapter": 11,
+    "ids": [
+      "brand",
+      "nav-overlay",
+      "sidenav",
+      "lesson-content",
+      "page-sistem-nervos-central",
+      "page-sistem-nervos-periferic",
+      "page-sistem-nervos-autonom",
+      "top"
+    ]
+  },
+  "organele_de_simt.html": {
+    "chapter": 12,
+    "ids": [
+      "brand",
+      "nav-overlay",
+      "sidenav",
+      "lesson-content",
+      "page-ochiul-si-vederea",
+      "page-urechea-si-auzul",
+      "page-alte-simturi",
+      "top"
+    ]
+  },
+  "sistemul_renal_complet.html": {
+    "chapter": 20,
+    "ids": [
+      "lab-brand-btn",
+      "lesson-search",
+      "lesson-search-input",
+      "lesson-search-count",
+      "lesson-search-prev",
+      "lesson-search-next",
+      "lesson-search-close",
+      "nav-overlay",
+      "sidenav",
+      "sub-nav-label",
+      "sub-nav",
+      "nav-search-btn",
+      "nav-hl-btn",
+      "nav-hl-label",
+      "top",
+      "hl-badge",
+      "hl-btn",
+      "lesson-content",
+      "page-home",
+      "page-rinichii",
+      "intro",
+      "caract",
+      "nefron-intro",
+      "page-nefron",
+      "struct-nefron",
+      "filtrare",
+      "reabsorbtie",
+      "secretie",
+      "page-hormoni",
+      "activitate-hormonala",
+      "urina",
+      "page-anexe",
+      "structuri-anexe",
+      "uretere",
+      "vezica",
+      "uretra",
+      "alte-organe",
+      "page-mindmap",
+      "flowchart-section",
+      "fc-play-btn",
+      "fc-reset-btn",
+      "fc-wrap",
+      "toast",
+      "settings-fab",
+      "settings-panel",
+      "sfab-hl"
+    ]
+  },
+  "sistemul_reproducator_masculin.html": {
+    "chapter": 22,
+    "ids": [
+      "lab-brand-btn",
+      "lesson-search",
+      "lesson-search-input",
+      "lesson-search-count",
+      "lesson-search-prev",
+      "lesson-search-next",
+      "lesson-search-close",
+      "nav-overlay",
+      "sidenav",
+      "sub-nav-label",
+      "sub-nav",
+      "nav-search-btn",
+      "nav-hl-btn",
+      "nav-hl-label",
+      "top",
+      "hl-badge",
+      "hl-btn",
+      "lesson-content",
+      "page-home",
+      "page-testiculele",
+      "intro",
+      "testiculele",
+      "scrot",
+      "dezvoltare",
+      "spermatogeneza",
+      "spermatozoizi",
+      "page-ducte",
+      "cai-ducte",
+      "organe-anexe",
+      "page-hormoni",
+      "hormoni-masculini",
+      "testosteron",
+      "settings-fab",
+      "settings-panel",
+      "sfab-hl"
+    ]
+  },
+  "sistemul_reproducator_feminin.html": {
+    "chapter": 23,
+    "ids": [
+      "brand",
+      "nav-overlay",
+      "sidenav",
+      "top",
+      "lesson-content",
+      "page-home",
+      "page-intro",
+      "page-organe",
+      "page-fiziologie"
+    ]
+  }
+}

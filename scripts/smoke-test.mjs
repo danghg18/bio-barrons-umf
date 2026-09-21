@@ -41,7 +41,7 @@ async function newPage(context) {
   const page = await context.newPage();
   page.on('pageerror', error => errors.push(`${page.url()}: ${error.message}`));
   page.on('console', message => {
-    if (message.type() === 'error' && !/fonts\.(googleapis|gstatic)\.com/.test(message.text())) errors.push(`${page.url()}: ${message.text()}`);
+    if (message.type() === 'error' && !/fonts\.(googleapis|gstatic)\.com/.test(message.text() + ' ' + message.location().url)) errors.push(`${page.url()}: ${message.text()} [${message.location().url}]`);
   });
   return page;
 }
@@ -100,11 +100,11 @@ try {
     await page.goto(`${base}${file}#route-that-does-not-exist`, { waitUntil:'domcontentloaded' });
     await page.reload({ waitUntil:'domcontentloaded' });
     await page.waitForFunction(value => document.getElementById(`page-${value}`)?.classList.contains('active'), state.defaultRoute);
-    await page.evaluate(() => {
+    await page.evaluate(query => {
       const input = document.getElementById('lesson-search-input');
-      input.value = 'sistem';
+      input.value = query;
       input.dispatchEvent(new Event('input', { bubbles:true }));
-    });
+    }, file === 'celula_si_fiziologia_celulara.html' ? 'membrana' : 'sistem');
     await page.waitForTimeout(350);
     const searchCount = await page.locator('#lesson-search-count').textContent();
     const searchTotal = Number((searchCount.match(/\/\s*(\d+)/) || [])[1]);
@@ -135,7 +135,7 @@ try {
   const studyPage = await newPage(studyContext);
   await studyPage.goto(`${base}celula_si_fiziologia_celulara.html#membrana`, { waitUntil:'domcontentloaded' });
   await studyPage.waitForFunction(() => window.BBStudyState && document.querySelector('.bb-lesson-completion'));
-  const contentRoutes = await studyPage.evaluate(() => [...document.querySelectorAll('.page-section:not(.chapter-home)')].map(section => section.id.slice(5)));
+  const contentRoutes = await studyPage.evaluate(() => [...document.querySelectorAll('.page-section:not(.chapter-home):not([data-curriculum-excluded])')].map(section => section.id.slice(5)));
   const initialStudy = await studyPage.evaluate(() => BBStudyState.getState());
   if (initialStudy.lastVisited?.chapterNum !== 3 || initialStudy.lastVisited?.sectionId !== 'membrana') errors.push('study state did not record the exact initial lesson section');
   if (initialStudy.lessons['3']?.completedSections?.includes('membrana')) errors.push('opening a long section marked it complete before reaching the end');
@@ -221,7 +221,9 @@ try {
     }
     await page.close();
   }
-  if (tableCount !== 20 || stackedTableCount !== 19 || scrollingTableCount !== 1) errors.push(`table contract changed: ${tableCount} total, ${stackedTableCount} stacked, ${scrollingTableCount} scrolling`);
+  const educationalInventory = JSON.parse(await readFile(new URL('../tests/educational-content.json', import.meta.url), 'utf8'));
+  const expectedTables = Object.values(educationalInventory).flat().reduce((count, section) => count + section.tables.length, 0);
+  if (tableCount !== expectedTables || stackedTableCount + scrollingTableCount !== expectedTables) errors.push(`table contract changed: ${tableCount} total, ${stackedTableCount} stacked, ${scrollingTableCount} scrolling`);
   await tableContext.close();
 
   const mobile = await browser.newContext({ viewport:{width:390,height:844}, reducedMotion:'reduce' });
@@ -289,11 +291,13 @@ try {
   const first = quiz.locator('.quiz-question').first();
   await first.locator('input[type=checkbox]').first().check();
   await first.locator('.quiz-check').click();
-  await first.locator('.quiz-retry').waitFor({state:'visible'});
+  await first.locator('input:disabled').first().waitFor({state:'visible'});
   if (!await first.getAttribute('data-question-id')) errors.push('quiz IDs unavailable');
   if (!await quiz.evaluate(() => localStorage.getItem('bb.quiz.sistem-nervos.v1'))) errors.push('quiz state did not persist');
   // Exact-set scoring, retry, persistence, and reset for all 50 authored IDs.
-  await first.locator('.quiz-retry').click();
+  await quiz.locator('.quiz-reset-start').click();
+  await quiz.locator('.quiz-reset-confirm').click();
+  await quiz.waitForFunction(()=>document.querySelectorAll('.quiz-question.is-verified').length===0);
   const questions = await quiz.evaluate(() => BB_NERVOUS_QUIZ.questions.map(q => ({ id:q.id, correct:q.correct })));
   for (const question of questions) {
     const card = quiz.locator('[data-question-id="' + question.id + '"]');
@@ -301,16 +305,17 @@ try {
     await quiz.evaluate(route => window.goto(route), route);
     for (const letter of question.correct) await card.locator('input[value="' + letter + '"]').check();
     await card.locator('.quiz-check').click();
-    await card.locator('.quiz-retry').waitFor({state:'visible'});
+    await card.locator('input:disabled').first().waitFor({state:'visible'});
     if (!await card.evaluate(node => node.classList.contains('is-correct'))) errors.push(question.id + ': exact answer set scored incorrectly');
   }
   await quiz.reload();
   if (await quiz.locator('.quiz-question.is-correct').count() !== 50) errors.push('quiz reload lost verified answers');
-  await quiz.locator('.page-section.active .quiz-reset-start').click();
-  await quiz.locator('.page-section.active .quiz-reset-cancel').click();
+  await quiz.locator('.quiz-reset-start').click();
+  await quiz.locator('.quiz-reset-cancel').click();
   if (await quiz.locator('.quiz-question.is-correct').count() !== 50) errors.push('cancel reset changed saved answers');
-  await quiz.locator('.page-section.active .quiz-reset-start').click();
-  await quiz.locator('.page-section.active .quiz-reset-confirm').click();
+  await quiz.locator('.quiz-reset-start').click();
+  await quiz.locator('.quiz-reset-confirm').click();
+  await quiz.waitForFunction(()=>document.querySelectorAll('.quiz-question.is-verified').length===0);
   if (await quiz.locator('.quiz-question.is-verified').count()) errors.push('quiz reset failed');
   await quiz.close();
 
@@ -337,14 +342,16 @@ try {
   await senseFirst.locator('input[value="A"]').check();
   await senseFirst.locator('input[value="B"]').check();
   await senseFirst.locator('.quiz-check').click();
-  await senseFirst.locator('.quiz-retry').waitFor({state:'visible'});
+  await senseFirst.locator('input:disabled').first().waitFor({state:'visible'});
   if (await senseFirst.locator('.is-answer').count() !== 1 || await senseFirst.locator('.is-missed-answer').count() !== 2 || await senseFirst.locator('.is-selected-extra').count() !== 1) errors.push('selected, omitted, and extra feedback are not distinct');
   if (!await senseFirst.locator('.quiz-option-wrap[data-letter="C"] .quiz-option-state').textContent().then(text => text.includes('omis'))) errors.push('omitted feedback has no text label');
   if (await senseFirst.locator('.is-missed-answer').first().evaluate(node=>getComputedStyle(node).backgroundColor) !== 'rgb(254, 249, 195)') errors.push('omitted answer is not yellow');
   if (!await senseFirst.locator('.quiz-option-wrap[data-letter="A"] .quiz-option-explanation').isVisible()) errors.push('incorrect choice explanation is hidden');
   await sense.reload();
   if (await senseFirst.locator('.is-missed-answer').count() !== 2) errors.push('reload lost omitted feedback');
-  await senseFirst.locator('.quiz-retry').click();
+  await sense.locator('.quiz-reset-start').click();
+  await sense.locator('.quiz-reset-confirm').click();
+  await sense.waitForFunction(()=>document.querySelectorAll('.quiz-question.is-verified').length===0);
   if (await senseFirst.locator('.is-missed-answer').count() || await senseFirst.locator('input:disabled').count()) errors.push('retry did not clear feedback');
   // Every authored question is scored against the independently supplied key.
   for (let number=1; number<=100; number++) {
@@ -353,17 +360,18 @@ try {
     await sense.evaluate(route=>goto(route),route);
     for (const letter of senseKey[number-1]) await card.locator('input[value="'+letter+'"]').check();
     await card.locator('.quiz-check').click();
-    await card.locator('.quiz-retry').waitFor({state:'visible'});
+    await card.locator('input:disabled').first().waitFor({state:'visible'});
     if (!await card.evaluate(node=>node.classList.contains('is-correct'))) errors.push('sense quiz '+number+': exact-set scoring failed');
   }
   if (await sense.locator('#quiz-sidebar-count').textContent() !== '100/100 verificate') errors.push('sense quiz progress total is wrong');
   await sense.reload();
   if (await sense.locator('.quiz-question.is-correct').count() !== 100) errors.push('sense quiz reload lost saved answers');
-  await sense.locator('.page-section.active .quiz-reset-start').click();
-  await sense.locator('.page-section.active .quiz-reset-cancel').click();
+  await sense.locator('.quiz-reset-start').click();
+  await sense.locator('.quiz-reset-cancel').click();
   if (await sense.locator('.quiz-question.is-correct').count() !== 100) errors.push('sense quiz cancel reset lost saved answers');
-  await sense.locator('.page-section.active .quiz-reset-start').click();
-  await sense.locator('.page-section.active .quiz-reset-confirm').click();
+  await sense.locator('.quiz-reset-start').click();
+  await sense.locator('.quiz-reset-confirm').click();
+  await sense.waitForFunction(()=>document.querySelectorAll('.quiz-question.is-verified').length===0);
   if (await sense.locator('.quiz-question.is-verified').count()) errors.push('sense quiz reset failed');
   if (await sense.evaluate(() => localStorage.getItem('bb.quiz.sistem-nervos.v1')) !== nervousSaved) errors.push('sense quiz changed nervous-system progress');
   await sense.goto(base+'grile_sistemul_nervos.html');
@@ -388,13 +396,45 @@ try {
   await swPage.evaluate(() => navigator.serviceWorker.ready);
   await swPage.reload({ waitUntil:'domcontentloaded' });
   if (!await swPage.evaluate(() => !!navigator.serviceWorker.controller)) errors.push('service worker did not control reload');
+  // Lesson queries retain the established exact-URL cache contract. Visit each
+  // search bookmark online first, then verify that exact bookmark offline.
+  const offlineSearchSections = new Map();
+  for (const file of lessonFiles) {
+    await swPage.goto(base+file);
+    const section = await swPage.evaluate(() => BBSearchText.collect('celul')[0]?.sectionId);
+    if (!section) errors.push(`${file}: expected source passage unavailable`);
+    else {
+      offlineSearchSections.set(file, section);
+      await swPage.goto(`${base}${file}?q=celul&section=${encodeURIComponent(section)}&hit=0#${encodeURIComponent(section)}`);
+      await swPage.waitForSelector('.search-found-current');
+    }
+  }
   await context.setOffline(true);
   for (const file of ['index.html', ...lessonFiles, ...resources.map(r=>r.url), ...(registry.BIO_SITE.pages || []).map(r=>r.url)]) {
     const response = await swPage.goto(`${base}${file}`, { waitUntil:'domcontentloaded' });
     if (!response || response.status() !== 200) errors.push(`${file}: offline navigation failed`);
+    if (lessonFiles.includes(file)) {
+      const missingImages = await swPage.locator('main img').evaluateAll(async images => {
+        return (await Promise.all(images.map(async image => {
+          image.loading = 'eager';
+          try { await image.decode(); return null; } catch { return image.getAttribute('src'); }
+        }))).filter(Boolean);
+      });
+      if (missingImages.length) errors.push(`${file}: offline figures failed: ${missingImages.join(', ')}`);
+      const section = offlineSearchSections.get(file);
+      if (!section) errors.push(`${file}: expected source passage unavailable offline`);
+      else {
+        await swPage.goto(`${base}${file}?q=celul&section=${encodeURIComponent(section)}&hit=0#${encodeURIComponent(section)}`);
+        await swPage.waitForSelector('.search-found-current');
+        if (await swPage.locator('.page-section.active').getAttribute('id') !== 'page-'+section) errors.push(`${file}: offline source search bookmark failed`);
+      }
+    }
   }
   await swPage.goto(base+'grile_organele_de_simt.html?q=otoli%C8%9Bi&section=grile-71-80&hit=0');
   if (await swPage.locator('.page-section.active').getAttribute('id') !== 'page-grile-71-80') errors.push('sense quiz cached search URL failed offline');
+  await swPage.goto(base+'notite.html?capitol=3#nota-membrana');
+  await swPage.waitForSelector('#notebooks');
+  if (await swPage.locator('h1').innerText() !== registry.CHAPTERS.find(c=>c.num===3).name) errors.push('offline notebook query must open the cached notebook shell');
   await context.setOffline(false);
   await swPage.close();
   await context.close();
@@ -420,6 +460,15 @@ try {
   });
   await upgradePage.waitForFunction(async () => !(await caches.keys()).includes('biologie-atlas-v16'));
   if (!await upgradePage.evaluate(async () => (await caches.keys()).includes('unrelated-site-cache'))) errors.push('service worker deleted an unrelated origin cache');
+  await upgradeContext.setOffline(true);
+  for (const file of lessonFiles) {
+    const response = await upgradePage.goto(base+file, {waitUntil:'domcontentloaded'});
+    if (!response || response.status() !== 200) errors.push(`${file}: updated worker failed offline`);
+    const missing = await upgradePage.locator('main img').evaluateAll(async images => (await Promise.all(images.map(async image => {
+      image.loading='eager';try {await image.decode();return null;}catch{return image.getAttribute('src');}
+    }))).filter(Boolean));
+    if(missing.length) errors.push(`${file}: updated worker missing figures: ${missing.join(', ')}`);
+  }
   await upgradePage.close();
   await upgradeContext.close();
 } finally {

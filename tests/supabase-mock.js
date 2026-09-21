@@ -27,7 +27,7 @@
     const delay = delays[operation+':'+table] || delays[operation] || 0;
     if(delay === 'hold') await new Promise(resolve => held.push(resolve));
     else if(delay) await new Promise(resolve => setTimeout(resolve,delay));
-    return clone(result);
+    return operation === 'download' ? result : clone(result);
   }
   const auth = {
     async getSession() { record('getSession');return {data:{session:session()},error:null}; },
@@ -70,6 +70,24 @@
       }
     };
   }};
+  sdk.storage = {from(bucket) {return {
+    async upload(path,blob) {
+      record('upload',bucket,{path});
+      const bytes = new Uint8Array(await blob.arrayBuffer()); let binary=''; bytes.forEach(b=>{binary+=String.fromCharCode(b);});
+      return request('upload',bucket,()=>{
+        if (!state.user || !path.startsWith(state.user.id+'/')) return {error:{code:'42501'}};
+        state.images ||= {}; state.images[bucket+'/'+path]={data:btoa(binary),type:blob.type};persist();return {data:{path},error:null};
+      });
+    },
+    async download(path) {
+      record('download',bucket,{path});
+      return request('download',bucket,()=>{
+        if (!state.user || !path.startsWith(state.user.id+'/')) return {error:{code:'42501'}};
+        const row=state.images?.[bucket+'/'+path];if(!row)return {error:{code:'404'}};
+        return {data:new Blob([Uint8Array.from(atob(row.data),c=>c.charCodeAt(0))],{type:row.type}),error:null};
+      });
+    }
+  };}};
   window.__mock = {
     users,
     seed(table,rows) {state.tables[table]=clone(rows);persist();},

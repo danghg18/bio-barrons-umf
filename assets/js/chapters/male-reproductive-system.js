@@ -4,7 +4,6 @@ const SUB_NAVS = {
     {h:'intro', l:'22.1 Introducere'},
     {h:'testiculele', l:'22.2 Testiculele'},
     {h:'scrot', l:'Scrotul'},
-    {h:'dezvoltare', l:'Dezvoltarea testiculelor'},
     {h:'spermatogeneza', l:'Spermatogeneza'},
     {h:'spermatozoizi', l:'Spermatozoizii'},
   ],

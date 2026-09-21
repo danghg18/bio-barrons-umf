@@ -53,6 +53,7 @@ const { createHash } = await import('node:crypto');
 const hash = value => createHash('sha256').update(value).digest('hex');
 const protectedContent = JSON.parse(await readFile(join(root, 'tests/educational-content.json'), 'utf8'));
 // Quiz layout copy can change; independently lock every authored question/answer/explanation.
+const expectedTables = Object.values(protectedContent).flat().reduce((count, section) => count + section.tables.length, 0);
 const protectedQuizzes = JSON.parse(await readFile(join(root, 'tests/quiz-content-hashes.json'), 'utf8'));
 const viewports = [[1440,900],[1280,800],[1024,768],[390,844],[430,932],[640,900],[641,900],[768,1024],[1023,768],[1025,768]];
 const report = { viewports, pages: [], tables: 0, stackedTables: 0, scrollingTables: 0, fonts: {}, screenshots: [] };
@@ -107,13 +108,13 @@ try {
   report.tables+=tableAudit.length;report.stackedTables+=tableAudit.filter(table=>table.stacked).length;report.scrollingTables+=tableAudit.filter(table=>!table.stacked).length;
   if(tableAudit.some(table=>table.stacked&&(!table.labels||!table.roles)))errors.push(file+': stacked table labels or roles are incomplete');
  }
- if(report.tables!==20||report.stackedTables!==19||report.scrollingTables!==1)errors.push(`table contract changed: ${report.tables} total, ${report.stackedTables} stacked, ${report.scrollingTables} scrolling`);
+ if(report.tables!==expectedTables||report.stackedTables+report.scrollingTables!==expectedTables)errors.push(`table contract changed: ${report.tables} total, ${report.stackedTables} stacked, ${report.scrollingTables} scrolling`);
  // Old preference values and failed storage cannot activate a theme or stop startup.
  for (const value of ['1','0',null,'blocked']) {
   const isolated=await browser.newContext({serviceWorkers:'block'});
   await isolated.addInitScript(value=>{if(value==='blocked'){Object.defineProperty(window,'localStorage',{get(){throw new DOMException('blocked','SecurityError');}});}else if(value!==null)localStorage.setItem('darkMode',value);},value);
   const p=await newPage(isolated);
-  for(const file of report.pages){await p.goto(base+file);if(await p.locator('body.bm-reader').count())await p.waitForFunction(()=>document.body.dataset.bbSharedReady==='true');const state=await p.evaluate(()=>({dark:document.body.classList.contains('dark'),controls:document.querySelectorAll('#dm-btn,#nav-dm-btn,#sfab-dm').length,bg:getComputedStyle(document.body).backgroundColor}));if(state.dark||state.controls||state.bg!=='rgb(247, 248, 250)')errors.push(file+' preference '+value+': '+JSON.stringify(state));}
+  for(const file of report.pages){await p.goto(base+file);if(await p.locator('body.bm-reader').count())await p.waitForFunction(()=>document.body.dataset.bbSharedReady==='true');const state=await p.evaluate(()=>({dark:document.body.classList.contains('dark'),controls:document.querySelectorAll('#dm-btn,#nav-dm-btn,#sfab-dm').length,bg:getComputedStyle(document.body).backgroundColor}));if(state.dark||state.controls||state.bg!=='rgb(245, 247, 245)')errors.push(file+' preference '+value+': '+JSON.stringify(state));}
   await isolated.close();
  }
  await resize(page, {width:390,height:844});

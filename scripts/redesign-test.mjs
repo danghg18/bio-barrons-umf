@@ -74,6 +74,7 @@ try {
   await capture('home-account');
   await page.keyboard.press('Escape');
   assert.equal(await page.locator('#pilot-account-toggle').evaluate(node=>node===document.activeElement),true);
+  assert.equal(await page.locator('#pilot-demo-question').isVisible(), true, 'Homepage presents the working demo alongside its introduction');
   assert.match(await page.locator('#pilot-demo-question label').nth(1).textContent(), /^B\./, 'Options must identify the letters used in feedback');
   await page.locator('#pilot-demo-question input[value="B"]').check();
   await page.locator('#pilot-demo-question input[value="C"]').check();
@@ -129,8 +130,12 @@ try {
       assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),file+' overflow '+width);
       const navRect=await page.locator('.bm-primary-nav').boundingBox();
       assert.ok(Math.abs(navRect.x+navRect.width/2-width/2)<2,file+' navigation is not centered');
+      const actionsRect=await page.locator('.lab-topbar-actions').boundingBox();
       const brandRect=await page.locator('.lab-topbar .lab-brand').boundingBox();
-      assert.ok(brandRect.x+brandRect.width<=navRect.x,file+' logo overlaps navigation');
+      const separate=(a,b)=>a.x+a.width<=b.x+1||b.x+b.width<=a.x+1||a.y+a.height<=b.y+1||b.y+b.height<=a.y+1;
+      assert.ok(separate(navRect,actionsRect),file+' navigation overlaps actions');
+      assert.ok(separate(brandRect,navRect),file+' logo overlaps navigation');
+      if(file==='index.html') assert.ok(await page.locator('.lab-topbar-actions #bb-notes-toggle').isVisible(),'Homepage notes stay in the topbar');
       for(const link of await page.locator('.bm-primary-nav a').all()) {
         assert.ok(await link.evaluate(n=>{const r=n.getBoundingClientRect();return n.contains(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2));}),file+' navigation link is covered');
       }

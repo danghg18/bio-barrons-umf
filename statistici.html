@@ -22,10 +22,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/tokens.css?v=20260909-editorial1">
-<link rel="stylesheet" href="assets/css/home.css?v=20260910-testing2">
+<link rel="stylesheet" href="assets/css/home.css?v=20260914-search2">
 <script src="assets/js/light-mode.js?v=20260909-editorial1"></script>
 <link rel="stylesheet" href="assets/css/site-redesign.css?v=20260910-biomed1">
 <link rel="stylesheet" href="assets/css/testing-analytics.css?v=20260911-analytics1">
+<link rel="stylesheet" href="assets/css/statistics.css">
 <link rel="stylesheet" href="assets/css/accounts.css?v=20260911-accounts1">
 </head>
 <body class="bm-browse bm-analytics">
@@ -59,31 +60,41 @@
 <main id="main-content" class="analytics-page">
   <header class="analytics-page-head">
     <a class="analytics-back" href="testare.html">← Înapoi la testare</a>
-    <p class="testing-eyebrow">Studiul tău, în perspectivă</p>
-    <h1>Fiecare încercare <span>contează.</span></h1>
-    <p>Vezi cum evoluezi, unde ai siguranță și ce merită să mai exersezi.</p>
+    <div class="statistics-heading"><div><h1>Progresul tău</h1><p>De la primul răspuns la toate corecte.</p></div>
+      <form class="analytics-filters" aria-label="Filtre statistici"><label for="analytics-chapter">Capitol<select id="analytics-chapter" name="capitol"><option value="all">Toate capitolele</option></select></label></form>
+    </div>
   </header>
-  <form class="analytics-filters" aria-label="Filtre statistici">
-    <label for="analytics-chapter">Capitol<select id="analytics-chapter" name="capitol"><option value="all">Toate capitolele</option></select></label>
-    <label for="analytics-period">Perioadă<select id="analytics-period" name="perioada"><option value="7">Ultimele 7 zile</option><option value="30" selected>Ultimele 30 de zile</option><option value="all">Tot istoricul</option></select></label>
-    <p id="analytics-filter-status" role="status">Rezultate în perioada selectată</p>
-  </form>
+  <nav class="statistics-tabs" role="tablist" aria-label="Statistici">
+    <button type="button" id="analytics-tab-rezumat" role="tab" aria-selected="true" aria-controls="analytics-panel-rezumat" data-analytics-tab="rezumat">Rezumat</button>
+    <button type="button" id="analytics-tab-greseli" role="tab" aria-selected="false" aria-controls="analytics-panel-greseli" data-analytics-tab="greseli" tabindex="-1">Greșeli</button>
+    <button type="button" id="analytics-tab-istoric" role="tab" aria-selected="false" aria-controls="analytics-panel-istoric" data-analytics-tab="istoric" tabindex="-1">Istoric</button>
+  </nav>
   <p class="analytics-storage-note" id="analytics-storage-note" role="status" hidden></p>
-  <section id="analytics-metrics" class="analytics-metrics" aria-label="Rezumatul rezultatelor"><p class="analytics-loading">Se încarcă statisticile…</p></section>
-  <div class="analytics-chart-grid">
-    <section class="analytics-chart-panel" aria-labelledby="activity-title"><div class="analytics-section-head"><div><h2 id="activity-title">Activitate zilnică</h2><p>Fiecare verificare, inclusiv reluările.</p></div><span class="analytics-chart-key"><i></i> Încercări</span></div><div id="analytics-activity"></div></section>
-    <section class="analytics-chart-panel" aria-labelledby="accuracy-title"><div class="analytics-section-head"><div><h2 id="accuracy-title">Evoluția rezultatelor</h2><p>Răspunsuri exacte din încercările zilei.</p></div><span class="analytics-chart-key"><i></i> Corectitudine</span></div><div id="analytics-accuracy"></div></section>
+  <div id="analytics-report-content">
+    <section id="analytics-panel-rezumat" class="statistics-panel" role="tabpanel" aria-labelledby="analytics-tab-rezumat" tabindex="0">
+      <section id="analytics-onboarding" class="analytics-onboarding" hidden></section>
+      <section id="analytics-metrics" aria-label="Parcurgerea curentă"><p class="analytics-loading">Se încarcă statisticile…</p></section>
+      <section id="analytics-evolution" class="statistics-frame"><div class="statistics-surface">
+        <div class="statistics-section-head"><div><h2 id="accuracy-title">Evoluția rezultatelor</h2><p>Rezultatele înregistrate, inclusiv corectările.</p></div><div id="analytics-period-summary"><label class="statistics-period" id="analytics-period-field" for="analytics-period">Perioadă<select id="analytics-period" name="perioada"><option value="7">Ultimele 7 zile</option><option value="30">Ultimele 30 de zile</option><option value="all" selected>Tot istoricul</option></select></label></div></div>
+        <div id="analytics-accuracy"></div>
+      </div></section>
+      <section id="analytics-comparison" aria-label="Progres pe capitole"></section>
+    </section>
+    <section id="analytics-panel-greseli" class="statistics-panel" role="tabpanel" aria-labelledby="analytics-tab-greseli" tabindex="0" hidden>
+      <div class="statistics-section-head"><div><h2>Ce mai ai de corectat</h2><p id="analytics-mistakes-context">Greșelile din parcurgerea curentă.</p></div><label class="statistics-period" for="analytics-review-mode">Arată<select id="analytics-review-mode"><option value="unresolved">Rămase greșite</option><option value="resolved">Corectate</option><option value="all">Greșelile inițiale</option></select></label></div>
+      <div id="analytics-topics"></div>
+      <div id="analytics-mistakes" tabindex="-1"></div>
+      <nav id="analytics-mistakes-pages" class="analytics-pagination" aria-label="Paginile greșelilor"></nav>
+    </section>
+    <section id="analytics-panel-istoric" class="statistics-panel" role="tabpanel" aria-labelledby="analytics-tab-istoric" tabindex="0" hidden>
+      <div class="statistics-section-head"><div><h2>Parcurgerile tale</h2><p id="analytics-history-count"></p></div><div id="analytics-period-history"></div></div>
+      <div id="analytics-history"></div>
+      <nav id="analytics-history-pages" class="analytics-pagination" aria-label="Paginile parcurgerilor"></nav>
+      <details id="analytics-activity-details" class="statistics-disclosure"><summary>Activitate și rezultate</summary><p id="analytics-filter-status"></p><div id="analytics-history-totals"></div><div id="analytics-activity"></div></details>
+      <details id="analytics-method" class="statistics-disclosure"><summary>Despre aceste rezultate</summary><p>Rezultatul inițial rămâne neschimbat. Corectarea greșelilor face parte din aceeași parcurgere; o nouă parcurgere începe când reiei întregul capitol.</p><p>Procentele inițiale se calculează din grilele verificate. După terminarea capitolului, procentul după corectare include grilele corectate în rundele lui.</p><p id="analytics-saved-note" class="analytics-saved-note" hidden></p><p id="analytics-tracking-note"></p></details>
+      <details id="analytics-management" class="statistics-disclosure"><summary>Gestionarea istoricului</summary><section class="analytics-data-controls" aria-label="Gestionarea istoricului"><div><strong>Istoricul tău</strong><p>Se păstrează în acest browser. Reluarea grilelor nu îl șterge.</p></div><button type="button" id="analytics-clear-start" class="analytics-text-button">Șterge istoricul</button><div id="analytics-clear-confirmation" class="analytics-clear-confirmation" hidden><p id="analytics-clear-description"></p><div><button type="button" id="analytics-clear-confirm" class="analytics-danger-button">Da, șterge istoricul</button><button type="button" id="analytics-clear-cancel" class="analytics-text-button">Anulează</button></div></div><p id="analytics-clear-status" role="status"></p></section></details>
+    </section>
   </div>
-  <section class="analytics-block" aria-labelledby="comparison-title"><div class="analytics-section-head"><div><p class="testing-eyebrow">Privire de ansamblu</p><h2 id="comparison-title">Capitol cu capitol</h2></div><p>Progresul actual include toate răspunsurile salvate.</p></div><div id="analytics-comparison"></div></section>
-  <section class="analytics-block" aria-labelledby="mistakes-title"><div class="analytics-section-head"><div><p class="testing-eyebrow">Mai aproape de răspunsul corect</p><h2 id="mistakes-title">Întrebări de revizuit</h2></div><p>Ordonate după numărul încercărilor greșite.</p></div><div id="analytics-mistakes"></div></section>
-  <section class="analytics-block" aria-labelledby="history-title"><div class="analytics-section-head"><div><p class="testing-eyebrow">Pas cu pas</p><h2 id="history-title">Istoricul încercărilor</h2></div><span id="analytics-history-count"></span></div><div id="analytics-history"></div><nav id="analytics-history-pages" class="analytics-pagination" aria-label="Paginile istoricului"></nav></section>
-  <aside class="analytics-method"><h2>Cum citim rezultatele</h2><p>O grilă este corectă când selectezi exact combinația din barem. Prima încercare înregistrată se numără o singură dată; reluările contribuie la rezultatele generale. Pentru răspunsurile salvate înaintea activării statisticilor, prima încercare este necunoscută.</p><p id="analytics-tracking-note"></p></aside>
-  <section class="analytics-data-controls" aria-label="Gestionarea istoricului">
-    <div><strong>Istoricul tău</strong><p>Se păstrează în acest browser. Reluarea grilelor nu îl șterge.</p></div>
-    <button type="button" id="analytics-clear-start" class="analytics-text-button">Șterge istoricul</button>
-    <div id="analytics-clear-confirmation" class="analytics-clear-confirmation" hidden><p id="analytics-clear-description"></p><div><button type="button" id="analytics-clear-confirm" class="analytics-danger-button">Da, șterge istoricul</button><button type="button" id="analytics-clear-cancel" class="analytics-text-button">Anulează</button></div></div>
-    <p id="analytics-clear-status" role="status"></p>
-  </section>
   <noscript><p class="analytics-storage-note">Activează JavaScript pentru a vedea statisticile salvate în acest browser.</p></noscript>
 </main>
 <footer class="lab-footer"><div class="pilot-footer-row"><a href="index.html">BioMed</a><span>Progresul grilelor se păstrează în acest browser.</span><a href="index.html#lab-tools">Despre platformă</a></div></footer>
@@ -116,12 +127,18 @@
 <script src="assets/js/vendor/supabase.js?v=20260911-accounts1"></script>
 <script src="assets/js/supabase-client.js?v=20260911-accounts1"></script>
 <script src="assets/js/auth-state.js?v=20260911-accounts1"></script>
+<script src="assets/js/note-media.js"></script>
 <script src="assets/js/cloud-sync.js?v=20260911-accounts1"></script>
-<script src="assets/js/home.js?v=20260911-accounts1"></script>
+<script src="assets/js/search-text.js?v=20260914-search2"></script>
+<script src="assets/js/home.js?v=20260914-search2"></script>
 <script src="assets/js/site-redesign.js?v=20260911-accounts1"></script>
 <script src="assets/js/quiz-analytics.js?v=20260911-accounts1"></script>
+<script src="assets/js/analytics-charts.js?v=20260912-progress1"></script>
 <script src="assets/js/analytics-ui.js?v=20260911-analytics1"></script>
 <script src="assets/js/account-ui.js?v=20260911-accounts1"></script>
+<script src="assets/js/note-content.js"></script>
+<script src="assets/js/note-editor.js"></script>
 <script src="assets/js/notes.js?v=20260911-accounts1"></script>
+<script src="assets/js/offline.js"></script>
 </body>
 </html>

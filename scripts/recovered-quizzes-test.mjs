@@ -42,19 +42,21 @@ try {
     const card=page.locator(`[data-question-id="${question.id}"]`);
     for(const letter of question.correct) await card.locator(`input[value="${letter}"]`).check();
     await card.locator('.quiz-check').click();
-    await card.locator('.quiz-retry').waitFor({state:'visible'});
+    await card.locator('input:disabled').first().waitFor({state:'visible'});
     assert.equal(await card.locator('.is-selected-extra').count(),0);
     assert.equal(await card.locator('.is-answer').count(),question.correct.length);
     await page.reload();
     assert.equal(await card.locator('input:checked').count(),question.correct.length);
-    assert.ok(await card.locator('.quiz-retry').isVisible());
-    await card.locator('.quiz-retry').click();
+    assert.ok(await card.evaluate(node=>node.classList.contains('is-verified')));
+    await page.locator('.quiz-reset-start').click();
+    await page.locator('.quiz-reset-confirm').click();
+    await page.waitForFunction(()=>document.querySelectorAll('.quiz-question.is-verified').length===0);
     assert.equal(await card.locator('input:checked').count(),0);
     const wrong=question.options.find(o=>!question.correct.includes(o.letter));
     if(wrong){
       await card.locator(`input[value="${wrong.letter}"]`).check();
       await card.locator('.quiz-check').click();
-      await card.locator('.quiz-retry').waitFor({state:'visible'});
+      await card.locator('input:disabled').first().waitFor({state:'visible'});
       assert.equal(await card.locator('.is-selected-extra').count(),1);
       assert.equal(await card.locator('.is-missed-answer').count(),question.correct.length);
       assert.ok((await card.locator(`#${question.id}-${wrong.letter.toLowerCase()}-explanation`).textContent()).includes(wrong.why));
@@ -62,9 +64,10 @@ try {
     const last=data.ranges.at(-1);
     await page.goto(base+spec.file+'#'+last.id);
     assert.equal(await page.locator('.page-section.active .quiz-question').count(),last.end-last.start+1);
-    assert.match(await page.locator('.page-section.active .quiz-range-score').textContent(),new RegExp('/'+(last.end-last.start+1)+' '));
-    await page.locator('.page-section.active .quiz-reset-start').click();
-    await page.locator('.page-section.active .quiz-reset-confirm').click();
+    assert.equal(await page.locator('.page-section.active .quiz-page-position').textContent(),`Pagina ${data.ranges.length} din ${data.ranges.length}`);
+    await page.locator('.quiz-reset-start').click();
+    await page.locator('.quiz-reset-confirm').click();
+    await page.waitForFunction(()=>document.querySelectorAll('.quiz-question.is-verified').length===0);
     await page.reload();
     assert.equal(await page.locator('#quiz-sidebar-count').textContent(),`0/${spec.count} verificate`);
     // Every archived explanation and added note must survive into the rendered DOM.

@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/tokens.css?v=20260909-editorial1">
-<link rel="stylesheet" href="assets/css/home.css?v=20260910-testing2">
+<link rel="stylesheet" href="assets/css/home.css?v=20260914-search1">
 <link rel="stylesheet" href="assets/css/site-redesign.css?v=20260910-biomed1">
 <script src="assets/js/light-mode.js?v=20260909-editorial1"></script>
 <link rel="stylesheet" href="assets/css/accounts.css?v=20260911-accounts1">
@@ -33,10 +33,12 @@
 <div class="lab-topbar-actions"></div>
 </div></header>
 <main class="bb-account-page" id="main-content">
+<header class="bb-account-intro">
 <h1>Contul tău de studiu</h1>
-<p>Deschide meniul de cont pentru autentificare, creare cont sau resetarea parolei. Progresul lecțiilor, grilele și notițele te însoțesc pe dispozitivele pe care te autentifici.</p>
-<p>Dacă ai ajuns aici din email, așteaptă verificarea linkului. Pentru o parolă nouă, folosește formularul afișat.</p>
-<a class="pilot-button" href="index.html">Înapoi la lecții</a>
+<p>Progresul lecțiilor, grilele și notițele te însoțesc pe dispozitivele pe care te autentifici.</p>
+</header>
+<div class="bb-account-shell" id="bb-account-mount"></div>
+<a class="bb-account-return" href="index.html">Înapoi la lecții</a>
 <noscript><p>Activează JavaScript pentru a te autentifica sau a reseta parola. Poți consulta lecțiile fără cont.</p></noscript>
 </main>
 </div>
@@ -48,6 +50,7 @@
 <script src="assets/js/vendor/supabase.js?v=20260911-accounts1"></script>
 <script src="assets/js/supabase-client.js?v=20260911-accounts1"></script>
 <script src="assets/js/auth-state.js?v=20260911-accounts1"></script>
+<script src="assets/js/note-media.js"></script>
 <script src="assets/js/cloud-sync.js?v=20260911-accounts1"></script>
 <script src="assets/js/account-ui.js?v=20260911-accounts1"></script>
 </body>

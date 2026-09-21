@@ -4,9 +4,58 @@
   "title": "Design System: Barron's Biologie – UMF Cluj",
   "extensions": {
     "colorMeta": {
-      "primary": {
+      "ui-ink": {
         "role": "primary",
-        "displayName": "Primary",
+        "displayName": "Study Ink",
+        "value": "#23473d",
+        "cssVariable": "--ui-ink",
+        "purpose": "Primary text, active controls and dark-green primary actions."
+      },
+      "ui-muted": {
+        "role": "neutral",
+        "displayName": "Secondary Study Text",
+        "value": "#566b61",
+        "cssVariable": "--ui-muted",
+        "purpose": "Secondary labels and supporting copy."
+      },
+      "ui-canvas": {
+        "role": "neutral",
+        "displayName": "Shared Sage Canvas",
+        "value": "#f5f7f5",
+        "cssVariable": "--ui-canvas",
+        "purpose": "Shared light-only page canvas, including the notebook library."
+      },
+      "ui-shell": {
+        "role": "neutral",
+        "displayName": "Sage Frame",
+        "value": "#e8ede9",
+        "cssVariable": "--ui-shell",
+        "purpose": "Restrained 4–6px frames and control group surfaces."
+      },
+      "ui-paper": {
+        "role": "neutral",
+        "displayName": "White Study Surface",
+        "value": "#ffffff",
+        "cssVariable": "--ui-paper",
+        "purpose": "Main reading, account, catalog and statistics surfaces."
+      },
+      "ui-soft": {
+        "role": "secondary",
+        "displayName": "Soft Study Accent",
+        "value": "#edf3ee",
+        "cssVariable": "--ui-soft",
+        "purpose": "Quiet selected, hover and supporting control backgrounds."
+      },
+      "ui-line": {
+        "role": "neutral",
+        "displayName": "Subtle Study Separator",
+        "value": "#284d3614",
+        "cssVariable": "--ui-line",
+        "purpose": "Fine separators inside a shared surface; not repeated decorative cards."
+      },
+      "primary": {
+        "role": "secondary",
+        "displayName": "Legacy Primary",
         "tonalRamp": [
           "oklch(15% 0.2152 262.88)",
           "oklch(26% 0.2152 262.88)",
@@ -16,11 +65,13 @@
           "oklch(72% 0.2152 262.88)",
           "oklch(84% 0.2152 262.88)",
           "oklch(95% 0.2152 262.88)"
-        ]
+        ],
+        "status": "legacy",
+        "purpose": "Retained compatibility token for existing chapter styles; shared interface surfaces use --ui-* tokens. Do not apply this palette to new site chrome."
       },
       "primary-light": {
-        "role": "primary",
-        "displayName": "Primary Light",
+        "role": "secondary",
+        "displayName": "Legacy Primary Light",
         "tonalRamp": [
           "oklch(15% 0.0142 254.60)",
           "oklch(26% 0.0142 254.60)",
@@ -30,11 +81,13 @@
           "oklch(72% 0.0142 254.60)",
           "oklch(84% 0.0142 254.60)",
           "oklch(95% 0.0142 254.60)"
-        ]
+        ],
+        "status": "legacy",
+        "purpose": "Retained compatibility token for existing chapter styles; shared interface surfaces use --ui-* tokens. Do not apply this palette to new site chrome."
       },
       "primary-mid": {
-        "role": "primary",
-        "displayName": "Primary Mid",
+        "role": "secondary",
+        "displayName": "Legacy Primary Mid",
         "tonalRamp": [
           "oklch(15% 0.1880 259.81)",
           "oklch(26% 0.1880 259.81)",
@@ -44,11 +97,13 @@
           "oklch(72% 0.1880 259.81)",
           "oklch(84% 0.1880 259.81)",
           "oklch(95% 0.1880 259.81)"
-        ]
+        ],
+        "status": "legacy",
+        "purpose": "Retained compatibility token for existing chapter styles; shared interface surfaces use --ui-* tokens. Do not apply this palette to new site chrome."
       },
       "primary-dark": {
-        "role": "primary",
-        "displayName": "Primary Dark",
+        "role": "secondary",
+        "displayName": "Legacy Primary Dark",
         "tonalRamp": [
           "oklch(15% 0.2172 264.38)",
           "oklch(26% 0.2172 264.38)",
@@ -58,7 +113,9 @@
           "oklch(72% 0.2172 264.38)",
           "oklch(84% 0.2172 264.38)",
           "oklch(95% 0.2172 264.38)"
-        ]
+        ],
+        "status": "legacy",
+        "purpose": "Retained compatibility token for existing chapter styles; shared interface surfaces use --ui-* tokens. Do not apply this palette to new site chrome."
       },
       "emerald": {
         "role": "secondary",
@@ -72,7 +129,8 @@
           "oklch(72% 0.1274 163.23)",
           "oklch(84% 0.1274 163.23)",
           "oklch(95% 0.1274 163.23)"
-        ]
+        ],
+        "purpose": "Retained authored chapter accent or semantic feedback color. Preserve educational distinctions and correctness states; do not expand into the shared interface palette."
       },
       "emerald-light": {
         "role": "secondary",
@@ -86,7 +144,8 @@
           "oklch(72% 0.0207 166.11)",
           "oklch(84% 0.0207 166.11)",
           "oklch(95% 0.0207 166.11)"
-        ]
+        ],
+        "purpose": "Retained authored chapter accent or semantic feedback color. Preserve educational distinctions and correctness states; do not expand into the shared interface palette."
       },
       "teal": {
         "role": "secondary",
@@ -100,7 +159,8 @@
           "oklch(72% 0.1109 221.72)",
           "oklch(84% 0.1109 221.72)",
           "oklch(95% 0.1109 221.72)"
-        ]
+        ],
+        "purpose": "Retained authored chapter accent or semantic feedback color. Preserve educational distinctions and correctness states; do not expand into the shared interface palette."
       },
       "teal-light": {
         "role": "secondary",
@@ -114,7 +174,8 @@
           "oklch(72% 0.0189 200.87)",
           "oklch(84% 0.0189 200.87)",
           "oklch(95% 0.0189 200.87)"
-        ]
+        ],
+        "purpose": "Retained authored chapter accent or semantic feedback color. Preserve educational distinctions and correctness states; do not expand into the shared interface palette."
       },
       "violet": {
         "role": "secondary",
@@ -128,7 +189,8 @@
           "oklch(72% 0.2466 293.01)",
           "oklch(84% 0.2466 293.01)",
           "oklch(95% 0.2466 293.01)"
-        ]
+        ],
+        "purpose": "Retained authored chapter accent or semantic feedback color. Preserve educational distinctions and correctness states; do not expand into the shared interface palette."
       },
       "violet-light": {
         "role": "secondary",
@@ -142,7 +204,8 @@
           "oklch(72% 0.0161 293.76)",
           "oklch(84% 0.0161 293.76)",
           "oklch(95% 0.0161 293.76)"
-        ]
+        ],
+        "purpose": "Retained authored chapter accent or semantic feedback color. Preserve educational distinctions and correctness states; do not expand into the shared interface palette."
       },
       "rose": {
         "role": "secondary",
@@ -156,7 +219,8 @@
           "oklch(72% 0.2220 17.58)",
           "oklch(84% 0.2220 17.58)",
           "oklch(95% 0.2220 17.58)"
-        ]
+        ],
+        "purpose": "Retained authored chapter accent or semantic feedback color. Preserve educational distinctions and correctness states; do not expand into the shared interface palette."
       },
       "rose-light": {
         "role": "secondary",
@@ -170,7 +234,8 @@
           "oklch(72% 0.0152 12.42)",
           "oklch(84% 0.0152 12.42)",
           "oklch(95% 0.0152 12.42)"
-        ]
+        ],
+        "purpose": "Retained authored chapter accent or semantic feedback color. Preserve educational distinctions and correctness states; do not expand into the shared interface palette."
       },
       "orange": {
         "role": "secondary",
@@ -184,7 +249,8 @@
           "oklch(72% 0.1943 41.12)",
           "oklch(84% 0.1943 41.12)",
           "oklch(95% 0.1943 41.12)"
-        ]
+        ],
+        "purpose": "Retained authored chapter accent or semantic feedback color. Preserve educational distinctions and correctness states; do not expand into the shared interface palette."
       },
       "orange-light": {
         "role": "secondary",
@@ -198,7 +264,8 @@
           "oklch(72% 0.0158 73.68)",
           "oklch(84% 0.0158 73.68)",
           "oklch(95% 0.0158 73.68)"
-        ]
+        ],
+        "purpose": "Retained authored chapter accent or semantic feedback color. Preserve educational distinctions and correctness states; do not expand into the shared interface palette."
       },
       "amber": {
         "role": "secondary",
@@ -212,7 +279,8 @@
           "oklch(72% 0.1574 58.32)",
           "oklch(84% 0.1574 58.32)",
           "oklch(95% 0.1574 58.32)"
-        ]
+        ],
+        "purpose": "Retained authored chapter accent or semantic feedback color. Preserve educational distinctions and correctness states; do not expand into the shared interface palette."
       },
       "amber-light": {
         "role": "secondary",
@@ -226,11 +294,12 @@
           "oklch(72% 0.0214 95.28)",
           "oklch(84% 0.0214 95.28)",
           "oklch(95% 0.0214 95.28)"
-        ]
+        ],
+        "purpose": "Retained authored chapter accent or semantic feedback color. Preserve educational distinctions and correctness states; do not expand into the shared interface palette."
       },
       "slate-900": {
         "role": "neutral",
-        "displayName": "Slate 900",
+        "displayName": "Legacy Slate 900",
         "tonalRamp": [
           "#0F172A",
           "#1E293B",
@@ -240,11 +309,13 @@
           "#CBD5E1",
           "#F1F5F9",
           "#F8FAFC"
-        ]
+        ],
+        "status": "legacy",
+        "purpose": "Retained compatibility token for existing chapter styles; shared interface surfaces use --ui-* tokens. Do not apply this palette to new site chrome."
       },
       "slate-800": {
         "role": "neutral",
-        "displayName": "Slate 800",
+        "displayName": "Legacy Slate 800",
         "tonalRamp": [
           "#0F172A",
           "#1E293B",
@@ -254,11 +325,13 @@
           "#CBD5E1",
           "#F1F5F9",
           "#F8FAFC"
-        ]
+        ],
+        "status": "legacy",
+        "purpose": "Retained compatibility token for existing chapter styles; shared interface surfaces use --ui-* tokens. Do not apply this palette to new site chrome."
       },
       "slate-700": {
         "role": "neutral",
-        "displayName": "Slate 700",
+        "displayName": "Legacy Slate 700",
         "tonalRamp": [
           "#0F172A",
           "#1E293B",
@@ -268,11 +341,13 @@
           "#CBD5E1",
           "#F1F5F9",
           "#F8FAFC"
-        ]
+        ],
+        "status": "legacy",
+        "purpose": "Retained compatibility token for existing chapter styles; shared interface surfaces use --ui-* tokens. Do not apply this palette to new site chrome."
       },
       "slate-600": {
         "role": "neutral",
-        "displayName": "Slate 600",
+        "displayName": "Legacy Slate 600",
         "tonalRamp": [
           "#0F172A",
           "#1E293B",
@@ -282,11 +357,13 @@
           "#CBD5E1",
           "#F1F5F9",
           "#F8FAFC"
-        ]
+        ],
+        "status": "legacy",
+        "purpose": "Retained compatibility token for existing chapter styles; shared interface surfaces use --ui-* tokens. Do not apply this palette to new site chrome."
       },
       "slate-500": {
         "role": "neutral",
-        "displayName": "Slate 500",
+        "displayName": "Legacy Slate 500",
         "tonalRamp": [
           "#0F172A",
           "#1E293B",
@@ -296,11 +373,13 @@
           "#CBD5E1",
           "#F1F5F9",
           "#F8FAFC"
-        ]
+        ],
+        "status": "legacy",
+        "purpose": "Retained compatibility token for existing chapter styles; shared interface surfaces use --ui-* tokens. Do not apply this palette to new site chrome."
       },
       "slate-400": {
         "role": "neutral",
-        "displayName": "Slate 400",
+        "displayName": "Legacy Slate 400",
         "tonalRamp": [
           "#0F172A",
           "#1E293B",
@@ -310,11 +389,13 @@
           "#CBD5E1",
           "#F1F5F9",
           "#F8FAFC"
-        ]
+        ],
+        "status": "legacy",
+        "purpose": "Retained compatibility token for existing chapter styles; shared interface surfaces use --ui-* tokens. Do not apply this palette to new site chrome."
       },
       "slate-300": {
         "role": "neutral",
-        "displayName": "Slate 300",
+        "displayName": "Legacy Slate 300",
         "tonalRamp": [
           "#0F172A",
           "#1E293B",
@@ -324,11 +405,13 @@
           "#CBD5E1",
           "#F1F5F9",
           "#F8FAFC"
-        ]
+        ],
+        "status": "legacy",
+        "purpose": "Retained compatibility token for existing chapter styles; shared interface surfaces use --ui-* tokens. Do not apply this palette to new site chrome."
       },
       "slate-200": {
         "role": "neutral",
-        "displayName": "Slate 200",
+        "displayName": "Legacy Slate 200",
         "tonalRamp": [
           "#0F172A",
           "#1E293B",
@@ -338,11 +421,13 @@
           "#CBD5E1",
           "#F1F5F9",
           "#F8FAFC"
-        ]
+        ],
+        "status": "legacy",
+        "purpose": "Retained compatibility token for existing chapter styles; shared interface surfaces use --ui-* tokens. Do not apply this palette to new site chrome."
       },
       "slate-100": {
         "role": "neutral",
-        "displayName": "Slate 100",
+        "displayName": "Legacy Slate 100",
         "tonalRamp": [
           "#0F172A",
           "#1E293B",
@@ -352,11 +437,13 @@
           "#CBD5E1",
           "#F1F5F9",
           "#F8FAFC"
-        ]
+        ],
+        "status": "legacy",
+        "purpose": "Retained compatibility token for existing chapter styles; shared interface surfaces use --ui-* tokens. Do not apply this palette to new site chrome."
       },
       "slate-50": {
         "role": "neutral",
-        "displayName": "Slate 50",
+        "displayName": "Legacy Slate 50",
         "tonalRamp": [
           "#0F172A",
           "#1E293B",
@@ -366,11 +453,13 @@
           "#CBD5E1",
           "#F1F5F9",
           "#F8FAFC"
-        ]
+        ],
+        "status": "legacy",
+        "purpose": "Retained compatibility token for existing chapter styles; shared interface surfaces use --ui-* tokens. Do not apply this palette to new site chrome."
       },
       "bg-page": {
         "role": "neutral",
-        "displayName": "Bg Page",
+        "displayName": "Legacy Bg Page",
         "tonalRamp": [
           "#0F172A",
           "#1E293B",
@@ -380,11 +469,13 @@
           "#CBD5E1",
           "#F1F5F9",
           "#F8FAFC"
-        ]
+        ],
+        "status": "legacy",
+        "purpose": "Retained compatibility token for existing chapter styles; shared interface surfaces use --ui-* tokens. Do not apply this palette to new site chrome."
       },
       "bg-surface": {
         "role": "neutral",
-        "displayName": "Bg Surface",
+        "displayName": "Legacy Bg Surface",
         "tonalRamp": [
           "#0F172A",
           "#1E293B",
@@ -394,11 +485,13 @@
           "#CBD5E1",
           "#F1F5F9",
           "#F8FAFC"
-        ]
+        ],
+        "status": "legacy",
+        "purpose": "Retained compatibility token for existing chapter styles; shared interface surfaces use --ui-* tokens. Do not apply this palette to new site chrome."
       },
       "border": {
         "role": "neutral",
-        "displayName": "Border",
+        "displayName": "Legacy Border",
         "tonalRamp": [
           "#0F172A",
           "#1E293B",
@@ -408,11 +501,13 @@
           "#CBD5E1",
           "#F1F5F9",
           "#F8FAFC"
-        ]
+        ],
+        "status": "legacy",
+        "purpose": "Retained compatibility token for existing chapter styles; shared interface surfaces use --ui-* tokens. Do not apply this palette to new site chrome."
       },
       "border-strong": {
         "role": "neutral",
-        "displayName": "Border Strong",
+        "displayName": "Legacy Border Strong",
         "tonalRamp": [
           "#0F172A",
           "#1E293B",
@@ -422,197 +517,374 @@
           "#CBD5E1",
           "#F1F5F9",
           "#F8FAFC"
-        ]
+        ],
+        "status": "legacy",
+        "purpose": "Retained compatibility token for existing chapter styles; shared interface surfaces use --ui-* tokens. Do not apply this palette to new site chrome."
+      },
+      "note-sticky-yellow": {
+        "role": "secondary",
+        "displayName": "Personal Note Yellow",
+        "purpose": "Sticky-note paper in lesson and notebook editors and reading views."
+      },
+      "note-sticky-sage": {
+        "role": "secondary",
+        "displayName": "Personal Note Sage",
+        "purpose": "Sticky-note paper in lesson and notebook editors and reading views."
+      },
+      "note-sticky-rose": {
+        "role": "secondary",
+        "displayName": "Personal Note Rose",
+        "purpose": "Sticky-note paper in lesson and notebook editors and reading views."
+      },
+      "note-sticky-blue": {
+        "role": "secondary",
+        "displayName": "Personal Note Blue",
+        "purpose": "Sticky-note paper in lesson and notebook editors and reading views."
       }
     },
     "typographyMeta": {
       "display": {
-        "displayName": "Display",
-        "purpose": "Implemented display role; see DESIGN.md for responsive usage."
+        "displayName": "Compact Page Title",
+        "purpose": "Short page titles keep the study task near the top; avoid oversized decorative heroes.",
+        "family": "Figtree, system-ui, sans-serif",
+        "size": "clamp(28px, 4vw, 46px)",
+        "weight": 600,
+        "lineHeight": "1.1"
       },
       "editorial": {
-        "displayName": "Editorial",
-        "purpose": "Selective homepage italic, font-style: italic."
+        "displayName": "Legacy Editorial Accent",
+        "purpose": "Fraunces remains an existing compatibility font only; do not reintroduce the retired homepage italic treatment or use it for body text. Notebook titles use Caveat.",
+        "status": "legacy"
       },
       "headline": {
-        "displayName": "Headline",
-        "purpose": "Implemented headline role; see DESIGN.md for responsive usage."
+        "displayName": "Lesson Title",
+        "purpose": "Compact authored lesson title in the main reading surface.",
+        "family": "Figtree, system-ui, sans-serif",
+        "size": "clamp(27px, 3vw, 38px)",
+        "weight": 600,
+        "lineHeight": "1.1"
       },
       "content-heading": {
         "displayName": "Content Heading",
-        "purpose": "Implemented content heading role; see DESIGN.md for responsive usage."
+        "purpose": "Use Figtree and the existing heading hierarchy; preserve authored section titles and their semantic distinctions.",
+        "family": "Figtree, system-ui, sans-serif",
+        "weight": 600
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Implemented body role; see DESIGN.md for responsive usage."
+        "purpose": "Educational prose and interface body copy. Keep prose near 70ch where possible; tables and figures may use the wider content area.",
+        "family": "Figtree, system-ui, sans-serif",
+        "size": "16px",
+        "weight": 400,
+        "lineHeight": "1.7"
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Implemented label role; see DESIGN.md for responsive usage."
+        "purpose": "Compact supporting labels and controls with visible focus and sufficient contrast.",
+        "family": "Figtree, system-ui, sans-serif",
+        "size": "12–14px",
+        "weight": "400–600"
+      },
+      "notebook-title": {
+        "displayName": "Written Notebook Title",
+        "family": "Caveat, cursive",
+        "size": "clamp(38px, 4.5vw, 68px); 40px on phones",
+        "weight": 600,
+        "lineHeight": "1.08",
+        "purpose": "Only the chapter title inside the open notebook paper; the locally bundled font and its OFL license are preserved. Controls and note text remain Figtree."
       }
     },
     "shadows": [
       {
         "name": "reading-surfaces",
         "value": "none",
-        "purpose": "Default cards, categories and actions."
+        "purpose": "Reading content uses one white surface and a sage frame; inner educational groups do not gain repeated shadows."
+      },
+      {
+        "name": "detached-header",
+        "value": "0 8px 36px -24px #21493738",
+        "purpose": "Subtle depth on the shared detached header."
       },
       {
         "name": "mobile-drawer",
-        "value": "16px 0 36px rgba(15, 23, 42, 0.18)",
+        "value": "12px 0 40px #23473d18",
         "purpose": "Temporary lesson navigation overlay."
+      },
+      {
+        "name": "account-dialog",
+        "value": "0 28px 100px -34px #23473d38",
+        "purpose": "Functional account overlay, with matching restrained note-panel framing."
+      },
+      {
+        "name": "notebook-paper",
+        "value": "3px 3px 0 #e9e7df, 5px 5px 0 #fffdf7",
+        "purpose": "Scoped paper-edge depth on the personal notebook only."
       },
       {
         "name": "toast",
         "value": "0 12px 28px rgba(15, 23, 42, 0.22)",
-        "purpose": "Transient lesson feedback."
+        "purpose": "Retained transient lesson feedback, not a default surface shadow."
       }
     ],
     "motion": [
       {
+        "name": "ui-ease",
+        "value": "cubic-bezier(.22,1,.36,1)",
+        "purpose": "Shared compact interface easing; short opacity/transform transitions only. Reduced motion disables animation; reading and writing content remain still."
+      },
+      {
         "name": "ease-default",
         "value": "cubic-bezier(.4, 0, .2, 1)",
-        "purpose": "Core state-transition token."
+        "purpose": "Retained compatibility token. New compact surfaces use --ui-ease with short, targeted transitions; no perpetual motion.",
+        "status": "legacy"
       },
       {
         "name": "dur-fast",
         "value": ".15s",
-        "purpose": "Core state-transition token."
+        "purpose": "Retained compatibility token. New compact surfaces use --ui-ease with short, targeted transitions; no perpetual motion."
       },
       {
         "name": "dur-base",
         "value": ".2s",
-        "purpose": "Core state-transition token."
+        "purpose": "Retained compatibility token. New compact surfaces use --ui-ease with short, targeted transitions; no perpetual motion."
       },
       {
         "name": "dur-slow",
         "value": ".3s",
-        "purpose": "Core state-transition token."
+        "purpose": "Retained compatibility token. New compact surfaces use --ui-ease with short, targeted transitions; no perpetual motion."
       }
     ],
     "breakpoints": [
       {
         "name": "phone",
-        "value": "640px"
+        "value": "640px",
+        "purpose": "Retained page-specific responsive breakpoint; not a replacement for the shared header/drawer breakpoints."
       },
       {
         "name": "lesson-stack",
-        "value": "700px"
+        "value": "700px",
+        "purpose": "Two compact header rows and 116px shared header offset at 700px and below; page-specific phone layouts."
       },
       {
         "name": "home-stack",
-        "value": "900px"
+        "value": "900px",
+        "purpose": "Retained page-specific responsive breakpoint; not a replacement for the shared header/drawer breakpoints."
       },
       {
         "name": "drawer",
-        "value": "1024px"
+        "value": "1024px",
+        "purpose": "Accessible lesson/quiz contents drawer at 1024px and below; existing desktop hide preference remains available above this breakpoint."
       },
       {
         "name": "home-compact",
-        "value": "1100px"
+        "value": "1100px",
+        "purpose": "Retained page-specific responsive breakpoint; not a replacement for the shared header/drawer breakpoints."
       },
       {
         "name": "lesson-compact",
-        "value": "1240px"
+        "value": "1240px",
+        "purpose": "Retained page-specific responsive breakpoint; not a replacement for the shared header/drawer breakpoints."
       },
       {
         "name": "narrow-phone",
-        "value": "430px"
+        "value": "430px",
+        "purpose": "Retained page-specific responsive breakpoint; not a replacement for the shared header/drawer breakpoints."
       }
-    ]
+    ],
+    "layout": [
+      {
+        "name": "desktop-reading-shell",
+        "value": "1328px maximum; 240px contents column; 28px gap",
+        "purpose": "Contents and quiz number map start visible; retain the existing hide preference."
+      },
+      {
+        "name": "header",
+        "value": "Detached white pill; 64px desktop row; sticky on lessons, quizzes and notebooks",
+        "purpose": "Centered Lecții/Testare navigation with reachable search, notes and account tools. Phones use two compact rows, except the approved statistics header."
+      },
+      {
+        "name": "bm-header-offset",
+        "value": "88px desktop; 116px at 700px and below",
+        "purpose": "Shared offset for sticky tools and lesson anchors."
+      },
+      {
+        "name": "reading-measure",
+        "value": "70ch where possible",
+        "purpose": "Figures and tables can use more width. Educational matter stays open and complete."
+      },
+      {
+        "name": "notebook",
+        "value": "32px desktop outer margins; 12px phone margins",
+        "purpose": "One continuous cream sheet. Contents are a disclosure above it, closed on entry on every viewport; no permanent side column."
+      }
+    ],
+    "radii": [
+      {
+        "name": "ui-radius",
+        "value": "24px"
+      },
+      {
+        "name": "ui-frame-radius",
+        "value": "30px"
+      },
+      {
+        "name": "control",
+        "value": "14px"
+      },
+      {
+        "name": "pill",
+        "value": "999px"
+      }
+    ],
+    "spacing": [
+      {
+        "name": "ui-space",
+        "value": "24px",
+        "purpose": "Core panel rhythm; use 20–30px interior spacing."
+      },
+      {
+        "name": "frame",
+        "value": "4–6px",
+        "purpose": "Sage enclosure around one main surface."
+      },
+      {
+        "name": "touch-target",
+        "value": "44px minimum",
+        "purpose": "Frequent touch controls; labelled icons retain accessible names."
+      }
+    ],
+    "implementation": {
+      "reviewedOn": "2026-09-19",
+      "sourceOfTruth": [
+        "DESIGN.md",
+        "assets/css/tokens.css",
+        "assets/css/site-redesign.css"
+      ],
+      "scope": "Shared compact sage study interface across all public pages. Component specimens document appearance only; they do not replace runtime controllers or protected content."
+    }
   },
   "components": [
     {
       "name": "Primary Action",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Homepage starting action.",
-      "html": "<button class=\"ds-primary\">Începe cu Capitolul 1</button>",
-      "css": ".ds-primary{font-family:var(--font-display, Figtree, system-ui, sans-serif);min-height:46px;padding:11px 18px;border:0;border-radius:10px;background:var(--primary,#2563EB);color:var(--bg-surface,#FFFFFF);font-size:14px;font-weight:700;cursor:pointer;transition:background-color 160ms ease;}.ds-primary:hover{background:var(--primary-dark,#1D4ED8);}.ds-primary:focus-visible{outline:2px solid var(--primary,#2563EB);outline-offset:2px;}"
+      "description": "Compact dark-green primary study action with an optional trailing icon inside its own circle.",
+      "html": "<button class=\"ds-primary\">Continuă studiul <span aria-hidden=\"true\">↗</span></button>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:space-between;gap:20px;min-height:46px;padding:6px 7px 6px 20px;border:0;border-radius:999px;background:var(--ui-ink,#23473d);color:var(--ui-paper,#fff);font:500 13px/1.4 Figtree,system-ui,sans-serif;cursor:pointer;transition:transform 220ms var(--ui-ease,cubic-bezier(.22,1,.36,1))}.ds-primary>span{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#ffffff15}.ds-primary:hover{background:#183e32}.ds-primary:active{transform:scale(.98)}.ds-primary:focus-visible{outline:2px solid #52776c;outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
     },
     {
       "name": "Secondary Action",
       "kind": "button",
       "refersTo": "button-secondary",
-      "description": "Supporting curriculum action.",
+      "description": "Quiet supporting action; visually secondary to the current study task.",
       "html": "<button class=\"ds-secondary\">Vezi toate capitolele</button>",
-      "css": ".ds-secondary{font-family:var(--font-display, Figtree, system-ui, sans-serif);min-height:46px;padding:11px 18px;border:1px solid var(--border,#DCE3EC);border-radius:10px;background:transparent;color:var(--fg-2,#334155);font-size:14px;font-weight:700;cursor:pointer;transition:background-color 160ms ease,border-color 160ms ease;}.ds-secondary:hover{background:#e9eef5;border-color:var(--border-strong,#C8D2DF);}.ds-secondary:focus-visible{outline:2px solid var(--primary,#2563EB);outline-offset:2px;}"
+      "css": ".ds-secondary{font:500 13px/1.4 Figtree,system-ui,sans-serif;min-height:44px;padding:11px 22px;border:0;border-radius:999px;background:var(--ui-soft,#edf3ee);color:var(--ui-ink,#23473d);cursor:pointer}.ds-secondary:hover{background:var(--ui-shell,#e8ede9)}.ds-secondary:focus-visible{outline:2px solid #52776c;outline-offset:4px}"
     },
     {
       "name": "Search Input",
       "kind": "input",
       "refersTo": "search-field",
-      "description": "Input within the search palette.",
+      "description": "Labelled search control on a white surface with a restrained sage enclosure.",
       "html": "<label class=\"ds-search\"><span>Caută în lecție</span><input type=\"search\" placeholder=\"Caută un termen…\"></label>",
-      "css": ".ds-search{font-family:var(--font-display, Figtree, system-ui, sans-serif);display:block;color:var(--fg-3,#64748B);background:var(--bg-surface,#FFFFFF);padding:10px 14px;border:1px solid var(--border,#DCE3EC);border-radius:12px;}.ds-search span{display:block;font-size:.84rem;}.ds-search input{font-family:var(--font-display, Figtree, system-ui, sans-serif);display:block;min-height:44px;width:100%;border:0;background:transparent;color:var(--fg-1,#0F172A);font-size:16px;}.ds-search input:hover{background:var(--bg-sunken,#F8FAFC);}.ds-search input:focus-visible{outline:2px solid var(--primary,#2563EB);outline-offset:2px;}"
+      "css": ".ds-search{display:block;font-family:Figtree,system-ui,sans-serif;color:var(--ui-muted,#566b61)}.ds-search span{display:block;margin-bottom:8px;font-size:13px}.ds-search input{display:block;width:100%;min-height:44px;padding:12px 14px;border:0;border-radius:14px;background:var(--ui-paper,#fff);color:var(--ui-ink,#23473d);font:400 16px Figtree,system-ui,sans-serif;box-shadow:0 0 0 4px var(--ui-shell,#e8ede9)}.ds-search input:focus-visible{outline:2px solid #52776c;outline-offset:4px}"
     },
     {
       "name": "Active Chapter Navigation",
       "kind": "nav",
       "refersTo": "navigation-active",
-      "description": "Current lesson section with a start rule.",
+      "description": "Compact current-section destination. Keep native section links, keyboard access and existing desktop visibility preference.",
       "html": "<a class=\"ds-nav\" href=\"#section\" aria-current=\"page\">Membrana celulară</a>",
-      "css": ".ds-nav{font-family:var(--font-display, Figtree, system-ui, sans-serif);display:flex;align-items:center;min-height:44px;padding:.65rem .78rem;border-inline-start:2px solid var(--primary,#2563EB);background:var(--bg-surface,#FFFFFF);color:var(--fg-1,#0F172A);font-size:.84rem;font-weight:700;line-height:1.3;text-decoration:none;}.ds-nav:hover{background:var(--primary-light,#EFF6FF);}.ds-nav:focus-visible{outline:2px solid var(--primary,#2563EB);outline-offset:2px;}"
+      "css": ".ds-nav{display:flex;align-items:center;min-height:44px;padding:10px 12px;border-inline-start:2px solid var(--ui-ink,#23473d);border-radius:0 12px 12px 0;background:var(--ui-soft,#edf3ee);color:var(--ui-ink,#23473d);font:500 13px/1.4 Figtree,system-ui,sans-serif;text-decoration:none}.ds-nav:hover{background:var(--ui-shell,#e8ede9)}.ds-nav:focus-visible{outline:2px solid #52776c;outline-offset:4px}"
     },
     {
       "name": "Chapter Term",
       "kind": "chip",
       "refersTo": "chapter-term",
-      "description": "A compact term in a blue chapter context.",
+      "description": "Quiet interface term specimen; authored colored educational callouts and answer-state colors retain their meanings.",
       "html": "<span class=\"ds-term\">Membrană</span>",
-      "css": ".ds-term{font-family:var(--font-display, Figtree, system-ui, sans-serif);display:inline-flex;align-items:center;min-height:28px;padding:4px 9px;border:1px solid color-mix(in srgb,var(--primary,#2563EB) 28%,#d7dee8);border-radius:7px;background:var(--primary-light,#EFF6FF);color:var(--primary,#2563EB);font-size:.78rem;font-weight:700;line-height:1.2;}"
+      "css": ".ds-term{display:inline-flex;align-items:center;min-height:28px;padding:4px 9px;border:0;border-radius:999px;background:var(--ui-soft,#edf3ee);color:var(--ui-ink,#23473d);font:500 12px/1.3 Figtree,system-ui,sans-serif}"
     },
     {
       "name": "Reading Surface",
       "kind": "card",
       "refersTo": "reading-card",
-      "description": "Flat lesson content container; specimen text is not authored lesson content.",
-      "html": "<article class=\"ds-card\"><h2>Structura celulei</h2><p>Exemplu de ierarhie pentru textul unei lecții.</p></article>",
-      "css": ".ds-card{font-family:var(--font-display, Figtree, system-ui, sans-serif);padding:24px 28px;border:1px solid var(--border,#DCE3EC);border-radius:12px;background:var(--bg-surface,#FFFFFF);color:var(--fg-2,#334155);}.ds-card h2{margin:0 0 .85rem;color:var(--fg-1,#0F172A);font-size:1.35rem;font-weight:900;line-height:1.25;letter-spacing:-.025em;}.ds-card p{max-width:70ch;margin:0;font-size:1rem;line-height:1.72;}"
+      "description": "One white main reading surface in a sage frame. Use headings and spacing inside it; specimen text is not authored lesson content.",
+      "html": "<div class=\"ds-frame\"><article class=\"ds-card\"><h2>Structura celulei</h2><p>Exemplu de ierarhie pentru textul unei lecții.</p></article></div>",
+      "css": ".ds-frame{padding:6px;background:var(--ui-shell,#e8ede9);border-radius:var(--ui-frame-radius,30px)}.ds-card{padding:26px 30px;border:0;border-radius:var(--ui-radius,24px);background:var(--ui-paper,#fff);color:var(--ui-ink,#23473d);font-family:Figtree,system-ui,sans-serif}.ds-card h2{margin:0 0 16px;font-size:24px;font-weight:600;line-height:1.25;letter-spacing:-.025em}.ds-card p{max-width:70ch;margin:0;font-size:16px;line-height:1.7}@media(max-width:700px){.ds-frame{padding:4px;border-radius:24px}.ds-card{padding:20px 18px;border-radius:20px}}"
     },
     {
       "name": "Numbered Chapter Row",
       "kind": "custom",
       "refersTo": "chapter-map-row",
-      "description": "Ruled chapter outline destination.",
+      "description": "Compact chapter destination with a number, title and fine separator; preserve registry and authored section order.",
       "html": "<a class=\"ds-row\" href=\"#section\"><span>01</span>Structura celulei</a>",
-      "css": ".ds-row{font-family:var(--font-display, Figtree, system-ui, sans-serif);position:relative;display:block;min-height:74px;padding:17px 16px 17px 62px;border-bottom:1px solid var(--border,#DCE3EC);color:var(--fg-2,#334155);font-size:.92rem;line-height:1.55;text-decoration:none;transition:background-color 160ms ease;}.ds-row span{position:absolute;left:16px;color:var(--primary,#2563EB);font-weight:800;}.ds-row:hover{background:var(--bg-sunken,#F8FAFC);}.ds-row:focus-visible{outline:2px solid var(--primary,#2563EB);outline-offset:2px;}"
+      "css": ".ds-row{display:flex;align-items:center;gap:18px;min-height:64px;padding:14px 4px;box-shadow:0 1px 0 var(--ui-line,#284d3614);color:var(--ui-ink,#23473d);font:500 14px/1.45 Figtree,system-ui,sans-serif;text-decoration:none}.ds-row span{min-width:25px;color:var(--ui-muted,#566b61);font-size:12px;font-variant-numeric:tabular-nums}.ds-row:hover{background:var(--ui-soft,#edf3ee)}.ds-row:focus-visible{outline:2px solid #52776c;outline-offset:4px}"
+    },
+    {
+      "name": "Personal Note Sticky Paper",
+      "kind": "custom",
+      "description": "An editable personal-note block shared by the lesson panel and notebook; yellow, sage, rose and blue paper variants stay in document flow.",
+      "html": "<aside class=\"ds-note-sticky\" contenteditable=\"true\" role=\"textbox\" aria-label=\"Notiță personală\">Un lucru de reținut…</aside>",
+      "css": ".ds-note-sticky{max-width:360px;margin:24px 0;padding:20px 22px 26px;border-radius:2px 2px 10px 2px;background:#f5eab7;color:#39422e;box-shadow:0 8px 18px #433c1b0b;font:400 15px/1.65 Figtree,sans-serif;white-space:pre-wrap;overflow-wrap:anywhere}.ds-note-sticky[data-color=\"sage\"]{background:#deead1}.ds-note-sticky[data-color=\"rose\"]{background:#f1dce0}.ds-note-sticky[data-color=\"blue\"]{background:#dce9ef}.ds-note-sticky:focus-visible{outline:1px solid #86987e;outline-offset:4px}"
     }
   ],
   "narrative": {
-    "northStar": "The Editorial Biology Textbook",
-    "overview": "The interface is a premium editorial Romanian biology textbook: cool paper, navy ink, precise rules and a restrained blue accent. Figtree gives navigation and educational prose one coherent voice; a selective Fraunces italic supplies the homepage’s editorial signature.\n\nReading hierarchy comes from type, spacing, figures and meaningful grouping. Chapter outlines read as numbered contents lists, and controls remain quiet but clear. The light-only surface supports sustained study without turning publication availability into a claim about a student’s learning progress.",
+    "northStar": "The Compact Biology Study Workspace",
+    "overview": "A calm, light-only Romanian study workspace based on the approved statistics page: pale sage canvas, white primary surfaces, deep green ink and Figtree. Compact titles, moderate spacing and restrained 4–6px framing keep the next study task near the top.\n\nEducational prose, figures, tables, captions and explanations remain complete and open. Shared --ui-* tokens define the interface; legacy chapter accents remain where they convey meaning. Personal notebooks keep their continuous cream paper and handwritten chapter title without changing the shared site navigation.",
     "keyCharacteristics": [
-      "Cool paper and navy ink with restrained blue interaction.",
-      "Figtree for UI and body, selective Fraunces italic for editorial emphasis.",
-      "Flat reading surfaces, fine rules and numbered contents.",
-      "Readable Romanian text, responsive tables and practical touch controls."
+      "Pale sage canvas, white surfaces and deep-green primary actions from shared --ui-* tokens.",
+      "Compact Figtree page titles, readable prose near 70ch and 12–14px supporting labels.",
+      "One main framed surface with restrained 24–30px radii; inner content uses headings and fine separators.",
+      "Detached responsive header, visible desktop contents/map and accessible drawer behavior.",
+      "Continuous cream notebook paper with Caveat only for the written chapter title; shared personal-note materials remain intact."
     ],
     "rules": [
       {
-        "name": "The Selective Italic Rule",
-        "body": "Use Fraunces italic selectively for the blue homepage word “rescrisă.” Keep lesson prose, navigation, labels and controls in Figtree.",
+        "name": "The Compact Type Rule",
+        "body": "Use Figtree for headings, educational prose, navigation and controls. Page titles normally use 28–46px at weight 600; lesson titles use 27–38px. Fraunces is legacy metadata, not the current homepage direction. Caveat belongs only to the written notebook chapter title.",
         "section": "typography"
       },
       {
-        "name": "The Flat Reading Rule",
-        "body": "Use spacing, fine borders and surface tone to structure reading. Reserve shadows for temporary overlays and feedback.",
+        "name": "The Single Reading Surface Rule",
+        "body": "Use one white primary surface with a 4–6px sage frame, 24–30px outer radii and 20–30px interior spacing. Prefer headings, whitespace and fine separators within it. Keep educational matter open; reserve subtle shadows for the detached header and functional overlays.",
         "section": "elevation"
+      },
+      {
+        "name": "The Notebook Boundary Rule",
+        "body": "The personal notebook material remains scoped to notite.html. The library uses compact rows with a cover thumbnail and note state on the shared sage canvas. A chapter opens one continuous #fffef9 cream sheet with 32px desktop and 12px phone margins. Contents are a disclosure above the sheet, closed on entry on every viewport. Caveat 600 titles sit inside the paper; Figtree note text uses 16px/32px ruled leading. Every authored main section remains present and editable, including empty sections. One toolbar sticks below the shared header and follows the focused section without moving the caret. Only the active section shows save state and count; global offline/storage failures stay visible. Preserve note bookmarks, local paper depth and print behavior.",
+        "section": "components"
+      },
+      {
+        "name": "The Note Materials Rule",
+        "body": "The lesson panel and notebook keep the shared editor, sanitization and owner-scoped storage. Preserve compact accessible text-color, highlighter, image and sticky controls. Highlighter mode persists for subsequent selections until cleared. Sticky colors use four accessible swatches and a palette that closes after insertion. Images preserve proportions, captions and saved placement, use a 44px resize target, and have no drag handle or movement menu; swiping scrolls the page. Sticky notes retain 44px drag/color/removal controls and semantic left/right/block placement, never absolute coordinates. Keyboard movement and transfers preserve the source until the target accepts it. Narrow panels/phones display blocks while retaining desktop alignment in storage. UI controls never enter serialized content.",
+        "section": "components"
+      },
+      {
+        "name": "The Shared Header Rule",
+        "body": "Use the detached white header with centered Lecții/Testare navigation. Keep it sticky on lessons, quizzes and notebooks. Narrow pages use two compact rows; retain the approved statistics exception. Shared anchor/tool offsets are 88px desktop and 116px on phones. Desktop contents and quiz maps start visible with existing hide preferences; the accessible drawer applies at 1024px and below.",
+        "section": "layout"
+      },
+      {
+        "name": "The Study Priority Rule",
+        "body": "Homepage retains its familiar introductory message with the working image/quiz preview to the right, stacking below on tablet and phone. Continue and the compact chapter catalog follow. Testare retains its introductory message and a right-hand progress/recent-activity panel linking to statistics, without duplicate historical score columns. Quizzes retain ten questions per range, visible checked-answer feedback and explanations; common instructions/legend are compact help. Statistics keeps Rezumat/Greșeli/Istoric, immutable initial scores and separate correction results. Account forms are inline on cont.html and dialogs elsewhere; failure/retry messages and export after persistence failure stay directly visible.",
+        "section": "components"
       }
     ],
     "dos": [
-      "Do preserve Romanian diacritics, authored explanations, figures and semantic table relationships.",
-      "Do use the canonical core tokens and the established surface-specific aliases.",
-      "Do keep prose near 70ch where the lesson layout permits and let figures and tables use the wider content area.",
-      "Do maintain visible keyboard focus, accessible search, reduced-motion behavior and readable phone layouts.",
-      "Do describe chapter counts as publication availability; keep existing quiz results distinct from study progress."
+      "Do preserve Romanian diacritics, all authored explanations, figures, captions, section IDs and semantic table relationships.",
+      "Do use shared --ui-* tokens for interface surfaces and preserve authored chapter/feedback colors where meaningful.",
+      "Do keep prose near 70ch where the layout permits and let figures and tables use the wider content area.",
+      "Do retain visible keyboard focus, 44px frequent touch targets, search, reduced motion and usable 320px layouts.",
+      "Do distinguish published availability, current traversal progress, immutable initial accuracy and later correction results.",
+      "Do preserve authentication, owner-scoped notes/progress, existing public routes and offline behavior; deployment remains a separate action."
     ],
     "donts": [
-      "Don’t introduce Noto Sans or a second body font into the current visual system.",
-      "Don’t turn curriculum lists into floating decorative card grids or add ornamental gradients.",
-      "Don’t obscure phone reading with floating controls; the lesson return-to-top action stays in document flow on small screens.",
+      "Don’t reintroduce the legacy blue interface palette, oversized editorial heroes or new body fonts.",
+      "Don’t repeat decorative cards inside a reading surface, add ornamental gradients or animate reading/writing content.",
+      "Don’t collapse educational matter or remove existing desktop contents/map access to reduce visual density.",
       "Don’t use color alone for quiz correctness, selected controls or navigation state.",
-      "Don’t add study-progress tracking, persistence claims or roadmap features through visual documentation."
+      "Don’t hide actionable storage/sync errors inside secondary options or imply that local-only data is cloud-backed.",
+      "Don’t change existing notebook materials, editor behavior, scoring contracts or data ownership through visual documentation."
     ]
   }
 }

@@ -28,12 +28,14 @@ try {
   // The printed page 104 and the user's correction both require CDE.
   for(const letter of 'CDE') await third.locator(`input[value="${letter}"]`).check();
   await third.locator('.quiz-check').click();
-  await third.locator('.quiz-retry').waitFor({state:'visible'});
+  await third.locator('input:disabled').first().waitFor({state:'visible'});
   assert.ok(await third.evaluate(el=>el.classList.contains('is-correct')),'3 CDE must score as correct');
-  await third.locator('.quiz-retry').click();
+  await page.locator('.quiz-reset-start').click();
+  await page.locator('.quiz-reset-confirm').click();
+  await page.waitForFunction(()=>document.querySelectorAll('.quiz-question.is-verified').length===0);
   for(const letter of 'CE') await third.locator(`input[value="${letter}"]`).check();
   await third.locator('.quiz-check').click();
-  await third.locator('.quiz-retry').waitFor({state:'visible'});
+  await third.locator('input:disabled').first().waitFor({state:'visible'});
   assert.ok(await third.locator('[data-letter="D"]').evaluate(el=>el.classList.contains('is-missed-answer')),'Omitted D must be yellow');
   const beforeHistory=await page.evaluate(()=>BBQuizAnalytics.getReport());
   // A previously verified CE answer must keep its selection but lose its stale exact score.
@@ -49,7 +51,7 @@ try {
   await page.goto(base+'statistici.html');
   assert.equal((await page.evaluate(()=>BBQuizAnalytics.getReport())).totals.current.correct,1,'Direct analytics must ignore the stale CE score');
   await page.goto(base+'grile_organele_de_simt.html#grila-3');
-  await third.locator('.quiz-retry').waitFor({state:'visible'});
+  await third.locator('input:disabled').first().waitFor({state:'visible'});
   assert.ok(await third.evaluate(el=>el.classList.contains('is-review')),'Old CE must be rescored on load');
   const restored=await page.evaluate(()=>BBUserStorage.get('bb.quiz.organe-simt.v1'));
   assert.deepEqual(restored,beforeStorage,'Displaying a corrected score must not mutate the stored record');
@@ -79,13 +81,13 @@ try {
   const fourth=page.locator('#grila-4');
   await fourth.locator('input[value="A"]').check();
   await fourth.locator('.quiz-check').click();
-  await fourth.locator('.quiz-retry').waitFor({state:'visible'});
+  await fourth.locator('input:disabled').first().waitFor({state:'visible'});
   assert.equal(await fourth.locator('#os-004-e-explanation').isVisible(),true);
   await mkdir(resolve(root,'tmp/sense-audit/browser'),{recursive:true});
   for(const width of [1440,390]) {
     await page.setViewportSize({width,height:1000});
     await page.goto(base+'grile_organele_de_simt.html#grila-3');
-    await third.locator('.quiz-retry').waitFor({state:'visible'});
+    await third.locator('input:disabled').first().waitFor({state:'visible'});
     await third.screenshot({path:resolve(root,`tmp/sense-audit/browser/q3-${width}.png`)});
     await fourth.screenshot({path:resolve(root,`tmp/sense-audit/browser/q4-${width}.png`)});
     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true,'No horizontal overflow');

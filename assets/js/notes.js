@@ -1,62 +1,193 @@
 /* Section notes save synchronously into the active user's cache on every input. */
 (function () {
   'use strict';
+  function signedIn() { const user = window.BBAuth.getState().user; return !!user && user.id === window.BBUserStorage.owner(); }
+  function renderNoteBody(target, body) { window.BBNotesContent.render(target, body); }
+  function makeNotesButton() {
+    const button = document.createElement('button');
+    button.type = 'button'; button.id = 'bb-notes-toggle'; button.className = 'bb-notes-toggle';
+    button.setAttribute('aria-label', 'Notițe'); button.title = 'Notițe';
+    button.setAttribute('aria-controls', 'bb-notes-panel'); button.setAttribute('aria-expanded', 'false');
+    button.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 3h14v18H5zM8 8h8M8 12h8M8 16h5"/></svg><span>Notițe</span>';
+    return button;
+  }
+  function initNotebooks(root) {
+    const chapters = CHAPTERS.filter(chapter => chapter.done && chapter.url);
+    const selected = chapters.find(chapter => String(chapter.num) === new URLSearchParams(location.search).get('capitol'));
+    const sections = selected ? window.BB_NOTEBOOK_SECTIONS?.[selected.num] || [] : [];
+    const entries = new Map();
+    let owner = null, initialized = false, generation = 0, initialAnchor = true, layoutPending = false;
+    let paper, nav, tools, intro, status;
+    function element(tag, className, text) {
+      const node = document.createElement(tag); node.className = className;
+      if (text !== undefined) node.textContent = text;
+      return node;
+    }
+    function link(className, text, href) { const node = element('a', className, text); node.href = href; return node; }
+    function notes(chapter) {
+      const prefix = 'note:' + chapter.num + ':';
+      return Object.entries(window.BBUserStorage.snapshot().values).filter(([key, note]) => key.startsWith(prefix) && typeof note?.body === 'string').map(([key, note]) => ({id:key.slice(prefix.length), body:note.body}));
+    }
+    function nonempty(chapter) {
+      return notes(chapter).filter(note => { const div = document.createElement('div'); renderNoteBody(div, note.body); return window.BBNotesContent.hasContent(div); }).length;
+    }
+    function countLabel(count) { return count === 1 ? '1 notiță' : count + ' notițe'; }
+    function updateStatus() {
+      if (!status) return;
+      const sync = window.BBCloudSync?.getState();
+      status.textContent = !signedIn() ? '' : !window.BBUserStorage.canPersist() ? 'Stocare locală indisponibilă. Păstrează pagina deschisă și exportă copia din cont.' : !navigator.onLine ? 'Salvat pe dispozitiv. Se sincronizează la reconectare.' : sync?.status === 'error' ? 'Salvat pe dispozitiv. Sincronizarea nu a reușit; reîncearcă din meniul contului.' : sync?.status === 'syncing' ? 'Se sincronizează…' : '';
+    }
+    function scrollToAnchor() {
+      if (!initialAnchor || !location.hash || root.dataset.sectionsReady !== 'true') return;
+      try { const target = document.getElementById(decodeURIComponent(location.hash.slice(1))); if (target) { initialAnchor = false; target.scrollIntoView({block:'start',behavior:'instant'}); } } catch (_) { /* Invalid external fragment. */ }
+    }
+    function finishLayout() {
+      if (layoutPending || root.dataset.sectionsReady === 'true') return;
+      layoutPending = true; const token = generation;
+      const loaded = document.readyState === 'complete' ? Promise.resolve() : new Promise(resolve => window.addEventListener('load', resolve, {once:true}));
+      const settled = initialAnchor && location.hash ? Promise.all([loaded,document.fonts.ready]) : Promise.resolve();
+      void settled.then(() => requestAnimationFrame(() => {
+        if (token !== generation) return;
+        layoutPending = false; root.dataset.sectionsReady = 'true'; scrollToAnchor();
+      }));
+    }
+    function clear() {
+      generation++; entries.forEach(entry => entry.controller.destroy()); entries.clear();
+      root.replaceChildren(); initialized = false; layoutPending = false; status = null; paper = null;
+    }
+    function activate(controller) {
+      entries.forEach(entry => { entry.article.classList.toggle('is-active', entry.controller === controller); if (entry.controller !== controller) entry.controller.closePalettes(); });
+    }
+    function reconcile() {
+      if (!paper || !signedIn()) return;
+      const focused = root.contains(document.activeElement) ? document.activeElement : null;
+      const selection = window.getSelection();
+      // A live Range collapses when its article is detached. Keep node endpoints.
+      const savedSelection = focused && selection?.rangeCount && focused.contains(selection.anchorNode) && focused.contains(selection.focusNode)
+        ? {anchor:selection.anchorNode, anchorOffset:selection.anchorOffset, focus:selection.focusNode, focusOffset:selection.focusOffset} : null;
+      let reordered = false;
+      const stored = notes(selected);
+      const ordered = [...(sections || [])];
+      stored.forEach(note => { if (!ordered.some(section => section.id === note.id)) ordered.push({id:note.id, title:note.id.replace(/[-_]/g, ' ')}); });
+      ordered.forEach((section, index) => {
+        let entry = entries.get(section.id);
+        if (!entry) {
+          const article = element('article', 'nb-entry'); article.dataset.section = section.id; article.id = 'nota-' + section.id;
+          const heading = element('div', 'nb-entry-heading');
+          const title = element('h2', '', section.title); title.id = article.id + '-title';
+          heading.append(element('span', 'nb-entry-number', String(index + 1).padStart(2, '0')), title);
+          const host = element('div', 'nb-live-editor');
+          article.append(heading, host, link('nb-lesson-link', 'Vezi în lecție', selected.url + '#' + encodeURIComponent(section.id)));
+          paper.append(article);
+          const controller = window.BBNoteEditor.mount(host, {chapter:selected, section:section.id, idPrefix:'bb-note-' + selected.num + '-' + section.id, headingId:title.id, toolbarHost:tools, isOpen:() => signedIn(), onActivate:activate, peers:() => [...entries.values()].map(item => ({controller:item.controller, title:item.title.textContent}))});
+          const anchor = link('', section.title, '#' + encodeURIComponent(article.id)); nav.append(anchor);
+          entry = {article, controller, title, anchor}; entries.set(section.id, entry);
+        }
+        entry.title.textContent = section.title; entry.anchor.textContent = section.title;
+        entry.article.querySelector('.nb-entry-number').textContent = String(index + 1).padStart(2, '0');
+        // Reorder only when metadata changes; never detach the focused editor on input.
+        const articles = paper.querySelectorAll('.nb-entry');
+        if (articles[index] !== entry.article) { paper.insertBefore(entry.article, articles[index] || null); reordered = true; }
+        if (nav.children[index] !== entry.anchor) nav.insertBefore(entry.anchor, nav.children[index] || null);
+      });
+      if (reordered && focused?.isConnected) {
+        focused.focus({preventScroll:true});
+        if (savedSelection?.anchor.isConnected && savedSelection.focus.isConnected) selection.setBaseAndExtent(savedSelection.anchor,savedSelection.anchorOffset,savedSelection.focus,savedSelection.focusOffset);
+      }
+      if (!tools.children.length) entries.values().next().value?.controller.activate();
+      intro.textContent = 'Capitolul ' + selected.num + ' · ' + countLabel(nonempty(selected)) + ' · Se salvează automat';
+      scrollToAnchor();
+    }
+    function render() {
+      const nextOwner = signedIn() ? window.BBUserStorage.owner() : null;
+      if (!initialized || nextOwner !== owner) {
+        clear(); owner = nextOwner; initialized = true;
+        root.dataset.sectionsReady = 'false';
+        const header = element('header', 'nb-heading'); root.append(header);
+        if (selected) {
+          root.closest('main').classList.add('nb-main-open');
+          header.append(link('nb-back', '← Toate caietele', 'notite.html'));
+          document.title = selected.name + ' · Caietele mele · BioMed';
+        } else header.append(element('h1', '', 'Caietele mele'), element('p', 'nb-intro', 'Tot ce ai notat. Un caiet pentru fiecare capitol.'));
+        if (!nextOwner) {
+          const guest = element('div', 'nb-guest'); guest.append(element('h2', '', 'Păstrează-ți ideile aproape.'), element('p', '', 'Autentifică-te pentru a-ți deschide caietele cu notițe din lecții.'));
+          if (selected) guest.prepend(element('h1', 'nb-guest-title', selected.name));
+          const login = element('button', 'bb-account-primary', 'Autentifică-te'); login.type = 'button'; login.addEventListener('click', () => window.BBAccountUI?.open('login')); guest.append(login); root.append(guest); return;
+        }
+        status = element('p', 'nb-status'); status.setAttribute('role', 'status'); root.append(status);
+        if (selected) {
+          const toc = element('details', 'nb-toc'); toc.append(element('summary', '', 'Cuprinsul caietului'));
+          nav = element('nav', ''); nav.setAttribute('aria-label', 'Cuprinsul caietului'); toc.append(nav); header.append(toc);
+          paper = element('div', 'nb-paper');
+          const paperHeader = element('header', 'nb-paper-heading'); paperHeader.append(element('h1', '', selected.name));
+          intro = element('p', 'nb-intro'); paperHeader.append(intro); paper.append(paperHeader);
+          tools = element('div', 'nb-tools'); tools.setAttribute('aria-label', 'Instrumentele secțiunii active'); paper.append(tools);
+          root.append(paper);
+        } else {
+          const grid = element('div', 'nb-grid');
+          chapters.forEach(chapter => {
+            const cover = link('nb-cover', '', 'notite.html?capitol=' + chapter.num); cover.dataset.chapter = chapter.num; cover.style.setProperty('--nb-color', chapter.color);
+            const face = element('span', 'nb-cover-face', String(chapter.num).padStart(2, '0')); face.setAttribute('aria-hidden', 'true');
+            const label = element('div', 'nb-cover-label'); label.append(element('h2', '', chapter.name), element('span', 'nb-cover-count'));
+            const arrow = element('span', 'nb-cover-arrow', '↗'); arrow.setAttribute('aria-hidden', 'true');
+            cover.append(face, label, arrow); grid.append(cover);
+          }); root.append(grid);
+        }
+      }
+      if (!nextOwner) return;
+      updateStatus();
+      if (selected) { reconcile(); finishLayout(); }
+      else {
+        chapters.forEach(chapter => { const count = nonempty(chapter); root.querySelector('[data-chapter="' + chapter.num + '"] .nb-cover-count').textContent = count ? countLabel(count) : 'Încă fără notițe'; });
+        root.dataset.sectionsReady = 'true';
+      }
+    }
+    ['bb:auth-change', 'bb:cache-owner-change', 'bb:cache-change', 'bb:cache-write'].forEach(event => document.addEventListener(event, render));
+    document.addEventListener('bb:sync-change', updateStatus);
+    window.addEventListener('online', updateStatus); window.addEventListener('offline', updateStatus);
+    window.addEventListener('pageshow', render);
+    render();
+  }
   function init() {
     if (!window.BBAuth || !window.BBUserStorage || typeof CHAPTERS === 'undefined') return;
     const filename = location.pathname.split('/').pop();
     const chapter = CHAPTERS.find(item => item.done && item.url === filename);
     const sections = [...document.querySelectorAll('.page-section[id^="page-"]')];
     const actions = document.querySelector('.lab-topbar-actions');
+    if (filename === 'notite.html') { const root = document.getElementById('notebooks'); if (root) initNotebooks(root); return; }
     if (!chapter || !sections.length || !actions || document.getElementById('bb-notes-toggle')) return;
-    const button = document.createElement('button');
-    button.type = 'button'; button.id = 'bb-notes-toggle'; button.className = 'bb-notes-toggle';
-    button.setAttribute('aria-label', 'Notițe'); button.title = 'Notițe';
-    button.setAttribute('aria-controls', 'bb-notes-panel'); button.setAttribute('aria-expanded', 'false');
-    button.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 3h14v18H5zM8 8h8M8 12h8M8 16h5"/></svg><span>Notițe</span>';
+    const button = makeNotesButton();
     actions.prepend(button);
+    const mobileTools = document.createElement('div');
+    mobileTools.className = 'bb-notes-mobile-tools';
+    document.querySelector('main').prepend(mobileTools);
+    const mobilePlacement = window.matchMedia('(max-width: 700px)');
+    function placeNotesButton() {
+      const focused = document.activeElement === button;
+      (mobilePlacement.matches ? mobileTools : actions).prepend(button);
+      if (focused) button.focus({preventScroll:true});
+    }
+    mobilePlacement.addEventListener('change', placeNotesButton);
+    placeNotesButton();
     const panel = document.createElement('dialog');
     panel.id = 'bb-notes-panel'; panel.className = 'bb-notes-panel'; panel.setAttribute('aria-labelledby', 'bb-notes-title');
-    panel.innerHTML = '<div class="bb-account-heading"><h2 id="bb-notes-title">Notițe</h2><button type="button" class="bb-dialog-close" aria-label="Închide notițele"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><p class="bb-notes-chapter"></p><p class="bb-notes-section" id="bb-notes-section"></p><div class="bb-notes-guest"><p>Autentifică-te pentru a scrie și sincroniza notițe personale pentru această secțiune.</p><button type="button" class="bb-account-primary" id="bb-notes-login">Autentifică-te</button></div><div class="bb-notes-editor"><label for="bb-note-body">Notița ta pentru această secțiune</label><textarea id="bb-note-body" maxlength="20000" placeholder="Idei de reținut, conexiuni, întrebări…" aria-describedby="bb-notes-section bb-note-status bb-note-limit"></textarea><div class="bb-notes-meta"><p id="bb-note-status" role="status" aria-live="polite"></p><span id="bb-note-limit">0 / 20.000</span></div></div>';
+    panel.innerHTML = '<div class="bb-account-heading"><h2 id="bb-notes-title">Notițe</h2><button type="button" class="bb-dialog-close" aria-label="Închide notițele"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><p class="bb-notes-chapter"></p><p class="bb-notes-section" id="bb-notes-section"></p><div class="bb-notes-guest"><p>Autentifică-te pentru a scrie și sincroniza notițe personale pentru această secțiune.</p><button type="button" class="bb-account-primary" id="bb-notes-login">Autentifică-te</button></div><div class="bb-notes-editor"><label for="bb-note-body">Notița ta pentru această secțiune</label><div class="bb-notes-toolbar" role="group" aria-label="Formatarea notiței"></div><div id="bb-note-body" class="bb-note-body" contenteditable="true" tabindex="0" role="textbox" aria-multiline="true" aria-label="Notița ta pentru această secțiune" data-placeholder="Idei de reținut, conexiuni, întrebări…" aria-describedby="bb-notes-section bb-note-status bb-note-limit"></div><div class="bb-notes-meta"><p id="bb-note-status" role="status" aria-live="polite"></p><span id="bb-note-limit">0 / 20.000</span></div></div>';
     panel.querySelector('.bb-notes-chapter').textContent = chapter.name;
     document.body.append(panel);
-    const textarea = panel.querySelector('textarea');
     const sectionName = panel.querySelector('.bb-notes-section');
-    const status = panel.querySelector('#bb-note-status');
-    const count = panel.querySelector('#bb-note-limit');
     const media = window.matchMedia('(max-width: 768px)');
-    let key = null;
-    let currentOwner = null;
-    let returnFocus = button;
-    let presentationCloses = 0;
+    let returnFocus = button, presentationCloses = 0;
     function activeSection() { return sections.find(section => section.classList.contains('active')) || sections[0]; }
-    function signedIn() { const user = window.BBAuth.getState().user; return !!user && user.id === window.BBUserStorage.owner(); }
-    function updateStatus() {
-      count.textContent = new Intl.NumberFormat('ro').format(textarea.value.length) + ' / 20.000';
-      if (!signedIn()) { status.textContent = ''; return; }
-      if (!window.BBUserStorage.canPersist()) { status.textContent = 'Stocare locală indisponibilă. Păstrează pagina deschisă și exportă copia din cont.'; return; }
-      if (!navigator.onLine) { status.textContent = 'Salvat pe dispozitiv. Se sincronizează la reconectare.'; return; }
-      const sync = window.BBCloudSync?.getState();
-      const pending = window.BBUserStorage.snapshot().pending[key];
-      if (sync?.status === 'error') status.textContent = 'Salvat pe dispozitiv. Sincronizarea a eșuat; reîncearcă din meniul contului.';
-      else if (pending) status.textContent = 'Se salvează…';
-      else status.textContent = textarea.value ? 'Salvat' : 'Notița se salvează automat.';
-    }
+    const controller = window.BBNoteEditor.mount(panel.querySelector('.bb-notes-editor'), {chapter, section:activeSection().id.slice(5), isOpen:() => panel.open});
+    const editor = controller.editor;
+    function closePalettes() { controller.closePalettes(); }
     function load(force) {
       const section = activeSection();
-      const sectionId = section.id.slice(5);
-      const nextKey = 'note:' + chapter.num + ':' + sectionId;
-      const owner = window.BBUserStorage.owner();
-      const changed = nextKey !== key || owner !== currentOwner;
-      key = nextKey; currentOwner = owner;
-      sectionName.textContent = (section.querySelector('.page-title, .section-title, h1, h2')?.textContent || sectionId).trim();
-      const authenticated = signedIn();
-      panel.querySelector('.bb-notes-guest').hidden = authenticated;
-      panel.querySelector('.bb-notes-editor').hidden = !authenticated;
-      textarea.disabled = !authenticated;
-      if (changed || force) textarea.value = authenticated ? window.BBUserStorage.get(key)?.body || '' : '';
-      updateStatus();
+      sectionName.textContent = (section.querySelector('.page-title, .section-title, h1, h2')?.textContent || section.id.slice(5)).trim();
+      panel.querySelector('.bb-notes-guest').hidden = signedIn(); panel.querySelector('.bb-notes-editor').hidden = !signedIn();
+      controller.setSection(section.id.slice(5)); controller.load(force);
     }
-    function close() { if (panel.open) panel.close(); }
+    function close() { closePalettes(); if (panel.open) panel.close(); }
     function open() {
       if (panel.open) return;
       returnFocus = document.activeElement;
@@ -68,18 +199,8 @@
       if (media.matches) panel.showModal(); else panel.show();
       document.body.classList.add('bb-notes-open');
       button.setAttribute('aria-expanded', 'true');
-      (signedIn() ? textarea : panel.querySelector('#bb-notes-login')).focus();
+      (signedIn() ? editor : panel.querySelector('#bb-notes-login')).focus();
     }
-    textarea.addEventListener('input', () => {
-      // Capture ownership and section now; no deferred callback can change this key.
-      if (!signedIn() || currentOwner !== window.BBUserStorage.owner() || !key) return;
-      const previous = window.BBUserStorage.get(key);
-      const now = new Date().toISOString();
-      const sectionId = key.split(':').slice(2).join(':');
-      const saved = window.BBUserStorage.set(key, {chapter_num:chapter.num, section_id:sectionId, body:textarea.value.slice(0, 20000), created_at:previous?.created_at || now, updated_at:now});
-      updateStatus();
-      if (!saved) status.textContent = 'Contul s-a schimbat într-o altă filă. Redeschide notițele după autentificare.';
-    });
     button.addEventListener('click', () => panel.open ? close() : open());
     panel.querySelector('.bb-dialog-close').addEventListener('click', close);
     panel.querySelector('#bb-notes-login').addEventListener('click', () => { close(); window.BBAccountUI?.open('login'); });
@@ -95,8 +216,6 @@
     document.addEventListener('bb:auth-change', () => load(true));
     document.addEventListener('bb:cache-owner-change', () => load(true));
     document.addEventListener('bb:cache-change', () => load(true));
-    document.addEventListener('bb:sync-change', updateStatus);
-    window.addEventListener('online', updateStatus); window.addEventListener('offline', updateStatus);
     // Legacy lesson routers change section classes without a shared router API.
     const observer = new MutationObserver(() => load());
     sections.forEach(section => observer.observe(section, {attributes:true, attributeFilter:['class']}));

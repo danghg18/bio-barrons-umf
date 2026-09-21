@@ -1,0 +1,74 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import http from 'node:http';
+import {extname,resolve} from 'node:path';
+import {chromium} from 'playwright';
+const root=resolve(import.meta.dirname,'..');
+const server=http.createServer(async(req,res)=>{try{const file=resolve(root,'.'+new URL(req.url,'http://local').pathname);if(!file.startsWith(root+'/'))throw Error();const body=await readFile(file);res.setHeader('Content-Type',({'.js':'text/javascript','.html':'text/html','.css':'text/css','.svg':'image/svg+xml'})[extname(file)]||'application/octet-stream');res.end(body);}catch{res.writeHead(404);res.end();}});
+await new Promise(r=>server.listen(0,'127.0.0.1',r));const browser=await chromium.launch();
+try{const ctx=await browser.newContext({serviceWorkers:'block'});const page=await ctx.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto(`http://127.0.0.1:${server.address().port}/grile_celula.html`);
+ await page.waitForSelector('#grila-61');assert.equal(await page.locator('.quiz-retry').count(),0,'Individual retry controls are removed');assert.equal(await page.locator('.quiz-reset-start').count(),1,'Only one restart control exists across ranges');
+ await page.locator('#grila-61 input[value="C"]').check();await page.locator('#grila-61 .quiz-check').click();await page.waitForFunction(()=>document.querySelector('#grila-61').classList.contains('is-verified'));
+ const first=await page.evaluate(()=>BBQuizAnalytics.getReport({days:'all'}));assert.equal(first.runs.length,1);assert.equal(first.runs[0].verified,1);assert.ok(first.runs[0].startedAt,'A fresh traversal has a known start, even after the first checkbox draft');
+ await page.getByRole('button',{name:'Reîncearcă tot',exact:true}).click();await page.locator('.quiz-reset-confirm').click();await page.waitForFunction(()=>!document.querySelector('#grila-61').classList.contains('is-verified'));
+ let report=await page.evaluate(()=>BBQuizAnalytics.getReport({days:'all'}));assert.equal(report.runs.length,1);assert.equal(report.runs[0].status,'stopped');assert.equal(report.totals.attempts,1);
+ await page.locator('#grila-61 input[value="A"]').check();await page.locator('#grila-61 .quiz-check').click();await page.waitForFunction(()=>document.querySelector('#grila-61').classList.contains('is-verified'));await page.reload();await page.waitForSelector('#grila-61.is-verified');
+ report=await page.evaluate(()=>BBQuizAnalytics.getReport({days:'all'}));assert.equal(report.runs.length,2);assert.equal(report.totals.attempts,2);assert.equal(report.runs.find(r=>r.status==='stopped').correct,1);
+ // A durable history clear racing a verification must not save an unrecorded answer.
+ await page.locator('.quiz-reset-start').click();await page.locator('.quiz-reset-confirm').click();
+ await page.waitForFunction(()=>!document.querySelector('#grila-61').classList.contains('is-verified'));
+ await page.evaluate(()=>{const original=BBQuizAnalytics.recordAttempt;BBQuizAnalytics.recordAttempt=async input=>{await BBQuizAnalytics.clearHistory();const value=await original(input);window.rejectedRecord=value;return value;};});
+ await page.locator('#grila-61 input[value="C"]').check();await page.locator('#grila-61 .quiz-check').click();
+ await page.waitForFunction(()=>window.rejectedRecord===false);
+ await page.waitForFunction(()=>!document.querySelector('#grila-61 .quiz-check').disabled);
+ assert.equal(await page.locator('#grila-61').evaluate(e=>e.classList.contains('is-verified')),false,'Rejected history commit cannot become a verified answer');
+ assert.deepEqual(errors,[]);
+ // A confirmation belongs to the traversal that was visible when it opened.
+ const resetContext=await browser.newContext({serviceWorkers:'block'});
+ const oldTab=await resetContext.newPage(),currentTab=await resetContext.newPage(),resetErrors=[];
+ for(const tab of [oldTab,currentTab])tab.on('pageerror',error=>resetErrors.push(error.message));
+ const resetUrl=`http://127.0.0.1:${server.address().port}/grile_celula.html`;
+ await oldTab.goto(resetUrl);await oldTab.waitForSelector('#grila-61');
+ await oldTab.locator('#grila-61 input[value="C"]').check();await oldTab.locator('#grila-61 .quiz-check').click();await oldTab.waitForSelector('#grila-61.is-verified');
+ await oldTab.locator('.quiz-reset-start').click();await oldTab.waitForSelector('.quiz-reset-confirm:visible');
+ await currentTab.goto(resetUrl);await currentTab.waitForSelector('#grila-61.is-verified');
+ await currentTab.locator('.quiz-reset-start').click();await currentTab.locator('.quiz-reset-confirm').click();
+ await currentTab.waitForFunction(()=>!document.querySelector('#grila-61').classList.contains('is-verified'));
+ await currentTab.locator('#grila-61 input[value="A"]').check();await currentTab.locator('#grila-61 .quiz-check').click();await currentTab.waitForSelector('#grila-61.is-verified');
+ await oldTab.waitForFunction(()=>document.querySelector('#grila-61 input[value="A"]').checked);
+ assert.equal(await oldTab.locator('.quiz-reset-confirm').isVisible(),false,'A new traversal in another tab closes the old confirmation');
+ const successor=await currentTab.evaluate(()=>BBUserStorage.get(BB_QUIZ.storageKey));
+ await oldTab.locator('.quiz-reset-confirm').evaluate(button=>button.click());
+ assert.deepEqual(await currentTab.evaluate(()=>BBUserStorage.get(BB_QUIZ.storageKey)),successor,'A stale confirmation cannot clear the successor answer cache');
+ // Force a restart between the player's parent check and the transactional write.
+ await currentTab.locator('.quiz-reset-start').click();
+ const expectedParent=await currentTab.evaluate(()=>BBQuizAnalytics.ensureRun(BB_QUIZ.storageKey));
+ await currentTab.evaluate(()=>{
+   const original=BBQuizAnalytics.prepareRestart;
+   BBQuizAnalytics.prepareRestart=async input=>{
+     window.confirmedParent=input.runId;
+     const quiz=BB_QUIZ,ticket=await original({storageKey:quiz.storageKey,resetId:'intervening-reset',runId:input.runId});
+     BBUserStorage.set(quiz.storageKey,{version:quiz.version,questions:{}});
+     await BBQuizAnalytics.finishRestart({storageKey:quiz.storageKey,resetId:ticket.id});
+     const next=await BBQuizAnalytics.ensureRun(quiz.storageKey),q=quiz.questions[0];
+     await BBQuizAnalytics.recordAttempt({storageKey:quiz.storageKey,runId:next.id,questionId:q.id,attemptId:'successor-race-answer',selected:q.correct,correct:true,answerKey:q.correct});
+     const saved={version:quiz.version,questions:{[q.id]:{selected:q.correct,verified:true,correct:true}}};
+     BBUserStorage.set(quiz.storageKey,saved);window.raceSuccessor={id:next.id,saved};
+     return original(input);
+   };
+ });
+ await currentTab.locator('.quiz-reset-confirm').click();
+ await currentTab.waitForFunction(()=>window.raceSuccessor&&!document.querySelector('.quiz-reset-start').disabled);
+ assert.equal(await currentTab.evaluate(()=>window.confirmedParent),expectedParent.id,'Reset writes are fenced to the confirmed parent');
+ assert.deepEqual(await currentTab.evaluate(()=>BBUserStorage.get(BB_QUIZ.storageKey)),await currentTab.evaluate(()=>window.raceSuccessor.saved),'A transactional stale-parent rejection is never treated as an empty reset');
+ assert.equal((await currentTab.evaluate(()=>BBQuizAnalytics.getReport({days:'all'}))).canPersist,true);
+ await currentTab.locator('.quiz-reset-start').click();await currentTab.waitForSelector('.quiz-reset-confirm:visible');
+ await currentTab.evaluate(()=>BBUserStorage.activate('restart-other-owner'));
+ assert.equal(await currentTab.locator('.quiz-reset-confirm').isVisible(),false,'An account change closes the previous owner confirmation');
+ const otherOwner=await currentTab.evaluate(()=>BBUserStorage.get(BB_QUIZ.storageKey));
+ await currentTab.locator('.quiz-reset-confirm').evaluate(button=>button.click());
+ assert.deepEqual(await currentTab.evaluate(()=>BBUserStorage.get(BB_QUIZ.storageKey)),otherOwner);
+ assert.deepEqual(resetErrors,[]);
+ await resetContext.close();
+ console.log('Shared quiz restart: single top control, partial history, fresh run, reload, stale confirmation and transactional source fencing passed.');
+}finally{await browser.close();await new Promise(r=>server.close(r));}

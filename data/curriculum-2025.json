@@ -1,0 +1,361 @@
+{
+  "session": 2025,
+  "programmes": [
+    "Medicină",
+    "Medicină Dentară"
+  ],
+  "edition": 2022,
+  "pageNumbering": "printed",
+  "excludedChapters": [
+    2,
+    4,
+    5,
+    7,
+    9,
+    21
+  ],
+  "chapters": [
+    {
+      "number": 1,
+      "url": "introducere_anatomie_fiziologie.html",
+      "printedPages": [
+        1,
+        11
+      ],
+      "pdfPages": [
+        8,
+        18
+      ],
+      "exclusions": []
+    },
+    {
+      "number": 3,
+      "url": "celula_si_fiziologia_celulara.html",
+      "printedPages": [
+        45,
+        52
+      ],
+      "pdfPages": [
+        52,
+        59
+      ],
+      "exclusions": [
+        {
+          "heading": "Celulele și energia",
+          "printedPages": [
+            52,
+            55
+          ]
+        },
+        {
+          "heading": "Mitoza și reproducerea celulei",
+          "printedPages": [
+            55,
+            58
+          ]
+        },
+        {
+          "heading": "Sinteza proteică",
+          "printedPages": [
+            58,
+            63
+          ]
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "url": "oasele_si_articulatiile.html",
+      "printedPages": [
+        115,
+        126
+      ],
+      "pdfPages": [
+        122,
+        133
+      ],
+      "exclusions": [
+        {
+          "heading": "Tipuri de diartroze",
+          "printedPages": [
+            123,
+            124
+          ]
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "url": "tesutul_muscular.html",
+      "printedPages": [
+        167,
+        179
+      ],
+      "pdfPages": [
+        174,
+        186
+      ],
+      "exclusions": [
+        {
+          "heading": "Funcția mușchilor striați",
+          "printedPages": [
+            171,
+            176
+          ]
+        },
+        {
+          "heading": "Funcțiile mușchiului neted și cardiac",
+          "printedPages": [
+            178,
+            179
+          ]
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "url": "tesutul_nervos.html",
+      "printedPages": [
+        223,
+        235
+      ],
+      "pdfPages": [
+        230,
+        242
+      ],
+      "exclusions": []
+    },
+    {
+      "number": 11,
+      "url": "sistemul_nervos.html",
+      "printedPages": [
+        245,
+        259
+      ],
+      "pdfPages": [
+        252,
+        266
+      ],
+      "exclusions": []
+    },
+    {
+      "number": 12,
+      "url": "organele_de_simt.html",
+      "printedPages": [
+        271,
+        283
+      ],
+      "pdfPages": [
+        278,
+        290
+      ],
+      "exclusions": []
+    },
+    {
+      "number": 13,
+      "url": "sistemul_endocrin.html",
+      "printedPages": [
+        295,
+        308
+      ],
+      "pdfPages": [
+        302,
+        315
+      ],
+      "exclusions": []
+    },
+    {
+      "number": 14,
+      "url": "sangele.html",
+      "printedPages": [
+        319,
+        331
+      ],
+      "pdfPages": [
+        327,
+        339
+      ],
+      "exclusions": [
+        {
+          "heading": "Anemia",
+          "printedPages": [
+            324,
+            324
+          ]
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "url": "sistemul_cardiovascular.html",
+      "printedPages": [
+        343,
+        359
+      ],
+      "pdfPages": [
+        351,
+        367
+      ],
+      "exclusions": [
+        {
+          "heading": "Reglarea fluxului cardiac și Șocul",
+          "printedPages": [
+            355,
+            356
+          ]
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "url": "sistemul_limfatic_si_imun.html",
+      "printedPages": [
+        375,
+        382
+      ],
+      "pdfPages": [
+        383,
+        390
+      ],
+      "exclusions": [
+        {
+          "heading": "Sistemul imun",
+          "printedPages": [
+            382,
+            389
+          ]
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "url": "sistemul_respirator.html",
+      "printedPages": [
+        401,
+        414
+      ],
+      "pdfPages": [
+        409,
+        422
+      ],
+      "exclusions": []
+    },
+    {
+      "number": 18,
+      "url": "sistemul_digestiv.html",
+      "printedPages": [
+        425,
+        441
+      ],
+      "pdfPages": [
+        433,
+        449
+      ],
+      "exclusions": []
+    },
+    {
+      "number": 19,
+      "url": "metabolism_si_nutritie.html",
+      "printedPages": [
+        453,
+        474
+      ],
+      "pdfPages": [
+        461,
+        482
+      ],
+      "exclusions": [
+        {
+          "heading": "Adenozin trifosfatul",
+          "printedPages": [
+            455,
+            456
+          ]
+        },
+        {
+          "heading": "Glicoliza, Ciclul Krebs, Lanțul transportor de electroni, Chemiosmoza",
+          "printedPages": [
+            456,
+            463
+          ]
+        },
+        {
+          "heading": "Metabolismul vitaminelor",
+          "printedPages": [
+            471,
+            472
+          ]
+        },
+        {
+          "heading": "Figura 19.10 — Secvențe ale metabolismului proteic",
+          "figure": "19.10"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "url": "sistemul_renal_complet.html",
+      "printedPages": [
+        485,
+        497
+      ],
+      "pdfPages": [
+        493,
+        505
+      ],
+      "exclusions": []
+    },
+    {
+      "number": 22,
+      "url": "sistemul_reproducator_masculin.html",
+      "printedPages": [
+        529,
+        537
+      ],
+      "pdfPages": [
+        537,
+        545
+      ],
+      "exclusions": [
+        {
+          "heading": "Dezvoltarea testiculelor",
+          "printedPages": [
+            531,
+            532
+          ]
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "url": "sistemul_reproducator_feminin.html",
+      "printedPages": [
+        549,
+        566
+      ],
+      "pdfPages": [
+        557,
+        574
+      ],
+      "exclusions": [
+        {
+          "heading": "Dezvoltarea embrionară și fetală",
+          "printedPages": [
+            562,
+            566
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "file": "Tematica-si-bibliografie-ADMITERE-2025.pdf",
+      "sha256": "baaa278cc67f3b999ad48c10574f7fa12f9bad0577e4288ef463021a57049de5"
+    },
+    {
+      "file": "734244481-Barron-s-2022.pdf",
+      "sha256": "e3f5497911f0aadbdab974ca7b8fb9b2aa30f602fb0b58584f2d1c101b3c880d"
+    }
+  ]
+}

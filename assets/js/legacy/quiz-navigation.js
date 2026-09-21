@@ -1,6 +1,6 @@
 /* Quiz range routes retain their public hashes; numbered links resolve a question's range. */
-const pages = Array.from(document.querySelectorAll('.page-section[id^="page-"]'), section => section.id.slice(5));
-const quizDefaultRoute = document.querySelector('.page-section.active').id.slice(5);
+let pages = Array.from(document.querySelectorAll('.page-section[id^="page-"]'), section => section.id.slice(5));
+let quizDefaultRoute = document.querySelector('.page-section.active').id.slice(5);
 function closeNav() {
   document.getElementById('sidenav').classList.remove('open');
   document.getElementById('nav-overlay').classList.remove('open');
@@ -11,6 +11,7 @@ function quizRouteFor(target) {
   return question ? question.closest('.page-section').id.slice(5) : quizDefaultRoute;
 }
 function quizNavigate(target, updateHash, focusDestination = true) {
+  if (!document.querySelector('.page-section')) return;
   const route = quizRouteFor(target);
   const question = /^grila-\d+$/.test(target) && document.getElementById(target);
   document.querySelectorAll('.page-section').forEach(section => section.classList.toggle('active', section.id === 'page-' + route));
@@ -38,10 +39,15 @@ function handleHash() {
   try { target = decodeURIComponent(location.hash.slice(1)); } catch (_) { target = ''; }
   quizNavigate(target || quizDefaultRoute, false);
 }
-addEventListener('scroll', () => { document.getElementById('top').style.display = scrollY > 500 ? 'flex' : 'none'; });
+addEventListener('scroll', () => { const top = document.getElementById('top'); if (top) top.style.display = scrollY > 500 ? 'flex' : 'none'; });
 /* The player renders cards on DOMContentLoaded; run after those listeners. */
 addEventListener('DOMContentLoaded', () => setTimeout(handleHash, 0));
 addEventListener('hashchange', handleHash);
+document.addEventListener('bb:quiz-ready', () => {
+  pages = Array.from(document.querySelectorAll('.page-section[id^="page-"]'), section => section.id.slice(5));
+  quizDefaultRoute = pages[0];
+  handleHash();
+});
 document.addEventListener('click', event => {
   const link = event.target.closest('.quiz-question-map a, .quiz-page-nav a');
   if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;

@@ -53,11 +53,13 @@ try {
   const first=page.locator('[data-question-id="cel-061"]');
   await first.locator('input[value="A"]').check();
   await first.locator('.quiz-check').click();
-  await first.locator('.quiz-retry').waitFor({state:'visible'});
+  await first.locator('input:disabled').first().waitFor({state:'visible'});
   assert.equal(await first.locator('.is-selected-extra').count(),1);
   assert.equal(await first.locator('.is-missed-answer').count(),1);
   assert.ok(await first.locator('#cel-061-a-explanation').isVisible());
-  await first.locator('.quiz-retry').click();
+  await page.locator('.quiz-reset-start').click();
+  await page.locator('.quiz-reset-confirm').click();
+  await page.waitForFunction(()=>document.querySelectorAll('.quiz-question.is-verified').length===0);
   assert.equal(await first.locator('input:checked').count(),0);
   for (const [i,q] of data.questions.entries()) {
     const range=data.ranges.find(r=>q.number>=r.start&&q.number<=r.end);
@@ -66,18 +68,19 @@ try {
     assert.ok((await card.locator('legend').textContent()).includes(q.prompt));
     for(const letter of key[i]) await card.locator(`input[value="${letter}"]`).check();
     await card.locator('.quiz-check').click();
-    await card.locator('.quiz-retry').waitFor({state:'visible'});
+    await card.locator('input:disabled').first().waitFor({state:'visible'});
     assert.ok(await card.evaluate(el=>el.classList.contains('is-correct')),`Exact-set score ${q.number}`);
   }
   assert.equal(await page.locator('#quiz-sidebar-count').textContent(),'50/50 verificate');
   await page.reload();
   assert.equal(await page.locator('.quiz-question.is-correct').count(),50);
   assert.equal(await page.locator('.page-section.active').getAttribute('id'),'page-grile-101-110');
-  await page.locator('.page-section.active .quiz-reset-start').click();
-  await page.locator('.page-section.active .quiz-reset-cancel').click();
+  await page.locator('.quiz-reset-start').click();
+  await page.locator('.quiz-reset-cancel').click();
   assert.equal(await page.locator('.quiz-question.is-correct').count(),50);
-  await page.locator('.page-section.active .quiz-reset-start').click();
-  await page.locator('.page-section.active .quiz-reset-confirm').click();
+  await page.locator('.quiz-reset-start').click();
+  await page.locator('.quiz-reset-confirm').click();
+  await page.waitForFunction(()=>document.querySelectorAll('.quiz-question.is-verified').length===0);
   await page.reload();
   assert.equal(await page.locator('#quiz-sidebar-count').textContent(),'0/50 verificate');
   assert.equal(await page.evaluate(()=>localStorage.getItem('bb.quiz.organe-simt.v1')),'celula-isolation-proof');
@@ -100,7 +103,7 @@ try {
   const last=page.locator('[data-question-id="cel-110"]');
   await last.locator('input[value="D"]').check();
   await last.locator('.quiz-check').click();
-  await last.locator('.quiz-retry').waitFor({state:'visible'});
+  await last.locator('input:disabled').first().waitFor({state:'visible'});
   assert.ok(await last.evaluate(el=>el.classList.contains('is-correct')));
   await last.screenshot({path:resolve(root,'tmp/celula-qa/mobile-110.png')});
   assert.deepEqual(errors,[]);

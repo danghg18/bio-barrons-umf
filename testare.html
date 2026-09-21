@@ -22,10 +22,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/tokens.css?v=20260909-editorial1">
-<link rel="stylesheet" href="assets/css/home.css?v=20260910-testing2">
+<link rel="stylesheet" href="assets/css/home.css?v=20260919-hero1">
 <script src="assets/js/light-mode.js?v=20260909-editorial1"></script>
 <link rel="stylesheet" href="assets/css/site-redesign.css?v=20260910-biomed1">
-<link rel="stylesheet" href="assets/css/testing-analytics.css?v=20260911-analytics1">
+<link rel="stylesheet" href="assets/css/testing-analytics.css?v=20260919-hero1">
 <link rel="stylesheet" href="assets/css/accounts.css?v=20260911-accounts1">
 </head>
 <body class="lab-testing-page bm-browse bm-catalog">
@@ -59,15 +59,15 @@
 <main id="main-content">
   <section class="testing-hero" aria-labelledby="testing-title">
     <div class="testing-intro">
-      <p class="testing-eyebrow">Exersează. Înțelege. Progresează.</p>
       <h1 id="testing-title">Ce ai învățat,<br><span>pus în practică.</span></h1>
-      <p>Grile pe capitole, explicații la fiecare răspuns și o perspectivă clară asupra progresului tău.</p>
+      <p>Alege un capitol și exersează cu explicații la fiecare răspuns.</p>
       <a class="pilot-button" href="#lab-testing-catalog">Alege un capitol <span aria-hidden="true">↓</span></a>
       <span class="testing-availability" id="lab-testing-count"></span>
     </div>
     <section class="testing-preview" aria-labelledby="testing-activity-title">
-      <div class="analytics-section-head"><div><p class="testing-eyebrow">Ritmul tău de învățare</p><h2 id="testing-activity-title">Activitatea ta</h2></div><span class="analytics-period-note">Ultimele 30 de zile</span></div>
+      <div class="testing-preview-head"><h2 id="testing-activity-title">Progresul tău</h2><span>Toate capitolele</span></div>
       <div id="testing-preview-summary" class="testing-preview-summary" aria-live="polite"></div>
+      <div class="testing-activity-head"><h3>Activitatea ta</h3><span>Ultimele 30 de zile</span></div>
       <div id="testing-activity"><p class="analytics-loading">Se încarcă activitatea…</p></div>
       <a class="analytics-more" href="statistici.html">Vezi toate statisticile <span aria-hidden="true">↗</span></a>
     </section>
@@ -79,6 +79,10 @@
     <div class="lab-section-head">
       <div>
         <h2 class="lab-h2" id="testing-catalog-title">Alege capitolul</h2>
+      </div>
+      <div class="testing-catalog-filter" role="group" aria-label="Capitole afișate" hidden>
+        <button type="button" data-catalog-filter="available" aria-pressed="true">Disponibile</button>
+        <button type="button" data-catalog-filter="all" aria-pressed="false">Toate capitolele</button>
       </div>
 
     </div>
@@ -225,12 +229,18 @@
 <script src="assets/js/vendor/supabase.js?v=20260911-accounts1"></script>
 <script src="assets/js/supabase-client.js?v=20260911-accounts1"></script>
 <script src="assets/js/auth-state.js?v=20260911-accounts1"></script>
+<script src="assets/js/note-media.js"></script>
 <script src="assets/js/cloud-sync.js?v=20260911-accounts1"></script>
-<script src="assets/js/home.js?v=20260911-accounts1"></script>
+<script src="assets/js/search-text.js?v=20260914-search2"></script>
+<script src="assets/js/home.js?v=20260914-search2"></script>
 <script src="assets/js/site-redesign.js?v=20260911-accounts1"></script>
 <script src="assets/js/quiz-analytics.js?v=20260911-accounts1"></script>
-<script src="assets/js/analytics-ui.js?v=20260911-analytics1"></script>
+<script src="assets/js/analytics-charts.js?v=20260912-progress1"></script>
+<script src="assets/js/analytics-ui.js?v=20260919-hero1"></script>
 <script src="assets/js/account-ui.js?v=20260911-accounts1"></script>
+<script src="assets/js/note-content.js"></script>
+<script src="assets/js/note-editor.js"></script>
 <script src="assets/js/notes.js?v=20260911-accounts1"></script>
+<script src="assets/js/offline.js"></script>
 </body>
 </html>

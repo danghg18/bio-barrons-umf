@@ -7,3 +7,21 @@ supabase/.branches/
 .env
 .env.*
 !.env.example
+
+# Local design-agent state and generated review captures.
+.DS_Store
+.agents/
+.claude/
+.codex/
+.github/agents/
+.github/hooks/
+.github/skills/
+.github/workflows/validate.yml
+.impeccable/critique/
+.impeccable/live/
+.impeccable/review/
+.impeccable/surfaces/
+.mcp.json
+skills-lock.json
+tmp/
+Lectii

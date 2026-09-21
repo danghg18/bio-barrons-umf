@@ -1,0 +1,50 @@
+import assert from 'node:assert/strict';
+import http from 'node:http';
+import {readFile} from 'node:fs/promises';
+import {resolve,extname} from 'node:path';
+import {chromium} from 'playwright';
+const root=resolve(import.meta.dirname,'..'), prefix='/bio-barrons-umf/';
+const server=http.createServer(async(req,res)=>{try{const path=new URL(req.url,'http://local').pathname;if(!path.startsWith(prefix))throw Error();const file=resolve(root,path.slice(prefix.length)||'index.html');if(!file.startsWith(root+'/'))throw Error();res.setHeader('Content-Type',({'.html':'text/html','.js':'text/javascript','.css':'text/css','.svg':'image/svg+xml','.webp':'image/webp'})[extname(file)]||'application/octet-stream');res.end(await readFile(file));}catch{res.writeHead(404);res.end();}});
+await new Promise(r=>server.listen(0,'127.0.0.1',r));const base=`http://127.0.0.1:${server.address().port}${prefix}`;
+const browser=await chromium.launch();
+try{
+ const context=await browser.newContext({viewport:{width:1440,height:900},serviceWorkers:'block',reducedMotion:'reduce'});
+ const page=await context.newPage(), errors=[];page.on('pageerror',e=>errors.push(e.message));
+ const response=await page.goto(base+'glosar.html');assert.equal(response.status(),200,'Glossary page must be available');
+ await page.waitForSelector('.glossary-entry');
+ assert.equal(await page.locator('.glossary-entry').count(),25);
+ await page.getByRole('button',{name:'Arată mai multe',exact:true}).click();assert.equal(await page.locator('.glossary-entry').count(),50);
+ const input=page.getByRole('searchbox',{name:'Caută în glosar',exact:true});
+ await input.fill('abdomen');await page.getByLabel('Termen exact',{exact:true}).check();
+ await page.waitForFunction(()=>document.querySelectorAll('.glossary-entry').length===1);
+ assert.equal(await page.locator('.glossary-entry h2').innerText(),'abdomen');
+ assert.equal(await page.locator('.glossary-definition').innerText(),'Zona dintre diafragmă și pelvis.');
+ assert.match(await page.locator('.glossary-source').innerText(),/579/);
+ assert.ok(new URL(page.url()).searchParams.get('exact')==='1');
+ await input.fill('abdom');await page.waitForSelector('#glossary-empty:not([hidden])');
+ assert.equal(await page.locator('.glossary-entry').count(),0,'Exact must not match a partial headword');
+ await page.getByLabel('Termen exact',{exact:true}).uncheck();await page.waitForSelector('.glossary-entry');
+ assert.ok(await page.locator('.glossary-entry mark').count()>0);
+ await input.fill('ACETILCOLINA');await page.getByLabel('Termen exact',{exact:true}).check();
+ await page.waitForFunction(()=>document.querySelector('.glossary-entry h2')?.textContent==='acetilcolină');
+ await page.reload();await page.waitForSelector('.glossary-entry');assert.equal(await input.inputValue(),'ACETILCOLINA');
+ assert.equal(await page.getByLabel('Termen exact',{exact:true}).isChecked(),true);
+ await page.getByRole('button',{name:'Șterge căutarea',exact:true}).click();
+ await page.getByRole('button',{name:'Litera Z',exact:true}).click();
+ await page.waitForFunction(()=>document.querySelector('.glossary-entry h2')?.textContent==='zigot');
+ await page.locator('.glossary-permalink').click();assert.ok(new URL(page.url()).hash.startsWith('#termen-'));
+ const permalink=page.url();await page.goto(base+'glosar.html'+new URL(permalink).hash);await page.waitForSelector('.glossary-entry');
+ assert.equal(await page.locator(new URL(permalink).hash+' h2').innerText(),'zigot');
+ assert.ok(await page.locator(new URL(permalink).hash).evaluate(el=>el.getBoundingClientRect().top>=0&&el.getBoundingClientRect().top<innerHeight));
+ for(const width of [1440,768,390,320]){
+  await page.setViewportSize({width,height:900});await page.goto(base+'glosar.html');await page.waitForSelector('.glossary-entry');
+  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Glossary must fit viewport '+width);
+  assert.ok((await page.locator('.glossary-entry').first().boundingBox()).y<600,'The first definition is visible below the compact search controls at '+width);
+  await page.goto(base+'index.html');
+  const placement=await page.locator('#home-glossary').evaluate(el=>({after:!!(document.querySelector('#lab-bento').compareDocumentPosition(el)&Node.DOCUMENT_POSITION_FOLLOWING),before:!!(el.compareDocumentPosition(document.querySelector('#lab-tools'))&Node.DOCUMENT_POSITION_FOLLOWING)}));
+  assert.deepEqual(placement,{after:true,before:true});
+  assert.equal(await page.locator('header a[href="glosar.html"]').count(),0,'Homepage glossary access belongs below lessons');
+  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+ }
+ assert.deepEqual(errors,[]);console.log('Glossary UI: progressive list, exact/normal search, source text, filters, reload, permalinks, homepage placement and four widths passed.');
+}finally{await browser.close();await new Promise(r=>server.close(r));}
