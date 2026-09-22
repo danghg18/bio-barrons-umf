@@ -457,6 +457,18 @@ body.bm-reader .pilot-size-options button {border-radius:999px;min-height:40px;}
  body.bm-browse .lab-footer {width:calc(100% - 32px);padding-inline:0;}
  .pilot-footer-row {flex-wrap:wrap;gap:12px;font-size:11px;}
 }
+/* Only the homepage keeps the floating header; study pages meet the viewport. */
+body.bm-browse:not(.bm-home) .lab-topbar,
+body.bb-chapter-redesign.bm-reader .lab-topbar {
+  position:sticky !important;
+  top:0 !important;
+  width:100% !important;
+  max-width:none !important;
+  margin:0 !important;
+  border-bottom:1px solid var(--ui-line) !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+}
 @media(prefers-reduced-motion:reduce) {.bm-browse *, .bm-reader * {animation:none !important;transition:none !important;scroll-behavior:auto !important;}}
 @media print {
  body.bb-chapter-redesign.bm-reader .page-section {padding:0 !important;box-shadow:none !important;border-radius:0 !important;}

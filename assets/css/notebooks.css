@@ -53,9 +53,6 @@ body.bm-browse.nb-page { background:var(--ui-canvas,#f5f7f5)!important; color:va
 .nb-live-editor .bb-note-body:focus { box-shadow:none; }
 .nb-entry.is-active .nb-entry-number { color:#345742; }
 .nb-entry:focus-within .nb-entry-heading::after { content:''; width:5px; height:5px; border-radius:50%; background:#68805e; align-self:center; }
-.nb-live-editor .bb-notes-meta { min-height:24px; margin:6px 0 0; font-size:11px; color:#79816f; visibility:hidden; }
-.nb-entry.is-active .bb-notes-meta { visibility:visible; }
-.nb-lesson-link { display:inline-flex; align-items:center; min-height:32px; margin-top:0; font-size:11px; color:#7b8674; text-decoration:underline; text-underline-offset:4px; }
 .nb-retry { min-height:44px; margin:8px 0; padding:8px 12px; border:1px solid #ced7c4; background:#fffef9; color:#465847; font:inherit; cursor:pointer; }
 .nb-guest { padding:30px; background:var(--ui-paper,#fff); border-radius:24px; box-shadow:0 0 0 6px var(--ui-shell,#e8ede9); }
 .nb-guest h2 { margin:0 0 12px; font:600 26px/1.25 Figtree,system-ui,sans-serif; letter-spacing:-.025em; }
@@ -85,12 +82,11 @@ body.bm-browse.nb-page { background:var(--ui-canvas,#f5f7f5)!important; color:va
   .nb-entry-heading { gap:8px; margin-bottom:14px; }
   .nb-entry-number { width:18px; font-size:10px; }
   .nb-entry h2 { font-size:20px; }
-  .nb-live-editor .bb-notes-meta { flex-wrap:wrap; }
   .nb-guest { padding:28px 24px; }
 }
 @media(prefers-reduced-motion:reduce){ .nb-cover,.nb-cover-arrow { transition:none; } .nb-cover:hover .nb-cover-arrow { transform:none; } }
 @media print {
-  .nb-page .lab-topbar,.nb-heading,.nb-toc,.nb-status,.nb-lesson-link,.nb-tools,.bb-notes-meta,[data-note-control],.bb-object-drop-preview { display:none!important; }
+  .nb-page .lab-topbar,.nb-heading,.nb-toc,.nb-status,.nb-tools,.bb-note-status,[data-note-control],.bb-object-drop-preview { display:none!important; }
   .nb-page .nb-main.nb-main-open { padding:0; max-width:none; }
   .nb-paper { padding:0; border:0; box-shadow:none; }
   .nb-paper::before { display:none; }

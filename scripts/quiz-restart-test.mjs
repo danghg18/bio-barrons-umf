@@ -70,5 +70,38 @@ try{const ctx=await browser.newContext({serviceWorkers:'block'});const page=awai
  assert.deepEqual(await currentTab.evaluate(()=>BBUserStorage.get(BB_QUIZ.storageKey)),otherOwner);
  assert.deepEqual(resetErrors,[]);
  await resetContext.close();
+ // An imported completed traversal can outlive a fresh answer cache (another
+ // device/reloaded legacy page). A new draft must not be checked against it.
+ const recoveredContext=await browser.newContext({serviceWorkers:'block'});
+ const recoveredPage=await recoveredContext.newPage();
+ await recoveredPage.goto(`http://127.0.0.1:${server.address().port}/grile_organele_de_simt.html`);
+ await recoveredPage.waitForSelector('#grila-1');
+ const completedId=await recoveredPage.evaluate(async()=>{
+   const quiz=BB_QUIZ;
+   BBUserStorage.set(quiz.storageKey,{version:quiz.version,questions:Object.fromEntries(quiz.questions.map(q=>[q.id,{selected:['A'],verified:true,correct:false}]))});
+   const run=await BBQuizAnalytics.ensureRun(quiz.storageKey);
+   const practice=await BBQuizAnalytics.ensurePractice(quiz.storageKey);
+   const q=quiz.questions.find(q=>q.id===practice.questionIds[0]);
+   await BBQuizAnalytics.recordAttempt({storageKey:quiz.storageKey,runId:practice.id,questionId:q.id,selected:q.correct,correct:true,answerKey:q.correct,attemptId:'earlier-correction'});
+   BBUserStorage.set(quiz.storageKey,{version:quiz.version,questions:{}});
+   return run.id;
+ });
+ await recoveredPage.reload();await recoveredPage.waitForSelector('#grila-1');
+ await recoveredPage.locator('#grila-2 input[value="A"]').check();
+ for(const letter of ['B','C','E'])await recoveredPage.locator(`#grila-1 input[value="${letter}"]`).check();
+ await recoveredPage.locator('#grila-1 .quiz-check').click();
+ await recoveredPage.waitForFunction(()=>!document.querySelector('#grila-1 .quiz-check').disabled);
+ assert.equal(await recoveredPage.locator('#grila-1').evaluate(e=>e.classList.contains('is-verified')),true,'A fresh draft after a completed imported traversal must be verifiable');
+ const recoveredReport=await recoveredPage.evaluate(()=>BBQuizAnalytics.getReport({days:'all'}));
+ const archived=recoveredReport.runs.find(r=>r.id===completedId);
+ assert.equal(archived.verified,100,'The prior full result is preserved');
+ assert.equal(archived.correction.corrected,1,'Earlier corrections are preserved');
+ assert.equal(archived.isCurrent,false);
+ const currentRun=recoveredReport.runs.find(r=>r.isCurrent&&r.mode!=='mistakes');
+ assert.equal(currentRun.verified,1);assert.equal(currentRun.correct,1);
+ assert.equal(await recoveredPage.locator('#grila-2 input[value="A"]').isChecked(),true,'Other new drafts survive recovery');
+ await recoveredPage.reload();await recoveredPage.waitForSelector('#grila-1.is-verified');
+ assert.equal(await recoveredPage.locator('#grila-2 input[value="A"]').isChecked(),true);
+ await recoveredContext.close();
  console.log('Shared quiz restart: single top control, partial history, fresh run, reload, stale confirmation and transactional source fencing passed.');
 }finally{await browser.close();await new Promise(r=>server.close(r));}

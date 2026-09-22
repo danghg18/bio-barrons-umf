@@ -620,6 +620,24 @@
         var latest=loadState(); if (!practiceMode && storageAvailable) state=latest;
         if (questionState(question).verified) { syncAllQuestionCards(); syncProgress(); return; }
         var run = practiceMode ? await analytics.ensurePractice(quiz.storageKey, false, practiceSourceRunId) : analytics && analytics.ensureRun ? await analytics.ensureRun(quiz.storageKey) : null;
+        // The answer cache can be reset on another device while this browser
+        // retains its completed local traversal. An explicit verification of
+        // fresh drafts starts a successor; never reuse that frozen result.
+        if (!practiceMode && run && quiz.questions.every(function (item) {
+          return run.answers[item.id] && run.answers[item.id].verified;
+        }) && !Object.values(state.questions).some(function (answer) { return answer.verified; })) {
+          var drafts = state;
+          requireAnswerPersistence();
+          var ticket = await analytics.prepareRestart({storageKey:quiz.storageKey,runId:run.id,resetId:analytics.newAttemptId(),answers:state.questions});
+          if (!ticket || ticket.runId !== run.id || generation!==resetGeneration || expectedOwner!==owner()) throw new Error('Traversal changed');
+          await recoverRestart(expectedOwner);
+          if (generation!==resetGeneration || expectedOwner!==owner()) return;
+          state = drafts;
+          saveState();
+          requireAnswerPersistence();
+          syncAllQuestionCards(); syncProgress();
+          run = await analytics.ensureRun(quiz.storageKey);
+        }
         if (practiceMode && (!run || !practiceRun || run.id !== practiceRun.id)) throw new Error('Practice changed');
         if (generation!==resetGeneration || expectedOwner!==owner()) return;
         var attemptId=attemptIdFor(question.id,false);

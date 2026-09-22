@@ -35,7 +35,7 @@
     function updateStatus() {
       if (!status) return;
       const sync = window.BBCloudSync?.getState();
-      status.textContent = !signedIn() ? '' : !window.BBUserStorage.canPersist() ? 'Stocare locală indisponibilă. Păstrează pagina deschisă și exportă copia din cont.' : !navigator.onLine ? 'Salvat pe dispozitiv. Se sincronizează la reconectare.' : sync?.status === 'error' ? 'Salvat pe dispozitiv. Sincronizarea nu a reușit; reîncearcă din meniul contului.' : sync?.status === 'syncing' ? 'Se sincronizează…' : '';
+      status.textContent = !signedIn() ? '' : !window.BBUserStorage.canPersist() ? 'Stocare locală indisponibilă. Păstrează pagina deschisă și exportă copia din cont.' : !navigator.onLine ? 'Salvat pe dispozitiv. Se sincronizează la reconectare.' : sync?.status === 'error' ? 'Salvat pe dispozitiv. Sincronizarea nu a reușit; reîncearcă din meniul contului.' : '';
     }
     function scrollToAnchor() {
       if (!initialAnchor || !location.hash || root.dataset.sectionsReady !== 'true') return;
@@ -77,7 +77,7 @@
           const title = element('h2', '', section.title); title.id = article.id + '-title';
           heading.append(element('span', 'nb-entry-number', String(index + 1).padStart(2, '0')), title);
           const host = element('div', 'nb-live-editor');
-          article.append(heading, host, link('nb-lesson-link', 'Vezi în lecție', selected.url + '#' + encodeURIComponent(section.id)));
+          article.append(heading, host);
           paper.append(article);
           const controller = window.BBNoteEditor.mount(host, {chapter:selected, section:section.id, idPrefix:'bb-note-' + selected.num + '-' + section.id, headingId:title.id, toolbarHost:tools, isOpen:() => signedIn(), onActivate:activate, peers:() => [...entries.values()].map(item => ({controller:item.controller, title:item.title.textContent}))});
           const anchor = link('', section.title, '#' + encodeURIComponent(article.id)); nav.append(anchor);
@@ -95,7 +95,7 @@
         if (savedSelection?.anchor.isConnected && savedSelection.focus.isConnected) selection.setBaseAndExtent(savedSelection.anchor,savedSelection.anchorOffset,savedSelection.focus,savedSelection.focusOffset);
       }
       if (!tools.children.length) entries.values().next().value?.controller.activate();
-      intro.textContent = 'Capitolul ' + selected.num + ' · ' + countLabel(nonempty(selected)) + ' · Se salvează automat';
+      intro.textContent = 'Capitolul ' + selected.num + ' · ' + countLabel(nonempty(selected));
       scrollToAnchor();
     }
     function render() {
@@ -171,7 +171,7 @@
     placeNotesButton();
     const panel = document.createElement('dialog');
     panel.id = 'bb-notes-panel'; panel.className = 'bb-notes-panel'; panel.setAttribute('aria-labelledby', 'bb-notes-title');
-    panel.innerHTML = '<div class="bb-account-heading"><h2 id="bb-notes-title">Notițe</h2><button type="button" class="bb-dialog-close" aria-label="Închide notițele"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><p class="bb-notes-chapter"></p><p class="bb-notes-section" id="bb-notes-section"></p><div class="bb-notes-guest"><p>Autentifică-te pentru a scrie și sincroniza notițe personale pentru această secțiune.</p><button type="button" class="bb-account-primary" id="bb-notes-login">Autentifică-te</button></div><div class="bb-notes-editor"><label for="bb-note-body">Notița ta pentru această secțiune</label><div class="bb-notes-toolbar" role="group" aria-label="Formatarea notiței"></div><div id="bb-note-body" class="bb-note-body" contenteditable="true" tabindex="0" role="textbox" aria-multiline="true" aria-label="Notița ta pentru această secțiune" data-placeholder="Idei de reținut, conexiuni, întrebări…" aria-describedby="bb-notes-section bb-note-status bb-note-limit"></div><div class="bb-notes-meta"><p id="bb-note-status" role="status" aria-live="polite"></p><span id="bb-note-limit">0 / 20.000</span></div></div>';
+    panel.innerHTML = '<div class="bb-account-heading"><h2 id="bb-notes-title">Notițe</h2><button type="button" class="bb-dialog-close" aria-label="Închide notițele"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><p class="bb-notes-chapter"></p><p class="bb-notes-section" id="bb-notes-section"></p><div class="bb-notes-guest"><p>Autentifică-te pentru a scrie și sincroniza notițe personale pentru această secțiune.</p><button type="button" class="bb-account-primary" id="bb-notes-login">Autentifică-te</button></div><div class="bb-notes-editor"></div>';
     panel.querySelector('.bb-notes-chapter').textContent = chapter.name;
     document.body.append(panel);
     const sectionName = panel.querySelector('.bb-notes-section');
@@ -213,9 +213,11 @@
     document.addEventListener('keydown', event => { if (event.key === 'Escape' && panel.open) { event.preventDefault(); close(); } });
     document.addEventListener('bb:account-opening', close);
     document.addEventListener('bb:lesson-section-change', () => load());
-    document.addEventListener('bb:auth-change', () => load(true));
-    document.addEventListener('bb:cache-owner-change', () => load(true));
-    document.addEventListener('bb:cache-change', () => load(true));
+    // The editor detects owner/section/content changes itself. Rebuilding an
+    // unchanged body on sync or token refresh discards the live caret and scroll.
+    document.addEventListener('bb:auth-change', () => load());
+    document.addEventListener('bb:cache-owner-change', () => load());
+    document.addEventListener('bb:cache-change', () => load());
     // Legacy lesson routers change section classes without a shared router API.
     const observer = new MutationObserver(() => load());
     sections.forEach(section => observer.observe(section, {attributes:true, attributeFilter:['class']}));

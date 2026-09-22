@@ -71,11 +71,22 @@ try {
         const geometry = await page.evaluate(() => {
           const header = document.querySelector('.lab-topbar'), box = header.getBoundingClientRect(), style = getComputedStyle(header);
           const heading = document.querySelector('main h1');
-          return {width:innerWidth, scroll:document.documentElement.scrollWidth, header:{left:box.left,right:box.right,top:box.top,bottom:box.bottom,radius:parseFloat(style.borderTopLeftRadius)},heading:heading?.textContent.trim()};
+          return {width:innerWidth, scroll:document.documentElement.scrollWidth, header:{left:box.left,right:box.right,top:box.top,bottom:box.bottom,radius:parseFloat(style.borderTopLeftRadius),position:style.position},heading:heading?.textContent.trim()};
         });
         assert.ok(geometry.scroll <= width + 1, 'Horizontal overflow: ' + JSON.stringify(geometry));
-        assert.ok(geometry.header.left >= 8 && geometry.header.right <= width - 8 && geometry.header.top >= 8, 'The shared header must remain detached from viewport edges: ' + JSON.stringify(geometry.header));
-        assert.ok(geometry.header.radius >= 20, 'The shared header retains its rounded surface');
+        if (file !== 'index.html') {
+          assert.ok(geometry.header.left <= .5 && geometry.header.right >= width - .5 && geometry.header.top <= .5, 'Interior page topbar must be flush with the viewport edges: ' + JSON.stringify(geometry.header));
+          assert.equal(geometry.header.radius, 0, 'Interior page topbar must not look like a floating rounded surface');
+          assert.equal(geometry.header.position, 'sticky', 'Interior page topbar remains visible while scrolling');
+          await page.evaluate(() => scrollTo(0, Math.min(600, document.documentElement.scrollHeight - innerHeight)));
+          const scrolledTop = await page.locator('.lab-topbar').evaluate(node => node.getBoundingClientRect().top);
+          assert.ok(Math.abs(scrolledTop) <= .5, 'Interior page topbar stays attached to the viewport after scrolling');
+          if ([1440,390].includes(width) && representatives.has(file)) await capture(page, file.replace('.html','') + '-scrolled', width);
+          await page.evaluate(() => scrollTo(0, 0));
+        } else {
+          assert.ok(geometry.header.left >= 8 && geometry.header.right <= width - 8 && geometry.header.top >= 8, 'The homepage header must remain detached from viewport edges: ' + JSON.stringify(geometry.header));
+          assert.ok(geometry.header.radius >= 20, 'The homepage header retains its rounded surface');
+        }
         assert.equal(await page.locator('.lab-topbar .lab-brand-name').textContent(), 'BioMed');
         assert.equal(await page.locator('.bm-primary-nav a').count(), 2);
         const covered = await page.locator('.lab-topbar a:visible,.lab-topbar button:visible').evaluateAll(nodes => nodes.filter(node => {
@@ -173,12 +184,15 @@ try {
       assert.match(await page.locator('.nb-paper h1').evaluate(node => getComputedStyle(node).fontFamily), /Caveat/);
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
       await capture(page, 'notite-paper', width);
+      await page.evaluate(() => scrollTo(0, 600));
+      assert.ok(Math.abs(await page.locator('.lab-topbar').evaluate(node => node.getBoundingClientRect().top)) <= .5, 'Open notebooks keep the topbar attached while scrolling');
+      await capture(page, 'notite-paper-scrolled', width);
     });
     await context.close();
   }
   await writeFile(resolve(output, 'report.json'), JSON.stringify({pages:[...pages],widths:[1440,768,390,320],passed,failures}, null, 2) + '\n');
   assert.equal(failures.length, 0, 'Compact UI regressions; full details in ' + resolve(output,'report.json'));
-  console.log('Compact site UI: 30 pages × 4 widths, detached accessible headers, visible desktop contents, responsive homepage introduction and working demo, catalog CTA, direct resume and notebook paper passed. Captures: ' + output);
+  console.log('Compact site UI: 30 pages × 4 widths, flush interior topbars, floating homepage header, visible desktop contents, responsive homepage introduction and working demo, catalog CTA, direct resume and notebook paper passed. Captures: ' + output);
 } finally {
   await browser.close();
   await new Promise(done => server.close(done));

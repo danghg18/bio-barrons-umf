@@ -27,15 +27,35 @@
       });
     } finally { db.close(); }
   }
+  async function decode(file) {
+    if (typeof createImageBitmap === 'function') {
+      try {
+        const bitmap = await createImageBitmap(file);
+        if (bitmap.width && bitmap.height) return {source:bitmap, width:bitmap.width, height:bitmap.height, close:() => bitmap.close()};
+        bitmap.close();
+      } catch (_) { /* Fall back to the browser's ordinary image decoder. */ }
+    }
+    const url = URL.createObjectURL(file);
+    try {
+      const image = await new Promise((resolve, reject) => {
+        const node = new Image();
+        node.onload = () => resolve(node); node.onerror = reject; node.src = url;
+      });
+      if (!image.naturalWidth || !image.naturalHeight) throw Error('Invalid image dimensions');
+      return {source:image, width:image.naturalWidth, height:image.naturalHeight, close:() => URL.revokeObjectURL(url)};
+    } catch (_) {
+      URL.revokeObjectURL(url);
+      throw Error('Imaginea nu poate fi deschisă. Alege un alt fișier.');
+    }
+  }
   async function add(file, id) {
     ensure(id);
-    if (!['image/png','image/jpeg','image/webp'].includes(file.type)) throw Error('Alege o imagine PNG, JPEG sau WebP.');
+    if ((file.type && !file.type.startsWith('image/')) || file.type === 'image/svg+xml') throw Error('Alege o fotografie sau o imagine raster compatibilă.');
     if (file.size > 10 * 1024 * 1024) throw Error('Imaginea este prea mare. Alege un fișier de maximum 10 MB.');
-    let bitmap;
-    try { bitmap = await createImageBitmap(file); } catch (_) { throw Error('Imaginea nu poate fi deschisă. Alege un alt fișier.'); }
-    const scale = Math.min(1, 1800 / Math.max(bitmap.width, bitmap.height));
-    const canvas = document.createElement('canvas'); canvas.width = Math.max(1, Math.round(bitmap.width * scale)); canvas.height = Math.max(1, Math.round(bitmap.height * scale));
-    canvas.getContext('2d').drawImage(bitmap, 0, 0, canvas.width, canvas.height); bitmap.close();
+    const image = await decode(file);
+    const scale = Math.min(1, 1800 / Math.max(image.width, image.height));
+    const canvas = document.createElement('canvas'); canvas.width = Math.max(1, Math.round(image.width * scale)); canvas.height = Math.max(1, Math.round(image.height * scale));
+    try { canvas.getContext('2d').drawImage(image.source, 0, 0, canvas.width, canvas.height); } finally { image.close(); }
     const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/webp', .86));
     if (!blob || blob.type !== 'image/webp' || blob.size > 2097152) throw Error('Imaginea este prea detaliată. Alege o versiune mai mică.');
     ensure(id); const key = crypto.randomUUID();

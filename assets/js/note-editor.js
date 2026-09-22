@@ -5,10 +5,10 @@
   function mount(panel, options) {
     const content = window.BBNotesContent, events = new AbortController();
     const id = options.idPrefix || 'bb-note';
-    panel.innerHTML = '<div class="bb-notes-toolbar" role="group" aria-label="Formatarea notiței"></div><div id="bb-note-body" class="bb-note-body" contenteditable="true" tabindex="0" role="textbox" aria-multiline="true" aria-label="Notița ta pentru această secțiune" data-placeholder="Idei de reținut, conexiuni, întrebări…" aria-describedby="bb-note-status bb-note-limit"></div><div class="bb-notes-meta"><p id="bb-note-status" role="status" aria-live="polite"></p><span id="bb-note-limit">0 / 20.000</span></div>';
-    const editor = panel.querySelector('#bb-note-body'), toolbar = panel.querySelector('.bb-notes-toolbar'), status = panel.querySelector('#bb-note-status'), count = panel.querySelector('#bb-note-limit');
-    editor.id = id + '-body'; status.id = id + '-status'; count.id = id + '-limit';
-    editor.setAttribute('aria-describedby', status.id + ' ' + count.id);
+    panel.innerHTML = '<div class="bb-notes-toolbar" role="group" aria-label="Formatarea notiței"></div><div id="bb-note-body" class="bb-note-body" contenteditable="true" tabindex="0" role="textbox" aria-multiline="true" aria-label="Notița ta pentru această secțiune" data-placeholder="Idei de reținut, conexiuni, întrebări…" aria-describedby="bb-note-status"></div><p id="bb-note-status" class="bb-note-status" role="status" aria-live="polite"></p>';
+    const editor = panel.querySelector('#bb-note-body'), toolbar = panel.querySelector('.bb-notes-toolbar'), status = panel.querySelector('#bb-note-status');
+    editor.id = id + '-body'; status.id = id + '-status';
+    editor.setAttribute('aria-describedby', status.id);
     if (options.headingId) editor.setAttribute('aria-labelledby', options.headingId);
     function activate() {
       if (options.toolbarHost && toolbar.parentNode !== options.toolbarHost) options.toolbarHost.replaceChildren(toolbar);
@@ -23,14 +23,12 @@
       const b = document.createElement('button'); b.type = 'button'; b.className = 'bb-note-tool'; b.title = label; b.setAttribute('aria-label', label); b.innerHTML = icon(path); b.addEventListener('click', action); return b;
     }
     function updateStatus() {
-      count.textContent = new Intl.NumberFormat('ro').format(editor.innerText.length) + ' / 20.000';
       if (!signedIn()) { status.textContent = ''; return; }
       if (!window.BBUserStorage.canPersist()) { status.textContent = 'Stocare locală indisponibilă. Păstrează pagina deschisă și exportă copia din cont.'; return; }
       if (!navigator.onLine) { status.textContent = 'Salvat pe dispozitiv. Se sincronizează la reconectare.'; return; }
       const sync = window.BBCloudSync?.getState();
       if (sync?.status === 'error') status.textContent = 'Salvat pe dispozitiv. Sincronizarea a eșuat; reîncearcă din meniul contului.';
-      else if (window.BBUserStorage.snapshot().pending[key()]) status.textContent = 'Se salvează…';
-      else status.textContent = content.hasContent(editor) ? 'Salvat' : 'Notița se salvează automat.';
+      else status.textContent = '';
     }
     const objectSelector = 'figure[data-bb-image],aside[data-bb-sticky]';
     let selectedObject = null, drag = null, resize = null, dragFrame = 0, composing = false, deferredLoad = false;
@@ -332,7 +330,7 @@
       const trigger = toolbar.querySelector('[aria-expanded="true"]');
       if (trigger) { event.preventDefault(); event.stopPropagation(); closePalettes(); trigger.focus(); }
     });
-    const file = document.createElement('input'); file.type = 'file'; file.accept = 'image/png,image/jpeg,image/webp'; file.className = 'bb-note-image-input'; file.hidden = true; toolbar.append(file);
+    const file = document.createElement('input'); file.type = 'file'; file.accept = 'image/*'; file.className = 'bb-note-image-input'; file.hidden = true; toolbar.append(file);
     toolbar.append(button('Adaugă imagine', 'M3 3h18v18H3zM3 16l5-5 4 4 3-3 6 6M15 7h.01', () => file.click()));
     function insertionRange() {
       rememberSelection();

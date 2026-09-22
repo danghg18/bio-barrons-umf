@@ -180,6 +180,38 @@ try{
     assert.equal(await page.locator('#bb-auth-password').inputValue(),'','closing modal clears password');
     await context.close();
   });
+  await test('notes autosave and refresh preserve the exact caret and scroll position',async()=>{
+    for(const notebook of [false,true])for(const mobile of [false,true]){
+      const {page,context,errors}=await newPage({mobile,entry:notebook?'notite.html?capitol=3':'celula_si_fiziologia_celulara.html#membrana'});
+      await login(page);
+      if(!notebook)await page.locator('#bb-notes-toggle').click();
+      const editor=page.locator(notebook?'#nota-membrana .bb-note-body':'#bb-note-body');
+      await editor.fill(Array.from({length:50},(_,i)=>'Rândul '+i+' despre membrană.').join('\n'));
+      await synced(page);
+      await editor.evaluate(node=>{
+        node.focus();const walker=document.createTreeWalker(node,NodeFilter.SHOW_TEXT);let text;
+        while((text=walker.nextNode())&&!text.textContent.includes('Rândul 25')){}
+        if(!text)throw Error('Missing middle paragraph');
+        const range=document.createRange();range.setStart(text,text.textContent.indexOf('Rândul 25')+6);range.collapse(true);
+        const selection=getSelection();selection.removeAllRanges();selection.addRange(range);
+        window.noteCaretNode=text;window.noteCaretOffset=range.startOffset;
+        const rect=range.getBoundingClientRect();
+        if(node.scrollHeight>node.clientHeight)node.scrollTop+=rect.top-node.getBoundingClientRect().top-100;
+        else window.scrollBy(0,rect.top-innerHeight/2);
+      });
+      const before=await editor.evaluate(node=>({offset:getSelection().anchorOffset,scroll:node.scrollTop,page:scrollY}));
+      await page.evaluate(()=>BBCloudSync.retry());await synced(page);
+      const after=await editor.evaluate(node=>({sameNode:getSelection().anchorNode===window.noteCaretNode,offset:getSelection().anchorOffset,scroll:node.scrollTop,page:scrollY}));
+      assert.equal(after.sameNode,true,'Saving/syncing must retain the text node under the caret');
+      assert.equal(after.offset,before.offset,'Sync must retain the exact insertion offset');
+      assert.equal(after.scroll,before.scroll);assert.equal(after.page,before.page);
+      await page.evaluate(()=>__mock.setUser('a','TOKEN_REFRESHED'));await synced(page);
+      assert.equal(await editor.evaluate(()=>getSelection().anchorNode===window.noteCaretNode&&getSelection().anchorOffset===window.noteCaretOffset),true,'Session refresh preserves the insertion point');
+      await page.keyboard.type('NOU');await synced(page);
+      assert.ok((await editor.innerText()).includes('RândulNOU 25'),'Typing resumes at the original position');
+      assert.deepEqual(errors,[]);await context.close();
+    }
+  });
   await test('notebook continuous writing opens empty sections and preserves the active cursor',async()=>{
     const {page,context,errors}=await newPage({entry:'notite.html?capitol=3'});
     assert.equal(await page.locator('h1').innerText(),'Celula și fiziologia celulară');assert.equal(await page.locator('.bb-note-body').count(),0,'Guests see the chapter heading but no private editors');
@@ -371,6 +403,33 @@ try{
     await source.locator('figcaption').fill('Descriere păstrată.');
     return {...setup,source,figure:source.locator('figure')};
   }
+  await test('notebook Add image accepts any image format the browser can decode',async()=>{
+    const {page,context,errors}=await newPage({entry:'notite.html?capitol=3'});
+    await login(page);await page.waitForFunction(()=>document.querySelector('#notebooks')?.dataset.sectionsReady==='true');
+    await page.locator('#nota-home .bb-note-body').focus();
+    const chooserPromise=page.waitForEvent('filechooser');
+    await page.getByRole('button',{name:'Adaugă imagine',exact:true}).click();
+    const chooser=await chooserPromise;
+    await chooser.setFiles({name:'schema.gif',mimeType:'image/gif',buffer:Buffer.from('R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==','base64')});
+    await page.waitForFunction(()=>document.querySelector('#nota-home figure img')?.naturalWidth>0);
+    assert.equal(await page.locator('#nota-home figure[data-bb-image]').count(),1);
+    assert.equal(await page.locator('.bb-note-image-input').getAttribute('accept'),'image/*');
+    assert.deepEqual(errors,[]);await context.close();
+  });
+  await test('notebook Add image falls back when createImageBitmap is unavailable',async()=>{
+    const {page,context,errors}=await newPage({entry:'notite.html?capitol=3'});
+    await login(page);await page.waitForFunction(()=>document.querySelector('#notebooks')?.dataset.sectionsReady==='true');
+    await page.evaluate(()=>{window.createImageBitmap=undefined;});
+    await page.locator('#nota-home .bb-note-body').focus();
+    const bytes=await page.evaluate(()=>{const canvas=document.createElement('canvas');canvas.width=32;canvas.height=16;const c=canvas.getContext('2d');c.fillStyle='#345742';c.fillRect(0,0,32,16);return canvas.toDataURL('image/png').split(',')[1];});
+    const chooserPromise=page.waitForEvent('filechooser');
+    await page.getByRole('button',{name:'Adaugă imagine',exact:true}).click();
+    const chooser=await chooserPromise;
+    await chooser.setFiles({name:'schema.png',mimeType:'image/png',buffer:Buffer.from(bytes,'base64')});
+    await page.waitForFunction(()=>document.querySelector('#nota-home figure img')?.naturalWidth>0);
+    assert.equal(await page.locator('#nota-home figure[data-bb-image]').count(),1);
+    assert.deepEqual(errors,[]);await context.close();
+  });
   await test('notebook image stays in place during mouse drags and allows touch scrolling',async()=>{
     const {page,context,errors,source,figure}=await imageNotebook(true);
     await page.setViewportSize({width:1440,height:1200});await figure.scrollIntoViewIfNeeded();
@@ -498,7 +557,7 @@ try{
     assert.equal(await page.evaluate(()=>window.noteLeak),undefined);
     assert.equal(await page.locator('.nb-entry .bb-note-body span').evaluate(n=>getComputedStyle(n).backgroundColor),'rgb(255, 240, 163)');
     assert.equal(await page.locator('.nb-entry .bb-note-body span').evaluate(n=>getComputedStyle(n).color),'rgb(36, 89, 166)');
-    assert.match(await page.locator('.nb-entry[data-section="membrana"] .nb-lesson-link').getAttribute('href'),/celula_si_fiziologia_celulara.html#membrana$/);
+    assert.equal(await page.locator('.nb-entry[data-section="membrana"] .nb-lesson-link').count(),0,'Notebook sections omit redundant lesson links');
     await page.locator('.nb-toc summary').click();await page.locator('.nb-toc a[href="#nota-membrana"]').click();assert.match(page.url(),/#nota-membrana$/);
     await page.reload();await page.waitForSelector('#nota-membrana');
     await page.waitForFunction(()=>document.querySelector('#notebooks')?.dataset.sectionsReady==='true');
@@ -548,7 +607,7 @@ try{
     await page.waitForSelector('#nota-noua');await page.waitForFunction(()=>scrollY>50);
     assert.deepEqual(errors,[]);await context.close();
   });
-  await test('notebooks retain private notes and chapter links offline under the Pages subpath',async()=>{
+  await test('notebooks retain private notes without redundant links offline under the Pages subpath',async()=>{
     const {page,context,errors}=await newPage({serviceWorkers:'allow',entry:'notite.html'});await login(page);
     await page.evaluate(time=>BBUserStorage.set('note:3:membrana',{chapter_num:3,section_id:'membrana',body:'Notiță disponibilă offline.',created_at:time,updated_at:time}),time);await synced(page);
     await page.evaluate(()=>navigator.serviceWorker.ready);await page.reload();
@@ -558,8 +617,17 @@ try{
     await page.waitForFunction(()=>document.querySelector('#notebooks')?.dataset.sectionsReady==='true');
     assert.equal(await page.locator('#nota-membrana .bb-note-body').innerText(),'Notiță disponibilă offline.');
     assert.equal(await page.locator('#nota-membrana h2').innerText(),'Membrana plasmatică');
-    await page.locator('#nota-membrana .nb-lesson-link').click();await page.waitForSelector('#page-membrana.active');
-    await page.goBack();await page.waitForSelector('.nb-entry .bb-note-body');
+    assert.equal(await page.locator('#nota-membrana .nb-lesson-link').count(),0);
+    assert.deepEqual(errors,[]);await context.close();
+  });
+  await test('notebook actionable statuses stay out of print',async()=>{
+    const {page,context,errors}=await newPage({entry:'notite.html?capitol=3'});await login(page);
+    await page.waitForFunction(()=>document.querySelector('#notebooks')?.dataset.sectionsReady==='true');
+    await page.evaluate(()=>{__mock.offline(true);window.dispatchEvent(new Event('offline'));});
+    const status=page.locator('#bb-note-3-home-status');
+    await page.waitForFunction(()=>document.querySelector('#bb-note-3-home-status')?.textContent.trim().length>0);
+    await page.emulateMedia({media:'print'});
+    assert.equal(await status.evaluate(node=>getComputedStyle(node).display),'none','Editor status messages do not repeat under notebook sections in print');
     assert.deepEqual(errors,[]);await context.close();
   });
   await test('notebook editing shares lesson text, images and sticky notes',async()=>{
@@ -582,7 +650,7 @@ try{
     await page.goto(base+'notite.html?capitol=3');await page.waitForSelector('.nb-entry');assert.match(await page.locator('#nota-membrana').innerText(),/Modificat din lecție/);
     await editor.focus();
     for(const width of [768,390,320]){await page.setViewportSize({width,height:900});await page.evaluate(()=>window.scrollTo(0,0));await page.screenshot({path:resolve(output,'notebook-editing-'+width+'.png'),fullPage:true});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));}
-    await page.locator('.bb-note-image-input').setInputFiles({name:'bad.svg',mimeType:'image/svg+xml',buffer:Buffer.from('<svg/>')});assert.match(await page.locator('#bb-note-3-membrana-status').innerText(),/PNG|JPEG|WebP/);
+    await page.locator('.bb-note-image-input').setInputFiles({name:'bad.svg',mimeType:'image/svg+xml',buffer:Buffer.from('<svg/>')});assert.match(await page.locator('#bb-note-3-membrana-status').innerText(),/fotografie|raster/i);
     await page.evaluate(()=>__mock.offline(true));
     await page.locator('.bb-note-image-input').setInputFiles({name:'offline.png',mimeType:'image/png',buffer:Buffer.from(bytes,'base64')});
     await page.waitForFunction(()=>document.querySelectorAll('.bb-note-body figure img').length===2);await page.reload();
@@ -616,7 +684,9 @@ try{
     await page.goto(base+'introducere_anatomie_fiziologie.html#introducere');await page.evaluate(()=>BBAuth.ready);await synced(page);
     await page.locator('#bb-notes-toggle').click();
     assert.equal(await page.locator('#bb-note-body').evaluate(node=>node===document.activeElement),true);
+    assert.equal(await page.locator('#bb-note-limit').count(),0,'Lesson notes do not show a character counter during normal editing');
     await page.locator('#bb-note-body').fill('Capitol 1, introducere: prima notiță.');
+    await page.waitForFunction(()=>document.querySelector('#bb-note-status')?.textContent==='');
     await page.evaluate(()=>BBLessonNavigation.navigate('organizare'));
     await page.waitForFunction(()=>document.querySelector('#page-organizare').classList.contains('active')&&document.querySelector('#bb-note-body').innerText==='');
     await page.locator('#bb-note-body').fill('Capitol 1, organizare: a doua notiță.');
@@ -632,7 +702,7 @@ try{
     assert.equal(rows.find(row=>row.chapter_num===1&&row.section_id==='organizare').body,'Capitol 1, organizare: a doua notiță.');
     assert.equal(rows.find(row=>row.chapter_num===3&&row.section_id==='introducere').body,'Capitol 3, introducere: a treia notiță.');
     assert.equal(rows.find(row=>row.chapter_num===3&&row.section_id==='membrana').body,'Capitol 3, membrană: a patra notiță.');
-    assert.equal(await page.locator('#bb-note-status').textContent(),'Salvat');
+    assert.equal(await page.locator('#bb-note-status').textContent(),'','Routine save confirmation stays out of the editor');
     await page.keyboard.press('Escape');assert.equal(await page.locator('#bb-notes-panel').evaluate(node=>node.open),false);
     assert.equal(await page.locator('#bb-notes-toggle').evaluate(node=>node===document.activeElement),true);
     await page.reload();await page.evaluate(()=>BBAuth.ready);await synced(page);await page.locator('#bb-notes-toggle').click();
@@ -641,6 +711,11 @@ try{
     assert.match(await page.locator('#bb-note-status').textContent(),/dispozitiv|local/i);
     await page.evaluate(()=>__mock.offline(false));await synced(page);
     assert.equal(await page.evaluate(()=>__mock.rows('notes').find(row=>row.chapter_num===3&&row.section_id==='membrana').body),'Ciornă offline păstrată.');
+    await page.goto(base+'notite.html?capitol=3');await page.waitForSelector('#nota-membrana .bb-note-body');
+    assert.equal(await page.locator('.nb-lesson-link').count(),0,'Notebook sections do not duplicate lesson navigation links');
+    assert.equal(await page.locator('#nota-membrana [id$="-limit"]').count(),0,'Notebook editors do not show a character counter during normal editing');
+    assert.equal(await page.locator('#nota-membrana [id$="-status"]').evaluate(node=>getComputedStyle(node).display),'none','A blank notebook status does not leave routine editor microcopy or spacing');
+    assert.ok(!(await page.locator('.nb-paper-heading .nb-intro').innerText()).includes('Se salvează automat'),'Notebook heading omits autosave microcopy');
     assert.equal(errors.length,0);await context.close();
   });
   await test('notes colors preserve selection, formatting, reload and safe legacy text',async()=>{
