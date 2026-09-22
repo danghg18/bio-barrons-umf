@@ -14,7 +14,7 @@ try{
     alter table storage.objects enable row level security;
     grant usage on schema storage,auth to authenticated,anon;
     grant select,insert,update,delete on storage.objects to authenticated,anon;`);
-  await db.exec(await readFile(new URL('../supabase/migrations/20260918180000_note_images.sql',import.meta.url),'utf8'));
+  await db.exec(await readFile(new URL('../supabase/migrations/20260922191010_note_images.sql',import.meta.url),'utf8'));
   const bucket=(await db.query('select * from storage.buckets')).rows[0];assert.equal(bucket.public,false);assert.equal(Number(bucket.file_size_limit),2097152);assert.deepEqual(bucket.allowed_mime_types,['image/webp']);
   for(const id of [A,B]){await user(id);await db.query("insert into storage.objects values('note-images',$1)",[name(id)]);}
   await user(A);assert.deepEqual((await db.query('select name from storage.objects')).rows.map(r=>r.name),[name(A)]);

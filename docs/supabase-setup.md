@@ -148,7 +148,7 @@ Pentru rotația cheii publice, creează o nouă publishable key în dashboard, �
 
 ## Imagini private în notițe — extensie locală, 18 septembrie 2026
 
-Pentru sincronizarea imaginilor, aplică **doar noua migrare** `supabase/migrations/20260918180000_note_images.sql` pe proiectul existent, înaintea publicării noului editor. Migrarea inițială de conturi nu se repetă. Extensia creează bucketul privat `note-images`, cu acces numai la directorul utilizatorului autentificat, prin politici SELECT/INSERT/UPDATE/DELETE. Este pregătită și testată local; nu a fost aplicată automat pe proiectul live.
+Pentru sincronizarea imaginilor, aplică **doar migrarea** `supabase/migrations/20260922191010_note_images.sql` pe un proiect care nu o are deja. Migrarea inițială de conturi nu se repetă. Extensia creează bucketul privat `note-images`, cu acces numai la directorul utilizatorului autentificat, prin politici SELECT/INSERT/UPDATE/DELETE. Migrarea a fost aplicată pe proiectul Biomed live la 22 septembrie 2026 și este înregistrată acolo cu versiunea `20260922191010`.
 
 Fișierele PNG/JPEG/WebP selectate (maximum 10 MB) sunt rasterizate în browser, redimensionate la maximum 1800 px și salvate ca WebP de maximum 2 MiB. Bloburile sunt păstrate în IndexedDB separat pentru fiecare proprietar; corpul notiței conține doar identificatorul UUID, descrierea și textul. Imaginile se încarcă în Storage înaintea rândului de notiță care le referă. O încărcare nereușită păstrează fișierul local și revizia în așteptare; reîncercarea din cont continuă sincronizarea.
 
