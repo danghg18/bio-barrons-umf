@@ -1,0 +1,722 @@
+[
+  {
+    "sourceChapter": "I",
+    "sourceNumber": 3,
+    "storageKey": "bb.quiz.introducere.v1",
+    "id": "ia-003",
+    "requiresReverification": false,
+    "reason": "Virgulă finală, fără modificarea sensului.",
+    "beforeHash": "6b13038750be167c5cdd7b4957d36fd8cdef45379dc43d473e3fbaa6364e9048",
+    "afterHash": "9c4363d9513e826ae36018908e3ec321097ea5aa58ac7f77bd9999dd24a4b97b"
+  },
+  {
+    "sourceChapter": "I",
+    "sourceNumber": 6,
+    "storageKey": "bb.quiz.introducere.v1",
+    "id": "ia-006",
+    "requiresReverification": false,
+    "reason": "Nucleu/nuclei păstrează afirmația despre toate celulele umane; nu schimbă selecția cerută.",
+    "beforeHash": "1ec2e8b3838071ba0292cc12d4920132c5b5878581ebe768dba5cb24b3fd2dbf",
+    "afterHash": "381895a105254cf8222c8aca98e5b0737f167c688377979f0517eb3aa6b5361d"
+  },
+  {
+    "sourceChapter": "I",
+    "sourceNumber": 19,
+    "storageKey": "bb.quiz.introducere.v1",
+    "id": "ia-019",
+    "requiresReverification": false,
+    "reason": "Pereche/perechi este o diferență gramaticală în aceeași relație anatomică.",
+    "beforeHash": "7bb124799b347edc7b9061c5910b7039433685554cabf1210dc072abe996b6c0",
+    "afterHash": "c404e02d99faaa75927424c2e675f30f689557392a39d36afda8ec603f221b68"
+  },
+  {
+    "sourceChapter": "I",
+    "sourceNumber": 23,
+    "storageKey": "bb.quiz.introducere.v1",
+    "id": "ia-023",
+    "requiresReverification": false,
+    "reason": "Acordul adjectivelor stângă/dreaptă, același plan și aceleași jumătăți.",
+    "beforeHash": "32705ca3665999d72e5842542d7449882de09b65a7b8b2a6cf574e2f09a2e978",
+    "afterHash": "1cab5c0717a86089e63ed4d351da77132bfb623fb91ce4c13c7416afe25e7d17"
+  },
+  {
+    "sourceChapter": "I",
+    "sourceNumber": 24,
+    "storageKey": "bb.quiz.introducere.v1",
+    "id": "ia-024",
+    "requiresReverification": true,
+    "reason": "Varianta inițială combina două poziții ierarhice; sursa afirmă numai inferior moleculei.",
+    "beforeHash": "a3781f4f11307b2875d550e6e540b800d8bec31b5084a5e7fb1d9acf2443bc1e",
+    "afterHash": "4c7512683541dfca912997b6a53f6ffa02816be5bc26c5ce235d09c604229ecd"
+  },
+  {
+    "sourceChapter": "I",
+    "sourceNumber": 36,
+    "storageKey": "bb.quiz.introducere.v1",
+    "id": "ia-036",
+    "requiresReverification": false,
+    "reason": "Articularea substantivelor pleura/pericardul nu modifică structurile enumerate.",
+    "beforeHash": "904702d5dc3c4c98841a373c6bf48aad40d2676bad54b24f3fd5f85f343b7065",
+    "afterHash": "0261d7ebce39a3ec48ef2c31d42a836d8830a71fcdf33716746031f5cf7accbb"
+  },
+  {
+    "sourceChapter": "I",
+    "sourceNumber": 43,
+    "storageKey": "bb.quiz.introducere.v1",
+    "id": "ia-043",
+    "requiresReverification": false,
+    "reason": "Grafia tipărită Următori păstrează aceeași cerință negativă.",
+    "beforeHash": "2da6e5064ec775e396ab0f42f4edc1fe5542ee0016cea8454df0a541e59d1738",
+    "afterHash": "fdcb94802ca33cdc20fa8c56d80c0845ea243102cce3eca9cf2867c42a7c567e"
+  },
+  {
+    "sourceChapter": "I",
+    "sourceNumber": 45,
+    "storageKey": "bb.quiz.introducere.v1",
+    "id": "ia-045",
+    "requiresReverification": false,
+    "reason": "Acordul plural pericardice nu schimbă clasificarea greșită a cavităților descrisă deja.",
+    "beforeHash": "2b0412870d76925d77cd123e5adbf7a8ade2a96ee28e6878d3f6c55c9114c72a",
+    "afterHash": "bac30d07208703f1a38aeac88f7e180c81773990791341e003387e546befcad8"
+  },
+  {
+    "sourceChapter": "I",
+    "sourceNumber": 57,
+    "storageKey": "bb.quiz.introducere.v1",
+    "id": "ia-057",
+    "requiresReverification": true,
+    "reason": "Adăugarea lui pot modifică afirmația absolută într-o posibilitate.",
+    "beforeHash": "546f9b9f074c6fee69d130ac8b2826c5ec10ed091e351c099a62efed31626689",
+    "afterHash": "1691105298e24407cfb51456e6249d6c1da155159b900bb80a2b3a39186bae4d"
+  },
+  {
+    "sourceChapter": "I",
+    "sourceNumber": 63,
+    "storageKey": "bb.quiz.celula.v1",
+    "id": "cel-063",
+    "requiresReverification": false,
+    "reason": "Articolul din materialele/materiale nu modifică originea indicată.",
+    "beforeHash": "768ea997f115d6769233da44ad7d04a3c09ea93d42a1e6ea583113adedd81d23",
+    "afterHash": "d915859bb2ea5bcd397646a2a568cecaadbf5cf93663223ab46ea8a1e5fd46f9"
+  },
+  {
+    "sourceChapter": "I",
+    "sourceNumber": 76,
+    "storageKey": "bb.quiz.celula.v1",
+    "id": "cel-076",
+    "requiresReverification": false,
+    "reason": "Are concentrația/este în concentrație exprimă aceeași valoare a aceleiași soluții saline.",
+    "beforeHash": "34ce9c28283676ba211cca18474dcceba5545e501ca2e414966f3fce604cc072",
+    "afterHash": "a1c5e3f9fad1cee2c3b54aa716aa656d1d803efabf64c557d053ede93a34a1b0"
+  },
+  {
+    "sourceChapter": "I",
+    "sourceNumber": 81,
+    "storageKey": "bb.quiz.celula.v1",
+    "id": "cel-081",
+    "requiresReverification": false,
+    "reason": "Articolul din particulele/particule nu modifică procesul descris.",
+    "beforeHash": "c524017d95d86f19eb0f4c212c5dac35257fbd001d009a5d3a9806e3a23fcf5d",
+    "afterHash": "bd1ee9647eaf84d02dfa4ead2bcb5cd9209ad7c9b5837a91aab1ae82f86f4b6b"
+  },
+  {
+    "sourceChapter": "I",
+    "sourceNumber": 82,
+    "storageKey": "bb.quiz.celula.v1",
+    "id": "cel-082",
+    "requiresReverification": false,
+    "reason": "Articolul din lipidele/lipide nu modifică exemplul de substanțe.",
+    "beforeHash": "62fa0b113320de46c8366861218d9019d5651d14bed9bbbff5187559659c6e9a",
+    "afterHash": "ec83e314e93abbd0acb0224925450931808e42dcc14bfe9017504b4c020fa4b7"
+  },
+  {
+    "sourceChapter": "I",
+    "sourceNumber": 88,
+    "storageKey": "bb.quiz.celula.v1",
+    "id": "cel-088",
+    "requiresReverification": true,
+    "reason": "Sursa omite precizarea sare; natura soluției devine nespecificată, iar ambiguitatea este explicată. 0,30 și0,3 sunt numeric egale.",
+    "beforeHash": "bd507317d58ae9ff283bef8361659671f9663bfa31c8c83b146eadff14bb2675",
+    "afterHash": "e237007e090ac05cdee8bdf68b14629a42408e109465d42c027ac9edf80c0dc3"
+  },
+  {
+    "sourceChapter": "I",
+    "sourceNumber": 96,
+    "storageKey": "bb.quiz.celula.v1",
+    "id": "cel-096",
+    "requiresReverification": true,
+    "reason": "Sursa omite sare în trei variante, astfel încât identitatea soluției nu mai este explicită.",
+    "beforeHash": "021c14926f2a92207f44c2a6a78e862d064485a9bf1758de167e6aeb7298c12e",
+    "afterHash": "31143fd2e1fff68453872a13a8f841a42012237cb47d4826bbe2e81249966f1f"
+  },
+  {
+    "sourceChapter": "IV",
+    "sourceNumber": 68,
+    "storageKey": "bb.quiz.sistem-nervos.v1",
+    "id": "sn-068",
+    "requiresReverification": true,
+    "reason": "O propoziție despre comunicarea LCR este înlocuită cu textul real despre vizibilitatea pe secțiune sagitală.",
+    "beforeHash": "6113f97441f42a6b87341d80de10880aef8c35a01c56e5478e50f7a75b26050d",
+    "afterHash": "1b38a11e17fabb27e927a06bed31b154e07a88f0bcce8a215f90c3b0e34a2cc5"
+  },
+  {
+    "sourceChapter": "IV",
+    "sourceNumber": 76,
+    "storageKey": "bb.quiz.sistem-nervos.v1",
+    "id": "sn-076",
+    "requiresReverification": false,
+    "reason": "Numai spațiul dinaintea semnului procentual.",
+    "beforeHash": "73d61c4ce76dc4561a57a105caafc945d2c1b92d2f98ddafff080411ca08569c",
+    "afterHash": "eef5ed24a0b359a76da5f60d6cb2db12b4320b064ff342740e738cc6aeca0a6d"
+  },
+  {
+    "sourceChapter": "IV",
+    "sourceNumber": 82,
+    "storageKey": "bb.quiz.sistem-nervos.v1",
+    "id": "sn-082",
+    "requiresReverification": false,
+    "reason": "Numai spațiul dinaintea semnului procentual.",
+    "beforeHash": "f1b8a4538eb159afa1763cfc0bc329e60d508f1070163018280d2cc326444056",
+    "afterHash": "42946f71b0be831a4c402b084c7cf9232505f8230991a6a9f97b8c58d7e7cbc1"
+  },
+  {
+    "sourceChapter": "IV",
+    "sourceNumber": 89,
+    "storageKey": "bb.quiz.sistem-nervos.v1",
+    "id": "sn-089",
+    "requiresReverification": false,
+    "reason": "Numai spațiul dinaintea semnului procentual.",
+    "beforeHash": "ab4f035a112298d430136f3869ab95fcdc79f03b71be57050a7adcb822dd20b9",
+    "afterHash": "e5e514fada90ad25a21f7c1b3323568440ade5baeac8d7d5fcb1cc74288b5429"
+  },
+  {
+    "sourceChapter": "IV",
+    "sourceNumber": 98,
+    "storageKey": "bb.quiz.sistem-nervos.v1",
+    "id": "sn-098",
+    "requiresReverification": false,
+    "reason": "Virgula tipărită nu modifică afirmația despre reflex.",
+    "beforeHash": "cebf41484cb3aa265dc2f2a239afa9431fffde10fe1d44d09f8be20bc9f689d2",
+    "afterHash": "797a04a42d6d80d34915b129fb49b686d97641c31d6adb875e0ccfd3e038747d"
+  },
+  {
+    "sourceChapter": "V",
+    "sourceNumber": 3,
+    "storageKey": "bb.quiz.organe-simt.v1",
+    "id": "os-003",
+    "requiresReverification": true,
+    "reason": "Toate straturile pielii înlocuiește toată pielea și precizează distribuția histologică afirmată de distractor.",
+    "beforeHash": "b8b2d3586e4338cd6b0120d3e738246873d5bd87c534c14a0c5052ceca26d330",
+    "afterHash": "c7568503fa99a137b3f9b1ec47e091e6cab20ba2f41967bb7ec58cecc2120dbd"
+  },
+  {
+    "sourceChapter": "V",
+    "sourceNumber": 9,
+    "storageKey": "bb.quiz.organe-simt.v1",
+    "id": "os-009",
+    "requiresReverification": false,
+    "reason": "Punct final, fără modificarea sensului.",
+    "beforeHash": "8b2242cfa82f8b5b80900c41d307980ab65daf0f3d5cac8b76eb6becc1128f54",
+    "afterHash": "82bf8e38896a95d8936546040ce8ae8617f8759bf701c66ce3c09b7f094970f9"
+  },
+  {
+    "sourceChapter": "V",
+    "sourceNumber": 27,
+    "storageKey": "bb.quiz.organe-simt.v1",
+    "id": "os-027",
+    "requiresReverification": true,
+    "reason": "Cerebelare înlocuiește cerebrale și schimbă structura anatomică afirmată.",
+    "beforeHash": "bb6f2348847896b5dfc0708358486dcb90b969529dc52de6d65df109793174a0",
+    "afterHash": "6d99eda44c857b72775a393c988898785138c153872f5b6cbd810395813c2872"
+  },
+  {
+    "sourceChapter": "V",
+    "sourceNumber": 41,
+    "storageKey": "bb.quiz.organe-simt.v1",
+    "id": "os-041",
+    "requiresReverification": false,
+    "reason": "Articolul hotărât receptorii păstrează exact afirmația.",
+    "beforeHash": "452cb45dd91ec965e5eeadd4ce2df13edca4cab8d9894e6386920e4ece98dd4b",
+    "afterHash": "8f246889489d3c9d0a3f4e368242d39660e88b5207ffc9d4bae6ae5169d4f057"
+  },
+  {
+    "sourceChapter": "VIII",
+    "sourceNumber": 87,
+    "storageKey": "bb.quiz.sistemul-limfatic.v1",
+    "id": "lim-087",
+    "requiresReverification": false,
+    "reason": "Restaurarea verbului tipărit reprezintă în loc de prezintă păstrează ideea de rezervor limfocitar și caracterul funcțional al afirmației.",
+    "beforeHash": "14e3dede766f460c56e9bc883ca249b84c9ff958a84143e7d12e02f8ddac3e7d",
+    "afterHash": "d2428b6dec72e26a1b076f777764adb0e6105cb4a8a6602c260d409e58686d7b"
+  },
+  {
+    "sourceChapter": "VIII",
+    "sourceNumber": 137,
+    "storageKey": "bb.quiz.sistemul-limfatic.v1",
+    "id": "lim-137",
+    "requiresReverification": false,
+    "reason": "Produse de catabolism și produși de catabolism sunt sinonime în context; se restabilește forma exactă tipărită.",
+    "beforeHash": "564cfe2f889693700e70f80ec2098df196c76cd6bce8ac38a3036b0bd5690ab0",
+    "afterHash": "d159ad590f56db707bc7a1992f9f6544c71a93e59046a0dcddf29d1785724852"
+  },
+  {
+    "sourceChapter": "VIII",
+    "sourceNumber": 138,
+    "storageKey": "bb.quiz.sistemul-cardiovascular.v1",
+    "id": "cv-138",
+    "requiresReverification": false,
+    "reason": "Se păstrează acordul greșit tipărit superior; vena și relația laterală din distractor sunt aceleași.",
+    "beforeHash": "b7998cedcf5a0e6e5f0a307dd8e2fa126168ea5710bfaa51e0d4057863a7a39e",
+    "afterHash": "98cb8515492eecae4dad59d5b161dabb1ce0cd0e6a60b8140e82fcca3af09e56"
+  },
+  {
+    "sourceChapter": "XI",
+    "sourceNumber": 3,
+    "storageKey": "bb.quiz.sistemul-urinar.v1",
+    "id": "ur-003",
+    "requiresReverification": false,
+    "reason": "Comparația cu alte capilare ale organismului păstrează același domeniu și sens.",
+    "beforeHash": "c360216875436dd2d8e5630fd851e8ddc34e15c31fc15211031273308e08c497",
+    "afterHash": "f2c0c807926fe8f9c1435c659c42f9bf059646dec6cd2f122067fc9fb898e680"
+  },
+  {
+    "sourceChapter": "XI",
+    "sourceNumber": 5,
+    "storageKey": "bb.quiz.sistemul-urinar.v1",
+    "id": "ur-005",
+    "requiresReverification": false,
+    "reason": "Restaurată grafia tipărită crează, fără schimbarea mecanismului.",
+    "beforeHash": "39d8cab740b90df49d8cd31b5deb31afdfb2019ce9d5cc1a4ef0a4841a4c1ef2",
+    "afterHash": "f29276e0e32921a9a61435330aa39830fe2ba03e8bf29bf73ad8eae29f8d0c13"
+  },
+  {
+    "sourceChapter": "XI",
+    "sourceNumber": 8,
+    "storageKey": "bb.quiz.sistemul-urinar.v1",
+    "id": "ur-008",
+    "requiresReverification": true,
+    "reason": "Înlocuită parafraza generică despre recirculare cu traseul concret interstițiu–ansă Henle cerut în sursă.",
+    "beforeHash": "0a69d295172282564789e1065e5f2d69707b3e9d55f34110957792e0f474658b",
+    "afterHash": "64c89d4deb3a51ce54ae5addf768e916d8f0e443007c95a3f80bd66161875d89"
+  },
+  {
+    "sourceChapter": "XI",
+    "sourceNumber": 9,
+    "storageKey": "bb.quiz.sistemul-urinar.v1",
+    "id": "ur-009",
+    "requiresReverification": false,
+    "reason": "Schimbată numai capitalizarea cuvântului false.",
+    "beforeHash": "db74a9d7ce741a3e7ceb954fb78284c106ec9e82a5d1c84b3660e184c074ce44",
+    "afterHash": "2da1626af9fdc4367074b613553e4f0c58237d7db69589abeee22d88d3db3062"
+  },
+  {
+    "sourceChapter": "XI",
+    "sourceNumber": 11,
+    "storageKey": "bb.quiz.sistemul-urinar.v1",
+    "id": "ur-011",
+    "requiresReverification": false,
+    "reason": "Restaurată eroarea gramaticală tipărită; relația capsulă–rinichi rămâne aceeași.",
+    "beforeHash": "29c09ca1f1ad105467309fe8238b99d615371f0698822b94f4c9d103155d00fc",
+    "afterHash": "234fc227d7a775950f153108f07e7c20fa4837cf850948d407855859da0dcebb"
+  },
+  {
+    "sourceChapter": "XI",
+    "sourceNumber": 19,
+    "storageKey": "bb.quiz.sistemul-urinar.v1",
+    "id": "ur-019",
+    "requiresReverification": false,
+    "reason": "Schimbată numai capitalizarea cuvântului pasiv.",
+    "beforeHash": "42b0fa9ed1083f1438963eab7e12824f852694501efdd9a617fb9bec54de2bdc",
+    "afterHash": "893bca0b04902b37da93b93a38652f695e0e48f6f29319f78781d2cd3978e734"
+  },
+  {
+    "sourceChapter": "XI",
+    "sourceNumber": 20,
+    "storageKey": "bb.quiz.sistemul-urinar.v1",
+    "id": "ur-020",
+    "requiresReverification": true,
+    "reason": "Restaurată limitarea transportului transmembranar activ la procesele de reabsorbție și secreție tubulară.",
+    "beforeHash": "960e10f773a0a673bf5a488486f3f7fbfd431d50e27846df9bceeb0cf7935fb0",
+    "afterHash": "ffbfee97386e92111882ea7f950a3d3e3ea34f16046c647ec578f1c0235dc4ac"
+  },
+  {
+    "sourceChapter": "XI",
+    "sourceNumber": 24,
+    "storageKey": "bb.quiz.sistemul-urinar.v1",
+    "id": "ur-024",
+    "requiresReverification": true,
+    "reason": "Restaurată varianta falsă din scan: două uretre în locul celor două uretere din vechea transcriere.",
+    "beforeHash": "cc0bbec72a15db67f61e557ae79cfcd6115e11cca6320b9e50404bd4c8a4680b",
+    "afterHash": "9c3afd0095260ae5bdb66d51b6db42388d90ec1a38f06608cf704751e0acdcf0"
+  },
+  {
+    "sourceChapter": "XI",
+    "sourceNumber": 29,
+    "storageKey": "bb.quiz.sistemul-urinar.v1",
+    "id": "ur-029",
+    "requiresReverification": false,
+    "reason": "Capitalizare și diacritică la contorți, fără schimbarea procesului cerut.",
+    "beforeHash": "f0de91f5d910423ed912903e80f48d8ba59f45bad20ef64aad4aeb2a44c793ee",
+    "afterHash": "6f2a9a26542b8ae9417cfd51a41d093cf862c6ce2743a3223564c807dc036588"
+  },
+  {
+    "sourceChapter": "XI",
+    "sourceNumber": 31,
+    "storageKey": "bb.quiz.sistemul-urinar.v1",
+    "id": "ur-031",
+    "requiresReverification": false,
+    "reason": "Restaurată diacritica la contorți.",
+    "beforeHash": "08300341ba1b44914fb28df547cc6ad99b58d7a00c5e31c2de1a673308761c53",
+    "afterHash": "02def1001cc963c8913826945b71504c77f374ab9ee135e470cb574c7e5be60d"
+  },
+  {
+    "sourceChapter": "XI",
+    "sourceNumber": 43,
+    "storageKey": "bb.quiz.sistemul-urinar.v1",
+    "id": "ur-043",
+    "requiresReverification": false,
+    "reason": "Formularea este evacuată/se evacuează păstrează aceeași micțiune.",
+    "beforeHash": "c9038157f3073fe2a3adb3fbc973926319945fef99967293a8e609476004271e",
+    "afterHash": "31bea47b6d31442a673f13f3ff206c1a2fb10587c1226498f19cbce8cef3ea87"
+  },
+  {
+    "sourceChapter": "XI",
+    "sourceNumber": 48,
+    "storageKey": "bb.quiz.sistemul-urinar.v1",
+    "id": "ur-048",
+    "requiresReverification": false,
+    "reason": "Restaurate diacriticele la contorți în A și D.",
+    "beforeHash": "b0f59c316cae5bedac2f4aff9ff725b46aafc4687db3453d10ce44f2f9f167ae",
+    "afterHash": "96de71bd7d5a62c091502f24d685fae25e50fa9e3677f188eb7a8de8ec67b9d2"
+  },
+  {
+    "sourceChapter": "XI",
+    "sourceNumber": 52,
+    "storageKey": "bb.quiz.sistemul-urinar.v1",
+    "id": "ur-052",
+    "requiresReverification": false,
+    "reason": "Spațiul din 75 % păstrează valoarea.",
+    "beforeHash": "88cb07be899cd92aea2ac9b8ba1429cf80515397311490bdfad30b50b6e955e3",
+    "afterHash": "48f074ab054ac7c573a113bd7cd71379791326f115e98c081a4f73b7b439b74d"
+  },
+  {
+    "sourceChapter": "XI",
+    "sourceNumber": 55,
+    "storageKey": "bb.quiz.sistemul-urinar.v1",
+    "id": "ur-055",
+    "requiresReverification": true,
+    "reason": "Restaurate segmentul tubii distali și mecanismul osmoză în locul colectorului cu ADH introdus în vechea variantă.",
+    "beforeHash": "5d7e5151504b0da5566fe453bcd8d3d1e9f473b462fa5175a486b284f642f0f1",
+    "afterHash": "dec08d0b55ff13a61af122cf8f137efe7baf3e565ee4daff438c95ecf7d80aa4"
+  },
+  {
+    "sourceChapter": "XI",
+    "sourceNumber": 58,
+    "storageKey": "bb.quiz.sistemul-urinar.v1",
+    "id": "ur-058",
+    "requiresReverification": true,
+    "reason": "Restaurat traseul papile–calice mici în locul unei alte afirmații despre calice mari–pelvis.",
+    "beforeHash": "888842d60b785ed3ff3164e4ccadb882ff7884ace4f9002bd4af0d16f4665b90",
+    "afterHash": "fcfe3f4a731981028ffc214a96fc3a79a1943d1305f086a0c167d8de1433252a"
+  },
+  {
+    "sourceChapter": "XI",
+    "sourceNumber": 66,
+    "storageKey": "bb.quiz.sistemul-urinar.v1",
+    "id": "ur-066",
+    "requiresReverification": false,
+    "reason": "Restaurată diacritica la contorți.",
+    "beforeHash": "62d91f0f2c4f347a06292ffe6f28adda326b12f067ecee36431106828f6b3979",
+    "afterHash": "f53b8262767a22c50b265bdde8ebde0858721346d567a3c0e5dc5e57ce537f01"
+  },
+  {
+    "sourceChapter": "XI",
+    "sourceNumber": 68,
+    "storageKey": "bb.quiz.sistemul-urinar.v1",
+    "id": "ur-068",
+    "requiresReverification": false,
+    "reason": "Restaurată diacritica la produși.",
+    "beforeHash": "24bb941ed5150775efed720b9faaa8450c0beb14d35cd4922ffa56600f780db0",
+    "afterHash": "86fdcca2e3abc3bc2f0f2f4adb1aff4fd77a0a31e9a32f5b02c16d0793a4a13b"
+  },
+  {
+    "sourceChapter": "XI",
+    "sourceNumber": 70,
+    "storageKey": "bb.quiz.sistemul-urinar.v1",
+    "id": "ur-070",
+    "requiresReverification": false,
+    "reason": "Restaurată diacritica la poziționată.",
+    "beforeHash": "f049debde9fbcaa718d30ba0f11012b8eb874942cf50dfb92bdc78383df2465b",
+    "afterHash": "236bcf7c5a5230d0e8ff0d830ba7e07c58f5359564c359f3cfbb56706fbdc22e"
+  },
+  {
+    "sourceChapter": "XI",
+    "sourceNumber": 75,
+    "storageKey": "bb.quiz.sistemul-urinar.v1",
+    "id": "ur-075",
+    "requiresReverification": false,
+    "reason": "Reformularea mediei pH și acordul pot să apară păstrează valorile și afirmațiile.",
+    "beforeHash": "cc81b723442199b96a3c32c5e05f4fc8bed77514f1a02c80930289d3d040337a",
+    "afterHash": "60d36e59dc914a2420e75ef41c4ad4594460f4f2773cde4c857a9039c5f08f1a"
+  },
+  {
+    "sourceChapter": "XI",
+    "sourceNumber": 78,
+    "storageKey": "bb.quiz.sistemul-urinar.v1",
+    "id": "ur-078",
+    "requiresReverification": false,
+    "reason": "Restaurată diacritica la produși.",
+    "beforeHash": "886afcf903264ee139d38501e7be7f707014347786b1bdf6bbca9443969672be",
+    "afterHash": "5822dda4815e71cb08f0e9a5b6130da020decc2e3c65e862e68bff03905f5746"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 8,
+    "storageKey": "bb.quiz.reproducator-masculin.v1",
+    "id": "rm-008",
+    "requiresReverification": true,
+    "reason": "Restaurată cerința afirmativă despre locul spermatogenezei în locul cerinței negative din vechiul set.",
+    "beforeHash": "19d2aa4b124b0382ea20064d1c0e82728cc8a0de78047c5a865045e74e57cae1",
+    "afterHash": "e968f3f8bdf244051519630454abfd117948bc48445045fb350fa1054ca51757"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 14,
+    "storageKey": "bb.quiz.reproducator-masculin.v1",
+    "id": "rm-014",
+    "requiresReverification": false,
+    "reason": "Articularea piesă/piesa păstrează același segment.",
+    "beforeHash": "3b953e6a0c08bc3cddb57683362d8dec21d020e744728d1f9eaece7298ac6bd9",
+    "afterHash": "bfcddef019fccee02df4780828f4a383bfa0f7a147506e6efed202856f0a9f22"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 17,
+    "storageKey": "bb.quiz.reproducator-masculin.v1",
+    "id": "rm-017",
+    "requiresReverification": false,
+    "reason": "Adăugat următoarele și spațiul procentual, fără schimbarea afirmațiilor.",
+    "beforeHash": "4d4e020d26b2e085d1c473b22dce13e28b3768effbc911e30c26d7dfe0e029e4",
+    "afterHash": "3ed6d65eee57a3febef9a8d731a8d48afcfbaeb242ffa9b08896d33f4de287f6"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 18,
+    "storageKey": "bb.quiz.reproducator-masculin.v1",
+    "id": "rm-018",
+    "requiresReverification": false,
+    "reason": "Pluralul secrețiile păstrează aceeași listă de componente.",
+    "beforeHash": "4f514a89172f5eaf74dc220f45d57ffb0327c73c8264f84a156769fcdfc1937d",
+    "afterHash": "6bb343d3210125f0353d6d8aa786d82989ee296421a7dd66c6667bf449625f8e"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 23,
+    "storageKey": "bb.quiz.reproducator-masculin.v1",
+    "id": "rm-023",
+    "requiresReverification": false,
+    "reason": "Restaurate erorile tipărite e îmbunătățește și mobile; mecanismul și sediul rămân aceleași.",
+    "beforeHash": "dcc994c6bce901df478ab9988f2288a524b57e3ab0a6fadd586db582eb3366ec",
+    "afterHash": "d711d27851836ccb09b7ed94c87122007cbc3571f43a2fd295069daf1b4a6554"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 25,
+    "storageKey": "bb.quiz.reproducator-masculin.v1",
+    "id": "rm-025",
+    "requiresReverification": false,
+    "reason": "Corectată transcrierea spermatozoizi.",
+    "beforeHash": "380a4a0d33f0928aa39c1e61bd8ea54642dd63207e3c911fe84ff085b2d2f37f",
+    "afterHash": "b400222d336f2b42d48ed0360276b8c464f7b5884081288f1178648c9a6db563"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 26,
+    "storageKey": "bb.quiz.reproducator-masculin.v1",
+    "id": "rm-026",
+    "requiresReverification": false,
+    "reason": "Restabilit următoarele și grafia străbătut, fără schimbarea sensului.",
+    "beforeHash": "dcf89d389d01ab0cfae9d846571da96be54feb3ec66f92c32c9aa4f3af7d888d",
+    "afterHash": "34bd200d8779c0c39c7504f57597accefb7e86447073912b36496653cdba23a3"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 29,
+    "storageKey": "bb.quiz.reproducator-masculin.v1",
+    "id": "rm-029",
+    "requiresReverification": false,
+    "reason": "Articulare și grafie testiculul/albuginee, aceeași structură.",
+    "beforeHash": "bba10bb61c2e721ee9b2db196271caf468e463d4cf8ffe7b1124c5d48aa0f1ec",
+    "afterHash": "31c38c73d95d3851df8d4f2e81782a2ac21400750ddb86e32ae51d3e52a8872f"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 30,
+    "storageKey": "bb.quiz.reproducator-masculin.v1",
+    "id": "rm-030",
+    "requiresReverification": false,
+    "reason": "Corectată grafia multistratificați.",
+    "beforeHash": "174b8e599a10803816e2050b2b499996c7766d57e72ab51b1fd7894418abf55e",
+    "afterHash": "6e98f6a074cabe9cfaea69e188e10e55d05e33c8abcef0c3db7fbbe1bdf51a16"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 32,
+    "storageKey": "bb.quiz.reproducator-masculin.v1",
+    "id": "rm-032",
+    "requiresReverification": false,
+    "reason": "Articularea spermatogoniile păstrează aceeași transformare falsă.",
+    "beforeHash": "2adb58b608824157ebd7f0db2cbad593ab00dad078bcd6f35991a1cb5cff8ecb",
+    "afterHash": "b9ccf184b2d883d150dff6c96b9681f781505aaf085ba6db7d6c9db76a22ff42"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 36,
+    "storageKey": "bb.quiz.reproducator-masculin.v1",
+    "id": "rm-036",
+    "requiresReverification": false,
+    "reason": "Pluralul secrețiile păstrează glandele și sediile enumerate.",
+    "beforeHash": "92d6565473fe95f15594f3400321619f10f82188a07806e30acf1445f54b1940",
+    "afterHash": "638b4eca57f2f2cfb9f63492235e9cdfdbb8b17c43f8ec3c1dcd07ae44204c7f"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 37,
+    "storageKey": "bb.quiz.reproducator-masculin.v1",
+    "id": "rm-037",
+    "requiresReverification": false,
+    "reason": "Spațiul procentual păstrează valoarea60.",
+    "beforeHash": "1b1105921c21d6e51761abbab972b002ff734bfb9ec5d528f81352b3b66ecdc9",
+    "afterHash": "b671d11a50d6ac147b5d36ff3485370f3031160878fdba9a0a3cd104fceffeaa"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 41,
+    "storageKey": "bb.quiz.reproducator-masculin.v1",
+    "id": "rm-041",
+    "requiresReverification": false,
+    "reason": "Articularea tubi/tubii păstrează aceleași structuri.",
+    "beforeHash": "0de2089c61c4bb24d3830fe325c409975628238050a49c64497983ee4a09ecbe",
+    "afterHash": "21d332c40b807380f2ad1d794d49df0a02202d4ad94ea13cae86029dcce66619"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 46,
+    "storageKey": "bb.quiz.reproducator-masculin.v1",
+    "id": "rm-046",
+    "requiresReverification": false,
+    "reason": "Spațiu procentual și restaurarea grafiei negative, fără schimbarea mecanismului.",
+    "beforeHash": "11a9df41b60f7f7a12469b657994d4b24fe382266d9d1c2499d2a3e83c6f0357",
+    "afterHash": "3cde55b00968843c43b445902f1af2430c8edeec468730dede1c9db26bab5356"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 53,
+    "storageKey": "bb.quiz.reproducator-masculin.v1",
+    "id": "rm-053",
+    "requiresReverification": false,
+    "reason": "Articularea nucleul păstrează numărul46.",
+    "beforeHash": "6a266bb3b62fce869ddf4df841c9db13b460d86156a1be2183c9496700bd5681",
+    "afterHash": "f7645ce570156ac3b419bde3dddde1c92c2341556bc90359278cbb43165145e3"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 54,
+    "storageKey": "bb.quiz.reproducator-masculin.v1",
+    "id": "rm-054",
+    "requiresReverification": false,
+    "reason": "Pluralul secrețiile păstrează aceeași afirmație.",
+    "beforeHash": "5de4e7836ce7bf26ff967639a261187cf28902235dd7f41b3d5957434e1f1b94",
+    "afterHash": "79a065ae0b37d9b9c6f0f733d3f06ccc25c37682cffa3fed896d40362ece1123"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 60,
+    "storageKey": "bb.quiz.reproducator-masculin.v1",
+    "id": "rm-060",
+    "requiresReverification": false,
+    "reason": "Pluralul secrețiile și grafia parauretrale păstrează lista.",
+    "beforeHash": "d5d5ef71535452f77dcbc4a789fb68403200deb91c60bab6d5a11434ff8ac0cb",
+    "afterHash": "b973053453076b89b8ec72c545a97d156092499d0709291829a2a01d6b8cd01f"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 62,
+    "storageKey": "bb.quiz.reproducator-masculin.v1",
+    "id": "rm-062",
+    "requiresReverification": true,
+    "reason": "Restaurat referentul acesta=ureterul: ureterul intră în vezică, nu ductul deferent.",
+    "beforeHash": "2505219b0243d0c2eae07142e1a458bdc656eb84ad74f614b97ee383399039b3",
+    "afterHash": "0db4aea1136b1d11f3d229cddb36608a63aca18593b94725d1452539d00c4ebf"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 67,
+    "storageKey": "bb.quiz.reproducator-masculin.v1",
+    "id": "rm-067",
+    "requiresReverification": false,
+    "reason": "Corectată grafia albuginee.",
+    "beforeHash": "495c2493d7abfbba6baeacf88ccd4726c84817847a81c5dc2a95645dc62bcc4a",
+    "afterHash": "a064bf52661d4eec49ba13296bd8785baf363f6bc1efa73492941ee9e41380e5"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 82,
+    "storageKey": "bb.quiz.reproducator-feminin.v1",
+    "id": "rf-014",
+    "requiresReverification": false,
+    "reason": "Virgulă și eroarea gramaticală tipărită corpului, fără schimbarea sensului.",
+    "beforeHash": "121d75ed30ccb05c7842bb9d7d8552b71ee5351399b7e713f16c4be2de96b461",
+    "afterHash": "422da525ea91175c4b43099afbeee4f561e30e4f21759f26c4cae6519372414f"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 86,
+    "storageKey": "bb.quiz.reproducator-feminin.v1",
+    "id": "rf-018",
+    "requiresReverification": true,
+    "reason": "Variantele D/E au fost schimbate cu cele ale întrebării90; restaurate afirmațiile proprii fiecărui număr.",
+    "beforeHash": "9ec1bde43b72a4a0ce76eed548c0361d3b37ab1f90a8473981965037363af94f",
+    "afterHash": "82fa00395f0614784af116481a92b0394034b9d6cb1af4607fddde9c085b500f"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 90,
+    "storageKey": "bb.quiz.reproducator-feminin.v1",
+    "id": "rf-022",
+    "requiresReverification": true,
+    "reason": "Variantele D/E au fost schimbate cu cele ale întrebării86; restaurate afirmațiile proprii fiecărui număr.",
+    "beforeHash": "3c90dc358f863319c76c6fe60932252da5a5a6e73c8936a414177ccf7630e965",
+    "afterHash": "814bbe5de368c62daf869f7d46c6d24e77a9eb424a1ee8ba1e6b9f3b4c4cd9f5"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 106,
+    "storageKey": "bb.quiz.reproducator-feminin.v1",
+    "id": "rf-038",
+    "requiresReverification": true,
+    "reason": "Eliminată localizarea în ovar adăugată variantei; oogeneza include finalizarea meiozei II la fecundație, deci restricția poate schimba interpretarea.",
+    "beforeHash": "eb7152dd781176501a5ebc86bb09e3c6e5e15ee30de3dc12192c11796e0fe3fb",
+    "afterHash": "f8e733ac2910b1276dce051bdbed113c6c2fa3b3d7bdae1b80cbab79a18beba3"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 108,
+    "storageKey": "bb.quiz.reproducator-feminin.v1",
+    "id": "rf-040",
+    "requiresReverification": true,
+    "reason": "Restaurat la nivelul ovarului, care schimbă adevărul variantei A despre originea FSH/LH.",
+    "beforeHash": "1cc237f2fb85ef08050aab66a9539801fb72eaaca5ba71b523cd361ec635f31b",
+    "afterHash": "381ec631ca4e0a748609c81a39ec6d285ed2e3d8e450174fc42f1b147dca9aaa"
+  },
+  {
+    "sourceChapter": "XII",
+    "sourceNumber": 109,
+    "storageKey": "bb.quiz.reproducator-feminin.v1",
+    "id": "rf-041",
+    "requiresReverification": false,
+    "reason": "Articularea ovulul păstrează zigotul cu46 de cromozomi.",
+    "beforeHash": "4d409e88dc329c387b7fa43863bb9fad797c2594f15cfd524b22a1cb0533a1bb",
+    "afterHash": "64e7fb136480d8c89087c231e678391b8ab9714819a41969e142aad27b1867eb"
+  }
+]

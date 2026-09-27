@@ -44,7 +44,7 @@ try{
     const {page,context,errors}=await newPage({entry:'statistici.html?capitol=12'});
     const cloud=await page.evaluate(({A,time})=>{
       const q=BB_QUIZ_INDEX.find(q=>q.chapterNum===12);
-      const questions=Object.fromEntries(q.questions.slice(0,85).map((item,i)=>[item.id,{verified:true,correct:i<57,selected:i<57?item.correct:[]} ]));
+      const questions=Object.fromEntries(q.questions.slice(0,85).map((item,i)=>[item.id,{verified:true,correct:i<57,selected:i<57?item.correct:[],contentRevision:item.contentRevision||0} ]));
       const row={user_id:A,quiz_key:q.storageKey,version:1,state:{version:1,questions},updated_at:time};
       __mock.seed('quiz_states',[row]);return row;
     },{A,time});
@@ -52,7 +52,7 @@ try{
     await page.evaluate(async()=>{
       const q=BB_QUIZ_INDEX.find(q=>q.chapterNum===12);
       // 22 correct + 13 wrong are the only dated results available here.
-      for(const item of [...q.questions.slice(0,22),...q.questions.slice(57,70)])await BBQuizAnalytics.recordAttempt({storageKey:q.storageKey,questionId:item.id,attemptId:'dated-'+item.id,correct:q.questions.indexOf(item)<22,selected:q.questions.indexOf(item)<22?item.correct:[]});
+      for(const item of [...q.questions.slice(0,22),...q.questions.slice(57,70)])await BBQuizAnalytics.recordAttempt({storageKey:q.storageKey,questionId:item.id,contentRevision:item.contentRevision||0,attemptId:'dated-'+item.id,correct:q.questions.indexOf(item)<22,selected:q.questions.indexOf(item)<22?item.correct:[]});
     });
     await page.waitForFunction(()=>document.body.dataset.analyticsReady==='true');
     assert.equal(await page.locator('[data-metric="attempts"]').innerText(),'85','Default report must include all verified cloud answers');
@@ -91,7 +91,7 @@ try{
     await second.page.evaluate(()=>__mock.offline(false));await synced(second.page);
     await second.page.evaluate(async()=>{
       const q=BB_QUIZ_INDEX.find(q=>q.chapterNum===12),row=__mock.rows('quiz_states')[0],next=q.questions[85];
-      row.state.questions[next.id]={verified:true,correct:true,selected:next.correct};
+      row.state.questions[next.id]={verified:true,correct:true,selected:next.correct,contentRevision:next.contentRevision||0};
       __mock.seed('quiz_states',[row]);await BBCloudSync.retry();
     });
     await second.page.waitForFunction(()=>document.querySelector('[data-metric="attempts"]')?.textContent==='86');

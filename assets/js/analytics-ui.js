@@ -54,7 +54,7 @@
 
   function renderCatalog(data, lifetime) {
     const groups = new Map();
-    CHAPTERS.forEach(chapter => {
+    CHAPTERS.concat((BIO_SITE.quizCollections || []).filter(item => item.done)).forEach(chapter => {
       if (!groups.has(chapter.cat)) groups.set(chapter.cat, []);
       groups.get(chapter.cat).push(chapter);
     });
@@ -63,7 +63,7 @@
       groupNumber++;
       const rows = chapters.map(chapter => {
         const quiz = lifetime.quizzes.find(row => row.chapterNum === chapter.num);
-        const content = `<span class="lab-item-num">${String(chapter.num).padStart(2,'0')}</span><span class="testing-chapter-name"><span class="lab-item-title">${escape(chapter.name)}</span><span class="lab-item-tags">${quiz ? number(quiz.questions.length) + ' de grile' : 'Test în pregătire'}</span></span>`;
+        const content = `<span class="lab-item-num">${escape(chapter.shortLabel || String(chapter.num).padStart(2,'0'))}</span><span class="testing-chapter-name"><span class="lab-item-title">${escape(chapter.name)}</span><span class="lab-item-tags">${quiz ? number(quiz.questions.length) + ' de grile' : 'Test în pregătire'}</span></span>`;
         if (!quiz) return `<div class="testing-chapter-row is-unavailable"><button type="button" class="lab-item lab-item-soon" data-chapter="${chapter.num}" disabled>${content}<span class="testing-start">În curând</span></button></div>`;
         const practice = quiz.mistakeIds.length ? `<a class="testing-practice-link" id="testing-practice-${chapter.num}" href="${escape(quiz.url)}?mod=greseli" aria-label="Exersează greșelile: ${escape(chapter.name)} (${quiz.mistakeIds.length})">Exersează greșelile <span>${number(quiz.mistakeIds.length)}</span></a>` : '';
         const unstarted = !quiz.summary.solved && !quiz.current.verified;
@@ -79,7 +79,7 @@
     const completed = lifetime.summary.distinct;
     put('testing-preview-summary', `<div class="testing-progress-count"><strong>${number(completed)}</strong><span>din ${number(totalQuestions)} grile diferite parcurse</span></div><progress class="analytics-progress" value="${completed}" max="${totalQuestions || 1}" aria-label="${number(completed)} din ${number(totalQuestions)} grile diferite parcurse"></progress>`);
     chart('testing-activity', data.daily, 'activity', true);
-    byId('lab-testing-count').textContent = index.length + ' capitole disponibile';
+    byId('lab-testing-count').textContent = index.length + ' seturi disponibile';
   }
 
   let lifetimeReport, mistakePage = 0, allTopics = false, lastOwner = null, clearOwner = null;
@@ -153,7 +153,7 @@
     const title = run?.number ? runTitle(run) : single ? 'Parcurgerea curentă' : 'Parcurgerile curente';
     const after = hasCorrections ? pct(correction.accuracy) : verified === total && !wrong && total ? '100%' : '—';
     const afterNote = hasCorrections ? `${number(correction.roundCount)} ${correction.roundCount === 1 ? 'rundă' : 'runde'} de corectare · ${number(correction.remaining)} ${correction.remaining === 1 ? 'greșeală rămasă' : 'greșeli rămase'}` : verified === total && !wrong && total ? 'Toate corecte din prima' : 'După testul complet, corectezi greșelile.';
-    put('analytics-metrics', `<div class="statistics-frame"><div class="statistics-hero"><div class="statistics-hero-copy"><span class="statistics-tag">${single ? 'Capitolul ' + quiz.chapterNum : 'Privire de ansamblu'}</span><h2>${title}</h2><p class="statistics-hero-name">${single ? escape(quiz.name) : 'Câte un capitol, până la toate corecte.'}</p><div class="statistics-progress-copy"><strong data-current-progress>${number(verified)} <span>din ${number(total)} grile</span></strong><span>${total ? number(Math.round(verified / total * 100)) : '0'}% parcurse</span></div><progress class="statistics-progress" value="${verified}" max="${total || 1}" aria-label="${number(verified)} din ${number(total)} grile verificate"></progress></div><div class="statistics-scores"><div class="statistics-initial"><span>${verified === total ? 'Rezultatul inițial' : 'Rezultatul inițial · în curs'}</span><strong data-current-initial>${pct(initialAccuracy)}</strong><p>${number(correct)} corecte <span>· ${number(wrong)} greșite</span></p></div><div class="statistics-corrected"><span>După corectare</span><strong data-current-corrected>${single ? after : '—'}</strong><p>${single ? afterNote : 'Alege un capitol pentru detalii.'}</p></div></div><div id="analytics-next-step" class="statistics-next-step"></div></div></div>`);
+    put('analytics-metrics', `<div class="statistics-frame"><div class="statistics-hero"><div class="statistics-hero-copy"><span class="statistics-tag">${single ? (quiz.collection ? 'Colecție' : 'Capitolul ' + quiz.chapterNum) : 'Privire de ansamblu'}</span><h2>${title}</h2><p class="statistics-hero-name">${single ? escape(quiz.name) : 'Câte un capitol, până la toate corecte.'}</p><div class="statistics-progress-copy"><strong data-current-progress>${number(verified)} <span>din ${number(total)} grile</span></strong><span>${total ? number(Math.round(verified / total * 100)) : '0'}% parcurse</span></div><progress class="statistics-progress" value="${verified}" max="${total || 1}" aria-label="${number(verified)} din ${number(total)} grile verificate"></progress></div><div class="statistics-scores"><div class="statistics-initial"><span>${verified === total ? 'Rezultatul inițial' : 'Rezultatul inițial · în curs'}</span><strong data-current-initial>${pct(initialAccuracy)}</strong><p>${number(correct)} corecte <span>· ${number(wrong)} greșite</span></p></div><div class="statistics-corrected"><span>După corectare</span><strong data-current-corrected>${single ? after : '—'}</strong><p>${single ? afterNote : 'Alege un capitol pentru detalii.'}</p></div></div><div id="analytics-next-step" class="statistics-next-step"></div></div></div>`);
     if (run?.correction?.canPractice) {
       put('analytics-next-step', `${primaryLink(correction.roundCount ? 'Continuă corectarea' : 'Corectează greșelile', practiceUrl(run), 'analytics-continue')}<button type="button" class="statistics-text-action" data-open-tab="greseli">Vezi greșelile</button>`);
     } else if (single && !run && total && verified === total && wrong) {
@@ -167,7 +167,7 @@
   function renderComparison() {
     const root = byId('analytics-comparison'); root.hidden = getFilters().chapterNum !== null;
     if (root.hidden) { put(root.id, ''); return; }
-    put(root.id, `<h2 class="statistics-list-heading">Capitolele tale</h2><div class="statistics-chapter-list">${lifetimeReport.quizzes.map(q => `<a class="statistics-chapter" href="statistici.html?capitol=${q.chapterNum}"><span class="statistics-chapter-number">${String(q.chapterNum).padStart(2,'0')}</span><span><strong>${escape(q.name)}</strong><small>${number(q.current.verified)} din ${number(q.current.total)} grile parcurse</small></span><span class="statistics-chapter-result">${q.current.verified ? pct(q.current.correct / q.current.verified * 100) : 'Neînceput'}<small>${q.current.verified ? 'inițial' : ''}</small></span>${arrow}</a>`).join('')}</div>`);
+    put(root.id, `<h2 class="statistics-list-heading">Capitolele tale</h2><div class="statistics-chapter-list">${lifetimeReport.quizzes.map(q => `<a class="statistics-chapter" href="statistici.html?capitol=${q.chapterNum}"><span class="statistics-chapter-number">${escape(q.shortLabel || String(q.chapterNum).padStart(2,'0'))}</span><span><strong>${escape(q.name)}</strong><small>${number(q.current.verified)} din ${number(q.current.total)} grile parcurse</small></span><span class="statistics-chapter-result">${q.current.verified ? pct(q.current.correct / q.current.verified * 100) : 'Neînceput'}<small>${q.current.verified ? 'inițial' : ''}</small></span>${arrow}</a>`).join('')}</div>`);
   }
   function currentMistakes() {
     const items = [];
@@ -196,7 +196,7 @@
     const filtered = chosen.filter(item => !selectedTopic || topicKey(item) === selectedTopic);
     mistakePage = Math.min(mistakePage, Math.max(0, Math.ceil(filtered.length / pageSize) - 1));
     byId('analytics-mistakes-context').textContent = reviewMode === 'resolved' ? 'Greșeli corectate în aceeași parcurgere.' : reviewMode === 'all' ? 'Rezultatul inițial rămâne păstrat.' : 'Din parcurgerea curentă, după corectări.';
-    put('analytics-mistakes', filtered.length ? `<ol class="statistics-mistake-list">${filtered.slice(mistakePage * pageSize, (mistakePage + 1) * pageSize).map(item => `<li><span class="statistics-question-number">${item.number}</span><div><strong>Grila ${item.number}</strong><span>${escape(item.topicLabel)}${getFilters().chapterNum === null ? ' · ' + escape(item.chapterName) : ''}</span></div><span class="statistics-result-tag ${item.resolved ? 'is-correct' : ''}">${item.resolved ? 'Corectată' : 'De corectat'}</span><a class="statistics-question-link" href="${escape(item.quizUrl)}#grila-${item.number}" aria-label="Revezi grila ${item.number}">${arrow}</a></li>`).join('')}</ol>` : `<div class="statistics-empty"><h3>${all.length ? 'Nicio grilă în această selecție.' : 'Nicio greșeală de afișat.'}</h3><p>${all.length ? 'Poți alege alt subiect sau alt filtru.' : 'Rezultatele apar pe măsură ce rezolvi capitolul. Corectarea începe după testul complet.'}</p></div>`);
+    put('analytics-mistakes', filtered.length ? `<ol class="statistics-mistake-list">${filtered.slice(mistakePage * pageSize, (mistakePage + 1) * pageSize).map(item => `<li><span class="statistics-question-number">${item.number}</span><div><strong>Grila ${item.number}</strong><span>${escape(item.topicLabel)}${getFilters().chapterNum === null ? ' · ' + escape(item.chapterName) : ''}</span></div><span class="statistics-result-tag ${item.resolved ? 'is-correct' : ''}">${item.resolved ? 'Corectată' : 'De corectat'}</span><a class="statistics-question-link" href="${escape(item.quizUrl)}#grila-${item.number}" aria-label="Revezi grila ${item.number}">${arrow}</a></li>`).join('')}</ol>` : `<div class="statistics-empty"><h3>${all.length ? 'Nicio grilă în această selecție.' : 'Nicio greșeală de afișat.'}</h3><p>${all.length ? 'Alege alt filtru pentru a vedea celelalte grile.' : 'Rezultatele apar pe măsură ce rezolvi capitolul. Corectarea începe după testul complet.'}</p></div>`);
     put('analytics-mistakes-pages', pagination(filtered.length, mistakePage, 'mistakes'));
   }
   function pagination(total, page, type) {
@@ -204,8 +204,9 @@
     return `<button type="button" class="analytics-text-button" data-${type}-step="-1" aria-label="Pagina anterioară ${type === 'history' ? 'a istoricului' : 'a greșelilor'}" ${page === 0 ? 'disabled' : ''}>Înapoi</button><span>${page + 1} / ${Math.ceil(total / pageSize)}</span><button type="button" class="analytics-text-button" data-${type}-step="1" aria-label="Pagina următoare ${type === 'history' ? 'a istoricului' : 'a greșelilor'}" ${(page + 1) * pageSize >= total ? 'disabled' : ''}>Înainte</button>`;
   }
   function questionChips(run, ids, label) {
-    const questions = new Map(index.find(q => q.chapterNum === run.chapterNum)?.questions.map(q => [q.id,q]) || []);
-    const chips = ids.map(id => { const q = questions.get(id); return q ? `<a href="${escape(run.quizUrl)}#grila-${q.number}" aria-label="${escape(label)}: grila ${q.number}">${q.number}</a>` : ''; });
+    const quiz = index.find(q => q.chapterNum === run.chapterNum);
+    const questions = new Map((quiz ? quiz.questions.concat(quiz.retiredQuestions || []) : []).map(q => [q.id,q]));
+    const chips = ids.map(id => { const q = questions.get(id); return q ? `<a href="${escape(q.replacementUrl || run.quizUrl + '#grila-' + q.number)}" aria-label="${escape(label)}: grila ${q.number}${q.retired ? ', mutată în setul corespunzător' : ''}">${q.number}${q.retired ? ' ↗' : ''}</a>` : ''; });
     return `<div class="statistics-question-chips">${chips.slice(0,10).join('')}</div>${chips.length > 10 ? `<details class="statistics-more-questions"><summary>Încă ${chips.length - 10} grile</summary><div class="statistics-question-chips">${chips.slice(10).join('')}</div></details>` : ''}`;
   }
   function runDetails(run) {
@@ -245,7 +246,7 @@
     const saved = report.savedResults.length;
     byId('analytics-saved-note').hidden = !saved;
     put('analytics-saved-note', saved ? `${number(saved)} grile au răspunsuri salvate fără dată. Sunt incluse în tot istoricul, fără puncte inventate în grafic.` : '');
-    byId('analytics-tracking-note').textContent = report.trackingSince ? 'Istoric local înregistrat din ' + longDate.format(new Date(report.trackingSince)) + '. Reluarea testului nu șterge rezultatele.' : 'Istoricul datat se păstrează în acest browser.';
+    byId('analytics-tracking-note').textContent = report.trackingSince ? 'Istoric în acest browser din ' + longDate.format(new Date(report.trackingSince)) + '. Reluarea testului nu șterge rezultatele.' : 'Istoricul rezultatelor se păstrează doar în acest browser.';
   }
   function renderVisibleCharts() {
     window.BBAnalyticsCharts.clear('analytics-accuracy'); window.BBAnalyticsCharts.clear('analytics-activity');

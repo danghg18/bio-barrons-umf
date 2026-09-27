@@ -209,6 +209,6 @@ td { padding: .5rem .85rem; border-bottom: 1px solid var(--border); }
 tr:nth-child(even) td { background: var(--bg-sunken); }
 
 ::selection { background: var(--primary-light); color: var(--fg-1); }
-input, textarea { caret-color: var(--primary); }
-html { scrollbar-color: var(--slate-400) var(--bg-page); }
+input, textarea { caret-color: var(--ui-ink); }
+html { scrollbar-color: var(--ui-muted) var(--ui-canvas); }
 button, input, select, textarea { font: inherit; }

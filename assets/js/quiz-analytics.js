@@ -48,6 +48,16 @@
     return selected.join('') === question.correct.join('');
   }
 
+  function currentRevision(question, answer) {
+    return (question.contentRevision || 0) === (answer.contentRevision || 0);
+  }
+
+  function historicalQuestions(quiz) { return quiz.questions.concat(quiz.retiredQuestions || []); }
+  function findQuestion(quiz, id) { return historicalQuestions(quiz).find(function (q) { return q.id === id; }); }
+  function runQuestionIds(quiz, run) {
+    return run.questionIds || (run.storageKey && quiz.previousQuestionIds) || quiz.questions.map(function (q) { return q.id; });
+  }
+
   function baseline(quiz) {
     var saved = current(quiz);
     return { key: quiz.storageKey, since: new Date().toISOString(), first: {}, unknown: quiz.questions.filter(function (question) {
@@ -193,8 +203,9 @@
     quiz.questions.forEach(function (question) {
       var saved = answers && answers[question.id];
       if (!saved || (!saved.verified && !(saved.selected || []).length)) return;
+      var verified = !!saved.verified && currentRevision(question, saved);
       result[question.id] = {selected:Array.from(new Set((saved.selected || []).filter(function (v) { return /^[A-E]$/.test(v); }))).sort(),
-        verified:!!saved.verified,correct:!!saved.verified && currentCorrect(question, saved),at:null,imported:true};
+        verified:verified,correct:verified && currentCorrect(question, saved),contentRevision:question.contentRevision || 0,at:null,imported:true};
     });
     return result;
   }
@@ -202,11 +213,12 @@
   function makeRun(quiz, answers) {
     var initial = cleanAnswers(quiz, answers);
     return {id:newAttemptId(),storageKey:quiz.storageKey,startedAt:Object.values(initial).some(function (answer) { return answer.verified; }) ? null : new Date().toISOString(),
-      lastAt:null,completedAt:null,closedAt:null,status:'active',answers:initial};
+      lastAt:null,completedAt:null,closedAt:null,status:'active',answers:initial,
+      contentRevision:quiz.contentRevision || 0,questionIds:quiz.questions.map(function (q) { return q.id; })};
   }
 
   function initialComplete(quiz, run) {
-    return !!run && quiz.questions.every(function (q) { return run.answers[q.id] && run.answers[q.id].verified; });
+    return !!run && runQuestionIds(quiz, run).every(function (id) { return run.answers[id] && run.answers[id].verified; });
   }
 
   function makeFullRun(quiz, answers, meta, state) {
@@ -219,7 +231,8 @@
   }
 
   function isCurrentRun(run, meta) {
-    return !!run && !!meta && meta.activeRunId === run.id && run.mode !== 'mistakes' && !run.closedAt && !meta.pendingReset;
+    return !!run && !!meta && meta.activeRunId === run.id && run.mode !== 'mistakes' && !run.closedAt && !meta.pendingReset &&
+      (run.contentRevision || 0) === (byKey.get(run.storageKey).contentRevision || 0);
   }
 
   function importSavedAnswers(quiz, run) {
@@ -238,7 +251,12 @@
   }
 
   function correctionState(quiz, source, state) {
-    var wrongIds = quiz.questions.filter(function (q) { return source.answers[q.id] && source.answers[q.id].verified && !source.answers[q.id].correct; }).map(function (q) { return q.id; });
+    // Corrections belong to the original traversal, including questions later
+    // retired from the live quiz. Its historical denominator and result must
+    // not change when a duplicate is removed from the current edition.
+    var wrongIds = runQuestionIds(quiz, source).filter(function (id) {
+      return source.answers[id] && source.answers[id].verified && !source.answers[id].correct;
+    });
     var rounds = state.runs.filter(function (run) { return run.storageKey === quiz.storageKey && run.mode === 'mistakes' && run.sourceRunId === source.id; })
       .sort(function (a, b) { return (a.roundNumber || 0) - (b.roundNumber || 0) || (a.startedAt || '').localeCompare(b.startedAt || '') || a.id.localeCompare(b.id); });
     var latest = new Map();
@@ -260,6 +278,22 @@
         var meta = state.metadata.find(function (item) { return item.key === storageKey; });
         if (meta.pendingReset) throw new Error('Restart requires recovery');
         var run = state.runs.find(function (item) { return item.id === meta.activeRunId; });
+        if (run && (run.contentRevision || 0) > (quiz.contentRevision || 0)) throw new Error('Quiz content is out of date; reload before continuing');
+        if (run && (run.contentRevision || 0) !== (quiz.contentRevision || 0)) {
+          // Freeze the original scope and scores before carrying current drafts
+          // into the revised edition. Existing attempts are never rewritten.
+          run.questionIds = runQuestionIds(quiz, run).slice();
+          run.closedAt = new Date().toISOString(); run.closedReason = 'content-updated';
+          run.status = initialComplete(quiz, run) ? 'completed' : 'stopped';
+          state.runs.forEach(function (child) {
+            if (child.sourceRunId !== run.id || child.closedAt) return;
+            child.closedAt = run.closedAt; if (child.status === 'active') child.status = 'stopped';
+            if (runsStore) runsStore.put(child);
+          });
+          delete meta.practiceRunId;
+          if (runsStore) runsStore.put(run);
+          run = null; changed = true;
+        }
         if (!run) {
           run = makeFullRun(quiz, current(quiz), meta, state);
           state.runs.push(run); meta.activeRunId = run.id;
@@ -352,7 +386,7 @@
         Object.keys(answers).forEach(function (id) { if (!run.answers[id] || !run.answers[id].verified) run.answers[id] = answers[id]; });
         if (!Object.keys(run.answers).length) return null;
         run.closedAt = new Date().toISOString();
-        var completed = quiz.questions.every(function (q) { return run.answers[q.id] && run.answers[q.id].verified; });
+        var completed = initialComplete(quiz, run);
         run.status = completed ? 'completed' : 'stopped';
         if (completed && !run.completedAt) run.completedAt = run.closedAt;
         // Parent and child close together, before the separate answer cache is
@@ -401,9 +435,14 @@
       if (!quiz || !quiz.questions.some(function (q) { return q.id === input.questionId; }) ||
         typeof input.correct !== 'boolean' || typeof input.attemptId !== 'string' || !input.attemptId ||
         !Array.isArray(input.selected) || !input.selected.every(function (letter) { return /^[A-E]$/.test(letter); })) return false;
+      var question = quiz.questions.find(function (q) { return q.id === input.questionId; });
+      // An old cached player must not stamp a revised question as freshly reviewed.
+      // Missing revisions remain compatible with the original content edition.
+      if ((input.contentRevision || 0) !== (question.contentRevision || 0)) return false;
       var event = {id:input.attemptId,storageKey:input.storageKey,questionId:input.questionId,correct:input.correct,
         selected:Array.from(new Set(input.selected)).sort(),at:new Date().toISOString()};
       if (Array.isArray(input.answerKey)) event.answerKey = input.answerKey.slice().sort();
+      event.contentRevision = question.contentRevision || 0;
       if (input.runId) event.runId = input.runId;
       var added = await access(function (state, attemptsStore, metadataStore, runsStore) {
         if (state.attempts.some(function (existing) { return existing.id === event.id; })) return false;
@@ -411,6 +450,7 @@
           var run = state.runs.find(function (item) { return item.id === event.runId && item.storageKey === quiz.storageKey; });
           var runMeta = state.metadata.find(function (item) { return item.key === quiz.storageKey; });
           if (!run || runMeta.pendingReset ||
+            (run.contentRevision || 0) !== (quiz.contentRevision || 0) ||
             (run.mode === 'mistakes' ? runMeta.practiceRunId : runMeta.activeRunId) !== run.id || run.closedAt ||
             (run.mode === 'mistakes' && !run.questionIds.includes(event.questionId)) ||
             (run.answers[event.questionId] && run.answers[event.questionId].verified)) return false;
@@ -419,7 +459,7 @@
             if (!isCurrentRun(source, runMeta) || !initialComplete(quiz, source) ||
               !source.answers[event.questionId] || source.answers[event.questionId].correct) return false;
           }
-          run.answers[event.questionId] = {selected:event.selected.slice(),verified:true,correct:event.correct,at:event.at,eventId:event.id,answerKey:event.answerKey};
+          run.answers[event.questionId] = {selected:event.selected.slice(),verified:true,correct:event.correct,at:event.at,eventId:event.id,answerKey:event.answerKey,contentRevision:event.contentRevision};
           run.lastAt = event.at;
           if ((run.questionIds || quiz.questions.map(function (q) { return q.id; })).every(function (id) { return run.answers[id] && run.answers[id].verified; })) {
             run.status = 'completed'; run.completedAt = event.at;
@@ -468,7 +508,7 @@
     var known = new Set(fullEvents.map(pair));
     var saved = new Map();
     function include(quiz, answers, run) {
-      quiz.questions.forEach(function (question) {
+      historicalQuestions(quiz).forEach(function (question) {
         var answer = answers && answers[question.id];
         var key = quiz.storageKey + '\u0000' + question.id;
         if (!answer || !answer.verified) return;
@@ -481,7 +521,7 @@
             (event.at === run.closedAt && (!event.runId || event.runId === run.id)));
         }))) return;
         saved.set(key, {storageKey:quiz.storageKey,questionId:question.id,at:null,
-          correct:run ? !!answer.correct : currentCorrect(question, answer),
+          correct:run || question.retired || !currentRevision(question, answer) ? !!answer.correct : currentCorrect(question, answer),
           selected:Array.from(new Set((Array.isArray(answer.selected) ? answer.selected : []).filter(function (v) { return /^[A-E]$/.test(v); }))).sort(),
           chapterNum:quiz.chapterNum,chapterName:quiz.name,quizUrl:quiz.url,number:question.number});
       });
@@ -517,7 +557,7 @@
       var end = new Date(now); end.setHours(23, 59, 59, 999);
       var allEvents = snapshot.attempts.filter(function (event) {
         var quiz = byKey.get(event.storageKey);
-        return keys.has(event.storageKey) && quiz && quiz.questions.some(function (q) { return q.id === event.questionId; }) &&
+        return keys.has(event.storageKey) && quiz && findQuestion(quiz, event.questionId) &&
           typeof event.correct === 'boolean' && Number.isFinite(new Date(event.at).getTime());
       }).sort(function (a, b) { return a.at.localeCompare(b.at) || a.id.localeCompare(b.id); });
       var first = new Map();
@@ -544,7 +584,7 @@
         var saved = current(quiz);
         quiz.questions.forEach(function (question) {
           var state = saved[question.id];
-          if (state && state.verified) {
+          if (state && state.verified && currentRevision(question, state)) {
             stats.current.verified++;
             if (currentCorrect(question, state)) stats.current.correct++;
             else stats.current.wrongIds.push(question.id);
@@ -557,7 +597,7 @@
       var mistakes = new Map();
       var history = results.map(function (event) {
         var quiz = byKey.get(event.storageKey);
-        var question = quiz.questions.find(function (item) { return item.id === event.questionId; });
+        var question = findQuestion(quiz, event.questionId);
         var stats = quizStats.get(event.storageKey);
         if (event.at) {
           stats.attempts++;
@@ -603,7 +643,7 @@
       allEvents.filter(function (e) { return new Date(e.at)<=end; }).forEach(function (e) { latest.set(pair(e),e); });
       var errorTypes = {omitted:0,extra:0,both:0,unknown:0};
       function diagnostic(event) {
-        var q = byKey.get(event.storageKey).questions.find(function (item) { return item.id===event.questionId; });
+        var q = findQuestion(byKey.get(event.storageKey), event.questionId);
         var key = event.answerKey || q.correct;
         if (!key) return {omitted:[],extra:[],keyKnown:false,usesCurrentKey:true};
         return {omitted:key.filter(function (v) { return !event.selected.includes(v); }),
@@ -615,11 +655,11 @@
       });
       var resultMistakes = Array.from(mistakes.values()).filter(function (m) { return m.wrong>0; }).map(function (m) {
         var quiz = byKey.get(results.find(function (e) { return e.questionId===m.questionId && byKey.get(e.storageKey).chapterNum===m.chapterNum; }).storageKey);
-        var q = quiz.questions.find(function (q) { return q.id===m.questionId; });
+        var q = findQuestion(quiz, m.questionId);
         var wrong = results.filter(function (e) { return e.storageKey===quiz.storageKey && e.questionId===m.questionId && !e.correct; }).at(-1);
         var last = latest.get(pair(wrong));
         var topic = (quiz.topics || []).find(function (t) { return t.id===q.topicId; });
-        return Object.assign(m,diagnostic(wrong),{selected:wrong.selected.slice(),resolved:!!last.correct,lastResultAt:last.at,
+        return Object.assign(m,diagnostic(wrong),{selected:wrong.selected.slice(),resolved:!!last.correct,lastResultAt:last.at,retired:!!q.retired,
           topicId:q.topicId,topicLabel:topic && topic.label,lessonUrl:topic && topic.lessonUrl});
       }).filter(function (m) { return !options.topicId || m.topicId===options.topicId; }).sort(function (a,b) {
         return Number(a.resolved)-Number(b.resolved) || b.wrong-a.wrong || (b.lastAt || '').localeCompare(a.lastAt || '') || a.number-b.number;
@@ -635,11 +675,11 @@
         var correct = answers.filter(function (a) { return a.correct; }).length;
         var meta = metadata.find(function (item) { return item.key === run.storageKey; });
         var parent = run.sourceRunId && snapshot.runs.find(function (item) { return item.id === run.sourceRunId && item.storageKey === run.storageKey; });
-        return Object.assign(copy(run),{chapterNum:quiz.chapterNum,chapterName:quiz.name,quizUrl:quiz.url,total:run.questionIds ? run.questionIds.length : quiz.questions.length,
+        return Object.assign(copy(run),{chapterNum:quiz.chapterNum,chapterName:quiz.name,quizUrl:quiz.url,total:runQuestionIds(quiz, run).length,
           number:run.mode !== 'mistakes' && Number.isInteger(run.number) ? run.number : null,
           isCurrent:run.mode === 'mistakes' ? !!meta && meta.practiceRunId === run.id && !run.closedAt && isCurrentRun(parent, meta) : isCurrentRun(run, meta),
           verified:answers.length,correct:correct,wrong:answers.length-correct,accuracy:accuracy(correct,answers.length),
-          questions:quiz.questions.filter(function (q) { return !run.questionIds || run.questionIds.includes(q.id); }).map(function (q) { return {id:q.id,number:q.number}; })});
+          questions:historicalQuestions(quiz).filter(function (q) { return runQuestionIds(quiz, run).includes(q.id); }).map(function (q) { return {id:q.id,number:q.number,retired:!!q.retired}; })});
       }
       var runs = snapshot.runs.filter(function (run) {
         if (!keys.has(run.storageKey)) return false;
@@ -659,7 +699,7 @@
           currentRoundId:result.isCurrent && progress.rounds.some(function (child) { return child.id === meta.practiceRunId && !child.closedAt; }) ? meta.practiceRunId : null,
           correctedIds:progress.correctedIds,remainingIds:progress.remainingIds,
           corrected:progress.correctedIds.length,remaining:progress.remainingIds.length,
-          accuracy:result.initialComplete ? accuracy(result.correct + progress.correctedIds.length, quiz.questions.length) : null,
+          accuracy:result.initialComplete ? accuracy(result.correct + progress.correctedIds.length, result.total) : null,
           complete:result.initialComplete && !progress.remainingIds.length,
           canPractice:result.isCurrent && result.initialComplete && progress.remainingIds.length > 0
         };

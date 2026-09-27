@@ -1,0 +1,3428 @@
+{
+  "chapterNum": 18,
+  "name": "Sistemul digestiv",
+  "url": "grile_sistemul_digestiv.html",
+  "storageKey": "bb.quiz.sistemul-digestiv.v1",
+  "version": 1,
+  "questions": [
+    {
+      "id": "dg-001",
+      "number": 1,
+      "sourceNumber": 1,
+      "sourceChapter": "X",
+      "prompt": "Despre glandele salivare sunt corecte următoarele asocieri:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "parotida - duct deschis în dreptul molarului 2 superior",
+          "why": "Ductul parotidian se deschide în vestibulul bucal, în dreptul celui de-al doilea molar superior."
+        },
+        {
+          "letter": "B",
+          "text": "sublinguala - în planșeul bucal, sub limbă",
+          "why": "Glanda sublinguală se află sub mucoasa planșeului bucal, anterior de glanda submandibulară."
+        },
+        {
+          "letter": "C",
+          "text": "submaxilara - enzime proteolitice",
+          "why": "Secreția submandibulară conține mucus și amilază; proteazele nu reprezintă enzimele digestive caracteristice acestei glande."
+        },
+        {
+          "letter": "D",
+          "text": "submandibulara - ducte multiple sublinguale",
+          "why": "Ductele sublinguale multiple drenează glanda sublinguală; glanda submandibulară are ductul submandibular."
+        },
+        {
+          "letter": "E",
+          "text": "parotida - în vecinătatea urechilor",
+          "why": "Glanda parotidă pereche se află în regiunea din vecinătatea urechii."
+        }
+      ],
+      "sourcePages": [
+        186
+      ]
+    },
+    {
+      "id": "dg-002",
+      "number": 2,
+      "sourceNumber": 2,
+      "sourceChapter": "X",
+      "prompt": "Selectați afirmațiile corecte:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "în prima etapă a deglutiției, bolul alimentar este împins din cavitatea orală către esofag cu ajutorul limbii",
+          "why": "În etapa orală limba împinge bolul către faringe; trecerea prin faringe în esofag aparține etapei următoare."
+        },
+        {
+          "letter": "B",
+          "text": "pH-ul influențează activitatea enzimatică",
+          "why": "Starea de ionizare și activitatea enzimelor depind de pH; enzimele digestive au intervale optime diferite."
+        },
+        {
+          "letter": "C",
+          "text": "hormonii secretați de celulele enteroendocrine reglează activitatea secretorie",
+          "why": "Gastrina, secretina și colecistochinina sunt exemple de hormoni digestivi care reglează secrețiile."
+        },
+        {
+          "letter": "D",
+          "text": "cavitatea bucală asigură digestia mecanică a alimentelor",
+          "why": "Masticația fragmentează alimentele, iar limba le amestecă cu saliva."
+        },
+        {
+          "letter": "E",
+          "text": "aglomerările de țesut limfoid din peretele intestinului subțire facilitează absorbția",
+          "why": "Țesutul limfoid intestinal participă la apărarea imună; suprafața de absorbție este mărită de vilozități și microvilozități."
+        }
+      ],
+      "sourcePages": [
+        186
+      ]
+    },
+    {
+      "id": "dg-003",
+      "number": 3,
+      "sourceNumber": 3,
+      "sourceChapter": "X",
+      "prompt": "Care dintre afirmațiile privind duodenul sunt corecte?",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "conține glandele lui Brunner care secretă mucus",
+          "why": "Glandele Brunner din submucoasa duodenală produc mucus alcalin protector."
+        },
+        {
+          "letter": "B",
+          "text": "la nivelul lui se deschid ductul cistic al vezicii biliare și ductul pancreatic accesoriu",
+          "why": "Ductul cistic se unește cu ductul hepatic comun; în duoden ajunge ductul coledoc, nu ductul cistic direct."
+        },
+        {
+          "letter": "C",
+          "text": "la nivelul lui se varsă sucul pancreatic și bila",
+          "why": "Secrețiile pancreatice și bila ajung în duoden și contribuie la digestia chimului gastric."
+        },
+        {
+          "letter": "D",
+          "text": "este despărțit de stomac prin sfincterul piloric",
+          "why": "Sfincterul piloric controlează evacuarea chimului din stomac în duoden."
+        },
+        {
+          "letter": "E",
+          "text": "cuprinde în concavitatea sa coada pancreasului",
+          "why": "Concavitatea duodenului înconjoară capul pancreasului; coada se îndreaptă spre splină."
+        }
+      ],
+      "sourcePages": [
+        186
+      ]
+    },
+    {
+      "id": "dg-004",
+      "number": 4,
+      "sourceNumber": 4,
+      "sourceChapter": "X",
+      "prompt": "Care dintre afirmațiile referitoare la componentele sucului gastric sunt adevărate?",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "C"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "la sugari, labfermentul facilitează digestia laptelui",
+          "why": "Baremul include această formulare tradițională din manual despre coagularea laptelui. Totuși, la om gena chimozinei este o pseudogenă; afirmația nu trebuie prezentată drept mecanism uman demonstrat fără această rezervă."
+        },
+        {
+          "letter": "B",
+          "text": "acidul clorhidric, secretat de celulele principale ale glandelor gastrice, activează pepsinogenul",
+          "why": "Activarea pepsinogenului în mediul acid este corectă, însă HCl este secretat de celulele parietale, nu de cele principale."
+        },
+        {
+          "letter": "C",
+          "text": "mucusul protejează peretele stomacului",
+          "why": "Bariera de mucus și bicarbonat protejează epiteliul gastric față de acid și pepsină."
+        },
+        {
+          "letter": "D",
+          "text": "factorul intrinsec este necesar pentru absorbția gastrică a vitaminei B₁₂",
+          "why": "Factorul intrinsec este produs în stomac, dar permite absorbția vitaminei B₁₂ în ileonul terminal."
+        },
+        {
+          "letter": "E",
+          "text": "pepsina descompune toate tipurile de proteine în peptide",
+          "why": "Pepsina are specificitate de substrat; manualul precizează «aproape toate», nu absolut toate tipurile de proteine."
+        }
+      ],
+      "sourcePages": [
+        186
+      ]
+    },
+    {
+      "id": "dg-005",
+      "number": 5,
+      "sourceNumber": 5,
+      "sourceChapter": "X",
+      "prompt": "Selectați afirmațiile corecte:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "D",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "celulele parietale ale glandelor gastrice secretă pepsinogen",
+          "why": "Celulele principale secretă pepsinogen, iar celulele parietale produc HCl și factor intrinsec."
+        },
+        {
+          "letter": "B",
+          "text": "gastrina controlează secreția gastrică de pepsinogen, acid clorhidric și mucus",
+          "why": "Manualul atribuie gastrinei controlul acestor secreții; efectul său fiziologic major este stimularea secreției acide, în cadrul reglării integrate a stomacului."
+        },
+        {
+          "letter": "C",
+          "text": "la nivelul mucoasei gastrice se pot absorbi: cantități mici de apă, glucoză, peptide, ioni și alcool",
+          "why": "Peptidele nu fac parte din lista absorbției gastrice reduse din manual; absorbția produselor proteice se realizează predominant în intestinul subțire."
+        },
+        {
+          "letter": "D",
+          "text": "nervul vag crește secreția gastrică",
+          "why": "Stimularea parasimpatică vagală favorizează secreția gastrică prin circuite nervoase și endocrine locale."
+        },
+        {
+          "letter": "E",
+          "text": "mișcările peristaltice gastrice realizează evacuarea chimului gastric în duoden",
+          "why": "Contracțiile gastrice propulsează porțiuni de chim prin pilor în duoden."
+        }
+      ],
+      "sourcePages": [
+        186
+      ]
+    },
+    {
+      "id": "dg-006",
+      "number": 6,
+      "sourceNumber": 6,
+      "sourceChapter": "X",
+      "prompt": "Care dintre următoarele afirmații privind acțiunile unor enzime digestive sunt adevărate?",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "sărurile biliare emulsionează picăturile mari de grăsime",
+          "why": "Emulsionarea este reală, dar sărurile biliare nu sunt enzime, astfel că varianta nu răspunde categoriei cerute."
+        },
+        {
+          "letter": "B",
+          "text": "amilaza pancreatică transformă amidonul în maltoză",
+          "why": "Hidroliza amidonului prin amilaza pancreatică produce maltoză, alături de alți oligozaharizi."
+        },
+        {
+          "letter": "C",
+          "text": "lactaza descompune lactoza în glucoză și fructoză",
+          "why": "Lactaza produce glucoză și galactoză; glucoza și fructoza rezultă din zaharoză."
+        },
+        {
+          "letter": "D",
+          "text": "aminopeptidaza pancreatică degradează proteinele și peptidele în aminoacizi",
+          "why": "Aminopeptidaza digestivă este asociată epiteliului intestinal; carboxipeptidaza este proteaza pancreatică exopeptidazică."
+        },
+        {
+          "letter": "E",
+          "text": "tripsina degradează proteinele și peptidele în dipeptide",
+          "why": "Baremul urmează formularea simplificată din manual. Tripsina este o endopeptidază care produce fragmente peptidice de lungimi variabile; nu formează exclusiv dipeptide."
+        }
+      ],
+      "sourcePages": [
+        186
+      ]
+    },
+    {
+      "id": "dg-007",
+      "number": 7,
+      "sourceNumber": 7,
+      "sourceChapter": "X",
+      "prompt": "Care dintre afirmațiile referitoare la absorbția intestinală a lipidelor sunt adevărate?",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "este un proces care se realizează în principal fără consum de energie",
+          "why": "Manualul se referă la trecerea pasivă a produșilor lipidici prin membrana enterocitară. Întregul proces, incluzând resinteza trigliceridelor și secreția chilomicronilor, necesită energie."
+        },
+        {
+          "letter": "B",
+          "text": "acizii grași cu lanț scurt de carbon sunt absorbiți în capilarele sanguine ale vilozităților intestinale",
+          "why": "Acizii grași cu lanț scurt sunt transportați predominant către sângele portal, fără ambalare în chilomicroni."
+        },
+        {
+          "letter": "C",
+          "text": "monogliceridele se combină cu sărurile biliare în celulele epiteliale intestinale, formând micelii",
+          "why": "Miceliile mixte se formează în lumenul intestinal și aduc produșii lipidici la enterocite; nu se formează în interiorul acestora."
+        },
+        {
+          "letter": "D",
+          "text": "trigliceridele intră în compoziția chilomicronilor și ajung în chiliferul central",
+          "why": "Enterocitele resintetizează trigliceride și le includ în chilomicroni, care sunt secretați către vasele limfatice."
+        },
+        {
+          "letter": "E",
+          "text": "acizii grași cu lanț lung sunt absorbiți pe cale limfatică",
+          "why": "Baremul exclude E, însă formularea descrie uzual calea principală a lipidelor cu lanț lung, după reesterificare și încorporare în chilomicroni. Nu trebuie dedus că acești acizi ajung predominant direct în sângele portal."
+        }
+      ],
+      "sourcePages": [
+        186,
+        187
+      ]
+    },
+    {
+      "id": "dg-008",
+      "number": 8,
+      "sourceNumber": 8,
+      "sourceChapter": "X",
+      "prompt": "Precizați care dintre următoarele afirmații caracterizează bila:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "este stocată și concentrată în vezica biliară",
+          "why": "Mucoasa vezicii biliare reabsoarbe apă și electroliți, concentrând bila depozitată."
+        },
+        {
+          "letter": "B",
+          "text": "este necesară digestiei și absorbției lipidelor",
+          "why": "Sărurile biliare favorizează emulsionarea și formarea miceliilor, făcând eficientă digestia și absorbția lipidelor alimentare."
+        },
+        {
+          "letter": "C",
+          "text": "conține enzime digestive",
+          "why": "Bila nu furnizează enzime digestive; sărurile biliare au acțiune fizico-chimică asupra grăsimilor."
+        },
+        {
+          "letter": "D",
+          "text": "conține săruri biliare, colesterol, lecitină și pigmenți biliari",
+          "why": "Aceste componente se găsesc în bilă, alături de apă și electroliți."
+        },
+        {
+          "letter": "E",
+          "text": "pigmenții biliari sunt derivați din hemoglobină",
+          "why": "Bilirubina provine în principal din degradarea hemului hemoglobinei eritrocitelor îmbătrânite."
+        }
+      ],
+      "sourcePages": [
+        187
+      ]
+    },
+    {
+      "id": "dg-009",
+      "number": 9,
+      "sourceNumber": 9,
+      "sourceChapter": "X",
+      "prompt": "Selectați afirmațiile corecte privind sucul pancreatic:",
+      "asksFalse": false,
+      "correct": [
+        "C",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "conține insulină și glucagon",
+          "why": "Insulina și glucagonul sunt hormoni eliberați de pancreasul endocrin în sânge, nu componente ale sucului pancreatic."
+        },
+        {
+          "letter": "B",
+          "text": "conține substanțe organice: săruri și ioni de bicarbonat",
+          "why": "Sărurile și bicarbonatul sunt componente anorganice; enzimele sunt componente organice."
+        },
+        {
+          "letter": "C",
+          "text": "conține proteaze: tripsină și chimotripsină",
+          "why": "Baremul folosește denumirile enzimelor active. Pancreasul secretă în mod normal precursorii tripsinogen și chimotripsinogen, activați ulterior în intestin."
+        },
+        {
+          "letter": "D",
+          "text": "conține enzime care digeră dizaharidele",
+          "why": "Dizaharidazele digestive sunt enzime intestinale; amilaza pancreatică acționează asupra polizaharidelor."
+        },
+        {
+          "letter": "E",
+          "text": "conține lipaza pancreatică care descompune lipidele emulsionate",
+          "why": "Lipaza pancreatică hidrolizează trigliceridele, predominant în acizi grași și monogliceride."
+        }
+      ],
+      "sourcePages": [
+        187
+      ]
+    },
+    {
+      "id": "dg-010",
+      "number": 10,
+      "sourceNumber": 10,
+      "sourceChapter": "X",
+      "prompt": "În ficat intră:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "vena portă, care aduce substanțe nutritive absorbite de la nivelul intestinului",
+          "why": "Vena portă conduce spre ficat sângele venos bogat în nutrienți absorbiți din tubul digestiv."
+        },
+        {
+          "letter": "B",
+          "text": "artera hepatică, ramură din trunchiul celiac",
+          "why": "Artera hepatică comună provine în mod obișnuit din trunchiul celiac; ramurile hepatice aduc sânge arterial ficatului."
+        },
+        {
+          "letter": "C",
+          "text": "ductul hepatic comun, care conține bila produsă de hepatocite",
+          "why": "Ductul hepatic comun drenează bila în afara ficatului; nu este o cale de intrare în organ."
+        },
+        {
+          "letter": "D",
+          "text": "vena hepatică, care se varsă în vena cavă inferioară",
+          "why": "Venele hepatice conduc sângele din ficat spre vena cavă inferioară, fiind vase de ieșire."
+        },
+        {
+          "letter": "E",
+          "text": "artera hepatică, ramură din trunchiul celiac, care aduce la ficat oxigen și substanțe nutritive",
+          "why": "Sângele arterial hepatic furnizează oxigen și nutrienți țesutului hepatic."
+        }
+      ],
+      "sourcePages": [
+        187
+      ]
+    },
+    {
+      "id": "dg-011",
+      "number": 11,
+      "sourceNumber": 11,
+      "sourceChapter": "X",
+      "prompt": "Referitor la tunicile tractului gastrointestinal se poate afirma că:",
+      "asksFalse": false,
+      "correct": [
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "tunica mucoasă este formată dintr-un epiteliu ce acoperă un țesut conjunctiv care conține mari cantități de mușchi neted",
+          "why": "Mucoasa include o musculară subțire; cantitatea mare de mușchi aparține tunicii musculare externe."
+        },
+        {
+          "letter": "B",
+          "text": "tunica musculară este formată la nivelul tuturor segmentelor din mușchi netezi dispuși circular la interior și longitudinal la exterior",
+          "why": "Generalizarea la toate segmentele este falsă: esofagul superior are mușchi striat, iar stomacul are și strat oblic."
+        },
+        {
+          "letter": "C",
+          "text": "submucoasa conține doar vase de sânge și nervi",
+          "why": "Submucoasa conține și țesut conjunctiv, vase limfatice și, în unele regiuni, glande; «doar» este restrictiv."
+        },
+        {
+          "letter": "D",
+          "text": "peritoneul visceral prezintă celule care secretă un lichid ce conține mucus și enzime",
+          "why": "Suprafața seroasă este lubrifiată de lichid seros, nu de suc digestiv cu mucus și enzime."
+        },
+        {
+          "letter": "E",
+          "text": "musculatura longitudinală, prin contracție, scurtează lungimea tubului digestiv",
+          "why": "Contracția fibrelor orientate longitudinal scurtează segmentul digestiv respectiv."
+        }
+      ],
+      "sourcePages": [
+        187
+      ]
+    },
+    {
+      "id": "dg-012",
+      "number": 12,
+      "sourceNumber": 12,
+      "sourceChapter": "X",
+      "prompt": "Glandele salivare:",
+      "asksFalse": false,
+      "correct": [
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "parotide sunt situate în țesuturile superficiale din regiunea feței",
+          "why": "Manualul localizează parotida în țesuturile profunde din vecinătatea urechii. Anatomic, glanda are totuși lobi superficial și profund, astfel că termenul «superficiale» singur este imprecis."
+        },
+        {
+          "letter": "B",
+          "text": "secretă și mucus care este un lichid apos care leagă particulele alimentare",
+          "why": "Mucusul leagă și lubrifiază particulele, dar are consistență vâscoasă; secreția seroasă este apoasă."
+        },
+        {
+          "letter": "C",
+          "text": "ductele parotidiene se deschid în dreptul celui de-al doilea molar inferior",
+          "why": "Orificiul ductului parotidian se află opus celui de-al doilea molar superior."
+        },
+        {
+          "letter": "D",
+          "text": "submandibulare sunt situate posterior de cele sublinguale",
+          "why": "Glandele sublinguale se află anterior de glandele submandibulare în planșeul bucal."
+        },
+        {
+          "letter": "E",
+          "text": "ductele submandibulare se deschid anterior de frâul limbii",
+          "why": "Orificiile submandibulare se află pe carunculele sublinguale, lateral de baza frâului limbii."
+        }
+      ],
+      "sourcePages": [
+        187
+      ]
+    },
+    {
+      "id": "dg-013",
+      "number": 13,
+      "sourceNumber": 13,
+      "sourceChapter": "X",
+      "prompt": "Stomacul:",
+      "asksFalse": false,
+      "correct": [
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "vine în raport cu fața convexă a splinei",
+          "why": "Raportul gastric este cu fața viscerală a splinei; fața convexă, diafragmatică, privește spre diafragmă."
+        },
+        {
+          "letter": "B",
+          "text": "prezintă un strat muscular oblic situat între submucoasă și stratul longitudinal",
+          "why": "Baremul exclude B. Stratul oblic se află imediat între submucoasă și stratul circular; în sens larg este și intern față de stratul longitudinal, deci formularea «între» este ambiguă fără precizarea vecinătății imediate."
+        },
+        {
+          "letter": "C",
+          "text": "secretă factorul intrinsec necesar pentru absorbția în colon a vitaminei B₁₂",
+          "why": "Factorul intrinsec permite absorbția B₁₂ în ileonul terminal, nu în colon."
+        },
+        {
+          "letter": "D",
+          "text": "se continuă cu duodenul la nivelul cardiei",
+          "why": "Duodenul urmează pilorului; cardia este regiunea de legătură cu esofagul."
+        },
+        {
+          "letter": "E",
+          "text": "secretă pepsinogen de către celulele principale",
+          "why": "Celulele principale ale glandelor gastrice produc precursorul inactiv pepsinogen."
+        }
+      ],
+      "sourcePages": [
+        187
+      ]
+    },
+    {
+      "id": "dg-014",
+      "number": 14,
+      "sourceNumber": 14,
+      "sourceChapter": "X",
+      "prompt": "Referitor la sistemul digestiv este adevărat că:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "C"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "amilaza descompune amidonul în compuși absorbabili",
+          "why": "Amilaza produce predominant maltoză și oligozaharide, care necesită hidroliză suplimentară până la monozaharide pentru absorbție."
+        },
+        {
+          "letter": "B",
+          "text": "fructoza se poate obține din descompunerea zaharozei",
+          "why": "Zaharaza hidrolizează zaharoza în glucoză și fructoză."
+        },
+        {
+          "letter": "C",
+          "text": "ficatul poate sintetiza glucoză din acizi grași și unii aminoacizi",
+          "why": "Baremul include C, însă afirmația este prea generală: aminoacizii glucogenici furnizează glucoză, dar acizii grași cu număr par de atomi de carbon nu dau sinteză netă de glucoză. Există contribuții ale acizilor grași cu lanț impar prin propionil-CoA."
+        },
+        {
+          "letter": "D",
+          "text": "celulele parietale gastrice produc pepsinogen",
+          "why": "Pepsinogenul este produs de celulele principale; cele parietale produc acid clorhidric și factor intrinsec."
+        },
+        {
+          "letter": "E",
+          "text": "ductul accesoriu pancreatic intră în duoden la aproximativ 2,5 cm distal de ampula hepatopancreatică",
+          "why": "Ductul accesoriu se deschide proximal, deasupra papilei majore, nu distal față de aceasta."
+        }
+      ],
+      "sourcePages": [
+        187,
+        188
+      ]
+    },
+    {
+      "id": "dg-015",
+      "number": 15,
+      "sourceNumber": 15,
+      "sourceChapter": "X",
+      "prompt": "Următoarele afirmații despre sistemul digestiv sunt adevărate:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "din dezaminarea în ficat a aminoacizilor se poate forma un compus care la nivelul tubului colector renal poate părăsi lumenul acestuia în porțiunea lui profundă",
+          "why": "Azotul aminoacizilor este eliminat prin uree; ureea se poate reabsorbi din segmentul medular intern al tubului colector, contribuind la reciclarea medulară."
+        },
+        {
+          "letter": "B",
+          "text": "ficatul stochează fier și cupru",
+          "why": "Ficatul participă la depozitarea fierului și cuprului și la reglarea metabolismului lor."
+        },
+        {
+          "letter": "C",
+          "text": "feritina se combină cu ionii de fier pentru a forma apoferitina",
+          "why": "Relația este inversată: apoferitina este componenta proteică fără fier, iar încărcarea cu fier formează feritina."
+        },
+        {
+          "letter": "D",
+          "text": "ductul hepatic comun se deschide în duoden împreună cu ductul Wirsung",
+          "why": "Ductul coledoc, format din ductul hepatic comun și ductul cistic, se unește de obicei cu ductul pancreatic principal."
+        },
+        {
+          "letter": "E",
+          "text": "flexura splenică a colonului se găsește în hipocondrul stâng",
+          "why": "Flexura colică stângă se află în vecinătatea splinei, în partea superioară stângă a abdomenului."
+        }
+      ],
+      "sourcePages": [
+        188
+      ]
+    },
+    {
+      "id": "dg-016",
+      "number": 16,
+      "sourceNumber": 16,
+      "sourceChapter": "X",
+      "prompt": "Următoarele afirmații despre sistemul digestiv nu sunt corecte:",
+      "asksFalse": true,
+      "correct": [
+        "A",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "acizii grași cu lanț scurt trec în chiliferul central al vilozității intestinale",
+          "why": "Afirmația falsă este selectată: acizii grași cu lanț scurt merg predominant în capilarele sanguine și circulația portală."
+        },
+        {
+          "letter": "B",
+          "text": "celulele enteroendocrine pot produce un hormon care controlează secreția de pepsinogen",
+          "why": "Afirmația este adevărată în schema manualului: gastrina produsă de celulele G participă la reglarea secreției gastrice; nu se selectează la o cerință negativă."
+        },
+        {
+          "letter": "C",
+          "text": "pentru lipide, difuziunea reprezintă principalul mecanism de absorbție",
+          "why": "Este formularea didactică a trecerii produșilor lipidici prin membrană, deci nu se selectează. Ea nu implică faptul că sinteza și exportul chilomicronilor sunt lipsite de consum energetic."
+        },
+        {
+          "letter": "D",
+          "text": "nervul vag stimulează eliberarea sucului pancreatic",
+          "why": "Stimularea parasimpatică vagală favorizează secreția pancreatică; afirmația adevărată nu răspunde cerinței negative."
+        },
+        {
+          "letter": "E",
+          "text": "gastrina se eliberează în sucul gastric și stimulează producția de enzime proteolitice",
+          "why": "Gastrina este hormon eliberat în sânge; localizarea secreției sale în sucul gastric face afirmația falsă."
+        }
+      ],
+      "sourcePages": [
+        188
+      ]
+    },
+    {
+      "id": "dg-017",
+      "number": 17,
+      "sourceNumber": 17,
+      "sourceChapter": "X",
+      "prompt": "Referitor la sistemul digestiv se poate afirma că:",
+      "asksFalse": false,
+      "correct": [
+        "B"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "mucoasa duodenului conține și plăci Peyer",
+          "why": "Plăcile Peyer sunt agregate limfoide caracteristice mai ales ileonului; nodulii limfoizi duodenali nu justifică această identificare."
+        },
+        {
+          "letter": "B",
+          "text": "sucul pancreatic are un pH alcalin",
+          "why": "Bicarbonatul secretat de pancreas conferă sucului pancreatic un pH alcalin și neutralizează aciditatea chimului."
+        },
+        {
+          "letter": "C",
+          "text": "bila conține și bicarbonat, săruri biliare, bilirubină și enzime pentru emulsionarea lipidelor",
+          "why": "Bila conține componentele enumerate, cu excepția enzimelor digestive; emulsionarea este realizată de sărurile biliare."
+        },
+        {
+          "letter": "D",
+          "text": "sfincterul esofagian inferior sau piloric permite trecerea alimentelor din esofag în stomac",
+          "why": "Sfincterul esofagian inferior se numește și cardial; pilorul este la ieșirea din stomac spre duoden."
+        },
+        {
+          "letter": "E",
+          "text": "maltoza se descompune în stomac în două molecule de glucoză",
+          "why": "Maltoza este hidrolizată de maltaza intestinală; stomacul nu este sediul acestei reacții enzimatice."
+        }
+      ],
+      "sourcePages": [
+        188
+      ]
+    },
+    {
+      "id": "dg-018",
+      "number": 18,
+      "sourceNumber": 18,
+      "sourceChapter": "X",
+      "prompt": "Referitor la sistemul digestiv nu se poate afirma că:",
+      "asksFalse": true,
+      "correct": [
+        "A",
+        "D",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "aminopeptidaza acționează la un pH acid",
+          "why": "Aminopeptidaza digestivă intestinală acționează în mediul neutru sau ușor alcalin intestinal, nu în mediul gastric acid."
+        },
+        {
+          "letter": "B",
+          "text": "ileonul este irigat de artera mezenterică superioară",
+          "why": "Ramurile ileale ale arterei mezenterice superioare vascularizează ileonul; afirmația adevărată nu se selectează."
+        },
+        {
+          "letter": "C",
+          "text": "limfa duodenală ajunge în ductul toracic",
+          "why": "Drenajul limfatic abdominal converge spre trunchiurile intestinale și ductul toracic; afirmația este adevărată."
+        },
+        {
+          "letter": "D",
+          "text": "nervul vag determină contracția musculaturii netede a rectului",
+          "why": "Inervația parasimpatică a rectului provine din nervii splanhnici pelvini sacrali, nu din vag."
+        },
+        {
+          "letter": "E",
+          "text": "la nivelul intestinului gros se absorb zilnic aproximativ 3000-4000 ml apă",
+          "why": "Valoarea de referință dată de manual este 300–400 ml/zi; 3000–4000 ml nu reprezintă valoarea normală indicată în această grilă."
+        }
+      ],
+      "sourcePages": [
+        188
+      ]
+    },
+    {
+      "id": "dg-019",
+      "number": 19,
+      "sourceNumber": 19,
+      "sourceChapter": "X",
+      "prompt": "Următoarele afirmații despre sistemul digestiv sunt adevărate:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "ileonul prezintă haustrații",
+          "why": "Haustrele sunt dilatații caracteristice colonului, nu ileonului."
+        },
+        {
+          "letter": "B",
+          "text": "mucusul secretat de glandele mucoase gastrice este alcalin",
+          "why": "Mucusul, împreună cu bicarbonatul, menține o barieră protectoare față de acid la suprafața epiteliului gastric."
+        },
+        {
+          "letter": "C",
+          "text": "eliberarea sucului pancreatic se face și reflex prin secretină",
+          "why": "Secretina realizează control hormonal, fiind transportată prin sânge; componenta reflexă este nervoasă."
+        },
+        {
+          "letter": "D",
+          "text": "pigmenții biliari au rol în emulsionarea lipidelor",
+          "why": "Emulsionarea este realizată de sărurile biliare; pigmenții biliari sunt produși de eliminare derivați din hem."
+        },
+        {
+          "letter": "E",
+          "text": "apendicele vermiform este situat caudal față de valva ileocecală",
+          "why": "Baza apendicelui se află pe cec, inferior de joncțiunea ileocecală; poziția vârfului apendicular poate varia."
+        }
+      ],
+      "sourcePages": [
+        188
+      ]
+    },
+    {
+      "id": "dg-020",
+      "number": 20,
+      "sourceNumber": 20,
+      "sourceChapter": "X",
+      "prompt": "Următoarele afirmații despre sistemul digestiv sunt incorecte:",
+      "asksFalse": true,
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "colecistochinina stimulează sinteza bilei",
+          "why": "Rolul caracteristic al CCK este contracția vezicii biliare și eliberarea bilei; secreția biliară bogată în bicarbonat este stimulată de secretină."
+        },
+        {
+          "letter": "B",
+          "text": "flexura hepatică a colonului se află în regiunea iliacă dreaptă",
+          "why": "Flexura hepatică este superior, în hipocondrul drept, lângă ficat; cecul se află în regiunea iliacă dreaptă."
+        },
+        {
+          "letter": "C",
+          "text": "bilirubina rezultată din degradarea lanțurilor de globină se poate transforma în urobilinogen",
+          "why": "Bilirubina provine din hem, nu din lanțurile proteice de globină. Transformarea intestinală în urobilinogen este corectă, dar originea indicată este greșită."
+        },
+        {
+          "letter": "D",
+          "text": "bila are un pH alcalin",
+          "why": "Afirmația este adevărată pentru bila hepatică descrisă în manual, deci nu se selectează la cerința de afirmații incorecte."
+        },
+        {
+          "letter": "E",
+          "text": "ligamentul falciform se află pe fața superioară a ficatului",
+          "why": "Ligamentul falciform se atașează de fața diafragmatică a ficatului; afirmația adevărată nu se selectează."
+        }
+      ],
+      "sourcePages": [
+        188
+      ]
+    },
+    {
+      "id": "dg-021",
+      "number": 21,
+      "sourceNumber": 21,
+      "sourceChapter": "X",
+      "prompt": "Despre structura pancreasului sunt adevărate următoarele afirmații:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "este o glandă alungită, de aproximativ 13 cm lungime și 2,5 mm grosime",
+          "why": "Manualul indică aproximativ 2,5 cm grosime, nu 2,5 mm."
+        },
+        {
+          "letter": "B",
+          "text": "este inervat prin fibre parasimpatice din nervul vag",
+          "why": "Fibrele parasimpatice vagale participă la stimularea secreției pancreatice."
+        },
+        {
+          "letter": "C",
+          "text": "pancreasul prezintă atât secreție endocrină cât și exocrină",
+          "why": "Baremul exclude C, însă pancreasul este o glandă mixtă: insulele eliberează hormoni în sânge, iar componenta exocrină secretă suc pancreatic. Contradicția se păstrează explicit."
+        },
+        {
+          "letter": "D",
+          "text": "componenta exocrină este o glandă tubulo-acinoasă",
+          "why": "Baremul include denumirea «tubulo-acinoasă». Pancreasul exocrin are acini seroși și ducte ramificate; în clasificarea histologică uzuală este numit glandă acinară compusă. Simpla prezență a ductelor nu înseamnă că unitățile secretorii sunt și tubulare."
+        },
+        {
+          "letter": "E",
+          "text": "componenta endocrină secretă doi hormoni cu rol în reglarea metabolismului glucidic",
+          "why": "Baremul exclude E, însă insulina și glucagonul sunt doi hormoni pancreatici care reglează glicemia. Există și alți hormoni pancreatici; absența cuvântului «doar» nu permite respingerea categorică a enunțului."
+        }
+      ],
+      "sourcePages": [
+        188,
+        189
+      ]
+    },
+    {
+      "id": "dg-022",
+      "number": 22,
+      "sourceNumber": 22,
+      "sourceChapter": "X",
+      "prompt": "Despre cea mai lungă porțiune a intestinului subțire sunt adevărate următoarele afirmații:",
+      "asksFalse": false,
+      "correct": [
+        "C",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "prezintă celule ce produc factor intrinsec",
+          "why": "Cea mai lungă porțiune este ileonul, care absoarbe complexul B₁₂–factor intrinsec; factorul este produs de celulele parietale gastrice."
+        },
+        {
+          "letter": "B",
+          "text": "conține în perete și glande Brunner",
+          "why": "Glandele Brunner aparțin submucoasei duodenale, nu ileonului."
+        },
+        {
+          "letter": "C",
+          "text": "prezintă la capătul distal un mușchi neted cu dispoziție circulară",
+          "why": "La joncțiunea ileocecală musculatura circulară contribuie la mecanismul sfincterian care reglează trecerea spre cec."
+        },
+        {
+          "letter": "D",
+          "text": "prezintă vilozități intestinale ce sunt acoperite de epiteliul intestinal",
+          "why": "Vilozitățile ileale sunt proiecții ale mucoasei acoperite de epiteliu cu rol în absorbție."
+        },
+        {
+          "letter": "E",
+          "text": "la nivelul lui au loc doar procese de absorbție intestinală",
+          "why": "În ileon continuă și procese de digestie, alături de absorbție și funcții imune; «doar» este incorect."
+        }
+      ],
+      "sourcePages": [
+        189
+      ]
+    },
+    {
+      "id": "dg-023",
+      "number": 23,
+      "sourceNumber": 23,
+      "sourceChapter": "X",
+      "prompt": "Despre absorbția la nivelul intestinului subțire sunt adevărate următoarele afirmații:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "acizii grași cu lanț lung de atomi de carbon se absorb fără consum de energie",
+          "why": "Baremul se referă la trecerea membranară pasivă din schema manualului; reesterificarea și transportul prin chilomicroni implică însă procese celulare consumatoare de energie."
+        },
+        {
+          "letter": "B",
+          "text": "acizii grași cu lanț lung de atomi de carbon se absorb în chiliferul central al vilozităților intestinale",
+          "why": "Baremul exclude B, însă calea limfatică este principala rută pentru lipidele cu lanț lung, transportate ca trigliceride în chilomicroni. Formularea este uzuală, deși nu precizează transformarea intracelulară."
+        },
+        {
+          "letter": "C",
+          "text": "vitaminele sunt absorbite în capilarele sanguine",
+          "why": "Baremul include generalizarea din manual, însă ea se aplică în principal vitaminelor hidrosolubile. Vitaminele liposolubile sunt transportate în mare parte pe cale limfatică împreună cu chilomicronii."
+        },
+        {
+          "letter": "D",
+          "text": "glucoza trece din lumenul intestinal în celula intestinală pe un cărăuș comun cu sodiul",
+          "why": "Cotransportorul apical SGLT1 transportă împreună glucoză și Na⁺ în enterocit."
+        },
+        {
+          "letter": "E",
+          "text": "absorbția glucozei necesită consum de energie",
+          "why": "Transportul apical al glucozei este activ secundar: gradientul Na⁺ este menținut de pompa Na⁺/K⁺-ATPază, care consumă ATP."
+        }
+      ],
+      "sourcePages": [
+        189
+      ]
+    },
+    {
+      "id": "dg-024",
+      "number": 24,
+      "sourceNumber": 24,
+      "sourceChapter": "X",
+      "prompt": "Despre digestia la nivelul intestinului subțire sunt adevărate următoarele afirmații:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "lactaza transformă lactoza în glucoză și galactoză",
+          "why": "Lactaza intestinală hidrolizează legătura dintre cele două monozaharide ale lactozei."
+        },
+        {
+          "letter": "B",
+          "text": "dipeptidaza acționează asupra tuturor peptidelor și le transformă în aminoacizi",
+          "why": "Dipeptidazele acționează asupra dipeptidelor, nu asupra tuturor peptidelor indiferent de lungime."
+        },
+        {
+          "letter": "C",
+          "text": "carboxipeptidaza transformă proteinele în produși finali de metabolism",
+          "why": "Carboxipeptidaza eliberează aminoacizi de la extremitatea carboxilică a peptidelor; aceștia sunt produși de digestie, nu deșeuri finale ale metabolismului."
+        },
+        {
+          "letter": "D",
+          "text": "pepsina transformă proteinele în peptide",
+          "why": "Reacția este reală, dar pepsina acționează în stomacul acid, nu reprezintă proteaza digestiei intestinale cerute aici."
+        },
+        {
+          "letter": "E",
+          "text": "aminopeptidaza transformă peptidele în produși finali absorbabili",
+          "why": "Aminopeptidazele eliberează aminoacizi de la extremitatea amino a peptidelor, contribuind la formarea produșilor absorbabili."
+        }
+      ],
+      "sourcePages": [
+        189
+      ]
+    },
+    {
+      "id": "dg-025",
+      "number": 25,
+      "sourceNumber": 25,
+      "sourceChapter": "X",
+      "prompt": "Despre enzimele secretate de glande anexe ale tractului digestiv sunt adevărate următoarele afirmații:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "amilaza salivară și pancreatică pot transforma amidonul în maltoză",
+          "why": "Amilazele provin din glandele salivare și pancreas, organe anexe, și produc maltoză în cursul hidrolizei amidonului."
+        },
+        {
+          "letter": "B",
+          "text": "sărurile biliare emulsionează grăsimile",
+          "why": "Acțiunea este corectă, dar sărurile biliare nu sunt enzime și nu răspund categoriei cerute."
+        },
+        {
+          "letter": "C",
+          "text": "maltaza transformă maltoza în două molecule de glucoză",
+          "why": "Reacția este corectă, dar maltaza aparține epiteliului intestinal, nu glandelor anexe."
+        },
+        {
+          "letter": "D",
+          "text": "tripsina transformă proteinele și peptidele în dipeptide",
+          "why": "Tripsina este o protează pancreatică; baremul urmează formularea manualului. Ca endopeptidază produce însă peptide variate, nu exclusiv dipeptide."
+        },
+        {
+          "letter": "E",
+          "text": "labfermentul are acțiune doar la sugar",
+          "why": "Manualul îl atribuie stomacului sugarului, nu glandelor anexe, astfel că varianta nu răspunde cerinței. În plus, existența chimozinei funcționale umane este problematică: CYMP este pseudogenă."
+        }
+      ],
+      "sourcePages": [
+        189
+      ]
+    },
+    {
+      "id": "dg-026",
+      "number": 26,
+      "sourceNumber": 26,
+      "sourceChapter": "X",
+      "prompt": "Despre absorbția intestinală sunt adevărate următoarele afirmații:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "ionii de sodiu se absorb din intestinul subțire cu consum de ATP",
+          "why": "Transportul transepitelial al Na⁺ depinde de Na⁺/K⁺-ATPaza bazolaterală; nu orice pas apical hidrolizează direct ATP."
+        },
+        {
+          "letter": "B",
+          "text": "aminoacizii sunt absorbiți din intestin prin transport activ sau difuziune facilitată",
+          "why": "Transportorii de aminoacizi folosesc mecanisme active secundare și transport facilitat, în funcție de membrană și substrat."
+        },
+        {
+          "letter": "C",
+          "text": "trigliceridele intră în constituția chilomicronilor, care trec din celula intestinală în chiliferul limfatic central",
+          "why": "Trigliceridele resintetizate sunt ambalate în chilomicroni și secretate bazolateral, apoi ajung în limfaticele vilozitare."
+        },
+        {
+          "letter": "D",
+          "text": "lipaza transformă lipidele în acizi grași și glicerol",
+          "why": "Este o afirmație despre digestie, nu despre absorbție. În plus, lipaza pancreatică formează predominant acizi grași și monogliceride."
+        },
+        {
+          "letter": "E",
+          "text": "fructoza ajunge după absorbția intestinală în capilarele sanguine de la nivelul vilozităților intestinale și ajunge la ficat pe calea venei porte",
+          "why": "Fructoza traversează enterocitele prin transport facilitat și intră în sângele portal care ajunge la ficat."
+        }
+      ],
+      "sourcePages": [
+        189
+      ]
+    },
+    {
+      "id": "dg-027",
+      "number": 27,
+      "sourceNumber": 27,
+      "sourceChapter": "X",
+      "prompt": "Despre enzimele secretate de celulele intestinului subțire sunt adevărate următoarele afirmații:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "C"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "nucleaza transformă acizii nucleici în nucleotide",
+          "why": "Baremul include asocierea din tabelul manualului. Nucleazele hidrolizează acizii nucleici, dar sursa principală a nucleazelor digestive luminale este pancreasul; epiteliul intestinal contribuie mai ales prin nucleotidaze și fosfataze."
+        },
+        {
+          "letter": "B",
+          "text": "chimotripsina transformă proteinele în peptide",
+          "why": "Acțiunea proteolitică este corectă, dar precursorul chimotripsinei este secretat de pancreas, nu de celulele intestinale."
+        },
+        {
+          "letter": "C",
+          "text": "zaharaza transformă zaharoza în glucoză și fructoză",
+          "why": "Zaharaza de la marginea în perie a enterocitelor scindează zaharoza în cele două monozaharide."
+        },
+        {
+          "letter": "D",
+          "text": "amilaza salivară digeră chimic atât amidonul cât și glicogenul",
+          "why": "Amilaza salivară hidrolizează aceste glucide, dar este produsă de glandele salivare, nu de celulele intestinului subțire."
+        },
+        {
+          "letter": "E",
+          "text": "tripsina și carboxipeptidaza pot digera proteine",
+          "why": "Sunt proteaze pancreatice activate în intestin; locul de acțiune nu trebuie confundat cu cel al secreției."
+        }
+      ],
+      "sourcePages": [
+        189
+      ]
+    },
+    {
+      "id": "dg-028",
+      "number": 28,
+      "sourceNumber": 28,
+      "sourceChapter": "X",
+      "prompt": "Selectați afirmațiile corecte:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "sodiul și apa se absorb atât în colon cât și în intestinul subțire",
+          "why": "Ambele segmente absorb apă și sodiu; intestinul subțire realizează cea mai mare parte a absorbției totale."
+        },
+        {
+          "letter": "B",
+          "text": "defecația este un act reflex medular facilitat de contracțiile voluntare ale unor mușchi striați",
+          "why": "Reflexele sacrale și enterice sunt completate de controlul voluntar al sfincterului anal extern și al musculaturii abdominale."
+        },
+        {
+          "letter": "C",
+          "text": "celulele epiteliului intestinului gros nu produc enzime",
+          "why": "Baremul include C, însă literal celulele colonului produc numeroase enzime, inclusiv enzime metabolice și membranare. În schema digestivă a manualului colonului nu i se atribuie o secreție enzimatică digestivă importantă; această limitare lipsește din enunț."
+        },
+        {
+          "letter": "D",
+          "text": "peretele colonului prezintă doua straturi musculare: intern circular și extern longitudinal",
+          "why": "Tunica musculară a colonului are aceste două straturi; stratul longitudinal este concentrat în mare parte în tenii."
+        },
+        {
+          "letter": "E",
+          "text": "la nivelul intestinului gros se absorb doar apa și ionii",
+          "why": "Se pot absorbi și produși ai fermentației bacteriene și unele vitamine; absorbția nu se limitează la apă și ioni."
+        }
+      ],
+      "sourcePages": [
+        189,
+        190
+      ]
+    },
+    {
+      "id": "dg-029",
+      "number": 29,
+      "sourceNumber": 29,
+      "sourceChapter": "X",
+      "prompt": "Despre bilă sunt adevărate următoarele afirmații:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "se elimină în duoden la nivelul ampulei hepatopancreatice împreună cu secreția acinilor pancreatici",
+          "why": "Bila și secreția pancreatică ajung de regulă printr-o cale terminală comună la papila duodenală majoră."
+        },
+        {
+          "letter": "B",
+          "text": "este produsul de secreție al celulelor hepatice",
+          "why": "Hepatocitele formează bila, care este apoi modificată de epiteliul căilor biliare."
+        },
+        {
+          "letter": "C",
+          "text": "are un pH alcalin cuprins între 7,6 și 8,6",
+          "why": "Acesta este intervalul didactic pentru bila hepatică din manual; compoziția și pH-ul se modifică în cursul concentrării în vezică."
+        },
+        {
+          "letter": "D",
+          "text": "două dintre componentele sale intră și în constituția membranelor celulare",
+          "why": "Colesterolul și lecitina sunt componente biliare și, de asemenea, lipide ale membranelor celulare."
+        },
+        {
+          "letter": "E",
+          "text": "vezica biliară are o formă de pară și este localizată pe suprafața viscerală a ficatului",
+          "why": "Descrierea vezicii biliare este anatomic corectă, dar baremul o exclude din selecția proprietăților bilei; se referă la organul de depozitare."
+        }
+      ],
+      "sourcePages": [
+        190
+      ]
+    },
+    {
+      "id": "dg-030",
+      "number": 30,
+      "sourceNumber": 30,
+      "sourceChapter": "X",
+      "prompt": "Despre funcțiile ficatului sunt adevărate următoarele afirmații:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "secretă bila ce nu conține enzime",
+          "why": "Ficatul produce bila, iar rolul său digestiv depinde de săruri biliare, nu de enzime digestive."
+        },
+        {
+          "letter": "B",
+          "text": "stochează toate vitaminele liposolubile",
+          "why": "Ficatul poate depozita vitaminele A, D, E și K; rezervele și repartizarea tisulară diferă mult, mai ales pentru vitamina K."
+        },
+        {
+          "letter": "C",
+          "text": "unele procese din metabolismul proteic, cum este dezaminarea aminoacizilor, se desfășoară la nivelul celulelor hepatice",
+          "why": "Hepatocitele participă la metabolismul aminoacizilor și transformă azotul rezultat în uree."
+        },
+        {
+          "letter": "D",
+          "text": "ficatul este divizat în patru lobi: drept, stâng, caudat și pătrat",
+          "why": "Afirmația descrie anatomia ficatului, nu o funcție a lui, motiv pentru care nu intră în selecția cerută."
+        },
+        {
+          "letter": "E",
+          "text": "secretă și excretă bila",
+          "why": "Bila este o secreție hepatică și o cale de excreție pentru bilirubină, colesterol și anumite substanțe metabolizate."
+        }
+      ],
+      "sourcePages": [
+        190
+      ]
+    },
+    {
+      "id": "dg-031",
+      "number": 31,
+      "sourceNumber": 31,
+      "sourceChapter": "X",
+      "prompt": "Următoarele afirmații privind glandele salivare sunt corecte:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt inervate parasimpatic de fibre ale nervilor cranieni facial și glosofaringian",
+          "why": "Facialul furnizează calea parasimpatică pentru submandibulară și sublinguală, iar glosofaringianul pentru parotidă, prin ganglionii corespunzători."
+        },
+        {
+          "letter": "B",
+          "text": "pot fi situate în vecinătatea urechii - glanda parotidă",
+          "why": "Parotida se află în regiunea preauriculară și subauriculară."
+        },
+        {
+          "letter": "C",
+          "text": "produc enzime care inițiază digestia",
+          "why": "Amilaza salivară inițiază digestia amidonului în cavitatea orală."
+        },
+        {
+          "letter": "D",
+          "text": "își varsă produsul de secreție exocrină în vecinătatea celui de al doilea molar superior - glanda submaxilară",
+          "why": "Această deschidere aparține ductului parotidian; ductul submaxilar se deschide în planșeul bucal."
+        },
+        {
+          "letter": "E",
+          "text": "sunt glande mari, nepereche, care participă la formarea salivei",
+          "why": "Cele trei categorii de glande salivare mari sunt perechi, nu nepereche."
+        }
+      ],
+      "sourcePages": [
+        190
+      ]
+    },
+    {
+      "id": "dg-032",
+      "number": 32,
+      "sourceNumber": 32,
+      "sourceChapter": "X",
+      "prompt": "Hidroxiapatita se găsește în structura:",
+      "asksFalse": false,
+      "correct": [
+        "C",
+        "D",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "canalului radicular",
+          "why": "Canalul radicular este spațiul care adăpostește țesut pulpar, vase și nervi; hidroxiapatita se află în țesuturile dure care îl înconjoară."
+        },
+        {
+          "letter": "B",
+          "text": "pulpei dentare",
+          "why": "Pulpa este țesut conjunctiv moale vascularizat și inervat, nu componenta mineralizată normală a dintelui."
+        },
+        {
+          "letter": "C",
+          "text": "smalțului dentar",
+          "why": "Cristalele de hidroxiapatită constituie principala componentă minerală a smalțului."
+        },
+        {
+          "letter": "D",
+          "text": "țesutului osos",
+          "why": "Hidroxiapatita mineralizează matricea osoasă și contribuie la rezistența ei la compresiune."
+        },
+        {
+          "letter": "E",
+          "text": "celui mai dur țesut al organismului",
+          "why": "Smalțul dentar, țesutul cel mai dur, conține o proporție foarte mare de mineral pe bază de hidroxiapatită."
+        }
+      ],
+      "sourcePages": [
+        190
+      ]
+    },
+    {
+      "id": "dg-033",
+      "number": 33,
+      "sourceNumber": 33,
+      "sourceChapter": "X",
+      "prompt": "La nivelul rădăcinii dintelui întâlnim:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "canalul radicular care conține vase sanguine și fibre nervoase aparținând nervului trigemen",
+          "why": "Canalul radicular conține pulpa radiculară cu vase și fibre senzitive provenite din ramurile trigemenului."
+        },
+        {
+          "letter": "B",
+          "text": "cement - dispus între dentină și membrana periodontală",
+          "why": "Cementul acoperă dentina radiculară și oferă inserție fibrelor ligamentului periodontal."
+        },
+        {
+          "letter": "C",
+          "text": "dentină - cu o duritate superioară smalțului dental",
+          "why": "Dentina se află în rădăcină, dar este mai puțin dură decât smalțul."
+        },
+        {
+          "letter": "D",
+          "text": "smalț - cea mai dură substanță din organism",
+          "why": "Smalțul acoperă coroana, nu rădăcina normală a dintelui."
+        },
+        {
+          "letter": "E",
+          "text": "cavitatea pulpară",
+          "why": "Baremul exclude E. Figura manualului etichetează separat cavitatea coronară și canalul radicular; în terminologia largă, cavitatea pulpară include și canalele rădăcinii. Excluderea depinde astfel de sensul restrâns al termenului."
+        }
+      ],
+      "sourcePages": [
+        190
+      ]
+    },
+    {
+      "id": "dg-034",
+      "number": 34,
+      "sourceNumber": 34,
+      "sourceChapter": "X",
+      "prompt": "Selectați relațiile corecte dintre dinți și rolul lor:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "incisivii - taie alimentele",
+          "why": "Marginea incisivă permite secționarea alimentelor."
+        },
+        {
+          "letter": "B",
+          "text": "caninii - mărunțesc alimentele",
+          "why": "Rolul caracteristic al caninilor este apucarea și sfâșierea, în timp ce mărunțirea este asociată premolarilor și molarilor."
+        },
+        {
+          "letter": "C",
+          "text": "premolari - sfâșie alimentele",
+          "why": "Premolarii participă predominant la zdrobirea și mărunțirea alimentelor; sfâșierea este atribuită caninilor."
+        },
+        {
+          "letter": "D",
+          "text": "molarii - mărunțesc alimentele",
+          "why": "Suprafețele ocluzale largi ale molarilor permit măcinarea alimentelor."
+        },
+        {
+          "letter": "E",
+          "text": "premolarii - sunt bicuspizi",
+          "why": "«Bicuspizi» este o denumire morfologică folosită pentru premolari, nu un rol în masticație; varianta nu răspunde relației funcționale cerute."
+        }
+      ],
+      "sourcePages": [
+        190
+      ]
+    },
+    {
+      "id": "dg-035",
+      "number": 35,
+      "sourceNumber": 35,
+      "sourceChapter": "X",
+      "prompt": "La nivelul planșeului oral se deschide ductul:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "glandelor submandibulare",
+          "why": "Ductele submandibulare se deschid pe carunculele sublinguale, lateral de frâul limbii."
+        },
+        {
+          "letter": "B",
+          "text": "glandelor parotide",
+          "why": "Ductul parotidian se deschide pe mucoasa obrazului, în vestibulul oral, nu în planșeu."
+        },
+        {
+          "letter": "C",
+          "text": "tuturor glandelor salivare mari",
+          "why": "Parotida constituie excepția: orificiul ei se află opus celui de-al doilea molar superior."
+        },
+        {
+          "letter": "D",
+          "text": "glandelor sublinguale",
+          "why": "Ductele sublinguale se deschid în planșeul bucal sub limbă."
+        },
+        {
+          "letter": "E",
+          "text": "parotidian, submandibular și sublingual",
+          "why": "Enumerarea include greșit ductul parotidian, care se deschide în vestibulul bucal."
+        }
+      ],
+      "sourcePages": [
+        190
+      ]
+    },
+    {
+      "id": "dg-036",
+      "number": 36,
+      "sourceNumber": 36,
+      "sourceChapter": "X",
+      "prompt": "Care dintre afirmațiile corecte referitoare la deglutiție sunt corecte?",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "în prima etapă, bolul alimentar este comprimat de palatul dur prin ridicarea limbii",
+          "why": "Limba ridicată presează bolul pe palatul dur și îl propulsează posterior în faza orală voluntară."
+        },
+        {
+          "letter": "B",
+          "text": "după împingerea bolului alimentar spre faringe cu ajutorul limbii, devine un proces involuntar",
+          "why": "Trecerea în faringe declanșează succesiunea reflexă faringiană și esofagiană."
+        },
+        {
+          "letter": "C",
+          "text": "presupune trecerea bolului alimentar din cavitatea orală, prin laringe și esofag spre stomac",
+          "why": "Bolul trece prin faringe, nu prin laringe; laringele aparține căilor respiratorii."
+        },
+        {
+          "letter": "D",
+          "text": "bolul alimentar nu poate pătrunde în căile respiratorii datorită închiderii epiglotei",
+          "why": "În deglutiția normală, coborârea epiglotei și închiderea laringelui protejează căile aeriene. Formularea nu exclude posibilitatea aspirației în tulburări de deglutiție."
+        },
+        {
+          "letter": "E",
+          "text": "pe parcursul etapei esofagiene, au loc contracții musculare peristaltice declanșate exclusiv de sistemul nervos somatic",
+          "why": "Controlul esofagului include componente vagale și enterice; musculatura netedă esofagiană nu este controlată exclusiv somatic."
+        }
+      ],
+      "sourcePages": [
+        190,
+        191
+      ]
+    },
+    {
+      "id": "dg-037",
+      "number": 37,
+      "sourceNumber": 37,
+      "sourceChapter": "X",
+      "prompt": "Selectați afirmațiile corecte referitoare la celulele parietale ale glandelor gastrice:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "secretă labferment, cu rol în digestia laptelui la sugari",
+          "why": "Celulele parietale produc HCl și factor intrinsec, nu enzime proteolitice precum labfermentul descris în manual."
+        },
+        {
+          "letter": "B",
+          "text": "produc acid clorhidric, implicat în activarea pepsinogenului",
+          "why": "Mediul acid creat de HCl favorizează transformarea pepsinogenului în pepsină."
+        },
+        {
+          "letter": "C",
+          "text": "produc o substanță anorganică cu rol în digestia proteică",
+          "why": "HCl este substanța anorganică ce denaturează proteinele și creează condițiile pentru acțiunea pepsinei."
+        },
+        {
+          "letter": "D",
+          "text": "secretă acid clorhidric și factor intrinsec, dar nu și precursorul pepsinei",
+          "why": "Pepsinogenul aparține celulelor principale; HCl și factorul intrinsec sunt produse parietale."
+        },
+        {
+          "letter": "E",
+          "text": "secretă factorul intrinsec, cu rol în absorbția intestinală a vitaminei B₂",
+          "why": "Factorul intrinsec este necesar absorbției vitaminei B₁₂, nu vitaminei B₂."
+        }
+      ],
+      "sourcePages": [
+        191
+      ]
+    },
+    {
+      "id": "dg-038",
+      "number": 38,
+      "sourceNumber": 38,
+      "sourceChapter": "X",
+      "prompt": "Următoarele afirmații privind fibrele musculare netede de la nivelul tubului digestiv sunt corecte:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "D",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "la nivelul tunicii musculare a intestinului subțire există fibre musculare circulare la exterior și longitudinale la interior",
+          "why": "Dispoziția este inversată: stratul circular este intern, iar cel longitudinal extern."
+        },
+        {
+          "letter": "B",
+          "text": "la nivelul stomacului, tunica musculară prezintă trei straturi de fibre musculare dispuse, în ordine, de la interior spre exterior: oblice, circulare, longitudinale",
+          "why": "Aceasta este ordinea celor trei straturi musculare gastrice."
+        },
+        {
+          "letter": "C",
+          "text": "la nivelul intestinului gros, fibrele musculare netede longitudinale sunt dispuse între submucoasă și stratul muscular circular",
+          "why": "Stratul circular se află intern față de stratul longitudinal; fibrele longitudinale sunt la exterior."
+        },
+        {
+          "letter": "D",
+          "text": "la nivelul tunicii mucoase se găsește și o cantitate redusă de mușchi neted",
+          "why": "Musculara mucoasei este un strat subțire de mușchi neted care produce mișcări locale ale mucoasei."
+        },
+        {
+          "letter": "E",
+          "text": "prin contracția fibrelor musculare netede circulare se reduce diametrul tubului digestiv",
+          "why": "Fibrele circulare înconjoară lumenul și îl îngustează prin contracție."
+        }
+      ],
+      "sourcePages": [
+        191
+      ]
+    },
+    {
+      "id": "dg-039",
+      "number": 39,
+      "sourceNumber": 39,
+      "sourceChapter": "X",
+      "prompt": "Trecerea bolului alimentar din esofag în stomac presupune relaxarea sfincterului:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "piloric",
+          "why": "Pilorul controlează trecerea din stomac în duoden, nu intrarea din esofag."
+        },
+        {
+          "letter": "B",
+          "text": "esofagian inferior",
+          "why": "Relaxarea sfincterului esofagian inferior permite bolului să intre în stomac."
+        },
+        {
+          "letter": "C",
+          "text": "ileocecal",
+          "why": "Sfincterul ileocecal reglează pasajul dintre ileon și cec."
+        },
+        {
+          "letter": "D",
+          "text": "esofagian superior",
+          "why": "Acesta permite intrarea bolului din faringe în esofag, nu trecerea esofagogastrică."
+        },
+        {
+          "letter": "E",
+          "text": "cardial",
+          "why": "«Cardial» este denumirea didactică alternativă a sfincterului esofagian inferior."
+        }
+      ],
+      "sourcePages": [
+        191
+      ]
+    },
+    {
+      "id": "dg-040",
+      "number": 40,
+      "sourceNumber": 40,
+      "sourceChapter": "X",
+      "prompt": "La nivel gastric se pot absorbi:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "apă",
+          "why": "Manualul include cantități mici de apă între substanțele absorbabile gastric; absorbția majoritară are loc intestinal."
+        },
+        {
+          "letter": "B",
+          "text": "unele monozaharide",
+          "why": "Baremul urmează lista manualului, care menționează absorbție gastrică redusă de glucoză. Stomacul nu este sediul principal al absorbției monozaharidelor."
+        },
+        {
+          "letter": "C",
+          "text": "proteine",
+          "why": "Proteinele alimentare necesită digestie, iar produșii lor se absorb predominant în intestinul subțire; nu sunt un produs obișnuit al absorbției gastrice."
+        },
+        {
+          "letter": "D",
+          "text": "ioni",
+          "why": "Mucoasa gastrică permite schimburi limitate de ioni; absorbția globală este mult mai importantă în intestin."
+        },
+        {
+          "letter": "E",
+          "text": "alcool",
+          "why": "Etanolul poate traversa mucoasa gastrică, deși cea mai mare parte a absorbției sale se realizează în intestinul subțire."
+        }
+      ],
+      "sourcePages": [
+        191
+      ]
+    },
+    {
+      "id": "dg-041",
+      "number": 41,
+      "sourceNumber": 41,
+      "sourceChapter": "X",
+      "prompt": "Funcția de apărare imună a sistemului digestiv este asigurată de:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "plăcile Peyer ileale",
+          "why": "Agregatele limfoide ileale participă la supravegherea antigenică și răspunsurile imune mucoase."
+        },
+        {
+          "letter": "B",
+          "text": "amigdalele palatine",
+          "why": "Amigdalele palatine sunt structuri limfoide care supraveghează antigenele de la intrarea în tractul digestiv."
+        },
+        {
+          "letter": "C",
+          "text": "secreția glandelor Brunner",
+          "why": "Baremul exclude C, însă studiile asupra glandelor Brunner umane au identificat imunoglobuline și lizozim, susținând un rol de apărare intestinală. Secreția lor are și rolul didactic de mucus alcalin protector față de acid; funcția defensivă nu trebuie negată."
+        },
+        {
+          "letter": "D",
+          "text": "amigdalele linguale",
+          "why": "Țesutul limfoid de la baza limbii participă la apărarea imună locală."
+        },
+        {
+          "letter": "E",
+          "text": "structuri limfoide nodulare ileale",
+          "why": "Nodulii limfoizi ileali, solitari sau agregați, sunt componente ale țesutului limfoid asociat mucoaselor."
+        }
+      ],
+      "sourcePages": [
+        191
+      ]
+    },
+    {
+      "id": "dg-042",
+      "number": 42,
+      "sourceNumber": 42,
+      "sourceChapter": "X",
+      "prompt": "Neutralizarea acidității chimului gastric bogat în HCl este realizată prin intermediul:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "C",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "ionilor HCO₃⁻ ajunși în lumenul gastric din sucul pancreatic",
+          "why": "Sucul pancreatic ajunge în duoden, nu în lumenul gastric; bicarbonatul neutralizează chimul după ieșirea din stomac."
+        },
+        {
+          "letter": "B",
+          "text": "produsului de secreție a glandelor Brunner",
+          "why": "Mucusul alcalin duodenal contribuie la neutralizarea acidului și la protecția mucoasei."
+        },
+        {
+          "letter": "C",
+          "text": "sistemelor tampon existente în secreția exocrină a pancreasului",
+          "why": "Bicarbonatul din sucul pancreatic consumă ionii H⁺ și crește pH-ul conținutului duodenal."
+        },
+        {
+          "letter": "D",
+          "text": "peptidazelor secretate de celulele intestinale",
+          "why": "Peptidazele hidrolizează legături peptidice; neutralizarea acidului este realizată de componente alcaline, în special bicarbonat."
+        },
+        {
+          "letter": "E",
+          "text": "mucusului secretat de glande de la nivelul duodenului",
+          "why": "Secreția alcalină a glandelor duodenale contribuie la tamponarea acidității chimului."
+        }
+      ],
+      "sourcePages": [
+        191
+      ]
+    },
+    {
+      "id": "dg-043",
+      "number": 43,
+      "sourceNumber": 43,
+      "sourceChapter": "X",
+      "prompt": "Emulsionarea lipidelor din chim se realizează sub acțiunea:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "enzimelor lipolitice din sucul pancreatic",
+          "why": "Lipazele hidrolizează trigliceridele; emulsionarea este dispersarea fizică a grăsimilor, care favorizează apoi lipoliza."
+        },
+        {
+          "letter": "B",
+          "text": "sărurilor biliare produse de ficat",
+          "why": "Sărurile biliare amfipatice stabilizează dispersia picăturilor lipidice în mediul apos."
+        },
+        {
+          "letter": "C",
+          "text": "dizaharidazelor intestinale",
+          "why": "Dizaharidazele acționează asupra glucidelor, nu asupra picăturilor de grăsime."
+        },
+        {
+          "letter": "D",
+          "text": "unor componente ale bilei",
+          "why": "Sărurile biliare și fosfolipidele biliare contribuie la dispersia și solubilizarea lipidelor."
+        },
+        {
+          "letter": "E",
+          "text": "vitaminelor liposolubile A, D, și K",
+          "why": "Aceste vitamine beneficiază de procesele de digestie și absorbție lipidică; ele nu sunt agenții de emulsionare."
+        }
+      ],
+      "sourcePages": [
+        191
+      ]
+    },
+    {
+      "id": "dg-044",
+      "number": 44,
+      "sourceNumber": 44,
+      "sourceChapter": "X",
+      "prompt": "Sub acțiunea enzimelor pancreatice se formează:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "C"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "dipeptide - din digestia proteinelor",
+          "why": "Digestia proteolitică pancreatică produce un amestec de peptide, care poate include dipeptide; nu trebuie redusă exclusiv la acest produs."
+        },
+        {
+          "letter": "B",
+          "text": "aminoacizi - sub acțiunea tripsinei",
+          "why": "Tripsina este în principal endopeptidază și fragmentează lanțurile în peptide; eliberarea terminală de aminoacizi aparține exopeptidazelor."
+        },
+        {
+          "letter": "C",
+          "text": "acizi grași - prin intervenția lipazei",
+          "why": "Lipaza pancreatică hidrolizează legăturile esterice ale trigliceridelor și eliberează acizi grași."
+        },
+        {
+          "letter": "D",
+          "text": "dizaharide - sub acțiunea amilazei salivare",
+          "why": "Amilaza salivară poate forma maltoză, dar nu este enzimă pancreatică; pancreasul produce amilaza pancreatică."
+        },
+        {
+          "letter": "E",
+          "text": "peptide - sub acțiunea aminopeptidazei",
+          "why": "Aminopeptidaza intestinală eliberează aminoacizi terminali din peptide și nu este o enzimă pancreatică caracteristică."
+        }
+      ],
+      "sourcePages": [
+        191
+      ]
+    },
+    {
+      "id": "dg-045",
+      "number": 45,
+      "sourceNumber": 45,
+      "sourceChapter": "X",
+      "prompt": "În capilarele sanguine ale vilozităților intestinale se absorb:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "glucoză",
+          "why": "Glucoza traversează enterocitele și ajunge în sângele capilarelor vilozitare, apoi în circulația portală."
+        },
+        {
+          "letter": "B",
+          "text": "maltoză",
+          "why": "Maltoza trebuie hidrolizată la glucoză înaintea absorbției obișnuite; nu trece ca dizaharid alimentar în capilare."
+        },
+        {
+          "letter": "C",
+          "text": "acizi grași cu lanț scurt de atomi de carbon",
+          "why": "Aceștia intră predominant în circulația portală, spre deosebire de lipidele cu lanț lung transportate prin chilomicroni."
+        },
+        {
+          "letter": "D",
+          "text": "aminoacizi",
+          "why": "Aminoacizii absorbiți trec prin capilarele vilozitare în sângele portal."
+        },
+        {
+          "letter": "E",
+          "text": "acizi grași cu lanț lung de atomi de carbon",
+          "why": "Ruta predominantă implică reesterificarea în enterocit și transportul în chilomicroni către limfă, nu capilarele sanguine vilozitare."
+        }
+      ],
+      "sourcePages": [
+        192
+      ]
+    },
+    {
+      "id": "dg-046",
+      "number": 46,
+      "sourceNumber": 46,
+      "sourceChapter": "X",
+      "prompt": "La nivelul membranei luminale a celulelor epiteliale intestinale:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "glucoza se absoarbe activ, împreună cu ionii de sodiu",
+          "why": "SGLT1 realizează cotransportul activ secundar Na⁺–glucoză prin membrana apicală."
+        },
+        {
+          "letter": "B",
+          "text": "monozaharidele sunt absorbite direct în capilarele sanguine",
+          "why": "La membrana luminală monozaharidele intră mai întâi în enterocite; urmează ieșirea bazolaterală și trecerea prin interstițiu spre capilare."
+        },
+        {
+          "letter": "C",
+          "text": "absorbția activă a glucozei nu necesită proteină transportor",
+          "why": "Transportul activ secundar al glucozei necesită cotransportorul membranar SGLT1."
+        },
+        {
+          "letter": "D",
+          "text": "glucoza se absoarbe pasiv",
+          "why": "Calea apicală principală descrisă în manual este activă secundar și dependentă de Na⁺; ieșirea bazolaterală se face prin transport facilitat."
+        },
+        {
+          "letter": "E",
+          "text": "absorbția glucozei este accelerată de suprafața mare de schimb creată de vilozități și microvilozități",
+          "why": "Aceste structuri măresc suprafața disponibilă pentru transportorii și procesele de absorbție."
+        }
+      ],
+      "sourcePages": [
+        192
+      ]
+    },
+    {
+      "id": "dg-047",
+      "number": 47,
+      "sourceNumber": 47,
+      "sourceChapter": "X",
+      "prompt": "La nivelul intestinului gros:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "are loc și absorbția de apă și ioni",
+          "why": "Colonul recuperează apă și electroliți din conținutul intestinal."
+        },
+        {
+          "letter": "B",
+          "text": "se formează materiile fecale",
+          "why": "Absorbția apei și compactarea reziduurilor contribuie la formarea și depozitarea fecalelor."
+        },
+        {
+          "letter": "C",
+          "text": "este secretat ionul Na⁺",
+          "why": "Fluxul net fiziologic caracteristic al sodiului în colon este absorbția, nu secreția."
+        },
+        {
+          "letter": "D",
+          "text": "se poate realiza absorbția vitaminelor",
+          "why": "Unele vitamine, inclusiv unele produse de microbiotă, pot fi absorbite colonic; nu toate vitaminele au aceeași eficiență de absorbție aici."
+        },
+        {
+          "letter": "E",
+          "text": "intrarea alimentelor nedigerate este controlată de valva ileocecală",
+          "why": "Mecanismul ileocecal reglează trecerea conținutului ileal în cec și limitează refluxul."
+        }
+      ],
+      "sourcePages": [
+        192
+      ]
+    },
+    {
+      "id": "dg-048",
+      "number": 48,
+      "sourceNumber": 48,
+      "sourceChapter": "X",
+      "prompt": "Selectați afirmațiile corecte:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "capul pancreasului este situat în concavitatea duodenului",
+          "why": "Bucla duodenală în formă de C înconjoară capul pancreasului."
+        },
+        {
+          "letter": "B",
+          "text": "ductul biliar se formează prin unirea ductelor hepatic drept și stâng",
+          "why": "Unirea ductelor drept și stâng formează ductul hepatic comun; coledocul rezultă după unirea acestuia cu ductul cistic."
+        },
+        {
+          "letter": "C",
+          "text": "vezica biliară este situată la nivelul suprafeței viscerale a ficatului",
+          "why": "Vezica biliară ocupă o fosă de pe fața viscerală a ficatului."
+        },
+        {
+          "letter": "D",
+          "text": "ductul Santorini se varsă în duoden proximal față de ampula hepatopancreatică",
+          "why": "Ductul pancreatic accesoriu se deschide la papila minoră, situată proximal față de papila majoră."
+        },
+        {
+          "letter": "E",
+          "text": "la nivelul ampulei hepatopancreatice se varsă atât bila cât și produsul de secreție endocrină a pancreasului",
+          "why": "Prin ducte ajunge secreția exocrină pancreatică; hormonii endocrini sunt eliberați în sânge."
+        }
+      ],
+      "sourcePages": [
+        192
+      ]
+    },
+    {
+      "id": "dg-049",
+      "number": 49,
+      "sourceNumber": 49,
+      "sourceChapter": "X",
+      "prompt": "Ficatul are următoarele roluri metabolice:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "D",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "intervine în metabolismul glucidic exclusiv prin glicogenogeneză și glicogenoliză",
+          "why": "Ficatul participă și la gluconeogeneză, glicoliză și alte căi; «exclusiv» face afirmația falsă."
+        },
+        {
+          "letter": "B",
+          "text": "este sediul dezaminării unor aminoacizi",
+          "why": "Hepatocitele metabolizează aminoacizi și dirijează azotul rezultat spre sinteza ureei."
+        },
+        {
+          "letter": "C",
+          "text": "stochează vitamine hidrosolubile: A, B₁₂, D, E și K",
+          "why": "B₁₂ este hidrosolubilă, dar A, D, E și K sunt liposolubile; clasificarea comună este greșită."
+        },
+        {
+          "letter": "D",
+          "text": "sintetizează unele proteine care intervin în coagularea sângelui",
+          "why": "Ficatul sintetizează fibrinogen, protrombină și alți factori plasmatici ai coagulării."
+        },
+        {
+          "letter": "E",
+          "text": "participă la stocarea fierului sub formă de feritină",
+          "why": "Legarea fierului de apoferitină permite depozitarea lui intracelulară în feritină."
+        }
+      ],
+      "sourcePages": [
+        192
+      ]
+    },
+    {
+      "id": "dg-050",
+      "number": 50,
+      "sourceNumber": 50,
+      "sourceChapter": "X",
+      "prompt": "Activitatea secretorie a stomacului este reglată de:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "fibre nervoase parasimpatice aparținând nervului vag",
+          "why": "Căile vagale stimulează secreția gastrică și participă la fazele nervoase ale digestiei."
+        },
+        {
+          "letter": "B",
+          "text": "un hormon produs de celule enteroendocrine din mucoasa gastrică",
+          "why": "Celulele G secretă gastrină, care stimulează în special secreția de acid gastric."
+        },
+        {
+          "letter": "C",
+          "text": "gastrină, care influențează secreția de pepsinogen dar nu și cea de acid clorhidric",
+          "why": "Gastrina stimulează puternic secreția acidă; negarea acestui efect este falsă."
+        },
+        {
+          "letter": "D",
+          "text": "fibre nervoase aparținând sistemului nervos somatic",
+          "why": "Glandele gastrice sunt reglate vegetativ, endocrin și paracrin, nu prin comenzi motorii somatice."
+        },
+        {
+          "letter": "E",
+          "text": "fibre nervoase simpatice inhibitoare cu originea în ganglionul celiac",
+          "why": "Neuronii simpatici postganglionari din ganglionii prevertebrali contribuie la inhibarea funcțiilor gastrice și la vasoconstricție."
+        }
+      ],
+      "sourcePages": [
+        192
+      ]
+    },
+    {
+      "id": "dg-051",
+      "number": 51,
+      "sourceNumber": 51,
+      "sourceChapter": "X",
+      "prompt": "Selectați afirmațiile corecte:",
+      "asksFalse": false,
+      "correct": [
+        "C",
+        "D",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "pH-ul nu influențează activitatea enzimatică",
+          "why": "Activitatea enzimatică depinde de pH; modificarea acestuia poate reduce eficiența sau inactiva enzima."
+        },
+        {
+          "letter": "B",
+          "text": "principala modalitate de absorbție la nivel intestinal este fagocitoza și pinocitoza",
+          "why": "Absorbția nutrienților obișnuiți utilizează predominant transportori, difuziune și osmoză, nu fagocitoză."
+        },
+        {
+          "letter": "C",
+          "text": "nucleaza acționează pe ADN și ARN pe care le transformă în nucleotide",
+          "why": "Nucleazele hidrolizează legăturile fosfodiesterice ale acizilor nucleici; familia include enzime pentru ADN și ARN, cu produși oligonucleotidici și nucleotidici."
+        },
+        {
+          "letter": "D",
+          "text": "ionii de bicarbonat neutralizează aciditatea chimului gastric",
+          "why": "Bicarbonatul din secrețiile duodenale, pancreatice și biliare tamponează acidul gastric ajuns în intestin."
+        },
+        {
+          "letter": "E",
+          "text": "hormonul secretat de celulele enteroendocrine din mucoasa gastrică reglează secreția de mucus, acid clorhidric și pepsinogen",
+          "why": "Manualul descrie gastrina ca regulator al secreției gastrice; efectul său principal este stimularea secreției acide în cadrul controlului integrat."
+        }
+      ],
+      "sourcePages": [
+        192
+      ]
+    },
+    {
+      "id": "dg-052",
+      "number": 52,
+      "sourceNumber": 52,
+      "sourceChapter": "X",
+      "prompt": "Despre activitatea stomacului se pot afirma următoarele:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "asigură descompunerea chimică a unor molecule",
+          "why": "Pepsina inițiază digestia proteinelor, iar mediul gastric contribuie la transformarea alimentelor."
+        },
+        {
+          "letter": "B",
+          "text": "participă la protecția tractului digestiv prin secreția principalelor celule parietale",
+          "why": "Baremul exclude B. Celulele mucoase furnizează bariera împotriva autodigestiei, însă HCl produs de celulele parietale are și rol antimicrobian; termenul general «protecția» face varianta ambiguă. Textul tipărit «principalelor celule parietale» este păstrat."
+        },
+        {
+          "letter": "C",
+          "text": "stochează alimentele",
+          "why": "Stomacul funcționează ca rezervor temporar și eliberează controlat conținutul în duoden."
+        },
+        {
+          "letter": "D",
+          "text": "mixează și desface bolul alimentar",
+          "why": "Contracțiile musculaturii gastrice amestecă bolul cu sucul gastric și îl fragmentează."
+        },
+        {
+          "letter": "E",
+          "text": "formează chimul gastric de consistență solidă",
+          "why": "Chimul este un amestec semifluid, nu un bol solid."
+        }
+      ],
+      "sourcePages": [
+        192,
+        193
+      ]
+    },
+    {
+      "id": "dg-053",
+      "number": 53,
+      "sourceNumber": 53,
+      "sourceChapter": "X",
+      "prompt": "Vilozitatea de la nivelul jejunului:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "C"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "conține glande Brunner ce secretă mucus alcalin",
+          "why": "Glandele Brunner se află în submucoasa duodenului, nu în vilozitățile jejunale."
+        },
+        {
+          "letter": "B",
+          "text": "participă la creșterea suprafeței intestinale",
+          "why": "Vilozitățile sunt proiecții ale mucoasei care măresc suprafața de absorbție."
+        },
+        {
+          "letter": "C",
+          "text": "permite absorbția glucozei",
+          "why": "Enterocitele vilozitare transportă glucoza spre capilarele sanguine din axul vilozității."
+        },
+        {
+          "letter": "D",
+          "text": "prezintă celule submucoase cu microvilozități",
+          "why": "Microvilozitățile aparțin membranei apicale a enterocitelor mucoasei, nu celulelor submucoase."
+        },
+        {
+          "letter": "E",
+          "text": "conține chiliferul central unde se absorb miceliile",
+          "why": "Chiliferul primește chilomicroni formați de enterocite; miceliile biliare rămân în lumen și livrează acolo produșii lipidici."
+        }
+      ],
+      "sourcePages": [
+        193
+      ]
+    },
+    {
+      "id": "dg-054",
+      "number": 54,
+      "sourceNumber": 54,
+      "sourceChapter": "X",
+      "prompt": "Celulele principale din glandele gastrice:",
+      "asksFalse": false,
+      "correct": [
+        "C",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt localizate în submucoasa gastrică",
+          "why": "Glandele gastrice sunt în mucoasă; celulele principale sunt situate predominant în porțiunile profunde ale glandelor."
+        },
+        {
+          "letter": "B",
+          "text": "secretă factor intrinsec necesar absorbției vitaminei B₁₂",
+          "why": "Factorul intrinsec este secretat de celulele parietale, nu de cele principale."
+        },
+        {
+          "letter": "C",
+          "text": "sunt stimulate de gastrină",
+          "why": "În schema de reglare din manual, gastrina participă la stimularea secreției de pepsinogen a celulelor principale."
+        },
+        {
+          "letter": "D",
+          "text": "se drenează în criptele profunde ale mucoasei",
+          "why": "Secreția celulelor principale ajunge în lumenul glandelor gastrice, care se deschid în fosetele mucoasei."
+        },
+        {
+          "letter": "E",
+          "text": "secretă și o enzimă ce digeră glucoza",
+          "why": "Glucoza este deja monozaharid absorbabil și nu necesită digestie; celulele principale secretă pepsinogen."
+        }
+      ],
+      "sourcePages": [
+        193
+      ]
+    },
+    {
+      "id": "dg-055",
+      "number": 55,
+      "sourceNumber": 55,
+      "sourceChapter": "X",
+      "prompt": "Glanda submandibulară:",
+      "asksFalse": false,
+      "correct": [
+        "C",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "este drenată prin ducte sublinguale, lateral de frâul lingual",
+          "why": "Glanda este drenată prin ductul submandibular; ductele sublinguale multiple aparțin glandei sublinguale."
+        },
+        {
+          "letter": "B",
+          "text": "este localizată aproape de suprafața externă a mandibulei",
+          "why": "Manualul o localizează lângă suprafața internă a mandibulei, în regiunea planșeului oral."
+        },
+        {
+          "letter": "C",
+          "text": "este drenată deasupra planșeului oral",
+          "why": "Ductul submandibular aduce saliva în cavitatea orală la nivelul carunculei sublinguale."
+        },
+        {
+          "letter": "D",
+          "text": "secretă enzime ce inițiază degradarea proteinelor",
+          "why": "Enzima digestivă salivară caracteristică este amilaza, care începe digestia amidonului, nu a proteinelor."
+        },
+        {
+          "letter": "E",
+          "text": "prin secreția celulelor seroase participă la formarea maltozei",
+          "why": "Celulele seroase secretă amilază, care produce maltoză în cursul digestiei amidonului."
+        }
+      ],
+      "sourcePages": [
+        193
+      ]
+    },
+    {
+      "id": "dg-056",
+      "number": 56,
+      "sourceNumber": 56,
+      "sourceChapter": "X",
+      "prompt": "Secrețiile digestive transformă:",
+      "asksFalse": false,
+      "correct": [
+        "A"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "amidonul în maltoză - amilaza pancreatică",
+          "why": "Amilaza pancreatică hidrolizează amidonul, producând maltoză și alți oligozaharizi."
+        },
+        {
+          "letter": "B",
+          "text": "alimentele în unități mici - doar în prezența acidului clorhidric",
+          "why": "Numeroase reacții digestive au loc în intestin la pH neutru sau alcalin; HCl nu este necesar tuturor enzimelor."
+        },
+        {
+          "letter": "C",
+          "text": "lipidele în grăsimi emulsionate - lipaza",
+          "why": "Sărurile biliare emulsionează grăsimile, iar lipaza hidrolizează legăturile esterice ale trigliceridelor."
+        },
+        {
+          "letter": "D",
+          "text": "lactoza în glucoză și fructoză - lactaza",
+          "why": "Lactaza produce glucoză și galactoză; fructoza este componentă a zaharozei."
+        },
+        {
+          "letter": "E",
+          "text": "dipeptidele în aminoacizi - carboxipeptidaza",
+          "why": "Baremul exclude E. Manualul asociază etapa dipeptide–aminoacizi cu dipeptidaza, dar carboxipeptidaza A poate hidroliza unele dipeptide, în funcție de substrat și pH. Nu se justifică afirmarea unei incapacități absolute a carboxipeptidazelor de a acționa pe dipeptide."
+        }
+      ],
+      "sourcePages": [
+        193
+      ]
+    },
+    {
+      "id": "dg-057",
+      "number": 57,
+      "sourceNumber": 57,
+      "sourceChapter": "X",
+      "prompt": "Glucidele sunt digerate prin acțiunea:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "amilazei pancreatice - a cărei secreție este stimulată și hormonal",
+          "why": "Amilaza pancreatică digeră amidonul, iar secreția enzimatică pancreatică este stimulată hormonal în special de CCK."
+        },
+        {
+          "letter": "B",
+          "text": "dizaharidazelor ce desfac dizaharidele în monozaharide",
+          "why": "Maltaza, lactaza și zaharaza completează digestia glucidelor la marginea în perie intestinală."
+        },
+        {
+          "letter": "C",
+          "text": "carboxipeptidazei care determină formarea peptidelor",
+          "why": "Carboxipeptidaza este o protează care eliberează aminoacizi terminali; nu digeră glucide."
+        },
+        {
+          "letter": "D",
+          "text": "amilazei salivare ce desface amidonul în maltoză",
+          "why": "Amilaza salivară începe digestia amidonului, producând inclusiv maltoză."
+        },
+        {
+          "letter": "E",
+          "text": "lactozei ce desface lactaza în glucoză și galactoză",
+          "why": "Enzima și substratul sunt inversate în textul tipărit: lactaza descompune lactoza, nu lactoza descompune lactaza."
+        }
+      ],
+      "sourcePages": [
+        193
+      ]
+    },
+    {
+      "id": "dg-058",
+      "number": 58,
+      "sourceNumber": 58,
+      "sourceChapter": "X",
+      "prompt": "Esofagul:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "D",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "este o structură tubulară cu musculatura dispusă în trei straturi",
+          "why": "Tunica musculară esofagiană are în principal două straturi, circular intern și longitudinal extern; trei straturi caracterizează stomacul."
+        },
+        {
+          "letter": "B",
+          "text": "în 1/3 inferioară prezintă musculatură netedă",
+          "why": "Treimea inferioară a esofagului are musculatură netedă în tunica musculară."
+        },
+        {
+          "letter": "C",
+          "text": "se întinde între faringe și sfincterul cardial (sfincterul gastric inferior)",
+          "why": "Esofagul unește faringele cu sfincterul esofagian inferior, numit cardial; paranteza tipărită «gastric inferior» este greșită și explică respingerea variantei compuse."
+        },
+        {
+          "letter": "D",
+          "text": "traversează diafragma",
+          "why": "Esofagul trece prin hiatusul esofagian pentru a ajunge la stomac."
+        },
+        {
+          "letter": "E",
+          "text": "în 1/3 superioară prezintă musculatură striată",
+          "why": "Treimea superioară esofagiană conține mușchi striat; regiunea mijlocie are structură mixtă."
+        }
+      ],
+      "sourcePages": [
+        193
+      ]
+    },
+    {
+      "id": "dg-059",
+      "number": 59,
+      "sourceNumber": 59,
+      "sourceChapter": "X",
+      "prompt": "Apendicele vermiform:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "este un organ vestigial",
+          "why": "Baremul urmează denumirea tradițională din manual. «Vestigial» nu înseamnă lipsit de funcție: apendicele conține țesut limfoid și are roluri imune."
+        },
+        {
+          "letter": "B",
+          "text": "este localizat în hipocondrul drept",
+          "why": "Baza apendicelui este atașată cecului în regiunea inferioară dreaptă a abdomenului, nu sub ficat în hipocondrul drept."
+        },
+        {
+          "letter": "C",
+          "text": "trebuie îndepărtat chirurgical în caz de inflamare",
+          "why": "Baremul include conduita tradițională a manualului. Clinic, operația nu este obligatorie în orice caz: unele apendicite pot fi tratate inițial cu antibiotice după evaluare; studiul randomizat CODA documentează această alternativă."
+        },
+        {
+          "letter": "D",
+          "text": "este fixat de cec, primul segment al intestinului gros",
+          "why": "Apendicele pornește din cec, inferior de joncțiunea ileocecală."
+        },
+        {
+          "letter": "E",
+          "text": "participă la digestia chimică",
+          "why": "Apendicele nu este un organ cu secreție enzimatică digestivă; rolurile sale sunt în principal limfoide și legate de microbiotă."
+        }
+      ],
+      "sourcePages": [
+        193
+      ]
+    },
+    {
+      "id": "dg-060",
+      "number": 60,
+      "sourceNumber": 60,
+      "sourceChapter": "X",
+      "prompt": "Despre structura dinților sunt adevărate afirmațiile:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "dentina - înconjoară smalțul, țesut de consistență mai moale",
+          "why": "La coroană smalțul acoperă dentina și este mai dur decât aceasta; raportul și duritatea sunt inversate."
+        },
+        {
+          "letter": "B",
+          "text": "pulpa dentară conține vase de sânge, nervi și țesuturile conjunctive ale dintelui",
+          "why": "Pulpa este componenta conjunctivă moale, vascularizată și inervată, din interiorul dintelui."
+        },
+        {
+          "letter": "C",
+          "text": "cementul conține vase și nervi",
+          "why": "Cementul este țesut mineralizat avascular și lipsit de inervație; vasele și nervii se găsesc în pulpă și țesuturile vecine."
+        },
+        {
+          "letter": "D",
+          "text": "țesuturile conjunctive sunt localizate la nivelul smalțului",
+          "why": "Smalțul este un țesut mineralizat de origine epitelială, nu un sediu de țesut conjunctiv moale."
+        },
+        {
+          "letter": "E",
+          "text": "smalțul conține hidroxiapatită",
+          "why": "Mineralul pe bază de hidroxiapatită constituie componenta dominantă a smalțului dentar."
+        }
+      ],
+      "sourcePages": [
+        193
+      ]
+    },
+    {
+      "id": "dg-061",
+      "number": 61,
+      "sourceNumber": 61,
+      "sourceChapter": "X",
+      "prompt": "Ileonul:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "prin acțiunea factorului intrinsec asigură absorbția vitaminei B₁₂",
+          "why": "Receptorii ileonului terminal permit absorbția complexului vitamină B₁₂–factor intrinsec."
+        },
+        {
+          "letter": "B",
+          "text": "comunică cu intestinul gros prin valva ileo-cecală",
+          "why": "Ileonul terminal se deschide în cec la joncțiunea ileocecală."
+        },
+        {
+          "letter": "C",
+          "text": "aparține tractului digestiv, ca și pancreasul",
+          "why": "Ileonul aparține tubului digestiv, dar pancreasul este organ anex al sistemului digestiv, nu segment al tractului."
+        },
+        {
+          "letter": "D",
+          "text": "prezintă o seroasă secretantă de lichid peritoneal",
+          "why": "Ileonul este acoperit de peritoneu visceral; mezoteliul și lichidul seros permit alunecarea anselor."
+        },
+        {
+          "letter": "E",
+          "text": "conține plăci Peyer, aglomerări de țesut limfoid",
+          "why": "Agregatele limfoide numite plăci Peyer sunt deosebit de dezvoltate în ileon."
+        }
+      ],
+      "sourcePages": [
+        193,
+        194
+      ]
+    },
+    {
+      "id": "dg-062",
+      "number": 62,
+      "sourceNumber": 62,
+      "sourceChapter": "X",
+      "prompt": "Asupra lipidelor se acționează la nivelul:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "C"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "duodenului - prin acțiunea lipazei pancreatice",
+          "why": "Lipaza pancreatică ajunge în duoden și hidrolizează trigliceridele alimentare."
+        },
+        {
+          "letter": "B",
+          "text": "gastric - prin acțiunea mucusului",
+          "why": "Mucusul gastric are rol protector și lubrifiant; hidroliza gastrică a grăsimilor este realizată de lipaza gastrică, nu de mucus."
+        },
+        {
+          "letter": "C",
+          "text": "intestinului subțire - prin acțiunea sărurilor biliare",
+          "why": "Sărurile biliare favorizează dispersia grăsimilor și formarea miceliilor, facilitând digestia și absorbția."
+        },
+        {
+          "letter": "D",
+          "text": "cavității bucale - prin acțiunea lipazei salivare",
+          "why": "Baremul exclude D. Datele umane sunt neuniforme: studiul biochimic din 1988 nu a detectat activitate linguală semnificativă, dar un studiu pe 15 adulți din 2014 a găsit lipoliză orală sensibilă la orlistat în timpul masticației migdalelor și nucii de cocos. Aceste rezultate nu permit afirmarea unei absențe absolute a lipolizei orale umane."
+        },
+        {
+          "letter": "E",
+          "text": "intestinului gros - prin acțiunea florei intestinale",
+          "why": "Baremul exclude E, însă bacteriile colonice umane pot modifica acizi grași, de exemplu prin biohidrogenare. Colonul nu este sediul principal al digestiei lipidelor alimentare, dar formularea generală «se acționează» nu exclude aceste transformări microbiene."
+        }
+      ],
+      "sourcePages": [
+        194
+      ]
+    },
+    {
+      "id": "dg-063",
+      "number": 63,
+      "sourceNumber": 63,
+      "sourceChapter": "X",
+      "prompt": "Selectați afirmațiile corecte:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "cea mai mare glandă din organism este localizată în hipocondrul stâng",
+          "why": "Ficatul este cea mai mare glandă și ocupă predominant hipocondrul drept."
+        },
+        {
+          "letter": "B",
+          "text": "sângele hepatic este drenat de vena hepatică",
+          "why": "Venele hepatice drenează sângele ficatului în vena cavă inferioară."
+        },
+        {
+          "letter": "C",
+          "text": "lobulii hepatici conțin hepatocite și celule Kupffer (mastocite)",
+          "why": "Celulele Kupffer sunt macrofage rezidente hepatice, nu mastocite."
+        },
+        {
+          "letter": "D",
+          "text": "ficatul primește sânge portal și arterial",
+          "why": "Vena portă și artera hepatică reprezintă cele două căi principale de aport sanguin hepatic."
+        },
+        {
+          "letter": "E",
+          "text": "prin fața diafragmatică, ficatul are raport cu vezica biliară",
+          "why": "Vezica biliară se află pe fața viscerală, inferioară, nu pe fața diafragmatică."
+        }
+      ],
+      "sourcePages": [
+        194
+      ]
+    },
+    {
+      "id": "dg-064",
+      "number": 64,
+      "sourceNumber": 64,
+      "sourceChapter": "X",
+      "prompt": "Secreția biliară traversează:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "ductele hepatice drept și stâng care se unesc în ductul hepatic comun",
+          "why": "Ductele hepatice colectează bila din ficat și formează ductul hepatic comun."
+        },
+        {
+          "letter": "B",
+          "text": "ductul cistic care asigură legătura cu vezica biliară",
+          "why": "Bila intră și iese din vezica biliară prin ductul cistic."
+        },
+        {
+          "letter": "C",
+          "text": "ductul cistic care se formează din unirea ductului hepatic drept și stâng",
+          "why": "Ductele hepatice formează ductul hepatic comun; ductul cistic aparține vezicii biliare."
+        },
+        {
+          "letter": "D",
+          "text": "ductul biliar și apoi ampula hepatopancreatică, care se deschide prin papilă la nivelul duodenului",
+          "why": "Traseul terminal obișnuit este coledoc–ampulă hepatopancreatică–papilă duodenală majoră."
+        },
+        {
+          "letter": "E",
+          "text": "vezica biliară aflată pe fața anterioară a ficatului",
+          "why": "Vezica biliară se află pe fața viscerală a ficatului, nu pe fața anterioară."
+        }
+      ],
+      "sourcePages": [
+        194
+      ]
+    },
+    {
+      "id": "dg-065",
+      "number": 65,
+      "sourceNumber": 65,
+      "sourceChapter": "X",
+      "prompt": "Despre conformația stomacului se pot afirma următoarele:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "C",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "corpul - partea principală, localizată în continuarea fornixului",
+          "why": "Corpul este partea principală a stomacului, continuând inferior fundusul sau fornixul."
+        },
+        {
+          "letter": "B",
+          "text": "antrul piloric - porțiunea dilatată, distală",
+          "why": "Baremul exclude B; manualul descrie antrul ca porțiune distală îngustă. Termenul «dilatată» nu precizează față de ce segment se face comparația: antrul este mai larg decât canalul piloric care îl continuă. Se păstrează această ambiguitate, fără modificarea baremului."
+        },
+        {
+          "letter": "C",
+          "text": "cardia - în apropierea cordului",
+          "why": "Cardia se află în regiunea joncțiunii esofagogastrice, în apropierea topografică a cordului, despărțită de acesta prin diafragmă."
+        },
+        {
+          "letter": "D",
+          "text": "curbura mică de la care pleacă marele epiplon",
+          "why": "Marele epiplon se atașează de curbura mare; micul epiplon unește curbura mică cu ficatul."
+        },
+        {
+          "letter": "E",
+          "text": "antrul piloric - localizat proximal de sfincterul piloric",
+          "why": "Antrul este situat înaintea canalului și sfincterului piloric pe direcția tranzitului gastric."
+        }
+      ],
+      "sourcePages": [
+        194
+      ]
+    },
+    {
+      "id": "dg-066",
+      "number": 66,
+      "sourceNumber": 66,
+      "sourceChapter": "X",
+      "prompt": "Despre duoden se pot afirma următoarele:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "se întinde între sfincterul piloric și valva ileocecală",
+          "why": "Aceste limite aparțin întregului intestin subțire; duodenul se termină la joncțiunea duodenojejunală."
+        },
+        {
+          "letter": "B",
+          "text": "conține glande intestinale ce se deschid în criptele Lieberkühn",
+          "why": "Baremul acceptă formularea manualului; mai precis, criptele Lieberkühn sunt chiar glandele tubulare intestinale care se deschid între vilozități."
+        },
+        {
+          "letter": "C",
+          "text": "prezintă deschiderea ampulei hepatopancreatice, la nivelul căreia se varsă bila și sucul pancreatic",
+          "why": "Papila majoră din duoden primește de obicei deschiderea comună a căii biliare și a ductului pancreatic principal."
+        },
+        {
+          "letter": "D",
+          "text": "prezintă aglomerări de țesut limfoid nodular",
+          "why": "Peretele duodenal conține țesut limfoid cu rol imun, deși plăcile Peyer sunt caracteristice mai ales ileonului."
+        },
+        {
+          "letter": "E",
+          "text": "prezintă glande Brunner ce secretă enzime intestinale",
+          "why": "Glandele Brunner sunt glande mucoase cu secreție alcalină protectoare, nu sursa principală a enzimelor digestive intestinale."
+        }
+      ],
+      "sourcePages": [
+        194
+      ]
+    },
+    {
+      "id": "dg-067",
+      "number": 67,
+      "sourceNumber": 67,
+      "sourceChapter": "X",
+      "prompt": "Selectați afirmațiile corecte:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "drogurile și toxinele sunt eliminate hepatic din sânge, prin excreția lor biliară",
+          "why": "Ficatul metabolizează numeroase substanțe și poate elimina prin bilă unele dintre ele sau metaboliții lor; nu toate toxinele urmează exclusiv această cale."
+        },
+        {
+          "letter": "B",
+          "text": "ficatul participă la activarea vitaminei D care va fi utilizată în organism",
+          "why": "Ficatul realizează 25-hidroxilarea vitaminei D; formarea principală a calcitriolului implică ulterior rinichiul."
+        },
+        {
+          "letter": "C",
+          "text": "toate vitaminele din tractul digestiv provin din alimentație",
+          "why": "Microbiota intestinală poate sintetiza unele vitamine, astfel că originea lor nu este exclusiv alimentară."
+        },
+        {
+          "letter": "D",
+          "text": "la nivelul membranei enterocitelor, difuziunea asigură transportul moleculelor lipidice",
+          "why": "Difuziunea contribuie la trecerea produșilor lipidici prin membrana enterocitelor; participă și proteine de transport, în funcție de moleculă."
+        },
+        {
+          "letter": "E",
+          "text": "celulele epiteliale desprinse din tractul digestiv se desfac sub acțiunea enzimelor digestive",
+          "why": "Baremul exclude E, însă proteinele endogene ale celulelor descuamate pot fi digerate și reciclate. Prezența unor resturi celulare în fecale nu dovedește că toate celulele sunt rezistente la digestie."
+        }
+      ],
+      "sourcePages": [
+        194
+      ]
+    },
+    {
+      "id": "dg-068",
+      "number": 68,
+      "sourceNumber": 68,
+      "sourceChapter": "X",
+      "prompt": "Despre structurile digestive abdominale se pot afirma următoarele:",
+      "asksFalse": false,
+      "correct": [
+        "C",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "ansele jejun-ileale sunt acoperite de micul epiplon",
+          "why": "Marele epiplon se așterne peste ansele intestinale; micul epiplon unește ficatul cu stomacul și duodenul proximal."
+        },
+        {
+          "letter": "B",
+          "text": "colonul transvers este cuprins între colonul ascendent - situat la stânga - și colonul descendent - situat la dreapta",
+          "why": "Colonul ascendent este la dreapta, iar cel descendent la stânga; pozițiile sunt inversate."
+        },
+        {
+          "letter": "C",
+          "text": "ficatul prezintă pe fața viscerală vezica biliară",
+          "why": "Vezica biliară este adăpostită într-o fosă de pe fața viscerală a ficatului."
+        },
+        {
+          "letter": "D",
+          "text": "pancreasul este localizat posterior de stomac și peritoneu",
+          "why": "Pancreasul se află posterior de stomac și este în cea mai mare parte secundar retroperitoneal; coada reprezintă excepția principală."
+        },
+        {
+          "letter": "E",
+          "text": "faringele se continuă cu esofagul, structură tubulară ce trece posterior de trahee",
+          "why": "Relația anatomică este adevărată, dar descrie în principal structuri cervicale și toracice, nu structurile abdominale cerute."
+        }
+      ],
+      "sourcePages": [
+        194,
+        195
+      ]
+    },
+    {
+      "id": "dg-069",
+      "number": 69,
+      "sourceNumber": 69,
+      "sourceChapter": "X",
+      "prompt": "Pancreasul:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "D",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "fagocitează celulele albe și roșii îmbătrânite",
+          "why": "Îndepărtarea celulelor sanguine îmbătrânite este asociată macrofagelor, inclusiv celor splenice și hepatice, nu funcției pancreatice digestive."
+        },
+        {
+          "letter": "B",
+          "text": "la nivelul duodenului, prezintă orificiile de deschidere ale ductelor sale, aflate la o distanță de 2,5 cm",
+          "why": "Manualul indică aproximativ 2,5 cm între deschiderea ductului accesoriu și papila majoră; distanța este o aproximație anatomică."
+        },
+        {
+          "letter": "C",
+          "text": "este localizat posterior de curbura mică a stomacului",
+          "why": "În topografia didactică din manual pancreasul este posterior de stomac în raport cu regiunea marii curburi, nu este descris în spatele curburii mici."
+        },
+        {
+          "letter": "D",
+          "text": "prezintă o secreție enzimatică controlată de secretină și colecistokinină",
+          "why": "CCK stimulează în principal secreția enzimatică acinară, iar secretina mai ales apa și bicarbonatul ductal; cei doi hormoni cooperează în reglarea secreției pancreatice."
+        },
+        {
+          "letter": "E",
+          "text": "este organizat sub formă de acini care formează 99 % din structura sa",
+          "why": "Baremul păstrează aproximația manualului pentru predominanța componentei exocrine. Strict, aceasta include și ducte, vase și stromă, deci procentul nu descrie numai celule acinare pure."
+        }
+      ],
+      "sourcePages": [
+        195
+      ]
+    },
+    {
+      "id": "dg-070",
+      "number": 70,
+      "sourceNumber": 70,
+      "sourceChapter": "X",
+      "prompt": "Următoarele afirmații despre dinți și componentele lor sunt adevărate:",
+      "asksFalse": false,
+      "correct": [
+        "C",
+        "D",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "pulpa dentară, situată între smalț și dentină, conține vase de sânge, nervi și țesut conjunctiv",
+          "why": "Compoziția pulpei este corectă, dar localizarea este greșită: pulpa se află în interiorul dentinei, nu între dentină și smalț."
+        },
+        {
+          "letter": "B",
+          "text": "pot fi deciduali sau temporari, în număr de 32",
+          "why": "Dentiția temporară are 20 de dinți; dentiția permanentă completă are 32."
+        },
+        {
+          "letter": "C",
+          "text": "sunt formați din coroană, gât și rădăcină",
+          "why": "Acestea sunt cele trei regiuni anatomice principale ale dintelui."
+        },
+        {
+          "letter": "D",
+          "text": "dentina formează cea mai mare parte a dintelui",
+          "why": "Dentina constituie masa principală a coroanei și rădăcinii, în jurul pulpei."
+        },
+        {
+          "letter": "E",
+          "text": "smalțul este cea mai dură substanță din organism",
+          "why": "Mineralizarea intensă conferă smalțului o duritate mai mare decât dentinei sau osului."
+        }
+      ],
+      "sourcePages": [
+        195
+      ]
+    },
+    {
+      "id": "dg-071",
+      "number": 71,
+      "sourceNumber": 71,
+      "sourceChapter": "X",
+      "prompt": "Următoarele afirmații despre glandele salivare sunt adevărate:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "produc enzime care inițiază procesul de digestie",
+          "why": "Amilaza salivară inițiază digestia amidonului în cavitatea orală."
+        },
+        {
+          "letter": "B",
+          "text": "sunt organe anexe ale tubului digestiv",
+          "why": "Glandele salivare eliberează secreții în tubul digestiv prin ducte, fără a constitui segmente ale lumenului alimentar."
+        },
+        {
+          "letter": "C",
+          "text": "ductul parotidian se deschide lateral de frâul limbii",
+          "why": "Acolo se deschide ductul submandibular; parotidianul se deschide în vestibul, opus molarului superior al doilea."
+        },
+        {
+          "letter": "D",
+          "text": "glanda sublinguală este denumită și glandă submandibulară",
+          "why": "Sublinguala și submandibulara sunt glande distincte; sinonimul submandibularei este submaxilară."
+        },
+        {
+          "letter": "E",
+          "text": "ductele sublinguale se deschid la nivelul planșeului oral",
+          "why": "Multiplele ducte ale glandei sublinguale se deschid sub limbă, de-a lungul planșeului oral."
+        }
+      ],
+      "sourcePages": [
+        195
+      ]
+    },
+    {
+      "id": "dg-072",
+      "number": 72,
+      "sourceNumber": 72,
+      "sourceChapter": "X",
+      "prompt": "Următoarele afirmații despre enzimele digestive sunt adevărate:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "amilaza salivară este o enzimă proteolitică ce digeră moleculele de amidon și glicogen",
+          "why": "Amilaza hidrolizează glucide și este amilolitică, nu proteolitică."
+        },
+        {
+          "letter": "B",
+          "text": "pepsina se formează din pepsinogen în prezența acidului clorhidric",
+          "why": "Mediul gastric acid permite activarea precursorului pepsinogen, urmată și de activare autocatalitică prin pepsină."
+        },
+        {
+          "letter": "C",
+          "text": "labfermentul are rol în digestia laptelui la adulți",
+          "why": "Manualul atribuie labfermentul sugarilor, nu adulților; suplimentar, chimozina umană funcțională nu este demonstrată prin gena CYMP, care este pseudogenă."
+        },
+        {
+          "letter": "D",
+          "text": "tripsina transformă proteinele în peptide",
+          "why": "Tripsina este o endopeptidază pancreatică ce scindează lanțuri proteice și produce peptide mai scurte."
+        },
+        {
+          "letter": "E",
+          "text": "nucleaza acționează asupra picăturilor mari de grăsime",
+          "why": "Nucleazele hidrolizează acizi nucleici, nu lipide; picăturile lipidice sunt emulsionate de sărurile biliare."
+        }
+      ],
+      "sourcePages": [
+        195
+      ]
+    },
+    {
+      "id": "dg-073",
+      "number": 73,
+      "sourceNumber": 73,
+      "sourceChapter": "X",
+      "prompt": "Celulele parietale din stomac produc:",
+      "asksFalse": false,
+      "correct": [
+        "D",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "acid clorhidric necesar digestiei lipidelor",
+          "why": "HCl este produs de celulele parietale, dar rolul indicat în manual este crearea mediului pentru digestia proteică; acidul nu este o lipază. Lipaza gastrică poate funcționa la pH acid, fără ca HCl să hidrolizeze enzimatic lipidele."
+        },
+        {
+          "letter": "B",
+          "text": "mucus ce asigură protecție împotriva autodigestiei",
+          "why": "Mucusul protector este produs de celulele mucoase, nu de celulele parietale."
+        },
+        {
+          "letter": "C",
+          "text": "pepsină ce descompune proteinele",
+          "why": "Celulele principale secretă pepsinogen; pepsina se formează prin activarea acestuia în lumen."
+        },
+        {
+          "letter": "D",
+          "text": "acid clorhidric ce activează pepsinogenul în pepsină",
+          "why": "Aciditatea gastrică este necesară activării precursorului proteolitic pepsinogen."
+        },
+        {
+          "letter": "E",
+          "text": "factor intrinsec necesar absorbției intestinale a vitaminei B₁₂",
+          "why": "Factorul intrinsec parietal permite absorbția receptor-mediată a B₁₂ în ileonul terminal."
+        }
+      ],
+      "sourcePages": [
+        195
+      ]
+    },
+    {
+      "id": "dg-074",
+      "number": 74,
+      "sourceNumber": 74,
+      "sourceChapter": "X",
+      "prompt": "Gastrina:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "controlează secreția de pepsinogen și HCl",
+          "why": "În schema manualului gastrina reglează aceste secreții; efectul dominant este stimularea secreției acide."
+        },
+        {
+          "letter": "B",
+          "text": "prezintă efecte antagonice stimulării parasimpatice",
+          "why": "Gastrina și stimularea parasimpatică favorizează activitatea gastrică, nefiind antagonice în această privință."
+        },
+        {
+          "letter": "C",
+          "text": "este secretat de celule mucoasei gastrice",
+          "why": "Celulele G enteroendocrine din mucoasa gastrică produc gastrina; forma tipărită a enunțului este păstrată."
+        },
+        {
+          "letter": "D",
+          "text": "are efecte similare cu nervul vag",
+          "why": "Atât gastrina, cât și stimularea vagală pot favoriza secreția și motilitatea gastrică, prin mecanisme diferite."
+        },
+        {
+          "letter": "E",
+          "text": "este secretat de celulele enteroendocrine",
+          "why": "Gastrina este un hormon eliberat de celulele G enteroendocrine în circulație."
+        }
+      ],
+      "sourcePages": [
+        195
+      ]
+    },
+    {
+      "id": "dg-075",
+      "number": 75,
+      "sourceNumber": 75,
+      "sourceChapter": "X",
+      "prompt": "Celulele intestinului subțire produc următoarele enzime digestive:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "nucleaza care acționează pe acizii nucleici",
+          "why": "Baremul include asocierea din manual. Nucleazele digestive luminale sunt în principal pancreatice, iar marginea în perie intestinală furnizează mai ales enzime pentru prelucrarea nucleotidelor; originea indicată necesită această rezervă."
+        },
+        {
+          "letter": "B",
+          "text": "secretina care stimulează secreția enzimatică",
+          "why": "Secretina este un hormon, nu o enzimă digestivă; stimulează predominant secreția pancreatică bogată în bicarbonat."
+        },
+        {
+          "letter": "C",
+          "text": "zaharaza care scindează zaharoza în dizaharide",
+          "why": "Zaharoza este deja dizaharid; zaharaza o transformă în monozaharidele glucoză și fructoză."
+        },
+        {
+          "letter": "D",
+          "text": "carboxipeptidaza care este o enzimă proteolitică",
+          "why": "Carboxipeptidazele digestive sunt produse de pancreas ca precursori, nu sunt atribuite celulelor intestinale în această clasificare."
+        },
+        {
+          "letter": "E",
+          "text": "aminopeptidaza care acționează asupra peptidelor",
+          "why": "Aminopeptidazele intestinale eliberează aminoacizi de la extremitatea amino a peptidelor."
+        }
+      ],
+      "sourcePages": [
+        195
+      ]
+    },
+    {
+      "id": "dg-076",
+      "number": 76,
+      "sourceNumber": 76,
+      "sourceChapter": "X",
+      "prompt": "Următoarele enzime digestive sunt implicate în digestia proteinelor:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "pepsina secretată sub formă inactivă",
+          "why": "Celulele principale secretă pepsinogen inactiv, precursorul pepsinei care hidrolizează proteinele în stomac."
+        },
+        {
+          "letter": "B",
+          "text": "lactaza ce acționează la pH acid",
+          "why": "Lactaza digeră lactoza, un glucid, și funcționează la nivel intestinal, nu este o protează gastrică acidă."
+        },
+        {
+          "letter": "C",
+          "text": "carboxipeptidaza secretată de acinii pancreatici",
+          "why": "Acinii secretă procarboxipeptidaze, activate intestinal; enzimele rezultate eliberează aminoacizi terminali din peptide."
+        },
+        {
+          "letter": "D",
+          "text": "tripsina ce acționează la pH neutru",
+          "why": "Tripsina digeră proteine în mediul intestinal neutru spre ușor alcalin; pH-ul optim este ușor alcalin, nu strict 7."
+        },
+        {
+          "letter": "E",
+          "text": "maltaza ce scindează dipeptidele în aminoacizi",
+          "why": "Maltaza hidrolizează maltoza în glucoză; dipeptidele sunt substraturi pentru dipeptidaze."
+        }
+      ],
+      "sourcePages": [
+        196
+      ]
+    },
+    {
+      "id": "dg-077",
+      "number": 77,
+      "sourceNumber": 77,
+      "sourceChapter": "X",
+      "prompt": "În capilarele sanguine din vilozitățile intestinale sunt absorbite:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "monozaharidele - glucoză, galactoză și fructoză",
+          "why": "După traversarea enterocitelor, aceste monozaharide intră în capilarele vilozitare și în circulația portală."
+        },
+        {
+          "letter": "B",
+          "text": "acizii grași cu lanț scurt",
+          "why": "Acizii grași cu lanț scurt ajung predominant direct în sângele portal."
+        },
+        {
+          "letter": "C",
+          "text": "acizii grași cu lanț lung",
+          "why": "Aceștia sunt preluați predominant în chilomicroni după reesterificare și transportați inițial limfatic."
+        },
+        {
+          "letter": "D",
+          "text": "aminoacizii proveniți din acțiunea enzimelor pancreatice",
+          "why": "Baremul exclude D, însă carboxipeptidazele pancreatice pot elibera aminoacizi absorbabili, care ajung în sângele portal. Nu este corect să se afirme că orice aminoacid absorbabil provine exclusiv din enzime intestinale."
+        },
+        {
+          "letter": "E",
+          "text": "trigliceridele sub formă de chilomicroni",
+          "why": "Chilomicronii sunt secretați către chiliferul limfatic, nu în capilarele sanguine vilozitare."
+        }
+      ],
+      "sourcePages": [
+        196
+      ]
+    },
+    {
+      "id": "dg-078",
+      "number": 78,
+      "sourceNumber": 78,
+      "sourceChapter": "X",
+      "prompt": "La nivelul intestinului gros se absorb:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "C",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "aminoacizii rezultați din acțiunea chimotripsinei",
+          "why": "Digestia proteolitică și absorbția principală a aminoacizilor au loc în intestinul subțire; chimotripsina produce în primul rând peptide."
+        },
+        {
+          "letter": "B",
+          "text": "aproximativ 300-400 ml apă/zi",
+          "why": "Acesta este volumul didactic din manual; absorbția colonică reală variază cu aportul și cantitatea de lichid care ajunge din ileon."
+        },
+        {
+          "letter": "C",
+          "text": "unele vitamine produse de bacteriile intestinale",
+          "why": "Microbiota produce anumite vitamine care pot fi preluate de epiteliul colonic, cu eficiență variabilă."
+        },
+        {
+          "letter": "D",
+          "text": "acizii nucleici ce nu sunt descompuși de nucleaze",
+          "why": "Acizii nucleici alimentari nu sunt absorbiți în mod obișnuit ca macromolecule intacte prin colon; digestia lor precedă absorbția constituenților."
+        },
+        {
+          "letter": "E",
+          "text": "ionul de sodiu",
+          "why": "Colonul absoarbe sodiu, iar transportul electroliților favorizează recuperarea apei."
+        }
+      ],
+      "sourcePages": [
+        196
+      ]
+    },
+    {
+      "id": "dg-079",
+      "number": 79,
+      "sourceNumber": 79,
+      "sourceChapter": "X",
+      "prompt": "Din compoziția bilei fac parte:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "bilirubina derivată din degradarea hemoglobinei globulelor roșii",
+          "why": "Bilirubina provine predominant din degradarea hemului eritrocitar și este excretată în bilă după conjugarea hepatică."
+        },
+        {
+          "letter": "B",
+          "text": "apa și ionii",
+          "why": "Apa și electroliții, inclusiv bicarbonatul, constituie componente ale bilei."
+        },
+        {
+          "letter": "C",
+          "text": "lecitina ce este un fosfolipid",
+          "why": "Lecitina sau fosfatidilcolina este un fosfolipid biliar implicat în solubilizarea lipidelor."
+        },
+        {
+          "letter": "D",
+          "text": "urobilinogenul ce este eliminat prin fecale",
+          "why": "Baremul exclude D, iar manualul enumeră bilirubina ca principal pigment biliar. Urobilinogenul se formează intestinal, dar o parte poate reveni în bilă prin circulația enterohepatică; el și derivații săi se elimină și fecal. Originea intestinală nu justifică negarea prezenței sale în bilă, astfel că excluderea necesită această rezervă."
+        },
+        {
+          "letter": "E",
+          "text": "colesterolul resorbit odată cu sărurile biliare",
+          "why": "Baremul exclude E, deși colesterolul este componentă reală a bilei și o parte poate fi reabsorbită. Absorbția colesterolului și recuperarea sărurilor biliare folosesc mecanisme și distribuții intestinale diferite; formularea «odată cu» este imprecisă și nu justifică negarea prezenței colesterolului în bilă."
+        }
+      ],
+      "sourcePages": [
+        196
+      ]
+    },
+    {
+      "id": "dg-080",
+      "number": 80,
+      "sourceNumber": 80,
+      "sourceChapter": "X",
+      "prompt": "Ficatul îndeplinește următoarele funcții metabolice:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "dezaminare, proces implicat în metabolismul lipidelor",
+          "why": "Dezaminarea îndepărtează gruparea amino a aminoacizilor și aparține în primul rând metabolismului aminoacizilor și proteinelor."
+        },
+        {
+          "letter": "B",
+          "text": "gluconeogeneză, reprezentând formarea de glucoză din anumiți aminoacizi",
+          "why": "Aminoacizii glucogenici pot furniza schelete carbonice pentru sinteza hepatică de glucoză."
+        },
+        {
+          "letter": "C",
+          "text": "glicogenoliză, reprezentând transformarea glucozei în glicogen",
+          "why": "Glicogenoliza descompune glicogenul; sinteza lui din glucoză se numește glicogenogeneză."
+        },
+        {
+          "letter": "D",
+          "text": "sinteza unor proteine plasmatice",
+          "why": "Hepatocitele produc albumină și numeroase proteine plasmatice, inclusiv factori de coagulare."
+        },
+        {
+          "letter": "E",
+          "text": "fagocitoza hematiilor și leucocitelor îmbătrânite",
+          "why": "Celulele Kupffer pot îndepărta celule sanguine îmbătrânite; în clasificarea cerută aceasta este funcție fagocitară, distinctă de funcțiile metabolice hepatocitare selectate."
+        }
+      ],
+      "sourcePages": [
+        196
+      ]
+    }
+  ]
+}

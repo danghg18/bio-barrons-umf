@@ -39,7 +39,7 @@
           return;
         }
         if (node.nodeType !== Node.ELEMENT_NODE) return;
-        if (node.matches('script,style,nav,button,input,textarea,select,svg,[data-curriculum-excluded]')) { flush(); return; }
+        if (node.matches('script,style,nav,button,input,textarea,select,svg,[data-curriculum-excluded],.quiz-option-explanation[hidden]')) { flush(); return; }
         // Inline emphasis and student marks must not interrupt a phrase. Block
         // boundaries, independent badges and controls never join passages.
         const inline = node.matches('a,span,strong,b,em,i,u,small,sub,sup,abbr,mark,s,strike,code') &&

@@ -1,0 +1,17 @@
+[
+"ABCD",
+"ADE","CE","ABCD","ADE","ACE","ACDE","ABCD","BE","ACDE","ABE",
+"BC","ACDE","ABCE","BCDE","BD","AE","ABCE","B","BCD","BDE",
+"CD","ABDE","BC","BCDE","BCE","ACDE","BC","C","ACE","ABCE",
+"BD","ABC","DE","ABE","ABDE","BCE","CD","C","AB","AD",
+"ABD","ACD","BE","ACE","CD","CDE","ACDE","BCD","BE","BDE",
+"AB","DE","ABCD","DE","ABCD","BD","BCE","ABDE","ACDE","CDE",
+"AE","ACD","ABDE","ACD","ABCE","BCDE","ABCD","ABDE","DE","ACDE",
+"BCE","BDE","CDE","ADE","ADE","BC","ADE","ABE","ACE","ADE",
+"BCE","ABC","ACE","BCDE","BCDE","DE","AE","ABCD","ADE","ABD",
+"BCD","BCDE","ABDE","AC","CDE","ACE","AD","BCD","ABC","AC",
+"BCE","AE","ABDE","ABCD","ABE","AE","ABDE","BCDE","DE","ABCD",
+"D","BD","BE","ACE","ABCD","C","BC","ACE","AC","BCDE",
+"BE","BCE","AB","ABE","BC","BCD","CD","CD","ACE","CD",
+"DE","BC","AB","C","DE","ABCE","CE","A","ABC"
+]

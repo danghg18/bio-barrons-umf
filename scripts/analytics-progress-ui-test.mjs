@@ -68,7 +68,7 @@ try {
     for (const [i, question] of quiz.questions.slice(0, 10).entries()) {
       const correct = i % 5 !== 0;
       await BBQuizAnalytics.recordAttempt({storageKey:quiz.storageKey, questionId:question.id, runId:run.id,
-        attemptId:BBQuizAnalytics.newAttemptId(), correct, selected:correct ? question.correct : [], answerKey:question.correct});
+        attemptId:BBQuizAnalytics.newAttemptId(), correct, selected:correct ? question.correct : [], answerKey:question.correct,contentRevision:question.contentRevision||0});
     }
     return {key:quiz.storageKey, runId:run.id, total:quiz.questions.length,
       wrongNumbers:quiz.questions.filter((_,i) => i % 5 === 0).map(q => q.number)};
@@ -94,7 +94,7 @@ try {
     for (let i = 10; i < quiz.questions.length; i++) {
       const question = quiz.questions[i], correct = i % 5 !== 0;
       await BBQuizAnalytics.recordAttempt({storageKey:key, questionId:question.id, runId,
-        attemptId:BBQuizAnalytics.newAttemptId(), correct, selected:correct ? question.correct : [], answerKey:question.correct});
+        attemptId:BBQuizAnalytics.newAttemptId(), correct, selected:correct ? question.correct : [], answerKey:question.correct,contentRevision:question.contentRevision||0});
     }
   }, fixture);
   await reload();
@@ -109,7 +109,7 @@ try {
     for (const [i, id] of round.questionIds.entries()) {
       const question = quiz.questions.find(q => q.id === id), correct = i < 6;
       await BBQuizAnalytics.recordAttempt({storageKey:key, questionId:id, runId:round.id,
-        attemptId:BBQuizAnalytics.newAttemptId(), correct, selected:correct ? question.correct : [], answerKey:question.correct});
+        attemptId:BBQuizAnalytics.newAttemptId(), correct, selected:correct ? question.correct : [], answerKey:question.correct,contentRevision:question.contentRevision||0});
     }
     return {id:round.id, remainingNumbers:round.questionIds.slice(6).map(id => quiz.questions.find(q => q.id === id).number)};
   }, fixture.key);
@@ -155,7 +155,7 @@ try {
     for (const id of round.questionIds) {
       const question = quiz.questions.find(q => q.id === id);
       await BBQuizAnalytics.recordAttempt({storageKey:key, questionId:id, runId:round.id,
-        attemptId:BBQuizAnalytics.newAttemptId(), correct:true, selected:question.correct, answerKey:question.correct});
+        attemptId:BBQuizAnalytics.newAttemptId(), correct:true, selected:question.correct, answerKey:question.correct,contentRevision:question.contentRevision||0});
     }
   }, fixture.key);
   await reload();
@@ -177,7 +177,7 @@ try {
     await analytics.finishRestart({storageKey:key, resetId:ticket.id});
     const run = await analytics.ensureRun(key), question = quiz.questions[0];
     await analytics.recordAttempt({storageKey:key, questionId:question.id, runId:run.id,
-      attemptId:analytics.newAttemptId(), correct:true, selected:question.correct, answerKey:question.correct});
+      attemptId:analytics.newAttemptId(), correct:true, selected:question.correct, answerKey:question.correct,contentRevision:question.contentRevision||0});
     return run.id;
   }, fixture.key);
   await reload();
@@ -259,7 +259,7 @@ try {
     const quiz = BB_QUIZ_INDEX.find(q => q.chapterNum === 3), question = quiz.questions[0];
     const run = await BBQuizAnalytics.ensureRun(quiz.storageKey);
     await BBQuizAnalytics.recordAttempt({storageKey:quiz.storageKey, questionId:question.id, runId:run.id,
-      attemptId:BBQuizAnalytics.newAttemptId(), correct:true, selected:question.correct, answerKey:question.correct});
+      attemptId:BBQuizAnalytics.newAttemptId(), correct:true, selected:question.correct, answerKey:question.correct,contentRevision:question.contentRevision||0});
     // A queued activation of the old control must also be harmless.
     document.getElementById('analytics-clear-confirm').click();
     const result = await window.__readOwnerReport({days:'all'});

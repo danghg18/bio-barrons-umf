@@ -1,51 +1,108 @@
-// Recovered verbatim from 810246f:assets/js/grile-feminin.js.
+/* Sursa: cartea UMF Cluj 2026. Barem independent: tests/umf-cluj-2026-answer-key.json. Audit: data/umf-2026-editorial-audit.json. */
 window.BB_QUIZ = {
   "version": 1,
   "storageKey": "bb.quiz.reproducator-feminin.v1",
   "title": "Grile · Sistemul reproducător feminin",
-  "firstNumber": 1,
-  "questionCount": 42,
+  "firstNumber": 69,
+  "questionCount": 71,
   "idPrefix": "rf-",
-  "recoveredFrom": {
-    "revision": "810246f",
-    "path": "assets/js/grile-feminin.js"
-  },
+  "contentRevision": 1,
+  "previousQuestionIds": [
+    "rf-001",
+    "rf-002",
+    "rf-003",
+    "rf-004",
+    "rf-005",
+    "rf-006",
+    "rf-007",
+    "rf-008",
+    "rf-009",
+    "rf-010",
+    "rf-011",
+    "rf-012",
+    "rf-013",
+    "rf-014",
+    "rf-015",
+    "rf-016",
+    "rf-017",
+    "rf-018",
+    "rf-019",
+    "rf-020",
+    "rf-021",
+    "rf-022",
+    "rf-023",
+    "rf-024",
+    "rf-025",
+    "rf-026",
+    "rf-027",
+    "rf-028",
+    "rf-029",
+    "rf-030",
+    "rf-031",
+    "rf-032",
+    "rf-033",
+    "rf-034",
+    "rf-035",
+    "rf-036",
+    "rf-037",
+    "rf-038",
+    "rf-039",
+    "rf-040",
+    "rf-041",
+    "rf-042"
+  ],
   "ranges": [
     {
-      "id": "grile-1-10",
-      "start": 1,
-      "end": 10
+      "id": "grile-69-78",
+      "start": 69,
+      "end": 78
     },
     {
-      "id": "grile-11-20",
-      "start": 11,
-      "end": 20
+      "id": "grile-79-88",
+      "start": 79,
+      "end": 88
     },
     {
-      "id": "grile-21-30",
-      "start": 21,
-      "end": 30
+      "id": "grile-89-98",
+      "start": 89,
+      "end": 98
     },
     {
-      "id": "grile-31-40",
-      "start": 31,
-      "end": 40
+      "id": "grile-99-108",
+      "start": 99,
+      "end": 108
     },
     {
-      "id": "grile-41-42",
-      "start": 41,
-      "end": 42
+      "id": "grile-109-118",
+      "start": 109,
+      "end": 118
+    },
+    {
+      "id": "grile-119-128",
+      "start": 119,
+      "end": 128
+    },
+    {
+      "id": "grile-129-138",
+      "start": 129,
+      "end": 138
+    },
+    {
+      "id": "grile-139-139",
+      "start": 139,
+      "end": 139
     }
   ],
   "questions": [
     {
       "id": "rf-001",
-      "number": 1,
-      "sourceNumber": 1,
+      "number": 69,
+      "sourceNumber": 69,
+      "sourceChapter": "XII",
+      "legacyNumber": 1,
       "originalNumber": 69,
-      "topic": "Gonada feminină",
-      "basis": "Gonada feminină are funcție gametogenă și endocrină: produce oocite și secretă progesteron. GnRH este hipotalamic, iar melatonina nu este hormon trop gonadal.",
       "prompt": "Care dintre afirmațiile privind funcțiile gonadei feminine sunt adevărate?",
+      "asksFalse": false,
       "correct": [
         "A",
         "B"
@@ -64,30 +121,32 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "secretă GnRH, hormon sterolic sintetizat din colesterol",
-          "why": "Greșit. GnRH nu este secretat de gonada feminină, ci de hipotalamus; în plus, GnRH este hormon eliberator de gonadotropine, nu hormon sterolic ovarian.",
-          "added": "Hormonii sterolici derivați din colesterol sunt estrogenii și progesteronul."
+          "why": "GnRH este un hormon peptidic, nu un steroid sintetizat din colesterol. GnRH hipotalamic reglează adenohipofiza; caracterizarea sa chimică din variantă este suficientă pentru a face afirmația falsă, fără a nega expresia locală a GnRH în alte țesuturi."
         },
         {
           "letter": "D",
           "text": "conține numeroase grupuri de celule ce formează foliculi",
-          "why": "Greșit pentru cerință. Foliculii sunt structuri ale ovarului, dar itemul cere funcțiile gonadei feminine, nu elemente de structură.",
-          "added": "În grile, diferența dintre funcție și structură contează mult."
+          "why": "Greșit pentru cerință. Foliculii sunt structuri ale ovarului, dar itemul cere funcțiile gonadei feminine, nu elemente de structură."
         },
         {
           "letter": "E",
           "text": "se află sub controlul hormonilor tropi: foliculostimulant, luteinizant și melatonină",
-          "why": "Greșit. Controlul ovarian se face prin FSH și LH, hormoni tropi adenohipofizari. Melatonina nu este inclusă în controlul gonadal din lecția Barron's."
+          "why": "FSH și LH sunt gonadotropine adenohipofizare. Melatonina este un hormon pineal, nu o gonadotropină adenohipofizară; eventualele sale efecte modulatoare asupra reproducerii nu o transformă într-un hormon trop de același tip."
         }
+      ],
+      "sourcePages": [
+        220
       ]
     },
     {
       "id": "rf-002",
-      "number": 2,
-      "sourceNumber": 2,
+      "number": 70,
+      "sourceNumber": 70,
+      "sourceChapter": "XII",
+      "legacyNumber": 2,
       "originalNumber": 70,
-      "topic": "Ovar, uter, vagin",
-      "basis": "Ovarul este susținut de ligamentul ovarian și suspensor, vaginul este posterior de uretră, iar uterul se află deasupra vaginului și vezicii urinare. Ligamentul suspensor nu leagă ovarul de uter, iar dimensiunile sunt inversate.",
       "prompt": "Selectați afirmațiile corecte:",
+      "asksFalse": false,
       "correct": [
         "A",
         "D",
@@ -107,7 +166,7 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "dimensiunile ovarului sunt de aproximativ 2,5 cm lungime și 5 cm lățime",
-          "why": "Greșit. Dimensiunile sunt inversate: ovarul are aproximativ 5 cm lungime și 2,5 cm lățime, nu 2,5 cm lungime și 5 cm lățime."
+          "why": "Varianta inversează dimensiunile din manual: acesta indică aproximativ 5 cm lungime și 2,5 cm lățime. Dimensiunile ovarului variază cu vârsta și starea funcțională; valorile din lecție sunt aproximative."
         },
         {
           "letter": "D",
@@ -117,18 +176,22 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "uterul este localizat deasupra vaginului și a vezicii urinare",
-          "why": "Corect. Uterul se află deasupra vaginului și a vezicii urinare, în regiunea anterioară a cavității pelviene."
+          "why": "În poziția obișnuită descrisă de manual, uterul se află superior vaginului, iar corpul său este orientat deasupra vezicii urinare. Raportul ilustrează poziția uterină uzuală, nu exclude variațiile de poziție."
         }
+      ],
+      "sourcePages": [
+        221
       ]
     },
     {
       "id": "rf-003",
-      "number": 3,
-      "sourceNumber": 3,
+      "number": 71,
+      "sourceNumber": 71,
+      "sourceChapter": "XII",
+      "legacyNumber": 3,
       "originalNumber": 71,
-      "topic": "Funcții",
-      "basis": "Trompa transportă zigotul, vaginul elimină materialul menstrual, iar uterul protejează mecanic fătul. Mărirea uterului și fimbriile sunt caracteristici anatomice, nu funcțiile cerute de item.",
       "prompt": "Care dintre afirmațiile privind funcțiile sistemului reproducător feminin sunt corecte?",
+      "asksFalse": false,
       "correct": [
         "B",
         "C",
@@ -138,7 +201,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "uterul are dimensiuni mărite considerabil în timpul sarcinii",
-          "why": "Greșit pentru cerință. Uterul își mărește mult dimensiunile în sarcină, dar aceasta este o modificare, nu una dintre funcțiile cerute de item."
+          "why": "Uterul se mărește mult în timpul sarcinii. Afirmația este adevărată, dar descrie o modificare de dimensiune, iar cerința solicită funcții ale organelor."
         },
         {
           "letter": "B",
@@ -158,18 +221,22 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "fimbriile sunt prelungiri spre ovar, cu originea în infundibul",
-          "why": "Greșit pentru cerință. Fimbriile sunt prelungiri ale infundibulului orientate spre ovar, dar afirmația descrie anatomie, nu funcția sistemului."
+          "why": "Fimbriile sunt prelungiri ale infundibulului orientate spre ovar. Descrierea este anatomică; varianta nu enunță funcția lor de captare a oocitului."
         }
+      ],
+      "sourcePages": [
+        221
       ]
     },
     {
       "id": "rf-004",
-      "number": 4,
-      "sourceNumber": 4,
+      "number": 72,
+      "sourceNumber": 72,
+      "sourceChapter": "XII",
+      "legacyNumber": 4,
       "originalNumber": 72,
-      "topic": "Ovare",
-      "basis": "Ca funcții, ovarele sunt controlate de FSH/LH, produc gameți feminini și secretă hormoni sexuali feminini. Localizarea și faptul că sunt pereche sunt caracteristici anatomice.",
       "prompt": "Ovarele au următoarele caracteristici funcționale:",
+      "asksFalse": false,
       "correct": [
         "C",
         "D",
@@ -179,12 +246,12 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "sunt situate în cavitatea pelviană",
-          "why": "Greșit pentru cerință. Localizarea în cavitatea pelviană este caracteristică anatomică, nu caracteristică funcțională."
+          "why": "Ovarele se află în cavitatea pelviană; aceasta este o caracteristică de localizare, nu o funcție."
         },
         {
           "letter": "B",
           "text": "sunt glande pereche",
-          "why": "Greșit pentru cerință. Faptul că ovarele sunt glande pereche descrie organizarea lor, nu funcția lor."
+          "why": "Ovarele sunt glande pereche, dar numărul și organizarea lor sunt caracteristici anatomice, nu funcții."
         },
         {
           "letter": "C",
@@ -201,16 +268,20 @@ window.BB_QUIZ = {
           "text": "secretă hormoni sexuali feminini",
           "why": "Corect. Ovarele secretă hormonii sexuali feminini principali: estrogeni și progesteron."
         }
+      ],
+      "sourcePages": [
+        221
       ]
     },
     {
       "id": "rf-005",
-      "number": 5,
-      "sourceNumber": 5,
+      "number": 73,
+      "sourceNumber": 73,
+      "sourceChapter": "XII",
+      "legacyNumber": 5,
       "originalNumber": 73,
-      "topic": "FSH",
-      "basis": "FSH stimulează creșterea foliculului ovarian și producția de estrogen. Ovulația și corpul galben sunt dependente mai ales de LH, iar îngroșarea endometrului este efect estrogenic.",
       "prompt": "Următoarele efecte aparțin FSH-ului:",
+      "asksFalse": false,
       "correct": [
         "A",
         "C"
@@ -219,7 +290,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "stimulează creșterea și maturarea câte unui folicul pe lună",
-          "why": "Corect. FSH stimulează creșterea și maturarea câte unui folicul ovarian pe lună."
+          "why": "FSH stimulează dezvoltarea foliculilor ovarieni. În ciclul obișnuit este selectat un folicul dominant; formularea din manual simplifică dezvoltarea unei cohorte de foliculi la maturarea unuia pe lună."
         },
         {
           "letter": "B",
@@ -239,18 +310,22 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "îngroașă mucoasa uterului",
-          "why": "Greșit. Îngroșarea mucoasei uterine este efect al estrogenilor asupra endometrului, nu efect direct al FSH."
+          "why": "Estrogenii stimulează direct proliferarea endometrului. FSH contribuie indirect, prin stimularea secreției ovariene de estrogeni; baremul nu include acest efect indirect între răspunsuri."
         }
+      ],
+      "sourcePages": [
+        221
       ]
     },
     {
       "id": "rf-006",
-      "number": 6,
-      "sourceNumber": 6,
+      "number": 74,
+      "sourceNumber": 74,
+      "sourceChapter": "XII",
+      "legacyNumber": 6,
       "originalNumber": 74,
-      "topic": "LH",
-      "basis": "LH susține producția de progesteron, stimulează foliculul să producă hormoni și determină transformarea foliculului în corp galben. Ovulația este în jurul zilei 14, nu 16, iar creșterea foliculului este rol FSH.",
       "prompt": "LH-ul stimulează:",
+      "asksFalse": false,
       "correct": [
         "A",
         "C",
@@ -265,7 +340,7 @@ window.BB_QUIZ = {
         {
           "letter": "B",
           "text": "ovulația, care se petrece în ziua a 16-a a ciclului menstrual",
-          "why": "Greșit. LH declanșează ovulația, dar momentul obișnuit într-un ciclu de 28 de zile este în jurul zilei 14, nu ziua 16."
+          "why": "LH declanșează ovulația, dar modelul de 28 de zile folosit în manual o plasează aproximativ în ziua 14. Ziua 16 nu este reperul acestui model; momentul real poate varia între cicluri."
         },
         {
           "letter": "C",
@@ -275,23 +350,27 @@ window.BB_QUIZ = {
         {
           "letter": "D",
           "text": "creșterea foliculilor ovarieni",
-          "why": "Greșit. Creșterea și maturarea foliculilor ovarieni sunt atribuite FSH-ului."
+          "why": "Baremul exclude D, atribuind creșterea foliculară FSH-ului. Totuși, LH susține steroidogeneza și dezvoltarea foliculară în cooperare cu FSH; excluderea nu înseamnă că LH nu contribuie deloc la acest proces."
         },
         {
           "letter": "E",
           "text": "formarea corpului galben din foliculul ovarian",
           "why": "Corect. După ovulație, LH determină transformarea foliculului rezidual în corp galben."
         }
+      ],
+      "sourcePages": [
+        221
       ]
     },
     {
       "id": "rf-007",
-      "number": 7,
-      "sourceNumber": 7,
+      "number": 75,
+      "sourceNumber": 75,
+      "sourceChapter": "XII",
+      "legacyNumber": 7,
       "originalNumber": 75,
-      "topic": "Uter",
-      "basis": "Itemul cere afirmațiile false: vaginul se inseră la nivelul colului, nu al corpului uterin, iar estrogenii și progesteronul sunt secretați de ovare/corp galben, nu de uter.",
       "prompt": "Alegeți afirmațiile false privitoare la uter:",
+      "asksFalse": true,
       "correct": [
         "B",
         "E"
@@ -300,8 +379,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "este un organ cavitar",
-          "why": "Adevărat, deci nu trebuia bifat. Uterul este un organ cavitar, cu perete muscular gros și cavitate uterină.",
-          "added": "Itemul cere afirmațiile false."
+          "why": "Adevărat, deci nu trebuia bifat. Uterul este un organ cavitar, cu perete muscular gros și cavitate uterină."
         },
         {
           "letter": "B",
@@ -321,18 +399,22 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "secretă estrogeni și progesteron",
-          "why": "Fals, deci corect de bifat. Estrogenii și progesteronul sunt secretați de ovare, mai ales de folicul și corpul galben, nu de uter."
+          "why": "În clasificarea organelor din lecție, uterul nu este gonada care secretă estrogeni și progesteron; această funcție revine ovarului. În sarcină, placenta formată la nivel uterin devine și ea organ endocrin."
         }
+      ],
+      "sourcePages": [
+        221
       ]
     },
     {
       "id": "rf-008",
-      "number": 8,
-      "sourceNumber": 8,
+      "number": 76,
+      "sourceNumber": 76,
+      "sourceChapter": "XII",
+      "legacyNumber": 8,
       "originalNumber": 76,
-      "topic": "Corpul galben",
-      "basis": "Corpul galben se formează sub acțiunea LH, secretă progesteron și estrogen, apoi involuează dacă nu are loc fecundația. Dacă fecundația are loc, hCG îl menține temporar.",
       "prompt": "Alegeți afirmațiile corecte privitoare la corpul galben:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B",
@@ -365,16 +447,20 @@ window.BB_QUIZ = {
           "text": "degenerează dacă fecundația se produce",
           "why": "Greșit. Dacă fecundația se produce, hCG menține corpul galben funcțional temporar; nu îl face să degenereze imediat."
         }
+      ],
+      "sourcePages": [
+        221
       ]
     },
     {
       "id": "rf-009",
-      "number": 9,
-      "sourceNumber": 9,
+      "number": 77,
+      "sourceNumber": 77,
+      "sourceChapter": "XII",
+      "legacyNumber": 9,
       "originalNumber": 77,
-      "topic": "Trompe uterine",
-      "basis": "Trompele au aproximativ 12,5 cm, se deschid în cavitatea uterină și includ istm, ampulă, infundibul. Capătul în formă de pâlnie este infundibulul, iar hrănirea fătului ține de uter/placentă.",
       "prompt": "Trompele uterine:",
+      "asksFalse": false,
       "correct": [
         "B",
         "C",
@@ -384,8 +470,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "spre ovare au formă de pâlnie, numită ampulă",
-          "why": "Greșit. Capătul trompei uterine dinspre ovar are formă de pâlnie și se numește infundibul, nu ampulă.",
-          "added": "Ampula este regiunea mai largă dintre infundibul și istm."
+          "why": "Greșit. Capătul trompei uterine dinspre ovar are formă de pâlnie și se numește infundibul, nu ampulă."
         },
         {
           "letter": "B",
@@ -400,23 +485,27 @@ window.BB_QUIZ = {
         {
           "letter": "D",
           "text": "se împart în trei regiuni, dinspre uter: istm, ampulă și infundibul",
-          "why": "Corect. Dinspre uter spre ovar, trompa are trei regiuni: istm, ampulă și infundibul."
+          "why": "Ordinea celor trei regiuni descrise în manual, dinspre uter spre ovar, este istm–ampulă–infundibul. Descrierile anatomice detaliate disting suplimentar porțiunea intramurală a trompei."
         },
         {
           "letter": "E",
           "text": "hrănesc fătul în timpul dezvoltării sale",
           "why": "Greșit. Hrănirea fătului în timpul dezvoltării este funcție a uterului și a placentei, nu a trompelor uterine."
         }
+      ],
+      "sourcePages": [
+        221
       ]
     },
     {
       "id": "rf-010",
-      "number": 10,
-      "sourceNumber": 10,
+      "number": 78,
+      "sourceNumber": 78,
+      "sourceChapter": "XII",
+      "legacyNumber": 10,
       "originalNumber": 78,
-      "topic": "Uter",
-      "basis": "Endometrul este stratul intern, iar perimetrul se continuă cu mezoteliul ligamentului larg. Stratul funcțional aparține endometrului, miometrul are mușchi neted, iar baremul acestei grile marchează A și D.",
       "prompt": "Afirmațiile adevărate referitoare la structura uterului sunt:",
+      "asksFalse": false,
       "correct": [
         "A",
         "D"
@@ -445,19 +534,23 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "stratul bazal al endometrului asigură regenerarea stratului funcțional după menstruație",
-          "why": "Greșit conform baremului folosit aici. Stratul bazal regenerează stratul funcțional după menstruație, dar varianta nu este inclusă în răspunsul acestei grile.",
-          "added": "Reține totuși ideea pentru lecție: stratul bazal nu se elimină la menstruație."
+          "why": "Baremul exclude E, însă stratul bazal al endometrului asigură într-adevăr regenerarea stratului funcțional după menstruație. Afirmația este susținută explicit de manual; excluderea din cheie nu o face falsă."
         }
+      ],
+      "sourcePages": [
+        221,
+        222
       ]
     },
     {
       "id": "rf-011",
-      "number": 11,
-      "sourceNumber": 11,
+      "number": 79,
+      "sourceNumber": 79,
+      "sourceChapter": "XII",
+      "legacyNumber": 11,
       "originalNumber": 79,
-      "topic": "Trompe uterine",
-      "basis": "Trompele merg pe marginea superioară a ligamentului larg, iar istmul se unește cu peretele uterin. Ampula este proximală de infundibul, peristaltismul e prin mușchi neted, nu striat.",
       "prompt": "Selectați afirmațiile corecte despre trompele uterine:",
+      "asksFalse": false,
       "correct": [
         "A",
         "C"
@@ -488,16 +581,20 @@ window.BB_QUIZ = {
           "text": "în segmentul situat proximal de ovar, asigură degenerarea ovulelor nefecundate",
           "why": "Greșit. Segmentul apropiat de ovar captează ovocitul prin fimbrii și îl transportă; nu are rol de degenerare a ovulelor nefecundate."
         }
+      ],
+      "sourcePages": [
+        222
       ]
     },
     {
       "id": "rf-012",
-      "number": 12,
-      "sourceNumber": 12,
+      "number": 80,
+      "sourceNumber": 80,
+      "sourceChapter": "XII",
+      "legacyNumber": 12,
       "originalNumber": 80,
-      "topic": "Raporturi anatomice",
-      "basis": "Ligamentul ovarian este medial, iar ligamentul suspensor este lateral față de ovar. Celelalte raporturi din item nu corespund formulei cerute de barem.",
       "prompt": "Următoarele raporturi directe sunt adevărate:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B"
@@ -516,7 +613,7 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "ureteral este situat lateral de rect",
-          "why": "Greșit. Formularea nu descrie un raport direct relevant pentru sistemul reproducător feminin; ureterul are raporturi pelviene proprii, nu este reperul cerut aici."
+          "why": "Baremul exclude C, iar sursa tipărește „ureteral”. Dacă termenul desemnează ureterul, acesta are un traseu lateral față de rect, cu țesuturi și spații pararectale interpuse; simpla poziție laterală nu stabilește un raport direct."
         },
         {
           "letter": "D",
@@ -528,16 +625,20 @@ window.BB_QUIZ = {
           "text": "istmul uterin este situat superior de vagin",
           "why": "Greșit pentru raport direct. Istmul uterin este între corp și col; raportul direct cu vaginul este realizat de colul uterin, nu de istm."
         }
+      ],
+      "sourcePages": [
+        222
       ]
     },
     {
       "id": "rf-013",
-      "number": 13,
-      "sourceNumber": 13,
+      "number": 81,
+      "sourceNumber": 81,
+      "sourceChapter": "XII",
+      "legacyNumber": 13,
       "originalNumber": 81,
-      "topic": "Vagin",
-      "basis": "Fornixul are raport cu colul uterin, vaginul elimină endometrul necrozat la menstruație și are țesut fibros. Nu conține doar mușchi neted, iar musculatura nu este într-un singur strat.",
       "prompt": "Despre vagin sunt adevărate următoarele afirmații:",
+      "asksFalse": false,
       "correct": [
         "B",
         "C",
@@ -567,18 +668,22 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "musculatura netedă este dispusă într-un singur strat",
-          "why": "Greșit. Musculatura netedă vaginală nu este descrisă ca un singur strat simplu; peretele are organizare musculară mai complexă."
+          "why": "Peretele vaginal are fascicule musculare netede organizate predominant circular intern și longitudinal extern, fără limite întotdeauna foarte nete; nu există un singur strat muscular uniform."
         }
+      ],
+      "sourcePages": [
+        222
       ]
     },
     {
       "id": "rf-014",
-      "number": 14,
-      "sourceNumber": 14,
+      "number": 82,
+      "sourceNumber": 82,
+      "sourceChapter": "XII",
+      "legacyNumber": 14,
       "originalNumber": 82,
-      "topic": "Ovar",
-      "basis": "În prima jumătate predomină estrogenii, iar în a doua jumătate corpul galben secretă predominant progesteron. Corticala/medulara este structură, estrogenii inhibă FSH, iar corpul galben nu se formează în medulară.",
       "prompt": "Despre funcția ovarelor sunt adevărate următoarele afirmații:",
+      "asksFalse": false,
       "correct": [
         "A",
         "D"
@@ -592,33 +697,37 @@ window.BB_QUIZ = {
         {
           "letter": "B",
           "text": "prezintă corticala la exterior și medulara la interior",
-          "why": "Greșit pentru cerință. Corticala și medulara sunt elemente de structură ovariană, nu funcții ale ovarului."
+          "why": "Corticala externă și medulara internă sunt componente reale ale ovarului, dar descriu structura, în timp ce cerința solicită funcția."
         },
         {
           "letter": "C",
           "text": "prin producția de estrogeni inhibă producția de LH",
-          "why": "Greșit. Estrogenii inhibă în principal secreția de FSH prin feedback negativ; LH are creștere bruscă înainte de ovulație."
+          "why": "Baremul exclude C, însă estrogenii pot inhiba secreția de LH prin feedback negativ. La niveluri preovulatorii mari și susținute, feedbackul devine pozitiv și favorizează vârful de LH; cele două mecanisme nu trebuie confundate."
         },
         {
           "letter": "D",
-          "text": "în a doua jumătate a ciclului menstrual secretă predominant progesteron",
+          "text": "în a doua jumătate a ciclului menstrual, secretă predominant progesteron",
           "why": "Corect. În a doua jumătate a ciclului, corpul galben secretă predominant progesteron."
         },
         {
           "letter": "E",
-          "text": "corpul galben, format în medulară, secretă estrogeni și progesteron",
+          "text": "corpului galben, format în medulară, secretă estrogeni și progesteron",
           "why": "Greșit. Corpul galben se formează din foliculul ovarian rezidual din corticală, nu din medulară."
         }
+      ],
+      "sourcePages": [
+        222
       ]
     },
     {
       "id": "rf-015",
-      "number": 15,
-      "sourceNumber": 15,
+      "number": 83,
+      "sourceNumber": 83,
+      "sourceChapter": "XII",
+      "legacyNumber": 15,
       "originalNumber": 83,
-      "topic": "Ovogeneză",
-      "basis": "Oocitul primar este prezent la naștere, trecerea spre oocit secundar începe la pubertate, iar al doilea globul polar apare doar dacă are loc fecundația. Antrul aparține foliculului matur, nu oocitului primar.",
       "prompt": "Despre oogeneză sunt adevărate următoarele afirmații:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B",
@@ -628,7 +737,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "transformarea oocitului primar în cel secundar are loc la pubertate",
-          "why": "Corect. După pubertate, lunar, un ovocit primar își finalizează prima diviziune meiotică și devine ovocit secundar."
+          "why": "Reluarea și finalizarea primei diviziuni meiotice apar în ciclurile ovulatorii începând de la pubertate. Nu toate oocitele primare se transformă simultan în oocite secundare la debutul pubertății."
         },
         {
           "letter": "B",
@@ -638,28 +747,32 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "al doilea globul polar se formează doar în prezența spermatozoizilor",
-          "why": "Corect. Al doilea globul polar apare numai dacă ovocitul secundar este stimulat de pătrunderea spermatozoidului și finalizează meioza II."
+          "why": "În fecundația fiziologică, pătrunderea spermatozoidului activează oocitul secundar și permite terminarea meiozei II, cu eliminarea celui de-al doilea globul polar."
         },
         {
           "letter": "D",
           "text": "oocitul primar se găsește într-o cavitate plină cu lichid numită antru",
-          "why": "Greșit. Cavitatea plină cu lichid, numită antru, aparține foliculului matur, nu ovocitului primar ca atare."
+          "why": "Baremul exclude D. Totuși, un folicul antral poate conține încă un oocit primar, până la reluarea meiozei; oocitul este în complexul cumulus–corona radiata, în raport cu antrul lichidian. Nu este corect să se susțină că antrul poate exista numai în jurul unui oocit secundar."
         },
         {
           "letter": "E",
           "text": "corpul galben rămâne activ aproximativ 12 zile",
-          "why": "Greșit pentru cerință. Corpul galben rămâne activ aproximativ 12 zile, dar afirmația nu descrie oogeneză propriu-zisă."
+          "why": "Durata de aproximativ 12 zile a activității corpului galben este valoarea didactică din manual. Această funcție luteală nu descrie formarea gametului prin oogeneză, solicitată în enunț."
         }
+      ],
+      "sourcePages": [
+        222
       ]
     },
     {
       "id": "rf-016",
-      "number": 16,
-      "sourceNumber": 16,
+      "number": 84,
+      "sourceNumber": 84,
+      "sourceChapter": "XII",
+      "legacyNumber": 16,
       "originalNumber": 84,
-      "topic": "Ovare",
-      "basis": "La nivel ovarian, LH rupe foliculul matur, resturile foliculare formează corpul galben, iar hCG poate menține corpul galben după fecundație. Nutrienții fazei secretorii sunt secretați de endometru.",
       "prompt": "Următoarele procese au loc la nivelul ovarelor:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B",
@@ -691,16 +804,20 @@ window.BB_QUIZ = {
           "text": "corpul galben este stimulat de gonadotropina corionică",
           "why": "Corect. Dacă apare fecundația, gonadotropina corionică hCG menține corpul galben funcțional."
         }
+      ],
+      "sourcePages": [
+        222
       ]
     },
     {
       "id": "rf-017",
-      "number": 17,
-      "sourceNumber": 17,
+      "number": 85,
+      "sourceNumber": 85,
+      "sourceChapter": "XII",
+      "legacyNumber": 17,
       "originalNumber": 85,
-      "topic": "Glanda mamară",
-      "basis": "Glanda mamară este anterioară toracic, are ducte și glande alveolare, iar lobii converg spre mamelon. Secreția laptelui este controlată de prolactină, nu de oxitocină.",
       "prompt": "Despre glanda mamară sunt adevărate următoarele afirmații:",
+      "asksFalse": false,
       "correct": [
         "A",
         "C",
@@ -711,7 +828,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "se găsește pe fața anterioară a toracelui",
-          "why": "Corect. Glanda mamară se află pe fața anterioară a toracelui."
+          "why": "Glanda mamară ocupă regiunea anterioară a toracelui, superficial de planul pectoral. Poziția sa permite deschiderea ductelor prin mamelon la suprafața corpului."
         },
         {
           "letter": "B",
@@ -721,7 +838,7 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "posterior de ea se găsește fascia superficială a mușchiului pectoral mare",
-          "why": "Corect. Posterior de glanda mamară se află fascia superficială a mușchiului pectoral mare."
+          "why": "Glanda mamară se află anterior de mușchiul pectoral mare și de planul fascial care îl acoperă. Varianta urmează eticheta „fascia superficială” din figura manualului; fascia pectorală și sistemul fascial superficial al sânului trebuie deosebite."
         },
         {
           "letter": "D",
@@ -731,18 +848,23 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "este formată din lobi ce se reunesc la nivelul mamelonului",
-          "why": "Corect. Lobii glandei mamare converg prin ducte spre regiunea mamelonului."
+          "why": "Lobii sunt drenați de ducte care converg spre mamelon. Formularea „lobii se reunesc” descrie schematic această convergență a căilor de evacuare a laptelui."
         }
+      ],
+      "sourcePages": [
+        222
       ]
     },
     {
       "id": "rf-018",
-      "number": 18,
-      "sourceNumber": 18,
+      "number": 86,
+      "sourceNumber": 86,
+      "sourceChapter": "XII",
+      "legacyNumber": 18,
       "originalNumber": 86,
-      "topic": "Afirmații mixte",
-      "basis": "Menstruația apare prin scăderea estrogenilor/progesteronului; Bartholin și Skene sunt glande exocrine; lactația depinde de prolactină, un hormon adenohipofizar; glanda mamară are lobi cu glande apocrine.",
+      "contentRevision": 1,
       "prompt": "Selectați afirmațiile corecte:",
+      "asksFalse": false,
       "correct": [
         "B",
         "C",
@@ -753,7 +875,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "ovarul prezintă 3 ligamente și uterul 2 ligamente",
-          "why": "Greșit. Afirmația combină incorect numărul ligamentelor; pentru ovar se rețin ligamentul ovarian, ligamentul suspensor și mezovariumul, iar uterul este susținut mai ales prin ligamentul larg."
+          "why": "Manualul prezintă pentru ovar ligamentul ovarian și ligamentul suspensor, alături de mezovarium. Uterul are mai multe structuri de susținere; perechea rigidă „3 ligamente/2 ligamente” nu descrie corect ansamblul."
         },
         {
           "letter": "B",
@@ -762,29 +884,34 @@ window.BB_QUIZ = {
         },
         {
           "letter": "C",
-          "text": "glandele Bartholin și Skene sunt glande exocrine situate la nivelul organelor genitale externe",
+          "text": "glandele Bartholin și Skene sunt glande exocrine situate la nivelul organelor genitale externe feminine",
           "why": "Corect. Glandele Bartholin și Skene sunt glande exocrine asociate organelor genitale externe feminine."
         },
         {
           "letter": "D",
-          "text": "secreția lactată este determinată de un hormon adenohipofizar",
-          "why": "Corect. Secreția lactată este stimulată de prolactină, hormon adenohipofizar."
+          "text": "canalele alveolare se găsesc în partea anterioară a glandei mamare",
+          "why": "Figura glandei mamare arată ductele orientate anterior spre mamelon, unde se evacuează laptele; aceasta este asocierea topografică urmărită de variantă."
         },
         {
           "letter": "E",
-          "text": "conțin mai mulți lobi alcătuiți din glande apocrine",
-          "why": "Corect. Glandele mamare sunt glande sudoripare modificate, organizate în lobi cu unități glandulare de tip apocrin/alveolar."
+          "text": "secreția glandei mamare este stimulată prin actul suptului",
+          "why": "Suptul activează reflexele neuroendocrine care susțin secreția prin prolactină și ejecția laptelui prin oxitocină."
         }
+      ],
+      "sourcePages": [
+        222,
+        223
       ]
     },
     {
       "id": "rf-019",
-      "number": 19,
-      "sourceNumber": 19,
+      "number": 87,
+      "sourceNumber": 87,
+      "sourceChapter": "XII",
+      "legacyNumber": 19,
       "originalNumber": 87,
-      "topic": "Fecundație",
-      "basis": "Fecundația menține corpul galben prin hCG și este urmată de implantarea blastocistului. Localizarea, momentul ajungerii în uter și segmentarea morulei nu sunt cele din baremul acestui item.",
       "prompt": "Despre fecundație sunt adevărate următoarele afirmații:",
+      "asksFalse": false,
       "correct": [
         "B",
         "C"
@@ -798,34 +925,37 @@ window.BB_QUIZ = {
         {
           "letter": "B",
           "text": "determină persistența corpului galben care continuă să secrete estrogeni și progesteron încă 3 luni",
-          "why": "Corect. Fecundația duce la apariția hCG, care menține corpul galben; acesta continuă să secrete estrogeni și progesteron aproximativ trei luni."
+          "why": "hCG produs după implantare menține corpul galben și secreția sa de progesteron și estrogeni în sarcina timpurie. Manualul folosește aproximativ trei luni; preluarea funcției de către placentă este progresivă."
         },
         {
           "letter": "C",
           "text": "este urmată, după 5 zile de la producere, de implantarea blastocistului în endometru",
-          "why": "Corect. După fecundație, blastocistul ajunge la endometru și implantarea se finalizează în aproximativ 5 zile."
+          "why": "Baremul include C și manualul indică aproximativ 5 zile. Studiul uman cu detectarea zilnică a hCG a estimat momentul implantării la 6–12 zile după ovulație, cel mai frecvent la 8–10 zile. Detectarea hormonală este un reper indirect, însă 5 zile nu trebuie prezentate ca termen sigur al implantării."
         },
         {
           "letter": "D",
           "text": "blastocistul ajunge în uter la 4-5 zile după ovulație",
-          "why": "Greșit conform baremului acestui item. Afirmația descrie migrarea blastocistului după ovulație, nu fenomenul central al fecundației cerut aici.",
-          "added": "Pentru lecție: blastocistul ajunge în uter la aproximativ 4-5 zile după ovulație."
+          "why": "Baremul exclude D, însă manualul afirmă explicit că blastocistul ajunge în uter la aproximativ 4–5 zile după ovulație. Afirmația descrie un eveniment al dezvoltării după fecundație și nu poate fi declarată falsă pe baza textului manualului."
         },
         {
           "letter": "E",
           "text": "morula rezultă printr-un proces de segmentare a zigotului",
-          "why": "Greșit conform baremului acestui item. Morula apare prin segmentarea zigotului, dar varianta ține de evenimentele de după fecundație, nu de fecundația propriu-zisă."
+          "why": "Baremul exclude E, însă morula rezultă într-adevăr prin segmentarea zigotului. Este o consecință a fecundației, la fel cum implantarea acceptată la C este un eveniment ulterior; enunțul nu precizează o restricție care să explice această diferență."
         }
+      ],
+      "sourcePages": [
+        223
       ]
     },
     {
       "id": "rf-020",
-      "number": 20,
-      "sourceNumber": 20,
+      "number": 88,
+      "sourceNumber": 88,
+      "sourceChapter": "XII",
+      "legacyNumber": 20,
       "originalNumber": 88,
-      "topic": "Gonade feminine",
-      "basis": "Funcțiile gonadelor feminine sunt producerea gameților și secreția hormonilor sexuali feminini. Localizarea și susținerea sunt caracteristici anatomice, iar ovarele sunt organe pereche.",
       "prompt": "Selectați afirmațiile corecte referitoare la funcțiile gonadelor feminine:",
+      "asksFalse": false,
       "correct": [
         "A",
         "C"
@@ -839,7 +969,7 @@ window.BB_QUIZ = {
         {
           "letter": "B",
           "text": "sunt situate retroperitoneal, la nivelul cavității pelviene",
-          "why": "Greșit pentru cerință. Localizarea ovarelor este caracteristică anatomică, nu funcție gonadală."
+          "why": "Varianta descrie localizarea, nu funcția gonadelor. În plus, deși manualul spune „retroperitoneal”, ovarul este considerat intraperitoneal, suspendat prin mezovarium și având epiteliu propriu la suprafață."
         },
         {
           "letter": "C",
@@ -854,18 +984,22 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "sunt susținute de ligamentul ovarian și de ligamentul suspensor",
-          "why": "Greșit pentru cerință. Ligamentul ovarian și ligamentul suspensor sunt elemente de susținere, nu funcții ale gonadelor."
+          "why": "Ligamentele ovarian și suspensor susțin ovarul, dar această descriere anatomică nu reprezintă o funcție a gonadei."
         }
+      ],
+      "sourcePages": [
+        223
       ]
     },
     {
       "id": "rf-021",
-      "number": 21,
-      "sourceNumber": 21,
+      "number": 89,
+      "sourceNumber": 89,
+      "sourceChapter": "XII",
+      "legacyNumber": 21,
       "originalNumber": 89,
-      "topic": "Peretele uterin",
-      "basis": "Peretele uterin include miometru cu mușchi neted și endometru cu strat funcțional și bazal. Perimetrul este seroasa, iar stratul bazal nu se elimină la menstruație.",
       "prompt": "Peretele uterin este format din:",
+      "asksFalse": false,
       "correct": [
         "C",
         "D"
@@ -874,8 +1008,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "endometru - al cărui strat bazal se elimină în timpul menstruației",
-          "why": "Greșit. La menstruație se elimină stratul funcțional al endometrului, nu stratul bazal.",
-          "added": "Stratul bazal rămâne și regenerează funcționalul."
+          "why": "Greșit. La menstruație se elimină stratul funcțional al endometrului, nu stratul bazal."
         },
         {
           "letter": "B",
@@ -885,7 +1018,7 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "miometru - alcătuit din fibre musculare netede",
-          "why": "Corect. Miometrul este stratul muscular al uterului și este alcătuit din fibre musculare netede."
+          "why": "Miometrul este stratul muscular al uterului, alcătuit din fascicule de mușchi neted. Contracțiile lui involuntare contribuie la expulzia fătului la naștere."
         },
         {
           "letter": "D",
@@ -897,16 +1030,21 @@ window.BB_QUIZ = {
           "text": "endometru - tunica seroasă a uterului",
           "why": "Greșit. Endometrul este tunica mucoasă internă, nu tunica seroasă a uterului."
         }
+      ],
+      "sourcePages": [
+        223
       ]
     },
     {
       "id": "rf-022",
-      "number": 22,
-      "sourceNumber": 22,
+      "number": 90,
+      "sourceNumber": 90,
+      "sourceChapter": "XII",
+      "legacyNumber": 22,
       "originalNumber": 90,
-      "topic": "Glande mamare",
-      "basis": "Glandele mamare sunt alveolare, au canale/ducte anterioare și secreția este menținută de supt. Prolactina stimulează secreția laptelui, iar oxitocina controlează ejecția.",
+      "contentRevision": 1,
       "prompt": "Selectați afirmațiile corecte referitoare la glandele mamare:",
+      "asksFalse": false,
       "correct": [
         "A",
         "D",
@@ -926,29 +1064,32 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "ejecția laptelui are loc sub acțiunea prolactinei",
-          "why": "Greșit. Ejecția laptelui are loc sub acțiunea oxitocinei, nu a prolactinei.",
-          "added": "Prolactina stimulează producerea/secreția laptelui."
+          "why": "Greșit. Ejecția laptelui are loc sub acțiunea oxitocinei, nu a prolactinei."
         },
         {
           "letter": "D",
-          "text": "canalele alveolare se găsesc în partea anterioară a glandei mamare",
-          "why": "Corect. Canalele/ductele glandei mamare converg anterior spre mamelon."
+          "text": "secreția lactată este determinată de un hormon adenohipofizar",
+          "why": "Prolactina este secretată de adenohipofiză și stimulează producerea laptelui; oxitocina eliberată din neurohipofiză determină ejecția."
         },
         {
           "letter": "E",
-          "text": "secreția glandei mamare este stimulată prin actul suptului",
-          "why": "Corect. Actul suptului stimulează reflex secreția lactată și ejecția laptelui prin prolactină și oxitocină."
+          "text": "conțin mai mulți lobi alcătuiți din glande apocrine",
+          "why": "Glanda mamară este organizată în lobi cu unități alveolare. Componenta lipidică a laptelui se elimină prin mecanism apocrin, iar multe proteine prin exocitoză merocrină; denumirea din manual simplifică aceste mecanisme."
         }
+      ],
+      "sourcePages": [
+        223
       ]
     },
     {
       "id": "rf-023",
-      "number": 23,
-      "sourceNumber": 23,
+      "number": 91,
+      "sourceNumber": 91,
+      "sourceChapter": "XII",
+      "legacyNumber": 23,
       "originalNumber": 91,
-      "topic": "Uter",
-      "basis": "Uterul comunică lateral cu trompele, inferior cu vaginul prin col și protejează/hrănește fătul. Este anterior în pelvis, iar protecția deschiderilor externe ține de labiile mici.",
       "prompt": "Uterul:",
+      "asksFalse": false,
       "correct": [
         "A",
         "C",
@@ -958,7 +1099,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "comunică lateral cu trompele uterine",
-          "why": "Corect. Uterul comunică lateral cu trompele uterine la nivelul fundului uterin."
+          "why": "Trompele uterine comunică cu uterul în unghiurile sale superolaterale. Fundul uterin este porțiunea bombată situată deasupra nivelului acestor deschideri."
         },
         {
           "letter": "B",
@@ -973,23 +1114,27 @@ window.BB_QUIZ = {
         {
           "letter": "D",
           "text": "protejează și hrănește fătul în timpul dezvoltării sale",
-          "why": "Corect. Uterul protejează și hrănește fătul în timpul sarcinii."
+          "why": "Uterul oferă protecție și mediul de dezvoltare fetală; aportul matern de nutrienți ajunge la făt prin placenta dezvoltată în relație cu endometrul."
         },
         {
           "letter": "E",
           "text": "protejează deschiderea vaginului și a uretrei",
           "why": "Greșit. Protecția deschiderii vaginului și a uretrei este atribuită labiilor mici, nu uterului."
         }
+      ],
+      "sourcePages": [
+        223
       ]
     },
     {
       "id": "rf-024",
-      "number": 24,
-      "sourceNumber": 24,
+      "number": 92,
+      "sourceNumber": 92,
+      "sourceChapter": "XII",
+      "legacyNumber": 24,
       "originalNumber": 92,
-      "topic": "Ciclu menstrual",
-      "basis": "Faza proliferativă îngroașă endometrul, faza secretorie implică progesteron și puțin estrogen din corpul galben, iar ciclul durează de obicei 28 de zile. Ovulația nu e exclusiv FSH, iar la menstruație se elimină endometru, nu miometru.",
       "prompt": "Selectați afirmațiile corecte referitoare la ciclul menstrual:",
+      "asksFalse": false,
       "correct": [
         "A",
         "C",
@@ -1019,18 +1164,22 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "are, de obicei, o durată de 28 de zile",
-          "why": "Corect. Ciclul menstrual are de obicei aproximativ 28 de zile."
+          "why": "Cele 28 de zile reprezintă modelul orientativ al manualului. Ciclurile reale au durate variabile, iar ovulația nu se produce obligatoriu în ziua 14 în fiecare ciclu."
         }
+      ],
+      "sourcePages": [
+        223
       ]
     },
     {
       "id": "rf-025",
-      "number": 25,
-      "sourceNumber": 25,
+      "number": 93,
+      "sourceNumber": 93,
+      "sourceChapter": "XII",
+      "legacyNumber": 25,
       "originalNumber": 93,
-      "topic": "Oogeneză",
-      "basis": "Prima meioză dă oocit secundar și globul polar, a doua poate da ovul, ambele produc globuli polari, iar oocitul secundar este ovulat. După pubertate nu se formează oocite primare noi din oogonii.",
       "prompt": "În timpul oogenezei:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B",
@@ -1063,16 +1212,20 @@ window.BB_QUIZ = {
           "text": "oocitul secundar părăsește ovarul prin ovulație",
           "why": "Corect. Ovocitul secundar este cel eliberat din ovar prin ovulație."
         }
+      ],
+      "sourcePages": [
+        223
       ]
     },
     {
       "id": "rf-026",
-      "number": 26,
-      "sourceNumber": 26,
+      "number": 94,
+      "sourceNumber": 94,
+      "sourceChapter": "XII",
+      "legacyNumber": 26,
       "originalNumber": 94,
-      "topic": "Estrogeni",
-      "basis": "Estrogenii sunt sintetizați de foliculii ovarieni, dezvoltă caracterele sexuale feminine și susțin faza proliferativă. Nu inhibă secreția hipotalamică de FSH, iar creșterea foliculilor este efect FSH.",
       "prompt": "Hormonii estrogeni:",
+      "asksFalse": false,
       "correct": [
         "A",
         "C",
@@ -1092,7 +1245,7 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "stimulează dezvoltarea caracterelor sexuale feminine",
-          "why": "Corect. Estrogenii stimulează dezvoltarea caracterelor sexuale feminine."
+          "why": "Estrogenii contribuie la dezvoltarea caracterelor sexuale feminine, inclusiv dezvoltarea sânilor și distribuția caracteristică a țesutului adipos."
         },
         {
           "letter": "D",
@@ -1102,18 +1255,23 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "stimulează creșterea foliculilor ovarieni",
-          "why": "Greșit. Creșterea foliculilor ovarieni este stimulată de FSH; estrogenii sunt produși de folicul și acționează mai ales asupra țintelor periferice și feedbackului hormonal."
+          "why": "Baremul exclude E, iar în schema didactică hormonul care stimulează creșterea foliculară este FSH. Estrogenii au însă și acțiuni locale în celulele granuloase; excluderea nu justifică negarea oricărei contribuții estrogenice la dezvoltarea foliculului."
         }
+      ],
+      "sourcePages": [
+        223,
+        224
       ]
     },
     {
       "id": "rf-027",
-      "number": 27,
-      "sourceNumber": 27,
+      "number": 95,
+      "sourceNumber": 95,
+      "sourceChapter": "XII",
+      "legacyNumber": 27,
       "originalNumber": 95,
-      "topic": "Fecundație și implantare",
-      "basis": "Capacitația permite reacția acrozomală, placenta rezultă din vilozități coriale plus țesut uterin, iar zigotul se formează în trompele uterine. Zigotul este diploid, iar meioza se finalizează după pătrunderea spermatozoidului.",
       "prompt": "Selectați afirmațiile corecte:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B",
@@ -1123,12 +1281,12 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "în timpul capacitației, membrana spermatozoidului este fragilizată, permițând eliberarea enzimelor acrozomale",
-          "why": "Corect. Capacitația fragilizează și modifică membrana spermatozoidului, permițând eliberarea enzimelor acrozomale."
+          "why": "Capacitația modifică membrana spermatozoidului și îl pregătește pentru reacția acrozomală. Eliberarea enzimelor este realizată prin reacția acrozomală propriu-zisă; cele două procese sunt succesive și distincte."
         },
         {
           "letter": "B",
           "text": "placenta se formează prin unirea vilozităților coriale cu țesuturile uterine",
-          "why": "Corect. Placenta se formează prin unirea vilozităților coriale ale blastocistului cu țesuturile uterine."
+          "why": "Placenta are o componentă fetală, cu vilozități coriale, și o componentă maternă endometrială. Asocierea lor permite schimburile necesare dezvoltării embrionului și fătului."
         },
         {
           "letter": "C",
@@ -1145,16 +1303,20 @@ window.BB_QUIZ = {
           "text": "oocitul secundar își finalizează meioza și eliberează globulul polar înainte de fecundație",
           "why": "Greșit. Ovocitul secundar își finalizează meioza II după pătrunderea spermatozoidului, nu înainte de fecundație."
         }
+      ],
+      "sourcePages": [
+        224
       ]
     },
     {
       "id": "rf-028",
-      "number": 28,
-      "sourceNumber": 28,
+      "number": 96,
+      "sourceNumber": 96,
+      "sourceChapter": "XII",
+      "legacyNumber": 28,
       "originalNumber": 96,
-      "topic": "Corp galben",
-      "basis": "Corpul galben se formează din celulele foliculare sub LH și, fără fecundație, secretă estrogen/progesteron aproximativ 12 zile. hCG îl menține, nu îl involuează, iar hormonii lui mențin endometrul.",
       "prompt": "Corpul galben ovarian:",
+      "asksFalse": false,
       "correct": [
         "B",
         "C"
@@ -1178,23 +1340,27 @@ window.BB_QUIZ = {
         {
           "letter": "D",
           "text": "involuează și se transformă în corp alb dacă fecundația a avut loc",
-          "why": "Greșit. Corpul galben se transformă în corp alb dacă fecundația nu a avut loc; dacă fecundația are loc, hCG îl menține temporar."
+          "why": "Baremul exclude D, urmărind menținerea corpului galben prin hCG în sarcina timpurie. După preluarea funcției endocrine de către placentă, corpul galben poate involua și dacă fecundația a avut loc; fără un reper temporal, varianta este incompletă."
         },
         {
           "letter": "E",
           "text": "prin hormonii secretați, determină eliminarea mucoasei endometriale la aproximativ 5 zile după fecundație",
           "why": "Greșit. Hormonii corpului galben mențin endometrul; eliminarea mucoasei endometriale apare când estrogenii și progesteronul scad."
         }
+      ],
+      "sourcePages": [
+        224
       ]
     },
     {
       "id": "rf-029",
-      "number": 29,
-      "sourceNumber": 29,
+      "number": 97,
+      "sourceNumber": 97,
+      "sourceChapter": "XII",
+      "legacyNumber": 29,
       "originalNumber": 97,
-      "topic": "Afirmații corecte",
-      "basis": "Infundibulul are fimbrii lângă ovar, iar clitorisul este organ erectil. Uterul crește în sarcină, foliculul primar devine matur, iar blastocistul ajunge în uter mai devreme decât ziua 12.",
       "prompt": "Selectați afirmațiile corecte:",
+      "asksFalse": false,
       "correct": [
         "B",
         "C"
@@ -1213,7 +1379,7 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "clitorisul este un organ erectil feminin",
-          "why": "Corect. Clitorisul este organ erectil feminin."
+          "why": "Clitorisul conține țesut erectil ale cărui spații vasculare se umplu cu sânge în timpul excitației sexuale. Această structură explică proprietatea erectilă."
         },
         {
           "letter": "D",
@@ -1225,16 +1391,20 @@ window.BB_QUIZ = {
           "text": "la 12 zile după ovulație, blastocistul ajunge în cavitatea uterină și, ulterior, se implantează",
           "why": "Greșit. Blastocistul ajunge în cavitatea uterină la aproximativ 4-5 zile după ovulație și se implantează ulterior, nu la 12 zile după ovulație."
         }
+      ],
+      "sourcePages": [
+        224
       ]
     },
     {
       "id": "rf-030",
-      "number": 30,
-      "sourceNumber": 30,
+      "number": 98,
+      "sourceNumber": 98,
+      "sourceChapter": "XII",
+      "legacyNumber": 30,
       "originalNumber": 98,
-      "topic": "Sistem reproducător feminin",
-      "basis": "Sistemul feminin produce și transportă ovulele, organe din tract sunt prinse în ligamentul larg, iar ovarele produc gameți și hormoni. Trompele se deschid lateral de ovare, iar ligamentul larg se fixează pe pereții laterali.",
       "prompt": "Despre sistemul reproducător feminin sunt adevărate următoarele afirmații:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B",
@@ -1254,7 +1424,7 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "trompele uterine se deschid în cavitatea pelviană, medial de ovare",
-          "why": "Greșit. Trompele se deschid lateral spre cavitatea pelviană în vecinătatea ovarelor; formularea cu medial de ovare este greșită."
+          "why": "Baremul exclude C, în acord cu formularea schematică a manualului. Deschiderea abdominală se află la infundibul, lângă ovar, iar descrieri anatomice plasează fimbriile pe fața medială ovariană; raportul este mobil. Nu este sigură respingerea variantei doar prin afirmația absolută că deschiderea ar fi obligatoriu laterală de ovar."
         },
         {
           "letter": "D",
@@ -1266,16 +1436,20 @@ window.BB_QUIZ = {
           "text": "ovarele sunt responsabile pentru producerea gameților și a hormonilor",
           "why": "Corect. Ovarele produc gameți feminini și secretă hormonii sexuali feminini."
         }
+      ],
+      "sourcePages": [
+        224
       ]
     },
     {
       "id": "rf-031",
-      "number": 31,
-      "sourceNumber": 31,
+      "number": 99,
+      "sourceNumber": 99,
+      "sourceChapter": "XII",
+      "legacyNumber": 31,
       "originalNumber": 99,
-      "topic": "Ovare",
-      "basis": "Ovarele sunt susținute de ligamentul ovarian și suspensor, conțin foliculi și eliberează oocitul secundar prin ovulație. Nu sunt nepereche/intraperitoneale în sensul itemului, iar corpul alb provine din corpul galben.",
       "prompt": "Despre ovare se pot afirma următoarele:",
+      "asksFalse": false,
       "correct": [
         "B",
         "C",
@@ -1285,7 +1459,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "sunt dispuse intraperitoneal",
-          "why": "Greșit conform baremului folosit aici. Ovarele sunt în cavitatea pelviană și sunt acoperite/legate de peritoneu prin mezovarium, dar varianta intraperitoneal nu este acceptată în această grilă."
+          "why": "Baremul exclude A, în acord cu formularea „retroperitoneal” din manual, însă ovarul este considerat organ intraperitoneal. Este atașat prin mezovarium, iar suprafața sa are epiteliu ovarian, nu o învelitoare peritoneală viscerală obișnuită."
         },
         {
           "letter": "B",
@@ -1307,16 +1481,20 @@ window.BB_QUIZ = {
           "text": "după menstruație, foliculul devine corp albicans",
           "why": "Greșit. După ovulație, foliculul devine corp galben; corpul albicans apare ulterior, prin degenerarea corpului galben."
         }
+      ],
+      "sourcePages": [
+        224
       ]
     },
     {
       "id": "rf-032",
-      "number": 32,
-      "sourceNumber": 32,
+      "number": 100,
+      "sourceNumber": 100,
+      "sourceChapter": "XII",
+      "legacyNumber": 32,
       "originalNumber": 100,
-      "topic": "Trompe uterine",
-      "basis": "Trompele sunt pe marginea superioară a ligamentului larg, au infundibul lângă ovar, se deschid în uter prin istm și au epiteliu ciliat în ampulă. Musculatura trompei este netedă, nu striată.",
       "prompt": "Selectați afirmațiile corecte referitoare la trompele uterine:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B",
@@ -1337,7 +1515,7 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "se deschid în cavitatea uterină printr-un segment scurt numit istm",
-          "why": "Corect. Trompa se deschide în cavitatea uterină prin segmentul scurt numit istm."
+          "why": "În schema manualului, istmul este segmentul scurt care se unește cu uterul. Anatomia detaliată distinge și porțiunea intramurală care traversează peretele uterin până la cavitate."
         },
         {
           "letter": "D",
@@ -1349,16 +1527,20 @@ window.BB_QUIZ = {
           "text": "contracțiile peristaltice ale musculaturii striate ampulare favorizează transportul ovulului",
           "why": "Greșit. Contracțiile peristaltice sunt produse de musculatură netedă, nu striată."
         }
+      ],
+      "sourcePages": [
+        224
       ]
     },
     {
       "id": "rf-033",
-      "number": 33,
-      "sourceNumber": 33,
+      "number": 101,
+      "sourceNumber": 101,
+      "sourceChapter": "XII",
+      "legacyNumber": 33,
       "originalNumber": 101,
-      "topic": "Uter",
-      "basis": "Uterul este susținut de ligamentele largi, are fund uterin la unirea cu trompele și istm inferior. Este anterior în pelvis și își schimbă mult dimensiunile/forma în sarcină.",
       "prompt": "Uterul:",
+      "asksFalse": false,
       "correct": [
         "B",
         "C",
@@ -1373,12 +1555,12 @@ window.BB_QUIZ = {
         {
           "letter": "B",
           "text": "este susținut prin ligamentele largi",
-          "why": "Corect. Uterul este susținut de ligamentele largi."
+          "why": "Ligamentele largi sunt pliuri peritoneale care leagă marginile laterale ale uterului de pereții pelvieni. Ele contribuie la menținerea raporturilor organului, alături de celelalte structuri de susținere pelviană."
         },
         {
           "letter": "C",
           "text": "prezintă regiunea fundului uterin, locul de unire cu trompele uterine",
-          "why": "Corect. Fundul uterin este regiunea superioară, unde se unesc trompele uterine cu uterul."
+          "why": "Baremul include C și urmează descrierea schematică din manual. Mai precis, trompele se unesc cu uterul în unghiurile superolaterale, iar fundul uterin este domul situat deasupra nivelului acestor deschideri."
         },
         {
           "letter": "D",
@@ -1390,16 +1572,21 @@ window.BB_QUIZ = {
           "text": "își păstrează forma specifică de pară pe parcursul sarcinii",
           "why": "Greșit. În sarcină, uterul își modifică masiv dimensiunile și forma; nu își păstrează forma tipică de pară."
         }
+      ],
+      "sourcePages": [
+        224,
+        225
       ]
     },
     {
       "id": "rf-034",
-      "number": 34,
-      "sourceNumber": 34,
+      "number": 102,
+      "sourceNumber": 102,
+      "sourceChapter": "XII",
+      "legacyNumber": 34,
       "originalNumber": 102,
-      "topic": "Funcții organe",
-      "basis": "Trompa transportă zigotul, uterul hrănește fătul, iar vaginul conduce fătul la naștere. Fecundația are loc de obicei în trompă, iar protecția uretrei/vaginului este atribuită labiilor mici în tabelul lecției.",
       "prompt": "Alegeți funcțiile îndeplinite de organele sistemului reproducător feminin:",
+      "asksFalse": false,
       "correct": [
         "B",
         "C",
@@ -1419,28 +1606,32 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "uterul hrănește fătul în timpul dezvoltării",
-          "why": "Corect. Uterul hrănește și protejează fătul în timpul sarcinii."
+          "why": "Uterul oferă mediul dezvoltării fetale; schimbul de nutrienți dintre mamă și făt se realizează prin placentă. Acesta este sensul funcției nutritive atribuite uterului în tabelul manualului."
         },
         {
           "letter": "D",
           "text": "vaginul conduce fătul în timpul nașterii",
-          "why": "Corect. Vaginul conduce fătul în timpul nașterii."
+          "why": "Vaginul este un conduct distensibil care formează segmentul final al canalului de naștere. În nașterea vaginală, fătul trece prin el spre exterior."
         },
         {
           "letter": "E",
           "text": "labiile mari protejează deschiderea vaginului și a uretrei",
-          "why": "Greșit. Protecția deschiderii vaginului și a uretrei este atribuită labiilor mici; labiile mari protejează mai general organele genitale externe."
+          "why": "Baremul exclude E; tabelul manualului atribuie protecția orificiilor vestibulare labiilor mici. Totuși, și labiile mari acoperă și protejează mai general structurile vulvare, astfel că formularea largă nu exclude orice rol protector al lor."
         }
+      ],
+      "sourcePages": [
+        225
       ]
     },
     {
       "id": "rf-035",
-      "number": 35,
-      "sourceNumber": 35,
+      "number": 103,
+      "sourceNumber": 103,
+      "sourceChapter": "XII",
+      "legacyNumber": 35,
       "originalNumber": 103,
-      "topic": "Organe genitale externe",
-      "basis": "Vulva este denumirea organelor externe, Bartholin și Skene lubrifiază, iar clitorisul e anterior de orificiul uretral. Vestibulul este delimitat de labiile mici, iar mons pubis este anterior simfizei pubiene.",
       "prompt": "Alegeți afirmațiile corecte despre organele genitale externe feminine:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B",
@@ -1472,16 +1663,20 @@ window.BB_QUIZ = {
           "text": "mons pubis este situat în spatele simfizei pubiene",
           "why": "Greșit. Mons pubis este situat anterior, peste simfiza pubiană, nu în spatele acesteia."
         }
+      ],
+      "sourcePages": [
+        225
       ]
     },
     {
       "id": "rf-036",
-      "number": 36,
-      "sourceNumber": 36,
+      "number": 104,
+      "sourceNumber": 104,
+      "sourceChapter": "XII",
+      "legacyNumber": 36,
       "originalNumber": 104,
-      "topic": "Glande mamare",
-      "basis": "Glandele mamare sunt alveolare, realizează lactația, sunt controlate secretor de prolactină, iar oxitocina expulzează laptele. Nu sunt glande endocrine.",
       "prompt": "Glandele mamare:",
+      "asksFalse": false,
       "correct": [
         "B",
         "C",
@@ -1497,33 +1692,37 @@ window.BB_QUIZ = {
         {
           "letter": "B",
           "text": "sunt glande de tip alveolar",
-          "why": "Corect. Glandele mamare sunt glande de tip alveolar."
+          "why": "Unitățile secretoare ale glandei mamare sunt alveole, grupate în lobuli și lobi. Laptele este colectat de sistemul de ducte."
         },
         {
           "letter": "C",
           "text": "au rol în secreția laptelui, proces numit lactație",
-          "why": "Corect. Rolul lor este secreția laptelui, proces numit lactație."
+          "why": "Celulele epiteliale ale alveolelor mamare produc componentele laptelui și le elimină în lumen. Această activitate secretorie participă la lactație."
         },
         {
           "letter": "D",
           "text": "secreția lor este controlată de prolactină",
-          "why": "Corect. Secreția laptelui este controlată de prolactină."
+          "why": "Prolactina produsă de adenohipofiză stimulează celulele secretoare mamare să producă lapte. Rolul ei se deosebește de ejecția laptelui prin oxitocină."
         },
         {
           "letter": "E",
           "text": "oxitocina controlează expulzia laptelui de la nivelul acestora",
-          "why": "Corect. Oxitocina controlează expulzia laptelui din glanda mamară."
+          "why": "Oxitocina determină contracția celulelor mioepiteliale din jurul unităților secretoare mamare. Laptele deja produs este împins astfel spre ducte și mamelon."
         }
+      ],
+      "sourcePages": [
+        225
       ]
     },
     {
       "id": "rf-037",
-      "number": 37,
-      "sourceNumber": 37,
+      "number": 105,
+      "sourceNumber": 105,
+      "sourceChapter": "XII",
+      "legacyNumber": 37,
       "originalNumber": 105,
-      "topic": "Ciclu menstrual",
-      "basis": "La un ciclu de 28 de zile ovulația este în jurul zilei 14; corpul galben involuează fără fecundație; menstruația este ziua 1 a ciclului. Faza menstruală are hormoni scăzuți, iar corpul galben nu aparține fazei proliferative.",
       "prompt": "Selectați afirmațiile corecte referitoare la ciclul menstrual:",
+      "asksFalse": false,
       "correct": [
         "A",
         "D",
@@ -1538,7 +1737,7 @@ window.BB_QUIZ = {
         {
           "letter": "B",
           "text": "nivelul crescut al estrogenilor și progesteronului din timpul fazei menstruale determină regenerarea endometrului",
-          "why": "Greșit. În faza menstruală estrogenii și progesteronul sunt scăzuți; regenerarea endometrului are loc ulterior, în faza proliferativă, sub influența estrogenilor."
+          "why": "Nivelurile estrogenilor și progesteronului sunt reduse în faza menstruală. Regenerarea endometrului poate începe încă în cursul menstruației, dar afirmația greșește prin atribuirea ei unor niveluri hormonale crescute în acea fază."
         },
         {
           "letter": "C",
@@ -1553,18 +1752,23 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "menstruația marchează prima zi a unui nou ciclu menstrual",
-          "why": "Corect. Menstruația marchează prima zi a unui nou ciclu menstrual."
+          "why": "Prin convenție, prima zi a sângerării menstruale este ziua 1 a ciclului. Durata ciclului se măsoară până la prima zi a menstruației următoare."
         }
+      ],
+      "sourcePages": [
+        225
       ]
     },
     {
       "id": "rf-038",
-      "number": 38,
-      "sourceNumber": 38,
+      "number": 106,
+      "sourceNumber": 106,
+      "sourceChapter": "XII",
+      "legacyNumber": 38,
       "originalNumber": 106,
-      "topic": "Oogeneză",
-      "basis": "Oogeneza formează ovulele în ovar, începe intrauterin, pornește de la oogonii, iar oocitele primare cu celule înconjurătoare formează foliculii primari. Nu începe după naștere.",
+      "contentRevision": 1,
       "prompt": "Oogeneza:",
+      "asksFalse": false,
       "correct": [
         "A",
         "C",
@@ -1574,8 +1778,8 @@ window.BB_QUIZ = {
       "options": [
         {
           "letter": "A",
-          "text": "reprezintă procesul prin care se formează ovulele în ovar",
-          "why": "Corect. Oogeneza este procesul prin care se formează ovulele în ovar."
+          "text": "reprezintă procesul prin care se formează ovulele",
+          "why": "Oogeneza este dezvoltarea gametului feminin și include diviziuni meiotice. Începe în ovar înainte de naștere; oocitul secundar eliberat la ovulație finalizează de regulă meioza II numai la fecundație."
         },
         {
           "letter": "B",
@@ -1590,23 +1794,27 @@ window.BB_QUIZ = {
         {
           "letter": "D",
           "text": "oocitele primare formează împreună cu straturile celulare înconjurătoare foliculii primari",
-          "why": "Corect. Ovocitele primare, împreună cu straturile celulare înconjurătoare, formează foliculii primari."
+          "why": "Oocitul împreună cu celulele foliculare alcătuiește foliculul. Manualul folosește „foliculi primari” într-un sens simplificat; histologia distinge foliculul primordial cu celule aplatizate de foliculul primar cu celule granuloase cuboidale."
         },
         {
           "letter": "E",
           "text": "la pubertate, ovarele conțin aproximativ 75.000 de foliculi",
-          "why": "Corect. La pubertate rămân aproximativ 75.000 de foliculi în ovare."
+          "why": "75.000 este cifra menționată de manual și acceptată de barem. Rezerva foliculară variază mult între persoane și în funcție de metoda de estimare; cifra nu este o constantă universală a pubertății."
         }
+      ],
+      "sourcePages": [
+        225
       ]
     },
     {
       "id": "rf-039",
-      "number": 39,
-      "sourceNumber": 39,
+      "number": 107,
+      "sourceNumber": 107,
+      "sourceChapter": "XII",
+      "legacyNumber": 39,
       "originalNumber": 107,
-      "topic": "Oogeneză",
-      "basis": "Oogeneza începe intrauterin, foliculii primari există de la naștere, iar FSH stimulează producția de estrogen în folicul. GnRH începe la pubertate, iar FSH, nu LH, stimulează creșterea lunară a foliculului.",
       "prompt": "Selectați afirmațiile corecte:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B",
@@ -1621,43 +1829,47 @@ window.BB_QUIZ = {
         {
           "letter": "B",
           "text": "foliculii primari sunt prezenți în ovare încă de la naștere",
-          "why": "Corect. Foliculii primari sunt prezenți în ovare încă de la naștere."
+          "why": "Ovarele conțin la naștere oocite în foliculi. Manualul îi numește „primari”; în clasificarea histologică detaliată, rezerva este alcătuită predominant din foliculi primordiali."
         },
         {
           "letter": "C",
           "text": "imediat după naștere, hipotalamusul începe secreția de GnRH",
-          "why": "Greșit. Hipotalamusul începe secreția de GnRH la pubertate, nu imediat după naștere."
+          "why": "Activitatea sistemului GnRH apare înainte de naștere, iar pubertatea implică intensificarea secreției pulsatile. Momentul „imediat după naștere” nu reprezintă debutul absolut al secreției; nici pubertatea nu este prima apariție a GnRH."
         },
         {
           "letter": "D",
           "text": "LH-ul stimulează creșterea și maturarea unui folicul pe lună",
-          "why": "Greșit. FSH stimulează creșterea și maturarea câte unui folicul pe lună; LH este legat de ovulație și corpul galben."
+          "why": "Baremul exclude D, iar schema manualului atribuie creșterea și maturarea foliculului FSH-ului. Totuși, LH susține steroidogeneza și dezvoltarea foliculară împreună cu FSH; excluderea nu dovedește absența contribuției LH."
         },
         {
           "letter": "E",
           "text": "FSH-ul stimulează producerea de estrogen la nivelul foliculului în curs de dezvoltare",
           "why": "Corect. FSH stimulează producerea de estrogen la nivelul foliculului în curs de dezvoltare."
         }
+      ],
+      "sourcePages": [
+        225
       ]
     },
     {
       "id": "rf-040",
-      "number": 40,
-      "sourceNumber": 40,
+      "number": 108,
+      "sourceNumber": 108,
+      "sourceChapter": "XII",
+      "legacyNumber": 40,
       "originalNumber": 108,
-      "topic": "Hormoni",
-      "basis": "GnRH stimulează FSH și LH; FSH stimulează foliculul și estrogenii; LH stimulează ovulația. Prolactina stimulează lactația, iar oxitocina este eliberată de neurohipofiză.",
+      "contentRevision": 1,
       "prompt": "Alegeți afirmațiile corecte despre hormonii cu acțiune asupra sistemului reproducător feminin:",
+      "asksFalse": false,
       "correct": [
-        "A",
         "B",
         "C"
       ],
       "options": [
         {
           "letter": "A",
-          "text": "GnRH stimulează producerea de FSH și LH",
-          "why": "Corect. GnRH stimulează hipofiza anterioară să producă și să elibereze FSH și LH."
+          "text": "GnRH stimulează producerea de FSH și LH la nivelul ovarului",
+          "why": "GnRH stimulează producerea și eliberarea FSH și LH în adenohipofiză, nu la nivelul ovarului. Sintagma finală din sursa tipărită face varianta falsă; baremul ediției 2026 este BC."
         },
         {
           "letter": "B",
@@ -1679,16 +1891,20 @@ window.BB_QUIZ = {
           "text": "oxitocina este sintetizată de neurohipofiză",
           "why": "Greșit. Oxitocina este sintetizată în hipotalamus și eliberată prin neurohipofiză; neurohipofiza nu este locul sintezei."
         }
+      ],
+      "sourcePages": [
+        225
       ]
     },
     {
       "id": "rf-041",
-      "number": 41,
-      "sourceNumber": 41,
+      "number": 109,
+      "sourceNumber": 109,
+      "sourceChapter": "XII",
+      "legacyNumber": 41,
       "originalNumber": 109,
-      "topic": "Fecundație",
-      "basis": "Fecundația produce zigot diploid cu 46 cromozomi, are nevoie de enzime acrozomale după capacitație, iar ovulul fecundat se numește zigot. Locul obișnuit este trompa uterină, nu uterul.",
       "prompt": "Despre fecundație sunt adevărate următoarele afirmații:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B",
@@ -1698,18 +1914,18 @@ window.BB_QUIZ = {
       "options": [
         {
           "letter": "A",
-          "text": "rezultă ovul fecundat, cu 46 de cromozomi",
+          "text": "rezultă ovulul fecundat, cu 46 de cromozomi",
           "why": "Corect. Fecundația produce ovulul fecundat, adică zigotul, cu 46 de cromozomi."
         },
         {
           "letter": "B",
           "text": "se produce în urma eliberării de enzime acrozomale ale unui număr mare de spermatozoizi",
-          "why": "Corect. Pentru ca un spermatozoid să pătrundă ovocitul, sunt necesare enzime acrozomale eliberate de mai mulți spermatozoizi."
+          "why": "Baremul include B, reluând modelul manualului despre contribuția enzimelor acrozomale ale mai multor spermatozoizi la traversarea învelișurilor oocitului. Doar un spermatozoid fuzionează în mod normal cu oocitul; „un număr mare” nu precizează un prag demonstrat și nu trebuie transformat într-o regulă cantitativă universală."
         },
         {
           "letter": "C",
           "text": "eliberarea enzimelor din acrozom are loc în urma procesului de capacitație",
-          "why": "Corect. Eliberarea enzimelor din acrozom are loc după capacitația spermatozoidului."
+          "why": "Capacitația pregătește spermatozoidul pentru reacția acrozomală, prin care se eliberează conținutul acrozomului. Capacitația nu este ea însăși exocitoza acrozomală."
         },
         {
           "letter": "D",
@@ -1721,16 +1937,21 @@ window.BB_QUIZ = {
           "text": "ovulul fecundat poartă numele de zigot",
           "why": "Corect. Ovulul fecundat poartă numele de zigot."
         }
+      ],
+      "sourcePages": [
+        225,
+        226
       ]
     },
     {
       "id": "rf-042",
-      "number": 42,
-      "sourceNumber": 42,
+      "number": 110,
+      "sourceNumber": 110,
+      "sourceChapter": "XII",
+      "legacyNumber": 42,
       "originalNumber": 110,
-      "topic": "După fecundație",
-      "basis": "După fecundație, segmentarea formează morula, aceasta devine blastocist, implantarea înseamnă fixarea în endometru, iar corpul galben continuă să secrete hormoni. Blastocistul nu ajunge imediat în cavitatea uterină.",
       "prompt": "Selectați fenomenele care au loc după fecundație:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B",
@@ -1763,7 +1984,1298 @@ window.BB_QUIZ = {
           "text": "corpul galben din ovar continuă să producă hormoni",
           "why": "Corect. După fecundație, corpul galben continuă să producă hormoni, fiind menținut inițial de hCG."
         }
+      ],
+      "sourcePages": [
+        226
+      ]
+    },
+    {
+      "id": "rf-111",
+      "number": 111,
+      "sourceNumber": 111,
+      "sourceChapter": "XII",
+      "prompt": "Ovarele:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt organe retroperitoneale",
+          "why": "Baremul include A, conform manualului, însă ovarul este considerat intraperitoneal. Atașarea prin mezovarium și epiteliul propriu de suprafață nu îl transformă într-un organ retroperitoneal."
+        },
+        {
+          "letter": "B",
+          "text": "secretă hormoni cu structură glicoproteică",
+          "why": "Baremul exclude B. Estrogenii și progesteronul sunt steroizi, însă ovarul secretă și inhibine, hormoni glicoproteici. Enunțul nu limitează afirmația la steroizii sexuali, astfel că această secreție ovariană reală trebuie recunoscută."
+        },
+        {
+          "letter": "C",
+          "text": "sunt legate de uter prin ligamentul ovarian",
+          "why": "Ligamentul ovarian unește ovarul cu uterul, spre unghiul uterin, și participă la susținerea lui."
+        },
+        {
+          "letter": "D",
+          "text": "prin progesteronul secretat participă la faza secretorie a ciclului menstrual",
+          "why": "Progesteronul produs predominant de corpul galben transformă și menține endometrul în faza secretorie."
+        },
+        {
+          "letter": "E",
+          "text": "sunt legate de uter prin ligamentul suspensor",
+          "why": "Ligamentul suspensor leagă ovarul de peretele lateral pelvian; legătura cu uterul este realizată de ligamentul ovarian."
+        }
+      ],
+      "sourcePages": [
+        226
+      ]
+    },
+    {
+      "id": "rf-112",
+      "number": 112,
+      "sourceNumber": 112,
+      "sourceChapter": "XII",
+      "prompt": "Trompele uterine:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "C"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "se întind de-a lungul limitei inferioare a ligamentului larg",
+          "why": "Trompele uterine se află la marginea superioară a ligamentului larg, nu la limita lui inferioară."
+        },
+        {
+          "letter": "B",
+          "text": "sunt susținute de ligamentul larg care prin mesovarium se leagă de ovar",
+          "why": "Trompa este susținută de porțiunea numită mezosalpinx a ligamentului larg; mezovariumul leagă ovarul de același ligament larg."
+        },
+        {
+          "letter": "C",
+          "text": "prezintă în apropierea ovarului o structură numită infundibul",
+          "why": "Infundibulul este capătul dilatat, în formă de pâlnie, din vecinătatea ovarului și prezintă fimbrii."
+        },
+        {
+          "letter": "D",
+          "text": "prin ampulă se deschid în cavitatea uterină",
+          "why": "Ampula este segmentul lateral mai larg. Spre uter urmează istmul și porțiunea intramurală; ampula nu formează deschiderea uterină."
+        },
+        {
+          "letter": "E",
+          "text": "au în structură fibre musculare netede care sunt alungite, cilindrice cu capetele ramificate",
+          "why": "Trompele au mușchi neted, însă celulele lui sunt fusiforme, cu extremități subțiate; nu sunt fibre cilindrice ramificate."
+        }
+      ],
+      "sourcePages": [
+        226
+      ]
+    },
+    {
+      "id": "rf-113",
+      "number": 113,
+      "sourceNumber": 113,
+      "sourceChapter": "XII",
+      "prompt": "De uter se fixează următoarele structuri:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "C",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "ligamentul ovarian",
+          "why": "Ligamentul ovarian se fixează pe uter și îl leagă de ovar."
+        },
+        {
+          "letter": "B",
+          "text": "ligamentul suspensor",
+          "why": "Ligamentul suspensor unește ovarul cu peretele pelvian lateral; nu este ligamentul care se fixează direct între ovar și uter."
+        },
+        {
+          "letter": "C",
+          "text": "ligamentul uterosacral",
+          "why": "Ligamentele uterosacrale leagă regiunea cervicală uterină de planul posterior pelvian, spre sacru."
+        },
+        {
+          "letter": "D",
+          "text": "ampula trompelor uterine",
+          "why": "Ampula nu se fixează direct pe uter; între ea și uter se află istmul, urmat de segmentul intramural."
+        },
+        {
+          "letter": "E",
+          "text": "ligamentul larg",
+          "why": "Ligamentul larg este pliul peritoneal care se întinde de la marginile uterului spre pereții laterali ai pelvisului."
+        }
+      ],
+      "sourcePages": [
+        226
+      ]
+    },
+    {
+      "id": "rf-114",
+      "number": 114,
+      "sourceNumber": 114,
+      "sourceChapter": "XII",
+      "prompt": "Care dintre afirmațiile următoare cu privire la ciclul menstrual sunt false?",
+      "asksFalse": true,
+      "correct": [
+        "A",
+        "D",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "dacă fecundația nu are loc, nivelul sanguin al progesteronului crește",
+          "why": "Baremul selectează A ca falsă. La sfârșitul unui ciclu fără sarcină, corpul galben regresează și progesteronul scade; în faza luteală inițială, progesteronul crește și fără fecundație. Fără precizarea momentului, formularea este incompletă."
+        },
+        {
+          "letter": "B",
+          "text": "faza secretorie are loc postovulator",
+          "why": "Afirmația este adevărată: faza secretorie urmează ovulației și este susținută de progesteron, deci nu se selectează la o cerință de fals."
+        },
+        {
+          "letter": "C",
+          "text": "nivelul maxim de estrogeni este atins preovulator",
+          "why": "În modelul ciclului menstrual din manual, vârful principal de estrogeni apare înaintea ovulației. Afirmația este adevărată și nu se bifează."
+        },
+        {
+          "letter": "D",
+          "text": "dacă fecundația se produce, gonadotropina hipofizară va stimula corpul galben",
+          "why": "Se bifează ca falsă: în sarcina timpurie, corpul galben este menținut de gonadotropina corionică hCG produsă de trofoblast. Aceasta se deosebește de LH, gonadotropina hipofizară care susține corpul galben în ciclul ovarian."
+        },
+        {
+          "letter": "E",
+          "text": "faza proliferativă se derulează după ovulație",
+          "why": "Faza proliferativă precedă ovulația; după ovulație urmează faza secretorie. Varianta este falsă și se selectează."
+        }
+      ],
+      "sourcePages": [
+        226
+      ]
+    },
+    {
+      "id": "rf-115",
+      "number": 115,
+      "sourceNumber": 115,
+      "sourceChapter": "XII",
+      "prompt": "Care dintre afirmațiile următoare sunt adevărate?",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "oocitul se găsește într-un spațiu plin cu celule numit antru",
+          "why": "Antrul este cavitatea foliculară plină cu lichid, nu cu celule. Oocitul este înconjurat de celulele coroanei radiate și ale cumulusului."
+        },
+        {
+          "letter": "B",
+          "text": "creșterea bruscă a nivelului de LH stimulează ovulația",
+          "why": "Vârful de LH declanșează reluarea maturării oocitare, ruptura foliculului matur și ovulația."
+        },
+        {
+          "letter": "C",
+          "text": "dacă fecundația are loc, se va forma corpul alb",
+          "why": "În sarcina timpurie, hCG menține corpul galben activ. Corpul alb este rezultatul regresiei ulterioare, nu transformarea imediată determinată de fecundație."
+        },
+        {
+          "letter": "D",
+          "text": "în folicul, oocitul este înconjurat de coroana radiată",
+          "why": "Coroana radiată este stratul de celule granuloase care înconjoară oocitul în foliculul matur."
+        },
+        {
+          "letter": "E",
+          "text": "foliculii primari sunt prezenți în ovare doar la pubertate",
+          "why": "Foliculii și oocitele sunt prezenți înaintea pubertății, iar dezvoltarea foliculară continuă și după ea. Cuvântul „doar” face afirmația falsă."
+        }
+      ],
+      "sourcePages": [
+        226
+      ]
+    },
+    {
+      "id": "rf-116",
+      "number": 116,
+      "sourceNumber": 116,
+      "sourceChapter": "XII",
+      "prompt": "Care dintre următoarele afirmații cu privire la fecundație sunt adevărate?",
+      "asksFalse": false,
+      "correct": [
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "implantarea blastocistului se produce în aproximativ 15 zile după fecundație",
+          "why": "Implantarea normală începe în prima săptămână după fecundație și se desfășoară în a doua; aproximativ 15 zile este un termen prea târziu ca reper obișnuit. Cifra de 5 zile din manual necesită și ea rezerva explicată la întrebarea 87."
+        },
+        {
+          "letter": "B",
+          "text": "după aproximativ 3 săptămâni de la fecundație, funcția endocrină a corpului galben este preluată de placentă",
+          "why": "Trei săptămâni reprezintă un termen prea precoce pentru preluarea susținerii endocrine de către placentă. Manualul descrie menținerea corpului galben în primele aproximativ trei luni, cu transfer progresiv al funcției."
+        },
+        {
+          "letter": "C",
+          "text": "de obicei, fecundația are loc la nivel uterin",
+          "why": "Fecundația obișnuită are loc în trompa uterină, de regulă în ampulă, înainte ca embrionul să ajungă în uter."
+        },
+        {
+          "letter": "D",
+          "text": "zigotul este o celulă diploidă ce se află în trompele uterine",
+          "why": "Unirea gameților haploizi formează zigotul diploid, cu 46 de cromozomi; în fecundația normală acesta se formează în trompa uterină."
+        },
+        {
+          "letter": "E",
+          "text": "după fecundație apare procesul de segmentare al zigotului în care celulele nou formate cresc în dimensiune și formează morula",
+          "why": "Segmentarea produce blastomere prin diviziuni succesive fără creșterea globală corespunzătoare a embrionului. Celulele devin mai mici, nu cresc fiecare în dimensiune între aceste diviziuni."
+        }
+      ],
+      "sourcePages": [
+        226
+      ]
+    },
+    {
+      "id": "rf-117",
+      "number": 117,
+      "sourceNumber": 117,
+      "sourceChapter": "XII",
+      "prompt": "Care dintre următoarele afirmații cu privire la sistemul reproducător feminin sunt adevărate?",
+      "asksFalse": false,
+      "correct": [
+        "C"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "dintr-un oocit secundar, prin cea de a doua diviziune meiotică, se formează două ovule cu n cromozomi (haploide)",
+          "why": "Meioza II a oocitului secundar este asimetrică: rezultă un ovul și un globul polar, nu două ovule funcționale."
+        },
+        {
+          "letter": "B",
+          "text": "LH-ul hipotalamic stimulează funcția endocrină a ovarului",
+          "why": "LH stimulează funcția ovariană, dar este secretat de adenohipofiză. Hormonul hipotalamic care controlează gonadotropinele este GnRH."
+        },
+        {
+          "letter": "C",
+          "text": "glandele mamare sunt de tip alveolar",
+          "why": "Glandele mamare au unități secretoare alveolare, organizate în lobuli și lobi și drenate prin ducte."
+        },
+        {
+          "letter": "D",
+          "text": "glandele Bartholin sunt glande parauretrale",
+          "why": "Glandele Bartholin sunt vestibulare mari. Glandele parauretrale sunt glandele Skene."
+        },
+        {
+          "letter": "E",
+          "text": "în partea inferioară a vaginului se găsește fornixul",
+          "why": "Fornixul se află în partea superioară a vaginului, în jurul porțiunii de col uterin care proemină în el."
+        }
+      ],
+      "sourcePages": [
+        227
+      ]
+    },
+    {
+      "id": "rf-118",
+      "number": 118,
+      "sourceNumber": 118,
+      "sourceChapter": "XII",
+      "prompt": "Care dintre următoarele afirmații cu privire la sistemul reproducător feminin sunt false?",
+      "asksFalse": true,
+      "correct": [
+        "A",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "perimetrul uterin se continuă cu mezoteliul ligamentului ovarian",
+          "why": "Baremul selectează A ca falsă; manualul descrie explicit continuitatea perimetrului cu mezoteliul ligamentului larg. Ligamentul ovarian este un cordon situat în pliul peritoneal, astfel că înlocuirea denumirii din manual nu justifică negarea oricărei continuități a învelișurilor peritoneale."
+        },
+        {
+          "letter": "B",
+          "text": "areola mamară conține glande sudoripare și sebacee",
+          "why": "Afirmația este adevărată potrivit descrierii areolei din manual, deci nu se selectează la cerința de fals."
+        },
+        {
+          "letter": "C",
+          "text": "menstruația marchează prima zi a unui nou ciclu menstrual",
+          "why": "Prima zi de sângerare menstruală este utilizată drept ziua 1 a ciclului. Afirmația este adevărată și nu se bifează."
+        },
+        {
+          "letter": "D",
+          "text": "FSH-ul are structură sterolică",
+          "why": "FSH este un hormon glicoproteic, nu steroid. Varianta este falsă și trebuie selectată."
+        },
+        {
+          "letter": "E",
+          "text": "estrogenii inhibă producția FSH-ului",
+          "why": "Feedbackul negativ estrogenic contribuie la reducerea secreției de FSH; inhibina ovariană participă și ea la acest control. Afirmația este adevărată și nu se selectează."
+        }
+      ],
+      "sourcePages": [
+        227
+      ]
+    },
+    {
+      "id": "rf-119",
+      "number": 119,
+      "sourceNumber": 119,
+      "sourceChapter": "XII",
+      "prompt": "Despre sistemul reproducător feminin se poate afirma că:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "la pubertate, oocitul primar încheie prima fază a meiozei",
+          "why": "Odată cu apariția ciclurilor ovulatorii după pubertate, oocitele primare selectate pot finaliza meioza I. Nu se maturizează simultan întreaga rezervă ovariană."
+        },
+        {
+          "letter": "B",
+          "text": "morula este formată din 8 celule rezultate din segmentarea zigotului",
+          "why": "În modelul manualului, morula este masa compactă de aproximativ 16 sau mai multe blastomere; stadiul de 8 celule o precedă."
+        },
+        {
+          "letter": "C",
+          "text": "LH-ul are structură glicolipidică",
+          "why": "LH are structură glicoproteică, cu subunități proteice glicozilate; nu este un glicolipid."
+        },
+        {
+          "letter": "D",
+          "text": "GnRH-ul hipofizar stimulează și producția de LH",
+          "why": "GnRH stimulează LH la nivel hipofizar, însă originea sa de control este hipotalamică, nu hipofizară."
+        },
+        {
+          "letter": "E",
+          "text": "coroana radiata este alcătuită din celule de susținere",
+          "why": "Coroana radiata conține celule granuloase care înconjoară și susțin oocitul, distincte de zona pellucida acelulară."
+        }
+      ],
+      "sourcePages": [
+        227
+      ]
+    },
+    {
+      "id": "rf-120",
+      "number": 120,
+      "sourceNumber": 120,
+      "sourceChapter": "XII",
+      "prompt": "Următoarele afirmații cu privire la sistemul reproducător feminin sunt false:",
+      "asksFalse": true,
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "prolactina este un hormon hipotalamic ce stimulează secreția laptelui",
+          "why": "Prolactina stimulează secreția laptelui, dar este hormon adenohipofizar. Originea hipotalamică face asocierea falsă."
+        },
+        {
+          "letter": "B",
+          "text": "oxitocina stimulează contracțiile musculaturii striate a uterului",
+          "why": "Oxitocina stimulează miometrul, alcătuit din mușchi neted. Nu există musculatură uterină striată care să constituie această țintă."
+        },
+        {
+          "letter": "C",
+          "text": "labiile mari conțin glande ce secretă un fluid care le lubrifiază pe suprafața externă",
+          "why": "Baremul selectează C ca falsă deoarece manualul menționează lubrifierea suprafeței interne a labiilor mari. Afirmația nu corespunde localizării indicate în sursă; aceasta nu înseamnă că pielea externă ar fi lipsită de orice secreție glandulară."
+        },
+        {
+          "letter": "D",
+          "text": "partea inferioară, bombată a corpului uterin se numește fund uterin",
+          "why": "Fundul uterin este porțiunea superioară bombată; inferior se află istmul și colul. Varianta este falsă."
+        },
+        {
+          "letter": "E",
+          "text": "vaginul este situat anterior față de rect",
+          "why": "Poziția este adevărată: vaginul se află anterior de rect, deci E nu se bifează la cerința de fals."
+        }
+      ],
+      "sourcePages": [
+        227
+      ]
+    },
+    {
+      "id": "rf-121",
+      "number": 121,
+      "sourceNumber": 121,
+      "sourceChapter": "XII",
+      "prompt": "Următoarele enunțuri privind ovarul sunt corecte, cu excepția:",
+      "asksFalse": true,
+      "correct": [
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "este situat în apropierea peretelui lateral al cavității pelviene",
+          "why": "Ovarul se află în vecinătatea peretelui lateral al pelvisului. Afirmația este adevărată și nu reprezintă excepția."
+        },
+        {
+          "letter": "B",
+          "text": "are aproximativ 5 cm lungime și 2,5 cm lățime",
+          "why": "Acestea sunt dimensiunile orientative din manual, acceptate de barem; dimensiunile reale variază. Varianta nu este excepția cerută."
+        },
+        {
+          "letter": "C",
+          "text": "este menținut în poziție prin ligamentele ovarian și suspensor",
+          "why": "Ligamentul ovarian și cel suspensor participă la fixarea ovarului, alături de mezovarium. Afirmația este adevărată."
+        },
+        {
+          "letter": "D",
+          "text": "periferic conține corpul alb ce secretă hormoni - estrogen și progesteron",
+          "why": "Corpul alb este cicatricea rezultată din regresia corpului galben și nu secretă acești hormoni. Secreția caracterizează corpul galben activ; D este excepția."
+        },
+        {
+          "letter": "E",
+          "text": "ovarul are raport direct cu fimbriile trompei uterine",
+          "why": "Fimbriile se află în contact apropiat cu ovarul și captează oocitul eliberat; fimbria ovariană se atașează de ovar. Afirmația nu este excepția."
+        }
+      ],
+      "sourcePages": [
+        227
+      ]
+    },
+    {
+      "id": "rf-122",
+      "number": 122,
+      "sourceNumber": 122,
+      "sourceChapter": "XII",
+      "prompt": "Selectați asocierile corecte dintre organele sistemului reproducător feminin și funcțiile acestora:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "labia mică - formează marginile vestibulului și protejează deschiderea vaginului și a anusului",
+          "why": "Labiile mici delimitează vestibulul și protejează orificiile vaginal și uretral. Anusul se află posterior, în afara vestibulului."
+        },
+        {
+          "letter": "B",
+          "text": "uterul - asigură implantarea blastocistului la nivelul endometrului",
+          "why": "Blastocistul se implantează în endometrul uterin, care asigură suportul inițial al dezvoltării."
+        },
+        {
+          "letter": "C",
+          "text": "trompa uterină - produce ovule și hormoni sexuali",
+          "why": "Producerea oocitelor și a hormonilor sexuali caracterizează ovarul; trompa transportă gametul și embrionul timpuriu."
+        },
+        {
+          "letter": "D",
+          "text": "ovarul - asigură producerea de hormoni sexuali feminini sub acțiunea LH",
+          "why": "LH stimulează steroidogeneza ovariană și funcția corpului galben; FSH contribuie de asemenea la secreția estrogenică foliculară."
+        },
+        {
+          "letter": "E",
+          "text": "vaginul - prezintă o secreție acidă ce împiedică eliminarea mucoasei endometriale",
+          "why": "Mediul vaginal acid are rol de protecție locală, nu împiedică menstruația. Materialul endometrial eliminat trece normal prin vagin."
+        }
+      ],
+      "sourcePages": [
+        227
+      ]
+    },
+    {
+      "id": "rf-123",
+      "number": 123,
+      "sourceNumber": 123,
+      "sourceChapter": "XII",
+      "prompt": "Următoarele raporturi anatomice sunt corecte:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "D",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "vezica urinară este situată posterior de simfiza pubiană",
+          "why": "Vezica urinară se află în spatele simfizei pubiene, conform secțiunii sagitale pelviene din manual."
+        },
+        {
+          "letter": "B",
+          "text": "uterul este situat posterior de rect",
+          "why": "Uterul se află anterior de rect; raportul propus inversează pozițiile."
+        },
+        {
+          "letter": "C",
+          "text": "anusul este situat anterior de labii",
+          "why": "Orificiul anal este situat posterior față de vulvă și labii, nu anterior."
+        },
+        {
+          "letter": "D",
+          "text": "vaginul este situat posterior de uretră",
+          "why": "Uretra feminină se află anterior de vagin; prin urmare vaginul este posterior față de ea."
+        },
+        {
+          "letter": "E",
+          "text": "rectul este situat anterior de osul sacru",
+          "why": "Rectul urmează curbura sacrală și se află anterior față de sacru."
+        }
+      ],
+      "sourcePages": [
+        227
+      ]
+    },
+    {
+      "id": "rf-124",
+      "number": 124,
+      "sourceNumber": 124,
+      "sourceChapter": "XII",
+      "prompt": "Următoarele enunțuri privind raporturile uterului și ovarului sunt adevărate:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "ligamentul larg este situat lateral față de uter",
+          "why": "Foile ligamentului larg se întind de la marginile laterale ale uterului spre pereții pelvieni."
+        },
+        {
+          "letter": "B",
+          "text": "mesovarium este situat medial față de uter",
+          "why": "Mezovariumul se află lateral față de uter, la atașarea ovarului de foaia posterioară a ligamentului larg."
+        },
+        {
+          "letter": "C",
+          "text": "ligamentul suspensor este situat lateral față de ovar",
+          "why": "Ligamentul suspensor se întinde de la ovar spre peretele pelvian lateral și conduce vasele ovariene."
+        },
+        {
+          "letter": "D",
+          "text": "ligamentul ovarian este situat lateral față de uter",
+          "why": "Ligamentul ovarian se întinde lateral de uter spre ovar; față de ovar, același ligament este medial."
+        },
+        {
+          "letter": "E",
+          "text": "fimbriile trompei uterine sunt situate pe fața medială a ovarului",
+          "why": "Baremul exclude E, însă atlasul de anatomie TTUHSC descrie explicit fimbriile întinse pe fața medială a ovarului. Raporturile sunt mobile și tridimensionale; figura schematică a manualului nu justifică declararea acestui raport ca imposibil."
+        }
+      ],
+      "sourcePages": [
+        227,
+        228
+      ]
+    },
+    {
+      "id": "rf-125",
+      "number": 125,
+      "sourceNumber": 125,
+      "sourceChapter": "XII",
+      "prompt": "Despre ciclul menstrual sunt adevărate afirmațiile:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "C"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "încetarea acestuia duce la instalarea menopauzei",
+          "why": "Menopauza desemnează încetarea permanentă a menstruațiilor prin epuizarea activității foliculare, nu orice pauză temporară a ciclurilor."
+        },
+        {
+          "letter": "B",
+          "text": "începe în momentul ovulației, marcând prima zi din ciclul menstrual următor",
+          "why": "Ziua 1 este prima zi a menstruației; ovulația se produce ulterior, în jurul mijlocului ciclului didactic."
+        },
+        {
+          "letter": "C",
+          "text": "prima menstruație este denumită menarhă",
+          "why": "Menarha este apariția primei menstruații, distinctă de menopauză."
+        },
+        {
+          "letter": "D",
+          "text": "durează, cu aproximație, 24 de zile",
+          "why": "Modelul folosit de manual este de aproximativ 28 de zile. Un ciclu de 24 de zile poate exista fiziologic, dar nu este durata de referință cerută de acest item."
+        },
+        {
+          "letter": "E",
+          "text": "prezintă o fază secretorie înainte de ovulație și o fază proliferativă, după ovulație",
+          "why": "Ordinea este inversată: faza proliferativă precedă ovulația, iar cea secretorie o urmează."
+        }
+      ],
+      "sourcePages": [
+        228
+      ]
+    },
+    {
+      "id": "rf-126",
+      "number": 126,
+      "sourceNumber": 126,
+      "sourceChapter": "XII",
+      "prompt": "Despre trompele lui Falloppio se pot afirma următoarele:",
+      "asksFalse": false,
+      "correct": [
+        "C",
+        "D",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt localizate de-a lungul marginii superioare a ligamentului ovarian",
+          "why": "Trompele urmează marginea superioară a ligamentului larg. Ligamentul ovarian este cordonul dintre ovar și uter, nu pliul care le susține."
+        },
+        {
+          "letter": "B",
+          "text": "la nivelul capătului medial formează o structură cu aspect de pâlnie",
+          "why": "Structura în formă de pâlnie este infundibulul de la capătul lateral, apropiat de ovar, nu de la capătul medial uterin."
+        },
+        {
+          "letter": "C",
+          "text": "în porțiunea infundibulului prezintă fimbrii",
+          "why": "Marginea infundibulului prezintă prelungiri numite fimbrii, implicate în captarea oocitului."
+        },
+        {
+          "letter": "D",
+          "text": "la nivelul istmului tubar se deschid în cavitatea uterină",
+          "why": "Istmul este segmentul medial scurt indicat de manual la unirea cu uterul; descrierea detaliată include continuarea sa intramurală până la cavitate."
+        },
+        {
+          "letter": "E",
+          "text": "prin contracția musculaturii parietale netede asigură peristaltismul necesar transportului ovulului",
+          "why": "Contracțiile mușchilor netezi din peretele trompei contribuie la transport, împreună cu mișcările cililor epiteliului."
+        }
+      ],
+      "sourcePages": [
+        228
+      ]
+    },
+    {
+      "id": "rf-127",
+      "number": 127,
+      "sourceNumber": 127,
+      "sourceChapter": "XII",
+      "prompt": "În structura uterului intră:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "miometrul - care este stratul mijlociu al peretelui uterin și este format dintr-un strat gros de mușchi neted",
+          "why": "Miometrul este componenta musculară groasă, situată între endometru și învelișul extern, și conține fascicule de mușchi neted."
+        },
+        {
+          "letter": "B",
+          "text": "endometrul - ce conține stratul funcțional, mai gros, și stratul bazal profund, mai subțire",
+          "why": "Endometrul are stratul funcțional superficial, care se elimină ciclic, și stratul bazal profund, care asigură regenerarea."
+        },
+        {
+          "letter": "C",
+          "text": "seroasa - care se continuă cu mezoteliul ligamentului larg",
+          "why": "Seroasa uterină, numită perimetru, se continuă cu peritoneul ligamentului larg."
+        },
+        {
+          "letter": "D",
+          "text": "stratul bazal endometrial - ce se elimină dacă fecundația nu are loc",
+          "why": "La menstruație se elimină stratul funcțional; stratul bazal se păstrează și regenerează mucoasa."
+        },
+        {
+          "letter": "E",
+          "text": "celule foliculare ce asigură secreția hormonilor sexuali feminini",
+          "why": "Celulele foliculare aparțin ovarului, nu peretelui uterin, și participă la secreția hormonală ovariană."
+        }
+      ],
+      "sourcePages": [
+        228
+      ]
+    },
+    {
+      "id": "rf-128",
+      "number": 128,
+      "sourceNumber": 128,
+      "sourceChapter": "XII",
+      "prompt": "Următoarele enunțuri sunt corecte:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "mesovariumul leagă ovarul de ligamentul larg al uterului",
+          "why": "Mezovariumul este pliul peritoneal scurt care fixează marginea hilară a ovarului de foaia posterioară a ligamentului larg."
+        },
+        {
+          "letter": "B",
+          "text": "ureterul traversează ligamentul larg al uterului",
+          "why": "Ureterul trece în țesutul conjunctiv de la baza ligamentului larg, inferior de artera uterină, spre vezică. „Traversează” descrie această relație bazală, nu o trecere prin mezosalpinx."
+        },
+        {
+          "letter": "C",
+          "text": "ligamentele largi înglobează și rectul",
+          "why": "Rectul se află posterior de uter, în afara ligamentelor largi; acestea nu îl înglobează."
+        },
+        {
+          "letter": "D",
+          "text": "labiile mari delimitează vestibulul vaginal",
+          "why": "Marginile imediate ale vestibulului sunt formate de labiile mici. Labiile mari sunt situate mai lateral și acoperă structurile vulvare."
+        },
+        {
+          "letter": "E",
+          "text": "uretra se deschide la nivelul spațiului delimitat de labiile mici",
+          "why": "Orificiul uretral extern se află în vestibul, spațiul dintre labiile mici, anterior de orificiul vaginal."
+        }
+      ],
+      "sourcePages": [
+        228
+      ]
+    },
+    {
+      "id": "rf-129",
+      "number": 129,
+      "sourceNumber": 129,
+      "sourceChapter": "XII",
+      "prompt": "Despre ciclul menstrual se pot afirma următoarele:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "este influențat de secrețiile hormonale ovariene",
+          "why": "Estrogenii și progesteronul ovarieni reglează modificările ciclice ale endometrului."
+        },
+        {
+          "letter": "B",
+          "text": "ovulația se produce - de obicei - la începutul ciclului",
+          "why": "În modelul de 28 de zile ovulația apare aproximativ la mijloc, în jurul zilei 14, nu la început."
+        },
+        {
+          "letter": "C",
+          "text": "în primele 5 zile - se desprinde stratul îngroșat al endometrului",
+          "why": "În faza menstruală se elimină stratul funcțional îngroșat al endometrului; stratul bazal rămâne."
+        },
+        {
+          "letter": "D",
+          "text": "stratul bazal endometrial este cel din care se va dezvolta un nou strat funcțional",
+          "why": "Celulele și resturile glandulare din stratul bazal păstrat permit regenerarea stratului funcțional după menstruație."
+        },
+        {
+          "letter": "E",
+          "text": "ovulația separă cele două faze - menstruală de cea proliferativă",
+          "why": "Ovulația separă faza proliferativă de cea secretorie. Faza menstruală precedă faza proliferativă și nu este separată de aceasta prin ovulație."
+        }
+      ],
+      "sourcePages": [
+        228
+      ]
+    },
+    {
+      "id": "rf-130",
+      "number": 130,
+      "sourceNumber": 130,
+      "sourceChapter": "XII",
+      "prompt": "Despre vagin, următoarele enunțuri sunt adevărate:",
+      "asksFalse": false,
+      "correct": [
+        "C",
+        "D",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "are aproximativ 9 cm lungime și este blocat de himen, după începerea activității sexuale",
+          "why": "Lungimea de aproximativ 9 cm este reperul manualului, dar vaginul nu este blocat în mod normal de himen după începerea activității sexuale. Aspectul himenului este variabil și nu dovedește istoricul sexual."
+        },
+        {
+          "letter": "B",
+          "text": "se poate destinde în sus și înspre anteriorul cavității pelviene",
+          "why": "Vaginul este distensibil, însă traseul descris în manual se îndreaptă superior și posterior, nu anterior."
+        },
+        {
+          "letter": "C",
+          "text": "în timpul actului sexual este lubrifiat de secreția glandelor Skene",
+          "why": "Secrețiile glandelor parauretrale Skene contribuie la lubrifierea locală, alături de alte surse de lichid genital. Nu reprezintă singurul mecanism de lubrifiere vaginală."
+        },
+        {
+          "letter": "D",
+          "text": "depozitează spermatozoizii depuși prin actul sexual",
+          "why": "În actul sexual vaginal, sperma este depusă în vagin, de unde spermatozoizii pot trece prin col și uter spre trompe."
+        },
+        {
+          "letter": "E",
+          "text": "reprezintă calea de expulzare a nou-născutului",
+          "why": "În nașterea vaginală, vaginul se dilată și constituie segmentul final al canalului de naștere."
+        }
+      ],
+      "sourcePages": [
+        228
+      ]
+    },
+    {
+      "id": "rf-131",
+      "number": 131,
+      "sourceNumber": 131,
+      "sourceChapter": "XII",
+      "prompt": "Despre ovare se pot afirma următoarele:",
+      "asksFalse": false,
+      "correct": [
+        "C",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt organe retroperitoneale, localizate abdominal",
+          "why": "Ovarele adulte sunt localizate în pelvis și sunt considerate intraperitoneale. Nici localizarea abdominală în sensul opoziției abdomen–pelvis, nici clasificarea retroperitoneală nu descriu corect poziția obișnuită."
+        },
+        {
+          "letter": "B",
+          "text": "secretă hormoni sexuali feminini, de natură proteică",
+          "why": "Estrogenii și progesteronul, hormonii sexuali feminini vizați de formulare, au structură steroidă. Ovarul produce și hormoni proteici precum inhibinele, dar acest fapt nu schimbă natura steroizilor sexuali."
+        },
+        {
+          "letter": "C",
+          "text": "prezintă foliculi ai căror celule înconjoară oocitul primar care se maturează înainte de ovulație",
+          "why": "Celulele foliculare înconjoară oocitul; înaintea ovulației, oocitul primar reia meioza și devine oocit secundar."
+        },
+        {
+          "letter": "D",
+          "text": "prezintă procesul de ovulație prin care oocitele sunt eliberate la fiecare 14 zile",
+          "why": "În modelul de 28 de zile, ovulația se produce o dată pe ciclu, aproximativ la ziua 14; aceasta nu înseamnă o ovulație la fiecare 14 zile."
+        },
+        {
+          "letter": "E",
+          "text": "conține foliculi ce se transformă în corp galben, după ovulație",
+          "why": "După eliberarea oocitului, celulele foliculului rupt se luteinizează și formează corpul galben."
+        }
+      ],
+      "sourcePages": [
+        228,
+        229
+      ]
+    },
+    {
+      "id": "rf-132",
+      "number": 132,
+      "sourceNumber": 132,
+      "sourceChapter": "XII",
+      "prompt": "Ciclul menstrual implică:",
+      "asksFalse": false,
+      "correct": [
+        "C",
+        "D",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "faza proliferativă - când se formează glande tubulare și aportul sanguin scade",
+          "why": "În faza proliferativă, endometrul se regenerează și vascularizația sa crește; afirmația inversează evoluția aportului sanguin."
+        },
+        {
+          "letter": "B",
+          "text": "eliberarea oocitului și transformarea foliculului în corp alb",
+          "why": "Imediat după ovulație foliculul rezidual devine corp galben. Corpul alb apare ulterior, prin regresia corpului galben."
+        },
+        {
+          "letter": "C",
+          "text": "faza secretorie - când corpul galben secretă progesteron și cantități mici de estrogen",
+          "why": "Corpul galben activ secretă predominant progesteron și estrogeni, susținând endometrul secretor."
+        },
+        {
+          "letter": "D",
+          "text": "faza menstruală - când se elimină stratul funcțional endometrial, secrețiile glandulare, mucus și sânge",
+          "why": "Materialul menstrual conține sânge, mucus, secreții și fragmente ale stratului funcțional; stratul bazal rămâne în uter."
+        },
+        {
+          "letter": "E",
+          "text": "ovulația - determinată de creșterea bruscă a LH și a nivelului de estrogen și progesteron",
+          "why": "Baremul urmează formularea manualului. Declanșatorul imediat este vârful de LH; estrogenul preovulator susținut favorizează feedbackul pozitiv, iar progesteronul are o variație periovulatorie, cu creșterea principală după ovulație."
+        }
+      ],
+      "sourcePages": [
+        229
+      ]
+    },
+    {
+      "id": "rf-133",
+      "number": 133,
+      "sourceNumber": 133,
+      "sourceChapter": "XII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "oocitul primar este eliberat în cavitatea peritoneală de unde este preluat de fimbriile trompei uterine",
+          "why": "În ovulația normală este eliberat oocitul secundar blocat în metafaza II, nu oocitul primar."
+        },
+        {
+          "letter": "B",
+          "text": "LH controlează modificările structurale și biochimice ale foliculului, transformându-l în structură glandulară",
+          "why": "LH stimulează luteinizarea celulelor foliculare reziduale și formarea corpului galben, structură endocrină temporară."
+        },
+        {
+          "letter": "C",
+          "text": "în cazul producerii fecundației, corpul alb secretă hormoni",
+          "why": "Corpul galben, menținut de hCG, continuă secreția hormonală în sarcina timpurie. Corpul alb este o cicatrice și nu îndeplinește această funcție."
+        },
+        {
+          "letter": "D",
+          "text": "formarea foliculului vezicular necesită aproximativ 14 zile",
+          "why": "Cele aproximativ 14 zile din manual descriu maturarea finală din faza foliculară a unui ciclu de 28 de zile. Dezvoltarea completă pornind de la foliculul primordial durează mult mai mult."
+        },
+        {
+          "letter": "E",
+          "text": "oogeneza este procesul de formare a ovulelor diploide",
+          "why": "Oogeneza include meioză și produce gametul feminin haploid, cu 23 de cromozomi, nu un ovul diploid."
+        }
+      ],
+      "sourcePages": [
+        229
+      ]
+    },
+    {
+      "id": "rf-134",
+      "number": 134,
+      "sourceNumber": 134,
+      "sourceChapter": "XII",
+      "prompt": "Selectați enunțurile corecte privind glanda mamară:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "este situată anterior de fascia superficială a mușchiului pectoral mare",
+          "why": "Glanda mamară este anterior de pectoralul mare și de fascia care îl acoperă; varianta urmează eticheta din figura manualului. Fascia pectorală și foile fasciale superficiale ale sânului sunt planuri distincte."
+        },
+        {
+          "letter": "B",
+          "text": "este o glandă de tip alveolar",
+          "why": "Unitățile secretoare mamare sunt alveolare și se grupează în lobuli și lobi drenați de ducte."
+        },
+        {
+          "letter": "C",
+          "text": "produce lapte, după naștere, sub controlul unui hormon secretat de lobul posterior al glandei hipofize",
+          "why": "Producerea laptelui este stimulată de prolactina adenohipofizară. Oxitocina eliberată din lobul posterior controlează ejecția, nu sinteza laptelui."
+        },
+        {
+          "letter": "D",
+          "text": "este formată din lobi care se reunesc la nivelul mamelonului",
+          "why": "Ductele care drenează lobii converg spre mamelon. Aceasta este relația de drenaj redată schematic prin „lobii se reunesc”."
+        },
+        {
+          "letter": "E",
+          "text": "prezintă glande sebacee și sudoripare la nivelul mamelonului",
+          "why": "Baremul exclude E, iar manualul menționează aceste glande la areolă. Totuși, studiul histologic al mamelonului descrie și glande sebacee și apocrine care se deschid la vârful lui; nu este corectă justificarea prin absența lor absolută la mamelon."
+        }
+      ],
+      "sourcePages": [
+        229
+      ]
+    },
+    {
+      "id": "rf-135",
+      "number": 135,
+      "sourceNumber": 135,
+      "sourceChapter": "XII",
+      "mixed": true,
+      "prompt": "Despre gonade se pot afirma următoarele:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "C",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt localizate în pelvis",
+          "why": "Ovarele se află în pelvis, însă testiculele sunt în scrot. Localizarea pelviană nu este comună ambelor gonade adulte."
+        },
+        {
+          "letter": "B",
+          "text": "sunt vascularizate de artere cu origine în artera aortă",
+          "why": "Arterele ovariene și testiculare, numite împreună artere gonadale, au în mod obișnuit originea în aorta abdominală."
+        },
+        {
+          "letter": "C",
+          "text": "sub acțiunea LH secretă hormoni",
+          "why": "LH stimulează secreția androgenică a celulelor Leydig și steroidogeneza ovariană, inclusiv funcția corpului galben."
+        },
+        {
+          "letter": "D",
+          "text": "sunt organe intraperitoneale",
+          "why": "Baremul exclude generalizarea la ambele gonade: ovarul este intraperitoneal, iar testiculul adult este scrotal, în afara cavității peritoneale abdominale. Tunica vaginală provine din peritoneu, ceea ce explică discuțiile terminologice privind învelișul testicular."
+        },
+        {
+          "letter": "E",
+          "text": "secretă hormoni sintetizați din colesterol",
+          "why": "Androgenii, estrogenii și progesteronul sunt hormoni steroizi sintetizați pornind de la colesterol; gonadele produc și hormoni nesteroidieni."
+        }
+      ],
+      "sourcePages": [
+        229
+      ]
+    },
+    {
+      "id": "rf-136",
+      "number": 136,
+      "sourceNumber": 136,
+      "sourceChapter": "XII",
+      "mixed": true,
+      "prompt": "La ambele sexe, aparatul reproducător:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "asigură producerea, nutriția și transportul celulelor reproducătoare",
+          "why": "La ambele sexe există structuri pentru producerea gameților, susținerea lor nutritivă și transport."
+        },
+        {
+          "letter": "B",
+          "text": "produce gameții la nivelul gonadelor",
+          "why": "Testiculele produc spermatozoizi, iar ovarele asigură dezvoltarea și eliberarea oocitelor."
+        },
+        {
+          "letter": "C",
+          "text": "prezintă glande cu secreție lichidiană",
+          "why": "Ambele aparate reproducătoare includ glande anexe care elimină secreții lichide în căile sau regiunile genitale."
+        },
+        {
+          "letter": "D",
+          "text": "este localizat în totalitate la nivelul pelvisului",
+          "why": "Există organe externe și structuri situate în afara pelvisului, precum testiculele scrotale și glandele mamare; „în totalitate” face afirmația falsă."
+        },
+        {
+          "letter": "E",
+          "text": "prezintă celule care se divid prin meioză",
+          "why": "Atât spermatogeneza, cât și oogeneza includ diviziuni meiotice care reduc numărul de cromozomi al gameților."
+        }
+      ],
+      "sourcePages": [
+        229
+      ]
+    },
+    {
+      "id": "rf-137",
+      "number": 137,
+      "sourceNumber": 137,
+      "sourceChapter": "XII",
+      "prompt": "Ovarul:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "este un organ intraperitoneal",
+          "why": "Baremul exclude A, însă clasificarea intraperitoneală a ovarului este corectă anatomic. Formularea retroperitoneală din manual este o contradicție care nu trebuie transformată în explicație falsă."
+        },
+        {
+          "letter": "B",
+          "text": "prezintă mesovarium ce îl leagă de ligamentul larg al uterului",
+          "why": "Mezovariumul fixează ovarul de foaia posterioară a ligamentului larg, la nivelul marginii sale hilare."
+        },
+        {
+          "letter": "C",
+          "text": "prezintă foliculi a căror transformare în corp galben induce ovulația sub acțiunea FSH",
+          "why": "Ovulația este declanșată de vârful LH, iar transformarea foliculului rezidual în corp galben urmează eliberării oocitului. Varianta inversează succesiunea și hormonul principal."
+        },
+        {
+          "letter": "D",
+          "text": "este susținut de ligamentul suspensor și cel ovarian",
+          "why": "Aceste ligamente leagă ovarul de peretele pelvian lateral, respectiv de uter, contribuind la susținere."
+        },
+        {
+          "letter": "E",
+          "text": "secretă estrogen și progesteron ce se cuplează cu receptorii de pe suprafața celulelor corpului",
+          "why": "Baremul exclude E, iar mecanismul clasic predat pentru steroizi implică receptori intracelulari. Totuși, există și receptori și semnalizare membranară pentru estrogeni și progesteron; afirmația generală nu poate fi respinsă prin negarea absolută a acestor căi."
+        }
+      ],
+      "sourcePages": [
+        229
+      ]
+    },
+    {
+      "id": "rf-138",
+      "number": 138,
+      "sourceNumber": 138,
+      "sourceChapter": "XII",
+      "mixed": true,
+      "prompt": "Asemănările dintre gonada masculină și cea feminină sunt:",
+      "asksFalse": false,
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "localizare în pelvis",
+          "why": "Ovarul este pelvian, iar testiculul adult este scrotal; aceasta nu este o asemănare topografică."
+        },
+        {
+          "letter": "B",
+          "text": "dimensiuni aproximativ egale - 2,5/5 cm",
+          "why": "Manualul atribuie ambelor gonade aproximativ 5 cm lungime și 2,5 cm lățime. Sunt repere didactice orientative, nu o egalitate dimensională constantă între ovare și testicule."
+        },
+        {
+          "letter": "C",
+          "text": "producția de hormoni sintetizați din colesterol",
+          "why": "Ambele gonade produc steroizi sexuali prin căi de sinteză care pornesc de la colesterol."
+        },
+        {
+          "letter": "D",
+          "text": "se află sub controlul unor hormoni secretați de adenohipofiză",
+          "why": "FSH și LH sunt gonadotropine adenohipofizare care controlează funcțiile ovariene și testiculare."
+        },
+        {
+          "letter": "E",
+          "text": "venos, se drenează în vena azygos",
+          "why": "Venele gonadale se varsă de regulă în vena cavă inferioară la dreapta și în vena renală la stânga; vena azygos nu este drenajul lor normal."
+        }
+      ],
+      "sourcePages": [
+        229
+      ]
+    },
+    {
+      "id": "rf-139",
+      "number": 139,
+      "sourceNumber": 139,
+      "sourceChapter": "XII",
+      "mixed": true,
+      "prompt": "Selectați asocierile corecte referitoare la glandele active la nivelul aparatului reproducător:",
+      "asksFalse": false,
+      "correct": [
+        "A",
+        "E"
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "text": "glandele bulbo-uretrale - secreție alcalină",
+          "why": "Glandele bulbouretrale produc o secreție mucoasă lubrifiantă, cu componente alcaline, conform descrierii manualului."
+        },
+        {
+          "letter": "B",
+          "text": "glandele vestibulare - lubrifierea uterului",
+          "why": "Glandele vestibulare lubrifiază regiunea vestibulară și intrarea vaginală, nu cavitatea uterină."
+        },
+        {
+          "letter": "C",
+          "text": "glanda prostatică - 50 % din volumul lichidului seminal",
+          "why": "Manualul atribuie prostatei aproximativ 30% din volumul lichidului seminal, iar veziculelor seminale aproximativ 60%; 50% nu este valoarea indicată pentru prostată."
+        },
+        {
+          "letter": "D",
+          "text": "glande apocrine - secreție lactată sub acțiunea oxitocinei",
+          "why": "Producerea laptelui este stimulată de prolactină. Oxitocina produce contracția celulelor mioepiteliale și ejecția laptelui deja secretat."
+        },
+        {
+          "letter": "E",
+          "text": "glande tubulare - faza proliferativă a ciclului menstrual",
+          "why": "În faza proliferativă se refac și cresc glandele tubulare endometriale; activitatea lor secretorie pronunțată caracterizează apoi faza secretorie."
+        }
+      ],
+      "sourcePages": [
+        230
       ]
     }
-  ]
+  ],
+  "legacyRoutes": {
+    "grila-1": "grila-69",
+    "grila-2": "grila-70",
+    "grila-3": "grila-71",
+    "grila-4": "grila-72",
+    "grila-5": "grila-73",
+    "grila-6": "grila-74",
+    "grila-7": "grila-75",
+    "grila-8": "grila-76",
+    "grila-9": "grila-77",
+    "grila-10": "grila-78",
+    "grila-11": "grila-79",
+    "grila-12": "grila-80",
+    "grila-13": "grila-81",
+    "grila-14": "grila-82",
+    "grila-15": "grila-83",
+    "grila-16": "grila-84",
+    "grila-17": "grila-85",
+    "grila-18": "grila-86",
+    "grila-19": "grila-87",
+    "grila-20": "grila-88",
+    "grila-21": "grila-89",
+    "grila-22": "grila-90",
+    "grila-23": "grila-91",
+    "grila-24": "grila-92",
+    "grila-25": "grila-93",
+    "grila-26": "grila-94",
+    "grila-27": "grila-95",
+    "grila-28": "grila-96",
+    "grila-29": "grila-97",
+    "grila-30": "grila-98",
+    "grila-31": "grila-99",
+    "grila-32": "grila-100",
+    "grila-33": "grila-101",
+    "grila-34": "grila-102",
+    "grila-35": "grila-103",
+    "grila-36": "grila-104",
+    "grila-37": "grila-105",
+    "grila-38": "grila-106",
+    "grila-39": "grila-107",
+    "grila-40": "grila-108",
+    "grila-41": "grila-109",
+    "grila-42": "grila-110",
+    "grile-1-10": "grile-69-78",
+    "grile-11-20": "grile-79-88",
+    "grile-21-30": "grile-89-98",
+    "grile-31-40": "grile-99-108",
+    "grile-41-42": "grile-109-118"
+  }
 };

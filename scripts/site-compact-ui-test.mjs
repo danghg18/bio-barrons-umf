@@ -13,7 +13,8 @@ const lessons = registry.chapters.filter(chapter => chapter.done && chapter.url)
 const quizzes = [...new Set(registry.chapters.flatMap(chapter => (chapter.resources || []).filter(resource => resource.kind === 'quiz').map(resource => resource.url)))];
 const general = ['index.html', ...registry.site.pages.map(page => page.url)];
 const pages = [...general, ...lessons, ...quizzes];
-assert.deepEqual([lessons.length, quizzes.length, general.length, new Set(pages).size], [17, 7, 6, 30], 'The registry must cover all 30 public pages');
+assert.deepEqual([lessons.length, general.length, new Set(pages).size], [17, 7, 24 + quizzes.length], 'The registry must cover all lesson, general and registered quiz pages');
+assert.ok(general.includes('simulare.html'), 'Simulation is a public static page');
 
 const types = {'.html':'text/html', '.css':'text/css', '.js':'text/javascript', '.svg':'image/svg+xml', '.png':'image/png', '.webp':'image/webp', '.json':'application/json', '.ttf':'font/ttf'};
 const server = http.createServer(async (request, response) => {
@@ -145,7 +146,7 @@ try {
         assert.deepEqual(errors, [], 'Page JavaScript must not throw');
       });
     }
-    console.log('Checked all 30 public pages at ' + width + 'px.');
+    console.log('Checked all ' + pages.length + ' public pages at ' + width + 'px.');
     await context.close();
   }
   for (const width of [1440,390]) {
@@ -192,7 +193,7 @@ try {
   }
   await writeFile(resolve(output, 'report.json'), JSON.stringify({pages:[...pages],widths:[1440,768,390,320],passed,failures}, null, 2) + '\n');
   assert.equal(failures.length, 0, 'Compact UI regressions; full details in ' + resolve(output,'report.json'));
-  console.log('Compact site UI: 30 pages × 4 widths, flush interior topbars, floating homepage header, visible desktop contents, responsive homepage introduction and working demo, catalog CTA, direct resume and notebook paper passed. Captures: ' + output);
+  console.log('Compact site UI: ' + pages.length + ' pages × 4 widths, flush interior topbars, floating homepage header, visible desktop contents, responsive homepage introduction and working demo, catalog CTA, direct resume and notebook paper passed. Captures: ' + output);
 } finally {
   await browser.close();
   await new Promise(done => server.close(done));

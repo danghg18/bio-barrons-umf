@@ -6,12 +6,19 @@ function closeNav() {
   document.getElementById('nav-overlay').classList.remove('open');
 }
 function quizRouteFor(target) {
+  target = quizCanonicalTarget(target);
   if (pages.includes(target)) return target;
   const question = /^grila-\d+$/.test(target) && document.getElementById(target);
   return question ? question.closest('.page-section').id.slice(5) : quizDefaultRoute;
 }
+function quizCanonicalTarget(target) {
+  const source = window.BB_QUIZ || window.BB_NERVOUS_QUIZ;
+  const aliases = source && source.legacyRoutes;
+  return aliases && Object.hasOwn(aliases, target) ? aliases[target] : target;
+}
 function quizNavigate(target, updateHash, focusDestination = true) {
   if (!document.querySelector('.page-section')) return;
+  target = quizCanonicalTarget(target);
   const route = quizRouteFor(target);
   const question = /^grila-\d+$/.test(target) && document.getElementById(target);
   document.querySelectorAll('.page-section').forEach(section => section.classList.toggle('active', section.id === 'page-' + route));

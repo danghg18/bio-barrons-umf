@@ -70,7 +70,7 @@ body.bb-chapter-redesign .bb-account-heading h2 { color: var(--ui-ink, #23473d) 
 .bb-account-status { padding-top: 18px; box-shadow: 0 -1px 0 #264b3310; margin: 22px 0 0; }
 .bb-account-status[data-status="error"], .bb-account-message.is-error { color: #943e33; }
 .bb-account-message { color: #254f45; margin: 10px 0 0; }
-.bb-account-message:empty { display: none; }
+.bb-account-message:empty, .bb-account-status:empty { display: none; }
 .bb-account-tools { display: flex; flex-wrap: wrap; gap: 4px 20px; }
 .bb-account-options { margin-top: 14px; }
 .bb-account-options summary { display: flex; align-items: center; justify-content: space-between; min-height: 44px; gap: 16px; color: var(--ui-muted, #566b61); cursor: pointer; list-style: none; font-size: 13px; }
@@ -136,14 +136,6 @@ body.bb-chapter-redesign .bb-account-heading h2 { color: var(--ui-ink, #23473d) 
   .bb-notes-toggle span { position: static; width: auto; height: auto; overflow: visible; clip-path: none; white-space: normal; }
   body.bb-chapter-redesign.bm-reader .lab-topbar-inner:has(.lesson-search.open) #bb-notes-toggle,
   body.bb-chapter-redesign.bm-reader .lab-topbar-inner:has(.lesson-search.open) #pilot-account-toggle { visibility: hidden; }
-}
-@media (max-width: 360px) {
-  body.bb-chapter-redesign.bm-reader:has(#bb-notes-toggle) .lab-topbar-inner .bm-primary-nav a { padding-inline: 6px !important; }
-  body.bb-chapter-redesign.bm-reader:has(#bb-notes-toggle) .lab-topbar-inner .lesson-search,
-  body.bb-chapter-redesign.bm-reader:has(#bb-notes-toggle) .lab-topbar-inner .lesson-search-trigger,
-  body.bb-chapter-redesign.bm-reader:has(#bb-notes-toggle) .lab-topbar-inner .bb-sidebar-settings,
-  body.bb-chapter-redesign.bm-reader:has(#bb-notes-toggle) .lab-topbar-inner .bb-settings-toggle,
-  body.bb-chapter-redesign.bm-reader:has(#bb-notes-toggle) .lab-topbar-inner #pilot-account-toggle { width: 32px !important; min-width: 32px !important; }
 }
 @media (prefers-reduced-motion: reduce) {
   .bb-account-surface, .bb-account-surface *, .bb-notes-panel *, .bb-notes-toggle { scroll-behavior: auto; transition: none !important; animation: none !important; }

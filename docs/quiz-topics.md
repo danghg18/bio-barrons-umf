@@ -13,13 +13,15 @@ Intervalele existente de câte zece întrebări rămân intervale de navigare. T
 
 ## Criterii editoriale
 
-Au fost inspectate enunțurile și opțiunile tuturor celor 451 de întrebări, etichetele `topic` / `lessonSection` existente și secțiunile/titlurile lecțiilor publicate. Etichetele existente oferă indicii, nu sunt folosite automat ca autoritate: unele sunt generice, altele denumesc numai o parte dintre afirmații.
+Au fost inspectate enunțurile și opțiunile celor 451 de întrebări din importurile inițiale, etichetele `topic` / `lessonSection` existente și secțiunile/titlurile lecțiilor publicate. Etichetele existente oferă indicii, nu sunt folosite automat ca autoritate: unele sunt generice, altele denumesc numai o parte dintre afirmații.
 
 O întrebare cu un subiect explicit (de exemplu membrana, nervii cranieni, uterul) este atribuită acelui subiect, inclusiv când distractorii compară structura cu alte organe. Întrebările generale care verifică inseparabil mai multe subdiviziuni sunt în "Recapitulare mixtă". Nu sunt distribuite procentual și nu sunt numărate de mai multe ori. Un rezultat la o întrebare mixtă nu devine artificial o greșeală la fiecare subcapitol.
 
 Grupele sunt normalizate la o granularitate utilă pentru recapitulare: de exemplu anatomia și funcțiile rinichilor, filtrare, reabsorbție, contracurent, secreție, hormoni, urină, căi urinare. Nu există clasificare automată după cuvinte-cheie la rularea site-ului.
 
 Nu sunt introduse subdiviziuni fără întrebări proprii: de exemplu cerebelul apare în întrebări mixte, iar capitolul celular nu are o întrebare exclusiv despre secțiunea energie. O secțiune fără întrebări nu este prezentată drept capitol parcurs sau neparcurs.
+
+Importul endocrin/metabolism adaugă 160 de întrebări, iar importul circulator adaugă 140, pentru un total de **751 întrebări în 11 teste**. Fidelitatea, limitele baremelor și sursele sunt descrise în [auditul endocrin/metabolism](grile-endocrin-metabolism.md) și [auditul cardiovascular/limfatic](grile-circulator.md).
 
 ## Decizii care cer atenție
 
@@ -162,3 +164,57 @@ Pentru întrebări noi, adăugați explicit ID-ul în registrul testului. Pentru
 - `npm run generate`, apoi `npm run generate:check`: regenerarea coordonată a indexului și precache-ului.
 
 Validarea nu constituie o nouă verificare științifică a baremelor. Registrul este o clasificare editorială explicită, revizuibilă independent de conținut.
+
+### bb.quiz.sistemul-endocrin.v1
+
+| Temă | Întrebări |
+|---|---|
+| Hormoni: mecanisme și efecte | end-001, end-002, end-003, end-034, end-035, end-038, end-041, end-042, end-046, end-052, end-053, end-054, end-055, end-056, end-057, end-058, end-059, end-060, end-120, end-121, end-123, end-129, end-130, end-144, end-146, end-148, end-159 |
+| Hipotalamus și hipofiză | end-004, end-005, end-006, end-007, end-008, end-009, end-010, end-011, end-012, end-020, end-026, end-027, end-028, end-029, end-036, end-040, end-043, end-044, end-045, end-124, end-125, end-131, end-132, end-133, end-134, end-139, end-149, end-151, end-153 |
+| Tiroida | end-013, end-014, end-033, end-047, end-135, end-136, end-140, end-154 |
+| Paratiroide și homeostazia calciului | end-015, end-032, end-126, end-137, end-141, end-156 |
+| Pancreasul endocrin | end-016, end-017, end-018, end-019, end-037, end-048, end-049, end-127, end-142, end-143, end-145, end-147, end-157, end-160 |
+| Glandele suprarenale | end-021, end-022, end-030, end-031, end-050, end-051, end-122, end-138, end-158 |
+| Alte glande endocrine | end-023, end-024, end-025, end-039, end-128, end-155 |
+| Anabolism și catabolism | end-061 |
+| Metabolismul glucidelor | end-062, end-064 |
+| Metabolismul lipidelor | end-063 |
+| Termoreglare | end-150 |
+| Absorbția vitaminelor | end-152 |
+
+### bb.quiz.metabolism.v1
+
+| Temă | Întrebări |
+|---|---|
+| Metabolismul glucidelor | met-071, met-072, met-082, met-083, met-084, met-085, met-107, met-116 |
+| Metabolismul lipidelor | met-065, met-069, met-073, met-075, met-078, met-086, met-087, met-090, met-098, met-102, met-106, met-113, met-115, met-117 |
+| Metabolismul proteinelor | met-067, met-074, met-079, met-088, met-091, met-111 |
+| Stări metabolice | met-095, met-101, met-110 |
+| Minerale | met-068, met-097, met-105, met-119 |
+| Rata metabolică | met-076, met-108 |
+| Termoreglare | met-070, met-077, met-089, met-096, met-103, met-112 |
+| Anabolism, catabolism și recapitulare | met-066, met-080, met-081, met-092, met-093, met-094, met-099, met-100, met-104, met-109, met-114, met-118 |
+
+### bb.quiz.sistemul-cardiovascular.v1
+
+| Temă | Întrebări |
+|---|---|
+| Circulația pulmonară și sistemică | cv-001, cv-002, cv-026, cv-028, cv-032, cv-069 |
+| Vase și hemodinamică | cv-003, cv-010, cv-014, cv-015, cv-021, cv-022, cv-023, cv-024, cv-025, cv-027, cv-029, cv-039, cv-040, cv-041, cv-042, cv-044, cv-045, cv-046, cv-047, cv-049, cv-051, cv-052, cv-053, cv-055, cv-060, cv-062, cv-066, cv-071, cv-073, cv-074, cv-131, cv-133, cv-138, cv-140 |
+| Cavitățile inimii | cv-011, cv-061 |
+| Valve cardiace | cv-005, cv-006, cv-012, cv-030, cv-058, cv-063, cv-070 |
+| Circulația coronariană | cv-007, cv-013, cv-018, cv-031, cv-068 |
+| Miocard și țesut excitoconductor | cv-009, cv-019, cv-020, cv-033, cv-034, cv-035, cv-038, cv-065, cv-072, cv-139 |
+| Ciclul și debitul cardiac | cv-004, cv-008, cv-036, cv-037, cv-054, cv-056, cv-067, cv-132 |
+| Inima: structură și recapitulare | cv-016, cv-017, cv-048, cv-050, cv-057, cv-059, cv-064, cv-134, cv-135 |
+| Circulația portală | cv-043 |
+
+### bb.quiz.sistemul-limfatic.v1
+
+| Temă | Întrebări |
+|---|---|
+| Vase limfatice și recapitulare | lim-075, lim-076, lim-077, lim-078, lim-079, lim-080, lim-083, lim-084, lim-085, lim-092, lim-093, lim-099, lim-102, lim-104, lim-105, lim-106, lim-109, lim-110, lim-111, lim-112, lim-113, lim-114, lim-121, lim-123, lim-125, lim-126, lim-130, lim-137 |
+| Noduli și țesuturi limfoide | lim-081, lim-082, lim-090, lim-094, lim-097, lim-098, lim-100, lim-103, lim-115, lim-119, lim-122, lim-127, lim-129 |
+| Timus | lim-088, lim-096, lim-117, lim-128, lim-136 |
+| Splină | lim-086, lim-087, lim-089, lim-095, lim-108, lim-116, lim-118, lim-120, lim-124 |
+| Limfă și edem | lim-091, lim-101, lim-107 |

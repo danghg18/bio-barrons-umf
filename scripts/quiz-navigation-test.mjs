@@ -19,9 +19,10 @@ try{
  assert.ok(await page.locator('main').evaluate(n=>n.getBoundingClientRect().top<200),'quiz remains at the top after collapsing');
  await page.locator('.lab-menu-trigger').click();
  assert.equal(await page.locator('#sidenav').isVisible(),true);
- assert.equal(await page.locator('.quiz-question-map a').count(),50,'every source question has a numbered map link');
- assert.equal(await page.locator('.quiz-question-map a').first().getAttribute('href'),'#grila-51');
+ assert.equal(await page.locator('.quiz-question-map a').count(),100,'every source question has a numbered map link');
+ assert.equal(await page.locator('.quiz-question-map a').first().getAttribute('href'),'#grila-1');
  assert.equal(await page.locator('.quiz-question-map').evaluate(n=>getComputedStyle(n).gridTemplateColumns.split(' ').length),5);
+ await page.locator('.quiz-question-map a[href="#grila-51"]').click();
  const first=page.locator('#grila-51'), firstLink=page.locator('.quiz-question-map a[href="#grila-51"]');
  assert.match(await firstLink.getAttribute('aria-label'),/Necompletată/);
  await first.locator('input[value="C"]').check();
@@ -43,7 +44,7 @@ try{
  await page.goForward();
  assert.equal(await page.locator('.page-section.active').getAttribute('id'),'page-grile-61-70');
  assert.equal(await page.locator('.page-section.active .quiz-question').count(),10);
- assert.match(await page.locator('.page-section.active .quiz-page-position').textContent(),/Pagina 2 din 5/);
+ assert.match(await page.locator('.page-section.active .quiz-page-position').textContent(),/Pagina 7 din 10/);
  const second=await context.newPage();await second.goto(base+'grile_sistemul_nervos.html#grila-63');
  await page.locator('#grila-62 input[value="A"]').check();
  await second.locator('#grila-63 input[value="B"]').check();
@@ -61,8 +62,13 @@ try{
  await searchPage.goto(base+'grile_sistemul_nervos.html#grila-99');
  await searchPage.locator('.lesson-search-trigger').click();
  await searchPage.locator('#lesson-search-input').fill('neuron');
- await searchPage.waitForFunction(()=>document.querySelector('.page-section.active').id==='page-grile-51-60' && document.querySelector('#lesson-search-count').textContent.startsWith('1 /'));
+ await searchPage.waitForFunction(()=>document.querySelector('.page-section.active').id!=='page-grile-91-100' && document.querySelector('#lesson-search-count').textContent.startsWith('1 /'));
  assert.ok(await searchPage.locator('.page-section.active .search-found-current').first().isVisible(),'search reveals the current result in the destination range');
+ assert.equal(await searchPage.locator('.quiz-option-explanation[hidden] .search-found').count(),0,'Unverified hidden explanations never create unreachable search results');
+ assert.ok(await searchPage.evaluate(()=>{
+  const q=BB_NERVOUS_QUIZ.questions.find(q=>q.number===51);
+  return BBSearchText.collect(q.options[0].why).some(match=>match.parts.some(part=>part.node.parentElement.closest('#sn-051-a-explanation')));
+ }),'Verified explanations remain searchable');
  assert.equal(await searchPage.evaluate(()=>document.activeElement.id),'lesson-search-input','search keeps typing focus after navigating to another question range');
  const firstSearchCount=await searchPage.locator('#lesson-search-count').textContent();
  await searchPage.keyboard.press('Enter');
@@ -74,7 +80,7 @@ try{
  await searchPage.close();
  const historyContext=await browser.newContext({serviceWorkers:'block',reducedMotion:'reduce'});
  const tabA=await historyContext.newPage(), tabB=await historyContext.newPage();
- await Promise.all([tabA.goto(base+'grile_sistemul_nervos.html'),tabB.goto(base+'grile_sistemul_nervos.html')]);
+ await Promise.all([tabA.goto(base+'grile_sistemul_nervos.html#grila-51'),tabB.goto(base+'grile_sistemul_nervos.html#grila-51')]);
  await Promise.all([tabA.evaluate(()=>BBQuizAnalytics.ready),tabB.evaluate(()=>BBQuizAnalytics.ready)]);
  await tabA.locator('#grila-51 .quiz-check').click();
  assert.equal((await tabA.evaluate(()=>BBQuizAnalytics.getReport())).totals.attempts,0,'empty selections do not count as attempts');
@@ -88,6 +94,7 @@ try{
  await tabA.locator('.quiz-reset-start').click();
  await tabA.locator('.quiz-reset-confirm').click();
  await tabA.waitForFunction(()=>!document.querySelector('#grila-51').classList.contains('is-verified'));
+ await tabA.locator('.quiz-question-map a[href="#grila-51"]').click();
  await tabA.locator('#grila-51 input[value="A"]').check();
  await tabA.locator('#grila-51 .quiz-check').click();
  await tabA.waitForFunction(async()=>(await BBQuizAnalytics.getReport()).totals.attempts===2);

@@ -58,7 +58,7 @@ try{
   for(const q of quiz.questions){
    const correct=!wrongIds.has(q.id),selected=correct?q.correct:q.correct.length>1?[q.correct[0]]:[q.options.find(o=>!q.correct.includes(o.letter)).letter];
    answers[q.id]={selected,verified:true,correct};
-   await BBQuizAnalytics.recordAttempt({storageKey:quiz.storageKey,runId:run.id,questionId:q.id,selected,correct,attemptId:BBQuizAnalytics.newAttemptId(),answerKey:q.correct});
+   await BBQuizAnalytics.recordAttempt({storageKey:quiz.storageKey,runId:run.id,questionId:q.id,selected,correct,attemptId:BBQuizAnalytics.newAttemptId(),answerKey:q.correct,contentRevision:q.contentRevision||0});
   }
   BBUserStorage.set(quiz.storageKey,{version:quiz.version,questions:answers});
   return run.id;

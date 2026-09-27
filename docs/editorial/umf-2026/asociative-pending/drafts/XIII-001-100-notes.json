@@ -1,0 +1,602 @@
+[
+  {
+    "number": 4,
+    "options": [
+      "B",
+      "E"
+    ],
+    "type": "scientific-caveat",
+    "text": "Barem BE păstrat. Evidența fructozei în manual nu exclude metabolizarea glucozei de spermatozoizi. Studiul structural uman arată componente microtubulare ale centriolelor din gât; nu justificăm E afirmând că gâtul nu conține microtubuli.",
+    "sources": [
+      "Barron's 2022, PDF 538–545: text, tabele și figuri reproducător masculin citite vizual integral.",
+      "Barron's 2022, PDF 53–60: structură celulară, transport și metabolism energetic; paginile relevante citite vizual.",
+      "https://pubmed.ncbi.nlm.nih.gov/11451366/",
+      "https://www.nature.com/articles/s41467-018-04678-8"
+    ]
+  },
+  {
+    "number": 7,
+    "options": [
+      "A",
+      "B"
+    ],
+    "type": "scientific-caveat",
+    "text": "Separarea fiziologică a circulațiilor nu constituie o barieră absolută pentru eritrocitele fetale. Seria clinică documentează hemoragii fetomaterne; hCG, estrogenii și progesteronul nu epuizează produșii endocrini placentari.",
+    "sources": [
+      "Barron's 2022, PDF 558–570: text, tabele și figuri reproducător feminin citite vizual integral.",
+      "Barron's 2022, PDF 326–339: sânge, eritrocite, leucocite și hemostază; paginile relevante citite vizual.",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC11800682/"
+    ]
+  },
+  {
+    "number": 11,
+    "options": [
+      "E"
+    ],
+    "type": "scope",
+    "text": "Cerința privește structura stomacului; E descrie o funcție. Precursorul secretat este pepsinogenul, activat ulterior la pepsină.",
+    "sources": [
+      "Barron's 2022, PDF 434–449: capitol digestiv, text, tabele și figuri citite vizual integral pe acest interval."
+    ]
+  },
+  {
+    "number": 14,
+    "options": [
+      "A",
+      "E"
+    ],
+    "type": "scientific-caveat",
+    "text": "Morfologia cu nucleu periferic se referă la adipocitul alb. Corpusculul bazal se află citoplasmatic, sub membrană; formularea tipărită despre suprafață este conservată.",
+    "sources": [
+      "Barron's 2022, PDF 53–60: structură celulară, transport și metabolism energetic; paginile relevante citite vizual."
+    ]
+  },
+  {
+    "number": 15,
+    "options": [
+      "C",
+      "D"
+    ],
+    "type": "scientific-caveat",
+    "text": "Barem CE păstrat. Inhibina ovariană este glicoproteică, deci C este prea restrictivă. Se distinge mecanismul genomic estrogenic de semnalizarea rapidă membranară; studiul cAMP este în linia umană MCF-7, nu dovadă pentru orice țintă estrogenică.",
+    "sources": [
+      "Barron's 2022, PDF 558–570: text, tabele și figuri reproducător feminin citite vizual integral.",
+      "Barron's 2022, PDF 302–315: glande, receptori și mecanisme hormonale; paginile relevante citite vizual.",
+      "https://pubmed.ncbi.nlm.nih.gov/2504869/",
+      "https://ncbi.nlm.nih.gov/mesh/68007265",
+      "https://pubmed.ncbi.nlm.nih.gov/15642158/"
+    ]
+  },
+  {
+    "number": 17,
+    "options": [
+      "D"
+    ],
+    "type": "scope",
+    "text": "Traseul portal al GnRH este adevărat. GnRH hipotalamic se deosebește de FSH/LH adenohipofizare, dar cerința largă nu face traseul fals.",
+    "sources": [
+      "Barron's 2022, PDF 302–315: glande, receptori și mecanisme hormonale; paginile relevante citite vizual.",
+      "Barron's 2022, PDF 538–545: text, tabele și figuri reproducător masculin citite vizual integral."
+    ]
+  },
+  {
+    "number": 18,
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "type": "scientific-caveat",
+    "text": "Nu confundăm stratul muscular extern cu musculara mucoasei. Lamina propria conține vase și nervi; B exclusă rămâne biologic susținută. Glandele salivare și pancreasul sunt anexe, iar C/D nu sunt false fiziologic.",
+    "sources": [
+      "Barron's 2022, PDF 434–449: capitol digestiv, text, tabele și figuri citite vizual integral pe acest interval.",
+      "https://www.histologyguide.org/about-us/sorenson-atlas-of-human-histology-chapters-1-and-14.pdf"
+    ]
+  },
+  {
+    "number": 24,
+    "options": [
+      "C"
+    ],
+    "type": "scope",
+    "text": "Vasopresina influențează real presiunea sanguină; cerința vizează efectul renal, deci excluderea nu este tradusă prin negarea efectelor vasculare/volemice.",
+    "sources": [
+      "Barron's 2022, PDF 493–505: text, tabele și figuri renale citite vizual integral.",
+      "Barron's 2022, PDF 302–315: glande, receptori și mecanisme hormonale; paginile relevante citite vizual."
+    ]
+  },
+  {
+    "number": 25,
+    "options": [
+      "B",
+      "C"
+    ],
+    "type": "scientific-caveat",
+    "text": "Barem BC conservat. Date experimentale murine demonstrează ATP mitocondrial prin fosforilare la nivel de substrat în anoxie acută, fără generalizare la orice țesut uman. Reducerea O₂ la apă este reacția terminală normală; nu inventăm o combinație directă O₂–carbon pentru justificarea C.",
+    "sources": [
+      "Barron's 2022, PDF 53–60: structură celulară, transport și metabolism energetic; paginile relevante citite vizual.",
+      "Barron's 2022, PDF 461–482: metabolism și nutriție; paginile relevante citite vizual.",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10798963/"
+    ]
+  },
+  {
+    "number": 27,
+    "options": [
+      "C"
+    ],
+    "type": "ambiguity",
+    "text": "Peristaltismul avansează secvențial. C nu conține explicit „simultan”, astfel că explicația delimitează această interpretare și semnalează ambiguitatea fără să introducă un calificativ în sursă.",
+    "sources": [
+      "Barron's 2022, PDF 434–449: capitol digestiv, text, tabele și figuri citite vizual integral pe acest interval."
+    ]
+  },
+  {
+    "number": 28,
+    "options": [
+      "C",
+      "E"
+    ],
+    "type": "scientific-caveat",
+    "text": "Reabsorbția sărurilor are componente active și pasive. Dacă sarea este NaCl, 1% este ușor hiperton față de reperul0,9%; gradul crenării nu este dedus automat. Baremul care exclude E rămâne intact.",
+    "sources": [
+      "Barron's 2022, PDF 53–60: structură celulară, transport și metabolism energetic; paginile relevante citite vizual.",
+      "Barron's 2022, PDF 493–505: text, tabele și figuri renale citite vizual integral."
+    ]
+  },
+  {
+    "number": 31,
+    "options": [
+      "D"
+    ],
+    "type": "scientific-caveat",
+    "text": "Prostaglandinele pot fi produse în țesut cardiac uman, inclusiv fracții miocardice; prostanoizii pot modifica forța de contracție în preparate ventriculare umane. Studiul pe cord neinsuficient nu este generalizat automat la insuficiența cardiacă. Barem ACE rămâne.",
+    "sources": [
+      "Barron's 2022, PDF 351–367: inimă și vase; paginile relevante citite vizual.",
+      "https://pubmed.ncbi.nlm.nih.gov/7394063/",
+      "https://pubmed.ncbi.nlm.nih.gov/6430265/",
+      "https://pubmed.ncbi.nlm.nih.gov/22546232/"
+    ]
+  },
+  {
+    "number": 32,
+    "options": [
+      "A",
+      "B",
+      "E"
+    ],
+    "type": "scientific-caveat",
+    "text": "Se disting ritmul respirator, musculatura ventilatorie și tonusul bronșic. Studiul uman arată efecte ale CO₂ asupra rezistenței căilor aeriene, dependente de context. Datele canine și studiul pe șobolan susțin că influențele reflexe/centrale nu sunt imposibile; nu sunt echivalate cu acțiune directă a aferențelor chemoreceptoare asupra miocitelor.",
+    "sources": [
+      "Barron's 2022, PDF 410–422: aparatul respirator, ventilație și reglare; paginile relevante citite vizual.",
+      "Barron's 2022, PDF 232–243 și 250–267: țesut nervos, sinapse și control nervos; paginile relevante citite vizual.",
+      "https://pubmed.ncbi.nlm.nih.gov/1908137/",
+      "https://pubmed.ncbi.nlm.nih.gov/5972114/",
+      "https://physoc.onlinelibrary.wiley.com/doi/abs/10.1113/JP280749"
+    ]
+  },
+  {
+    "number": 33,
+    "options": [
+      "A"
+    ],
+    "type": "scientific-caveat",
+    "text": "Schema postprandială glucidică nu acoperă orice masă. Studiul uman după proteină orală arată creșteri atât ale insulinei, cât și ale glucagonului.",
+    "sources": [
+      "Barron's 2022, PDF 461–482: metabolism și nutriție; paginile relevante citite vizual.",
+      "https://pubmed.ncbi.nlm.nih.gov/37480216/"
+    ]
+  },
+  {
+    "number": 34,
+    "options": [
+      "E"
+    ],
+    "type": "scientific-caveat",
+    "text": "Labfermentul este prezentat didactic în manual; gena umană CYMP este adnotată ca pseudogenă. Nu atribuim cu certitudine sugarului uman o chimozină gastrică funcțională.",
+    "sources": [
+      "Barron's 2022, PDF 434–449: capitol digestiv, text, tabele și figuri citite vizual integral pe acest interval.",
+      "https://www.ncbi.nlm.nih.gov/gene/643160"
+    ]
+  },
+  {
+    "number": 35,
+    "options": [
+      "B",
+      "C"
+    ],
+    "type": "scientific-caveat",
+    "text": "Glota este un spațiu, iar închiderea pliurilor vocale participă real la protecție. Pentru C se păstrează diferența voluntar/reflex, dar textul nu spune voluntar și neuroimagistica umană demonstrează participare corticală la deglutiție; nu inventăm absența controlului suprabulbar.",
+    "sources": [
+      "Barron's 2022, PDF 434–449: capitol digestiv, text, tabele și figuri citite vizual integral pe acest interval.",
+      "Barron's 2022, PDF 232–243 și 250–267: țesut nervos, sinapse și control nervos; paginile relevante citite vizual.",
+      "https://pubmed.ncbi.nlm.nih.gov/10499047/",
+      "https://pubmed.ncbi.nlm.nih.gov/25044473/"
+    ]
+  },
+  {
+    "number": 41,
+    "options": [
+      "A"
+    ],
+    "type": "scientific-caveat",
+    "text": "ATP conține fosfat și reprezintă un intermediar energetic; nu este depozitul energetic corporal dominant pe termen lung. Baremul se păstrează, fără confundarea ATP cu rezerva lipidică.",
+    "sources": [
+      "Barron's 2022, PDF 461–482: metabolism și nutriție; paginile relevante citite vizual.",
+      "Barron's 2022, PDF 53–60: structură celulară, transport și metabolism energetic; paginile relevante citite vizual."
+    ]
+  },
+  {
+    "number": 43,
+    "options": [
+      "E"
+    ],
+    "type": "scope",
+    "text": "Fagocitoza consumă energie, fiind transport vezicular; clasificarea separată față de pompele de membrană nu înseamnă lipsa consumului energetic.",
+    "sources": [
+      "Barron's 2022, PDF 53–60: structură celulară, transport și metabolism energetic; paginile relevante citite vizual."
+    ]
+  },
+  {
+    "number": 44,
+    "options": [
+      "B",
+      "C"
+    ],
+    "type": "scientific-caveat",
+    "text": "Localizarea veziculelor presinaptice este adevărată structural. Receptorii ionotropi postsinaptici pot forma canale; „pot” nu înseamnă toți receptorii. Cheia rămâne neschimbată fără falsificarea mecanismului.",
+    "sources": [
+      "Barron's 2022, PDF 232–243 și 250–267: țesut nervos, sinapse și control nervos; paginile relevante citite vizual."
+    ]
+  },
+  {
+    "number": 45,
+    "options": [
+      "B",
+      "D"
+    ],
+    "type": "scientific-caveat",
+    "text": "Dopamina nu este limitată la sinapse encefalice: sinteza și eliberarea în retina adultă umană sunt documentate. Exocitoza caracterizează mediatorii veziculari convenționali, nu toți mediatorii posibili.",
+    "sources": [
+      "Barron's 2022, PDF 232–243 și 250–267: țesut nervos, sinapse și control nervos; paginile relevante citite vizual.",
+      "Barron's 2022, PDF 279–290: analizatori și receptori; paginile relevante citite vizual.",
+      "https://pubmed.ncbi.nlm.nih.gov/6127354/"
+    ]
+  },
+  {
+    "number": 47,
+    "options": [
+      "E"
+    ],
+    "type": "scientific-caveat",
+    "text": "Hemul este degradat de macrofagele splenice la biliverdină/bilirubină; conjugarea și excreția biliară hepatică sunt etape ulterioare.",
+    "sources": [
+      "Barron's 2022, PDF 326–339: sânge, eritrocite, leucocite și hemostază; paginile relevante citite vizual.",
+      "Barron's 2022, PDF 434–449: capitol digestiv, text, tabele și figuri citite vizual integral pe acest interval."
+    ]
+  },
+  {
+    "number": 49,
+    "options": [
+      "D"
+    ],
+    "type": "scientific-caveat",
+    "text": "Camera posterioară iris–cristalin conține umoare apoasă; cavitatea vitroasă retrocristaliniană nu trebuie confundată cu ea.",
+    "sources": [
+      "Barron's 2022, PDF 279–290: analizatori și receptori; paginile relevante citite vizual."
+    ]
+  },
+  {
+    "number": 53,
+    "options": [
+      "E"
+    ],
+    "type": "scientific-caveat",
+    "text": "Relația inimă–trahee este simplificată în opțiunea exclusă. Se explică poziția mediastinală fără inventarea unui raport posterior general al inimii față de trahee.",
+    "sources": [
+      "Barron's 2022, PDF 351–367: inimă și vase; paginile relevante citite vizual.",
+      "Barron's 2022, PDF 410–422: aparatul respirator, ventilație și reglare; paginile relevante citite vizual."
+    ]
+  },
+  {
+    "number": 58,
+    "options": [
+      "D"
+    ],
+    "type": "scientific-caveat",
+    "text": "Baremul include „mai late”. Referințele universitare arată diametre variabile ale fibrelor scheletice și cardiomiocite în general mai mici; explicația semnalează lipsa unei reguli universale în sensul formulării.",
+    "sources": [
+      "Barron's 2022, PDF 351–367: inimă și vase; paginile relevante citite vizual.",
+      "https://histologyguide.com/slideview/MHS-238-teased-muscle/04-slide-1.html",
+      "https://histologyguide.com/slideview/MH-054-cardiac-muscle/04-slide-1.html"
+    ]
+  },
+  {
+    "number": 59,
+    "options": [
+      "D"
+    ],
+    "type": "scientific-caveat",
+    "text": "Se distinge originea aparentă pontobulbară a abducensului de originea nucleară pontină. În rest, dreptul lateral este corect descris ca mușchi striat.",
+    "sources": [
+      "Barron's 2022, PDF 232–243 și 250–267: țesut nervos, sinapse și control nervos; paginile relevante citite vizual."
+    ]
+  },
+  {
+    "number": 61,
+    "options": [
+      "A"
+    ],
+    "type": "scientific-caveat",
+    "text": "Asocierile LDL/HDL sunt prezentate didactic; explicația nu transformă HDL într-un predictor individual suficient al riscului.",
+    "sources": [
+      "Barron's 2022, PDF 461–482: metabolism și nutriție; paginile relevante citite vizual."
+    ]
+  },
+  {
+    "number": 64,
+    "options": [
+      "A"
+    ],
+    "type": "scope",
+    "text": "Efectul vasopresinei asupra volumului și presiunii este real. Sinteza hipotalamică și eliberarea neurohipofizară sunt separate pentru a explica încadrarea fără negarea funcției.",
+    "sources": [
+      "Barron's 2022, PDF 302–315: glande, receptori și mecanisme hormonale; paginile relevante citite vizual.",
+      "Barron's 2022, PDF 493–505: text, tabele și figuri renale citite vizual integral."
+    ]
+  },
+  {
+    "number": 67,
+    "options": [
+      "C"
+    ],
+    "type": "scientific-caveat",
+    "text": "Nodulii limfoizi intestinali pot ocupa mucoasa și se pot extinde submucos; localizarea nu este redusă artificial la unul dintre straturi.",
+    "sources": [
+      "Barron's 2022, PDF 434–449: capitol digestiv, text, tabele și figuri citite vizual integral pe acest interval.",
+      "Barron's 2022, PDF 383–384: sistem limfatic și imunitate; paginile relevante citite vizual.",
+      "https://webpath.med.utah.edu/HISTHTML/NORMAL/NORM131.html",
+      "https://www.histologyguide.org/slideview/MHS-272-duodenum/14-slide-1.html"
+    ]
+  },
+  {
+    "number": 68,
+    "options": [
+      "A"
+    ],
+    "type": "scientific-caveat",
+    "text": "Secretina nu are numai efecte pancreatice: studiul uman demonstrează pepsină crescută și secreție acidă redusă. Enumerarea didactică gastrinică nu justifică negarea tuturor efectelor gastrice ale secretinei.",
+    "sources": [
+      "Barron's 2022, PDF 434–449: capitol digestiv, text, tabele și figuri citite vizual integral pe acest interval.",
+      "Barron's 2022, PDF 302–315: glande, receptori și mecanisme hormonale; paginile relevante citite vizual.",
+      "https://pubmed.ncbi.nlm.nih.gov/6801758/"
+    ]
+  },
+  {
+    "number": 69,
+    "options": [
+      "A"
+    ],
+    "type": "scientific-caveat",
+    "text": "Insulina matură conține două lanțuri peptidice21/30 aminoacizi. Pragul pentru „scurte” nu este definit în opțiune; excluderea din barem nu se justifică negând această structură.",
+    "sources": [
+      "Barron's 2022, PDF 302–315: glande, receptori și mecanisme hormonale; paginile relevante citite vizual.",
+      "Barron's 2022, PDF 461–482: metabolism și nutriție; paginile relevante citite vizual."
+    ]
+  },
+  {
+    "number": 71,
+    "options": [
+      "B",
+      "D"
+    ],
+    "type": "scientific-caveat",
+    "text": "Glucoza este combustibil neuronal principal în condiții obișnuite. Reabsorbția renală este activă secundar; oxigenul susține sinteza ATP, fără a fi consumat direct de cotransportor.",
+    "sources": [
+      "Barron's 2022, PDF 232–243 și 250–267: țesut nervos, sinapse și control nervos; paginile relevante citite vizual.",
+      "Barron's 2022, PDF 461–482: metabolism și nutriție; paginile relevante citite vizual.",
+      "Barron's 2022, PDF 493–505: text, tabele și figuri renale citite vizual integral."
+    ]
+  },
+  {
+    "number": 75,
+    "options": [
+      "C"
+    ],
+    "type": "scientific-caveat",
+    "text": "FSH are rol testicular real, dar evoluția foliculară este ovariană și nu corespunde activității testiculare cerute.",
+    "sources": [
+      "Barron's 2022, PDF 538–545: text, tabele și figuri reproducător masculin citite vizual integral.",
+      "Barron's 2022, PDF 558–570: text, tabele și figuri reproducător feminin citite vizual integral.",
+      "Barron's 2022, PDF 302–315: glande, receptori și mecanisme hormonale; paginile relevante citite vizual."
+    ]
+  },
+  {
+    "number": 76,
+    "options": [
+      "B"
+    ],
+    "type": "scientific-caveat",
+    "text": "Fonația uzuală este expiratorie; posibilitatea particulară a unor sunete inspiratorii nu rescrie mecanismul didactic.",
+    "sources": [
+      "Barron's 2022, PDF 410–422: aparatul respirator, ventilație și reglare; paginile relevante citite vizual."
+    ]
+  },
+  {
+    "number": 78,
+    "options": [
+      "D"
+    ],
+    "type": "ambiguity",
+    "text": "„Mecanisme primare” este ambiguu: imunoglobulinele participă la apărare specifică și răspuns imun primar, fără a deveni bariere nespecifice de primă linie. Baremul se păstrează.",
+    "sources": [
+      "Barron's 2022, PDF 326–339: sânge, eritrocite, leucocite și hemostază; paginile relevante citite vizual.",
+      "Barron's 2022, PDF 383–384: sistem limfatic și imunitate; paginile relevante citite vizual."
+    ]
+  },
+  {
+    "number": 79,
+    "options": [
+      "D"
+    ],
+    "type": "scientific-caveat",
+    "text": "Trombocitopenia poate produce sângerări; hemostaza primară și coagularea nu sunt procese complet independente, plachetele oferind suprafețe catalitice. Cheia nu se justifică prin negarea acestui rol.",
+    "sources": [
+      "Barron's 2022, PDF 326–339: sânge, eritrocite, leucocite și hemostază; paginile relevante citite vizual."
+    ]
+  },
+  {
+    "number": 80,
+    "options": [
+      "A"
+    ],
+    "type": "scientific-caveat",
+    "text": "Rafeul cutanat median, septul scrotal și mușchiul neted dartos sunt structuri diferite. Nu se declară fals că scrotul ar fi lipsit de mușchi neted.",
+    "sources": [
+      "Barron's 2022, PDF 538–545: text, tabele și figuri reproducător masculin citite vizual integral."
+    ]
+  },
+  {
+    "number": 81,
+    "options": [
+      "A",
+      "E"
+    ],
+    "type": "scientific-caveat",
+    "text": "Maturarea primară B este medulară; timozinele pot exercita influențe indirecte asupra răspunsurilor B în studii celulare umane. Evoluția timusului nu are un prag unic exact la sfârșitul pubertății.",
+    "sources": [
+      "Barron's 2022, PDF 383–384: sistem limfatic și imunitate; paginile relevante citite vizual.",
+      "https://pubmed.ncbi.nlm.nih.gov/3264553/"
+    ]
+  },
+  {
+    "number": 82,
+    "options": [
+      "D",
+      "E"
+    ],
+    "type": "scientific-caveat",
+    "text": "Eritrocitele pot contribui la generarea trombinei prin expunerea fosfatidilserinei și microvezicule, demonstrate experimental pe eritrocite umane. Proporția85–90% și Rh pozitiv sunt repere didactice dependente de populație, cu referire uzuală la antigenulD.",
+    "sources": [
+      "Barron's 2022, PDF 326–339: sânge, eritrocite, leucocite și hemostază; paginile relevante citite vizual.",
+      "https://pubmed.ncbi.nlm.nih.gov/17110600/"
+    ]
+  },
+  {
+    "number": 87,
+    "options": [
+      "E"
+    ],
+    "type": "scientific-caveat",
+    "text": "Experimentele arată fagocitoza de către monocite umane a celulelor T Jurkat apoptotice. Nu se extrapolează la destinul fiecărui limfocit în circulația normală.",
+    "sources": [
+      "Barron's 2022, PDF 326–339: sânge, eritrocite, leucocite și hemostază; paginile relevante citite vizual.",
+      "Barron's 2022, PDF 383–384: sistem limfatic și imunitate; paginile relevante citite vizual.",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC2843563/"
+    ]
+  },
+  {
+    "number": 89,
+    "options": [
+      "C"
+    ],
+    "type": "scientific-caveat",
+    "text": "FSH și LH sunt gonadotropinele clasice. Receptori/legare de prolactină sunt documentați în ovarul uman și celule granuloase luteinizate umane; C exclusă nu justifică lipsa oricărei relații între prolactină și gonadă.",
+    "sources": [
+      "Barron's 2022, PDF 302–315: glande, receptori și mecanisme hormonale; paginile relevante citite vizual.",
+      "Barron's 2022, PDF 558–570: text, tabele și figuri reproducător feminin citite vizual integral.",
+      "https://pubmed.ncbi.nlm.nih.gov/220098/",
+      "https://pubmed.ncbi.nlm.nih.gov/11675469/"
+    ]
+  },
+  {
+    "number": 90,
+    "options": [
+      "A"
+    ],
+    "type": "scientific-caveat",
+    "text": "Formularea largă despre oase se păstrează conform baremului; localizările clasice ale fusurilor neuromusculare și organelor tendinoase sunt mușchiul/tendonul, nu interiorul țesutului osos.",
+    "sources": [
+      "Barron's 2022, PDF 279–290: analizatori și receptori; paginile relevante citite vizual.",
+      "Barron's 2022, PDF 232–243 și 250–267: țesut nervos, sinapse și control nervos; paginile relevante citite vizual."
+    ]
+  },
+  {
+    "number": 91,
+    "options": [
+      "B"
+    ],
+    "type": "scientific-caveat",
+    "text": "Suportul retinian atribuit vitrosului este o simplificare didactică, nu o explicație exclusivă a aderenței retinei.",
+    "sources": [
+      "Barron's 2022, PDF 279–290: analizatori și receptori; paginile relevante citite vizual."
+    ]
+  },
+  {
+    "number": 92,
+    "options": [
+      "C"
+    ],
+    "type": "scientific-caveat",
+    "text": "Utilizarea glutaminei drept substrat energetic a fost studiată în culturi neuronale murine. Sursa nu este un experiment pe neuron uman in vivo și nu este generalizată la orice aminoacid.",
+    "sources": [
+      "Barron's 2022, PDF 232–243 și 250–267: țesut nervos, sinapse și control nervos; paginile relevante citite vizual.",
+      "Barron's 2022, PDF 461–482: metabolism și nutriție; paginile relevante citite vizual.",
+      "https://pubmed.ncbi.nlm.nih.gov/17410598/"
+    ]
+  },
+  {
+    "number": 93,
+    "options": [
+      "A",
+      "C",
+      "E"
+    ],
+    "type": "scientific-caveat",
+    "text": "Feedbackul estrogenic variază cu faza ciclului. GnRH pulsatil fiziologic stimulează gonadotropinele; supresia la expunere continuă este desensibilizare. Oxitocina este sintetizată hipotalamic și intervine într-o buclă pozitivă.",
+    "sources": [
+      "Barron's 2022, PDF 558–570: text, tabele și figuri reproducător feminin citite vizual integral.",
+      "Barron's 2022, PDF 302–315: glande, receptori și mecanisme hormonale; paginile relevante citite vizual."
+    ]
+  },
+  {
+    "number": 96,
+    "options": [
+      "C",
+      "D",
+      "E"
+    ],
+    "type": "scope",
+    "text": "Efectele vasopresinei, oxitocinei și eritropoietinei sunt reale. Clasificarea cerută și originea hormonilor explică excluderile; nu sunt inventate negații funcționale.",
+    "sources": [
+      "Barron's 2022, PDF 302–315: glande, receptori și mecanisme hormonale; paginile relevante citite vizual.",
+      "Barron's 2022, PDF 493–505: text, tabele și figuri renale citite vizual integral.",
+      "Barron's 2022, PDF 558–570: text, tabele și figuri reproducător feminin citite vizual integral."
+    ]
+  },
+  {
+    "number": 97,
+    "options": [
+      "B",
+      "D"
+    ],
+    "type": "scientific-caveat",
+    "text": "Gastrina nu este eritropoietină. GnRH reglează gonadotropinele FSH/LH, iar ACTH are alt factor de eliberare.",
+    "sources": [
+      "Barron's 2022, PDF 434–449: capitol digestiv, text, tabele și figuri citite vizual integral pe acest interval.",
+      "Barron's 2022, PDF 302–315: glande, receptori și mecanisme hormonale; paginile relevante citite vizual."
+    ]
+  },
+  {
+    "number": 98,
+    "options": [
+      "D"
+    ],
+    "type": "scientific-caveat",
+    "text": "Traseul limfatic inghinal prin ductul toracic și unghiul venos stâng este corect schematic; varianta omite între atriul drept și artera pulmonară valva tricuspidă, ventriculul drept și valva pulmonară.",
+    "sources": [
+      "Barron's 2022, PDF 383–384: sistem limfatic și imunitate; paginile relevante citite vizual.",
+      "Barron's 2022, PDF 351–367: inimă și vase; paginile relevante citite vizual."
+    ]
+  }
+]

@@ -39,12 +39,12 @@ self.addEventListener('fetch', e => {
         .catch(async () => {
           const cached = await caches.match(e.request);
           if (cached) return cached;
-          // Local glossary/report filters and mistake practice reuse their precached shells.
+          // Local simulations, glossary/report filters and mistake practice reuse their precached shells.
           // Other lesson/search query URLs retain exact-query matching.
           const url = new URL(e.request.url);
           const practiceShell = url.searchParams.get('mod') === 'greseli' &&
             url.pathname.startsWith(BASE + 'grile_') && ASSETS.includes(new URL(url.pathname, self.location.origin).href);
-          if (url.origin === self.location.origin && (practiceShell || ['statistici.html', 'cont.html', 'notite.html', 'glosar.html'].some(file => url.pathname === BASE + file))) {
+          if (url.origin === self.location.origin && (practiceShell || ['statistici.html', 'cont.html', 'notite.html', 'glosar.html', 'simulare.html'].some(file => url.pathname === BASE + file))) {
             const analytics = await caches.match(url.pathname);
             if (analytics) return analytics;
           }

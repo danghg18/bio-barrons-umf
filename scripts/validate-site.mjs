@@ -51,7 +51,7 @@ for (const chapter of registry.CHAPTERS) {
 const quizContext = { window:{} };
 vm.runInNewContext(await readFile(new URL('assets/js/grile-sistemul-nervos-data.js', root), 'utf8'), quizContext);
 const quiz = quizContext.window.BB_NERVOUS_QUIZ;
-if (!quiz || quiz.questions.length !== 50) errors.push('quiz dataset must contain 50 questions');
+if (!quiz || quiz.questions.length !== 100) errors.push('nervous-system dataset must contain 100 questions');
 else {
   const questionIds = new Set(quiz.questions.map(question => question.id));
   if (questionIds.size !== quiz.questions.length) errors.push('quiz question IDs must be unique');
@@ -65,7 +65,8 @@ else {
 const senseContext = { window: {} };
 vm.runInNewContext(await readFile(new URL('assets/js/grile-organe-de-simt-data.js', root), 'utf8'), senseContext);
 const sense = senseContext.window.BB_QUIZ;
-const senseKey = JSON.parse(await readFile(new URL('tests/organe-de-simt-answer-key.json', root), 'utf8'));
+const authoritativeKey = JSON.parse(await readFile(new URL('tests/umf-cluj-2026-answer-key.json', root), 'utf8'));
+const senseKey = Object.values(authoritativeKey.chapters.V.answers).map(answer => answer.printed);
 if (!sense || sense.questions.length !== 100 || senseKey.length !== 100) errors.push('sense quiz must contain 100 questions');
 else {
   if (sense.storageKey !== 'bb.quiz.organe-simt.v1' || sense.version !== 1) errors.push('sense quiz storage contract changed');

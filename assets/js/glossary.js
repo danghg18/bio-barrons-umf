@@ -13,6 +13,8 @@
   const exact = document.getElementById('glossary-exact');
   const clear = document.getElementById('glossary-clear');
   const alphabet = document.getElementById('glossary-alphabet');
+  const lettersPrevious = document.getElementById('glossary-letters-prev');
+  const lettersNext = document.getElementById('glossary-letters-next');
   const empty = document.getElementById('glossary-empty');
   const more = document.getElementById('glossary-more');
   const shown = document.getElementById('glossary-shown');
@@ -23,6 +25,20 @@
   let results = [];
   input.value = params.get('q') || '';
   exact.checked = params.get('exact') === '1';
+
+  function updateLetterControls() {
+    lettersPrevious.disabled = alphabet.scrollLeft <= 1;
+    lettersNext.disabled = alphabet.scrollLeft + alphabet.clientWidth >= alphabet.scrollWidth - 1;
+  }
+  function revealLetter() {
+    const selected = alphabet.querySelector('[aria-pressed="true"]');
+    if (selected && alphabet.scrollWidth > alphabet.clientWidth) {
+      const box = selected.getBoundingClientRect(), frame = alphabet.getBoundingClientRect();
+      if (box.left < frame.left) alphabet.scrollLeft += box.left - frame.left;
+      else if (box.right > frame.right) alphabet.scrollLeft += box.right - frame.right;
+    }
+    updateLetterControls();
+  }
 
   function updateUrl(clearHash) {
     const url = new URL(location.href);
@@ -81,6 +97,7 @@
     empty.hidden = results.length !== 0;
     more.hidden = visible >= results.length;
     alphabet.querySelectorAll('button').forEach(button => button.setAttribute('aria-pressed',String(button.dataset.letter === letter)));
+    revealLetter();
   }
   function change() { updateUrl(true); render(); }
   function restoreHash() {
@@ -113,6 +130,10 @@
     alphabet.append(button);
   }
   input.addEventListener('input',change);
+  lettersPrevious.addEventListener('click', () => { alphabet.scrollLeft -= Math.max(44, alphabet.clientWidth - 44); updateLetterControls(); });
+  lettersNext.addEventListener('click', () => { alphabet.scrollLeft += Math.max(44, alphabet.clientWidth - 44); updateLetterControls(); });
+  alphabet.addEventListener('scroll', updateLetterControls, {passive:true});
+  window.addEventListener('resize', revealLetter);
   exact.addEventListener('change',change);
   document.getElementById('glossary-form').addEventListener('submit',event => { event.preventDefault(); change(); });
   clear.addEventListener('click',() => { input.value=''; change(); input.focus(); });
@@ -140,6 +161,6 @@
   });
   render();
   // Fonts can move a term after the initial scroll to a direct link.
-  Promise.resolve(document.fonts?.ready).then(restoreHash);
+  Promise.resolve(document.fonts?.ready).then(() => { restoreHash(); revealLetter(); });
   window.BBGlossaryNavigation?.init();
 })();

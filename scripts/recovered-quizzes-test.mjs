@@ -8,6 +8,9 @@ import {chromium} from 'playwright';
 
 const root=resolve(import.meta.dirname,'..');
 const {quizzes}=JSON.parse(await readFile(resolve(root,'tests/recovered-quizzes.json'),'utf8'));
+// Keep the recovery snapshot immutable; current content is the separately audited 2026 edition.
+const approvedHashes=JSON.parse(await readFile(resolve(root,'tests/quiz-content-hashes.json'),'utf8'));
+const sourceSets=JSON.parse(await readFile(resolve(root,'data/quiz-source-map.json'),'utf8'));
 const prefix='/bio-barrons-umf/';
 const types={'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.svg':'image/svg+xml','.png':'image/png'};
 const server=http.createServer(async(req,res)=>{
@@ -30,12 +33,16 @@ try {
     const sandbox={window:{}};
     vm.runInNewContext(await readFile(resolve(root,spec.dataFile),'utf8'),sandbox);
     const data=sandbox.window.BB_QUIZ;
-    assert.equal(data.questions.length,spec.count);
-    assert.equal(createHash('sha256').update(JSON.stringify(data.questions)).digest('hex'),spec.sha256,'Recovered content differs from archive snapshot');
-    assert.equal(data.ranges.reduce((n,r)=>n+r.end-r.start+1,0),spec.count);
+    const sourceSet=sourceSets.find(set=>set.chapterNum===spec.num);
+    const count=sourceSet.ranges.reduce((n,[start,end])=>n+end-start+1,0);
+    assert.equal(data.questions.length,count);
+    assert.equal(createHash('sha256').update(JSON.stringify(data.questions)).digest('hex'),approvedHashes[spec.file].sha256,'Content differs from the approved editorial audit');
+    assert.equal(data.ranges.reduce((n,r)=>n+r.end-r.start+1,0),count);
+    const retainedIds=new Set([...data.questions,...(data.retiredQuestions||[])].map(q=>q.id));
+    for(let number=1;number<=spec.count;number++) assert.ok(retainedIds.has(spec.prefix+String(number).padStart(3,'0')),'Recovered identity remains addressable for saved progress');
     await page.goto(base+spec.file);
     await page.waitForFunction(()=>document.body.dataset.bbSharedReady==='true');
-    assert.equal(await page.locator('.quiz-question').count(),spec.count);
+    assert.equal(await page.locator('.quiz-question').count(),count);
     assert.equal(await page.locator('.quiz-fatal').count(),0);
     assert.ok(await page.locator(`#sidenav a[href="${spec.lesson}"]`).count());
     const question=data.questions[0];
@@ -69,8 +76,8 @@ try {
     await page.locator('.quiz-reset-confirm').click();
     await page.waitForFunction(()=>document.querySelectorAll('.quiz-question.is-verified').length===0);
     await page.reload();
-    assert.equal(await page.locator('#quiz-sidebar-count').textContent(),`0/${spec.count} verificate`);
-    // Every archived explanation and added note must survive into the rendered DOM.
+    assert.equal(await page.locator('#quiz-sidebar-count').textContent(),`0/${count} verificate`);
+    // Every approved explanation must survive into the rendered DOM.
     for(const q of data.questions){
       for(const option of q.options){
         const text=await page.locator(`#${q.id}-${option.letter.toLowerCase()}-explanation`).textContent();
@@ -78,7 +85,7 @@ try {
         if(option.added) assert.ok(text.includes(option.added));
       }
     }
-    console.log(`${spec.title}: ${spec.count} intact questions; scoring, retry, reset and reload passed`);
+    console.log(`${spec.title}: ${count} audited questions; legacy identities, scoring, retry, reset and reload passed`);
   }
   assert.deepEqual(errors,[]);
 } finally {await browser.close();await new Promise(done=>server.close(done));}

@@ -186,15 +186,15 @@ try {
       // Real authored text still has stable counts/order through clear + retry.
       await page.evaluate(() => { if (document.body.classList.contains('hl-mode')) window.toggleHighlighter(); });
       // The curriculum-limited cell lesson and its questions use this source term.
-      const authoredQuery = ['grile_celula.html','celula_si_fiziologia_celulara.html'].includes(file) ? 'membrana' : 'sistem';
+      const authoredQuery = ['grile_celula.html','celula_si_fiziologia_celulara.html'].includes(file) ? 'membrana' : file === 'grile_oasele_si_articulatiile.html' ? 'oase' : 'sistem';
       await page.locator('#lesson-search-input').fill(authoredQuery);
       await page.waitForFunction(() => document.querySelector('.search-found-current'));
       const realMatches = await page.locator('.search-found').evaluateAll(marks => Object.values(marks.reduce((hits, mark) => { const key = mark.dataset.searchIndex; hits[key] ||= { section: mark.closest('.page-section').id.slice(5), text: '', index: key }; hits[key].text += mark.textContent; return hits; }, {})));
       const realCount = await page.locator('#lesson-search-count').textContent();
       assert.ok(realMatches.length > 0);
       const realHighlight = await page.locator('.search-found').evaluateAll(marks => {
-        // Quiz explanations are indexed before verification, but their hidden
-        // text cannot be selected by a student. Highlight an exposed passage.
+        // Only an exposed passage is selectable by a student; unverified
+        // quiz explanations are deliberately excluded from search.
         const mark = marks.find(node => !node.closest('[hidden]'));
         if (!mark) throw new Error('No selectable authored search match');
         const parent = mark.parentElement;

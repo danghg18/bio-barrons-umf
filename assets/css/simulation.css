@@ -1,0 +1,117 @@
+/* Admission practice extends the existing BioMed study surfaces. */
+.sim-panel,.sim-page{color:var(--ui-ink,#23473d);font-family:Figtree,system-ui,sans-serif;font-variant-numeric:tabular-nums;}
+.sim-panel{background:#fff;border:5px solid var(--ui-shell,#e8ede9);border-radius:28px;padding:28px;}
+.sim-builder{max-width:1040px;margin:0 auto 28px;scroll-margin-top:100px;}
+.sim-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;margin-bottom:24px;}
+.sim-heading h2{font-size:24px;line-height:1.25;font-weight:600;letter-spacing:-.02em;margin:0 0 10px;}
+.sim-heading p{margin:0;line-height:1.6;color:#566b61;font-size:14px;}
+.sim-heading a,.sim-source{font-size:13px;color:#345f4f;text-underline-offset:4px;}
+.sim-heading>a{white-space:nowrap;padding:12px 0;}
+.sim-panel .sim-kicker,.sim-kicker{font-size:12px;line-height:1.5;color:#566b61;margin:0;}
+.sim-intro-link{display:block;width:fit-content;margin-top:14px;font-size:14px;color:#23473d;text-underline-offset:4px;}
+.sim-chapters{border:0;padding:0;margin:0;min-width:0;}
+.sim-chapters legend{font-size:16px;font-weight:600;padding:0;}
+.sim-selection-tools{display:flex;align-items:center;justify-content:space-between;gap:16px;font-size:13px;color:#566b61;margin:6px 0;}
+.sim-chapter-row{display:grid;grid-template-columns:20px minmax(0,1fr) auto;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid #e8ede9;cursor:pointer;font-size:14px;min-height:64px;}
+.sim-chapter-row:hover{background:#f6f8f6;}
+.sim-chapter-row input,.sim-timer-config input,.sim-option input{width:18px;height:18px;accent-color:#23473d;flex-shrink:0;}
+.sim-chapter-row:has(input:checked){color:#23473d;}
+.sim-chapter-row small{display:block;color:#566b61;font-size:12px;margin-top:4px;}
+.sim-allocation{color:#345f4f;font-size:13px;white-space:nowrap;}
+.sim-config-footer{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;padding-top:24px;}
+.sim-timer-config{display:grid;gap:12px;font-size:14px;}
+.sim-timer-config label{display:flex;align-items:center;gap:10px;}
+.sim-timer-config label[hidden]{display:none;}
+.sim-timer-config select{border:1px solid #b6c5bc;border-radius:12px;min-height:44px;background:#fff;padding:8px 10px;color:#23473d;font:inherit;}
+.sim-start{text-align:right;}
+.sim-start p{font-size:12px;color:#566b61;margin:0 0 10px;}
+.sim-primary,.sim-secondary,.sim-link-button{font-family:inherit;font-size:14px;line-height:1.4;font-weight:500;cursor:pointer;min-height:44px;transition:background .18s var(--ui-ease,cubic-bezier(.2,.7,.2,1)),transform .18s var(--ui-ease,cubic-bezier(.2,.7,.2,1));}
+.sim-primary,.sim-secondary{display:inline-flex;align-items:center;justify-content:center;gap:14px;border-radius:999px;padding:12px 20px;text-decoration:none;}
+.sim-primary{color:#fff;background:#23473d;border:1px solid transparent;}
+.sim-primary:hover:not(:disabled){background:#17392e;}
+.sim-primary>span{display:grid;place-items:center;width:26px;height:26px;background:#ffffff1c;border-radius:50%;margin:-4px -10px -4px 0;}
+.sim-primary:active:not(:disabled),.sim-secondary:active:not(:disabled){transform:scale(.98);}
+.sim-primary:disabled{background:#dce5df;color:#4d6357;cursor:not-allowed;}
+.sim-secondary{color:#23473d;background:#edf3ee;border:1px solid transparent;}
+.sim-secondary:hover{background:#e0eae2;}
+.sim-link-button{padding:8px 0;color:#345f4f;background:none;border:0;text-decoration:underline;text-underline-offset:4px;}
+.sim-panel :focus-visible,.sim-page :focus-visible,.sim-dialog :focus-visible{outline:2px solid #346a56;outline-offset:4px;}
+.sim-rules,.sim-history{border-top:1px solid #e8ede9;margin-top:24px;padding-top:8px;font-size:13px;line-height:1.7;}
+.sim-rules summary,.sim-history summary{cursor:pointer;min-height:44px;padding:12px 0;font-weight:600;}
+.sim-rules p{max-width:80ch;color:#566b61;margin:8px 0;}
+.sim-rules a{color:#23473d;text-underline-offset:3px;}
+.sim-muted{color:#566b61;font-size:13px;}
+.sim-history{scroll-margin-top:100px;}
+.sim-history-row{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:16px 0;border-bottom:1px solid #e8ede9;color:#23473d;text-decoration:none;}
+.sim-history-row strong{font-weight:500;}
+.sim-history-row small{display:block;font-size:12px;color:#566b61;margin-top:5px;}
+.sim-history-row>span:last-child{text-align:right;flex-shrink:0;}
+.sim-history-row:hover{text-decoration:underline;text-underline-offset:4px;}
+.sim-notice{border:1px solid #caa782;background:#fff8ec;color:#6a4723;border-radius:14px;padding:14px 18px;margin:20px 0;font-size:14px;line-height:1.6;}
+.sim-builder-export{margin-top:8px;}
+body.bm-simulation .sim-page{max-width:1160px;margin:auto;padding:32px 24px 60px;}
+body.bm-simulation{background:var(--ui-canvas,#f5f7f5);}
+.sim-page-heading{margin-bottom:24px;}
+.sim-unavailable h2{font-size:24px;font-weight:600;line-height:1.25;margin:0 0 12px;}
+.sim-unavailable p{font-size:15px;line-height:1.7;color:var(--ui-muted,#566b61);margin:0 0 18px;}
+.sim-page-heading>a{font-size:14px;color:#345f4f;text-underline-offset:4px;display:inline-block;padding:8px 0;}
+.sim-page-heading h1{font-size:32px;line-height:1.2;letter-spacing:-.025em;font-weight:600;margin:12px 0;}
+.sim-page-heading p{font-size:14px;color:#566b61;line-height:1.6;max-width:80ch;margin:0;}
+.sim-workspace{display:grid;grid-template-columns:250px minmax(0,1fr);gap:28px;align-items:start;}
+.sim-sidebar{position:sticky;top:100px;padding:20px;background:#fff;border:5px solid #e8ede9;border-radius:24px;}
+.sim-toolbar{display:flex;flex-direction:column;gap:6px;font-size:13px;margin-bottom:18px;}
+.sim-toolbar strong{font-weight:600;}
+#sim-timer{color:#566b61;}
+#sim-timer.is-urgent{color:#983c2e;}
+.sim-map{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;}
+.sim-map a{min-height:44px;display:grid;place-items:center;border-radius:10px;text-decoration:none;background:#f4f6f4;color:#345246;font-size:13px;}
+.sim-map a.is-answered{background:#deeadf;color:#23473d;}
+.sim-map a.is-current{outline:2px solid #345f4f;outline-offset:-2px;font-weight:700;}
+.sim-map-legend{font-size:11px;line-height:1.6;color:#566b61;margin:14px 0;}
+.sim-sidebar .sim-primary{width:100%;}
+.sim-instruction{font-size:13px;line-height:1.6;color:#566b61;margin:0 0 18px;}
+.sim-question{scroll-margin-top:100px;background:#fff;border-radius:20px;border:1px solid #e1e9e3;padding:26px;margin-bottom:18px;}
+.sim-question-head{display:flex;justify-content:space-between;gap:20px;color:#566b61;font-size:12px;line-height:1.5;margin-bottom:18px;}
+.sim-question-head span:first-child{white-space:nowrap;}
+.sim-question-head span:last-child{text-align:right;}
+.sim-question fieldset{border:0;padding:0;margin:0;min-width:0;}
+.sim-question legend{padding:0;font-size:18px;font-weight:600;line-height:1.6;margin-bottom:18px;}
+.sim-options{display:grid;gap:0;}
+.sim-option-wrap{border:0;border-bottom:1px solid #e0e8e2;border-radius:0;overflow:hidden;}
+.sim-option{display:flex;align-items:flex-start;gap:12px;padding:14px;font-size:15px;line-height:1.65;cursor:pointer;min-height:52px;}
+.sim-option input{margin-top:4px;}
+.sim-letter{font-size:13px;font-weight:600;margin-top:2px;}
+.sim-option-wrap:where(:has(input:checked)){background:#edf3ee;border-color:#b2c7b8;}
+.sim-option-wrap.is-correct{background:#e6f3e9;border-color:#b2d0b8;}
+.sim-option-wrap.is-missed{background:#fff5d7;border-color:#e6d59b;}
+.sim-option-wrap.is-extra{background:#fbece8;border-color:#e5bfb4;}
+.sim-option:has(input:disabled){cursor:default;}
+.sim-option input:disabled{opacity:1;}
+.sim-explanation{font-size:13px;line-height:1.7;margin:0 14px 14px 60px;color:#40594c;}
+.sim-explanation strong{font-size:12px;font-weight:600;}
+.sim-explanation p{margin:6px 0;}
+.sim-question-score{font-size:13px;line-height:1.7;margin:18px 0 6px;font-weight:500;}
+.sim-pagination{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px;}
+.sim-pagination [aria-current="page"]{background:#23473d;color:#fff;}
+.sim-result{margin:0 0 28px;scroll-margin-top:100px;}
+.sim-grade-block{display:flex;justify-content:space-between;align-items:center;gap:28px;}
+.sim-grade-block h2{font-size:22px;line-height:1.4;font-weight:600;margin:6px 0;}
+.sim-grade-block p:not(.sim-kicker){font-size:13px;color:#566b61;margin:8px 0;}
+.sim-grade{font-size:56px;line-height:1;letter-spacing:-.03em;font-weight:600;}
+.sim-grade span{display:block;font-size:13px;font-weight:400;letter-spacing:0;color:#566b61;text-align:right;margin-top:10px;}
+.sim-result-facts{display:flex;flex-wrap:wrap;gap:20px 28px;border-top:1px solid #e8ede9;margin-top:24px;padding-top:20px;font-size:13px;color:#566b61;}
+.sim-result-facts strong{font-weight:600;color:#23473d;}
+.sim-result-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:24px;}
+.sim-footnote{font-size:12px;line-height:1.7;color:#566b61;margin:28px 0 0;}
+.sim-footnote a{color:#345f4f;}
+.sim-dialog{font-family:Figtree,system-ui,sans-serif;color:#23473d;border:0;border-radius:24px;padding:28px;margin:auto;max-width:500px;width:calc(100% - 32px);max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);overflow:auto;overscroll-behavior:contain;box-sizing:border-box;box-shadow:0 20px 60px #18372b24;}
+.sim-dialog::backdrop{background:#16332666;}
+.sim-dialog h2{font-size:24px;margin:0 0 18px;font-weight:600;}
+.sim-dialog p{font-size:15px;line-height:1.7;color:#566b61;}
+.sim-dialog-actions{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:12px;margin-top:24px;}
+.sim-panel [hidden],.sim-page [hidden],.sim-workspace[hidden],.sim-result[hidden],.sim-notice[hidden],.sim-unavailable[hidden]{display:none!important;}
+@media(max-width:1100px){.sim-builder{margin-left:24px;margin-right:24px;}}
+@media(max-width:800px){.sim-workspace{grid-template-columns:minmax(0,1fr);gap:22px;}.sim-sidebar{position:static;padding:16px;}.sim-map{grid-template-columns:repeat(7,minmax(0,1fr));}.sim-toolbar{flex-direction:row;justify-content:space-between;}.sim-sidebar .sim-primary{width:auto;}.sim-map-legend{display:inline-block;margin-right:16px;}.sim-question{scroll-margin-top:110px;}}
+@media(max-width:600px){.sim-builder{margin:0 16px 24px;}.sim-panel{padding:18px;border-radius:24px;}.sim-heading{display:block;margin-bottom:18px;}.sim-heading h2{font-size:22px;}.sim-heading>a{display:inline-block;margin-top:8px;}.sim-chapter-row{gap:10px;grid-template-columns:18px minmax(0,1fr);}.sim-allocation{grid-column:2;font-size:12px;margin-top:-8px;}.sim-allocation:empty{display:none;}.sim-config-footer{display:block;padding-top:18px;}.sim-start{text-align:left;margin-top:20px;}.sim-start .sim-primary{width:100%;}.sim-timer-config label{flex-wrap:wrap;}.sim-selection-tools{gap:8px;font-size:12px;}.sim-link-button{font-size:13px;}.sim-history-row{gap:12px;align-items:flex-start;}.sim-history-row>span:last-child{max-width:110px;}body.bm-simulation .sim-page{padding:24px 16px 40px;}.sim-page-heading h1{font-size:28px;}.sim-question{padding:18px;}.sim-question legend{font-size:17px;}.sim-question-head{display:block;}.sim-question-head span:last-child{display:block;text-align:left;margin-top:4px;}.sim-option{padding:12px;gap:9px;font-size:15px;}.sim-explanation{margin-left:50px;}.sim-map{grid-template-columns:repeat(auto-fit,minmax(44px,1fr));}.sim-sidebar{padding:12px;}.sim-toolbar{margin-bottom:12px;}.sim-workspace{gap:16px;}.sim-instruction{margin-bottom:12px;}.sim-grade-block{align-items:flex-start;}.sim-grade-block h2{font-size:19px;}.sim-grade{font-size:42px;}.sim-grade-block>div:first-child{min-width:0;}.sim-result-actions{align-items:stretch;flex-direction:column;}.sim-dialog-actions>*{flex:1;}.sim-pagination{gap:6px;}.sim-pagination a{padding:10px 14px;}}
+@media(prefers-reduced-motion:reduce){.sim-primary,.sim-secondary,.sim-link-button{transition:none;transform:none!important;}}
+@media print{.bm-simulation .lab-topbar,.sim-sidebar,.sim-pagination,.sim-result-actions,.sim-page-heading>a,.sim-notice,.sim-dialog,.sim-source,.sim-footnote{display:none!important;}.sim-workspace{display:block;}.sim-page{max-width:none;padding:0;}.sim-question,.sim-panel{border:0;box-shadow:none;break-inside:avoid;}.sim-question{padding:10px 0;}.sim-question input:disabled{opacity:1;}}

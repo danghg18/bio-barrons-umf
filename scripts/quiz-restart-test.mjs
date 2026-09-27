@@ -51,8 +51,8 @@ try{const ctx=await browser.newContext({serviceWorkers:'block'});const page=awai
      BBUserStorage.set(quiz.storageKey,{version:quiz.version,questions:{}});
      await BBQuizAnalytics.finishRestart({storageKey:quiz.storageKey,resetId:ticket.id});
      const next=await BBQuizAnalytics.ensureRun(quiz.storageKey),q=quiz.questions[0];
-     await BBQuizAnalytics.recordAttempt({storageKey:quiz.storageKey,runId:next.id,questionId:q.id,attemptId:'successor-race-answer',selected:q.correct,correct:true,answerKey:q.correct});
-     const saved={version:quiz.version,questions:{[q.id]:{selected:q.correct,verified:true,correct:true}}};
+     await BBQuizAnalytics.recordAttempt({storageKey:quiz.storageKey,runId:next.id,questionId:q.id,attemptId:'successor-race-answer',selected:q.correct,correct:true,answerKey:q.correct,contentRevision:q.contentRevision||0});
+     const saved={version:quiz.version,questions:{[q.id]:{selected:q.correct,verified:true,correct:true,contentRevision:q.contentRevision||0}}};
      BBUserStorage.set(quiz.storageKey,saved);window.raceSuccessor={id:next.id,saved};
      return original(input);
    };
@@ -78,11 +78,11 @@ try{const ctx=await browser.newContext({serviceWorkers:'block'});const page=awai
  await recoveredPage.waitForSelector('#grila-1');
  const completedId=await recoveredPage.evaluate(async()=>{
    const quiz=BB_QUIZ;
-   BBUserStorage.set(quiz.storageKey,{version:quiz.version,questions:Object.fromEntries(quiz.questions.map(q=>[q.id,{selected:['A'],verified:true,correct:false}]))});
+   BBUserStorage.set(quiz.storageKey,{version:quiz.version,questions:Object.fromEntries(quiz.questions.map(q=>[q.id,{selected:['A'],verified:true,correct:false,contentRevision:q.contentRevision||0}]))});
    const run=await BBQuizAnalytics.ensureRun(quiz.storageKey);
    const practice=await BBQuizAnalytics.ensurePractice(quiz.storageKey);
    const q=quiz.questions.find(q=>q.id===practice.questionIds[0]);
-   await BBQuizAnalytics.recordAttempt({storageKey:quiz.storageKey,runId:practice.id,questionId:q.id,selected:q.correct,correct:true,answerKey:q.correct,attemptId:'earlier-correction'});
+   await BBQuizAnalytics.recordAttempt({storageKey:quiz.storageKey,runId:practice.id,questionId:q.id,selected:q.correct,correct:true,answerKey:q.correct,contentRevision:q.contentRevision||0,attemptId:'earlier-correction'});
    BBUserStorage.set(quiz.storageKey,{version:quiz.version,questions:{}});
    return run.id;
  });

@@ -155,7 +155,7 @@
     if (read(ownerKey) !== owner) return false;
     const all = new Set([...recordKeys(), ...Object.keys(remote)]);
     all.forEach(key => {
-      if (auxiliary.includes(key)) return;
+      if (auxiliary.includes(key) || key.startsWith('bb.simulation.v1:')) return;
       const incoming = remote[key];
       const saved = record(key);
       const local = saved.value;

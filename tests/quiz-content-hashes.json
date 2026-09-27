@@ -1,30 +1,70 @@
 {
   "grile_introducere_anatomie_fiziologie.html": {
     "dataFile": "assets/js/grile-introducere-data.js",
-    "sha256": "85aaea09009f6da633d6b94bb795cfc0974ada602c9ee5adf84be58c4e9b0436"
+    "sha256": "f69034cc9f19234c3dc9529a6efee3f11571533472b5011d35741cfdfa11a06a"
   },
   "grile_celula.html": {
     "dataFile": "assets/js/grile-celula-data.js",
-    "sha256": "c9c684d744c9d49e20786e9fd5b7a6e1942b865a0e2885b5b68f4bd5a9de497d"
+    "sha256": "2d9a67db8f30640249840d97bdff45046bd302e346f61487013a9ca8c33174c5"
+  },
+  "grile_oasele_si_articulatiile.html": {
+    "dataFile": "assets/js/grile-oase-data.js",
+    "sha256": "1f3a99f34dafcfd22e899f0610065875006147b3f3f02a4070a5a92a645bf3f9"
+  },
+  "grile_tesutul_muscular.html": {
+    "dataFile": "assets/js/grile-tesut-muscular-data.js",
+    "sha256": "d8fb13f3047754c70dde7d24477cc8c9e1135fe9c3c54f7ae16e27c97f7720af"
+  },
+  "grile_tesutul_nervos.html": {
+    "dataFile": "assets/js/grile-tesut-nervos-data.js",
+    "sha256": "af6fa67fab1ad3b100d3f817366fd79953aa5f67f17c5321337b132a2fa1f78e"
   },
   "grile_sistemul_nervos.html": {
     "dataFile": "assets/js/grile-sistemul-nervos-data.js",
-    "sha256": "fde9868ba6b8a019ed747967e2353313873ffb04bfc0d3bc14a83fd22026e7ec"
+    "sha256": "3d226a97171dbe42e794fe7f97eb92807a738d28ea834fb5e33966d000325de2"
   },
   "grile_organele_de_simt.html": {
     "dataFile": "assets/js/grile-organe-de-simt-data.js",
-    "sha256": "e7a8898ab610ddc1b9dfd68f61089ac49597947a3d66acff0d27088444828b87"
+    "sha256": "a745af01c0a3e55b863cacfd13cb27d80a0c954d5b69d074741e49d84d26f5bb"
+  },
+  "grile_sistemul_endocrin.html": {
+    "dataFile": "assets/js/grile-sistemul-endocrin-data.js",
+    "sha256": "45a773259ac39afaa1bbe055ed0f55661c0c3e9f57f780346e8327fbde367390"
+  },
+  "grile_metabolism_si_nutritie.html": {
+    "dataFile": "assets/js/grile-metabolism-data.js",
+    "sha256": "c535ee5780896c4624a9aa80326d4672276d7052b9dcefdcfecbc231d4b78480"
+  },
+  "grile_sangele.html": {
+    "dataFile": "assets/js/grile-sange-data.js",
+    "sha256": "a5051bb05ec9bdf3afd57611cd952c8e49467a0c669936f20c89b33c39479dfb"
+  },
+  "grile_sistemul_cardiovascular.html": {
+    "dataFile": "assets/js/grile-sistemul-cardiovascular-data.js",
+    "sha256": "2145b64ae6b6b482e930b269365d901eb85d2b4d4eb430bc952abda4daa714b3"
+  },
+  "grile_sistemul_limfatic_si_imun.html": {
+    "dataFile": "assets/js/grile-sistemul-limfatic-data.js",
+    "sha256": "bd9dd900a8ef22514b18944d3acae815e9a34f3ad20c41da00e74ab928b86f0c"
+  },
+  "grile_sistemul_respirator.html": {
+    "dataFile": "assets/js/grile-sistemul-respirator-data.js",
+    "sha256": "841b66e312772f900a419f149d4a26d904e348152033987525e3e20cf0102a98"
+  },
+  "grile_sistemul_digestiv.html": {
+    "dataFile": "assets/js/grile-sistemul-digestiv-data.js",
+    "sha256": "7823d8f50d54e5f07178cd9c8cb9d0ecdb190d24ef2213daae04fce9a3ce3fa6"
   },
   "grile_sistemul_urinar.html": {
     "dataFile": "assets/js/grile-sistemul-urinar-data.js",
-    "sha256": "aa66b2ec5026e4060e658313a59829c5011f050e6a773bd0bdbcc6c0fdbfb30e"
+    "sha256": "c6be824956bde824d63224ccf3a62531876eb41800dc22182010694c68c8dc05"
   },
   "grile_sistemul_reproducator_masculin.html": {
     "dataFile": "assets/js/grile-reproducator-masculin-data.js",
-    "sha256": "b2bb1b8ef08c38c7503a815ea323a2533932b320260f2643848dc3c81a135649"
+    "sha256": "afecf39e92ddca44a034b3b2458b9e1a56a0b7309bd0d896ee043bc54eb331bb"
   },
   "grile_sistemul_reproducator_feminin.html": {
     "dataFile": "assets/js/grile-reproducator-feminin-data.js",
-    "sha256": "a950f2b9856a12520d61f0b0a1fea26a9eb6ff76f8718bdbfe18de944cf2b37e"
+    "sha256": "95b101b5624b19694975b32a5cda0c4c06134f4a4843fa39f1580ae3ca301fc1"
   }
 }

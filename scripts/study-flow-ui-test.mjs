@@ -13,9 +13,9 @@ try{
  const context=await browser.newContext({viewport:{width:390,height:844},serviceWorkers:'block',reducedMotion:'reduce'});const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
  const ready=()=>page.waitForFunction(()=>document.body.dataset.analyticsReady==='true');
  await page.goto(base+'testare.html');await ready();
- assert.equal(await page.locator('.testing-chapter-row:visible').count(),7,'Start with actionable tests, preserving the full curriculum behind a filter');
+ assert.equal(await page.locator('.testing-chapter-row:visible').count(),17,'Start with actionable tests, preserving the full curriculum behind a filter');
  await page.getByRole('button',{name:'Toate capitolele',exact:true}).click();assert.equal(await page.locator('.testing-chapter-row:visible').count(),17);
- await page.getByRole('button',{name:'Disponibile',exact:true}).click();assert.equal(await page.locator('.testing-chapter-row:visible').count(),7);
+ await page.getByRole('button',{name:'Disponibile',exact:true}).click();assert.equal(await page.locator('.testing-chapter-row:visible').count(),17);
  assert.equal(await page.locator('#testing-preview-summary strong').innerText(),'0');
  await page.locator('.testing-intro a[href="#lab-testing-catalog"]').click();
  assert.equal(new URL(page.url()).hash,'#lab-testing-catalog');
@@ -35,7 +35,7 @@ try{
  await page.locator('#analytics-chapter').selectOption('all');await ready();assert.equal(await page.locator('#analytics-onboarding').isVisible(),false);
  for(const file of ['sistemul_nervos.html','sistemul_renal_complet.html','sistemul_reproducator_masculin.html','oasele_si_articulatiile.html']){
   await page.goto(base+file);await page.waitForFunction(()=>document.body.dataset.bbSharedReady==='true');
-  const practice=page.locator('.bb-practice-lesson');assert.equal(await practice.count(),file.startsWith('oasele')?0:1);
+  const practice=page.locator('.bb-practice-lesson');assert.equal(await practice.count(),1);
   if(await practice.count()){const href=await practice.getAttribute('href');assert.equal((await page.request.get(base+href)).status(),200);}
   await page.waitForSelector('#bb-notes-toggle');assert.equal(await page.locator('#bb-notes-toggle').evaluate(e=>getComputedStyle(e).position),'static');
   await page.locator('#bb-notes-toggle').click();assert.equal(await page.locator('#bb-notes-panel').isVisible(),true);await page.keyboard.press('Escape');

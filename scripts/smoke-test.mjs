@@ -31,7 +31,7 @@ await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 const port = server.address().port;
 const base = `http://127.0.0.1:${port}${prefix}`;
 const registry = await loadSiteRegistry();
-const { chapters, resources } = publishedResources(registry);
+const { chapters, resources, collections } = publishedResources(registry);
 const lessonFiles = chapters.map(chapter => chapter.url);
 const simpleLessons = lessonFiles.filter(file => !['sistemul_renal_complet.html','sistemul_reproducator_masculin.html'].includes(file));
 const errors = [];
@@ -287,14 +287,14 @@ try {
 
   const quiz = await newPage(context);
   await quiz.goto(`${base}${resources.find(resource => resource.url === 'grile_sistemul_nervos.html').url}`, { waitUntil:'domcontentloaded' });
-  await quiz.waitForFunction(() => document.querySelectorAll('.quiz-question').length === 50);
+  await quiz.waitForFunction(() => document.querySelectorAll('.quiz-question').length === 100);
   const first = quiz.locator('.quiz-question').first();
   await first.locator('input[type=checkbox]').first().check();
   await first.locator('.quiz-check').click();
   await first.locator('input:disabled').first().waitFor({state:'visible'});
   if (!await first.getAttribute('data-question-id')) errors.push('quiz IDs unavailable');
   if (!await quiz.evaluate(() => localStorage.getItem('bb.quiz.sistem-nervos.v1'))) errors.push('quiz state did not persist');
-  // Exact-set scoring, retry, persistence, and reset for all 50 authored IDs.
+  // Exact-set scoring, retry, persistence, and reset for all 100 authored IDs.
   await quiz.locator('.quiz-reset-start').click();
   await quiz.locator('.quiz-reset-confirm').click();
   await quiz.waitForFunction(()=>document.querySelectorAll('.quiz-question.is-verified').length===0);
@@ -309,10 +309,10 @@ try {
     if (!await card.evaluate(node => node.classList.contains('is-correct'))) errors.push(question.id + ': exact answer set scored incorrectly');
   }
   await quiz.reload();
-  if (await quiz.locator('.quiz-question.is-correct').count() !== 50) errors.push('quiz reload lost verified answers');
+  if (await quiz.locator('.quiz-question.is-correct').count() !== 100) errors.push('quiz reload lost verified answers');
   await quiz.locator('.quiz-reset-start').click();
   await quiz.locator('.quiz-reset-cancel').click();
-  if (await quiz.locator('.quiz-question.is-correct').count() !== 50) errors.push('cancel reset changed saved answers');
+  if (await quiz.locator('.quiz-question.is-correct').count() !== 100) errors.push('cancel reset changed saved answers');
   await quiz.locator('.quiz-reset-start').click();
   await quiz.locator('.quiz-reset-confirm').click();
   await quiz.waitForFunction(()=>document.querySelectorAll('.quiz-question.is-verified').length===0);
@@ -321,7 +321,7 @@ try {
 
   // The second quiz shares the player but must never share or clear saved answers.
   const sense = await newPage(context);
-  const senseKey = JSON.parse(await readFile(join(root, 'tests/organe-de-simt-answer-key.json'), 'utf8'));
+  const senseKey = Object.values(JSON.parse(await readFile(join(root, 'tests/umf-cluj-2026-answer-key.json'), 'utf8')).chapters.V.answers).map(answer => answer.printed);
   await sense.goto(base + 'organele_de_simt.html');
   await sense.locator('.bm-primary-nav a[href="testare.html"]').click();
   await sense.locator('#lab-testing-catalog a[href="grile_organele_de_simt.html"]').click();
@@ -330,9 +330,9 @@ try {
   await sense.locator('#sidenav a[href="organele_de_simt.html"]').click();
   if (!sense.url().endsWith('organele_de_simt.html')) errors.push('sense quiz back action did not return to its lesson');
   await sense.goto(base + 'testare.html');
-  if (await sense.locator('#lab-testing-catalog .lab-item').count() !== registry.CHAPTERS.length) errors.push('testing catalog is not organized across every chapter');
+  if (await sense.locator('#lab-testing-catalog .lab-item').count() !== registry.CHAPTERS.length + collections.length) errors.push('testing catalog is not organized across every chapter');
   if (await sense.locator('#lab-testing-catalog .lab-item-done').count() !== resources.length) errors.push('testing catalog missing an available quiz');
-  if (await sense.locator('#lab-testing-catalog .lab-item-soon:disabled').count() !== registry.CHAPTERS.length - resources.length) errors.push('testing catalog future states are incomplete');
+  if (await sense.locator('#lab-testing-catalog .lab-item-soon:disabled').count() !== registry.CHAPTERS.length + collections.length - resources.length) errors.push('testing catalog future states are incomplete');
   await sense.locator('#lab-testing-catalog a[href="grile_organele_de_simt.html"]').click();
   await sense.evaluate(() => localStorage.setItem('bb.quiz.sistem-nervos.v1', JSON.stringify({version:1,questions:{'sn-051':{selected:['C','D'],verified:true,correct:true}}})));
   const nervousSaved = await sense.evaluate(() => localStorage.getItem('bb.quiz.sistem-nervos.v1'));
@@ -461,13 +461,62 @@ try {
   await upgradePage.waitForFunction(async () => !(await caches.keys()).includes('biologie-atlas-v16'));
   if (!await upgradePage.evaluate(async () => (await caches.keys()).includes('unrelated-site-cache'))) errors.push('service worker deleted an unrelated origin cache');
   await upgradeContext.setOffline(true);
-  for (const file of lessonFiles) {
+  const sourceMap = JSON.parse(await readFile(join(root, 'data/quiz-source-map.json'), 'utf8'));
+  const activeQuizSets = sourceMap.filter(set => set.publicationStatus !== 'deferred');
+  const quizFiles = resources.filter(resource => resource.kind === 'quiz').map(resource => resource.url);
+  const sourceNumbers = set => set.ranges.flatMap(([start, end]) => Array.from({length:end - start + 1}, (_, index) => start + index));
+  if (activeQuizSets.length !== 17 || activeQuizSets.reduce((total, set) => total + sourceNumbers(set).length, 0) !== 1590) errors.push('updated worker release scope must contain 17 active sets / 1,590 questions');
+  if (JSON.stringify([...quizFiles].sort()) !== JSON.stringify(activeQuizSets.map(set => set.url).sort())) errors.push('updated worker registry/source-map quiz coverage differs');
+  for (const file of [...lessonFiles, ...quizFiles, 'testare.html']) {
     const response = await upgradePage.goto(base+file, {waitUntil:'domcontentloaded'});
     if (!response || response.status() !== 200) errors.push(`${file}: updated worker failed offline`);
     const missing = await upgradePage.locator('main img').evaluateAll(async images => (await Promise.all(images.map(async image => {
       image.loading='eager';try {await image.decode();return null;}catch{return image.getAttribute('src');}
     }))).filter(Boolean));
     if(missing.length) errors.push(`${file}: updated worker missing figures: ${missing.join(', ')}`);
+    if (file === 'testare.html') {
+      await upgradePage.waitForFunction(() => document.body.dataset.analyticsReady === 'true');
+      const links = await upgradePage.locator('#lab-testing-catalog .lab-item-done').evaluateAll(items => items.map(item => item.getAttribute('href')).sort());
+      if (JSON.stringify(links) !== JSON.stringify([...quizFiles].sort())) errors.push('updated worker offline catalog does not expose exactly the active quiz sets');
+    }
+    const set = activeQuizSets.find(item => item.url === file);
+    if (set) {
+      await upgradePage.waitForFunction(() => document.body.dataset.bbSharedReady === 'true');
+      const state = await upgradePage.evaluate(() => {
+        const quiz = window.BB_QUIZ || window.BB_NERVOUS_QUIZ;
+        return {
+          fatal:!!document.querySelector('.quiz-fatal'),
+          storageKey:quiz?.storageKey,
+          numbers:[...document.querySelectorAll('.quiz-question')].map(card => Number(card.id.slice('grila-'.length))),
+          ranges:quiz?.ranges || [],
+          sectionIds:[...document.querySelectorAll('.page-section')].map(section => section.id),
+          missingWhy:[...document.querySelectorAll('.quiz-question')].filter(card => {
+            const explanations = [...card.querySelectorAll('.quiz-option-explanation > p:first-of-type')];
+            return explanations.length !== 5 || explanations.some(node => !node.textContent.trim());
+          }).map(card => card.id)
+        };
+      });
+      const expectedNumbers = sourceNumbers(set);
+      if (state.fatal || state.storageKey !== set.storageKey || JSON.stringify(state.numbers) !== JSON.stringify(expectedNumbers)) errors.push(`${file}: updated worker offline quiz count/source numbering/storage identity differs`);
+      if (state.missingWhy.length) errors.push(`${file}: updated worker missing five explanations: ${state.missingWhy.join(', ')}`);
+      const rangedNumbers = state.ranges.flatMap(range => Array.from({length:range.end - range.start + 1}, (_, index) => range.start + index));
+      if (JSON.stringify(rangedNumbers) !== JSON.stringify(expectedNumbers) || state.ranges.some(range => range.end < range.start || range.end - range.start >= 10) || JSON.stringify(state.sectionIds) !== JSON.stringify(state.ranges.map(range => 'page-' + range.id))) errors.push(`${file}: updated worker offline ranges differ from source`);
+      if (await upgradePage.locator('.lab-topbar-back').getAttribute('href') !== set.lessonUrl) errors.push(`${file}: updated worker offline backlink differs`);
+      // Exercise the real controls offline, including persisted feedback; DOM
+      // presence alone would miss a cached shell with an unavailable player.
+      const first = upgradePage.locator('.quiz-question').first();
+      await first.locator('input[value="A"]').check();
+      await first.locator('.quiz-check').click();
+      await upgradePage.waitForFunction(() => document.querySelector('.quiz-question')?.classList.contains('is-verified'));
+      if (await first.locator('.quiz-option-explanation:visible').count() !== 5) errors.push(`${file}: updated worker offline verification did not show five explanations`);
+      await upgradePage.reload({waitUntil:'domcontentloaded'});
+      if (!await first.locator('input[value="A"]').isChecked() || !await first.evaluate(card => card.classList.contains('is-verified')) || await first.locator('.quiz-option-explanation:visible').count() !== 5) errors.push(`${file}: updated worker offline reload lost saved answer/feedback`);
+      for (const [index, range] of state.ranges.entries()) {
+        if (index) await upgradePage.locator(`.page-section.active .quiz-page-nav a[href="#${range.id}"]`).click();
+        const active = upgradePage.locator('.page-section.active');
+        if (await active.getAttribute('id') !== 'page-' + range.id || await active.locator('.quiz-question').count() !== range.end - range.start + 1) errors.push(`${file}: updated worker offline navigation failed for ${range.id}`);
+      }
+    }
   }
   await upgradePage.close();
   await upgradeContext.close();

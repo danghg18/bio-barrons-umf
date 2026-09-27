@@ -25,34 +25,34 @@ try {
   await page.goto(base+'grile_organele_de_simt.html#grila-3');
   await page.waitForFunction(()=>document.body.dataset.bbSharedReady==='true');
   const third=page.locator('#grila-3');
-  // The printed page 104 and the user's correction both require CDE.
-  for(const letter of 'CDE') await third.locator(`input[value="${letter}"]`).check();
-  await third.locator('.quiz-check').click();
-  await third.locator('input:disabled').first().waitFor({state:'visible'});
-  assert.ok(await third.evaluate(el=>el.classList.contains('is-correct')),'3 CDE must score as correct');
-  await page.locator('.quiz-reset-start').click();
-  await page.locator('.quiz-reset-confirm').click();
-  await page.waitForFunction(()=>document.querySelectorAll('.quiz-question.is-verified').length===0);
+  // The complete, independently transcribed 2026 key supersedes the older CDE key.
   for(const letter of 'CE') await third.locator(`input[value="${letter}"]`).check();
   await third.locator('.quiz-check').click();
   await third.locator('input:disabled').first().waitFor({state:'visible'});
-  assert.ok(await third.locator('[data-letter="D"]').evaluate(el=>el.classList.contains('is-missed-answer')),'Omitted D must be yellow');
+  assert.ok(await third.evaluate(el=>el.classList.contains('is-correct')),'3 CE must score as correct');
+  await page.locator('.quiz-reset-start').click();
+  await page.locator('.quiz-reset-confirm').click();
+  await page.waitForFunction(()=>document.querySelectorAll('.quiz-question.is-verified').length===0);
+  for(const letter of 'CDE') await third.locator(`input[value="${letter}"]`).check();
+  await third.locator('.quiz-check').click();
+  await third.locator('input:disabled').first().waitFor({state:'visible'});
+  assert.ok(await third.locator('[data-letter="D"]').evaluate(el=>el.classList.contains('is-selected-extra')),'Extra D must be red');
   const beforeHistory=await page.evaluate(()=>BBQuizAnalytics.getReport());
-  // A previously verified CE answer must keep its selection but lose its stale exact score.
+  // A previously verified CDE answer must keep its selection but lose its stale exact score.
   await page.evaluate(()=>BBUserStorage.set('bb.quiz.organe-simt.v1',{
     version:1,extra:'preserve',questions:{
       'os-001':{selected:['B','C','E'],verified:true,correct:true},
-      'os-003':{selected:['C','E'],verified:true,correct:true,extra:'preserve'},
+      'os-003':{selected:['C','D','E'],verified:true,correct:true,contentRevision:1,extra:'preserve'},
       'os-future':{selected:['A'],verified:true,correct:true,extra:'preserve'}
     }
   }));
   const beforeStorage=await page.evaluate(()=>BBUserStorage.get('bb.quiz.organe-simt.v1'));
   // A direct analytics visit must use the new key without first loading the player.
   await page.goto(base+'statistici.html');
-  assert.equal((await page.evaluate(()=>BBQuizAnalytics.getReport())).totals.current.correct,1,'Direct analytics must ignore the stale CE score');
+  assert.equal((await page.evaluate(()=>BBQuizAnalytics.getReport())).totals.current.correct,1,'Direct analytics must ignore the stale CDE score');
   await page.goto(base+'grile_organele_de_simt.html#grila-3');
   await third.locator('input:disabled').first().waitFor({state:'visible'});
-  assert.ok(await third.evaluate(el=>el.classList.contains('is-review')),'Old CE must be rescored on load');
+  assert.ok(await third.evaluate(el=>el.classList.contains('is-review')),'Old CDE must be rescored on load');
   const restored=await page.evaluate(()=>BBUserStorage.get('bb.quiz.organe-simt.v1'));
   assert.deepEqual(restored,beforeStorage,'Displaying a corrected score must not mutate the stored record');
   assert.equal(restored.extra,'preserve');
@@ -64,19 +64,19 @@ try {
   // Cloud/cache hydration and identity changes must apply the same correction.
   await page.evaluate(()=>{
     BBUserStorage.activate('revision-alice');
-    BBUserStorage.hydrate({'bb.quiz.organe-simt.v1':{version:1,questions:{'os-003':{selected:['C','E'],verified:true,correct:true}}}});
+    BBUserStorage.hydrate({'bb.quiz.organe-simt.v1':{version:1,questions:{'os-003':{selected:['C','D','E'],verified:true,correct:true,contentRevision:1}}}});
   });
   assert.deepEqual(await page.evaluate(()=>BBUserStorage.snapshot().pending),{},'Reading a clean cached answer must not queue a cloud write');
   await page.evaluate(()=>{
-    BBUserStorage.hydrate({'bb.quiz.organe-simt.v1':{version:1,questions:{'os-003':{selected:['C','D','E'],verified:true,correct:false}}}});
+    BBUserStorage.hydrate({'bb.quiz.organe-simt.v1':{version:1,questions:{'os-003':{selected:['C','E'],verified:true,correct:false,contentRevision:1}}}});
   });
-  assert.ok(await third.evaluate(el=>el.classList.contains('is-correct')),'A formerly rejected CDE must become correct after hydration');
+  assert.ok(await third.evaluate(el=>el.classList.contains('is-correct')),'A formerly rejected CE must become correct after hydration');
   assert.equal(await page.evaluate(()=>BBUserStorage.get('bb.quiz.organe-simt.v1').questions['os-003'].correct),false,'Derived score must not rewrite a cloud row');
   await page.evaluate(()=>BBUserStorage.activate('revision-bob'));
   assert.equal(await third.locator('input:checked').count(),0,'Bob must not inherit Alice answers');
   await page.evaluate(()=>BBUserStorage.activate('guest'));
   assert.ok(await third.evaluate(el=>el.classList.contains('is-review')),'Guest selection must remain isolated');
-  assert.deepEqual(await third.locator('input:checked').evaluateAll(inputs=>inputs.map(i=>i.value)),['C','E']);
+  assert.deepEqual(await third.locator('input:checked').evaluateAll(inputs=>inputs.map(i=>i.value)),['C','D','E']);
   // Clarifications render under the appropriate answer status, at desktop and phone sizes.
   const fourth=page.locator('#grila-4');
   await fourth.locator('input[value="A"]').check();
@@ -94,7 +94,7 @@ try {
   }
   assert.deepEqual(errors,[]);
   await context.close();
-  console.log('Sense quiz revision: CDE scoring, omitted D, stored answers, hydration, owner isolation, preserved history and desktop/mobile feedback passed.');
+  console.log('Sense quiz revision: CE scoring, extra D, stored answers, hydration, owner isolation, preserved history and desktop/mobile feedback passed.');
 } finally {
   await browser.close();
   await new Promise(done=>server.close(done));

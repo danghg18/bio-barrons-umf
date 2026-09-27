@@ -17,8 +17,9 @@
   var chapter = CHAPTERS.find(function (item) {
     return (item.resources || []).some(function (resource) { return resource.url === filename; });
   });
-  var lessonUrl = chapter ? chapter.url : "sistemul_nervos.html";
-  var lessonName = chapter ? chapter.name : "Organizarea sistemului nervos";
+  var collection = typeof BIO_SITE !== 'undefined' && (BIO_SITE.quizCollections || []).find(function (item) { return item.done && item.url === filename; });
+  var lessonUrl = chapter ? chapter.url : "testare.html";
+  var lessonName = chapter ? chapter.name : "Testare";
 
   var storageAvailable = true;
   var analyticsAvailable = true;
@@ -56,8 +57,21 @@
     });
   }
 
-  function blankState() {
-    return { version: quiz.version, questions: {} };
+  function blankState(preserveHistory) {
+    var empty = { version: quiz.version, questions: {} };
+    // A deliberate restart clears current answers, not the retained evidence
+    // from removed duplicates or earlier wording of a question.
+    if (preserveHistory && state && state.questions) {
+      (quiz.retiredQuestions || []).forEach(function (q) {
+        if (state.questions[q.id]) empty.questions[q.id] = state.questions[q.id];
+      });
+      quiz.questions.forEach(function (q) {
+        if (state.questions[q.id] && state.questions[q.id].priorResults) empty.questions[q.id] = {
+          selected:[],verified:false,correct:false,contentRevision:q.contentRevision || 0,priorResults:state.questions[q.id].priorResults
+        };
+      });
+    }
+    return empty;
   }
 
   function loadState() {
@@ -68,14 +82,24 @@
         return blankState();
       }
       var knownQuestions = new Map(quiz.questions.map(function (question) { return [question.id, question]; }));
+      var retiredIds = new Set((quiz.retiredQuestions || []).map(function (question) { return question.id; }));
       // Derive current scores from the current key without creating cloud edits
       // or changing the historical scores of earlier attempts.
       Object.keys(parsed.questions).forEach(function (id) {
+        // Removed duplicates remain evidence of the student's previous work.
+        if (retiredIds.has(id)) return;
         if (!knownQuestions.has(id) || !parsed.questions[id] || typeof parsed.questions[id] !== "object") delete parsed.questions[id];
         else {
-          parsed.questions[id].selected = normalizeLetters(parsed.questions[id].selected);
-          parsed.questions[id].verified = !!parsed.questions[id].verified;
-          parsed.questions[id].correct = parsed.questions[id].verified && sameLetters(parsed.questions[id].selected, knownQuestions.get(id).correct);
+          var saved = parsed.questions[id], question = knownQuestions.get(id);
+          saved.selected = normalizeLetters(saved.selected);
+          if ((saved.contentRevision || 0) < (question.contentRevision || 0)) {
+            var previous = {selected:saved.selected.slice(),verified:!!saved.verified,correct:!!saved.correct,contentRevision:saved.contentRevision || 0};
+            saved.priorResults = (Array.isArray(saved.priorResults) ? saved.priorResults : []).concat([previous]);
+            saved.verified = false; saved.requiresReview = true;
+            saved.contentRevision = question.contentRevision;
+          }
+          saved.verified = !!saved.verified;
+          saved.correct = saved.verified && sameLetters(saved.selected, question.correct);
         }
       });
       return parsed;
@@ -227,8 +251,16 @@
       var storedAttempts = window.BBUserStorage ? (window.BBUserStorage.get(attemptKey) || {}) : JSON.parse(localStorage.getItem(attemptKey) || "{}");
       if (storedAttempts && typeof storedAttempts === "object" && !Array.isArray(storedAttempts)) attempts = storedAttempts;
     } catch (_) { /* Memory fallback. */ }
-    if (renew || !attempts[questionId]) {
+    var question = quiz.questions.find(function (item) { return item.id === questionId; });
+    var contentRevision = question && question.contentRevision || 0;
+    var revisions = attempts._contentRevisions;
+    if (!revisions || typeof revisions !== 'object' || Array.isArray(revisions)) revisions = {};
+    // Reverification after a wording change is a new historical attempt.
+    // Persist its revision alongside the UUID so selection changes, retries
+    // and reloads reuse that new attempt instead of the already committed one.
+    if (renew || !attempts[questionId] || (revisions[questionId] || 0) < contentRevision) {
       attempts[questionId] = analytics && analytics.newAttemptId ? analytics.newAttemptId() : Date.now() + "-" + Math.random().toString(36).slice(2);
+      if (contentRevision) { revisions[questionId] = contentRevision; attempts._contentRevisions = revisions; }
       try { if (window.BBUserStorage) window.BBUserStorage.set(attemptKey, attempts); else localStorage.setItem(attemptKey, JSON.stringify(attempts)); } catch (_) { storageAvailable = false; }
     }
     memoryAttempts = attempts;
@@ -236,17 +268,39 @@
   }
 
   function validateData() {
-    var expectedNumber = quiz.firstNumber || 51;
+    var firstNumber = quiz.firstNumber || 51;
     var expectedCount = quiz.questionCount || 50;
     var idPrefix = quiz.idPrefix || "sn-";
     if (!Array.isArray(quiz.questions) || quiz.questions.length !== expectedCount) {
       throw new Error("Setul trebuie să conțină exact " + expectedCount + " de grile.");
     }
-    quiz.questions.forEach(function (question) {
-      if (question.number !== expectedNumber) throw new Error("Numerotarea grilelor nu este continuă.");
-      if (question.id !== idPrefix + String(question.number).padStart(3, "0")) {
+    // Ranges preserve the book's numbering, including deliberate gaps between chapters.
+    var expectedNumbers = [];
+    var previousEnd = 0;
+    var rangeIds = new Set();
+    var questionIds = new Set();
+    if (!Array.isArray(quiz.ranges) || !quiz.ranges.length) throw new Error("Lipsesc intervalele grilelor.");
+    quiz.ranges.forEach(function (range) {
+      if (!range || !Number.isInteger(range.start) || !Number.isInteger(range.end) ||
+          range.start <= previousEnd || range.end < range.start ||
+          range.end - range.start + 1 > expectedCount || !range.id || rangeIds.has(range.id)) {
+        throw new Error("Intervalele grilelor sunt invalide sau se suprapun.");
+      }
+      rangeIds.add(range.id);
+      for (var number = range.start; number <= range.end; number += 1) expectedNumbers.push(number);
+      previousEnd = range.end;
+    });
+    if (expectedNumbers.length !== expectedCount || expectedNumbers[0] !== firstNumber) {
+      throw new Error("Intervalele nu corespund numerotării grilelor.");
+    }
+    quiz.questions.forEach(function (question, index) {
+      if (question.number !== expectedNumbers[index]) throw new Error("Numerotarea grilelor nu corespunde intervalelor.");
+      var identityNumber = question.legacyNumber === undefined ? question.number : question.legacyNumber;
+      if (!Number.isInteger(identityNumber) || identityNumber < 1 || questionIds.has(question.id) ||
+          question.id !== idPrefix + String(identityNumber).padStart(3, "0")) {
         throw new Error("ID invalid pentru grila " + question.number + ".");
       }
+      questionIds.add(question.id);
       if (!Array.isArray(question.options) || question.options.length !== 5) {
         throw new Error("Grila " + question.number + " nu are cinci variante.");
       }
@@ -262,7 +316,6 @@
           throw new Error("Lipsește explicația pentru " + question.number + option.letter + ".");
         }
       });
-      expectedNumber += 1;
     });
   }
 
@@ -276,7 +329,7 @@
   function renderOption(question, option) {
     var inputId = question.id + "-" + option.letter.toLowerCase();
     var explanationLabel = question.correct.indexOf(option.letter) !== -1
-      ? (sourceQuiz === window.BB_NERVOUS_QUIZ || question.asksFalse ? "De ce afirmația este incorectă" : "Clarificare")
+      ? (question.asksFalse ? "De ce afirmația este incorectă" : "Clarificare")
       : "De ce nu se selectează";
     return (
       '<div class="quiz-option-wrap" data-letter="' + option.letter + '">' +
@@ -299,7 +352,7 @@
     return (
       '<article class="quiz-question" tabindex="-1" id="grila-' + question.number + '" data-question-id="' + question.id + '">' +
         '<div class="quiz-question-head">' +
-          '<span class="quiz-question-number">Grila ' + question.number + '</span>' +
+          '<span class="quiz-question-number">Grila ' + question.number + (question.mixed ? ' · Întrebare mixtă' : '') + '</span>' +
           '<span class="quiz-question-status" aria-hidden="true">Necompletată</span>' +
         '</div>' +
         '<fieldset aria-describedby="quiz-instruction quiz-feedback-guide">' +
@@ -355,7 +408,7 @@
         '<div class="quiz-reset" data-reset-state="idle">' +
           '<button class="quiz-reset-start" type="button">Reîncearcă tot</button>' +
           '<span class="quiz-reset-confirmation" hidden>Parcurgerea curentă se salvează. Reiei toate grilele capitolului?</span>' +
-          '<button class="quiz-reset-confirm" type="button" hidden>Da, reiau</button>' +
+          '<button class="quiz-reset-confirm" type="button" hidden>Reia toate grilele</button>' +
           '<button class="quiz-reset-cancel" type="button" hidden>Anulează</button>' +
         '</div>' +
       '</div>';
@@ -405,7 +458,7 @@
     requireAnswerPersistence();
     var previousState = state, previousAttempts = memoryAttempts;
     var savedAttempts = window.BBUserStorage ? window.BBUserStorage.get(attemptKey) : localStorage.getItem(attemptKey);
-    state = blankState(); memoryAttempts = {};
+    state = blankState(true); memoryAttempts = {};
     if (window.BBUserStorage) window.BBUserStorage.set(attemptKey,null);
     else localStorage.removeItem(attemptKey);
     saveState();
@@ -432,10 +485,11 @@
     var root = document.getElementById("quiz-navigation");
     if (!root) return;
     var indexed = (window.BB_QUIZ_INDEX || []).find(function (item) { return item.storageKey === quiz.storageKey; });
-    var chapterNum = indexed ? indexed.chapterNum : (chapter ? chapter.num : "");
+    var chapterNum = indexed ? indexed.chapterNum : (chapter ? chapter.num : collection ? collection.num : "");
     root.innerHTML =
       '<div class="quiz-sidebar-top">' +
-        '<div class="quiz-sidebar-links"><a href="testare.html">← Toate testele</a><a href="' + escapeHtml(lessonUrl) + '" title="' + escapeHtml(lessonName) + '">Lecția</a>' +
+        '<div class="quiz-sidebar-links"><a href="testare.html">← Toate testele</a>' +
+        (chapter ? '<a href="' + escapeHtml(lessonUrl) + '" title="' + escapeHtml(lessonName) + '">Lecția</a>' : '') +
         '<a href="statistici.html?capitol=' + encodeURIComponent(chapterNum) + '">Statistici ↗</a></div>' +
         (practiceMode ? '<a class="quiz-practice-back" href="' + escapeHtml(filename) + '">Înapoi la testul complet</a>' : '') +
         '<p class="quiz-map-label">Alege grila</p>' +
@@ -501,6 +555,15 @@
 
   function syncQuestionCard(card, question) {
     var saved = questionState(question);
+    var previous = card.querySelector('.quiz-previous-results');
+    if (saved.priorResults && saved.priorResults.some(function (item) { return item.verified; })) {
+      if (!previous) {
+        previous = document.createElement('details'); previous.className = 'quiz-previous-results'; card.appendChild(previous);
+      }
+      previous.innerHTML = '<summary>Rezultate înaintea corecturii</summary>' + saved.priorResults.filter(function (item) { return item.verified; }).map(function (item) {
+        return '<p>Variante selectate: ' + escapeHtml(item.selected.join(', ') || 'niciuna') + '. Rezultat la acel moment: ' + (item.correct ? 'corect' : 'de revizuit') + '.</p>';
+      }).join('');
+    } else if (previous) previous.remove();
     question.options.forEach(function (option) {
       var wrap = card.querySelector('.quiz-option-wrap[data-letter="' + option.letter + '"]');
       setOptionState(wrap, question, option, saved);
@@ -515,7 +578,7 @@
 
     if (!saved.verified) {
       result.className = "quiz-result";
-      result.textContent = "";
+      result.textContent = saved.requiresReview ? "Enunțul sau variantele s-au actualizat. Recitește grila și verifică din nou răspunsul; rezultatul anterior este păstrat." : "";
       status.textContent = saved.selected.length ? "În lucru" : "Necompletată";
       status.className = "quiz-question-status" + (saved.selected.length ? " is-in-progress" : "");
       check.hidden = false;
@@ -644,7 +707,7 @@
         var saved={selected:selected,verified:true,correct:sameLetters(selected,question.correct)};
         if (analytics && analytics.recordAttempt) {
           var recorded=await analytics.recordAttempt({storageKey:quiz.storageKey,questionId:question.id,selected:selected,
-            correct:saved.correct,attemptId:attemptId,runId:run && run.id,answerKey:question.correct.slice()});
+            correct:saved.correct,attemptId:attemptId,runId:run && run.id,answerKey:question.correct.slice(),contentRevision:question.contentRevision || 0});
           if (expectedOwner!==owner()) return;
           // A rejected commit may mean a reset/clear won the race. Read again;
           // the pre-write run snapshot cannot authorize saving a tentative answer.
@@ -656,7 +719,9 @@
           }
         }
         if (generation!==resetGeneration || expectedOwner!==owner()) return;
-        state.questions[question.id]={selected:saved.selected,verified:true,correct:saved.correct};
+        var previousResults = questionState(question).priorResults;
+        state.questions[question.id]={selected:saved.selected,verified:true,correct:saved.correct,contentRevision:question.contentRevision || 0};
+        if (previousResults) state.questions[question.id].priorResults = previousResults;
         if (practiceMode) practiceRun.answers[question.id] = state.questions[question.id];
         saveState(question.id);
         syncQuestionCard(card,question); syncProgress(); result.focus({preventScroll:true});
@@ -742,7 +807,7 @@
           }
           resetGeneration++;
           if (ticket) await recoverRestart(expectedOwner);
-          else { state=blankState(); memoryAttempts={}; if(window.BBUserStorage)window.BBUserStorage.set(attemptKey,null); else localStorage.removeItem(attemptKey); saveState(); }
+          else { state=blankState(true); memoryAttempts={}; if(window.BBUserStorage)window.BBUserStorage.set(attemptKey,null); else localStorage.removeItem(attemptKey); saveState(); }
           syncAllQuestionCards(); syncProgress(); setResetConfirmation(root,false);
           location.hash=quiz.ranges[0].id;
           root.querySelector('.quiz-reset-start').focus({preventScroll:true});

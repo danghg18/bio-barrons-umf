@@ -519,7 +519,7 @@ body.bm-catalog #lab-testing-catalog {max-width:1040px;padding:22px 26px 10px;ma
 body.bm-catalog #lab-testing-catalog>.lab-section-head {display:flex;align-items:center;padding:0 0 8px;border:0;gap:14px;}
 body.bm-catalog #lab-testing-catalog>.lab-section-head h2 {font-size:20px;font-weight:550;letter-spacing:-.02em;color:var(--ui-ink);}
 body.bm-catalog .testing-catalog-filter {padding:4px;gap:3px;background:var(--ui-shell);border-radius:999px;}
-body.bm-catalog .testing-catalog-filter button {min-height:40px;padding:8px 15px;border:0;border-radius:999px;background:transparent;color:var(--ui-muted);font-size:12px;font-weight:500;}
+body.bm-catalog .testing-catalog-filter button {min-height:44px;padding:8px 15px;border:0;border-radius:999px;background:transparent;color:var(--ui-muted);font-size:12px;font-weight:500;}
 body.bm-catalog .testing-catalog-filter button[aria-pressed="true"] {background:var(--ui-paper);color:var(--ui-ink);box-shadow:0 3px 12px -6px #20443438;}
 body.bm-catalog .testing-category {margin:0 0 12px;}
 body.bm-catalog .testing-category-head {padding:16px 0 2px;gap:10px;}
@@ -530,7 +530,7 @@ body.bm-catalog #lab-testing-catalog .testing-chapter-row .lab-item {grid-templa
 body.bm-catalog #lab-testing-catalog .testing-chapter-row .lab-item-title {font-size:14px;font-weight:500;color:var(--ui-ink);}
 body.bm-catalog .testing-start {font-size:11px;font-weight:500;}
 body.bm-catalog .testing-stats-link {font-size:11px;min-height:44px;}
-body.bm-catalog .testing-practice-link {grid-column:1/-1;justify-self:start;margin:0 0 0 38px;font-size:12px;min-height:36px;}
+body.bm-catalog .testing-practice-link {grid-column:1/-1;justify-self:start;margin:0 0 0 38px;font-size:12px;min-height:44px;}
 body.bm-catalog .testing-chapter-row.is-unavailable {grid-template-columns:1fr;}
 body.bm-catalog .analytics-storage-note {max-width:1040px;}
 @media(max-width:1120px) {
@@ -548,7 +548,7 @@ body.bm-catalog .analytics-storage-note {max-width:1040px;}
  body.bm-catalog .testing-chapter-row {grid-template-columns:minmax(0,1fr) auto;row-gap:8px;padding:13px 0;}
  body.bm-catalog .testing-chapter-row>.lab-item {grid-column:1/-1;}
  body.bm-catalog .testing-row-progress {grid-column:1;margin-left:38px;}
- body.bm-catalog .testing-stats-link {grid-column:2;grid-row:2;min-height:32px;}
+ body.bm-catalog .testing-stats-link {grid-column:2;grid-row:2;min-height:44px;}
  body.bm-catalog .testing-practice-link {margin-left:38px;}
  body.bm-catalog #lab-testing-catalog .testing-chapter-row .lab-item-title {font-size:13px;}
  body.bm-catalog .testing-start {font-size:0;}

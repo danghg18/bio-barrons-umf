@@ -37,7 +37,7 @@ body.bm-browse.nb-page { background:var(--ui-canvas,#f5f7f5)!important; color:va
 .nb-paper::before { content:''; position:absolute; left:48px; top:0; bottom:0; width:1px; background:#c0cdb585; pointer-events:none; }
 .nb-paper-heading { padding:0 0 22px; }
 .nb-paper-heading h1 { max-width:1100px; margin:0; font:600 clamp(38px,4.5vw,68px)/1.08 Caveat,cursive; letter-spacing:-.015em; color:#294535; overflow-wrap:break-word; }
-.nb-paper-heading .nb-intro { margin:14px 0 0; font-size:12px; color:#77806f; }
+.nb-paper-heading .nb-intro { margin:14px 0 0; font-size:12px; color:var(--ui-muted,#566b61); }
 .nb-tools { position:sticky; top:var(--bm-header-offset,88px); z-index:5; min-height:53px; margin:0 0 16px; padding:0 6px; background:#fffef9f5; border:1px solid #e7eadd; border-radius:16px; }
 .nb-tools .bb-notes-toolbar { display:flex; flex-wrap:wrap; gap:6px; margin:0; padding:4px 0; }
 .nb-tools .bb-note-tool { min-width:44px; min-height:44px; border-radius:12px; color:var(--ui-ink,#23473d); }
@@ -45,7 +45,7 @@ body.bm-browse.nb-page { background:var(--ui-canvas,#f5f7f5)!important; color:va
 .nb-tools .bb-note-color-group { position:relative; }
 .nb-entry { position:relative; padding:24px 0 28px; scroll-margin-top:calc(var(--bm-header-offset,88px) + 80px); }
 .nb-entry-heading { display:flex; align-items:baseline; gap:14px; margin:0 0 18px; }
-.nb-entry-number { flex-shrink:0; width:20px; font-size:11px; color:#8a927f; font-variant-numeric:tabular-nums; }
+.nb-entry-number { flex-shrink:0; width:20px; font-size:11px; color:var(--ui-muted,#566b61); font-variant-numeric:tabular-nums; }
 .nb-entry h2 { margin:0; font:550 23px/1.35 Figtree,sans-serif; letter-spacing:-.025em; overflow-wrap:anywhere; color:#354c3b; }
 .nb-live-editor { min-width:0; }
 .nb-live-editor .bb-note-body { display:flow-root; min-height:128px; max-height:none; padding:0 0 1px; border:0; border-radius:0; background:repeating-linear-gradient(to bottom,transparent 0 31px,var(--nb-rule) 31px 32px); box-shadow:none; outline:none; font:400 16px/32px Figtree,sans-serif; color:#303c34; overflow-wrap:anywhere; overflow:visible; }

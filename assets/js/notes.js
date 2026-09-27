@@ -110,7 +110,7 @@
           document.title = selected.name + ' · Caietele mele · BioMed';
         } else header.append(element('h1', '', 'Caietele mele'), element('p', 'nb-intro', 'Tot ce ai notat. Un caiet pentru fiecare capitol.'));
         if (!nextOwner) {
-          const guest = element('div', 'nb-guest'); guest.append(element('h2', '', 'Păstrează-ți ideile aproape.'), element('p', '', 'Autentifică-te pentru a-ți deschide caietele cu notițe din lecții.'));
+          const guest = element('div', 'nb-guest'); guest.append(element('h2', '', 'Deschide caietele tale'), element('p', '', 'Autentifică-te pentru a scrie și a regăsi notițele din lecții.'));
           if (selected) guest.prepend(element('h1', 'nb-guest-title', selected.name));
           const login = element('button', 'bb-account-primary', 'Autentifică-te'); login.type = 'button'; login.addEventListener('click', () => window.BBAccountUI?.open('login')); guest.append(login); root.append(guest); return;
         }
@@ -171,7 +171,7 @@
     placeNotesButton();
     const panel = document.createElement('dialog');
     panel.id = 'bb-notes-panel'; panel.className = 'bb-notes-panel'; panel.setAttribute('aria-labelledby', 'bb-notes-title');
-    panel.innerHTML = '<div class="bb-account-heading"><h2 id="bb-notes-title">Notițe</h2><button type="button" class="bb-dialog-close" aria-label="Închide notițele"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><p class="bb-notes-chapter"></p><p class="bb-notes-section" id="bb-notes-section"></p><div class="bb-notes-guest"><p>Autentifică-te pentru a scrie și sincroniza notițe personale pentru această secțiune.</p><button type="button" class="bb-account-primary" id="bb-notes-login">Autentifică-te</button></div><div class="bb-notes-editor"></div>';
+    panel.innerHTML = '<div class="bb-account-heading"><h2 id="bb-notes-title">Notițe</h2><button type="button" class="bb-dialog-close" aria-label="Închide notițele"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><p class="bb-notes-chapter"></p><p class="bb-notes-section" id="bb-notes-section"></p><div class="bb-notes-guest"><p>Autentifică-te pentru a scrie notițe în această secțiune.</p><button type="button" class="bb-account-primary" id="bb-notes-login">Autentifică-te</button></div><div class="bb-notes-editor"></div>';
     panel.querySelector('.bb-notes-chapter').textContent = chapter.name;
     document.body.append(panel);
     const sectionName = panel.querySelector('.bb-notes-section');

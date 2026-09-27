@@ -632,6 +632,13 @@
   }
 
   function upgradeSearchControls(root) {
+    // Legacy lessons authored the result buttons beside the field. Reuse their
+    // nodes and handlers inside the shared layout, including the mobile grid.
+    var box = root.querySelector(".lesson-search-box");
+    var navigation = root.querySelector(".lesson-search-nav");
+    var closeControl = root.querySelector("#lesson-search-close");
+    if (box && navigation && navigation.parentElement !== box) box.appendChild(navigation);
+    if (box && closeControl && closeControl.parentElement !== box) box.appendChild(closeControl);
     var fieldIcon = root.querySelector(".lesson-search-box > svg");
     var input = root.querySelector("#lesson-search-input");
     var previous = root.querySelector("#lesson-search-prev");

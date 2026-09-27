@@ -39,7 +39,7 @@
     panel.id = 'pilot-account-panel';
     panel.className = 'bb-account-surface ' + (inline ? 'bb-account-inline' : 'bb-account-dialog');
     panel.setAttribute('aria-labelledby', 'pilot-account-title');
-    panel.innerHTML = '<div class="bb-account-heading"><h2 id="pilot-account-title" tabindex="-1">Contul tău</h2>' + (inline ? '' : '<button type="button" class="bb-dialog-close" aria-label="Închide contul"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>') + '</div><div id="bb-account-content"></div><p class="bb-account-status" id="bb-account-status" role="status" aria-live="polite"></p><p class="bb-account-message" id="bb-account-message" role="status" aria-live="polite"></p><div class="bb-account-tools bb-account-urgent-tools"><button class="bb-account-link" type="button" id="bb-sync-retry" hidden>Reîncearcă sincronizarea</button></div><details class="bb-account-options"><summary>Datele tale</summary><div class="bb-account-tools bb-account-backup-tools"><button class="bb-account-link" type="button" id="bb-cache-export">Exportă copia locală</button></div><p class="bb-account-footnote">Poți studia fără cont. La conectare, progresul din cloud este încărcat aici. Copiile locale înlocuite sunt păstrate pentru export în contul lor.</p></details>';
+    panel.innerHTML = '<div class="bb-account-heading"><h2 id="pilot-account-title" tabindex="-1">Contul tău</h2>' + (inline ? '' : '<button type="button" class="bb-dialog-close" aria-label="Închide contul"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>') + '</div><div id="bb-account-content"></div><p class="bb-account-status" id="bb-account-status" role="status" aria-live="polite"></p><p class="bb-account-message" id="bb-account-message" role="status" aria-live="polite"></p><div class="bb-account-tools bb-account-urgent-tools"><button class="bb-account-link" type="button" id="bb-sync-retry" hidden>Reîncearcă sincronizarea</button></div><details class="bb-account-options"><summary>Datele tale</summary><div class="bb-account-tools bb-account-backup-tools"><button class="bb-account-link" type="button" id="bb-cache-export">Exportă copia locală</button></div><p class="bb-account-footnote">Poți studia fără cont. La autentificare se încarcă progresul contului. Copiile locale înlocuite rămân disponibile pentru export în contul căruia îi aparțin. Istoricul statisticilor și simulările se păstrează doar în acest browser.</p></details>';
     if (continueStudy) panel.append(continueStudy);
     old?.remove();
     (mount || document.body).append(panel);
@@ -86,11 +86,11 @@
       const state = auth();
       const sync = window.BBCloudSync?.getState();
       let text = '';
-      if (navigator.onLine === false) text = 'Mod offline. Progresul rămâne pe acest dispozitiv și se sincronizează la reconectare.';
+      if (navigator.onLine === false) text = state.user ? 'Ești offline. Progresul salvat pe dispozitiv se sincronizează la reconectare.' : 'Ești offline. Progresul rămâne pe acest dispozitiv.';
       else if (!state.configured) text = 'Conturile nu sunt încă configurate. Lecțiile și grilele funcționează fără cont.';
       else if (!state.initialized) text = 'Se restaurează sesiunea…';
       else if (state.user) text = sync?.message || 'Pregătim sincronizarea…';
-      else text = 'Autentifică-te pentru a sincroniza progresul și notițele.';
+      else text = inline ? '' : 'Autentifică-te pentru a sincroniza progresul și notițele.';
       const volatile = window.BBUserStorage && !window.BBUserStorage.canPersist();
       if (volatile) text += ' Stocarea locală nu este disponibilă. Exportă copia înainte de a închide pagina.';
       const exportHome = volatile ? urgentTools : backupTools;

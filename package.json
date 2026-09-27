@@ -7,8 +7,8 @@
     "generate:check": "node scripts/build-supabase.mjs --check && node scripts/generate-site-assets.mjs --check",
     "validate": "node scripts/validate-site.mjs",
     "test:smoke": "node scripts/smoke-test.mjs",
-    "test": "npm run generate:check && npm run validate && npm run test:curriculum && npm run test:smoke && npm run test:search && npm run test:ui && npm run test:redesign && npm run test:recovered && npm run test:celula && npm run test:simt && npm run test:analytics && npm run test:accounts && npm run test:glossary",
-    "test:ui": "node scripts/ui-test.mjs && node scripts/quiz-surface-test.mjs && node scripts/site-compact-ui-test.mjs",
+    "test": "npm run generate:check && npm run validate && npm run test:curriculum && npm run test:smoke && npm run test:search && npm run test:ui && npm run test:redesign && npm run test:recovered && npm run test:celula && npm run test:simt && npm run test:endocrin-metabolism && npm run test:circulator && npm run test:analytics && npm run test:accounts && npm run test:glossary && npm run test:simulation && npm run test:umf2026",
+    "test:ui": "node scripts/ui-test.mjs && node scripts/quiz-surface-test.mjs && node scripts/site-compact-ui-test.mjs && node scripts/ui-polish-test.mjs && node scripts/ui-polish-upgrade-test.mjs",
     "test:search": "node scripts/home-search-test.mjs && node scripts/search-multiword-test.mjs && node scripts/search-highlighter-test.mjs",
     "test:pilot": "npm run test:redesign",
     "test:redesign": "node scripts/redesign-test.mjs",
@@ -19,7 +19,11 @@
     "build:supabase": "node scripts/build-supabase.mjs",
     "test:accounts": "node scripts/notebook-sections-test.mjs && node scripts/accounts-core-test.mjs && node scripts/accounts-storage-test.mjs && node scripts/accounts-sync-race-test.mjs && node scripts/accounts-sql-test.mjs && node scripts/note-media-sql-test.mjs && node scripts/accounts-browser-test.mjs && node scripts/accounts-ui-test.mjs",
     "test:glossary": "node scripts/glossary-data-test.mjs && node scripts/glossary-search-test.mjs && node scripts/glossary-ui-test.mjs && node scripts/glossary-navigation-test.mjs && node scripts/glossary-offline-test.mjs",
-    "test:curriculum": "node scripts/curriculum-content-test.mjs && node scripts/curriculum-inventory.mjs && node scripts/curriculum-exclusions-test.mjs && node scripts/curriculum-study-test.mjs"
+    "test:curriculum": "node scripts/curriculum-content-test.mjs && node scripts/curriculum-inventory.mjs && node scripts/curriculum-exclusions-test.mjs && node scripts/curriculum-study-test.mjs",
+    "test:endocrin-metabolism": "node scripts/quiz-source-ranges-test.mjs && node scripts/endocrin-metabolism-quiz-test.mjs && node scripts/quiz-cache-upgrade-test.mjs",
+    "test:simulation": "node scripts/simulation-core-test.mjs && node scripts/simulation-storage-test.mjs && node scripts/simulation-data-test.mjs && node scripts/simulation-loading-test.mjs && node scripts/simulation-browser-test.mjs && node scripts/simulation-feedback-test.mjs && node scripts/simulation-upgrade-test.mjs",
+    "test:circulator": "node scripts/circulator-quiz-test.mjs && node scripts/quiz-cache-upgrade-test.mjs",
+    "test:umf2026": "node scripts/umf-2026-content-test.mjs && node scripts/umf-2026-semantic-test.mjs && node scripts/quiz-content-compatibility-test.mjs && node scripts/quiz-content-reverification-test.mjs && node scripts/quiz-retired-correction-history-test.mjs && node scripts/quiz-content-history-test.mjs && node scripts/quiz-collections-test.mjs && node scripts/umf-2026-scoring-test.mjs && node scripts/umf-2026-browser-test.mjs"
   },
   "devDependencies": {
     "@electric-sql/pglite": "0.3.14",

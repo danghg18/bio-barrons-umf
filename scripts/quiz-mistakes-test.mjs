@@ -28,7 +28,7 @@ async function finishRound(page,wrongCount) {
   for(const [index,id] of remaining.entries()) {
    const q=quiz.questions.find(q=>q.id===id),correct=index>=wrongCount;
    const selected=correct?q.correct:q.correct.length>1?[q.correct[0]]:[q.options.find(o=>!q.correct.includes(o.letter)).letter];
-   await BBQuizAnalytics.recordAttempt({storageKey:quiz.storageKey,runId:run.id,questionId:id,attemptId:BBQuizAnalytics.newAttemptId(),selected,correct,answerKey:q.correct});
+   await BBQuizAnalytics.recordAttempt({storageKey:quiz.storageKey,runId:run.id,questionId:id,attemptId:BBQuizAnalytics.newAttemptId(),selected,correct,answerKey:q.correct,contentRevision:q.contentRevision||0});
   }
   return run;
  },wrongCount);
@@ -49,8 +49,8 @@ try {
   const wrongIds=new Set(wrong.map(q=>q.id)),answers={};
   for(const q of quiz.questions) {
    const correct=!wrongIds.has(q.id),selected=correct?q.correct:q.correct.length>1?[q.correct[0]]:[q.options.find(o=>!q.correct.includes(o.letter)).letter];
-   answers[q.id]={selected,verified:true,correct};
-   if(!run.answers[q.id]?.verified)await BBQuizAnalytics.recordAttempt({storageKey:quiz.storageKey,runId:run.id,questionId:q.id,selected,correct,attemptId:BBQuizAnalytics.newAttemptId(),answerKey:q.correct});
+   answers[q.id]={selected,verified:true,correct,contentRevision:q.contentRevision||0};
+   if(!run.answers[q.id]?.verified)await BBQuizAnalytics.recordAttempt({storageKey:quiz.storageKey,runId:run.id,questionId:q.id,selected,correct,attemptId:BBQuizAnalytics.newAttemptId(),answerKey:q.correct,contentRevision:q.contentRevision||0});
   }
   BBUserStorage.set(quiz.storageKey,{version:quiz.version,questions:answers});
   return {sourceId:run.id,ids:wrong.map(q=>q.id),numbers:wrong.map(q=>q.number),key:quiz.storageKey,cache:BBUserStorage.get(quiz.storageKey)};
@@ -115,7 +115,7 @@ try {
   const datasetCtx=await context(),dataset=await datasetCtx.newPage();dataset.on('pageerror',e=>errors.push(e.stack));await dataset.goto(base+entry.url);await dataset.waitForSelector('.quiz-question');
   const q=await dataset.evaluate(async()=>{
    const quiz=window.BB_QUIZ||window.BB_NERVOUS_QUIZ,first=quiz.questions[0],answers={};
-   for(const q of quiz.questions){const correct=q!==first;answers[q.id]={verified:true,correct,selected:correct?q.correct:q.correct.length>1?[q.correct[0]]:[q.options.find(o=>!q.correct.includes(o.letter)).letter]};}
+   for(const q of quiz.questions){const correct=q!==first;answers[q.id]={verified:true,correct,contentRevision:q.contentRevision||0,selected:correct?q.correct:q.correct.length>1?[q.correct[0]]:[q.options.find(o=>!q.correct.includes(o.letter)).letter]};}
    BBUserStorage.hydrate({[quiz.storageKey]:{version:quiz.version,questions:answers}});return first;
   });
   await dataset.waitForSelector('#quiz-practice-link:not([hidden])');
@@ -126,7 +126,7 @@ try {
  // Fully verified cached answers can begin their first correction while offline.
  const offlineCtx=await context({serviceWorkers:'allow'}),offline=await offlineCtx.newPage();offline.on('pageerror',e=>errors.push(e.stack));await offline.goto(base+'grile_celula.html');
  await offline.evaluate(async()=>{await navigator.serviceWorker.register('sw.js');await navigator.serviceWorker.ready;});await offline.waitForFunction(()=>!!navigator.serviceWorker.controller);
- await offline.evaluate(()=>{const answers={};for(const [i,q] of BB_QUIZ.questions.entries()){const correct=i!==0;answers[q.id]={selected:correct?q.correct:q.correct.length>1?[q.correct[0]]:[q.options.find(o=>!q.correct.includes(o.letter)).letter],verified:true,correct};}BBUserStorage.set(BB_QUIZ.storageKey,{version:BB_QUIZ.version,questions:answers});});
+ await offline.evaluate(()=>{const answers={};for(const [i,q] of BB_QUIZ.questions.entries()){const correct=i!==0;answers[q.id]={selected:correct?q.correct:q.correct.length>1?[q.correct[0]]:[q.options.find(o=>!q.correct.includes(o.letter)).letter],verified:true,correct,contentRevision:q.contentRevision||0};}BBUserStorage.set(BB_QUIZ.storageKey,{version:BB_QUIZ.version,questions:answers});});
  await offlineCtx.setOffline(true);await offline.goto(base+'grile_celula.html?mod=greseli');await offline.waitForSelector('body[data-quiz-mode="mistakes"] #grila-61');await offlineCtx.close();
  assert.deepEqual(errors,[]);await ctx.close();
  console.log('Correction rounds: full-first gating, immutable 70% initial result, three shrinking rounds, source URLs, resume/counting, exact grading, stale rounds and parents, identity changes, phone layout, all registered datasets and first offline entry passed.');

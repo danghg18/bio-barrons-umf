@@ -1,0 +1,321 @@
+[
+  {
+    "chapterNum": 1,
+    "sourceChapter": "I",
+    "storageKey": "bb.quiz.introducere.v1",
+    "dataFile": "assets/js/grile-introducere-data.js",
+    "ranges": [
+      [
+        1,
+        60
+      ]
+    ],
+    "name": "Introducere în anatomie și fiziologie",
+    "lessonUrl": "introducere_anatomie_fiziologie.html",
+    "url": "grile_introducere_anatomie_fiziologie.html",
+    "idPrefix": "ia-"
+  },
+  {
+    "chapterNum": 3,
+    "sourceChapter": "I",
+    "storageKey": "bb.quiz.celula.v1",
+    "dataFile": "assets/js/grile-celula-data.js",
+    "ranges": [
+      [
+        61,
+        110
+      ]
+    ],
+    "name": "Celula și fiziologia celulară",
+    "lessonUrl": "celula_si_fiziologia_celulara.html",
+    "url": "grile_celula.html",
+    "idPrefix": "cel-"
+  },
+  {
+    "chapterNum": 6,
+    "sourceChapter": "II",
+    "storageKey": "bb.quiz.oase.v1",
+    "dataFile": "assets/js/grile-oase-data.js",
+    "ranges": [
+      [
+        1,
+        180
+      ]
+    ],
+    "name": "Oasele și articulațiile",
+    "lessonUrl": "oasele_si_articulatiile.html",
+    "url": "grile_oasele_si_articulatiile.html",
+    "idPrefix": "oa-"
+  },
+  {
+    "chapterNum": 8,
+    "sourceChapter": "III",
+    "storageKey": "bb.quiz.tesut-muscular.v1",
+    "dataFile": "assets/js/grile-tesut-muscular-data.js",
+    "ranges": [
+      [
+        1,
+        70
+      ],
+      [
+        156,
+        240
+      ]
+    ],
+    "name": "Țesutul muscular",
+    "lessonUrl": "tesutul_muscular.html",
+    "url": "grile_tesutul_muscular.html",
+    "idPrefix": "tm-"
+  },
+  {
+    "chapterNum": 10,
+    "sourceChapter": "III",
+    "storageKey": "bb.quiz.tesut-nervos.v1",
+    "dataFile": "assets/js/grile-tesut-nervos-data.js",
+    "ranges": [
+      [
+        71,
+        155
+      ]
+    ],
+    "name": "Țesutul nervos",
+    "lessonUrl": "tesutul_nervos.html",
+    "url": "grile_tesutul_nervos.html",
+    "idPrefix": "tn-"
+  },
+  {
+    "chapterNum": 11,
+    "sourceChapter": "IV",
+    "storageKey": "bb.quiz.sistem-nervos.v1",
+    "dataFile": "assets/js/grile-sistemul-nervos-data.js",
+    "ranges": [
+      [
+        1,
+        100
+      ]
+    ],
+    "name": "Organizarea sistemului nervos",
+    "lessonUrl": "sistemul_nervos.html",
+    "url": "grile_sistemul_nervos.html",
+    "idPrefix": "sn-"
+  },
+  {
+    "chapterNum": 12,
+    "sourceChapter": "V",
+    "storageKey": "bb.quiz.organe-simt.v1",
+    "dataFile": "assets/js/grile-organe-de-simt-data.js",
+    "ranges": [
+      [
+        1,
+        100
+      ]
+    ],
+    "name": "Organele de simț",
+    "lessonUrl": "organele_de_simt.html",
+    "url": "grile_organele_de_simt.html",
+    "idPrefix": "os-"
+  },
+  {
+    "chapterNum": 13,
+    "sourceChapter": "VI",
+    "storageKey": "bb.quiz.sistemul-endocrin.v1",
+    "dataFile": "assets/js/grile-sistemul-endocrin-data.js",
+    "ranges": [
+      [
+        1,
+        64
+      ],
+      [
+        120,
+        160
+      ]
+    ],
+    "name": "Sistemul endocrin",
+    "lessonUrl": "sistemul_endocrin.html",
+    "url": "grile_sistemul_endocrin.html",
+    "idPrefix": "end-"
+  },
+  {
+    "chapterNum": 19,
+    "sourceChapter": "VI",
+    "storageKey": "bb.quiz.metabolism.v1",
+    "dataFile": "assets/js/grile-metabolism-data.js",
+    "ranges": [
+      [
+        65,
+        119
+      ]
+    ],
+    "name": "Metabolism și nutriție",
+    "lessonUrl": "metabolism_si_nutritie.html",
+    "url": "grile_metabolism_si_nutritie.html",
+    "idPrefix": "met-"
+  },
+  {
+    "chapterNum": 14,
+    "sourceChapter": "VII",
+    "storageKey": "bb.quiz.sange.v1",
+    "dataFile": "assets/js/grile-sange-data.js",
+    "ranges": [
+      [
+        1,
+        80
+      ]
+    ],
+    "name": "Sângele",
+    "lessonUrl": "sangele.html",
+    "url": "grile_sangele.html",
+    "idPrefix": "sa-"
+  },
+  {
+    "chapterNum": 15,
+    "sourceChapter": "VIII",
+    "storageKey": "bb.quiz.sistemul-cardiovascular.v1",
+    "dataFile": "assets/js/grile-sistemul-cardiovascular-data.js",
+    "ranges": [
+      [
+        1,
+        74
+      ],
+      [
+        131,
+        135
+      ],
+      [
+        138,
+        140
+      ]
+    ],
+    "name": "Sistemul cardiovascular",
+    "lessonUrl": "sistemul_cardiovascular.html",
+    "url": "grile_sistemul_cardiovascular.html",
+    "idPrefix": "cv-"
+  },
+  {
+    "chapterNum": 16,
+    "sourceChapter": "VIII",
+    "storageKey": "bb.quiz.sistemul-limfatic.v1",
+    "dataFile": "assets/js/grile-sistemul-limfatic-data.js",
+    "ranges": [
+      [
+        75,
+        130
+      ],
+      [
+        136,
+        137
+      ]
+    ],
+    "name": "Sistemul limfatic și imun",
+    "lessonUrl": "sistemul_limfatic_si_imun.html",
+    "url": "grile_sistemul_limfatic_si_imun.html",
+    "idPrefix": "lim-"
+  },
+  {
+    "chapterNum": 17,
+    "sourceChapter": "IX",
+    "storageKey": "bb.quiz.sistemul-respirator.v1",
+    "dataFile": "assets/js/grile-sistemul-respirator-data.js",
+    "ranges": [
+      [
+        1,
+        160
+      ]
+    ],
+    "name": "Sistemul respirator",
+    "lessonUrl": "sistemul_respirator.html",
+    "url": "grile_sistemul_respirator.html",
+    "idPrefix": "rsp-"
+  },
+  {
+    "chapterNum": 18,
+    "sourceChapter": "X",
+    "storageKey": "bb.quiz.sistemul-digestiv.v1",
+    "dataFile": "assets/js/grile-sistemul-digestiv-data.js",
+    "ranges": [
+      [
+        1,
+        80
+      ]
+    ],
+    "name": "Sistemul digestiv",
+    "lessonUrl": "sistemul_digestiv.html",
+    "url": "grile_sistemul_digestiv.html",
+    "idPrefix": "dg-"
+  },
+  {
+    "chapterNum": 20,
+    "sourceChapter": "XI",
+    "storageKey": "bb.quiz.sistemul-urinar.v1",
+    "dataFile": "assets/js/grile-sistemul-urinar-data.js",
+    "ranges": [
+      [
+        1,
+        100
+      ]
+    ],
+    "name": "Sistemul urinar",
+    "lessonUrl": "sistemul_renal_complet.html",
+    "url": "grile_sistemul_urinar.html",
+    "idPrefix": "ur-"
+  },
+  {
+    "chapterNum": 22,
+    "sourceChapter": "XII",
+    "storageKey": "bb.quiz.reproducator-masculin.v1",
+    "dataFile": "assets/js/grile-reproducator-masculin-data.js",
+    "ranges": [
+      [
+        1,
+        68
+      ],
+      [
+        140,
+        140
+      ]
+    ],
+    "name": "Sistemul reproducător masculin",
+    "lessonUrl": "sistemul_reproducator_masculin.html",
+    "url": "grile_sistemul_reproducator_masculin.html",
+    "idPrefix": "rm-"
+  },
+  {
+    "chapterNum": 23,
+    "sourceChapter": "XII",
+    "storageKey": "bb.quiz.reproducator-feminin.v1",
+    "dataFile": "assets/js/grile-reproducator-feminin-data.js",
+    "ranges": [
+      [
+        69,
+        139
+      ]
+    ],
+    "mixed": [
+      135,
+      136,
+      138,
+      139
+    ],
+    "name": "Sistemul reproducător feminin",
+    "lessonUrl": "sistemul_reproducator_feminin.html",
+    "url": "grile_sistemul_reproducator_feminin.html",
+    "idPrefix": "rf-"
+  },
+  {
+    "chapterNum": 1000,
+    "sourceChapter": "XIII",
+    "publicationStatus": "deferred",
+    "storageKey": "bb.quiz.asociative.v1",
+    "dataFile": "assets/js/grile-asociative-data.js",
+    "ranges": [
+      [
+        1,
+        400
+      ]
+    ],
+    "name": "Întrebări asociative",
+    "lessonUrl": "testare.html",
+    "url": "grile_asociative.html",
+    "idPrefix": "as-"
+  }
+]

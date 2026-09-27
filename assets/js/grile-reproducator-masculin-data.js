@@ -1,4 +1,4 @@
-// Recovered verbatim from 810246f:grile_sistemul_reproducator_masculin.html.
+/* Sursa: cartea UMF Cluj 2026. Barem independent: tests/umf-cluj-2026-answer-key.json. Audit: data/umf-2026-editorial-audit.json. */
 window.BB_QUIZ = {
   "version": 1,
   "storageKey": "bb.quiz.reproducator-masculin.v1",
@@ -6,10 +6,78 @@ window.BB_QUIZ = {
   "firstNumber": 1,
   "questionCount": 69,
   "idPrefix": "rm-",
-  "recoveredFrom": {
-    "revision": "810246f",
-    "path": "grile_sistemul_reproducator_masculin.html"
-  },
+  "contentRevision": 1,
+  "previousQuestionIds": [
+    "rm-001",
+    "rm-002",
+    "rm-003",
+    "rm-004",
+    "rm-005",
+    "rm-006",
+    "rm-007",
+    "rm-008",
+    "rm-009",
+    "rm-010",
+    "rm-011",
+    "rm-012",
+    "rm-013",
+    "rm-014",
+    "rm-015",
+    "rm-016",
+    "rm-017",
+    "rm-018",
+    "rm-019",
+    "rm-020",
+    "rm-021",
+    "rm-022",
+    "rm-023",
+    "rm-024",
+    "rm-025",
+    "rm-026",
+    "rm-027",
+    "rm-028",
+    "rm-029",
+    "rm-030",
+    "rm-031",
+    "rm-032",
+    "rm-033",
+    "rm-034",
+    "rm-035",
+    "rm-036",
+    "rm-037",
+    "rm-038",
+    "rm-039",
+    "rm-040",
+    "rm-041",
+    "rm-042",
+    "rm-043",
+    "rm-044",
+    "rm-045",
+    "rm-046",
+    "rm-047",
+    "rm-048",
+    "rm-049",
+    "rm-050",
+    "rm-051",
+    "rm-052",
+    "rm-053",
+    "rm-054",
+    "rm-055",
+    "rm-056",
+    "rm-057",
+    "rm-058",
+    "rm-059",
+    "rm-060",
+    "rm-061",
+    "rm-062",
+    "rm-063",
+    "rm-064",
+    "rm-065",
+    "rm-066",
+    "rm-067",
+    "rm-068",
+    "rm-069"
+  ],
   "ranges": [
     {
       "id": "grile-1-10",
@@ -42,9 +110,14 @@ window.BB_QUIZ = {
       "end": 60
     },
     {
-      "id": "grile-61-69",
+      "id": "grile-61-68",
       "start": 61,
-      "end": 69
+      "end": 68
+    },
+    {
+      "id": "grile-140-140",
+      "start": 140,
+      "end": 140
     }
   ],
   "questions": [
@@ -52,10 +125,9 @@ window.BB_QUIZ = {
       "id": "rm-001",
       "number": 1,
       "sourceNumber": 1,
-      "topic": "Funcțiile gonadei masculine",
-      "lessonSection": "Testiculele — Funcții",
-      "lessonPage": "testiculele",
+      "sourceChapter": "XII",
       "prompt": "Care dintre afirmațiile privind funcțiile gonadei masculine sunt adevărate?",
+      "asksFalse": false,
       "correct": [
         "A",
         "B",
@@ -87,16 +159,18 @@ window.BB_QUIZ = {
           "text": "sunt controlate prin intermediul hormonilor gonadotropi adenohipofizari: FSH și LH",
           "why": "Corect. Funcțiile testiculare sunt reglate de FSH (stimulează spermatogeneza) și LH (stimulează secreția de testosteron), ambii hormoni adenohipofizari."
         }
+      ],
+      "sourcePages": [
+        212
       ]
     },
     {
       "id": "rm-002",
       "number": 2,
       "sourceNumber": 2,
-      "topic": "Efectele FSH",
-      "lessonSection": "Hormoni masculini — FSH",
-      "lessonPage": "hormoni",
+      "sourceChapter": "XII",
       "prompt": "Următoarele efecte aparțin FSH-ului:",
+      "asksFalse": false,
       "correct": [
         "A",
         "C",
@@ -111,33 +185,35 @@ window.BB_QUIZ = {
         {
           "letter": "B",
           "text": "stimulează maturarea celulelor interstițiale testiculare",
-          "why": "Greșit. Maturarea celulelor interstițiale (Leydig) este stimulată de LH (hormonul luteinizant), nu de FSH."
+          "why": "Baremul exclude varianta. În schema hormonală a manualului, LH stimulează maturarea celulelor Leydig, iar FSH acționează asupra celulelor Sertoli și tubilor seminiferi. Această repartizare a țintelor principale nu exclude influențele paracrine ale celulelor Sertoli asupra funcției Leydig."
         },
         {
           "letter": "C",
           "text": "stimulează producerea spermei",
-          "why": "Corect. FSH stimulează producerea spermei acționând asupra tubilor seminiferi."
+          "why": "FSH susține producerea spermatozoizilor prin acțiunea asupra celulelor Sertoli. În această formulare, „producerea spermei” desemnează componenta gametică; lichidul seminal este furnizat în mare parte de glandele anexe."
         },
         {
           "letter": "D",
           "text": "stimulează ovulația",
-          "why": "Greșit. Ovulația este un fenomen al sistemului reproducător feminin; la bărbat FSH nu stimulează ovulația."
+          "why": "Declanșarea ovulației este atribuită creșterii bruște a LH. FSH stimulează dezvoltarea foliculului ovarian și pregătește astfel ovulația, dar nu este hormonul declanșator indicat în schema manualului."
         },
         {
           "letter": "E",
           "text": "stimulează maturarea tubilor seminiferi",
           "why": "Corect. FSH stimulează maturarea și dezvoltarea tubilor seminiferi, esențiali pentru spermatogeneză."
         }
+      ],
+      "sourcePages": [
+        212
       ]
     },
     {
       "id": "rm-003",
       "number": 3,
       "sourceNumber": 3,
-      "topic": "Efectele LH",
-      "lessonSection": "Hormoni masculini — LH",
-      "lessonPage": "hormoni",
+      "sourceChapter": "XII",
       "prompt": "Următoarele efecte aparțin LH-ului:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B",
@@ -162,23 +238,25 @@ window.BB_QUIZ = {
         {
           "letter": "D",
           "text": "stimulează creșterea tubilor seminiferi testiculari",
-          "why": "Greșit. Creșterea și maturarea tubilor seminiferi este stimulată de FSH, nu de LH."
+          "why": "Baremul exclude varianta, iar manualul atribuie explicit maturarea tubilor seminiferi FSH-ului. LH poate susține indirect dezvoltarea și funcția tubilor prin testosteronul produs de celulele Leydig; excluderea nu înseamnă absența oricărei influențe a LH."
         },
         {
           "letter": "E",
           "text": "stimulează producerea spermei",
-          "why": "Greșit. Producerea spermei este stimulată de FSH care acționează pe celulele Sertoli din tubii seminiferi."
+          "why": "Baremul exclude varianta, însă LH susține indirect spermatogeneza prin stimularea secreției de testosteron. Manualul afirmă chiar că LH asistă spermatogeneza; producerea spermatozoizilor nu depinde exclusiv de FSH."
         }
+      ],
+      "sourcePages": [
+        212
       ]
     },
     {
       "id": "rm-004",
       "number": 4,
       "sourceNumber": 4,
-      "topic": "Tubii seminiferi",
-      "lessonSection": "Testiculele — Tubii seminiferi",
-      "lessonPage": "testiculele",
+      "sourceChapter": "XII",
       "prompt": "Selectați afirmațiile corecte privind tubii seminiferi:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B",
@@ -203,23 +281,25 @@ window.BB_QUIZ = {
         {
           "letter": "D",
           "text": "conțin celule cu rol în secreția de testosteron",
-          "why": "Greșit. Testosteronul este secretat de celulele interstițiale (Leydig) situate ÎNTRE tubii seminiferi, nu în interiorul lor."
+          "why": "Baremul exclude varianta: celulele care secretă în principal testosteronul sunt celulele Leydig, situate între tubii seminiferi. Formularea „cu rol în secreție” este însă mai largă: celulele Sertoli din tubi pot influența paracrin secreția Leydig, fără a fi sursa principală a testosteronului."
         },
         {
           "letter": "E",
           "text": "conțin celule sustentaculare care funcționează ca o barieră între vasele de sânge și tubii seminiferi",
-          "why": "Corect. Celulele sustentaculare (Sertoli) formează bariera hemato-testiculară, protejând spermatozoizii în curs de dezvoltare de sistemul imunitar."
+          "why": "Celulele Sertoli formează, prin joncțiuni strânse, bariera hematotesticulară. Ea separă compartimentul adluminal al epiteliului seminifer de cel bazal și contribuie la protecția imunologică a celulelor germinale aflate în dezvoltare."
         }
+      ],
+      "sourcePages": [
+        212
       ]
     },
     {
       "id": "rm-005",
       "number": 5,
       "sourceNumber": 5,
-      "topic": "Celulele interstițiale",
-      "lessonSection": "Testiculele — Celulele Leydig",
-      "lessonPage": "testiculele",
+      "sourceChapter": "XII",
       "prompt": "Selectați afirmațiile adevărate privind celulele interstițiale testiculare:",
+      "asksFalse": false,
       "correct": [
         "A",
         "E"
@@ -243,23 +323,25 @@ window.BB_QUIZ = {
         {
           "letter": "D",
           "text": "au rol în producerea spermatozoizilor",
-          "why": "Greșit. Producerea spermatozoizilor (spermatogeneza) are loc în tubii seminiferi, nu la nivelul celulelor interstițiale."
+          "why": "Baremul exclude varianta, însă celulele Leydig au un rol indirect esențial în producerea spermatozoizilor: asigură testosteronul intratesticular. Ele nu se transformă în gameți; linia germinală se dezvoltă în tubii seminiferi. Formularea largă „au rol” este biologic validă."
         },
         {
           "letter": "E",
           "text": "secretă hormoni lipidici cu structură sterolică",
           "why": "Corect. Testosteronul este un hormon steroidic, derivat din colesterol — deci un lipid cu structură sterolică."
         }
+      ],
+      "sourcePages": [
+        212
       ]
     },
     {
       "id": "rm-006",
       "number": 6,
       "sourceNumber": 6,
-      "topic": "Testosteronul — proprietăți",
-      "lessonSection": "Hormoni masculini — Testosteronul",
-      "lessonPage": "hormoni",
+      "sourceChapter": "XII",
       "prompt": "Testosteronul:",
+      "asksFalse": false,
       "correct": [
         "A",
         "C",
@@ -274,7 +356,7 @@ window.BB_QUIZ = {
         {
           "letter": "B",
           "text": "secreția lui este controlată de adenohipofiză prin intermediul FSH-ului",
-          "why": "Greșit. Secreția testosteronului este controlată de LH (hormonul luteinizant), nu de FSH. LH acționează direct pe celulele Leydig."
+          "why": "Controlul endocrin direct al secreției de testosteron este exercitat de LH asupra celulelor Leydig. FSH are drept țintă principală celulele Sertoli; influențe indirecte asupra steroidogenezei există, dar nu înlocuiesc relația LH–Leydig din manual."
         },
         {
           "letter": "C",
@@ -289,18 +371,20 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "inhibă producerea de FSH",
-          "why": "Greșit. Testosteronul inhibă în principal secreția de LH și GnRH prin feedback negativ. Inhibarea FSH se face indirect prin inhibină (secretată de celulele Sertoli)."
+          "why": "Baremul exclude varianta. Inhibina B este un regulator important al FSH, iar testosteronul participă și el la feedback, în special după aromatizare la estradiol. Prin urmare, nu este corect să se afirme că testosteronul nu poate contribui la inhibarea FSH."
         }
+      ],
+      "sourcePages": [
+        212
       ]
     },
     {
       "id": "rm-007",
       "number": 7,
       "sourceNumber": 7,
-      "topic": "Reglarea testosteronului",
-      "lessonSection": "Hormoni masculini — Reglarea hormonală",
-      "lessonPage": "hormoni",
+      "sourceChapter": "XII",
       "prompt": "Secreția de testosteron este reglată de:",
+      "asksFalse": false,
       "correct": [
         "A",
         "C",
@@ -316,7 +400,7 @@ window.BB_QUIZ = {
         {
           "letter": "B",
           "text": "TSH",
-          "why": "Greșit. TSH (hormonul tireostimulant) reglează funcția tiroidiană, nu secreția de testosteron."
+          "why": "TSH este hormonul care stimulează tiroida. Reglarea endocrină principală a secreției testiculare de testosteron se face prin axa GnRH–LH, nu prin TSH; aceasta nu neagă efectele indirecte ale funcției tiroidiene asupra reproducerii."
         },
         {
           "letter": "C",
@@ -331,60 +415,62 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "hormonul de eliberare a gonadotropinelor printr-un mecanism de feed-back negativ",
-          "why": "Corect. Axa hipotalamo-hipofizo-gonadică funcționează prin feedback negativ: testosteron ↑ → inhibă GnRH și LH → testosteron ↓."
+          "why": "GnRH stimulează eliberarea gonadotropinelor, iar LH stimulează secreția de testosteron. Feedbackul negativ este exercitat de hormonii gonadali asupra hipotalamusului și adenohipofizei; GnRH participă la această buclă, dar nu inhibă direct testiculul."
         }
+      ],
+      "sourcePages": [
+        212
       ]
     },
     {
       "id": "rm-008",
       "number": 8,
       "sourceNumber": 8,
-      "topic": "Spermatogeneza — locul desfășurării",
-      "lessonSection": "Testiculele — Spermatogeneza",
-      "lessonPage": "testiculele",
-      "prompt": "Spermatogeneza nu este asigurată de:",
+      "sourceChapter": "XII",
+      "contentRevision": 1,
+      "prompt": "Spermatogeneza are loc la nivelul:",
+      "asksFalse": false,
       "correct": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "E"
       ],
       "options": [
         {
           "letter": "A",
-          "text": "celulele interstițiale testiculare",
-          "why": "Corect (nu asigură). Celulele interstițiale Leydig produc testosteron dar NU realizează spermatogeneza."
+          "text": "celulelor interstițiale testiculare",
+          "why": "Celulele interstițiale Leydig secretă testosteronul necesar spermatogenezei, însă nu sunt locul în care se formează spermatozoizii. Celulele germinale se dezvoltă în epiteliul tubilor seminiferi."
         },
         {
           "letter": "B",
-          "text": "veziculele seminale",
-          "why": "Corect (nu asigură). Veziculele seminale sunt glande anexe care secretă lichid seminal, nu participă la spermatogeneză."
+          "text": "veziculelor seminale",
+          "why": "Veziculele seminale produc o parte importantă a lichidului seminal, inclusiv fructoză și prostaglandine. Ele nu formează spermatozoizi."
         },
         {
           "letter": "C",
-          "text": "epididim",
-          "why": "Corect (nu asigură). Epididimul este locul de MATURARE și STOCARE a spermatozoizilor, nu locul spermatogenezei."
+          "text": "epididimului",
+          "why": "Epididimul primește spermatozoizii formați în testicul și participă la maturarea lor funcțională și la stocare. Spermatogeneza propriu-zisă are loc în tubii seminiferi."
         },
         {
           "letter": "D",
-          "text": "prostată",
-          "why": "Corect (nu asigură). Prostata este o glandă exocrină anexă care secretă lichid prostatic, fără rol în spermatogeneză."
+          "text": "prostatei",
+          "why": "Prostata produce secreție care intră în compoziția lichidului seminal. Nu este sediul diviziunilor și diferențierii celulelor germinale masculine."
         },
         {
           "letter": "E",
-          "text": "tubii seminiferi",
-          "why": "Greșit (asigură). Tubii seminiferi sunt locul unde SE DESFĂȘOARĂ spermatogeneza — singurul răspuns incorect la această întrebare."
+          "text": "tubilor seminiferi",
+          "why": "Tubii seminiferi sunt sediul spermatogenezei: spermatogoniile dau naștere spermatocitelor, apoi spermatidelor, care se diferențiază în spermatozoizi."
         }
+      ],
+      "sourcePages": [
+        212
       ]
     },
     {
       "id": "rm-009",
       "number": 9,
       "sourceNumber": 9,
-      "topic": "Anatomia testiculului",
-      "lessonSection": "Testiculele — Caractere anatomice",
-      "lessonPage": "testiculele",
+      "sourceChapter": "XII",
       "prompt": "Testiculele prezintă următoarele caractere anatomice:",
+      "asksFalse": false,
       "correct": [
         "B",
         "C",
@@ -394,7 +480,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "au rol în procesele de reproducere masculină",
-          "why": "Greșit. Rolul în reproducere este o caracteristică FUNCȚIONALĂ, nu anatomică. Întrebarea vizează caracterele anatomice (formă, localizare, dimensiuni)."
+          "why": "Afirmația este adevărată, dar descrie funcția testiculelor, nu un caracter anatomic. Cerința privește forma, localizarea și dimensiunile."
         },
         {
           "letter": "B",
@@ -409,23 +495,26 @@ window.BB_QUIZ = {
         {
           "letter": "D",
           "text": "fiecare testicul are aproximativ 5 cm lungime",
-          "why": "Corect. Fiecare testicul are aproximativ 4–5 cm lungime, 2,5 cm lățime și 3 cm grosime."
+          "why": "Manualul descrie testiculul ca având aproximativ 5 cm lungime și 2,5 cm lățime. Lungimea indicată reprezintă un caracter anatomic."
         },
         {
           "letter": "E",
           "text": "sunt situate în cavitatea pelviană",
           "why": "Greșit. Testiculele se află în SCROT, nu în cavitatea pelviană. Coborârea lor din cavitatea abdominală are loc în timpul dezvoltării fetale."
         }
+      ],
+      "sourcePages": [
+        212,
+        213
       ]
     },
     {
       "id": "rm-010",
       "number": 10,
       "sourceNumber": 10,
-      "topic": "Funcțiile organelor reproductive",
-      "lessonSection": "Ducte și organe anexe",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Selectați afirmațiile corecte privind funcțiile organelor sistemului reproducător masculin:",
+      "asksFalse": false,
       "correct": [
         "B",
         "C",
@@ -455,18 +544,20 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "prostata secretă un lichid alcalin ce conține nutrienți",
-          "why": "Greșit. Prostata secretă un lichid ușor alcalin bogat în acid citric și enzime, NU în nutrienți. Nutrienții (fructoza) sunt secretați de veziculele seminale."
+          "why": "Baremul exclude varianta. Manualul atribuie explicit veziculelor seminale lichidul nutritiv bogat în fructoză, iar prostatei o secreție care contribuie la funcția spermatozoizilor. Termenul general „nutrienți” nu justifică însă negarea tuturor substanțelor cu rol metabolic din secreția prostatică; excluderea este o limită a formulării grilei."
         }
+      ],
+      "sourcePages": [
+        213
       ]
     },
     {
       "id": "rm-011",
       "number": 11,
       "sourceNumber": 11,
-      "topic": "Formarea gameților masculini",
-      "lessonSection": "Testiculele — Spermatogeneza",
-      "lessonPage": "testiculele",
+      "sourceChapter": "XII",
       "prompt": "Gameții masculini se formează:",
+      "asksFalse": false,
       "correct": [
         "A",
         "C",
@@ -498,16 +589,18 @@ window.BB_QUIZ = {
           "text": "independent de factorii umorali",
           "why": "Greșit. Spermatogeneza este dependentă de factori umorali: FSH stimulează spermatogeneza prin celulele Sertoli, iar testosteronul (controlat de LH) este esențial."
         }
+      ],
+      "sourcePages": [
+        213
       ]
     },
     {
       "id": "rm-012",
       "number": 12,
       "sourceNumber": 12,
-      "topic": "Meioza I la spermatocit",
-      "lessonSection": "Testiculele — Spermatogeneza",
-      "lessonPage": "testiculele",
+      "sourceChapter": "XII",
       "prompt": "În timpul primei diviziuni meiotice, dintr-un spermatocit primar se formează:",
+      "asksFalse": false,
       "correct": [
         "B"
       ],
@@ -537,16 +630,18 @@ window.BB_QUIZ = {
           "text": "două spermatogonii",
           "why": "Greșit. Spermatogoniile sunt celule stem care se află la baza tubilor seminiferi; ele se divid MITOTIC, nu sunt produse de meioza I."
         }
+      ],
+      "sourcePages": [
+        213
       ]
     },
     {
       "id": "rm-013",
       "number": 13,
       "sourceNumber": 13,
-      "topic": "Testiculele — caractere generale",
-      "lessonSection": "Testiculele — Structură și funcție",
-      "lessonPage": "testiculele",
+      "sourceChapter": "XII",
       "prompt": "Selectați afirmațiile corecte referitoare la testicule:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B",
@@ -579,16 +674,18 @@ window.BB_QUIZ = {
           "text": "au polul anterior și inferior acoperit de epididim",
           "why": "Greșit. Epididimul acoperă marginea POSTERIOARĂ a testiculului (nu polul anterior și inferior). Se întinde de la polul superior la polul inferior de-a lungul marginii posterioare."
         }
+      ],
+      "sourcePages": [
+        213
       ]
     },
     {
       "id": "rm-014",
       "number": 14,
       "sourceNumber": 14,
-      "topic": "Structura spermatozoidului",
-      "lessonSection": "Testiculele — Spermatozoizii",
-      "lessonPage": "testiculele",
+      "sourceChapter": "XII",
       "prompt": "Spermatozoizii prezintă:",
+      "asksFalse": false,
       "correct": [
         "A",
         "D"
@@ -597,11 +694,11 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "acrozom - care conține enzime cu rol în fertilizare",
-          "why": "Corect. Acrozomul (capișon al capului spermatozoidului) conține enzime hidrolitice (hialuronidaza, acrozina) necesare penetrării membranei ovocitului."
+          "why": "Acrozomul conține enzime care contribuie la traversarea învelișurilor ovocitului în cursul fecundației. El nu conține nucleul; membrana ovocitului participă ulterior la fuziunea gameților, nu este pur și simplu digerată de enzime."
         },
         {
           "letter": "B",
-          "text": "piesa intermediară - lipsită de mitocondrii",
+          "text": "piesă intermediară - lipsită de mitocondrii",
           "why": "Greșit. Piesa intermediară CONȚINE mitocondrii dispuse helicoidal, care produc ATP-ul necesar mișcării cozii."
         },
         {
@@ -619,16 +716,18 @@ window.BB_QUIZ = {
           "text": "gât - care prezintă microtubuli, filamente groase și mitocondrii",
           "why": "Greșit. Mitocondriile se găsesc în PIESA INTERMEDIARĂ, nu în gât. Gâtul (piesă de legătură) este un segment scurt care conectează capul de piesa intermediară."
         }
+      ],
+      "sourcePages": [
+        213
       ]
     },
     {
       "id": "rm-015",
       "number": 15,
       "sourceNumber": 15,
-      "topic": "Celulele testiculare",
-      "lessonSection": "Testiculele — Tipuri celulare",
-      "lessonPage": "testiculele",
+      "sourceChapter": "XII",
       "prompt": "La nivelul testiculului întâlnim următoarele tipuri de celule:",
+      "asksFalse": false,
       "correct": [
         "A",
         "C",
@@ -653,23 +752,25 @@ window.BB_QUIZ = {
         {
           "letter": "D",
           "text": "celule primordiale - formează prin diviziuni meiotice succesive spermatogonii",
-          "why": "Greșit. Spermatogoniile se formează din celulele stem germinale prin MITOZE, nu prin meiozăe. Meioza transformă spermatocitele, nu spermatogoniile."
+          "why": "Celulele germinale primordiale dau naștere spermatogoniilor prin proliferare mitotică. Meioza intervine ulterior, la spermatocite, și produce celule haploide; nu formează spermatogonii."
         },
         {
           "letter": "E",
           "text": "celule sustentaculare - formează o barieră între vasele sanguine și tubii seminiferi",
-          "why": "Corect. Celulele sustentaculare (Sertoli) formează bariera hemato-testiculară prin joncțiuni strânse, izolând tubii seminiferi de circulația sanguină."
+          "why": "Joncțiunile strânse dintre celulele Sertoli formează bariera hematotesticulară. Ele delimitează compartimentul adluminal al epiteliului seminifer și protejează celulele germinale în dezvoltare; nu separă toate celulele tubului de orice contact cu sângele."
         }
+      ],
+      "sourcePages": [
+        213
       ]
     },
     {
       "id": "rm-016",
       "number": 16,
       "sourceNumber": 16,
-      "topic": "Uretra masculină",
-      "lessonSection": "Ducte — Uretra masculină",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Selectați afirmațiile corecte referitoare la uretra masculină:",
+      "asksFalse": false,
       "correct": [
         "B",
         "D"
@@ -678,12 +779,12 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "are trei regiuni succesive: prostatică, peniană, membranoasă",
-          "why": "Greșit. Ordinea corectă a celor trei segmente ale uretrei masculine este: prostatică → membranoasă → peniană (spongiasă)."
+          "why": "Ordinea segmentelor descrise în manual, de la vezică spre exterior, este: uretră prostatică, membranoasă și peniană (spongioasă). Varianta inversează ultimele două segmente."
         },
         {
           "letter": "B",
           "text": "străbate corpul spongios al penisului/penisul până la vârf",
-          "why": "Corect. Uretra peniană (spongiasă) parcurge corpul spongios al penisului de la bază până la orificiul uretral extern (meatul urinar)."
+          "why": "Porțiunea peniană a uretrei străbate corpul spongios până la orificiul uretral extern. Restul uretrei masculine traversează prostata și regiunea perineală."
         },
         {
           "letter": "C",
@@ -700,16 +801,18 @@ window.BB_QUIZ = {
           "text": "are o lungime de aproximativ 5 cm",
           "why": "Greșit. Uretra masculină are aproximativ 20 cm lungime. Lungimea de ~4–5 cm este caracteristică uretrei FEMININE."
         }
+      ],
+      "sourcePages": [
+        213
       ]
     },
     {
       "id": "rm-017",
       "number": 17,
       "sourceNumber": 17,
-      "topic": "Rolul ductelor și glandelor anexe",
-      "lessonSection": "Ducte și organe anexe",
-      "lessonPage": "ducte",
-      "prompt": "Care dintre afirmațiile privind rolul ductelor și al glandelor anexe ale sistemului reproducător masculin sunt corecte?",
+      "sourceChapter": "XII",
+      "prompt": "Care dintre afirmațiile următoare privind rolul ductelor și al glandelor anexe ale sistemului reproducător masculin sunt corecte?",
+      "asksFalse": false,
       "correct": [
         "A",
         "C"
@@ -718,7 +821,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "epididimul - sediul dobândirii mobilității spermatozoizilor",
-          "why": "Corect. Spermatozoizii câștigă mobilitatea în epididim, unde maturează timp de ~2-3 săptămâni."
+          "why": "În epididim spermatozoizii dobândesc capacitatea de mișcare progresivă prin maturare funcțională. Aceasta nu înseamnă că înoată permanent în lichidul epididimar acid, care contribuie la menținerea lor în repaus."
         },
         {
           "letter": "B",
@@ -727,7 +830,7 @@ window.BB_QUIZ = {
         },
         {
           "letter": "C",
-          "text": "prostata - produce aproximativ 30% din volumul lichidului seminal",
+          "text": "prostata - produce aproximativ 30 % din volumul lichidului seminal",
           "why": "Corect. Prostata produce aproximativ 20–30% din volumul lichidului seminal, bogat în acid citric, zinc și enzime proteolitice."
         },
         {
@@ -738,18 +841,20 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "vezicula seminală - secretă un lichid alcalin, similar epididimului",
-          "why": "Greșit. Vezicula seminală secretă lichid alcalin, dar nu similar epididimului. Epididimul nu secretă lichid seminal în același sens — el are rol de maturare și stocare, nu de secreție volumetrică."
+          "why": "Secreția veziculelor seminale este alcalină, pe când lichidul epididimar este acid. Celulele epididimului au și activitate secretorie; diferența care invalidează comparația privește pH-ul."
         }
+      ],
+      "sourcePages": [
+        213
       ]
     },
     {
       "id": "rm-018",
       "number": 18,
       "sourceNumber": 18,
-      "topic": "Sistemul reproducător — afirmații generale",
-      "lessonSection": "Ducte și organe anexe",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Selectați afirmațiile corecte:",
+      "asksFalse": false,
       "correct": [
         "B",
         "C"
@@ -772,24 +877,26 @@ window.BB_QUIZ = {
         },
         {
           "letter": "D",
-          "text": "sperma conține secreția glandelor bulbouretrale, prostatei, veziculelor seminale, ovarelor și spermatozoizi",
+          "text": "sperma conține secrețiile glandelor bulbouretrale, prostatei, veziculelor seminale, ovarelor și spermatozoizi",
           "why": "Greșit. Sperma nu conține secreție ovariană. Componentele spermei sunt: spermatozoizi + secreții ale epididimului, veziculelor seminale, prostatei și glandelor bulbouretrale."
         },
         {
           "letter": "E",
           "text": "lichidul spermatic conține și proteaze care previn fertilizarea",
-          "why": "Greșit. Enzimele proteolitice din spermă (ex. acrozina) FACILITEAZĂ fertilizarea permițând penetrarea membranelor ovocitului. Nu previn fertilizarea."
+          "why": "Proteazele din lichidul seminal participă, între altele, la lichefierea coagulului seminal, facilitând mobilitatea spermatozoizilor. Rolul lor fiziologic general nu este prevenirea fecundației; enzimele acrozomale contribuie separat la interacțiunea cu învelișurile ovocitului."
         }
+      ],
+      "sourcePages": [
+        214
       ]
     },
     {
       "id": "rm-019",
       "number": 19,
       "sourceNumber": 19,
-      "topic": "Hormonul foliculostimulant (FSH)",
-      "lessonSection": "Hormoni masculini — FSH",
-      "lessonPage": "hormoni",
+      "sourceChapter": "XII",
       "prompt": "Hormonul foliculostimulant:",
+      "asksFalse": false,
       "correct": [
         "D"
       ],
@@ -817,18 +924,20 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "produce și menține caracterele sexuale masculine",
-          "why": "Greșit. Caracterele sexuale secundare masculine sunt produse și menținute de TESTOSTERON, nu de FSH."
+          "why": "Caracterele sexuale masculine sunt produse și menținute în principal de androgeni, mai ales testosteronul. FSH susține funcția celulelor Sertoli și spermatogeneza; nu este efectorul androgenic care determină aceste caractere."
         }
+      ],
+      "sourcePages": [
+        214
       ]
     },
     {
       "id": "rm-020",
       "number": 20,
       "sourceNumber": 20,
-      "topic": "Testosteronul — afirmații false",
-      "lessonSection": "Hormoni masculini — Testosteronul",
-      "lessonPage": "hormoni",
+      "sourceChapter": "XII",
       "prompt": "Care dintre afirmațiile referitoare la testosteron sunt false?",
+      "asksFalse": true,
       "correct": [
         "A",
         "B",
@@ -843,12 +952,12 @@ window.BB_QUIZ = {
         {
           "letter": "B",
           "text": "crește masa musculară dar nu influențează comportamentul sexual",
-          "why": "Corect (afirmație falsă). Testosteronul influențează atât masa musculară CÂT ȘI comportamentul sexual (libidoul, comportamentul agresiv etc.)."
+          "why": "Afirmația este falsă și se selectează. Testosteronul favorizează creșterea masei musculare și influențează comportamentul sexual, inclusiv libidoul; negația ultimei părți este greșită."
         },
         {
           "letter": "C",
           "text": "este secretat de celulele interstițiale sub acțiunea FSH-ului",
-          "why": "Corect (afirmație falsă). Testosteronul este secretat de celulele interstițiale sub acțiunea LH (nu FSH). FSH acționează pe celulele Sertoli."
+          "why": "Varianta este selectată ca falsă: stimularea endocrină directă a celulelor Leydig este produsă de LH. FSH acționează predominant asupra celulelor Sertoli; existența unor efecte paracrine indirecte asupra Leydig nu schimbă această relație principală."
         },
         {
           "letter": "D",
@@ -860,16 +969,18 @@ window.BB_QUIZ = {
           "text": "este un hormon androgen produs de testicule",
           "why": "Greșit (afirmație adevărată). Testosteronul ESTE un hormon androgen produs de testicule (celulele Leydig). Nu este o afirmație falsă."
         }
+      ],
+      "sourcePages": [
+        214
       ]
     },
     {
       "id": "rm-021",
       "number": 21,
       "sourceNumber": 21,
-      "topic": "Scrotul și prostata",
-      "lessonSection": "Ducte și organe anexe",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Selectați afirmațiile corecte:",
+      "asksFalse": false,
       "correct": [
         "B",
         "D",
@@ -899,18 +1010,20 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "prostata se găsește in hipogastru",
-          "why": "Corect. Hipogastrul (hipogastrium) desemnează etajul inferior al abdomenului/pelvisului, unde se găsește prostata."
+          "why": "Varianta este inclusă în barem. Prostata se află în pelvisul mic, sub vezica urinară; raportarea la hipogastru privește regiunea inferioară mediană de proiecție abdominopelvină. Hipogastrul nu este sinonim cu întreaga cavitate pelviană."
         }
+      ],
+      "sourcePages": [
+        214
       ]
     },
     {
       "id": "rm-022",
       "number": 22,
       "sourceNumber": 22,
-      "topic": "Anatomia organelor reproductive — afirmații false",
-      "lessonSection": "Ducte și organe anexe",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Care dintre următoarele afirmații sunt false?",
+      "asksFalse": true,
       "correct": [
         "E"
       ],
@@ -938,18 +1051,20 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "prostata nu este străbătută de uretră",
-          "why": "Corect (afirmație falsă). Prostata ESTE străbătută de uretra prostatică. Aceasta traversează prostata pe toată lungimea ei, de la colet vezical la baza prostatei."
+          "why": "Afirmația este falsă și se selectează. Uretra prostatică străbate glanda de la baza ei, aflată sub colul vezical, spre apex, unde continuă cu uretra membranoasă."
         }
+      ],
+      "sourcePages": [
+        214
       ]
     },
     {
       "id": "rm-023",
       "number": 23,
       "sourceNumber": 23,
-      "topic": "Sistemul reproducător — afirmații adevărate",
-      "lessonSection": "Ducte și organe anexe",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Despre sistemul reproducător masculin sunt adevărate următoarele afirmații:",
+      "asksFalse": false,
       "correct": [
         "A",
         "D"
@@ -957,7 +1072,7 @@ window.BB_QUIZ = {
       "options": [
         {
           "letter": "A",
-          "text": "secreția prostatică îmbunătățește mobilitatea gameților masculini",
+          "text": "secreția prostatică e îmbunătățește mobilitatea gameților masculini",
           "why": "Corect. Lichidul prostatic conține acid citric, zinc și enzime (PSA — antigen specific prostatic) care contribuie la lichefierea spermei și îmbunătățesc mobilitatea spermatozoizilor."
         },
         {
@@ -967,29 +1082,31 @@ window.BB_QUIZ = {
         },
         {
           "letter": "C",
-          "text": "ductul deferent este locul unde spermatozoizii devin mobili",
+          "text": "ductul deferent este locul unde spermatozoizii devin mobile",
           "why": "Greșit. Spermatozoizii dobândesc mobilitatea în EPIDIDIM, nu în ductul deferent. Ductul deferent este doar cale de transport."
         },
         {
           "letter": "D",
           "text": "atât prostata cât și glandele bulbouretrale secretă un lichid alcalin",
-          "why": "Corect. Atât prostata (lichid ușor alcalin, pH ~7.3) cât și glandele bulbouretrale (mucus alcalin) secretă lichide alcaline, contribuind la neutralizarea acidității vaginale."
+          "why": "Baremul include varianta, în acord cu descrierea din manual a secreției prostatice ușor alcaline și a mucusului bulbouretral alcalin. pH-ul secreției prostatice recoltate poate varia; acesta nu trebuie confundat cu pH-ul final al întregului ejaculat."
         },
         {
           "letter": "E",
           "text": "epididimul transportă spermatozoizii spre ductul ejaculator",
-          "why": "Greșit. Epididimul transportă spermatozoizii spre DUCTUL DEFERENT, nu spre ductul ejaculator. Ductul deferent este cel care ajunge la ductul ejaculator."
+          "why": "Baremul exclude varianta. Segmentul imediat următor epididimului este ductul deferent, care ajunge la ductul ejaculator. Totuși, „spre ductul ejaculator” poate descrie corect destinația ulterioară a transportului; enunțul nu spune „direct”, deci formularea rămâne ambiguă."
         }
+      ],
+      "sourcePages": [
+        214
       ]
     },
     {
       "id": "rm-024",
       "number": 24,
       "sourceNumber": 24,
-      "topic": "Structura testiculului",
-      "lessonSection": "Testiculele — Structură",
-      "lessonPage": "testiculele",
+      "sourceChapter": "XII",
       "prompt": "Selectați afirmațiile corecte despre structura testiculului:",
+      "asksFalse": false,
       "correct": [
         "A",
         "D"
@@ -1008,28 +1125,30 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "testiculul produce atât gameți cât și hormoni",
-          "why": "Greșit. Aceasta este o descriere FUNCȚIONALĂ, nu structurală. Întrebarea vizează structura (compoziția, organizarea) testiculului."
+          "why": "Afirmația este adevărată: testiculul produce gameți și hormoni. Baremul o exclude deoarece cerința vizează structura, iar varianta descrie funcțiile gonadei."
         },
         {
           "letter": "D",
           "text": "stratul cel mai extern al tubilor seminiferi este alcătuit din spermatogonia",
-          "why": "Corect (structural). La periferia tubilor seminiferi (stratul extern, adiacent membranei bazale) se găsesc spermatogoniile — celulele stem din care pornește spermatogeneza."
+          "why": "Baremul include varianta pentru localizarea periferică a spermatogoniilor în epiteliul germinal. Formularea este simplificată: peretele tubului are și membrană bazală și celule peritubulare, iar epiteliul conține și celule Sertoli; nu întregul strat extern este alcătuit exclusiv din spermatogonii."
         },
         {
           "letter": "E",
           "text": "celulele interstițiale dintre tubii seminiferi secretă testosteron",
-          "why": "Greșit. Afirmația că celulele interstițiale 'secretă testosteron' este o descriere funcțională. Deși localizarea 'dintre tubi' este structurală, accentul pe secreție face afirmația funcțională."
+          "why": "Baremul exclude varianta, deși atât localizarea interstițială a celulelor Leydig, cât și secreția lor de testosteron sunt adevărate. Cerința vizează structura, însă această variantă combină un fapt structural cu unul funcțional; nu trebuie prezentată ca biologic falsă."
         }
+      ],
+      "sourcePages": [
+        214
       ]
     },
     {
       "id": "rm-025",
       "number": 25,
       "sourceNumber": 25,
-      "topic": "Spermatogeneza — etape",
-      "lessonSection": "Testiculele — Spermatogeneza",
-      "lessonPage": "testiculele",
+      "sourceChapter": "XII",
       "prompt": "Selectați afirmațiile corecte despre spermatogeneză:",
+      "asksFalse": false,
       "correct": [
         "D",
         "E"
@@ -1037,13 +1156,13 @@ window.BB_QUIZ = {
       "options": [
         {
           "letter": "A",
-          "text": "spermatidele se divid și formează spermatozoi",
+          "text": "spermatidele se divid și formează spermatozoizi",
           "why": "Greșit. Spermatidele NU se divid. Ele suferă un proces de diferențiere numit SPERMIOGENEZĂ (reorganizarea citoplasmei, formarea flagelului, condensarea nucleului) pentru a deveni spermatozoizi."
         },
         {
           "letter": "B",
           "text": "spermatocitele primare se găsesc la periferia tubilor seminiferi",
-          "why": "Greșit. La periferia tubilor seminiferi (stratul bazal) se găsesc SPERMATOGONIILE, nu spermatocitele primare. Spermatocitele primare sunt într-un strat mai intern."
+          "why": "Baremul exclude varianta: manualul rezervă stratul germinal cel mai extern spermatogoniilor și descrie deplasarea spermatocitelor primare spre lumen. „Periferia” nu este însă o limită histologică precisă; spermatocitele primare timpurii pot ocupa încă regiunea bazală înainte de traversarea barierei Sertoli."
         },
         {
           "letter": "C",
@@ -1060,24 +1179,27 @@ window.BB_QUIZ = {
           "text": "spermatozoizii sunt haploizi",
           "why": "Corect. Spermatozoizii conțin 23 de cromozomi (haploizi, n), rezultat al meiozei care reduce numărul cromozomilor la jumătate."
         }
+      ],
+      "sourcePages": [
+        214,
+        215
       ]
     },
     {
       "id": "rm-026",
       "number": 26,
       "sourceNumber": 26,
-      "topic": "Testosteron — afirmații false",
-      "lessonSection": "Hormoni masculini — Testosteronul",
-      "lessonPage": "hormoni",
-      "prompt": "Care dintre afirmațiile despre testosteron sunt false?",
+      "sourceChapter": "XII",
+      "prompt": "Care dintre următoarele afirmații despre testosteron sunt false?",
+      "asksFalse": true,
       "correct": [
         "D"
       ],
       "options": [
         {
           "letter": "A",
-          "text": "este un hormon ce acționează pe celulele țintă după ce a strătbătut membrana celulară a celulei țintă",
-          "why": "Adevărat (nu e falsă). Testosteronul este un hormon steroidic lipofilic care traversează membrana celulară și se leagă de receptori intracelulari."
+          "text": "este un hormon ce acționează pe celulele țintă după ce a străbătut membrana celulară a celulei țintă",
+          "why": "Afirmația descrie mecanismul genomic clasic al testosteronului: hormonul lipofil traversează membrana și se leagă de receptorul androgenic intracelular. Este adevărată în acest sens și nu se selectează la cerința de afirmații false."
         },
         {
           "letter": "B",
@@ -1092,23 +1214,25 @@ window.BB_QUIZ = {
         {
           "letter": "D",
           "text": "acționează doar după pubertate",
-          "why": "Corect (afirmație falsă). Testosteronul acționează ÎNCă din VIAȚA FETALĂ (diferențierea organelor sexuale masculine) și în copilărie (în cantități mici). Nu acționează DOAR după pubertate."
+          "why": "Afirmația este falsă și se selectează. Testosteronul acționează deja în viața fetală, contribuind la diferențierea sexuală masculină și la coborârea testiculelor; acțiunea sa nu începe numai după pubertate."
         },
         {
           "letter": "E",
           "text": "lipsa lui împiedică spermatogeneza",
           "why": "Adevărat (nu e falsă). Testosteronul este esențial pentru spermatogeneză; absența lui oprește producerea spermatozoizilor."
         }
+      ],
+      "sourcePages": [
+        215
       ]
     },
     {
       "id": "rm-027",
       "number": 27,
       "sourceNumber": 27,
-      "topic": "Gonadotropinele",
-      "lessonSection": "Hormoni masculini — Gonadotropine",
-      "lessonPage": "hormoni",
+      "sourceChapter": "XII",
       "prompt": "Despre gonadotropine sunt adevărate următoarele afirmații:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B",
@@ -1124,7 +1248,7 @@ window.BB_QUIZ = {
         {
           "letter": "B",
           "text": "acționează prin intermediul unui mesager de ordinul 2",
-          "why": "Corect. Gonadotropinele acționează prin receptori cuplați la proteina G → activarea adenilat-ciclazei → creșterea AMPc → activarea protein-kinazei A (mesager secund)."
+          "why": "FSH și LH activează receptori membranari cuplați la proteine G. În calea clasică, adenilat-ciclaza produce AMPc, mesagerul secund care activează protein-kinaza A; protein-kinaza A este efectorul, nu mesagerul secund."
         },
         {
           "letter": "C",
@@ -1141,16 +1265,18 @@ window.BB_QUIZ = {
           "text": "FSH stimulează funcția exocrină a testiculului",
           "why": "Corect. FSH stimulează funcția exocrină a testiculului (spermatogeneza) acționând pe celulele Sertoli din tubii seminiferi."
         }
+      ],
+      "sourcePages": [
+        215
       ]
     },
     {
       "id": "rm-028",
       "number": 28,
       "sourceNumber": 28,
-      "topic": "Spermatozoizii — afirmații adevărate",
-      "lessonSection": "Testiculele — Spermatozoizii",
-      "lessonPage": "testiculele",
+      "sourceChapter": "XII",
       "prompt": "Despre spermatozoizi sunt adevărate următoarele afirmații:",
+      "asksFalse": false,
       "correct": [
         "C"
       ],
@@ -1158,12 +1284,12 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "coada conține filamente subțiri, înconjurate de membrana celulară",
-          "why": "Greșit. Coada/flagelul are o structură complexă (axonemă 9+2 microtubuli + fibre externe dense + teacă fibroasă), nu doar 'filamente subțiri înconjurate de membrană'."
+          "why": "Baremul exclude varianta. Manualul numește „filamente groase” fibrele dense ale cozii; flagelul conține și axonema microtubulară. „Filamente subțiri” este o descriere nespecifică și nu trebuie interpretată ca dovadă că în coadă ar lipsi orice structură fină a citoscheletului."
         },
         {
           "letter": "B",
           "text": "la nivelul gâtului se produce ATP-ul necesar mișcărilor cozii spermatozoidului",
-          "why": "Greșit. ATP-ul este produs de mitocondriile din PIESA INTERMEDIARĂ, nu la nivelul gâtului. Gâtul este un segment conector scurt."
+          "why": "Gâtul este piesa scurtă de legătură a spermatozoidului. Mitocondriile producătoare de ATP sunt dispuse în piesa intermediară; glicoliza contribuie și ea la ATP-ul utilizat pentru mișcare."
         },
         {
           "letter": "C",
@@ -1178,18 +1304,20 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "celulele interstițiale se găsesc între tubii seminiferi",
-          "why": "Greșit. Afirmația despre celulele interstițiale este corectă anatomic, dar NU este o afirmație despre spermatozoizi — ci despre celulele Leydig."
+          "why": "Afirmația este adevărată, dar privește celulele Leydig, nu structura sau funcția spermatozoizilor. De aceea nu răspunde cerinței."
         }
+      ],
+      "sourcePages": [
+        215
       ]
     },
     {
       "id": "rm-029",
       "number": 29,
       "sourceNumber": 29,
-      "topic": "Căile reproductive masculine",
-      "lessonSection": "Ducte și organe anexe",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Despre căile sistemului reproducător masculin sunt adevărate următoarele afirmații:",
+      "asksFalse": false,
       "correct": [
         "A"
       ],
@@ -1201,7 +1329,7 @@ window.BB_QUIZ = {
         },
         {
           "letter": "B",
-          "text": "testicul este învelit la exterior de tunica albugineă",
+          "text": "testiculul este învelit la exterior de tunica albuginee",
           "why": "Greșit în context. Deși testiculul este acoperit de tunica albuginee (adevărat), acesta nu este o 'cale a sistemului reproducător' — este organul principal, nu o cale de transport."
         },
         {
@@ -1219,16 +1347,18 @@ window.BB_QUIZ = {
           "text": "glandele bulbouretrale secretă substanțe alcaline ca și prostata și vezicula seminală",
           "why": "Greșit în context. Glandele bulbouretrale sunt glande anexe, nu 'căi' ale sistemului reproducător."
         }
+      ],
+      "sourcePages": [
+        215
       ]
     },
     {
       "id": "rm-030",
       "number": 30,
       "sourceNumber": 30,
-      "topic": "Organele anexe",
-      "lessonSection": "Ducte și organe anexe",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Despre organele anexe ale sistemului reproducător masculin sunt adevărate următoarele afirmații:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B"
@@ -1247,28 +1377,30 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "pH-ul lichidului din epididim este acid",
-          "why": "Greșit. Lichidul din epididim are pH ușor acid în capul epididimului (pentru inhibarea temporară a motilității), dar nu 'acid' în sens general. Mediul spermatic total este alcalin."
+          "why": "Afirmația este biologic adevărată și este confirmată în manual: lichidul epididimar este acid. Baremul o exclude din întrebarea despre organele anexe, epididimul fiind prezentat separat la căile genitale. Nu se justifică negarea acidității sale."
         },
         {
           "letter": "D",
           "text": "testiculul este alcătuit din mai mulți lobuli separați de septuri conjunctive",
-          "why": "Greșit în context. Deși testiculul este organizat în lobuli (adevărat), testiculul NU este un organ ANEXE — este organul principal (gonada)."
+          "why": "Organizarea testiculului în lobuli separați prin țesut conjunctiv este adevărată. Testiculul este însă gonada, nu un organ anex, astfel că varianta nu corespunde categoriei cerute."
         },
         {
           "letter": "E",
-          "text": "epididimul se află în scrot care are pereți multistratidicați",
-          "why": "Greșit. Scrotul nu are 'pereți multistratidicați' în sensul anatomic clasic. Peretele scrotal are mai multe straturi, dar termenul 'multistratidicați' este inexact în context."
+          "text": "epididimul se află în scrot care are pereți multistratificați",
+          "why": "Afirmația este adevărată: epididimul se află în scrot, iar peretele scrotal are mai multe straturi. Baremul o exclude în contextul organelor anexe; nu este corect să se nege nici localizarea, nici caracterul multistratificat al peretelui."
         }
+      ],
+      "sourcePages": [
+        215
       ]
     },
     {
       "id": "rm-031",
       "number": 31,
       "sourceNumber": 31,
-      "topic": "Testiculele — caractere",
-      "lessonSection": "Testiculele — Structură și localizare",
-      "lessonPage": "testiculele",
+      "sourceChapter": "XII",
       "prompt": "Testiculele:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B",
@@ -1288,28 +1420,30 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "sunt separate de rafeul ce divide scrotul în două compartimente",
-          "why": "Corect. Rafeul scrotal este linia mediană externă care marchează septul intern; acesta divide scrotul în două loje, câte una pentru fiecare testicul."
+          "why": "Baremul include varianta. Rafeul este marcajul extern median al separării celor două compartimente; despărțirea lor efectivă în interior este realizată de septul scrotal. Rafeul nu este el însuși peretele dintre testicule."
         },
         {
           "letter": "D",
           "text": "prezintă mușchiul dartos, mușchi de tip striat",
-          "why": "Greșit. Mușchiul dartos este de tip NETED (musculatură netedă involuntară), nu striat. Se contractă reflex la frig, ridate scrotul."
+          "why": "Dartosul aparține peretelui scrotal și este alcătuit din mușchi neted. Prin contracție încrețește pielea scrotului; nu este un mușchi striat al testiculului."
         },
         {
           "letter": "E",
           "text": "secretă testosteron și mici cantități de progesteron",
-          "why": "Greșit. Testiculele secretă testosteron în cantități mari și mici cantități de ESTROGEN (nu progesteron). Progesteronul este specific sistemului feminin."
+          "why": "Baremul exclude varianta, însă testiculul uman produce și poate elibera progesteron, intermediar al steroidogenezei, pe lângă testosteron. Progesteronul nu este exclusiv feminin; absența lui din lista simplificată a hormonilor testiculari din manual nu dovedește lipsa secreției."
         }
+      ],
+      "sourcePages": [
+        215
       ]
     },
     {
       "id": "rm-032",
       "number": 32,
       "sourceNumber": 32,
-      "topic": "Spermatogeneza — etape celulare",
-      "lessonSection": "Testiculele — Spermatogeneza",
-      "lessonPage": "testiculele",
+      "sourceChapter": "XII",
       "prompt": "Alegeți afirmațiile corecte despre spermatogeneză:",
+      "asksFalse": false,
       "correct": [
         "A",
         "C",
@@ -1323,7 +1457,7 @@ window.BB_QUIZ = {
         },
         {
           "letter": "B",
-          "text": "spermatidele formează spermatogonii",
+          "text": "spermatidele formează spermatogoniile",
           "why": "Greșit. Spermatidele formează SPERMATOZOIZI prin diferențiere (spermiogeneză), nu spermatogonii. Direcția este: spermatidă → spermatozoid."
         },
         {
@@ -1341,16 +1475,18 @@ window.BB_QUIZ = {
           "text": "spermatozoizii sunt prezenți în lumenul tubului seminifer",
           "why": "Corect. Spermatozoizii complet formați se găsesc în lumenul tubilor seminiferi înainte de a trece în tubii drepți și mai departe spre epididim."
         }
+      ],
+      "sourcePages": [
+        215
       ]
     },
     {
       "id": "rm-033",
       "number": 33,
       "sourceNumber": 33,
-      "topic": "Structura spermatozoidului — detalii",
-      "lessonSection": "Testiculele — Spermatozoizii",
-      "lessonPage": "testiculele",
+      "sourceChapter": "XII",
       "prompt": "Alegeți afirmațiile corecte despre structura spermatozoizilor:",
+      "asksFalse": false,
       "correct": [
         "C",
         "D"
@@ -1359,7 +1495,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "sunt formați doar din cap și coadă",
-          "why": "Greșit. Spermatozoidul are 4 componente: cap (cu nucleu și acrozom), gât (piesă de legătură), piesă intermediară (cu mitocondrii) și coadă (flagel)."
+          "why": "În împărțirea folosită de manual sunt descrise patru regiuni: cap, gât, piesă intermediară și coadă. Alte convenții grupează segmentele flagelare sub termenul „coadă”; în grilă se păstrează însă nomenclatura explicită a manualului."
         },
         {
           "letter": "B",
@@ -1369,7 +1505,7 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "acrozomul conține enzime cu rol în fertilizare",
-          "why": "Corect. Acrozomul este un capișon al capului spermatozoidului, derivat din aparatul Golgi, care conține enzime hidrolitice (hialuronidaza, acrozina) necesare penetrării zona pellucida."
+          "why": "Acrozomul este derivat din aparatul Golgi și conține enzime care participă la interacțiunea spermatozoidului cu învelișurile ovocitului în timpul fecundației."
         },
         {
           "letter": "D",
@@ -1379,18 +1515,20 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "coada conține multiple filamente subțiri",
-          "why": "Greșit. Coada este alcătuită din axonemă cu aranjament 9+2 (9 dublete periferice + 2 microtubuli centrali), nu simple 'filamente subțiri'. Este o structură complexă specifică flagelilor."
+          "why": "Baremul exclude varianta, întrucât descrierea din manual folosește termenul „filamente groase” pentru fibrele dense ale cozii. Flagelul are și microtubuli și alte componente citoscheletice; adjectivul „subțiri” este nespecific, nu o demonstrație că toate filamentele fine ar lipsi."
         }
+      ],
+      "sourcePages": [
+        216
       ]
     },
     {
       "id": "rm-034",
       "number": 34,
       "sourceNumber": 34,
-      "topic": "Epididimul",
-      "lessonSection": "Ducte — Epididimul",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Epididimul:",
+      "asksFalse": false,
       "correct": [
         "A",
         "C",
@@ -1400,7 +1538,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "reprezintă subdiviziunea sistemului de ducte la nivelul căreia ajung spermatozoizii maturi și imobili din canalele eferente",
-          "why": "Corect. Spermatozoizii ajunși din canalele eferente în capul epididimului sunt IMOBILI și immaturi — maturarea și dobândirea motilității au loc în tranzitul prin epididim."
+          "why": "Baremul include formularea din manual „maturi și imobili”. Aici „maturi” înseamnă formați prin spermiogeneză în testicul, nu complet maturizați funcțional: în epididim continuă modificările necesare dobândirii motilității și capacității de fecundare."
         },
         {
           "letter": "B",
@@ -1410,28 +1548,30 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "reprezintă locul de resorbție a spermatozoizilor deteriorați",
-          "why": "Corect. Spermatozoizii deteriorați sau neviabili sunt fagocitați și resorbiți de epididim — funcție importantă de control al calității."
+          "why": "Varianta este inclusă în barem și reproduce rolul de resorbție atribuit epididimului în manual. Fagocitoza spermatozoizilor a fost observată în modele experimentale și în epididim uman inflamat; aceste date nu stabilesc un mecanism universal de control al calității prin epiteliu la omul sănătos."
         },
         {
           "letter": "D",
           "text": "este locul în care spermatozoizii devin imobili",
-          "why": "Greșit. Spermatozoizii devin MOBILI (nu imobili) în epididim. Imobilitatea inițială se transformă în motilitate progresivă pe parcursul tranzitului epididimar."
+          "why": "Manualul descrie epididimul ca loc al dobândirii capacității de mișcare, astfel că baremul exclude varianta. Totuși, mediul epididimar acid menține spermatozoizii în repaus în timpul stocării; capacitatea de motilitate și mișcarea efectivă sunt lucruri diferite."
         },
         {
           "letter": "E",
           "text": "continuă canalele eferente care provin din rețeaua testiculară",
           "why": "Corect. Epididimul este continuarea directă a canalelor eferente (care provin din rețeaua testiculară/rete testis)."
         }
+      ],
+      "sourcePages": [
+        216
       ]
     },
     {
       "id": "rm-035",
       "number": 35,
       "sourceNumber": 35,
-      "topic": "Ductul deferent",
-      "lessonSection": "Ducte — Ductul deferent",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Ductul deferent:",
+      "asksFalse": false,
       "correct": [
         "A",
         "C",
@@ -1463,19 +1603,21 @@ window.BB_QUIZ = {
           "text": "traversează prostata",
           "why": "Greșit. DUCTELE EJACULATOARE traversează prostata, nu ductul deferent. Ductul deferent se termină la nivelul bazei prostatei."
         }
+      ],
+      "sourcePages": [
+        216
       ]
     },
     {
       "id": "rm-036",
       "number": 36,
       "sourceNumber": 36,
-      "topic": "Uretra masculină — segmente",
-      "lessonSection": "Ducte — Uretra masculină",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Despre uretra masculină sunt corecte afirmațiile:",
+      "asksFalse": false,
       "correct": [
         "A",
-        "C",
+        "D",
         "E"
       ],
       "options": [
@@ -1486,34 +1628,36 @@ window.BB_QUIZ = {
         },
         {
           "letter": "B",
-          "text": "uretra prostatică primește secreția glandelor bulbo-uretrale",
-          "why": "Greșit. Glandele bulbouretrale (Cowper) se deschid în uretra MEMBRANOASĂ/BULBARĂ (nu prostatică), în porțiunea de tranziție spre uretra peniană."
+          "text": "uretra prostatică primește secrețiile glandelor bulbo-uretrale",
+          "why": "Glandele bulbouretrale se deschid în porțiunea proximală a uretrei spongioase, numită peniană în manual. Uretra prostatică primește secreția prostatei și conținutul ductelor ejaculatoare."
         },
         {
           "letter": "C",
           "text": "uretra membranoasă este cea mai lungă",
-          "why": "Corect conform clasificării din manualul de referință. Uretra peniană (spongiasă) reprezintă segmentul cel mai lung al uretrei masculine."
+          "why": "Uretra membranoasă este un segment scurt care traversează regiunea perineală. Porțiunea peniană (spongioasă) este cea mai lungă, deci varianta C nu se selectează."
         },
         {
           "letter": "D",
           "text": "uretra peniană se extinde prin penis la orificiul uretral extern",
-          "why": "Greșit. Uretra peniană se extinde de la membrana perineală până la orificiul uretral extern, dar afirmația inversează logica — uretra nu 'se extinde' de la penis, ci parcurge penisul."
+          "why": "Uretra peniană parcurge penisul și se deschide prin orificiul uretral extern la nivelul glandului. Varianta este adevărată și este inclusă în barem, alături de A și E."
         },
         {
           "letter": "E",
-          "text": "uretra peniană primește secreția glandelor bulbo-uretrale",
-          "why": "Corect. Glandele bulbouretrale se deschid în porțiunea inițială a uretrei spongiase (peniană), adăugând mucus lubrifiant înaintea ejaculării."
+          "text": "uretra peniană primește secrețiile glandelor bulbo-uretrale",
+          "why": "Corect. Glandele bulbouretrale se deschid în porțiunea inițială a uretrei spongioase (peniană), adăugând mucus lubrifiant înaintea ejaculării."
         }
+      ],
+      "sourcePages": [
+        216
       ]
     },
     {
       "id": "rm-037",
       "number": 37,
       "sourceNumber": 37,
-      "topic": "Vezicula seminală",
-      "lessonSection": "Ducte — Veziculele seminale",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Selectați afirmațiile corecte referitoare la vezicula seminală:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B",
@@ -1537,7 +1681,7 @@ window.BB_QUIZ = {
         },
         {
           "letter": "D",
-          "text": "lichidul produs reprezintă aproximativ 60% din volumul total al lichidului seminal",
+          "text": "lichidul produs reprezintă aproximativ 60 % din volumul total al lichidului seminal",
           "why": "Corect. Veziculele seminale produc ~60% din volumul lichidului seminal, reprezentând cel mai mare aport din toate glandele."
         },
         {
@@ -1545,16 +1689,18 @@ window.BB_QUIZ = {
           "text": "este parte componentă a uretrei masculine",
           "why": "Greșit. Vezicula seminală este o glandă anexă a sistemului reproducător, nu o componentă a uretrei masculine."
         }
+      ],
+      "sourcePages": [
+        216
       ]
     },
     {
       "id": "rm-038",
       "number": 38,
       "sourceNumber": 38,
-      "topic": "Prostata",
-      "lessonSection": "Ducte — Prostata",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Prostata:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B",
@@ -1575,7 +1721,7 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "secretă un lichid ușor alcalin",
-          "why": "Corect. Lichidul prostatic are un pH ușor alcalin (~7.3), contribuind la alcalinizarea spermei pentru a contracara aciditatea vaginală."
+          "why": "Varianta este inclusă în barem și reproduce descrierea secreției prostatice din manual ca ușor alcalină. Un studiu pe secreție prostatică umană exprimată a raportat o medie de pH 7,31 la bărbați fără infecție; valoarea nu este o constantă universală a fiecărei probe."
         },
         {
           "letter": "D",
@@ -1585,18 +1731,20 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "are rol principal în spermatogeneză",
-          "why": "Greșit. Prostata NU are niciun rol în spermatogeneză. Spermatogeneza are loc exclusiv în tubii seminiferi ai testiculului."
+          "why": "Spermatogeneza se desfășoară în tubii seminiferi ai testiculelor. Prostata contribuie în principal la compoziția lichidului seminal și la funcția spermatozoizilor după formare; nu are rolul principal în spermatogeneză."
         }
+      ],
+      "sourcePages": [
+        216
       ]
     },
     {
       "id": "rm-039",
       "number": 39,
       "sourceNumber": 39,
-      "topic": "Testosteronul — funcții",
-      "lessonSection": "Hormoni masculini — Testosteronul",
-      "lessonPage": "hormoni",
+      "sourceChapter": "XII",
       "prompt": "Testosteronul:",
+      "asksFalse": false,
       "correct": [
         "A",
         "C",
@@ -1607,12 +1755,12 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "este produs de celulele dintre tubii seminiferi",
-          "why": "Corect. Testosteronul este produs de celulele Leydig (interstițiale), situate DINTRE tubii seminiferi, în țesutul conjunctiv al testiculului."
+          "why": "Testosteronul este produs în principal de celulele Leydig situate între tubii seminiferi, în țesutul interstițial al testiculului."
         },
         {
           "letter": "B",
           "text": "secreția lui se află sub influența FSH-ului",
-          "why": "Greșit. Secreția testosteronului se află sub influența LH (nu FSH). LH stimulează direct celulele Leydig."
+          "why": "Baremul exclude varianta, urmărind controlul direct exercitat de LH asupra celulelor Leydig. Formularea „sub influența” este totuși largă: efecte indirecte ale FSH, mediate de celulele Sertoli, asupra secreției de testosteron au fost demonstrate experimental."
         },
         {
           "letter": "C",
@@ -1629,16 +1777,18 @@ window.BB_QUIZ = {
           "text": "produce și menține caracterele sexuale secundare",
           "why": "Corect. Testosteronul determină la pubertate și menține ulterior: creșterea musculară, pilozitatea corporală, îngroșarea vocii, distribuția masculină a grăsimii corporale etc."
         }
+      ],
+      "sourcePages": [
+        216
       ]
     },
     {
       "id": "rm-040",
       "number": 40,
       "sourceNumber": 40,
-      "topic": "Reglarea axei hipotalamo-hipofizo-gonadale",
-      "lessonSection": "Hormoni masculini — Reglarea hormonală",
-      "lessonPage": "hormoni",
+      "sourceChapter": "XII",
       "prompt": "Alegeți afirmațiile corecte:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B"
@@ -1657,28 +1807,30 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "LH-ul determină coborârea testiculelor în scrot",
-          "why": "Greșit. Coborârea testiculelor în scrot este determinată de TESTOSTERON (și INSL3 — factor insulin-like 3 al celulelor Leydig), nu de LH direct."
+          "why": "Baremul exclude varianta. Efectorii testiculari implicați în coborâre includ androgenii și INSL3, iar LH/hCG stimulează celulele Leydig din amonte. Prin urmare, LH nu este efectorul direct descris aici, dar nu este complet separat de reglarea hormonală a procesului."
         },
         {
           "letter": "D",
           "text": "testosteronul se află sub controlul FSH-ului",
-          "why": "Greșit. Testosteronul se află sub controlul LH (nu FSH). LH → celule Leydig → testosteron."
+          "why": "În schema endocrină principală, secreția de testosteron este controlată de LH, prin celulele Leydig. FSH acționează predominant asupra celulelor Sertoli; această distincție nu exclude influențe paracrine indirecte asupra steroidogenezei."
         },
         {
           "letter": "E",
           "text": "hipotalamusul controlează direct secreția de testosteron",
           "why": "Greșit. Hipotalamusul controlează secreția de testosteron INDIRECT, prin axa: hipotalamus → GnRH → adenohipofiză → LH → testicul → testosteron."
         }
+      ],
+      "sourcePages": [
+        216
       ]
     },
     {
       "id": "rm-041",
       "number": 41,
       "sourceNumber": 41,
-      "topic": "Testiculul — structură",
-      "lessonSection": "Testiculele — Structură",
-      "lessonPage": "testiculele",
+      "sourceChapter": "XII",
       "prompt": "Testiculul:",
+      "asksFalse": false,
       "correct": [
         "D"
       ],
@@ -1686,7 +1838,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "este un organ aplatizat cu lungime de aproximativ 2,5 cm",
-          "why": "Greșit. Testiculul are formă ovalară, nu aplatizată. Lungimea sa este de aproximativ 4–5 cm, nu 2,5 cm — 2,5 cm reprezintă lățimea, nu lungimea."
+          "why": "Testiculul este într-adevăr ovalar și ușor aplatizat. Eroarea este dimensiunea: manualul indică aproximativ 5 cm lungime, în timp ce 2,5 cm reprezintă lățimea."
         },
         {
           "letter": "B",
@@ -1700,7 +1852,7 @@ window.BB_QUIZ = {
         },
         {
           "letter": "D",
-          "text": "conține tubii drepți ce se deschid în rețeaua testiculară",
+          "text": "conține tubi drepți ce se deschid în rețeaua testiculară",
           "why": "Corect. Tubii drepți (tubuli recti) sunt porțiunea terminală a tubilor seminiferi și se deschid în rețeaua testiculară (rete testis), continuând traseul de transport al spermatozoizilor."
         },
         {
@@ -1708,16 +1860,19 @@ window.BB_QUIZ = {
           "text": "de-a lungul marginii anterioare are atașat epididimul",
           "why": "Greșit. Epididimul este atașat de-a lungul marginii POSTERIOARE a testiculului, nu anterioare. Acoperă marginea posterioară de la polul superior la polul inferior."
         }
+      ],
+      "sourcePages": [
+        216,
+        217
       ]
     },
     {
       "id": "rm-042",
       "number": 42,
       "sourceNumber": 42,
-      "topic": "Spermatogeneza — afirmații adevărate",
-      "lessonSection": "Testiculele — Spermatogeneza",
-      "lessonPage": "testiculele",
+      "sourceChapter": "XII",
       "prompt": "Care dintre următoarele afirmații legate de spermatogeneză sunt adevărate?",
+      "asksFalse": false,
       "correct": [
         "B",
         "D"
@@ -1748,16 +1903,18 @@ window.BB_QUIZ = {
           "text": "în faza a II-a a meiozei, la început are loc replicarea ADN-ului întrucât dintr-o celulă cu 23 cromozomi rezultă două spermatide cu 23 cromozomi fiecare",
           "why": "Greșit. În faza a II-a a meiozei NU are loc replicarea ADN-ului. Meioza II este o diviziune ecuațională (similară mitozei) fără fază S de replicare prealabilă. Absența replicării este esențială pentru menținerea numărului haploid."
         }
+      ],
+      "sourcePages": [
+        217
       ]
     },
     {
       "id": "rm-043",
       "number": 43,
       "sourceNumber": 43,
-      "topic": "Spermatozoidul — structură și proprietăți",
-      "lessonSection": "Testiculele — Spermatozoizii",
-      "lessonPage": "testiculele",
+      "sourceChapter": "XII",
       "prompt": "Spermatozoidul:",
+      "asksFalse": false,
       "correct": [
         "B",
         "E"
@@ -1766,7 +1923,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "conține la nivelul acrozomului hormoni cu rol în fertilizare",
-          "why": "Greșit. Acrozomul conține ENZIME hidrolitice (hialuronidaza, acrozina) necesare penetrării zonei pellucida a ovocitului — nu hormoni."
+          "why": "Acrozomul conține enzime implicate în fecundație, nu hormonii la care se referă varianta. Materialul genetic se află în nucleul spermatozoidului."
         },
         {
           "letter": "B",
@@ -1781,23 +1938,25 @@ window.BB_QUIZ = {
         {
           "letter": "D",
           "text": "producerea sa este favorizată de un hormon produs de celulele de susținere",
-          "why": "Greșit. Celulele de susținere (Sertoli) nu produc hormoni care să favorizeze direct producerea spermatozoizilor. FSH (din adenohipofiză) stimulează celulele Sertoli, iar testosteronul (din celulele Leydig) este esențial pentru spermatogeneză."
+          "why": "Baremul exclude varianta; testosteronul necesar spermatogenezei este produs de celulele Leydig, nu de celulele Sertoli. Totuși, acestea din urmă secretă factori endocrini și paracrini: studii pe celule de șobolan au demonstrat secreția de activină și stimularea proliferării spermatogoniilor de activină. Enunțul nu numește hormonul, deci nu justifică negarea tuturor semnalelor secretate de Sertoli."
         },
         {
           "letter": "E",
           "text": "este o celulă haploidă",
           "why": "Corect. Spermatozoidul este o celulă haploidă (n = 23 cromozomi), rezultat final al meiozei și al spermiogenezei."
         }
+      ],
+      "sourcePages": [
+        217
       ]
     },
     {
       "id": "rm-044",
       "number": 44,
       "sourceNumber": 44,
-      "topic": "Epididimul — caractere",
-      "lessonSection": "Ducte — Epididimul",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Epididimul:",
+      "asksFalse": false,
       "correct": [
         "C",
         "E"
@@ -1826,18 +1985,20 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "conține un lichid cu pH acid",
-          "why": "Corect. Lichidul epididimar are pH ușor acid, datorat produșilor de metabolism ai spermatozoizilor. Acest mediu acid inhibă temporar motilitatea spermatozoizilor, conservând energia până la ejaculare."
+          "why": "Lichidul epididimar este acid, fapt care contribuie la menținerea spermatozoizilor stocați în repaus. Acidificarea implică transport activ de protoni prin epiteliu; nu trebuie atribuită exclusiv degradării spermatozoizilor."
         }
+      ],
+      "sourcePages": [
+        217
       ]
     },
     {
       "id": "rm-045",
       "number": 45,
       "sourceNumber": 45,
-      "topic": "Sistemul reproducător masculin — afirmații adevărate",
-      "lessonSection": "Ducte și organe anexe",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Care dintre următoarele afirmații cu privire la sistemul reproducător masculin sunt adevărate?",
+      "asksFalse": false,
       "correct": [
         "B",
         "D",
@@ -1869,16 +2030,18 @@ window.BB_QUIZ = {
           "text": "prostata conține fibre musculare netede",
           "why": "Corect. Stroma prostatei conține fibre musculare netede care contribuie la expulzarea lichidului prostatic în timpul ejaculării."
         }
+      ],
+      "sourcePages": [
+        217
       ]
     },
     {
       "id": "rm-046",
       "number": 46,
       "sourceNumber": 46,
-      "topic": "Sistemul reproducător masculin — afirmații false",
-      "lessonSection": "Ducte și organe anexe",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Care dintre următoarele afirmații cu privire la sistemul reproducător masculin sunt false?",
+      "asksFalse": true,
       "correct": [
         "A",
         "B",
@@ -1889,11 +2052,11 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "în cavitatea abdominală ductul deferent trece pe marginea postero-inferioară a prostatei",
-          "why": "Corect (afirmație falsă). În cavitatea abdominală, ductul deferent înconjoară VEZICA URINARĂ (lateral și posterior), nu prostata. El ajunge la marginea postero-inferioară a vezicii, nu a prostatei."
+          "why": "Afirmația este falsă și se selectează. Manualul descrie ductul deferent trecând lateral de vezică și îndreptându-se spre marginea postero-superioară a prostatei, nu postero-inferioară."
         },
         {
           "letter": "B",
-          "text": "lichidul produs de veziculele seminale reprezintă aproximativ 30% din volumul total al lichidului seminal",
+          "text": "lichidul produs de veziculele seminale reprezintă aproximativ 30 % din volumul total al lichidului seminal",
           "why": "Corect (afirmație falsă). Veziculele seminale produc aproximativ 60% (nu 30%) din volumul total al lichidului seminal. 30% reprezintă contribuția prostatei."
         },
         {
@@ -1908,19 +2071,21 @@ window.BB_QUIZ = {
         },
         {
           "letter": "E",
-          "text": "GnRH-ul hipofizar este implicat într-un mecanism de feedback negativ",
+          "text": "GnRH-ul hipofizar este implicat într-un mecanism de feedback negative",
           "why": "Corect (afirmație falsă). GnRH este un hormon HIPOTALAMIC, nu hipofizar. GnRH stimulează adenohipofiza să secrete FSH și LH. Feedbackul negativ este exercitat de testosteron asupra hipotalamusului și adenohipofizei."
         }
+      ],
+      "sourcePages": [
+        217
       ]
     },
     {
       "id": "rm-047",
       "number": 47,
       "sourceNumber": 47,
-      "topic": "Prostata — caractere",
-      "lessonSection": "Ducte — Prostata",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Prostata:",
+      "asksFalse": false,
       "correct": [
         "B",
         "E"
@@ -1939,7 +2104,7 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "secretă un lichid puternic alcalin",
-          "why": "Greșit. Prostata secretă un lichid UȘOR alcalin (pH ~7,3), nu puternic alcalin. Lichidul bogat în conținut alcalin este produs de veziculele seminale. Lichidul prostatic conține acid citric, zinc și PSA."
+          "why": "Manualul descrie secreția prostatică drept ușor alcalină, nu puternic alcalină. pH-ul probelor de secreție prostatică variază cu starea glandei și condițiile de recoltare; valoarea alcalină nu trebuie extinsă fără precizări la orice probă."
         },
         {
           "letter": "D",
@@ -1951,16 +2116,18 @@ window.BB_QUIZ = {
           "text": "vine în raport posterior cu rectul",
           "why": "Corect. Prostata vine în raport posterior cu rectul, fapt exploatat clinic în examinarea rectală digitală (tușeu rectal) pentru evaluarea prostatei."
         }
+      ],
+      "sourcePages": [
+        217
       ]
     },
     {
       "id": "rm-048",
       "number": 48,
       "sourceNumber": 48,
-      "topic": "Sistemul reproducător masculin — afirmații adevărate",
-      "lessonSection": "Ducte și organe anexe",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Următoarele afirmații cu privire la sistemul reproducător masculin sunt adevărate:",
+      "asksFalse": false,
       "correct": [
         "C",
         "E"
@@ -1969,7 +2136,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "FSH-ul stimulează producția celulelor interstițiale testiculare",
-          "why": "Greșit. FSH acționează pe celulele SERTOLI (sustentaculare), stimulând spermatogeneza. Celulele interstițiale (Leydig) sunt stimulate de LH, nu de FSH."
+          "why": "Baremul exclude varianta. LH este stimulul endocrin direct al celulelor Leydig, iar FSH are ținta principală în celulele Sertoli. Dacă „producția celulelor” înseamnă secreția lor de testosteron, există și influențe paracrine indirecte ale FSH; enunțul este imprecis."
         },
         {
           "letter": "B",
@@ -1979,7 +2146,7 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "testosteronul este un hormon anabolizant proteic",
-          "why": "Corect. Testosteronul are efect anabolic proteic puternic — stimulează sinteza proteinelor musculare și crește masa musculară."
+          "why": "Testosteronul stimulează sinteza proteinelor și creșterea masei musculare. În expresia „anabolizant proteic”, adjectivul desemnează efectul asupra metabolismului proteinelor; chimic, testosteronul este un hormon steroidic, nu o proteină."
         },
         {
           "letter": "D",
@@ -1991,16 +2158,19 @@ window.BB_QUIZ = {
           "text": "veziculele seminale vin în raport cu fața posterioară a vezicii urinare",
           "why": "Corect. Veziculele seminale sunt situate posterior față de vezica urinară, venind în raport cu fața posterioară a acesteia, superior față de prostată."
         }
+      ],
+      "sourcePages": [
+        217,
+        218
       ]
     },
     {
       "id": "rm-049",
       "number": 49,
       "sourceNumber": 49,
-      "topic": "Sistemul reproducător masculin — afirmații false",
-      "lessonSection": "Ducte și organe anexe",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Următoarele afirmații cu privire la sistemul reproducător masculin sunt false:",
+      "asksFalse": true,
       "correct": [
         "A",
         "C",
@@ -2010,7 +2180,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "componenta parasimpatică vagală determină dilatarea arteriolelor din țesutul erectil penian",
-          "why": "Corect (afirmație falsă). Erecția este mediată de componenta parasimpatică SACRALĂ (nervii pelvici, S2–S4), nu vagală. Nervul vag (X) inervează organe toracice și abdominale, nu organele pelvine."
+          "why": "Varianta este selectată ca falsă deoarece vasodilatația erectilă este atribuită parasimpaticului sacral, prin nervii splanhnici pelvini, nu componentei vagale. Aceasta este distincția relevantă pentru grilă."
         },
         {
           "letter": "B",
@@ -2025,23 +2195,25 @@ window.BB_QUIZ = {
         {
           "letter": "D",
           "text": "uretra membranoasă străbate planșeul muscular al cavității pelviene",
-          "why": "Adevărat (nu este falsă). Uretra membranoasă traversează diafragma urogenitală (planșeul muscular al cavității pelviene), reprezentând cel mai scurt și mai îngust segment al uretrei masculine."
+          "why": "Uretra membranoasă traversează regiunea musculară a planșeului pelvin descrisă în manual. Afirmația este adevărată și nu se selectează la cerința de afirmații false."
         },
         {
           "letter": "E",
           "text": "testosteronul acționează asupra celulelor țintă prin fixarea de receptori membranari specifici",
-          "why": "Corect (afirmație falsă). Testosteronul este un hormon STEROIDIC (lipofilic) care traversează membrana celulară și se leagă de RECEPTORI INTRACELULARI, nu membranari. Receptorii membranari sunt caracteristici hormonilor polipeptidici (FSH, LH)."
+          "why": "Baremul selectează varianta ca falsă, conform mecanismului genomic clasic: testosteronul se leagă de receptorul androgenic intracelular. Totuși, au fost demonstrate și mecanisme inițiate la membrană, inclusiv prin ZIP9 în modele celulare umane; formularea absolută nu descrie toate acțiunile androgenilor."
         }
+      ],
+      "sourcePages": [
+        218
       ]
     },
     {
       "id": "rm-050",
       "number": 50,
       "sourceNumber": 50,
-      "topic": "Sistemul reproducător masculin — afirmații adevărate",
-      "lessonSection": "Ducte și organe anexe",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Care dintre următoarele afirmații cu privire la sistemul reproducător masculin sunt adevărate?",
+      "asksFalse": false,
       "correct": [
         "A",
         "B",
@@ -2074,16 +2246,18 @@ window.BB_QUIZ = {
           "text": "vena gonadală stângă este afluent al venei renale stângi",
           "why": "Corect. Vena gonadală stângă (testiculară stângă) se varsă în VENA RENALĂ STÂNGĂ, spre deosebire de vena gonadală dreaptă care se varsă direct în vena cavă inferioară."
         }
+      ],
+      "sourcePages": [
+        218
       ]
     },
     {
       "id": "rm-051",
       "number": 51,
       "sourceNumber": 51,
-      "topic": "A doua diviziune meiotică",
-      "lessonSection": "Testiculele — Spermatogeneza",
-      "lessonPage": "testiculele",
+      "sourceChapter": "XII",
       "prompt": "A doua diviziune meiotică este asigurată prin:",
+      "asksFalse": false,
       "correct": [
         "A",
         "D"
@@ -2112,18 +2286,20 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "telofaza II și citokineza - care duc la formarea a două celule fiice haploide",
-          "why": "Greșit. Din perspectiva procesului complet, din un spermatocit primar se formează 4 spermatide (nu 2). Telofaza II și citokineza produc 2 celule fiice dintr-un spermatocit secundar, dar afirmația că 'duc la formarea a două celule haploide' simplifică incorect întregul proces meioticul."
+          "why": "Baremul exclude varianta, dar formularea este ambiguă. Fiecare spermatocit secundar produce prin meioza II două spermatide haploide; pornind de la un spermatocit primar și incluzând ambele diviziuni, rezultatul total este de patru. Enunțul nu precizează unitatea de referință."
         }
+      ],
+      "sourcePages": [
+        218
       ]
     },
     {
       "id": "rm-052",
       "number": 52,
       "sourceNumber": 52,
-      "topic": "Anatomia sistemului reproducător — enunțuri corecte",
-      "lessonSection": "Ducte și organe anexe",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Următoarele enunțuri sunt corecte:",
+      "asksFalse": false,
       "correct": [
         "B",
         "D",
@@ -2155,16 +2331,18 @@ window.BB_QUIZ = {
           "text": "epididimul este localizat de-a lungul marginii posterioare a testiculului",
           "why": "Corect. Epididimul este un organ alungit situat de-a lungul marginii posterioare a testiculului, de la polul superior (capul/caput) la polul inferior (coada/cauda)."
         }
+      ],
+      "sourcePages": [
+        218
       ]
     },
     {
       "id": "rm-053",
       "number": 53,
       "sourceNumber": 53,
-      "topic": "Spermatozoidul — afirmații",
-      "lessonSection": "Testiculele — Spermatozoizii",
-      "lessonPage": "testiculele",
+      "sourceChapter": "XII",
       "prompt": "Despre spermatozoid se pot afirma următoarele:",
+      "asksFalse": false,
       "correct": [
         "B",
         "D",
@@ -2173,13 +2351,13 @@ window.BB_QUIZ = {
       "options": [
         {
           "letter": "A",
-          "text": "capul conține nucleu cu 46 de cromozomi",
-          "why": "Greșit. Nucleul spermatozoidului conține 23 de cromozomi (celulă HAPLOIDĂ, n). Cele 46 de cromozomi (diploid, 2n) se reconstituie la fertilizare, prin unirea spermatozoidului cu ovocitul."
+          "text": "capul conține nucleul cu 46 de cromozomi",
+          "why": "Nucleul unui spermatozoid normal este haploid, cu 23 de cromozomi. Setul diploid de 46 se reconstituie în zigot prin reunirea materialului genetic al celor doi gameți."
         },
         {
           "letter": "B",
           "text": "la nivelul acrozomului conține enzime cu rol în fertilizare",
-          "why": "Corect. Acrozomul conține enzime hidrolitice (hialuronidaza, acrozina, proteaze) esențiale pentru penetrarea straturilor protectoare ale ovocitului în timpul fertilizării."
+          "why": "Acrozomul conține enzime care participă la fecundație prin interacțiunea cu învelișurile ovocitului. El este o structură a capului spermatozoidului, distinctă de nucleu."
         },
         {
           "letter": "C",
@@ -2194,18 +2372,20 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "este mobil datorită acțiunii cozii ca un flagel",
-          "why": "Corect. Spermatozoidul este mobil datorită mișcărilor ondulatorii ale cozii (flagelului), generate de interacțiunea dineinei cu microtubulii axonemei, alimentată de ATP-ul mitocondrial."
+          "why": "Coada funcționează ca un flagel, iar interacțiunea dineinei cu microtubulii produce mișcări de îndoire. Energia provine din ATP, la care pot contribui atât glicoliza, cât și metabolismul mitocondrial."
         }
+      ],
+      "sourcePages": [
+        218
       ]
     },
     {
       "id": "rm-054",
       "number": 54,
       "sourceNumber": 54,
-      "topic": "Sistemul reproducător masculin — afirmații corecte",
-      "lessonSection": "Ducte și organe anexe",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Selectați afirmațiile corecte:",
+      "asksFalse": false,
       "correct": [
         "C",
         "E"
@@ -2214,12 +2394,12 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "uretra prostatică străbate planșeul muscular al cavității pelviene",
-          "why": "Greșit. Planșeul muscular al cavității pelviene (diafragma urogenitală) este traversat de uretra MEMBRANOASĂ, nu prostatică. Uretra prostatică traversează prostata."
+          "why": "În schema manualului, porțiunea membranoasă traversează regiunea musculară a planșeului pelvin, iar porțiunea prostatică străbate prostata. Varianta atribuie porțiunii prostatice traseul segmentului următor."
         },
         {
           "letter": "B",
-          "text": "uretra peniană primește secreția veziculelor seminale",
-          "why": "Greșit. Veziculele seminale se deschid în ductele ejaculatoare, care se varsă în uretra PROSTATICĂ. Uretra peniană primește secreția glandelor bulbouretrale (Cowper)."
+          "text": "uretra peniană primește secrețiile veziculelor seminale",
+          "why": "Baremul exclude varianta pentru locul de vărsare: secreția veziculelor seminale intră, prin ductele ejaculatoare, în uretra prostatică. Ea trece apoi și prin uretra peniană în timpul ejaculării; „primește” este ambiguu dacă nu se precizează vărsarea directă."
         },
         {
           "letter": "C",
@@ -2229,23 +2409,25 @@ window.BB_QUIZ = {
         {
           "letter": "D",
           "text": "prostata secretă hormoni cunoscuți sub numele de prostaglandine",
-          "why": "Greșit. Prostaglandinele sunt secretate de VEZICULELE SEMINALE, nu de prostată. Prostata secretă acid citric, zinc și PSA (antigen specific prostatic)."
+          "why": "Baremul exclude varianta, iar manualul atribuie explicit veziculelor seminale prostaglandinele din lichidul seminal. Totuși, sinteza prostaglandinelor a fost demonstrată și în epiteliul prostatei umane; nu este justificată afirmația categorică „prostata nu produce prostaglandine”."
         },
         {
           "letter": "E",
           "text": "ductul deferent trece medial de vezicula seminală",
           "why": "Corect. În drumul său spre baza prostatei, ductul deferent trece MEDIAL față de vezicula seminală, convergând cu aceasta pentru a forma ductul ejaculator."
         }
+      ],
+      "sourcePages": [
+        218
       ]
     },
     {
       "id": "rm-055",
       "number": 55,
       "sourceNumber": 55,
-      "topic": "Prima diviziune meiotică",
-      "lessonSection": "Testiculele — Spermatogeneza",
-      "lessonPage": "testiculele",
+      "sourceChapter": "XII",
       "prompt": "Prima diviziune meiotică include următoarele procese:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B",
@@ -2260,7 +2442,7 @@ window.BB_QUIZ = {
         {
           "letter": "B",
           "text": "profaza I - cromatidele cromozomilor omologi formează chiasme",
-          "why": "Corect. În profaza I (stadiul pahiten), cromatidele non-surori ale cromozomilor omologi formează chiasme — puncte de schimb de segmente (crossing-over), sursa recombinării genetice."
+          "why": "În profaza I are loc recombinarea între cromatidele nesurori ale cromozomilor omologi. Chiasmele sunt manifestarea citologică a legăturilor rezultate și devin vizibile în diploten; nu trebuie confundată vizibilitatea lor cu momentul schimbului molecular din pahiten."
         },
         {
           "letter": "C",
@@ -2277,16 +2459,19 @@ window.BB_QUIZ = {
           "text": "profaza I - segmentele de cromatide sunt fixe, păstrându-și locul pe cromatide, împiedicând apariția anomaliilor",
           "why": "Greșit. În profaza I are loc tocmai schimbul de segmente (crossing-over/recombinare genetică) între cromatidele non-surori. Segmentele NU sunt fixe — recombinarea generează variabilitate genetică."
         }
+      ],
+      "sourcePages": [
+        218,
+        219
       ]
     },
     {
       "id": "rm-056",
       "number": 56,
       "sourceNumber": 56,
-      "topic": "Organele anexe — caracterizare",
-      "lessonSection": "Ducte și organe anexe",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Despre organele anexe sistemului reproducător masculin se pot afirma următoarele:",
+      "asksFalse": false,
       "correct": [
         "A",
         "C"
@@ -2295,7 +2480,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "servesc drept organe de transport pentru spermă în timpul copulației",
-          "why": "Corect. Organele anexe (ducte și glande) servesc drept căi de transport pentru spermă în timpul copulației, asigurând propulsarea și ejacularea acesteia."
+          "why": "Unele organe anexe, în special penisul, asigură transportul și depunerea spermei în timpul copulației. Glandele anexe contribuie prin secrețiile lor; formularea nu înseamnă că toate anexele sunt conducte."
         },
         {
           "letter": "B",
@@ -2305,7 +2490,7 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "prin secreția prostatică anihilează aciditatea naturală din vagin",
-          "why": "Corect. Secreția prostatică (ușor alcalină, pH ~7,3), alături de celelalte secreții alcaline ale spermei, neutralizează aciditatea vaginală (pH ~4–5), protejând spermatozoizii."
+          "why": "Baremul include varianta, în acord cu manualul, care atribuie secreției prostatice ușor alcaline un rol în contracararea acidității vaginale. În organism, tamponarea este efectul amestecului seminal, cu un aport important al veziculelor seminale; nu este o neutralizare totală garantată de prostată singură."
         },
         {
           "letter": "D",
@@ -2317,16 +2502,18 @@ window.BB_QUIZ = {
           "text": "asigură formarea lichidului seminal - 30% vezicula seminală, 60% - prostata",
           "why": "Greșit. Proporțiile sunt inversate: VEZICULELE SEMINALE contribuie cu ~60%, iar PROSTATA cu ~30%. Nu invers cum afirmă enunțul."
         }
+      ],
+      "sourcePages": [
+        219
       ]
     },
     {
       "id": "rm-057",
       "number": 57,
       "sourceNumber": 57,
-      "topic": "Epididimul — funcții",
-      "lessonSection": "Ducte — Epididimul",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Epididimul:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B",
@@ -2336,7 +2523,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "este un duct în care spermatozoizii capătă mobilitate",
-          "why": "Corect. Spermatozoizii dobândesc motilitatea progresivă în epididim pe parcursul tranzitului de ~2–3 săptămâni, prin modificările compoziției lichidului epididimar."
+          "why": "În cursul tranzitului epididimar, spermatozoizii dobândesc capacitatea de motilitate progresivă. Mediul acid îi poate menține în repaus în timpul stocării; dobândirea capacității nu este identică cu mișcarea permanentă în duct."
         },
         {
           "letter": "B",
@@ -2346,7 +2533,7 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "asigură resorbția spermatozoizilor deteriorați și a reziduurilor",
-          "why": "Corect. Epididimul are și o funcție de 'control al calității': spermatozoizii deteriorați, anormali sau îmbătrâniți sunt fagocitați și resorbiți de celulele epiteliale epididimale."
+          "why": "Manualul menționează resorbția spermatozoizilor deteriorați și a reziduurilor în epididim, iar baremul include C. Identitatea celulelor implicate și amploarea procesului depind de context; fagocitoza de către epiteliu ori celule imune nu trebuie prezentată ca o regulă universală de eliminare a tuturor spermatozoizilor anormali sau îmbătrâniți la omul sănătos."
         },
         {
           "letter": "D",
@@ -2358,16 +2545,18 @@ window.BB_QUIZ = {
           "text": "este format dintr-un tub scurt, gros de pe marginea posterioară a testiculelor",
           "why": "Greșit. Epididimul este format dintr-un tub LUNG și extrem de contort (dacă ar fi derulat, ar măsura ~5–6 metri), nu scurt și gros. Este adosat marginii posterioare a testiculului."
         }
+      ],
+      "sourcePages": [
+        219
       ]
     },
     {
       "id": "rm-058",
       "number": 58,
       "sourceNumber": 58,
-      "topic": "Sistemul reproducător — afirmații corecte",
-      "lessonSection": "Ducte și organe anexe",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Selectați afirmațiile corecte:",
+      "asksFalse": false,
       "correct": [
         "C",
         "E"
@@ -2381,7 +2570,7 @@ window.BB_QUIZ = {
         {
           "letter": "B",
           "text": "creșterea fertilizării spermatozoidului este asigurată de enzimele prezente la nivelul gâtului",
-          "why": "Greșit. Enzimele care asigură fertilizarea (hialuronidaza, acrozina) se găsesc în ACROZOM (la nivelul capului spermatozoidului), nu la nivelul gâtului. Gâtul nu conține enzime de fertilizare."
+          "why": "Enzimele acrozomale implicate în fecundație se găsesc în capul spermatozoidului. Varianta le plasează greșit la nivelul gâtului, care este piesa de legătură."
         },
         {
           "letter": "C",
@@ -2396,18 +2585,20 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "energia necesară mișcării spermatozoizilor este asigurată de ATP-ul produs de mitocondriile piesei intermediare",
-          "why": "Corect. Mitocondriile din piesa intermediară produc ATP prin fosforilare oxidativă. Acest ATP alimentează motorul molecular al flagelului (dineina axonemei), asigurând mișcarea spermatozoidului."
+          "why": "Mitocondriile piesei intermediare pot produce ATP prin fosforilare oxidativă, astfel că varianta este inclusă în barem. Ele nu reprezintă însă unica sursă: glicoliza are un rol important în alimentarea motilității spermatozoizilor umani."
         }
+      ],
+      "sourcePages": [
+        219
       ]
     },
     {
       "id": "rm-059",
       "number": 59,
       "sourceNumber": 59,
-      "topic": "Hormonii reproducerii masculine",
-      "lessonSection": "Hormoni masculini — Reglarea hormonală",
-      "lessonPage": "hormoni",
+      "sourceChapter": "XII",
       "prompt": "Hormonii implicați în procesul de reproducere masculin sunt:",
+      "asksFalse": false,
       "correct": [
         "A",
         "D",
@@ -2432,23 +2623,25 @@ window.BB_QUIZ = {
         {
           "letter": "D",
           "text": "testosteronul ce contribuie la coborârea testiculelor în scrot",
-          "why": "Corect. Testosteronul fetal mediază coborârea testiculelor din cavitatea abdominală în scrot, prin acțiunea asupra gubernaculumului testicular."
+          "why": "Testosteronul fetal contribuie la diferențierea sexuală masculină și la faza inghinoscrotală a coborârii testiculelor. Procesul implică și alți factori, inclusiv INSL3; contribuția testosteronului nu înseamnă control exclusiv."
         },
         {
           "letter": "E",
           "text": "LH ce stimulează maturarea celulelor interstițiale",
           "why": "Corect. LH (hormonul luteinizant) stimulează maturarea și activarea funcțională a celulelor interstițiale Leydig, determinând producerea și secretarea testosteronului."
         }
+      ],
+      "sourcePages": [
+        219
       ]
     },
     {
       "id": "rm-060",
       "number": 60,
       "sourceNumber": 60,
-      "topic": "Formarea spermei — glande participante",
-      "lessonSection": "Ducte și organe anexe",
-      "lessonPage": "ducte",
-      "prompt": "La formarea spermei participă secreția următoarelor glande:",
+      "sourceChapter": "XII",
+      "prompt": "La formarea spermei participă secrețiile următoarelor glande:",
+      "asksFalse": false,
       "correct": [
         "A",
         "E"
@@ -2467,28 +2660,30 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "glandele bulbo-uretrale - drenate în uretra prostatică",
-          "why": "Greșit. Glandele bulbo-uretrale (Cowper) participă la formarea spermei, dar se drenează în uretra PENIANĂ (spongiasă), nu în uretra prostatică."
+          "why": "Greșit. Glandele bulbo-uretrale (Cowper) participă la formarea spermei, dar se drenează în uretra PENIANĂ (spongioasă), nu în uretra prostatică."
         },
         {
           "letter": "D",
-          "text": "glandele parauretralee",
-          "why": "Greșit. Glandele parauretralee (Skene) sunt structuri ale aparatului reproducător feminin, omoloage glandelor prostatice masculine. Nu participă la formarea spermei."
+          "text": "glandele parauretrale",
+          "why": "În terminologia lecției, glandele parauretrale sunt glandele Skene ale sistemului reproducător feminin. Secreția lor nu intră în formarea ejaculatului masculin."
         },
         {
           "letter": "E",
           "text": "veziculele seminale - care secretă un lichid alcalin ce neutralizează aciditatea dezvoltată în epididim",
           "why": "Corect. Veziculele seminale contribuie cu ~60% din volumul lichidului seminal — lichid alcalin bogat în fructoză și prostaglandine, care neutralizează aciditatea acumulată în epididim."
         }
+      ],
+      "sourcePages": [
+        219
       ]
     },
     {
       "id": "rm-061",
       "number": 61,
       "sourceNumber": 61,
-      "topic": "Structura testiculului",
-      "lessonSection": "Testiculele — Structură",
-      "lessonPage": "testiculele",
+      "sourceChapter": "XII",
       "prompt": "Structura testiculului include:",
+      "asksFalse": false,
       "correct": [
         "A"
       ],
@@ -2496,7 +2691,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "lobuli, formați din tubi seminiferi, separați prin țesut conjunctiv",
-          "why": "Corect. Testiculul este structurat în ~250–300 lobuli, fiecare conținând 1–4 tubi seminiferi contorți, separați între ei de septuri de țesut conjunctiv care se desprind din tunica albuginee."
+          "why": "Testiculul este împărțit în aproximativ 250–300 de lobuli prin septuri conjunctive desprinse din tunica albuginee. Fiecare lobul conține 1–4 tubi seminiferi contorți; septurile delimitează lobulii, nu fiecare tub în parte."
         },
         {
           "letter": "B",
@@ -2506,7 +2701,7 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "celule interstițiale ce asigură spermatogeneza",
-          "why": "Greșit. Spermatogeneza este asigurată de celulele GERMINALE (și Sertoli) din tubii seminiferi. Celulele interstițiale Leydig asigură STEROIDOGENEZA (producerea testosteronului)."
+          "why": "Baremul exclude varianta. Celulele germinale din tubii seminiferi produc spermatozoizii, iar celulele Leydig produc testosteron. Totuși, testosteronul este necesar spermatogenezei, astfel că Leydig o susțin indirect; „asigură” este mai larg decât „realizează direct”."
         },
         {
           "letter": "D",
@@ -2516,18 +2711,21 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "canale eferente cu originea în porțiunea inferioară a testiculului",
-          "why": "Greșit. Canalele eferente au originea în porțiunea SUPERIOARĂ a testiculului (mediastinul testicular, unde se află rețeaua testiculară), nu inferioară."
+          "why": "Canalele eferente pornesc din rețeaua testiculară și ies în regiunea superioară a testiculului către capul epididimului. Varianta le plasează greșit originea în porțiunea inferioară."
         }
+      ],
+      "sourcePages": [
+        219
       ]
     },
     {
       "id": "rm-062",
       "number": 62,
       "sourceNumber": 62,
-      "topic": "Ductul deferent — caractere",
-      "lessonSection": "Ducte — Ductul deferent",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
+      "contentRevision": 1,
       "prompt": "Ductul deferent:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B",
@@ -2547,7 +2745,7 @@ window.BB_QUIZ = {
         },
         {
           "letter": "C",
-          "text": "intersectează traseul ureterului înainte de a intra în vezica urinară",
+          "text": "intersectează traseul ureterului înainte de intrarea acestuia în vezica urinară",
           "why": "Corect. În drumul său spre baza prostatei, ductul deferent încrucișează ureterul (trece anterior față de el), la nivelul feței posterioare a vezicii urinare."
         },
         {
@@ -2558,18 +2756,20 @@ window.BB_QUIZ = {
         {
           "letter": "E",
           "text": "se continuă cu epididimul de pe marginea posterioară a testiculului",
-          "why": "Greșit. Relația este inversă: COADA EPIDIDIMULUI se continuă cu ductul deferent. Ductul deferent este continuarea epididimului — nu invers."
+          "why": "Baremul exclude varianta, urmărind direcția transportului: coada epididimului este continuată de ductul deferent. Cele două structuri sunt totuși în continuitate anatomică, astfel că „se continuă cu” este ambiguu dacă nu se precizează sensul traseului."
         }
+      ],
+      "sourcePages": [
+        219
       ]
     },
     {
       "id": "rm-063",
       "number": 63,
       "sourceNumber": 63,
-      "topic": "Spermatogeneza — caracterizare",
-      "lessonSection": "Testiculele — Spermatogeneza",
-      "lessonPage": "testiculele",
+      "sourceChapter": "XII",
       "prompt": "Spermatogeneza:",
+      "asksFalse": false,
       "correct": [
         "B",
         "C",
@@ -2601,16 +2801,18 @@ window.BB_QUIZ = {
           "text": "duce la formarea de spermatide din spermatozoizi",
           "why": "Greșit. Direcția este inversă: spermatidele se formează din spermatocite secundare (prin meioza II), iar din spermatide → spermatozoizi (prin spermiogeneză). Niciodată din spermatozoizi nu se formează spermatide."
         }
+      ],
+      "sourcePages": [
+        220
       ]
     },
     {
       "id": "rm-064",
       "number": 64,
       "sourceNumber": 64,
-      "topic": "Vezicula seminală — caractere",
-      "lessonSection": "Ducte — Veziculele seminale",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Vezicula seminală:",
+      "asksFalse": false,
       "correct": [
         "B",
         "C"
@@ -2619,7 +2821,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "este un organ impar, format din structuri sacciforme",
-          "why": "Greșit. Veziculele seminale sunt organe PERECHE (există câte una de fiecare parte). Organul impar al sistemului reproducător masculin este prostata."
+          "why": "Veziculele seminale sunt organe pereche, câte una de fiecare parte, alcătuite din structuri sacciforme. Eroarea variantei este calificarea lor drept organ impar."
         },
         {
           "letter": "B",
@@ -2641,16 +2843,18 @@ window.BB_QUIZ = {
           "text": "este localizată inferior de prostată",
           "why": "Greșit. Veziculele seminale sunt localizate SUPERIOR față de prostată (posterior față de vezica urinară), nu inferior."
         }
+      ],
+      "sourcePages": [
+        220
       ]
     },
     {
       "id": "rm-065",
       "number": 65,
       "sourceNumber": 65,
-      "topic": "Testosteronul — efecte",
-      "lessonSection": "Hormoni masculini — Testosteronul",
-      "lessonPage": "hormoni",
+      "sourceChapter": "XII",
       "prompt": "Testosteronul:",
+      "asksFalse": false,
       "correct": [
         "A",
         "B",
@@ -2666,7 +2870,7 @@ window.BB_QUIZ = {
         {
           "letter": "B",
           "text": "la făt - asigură diferențierea țesuturilor specifice sexului masculin",
-          "why": "Corect. Testosteronul fetal (secretat din luna a 3-a de gestație, stimulat inițial de hCG placentar) este esențial pentru diferențierea organelor genitale interne și externe masculine."
+          "why": "Testosteronul fetal contribuie la dezvoltarea structurilor masculine, mai ales a ductelor derivate din canalul mezonefric. Prin transformare în dihidrotestosteron, susține și diferențierea organelor genitale externe masculine."
         },
         {
           "letter": "C",
@@ -2683,16 +2887,18 @@ window.BB_QUIZ = {
           "text": "stimulează sinteza proteică și creșterea masei musculare",
           "why": "Corect. Testosteronul are efect anabolic proteic puternic — stimulează sinteza de proteine musculare și crește masa musculară, ceea ce explică utilizarea sa (sau a analogilor) în dopaj."
         }
+      ],
+      "sourcePages": [
+        220
       ]
     },
     {
       "id": "rm-066",
       "number": 66,
       "sourceNumber": 66,
-      "topic": "Penisul — enunțuri adevărate",
-      "lessonSection": "Ducte și organe anexe",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Despre penis, următoarele enunțuri sunt adevărate:",
+      "asksFalse": false,
       "correct": [
         "A",
         "D",
@@ -2724,16 +2930,18 @@ window.BB_QUIZ = {
           "text": "țesutul erectil conține un labirint de canale vasculare separate de țesut conjunctiv și fibre musculare netede",
           "why": "Corect. Țesutul erectil (corpii cavernoși și spongios) conține sinusoide vasculare — spații vasculare căptușite cu endoteliu, separate de travee de țesut conjunctiv și fibre musculare netede."
         }
+      ],
+      "sourcePages": [
+        220
       ]
     },
     {
       "id": "rm-067",
       "number": 67,
       "sourceNumber": 67,
-      "topic": "Prostata — afirmații corecte",
-      "lessonSection": "Ducte — Prostata",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Selectați afirmațiile corecte referitoare la prostată:",
+      "asksFalse": false,
       "correct": [
         "B"
       ],
@@ -2751,11 +2959,11 @@ window.BB_QUIZ = {
         {
           "letter": "C",
           "text": "este divizată în lobuli, separați de septe conjunctive, aflați sub controlul FSH",
-          "why": "Greșit. Prostata este organizată în zone (nu clasic în lobuli), iar controlul său este asigurat de TESTOSTERON (prin DHT — dihidrotestosteron), nu de FSH. FSH acționează exclusiv pe celulele Sertoli din testicul."
+          "why": "Controlul hormonal principal al prostatei este androgenic, în special prin dihidrotestosteron, nu prin FSH. Prostata are și organizare glandulară lobulară; existența zonelor anatomice nu face, singură, noțiunea de lobuli falsă."
         },
         {
           "letter": "D",
-          "text": "la suprafață este înconjurată de albugineee",
+          "text": "la suprafață este înconjurată de albuginee",
           "why": "Greșit. Tunica albuginee învelește TESTICULELE, nu prostata. Prostata este acoperită de o capsulă fibro-musculară proprie (capsula prostatică)."
         },
         {
@@ -2763,16 +2971,18 @@ window.BB_QUIZ = {
           "text": "este străbătută de ductul deferent și ductul veziculei seminale",
           "why": "Greșit. Prostata este traversată de DUCTELE EJACULATOARE (formate prin unirea ductului deferent cu ductul veziculei seminale) și de uretra prostatică. Ductul deferent și ductul veziculei seminale se unesc ÎNAINTE de a intra în prostată."
         }
+      ],
+      "sourcePages": [
+        220
       ]
     },
     {
       "id": "rm-068",
       "number": 68,
       "sourceNumber": 68,
-      "topic": "Sistemul reproducător — afirmații corecte",
-      "lessonSection": "Ducte și organe anexe",
-      "lessonPage": "ducte",
+      "sourceChapter": "XII",
       "prompt": "Următoarele afirmații sunt corecte:",
+      "asksFalse": false,
       "correct": [
         "C",
         "D"
@@ -2781,7 +2991,7 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "sperma străbate sfincterele intern și extern ale uretrei",
-          "why": "Greșit. În timpul ejaculării, sfincterul uretral INTERN se ÎNCHIDE (prin contracție simpatică) pentru a preveni ejacularea retrogradă în vezică. Sperma nu traversează sfincterul intern — îl ocoltește prin închiderea sa."
+          "why": "Sperma pătrunde în uretra prostatică prin ductele ejaculatoare, sub colul vezical. În timpul ejaculării, sfincterul intern se închide pentru a preveni refluxul în vezică; ejaculatul nu îl traversează în drumul spre exterior."
         },
         {
           "letter": "B",
@@ -2796,54 +3006,74 @@ window.BB_QUIZ = {
         {
           "letter": "D",
           "text": "pH-ul acid al epididimului este datorat produșilor de degradare ai spermei stocate",
-          "why": "Corect. pH-ul acid al lichidului epididimar este rezultatul acumulării produșilor de metabolism și degradare ai spermatozoizilor stocați, coroborat cu activitatea secretorie a epiteliului epididimar."
+          "why": "Baremul include explicația din manual privind produșii de degradare ai spermei stocate. Acidificarea epididimară este însă menținută activ de epiteliu, inclusiv prin pompe de protoni; atribuirea ei numai degradării spermei este incompletă."
         },
         {
           "letter": "E",
           "text": "ejaculatul conține spermatozoizi, lichid seminal și hormoni",
-          "why": "Greșit. Ejaculatul conține spermatozoizi și lichid seminal (secreția glandelor anexe). Hormonii nu sunt considerați componente standard definitorii ale ejaculatului în descrierea biochimică clasică."
+          "why": "Baremul exclude varianta, însă ejaculatul conține hormoni: testosteronul și prolactina au fost măsurate în plasma seminală umană. În plus, manualul menționează prostaglandinele în secreția veziculelor seminale. Nu există o justificare biologică pentru negarea prezenței hormonilor în ejaculat."
         }
+      ],
+      "sourcePages": [
+        220
       ]
     },
     {
-      "id": "rm-069",
-      "number": 69,
-      "sourceNumber": 69,
-      "topic": "Funcțiile gonadei feminine",
-      "lessonSection": "Testiculele — Funcții",
-      "lessonPage": "testiculele",
-      "prompt": "Care dintre afirmațiile privind funcțiile gonadei feminine sunt adevărate?",
+      "id": "rm-140",
+      "number": 140,
+      "sourceNumber": 140,
+      "sourceChapter": "XII",
+      "prompt": "La nivelul testiculului sunt prezente următoarele structuri:",
+      "asksFalse": false,
       "correct": [
-        "A",
-        "B"
+        "C",
+        "D"
       ],
       "options": [
         {
           "letter": "A",
-          "text": "produce oocite",
-          "why": "Corect. Ovarul (gonada feminină) produce oocite prin ovogeneză — funcție exocrină (gametogenică) a gonadei feminine."
+          "text": "celule sustentaculare cu rol în spermatogeneză, sub controlul LH",
+          "why": "Celulele sustentaculare Sertoli sprijină spermatogeneza și răspund direct la FSH și la androgeni. LH acționează în principal asupra celulelor Leydig; contribuția sa la Sertoli este indirectă, prin testosteron."
         },
         {
           "letter": "B",
-          "text": "secretă progesteron",
-          "why": "Corect. Ovarul secretă progesteron (prin corpul galben, post-ovulație) și estrogeni (prin celulele granuloasei foliculare) — funcții endocrine ale gonadei feminine."
+          "text": "ductul deferent care ajunge pe fața posterioară a vezicii urinare",
+          "why": "Ductul deferent pornește din coada epididimului și ajunge posterior de vezică, dar nu este o structură din interiorul testiculului, cerută aici."
         },
         {
           "letter": "C",
-          "text": "secretă GnRH, hormon sterolic sintetizat din colesterol",
-          "why": "Greșit. GnRH (gonadoliberina) este secretat de HIPOTALAMUS, nu de ovar. Ovarul secretă estrogeni și progesteron (hormoni steroidici derivați din colesterol), dar nu GnRH."
+          "text": "celule interstițiale a căror secreție se află sub control prin feed-back negativ",
+          "why": "Celulele Leydig produc testosteron sub stimularea LH; testosteronul contribuie la feedbackul negativ asupra axei hipotalamo-hipofizare."
         },
         {
           "letter": "D",
-          "text": "conține numeroase grupuri de celule ce formează foliculi",
-          "why": "Greșit. Deși ovarul conține foliculi ovarieni (adevărat structural), întrebarea vizează FUNCȚIILE gonadei feminine. Prezența foliculilor este o caracteristică structurală, nu o funcție."
+          "text": "tubi seminiferi în care spermatogoniile inițiază spermatogeneza sub control FSH",
+          "why": "Spermatogeneza începe cu spermatogoniile din epiteliul tubilor seminiferi. FSH o susține prin celulele Sertoli, împreună cu testosteronul; nu este necesară o acțiune directă a FSH pe spermatogonii."
         },
         {
           "letter": "E",
-          "text": "se află sub controlul hormonilor tropi: foliculostimulant, luteinizant și melatonină",
-          "why": "Greșit. Gonada feminină se află sub controlul FSH și LH (hormoni gonadotropi adenohipofizari). Melatonina (secretată de epifiză) nu este un hormon trop gonadal — are rol modulator indirect, nu direct."
+          "text": "mușchiul dartos care prin contracție este responsabil de încrețirea pielii",
+          "why": "Dartos este un mușchi neted din peretele scrotului. El încrețește pielea scrotală, dar nu aparține structurii interne a testiculului."
         }
+      ],
+      "sourcePages": [
+        230
       ]
+    }
+  ],
+  "retiredQuestions": [
+    {
+      "id": "rm-069",
+      "number": 69,
+      "sourceNumber": 69,
+      "sourceChapter": "XII",
+      "correct": [
+        "A",
+        "B"
+      ],
+      "retired": true,
+      "topicId": "gonada-feminina",
+      "replacementUrl": "grile_sistemul_reproducator_feminin.html#grila-69"
     }
   ]
 };

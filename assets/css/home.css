@@ -1526,12 +1526,12 @@ body.bm-home .pilot-demo-sheet {border:6px solid var(--ui-shell);border-radius:v
 body.bm-home .pilot-demo-head {padding:13px 20px;border-color:var(--ui-line);color:var(--ui-muted);}
 body.bm-home .pilot-demo-head strong {font-size:13px;font-weight:600;color:var(--ui-ink);}
 body.bm-home .pilot-demo-image {height:155px;}
-body.bm-home .pilot-demo-image>a {right:12px;bottom:8px;padding:7px 12px;background:var(--ui-soft);border:0;border-radius:999px;color:var(--ui-ink);}
+body.bm-home .pilot-demo-image>a {right:12px;bottom:8px;min-height:44px;display:inline-flex;align-items:center;padding:7px 12px;background:var(--ui-soft);border:0;border-radius:999px;color:var(--ui-ink);}
 body.bm-home .pilot-demo-quiz {padding:18px 20px;background:var(--ui-paper);border-color:var(--ui-line);}
 body.bm-home .pilot-demo-quiz .pilot-demo-label {font-size:10px;letter-spacing:.035em;color:var(--ui-muted);}
 body.bm-home .pilot-demo-quiz legend {margin-bottom:8px;color:var(--ui-ink);font-size:17px;font-weight:600;}
 body.bm-home .pilot-demo-options {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 16px;}
-body.bm-home .pilot-demo-option {min-height:44px;padding:6px 0;font-size:12px;line-height:1.45;}
+body.bm-home .pilot-demo-option {min-height:44px;padding:8px 0;font-size:13px;line-height:1.55;}
 body.bm-home .pilot-demo-bottom {flex-wrap:wrap;margin-top:12px;gap:10px 18px;}
 body.bm-home .pilot-demo-bottom .pilot-button {min-height:44px;padding:10px 22px;font-size:12px;}
 body.bm-home .pilot-demo-bottom>a {display:inline-flex;align-items:center;min-height:44px;}
@@ -1557,7 +1557,7 @@ body.bm-home #lab-bento .lab-item {min-height:60px;padding:10px 0;gap:12px;borde
 body.bm-home #lab-bento .lab-item-title {font-size:14px;font-weight:500;color:var(--ui-ink);}
 body.bm-home #lab-bento .lab-item:hover {background:var(--ui-soft);border-radius:10px;}
 body.bm-home #lab-bento .lab-item-done-mark {display:inline-flex;align-items:center;justify-content:center;background:var(--ui-soft);border-radius:50%;width:28px;height:28px;min-width:28px;}
-body.bm-home #lab-bento .lab-item-progress {font-size:10px;}
+body.bm-home #lab-bento .lab-item-progress {font-size:12px;color:var(--ui-muted);}
 body.bm-home .home-glossary,body.bm-home .pilot-about {max-width:1040px;margin:0 auto;}
 body.bm-home .home-glossary {padding:16px 0;}
 body.bm-home .home-glossary-inner {padding:18px 4px;}

@@ -1,6 +1,6 @@
 # Testare și statistici
 
-The static light-only catalog and `statistici.html` share `analytics-ui.js`, `analytics-charts.js` and `testing-analytics.css`, including under `/bio-barrons-umf/`. Question text, answer keys and numbering are unchanged.
+The static light-only catalog and `statistici.html` share `analytics-ui.js`, `analytics-charts.js` and `testing-analytics.css`, including under `/bio-barrons-umf/`. Question content and answer keys are tracked by the independent UMF 2026 audit in `docs/editorial/umf-2026/README.md`; the runtime preserves stable IDs and historical results.
 
 ## Catalog and next study action
 
@@ -32,7 +32,7 @@ Regression coverage reproduces 85 synced verified answers (57 correct) plus 35 o
 
 ## Historical subdivision and diagnostic API
 
-`data/quiz-topics.json` maps each of 451 stable question IDs to one analytical topic; `quiz-index.js` is generated with `quiz.topics` and `question.topicId`. The generator checks full coverage and existing lesson routes/search headings. See `docs/quiz-topics.md` for the classification audit and cross-lesson/mixed decisions. Protected question datasets are not modified.
+`data/quiz-topics.json` maps each of 611 stable question IDs to one analytical topic; `quiz-index.js` is generated with `quiz.topics` and `question.topicId`. The generator checks full coverage and existing lesson routes/search headings. See `docs/quiz-topics.md` for the classification audit and cross-lesson/mixed decisions. Protected question datasets are not modified.
 
 `getReport({chapterNum,days,topicId})` retains the existing totals/daily/history API and adds `topics`, `errorTypes`, `runs` and `legacyHistory`. The optional topic restricts mistake/history detail, while topic comparisons and chapter totals retain their chapter context. A subdivision becomes eligible for the main descending error-rate ranking after three distinct questions. Smaller samples remain visible; subdivisions with no recorded work are omitted. Error categories with no occurrences are omitted as well. Mixed questions are counted once in their own category.
 
@@ -70,4 +70,4 @@ History shows five numbered traversals per page, ascending per chapter. Details 
 
 A full restart archives its parent and closes/fences the child in the same durable transaction before clearing the separate answer cache. Every child write revalidates the parent’s owner, active ID, completeness, closed state and pending-reset ticket, plus the active child ID. A stale full or practice tab cannot append results to an archived traversal. Practice never changes the full quiz answer cache or its cloud record. Owner switches remove the previous owner’s player content immediately. Existing worker query fallback supports the source parameter, including first offline entry.
 
-`scripts/quiz-corrections-test.mjs` verifies the core 70% initial → 100% after three linked rounds, stable numbering/filtering, incomplete/archived gating, lazy cache recovery, identity and stale-write guards. `scripts/quiz-mistakes-test.mjs` covers the real player, all seven datasets, shrinking selections, resume, source URLs, late hydration, desktop/mobile and offline entry. `scripts/analytics-progress-ui-test.mjs` verifies the paired immutable scores, numbered history, nested rounds, compact tabs and keyboard/touch behavior. Run `npm run generate`, `npm test`, and `git diff --check` before release.
+`scripts/quiz-corrections-test.mjs` verifies the core 70% initial → 100% after three linked rounds, stable numbering/filtering, incomplete/archived gating, lazy cache recovery, identity and stale-write guards. `scripts/quiz-mistakes-test.mjs` covers the real player, all registered datasets, shrinking selections, resume, source URLs, late hydration, desktop/mobile and offline entry. `scripts/analytics-progress-ui-test.mjs` verifies the paired immutable scores, numbered history, nested rounds, compact tabs and keyboard/touch behavior. Run `npm run generate`, `npm test`, and `git diff --check` before release.

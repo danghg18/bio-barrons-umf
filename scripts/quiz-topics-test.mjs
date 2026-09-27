@@ -22,24 +22,25 @@ try {
   };
   let result = await run(registry);
   assert.equal(result.status, 0, result.stderr);
-  assert.match(result.stdout, /Validated quiz topics: 7 quizzes, 451 questions/);
+  assert.match(result.stdout, /Validated quiz topics: 17 quizzes, 1590 questions/);
   const expectedTopics = [
     ['bb.quiz.celula.v1', 'cel-061', 'membrana'],
     ['bb.quiz.celula.v1', 'cel-076', 'transport'],
     ['bb.quiz.celula.v1', 'cel-063', 'recapitulare-mixta'],
     ['bb.quiz.introducere.v1', 'ia-015', 'recapitulare-mixta'],
-    ['bb.quiz.sistem-nervos.v1', 'sn-056', 'cranieni'],
-    ['bb.quiz.sistem-nervos.v1', 'sn-057', 'impuls'],
+    ['bb.quiz.sistem-nervos.v1', 'sn-056', 'sistem-nervos-periferic'],
+    ['bb.quiz.sistem-nervos.v1', 'sn-057', 'fiziologia-nervilor'],
     ['bb.quiz.organe-simt.v1', 'os-024', 'echilibru'],
-    ['bb.quiz.organe-simt.v1', 'os-072', 'recapitulare-mixta'],
-    ['bb.quiz.sistemul-urinar.v1', 'ur-003', 'filtrare'],
-    ['bb.quiz.sistemul-urinar.v1', 'ur-053', 'recapitulare-mixta'],
-    ['bb.quiz.reproducator-masculin.v1', 'rm-069', 'gonada-feminina'],
-    ['bb.quiz.reproducator-feminin.v1', 'rf-025', 'ovogeneza']
+    ['bb.quiz.organe-simt.v1', 'os-072', 'ochiul-si-vederea'],
+    ['bb.quiz.sistemul-urinar.v1', 'ur-003', 'nefron'],
+    ['bb.quiz.sistemul-urinar.v1', 'ur-053', 'nefron'],
+    ['bb.quiz.reproducator-masculin.v1', 'rm-140', 'gonade-masculine'],
+    ['bb.quiz.reproducator-feminin.v1', 'rf-025', 'fiziologie-feminina']
   ];
   for (const [key, id, topic] of expectedTopics) assert.equal(registry[key].questionTopics[id], topic, `Editorial acceptance: ${id}`);
+  assert.equal(registry['bb.quiz.reproducator-masculin.v1'].questionTopics['rm-069'], undefined, 'Retired duplicate is absent from the active map');
   assert.match(registry['bb.quiz.reproducator-masculin.v1'].topics.find(topic => topic.id === 'gonada-feminina').lessonUrl, /^sistemul_reproducator_feminin\.html/);
-  assert.match(registry['bb.quiz.sistem-nervos.v1'].topics.find(topic => topic.id === 'impuls').lessonUrl, /^tesutul_nervos\.html/);
+  assert.match(registry['bb.quiz.sistem-nervos.v1'].topics.find(topic => topic.id === 'fiziologia-nervilor').lessonUrl, /^tesutul_nervos\.html/);
   const storageKey = 'bb.quiz.celula.v1';
   const reject = async (mutate, pattern) => {
     const data = structuredClone(registry); mutate(data);
