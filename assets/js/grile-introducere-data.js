@@ -118,27 +118,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "este format din piele, păr, unghii, glande endocrine",
-          "why": "Tegumentul este alcătuit din piele, păr, unghii și glande sudoripare, nu din glande endocrine."
+          "why": "Tegumentul este alcătuit din piele, păr, unghii și glande sudoripare, nu din glande endocrine. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         },
         {
           "letter": "B",
           "text": "acoperă și protejează corpul",
-          "why": "Tegumentul acoperă și protejează corpul, conform tabelului sistemelor de organe."
+          "why": "Tegumentul acoperă și protejează corpul, conform tabelului sistemelor de organe. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         },
         {
           "letter": "C",
           "text": "prezintă cartilaje, păr, unghii",
-          "why": "Cartilajele aparțin sistemului scheletic, nu tegumentului."
+          "why": "Cartilajele aparțin sistemului scheletic, nu tegumentului. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         },
         {
           "letter": "D",
           "text": "conține receptori",
-          "why": "Tegumentul conține receptori, deci participă la recepția stimulilor."
+          "why": "Tegumentul conține receptori, deci participă la recepția stimulilor. (Sursă: Organele de simț — receptorii tactili.)"
         },
         {
           "letter": "E",
           "text": "prezintă glande sudoripare",
-          "why": "Glandele sudoripare sunt enumerate ca parte a tegumentului."
+          "why": "Glandele sudoripare sunt enumerate ca parte a tegumentului. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         }
       ],
       "sourcePages": [
@@ -161,27 +161,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "țesutul conjunctiv",
-          "why": "Țesutul conjunctiv este unul dintre tipurile principale de țesut."
+          "why": "Țesutul conjunctiv este unul dintre tipurile principale de țesut. (Sursă: Introducere în anatomie și fiziologie — principalele țesuturi și alcătuirea organelor.)"
         },
         {
           "letter": "B",
           "text": "țesutul epitelial",
-          "why": "Țesutul epitelial este unul dintre tipurile principale de țesut."
+          "why": "Țesutul epitelial este unul dintre tipurile principale de țesut. (Sursă: Introducere în anatomie și fiziologie — principalele țesuturi și alcătuirea organelor.)"
         },
         {
           "letter": "C",
           "text": "țesutul nervos",
-          "why": "Țesutul nervos este unul dintre tipurile principale de țesut."
+          "why": "Țesutul nervos este unul dintre tipurile principale de țesut. (Sursă: Introducere în anatomie și fiziologie — principalele țesuturi și alcătuirea organelor.)"
         },
         {
           "letter": "D",
           "text": "țesutul cartilaginos",
-          "why": "Cartilajul nu este listat ca tip principal separat; ține de țesutul conjunctiv."
+          "why": "Lecția enumeră patru tipuri principale: epitelial, conjunctiv, muscular și nervos. Cartilaginosul nu apare ca al cincilea tip principal în această clasificare. (Sursă: Introducere în anatomie și fiziologie — principalele țesuturi și alcătuirea organelor.)"
         },
         {
           "letter": "E",
           "text": "sângele",
-          "why": "Sângele este exemplu de țesut conjunctiv, nu tip principal separat."
+          "why": "Sângele este exemplu de țesut conjunctiv, nu tip principal separat. (Sursă: Introducere în anatomie și fiziologie — principalele țesuturi și alcătuirea organelor.)"
         }
       ],
       "sourcePages": [
@@ -204,27 +204,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "epitelial,",
-          "why": "Mucoasa gastrică este acoperită de epiteliu și conține glande epiteliale care secretă componente ale sucului gastric."
+          "why": "Stomacul este dat explicit ca exemplu de organ alcătuit din țesut epitelial, muscular, nervos și conjunctiv. (Sursă: Introducere în anatomie și fiziologie — principalele țesuturi și alcătuirea organelor.)"
         },
         {
           "letter": "B",
           "text": "muscular striat",
-          "why": "Stomacul are țesut muscular neted, nu muscular striat."
+          "why": "Stomacul are țesut muscular neted, nu muscular striat. (Sursă: Țesutul muscular — tipurile de țesut muscular și tabelul comparativ.)"
         },
         {
           "letter": "C",
           "text": "nervos",
-          "why": "Plexurile nervoase din peretele gastric participă la controlul motilității și secreției."
+          "why": "Țesutul nervos este enumerat explicit între țesuturile stomacului. (Sursă: Introducere în anatomie și fiziologie — principalele țesuturi și alcătuirea organelor.)"
         },
         {
           "letter": "D",
           "text": "conjunctiv",
-          "why": "Țesutul conjunctiv susține epiteliul și vasele; este prezent, de exemplu, în lamina propria și submucoasă."
+          "why": "Țesutul conjunctiv este enumerat explicit între țesuturile stomacului. (Sursă: Introducere în anatomie și fiziologie — principalele țesuturi și alcătuirea organelor.)"
         },
         {
           "letter": "E",
           "text": "epidermal",
-          "why": "Epidermul este exemplu de țesut epitelial al pielii, nu țesut specific stomacului."
+          "why": "Epidermul este exemplu de țesut epitelial al pielii, nu țesut specific stomacului. (Sursă: Introducere în anatomie și fiziologie — principalele țesuturi și alcătuirea organelor.)"
         }
       ],
       "sourcePages": [
@@ -245,27 +245,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "sistemul osos",
-          "why": "Sistemul osos are rol de protecție și suport, nu de integrare a activității întregului organism."
+          "why": "Sistemul osos are rol de protecție și suport, nu de integrare a activității întregului organism. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         },
         {
           "letter": "B",
           "text": "sistemul circulator",
-          "why": "Sistemul circulator transportă celule și substanțe."
+          "why": "Sistemul circulator transportă celule și substanțe. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         },
         {
           "letter": "C",
           "text": "sistemul imunitar",
-          "why": "Sistemul imunitar interacționează cu agenți străini."
+          "why": "Sistemul imunitar interacționează cu agenți străini. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         },
         {
           "letter": "D",
           "text": "sistemul nervos",
-          "why": "Sistemul nervos integrează informațiile și coordonează funcțiile organismului."
+          "why": "Sistemul nervos integrează informațiile și coordonează funcțiile organismului. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         },
         {
           "letter": "E",
           "text": "sistemul digestiv",
-          "why": "Sistemul digestiv realizează digestia și absorbția nutrienților."
+          "why": "Sistemul digestiv realizează digestia și absorbția nutrienților. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         }
       ],
       "sourcePages": [
@@ -287,27 +287,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "sistemul digestiv este alcătuit din mai multe organe cu funcții complementare",
-          "why": "Un sistem de organe reunește organe cu funcții complementare; sistemul digestiv respectă această regulă."
+          "why": "Un sistem de organe reunește organe cu funcții complementare; sistemul digestiv respectă această regulă. (Sursă: Introducere în anatomie și fiziologie — niveluri de organizare structurală.)"
         },
         {
           "letter": "B",
           "text": "un organ este compus din două sau trei tipuri diferite de țesuturi",
-          "why": "Un organ este alcătuit din două sau mai multe tipuri de țesuturi, nu obligatoriu doar două sau trei."
+          "why": "Un organ este alcătuit din două sau mai multe tipuri de țesuturi, nu obligatoriu doar două sau trei. (Sursă: Introducere în anatomie și fiziologie — principalele țesuturi și alcătuirea organelor.)"
         },
         {
           "letter": "C",
           "text": "în cadrul catabolismului se consumă de obicei energie",
-          "why": "Catabolismul descompune materia organică și de obicei produce energie."
+          "why": "Catabolismul descompune materia organică și de obicei produce energie. (Sursă: Introducere în anatomie și fiziologie — funcțiile organismului.)"
         },
         {
           "letter": "D",
           "text": "conductibilitatea este caracteristică doar celulelor nervoase",
-          "why": "Conductibilitatea apare la celule specializate, precum cele nervoase și musculare."
+          "why": "Conductibilitatea apare la celule specializate, precum cele nervoase și musculare. (Sursă: Introducere în anatomie și fiziologie — funcțiile organismului.)"
         },
         {
           "letter": "E",
           "text": "în procesele de creștere a organismului este implicată reproducerea asexuată",
-          "why": "Reproducerea asexuată apare în creștere, reparare și înlocuirea celulelor."
+          "why": "Reproducerea asexuată apare în creștere, reparare și înlocuirea celulelor. (Sursă: Introducere în anatomie și fiziologie — funcțiile organismului.)"
         }
       ],
       "sourcePages": [
@@ -329,27 +329,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "celula procariotă prezintă nucleu și organite",
-          "why": "Procariotele nu au nucleu delimitat de membrană și nici organite membranare; au însă ribozomi. Asocierea tipărită cu nucleul este falsă."
+          "why": "Lecția precizează că procariotele sunt lipsite de nucleu, în timp ce eucariotele au nucleu. Prezența nucleului din enunț face asocierea incorectă. (Sursă: Celula și fiziologia celulară — celulele procariote și eucariote.)"
         },
         {
           "letter": "B",
           "text": "citoplasma celulei eucariote are consistență de gel",
-          "why": "Citoplasma celulei eucariote are consistență de gel."
+          "why": "Citoplasma celulei eucariote are consistență de gel. (Sursă: Celula și fiziologia celulară — structura celulei.)"
         },
         {
           "letter": "C",
           "text": "componentele principale ale celulei sunt membrana celulară și nucleul",
-          "why": "Componentele celulei nu sunt doar membrana și nucleul; lecția menționează și citoplasmă și structuri subcelulare."
+          "why": "Cele două componente de bază numite în lecție sunt membrana plasmatică și citoplasma; nucleul este descris în interiorul acesteia. (Sursă: Celula și fiziologia celulară — structura celulei.)"
         },
         {
           "letter": "D",
           "text": "toate celulele corpului uman conțin nucleu",
-          "why": "Eritrocitele umane mature nu au nucleu, deci afirmația despre toate celulele este falsă."
+          "why": "Eritrocitele umane mature nu au nucleu, deci afirmația despre toate celulele este falsă. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         },
         {
           "letter": "E",
           "text": "celulele eucariote se divid mitotic",
-          "why": "Celulele eucariote se pot divide prin mitoză."
+          "why": "Celulele eucariote se pot divide prin mitoză. (Sursă: Celula și fiziologia celulară — celulele procariote și eucariote.)"
         }
       ],
       "sourcePages": [
@@ -372,27 +372,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "este o celulă procariotă",
-          "why": "Celula musculară a organismului uman este eucariotă, nu procariotă."
+          "why": "Celula musculară a organismului uman este eucariotă, nu procariotă. (Sursă: Celula și fiziologia celulară — celulele procariote și eucariote.)"
         },
         {
           "letter": "B",
           "text": "la nivelul inimii, prezintă mai mulți nuclei poziționați central",
-          "why": "Cardiomiocitele au de obicei un nucleu central, uneori doi. Baremul respinge formularea generală „mai mulți nuclei”, caracteristică mai ales fibrei scheletice, ai cărei nuclei sunt periferici."
+          "why": "Tabelul comparativ descrie celula cardiacă printr-un nucleu central, iar fibra scheletică prin mai mulți nuclei periferici. Enunțul transferă multiplicitatea nucleilor la celula cardiacă. (Sursă: Țesutul muscular — tipurile de țesut muscular și tabelul comparativ.)"
         },
         {
           "letter": "C",
           "text": "se contractă sub acțiunea unui stimul",
-          "why": "Celula musculară se contractă sub acțiunea unui stimul."
+          "why": "Celula musculară se contractă sub acțiunea unui stimul. (Sursă: Țesutul muscular — mușchiul striat scheletic și sarcomerele.)"
         },
         {
           "letter": "D",
           "text": "prezintă metabolism propriu",
-          "why": "Fiind celulă vie, are metabolism propriu."
+          "why": "Lecția celulei descrie procese metabolice în citoplasmă, iar lecția musculară arată mitocondriile care furnizează ATP pentru contracție; celula musculară desfășoară astfel procese metabolice proprii. (Sursă: Celula și fiziologia celulară — citoplasma și organitele; Țesutul muscular — mușchiul striat scheletic și sarcomerele.)"
         },
         {
           "letter": "E",
           "text": "cea striată scheletică, prezintă miofibrile alcătuite din sarcomere",
-          "why": "Fibra musculară striată scheletică are miofibrile alcătuite din sarcomere."
+          "why": "Fibra musculară striată scheletică are miofibrile alcătuite din sarcomere. (Sursă: Țesutul muscular — mușchiul striat scheletic și sarcomerele.)"
         }
       ],
       "sourcePages": [
@@ -416,27 +416,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "aport optim de substanțe organice",
-          "why": "Aportul optim de substanțe organice susține funcționarea normală, nu dezechilibrul."
+          "why": "Aportul optim de substanțe organice susține funcționarea normală, nu dezechilibrul. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "B",
           "text": "boală",
-          "why": "Boala este menționată ca factor care perturbă homeostazia."
+          "why": "Boala este menționată ca factor care perturbă homeostazia. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "C",
           "text": "căldură excesivă",
-          "why": "Căldura excesivă perturbă homeostazia."
+          "why": "Căldura excesivă perturbă homeostazia. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "D",
           "text": "aport scăzut de oxigen",
-          "why": "Lipsa sau aportul scăzut de oxigen perturbă homeostazia."
+          "why": "Lipsa sau aportul scăzut de oxigen perturbă homeostazia. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "E",
           "text": "durere",
-          "why": "Durerea este menționată ca factor care perturbă homeostazia."
+          "why": "Durerea este menționată ca factor care perturbă homeostazia. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         }
       ],
       "sourcePages": [
@@ -459,27 +459,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "în abducție",
-          "why": "În poziție anatomică membrele superioare sunt pe lângă corp, nu îndepărtate în abducție."
+          "why": "În poziție anatomică membrele superioare sunt pe lângă corp, nu îndepărtate în abducție. (Sursă: Introducere în anatomie și fiziologie — poziția anatomică și figura 1.2; Oasele și articulațiile — mișcările articulare.)"
         },
         {
           "letter": "B",
           "text": "în adducție",
-          "why": "Membrele superioare sunt apropiate de corp, deci în adducție."
+          "why": "Membrele superioare sunt apropiate de corp, deci în adducție. (Sursă: Introducere în anatomie și fiziologie — poziția anatomică și figura 1.2; Oasele și articulațiile — mișcările articulare.)"
         },
         {
           "letter": "C",
           "text": "pe lângă corp",
-          "why": "Poziția anatomică presupune membrele superioare pe lângă corp."
+          "why": "Poziția anatomică presupune membrele superioare pe lângă corp. (Sursă: Introducere în anatomie și fiziologie — poziția anatomică și figura 1.2; Oasele și articulațiile — mișcările articulare.)"
         },
         {
           "letter": "D",
           "text": "cu policele spre exterior",
-          "why": "În poziție anatomică policele este orientat spre exterior."
+          "why": "În poziție anatomică policele este orientat spre exterior. (Sursă: Introducere în anatomie și fiziologie — poziția anatomică și figura 1.2; Oasele și articulațiile — mișcările articulare.)"
         },
         {
           "letter": "E",
           "text": "cu palmele în pronație",
-          "why": "Palmele sunt orientate înainte, nu în pronație."
+          "why": "Palmele sunt orientate înainte, nu în pronație. (Sursă: Introducere în anatomie și fiziologie — poziția anatomică și figura 1.2; Oasele și articulațiile — mișcările articulare.)"
         }
       ],
       "sourcePages": [
@@ -502,27 +502,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "sternul",
-          "why": "Sternul este pe fața anterioară a corpului."
+          "why": "Sternul este pe fața anterioară a corpului. (Sursă: Introducere în anatomie și fiziologie — poziția anatomică și figura 1.2; Oasele și articulațiile — clasificarea oaselor și figura 6.1.)"
         },
         {
           "letter": "B",
           "text": "scapula",
-          "why": "Scapula este situată posterior."
+          "why": "Scapula este situată posterior. (Sursă: Introducere în anatomie și fiziologie — poziția anatomică și figura 1.2; Oasele și articulațiile — clasificarea oaselor și figura 6.1.)"
         },
         {
           "letter": "C",
           "text": "coatele",
-          "why": "Coatele se află posterior când corpul este în poziție anatomică."
+          "why": "Coatele se află posterior când corpul este în poziție anatomică. (Sursă: Introducere în anatomie și fiziologie — poziția anatomică și figura 1.2; Oasele și articulațiile — clasificarea oaselor și figura 6.1.)"
         },
         {
           "letter": "D",
           "text": "fața dorsală a mâinii",
-          "why": "Fața dorsală a mâinii este pe partea posterioară."
+          "why": "Fața dorsală a mâinii este pe partea posterioară. (Sursă: Introducere în anatomie și fiziologie — poziția anatomică și figura 1.2; Oasele și articulațiile — clasificarea oaselor și figura 6.1.)"
         },
         {
           "letter": "E",
           "text": "patela (rotula)",
-          "why": "Patela este situată anterior la genunchi."
+          "why": "Patela este situată anterior la genunchi. (Sursă: Introducere în anatomie și fiziologie — poziția anatomică și figura 1.2; Oasele și articulațiile — clasificarea oaselor și figura 6.1.)"
         }
       ],
       "sourcePages": [
@@ -546,27 +546,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "în raport anterior cu sternul",
-          "why": "Sternul este în fața inimii și constituie un raport anterior al acesteia. „În raport anterior cu sternul” nu înseamnă că inima este anterior de stern."
+          "why": "Sursa situează inima posterior de stern. Baremul include varianta dacă expresia „în raport anterior cu sternul” denumește sternul ca raport anterior al inimii; dacă este citită ca poziție a inimii anterior de stern, contrazice sursa. Formularea este ambiguă. (Sursă: Introducere în anatomie și fiziologie — termeni direcționali; Sistemul cardiovascular — poziția inimii.)"
         },
         {
           "letter": "B",
           "text": "în raport inferior cu diafragmul",
-          "why": "Diafragma se află sub inimă și reprezintă un raport inferior al ei. Varianta B este inclusă în baremul tipărit, alături de A, C și D."
+          "why": "Diafragma separă inferior toracele de abdomen. Baremul include varianta în sensul că diafragma reprezintă raportul inferior al inimii; formularea nu trebuie citită ca plasare a inimii sub diafragmă. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4; Sistemul cardiovascular — figura 15.1 — inima și diafragma.)"
         },
         {
           "letter": "C",
           "text": "superior față de diafragm",
-          "why": "Inima este situată superior față de diafragm."
+          "why": "Inima este situată superior față de diafragm. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4; Sistemul cardiovascular — figura 15.1 — inima și diafragma.)"
         },
         {
           "letter": "D",
           "text": "medial față de plămâni",
-          "why": "Inima se află medial față de plămâni, în mediastin."
+          "why": "Inima se află medial față de plămâni, în mediastin. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "E",
           "text": "posterior de coloana vertebrală, într-un plan coronal",
-          "why": "Coloana vertebrală este posterior față de inimă, nu invers."
+          "why": "Coloana vertebrală este posterior față de inimă, nu invers. (Sursă: Sistemul cardiovascular — poziția inimii.)"
         }
       ],
       "sourcePages": [
@@ -589,27 +589,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "situați profund față de coaste",
-          "why": "Plămânii sunt profund față de coaste."
+          "why": "Plămânii sunt profund față de coaste. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4; Sistemul cardiovascular — figura 15.1 — inima și diafragma.)"
         },
         {
           "letter": "B",
           "text": "în raport medial cu inima",
-          "why": "Inima este situată medial față de plămâni și reprezintă un raport medial al lor. Formularea descrie raportul plămânilor cu inima, nu poziția plămânilor medial de inimă; baremul include B."
+          "why": "Inima este situată medial față de plămâni și reprezintă un raport medial al lor. Formularea descrie raportul plămânilor cu inima, nu poziția plămânilor medial de inimă; baremul include B. (Sursă: Introducere în anatomie și fiziologie — termeni direcționali, cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "C",
           "text": "localizați superior față de diafragm",
-          "why": "Plămânii sunt superior față de diafragm."
+          "why": "Plămânii sunt superior față de diafragm. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4; Sistemul cardiovascular — figura 15.1 — inima și diafragma.)"
         },
         {
           "letter": "D",
           "text": "înveliți de foița parietală a pleurei",
-          "why": "Foița viscerală acoperă organul; foița parietală căptușește cavitatea."
+          "why": "Foița viscerală acoperă organul; foița parietală căptușește cavitatea. (Sursă: Introducere în anatomie și fiziologie — membranele seroase.)"
         },
         {
           "letter": "E",
           "text": "plasați în cavitatea pleurală a mediastinului",
-          "why": "Plămânii ocupă compartimentele pleurale laterale; mediastinul este regiunea dintre ele. Strict anatomic, cavitatea pleurală este spațiul potențial dintre foițele pleurei, nu interiorul plămânului."
+          "why": "Sursa precizează că mediastinul conține componentele toracelui cu excepția plămânilor. Aceștia sunt descriși în cele două cavități pleurale, laterale față de cavitatea pericardică. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         }
       ],
       "sourcePages": [
@@ -631,27 +631,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "sistem digestiv - transport de substanțe în organism",
-          "why": "Transportul celulelor și substanțelor este rolul sistemului circulator."
+          "why": "Transportul celulelor și substanțelor este rolul sistemului circulator. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         },
         {
           "letter": "B",
           "text": "sistem respirator - îndepărtarea unor produși de degradare rezultați din metabolism",
-          "why": "Sistemul respirator elimină dioxidul de carbon, produs al metabolismului."
+          "why": "Sistemul respirator elimină dioxidul de carbon, produs al metabolismului. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         },
         {
           "letter": "C",
           "text": "catabolism - consum de energie",
-          "why": "Catabolismul produce de obicei energie, nu o consumă."
+          "why": "Catabolismul produce de obicei energie, nu o consumă. (Sursă: Introducere în anatomie și fiziologie — funcțiile organismului.)"
         },
         {
           "letter": "D",
           "text": "reproducere sexuată - diviziunea unei celule",
-          "why": "Diviziunea unei singure celule aparține reproducerii asexuate."
+          "why": "Diviziunea unei singure celule aparține reproducerii asexuate. (Sursă: Introducere în anatomie și fiziologie — funcțiile organismului.)"
         },
         {
           "letter": "E",
           "text": "conductibilitate - propagarea unei unde de depolarizare de-a lungul unui neuron",
-          "why": "Conductibilitatea presupune propagarea stimulului de-a lungul celulelor excitabile."
+          "why": "Conductibilitatea presupune propagarea stimulului de-a lungul celulelor excitabile. (Sursă: Introducere în anatomie și fiziologie — funcțiile organismului.)"
         }
       ],
       "sourcePages": [
@@ -673,27 +673,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "mișcarea, rezultată din contracția celulelor musculare, poate fi voluntară sau involuntară",
-          "why": "Mișcarea rezultă din contracția celulelor musculare și poate fi voluntară sau involuntară."
+          "why": "Mișcarea rezultă din contracția celulelor musculare și poate fi voluntară sau involuntară. (Sursă: Introducere în anatomie și fiziologie — funcțiile organismului.)"
         },
         {
           "letter": "B",
           "text": "excreția reprezintă procesul de eliminare a moleculelor absorbite digestiv",
-          "why": "Excreția îndepărtează produși de degradare metabolică și alte substanțe eliminate de organism. Definiția ei nu este eliminarea moleculelor absorbite digestiv."
+          "why": "Excreția este definită ca îndepărtarea produșilor de degradare ai organismului; enunțul o confundă cu eliminarea moleculelor absorbite digestiv. (Sursă: Introducere în anatomie și fiziologie — funcțiile organismului.)"
         },
         {
           "letter": "C",
           "text": "reproducerea asexuată asigură dezvoltarea unui nou individ",
-          "why": "În contextul reproducerii umane, un nou individ provine din reproducerea sexuată; diviziunea asexuată a celulelor contribuie la creștere și reparare. Nu este o afirmație generală despre toate organismele, dintre care unele formează indivizi prin reproducere asexuată."
+          "why": "În descrierea reproducerii umane, noul individ se dezvoltă din ovulul fecundat prin reproducere sexuată. Reproducerea asexuată este prezentată ca diviziune celulară pentru creștere și reparație. (Sursă: Introducere în anatomie și fiziologie — funcțiile organismului.)"
         },
         {
           "letter": "D",
           "text": "sistemul urinar cuprinde rinichii, vezica urinară și căile urinare asociate",
-          "why": "Enumerarea organelor urinare este anatomic corectă. Baremul o exclude din această întrebare despre funcții; nu trebuie învățată drept o descriere falsă a sistemului urinar."
+          "why": "Enumerarea este confirmată de tabelul sistemelor de organe, dar varianta este exclusă din barem. Ea descrie alcătuirea sistemului urinar, nu o funcție; această deosebire de subiect nu face enumerarea anatomică falsă. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         },
         {
           "letter": "E",
           "text": "excitabilitatea reprezintă capacitatea organismului de a răspunde la stimuli interni sau externi",
-          "why": "Excitabilitatea este capacitatea de a răspunde la stimuli interni sau externi."
+          "why": "Excitabilitatea este capacitatea de a răspunde la stimuli interni sau externi. (Sursă: Introducere în anatomie și fiziologie — funcțiile organismului.)"
         }
       ],
       "sourcePages": [
@@ -715,27 +715,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "lipsa de oxigen afectează homeostazia mediului intern",
-          "why": "Lipsa de oxigen este menționată ca factor care perturbă homeostazia."
+          "why": "Lipsa de oxigen este menționată ca factor care perturbă homeostazia. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "B",
           "text": "receptorii detectează orice deviere de la valoarea normală a unui parametru al mediului intern al organismului",
-          "why": "Receptorii detectează devierile față de valoarea de referință."
+          "why": "Receptorii detectează devierile față de valoarea de referință. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "C",
           "text": "insulina se eliberează din pancreas în caz de hipoglicemie",
-          "why": "Insulina se eliberează când glicemia crește, pentru a o scădea."
+          "why": "Insulina se eliberează când glicemia crește, pentru a o scădea. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "D",
           "text": "planul parasagital împarte corpul în două părți simetrice, dreaptă și stângă",
-          "why": "Planul parasagital împarte corpul în părți dreaptă și stângă inegale, nu simetrice."
+          "why": "Planul parasagital împarte corpul în părți dreaptă și stângă inegale, nu simetrice. (Sursă: Introducere în anatomie și fiziologie — planurile corpului și figura 1.3.)"
         },
         {
           "letter": "E",
           "text": "în poziție anatomică, policele este orientat medial",
-          "why": "În poziție anatomică policele este orientat spre exterior, nu medial."
+          "why": "În poziție anatomică policele este orientat spre exterior, nu medial. (Sursă: Introducere în anatomie și fiziologie — poziția anatomică și figura 1.2.)"
         }
       ],
       "sourcePages": [
@@ -758,27 +758,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "cel epitelial intră în alcătuirea unui organ abdominal situat în cavitatea peritoneală",
-          "why": "Un organ intraperitoneal, precum stomacul, conține epiteliu. Baremul folosește descrierea didactică a organului ca fiind în cavitatea peritoneală; strict, aceasta este spațiul potențial dintre foițe, iar organul este acoperit de peritoneu visceral."
+          "why": "Stomacul este organ abdominal și conține țesut epitelial. Sursa îl include în subdiviziunea abdominală și explică faptul că peritoneul visceral acoperă organele, iar cavitatea peritoneală este spațiul dintre foițe. Formularea grilei urmează denumirea largă folosită la prezentarea cavităților. (Sursă: Introducere în anatomie și fiziologie — principalele țesuturi și alcătuirea organelor, cavitățile corpului și figura 1.4, membranele seroase.)"
         },
         {
           "letter": "B",
           "text": "cel conjunctiv intră în alcătuirea scheletului",
-          "why": "Scheletul conține țesut conjunctiv, prin țesutul osos și cartilaginos."
+          "why": "Osul este descris drept țesut conjunctiv, iar oasele alcătuiesc scheletul. (Sursă: Introducere în anatomie și fiziologie — principalele țesuturi și alcătuirea organelor; Oasele și articulațiile — alcătuirea țesutului osos.)"
         },
         {
           "letter": "C",
           "text": "cel muscular este de un singur tip",
-          "why": "Există trei tipuri de țesut muscular: striat scheletic, striat cardiac și neted."
+          "why": "Există trei tipuri de țesut muscular: striat scheletic, striat cardiac și neted. (Sursă: Țesutul muscular — tipurile de țesut muscular și tabelul comparativ.)"
         },
         {
           "letter": "D",
           "text": "cel nervos intră în alcătuirea unor organe de simț",
-          "why": "De exemplu, retina conține neuroni care participă la prelucrarea informației vizuale."
+          "why": "De exemplu, retina conține neuroni care participă la prelucrarea informației vizuale. (Sursă: Organele de simț — ochiul și vederea.)"
         },
         {
           "letter": "E",
           "text": "cel endocrin intră și în alcătuirea hipofizei",
-          "why": "Adenohipofiza conține celule endocrine, deci prezența lor nu este falsă. Varianta este exclusă în clasificarea celor patru țesuturi principale: endocrinul glandular este o specializare epitelială, nu un al cincilea tip fundamental."
+          "why": "Clasificarea cerută cuprinde țesuturile epitelial, conjunctiv, muscular și nervos. „Endocrin” nu este enumerat ca al cincilea tip principal de țesut; excluderea din barem privește această clasificare. (Sursă: Introducere în anatomie și fiziologie — principalele țesuturi și alcătuirea organelor.)"
         }
       ],
       "sourcePages": [
@@ -799,27 +799,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "sistemul circulator este format doar din inimă și vase sanguine",
-          "why": "În clasificarea lecției, sistemul circulator include inima, vasele, sângele și structurile limfatice. Cuvântul „doar” face enumerarea incompletă în această convenție."
+          "why": "În clasificarea lecției, sistemul circulator include inima, vasele, sângele și structurile limfatice. Cuvântul „doar” face enumerarea incompletă în această convenție. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         },
         {
           "letter": "B",
           "text": "sistemul imunitar cuprinde limfocite, cu rol în apărarea organismului",
-          "why": "Sistemul imunitar cuprinde limfocite cu rol în apărare."
+          "why": "Sistemul imunitar cuprinde limfocite cu rol în apărare. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         },
         {
           "letter": "C",
           "text": "sistemul urinar se găsește în pelvis",
-          "why": "Rinichii și o mare parte din uretere sunt abdominale; în pelvis se află vezica și segmente ale căilor urinare. Sistemul nu este localizat în întregime în pelvis."
+          "why": "Sistemul urinar nu este localizat în întregime în pelvis: rinichii sunt situați pe peretele abdominal posterior, în timp ce vezica urinară este enumerată în subdiviziunea pelviană. (Sursă: Sistemul urinar — localizarea rinichilor; Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "D",
           "text": "sistemul digestiv absoarbe toți componenții din hrana ingerată",
-          "why": "Sistemul digestiv absoarbe nutrienți solubili, nu toți componenții hranei."
+          "why": "Sistemul digestiv absoarbe nutrienți solubili, nu toți componenții hranei. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         },
         {
           "letter": "E",
           "text": "cuprind organe cu aceeași funcție",
-          "why": "Sistemele reunesc organe cu funcții complementare, nu neapărat aceeași funcție."
+          "why": "Sistemele reunesc organe cu funcții complementare, nu neapărat aceeași funcție. (Sursă: Introducere în anatomie și fiziologie — niveluri de organizare structurală.)"
         }
       ],
       "sourcePages": [
@@ -842,27 +842,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "este delimitată superior de diafragmă",
-          "why": "Cavitatea abdominală este delimitată superior de diafragmă."
+          "why": "Cavitatea abdominală este delimitată superior de diafragmă. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "B",
           "text": "în regiunea ombilicală se găsesc ansele intestinului subțire",
-          "why": "Regiunea ombilicală este centrală și poate conține anse intestinale."
+          "why": "Regiunea ombilicală ocupă centrul abdomenului, iar intestinul subțire este descris și reprezentat în cavitatea abdominală. Localizarea anselor se corelează cu schema regiunilor abdominale. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5; Sistemul digestiv — figura 18.1 — organele digestive în poziție anatomică.)"
         },
         {
           "letter": "C",
           "text": "în hipocondrul stâng se găsește ficatul",
-          "why": "Baremul exclude C, însă lobul stâng al ficatului se extinde în epigastru și hipocondrul stâng. Cea mai mare parte a ficatului este în hipocondrul drept; această predominanță nu înseamnă că hipocondrul stâng nu poate conține țesut hepatic. Cheia rămâne A, B, E."
+          "why": "Sursa situează cea mai mare parte a ficatului în hipocondrul drept, iar figura 18.9 arată că organul se extinde și spre stânga liniei mediane. Baremul exclude C; fără delimitarea regiunilor pe aceeași figură, localizarea exactă în hipocondrul stâng nu poate fi stabilită sigur. Nu trebuie dedus că ficatul este limitat exclusiv la dreapta. (Sursă: Sistemul digestiv — ficatul și localizarea sa, figura 18.9 — ficatul și pancreasul; Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5.)"
         },
         {
           "letter": "D",
           "text": "conține toate segmentele intestinului subțire și gros",
-          "why": "Rectul se află în pelvis, nu în subdiviziunea abdominală. Prin urmare, aceasta nu conține toate segmentele intestinului gros."
+          "why": "Rectul se află în pelvis, nu în subdiviziunea abdominală. Prin urmare, aceasta nu conține toate segmentele intestinului gros. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "E",
           "text": "cuprinde și organe retroperitoneale",
-          "why": "Rinichii și alte organe retroperitoneale sunt organe abdominale situate posterior de peritoneul parietal. Cavitatea abdominală nu este sinonimă strict cu spațiul peritoneal."
+          "why": "Rinichii sunt situați pe peretele abdominal posterior, retroperitoneal. Ei sunt organe abdominale, chiar dacă peritoneul nu îi învelește în întregime. (Sursă: Sistemul urinar — localizarea rinichilor; Introducere în anatomie și fiziologie — membranele seroase.)"
         }
       ],
       "sourcePages": [
@@ -885,27 +885,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "sunt pereche și controlaterale",
-          "why": "Membrele superioare sunt perechi, situate pe părți opuse ale corpului."
+          "why": "Membrele superioare sunt perechi, situate pe părți opuse ale corpului. (Sursă: Introducere în anatomie și fiziologie — poziția anatomică și figura 1.2, termeni direcționali.)"
         },
         {
           "letter": "B",
           "text": "prezintă femurul, localizat proximal față de tibie",
-          "why": "Femurul și tibia aparțin membrului inferior."
+          "why": "Femurul și tibia aparțin membrului inferior. (Sursă: Oasele și articulațiile — clasificarea oaselor și figura 6.1.)"
         },
         {
           "letter": "C",
           "text": "prezintă carpienele situate proximal față de falange",
-          "why": "Carpienele sunt mai aproape de atașarea membrului decât falangele, deci sunt proximale."
+          "why": "Carpienele sunt mai aproape de atașarea membrului decât falangele, deci sunt proximale. (Sursă: Introducere în anatomie și fiziologie — termeni direcționali.)"
         },
         {
           "letter": "D",
           "text": "prezintă ulna situată medial față de radius",
-          "why": "În poziție anatomică ulna este medială față de radius."
+          "why": "În poziție anatomică ulna este medială față de radius. (Sursă: Introducere în anatomie și fiziologie — termeni direcționali; Oasele și articulațiile — clasificarea oaselor și figura 6.1.)"
         },
         {
           "letter": "E",
           "text": "cuprind sternul, situat anterior față de inimă",
-          "why": "Sternul aparține trunchiului, nu membrelor superioare."
+          "why": "Sternul aparține trunchiului, nu membrelor superioare. (Sursă: Oasele și articulațiile — clasificarea oaselor și figura 6.1.)"
         }
       ],
       "sourcePages": [
@@ -928,27 +928,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "cavitatea dorsală a corpului conține toate componentele sistemului nervos central",
-          "why": "Cavitatea dorsală include cavitatea craniană și canalul rahidian, care adăpostesc sistemul nervos central."
+          "why": "Cavitatea dorsală include cavitatea craniană și canalul rahidian, care adăpostesc sistemul nervos central. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4; Organizarea sistemului nervos — învelișurile sistemului nervos central.)"
         },
         {
           "letter": "B",
           "text": "cavitatea anterioară a corpului este divizată de un mușchi neted, diafragma",
-          "why": "Diafragma este mușchi scheletic, nu mușchi neted."
+          "why": "Sursa confirmă că diafragma separă cavitatea toracică de cea abdomino-pelviană. Baremul exclude varianta care o numește „mușchi neted”; tipul histologic al diafragmei nu este precizat în pasajele furnizate despre cavități și respirație. Nu este justificată adăugarea unei explicații histologice nesusținute aici. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "C",
           "text": "în subdiviziunea abdomino-pelviană, median, se găsesc regiunile: epigastrică, ombilicală și hipogastrică",
-          "why": "Regiunile mediane sunt epigastrică, ombilicală și hipogastrică."
+          "why": "Regiunile mediane sunt epigastrică, ombilicală și hipogastrică. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5.)"
         },
         {
           "letter": "D",
           "text": "subdiviziunea pelviană include și regiunile iliacă stângă, iliacă dreaptă și epigastrică",
-          "why": "Regiunea epigastrică este superioară, nu în subdiviziunea pelviană."
+          "why": "Regiunea epigastrică este superioară, nu în subdiviziunea pelviană. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5.)"
         },
         {
           "letter": "E",
           "text": "subdiviziunea abdominală cuprinde 2 flancuri pereche",
-          "why": "Subdiviziunea abdominală are flanc drept și flanc stâng."
+          "why": "Subdiviziunea abdominală are flanc drept și flanc stâng. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5.)"
         }
       ],
       "sourcePages": [
@@ -970,27 +970,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "planul coronal împarte corpul într-o regiune superioară și una inferioară",
-          "why": "Planul coronal împarte corpul în parte anterioară și posterioară."
+          "why": "Planul coronal împarte corpul în parte anterioară și posterioară. (Sursă: Introducere în anatomie și fiziologie — planurile corpului și figura 1.3.)"
         },
         {
           "letter": "B",
           "text": "planul parasagital este paralel cu planul mediosagital",
-          "why": "Planul parasagital este paralel cu planul mediosagital."
+          "why": "Planul parasagital este paralel cu planul mediosagital. (Sursă: Introducere în anatomie și fiziologie — planurile corpului și figura 1.3.)"
         },
         {
           "letter": "C",
           "text": "planul orizontal împarte corpul în 2 părți: cranială și caudală",
-          "why": "Planul orizontal împarte corpul în parte cranială și caudală."
+          "why": "Planul orizontal împarte corpul în parte cranială și caudală. (Sursă: Introducere în anatomie și fiziologie — planurile corpului și figura 1.3.)"
         },
         {
           "letter": "D",
           "text": "un plan sagital este vertical și împarte întotdeauna corpul în 2 părți egale, dreaptă și stângă",
-          "why": "Doar planul mediosagital împarte corpul în două părți egale."
+          "why": "Doar planul mediosagital împarte corpul în două părți egale. (Sursă: Introducere în anatomie și fiziologie — planurile corpului și figura 1.3.)"
         },
         {
           "letter": "E",
           "text": "cele 3 planuri importante ale corpului, sagital, frontal și coronal sunt perpendiculare unul pe celălalt",
-          "why": "Sagital, frontal și orizontal sunt cele trei planuri principale; formularea repetă frontal/coronal și omite orizontal."
+          "why": "Sagital, frontal și orizontal sunt cele trei planuri principale; formularea repetă frontal/coronal și omite orizontal. (Sursă: Introducere în anatomie și fiziologie — planurile corpului și figura 1.3.)"
         }
       ],
       "sourcePages": [
@@ -1012,27 +1012,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "pentru menținerea ei, în hiperglicemie crește secreția de glucagon",
-          "why": "În hiperglicemie crește secreția de insulină, nu de glucagon."
+          "why": "În hiperglicemie crește secreția de insulină, nu de glucagon. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "B",
           "text": "fiziologic, se menține și în cazul variațiilor din mediul extern al organismului",
-          "why": "Homeostazia se menține în ciuda variațiilor mediului extern."
+          "why": "Homeostazia se menține în ciuda variațiilor mediului extern. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "C",
           "text": "este menținută prin sisteme de autoreglare, realizate și cu ajutorul hormonilor",
-          "why": "Sistemele de autoreglare, inclusiv cele hormonale, ajută la menținerea homeostaziei."
+          "why": "Sistemele de autoreglare, inclusiv cele hormonale, ajută la menținerea homeostaziei. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "D",
           "text": "pentru menținerea ei, crește secreția de insulină în caz de hipoglicemie",
-          "why": "Insulina nu crește în hipoglicemie; ea scade glicemia."
+          "why": "Insulina nu crește în hipoglicemie; ea scade glicemia. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "E",
           "text": "este menținută prin feedback negativ, ce presupune creșterea permanentă a unui parametru al mediului intern al organismului",
-          "why": "Feedbackul negativ readuce parametrul spre valoarea de referință, nu îl crește permanent."
+          "why": "Feedbackul negativ readuce parametrul spre valoarea de referință, nu îl crește permanent. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         }
       ],
       "sourcePages": [
@@ -1055,27 +1055,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "planul medio-sagital divide corpul în două jumătăți egale, stângă și dreaptă",
-          "why": "Planul mediosagital împarte corpul în două jumătăți egale, stângă și dreaptă."
+          "why": "Planul mediosagital împarte corpul în două jumătăți egale, stângă și dreaptă. (Sursă: Introducere în anatomie și fiziologie — planurile corpului și figura 1.3.)"
         },
         {
           "letter": "B",
           "text": "femurul se articulează proximal cu tibia și cu rotula",
-          "why": "Femurul se articulează distal cu tibia și rotula, nu proximal."
+          "why": "Femurul se articulează distal cu tibia și rotula, nu proximal. (Sursă: Oasele și articulațiile — clasificarea oaselor și figura 6.1; Introducere în anatomie și fiziologie — termeni direcționali.)"
         },
         {
           "letter": "C",
           "text": "planul sagital împarte corpul într-o parte anterioară și una posterioară",
-          "why": "Planul sagital împarte dreapta și stânga, nu anterior și posterior."
+          "why": "Planul sagital împarte dreapta și stânga, nu anterior și posterior. (Sursă: Introducere în anatomie și fiziologie — planurile corpului și figura 1.3.)"
         },
         {
           "letter": "D",
           "text": "regiunea lombară a coloanei vertebrale este situată caudal față de regiunea toracală",
-          "why": "Regiunea lombară este caudală față de regiunea toracală."
+          "why": "Regiunea lombară este caudală față de regiunea toracală. (Sursă: Organizarea sistemului nervos — figura 11.1 — regiunile măduvei spinării; Introducere în anatomie și fiziologie — termeni direcționali.)"
         },
         {
           "letter": "E",
           "text": "planul orizontal împarte corpul într-o parte superioară și una inferioară",
-          "why": "Planul orizontal împarte corpul în parte superioară și inferioară."
+          "why": "Planul orizontal împarte corpul în parte superioară și inferioară. (Sursă: Introducere în anatomie și fiziologie — planurile corpului și figura 1.3.)"
         }
       ],
       "sourcePages": [
@@ -1100,27 +1100,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "reprezintă un nivel de organizare funcțională",
-          "why": "Baremul cere selectarea A ca incorectă, dar celula reprezintă atât o unitate structurală, cât și una funcțională a vieții. Excluderea caracterului funcțional nu este biologic justificată; cheia tipărită rămâne A, C, D, E."
+          "why": "Baremul cere selectarea variantei ca incorectă. Sursa numește celula unitatea fundamentală și precizează că celulele au structură și funcție proprie; o prezintă între nivelurile structurale, fără să nege caracterul ei funcțional. Excluderea termenului „funcțională” nu este demonstrată de sursă. (Sursă: Introducere în anatomie și fiziologie — niveluri de organizare structurală.)"
         },
         {
           "letter": "B",
           "text": "reprezintă unitatea fundamentală a organismelor vii",
-          "why": "Afirmația este corectă: Celula este unitatea fundamentală a organismelor vii."
+          "why": "Afirmația este corectă: Celula este unitatea fundamentală a organismelor vii. (Sursă: Introducere în anatomie și fiziologie — niveluri de organizare structurală.)"
         },
         {
           "letter": "C",
           "text": "reprezintă un nivel de organizare inferior moleculei",
-          "why": "Celula se află la un nivel de organizare superior moleculei: numeroase molecule formează structurile celulare. Afirmația tipărită „inferior moleculei” este falsă."
+          "why": "Celula se află la un nivel de organizare superior moleculei: numeroase molecule formează structurile celulare. Afirmația tipărită „inferior moleculei” este falsă. (Sursă: Introducere în anatomie și fiziologie — niveluri de organizare structurală.)"
         },
         {
           "letter": "D",
           "text": "reprezintă cel mai simplu nivel de organizare structurală",
-          "why": "Afirmația este incorectă: Atomul este cel mai simplu nivel de organizare structurală."
+          "why": "Afirmația este incorectă: Atomul este cel mai simplu nivel de organizare structurală. (Sursă: Introducere în anatomie și fiziologie — niveluri de organizare structurală.)"
         },
         {
           "letter": "E",
           "text": "reprezintă nivelul final de organizare structurală",
-          "why": "Celula este urmată în ierarhie de țesuturi, organe și sisteme, care alcătuiesc organismul. Nu reprezintă nivelul final."
+          "why": "Celula este urmată în ierarhie de țesuturi, organe și sisteme, care alcătuiesc organismul. Nu reprezintă nivelul final. (Sursă: Introducere în anatomie și fiziologie — niveluri de organizare structurală.)"
         }
       ],
       "sourcePages": [
@@ -1142,27 +1142,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "reprezintă un grup de celule care îndeplinesc aceeași funcție",
-          "why": "Afirmația este corectă: Țesutul este grup de celule care lucrează împreună pentru aceeași funcție."
+          "why": "Afirmația este corectă: Țesutul este grup de celule care lucrează împreună pentru aceeași funcție. (Sursă: Introducere în anatomie și fiziologie — principalele țesuturi și alcătuirea organelor.)"
         },
         {
           "letter": "B",
           "text": "nu este inferior organului",
-          "why": "Afirmația este incorectă: Țesutul este inferior organului, deoarece organele sunt alcătuite din țesuturi."
+          "why": "Afirmația este incorectă: Țesutul este inferior organului, deoarece organele sunt alcătuite din țesuturi. (Sursă: Introducere în anatomie și fiziologie — principalele țesuturi și alcătuirea organelor.)"
         },
         {
           "letter": "C",
           "text": "sunt patru tipuri principale în organism",
-          "why": "Afirmația este corectă: În organism sunt patru tipuri principale de țesuturi."
+          "why": "Afirmația este corectă: În organism sunt patru tipuri principale de țesuturi. (Sursă: Introducere în anatomie și fiziologie — principalele țesuturi și alcătuirea organelor.)"
         },
         {
           "letter": "D",
           "text": "fiecare țesut îndeplinește anumite roluri în organism",
-          "why": "Afirmația este corectă: Fiecare țesut are roluri specifice în organism."
+          "why": "Afirmația este corectă: Fiecare țesut are roluri specifice în organism. (Sursă: Introducere în anatomie și fiziologie — principalele țesuturi și alcătuirea organelor.)"
         },
         {
           "letter": "E",
           "text": "reprezintă un grup de celule cu structură diferită",
-          "why": "Baremul urmează definiția introductivă a țesutului ca grup de celule cu structură similară și funcție comună. În realitate, un țesut poate conține mai multe tipuri celulare; similaritatea nu înseamnă identitate absolută a tuturor celulelor."
+          "why": "Definiția folosită în lecție este „grup de celule cu structură similară” care funcționează împreună și îndeplinesc aceeași funcție. „Structură diferită” nu corespunde acestei definiții. (Sursă: Introducere în anatomie și fiziologie — principalele țesuturi și alcătuirea organelor.)"
         }
       ],
       "sourcePages": [
@@ -1187,27 +1187,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "coastele sunt situate în profunzime față de plămâni",
-          "why": "Afirmația este incorectă: Coastele sunt superficiale față de plămâni, nu în profunzime."
+          "why": "Afirmația este incorectă: Coastele sunt superficiale față de plămâni, nu în profunzime. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "B",
           "text": "planul parasagital divide corpul în două părți inegale (anterioară și posterioară)",
-          "why": "Afirmația este incorectă: Planul parasagital împarte dreapta și stânga inegal, nu anterior și posterior."
+          "why": "Afirmația este incorectă: Planul parasagital împarte dreapta și stânga inegal, nu anterior și posterior. (Sursă: Introducere în anatomie și fiziologie — planurile corpului și figura 1.3.)"
         },
         {
           "letter": "C",
           "text": "mediastinul conține inima, timusul, esofagul, plămânii, traheea, bronhiile, precum și vase sanguine și limfatice",
-          "why": "Afirmația este incorectă: Mediastinul conține componentele toracice cu excepția plămânilor."
+          "why": "Afirmația este incorectă: Mediastinul conține componentele toracice cu excepția plămânilor. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "D",
           "text": "lichidul seros dintre membranele seroase permite organelor să alunece cu ușurință pe pereții cavităților corpului",
-          "why": "Afirmația este corectă: Lichidul seros permite alunecarea organelor pe pereții cavităților."
+          "why": "Afirmația este corectă: Lichidul seros permite alunecarea organelor pe pereții cavităților. (Sursă: Introducere în anatomie și fiziologie — membranele seroase.)"
         },
         {
           "letter": "E",
           "text": "termenul medial se referă la o direcție apropiată de linia medială a corpului",
-          "why": "Baremul selectează E pentru folosirea expresiei „linia medială”. Termenul anatomic standard este linia mediană; medial înseamnă apropiat de aceasta. Este o problemă de terminologie a variantei, nu inversarea direcției."
+          "why": "Baremul selectează E pentru folosirea expresiei „linia medială”. Termenul anatomic standard este linia mediană; medial înseamnă apropiat de aceasta. Este o problemă de terminologie a variantei, nu inversarea direcției. (Sursă: Introducere în anatomie și fiziologie — termeni direcționali.)"
         }
       ],
       "sourcePages": [
@@ -1230,27 +1230,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "poate fi asexuată atunci când se obțin două celule diferite, necesare creșterii sau reparației țesuturilor",
-          "why": "În reproducerea asexuată se obțin celule fiice identice, nu două celule diferite."
+          "why": "În reproducerea asexuată se obțin celule fiice identice, nu două celule diferite. (Sursă: Introducere în anatomie și fiziologie — funcțiile organismului.)"
         },
         {
           "letter": "B",
           "text": "este sexuată atunci când implică producerea de spermatozoizi și ovule și contopirea acestora",
-          "why": "Reproducerea sexuată implică ovule, spermatozoizi și contopirea lor."
+          "why": "Reproducerea sexuată implică ovule, spermatozoizi și contopirea lor. (Sursă: Introducere în anatomie și fiziologie — funcțiile organismului.)"
         },
         {
           "letter": "C",
           "text": "poate fi asexuată și sexuată",
-          "why": "Reproducerea poate fi sexuată sau asexuată."
+          "why": "Reproducerea poate fi sexuată sau asexuată. (Sursă: Introducere în anatomie și fiziologie — funcțiile organismului.)"
         },
         {
           "letter": "D",
           "text": "este o caracteristică importantă a homeostaziei",
-          "why": "Homeostazia este menținerea mediului intern; reproducerea este o funcție distinctă."
+          "why": "Homeostazia este menținerea mediului intern; reproducerea este o funcție distinctă. (Sursă: Introducere în anatomie și fiziologie — funcțiile organismului, homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "E",
           "text": "reprezintă capacitatea organismului de a procrea",
-          "why": "Reproducerea reprezintă capacitatea organismului de a procrea."
+          "why": "Reproducerea reprezintă capacitatea organismului de a procrea. (Sursă: Introducere în anatomie și fiziologie — funcțiile organismului.)"
         }
       ],
       "sourcePages": [
@@ -1273,27 +1273,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "reprezintă valoarea normală a unui factor variabil",
-          "why": "Valoarea de referință este valoarea normală a unui factor variabil."
+          "why": "Valoarea de referință este valoarea normală a unui factor variabil. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "B",
           "text": "în caz de modificare, devierea ei este detectată de un efector",
-          "why": "Devierea este detectată de receptori, nu de efectori."
+          "why": "Devierea este detectată de receptori, nu de efectori. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "C",
           "text": "reprezintă punctul față de care se îndepărtează sistemul prin feed-back negativ",
-          "why": "Feedbackul negativ reduce devierea față de valoarea de referință."
+          "why": "Feedbackul negativ reduce devierea față de valoarea de referință. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "D",
           "text": "este o expresie a menținerii relativ constante a parametrilor mediului intern",
-          "why": "Menținerea valorii de referință exprimă constanța mediului intern."
+          "why": "Menținerea valorii de referință exprimă constanța mediului intern. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "E",
           "text": "poate fi menținută și prin intervenția sistemului endocrin",
-          "why": "Hormonii contribuie la reglarea parametrilor în jurul valorii de referință; de exemplu, insulina participă la controlul glicemiei."
+          "why": "Hormonii contribuie la reglarea parametrilor în jurul valorii de referință; de exemplu, insulina participă la controlul glicemiei. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         }
       ],
       "sourcePages": [
@@ -1315,27 +1315,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "cranial și anterior",
-          "why": "Cranial indică spre cap, iar anterior spre fața corpului."
+          "why": "Cranial indică spre cap, iar anterior spre fața corpului. (Sursă: Introducere în anatomie și fiziologie — poziția anatomică și figura 1.2, termeni direcționali.)"
         },
         {
           "letter": "B",
           "text": "cefalic și dorsal",
-          "why": "Dorsal indică posterior, iar nasul este pe fața anterioară."
+          "why": "Dorsal indică posterior, iar nasul este pe fața anterioară. (Sursă: Introducere în anatomie și fiziologie — poziția anatomică și figura 1.2, termeni direcționali.)"
         },
         {
           "letter": "C",
           "text": "caudal și anterior",
-          "why": "Caudal indică spre partea inferioară, nu spre nas."
+          "why": "Caudal indică spre partea inferioară, nu spre nas. (Sursă: Introducere în anatomie și fiziologie — poziția anatomică și figura 1.2, termeni direcționali.)"
         },
         {
           "letter": "D",
           "text": "cefalic și anterior/ ventral",
-          "why": "Cefalic și anterior/ventral descriu poziția nasului."
+          "why": "Cefalic și anterior/ventral descriu poziția nasului. (Sursă: Introducere în anatomie și fiziologie — poziția anatomică și figura 1.2, termeni direcționali.)"
         },
         {
           "letter": "E",
           "text": "lateral față de ochi",
-          "why": "Nasul este medial față de ochi, nu lateral."
+          "why": "Nasul este medial față de ochi, nu lateral. (Sursă: Introducere în anatomie și fiziologie — poziția anatomică și figura 1.2, termeni direcționali.)"
         }
       ],
       "sourcePages": [
@@ -1356,27 +1356,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "ipsilateral",
-          "why": "Vezica biliară și splina nu sunt de aceeași parte a corpului."
+          "why": "Vezica biliară și splina nu sunt de aceeași parte a corpului. (Sursă: Introducere în anatomie și fiziologie — termeni direcționali; Sistemul limfatic și imun — localizarea splinei; Sistemul digestiv — figura 18.1 — organele digestive în poziție anatomică.)"
         },
         {
           "letter": "B",
           "text": "controlateral",
-          "why": "Vezica biliară și splina sunt pe părți opuse, deci controlaterale."
+          "why": "Vezica biliară și splina sunt pe părți opuse, deci controlaterale. (Sursă: Introducere în anatomie și fiziologie — termeni direcționali; Sistemul limfatic și imun — localizarea splinei; Sistemul digestiv — figura 18.1 — organele digestive în poziție anatomică.)"
         },
         {
           "letter": "C",
           "text": "în hipocondrul drept",
-          "why": "Doar vezica biliară este asociată cu partea dreaptă."
+          "why": "Doar vezica biliară este asociată cu partea dreaptă. (Sursă: Introducere în anatomie și fiziologie — termeni direcționali; Sistemul limfatic și imun — localizarea splinei; Sistemul digestiv — figura 18.1 — organele digestive în poziție anatomică.)"
         },
         {
           "letter": "D",
           "text": "în epigastru",
-          "why": "Epigastrul este regiune mediană superioară, nu poziția ambelor organe."
+          "why": "Epigastrul este regiune mediană superioară, nu poziția ambelor organe. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5; Sistemul digestiv — figura 18.1 — organele digestive în poziție anatomică.)"
         },
         {
           "letter": "E",
           "text": "controlateral, în flancuri",
-          "why": "Cele două structuri sunt controlaterale, dar nu sunt ambele în flancuri."
+          "why": "Cele două structuri sunt controlaterale, dar nu sunt ambele în flancuri. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5; Sistemul digestiv — figura 18.1 — organele digestive în poziție anatomică.)"
         }
       ],
       "sourcePages": [
@@ -1398,27 +1398,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "antebrațul este situat distal față de braț",
-          "why": "Antebrațul este mai departe de atașarea membrului decât brațul, deci distal."
+          "why": "Antebrațul este mai departe de atașarea membrului decât brațul, deci distal. (Sursă: Introducere în anatomie și fiziologie — poziția anatomică și figura 1.2, termeni direcționali.)"
         },
         {
           "letter": "B",
           "text": "colonul ascendent și cel descendent sunt situate ipsilateral",
-          "why": "Colonul ascendent și descendent sunt pe părți opuse, deci controlaterale."
+          "why": "Colonul ascendent și descendent sunt pe părți opuse, deci controlaterale. (Sursă: Introducere în anatomie și fiziologie — termeni direcționali.)"
         },
         {
           "letter": "C",
           "text": "trunchiul pulmonar este situat caudal de arcul aortic",
-          "why": "Trunchiul pulmonar este inferior față de arcul aortic."
+          "why": "Trunchiul pulmonar este inferior față de arcul aortic. (Sursă: Introducere în anatomie și fiziologie — termeni direcționali; Sistemul cardiovascular — figura 15.2 — vasele mari ale inimii.)"
         },
         {
           "letter": "D",
           "text": "palma stângă este în pronație, ipsilateral cu splina",
-          "why": "În poziție anatomică palma este orientată anterior, nu în pronație."
+          "why": "În poziție anatomică palma este orientată anterior, nu în pronație. (Sursă: Introducere în anatomie și fiziologie — poziția anatomică și figura 1.2.)"
         },
         {
           "letter": "E",
           "text": "antebrațul este situat proximal de articulația cotului",
-          "why": "Antebrațul este distal față de articulația cotului, nu proximal."
+          "why": "Antebrațul este distal față de articulația cotului, nu proximal. (Sursă: Introducere în anatomie și fiziologie — poziția anatomică și figura 1.2, termeni direcționali.)"
         }
       ],
       "sourcePages": [
@@ -1441,27 +1441,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "planul mediosagital trece prin coloana vertebrală, stern și inimă",
-          "why": "Linia mediană intersectează sternul și coloana, iar inima se întinde de ambele părți ale planului median, deși cea mai mare parte este la stânga. Planul poate astfel secționa toate cele trei structuri."
+          "why": "Planul mediosagital trece prin mijlocul corpului. Corelând schema planurilor cu figura inimii între plămâni, se poate urmări o secțiune mediană prin stern, inimă și coloana vertebrală. (Sursă: Introducere în anatomie și fiziologie — planurile corpului și figura 1.3; Sistemul cardiovascular — figura 15.1 — inima și diafragma.)"
         },
         {
           "letter": "B",
           "text": "în plan frontal, ficatul este inferior față de plămânul drept și diafragmă",
-          "why": "Ficatul este inferior față de plămânul drept și diafragmă."
+          "why": "Ficatul este inferior față de plămânul drept și diafragmă. (Sursă: Sistemul digestiv — figura 18.9 — ficatul și pancreasul; Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "C",
           "text": "un plan parasagital divide corpul în două jumătăți inegale, anterioară și posterioară",
-          "why": "Planul parasagital împarte dreapta și stânga inegal, nu anterior și posterior."
+          "why": "Planul parasagital împarte dreapta și stânga inegal, nu anterior și posterior. (Sursă: Introducere în anatomie și fiziologie — planurile corpului și figura 1.3.)"
         },
         {
           "letter": "D",
           "text": "planul frontal împarte corpul în 2 jumătăți egale",
-          "why": "Planul frontal împarte anterior și posterior; nu este definit prin jumătăți egale."
+          "why": "Planul frontal împarte anterior și posterior; nu este definit prin jumătăți egale. (Sursă: Introducere în anatomie și fiziologie — planurile corpului și figura 1.3.)"
         },
         {
           "letter": "E",
           "text": "planul orizontal este perpendicular pe planul sagital",
-          "why": "Planul orizontal este perpendicular pe planul sagital."
+          "why": "Planul orizontal este perpendicular pe planul sagital. (Sursă: Introducere în anatomie și fiziologie — planurile corpului și figura 1.3.)"
         }
       ],
       "sourcePages": [
@@ -1483,27 +1483,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "două cavități, cea posterioară și abdomino-pelviană",
-          "why": "Enumerarea a numai două cavități este incompletă: secțiunea evidențiază și cavitatea toracică. Cavitatea anterioară cuprinde atât subdiviziunea toracică, cât și pe cea abdomino-pelviană, iar posterior se află cavitatea dorsală."
+          "why": "Enumerarea a numai două cavități este incompletă: secțiunea evidențiază și cavitatea toracică. Cavitatea anterioară cuprinde atât subdiviziunea toracică, cât și pe cea abdomino-pelviană, iar posterior se află cavitatea dorsală. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "B",
           "text": "o singură cavitate, cea toracică, situată superior de diafragmă",
-          "why": "Cavitatea toracică este într-adevăr superior de diafragmă, dar nu este singura cavitate vizibilă în secțiune: se disting și cavitatea posterioară și subdiviziunea abdomino-pelviană."
+          "why": "Cavitatea toracică este într-adevăr superior de diafragmă, dar nu este singura cavitate vizibilă în secțiune: se disting și cavitatea posterioară și subdiviziunea abdomino-pelviană. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "C",
           "text": "două cavități principale, anterioară și posterioară",
-          "why": "Cavitățile principale sunt anterioară și posterioară."
+          "why": "Cavitățile principale sunt anterioară și posterioară. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "D",
           "text": "trei cavități, posterioară, toracică și abdomino-pelviană",
-          "why": "Se pot distinge cavitatea posterioară și subdiviziunile toracică și abdomino-pelviană."
+          "why": "Se pot distinge cavitatea posterioară și subdiviziunile toracică și abdomino-pelviană. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "E",
           "text": "patru cavități: posterioară, anterioară, ventrală și toracică",
-          "why": "Anterioară și ventrală denumesc aceeași cavitate, nu două cavități diferite."
+          "why": "Anterioară și ventrală denumesc aceeași cavitate, nu două cavități diferite. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         }
       ],
       "sourcePages": [
@@ -1526,27 +1526,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "două cavități pleurale, dreaptă și stângă, și o cavitate peritoneală",
-          "why": "Cavitatea peritoneală aparține abdomino-pelvianului, nu toracelui."
+          "why": "Cavitatea peritoneală aparține abdomino-pelvianului, nu toracelui. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "B",
           "text": "cavitatea pericardică, medial de cavitățile pleurale",
-          "why": "Cavitatea pericardică este medială față de cavitățile pleurale."
+          "why": "Cavitatea pericardică este medială față de cavitățile pleurale. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "C",
           "text": "cavitatea craniană și canalul rahidian",
-          "why": "Cavitatea craniană și canalul rahidian țin de cavitatea posterioară."
+          "why": "Cavitatea craniană și canalul rahidian țin de cavitatea posterioară. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "D",
           "text": "epigastru și hipogastru",
-          "why": "Epigastrul și hipogastrul sunt regiuni abdomino-pelviene."
+          "why": "Epigastrul și hipogastrul sunt regiuni abdomino-pelviene. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5.)"
         },
         {
           "letter": "E",
           "text": "două cavități pleurale și o cavitate pericardică",
-          "why": "Toracele cuprinde două cavități pleurale și cavitatea pericardică."
+          "why": "Toracele cuprinde două cavități pleurale și cavitatea pericardică. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         }
       ],
       "sourcePages": [
@@ -1569,27 +1569,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "hipocondrul drept este situat cranial, lateral, dreapta",
-          "why": "Hipocondrul drept este superior și lateral față de regiunea ombilicală."
+          "why": "Hipocondrul drept este superior și lateral față de regiunea ombilicală. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5, termeni direcționali.)"
         },
         {
           "letter": "B",
           "text": "hipogastrul se găsește caudal",
-          "why": "Hipogastrul este inferior, adică caudal față de ombilicală."
+          "why": "Hipogastrul este inferior, adică caudal față de ombilicală. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5, termeni direcționali.)"
         },
         {
           "letter": "C",
           "text": "epigastrul este anterior",
-          "why": "Epigastrul este superior, nu anterior față de ombilicală."
+          "why": "Epigastrul este superior, nu anterior față de ombilicală. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5, termeni direcționali.)"
         },
         {
           "letter": "D",
           "text": "regiunile inghinale (iliace) sunt dispuse caudal și lateral",
-          "why": "Regiunile inghinale sunt inferioare și laterale față de ombilicală."
+          "why": "Regiunile inghinale sunt inferioare și laterale față de ombilicală. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5, termeni direcționali.)"
         },
         {
           "letter": "E",
           "text": "flancul stâng este situat medial",
-          "why": "Flancul stâng este lateral, nu medial."
+          "why": "Flancul stâng este lateral, nu medial. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5, termeni direcționali.)"
         }
       ],
       "sourcePages": [
@@ -1612,27 +1612,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "aparține cavității ventrale",
-          "why": "Cavitatea abdomino-pelviană aparține cavității ventrale."
+          "why": "Cavitatea abdomino-pelviană aparține cavității ventrale. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "B",
           "text": "conține organele interne abdominale și pelviene",
-          "why": "Ea conține organe interne abdominale și pelviene."
+          "why": "Ea conține organe interne abdominale și pelviene. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "C",
           "text": "are două membrane seroase, pleura și pericardul",
-          "why": "Pleura și pericardul sunt membrane seroase toracice, nu ale cavității abdomino-pelviene."
+          "why": "Pleura și pericardul sunt membrane seroase toracice, nu ale cavității abdomino-pelviene. (Sursă: Introducere în anatomie și fiziologie — membranele seroase.)"
         },
         {
           "letter": "D",
           "text": "este separată de cavitatea posterioară prin diafragmă",
-          "why": "Diafragma separă cavitatea toracică de cea abdomino-pelviană."
+          "why": "Diafragma separă cavitatea toracică de cea abdomino-pelviană. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "E",
           "text": "conține stomacul și splina",
-          "why": "Stomacul și splina se află în subdiviziunea abdominală."
+          "why": "Stomacul și splina se află în subdiviziunea abdominală. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         }
       ],
       "sourcePages": [
@@ -1655,27 +1655,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "sunt reprezentate de pleure, pericard și peritoneu",
-          "why": "Membranele seroase sunt pleura, pericardul și peritoneul."
+          "why": "Membranele seroase sunt pleura, pericardul și peritoneul. (Sursă: Introducere în anatomie și fiziologie — membranele seroase.)"
         },
         {
           "letter": "B",
           "text": "sunt formate din două foițe între care se găsește o cantitate mare de lichid seros",
-          "why": "Între foițe se găsește o cantitate mică de lichid seros, nu mare."
+          "why": "Între foițe se găsește o cantitate mică de lichid seros, nu mare. (Sursă: Introducere în anatomie și fiziologie — membranele seroase.)"
         },
         {
           "letter": "C",
           "text": "acoperă total sau parțial organe din regiunea toracică și abdomino-pelviană",
-          "why": "Aceste membrane acoperă organe din torace și abdomino-pelvis."
+          "why": "Aceste membrane acoperă organe din torace și abdomino-pelvis. (Sursă: Introducere în anatomie și fiziologie — membranele seroase.)"
         },
         {
           "letter": "D",
           "text": "una dintre ele, peritoneul, acoperă organele retroperitoneale doar pe fața lor anterioară",
-          "why": "Peritoneul acoperă anterior organele retroperitoneale."
+          "why": "Peritoneul acoperă anterior organele retroperitoneale. (Sursă: Introducere în anatomie și fiziologie — membranele seroase.)"
         },
         {
           "letter": "E",
           "text": "foița parietală acoperă diferite organe interne",
-          "why": "Foița viscerală acoperă organele; parietala căptușește cavitatea."
+          "why": "Foița viscerală acoperă organele; parietala căptușește cavitatea. (Sursă: Introducere în anatomie și fiziologie — membranele seroase.)"
         }
       ],
       "sourcePages": [
@@ -1697,27 +1697,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "cavitatea pericardică se află între inimă și mediastin",
-          "why": "Cavitatea pericardică este delimitată de foițele parietală și viscerală ale pericardului seros. Întregul ansamblu se află în mediastin; acesta nu este o foiță care delimitează cavitatea."
+          "why": "Cavitatea pericardică este delimitată de foițele parietală și viscerală ale pericardului seros. Întregul ansamblu se află în mediastin; acesta nu este o foiță care delimitează cavitatea. (Sursă: Introducere în anatomie și fiziologie — membranele seroase, cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "B",
           "text": "foița viscerală a pleurei tapetează cavitatea în care se află inima",
-          "why": "Pleura viscerală acoperă plămânul, nu cavitatea inimii."
+          "why": "Pleura viscerală acoperă plămânul, nu cavitatea inimii. (Sursă: Introducere în anatomie și fiziologie — membranele seroase.)"
         },
         {
           "letter": "C",
           "text": "pericardul visceral se numește epicard",
-          "why": "Pericardul visceral poartă numele de epicard."
+          "why": "Pericardul visceral poartă numele de epicard. (Sursă: Sistemul cardiovascular — pericardul și epicardul.)"
         },
         {
           "letter": "D",
           "text": "lichidul seros secretat de membranele seroase este produs de celulele sanguine din aceste membrane",
-          "why": "Lichidul seros se formează prin schimburi cu microcirculația și activitatea mezoteliului. Celulele sanguine nu sunt celulele secretoare ale membranei seroase."
+          "why": "Sursa atribuie secreția lichidului seros foițelor membranelor seroase, nu celulelor sanguine. (Sursă: Introducere în anatomie și fiziologie — membranele seroase.)"
         },
         {
           "letter": "E",
           "text": "lichidul seros permite organelor să alunece cu ușurință între ele, fără frecare",
-          "why": "Pelicula subțire de lichid seros lubrifiază suprafețele și reduce frecarea în timpul mișcărilor organelor."
+          "why": "Pelicula subțire de lichid seros lubrifiază suprafețele și reduce frecarea în timpul mișcărilor organelor. (Sursă: Introducere în anatomie și fiziologie — membranele seroase.)"
         }
       ],
       "sourcePages": [
@@ -1738,27 +1738,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "anatomia dezvoltării",
-          "why": "Anatomia dezvoltării este subdiviziune a anatomiei."
+          "why": "Anatomia dezvoltării este subdiviziune a anatomiei. (Sursă: Introducere în anatomie și fiziologie — subdiviziunile anatomiei și fiziologiei.)"
         },
         {
           "letter": "B",
           "text": "anatomia macroscopică",
-          "why": "Anatomia macroscopică este subdiviziune a anatomiei."
+          "why": "Anatomia macroscopică este subdiviziune a anatomiei. (Sursă: Introducere în anatomie și fiziologie — subdiviziunile anatomiei și fiziologiei.)"
         },
         {
           "letter": "C",
           "text": "histologia",
-          "why": "Histologia este anatomie microscopică."
+          "why": "Histologia este anatomie microscopică. (Sursă: Introducere în anatomie și fiziologie — subdiviziunile anatomiei și fiziologiei.)"
         },
         {
           "letter": "D",
           "text": "anatomia microscopică",
-          "why": "Anatomia microscopică este subdiviziune a anatomiei."
+          "why": "Anatomia microscopică este subdiviziune a anatomiei. (Sursă: Introducere în anatomie și fiziologie — subdiviziunile anatomiei și fiziologiei.)"
         },
         {
           "letter": "E",
           "text": "citologia",
-          "why": "Baremul urmează clasificarea lecției, care discută citologia între subdiviziunile fiziologiei. Citologia studiază însă și structura celulelor și poate fi inclusă în anatomia microscopică; nu este corectă excluderea ei universală din anatomie."
+          "why": "În clasificarea lecției, citologia — studiul celulelor și al funcțiilor lor — este prezentată între subdiviziunile fiziologiei. De aceea aceasta este varianta cerută de barem. (Sursă: Introducere în anatomie și fiziologie — subdiviziunile anatomiei și fiziologiei.)"
         }
       ],
       "sourcePages": [
@@ -1781,27 +1781,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "este cel mai simplu nivel de organizare",
-          "why": "Atomul este cel mai simplu nivel de organizare."
+          "why": "Atomul este cel mai simplu nivel de organizare. (Sursă: Introducere în anatomie și fiziologie — niveluri de organizare structurală.)"
         },
         {
           "letter": "B",
           "text": "este nivelul imediat superior atomului",
-          "why": "Nivelul imediat superior atomului este molecula."
+          "why": "Nivelul imediat superior atomului este molecula. (Sursă: Introducere în anatomie și fiziologie — niveluri de organizare structurală.)"
         },
         {
           "letter": "C",
           "text": "conține și structuri subcelulare, precum ribozomii sau lizozomii",
-          "why": "Celula conține structuri subcelulare precum ribozomi și lizozomi."
+          "why": "Celula conține structuri subcelulare precum ribozomi și lizozomi. (Sursă: Introducere în anatomie și fiziologie — niveluri de organizare structurală.)"
         },
         {
           "letter": "D",
           "text": "este unitatea fundamentală a organismelor vii",
-          "why": "Celula este unitatea fundamentală a organismelor vii."
+          "why": "Celula este unitatea fundamentală a organismelor vii. (Sursă: Introducere în anatomie și fiziologie — niveluri de organizare structurală.)"
         },
         {
           "letter": "E",
           "text": "cele cu structură și funcție similare formează țesuturi",
-          "why": "Celulele cu structură și funcție similare formează țesuturi."
+          "why": "Celulele cu structură și funcție similare formează țesuturi. (Sursă: Introducere în anatomie și fiziologie — niveluri de organizare structurală.)"
         }
       ],
       "sourcePages": [
@@ -1823,27 +1823,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "flancul stâng este controlateral",
-          "why": "Flancul stâng este pe partea opusă față de flancul drept."
+          "why": "Flancul stâng este pe partea opusă față de flancul drept. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5, termeni direcționali.)"
         },
         {
           "letter": "B",
           "text": "hipocondrul drept este caudal",
-          "why": "Hipocondrul drept este superior față de flancul drept, nu caudal."
+          "why": "Hipocondrul drept este superior față de flancul drept, nu caudal. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5, termeni direcționali.)"
         },
         {
           "letter": "C",
           "text": "regiunea ombilicală este plasată lateral",
-          "why": "Regiunea ombilicală este medială față de flancuri, nu laterală."
+          "why": "Regiunea ombilicală este medială față de flancuri, nu laterală. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5, termeni direcționali.)"
         },
         {
           "letter": "D",
           "text": "regiunea inghinală stângă (iliacă) este plasată cranial",
-          "why": "Regiunea inghinală stângă este inferior, nu cranial."
+          "why": "Regiunea inghinală stângă este inferior, nu cranial. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5, termeni direcționali.)"
         },
         {
           "letter": "E",
           "text": "hipogastrul este plasat caudal și medial",
-          "why": "Hipogastrul este inferior și median față de flancul drept."
+          "why": "Hipogastrul este inferior și median față de flancul drept. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5, termeni direcționali.)"
         }
       ],
       "sourcePages": [
@@ -1865,27 +1865,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "reprezintă procesul de oprire a unei hemoragii",
-          "why": "Oprirea sângerării se numește hemostază. Ea contribuie la păstrarea mediului intern, dar nu este definiția homeostaziei."
+          "why": "Oprirea hemoragiei este rezultatul dat ca exemplu pentru feed-back-ul pozitiv; homeostazia are sensul mai larg de menținere a parametrilor mediului intern în limite normale. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "B",
           "text": "reprezintă capacitatea organismului de a menține în limite normale parametrii mediului înconjurător",
-          "why": "Homeostazia se referă la mediul intern, nu la mediul înconjurător."
+          "why": "Homeostazia se referă la mediul intern, nu la mediul înconjurător. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "C",
           "text": "reprezintă capacitatea organismului de a menține în limite normale parametrii mediului intern",
-          "why": "Homeostazia menține parametrii mediului intern în limite normale."
+          "why": "Homeostazia menține parametrii mediului intern în limite normale. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "D",
           "text": "constă în distrugerea hematiilor sub acțiunea unei soluții hipotone",
-          "why": "Distrugerea hematiilor se numește hemoliză; în soluție hipotonă poate apărea prin pătrunderea apei și ruperea membranei. Nu este definiția homeostaziei."
+          "why": "În mediu hipoton, apa intră în celulă și poate produce umflarea și liza ei. Homeostazia desemnează menținerea parametrilor mediului intern, nu acest fenomen. (Sursă: Celula și fiziologia celulară — osmoza și mediile hiperton, hipoton și izoton; Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "E",
           "text": "poate fi perturbată în condiții de hipoxie",
-          "why": "Hipoxia înseamnă oxigenare insuficientă a țesuturilor și poate perturba homeostazia. Nu presupune neapărat absența completă a oxigenului."
+          "why": "Lecția enumeră lipsa oxigenului între condițiile care afectează homeostazia. Varianta aplică această relație la insuficiența aportului de oxigen. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         }
       ],
       "sourcePages": [
@@ -1909,27 +1909,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "medial - de aceeași parte a corpului",
-          "why": "Afirmația este incorectă: Medial înseamnă aproape de linia mediană, nu de aceeași parte a corpului."
+          "why": "Afirmația este incorectă: Medial înseamnă aproape de linia mediană, nu de aceeași parte a corpului. (Sursă: Introducere în anatomie și fiziologie — termeni direcționali.)"
         },
         {
           "letter": "B",
           "text": "lateral - de partea opusă a corpului",
-          "why": "Afirmația este incorectă: Lateral înseamnă departe de linia mediană, nu de partea opusă a corpului."
+          "why": "Afirmația este incorectă: Lateral înseamnă departe de linia mediană, nu de partea opusă a corpului. (Sursă: Introducere în anatomie și fiziologie — termeni direcționali.)"
         },
         {
           "letter": "C",
           "text": "distal - la distanță față de locul de atașare a unui membru de trunchi",
-          "why": "Afirmația este corectă: Distal înseamnă la distanță față de locul de atașare al membrului."
+          "why": "Afirmația este corectă: Distal înseamnă la distanță față de locul de atașare al membrului. (Sursă: Introducere în anatomie și fiziologie — termeni direcționali.)"
         },
         {
           "letter": "D",
           "text": "superficial - spre suprafața corpului",
-          "why": "Afirmația este corectă: Superficial înseamnă spre suprafața corpului."
+          "why": "Afirmația este corectă: Superficial înseamnă spre suprafața corpului. (Sursă: Introducere în anatomie și fiziologie — termeni direcționali.)"
         },
         {
           "letter": "E",
           "text": "caudal - spre partea superioară a unei structuri",
-          "why": "Afirmația este incorectă: Caudal înseamnă spre partea inferioară, nu superioară."
+          "why": "Afirmația este incorectă: Caudal înseamnă spre partea inferioară, nu superioară. (Sursă: Introducere în anatomie și fiziologie — termeni direcționali.)"
         }
       ],
       "sourcePages": [
@@ -1951,27 +1951,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "divide corpul în două jumătăți egale: superioară și inferioară",
-          "why": "Împărțirea în superior și inferior aparține planului orizontal."
+          "why": "Împărțirea în superior și inferior aparține planului orizontal. (Sursă: Introducere în anatomie și fiziologie — planurile corpului și figura 1.3.)"
         },
         {
           "letter": "B",
           "text": "este un plan vertical, similar planului coronal",
-          "why": "Planul mediosagital este vertical, la fel ca planul coronal."
+          "why": "Planul mediosagital este vertical, la fel ca planul coronal. (Sursă: Introducere în anatomie și fiziologie — planurile corpului și figura 1.3.)"
         },
         {
           "letter": "C",
           "text": "permite realizarea unor secțiuni transversale/ paralele cu planul",
-          "why": "Secțiunile transversale sunt paralele cu planul orizontal, nu cu mediosagitalul."
+          "why": "Secțiunile transversale sunt paralele cu planul orizontal, nu cu mediosagitalul. (Sursă: Introducere în anatomie și fiziologie — planurile corpului și figura 1.3.)"
         },
         {
           "letter": "D",
           "text": "împarte corpul în două jumătăți egale: stângă și dreaptă",
-          "why": "Planul mediosagital împarte corpul în jumătăți egale stângă și dreaptă."
+          "why": "Planul mediosagital împarte corpul în jumătăți egale stângă și dreaptă. (Sursă: Introducere în anatomie și fiziologie — planurile corpului și figura 1.3.)"
         },
         {
           "letter": "E",
           "text": "separă corpul în două părți inegale",
-          "why": "Planul parasagital separă corpul în părți inegale."
+          "why": "Planul parasagital separă corpul în părți inegale. (Sursă: Introducere în anatomie și fiziologie — planurile corpului și figura 1.3.)"
         }
       ],
       "sourcePages": [
@@ -1994,27 +1994,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "cavitatea peritoneală conține organele interne toracice, abdominale și pelviene",
-          "why": "Cavitatea peritoneală aparține abdomino-pelvianului, nu conține organele toracice."
+          "why": "Cavitatea peritoneală aparține abdomino-pelvianului, nu conține organele toracice. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "B",
           "text": "cavitatea toracică prezintă o regiune centrală, cavitatea pleurală, și două cavități laterale, pericardice",
-          "why": "Cavitățile pleurale sunt laterale, iar cavitatea pericardică este centrală."
+          "why": "Cavitățile pleurale sunt laterale, iar cavitatea pericardică este centrală. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "C",
           "text": "cavitatea posterioară a corpului este delimitată de pereți osoși și adăpostește sistemul nervos central",
-          "why": "Cavitatea posterioară are pereți osoși și adăpostește sistemul nervos central."
+          "why": "Cavitatea posterioară are pereți osoși și adăpostește sistemul nervos central. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4; Organizarea sistemului nervos — învelișurile sistemului nervos central.)"
         },
         {
           "letter": "D",
           "text": "la nivelul cavității rahidiene se găsește măduva spinării înconjurată de meningele spinal",
-          "why": "Canalul rahidian conține măduva spinării învelită de meningele spinal."
+          "why": "Canalul rahidian conține măduva spinării învelită de meningele spinal. (Sursă: Organizarea sistemului nervos — învelișurile sistemului nervos central.)"
         },
         {
           "letter": "E",
           "text": "mediastinul este situat în centrul cavității toracice",
-          "why": "Mediastinul este regiunea centrală a cavității toracice."
+          "why": "Mediastinul este regiunea centrală a cavității toracice. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         }
       ],
       "sourcePages": [
@@ -2037,27 +2037,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "epigastrică - situată în centrul abdomenului",
-          "why": "Regiunea epigastrică este superioară celei ombilicale, nu centrul abdomenului."
+          "why": "Regiunea epigastrică este superioară celei ombilicale, nu centrul abdomenului. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5.)"
         },
         {
           "letter": "B",
           "text": "ombilicală - situată inferior de regiunea epigastrică",
-          "why": "Regiunea ombilicală este inferior de regiunea epigastrică."
+          "why": "Regiunea ombilicală este inferior de regiunea epigastrică. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5.)"
         },
         {
           "letter": "C",
           "text": "hipogastrică - situată superior față de regiunea ombilicală",
-          "why": "Hipogastrica este inferior de ombilicală, nu superior."
+          "why": "Hipogastrica este inferior de ombilicală, nu superior. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5.)"
         },
         {
           "letter": "D",
           "text": "inghinale - dispuse lateral față de regiunea hipogastrică",
-          "why": "Regiunile inghinale sunt laterale față de hipogastrică."
+          "why": "Regiunile inghinale sunt laterale față de hipogastrică. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5.)"
         },
         {
           "letter": "E",
           "text": "flancurile - situate inferior față de hipocondrul și superior față de regiunea iliacă",
-          "why": "Flancurile sunt între hipocondruri și regiunile iliace."
+          "why": "Flancurile sunt între hipocondruri și regiunile iliace. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5.)"
         }
       ],
       "sourcePages": [
@@ -2081,27 +2081,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "cavitatea pericardică",
-          "why": "Cavitatea pericardică se află în mediastin."
+          "why": "Cavitatea pericardică se află în mediastin. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "B",
           "text": "cavitățile pleurale",
-          "why": "Cavitățile pleurale se află lateral de mediastin, în jurul plămânilor. Strict, fiecare cavitate pleurală este spațiul îngust dintre foițele pleurei, nu spațiul ocupat de țesutul pulmonar."
+          "why": "Cavitățile pleurale sunt laterale față de cavitatea pericardică. Mediastinul este descris ca regiunea toracică ce exclude plămânii. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "C",
           "text": "traheea",
-          "why": "Porțiunea toracică a traheei traversează mediastinul superior înainte de bifurcație; nu întreaga trahee este intratoracică."
+          "why": "Traheea este enumerată explicit între structurile mediastinului. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "D",
           "text": "timusul",
-          "why": "Timusul ocupă regiunea anterioară a mediastinului, mai evidentă la copil, și poate avea extensie cervicală."
+          "why": "Timusul este enumerat explicit între structurile mediastinului. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "E",
           "text": "esofagul",
-          "why": "Esofagul este menționat ca fiind, cel puțin parțial, în mediastin."
+          "why": "Esofagul este menționat ca fiind, cel puțin parțial, în mediastin. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         }
       ],
       "sourcePages": [
@@ -2123,27 +2123,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "au două foițe: parietală și viscerală",
-          "why": "Seroasele au foiță parietală și foiță viscerală."
+          "why": "Seroasele au foiță parietală și foiță viscerală. (Sursă: Introducere în anatomie și fiziologie — membranele seroase.)"
         },
         {
           "letter": "B",
           "text": "foița viscerală tapetează la interior pereții unei cavități",
-          "why": "Foița viscerală acoperă organul; parietala căptușește peretele cavității."
+          "why": "Foița viscerală acoperă organul; parietala căptușește peretele cavității. (Sursă: Introducere în anatomie și fiziologie — membranele seroase.)"
         },
         {
           "letter": "C",
           "text": "foița parietală învelește un viscer",
-          "why": "Foița parietală căptușește cavitatea, nu învelește viscerul."
+          "why": "Foița parietală căptușește cavitatea, nu învelește viscerul. (Sursă: Introducere în anatomie și fiziologie — membranele seroase.)"
         },
         {
           "letter": "D",
           "text": "sunt reprezentate de pleură, endocard și peritoneu",
-          "why": "Pericardul seros este o seroasă; endocardul căptușește interiorul cavităților inimii și nu este una dintre membranele seroase enumerate."
+          "why": "Cele trei membrane seroase enumerate sunt pleura, pericardul și peritoneul. Varianta înlocuiește pericardul cu endocardul. (Sursă: Introducere în anatomie și fiziologie — membranele seroase.)"
         },
         {
           "letter": "E",
           "text": "conțin, în spațiul dintre cele două foițe, o cantitate redusă de lichid seros cu rol de lubrifiere",
-          "why": "Între foițe există o cantitate redusă de lichid seros cu rol lubrifiant."
+          "why": "Între foițe există o cantitate redusă de lichid seros cu rol lubrifiant. (Sursă: Introducere în anatomie și fiziologie — membranele seroase.)"
         }
       ],
       "sourcePages": [
@@ -2166,27 +2166,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "unitatea fundamentală a organismelor vii este țesutul",
-          "why": "Unitatea fundamentală a organismelor vii este celula, nu țesutul."
+          "why": "Unitatea fundamentală a organismelor vii este celula, nu țesutul. (Sursă: Introducere în anatomie și fiziologie — niveluri de organizare structurală.)"
         },
         {
           "letter": "B",
           "text": "în cazul poziției anatomice, policele este orientat spre exterior, iar palmele sunt orientate spre posterior",
-          "why": "În poziție anatomică palmele sunt orientate anterior, nu posterior."
+          "why": "În poziție anatomică palmele sunt orientate anterior, nu posterior. (Sursă: Introducere în anatomie și fiziologie — poziția anatomică și figura 1.2.)"
         },
         {
           "letter": "C",
           "text": "traheea este situată anterior față de esofag",
-          "why": "Traheea este anterior față de esofag."
+          "why": "Traheea este anterior față de esofag. (Sursă: Introducere în anatomie și fiziologie — termeni direcționali.)"
         },
         {
           "letter": "D",
           "text": "cavitatea pelviană conține și vezica urinară",
-          "why": "Cavitatea pelviană conține vezica urinară."
+          "why": "Cavitatea pelviană conține vezica urinară. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "E",
           "text": "lichidul seros permite glisarea celor două foițe ale membranelor seroase fără frecare",
-          "why": "Lichidul seros reduce frecarea dintre foițele seroase."
+          "why": "Lichidul seros reduce frecarea dintre foițele seroase. (Sursă: Introducere în anatomie și fiziologie — membranele seroase.)"
         }
       ],
       "sourcePages": [
@@ -2209,27 +2209,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "este una dintre funcțiile importante",
-          "why": "Reproducerea este una dintre funcțiile importante ale organismului."
+          "why": "Reproducerea este una dintre funcțiile importante ale organismului. (Sursă: Introducere în anatomie și fiziologie — funcțiile organismului.)"
         },
         {
           "letter": "B",
           "text": "se realizează exclusiv pe cale sexuată",
-          "why": "Lecția include atât reproducerea sexuată a individului uman, cât și diviziunea asexuată a celulelor pentru creștere și reparare. De aceea nu se acceptă „exclusiv”."
+          "why": "Lecția include atât reproducerea sexuată a individului uman, cât și diviziunea asexuată a celulelor pentru creștere și reparare. De aceea nu se acceptă „exclusiv”. (Sursă: Introducere în anatomie și fiziologie — funcțiile organismului.)"
         },
         {
           "letter": "C",
           "text": "pe cale asexuată, se contopesc un spermatozoid cu un ovul pentru a forma un ovul fecundat",
-          "why": "Contopirea spermatozoidului cu ovulul este reproducere sexuată, nu asexuată."
+          "why": "Contopirea spermatozoidului cu ovulul este reproducere sexuată, nu asexuată. (Sursă: Introducere în anatomie și fiziologie — funcțiile organismului.)"
         },
         {
           "letter": "D",
           "text": "poate fi sexuată sau asexuată",
-          "why": "În sensul larg folosit în lecție, reproducerea cuprinde formarea individului prin fecundație și multiplicarea celulară asexuată. Nu înseamnă că omul se reproduce asexuat ca individ."
+          "why": "În sensul larg folosit în lecție, reproducerea cuprinde formarea individului prin fecundație și multiplicarea celulară asexuată. Nu înseamnă că omul se reproduce asexuat ca individ. (Sursă: Introducere în anatomie și fiziologie — funcțiile organismului.)"
         },
         {
           "letter": "E",
           "text": "reprezintă capacitatea organismului de a procrea",
-          "why": "Reproducerea este capacitatea organismului de a procrea."
+          "why": "Reproducerea este capacitatea organismului de a procrea. (Sursă: Introducere în anatomie și fiziologie — funcțiile organismului.)"
         }
       ],
       "sourcePages": [
@@ -2252,27 +2252,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "planul sagital este vertical și împarte corpul într-o parte dreaptă și una stângă",
-          "why": "Planul sagital este vertical și împarte corpul în dreapta și stânga."
+          "why": "Planul sagital este vertical și împarte corpul în dreapta și stânga. (Sursă: Introducere în anatomie și fiziologie — planurile corpului și figura 1.3.)"
         },
         {
           "letter": "B",
           "text": "planul sagital poartă numele și de plan coronal",
-          "why": "Planul coronal este plan frontal, nu sagital."
+          "why": "Planul coronal este plan frontal, nu sagital. (Sursă: Introducere în anatomie și fiziologie — planurile corpului și figura 1.3.)"
         },
         {
           "letter": "C",
           "text": "planul frontal împarte corpul într-o parte ventrală și una dorsală",
-          "why": "Planul frontal împarte corpul în parte ventrală și dorsală."
+          "why": "Planul frontal împarte corpul în parte ventrală și dorsală. (Sursă: Introducere în anatomie și fiziologie — planurile corpului și figura 1.3.)"
         },
         {
           "letter": "D",
           "text": "planul mediosagital divide corpul în două părți inegale",
-          "why": "Planul mediosagital împarte corpul în două părți egale, nu inegale."
+          "why": "Planul mediosagital împarte corpul în două părți egale, nu inegale. (Sursă: Introducere în anatomie și fiziologie — planurile corpului și figura 1.3.)"
         },
         {
           "letter": "E",
           "text": "planul orizontal împarte corpul într-o parte superioară și una inferioară",
-          "why": "Planul orizontal împarte corpul în superior și inferior."
+          "why": "Planul orizontal împarte corpul în superior și inferior. (Sursă: Introducere în anatomie și fiziologie — planurile corpului și figura 1.3.)"
         }
       ],
       "sourcePages": [
@@ -2295,27 +2295,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "este delimitată de coaste și mușchi intercostali",
-          "why": "Cavitatea toracică este delimitată de coaste și mușchi intercostali."
+          "why": "Cavitatea toracică este delimitată de coaste și mușchi intercostali. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "B",
           "text": "face parte din cavitatea posterioară a corpului",
-          "why": "Cavitatea toracică este parte a cavității anterioare, nu posterioare."
+          "why": "Cavitatea toracică este parte a cavității anterioare, nu posterioare. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "C",
           "text": "conține o cavitate pleurală stângă și una dreaptă",
-          "why": "Toracele conține cavitate pleurală stângă și dreaptă."
+          "why": "Toracele conține cavitate pleurală stângă și dreaptă. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "D",
           "text": "adăpostește plămânii, localizați în mediastin",
-          "why": "Toracele adăpostește plămânii în compartimentele laterale, de o parte și de alta a mediastinului. Localizarea lor în mediastin este partea falsă a variantei."
+          "why": "Toracele adăpostește plămânii în compartimentele laterale, de o parte și de alta a mediastinului. Localizarea lor în mediastin este partea falsă a variantei. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "E",
           "text": "conține cavitatea pericardică, situată medial față de cavitățile pleurale",
-          "why": "Cavitatea pericardică este medială față de cavitățile pleurale."
+          "why": "Cavitatea pericardică este medială față de cavitățile pleurale. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         }
       ],
       "sourcePages": [
@@ -2338,27 +2338,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "este mai des întâlnită sub denumirea de cavitate pelviană",
-          "why": "Cavitatea pelviană este doar subdiviziunea inferioară. Lecția numește uneori întregul ansamblu „peritoneal”, dar strict anatomic spațiul peritoneal și cavitatea abdomino-pelviană nu sunt identice."
+          "why": "Cavitatea pelviană este subdiviziunea inferioară a ansamblului abdomino-pelvian, nu denumirea întregii cavități. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4, membranele seroase.)"
         },
         {
           "letter": "B",
           "text": "este separată de cavitatea toracică printr-un mușchi numit diafragmă",
-          "why": "Diafragma separă cavitatea toracică de cea abdomino-pelviană."
+          "why": "Diafragma separă cavitatea toracică de cea abdomino-pelviană. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "C",
           "text": "subdiviziunea abdominală conține două glande digestive mari",
-          "why": "Subdiviziunea abdominală conține ficatul și pancreasul, glande digestive mari."
+          "why": "Subdiviziunea abdominală conține ficatul și pancreasul, glande digestive mari. (Sursă: Sistemul digestiv — figura 18.9 — ficatul și pancreasul, figura 18.1 — organele digestive în poziție anatomică.)"
         },
         {
           "letter": "D",
           "text": "subdiviziunea pelviană conține vezica urinară și intestinele",
-          "why": "Baremul exclude D, însă pelvisul conține vezica urinară și segmente intestinale, inclusiv rectul și colonul sigmoid; pot coborî și anse ale intestinului subțire. Formularea „intestinele” este imprecisă: nu toate segmentele sunt pelviene, dar prezența intestinului în pelvis nu este falsă. Cheia rămâne B, C, E."
+          "why": "Sursa enumeră în pelvis vezica urinară și rectul. Prin urmare, prezența unui segment intestinal în pelvis este confirmată; termenul general „intestinele” nu înseamnă că toate segmentele intestinale sunt pelviene. Baremul exclude varianta, iar formularea rămâne imprecisă. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         },
         {
           "letter": "E",
           "text": "subdiviziunea abdominală conține organe precum stomacul, splina și ficatul",
-          "why": "Stomacul, splina și ficatul sunt organe ale subdiviziunii abdominale."
+          "why": "Stomacul, splina și ficatul sunt organe ale subdiviziunii abdominale. (Sursă: Introducere în anatomie și fiziologie — cavitățile corpului și figura 1.4.)"
         }
       ],
       "sourcePages": [
@@ -2380,27 +2380,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "este format din piele, păr, unghii, glande endocrine",
-          "why": "Tegumentul are glande sudoripare, nu glande endocrine."
+          "why": "Tegumentul are glande sudoripare, nu glande endocrine. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         },
         {
           "letter": "B",
           "text": "acoperă și protejează corpul",
-          "why": "Tegumentul acoperă și protejează corpul."
+          "why": "Tegumentul acoperă și protejează corpul. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         },
         {
           "letter": "C",
           "text": "este format din cartilaje, păr, unghii",
-          "why": "Cartilajele aparțin scheletului, nu tegumentului."
+          "why": "Cartilajele aparțin scheletului, nu tegumentului. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         },
         {
           "letter": "D",
           "text": "realizează protecția corpului și integrează activitățile organismului",
-          "why": "Integrarea activităților organismului este rolul sistemului nervos."
+          "why": "Integrarea activităților organismului este rolul sistemului nervos. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         },
         {
           "letter": "E",
           "text": "este format din piele, păr, unghii, glande sudoripare",
-          "why": "Tegumentul este format din piele, păr, unghii și glande sudoripare."
+          "why": "Tegumentul este format din piele, păr, unghii și glande sudoripare. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         }
       ],
       "sourcePages": [
@@ -2422,27 +2422,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "moleculele, la cel mai simplu nivel",
-          "why": "Atomii, nu moleculele, reprezintă cel mai simplu nivel."
+          "why": "Atomii, nu moleculele, reprezintă cel mai simplu nivel. (Sursă: Introducere în anatomie și fiziologie — niveluri de organizare structurală.)"
         },
         {
           "letter": "B",
           "text": "atomi de O, C, N și Na",
-          "why": "Oxigenul, carbonul, azotul și sodiul sunt exemple de elemente alcătuite din atomi."
+          "why": "Oxigenul, carbonul, azotul și sodiul sunt exemple de elemente alcătuite din atomi. (Sursă: Introducere în anatomie și fiziologie — niveluri de organizare structurală.)"
         },
         {
           "letter": "C",
           "text": "molecule ca apă, clorură de sodiu",
-          "why": "Baremul acceptă formularea din lecție. Apa este moleculară, dar NaCl este un compus ionic: în cristal formează o rețea de ioni, iar în soluție este disociat. Expresia „molecule de clorură de sodiu” este o simplificare chimică improprie în acest context."
+          "why": "Lecția enumeră explicit apa și clorura de sodiu între exemplele date la nivelul moleculelor; explicația și baremul urmăresc terminologia acestei surse. (Sursă: Introducere în anatomie și fiziologie — niveluri de organizare structurală.)"
         },
         {
           "letter": "D",
           "text": "organe compuse dintr-un singur țesut",
-          "why": "Organele sunt alcătuite din două sau mai multe tipuri de țesuturi."
+          "why": "Organele sunt alcătuite din două sau mai multe tipuri de țesuturi. (Sursă: Introducere în anatomie și fiziologie — niveluri de organizare structurală.)"
         },
         {
           "letter": "E",
           "text": "sisteme de organe cu aceeași funcție",
-          "why": "Sistemele de organe au funcții complementare, nu aceeași funcție."
+          "why": "Sistemele de organe au funcții complementare, nu aceeași funcție. (Sursă: Introducere în anatomie și fiziologie — niveluri de organizare structurală.)"
         }
       ],
       "sourcePages": [
@@ -2465,27 +2465,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "homeostazia menține parametrii mediului extern în limite normale",
-          "why": "Homeostazia menține mediul intern, nu mediul extern."
+          "why": "Homeostazia menține mediul intern, nu mediul extern. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "B",
           "text": "excreția reprezintă procesul de eliminare a produșilor de sinteză",
-          "why": "Definiția introductivă a excreției privește eliminarea produșilor de degradare și a altor deșeuri, nu eliminarea tuturor produșilor de sinteză. Totuși, unele substanțe excretate sunt sintetizate: ureea este formată în ficat înainte de eliminarea urinară."
+          "why": "Excreția este definită în lecție prin îndepărtarea produșilor de degradare ai organismului, nu prin eliminarea produșilor de sinteză. (Sursă: Introducere în anatomie și fiziologie — funcțiile organismului.)"
         },
         {
           "letter": "C",
           "text": "metabolismul prezintă două subcategorii: catabolismul și anabolismul",
-          "why": "Metabolismul include anabolismul și catabolismul."
+          "why": "Metabolismul include anabolismul și catabolismul. (Sursă: Introducere în anatomie și fiziologie — funcțiile organismului.)"
         },
         {
           "letter": "D",
           "text": "mișcarea voluntară este rezultatul contracției mușchilor scheletici",
-          "why": "Mișcarea voluntară rezultă din contracția mușchilor scheletici."
+          "why": "Mișcarea voluntară rezultă din contracția mușchilor scheletici. (Sursă: Introducere în anatomie și fiziologie — funcțiile organismului.)"
         },
         {
           "letter": "E",
           "text": "conductibilitatea este proprietatea unor celule de a propaga potențiale de acțiune sub formă de undă de depolarizare",
-          "why": "Conductibilitatea este propagarea unui stimul sub formă de undă de depolarizare."
+          "why": "Conductibilitatea este propagarea unui stimul sub formă de undă de depolarizare. (Sursă: Introducere în anatomie și fiziologie — funcțiile organismului.)"
         }
       ],
       "sourcePages": [
@@ -2510,27 +2510,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "feed-back-ul pozitiv, care determină devierea de la valoarea de referință până la obținerea răspunsului dorit",
-          "why": "Feedbackul pozitiv amplifică devierea până la răspunsul dorit."
+          "why": "Feedbackul pozitiv amplifică devierea până la răspunsul dorit. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "B",
           "text": "valoarea de referință, care reprezintă valoarea normală a unui factor variabil",
-          "why": "Valoarea de referință este valoarea normală a factorului variabil."
+          "why": "Valoarea de referință este valoarea normală a factorului variabil. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "C",
           "text": "feed-back-ul negativ, care intervine în mod excepțional pentru menținerea homeostaziei",
-          "why": "Feedbackul negativ este principalul mecanism de menținere a homeostaziei, nu unul excepțional."
+          "why": "Feedbackul negativ este principalul mecanism de menținere a homeostaziei, nu unul excepțional. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "D",
           "text": "receptorul, care detectează devierile de la valoarea de referință",
-          "why": "Receptorul detectează devierea de la valoarea de referință."
+          "why": "Receptorul detectează devierea de la valoarea de referință. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         },
         {
           "letter": "E",
           "text": "efectorii, care pot readuce organismul la starea de echilibru",
-          "why": "Efectorii produc răspunsul care readuce organismul spre echilibru."
+          "why": "Efectorii produc răspunsul care readuce organismul spre echilibru. (Sursă: Introducere în anatomie și fiziologie — homeostazia și mecanismele de feed-back.)"
         }
       ],
       "sourcePages": [
@@ -2555,27 +2555,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "regiunea ombilicală se află în centrul abdomenului",
-          "why": "Regiunea ombilicală este în centrul abdomenului."
+          "why": "Regiunea ombilicală este în centrul abdomenului. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5.)"
         },
         {
           "letter": "B",
           "text": "regiunea hipogastrică se află superior față de regiunea ombilicală",
-          "why": "Hipogastrica este inferior față de ombilicală, nu superior."
+          "why": "Hipogastrica este inferior față de ombilicală, nu superior. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5.)"
         },
         {
           "letter": "C",
           "text": "regiunea epigastrică este situată între hipocondrul drept și stâng",
-          "why": "Epigastrica este între hipocondrul drept și cel stâng."
+          "why": "Epigastrica este între hipocondrul drept și cel stâng. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5.)"
         },
         {
           "letter": "D",
           "text": "lateral de regiunea ombilicală se află flancurile stâng și drept",
-          "why": "Flancurile drept și stâng sunt laterale de regiunea ombilicală."
+          "why": "Flancurile drept și stâng sunt laterale de regiunea ombilicală. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5.)"
         },
         {
           "letter": "E",
           "text": "lateral de regiunea hipogastrică se află regiunile iliace",
-          "why": "Regiunile iliace sunt laterale de regiunea hipogastrică."
+          "why": "Regiunile iliace sunt laterale de regiunea hipogastrică. (Sursă: Introducere în anatomie și fiziologie — regiunile abdomino-pelviene și figura 1.5.)"
         }
       ],
       "sourcePages": [
@@ -2598,27 +2598,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "endocrin - coordonează și integrează mecanic activitățile organismului",
-          "why": "Sistemul endocrin coordonează chimic activitățile organismului, nu mecanic."
+          "why": "Sistemul endocrin coordonează chimic activitățile organismului, nu mecanic. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         },
         {
           "letter": "B",
           "text": "nervos - integrează informațiile primite prin stimuli și coordonează funcțiile organismului",
-          "why": "Sistemul nervos integrează informațiile primite prin stimuli și coordonează funcțiile."
+          "why": "Sistemul nervos integrează informațiile primite prin stimuli și coordonează funcțiile. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         },
         {
           "letter": "C",
           "text": "circulator - transportă celule și substanțe în tot corpul",
-          "why": "Sistemul circulator transportă celule și substanțe în corp."
+          "why": "Sistemul circulator transportă celule și substanțe în corp. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         },
         {
           "letter": "D",
           "text": "imunitar - interacționează cu agenți străini",
-          "why": "Sistemul imunitar interacționează cu agenți străini."
+          "why": "Sistemul imunitar interacționează cu agenți străini. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         },
         {
           "letter": "E",
           "text": "respirator - colectează dioxidul de carbon și elimină oxigenul",
-          "why": "Sistemul respirator colectează oxigenul și elimină dioxidul de carbon."
+          "why": "Sistemul respirator colectează oxigenul și elimină dioxidul de carbon. (Sursă: Introducere în anatomie și fiziologie — tabelul sistemelor de organe.)"
         }
       ],
       "sourcePages": [
@@ -2641,27 +2641,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "esofagul este situat anterior de trahee",
-          "why": "Traheea este anterior față de esofag, deci esofagul este posterior față de trahee."
+          "why": "Traheea este anterior față de esofag, deci esofagul este posterior față de trahee. (Sursă: Introducere în anatomie și fiziologie — termeni direcționali.)"
         },
         {
           "letter": "B",
           "text": "colonul ascendent și colonul descendent sunt situate ipsilateral",
-          "why": "Colonul ascendent și descendent sunt pe părți opuse, deci controlaterale."
+          "why": "Colonul ascendent și descendent sunt pe părți opuse, deci controlaterale. (Sursă: Introducere în anatomie și fiziologie — termeni direcționali.)"
         },
         {
           "letter": "C",
           "text": "tibia se află distal față de femur",
-          "why": "Tibia este distală față de femur."
+          "why": "Tibia este distală față de femur. (Sursă: Introducere în anatomie și fiziologie — termeni direcționali.)"
         },
         {
           "letter": "D",
           "text": "humerusul este localizat proximal de ulnă",
-          "why": "Humerusul este proximal față de ulnă."
+          "why": "Humerusul este proximal față de ulnă. (Sursă: Oasele și articulațiile — clasificarea oaselor și figura 6.1; Introducere în anatomie și fiziologie — termeni direcționali.)"
         },
         {
           "letter": "E",
           "text": "inima este situată posterior față de stern",
-          "why": "Inima este posterior față de stern."
+          "why": "Inima este posterior față de stern. (Sursă: Introducere în anatomie și fiziologie — termeni direcționali.)"
         }
       ],
       "sourcePages": [

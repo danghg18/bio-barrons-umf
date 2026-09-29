@@ -22,27 +22,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "îndepărtează reziduurile metabolice de la nivelul țesuturilor",
-          "why": "Drenajul limfatic preia lichid și produși din spațiul interstițial."
+          "why": "Drenajul limfatic preia lichid și produși din spațiul interstițial. Sursa: Sistemul limfatic și imun — Funcțiile sistemului limfatic."
         },
         {
           "letter": "B",
           "text": "asigură o circulație a limfei bidirecțională",
-          "why": "Limfa circulă într-un singur sens, din țesuturi spre vene."
+          "why": "Limfa circulă într-un singur sens, din țesuturi spre vene. Sursa: Sistemul limfatic și imun — Funcțiile sistemului limfatic."
         },
         {
           "letter": "C",
           "text": "este responsabil de apărarea nespecifică a organismului",
-          "why": "Baremul exclude C, însă sistemul limfatic participă și la apărarea înnăscută: macrofagele ganglionare captează agenți patogeni și limitează răspândirea lor. Accentul manualului pe apărarea specifică poate explica selecția didactică, fără să anuleze rolul nespecific real."
+          "why": "Manualul descrie apărarea specifică, dar tabelul organelor limfatice menționează și înglobarea agenților patogeni. Baremul exclude C; prezența fagocitozei în sursă nu permite negarea oricărei contribuții la apărarea nespecifică. Sursa: Sistemul limfatic și imun — Funcțiile sistemului limfatic; Sistemul limfatic și imun — Organele sistemului limfatic, tabelul 16.1."
         },
         {
           "letter": "D",
           "text": "asigură nutrienți celulelor din țesuturi",
-          "why": "În sensul lecției, sistemul limfatic participă la transportul nutrienților, în special al lipidelor absorbite intestinal; aportul principal de O₂ și nutrienți către țesuturi rămâne sanguin."
+          "why": "Manualul spune explicit că sistemul limfatic, similar celui cardiovascular, asigură nutrienți celulelor din țesuturi. Sursa: Sistemul limfatic și imun — Funcțiile sistemului limfatic."
         },
         {
           "letter": "E",
           "text": "se formează în țesuturi și se extinde spre inimă",
-          "why": "Rețeaua începe prin capilare în țesuturi și conduce limfa spre întoarcerea venoasă."
+          "why": "Rețeaua începe prin capilare în țesuturi și conduce limfa spre întoarcerea venoasă. Sursa: Sistemul limfatic și imun — Funcțiile sistemului limfatic."
         }
       ],
       "sourcePages": [
@@ -65,27 +65,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "se formează în cavitatea abdominală",
-          "why": "Ductul toracic își are originea în abdomen, de obicei la cisterna chilului."
+          "why": "Ductul toracic se formează în cavitatea abdominală și urcă în torace. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "B",
           "text": "este situat anterior de esofag",
-          "why": "Ductul toracic este posterior de esofag."
+          "why": "Ductul toracic este posterior de esofag. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "C",
           "text": "își golește conținutul în vena subclaviculară dreaptă",
-          "why": "Se varsă în unghiul venos stâng, descris în lecție prin vena subclaviculară stângă."
+          "why": "Manualul precizează vărsarea ductului toracic în vena subclaviculară stângă, nu dreaptă. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "D",
           "text": "drenează toată zona subdiafragmatică",
-          "why": "Drenează teritoriile situate sub diafragmă."
+          "why": "Drenează teritoriile situate sub diafragmă. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "E",
           "text": "înapoiază fluide din țesuturi în sistemul cardiovascular",
-          "why": "Limfa este reintrodusă în circulația venoasă prin ductul toracic."
+          "why": "Limfa este reintrodusă în circulația venoasă prin ductul toracic. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         }
       ],
       "sourcePages": [
@@ -107,27 +107,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "drenează fluidul interstițial din țesuturi",
-          "why": "Baremul exclude A ca diferență, potrivit modelului didactic în care fluidul revine atât direct în vasele sanguine, cât și prin limfă. Modelul necesită nuanțare: în multe țesuturi, la echilibru, predomină filtrarea microvasculară și revenirea prin limfatice; reabsorbția directă poate fi tranzitorie."
+          "why": "Figura și textul explică revenirea unei părți a fluidului direct în sistemul circulator și a altei părți prin limfă. Drenarea fluidului tisular nu este selectată ca diferență. Sursa: Sistemul limfatic și imun — Valvele și circulația limfei."
         },
         {
           "letter": "B",
           "text": "capilarele limfatice sunt mai permeabile decât capilarele sanguine",
-          "why": "Capilarele limfatice permit intrarea mai ușoară a macromoleculelor și fluidului."
+          "why": "Capilarele limfatice permit intrarea mai ușoară a macromoleculelor și fluidului. Sursa: Sistemul limfatic și imun — Capilarele limfatice."
         },
         {
           "letter": "C",
           "text": "este unidirecțională",
-          "why": "Baremul selectează C pentru traseul limfei din țesuturi spre vene. Și sângele are un sens normal de curgere; deosebirea urmărită în terminologia lecției este traseul limfatic fără circuit închis, nu existența refluxului sanguin."
+          "why": "Baremul selectează C pentru traseul limfei din țesuturi spre vene. Și sângele are un sens normal de curgere; deosebirea urmărită în terminologia lecției este traseul limfatic fără circuit închis, nu existența refluxului sanguin. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "D",
           "text": "transportă acizi grași, monocite, limfocite",
-          "why": "Sângele transportă și el acizi grași și leucocite, deci nu este un criteriu distinctiv."
+          "why": "Sângele transportă și el acizi grași și leucocite, deci nu este un criteriu distinctiv. Sursa: Sistemul limfatic și imun — Formarea și compoziția limfei; Sângele — Componentele majore ale sângelui, tabelul 14.1."
         },
         {
           "letter": "E",
           "text": "transportă nutrienți și reziduuri metabolice",
-          "why": "Transportul nutrienților și reziduurilor este comun celor două sisteme."
+          "why": "Transportul nutrienților și reziduurilor este comun celor două sisteme. Sursa: Sistemul limfatic și imun — Funcțiile sistemului limfatic."
         }
       ],
       "sourcePages": [
@@ -150,27 +150,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "asigură nutrienți celulelor din țesuturi",
-          "why": "Ambele contribuie la transportul nutrienților; limfa are un rol important pentru lipidele intestinale."
+          "why": "Ambele contribuie la transportul nutrienților; limfa are un rol important pentru lipidele intestinale. Sursa: Sistemul limfatic și imun — Funcțiile sistemului limfatic."
         },
         {
           "letter": "B",
           "text": "transportă eritrocite, limfocite și proteine din grupul gama globulinelor",
-          "why": "Limfa normală nu transportă eritrocite ca elemente caracteristice, spre deosebire de sânge."
+          "why": "Sursa descrie în limfă limfocite și monocite, iar eritrocitele sunt prezentate ca elemente sanguine. Nu oferă suport pentru includerea eritrocitelor în compoziția obișnuită a limfei. Sursa: Sistemul limfatic și imun — Formarea și compoziția limfei; Sângele — Globulele roșii: structură, număr și producere."
         },
         {
           "letter": "C",
           "text": "capilarele limfatice, la fel cu cele sanguine, asigură o circulație unidirecțională, dinspre inimă spre țesuturi",
-          "why": "Limfa curge din țesuturi spre întoarcerea venoasă, nu dinspre inimă spre țesuturi."
+          "why": "Limfa curge din țesuturi spre întoarcerea venoasă, nu dinspre inimă spre țesuturi. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "D",
           "text": "prin ambele circulații reintră în vene o parte din fluidul interstițial din țesuturi",
-          "why": "Baremul include D conform modelului clasic al revenirii fluidului direct în capilarele sanguine și prin limfatice. În multe țesuturi, schimburile la echilibru sunt predominant filtrante, iar drenajul limfatic asigură revenirea fluidului; reabsorbția microvasculară directă poate fi tranzitorie."
+          "why": "Legenda figurii precizează că cea mai mare parte a fluidului revine în sistemul circulator, iar o fracțiune mai mică intră în capilarele limfatice și revine pe această cale. Sursa: Sistemul limfatic și imun — Valvele și circulația limfei."
         },
         {
           "letter": "E",
           "text": "îndepărtează reziduurile metabolice de la nivelul țesuturilor",
-          "why": "Ambele căi contribuie la îndepărtarea produșilor reziduali din țesuturi."
+          "why": "Ambele căi contribuie la îndepărtarea produșilor reziduali din țesuturi. Sursa: Sistemul limfatic și imun — Funcțiile sistemului limfatic."
         }
       ],
       "sourcePages": [
@@ -193,27 +193,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "vasele limfatice sunt structuri cu pereți subțiri",
-          "why": "Pereții subțiri permit deformarea vaselor limfatice la compresia produsă de mușchi și țesuturile vecine, contribuind la deplasarea limfei."
+          "why": "Vasele limfatice sunt descrise explicit ca structuri cu pereți subțiri, răspândite în organism. Sursa: Sistemul limfatic și imun — Capilarele limfatice."
         },
         {
           "letter": "B",
           "text": "vasele limfatice sunt adaptate pentru îndepărtarea moleculelor mari",
-          "why": "Capilarele limfatice permit preluarea macromoleculelor, inclusiv a proteinelor interstițiale."
+          "why": "Capilarele limfatice permit preluarea macromoleculelor, inclusiv a proteinelor interstițiale. Sursa: Sistemul limfatic și imun — Valvele și circulația limfei."
         },
         {
           "letter": "C",
           "text": "capilarele limfatice sunt alcătuite dintr-un endoteliu impermeabil",
-          "why": "Endoteliul limfatic este foarte permeabil, nu impermeabil."
+          "why": "Endoteliul limfatic este foarte permeabil, nu impermeabil. Sursa: Sistemul limfatic și imun — Capilarele limfatice."
         },
         {
           "letter": "D",
           "text": "vasele limfatice sunt mai numeroase în tegumente, în special în hipoderm",
-          "why": "Lecția subliniază densitatea vaselor limfatice în derm, nu în hipoderm."
+          "why": "Lecția subliniază densitatea vaselor limfatice în derm, nu în hipoderm. Sursa: Sistemul limfatic și imun — Capilarele limfatice."
         },
         {
           "letter": "E",
           "text": "vasele limfatice au numeroase valve",
-          "why": "Valvele împiedică refluxul și favorizează curgerea spre vene."
+          "why": "Valvele împiedică refluxul și favorizează curgerea spre vene. Sursa: Sistemul limfatic și imun — Valvele și circulația limfei."
         }
       ],
       "sourcePages": [
@@ -236,27 +236,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "în vasele limfatice circulația este ajutată de presiunea exercitată de contracția mușchilor striați scheletici asupra pereților vaselor",
-          "why": "Contracțiile mușchilor scheletici comprimă vasele și ajută deplasarea limfei."
+          "why": "Contracțiile mușchilor scheletici comprimă vasele și ajută deplasarea limfei. Sursa: Sistemul limfatic și imun — Valvele și circulația limfei."
         },
         {
           "letter": "B",
           "text": "circulația limfatică se realizează bidirecțional, într-un circuit închis",
-          "why": "Capilarele limfatice încep în țesuturi, iar colectoarele conduc limfa spre vene. Rețeaua nu formează circuitul închis inimă–țesuturi–inimă al circulației sanguine."
+          "why": "Capilarele limfatice încep în țesuturi, iar colectoarele conduc limfa spre vene. Rețeaua nu formează circuitul închis inimă–țesuturi–inimă al circulației sanguine. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "C",
           "text": "nodulii limfatici asigură filtrarea limfei",
-          "why": "Limfa traversează sinusurile ganglionare, unde macrofagele captează particule și microorganisme, iar celulele imune întâlnesc antigene."
+          "why": "Nodulii limfatici sunt filtre pentru limfă înainte de întoarcerea acesteia în circulația sanguină. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "D",
           "text": "ductul toracic drenează numai jumătatea stângă supradiafragmatică a organismului",
-          "why": "Ductul toracic drenează și întreaga regiune subdiafragmatică."
+          "why": "Ductul toracic drenează și întreaga regiune subdiafragmatică. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "E",
           "text": "ductul limfatic drept drenează jumătatea dreaptă supradiafragmatică a organismului",
-          "why": "Ductul drept drenează cadranul superior drept al corpului."
+          "why": "Ductul drept drenează cadranul superior drept al corpului. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         }
       ],
       "sourcePages": [
@@ -279,27 +279,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "este o masă de țesut delimitată de o capsulă",
-          "why": "Capsula conjunctivă delimitează ganglionul și trimite în interior prelungiri care susțin organizarea țesutului limfoid."
+          "why": "Capsula conjunctivă delimitează ganglionul și trimite în interior prelungiri care susțin organizarea țesutului limfoid. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "B",
           "text": "filtrează limfa care pătrunde prin vasele limfatice aferente",
-          "why": "Baremul exclude B, deși filtrarea limfei și intrarea ei prin vase aferente sunt corecte. Este posibil ca selecția să separe funcția de cerința despre structură, dar varianta conține și informație anatomică adevărată; nu trebuie învățată ca fals biologic."
+          "why": "Baremul exclude B, deși filtrarea limfei și intrarea ei prin vase aferente sunt corecte. Este posibil ca selecția să separe funcția de cerința despre structură, dar varianta conține și informație anatomică adevărată; nu trebuie învățată ca fals biologic. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "C",
           "text": "conține vase limfatice eferente care intră în nodul",
-          "why": "Vasele aferente intră în ganglion; cele eferente ies."
+          "why": "Vasele aferente intră în ganglion; cele eferente ies. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "D",
           "text": "cortexul este organizat în foliculi, care au central centri germinali",
-          "why": "Foliculii corticali activi conțin centri germinali. Nu fiecare folicul primar are un centru germinal, precizare omisă de formularea generală."
+          "why": "Manualul descrie cortexul cu foliculi limfocitari și centri germinali în centrul acestora. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "E",
           "text": "în interiorul lobulilor există fibre de reticulină",
-          "why": "Fibrele de reticulină susțin celulele țesutului limfoid."
+          "why": "Fibrele de reticulină susțin celulele țesutului limfoid. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         }
       ],
       "sourcePages": [
@@ -322,27 +322,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "sunt agregate de țesut limfoid localizate în interiorul cavității orale și a faringelui",
-          "why": "Baremul exclude A. Amigdalele se află în țesuturile pereților regiunii orale și faringiene, sub epiteliu, nu libere în lumen. Formularea regională poate fi înțeleasă corect în sens larg; excluderea ei este ambiguă, nu dovedește că aceste localizări ar fi complet greșite."
+          "why": "Baremul exclude A. Amigdalele se află în țesuturile pereților regiunii orale și faringiene, sub epiteliu, nu libere în lumen. Formularea regională poate fi înțeleasă corect în sens larg; excluderea ei este ambiguă, nu dovedește că aceste localizări ar fi complet greșite. Sursa: Sistemul limfatic și imun — Amigdalele și plăcile Peyer."
         },
         {
           "letter": "B",
           "text": "amigdalele adenoide sunt situate în partea superioară a faringelui",
-          "why": "Amigdala faringiană este în regiunea superioară a faringelui, nazofaringele."
+          "why": "Amigdala faringiană este în regiunea superioară a faringelui, nazofaringele. Sursa: Sistemul limfatic și imun — Amigdalele și plăcile Peyer."
         },
         {
           "letter": "C",
           "text": "amigdalele linguale sunt localizate în țesutul limbii",
-          "why": "Amigdalele linguale se află la baza limbii."
+          "why": "Amigdalele linguale se află la baza limbii. Sursa: Sistemul limfatic și imun — Amigdalele și plăcile Peyer."
         },
         {
           "letter": "D",
           "text": "plăcile lui Peyer sunt aglomerări de țesut limfoid situate în special în ileon",
-          "why": "Afirmația despre plăcile Peyer este adevărată, dar acestea nu sunt amigdale, subiectul întrebării."
+          "why": "Afirmația despre plăcile Peyer este adevărată, dar acestea nu sunt amigdale, subiectul întrebării. Sursa: Sistemul limfatic și imun — Amigdalele și plăcile Peyer."
         },
         {
           "letter": "E",
           "text": "amigdalele palatine sunt localizate sub osul palatin",
-          "why": "Este reperul simplificat din lecție; amigdalele palatine se află în orofaringe, între arcurile palatine, inferior palatului."
+          "why": "Manualul situează amigdalele palatine sub osul palatin; acesta este reperul cerut. Sursa: Sistemul limfatic și imun — Amigdalele și plăcile Peyer."
         }
       ],
       "sourcePages": [
@@ -365,27 +365,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "se formează în cavitatea abdominală",
-          "why": "Ductul toracic începe în abdomen prin colectarea limfei din trunchiurile inferioare, frecvent la nivelul cisternei chilului, înainte de a urca în torace."
+          "why": "Manualul precizează formarea ductului toracic în cavitatea abdominală. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "B",
           "text": "străbate diafragma",
-          "why": "Ductul urcă din abdomen în torace prin hiatusul aortic al diafragmei, alături de aortă."
+          "why": "Ductul se formează în abdomen și continuă ascendent în torace; traversarea diafragmei se deduce din acest traseu. Sursa nu numește aici orificiul traversat. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "C",
           "text": "colectează limfă de la nodulii limfatici axilari stângi",
-          "why": "Drenajul membrului superior stâng ajunge la întoarcerea limfatică stângă."
+          "why": "Drenajul membrului superior stâng ajunge la întoarcerea limfatică stângă. Sursa: Sistemul limfatic și imun — Figura 16.2."
         },
         {
           "letter": "D",
           "text": "nu prezintă pe traiectul său valve",
-          "why": "Ductul toracic prezintă valve care limitează refluxul limfei; lipsa lor nu este o caracteristică a ductului."
+          "why": "Ductul toracic prezintă valve care limitează refluxul limfei; lipsa lor nu este o caracteristică a ductului. Sursa: Sistemul limfatic și imun — Valvele și circulația limfei."
         },
         {
           "letter": "E",
           "text": "își golește conținutul în vena subclaviculară dreaptă",
-          "why": "Vărsarea este la stânga, nu în vena subclaviculară dreaptă."
+          "why": "Vărsarea este la stânga, nu în vena subclaviculară dreaptă. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         }
       ],
       "sourcePages": [
@@ -408,27 +408,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "pot transporta chilomicronii sintetizați în celulele mucoasei intestinale",
-          "why": "Chilomicronii formați în enterocite intră în capilarele limfatice intestinale."
+          "why": "Chilomicronii formați în enterocite intră în capilarele limfatice intestinale. Sursa: Metabolism și nutriție — Chilomicronii."
         },
         {
           "letter": "B",
           "text": "au valve",
-          "why": "Prezența valvelor este un caracter anatomic real, nu o funcție."
+          "why": "Prezența valvelor este un caracter anatomic real, nu o funcție. Sursa: Sistemul limfatic și imun — Valvele și circulația limfei."
         },
         {
           "letter": "C",
           "text": "transportă limfă de la țesuturile periferice la venele sistemului cardiovascular",
-          "why": "Colectoarele limfatice reunesc limfa preluată din interstițiu și o conduc către ductele care se deschid în sistemul venos."
+          "why": "Colectoarele limfatice reunesc limfa preluată din interstițiu și o conduc către ductele care se deschid în sistemul venos. Sursa: Sistemul limfatic și imun — Organele sistemului limfatic, tabelul 16.1."
         },
         {
           "letter": "D",
           "text": "încep în țesuturi prin capilare limfatice",
-          "why": "Originea în capilare tisulare este un caracter anatomic, nu funcțional."
+          "why": "Originea în capilare tisulare este un caracter anatomic, nu funcțional. Sursa: Sistemul limfatic și imun — Capilarele limfatice."
         },
         {
           "letter": "E",
           "text": "drenează fluide din țesuturi în sistemul cardiovascular",
-          "why": "Drenajul fluidului interstițial către sânge este funcția principală a rețelei limfatice."
+          "why": "Drenajul fluidului interstițial către sânge este funcția principală a rețelei limfatice. Sursa: Sistemul limfatic și imun — Funcțiile sistemului limfatic."
         }
       ],
       "sourcePages": [
@@ -452,27 +452,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "transportă proteine",
-          "why": "Transportul proteinelor este o funcție reală, dar se cer caractere anatomice."
+          "why": "Transportul proteinelor este o funcție reală, dar se cer caractere anatomice. Sursa: Sistemul limfatic și imun — Valvele și circulația limfei."
         },
         {
           "letter": "B",
           "text": "prezintă în interior valve",
-          "why": "Valvele intraluminale ale colectoarelor se închid la tendința de reflux, ajutând deplasarea limfei spre ductele terminale."
+          "why": "Valvele intraluminale ale colectoarelor se închid la tendința de reflux, ajutând deplasarea limfei spre ductele terminale. Sursa: Sistemul limfatic și imun — Valvele și circulația limfei."
         },
         {
           "letter": "C",
           "text": "străbat și nodulii limfatici inghinali",
-          "why": "Vasele aferente și eferente conectează ganglionii inghinali în traseul limfatic."
+          "why": "Vasele aferente și eferente conectează ganglionii inghinali în traseul limfatic. Sursa: Sistemul limfatic și imun — Localizarea nodulilor și vasele aferente/eferente."
         },
         {
           "letter": "D",
           "text": "încep în țesuturi prin capilare, ce au un strat endotelial ca și capilarele sanguine",
-          "why": "Capilarele limfatice au perete endotelial subțire, ca și cele sanguine, dar cu permeabilitate mai mare."
+          "why": "Capilarele limfatice au perete endotelial subțire, ca și cele sanguine, dar cu permeabilitate mai mare. Sursa: Sistemul limfatic și imun — Capilarele limfatice."
         },
         {
           "letter": "E",
           "text": "sunt structuri cu pereți subțiri răspândite în întreg organismul",
-          "why": "Rețeaua limfatică are vase cu pereți subțiri, răspândite larg; expresia generală nu înseamnă că fiecare țesut conține capilare limfatice."
+          "why": "Rețeaua limfatică are vase cu pereți subțiri, răspândite larg; expresia generală nu înseamnă că fiecare țesut conține capilare limfatice. Sursa: Sistemul limfatic și imun — Capilarele limfatice."
         }
       ],
       "sourcePages": [
@@ -497,27 +497,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "este concavă la contactul ei cu diafragma",
-          "why": "Fața diafragmatică a splinei este convexă."
+          "why": "Fața diafragmatică a splinei este convexă. Sursa: Sistemul limfatic și imun — Anatomia splinei."
         },
         {
           "letter": "B",
           "text": "reciclează fierul și îl trimite la ficat",
-          "why": "Macrofagele splenice recuperează fierul din hematii; acesta poate fi transportat spre ficat și reutilizat."
+          "why": "Macrofagele splenice recuperează fierul din hematii; acesta poate fi transportat spre ficat și reutilizat. Sursa: Sistemul limfatic și imun — Funcțiile splinei."
         },
         {
           "letter": "C",
           "text": "este sediul unor celule care reglează răspunsul imun",
-          "why": "Splina conține limfocite și celule prezentatoare de antigen implicate în răspunsul imun."
+          "why": "Tabelul organelor limfatice spune explicit că splina este sediul celulelor care reglează răspunsul imun. Sursa: Sistemul limfatic și imun — Organele sistemului limfatic, tabelul 16.1."
         },
         {
           "letter": "D",
           "text": "este localizată în porțiunea superioară stângă a cavității abdominale",
-          "why": "Splina se găsește în abdomenul superior stâng, sub diafragmă."
+          "why": "Splina se găsește în abdomenul superior stâng, sub diafragmă. Sursa: Sistemul limfatic și imun — Anatomia splinei."
         },
         {
           "letter": "E",
           "text": "este tributară venei splenice, afluent al venei porte",
-          "why": "Vena splenică drenează splina și contribuie la formarea venei porte."
+          "why": "Vena splenică drenează splina și contribuie la formarea venei porte. Sursa: Sistemul cardiovascular — Sistemul port hepatic, figura 15.11."
         }
       ],
       "sourcePages": [
@@ -539,27 +539,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "este compartimentată în lobuli",
-          "why": "Trabeculele splenice nu o împart în lobuli ca în descrierea ganglionilor."
+          "why": "Trabeculele splenice nu o împart în lobuli ca în descrierea ganglionilor. Sursa: Sistemul limfatic și imun — Anatomia splinei."
         },
         {
           "letter": "B",
           "text": "reprezintă un rezervor de limfocite pentru organism",
-          "why": "Baremul exclude B din cerința despre caractere anatomice. Splina găzduiește numeroase limfocite, dar rolul de rezervor descrie aici funcția organului, nu forma sau raporturile sale."
+          "why": "Baremul exclude B din cerința despre caractere anatomice. Splina găzduiește numeroase limfocite, dar rolul de rezervor descrie aici funcția organului, nu forma sau raporturile sale. Sursa: Sistemul limfatic și imun — Funcțiile splinei."
         },
         {
           "letter": "C",
           "text": "macrofagele splenice fagocitează hematii îmbătrânite sau distruse",
-          "why": "Fagocitoza hematiilor este o funcție adevărată, dar întrebarea cere caractere anatomice."
+          "why": "Fagocitoza hematiilor este o funcție adevărată, dar întrebarea cere caractere anatomice. Sursa: Sistemul limfatic și imun — Funcțiile splinei."
         },
         {
           "letter": "D",
           "text": "este delimitată de o capsulă de țesut conjunctiv",
-          "why": "Capsula conjunctivă acoperă splina și trimite trabecule în interior, fără a delimita lobuli compleți ca în descrierea ganglionului."
+          "why": "Capsula conjunctivă acoperă splina și trimite trabecule în interior, fără a delimita lobuli compleți ca în descrierea ganglionului. Sursa: Sistemul limfatic și imun — Anatomia splinei."
         },
         {
           "letter": "E",
           "text": "vine în raport cu rinichiul stâng și stomacul",
-          "why": "Fața viscerală are raporturi cu stomacul și rinichiul stâng."
+          "why": "Fața viscerală are raporturi cu stomacul și rinichiul stâng. Sursa: Sistemul limfatic și imun — Anatomia splinei."
         }
       ],
       "sourcePages": [
@@ -581,27 +581,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "este un organ al sistemului limfatic",
-          "why": "Timusul este un organ limfoid primar deoarece aici se dezvoltă și se selectează limfocitele T înainte de popularea organelor limfoide periferice."
+          "why": "Timusul este considerat organ limfatic datorită structurii sale și maturării limfocitelor T în lobulii săi. Sursa: Sistemul limfatic și imun — Timusul."
         },
         {
           "letter": "B",
           "text": "este localizat în mediastin, anterior față de stern",
-          "why": "Este posterior de stern, nu anterior."
+          "why": "Este posterior de stern, nu anterior. Sursa: Sistemul limfatic și imun — Timusul."
         },
         {
           "letter": "C",
           "text": "secretă timozine care contribuie la maturarea limfocitelor T și B",
-          "why": "Baremul exclude C; manualul asociază timozinele cu maturarea limfocitelor T, iar maturarea primară B are loc în măduva osoasă. Experimental, timozinele pot stimula indirect producția unor factori de creștere B prin celule T activate. Aceasta nu demonstrează maturarea primară B în timus, dar nici locul maturării nu justifică negarea oricărei influențe a timozinelor asupra liniei B."
+          "why": "Timozinele sunt legate în manual de maturarea limfocitelor T; sursa nu le atribuie maturarea limfocitelor B. Sursa: Sistemul limfatic și imun — Timusul."
         },
         {
           "letter": "D",
           "text": "are numai rol de glandă endocrină",
-          "why": "Timusul are rol limfoid, prin maturarea limfocitelor T, și secretă factori precum timozinele; cuvântul „numai” exclude nejustificat funcția imună."
+          "why": "Timusul are rol limfoid, prin maturarea limfocitelor T, și secretă factori precum timozinele; cuvântul „numai” exclude nejustificat funcția imună. Sursa: Sistemul limfatic și imun — Timusul."
         },
         {
           "letter": "E",
           "text": "controlează dezvoltarea și maturarea limfocitelor T",
-          "why": "În timus are loc maturarea și selecția limfocitelor T."
+          "why": "Tabelul organelor limfatice atribuie timusului controlul dezvoltării și maturării limfocitelor T. Sursa: Sistemul limfatic și imun — Timusul."
         }
       ],
       "sourcePages": [
@@ -625,27 +625,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "splina monitorizează sângele circulant",
-          "why": "Macrofagele și limfocitele splenice întâlnesc elementele și antigenele aduse de sânge; splina îndepărtează inclusiv eritrocitele îmbătrânite."
+          "why": "Tabelul atribuie splinei monitorizarea sângelui circulant, iar textul descrie îndepărtarea globulelor roșii îmbătrânite. Sursa: Sistemul limfatic și imun — Organele sistemului limfatic, tabelul 16.1; Sistemul limfatic și imun — Funcțiile splinei."
         },
         {
           "letter": "B",
           "text": "nodulii limfatici monitorizează compoziția limfei",
-          "why": "Prin sinusurile ganglionare trece limfă din țesuturi, iar celulele imune detectează și rețin particule și antigene din acest lichid."
+          "why": "Tabelul precizează că nodulii monitorizează compoziția limfei și sunt locul înglobării agenților patogeni și al generării răspunsului imun. Sursa: Sistemul limfatic și imun — Organele sistemului limfatic, tabelul 16.1."
         },
         {
           "letter": "C",
           "text": "blocarea infecțioasă a vaselor limfatice determină apariția edemului",
-          "why": "Obstrucția drenajului limfatic poate produce acumulare de lichid interstițial."
+          "why": "Obstrucția drenajului limfatic poate produce acumulare de lichid interstițial. Sursa: Sistemul limfatic și imun — Edemul."
         },
         {
           "letter": "D",
           "text": "la nivelul tractului gastrointestinal, limfa are consistență lăptoasă",
-          "why": "După absorbția grăsimilor, chilul intestinal are aspect lăptos."
+          "why": "După absorbția grăsimilor, chilul intestinal are aspect lăptos. Sursa: Sistemul limfatic și imun — Limfa intestinală."
         },
         {
           "letter": "E",
           "text": "splina prezintă pe fața laterală amprenta intestinală",
-          "why": "Amprenta colică este pe fața viscerală, nu pe fața laterală diafragmatică."
+          "why": "Amprenta colică este pe fața viscerală, nu pe fața laterală diafragmatică. Sursa: Sistemul limfatic și imun — Figura 16.5."
         }
       ],
       "sourcePages": [
@@ -668,27 +668,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "capsula - situată la exterior",
-          "why": "Capsula este învelișul conjunctiv extern al ganglionului și trimite prelungiri de susținere în interior."
+          "why": "Capsula este învelișul conjunctiv extern al ganglionului și trimite prelungiri de susținere în interior. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "B",
           "text": "centrii germinali - la periferia foliculilor",
-          "why": "Centrii germinali sunt în zona centrală a foliculilor activi."
+          "why": "În descrierea manualului, centrii germinali sunt în centrul foliculilor, nu la periferia lor. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "C",
           "text": "regiunea corticală, la interior, și regiunea medulară, la exterior",
-          "why": "Corticala este periferică, iar medulara este centrală."
+          "why": "Corticala este periferică, iar medulara este centrală. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "D",
           "text": "ambele tipuri de limfocite",
-          "why": "Limfocitele B sunt concentrate în foliculii corticali, iar limfocitele T predomină în zonele paracorticale; ganglionul găzduiește ambele populații."
+          "why": "Manualul precizează predominanța limfocitelor B în centrii germinali și prezența limfocitelor T în restul cortexului. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "E",
           "text": "grupuri de limfocite organizate în foliculi",
-          "why": "Limfocitele B formează foliculi în cortexul ganglionar."
+          "why": "Cortexul conține grupuri de limfocite organizate în foliculi. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         }
       ],
       "sourcePages": [
@@ -711,27 +711,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "este derivată din sânge",
-          "why": "Limfa provine din lichidul interstițial format în urma schimburilor cu plasma."
+          "why": "Limfa provine din lichidul interstițial format în urma schimburilor cu plasma. Sursa: Sistemul limfatic și imun — Formarea și compoziția limfei."
         },
         {
           "letter": "B",
           "text": "este întâlnită la nivelul sinusurilor limfatice ale nodulilor limfatici",
-          "why": "Limfa intră prin vase aferente, traversează sinusurile ganglionare și părăsește ganglionul prin vase eferente."
+          "why": "Limfa intră prin vase aferente, traversează sinusurile ganglionare și părăsește ganglionul prin vase eferente. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "C",
           "text": "are o consistență apoasă la nivelul tractului gastrointestinal, datorită conținutului redus de grăsimi",
-          "why": "Limfa intestinală bogată în lipide are aspect lăptos după absorbție."
+          "why": "Limfa intestinală bogată în lipide are aspect lăptos după absorbție. Sursa: Sistemul limfatic și imun — Limfa intestinală."
         },
         {
           "letter": "D",
           "text": "conține limfocite",
-          "why": "Limfocitele circulă între țesuturi, limfă și sânge; ele reprezintă o populație celulară caracteristică limfei normale."
+          "why": "Limfocitele circulă între țesuturi, limfă și sânge; ele reprezintă o populație celulară caracteristică limfei normale. Sursa: Sistemul limfatic și imun — Formarea și compoziția limfei."
         },
         {
           "letter": "E",
           "text": "conține numeroase globule roșii, care îi dau consistența caracteristică lăptoasă",
-          "why": "Aspectul lăptos este dat de lipide, nu de globule roșii."
+          "why": "Aspectul lăptos este dat de lipide, nu de globule roșii. Sursa: Sistemul limfatic și imun — Limfa intestinală."
         }
       ],
       "sourcePages": [
@@ -754,27 +754,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "este bidirecțional, similar sistemului vaselor sanguine",
-          "why": "Circulația limfatică este unidirecțională, din țesuturi spre vene."
+          "why": "Circulația limfatică este unidirecțională, din țesuturi spre vene. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "B",
           "text": "stă în strânsă legătură cu sistemul imun",
-          "why": "Ganglionii filtrează limfa și favorizează întâlnirea antigenelor cu celulele imune, iar timusul asigură maturarea limfocitelor T."
+          "why": "Ganglionii filtrează limfa și favorizează întâlnirea antigenelor cu celulele imune, iar timusul asigură maturarea limfocitelor T. Sursa: Sistemul limfatic și imun — Funcțiile sistemului limfatic."
         },
         {
           "letter": "C",
           "text": "include capilare limfatice, care se aseamănă structural capilarelor sanguine",
-          "why": "Ambele tipuri de capilare au perete endotelial subțire."
+          "why": "Ambele tipuri de capilare au perete endotelial subțire. Sursa: Sistemul limfatic și imun — Capilarele limfatice."
         },
         {
           "letter": "D",
           "text": "include vase limfatice aferente și eferente și noduli limfatici",
-          "why": "Vasele aferente aduc limfa în ganglion, iar cele eferente o evacuează."
+          "why": "Vasele aferente aduc limfa în ganglion, iar cele eferente o evacuează. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "E",
           "text": "include ductul toracic și ductul limfatic drept, ambele preluând limfă de la nivelul viscerelor abdominale",
-          "why": "Ductul drept nu drenează viscerele abdominale; acest teritoriu aparține ductului toracic."
+          "why": "Ductul drept nu drenează viscerele abdominale; acest teritoriu aparține ductului toracic. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         }
       ],
       "sourcePages": [
@@ -798,27 +798,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "colectează limfa de la regiunea supradiafragmatică dreaptă a corpului",
-          "why": "Cadranul superior drept este drenat de sistemul limfatic drept."
+          "why": "Cadranul superior drept este drenat de sistemul limfatic drept. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "B",
           "text": "este cel mai mare vas limfatic al organismului",
-          "why": "Ductul toracic este principalul și cel mai mare colector limfatic."
+          "why": "Ductul toracic este principalul și cel mai mare colector limfatic. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "C",
           "text": "se formează în abdomen, străbate diafragma și pătrunde în torace",
-          "why": "Ductul începe în abdomen, traversează diafragma prin hiatusul aortic și urcă posterior de esofag spre baza gâtului."
+          "why": "Textul urmărește ductul din abdomen, ascendent în torace, dorsal față de esofag; traversarea diafragmei rezultă din acest traseu. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "D",
           "text": "drenează limfă de la membrele inferioare și de la membrul superior stâng",
-          "why": "Teritoriul ductului toracic cuprinde ambele jumătăți subdiafragmatice și cadranul superior stâng, deci include cele trei membre menționate."
+          "why": "Teritoriul ductului toracic cuprinde ambele jumătăți subdiafragmatice și cadranul superior stâng, deci include cele trei membre menționate. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "E",
           "text": "colectează limfa și de la nodulii limfatici iliaci, inghinali, intestinali",
-          "why": "Ganglionii iliaci, inghinali și intestinali aparțin teritoriului său de drenaj."
+          "why": "Ganglionii iliaci, inghinali și intestinali aparțin teritoriului său de drenaj. Sursa: Sistemul limfatic și imun — Figura 16.2."
         }
       ],
       "sourcePages": [
@@ -842,27 +842,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "nodulii limfatici - situați pe traiectul vaselor limfatice",
-          "why": "Ganglionii sunt intercalați pe traseul colectoarelor limfatice; limfa îi traversează înainte de revenirea în circulația venoasă."
+          "why": "Ganglionii sunt intercalați pe traseul colectoarelor limfatice; limfa îi traversează înainte de revenirea în circulația venoasă. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "B",
           "text": "amigdalele palatine - localizate sub osul palatin",
-          "why": "Lecția situează amigdalele palatine inferior palatului; poziția exactă este între arcurile palatine."
+          "why": "Amigdalele palatine sunt localizate sub osul palatin în descrierea manualului. Sursa: Sistemul limfatic și imun — Amigdalele și plăcile Peyer."
         },
         {
           "letter": "C",
           "text": "amigdalele faringiene - localizate în țesutul limbii",
-          "why": "În țesutul limbii se găsesc amigdalele linguale; amigdala faringiană este în nazofaringe."
+          "why": "În țesutul limbii se găsesc amigdalele linguale; amigdala faringiană este în nazofaringe. Sursa: Sistemul limfatic și imun — Amigdalele și plăcile Peyer."
         },
         {
           "letter": "D",
           "text": "plăcile Peyer - în peretele tractului intestinal, în special în ileon",
-          "why": "Plăcile Peyer sunt agregate de foliculi limfoizi din peretele intestinului subțire, în special ileal, unde participă la supravegherea antigenelor intestinale."
+          "why": "Plăcile Peyer sunt aglomerări de țesut limfoid în peretele tractului intestinal, în special în ileon. Sursa: Sistemul limfatic și imun — Amigdalele și plăcile Peyer."
         },
         {
           "letter": "E",
           "text": "timus - localizat retrosternal",
-          "why": "Timusul este situat în mediastin, posterior de stern."
+          "why": "Timusul este situat în mediastin, posterior de stern. Sursa: Sistemul limfatic și imun — Timusul."
         }
       ],
       "sourcePages": [
@@ -884,27 +884,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "primește sânge încărcat cu oxigen prin artera splenică, ramură din trunchiul celiac",
-          "why": "Artera splenică aduce sânge oxigenat și provine din trunchiul celiac."
+          "why": "Artera splenică aduce sânge oxigenat și provine din trunchiul celiac. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9."
         },
         {
           "letter": "B",
           "text": "prezintă un hil la nivelul căruia intră venele și ies arterele",
-          "why": "Prin hil intră artera și iese vena, nu invers."
+          "why": "Prin hil intră artera și iese vena, nu invers. Sursa: Sistemul limfatic și imun — Anatomia splinei."
         },
         {
           "letter": "C",
           "text": "este situată subdiafragmatic, la nivelul hipocondrului stâng",
-          "why": "Hipocondrul stâng este regiunea abdominală superioară stângă, unde splina se află sub diafragmă și în vecinătatea stomacului."
+          "why": "Hipocondrul stâng este regiunea abdominală superioară stângă, unde splina se află sub diafragmă și în vecinătatea stomacului. Sursa: Sistemul limfatic și imun — Anatomia splinei."
         },
         {
           "letter": "D",
           "text": "participă la apărarea antiinfecțioasă, precum și la metabolismul calciului",
-          "why": "Rolul metabolic caracteristic privește fierul și hematiile, nu metabolismul calciului."
+          "why": "Rolul metabolic caracteristic privește fierul și hematiile, nu metabolismul calciului. Sursa: Sistemul limfatic și imun — Funcțiile splinei."
         },
         {
           "letter": "E",
           "text": "prezintă, la interior, o capsulă de țesut conjunctiv",
-          "why": "Capsula delimitează splina la exterior; în interior trimite trabecule."
+          "why": "Capsula delimitează splina la exterior; în interior trimite trabecule. Sursa: Sistemul limfatic și imun — Anatomia splinei."
         }
       ],
       "sourcePages": [
@@ -927,27 +927,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "dimensiunile sale cresc odată cu înaintarea în vârstă",
-          "why": "Dimensiunile timusului nu cresc continuu cu vârsta. Trebuie separate mărimea întregului organ și masa țesutului timic funcțional: studii morfometrice umane arată involuția componentei epiteliale încă din primul an, cu înlocuire progresivă prin țesut adipos și conjunctiv."
+          "why": "Manualul spune că timusul începe să se atrofieze după vârsta de un an și devine foarte mic la sfârșitul pubertății. Sursa: Sistemul limfatic și imun — Timusul."
         },
         {
           "letter": "B",
           "text": "are în structura sa lobuli care conțin celule de suport și limfocite B",
-          "why": "Baremul exclude B, însă timusul uman normal conține și o populație de limfocite B, demonstrată mai ales în medulară. Limfocitele T predomină și reprezintă populația caracteristică din manual, dar această predominanță nu face falsă simpla prezență a celulelor B."
+          "why": "Lobulii timusului sunt descriși cu celule de suport și limfocite T; manualul nu oferă suport pentru înlocuirea lor cu limfocite B. Sursa: Sistemul limfatic și imun — Timusul."
         },
         {
           "letter": "C",
           "text": "participă la dezvoltarea limfocitelor T prin secreția de timozine",
-          "why": "Factorii timici denumiți timozine susțin dezvoltarea liniei T, alături de interacțiunile precursorilor cu celulele de suport ale timusului."
+          "why": "Timozinele produse și secretate de timus contribuie la maturarea limfocitelor T. Sursa: Sistemul limfatic și imun — Timusul."
         },
         {
           "letter": "D",
           "text": "produce limfocite T mature care migrează în nodulii limfatici",
-          "why": "Limfocitele T mature migrează spre organele limfoide periferice, inclusiv ganglionii."
+          "why": "Limfocitele T mature migrează spre organele limfoide periferice, inclusiv ganglionii. Sursa: Sistemul limfatic și imun — Timusul."
         },
         {
           "letter": "E",
           "text": "prezintă, în timpul dezvoltării fetale, doi lobi",
-          "why": "Organul fetal este alcătuit din doi lobi, fiecare organizat în lobuli; numărul lobilor nu trebuie confundat cu cel al lobulilor."
+          "why": "Organul fetal este alcătuit din doi lobi, fiecare organizat în lobuli; numărul lobilor nu trebuie confundat cu cel al lobulilor. Sursa: Sistemul limfatic și imun — Timusul."
         }
       ],
       "sourcePages": [
@@ -970,27 +970,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "drenează limfa de la nivelul membrului superior drept",
-          "why": "Drenajul limfatic al membrului superior drept traversează în principal ganglionii axilari drepți și continuă spre trunchiul subclavicular drept."
+          "why": "Figura rețelei limfatice arată vasele membrului superior către nodulii axilari; teritoriul drept supradiafragmatic aparține ductului limfatic drept. Sursa: Sistemul limfatic și imun — Figura 16.2."
         },
         {
           "letter": "B",
           "text": "trimit vase limfatice eferente spre ductul toracic",
-          "why": "Drenajul lor aparține sistemului limfatic drept, nu ductului toracic."
+          "why": "Drenajul lor aparține sistemului limfatic drept, nu ductului toracic. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "C",
           "text": "sunt alcătuiți din țesut limfoid înconjurat de o capsulă",
-          "why": "Capsula conjunctivă înconjoară țesutul limfoid al ganglionilor axilari, ca la ceilalți ganglioni, și trimite trabecule de susținere în interior."
+          "why": "Capsula conjunctivă înconjoară țesutul limfoid al ganglionilor axilari, ca la ceilalți ganglioni, și trimite trabecule de susținere în interior. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "D",
           "text": "sunt localizați la nivelul fosei poplitee drepte",
-          "why": "Fosa poplitee este în spatele genunchiului; ganglionii axilari sunt la axilă."
+          "why": "Fosa poplitee este în spatele genunchiului; ganglionii axilari sunt la axilă. Sursa: Sistemul limfatic și imun — Localizarea nodulilor și vasele aferente/eferente."
         },
         {
           "letter": "E",
           "text": "primesc limfocite T migrate din timus",
-          "why": "Limfocitele T mature provenite din timus pot coloniza ganglionii."
+          "why": "Limfocitele T mature provenite din timus pot coloniza ganglionii. Sursa: Sistemul limfatic și imun — Timusul."
         }
       ],
       "sourcePages": [
@@ -1012,27 +1012,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "din hilul nodulilor limfatici se desprind vase limfatice eferente",
-          "why": "Hilul este zona prin care limfa filtrată părăsește ganglionul în vasele eferente; vasele aferente pătrund prin alte regiuni ale capsulei."
+          "why": "Hilul este zona prin care limfa filtrată părăsește ganglionul în vasele eferente; vasele aferente pătrund prin alte regiuni ale capsulei. Sursa: Sistemul limfatic și imun — Figura 16.3."
         },
         {
           "letter": "B",
           "text": "timusul are exclusiv rol limfoid",
-          "why": "Pe lângă maturarea limfocitelor T, timusul secretă factori cu rol în dezvoltarea lor, precum timozinele; rolul său nu este exclusiv limfoid."
+          "why": "Pe lângă maturarea limfocitelor T, timusul secretă factori cu rol în dezvoltarea lor, precum timozinele; rolul său nu este exclusiv limfoid. Sursa: Sistemul limfatic și imun — Timusul."
         },
         {
           "letter": "C",
           "text": "prelungirile capsulei splenice compartimentează splina în lobuli, similari celor întâlniți la nivelul nodulilor limfatici",
-          "why": "Trabeculele splenice nu delimitează lobuli compleți ca în descrierea ganglionilor."
+          "why": "Trabeculele splenice nu delimitează lobuli compleți ca în descrierea ganglionilor. Sursa: Sistemul limfatic și imun — Anatomia splinei."
         },
         {
           "letter": "D",
           "text": "atât capilarele limfatice cât și cele sanguine au un perete subțire, adaptat schimburilor, prevăzut cu un strat endotelial",
-          "why": "Peretele endotelial subțire permite schimburile și preluarea fluidelor."
+          "why": "Peretele endotelial subțire permite schimburile și preluarea fluidelor. Sursa: Sistemul limfatic și imun — Capilarele limfatice."
         },
         {
           "letter": "E",
           "text": "la nivelul vaselor limfatice există valve similare celor de la nivelul arterelor",
-          "why": "Valvele limfatice sunt comparate cu cele venoase; arterele nu au valve pe traiect."
+          "why": "Valvele limfatice sunt comparate cu cele venoase; arterele nu au valve pe traiect. Sursa: Sistemul limfatic și imun — Valvele și circulația limfei."
         }
       ],
       "sourcePages": [
@@ -1055,27 +1055,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "vasele limfatice au o structură adaptată îndepărtării din țesuturi a moleculelor mici, de tipul proteinelor",
-          "why": "Proteinele sunt macromolecule, nu molecule mici."
+          "why": "Proteinele sunt macromolecule, nu molecule mici. Sursa: Sistemul limfatic și imun — Valvele și circulația limfei."
         },
         {
           "letter": "B",
           "text": "ductul toracic este drenat de vena subclaviculară stângă",
-          "why": "Ductul toracic se varsă la unghiul venos stâng, descris didactic prin subclaviculara stângă."
+          "why": "Ductul toracic își golește conținutul în vena subclaviculară stângă. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "C",
           "text": "splina, timusul și nodulii limfatici conțin celule care participă la răspunsul imun",
-          "why": "Ganglionii și splina găzduiesc limfocite și fagocite, iar timusul conține celulele implicate în dezvoltarea și selecția limfocitelor T."
+          "why": "Tabelul atribuie nodulilor și splinei participarea la răspunsul imun, iar timusului dezvoltarea și maturarea limfocitelor T. Sursa: Sistemul limfatic și imun — Organele sistemului limfatic, tabelul 16.1."
         },
         {
           "letter": "D",
           "text": "ductul limfatic drept este un afluent al venei subclaviculare drepte",
-          "why": "Ductul drept restituie limfa cadranului superior drept în regiunea unirii subclavicularei drepte cu jugulara internă dreaptă."
+          "why": "Manualul precizează unirea ductului limfatic drept cu vena subclaviculară dreaptă la baza acesteia. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "E",
           "text": "limfa provenită de la regiunea supradiafragmatică dreaptă a corpului se varsă în ductul toracic",
-          "why": "Cadranul superior drept este drenat de sistemul limfatic drept."
+          "why": "Cadranul superior drept este drenat de sistemul limfatic drept. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         }
       ],
       "sourcePages": [
@@ -1098,27 +1098,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "vasele limfatice aferente sunt mai numeroase decât cele eferente",
-          "why": "Mai multe vase aferente aduc limfă din teritoriul drenat, iar evacuarea după traversarea ganglionului se face prin mai puține vase eferente, la hil."
+          "why": "Figura nodulului arată mai multe intrări aferente și mai puține ieșiri eferente la hil, susținând comparația. Sursa: Sistemul limfatic și imun — Figura 16.3."
         },
         {
           "letter": "B",
           "text": "asigură filtrarea limfei",
-          "why": "Macrofagele ganglionare rețin particule și agenți patogeni din limfa care traversează sinusurile, înainte de întoarcerea acesteia în sânge."
+          "why": "Nodulii asigură filtrarea limfei înainte de întoarcerea acesteia în circulația sanguină. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "C",
           "text": "vasele limfatice eferente ies din ganglion prin hil",
-          "why": "Vasele eferente conduc limfa filtrată din ganglion spre următoarele colectoare și părăsesc organul prin concavitatea numită hil."
+          "why": "Vasele eferente conduc limfa filtrată din ganglion spre următoarele colectoare și părăsesc organul prin concavitatea numită hil. Sursa: Sistemul limfatic și imun — Figura 16.3."
         },
         {
           "letter": "D",
           "text": "medulara conține mai multe limfocite decât corticala",
-          "why": "Lecția descrie limfocite mai dens dispuse în cortex decât în medulară."
+          "why": "Lecția descrie limfocite mai dens dispuse în cortex decât în medulară. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "E",
           "text": "conțin atât limfocite T cât și limfocite B, celule ce sunt maturate în timus",
-          "why": "Ambele tipuri sunt prezente, dar numai limfocitele T se maturează în timus; cele B se maturează în măduva osoasă."
+          "why": "Nodulii conțin ambele tipuri de limfocite, dar manualul atribuie timusului maturarea limfocitelor T; nu atribuie aici maturarea B timusului. Sursa: Sistemul limfatic și imun — Timusul; Sistemul limfatic și imun — Structura nodulilor limfatici."
         }
       ],
       "sourcePages": [
@@ -1140,27 +1140,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "asigură îndepărtarea produșilor reziduali de catabolism din țesuturi",
-          "why": "Lichidul interstițial preluat de capilarele limfatice conține substanțe eliberate de celule; drenajul îl readuce în circulație pentru transport și eliminare ulterioară."
+          "why": "Lichidul interstițial preluat de capilarele limfatice conține substanțe eliberate de celule; drenajul îl readuce în circulație pentru transport și eliminare ulterioară. Sursa: Sistemul limfatic și imun — Funcțiile sistemului limfatic."
         },
         {
           "letter": "B",
           "text": "sistemul limfatic are rol în apărarea nespecifică a organismului",
-          "why": "Baremul exclude B, însă ganglionii au și mecanisme de apărare înnăscută, inclusiv captarea agenților patogeni de macrofage. Accentul lecției pe limfocite și apărarea specifică nu justifică negarea contribuției nespecifice."
+          "why": "Baremul exclude B, dar tabelul arată înglobarea agenților patogeni de celulele nodulilor și splinei. Accentul textului pe apărarea specifică nu anulează această funcție fagocitară descrisă de manual. Sursa: Sistemul limfatic și imun — Funcțiile sistemului limfatic; Sistemul limfatic și imun — Organele sistemului limfatic, tabelul 16.1."
         },
         {
           "letter": "C",
           "text": "în cortexul nodulilor limfatici se găsesc foliculi limfatici",
-          "why": "Foliculii cortexului ganglionar sunt aglomerări de limfocite predominant B; cei activați formează centri germinali."
+          "why": "Cortexul nodulului conține grupuri de limfocite organizate în foliculi cu centri germinali. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "D",
           "text": "toate organele componente au rol în filtrarea sângelui",
-          "why": "Splina filtrează sângele; ganglionii filtrează limfa, iar timusul maturează limfocite T."
+          "why": "Splina filtrează sângele; ganglionii filtrează limfa, iar timusul maturează limfocite T. Sursa: Sistemul limfatic și imun — Organele sistemului limfatic, tabelul 16.1."
         },
         {
           "letter": "E",
           "text": "concentrația proteinelor în limfă este mică",
-          "why": "Concentrația proteinelor variază cu teritoriul și este de regulă sub cea plasmatică. Baremul AC exclude afirmația generală „mică”, lecția accentuând acumularea proteinelor interstițiale în limfă; fără termen de comparație, formularea este ambiguă."
+          "why": "Manualul spune că proteinele care nu trec ușor înapoi în capilare rămân în concentrație crescută în limfă. Baremul exclude astfel calificativul „mică”; enunțul nu precizează un termen de comparație. Sursa: Sistemul limfatic și imun — Formarea și compoziția limfei."
         }
       ],
       "sourcePages": [
@@ -1184,27 +1184,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "drenează limfa de la jumătatea dreaptă a organismului",
-          "why": "Drenează numai cadranul superior drept, nu întreaga jumătate dreaptă."
+          "why": "Drenează numai cadranul superior drept, nu întreaga jumătate dreaptă. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "B",
           "text": "contracția mușchilor brațului drept favorizează circulația limfei spre acest duct",
-          "why": "Pompa musculară a membrului superior drept favorizează deplasarea limfei."
+          "why": "Pompa musculară a membrului superior drept favorizează deplasarea limfei. Sursa: Sistemul limfatic și imun — Valvele și circulația limfei; Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "C",
           "text": "conține și substanțe eliberate de celule în spațiile interstițiale",
-          "why": "Limfa derivă din lichidul interstițial, unde ajung produși eliberați de celule, astfel că îi poate prelua și transporta către circulația venoasă."
+          "why": "Limfa derivă din lichidul interstițial, unde ajung produși eliberați de celule, astfel că îi poate prelua și transporta către circulația venoasă. Sursa: Sistemul limfatic și imun — Formarea și compoziția limfei."
         },
         {
           "letter": "D",
           "text": "limfa de la nivelul lui conține lipide și de aceea are o consistență lăptoasă",
-          "why": "Chilul intestinal bogat în grăsimi ajunge predominant în ductul toracic; aspectul lăptos nu este caracteristic ductului drept."
+          "why": "Chilul intestinal bogat în grăsimi ajunge predominant în ductul toracic; aspectul lăptos nu este caracteristic ductului drept. Sursa: Sistemul limfatic și imun — Limfa intestinală; Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "E",
           "text": "se varsă în vena subclaviculară dreaptă",
-          "why": "Ductul drept se varsă la unghiul venos drept, descris prin subclaviculara dreaptă."
+          "why": "Ductul limfatic drept își golește conținutul în vena subclaviculară dreaptă, conform textului. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         }
       ],
       "sourcePages": [
@@ -1226,27 +1226,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "vegetațiile adenoide pot împiedica trecerea aerului",
-          "why": "Hipertrofia amigdalei faringiene poate obstrua trecerea aerului în nazofaringe."
+          "why": "Hipertrofia amigdalei faringiene poate obstrua trecerea aerului în nazofaringe. Sursa: Sistemul respirator — Amigdala faringiană și amigdalele palatine."
         },
         {
           "letter": "B",
           "text": "amigdalele palatine tumefiate poartă denumirea de vegetații adenoide",
-          "why": "Vegetațiile adenoide reprezintă hipertrofia amigdalei faringiene, nu a celor palatine."
+          "why": "Vegetațiile adenoide reprezintă hipertrofia amigdalei faringiene, nu a celor palatine. Sursa: Sistemul respirator — Amigdala faringiană și amigdalele palatine."
         },
         {
           "letter": "C",
           "text": "amigdala faringiană se găsește pe peretele posterior al nazofaringelui, în regiunea laterală",
-          "why": "Amigdala faringiană este pe plafonul și peretele posterior al nazofaringelui, în regiunea mediană, nu laterală."
+          "why": "Amigdala faringiană este pe plafonul și peretele posterior al nazofaringelui, în regiunea mediană, nu laterală. Sursa: Sistemul respirator — Amigdala faringiană și amigdalele palatine."
         },
         {
           "letter": "D",
           "text": "plăcile Peyer se găsesc mai ales în ileon",
-          "why": "Plăcile Peyer sunt mai ales în ileon, dar nu sunt amigdale și nu răspund cerinței."
+          "why": "Plăcile Peyer sunt mai ales în ileon, dar nu sunt amigdale și nu răspund cerinței. Sursa: Sistemul limfatic și imun — Amigdalele și plăcile Peyer."
         },
         {
           "letter": "E",
           "text": "amigdalele palatine și faringiene conțin limfocite",
-          "why": "Amigdalele sunt agregate de țesut limfoid; limfocitele lor participă la supravegherea antigenelor care pătrund pe căile respiratorii și digestive."
+          "why": "Amigdalele sunt agregate de țesut limfoid; limfocitele lor participă la supravegherea antigenelor care pătrund pe căile respiratorii și digestive. Sursa: Sistemul limfatic și imun — Amigdalele și plăcile Peyer; Sistemul respirator — Amigdala faringiană și amigdalele palatine."
         }
       ],
       "sourcePages": [
@@ -1270,27 +1270,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "strânge limfă și de la ambele membre inferioare",
-          "why": "Ambele membre inferioare aparțin teritoriului ductului toracic."
+          "why": "Ambele membre inferioare aparțin teritoriului ductului toracic. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "B",
           "text": "este situat posterior de esofag",
-          "why": "În torace, ductul are traseu posterior față de esofag."
+          "why": "În torace, ductul are traseu posterior față de esofag. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "C",
           "text": "străbate diafragmul și pătrunde în abdomen",
-          "why": "Ductul urcă din abdomen prin diafragmă în torace, nu coboară în abdomen."
+          "why": "Ductul urcă din abdomen prin diafragmă în torace, nu coboară în abdomen. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "D",
           "text": "limfa de la nivelul lui este filtrată la nivelul ganglionilor limfatici prezenți pe traseu",
-          "why": "Limfa care ajunge în duct a traversat ganglioni ai traseelor sale aferente; formularea nu presupune ganglioni în lumenul ductului."
+          "why": "Limfa care ajunge în duct a traversat ganglioni ai traseelor sale aferente; formularea nu presupune ganglioni în lumenul ductului. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "E",
           "text": "limfa se deplasează la nivelul lui în sens opus gravitației",
-          "why": "La persoana în ortostatism, limfa urcă din abdomen către baza gâtului cu ajutorul pompelor și valvelor."
+          "why": "La persoana în ortostatism, limfa urcă din abdomen către baza gâtului cu ajutorul pompelor și valvelor. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept; Sistemul limfatic și imun — Valvele și circulația limfei."
         }
       ],
       "sourcePages": [
@@ -1314,27 +1314,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "dermul conține multe vase limfatice",
-          "why": "Capilarele limfatice dermice preiau lichidul și proteinele din interstițiul pielii și le conduc spre colectoarele limfatice."
+          "why": "Capilarele limfatice dermice preiau lichidul și proteinele din interstițiul pielii și le conduc spre colectoarele limfatice. Sursa: Sistemul limfatic și imun — Capilarele limfatice."
         },
         {
           "letter": "B",
           "text": "nodulii limfatici inghinali sunt străbătuți de limfa de la nivelul membrelor inferioare",
-          "why": "Limfa din mare parte a membrului inferior traversează ganglionii inghinali înainte de continuarea drenajului către colectoarele pelvine."
+          "why": "Limfa din mare parte a membrului inferior traversează ganglionii inghinali înainte de continuarea drenajului către colectoarele pelvine. Sursa: Sistemul limfatic și imun — Figura 16.2."
         },
         {
           "letter": "C",
           "text": "nodulii limfatici axilari sunt străbătuți de limfa de la nivelul membrelor superioare",
-          "why": "Ganglionii axilari primesc drenajul principal al membrului superior și îl transmit spre trunchiurile limfatice subclaviculare."
+          "why": "Figura traseelor limfatice arată vasele membrelor superioare în legătură cu nodulii axilari. Sursa: Sistemul limfatic și imun — Figura 16.2."
         },
         {
           "letter": "D",
           "text": "timusul se găsește inferior de tiroidă",
-          "why": "Timusul toracic este inferior tiroidei cervicale."
+          "why": "Timusul toracic este inferior tiroidei cervicale. Sursa: Sistemul limfatic și imun — Figura 16.4."
         },
         {
           "letter": "E",
           "text": "nodulii limfatici se găsesc doar de-a lungul vaselor mari de sânge din cavitatea abdominală",
-          "why": "Ganglionii există și cervical, axilar, inghinal, mediastinal și în alte regiuni."
+          "why": "Ganglionii există și cervical, axilar, inghinal, mediastinal și în alte regiuni. Sursa: Sistemul limfatic și imun — Localizarea nodulilor și vasele aferente/eferente."
         }
       ],
       "sourcePages": [
@@ -1357,27 +1357,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "capilarele sanguine au o poziție intermediară în circulația sanguină",
-          "why": "În schema generală, capilarele sunt între compartimentul arteriolar și cel venular."
+          "why": "În schema generală, capilarele sunt între compartimentul arteriolar și cel venular. Sursa: Sistemul cardiovascular — Capilarele sanguine."
         },
         {
           "letter": "B",
           "text": "o parte din fluidele interstițiale se reîntorc în sistemul circulator prin limfă",
-          "why": "Drenajul limfatic readuce o parte din lichidul interstițial în sânge."
+          "why": "Drenajul limfatic readuce o parte din lichidul interstițial în sânge. Sursa: Sistemul limfatic și imun — Valvele și circulația limfei."
         },
         {
           "letter": "C",
           "text": "limfocitele T predomină în centrii germinali ai nodulilor limfatici",
-          "why": "În centrii germinali predomină limfocitele B, nu T."
+          "why": "În centrii germinali predomină limfocitele B, nu T. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "D",
           "text": "timusul și splina sunt organe ale sistemului limfatic împărțite în lobuli",
-          "why": "Timusul este lobulat; splina nu este împărțită în lobuli prin trabeculele sale."
+          "why": "Timusul este lobulat; splina nu este împărțită în lobuli prin trabeculele sale. Sursa: Sistemul limfatic și imun — Timusul; Sistemul limfatic și imun — Anatomia splinei."
         },
         {
           "letter": "E",
           "text": "mediastinul conține atât vase limfatice cât și noduli limfatici",
-          "why": "În mediastin există ganglioni și vase limfatice, inclusiv ductul toracic."
+          "why": "În mediastin există ganglioni și vase limfatice, inclusiv ductul toracic. Sursa: Sistemul limfatic și imun — Localizarea nodulilor și vasele aferente/eferente; Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         }
       ],
       "sourcePages": [
@@ -1399,27 +1399,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "limfa se formează din lichidul ce trece prin pereții semipermeabili ai capilarelor limfatice",
-          "why": "Baremul selectează A. Lichidul interstițial devine limfă când intră prin peretele capilarului limfatic; lichidul provine inițial din schimburile prin capilarele sanguine. Cele două etape nu trebuie confundate."
+          "why": "Baremul selectează A. Lichidul interstițial devine limfă când intră prin peretele capilarului limfatic; lichidul provine inițial din schimburile prin capilarele sanguine. Cele două etape nu trebuie confundate. Sursa: Sistemul limfatic și imun — Formarea și compoziția limfei."
         },
         {
           "letter": "B",
           "text": "capilarele limfatice sunt căptușite la interior de un strat endotelial",
-          "why": "Baremul exclude B, deși peretele capilarelor limfatice este endotelial. O posibilă explicație este că varianta descrie o structură, iar enunțul cere procese fiziologice; informația anatomică rămâne adevărată."
+          "why": "Baremul exclude B, deși peretele capilarelor limfatice este endotelial. O posibilă explicație este că varianta descrie o structură, iar enunțul cere procese fiziologice; informația anatomică rămâne adevărată. Sursa: Sistemul limfatic și imun — Capilarele limfatice."
         },
         {
           "letter": "C",
           "text": "edemul apare dacă mișcarea sângelui în vene este încetinită",
-          "why": "Neconcordanță cu baremul: staza venoasă poate produce edem prin creșterea presiunii hidrostatice; afirmația este susținută și de lecție, deși cheia AE o exclude."
+          "why": "Neconcordanță cu baremul: manualul afirmă explicit că edemul apare și când mișcarea sângelui în vene este încetinită. Varianta este susținută de sursă, deși cheia o exclude. Sursa: Sistemul limfatic și imun — Edemul."
         },
         {
           "letter": "D",
           "text": "inflamația este o cauză posibilă a edemului în care proteinele din spațiile intercelulare atrag apa din vase prin osmoză",
-          "why": "Baremul exclude D, însă inflamația poate provoca edem prin creșterea permeabilității microvasculare și extravazarea proteinelor, care contribuie la atracția osmotică interstițială. Mecanismul este susținut și de manual; explicația nu se reduce la osmoză, deoarece contează și filtrarea și drenajul limfatic."
+          "why": "Neconcordanță cu baremul: manualul descrie inflamația, trecerea proteinelor în spațiile intercelulare și atragerea osmotică a apei drept o cauză posibilă a edemului. Varianta este susținută de sursă. Sursa: Sistemul limfatic și imun — Edemul."
         },
         {
           "letter": "E",
           "text": "contribuie la generarea răspunsului imun al organismului",
-          "why": "Organele limfoide reunesc antigene, celule prezentatoare de antigen și limfocite, favorizând recunoașterea antigenelor și activarea răspunsului imun."
+          "why": "Tabelul organelor limfatice menționează generarea răspunsului imun în noduli și celulele splenice care îl reglează. Sursa: Sistemul limfatic și imun — Organele sistemului limfatic, tabelul 16.1."
         }
       ],
       "sourcePages": [
@@ -1443,27 +1443,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "conține macrofage ce fagocitează și eritrocitele distruse",
-          "why": "Macrofagele splenice îndepărtează hematiile îmbătrânite sau lezate."
+          "why": "Macrofagele splenice îndepărtează hematiile îmbătrânite sau lezate. Sursa: Sistemul limfatic și imun — Funcțiile splinei."
         },
         {
           "letter": "B",
           "text": "se găsește în hipocondrul stâng, subdiafragmatic",
-          "why": "Splina se află în partea superioară stângă a abdomenului."
+          "why": "Splina se află în partea superioară stângă a abdomenului. Sursa: Sistemul limfatic și imun — Anatomia splinei."
         },
         {
           "letter": "C",
           "text": "hilul splinei se găsește pe fața convexă a splinei",
-          "why": "Hilul este pe fața viscerală, nu pe cea diafragmatică convexă."
+          "why": "Hilul este pe fața viscerală, nu pe cea diafragmatică convexă. Sursa: Sistemul limfatic și imun — Figura 16.5."
         },
         {
           "letter": "D",
           "text": "are raport cu curbura mare a stomacului",
-          "why": "Splina are raport cu stomacul, în vecinătatea curburii mari."
+          "why": "Splina are raport cu stomacul, în vecinătatea curburii mari. Sursa: Sistemul limfatic și imun — Figura 16.5."
         },
         {
           "letter": "E",
           "text": "este vascularizată de artera splenică, ramură a trunchiului celiac",
-          "why": "Artera splenică se desprinde din trunchiul celiac și ajunge la hilul splinei, unde se distribuie ramurilor care vascularizează organul."
+          "why": "Artera splenică se desprinde din trunchiul celiac și ajunge la hilul splinei, unde se distribuie ramurilor care vascularizează organul. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9."
         }
       ],
       "sourcePages": [
@@ -1488,27 +1488,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "splina monitorizează compoziția limfei",
-          "why": "Splina monitorizează sângele; ganglionii monitorizează limfa."
+          "why": "Splina monitorizează sângele; ganglionii monitorizează limfa. Sursa: Sistemul limfatic și imun — Organele sistemului limfatic, tabelul 16.1."
         },
         {
           "letter": "B",
           "text": "timusul secretă timozine care contribuie la dezvoltarea și maturarea limfocitelor T",
-          "why": "Timozinele sunt factorii timici prezentați în manual în legătură cu dezvoltarea precursorilor și maturarea limfocitelor T."
+          "why": "Timozinele sunt factorii timici prezentați în manual în legătură cu dezvoltarea precursorilor și maturarea limfocitelor T. Sursa: Sistemul limfatic și imun — Timusul."
         },
         {
           "letter": "C",
           "text": "nodulii limfatici înglobează agenți patogeni și au rol în răspunsul imun",
-          "why": "Celulele ganglionare, inclusiv macrofagele, înglobează agenți și participă la răspunsul imun."
+          "why": "Celulele ganglionare, inclusiv macrofagele, înglobează agenți și participă la răspunsul imun. Sursa: Sistemul limfatic și imun — Organele sistemului limfatic, tabelul 16.1."
         },
         {
           "letter": "D",
           "text": "se găsesc și la nivelul limbii",
-          "why": "La baza limbii există amigdale linguale."
+          "why": "La baza limbii există amigdale linguale. Sursa: Sistemul limfatic și imun — Amigdalele și plăcile Peyer."
         },
         {
           "letter": "E",
           "text": "se găsesc atât în fosa poplitee cât și în fosa cubitală",
-          "why": "Ganglionii poplitei se află posterior de genunchi, iar cei cubitali în regiunea cotului, pe traseele de drenaj ale membrelor."
+          "why": "Ganglionii poplitei se află posterior de genunchi, iar cei cubitali în regiunea cotului, pe traseele de drenaj ale membrelor. Sursa: Sistemul limfatic și imun — Localizarea nodulilor și vasele aferente/eferente."
         }
       ],
       "sourcePages": [
@@ -1530,27 +1530,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "capilarele limfatice sunt mai puțin permeabile decât cele sanguine",
-          "why": "Capilarele limfatice permit mai ușor pătrunderea lichidului și a macromoleculelor interstițiale; afirmația inversează comparația cu cele sanguine."
+          "why": "Capilarele limfatice permit mai ușor pătrunderea lichidului și a macromoleculelor interstițiale; afirmația inversează comparația cu cele sanguine. Sursa: Sistemul limfatic și imun — Capilarele limfatice."
         },
         {
           "letter": "B",
           "text": "din nodulii limfatici cervicali din partea dreaptă limfa ajunge în ductul toracic",
-          "why": "În schema standard, drenajul cervical drept aparține sistemului limfatic drept."
+          "why": "În schema standard, drenajul cervical drept aparține sistemului limfatic drept. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "C",
           "text": "la nivelul polului inferior splenic se află amprenta renală",
-          "why": "Amprenta renală este pe fața viscerală medială/posterioară; polul inferior este asociat mai ales raportului colic."
+          "why": "Figura splinei etichetează amprenta intestinală la extremitatea inferioară și amprenta renală mai sus, pe suprafața concavă. Sursa: Sistemul limfatic și imun — Figura 16.5."
         },
         {
           "letter": "D",
           "text": "în centrii germinativi din nodulii limfatici predomină limfocitele B",
-          "why": "În centrii germinali, limfocitele B activate proliferează și se diferențiază în cadrul răspunsului imun; limfocitele T nu sunt populația predominantă."
+          "why": "Manualul precizează predominanța limfocitelor B în centrii germinali. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "E",
           "text": "prin sinusurile limfatice circulă limfa",
-          "why": "Limfa străbate sinusurile ganglionare de la intrarea prin vasele aferente către ieșirea prin vasele eferente, intrând în contact cu celulele de filtrare."
+          "why": "Limfa străbate sinusurile ganglionare de la intrarea prin vasele aferente către ieșirea prin vasele eferente, intrând în contact cu celulele de filtrare. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         }
       ],
       "sourcePages": [
@@ -1574,27 +1574,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "vasele limfatice sunt adaptate pentru îndepărtarea micromoleculelor",
-          "why": "Baremul include A între afirmațiile false. Manualul evidențiază adaptarea pentru macromolecule, în special proteine, însă limfa transportă și micromolecule, de exemplu glucoză; formularea nu trebuie interpretată ca imposibilitatea preluării moleculelor mici."
+          "why": "Manualul descrie vasele limfatice ca adaptate îndepărtării moleculelor mari, în special proteinelor. Aceasta explică selecția variantei ca falsă, fără a afirma că limfa ar transporta exclusiv molecule mari. Sursa: Sistemul limfatic și imun — Valvele și circulația limfei."
         },
         {
           "letter": "B",
           "text": "din nodulii limfatici inghinali din partea dreaptă limfa ajunge în ductul limfatic drept",
-          "why": "Se selectează ca falsă: limfa inghinală dreaptă ajunge în ductul toracic."
+          "why": "Se selectează ca falsă: limfa inghinală dreaptă ajunge în ductul toracic. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "C",
           "text": "timusul controlează dezvoltarea și maturarea tuturor tipurilor de limfocite",
-          "why": "Se selectează ca falsă: timusul maturează limfocitele T, nu toate tipurile."
+          "why": "Se selectează ca falsă: timusul maturează limfocitele T, nu toate tipurile. Sursa: Sistemul limfatic și imun — Timusul."
         },
         {
           "letter": "D",
           "text": "ductul toracic este situat anterior față de esofag",
-          "why": "Se selectează ca falsă: ductul toracic este posterior de esofag."
+          "why": "Se selectează ca falsă: ductul toracic este posterior de esofag. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "E",
           "text": "nodulii limfatici monitorizează compoziția limfei",
-          "why": "Afirmația este adevărată, deci nu se selectează la cerința „false”: celulele imune ganglionare întâlnesc și rețin antigene și particule din limfa care traversează sinusurile."
+          "why": "Afirmația este adevărată, deci nu se selectează la cerința „false”: tabelul atribuie nodulilor monitorizarea compoziției limfei, înglobarea agenților patogeni și generarea răspunsului imun. Sursa: Sistemul limfatic și imun — Organele sistemului limfatic, tabelul 16.1."
         }
       ],
       "sourcePages": [
@@ -1615,27 +1615,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "ductul toracic este situat posterior de vertebre",
-          "why": "Ductul toracic este anterior de corpurile vertebrale."
+          "why": "Ductul toracic este anterior de corpurile vertebrale. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "B",
           "text": "ductul limfatic drept drenează toată zona supradiafragmatică a corpului",
-          "why": "Ductul drept drenează numai jumătatea dreaptă supradiafragmatică."
+          "why": "Ductul drept drenează numai jumătatea dreaptă supradiafragmatică. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "C",
           "text": "vasele limfatice au un număr redus de valve",
-          "why": "Colectoarele limfatice au numeroase valve, care împiedică refluxul când compresia vasului sau gradientul de presiune se modifică."
+          "why": "Colectoarele limfatice au numeroase valve, care împiedică refluxul când compresia vasului sau gradientul de presiune se modifică. Sursa: Sistemul limfatic și imun — Valvele și circulația limfei."
         },
         {
           "letter": "D",
           "text": "amigdala faringiană se găsește pe peretele posterior al nazofaringelui",
-          "why": "Amigdala faringiană se află pe plafonul și peretele posterior al nazofaringelui."
+          "why": "Amigdala faringiană se află pe plafonul și peretele posterior al nazofaringelui. Sursa: Sistemul respirator — Amigdala faringiană și amigdalele palatine."
         },
         {
           "letter": "E",
           "text": "la nivelul splinei, fierul din structura hemoglobinei este utilizat la producerea bilirubinei",
-          "why": "Fierul este recuperat și reutilizat; bilirubina provine din componenta porfirinică a hemului după îndepărtarea fierului."
+          "why": "Fierul este recuperat pentru noi sinteze de hemoglobină sau depozitat în ficat; restul hemului este transformat în biliverdină și apoi bilirubină. Sursa: Sângele — Distrugerea globulelor roșii."
         }
       ],
       "sourcePages": [
@@ -1657,27 +1657,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "ductul toracic se formează în mediastin",
-          "why": "Ductul toracic începe în cavitatea abdominală, colectând limfa din trunchiurile inferioare, apoi traversează diafragma pentru a ajunge în mediastin."
+          "why": "Ductul toracic se formează în cavitatea abdominală și are traseu ascendent în torace. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "B",
           "text": "limfa din întreg corpul ajunge în vena cavă superioară",
-          "why": "Limfa ajunge în venele subclaviculare/unghiurile venoase, apoi în brahiocefalice și cava superioară; nu se varsă direct din ducte în cavă."
+          "why": "Ductele se varsă în venele subclaviculare. Figura venelor arată continuarea prin venele brahiocefalice în vena cavă superioară; afirmația se referă la destinația ulterioară, nu la vărsarea directă a ductelor. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept; Sistemul cardiovascular — Venele principale, figura 15.10."
         },
         {
           "letter": "C",
           "text": "de la țesuturi limfa curge bidirecțional",
-          "why": "Fluxul limfatic este unidirecțional spre vene."
+          "why": "Fluxul limfatic este unidirecțional spre vene. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "D",
           "text": "timozinele contribuie la maturarea limfocitelor T",
-          "why": "Factorii timici denumiți timozine sunt implicați în dezvoltarea liniei T; limfocitele T mature pot apoi popula organele limfoide periferice."
+          "why": "Timusul secretă timozine care contribuie la maturarea limfocitelor T. Sursa: Sistemul limfatic și imun — Timusul."
         },
         {
           "letter": "E",
           "text": "vena splenică intră în splină la nivelul hilului",
-          "why": "Vena splenică iese din splină prin hil și o drenează."
+          "why": "Vena splenică iese din splină prin hil și o drenează. Sursa: Sistemul limfatic și imun — Figura 16.5."
         }
       ],
       "sourcePages": [
@@ -1699,27 +1699,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "pe măsură ce se apropie de gât, ductul toracic se curbează la dreapta",
-          "why": "Ductul toracic se curbează spre stânga la baza gâtului."
+          "why": "Ductul toracic se curbează spre stânga la baza gâtului. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "B",
           "text": "la contactul cu diafragma, splina este convexă",
-          "why": "Fața diafragmatică a splinei este convexă."
+          "why": "Fața diafragmatică a splinei este convexă. Sursa: Sistemul limfatic și imun — Anatomia splinei."
         },
         {
           "letter": "C",
           "text": "în capilarele limfatice intestinale ajung aminoacizii rezultați din digestie",
-          "why": "Baremul exclude C. Calea principală a aminoacizilor absorbiți este sângele portal, în timp ce vasele chilifere preiau în special chilomicroni. Totuși, într-un studiu pe șobolani, aminoacizi alimentari au fost identificați și în limfa mezenterică. Rezultatul susține existența acestei căi experimentale, fără să stabilească importanța ei cantitativă la om."
+          "why": "Manualul descrie trecerea produșilor lipidici în vasele limfatice intestinale, în timp ce ceilalți produși absorbiți trec în capilare sanguine. Nu oferă suport pentru aminoacizi ca produși preluați pe calea limfatică în această schemă. Sursa: Sistemul digestiv — Absorbția produșilor digestiei; Sistemul limfatic și imun — Limfa intestinală."
         },
         {
           "letter": "D",
           "text": "amigdalele adenoide sunt situate la baza limbii",
-          "why": "La baza limbii sunt amigdalele linguale; adenoida este în nazofaringe."
+          "why": "La baza limbii sunt amigdalele linguale; adenoida este în nazofaringe. Sursa: Sistemul limfatic și imun — Amigdalele și plăcile Peyer."
         },
         {
           "letter": "E",
           "text": "timusul este un organ retrosternal",
-          "why": "Timusul se află posterior de stern."
+          "why": "Timusul se află posterior de stern. Sursa: Sistemul limfatic și imun — Timusul."
         }
       ],
       "sourcePages": [
@@ -1742,27 +1742,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "centri germinali în foliculii din corticală",
-          "why": "Foliculii corticali activați prezintă centri germinali."
+          "why": "Cortexul este organizat în foliculi, în centrul cărora sunt descriși centrii germinali. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "B",
           "text": "vase limfatice aferente prin care limfa părăsește nodulii",
-          "why": "Vasele aferente aduc limfa în ganglion; cele eferente o evacuează."
+          "why": "Vasele aferente aduc limfa în ganglion; cele eferente o evacuează. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "C",
           "text": "în interior și fibre de reticulină",
-          "why": "Fibrele de reticulină alcătuiesc suportul stromal al ganglionului."
+          "why": "Fibrele de reticulină alcătuiesc suportul stromal al ganglionului. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "D",
           "text": "în medulară limfocite dispuse mai dens comparativ cu cortexul",
-          "why": "Conform lecției, limfocitele sunt mai dense în corticală."
+          "why": "Conform lecției, limfocitele sunt mai dense în corticală. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "E",
           "text": "celule ce înglobează agenți patogeni",
-          "why": "Macrofagele și alte celule fagocitare înglobează agenți patogeni."
+          "why": "Tabelul precizează că nodulii limfatici sunt locul unde celulele înglobează agenții patogeni. Sursa: Sistemul limfatic și imun — Organele sistemului limfatic, tabelul 16.1."
         }
       ],
       "sourcePages": [
@@ -1786,27 +1786,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "ductul limfatic drept se formează în abdomen",
-          "why": "Se selectează ca incorectă: ductul drept se formează în regiunea bazei gâtului, nu în abdomen."
+          "why": "Se selectează ca incorectă: ductul drept se formează în regiunea bazei gâtului, nu în abdomen. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept; Sistemul limfatic și imun — Figura 16.2."
         },
         {
           "letter": "B",
           "text": "ductul toracic este o ramificație a venei subclaviculare stângi",
-          "why": "Se selectează ca incorectă: ductul toracic este un vas limfatic care se varsă în sistemul venos, nu o ramură a unei vene."
+          "why": "Se selectează ca incorectă: ductul toracic este un vas limfatic care se varsă în sistemul venos, nu o ramură a unei vene. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "C",
           "text": "sistemul limfatic este bidirecțional",
-          "why": "Se selectează ca incorectă: fluxul limfatic este unidirecțional."
+          "why": "Se selectează ca incorectă: fluxul limfatic este unidirecțional. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "D",
           "text": "plăcile Peyer sunt situate în special la nivelul colonului",
-          "why": "Se selectează ca incorectă: plăcile Peyer sunt caracteristice ileonului, nu colonului."
+          "why": "Se selectează ca incorectă: plăcile Peyer sunt caracteristice ileonului, nu colonului. Sursa: Sistemul limfatic și imun — Amigdalele și plăcile Peyer."
         },
         {
           "letter": "E",
           "text": "pe fața concavă a splinei se află și amprenta intestinală",
-          "why": "Afirmația este corectă: amprenta colică se află pe fața viscerală. Nu se selectează la cerința negativă."
+          "why": "Afirmația este corectă: amprenta colică se află pe fața viscerală. Nu se selectează la cerința negativă. Sursa: Sistemul limfatic și imun — Anatomia splinei; Sistemul limfatic și imun — Figura 16.5."
         }
       ],
       "sourcePages": [
@@ -1828,27 +1828,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "este localizat în mediastinul inferior",
-          "why": "Baremul exclude A, însă timusul poate ocupa atât mediastinul superior, cât și compartimentul anterior al mediastinului inferior. Formularea este incompletă ca localizare a întregului organ, dar nu trebuie învățată ca absență a oricărei porțiuni timice în mediastinul inferior."
+          "why": "Manualul localizează timusul în porțiunea superioară a toracelui; lecția endocrină precizează mediastinul superior. Sursa: Sistemul endocrin — Epifiza și timusul."
         },
         {
           "letter": "B",
           "text": "împreună cu amigdalele se atrofiază spre sfârșitul pubertății",
-          "why": "Baremul exclude B. Involuția țesutului timic funcțional începe înainte de pubertate, iar dimensiunile amigdalelor pot scădea treptat spre vârsta adultă. Cele două organe nu urmează obligatoriu același moment de atrofie la sfârșitul pubertății; nici involuția amigdalelor cu vârsta nu trebuie negată."
+          "why": "Manualul descrie atrofia timusului după un an și dimensiunile mici la sfârșitul pubertății; pasajele despre amigdale nu atribuie acestora același calendar de atrofie. Sursa: Sistemul limfatic și imun — Timusul; Sistemul limfatic și imun — Amigdalele și plăcile Peyer."
         },
         {
           "letter": "C",
           "text": "are o structură diferită de cea a splinei și a nodulilor limfatici",
-          "why": "Timusul are organizare lobulară și stromă epitelială, distincte de structura ganglionilor și splinei."
+          "why": "Textul precizează explicit că structura timusului diferă de cea a splinei și a nodulilor, descriind lobuli cu elemente limfoide în corticală și medulară. Sursa: Sistemul limfatic și imun — Timusul."
         },
         {
           "letter": "D",
           "text": "în timpul dezvoltării fetale are 4 lobi",
-          "why": "Timusul fetal are doi lobi, nu patru."
+          "why": "Timusul fetal are doi lobi, nu patru. Sursa: Sistemul limfatic și imun — Timusul."
         },
         {
           "letter": "E",
           "text": "secretă melatonina",
-          "why": "Baremul exclude E și manualul asociază melatonina cu epifiza, iar timusul cu timozinele. Totuși s-a demonstrat sinteza melatoninei și în timusul uman, cu posibilă acțiune locală. Aceasta nu stabilește un rol endocrin sistemic egal cu al epifizei, dar face prea categorică negarea producției timice de melatonină."
+          "why": "Manualul atribuie melatonina epifizei și timozinele timusului. Sursa: Sistemul endocrin — Epifiza și timusul."
         }
       ],
       "sourcePages": [
@@ -1870,27 +1870,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "este irigată de o ramură directă a aortei abdominale",
-          "why": "Artera splenică provine din trunchiul celiac, nu direct din aortă."
+          "why": "Artera splenică provine din trunchiul celiac, nu direct din aortă. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9."
         },
         {
           "letter": "B",
           "text": "vena splenică are și o porțiune retropancreatică",
-          "why": "Vena splenică are traiect posterior pancreasului."
+          "why": "Figura sistemului port hepatic reprezintă vena splenică venind de la splină pe traiectul din spatele pancreasului spre vena portă. Sursa: Sistemul cardiovascular — Sistemul port hepatic, figura 15.11."
         },
         {
           "letter": "C",
           "text": "are rol în metabolismul fierului",
-          "why": "Macrofagele splenice reciclează fierul din hematii."
+          "why": "Macrofagele splenice reciclează fierul din hematii. Sursa: Sistemul limfatic și imun — Funcțiile splinei."
         },
         {
           "letter": "D",
           "text": "produce bilirubină și urobilinogen",
-          "why": "Catabolismul hemului în splină contribuie la formarea bilirubinei; urobilinogenul se formează în intestin prin acțiune bacteriană."
+          "why": "Catabolismul hemului în splină contribuie la formarea bilirubinei; urobilinogenul se formează în intestin prin acțiune bacteriană. Sursa: Sângele — Distrugerea globulelor roșii."
         },
         {
           "letter": "E",
           "text": "vena splenică este afluent al cavei inferioare",
-          "why": "Vena splenică participă la formarea venei porte."
+          "why": "Vena splenică participă la formarea venei porte. Sursa: Sistemul cardiovascular — Sistemul port hepatic, figura 15.11."
         }
       ],
       "sourcePages": [
@@ -1913,27 +1913,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "în regiunea gâtului - nodulii limfatici latero-cervicali",
-          "why": "Ganglionii laterocervicali sunt în regiunea gâtului."
+          "why": "Ganglionii laterocervicali sunt în regiunea gâtului. Sursa: Sistemul limfatic și imun — Localizarea nodulilor și vasele aferente/eferente."
         },
         {
           "letter": "B",
           "text": "în regiunea membrului inferior - în fosa cubitală",
-          "why": "Fosa cubitală este la cot, deci la membrul superior."
+          "why": "Fosa cubitală este la cot, deci la membrul superior. Sursa: Sistemul limfatic și imun — Localizarea nodulilor și vasele aferente/eferente."
         },
         {
           "letter": "C",
           "text": "în mediastin - între plămâni",
-          "why": "Mediastinul dintre plămâni conține ganglioni limfatici."
+          "why": "Mediastinul dintre plămâni conține ganglioni limfatici. Sursa: Sistemul limfatic și imun — Localizarea nodulilor și vasele aferente/eferente."
         },
         {
           "letter": "D",
           "text": "de-a lungul vaselor mici abdominale",
-          "why": "Baremul exclude D, iar manualul exemplifică ganglioni de-a lungul marilor vase abdominale. Există însă ganglioni mezenterici și de-a lungul ramurilor arteriale și al vaselor drepte; „vase mici” este o formulare imprecisă, nu un criteriu care exclude biologic orice grup ganglionar."
+          "why": "Manualul menționează noduli de-a lungul marilor vase abdominale; nu formulează localizarea prin „vase mici” din variantă. Sursa: Sistemul limfatic și imun — Localizarea nodulilor și vasele aferente/eferente."
         },
         {
           "letter": "E",
           "text": "în regiunile axilară și inghinală",
-          "why": "Axila și regiunea inghinală sunt sedii majore de grupuri ganglionare."
+          "why": "Axila și regiunea inghinală sunt sedii majore de grupuri ganglionare. Sursa: Sistemul limfatic și imun — Localizarea nodulilor și vasele aferente/eferente."
         }
       ],
       "sourcePages": [
@@ -1955,27 +1955,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "este localizată în stânga cavității abdominale, subdiafragmatic",
-          "why": "Splina este subdiafragmatică, în stânga abdomenului."
+          "why": "Splina este subdiafragmatică, în stânga abdomenului. Sursa: Sistemul limfatic și imun — Anatomia splinei."
         },
         {
           "letter": "B",
           "text": "prezintă o față convexă, în raport cu rinichiul stâng",
-          "why": "Raportul renal se află pe fața viscerală, nu pe cea convexă diafragmatică."
+          "why": "Raportul renal se află pe fața viscerală, nu pe cea convexă diafragmatică. Sursa: Sistemul limfatic și imun — Anatomia splinei."
         },
         {
           "letter": "C",
           "text": "este vascularizată de vase care intră sau ies la nivelul hilului",
-          "why": "Hilul este locul de intrare și ieșire al vaselor splenice."
+          "why": "Hilul este locul de intrare și ieșire al vaselor splenice. Sursa: Sistemul limfatic și imun — Anatomia splinei."
         },
         {
           "letter": "D",
           "text": "este delimitată de o capsulă ce trimite septuri lungi, ce delimitează lobuli",
-          "why": "Capsula trimite trabecule care nu delimitează lobuli compleți."
+          "why": "Capsula trimite trabecule care nu delimitează lobuli compleți. Sursa: Sistemul limfatic și imun — Anatomia splinei."
         },
         {
           "letter": "E",
           "text": "prezintă o formă care influențează configurația organelor vecine",
-          "why": "În descrierea anatomică din manual, organele vecine modelează fața viscerală a splinei și lasă impresiuni; varianta inversează această relație descriptivă. Nu rezultă că o splină mărită nu ar putea comprima sau deplasa organele din jur."
+          "why": "Manualul spune că forma splinei este determinată de structurile cu care intră în contact; varianta inversează această relație. Sursa: Sistemul limfatic și imun — Anatomia splinei."
         }
       ],
       "sourcePages": [
@@ -1999,27 +1999,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "ductul toracic se drenează în vena subclaviculară dreaptă",
-          "why": "Ductul toracic se deschide la unghiul venos stâng, în regiunea unirii jugularei interne cu subclaviculara stângă; partea dreaptă este greșită."
+          "why": "Ductul toracic se varsă în vena subclaviculară stângă, nu dreaptă. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "B",
           "text": "limfa se formează din lichidul ce trece forțat prin pereții capilarelor sanguine în spațiile tisulare",
-          "why": "Lichidul filtrat din capilarele sanguine în interstițiu este preluat de capilarele limfatice și devine limfă."
+          "why": "Lichidul filtrat din capilarele sanguine în interstițiu este preluat de capilarele limfatice și devine limfă. Sursa: Sistemul limfatic și imun — Formarea și compoziția limfei."
         },
         {
           "letter": "C",
           "text": "preia proteinele ce nu pot să revină în circulația sanguină",
-          "why": "Baremul include C în sensul proteinelor care nu revin ușor direct prin peretele capilarelor sanguine. Capilarele limfatice le preiau din interstițiu și le readuc în sânge prin ductele terminale; nu este vorba despre imposibilitatea definitivă a revenirii lor în circulație."
+          "why": "Baremul include C în sensul proteinelor care nu revin ușor direct prin peretele capilarelor sanguine. Capilarele limfatice le preiau din interstițiu și le readuc în sânge prin ductele terminale; nu este vorba despre imposibilitatea definitivă a revenirii lor în circulație. Sursa: Sistemul limfatic și imun — Formarea și compoziția limfei."
         },
         {
           "letter": "D",
           "text": "asigură preluarea microorganismelor",
-          "why": "Limfa poate transporta microorganisme și antigene către ganglioni."
+          "why": "Limfa poate transporta microorganisme și antigene către ganglioni. Sursa: Sistemul limfatic și imun — Formarea și compoziția limfei."
         },
         {
           "letter": "E",
           "text": "prezintă structuri care declanșează răspunsul imun",
-          "why": "Ganglionii și celelalte organe limfoide găzduiesc celule care inițiază răspunsuri imune."
+          "why": "Ganglionii și celelalte organe limfoide găzduiesc celule care inițiază răspunsuri imune. Sursa: Sistemul limfatic și imun — Organele sistemului limfatic, tabelul 16.1."
         }
       ],
       "sourcePages": [
@@ -2041,27 +2041,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "timusul secretă timozine implicate în dezvoltarea limfocitelor B",
-          "why": "Baremul exclude A, iar manualul atribuie timozinelor rolul caracteristic în dezvoltarea liniei T. Maturarea primară B are loc în măduva osoasă. Totuși, experimente pe celule umane arată că timozinele pot crește indirect producția factorilor de creștere B; formularea largă „implicate în dezvoltarea” nu justifică negarea oricărei influențe asupra liniei B."
+          "why": "Timozinele sunt descrise ca hormoni care contribuie la maturarea limfocitelor T; manualul nu le atribuie dezvoltarea limfocitelor B. Sursa: Sistemul limfatic și imun — Timusul."
         },
         {
           "letter": "B",
           "text": "splina conține celule care înglobează agenți patogeni",
-          "why": "Splina conține fagocite care îndepărtează agenți patogeni din sânge."
+          "why": "Splina conține fagocite care îndepărtează agenți patogeni din sânge. Sursa: Sistemul limfatic și imun — Organele sistemului limfatic, tabelul 16.1."
         },
         {
           "letter": "C",
           "text": "amigdalele sunt localizate în faringe și în cavitatea nazală",
-          "why": "Amigdala faringiană se află în nazofaringe, nu în cavitatea nazală propriu-zisă."
+          "why": "Amigdala faringiană se află în nazofaringe, nu în cavitatea nazală propriu-zisă. Sursa: Sistemul limfatic și imun — Amigdalele și plăcile Peyer."
         },
         {
           "letter": "D",
           "text": "plăcile Peyer sunt prezente în pereții colonului sigmoid",
-          "why": "Plăcile Peyer sunt caracteristice ileonului."
+          "why": "Plăcile Peyer sunt caracteristice ileonului. Sursa: Sistemul limfatic și imun — Amigdalele și plăcile Peyer."
         },
         {
           "letter": "E",
           "text": "nodulii limfatici au fibre de reticulină ce susțin celulele principale, limfocitele B și T",
-          "why": "Rețeaua de reticulină susține limfocitele și celelalte celule ganglionare."
+          "why": "Rețeaua de reticulină susține limfocitele și celelalte celule ganglionare. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         }
       ],
       "sourcePages": [
@@ -2084,27 +2084,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "se formează în țesuturi și se extinde spre splină",
-          "why": "Vasele limfatice converg spre circulația venoasă, nu spre splină."
+          "why": "Vasele limfatice converg spre circulația venoasă, nu spre splină. Sursa: Sistemul limfatic și imun — Funcțiile sistemului limfatic."
         },
         {
           "letter": "B",
           "text": "asigură integrarea limfei în circulația sanguină, putând fi reutilizată",
-          "why": "Colectoarele și ductele limfatice restituie lichidul și proteinele interstițiale în sistemul venos, reintegrându-le în volumul circulant."
+          "why": "Colectoarele și ductele limfatice restituie lichidul și proteinele interstițiale în sistemul venos, reintegrându-le în volumul circulant. Sursa: Sistemul limfatic și imun — Funcțiile sistemului limfatic."
         },
         {
           "letter": "C",
           "text": "asigură activitatea sistemului imun",
-          "why": "Sistemul limfatic asigură suport celular și organe pentru activitatea imună."
+          "why": "Sistemul limfatic asigură suport celular și organe pentru activitatea imună. Sursa: Sistemul limfatic și imun — Funcțiile sistemului limfatic."
         },
         {
           "letter": "D",
           "text": "drenează spațiul intracelular",
-          "why": "Drenează spațiul interstițial, extracelular, nu interiorul celulelor."
+          "why": "Drenează spațiul interstițial, extracelular, nu interiorul celulelor. Sursa: Sistemul limfatic și imun — Formarea și compoziția limfei."
         },
         {
           "letter": "E",
           "text": "conține țesuturi limfoide organizate în structuri care pot îndeplini numeroase roluri",
-          "why": "Țesuturile limfoide îndeplinesc roluri de filtrare, apărare și maturare celulară, în funcție de organ."
+          "why": "Țesuturile limfoide îndeplinesc roluri de filtrare, apărare și maturare celulară, în funcție de organ. Sursa: Sistemul limfatic și imun — Organele sistemului limfatic, tabelul 16.1."
         }
       ],
       "sourcePages": [
@@ -2126,27 +2126,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "filtrarea sângelui și depozitarea acestuia",
-          "why": "Splina filtrează sângele și poate constitui un rezervor sanguin."
+          "why": "Splina filtrează sângele și poate constitui un rezervor sanguin. Sursa: Sistemul limfatic și imun — Funcțiile splinei."
         },
         {
           "letter": "B",
           "text": "fagocitarea globulelor roșii îmbătrânite de macrofagele splenice",
-          "why": "Macrofagele pulpei roșii îndepărtează eritrocitele îmbătrânite și recuperează componente reutilizabile, inclusiv fierul din hemoglobină."
+          "why": "Macrofagele splenice fagocitează globulele roșii îmbătrânite sau distruse, potrivit funcțiilor enumerate. Sursa: Sistemul limfatic și imun — Funcțiile splinei."
         },
         {
           "letter": "C",
           "text": "metabolizarea fierului, trimițându-l în intestinul subțire",
-          "why": "Fierul recuperat este transportat pentru depozitare și reutilizare, inclusiv către ficat și măduvă, nu trimis în intestin ca destinație principală."
+          "why": "Lecția splinei precizează reciclarea fierului și trimiterea lui la ficat, nu în intestinul subțire. Sursa: Sistemul limfatic și imun — Funcțiile splinei."
         },
         {
           "letter": "D",
           "text": "reglarea răspunsului imun prin maturarea limfocitelor T",
-          "why": "Maturarea primară a limfocitelor T se face în timus."
+          "why": "Maturarea primară a limfocitelor T se face în timus. Sursa: Sistemul limfatic și imun — Timusul."
         },
         {
           "letter": "E",
           "text": "monitorizarea compoziției limfei",
-          "why": "Ganglionii monitorizează limfa; splina monitorizează sângele."
+          "why": "Ganglionii monitorizează limfa; splina monitorizează sângele. Sursa: Sistemul limfatic și imun — Organele sistemului limfatic, tabelul 16.1."
         }
       ],
       "sourcePages": [
@@ -2169,27 +2169,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "sunt formate din endotelii, ca și capilarele sanguine",
-          "why": "Capilarele limfatice și cele sanguine au un strat de celule endoteliale; la cele limfatice, organizarea peretelui favorizează pătrunderea fluidului și a macromoleculelor."
+          "why": "Capilarele limfatice și cele sanguine au un strat de celule endoteliale; la cele limfatice, organizarea peretelui favorizează pătrunderea fluidului și a macromoleculelor. Sursa: Sistemul limfatic și imun — Capilarele limfatice."
         },
         {
           "letter": "B",
           "text": "sunt structuri microscopice",
-          "why": "Capilarele limfatice formează rețele fine în spațiile tisulare și au pereți endoteliali, identificați prin examinare microscopică, spre deosebire de ductele mari vizibile macroscopic."
+          "why": "Capilarele limfatice formează rețele fine în spațiile tisulare și au pereți endoteliali, identificați prin examinare microscopică, spre deosebire de ductele mari vizibile macroscopic. Sursa: Sistemul limfatic și imun — Capilarele limfatice."
         },
         {
           "letter": "C",
           "text": "sunt structuri la fel de permeabile ca și capilarele sanguine",
-          "why": "Peretele capilarelor limfatice permite mai ușor intrarea macromoleculelor și a lichidului interstițial; permeabilitatea nu este egală cu cea a capilarelor sanguine."
+          "why": "Peretele capilarelor limfatice permite mai ușor intrarea macromoleculelor și a lichidului interstițial; permeabilitatea nu este egală cu cea a capilarelor sanguine. Sursa: Sistemul limfatic și imun — Capilarele limfatice."
         },
         {
           "letter": "D",
           "text": "sunt mai frecvente la nivelul hipodermului",
-          "why": "Manualul evidențiază rețeaua abundentă din derm. Hipodermul poate conține vase limfatice, dar aceasta nu justifică afirmația comparativă că acolo capilarele sunt mai frecvente."
+          "why": "Manualul evidențiază rețeaua abundentă din derm. Hipodermul poate conține vase limfatice, dar aceasta nu justifică afirmația comparativă că acolo capilarele sunt mai frecvente. Sursa: Sistemul limfatic și imun — Capilarele limfatice."
         },
         {
           "letter": "E",
           "text": "de la nivelul vilozităților intestinale asigură absorbția unor produși de digestie lipidici",
-          "why": "Vasele chilifere din vilozități preiau lipidele absorbite și împachetate în chilomicroni."
+          "why": "Vasele chilifere din vilozități preiau lipidele absorbite și împachetate în chilomicroni. Sursa: Sistemul digestiv — Absorbția produșilor digestiei."
         }
       ],
       "sourcePages": [
@@ -2212,27 +2212,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "prin vena limfatică dreaptă limfa este drenată în artera subclaviculară dreaptă",
-          "why": "Drenajul se face în vena subclaviculară/unghiul venos drept, nu în arteră."
+          "why": "Ductul limfatic drept se deschide în vena subclaviculară dreaptă, nu în artera omonimă. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "B",
           "text": "este inițiat prin capilare limfatice mai permeabile decât cele sanguine",
-          "why": "Permeabilitatea ridicată permite preluarea lichidului și a proteinelor interstițiale."
+          "why": "Permeabilitatea ridicată permite preluarea lichidului și a proteinelor interstițiale. Sursa: Sistemul limfatic și imun — Capilarele limfatice."
         },
         {
           "letter": "C",
           "text": "este asigurat de vase prezente în întreg organismul",
-          "why": "Rețeaua limfatică este larg răspândită în organism, cu excepții tisulare; enunțul este o generalizare didactică."
+          "why": "Vasele limfatice sunt descrise ca structuri răspândite în întreg organismul. Sursa: Sistemul limfatic și imun — Capilarele limfatice."
         },
         {
           "letter": "D",
           "text": "asigură drenajul lichidului plasmatic în circulația venoasă",
-          "why": "Baremul exclude D. Lichidul preluat direct este interstițial și devine limfă, deși provine în mare parte din plasma filtrată. Distincția terminologică poate explica selecția, fără a presupune o origine independentă de plasmă."
+          "why": "Baremul exclude D. Lichidul preluat direct este interstițial și devine limfă, deși provine în mare parte din plasma filtrată. Distincția terminologică poate explica selecția, fără a presupune o origine independentă de plasmă. Sursa: Sistemul limfatic și imun — Formarea și compoziția limfei."
         },
         {
           "letter": "E",
           "text": "ductul toracic drenează limfă din jumătatea inferioară a corpului și a sfertului superior drept",
-          "why": "Ductul toracic drenează jumătatea inferioară și sfertul superior stâng, nu drept."
+          "why": "Ductul toracic drenează jumătatea inferioară și sfertul superior stâng, nu drept. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         }
       ],
       "sourcePages": [
@@ -2255,27 +2255,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "sunt traversați de limfă adusă de vase limfatice eferente",
-          "why": "Vasele aferente aduc limfa în ganglion; cele eferente o evacuează prin hil după traversarea sinusurilor ganglionare."
+          "why": "Vasele aferente aduc limfa în ganglion; cele eferente o evacuează prin hil după traversarea sinusurilor ganglionare. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "B",
           "text": "reprezintă filtre pentru limfă și generează răspunsul imun",
-          "why": "Macrofagele rețin particule din limfă, iar întâlnirea antigenelor cu limfocitele poate iniția răspunsul imun în ganglion."
+          "why": "Manualul descrie nodulii ca filtre pentru limfă, iar tabelul precizează că în ei se generează răspunsul imun. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici; Sistemul limfatic și imun — Organele sistemului limfatic, tabelul 16.1."
         },
         {
           "letter": "C",
           "text": "în zona corticală, prezintă foliculi limfocitari cu centru germinativ",
-          "why": "Cortexul conține foliculi, iar cei secundari au centri germinali."
+          "why": "Manualul descrie în cortex grupuri de limfocite organizate în foliculi, cu centri germinali. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "D",
           "text": "prezintă o capsulă a cărei extensie în interior delimitează lobulii",
-          "why": "Prelungirile capsulei formează trabecule ce compartimentează ganglionul."
+          "why": "Prelungirile capsulei formează trabecule ce compartimentează ganglionul. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         },
         {
           "letter": "E",
           "text": "prezintă sinusuri pentru circulația limfei și a unui număr foarte mare de celule",
-          "why": "Sinusurile sunt spații de trecere a limfei, descrise în lecție cu relativ puține celule, nu cu un număr foarte mare."
+          "why": "Sinusurile sunt spații de trecere a limfei, descrise în lecție cu relativ puține celule, nu cu un număr foarte mare. Sursa: Sistemul limfatic și imun — Structura nodulilor limfatici."
         }
       ],
       "sourcePages": [
@@ -2297,27 +2297,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "începe să se atrofieze după vârsta de 20 de ani",
-          "why": "Involuția nu începe obligatoriu abia după 20 de ani. Manualul o descrie după primul an, iar studii morfometrice umane arată declinul țesutului timic funcțional încă din copilăria timpurie; masa totală a organului și componenta limfoepitelială nu evoluează identic."
+          "why": "Manualul plasează începutul atrofiei după vârsta de un an, nu după 20 de ani. Sursa: Sistemul limfatic și imun — Timusul."
         },
         {
           "letter": "B",
           "text": "este un organ care prezintă și funcție circulatorie",
-          "why": "Timusul are rol imun și endocrin, nu funcție de pompă sau de circulație a limfei."
+          "why": "Timusul are rol imun și endocrin, nu funcție de pompă sau de circulație a limfei. Sursa: Sistemul limfatic și imun — Timusul."
         },
         {
           "letter": "C",
           "text": "este bilobat și este împărțit în lobuli",
-          "why": "Fiecare dintre cei doi lobi timici este subdivizat prin septuri conjunctive în lobuli, în care se disting corticala și medulara."
+          "why": "Timusul fetal este bilobat, iar structura sa este împărțită în numeroși lobuli cu corticală și medulară. Sursa: Sistemul limfatic și imun — Timusul."
         },
         {
           "letter": "D",
           "text": "asigură maturarea limfocitelor T primitive",
-          "why": "Precursorii liniei T proliferează, se diferențiază și sunt selectați în mediul timic înainte de a migra ca limfocite mature în periferie."
+          "why": "Limfocitele T primitive sunt modificate în timus și devin limfocite T mature, care migrează în noduli. Sursa: Sistemul limfatic și imun — Timusul; Sistemul limfatic și imun — Timusul și timozinele."
         },
         {
           "letter": "E",
           "text": "este localizat retrosternal, între trahee și esofag",
-          "why": "Timusul este retrosternal și anterior traheei; nu se află între trahee și esofag."
+          "why": "Timusul este retrosternal și anterior traheei; nu se află între trahee și esofag. Sursa: Sistemul limfatic și imun — Figura 16.4."
         }
       ],
       "sourcePages": [
@@ -2339,27 +2339,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "amigdala adenoidă - în partea inferioară a faringelui",
-          "why": "Amigdala adenoidă se află în partea superioară a faringelui."
+          "why": "Amigdala adenoidă se află în partea superioară a faringelui. Sursa: Sistemul limfatic și imun — Amigdalele și plăcile Peyer."
         },
         {
           "letter": "B",
           "text": "amigdalele palatine - deasupra osului palatin",
-          "why": "Amigdalele palatine sunt inferior palatului, în orofaringe."
+          "why": "Amigdalele palatine sunt inferior palatului, în orofaringe. Sursa: Sistemul limfatic și imun — Amigdalele și plăcile Peyer."
         },
         {
           "letter": "C",
           "text": "plăcile Peyer - în pereții intestinului subțire (ileon)",
-          "why": "Agregatele de foliculi limfoizi numite plăci Peyer sunt caracteristice ileonului și participă la supravegherea imună a conținutului intestinal."
+          "why": "Plăcile Peyer sunt aglomerări de țesut limfoid în peretele tractului intestinal, în special în ileon. Sursa: Sistemul limfatic și imun — Amigdalele și plăcile Peyer."
         },
         {
           "letter": "D",
           "text": "amigdalele linguale - în țesutul limbii",
-          "why": "Amigdalele linguale sunt în țesutul de la baza limbii."
+          "why": "Amigdalele linguale sunt în țesutul de la baza limbii. Sursa: Sistemul limfatic și imun — Amigdalele și plăcile Peyer."
         },
         {
           "letter": "E",
           "text": "amigdalele faringiene - la nivelul orofaringelui",
-          "why": "Amigdala faringiană este în nazofaringe, nu în orofaringe."
+          "why": "Amigdala faringiană este în nazofaringe, nu în orofaringe. Sursa: Sistemul respirator — Amigdala faringiană și amigdalele palatine."
         }
       ],
       "sourcePages": [
@@ -2382,27 +2382,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "prezintă valve care facilitează circulația limfei",
-          "why": "Valvele se închid când presiunea ar determina refluxul și dirijează limfa către colectoare, ducte și, în final, circulația venoasă."
+          "why": "Valvele se închid când presiunea ar determina refluxul și dirijează limfa către colectoare, ducte și, în final, circulația venoasă. Sursa: Sistemul limfatic și imun — Valvele și circulația limfei."
         },
         {
           "letter": "B",
           "text": "asigură o circulație bidirecțională - către inimă",
-          "why": "Fluxul este unidirecțional, nu bidirecțional."
+          "why": "Fluxul este unidirecțional, nu bidirecțional. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "C",
           "text": "reintegrează limfa în circulația sanguină",
-          "why": "Ductele terminale se deschid în sistemul venos din regiunea bazei gâtului, astfel încât lichidul interstițial drenat este reintegrat în sânge."
+          "why": "Ductele terminale se deschid în sistemul venos din regiunea bazei gâtului, astfel încât lichidul interstițial drenat este reintegrat în sânge. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "D",
           "text": "se drenează în artera subclaviculară stângă",
-          "why": "Drenajul se face în venele subclaviculare/unghiurile venoase, nu în artere."
+          "why": "Vasele limfatice se varsă în venele subclaviculare prin cele două ducte; varianta numește greșit artera. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "E",
           "text": "asigură o circulație favorizată de contracția muscular",
-          "why": "Pompa musculară comprimă vasele și favorizează avansul limfei; forma tipărită „muscular” este păstrată."
+          "why": "Pompa musculară comprimă vasele și favorizează avansul limfei; forma tipărită „muscular” este păstrată. Sursa: Sistemul limfatic și imun — Valvele și circulația limfei."
         }
       ],
       "sourcePages": [
@@ -2424,27 +2424,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "este un organ toracic cu dublu rol: limfatic și digestiv",
-          "why": "Timusul are rol limfatic și endocrin, nu digestiv."
+          "why": "Timusul are rol limfatic și endocrin, nu digestiv. Sursa: Sistemul limfatic și imun — Timusul."
         },
         {
           "letter": "B",
           "text": "lipsește la copil și se dezvoltă în timpul pubertății, atingând cea mai mare dimensiune la vârstnici",
-          "why": "Timusul este bine dezvoltat la copil și involuează ulterior."
+          "why": "Timusul este bine dezvoltat la copil și involuează ulterior. Sursa: Sistemul limfatic și imun — Timusul."
         },
         {
           "letter": "C",
           "text": "are și rol endocrin, secretând timozine implicate în dezvoltarea limfocitelor B",
-          "why": "Baremul exclude C potrivit asocierii didactice dintre timozine și dezvoltarea limfocitelor T. Maturarea primară B are loc în măduva osoasă, însă timozinele pot influența indirect răspunsurile B prin stimularea unor factori de creștere. Efectul demonstrat pe celule umane în cultură nu echivalează cu maturarea primară B în timus."
+          "why": "Timozinele sunt asociate în manual cu dezvoltarea și maturarea limfocitelor T, nu B. Sursa: Sistemul limfatic și imun — Timusul."
         },
         {
           "letter": "D",
           "text": "în toracele unui copil, este situat retrosternal, are dimensiuni mari și acoperă confluența venelor brahiocefalice",
-          "why": "La copil, timusul este relativ mare, retrosternal, în raport anterior cu marile vene mediastinale."
+          "why": "Figura timusului copilului arată organul mare, anterior regiunii de unire a venelor brahiocefalice; textul precizează localizarea sa înapoia sternului. Sursa: Sistemul endocrin — Timusul copilului, figura 13.9."
         },
         {
           "letter": "E",
           "text": "este situat dorsal față de stern și ventral față de trahee",
-          "why": "Timusul se află între stern și structurile viscerale ale mediastinului, anterior traheei."
+          "why": "Timusul se află între stern și structurile viscerale ale mediastinului, anterior traheei. Sursa: Sistemul endocrin — Timusul copilului, figura 13.9."
         }
       ],
       "sourcePages": [
@@ -2468,27 +2468,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "îndepărtează produse de catabolism de la nivelul țesuturilor",
-          "why": "Ambele sisteme participă la îndepărtarea reziduurilor din țesuturi."
+          "why": "Ambele sisteme participă la îndepărtarea reziduurilor din țesuturi. Sursa: Sistemul limfatic și imun — Funcțiile sistemului limfatic."
         },
         {
           "letter": "B",
           "text": "transportă proteine plasmatice din clasa gama globulinelor",
-          "why": "Imunoglobulinele din fracția gama pot fi transportate atât de plasmă, cât și de limfă."
+          "why": "Manualul leagă sistemul imun de celulele sistemului limfatic și precizează că componentele imune sunt transportate prin vase limfatice și sânge. Corelat cu definiția gama globulinelor ca anticorpi, aceasta susține transportul lor prin ambele sisteme. Sursa: Sistemul limfatic și imun — Funcțiile sistemului limfatic; Sângele — Globulinele."
         },
         {
           "letter": "C",
           "text": "readuc în vene o parte din fluidul interstițial din țesuturi",
-          "why": "Baremul include C potrivit modelului clasic: reabsorbție directă în vasele sanguine și întoarcere prin limfă. În multe țesuturi, la echilibru, microvasele filtrează lichid, care revine mai ales prin drenaj limfatic; reabsorbția directă poate fi tranzitorie."
+          "why": "Legenda figurii precizează revenirea majorității fluidului direct în sistemul circulator și a unei fracțiuni prin capilarele limfatice. Sursa: Sistemul limfatic și imun — Valvele și circulația limfei."
         },
         {
           "letter": "D",
           "text": "transportă toate tipurile de elemente figurate",
-          "why": "Limfa normală nu transportă toate elementele figurate sanguine, în special eritrocite și trombocite ca populații caracteristice."
+          "why": "Sursa descrie limfocite și monocite în limfă, nu ansamblul eritrocite–leucocite–plachete al sângelui. Nu susține transportul tuturor elementelor figurate prin limfă. Sursa: Sistemul limfatic și imun — Formarea și compoziția limfei."
         },
         {
           "letter": "E",
           "text": "prezintă vase capilare cu perete subțire, adaptat schimburilor",
-          "why": "Ambele au capilare endoteliale cu pereți subțiri, adaptate schimburilor sau preluării fluidului."
+          "why": "Ambele au capilare endoteliale cu pereți subțiri, adaptate schimburilor sau preluării fluidului. Sursa: Sistemul limfatic și imun — Capilarele limfatice."
         }
       ],
       "sourcePages": [

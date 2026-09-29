@@ -21,27 +21,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "este un pigment de culoare roșie prezent în plasma sanguină",
-          "why": "Hemoglobina se află în mod normal în citoplasma eritrocitelor, nu liberă în plasmă."
+          "why": "Hemoglobina se află în mod normal în citoplasma eritrocitelor, nu liberă în plasmă. Sursa: Sângele — Globulele roșii: structură, număr și producere."
         },
         {
           "letter": "B",
           "text": "dioxidul de carbon se leagă puternic de molecula de hemoglobină",
-          "why": "CO₂ se leagă reversibil de grupările amino ale globinei; legarea foarte puternică de fier caracterizează monoxidul de carbon."
+          "why": "Manualul asociază legarea puternică de fier cu monoxidul de carbon; pentru CO₂ descrie transportul unei cantități mici sub formă de carbaminohemoglobină. Sursa: Sângele — Hemoglobina."
         },
         {
           "letter": "C",
           "text": "realizează cu oxigenul o combinație stabilă oxihemoglobina",
-          "why": "Baremul exclude C, urmând distincția didactică dintre legarea reversibilă a oxigenului și fixarea mult mai puternică a CO. Oxihemoglobina poate ceda O₂ în țesuturi; totuși, termenul „stabilă” nu este definit și nu trebuie confundat automat cu „ireversibilă”."
+          "why": "Oxigenul se leagă slab de fierul hemului și poate fi cedat țesuturilor. În această descriere, „stabilă” nu corespunde combinației numite oxihemoglobină. Sursa: Sângele — Hemoglobina."
         },
         {
           "letter": "D",
           "text": "conține fier care se combină rapid cu monoxidul de carbon",
-          "why": "CO se leagă de fierul hemului cu afinitate mult mai mare decât O₂, reducând transportul oxigenului."
+          "why": "CO se leagă de fierul hemului cu afinitate mult mai mare decât O₂, reducând transportul oxigenului. Sursa: Sângele — Hemoglobina."
         },
         {
           "letter": "E",
           "text": "este alcătuită din două lanțuri polipeptidice alfa și două beta",
-          "why": "Hemoglobina adultă majoritară, HbA, are două lanțuri alfa și două beta. Alte forme de hemoglobină au alte lanțuri."
+          "why": "Manualul descrie patru lanțuri polipeptidice: două alfa și două beta, fiecare cu aproximativ 150 de aminoacizi. Sursa: Sângele — Hemoglobina."
         }
       ],
       "sourcePages": [
@@ -64,27 +64,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "globulele roșii îmbătrânite și deteriorate sunt distruse de macrofage în splină, ficat și măduva osoasă",
-          "why": "Macrofagele acestor organe îndepărtează hematiile senescente sau deteriorate și reciclează componentele lor."
+          "why": "Macrofagele acestor organe îndepărtează hematiile senescente sau deteriorate și reciclează componentele lor. Sursa: Sângele — Distrugerea globulelor roșii."
         },
         {
           "letter": "B",
           "text": "fierul eliberat din hemoglobină este adus în măduva osoasă pentru noi sinteze de hemoglobină",
-          "why": "Fierul recuperat este transportat prin transferrină și reutilizat în eritropoieză."
+          "why": "Fierul eliberat din hemoglobină este adus în măduva osoasă pentru noi sinteze de hemoglobină; excesul se depozitează în ficat. Sursa: Sângele — Distrugerea globulelor roșii."
         },
         {
           "letter": "C",
           "text": "biliverdina este transportată de la splină la ficat",
-          "why": "În schema catabolismului hemului, biliverdina este transformată în bilirubină; bilirubina neconjugată circulă spre ficat legată de albumină."
+          "why": "Manualul descrie transformarea biliverdinei în bilirubină; bilirubina este transportată de la splină la ficat. Sursa: Sângele — Distrugerea globulelor roșii."
         },
         {
           "letter": "D",
           "text": "bacteriile florei intestinale convertesc o parte din bilirubină în urobilinogen",
-          "why": "Microbiota intestinală transformă bilirubina ajunsă prin bilă în derivați precum urobilinogenul."
+          "why": "Microbiota intestinală transformă bilirubina ajunsă prin bilă în derivați precum urobilinogenul. Sursa: Sângele — Distrugerea globulelor roșii."
         },
         {
           "letter": "E",
           "text": "bilirubina determină culoarea materiilor fecale",
-          "why": "Culoarea brună normală este dată în principal de stercobilină, derivată din transformările intestinale ale bilirubinei; nu de bilirubină ca pigment final."
+          "why": "Manualul atribuie culoarea materiilor fecale urobilinogenului, format în intestin din bilirubină. Sursa: Sângele — Distrugerea globulelor roșii."
         }
       ],
       "sourcePages": [
@@ -108,27 +108,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "anticorpii de grup sanguin anti-A și anti-B - anticorpi prezenți în ser",
-          "why": "Anti-A și anti-B sunt anticorpi circulanți, detectabili în ser, în funcție de grupa ABO."
+          "why": "Anti-A și anti-B sunt anticorpi circulanți, detectabili în ser, în funcție de grupa ABO. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         },
         {
           "letter": "B",
           "text": "macrofage - celule fagocitare",
-          "why": "Macrofagele înglobează și degradează microorganisme, resturi celulare și celule îmbătrânite."
+          "why": "Macrofagele fagocitează microorganisme; în splină, ficat și măduva osoasă distrug și hematiile îmbătrânite. Sursa: Sângele — Limfocitele și monocitele; Sângele — Distrugerea globulelor roșii."
         },
         {
           "letter": "C",
           "text": "trombocite - rol în hemostază și coagulare",
-          "why": "Trombocitele formează dopul plachetar și oferă suprafețe pentru reacțiile coagulării."
+          "why": "Plachetele formează agregate la leziunea vasculară și sunt implicate și în mecanismul coagulării. Sursa: Sângele — Plachetele sanguine și hemostaza."
         },
         {
           "letter": "D",
           "text": "celulele Kupffer - fagocitoza globulelor albe îmbătrânite",
-          "why": "Celulele Kupffer sunt macrofage hepatice și pot elimina leucocite senescente sau apoptotice, inclusiv neutrofile. Formularea „albe” din scan este păstrată; funcția lor nu se limitează la hematii."
+          "why": "Lecția Sistemul digestiv precizează explicit că celulele Kupffer fagocitează globulele roșii și albe îmbătrânite; asocierea este susținută de manual. Sursa: Sistemul digestiv — Funcțiile ficatului și celulele Kupffer."
         },
         {
           "letter": "E",
           "text": "limfocitele T - maturare în ganglionii limfatici",
-          "why": "Maturarea principală a limfocitelor T are loc în timus; ganglionii sunt sedii de activare și răspuns imun."
+          "why": "Limfocitele T se maturează în timus înainte de a ajunge în nodulii limfatici. Sursa: Sângele — Limfocitele și monocitele."
         }
       ],
       "sourcePages": [
@@ -150,27 +150,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "sunt elemente figurate anucleate, ca și leucocitele",
-          "why": "Eritrocitele umane mature sunt anucleate, însă leucocitele au nucleu; comparația face enunțul fals."
+          "why": "Eritrocitele umane mature sunt anucleate, însă leucocitele au nucleu; comparația face enunțul fals. Sursa: Sângele — Globulele roșii: structură, număr și producere; Sângele — Aspectul microscopic al leucocitelor, tabelul 14.2."
         },
         {
           "letter": "B",
           "text": "se formează în măduva roșie și în ganglionii limfatici",
-          "why": "La adult, eritropoieza normală are loc în măduva osoasă roșie, nu în ganglionii limfatici."
+          "why": "La adult, eritropoieza normală are loc în măduva osoasă roșie, nu în ganglionii limfatici. Sursa: Sângele — Eritropoieza și eritropoetina."
         },
         {
           "letter": "C",
           "text": "conțin oxihemoglobină și carbaminohemoglobină",
-          "why": "Hemoglobina eritrocitară poate transporta O₂ ca oxihemoglobină și o parte din CO₂ ca carbaminohemoglobină."
+          "why": "Hemoglobina eritrocitară poate transporta O₂ ca oxihemoglobină și o parte din CO₂ ca carbaminohemoglobină. Sursa: Sângele — Hemoglobina."
         },
         {
           "letter": "D",
           "text": "conțin pe suprafață antigene A, B și Rh",
-          "why": "Membrana eritrocitară poate purta aceste antigene, în funcție de grupa persoanei; prezența simultană A, B și Rh(D) corespunde grupei AB Rh pozitiv, nu tuturor eritrocitelor."
+          "why": "Antigenele prezente depind de grupă: eritrocitele AB Rh pozitiv au A, B și Rh. Afirmația acceptată nu înseamnă că toate eritrocitele au simultan aceste antigene. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "E",
           "text": "sunt prezente în limfă",
-          "why": "Limfa normală nu conține eritrocite ca element constitutiv; apariția lor poate indica sângerare sau contaminare."
+          "why": "Manualul enumeră în limfă limfocite și monocite, nu eritrocite. Sursa verificată nu susține includerea eritrocitelor în compoziția obișnuită a limfei, dar nici nu formulează o excludere absolută. Sursa: Sistemul limfatic și imun — Formarea și compoziția limfei."
         }
       ],
       "sourcePages": [
@@ -193,27 +193,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "sunt agranulocite",
-          "why": "Limfocitele sunt încadrate morfologic între agranulocite, alături de monocite."
+          "why": "Limfocitele sunt încadrate morfologic între agranulocite, alături de monocite. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "B",
           "text": "reprezintă aproximativ 30 % din totalul leucocitelor",
-          "why": "Valoarea de aproximativ 30% este reperul didactic al formulei leucocitare adulte."
+          "why": "Valoarea de aproximativ 30% este reperul didactic al formulei leucocitare adulte. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "C",
           "text": "au rol în hemostază și coagulare",
-          "why": "Baremul exclude C, iar manualul prezintă apărarea imună drept funcția caracteristică a limfocitelor. Totuși, acestea pot influența indirect coagularea: în culturi de celule umane, limfocitele T stimulate favorizează producerea factorului tisular procoagulant de către monocite. Nu formează dopul plachetar, dar formularea largă „au rol” nu justifică negarea oricărei contribuții la coagulare."
+          "why": "Manualul atribuie limfocitelor apărarea imună, iar plachetelor formarea agregatelor și participarea la coagulare. Nu oferă un rol al limfocitelor în coagulare. Sursa: Sângele — Plachetele sanguine și hemostaza; Sângele — Limfocitele și monocitele."
         },
         {
           "letter": "D",
           "text": "sunt celule cheie în reacțiile complexe ale sistemului imun",
-          "why": "Limfocitele B și T coordonează și realizează răspunsuri imune specifice."
+          "why": "Limfocitele B și T coordonează și realizează răspunsuri imune specifice. Sursa: Sângele — Limfocitele și monocitele."
         },
         {
           "letter": "E",
           "text": "au rol în sinteza de anticorpi prin fagocitoză",
-          "why": "Anticorpii sunt sintetizați și secretați de plasmocite derivate din limfocitele B, nu produși prin fagocitoză."
+          "why": "Anticorpii sunt sintetizați și secretați de plasmocite derivate din limfocitele B, nu produși prin fagocitoză. Sursa: Sângele — Limfocitele și monocitele."
         }
       ],
       "sourcePages": [
@@ -236,27 +236,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "formează agregate plachetare",
-          "why": "Plachetele aderă și se agregă la locul leziunii vasculare, formând dopul hemostatic."
+          "why": "Plachetele aderă și se agregă la locul leziunii vasculare, formând dopul hemostatic. Sursa: Sângele — Plachetele sanguine și hemostaza."
         },
         {
           "letter": "B",
           "text": "au rol și în coagularea sângelui",
-          "why": "Suprafața plachetelor activate facilitează asamblarea complexelor de coagulare."
+          "why": "Plachetele sunt implicate în mecanismul coagulării, pe lângă formarea agregatelor plachetare. Sursa: Sângele — Plachetele sanguine și hemostaza."
         },
         {
           "letter": "C",
           "text": "aderă de fibrele de colagen și formează o masă care umple leziunea din peretele vascular",
-          "why": "Expunerea colagenului subendotelial permite adeziunea și acumularea trombocitelor la leziune."
+          "why": "Expunerea colagenului subendotelial permite adeziunea și acumularea trombocitelor la leziune. Sursa: Sângele — Plachetele sanguine și hemostaza."
         },
         {
           "letter": "D",
           "text": "sunt lipsite de nucleu",
-          "why": "Afirmația este adevărată, dar descrie structura plachetelor, nu o proprietate funcțională cerută."
+          "why": "Afirmația este adevărată, dar descrie structura plachetelor, nu o proprietate funcțională cerută. Sursa: Sângele — Plachetele sanguine și hemostaza."
         },
         {
           "letter": "E",
           "text": "numărul lor este de aproximativ 300.000/mm³ de sânge",
-          "why": "Valoarea este reperul numeric al lecției, însă nu reprezintă o proprietate funcțională."
+          "why": "Valoarea este reperul numeric al lecției, însă nu reprezintă o proprietate funcțională. Sursa: Sângele — Plachetele sanguine și hemostaza."
         }
       ],
       "sourcePages": [
@@ -278,27 +278,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "conține anticorpi anti-A și anti-B pe suprafața hematiilor",
-          "why": "Hematiile AB prezintă antigenele A și B, nu anticorpii anti-A și anti-B."
+          "why": "Hematiile AB prezintă antigenele A și B, nu anticorpii anti-A și anti-B. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         },
         {
           "letter": "B",
           "text": "conține anticorpi A și B în ser",
-          "why": "Persoanele AB nu au în mod normal anticorpii ABO anti-A și anti-B în ser."
+          "why": "Persoanele AB nu au în mod normal anticorpii ABO anti-A și anti-B în ser. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         },
         {
           "letter": "C",
           "text": "nu conține anticorpi de grup sanguin în ser",
-          "why": "În contextul strict ABO, grupa AB nu are anti-A și anti-B; formularea nu exclude anticorpi împotriva altor sisteme de grup sanguin."
+          "why": "În descrierea grupelor AB0, serul persoanelor AB nu conține anticorpi anti-A și nici anti-B. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         },
         {
           "letter": "D",
           "text": "poate dona sânge tuturor grupelor sanguine",
-          "why": "Eritrocitele AB au ambele antigene și sunt compatibile ABO ca donator numai cu primitori AB."
+          "why": "Eritrocitele AB au ambele antigene și sunt compatibile ABO ca donator numai cu primitori AB. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         },
         {
           "letter": "E",
           "text": "poate primi sânge de la toate grupele sanguine",
-          "why": "În schema ABO pentru transfuzia de eritrocite, un primitor AB poate primi eritrocite din orice grupă ABO. Compatibilitatea Rh și alte antigene se evaluează separat."
+          "why": "Manualul numește grupa AB primitor universal deoarece nu are anti-A și anti-B; aceasta este compatibilitatea AB0 cerută aici. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         }
       ],
       "sourcePages": [
@@ -320,27 +320,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "sunt prezente pe suprafața eritrocitelor",
-          "why": "Antigenele A și B sunt structuri de suprafață ale hematiilor la persoanele cu grupele corespunzătoare."
+          "why": "Antigenele A și B sunt structuri de suprafață ale hematiilor la persoanele cu grupele corespunzătoare. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         },
         {
           "letter": "B",
           "text": "sunt prezente și la persoane de grup 0",
-          "why": "Hematiile grupei 0 nu exprimă antigenele A sau B."
+          "why": "Hematiile grupei 0 nu exprimă antigenele A sau B. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         },
         {
           "letter": "C",
           "text": "sunt anticorpi de grup sanguin",
-          "why": "A și B desemnează antigene; anticorpii corespunzători sunt anti-A și anti-B."
+          "why": "A și B desemnează antigene; anticorpii corespunzători sunt anti-A și anti-B. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         },
         {
           "letter": "D",
           "text": "sunt prezente la persoanele de grup AB pe suprafața hematiilor",
-          "why": "Hematiile persoanelor AB prezintă simultan antigenele A și B."
+          "why": "Hematiile persoanelor AB prezintă simultan antigenele A și B. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         },
         {
           "letter": "E",
           "text": "sunt anticorpi prezenți pe suprafața hematiilor la persoanele de grup sanguin AB",
-          "why": "Pe hematiile AB se află antigenele A și B, nu anticorpii ABO."
+          "why": "Pe hematiile AB se află antigenele A și B, nu anticorpii ABO. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         }
       ],
       "sourcePages": [
@@ -363,27 +363,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "sunt anticorpi prezenți în plasmă",
-          "why": "Anticorpii ABO sunt imunoglobuline circulante, prezente în plasmă și păstrate în ser."
+          "why": "Anticorpii ABO sunt imunoglobuline circulante, prezente în plasmă și păstrate în ser. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Globulinele."
         },
         {
           "letter": "B",
           "text": "sunt prezenți în serul persoanelor de grup AB",
-          "why": "În sistemul ABO, serul persoanelor AB nu conține în mod normal anti-A sau anti-B."
+          "why": "În sistemul ABO, serul persoanelor AB nu conține în mod normal anti-A sau anti-B. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         },
         {
           "letter": "C",
           "text": "nu trebuie să vină în contact cu antigenele de același tip",
-          "why": "Contactul anticorpului cu antigenul său corespunzător, de exemplu anti-A cu A, poate produce aglutinare și hemoliză."
+          "why": "Contactul anticorpului cu antigenul său corespunzător, de exemplu anti-A cu A, poate produce aglutinare și hemoliză. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         },
         {
           "letter": "D",
           "text": "sunt prezenți pe suprafața hematiilor",
-          "why": "În schema de bază, antigenele sunt pe eritrocite, iar anticorpii ABO circulă în plasmă."
+          "why": "În schema de bază, antigenele sunt pe eritrocite, iar anticorpii ABO circulă în plasmă. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         },
         {
           "letter": "E",
           "text": "sunt prezenți în serul persoanelor de grup 0",
-          "why": "Persoanele cu grupa 0 au în mod normal atât anti-A, cât și anti-B în ser."
+          "why": "Persoanele cu grupa 0 au în mod normal atât anti-A, cât și anti-B în ser. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         }
       ],
       "sourcePages": [
@@ -406,27 +406,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "pot dona sânge la toate grupele sanguine",
-          "why": "Eritrocitele B au antigenul B și nu sunt compatibile ABO cu primitorii 0 sau A."
+          "why": "Eritrocitele B au antigenul B și nu sunt compatibile ABO cu primitorii 0 sau A. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "B",
           "text": "pot dona sânge la persoane de grup B și Rh pozitiv",
-          "why": "Eritrocitele B Rh negativ sunt compatibile în schema ABO/Rh cu un primitor B Rh pozitiv."
+          "why": "Donatorul B are antigen B, iar primitorul B nu are anti-B. Absența antigenului Rh la donator nu adaugă antigenul Rh în sângele primitorului. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "C",
           "text": "pot dona sânge la persoane de grup B și Rh negativ",
-          "why": "Donatorul și primitorul au aceeași grupă ABO/Rh în această variantă."
+          "why": "Donatorul și primitorul au aceeași grupă ABO/Rh în această variantă. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "D",
           "text": "pot dona sânge la persoane de grup AB indiferent de Rh",
-          "why": "Primitorii AB nu au anti-B, iar eritrocitele donate Rh negativ nu introduc antigenul D; schema se referă la compatibilitatea eritrocitară ABO/Rh."
+          "why": "Primitorul AB nu are anti-A sau anti-B, iar donatorul B Rh negativ nu are antigen Rh pe eritrocite. Compatibilitatea rezultă prin corelarea celor două sisteme. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "E",
           "text": "pot primi sânge de la persoane de grup 0 și Rh pozitiv",
-          "why": "Un primitor Rh negativ poate fi imunizat împotriva antigenului D de eritrocitele Rh pozitiv; schema didactică nu le consideră compatibile."
+          "why": "Grupa 0 nu are antigene A și B, dar Rh pozitiv înseamnă prezența antigenului Rh. Manualul arată că expunerea unei persoane Rh negative la acest antigen poate stimula anticorpi anti-Rh. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         }
       ],
       "sourcePages": [
@@ -448,27 +448,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "prezintă pe suprafața hematiilor anticorpii A și B",
-          "why": "Pe membrana hematiilor se află antigenele A și B, nu anticorpii corespunzători."
+          "why": "Pe membrana hematiilor se află antigenele A și B, nu anticorpii corespunzători. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         },
         {
           "letter": "B",
           "text": "prezintă în ser antigenul Rh",
-          "why": "Antigenul Rh(D) este un antigen membranar eritrocitar, nu un constituent liber caracteristic al serului."
+          "why": "Antigenul Rh este un antigen membranar eritrocitar, nu un constituent liber caracteristic al serului. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "C",
           "text": "conțin în ser antigenele A și B",
-          "why": "Baremul exclude C în schema care prezintă antigenele ABO pe hematii. Totuși, substanțe cu activitate antigenică A/B există și în fracții ale serului; localizarea eritrocitară nu justifică negarea absolută a prezenței lor în ser."
+          "why": "Schema grupelor sanguine localizează antigenele A și B pe membrana eritrocitelor. Există însă o formulare neconcordantă în exemplul transfuziei A către AB, care spune „în ser antigene A”; baremul păstrează localizarea din definiție și figură. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         },
         {
           "letter": "D",
           "text": "pot primi sânge de la persoane AB și Rh negativ",
-          "why": "Eritrocitele AB Rh negativ sunt compatibile în schema ABO/Rh cu primitorul AB Rh pozitiv."
+          "why": "Eritrocitele AB Rh negativ sunt compatibile în schema ABO/Rh cu primitorul AB Rh pozitiv. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "E",
           "text": "pot primi sânge de la persoane 0 și Rh negativ",
-          "why": "Eritrocitele 0 Rh negativ nu prezintă A, B sau D și sunt compatibile cu un primitor AB Rh pozitiv în schema didactică."
+          "why": "Eritrocitele 0 Rh negativ nu prezintă A, B sau Rh și sunt compatibile cu un primitor AB Rh pozitiv în schema didactică. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Factorul Rh și eritroblastoza fetală."
         }
       ],
       "sourcePages": [
@@ -491,27 +491,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "conține produși de degradare rezultați din metabolismul celular",
-          "why": "Plasma transportă cataboliți precum ureea spre organele de eliminare."
+          "why": "Plasma conține produși de degradare rezultați din metabolismul celular. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "B",
           "text": "conține substanțe anorganice, reprezentate de proteine și lipide",
-          "why": "Proteinele și lipidele sunt substanțe organice; apa și ionii sunt componente anorganice."
+          "why": "Figura compoziției sângelui separă apa și ionii de proteine și metaboliți precum lipidele; proteinele și lipidele nu sunt substanțele anorganice cerute. Sursa: Sângele — Compoziția sângelui, figura 14.1."
         },
         {
           "letter": "C",
           "text": "conține neutrofile cu rol în coagulare",
-          "why": "Neutrofilele aparțin elementelor figurate, nu plasmei, și au rol principal în apărarea imună."
+          "why": "Neutrofilele aparțin elementelor figurate, nu plasmei, și au rol principal în apărarea imună. Sursa: Sângele — Caracteristicile elementelor figurate, tabelul 14.3."
         },
         {
           "letter": "D",
           "text": "îndeplinește rol și în transportul gazelor respiratorii",
-          "why": "Plasma transportă gaze dizolvate și o mare parte din CO₂ sub formă de bicarbonat."
+          "why": "Plasma conține gaze dizolvate, conform enumerării componentelor sale. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "E",
           "text": "conține albumine, globuline și fibrinogen",
-          "why": "Acestea sunt principalele categorii de proteine plasmatice prezentate în lecție."
+          "why": "Acestea sunt principalele categorii de proteine plasmatice prezentate în lecție. Sursa: Sângele — Plasma și proteinele plasmatice."
         }
       ],
       "sourcePages": [
@@ -534,27 +534,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "este un tip de țesut conjunctiv",
-          "why": "Sângele este un țesut conjunctiv specializat, cu matrice extracelulară fluidă reprezentată de plasmă."
+          "why": "Sângele este un țesut conjunctiv specializat, cu matrice extracelulară fluidă reprezentată de plasmă. Sursa: Sângele — Funcțiile sângelui."
         },
         {
           "letter": "B",
           "text": "conține o parte lichidă: plasma (45 % din sânge)",
-          "why": "Plasma reprezintă aproximativ 55% din sânge; aproximativ 45% revine elementelor figurate."
+          "why": "Plasma reprezintă aproximativ 55% din sânge; aproximativ 45% revine elementelor figurate. Sursa: Sângele — Compoziția sângelui, figura 14.1."
         },
         {
           "letter": "C",
           "text": "conține elemente figurate",
-          "why": "Eritrocitele, leucocitele și trombocitele reprezintă elementele figurate sanguine."
+          "why": "Eritrocitele, leucocitele și trombocitele reprezintă elementele figurate sanguine. Sursa: Sângele — Funcțiile sângelui."
         },
         {
           "letter": "D",
           "text": "conține trombocite și eritrocite cu rol în coagulare",
-          "why": "Baremul exclude D, urmând atribuirea didactică a coagulării trombocitelor. Eritrocitele participă însă la hemostază și pot susține generarea trombinei prin suprafața lor membranară; enunțul larg „cu rol în coagulare” nu este lipsit de suport biologic."
+          "why": "Baremul exclude D, dar manualul spune că filamentele de fibrină formează cheagul împreună cu plachetele și eritrocitele. Participarea eritrocitelor la alcătuirea cheagului face formularea largă „cu rol în coagulare” ambiguă; nu trebuie negată. Sursa: Sângele — Plachetele sanguine și hemostaza; Sângele — Formarea fibrinei și a cheagului."
         },
         {
           "letter": "E",
           "text": "reprezintă 8 % din greutatea corporală",
-          "why": "Aproximativ 8% din masa corporală este reperul didactic pentru sângele unui adult cu greutate medie."
+          "why": "Aproximativ 8% din masa corporală este reperul didactic pentru sângele unui adult cu greutate medie. Sursa: Sângele — Funcțiile sângelui."
         }
       ],
       "sourcePages": [
@@ -577,27 +577,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "substanțe anorganice: glucoză, acizi grași, colesterol",
-          "why": "Glucoza, acizii grași și colesterolul sunt substanțe organice."
+          "why": "Glucoza, acizii grași și colesterolul sunt substanțe organice. Sursa: Sângele — Compoziția sângelui, figura 14.1."
         },
         {
           "letter": "B",
           "text": "proteine cu rol în coagularea sângelui",
-          "why": "Plasma conține fibrinogen și alți factori proteici de coagulare."
+          "why": "Plasma conține fibrinogen și alți factori proteici de coagulare. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "C",
           "text": "anticorpi cu rol în imunitate",
-          "why": "Imunoglobulinele circulante sunt proteine plasmatice implicate în apărarea imună."
+          "why": "Imunoglobulinele circulante sunt proteine plasmatice implicate în apărarea imună. Sursa: Sângele — Globulinele."
         },
         {
           "letter": "D",
           "text": "anioni: Na⁺, K⁺, Ca²⁺, Mg²⁺",
-          "why": "Toți ionii enumerați au sarcină pozitivă și sunt cationi, nu anioni."
+          "why": "Toți ionii enumerați au sarcină pozitivă și sunt cationi, nu anioni. Sursa: Sângele — Compoziția sângelui, figura 14.1."
         },
         {
           "letter": "E",
           "text": "fibrinogen: 7 % din totalul proteinelor plasmatice",
-          "why": "Aproximativ 7% este valoarea pentru ponderea fibrinogenului în proteinele plasmatice folosită de lecție; nu înseamnă 7% din masa întregii plasme."
+          "why": "Aproximativ 7% este valoarea pentru ponderea fibrinogenului în proteinele plasmatice folosită de lecție; nu înseamnă 7% din masa întregii plasme. Sursa: Sângele — Plasma și proteinele plasmatice."
         }
       ],
       "sourcePages": [
@@ -619,27 +619,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "este un antigen prezent în serul persoanelor Rh pozitiv",
-          "why": "Antigenul Rh(D) este asociat membranei eritrocitare, nu serului."
+          "why": "Antigenul Rh este asociat membranei eritrocitare, nu serului. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "B",
           "text": "este un anticorp prezent în serul persoanelor Rh pozitiv",
-          "why": "Antigenul Rh(D) nu este anticorp; anticorpii anti-D pot apărea după imunizarea persoanelor D-negative."
+          "why": "Rh este un antigen eritrocitar, nu un anticorp; manualul descrie producerea de anticorpi anti-Rh după contactul unei persoane Rh negative cu eritrocite Rh pozitive. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "C",
           "text": "este un antigen prezent pe suprafața eritrocitelor la persoanele Rh negativ",
-          "why": "În convenția Rh pozitiv/negativ a itemului, Rh negativ înseamnă absența antigenului D de pe eritrocite."
+          "why": "În convenția Rh pozitiv/negativ a itemului, Rh negativ înseamnă absența antigenului Rh de pe eritrocite. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "D",
           "text": "este un antigen prezent pe suprafața eritrocitelor la persoanele Rh pozitiv",
-          "why": "Rh pozitiv desemnează prezența antigenului D pe membrana eritrocitară."
+          "why": "Rh pozitiv desemnează prezența antigenului Rh pe membrana eritrocitară. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "E",
           "text": "este important în afecțiunea cunoscută sub numele de eritroblastoză fetală",
-          "why": "Anticorpii materni anti-D pot traversa placenta și distruge eritrocitele D-pozitive ale fătului."
+          "why": "Anticorpii materni anti-Rh pot traversa placenta și distruge eritrocitele Rh-pozitive ale fătului. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         }
       ],
       "sourcePages": [
@@ -663,27 +663,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "participă la apărarea organismului prin intermediul leucocitelor",
-          "why": "Leucocitele realizează fagocitoză și răspunsuri imune împotriva agenților străini."
+          "why": "Leucocitele realizează fagocitoză și răspunsuri imune împotriva agenților străini. Sursa: Sângele — Globulele albe."
         },
         {
           "letter": "B",
           "text": "transportă gazele respiratorii",
-          "why": "Sângele transportă oxigen de la plămâni spre țesuturi și dioxid de carbon în sens invers."
+          "why": "Sângele transportă oxigen de la plămâni spre țesuturi și dioxid de carbon în sens invers. Sursa: Sângele — Funcțiile sângelui."
         },
         {
           "letter": "C",
           "text": "participă la reglarea reflexă și umorală a organismului",
-          "why": "Baremul exclude C: sângele transportă hormonii implicați în reglarea umorală, iar circuitele reflexe aparțin sistemului nervos. Formularea „participă” este largă, deoarece presiunea și compoziția sângelui pot constitui stimuli pentru reflexe; această influență indirectă nu trebuie negată."
+          "why": "Manualul menționează transportul hormonilor prin sânge, deci susține componenta umorală. Funcțiile sângelui nu includ realizarea circuitului reflex; asocierea celor două tipuri de reglare explică excluderea din barem. Sursa: Sângele — Funcțiile sângelui."
         },
         {
           "letter": "D",
           "text": "transportă cataboliții la organele de excreție",
-          "why": "Produșii de degradare sunt transportați prin sânge la rinichi, plămâni și alte organe implicate în eliminare."
+          "why": "Manualul descrie transportul produșilor de metabolism de la celule la rinichi și al dioxidului de carbon la plămâni. Sursa: Sângele — Funcțiile sângelui."
         },
         {
           "letter": "E",
           "text": "are rol în hemostază și coagulare",
-          "why": "Trombocitele și proteinele coagulării limitează pierderea sângelui după lezarea vaselor."
+          "why": "Trombocitele și proteinele coagulării limitează pierderea sângelui după lezarea vaselor. Sursa: Sângele — Plachetele sanguine și hemostaza; Sângele — Formarea fibrinei și a cheagului."
         }
       ],
       "sourcePages": [
@@ -707,27 +707,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "favorizează trecerea apei din interstiții în sânge",
-          "why": "Albumina contribuie major la presiunea coloid-osmotică plasmatică, opunându-se filtrării și favorizând menținerea apei în vase. Baremul folosește modelul didactic al atragerii apei din interstițiu; reabsorbția efectivă depinde de tipul vasului și de balanța locală a presiunilor."
+          "why": "Proteinele plasmatice favorizează osmoza apei din fluidele tisulare în sânge, iar albuminele mențin presiunea osmotică sanguină. Sursa: Sângele — Albuminele și osmoza."
         },
         {
           "letter": "B",
           "text": "transportă hormonii spre celulele țintă",
-          "why": "Albumina leagă și transportă o parte dintre hormonii circulanți, mai ales cei liposolubili."
+          "why": "Albuminele transportă hormoni, alături de acizi grași. Sursa: Sângele — Albuminele și osmoza."
         },
         {
           "letter": "C",
           "text": "sunt proteine plasmatice, alături de globuline și fibrinogen",
-          "why": "Afirmația este adevărată, dar este o clasificare, nu un rol funcțional al albuminei, așa cum cere întrebarea."
+          "why": "Afirmația este adevărată, dar este o clasificare, nu un rol funcțional al albuminei, așa cum cere întrebarea. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "D",
           "text": "participă la menținerea echilibrului acido-bazic al organismului",
-          "why": "Grupările ionizabile ale albuminei contribuie la tamponarea pH-ului sanguin."
+          "why": "Manualul precizează că albuminele sunt parțial responsabile pentru menținerea pH-ului sanguin. Sursa: Sângele — Albuminele și osmoza."
         },
         {
           "letter": "E",
           "text": "participă la menținerea vâscozității sângelui",
-          "why": "Proteinele plasmatice, inclusiv albumina, contribuie la vâscozitatea plasmei și a sângelui."
+          "why": "Proteinele plasmatice, inclusiv albumina, contribuie la vâscozitatea plasmei și a sângelui. Sursa: Sângele — Albuminele și osmoza."
         }
       ],
       "sourcePages": [
@@ -750,27 +750,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "factorul plachetar este eliberat doar de plachetele sanguine",
-          "why": "Baremul exclude A deoarece manualul atribuie „factorul plachetar” atât plachetelor, cât și celulelor endoteliale. Denumirea este insuficient precizată: nu trebuie identificată automat cu o anumită proteină plachetară, precum PF4, pentru a justifica această schemă."
+          "why": "În calea intrinsecă descrisă, factorul plachetar este eliberat atât de plachete, cât și de celulele endoteliale; „doar” face varianta greșită. Sursa: Sângele — Calea intrinsecă a coagulării."
         },
         {
           "letter": "B",
           "text": "tromboplastina este o glicoproteină care activează o proteină globulară numită trombină",
-          "why": "Substanța activată este protrombina, din care se formează trombina; varianta numește greșit trombina ca precursor. Manualul descrie tromboplastina drept complex lipoproteic, dar factorul tisular propriu-zis este o glicoproteină, astfel că acest termen singur nu ar face afirmația falsă."
+          "why": "Manualul numește tromboplastina lipoproteină și arată că aceasta activează protrombina, care devine trombină. Varianta schimbă atât categoria, cât și precursorul activat. Sursa: Sângele — Calea intrinsecă a coagulării."
         },
         {
           "letter": "C",
           "text": "în lipsa calciului procesul de coagulare nu are loc",
-          "why": "Ionii Ca²⁺ sunt necesari pentru mai multe etape ale cascadei; chelarea lor împiedică formarea normală a cheagului."
+          "why": "Ionii de calciu sunt esențiali pentru conversia protrombinei în trombină și sunt menționați și în transformarea fibrinogenului. Sursa: Sângele — Calea intrinsecă a coagulării."
         },
         {
           "letter": "D",
           "text": "factorii tisulari de la nivelul vaselor lezate reacționează cu factorul VII al coagulării și cu calciul și determină activarea factorului VII",
-          "why": "Factorul tisular se asociază cu VII/VIIa în prezența calciului și inițiază calea extrinsecă a coagulării."
+          "why": "Factorii tisulari interacționează cu factorul VII și ionii de calciu, determinând activarea factorului VII în calea extrinsecă. Sursa: Sângele — Calea extrinsecă a coagulării."
         },
         {
           "letter": "E",
           "text": "fibrina este o proteină globulară, solubilă",
-          "why": "Fibrina formează rețeaua fibrilară insolubilă a cheagului; fibrinogenul este precursorul plasmatic solubil."
+          "why": "Fibrina formează rețeaua fibrilară insolubilă a cheagului; fibrinogenul este precursorul plasmatic solubil. Sursa: Sângele — Formarea fibrinei și a cheagului."
         }
       ],
       "sourcePages": [
@@ -791,27 +791,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "poate să apară la fătul Rh negativ al unei mame Rh pozitiv, dacă mama este la a doua sarcină",
-          "why": "În incompatibilitatea Rh(D) clasică, mama este Rh negativ, iar fătul Rh pozitiv; asocierea este inversată."
+          "why": "În incompatibilitatea Rh clasică, mama este Rh negativ, iar fătul Rh pozitiv; asocierea este inversată. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "B",
           "text": "duce la distrugerea hematiilor fătului Rh negativ, proces numit hemoliză",
-          "why": "În boala prin anti-D, anticorpii materni distrug hematiile Rh pozitiv ale fătului."
+          "why": "În boala prin anti-Rh, anticorpii materni distrug hematiile Rh pozitiv ale fătului. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "C",
           "text": "poate fi prevenită administrându-i mamei Rh pozitiv anticorpi anti Rh, imediat după nașterea primului copil Rh negativ",
-          "why": "Imunoglobulina anti-D previne sensibilizarea unei mame Rh negativ nesensibilizate expuse la eritrocite fetale Rh pozitiv; grupele sunt inversate în variantă."
+          "why": "Manualul descrie administrarea anticorpilor anti-Rh mamei Rh negative care are un copil Rh pozitiv; varianta inversează grupele. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "D",
           "text": "administrarea de RhoGAM mamelor Rh negativ cu făt Rh pozitiv la nașterea primului copil previne apariția bolii hemolitice a nou-născutului la cel de al doilea copil",
-          "why": "Imunoglobulina anti-D poate preveni sensibilizarea mamei Rh negativ nesensibilizate și reduce riscul pentru sarcinile ulterioare. Este o descriere didactică a profilaxiei, nu o garanție absolută și nici întregul protocol clinic."
+          "why": "RhoGAM neutralizează antigenele Rh ajunse în circulația mamei Rh negative și previne stimularea producerii de anticorpi care ar afecta copilul următor. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "E",
           "text": "boala hemolitică a nou-născutului apare și la primul copil, când mama este Rh negativ și fătul este Rh pozitiv",
-          "why": "Baremul exclude E în scenariul didactic al mamei inițial nesensibilizate. Totuși, afectarea primului copil este posibilă dacă mama a fost sensibilizată anterior, de exemplu prin transfuzie, sau în cursul sarcinii; nu este biologic imposibilă."
+          "why": "În scenariul descris în manual, anticorpii formați la nașterea primului copil nu au de obicei efect asupra lui, dar pot afecta al doilea copil Rh pozitiv. Sursa nu susține afirmația generală despre primul copil din această variantă. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         }
       ],
       "sourcePages": [
@@ -833,27 +833,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "transportă oxigenul și dioxidul de carbon de la plămâni la țesuturi",
-          "why": "Oxigenul este transportat în principal de la plămâni spre țesuturi, iar CO₂ de la țesuturi spre plămâni; direcția comună este greșită."
+          "why": "Oxigenul este transportat în principal de la plămâni spre țesuturi, iar CO₂ de la țesuturi spre plămâni; direcția comună este greșită. Sursa: Sângele — Funcțiile sângelui."
         },
         {
           "letter": "B",
           "text": "conțin în citoplasmă un pigment numit hemoglobină, de aceea se numesc și corpusculi roșii",
-          "why": "Enunțul descrie compoziția și denumirea eritrocitelor, nu o particularitate funcțională selectată de cerință."
+          "why": "Enunțul descrie compoziția și denumirea eritrocitelor, nu o particularitate funcțională selectată de cerință. Sursa: Sângele — Globulele roșii: structură, număr și producere."
         },
         {
           "letter": "C",
           "text": "transportă carbaminohemoglobină, forma de transport a CO₂ în hematii",
-          "why": "O parte din CO₂ este transportată legată reversibil de hemoglobina eritrocitară, ca carbaminohemoglobină; majoritatea CO₂ total circulă ca bicarbonat."
+          "why": "O cantitate mică de CO₂ este transportată de hemoglobină sub formă de carbaminohemoglobină; cea mai mare parte circulă ca bicarbonat. Sursa: Sângele — Hemoglobina."
         },
         {
           "letter": "D",
           "text": "pot prezenta pe suprafața lor antigenele A, B și Rh",
-          "why": "Baremul exclude D, deși prezența acestor antigene este posibilă în funcție de grupă. Probabila intenție este separarea proprietăților antigenice de transportul gazelor; această interpretare a cerinței nu face afirmația despre suprafața hematiei falsă."
+          "why": "Antigenele A, B și Rh pot fi prezente în funcție de grupă. Baremul nu selectează descrierea suprafeței eritrocitare la cerința despre particularități funcționale; faptul structural rămâne adevărat. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         },
         {
           "letter": "E",
           "text": "transportă cea mai mare parte a oxigenului destinat țesuturilor",
-          "why": "Majoritatea oxigenului sanguin este legată de hemoglobina eritrocitară; numai o fracțiune mică este dizolvată în plasmă."
+          "why": "Majoritatea oxigenului sanguin este legată de hemoglobina eritrocitară; numai o fracțiune mică este dizolvată în plasmă. Sursa: Sângele — Hemoglobina; Sistemul respirator — Transportul gazelor respiratorii."
         }
       ],
       "sourcePages": [
@@ -875,27 +875,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "neutrofilele au în citoplasmă granulații citoplasmatice de culoare albastră-violacee și nucleul în formă de S",
-          "why": "Neutrofilele mature au în mod obișnuit nucleu segmentat în 3–5 lobi; forma de S este descrisă pentru bazofile."
+          "why": "Neutrofilele mature au în mod obișnuit nucleu segmentat în 3–5 lobi; forma de S este descrisă pentru bazofile. Sursa: Sângele — Aspectul microscopic al leucocitelor, tabelul 14.2."
         },
         {
           "letter": "B",
           "text": "bazofilele au granulații citoplasmatice albastre și au rol și în reacțiile inflamatorii",
-          "why": "Granulațiile bazofile se colorează albastru-purpuriu; mediatorii lor participă la inflamație și alergie."
+          "why": "Bazofilele au granulații albastre și sunt descrise împreună cu eozinofilele ca participante la inflamație și reacții alergice. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "C",
           "text": "limfocitele reprezintă aproximativ 30 % din totalul leucocitelor și au nucleul bilobat",
-          "why": "Proporția corespunde reperului lecției, dar nucleul limfocitar este de regulă mare și rotund, nu bilobat."
+          "why": "Procentul de 30% aparține limfocitelor, dar nucleul bilobat este descris pentru eozinofile; tabelul indică pentru limfocite un nucleu mare, violet. Sursa: Sângele — Aspectul microscopic al leucocitelor, tabelul 14.2."
         },
         {
           "letter": "D",
           "text": "eozinofilele au granulații citoplasmatice roșii și nucleul cu 3-5 lobi",
-          "why": "Granulațiile roșii sunt caracteristice, dar nucleul eozinofilului este de regulă bilobat."
+          "why": "Granulațiile roșii sunt caracteristice, dar nucleul eozinofilului este de regulă bilobat. Sursa: Sângele — Aspectul microscopic al leucocitelor, tabelul 14.2."
         },
         {
           "letter": "E",
           "text": "monocitele au nucleul reniform și se transformă în macrofage în țesuturi, care au capacitatea de a fagocita microorganisme",
-          "why": "Monocitele pot migra în țesuturi și se diferenția în macrofage fagocitare; nucleul monocitar este adesea reniform."
+          "why": "Monocitele pot migra în țesuturi și se diferenția în macrofage fagocitare; nucleul monocitar este adesea reniform. Sursa: Sângele — Limfocitele și monocitele; Sângele — Aspectul microscopic al leucocitelor, tabelul 14.2."
         }
       ],
       "sourcePages": [
@@ -917,27 +917,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "sunt prezente, la femeie, în număr de 4,8 milioane pe milimetru cub de sânge și au formă de disc biconvex, flexibil",
-          "why": "Numărul este reperul didactic feminin, însă forma eritrocitară normală este de disc biconcav, nu biconvex."
+          "why": "Numărul este reperul didactic feminin, însă forma eritrocitară normală este de disc biconcav, nu biconvex. Sursa: Sângele — Morfologia hematiilor, hematocritul și osmoza."
         },
         {
           "letter": "B",
           "text": "se zbârcesc atunci când sunt suspendate într-un mediu hipoton",
-          "why": "În mediu hipoton apa intră în eritrocite, provocând umflare și posibil hemoliză; zbârcirea apare în mediu hiperton."
+          "why": "În mediu hipoton apa intră în eritrocite, provocând umflare și posibil hemoliză; zbârcirea apare în mediu hiperton. Sursa: Sângele — Morfologia hematiilor, hematocritul și osmoza."
         },
         {
           "letter": "C",
           "text": "trec prin pereții capilarelor sanguine ale măduvei hematogene",
-          "why": "Eritrocitele nou formate traversează endoteliul sinusoidelor medulare pentru a intra în circulație."
+          "why": "Globulele roșii mature intră în capilarele măduvei osoase strecurându-se prin peretele acestora, conform textului. Sursa: Sângele — Eritropoieza și eritropoetina."
         },
         {
           "letter": "D",
           "text": "sunt produse în număr crescut de celulele renale în caz de hipoxie",
-          "why": "Celulele renale produc eritropoietină, care stimulează eritropoieza în măduva osoasă; rinichiul nu produce eritrocitele."
+          "why": "Celulele renale produc eritropoietină, care stimulează eritropoieza în măduva osoasă; rinichiul nu produce eritrocitele. Sursa: Sângele — Eritropoieza și eritropoetina."
         },
         {
           "letter": "E",
           "text": "numărul lor depășește 5,4 milioane pe milimetru cub de sânge în cazul unui bărbat care trăiește la altitudine mare",
-          "why": "Hipoxia de altitudine stimulează eritropoietina și poate crește numărul eritrocitelor peste reperul didactic masculin; valoarea exactă depinde de persoană și altitudine."
+          "why": "La altitudine mare, oxigenarea redusă stimulează secreția renală de eritropoetină, care reglează producția de hematii. Creșterea peste reperul masculin de 5,4 milioane/mm³ este deducția urmărită de barem, nu o valoare numerică garantată de text. Sursa: Sângele — Eritropoieza și eritropoetina; Sângele — Morfologia hematiilor, hematocritul și osmoza."
         }
       ],
       "sourcePages": [
@@ -960,27 +960,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "creșterea numărului lor determină apariția hematoamelor",
-          "why": "Baremul exclude A, deoarece creșterea numărului de trombocite nu determină în mod obligatoriu hematoame. Totuși, trombocitoza extremă se poate asocia cu sângerări, inclusiv prin sindrom von Willebrand dobândit; nu există regula absolută „mai multe plachete înseamnă imposibilitatea sângerării”."
+          "why": "Tabelul asociază hematoamele ușor produse cu prea puține plachete, nu cu creșterea numărului lor. Sursa: Sângele — Caracteristicile elementelor figurate, tabelul 14.3."
         },
         {
           "letter": "B",
           "text": "se formează din megacariocitele derivate din hemocitoblaști",
-          "why": "Trombocitele sunt fragmente citoplasmatice ale megacariocitelor medulare, provenite din linia hematopoietică."
+          "why": "Trombocitele sunt fragmente citoplasmatice ale megacariocitelor medulare, provenite din linia hematopoietică. Sursa: Sângele — Plachetele sanguine și hemostaza."
         },
         {
           "letter": "C",
           "text": "scăderea numărului lor duce la apariția tulburărilor de coagulare",
-          "why": "Trombocitopenia afectează hemostaza primară și susținerea plachetară a coagulării, favorizând sângerarea."
+          "why": "Tabelul asociază numărul prea mic de plachete cu tulburări de coagulare, sângerări și hematoame. Sursa: Sângele — Caracteristicile elementelor figurate, tabelul 14.3."
         },
         {
           "letter": "D",
           "text": "formează, după câteva minute de la leziune, o masă care umple leziunea din peretele vascular",
-          "why": "Baremul exclude D, urmând reperul din manual al începutului agregării în câteva secunde. Formarea și consolidarea dopului continuă însă în minute, iar varianta nu spune „începe abia”; delimitarea temporală este ambiguă, nu o imposibilitate biologică."
+          "why": "Manualul precizează că aderarea și formarea masei plachetare apar în câteva secunde de la leziune. Baremul exclude reperul „câteva minute”; sursa nu precizează când se încheie procesul. Sursa: Sângele — Plachetele sanguine și hemostaza."
         },
         {
           "letter": "E",
           "text": "reprezintă componenta celulară a hemostazei",
-          "why": "Trombocitele asigură componenta plachetară a hemostazei, deși structural sunt fragmente celulare anucleate."
+          "why": "Trombocitele asigură componenta plachetară a hemostazei, deși structural sunt fragmente celulare anucleate. Sursa: Sângele — Plachetele sanguine și hemostaza."
         }
       ],
       "sourcePages": [
@@ -1003,27 +1003,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "transformarea fibrinogenului solubil în fibrină insolubilă",
-          "why": "Trombina clivează fibrinogenul, iar fibrina rezultată formează rețeaua cheagului."
+          "why": "Trombina transformă fibrinogenul dizolvat în plasmă în fibrină fibrilară, insolubilă, care intră în cheag. Sursa: Sângele — Formarea fibrinei și a cheagului."
         },
         {
           "letter": "B",
           "text": "activarea protrombinei pe cale intrinsecă sau extrinsecă",
-          "why": "Ambele căi converg către activarea factorului X și formarea complexului care transformă protrombina în trombină."
+          "why": "Protrombina poate fi activată pe calea intrinsecă sau pe cea extrinsecă, ambele producând trombină. Sursa: Sângele — Calea intrinsecă a coagulării; Sângele — Calea extrinsecă a coagulării."
         },
         {
           "letter": "C",
           "text": "aderarea plachetelor la fibrele de colagen din peretele vascular lezat",
-          "why": "Adeziunea plachetară aparține hemostazei primare, distinctă didactic de cascada plasmatică a coagulării."
+          "why": "Adeziunea plachetară aparține hemostazei primare, distinctă didactic de cascada plasmatică a coagulării. Sursa: Sângele — Plachetele sanguine și hemostaza."
         },
         {
           "letter": "D",
           "text": "agregarea plachetară la nivelul zonei lezate a vasului de sânge",
-          "why": "Agregarea formează dopul plachetar al hemostazei primare; cerința separă acest proces de coagularea propriu-zisă."
+          "why": "Agregarea formează dopul plachetar al hemostazei primare; cerința separă acest proces de coagularea propriu-zisă. Sursa: Sângele — Plachetele sanguine și hemostaza."
         },
         {
           "letter": "E",
           "text": "activarea tromboplastinei plachetare pe calea extrinsecă",
-          "why": "În terminologia lecției, componenta plachetară este asociată căii intrinseci; calea extrinsecă pornește de la factorul tisular."
+          "why": "În terminologia lecției, componenta plachetară este asociată căii intrinseci; calea extrinsecă pornește de la factorul tisular. Sursa: Sângele — Calea intrinsecă a coagulării; Sângele — Calea extrinsecă a coagulării."
         }
       ],
       "sourcePages": [
@@ -1046,27 +1046,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "persoanele cu grup de sânge B și Rh negativ nu prezintă pe suprafața hematiilor antigenul A și nici cel Rh, dar au la acest nivel anticorpul anti-A",
-          "why": "Primele absențe sunt corecte pentru grupa B Rh negativ, dar anti-A circulă în plasmă, nu este antigen de suprafață al hematiilor."
+          "why": "Primele absențe sunt corecte pentru grupa B Rh negativ, dar anti-A circulă în plasmă, nu este antigen de suprafață al hematiilor. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "B",
           "text": "grupa 0 este cea mai frecventă grupa din populație",
-          "why": "Grupa 0 este cea mai frecventă în numeroase populații și în contextul statistic al manualului. Distribuția ABO depinde de populație; afirmația nu este universal valabilă pentru orice țară sau grup."
+          "why": "Figura grupelor sanguine indică 0: 46%, A: 40%, B: 10% și AB: 4%. Grupa 0 este cea mai frecventă în distribuția prezentată în manual. Sursa: Sângele — Grupele sanguine, figura 14.4."
         },
         {
           "letter": "C",
           "text": "neutrofilele pot fi crescute în infecții bacteriene",
-          "why": "Infecțiile bacteriene pot determina neutrofilie, ca parte a răspunsului inflamator."
+          "why": "Infecțiile bacteriene pot determina neutrofilie, ca parte a răspunsului inflamator. Sursa: Sângele — Caracteristicile elementelor figurate, tabelul 14.3."
         },
         {
           "letter": "D",
           "text": "hematiile pot hemoliza și apoi agrega dacă se greșește grupa sanguină în cazul unei transfuzii",
-          "why": "Incompatibilitatea poate produce aglutinarea hematiilor și hemoliză; după liză, hematiile nu mai pot forma agregate de celule intacte. Succesiunea formulată este greșită."
+          "why": "Incompatibilitatea poate produce aglutinarea hematiilor și hemoliză; după liză, hematiile nu mai pot forma agregate de celule intacte. Succesiunea formulată este greșită. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         },
         {
           "letter": "E",
           "text": "monocitele pot fi crescute în infecții fungice",
-          "why": "Unele infecții fungice pot fi însoțite de monocitoză, reflectând activarea răspunsului imun."
+          "why": "Unele infecții fungice pot fi însoțite de monocitoză, reflectând activarea răspunsului imun. Sursa: Sângele — Caracteristicile elementelor figurate, tabelul 14.3."
         }
       ],
       "sourcePages": [
@@ -1089,27 +1089,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "fibrinogenul este implicat în coagularea sângelui",
-          "why": "Fibrinogenul este precursorul solubil al fibrinei din cheag."
+          "why": "Fibrinogenul este precursorul solubil al fibrinei din cheag. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "B",
           "text": "transportorii unor hormoni aparțin gama globulinelor",
-          "why": "Transportul hormonal este atribuit albuminei și unor alfa/beta globuline; gama globulinele sunt în principal imunoglobuline."
+          "why": "Transportul hormonal este atribuit albuminei și unor alfa/beta globuline; gama globulinele sunt în principal imunoglobuline. Sursa: Sângele — Globulinele."
         },
         {
           "letter": "C",
           "text": "gama globulinele pot participa la răspunsul imun",
-          "why": "Gama globulinele includ anticorpi, care recunosc specific antigenele."
+          "why": "Gama globulinele includ anticorpi, care recunosc specific antigenele. Sursa: Sângele — Globulinele."
         },
         {
           "letter": "D",
           "text": "aproximativ 7 % din proteinele plasmatice sunt reprezentate de alfa și beta globuline",
-          "why": "În repartizarea lecției, aproximativ 7% este ponderea fibrinogenului; globulinele reprezintă împreună aproximativ 40%."
+          "why": "În repartizarea lecției, aproximativ 7% este ponderea fibrinogenului; globulinele reprezintă împreună aproximativ 40%. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "E",
           "text": "vâscozitatea sângelui depinde de cantitatea de albumine din plasmă",
-          "why": "Albumina și celelalte proteine plasmatice contribuie la vâscozitate; aceasta depinde și de hematocrit și de alți factori."
+          "why": "Albuminele contribuie la vâscozitatea sângelui, potrivit descrierii proteinelor plasmatice. Sursa: Sângele — Albuminele și osmoza."
         }
       ],
       "sourcePages": [
@@ -1131,27 +1131,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "prezintă pe suprafața membranei plasmatice a hematiilor antigene A și B",
-          "why": "Expresia ambelor antigene pe hematii definește grupa AB."
+          "why": "Expresia ambelor antigene pe hematii definește grupa AB. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         },
         {
           "letter": "B",
           "text": "conține în plasmă anticorpi anti-A și anti-B",
-          "why": "Persoanele AB nu au în mod normal acești anticorpi ABO împotriva propriilor antigene."
+          "why": "Persoanele AB nu au în mod normal acești anticorpi ABO împotriva propriilor antigene. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         },
         {
           "letter": "C",
           "text": "poate dona sânge unei persoane cu grupa sanguină 0",
-          "why": "Eritrocitele AB ar întâlni anti-A și anti-B la primitorul 0; incompatibilitatea ABO exclude această combinație."
+          "why": "Eritrocitele AB ar întâlni anti-A și anti-B la primitorul 0; incompatibilitatea ABO exclude această combinație. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         },
         {
           "letter": "D",
           "text": "nu conține în plasmă anticorpi anti-A și anti-B",
-          "why": "Absența anticorpilor ABO anti-A și anti-B permite compatibilitatea largă a primitorului AB pentru eritrocite."
+          "why": "Absența anticorpilor ABO anti-A și anti-B permite compatibilitatea largă a primitorului AB pentru eritrocite. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         },
         {
           "letter": "E",
           "text": "nu poate primi sânge de la o persoană cu grupa sanguină 0",
-          "why": "În schema ABO pentru eritrocite, o persoană AB poate primi eritrocite 0; Rh și celelalte sisteme rămân criterii separate."
+          "why": "Manualul descrie grupa 0 ca donator universal AB0 și grupa AB ca primitor universal; prin urmare, această transfuzie este posibilă în schema AB0. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         }
       ],
       "sourcePages": [
@@ -1174,27 +1174,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "limfocite",
-          "why": "Limfocitele sunt clasificate ca agranulocite: nu prezintă granulațiile specifice evidente ale granulocitelor. Unele subtipuri au totuși granule azurofile, nu o absență absolută a granulelor."
+          "why": "Manualul clasifică limfocitele drept agranulocite, fără granulații în citoplasmă. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "B",
           "text": "eozinofile",
-          "why": "Eozinofilele sunt granulocite cu granule citoplasmatice specifice care se colorează cu coloranți acizi."
+          "why": "Eozinofilele sunt granulocite cu granule citoplasmatice specifice care se colorează cu coloranți acizi. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "C",
           "text": "neutrofile",
-          "why": "Neutrofilele au granulații citoplasmatice și aparțin granulocitelor, alături de eozinofile și bazofile."
+          "why": "Neutrofilele au granulații citoplasmatice și aparțin granulocitelor, alături de eozinofile și bazofile. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "D",
           "text": "monocite",
-          "why": "În clasificarea didactică monocitele sunt agranulocite, fără granulații specifice evidente. Ele pot conține granule lizozomale fine, astfel că termenul nu înseamnă lipsa oricărei granule."
+          "why": "Manualul clasifică monocitele drept agranulocite, fără granulații în citoplasmă. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "E",
           "text": "bazofile",
-          "why": "Bazofilele sunt granulocite cu granule citoplasmatice care se colorează intens cu coloranți bazici."
+          "why": "Bazofilele sunt granulocite cu granule citoplasmatice care se colorează intens cu coloranți bazici. Sursa: Sângele — Tipurile de globule albe."
         }
       ],
       "sourcePages": [
@@ -1216,27 +1216,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "limfocite",
-          "why": "Limfocitele pot participa la mecanisme alergice, dar sunt agranulocite, deci nu îndeplinesc categoria cerută."
+          "why": "Limfocitele sunt agranulocite, iar întrebarea solicită tipuri de granulocite. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "B",
           "text": "eozinofile",
-          "why": "Eozinofilele participă la reacții alergice și la modularea inflamației prin mediatorii și enzimele eliberate."
+          "why": "Manualul atribuie eozinofilelor participarea la reacții alergice și inflamație. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "C",
           "text": "neutrofile",
-          "why": "Baremul selectează eozinofilele și bazofilele. Neutrofilele sunt însă granulocite și pot participa la reacții alergice, fiind documentată activarea lor în anafilaxia umană; excluderea nu justifică absența oricărui rol alergic."
+          "why": "Manualul atribuie neutrofilelor în principal fagocitoza, iar reacțiile alergice eozinofilelor și bazofilelor; nu descrie aici un rol alergic al neutrofilelor. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "D",
           "text": "monocite",
-          "why": "Monocitele sunt agranulocite; chiar dacă participă la răspunsuri inflamatorii, cerința solicită granulocite."
+          "why": "Monocitele sunt agranulocite; chiar dacă participă la răspunsuri inflamatorii, cerința solicită granulocite. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "E",
           "text": "bazofile",
-          "why": "Bazofilele pot fi activate prin IgE și eliberează mediatori precum histamina, contribuind la reacțiile alergice."
+          "why": "Bazofilele sunt unul dintre cele două tipuri de granulocite asociate în text cu reacțiile alergice. Sursa: Sângele — Tipurile de globule albe."
         }
       ],
       "sourcePages": [
@@ -1258,27 +1258,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "limfocite",
-          "why": "Limfocitele sunt specializate în recunoaștere imună, secreție de anticorpi sau citotoxicitate; fagocitoza nu este funcția lor caracteristică."
+          "why": "Manualul atribuie limfocitelor B producerea de anticorpi prin plasmocite, iar limfocitelor T distrugerea microorganismelor. Fagocitoza este descrisă pentru neutrofile și monocite/macrofage. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "B",
           "text": "eozinofile",
-          "why": "Baremul exclude B, dar eozinofilele au capacitate fagocitară, inclusiv pentru particule și bacterii opsonizate. Evidențierea neutrofilelor și monocitelor în schema lecției nu permite negarea acestei funcții a eozinofilelor."
+          "why": "Textul și tabelul atribuie eozinofilelor rol posibil în răspunsul alergic; nu oferă suport pentru un rol fagocitar al lor. Baremul păstrează selecția neutrofilelor și monocitelor. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "C",
           "text": "neutrofile",
-          "why": "Neutrofilele sunt fagocite importante în răspunsul rapid la infecții, în special bacteriene."
+          "why": "Neutrofilele sunt fagocite importante în răspunsul rapid la infecții, în special bacteriene. Sursa: Sângele — Tipurile de globule albe; Sângele — Caracteristicile elementelor figurate, tabelul 14.3."
         },
         {
           "letter": "D",
           "text": "monocite",
-          "why": "Monocitele au capacitate fagocitară și pot deveni macrofage după migrarea în țesuturi."
+          "why": "Monocitele au capacitate fagocitară și pot deveni macrofage după migrarea în țesuturi. Sursa: Sângele — Limfocitele și monocitele."
         },
         {
           "letter": "E",
           "text": "osteoclastele",
-          "why": "Osteoclastele sunt celule tisulare specializate în resorbția osoasă; deși au origine în linia monocit–macrofag, nu sunt un tip de leucocit circulant."
+          "why": "Osteoclastele nu apar între tipurile de leucocite enumerate în manual; cerința se referă la leucocite. Sursa: Sângele — Tipurile de globule albe."
         }
       ],
       "sourcePages": [
@@ -1299,27 +1299,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "provin din diviziunea și maturarea macrofagelor",
-          "why": "Plachetele derivă din megacariocite, nu din diviziunea macrofagelor."
+          "why": "Plachetele derivă din megacariocite, nu din diviziunea macrofagelor. Sursa: Sângele — Plachetele sanguine și hemostaza."
         },
         {
           "letter": "B",
           "text": "se formează din megacariocite",
-          "why": "Megacariocitele eliberează fragmente citoplasmatice delimitate de membrană, care devin plachete sanguine."
+          "why": "Megacariocitele eliberează fragmente citoplasmatice delimitate de membrană, care devin plachete sanguine. Sursa: Sângele — Plachetele sanguine și hemostaza."
         },
         {
           "letter": "C",
           "text": "sunt sintetizate la nivelul ganglionilor limfatici din hemocitoblaști",
-          "why": "Trombopoieza are loc în măduva osoasă hematogenă, prin diferențierea precursorilor megacariocitari, nu în ganglionii limfatici."
+          "why": "Trombopoieza are loc în măduva osoasă hematogenă, prin diferențierea precursorilor megacariocitari, nu în ganglionii limfatici. Sursa: Sângele — Plachetele sanguine și hemostaza."
         },
         {
           "letter": "D",
           "text": "se formează în măduva roșie osoasă sub acțiunea eritropoietinei",
-          "why": "Baremul exclude D, urmărind trombopoietina ca regulator principal al producerii plachetelor. Eritropoietina stimulează în primul rând eritropoieza, dar poate influența și trombopoieza; acest efect a fost observat experimental la om, deci nu trebuie negat absolut."
+          "why": "Manualul leagă eritropoetina de producerea globulelor roșii; pentru plachete descrie desprinderea fragmentelor din megacariocite în măduva roșie. Nu atribuie eritropoetinei formarea plachetelor. Sursa: Sângele — Plachetele sanguine și hemostaza; Sângele — Eritropoieza și eritropoetina."
         },
         {
           "letter": "E",
           "text": "se desprind direct din citoplasma hemocitoblaștilor și sunt eliberate în circulație",
-          "why": "Între hemocitoblast și plachete există diferențierea pe linia megacariocitară; fragmentele provin din megacariocite, nu direct din celulele stem."
+          "why": "Între hemocitoblast și plachete există diferențierea pe linia megacariocitară; fragmentele provin din megacariocite, nu direct din celulele stem. Sursa: Sângele — Plachetele sanguine și hemostaza."
         }
       ],
       "sourcePages": [
@@ -1342,27 +1342,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "limfocitele conțin un nucleu mare, violet, reniform, care ocupă aproape toată celula",
-          "why": "Nucleul mare este caracteristic limfocitelor mici, dar el este de regulă rotund; forma reniformă este caracteristică monocitelor."
+          "why": "Tabelul descrie pentru limfocite un nucleu mare, violet, iar forma reniformă sau de potcoavă pentru monocite. Sursa: Sângele — Aspectul microscopic al leucocitelor, tabelul 14.2."
         },
         {
           "letter": "B",
           "text": "limfocitele B reprezintă precursorii plasmocitelor, celule producătoare de gama globuline",
-          "why": "După activare, limfocitele B se pot diferenția în plasmocite care secretă anticorpi, aparținând fracției imunoglobulinelor."
+          "why": "După activare, limfocitele B se pot diferenția în plasmocite care secretă anticorpi, aparținând fracției imunoglobulinelor. Sursa: Sângele — Limfocitele și monocitele."
         },
         {
           "letter": "C",
           "text": "monocitele sunt tipul cel mai numeros de leucocite",
-          "why": "La adult, neutrofilele predomină numeric; monocitele reprezintă o fracție mult mai mică din leucocite."
+          "why": "La adult, neutrofilele predomină numeric; monocitele reprezintă o fracție mult mai mică din leucocite. Sursa: Sângele — Caracteristicile elementelor figurate, tabelul 14.3."
         },
         {
           "letter": "D",
           "text": "monocitele pot traversa peretele vaselor de sânge prin diapedeză, devenind macrofage",
-          "why": "Monocitele migrează din sânge în țesuturi prin diapedeză și se pot diferenția în macrofage."
+          "why": "Monocitele migrează din sânge în țesuturi prin diapedeză și se pot diferenția în macrofage. Sursa: Sângele — Limfocitele și monocitele."
         },
         {
           "letter": "E",
           "text": "maturarea limfocitelor T se realizează în timus, sub acțiunea timozinei",
-          "why": "Timusul asigură maturarea și selecția limfocitelor T; timozina este unul dintre factorii timici prezentați în schema didactică."
+          "why": "Timusul secretă timozine care contribuie la maturarea limfocitelor T. Sursa: Sistemul limfatic și imun — Timusul și timozinele."
         }
       ],
       "sourcePages": [
@@ -1385,27 +1385,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "factorii VIII, IX, X, XI și XII ai coagulării",
-          "why": "Lista amestecă factori ai căii intrinseci, precum VIII, IX, XI și XII, cu factorul X al căii comune; nu definește calea extrinsecă."
+          "why": "În figura coagulării, lista VIII, IX, X, XI și XII este înscrisă pe calea intrinsecă; factorul VII este înscris pe calea extrinsecă. Sursa: Sângele — Căile coagulării, figura 14.7."
         },
         {
           "letter": "B",
           "text": "factori plachetari",
-          "why": "Baremul exclude B deoarece schema manualului asociază factorii plachetari căii intrinseci, iar factorul tisular inițierii extrinseci. Plachetele pot susține coagularea declanșată de factorul tisular; cuvântul „participă” este mai larg decât această împărțire didactică."
+          "why": "Schema manualului plasează factorii plachetari pe calea intrinsecă și factorii tisulari pe cea extrinsecă. Sursa: Sângele — Calea intrinsecă a coagulării."
         },
         {
           "letter": "C",
           "text": "tromboplastina tisulară",
-          "why": "Factorul tisular, numit tradițional tromboplastină tisulară, inițiază calea extrinsecă împreună cu factorul VII."
+          "why": "Factorul VII activat determină activarea altor factori care formează tromboplastina tisulară pe calea extrinsecă. Sursa: Sângele — Calea extrinsecă a coagulării."
         },
         {
           "letter": "D",
           "text": "factorul VII al coagulării",
-          "why": "Factorul VII interacționează cu factorul tisular și participă la inițierea căii extrinseci."
+          "why": "Factorul VII interacționează cu factorul tisular și participă la inițierea căii extrinseci. Sursa: Sângele — Calea extrinsecă a coagulării."
         },
         {
           "letter": "E",
           "text": "ionii de Ca²⁺",
-          "why": "Calciul este necesar mai multor reacții de coagulare, inclusiv asamblării complexelor implicate în calea extrinsecă."
+          "why": "Ionii de calciu participă la activarea factorului VII și la formarea activatorului protrombinei pe calea extrinsecă. Sursa: Sângele — Calea extrinsecă a coagulării."
         }
       ],
       "sourcePages": [
@@ -1427,27 +1427,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "este o gama globulină prezentă în plasmă",
-          "why": "Antigenul Rh este o structură de membrană eritrocitară, nu un anticorp plasmatic din clasa gama globulinelor."
+          "why": "Antigenul Rh este o structură de membrană eritrocitară, nu un anticorp plasmatic din clasa gama globulinelor. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "B",
           "text": "este prezent pe membrana eritrocitelor unei mici părți din populație",
-          "why": "În populația de referință a lecției, majoritatea persoanelor sunt Rh pozitive; procentul diferă între populații."
+          "why": "Manualul indică 85–90% persoane Rh pozitive în populația americană prezentată, deci o majoritate, nu o mică parte. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "C",
           "text": "lipsește de pe membrana hematiilor unei persoane Rh⁻",
-          "why": "În convenția uzuală Rh pozitiv/negativ, absența antigenului D determină statutul Rh negativ; aceasta nu înseamnă absența tuturor antigenelor sistemului Rh."
+          "why": "În definiția manualului, Rh negativ înseamnă absența antigenului Rh de pe suprafața eritrocitelor. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "D",
           "text": "în timpul nașterii, poate pătrunde în circulația unei mame Rh⁻ cu un copil Rh⁺",
-          "why": "Eritrocitele fetale Rh pozitive pot trece în circulația maternă și expun mama Rh negativă la antigenul D."
+          "why": "Eritrocitele fetale Rh pozitive pot trece în circulația maternă și expun mama Rh negativă la antigenul Rh. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "E",
           "text": "poate declanșa sinteza de anticorpi anti-Rh la o mamă Rh⁺ cu un copil Rh⁻",
-          "why": "Scenariul clasic de imunizare anti-D este invers: mamă Rh negativă expusă eritrocitelor fetale Rh pozitive."
+          "why": "Scenariul clasic de imunizare anti-Rh este invers: mamă Rh negativă expusă eritrocitelor fetale Rh pozitive. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         }
       ],
       "sourcePages": [
@@ -1469,27 +1469,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "unele proteine plachetare: fibrinogenul",
-          "why": "Baremul exclude A, însă fibrinogenul participă la calea comună și este prezent și în granulele alfa plachetare, preluat din plasmă. Sinteza sa hepatică nu înseamnă că el nu se poate afla în plachete; formularea tipărită are suport biologic."
+          "why": "Fibrinogenul participă la formarea fibrinei, dar manualul îl descrie ca proteină plasmatică produsă de ficat, nu ca proteină plachetară. Sursa: Sângele — Plasma și proteinele plasmatice; Sângele — Formarea fibrinei și a cheagului."
         },
         {
           "letter": "B",
           "text": "factorul de coagulare VII",
-          "why": "Factorul VII aparține căii extrinseci, înainte de convergența în calea comună."
+          "why": "Factorul VII aparține căii extrinseci, înainte de convergența în calea comună. Sursa: Sângele — Calea extrinsecă a coagulării."
         },
         {
           "letter": "C",
           "text": "Ca²⁺",
-          "why": "Ionii de calciu sunt necesari complexelor de coagulare din calea comună, inclusiv activării protrombinei."
+          "why": "Calciul este necesar conversiei protrombinei în trombină, etapă comună celor două căi. Sursa: Sângele — Calea intrinsecă a coagulării."
         },
         {
           "letter": "D",
           "text": "fibrina solubilă",
-          "why": "Baremul exclude D; schema manualului prezintă fibrina insolubilă drept produsul care formează rețeaua cheagului. Totuși, transformarea fibrinogenului sub acțiunea trombinei produce și intermediari solubili ai fibrinei, demonstrați experimental înaintea formării gelului. Termenul „fibrină solubilă” are suport biologic, deci nu trebuie tratat ca o substanță inexistentă."
+          "why": "Manualul descrie fibrina ca proteină fibrilară insolubilă; nu prezintă în această schemă fibrină solubilă. Sursa: Sângele — Formarea fibrinei și a cheagului."
         },
         {
           "letter": "E",
           "text": "protrombina, o enzimă inactivă",
-          "why": "Protrombina este zimogenul trombinei; activarea sa în calea comună permite ulterior transformarea fibrinogenului în fibrină."
+          "why": "Protrombina este convertită în forma activă, trombina; aceasta funcționează apoi ca enzimă asupra fibrinogenului. Sursa: Sângele — Calea intrinsecă a coagulării; Sângele — Formarea fibrinei și a cheagului."
         }
       ],
       "sourcePages": [
@@ -1511,27 +1511,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "permit transportul oxigenului legat de mioglobină",
-          "why": "Hematiile transportă oxigen legat de hemoglobină; mioglobina se găsește în celulele musculare."
+          "why": "Pigmentul care transportă oxigenul în eritrocite este hemoglobina, conform descrierii globulelor roșii. Sursa: Sângele — Globulele roșii: structură, număr și producere."
         },
         {
           "letter": "B",
           "text": "au formă de disc biconcav",
-          "why": "Afirmația morfologică este adevărată, dar nu descrie un rol, categoria cerută; de aceea nu este selectată în barem."
+          "why": "Afirmația morfologică este adevărată, dar nu descrie un rol, categoria cerută; de aceea nu este selectată în barem. Sursa: Sângele — Globulele roșii: structură, număr și producere."
         },
         {
           "letter": "C",
           "text": "transportă o cantitate mică de dioxid de carbon combinat cu hemoglobina",
-          "why": "O parte din CO₂ este transportată legată de globină sub formă de carbaminohemoglobină; cea mai mare parte circulă ca bicarbonat."
+          "why": "Hemoglobina transportă o cantitate mică de CO₂ ca carbaminohemoglobină; cea mai mare parte este transportată sub formă de bicarbonat. Sursa: Sângele — Hemoglobina."
         },
         {
           "letter": "D",
           "text": "sunt cele mai numeroase elemente figurate sanguine",
-          "why": "Afirmația numerică este adevărată, dar nu descrie o funcție a hematiilor și este exclusă în contextul cerinței despre roluri."
+          "why": "Afirmația numerică este adevărată, dar nu descrie o funcție a hematiilor și este exclusă în contextul cerinței despre roluri. Sursa: Sângele — Compoziția sângelui, figura 14.1."
         },
         {
           "letter": "E",
           "text": "intervin în transportul sanguin al gazelor respiratorii",
-          "why": "Hematiile transportă oxigen prin hemoglobină și contribuie la transportul CO₂, inclusiv prin conversia lui în bicarbonat."
+          "why": "Hemoglobina din hematii transportă oxigen și o cantitate mică de dioxid de carbon. Sursa: Sângele — Hemoglobina."
         }
       ],
       "sourcePages": [
@@ -1553,27 +1553,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "presupune distrugerea splenică eritrocitelor tinere, după aproximativ 12 zile de viață",
-          "why": "Eritrocitele au o durată de viață de aproximativ 120 de zile; eliminarea fiziologică vizează celulele îmbătrânite sau deteriorate, nu obligatoriu celule tinere la 12 zile."
+          "why": "Eritrocitele au o durată de viață de aproximativ 120 de zile; eliminarea fiziologică vizează celulele îmbătrânite sau deteriorate, nu obligatoriu celule tinere la 12 zile. Sursa: Sângele — Distrugerea globulelor roșii."
         },
         {
           "letter": "B",
           "text": "se poate produce sub acțiunea unei soluții saline hipotone",
-          "why": "În mediu hipoton, apa pătrunde în hematii prin osmoză, acestea se umflă și se pot rupe, eliberând hemoglobina."
+          "why": "În mediu hipoton, apa pătrunde în hematii prin osmoză, acestea se umflă și se pot rupe, eliberând hemoglobina. Sursa: Sângele — Morfologia hematiilor, hematocritul și osmoza."
         },
         {
           "letter": "C",
           "text": "conduce la degradarea hemoglobinei cu formare de urobilinogen la nivelul splinei",
-          "why": "Urobilinogenul se formează în intestin prin transformarea bacteriană a bilirubinei, nu direct în splină."
+          "why": "Urobilinogenul se formează în intestin prin transformarea bacteriană a bilirubinei, nu direct în splină. Sursa: Sângele — Distrugerea globulelor roșii."
         },
         {
           "letter": "D",
           "text": "prin degradarea hemului provenit din hemoglobină, conduce la formarea de pigmenți verzui (biliverdină)",
-          "why": "Degradarea hemului formează biliverdină, pigment verzui, care este apoi convertită în bilirubină."
+          "why": "Degradarea hemului formează biliverdină, pigment verzui, care este apoi convertită în bilirubină. Sursa: Sângele — Distrugerea globulelor roșii."
         },
         {
           "letter": "E",
           "text": "se poate desfășura în splină, ficat și rinichi sub acțiunea macrofagelor",
-          "why": "Baremul exclude E, urmând enumerarea principalelor sedii ale eliminării hematiilor îmbătrânite: splină, ficat și măduvă osoasă. Rinichiul nu este sediul obișnuit din această schemă; explicația nu trebuie extinsă la imposibilitatea oricărui proces de degradare eritrocitară renală."
+          "why": "Manualul enumeră splina, ficatul și măduva osoasă ca sedii ale distrugerii hematiilor prin macrofage; varianta înlocuiește măduva osoasă cu rinichii. Sursa: Sângele — Distrugerea globulelor roșii."
         }
       ],
       "sourcePages": [
@@ -1595,27 +1595,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "factori plachetari",
-          "why": "În schema lecției, factorii și suprafețele fosfolipidice plachetare susțin reacțiile căii intrinseci."
+          "why": "Factorul plachetar este eliberat la inițierea căii intrinseci și contribuie la formarea tromboplastinei derivate din plachete. Sursa: Sângele — Calea intrinsecă a coagulării."
         },
         {
           "letter": "B",
           "text": "tromboplastina tisulară",
-          "why": "Factorul tisular caracterizează inițierea căii extrinseci, nu a celei intrinseci."
+          "why": "Factorul tisular caracterizează inițierea căii extrinseci, nu a celei intrinseci. Sursa: Sângele — Calea extrinsecă a coagulării."
         },
         {
           "letter": "C",
           "text": "fibrina insolubilă",
-          "why": "Fibrina este produsul etapei finale comune, nu un factor care definește calea intrinsecă."
+          "why": "Fibrina este produsul etapei finale comune, nu un factor care definește calea intrinsecă. Sursa: Sângele — Formarea fibrinei și a cheagului."
         },
         {
           "letter": "D",
           "text": "Ca²⁺",
-          "why": "Ionii de calciu participă la asamblarea și funcționarea complexelor de coagulare, inclusiv în calea intrinsecă."
+          "why": "Ionii de calciu interacționează cu factorul plachetar și alți factori în calea intrinsecă. Sursa: Sângele — Calea intrinsecă a coagulării."
         },
         {
           "letter": "E",
           "text": "factorul VII al coagulării",
-          "why": "Factorul VII este asociat factorului tisular în calea extrinsecă."
+          "why": "Factorul VII este asociat factorului tisular în calea extrinsecă. Sursa: Sângele — Calea extrinsecă a coagulării."
         }
       ],
       "sourcePages": [
@@ -1638,27 +1638,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "proteinele plasmatice traversează cu ușurință pereții capilarelor sanguine",
-          "why": "Proteinele plasmatice mari traversează limitat peretele capilar și contribuie astfel la presiunea coloid-osmotică intravasculară."
+          "why": "Proteinele plasmatice mari traversează limitat peretele capilar și contribuie astfel la presiunea coloid-osmotică intravasculară. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "B",
           "text": "plasma sanguină conține o cantitate redusă de apă",
-          "why": "Plasma este alcătuită predominant din apă, aproximativ 90–92%, nu dintr-o cantitate redusă."
+          "why": "Plasma este alcătuită predominant din apă, aproximativ 90–92%, nu dintr-o cantitate redusă. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "C",
           "text": "cheagul de sânge conține filamente de fibrină și elemente figurate sanguine",
-          "why": "Rețeaua de fibrină reține plachete și celule sanguine, formând structura cheagului."
+          "why": "Rețeaua de fibrină reține plachete și celule sanguine, formând structura cheagului. Sursa: Sângele — Formarea fibrinei și a cheagului."
         },
         {
           "letter": "D",
           "text": "macrofagele participă la fagocitarea și la prezentarea antigenelor",
-          "why": "Macrofagele pot îngloba microorganisme și pot prezenta fragmente antigenice limfocitelor T, conectând apărarea înnăscută cu cea adaptativă."
+          "why": "Macrofagele inițiază răspunsul imun prin fagocitarea microorganismelor și prezentarea antigenelor lor limfocitelor în nodulii limfatici. Sursa: Sângele — Limfocitele și monocitele."
         },
         {
           "letter": "E",
           "text": "pe parcursul formării eritrocitelor mature, din celulele tinere se pierd nucleul și organitele celulare",
-          "why": "În maturarea eritrocitară, nucleul este eliminat și organitele sunt îndepărtate, permițând acumularea hemoglobinei."
+          "why": "În maturarea eritrocitară, nucleul este eliminat și organitele sunt îndepărtate, permițând acumularea hemoglobinei. Sursa: Sângele — Eritropoieza și eritropoetina."
         }
       ],
       "sourcePages": [
@@ -1679,27 +1679,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "conține cantități crescute de fibrinogen",
-          "why": "Fibrinogenul este consumat la formarea fibrinei; serul rezultat după coagulare este lipsit de fibrinogen în comparație cu plasma."
+          "why": "Fibrinogenul este consumat la formarea fibrinei; serul rezultat după coagulare este lipsit de fibrinogen în comparație cu plasma. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "B",
           "text": "are o compoziție identică cu plasma sanguină",
-          "why": "Serul diferă de plasmă prin pierderea fibrinogenului și modificarea sau consumul unor factori în cursul coagulării."
+          "why": "Serul diferă de plasmă prin pierderea fibrinogenului și modificarea sau consumul unor factori în cursul coagulării. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "C",
           "text": "se formează în urma hemolizei",
-          "why": "Serul se obține după coagularea sângelui, nu prin ruperea eritrocitelor."
+          "why": "Serul se obține după coagularea sângelui, nu prin ruperea eritrocitelor. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "D",
           "text": "nu conține proteine plasmatice implicate în coagulare",
-          "why": "Baremul acceptă D, dar formularea este prea generală: după coagulare se pierde fibrinogenul și se consumă sau modifică anumiți factori, fără să dispară toate proteinele coagulării. De exemplu, în ser pot fi detectate activități ale factorilor VII și Xa."
+          "why": "Definiția serului precizează că acesta rămâne după coagulare și consumarea proteinelor de coagulare din plasmă; aceasta susține selecția din barem. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "E",
           "text": "este rezultatul procesului de homeostazie",
-          "why": "Procesul care separă serul este coagularea, parte a hemostazei; „homeostazie” desemnează menținerea echilibrului intern și nu este sinonim."
+          "why": "Procesul care separă serul este coagularea, parte a hemostazei; „homeostazie” desemnează menținerea echilibrului intern și nu este sinonim. Sursa: Sângele — Plasma și proteinele plasmatice."
         }
       ],
       "sourcePages": [
@@ -1720,27 +1720,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "apă - 99 %",
-          "why": "Nici sângele integral, nici plasma nu conțin în mod normal 99% apă; plasma are aproximativ 92% apă."
+          "why": "Nici sângele integral, nici plasma nu conțin în mod normal 99% apă; plasma are aproximativ 92% apă. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "B",
           "text": "anioni - 1 %",
-          "why": "Proporția didactică de circa 1% privește ionii și alte substanțe dizolvate ale plasmei, nu exclusiv anionii din sângele integral."
+          "why": "Proporția de 1% din descrierea plasmei se referă la ioni, nu exclusiv la anionii din sângele integral. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "C",
           "text": "fibrinogen - 7 %",
-          "why": "În schema lecției, aproximativ 7% dintre proteinele plasmatice reprezintă fibrinogenul; nu 7% din sângele integral."
+          "why": "În schema lecției, aproximativ 7% dintre proteinele plasmatice reprezintă fibrinogenul; nu 7% din sângele integral. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "D",
           "text": "elemente figurate - 45 %",
-          "why": "Elementele figurate ocupă aproximativ 45% din volumul sângelui, valoare dominată de volumul eritrocitelor și variabilă fiziologic."
+          "why": "Figura indică aproximativ 45% elemente figurate din volumul sângelui; eritrocitele constituie cea mai mare parte a lor. Sursa: Sângele — Compoziția sângelui, figura 14.1."
         },
         {
           "letter": "E",
           "text": "gama globuline - 40 % din totalul proteinelor plasmatice",
-          "why": "În lecție, aproximativ 40% se referă la toate globulinele, nu doar la fracția gama."
+          "why": "În lecție, aproximativ 40% se referă la toate globulinele, nu doar la fracția gama. Sursa: Sângele — Globulinele."
         }
       ],
       "sourcePages": [
@@ -1762,27 +1762,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "reprezintă 7 % din compoziția plasmei",
-          "why": "Aproximativ 7% din plasmă este reprezentată de totalitatea proteinelor; albumina este numai una dintre categoriile proteice."
+          "why": "Aproximativ 7% din plasmă este reprezentată de totalitatea proteinelor; albumina este numai una dintre categoriile proteice. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "B",
           "text": "contribuie la vâscozitatea sângelui",
-          "why": "Albuminele și celelalte proteine plasmatice contribuie la proprietățile fizice ale plasmei, inclusiv vâscozitatea."
+          "why": "Albuminele și celelalte proteine plasmatice contribuie la proprietățile fizice ale plasmei, inclusiv vâscozitatea. Sursa: Sângele — Albuminele și osmoza."
         },
         {
           "letter": "C",
           "text": "mențin pH-ul sângelui între 7,25-7,35",
-          "why": "Albuminele au rol tampon, dar intervalul normal folosit în lecție este 7,35–7,45; limitele enunțului sunt greșite."
+          "why": "Albuminele au rol tampon, dar intervalul normal folosit în lecție este 7,35–7,45; limitele enunțului sunt greșite. Sursa: Sângele — Funcțiile sângelui; Sângele — Albuminele și osmoza."
         },
         {
           "letter": "D",
           "text": "transportă acizi grași",
-          "why": "Acizii grași neesterificați se leagă de albumină pentru a circula în mediul apos al plasmei."
+          "why": "Transportul acizilor grași este enumerat explicit între rolurile albuminelor. Sursa: Sângele — Albuminele și osmoza."
         },
         {
           "letter": "E",
           "text": "sunt sintetizate de plasmocite și participă la apărarea organismului",
-          "why": "Albuminele sunt sintetizate în principal de ficat; plasmocitele produc anticorpi, nu albumină."
+          "why": "Albuminele sunt sintetizate în principal de ficat; plasmocitele produc anticorpi, nu albumină. Sursa: Sângele — Limfocitele și monocitele; Sistemul digestiv — Funcțiile ficatului și celulele Kupffer."
         }
       ],
       "sourcePages": [
@@ -1804,27 +1804,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "au marginile mai subțiri decât zona centrală",
-          "why": "Discul biconcav este mai subțire în centru și mai gros la periferie, invers față de enunț."
+          "why": "Discul biconcav este mai subțire în centru și mai gros la periferie, invers față de enunț. Sursa: Sângele — Morfologia hematiilor, hematocritul și osmoza."
         },
         {
           "letter": "B",
           "text": "se zbârcesc dacă sunt introduse într-o soluție hipotonă",
-          "why": "În soluție hipotonă hematiile se umflă; zbârcirea apare în mediu hiperton, prin pierderea apei."
+          "why": "În soluție hipotonă hematiile se umflă; zbârcirea apare în mediu hiperton, prin pierderea apei. Sursa: Sângele — Morfologia hematiilor, hematocritul și osmoza."
         },
         {
           "letter": "C",
           "text": "producția lor este reglată de renină, un hormon produs de rinichi în condițiile unui aport scăzut de oxigen",
-          "why": "Rinichiul produce eritropoietină ca răspuns la hipoxie; renina participă la reglarea tensiunii arteriale, nu este reglatorul eritropoiezei cerut."
+          "why": "Hormonul care reglează producția de eritrocite când celulele renale primesc prea puțin oxigen este eritropoetina. Sursa: Sângele — Eritropoieza și eritropoetina."
         },
         {
           "letter": "D",
           "text": "reprezintă aproximativ 47 % din sânge la bărbat, procent care poartă numele de hematocrit",
-          "why": "Hematocritul este fracția volumică ocupată de eritrocite; valoarea de aproximativ 47% este exemplul pentru bărbați din lecție."
+          "why": "Hematocritul este fracția volumică ocupată de eritrocite; valoarea de aproximativ 47% este exemplul pentru bărbați din lecție. Sursa: Sângele — Morfologia hematiilor, hematocritul și osmoza."
         },
         {
           "letter": "E",
           "text": "au un diametru de 7,8 μm",
-          "why": "Diametrul mediu eritrocitar este de ordinul a 7–8 μm, iar 7,8 μm este valoarea ilustrată în materialul didactic."
+          "why": "Diametrul mediu eritrocitar este de ordinul a 7–8 μm, iar 7,8 μm este valoarea ilustrată în materialul didactic. Sursa: Sângele — Dimensiunile eritrocitelor, figura 14.2."
         }
       ],
       "sourcePages": [
@@ -1845,27 +1845,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "are în structura sa 4 grupări hem",
-          "why": "Hemoglobina adultă are patru subunități, fiecare asociată cu o grupare hem, deci patru grupări hem în total."
+          "why": "Hemoglobina adultă are patru subunități, fiecare asociată cu o grupare hem, deci patru grupări hem în total. Sursa: Sângele — Hemoglobina."
         },
         {
           "letter": "B",
           "text": "are 2 lanțuri alfa și 2 lanțuri beta, ce totalizează împreună aproximativ 150 de aminoacizi",
-          "why": "Hemoglobina A are două lanțuri alfa și două beta, dar aproximativ 150 de aminoacizi revin unui lanț, nu întregului tetramer."
+          "why": "Manualul atribuie aproximativ 150 de aminoacizi fiecărui lanț, nu totalului celor patru lanțuri alfa și beta. Sursa: Sângele — Hemoglobina."
         },
         {
           "letter": "C",
           "text": "se leagă puternic de oxigen formând oxihemoglobina",
-          "why": "Baremul exclude C în contrastul didactic cu legarea mult mai puternică a CO. Hemoglobina leagă reversibil O₂, iar afinitatea se modifică odată cu oxigenarea și condițiile locale; cuvântul „puternic” este imprecis și nu înseamnă automat legare ireversibilă."
+          "why": "Manualul spune că oxigenul se leagă slab de fierul hemului; legarea puternică este descrisă pentru monoxidul de carbon. Sursa: Sângele — Hemoglobina."
         },
         {
           "letter": "D",
           "text": "transportă cea mai mare parte a dioxidului de carbon din sânge",
-          "why": "Cea mai mare parte a CO₂ este transportată ca bicarbonat; doar o fracție este legată de hemoglobină."
+          "why": "Cea mai mare parte a CO₂ este transportată ca bicarbonat; doar o fracție este legată de hemoglobină. Sursa: Sângele — Hemoglobina."
         },
         {
           "letter": "E",
           "text": "poate transporta pe fiecare lanț polipeptidic până la 4 molecule de oxigen",
-          "why": "Fiecare grupare hem poate lega o moleculă de O₂; cele patru molecule sunt capacitatea întregii hemoglobine, nu a fiecărui lanț."
+          "why": "Fiecare grupare hem poate lega o moleculă de O₂; cele patru molecule sunt capacitatea întregii hemoglobine, nu a fiecărui lanț. Sursa: Sângele — Hemoglobina."
         }
       ],
       "sourcePages": [
@@ -1889,27 +1889,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "lanțurile polipeptidice se pot degrada în biliverdină",
-          "why": "Afirmația este falsă și se selectează: globina se degradează în aminoacizi, iar biliverdina provine din degradarea hemului."
+          "why": "Afirmația este falsă și se selectează: globina se degradează în aminoacizi, iar biliverdina provine din degradarea hemului. Sursa: Sângele — Distrugerea globulelor roșii."
         },
         {
           "letter": "B",
           "text": "fiecare grupare hem poate lega slab un atom de oxigen",
-          "why": "Afirmația este falsă: hemul leagă o moleculă de oxigen O₂, alcătuită din doi atomi, nu un singur atom."
+          "why": "Afirmația este falsă: hemul leagă o moleculă de oxigen O₂, alcătuită din doi atomi, nu un singur atom. Sursa: Sângele — Hemoglobina."
         },
         {
           "letter": "C",
           "text": "dioxidul de carbon se poate transporta în plasmă sub formă de carbaminohemoglobină",
-          "why": "Afirmația este falsă în condiții normale: carbaminohemoglobina se află în eritrocite, unde se găsește hemoglobina, nu liberă în plasmă."
+          "why": "Afirmația este falsă în condiții normale: carbaminohemoglobina se află în eritrocite, unde se găsește hemoglobina, nu liberă în plasmă. Sursa: Sângele — Globulele roșii: structură, număr și producere; Sângele — Hemoglobina."
         },
         {
           "letter": "D",
           "text": "bilirubina este transportată de la splină la ficat prin vena splenică și vena portă",
-          "why": "Afirmația este corectă: sângele venos splenic ajunge la ficat prin sistemul port, iar bilirubina neconjugată circulă legată de albumină. Nu se selectează la cerința negativă."
+          "why": "Manualul descrie transportul bilirubinei de la splină la ficat, iar sistemul port hepatic transportă sângele splenic către ficat. Afirmația corectă nu se selectează la cerința negativă. Sursa: Sângele — Distrugerea globulelor roșii; Sistemul cardiovascular — Sistemul port hepatic."
         },
         {
           "letter": "E",
           "text": "este o proteină plasmatică formată din 4 lanțuri polipeptidice",
-          "why": "Afirmația este falsă din cauza localizării: hemoglobina are patru lanțuri, dar este în mod normal proteină intracelulară eritrocitară, nu proteină plasmatică."
+          "why": "Afirmația este falsă din cauza localizării: hemoglobina are patru lanțuri, dar este în mod normal proteină intracelulară eritrocitară, nu proteină plasmatică. Sursa: Sângele — Globulele roșii: structură, număr și producere; Sângele — Hemoglobina."
         }
       ],
       "sourcePages": [
@@ -1931,27 +1931,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "0, indiferent de Rh",
-          "why": "În compatibilitatea eritrocitară standard, hematiile 0 Rh pozitive nu sunt compatibile indiferent de Rh: un primitor Rh negativ trebuie protejat de expunerea la antigenul D."
+          "why": "În compatibilitatea eritrocitară standard, hematiile 0 Rh pozitive nu sunt compatibile indiferent de Rh: un primitor Rh negativ trebuie protejat de expunerea la antigenul Rh. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "B",
           "text": "B, Rh pozitiv",
-          "why": "Hematiile 0 nu poartă antigene A sau B, iar primitorul Rh pozitiv poate primi hematii Rh pozitive în schema standard."
+          "why": "Hematiile 0 nu poartă antigene A sau B, iar primitorul Rh pozitiv poate primi hematii Rh pozitive în schema standard. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "C",
           "text": "AB, Rh negativ",
-          "why": "Compatibilitatea ABO nu înlătură incompatibilitatea Rh: hematiile donatorului au antigen D, absent la primitorul Rh negativ."
+          "why": "Compatibilitatea ABO nu înlătură incompatibilitatea Rh: hematiile donatorului au antigen Rh, absent la primitorul Rh negativ. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "D",
           "text": "AB, indiferent de Rh",
-          "why": "AB poate primi hematii din orice grupă ABO, dar condiția „indiferent de Rh” este greșită pentru un donator Rh pozitiv."
+          "why": "AB poate primi hematii din orice grupă ABO, dar condiția „indiferent de Rh” este greșită pentru un donator Rh pozitiv. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "E",
           "text": "A, Rh pozitiv",
-          "why": "În schema compatibilității eritrocitare ABO/Rh, hematiile 0 Rh pozitive pot fi administrate unui primitor A Rh pozitiv."
+          "why": "În schema compatibilității eritrocitare ABO/Rh, hematiile 0 Rh pozitive pot fi administrate unui primitor A Rh pozitiv. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Factorul Rh și eritroblastoza fetală."
         }
       ],
       "sourcePages": [
@@ -1975,27 +1975,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "0, Rh negativ",
-          "why": "Aceste hematii nu au antigene A, B sau D și sunt compatibile în schema standard; opțiunea nu este selectată la cerința de incompatibilitate."
+          "why": "Aceste hematii nu au antigene A, B sau Rh și sunt compatibile în schema standard; opțiunea nu este selectată la cerința de incompatibilitate. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "B",
           "text": "B, Rh pozitiv",
-          "why": "Incompatibilitatea privește antigenul D al hematiilor donatorului, deoarece primitorul este Rh negativ."
+          "why": "Incompatibilitatea privește antigenul Rh al hematiilor donatorului, deoarece primitorul este Rh negativ. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "C",
           "text": "AB, Rh negativ",
-          "why": "Antigenul A de pe hematiile AB poate fi recunoscut de anticorpii anti-A ai primitorului B, deci transfuzia eritrocitară este incompatibilă."
+          "why": "Antigenul A de pe hematiile AB poate fi recunoscut de anticorpii anti-A ai primitorului B, deci transfuzia eritrocitară este incompatibilă. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "D",
           "text": "0, Rh pozitiv",
-          "why": "Deși ABO este compatibil, Rh pozitiv al donatorului nu corespunde primitorului Rh negativ în schema standard."
+          "why": "Deși ABO este compatibil, Rh pozitiv al donatorului nu corespunde primitorului Rh negativ în schema standard. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "E",
           "text": "AB, Rh negativ",
-          "why": "La fel ca opțiunea C, repetată identic în sursă, este incompatibilă prin antigenul A al hematiilor donatorului; ambele litere sunt păstrate în barem."
+          "why": "La fel ca opțiunea C, repetată identic în sursă, este incompatibilă prin antigenul A al hematiilor donatorului; ambele litere sunt păstrate în barem. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Factorul Rh și eritroblastoza fetală."
         }
       ],
       "sourcePages": [
@@ -2016,27 +2016,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "reprezintă aproximativ 1 % din totalul elementelor figurate ale sângelui",
-          "why": "Procentul didactic de aproximativ 1% se referă la totalul leucocitelor, nu la toate elementele figurate, dominate numeric de eritrocite."
+          "why": "Procentul didactic de aproximativ 1% se referă la totalul leucocitelor, nu la toate elementele figurate, dominate numeric de eritrocite. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "B",
           "text": "au nucleu bilobat",
-          "why": "Nucleul eozinofilului este de regulă format din doi lobi, trăsătură caracteristică în frotiul sanguin."
+          "why": "Nucleul eozinofilului este de regulă format din doi lobi, trăsătură caracteristică în frotiul sanguin. Sursa: Sângele — Aspectul microscopic al leucocitelor, tabelul 14.2."
         },
         {
           "letter": "C",
           "text": "prezintă în citoplasmă granulații care au nativ culoarea roșie strălucitoare",
-          "why": "Granulele capătă culoarea roșie-portocalie prin colorare cu eozină; termenul „nativ” face afirmația greșită."
+          "why": "Tabelul prezintă aspectul leucocitelor în colorația Wright, iar textul spune că granulele eozinofile se colorează cu coloranți acidofili și apar roșii. Nu este descrisă o culoare roșie nativă. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "D",
           "text": "sunt crescute numeric în infecții fungice",
-          "why": "Baremul exclude D, urmând asocierile uzuale din lecție. Totuși, unele infecții fungice, precum coccidioidomicoza, pot produce eozinofilie; excluderea nu permite o negare generală a acestei posibilități."
+          "why": "Tabelul asociază infecțiile fungice cu creșterea monocitelor; pentru eozinofile enumeră alergiile și infestațiile parazitare. Sursa: Sângele — Caracteristicile elementelor figurate, tabelul 14.3."
         },
         {
           "letter": "E",
           "text": "sunt crescute numeric în infecții bacteriene",
-          "why": "Infecțiile bacteriene obișnuite se asociază mai frecvent cu neutrofilie, nu cu eozinofilie ca răspuns caracteristic."
+          "why": "Infecțiile bacteriene obișnuite se asociază mai frecvent cu neutrofilie, nu cu eozinofilie ca răspuns caracteristic. Sursa: Sângele — Caracteristicile elementelor figurate, tabelul 14.3."
         }
       ],
       "sourcePages": [
@@ -2058,27 +2058,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "au un nucleu reniform și granulații violete în colorația Wright",
-          "why": "Baremul exclude A, urmând clasificarea de agranulocite. Totuși, nucleul reniform și granulele azurofile fine pot exista în monocite; lipsesc granulațiile specifice ale granulocitelor, nu toate granulele. Afirmația are suport histologic și excluderea necesită rezervă."
+          "why": "Tabelul descrie monocitele cu nucleu violet reniform și citoplasmă fără granulații; varianta transferă culoarea violetă asupra granulațiilor. Sursa: Sângele — Aspectul microscopic al leucocitelor, tabelul 14.2."
         },
         {
           "letter": "B",
           "text": "reprezintă 6-8 % din totalul elementelor figurate ale sângelui",
-          "why": "Procentul de 6–8% din lecție privește leucocitele, nu ansamblul elementelor figurate sanguine."
+          "why": "Procentul de 6–8% din lecție privește leucocitele, nu ansamblul elementelor figurate sanguine. Sursa: Sângele — Caracteristicile elementelor figurate, tabelul 14.3."
         },
         {
           "letter": "C",
           "text": "se transformă în țesuturi în celule care, după fagocitoza unor microorganism, prezintă antigenele acestora limfocitelor",
-          "why": "Monocitele se pot diferenția în macrofage care fagocitează microorganisme și prezintă fragmente antigenice limfocitelor T."
+          "why": "Monocitele devin macrofage în țesuturi, fagocitează microorganisme și prezintă antigenele acestora limfocitelor. Sursa: Sângele — Limfocitele și monocitele."
         },
         {
           "letter": "D",
           "text": "pot crește numeric în tuberculoză",
-          "why": "Tuberculoza și alte infecții cronice pot fi asociate cu monocitoză, fără ca această modificare să fie obligatorie sau specifică diagnosticului."
+          "why": "Tabelul indică tuberculoza între situațiile în care monocitele pot crește numeric. Sursa: Sângele — Caracteristicile elementelor figurate, tabelul 14.3."
         },
         {
           "letter": "E",
           "text": "pot fi atipice în mononucleoza infecțioasă",
-          "why": "Celulele atipice caracteristice mononucleozei infecțioase sunt în principal limfocite reactive, nu monocite."
+          "why": "Celulele atipice caracteristice mononucleozei infecțioase sunt în principal limfocite reactive, nu monocite. Sursa: Sângele — Caracteristicile elementelor figurate, tabelul 14.3."
         }
       ],
       "sourcePages": [
@@ -2099,27 +2099,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "aderă la fibrele de colagen din peretele vascular lezat",
-          "why": "Expunerea structurilor subendoteliale permite aderarea plachetelor, inclusiv prin factorul von Willebrand, inițiind dopul plachetar."
+          "why": "Plachetele aderă de fibrele de colagen ale peretelui vascular lezat și formează masa care umple leziunea. Sursa: Sângele — Plachetele sanguine și hemostaza."
         },
         {
           "letter": "B",
           "text": "declanșează calea extrinsecă a coagulării",
-          "why": "Inițierea căii extrinseci este atribuită factorului tisular; plachetele furnizează suprafețe și mediatori ce susțin coagularea."
+          "why": "Calea extrinsecă este inițiată de factori tisulari, iar factorul plachetar este descris la calea intrinsecă. Sursa: Sângele — Calea extrinsecă a coagulării."
         },
         {
           "letter": "C",
           "text": "reprezintă componenta vasculară a hemostazei",
-          "why": "Plachetele constituie componenta plachetară sau celulară; componenta vasculară include răspunsul peretelui vascular, precum vasoconstricția."
+          "why": "Manualul numește plachetele componenta celulară a hemostazei, nu componenta vasculară. Sursa: Sângele — Plachetele sanguine și hemostaza."
         },
         {
           "letter": "D",
           "text": "se pot forma la adult în diafiza osului compact din megacariocite",
-          "why": "La adult, trombopoieza se desfășoară în măduva roșie hematogenă, nu în substanța osoasă compactă diafizară."
+          "why": "Manualul localizează formarea megacariocitelor și plachetelor în măduva roșie a oaselor, nu în țesutul osos compact al diafizei. Sursa: Sângele — Plachetele sanguine și hemostaza."
         },
         {
           "letter": "E",
           "text": "pot duce la sângerări dacă numărul lor este prea mare",
-          "why": "Conflict cu baremul, care exclude E: un număr foarte mare de trombocite poate produce și sângerări, de exemplu prin disfuncție plachetară sau deficit dobândit al factorului von Willebrand. Modelul simplificat „puține = sângerare, multe = tromboză” nu acoperă această posibilitate."
+          "why": "Tabelul leagă sângerările de prea puține plachete. Sursa autorizată nu oferă suport pentru legătura propusă între prea multe plachete și sângerări; baremul rămâne neschimbat. Sursa: Sângele — Caracteristicile elementelor figurate, tabelul 14.3."
         }
       ],
       "sourcePages": [
@@ -2143,27 +2143,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "este un pigment roșu, format din 4 lanțuri polipeptidice, 2 alfa și 2 beta",
-          "why": "Hemoglobina A, forma adultă predominantă, este un tetramer cu două lanțuri alfa și două beta; grupările hem îi conferă proprietățile de pigment respirator."
+          "why": "Hemoglobina este descrisă ca pigment roșu cu două lanțuri alfa și două beta. Sursa: Sângele — Hemoglobina."
         },
         {
           "letter": "B",
           "text": "fiecare lanț polipeptidic este atașat unei grupări hem ce conține un Fe",
-          "why": "Fiecare subunitate globinică este asociată cu un hem având un ion de fier, sediul legării oxigenului."
+          "why": "Fiecare subunitate globinică este asociată cu un hem având un ion de fier, sediul legării oxigenului. Sursa: Sângele — Hemoglobina."
         },
         {
           "letter": "C",
           "text": "oxigenul se fixează puternic de fierul hemului pentru a forma oxihemoglobina",
-          "why": "Baremul exclude C, urmând comparația cu afinitatea mult mai mare a hemoglobinei pentru CO. Legarea O₂ este reversibilă și permite cedarea lui; termenul „puternic” rămâne imprecis, iar reversibilitatea nu implică absența afinității."
+          "why": "Manualul descrie legarea slabă a oxigenului de fierul hemului pentru formarea oxihemoglobinei. Sursa: Sângele — Hemoglobina."
         },
         {
           "letter": "D",
           "text": "monoxidul de carbon se combină rapid și mai puternic decât oxigenul cu Fe hemoglobinei",
-          "why": "Hemoglobina are afinitate mult mai mare pentru CO decât pentru O₂; ocuparea situsurilor de legare afectează transportul și cedarea oxigenului."
+          "why": "Monoxidul de carbon se leagă puternic de fierul hemoglobinei și ocupă spațiul rezervat oxigenului, reducând cantitatea de oxigen transportată. Sursa: Sângele — Hemoglobina."
         },
         {
           "letter": "E",
           "text": "hemul se degradează în biliverdină, care se va transforma în bilirubină",
-          "why": "Deschiderea inelului hem produce biliverdină, ulterior redusă la bilirubină; fierul este recuperat pentru reutilizare."
+          "why": "Restul hemului este transformat în biliverdină și apoi în bilirubină, în ordinea enunțată. Sursa: Sângele — Distrugerea globulelor roșii."
         }
       ],
       "sourcePages": [
@@ -2186,27 +2186,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "anticorpul anti-A este prezent pe membrana hematiilor de grup B",
-          "why": "Anticorpii anti-A se găsesc în plasmă; hematiile grupei B poartă antigenul B, nu anticorpul anti-A ca marker de grup."
+          "why": "Anticorpii anti-A se găsesc în plasmă; hematiile grupei B poartă antigenul B, nu anticorpul anti-A ca marker de grup. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         },
         {
           "letter": "B",
           "text": "grupa A prezintă anticorpi anti-B plasmatici",
-          "why": "Persoanele cu grupa A au antigen A eritrocitar și, în mod obișnuit, anticorpi anti-B în plasmă."
+          "why": "Persoanele cu grupa A au antigen A eritrocitar și, în mod obișnuit, anticorpi anti-B în plasmă. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "C",
           "text": "sistemul Rh este important atât în cazul unei sarcini în care mama are Rh negativ și fătul are Rh pozitiv, cât și în transfuzii",
-          "why": "Antigenul D poate produce imunizare la persoane Rh negative, cu relevanță pentru compatibilitatea transfuzională și boala hemolitică fetală."
+          "why": "Antigenul D poate produce imunizare la persoane Rh negative, cu relevanță pentru compatibilitatea transfuzională și boala hemolitică fetală. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "D",
           "text": "antigenele A și B sunt molecule proteice prezente în plasmă",
-          "why": "Determinanții A și B sunt structuri glucidice asociate glicolipidelor și glicoproteinelor, inclusiv pe membrana eritrocitară; nu sunt definiți drept proteine plasmatice."
+          "why": "Manualul numește antigenele A și B molecule proteice de pe suprafața membranei eritrocitelor. Localizarea în plasmă din variantă nu corespunde definiției. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         },
         {
           "letter": "E",
           "text": "grupa B, Rh negativ poate dona sânge grupei AB, Rh pozitiv",
-          "why": "În compatibilitatea eritrocitară standard, primitorul AB nu are anti-A/anti-B, iar Rh pozitiv poate primi hematii Rh negative."
+          "why": "În compatibilitatea eritrocitară standard, primitorul AB nu are anti-A/anti-B, iar Rh pozitiv poate primi hematii Rh negative. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Factorul Rh și eritroblastoza fetală."
         }
       ],
       "sourcePages": [
@@ -2229,27 +2229,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "albuminele - menținerea presiunii osmotice a sângelui",
-          "why": "Albumina este un determinant principal al presiunii coloid-osmotice plasmatice, care favorizează menținerea apei în compartimentul vascular."
+          "why": "Albuminele mențin presiunea osmotică a sângelui, iar proteinele plasmatice favorizează intrarea osmotică a apei în sânge. Sursa: Sângele — Albuminele și osmoza."
         },
         {
           "letter": "B",
           "text": "gama globuline - anticorpi implicați în stimularea apariției de antigene",
-          "why": "Antigenele stimulează răspunsul imun și producția anticorpilor; anticorpii nu sunt definiți ca producători sau stimulatori ai apariției antigenelor."
+          "why": "Antigenele stimulează răspunsul imun și producția anticorpilor; anticorpii nu sunt definiți ca producători sau stimulatori ai apariției antigenelor. Sursa: Sângele — Globulinele."
         },
         {
           "letter": "C",
           "text": "globuline alfa și beta - transport de hormoni, vitamine și alte substanțe",
-          "why": "Fracțiile alfa și beta cuprind proteine transportoare pentru hormoni, vitamine, metale și alte molecule."
+          "why": "Alfa și beta globulinele leagă hormoni, vitamine și alte substanțe pentru transport. Sursa: Sângele — Globulinele."
         },
         {
           "letter": "D",
           "text": "fibrinogen - proteină produsă de ficat implicată în coagulare",
-          "why": "Fibrinogenul sintetizat hepatic este precursorul solubil al fibrinei din cheagul sanguin."
+          "why": "Fibrinogenul sintetizat hepatic este precursorul solubil al fibrinei din cheagul sanguin. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "E",
           "text": "hemoglobina - fixarea gazelor respiratorii",
-          "why": "Rolul de legare a gazelor este adevărat, dar hemoglobina este în mod normal intracelulară eritrocitară, nu una dintre proteinele plasmatice cerute."
+          "why": "Rolul de legare a gazelor este adevărat, dar hemoglobina este în mod normal intracelulară eritrocitară, nu una dintre proteinele plasmatice cerute. Sursa: Sângele — Globulele roșii: structură, număr și producere."
         }
       ],
       "sourcePages": [
@@ -2272,27 +2272,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "prezintă o organizare internă redusă, fără nucleu, dar cu organite",
-          "why": "Eritrocitele mature umane nu au nucleu și nici organitele celulare obișnuite; păstrarea organitelor în enunț este greșită."
+          "why": "Eritrocitele mature umane nu au nucleu și nici organitele celulare obișnuite; păstrarea organitelor în enunț este greșită. Sursa: Sângele — Globulele roșii: structură, număr și producere."
         },
         {
           "letter": "B",
           "text": "sunt saci plini cu hemoglobină, prin care fixează oxigenul pe care îl transportă la țesuturi",
-          "why": "Citoplasma hematiilor mature este bogată în hemoglobină, care leagă reversibil oxigenul și îl transportă spre țesuturi."
+          "why": "Citoplasma hematiilor mature este bogată în hemoglobină, care leagă reversibil oxigenul și îl transportă spre țesuturi. Sursa: Sângele — Globulele roșii: structură, număr și producere; Sângele — Dimensiunile eritrocitelor, figura 14.2."
         },
         {
           "letter": "C",
           "text": "au formă generală de disc biconcav, flexibil cu diametrul de 7,8 μm",
-          "why": "Forma biconcavă și deformabilitatea sunt caracteristice hematiilor normale; diametrul mediu din lecție este 7,8 μm."
+          "why": "Forma biconcavă și deformabilitatea sunt caracteristice hematiilor normale; diametrul mediu din lecție este 7,8 μm. Sursa: Sângele — Dimensiunile eritrocitelor, figura 14.2."
         },
         {
           "letter": "D",
           "text": "conțin fier, ceea ce duce la sedimentarea rapidă prin centrifugare",
-          "why": "Baremul acceptă simplificarea lecției. Conținutul în hemoglobină contribuie la densitatea hematiilor, iar centrifugarea separă elementele figurate mai dense de plasmă; atribuirea întregului efect numai fierului este o simplificare."
+          "why": "Manualul explică sedimentarea hematiilor la centrifugare prin faptul că sunt mai grele datorită conținutului în fier. Sursa: Sângele — Morfologia hematiilor, hematocritul și osmoza."
         },
         {
           "letter": "E",
           "text": "volumul procentual de hematii din volumul de sânge reprezintă hematocritul, care are valoare mai mare la femeie decât la bărbat",
-          "why": "Definiția hematocritului este corectă, dar comparația este inversată: valorile medii sunt mai mari la bărbați decât la femei."
+          "why": "Definiția hematocritului este corectă, dar comparația este inversată: valorile medii sunt mai mari la bărbați decât la femei. Sursa: Sângele — Morfologia hematiilor, hematocritul și osmoza."
         }
       ],
       "sourcePages": [
@@ -2316,27 +2316,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "transporta hormonii în tot organismul",
-          "why": "Sângele distribuie hormonii de la locurile de secreție către țesuturile cu receptori potriviți."
+          "why": "Sângele distribuie hormonii de la locurile de secreție către țesuturile cu receptori potriviți. Sursa: Sângele — Funcțiile sângelui."
         },
         {
           "letter": "B",
           "text": "proteja organismul de boli prin acțiunea unor celule sanguine",
-          "why": "Leucocitele participă la apărare prin fagocitoză, coordonarea răspunsului imun, producția de anticorpi și distrugerea celulelor afectate."
+          "why": "Globulele albe apără organismul; manualul descrie fagocitoza, producerea de anticorpi și distrugerea microorganismelor. Sursa: Sângele — Funcțiile sângelui; Sângele — Tipurile de globule albe."
         },
         {
           "letter": "C",
           "text": "transporta gazele respiratorii dizolvate plasmatic sau fixate pe hemoglobina leucocitară",
-          "why": "Gazele pot circula dizolvate sau legate de hemoglobină, dar aceasta se află în eritrocite, nu în leucocite; termenul „leucocitară” face afirmația falsă."
+          "why": "Gazele pot circula dizolvate sau legate de hemoglobină, dar aceasta se află în eritrocite, nu în leucocite; termenul „leucocitară” face afirmația falsă. Sursa: Sângele — Globulele roșii: structură, număr și producere; Sângele — Hemoglobina."
         },
         {
           "letter": "D",
           "text": "transporta produșii de metabolism spre organele de excreție",
-          "why": "Sângele preia produși metabolici din țesuturi și îi conduce către organe de eliminare, precum rinichii și plămânii."
+          "why": "Sângele preia produși metabolici din țesuturi și îi conduce către organe de eliminare, precum rinichii și plămânii. Sursa: Sângele — Funcțiile sângelui."
         },
         {
           "letter": "E",
           "text": "transporta nutrienți și produși de metabolism",
-          "why": "Circulația distribuie nutrienții absorbiți și transportă produșii rezultați din metabolism între țesuturi și organele de prelucrare sau excreție."
+          "why": "Circulația distribuie nutrienții absorbiți și transportă produșii rezultați din metabolism între țesuturi și organele de prelucrare sau excreție. Sursa: Sângele — Funcțiile sângelui."
         }
       ],
       "sourcePages": [
@@ -2358,27 +2358,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "transfuziile de sânge de la persoane Rh pozitiv la persoane Rh negativ nu prezintă riscuri",
-          "why": "Eritrocitele Rh pozitive pot sensibiliza un primitor Rh negativ și pot provoca reacții hemolitice dacă acesta are anticorpi anti-D; afirmația că nu există riscuri este greșită."
+          "why": "Eritrocitele Rh pozitive pot sensibiliza un primitor Rh negativ și pot provoca reacții hemolitice dacă acesta are anticorpi anti-Rh; afirmația că nu există riscuri este greșită. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "B",
           "text": "după o transfuzie cu sânge Rh pozitiv la o persoană Rh negativ apar în plasmă anticorpi anti-Rh",
-          "why": "Expunerea la eritrocite Rh pozitive poate induce producerea de anticorpi anti-D la un primitor Rh negativ. Baremul descrie mecanismul de sensibilizare, fără ca formarea anticorpilor să fie obligatorie la fiecare transfuzie."
+          "why": "Prin corelare cu mecanismul Rh din manual, contactul sângelui Rh negativ cu eritrocite Rh pozitive poate stimula producerea anticorpilor anti-Rh. Exemplul explicit din sursă privește circulația maternă. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "C",
           "text": "anticorpii anti-Rh sunt prezenți în plasmă la 10-15 % din populație",
-          "why": "Procentul din lecție se referă la persoanele Rh negative din populația descrisă, nu la prezența anticorpilor; anticorpii anti-D apar de obicei după sensibilizare."
+          "why": "Procentul din lecție se referă la persoanele Rh negative din populația descrisă, nu la prezența anticorpilor; anticorpii anti-Rh apar de obicei după sensibilizare. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "D",
           "text": "la persoanele Rh negativ pot fi prezenți în plasmă antigene anti-A sau anti-B",
-          "why": "Anti-A și anti-B sunt anticorpi, nu antigene. Statutul Rh negativ nu stabilește grupa AB0 sau anticorpii anti-A/anti-B ai persoanei."
+          "why": "Anti-A și anti-B sunt anticorpi, nu antigene. Statutul Rh negativ nu stabilește grupa AB0 sau anticorpii anti-A/anti-B ai persoanei. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "E",
           "text": "eritroblastoza fetală poate să apară la al doilea făt Rh pozitiv, cu mamă Rh negativ",
-          "why": "O mamă Rh negativă sensibilizată poate transmite placentar anticorpi anti-D către un făt Rh pozitiv. A doua sarcină este exemplul clasic, dar boala poate apărea și mai devreme dacă sensibilizarea a avut loc anterior."
+          "why": "Manualul descrie anticorpii anti-Rh ai mamei Rh negative traversând placenta și producând hemoliză la al doilea copil Rh pozitiv. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         }
       ],
       "sourcePages": [
@@ -2401,27 +2401,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "transformarea hemului în biliverdină",
-          "why": "Deschiderea inelului hem produce biliverdină, cu eliberarea fierului care poate fi reutilizat."
+          "why": "Restul hemului este transformat în pigmentul verzui biliverdină. Sursa: Sângele — Distrugerea globulelor roșii."
         },
         {
           "letter": "B",
           "text": "convertirea biliverdinei în bilirubină",
-          "why": "Biliverdina este redusă la bilirubină, pigmentul care este apoi prelucrat și eliminat de ficat prin bilă."
+          "why": "Biliverdina este convertită în bilirubină, pigment galben-portocaliu transportat la ficat și excretat în bilă. Sursa: Sângele — Distrugerea globulelor roșii."
         },
         {
           "letter": "C",
           "text": "transformarea bilirubinei în biliverdină",
-          "why": "În degradarea fiziologică urmărită, ordinea este hem → biliverdină → bilirubină, nu invers."
+          "why": "În degradarea fiziologică urmărită, ordinea este hem → biliverdină → bilirubină, nu invers. Sursa: Sângele — Distrugerea globulelor roșii."
         },
         {
           "letter": "D",
           "text": "convertirea unei părți de bilirubină în urobilinogen",
-          "why": "În intestin, bacteriile transformă bilirubina ajunsă prin bilă în urobilinogen."
+          "why": "În intestin, bacteriile transformă bilirubina ajunsă prin bilă în urobilinogen. Sursa: Sângele — Distrugerea globulelor roșii."
         },
         {
           "letter": "E",
           "text": "eliminarea urobilinogenului doar prin materiile fecale",
-          "why": "O parte din urobilinogen este reabsorbită, iar o fracțiune ajunge la rinichi; eliminarea produșilor săi nu se limitează la materiile fecale."
+          "why": "O parte din urobilinogen este reabsorbită, iar o fracțiune ajunge la rinichi; eliminarea produșilor săi nu se limitează la materiile fecale. Sursa: Sângele — Distrugerea globulelor roșii."
         }
       ],
       "sourcePages": [
@@ -2444,27 +2444,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "82 % apă",
-          "why": "Valoarea didactică pentru apă este aproximativ 92 % din plasmă, nu 82 %."
+          "why": "Valoarea didactică pentru apă este aproximativ 92 % din plasmă, nu 82 %. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "B",
           "text": "7 % proteine cu rol în coagulare",
-          "why": "Aproximativ 7 % din plasmă sunt proteine în total; acestea includ și albumine și imunoglobuline, nu numai proteine de coagulare."
+          "why": "Aproximativ 7 % din plasmă sunt proteine în total; acestea includ și albumine și imunoglobuline, nu numai proteine de coagulare. Sursa: Sângele — Plasma și proteinele plasmatice; Sângele — Compoziția sângelui, figura 14.1."
         },
         {
           "letter": "C",
           "text": "1 % ioni, dintre care Na și Cl în cantitățile cele mai mari",
-          "why": "Plasma conține electroliți, iar sodiul și clorul sunt principalii ioni extracelulari; grila folosește proporția aproximativă de 1 % din lecție."
+          "why": "Textul indică aproximativ 1% ioni, iar figura compoziției plasmei reprezintă Na⁺ și Cl⁻ ca fracțiunile ionice cele mai mari. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "D",
           "text": "produși de degradare ai metabolismului celular",
-          "why": "Plasma transportă produși metabolici, inclusiv compuși azotați, spre organele care îi prelucrează sau îi elimină."
+          "why": "Plasma transportă produși metabolici, inclusiv compuși azotați, spre organele care îi prelucrează sau îi elimină. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "E",
           "text": "nutrienți, hormoni și gaze dizolvate",
-          "why": "În plasmă se găsesc nutrienți, hormoni și fracțiuni dizolvate ale gazelor respiratorii."
+          "why": "În plasmă se găsesc nutrienți, hormoni și fracțiuni dizolvate ale gazelor respiratorii. Sursa: Sângele — Plasma și proteinele plasmatice."
         }
       ],
       "sourcePages": [
@@ -2486,27 +2486,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "formarea tromboplastinei plachetare",
-          "why": "În terminologia lecției, tromboplastina derivată din plachete este asociată căii intrinseci, nu inițierii extrinseci prin factor tisular."
+          "why": "În terminologia lecției, tromboplastina derivată din plachete este asociată căii intrinseci, nu inițierii extrinseci prin factor tisular. Sursa: Sângele — Calea intrinsecă a coagulării."
         },
         {
           "letter": "B",
           "text": "activarea factorului VII prin acțiunea factorilor tisulari și a ionilor de calciu",
-          "why": "Calea extrinsecă este inițiată prin interacțiunea factorului tisular cu factorul VII, în prezența calciului."
+          "why": "Calea extrinsecă este inițiată prin interacțiunea factorului tisular cu factorul VII, în prezența calciului. Sursa: Sângele — Calea extrinsecă a coagulării."
         },
         {
           "letter": "C",
           "text": "intervenția factorului plachetar sintetizat de trombocite sau de celulele endoteliale",
-          "why": "Baremul exclude C, plasând această formulare a „factorului plachetar” în calea intrinsecă a manualului. Inițierea extrinsecă pornește de la factorul tisular; aceasta nu înseamnă că suprafețele plachetare nu pot susține reacțiile ulterioare ale coagulării."
+          "why": "Factorul plachetar eliberat de plachete și endoteliu este descris în calea intrinsecă; calea extrinsecă pornește de la factorii tisulari. Sursa: Sângele — Calea intrinsecă a coagulării."
         },
         {
           "letter": "D",
           "text": "formarea activatorului protrombinei sub acțiunea tromboplastinei tisulare, a ionilor de calciu și a altor factori",
-          "why": "Calea extrinsecă activează cascada care duce la formarea complexului activator al protrombinei; în etapa comună, acesta produce trombină."
+          "why": "Tromboplastina tisulară, calciul și alți factori formează activatorul protrombinei, care transformă protrombina în trombină. Sursa: Sângele — Calea extrinsecă a coagulării."
         },
         {
           "letter": "E",
           "text": "activarea fibrinogenului de către trombină",
-          "why": "Transformarea fibrinogenului în fibrină se produce după formarea trombinei; nu reprezintă activarea protrombinei cerută de enunț."
+          "why": "Transformarea fibrinogenului în fibrină se produce după formarea trombinei; nu reprezintă activarea protrombinei cerută de enunț. Sursa: Sângele — Formarea fibrinei și a cheagului."
         }
       ],
       "sourcePages": [
@@ -2529,27 +2529,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "secreția de eritropoetină de către celulele hepatice",
-          "why": "Baremul exclude A, urmărind rinichiul ca sursă principală de eritropoietină la adult. Ficatul poate produce acest hormon, iar producția hepatică poate fi stimulată; absența vârstei și a contextului din enunț face excluderea o simplificare a schemei didactice."
+          "why": "În descrierea adaptării la oxigenare redusă, manualul atribuie secreția de eritropoetină celulelor renale, nu celor hepatice. Sursa: Sângele — Eritropoieza și eritropoetina."
         },
         {
           "letter": "B",
           "text": "traversarea peretelui capilarelor măduvei osoase de către hematiile mature",
-          "why": "Baremul include trecerea celulelor eritroide nou formate prin endoteliul sinusoidelor medulare în sânge. Ele sunt eliberate în mod obișnuit ca reticulocite, care își încheie maturarea în circulație; „hematii mature” simplifică acest proces."
+          "why": "Textul precizează că globulele roșii mature intră în capilarele măduvei osoase strecurându-se prin peretele acestora. Sursa: Sângele — Eritropoieza și eritropoetina."
         },
         {
           "letter": "C",
           "text": "secreția de eritropoetină de către celulele renale",
-          "why": "Scăderea disponibilității oxigenului stimulează secreția renală de eritropoetină, hormon care crește producția eritrocitară."
+          "why": "Scăderea disponibilității oxigenului stimulează secreția renală de eritropoetină, hormon care crește producția eritrocitară. Sursa: Sângele — Eritropoieza și eritropoetina."
         },
         {
           "letter": "D",
           "text": "stimularea producției de celule roșii în măduva spinării",
-          "why": "Eritrocitele sunt produse în măduva roșie osoasă; măduva spinării este țesut nervos și nu este sediul eritropoiezei."
+          "why": "Eritrocitele sunt produse în măduva roșie osoasă; măduva spinării este țesut nervos și nu este sediul eritropoiezei. Sursa: Sângele — Eritropoieza și eritropoetina."
         },
         {
           "letter": "E",
           "text": "formarea de globule roșii din celule stem",
-          "why": "Eritropoieza pornește de la celulele stem hematopoietice și este stimulată de eritropoetină în condiții de oxigenare insuficientă."
+          "why": "Eritropoieza pornește de la celulele stem hematopoietice și este stimulată de eritropoetină în condiții de oxigenare insuficientă. Sursa: Sângele — Eritropoieza și eritropoetina."
         }
       ],
       "sourcePages": [
@@ -2572,27 +2572,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "fiecare dintre ele reprezintă aproximativ 1 % din numărul total de leucocite",
-          "why": "Neutrofilele sunt mult mai numeroase, aproximativ 60 % în lecție; valoarea de circa 1 % este atribuită separat bazofilelor și eozinofilelor."
+          "why": "Neutrofilele sunt mult mai numeroase, aproximativ 60 % în lecție; valoarea de circa 1 % este atribuită separat bazofilelor și eozinofilelor. Sursa: Sângele — Tipurile de globule albe; Sângele — Caracteristicile elementelor figurate, tabelul 14.3."
         },
         {
           "letter": "B",
           "text": "toate tipurile intervin în inflamații",
-          "why": "Neutrofilele, eozinofilele și bazofilele participă la răspunsuri inflamatorii, prin mecanisme și în contexte diferite."
+          "why": "Textul asociază eozinofilele și bazofilele cu inflamația, iar tabelul menționează creșterea neutrofilelor în inflamații. Sursa: Sângele — Tipurile de globule albe; Sângele — Caracteristicile elementelor figurate, tabelul 14.3."
         },
         {
           "letter": "C",
           "text": "prezintă granulații ce se colorează în albastru în cazul eozinofilelor",
-          "why": "Granulele eozinofilelor se colorează roșu-portocaliu cu coloranți acizi; colorația albastră caracterizează granulele bazofile."
+          "why": "Granulele eozinofilelor se colorează roșu-portocaliu cu coloranți acizi; colorația albastră caracterizează granulele bazofile. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "D",
           "text": "două dintre ele, eozinofile și bazofilele, au rol în reacțiile alergice",
-          "why": "Eozinofilele și bazofilele sunt asociate în lecție răspunsurilor alergice și inflamației."
+          "why": "Eozinofilele și bazofilele sunt asociate în lecție răspunsurilor alergice și inflamației. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "E",
           "text": "creșterea numărului de eozinofile este prezentă în infestații parazitare",
-          "why": "Eozinofilia poate apărea în infestații parazitare, în special în infecții cu helminți; nu este obligatorie în orice parazitoză."
+          "why": "Tabelul precizează că prea multe eozinofile pot apărea în infestații parazitare. Sursa: Sângele — Caracteristicile elementelor figurate, tabelul 14.3."
         }
       ],
       "sourcePages": [
@@ -2615,27 +2615,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "bărbații au 4,8 milioane de hematii/mililitru de sânge",
-          "why": "Lecția indică aproximativ 5,4 milioane de hematii pe microlitru la bărbați; 4,8 milioane este valoarea feminină, iar mililitrul este o unitate de o mie de ori mai mare."
+          "why": "Lecția indică aproximativ 5,4 milioane de hematii pe microlitru la bărbați; 4,8 milioane este valoarea feminină, iar mililitrul este o unitate de o mie de ori mai mare. Sursa: Sângele — Morfologia hematiilor, hematocritul și osmoza."
         },
         {
           "letter": "B",
           "text": "plasarea hematiilor în soluții cu concentrații mai mici decât cea normală, soluții hipotone, duce la hemoliză, cu eliberarea hemoglobinei",
-          "why": "Într-o soluție suficient de hipotonă, apa pătrunde osmotic în eritrocite, acestea se umflă și pot hemoliza, eliberând hemoglobină."
+          "why": "Într-o soluție suficient de hipotonă, apa pătrunde osmotic în eritrocite, acestea se umflă și pot hemoliza, eliberând hemoglobină. Sursa: Sângele — Morfologia hematiilor, hematocritul și osmoza."
         },
         {
           "letter": "C",
           "text": "femeile au un hematocrit de 47 %",
-          "why": "Valoarea medie didactică pentru femei este aproximativ 42 %, iar 47 % este atribuită bărbaților; valorile individuale și intervalele de laborator variază."
+          "why": "Valoarea medie didactică pentru femei este aproximativ 42 %, iar 47 % este atribuită bărbaților; valorile individuale și intervalele de laborator variază. Sursa: Sângele — Morfologia hematiilor, hematocritul și osmoza."
         },
         {
           "letter": "D",
           "text": "eritrocitele sunt produse în măduva roșie osoasă din hemocitoblaști (celule stem)",
-          "why": "Măduva roșie osoasă conține celulele stem hematopoietice din care se dezvoltă linia eritrocitară."
+          "why": "Măduva roșie osoasă conține celulele stem hematopoietice din care se dezvoltă linia eritrocitară. Sursa: Sângele — Eritropoieza și eritropoetina."
         },
         {
           "letter": "E",
           "text": "eritropoieza este controlată de eritropoetină",
-          "why": "Eritropoetina stimulează supraviețuirea și diferențierea precursorilor eritrocitari, reglând producția de globule roșii."
+          "why": "Eritropoetina reglează în parte producția globulelor roșii și este secretată de celule renale când primesc prea puțin oxigen. Sursa: Sângele — Eritropoieza și eritropoetina."
         }
       ],
       "sourcePages": [
@@ -2658,27 +2658,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "sunt în număr de 15000-30000/mm³ de sânge",
-          "why": "Intervalul scris este mult sub numărul normal; lecția indică aproximativ 300.000 de plachete pe mm³."
+          "why": "Intervalul scris este mult sub numărul normal; lecția indică aproximativ 300.000 de plachete pe mm³. Sursa: Sângele — Plachetele sanguine și hemostaza."
         },
         {
           "letter": "B",
           "text": "se formează din megacariocite, derivate din hemocitoblaști",
-          "why": "Megacariocitele provin din linia hematopoietică și eliberează fragmente citoplasmatice care devin plachete."
+          "why": "Megacariocitele provin din linia hematopoietică și eliberează fragmente citoplasmatice care devin plachete. Sursa: Sângele — Plachetele sanguine și hemostaza."
         },
         {
           "letter": "C",
           "text": "reprezintă fragmente de citoplasmă înconjurate de membrană",
-          "why": "Trombocitele sunt fragmente citoplasmatice delimitate de membrană, desprinse din megacariocite."
+          "why": "Trombocitele sunt fragmente citoplasmatice delimitate de membrană, desprinse din megacariocite. Sursa: Sângele — Plachetele sanguine și hemostaza."
         },
         {
           "letter": "D",
           "text": "intervin în hemostază și coagulare",
-          "why": "Plachetele formează dopul plachetar și furnizează suprafețe și mediatori care susțin coagularea."
+          "why": "Plachetele formează agregate și sunt implicate în mecanismul coagulării, cele două procese enumerate în lecție. Sursa: Sângele — Plachetele sanguine și hemostaza."
         },
         {
           "letter": "E",
           "text": "activează calea intrinsecă și extrinsecă a coagulării",
-          "why": "Baremul urmează distincția din lecție: plachetele sunt asociate inițierii intrinseci, iar calea extrinsecă este inițiată de factorul tisular. Plachetele susțin etapele coagulării, dar nu sunt prezentate ca inițiator al ambelor căi."
+          "why": "Baremul urmează distincția din lecție: plachetele sunt asociate inițierii intrinseci, iar calea extrinsecă este inițiată de factorul tisular. Plachetele susțin etapele coagulării, dar nu sunt prezentate ca inițiator al ambelor căi. Sursa: Sângele — Calea intrinsecă a coagulării; Sângele — Calea extrinsecă a coagulării."
         }
       ],
       "sourcePages": [
@@ -2702,27 +2702,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "fibrinogen și albumine, proteine sintetizate în ficat",
-          "why": "Ficatul sintetizează albumina și fibrinogenul, două componente proteice importante ale plasmei."
+          "why": "Ficatul sintetizează albumina și fibrinogenul, două componente proteice importante ale plasmei. Sursa: Sistemul digestiv — Funcțiile ficatului și celulele Kupffer; Sângele — Compoziția sângelui, figura 14.1."
         },
         {
           "letter": "B",
           "text": "limfocite, cea mai mare parte din elementele figurate",
-          "why": "Eritrocitele constituie cea mai mare parte a elementelor figurate; limfocitele sunt doar o categorie de leucocite."
+          "why": "Eritrocitele constituie cea mai mare parte a elementelor figurate; limfocitele sunt doar o categorie de leucocite. Sursa: Sângele — Compoziția sângelui, figura 14.1."
         },
         {
           "letter": "C",
           "text": "plasmă, 55 % și elemente figurate, 45 %",
-          "why": "Acestea sunt proporțiile aproximative utilizate didactic pentru sângele integral, cu variații individuale."
+          "why": "Acestea sunt proporțiile aproximative utilizate didactic pentru sângele integral, cu variații individuale. Sursa: Sângele — Compoziția sângelui, figura 14.1."
         },
         {
           "letter": "D",
           "text": "92 % apă și anionii Na, K, Ca, Mg",
-          "why": "Procentul de aproximativ 92 % apă caracterizează plasma, iar Na, K, Ca și Mg sunt prezenți ca ioni pozitivi, adică cationi, nu anioni."
+          "why": "Procentul de aproximativ 92 % apă caracterizează plasma, iar Na, K, Ca și Mg sunt prezenți ca ioni pozitivi, adică cationi, nu anioni. Sursa: Sângele — Plasma și proteinele plasmatice; Sângele — Compoziția sângelui, figura 14.1."
         },
         {
           "letter": "E",
           "text": "lipide, glucoză și aminoacizi",
-          "why": "Sângele transportă lipide, glucoză și aminoacizi către țesuturi sau între organele metabolice."
+          "why": "Sângele transportă lipide, glucoză și aminoacizi către țesuturi sau între organele metabolice. Sursa: Sângele — Componentele majore ale sângelui, tabelul 14.1."
         }
       ],
       "sourcePages": [
@@ -2746,27 +2746,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "sunt distruse și fagocitate de macrofage în splină, ficat, măduva osoasă",
-          "why": "Macrofagele splenice, hepatice și medulare îndepărtează eritrocitele îmbătrânite sau deteriorate."
+          "why": "Macrofagele splenice, hepatice și medulare îndepărtează eritrocitele îmbătrânite sau deteriorate. Sursa: Sângele — Distrugerea globulelor roșii."
         },
         {
           "letter": "B",
           "text": "se produce după aproximativ 120 zile de viață a hematiei",
-          "why": "Durata medie de viață a unei hematii circulante este de aproximativ 120 de zile."
+          "why": "Durata medie de viață a unei hematii circulante este de aproximativ 120 de zile. Sursa: Sângele — Distrugerea globulelor roșii."
         },
         {
           "letter": "C",
           "text": "lanțurile polipeptidice rezultate sunt desfăcute și eliberează aminoacizi",
-          "why": "Globina este degradată în aminoacizi, care pot fi reutilizați în sinteza proteinelor."
+          "why": "Globina este degradată în aminoacizi, care pot fi reutilizați în sinteza proteinelor. Sursa: Sângele — Distrugerea globulelor roșii."
         },
         {
           "letter": "D",
           "text": "fierul eliberat este refolosit pentru noi sinteze de hemoglobină",
-          "why": "Fierul recuperat este transportat și reutilizat în măduva osoasă pentru formarea de hemoglobină nouă."
+          "why": "Fierul recuperat este transportat și reutilizat în măduva osoasă pentru formarea de hemoglobină nouă. Sursa: Sângele — Distrugerea globulelor roșii."
         },
         {
           "letter": "E",
           "text": "hemul se transformă succesiv în bilirubină, biliverdină, urobilinogen",
-          "why": "Ordinea este inversată la primele două produse: hemul dă biliverdină, apoi bilirubină; în intestin se formează urobilinogen."
+          "why": "Ordinea este inversată la primele două produse: hemul dă biliverdină, apoi bilirubină; în intestin se formează urobilinogen. Sursa: Sângele — Distrugerea globulelor roșii."
         }
       ],
       "sourcePages": [
@@ -2789,27 +2789,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "asigură fagocitoza la locul infecției",
-          "why": "Neutrofilele sunt fagocite care se acumulează rapid în focarele infecțioase și ingeră microorganisme."
+          "why": "Neutrofilele sunt fagocite care se acumulează rapid în focarele infecțioase și ingeră microorganisme. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "B",
           "text": "intervin în reacțiile alergice",
-          "why": "Baremul exclude B, evidențiind în lecție eozinofilele și bazofilele. Există însă dovezi de activare a neutrofilelor în anafilaxia umană; rolul lor în reacții alergice nu poate fi negat în mod absolut."
+          "why": "Manualul asociază reacțiile alergice cu eozinofilele și bazofilele, iar neutrofilelor le atribuie în principal fagocitoza. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "C",
           "text": "prezintă granule ce se colorează cu coloranți neutri în albastru-violaceu",
-          "why": "Granulațiile fine ale neutrofilelor au colorația albastru-violacee descrisă în lecție."
+          "why": "Granulațiile fine ale neutrofilelor au colorația albastru-violacee descrisă în lecție. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "D",
           "text": "au un nucleu cu 2-5 lobi",
-          "why": "Neutrofilele mature au un nucleu segmentat, în mod obișnuit cu doi până la cinci lobi."
+          "why": "Neutrofilele mature au un nucleu segmentat, în mod obișnuit cu doi până la cinci lobi. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "E",
           "text": "reprezintă 30 % dintre leucocite",
-          "why": "Lecția atribuie neutrofilelor aproximativ 60 %; procentul de aproximativ 30 % este asociat limfocitelor."
+          "why": "Lecția atribuie neutrofilelor aproximativ 60 %; procentul de aproximativ 30 % este asociat limfocitelor. Sursa: Sângele — Tipurile de globule albe."
         }
       ],
       "sourcePages": [
@@ -2831,27 +2831,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "apărarea organismului este asigurată și de elemente figurate ale sângelui",
-          "why": "Leucocitele sunt elemente figurate implicate în apărarea imună prin fagocitoză și alte răspunsuri specifice."
+          "why": "Leucocitele sunt elemente figurate implicate în apărarea imună prin fagocitoză și alte răspunsuri specifice. Sursa: Sângele — Funcțiile sângelui."
         },
         {
           "letter": "B",
           "text": "anticorpii anti-A participă la apărarea organismului",
-          "why": "Baremul exclude varianta în modelul lecției, care discută anti-A ca anticorp de grup sanguin. Totuși, au fost demonstrate experimental efecte ale anticorpilor anti-A asupra interacțiunilor unor agenți infecțioși; absența oricărui rol protector nu trebuie generalizată."
+          "why": "Manualul precizează că anticorpii de grup sanguin nu au aparent semnificație fiziologică; nu le atribuie aici apărarea împotriva bolilor. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         },
         {
           "letter": "C",
           "text": "răspunsul imun se realizează și prin gamaglobuline",
-          "why": "Gamaglobulinele includ imunoglobulinele, adică anticorpii care recunosc specific antigenele."
+          "why": "Gamaglobulinele includ imunoglobulinele, adică anticorpii care recunosc specific antigenele. Sursa: Sângele — Globulinele."
         },
         {
           "letter": "D",
           "text": "antigenul Rh are importanță doar în transfuzii",
-          "why": "Compatibilitatea Rh este importantă și în sarcină, prin riscul bolii hemolitice fetale și neonatale."
+          "why": "Compatibilitatea Rh este importantă și în sarcină, prin riscul bolii hemolitice fetale și neonatale. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "E",
           "text": "anticorpii anti-Rh se găsesc întotdeauna în plasma persoanelor Rh pozitiv",
-          "why": "Anticorpii anti-D nu sunt o componentă normală obligatorie a plasmei persoanelor Rh pozitive; ei apar de regulă la persoane Rh negative după expunere la antigenul D."
+          "why": "Manualul descrie producerea anticorpilor anti-Rh la mama Rh negativă după contactul cu eritrocite fetale Rh pozitive. Nu îi prezintă ca prezenți întotdeauna la persoanele Rh pozitive. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         }
       ],
       "sourcePages": [
@@ -2873,27 +2873,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "tromboplastina - derivată din plachete, în prezența Ca²⁺ și a unor factori de coagulare",
-          "why": "Baremul clasifică această descriere la calea intrinsecă. Calea comună începe după convergența căilor de activare și include formarea trombinei și a fibrinei."
+          "why": "Tromboplastina derivată din plachete este descrisă pe calea intrinsecă; schema separă această etapă de calea comună. Sursa: Sângele — Calea intrinsecă a coagulării."
         },
         {
           "letter": "B",
           "text": "protrombina - proteină globulară",
-          "why": "Protrombina este precursorul proteic al trombinei și participă la calea comună a coagulării."
+          "why": "Protrombina este precursorul proteic al trombinei și participă la calea comună a coagulării. Sursa: Sângele — Calea intrinsecă a coagulării."
         },
         {
           "letter": "C",
           "text": "factorul plachetar - eliberat de plachete și celulele endoteliale din vasele de sânge",
-          "why": "Baremul exclude C, deoarece manualul plasează „factorul plachetar” la calea intrinsecă. Explicația privește această schemă: componentele și suprafețele plachetare susțin și reacțiile comune, deci participarea plachetelor la calea comună nu este absentă."
+          "why": "Factorul plachetar eliberat de plachete și endoteliu este prezentat la inițierea căii intrinseci, nu între componentele căii comune din schemă. Sursa: Sângele — Calea intrinsecă a coagulării."
         },
         {
           "letter": "D",
           "text": "trombina - activată în prezența Ca²⁺",
-          "why": "În calea comună se formează trombina prin activarea protrombinei într-un complex dependent de calciu. Formularea sursei se referă la obținerea formei active, nu la o nouă activare a trombinei deja formate."
+          "why": "Protrombina este convertită, în prezența calciului, în forma activă numită trombină. Acesta este sensul formulării acceptate de barem. Sursa: Sângele — Calea intrinsecă a coagulării; Sângele — Formarea fibrinei și a cheagului."
         },
         {
           "letter": "E",
           "text": "factorul VII al coagulării - activat de factorii tisulari la nivel vascular",
-          "why": "Factorul VII și factorul tisular aparțin căii extrinseci; produsul activării lor conduce ulterior spre calea comună."
+          "why": "Factorul VII și factorul tisular aparțin căii extrinseci; produsul activării lor conduce ulterior spre calea comună. Sursa: Sângele — Calea extrinsecă a coagulării."
         }
       ],
       "sourcePages": [
@@ -2916,27 +2916,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "agranulocite - monocitele, neutrofilele și macrofagele",
-          "why": "Neutrofilele sunt granulocite, deci enumerarea nu descrie corect agranulocitele."
+          "why": "Neutrofilele sunt granulocite, deci enumerarea nu descrie corect agranulocitele. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "B",
           "text": "granulocite - eozinofilele, neutrofilele și bazofilele",
-          "why": "Aceste trei categorii de leucocite au granulații citoplasmatice caracteristice și formează grupul granulocitelor."
+          "why": "Aceste trei categorii de leucocite au granulații citoplasmatice caracteristice și formează grupul granulocitelor. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "C",
           "text": "agranulocite - limfocitele și monocitele",
-          "why": "Clasificarea uzuală include limfocitele și monocitele între agranulocite, fără granulațiile specifice granulocitelor."
+          "why": "Clasificarea uzuală include limfocitele și monocitele între agranulocite, fără granulațiile specifice granulocitelor. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "D",
           "text": "prezente în mediul tisular, după ce traversează pereții capilarelor prin diapedeză",
-          "why": "Leucocitele pot părăsi circulația traversând endoteliul și pot participa la apărarea țesuturilor."
+          "why": "Leucocitele pot părăsi circulația traversând endoteliul și pot participa la apărarea țesuturilor. Sursa: Sângele — Globulele albe."
         },
         {
           "letter": "E",
           "text": "scăzute numeric în anemie",
-          "why": "Baremul exclude E: anemia privește hemoglobina și eritrocitele, iar scăderea leucocitelor se numește leucopenie. Totuși, ele pot coexista, de exemplu în anemia aplastică; deoarece cerința spune „pot fi”, varianta nu este biologic imposibilă."
+          "why": "Manualul numește scăderea leucocitelor leucopenie și asociază anemia cu prea puține eritrocite; nu oferă suport pentru asocierea cerută aici. Sursa: Sângele — Caracteristicile elementelor figurate, tabelul 14.3; Sângele — Globulele albe."
         }
       ],
       "sourcePages": [
@@ -2959,27 +2959,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "este inițiată de formarea tromboplastinei",
-          "why": "Răspunsul hemostatic începe cu reacția vasculară și plachetară la leziune; formarea componentelor coagulative nu este prima etapă a întregului proces."
+          "why": "În descrierea hemostazei plachetare, plachetele aderă la colagen și formează un agregat; această reacție stimulează ulterior coagularea. Sursa: Sângele — Plachetele sanguine și hemostaza."
         },
         {
           "letter": "B",
           "text": "implică aderarea plachetelor de fibrele de colagen din peretele vascular",
-          "why": "Leziunea vasculară expune structuri subendoteliale, iar plachetele aderă la acestea și inițiază formarea dopului plachetar."
+          "why": "Leziunea vasculară expune structuri subendoteliale, iar plachetele aderă la acestea și inițiază formarea dopului plachetar. Sursa: Sângele — Plachetele sanguine și hemostaza."
         },
         {
           "letter": "C",
           "text": "determină formarea agregatelor plachetare la nivelul leziunii vasului",
-          "why": "Agregarea plachetelor astupă inițial defectul vascular și contribuie la oprirea sângerării."
+          "why": "Agregarea plachetelor astupă inițial defectul vascular și contribuie la oprirea sângerării. Sursa: Sângele — Plachetele sanguine și hemostaza."
         },
         {
           "letter": "D",
           "text": "este o reacție ce se produce după coagulare",
-          "why": "Hemostaza include reacțiile care opresc sângerarea, iar coagularea este una dintre etapele sale; dopul plachetar se formează înaintea stabilizării prin fibrină."
+          "why": "Hemostaza include reacțiile care opresc sângerarea, iar coagularea este una dintre etapele sale; dopul plachetar se formează înaintea stabilizării prin fibrină. Sursa: Sângele — Plachetele sanguine și hemostaza; Sângele — Formarea fibrinei și a cheagului."
         },
         {
           "letter": "E",
           "text": "controlează pierderile de sânge la locul leziunii prin formarea agregatului plachetar",
-          "why": "Dopul plachetar reduce pierderea de sânge prin defectul vascular și este apoi consolidat prin coagulare."
+          "why": "Dopul plachetar reduce pierderea de sânge prin defectul vascular și este apoi consolidat prin coagulare. Sursa: Sângele — Plachetele sanguine și hemostaza."
         }
       ],
       "sourcePages": [
@@ -3000,27 +3000,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "este o proteină prezentă în plasma sanguină",
-          "why": "Fibrinogenul este o proteină plasmatică solubilă, sintetizată de ficat și implicată în coagulare."
+          "why": "Fibrinogenul este o proteină plasmatică solubilă, sintetizată de ficat și implicată în coagulare. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "B",
           "text": "este un fosfolipid sintetizat de ficat",
-          "why": "Fibrinogenul este proteină, nu fosfolipid, chiar dacă este sintetizat în ficat."
+          "why": "Fibrinogenul este proteină, nu fosfolipid, chiar dacă este sintetizat în ficat. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "C",
           "text": "reprezintă aproximativ 7 % din substanțele organice din plasmă",
-          "why": "Procentul didactic de aproximativ 7 % se referă la totalul proteinelor plasmatice, nu la toate substanțele organice din plasmă."
+          "why": "Procentul didactic de aproximativ 7 % se referă la totalul proteinelor plasmatice, nu la toate substanțele organice din plasmă. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "D",
           "text": "participă la procesul de coagulare, transformându-se în fibrină solubilă",
-          "why": "Baremul exclude D, urmând schema în care fibrinogenul solubil este transformat în rețeaua de fibrină insolubilă a cheagului. Există însă intermediari solubili ai fibrinei în această transformare, înainte de formarea gelului; afirmația tipărită poate descrie această etapă, deși nu produsul final urmărit de manual."
+          "why": "Fibrinogenul este transformat în fibrină fibrilară insolubilă, nu în fibrină solubilă, în descrierea manualului. Sursa: Sângele — Formarea fibrinei și a cheagului."
         },
         {
           "letter": "E",
           "text": "este o proteină plasmatică care transportă acizi grași și hormoni",
-          "why": "Transportul acizilor grași și al unor hormoni este un rol caracteristic al albuminei; fibrinogenul participă în principal la coagulare."
+          "why": "Transportul acizilor grași și al unor hormoni este un rol caracteristic al albuminei; fibrinogenul participă în principal la coagulare. Sursa: Sângele — Albuminele și osmoza."
         }
       ],
       "sourcePages": [
@@ -3042,27 +3042,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "antigenul Rh este prezent în plasma persoanelor Rh⁺",
-          "why": "Antigenul Rh(D) este localizat pe membrana eritrocitelor Rh pozitive, nu liber în plasmă ca definiție a grupei."
+          "why": "Antigenul Rh este localizat pe membrana eritrocitelor Rh pozitive, nu liber în plasmă ca definiție a grupei. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "B",
           "text": "anticorpii anti-A și anti-B sunt prezente în serul persoanelor de grup AB",
-          "why": "Persoanele cu grupa AB nu au în mod normal anticorpi anti-A sau anti-B în ser."
+          "why": "Persoanele cu grupa AB nu au în mod normal anticorpi anti-A sau anti-B în ser. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0."
         },
         {
           "letter": "C",
           "text": "factorul Rh, similar grupelor sanguine din sistemul AB0, este important în cazul transfuziilor sanguine",
-          "why": "Antigenele AB0 și Rh sunt esențiale în aprecierea compatibilității eritrocitare și a riscului de reacții transfuzionale."
+          "why": "Antigenele AB0 și Rh sunt esențiale în aprecierea compatibilității eritrocitare și a riscului de reacții transfuzionale. Sursa: Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "D",
           "text": "grupa sanguină 0 și Rh⁺ poate dona sânge tuturor grupelor sanguine, indiferent de Rh",
-          "why": "Eritrocitele 0 Rh pozitive au antigen D și nu sunt compatibile universal cu primitorii Rh negativi; noțiunea didactică de donator universal eritrocitar se referă la 0 Rh negativ."
+          "why": "Eritrocitele 0 Rh pozitive au antigen Rh și nu sunt compatibile universal cu primitorii Rh negativi; noțiunea didactică de donator universal eritrocitar se referă la 0 Rh negativ. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "E",
           "text": "o persoană de grup sanguin B și Rh⁻ poate dona sânge unei persoane de grup AB și Rh⁺",
-          "why": "Pentru transfuzia de eritrocite, B Rh negativ este compatibil în sistemele AB0/Rh cu AB Rh pozitiv: primitorul nu are anti-B, iar eritrocitele donatorului nu introduc antigen D suplimentar incompatibil."
+          "why": "Pentru transfuzia de eritrocite, B Rh negativ este compatibil în sistemele AB0/Rh cu AB Rh pozitiv: primitorul nu are anti-B, iar eritrocitele donatorului nu introduc antigen Rh suplimentar incompatibil. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Factorul Rh și eritroblastoza fetală."
         }
       ],
       "sourcePages": [
@@ -3084,27 +3084,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "macrofagele au ca funcție principală fagocitoza",
-          "why": "Macrofagele înglobează microorganisme, resturi celulare și alte particule și contribuie la răspunsul imun."
+          "why": "Manualul descrie macrofagele drept celule fagocitare care înglobează microorganisme și prezintă antigene. Sursa: Sângele — Limfocitele și monocitele."
         },
         {
           "letter": "B",
           "text": "limfocitele T se maturează în timus",
-          "why": "Precursorii limfocitelor T ajung în timus, unde au loc maturarea și selecția lor."
+          "why": "Timozinele secretate de timus contribuie la maturarea limfocitelor T. Sursa: Sistemul limfatic și imun — Timusul și timozinele."
         },
         {
           "letter": "C",
           "text": "macrofagele ajung în țesuturi prin diapedeză și se transformă în monocite",
-          "why": "În schema lecției, monocitele ies din sânge prin diapedeză și se diferențiază în macrofage, nu invers."
+          "why": "În schema lecției, monocitele ies din sânge prin diapedeză și se diferențiază în macrofage, nu invers. Sursa: Sângele — Limfocitele și monocitele."
         },
         {
           "letter": "D",
           "text": "hematiile pot conține pe suprafața membranei anticorpii anti-Rh, anti-A și anti-B",
-          "why": "Baremul urmărește distincția antigene pe eritrocit–anticorpi în plasmă. Formularea „pot” este însă ambiguă: în reacții imune, anticorpii se pot fixa efectiv pe suprafața eritrocitelor, fenomen evidențiat de testul Coombs direct."
+          "why": "Baremul exclude D, urmărind distincția antigen pe eritrocit–anticorp în ser. Totuși, manualul descrie și reacția anticorpilor anti-Rh cu antigenele eritrocitare și reacția anti-A/anti-B cu hematiile; termenul „pot” face enunțul ambiguu. Sursa: Sângele — Grupele sanguine și compatibilitatea AB0; Sângele — Factorul Rh și eritroblastoza fetală."
         },
         {
           "letter": "E",
           "text": "plachetele sanguine intervin în formarea agregatelor plachetare, dar nu și în coagularea sângelui",
-          "why": "Plachetele formează agregate și contribuie și la coagulare, furnizând suprafețe fosfolipidice și mediatori care susțin cascada."
+          "why": "Manualul afirmă explicit că plachetele participă atât la formarea agregatelor, cât și la mecanismul coagulării. Sursa: Sângele — Plachetele sanguine și hemostaza."
         }
       ],
       "sourcePages": [
@@ -3126,27 +3126,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "numărul lor scade în reacții alergice",
-          "why": "Eozinofilele pot crește în reacții alergice; scăderea nu este modificarea caracteristică urmărită în lecție."
+          "why": "Eozinofilele pot crește în reacții alergice; scăderea nu este modificarea caracteristică urmărită în lecție. Sursa: Sângele — Caracteristicile elementelor figurate, tabelul 14.3."
         },
         {
           "letter": "B",
           "text": "au un nucleu care prezintă 2-5 lobi",
-          "why": "Baremul exclude B, deoarece intervalul tipic de doi până la cinci lobi este folosit în lecție pentru neutrofile, iar eozinofilul este descris drept bilobat. Numărul doi aparține totuși intervalului; formularea nu trebuie citită ca negare a nucleului cu doi lobi al eozinofilului."
+          "why": "Baremul exclude B, deoarece intervalul tipic de doi până la cinci lobi este folosit în lecție pentru neutrofile, iar eozinofilul este descris drept bilobat. Numărul doi aparține totuși intervalului; formularea nu trebuie citită ca negare a nucleului cu doi lobi al eozinofilului. Sursa: Sângele — Aspectul microscopic al leucocitelor, tabelul 14.2; Sângele — Tipurile de globule albe."
         },
         {
           "letter": "C",
           "text": "reprezintă aproximativ 30 % din numărul total de leucocite",
-          "why": "Lecția atribuie eozinofilelor aproximativ 1 %, iar procentul de circa 30 % aparține limfocitelor."
+          "why": "Lecția atribuie eozinofilelor aproximativ 1 %, iar procentul de circa 30 % aparține limfocitelor. Sursa: Sângele — Tipurile de globule albe."
         },
         {
           "letter": "D",
           "text": "numărul lor crește în parazitoze",
-          "why": "Eozinofilia poate însoți infestațiile parazitare, mai ales cele cu helminți care afectează țesuturile."
+          "why": "Tabelul menționează că eozinofilele pot crește în infestații parazitare. Sursa: Sângele — Caracteristicile elementelor figurate, tabelul 14.3."
         },
         {
           "letter": "E",
           "text": "participă la inflamație, similar bazofilelor",
-          "why": "Eozinofilele și bazofilele sunt granulocite implicate în răspunsuri inflamatorii și alergice."
+          "why": "Eozinofilele și bazofilele sunt granulocite implicate în răspunsuri inflamatorii și alergice. Sursa: Sângele — Tipurile de globule albe."
         }
       ],
       "sourcePages": [
@@ -3170,27 +3170,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "reprezintă fluidul care rămâne după consumarea proteinelor de coagulare din plasmă pe parcursul procesului de coagulare",
-          "why": "Serul este lichidul rămas după coagulare și îndepărtarea cheagului. Se pierde fibrinogenul și se modifică/consumă anumiți factori, dar rămân numeroase proteine, inclusiv albumina și imunoglobulinele."
+          "why": "Definiția serului îl descrie ca fluid rămas după coagulare și consumarea proteinelor de coagulare din plasmă. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "B",
           "text": "are o compoziție identică cu plasma sanguină",
-          "why": "Serul diferă de plasmă prin absența fibrinogenului și prin modificările factorilor implicați în coagulare."
+          "why": "Serul diferă de plasmă prin absența fibrinogenului și prin modificările factorilor implicați în coagulare. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "C",
           "text": "conține gama globuline cu rol de anticorpi",
-          "why": "Imunoglobulinele rămân în ser după coagulare și îi conferă activitate de anticorpi."
+          "why": "Serul este descris ca sursă de anticorpi, iar gama globulinele sunt molecule de anticorpi. Caseta „De reținut” care spune că serul nu conține proteine intră în contradicție cu aceste informații; baremul păstrează varianta. Sursa: Sângele — Plasma și proteinele plasmatice; Sângele — Globulinele."
         },
         {
           "letter": "D",
           "text": "poate fi folosit pentru studii imunologice",
-          "why": "Serul permite identificarea și măsurarea anticorpilor și este utilizat în numeroase teste imunologice."
+          "why": "Manualul spune explicit că serul este folosit pentru studii imunologice și ca sursă de anticorpi pentru terapia imună. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "E",
           "text": "are în compoziția sa proteine sintetizate de plasmocite",
-          "why": "Plasmocitele produc imunoglobuline care se găsesc atât în plasmă, cât și în ser."
+          "why": "Plasmocitele produc anticorpi, iar serul este descris ca sursă de anticorpi. Această corelare susține varianta, deși caseta despre absența tuturor proteinelor din ser este neconcordantă cu textul. Sursa: Sângele — Plasma și proteinele plasmatice; Sângele — Limfocitele și monocitele."
         }
       ],
       "sourcePages": [
@@ -3213,27 +3213,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "bicarbonați",
-          "why": "Ionii bicarbonat sunt componente anorganice plasmatice, importante pentru echilibrul acido-bazic și transportul CO₂."
+          "why": "Ionii bicarbonat sunt componente anorganice plasmatice, importante pentru echilibrul acido-bazic și transportul CO₂. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "B",
           "text": "aminoacizi",
-          "why": "Aminoacizii se găsesc în plasmă, dar sunt compuși organici, deci nu satisfac cerința."
+          "why": "Aminoacizii se găsesc în plasmă, dar sunt compuși organici, deci nu satisfac cerința. Sursa: Sângele — Componentele majore ale sângelui, tabelul 14.1."
         },
         {
           "letter": "C",
           "text": "Ca²⁺ și fibrinogen",
-          "why": "Calciul ionic este anorganic, dar fibrinogenul este o proteină organică; perechea nu conține numai substanțe anorganice."
+          "why": "Calciul ionic este anorganic, dar fibrinogenul este o proteină organică; perechea nu conține numai substanțe anorganice. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "D",
           "text": "ioni Na⁺",
-          "why": "Sodiul ionic este un electrolit anorganic și principalul cation al lichidului extracelular."
+          "why": "Figura compoziției plasmei include ionul Na⁺ între componentele ionice. Sursa: Sângele — Compoziția sângelui, figura 14.1."
         },
         {
           "letter": "E",
           "text": "sulfați",
-          "why": "Ionii sulfat sunt anioni anorganici prezenți în lichidele organismului, inclusiv în plasmă."
+          "why": "Figura compoziției plasmei include explicit SO₄²⁻, ionul sulfat, între ionii plasmatici. Sursa: Sângele — Compoziția sângelui, figura 14.1."
         }
       ],
       "sourcePages": [
@@ -3257,27 +3257,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "compuși azotați de degradare",
-          "why": "Produși precum ureea sunt transportați prin sânge către organele de eliminare."
+          "why": "Produși precum ureea sunt transportați prin sânge către organele de eliminare. Sursa: Sângele — Componentele majore ale sângelui, tabelul 14.1."
         },
         {
           "letter": "B",
           "text": "gaze respiratorii",
-          "why": "Sângele transportă oxigen și dioxid de carbon, prin forme dizolvate, legate de proteine sau, pentru CO₂, sub formă de bicarbonat."
+          "why": "Sângele transportă oxigen și dioxid de carbon, prin forme dizolvate, legate de proteine sau, pentru CO₂, sub formă de bicarbonat. Sursa: Sângele — Componentele majore ale sângelui, tabelul 14.1; Sistemul respirator — Transportul gazelor respiratorii."
         },
         {
           "letter": "C",
           "text": "hormoni steroidieni și non-steroidieni",
-          "why": "Hormonii circulă în sânge fie legați de proteine transportoare, fie în fracțiune liberă, pentru a ajunge la țesuturile țintă."
+          "why": "Manualul enumeră hormonii între substanțele transportate de sânge și descrie proteine plasmatice care transportă hormoni. Sursa: Sângele — Plasma și proteinele plasmatice."
         },
         {
           "letter": "D",
           "text": "elemente figurate",
-          "why": "Elementele figurate circulă în sânge, dar sunt celule și fragmente celulare, nu categoria de substanțe chimice cerută de enunț."
+          "why": "Elementele figurate circulă în sânge, dar sunt celule și fragmente celulare, nu categoria de substanțe chimice cerută de enunț. Sursa: Sângele — Funcțiile sângelui."
         },
         {
           "letter": "E",
           "text": "eritropoietină",
-          "why": "Eritropoietina este un hormon transportat prin sânge de la organele producătoare către precursorii eritrocitari din măduva osoasă."
+          "why": "Eritropoietina este un hormon transportat prin sânge de la organele producătoare către precursorii eritrocitari din măduva osoasă. Sursa: Sângele — Eritropoieza și eritropoetina."
         }
       ],
       "sourcePages": [
@@ -3298,27 +3298,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "se formează în ficat și circulă spre splină prin vena portă",
-          "why": "Bilirubina formată prin degradarea hemului în macrofage, inclusiv în splină, ajunge la ficat; vena portă transportă sângele către ficat, nu din ficat spre splină."
+          "why": "Bilirubina formată prin degradarea hemului în macrofage, inclusiv în splină, ajunge la ficat; vena portă transportă sângele către ficat, nu din ficat spre splină. Sursa: Sângele — Distrugerea globulelor roșii; Sistemul cardiovascular — Sistemul port hepatic."
         },
         {
           "letter": "B",
           "text": "este un pigment verzui rezultat din descompunerea grupării hem",
-          "why": "Pigmentul verzui este biliverdina; bilirubina este galben-portocalie."
+          "why": "Pigmentul verzui este biliverdina; bilirubina este galben-portocalie. Sursa: Sângele — Distrugerea globulelor roșii."
         },
         {
           "letter": "C",
           "text": "este excretată de ficat în bilă",
-          "why": "Ficatul prelucrează bilirubina și elimină forma conjugată în bilă, care ajunge în intestin."
+          "why": "Bilirubina este transportată la ficat și excretată în bilă, potrivit textului. Sursa: Sângele — Distrugerea globulelor roșii."
         },
         {
           "letter": "D",
           "text": "este transformată în urobilinogen de bacteriile prezente în căile urinare",
-          "why": "Conversia bilirubinei în urobilinogen are loc prin activitatea bacteriilor intestinale, nu a celor din căile urinare."
+          "why": "Conversia bilirubinei în urobilinogen are loc prin activitatea bacteriilor intestinale, nu a celor din căile urinare. Sursa: Sângele — Distrugerea globulelor roșii."
         },
         {
           "letter": "E",
           "text": "este reabsorbită din urină și este excretată de intestinul gros, fiind responsabilă de culoarea caracteristică a materiilor fecale",
-          "why": "Circuitul este descris greșit: bilirubina ajunge în intestin prin bilă, este metabolizată bacterian, iar produși precum stercobilina contribuie la culoarea fecalelor; nu este reabsorbită din urină pentru acest scop."
+          "why": "Manualul descrie conversia intestinală a bilirubinei în urobilinogen, responsabil de culoarea fecalelor; o parte se reabsoarbe și ajunge la rinichi. Nu descrie reabsorbția bilirubinei din urină. Sursa: Sângele — Distrugerea globulelor roșii."
         }
       ],
       "sourcePages": [
@@ -3339,27 +3339,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "previn răspunsul imun prin fagocitoza microorganismelor",
-          "why": "Macrofagele contribuie la declanșarea și desfășurarea răspunsului imun prin fagocitoză și prezentarea antigenelor, nu îl previn în sensul enunțului."
+          "why": "Macrofagele contribuie la declanșarea și desfășurarea răspunsului imun prin fagocitoză și prezentarea antigenelor, nu îl previn în sensul enunțului. Sursa: Sângele — Limfocitele și monocitele."
         },
         {
           "letter": "B",
           "text": "sunt celule cu nucleu foarte mare, care rezultă prin fragmentarea megacariocitelor",
-          "why": "Fragmentarea megacariocitelor produce plachete anucleate, nu macrofage."
+          "why": "Fragmentarea megacariocitelor produce plachete anucleate, nu macrofage. Sursa: Sângele — Plachetele sanguine și hemostaza."
         },
         {
           "letter": "C",
           "text": "la nivelul nodulilor limfatici, prezintă limfocitelor anticorpii conținuți de microorganismele fagocitate",
-          "why": "Macrofagele prezintă antigene provenite din microorganisme, nu anticorpi conținuți de acestea."
+          "why": "Macrofagele prezintă antigene provenite din microorganisme, nu anticorpi conținuți de acestea. Sursa: Sângele — Limfocitele și monocitele."
         },
         {
           "letter": "D",
           "text": "se formează în țesuturi prin diferențierea unor agranulocite",
-          "why": "În schema lecției, monocitele, care sunt agranulocite, se diferențiază în macrofage după intrarea în țesuturi; aceasta nu exclude alte origini ale macrofagelor rezidente."
+          "why": "Monocitele sunt agranulocite și se transformă în țesuturi în celule fagocitare mari, numite macrofage. Sursa: Sângele — Limfocitele și monocitele."
         },
         {
           "letter": "E",
           "text": "sunt cele mai mici elemente figurate sanguine",
-          "why": "Macrofagele sunt celule fagocitare mari din țesuturi; cele mai mici elemente figurate circulante sunt plachetele."
+          "why": "Macrofagele sunt celule fagocitare mari din țesuturi; cele mai mici elemente figurate circulante sunt plachetele. Sursa: Sângele — Plachetele sanguine și hemostaza; Sângele — Limfocitele și monocitele."
         }
       ],
       "sourcePages": [
@@ -3382,27 +3382,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "plachetele sanguine nu sunt celule",
-          "why": "Afirmația descrie corect structura plachetelor, care sunt fragmente citoplasmatice, dar nu exprimă o funcție; de aceea este exclusă de baremul acestei cerințe."
+          "why": "Afirmația descrie corect structura plachetelor, care sunt fragmente citoplasmatice, dar nu exprimă o funcție; de aceea este exclusă de baremul acestei cerințe. Sursa: Sângele — Plachetele sanguine și hemostaza."
         },
         {
           "letter": "B",
           "text": "hematiile transportă gaze respiratorii",
-          "why": "Hematiile transportă oxigen prin hemoglobină și participă și la transportul dioxidului de carbon."
+          "why": "Hematiile transportă oxigen prin hemoglobină și participă și la transportul dioxidului de carbon. Sursa: Sângele — Hemoglobina."
         },
         {
           "letter": "C",
           "text": "limfocitele au un rol posibil în reacțiile alergice, distrugând celulele străine prin fagocitoză",
-          "why": "Limfocitele pot participa la răspunsuri alergice, dar fagocitoza nu este mecanismul lor caracteristic de distrugere; acest rol este asociat în principal neutrofilelor și macrofagelor."
+          "why": "Manualul atribuie limfocitelor producerea de anticorpi și distrugerea microorganismelor, iar fagocitoza este descrisă pentru neutrofile și monocite/macrofage. Sursa: Sângele — Limfocitele și monocitele."
         },
         {
           "letter": "D",
           "text": "limfocitele T și B sunt celule cheie ale sistemului imun",
-          "why": "Limfocitele B susțin imunitatea umorală, iar limfocitele T coordonează răspunsul și participă la imunitatea celulară."
+          "why": "Limfocitele B susțin imunitatea umorală, iar limfocitele T coordonează răspunsul și participă la imunitatea celulară. Sursa: Sângele — Limfocitele și monocitele."
         },
         {
           "letter": "E",
           "text": "neutrofilele se adună rapid la locul unei infecții",
-          "why": "Neutrofilele sunt recrutate rapid în focarele infecțioase, unde fagocitează microorganisme și contribuie la răspunsul inflamator."
+          "why": "Manualul precizează că neutrofilele se adună rapid la locul infecției și că funcția lor principală este fagocitoza. Sursa: Sângele — Tipurile de globule albe."
         }
       ],
       "sourcePages": [

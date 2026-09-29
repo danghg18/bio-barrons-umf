@@ -23,27 +23,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "are ca arteră principală aorta, cu emergența în ventriculul stâng",
-          "why": "Aorta pornește din ventriculul stâng și distribuie sângele în circulația sistemică."
+          "why": "Aorta pornește din ventriculul stâng și distribuie sângele în circulația sistemică. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "B",
           "text": "ventriculul stâng pompează sângele bogat în oxigen în aortă",
-          "why": "Ventriculul stâng ejectează în aortă sângele oxigenat revenit de la plămâni."
+          "why": "Ventriculul stâng ejectează în aortă sângele oxigenat revenit de la plămâni. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "C",
           "text": "sângele bogat în dioxid de carbon se întoarce la inimă prin venele cave",
-          "why": "Venele cave readuc sângele sistemic, relativ bogat în CO₂, în atriul drept."
+          "why": "Venele cave readuc sângele sistemic, relativ bogat în CO₂, în atriul drept. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "D",
           "text": "sângele se întoarce la inimă în atriul drept",
-          "why": "Atriul drept reprezintă capătul venos al circulației sistemice."
+          "why": "Atriul drept reprezintă capătul venos al circulației sistemice. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "E",
           "text": "asigură eliminarea dioxidului de carbon din organism",
-          "why": "Eliminarea CO₂ în aerul alveolar se realizează în circulația pulmonară; circulația sistemică îl preia din țesuturi."
+          "why": "Eliminarea CO₂ în aerul alveolar se realizează în circulația pulmonară; circulația sistemică îl preia din țesuturi. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         }
       ],
       "sourcePages": [
@@ -66,27 +66,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "transportă sângele pornind din ventriculul drept",
-          "why": "Circuitul pulmonar începe în ventriculul drept, prin trunchiul pulmonar."
+          "why": "Circuitul pulmonar începe în ventriculul drept, prin trunchiul pulmonar. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "B",
           "text": "ventriculul drept pompează sângele bogat în oxigen în arterele pulmonare",
-          "why": "Ventriculul drept pompează sânge sărac în oxigen, nu sânge oxigenat."
+          "why": "Ventriculul drept pompează sânge sărac în oxigen, nu sânge oxigenat. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "C",
           "text": "sângele bogat în dioxid de carbon se întoarce la inimă prin venele pulmonare",
-          "why": "Venele pulmonare readuc sânge bogat în oxigen, după schimburile alveolare."
+          "why": "Venele pulmonare readuc sânge bogat în oxigen, după schimburile alveolare. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "D",
           "text": "sângele se reîntoarce la inimă în atriul stâng",
-          "why": "Cele patru vene pulmonare se deschid în atriul stâng."
+          "why": "Cele patru vene pulmonare se deschid în atriul stâng. Sursa: Sistemul cardiovascular — Figura 15.2; Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "E",
           "text": "asigură oxigenarea sângelui din capilarele pulmonare",
-          "why": "În capilarele pulmonare sângele primește oxigen din alveole și cedează CO₂."
+          "why": "În capilarele pulmonare sângele primește oxigen din alveole și cedează CO₂. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         }
       ],
       "sourcePages": [
@@ -108,27 +108,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "se formează prin ramificarea venelor iliace comune",
-          "why": "Vena cavă inferioară rezultă din unirea venelor iliace comune, nu din ramificarea lor."
+          "why": "Vena cavă inferioară rezultă din unirea venelor iliace comune, nu din ramificarea lor. Sursa: Sistemul cardiovascular — Venele principale, figura 15.10."
         },
         {
           "letter": "B",
           "text": "are ca afluent vena portă",
-          "why": "Sângele portal traversează mai întâi ficatul; venele hepatice, nu vena portă, se varsă direct în cavă."
+          "why": "Sângele portal traversează mai întâi ficatul; venele hepatice, nu vena portă, se varsă direct în cavă. Sursa: Sistemul cardiovascular — Circulația pulmonară, cerebrală și portă."
         },
         {
           "letter": "C",
           "text": "aduce sângele din regiunea inferioară a corpului",
-          "why": "Vena cavă inferioară drenează regiunile subdiafragmatice ale corpului."
+          "why": "Vena cavă inferioară drenează regiunile subdiafragmatice ale corpului. Sursa: Sistemul cardiovascular — Cavitățile și vasele inimii."
         },
         {
           "letter": "D",
           "text": "se varsă în atriul stâng",
-          "why": "Vena cavă inferioară se deschide în atriul drept."
+          "why": "Vena cavă inferioară se deschide în atriul drept. Sursa: Sistemul cardiovascular — Cavitățile și vasele inimii."
         },
         {
           "letter": "E",
           "text": "are o tunică externă mai groasă și o tunică medie mai subțire decât aorta",
-          "why": "În comparația histologică din manual, venele mari au o medie mai subțire și o adventice mai dezvoltată decât arterele; aorta are o medie elastică foarte groasă, iar cava o adventice proeminentă. Grosimea exactă a fiecărei tunici variază cu segmentul vascular."
+          "why": "Manualul compară venele cu arterele: tunica externă venoasă este mai groasă, iar tunica medie mai subțire. Varianta aplică această comparație cavei inferioare și aortei. Sursa: Sistemul cardiovascular — Venele și valvele venoase."
         }
       ],
       "sourcePages": [
@@ -152,27 +152,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "reprezintă alternanța unei sistole și a unei diastole cardiace",
-          "why": "Ciclul cardiac cuprinde fazele de contracție și relaxare ale inimii."
+          "why": "Ciclul cardiac cuprinde fazele de contracție și relaxare ale inimii. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "B",
           "text": "când presiunea sângelui în atrii o depășește pe cea din ventricule, sângele curge în ventricule",
-          "why": "Gradientul de presiune atriu–ventricul permite umplerea ventriculară prin valvele atrioventriculare deschise."
+          "why": "Gradientul de presiune atriu–ventricul permite umplerea ventriculară prin valvele atrioventriculare deschise. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "C",
           "text": "în timpul sistolei ventriculare sângele este pompat în aortă și trunchiul pulmonar",
-          "why": "Ejecția ventriculară trimite sângele în aortă și în trunchiul pulmonar."
+          "why": "Ejecția ventriculară trimite sângele în aortă și în trunchiul pulmonar. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "D",
           "text": "se asociază cu zgomotele cardiace",
-          "why": "Închiderea valvelor participă la producerea zgomotelor cardiace."
+          "why": "Închiderea valvelor participă la producerea zgomotelor cardiace. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "E",
           "text": "în timpul sistolei atriale, ventriculele sunt în sistolă",
-          "why": "În sistola atrială ventriculele sunt în diastolă și își completează umplerea."
+          "why": "În sistola atrială ventriculele sunt în diastolă și își completează umplerea. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac; Sistemul cardiovascular — Figura 15.7."
         }
       ],
       "sourcePages": [
@@ -195,27 +195,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "valva tricuspidă: din atriul drept spre ventriculul drept",
-          "why": "Tricuspida este valva atrioventriculară dreaptă."
+          "why": "Tricuspida este valva atrioventriculară dreaptă. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "B",
           "text": "valva bicuspidă: din atriul drept spre ventriculul drept",
-          "why": "Între atriul drept și ventriculul drept se află tricuspida, nu bicuspida."
+          "why": "Între atriul drept și ventriculul drept se află tricuspida, nu bicuspida. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "C",
           "text": "valva tricuspidă: din atriul stâng spre ventriculul stâng",
-          "why": "Între atriul stâng și ventriculul stâng se află mitrala, nu tricuspida."
+          "why": "Între atriul stâng și ventriculul stâng se află mitrala, nu tricuspida. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "D",
           "text": "valva bicuspidă: din atriul stâng spre ventriculul stâng",
-          "why": "Bicuspida, numită și mitrală, permite trecerea sângelui din atriul stâng în ventriculul stâng."
+          "why": "Bicuspida, numită și mitrală, permite trecerea sângelui din atriul stâng în ventriculul stâng. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "E",
           "text": "dinspre atrii spre ventricule",
-          "why": "Sensul descris este cel al fluxului prin valvele atrioventriculare; valvele semilunare permit fluxul din ventricule spre artere."
+          "why": "Sensul descris este cel al fluxului prin valvele atrioventriculare; valvele semilunare permit fluxul din ventricule spre artere. Sursa: Sistemul cardiovascular — Valvele cardiace."
         }
       ],
       "sourcePages": [
@@ -238,27 +238,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "asigură circulația unidirecțională a sângelui prin inimă",
-          "why": "Valvele se deschid și se închid în funcție de presiuni, orientând fluxul într-un singur sens."
+          "why": "Valvele se deschid și se închid în funcție de presiuni, orientând fluxul într-un singur sens. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "B",
           "text": "asigură contracția ritmică a atriilor și ventriculelor",
-          "why": "Ritmul este inițiat de țesutul excitoconductor, nu de valve."
+          "why": "Ritmul este inițiat de țesutul excitoconductor, nu de valve. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         },
         {
           "letter": "C",
           "text": "participă la realizarea zgomotelor inimii",
-          "why": "Închiderea valvelor atrioventriculare și semilunare contribuie la primul, respectiv al doilea zgomot cardiac."
+          "why": "Închiderea valvelor atrioventriculare și semilunare contribuie la primul, respectiv al doilea zgomot cardiac. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "D",
           "text": "influențează presiunea arterială",
-          "why": "Baremul exclude D, însă funcția valvelor influențează hemodinamica și presiunile arteriale. De exemplu, insuficiența aortică modifică scăderea presiunii aortice în diastolă. Afirmația largă nu poate fi declarată fiziologic falsă doar fiindcă valvele nu sunt principalul mecanism de reglare a tensiunii."
+          "why": "Manualul atribuie valvelor sensul unic al fluxului și prevenirea refluxului, iar presiunea arterială o leagă de debit și rezistență. Nu precizează influența valvelor asupra presiunii arteriale; baremul exclude formularea largă, fără suport suficient pentru o negare absolută. Sursa: Sistemul cardiovascular — Valvele cardiace; Sistemul cardiovascular — Presiunea arterială și pulsul."
         },
         {
           "letter": "E",
           "text": "previn refluxul sângelui",
-          "why": "Închiderea valvelor împiedică întoarcerea sângelui în compartimentul din care a fost ejectat."
+          "why": "Închiderea valvelor împiedică întoarcerea sângelui în compartimentul din care a fost ejectat. Sursa: Sistemul cardiovascular — Valvele cardiace."
         }
       ],
       "sourcePages": [
@@ -282,27 +282,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "este situat aproape de venele cave",
-          "why": "Sinusul coronarian se deschide în atriul drept, lângă orificiul venei cave inferioare; acesta este raportul precis din spatele formulării generale despre venele cave."
+          "why": "Legenda circulației coronariene precizează că sinusul este aproape de venele cave și se golește împreună cu acestea în atriul drept. Sursa: Sistemul cardiovascular — Circulația coronariană."
         },
         {
           "letter": "B",
           "text": "se golește în atriul stâng",
-          "why": "Sinusul coronarian se golește în atriul drept."
+          "why": "Sinusul coronarian se golește în atriul drept. Sursa: Sistemul cardiovascular — Circulația coronariană."
         },
         {
           "letter": "C",
           "text": "drenează sângele venos al miocardului",
-          "why": "Sinusul colectează sângele venos adus de venele cardiace din miocard."
+          "why": "Sinusul colectează sângele venos adus de venele cardiace din miocard. Sursa: Sistemul cardiovascular — Circulația coronariană."
         },
         {
           "letter": "D",
           "text": "trimite sângele în atriul drept",
-          "why": "Orificiul sinusului coronarian se află în atriul drept."
+          "why": "Orificiul sinusului coronarian se află în atriul drept. Sursa: Sistemul cardiovascular — Circulația coronariană."
         },
         {
           "letter": "E",
           "text": "drenează sângele sărac în oxigen din venele cardiace",
-          "why": "Venele cardiace transportă sângele după ce miocardul a extras oxigenul."
+          "why": "Venele cardiace transportă sângele după ce miocardul a extras oxigenul. Sursa: Sistemul cardiovascular — Circulația coronariană."
         }
       ],
       "sourcePages": [
@@ -326,27 +326,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "expulzează în artera aortă și arterele pulmonare 70 ml sânge",
-          "why": "Valoarea didactică de 70 ml reprezintă volumul bătaie ejectat de fiecare ventricul în circuitul său, nu 70 ml însumați pentru ambele ventricule."
+          "why": "Valoarea didactică de 70 ml reprezintă volumul bătaie ejectat de fiecare ventricul în circuitul său, nu 70 ml însumați pentru ambele ventricule. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "B",
           "text": "sângele este pompat din ventriculul stâng în aortă",
-          "why": "Ventriculul stâng ejectează sângele prin valva aortică în aortă."
+          "why": "Ventriculul stâng ejectează sângele prin valva aortică în aortă. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "C",
           "text": "reprezintă contracția ventriculelor",
-          "why": "Sistola desemnează contracția ventriculară."
+          "why": "Sistola desemnează contracția ventriculară. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "D",
           "text": "începutul ei corespunde începutului diastolei atriale",
-          "why": "În succesiunea didactică, sistola ventriculară urmează sistolei atriale, iar atriile intră în relaxare."
+          "why": "În succesiunea didactică, sistola ventriculară urmează sistolei atriale, iar atriile intră în relaxare. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "E",
           "text": "sângele curge din atrii în ventricule",
-          "why": "În sistola ventriculară valvele atrioventriculare sunt închise; umplerea ventriculară se produce în diastolă."
+          "why": "În sistola ventriculară valvele atrioventriculare sunt închise; umplerea ventriculară se produce în diastolă. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac; Sistemul cardiovascular — Valvele cardiace."
         }
       ],
       "sourcePages": [
@@ -369,27 +369,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "este identic, din punct de vedere structural, cu mușchiul striat scheletic",
-          "why": "Celulele cardiace sunt mai scurte, ramificate și conectate prin discuri intercalare; nu sunt structural identice fibrelor scheletice."
+          "why": "Celulele cardiace sunt mai scurte, ramificate și conectate prin discuri intercalare; nu sunt structural identice fibrelor scheletice. Sursa: Sistemul cardiovascular — Mușchiul cardiac."
         },
         {
           "letter": "B",
           "text": "are o activitate metabolică mai intensă decât mușchiul striat scheletic",
-          "why": "Activitatea continuă a miocardului necesită un metabolism oxidativ intens."
+          "why": "Manualul spune că celulele cardiace necesită mai multă energie decât cele scheletice deoarece activitatea lor metabolică este mai intensă. Sursa: Sistemul cardiovascular — Mușchiul cardiac."
         },
         {
           "letter": "C",
           "text": "este controlat voluntar și involuntar",
-          "why": "Miocardul funcționează involuntar; nu are comandă voluntară ca mușchiul scheletic."
+          "why": "Miocardul funcționează involuntar; nu are comandă voluntară ca mușchiul scheletic. Sursa: Țesutul muscular — Comparația tipurilor musculare, tabelul 8.1."
         },
         {
           "letter": "D",
           "text": "contracția celulelor miocardice este inițiată de impulsuri venite de la sistemul nervos",
-          "why": "Impulsul normal pornește din țesutul excitoconductor; sistemul nervos îi modulează ritmul și forța."
+          "why": "Impulsul normal pornește din țesutul excitoconductor; sistemul nervos îi modulează ritmul și forța. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         },
         {
           "letter": "E",
           "text": "este alcătuit din celule miocardice ramificate",
-          "why": "Ramificarea celulelor contribuie la rețeaua funcțională a miocardului."
+          "why": "Ramificarea celulelor contribuie la rețeaua funcțională a miocardului. Sursa: Sistemul cardiovascular — Mușchiul cardiac."
         }
       ],
       "sourcePages": [
@@ -413,27 +413,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "debitul cardiac",
-          "why": "Presiunea arterială medie depinde de debitul cardiac și de rezistența vasculară."
+          "why": "Presiunea arterială medie depinde de debitul cardiac și de rezistența vasculară. Sursa: Sistemul cardiovascular — Presiunea arterială și pulsul."
         },
         {
           "letter": "B",
           "text": "presiunea parțială a oxigenului în sânge",
-          "why": "Baremul exclude B, însă variațiile oxigenării pot modifica presiunea arterială prin chemoreflexe și efecte vasculare. Enunțul nu limitează factorii la termenii relației debit cardiac × rezistență vasculară, deci excluderea nu dovedește absența unei influențe a O₂."
+          "why": "Manualul enumeră debitul cardiac și rezistența la flux ca determinanți ai presiunii arteriale; lecția respiratorie leagă oxigenul de reglarea respirației. Nu oferă o relație pentru variația presiunii arteriale cu presiunea parțială a O₂. Sursa: Sistemul cardiovascular — Presiunea arterială și pulsul; Sistemul respirator — Controlul respirației."
         },
         {
           "letter": "C",
           "text": "rezistența la fluxul sanguin",
-          "why": "Creșterea rezistenței la flux poate crește presiunea necesară pentru același debit."
+          "why": "Creșterea rezistenței la flux poate crește presiunea necesară pentru același debit. Sursa: Sistemul cardiovascular — Presiunea arterială și pulsul."
         },
         {
           "letter": "D",
           "text": "lungimea vaselor de sânge",
-          "why": "Rezistența vasculară crește cu lungimea vasului, la aceleași valori ale celorlalți factori."
+          "why": "Rezistența vasculară crește cu lungimea vasului, la aceleași valori ale celorlalți factori. Sursa: Sistemul cardiovascular — Presiunea arterială și pulsul."
         },
         {
           "letter": "E",
           "text": "vâscozitatea sângelui",
-          "why": "Vâscozitatea mai mare crește rezistența la curgerea sângelui."
+          "why": "Vâscozitatea mai mare crește rezistența la curgerea sângelui. Sursa: Sistemul cardiovascular — Presiunea arterială și pulsul."
         }
       ],
       "sourcePages": [
@@ -456,27 +456,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "atriile sunt cavități de umplere situate la baza inimii",
-          "why": "Atriile sunt cavitățile superioare de primire a sângelui, situate spre baza inimii."
+          "why": "Atriile sunt cavitățile superioare de primire a sângelui, situate spre baza inimii. Sursa: Sistemul cardiovascular — Cavitățile și vasele inimii."
         },
         {
           "letter": "B",
           "text": "fiecare atriu are o auriculă care crește capacitatea atrială",
-          "why": "Auriculele sunt prelungiri ale atriilor care măresc capacitatea acestora."
+          "why": "Auriculele sunt prelungiri ale atriilor care măresc capacitatea acestora. Sursa: Sistemul cardiovascular — Cavitățile și vasele inimii; Sistemul cardiovascular — Figura 15.2."
         },
         {
           "letter": "C",
           "text": "între atrii se află septul interatrial, mai gros decât cel interventricular",
-          "why": "Septul interventricular este mai gros decât septul interatrial."
+          "why": "Septul interventricular este mai gros decât septul interatrial. Sursa: Sistemul cardiovascular — Figura 15.2."
         },
         {
           "letter": "D",
           "text": "ventriculele sunt situate în partea superioară a inimii",
-          "why": "Ventriculele sunt situate inferior față de atrii."
+          "why": "Ventriculele sunt situate inferior față de atrii. Sursa: Sistemul cardiovascular — Cavitățile și vasele inimii."
         },
         {
           "letter": "E",
           "text": "ventriculele sunt cavități ale inimii cu rol de pompă",
-          "why": "Ventriculele produc ejecția în circulația pulmonară și în cea sistemică."
+          "why": "Ventriculele produc ejecția în circulația pulmonară și în cea sistemică. Sursa: Sistemul cardiovascular — Cavitățile și vasele inimii."
         }
       ],
       "sourcePages": [
@@ -498,27 +498,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "o valvă semilunară",
-          "why": "Valvele semilunare sunt la originea aortei și a trunchiului pulmonar."
+          "why": "Valvele semilunare sunt la originea aortei și a trunchiului pulmonar. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "B",
           "text": "valva mitrală",
-          "why": "Valva atrioventriculară stângă este valva mitrală sau bicuspidă."
+          "why": "Valva atrioventriculară stângă este valva mitrală sau bicuspidă. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "C",
           "text": "o valvă care previne refluxul sângelui în atriul stâng când ventriculul stâng se contractă",
-          "why": "Închiderea mitralei în sistola ventriculară previne refluxul în atriul stâng."
+          "why": "Închiderea mitralei în sistola ventriculară previne refluxul în atriul stâng. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "D",
           "text": "o valvă ancorată de mușchii papilari ai peretelui atrial",
-          "why": "Mușchii papilari se află în pereții ventriculelor, nu în peretele atrial."
+          "why": "Mușchii papilari se află în pereții ventriculelor, nu în peretele atrial. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "E",
           "text": "o valvă care are trei cuspisuri",
-          "why": "Valva mitrală are două cuspisuri; tricuspida are trei."
+          "why": "Valva mitrală are două cuspisuri; tricuspida are trei. Sursa: Sistemul cardiovascular — Valvele cardiace."
         }
       ],
       "sourcePages": [
@@ -542,27 +542,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "se realizează prin artere coronare și vene cardiace",
-          "why": "Arterele coronare alimentează miocardul, iar venele cardiace îi drenează sângele."
+          "why": "Arterele coronare alimentează miocardul, iar venele cardiace îi drenează sângele. Sursa: Sistemul cardiovascular — Circulația coronariană."
         },
         {
           "letter": "B",
           "text": "sinusul coronarian se află lângă venele pulmonare",
-          "why": "Baremul exclude B. Sinusul coronarian parcurge șanțul atrioventricular posterior și se deschide în atriul drept lângă cava inferioară. Totuși, „lângă venele pulmonare” este un reper imprecis: regiunea sinusului are și raporturi cu atriul stâng și istmul dintre vena pulmonară inferioară stângă și inelul mitral. Nu rezultă că orice apropiere de venele pulmonare ar fi imposibilă."
+          "why": "Legenda manualului folosește reperul „aproape de venele cave”, iar sinusul se varsă în atriul drept. Nu precizează o comparație de distanță cu venele pulmonare; termenul „lângă” rămâne imprecis. Sursa: Sistemul cardiovascular — Circulația coronariană."
         },
         {
           "letter": "C",
           "text": "artera coronară dreaptă are ca ramură artera interventriculară posterioară",
-          "why": "În tiparul de dominanță dreaptă ilustrat, artera interventriculară posterioară provine din coronara dreaptă; există și variante anatomice."
+          "why": "Figura circulației coronariene arată artera interventriculară posterioară ca ramură a coronarei drepte. Sursa: Sistemul cardiovascular — Figura 15.5."
         },
         {
           "letter": "D",
           "text": "obstrucția prelungită a arterelor coronare prin cheaguri de sânge poate produce infarctul miocardic",
-          "why": "Ocluzia prelungită întrerupe aportul de oxigen și poate produce necroză miocardică."
+          "why": "Ocluzia prelungită întrerupe aportul de oxigen și poate produce necroză miocardică. Sursa: Sistemul cardiovascular — Circulația coronariană."
         },
         {
           "letter": "E",
           "text": "vena cardiacă mare este afluent al sinusului coronarian",
-          "why": "Vena cardiacă mare se continuă în sinusul coronarian și îi aduce sânge."
+          "why": "Vena cardiacă mare se continuă în sinusul coronarian și îi aduce sânge. Sursa: Sistemul cardiovascular — Figura 15.5."
         }
       ],
       "sourcePages": [
@@ -586,27 +586,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "are originea în ventriculul stâng",
-          "why": "Aorta este vasul de ejecție al ventriculului stâng."
+          "why": "Aorta este vasul de ejecție al ventriculului stâng. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "B",
           "text": "transportă sânge oxigenat, arterial",
-          "why": "În circulația postnatală normală, aorta transportă sânge oxigenat."
+          "why": "Aorta transportă spre organism sângele bogat în oxigen pompat de ventriculul stâng. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "C",
           "text": "prezintă, la originea din ventriculul stâng, valva semilunară",
-          "why": "La originea aortei se află valva aortică, de tip semilunar."
+          "why": "La originea aortei se află valva aortică, de tip semilunar. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "D",
           "text": "are ca afluenți direcți arterele coronare",
-          "why": "Arterele coronare sunt ramuri ale aortei; nu sunt afluenți care aduc sânge în ea."
+          "why": "Arterele coronare sunt ramuri ale aortei; nu sunt afluenți care aduc sânge în ea. Sursa: Sistemul cardiovascular — Vasele circulației sistemice."
         },
         {
           "letter": "E",
           "text": "transportă sânge oxigenat adus la inimă de venele pulmonare",
-          "why": "Sângele ajunge din venele pulmonare în atriul stâng, apoi în ventriculul stâng și în aortă."
+          "why": "Sângele ajunge din venele pulmonare în atriul stâng, apoi în ventriculul stâng și în aortă. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         }
       ],
       "sourcePages": [
@@ -630,27 +630,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "preced arteriolele și succed venulele",
-          "why": "Ordinea obișnuită a fluxului este arteriole → capilare → venule."
+          "why": "Ordinea obișnuită a fluxului este arteriole → capilare → venule. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "B",
           "text": "prezintă un singur strat de epiteliu pavimentos",
-          "why": "Peretele capilar include endoteliul, un epiteliu simplu pavimentos, sprijinit pe o membrană bazală."
+          "why": "Peretele capilar include endoteliul, un epiteliu simplu pavimentos, sprijinit pe o membrană bazală. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "C",
           "text": "la acest nivel se realizează schimburile de nutrienți, gaze și reziduuri între sânge și celulele din țesuturi",
-          "why": "Peretele subțire permite schimburile dintre sânge și lichidul interstițial."
+          "why": "Peretele subțire permite schimburile dintre sânge și lichidul interstițial. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "D",
           "text": "se continuă cu venulele",
-          "why": "Capilarele se reunesc în venule în patul vascular obișnuit."
+          "why": "Capilarele se reunesc în venule în patul vascular obișnuit. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "E",
           "text": "leagă arteriolele de venule",
-          "why": "În schema generală a microcirculației, capilarele leagă partea arteriolară de cea venulară."
+          "why": "În schema generală a microcirculației, capilarele leagă partea arteriolară de cea venulară. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         }
       ],
       "sourcePages": [
@@ -672,27 +672,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "pericardul parietal este considerat stratul extern al țesutului cardiac",
-          "why": "Stratul extern al peretelui cardiac este epicardul, adică pericardul visceral."
+          "why": "Stratul extern al peretelui cardiac este epicardul, adică pericardul visceral. Sursa: Sistemul cardiovascular — Poziția și structura inimii."
         },
         {
           "letter": "B",
           "text": "la baza inimii aorta ascendentă este situată la dreapta trunchiului pulmonar",
-          "why": "La baza inimii, aorta ascendentă se găsește la dreapta trunchiului pulmonar."
+          "why": "La baza inimii, aorta ascendentă se găsește la dreapta trunchiului pulmonar. Sursa: Sistemul cardiovascular — Figura 15.2."
         },
         {
           "letter": "C",
           "text": "endocardul este alcătuit dintr-un endoteliu ce acoperă un strat gros de țesut conjunctiv",
-          "why": "Endocardul are endoteliu și țesut conjunctiv subțire, nu un strat conjunctiv gros."
+          "why": "Endocardul are endoteliu și țesut conjunctiv subțire, nu un strat conjunctiv gros. Sursa: Sistemul cardiovascular — Poziția și structura inimii."
         },
         {
           "letter": "D",
           "text": "valva tricuspidă se află între atriul drept și ventriculul drept",
-          "why": "Tricuspida separă cavitățile drepte ale inimii."
+          "why": "Tricuspida separă cavitățile drepte ale inimii. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "E",
           "text": "nodul sinoatrial se află în peretele superior al atriului drept, în vecinătatea locului de deschidere al venei cave inferioare",
-          "why": "Nodul sinoatrial se află lângă deschiderea venei cave superioare, nu a celei inferioare."
+          "why": "Nodul sinoatrial se află lângă deschiderea venei cave superioare, nu a celei inferioare. Sursa: Sistemul cardiovascular — Figura 15.6."
         }
       ],
       "sourcePages": [
@@ -715,27 +715,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "în dreapta aortei ascendente se află vena cavă superioară",
-          "why": "Vena cavă superioară este situată la dreapta aortei ascendente."
+          "why": "Vena cavă superioară este situată la dreapta aortei ascendente. Sursa: Sistemul cardiovascular — Figura 15.2."
         },
         {
           "letter": "B",
           "text": "nodul atrioventricular se află în septul interventricular",
-          "why": "Nodul atrioventricular este în regiunea inferioară a septului interatrial, nu în septul interventricular."
+          "why": "Nodul atrioventricular este în regiunea inferioară a septului interatrial, nu în septul interventricular. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         },
         {
           "letter": "C",
           "text": "arterele coronare converg spre sinusul coronarian",
-          "why": "Venele cardiace converg spre sinusul coronarian; arterele coronare pornesc din aortă."
+          "why": "Venele cardiace converg spre sinusul coronarian; arterele coronare pornesc din aortă. Sursa: Sistemul cardiovascular — Circulația coronariană."
         },
         {
           "letter": "D",
           "text": "arcul aortic trece peste artera pulmonară stângă",
-          "why": "Neconcordanță cu baremul: arcul aortic trece superior de artera pulmonară stângă, astfel că afirmația este anatomic susținută, deși cheia AE o exclude."
+          "why": "Neconcordanță cu baremul: figura inimii arată arcul aortic superior arterei pulmonare stângi. Afirmația este susținută de reprezentarea manualului, deși cheia o exclude. Sursa: Sistemul cardiovascular — Figura 15.2."
         },
         {
           "letter": "E",
           "text": "prin umplerea cu sânge a auriculelor crește capacitatea atrială",
-          "why": "Auriculele sunt prelungiri care măresc capacitatea de umplere a atriilor."
+          "why": "Auriculele sunt prelungiri care măresc capacitatea de umplere a atriilor. Sursa: Sistemul cardiovascular — Cavitățile și vasele inimii."
         }
       ],
       "sourcePages": [
@@ -759,27 +759,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "vena cardiacă mică este în raport cu artera coronară dreaptă",
-          "why": "Vena cardiacă mică însoțește vasele din teritoriul coronarei drepte."
+          "why": "Vena cardiacă mică însoțește vasele din teritoriul coronarei drepte. Sursa: Sistemul cardiovascular — Figura 15.5."
         },
         {
           "letter": "B",
           "text": "vena cardiacă mare este în raport cu ramura circumflexă",
-          "why": "Vena cardiacă mare ajunge în șanțul coronar stâng, în raport cu ramura circumflexă."
+          "why": "Vena cardiacă mare ajunge în șanțul coronar stâng, în raport cu ramura circumflexă. Sursa: Sistemul cardiovascular — Figura 15.5."
         },
         {
           "letter": "C",
           "text": "vena cardiacă mijlocie este în raport cu artera interventriculară posterioară",
-          "why": "Vena cardiacă mijlocie parcurge șanțul interventricular posterior alături de artera omonimă."
+          "why": "Vena cardiacă mijlocie parcurge șanțul interventricular posterior alături de artera omonimă. Sursa: Sistemul cardiovascular — Figura 15.5."
         },
         {
           "letter": "D",
           "text": "vena cardiacă mică este în raport cu artera coronară stângă",
-          "why": "Raportul caracteristic al venei cardiace mici este cu coronara dreaptă, nu cu cea stângă."
+          "why": "Raportul caracteristic al venei cardiace mici este cu coronara dreaptă, nu cu cea stângă. Sursa: Sistemul cardiovascular — Figura 15.5."
         },
         {
           "letter": "E",
           "text": "vena cardiacă mijlocie se deschide în sinusul coronarian în apropierea locului în care acesta se deschide în atriul drept",
-          "why": "Vena cardiacă mijlocie se varsă în porțiunea terminală a sinusului coronarian, aproape de atriul drept."
+          "why": "Vena cardiacă mijlocie se varsă în porțiunea terminală a sinusului coronarian, aproape de atriul drept. Sursa: Sistemul cardiovascular — Figura 15.5."
         }
       ],
       "sourcePages": [
@@ -800,27 +800,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "conține fibre musculare care, comparativ cu cele striate de tip scheletic, sunt mai lungi și ramificate",
-          "why": "Cardiomiocitele sunt mai scurte și ramificate, nu mai lungi decât fibrele scheletice."
+          "why": "Cardiomiocitele sunt mai scurte și ramificate, nu mai lungi decât fibrele scheletice. Sursa: Sistemul cardiovascular — Mușchiul cardiac."
         },
         {
           "letter": "B",
           "text": "este alcătuit din celule musculare ce sunt interconectate prin fibre fine de țesut conjunctiv aranjate într-o rețea",
-          "why": "Rețeaua fină de țesut conjunctiv susține și leagă structural celulele miocardice, conform descrierii lecției."
+          "why": "Rețeaua fină de țesut conjunctiv susține și leagă structural celulele miocardice, conform descrierii lecției. Sursa: Sistemul cardiovascular — Poziția și structura inimii."
         },
         {
           "letter": "C",
           "text": "se contractă ca urmare a impulsurilor inițiate de sistemul nervos vegetativ",
-          "why": "Automatismul pornește din celulele cardiace specializate; inervația vegetativă îl modulează."
+          "why": "Automatismul pornește din celulele cardiace specializate; inervația vegetativă îl modulează. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         },
         {
           "letter": "D",
           "text": "prezintă discuri intercalare între celulele musculare cardiace ce conțin și desmozomi care permit citoplasmei unei fibre cardiace să comunice cu cea vecină",
-          "why": "Comunicarea citoplasmatică este asigurată de joncțiunile gap. Desmozomii realizează legături mecanice."
+          "why": "Comunicarea citoplasmatică este asigurată de joncțiunile gap. Desmozomii realizează legături mecanice. Sursa: Sistemul cardiovascular — Mușchiul cardiac."
         },
         {
           "letter": "E",
           "text": "include fibrele Purkinje, care se continuă direct cu fasciculul His",
-          "why": "Fibrele Purkinje sunt cardiomiocite specializate și aparțin miocardului. Traseul de conducere este fascicul His → ramuri dreaptă și stângă → rețea Purkinje; formularea „direct” nu distinge aceste ramuri intermediare. Baremul exclude E, fără să nege apartenența fibrelor Purkinje la țesutul cardiac."
+          "why": "Traseul descris este nod AV → fascicul His → ramuri dreaptă și stângă → fibre Purkinje. Baremul exclude legătura numită „directă”, care omite ramurile intermediare. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         }
       ],
       "sourcePages": [
@@ -843,27 +843,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "în timpul sistolei ventriculare se deschide valva mitrală",
-          "why": "Valva mitrală se închide în sistola ventriculară."
+          "why": "Valva mitrală se închide în sistola ventriculară. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "B",
           "text": "pe ECG, unda T reprezintă repolarizarea ventriculară",
-          "why": "Unda T reflectă repolarizarea ventriculară."
+          "why": "Unda T reflectă repolarizarea ventriculară. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         },
         {
           "letter": "C",
           "text": "în cadrul complexului ventricular, unda S este precedată de unda R",
-          "why": "În succesiunea Q–R–S, unda R precede unda S."
+          "why": "În succesiunea Q–R–S, unda R precede unda S. Sursa: Sistemul cardiovascular — Figura 15.7."
         },
         {
           "letter": "D",
           "text": "debitul cardiac participă la determinarea presiunii arteriale",
-          "why": "Debitul cardiac este unul dintre determinanții presiunii arteriale."
+          "why": "Debitul cardiac este unul dintre determinanții presiunii arteriale. Sursa: Sistemul cardiovascular — Presiunea arterială și pulsul."
         },
         {
           "letter": "E",
           "text": "impulsurile ajung la nodul atrioventricular prin fasciculul His",
-          "why": "Fasciculul His conduce de la nodul atrioventricular spre ventricule, nu spre nodul atrioventricular."
+          "why": "Fasciculul His conduce de la nodul atrioventricular spre ventricule, nu spre nodul atrioventricular. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         }
       ],
       "sourcePages": [
@@ -886,27 +886,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "carotida comună dreaptă",
-          "why": "Carotida comună dreaptă provine din trunchiul brahiocefalic."
+          "why": "Carotida comună dreaptă provine din trunchiul brahiocefalic. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9."
         },
         {
           "letter": "B",
           "text": "trunchiul brahiocefalic",
-          "why": "Trunchiul brahiocefalic este prima ramură a arcului aortic în schema obișnuită."
+          "why": "Trunchiul brahiocefalic este prima ramură a arcului aortic în schema obișnuită. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9."
         },
         {
           "letter": "C",
           "text": "subclaviculara dreaptă",
-          "why": "Subclaviculara dreaptă provine din trunchiul brahiocefalic."
+          "why": "Subclaviculara dreaptă provine din trunchiul brahiocefalic. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9."
         },
         {
           "letter": "D",
           "text": "carotida comună stângă",
-          "why": "Carotida comună stângă este ramură directă a arcului aortic."
+          "why": "Carotida comună stângă este ramură directă a arcului aortic. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9."
         },
         {
           "letter": "E",
           "text": "subclaviculara stângă",
-          "why": "Subclaviculara stângă este ramură directă a arcului aortic."
+          "why": "Subclaviculara stângă este ramură directă a arcului aortic. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9."
         }
       ],
       "sourcePages": [
@@ -928,27 +928,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "gastrică stângă",
-          "why": "Artera gastrică stângă provine din trunchiul celiac."
+          "why": "Artera gastrică stângă provine din trunchiul celiac. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9."
         },
         {
           "letter": "B",
           "text": "splenică",
-          "why": "Artera splenică este ramură a trunchiului celiac."
+          "why": "Artera splenică este ramură a trunchiului celiac. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9."
         },
         {
           "letter": "C",
           "text": "renale",
-          "why": "Arterele renale pornesc direct din aorta abdominală."
+          "why": "Arterele renale pornesc direct din aorta abdominală. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9."
         },
         {
           "letter": "D",
           "text": "gonadale",
-          "why": "Arterele gonadale sunt ramuri directe ale aortei abdominale."
+          "why": "Arterele gonadale sunt ramuri directe ale aortei abdominale. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9."
         },
         {
           "letter": "E",
           "text": "gastroduodenală",
-          "why": "Artera gastroduodenală provine de obicei din artera hepatică comună, nu direct din aortă."
+          "why": "Figura raporturilor pancreasului arată artera gastroduodenală provenind din ramificația celiacă dinspre ficat, nu direct din aorta abdominală. Sursa: Sistemul endocrin — Raporturile pancreasului, figura 13.6."
         }
       ],
       "sourcePages": [
@@ -972,27 +972,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "artera splenică este situată superior de corpul și coada pancreasului",
-          "why": "Artera splenică are traiect de-a lungul marginii superioare a pancreasului."
+          "why": "Figura pancreasului arată artera splenică de-a lungul marginii superioare a corpului și cozii pancreasului către splină. Sursa: Sistemul endocrin — Raporturile pancreasului, figura 13.6."
         },
         {
           "letter": "B",
           "text": "artera gastroduodenală se desprinde dintr-o ramură a trunchiului celiac",
-          "why": "Artera gastroduodenală se desprinde din artera hepatică comună, ramură celiacă."
+          "why": "Figura pancreasului arată artera gastroduodenală desprinzându-se din ramificația trunchiului celiac, nu direct din aortă. Sursa: Sistemul endocrin — Raporturile pancreasului, figura 13.6."
         },
         {
           "letter": "C",
           "text": "artera mezenterică superioară este situată anterior de corpul pancreasului",
-          "why": "Originea arterei mezenterice superioare este posterior de pancreas; nu este descrisă ca situată anterior de corpul acestuia."
+          "why": "Figura pancreasului reprezintă artera mezenterică superioară ieșind de sub pancreas, cu porțiunea proximală ascunsă posterior; nu o arată anterior corpului pancreatic. Sursa: Sistemul endocrin — Raporturile pancreasului, figura 13.6."
         },
         {
           "letter": "D",
           "text": "artera interventriculară posterioară provine din artera coronară dreaptă",
-          "why": "Artera interventriculară posterioară provine din coronara dreaptă în tiparul de dominanță dreaptă ilustrat în manual; există și dominanță stângă sau codominanță."
+          "why": "Figura circulației coronariene arată artera interventriculară posterioară pornind din coronara dreaptă. Sursa: Sistemul cardiovascular — Figura 15.5."
         },
         {
           "letter": "E",
           "text": "artera poplitee continuă artera femurală",
-          "why": "Artera femurală devine artera poplitee după trecerea prin hiatusul adductorilor."
+          "why": "Figura arterelor membrului inferior arată succesiunea femurală → poplitee → tibiale. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9."
         }
       ],
       "sourcePages": [
@@ -1014,27 +1014,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "vena portă este afluent al cavei inferioare",
-          "why": "Vena portă duce sângele în ficat; drenajul hepatic spre cavă se face prin venele hepatice."
+          "why": "Vena portă duce sângele în ficat; drenajul hepatic spre cavă se face prin venele hepatice. Sursa: Sistemul cardiovascular — Circulația pulmonară, cerebrală și portă."
         },
         {
           "letter": "B",
           "text": "vena colică dreaptă este afluent al venei mezenterice superioare",
-          "why": "Vena colică dreaptă drenează în vena mezenterică superioară."
+          "why": "Vena colică dreaptă drenează în vena mezenterică superioară. Sursa: Sistemul cardiovascular — Sistemul port hepatic, figura 15.11."
         },
         {
           "letter": "C",
           "text": "venele sigmoidiene drenează sângele spre vena mezenterică inferioară, inferior drenajului venelor hepatice",
-          "why": "Venele sigmoidiene se varsă în mezenterica inferioară, în regiunea abdominală situată inferior drenajului venelor hepatice."
+          "why": "Venele sigmoidiene se varsă în mezenterica inferioară, în regiunea abdominală situată inferior drenajului venelor hepatice. Sursa: Sistemul cardiovascular — Sistemul port hepatic, figura 15.11."
         },
         {
           "letter": "D",
           "text": "vena mezenterică superioară se deschide în cava inferioară",
-          "why": "Vena mezenterică superioară contribuie la formarea venei porte."
+          "why": "Vena mezenterică superioară contribuie la formarea venei porte. Sursa: Sistemul cardiovascular — Circulația pulmonară, cerebrală și portă."
         },
         {
           "letter": "E",
           "text": "sinusul coronarian se deschide în cava superioară",
-          "why": "Sinusul coronarian se deschide în atriul drept, nu în vena cavă superioară."
+          "why": "Sinusul coronarian se deschide în atriul drept, nu în vena cavă superioară. Sursa: Sistemul cardiovascular — Circulația coronariană."
         }
       ],
       "sourcePages": [
@@ -1059,27 +1059,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "artera brahială",
-          "why": "Artera brahială este artera brațului; la nivelul cotului se divide în radială și ulnară."
+          "why": "Figura arterelor situează brahiala la braț, iar radialele și ulnarele în antebraț. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9."
         },
         {
           "letter": "B",
           "text": "vena ulnară",
-          "why": "Venele ulnare drenează antebrațul."
+          "why": "Venele ulnare drenează antebrațul. Sursa: Sistemul cardiovascular — Venele principale, figura 15.10."
         },
         {
           "letter": "C",
           "text": "nervul median",
-          "why": "Nervul median străbate antebrațul spre mână."
+          "why": "Nervul median străbate antebrațul spre mână. Sursa: Organizarea sistemului nervos — Nervii periferici, figura 11.9."
         },
         {
           "letter": "D",
           "text": "o articulație de tip sindesmoză",
-          "why": "Membrana interosoasă dintre radius și ulnă constituie o sindesmoză."
+          "why": "Membrana interosoasă dintre radius și ulnă constituie o sindesmoză. Sursa: Oasele și articulațiile — Sindesmoza radiusului și ulnei."
         },
         {
           "letter": "E",
           "text": "toate tipurile principale de țesuturi",
-          "why": "Antebrațul conține țesut epitelial, conjunctiv, muscular și nervos."
+          "why": "La antebraț se pot corela pielea cu epiteliul, oasele și sângele cu țesutul conjunctiv, mușchii cu țesutul muscular și nervii cu țesutul nervos; acestea sunt cele patru tipuri de bază din manual. Sursa: Introducere în anatomie și fiziologie — Țesuturile și organele; Organizarea sistemului nervos — Nervii periferici, figura 11.9; Oasele și articulațiile — Sindesmoza radiusului și ulnei."
         }
       ],
       "sourcePages": [
@@ -1102,27 +1102,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "se termină la nivelul atriului în care se deschide sinusul coronarian",
-          "why": "Circulația pulmonară se termină în atriul stâng; sinusul coronarian se deschide în atriul drept."
+          "why": "Circulația pulmonară se termină în atriul stâng; sinusul coronarian se deschide în atriul drept. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică; Sistemul cardiovascular — Circulația coronariană."
         },
         {
           "letter": "B",
           "text": "începe în ventriculul care este despărțit de atriu prin valva tricuspidă",
-          "why": "Valva tricuspidă separă atriul drept de ventriculul drept, de unde începe circuitul pulmonar."
+          "why": "Valva tricuspidă separă atriul drept de ventriculul drept, de unde începe circuitul pulmonar. Sursa: Sistemul cardiovascular — Valvele cardiace; Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "C",
           "text": "se termină prin 4 vene",
-          "why": "În configurația obișnuită, patru vene pulmonare se deschid în atriul stâng."
+          "why": "În configurația obișnuită, patru vene pulmonare se deschid în atriul stâng. Sursa: Sistemul cardiovascular — Figura 15.2."
         },
         {
           "letter": "D",
           "text": "asigură aportul de oxigen și substanțe nutritive necesare plămânului",
-          "why": "Baremul exclude D. Manualul atribuie circulației bronșice rolul nutritiv, iar circulației pulmonare rolul principal de schimb gazos. Această clasificare nu înseamnă că sângele pulmonar nu poate furniza deloc substanțe nutritive țesutului pulmonar; aportul și consumul de glucoză au fost demonstrate și în lobi umani perfuzați prin artera pulmonară."
+          "why": "Manualul descrie circulația pulmonară prin schimbul de gaze: sângele sosit sărac în oxigen primește O₂ în capilarele alveolare. Nu explică aici vascularizația nutritivă proprie plămânului; nu se poate justifica din această sursă o negare absolută a oricărui aport nutritiv. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică; Sistemul respirator — Componentele, circulația și schimburile sistemului respirator."
         },
         {
           "letter": "E",
           "text": "venele pulmonare conțin sânge oxigenat",
-          "why": "După schimburile alveolare, venele pulmonare transportă sânge oxigenat."
+          "why": "După schimburile alveolare, venele pulmonare transportă sânge oxigenat. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         }
       ],
       "sourcePages": [
@@ -1146,27 +1146,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "intervin în controlul circulației sângelui prin capilare",
-          "why": "Arteriolele reglează rezistența și distribuția sângelui în paturile capilare."
+          "why": "Arteriolele reglează rezistența și distribuția sângelui în paturile capilare. Sursa: Sistemul cardiovascular — Arteriole, capilare și venule."
         },
         {
           "letter": "B",
           "text": "încep printr-un sfincter precapilar",
-          "why": "Sfincterele precapilare se află la intrarea în capilare, nu la originea arteriolelor."
+          "why": "Sfincterele precapilare se află la intrarea în capilare, nu la originea arteriolelor. Sursa: Sistemul cardiovascular — Arteriole, capilare și venule."
         },
         {
           "letter": "C",
           "text": "au în structura peretelui trei straturi, primul dinspre lumen fiind tunica internă",
-          "why": "Arteriolele au o intimă endotelială, o medie musculară și o adventice subțire, cu reducerea straturilor în cele mai mici vase."
+          "why": "Arteriolele au o intimă endotelială, o medie musculară și o adventice subțire, cu reducerea straturilor în cele mai mici vase. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "D",
           "text": "se pot contracta sub acțiunea noradrenalinei",
-          "why": "Noradrenalina poate produce vasoconstricție prin receptorii adrenergici ai musculaturii vasculare."
+          "why": "Manualul leagă vasoconstricția de impulsurile simpatice, iar lecția sistemului nervos precizează eliberarea noradrenalinei de fibrele postganglionare simpatice. Sursa: Sistemul cardiovascular — Arterele: elasticitate și vasoconstricție; Organizarea sistemului nervos — Sistemul nervos autonom."
         },
         {
           "letter": "E",
           "text": "conțin fibre musculare alungite, cu un nucleu situat central",
-          "why": "Mușchiul neted arteriolar are celule alungite, cu nucleu central."
+          "why": "Mușchiul neted arteriolar are celule alungite, cu nucleu central. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2; Țesutul muscular — Comparația tipurilor musculare, tabelul 8.1."
         }
       ],
       "sourcePages": [
@@ -1188,27 +1188,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "este încărcat cu dioxid de carbon",
-          "why": "Sângele care traversează mitrala este relativ bogat în oxigen, după întoarcerea pulmonară."
+          "why": "Sângele care traversează mitrala este relativ bogat în oxigen, după întoarcerea pulmonară. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "B",
           "text": "va intra în circulația sistemică",
-          "why": "Din ventriculul stâng, sângele va fi ejectat în aortă și circulația sistemică."
+          "why": "Din ventriculul stâng, sângele va fi ejectat în aortă și circulația sistemică. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "C",
           "text": "este încărcat cu oxigen",
-          "why": "Mitrala este traversată de sângele oxigenat din atriul stâng."
+          "why": "Mitrala este traversată de sângele oxigenat din atriul stâng. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "D",
           "text": "a fost adus de sinusul coronarian",
-          "why": "Sinusul coronarian aduce sânge în atriul drept, nu în atriul stâng."
+          "why": "Sinusul coronarian aduce sânge în atriul drept, nu în atriul stâng. Sursa: Sistemul cardiovascular — Circulația coronariană."
         },
         {
           "letter": "E",
           "text": "va intra în circulația pulmonară",
-          "why": "Sângele prin mitrală urmează circuitul sistemic; circuitul pulmonar începe din ventriculul drept."
+          "why": "Sângele prin mitrală urmează circuitul sistemic; circuitul pulmonar începe din ventriculul drept. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         }
       ],
       "sourcePages": [
@@ -1229,27 +1229,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "vena gonadală stângă",
-          "why": "Vena gonadală stângă se varsă de obicei în vena renală stângă."
+          "why": "Figura venelor arată vărsarea venei gonadale stângi în vena renală stângă înainte de vena cavă inferioară. Sursa: Sistemul cardiovascular — Venele principale, figura 15.10."
         },
         {
           "letter": "B",
           "text": "venele mezenterice",
-          "why": "Venele mezenterice aparțin drenajului portal."
+          "why": "Venele mezenterice aparțin drenajului portal. Sursa: Sistemul cardiovascular — Sistemul port hepatic, figura 15.11."
         },
         {
           "letter": "C",
           "text": "venele hepatice",
-          "why": "Venele hepatice se deschid direct în vena cavă inferioară."
+          "why": "Venele hepatice se deschid direct în vena cavă inferioară. Sursa: Sistemul cardiovascular — Circulația pulmonară, cerebrală și portă."
         },
         {
           "letter": "D",
           "text": "vena portă",
-          "why": "Vena portă intră în ficat, fără vărsare directă în cavă."
+          "why": "Vena portă intră în ficat, fără vărsare directă în cavă. Sursa: Sistemul cardiovascular — Circulația pulmonară, cerebrală și portă."
         },
         {
           "letter": "E",
           "text": "vena iliacă internă",
-          "why": "Vena iliacă internă se unește cu cea externă pentru a forma vena iliacă comună."
+          "why": "Vena iliacă internă se unește cu cea externă pentru a forma vena iliacă comună. Sursa: Sistemul cardiovascular — Venele principale, figura 15.10."
         }
       ],
       "sourcePages": [
@@ -1272,27 +1272,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "valvele atrioventriculare asigură curgerea unidirecțională a sângelui la nivel cardiac, dinspre atrii spre ventricule",
-          "why": "Valvele atrioventriculare permit fluxul atriu → ventricul și împiedică refluxul."
+          "why": "Valvele atrioventriculare permit fluxul atriu → ventricul și împiedică refluxul. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "B",
           "text": "valva atrioventriculară stângă este situată la originea aortei în ventriculul stâng",
-          "why": "La originea aortei se află valva aortică; mitrala este între atriul și ventriculul stâng."
+          "why": "La originea aortei se află valva aortică; mitrala este între atriul și ventriculul stâng. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "C",
           "text": "pot fi situate la emergența marilor artere",
-          "why": "Valvele semilunare sunt situate la originea aortei și a trunchiului pulmonar."
+          "why": "Valvele semilunare sunt situate la originea aortei și a trunchiului pulmonar. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "D",
           "text": "valvele semilunare sunt deschise în timpul diastolei ventriculare",
-          "why": "În diastola ventriculară, valvele semilunare sunt închise."
+          "why": "În diastola ventriculară, valvele semilunare sunt închise. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "E",
           "text": "valvele situate la originea aortei și trunchiului pulmonar previn refluxul sanguin din artere în ventricule",
-          "why": "Închiderea semilunarelor împiedică întoarcerea sângelui din artere în ventricule."
+          "why": "Închiderea semilunarelor împiedică întoarcerea sângelui din artere în ventricule. Sursa: Sistemul cardiovascular — Valvele cardiace."
         }
       ],
       "sourcePages": [
@@ -1316,27 +1316,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "vena cardiacă posterioară",
-          "why": "Vena posterioară a ventriculului stâng este afluent al sinusului coronarian."
+          "why": "Vena posterioară a ventriculului stâng este afluent al sinusului coronarian. Sursa: Sistemul cardiovascular — Figura 15.5."
         },
         {
           "letter": "B",
           "text": "vena cardiacă mare",
-          "why": "Vena cardiacă mare aduce sânge în sinusul coronarian."
+          "why": "Vena cardiacă mare aduce sânge în sinusul coronarian. Sursa: Sistemul cardiovascular — Figura 15.5."
         },
         {
           "letter": "C",
           "text": "vena cardiacă mică",
-          "why": "Vena cardiacă mică se varsă în sinusul coronarian."
+          "why": "Vena cardiacă mică se varsă în sinusul coronarian. Sursa: Sistemul cardiovascular — Figura 15.5."
         },
         {
           "letter": "D",
           "text": "artera coronară dreaptă",
-          "why": "Artera coronară dreaptă irigă miocardul; nu se varsă în sinusul venos."
+          "why": "Artera coronară dreaptă irigă miocardul; nu se varsă în sinusul venos. Sursa: Sistemul cardiovascular — Circulația coronariană."
         },
         {
           "letter": "E",
           "text": "vena cardiacă mijlocie",
-          "why": "Vena cardiacă mijlocie drenează în sinusul coronarian."
+          "why": "Vena cardiacă mijlocie drenează în sinusul coronarian. Sursa: Sistemul cardiovascular — Figura 15.5."
         }
       ],
       "sourcePages": [
@@ -1358,27 +1358,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "transportă, prin arterele pulmonare, sânge bogat în oxigen dinspre inimă spre plămâni",
-          "why": "Arterele pulmonare transportă sânge relativ sărac în oxigen."
+          "why": "Arterele pulmonare transportă sânge relativ sărac în oxigen. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "B",
           "text": "începe în ventriculul drept, prin trunchiul pulmonar",
-          "why": "Trunchiul pulmonar pornește din ventriculul drept."
+          "why": "Trunchiul pulmonar pornește din ventriculul drept. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "C",
           "text": "venele pulmonare transportă sânge încărcat cu oxigen spre atriul drept",
-          "why": "Venele pulmonare se deschid în atriul stâng, nu în cel drept."
+          "why": "Venele pulmonare se deschid în atriul stâng, nu în cel drept. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "D",
           "text": "intrarea în trunchiul pulmonar este prevăzută cu o valvă semilunară: valva pulmonară",
-          "why": "Valva pulmonară este o valvă semilunară."
+          "why": "Valva pulmonară este o valvă semilunară. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "E",
           "text": "arterele pulmonare transportă sânge care conține aceeași cantitate de oxigen ca și artera aortă",
-          "why": "În circulația postnatală normală, sângele arterial pulmonar conține mai puțin oxigen decât sângele aortic."
+          "why": "Sângele din arterele pulmonare este sărac în oxigen, iar sângele pompat în aortă de ventriculul stâng este bogat în oxigen, potrivit celor două circuite descrise. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         }
       ],
       "sourcePages": [
@@ -1401,27 +1401,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "sunt celule cilindrice și ramificate",
-          "why": "Cardiomiocitele sunt celule aproximativ cilindrice, scurte și ramificate."
+          "why": "Cardiomiocitele sunt celule aproximativ cilindrice, scurte și ramificate. Sursa: Țesutul muscular — Comparația tipurilor musculare, tabelul 8.1."
         },
         {
           "letter": "B",
           "text": "sunt interconectate prin discuri intercalare",
-          "why": "Discurile intercalare conectează cardiomiocitele între ele."
+          "why": "Discurile intercalare conectează cardiomiocitele între ele. Sursa: Sistemul cardiovascular — Mușchiul cardiac."
         },
         {
           "letter": "C",
           "text": "prezintă conexiuni prin intermediul desmozomilor și joncțiunilor gap",
-          "why": "Desmozomii asigură adeziunea mecanică, iar joncțiunile gap cuplarea electrică."
+          "why": "Desmozomii asigură adeziunea mecanică, iar joncțiunile gap cuplarea electrică. Sursa: Sistemul cardiovascular — Mușchiul cardiac."
         },
         {
           "letter": "D",
           "text": "spre deosebire de mușchiul scheletic, nu formează unități integrate",
-          "why": "Miocardul funcționează în unități integrate prin cuplarea intercelulară."
+          "why": "Miocardul funcționează în unități integrate prin cuplarea intercelulară. Sursa: Sistemul cardiovascular — Mușchiul cardiac."
         },
         {
           "letter": "E",
           "text": "din punct de vedere fiziologic și biochimic sunt asemănătoare fibrelor musculare netede",
-          "why": "Miocardul și mușchiul scheletic au sarcomere și reglare prin troponină, în timp ce mușchiul neted nu are sarcomere și utilizează calmodulina. Aceste diferențe explică comparația didactică a miocardului cu mușchiul scheletic; ele nu exclud existența unor proprietăți comune tuturor mușchilor."
+          "why": "Manualul compară fiziologic și biochimic mușchiul cardiac cu mușchiul striat scheletic; varianta înlocuiește această comparație cu mușchiul neted. Sursa: Sistemul cardiovascular — Mușchiul cardiac."
         }
       ],
       "sourcePages": [
@@ -1444,27 +1444,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "sunt alcătuiți din țesut nespecializat excitoconductor",
-          "why": "Țesutul excitoconductor este țesut cardiac specializat."
+          "why": "Țesutul excitoconductor este țesut cardiac specializat. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         },
         {
           "letter": "B",
           "text": "nodul atrioventricular este situat între cele două atrii, în septul interventricular",
-          "why": "Nodul AV se află în regiunea septului interatrial; enunțul confundă cele două septuri."
+          "why": "Nodul AV se află în regiunea septului interatrial; enunțul confundă cele două septuri. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         },
         {
           "letter": "C",
           "text": "nodul sinoatrial este situat la nivelul peretelui superior al atriului stâng",
-          "why": "Nodul SA se află în peretele atriului drept."
+          "why": "Nodul SA se află în peretele atriului drept. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         },
         {
           "letter": "D",
           "text": "fasciculul His este situat la nivelul septului interventricular",
-          "why": "Fasciculul His și ramurile sale conduc impulsul spre ventricule în raport cu septul interventricular."
+          "why": "Fasciculul His și ramurile sale conduc impulsul spre ventricule în raport cu septul interventricular. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         },
         {
           "letter": "E",
           "text": "nodul sinoatrial este responsabil de ritmul sinusal cu frecvența de 70-80/minut",
-          "why": "70–80/minut este frecvența sinusală didactică a adultului în repaus, nu o limită universală."
+          "why": "Manualul precizează depolarizarea nodului sinoatrial de 70–80 de ori pe minut și stabilirea ritmului sinusal. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         }
       ],
       "sourcePages": [
@@ -1487,27 +1487,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "unda P - depolarizarea atriilor",
-          "why": "Unda P corespunde depolarizării atriilor."
+          "why": "Unda P corespunde depolarizării atriilor. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         },
         {
           "letter": "B",
           "text": "complexul QRS - depolarizarea ventriculară",
-          "why": "Complexul QRS reprezintă depolarizarea ventriculelor."
+          "why": "Complexul QRS reprezintă depolarizarea ventriculelor. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         },
         {
           "letter": "C",
           "text": "unda T - repolarizarea atrială",
-          "why": "Unda T reprezintă repolarizarea ventriculară; repolarizarea atrială este de obicei mascată de QRS."
+          "why": "Unda T reprezintă repolarizarea ventriculară, nu atrială, potrivit descrierii ECG. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         },
         {
           "letter": "D",
           "text": "complexul QRS - pauza dintre depolarizarea atriilor și a ventriculelor",
-          "why": "Întârzierea conducerii atrioventriculare nu este reprezentată de complexul QRS, ci contribuie la intervalul PR."
+          "why": "Complexul QRS reprezintă depolarizarea ventriculelor; nu reprezintă pauza dintre depolarizarea atrială și ventriculară. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         },
         {
           "letter": "E",
           "text": "unda T - repolarizarea ventriculelor",
-          "why": "Unda T reflectă revenirea electrică a ventriculelor după depolarizare."
+          "why": "Unda T reflectă revenirea electrică a ventriculelor după depolarizare. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         }
       ],
       "sourcePages": [
@@ -1531,27 +1531,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "reprezintă succesiunea unei sistole și a unei diastole",
-          "why": "Un ciclu cuprinde fazele sistolice și diastolice."
+          "why": "Un ciclu cuprinde fazele sistolice și diastolice. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "B",
           "text": "include sistola ventriculului stâng, în timpul căreia sângele este expulzat în artera aortă",
-          "why": "Sistola ventriculului stâng ejectează sângele în aortă."
+          "why": "Sistola ventriculului stâng ejectează sângele în aortă. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "C",
           "text": "la o frecvență medie de 75 de contracții/minut are durata de aproximativ 0,6 secunde",
-          "why": "La 75 bătăi/minut, durata unui ciclu este 60/75 = 0,8 secunde."
+          "why": "La 75 bătăi/minut, durata unui ciclu este 60/75 = 0,8 secunde. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "D",
           "text": "este însoțit de zgomote produse de închiderea valvelor inimii",
-          "why": "Zgomotele cardiace normale sunt legate în principal de închiderea valvelor."
+          "why": "Zgomotele cardiace normale sunt legate în principal de închiderea valvelor. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "E",
           "text": "în condiții normale, pompează în ambele circulații același volum de sânge (70 ml)",
-          "why": "În regim stabil, cele două ventricule ejectează volume egale; 70 ml este valoarea didactică medie pe bătaie."
+          "why": "În regim stabil, cele două ventricule ejectează volume egale; 70 ml este valoarea didactică medie pe bătaie. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         }
       ],
       "sourcePages": [
@@ -1574,27 +1574,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "depinde de volumul bătaie și de frecvența respiratorie",
-          "why": "Baremul exclude A. Debitul cardiac se calculează ca volum bătaie × frecvență cardiacă, nu respiratorie. Totuși, respirația poate influența întoarcerea venoasă, volumul bătaie și debitul; formularea largă „depinde” nu trebuie transformată într-o independență fiziologică absolută față de respirație."
+          "why": "Debitul este cantitatea pompată de un ventricul pe minut; calculul din manual folosește 70 ml pe bătaie și 75 bătăi cardiace/minut. Frecvența respiratorie nu este factorul acestui calcul. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "B",
           "text": "are, la adult, valoarea de aproximativ 5,25 l/minut",
-          "why": "75 bătăi/minut × 70 ml/bătaie = 5250 ml/minut, adică 5,25 l/minut."
+          "why": "75 bătăi/minut × 70 ml/bătaie = 5250 ml/minut, adică 5,25 l/minut. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "C",
           "text": "crește prin stimulare simpatică",
-          "why": "Stimularea simpatică mărește frecvența și forța contracțiilor, putând crește debitul."
+          "why": "Stimularea simpatică mărește frecvența și forța contracțiilor, putând crește debitul. Sursa: Sistemul cardiovascular — Controlul nervos și aritmiile; Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "D",
           "text": "la adult, are valoarea de aproximativ 70 ml/minut",
-          "why": "70 ml este volumul unei bătăi, nu debitul pe minut."
+          "why": "70 ml este volumul unei bătăi, nu debitul pe minut. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "E",
           "text": "scade sub acțiunea nervului vag",
-          "why": "Stimularea vagală reduce frecvența cardiacă și poate scădea debitul."
+          "why": "Stimularea vagală reduce frecvența cardiacă și poate scădea debitul. Sursa: Sistemul cardiovascular — Controlul nervos și aritmiile; Organizarea sistemului nervos — Nervul vag, tabelul nervilor cranieni."
         }
       ],
       "sourcePages": [
@@ -1616,27 +1616,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "depolarizarea ventriculelor precede depolarizarea atriilor",
-          "why": "Depolarizarea atrială precede depolarizarea ventriculară în ritmul sinusal."
+          "why": "Depolarizarea atrială precede depolarizarea ventriculară în ritmul sinusal. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         },
         {
           "letter": "B",
           "text": "inima este învelită la exterior de pericard",
-          "why": "Inima este învelită de pericard: afirmația anatomică este adevărată. Baremul o exclude într-o întrebare despre fiziologie; excluderea nu schimbă raportul anatomic descris."
+          "why": "Inima este învelită de pericard: afirmația anatomică este adevărată. Baremul o exclude într-o întrebare despre fiziologie; excluderea nu schimbă raportul anatomic descris. Sursa: Sistemul cardiovascular — Poziția și structura inimii."
         },
         {
           "letter": "C",
           "text": "la nivelul septului interventricular, potențialul de acțiune se propagă spre apex",
-          "why": "Conducerea prin ramurile fasciculului His distribuie activarea spre regiunea apicală înaintea contracției ascendente a ventriculelor."
+          "why": "Săgețile din figura sistemului excitoconductor arată propagarea prin sept spre apex și apoi în miocardul ventricular. Sursa: Sistemul cardiovascular — Figura 15.6."
         },
         {
           "letter": "D",
           "text": "mușchii papilari mențin tensiunea în cordajele tendinoase și previn refluxul sângelui din ventricule în atrii",
-          "why": "Mușchii papilari tensionează cordajele și împiedică prolapsul cuspisurilor spre atrii în sistola ventriculară."
+          "why": "Mușchii papilari tensionează cordajele și împiedică prolapsul cuspisurilor spre atrii în sistola ventriculară. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "E",
           "text": "valvele atrioventriculare permit curgerea sângelui dinspre ventricule spre atrii în timpul sistolei ventriculare",
-          "why": "Valvele atrioventriculare împiedică, nu permit, refluxul ventricular spre atrii."
+          "why": "Valvele atrioventriculare împiedică, nu permit, refluxul ventricular spre atrii. Sursa: Sistemul cardiovascular — Valvele cardiace."
         }
       ],
       "sourcePages": [
@@ -1657,27 +1657,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "arterele",
-          "why": "Arterele au tunică medie cu mușchi neted și țesut elastic."
+          "why": "Arterele au tunică medie cu mușchi neted și țesut elastic. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "B",
           "text": "venele",
-          "why": "Venele au medie, de regulă mai slab dezvoltată decât cea arterială."
+          "why": "Venele au medie, de regulă mai slab dezvoltată decât cea arterială. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "C",
           "text": "capilarele sanguine",
-          "why": "Capilarele sanguine au endoteliu și membrană bazală, fără tunică medie."
+          "why": "Capilarele sanguine au endoteliu și membrană bazală, fără tunică medie. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "D",
           "text": "arteriolele",
-          "why": "Arteriolele au mușchi neted în tunica medie."
+          "why": "Arteriolele au mușchi neted în tunica medie. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "E",
           "text": "capilarele limfatice",
-          "why": "Capilarele limfatice nu au nici ele tunică medie, dar nu sunt vase sanguine, categoria cerută în enunț."
+          "why": "Capilarele limfatice nu au nici ele tunică medie, dar nu sunt vase sanguine, categoria cerută în enunț. Sursa: Sistemul limfatic și imun — Capilarele limfatice."
         }
       ],
       "sourcePages": [
@@ -1699,27 +1699,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "arterele transportă sânge dinspre inimă spre țesuturi",
-          "why": "Arterele conduc sângele de la inimă spre rețelele periferice."
+          "why": "Arterele conduc sângele de la inimă spre rețelele periferice. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "B",
           "text": "arteriolele joacă un rol important în controlul circulației sanguine",
-          "why": "Arteriolele modifică rezistența și distribuția fluxului prin schimbarea calibrului."
+          "why": "Arteriolele modifică rezistența și distribuția fluxului prin schimbarea calibrului. Sursa: Sistemul cardiovascular — Arteriole, capilare și venule."
         },
         {
           "letter": "C",
           "text": "venulele permit trecerea sângelui dinspre vene spre capilare",
-          "why": "Sensul normal este din capilare în venule și apoi în vene."
+          "why": "Sensul normal este din capilare în venule și apoi în vene. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "D",
           "text": "unele vene, prin valvele pe care le conțin, facilitează circulația retrogradă a sângelui",
-          "why": "Valvele venoase împiedică circulația retrogradă."
+          "why": "Valvele venoase împiedică circulația retrogradă. Sursa: Sistemul cardiovascular — Venele și valvele venoase."
         },
         {
           "letter": "E",
           "text": "capilarele sunt precedate de arteriole și sunt urmate de venule",
-          "why": "Baremul exclude E, însă ordinea arteriole → capilare → venule este corectă pentru patul vascular obișnuit. Cerința menționează fiziologia, dar sursa nu explică de ce exclude această succesiune; nu trebuie învățată o ordine inversă a fluxului."
+          "why": "Baremul exclude E, însă ordinea arteriole → capilare → venule este corectă pentru patul vascular obișnuit. Cerința menționează fiziologia, dar sursa nu explică de ce exclude această succesiune; nu trebuie învățată o ordine inversă a fluxului. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         }
       ],
       "sourcePages": [
@@ -1741,27 +1741,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "sfincterul precapilar reglează pătrunderea sângelui în capilare",
-          "why": "Sfincterele precapilare controlează intrarea sângelui în patul capilar."
+          "why": "Sfincterele precapilare controlează intrarea sângelui în patul capilar. Sursa: Sistemul cardiovascular — Arteriole, capilare și venule."
         },
         {
           "letter": "B",
           "text": "tunica medie a arterelor conține fibre musculare striate",
-          "why": "Mușchiul vascular este neted, nu striat."
+          "why": "Mușchiul vascular este neted, nu striat. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "C",
           "text": "fibrele musculare sunt prezente la nivelul peretelui tuturor tipurilor de vase sanguine",
-          "why": "Capilarele nu au strat muscular în perete."
+          "why": "Capilarele nu au strat muscular în perete. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "D",
           "text": "în stratul mijlociu al peretelui arteriolelor există fibre musculare netede",
-          "why": "Tunica medie arteriolară conține celule musculare netede."
+          "why": "Tunica medie arteriolară conține celule musculare netede. Sursa: Sistemul cardiovascular — Arteriole, capilare și venule."
         },
         {
           "letter": "E",
           "text": "peretele venulelor conține o cantitate mai mare de țesut muscular decât peretele arteriolelor",
-          "why": "Arteriolele au o componentă musculară mai dezvoltată decât venulele corespunzătoare."
+          "why": "Arteriolele au o componentă musculară mai dezvoltată decât venulele corespunzătoare. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         }
       ],
       "sourcePages": [
@@ -1784,27 +1784,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "sistolică are valoarea de aproximativ 120 mmHg",
-          "why": "120 mmHg este valoarea sistolică didactică uzuală a adultului în repaus."
+          "why": "120 mmHg este valoarea sistolică didactică uzuală a adultului în repaus. Sursa: Sistemul cardiovascular — Presiunea arterială și pulsul."
         },
         {
           "letter": "B",
           "text": "este direct proporțională cu debitul cardiac",
-          "why": "La rezistență vasculară constantă, creșterea debitului crește presiunea arterială medie."
+          "why": "La rezistență vasculară constantă, creșterea debitului crește presiunea arterială medie. Sursa: Sistemul cardiovascular — Presiunea arterială și pulsul."
         },
         {
           "letter": "C",
           "text": "depinde de vâscozitatea și diametrul vaselor sanguine, dar nu și de lungimea acestora",
-          "why": "Lungimea vaselor influențează și ea rezistența la curgere, alături de rază și vâscozitate."
+          "why": "Lungimea vaselor influențează și ea rezistența la curgere, alături de rază și vâscozitate. Sursa: Sistemul cardiovascular — Presiunea arterială și pulsul."
         },
         {
           "letter": "D",
           "text": "diastolică are valoarea medie de 80 mmHg",
-          "why": "80 mmHg este valoarea diastolică didactică uzuală."
+          "why": "80 mmHg este valoarea diastolică didactică uzuală. Sursa: Sistemul cardiovascular — Presiunea arterială și pulsul."
         },
         {
           "letter": "E",
           "text": "poate fi măsurată prin electrocardiografie",
-          "why": "Electrocardiografia înregistrează activitatea electrică, nu măsoară presiunea arterială."
+          "why": "Electrocardiografia înregistrează activitatea electrică, nu măsoară presiunea arterială. Sursa: Sistemul cardiovascular — Presiunea arterială și pulsul; Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         }
       ],
       "sourcePages": [
@@ -1827,27 +1827,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "sistemul port hepatic transportă sângele de la tractul gastrointestinal și de la splină spre ficat",
-          "why": "Sistemul port hepatic colectează sânge digestiv și splenic și îl conduce la ficat."
+          "why": "Sistemul port hepatic colectează sânge digestiv și splenic și îl conduce la ficat. Sursa: Sistemul cardiovascular — Circulația pulmonară, cerebrală și portă."
         },
         {
           "letter": "B",
           "text": "sângele din sistemul port hepatic este bogat în oxigen",
-          "why": "Este sânge venos, relativ sărac în oxigen, deși bogat în nutrienți absorbiți."
+          "why": "Este sânge venos, relativ sărac în oxigen, deși bogat în nutrienți absorbiți. Sursa: Sistemul cardiovascular — Circulația pulmonară, cerebrală și portă."
         },
         {
           "letter": "C",
           "text": "sistemul port hipotalamo-hipofizar transportă hormoni stimulatori și inhibitori de la hipotalamus spre hipofiză",
-          "why": "Sistemul port hipofizar transportă hormonii hipotalamici către adenohipofiză."
+          "why": "Sistemul port hipofizar transportă hormonii hipotalamici către adenohipofiză. Sursa: Sistemul endocrin — Controlul adenohipofizei."
         },
         {
           "letter": "D",
           "text": "vena portă are ca afluenți venele mezenterice și vena splenică",
-          "why": "Drenajul mezenteric și splenic alimentează vena portă; mezenterica inferioară se varsă frecvent mai întâi în vena splenică."
+          "why": "Drenajul mezenteric și splenic alimentează vena portă; mezenterica inferioară se varsă frecvent mai întâi în vena splenică. Sursa: Sistemul cardiovascular — Sistemul port hepatic, figura 15.11."
         },
         {
           "letter": "E",
           "text": "circulația hepato-portală se desfășoară unidirecțional, dinspre ficat spre restul tractului gastrointestinal",
-          "why": "Sensul fluxului portal este spre ficat, dinspre tubul digestiv și splină."
+          "why": "Sensul fluxului portal este spre ficat, dinspre tubul digestiv și splină. Sursa: Sistemul cardiovascular — Circulația pulmonară, cerebrală și portă."
         }
       ],
       "sourcePages": [
@@ -1869,27 +1869,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "se varsă în atriul drept",
-          "why": "Baremul exclude A, însă ambele vene cave se deschid în atriul drept, iar venele pulmonare în atriul stâng. Aceasta este o diferență anatomică reală; cerința solicită trăsături funcționale."
+          "why": "Baremul exclude A, însă ambele vene cave se deschid în atriul drept, iar venele pulmonare în atriul stâng. Aceasta este o diferență anatomică reală; cerința solicită trăsături funcționale. Sursa: Sistemul cardiovascular — Cavitățile și vasele inimii."
         },
         {
           "letter": "B",
           "text": "transportă sânge sărac în oxigen",
-          "why": "Cavele transportă sânge sistemic sărac în O₂, iar venele pulmonare sânge oxigenat."
+          "why": "Cavele transportă sânge sistemic sărac în O₂, iar venele pulmonare sânge oxigenat. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "C",
           "text": "vascularizează viscerele de la nivelul cavităților abdominală și pelviană",
-          "why": "Cava superioară nu drenează viscerele abdominale și pelviene; afirmația nu este valabilă pentru ambele cave."
+          "why": "Cava superioară nu drenează viscerele abdominale și pelviene; afirmația nu este valabilă pentru ambele cave. Sursa: Sistemul cardiovascular — Cavitățile și vasele inimii."
         },
         {
           "letter": "D",
           "text": "fac parte din marea circulație",
-          "why": "Baremul exclude D, însă venele cave aparțin circulației sistemice. Afirmația clasifică circuitul, în timp ce cerința solicită trăsături funcționale; excluderea nu le mută în circulația pulmonară."
+          "why": "Baremul exclude D, însă venele cave aparțin circulației sistemice. Afirmația clasifică circuitul, în timp ce cerința solicită trăsături funcționale; excluderea nu le mută în circulația pulmonară. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "E",
           "text": "transportă sânge provenit de la membre",
-          "why": "Cava superioară primește sânge de la membrele superioare, iar cea inferioară de la membrele inferioare."
+          "why": "Cava superioară primește sânge de la membrele superioare, iar cea inferioară de la membrele inferioare. Sursa: Sistemul cardiovascular — Venele principale, figura 15.10."
         }
       ],
       "sourcePages": [
@@ -1912,27 +1912,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "poate fi influențată de impulsuri transmise prin fibre postganglionare simpatice",
-          "why": "Fibrele simpatice postganglionare pot modifica tonusul mușchiului neted vascular."
+          "why": "Fibrele simpatice postganglionare pot modifica tonusul mușchiului neted vascular. Sursa: Organizarea sistemului nervos — Sistemul nervos autonom; Sistemul cardiovascular — Arterele: elasticitate și vasoconstricție."
         },
         {
           "letter": "B",
           "text": "se realizează involuntar, iar viteza de contracție este mai mare comparativ cu cea a mușchiului striat",
-          "why": "Contracția mușchiului neted este în general mai lentă decât cea a mușchiului striat."
+          "why": "Contracția mușchiului neted este în general mai lentă decât cea a mușchiului striat. Sursa: Țesutul muscular — Comparația tipurilor musculare, tabelul 8.1."
         },
         {
           "letter": "C",
           "text": "este posibilă datorită prezenței mușchiului neted care, dintre toate categoriile de mușchi, are cea mai mare capacitate de a rămâne contractat",
-          "why": "Mușchiul neted poate menține o contracție tonică îndelungată cu consum energetic redus."
+          "why": "Tabelul tipurilor de mușchi atribuie mușchiului neted cea mai mare capacitate de a rămâne contractat. Sursa: Țesutul muscular — Comparația tipurilor musculare, tabelul 8.1."
         },
         {
           "letter": "D",
           "text": "caracterizează toate tipurile de vase sanguine",
-          "why": "Baremul exclude D. Capilarele nu au tunică medie cu mușchi neted, spre deosebire de arteriole. Totuși, absența acestei tunici nu exclude orice mecanism contractil: pericitele unor capilare pot modifica diametrul lor, fenomen demonstrat experimental în capilarele cerebrale de șoarece."
+          "why": "Peretele capilar este alcătuit dintr-un singur strat endotelial, fără tunica musculară care permite contracția arterelor și arteriolelor. Afirmația despre toate vasele nu corespunde acestei structuri. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "E",
           "text": "modifică diametrul lumenului vascular",
-          "why": "Contracția musculaturii vasculare micșorează lumenul; relaxarea îl mărește."
+          "why": "Contracția musculaturii vasculare micșorează lumenul; relaxarea îl mărește. Sursa: Sistemul cardiovascular — Arterele: elasticitate și vasoconstricție."
         }
       ],
       "sourcePages": [
@@ -1954,27 +1954,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "are ca afluenți direcți arterele renale și artera splenică",
-          "why": "Arterele sunt ramuri, nu afluenți ai aortei; splenica provine din trunchiul celiac."
+          "why": "Arterele sunt ramuri, nu afluenți ai aortei; splenica provine din trunchiul celiac. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9."
         },
         {
           "letter": "B",
           "text": "are originea în ventriculul drept și coboară de-a lungul coloanei vertebrale",
-          "why": "Aorta pornește din ventriculul stâng, nu din ventriculul drept; după formarea arcului, porțiunea descendentă coboară de-a lungul coloanei vertebrale."
+          "why": "Aorta pornește din ventriculul stâng, nu din ventriculul drept; după formarea arcului, porțiunea descendentă coboară de-a lungul coloanei vertebrale. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "C",
           "text": "se destinde în sistolă, datorită țesutului conjunctiv elastic din structura peretelui său",
-          "why": "Țesutul elastic permite distensia aortei la ejecția sistolică."
+          "why": "Țesutul elastic permite distensia aortei la ejecția sistolică. Sursa: Sistemul cardiovascular — Arterele: elasticitate și vasoconstricție."
         },
         {
           "letter": "D",
           "text": "prezintă un perete mai gros decât vena cavă superioară",
-          "why": "Peretele aortic este mai gros și mai rezistent decât peretele venei cave superioare."
+          "why": "Peretele aortic este mai gros și mai rezistent decât peretele venei cave superioare. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "E",
           "text": "transportă sânge la presiune scăzută",
-          "why": "Aorta aparține compartimentului arterial cu presiune ridicată."
+          "why": "Aorta aparține compartimentului arterial cu presiune ridicată. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         }
       ],
       "sourcePages": [
@@ -1997,27 +1997,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "variază invers proporțional cu frecvența cardiacă",
-          "why": "La volum bătaie și rezistență constante, creșterea frecvenței crește debitul; relația nu este inversă în modelul didactic."
+          "why": "La volum bătaie și rezistență constante, creșterea frecvenței crește debitul; relația nu este inversă în modelul didactic. Sursa: Sistemul cardiovascular — Presiunea arterială și pulsul."
         },
         {
           "letter": "B",
           "text": "variază invers proporțional cu volumul de sânge din circulație",
-          "why": "Creșterea volemiei tinde să crească presiunea, nu să o reducă."
+          "why": "Creșterea volemiei tinde să crească presiunea, nu să o reducă. Sursa: Sistemul cardiovascular — Presiunea arterială și pulsul."
         },
         {
           "letter": "C",
           "text": "poate crește în cazul secreției crescute de glucocorticoizi",
-          "why": "Excesul de glucocorticoizi poate favoriza hipertensiunea prin efectele asupra vaselor și echilibrului hidrosalin."
+          "why": "Lecția endocrină asociază hipersecreția de glucocorticoizi cu sindromul Cushing, însoțit de hipertensiune. Sursa: Sistemul endocrin — Hipersecreția de glucocorticoizi."
         },
         {
           "letter": "D",
           "text": "poate fi măsurată cu sfigmomanometrul, ascultând cu stetoscopul zgomotele lui Korotkoff",
-          "why": "Metoda auscultatorie utilizează manșeta sfigmomanometrului și zgomotele Korotkoff."
+          "why": "Metoda auscultatorie utilizează manșeta sfigmomanometrului și zgomotele Korotkoff. Sursa: Sistemul cardiovascular — Presiunea arterială și pulsul."
         },
         {
           "letter": "E",
           "text": "variază direct proporțional și cu volumul bătaie",
-          "why": "La ceilalți factori constanți, un volum bătaie mai mare crește debitul și poate crește presiunea."
+          "why": "La ceilalți factori constanți, un volum bătaie mai mare crește debitul și poate crește presiunea. Sursa: Sistemul cardiovascular — Presiunea arterială și pulsul; Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         }
       ],
       "sourcePages": [
@@ -2042,27 +2042,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "trunchiul pulmonar, datorită elasticității sale, revine la forma inițială în diastolă și împinge sângele mai departe în arterele pulmonare",
-          "why": "Reculul elastic al trunchiului pulmonar contribuie la menținerea fluxului după ejecția ventriculară."
+          "why": "Reculul elastic al trunchiului pulmonar contribuie la menținerea fluxului după ejecția ventriculară. Sursa: Sistemul cardiovascular — Arterele: elasticitate și vasoconstricție."
         },
         {
           "letter": "B",
           "text": "sistemul limfatic, similar sistemului cardiovascular, este unidirecțional, formându-se în țesuturi și deplasând conținutul lichid spre inimă",
-          "why": "Baremul ACDE exclude B. Sistemul limfatic începe în țesuturi și conduce limfa spre circulația venoasă; circulația cardiovasculară formează un circuit închis. Totuși, ambele au în mod normal flux orientat unidirecțional. Formularea comparației este ambiguă și nu justifică negarea acestei proprietăți."
+          "why": "Baremul ACDE exclude B. Sistemul limfatic începe în țesuturi și conduce limfa spre circulația venoasă; circulația cardiovasculară formează un circuit închis. Totuși, ambele au în mod normal flux orientat unidirecțional. Formularea comparației este ambiguă și nu justifică negarea acestei proprietăți. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept; Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "C",
           "text": "miocardul prezintă și proprietățile de excitabilitate și conductibilitate",
-          "why": "Miocardul poate răspunde la stimuli și poate conduce excitația."
+          "why": "Miocardul poate răspunde la stimuli și poate conduce excitația. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         },
         {
           "letter": "D",
           "text": "la baza inimii, artera pulmonară dreaptă se găsește sub arcul aortei",
-          "why": "În raporturile de la baza inimii, artera pulmonară dreaptă se află inferior de arcul aortic; această relație verticală nu exclude trecerea arcului peste artera pulmonară stângă."
+          "why": "În raporturile de la baza inimii, artera pulmonară dreaptă se află inferior de arcul aortic; această relație verticală nu exclude trecerea arcului peste artera pulmonară stângă. Sursa: Sistemul cardiovascular — Figura 15.2."
         },
         {
           "letter": "E",
           "text": "sinusul coronarian drenează sângele și de la vena cardiacă mare",
-          "why": "Vena cardiacă mare aduce sânge în sinusul coronarian."
+          "why": "Vena cardiacă mare aduce sânge în sinusul coronarian. Sursa: Sistemul cardiovascular — Figura 15.5."
         }
       ],
       "sourcePages": [
@@ -2085,27 +2085,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "se pot contracta dacă este stimulat sistemul nervos simpatic",
-          "why": "Este o proprietate funcțională adevărată, dar cerința solicită proprietăți structurale."
+          "why": "Este o proprietate funcțională adevărată, dar cerința solicită proprietăți structurale. Sursa: Sistemul cardiovascular — Arterele: elasticitate și vasoconstricție."
         },
         {
           "letter": "B",
           "text": "au celule alungite, fusiforme, cu capetele ascuțite, la nivelul tunicii medii",
-          "why": "Celulele musculare netede ale mediei sunt fusiforme, cu extremități ascuțite."
+          "why": "Celulele musculare netede ale mediei sunt fusiforme, cu extremități ascuțite. Sursa: Țesutul muscular — Comparația tipurilor musculare, tabelul 8.1."
         },
         {
           "letter": "C",
           "text": "prezintă, în tunica medie, celule ce conțin mitocondrii care furnizează energia necesară micșorării diametrului arterelor",
-          "why": "Celulele musculare netede conțin mitocondrii care susțin energetic contracția."
+          "why": "Celulele musculare netede conțin mitocondrii care susțin energetic contracția. Sursa: Celula și fiziologia celulară — Mitocondriile; Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "D",
           "text": "au țesut elastic în stratul mijlociu al peretelui lor",
-          "why": "Fibrele elastice fac parte din tunica medie arterială."
+          "why": "Fibrele elastice fac parte din tunica medie arterială. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "E",
           "text": "au capacitatea de a se destinde și de a se adapta la sângele ce pulsează în interiorul lor, atunci când inima se contractă",
-          "why": "Distensibilitatea este o proprietate funcțională reală, exclusă aici deoarece se cer caractere structurale."
+          "why": "Distensibilitatea este o proprietate funcțională reală, exclusă aici deoarece se cer caractere structurale. Sursa: Sistemul cardiovascular — Arterele: elasticitate și vasoconstricție."
         }
       ],
       "sourcePages": [
@@ -2127,27 +2127,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "mușchi papilari, fixați prin cordaje tendinoase la valva bicuspidă de la nivelul orificiului atrioventricular drept",
-          "why": "Valva bicuspidă este în orificiul atrioventricular stâng."
+          "why": "Valva bicuspidă este în orificiul atrioventricular stâng. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "B",
           "text": "ventricule, care trimit în circulație în medie 70 ml de sânge în timpul fiecărei sistole",
-          "why": "Fiecare ventricul ejectează în medie circa 70 ml pe bătaie în exemplul didactic."
+          "why": "Fiecare ventricul ejectează în medie circa 70 ml pe bătaie în exemplul didactic. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "C",
           "text": "atrii ale căror auricule sunt pline permanent cu sânge",
-          "why": "Auriculele conțin sânge, dar volumul și gradul lor de umplere variază în ciclul cardiac. Baremul exclude formularea „pline permanent”; aceasta nu trebuie corectată în sensul că auriculele s-ar goli complet sau ar rămâne fără sânge între umpleri."
+          "why": "Textul precizează că auricula se umple când atriul este plin; nu afirmă umplerea permanentă a auriculelor. Sursa: Sistemul cardiovascular — Cavitățile și vasele inimii."
         },
         {
           "letter": "D",
           "text": "pericardul parietal, care poate fi acoperit cu grăsime la vârste înaintate",
-          "why": "Grăsimea se poate acumula pe epicard, adică pe pericardul visceral."
+          "why": "Grăsimea se poate acumula pe epicard, adică pe pericardul visceral. Sursa: Sistemul cardiovascular — Poziția și structura inimii."
         },
         {
           "letter": "E",
           "text": "țesut excitoconductor, ce se depolarizează fără intervenția sistemului nervos",
-          "why": "Celulele pacemaker au automatism și generează impulsuri fără inițiere nervoasă."
+          "why": "Celulele pacemaker au automatism și generează impulsuri fără inițiere nervoasă. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         }
       ],
       "sourcePages": [
@@ -2170,27 +2170,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "se formează prin unirea venelor iliace externe și interne",
-          "why": "Cava inferioară rezultă din unirea venelor iliace comune, fiecare formată din iliaca internă și externă."
+          "why": "Cava inferioară rezultă din unirea venelor iliace comune, fiecare formată din iliaca internă și externă. Sursa: Sistemul cardiovascular — Venele principale, figura 15.10."
         },
         {
           "letter": "B",
           "text": "străbate diafragma și intră în torace",
-          "why": "Cava inferioară traversează diafragma înainte de a ajunge la atriul drept."
+          "why": "Cava inferioară traversează diafragma înainte de a ajunge la atriul drept. Sursa: Sistemul cardiovascular — Figura 15.1; Sistemul cardiovascular — Venele principale, figura 15.10."
         },
         {
           "letter": "C",
           "text": "duce sângele venos în atriul stâng",
-          "why": "Se varsă în atriul drept."
+          "why": "Se varsă în atriul drept. Sursa: Sistemul cardiovascular — Cavitățile și vasele inimii."
         },
         {
           "letter": "D",
           "text": "colectează sângele de la nivelul abdomenului, pelvisului și membrelor inferioare",
-          "why": "Drenează teritoriile abdominal, pelvin și al membrelor inferioare."
+          "why": "Drenează teritoriile abdominal, pelvin și al membrelor inferioare. Sursa: Sistemul cardiovascular — Venele principale, figura 15.10."
         },
         {
           "letter": "E",
           "text": "conține sânge în care eritrocitele conțin carbaminohemoglobină",
-          "why": "O parte din CO₂ este legată de hemoglobină sub formă de carbaminohemoglobină; majoritatea circulă ca bicarbonat."
+          "why": "O parte din CO₂ este legată de hemoglobină sub formă de carbaminohemoglobină; majoritatea circulă ca bicarbonat. Sursa: Sângele — Hemoglobina."
         }
       ],
       "sourcePages": [
@@ -2212,27 +2212,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "conține sânge care va fi oxigenat la nivelul rețelei capilare alveolare",
-          "why": "Sângele din trunchiul pulmonar urmează să participe la schimburile alveolare."
+          "why": "Sângele din trunchiul pulmonar urmează să participe la schimburile alveolare. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "B",
           "text": "conține sânge provenit din marea circulație",
-          "why": "Este sângele sistemic întors prin vene în cordul drept."
+          "why": "Este sângele sistemic întors prin vene în cordul drept. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "C",
           "text": "prezintă pe traiect valva pulmonară",
-          "why": "Baremul exclude C. Valva pulmonară se află la originea trunchiului pulmonar, în orificiul dintre acesta și ventriculul drept, nu într-un segment ulterior al vasului. Sintagma „pe traiect” este imprecisă dacă se intenționează să includă și originea."
+          "why": "Baremul exclude C. Valva pulmonară se află la originea trunchiului pulmonar, în orificiul dintre acesta și ventriculul drept, nu într-un segment ulterior al vasului. Sintagma „pe traiect” este imprecisă dacă se intenționează să includă și originea. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "D",
           "text": "prin arterele pulmonare, duce sânge cu dioxid de carbon spre rețeaua capilară din țesuturi",
-          "why": "Baremul exclude D. Trunchiul și arterele pulmonare conduc sângele bogat în dioxid de carbon spre capilarele alveolare, unde au loc schimburile gazoase. Manualul le deosebește de capilarele circulației sistemice. Totuși, și plămânul este alcătuit din țesuturi; fără precizarea „sistemice”, formularea tipărită „din țesuturi” rămâne ambiguă."
+          "why": "Baremul exclude D. Trunchiul și arterele pulmonare conduc sângele bogat în dioxid de carbon spre capilarele alveolare, unde au loc schimburile gazoase. Manualul le deosebește de capilarele circulației sistemice. Totuși, și plămânul este alcătuit din țesuturi; fără precizarea „sistemice”, formularea tipărită „din țesuturi” rămâne ambiguă. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "E",
           "text": "se formează din cele 2 artere pulmonare: dreaptă și stângă",
-          "why": "Trunchiul se bifurcă în cele două artere pulmonare; nu rezultă din unirea lor."
+          "why": "Trunchiul se bifurcă în cele două artere pulmonare; nu rezultă din unirea lor. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         }
       ],
       "sourcePages": [
@@ -2254,27 +2254,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "circulația pulmonară este alcătuită succesiv din trunchiul pulmonar, arterele pulmonare, venele pulmonare și capilarele pulmonare",
-          "why": "Ordinea corectă este trunchi → artere → capilare → vene pulmonare."
+          "why": "Ordinea corectă este trunchi → artere → capilare → vene pulmonare. Sursa: Sistemul cardiovascular — Circulația pulmonară, cerebrală și portă."
         },
         {
           "letter": "B",
           "text": "aorta descendentă emite și arterele renale, artera mezenterică superioară, artera hepatică, artera splenică",
-          "why": "Baremul exclude B. Renalele și mezenterica superioară sunt ramuri directe ale aortei abdominale; hepatica comună și splenica provin de obicei din trunchiul celiac. Cuvântul „direct” lipsește din variantă, astfel că enumerarea rămâne ambiguă dacă include și ramurile indirecte."
+          "why": "Baremul exclude B. Figura arată renalele și mezenterica superioară ca ramuri ale aortei abdominale, iar hepatica și splenica provenind din trunchiul celiac. Cuvântul „direct” lipsește din variantă, astfel că enumerarea rămâne ambiguă dacă include și ramurile indirecte. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9."
         },
         {
           "letter": "C",
           "text": "venele jugulare se varsă direct în vena cavă superioară",
-          "why": "Jugularele drenează prin venele brahiocefalice, nu direct în cava superioară."
+          "why": "Jugularele drenează prin venele brahiocefalice, nu direct în cava superioară. Sursa: Sistemul cardiovascular — Venele principale, figura 15.10."
         },
         {
           "letter": "D",
           "text": "vena portă strânge și sângele venos al splinei prin intermediul venei splenice",
-          "why": "Vena splenică transportă sângele splenic în sistemul port."
+          "why": "Vena splenică transportă sângele splenic în sistemul port. Sursa: Sistemul cardiovascular — Sistemul port hepatic, figura 15.11."
         },
         {
           "letter": "E",
           "text": "venele axilare culeg sângele venos al membrelor superioare",
-          "why": "Venele axilare drenează membrele superioare și continuă spre venele subclaviculare."
+          "why": "Venele axilare drenează membrele superioare și continuă spre venele subclaviculare. Sursa: Sistemul cardiovascular — Venele principale, figura 15.10."
         }
       ],
       "sourcePages": [
@@ -2298,27 +2298,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "sângele este expulzat în circulația pulmonară și sistemică în timpul sistolei ventriculare",
-          "why": "Ejecția ventriculară alimentează simultan cele două circuite."
+          "why": "Ejecția ventriculară alimentează simultan cele două circuite. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "B",
           "text": "valvele aortică și pulmonară se deschid în timpul sistolei ventriculare",
-          "why": "Semilunarele se deschid în faza de ejecție, când presiunea ventriculară depășește presiunea arterială."
+          "why": "Semilunarele se deschid în faza de ejecție, când presiunea ventriculară depășește presiunea arterială. Sursa: Sistemul cardiovascular — Valvele cardiace; Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "C",
           "text": "valvele atrioventriculare sunt închise în timpul sistolei ventriculare",
-          "why": "În timpul sistolei ventriculare valvele atrioventriculare sunt închise."
+          "why": "În timpul sistolei ventriculare valvele atrioventriculare sunt închise. Sursa: Sistemul cardiovascular — Valvele cardiace; Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "D",
           "text": "sângele se drenează din venele pulmonare în atriul stâng în timpul diastolei atriale",
-          "why": "Atriul stâng primește sânge pulmonar în timpul relaxării sale."
+          "why": "Atriul stâng primește sânge pulmonar în timpul relaxării sale. Sursa: Sistemul cardiovascular — Cavitățile și vasele inimii; Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "E",
           "text": "unda T, ascendentă și ascuțită, reprezintă repolarizarea ventriculară",
-          "why": "Unda T exprimă repolarizarea ventriculară, dar în mod normal este mai largă și rotunjită; calificativul „ascuțită” nu descrie forma normală."
+          "why": "Unda T exprimă repolarizarea ventriculară, dar în mod normal este mai largă și rotunjită; calificativul „ascuțită” nu descrie forma normală. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         }
       ],
       "sourcePages": [
@@ -2341,27 +2341,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "tunica externă, endoteliul, este un epiteliu simplu pavimentos, ce se continuă cu endocardul inimii",
-          "why": "Endoteliul aparține tunicii interne, nu tunicii externe."
+          "why": "Endoteliul aparține tunicii interne, nu tunicii externe. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "B",
           "text": "sunt prezente în toate vasele sanguine",
-          "why": "Cele trei tunici nu sunt prezente în toate vasele: capilarele nu au medie și adventice."
+          "why": "Cele trei tunici nu sunt prezente în toate vasele: capilarele nu au medie și adventice. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "C",
           "text": "tunica internă este formată dintr-o țesătură laxă de fibre de colagen",
-          "why": "Intima include endoteliu, membrană bazală și, în vasele mari, țesut conjunctiv subendotelial; nu poate fi definită doar ca o țesătură de colagen. Manualul folosește această descriere pentru adventice, fără ca aceasta să însemne că intima nu poate conține colagen."
+          "why": "Țesătura laxă de fibre de colagen este descrisă la tunica externă; tunica internă conține epiteliu simplu pavimentos pe membrană bazală. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "D",
           "text": "tunica medie este formată din fibre musculare și fibre elastice",
-          "why": "Media conține mușchi neted și componente elastice, în proporții variabile."
+          "why": "Media conține mușchi neted și componente elastice, în proporții variabile. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "E",
           "text": "prin fibrele tunicii externe fixează vasul la țesuturile din jur",
-          "why": "Adventicea ancorează vasul în țesuturile învecinate."
+          "why": "Adventicea ancorează vasul în țesuturile învecinate. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         }
       ],
       "sourcePages": [
@@ -2385,27 +2385,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "atriile se umplu cu sânge, în timp ce ventriculele se contractă",
-          "why": "În sistola ventriculară atriile sunt în relaxare și primesc sânge venos."
+          "why": "În sistola ventriculară atriile sunt în relaxare și primesc sânge venos. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "B",
           "text": "este alcătuit din alternanța sistolă și diastolă",
-          "why": "Ciclul alternează contracția cu relaxarea."
+          "why": "Ciclul alternează contracția cu relaxarea. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "C",
           "text": "sistola ventriculară pompează sângele în arterele mari",
-          "why": "În faza de ejecție, ventriculele trimit sângele în aortă și trunchiul pulmonar."
+          "why": "În faza de ejecție, ventriculele trimit sângele în aortă și trunchiul pulmonar. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "D",
           "text": "controlează curgerea sângelui în vase prin modificările de presiune create",
-          "why": "Diferențele de presiune create de inimă determină curgerea sângelui."
+          "why": "Diferențele de presiune create de inimă determină curgerea sângelui. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "E",
           "text": "valvele semilunare se deschid atunci când presiunea din atrii o depășește pe cea din ventricule",
-          "why": "Gradientul atriu–ventricul deschide valvele atrioventriculare; semilunarele depind de gradientul ventricul–arteră."
+          "why": "Gradientul atriu–ventricul deschide valvele atrioventriculare; semilunarele depind de gradientul ventricul–arteră. Sursa: Sistemul cardiovascular — Valvele cardiace; Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         }
       ],
       "sourcePages": [
@@ -2427,27 +2427,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "prezintă două cavități de umplere - ventriculele",
-          "why": "În clasificarea didactică, atriile sunt cavitățile de primire a sângelui, iar ventriculele sunt cavitățile de ejecție. Ventriculele se umplu și ele în diastolă, dar nu sunt cele două cavități denumite aici „de umplere”."
+          "why": "În clasificarea didactică, atriile sunt cavitățile de primire a sângelui, iar ventriculele sunt cavitățile de ejecție. Ventriculele se umplu și ele în diastolă, dar nu sunt cele două cavități denumite aici „de umplere”. Sursa: Sistemul cardiovascular — Cavitățile și vasele inimii."
         },
         {
           "letter": "B",
           "text": "este un organ cavitar, conic și cântărește mai puțin de 500 de grame",
-          "why": "Descrierea corespunde inimii normale a adultului."
+          "why": "Descrierea corespunde inimii normale a adultului. Sursa: Sistemul cardiovascular — Poziția și structura inimii."
         },
         {
           "letter": "C",
           "text": "este localizată în mediastin, în dreptul coastelor III - VI",
-          "why": "Lecția o situează aproximativ între coastele II și V; intervalul III–VI nu este cel indicat în sursa didactică."
+          "why": "Lecția o situează aproximativ între coastele II și V; intervalul III–VI nu este cel indicat în sursa didactică. Sursa: Sistemul cardiovascular — Poziția și structura inimii."
         },
         {
           "letter": "D",
           "text": "este situată cranial de diafragmă și este flancată de plămâni",
-          "why": "Inima este deasupra diafragmei, între plămâni."
+          "why": "Inima este deasupra diafragmei, între plămâni. Sursa: Sistemul cardiovascular — Figura 15.1."
         },
         {
           "letter": "E",
           "text": "este acoperită de pericardul parietal numit și epicard",
-          "why": "Epicardul este pericardul visceral, nu cel parietal."
+          "why": "Epicardul este pericardul visceral, nu cel parietal. Sursa: Sistemul cardiovascular — Poziția și structura inimii."
         }
       ],
       "sourcePages": [
@@ -2470,27 +2470,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "sunt localizate la nivelul orificiilor atrioventriculare",
-          "why": "Semilunarele sunt în orificiile ventriculoarteriale."
+          "why": "Semilunarele sunt în orificiile ventriculoarteriale. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "B",
           "text": "previn refluxul sângelui în ventricule, atunci când aceștia se relaxează",
-          "why": "Închiderea lor la relaxarea ventriculară împiedică refluxul arterial."
+          "why": "Închiderea lor la relaxarea ventriculară împiedică refluxul arterial. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "C",
           "text": "cea aortică este situată la emergența aortei, în ventriculul stâng",
-          "why": "Valva aortică este situată între ventriculul stâng și aortă."
+          "why": "Valva aortică este situată între ventriculul stâng și aortă. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "D",
           "text": "se află la emergența arterelor principale din atrii",
-          "why": "Arterele mari pornesc din ventricule, nu din atrii."
+          "why": "Arterele mari pornesc din ventricule, nu din atrii. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "E",
           "text": "cea pulmonară delimitează intrarea în trunchiul pulmonar",
-          "why": "Valva pulmonară controlează intrarea din ventriculul drept în trunchiul pulmonar."
+          "why": "Valva pulmonară controlează intrarea din ventriculul drept în trunchiul pulmonar. Sursa: Sistemul cardiovascular — Valvele cardiace."
         }
       ],
       "sourcePages": [
@@ -2514,27 +2514,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "este situată inferior de unele vase mari, vena cavă superioară și arcul aortic",
-          "why": "Marile vase se conectează la baza inimii, iar arcul aortic se află superior acesteia."
+          "why": "Marile vase se conectează la baza inimii, iar arcul aortic se află superior acesteia. Sursa: Sistemul cardiovascular — Figura 15.1; Sistemul cardiovascular — Figura 15.2."
         },
         {
           "letter": "B",
           "text": "este flancată de cei doi plămâni și pleurele lor",
-          "why": "Inima este între cei doi plămâni și sacii pleurali."
+          "why": "Inima este între cei doi plămâni și sacii pleurali. Sursa: Sistemul cardiovascular — Figura 15.1."
         },
         {
           "letter": "C",
           "text": "se află anterior de trahee și esofag",
-          "why": "Baremul exclude C. Inima, mai ales atriul stâng, este anterior de esofag; raportul cu traheea este mai complex, deoarece traheea se află predominant superior față de cord. Sursa nu precizează motivul excluderii, iar această cheie nu justifică inversarea raportului inimă–esofag."
+          "why": "Textul și figura confirmă poziția inimii în mediastin, dar nu stabilesc explicit raportul anterior față de ambele organe din enunț. Baremul exclude C; suportul disponibil nu permite inversarea sau negarea generală a raporturilor cu traheea și esofagul. Sursa: Sistemul cardiovascular — Poziția și structura inimii; Sistemul cardiovascular — Figura 15.1."
         },
         {
           "letter": "D",
           "text": "este așezată posterior de stern, în mediastin",
-          "why": "Inima se găsește retrosternal, în mediastin."
+          "why": "Inima se găsește retrosternal, în mediastin. Sursa: Sistemul cardiovascular — Poziția și structura inimii."
         },
         {
           "letter": "E",
           "text": "este poziționată anterior de coloana vertebrală",
-          "why": "Coloana vertebrală este posterior inimii."
+          "why": "Coloana vertebrală este posterior inimii. Sursa: Sistemul cardiovascular — Poziția și structura inimii."
         }
       ],
       "sourcePages": [
@@ -2558,27 +2558,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "transportă sângele la presiune ridicată, de la inimă la arteriole",
-          "why": "Arterele conduc sângele de la ventricule spre arteriole, sub presiune mai mare decât în sistemul venos."
+          "why": "Arterele conduc sângele de la ventricule spre arteriole, sub presiune mai mare decât în sistemul venos. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "B",
           "text": "permit schimburile de gaze, nutrienți, la nivelul țesuturilor",
-          "why": "Schimburile cu țesuturile se fac predominant în capilare."
+          "why": "Schimburile cu țesuturile se fac predominant în capilare. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "C",
           "text": "prezintă un perete gros, rezistent",
-          "why": "Peretele arterial rezistă presiunii ejecției cardiace."
+          "why": "Peretele arterial rezistă presiunii ejecției cardiace. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "D",
           "text": "au un perete gros, cu mușchi neted și țesut elastic în tunica medie",
-          "why": "Media arterială conține mușchi neted și țesut elastic."
+          "why": "Media arterială conține mușchi neted și țesut elastic. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "E",
           "text": "au capacitate de a se destinde și a se adapta pulsațiilor sângelui din interiorul lor, datorită țesutului elastic",
-          "why": "Fibrele elastice permit distensia și reculul peretelui arterial."
+          "why": "Fibrele elastice permit distensia și reculul peretelui arterial. Sursa: Sistemul cardiovascular — Arterele: elasticitate și vasoconstricție."
         }
       ],
       "sourcePages": [
@@ -2601,27 +2601,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "septul cardiac, ce separă transversal inima",
-          "why": "Septul cardiac separă longitudinal partea dreaptă de cea stângă."
+          "why": "Septul cardiac separă longitudinal partea dreaptă de cea stângă. Sursa: Sistemul cardiovascular — Cavitățile și vasele inimii."
         },
         {
           "letter": "B",
           "text": "valva bicuspidă, în dreapta, și valva tricuspidă, în stânga",
-          "why": "Bicuspida este la stânga, tricuspida la dreapta."
+          "why": "Bicuspida este la stânga, tricuspida la dreapta. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "C",
           "text": "septul interventricular, ce separă cavitățile cu rol de pompă",
-          "why": "Septul interventricular separă cele două ventricule."
+          "why": "Septul interventricular separă cele două ventricule. Sursa: Sistemul cardiovascular — Cavitățile și vasele inimii."
         },
         {
           "letter": "D",
           "text": "auricula, prelungire a atriului, ce crește capacitatea atrială",
-          "why": "Auricula mărește capacitatea atriului."
+          "why": "Auricula mărește capacitatea atriului. Sursa: Sistemul cardiovascular — Cavitățile și vasele inimii."
         },
         {
           "letter": "E",
           "text": "septul interatrial, ce separă cavitățile de umplere",
-          "why": "Septul interatrial separă atriile, cavitățile de umplere."
+          "why": "Septul interatrial separă atriile, cavitățile de umplere. Sursa: Sistemul cardiovascular — Cavitățile și vasele inimii."
         }
       ],
       "sourcePages": [
@@ -2643,27 +2643,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "face parte din circulația sistemică",
-          "why": "Sistemul azygos aparține întoarcerii venoase sistemice."
+          "why": "Sistemul azygos aparține întoarcerii venoase sistemice. Sursa: Sistemul cardiovascular — Vasele circulației sistemice."
         },
         {
           "letter": "B",
           "text": "este tributar venelor jugulare interne",
-          "why": "Vena azygos se varsă în cava superioară, nu în jugulara internă."
+          "why": "Textul include azygos între venele sistemice și descrie jugularele ca vene ale gâtului, dar nu precizează afluentul final al sistemului azygos. Baremul exclude legătura cu jugularele; detaliul nu este demonstrat explicit în sursa verificată. Sursa: Sistemul cardiovascular — Vasele circulației sistemice."
         },
         {
           "letter": "C",
           "text": "primește vena limfatică dreaptă",
-          "why": "Ductul limfatic drept se varsă la unghiul venos drept, nu în sistemul azygos."
+          "why": "Ductul limfatic drept se varsă în vena subclaviculară dreaptă, potrivit lecției limfatice, nu în sistemul azygos. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "D",
           "text": "aparține circulației pulmonare",
-          "why": "Sistemul azygos colectează sânge venos din peretele toracic și îl conduce spre vena cavă superioară, deci aparține circulației sistemice, nu celei pulmonare."
+          "why": "Venele azygos și hemiazygos sunt enumerate între venele sistemice care aduc sânge de la mușchii toracici, nu între vasele pulmonare. Sursa: Sistemul cardiovascular — Vasele circulației sistemice."
         },
         {
           "letter": "E",
           "text": "este implicat în drenajul venos al mușchilor toracici",
-          "why": "Venele azygos și hemiazygos primesc sânge din peretele toracic prin vene intercostale."
+          "why": "Manualul precizează că venele azygos și hemiazygos provin de la mușchii toracici. Sursa: Sistemul cardiovascular — Vasele circulației sistemice."
         }
       ],
       "sourcePages": [
@@ -2686,27 +2686,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "închiderea valvelor mitrală și tricuspidă participă la producerea primului zgomot cardiac",
-          "why": "Închiderea valvelor atrioventriculare contribuie la zgomotul I."
+          "why": "Închiderea valvelor atrioventriculare contribuie la zgomotul I. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "B",
           "text": "deschiderea valvelor atrioventriculare participă la producerea celui de al doilea zgomot cardiac I",
-          "why": "Zgomotul II se asociază închiderii valvelor semilunare, nu deschiderii atrioventriculare. Formularea neobișnuită „cardiac I” este păstrată din scanare."
+          "why": "Zgomotul II se asociază închiderii valvelor semilunare, nu deschiderii atrioventriculare. Formularea neobișnuită „cardiac I” este păstrată din scanare. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "C",
           "text": "închiderea valvelor atrioventriculare emite un zgomot reprezentat de onomatopeea „lub”",
-          "why": "„Lub” desemnează primul zgomot, asociat închiderii atrioventricularelor."
+          "why": "„Lub” desemnează primul zgomot, asociat închiderii atrioventricularelor. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "D",
           "text": "închiderea valvelor semilunare emite un zgomot reprezentat de onomatopeea „dub”",
-          "why": "„Dub” desemnează al doilea zgomot, asociat închiderii semilunarelor."
+          "why": "„Dub” desemnează al doilea zgomot, asociat închiderii semilunarelor. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "E",
           "text": "valvele atrioventriculare sunt închise în timpul sistolei atriale",
-          "why": "În sistola atrială, valvele atrioventriculare sunt deschise și permit completarea umplerii ventriculare."
+          "why": "În sistola atrială, valvele atrioventriculare sunt deschise și permit completarea umplerii ventriculare. Sursa: Sistemul cardiovascular — Valvele cardiace; Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         }
       ],
       "sourcePages": [
@@ -2730,27 +2730,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "obstrucția prelungită a arterelor coronare - tromboza coronariană",
-          "why": "Tromboza coronariană este formarea unui tromb care poate obstrua artera coronară; persistența obstrucției poate provoca ischemie și infarct. Baremul include asocierea, dar simpla obstrucție prelungită nu definește tromboza dacă nu este produsă de un cheag."
+          "why": "Manualul numește tromboză coronariană obstrucția prelungită a arterelor coronare prin cheaguri. Asocierea se citește cu această condiție a prezenței cheagului. Sursa: Sistemul cardiovascular — Circulația coronariană."
         },
         {
           "letter": "B",
           "text": "moartea celulelor miocardice - infarctul miocardic",
-          "why": "Infarctul implică moartea ischemică a celulelor miocardice."
+          "why": "Infarctul implică moartea ischemică a celulelor miocardice. Sursa: Sistemul cardiovascular — Circulația coronariană."
         },
         {
           "letter": "C",
           "text": "lezarea cordajelor sau a valvei semilunare - prolaps de valvă",
-          "why": "Baremul exclude C. În manual, lezarea cordajelor sau a valvei mitrale poate produce prolaps mitral, iar valvele semilunare nu au cordaje. Totuși, și cuspisurile valvei aortice pot prezenta prolaps; lipsa cordajelor nu permite declararea imposibilă a prolapsului unei valve semilunare."
+          "why": "Manualul descrie prolapsul mitral după lezarea cordajelor sau a valvei mitrale. Varianta înlocuiește valva mitrală cu o valvă semilunară; sursa nu prezintă acel mecanism. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "D",
           "text": "inflamația pericardului - pericardită",
-          "why": "Pericardita este inflamația pericardului."
+          "why": "Pericardita este inflamația pericardului. Sursa: Sistemul cardiovascular — Poziția și structura inimii."
         },
         {
           "letter": "E",
           "text": "contracții rapide și neregulate ale inimii, fibrilație, corectată prin șoc electric",
-          "why": "Fibrilația ventriculară poate fi oprită prin defibrilare; formularea este simplificată și nu înseamnă că orice contracție neregulată necesită șoc."
+          "why": "Manualul descrie fibrilația ca o contracție rapidă și neregulată și menționează folosirea unui șoc electric pentru defibrilare. Sursa: Sistemul cardiovascular — Controlul nervos și aritmiile."
         }
       ],
       "sourcePages": [
@@ -2773,27 +2773,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "nodul atrioventricular - localizat între atrii - transmite impulsuri fasciculului His",
-          "why": "Nodul atrioventricular se află în regiunea septală inferioară a atriului drept, în vecinătatea septului interatrial, și transmite impulsurile fasciculului His. „Între atrii” este localizarea didactică simplificată."
+          "why": "Manualul situează nodul AV în septul interatrial și arată transmiterea impulsurilor de la acesta la fasciculul His. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         },
         {
           "letter": "B",
           "text": "nodul sinoatrial - prezintă autoritmicitate - localizat în peretele superior al atriului stâng",
-          "why": "Nodul SA este în atriul drept, nu în cel stâng."
+          "why": "Nodul SA este în atriul drept, nu în cel stâng. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         },
         {
           "letter": "C",
           "text": "fibrele Purkinje - se distribuie miocardului ventricular",
-          "why": "Rețeaua Purkinje distribuie activarea în miocardul ventricular."
+          "why": "Rețeaua Purkinje distribuie activarea în miocardul ventricular. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         },
         {
           "letter": "D",
           "text": "nodulul sinoatrial - se depolarizează de 70-80 de ori/minut - stabilind ritmul sinusal",
-          "why": "Nodul SA stabilește ritmul sinusal; 70–80/minut este valoarea didactică de repaus."
+          "why": "Nodul SA stabilește ritmul sinusal; 70–80/minut este valoarea didactică de repaus. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         },
         {
           "letter": "E",
           "text": "fasciculul His - localizat în septul interatrial",
-          "why": "Fasciculul His se continuă spre septul interventricular, nu este localizat în septul interatrial."
+          "why": "Fasciculul His se continuă spre septul interventricular, nu este localizat în septul interatrial. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         }
       ],
       "sourcePages": [
@@ -2817,27 +2817,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "transportă sânge la presiune mică",
-          "why": "Presiunea venoasă este mică în comparație cu cea arterială."
+          "why": "Presiunea venoasă este mică în comparație cu cea arterială. Sursa: Sistemul cardiovascular — Venele și valvele venoase."
         },
         {
           "letter": "B",
           "text": "prezintă valve ce previn circulația retrogradă",
-          "why": "Numeroase vene, mai ales ale membrelor, au valve care împiedică refluxul; nu toate venele au valve."
+          "why": "Numeroase vene, mai ales ale membrelor, au valve care împiedică refluxul; nu toate venele au valve. Sursa: Sistemul cardiovascular — Venele și valvele venoase."
         },
         {
           "letter": "C",
           "text": "servesc drept rezervor de sânge",
-          "why": "Complianța venoasă mare permite depozitarea unei părți importante din volumul sanguin."
+          "why": "Venele servesc drept rezervoare; aproximativ 60% din volumul sanguin este în vene și venule, conform manualului. Sursa: Sistemul cardiovascular — Venele și valvele venoase."
         },
         {
           "letter": "D",
           "text": "leagă arteriolele de capilare",
-          "why": "Capilarele leagă arteriolele de venule; venele primesc sânge din venule."
+          "why": "Capilarele leagă arteriolele de venule; venele primesc sânge din venule. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "E",
           "text": "prezintă peretele mai subțire decât arterele, cu strat mijlociu mai puțin dezvoltat",
-          "why": "Media venoasă este mai puțin dezvoltată decât cea a arterelor comparabile."
+          "why": "Media venoasă este mai puțin dezvoltată decât cea a arterelor comparabile. Sursa: Sistemul cardiovascular — Venele și valvele venoase."
         }
       ],
       "sourcePages": [
@@ -2861,27 +2861,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "se produce de aproximativ 80-90 de ori pe minut",
-          "why": "Baremul exclude A. Manualul oferă aproximativ 70–75 bătăi/minut ca valoare medie de repaus și 70–80/minut pentru ritmul sinusal descris. O frecvență de 80–90/minut poate exista fiziologic; excluderea nu o transformă într-o valoare imposibilă sau obligatoriu patologică."
+          "why": "Valorile prezentate sunt 70–75 bătăi/minut pentru inimă și 70–80 depolarizări/minut pentru nodul SA. Intervalul 80–90 nu este reperul oferit în sursă. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "B",
           "text": "urmează sistolei atriale",
-          "why": "Sistola ventriculară urmează sistolei atriale."
+          "why": "Sistola ventriculară urmează sistolei atriale. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG; Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "C",
           "text": "trimite sângele în trunchiul pulmonar sau aortă",
-          "why": "Ventriculul drept ejectează în trunchiul pulmonar, iar cel stâng în aortă."
+          "why": "Ventriculul drept ejectează în trunchiul pulmonar, iar cel stâng în aortă. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "D",
           "text": "asigură un debit cardiac de aproximativ 5250 ml/min",
-          "why": "În exemplul de repaus, 75 × 70 ml = 5250 ml/minut."
+          "why": "În exemplul de repaus, 75 × 70 ml = 5250 ml/minut. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "E",
           "text": "se produce între cele două zgomote cardiace",
-          "why": "Sistola ventriculară este delimitată aproximativ de zgomotul I și zgomotul II."
+          "why": "Sistola ventriculară este delimitată aproximativ de zgomotul I și zgomotul II. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         }
       ],
       "sourcePages": [
@@ -2905,27 +2905,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "arterele coronare dreaptă și stângă, cu origine în aortă",
-          "why": "Arterele coronare pornesc din rădăcina aortei."
+          "why": "Arterele coronare pornesc din rădăcina aortei. Sursa: Sistemul cardiovascular — Figura 15.4."
         },
         {
           "letter": "B",
           "text": "sinusul venos ce drenează venele cardiace: mare, mijlocie, posterioară, mică",
-          "why": "Sinusul coronarian primește venele cardiace enumerate."
+          "why": "Sinusul coronarian primește venele cardiace enumerate. Sursa: Sistemul cardiovascular — Figura 15.5."
         },
         {
           "letter": "C",
           "text": "ramura marginală, ce pleacă din artera coronară dreaptă",
-          "why": "Ramura marginală dreaptă aparține coronarei drepte."
+          "why": "Ramura marginală dreaptă aparține coronarei drepte. Sursa: Sistemul cardiovascular — Figura 15.5."
         },
         {
           "letter": "D",
           "text": "sinusul coronarian, situat aproape de locul de vărsare al venelor cave",
-          "why": "Sinusul se deschide în atriul drept, în apropierea regiunii de vărsare a cavei inferioare."
+          "why": "Legenda figurii precizează că sinusul coronarian este aproape de venele cave și se golește în atriul drept. Sursa: Sistemul cardiovascular — Circulația coronariană."
         },
         {
           "letter": "E",
           "text": "ramura circumflexă, cu origine în artera coronară dreaptă",
-          "why": "Ramura circumflexă aparține coronarei stângi."
+          "why": "Ramura circumflexă aparține coronarei stângi. Sursa: Sistemul cardiovascular — Figura 15.5."
         }
       ],
       "sourcePages": [
@@ -2949,27 +2949,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "artera mezenterică superioară, care se extinde la intestinul subțire",
-          "why": "Artera mezenterică superioară este o ramură sistemică ce irigă o mare parte a intestinului subțire."
+          "why": "Artera mezenterică superioară este o ramură sistemică ce irigă o mare parte a intestinului subțire. Sursa: Sistemul cardiovascular — Vasele circulației sistemice."
         },
         {
           "letter": "B",
           "text": "vena portă, ce transportă sângele de la tractul gastrointestinal și splină către ficat",
-          "why": "Sistemul port hepatic este inclus în circulația sistemică."
+          "why": "Sistemul port hepatic este inclus în circulația sistemică. Sursa: Sistemul cardiovascular — Circulația pulmonară, cerebrală și portă."
         },
         {
           "letter": "C",
           "text": "artera pulmonară dreaptă, ramură de bifurcație a trunchiului pulmonar",
-          "why": "Artera pulmonară dreaptă aparține circulației pulmonare."
+          "why": "Artera pulmonară dreaptă aparține circulației pulmonare. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "D",
           "text": "poligonul lui Willis, structură arterială de la baza encefalului",
-          "why": "Poligonul Willis face parte din vascularizația arterială sistemică a encefalului."
+          "why": "Poligonul Willis face parte din vascularizația arterială sistemică a encefalului. Sursa: Sistemul cardiovascular — Circulația pulmonară, cerebrală și portă."
         },
         {
           "letter": "E",
           "text": "venele azygos și hemiazygos, ce drenează mușchii toracici",
-          "why": "Sistemul azygos/hemiazygos drenează sistemic peretele toracic."
+          "why": "Sistemul azygos/hemiazygos drenează sistemic peretele toracic. Sursa: Sistemul cardiovascular — Vasele circulației sistemice."
         }
       ],
       "sourcePages": [
@@ -2992,27 +2992,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "lezarea cordajelor tendinoase sau a valvei de pe partea dreaptă a inimii duce la prolaps de valvă mitrală",
-          "why": "Mitrala se află în partea stângă a inimii."
+          "why": "Mitrala se află în partea stângă a inimii. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "B",
           "text": "valva mitrală este o valvă cu trei cuspisuri",
-          "why": "Valva mitrală are două cuspisuri."
+          "why": "Valva mitrală are două cuspisuri. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "C",
           "text": "valva tricuspidă este localizată în partea stângă a inimii",
-          "why": "Tricuspida se află în dreapta."
+          "why": "Tricuspida se află în dreapta. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "D",
           "text": "valva bicuspidă separă atriul stâng și ventriculul stâng",
-          "why": "Bicuspida separă cele două cavități stângi."
+          "why": "Bicuspida separă cele două cavități stângi. Sursa: Sistemul cardiovascular — Valvele cardiace."
         },
         {
           "letter": "E",
           "text": "sunt ancorate de mușchii papilari prin cordoane de colagen",
-          "why": "Cordajele tendinoase colagenice leagă cuspisurile de mușchii papilari ventriculari."
+          "why": "Cordajele tendinoase colagenice leagă cuspisurile de mușchii papilari ventriculari. Sursa: Sistemul cardiovascular — Valvele cardiace."
         }
       ],
       "sourcePages": [
@@ -3036,27 +3036,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "au peretele format dintr-un singur strat de celule endoteliale",
-          "why": "Capilarele au endoteliu unistratificat, susținut de o membrană bazală."
+          "why": "Capilarele au endoteliu unistratificat, susținut de o membrană bazală. Sursa: Sistemul cardiovascular — Arteriole, capilare și venule."
         },
         {
           "letter": "B",
           "text": "fac legătura între venule și arteriole",
-          "why": "Baremul exclude B, deși legătura anatomică dintre arteriole și venule prin capilare este reală. Ordinea în care sunt numite cele două capete nu precizează sensul curgerii; fluxul normal este arteriole → capilare → venule."
+          "why": "Baremul exclude B, deși legătura anatomică dintre arteriole și venule prin capilare este reală. Ordinea în care sunt numite cele două capete nu precizează sensul curgerii; fluxul normal este arteriole → capilare → venule. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "C",
           "text": "reprezintă o membrană semipermeabilă",
-          "why": "Peretele capilar este selectiv permeabil, permițând trecerea unor substanțe."
+          "why": "Peretele capilar este selectiv permeabil, permițând trecerea unor substanțe. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "D",
           "text": "permit schimbul de gaze, nutrienți și reziduuri între sânge și țesuturi",
-          "why": "Capilarele reprezintă principalul loc al schimburilor cu lichidul interstițial."
+          "why": "Capilarele reprezintă principalul loc al schimburilor cu lichidul interstițial. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "E",
           "text": "prezintă un flux sanguin reglat prin activitatea sfincterelor precapilare",
-          "why": "Sfincterele precapilare contribuie la reglarea perfuziei patului capilar."
+          "why": "Sfincterele precapilare contribuie la reglarea perfuziei patului capilar. Sursa: Sistemul cardiovascular — Arteriole, capilare și venule."
         }
       ],
       "sourcePages": [
@@ -3079,27 +3079,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "celule fusiforme, alungite",
-          "why": "Celulele fusiforme sunt caracteristice mușchiului neted."
+          "why": "Celulele fusiforme sunt caracteristice mușchiului neted. Sursa: Țesutul muscular — Comparația tipurilor musculare, tabelul 8.1."
         },
         {
           "letter": "B",
           "text": "celule scurte, late, ramificate, interconectate",
-          "why": "Cardiomiocitele sunt scurte, ramificate și conectate între ele."
+          "why": "Cardiomiocitele sunt scurte, ramificate și conectate între ele. Sursa: Sistemul cardiovascular — Mușchiul cardiac."
         },
         {
           "letter": "C",
           "text": "prezența discurilor intercalare la joncțiunea dintre celule, ce conțin și desmozomi",
-          "why": "Discurile intercalare conțin și desmozomi, cu rol de adeziune mecanică."
+          "why": "Discurile intercalare conțin și desmozomi, cu rol de adeziune mecanică. Sursa: Sistemul cardiovascular — Mușchiul cardiac."
         },
         {
           "letter": "D",
           "text": "metabolism mai intens decât fibra musculară scheletică",
-          "why": "Miocardul are un necesar energetic continuu și un metabolism oxidativ intens, comparativ cu mușchiul scheletic în repaus. Aceasta este o proprietate fiziologică, deci nu răspunde cerinței morfologice; comparația nu stabilește o superioritate absolută în orice condiții de efort."
+          "why": "Manualul atribuie celulelor cardiace o activitate metabolică mai intensă, însă aceasta este o caracteristică funcțională, nu morfologică, așa cum cere întrebarea. Sursa: Sistemul cardiovascular — Mușchiul cardiac."
         },
         {
           "letter": "E",
           "text": "joncțiuni de tip gap ce permit comunicarea intercelulară la nivelul citoplasmei",
-          "why": "Joncțiunile gap asigură continuitatea funcțională și comunicarea ionică dintre celule."
+          "why": "Joncțiunile gap asigură continuitatea funcțională și comunicarea ionică dintre celule. Sursa: Sistemul cardiovascular — Mușchiul cardiac."
         }
       ],
       "sourcePages": [
@@ -3122,27 +3122,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "se formează prin unirea venelor iliace externe și interne",
-          "why": "Cava inferioară se formează din venele iliace comune."
+          "why": "Cava inferioară se formează din venele iliace comune. Sursa: Sistemul cardiovascular — Venele principale, figura 15.10."
         },
         {
           "letter": "B",
           "text": "drenează venele iliace comune",
-          "why": "Venele iliace comune aduc sânge în cava inferioară."
+          "why": "Venele iliace comune aduc sânge în cava inferioară. Sursa: Sistemul cardiovascular — Venele principale, figura 15.10."
         },
         {
           "letter": "C",
           "text": "colectează sângele venos doar de la nivelul membrelor inferioare",
-          "why": "Cava inferioară drenează și pelvisul și abdomenul, nu numai membrele inferioare."
+          "why": "Cava inferioară drenează și pelvisul și abdomenul, nu numai membrele inferioare. Sursa: Sistemul cardiovascular — Cavitățile și vasele inimii."
         },
         {
           "letter": "D",
           "text": "se deschide la nivelul atriului drept",
-          "why": "Orificiul cavei inferioare se află în atriul drept."
+          "why": "Orificiul cavei inferioare se află în atriul drept. Sursa: Sistemul cardiovascular — Cavitățile și vasele inimii."
         },
         {
           "letter": "E",
           "text": "primește sânge și prin venele renale",
-          "why": "Venele renale sunt afluenți ai cavei inferioare."
+          "why": "Venele renale sunt afluenți ai cavei inferioare. Sursa: Sistemul cardiovascular — Venele principale, figura 15.10."
         }
       ],
       "sourcePages": [
@@ -3165,27 +3165,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "arterele tibiale sunt ramuri de bifurcație ale arterei femurale",
-          "why": "Arterele tibiale provin din sistemul popliteu, nu direct din femurală."
+          "why": "Arterele tibiale provin din sistemul popliteu, nu direct din femurală. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9."
         },
         {
           "letter": "B",
           "text": "artera poplitee se continuă cu artera femurală",
-          "why": "Sensul continuității este femurală → poplitee."
+          "why": "Sensul continuității este femurală → poplitee. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9."
         },
         {
           "letter": "C",
           "text": "artera femurală este ramură a arterei iliace externe",
-          "why": "Femurala continuă iliaca externă după ligamentul inghinal; sursa folosește mai larg termenul „ramură”."
+          "why": "Textul și figura urmăresc traseul de la iliaca externă către femurală; termenul „ramură” este cel folosit de enunț pentru această continuitate. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9."
         },
         {
           "letter": "D",
           "text": "artera poplitee este ramură a arterei femurale",
-          "why": "Popliteea este continuarea femuralei; „ramură” este utilizat aici în sens didactic larg."
+          "why": "Popliteea este continuarea femuralei; „ramură” este utilizat aici în sens didactic larg. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9."
         },
         {
           "letter": "E",
           "text": "arterele tibiale sunt ramuri ale arterei poplitee",
-          "why": "Arterele tibiale derivă din artera poplitee, direct sau prin trunchiul tibioperonier."
+          "why": "Figura arterelor arată tibialele anterioară și posterioară continuând distribuția arterei poplitee. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9."
         }
       ],
       "sourcePages": [
@@ -3207,27 +3207,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "pulmonară, transportă prin arterele sale sânge cu conținut mare de oxigen",
-          "why": "Arterele pulmonare transportă sânge relativ sărac în oxigen."
+          "why": "Arterele pulmonare transportă sânge relativ sărac în oxigen. Sursa: Sistemul cardiovascular — Circulațiile pulmonară și sistemică."
         },
         {
           "letter": "B",
           "text": "coronariană, are artere cu perete unistratificat, structură care asigură nutriția optimă a inimii",
-          "why": "Arterele coronare au perete cu mai multe tunici, nu unistratificat."
+          "why": "Arterele coronare au perete cu mai multe tunici, nu unistratificat. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "C",
           "text": "arteriolară, poate modifica presiunea arterială",
-          "why": "Calibrul arteriolar modifică rezistența periferică și presiunea arterială."
+          "why": "Calibrul arteriolar modifică rezistența periferică și presiunea arterială. Sursa: Sistemul cardiovascular — Arterele: elasticitate și vasoconstricție; Sistemul cardiovascular — Presiunea arterială și pulsul."
         },
         {
           "letter": "D",
           "text": "venoasă, rezervorul de sânge al organismului, transportă sângele cu o curgere lină",
-          "why": "Venele constituie un rezervor de sânge și au flux mai puțin pulsatil decât arterele."
+          "why": "Venele constituie un rezervor de sânge și au flux mai puțin pulsatil decât arterele. Sursa: Sistemul cardiovascular — Venele și valvele venoase."
         },
         {
           "letter": "E",
           "text": "de la nivel intestinal, preia în mod direct lipidele, aminoacizii și glucoza din tubul digestiv",
-          "why": "Lipidele cu lanț lung sunt transportate inițial mai ales prin limfă ca chilomicroni; glucoza și aminoacizii intră în sângele portal. Afirmația care le tratează identic este prea generală."
+          "why": "Manualul separă absorbția produșilor lipidici în vasele limfatice de trecerea celorlalți produși în capilarele sanguine; varianta le atribuie tuturor aceeași preluare directă sanguină. Sursa: Sistemul digestiv — Absorbția produșilor digestiei."
         }
       ],
       "sourcePages": [
@@ -3249,27 +3249,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "în timpul diastolei, sângele nu exercită presiune asupra pereților vasculari",
-          "why": "Presiunea arterială rămâne pozitivă în diastolă, fiind susținută și de reculul elastic arterial."
+          "why": "Presiunea arterială rămâne pozitivă în diastolă, fiind susținută și de reculul elastic arterial. Sursa: Sistemul cardiovascular — Presiunea arterială și pulsul."
         },
         {
           "letter": "B",
           "text": "sistemul nervos inițiază activitatea cardiacă",
-          "why": "Țesutul excitoconductor inițiază ritmul; sistemul nervos îl modulează."
+          "why": "Țesutul excitoconductor inițiază ritmul; sistemul nervos îl modulează. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         },
         {
           "letter": "C",
           "text": "al doilea zgomot cardiac este produs de închiderea valvelor atrioventriculare",
-          "why": "Zgomotul II se asociază închiderii valvelor semilunare."
+          "why": "Zgomotul II se asociază închiderii valvelor semilunare. Sursa: Sistemul cardiovascular — Ciclul cardiac și debitul cardiac."
         },
         {
           "letter": "D",
           "text": "celulele musculare cardiace prezintă activitate metabolică mai intensă comparativ cu celulele musculare scheletice",
-          "why": "Baremul include D pentru necesarul energetic continuu al miocardului, bogat în mitocondrii și dependent de metabolismul oxidativ. Comparația este didactică, mai ales cu mușchiul scheletic în repaus, nu o regulă cantitativă pentru orice intensitate a efortului."
+          "why": "Manualul afirmă că mușchiul cardiac necesită mai multă energie decât cel scheletic deoarece are activitate metabolică mai intensă. Sursa: Sistemul cardiovascular — Mușchiul cardiac."
         },
         {
           "letter": "E",
           "text": "sfincterele precapilare controlează volumul de sânge furnizat țesuturilor",
-          "why": "Sfincterele precapilare reglează accesul sângelui în rețelele capilare."
+          "why": "Sfincterele precapilare reglează accesul sângelui în rețelele capilare. Sursa: Sistemul cardiovascular — Arteriole, capilare și venule."
         }
       ],
       "sourcePages": [
@@ -3291,27 +3291,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "arterele și venele carotidiene vascularizează capul",
-          "why": "Există artere carotide; drenajul venos major al capului se face prin jugulare, nu prin „vene carotidiene”."
+          "why": "Există artere carotide; drenajul venos major al capului se face prin jugulare, nu prin „vene carotidiene”. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9; Sistemul cardiovascular — Venele principale, figura 15.10."
         },
         {
           "letter": "B",
           "text": "în poziție anatomică, vena brahiocefalică stângă este situată superior față de inimă",
-          "why": "Vena brahiocefalică stângă traversează mediastinul superior, deasupra inimii."
+          "why": "Vena brahiocefalică stângă traversează mediastinul superior, deasupra inimii. Sursa: Sistemul cardiovascular — Venele principale, figura 15.10."
         },
         {
           "letter": "C",
           "text": "trunchiul brahiocefalic dă naștere și unei artere care vascularizează capul",
-          "why": "Din trunchiul brahiocefalic provine carotida comună dreaptă."
+          "why": "Din trunchiul brahiocefalic provine carotida comună dreaptă. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9."
         },
         {
           "letter": "D",
           "text": "artera carotidă externă ia naștere din arcul aortic, similar cu artera subclaviculară stângă",
-          "why": "Carotida externă este ramură a carotidei comune, nu a arcului aortic."
+          "why": "Carotida externă este ramură a carotidei comune, nu a arcului aortic. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9."
         },
         {
           "letter": "E",
           "text": "artera axilară este continuată direct de arterele ulnare și radiale",
-          "why": "Axilara continuă ca brahială, care se divide ulterior în radială și ulnară."
+          "why": "Axilara continuă ca brahială, care se divide ulterior în radială și ulnară. Sursa: Sistemul cardiovascular — Arterele principale, figura 15.9."
         }
       ],
       "sourcePages": [
@@ -3333,27 +3333,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "la nivelul mediastinului, inima",
-          "why": "Inima este situată în sacul pericardic din mediastinul mijlociu, între cei doi plămâni."
+          "why": "Inima se află în mediastin, între plămâni, conform descrierii poziției sale. Sursa: Sistemul cardiovascular — Poziția și structura inimii."
         },
         {
           "letter": "B",
           "text": "ductul toracic, care are traseu posterior față de esofag",
-          "why": "Ductul toracic urcă posterior de esofag."
+          "why": "Ductul toracic urcă posterior de esofag. Sursa: Sistemul limfatic și imun — Ductul toracic și ductul limfatic drept."
         },
         {
           "letter": "C",
           "text": "vena hemiazygos, care colectează sânge arterial de la mușchii toracici",
-          "why": "Vena hemiazygos colectează sânge venos, relativ sărac în oxigen."
+          "why": "Vena hemiazygos colectează sânge venos, relativ sărac în oxigen. Sursa: Sistemul cardiovascular — Vasele circulației sistemice."
         },
         {
           "letter": "D",
           "text": "la nivelul vaselor de sânge senzori pentru CO₂ și pentru ionii H⁺",
-          "why": "Baremul exclude D, însă chemoreceptorii aortici toracici răspund și la modificări ale CO₂ și H⁺, aspect menționat în manual și demonstrat experimental. Sensibilitatea lor diferă de cea carotidiană, dar diferența nu justifică negarea răspunsului la acești stimuli."
+          "why": "Textul respirator și figura receptorilor atribuie corpusculilor aortici monitorizarea O₂, iar CO₂/H⁺ sunt explicate prin lichidul cefalorahidian și centrul respirator. Sursa verificată nu atribuie explicit receptorilor toracici CO₂ și H⁺; baremul este păstrat fără o negare biologică absolută. Sursa: Sistemul respirator — Controlul respirației; Sistemul respirator — Receptorii respiratori, figura 17.7."
         },
         {
           "letter": "E",
           "text": "vena azygos, care colectează sânge sărac în oxigen de la miocard",
-          "why": "Miocardul este drenat în principal de venele cardiace și sinusul coronarian; azygos drenează peretele toracic."
+          "why": "Miocardul este drenat în principal de venele cardiace și sinusul coronarian; azygos drenează peretele toracic. Sursa: Sistemul cardiovascular — Circulația coronariană; Sistemul cardiovascular — Vasele circulației sistemice."
         }
       ],
       "sourcePages": [
@@ -3374,27 +3374,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "este formată dintr-un mușchi alcătuit din fibre care conțin mai mulți nuclei centrali",
-          "why": "Cardiomiocitele au de regulă unul, uneori doi nuclei centrali; descrierea prin „mai mulți nuclei” nu caracterizează fibra cardiacă obișnuită."
+          "why": "Tabelul tipurilor de mușchi indică pentru fibra cardiacă un nucleu central, nu mai mulți nuclei centrali. Sursa: Țesutul muscular — Comparația tipurilor musculare, tabelul 8.1."
         },
         {
           "letter": "B",
           "text": "prezintă două auricule care se umplu cu sânge atunci când ventriculul este plin",
-          "why": "Auriculele măresc capacitatea atriilor și se umplu odată cu acestea; reperul din lecție este atriul, nu ventriculul."
+          "why": "Auriculele măresc capacitatea atriilor și se umplu odată cu acestea; reperul din lecție este atriul, nu ventriculul. Sursa: Sistemul cardiovascular — Cavitățile și vasele inimii."
         },
         {
           "letter": "C",
           "text": "este vascularizată arterial de arterele coronare care au orificiile de emergență în imediata vecinătate a valvei aortice",
-          "why": "Orificiile coronare se află în sinusurile aortice, imediat deasupra valvei aortice."
+          "why": "Figura valvelor arată orificiile arterelor coronare imediat lângă valva aortică. Sursa: Sistemul cardiovascular — Figura 15.4."
         },
         {
           "letter": "D",
           "text": "are un strat intern, endocardul, care se continuă cu stratul endotelial al alveolelor",
-          "why": "Endocardul se continuă cu endoteliul vascular; alveolele au epiteliu, nu endoteliu continuu cu endocardul."
+          "why": "Endocardul se continuă cu endoteliul vascular; alveolele au epiteliu, nu endoteliu continuu cu endocardul. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "E",
           "text": "este vascularizată venos și de artera interventriculară posterioară",
-          "why": "Artera interventriculară posterioară asigură aport arterial, nu drenaj venos."
+          "why": "Artera interventriculară posterioară asigură aport arterial, nu drenaj venos. Sursa: Sistemul cardiovascular — Figura 15.5."
         }
       ],
       "sourcePages": [
@@ -3416,27 +3416,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "la nivelul mediastinului, vena cavă superior este situată lateral-stânga față de aortă",
-          "why": "Cava superioară este la dreapta aortei ascendente."
+          "why": "Cava superioară este la dreapta aortei ascendente. Sursa: Sistemul cardiovascular — Figura 15.2."
         },
         {
           "letter": "B",
           "text": "la nivelul brațului pot fi observate venele cefalică, bazilică, safenă și cubitală",
-          "why": "Vena safenă aparține membrului inferior, nu brațului."
+          "why": "Vena safenă aparține membrului inferior, nu brațului. Sursa: Sistemul cardiovascular — Venele principale, figura 15.10."
         },
         {
           "letter": "C",
           "text": "artera splenică este situată superior față de pancreas și vascularizează splina și pancreasul",
-          "why": "Artera splenică urmează marginea superioară a pancreasului și dă ramuri pancreatice și splenice."
+          "why": "Figura pancreasului arată artera splenică deasupra corpului și cozii, cu ramuri către pancreas și continuare spre splină. Sursa: Sistemul endocrin — Raporturile pancreasului, figura 13.6."
         },
         {
           "letter": "D",
           "text": "vena mezenterică superioară colectează sânge sărac în oxigen și de la toate segmentele intestinului subțire și gros",
-          "why": "Mezenterica superioară nu drenează toate segmentele colonului; o parte aparține mezentericei inferioare."
+          "why": "Mezenterica superioară nu drenează toate segmentele colonului; o parte aparține mezentericei inferioare. Sursa: Sistemul cardiovascular — Sistemul port hepatic, figura 15.11."
         },
         {
           "letter": "E",
           "text": "arcul aortic este situat superior față de artera pulmonară dreaptă",
-          "why": "La baza inimii, arcul aortic se află superior arterei pulmonare drepte; aceasta este relația verticală selectată în barem."
+          "why": "La baza inimii, arcul aortic se află superior arterei pulmonare drepte; aceasta este relația verticală selectată în barem. Sursa: Sistemul cardiovascular — Figura 15.2."
         }
       ],
       "sourcePages": [
@@ -3457,27 +3457,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "inițiază și distribuie impulsuri ce determină contracția celulelor miocardice",
-          "why": "Celulele excitoconductoare generează și distribuie impulsurile pentru contracția miocardului."
+          "why": "Celulele excitoconductoare generează și distribuie impulsurile pentru contracția miocardului. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         },
         {
           "letter": "B",
           "text": "este prezent și la nivelul valvelor atrioventriculare sub forma nodului atrioventricular",
-          "why": "Nodul AV este în regiunea septală a atriului drept, nu în țesutul valvelor."
+          "why": "Nodul AV este localizat în septul interatrial, nu în valvele atrioventriculare. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         },
         {
           "letter": "C",
           "text": "determină ritmul respirator prin nodul sinoatrial",
-          "why": "Nodul SA determină ritmul cardiac, nu ritmul respirator."
+          "why": "Nodul SA determină ritmul cardiac, nu ritmul respirator. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         },
         {
           "letter": "D",
           "text": "este format din celule care se depolarizează și se repolarizează doar sub acțiunea sistemului nervos",
-          "why": "Celulele pacemaker au automatism, fără a necesita inițiere nervoasă."
+          "why": "Celulele pacemaker au automatism, fără a necesita inițiere nervoasă. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         },
         {
           "letter": "E",
           "text": "este prezent și în septul interatrial sub forma fibrelor Purkinje",
-          "why": "Fibrele Purkinje se distribuie subendocardic în ventricule, nu în septul interatrial."
+          "why": "Fibrele Purkinje se distribuie miocardului ventricular, după ramurile fasciculului His; nu sunt localizate în septul interatrial. Sursa: Sistemul cardiovascular — Țesutul excitoconductor și ECG."
         }
       ],
       "sourcePages": [
@@ -3500,27 +3500,27 @@ window.BBSimulationUI.registerBank({
         {
           "letter": "A",
           "text": "artere - transportă sânge cu presiune crescută de la inimă spre țesuturi",
-          "why": "Arterele conduc sângele de la inimă sub presiune relativ ridicată."
+          "why": "Arterele conduc sângele de la inimă sub presiune relativ ridicată. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "B",
           "text": "venule - conectează capilarele sanguine cu venele",
-          "why": "Venulele preiau sângele capilar și se reunesc în vene."
+          "why": "Venulele preiau sângele capilar și se reunesc în vene. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "C",
           "text": "arteriole - controlează circulația sângelui în capilare",
-          "why": "Arteriolele reglează rezistența și perfuzia capilară."
+          "why": "Arteriolele reglează rezistența și perfuzia capilară. Sursa: Sistemul cardiovascular — Structura și funcțiile vaselor, tabelul 15.2."
         },
         {
           "letter": "D",
           "text": "vene - declanșează circulația retrogradă a sângelui",
-          "why": "Venele conduc sângele spre inimă, iar valvele venoase, acolo unde există, limitează refluxul; ele nu au rolul de a declanșa circulația retrogradă."
+          "why": "Venele conduc sângele spre inimă, iar valvele venoase, acolo unde există, limitează refluxul; ele nu au rolul de a declanșa circulația retrogradă. Sursa: Sistemul cardiovascular — Venele și valvele venoase."
         },
         {
           "letter": "E",
           "text": "capilarele - conectează întotdeauna între ele o arteriolă și o venulă",
-          "why": "„Întotdeauna” este fals: capilarele glomerulare sunt între arteriola aferentă și cea eferentă, nu între o arteriolă și o venulă."
+          "why": "„Întotdeauna” este fals: capilarele glomerulare sunt între arteriola aferentă și cea eferentă, nu între o arteriolă și o venulă. Sursa: Sistemul urinar — Circulația glomerulară."
         }
       ],
       "sourcePages": [

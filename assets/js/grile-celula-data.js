@@ -101,27 +101,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "are în structura sa glicolipide și glicoproteine, de obicei pe fața internă",
-          "why": "Lanțurile glucidice ale glicolipidelor și glicoproteinelor sunt orientate spre exteriorul celulei, nu spre citoplasmă."
+          "why": "Lanțurile glucidice ale glicolipidelor și glicoproteinelor sunt orientate spre exteriorul celulei, nu spre citoplasmă. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "B",
           "text": "conține colesterol cu rol în stabilizarea lipidelor și creșterea fluidității membranare",
-          "why": "Baremul urmează lecția: colesterolul stabilizează lipidele și limitează mobilitatea lor. Efectul depinde însă de temperatură și compoziție; la temperaturi joase poate împiedica solidificarea și menține fluiditatea."
+          "why": "Colesterolul stabilizează lipidele membranei și, conform sursei, îi reduce fluiditatea; enunțul inversează acest ultim efect. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "C",
           "text": "prezintă fosfolipide ce conțin acizi grași în porțiunea hidrofobă",
-          "why": "Cozile fosfolipidelor conțin lanțuri de acizi grași nepolare, care formează interiorul hidrofob al bistratului."
+          "why": "Cozile fosfolipidelor conțin lanțuri de acizi grași nepolare, care formează interiorul hidrofob al bistratului. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "D",
           "text": "poate fuziona cu veziculele aparatului Golgi datorită colesterolului",
-          "why": "Baremul exclude D, iar lecția atribuie fuziunea structurii fosfolipidice a membranelor. Colesterolul poate însă favoriza fuziunea veziculelor secretorii cu membrana plasmatică. Formularea este incompletă: fuziunea implică și proteine specializate, dar nu trebuie dedus că participarea colesterolului este imposibilă."
+          "why": "Sursa explică fuziunea veziculelor Golgi cu membrana plasmatică prin proprietățile fosfolipidelor. Colesterolului îi atribuie stabilizarea lipidelor și reducerea fluidității, nu această explicație a fuziunii. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "E",
           "text": "permite ieșirea apei din celulă dacă aceasta este situată într-un mediu hipoton",
-          "why": "Baremul exclude E interpretând ieșirea apei ca flux net. În mediu hipoton, fluxul net este spre interiorul celulei, dar moleculele de apă continuă să traverseze membrana în ambele sensuri. Verbul «permite» face varianta ambiguă: deplasarea unor molecule spre exterior rămâne posibilă."
+          "why": "În mediul hipoton descris în lecție, apa pătrunde în celulă, producând umflarea sau liza ei; ieșirea apei și zbârcirea sunt asociate mediului hiperton. (Sursă: Celula și fiziologia celulară — osmoza și mediile hiperton, hipoton și izoton.)"
         }
       ],
       "sourcePages": [
@@ -143,27 +143,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "glicolipidele și glicoproteinele atașate la interiorul membranei pot juca rol de receptori pentru unii hormoni",
-          "why": "Aceste structuri sunt atașate la exteriorul membranei, unde pot interacționa cu moleculele de semnalizare."
+          "why": "Aceste structuri sunt atașate la exteriorul membranei, unde pot interacționa cu moleculele de semnalizare. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "B",
           "text": "proteinele membranare periferice pot acționa ca enzime",
-          "why": "Unele proteine periferice catalizează reacții la suprafața membranei, având rol enzimatic."
+          "why": "Unele proteine periferice catalizează reacții la suprafața membranei, având rol enzimatic. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "C",
           "text": "proteinele transmembranare permit trecerea anumitor molecule dintr-o zonă cu concentrație mare într-una cu concentrație mică prin difuziune facilitată",
-          "why": "Transportorii și canalele permit deplasarea pasivă a substanțelor în sensul gradientului, fără consum direct de ATP pentru acest transport."
+          "why": "Difuziunea facilitată este asistată de proteine membranare și deplasează molecule dintr-o regiune cu concentrație mare într-una cu concentrație mică. (Sursă: Celula și fiziologia celulară — difuziunea și transportul facilitat.)"
         },
         {
           "letter": "D",
           "text": "la nivelul ribozomilor acizii grași sunt combinați chimic pentru a forma proteine",
-          "why": "Ribozomii combină aminoacizi, nu acizi grași, pentru a forma proteine."
+          "why": "Ribozomii combină aminoacizi, nu acizi grași, pentru a forma proteine. (Sursă: Celula și fiziologia celulară — reticulul endoplasmatic și ribozomii.)"
         },
         {
           "letter": "E",
           "text": "lizozomii conțin enzime pentru digestia extracelulară",
-          "why": "Baremul exclude E, urmând rolul obișnuit al lizozomilor în digestia intracelulară. Există însă și secreție de enzime lizozomale pentru degradare extracelulară, de exemplu la osteoclaste; excluderea nu este o regulă fără excepții."
+          "why": "Lizozomul conține enzime care degradează particulele nutritive pătrunse în celulă. Funcția descrisă de sursă este digestia în interiorul celulei, nu digestia extracelulară. (Sursă: Celula și fiziologia celulară — lizozomii.)"
         }
       ],
       "sourcePages": [
@@ -185,27 +185,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "corpusculii cu rol în sinteza proteinelor celulare sunt formați din materiale conținute în nucleol",
-          "why": "Nucleolul participă la producerea ARN-ului ribozomal și asamblarea subunităților ribozomale, exportate apoi pentru sinteza proteinelor în citoplasmă."
+          "why": "Nucleolii conțin ARN care intervine în producerea subunităților ribozomale; subunitățile sunt apoi asamblate în citoplasmă, iar ribozomii participă la sinteza proteinelor. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         },
         {
           "letter": "B",
           "text": "la nivelul membranei neuronale, ionii de sodiu sunt transportați prin difuziune facilitată în afara celulei",
-          "why": "Expulzarea sodiului împotriva gradientului de concentrație se realizează prin transport activ, prin pompa de sodiu și potasiu."
+          "why": "Sursa dă eliminarea sodiului din neuron ca exemplu de transport activ împotriva gradientului; pompa de sodiu-potasiu consumă ATP. (Sursă: Celula și fiziologia celulară — transportul activ; Țesutul nervos — pompa de sodiu-potasiu.)"
         },
         {
           "letter": "C",
           "text": "proteinele periferice membranare pot avea rol în remodelarea celulară",
-          "why": "Proteine periferice asociate feței citoplasmatice leagă membrana de citoschelet și participă la schimbarea formei celulare."
+          "why": "Sursa atribuie unor proteine periferice rol în remodelarea celulară în timpul diviziunii și contracțiilor. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "D",
           "text": "prin fagocitoză, celula preia în interiorul ei substanțe chimice dizolvate în apă",
-          "why": "Preluarea picăturilor de lichid cu substanțe dizolvate se numește pinocitoză; fagocitoza preia particule solide."
+          "why": "Preluarea picăturilor de lichid cu substanțe dizolvate se numește pinocitoză; fagocitoza preia particule solide. (Sursă: Celula și fiziologia celulară — endocitoza și exocitoza.)"
         },
         {
           "letter": "E",
           "text": "membrana plasmatică este alcătuită din două straturi duble de fosfolipide",
-          "why": "Membrana plasmatică are un singur bistrat fosfolipidic, adică două straturi de fosfolipide."
+          "why": "Membrana plasmatică are un singur bistrat fosfolipidic, adică două straturi de fosfolipide. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         }
       ],
       "sourcePages": [
@@ -228,27 +228,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "nucleolul este un corpuscul dens delimitat de o membrană subțire, învelișul nuclear, și alcătuit din proteine și ARN",
-          "why": "Se selectează afirmația incorectă: nucleolul nu are membrană proprie. Învelișul nuclear înconjoară nucleul."
+          "why": "Învelișul nuclear înconjoară nucleul, nu nucleolul. Nucleolii sunt descriși ca mase dense din interiorul nucleului; asocierea din enunț confundă cele două structuri. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii, figura 3.5 — organitele celulare.)"
         },
         {
           "letter": "B",
           "text": "sinteza neurotransmițătorilor de către celulele nervoase se face prin exocitoză",
-          "why": "Se selectează afirmația incorectă: exocitoza eliberează neurotransmițătorii; nu îi sintetizează."
+          "why": "Se selectează afirmația incorectă: exocitoza eliberează neurotransmițătorii; nu îi sintetizează. (Sursă: Celula și fiziologia celulară — endocitoza și exocitoza.)"
         },
         {
           "letter": "C",
           "text": "reabsorbția apei la nivelul tubilor renali se face printr-un mecanism pasiv",
-          "why": "Afirmația este adevărată: apa este reabsorbită prin osmoză. Enunțul cere afirmațiile incorecte."
+          "why": "Afirmația este adevărată: apa este reabsorbită prin osmoză. Enunțul cere afirmațiile incorecte. (Sursă: Celula și fiziologia celulară — mișcările moleculare.)"
         },
         {
           "letter": "D",
           "text": "la nivelul membranei celulare capătul polarizat al fosfolipidelor este hidrofil",
-          "why": "Afirmația este adevărată: capătul polarizat este hidrofil. Enunțul cere afirmațiile incorecte."
+          "why": "Afirmația este adevărată: capătul polarizat este hidrofil. Enunțul cere afirmațiile incorecte. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "E",
           "text": "globulele albe îndepărtează microbii din circulația sanguină prin pinocitoză",
-          "why": "Se selectează afirmația incorectă: înglobarea microbilor se face prin fagocitoză."
+          "why": "Se selectează afirmația incorectă: înglobarea microbilor se face prin fagocitoză. (Sursă: Celula și fiziologia celulară — endocitoza și exocitoza.)"
         }
       ],
       "sourcePages": [
@@ -272,27 +272,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "limfocitele au un nucleu lobat",
-          "why": "Limfocitele obișnuite au un nucleu mare, rotund sau ușor indentat; nucleul segmentat în lobi este caracteristic unor granulocite."
+          "why": "Tabelul leucocitelor descrie limfocitul cu un nucleu mare; nucleii cu lobi sunt indicați pentru neutrofile și eozinofile. Acest contrast susține excluderea enunțului despre limfocite. (Sursă: Sângele — tabelul tipurilor de leucocite.)"
         },
         {
           "letter": "B",
           "text": "mitocondria are rol în respirația celulară",
-          "why": "Mitocondria realizează etape ale respirației aerobe, inclusiv ciclul Krebs și fosforilarea oxidativă. Afirmația este adevărată și nu se selectează la cerința negativă."
+          "why": "Mitocondriile participă la respirația celulară și folosesc energia eliberată din nutrienți pentru formarea ATP. Afirmația este adevărată și nu se selectează la cerința negativă. (Sursă: Celula și fiziologia celulară — mitocondriile.)"
         },
         {
           "letter": "C",
           "text": "centrozomul este o structură membranoasă compusă din doi centrioli în formă de tijă",
-          "why": "Centrozomul este un centru organizator al microtubulilor, cu centrioli și material pericentriolar; nu este delimitat de membrană."
+          "why": "Figura celulei identifică centriolul, dar nu descrie structura centrozomului și nici existența unei membrane în jurul lui. Baremul selectează varianta ca incorectă; materialul autorizat nu permite justificarea completă a acestui detaliu. (Sursă: Celula și fiziologia celulară — figura 3.5 — organitele celulare.)"
         },
         {
           "letter": "D",
           "text": "prin difuziune facilitată glucoza intră în hematii",
-          "why": "Afirmația este adevărată: glucoza intră în hematii cu ajutorul proteinelor transportoare, fără consum direct de ATP."
+          "why": "Afirmația este adevărată: glucoza intră în hematii cu ajutorul proteinelor transportoare, fără consum direct de ATP. (Sursă: Celula și fiziologia celulară — mișcările moleculare.)"
         },
         {
           "letter": "E",
           "text": "secreția de mucus se realizează prin difuziune",
-          "why": "Afirmația este incorectă: secreția de mucus se realizează prin exocitoză."
+          "why": "Afirmația este incorectă: secreția de mucus se realizează prin exocitoză. (Sursă: Celula și fiziologia celulară — endocitoza și exocitoza.)"
         }
       ],
       "sourcePages": [
@@ -315,27 +315,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "este cunoscută și sub numele de membrană celulară",
-          "why": "Membrana plasmatică și membrana celulară sunt denumiri pentru învelișul care separă interiorul celulei de mediul extracelular."
+          "why": "Membrana plasmatică și membrana celulară sunt denumiri pentru învelișul care separă interiorul celulei de mediul extracelular. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "B",
           "text": "în principal, este alcătuită din proteine și glucide",
-          "why": "Principalele componente sunt lipidele și proteinele."
+          "why": "Principalele componente sunt lipidele și proteinele. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "C",
           "text": "lipidele sale, majoritar fosfolipide, formează o structură bistratificată",
-          "why": "Fosfolipidele se organizează în două foițe, cu capetele hidrofile spre apă și cozile hidrofobe spre interiorul membranei."
+          "why": "Fosfolipidele se organizează în două foițe, cu capetele hidrofile spre apă și cozile hidrofobe spre interiorul membranei. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "D",
           "text": "prin dispoziția proteinelor, prezintă o structură de tip mozaic fluid",
-          "why": "Modelul mozaicului fluid descrie proteinele distribuite într-un bistrat lipidic în care componentele au mobilitate laterală."
+          "why": "Proteinele globulare încorporate în bistratul lipidic par să plutească printre lipide; aceasta este explicația modelului de mozaic fluid dată de lecție. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "E",
           "text": "glucidele de la nivelul acesteia par să plutească printre lipide",
-          "why": "Proteinele globulare sunt cele descrise ca plutind printre lipide în modelul de mozaic fluid."
+          "why": "Proteinele globulare sunt cele descrise ca plutind printre lipide în modelul de mozaic fluid. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         }
       ],
       "sourcePages": [
@@ -358,27 +358,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "conțin vezicule cu neurotransmițători",
-          "why": "Neurotransmițătorii sunt depozitați în vezicule sinaptice; lizozomii conțin enzime digestive."
+          "why": "Neurotransmițătorii sunt depozitați în vezicule sinaptice; lizozomii conțin enzime digestive. (Sursă: Celula și fiziologia celulară — lizozomii, endocitoza și exocitoza.)"
         },
         {
           "letter": "B",
           "text": "degradează particule nutritive",
-          "why": "Hidrolazele lizozomale degradează materialul nutritiv ajuns în compartimentul lizozomal, eliberând molecule mai mici utilizabile de celulă."
+          "why": "Enzimele lizozomului degradează particulele nutritive pătrunse în celulă și pun la dispoziția acesteia produșii finali. (Sursă: Celula și fiziologia celulară — lizozomii.)"
         },
         {
           "letter": "C",
           "text": "fac parte dintre structurile citoplasmatice",
-          "why": "Lizozomii sunt organite membranare aflate în citoplasmă, distincte de nucleu."
+          "why": "Lizozomii sunt organite membranare aflate în citoplasmă, distincte de nucleu. (Sursă: Celula și fiziologia celulară — citoplasma și organitele, figura 3.5 — organitele celulare.)"
         },
         {
           "letter": "D",
           "text": "conțin enzime pentru digestia intranucleară",
-          "why": "Digestia lizozomală este intracelulară, nu intranucleară."
+          "why": "Digestia lizozomală este intracelulară, nu intranucleară. (Sursă: Celula și fiziologia celulară — lizozomii.)"
         },
         {
           "letter": "E",
           "text": "sunt derivați din sacii aparatului Golgi",
-          "why": "Aparatul Golgi sortează enzime și componente destinate sistemului endozomal-lizozomal. Lecția rezumă această biogeneză spunând că lizozomii derivă din sacii Golgi."
+          "why": "Sursa precizează că lizozomul derivă din sacii aparatului Golgi. (Sursă: Celula și fiziologia celulară — lizozomii, aparatul Golgi.)"
         }
       ],
       "sourcePages": [
@@ -401,27 +401,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "membrana celulară este permeabilă pentru toate tipurile de molecule și ioni",
-          "why": "Afirmația este incorectă: membrana are permeabilitate selectivă."
+          "why": "Afirmația este incorectă: membrana are permeabilitate selectivă. (Sursă: Celula și fiziologia celulară — mișcările moleculare.)"
         },
         {
           "letter": "B",
           "text": "citoscheletul conține rețele de fibre și filamente glucidice",
-          "why": "Afirmația este incorectă: componentele citoscheletului sunt proteice."
+          "why": "Afirmația este incorectă: componentele citoscheletului sunt proteice. (Sursă: Celula și fiziologia celulară — citoscheletul.)"
         },
         {
           "letter": "C",
           "text": "mitocondria este generatoare de energie",
-          "why": "Mitocondria transformă energia nutrienților în ATP; expresia „generatoare de energie” este didactică, nu înseamnă creare de energie din nimic. Afirmația nu este selectată."
+          "why": "Sursa numește mitocondriile „generatoarele celulei”, deoarece energia provenită din alimente este utilizată pentru formarea ATP. Afirmația nu se selectează la cerința negativă. (Sursă: Celula și fiziologia celulară — mitocondriile.)"
         },
         {
           "letter": "D",
           "text": "transportul pasiv consumă oxigen și energie",
-          "why": "Afirmația este incorectă: transportul pasiv nu necesită consum metabolic de energie."
+          "why": "Afirmația este incorectă: transportul pasiv nu necesită consum metabolic de energie. (Sursă: Celula și fiziologia celulară — difuziunea și transportul facilitat.)"
         },
         {
           "letter": "E",
           "text": "citoscheletul asigură deplasarea moleculelor intracitoplasmatice",
-          "why": "Microtubulii și filamentele de actină oferă căi pentru transportul intracelular realizat cu proteine motorii. Afirmația este adevărată și nu răspunde cerinței negative."
+          "why": "Sursa descrie citoscheletul ca rețea proteică de suport și îi enumeră componentele, dar nu descrie deplasarea moleculelor pe această rețea. Baremul nu selectează varianta la cerința negativă; mecanismul invocat nu poate fi justificat din materialul disponibil. (Sursă: Celula și fiziologia celulară — citoscheletul.)"
         }
       ],
       "sourcePages": [
@@ -445,27 +445,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "sunt componente ale membranei plasmatice",
-          "why": "Fosfolipidele formează structura de bază a bistratului membranei plasmatice."
+          "why": "Fosfolipidele formează structura de bază a bistratului membranei plasmatice. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "B",
           "text": "au un capăt polarizat, ce conține fosfor, și unul nepolarizat, alcătuit din lanțuri de acizi grași",
-          "why": "Gruparea fosfat participă la capul polar hidrofil, iar lanțurile de acizi grași formează regiunea nepolară hidrofobă."
+          "why": "Gruparea fosfat participă la capul polar hidrofil, iar lanțurile de acizi grași formează regiunea nepolară hidrofobă. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "C",
           "text": "prin capătul polarizat respinge apa",
-          "why": "Capătul polarizat este hidrofil; porțiunea nepolară este hidrofobă."
+          "why": "Capătul polarizat este hidrofil; porțiunea nepolară este hidrofobă. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "D",
           "text": "oferă membranei plasmatice o structură de tip sandwich",
-          "why": "Cele două suprafețe hidrofile încadrează interiorul hidrofob, ceea ce explică analogia cu un sandwich."
+          "why": "Cele două suprafețe hidrofile încadrează interiorul hidrofob, ceea ce explică analogia cu un sandwich. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "E",
           "text": "permit membranei plasmatice să-și mărească suprafața atunci când veziculele aparatului Golgi fuzionează cu ea",
-          "why": "La exocitoză, membrana fosfolipidică a veziculei se integrează în membrana plasmatică și îi poate mări suprafața."
+          "why": "La exocitoză, membrana fosfolipidică a veziculei se integrează în membrana plasmatică și îi poate mări suprafața. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         }
       ],
       "sourcePages": [
@@ -488,27 +488,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "participă la remodelarea celulei",
-          "why": "Baremul exclude A, deoarece lecția atribuie remodelarea proteinelor periferice. Nu este însă o exclusivitate biologică: proteine transmembranare precum integrinele conectează matricea de citoschelet și influențează forma și mișcarea celulei."
+          "why": "În sursă, remodelarea în diviziune și contracție este atribuită proteinelor periferice; pentru cele transmembranare sunt prezentate rolurile de canale și transportori. Aceasta este distincția urmărită de barem. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "B",
           "text": "servesc drept canale pentru transportul membranar",
-          "why": "Unele proteine care traversează membrana formează pori selectivi pentru ioni sau alte molecule."
+          "why": "Proteinele transmembranare ocupă întreaga grosime a membranei și servesc drept canale pentru transportul membranar. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "C",
           "text": "sunt transportori ai moleculelor organice",
-          "why": "Transportorii transmembranari leagă anumite molecule organice și le transferă între cele două fețe ale membranei; un exemplu este transportul glucozei."
+          "why": "Sursa precizează explicit că proteinele transmembranare pot servi ca transportori ai moleculelor organice. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "D",
           "text": "participă la difuziunea facilitată și la transportul activ al moleculelor și ionilor",
-          "why": "Proteine transmembranare diferite realizează transport facilitat pasiv sau transport activ cu aport energetic; nu toate funcționează prin același mecanism."
+          "why": "Proteine transmembranare diferite realizează transport facilitat pasiv sau transport activ cu aport energetic; nu toate funcționează prin același mecanism. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice, transportul activ, difuziunea și transportul facilitat.)"
         },
         {
           "letter": "E",
           "text": "au exclusiv rol de enzime",
-          "why": "Au și roluri de canale și transportori; rolul lor nu este exclusiv enzimatic."
+          "why": "Au și roluri de canale și transportori; rolul lor nu este exclusiv enzimatic. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         }
       ],
       "sourcePages": [
@@ -531,27 +531,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "difuziunea reprezintă mișcarea moleculelor dintr-o zonă cu o concentrație mare într-una cu concentrație mică",
-          "why": "Difuziunea netă deplasează moleculele din regiunea cu concentrație mai mare spre cea cu concentrație mai mică, prin mișcarea lor termică."
+          "why": "Difuziunea reprezintă deplasarea moleculelor din zona cu concentrație mare în zona cu concentrație mică; lecția o explică prin coliziunile continue dintre molecule. (Sursă: Celula și fiziologia celulară — difuziunea și transportul facilitat.)"
         },
         {
           "letter": "B",
           "text": "moleculele de oxigen trec prin osmoză din alveolele pulmonare în globulele roșii",
-          "why": "Oxigenul trece prin difuziune. Osmoza se referă la apă."
+          "why": "Oxigenul trece prin difuziune. Osmoza se referă la apă. (Sursă: Celula și fiziologia celulară — difuziunea și transportul facilitat.)"
         },
         {
           "letter": "C",
           "text": "osmoza reprezintă difuziunea moleculelor de apă printr-o membrană permeabilă",
-          "why": "Definiția cere o membrană semipermeabilă, selectiv permeabilă, nu simpla menționare a permeabilității."
+          "why": "Definiția cere o membrană semipermeabilă, selectiv permeabilă, nu simpla menționare a permeabilității. (Sursă: Celula și fiziologia celulară — osmoza și mediile hiperton, hipoton și izoton.)"
         },
         {
           "letter": "D",
           "text": "soluția cu o concentrație mare de solvit se numește hipertonă",
-          "why": "Soluția este hipertonă în raport cu o celulă sau altă soluție dacă are o concentrație efectivă mai mare de solviți care nu traversează liber membrana. „Mare” trebuie înțeles comparativ."
+          "why": "În exemplul lecției, soluția exterioară cu 5% sare are concentrație mai mare decât citoplasma, cu aproximativ 1%, și este numită hipertonă. Comparația se face cu interiorul celulei. (Sursă: Celula și fiziologia celulară — osmoza și mediile hiperton, hipoton și izoton.)"
         },
         {
           "letter": "E",
           "text": "difuziunea facilitată depinde de numărul proteinelor transportoare",
-          "why": "Un număr limitat de transportori limitează viteza transportului facilitat și poate duce la saturarea lui."
+          "why": "Rata difuziunii facilitate depinde de numărul proteinelor transportoare din membrană. (Sursă: Celula și fiziologia celulară — difuziunea și transportul facilitat.)"
         }
       ],
       "sourcePages": [
@@ -574,27 +574,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "se găsește în toate celulele sanguine",
-          "why": "Eritrocitele umane mature nu au nucleu."
+          "why": "Eritrocitele umane mature nu au nucleu. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         },
         {
           "letter": "B",
           "text": "este compus în principal din histone și acid dezoxiribonucleic",
-          "why": "Cromatina nucleară este alcătuită din ADN asociat cu histone și alte proteine. Nucleul conține și ARN, enzime și alte componente; formularea lecției pune accent pe materialul genetic."
+          "why": "Sursa descrie nucleul ca fiind compus în principal din histone și ADN; histonele susțin organizarea ADN-ului. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         },
         {
           "letter": "C",
           "text": "histonele împreună cu ADN-ul formează nucleolii",
-          "why": "Histonele și ADN-ul formează cromatina și cromozomii; nucleolii conțin în principal proteine și ARN."
+          "why": "Histonele se unesc cu ADN-ul pentru a forma nucleozomi, care se organizează în cromozomi. Nucleolii sunt structuri distincte, pentru care textul menționează ARN-ul. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         },
         {
           "letter": "D",
           "text": "are ADN organizat în cromozomi",
-          "why": "ADN-ul nuclear este organizat în cromozomi, ale căror molecule sunt asociate cu proteine."
+          "why": "ADN-ul nuclear este organizat în cromozomi, ale căror molecule sunt asociate cu proteine. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         },
         {
           "letter": "E",
           "text": "la nivelul cromozomilor, genele reprezintă segmentele funcționale",
-          "why": "Genele sunt secvențe de ADN cu informație pentru produse funcționale, ARN-uri sau proteine; ele ocupă regiuni ale cromozomilor."
+          "why": "Genele sunt definite în lecție drept segmentele funcționale ale cromozomilor. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         }
       ],
       "sourcePages": [
@@ -617,27 +617,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "reprezintă un ansamblu de membrane ce se extind intracitoplasmatic",
-          "why": "Reticulul este o rețea de membrane care delimitează cisterne și tubuli în citoplasmă."
+          "why": "Reticulul endoplasmatic este descris ca ansamblu de membrane extinse în citoplasmă. (Sursă: Celula și fiziologia celulară — reticulul endoplasmatic și ribozomii.)"
         },
         {
           "letter": "B",
           "text": "este alcătuit din mai mulți saci turtiți",
-          "why": "Baremul exclude B, rezervând această descriere aparatului Golgi. Reticulul endoplasmatic rugos are însă și cisterne aplatizate; excluderea nu justifică afirmația că reticulul nu ar putea avea saci turtiți."
+          "why": "Sursa atribuie descrierea „mai mulți saci turtiți, de obicei curbați la capete” aparatului Golgi. Reticulul este prezentat ca ansamblu de membrane intracitoplasmatice; baremul urmărește această asociere. (Sursă: Celula și fiziologia celulară — reticulul endoplasmatic și ribozomii, aparatul Golgi.)"
         },
         {
           "letter": "C",
           "text": "poate prezenta atașat structuri ce sintetizează proteine",
-          "why": "Ribozomii atașați feței citoplasmatice a reticulului rugos sintetizează proteine care intră în calea secretorie."
+          "why": "Ribozomii atașați reticulului rugos combină aminoacizii pentru a forma proteine. (Sursă: Celula și fiziologia celulară — reticulul endoplasmatic și ribozomii.)"
         },
         {
           "letter": "D",
           "text": "depozitează calciu la nivelul reticulului endoplasmatic neted",
-          "why": "Lumenul reticulului neted poate stoca Ca²⁺; reticulul sarcoplasmatic al fibrei musculare este o specializare a acestui sistem."
+          "why": "Depozitarea calciului este enumerată explicit între funcțiile reticulului endoplasmatic neted. (Sursă: Celula și fiziologia celulară — reticulul endoplasmatic și ribozomii.)"
         },
         {
           "letter": "E",
           "text": "sintetizează lipide la nivelul reticulului endoplasmatic rugos",
-          "why": "Baremul exclude E, urmând asocierea didactică dintre reticulul neted și sinteza lipidelor. Enzime implicate în sinteza lipidică există însă și în reticulul rugos; cele două regiuni aparțin aceleiași rețele. Excluderea nu dovedește absența sintezei lipidice din reticulul rugos."
+          "why": "Lecția asociază sinteza lipidelor reticulului neted și sinteza proteinelor reticulului rugos. Enunțul schimbă această asociere. (Sursă: Celula și fiziologia celulară — reticulul endoplasmatic și ribozomii.)"
         }
       ],
       "sourcePages": [
@@ -659,27 +659,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "este o rețea de fibre, filamente și molecule neconectate între ele",
-          "why": "Componentele citoscheletului formează o rețea interconectată."
+          "why": "Componentele citoscheletului formează o rețea interconectată. (Sursă: Celula și fiziologia celulară — citoscheletul.)"
         },
         {
           "letter": "B",
           "text": "servește drept structură de suport a celulei",
-          "why": "Rețeaua citoscheletică susține forma celulei și organizează poziția și deplasarea componentelor sale."
+          "why": "Citoscheletul este o rețea interconectată care servește drept structură de suport a celulei. (Sursă: Celula și fiziologia celulară — citoscheletul.)"
         },
         {
           "letter": "C",
           "text": "principalele componente ale acestuia sunt microtubulii, microfilamentele și filamentele intermediare",
-          "why": "Microtubulii, microfilamentele de actină și filamentele intermediare sunt cele trei clase principale de elemente citoscheletice."
+          "why": "Cele trei componente principale enumerate sunt microtubulii, microfilamentele și filamentele intermediare. (Sursă: Celula și fiziologia celulară — citoscheletul.)"
         },
         {
           "letter": "D",
           "text": "toate componentele acestuia sunt alcătuite din subunități lipidice",
-          "why": "Subunitățile sunt proteice, nu lipidice."
+          "why": "Subunitățile sunt proteice, nu lipidice. (Sursă: Celula și fiziologia celulară — citoscheletul, cilii și flagelii.)"
         },
         {
           "letter": "E",
           "text": "are o extensie numită flagel",
-          "why": "Flagelul este o extensie a celulei, susținută de microtubuli; formularea atribuie extensia citoscheletului."
+          "why": "Flagelul este descris drept extensie a unor celule, nu ca extensie denumită astfel a întregului citoschelet. (Sursă: Celula și fiziologia celulară — cilii și flagelii.)"
         }
       ],
       "sourcePages": [
@@ -703,27 +703,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "unele celule umane au extensii numite flageli și cili",
-          "why": "Unele celule au prelungiri susținute de microtubuli: de exemplu, flagelul spermatozoidului și cilii unor celule epiteliale."
+          "why": "Lecția precizează că unele celule umane au flagel, iar altele au cili. (Sursă: Celula și fiziologia celulară — cilii și flagelii.)"
         },
         {
           "letter": "B",
           "text": "spermatozoidul este o celulă flagelată",
-          "why": "Flagelul spermatozoidului generează mișcări ondulatorii care contribuie la propulsarea lui."
+          "why": "Flagelul asigură mișcarea unor celule; spermatozoidul este exemplul dat de sursă. (Sursă: Celula și fiziologia celulară — cilii și flagelii.)"
         },
         {
           "letter": "C",
           "text": "flagelii sunt mult mai numeroși decât cilii",
-          "why": "Cilii sunt de obicei numeroși pe o celulă ciliată; spermatozoidul are un singur flagel."
+          "why": "Cilii sunt mai numeroși decât flagelii în comparația din lecție; enunțul inversează raportul. (Sursă: Celula și fiziologia celulară — cilii și flagelii.)"
         },
         {
           "letter": "D",
           "text": "cilii sunt prezenți la nivelul tractului respirator",
-          "why": "Celule ciliate ale epiteliului respirator deplasează mucusul și particulele reținute către faringe."
+          "why": "Cilii celulelor căilor aeriene și tractului respirator se ondulează sincron și deplasează mucusul cu particulele străine prinse în el. (Sursă: Celula și fiziologia celulară — cilii și flagelii.)"
         },
         {
           "letter": "E",
           "text": "cilii sunt mai scurți decât flagelii",
-          "why": "În comparația din lecție, cilii epiteliali sunt mai scurți și mai numeroși decât flagelul spermatozoidului."
+          "why": "În comparația din lecție, cilii epiteliali sunt mai scurți și mai numeroși decât flagelul spermatozoidului. (Sursă: Celula și fiziologia celulară — cilii și flagelii.)"
         }
       ],
       "sourcePages": [
@@ -744,27 +744,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "constituie difuziunea apei prin canalele proteice",
-          "why": "Baremul nu include A. Apa poate traversa membrana prin canale proteice pentru apă, dar definiția osmozei cere deplasarea netă printr-o membrană semipermeabilă, determinată de diferența de concentrație a solviților."
+          "why": "Osmoza este definită prin difuziunea apei printr-o membrană semipermeabilă, spre concentrația mai mare de solvit. Menționarea canalelor proteice nu reproduce această definiție; baremul exclude varianta, fără ca definiția să demonstreze imposibilitatea unei treceri a apei prin canale. (Sursă: Celula și fiziologia celulară — osmoza și mediile hiperton, hipoton și izoton.)"
         },
         {
           "letter": "B",
           "text": "are loc în timpul reabsorbției apei din tubii renali proximali",
-          "why": "Apa urmează osmotic reabsorbția solviților în tubul proximal, prin membrane și căi paracelulare permeabile la apă."
+          "why": "În tubul proximal sunt reabsorbite săruri, iar apa le urmează prin osmoză. Lecția renală confirmă astfel exemplul de transport al apei. (Sursă: Sistemul urinar — reabsorbția sărurilor și a apei.)"
         },
         {
           "letter": "C",
           "text": "se produce pentru reabsorbția sărurilor minerale din tubii renali",
-          "why": "Osmoza transportă apă, nu săruri minerale."
+          "why": "Osmoza transportă apă, nu săruri minerale. (Sursă: Celula și fiziologia celulară — osmoza și mediile hiperton, hipoton și izoton.)"
         },
         {
           "letter": "D",
           "text": "permite ieșirea apei dacă celula este introdusă în mediu hipoton, ducând la liza celulei",
-          "why": "În mediu hipoton apa intră în celulă și poate provoca liza."
+          "why": "În mediu hipoton apa intră în celulă și poate provoca liza. (Sursă: Celula și fiziologia celulară — osmoza și mediile hiperton, hipoton și izoton.)"
         },
         {
           "letter": "E",
           "text": "nu se produce dacă soluția salină pericelulară are concentrația de 0,1 %",
-          "why": "O soluție de 0,1% sare este hipotonă în raport cu celula din exemplul lecției; apa intră prin osmoză."
+          "why": "O soluție de 0,1% sare este hipotonă în raport cu celula din exemplul lecției; apa intră prin osmoză. (Sursă: Celula și fiziologia celulară — osmoza și mediile hiperton, hipoton și izoton.)"
         }
       ],
       "sourcePages": [
@@ -786,27 +786,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "se face fără consum de ATP",
-          "why": "Transportul activ necesită energie, furnizată direct sau indirect de ATP."
+          "why": "Transportul activ necesită energie furnizată de ATP, potrivit definiției din lecție. (Sursă: Celula și fiziologia celulară — transportul activ.)"
         },
         {
           "letter": "B",
           "text": "se produce împotriva gradientului de concentrație",
-          "why": "Transportul activ poate deplasa un solvit împotriva gradientului său electrochimic, folosind o sursă de energie."
+          "why": "Transportul activ deplasează substanțe dintr-o regiune cu concentrație mică într-una cu concentrație mare, împotriva gradientului de concentrație. (Sursă: Celula și fiziologia celulară — transportul activ.)"
         },
         {
           "letter": "C",
           "text": "are o rată a transportului limitată de numărul de molecule de colesterol",
-          "why": "Rata este limitată de numărul proteinelor transportoare, nu al moleculelor de colesterol."
+          "why": "Rata este limitată de numărul proteinelor transportoare, nu al moleculelor de colesterol. (Sursă: Celula și fiziologia celulară — transportul activ.)"
         },
         {
           "letter": "D",
           "text": "necesită desfacerea legăturilor fosfat macroergice din molecule încărcate energetic",
-          "why": "Hidroliza ATP furnizează energie pompelor active primare. Transportul activ secundar folosește indirect energia stocată în gradiente create de asemenea pompe."
+          "why": "Sursa atribuie transportului activ energia ATP-ului. Lecția despre metabolism arată că desprinderea grupului fosfat terminal din ATP eliberează energie. (Sursă: Celula și fiziologia celulară — transportul activ; Metabolism și nutriție — energia ATP-ului.)"
         },
         {
           "letter": "E",
           "text": "participă la secreția de mucus",
-          "why": "Baremul nu include E. Secreția de mucus este exocitoză, un transport vezicular care consumă energie; în această grilă transportul activ este tratat separat de transportul vezicular."
+          "why": "Secreția de mucus este exemplu de exocitoză. În tabelul lecției, exocitoza și transportul activ cu proteine transportoare sunt prezentate ca mecanisme distincte. (Sursă: Celula și fiziologia celulară — transportul activ, endocitoza și exocitoza.)"
         }
       ],
       "sourcePages": [
@@ -829,27 +829,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "cromozomi - nucleozomi",
-          "why": "ADN-ul cromozomilor se înfășoară în jurul histonelor, formând nucleozomi, unități ale cromatinei."
+          "why": "Histonele și ADN-ul formează nucleozomi, iar nucleozomii se înfășoară între ei și formează cromozomul, potrivit descrierii din lecție. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         },
         {
           "letter": "B",
           "text": "cromozomi - gene, segmente funcționale",
-          "why": "Cromozomii conțin gene, regiuni de ADN care codifică produse funcționale."
+          "why": "Genele sunt segmentele funcționale ale cromozomilor, conform definiției din sursă. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         },
         {
           "letter": "C",
           "text": "nucleoli - ADN",
-          "why": "Baremul exclude C și accentuează ARN-ul din nucleol. Nucleolul se formează însă în jurul genelor pentru ARN ribozomal, deci conține și ADN ribozomal; asocierea nu poate fi respinsă prin absența totală a ADN-ului."
+          "why": "Textul descrie nucleolii prin ARN-ul care intervine în producerea subunităților ribozomale, iar ADN-ul prin asocierea cu histonele în nucleozomi și cromozomi. Aceasta explică asocierea urmărită de barem; textul nu demonstrează absența absolută a ADN-ului din nucleol. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         },
         {
           "letter": "D",
           "text": "cromatina - ADN",
-          "why": "Cromatina reprezintă ADN asociat cu histone și alte proteine, forma de organizare a materialului genetic nuclear."
+          "why": "Sursa descrie asocierea ADN-ului cu histonele în organizarea materialului nuclear. Termenul „cromatină” nu este definit în textul furnizat; baremul acceptă asocierea, dar nomenclatura ei nu poate fi documentată complet aici. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         },
         {
           "letter": "E",
           "text": "nucleozomi - ribozomi",
-          "why": "Nucleozomii organizează ADN-ul în jurul histonelor; subunitățile ribozomale se formează în nucleoli."
+          "why": "Nucleozomii organizează ADN-ul în jurul histonelor; subunitățile ribozomale se formează în nucleoli. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         }
       ],
       "sourcePages": [
@@ -872,27 +872,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "reticulul endoplasmatic rugos - este sediul sintezei lipidice",
-          "why": "Baremul exclude A deoarece lecția asociază sinteza lipidică reticulului neted și sinteza proteică reticulului rugos. Reticulul rugos conține totuși și enzime ale sintezei lipidice; clasificarea didactică nu înseamnă că această activitate ar fi imposibilă în membranele lui."
+          "why": "În descrierea lecției, reticulul rugos este sediul sintezei proteinelor, iar reticulul neted este asociat sintezei lipidelor. (Sursă: Celula și fiziologia celulară — reticulul endoplasmatic și ribozomii.)"
         },
         {
           "letter": "B",
           "text": "reticulul endoplasmatic neted - sintetizează fosfolipide",
-          "why": "Enzime din membrana reticulului endoplasmatic sintetizează fosfolipide, funcție accentuată la reticulul neted în lecție."
+          "why": "Sursa atribuie reticulului neted sinteza lipidelor și a membranei; membrana este descrisă ca fiind alcătuită în special din fosfolipide. Asocierea rezultă din corelarea acestor pasaje. (Sursă: Celula și fiziologia celulară — reticulul endoplasmatic și ribozomii, alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "C",
           "text": "reticulul endoplasmatic - este format din saci și canale extinse intracitoplasmatic",
-          "why": "Reticulul formează un sistem continuu de cisterne și tubuli membranari extins în citoplasmă."
+          "why": "Reticulul endoplasmatic este un ansamblu de membrane extinse în citoplasmă, reprezentat în figura celulei. (Sursă: Celula și fiziologia celulară — reticulul endoplasmatic și ribozomii, figura 3.5 — organitele celulare.)"
         },
         {
           "letter": "D",
           "text": "este organit localizat într-o substanță semilichidă",
-          "why": "Reticulul se află în citoplasmă, descrisă ca substanță semilichidă; membranele sale delimitează un lumen propriu."
+          "why": "Reticulul endoplasmatic se află în citoplasma descrisă ca substanță semilichidă. (Sursă: Celula și fiziologia celulară — citoplasma și organitele.)"
         },
         {
           "letter": "E",
           "text": "asamblează intranuclear unitățile ribozomale",
-          "why": "Asamblarea subunităților ribozomale are loc în nucleoli."
+          "why": "Nucleolii, nu reticulul, participă la producerea subunităților ribozomale. Textul precizează că subunitățile se asamblează apoi în citoplasmă pentru a forma ribozomi. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         }
       ],
       "sourcePages": [
@@ -914,27 +914,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "este format din saci turtiți, curbați la capete",
-          "why": "Cisternele Golgi sunt saci membranari aplatizați, dispuși în stive, cu margini din care se pot forma vezicule."
+          "why": "Aparatul Golgi este alcătuit din mai mulți saci turtiți, de obicei curbați la capete, din care se formează vezicule. (Sursă: Celula și fiziologia celulară — aparatul Golgi.)"
         },
         {
           "letter": "B",
           "text": "eliberează spre nucleu molecule împachetate",
-          "why": "Veziculele Golgi sunt dirijate spre destinațiile lor celulare ori spre membrană pentru secreție; nucleul nu este destinația indicată aici."
+          "why": "Sursa arată că aparatul Golgi împachetează proteinele și lipidele înainte de transportul la destinația lor finală. Nu precizează nucleul ca destinație; baremul exclude varianta, iar această destinație nu este susținută de pasaj. (Sursă: Celula și fiziologia celulară — aparatul Golgi.)"
         },
         {
           "letter": "C",
           "text": "participă la respirația celulară",
-          "why": "Respirația celulară este asociată mitocondriilor, nu aparatului Golgi."
+          "why": "Respirația celulară este asociată mitocondriilor, nu aparatului Golgi. (Sursă: Celula și fiziologia celulară — mitocondriile.)"
         },
         {
           "letter": "D",
           "text": "procesează și împachetează proteine pentru secreție",
-          "why": "Aparatul Golgi modifică, sortează și împachetează proteine în vezicule destinate secreției sau altor compartimente."
+          "why": "Aparatul Golgi procesează și împachetează proteinele și lipidele în vezicule înainte de transport; exocitoza eliberează conținutul veziculelor din celulele secretoare. (Sursă: Celula și fiziologia celulară — aparatul Golgi, endocitoza și exocitoza.)"
         },
         {
           "letter": "E",
           "text": "degradează particule nutritive",
-          "why": "Degradarea particulelor nutritive este funcția enzimelor lizozomale."
+          "why": "Degradarea particulelor nutritive este funcția enzimelor lizozomale. (Sursă: Celula și fiziologia celulară — lizozomii.)"
         }
       ],
       "sourcePages": [
@@ -959,27 +959,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "cilii sunt prezenți la nivelul celulelor care căptușesc căile aeriene superioare",
-          "why": "Numeroase celule ale epiteliului respirator au cili mobili care contribuie la eliminarea mucusului încărcat cu particule."
+          "why": "Numeroase celule ale epiteliului respirator au cili mobili care contribuie la eliminarea mucusului încărcat cu particule. (Sursă: Celula și fiziologia celulară — cilii și flagelii.)"
         },
         {
           "letter": "B",
           "text": "flagelul asigură mișcarea tuturor celulelor sexuale prin tractul genital",
-          "why": "Spermatozoizii au flagel; ovocitele nu au flagel, deci afirmația nu se aplică tuturor celulelor sexuale."
+          "why": "Sursa atribuie flagelului mișcarea spermatozoidului. Lecția reproducerii feminine descrie deplasarea ovulului prin cilii trompelor, nu printr-un flagel propriu. (Sursă: Celula și fiziologia celulară — cilii și flagelii; Sistemul reproducător feminin — trompele uterine și transportul ovulului.)"
         },
         {
           "letter": "C",
           "text": "veziculele pot conține substanțe transportate în celulă",
-          "why": "Veziculele delimitează încărcături transportate în interiorul celulei sau preluate din exterior prin endocitoză."
+          "why": "Veziculele delimitează încărcături transportate în interiorul celulei sau preluate din exterior prin endocitoză. (Sursă: Celula și fiziologia celulară — endocitoza și exocitoza.)"
         },
         {
           "letter": "D",
           "text": "enzimele digestiei intracelulare degradează particule nutritive în produși finali",
-          "why": "Enzimele lizozomale hidrolizează moleculele nutritive în componente mai simple, disponibile proceselor celulare."
+          "why": "Enzimele lizozomale degradează particulele nutritive pătrunse în celulă și pun produșii finali la dispoziția celulei. (Sursă: Celula și fiziologia celulară — lizozomii.)"
         },
         {
           "letter": "E",
           "text": "pinocitoza este endocitoza unor picături de lichid",
-          "why": "Pinocitoza internalizează lichid extracelular și substanțe dizolvate în vezicule delimitate de membrană."
+          "why": "Pinocitoza internalizează lichid extracelular și substanțe dizolvate în vezicule delimitate de membrană. (Sursă: Celula și fiziologia celulară — endocitoza și exocitoza.)"
         }
       ],
       "sourcePages": [
@@ -1002,27 +1002,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "transport conform gradientului de concentrație - cu consum de ATP - lipide",
-          "why": "Transportul pasiv în sensul gradientului nu necesită consum de ATP."
+          "why": "Transportul pasiv în sensul gradientului nu necesită consum de ATP. (Sursă: Celula și fiziologia celulară — difuziunea și transportul facilitat.)"
         },
         {
           "letter": "B",
           "text": "osmoză - membrană semipermeabilă - pentru solventul din soluția apoasă",
-          "why": "În soluții apoase, solventul este apa; osmoza este deplasarea ei netă printr-o membrană selectiv permeabilă."
+          "why": "În soluții apoase, solventul este apa; osmoza este deplasarea ei netă printr-o membrană selectiv permeabilă. (Sursă: Celula și fiziologia celulară — osmoza și mediile hiperton, hipoton și izoton.)"
         },
         {
           "letter": "C",
           "text": "difuziune facilitată - glucoză - membrana hematiei",
-          "why": "Glucoza intră în hematii prin transportori GLUT, în sensul gradientului, fără consum direct de ATP."
+          "why": "Tabelul mecanismelor de transport dă difuziunea glucozei în hematii ca exemplu de difuziune facilitată, asistată de o proteină transportoare. (Sursă: Celula și fiziologia celulară — mișcările moleculare.)"
         },
         {
           "letter": "D",
           "text": "fagocitoză - microbii din circulație - celulele roșii",
-          "why": "Fagocitoza microbilor este realizată de anumite globule albe, nu de globulele roșii."
+          "why": "Fagocitoza microbilor este realizată de anumite globule albe, nu de globulele roșii. (Sursă: Celula și fiziologia celulară — endocitoza și exocitoza.)"
         },
         {
           "letter": "E",
           "text": "exocitoză - butoni terminali - neurotransmițători",
-          "why": "Veziculele sinaptice fuzionează cu membrana presinaptică din butonul terminal și eliberează neurotransmițătorul în fanta sinaptică."
+          "why": "Veziculele sinaptice fuzionează cu membrana presinaptică din butonul terminal și eliberează neurotransmițătorul în fanta sinaptică. (Sursă: Celula și fiziologia celulară — endocitoza și exocitoza.)"
         }
       ],
       "sourcePages": [
@@ -1046,27 +1046,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "au nucleu - cea mai mare componentă celulară",
-          "why": "Baremul acceptă descrierea celulei umane tipice, în care nucleul este un component voluminos. Nu este universală: eritrocitele mature nu au nucleu, iar alte compartimente pot ocupa cea mai mare parte a unor celule specializate."
+          "why": "Sursa numește nucleul cel mai mare component celular, dar precizează separat excepția globulelor roșii, care nu au nucleu. Baremul acceptă descrierea generală a celulei umane, cu această excepție menționată în lecție. (Sursă: Celula și fiziologia celulară — structura celulei, nucleul și nucleolii.)"
         },
         {
           "letter": "B",
           "text": "se divid prin mitoză pentru creștere și reparare",
-          "why": "Mitoza permite multiplicarea celulelor somatice pentru creștere și reparare. Nu toate celulele umane mature se mai divid; neuronii diferențiați sunt un exemplu."
+          "why": "Lecția celulei spune că eucariotele se divid mitotic, iar introducerea leagă diviziunea celulară de creștere și reparație. (Sursă: Celula și fiziologia celulară — celulele procariote și eucariote; Introducere în anatomie și fiziologie — funcțiile organismului.)"
         },
         {
           "letter": "C",
           "text": "conțin filamentele intermediare ce asigură deplasarea intercelulară a particulelor",
-          "why": "Filamentele intermediare au mai ales rol de rezistență mecanică. Transportul intracelular cu proteine motorii folosește în principal microtubuli și actină; nu este deplasare intercelulară prin filamente intermediare."
+          "why": "Filamentele intermediare sunt componente ale citoscheletului, căruia sursa îi atribuie rol de suport celular. Nu este descrisă deplasarea particulelor între celule prin aceste filamente; mecanismul din enunț nu este susținut. (Sursă: Celula și fiziologia celulară — citoscheletul.)"
         },
         {
           "letter": "D",
           "text": "formează apă din oxigenul inspirat, prin respirația celulară",
-          "why": "La capătul lanțului respirator mitocondrial, oxigenul acceptă electroni și protoni și se formează apă."
+          "why": "În mitocondrie, oxigenul se combină cu hidrogenul și electronii pentru a forma apă, în descrierea respirației celulare din sursă. (Sursă: Celula și fiziologia celulară — mitocondriile.)"
         },
         {
           "letter": "E",
           "text": "conțin proteine periferice cu rol enzimatic",
-          "why": "Unele proteine periferice asociate membranei catalizează reacții chimice, având rol de enzime."
+          "why": "Unele proteine periferice asociate membranei catalizează reacții chimice, având rol de enzime. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         }
       ],
       "sourcePages": [
@@ -1088,27 +1088,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "în reticulul endoplasmatic are loc și sinteza membranelor",
-          "why": "Reticulul produce lipide și proteine destinate membranelor sistemului endomembranar și membranei plasmatice."
+          "why": "Reticulului endoplasmatic neted îi sunt atribuite sinteza lipidelor și a membranei. (Sursă: Celula și fiziologia celulară — reticulul endoplasmatic și ribozomii.)"
         },
         {
           "letter": "B",
           "text": "în reticulul endoplasmatic neted se poate depozita calciul",
-          "why": "Ca²⁺ poate fi acumulat în lumenul reticulului neted și eliberat controlat pentru semnalizare sau contracție musculară."
+          "why": "Sursa enumeră depozitarea calciului între funcțiile reticulului endoplasmatic neted. (Sursă: Celula și fiziologia celulară — reticulul endoplasmatic și ribozomii.)"
         },
         {
           "letter": "C",
           "text": "flagelii permit mișcarea anumitor celule",
-          "why": "Baremul furnizat nu include C, deși afirmația este susținută de lecție: flagelul permite mișcarea spermatozoidului. Punctajul păstrează cheia AB."
+          "why": "Baremul furnizat nu include C, deși afirmația este susținută de lecție: flagelul permite mișcarea spermatozoidului. Punctajul păstrează cheia AB. (Sursă: Celula și fiziologia celulară — cilii și flagelii.)"
         },
         {
           "letter": "D",
           "text": "microtubulii sunt tije fine situate în citoplasmă",
-          "why": "Microtubulii sunt structuri tubulare; formularea „tije fine” corespunde filamentelor din descrierea citoscheletului."
+          "why": "Textul enumeră microtubulii ca elemente proteice ale citoscheletului, dar nu definește forma lor prin contrastul „tije”/„tuburi”. Baremul exclude varianta; forma exactă nu poate fi justificată doar din acest pasaj. (Sursă: Celula și fiziologia celulară — citoscheletul.)"
         },
         {
           "letter": "E",
           "text": "nucleolul este un corpuscul dens fără membrană",
-          "why": "Baremul furnizat nu include E, deși lecția descrie nucleolul ca fiind lipsit de membrană. Punctajul păstrează cheia AB."
+          "why": "Sursa numește nucleolii mase dense, iar figura îi arată în interiorul nucleului. Nu precizează explicit lipsa unei membrane proprii; baremul exclude E, dar textul disponibil nu justifică declararea descrierii drept falsă. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii, figura 3.5 — organitele celulare.)"
         }
       ],
       "sourcePages": [
@@ -1130,27 +1130,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "centrozomii sunt structuri non-membranoase compuse din 2 centrioli",
-          "why": "Afirmația descrie structura centrozomilor, nu funcția lor. Enunțul cere fiziologia organitelor."
+          "why": "Figura identifică centriolul, dar textul nu descrie centrozomul alcătuit din doi centrioli. Baremul exclude A din întrebarea despre funcții; compoziția exactă nu poate fi verificată complet din materialul furnizat. (Sursă: Celula și fiziologia celulară — figura 3.5 — organitele celulare.)"
         },
         {
           "letter": "B",
           "text": "cromatina conține informația genetică pentru sinteza proteică",
-          "why": "Baremul exclude B. ADN-ul cromatinei conține gene folosite în sinteza proteinelor, iar cromatina este o componentă nucleară; excluderea din grila despre organite nu neagă această funcție."
+          "why": "Baremul exclude varianta. Sursa descrie ADN-ul și genele nucleare, dar nu definește cromatina sau relația ei cu sinteza proteică; această excludere nu trebuie transformată într-o afirmație că informația genetică ar lipsi. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         },
         {
           "letter": "C",
           "text": "veziculele citoplasmatice conțin substanțe transportate în celulă",
-          "why": "Baremul exclude C, deși veziculele membranare transportă încărcături în citoplasmă. Manualul prezintă această funcție în tabelul componentelor celulare; nu trebuie învățat că veziculele nu transportă substanțe."
+          "why": "Sursa descrie procesarea și împachetarea substanțelor în vezicule Golgi, precum și migrarea veziculelor în citoplasmă în endocitoză. Varianta este susținută de aceste pasaje, deși baremul nu o include; discrepanța rămâne explicită. (Sursă: Celula și fiziologia celulară — endocitoza și exocitoza, aparatul Golgi.)"
         },
         {
           "letter": "D",
           "text": "lizozomii, prin enzimele pe care le conțin, participă la digestia intracelulară",
-          "why": "Hidrolazele lizozomale descompun materiale internalizate și componente celulare, realizând digestia intracelulară."
+          "why": "Lizozomii conțin enzime care degradează particulele nutritive pătrunse în celulă; acesta este rolul lor în digestia intracelulară. (Sursă: Celula și fiziologia celulară — lizozomii.)"
         },
         {
           "letter": "E",
           "text": "mitocondria are rol în respirația celulară",
-          "why": "În mitocondrie se desfășoară etape ale respirației aerobe care contribuie la producerea ATP."
+          "why": "În mitocondrie se desfășoară etape ale respirației aerobe care contribuie la producerea ATP. (Sursă: Celula și fiziologia celulară — mitocondriile.)"
         }
       ],
       "sourcePages": [
@@ -1173,27 +1173,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "intră în structura tuturor celulelor eucariote",
-          "why": "Există celule eucariote specializate fără nucleu, precum eritrocitele umane mature."
+          "why": "Există celule eucariote specializate fără nucleu, precum eritrocitele umane mature. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         },
         {
           "letter": "B",
           "text": "este înconjurat de o membrană formată dintr-un dublu strat fosfolipidic",
-          "why": "Învelișul nuclear are două membrane, fiecare cu propriul bistrat fosfolipidic: în total patru straturi de fosfolipide."
+          "why": "Învelișul nuclear are două membrane, fiecare cu propriul bistrat fosfolipidic: în total patru straturi de fosfolipide. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         },
         {
           "letter": "C",
           "text": "la nivelul membranei există pori prin care comunică cu citoplasma",
-          "why": "Complexele porilor nucleari controlează schimbul de molecule între nucleoplasmă și citoplasmă."
+          "why": "Porii învelișului nuclear permit mediului intern al nucleului să comunice cu citoplasma. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         },
         {
           "letter": "D",
           "text": "este situat la periferia celulei pentru celulele adipoase",
-          "why": "În adipocitul alb, picătura lipidică mare deplasează nucleul spre periferie. Adipocitele brune au altă organizare; explicația urmează celula adipoasă tipică din lecție."
+          "why": "Figura 3.4 reprezintă celula adipoasă cu nucleul deplasat la periferie; explicația se limitează la tipul de celulă ilustrat. (Sursă: Celula și fiziologia celulară — figura 3.4 — forme și nuclei celulari.)"
         },
         {
           "letter": "E",
           "text": "este unic pentru celulele musculare netede",
-          "why": "Celula musculară netedă are de regulă un singur nucleu central, spre deosebire de fibra musculară scheletică multinucleată."
+          "why": "Celula musculară netedă are de regulă un singur nucleu central, spre deosebire de fibra musculară scheletică multinucleată. (Sursă: Țesutul muscular — tipurile de țesut muscular și tabelul comparativ; Celula și fiziologia celulară — figura 3.4 — forme și nuclei celulari.)"
         }
       ],
       "sourcePages": [
@@ -1215,27 +1215,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "citoplasma are consistența unui gel ce conține și vacuole",
-          "why": "Citoplasma are o fază apoasă cu consistență de gel și conține compartimente delimitate de membrane; celulele animale pot prezenta vacuole mici și vezicule."
+          "why": "Citoplasma este descrisă cu consistență de gel, iar figura 3.5 identifică o vacuolă în interiorul celulei. (Sursă: Celula și fiziologia celulară — structura celulei, figura 3.5 — organitele celulare.)"
         },
         {
           "letter": "B",
           "text": "organitele sunt „mici organe” în care se desfășoară diverse funcții celulare",
-          "why": "Baremul furnizat nu include B. Afirmația definește organitele prin funcțiile lor, în timp ce enunțul cere structura componentelor de bază; cheia păstrată este AD."
+          "why": "Sursa numește organitele „mici organe” în care se desfășoară funcții celulare. Baremul nu include B, deși definiția este susținută; cerința se referă la structura componentelor de bază, fără ca aceasta să facă definiția falsă. (Sursă: Celula și fiziologia celulară — citoplasma și organitele.)"
         },
         {
           "letter": "C",
           "text": "reticulul endoplasmatic rugos este o rețea de membrane interconectate",
-          "why": "Baremul furnizat nu include C, deși descrierea este susținută de lecție. Punctajul păstrează cheia AD."
+          "why": "Baremul furnizat nu include C, deși descrierea este susținută de lecție. Punctajul păstrează cheia AD. (Sursă: Celula și fiziologia celulară — reticulul endoplasmatic și ribozomii.)"
         },
         {
           "letter": "D",
           "text": "membrana celulară conține și proteine globulare",
-          "why": "Bistratul lipidic conține proteine globulare, unele transmembranare, altele asociate periferic, conform modelului mozaicului fluid."
+          "why": "Bistratul lipidic conține proteine globulare, unele transmembranare, altele asociate periferic, conform modelului mozaicului fluid. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "E",
           "text": "aparatul Golgi este alcătuit din mai mulți saci turtiți",
-          "why": "Baremul furnizat nu include E, deși descrierea este susținută de lecție. Punctajul păstrează cheia AD."
+          "why": "Baremul furnizat nu include E, deși descrierea este susținută de lecție. Punctajul păstrează cheia AD. (Sursă: Celula și fiziologia celulară — aparatul Golgi.)"
         }
       ],
       "sourcePages": [
@@ -1259,27 +1259,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "se produce dacă celulele umane sunt introduse într-o soluție hipertonă, cu concentrație de 0,30 %",
-          "why": "În exemplul lecției, soluția de 0,3% sare este hipotonă, nu hipertonă."
+          "why": "În exemplul lecției, soluția de 0,3% sare este hipotonă, nu hipertonă. (Sursă: Celula și fiziologia celulară — osmoza și mediile hiperton, hipoton și izoton.)"
         },
         {
           "letter": "B",
           "text": "nu are loc dacă o celulă umană este suspendată într-o soluție izotonă",
-          "why": "Într-o soluție izotonă nu există osmoză netă; moleculele de apă continuă să traverseze membrana în ambele sensuri."
+          "why": "În exemplul lecției, concentrațiile egale de sare în interior și exterior definesc mediul izoton, în care nu se produce osmoză și volumul celulei nu se modifică. (Sursă: Celula și fiziologia celulară — osmoza și mediile hiperton, hipoton și izoton.)"
         },
         {
           "letter": "C",
           "text": "are loc întotdeauna pentru reabsorbția apei la nivelul tubilor renali",
-          "why": "Reabsorbția tubulară a apei este pasivă și urmează gradientele osmotice. Afirmația nu înseamnă că toate segmentele tubulare reabsorb apă permanent; unele sunt impermeabile sau își modifică permeabilitatea hormonal."
+          "why": "Osmoza este mecanismul dat pentru reabsorbția tubulară a apei, iar lecția renală îl explică în legătură cu reabsorbția sărurilor. Afirmația privește mecanismul reabsorbției, nu faptul că fiecare segment ar reabsorbi permanent apă. (Sursă: Sistemul urinar — reabsorbția sărurilor și a apei.)"
         },
         {
           "letter": "D",
           "text": "determină zbârcirea hematiei suspendate în mediu hipoton",
-          "why": "În mediu hipoton hematia se umflă; zbârcirea apare în mediu hiperton."
+          "why": "În mediu hipoton hematia se umflă; zbârcirea apare în mediu hiperton. (Sursă: Celula și fiziologia celulară — osmoza și mediile hiperton, hipoton și izoton.)"
         },
         {
           "letter": "E",
           "text": "duce la hemoliza hematiei suspendate în mediu hipoton",
-          "why": "Într-un mediu suficient de hipoton, apa intră în hematie, crește volumul ei și poate rupe membrana, producând hemoliză."
+          "why": "Într-un mediu suficient de hipoton, apa intră în hematie, crește volumul ei și poate rupe membrana, producând hemoliză. (Sursă: Celula și fiziologia celulară — osmoza și mediile hiperton, hipoton și izoton.)"
         }
       ],
       "sourcePages": [
@@ -1302,27 +1302,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "este utilizată pentru eliberarea neurotransmițătorilor în fanta sinaptică",
-          "why": "Veziculele sinaptice se unesc cu membrana presinaptică și eliberează neurotransmițătorii în spațiul extracelular al sinapsei."
+          "why": "Veziculele sinaptice se unesc cu membrana presinaptică și eliberează neurotransmițătorii în spațiul extracelular al sinapsei. (Sursă: Celula și fiziologia celulară — endocitoza și exocitoza.)"
         },
         {
           "letter": "B",
           "text": "este implicată în secreția de mucus",
-          "why": "Granulele de secreție ale celulelor mucoase eliberează mucine prin fuziune cu membrana plasmatică."
+          "why": "Secreția de mucus este unul dintre exemplele de exocitoză enumerate în sursă. (Sursă: Celula și fiziologia celulară — endocitoza și exocitoza.)"
         },
         {
           "letter": "C",
           "text": "se realizează prin fuzionarea unei vezicule citoplasmatice cu membrana celulară și eliberarea conținutului ei în celulă",
-          "why": "Exocitoza eliberează conținutul veziculei în exteriorul celulei."
+          "why": "Exocitoza eliberează conținutul veziculei în exteriorul celulei. (Sursă: Celula și fiziologia celulară — endocitoza și exocitoza.)"
         },
         {
           "letter": "D",
           "text": "implică aducerea de particule solide din exterior în citoplasma celulei",
-          "why": "Înglobarea particulelor solide este fagocitoză, o formă de endocitoză."
+          "why": "Înglobarea particulelor solide este fagocitoză, o formă de endocitoză. (Sursă: Celula și fiziologia celulară — endocitoza și exocitoza.)"
         },
         {
           "letter": "E",
           "text": "este utilizată pentru secreția de hormoni de către celulele exocrine",
-          "why": "Hormonii sunt secretați de celule endocrine; formularea „celule exocrine” este greșită."
+          "why": "Hormonii sunt secretați de celule endocrine; formularea „celule exocrine” este greșită. (Sursă: Celula și fiziologia celulară — endocitoza și exocitoza.)"
         }
       ],
       "sourcePages": [
@@ -1344,27 +1344,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "membrana plasmatică are fosfolipide al căror capăt polarizat este alcătuit din lanțuri de acizi grași",
-          "why": "Lanțurile de acizi grași formează porțiunea nepolarizată; capătul polarizat conține gruparea fosfat."
+          "why": "Lanțurile de acizi grași formează porțiunea nepolarizată; capătul polarizat conține gruparea fosfat. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "B",
           "text": "proteinele transmembranare din structura membranei celulare pot fi transportori pentru moleculele organice",
-          "why": "Unele proteine care traversează bistratul transportă molecule organice, cum este glucoza, între mediul extracelular și citoplasmă."
+          "why": "Unele proteine care traversează bistratul transportă molecule organice, cum este glucoza, între mediul extracelular și citoplasmă. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "C",
           "text": "în reticulul endoplasmatic neted are loc și sinteza proteinelor",
-          "why": "Sinteza proteinelor are loc la ribozomi, inclusiv cei atașați reticulului endoplasmatic rugos."
+          "why": "Sinteza proteinelor are loc la ribozomi, inclusiv cei atașați reticulului endoplasmatic rugos. (Sursă: Celula și fiziologia celulară — reticulul endoplasmatic și ribozomii.)"
         },
         {
           "letter": "D",
           "text": "citoscheletul este alcătuit din subunități lipidice",
-          "why": "Componentele citoscheletului sunt alcătuite din subunități proteice."
+          "why": "Componentele citoscheletului sunt alcătuite din subunități proteice. (Sursă: Celula și fiziologia celulară — citoscheletul.)"
         },
         {
           "letter": "E",
           "text": "intră întotdeauna în componența celulelor procariote",
-          "why": "Varianta este reprodusă exact, dar are un subiect neprecizat. Baremul include E; celulele procariote au membrană și citoplasmă, însă nu au nucleu. Nu trebuie interpretată ca afirmând că toate componentele celulei eucariote există și la procariote."
+          "why": "Varianta este reprodusă exact, dar are un subiect neprecizat. Baremul include E; celulele procariote au membrană și citoplasmă, însă nu au nucleu. Nu trebuie interpretată ca afirmând că toate componentele celulei eucariote există și la procariote. (Sursă: Celula și fiziologia celulară — structura celulei, celulele procariote și eucariote.)"
         }
       ],
       "sourcePages": [
@@ -1386,27 +1386,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "aparatul Golgi împachetează proteine și lipide în vezicule",
-          "why": "Aparatul Golgi sortează și împachetează proteine și lipide în vezicule care le transportă către destinații celulare."
+          "why": "Aparatul Golgi procesează și împachetează proteinele și lipidele în vezicule, înainte ca acestea să fie transportate la destinație. (Sursă: Celula și fiziologia celulară — aparatul Golgi.)"
         },
         {
           "letter": "B",
           "text": "centrozomii facilitează distribuția cromozomilor spre celulele fiice în timpul reproducerii celulare",
-          "why": "Centrozomii organizează microtubulii fusului de diviziune, contribuind la separarea și distribuția cromozomilor către celulele fiice."
+          "why": "Figura celulei identifică centriolul, dar materialul furnizat nu descrie funcția centrozomilor în distribuția cromozomilor. Baremul include B; această funcție nu poate fi documentată complet din sursa autorizată. (Sursă: Celula și fiziologia celulară — figura 3.5 — organitele celulare.)"
         },
         {
           "letter": "C",
           "text": "nucleolii conțin proteine și ARN",
-          "why": "Baremul exclude C, deși nucleolii conțin proteine și ARN, implicate în producerea subunităților ribozomale. Excluderea nu înseamnă că această compoziție ar fi falsă."
+          "why": "Textul confirmă ARN-ul din nucleoli și rolul lor în producerea subunităților ribozomale, dar nu precizează aici componenta proteică. Baremul exclude C; nu rezultă din acest pasaj că proteinele ar lipsi din nucleoli. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         },
         {
           "letter": "D",
           "text": "cilii permit propulsia fluidelor pe suprafețele celulare",
-          "why": "Baremul exclude D, deși cilii mobili pot deplasa lichid și mucus pe suprafețele epiteliale, inclusiv în tractul respirator."
+          "why": "Sursa arată că cilii deplasează mucusul cu particule străine prin mișcări sincronizate. Aceasta susține transportul pe suprafața celulară; baremul exclude varianta, iar excluderea nu anulează funcția descrisă. (Sursă: Celula și fiziologia celulară — cilii și flagelii.)"
         },
         {
           "letter": "E",
           "text": "cromatina conține informația genetică pentru sinteza proteică",
-          "why": "Baremul exclude E, deși ADN-ul cromatinei conține gene cu informația necesară sintezei proteinelor. Cromatina este o componentă nucleară."
+          "why": "Baremul exclude varianta. Lecția descrie ADN-ul nuclear și genele drept segmente funcționale ale cromozomilor, dar nu definește cromatina și nici această formulare a funcției sale; nu se poate demonstra falsitatea ei din pasajul furnizat. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         }
       ],
       "sourcePages": [
@@ -1428,27 +1428,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "în aparatul Golgi, proteinele și lipidele celulare sunt procesate și împachetate în vezicule înainte de a fi transportate spre destinația lor finală",
-          "why": "Golgi modifică și sortează încărcăturile primite, apoi le expediază în vezicule către membrană, secreție sau alte compartimente."
+          "why": "În aparatul Golgi, proteinele și lipidele sunt procesate și împachetate în vezicule, înainte de transportul la destinația finală. (Sursă: Celula și fiziologia celulară — aparatul Golgi.)"
         },
         {
           "letter": "B",
           "text": "cilii și flagelii sunt formațiuni asemănătoare firelor de păr",
-          "why": "Baremul exclude B, deși cilii și flagelii sunt prelungiri subțiri susținute de microtubuli, asemănate în manual cu firele de păr. Excluderea din această grilă despre organite nu anulează descrierea morfologică."
+          "why": "Flagelul este comparat explicit cu un fir de păr, iar cilii sunt descriși ca mai scurți și mai numeroși. Baremul exclude B; descrierea generală a acestor prelungiri nu trebuie învățată drept falsă. (Sursă: Celula și fiziologia celulară — cilii și flagelii.)"
         },
         {
           "letter": "C",
           "text": "nucleolul este un corpuscul dens, fără membrană, alcătuit din proteine și ADN",
-          "why": "Baremul exclude C deoarece descrierea didactică accentuează proteinele și ARN-ul nucleolar. Nucleolul conține totuși și ADN ribozomal, în jurul căruia se organizează; nu trebuie dedusă absența ADN-ului."
+          "why": "Sursa accentuează ARN-ul nucleolar și producerea subunităților ribozomale, nu compoziția „proteine și ADN” din enunț. Aceasta este asocierea urmărită de barem; pasajul nu stabilește o absență absolută a ADN-ului. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         },
         {
           "letter": "D",
           "text": "lizozomii sunt saci membranoși cu partiție interioară care conțin enzime pentru digestia intracelulară",
-          "why": "Lizozomii nu sunt descriși ca având o partiție interioară; sunt saci membranoși cu enzime digestive."
+          "why": "Lizozomii nu sunt descriși ca având o partiție interioară; sunt saci membranoși cu enzime digestive. (Sursă: Celula și fiziologia celulară — lizozomii, figura 3.5 — organitele celulare.)"
         },
         {
           "letter": "E",
           "text": "mitocondriile sintetizează ATP",
-          "why": "Fosforilarea oxidativă de la membrana mitocondrială internă produce ATP, folosind energia gradientului de protoni."
+          "why": "Energia eliberată în mitocondrie din nutrienți este folosită pentru formarea moleculelor de ATP. (Sursă: Celula și fiziologia celulară — mitocondriile.)"
         }
       ],
       "sourcePages": [
@@ -1471,27 +1471,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "au nucleu",
-          "why": "Prezența unui nucleu delimitat de înveliș este caracteristica celulei eucariote tipice. Unele celule specializate, precum eritrocitele mature, își pierd nucleul."
+          "why": "Prezența unui nucleu delimitat de înveliș este caracteristica celulei eucariote tipice. Unele celule specializate, precum eritrocitele mature, își pierd nucleul. (Sursă: Celula și fiziologia celulară — celulele procariote și eucariote, nucleul și nucleolii.)"
         },
         {
           "letter": "B",
           "text": "au organite celulare",
-          "why": "Celulele eucariote au compartimente și organite specializate, precum reticulul endoplasmatic și mitocondriile, spre deosebire de organizarea procariotă obișnuită."
+          "why": "Celulele eucariote au compartimente și organite specializate, precum reticulul endoplasmatic și mitocondriile, spre deosebire de organizarea procariotă obișnuită. (Sursă: Celula și fiziologia celulară — celulele procariote și eucariote.)"
         },
         {
           "letter": "C",
           "text": "nu se divid prin procesul de mitoză",
-          "why": "Celulele eucariote se pot divide prin mitoză."
+          "why": "Celulele eucariote se pot divide prin mitoză. (Sursă: Celula și fiziologia celulară — celulele procariote și eucariote.)"
         },
         {
           "letter": "D",
           "text": "includ bacteriile",
-          "why": "Bacteriile sunt procariote."
+          "why": "Bacteriile sunt procariote. (Sursă: Celula și fiziologia celulară — celulele procariote și eucariote.)"
         },
         {
           "letter": "E",
           "text": "sunt prezente la oameni și animale",
-          "why": "Oamenii și celelalte animale sunt organisme eucariote; și plantele și fungii aparțin eucariotelor."
+          "why": "Plantele, animalele și oamenii sunt exemplele de eucariote enumerate de lecție. (Sursă: Celula și fiziologia celulară — celulele procariote și eucariote.)"
         }
       ],
       "sourcePages": [
@@ -1513,27 +1513,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "delimitează celula",
-          "why": "Delimitarea celulei exprimă rolul membranei; cheia selectează aici caracterele morfologice B și E."
+          "why": "Sursa confirmă că membrana delimitează celula. Baremul exclude A din cerința despre caractere morfologice; rolul de delimitare rămâne adevărat. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "B",
           "text": "are o structură de mozaic fluid",
-          "why": "Membrana este descrisă structural ca un bistrat lipidic fluid în care sunt dispuse proteine, formând un mozaic."
+          "why": "Membrana este descrisă structural ca un bistrat lipidic fluid în care sunt dispuse proteine, formând un mozaic. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "C",
           "text": "este formată din fosfolipide, al căror capăt polarizat este hidrofob",
-          "why": "Capătul polarizat este hidrofil."
+          "why": "Capătul polarizat este hidrofil. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "D",
           "text": "proteinele transmembranare pot servi drept canale de transport",
-          "why": "Afirmația descrie o funcție, în timp ce enunțul cere caractere morfologice."
+          "why": "Sursa confirmă că proteinele transmembranare pot servi drept canale. Baremul exclude D din cerința despre morfologie, deoarece enunțul descrie o funcție; funcția însă nu este falsă. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "E",
           "text": "conține și proteine globulare ce par să plutească printre lipide",
-          "why": "Proteinele globulare sunt integrate sau asociate bistratului lipidic, cu mobilitate variabilă în planul membranei."
+          "why": "Proteinele globulare încorporate în bistratul lipidic sunt descrise ca plutind printre lipide. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         }
       ],
       "sourcePages": [
@@ -1556,27 +1556,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "se pot realiza pasiv în direcția gradientului de concentrație",
-          "why": "Difuziunea simplă și cea facilitată pot transporta substanțe în sensul gradientului, fără aport metabolic direct de energie."
+          "why": "Difuziunea simplă și cea facilitată pot transporta substanțe în sensul gradientului, fără aport metabolic direct de energie. (Sursă: Celula și fiziologia celulară — difuziunea și transportul facilitat.)"
         },
         {
           "letter": "B",
           "text": "includ unele procese pasive cum este osmoza",
-          "why": "Osmoza este transportul net pasiv al apei printr-o membrană selectiv permeabilă, determinat de diferența osmotică."
+          "why": "Osmoza este transportul net pasiv al apei printr-o membrană selectiv permeabilă, determinat de diferența osmotică. (Sursă: Celula și fiziologia celulară — osmoza și mediile hiperton, hipoton și izoton.)"
         },
         {
           "letter": "C",
           "text": "pot necesita proteine transportoare",
-          "why": "Transportorii proteici participă atât la difuziunea facilitată, cât și la anumite forme de transport activ."
+          "why": "Transportorii proteici participă atât la difuziunea facilitată, cât și la anumite forme de transport activ. (Sursă: Celula și fiziologia celulară — mișcările moleculare.)"
         },
         {
           "letter": "D",
           "text": "includ endocitoza pentru eliberarea neurotransmițătorilor la nivelul terminațiilor celulelor nervoase",
-          "why": "Eliberarea neurotransmițătorilor se face prin exocitoză."
+          "why": "Eliberarea neurotransmițătorilor se face prin exocitoză. (Sursă: Celula și fiziologia celulară — endocitoza și exocitoza.)"
         },
         {
           "letter": "E",
           "text": "includ exocitoza prin care globulele albe îndepărtează microbii din circulația sanguină",
-          "why": "Globulele albe înglobează microbii prin fagocitoză, o formă de endocitoză."
+          "why": "Globulele albe înglobează microbii prin fagocitoză, o formă de endocitoză. (Sursă: Celula și fiziologia celulară — endocitoza și exocitoza.)"
         }
       ],
       "sourcePages": [
@@ -1601,27 +1601,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "reprezintă difuziunea apei printr-o membrană semipermeabilă, dintr-o regiune cu o concentrație mică de solvit într-una cu o concentrație mare de solvit",
-          "why": "Aceasta descrie osmoza: apa se deplasează net către partea cu concentrație efectivă mai mare de solviți netransportabili. Afirmația adevărată nu se selectează la cerința negativă."
+          "why": "Aceasta este definiția osmozei din lecție: apa traversează membrana semipermeabilă către concentrația mai mare de solvit. Afirmația adevărată nu se selectează la cerința negativă. (Sursă: Celula și fiziologia celulară — osmoza și mediile hiperton, hipoton și izoton.)"
         },
         {
           "letter": "B",
           "text": "reprezintă deplasarea apei din citoplasmă, prin membrana celulară, în direcția concentrației mai mici de sare",
-          "why": "Afirmația este incorectă: deplasarea netă a apei este spre concentrația mai mare de solvit."
+          "why": "Afirmația este incorectă: deplasarea netă a apei este spre concentrația mai mare de solvit. (Sursă: Celula și fiziologia celulară — osmoza și mediile hiperton, hipoton și izoton.)"
         },
         {
           "letter": "C",
           "text": "determină zbârcirea unei celule umane introduse într-o soluție cu o concentrație de 0,3 %",
-          "why": "În modelul cu sare al lecției, soluția de 0,3% este hipotonă și determină intrarea apei în celulă, nu zbârcirea ei. Enunțul omite natura solvitului, dar baremul folosește acest context."
+          "why": "În modelul cu sare al lecției, soluția de 0,3% este hipotonă și determină intrarea apei în celulă, nu zbârcirea ei. Enunțul omite natura solvitului, dar baremul folosește acest context. (Sursă: Celula și fiziologia celulară — osmoza și mediile hiperton, hipoton și izoton.)"
         },
         {
           "letter": "D",
           "text": "duce la umflarea unei celule umane introduse într-o soluție cu o concentrație de 5 %",
-          "why": "În modelul cu sare al lecției, soluția de 5% este hipertonă și determină pierderea apei și zbârcirea celulei, nu umflarea. Concentrația procentuală singură, fără natura solvitului, nu definește tonicitatea."
+          "why": "În exemplul cu sare al lecției, soluția de 5% este hipertonă și determină ieșirea apei și zbârcirea celulei, nu umflarea. (Sursă: Celula și fiziologia celulară — osmoza și mediile hiperton, hipoton și izoton.)"
         },
         {
           "letter": "E",
           "text": "nu modifică dimensiunile unei celule umane introduse într-o soluție cu o concentrație de 1 %",
-          "why": "În exemplul lecției, aproximativ 1% sare reprezintă o soluție izotonă. Afirmația este adevărată și nu se selectează."
+          "why": "În exemplul lecției, aproximativ 1% sare reprezintă o soluție izotonă. Afirmația este adevărată și nu se selectează. (Sursă: Celula și fiziologia celulară — osmoza și mediile hiperton, hipoton și izoton.)"
         }
       ],
       "sourcePages": [
@@ -1642,27 +1642,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "digestia intracelulară",
-          "why": "Digestia intracelulară este realizată de enzimele lizozomale; ribozomii sintetizează proteine."
+          "why": "Digestia intracelulară este realizată de enzimele lizozomale; ribozomii sintetizează proteine. (Sursă: Celula și fiziologia celulară — reticulul endoplasmatic și ribozomii, lizozomii.)"
         },
         {
           "letter": "B",
           "text": "oxidoreducere",
-          "why": "Ribozomii realizează sinteza proteinelor, nu sunt organitele atribuite reacțiilor de oxidoreducere."
+          "why": "Ribozomii realizează sinteza proteinelor, nu sunt organitele atribuite reacțiilor de oxidoreducere. (Sursă: Celula și fiziologia celulară — reticulul endoplasmatic și ribozomii.)"
         },
         {
           "letter": "C",
           "text": "hidroliza proteinelor",
-          "why": "Ribozomii asamblează proteine din aminoacizi, nu le hidrolizează."
+          "why": "Ribozomii asamblează proteine din aminoacizi, nu le hidrolizează. (Sursă: Celula și fiziologia celulară — reticulul endoplasmatic și ribozomii.)"
         },
         {
           "letter": "D",
           "text": "polaritatea celulară",
-          "why": "Funcția ribozomilor cerută aici este sinteza proteinelor, nu stabilirea polarității celulare."
+          "why": "Funcția ribozomilor cerută aici este sinteza proteinelor, nu stabilirea polarității celulare. (Sursă: Celula și fiziologia celulară — reticulul endoplasmatic și ribozomii.)"
         },
         {
           "letter": "E",
           "text": "sinteza proteinelor",
-          "why": "Ribozomii citesc informația ARN-ului mesager și leagă aminoacizii într-un lanț polipeptidic."
+          "why": "Ribozomii sunt corpusculii în care aminoacizii sunt combinați chimic pentru a forma proteine. (Sursă: Celula și fiziologia celulară — reticulul endoplasmatic și ribozomii.)"
         }
       ],
       "sourcePages": [
@@ -1684,27 +1684,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "incluziuni celulare",
-          "why": "Lizozomii sunt organite delimitate de membrană, caracterizate prin enzime digestive; incluziunile celulare nu sunt conținutul lor definitoriu."
+          "why": "Lizozomii sunt organite delimitate de membrană, caracterizate prin enzime digestive; incluziunile celulare nu sunt conținutul lor definitoriu. (Sursă: Celula și fiziologia celulară — lizozomii.)"
         },
         {
           "letter": "B",
           "text": "citoplasmă fundamentală",
-          "why": "Citoplasma fundamentală este citosolul din jurul organitelor, nu mediul propriu al lizozomului. Porțiuni de citosol pot ajunge însă în lizozomi pentru degradare prin autofagie."
+          "why": "Lizozomul este o veziculă cu enzime digestive, aflată în citoplasmă. Sursa nu îi definește conținutul drept citoplasmă fundamentală; această asociere nu este cea descrisă în lecție. (Sursă: Celula și fiziologia celulară — lizozomii, structura celulei.)"
         },
         {
           "letter": "C",
           "text": "enzime pentru digestia intracelulară",
-          "why": "Lizozomii conțin hidrolaze active în mediul lor acid, care realizează digestia intracelulară."
+          "why": "Lizozomii conțin enzime folosite în digestia particulelor nutritive pătrunse în celulă. (Sursă: Celula și fiziologia celulară — lizozomii.)"
         },
         {
           "letter": "D",
           "text": "enzime care degradează particulele nutritive pătrunse în celulă",
-          "why": "Hidrolazele lizozomale descompun materialele internalizate în molecule mai mici, utilizabile de celulă."
+          "why": "Enzimele lizozomale degradează particulele nutritive și pun produșii finali la dispoziția celulei. (Sursă: Celula și fiziologia celulară — lizozomii.)"
         },
         {
           "letter": "E",
           "text": "enzime pentru sinteza proteinelor",
-          "why": "Lizozomii conțin enzime pentru degradare; sinteza proteinelor are loc la ribozomi."
+          "why": "Lizozomii conțin enzime pentru degradare; sinteza proteinelor are loc la ribozomi. (Sursă: Celula și fiziologia celulară — lizozomii, reticulul endoplasmatic și ribozomii.)"
         }
       ],
       "sourcePages": [
@@ -1726,27 +1726,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "se poate realiza activ cu proteine transportoare",
-          "why": "Pompe și cotransportori membranari realizează transport activ, folosind energie direct din ATP sau indirect din alte gradiente."
+          "why": "Transportul activ este realizat cu ajutorul proteinelor transportoare și al energiei furnizate de ATP. (Sursă: Celula și fiziologia celulară — transportul activ.)"
         },
         {
           "letter": "B",
           "text": "cel activ asigură deplasarea moleculelor și a ionilor în sensul gradientelor de concentrație, dintr-o regiune cu o concentrație mare spre o regiune cu concentrație mică",
-          "why": "Transportul activ se realizează împotriva gradientului de concentrație."
+          "why": "Transportul activ se realizează împotriva gradientului de concentrație. (Sursă: Celula și fiziologia celulară — transportul activ.)"
         },
         {
           "letter": "C",
           "text": "include și transportul prin vezicule: difuziunea și osmoza",
-          "why": "Difuziunea și osmoza nu sunt transport vezicular. Transportul prin vezicule include endocitoza și exocitoza."
+          "why": "Difuziunea și osmoza nu sunt transport vezicular. Transportul prin vezicule include endocitoza și exocitoza. (Sursă: Celula și fiziologia celulară — mișcările moleculare.)"
         },
         {
           "letter": "D",
           "text": "asigură și transferul de glucoză în hematii, cu ajutorul proteinelor transportoare",
-          "why": "Transportorii de glucoză ai hematiei permit difuziunea facilitată a acesteia prin membrană."
+          "why": "Transportorii de glucoză ai hematiei permit difuziunea facilitată a acesteia prin membrană. (Sursă: Celula și fiziologia celulară — mișcările moleculare.)"
         },
         {
           "letter": "E",
           "text": "include forme particulare de exocitoză: fagocitoza și pinocitoza",
-          "why": "Fagocitoza și pinocitoza sunt forme de endocitoză."
+          "why": "Fagocitoza și pinocitoza sunt forme de endocitoză. (Sursă: Celula și fiziologia celulară — endocitoza și exocitoza.)"
         }
       ],
       "sourcePages": [
@@ -1768,27 +1768,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "sunt organite celulare comune, localizate în apropierea nucleului celular",
-          "why": "Baremul exclude A, asociind localizarea descrisă cu aparatul Golgi. Lizozomii pot avea însă o distribuție perinucleară, dar poziția lor este dinamică și nu exclusivă; nu trebuie învățat că nu se găsesc lângă nucleu."
+          "why": "Figura 3.5 arată lizozomul în citoplasmă, dar sursa nu definește o localizare obligatorie lângă nucleu. Baremul exclude varianta; poziția în vecinătatea nucleului nu poate fi declarată imposibilă pe baza figurii. (Sursă: Celula și fiziologia celulară — lizozomii, figura 3.5 — organitele celulare.)"
         },
         {
           "letter": "B",
           "text": "sunt grupuri de saci membranoși turtiți",
-          "why": "Grupurile de saci turtiți descriu aparatul Golgi."
+          "why": "Grupurile de saci turtiți descriu aparatul Golgi. (Sursă: Celula și fiziologia celulară — aparatul Golgi.)"
         },
         {
           "letter": "C",
           "text": "au rol în sinteza de proteine și colagen",
-          "why": "Lizozomii au rol în degradare; sinteza proteinelor se realizează la ribozomi."
+          "why": "Lizozomii au rol în degradare; sinteza proteinelor se realizează la ribozomi. (Sursă: Celula și fiziologia celulară — reticulul endoplasmatic și ribozomii, lizozomii.)"
         },
         {
           "letter": "D",
           "text": "sunt prezenți în celulele fagocitare",
-          "why": "În fagocite, lizozomii fuzionează cu fagosomii și contribuie la degradarea particulelor sau microbilor înglobați."
+          "why": "Lecția leagă fagocitoza de înglobarea particulelor și a microbilor, iar lizozomii de digestia particulelor pătrunse în celulă. Asocierea acestor funcții susține rolul digestiv al lizozomilor în celulele fagocitare. (Sursă: Celula și fiziologia celulară — lizozomii, endocitoza și exocitoza.)"
         },
         {
           "letter": "E",
           "text": "sunt prezenți și în neuron și în fibra musculară striată",
-          "why": "Neuronii și fibrele musculare au lizozomi implicați în degradarea și reciclarea componentelor celulare."
+          "why": "Lecția țesutului nervos enumeră explicit lizozomii neuronului. Pentru fibra musculară striată, textul și figurile verificate nu oferă o enumerare explicită a lizozomilor; baremul include E, dar această parte nu poate fi documentată complet aici. (Sursă: Țesutul nervos — organitele neuronului; Celula și fiziologia celulară — lizozomii.)"
         }
       ],
       "sourcePages": [
@@ -1811,27 +1811,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "sunt corpusculi în care se sintetizează proteine",
-          "why": "Ribozomul este complexul ribonucleoproteic la nivelul căruia are loc traducerea ARN-ului mesager în proteină."
+          "why": "Ribozomii sunt corpusculii în care se formează proteine prin combinarea aminoacizilor. (Sursă: Celula și fiziologia celulară — reticulul endoplasmatic și ribozomii.)"
         },
         {
           "letter": "B",
           "text": "pot fi liberi sau atașați reticulului endoplasmatic, formând reticulul endoplasmatic neted",
-          "why": "Atașarea ribozomilor formează reticulul endoplasmatic rugos, nu neted."
+          "why": "Atașarea ribozomilor formează reticulul endoplasmatic rugos, nu neted. (Sursă: Celula și fiziologia celulară — reticulul endoplasmatic și ribozomii.)"
         },
         {
           "letter": "C",
           "text": "sunt prezenți în celulele tubulare renale",
-          "why": "Celulele tubulare renale au ribozomi necesari sintezei proteinelor structurale, enzimelor și transportorilor."
+          "why": "Celulele tubulare renale sunt celule umane eucariote; lecția descrie ribozomii și sinteza proteinelor în această organizare celulară. Aplicarea la celula tubulară este o corelare, nu un exemplu explicit al pasajului despre ribozomi. (Sursă: Celula și fiziologia celulară — celulele procariote și eucariote, reticulul endoplasmatic și ribozomii.)"
         },
         {
           "letter": "D",
           "text": "sunt corpusculi în care aminoacizii sunt combinați chimic pentru a forma proteine",
-          "why": "Ribozomul facilitează formarea legăturilor peptidice între aminoacizi, în ordinea indicată de ARN-ul mesager."
+          "why": "Sursa precizează că aminoacizii sunt combinați chimic în ribozomi pentru a forma proteine. (Sursă: Celula și fiziologia celulară — reticulul endoplasmatic și ribozomii.)"
         },
         {
           "letter": "E",
           "text": "au rol și în depozitarea calciului",
-          "why": "Depozitarea calciului este o funcție a reticulului endoplasmatic neted."
+          "why": "Depozitarea calciului este o funcție a reticulului endoplasmatic neted. (Sursă: Celula și fiziologia celulară — reticulul endoplasmatic și ribozomii.)"
         }
       ],
       "sourcePages": [
@@ -1854,27 +1854,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "sunt celule anucleate",
-          "why": "Afirmația este adevărată: procariotele nu au nucleu delimitat de înveliș nuclear. Enunțul cere afirmațiile incorecte."
+          "why": "Afirmația este adevărată: procariotele nu au nucleu delimitat de înveliș nuclear. Enunțul cere afirmațiile incorecte. (Sursă: Celula și fiziologia celulară — celulele procariote și eucariote.)"
         },
         {
           "letter": "B",
           "text": "au organite celulare comune în citoplasmă",
-          "why": "În clasificarea lecției, procariotele nu au organitele interne membranare ale eucariotelor. Au însă ribozomi; formularea generală trebuie citită în acest context."
+          "why": "În comparația lecției, procariotele sunt descrise ca lipsite de componentele interne numite organite, spre deosebire de eucariote. Baremul urmărește această clasificare. (Sursă: Celula și fiziologia celulară — celulele procariote și eucariote.)"
         },
         {
           "letter": "C",
           "text": "se divid prin procesul de mitoză",
-          "why": "Procariotele se multiplică de regulă prin fisiune binară; nu au mitoză cu nucleu și fus de diviziune de tip eucariot."
+          "why": "Sursa precizează explicit că procariotele nu se divid prin mitoză; acest proces este asociat eucariotelor. (Sursă: Celula și fiziologia celulară — celulele procariote și eucariote.)"
         },
         {
           "letter": "D",
           "text": "includ bacteriile",
-          "why": "Bacteriile sunt organisme procariote, cu material genetic nedelimitat de un înveliș nuclear. Afirmația adevărată nu se selectează."
+          "why": "Bacteriile sunt organisme procariote, cu material genetic nedelimitat de un înveliș nuclear. Afirmația adevărată nu se selectează. (Sursă: Celula și fiziologia celulară — celulele procariote și eucariote.)"
         },
         {
           "letter": "E",
           "text": "sunt prezente la plante, oameni și animale",
-          "why": "Celulele care alcătuiesc plantele, oamenii și animalele sunt eucariote; bacteriile asociate acestor organisme sunt organisme distincte."
+          "why": "Sursa include plantele, animalele și oamenii între eucariote, iar bacteriile între procariote. (Sursă: Celula și fiziologia celulară — celulele procariote și eucariote.)"
         }
       ],
       "sourcePages": [
@@ -1896,27 +1896,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "sunt citoplasma, membrana plasmatică și nucleul",
-          "why": "Lecția definește drept componente de bază comune tuturor celulelor membrana plasmatică și citoplasma. Nucleul există în celula eucariotă tipică, dar nu în toate celulele; de aceea lista cu trei componente nu este acceptată în această cerință."
+          "why": "Lecția definește drept componente de bază comune tuturor celulelor membrana plasmatică și citoplasma. Nucleul există în celula eucariotă tipică, dar nu în toate celulele; de aceea lista cu trei componente nu este acceptată în această cerință. (Sursă: Celula și fiziologia celulară — structura celulei, nucleul și nucleolii.)"
         },
         {
           "letter": "B",
           "text": "membrana celulară separă celula de mediul extern",
-          "why": "Membrana delimitează interiorul celulei și controlează schimburile cu mediul extracelular."
+          "why": "Membrana delimitează interiorul celulei și controlează schimburile cu mediul extracelular. (Sursă: Celula și fiziologia celulară — structura celulei.)"
         },
         {
           "letter": "C",
           "text": "citoplasma este o substanță lichidă, fundamentală pentru celulă",
-          "why": "Lecția descrie citoplasma ca semilichidă, având consistența unui gel."
+          "why": "Lecția descrie citoplasma ca semilichidă, având consistența unui gel. (Sursă: Celula și fiziologia celulară — structura celulei, citoplasma și organitele.)"
         },
         {
           "letter": "D",
           "text": "cromatina este formată din fibre compuse din proteine și molecule de ADN",
-          "why": "Baremul exclude D: cerința vizează membrana și citoplasma drept componente comune tuturor celulelor. Cromatina nucleară este într-adevăr alcătuită din ADN asociat cu proteine, deci descrierea ei nu este falsă."
+          "why": "Baremul exclude D. Sursa descrie ADN-ul asociat histonelor în organizarea nucleară, dar nu definește cromatina; în plus, cerința privește membrana și citoplasma drept componente de bază. Excluderea nu dovedește falsitatea compoziției enunțate. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         },
         {
           "letter": "E",
           "text": "membrana plasmatică are o structură de mozaic fluid",
-          "why": "Proteinele sunt dispuse într-un bistrat lipidic cu mobilitate, alcătuind modelul de mozaic fluid."
+          "why": "Proteinele sunt dispuse într-un bistrat lipidic cu mobilitate, alcătuind modelul de mozaic fluid. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         }
       ],
       "sourcePages": [
@@ -1939,27 +1939,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "contribuie la remodelarea celulei din timpul contracțiilor celulare, prin proteinele periferice atașate suprafeței sale",
-          "why": "Proteinele periferice pot lega membrana de citoschelet, participând la schimbările formei celulare în contracție și diviziune."
+          "why": "Proteinele periferice sunt atașate suprafeței membranei; unora li se atribuie remodelarea celulară în diviziune și contracție. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "B",
           "text": "are rol în facilitarea acțiunii moleculelor de semnalizare asupra celulei, prin glicolipidele și glicoproteinele localizate la exterior, ce servesc ca receptori",
-          "why": "Glicoproteinele și glicolipidele de la suprafață participă la recunoaștere și la interacțiunile cu molecule de semnalizare."
+          "why": "Glicoproteinele și glicolipidele de la suprafață participă la recunoaștere și la interacțiunile cu molecule de semnalizare. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "C",
           "text": "este alcătuită în principal din proteine și lipide",
-          "why": "Afirmația descrie structura membranei, nu caracterele funcționale cerute."
+          "why": "Sursa confirmă această compoziție, dar ea descrie structura membranei, nu o funcție. Excluderea din barem nu face compoziția falsă. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "D",
           "text": "conține colesterol ce fluidifică lipidele din membrană",
-          "why": "Baremul urmează lecția, care descrie stabilizarea lipidelor și reducerea mobilității prin colesterol. Efectul nu este identic în toate condițiile: la temperaturi joase colesterolul poate împiedica rigidizarea membranei."
+          "why": "Sursa precizează că colesterolul stabilizează lipidele și reduce fluiditatea membranei; enunțul inversează efectul descris. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "E",
           "text": "este alcătuită din cantități mari de colesterol",
-          "why": "Afirmația privește cantitatea unui component al membranei, nu un caracter funcțional. Baremul selectează aici funcțiile descrise la A și B."
+          "why": "Sursa menționează cantități mari de colesterol. Baremul exclude varianta deoarece este o caracteristică de compoziție, nu funcția cerută; prezența colesterolului rămâne confirmată. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         }
       ],
       "sourcePages": [
@@ -1982,27 +1982,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "asigură transportul ionilor de sodiu în afara neuronului",
-          "why": "Pompa Na⁺/K⁺-ATPază folosește ATP pentru a scoate Na⁺ din neuron, împotriva gradientului său."
+          "why": "Pompa de sodiu-potasiu scoate trei ioni de sodiu din neuron prin transport activ, cu energie furnizată de ATP. (Sursă: Celula și fiziologia celulară — transportul activ; Țesutul nervos — pompa de sodiu-potasiu.)"
         },
         {
           "letter": "B",
           "text": "rata transportului activ este limitată de numărul proteinelor transportoare",
-          "why": "Numărul și capacitatea de funcționare a transportorilor limitează viteza maximă a transportului activ."
+          "why": "Numărul și capacitatea de funcționare a transportorilor limitează viteza maximă a transportului activ. (Sursă: Celula și fiziologia celulară — transportul activ.)"
         },
         {
           "letter": "C",
           "text": "asigură ieșirea ionilor de potasiu la nivelul neuronilor",
-          "why": "Pompa de sodiu și potasiu introduce potasiu în celulă; ieșirea potasiului prin canale urmează gradientul electrochimic."
+          "why": "Pompa de sodiu-potasiu introduce doi ioni de potasiu în celulă. Ieșirea potasiului nu este sensul transportului activ prin această pompă. (Sursă: Țesutul nervos — pompa de sodiu-potasiu.)"
         },
         {
           "letter": "D",
           "text": "pompa de sodiu și potasiu transportă câte doi ioni de sodiu în afara celulei și introduce câte trei ioni de potasiu",
-          "why": "Raportul este invers: pompa scoate trei ioni de sodiu și introduce doi ioni de potasiu."
+          "why": "Raportul este invers: pompa scoate trei ioni de sodiu și introduce doi ioni de potasiu. (Sursă: Țesutul nervos — pompa de sodiu-potasiu.)"
         },
         {
           "letter": "E",
           "text": "se realizează împotriva gradientului de concentrație",
-          "why": "Aportul de energie permite transferul solvitului împotriva gradientului său, spre partea unde concentrația este deja mai mare."
+          "why": "Aportul de energie permite transferul solvitului împotriva gradientului său, spre partea unde concentrația este deja mai mare. (Sursă: Celula și fiziologia celulară — transportul activ.)"
         }
       ],
       "sourcePages": [
@@ -2026,27 +2026,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "lipsește în eritrocite",
-          "why": "Eritrocitele umane mature și-au eliminat nucleul în timpul maturării. Afirmația se referă la aceste celule, nu la precursorii eritroizi nucleați."
+          "why": "Eritrocitele umane mature și-au eliminat nucleul în timpul maturării. Afirmația se referă la aceste celule, nu la precursorii eritroizi nucleați. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii; Sângele — eritropoieza.)"
         },
         {
           "letter": "B",
           "text": "este compus în principal din histone și ADN",
-          "why": "ADN-ul asociat cu histone formează cromatina nucleară. Formularea lecției pune accent pe acestea, fără a exclude ARN-ul și alte proteine nucleare."
+          "why": "Sursa descrie nucleul ca fiind compus în principal din histone și ADN. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         },
         {
           "letter": "C",
           "text": "conține circa 50.000 de gene, pentru celulele umane",
-          "why": "Lecția folosește cifra didactică de circa 30.000 de gene, nu 50.000. Numărul estimat depinde de categoria genelor numărate și de adnotarea genomului; cifra din lecție nu trebuie prezentată ca numărătoare genomică actuală exactă."
+          "why": "Textul furnizat indică aproximativ 30.000 de gene în nucleii celulelor umane, nu 50.000; baremul urmărește această valoare din lecție. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         },
         {
           "letter": "D",
           "text": "are o membrană cu patru straturi fosfolipidice",
-          "why": "Formularea din manual se referă la învelișul nuclear: două membrane, fiecare cu câte un bistrat fosfolipidic."
+          "why": "Formularea din manual se referă la învelișul nuclear: două membrane, fiecare cu câte un bistrat fosfolipidic. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         },
         {
           "letter": "E",
           "text": "conține nucleoli în care se vor sintetiza subunitățile ribozomale",
-          "why": "În nucleoli se formează ARN ribozomal și se asamblează subunități ribozomale, care sunt apoi exportate în citoplasmă."
+          "why": "Nucleolii conțin ARN care intervine în producerea subunităților ribozomale. Acestea sunt apoi asamblate în citoplasmă, rezultând ribozomii. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         }
       ],
       "sourcePages": [
@@ -2070,27 +2070,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "are o structură lipoproteică",
-          "why": "Membrana este alcătuită în principal din lipide și proteine; termenul lipoproteic descrie această compoziție."
+          "why": "Membrana este alcătuită în principal din lipide și proteine; termenul lipoproteic descrie această compoziție. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "B",
           "text": "principalele lipide membranare sunt reprezentate de fosfolipide",
-          "why": "Fosfolipidele sunt constituenți majori ai bistratului, alături de colesterol și alte lipide."
+          "why": "Fosfolipidele sunt constituenți majori ai bistratului, alături de colesterol și alte lipide. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "C",
           "text": "în dublul strat lipidic sunt încorporate proteine globulare",
-          "why": "Proteinele integrate în bistrat constituie elementele mozaicului membranar și îndeplinesc funcții variate."
+          "why": "Proteinele integrate în bistrat constituie elementele mozaicului membranar și îndeplinesc funcții variate. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "D",
           "text": "prezintă canale formate din proteine transmembranare ce proemină pe ambele fețe ale membranei",
-          "why": "Canalele traversează membrana și oferă căi selective între mediile intra- și extracelular."
+          "why": "Canalele traversează membrana și oferă căi selective între mediile intra- și extracelular. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         },
         {
           "letter": "E",
           "text": "are structura unui mozaic rigid",
-          "why": "Membrana are o structură de mozaic fluid, nu rigid."
+          "why": "Membrana are o structură de mozaic fluid, nu rigid. (Sursă: Celula și fiziologia celulară — alcătuirea membranei plasmatice.)"
         }
       ],
       "sourcePages": [
@@ -2113,27 +2113,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "soluțiile hipertone determină creșterea volumului celular",
-          "why": "Soluțiile hipertone determină ieșirea apei și scăderea volumului celular."
+          "why": "Soluțiile hipertone determină ieșirea apei și scăderea volumului celular. (Sursă: Celula și fiziologia celulară — osmoza și mediile hiperton, hipoton și izoton.)"
         },
         {
           "letter": "B",
           "text": "o celulă imersată într-o soluție de sare cu concentrația de aproximativ 1 % poate liza",
-          "why": "În exemplul lecției, aproximativ 1% sare este izotonă; nu produce liza osmotică a celulei."
+          "why": "În exemplul lecției, aproximativ 1% sare este izotonă; nu produce liza osmotică a celulei. (Sursă: Celula și fiziologia celulară — osmoza și mediile hiperton, hipoton și izoton.)"
         },
         {
           "letter": "C",
           "text": "soluțiile izotone nu determină modificări ale volumului celular",
-          "why": "Într-un mediu izoton nu există flux osmotic net susținut care să schimbe volumul celular; apa continuă să se miște în ambele sensuri."
+          "why": "În exemplul lecției, soluția izotonă are aceeași concentrație de sare ca citoplasma, iar volumul celulei nu se modifică. (Sursă: Celula și fiziologia celulară — osmoza și mediile hiperton, hipoton și izoton.)"
         },
         {
           "letter": "D",
           "text": "o celulă introdusă într-o soluție hipertonă își reduce volumul",
-          "why": "Un mediu hiperton atrage osmotic apa din celulă, determinând micșorarea acesteia."
+          "why": "Un mediu hiperton atrage osmotic apa din celulă, determinând micșorarea acesteia. (Sursă: Celula și fiziologia celulară — osmoza și mediile hiperton, hipoton și izoton.)"
         },
         {
           "letter": "E",
           "text": "o soluție de sare de concentrație 5 % determină zbârcirea celulelor",
-          "why": "În modelul cu sare al lecției, soluția de 5% este hipertonă față de celulă, astfel încât apa iese și celula se zbârcește."
+          "why": "În modelul cu sare al lecției, soluția de 5% este hipertonă față de celulă, astfel încât apa iese și celula se zbârcește. (Sursă: Celula și fiziologia celulară — osmoza și mediile hiperton, hipoton și izoton.)"
         }
       ],
       "sourcePages": [
@@ -2156,27 +2156,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "include endocitoza și exocitoza",
-          "why": "Endocitoza introduce material prin vezicule, iar exocitoza îl eliberează prin fuziunea veziculelor cu membrana plasmatică."
+          "why": "Endocitoza introduce material prin vezicule, iar exocitoza îl eliberează prin fuziunea veziculelor cu membrana plasmatică. (Sursă: Celula și fiziologia celulară — endocitoza și exocitoza.)"
         },
         {
           "letter": "B",
           "text": "intervine în eliberarea neurotransmițătorilor la nivelul fantei sinaptice",
-          "why": "Eliberarea neurotransmițătorilor stocați în vezicule sinaptice se produce prin exocitoză."
+          "why": "Eliberarea neurotransmițătorilor stocați în vezicule sinaptice se produce prin exocitoză. (Sursă: Celula și fiziologia celulară — endocitoza și exocitoza.)"
         },
         {
           "letter": "C",
           "text": "poate participa la apărarea antibacteriană a organismului",
-          "why": "Fagocitoza bacteriilor de către unele leucocite este o formă de transport vezicular care participă la apărarea organismului."
+          "why": "Fagocitoza bacteriilor de către unele leucocite este o formă de transport vezicular care participă la apărarea organismului. (Sursă: Celula și fiziologia celulară — endocitoza și exocitoza.)"
         },
         {
           "letter": "D",
           "text": "sub formă de pinocitoză este utilizat pentru înglobarea de material solid",
-          "why": "Pinocitoza preia picături de lichid; fagocitoza înglobează material solid."
+          "why": "Pinocitoza preia picături de lichid; fagocitoza înglobează material solid. (Sursă: Celula și fiziologia celulară — endocitoza și exocitoza.)"
         },
         {
           "letter": "E",
           "text": "prin endocitoză participă la eliberarea de hormoni din celulele endocrine",
-          "why": "Eliberarea hormonilor depozitați în vezicule se realizează prin exocitoză."
+          "why": "Eliberarea hormonilor depozitați în vezicule se realizează prin exocitoză. (Sursă: Celula și fiziologia celulară — endocitoza și exocitoza.)"
         }
       ],
       "sourcePages": [
@@ -2197,27 +2197,27 @@ window.BB_QUIZ = {
         {
           "letter": "A",
           "text": "nucleolii sunt formați din proteine și ARN",
-          "why": "Nucleolii conțin ARN și proteine implicate în biogeneza ribozomilor; această afirmație adevărată nu reprezintă excepția cerută."
+          "why": "Sursa confirmă ARN-ul din nucleoli și rolul în formarea subunităților ribozomale, dar nu precizează componenta proteică în pasajul disponibil. Baremul nu selectează A; compoziția completă nu poate fi demonstrată doar din text și figura celulei. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         },
         {
           "letter": "B",
           "text": "histonele și ADN-ul formează cromozomi",
-          "why": "ADN-ul se asociază cu histone în cromatină, materialul din care sunt alcătuiți cromozomii. Afirmația nu se selectează."
+          "why": "Histonele și ADN-ul formează nucleozomi, care se organizează în cromozomi. Afirmația nu este excepția cerută. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         },
         {
           "letter": "C",
           "text": "genele reprezintă segmentele funcționale ale cromozomilor",
-          "why": "Genele sunt regiuni ale ADN-ului cromozomal care codifică produse funcționale. Afirmația adevărată nu este excepția."
+          "why": "Genele sunt definite drept segmentele funcționale ale cromozomilor; afirmația adevărată nu este excepția. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         },
         {
           "letter": "D",
           "text": "nucleolii intervin în producerea subunităților lizozomale",
-          "why": "Aceasta este excepția: nucleolii participă la formarea subunităților ribozomale, nu lizozomale."
+          "why": "Aceasta este excepția: nucleolii participă la formarea subunităților ribozomale, nu lizozomale. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         },
         {
           "letter": "E",
           "text": "cromozomii sunt formați din nucleozomi ce se înfășoară între ei",
-          "why": "Nucleozomii sunt unități de împachetare a ADN-ului, organizate la niveluri superioare în cromatină și cromozomi. Baremul acceptă formularea didactică despre înfășurare."
+          "why": "Textul precizează că nucleozomii se înfășoară între ei și formează cromozomul; baremul acceptă această descriere. (Sursă: Celula și fiziologia celulară — nucleul și nucleolii.)"
         }
       ],
       "sourcePages": [

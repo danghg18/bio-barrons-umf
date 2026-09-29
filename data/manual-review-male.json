@@ -1,0 +1,6878 @@
+{
+  "reviewDate": "2026-09-29",
+  "source": "output/text/Manual_Biologie_toate_cele_17_lectii.txt",
+  "sourceSha256": "787a515090ab49c3ea9d135a141b2a8ff77e7aa5fe3b7e1aa8102d783bfb5dd6",
+  "scope": "Sistemul reproducător masculin: 69 grile, 345 explicații; numai câmpurile options[].why au fost modificate.",
+  "sourceLimitation": "Exportul omite etichetele figurilor. Referințele figurilor indică originalele verificate vizual; limitările și neconcordanțele cu baremul sunt semnalate individual, fără completări externe.",
+  "options": [
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-001",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "9cbaf11dd08debbb11bb6caff7aed98128370e939b78ff9e0eaaad7689a9df18"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-001",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "e5b58b98bd3d1039485ec2f6c9dcadcae9886294f55b87c994b9c872d5403e2d"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-001",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "d72b718fc0c3c29c2951029cc501924a591bebf93ed93fc25dfe9a8f0a62fa71"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-001",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "031575601f3f44f133fd8a2087eabe758ab24411b095c02cd5e763d363bafa6e"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-001",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "b2314a9918dee20363b004f3bc5ab442c4039cc02fe4d3c4dcd45c03fa2d442f"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-002",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "c256adcef5d5b5fdaf188bf1a55bbae551eda7b9d6449656e19b50663f64ec25"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-002",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "4274b589955dbf632d5989532c88aac5e3e4f20b682e3cb27599cadc78164a07"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-002",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Glandele bulbouretrale și compoziția spermei",
+          "lines": [
+            3094,
+            3096
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "3e3a495cc3067b4d22f5088163410da62db1fbeb3a8121c11ad859e5707b6f1b"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-002",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul endocrin",
+          "section": "Gonadotropinele și efectele lor",
+          "lines": [
+            1358,
+            1376
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "7f7cddce425dae05c4438cb48a84b2d17787db968546e86d0817405d26343bf7"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-002",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "8c5d8bb5ed1691e7f989b77e55449e6451aaafe7544d06fef374f42c03804555"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-003",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "59a124c4c076eb503e88b71edb773dd68a1906e68a745db5b4a204ff3308a00d"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-003",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "762425943392d2e70e34de251b97dbd0364ac6a677273202dcb505743e272915"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-003",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul endocrin",
+          "section": "Gonadotropinele și efectele lor",
+          "lines": [
+            1358,
+            1376
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "89838b0f25f4c7bf2c582d521ec003db716e11e4e04aad497b1ce1f2209fd180"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-003",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        },
+        {
+          "lesson": "Sistemul endocrin",
+          "section": "Tabelul 13.2 — FSH și LH",
+          "lines": [
+            1374,
+            1376
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "5bafc0cb6e3685ea03201f1eb47fd9af8692d9aefcffd8c29bca14aa54ed52b5"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-003",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "limited",
+      "explanationSha256": "93fafe79b04454c839cdee05e0c9add28223bf4cba4d28d9960c904a56d9edb8"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-004",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "31a7d7a7c01cf552d240770b3e0615af661713a7eb2d55b13cdb6fcaebfc2e08"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-004",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.4",
+          "lines": [
+            3058,
+            3060
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "cdbfa433b63dbf8067e4995eb1fb16d7444173a4ab6fe4164b36d3f5b7bc6f43"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-004",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.4",
+          "lines": [
+            3058,
+            3060
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "8491f6bf17b53ad53fd44af32a107da75f75dc19a8d925b7f59b2d82ada06d68"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-004",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "e2f823170d323ea0efb1ecb0ec3545b996e6b0007ec34a0515fd489ad9acdf21"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-004",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "ec6c073780e4bafa616338a6f77a040d2dc975ddccc31a53ffe455a17a0aa409"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-005",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        }
+      ],
+      "status": "limited",
+      "explanationSha256": "df1ccd48f5e2eab3200b369e4cb3a25c556fbce1bb84d4a0e3028140082775d1"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-005",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "6e1d0edf8e9718225c0826df437b0809995af455b99d7fe0abcca60f5e820391"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-005",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "22c95817cbdcc05b6a75930082f68402d27eb327f924501fef9c0de1b031786f"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-005",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "limited",
+      "explanationSha256": "078aac223e02f07f4629aec7492c25a4625c0dea16258d061bf8ddb0ba1ecb6a"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-005",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        },
+        {
+          "lesson": "Sistemul endocrin",
+          "section": "Hormonii steroidieni și mecanismul lor",
+          "lines": [
+            1294,
+            1300
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "26af8bd54f00d76ed578af8c8e445c39a02cd8b053251cc43de0c9726fe18146"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-006",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul endocrin",
+          "section": "Hormonii steroidieni și mecanismul lor",
+          "lines": [
+            1294,
+            1300
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "00405bd318e76dd51e68c29eb2d4505e19de6c5ecbe1f5c17b4a91594038d369"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-006",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "3838193207c1faa84219275ef66a2993357b96e4ee0e1d0a56c0b2774634ae15"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-006",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "inference",
+      "explanationSha256": "27ad85823c0ec26f965704aa1a560c76c5acf2cdcdb9a5e220c232ff2e73c796"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-006",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "8289b6bcd0c9b7de2a8944767be35dd9c01d38303317eb6bc0e8d1fe28c6a780"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-006",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "limited",
+      "explanationSha256": "ed652d3e253d89b1b5522b7175672240486c2ac8e0edcef6727a1c89cacd2069"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-007",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "4417c84717e97aee20616a0c978c0381ca6e1c47cc44861f5c39069e9eae6f46"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-007",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul endocrin",
+          "section": "Hormonul stimulator tiroidian",
+          "lines": [
+            1352,
+            1352
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "43deec479d32e58f8eb404b8ff893201ec15385bd4ceaf9b067013efb9db9c3d"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-007",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "e805dfe11ca7c7c8d18b2277ffa5491f1b720055c106abaa6338c5aef170fae8"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-007",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "34e98832f8724136192295d5268bf7e091992917ec99fe9080bea4df4dcbade5"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-007",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "d1bdc72529e37db142a2739480df4c10ebc73f41aa80579a619765fecfdcfe82"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-008",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "93dbf840a6fc27f04c58129139108cc080f1c69cda00c66e6c144add7f07efbb"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-008",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "7930b48f3a8506e267b8a3c58b45c3128d1bb91378c2efa75b5d8c4595824ce9"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-008",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "7799362abed726e28454b5d6f69043dc76c2a01e2f1783b5b72fd35d62f8e8b1"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-008",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "5de2fbad91ce0ad2dc74b644bb835a117a24a0f0ea511f1d7590dfbfc36eb5de"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-008",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "190693f6c0fd7a6ef01a3690c0c296d453c9932baba5fe947e9672ec274123bc"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-009",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "5022bc339bb5039e601ea6d1b0f59a70aae51b0956d0fe244d21b10c7a85c56a"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-009",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "bb6951e8c56352dc98e98f59504e27564cc9e53eee06cf8872fe632545bdeb62"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-009",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "2316c2daa9aeb27e88d7d83a46b63916a2e014988470a365e7648cbddd140058"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-009",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "dd14c308b525efb40f91b6d1a5e1a75f2778cad863a87fd77475ba0299622143"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-009",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "d5d37d9c73fb3ef5057c7e30425b485a76fcfa6c038e167ac5b599ec1812cf09"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-010",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "7dc177f11fcac8b3a0a7d3a7467b387cc00af8599d95931292d3194981aa2dae"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-010",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "689aefeb04e646c14bf4ce84b30a30b1effc6ebd195b0b3fda1c6ff541eeca98"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-010",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "602fca25f1bdf7810cb425136f2a0d5cd4a5c26c88f739a92109205df047589b"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-010",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.1",
+          "lines": [
+            3008,
+            3010
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-1-barrons.webp"
+        }
+      ],
+      "status": "inference",
+      "explanationSha256": "40c809dd967748a1ded207b67169cb85167702da6e71214aa47fa36958c64147"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-010",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        }
+      ],
+      "status": "limited",
+      "explanationSha256": "1f350083d38f99dcb53bec15f9972f5bccd2ec58af94b6310fcefe285de4b45e"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-011",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "f5934eba72937a37e87c72cfaa9c955c4d03b7753cb599f5268fc3456c0be2fc"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-011",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "b65884afc2b596cbfe2911c573c5bd940a66fb9c89e386ff31332fa4ccdcc033"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-011",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "d61e34289092fb3b3bb3de699bcf6e88831c5c94a32f11a9adbbc585694949b8"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-011",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "1a62b035e423df9f150089b8f1abd7ded21d1b9cd2a5436f90a7ab2c825ce617"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-011",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "9833fa4e06b3d67ddfce18ef702c1aaba804d48c7eee0cffc3dca9d7e0577d32"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-012",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.2",
+          "lines": [
+            3042,
+            3044
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-2-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "f3569562ccb7d7a384f8822a0951763ab3c386d8c441062ba4d9b7cb58eb621c"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-012",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.2",
+          "lines": [
+            3042,
+            3044
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-2-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "44c23333e4900590c4c90cdda60bc4557790455994324cd5a0666a863fcdf91f"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-012",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.2",
+          "lines": [
+            3042,
+            3044
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-2-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "268d0e4bb0fadca3a63a7b17162944d9ebad8b290601d54b96cfde285497cb32"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-012",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.2",
+          "lines": [
+            3042,
+            3044
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-2-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "9d75ab57a24a7f181259ee3e22ef7feaed21663c6a532b2ff3ceaf18ac2f77e5"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-012",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "7669c64b8a43d1783096661f3606cb2c0d82d9d44fa12759601d09b01c907f27"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-013",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "54249b34cd17dac43353762c5ca70efddbcec409596318e385a1b1d8c7006bec"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-013",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "f5356fe892c4548c493b51e593c6ecd3ba963779713ba7edbbb08e77c0c5588e"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-013",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "1f093fc395a65f77b722a3d563c13edf734db1c234cca1d45d8e71e5da51d8b8"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-013",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.4",
+          "lines": [
+            3058,
+            3060
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "a715664ef9c1f51d94b2c7f97182f0f4056e479af9783c4d7da64ac7c407b4a4"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-013",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.4",
+          "lines": [
+            3058,
+            3060
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "88ac82d23f510138e84ab1cd85303687595d48e877972c4611a4d9e0176d59e9"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-014",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "3bbf19dfa2731c8cdebbc6a22d44ebaf02a5020017dc5ea44a421ba6f306c755"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-014",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.3",
+          "lines": [
+            3054,
+            3056
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-3-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "377ef1a2448f69a2cb4ebecf24b4da8d065f93db4c4a6380d261367eba61eb21"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-014",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "543f2a8da46abdcbc0fda5a5945523cf496fac12e6293dc4d38700fb51892c61"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-014",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "05cd2e30775562fe9ea6c354ac9ec92854e08c76a1f4a24ea0ff6688f10525f0"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-014",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.3",
+          "lines": [
+            3054,
+            3056
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-3-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "533db3db7ea4c4be442d491de6c758f351435fa1c5a0368700896f69508ef6fa"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-015",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "9074f91a6244bedfb0df2aa222a73919c3221b3261a9b797e4a21fa70a8d6a7f"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-015",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "aa43d5973affdcd6f636bb0b2fb0abc54e1a553930e1c1d8e9c1aa7d0ec92a02"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-015",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "b522f5cc4392a78bc10711d5d241051ed4a2f3e2a3d570d4a8d829789316e8a9"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-015",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "d59a9f6401ea34b5371843a5b99fa02e406b3f08215a0794fcedfdd0ec81b30b"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-015",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "520b88241c8a3c38f4779f7e34380d80b52c1431210f674a1614de129b8c52cd"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-016",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Porțiunile uretrei",
+          "lines": [
+            3086,
+            3086
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "342f4ac0afe9e45433f8bdabca3895320cb4e142dc9554c0ba4fa6bedd6ab5d5"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-016",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Porțiunile uretrei",
+          "lines": [
+            3086,
+            3086
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.1",
+          "lines": [
+            3008,
+            3010
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-1-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "c31a6f8186e4793fdc50ecdd504dd1c4766f2adcbf100017076068969799218e"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-016",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Porțiunile uretrei",
+          "lines": [
+            3086,
+            3086
+          ]
+        },
+        {
+          "lesson": "Sistemul urinar",
+          "section": "Uretra",
+          "lines": [
+            2947,
+            2947
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "ad1a169e0c9b321feddcf4fa3172dd4cc62adae86412fbf5470570f5c5fba0a7"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-016",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul urinar",
+          "section": "Uretra",
+          "lines": [
+            2947,
+            2947
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "8b060769e566153d9cb3881274596b23623f6ae2cd6d94bd686491d08a8d3fa0"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-016",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul urinar",
+          "section": "Uretra",
+          "lines": [
+            2947,
+            2947
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "587cbe5b4d23713f63f6349b8ef5b8017deb5040694c361a9037c072e979a164"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-017",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "d1a8527900af69d8b6ab9f8bf394201fb6c2a7fb0fd4e08d3b96f38f2f55c5b6"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-017",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "74adf0db29276d9209bdbf5b8377df46154e93b73d455c84bcbbbd943e68b3c6"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-017",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "f99cca98a28a3b7598c69b9b57215fed4bf328b1f6166b8e0f89e6a2a5bd44e2"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-017",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Glandele bulbouretrale și compoziția spermei",
+          "lines": [
+            3094,
+            3096
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "c6d3a953cb47b0237055ed2e13d19e0a788c65e9fee87925a8dca12c860617be"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-017",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "7cc91e56859edcf428c8a0789f377c0f2582a4713186958616048131e441d535"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-018",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Penisul și ejaculatul",
+          "lines": [
+            3098,
+            3102
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "b48d069e44a504b6ed11b881f2ca983b6c1cfc7d4775208f70daf71b893c092e"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-018",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "dd0b8f7cc2687220317389d9823a1d7aebf37d2adbe76056a0d52b504c047443"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-018",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Penisul și ejaculatul",
+          "lines": [
+            3098,
+            3102
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "b6c921fb5f7775ee09235cf0e1d9d2bd599eb861d66e726f39024a3c9d245280"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-018",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Glandele bulbouretrale și compoziția spermei",
+          "lines": [
+            3094,
+            3096
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "a4da82a3e2bc671c5038bfa4acba6d0d5e4fdd8b521f6c6cacfef548b978f3d5"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-018",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Penisul și ejaculatul",
+          "lines": [
+            3098,
+            3102
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "e56306097a8616c9476ed6a3dc4bddea97317b0c090f2f7142c4c4355135c3ee"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-019",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "9bb118682a40d310a4b987e762b8e304ee1784fd5da75f5585950682b65c22a8"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-019",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "b19c5e0b2b76b71adbb4d57c9af7a089b2485d8e6d51b4b6caad19a82f6cba64"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-019",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "6718af2d533d64aa6a271e8df97dc5bc8affbcdc33d20bbeb03133faca12ff13"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-019",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "339c3bfeee468d20e51cae4b345c7306a9751a9639709b4203154a56ea27bd1f"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-019",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "34f82e3706babc0e4bce1c494c1ee13ca99f61802e8bfa03d3c621a17b0f7fc4"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-020",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "764e4a66e699900f0578ff541148d2f18495ea055ea164ce8e0b0123a468f892"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-020",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "470e6d8a299df2c7a24f0978cf2aa2a014fb8481481a5040010aa52b96832bee"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-020",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "c72a907c519d56a843e7df8e92fe676cffc475cc23848e7af657994907e7cba6"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-020",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "c9245e9099f7c6f949c89fd30cb89ec0cdf6f4167843adced36a40243e7c6fe2"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-020",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "3fda18bfd109dd04f6efb1acc45316382396cf3b62eb38d7ee7dcc97055bae76"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-021",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "351e5fb7aec570d517c2a1bc53ac133dafbaa81ad3b3a4c064372d9dd51e3372"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-021",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "afa722845ffb471df4dee8e9af29137f69b090b4da69a25787abcb43793af5e1"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-021",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "5ea7187c2b53c4449d3b2f166b8bd6fad6209d0d083ee255831729b30a362347"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-021",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.1",
+          "lines": [
+            3008,
+            3010
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-1-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "4b81736c58c6dd28ed519e6c92e0da035b0c5d4279018a24decc5cfc7a3b92c5"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-021",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.1",
+          "lines": [
+            3008,
+            3010
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-1-barrons.webp"
+        },
+        {
+          "lesson": "Introducere în anatomie și fiziologie",
+          "section": "Regiunile abdomino-pelviene",
+          "lines": [
+            197,
+            199
+          ]
+        }
+      ],
+      "status": "inference",
+      "explanationSha256": "e8abffa991289ce1d8f17d14ff446c6c87292c354811945b1c5587b907a38ab8"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-022",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.1",
+          "lines": [
+            3008,
+            3010
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-1-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "e4183e95aee70c8c5b7d402e5c29b019901f4fb94dea60b4fa1ed7abfd5ff6b8"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-022",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "ba200f23979bcfaf5c689adf8bfd047560adb37e21af26756a403472551e8732"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-022",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.1",
+          "lines": [
+            3008,
+            3010
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-1-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "c46abbde022f8b93cd37dfae38368bbaa1bc8c6741826d3b6f14b7815e5791c7"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-022",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.1",
+          "lines": [
+            3008,
+            3010
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-1-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "84aa7b408ba363218fee053db243ae9f623a9fa20e8b63a1eabf4fb9b0c49d05"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-022",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Porțiunile uretrei",
+          "lines": [
+            3086,
+            3086
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "dcf5d4bd2f6bb4462b33d0687629bbb7f8dece4fb6461fb3888ef0037a44d15c"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-023",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "e5135f443d6e7b010e56708e155657f71356485863a1bcb8959dbf2cf544e4b6"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-023",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "3eb6a706097a8b87eb65679d72b8fa4ad512fd87748a9ad5cbc334b1e8927d97"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-023",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "bc9092eab2a5de0e67cff917b5b4db669809edf6d0a5e01108ded407d58b29ea"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-023",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Glandele bulbouretrale și compoziția spermei",
+          "lines": [
+            3094,
+            3096
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "9ea88eab61b1d40345a8cdd3aa5f109dbbc802959e342e91b62598cf2a44433d"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-023",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "limited",
+      "explanationSha256": "a13a37aeb231ee2451abcd45f13bc0ce9f8318d58f83bcbd70d78b7fef021abe"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-024",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.4",
+          "lines": [
+            3058,
+            3060
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        }
+      ],
+      "status": "limited",
+      "explanationSha256": "6ed53d7aae06a099657f74981b70a1e8407a3bfe770f3b4060182c67775003f8"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-024",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.4",
+          "lines": [
+            3058,
+            3060
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "9cd41b663c810e50963ea73cb879b0e92984af679aaef659576d26c2f38c60d7"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-024",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "8f4ffc0d54427226acad553b2e6ab122709e64f9a39563231111c6539e0edcb5"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-024",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "d9ebe1780bdb988d79a7b1df47303eed807127af110f9da34f2a6774e15866e5"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-024",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        }
+      ],
+      "status": "limited",
+      "explanationSha256": "f7911dc8970071401dc37a59fec6ff17104827ff9768e9fd442e8d0f0c4cb959"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-025",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "ab0f6becf411dc9633e739450e1a881f6f5af5107d8f1bcc74e4678f9df8cae9"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-025",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "ded679f9aefb5585b541387269002e072ce247863a3db9c418cf00ec663d234d"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-025",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "2b184e9e30602d25fb30244f11f8cb35358b0f13011159f264325863051b0478"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-025",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.2",
+          "lines": [
+            3042,
+            3044
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-2-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "c11d7d8bde0ffcaa5699f3204f358f03f3fc483e5f3028aff79ac7ead755dbcb"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-025",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "014ce3d29e3644f20ec128e2543c0a2133f1235051db79041630f38f15a35071"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-026",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul endocrin",
+          "section": "Hormonii steroidieni și mecanismul lor",
+          "lines": [
+            1294,
+            1300
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "7ffaff3bafa445964a1a881b56a4111f99572a737bf05ceb8f6dad2f1843b2be"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-026",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "704d05e2880b146943df8e4e833d360f9cd9496896d1df8770741917a1a0f00e"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-026",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        },
+        {
+          "lesson": "Sistemul endocrin",
+          "section": "Hormonii steroidieni și mecanismul lor",
+          "lines": [
+            1294,
+            1300
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "c67e919afac0dc50f965a663a688eb2f3510c085782b03dee8d3a2bea9bfcb89"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-026",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "709c40cdcc0ef417dc965686ce8ba8f8cee02b96ff63073ce3df615ad4f7dd64"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-026",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "038b6bf70c37a91108e37b3e715e2fe73fa1098f375c0b2586aca7922d0564bd"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-027",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul endocrin",
+          "section": "Tabelul 13.1 — glicoproteine",
+          "lines": [
+            1316,
+            1316
+          ]
+        },
+        {
+          "lesson": "Sistemul endocrin",
+          "section": "Receptori membranari și mesageri secundari",
+          "lines": [
+            1302,
+            1302
+          ]
+        }
+      ],
+      "status": "inference",
+      "explanationSha256": "c116e60a14695ae5961a88b59dcd33b3992694e10323b424f503e8d0dbe62e8a"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-027",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul endocrin",
+          "section": "Receptori membranari și mesageri secundari",
+          "lines": [
+            1302,
+            1302
+          ]
+        },
+        {
+          "lesson": "Sistemul endocrin",
+          "section": "Tabelul 13.1 — glicoproteine",
+          "lines": [
+            1316,
+            1316
+          ]
+        }
+      ],
+      "status": "inference",
+      "explanationSha256": "1edb218f5f884e26a5627b6ef46b22cf47ab06d89bb66814153c3e2011e92935"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-027",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul endocrin",
+          "section": "Controlul adenohipofizei",
+          "lines": [
+            1338,
+            1338
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        },
+        {
+          "lesson": "Sistemul endocrin",
+          "section": "Gonadotropinele și efectele lor",
+          "lines": [
+            1358,
+            1376
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "d9cac1cc587c8d22958b4cbeb0ae2b53befe7bf1627227792fb07a7880c1477a"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-027",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "fd4aa25e830a99df7648bb6f6231a81edad842c466e524ebec9b6e19535d0637"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-027",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "a5cbef6a15e5f477b2c291f67e0f0ce02a848ee40660e22dbcd44fa555ffb829"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-028",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "e548281e153ca5f13bba15f2f87db01f9040c10bef7093c294d41abdc4ee89b0"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-028",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.3",
+          "lines": [
+            3054,
+            3056
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-3-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "bce6612e29639ab0f1105254355eb8e8b690eedafa9005a9edbb8a667446e3b8"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-028",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "6aa4331c09dc75845ca86de424e6b1169a166f38454da117d194c5bb6d352fce"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-028",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "c5cbe5bf5b0a3a48d92fdd6e03f51c3aa8a9da94e34338905549d295d41f1230"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-028",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "f54ee845db8d6b7a21d8791ecc9089feb08bab716a98fa848f26d2bf00c9a69b"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-029",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "e6d3d0eed8b52c1ace0d6fbcaf8e6a4018a99caba518e3a92a100fad988944de"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-029",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.4",
+          "lines": [
+            3058,
+            3060
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "337bfe0537f25da34e606318d5cf52aaf5275a6c4e2e5e0fc2b4136e7a996fb3"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-029",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "7be77c14f9ace9f45ca1697581d27521f6dded5d7967444e6a2e5f2799598c5e"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-029",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "e860a246c2252cbd0c54153ea8fd3d57321fa51a6c30bd31acbb5ee36ae479f2"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-029",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Glandele bulbouretrale și compoziția spermei",
+          "lines": [
+            3094,
+            3096
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "7d99fd47b1dd5bc1c74feabb4e88e8fd4f88896e07a9477a89a945415539a5e6"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-030",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "454c01b8086d4365c1819fc5ada3ffcfde859aeaf0d250a30382fd93a9fb27ad"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-030",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Porțiunile uretrei",
+          "lines": [
+            3086,
+            3086
+          ]
+        },
+        {
+          "lesson": "Sistemul urinar",
+          "section": "Uretra",
+          "lines": [
+            2947,
+            2947
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "0411732cd6560256141faf904f63ac94b4ef6edec0837fff59cc4c28ce1b20b6"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-030",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "ad495bdd8463a07d28e2f6ddfce7513f4f0c79ae2651704e5ee7e3cf5c19e97b"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-030",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.4",
+          "lines": [
+            3058,
+            3060
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "a45cf34d65173c1148a83bcdf3c316f290ec64c227218a9e373776977c80c1bc"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-030",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.1",
+          "lines": [
+            3008,
+            3010
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-1-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "2b87f810cc2461ffccab85fdac0a3bd2ae232d334daba8c11d7b55e68db99a20"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-031",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "a89029950e95c0d31bb89b273fb100042d4935b89ed0a0335d57dc276a24f555"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-031",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "1d75e573f3f18ffe86243e17506584f557467e0dd2ae437bd7530d1cfcdea833"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-031",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        }
+      ],
+      "status": "limited",
+      "explanationSha256": "3eac15bfc1f6e8fde5988c2e54ec49f7713aa4dbd8d807a16454991b1f16d9dd"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-031",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "edfa4fee0daea665bd28091738b1c0b6b835d5ad77d39df570754e22315d5912"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-031",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        },
+        {
+          "lesson": "Sistemul endocrin",
+          "section": "Gonadele",
+          "lines": [
+            1498,
+            1498
+          ]
+        }
+      ],
+      "status": "limited",
+      "explanationSha256": "ac9e25cd96d14b8515acc96c75804006843555e19ea2b9333338098a4573cb5d"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-032",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "b9c1a71bd853b02ecd0546246060c4a431595f9fee02506cca87c6d47855559c"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-032",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "2ffff122f37f74c200c85d004b585c2ad5f4adab23ac19893896eaca6e5892b7"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-032",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "d8786cbfa73ca5a0e2b17d1be904c793c7b69c36a8d71f2b216f3b6a53d63f46"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-032",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.2",
+          "lines": [
+            3042,
+            3044
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-2-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "d6a8573b03c6a8695ebe8d1cfe455891f01371736c5d968520988f50b1226c03"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-032",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "1bd7e5eb53ca3b4eff6c4b573d0ed31cd2d888f2e00698b5d8f2443602dcd0ce"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-033",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.3",
+          "lines": [
+            3054,
+            3056
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-3-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "0850826305a176f97ce959bdb70c54d3bd7a988e633548176b76502f9bd0b96a"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-033",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "6e37050a55c1f1acabd113837c7f314630cc6458b04b98fcad762d7f3465a6f5"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-033",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "1b781fcf185f5e945bae5a01037ad8190f3833b08f82054e12d787406b760491"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-033",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.3",
+          "lines": [
+            3054,
+            3056
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-3-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "c05f8dd8c61498408756ac00e1a6a9cd612dc260b2c7dcfee3bf1513c427b527"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-033",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "59018560c2918a986b68c1c487a20a236d2d3b2bf768daf6fd9ba28682783c58"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-034",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "e1aef9e2c58a4e8c8bc1c03fe85154091ee96d96d6fe50bd13b3ed0a4d7ed841"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-034",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "ad4feab730d413b5c77be451a3ea64d7d17a413d2aa4d2a0e519e0ab3d686f6a"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-034",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "4c05a9a2f08f55ecbbf0549e39ef40208dedffe540296c64136429bc7454ffb4"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-034",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "7933d77167a1941c2c953670cb3f7cdc8125ab4c967dac6707ca14e9bd53702a"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-034",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.4",
+          "lines": [
+            3058,
+            3060
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "499fba3896c168e5ce825252a3fbbc98d6b3bad24c7b64738bb842d3183f6a35"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-035",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "b07a98e9e07db58c915284210f720a91e7b61edd83cdaca39af12f216113d324"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-035",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "b0313fd970ecd5b890a3be2fcdd0cdd12ac9c5f96c5bfd39bf49da0b05928439"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-035",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "4f0596ca86fb5fb99f0c2b6af04a3eff048c8f30098fe27ffd5c222d88df4a49"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-035",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "312cada17091ada2adbceb7ac612eff2bce5eb75a198c40720fb5a01919aeee6"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-035",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.5",
+          "lines": [
+            3082,
+            3084
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-5-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "3a14cf9371f5d77170c52bf64cb53cace500328d0ad4e8cbde89ee78552ebc0e"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-036",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Porțiunile uretrei",
+          "lines": [
+            3086,
+            3086
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "74bdffc199da7d3155040391050c828190a385b97057d9fa7761479609cef954"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-036",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Porțiunile uretrei",
+          "lines": [
+            3086,
+            3086
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "efad2fd40524a6092858323e6ee99c046142bda0d04085986d05f67b2342f00e"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-036",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Porțiunile uretrei",
+          "lines": [
+            3086,
+            3086
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.1",
+          "lines": [
+            3008,
+            3010
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-1-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "16edb085d8bbd4c1a5b5f40dcca0539a71f7e7adcd89c6c413bab96e4f4f9441"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-036",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Porțiunile uretrei",
+          "lines": [
+            3086,
+            3086
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "eb4793bb79ade3dc4f333bed38d49c19e192186d1dc21344d8ca0d7690fd208b"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-036",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Porțiunile uretrei",
+          "lines": [
+            3086,
+            3086
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "6a1654c0ebdd2fb0bfc1b9f9beba5162fb06e2cc36f07e448acd9c32c6cf81d8"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-037",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "aaf01790eeb61afa777db47b65802868bb1c0627ad10449211ef67e3a2185ae1"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-037",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "dbf92c734b1db51cbd67c3575b278c2227112be2afe420a5a73abc2afd41ccfc"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-037",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "4ac2441cdd0d55922845079cbff64a3fdb00799c3ee3553211cf2bb9195c32c9"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-037",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "792f2c9fa3b12b02a169017fa3088ccfa45fed18a62811284ca4ee0a672befae"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-037",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Porțiunile uretrei",
+          "lines": [
+            3086,
+            3086
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "cd1fdae622b6414ffd21b60ee9c6b1aebf47f8b3e4ecd72684cbc62e79cf2b1d"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-038",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "42092484783e149b8f33a64463181cffeb2ec95c37f5a0dc701405ef19eadc76"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-038",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Porțiunile uretrei",
+          "lines": [
+            3086,
+            3086
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "39227a7f489f9e6f7f1ad5a980f7cbebf7f36bc251c8f7ac336d8bc7d88e953d"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-038",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "910ba4b0ffbc935544938105c2cf19d79ccccad5c4c4a1a00affb8923d6e806d"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-038",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "a14782ea8d99ee874809f113f335c93ef46693bcfb4a736b0dd85f1d8796bd82"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-038",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "364d872fadb67212f55d116e705920b8679702b822659e8c60530f8eccdfda4f"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-039",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        }
+      ],
+      "status": "limited",
+      "explanationSha256": "aed218612aebc49ad4fec33839bf28de087d9ee18ab0d7f609fd681330458679"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-039",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "be74aeae02a30d086686cea72463b83fc011705f6da47d093510ea496cd750e7"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-039",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "33efc013391be069296cb6bfc1c71dfbb97f481947e06c11c4e96f543da52fd6"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-039",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "98164e14ff723f9d2019474037a20047a5c51567633a9aa466d019ea78d5cdf2"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-039",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "40ccee1f625c19ac010639ee16956d0197a7dab93545d5143239bc80282e0d15"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-040",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "9f17416bd2bcb4370199a3416237c983497afbc144c5a1968742f521cc601ca4"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-040",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "ba374f5f1ff157d1fd19c2c9dc424b03eefcdded9e63a08b39c3e31596b8a3c8"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-040",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "fe469298152011d8931f84b964d8ca135d8f65e2a744a676db73a9445df7a7e9"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-040",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "53faf62ef03dfc8bf6ae98707866fd55f81cd7ee9040cacdb534e0131f8892b9"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-040",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "8a4c239cc1aa611cadb2caeeae57bac585b98c421fca4b2ac892592d50c99b5c"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-041",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "e9614292d761ab0dde87ebc779afbcce5ce02722ea4b6b4f1b61158f9cd10a95"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-041",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        },
+        {
+          "lesson": "Țesutul muscular",
+          "section": "Tabelul 8.1 — nucleii fibrelor musculare",
+          "lines": [
+            562,
+            574
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "6b4eb5a81928ceec14322a9e4714c8ab4b6fb748dcdeb0a38ddac246e0c00711"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-041",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "1017b1cc98375e451ecdf8f49ae3a001239c84ba4ffd0beb061e457d827752e5"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-041",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.4",
+          "lines": [
+            3058,
+            3060
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "17630745d039980c9182e1031f9c344636bc2b97f63588567476149fb48d8b78"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-041",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "9cf64e0b6324f26ac858a5efb3e1e7f1ca6c3cccfc0c562cabab343f981308b8"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-042",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "659fc28c18270d56115d7b2c950abcc3a055d8fe8aae46968c562f4b66a3a0c5"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-042",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        },
+        {
+          "lesson": "Introducere în anatomie și fiziologie",
+          "section": "Reproducerea celulară",
+          "lines": [
+            105,
+            105
+          ]
+        }
+      ],
+      "status": "inference",
+      "explanationSha256": "5bffc2bdb78582c19ca60246fb2e6ef166540b1d0ea630f3aca30b51f5176010"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-042",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.2",
+          "lines": [
+            3042,
+            3044
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-2-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "6e34203034e4c78375c5d1d1df4e6a6f3a616518f15a83dbb80a308cd8e8dc9d"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-042",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.2",
+          "lines": [
+            3042,
+            3044
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-2-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "1c85f4e74897818463de6afaa84e62c5806b8221c6b25559aad60156a08329b0"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-042",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Tabelul 22.2 — a doua diviziune meiotică",
+          "lines": [
+            3030,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "998949687bb5e6cc12e33160545a0882aac3b33b6b8d41f83e34d8b95bac9d86"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-043",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "33aa397a927a4b98afe34ef71856cac280c79c135edd295758d7f2c7de27accf"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-043",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "666f8c748d24136ab096593e1d6775c4fac2d1428c40ee2960c9874df128243f"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-043",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "77ad8348833e9dbf66fd8dc10f76b709adc2763fb9a9be2877ce86fe1b2be1ef"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-043",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        }
+      ],
+      "status": "limited",
+      "explanationSha256": "1a2cbb59d4fcd8069c8c6253bad4db9484a08a723f8e813f3ccdf7d54f501547"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-043",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "45c78f25b6e250786c342c13a2493919adf73b6e65294d70efa7068c8a4551c7"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-044",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.4",
+          "lines": [
+            3058,
+            3060
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "8da1ec4b649614636372157750bbc5958c0523285a56cd0167ef9fc2091dc188"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-044",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.4",
+          "lines": [
+            3058,
+            3060
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "05a0713cf6a9e6763fd6fd5d292d30d2eb8b62f8966d67f19be5c1db9687c9cb"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-044",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.1",
+          "lines": [
+            3008,
+            3010
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-1-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "4f0793fc9268eb0f185b34ffbe851062e250d0c6be1e8c236ea97793295d0ed0"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-044",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "1f79d99d1ca9242e4837a18a0a63c10a5b491e729db8b6e05680d00a064febd4"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-044",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "051a0565f958276e8302016948a3176af700a9a42b9bda49e8fe1e36dc2d0499"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-045",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "26f4c32a7029860f43234aa1cf0a8702e3376f8d46716f525e185ac0e5b5618a"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-045",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "6dd86f8e2625e816e7dd4e3537809961eb0824ce646beb1271701d13d14729a3"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-045",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "6d8739079019fe466780115550b044f7ce80f4237097e690109c947262f51d9e"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-045",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "0f1cd1a6384228d661d891204aea45de1ba19a1fb6518e0503ccc5e86acbf5b4"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-045",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "c486066526d2734fb7935efe2cc5d18690bf8c6b5cdb67aa077eb03d9a91f7e1"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-046",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "4d80ec196c0ead95f61aea9f24aafadc3d175100675b5cacf590440ee32658f3"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-046",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "895ee8a29597bf841feb119e23a97a3b0f5f764b369199cfb4f9b84bf5af105d"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-046",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.4",
+          "lines": [
+            3058,
+            3060
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "e58b900bcd60e03f8c7b90d1ebef5c41bd52bccaf46a4ab5f0c7a4b1e0526ac6"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-046",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "eb8591b20b58590a632614121f2524bd6b0b40f1c908e6846f848be0dc731d6b"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-046",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "167cc088c1542eebdc8cbe76ea4a77ec065344abf2b0ff280587f2ffd356dfda"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-047",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Glandele bulbouretrale și compoziția spermei",
+          "lines": [
+            3094,
+            3096
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "2381ae31c54ba6d856ded74953aa6cf0f7b72d8acc71f4e5a0d81bd934240691"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-047",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "f3a90312ee71d89055314b6860c94bfaf16c22a6ffe63bc08d552c2f42208b21"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-047",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "6fe0bee7d4c29e0f6582127e96424e6b5794ceec8603535f70197c8080011ba0"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-047",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Porțiunile uretrei",
+          "lines": [
+            3086,
+            3086
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "a592cfcfa91ea9b76c8f0c82fe3592b49a7f52b13c5d3043ef29680c55d6f50c"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-047",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.1",
+          "lines": [
+            3008,
+            3010
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-1-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "eacfdc15fa4016215306653563febdca99a0b65df1c5677164ae6596d9b4eaa9"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-048",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "cac80dd1bfc852b6cc1cd49b285cd5f0055db3dbd99a1c543a8813309b1be3be"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-048",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Penisul și ejaculatul",
+          "lines": [
+            3098,
+            3102
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "6471e51328b333da7637dec97f54b9642aa4f409104c17fb6fe1db79a6d8eb94"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-048",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        },
+        {
+          "lesson": "Sistemul endocrin",
+          "section": "Hormonii steroidieni și mecanismul lor",
+          "lines": [
+            1294,
+            1300
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "c6a7b5b2fff42f230eebaf8c5b7933c5b66a14c16e0210a6d84e40ec0117f609"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-048",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "3a392fadb3d003379d60af3034d2da8ed68453b9959af23de6dadfe5b3993398"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-048",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.1",
+          "lines": [
+            3008,
+            3010
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-1-barrons.webp"
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.5",
+          "lines": [
+            3082,
+            3084
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-5-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "2cefac424607be52062fe3aa1e79cbc2c5bcf1bd7db824f23575450007120903"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-049",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Penisul și ejaculatul",
+          "lines": [
+            3098,
+            3102
+          ]
+        },
+        {
+          "lesson": "Sistemul nervos",
+          "section": "Figura 11.10 — inervația parasimpatică a organelor sexuale",
+          "lines": [
+            1070,
+            1072
+          ],
+          "figure": "assets/images/chapters/nervous-system/figura-11-10-sursa-2022.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "158d34e8ee77ffd85daa2c3e8b5f493697d0bb07343bcc3a633591074e00f232"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-049",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "43512c543b7751f3acbd66c5a3399a5ec28fb90bcbaaa454121bb01ac9476b2d"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-049",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.4",
+          "lines": [
+            3058,
+            3060
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "f7b31d62b0f17f63b86e30796a732d094eafbdd8f93eed32274578d09f67aabe"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-049",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Porțiunile uretrei",
+          "lines": [
+            3086,
+            3086
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "e9d94b361bedde4bcdf2a3c0865b76b92c74d3cc0d595ce1c7ccd29cec0c411c"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-049",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul endocrin",
+          "section": "Hormonii steroidieni și mecanismul lor",
+          "lines": [
+            1294,
+            1300
+          ]
+        },
+        {
+          "lesson": "Sistemul endocrin",
+          "section": "Receptori membranari și mesageri secundari",
+          "lines": [
+            1302,
+            1302
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "f627df1bf3a68eba3727fdc2c6b6d90536d88aa5044c1dbabe3c98155c88aa95"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-050",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul endocrin",
+          "section": "Tabelul 13.1 — glicoproteine",
+          "lines": [
+            1316,
+            1316
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "83a0649f1738f3e4d62e89076a599855337bf24e802a26e50e2db65f19360fbe"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-050",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "a80bf859165797ff5ab28a7531dae9869a0933160fca9144eafd83f318a63eae"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-050",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.2",
+          "lines": [
+            3042,
+            3044
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-2-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "b84148880a804a6b67376ff8c38e6435fd69c6cbf189a4723da8ff72b886786d"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-050",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul cardiovascular",
+          "section": "Figura 15.9 — artera gonadală",
+          "lines": [
+            1950,
+            1952
+          ],
+          "figure": "assets/images/chapters/sistemul-cardiovascular/figura-15-9.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "ce143e4aabd4b4aa4aaa66abbd39c80c39427607c1c04ad3a8b279f103786f53"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-050",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul cardiovascular",
+          "section": "Figura 15.10 — vena gonadală",
+          "lines": [
+            1954,
+            1956
+          ],
+          "figure": "assets/images/chapters/sistemul-cardiovascular/figura-15-10.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "65fbcf19cbbaf4b3d5a0ddbfe91721ea2bcad7faf4a84fb37e40bc00df20aa96"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-051",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Tabelul 22.2 — a doua diviziune meiotică",
+          "lines": [
+            3030,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "47faef583fb0390ccc7f637836f1eea6f3ddc83dda0c2a834e1f1581ab5c6a8d"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-051",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Tabelul 22.2 — a doua diviziune meiotică",
+          "lines": [
+            3030,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "49818b0a382640faf1587b87f2e27bb82a25c507da8327f43722e2b128971bf6"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-051",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Tabelul 22.2 — a doua diviziune meiotică",
+          "lines": [
+            3030,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "124a8443589645722e84c922338050690c46a0c8d72957122f06d7bd9e5f512b"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-051",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Tabelul 22.2 — a doua diviziune meiotică",
+          "lines": [
+            3030,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "25a7b3406acaa9c2cc6f5e83bf85be26d145a2d07347cde1786390796e836e9d"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-051",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Tabelul 22.2 — a doua diviziune meiotică",
+          "lines": [
+            3030,
+            3044
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.2",
+          "lines": [
+            3042,
+            3044
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-2-barrons.webp"
+        }
+      ],
+      "status": "limited",
+      "explanationSha256": "2082e8b89a9724955e2a8d1fe1744f064f9f9dc0bbbda3f81dfcdc94ea1f8545"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-052",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "fff352ad193c4d56667dc098565c0a80a2fd9fa01b6a5374eee4c6a5b56e571b"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-052",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "3fedaf7cf6e764f30b189c3a744b38ffc19b1fa57c053cfb1e8cf2062ea7950e"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-052",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.1",
+          "lines": [
+            3008,
+            3010
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-1-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "b5270ac4bf1746dc29000a1c9a3682376c4737e9bf4da2446ba15455b4d238a3"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-052",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Porțiunile uretrei",
+          "lines": [
+            3086,
+            3086
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.5",
+          "lines": [
+            3082,
+            3084
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-5-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "3f99bbcc4b29074e40b2c47e558d87f8372e66012ef1750a663c5263e580f9d0"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-052",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "ae9c3b05f56a932951a3f7b61001e2900b7f5db341b4975266d23e0772976ce8"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-053",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "e9100d2249b3e47e5ed12ca5f18f4dad4b0f89e9ea6b15c54ac915716b8a5a0c"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-053",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "659e80d28b3340027da81005939d17e73e5dd70d7b0b9c670eba7f49fd335a23"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-053",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.3",
+          "lines": [
+            3054,
+            3056
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-3-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "2912db203eeee48b31f41f5a121c4c323118b5515ac52f013fd6c4155726a025"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-053",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "1b9a1f5a6c446e3ac07d6755eed15bcf529d291b1f60d03aadeb5127526945a1"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-053",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "2b2e9621d88ea83460903e28b127232acba836bf98c3d9ec826981bae9f51b7d"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-054",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Porțiunile uretrei",
+          "lines": [
+            3086,
+            3086
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "d59887e80b526c8e25465f58e8db60d8155ac43d1f56c2ae8ffd1998ec9cb06f"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-054",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Porțiunile uretrei",
+          "lines": [
+            3086,
+            3086
+          ]
+        }
+      ],
+      "status": "limited",
+      "explanationSha256": "be09d57b3e52db76ff087fb954d6b235b3566dbfdb6b0d27ca1c44699fce8f1d"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-054",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "23dfc073a22df4247bcd25d3aea8e4e836b68adf0dad566701e5e958e0fd8d07"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-054",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        }
+      ],
+      "status": "limited",
+      "explanationSha256": "bc1469ccd0315ae074e1b845856a2fa4f9eb4060b51076c40ef95823f3cb25ad"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-054",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.5",
+          "lines": [
+            3082,
+            3084
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-5-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "9a635233d110749b47fd19dc437fa5291ffdf92e22db1f51a5abba8a3d04cd69"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-055",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Tabelul 22.2 — prima diviziune meiotică",
+          "lines": [
+            3020,
+            3028
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "f519fdc060d0f0b4447e7d02b9e4b1bf91c0f6939f6213476deb40625a426a7d"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-055",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Tabelul 22.2 — prima diviziune meiotică",
+          "lines": [
+            3020,
+            3028
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "e3a8d1b1be65489c883827b5510b67f4990cdc607c2b31a2a091ec96bf1e3365"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-055",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Tabelul 22.2 — prima diviziune meiotică",
+          "lines": [
+            3020,
+            3028
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "fc482753aec50fca799bef41f032ac705560aaeac8941e4524eb2d8503aa8822"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-055",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Tabelul 22.2 — prima diviziune meiotică",
+          "lines": [
+            3020,
+            3028
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "5cc387ec9d06826362bb218b35fdba1fbcf1ee8c02deb635ea7a19e544f1dfa9"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-055",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Tabelul 22.2 — prima diviziune meiotică",
+          "lines": [
+            3020,
+            3028
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "38ebdf346df7c91672a33283544abacd65ea91585afa4e814360b4f919f79cf8"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-056",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Penisul și ejaculatul",
+          "lines": [
+            3098,
+            3102
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "6ded7fb59fc3e324b9141e7060ba9beac9b604b623bb8e673119d904aa9cc64e"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-056",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Glandele bulbouretrale și compoziția spermei",
+          "lines": [
+            3094,
+            3096
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "938bade1d680163534713b7100b6bd199397c35f4dc8a60e4db4cc195f5cacb9"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-056",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "12cb6e63c6a4799421f87db76e615eb44171dff5e53d17af072a9d057a377a81"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-056",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Glandele bulbouretrale și compoziția spermei",
+          "lines": [
+            3094,
+            3096
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "3376c024f1d097596391cd61e6c8df7fbbb5819c57d1f37bd6fecbea03cdec62"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-056",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "80f23df08f9d85d75284bc2533a2645c04e0c9526aa520426e05d935fca45606"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-057",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "222697dbb5186ae71e9e33948ce2c8c8e3a158bff02232aabaf90b6d115a9c9a"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-057",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "30f180e9a6b8bd4fc15d82487ec883c059460b459888db8ffba2e4cf9ee6f8d0"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-057",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "8c658ffefa9e6860bb7ffd9853f11b8e1320430cfeebbb5bf72e660323d137b8"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-057",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.4",
+          "lines": [
+            3058,
+            3060
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "a8f404bb0f600cce7efe30373acd3063d9b961ccf8699d36659e27308b345c82"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-057",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "6a27bbf7e2d949da4478a89e4d76af57ed1b50eca30e9fa83958974bae78fc89"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-058",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "a3a6ea492466db4cd89abceeed31926f89c4fa1f886b32f4af816e37f4323c21"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-058",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "958ebb914ef9c1530e76021c7484d8b24fae178104a53b448f696b44face551b"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-058",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.4",
+          "lines": [
+            3058,
+            3060
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "66f5bb6a22747f517f4fe234ed8144dd5d0595a3f79ddb007db17023cdb733df"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-058",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "1de9c6060709c2f7560c5e9e25c1714635f5714eb5e44b45c0acd208cb97ff55"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-058",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Structura spermatozoidului",
+          "lines": [
+            3048,
+            3050
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "3189bd1e6e0451d97f082f68422527c3834d1fce3c05c7b40a5cb657c097e30c"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-059",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "90915e82cc266357cb3aa1b99ddeacc66379a25a8e92475b02faeb6e83f91f5d"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-059",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "382531fa96f14427e01a0a91d3fc1bbd4e5a3a22c5fa8cf603a5a915d037fca2"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-059",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "d6d5a2b13b3761d2ff5d9b3470c14e9c4cd7eac1506a12ad80cb5c90dcae3707"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-059",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "edd3a61d16346bc139c3435cfa677db8f75c6c056ab1fa34070188747a28194d"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-059",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "e034127f467faac2f0bf2ef4dd63ed0925aa4bde0f1c5bd82c5aeb974e3fdbb8"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-060",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.1",
+          "lines": [
+            3008,
+            3010
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-1-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "a209ff6f89b0d74f2837dcecf1a95da35ad6484066e4e44d5b2790584265a998"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-060",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător feminin",
+          "section": "Vestibulul și glandele sale",
+          "lines": [
+            3227,
+            3227
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Glandele bulbouretrale și compoziția spermei",
+          "lines": [
+            3094,
+            3096
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "317ea5941cbb554f39d578ba15620ee673916286bc535afb18eaf48a0a3ef58d"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-060",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Porțiunile uretrei",
+          "lines": [
+            3086,
+            3086
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "5863d46deab2beb5895ef1b3345af796c94d2af0e918b7b3f1d17c54a52d6aca"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-060",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător feminin",
+          "section": "Vestibulul și glandele sale",
+          "lines": [
+            3227,
+            3227
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Glandele bulbouretrale și compoziția spermei",
+          "lines": [
+            3094,
+            3096
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "aca5b2892c6a4a4230869ad08e63d025d0c64b81ec705678b7c4d9a931e04af4"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-060",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "57b21a9a4a27c13f1c3702499179d51522157227563f1011c542af30f3d0f046"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-061",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.4",
+          "lines": [
+            3058,
+            3060
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
+        }
+      ],
+      "status": "limited",
+      "explanationSha256": "c121d3df0749cc3bcdedabcc9a26aea8a1234bc13148e57ce0732cb0b37e4a3a"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-061",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "a311b1339286494294d8923ce1a7374dd08b6f60dbbe6895bb426dd5c4a91e0e"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-061",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        }
+      ],
+      "status": "limited",
+      "explanationSha256": "cf679ad5ffed07b6a5bf7c5c2fa31ccdf78206155afe7aed6a4a34e7350fad93"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-061",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.4",
+          "lines": [
+            3058,
+            3060
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "f335e33c87ae81b75a761294e6b112a2feb26aeb5dfef0e21df411237c328cd2"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-061",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.4",
+          "lines": [
+            3058,
+            3060
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "ee0104895af1de3cb487e50453e655954dbc868c35bd714383b56198c57200df"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-062",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "bc131aeaadb21026136d4278e66da9317c683de04195c41170b00bebc0022ca5"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-062",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "ee22f2eaee5313deb51d389b5885a2a050680acf1cd35b330b4310379d3d094f"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-062",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.5",
+          "lines": [
+            3082,
+            3084
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-5-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "e7676c718f3d1891db626ed4b22363fef34270d92fe63d0871f45db0647296ef"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-062",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "ef1598f8a48e5da4da56028961d55d74f9a4516c264f966e0fd22d50d1d8185e"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-062",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.4",
+          "lines": [
+            3058,
+            3060
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
+        }
+      ],
+      "status": "limited",
+      "explanationSha256": "aad57062b3950500b7611eb0cd1cb9de6ff188a1fcfa5af0932628b887a2dc4e"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-063",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "b8a434137d08e1b0c1f7f8dd7a212b3fbc86bf1e6d7598ca0b4a80337a7ac36f"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-063",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "limited",
+      "explanationSha256": "63213e3c02fab409542c41478a33eef426974dd24a0ad66c4be7329097795f64"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-063",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "a4cdb2f09b023686e718bbeb9fe628d91623289fde2485477bc7234057382817"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-063",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.2",
+          "lines": [
+            3042,
+            3044
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-2-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "acbc9129ed28cd7718635f284195036952f3f370b2c69c7f8cb0631322f902fd"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-063",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.2",
+          "lines": [
+            3042,
+            3044
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-2-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "24e699e8f30497c1b1c9003c077153e99d57c8fae22e46cf148eedf7f09715be"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-064",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "8a3647f3c6c81d6bb247262b0fa58272f561c5721b93638b4d7f30a1ec9db2ec"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-064",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "c331d5f693a7510cc20cb30b9c412783a9bf4b05503a9b8d358c8b60f9d74c30"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-064",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "1e5c2960a86e2d0a90388a6b341e764da7a944a280116d85e1c7b5d36ac00636"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-064",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "af7edabd160e8e41ac6af27593e3a13db154d9bf0c02d9bbc95ac06172cbf56b"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-064",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.1",
+          "lines": [
+            3008,
+            3010
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-1-barrons.webp"
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.5",
+          "lines": [
+            3082,
+            3084
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-5-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "b2c0641d7c3d704d8b91511cb1dac38c56e1800d188eea9e87758bb4a27461b9"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-065",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        },
+        {
+          "lesson": "Sistemul endocrin",
+          "section": "Hormonii steroidieni și mecanismul lor",
+          "lines": [
+            1294,
+            1300
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "703f24d6fe90d9192e39f9c4d8d19268d931913574efd08c1f6a9e6ee597504c"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-065",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "a8224a6c6e47d63d815347f192ec7ce4a1ed63d29f2068482a8751772205fe2b"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-065",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "d574b0274fbd00962477061925c335c974f99f4d639ff5eb22c22ef8a2fdf51a"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-065",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "571b9cb194bca7fafbe9ea18f34dec83ddfe8705970b2523cbd0f9814a94aa2b"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-065",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "189dbc3978318fc0d045a667aa8d4dbf6812c2584a2ea58c198adaceb15e6b5e"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-066",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Penisul și ejaculatul",
+          "lines": [
+            3098,
+            3102
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "2a5491dd394221f4c306c18bbc1ced4887ff9446e1f3b98e0f9ae5c8e4b574fe"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-066",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Penisul și ejaculatul",
+          "lines": [
+            3098,
+            3102
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "5ef9e13faf47f94052a7195b0c817fcb533eb562821868d201c48278ec5832ee"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-066",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Penisul și ejaculatul",
+          "lines": [
+            3098,
+            3102
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "9976ba62dee75f769e6a7a4d419fa81d04e55c6e753631fa316ac7899cec46b6"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-066",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Penisul și ejaculatul",
+          "lines": [
+            3098,
+            3102
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "4324d1b78c44fcb7455aa16ea0cd020732bb7cc975af4bc7a833ca28c3d8e9e4"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-066",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Penisul și ejaculatul",
+          "lines": [
+            3098,
+            3102
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "2b50f423003e5930173aba34fe3909cd9f061d93516c99bd1f8d91ab7d29f64b"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-067",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.1",
+          "lines": [
+            3008,
+            3010
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-1-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "d7ec7828f39aba221d8e41f6f8af3613036a0797f429f3882f4cb347f057e1f9"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-067",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "0abb3dc157d106dca93daea76998f62aae6ac8350da050c6c24f39bd6ab3d727"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-067",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "limited",
+      "explanationSha256": "53dec1ece9cc82284fb2aac907797e11e10d94cfb493ea1d42cb28269aeea0c5"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-067",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.4",
+          "lines": [
+            3058,
+            3060
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — prostata",
+          "lines": [
+            3092,
+            3092
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "8123c0fac17b7b36b9b887fb6294467ec306ac1d8dc415f429c5b64d7077f21d"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-067",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.5",
+          "lines": [
+            3082,
+            3084
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-5-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "01f515a4c92ae5645cc652ad08686add474e4cacb9e7e3703f098bd297b0dc5a"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-068",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Porțiunile uretrei",
+          "lines": [
+            3086,
+            3086
+          ]
+        },
+        {
+          "lesson": "Sistemul urinar",
+          "section": "Figura 20.8 — uretra și prostata",
+          "lines": [
+            2949,
+            2951
+          ],
+          "figure": "assets/images/chapters/renal-system/figura-20-8-barrons.webp"
+        }
+      ],
+      "status": "limited",
+      "explanationSha256": "c7dd5bcaab8b6ca9120ba3d14ad3602531fef1c47abcd351b51a99e8707adb36"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-068",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Penisul și ejaculatul",
+          "lines": [
+            3098,
+            3102
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "c601a054aee5697ac7726d46613daccad0c7afe99512513f8b0635933c44f042"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-068",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.4",
+          "lines": [
+            3058,
+            3060
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "5ce57406fefce6e426a17e8401bda1898a2fc5391553ba225829e00d58b40469"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-068",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "cc4ef9201fdd098d56ecb1773a74c19f9491b5c25438e60ce0879eceb1ab9efd"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-068",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Organe anexe — vezicula seminală",
+          "lines": [
+            3090,
+            3090
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Penisul și ejaculatul",
+          "lines": [
+            3098,
+            3102
+          ]
+        }
+      ],
+      "status": "limited",
+      "explanationSha256": "512b5c67cd5c699d488025b04f85641e5e983511620daf5eb49f2ed117c99cbd"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-140",
+      "option": "A",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "e6f6fe2755ec8cd397d03cb556c5f59250e3a63243b9df650f75efd1223bd0ea"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-140",
+      "option": "B",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Căile sistemului reproducător masculin",
+          "lines": [
+            3076,
+            3084
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Figura 22.4",
+          "lines": [
+            3058,
+            3060
+          ],
+          "figure": "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "20799d1868824a3230bdcdcfb97fe8443a7c014b1cfdd25b8f3719f33cf4c651"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-140",
+      "option": "C",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Celulele sustentaculare și interstițiale",
+          "lines": [
+            3052,
+            3052
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "5f312bc13fa09109cf2569f439242c59a1140a8a8e79002728305cfc9a9fdb0e"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-140",
+      "option": "D",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Spermatogeneza și figura 22.2",
+          "lines": [
+            3014,
+            3044
+          ]
+        },
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Hormonii masculini și tabelul 22.3",
+          "lines": [
+            3110,
+            3128
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "b5f0fdb524bff7c19e76cc693ef4110a5859a5293f541f2d56483ac3d2dd3fb2"
+    },
+    {
+      "file": "assets/js/grile-reproducator-masculin-data.js",
+      "question": "rm-140",
+      "option": "E",
+      "references": [
+        {
+          "lesson": "Sistemul reproducător masculin",
+          "section": "Testiculele",
+          "lines": [
+            3000,
+            3006
+          ]
+        }
+      ],
+      "status": "supported",
+      "explanationSha256": "0130fb197151c0f9436c099b056e076704375bb5dbe434d9c37e1d000848516b"
+    }
+  ]
+}
