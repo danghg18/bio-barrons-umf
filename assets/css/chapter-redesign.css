@@ -1591,6 +1591,16 @@ body.bb-chapter-redesign .img-txt img {
   box-shadow: none !important;
 }
 
+body.bb-chapter-redesign .fig > img,
+body.bb-chapter-redesign .figure > img {
+  margin-inline: auto;
+}
+
+body.bb-chapter-redesign .fig > img + img,
+body.bb-chapter-redesign .figure > img + img {
+  margin-block-start: 1rem;
+}
+
 body.bb-chapter-redesign .fig figcaption,
 body.bb-chapter-redesign .fig .caption,
 body.bb-chapter-redesign .figure figcaption {

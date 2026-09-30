@@ -7,6 +7,7 @@ import {createHash} from 'node:crypto';
 import {chromium} from 'playwright';
 const root=resolve(import.meta.dirname,'..');
 const scope=JSON.parse(await readFile(resolve(root,'data/curriculum-2025.json'),'utf8'));
+const coloredFigures=JSON.parse(await readFile(resolve(root,'data/colored-figures-review.json'),'utf8'));
 const target=resolve(root,'tests/curriculum-source-inventory.json');
 const digest=value=>createHash('sha256').update(value).digest('hex');
 const browser=await chromium.launch();
@@ -25,11 +26,18 @@ try {
     return {block:index+1,route:node.closest('.page-section')?.id.slice(5),type:node.tagName.toLowerCase(),
      printedPages:origin?.getAttribute('data-source-pages')||origin?.getAttribute('data-source-page')||null,
      label:node.querySelector('caption,figcaption')?.textContent.replace(/\s+/g,' ').trim()||text.slice(0,120),
-     text,image:node.querySelector('img')?.getAttribute('src')||undefined};
+     text,image:node.querySelector('img')?.getAttribute('src')||undefined,
+     ...(node.hasAttribute('data-source-archive')?{sourceArchive:node.getAttribute('data-source-archive')}: {})};
    });
   },source);
   for(const block of blocks){
-   assert.ok(block.printedPages,`${chapter.url}: source page missing for ${block.label}`);
+   if(block.sourceArchive){
+    const reviewed=coloredFigures.images.find(image=>image.source===block.sourceArchive&&image.html===chapter.url&&image.route===block.route&&image.asset===block.image&&image.reviewed===true);
+    assert.ok(block.type==='figure'&&reviewed,`${chapter.url}: unreviewed archive figure ${block.sourceArchive}`);
+    assert.equal(digest(await readFile(resolve(root,block.image))),reviewed.sha256,`${chapter.url}: archive image bytes changed`);
+   }else{
+    assert.ok(block.printedPages,`${chapter.url}: source page missing for ${block.label}`);
+   }
    block.textSha256=digest(block.text);delete block.text;
    if(block.image)block.imageSha256=digest(await readFile(resolve(root,block.image)));
    else delete block.image;

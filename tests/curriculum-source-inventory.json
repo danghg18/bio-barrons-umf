@@ -54,9 +54,9 @@
           "type": "figure",
           "printedPages": "2",
           "label": "Figura 1.1. Niveluri de organizare structurală a corpului uman.",
-          "image": "assets/images/chapters/introduction/figura-1-1-sursa-2022.webp",
+          "image": "assets/images/chapters/introduction/figura-1-1-color.jpg",
           "textSha256": "1e865cfbe5dc82039807306cd71a6b2d11fb3de8bc322a01529f040417228103",
-          "imageSha256": "3e3fbdd3ee364e1dadab81d9562dfd9e795f3a3960b9b71662a04b8af67222f5"
+          "imageSha256": "2561a36fcd014de3675a9f7d57f91c5be6f5ed311fdab6757ffe7663eae1b875"
         },
         {
           "block": 6,
@@ -240,9 +240,9 @@
           "type": "figure",
           "printedPages": "6",
           "label": "Figura 1.2. Corpul și direcțiile sale. (a) Corpul în poziție anatomică: vertical, cu picioarele apropiate, membrele superioare pe lângă corp și palmele spre înainte. (b) Câțiva termeni direcționali asociați cu structuri anatomice ale corpului.",
-          "image": "assets/images/chapters/introduction/figura-1-2-sursa-2022.webp",
+          "image": "assets/images/chapters/introduction/figura-1-2-color.jpg",
           "textSha256": "4aca19980ce9377ae32fa9b6a23f206a3fbc8320329896e016166ce32d92d124",
-          "imageSha256": "9f7390d9ff3642c3966e7bf34c036ec17b8be017ab07ffcba7a2f46dc2a604a1"
+          "imageSha256": "b93a507acec26044998c85019443fd8471c17c2009e10cdf1b2268c961c36b4c"
         },
         {
           "block": 29,
@@ -290,9 +290,9 @@
           "type": "figure",
           "printedPages": "8",
           "label": "Figura 1.3. Cele trei planuri importante ale corpului uman.",
-          "image": "assets/images/chapters/introduction/figura-1-3-sursa-2022.webp",
+          "image": "assets/images/chapters/introduction/figura-1-3-color.jpg",
           "textSha256": "6fffd12247a982bd1f9d06102ae489ebdf74b27d092d5c14ea60cd49fab055c6",
-          "imageSha256": "8023a70f2684b32637cbc0fea603c0b27deace9cb78bce806096385f7e96d877"
+          "imageSha256": "a718f9e17c57507c8d0fa4870c17aeaa1f11650580924ad5773fa23b671a6c64"
         },
         {
           "block": 35,
@@ -324,9 +324,9 @@
           "type": "figure",
           "printedPages": "9",
           "label": "Figura 1.4. Cele două cavități principale ale corpului cu subdiviziunile și conținutul lor.",
-          "image": "assets/images/chapters/introduction/figura-1-4-sursa-2022.webp",
+          "image": "assets/images/chapters/introduction/figura-1-4-color.jpg",
           "textSha256": "ad6f023e840c0c1995934d4d8d9bfac5ff66e1e7251dac1ceb13620105caa728",
-          "imageSha256": "4dfb23de28675a5be71592c1e6614f114c155e657acde6967c4a5bfdeda254d0"
+          "imageSha256": "c5db0040ceb9e2edf9979832930df5dd9a9796a02b25422c7d538ee2bafe3ae4"
         },
         {
           "block": 39,
@@ -374,9 +374,9 @@
           "type": "figure",
           "printedPages": "10",
           "label": "Figura 1.5. Regiuni anatomice importante ale cavității abdomino-pelviene.",
-          "image": "assets/images/chapters/introduction/figura-1-5-sursa-2022.webp",
+          "image": "assets/images/chapters/introduction/figura-1-5-color.jpg",
           "textSha256": "b9e7bd27a603d7abf82c58e8f64d6c1700afda9fef3179b741df2147cc4233ba",
-          "imageSha256": "c457ece23781cacd0781e14abc5516646c0baf1baf1a99da245ae24edd692aa7"
+          "imageSha256": "15b3a164904027a68cf07ccc8f13b0d9f0fc041c2add973b9b6bbc0731b4e281"
         },
         {
           "block": 45,
@@ -469,9 +469,9 @@
           "type": "figure",
           "printedPages": "46",
           "label": "Figura 3.1. Modelul mozaicului fluid al membranei plasmatice care delimitează celula. Membrana este alcătuită din două straturi fosfolipidice în care plutesc proteine globulare.",
-          "image": "assets/images/chapters/cell/figura-3-1-sursa-2022.webp",
+          "image": "assets/images/chapters/cell/figura-3-1-color.jpg",
           "textSha256": "55f6c4ca2d2b53d3d87d150141c791654b35ae9eebe1b49535c5a699faddf088",
-          "imageSha256": "442f1b85b8229d9841b6a482c0da108b715f2afd2622aefefc3ebc801156975a"
+          "imageSha256": "e5246fe13f37c466452393bacf1f481b84be342e68cb60539dab3a6cb2a7d9a6"
         },
         {
           "block": 5,
@@ -693,9 +693,9 @@
           "type": "figure",
           "printedPages": "51",
           "label": "Figura 3.5. Reprezentarea celulei umane tipice cu diverse organite. Pentru evidențierea detaliilor, unele dintre organitele foarte mici sunt reprezentate la o scală mai mare.",
-          "image": "assets/images/chapters/cell/figura-3-5-sursa-2022.webp",
+          "image": "assets/images/chapters/cell/figura-3-5-color.jpg",
           "textSha256": "bf4b169f8a8e0a4aca29168daef6c371c9e3a3ce56b5168dffb577d148bbd35f",
-          "imageSha256": "7a31deeece096e793ad9724d40740793e9d6dc690b1eb0c295313c88cf8abb24"
+          "imageSha256": "460ae77dfb0c3e412ccb2acb7d7ae1adfc6d8e4c143341d8fbe7e5ca47908797"
         },
         {
           "block": 32,
@@ -822,9 +822,9 @@
           "type": "figure",
           "printedPages": "117",
           "label": "Figura 6.1. Cele patru tipuri de oase și localizarea lor.",
-          "image": "assets/images/chapters/bones-and-joints/figura-6-1-sursa-2022.webp",
+          "image": "assets/images/chapters/bones-and-joints/figura-6-1-color.jpg",
           "textSha256": "bd839736b4df88a1d4eb74194112014e9f00a9986d4c49f0710e70fad2b761f0",
-          "imageSha256": "c433250652048c5d4544580ad827dd010527576071b9f444ae93f365469c6b70"
+          "imageSha256": "652b593afef0291a47a3222e1f08adc6259e542b3e1596970a32ea4930007b2a"
         },
         {
           "block": 10,
@@ -888,9 +888,9 @@
           "type": "figure",
           "printedPages": "118",
           "label": "Figura 6.2. Structura unui os lung tipic al corpului uman, cu părțile lui componente.",
-          "image": "assets/images/chapters/bones-and-joints/figura-6-2-sursa-2022.webp",
+          "image": "assets/images/chapters/bones-and-joints/figura-6-2-color.jpg",
           "textSha256": "8aa4bb3cf842fbdf39159452fa990bf7ecd290441316fc393b60ff71d3b29868",
-          "imageSha256": "aa32c03a527e2e0d7f249acf1e21760a40e6d7857f2528546d628e2ca0829f2e"
+          "imageSha256": "31c58ae7aae615fe0af818886f9f2fdc43768c8284e856cbb3e6a57d3bd8f5be"
         },
         {
           "block": 18,
@@ -938,9 +938,9 @@
           "type": "figure",
           "printedPages": "119",
           "label": "Figura 6.3. Structura histologică a osului. Printr-o secțiune prin osul compact, este prezentată structura histologică a acestuia, și în special a osteonului. Un fragment al osteonului este prezentat în detaliu, pentru a se evidenția structurile de mici dimensiuni.",
-          "image": "assets/images/chapters/bones-and-joints/figura-6-3-sursa-2022.webp",
+          "image": "assets/images/chapters/bones-and-joints/figura-6-3-color.jpg",
           "textSha256": "526451265a3f35f74bce11aa0a69a3a27b077211caa26b1f680db79b8739d3db",
-          "imageSha256": "a1b14bae91db2a65db65df7f0875186c7917283471610c4996feee217a674fe6"
+          "imageSha256": "11e603d746ca1a022c4108e3ea8ebaefac29f5827259fa8a93b2f58f16c3949f"
         },
         {
           "block": 24,
@@ -1060,9 +1060,9 @@
           "type": "figure",
           "printedPages": "121",
           "label": "Figura 6.4. Cele trei tipuri de articulații întâlnite în organismul uman. (a) O articulație imobilă, între oasele craniului; (b) O articulație ușor mobilă, între vertebrele coloanei vertebrale; (c) O articulație mobilă, denumită și articulație sinovială, așa cum se poate găsi în articulația șoldului. Observați componentele structurale ale acestui tip de articulație.",
-          "image": "assets/images/chapters/bones-and-joints/figura-6-4-sursa-2022.webp",
+          "image": "assets/images/chapters/bones-and-joints/figura-6-4-color.jpg",
           "textSha256": "bcf28e63d9acd94e157f91dbfa1e92965a5551c83fa01fff78e568748893f81b",
-          "imageSha256": "c335ab8ae3467dbd154889c530aa0af20d0e8d185aa2f5c59ff263d8d5114a3b"
+          "imageSha256": "0ca062cfbdba8e23d33da28ff3e2280c892bff9261aead80e4731e5a2625a290"
         },
         {
           "block": 39,
@@ -1158,9 +1158,9 @@
           "type": "figure",
           "printedPages": "125",
           "label": "Figura 6.6. Mișcările posibile în articulațiile umane.",
-          "image": "assets/images/chapters/bones-and-joints/figura-6-6-sursa-2022.webp",
+          "image": "assets/images/chapters/bones-and-joints/figura-6-6-color.jpg",
           "textSha256": "11f326309d6e833254270df6d50f17767b4fb0afa1f28c2eee500a114595db1a",
-          "imageSha256": "bc16cf6a60cbaa030279c9fd135ebd8371e2504123ddaf363836f44f98b7ebad"
+          "imageSha256": "e34bc50a02c72ab963ccec52ac28398a745bc4fceeda35cc20a6d50f868e4e3b"
         },
         {
           "block": 51,
@@ -1334,9 +1334,9 @@
           "type": "figure",
           "printedPages": "170",
           "label": "Figura 8.1. Structura microscopică și electronomicroscopică a celulei musculare striate scheletice. (a) Secțiune la nivelul corpului mușchiului. (b) Secțiune transversală prin mușchi, ce evidențiază numeroase fibre (celule) musculare organizate în fascicule. (c) O fibră (celulă) musculară cu trei nuclei, sarcolema și câteva sarcomere aflate la capetele fibrei. (d) Un sarcomer mărit cu scopul de a evidenția filamentele groase și subțiri, diversele zone și benzi. Activitatea musculară are loc în sarcomere.",
-          "image": "assets/images/chapters/muscular-tissue/figura-8-1-sursa-2022.webp",
+          "image": "assets/images/chapters/muscular-tissue/figura-8-1-color.jpg",
           "textSha256": "2d0743601faac70a7ef273dbf985dc304bb0eb11976cea715546684d6094fb15",
-          "imageSha256": "2b2bd051b6ae47603446934564edc4e7d147a1166cf82dfb6d9339789acc9175"
+          "imageSha256": "2ba0fb930b080ad48590a3f09bb16de5ca3ec4a0777bb308c614cc68e120a42c"
         },
         {
           "block": 14,
@@ -1408,9 +1408,9 @@
           "type": "figure",
           "printedPages": "177",
           "label": "Figura 8.5. Conversia energetică în celulele musculare. (a) Energia este asigurată prin respirație celulară cu producere de fosfocreatină și furnizare de molecule de ATP. Când ATP-ul este scindat, energia rezultată produce activitate actino-miozinică, determinând astfel contracția musculară. (b) Structura chimică a ATP-ului. Când legăturile cu nivel energetic ridicat sunt scindate, este eliberată energie pentru a stimula activitatea celulei musculare.",
-          "image": "assets/images/chapters/muscular-tissue/figura-8-5-sursa-2022.webp",
+          "image": "assets/images/chapters/muscular-tissue/figura-8-5-color.jpg",
           "textSha256": "27f2ed008cc9eee207d374b406ecccb929bc9b9bb8ca131d8d9968bbbe724205",
-          "imageSha256": "196f45068d574ce974a79583b1d047fa1e5be47c7be4547df46682d4e5794464"
+          "imageSha256": "dac53446bee4b761474b0d5fb41324bb1feb7f51132625ceae8ea76135e1f4d5"
         },
         {
           "block": 23,
@@ -1521,9 +1521,9 @@
           "type": "figure",
           "printedPages": "225",
           "label": "Figura 10.1. Cele două componente principale ale sistemului nervos uman.",
-          "image": "assets/images/chapters/nervous-tissue/figura-10-1-sursa-2022.webp",
+          "image": "assets/images/chapters/nervous-tissue/figura-10-1-color.jpg",
           "textSha256": "871d42faefe7aeacc78cc1313b196f6dc93a66b6b0fc20bb712e6f1579b2d987",
-          "imageSha256": "f2671307c76ea95675fdf15a0d0488679cdfba46798141554fa381f086befbd6"
+          "imageSha256": "2318a026f79087f263238d54b6d9297784832de41c482c923419daad413feb8d"
         },
         {
           "block": 11,
@@ -1555,9 +1555,9 @@
           "type": "figure",
           "printedPages": "226",
           "label": "Figura 10.2. Neuronii și celulele gliale din sistemul nervos central. (a) Relația dintre cele două tipuri de celule în substanța cenușie a encefalului și a măduvei spinării. (b) Relația dintre celule în substanța albă.",
-          "image": "assets/images/chapters/nervous-tissue/figura-10-2-sursa-2022.webp",
+          "image": "assets/images/chapters/nervous-tissue/figura-10-2-color.jpg",
           "textSha256": "4b32714d7597b966980373e13af66ad77e7983fd3b0457982b4c41b97f1948b3",
-          "imageSha256": "8ded695108bfd9cf0e7bfd6285e83439d917ca65ed31b42a63e20f1b789b59c0"
+          "imageSha256": "5fa712e350acb58197726c928a0f4b1823407d10da134f34eaa28d5f61dd4a6f"
         },
         {
           "block": 15,
@@ -1613,9 +1613,9 @@
           "type": "figure",
           "printedPages": "227",
           "label": "Figura 10.3. O reprezentare a celor trei tipuri de neuroni prezenți în sistemul nervos. Neuronii multipolari (a) au numeroase prelungiri, neuronii bipolari (b) au două, iar cei pseudounipolari (c) au una singură, care apoi se ramifică. Detaliile structurii neuronului sunt prezentate în imaginea neuronului multipolar.",
-          "image": "assets/images/chapters/nervous-tissue/figura-10-3-sursa-2022.webp",
+          "image": "assets/images/chapters/nervous-tissue/figura-10-3-color.jpg",
           "textSha256": "ac8a8ce1f10b54c0981bd8be92517c09dbe2446469fabc33772b82768e607608",
-          "imageSha256": "79aa69ecd88d23d1649d394016741493610e8248cd88ac95413864006fedb216"
+          "imageSha256": "a875551501a2f14a8bf2986acfbd724036def6eee3b891410b40581577c2a6ec"
         },
         {
           "block": 22,
@@ -1663,9 +1663,9 @@
           "type": "figure",
           "printedPages": "228",
           "label": "Figura 10.4. Formarea tecii de mielină pe măsură ce celula Schwann se înfășoară în jurul axonului, prezentată în imagini succesive (a), (b) și (c). Mielina este o substanță de culoare albă, bogată în lipide, din membrana celulei Schwann.",
-          "image": "assets/images/chapters/nervous-tissue/figura-10-4-sursa-2022.webp",
+          "image": "assets/images/chapters/nervous-tissue/figura-10-4-color.jpg",
           "textSha256": "04cd66c8394dc869849bddda07560ab5887df1f42df5ea45811470b4ce96a9ee",
-          "imageSha256": "b7cc77de41dcb513e4e33c375efb9637609fb51b7a84df008414792e44c71c74"
+          "imageSha256": "dea9fa6fa703e9a97b81218ba79d595c80fd979fdf16171315814cc4f480d820"
         },
         {
           "block": 28,
@@ -1745,9 +1745,9 @@
           "type": "figure",
           "printedPages": "229",
           "label": "Figura 10.5. Un arc reflex tipic, ilustrat cu ajutorul reflexului de retragere. Impulsurile iau naștere la nivelul receptorilor dureroși și ajung la măduva spinării prin intermediul neuronilor senzoriali. Interneuronul interpretează impulsul și trimite un răspuns prin intermediul neuronului motor către mușchii efectori, care îndepărtează laba piciorului de stimulul dureros. Observați localizarea corpului celular al neuronului senzorial, care se află în afara măduvei spinării, într-un ganglion, și pe cea a corpului neuronului motor, situat în măduva spinării.",
-          "image": "assets/images/chapters/nervous-tissue/figura-10-5-sursa-2022.webp",
-          "textSha256": "fe063b3466074e260203f32a7c4e65fcc112d843f51bc2411994654a8cee667d",
-          "imageSha256": "38b710b6839164cf1d0445c95985b634d2a0265f0ccddc35ef01af49c7f79926"
+          "image": "assets/images/chapters/nervous-tissue/figura-10-5-color.jpg",
+          "textSha256": "0ad92d2e98ba1caf7e325163cfd3116ea8c1bb3d300256330906e2658b71b1e8",
+          "imageSha256": "41e74d91069e611262e678a927c7d43c58f1b9fd42156d93edf5d8006a4efbaf"
         },
         {
           "block": 38,
@@ -1795,9 +1795,9 @@
           "type": "figure",
           "printedPages": "231",
           "label": "Figura 10.6. Dezechilibrul ionic între interiorul și exteriorul unei celule nervoase. Numărul mare de ioni negativi din celulă este pus pe seama moleculelor proteice. Numărul ionilor de sodiu din exteriorul celulei este mai mare decât cel al ionilor de potasiu, ceea ce contribuie la menținerea unei sarcini electrice pozitive în exteriorul celulei.",
-          "image": "assets/images/chapters/nervous-tissue/figura-10-6-sursa-2022.webp",
+          "image": "assets/images/chapters/nervous-tissue/figura-10-6-color.jpg",
           "textSha256": "ac48abe476f44412da5fd929a126a8674c68e14aca72b21855b5239bdf670c85",
-          "imageSha256": "5dc75b1cf8f094b4c25c0ddeebaf3e9c78ab548bd41f15bcd9b2fc1996e66426"
+          "imageSha256": "b1f79f45ed5aa9e2f2a99238b2e3636a7229747dcbc07eee82fc9c115305cafc"
         },
         {
           "block": 44,
@@ -1845,9 +1845,9 @@
           "type": "figure",
           "printedPages": "232",
           "label": "Figura 10.7. Potențialul de acțiune al unei celule nervoase. (a) Un stimul este aplicat membranei și ionii de sodiu (+) pătrund în celulă; membrana celulară își pierde polaritatea, generând astfel un potențial de acțiune. (b) Membrana adiacentă este depolarizată, iar potențialul de acțiune se propagă; între timp, zona inițială se repolarizează prin acumularea de ioni de potasiu (+), fiind pregătită pentru declanșarea unui nou impuls. (c) Potențialul de acțiune se propagă de-a lungul axonului pe măsură ce sunt depolarizate zone succesive ale membranei.",
-          "image": "assets/images/chapters/nervous-tissue/figura-10-7-sursa-2022.webp",
+          "image": "assets/images/chapters/nervous-tissue/figura-10-7-color.jpg",
           "textSha256": "61976530712e662f4890c113a686c24f5a06d411684765fc824a390b86763cb2",
-          "imageSha256": "341ac2b6f7712346dbc52f9a6c2df05f62f4de6f95747a8392e08b2da77c0471"
+          "imageSha256": "2b5374384b96f0d3b703db36d7275b429c3a0ef02f39c56710b86d7e91ebee4f"
         },
         {
           "block": 50,
@@ -1895,9 +1895,9 @@
           "type": "figure",
           "printedPages": "233",
           "label": "Figura 10.8. O comparație între propagarea impulsurilor în neuronii mielinici și cei amielinici. Observați cu cât este mai mare distanța parcursă de impuls în neuronul mielinizat, în aceeași unitate de timp. (a) Conducere continuă. (b) Conducere saltatorie.",
-          "image": "assets/images/chapters/nervous-tissue/figura-10-8-sursa-2022.webp",
+          "image": "assets/images/chapters/nervous-tissue/figura-10-8-color.jpg",
           "textSha256": "2d2b3d426da364970f11470f7e6f05ca5da64bf1491480334073fecf4b3cb990",
-          "imageSha256": "eab12f0ecfe8a34d969e9fa7247f0b4099c0c6721701b7922698da7de00b1777"
+          "imageSha256": "fcf08a01e4bacbcef98a560096b75f46ada83c3f7cdd8e5ab4d60d8b90e2f501"
         },
         {
           "block": 56,
@@ -1937,9 +1937,9 @@
           "type": "figure",
           "printedPages": "234",
           "label": "Figura 10.9. Activitatea sinaptică. Atunci când un potențial de acțiune ajunge la capătul axonului, moleculele de neurotransmițător (precum acetilcolina) sunt eliberate din veziculele sinaptice prin exocitoză, la nivelul membranei presinaptice. Moleculele traversează fanta sinaptică și se leagă de receptorii de pe suprafața membranei postsinaptice. Acest fenomen generează un potențial de acțiune în neuronul postsinaptic.",
-          "image": "assets/images/chapters/nervous-tissue/figura-10-9-sursa-2022.webp",
+          "image": "assets/images/chapters/nervous-tissue/figura-10-9-color.jpg",
           "textSha256": "ad0e38c0c8c41d3b813d7fba2bd7ad86f09d6d99529117bbad15dbce764c8385",
-          "imageSha256": "affbd0d811fb55d5290806a830d7721533504ec1319ed9813f428309c6a6cae8"
+          "imageSha256": "3c01f505783b819ae23457257ef738818334dae274cf70d550b9990809e8ac73"
         },
         {
           "block": 61,
@@ -2058,9 +2058,9 @@
           "type": "figure",
           "printedPages": "247",
           "label": "Figura 11.1. Anatomia generală a sistemului nervos central uman. (a) Principalele regiuni ale encefalului și ale măduvei spinării. (b) Localizarea sistemului nervos central în organism.",
-          "image": "assets/images/chapters/nervous-system/figura-11-1-sursa-2022.webp",
+          "image": "assets/images/chapters/nervous-system/figura-11-1-color.jpg",
           "textSha256": "5929c4108124f22f03ac36eba5d786b42d80beba167a46521e6ee0a4e2c2a39c",
-          "imageSha256": "7332a25c6c04c52528bb0f2eaaa82a24afadc658d76203e8e455adf6c3d2f1d3"
+          "imageSha256": "2a6f4d0f55bab4534443b45aca8dfaeeeb1da35c2ae23f0e774e1ad000e3b562"
         },
         {
           "block": 9,
@@ -2108,9 +2108,9 @@
           "type": "figure",
           "printedPages": "248",
           "label": "Figura 11.2. Structurile ce învelesc sistemul nervos. (a) Relațiile dintre encefal, măduva spinării și oasele ce le înconjoară. (b) Detalii ale celor trei straturi ale meningelui.",
-          "image": "assets/images/chapters/nervous-system/figura-11-2-sursa-2022.webp",
+          "image": "assets/images/chapters/nervous-system/figura-11-2-color.jpg",
           "textSha256": "2e87a8d28534ab37887d41aa86d014ef106078e1f6ee8ba271ce20737736dda0",
-          "imageSha256": "8a776ffbef9f7313435dd548a3c267687eedb4dd283076ca4347b41ebd8aedf2"
+          "imageSha256": "af1340bb4abd95351eb2d66f0334a6ceaa7d734892b759ae550f96a4d713c3b7"
         },
         {
           "block": 15,
@@ -2118,9 +2118,9 @@
           "type": "figure",
           "printedPages": "248",
           "label": "Figura 11.3. Secțiune transversală prin măduva spinării. Țesutul nervos este învelit de trei straturi meningeale și este înconjurat de vertebre. Observați rădăcinile nervoase dorsale și ventrale ce pleacă din măduva spinării (rădăcinile dorsale sunt dilatate din cauza prezenței corpilor celulari ai neuronilor senzoriali). Rădăcinile își au originea în coarnele posterioare, respectiv anterioare.",
-          "image": "assets/images/chapters/nervous-system/figura-11-3-sursa-2022.webp",
+          "image": "assets/images/chapters/nervous-system/figura-11-3-color.jpg",
           "textSha256": "96878360eeca8c83b2d807d45ead91c0ed4324c9ffe20f0b62c00cd41453455b",
-          "imageSha256": "3d3e31c4f0f55747f58b5e9d3debb781f6425374f8f58b834fcb59f48c794864"
+          "imageSha256": "03be471eaadcc8fff080c4356a4afbede09ae0e2108e7960f0a047f596a2dc26"
         },
         {
           "block": 16,
@@ -2160,9 +2160,9 @@
           "type": "figure",
           "printedPages": "249",
           "label": "Figura 11.4. Encefalul uman în cutia craniană, în secțiune sagitală. Observați diversele structuri prezentate și relațiile dintre ele.",
-          "image": "assets/images/chapters/nervous-system/figura-11-4-sursa-2022.webp",
+          "image": "assets/images/chapters/nervous-system/figura-11-4-color.jpg",
           "textSha256": "f825ea709c8c6de43c2e572df9868f2e3279e6a7deecfef0dca7ec28d7311bb9",
-          "imageSha256": "abc6c86bc0b1679f6ead5d7e787d71bff1e697faed268d5f02b544d4f763285b"
+          "imageSha256": "46c2ada5ea71059637f45cf7079432fa3ed7011095c418999fba417ac3b1d239"
         },
         {
           "block": 21,
@@ -2210,9 +2210,9 @@
           "type": "figure",
           "printedPages": "250",
           "label": "Figura 11.5. O vedere din lateral dreapta a encefalului evidențiind lobii și ariile importante, precum și funcțiile controlate de acestea.",
-          "image": "assets/images/chapters/nervous-system/figura-11-5-sursa-2022.webp",
+          "image": "assets/images/chapters/nervous-system/figura-11-5-color.jpg",
           "textSha256": "6eb4ed9ad5c09e7baf349a062e33b0635f5191b9d734ca4e44ad3acb4742f749",
-          "imageSha256": "88141fb87995b270e6d83daaa6d2c7f6bac8c4af13078487a2df6dda805dca6a"
+          "imageSha256": "9ebca09ae2b7748bd7d812dd02a106ef66c4b2759a920998207f00e57207bac1"
         },
         {
           "block": 27,
@@ -2228,9 +2228,9 @@
           "type": "figure",
           "printedPages": "251",
           "label": "Figura 11.6. Ventriculii cerebrali: (a) Vedere laterală stânga; (b) Vedere dorsală.",
-          "image": "assets/images/chapters/nervous-system/figura-11-6-sursa-2022.webp",
+          "image": "assets/images/chapters/nervous-system/figura-11-6-color.jpg",
           "textSha256": "3fd584da64628254a92a35348f4b14ae9ee84fcd08c442388ec58dd046369606",
-          "imageSha256": "8a2f77d8a380157e3a54bd916733e9b0c14110dd0a508726897447bfb4a1303c"
+          "imageSha256": "6f15874abf4eba382d4dae3b705cef55ce1018697aeca9565518f716a4544f14"
         },
         {
           "block": 29,
@@ -2302,9 +2302,9 @@
           "type": "figure",
           "printedPages": "253",
           "label": "Figura 11.7. Componentele trunchiului cerebral și ale diencefalului. În sens descendent, principalele structuri sunt diencefalul, mezencefalul, puntea și bulbul rahidian (medulla oblongata).",
-          "image": "assets/images/chapters/nervous-system/figura-11-7-sursa-2022.webp",
+          "image": "assets/images/chapters/nervous-system/figura-11-7-color.jpg",
           "textSha256": "743eb83e3d3eab674630cd385979eac9124efd91c0df59370a5c41865afa65ec",
-          "imageSha256": "fe8d44ce1459941b831d86fc61c42ed956e3a28df8bdfe4df88624794ed30c31"
+          "imageSha256": "20f55df30ff57dcafb07a2f48579a9249fb198ccf8c8372d8fd1606d26b8d6f4"
         },
         {
           "block": 38,
@@ -2384,9 +2384,9 @@
           "type": "figure",
           "printedPages": "255",
           "label": "Figura 11.8. Descrierea celor 12 perechi de nervi cranieni și originea aparentă a acestora.",
-          "image": "assets/images/chapters/nervous-system/figura-11-8-sursa-2022.webp",
+          "image": "assets/images/chapters/nervous-system/figura-11-8-color.jpg",
           "textSha256": "ac7b142a4c214714038a6b100dfdcca9337ab10f0a8c28e298e5433fc795bb6e",
-          "imageSha256": "3f15d0d3a766b38a7643c378b472a98343b391de29c28443853262012b94d091"
+          "imageSha256": "2f770d30f74f4e8eaf57583edcf48bd6e9bc9ef00ab4517cec304afbaee1db05"
         },
         {
           "block": 48,
@@ -2418,9 +2418,9 @@
           "type": "figure",
           "printedPages": "256",
           "label": "Figura 11.9. Sistemul nervos periferic, compus din 12 perechi de nervi cranieni și 31 de perechi de nervi spinali. Observați plexul cervical și cel brahial.",
-          "image": "assets/images/chapters/nervous-system/figura-11-9-sursa-2022.webp",
+          "image": "assets/images/chapters/nervous-system/figura-11-9-color.jpg",
           "textSha256": "dacfffbf39b41eeda19fb23a689553c2451f6ea3d0f083066ebf43b4aef06425",
-          "imageSha256": "423a8afbdfd2138ce87c5e77b32fb17e9f404937618ce65f13fd5b245b8821e5"
+          "imageSha256": "2448d753b35494df6ff87ce6203a47e40a0e68dfc03b4b09576f3a0b78c82d5c"
         },
         {
           "block": 52,
@@ -2476,9 +2476,9 @@
           "type": "figure",
           "printedPages": "258",
           "label": "Figura 11.10. Cele două componente ale sistemului nervos vegetativ. Nervii sistemului simpatic (stânga) pregătesc organismul pentru situații de urgență. Observați că acest sistem constă din nervi pre- și postganglionari. Nervii componentei parasimpatice (dreapta) determină revenirea organismului la normal.",
-          "image": "assets/images/chapters/nervous-system/figura-11-10-sursa-2022.webp",
+          "image": "assets/images/chapters/nervous-system/figura-11-10-color.jpg",
           "textSha256": "7da163e8a07e802583d9e82f20b86efb9690a5c0eed70771dc842739c81e5be6",
-          "imageSha256": "fbe5af67e846893941d301b77d86fd58c7250d29947fcab21badb2465521ddcf"
+          "imageSha256": "a9d0004a7e45039b4668e20f1e8047e50274146359c62e9229cb5b75808ef9a5"
         },
         {
           "block": 59,
@@ -2565,9 +2565,9 @@
           "type": "figure",
           "printedPages": "273",
           "label": "Figura 12.1. Structurile anatomice ale ochiului, prezentate într-o secțiune longitudinală prin ochi.",
-          "image": "assets/images/chapters/sense-organs/figura-12-1-sursa-2022.webp",
+          "image": "assets/images/chapters/sense-organs/figura-12-1-color.jpg",
           "textSha256": "6042390910f43fe99692353bb765e33f8a7124126e0e6890865c3b683c97dad9",
-          "imageSha256": "e8f67296f31e9c441c307887af8cefec5ec22e6eb1a6f7c52827e70176422f63"
+          "imageSha256": "3ef429a242b061cd4c859e3d1d25ba046e6d995e39b7cb34561588b3e2af01e6"
         },
         {
           "block": 7,
@@ -2687,9 +2687,9 @@
           "type": "figure",
           "printedPages": "276",
           "label": "Figura 12.2. Tulburări comune de vedere. În mod normal, razele de lumină sunt focalizate pe retină. La persoanele mioape sau hipermetrope, razele sunt focalizate în fața, respectiv în spatele retinei. Pentru corectarea acestor probleme se folosesc ochelari cu lentile concave, respectiv convexe. În astigmatism, razele de lumină nu sunt focalizate, problemă corectată prin intermediul unor lentile neregulate.",
-          "image": "assets/images/chapters/sense-organs/figura-12-2-sursa-2022.webp",
-          "textSha256": "4d994f7410ee6e853b088ec91053f3e23ec324dfdd3a1da0cc79d6b184d4a1e5",
-          "imageSha256": "a7079de99a32429602fe7b72d16b469dd1981ca715a973be2a74933f5571aab0"
+          "image": "assets/images/chapters/sense-organs/figura-12-2-color.jpg",
+          "textSha256": "58551a15e0efa86aacfccb06f1e9925f71d6621aae92e1cfbb4e9a6480b47760",
+          "imageSha256": "74337a629859f315966c2197667bd30ce7689f829d68bf48371a323d7045efdf"
         },
         {
           "block": 22,
@@ -2761,9 +2761,9 @@
           "type": "figure",
           "printedPages": "278",
           "label": "Figura 12.3. Structurile anatomice ale urechii. Observați cele trei componente majore ale urechii și structura lor.",
-          "image": "assets/images/chapters/sense-organs/figura-12-3-sursa-2022.webp",
+          "image": "assets/images/chapters/sense-organs/figura-12-3-color.jpg",
           "textSha256": "f5a9bfcabfc49375101955476caee6c1b9324c152877e03fcdb58df2b7c66448",
-          "imageSha256": "b12229e2844817d26ef85c8c545567b2f530f6c695b8f48f75947866afb402e6"
+          "imageSha256": "5f760b9ef149ab3c2528b6f7df363dbb43261eb532bfada54d8e3dab9215546a"
         },
         {
           "block": 31,
@@ -2795,9 +2795,9 @@
           "type": "figure",
           "printedPages": "279",
           "label": "Figura 12.4. Transmiterea undelor sonore. Undele sonore intră în canalul auditiv extern, provocând vibrația timpanului. Această vibrație determină mișcarea ciocanului, a nicovalei și a scăriței, ceea ce induce modificarea presiunii perilimfei. Aceste modificări sunt transmise endolimfei prin intermediul membranei vestibulare. Modificarea presiunii endolimfei determină mișcarea membranei tectoria, mișcare ce este detectată de celulele ciliate ale organului lui Corti. Fluctuațiile presiunii sunt transmise înapoi spre perilimfă și fereastra rotundă, în vederea diminuării presiunii.",
-          "image": "assets/images/chapters/sense-organs/figura-12-4-sursa-2022.webp",
+          "image": "assets/images/chapters/sense-organs/figura-12-4-color.jpg",
           "textSha256": "fe1f334fa3ab97d477749339f68f665011524fb70e646c3254af64eebf69da6d",
-          "imageSha256": "64b4d56baca7b0a5cbf7e7c268c7fb01f8ba98a1c88da115a7817142fb99cd05"
+          "imageSha256": "de73ee0fb54d68e1a31df981c65b3572f8fb75f66da4baa9c12a2bfc5b83dc4e"
         },
         {
           "block": 35,
@@ -2821,9 +2821,9 @@
           "type": "figure",
           "printedPages": "280",
           "label": "Figura 12.5. Reprezentare detaliată a mugurilor gustativi. Papilele (a) conțin muguri gustativi (b) la bază. O celulă gustativă individuală (c) este însoțită de câteva celule de susținere. Ea este asociată cu câte o fibră nervoasă senzorială, care transmite impulsurile spre encefal, pentru a fi interpretate.",
-          "image": "assets/images/chapters/sense-organs/figura-12-5-sursa-2022.webp",
-          "textSha256": "34d09e436d09eaf64869a7af6b00b31ace1d623fd5dc118fe9eaa206982b6863",
-          "imageSha256": "2db15b511a96eda276703d6b6532872a1f07aff85bbe1e414b330b6b2320349a"
+          "image": "assets/images/chapters/sense-organs/figura-12-5-color.jpg",
+          "textSha256": "6c46f93fcdbe84466ee748e9693c8f5fbb5dc77142354f35679312494975bb59",
+          "imageSha256": "ca5cf69c4b35401b58a96f8cffe5edc7bebebf901e2880e9133908ae8b852a53"
         },
         {
           "block": 38,
@@ -2871,9 +2871,9 @@
           "type": "figure",
           "printedPages": "281",
           "label": "Figura 12.6. Simțul olfactiv. Moleculele de substanță ating cilii celulelor olfactive din porțiunea superioară a nasului. Impulsurile generate de aceste celule sunt conduse spre encefal.",
-          "image": "assets/images/chapters/sense-organs/figura-12-6-sursa-2022.webp",
+          "image": "assets/images/chapters/sense-organs/figura-12-6-color.jpg",
           "textSha256": "72218907242245488f55e81d8c3898f45e47098dc9507790b712e94fc9071ed5",
-          "imageSha256": "e2953f8416a03c2f7845f8e1c9ee5662224cbab1f543ca7908f41f0c1ff58486"
+          "imageSha256": "282caa76a2fc8e519343d03762e08241c5b310457aaf495f45174be3c7bd8d3c"
         },
         {
           "block": 44,
@@ -2897,9 +2897,9 @@
           "type": "figure",
           "printedPages": "282",
           "label": "Figura 12.7. Principalii receptori pentru simțul tactil, din piele.",
-          "image": "assets/images/chapters/sense-organs/figura-12-7-sursa-2022.webp",
+          "image": "assets/images/chapters/sense-organs/figura-12-7-color.jpg",
           "textSha256": "a68a8c87530dbae1a6907859985070b9b4d4d6da8cc31bd85aec6723ddc2066f",
-          "imageSha256": "a8f51017dea627a138e7dcfb2304f5a94ecd118f388edcbead048ff3e72b490d"
+          "imageSha256": "c3eea78caca1eeb76ae7e46542795ef4b5cd3e96786a5fe0cbb396d10bb1a8d9"
         },
         {
           "block": 47,
@@ -2947,9 +2947,9 @@
           "type": "figure",
           "printedPages": "283",
           "label": "Figura 12.8. Reprezentare detaliată a labirintului osos care stă la originea simțului echilibrului. Labirintul osos este o structură aflată în interiorul osului temporal, ce conține canalele semicirculare, vestibulul și cohleea. Mișcarea endolimfei din canalele semicirculare stimulează celulele ciliate din ampulă, generând impulsuri trimise encefalului, care ajustează mișcările corpului prin intermediul mușchilor.",
-          "image": "assets/images/chapters/sense-organs/figura-12-8-sursa-2022.webp",
+          "image": "assets/images/chapters/sense-organs/figura-12-8-color.jpg",
           "textSha256": "46960eae6cd5128d130cad12b57be14d89092550f2cb8f9eafe13263f6e88812",
-          "imageSha256": "884052628cfa525d6dea3a41fe658a87ac282460ebb78802e55ca2a7e8219d82"
+          "imageSha256": "ddfd3e71d042c2f45e5d4d92c72f688740a7ff599cfa3a291e9887eae907df48"
         }
       ]
     },
@@ -3028,9 +3028,9 @@
           "type": "figure",
           "printedPages": "297",
           "label": "Figura 13.1. Activitatea hormonilor proteici, peptidici și aminici. Celula endocrină produce hormonul, care este transportat prin sânge până la celula țintă. Pe suprafața acesteia, hormonul se leagă de un receptor și formează AMP ciclic. Această moleculă acționează ca mesager secundar și induce modificări celulare. În exemplul prezentat, adenilat ciclaza transformă ATP în AMP ciclic. Acesta activează diverse enzime, provocând un răspuns celular adecvat.",
-          "image": "assets/images/chapters/sistemul-endocrin/figura-13-1.webp",
+          "image": "assets/images/chapters/sistemul-endocrin/figura-13-1-color.jpg",
           "textSha256": "2d79bf2ff2f88bc6ec03115651f4a10b32cd68db203bd70aa359634b021e285d",
-          "imageSha256": "1e20fe11f391da86e658bf4fd35c7265251403e4b7d85ff787d4766349991cfa"
+          "imageSha256": "9dc47477d42cf925f4ae59522dd3eb4ec86ecc740c977bbe51f293868a28fd87"
         },
         {
           "block": 9,
@@ -3054,9 +3054,9 @@
           "type": "figure",
           "printedPages": "298",
           "label": "Figura 13.2. Glandele endocrine și relația lor cu principalele organe din corp.",
-          "image": "assets/images/chapters/sistemul-endocrin/figura-13-2.webp",
+          "image": "assets/images/chapters/sistemul-endocrin/figura-13-2-color.jpg",
           "textSha256": "85507673dcd3a93e060a9ec81b0fcf36ce12054083b22811149a28b6dfebabed",
-          "imageSha256": "0e0fa704ebdbfb37133fb949d2ceecc241da923c02e645e34276ddd7e19cc685"
+          "imageSha256": "3494f445fb044b0525293d3998733ed3e4e2b8bc9c6d29f1aeecf4d32bd13519"
         },
         {
           "block": 12,
@@ -3104,9 +3104,9 @@
           "type": "figure",
           "printedPages": "299",
           "label": "Figura 13.3. Adenohipofiza, vedere laterală. Sunt ilustrați hormonii secretați din adenohipofiză și organele lor țintă. Observați relația glandei hipofize cu hipotalamusul, și vascularizația ei. Hormonii neurohipofizari nu sunt reprezentați.",
-          "image": "assets/images/chapters/sistemul-endocrin/figura-13-3.webp",
+          "image": "assets/images/chapters/sistemul-endocrin/figura-13-3-color.jpg",
           "textSha256": "a10d7465f16a689b3ac8a5cb3aa834a6d66b1c4d0b007eede6d461342240c97a",
-          "imageSha256": "f24dcdccae157f1e01e3ee6f4134729324ba2271bdbbb9171b94e05693b3c9f7"
+          "imageSha256": "38ac6d900e2a06c4a7193d6844e654a1f18e7478ee46bcc2a9ff5cf71d8f4695"
         },
         {
           "block": 18,
@@ -3178,9 +3178,9 @@
           "type": "figure",
           "printedPages": "301",
           "label": "Figura 13.4. Glanda tiroidă, fața anterioară. Cei doi lobi laterali sunt uniți printr-un istm.",
-          "image": "assets/images/chapters/sistemul-endocrin/figura-13-4.webp",
+          "image": "assets/images/chapters/sistemul-endocrin/figura-13-4-color.jpg",
           "textSha256": "735970d6adf2249d649218c7740ecb3b9d1c044c098cc75990c36166915f2908",
-          "imageSha256": "ad7dd0033086192ced96bfcb90ce26fca0e316b5033bb831012202a120607b2d"
+          "imageSha256": "a3848742e7c9cca26375b65ba5a940f012b55a8eb21fc24592d5b1b7135a137d"
         },
         {
           "block": 27,
@@ -3260,9 +3260,9 @@
           "type": "figure",
           "printedPages": "303",
           "label": "Figura 13.5. Glanda paratiroidă și parathormonul. (a) Cele patru glande paratiroide situate pe fața posterioară a tiroidei. (b) Când nivelul sanguin al calciului scade, paratiroidele eliberează parathormonul (PTH). Hormonul crește nivelul sanguin al calciului acționând asupra oaselor, tubilor renali și intestinului.",
-          "image": "assets/images/chapters/sistemul-endocrin/figura-13-5.webp",
+          "image": "assets/images/chapters/sistemul-endocrin/figura-13-5-color.jpg",
           "textSha256": "b9fd9b535673e3102f8e43cb761fa0ff864a5658bfc4f3553978bff881564dca",
-          "imageSha256": "b0d6925284d2e1435d3aacf3940bbd313f0ce52bc43da408557cf640e1529d30"
+          "imageSha256": "d091790c0db3f1a895b3c4ca549ce09bbc5205f24a1d558f4cccbd32adabdb22"
         },
         {
           "block": 37,
@@ -3286,9 +3286,9 @@
           "type": "figure",
           "printedPages": "304",
           "label": "Figura 13.6. Pancreasul în poziția sa anatomică în cavitatea abdominală, vedere frontală. Stomacul este ridicat spre stânga pentru a se putea observa pancreasul.",
-          "image": "assets/images/chapters/sistemul-endocrin/figura-13-6.webp",
+          "image": "assets/images/chapters/sistemul-endocrin/figura-13-6-color.jpg",
           "textSha256": "1afbde289477e15bad157e727cf5f1c16b3f00bdc620da4818d5b86020aa9e8a",
-          "imageSha256": "b5fa5507b2c8a6319e610125bcba1f35cede99ef1f1f2a9b39ee51834be3bb33"
+          "imageSha256": "639b6f4cdb501cb1f1a7c375a789a42989c0220b9391327c4c93a6c1fdd1cb36"
         },
         {
           "block": 40,
@@ -3320,9 +3320,9 @@
           "type": "figure",
           "printedPages": "305",
           "label": "Figura 13.7. Efectele antagoniste ale insulinei și ale glucagonului, cei doi hormoni pancreatici. Când nivelul sanguin al glucozei este ridicat, insulina stimulează celulele organismului și ficatul să îndepărteze glucoza din sânge. Un nivel scăzut al glucozei în sânge declanșează eliberarea glucagonului, care stimulează ficatul să crească nivelul glucozei în sânge.",
-          "image": "assets/images/chapters/sistemul-endocrin/figura-13-7.webp",
+          "image": "assets/images/chapters/sistemul-endocrin/figura-13-7-color.jpg",
           "textSha256": "28f7bf767f2e10e9fe1ed055ddbd6b3a682d893b094afe5ef66e51eb996ccedc",
-          "imageSha256": "2d6536fcc143c3e6deda5a5c93e8d3ef8e345ff3147152185390681e00a7ec02"
+          "imageSha256": "c93c24ce2dbe7d8faf397b2c723fe97357de1ef1223a2b60d1fd94b86906a274"
         },
         {
           "block": 44,
@@ -3346,9 +3346,9 @@
           "type": "figure",
           "printedPages": "306",
           "label": "Figura 13.8. Glanda suprarenală în poziție anatomică, deasupra rinichiului, cele două regiuni ale glandei și hormonii reprezentativi pentru fiecare regiune. Cortizolul și aldosteronul sunt hormoni steroizi, cu o configurație moleculară tipică pentru aceștia.",
-          "image": "assets/images/chapters/sistemul-endocrin/figura-13-8.webp",
+          "image": "assets/images/chapters/sistemul-endocrin/figura-13-8-color.jpg",
           "textSha256": "139569dce26ff9d9dbc9ce411073de9818a42f27096d040328958fbdff551106",
-          "imageSha256": "98bcce55a5e71c37e078117b2692827e843c374adde5ec60ae43b85801e7f6a4"
+          "imageSha256": "875ae90b8ecfde1adc34e7730b7cffedf19fabe8c57d480d48a4d42c59267391"
         },
         {
           "block": 47,
@@ -3404,9 +3404,9 @@
           "type": "figure",
           "printedPages": "307",
           "label": "Figura 13.9. Timusul în poziție anatomică, în interiorul toracelui unui copil. Glanda scade în dimensiuni cu vârsta, fiind abia vizibilă la adolescenți.",
-          "image": "assets/images/chapters/sistemul-endocrin/figura-13-9.webp",
+          "image": "assets/images/chapters/sistemul-endocrin/figura-13-9-color.jpg",
           "textSha256": "b4018d2ab62635c742d0a83b89228176a5a540e7bcdcf6eb2bab1d07f979ba5c",
-          "imageSha256": "af4b7308a654a5734dc12f84060dd1181390712536df516fee7b90d6a5342ddc"
+          "imageSha256": "deae363d422182aaec658ebae48556b0d963c9851725c037e9e1e6ec1bf30bd7"
         },
         {
           "block": 54,
@@ -3477,9 +3477,9 @@
           "type": "figure",
           "printedPages": "320",
           "label": "Figura 14.1. Compoziția sângelui uman. Cele două componente majore ale sângelui integral sunt plasma și elementele figurate. Plasma conține apă și numeroase substanțe dizolvate, inclusiv proteine, metaboliți (nutrienți și produși de metabolism) și ioni. Cea mai mare parte a elementelor figurate este constituită din globule roșii.",
-          "image": "assets/images/chapters/sangele/figura-14-1.webp",
+          "image": "assets/images/chapters/sangele/figura-14-1-color.jpg",
           "textSha256": "a9939eead84164d0290854f22ba6f175254c365a3eea9e8f003ae133972f7525",
-          "imageSha256": "cbcb9e74af37478df9f04b5564f6b1e2c973897027037b45fef8e9ce8a636c2a"
+          "imageSha256": "7fc2031d3dfd7dfcdf28c267363dfe771775098de6b0a55446684c64398cf9d4"
         },
         {
           "block": 4,
@@ -3575,9 +3575,9 @@
           "type": "figure",
           "printedPages": "322",
           "label": "Figura 14.2. Globulele roșii (eritrocitele) și structura lor.",
-          "image": "assets/images/chapters/sangele/figura-14-2.webp",
-          "textSha256": "e6c79d9232257f11e937f47c98711228ef725545d75dd53ab7cf676bca7b91ba",
-          "imageSha256": "f2e97cf03638129921b782702cff71ef7922e2d14eff92085387aa8c40776356"
+          "image": "assets/images/chapters/sangele/figura-14-2-color.jpg",
+          "textSha256": "d59f34c90391e36f0a714bdc87c56f5dd8c345981bf1b7a9b3e59d365f544c5f",
+          "imageSha256": "77985ea0d6f130c932ee876e42ef826cdfd462d11ec7ce2f0004120c2650770b"
         },
         {
           "block": 16,
@@ -3633,9 +3633,9 @@
           "type": "figure",
           "printedPages": "323",
           "label": "Figura 14.3. Molecula de hemoglobină din globulele roșii. Două lanțuri polipeptidice alfa și două lanțuri polipeptidice beta formează cea mai mare parte a moleculei. O grupare hem este atașată de fiecare dintre cele patru molecule polipeptidice. Observați atomul de fier (Fe) în centrul grupării hem. Molecula de oxigen se leagă la acest nivel.",
-          "image": "assets/images/chapters/sangele/figura-14-3.webp",
+          "image": "assets/images/chapters/sangele/figura-14-3-color.jpg",
           "textSha256": "b40b1952cc7669695765b52fdd24fe7202bb68fafbc6216124687a3d5d1a81a5",
-          "imageSha256": "fd92f3642dda5e53b6977c03433e5cd0989998e9d8ac1bd785fb9aac7ba6f589"
+          "imageSha256": "c55e396fdffbd3d0f40a6cd15ebf449469b14d4582bdf54a38fcab541d80db5f"
         },
         {
           "block": 23,
@@ -3675,9 +3675,9 @@
           "type": "figure",
           "printedPages": "325",
           "label": "Figura 14.4. Grupele de sânge și testarea sângelui. (a) Cele patru grupe de sânge sunt indicate cu tipurile de antigene și de anticorpi întâlnite în fiecare grup. Tipul grupei este același cu cel al antigenelor găsite la suprafața eritrocitelor. (b) Când se amestecă sângele în timpul transfuziilor de sânge, este foarte important ca antigenele și anticorpii de același tip să nu intre în contact în circulația primitorului. Dacă acest lucru se întâmplă, va avea loc o reacție, așa cum este prezentat în figură. Agregarea și distrugerea globulelor roșii (hemoliza) pot fi fatale.",
-          "image": "assets/images/chapters/sangele/figura-14-4.webp",
+          "image": "assets/images/chapters/sangele/figura-14-4-color.jpg",
           "textSha256": "c9aa5eb252a3fbc6117555add356025ccfc06e05341e3150f0cb3e7c0af3194a",
-          "imageSha256": "acdf786be7d251ca5e5368bc99a78c5607986523e1457f7dcbf5d858e74f5313"
+          "imageSha256": "31c37707a754696a22eb798687d2c9551c848bb59538596a4bca69c7350188bb"
         },
         {
           "block": 28,
@@ -3781,9 +3781,9 @@
           "type": "figure",
           "printedPages": "328",
           "label": "Figura 14.5. Comparație între globulele albe, globulele roșii și plachetele sanguine. Observați granulațiile distincte și nucleii prezenți în diferite tipuri de leucocite.",
-          "image": "assets/images/chapters/sangele/figura-14-5.webp",
+          "image": "assets/images/chapters/sangele/figura-14-5-color.jpg",
           "textSha256": "be24c54a2c3ca9b6dca176c95fa61a776f76a87268b32c2722a6f0df3d4fe02a",
-          "imageSha256": "22baf0a13b9e0cfa0615333ddf082c3c5c6c99f0d81217e9f5493751716e3182"
+          "imageSha256": "a7a9a076bb122994c30c7163f83856c4930507a8ef022053ae9fc7a8d7512504"
         },
         {
           "block": 41,
@@ -3855,9 +3855,9 @@
           "type": "figure",
           "printedPages": "330",
           "label": "Figura 14.6. Formarea trombului plachetar. (a) O soluție de continuitate apare în peretele unui vas de sânge. (b) Plachetele aderă între ele și la fibrele de colagen din peretele vascular. (c) Agregatul plachetar controlează pierderea de sânge la locul leziunii.",
-          "image": "assets/images/chapters/sangele/figura-14-6.webp",
+          "image": "assets/images/chapters/sangele/figura-14-6-color.jpg",
           "textSha256": "52a423d59d3c384e42666ae69e928d46afb3ce4577de5ace97cb557aac497218",
-          "imageSha256": "b11745a6bd57f5a17daf0db62a31ee904205af886ab6b8b3d6180c43068fa2c7"
+          "imageSha256": "0420d775b82af373eb2869dfa9c62834a075e81c36e0a0d23a3c796e1fbe6d7a"
         },
         {
           "block": 50,
@@ -3913,9 +3913,9 @@
           "type": "figure",
           "printedPages": "331",
           "label": "Figura 14.7. Prezentare generală a mecanismului de coagulare a sângelui, arătând interrelația dintre calea intrinsecă și extrinsecă. Ambele căi implică tromboplastina, și ambele duc la formarea unei substanțe care activează protrombina și o convertește în trombină. Trombina apoi convertește fibrinogenul în fibrină, componenta principală a cheagului de sânge.",
-          "image": "assets/images/chapters/sangele/figura-14-7.webp",
+          "image": "assets/images/chapters/sangele/figura-14-7-color.jpg",
           "textSha256": "a401d31bffc5a6b77de6cfea2fcf4da9850ddd8fec2769f800ff2a609e677734",
-          "imageSha256": "45b943baa68441d5526415a204b7df2aab52c872d71a21fc66cf555eb873df66"
+          "imageSha256": "3c614549d1f399c54fb7703ef38a3d24850cbedfeaf90f654a9720714878abf7"
         },
         {
           "block": 57,
@@ -3986,9 +3986,9 @@
           "type": "figure",
           "printedPages": "344",
           "label": "Figura 15.1. Inima umană văzută din poziție ventrală în cavitatea toracică. Observați poziția organelor adiacente.",
-          "image": "assets/images/chapters/sistemul-cardiovascular/figura-15-1.webp",
+          "image": "assets/images/chapters/sistemul-cardiovascular/figura-15-1-color.jpg",
           "textSha256": "8dd0af6d559bf6f96ead5cf37f2041ee6ac9f144e31360775600eb813b3f3613",
-          "imageSha256": "5bac43b12cf6a45f5aec0cecc32f27ab4d0dcade76aa873729a5095b0b7b703a"
+          "imageSha256": "c7e2e36a04043f0e3bcf8017e0518e26ce0b353d74ab8d2bb53769c98a0da615"
         },
         {
           "block": 5,
@@ -4036,9 +4036,9 @@
           "type": "figure",
           "printedPages": "345",
           "label": "Figura 15.2. Secțiune longitudinală prin inimă, ilustrând cele mai importante structuri ale acestui organ. Se pot observa detaliile valvelor și sunt indicate cele mai importante vase.",
-          "image": "assets/images/chapters/sistemul-cardiovascular/figura-15-2.webp",
+          "image": "assets/images/chapters/sistemul-cardiovascular/figura-15-2-color.jpg",
           "textSha256": "6d5394212813664cbbcc7d2cf0bda0fa88fdec6664a66c756a9ed32525a280b0",
-          "imageSha256": "5871b7e8b8f76c77509f51c1b4ec3381ace709deefef3bbe754c618dc398f746"
+          "imageSha256": "276edde53948a24199836664c8cde3d81c431ac54e7417f17526ef4471bd4e96"
         },
         {
           "block": 11,
@@ -4078,9 +4078,9 @@
           "type": "figure",
           "printedPages": "346",
           "label": "Figura 15.3. Cele două circulații principale ale organismului. În circulația pulmonară, sângele pleacă din ventriculul drept la plămâni și se întoarce în atriul stâng. În circulația sistemică, sângele pleacă din ventriculul stâng spre organism și se întoarce în atriul drept.",
-          "image": "assets/images/chapters/sistemul-cardiovascular/figura-15-3.webp",
+          "image": "assets/images/chapters/sistemul-cardiovascular/figura-15-3-color.jpg",
           "textSha256": "b181e36e28d25307981181fb76e6e1495d6d3b5cf1258d25b6c756cc60fb9b9a",
-          "imageSha256": "078ea8fc1b8c6c7420cff8c554b3fb3fa3c72158efa6a61209c2ffae1e8af2ba"
+          "imageSha256": "f142fd820556f9dbf55fa497fc23575547ebb0e6963afab31d7a1df287f0ef95"
         },
         {
           "block": 16,
@@ -4120,9 +4120,9 @@
           "type": "figure",
           "printedPages": "347",
           "label": "Figura 15.4. Vedere de sus a inimii după îndepărtarea atriilor. Observați structura valvelor bicuspidă (cu două cuspisuri) și tricuspidă (cu trei cuspisuri). Valva aortică și cea pulmonară sunt valve semilunare. Se pot observa arterele coronare și sinusul coronarian.",
-          "image": "assets/images/chapters/sistemul-cardiovascular/figura-15-4.webp",
+          "image": "assets/images/chapters/sistemul-cardiovascular/figura-15-4-color.jpg",
           "textSha256": "4afe21fc6127e3b3b6191cc42d7dfb806a0fb38453f85603a2645e55f300f882",
-          "imageSha256": "73f4be544c5e47db37ad2ce7e1d5d0504cc180df83c409817f512ec60669478c"
+          "imageSha256": "74bfeaefaa843c250b55fa0e1b162312366bc18cf333054871969b9ec0f18cc4"
         },
         {
           "block": 21,
@@ -4170,9 +4170,9 @@
           "type": "figure",
           "printedPages": "348",
           "label": "Figura 15.5. Vedere dinspre lateral a inimii, ilustrând câteva dintre arterele coronare și venele cardiace. Sinusul coronarian este situat aproape de venele cave și se golește în atriul drept împreună cu aceste vene.",
-          "image": "assets/images/chapters/sistemul-cardiovascular/figura-15-5.webp",
+          "image": "assets/images/chapters/sistemul-cardiovascular/figura-15-5-color.jpg",
           "textSha256": "77ee93815f4ae616fae28b3b8635319dca06873bd798be1bc7436b8b0a96c25a",
-          "imageSha256": "d3438ec16ae1142c6199cfb5f8fb809b96ae4c5f80a3846b00743f14d51855e4"
+          "imageSha256": "8b734f6f0c787c9d545d4e20e6cba7cc4f706efe0891d6422c009db2cd6f0182"
         },
         {
           "block": 27,
@@ -4228,9 +4228,9 @@
           "type": "figure",
           "printedPages": "350",
           "label": "Figura 15.6. Sistemul excitoconductor al inimii. Impulsurile sunt generate în nodul SA și trec lateral spre alte zone ale inimii prin fibrele Purkinje. Impusurile de la nodul SA stimulează nodul AV și de la acest nivel trec mai departe la fasciculul His și la fibrele Purkinje.",
-          "image": "assets/images/chapters/sistemul-cardiovascular/figura-15-6.webp",
+          "image": "assets/images/chapters/sistemul-cardiovascular/figura-15-6-color.jpg",
           "textSha256": "0f213a1f8cfd5855d788687d1eeea318c2b7df34ce5c4634919e52ae398cd860",
-          "imageSha256": "bbd3df2c37248baca49f2b18d875cc9bfeb09a630fae649e2b1cd6281999322b"
+          "imageSha256": "7828b3d0d9a64bad3ef820006d32a809c233fdf8af2e2b6a9d2bad2736b9e3a3"
         },
         {
           "block": 34,
@@ -4238,9 +4238,9 @@
           "type": "figure",
           "printedPages": "350",
           "label": "Figura 15.7. Ciclul cardiac așa cum este reprezentat pe electrocardiogramă (ECG). Impulsurile de la nodul SA determină depolarizarea atrială și sunt redate prin unda P. După o pauză foarte scurtă, impulsurile de la nodul AV determină depolarizarea ventriculară. Această depolarizare este prezentată sub forma complexului QRS. Unda T reprezintă perioada în care celulele musculare se repolarizează după contracție.",
-          "image": "assets/images/chapters/sistemul-cardiovascular/figura-15-7.webp",
+          "image": "assets/images/chapters/sistemul-cardiovascular/figura-15-7-color.jpg",
           "textSha256": "78182421335366133903b625b3746b047f4c5d5b1555f3c3915f9f56582ccc70",
-          "imageSha256": "f1db9b24578a2fb5cca798ad5e2a5d8d3e7491316c74f507806b084f74ba6c81"
+          "imageSha256": "4c720de3acc6474da9bf8c2c24c2b0e541936ae42ca199b8b4a6e9109af9c91b"
         },
         {
           "block": 35,
@@ -4408,9 +4408,9 @@
           "type": "figure",
           "printedPages": "354",
           "label": "Figura 15.8. Vasele sanguine și valvele. (a) Structura comparată a arterei, venei și capilarului. Se observă cele trei tunici care alcătuiesc peretele arterelor și al venelor; prin comparație, peretele capilarului este format dintr-un singur strat de celule, ce alcătuiește tunica internă. Pereții arterei sunt mai groși decât cei venoși, pentru a rezista la presiunea sângelui. (b) Arterele și capilarele nu au valve; valvele sunt prezente doar în vene. În venă, zona unde este situată valva (1) este dilatată. Valva se deschide când trece sângele (2), iar apoi lambourile valvei se unesc (3), închizând-o și împiedicând refluxul sângelui.",
-          "image": "assets/images/chapters/sistemul-cardiovascular/figura-15-8.webp",
-          "textSha256": "ccf8f575128c986f6290273f0fc7b3b34ca9978c44ef1412c46c4a302e6fea92",
-          "imageSha256": "65b7a6d92aecd6392636d2e0ac099660482ff443695a4ce1f4a45a7b540bdc86"
+          "image": "assets/images/chapters/sistemul-cardiovascular/figura-15-8a-color.jpg",
+          "textSha256": "4253521cf4202bb5b0608c76d07791001c1cbb2c6722700f16d90379e4f93004",
+          "imageSha256": "cc083ce9385a5a42566ea3f9f40a85d7fc70eb7d89105f5ff6150d2e943ad4f0"
         },
         {
           "block": 56,
@@ -4466,9 +4466,9 @@
           "type": "figure",
           "printedPages": "357",
           "label": "Figura 15.9. Principalele artere ale organismului uman.",
-          "image": "assets/images/chapters/sistemul-cardiovascular/figura-15-9.webp",
+          "image": "assets/images/chapters/sistemul-cardiovascular/figura-15-9-color.jpg",
           "textSha256": "d46108f161163d9d08e77bb4f40decef7a8b5a098956e1d20b38dbabac41b828",
-          "imageSha256": "36e841d775623dc2e158edc59a6e0f0d63cd8d6a38d66efe8475d431b25b38a8"
+          "imageSha256": "7d757bda31839f7196257413e49d169eb4c8e1920065be6bdea93624339adec4"
         },
         {
           "block": 63,
@@ -4476,9 +4476,9 @@
           "type": "figure",
           "printedPages": "358",
           "label": "Figura 15.10. Principalele vene ale organismului uman, cu excepția venelor pulmonare.",
-          "image": "assets/images/chapters/sistemul-cardiovascular/figura-15-10.webp",
+          "image": "assets/images/chapters/sistemul-cardiovascular/figura-15-10-color.jpg",
           "textSha256": "b41fcfeef49c682efd589433f4362a8f3773a56140f321c0574c7f1b48f89b87",
-          "imageSha256": "803a6958a09deded7c825cdf501bc7a012d7dab56833bdd31e2e8153f9407007"
+          "imageSha256": "7aee02d97d09885ffcabb4893abfc38b751502b945f2e95ff127a04f61ef5a3b"
         },
         {
           "block": 64,
@@ -4510,9 +4510,9 @@
           "type": "figure",
           "printedPages": "359",
           "label": "Figura 15.11. Sistemul port hepatic. Sistemul este alcătuit din vase sanguine care se formează în țesuturile intestinale și în jurul organelor digestive și transportă sânge și nutrienți la ficat. Nutrienții sunt procesați în ficat și apoi eliberați prin vena hepatică, care îi transportă în circulația generală și la celulele din țesuturi.",
-          "image": "assets/images/chapters/sistemul-cardiovascular/figura-15-11.webp",
+          "image": "assets/images/chapters/sistemul-cardiovascular/figura-15-11-color.jpg",
           "textSha256": "e8f4ac070daa2605ce073f9a907bf77ad5afe60935397f742a3fbc1fc885d1f1",
-          "imageSha256": "9440671ef585873c6b902d39105b96f2aef061bc6730fdfdf06edf6c6224e858"
+          "imageSha256": "96120c8d4370fa74bc782cea70fa67e5f4da1632666ab998f4e7f6b09ce4a014"
         }
       ]
     },
@@ -4615,9 +4615,9 @@
           "type": "figure",
           "printedPages": "377",
           "label": "Figura 16.1. Sistemul limfatic și legătura sa cu sistemul circulator. Fluidele trec din sistemul circulator în țesuturi și, în timp ce, cea mai mare parte a sa se reîntoarce în sistemul circulator, o fracțiune mai mică pătrunde și în capilarele limfatice, și se întoarce în circulație pe această cale. Sistemul limfatic este, așadar, unidirecțional.",
-          "image": "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-1.webp",
+          "image": "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-1-color.jpg",
           "textSha256": "7fed7486934868127990e95d76ab728ad223e275b5781f264251ffedc5a7a07c",
-          "imageSha256": "79040fcd78e03c27d3ec31ed3947dbed9e8156c62e5ca4cbd966375007e3cd8d"
+          "imageSha256": "1ca1e9988bd1544f8bdf17fffffdc2cdc87d67d0a41007dd6c6503a1664913ee"
         },
         {
           "block": 11,
@@ -4633,9 +4633,9 @@
           "type": "figure",
           "printedPages": "378",
           "label": "Figura 16.2. Sistemul limfatic uman este alcătuit din vase limfatice și noduli limfatici, distribuiți în tot organismul, după cum este ilustrat. Zona întunecată este aria drenată de ductul limfatic drept, iar zona necolorată este cea drenată de ductul toracic.",
-          "image": "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-2.webp",
+          "image": "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-2-color.jpg",
           "textSha256": "65062b49ec9616a9e532a66ea9d43801c1dfc5c7090282511e72f1e0987d8110",
-          "imageSha256": "d976efe1a681ab1ffe20f7823523c3a3922199ea3b7ac475fcf6cb8d1d2f9ebb"
+          "imageSha256": "d10fd5c57184b5439f7b657e4db180434a5a3514beb64a280f22a7158d6e3527"
         },
         {
           "block": 13,
@@ -4659,9 +4659,9 @@
           "type": "figure",
           "printedPages": "379",
           "label": "Figura 16.3. Structura nodulului limfatic în secțiune transversală. Sunt indicate structurile cele mai importante.",
-          "image": "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-3.webp",
+          "image": "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-3-color.jpg",
           "textSha256": "e7751a7e29b3fc94ecca2ed9340e94c3c5db078594336d236b9f3c6ea5d51e88",
-          "imageSha256": "17656e7a63c5e37a7b2cb955277df76b5e0c379021548f3e27d9805a69d412f5"
+          "imageSha256": "062c4c25d2ccf241c1c3459a66907687c69177133dcd86bb5dc1c1d8d923b55d"
         },
         {
           "block": 16,
@@ -4693,9 +4693,9 @@
           "type": "figure",
           "printedPages": "380",
           "label": "Figura 16.4. Structurile sistemului limfatic. (a) Localizarea amigdalelor. (b) Poziția timusului în porțiunea superioară a toracelui.",
-          "image": "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-4.webp",
+          "image": "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-4-color.jpg",
           "textSha256": "10831fe623bdeac784bcb6b408cccb3958a6b60bd4aa3fd0a2db4b20b993316c",
-          "imageSha256": "cfc505d2d3fd646042a41ae2f92aab03fbd7bff67841371b01535193eb91a83a"
+          "imageSha256": "0cf83924d7b72257517e8a621fb46115ffd74fdbd046fa9f84b9de5843eb710a"
         },
         {
           "block": 20,
@@ -4759,9 +4759,9 @@
           "type": "figure",
           "printedPages": "381",
           "label": "Figura 16.5. Detaliile splinei. (a) Splina este situată în partea superioară stângă a cavității abdominale. (b) Câteva elemente anatomice ale splinei.",
-          "image": "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-5.webp",
+          "image": "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-5-color.jpg",
           "textSha256": "1da06af33e440edc82ccbb8f15536bfa0d226251d009f5566a14ca6dcbcf25fb",
-          "imageSha256": "d2441c9f1c928ce4d5a66b8afcd5e7478e760102b7a3445b49fa8dc2c1ced791"
+          "imageSha256": "77dbe5d936a90b54c64adc8e87c1b6a6011a470d6235a3e3553bd140300223f2"
         },
         {
           "block": 28,
@@ -4896,9 +4896,9 @@
           "type": "figure",
           "printedPages": "403",
           "label": "Figura 17.1. Organele și structurile sistemului respirator uman așa cum sunt poziționate în cavitatea toracică. O secțiune prin plămân este mărită pentru a prezenta detaliile mai multor alveole, săculeți microscopici cu aer utilizați în schimbul de gaze.",
-          "image": "assets/images/chapters/respiratory-system/figura-17-1-barrons.webp",
+          "image": "assets/images/chapters/respiratory-system/figura-17-1-color.jpg",
           "textSha256": "18b660db984e37e81d80a52acc44c883fe2cd84cf4c03f979a4e9a711026e3e5",
-          "imageSha256": "6ad4d4c6c57f0f678fb93ba25ecc4d5dcac095d81db636a533dc911398bf5713"
+          "imageSha256": "30f0ba0cb429e8f9f9dac9a3b5b93b6c7c98dc1191f7564093e87ebade37bb0d"
         },
         {
           "block": 11,
@@ -4922,9 +4922,9 @@
           "type": "figure",
           "printedPages": "404",
           "label": "Figura 17.2. Structurile nasului uman, după îndepărtarea septului nazal. Se pot observa cornetele și sinusurile osului frontal și ale sfenoidului. Este ilustrată de asemenea și deschiderea trompei lui Eustachio",
-          "image": "assets/images/chapters/respiratory-system/figura-17-2-barrons.webp",
+          "image": "assets/images/chapters/respiratory-system/figura-17-2-color.jpg",
           "textSha256": "71f4813595db0c60e035e672a177cacb9059715bcfb22943202332bd8f1f4619",
-          "imageSha256": "300e6b292bee53accbedd35a1c08e2961243cb9183152d8a65560e08566732a0"
+          "imageSha256": "55b382e1daaa743e5a70ec4acac083abba4462722c628d4925b86e682d2519f4"
         },
         {
           "block": 14,
@@ -4972,9 +4972,9 @@
           "type": "figure",
           "printedPages": "405",
           "label": "Figura 17.3. Secțiune sagitală la nivelul capului și gâtului ce prezintă organe ale tractului respirator în raport cu alte organe din această regiune. Observați structurile nasului, ale palatului moale și ale palatului dur, și cele trei regiuni ale faringelui. Este indicată poziția esofagului față de trahee. Amigdalele sunt ilustrate în poziția lor anatomică.",
-          "image": "assets/images/chapters/respiratory-system/figura-17-3-barrons.webp",
+          "image": "assets/images/chapters/respiratory-system/figura-17-3-color.jpg",
           "textSha256": "001a51206da4d243d60277534a8caa4eb2dab7d673111266222a1e00f63b5ddb",
-          "imageSha256": "ac7c65215d2b4dac06c65d6c5c13607fcbfde2b9076510fe6db0352938e963cf"
+          "imageSha256": "58b5801d1ae4e1a5e6466c9ec1a5ae0d7107fff4c24173f1b8ab25af87a30df9"
         },
         {
           "block": 20,
@@ -5038,9 +5038,9 @@
           "type": "figure",
           "printedPages": "407",
           "label": "Figura 17.4. Laringele, corzile vocale și traheea. (a) Vedere anterioară a laringelui. Sunt ilustrate principalele cartilaje. (b) Secțiune sagitală a laringelui, privită din partea dreaptă. Corzile vocale sunt pliuri de țesut în interiorul laringelui. Observați epiglota, în formă de „capac\", formă ce îi permite să se închidă peste laringe în timpul deglutiției. (c) Traheea cu inelele cartilaginoase de susținere și ramurile ce formează bronhiile. Observați că bronhia dreaptă este mai largă și situată mai vertical decât bronhia stângă.",
-          "image": "assets/images/chapters/respiratory-system/figura-17-4-barrons.webp",
+          "image": "assets/images/chapters/respiratory-system/figura-17-4-color.jpg",
           "textSha256": "a4954f58740b84420c21d8e351b9d0ab92a9de2f47f8a9b2490e3ab32ee507aa",
-          "imageSha256": "7d3541ddbb13435f76e00c06e7ed3769031fb89d8f0000ef222bd1f96ec70328"
+          "imageSha256": "c632063943e520f48370687beb908d7a5574200f8f166acc9672f76e80e82a4b"
         },
         {
           "block": 28,
@@ -5072,9 +5072,9 @@
           "type": "figure",
           "printedPages": "408",
           "label": "Figura 17.5. Detalii ale plămânilor și ale alveolelor. (a) Sunt ilustrați cei cinci lobi ai plămânilor și arborele bronșic care se extinde în toate ariile pulmonare. (b) O imagine detaliată a porțiunii terminale a arborelui bronșic, prezentând o bronhiolă ce se extinde la un grup de alveole. Observați benzile de mușchi neted ce înconjoară bronhiolele. (c) Un grup de alveole reprezentând unitatea funcțională de bază a plămânului. O ramură a arterei pulmonare transportă sângele la alveole și rețeaua capilară care înconjoară alveolele. Aici are loc schimbul de gaze. O ramură a venei pulmonare transportă apoi sângele din alveole, înapoi în partea stângă a inimii.",
-          "image": "assets/images/chapters/respiratory-system/figura-17-5-barrons.webp",
+          "image": "assets/images/chapters/respiratory-system/figura-17-5-color.jpg",
           "textSha256": "2c2cc360af0ea03d4c6b34701b9d17d844311413b62befcc68bd7730c0eff241",
-          "imageSha256": "fe349e66b8f75e9a089c7be8d17b31a6c7061f95daab53b62d217378d4a482bf"
+          "imageSha256": "66afe787de89dc77277ee32e4e55d07d37978fe328f5add2f08ea6621215029b"
         },
         {
           "block": 32,
@@ -5162,9 +5162,9 @@
           "type": "figure",
           "printedPages": "410",
           "label": "Figura 17.6. Schimbările de volum ale cavității toracice pe măsură ce se contractă mușchii respiratori. (a) Diafragma și mușchii intercostali se contractă și cresc volumul cavității toracice. Plămânii se expansionează, și astfel volumul lor crește, permițând inhalarea aerului. (b) Când mușchii se relaxează, cavitatea toracică revine la dimensiunea din repaus (observați diferențele de mărime). Acum plămânii se relaxează, scăzând astfel volumul lor și permițând ieșirea aerului.",
-          "image": "assets/images/chapters/respiratory-system/figura-17-6-barrons.webp",
+          "image": "assets/images/chapters/respiratory-system/figura-17-6-color.jpg",
           "textSha256": "f3004b57483cce10823299eac4a0fdca4b9d61b4249a2db99944b414ecde844f",
-          "imageSha256": "fcb220363da02d8b9a7ff9d42d0880c9c1216b8d30dcba1c95a6e6c07c85d623"
+          "imageSha256": "67dbf1a6b75cd216128493dd29d19dfca4e0a2e13b07c080311aa3ecfbe64feb"
         },
         {
           "block": 43,
@@ -5220,9 +5220,9 @@
           "type": "figure",
           "printedPages": "411",
           "label": "Figura 17.7. Controlul respirației în organism. Trei zone importante de control sunt situate în bulbul rahidian, arterele carotide și în arcul aortic.",
-          "image": "assets/images/chapters/respiratory-system/figura-17-7-barrons.webp",
+          "image": "assets/images/chapters/respiratory-system/figura-17-7-color.jpg",
           "textSha256": "f1a39e25dfd728aa2b1925d4a9638cd953a094a23cb20381ea636b4d294a0df0",
-          "imageSha256": "a94d79eff0d0fa21a4bbf0f0723346d57c94c9e8dc01a24af086377680b62f32"
+          "imageSha256": "92608be29987466a5f59120a36cfc3328b529556ba4b9f3e7c956cba80ba340a"
         },
         {
           "block": 50,
@@ -5254,9 +5254,9 @@
           "type": "figure",
           "printedPages": "412",
           "label": "Figura 17.8. Transportul dioxidului de carbon în sânge. Dioxidul de carbon pătrunde în sânge (stânga sus); trei mecanisme diferite asigură transportul acestuia: (a) ca CO₂ dizolvat; (b) sub formă de carbaminohemoglobină; și (c) sub formă de bicarbonat de sodiu.",
-          "image": "assets/images/chapters/respiratory-system/figura-17-8-barrons.webp",
-          "textSha256": "202791dcda66d5e5f1c6c7460d6c705b40a2c46c633aefe75ae28d357b22a389",
-          "imageSha256": "3314daacb634eb166f3fbfabf204618fd166c2fd6eb7328205dfa2d3330bf5e7"
+          "image": "assets/images/chapters/respiratory-system/figura-17-8-color.jpg",
+          "textSha256": "d080baec7be4daa8e8f33dba6dd013bb3ec34883f095e8bcb8affcf05f4e2995",
+          "imageSha256": "4fe860ad11a6807d7bf7f3a7d76e25ac5f73d981c059c7e62974704b3053f64f"
         },
         {
           "block": 54,
@@ -5328,9 +5328,9 @@
           "type": "figure",
           "printedPages": "414",
           "label": "Figura 17.9. Un rezumat al transportului gazelor și al mecanismelor de schimb gazos în corpul uman. (a) La nivel alveolar se eliberează CO₂ și se preia oxigen. Gazele difuzează prin membranele alveolare și capilare. (b) La nivelul celulelor, pentru cele două gaze se petrece procesul invers. Observați că oxigenul este transportat legat de hemoglobina (Hb) din globulele roșii, în timp ce CO₂ este transportat dizolvat în plasmă, legat de moleculele de hemoglobină, și sub formă de ioni de bicarbonat în bicarbonatul de sodiu.",
-          "image": "assets/images/chapters/respiratory-system/figura-17-9-barrons.webp",
+          "image": "assets/images/chapters/respiratory-system/figura-17-9-color.jpg",
           "textSha256": "3c30ab89e78e6a9193aca80fd49fc8a513a54836700ea47e8cb037b10d1c4531",
-          "imageSha256": "aa235d4a9b713a5e01e10aba0b0b2162ac536845634e5abc9ef79b1eb5be19df"
+          "imageSha256": "d879fe5d405c5f1222e27ff3e4a4ce9bf24f0f925ffb95d53fff40008e906f76"
         }
       ]
     },
@@ -5385,9 +5385,9 @@
           "type": "figure",
           "printedPages": "426",
           "label": "Figura 18.1. Organele și structura sistemului digestiv în relație cu alte structuri ale corpului uman - vedere anterioară.",
-          "image": "assets/images/chapters/digestive-system/figura-18-1-barrons.webp",
+          "image": "assets/images/chapters/digestive-system/figura-18-1-color.jpg",
           "textSha256": "a923ea960d999971e54d431a27e65c10f2eefcaafe13f81a28c0d337a7914c47",
-          "imageSha256": "bfd4029c7f4268f8e4b69df0f7f14fadc63e11058f1521d1ddbbb0f47720bb4b"
+          "imageSha256": "332dbdc89fd7b3ed3a33410441c36492d2aa69b3ccb9eba2d824b9216f69e531"
         },
         {
           "block": 6,
@@ -5459,9 +5459,9 @@
           "type": "figure",
           "printedPages": "428",
           "label": "Figura 18.2. Dinții la om. (a) Structura unui dinte cu cele trei regiuni principale și structurile componente ale fiecărei regiuni. (b) Dinții permanenți ai adultului și perioada de erupție a fiecărui dinte în parte.",
-          "image": "assets/images/chapters/digestive-system/figura-18-2-barrons.webp",
+          "image": "assets/images/chapters/digestive-system/figura-18-2-color.jpg",
           "textSha256": "d5ef31b9d7365acef8145164344feacff2485e839bc497712a1b2e4d8692943b",
-          "imageSha256": "f64377dc96b41517809f7115c1829524eab35641a4564eadc95f626cffb111ac"
+          "imageSha256": "67547c17ef66ce373ab4480d2555f47830edac026d7aa51909d8381dca097537"
         },
         {
           "block": 15,
@@ -5477,9 +5477,9 @@
           "type": "figure",
           "printedPages": "429",
           "label": "Figura 18.3. Poziția celor trei glande salivare și a ductelor acestora. Glanda submandibulară este denumită de asemenea și glanda submaxilară.",
-          "image": "assets/images/chapters/digestive-system/figura-18-3-barrons.webp",
+          "image": "assets/images/chapters/digestive-system/figura-18-3-color.jpg",
           "textSha256": "c8173c079fc4d2f0b9dd5f7ca51e4b3c9cb1cd52932cbba2c4dd175b712ffa3b",
-          "imageSha256": "14c2a8cc8125d04e523d214c299e82cf9e1e20e440ccea21b5a4b98425ff9cf4"
+          "imageSha256": "a42cb53285c542543db19c258bf7b201b681a845dd862a0b1e88f6acd2a8846d"
         },
         {
           "block": 17,
@@ -5543,9 +5543,9 @@
           "type": "figure",
           "printedPages": "430",
           "label": "Figura 18.4. Deglutiția și peristaltismul. (a) În procesul de înghițire, limba se ridică și comprimă bolul alimentar de palatul dur, împingându-l înspre faringe. (b) Bolul alimentar trece de epiglotă, care acoperă laringele, și pătrunde în esofag. (c) Mușchii esofagului se contractă (săgeți), împingând bolul alimentar spre stomac.",
-          "image": "assets/images/chapters/digestive-system/figura-18-4-barrons.webp",
+          "image": "assets/images/chapters/digestive-system/figura-18-4-color.jpg",
           "textSha256": "e3e04188f3b3c1708bdc09e9dba8c08050beb2cbbc2deb85f0c2b12be7e89b6e",
-          "imageSha256": "563379a981497af8c035bc6988e21e1f1d791589149b71ca8f73cbcae5d9e876"
+          "imageSha256": "f393402a0423ba2b6a14aded64212b1dcb6f8b9d9730790c7380a61299d348a7"
         },
         {
           "block": 25,
@@ -5609,9 +5609,9 @@
           "type": "figure",
           "printedPages": "432",
           "label": "Figura 18.5. Detalii structurale ale stomacului la om. (a) Stomacul este situat în cavitatea abdominală superioară, în regiunea epigastrică. (b) Principalele regiuni anatomice și straturi musculare ale stomacului. Observați pliurile de pe suprafața internă (rugae), care se întind (dispar), atunci când stomacul este plin. (c) O imagine mărită a structurii peretelui gastric, unde se pot observa diferitele celule ale peretelui gastric.",
-          "image": "assets/images/chapters/digestive-system/figura-18-5-barrons.webp",
+          "image": "assets/images/chapters/digestive-system/figura-18-5-color.jpg",
           "textSha256": "8d0509323a1abe0a9d17e7e9a83138855a67b3fbb7ba5aee60a5cea8742c52ad",
-          "imageSha256": "4ef1438317c98003a37ee4a553d5dd13c16e25d494f01f6fa0bbb9f5ee0fe9ac"
+          "imageSha256": "7b0b28795d425fb9f724b15362c99a60f7bb5ab46d0ce76db97c262d40fd371f"
         },
         {
           "block": 33,
@@ -5699,9 +5699,9 @@
           "type": "figure",
           "printedPages": "434",
           "label": "Figura 18.6. Digestia chimică a celor trei categorii de nutrienți (glucide, proteine, și lipide) în duoden. Pentru toate aceste tipuri de digestie este necesară prezența apei, iar produsul de digestie conține o parte a moleculei de apă.",
-          "image": "assets/images/chapters/digestive-system/figura-18-6-barrons.webp",
+          "image": "assets/images/chapters/digestive-system/figura-18-6-color.jpg",
           "textSha256": "758dc55fc813bf0501d366a0cd2c96de53df4eeed48b4691a6cbe8cc65b23a9b",
-          "imageSha256": "bb8e5eae47a2bd290bae8b9f08dc5ea875f5de8550a8d25f245042bd2e0e000f"
+          "imageSha256": "26a85f3f8b474d3a22536d21899e8fb8695db77a6cfe91019512f6f544fa23d8"
         },
         {
           "block": 44,
@@ -5757,9 +5757,9 @@
           "type": "figure",
           "printedPages": "436",
           "label": "Figura 18.7. Structura intestinului subțire și procesul de absorbție. (a) Straturile musculare ale peretelui intestinal. (b) Structura unei vilozități. Rețeaua capilară primește produșii de degradare ai proteinelor, glucidelor și produșii rezultați prin digestia acizilor nucleici, în timp ce chiliferul central primește produșii de descompunere ai lipidelor. (c) Absorbția ionilor de sodiu și a moleculelor de glucoză din lumenul intestinal, prin celulele epiteliale și lichidul interstițial, în capilare.",
-          "image": "assets/images/chapters/digestive-system/figura-18-7-barrons.webp",
+          "image": "assets/images/chapters/digestive-system/figura-18-7-color.jpg",
           "textSha256": "953633e69ac3302bec5d511176b162c82453b9e3f5ca082af629682dc8fa429d",
-          "imageSha256": "1dce8ccb08809612895ba194b29ad614355689e18820017b9f21310715a791eb"
+          "imageSha256": "ab782555976e1083e31a5c08d9ff3400eecaf8a3dc5ad4832ea5a6d01f636a17"
         },
         {
           "block": 51,
@@ -5791,9 +5791,9 @@
           "type": "figure",
           "printedPages": "437",
           "label": "Figura 18.8. Intestinul gros în poziție anatomică în cavitatea abdominală și relația sa cu stomacul, imagine ventrală. Intestinul subțire, de la duoden până la cec, a fost îndepărtat din figură. Ficatul și pancreasul au fost, de asemenea, îndepărtate. Linia punctată reprezintă poziția diafragmei.",
-          "image": "assets/images/chapters/digestive-system/figura-18-8-barrons.webp",
+          "image": "assets/images/chapters/digestive-system/figura-18-8-color.jpg",
           "textSha256": "0912889e25c1b6a4b2f754ec01c96dbb76749d4e886ee85ec9e4bec2699f1c13",
-          "imageSha256": "7bec23880b506e74dd93805eeadf662e83d1e67dc85bd857e5fcc0c60c628a60"
+          "imageSha256": "acbf27c1d3252f378776c5c299e4301d5c2915bd658f973cdf51c6a4d30f6f91"
         },
         {
           "block": 55,
@@ -5833,9 +5833,9 @@
           "type": "figure",
           "printedPages": "438",
           "label": "Figura 18.9. Anatomia și poziția ficatului și a pancreasului în cavitatea abdominală, văzute dintr-o poziție ventrală. Observați conturul stomacului, care a fost îndepărtat. Porțiunea superioară a ficatului este lipită de diafragmă, ficatul fiind protejat de mai multe coaste. Vezica biliară se află în partea inferioară a ficatului, fiind dificil de vizualizat în această poziție.",
-          "image": "assets/images/chapters/digestive-system/figura-18-9-barrons.webp",
+          "image": "assets/images/chapters/digestive-system/figura-18-9-color.jpg",
           "textSha256": "f73219b44cb667b9286cdbd33d6b5a18da5ed7c4d9d327304af2412961ed1956",
-          "imageSha256": "776cde05ab621b5246d13441b5e1573159d1a1935c43205ba241da5a1e892970"
+          "imageSha256": "bcf34c89dc63dc437baf30c4800a66340c34e7ed496625e1285c371ef4ada50e"
         },
         {
           "block": 60,
@@ -5875,9 +5875,9 @@
           "type": "figure",
           "printedPages": "439",
           "label": "Figura 18.10. Structura ficatului, a pancreasului și a sistemului de ducte ale acestora, observate din poziție ventrală. Diferitele ducte din vezica biliară, ficat și pancreas se unesc la nivelul ampulei hepatopancreatice, la nivelul papilei duodenale.",
-          "image": "assets/images/chapters/digestive-system/figura-18-10-barrons.webp",
+          "image": "assets/images/chapters/digestive-system/figura-18-10-color.jpg",
           "textSha256": "846f4d4c2f3b60c8acd4404b874fe2318e8e956b2946ef6136b925d90212c1d2",
-          "imageSha256": "c2d20a887da0eb8bea31b2659bdfdd21fce7b38b8162a6fe6c4126e6c71574f1"
+          "imageSha256": "4cdc376276df8c4d78066701f3604c6c2acb2deb7c62f4914d054797a334f1ce"
         },
         {
           "block": 65,
@@ -5958,6 +5958,17 @@
           "printedPages": "441",
           "label": "O serie de enzime din sucul pancreatic au rol în digestie. De exemplu, amilaza pancreatică digeră glucidele, proteazele ",
           "textSha256": "7fcb33f8ec338f75022b9697f62f23efe9a49ccd12764276a3a83ef11ff2632a"
+        },
+        {
+          "block": 75,
+          "route": "organele-anexe",
+          "type": "figure",
+          "printedPages": null,
+          "label": "Schemă de recapitulare a sistemului digestiv — repere a–w.",
+          "image": "assets/images/chapters/digestive-system/schema-recapitulare-color.jpg",
+          "sourceArchive": "18 - Sistemul digestiv/11.jpg",
+          "textSha256": "ecb00ef2e3de571b750f6adde4895316f315de53aacb025fdd38400377d6f4e6",
+          "imageSha256": "90c4956953de6c6c036c76ffa9886667a2c14719e746b859d9d45affd2c3930e"
         }
       ]
     },
@@ -6144,9 +6155,9 @@
           "type": "figure",
           "printedPages": "464",
           "label": "Figura 19.8. Gluconeogeneza. Procesul gluconeogenezei transformă molecule neglucidice (non-carbohidrați) în molecule de glucoză pentru a fi folosite în metabolismul energetic. După cum se observă, în celulele din țesuturi, proteinele sunt descompuse în aminoacizi, care intră în capilarele sanguine. Lipidele sunt obținute din celulele adipoase și sunt transportate împreună cu aminoacizii la ficat. Procesul complex de transformare în molecule de glucoză are loc în ficat.",
-          "image": "assets/images/chapters/metabolism-nutrition/figura-19-8-barrons.webp",
+          "image": "assets/images/chapters/metabolism-nutrition/figura-19-8-color.jpg",
           "textSha256": "a538d574cf42784cc1d5cd7df4998f36346b808f691fb6b6645b3958ff53d8c1",
-          "imageSha256": "a6a17f7c7be65411ab313911a8341804a1c7b62c457fce082ad046fcc4a2b873"
+          "imageSha256": "599ce30cf15daa960633ab9405d262fab0798d3107a93819f768125ba337a3d3"
         },
         {
           "block": 19,
@@ -6234,9 +6245,9 @@
           "type": "figure",
           "printedPages": "466",
           "label": "Figura 19.9. Unele aspecte ale metabolismului glucozei și lipidelor. Molecule de glucoză pot fi convertite în glicogen astfel: glucoza se transformă mai întâi în glucoză-6-fosfat, apoi aceasta în glucoză-1-fosfat (săgeți continue) și apoi în glicogen. Pentru sinteza lipidelor din glucoză se folosesc glicerol și acizi grași (săgeți întrerupte). Observați cum ambii compuși derivă din compuși ai glicolizei. Pentru degradarea lipidelor (săgeți continue), alte enzime fac ca reacțiile chimice să se desfășoare în sens invers. Schema biochimică arată cum un aport abundent de glucoză poate duce la o creștere a rezervelor de glicogen și de lipide ale corpului.",
-          "image": "assets/images/chapters/metabolism-nutrition/figura-19-9-barrons.webp",
-          "textSha256": "c33563b7c6a0f9cce187963edffd18ad0daf02f5eab13e7c694b308840c2b5a8",
-          "imageSha256": "7ed96a4d4643c2502fbad02f0ebff8ab29499233e95151533a8c6a936b211c5d"
+          "image": "assets/images/chapters/metabolism-nutrition/figura-19-9-color.jpg",
+          "textSha256": "9eb71da3fa5b221ddb37a05a0effd937448adb670c5eec52cd3154c93ba6b9bd",
+          "imageSha256": "d40b25fada61891982d8686609c947506c465ddcb6ff558dfea2d9005fcf5660"
         },
         {
           "block": 30,
@@ -6316,9 +6327,9 @@
           "type": "figure",
           "printedPages": "469",
           "label": "Figura 19.11. O comparație a nivelului de nutrienți din sânge în timpul stării de absorbție (postprandiale) și a stării postabsorbtive (de post).",
-          "image": "assets/images/chapters/metabolism-nutrition/figura-19-11-barrons.webp",
+          "image": "assets/images/chapters/metabolism-nutrition/figura-19-11-color.jpg",
           "textSha256": "fe4f5bb12372624ffac83c1ff0548e6c68f34ecf5da3773fd6a753169e5e6d38",
-          "imageSha256": "ba743269964f12bbdf61b711ae3c3fe072c63b418975c05a857a4b24d31ccfce"
+          "imageSha256": "0266f30455960e31233b04fbf5ba03b696b2ad808f1f87f8408d84c36f5adba4"
         },
         {
           "block": 40,
@@ -6533,9 +6544,9 @@
           "type": "figure",
           "printedPages": "486",
           "label": "Figura 20.1. Poziția sistemului urinar în corpul uman. Observați poziția rinichilor în raport cu coastele și localizarea vezicii urinare. Linia punctată reprezintă poziția diafragmei.",
-          "image": "assets/images/chapters/renal-system/figura-20-1-barrons.webp",
+          "image": "assets/images/chapters/renal-system/figura-20-1-color.jpg",
           "textSha256": "266d89b8561f3280a958d0a0f45fe19cd5c042578a8554bc136c9bb35e569bb6",
-          "imageSha256": "b29520af7100ce46bafaab798e6bda69389119cd7a210702cbeb9fc5f65c6d76"
+          "imageSha256": "d969f49d8a0266193a4e20890f5777f0ce434986925c021b69d1135276410bab"
         },
         {
           "block": 10,
@@ -6551,9 +6562,9 @@
           "type": "figure",
           "printedPages": "487",
           "label": "Figura 20.2. Structura rinichiului și a componentelor sale. (a) O secțiune frontală a rinichiului ilustrând intrarea și ieșirea arterei renale și, respectiv, a venei renale. Observați calicele mici, care se deschid în calicele mari și apoi în pelvisul renal și ureter pentru a elimina urina. (b) Cortexul renal și medulara renală sunt reprezentate mărit, astfel încât să se poată observa nefronii. Porțiunea dilatată este capsula glomerulară. Tubii coboară în medulară și apoi se întorc către cortex. Aici, ei se unesc cu niște tubi, care se vor deschide prin papilele renale în calicele mici. (c) Un nefron mărit pentru a observa detaliile. Observați localizarea capsulei și continuitatea ei cu tubul proximal, ansa Henle, tubul distal și tubul colector. Capilarele peritubulare nu sunt ilustrate.",
-          "image": "assets/images/chapters/renal-system/figura-20-2-barrons.webp",
+          "image": "assets/images/chapters/renal-system/figura-20-2-color.jpg",
           "textSha256": "09b08c9b2444d462c425f9b9599a8f862b777b8957ec441c5f3575ba897a300c",
-          "imageSha256": "fc2843e71634f946cbd35e0dce45ede5167a6a2b78187718248980ef9277eaa2"
+          "imageSha256": "fce6abe24fc676ed7e3af9d75eaabaca381d658f70227c12a74c2008c7b7363b"
         },
         {
           "block": 12,
@@ -6577,9 +6588,9 @@
           "type": "figure",
           "printedPages": "488",
           "label": "Figura 20.3. O schemă simplificată a funcției nefronului. În timpul procesului de filtrare, fluidul trece din sânge în capsula Bowman. În timpul procesului de reabsorbție, substanțele trec din filtrat în capilarele peritubulare ce iau naștere din arteriola eferentă. Fluidul trece apoi prin ansa Henle și, prin secreție tubulară, primește mai multe substanțe, din capilarele peritubulare. Sângele trece apoi într-o venă, în timp ce fluidul rezultat (numit acum urină) este preluat de tubul colector.",
-          "image": "assets/images/chapters/renal-system/figura-20-3-barrons.webp",
+          "image": "assets/images/chapters/renal-system/figura-20-3-color.jpg",
           "textSha256": "3362c397899c4fbc6a9e400a4cb0f51bc8527ad226ceda7e40899b9d498fd6d8",
-          "imageSha256": "19636c5c0c68bbf47a90a7842d1cee97932d2b99193bf68833c91db56265e2fd"
+          "imageSha256": "d1afb67a18188eaae152afd20d8583ca3755b96aceb027a31d9f1138d71a1f97"
         },
         {
           "block": 15,
@@ -6643,9 +6654,9 @@
           "type": "figure",
           "printedPages": "490",
           "label": "Figura 20.4. O schemă detaliată a activității nefronului. Observați săgeata ce indică fluxul sângelui din arteră spre arteriola aferentă, care pătrunde în glomerul și îl părăsește prin intermediul arteriolei eferente. Sângele curge mai departe prin rețeaua de capilare peritubulare și este drenat apoi printr-o venă. Între timp, plasma pătrunde în capsula Bowman, apoi trece prin tubul contort proximal, ansa Henle și tubul contort distal, înainte să intre în tubul colector. Plasma modificată în tubii renali formează în final urina. Observați rețeaua interconectată a capilarelor peritubulare și a tubilor nefronului, care facilitează transferurile. De asemenea, observați că tubul colector primește urina și de la alți nefroni din zonă. După cum este indicat, anumite porțiuni din nefron sunt localizate în corticala renală, în timp ce altele sunt în medulară.",
-          "image": "assets/images/chapters/renal-system/figura-20-4-barrons.webp",
+          "image": "assets/images/chapters/renal-system/figura-20-4-color.jpg",
           "textSha256": "fdb3474d2f55acd950889b90f768ceb10e5739fa479ff7849478a7ec2d66b705",
-          "imageSha256": "c418dec24f3c3a434e5a068d61140b14aae3a8866cd107db527ab42814265069"
+          "imageSha256": "87e9695b2bf55f44257f36422b4b26d3d9cafee12b200f160ce84c6357613f73"
         },
         {
           "block": 23,
@@ -6669,9 +6680,9 @@
           "type": "figure",
           "printedPages": "491",
           "label": "Figura 20.5. Un sumar al pasajului moleculelor între tubi și capilarele peritubulare ale nefronului. Diverse mișcări au loc în glomerul, în tubul proximal și în tubul distal.",
-          "image": "assets/images/chapters/renal-system/figura-20-5-barrons.webp",
+          "image": "assets/images/chapters/renal-system/figura-20-5-color.jpg",
           "textSha256": "877f08ad0bb45e491aeb52bd4947a20df2402eb5b6ef8eda27d1bf380baa0226",
-          "imageSha256": "801631b33e473419b584d6d03f3d2b77749139510f102dd6a467fd4e6ed43eb0"
+          "imageSha256": "c9a80c32778cd9a88a58a1c4f9aa95f6edc32ea2456c008cee242d1d7c33d0ba"
         },
         {
           "block": 26,
@@ -6727,9 +6738,9 @@
           "type": "figure",
           "printedPages": "492",
           "label": "Figura 20.6. Mecanismul contracurent al circulației apei. Acumularea de ioni de sodiu și clor în medulara rinichiului determină ieșirea apei din ramura descendentă, din ansa propriu-zisă (structuri ale nefronului) și din tubul colector. Eliminarea ureei favorizează, de asemenea, circulația apei, care se deplasează către fluxul sanguin. Pierderea apei contribuie la concentrarea urinei.",
-          "image": "assets/images/chapters/renal-system/figura-20-6-barrons.webp",
+          "image": "assets/images/chapters/renal-system/figura-20-6-color.jpg",
           "textSha256": "34fd8586ce4300593d3bd15631a6195f65c27fd74af9f0059163def05eea99b1",
-          "imageSha256": "7a65ab5de2c00257aa9fee4721cb42f3d64e5bd3138587468c5920f2959426b9"
+          "imageSha256": "a681e48357a25d19e6b8c5c07c9f1c36a45b2d357d0bf69fee29f0cd4226d400"
         },
         {
           "block": 33,
@@ -6793,9 +6804,9 @@
           "type": "figure",
           "printedPages": "494",
           "label": "Figura 20.7. Cei doi hormoni ce controlează reabsorbția apei în nefron. (a) Hormonul antidiuretic (ADH) din hipotalamus și lobul posterior hipofizar. (b) Aldosteronul din cortexul suprarenalei.",
-          "image": "assets/images/chapters/renal-system/figura-20-7-barrons.webp",
+          "image": "assets/images/chapters/renal-system/figura-20-7-color.jpg",
           "textSha256": "7c9749e0507525afa5907c83f3588276e7643069cca762317eaeba21acc7d137",
-          "imageSha256": "675a8d9fc5c99d1cb1731b24a3d00f72952b1b407c0f67eb0d71cef55286665f"
+          "imageSha256": "49a1123b607aec3559715bb53425226455f6f4aca541bdef143dc45cb123f80f"
         },
         {
           "block": 41,
@@ -6883,9 +6894,9 @@
           "type": "figure",
           "printedPages": "496",
           "label": "Figura 20.8. Structurile anexe ale sistemului urinar masculin. Prostata și glandele bulbouretrale sunt corelate cu sistemul reproducător.",
-          "image": "assets/images/chapters/renal-system/figura-20-8-barrons.webp",
+          "image": "assets/images/chapters/renal-system/figura-20-8-color.jpg",
           "textSha256": "d3ff72bce110bc0e6d7d071a3f62b3b3a8e1b69c0d69cf43234ae3a7d98d54dc",
-          "imageSha256": "b10dc19627e4a03b875fe50e066494d65964e467c3201295e123dccde74d7921"
+          "imageSha256": "05a6ee02acdbb43e29f9f0894e613fc7e7fb94d19a333f98c72f0775b7ff3cd2"
         },
         {
           "block": 52,
@@ -6909,9 +6920,9 @@
           "type": "figure",
           "printedPages": "497",
           "label": "Figura 20.9. Alte organe excretorii ale organismului uman, care completează funcția sistemului urinar.",
-          "image": "assets/images/chapters/renal-system/figura-20-9-barrons.webp",
+          "image": "assets/images/chapters/renal-system/figura-20-9-color.jpg",
           "textSha256": "0255add6579f3b6c7ff5f5806f52b1161aa11b4bd7dacc0c865f922b0916aeca",
-          "imageSha256": "b7f752079d93fde977c6815072bf8e99d2d13075fd3f15865b20d5c30c03902f"
+          "imageSha256": "62f554549f00ba6202eb3728f373afb74b494ed0ec0d689dfcb1c94faae6676b"
         },
         {
           "block": 55,
@@ -6998,9 +7009,9 @@
           "type": "figure",
           "printedPages": "530",
           "label": "Figura 22.1. Imagine a sistemului reproducător masculin privit din partea laterală stângă.",
-          "image": "assets/images/chapters/male-reproductive-system/figura-22-1-barrons.webp",
+          "image": "assets/images/chapters/male-reproductive-system/figura-22-1-color.jpg",
           "textSha256": "e1231a534b63a36803bb9d2ec5089bbab50d835276cf0f2e8e8f0a01580af770",
-          "imageSha256": "3e7b0eba9afd4f350e4538e00455be7a7ccda496b540c48cd75761cb251470e6"
+          "imageSha256": "d5f2620a2c3b1b529404aef1a9800f408585606ae05e6e53dbec0abbb8cafb94"
         },
         {
           "block": 8,
@@ -7024,9 +7035,9 @@
           "type": "figure",
           "printedPages": "533",
           "label": "Figura 22.2. Formarea spermatozoizilor prin procesul de meioză. Spermatogoniile formează spermatocitele primare, care au 46 de cromozomi (diploide, 2n). Spermatocitele primare intră în Faza I a meiozei, unde trec printr-o diviziune reducțională și produc spermatocite secundare cu 23 de cromozomi (haploide, n). În faza a II-a a meiozei, numărul de cromozomi rămâne același, celulele se dublează pentru a produce 4 spermatide, fiecare cu câte 23 de cromozomi. Spermatidele se transformă în spermatozoizi maturi.",
-          "image": "assets/images/chapters/male-reproductive-system/figura-22-2-barrons.webp",
+          "image": "assets/images/chapters/male-reproductive-system/figura-22-2-color.jpg",
           "textSha256": "ab8bdbb2c4c89b7220d92396dc4cf002a2a577450672f2acc87297c7e5a6566e",
-          "imageSha256": "a60f4d6bb378b26227fd3338b660fc297085799f860e147ce1d25115f44c1422"
+          "imageSha256": "08b62c9c5598b0c6aadc89812d32e69fcbf2604aefda20e89757c8321c04b070"
         },
         {
           "block": 11,
@@ -7058,9 +7069,9 @@
           "type": "figure",
           "printedPages": "533",
           "label": "Figura 22.3. Spermatozoidul uman. Sunt ilustrate componentele structurale cele mai importante. Nucleul, care conține 23 de cromozomi, este elementul cheie al spermatozoidului.",
-          "image": "assets/images/chapters/male-reproductive-system/figura-22-3-barrons.webp",
+          "image": "assets/images/chapters/male-reproductive-system/figura-22-3-color.jpg",
           "textSha256": "8bafbf2b2235c628a3ca6b6a8d64ed88dda01216230cfb7d8f19800f427ef8ac",
-          "imageSha256": "00efcc297e8e64566bd2ae9a49f17670cefef989a369e780d9ff4cdd6e52c6c7"
+          "imageSha256": "81e848cedd385a8c4f470a5b49e525eec19c455bf85ccaed885333e49bf43a39"
         },
         {
           "block": 15,
@@ -7068,9 +7079,9 @@
           "type": "figure",
           "printedPages": "534",
           "label": "Figura 22.4. Sistemul de ducte ce pornesc de la nivelul testiculelor. Celulele spermatice se formează în tubii seminiferi și trec prin rete testis și prin canalele eferente până în epididim. Coada epididimului se continuă cu ductul deferent, care transportă spermatozoizii în afara testiculului.",
-          "image": "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp",
+          "image": "assets/images/chapters/male-reproductive-system/figura-22-4-color.jpg",
           "textSha256": "d2084715eaf7cc4ee33d5700d49f60b04672c83595c8b2fb63c7c45fcc31d728",
-          "imageSha256": "7db09ae994c287f6a28bb255d0cd739078744c5b670d17d8b1497483eca74ee0"
+          "imageSha256": "2eb935c0108205ec93d49060ab63da754f084d776a60f2675b7bb0847b5fcf93"
         },
         {
           "block": 16,
@@ -7110,9 +7121,9 @@
           "type": "figure",
           "printedPages": "535",
           "label": "Figura 22.5. Ductele și organele anexe ale sistemului reproducător masculin. Ductul deferent, care transportă spermatozoizii, se extinde prin canalul inghinal, trece pe lângă vezica urinară și se alătură ductului din vezicula seminală pentru a forma ductul ejaculator. Acesta din urmă traversează prostata și se unește cu uretra. Uretra se extinde prin penis la exterior.",
-          "image": "assets/images/chapters/male-reproductive-system/figura-22-5-barrons.webp",
+          "image": "assets/images/chapters/male-reproductive-system/figura-22-5-color.jpg",
           "textSha256": "358dab080637489f9f720a3c2eca99e6c133fbec700dac0b08486d3dbae0ec20",
-          "imageSha256": "15a1f79ee9f4e8d4ed64a82f860646221d87429fdc9d6ff1773e40b916893ad8"
+          "imageSha256": "15a680ba617f4545e102de3062d02344390e7d96e873e2d0084daa190f6328a0"
         },
         {
           "block": 21,
@@ -7287,9 +7298,9 @@
           "type": "figure",
           "printedPages": "550",
           "label": "Figura 23.1. Tractul genital feminin văzut din partea laterală stângă. Sunt ilustrate cele mai importante organe și structuri ale sistemului reproducător feminin.",
-          "image": "assets/images/chapters/female-reproductive-system/figura-23-1-barrons.webp",
+          "image": "assets/images/chapters/female-reproductive-system/figura-23-1-color.jpg",
           "textSha256": "b3f52b27fae6f83c1778a79e398c21e756801673715b98770cbd6093feb32497",
-          "imageSha256": "299f8b887f34095586ef6bbedae2a229992d7883b88727745bb07a05e3e58c82"
+          "imageSha256": "393faea5f2c03ebb5efb76bf6c72591836578a553b2fcfc2002c8e921e00038c"
         },
         {
           "block": 7,
@@ -7329,9 +7340,9 @@
           "type": "figure",
           "printedPages": "551",
           "label": "Figura 23.2. O imagine frontală a tractului genital feminin. Fiecare ovar este susținut de ligamentul ovarian și de ligamentul suspensor. Se observă diferite aspecte anatomice ale ovarului. De-a lungul marginii superioare a ligamentului larg care duce la uter, se observă trompele uterine (trompele lui Falloppio). Vaginul a fost secționat pentru a prezenta deschiderea colului uterin în vagin.",
-          "image": "assets/images/chapters/female-reproductive-system/figura-23-2-barrons.webp",
+          "image": "assets/images/chapters/female-reproductive-system/figura-23-2-color.jpg",
           "textSha256": "d0211ba5d9907c7591435a1f3c962c65e9c6d201a72f1d8e9770922327feaf5d",
-          "imageSha256": "1d250e311d41f07b3ac28a15639e3b976dbb151df773d1a99e10a73fe19a870c"
+          "imageSha256": "9385ef4a93ed6f812db4e84d602d58c8c270deb609a03bcbc7b491e080449022"
         },
         {
           "block": 12,
@@ -7403,9 +7414,9 @@
           "type": "figure",
           "printedPages": "553",
           "label": "Figura 23.3. Uterul și trompele uterine susținute de ligamentul larg. Sunt ilustrate detalii anatomice ale trompelor uterine și deschiderea lor în uter. Observați structura musculară groasă a peretelui uterin și părțile sale anatomice. Se poate observa, de asemenea, comunicarea cu vaginul la nivelul colului uterin.",
-          "image": "assets/images/chapters/female-reproductive-system/figura-23-3-barrons.webp",
+          "image": "assets/images/chapters/female-reproductive-system/figura-23-3-color.jpg",
           "textSha256": "52372a4b041ae14ae634dd9ff540fe415a1852142a6dfafc77c7787eb39b5986",
-          "imageSha256": "24050c73a8b3cb1c8641c54ecc85f0181485d96aed79e8a70849fde43c4abde7"
+          "imageSha256": "3ce1d79e5b3d5dc7aa242546e4f3bc382f96cb4ccdb97cfbaebe59e72df3514f"
         },
         {
           "block": 21,
@@ -7453,9 +7464,9 @@
           "type": "figure",
           "printedPages": "554",
           "label": "Figura 23.4. Organele genitale externe (vulva) ale sistemului reproducător feminin. Sunt ilustrate orificiile externe ale căilor urinare (uretra), de reproducere (vaginul), și ale tractului gastrointestinal (anusul).",
-          "image": "assets/images/chapters/female-reproductive-system/figura-23-4-barrons.webp",
+          "image": "assets/images/chapters/female-reproductive-system/figura-23-4-color.jpg",
           "textSha256": "d37659c70fc77423ee02a6151e3f2e035b8abba1dc73b265c9e2da6790d8cf88",
-          "imageSha256": "ff081fa8dbe50d8553a342eaac6b3dee25c10c19b750cc6cdd3fcc999460f900"
+          "imageSha256": "695f2f7ae38df3ab487df572eb8bf245fe99b323ac7b8e7c77c0ed72e540dfec"
         },
         {
           "block": 27,
@@ -7487,9 +7498,9 @@
           "type": "figure",
           "printedPages": "555",
           "label": "Figura 23.5. Secțiune sagitală la nivelul sânului, ilustrând relația anatomică a acestuia cu oasele și mușchii subiacenți. Glandele mamare (alveolare) ale sânului sunt drenate de către ductele mamare.",
-          "image": "assets/images/chapters/female-reproductive-system/figura-23-5-barrons.webp",
+          "image": "assets/images/chapters/female-reproductive-system/figura-23-5-color.jpg",
           "textSha256": "40b319ec406a3b4d4e3c9581a91e49337defea4345c1dc7855744f50b915864d",
-          "imageSha256": "b12b1d089b734907660c93d54887e31a1864eec56a1a258ac6ddd1c286191f30"
+          "imageSha256": "ca17859b92d42e32bea980c6bc7c25d6f37a16f674e4524c80c3ceb1d37c907c"
         },
         {
           "block": 31,
@@ -7561,9 +7572,9 @@
           "type": "figure",
           "printedPages": "557",
           "label": "Figura 23.6. Ciclul menstrual. Menstruația durează câteva zile, urmează apoi faza proliferativă, între ziua a 6-a și ziua a 14-a, când se produce ovulația. Faza secretorie durează între zilele 15-28, completând ciclul. Observați nivelurile de estrogeni și progesteron în timpul diferitelor faze. Se poate urmări, de asemenea, grosimea endometrului, efectul hormonilor asupra dezvoltării acestuia fiind ilustrat prin săgețile verticale.",
-          "image": "assets/images/chapters/female-reproductive-system/figura-23-6-barrons.webp",
+          "image": "assets/images/chapters/female-reproductive-system/figura-23-6-color.jpg",
           "textSha256": "503458035738688227cafe33f08b04d0e4dc0cc80249370bbe08726880bd39f8",
-          "imageSha256": "de22615a17e410fcafaa305c2354b3128ff3de57a8bd5ed2e9bd0d0b85920935"
+          "imageSha256": "daa0dedbde64ccf0304b1af7a01ad38dea9b1b177053ca8b4c6287fdf5657c73"
         },
         {
           "block": 40,
@@ -7627,9 +7638,9 @@
           "type": "figure",
           "printedPages": "559",
           "label": "Figura 23.7. Formarea și dezvoltarea ovulului. Oogonia este celula primordială, diploidă (2n), cu 46 de cromozomi. Înainte de naștere, oogonia intră în faza I a diviziunii meiotice, transformându-se în oocit primar, prezent la naștere în ovar. La pubertate, procesul continuă, iar oocitul primar încheie prima fază a meiozei, formând oocitul secundar. Această celulă este haploidă, având 23 de cromozomi (n număr de cromozomi). (Cealaltă celulă formată în faza I dă naștere primului globul polar și apoi, prin diviziunea acestuia, altor doi globuli polari, care degenerează). Oocitul secundar începe a doua fază a meiozei. În prezența unui spermatozoid, oocitul își finalizează această fază a meiozei și formează ovulul matur, cu 23 de cromozomi, precum și un al doilea globul polar. Ovulul se poate uni acum cu spermatozoidul în procesul de fecundație.",
-          "image": "assets/images/chapters/female-reproductive-system/figura-23-7-barrons.webp",
+          "image": "assets/images/chapters/female-reproductive-system/figura-23-7-color.jpg",
           "textSha256": "3213e7f00d39dcc9bab3422d9e709c76bbfac6885ca8b1372f539ce7592ea337",
-          "imageSha256": "e4bc792ffdd3461b8af2fdf2d372f68b375ee7427e400a7d09672c36ec536a38"
+          "imageSha256": "870db2e23b183a2430de3db9324fe61a22d183751ca3bf106f181770c7107a55"
         },
         {
           "block": 48,
@@ -7637,9 +7648,9 @@
           "type": "figure",
           "printedPages": "559",
           "label": "Figura 23.8. Evoluția proceselor care au loc lunar în ovar. Este ilustrată dezvoltarea foliculului matur, cu aspect veziculos, începând cu foliculul primar și continuând cu eliberarea oocitului secundar, care devine apoi ovul ce poate fi fecundat. Corpul galben se formează din structurile foliculului care rămân în ovar.",
-          "image": "assets/images/chapters/female-reproductive-system/figura-23-8-barrons.webp",
+          "image": "assets/images/chapters/female-reproductive-system/figura-23-8-color.jpg",
           "textSha256": "a0b09c5522644c54fd9e877f4583960cc687500c91f6af0325f330ec86bede91",
-          "imageSha256": "b8f7ad9553f128e984dedd1580e61ba39d8181b7a429dd35e665dac1932e17d4"
+          "imageSha256": "1ccee481e4faf012b162be1b8d22b1e6bac442624718b998a9b696b8688b7fd4"
         },
         {
           "block": 49,
@@ -7671,9 +7682,9 @@
           "type": "figure",
           "printedPages": "560",
           "label": "Figura 23.9. Fecundația în trompa uterină. Sunt ilustrate căile pe care le urmează spermatozoizii și ovulul, înainte de unirea lor în trompa uterină.",
-          "image": "assets/images/chapters/female-reproductive-system/figura-23-9-barrons.webp",
+          "image": "assets/images/chapters/female-reproductive-system/figura-23-9-color.jpg",
           "textSha256": "dcd9ca21709738e48e47cf862580aa44310d33666ed481bb86cf47abfebfee20",
-          "imageSha256": "ca2b3d2dc389e76a4f6640032644e3265c81a5ee330ffb9036cc77e6d72a320f"
+          "imageSha256": "c0d7861c78b0f9d125db26dcf919f6e683c36ca36cb17bc38de861aacb8b885e"
         },
         {
           "block": 53,
@@ -7689,9 +7700,9 @@
           "type": "figure",
           "printedPages": "561",
           "label": "Figura 23.10. Procesele ce survin după fecundație. După ce ovulul este fecundat în trompa uterină, urmează o serie de diviziuni celulare din care rezultă morula și blastocistul, care se fixează pe peretele uterin. Apoi, din blastocist se dezvoltă embrionul.",
-          "image": "assets/images/chapters/female-reproductive-system/figura-23-10-barrons.webp",
+          "image": "assets/images/chapters/female-reproductive-system/figura-23-10-color.jpg",
           "textSha256": "f22f3e5a3499f2f8eebb2226e14d6dd9346002888db83f3f1fe579b2872d6c78",
-          "imageSha256": "a42bb05349ecc7ba66af2e1159f5db365f7d341192da064c03759fc09c4be90f"
+          "imageSha256": "1b95ee2cc5ad80b750bf1e03dbcef998a5bbb570d2b952435d3de0ff4af85c06"
         },
         {
           "block": 55,

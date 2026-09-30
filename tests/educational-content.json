@@ -16,7 +16,7 @@
       "id": "page-structura",
       "text": "526e0f9ae9a682180d0932e426475edf86a022b5b483e83235a63939c892e6c7",
       "images": [
-        "assets/images/chapters/cell/figura-3-1-sursa-2022.webp"
+        "assets/images/chapters/cell/figura-3-1-color.jpg"
       ],
       "tables": []
     },
@@ -49,7 +49,7 @@
       "id": "page-organite",
       "text": "71f3241c9b6414fe941ec2bec8c5bb0c11f6eae49ee71c1de3d2f69d994cca25",
       "images": [
-        "assets/images/chapters/cell/figura-3-5-sursa-2022.webp"
+        "assets/images/chapters/cell/figura-3-5-color.jpg"
       ],
       "tables": []
     },
@@ -115,7 +115,7 @@
       "id": "page-organizare",
       "text": "9257ba0918ffce0ad79ff629df096875364753b4d043af167da789b79e6d3255",
       "images": [
-        "assets/images/chapters/introduction/figura-1-1-sursa-2022.webp"
+        "assets/images/chapters/introduction/figura-1-1-color.jpg"
       ],
       "tables": [
         "454735ebfe13a1624a84d5567574f7b944fc1a16076e9214ae5c955c9820472b"
@@ -131,8 +131,8 @@
       "id": "page-termeni",
       "text": "bf34c3672677c2265fb79fdec3d4332f065cf1956377414f9e8513f127b9a968",
       "images": [
-        "assets/images/chapters/introduction/figura-1-2-sursa-2022.webp",
-        "assets/images/chapters/introduction/figura-1-3-sursa-2022.webp"
+        "assets/images/chapters/introduction/figura-1-2-color.jpg",
+        "assets/images/chapters/introduction/figura-1-3-color.jpg"
       ],
       "tables": [
         "b8e6c14ed45d1a58d3d98a5f86a08ec5792e4eff9f3a0801c8d150643be4afea"
@@ -142,8 +142,8 @@
       "id": "page-cavitati",
       "text": "9905a210af25eb8f737589d710be2527d8d338cb1ffa29ec5f3b47b90be608d6",
       "images": [
-        "assets/images/chapters/introduction/figura-1-4-sursa-2022.webp",
-        "assets/images/chapters/introduction/figura-1-5-sursa-2022.webp"
+        "assets/images/chapters/introduction/figura-1-4-color.jpg",
+        "assets/images/chapters/introduction/figura-1-5-color.jpg"
       ],
       "tables": []
     }
@@ -161,9 +161,9 @@
       "id": "page-osul",
       "text": "93db615494373e1ca87be0217be5dd47feab4174def7f240879c77dad77b8a85",
       "images": [
-        "assets/images/chapters/bones-and-joints/figura-6-1-sursa-2022.webp",
-        "assets/images/chapters/bones-and-joints/figura-6-2-sursa-2022.webp",
-        "assets/images/chapters/bones-and-joints/figura-6-3-sursa-2022.webp"
+        "assets/images/chapters/bones-and-joints/figura-6-1-color.jpg",
+        "assets/images/chapters/bones-and-joints/figura-6-2-color.jpg",
+        "assets/images/chapters/bones-and-joints/figura-6-3-color.jpg"
       ],
       "tables": []
     },
@@ -171,8 +171,8 @@
       "id": "page-articulatii",
       "text": "1badd390a11fd5937576b98032cc369b30191b137469e97d2ee052e979132680",
       "images": [
-        "assets/images/chapters/bones-and-joints/figura-6-4-sursa-2022.webp",
-        "assets/images/chapters/bones-and-joints/figura-6-6-sursa-2022.webp"
+        "assets/images/chapters/bones-and-joints/figura-6-4-color.jpg",
+        "assets/images/chapters/bones-and-joints/figura-6-6-color.jpg"
       ],
       "tables": [
         "d0fa25bfa9133ec2eb225b0dea1b7d87bf01ba6acdffa13c6282c232f65a2a52"
@@ -184,13 +184,13 @@
       "id": "page-sistem-nervos-central",
       "text": "4d64ef72edddff60e738edaea7f264b0ae13922bd3b6cae71dad6ee6c2c38242",
       "images": [
-        "assets/images/chapters/nervous-system/figura-11-1-sursa-2022.webp",
-        "assets/images/chapters/nervous-system/figura-11-2-sursa-2022.webp",
-        "assets/images/chapters/nervous-system/figura-11-3-sursa-2022.webp",
-        "assets/images/chapters/nervous-system/figura-11-4-sursa-2022.webp",
-        "assets/images/chapters/nervous-system/figura-11-5-sursa-2022.webp",
-        "assets/images/chapters/nervous-system/figura-11-6-sursa-2022.webp",
-        "assets/images/chapters/nervous-system/figura-11-7-sursa-2022.webp"
+        "assets/images/chapters/nervous-system/figura-11-1-color.jpg",
+        "assets/images/chapters/nervous-system/figura-11-2-color.jpg",
+        "assets/images/chapters/nervous-system/figura-11-3-color.jpg",
+        "assets/images/chapters/nervous-system/figura-11-4-color.jpg",
+        "assets/images/chapters/nervous-system/figura-11-5-color.jpg",
+        "assets/images/chapters/nervous-system/figura-11-6-color.jpg",
+        "assets/images/chapters/nervous-system/figura-11-7-color.jpg"
       ],
       "tables": [
         "658fc5ce284af8247310cc98f28544cfaa334d564859e3f10a4e3d08d8442ed9",
@@ -201,8 +201,8 @@
       "id": "page-sistem-nervos-periferic",
       "text": "979c3aff8db0a2ded3192b9979c8bd362b035e299261697e0e5db77b8b6feff1",
       "images": [
-        "assets/images/chapters/nervous-system/figura-11-8-sursa-2022.webp",
-        "assets/images/chapters/nervous-system/figura-11-9-sursa-2022.webp"
+        "assets/images/chapters/nervous-system/figura-11-8-color.jpg",
+        "assets/images/chapters/nervous-system/figura-11-9-color.jpg"
       ],
       "tables": [
         "60c13c07893b66cab69b447a6442859490266315e9dff87b5ea0108013a4b1e6",
@@ -213,7 +213,7 @@
       "id": "page-sistem-nervos-autonom",
       "text": "672a638147fc1e44b27953bc56fcd05187a1521550ae7e88c795ea8c7285da27",
       "images": [
-        "assets/images/chapters/nervous-system/figura-11-10-sursa-2022.webp"
+        "assets/images/chapters/nervous-system/figura-11-10-color.jpg"
       ],
       "tables": [
         "b443d7320344a86c5737512c6f99738b391490dd11612b43e36c22fc3462c1ef"
@@ -231,9 +231,9 @@
       "id": "page-rinichii",
       "text": "ac4d464fc58c35da84960a62ce3484f83d0f82b5c759fd2220463eadfb8b395b",
       "images": [
-        "assets/images/chapters/renal-system/figura-20-1-barrons.webp",
-        "assets/images/chapters/renal-system/figura-20-2-barrons.webp",
-        "assets/images/chapters/renal-system/figura-20-3-barrons.webp"
+        "assets/images/chapters/renal-system/figura-20-1-color.jpg",
+        "assets/images/chapters/renal-system/figura-20-2-color.jpg",
+        "assets/images/chapters/renal-system/figura-20-3-color.jpg"
       ],
       "tables": []
     },
@@ -241,9 +241,9 @@
       "id": "page-nefron",
       "text": "3919f5c12627ba132b8a862a1d9dd297983c13007cf3d5c52c7f5c8fea87fb1a",
       "images": [
-        "assets/images/chapters/renal-system/figura-20-4-barrons.webp",
-        "assets/images/chapters/renal-system/figura-20-5-barrons.webp",
-        "assets/images/chapters/renal-system/figura-20-6-barrons.webp"
+        "assets/images/chapters/renal-system/figura-20-4-color.jpg",
+        "assets/images/chapters/renal-system/figura-20-5-color.jpg",
+        "assets/images/chapters/renal-system/figura-20-6-color.jpg"
       ],
       "tables": [
         "1dae0ecf1ce33f01cf4a4f69c4018bc6eedfe6cd33a17ef0a60756e460527271",
@@ -254,7 +254,7 @@
       "id": "page-hormoni",
       "text": "c63a79be9c941df61932a2f518aae4cce5bc8fe6e2f418ab8d2e7aa8825cb1e5",
       "images": [
-        "assets/images/chapters/renal-system/figura-20-7-barrons.webp"
+        "assets/images/chapters/renal-system/figura-20-7-color.jpg"
       ],
       "tables": [
         "85872e652f1708e9019bba6de62ad189104a3754cace948010b0b07320d84d4a"
@@ -264,8 +264,8 @@
       "id": "page-anexe",
       "text": "50929434dd177789f527ae73fc694e1621b22f4b79fcb8288e876664ce0eee47",
       "images": [
-        "assets/images/chapters/renal-system/figura-20-8-barrons.webp",
-        "assets/images/chapters/renal-system/figura-20-9-barrons.webp"
+        "assets/images/chapters/renal-system/figura-20-8-color.jpg",
+        "assets/images/chapters/renal-system/figura-20-9-color.jpg"
       ],
       "tables": []
     },
@@ -289,7 +289,7 @@
       "id": "page-intro",
       "text": "3371dbf491aef82c608e3a988b50f9c30d0bee52f0673e55825769c276393b61",
       "images": [
-        "assets/images/chapters/female-reproductive-system/figura-23-1-barrons.webp"
+        "assets/images/chapters/female-reproductive-system/figura-23-1-color.jpg"
       ],
       "tables": []
     },
@@ -297,10 +297,10 @@
       "id": "page-organe",
       "text": "f72357f8630268d01d30492f809844a93941d6635cfbc78d6823937c51c568bd",
       "images": [
-        "assets/images/chapters/female-reproductive-system/figura-23-2-barrons.webp",
-        "assets/images/chapters/female-reproductive-system/figura-23-3-barrons.webp",
-        "assets/images/chapters/female-reproductive-system/figura-23-4-barrons.webp",
-        "assets/images/chapters/female-reproductive-system/figura-23-5-barrons.webp"
+        "assets/images/chapters/female-reproductive-system/figura-23-2-color.jpg",
+        "assets/images/chapters/female-reproductive-system/figura-23-3-color.jpg",
+        "assets/images/chapters/female-reproductive-system/figura-23-4-color.jpg",
+        "assets/images/chapters/female-reproductive-system/figura-23-5-color.jpg"
       ],
       "tables": [
         "0815a60c2229c47bccfef1ec523f837851f20529c0a72e58559e816586e753a6"
@@ -310,11 +310,11 @@
       "id": "page-fiziologie",
       "text": "38253b8a15e3f9a76de2a32c0580bbea00a63665dec8ee3618cfe9220c262562",
       "images": [
-        "assets/images/chapters/female-reproductive-system/figura-23-6-barrons.webp",
-        "assets/images/chapters/female-reproductive-system/figura-23-7-barrons.webp",
-        "assets/images/chapters/female-reproductive-system/figura-23-8-barrons.webp",
-        "assets/images/chapters/female-reproductive-system/figura-23-9-barrons.webp",
-        "assets/images/chapters/female-reproductive-system/figura-23-10-barrons.webp"
+        "assets/images/chapters/female-reproductive-system/figura-23-6-color.jpg",
+        "assets/images/chapters/female-reproductive-system/figura-23-7-color.jpg",
+        "assets/images/chapters/female-reproductive-system/figura-23-8-color.jpg",
+        "assets/images/chapters/female-reproductive-system/figura-23-9-color.jpg",
+        "assets/images/chapters/female-reproductive-system/figura-23-10-color.jpg"
       ],
       "tables": [
         "60025faf4a70d22e19cae22de762e545c977a1ab50d3e8c7ab6fd648e7f5a3ba"
@@ -332,10 +332,10 @@
       "id": "page-testiculele",
       "text": "2f8e1a9bd7e9001d8847ebe2eb31cfd879522a1e936dcdffbc5b1ebcee4fc8d0",
       "images": [
-        "assets/images/chapters/male-reproductive-system/figura-22-1-barrons.webp",
-        "assets/images/chapters/male-reproductive-system/figura-22-2-barrons.webp",
-        "assets/images/chapters/male-reproductive-system/figura-22-3-barrons.webp",
-        "assets/images/chapters/male-reproductive-system/figura-22-4-barrons.webp"
+        "assets/images/chapters/male-reproductive-system/figura-22-1-color.jpg",
+        "assets/images/chapters/male-reproductive-system/figura-22-2-color.jpg",
+        "assets/images/chapters/male-reproductive-system/figura-22-3-color.jpg",
+        "assets/images/chapters/male-reproductive-system/figura-22-4-color.jpg"
       ],
       "tables": [
         "475fa1912f4baf6fbfe589d9b0b1b1dea16826a18b2887851523f5952b33b0ed"
@@ -345,7 +345,7 @@
       "id": "page-ducte",
       "text": "44ce81690dd6479d04733774803df1476e1effc6b1e3b970d44470da857c900f",
       "images": [
-        "assets/images/chapters/male-reproductive-system/figura-22-5-barrons.webp"
+        "assets/images/chapters/male-reproductive-system/figura-22-5-color.jpg"
       ],
       "tables": []
     },
@@ -371,7 +371,7 @@
       "id": "page-muschiul-striat",
       "text": "e0d46957461f95afd7f6b23054635ec6b36202a9224e663b704c111f6d52df1d",
       "images": [
-        "assets/images/chapters/muscular-tissue/figura-8-1-sursa-2022.webp"
+        "assets/images/chapters/muscular-tissue/figura-8-1-color.jpg"
       ],
       "tables": []
     },
@@ -379,7 +379,7 @@
       "id": "page-energia",
       "text": "364ff1b78680dd81dfcb732661ee2bc4166648d3b8657a14e814ad715d0d64da",
       "images": [
-        "assets/images/chapters/muscular-tissue/figura-8-5-sursa-2022.webp"
+        "assets/images/chapters/muscular-tissue/figura-8-5-color.jpg"
       ],
       "tables": []
     }
@@ -389,21 +389,21 @@
       "id": "page-organizare",
       "text": "190bc663c390d9e0fa2090a03160eaf10833192499e79250c4d40689664cadd8",
       "images": [
-        "assets/images/chapters/nervous-tissue/figura-10-1-sursa-2022.webp",
-        "assets/images/chapters/nervous-tissue/figura-10-2-sursa-2022.webp",
-        "assets/images/chapters/nervous-tissue/figura-10-3-sursa-2022.webp",
-        "assets/images/chapters/nervous-tissue/figura-10-4-sursa-2022.webp"
+        "assets/images/chapters/nervous-tissue/figura-10-1-color.jpg",
+        "assets/images/chapters/nervous-tissue/figura-10-2-color.jpg",
+        "assets/images/chapters/nervous-tissue/figura-10-3-color.jpg",
+        "assets/images/chapters/nervous-tissue/figura-10-4-color.jpg"
       ],
       "tables": []
     },
     {
       "id": "page-fiziologia-nervilor",
-      "text": "5cda1ff53dc3d1e73f24d73fa0730ebfb9e82a85afd25780ae5b31f7f2297c38",
+      "text": "ca929fbf2be51a3ff2eb0d77e84fa4de94a916f9baa9dd5c28de78c1c3d932d6",
       "images": [
-        "assets/images/chapters/nervous-tissue/figura-10-5-sursa-2022.webp",
-        "assets/images/chapters/nervous-tissue/figura-10-6-sursa-2022.webp",
-        "assets/images/chapters/nervous-tissue/figura-10-7-sursa-2022.webp",
-        "assets/images/chapters/nervous-tissue/figura-10-8-sursa-2022.webp"
+        "assets/images/chapters/nervous-tissue/figura-10-5-color.jpg",
+        "assets/images/chapters/nervous-tissue/figura-10-6-color.jpg",
+        "assets/images/chapters/nervous-tissue/figura-10-7-color.jpg",
+        "assets/images/chapters/nervous-tissue/figura-10-8-color.jpg"
       ],
       "tables": [
         "c7e367461a020aa110594e1964cdedb22d2bc5cfeb659e3786b9c2a7856c2f43"
@@ -413,7 +413,7 @@
       "id": "page-sinapsa",
       "text": "40da69b2df5e2d8b40d7d9d36d5f8b1751212c3c5c042b9613140599046a2ae8",
       "images": [
-        "assets/images/chapters/nervous-tissue/figura-10-9-sursa-2022.webp"
+        "assets/images/chapters/nervous-tissue/figura-10-9-color.jpg"
       ],
       "tables": [
         "13daa33311ec2d8ecce6588dfd1f7d5a8e7c6276063f302c906d109771049c18"
@@ -423,10 +423,10 @@
   "organele_de_simt.html": [
     {
       "id": "page-ochiul-si-vederea",
-      "text": "ac3d1c6ef05014e3f211195f043a352615963d6edc32b2d0cab9c93f66d65b67",
+      "text": "f24bfab12a6f26467baf4726f22d98455215dbc3a18ccc4b70163eb6e8fd9d06",
       "images": [
-        "assets/images/chapters/sense-organs/figura-12-1-sursa-2022.webp",
-        "assets/images/chapters/sense-organs/figura-12-2-sursa-2022.webp"
+        "assets/images/chapters/sense-organs/figura-12-1-color.jpg",
+        "assets/images/chapters/sense-organs/figura-12-2-color.jpg"
       ],
       "tables": [
         "7b0bb286347d4a1bc08e8bb43de00a67963ed44f4ae437e946bf4db4daed11c7",
@@ -437,19 +437,19 @@
       "id": "page-urechea-si-auzul",
       "text": "f7a997a6bc727f4ca13ca0399f59734c94487f55bb17fb1cd3bf11326203b516",
       "images": [
-        "assets/images/chapters/sense-organs/figura-12-3-sursa-2022.webp",
-        "assets/images/chapters/sense-organs/figura-12-4-sursa-2022.webp"
+        "assets/images/chapters/sense-organs/figura-12-3-color.jpg",
+        "assets/images/chapters/sense-organs/figura-12-4-color.jpg"
       ],
       "tables": []
     },
     {
       "id": "page-alte-simturi",
-      "text": "52a6937aa0aa78e1593dec1de74264d1f383730d4a9411b1beb551062202dbcc",
+      "text": "7229830d835bd3094421aa00b321aabfa0e3cfd04c516aec433bb75f8aa66070",
       "images": [
-        "assets/images/chapters/sense-organs/figura-12-5-sursa-2022.webp",
-        "assets/images/chapters/sense-organs/figura-12-6-sursa-2022.webp",
-        "assets/images/chapters/sense-organs/figura-12-7-sursa-2022.webp",
-        "assets/images/chapters/sense-organs/figura-12-8-sursa-2022.webp"
+        "assets/images/chapters/sense-organs/figura-12-5-color.jpg",
+        "assets/images/chapters/sense-organs/figura-12-6-color.jpg",
+        "assets/images/chapters/sense-organs/figura-12-7-color.jpg",
+        "assets/images/chapters/sense-organs/figura-12-8-color.jpg"
       ],
       "tables": []
     }
@@ -459,7 +459,7 @@
       "id": "page-descrierea-generala-a-hormonilor",
       "text": "983200f44ffc6db53ba46f8f9e9e861acb832a4dcde1c222317fceffdb159b6f",
       "images": [
-        "assets/images/chapters/sistemul-endocrin/figura-13-1.webp"
+        "assets/images/chapters/sistemul-endocrin/figura-13-1-color.jpg"
       ],
       "tables": [
         "fcf4f5fd6c7fbcdff1c80874bd121862aa80c56814d86833a754898799b6e813"
@@ -469,8 +469,8 @@
       "id": "page-hipofiza-glanda-pituitara",
       "text": "ce34daf0c7530c2e8bcc97a4b9c8421c354b4900c2d0ecac545e4f0d083cfd06",
       "images": [
-        "assets/images/chapters/sistemul-endocrin/figura-13-2.webp",
-        "assets/images/chapters/sistemul-endocrin/figura-13-3.webp"
+        "assets/images/chapters/sistemul-endocrin/figura-13-2-color.jpg",
+        "assets/images/chapters/sistemul-endocrin/figura-13-3-color.jpg"
       ],
       "tables": [
         "3693f6a53878565e5f4ac8f177622225091458b6cb38a1bed786372a8efff79c"
@@ -480,7 +480,7 @@
       "id": "page-glanda-tiroida",
       "text": "cf11f68879856c7c7276ea4281d3bd51e51433e46bcd8b9fe352fe555181499f",
       "images": [
-        "assets/images/chapters/sistemul-endocrin/figura-13-4.webp"
+        "assets/images/chapters/sistemul-endocrin/figura-13-4-color.jpg"
       ],
       "tables": [
         "e815c3c966ce49617d172a0cf6dba60f76d4f900fc5ff88f87b713b7b0cbeadd"
@@ -490,6 +490,7 @@
       "id": "page-glandele-paratiroide",
       "text": "e99f07ddff37171ba45f40799f007341750bc4653ef5a86b68e4112f53b7c79e",
       "images": [
+        "assets/images/chapters/sistemul-endocrin/figura-13-5-color.jpg",
         "assets/images/chapters/sistemul-endocrin/figura-13-5.webp"
       ],
       "tables": []
@@ -498,8 +499,8 @@
       "id": "page-pancreasul",
       "text": "2e187bc6db49473405ffde513c4b1b0722e9c0870402e852333fe9e7879e1eb6",
       "images": [
-        "assets/images/chapters/sistemul-endocrin/figura-13-6.webp",
-        "assets/images/chapters/sistemul-endocrin/figura-13-7.webp"
+        "assets/images/chapters/sistemul-endocrin/figura-13-6-color.jpg",
+        "assets/images/chapters/sistemul-endocrin/figura-13-7-color.jpg"
       ],
       "tables": []
     },
@@ -507,7 +508,7 @@
       "id": "page-glandele-suprarenale",
       "text": "4daca27d8af513a2fe4f6c4fab786d58d37f5a1e687a6ab5ac7862fee673c46c",
       "images": [
-        "assets/images/chapters/sistemul-endocrin/figura-13-8.webp"
+        "assets/images/chapters/sistemul-endocrin/figura-13-8-color.jpg"
       ],
       "tables": []
     },
@@ -515,7 +516,7 @@
       "id": "page-alte-glande-endocrine",
       "text": "596ed4fc1ed21a118a8c1057b498c8e471b576ba2ae34be891779da363065e9b",
       "images": [
-        "assets/images/chapters/sistemul-endocrin/figura-13-9.webp"
+        "assets/images/chapters/sistemul-endocrin/figura-13-9-color.jpg"
       ],
       "tables": []
     }
@@ -525,7 +526,7 @@
       "id": "page-functiile-sangelui",
       "text": "42a8f5779e7ff0d1f0965fe616492a22ce18be09ad8b438994c1b6162a349bc1",
       "images": [
-        "assets/images/chapters/sangele/figura-14-1.webp"
+        "assets/images/chapters/sangele/figura-14-1-color.jpg"
       ],
       "tables": []
     },
@@ -539,10 +540,10 @@
     },
     {
       "id": "page-globulele-rosii",
-      "text": "fc217932866434db9122090e8c800da4053aabea8649dc55db33818e51d3b92c",
+      "text": "5141fbd1b0b2cf4990c269709ec4cc0f7c15bc6f69f98a84e19fa7feb869d680",
       "images": [
-        "assets/images/chapters/sangele/figura-14-2.webp",
-        "assets/images/chapters/sangele/figura-14-3.webp"
+        "assets/images/chapters/sangele/figura-14-2-color.jpg",
+        "assets/images/chapters/sangele/figura-14-3-color.jpg"
       ],
       "tables": []
     },
@@ -550,7 +551,7 @@
       "id": "page-grupele-sanguine",
       "text": "109c59a5212d4f7b25f17d630090e51b9999b66c16663e8233aeeddb1872c056",
       "images": [
-        "assets/images/chapters/sangele/figura-14-4.webp"
+        "assets/images/chapters/sangele/figura-14-4-color.jpg"
       ],
       "tables": []
     },
@@ -558,7 +559,7 @@
       "id": "page-globulele-albe",
       "text": "6a5daf74137baeaccc0c16914ff45f2730a2a37ede0d14308511efbd0e516958",
       "images": [
-        "assets/images/chapters/sangele/figura-14-5.webp"
+        "assets/images/chapters/sangele/figura-14-5-color.jpg"
       ],
       "tables": [
         "8579c0407ae85a926c5bc21f1319b28c1b2269dc6a3b61946adb4e5cc32a943c",
@@ -569,7 +570,7 @@
       "id": "page-plachetele-sanguine",
       "text": "e02d91fb54f3adc4a55cb4663a1880d18689545ce2dbd9151dd8d1950ac944a4",
       "images": [
-        "assets/images/chapters/sangele/figura-14-6.webp"
+        "assets/images/chapters/sangele/figura-14-6-color.jpg"
       ],
       "tables": []
     },
@@ -577,7 +578,7 @@
       "id": "page-coagularea-sangelui",
       "text": "4b7dbabe355248f7c4ad70dc5482c022c94a356c097f6878ca49c10b3f71d5cc",
       "images": [
-        "assets/images/chapters/sangele/figura-14-7.webp"
+        "assets/images/chapters/sangele/figura-14-7-color.jpg"
       ],
       "tables": []
     }
@@ -587,7 +588,7 @@
       "id": "page-inima",
       "text": "b060a0a3e639fba2b442f766bae84b90e72bad8145be2c6c7e88ff04053aceaa",
       "images": [
-        "assets/images/chapters/sistemul-cardiovascular/figura-15-1.webp"
+        "assets/images/chapters/sistemul-cardiovascular/figura-15-1-color.jpg"
       ],
       "tables": []
     },
@@ -595,7 +596,7 @@
       "id": "page-cavitatile-si-vasele-inimii",
       "text": "e6d780171e0eea9e73acec3cc5943162b872491fc354a699deb3330d75efe8e6",
       "images": [
-        "assets/images/chapters/sistemul-cardiovascular/figura-15-2.webp"
+        "assets/images/chapters/sistemul-cardiovascular/figura-15-2-color.jpg"
       ],
       "tables": []
     },
@@ -603,7 +604,7 @@
       "id": "page-circulatia-sangelui-prin-inima",
       "text": "a81724fa1812bdd677f725151c6a1d70b807f63d8bc1a5ef8570e8a98ac869db",
       "images": [
-        "assets/images/chapters/sistemul-cardiovascular/figura-15-3.webp"
+        "assets/images/chapters/sistemul-cardiovascular/figura-15-3-color.jpg"
       ],
       "tables": []
     },
@@ -611,7 +612,7 @@
       "id": "page-valvele-cardiace",
       "text": "dabb4332efffc71dedeb6d3cd56c1005b97a8e4682452d3fef8ccca768851365",
       "images": [
-        "assets/images/chapters/sistemul-cardiovascular/figura-15-4.webp"
+        "assets/images/chapters/sistemul-cardiovascular/figura-15-4-color.jpg"
       ],
       "tables": [
         "2dd440786123d144bf2a16617e8ea833d1407f5774e9bc45f195dd8b75f37a5d"
@@ -621,7 +622,7 @@
       "id": "page-circulatia-coronariana",
       "text": "86cf2522a1eec9cbed673fefcff5f35c95ae53b46594be4bddef3e574b44d3f2",
       "images": [
-        "assets/images/chapters/sistemul-cardiovascular/figura-15-5.webp"
+        "assets/images/chapters/sistemul-cardiovascular/figura-15-5-color.jpg"
       ],
       "tables": []
     },
@@ -629,8 +630,8 @@
       "id": "page-muschiul-cardiac",
       "text": "ca159dd0727fc0845a300a15910e0fe696ae3ec3ed0d7cf57b100b0576f45a1e",
       "images": [
-        "assets/images/chapters/sistemul-cardiovascular/figura-15-6.webp",
-        "assets/images/chapters/sistemul-cardiovascular/figura-15-7.webp"
+        "assets/images/chapters/sistemul-cardiovascular/figura-15-6-color.jpg",
+        "assets/images/chapters/sistemul-cardiovascular/figura-15-7-color.jpg"
       ],
       "tables": []
     },
@@ -642,9 +643,10 @@
     },
     {
       "id": "page-vasele-sanguine",
-      "text": "c93f3f40269e23079dc4d14e33dd90ae4835d971b860f766913e0ae55cae388c",
+      "text": "f469b2c9e7bc528923f9c5363dce1f8fced45eb0c0828852235a8d2b7b564456",
       "images": [
-        "assets/images/chapters/sistemul-cardiovascular/figura-15-8.webp"
+        "assets/images/chapters/sistemul-cardiovascular/figura-15-8a-color.jpg",
+        "assets/images/chapters/sistemul-cardiovascular/figura-15-8b-color.jpg"
       ],
       "tables": [
         "75b942fd515576f80255ea417108ffd0f8dcc673dc67d9973124701187cecc33"
@@ -654,9 +656,9 @@
       "id": "page-tipuri-de-circulatie-sanguina",
       "text": "f7ff30ad8e205f4a75a1b15c3ece0b6f64bbc27a35913799375ac49d533d9a07",
       "images": [
-        "assets/images/chapters/sistemul-cardiovascular/figura-15-9.webp",
-        "assets/images/chapters/sistemul-cardiovascular/figura-15-10.webp",
-        "assets/images/chapters/sistemul-cardiovascular/figura-15-11.webp"
+        "assets/images/chapters/sistemul-cardiovascular/figura-15-9-color.jpg",
+        "assets/images/chapters/sistemul-cardiovascular/figura-15-10-color.jpg",
+        "assets/images/chapters/sistemul-cardiovascular/figura-15-11-color.jpg"
       ],
       "tables": []
     }
@@ -666,7 +668,7 @@
       "id": "page-sistemul-limfatic",
       "text": "edd2081f9230d9fc8659636323a4f2a8dc885c7dc7e04bc8fedd3d17562c7fe0",
       "images": [
-        "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-1.webp"
+        "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-1-color.jpg"
       ],
       "tables": []
     },
@@ -674,9 +676,9 @@
       "id": "page-nodulii-limfatici",
       "text": "b94bc12c7ae9f92c56f6eb8f9400237b8d67cf36c8c129c828c3c8c174a9af45",
       "images": [
-        "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-2.webp",
-        "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-3.webp",
-        "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-4.webp"
+        "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-2-color.jpg",
+        "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-3-color.jpg",
+        "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-4-color.jpg"
       ],
       "tables": [
         "746fe58bbe913e445493b04f3031a4995e346dd7a12beb194acd3cca3c18437b"
@@ -692,7 +694,7 @@
       "id": "page-splina",
       "text": "8f23c738ade70e53abdece79f042a2da71aa4d7d28762ec07d4dcd89d9b12678",
       "images": [
-        "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-5.webp"
+        "assets/images/chapters/sistemul-limfatic-si-imun/figura-16-5-color.jpg"
       ],
       "tables": []
     },
@@ -714,11 +716,11 @@
       "id": "page-anatomie",
       "text": "bbba87ccaa924b3d5e3fa29130b27c1d752c8e3ef6c8302337994a457405fe46",
       "images": [
-        "assets/images/chapters/respiratory-system/figura-17-1-barrons.webp",
-        "assets/images/chapters/respiratory-system/figura-17-2-barrons.webp",
-        "assets/images/chapters/respiratory-system/figura-17-3-barrons.webp",
-        "assets/images/chapters/respiratory-system/figura-17-4-barrons.webp",
-        "assets/images/chapters/respiratory-system/figura-17-5-barrons.webp"
+        "assets/images/chapters/respiratory-system/figura-17-1-color.jpg",
+        "assets/images/chapters/respiratory-system/figura-17-2-color.jpg",
+        "assets/images/chapters/respiratory-system/figura-17-3-color.jpg",
+        "assets/images/chapters/respiratory-system/figura-17-4-color.jpg",
+        "assets/images/chapters/respiratory-system/figura-17-5-color.jpg"
       ],
       "tables": [
         "5ad83d2cf0ac14137ad0abdb5cfdc77aaa250ba8e89333752fdbb7754641b3e1"
@@ -728,17 +730,17 @@
       "id": "page-respiratie",
       "text": "7bcc75376d4650eb968aa59f1b42ea055d0158b4951a0d7b40e26fbecde7ac52",
       "images": [
-        "assets/images/chapters/respiratory-system/figura-17-6-barrons.webp",
-        "assets/images/chapters/respiratory-system/figura-17-7-barrons.webp"
+        "assets/images/chapters/respiratory-system/figura-17-6-color.jpg",
+        "assets/images/chapters/respiratory-system/figura-17-7-color.jpg"
       ],
       "tables": []
     },
     {
       "id": "page-schimbul-de-gaze",
-      "text": "238c0653ff6f2fe2ef4dc575d289aedf99146e845c474926e0e05e4a8468c3e5",
+      "text": "a9947e88679fbc19f84f66c7a765290a987dec541e9df5be8b0f1b0b7356c99f",
       "images": [
-        "assets/images/chapters/respiratory-system/figura-17-8-barrons.webp",
-        "assets/images/chapters/respiratory-system/figura-17-9-barrons.webp"
+        "assets/images/chapters/respiratory-system/figura-17-8-color.jpg",
+        "assets/images/chapters/respiratory-system/figura-17-9-color.jpg"
       ],
       "tables": []
     }
@@ -754,10 +756,10 @@
       "id": "page-tractul-gastrointestinal",
       "text": "377e9b5245db686adca5168cac2adab9017981ce6340e691e2263a0156e744d5",
       "images": [
-        "assets/images/chapters/digestive-system/figura-18-1-barrons.webp",
-        "assets/images/chapters/digestive-system/figura-18-2-barrons.webp",
-        "assets/images/chapters/digestive-system/figura-18-3-barrons.webp",
-        "assets/images/chapters/digestive-system/figura-18-4-barrons.webp"
+        "assets/images/chapters/digestive-system/figura-18-1-color.jpg",
+        "assets/images/chapters/digestive-system/figura-18-2-color.jpg",
+        "assets/images/chapters/digestive-system/figura-18-3-color.jpg",
+        "assets/images/chapters/digestive-system/figura-18-4-color.jpg"
       ],
       "tables": [
         "1ca656400e03f739c5e721950aa2f6e85250a55bc06a2ffdf7e38ca361f29b31",
@@ -768,7 +770,7 @@
       "id": "page-stomacul",
       "text": "d74218838dd56b88a69f93664ff4703cf7ae55c55c61dea0ef37c8cc3b8d67fb",
       "images": [
-        "assets/images/chapters/digestive-system/figura-18-5-barrons.webp"
+        "assets/images/chapters/digestive-system/figura-18-5-color.jpg"
       ],
       "tables": [
         "296010b08244820273e55e1f30b8a6febef7ccefec8cd7d48ad8b6c61a8e20fe"
@@ -778,9 +780,9 @@
       "id": "page-intestinele",
       "text": "0ba2bdbbf7a678dede011037269d0554e48268c9b1efd66c8bc2ed28390801d0",
       "images": [
-        "assets/images/chapters/digestive-system/figura-18-6-barrons.webp",
-        "assets/images/chapters/digestive-system/figura-18-7-barrons.webp",
-        "assets/images/chapters/digestive-system/figura-18-8-barrons.webp"
+        "assets/images/chapters/digestive-system/figura-18-6-color.jpg",
+        "assets/images/chapters/digestive-system/figura-18-7-color.jpg",
+        "assets/images/chapters/digestive-system/figura-18-8-color.jpg"
       ],
       "tables": [
         "51fa4a260b27da5585893fdc43a7c173831fcd0fbbb6e027f3c62180121ca661"
@@ -788,10 +790,11 @@
     },
     {
       "id": "page-organele-anexe",
-      "text": "758422065bcbed5ecfc303263ca27d2d9525e6546c85def13a55d498397bdb8c",
+      "text": "071627e3cbd96bb7b78a85f0d8b09baec58a1433694267e36d6d20059241ebc4",
       "images": [
-        "assets/images/chapters/digestive-system/figura-18-9-barrons.webp",
-        "assets/images/chapters/digestive-system/figura-18-10-barrons.webp"
+        "assets/images/chapters/digestive-system/figura-18-9-color.jpg",
+        "assets/images/chapters/digestive-system/figura-18-10-color.jpg",
+        "assets/images/chapters/digestive-system/schema-recapitulare-color.jpg"
       ],
       "tables": []
     }
@@ -808,7 +811,7 @@
       "text": "244dfcbf43438bac683bf1d1635201d7e7c1ccd2b968b03114f621b500a5c499",
       "images": [
         "assets/images/chapters/metabolism-nutrition/figura-19-1-barrons.webp",
-        "assets/images/chapters/metabolism-nutrition/figura-19-8-barrons.webp"
+        "assets/images/chapters/metabolism-nutrition/figura-19-8-color.jpg"
       ],
       "tables": [
         "4eb0b35af7d26a7778d59c2550ba936bcde1933891bb88c4580bf547337a8cd6"
@@ -816,9 +819,9 @@
     },
     {
       "id": "page-lipide-si-proteine",
-      "text": "57cbc8261762afc54ee79506497a99148dc249a15abd92b02b54e7d46f0e61a1",
+      "text": "b00d6d305e527ec6428dd767de056ae3b36af9c88fe984bde47e5787056992f7",
       "images": [
-        "assets/images/chapters/metabolism-nutrition/figura-19-9-barrons.webp"
+        "assets/images/chapters/metabolism-nutrition/figura-19-9-color.jpg"
       ],
       "tables": []
     },
@@ -826,7 +829,7 @@
       "id": "page-stari-si-minerale",
       "text": "c90a48d7b5eb92ece35c4a86e98393f1c311fa4e8280096d5779535598077ee2",
       "images": [
-        "assets/images/chapters/metabolism-nutrition/figura-19-11-barrons.webp"
+        "assets/images/chapters/metabolism-nutrition/figura-19-11-color.jpg"
       ],
       "tables": []
     },
