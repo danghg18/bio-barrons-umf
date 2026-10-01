@@ -12,7 +12,7 @@ export async function loadSiteRegistry(rootUrl = new URL('../', import.meta.url)
 
 export function publishedResources(registry) {
   const chapters = registry.CHAPTERS.filter(chapter => chapter.done && chapter.url);
-  const resources = chapters.flatMap(chapter => chapter.resources || []);
+  const resources = chapters.flatMap(chapter => (chapter.resources || []).filter(resource => resource.done !== false));
   const collections = (registry.BIO_SITE.quizCollections || []).filter(item => item.done);
   const numbers = new Set(registry.CHAPTERS.map(chapter => chapter.num));
   const urls = new Set([...chapters, ...resources, ...(registry.BIO_SITE.pages || [])].map(item => item.url));

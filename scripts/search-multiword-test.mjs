@@ -36,7 +36,7 @@ try {
   for(const file of ['celula_si_fiziologia_celulara.html', 'sistemul_renal_complet.html', 'sistemul_reproducator_masculin.html']){
     await page.route('**/' + file + '*', async route => {
       const response = await route.fetch();
-      const html = (await response.text()).replace(/<(?:div|section)[^>]*class="[^"]*page-section[^>]*>/, '$&' + fixture);
+      const html = (await response.text()).replace(/<(?:div|section)(?![^>]*data-lesson-redirect)[^>]*class="[^"]*page-section[^>]*>/, '$&' + fixture);
       await route.fulfill({response, body:html});
     });
   }

@@ -4,7 +4,7 @@ import vm from 'node:vm';
 const disk=new Map(), document=new EventTarget(), window=new EventTarget();
 Object.assign(window,{localStorage:{getItem:k=>disk.get(k)??null,setItem:(k,v)=>disk.set(k,v),removeItem:k=>disk.delete(k),key:i=>[...disk.keys()][i],get length(){return disk.size;}}});
 const context={window,document,CustomEvent,Date,JSON,Map,Set,navigator:{locks:{request:async(_,fn)=>fn()}},crypto:globalThis.crypto};
-for(const file of ['user-storage','simulation-core','simulation-store']){
+for(const file of ['personal-records','user-storage','simulation-core','simulation-store']){
  try{vm.runInNewContext(await readFile(new URL(`../assets/js/${file}.js`,import.meta.url),'utf8'),context);}catch(e){if(e.code!=='ENOENT')throw e;}
 }
 const storage=window.BBUserStorage, store=window.BBSimulationStore, core=window.BBSimulationCore;
@@ -21,13 +21,14 @@ run=await store.update(run.id,run.revision,'guest',{type:'finish'});assert.equal
 const frozen=JSON.stringify(run);
 await assert.rejects(store.update(run.id,run.revision,'guest',{type:'answer',index:0,selected:['A','B']}),/predat/);
 assert.equal(JSON.stringify(store.get(run.id)),frozen);
-storage.activate('alice');assert.equal(store.list().length,0);assert.equal(store.get(guestId),null);
+storage.activate('alice');assert.equal(store.list().length,1);assert.equal(store.get(guestId).id,guestId);
 let own=await store.create(make(),'alice');storage.hydrate({});
-assert.equal(Object.keys(storage.snapshot().pending).filter(k=>k.startsWith('bb.simulation.')).length,0,'Local tests must not become cloud outbox rows after hydration');
+assert.equal(Object.keys(storage.snapshot().pending).filter(k=>k.startsWith('bb.simulation.')).length,2,'Real local simulations are queued for cloud migration');
 storage.hydrate({['bb.simulation.v1:'+own.id]:{version:99}});assert.equal(store.get(own.id).version,1,'Cloud cannot overwrite local simulations');
 storage.activate('bob');await assert.rejects(store.update(own.id,0,'alice',{type:'finish'}),/contul/);
 storage.activate('guest');assert.equal(store.list().length,1);
 let timed=make();timed.deadline=Date.now()-1000;timed=await store.create(timed,'guest');
 timed=await store.update(timed.id,timed.revision,'guest',{type:'answer',index:0,selected:['A','B']});
 assert.equal(timed.status,'completed');assert.equal(timed.result.points,0);assert.equal(timed.completedAt,timed.deadline);
-console.log('Simulation storage: owner isolation, local-only hydration, stale writes, immutable submission and expired deadline passed.');
+await store.remove(timed.id,'guest');assert.equal(store.get(timed.id),null);assert.equal(storage.get('bb.simulation.v1:'+timed.id).deleted,true);
+console.log('Simulation storage: owner isolation, cloud migration, stale writes, immutable submission and expired deadline passed.');

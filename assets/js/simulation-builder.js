@@ -22,10 +22,18 @@
       const names=[...new Set(run.questions.map(q=>q.chapterName))].join(', ');
       const expired=run.status==='active' && run.deadline!==null && Date.now()>=run.deadline;
       const state=run.status==='completed'?'Nota '+ui.number(run.result.grade):expired?'Timp expirat':'În desfășurare';
-      return '<a class="sim-history-row" href="simulare.html?test='+encodeURIComponent(run.id)+'"><span><strong>'+new Date(run.startedAt).toLocaleString('ro-RO',{dateStyle:'medium',timeStyle:'short'})+'</strong><small>'+ui.html(names)+'</small></span><span>'+state+'<small>'+(run.status==='completed'||expired?'Vezi rezultatul':'Continuă testul')+' <span aria-hidden="true">↗</span></small></span></a>';
+      return '<div class="sim-history-entry"><a class="sim-history-row" href="simulare.html?test='+encodeURIComponent(run.id)+'"><span><strong>'+new Date(run.startedAt).toLocaleString('ro-RO',{dateStyle:'medium',timeStyle:'short'})+'</strong><small>'+ui.html(names)+'</small></span><span>'+state+'<small>'+(run.status==='completed'||expired?'Vezi rezultatul':'Continuă testul')+' <span aria-hidden="true">↗</span></small></span></a><button type="button" class="sim-link-button" data-delete-simulation="'+ui.html(run.id)+'" aria-label="Șterge simularea din '+ui.html(new Date(run.startedAt).toLocaleString('ro-RO'))+'">Șterge</button></div>';
     }).join('') || '<p>Nu ai încă simulări. Prima va apărea aici.</p>';
     $('sim-history-more').hidden=runs.length<=historyLimit;
   }
+  $('sim-history-list').addEventListener('click',async event=>{
+    const button=event.target.closest('[data-delete-simulation]');
+    if(!button)return;
+    const owner=storage.owner();
+    if(!window.confirm('Ștergi această simulare și răspunsurile ei din cont și de pe dispozitivele sincronizate? Celelalte simulări, grilele, statisticile și notițele rămân neschimbate.'))return;
+    try {await store.remove(button.dataset.deleteSimulation,owner);history();}
+    catch(error){$('sim-builder-error').hidden=false;$('sim-builder-error').textContent=error.message;}
+  });
   $('simulation-form').addEventListener('change',configure);
   $('sim-select-all').addEventListener('click',()=>{const all=chosen().length===entries.length;root.querySelectorAll('[name="simulation-chapter"]').forEach(input=>input.checked=!all);configure();});
   $('sim-history-more').addEventListener('click',()=>{historyLimit+=5;history();});

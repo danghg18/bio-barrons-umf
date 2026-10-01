@@ -318,6 +318,7 @@
         !!(state.searchRoot && state.searchRoot.classList.contains("open"));
       state.suppressNextRouteFocus = false;
       var result = originalGoto.apply(this, arguments);
+      target = getActiveSectionId();
 
       if (prefersReducedMotion()) {
         window.scrollTo({ top: 0, behavior: "auto" });
@@ -1075,7 +1076,7 @@
     });
 
     var highlighterButton = ensureButton("nav-hl-btn", "Highlighter", "bb-highlighter-palette");
-    highlighterButton.innerHTML = highlighterIcon() + '<span id="nav-hl-label">Highlighter</span>';
+    highlighterButton.innerHTML = highlighterIcon() + '<span id="nav-hl-label">Highlighter</span><span class="bb-highlighter-state" aria-hidden="true">Oprit</span>';
     highlighterButton.setAttribute("aria-haspopup", "true");
     highlighterButton.addEventListener("click", function () {
       setHighlighterPaletteOpen(!state.highlighterPaletteOpen);
@@ -1107,8 +1108,9 @@
     palette.className = "bb-highlighter-palette";
     palette.hidden = true;
     palette.innerHTML =
-      '<div class="bb-highlighter-palette-head"><span>Alege culoarea</span><button class="bb-highlighter-disable" type="button">Oprește</button></div>' +
-      '<div class="bb-highlighter-colors" role="group" aria-label="Culoare evidențiator"></div>';
+      '<div class="bb-highlighter-palette-head"><span>Culoare <span class="bb-highlighter-color-name">Galben</span></span><button class="bb-highlighter-disable" type="button">Oprește</button></div>' +
+      '<div class="bb-highlighter-colors" role="group" aria-label="Culoare evidențiator"></div>' +
+      '<p class="bb-highlighter-hint">Alege o culoare, apoi selectează textul.</p>';
 
     var colorsRoot = palette.querySelector(".bb-highlighter-colors");
     HIGHLIGHTER_COLORS.forEach(function (color) {
@@ -1119,7 +1121,7 @@
       button.setAttribute("aria-label", color.label);
       button.setAttribute("aria-pressed", "false");
       button.title = color.label;
-      button.innerHTML = '<span class="bb-highlighter-check" aria-hidden="true">✓</span>';
+      button.innerHTML = '<span class="bb-highlighter-swatch"><svg class="bb-highlighter-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 10 3 3 7-7"/></svg></span>';
       button.addEventListener("click", function () {
         setHighlighterColor(color.id);
         setHighlighterEnabled(true);
@@ -1143,6 +1145,7 @@
     var navButton = document.getElementById("nav-hl-btn");
     state.highlighterPaletteOpen = !!open && state.settingsOpen;
     if (palette) palette.hidden = !state.highlighterPaletteOpen;
+    if (palette && !state.highlighterPaletteOpen) palette.querySelectorAll('details[open]').forEach(function (details) { details.open = false; });
     if (navButton) navButton.setAttribute("aria-expanded", String(state.highlighterPaletteOpen));
     if (!state.highlighterPaletteOpen && restoreFocus && navButton) navButton.focus();
   }
@@ -1167,9 +1170,12 @@
       navButton.title = enabled
         ? "Highlighter activ · " + getHighlighterColorLabel(color)
         : "Alege culoarea pentru Highlighter";
+      var modeLabel = navButton.querySelector(".bb-highlighter-state");
+      if (modeLabel) modeLabel.textContent = enabled ? "Activ" : "Oprit";
     }
     if (!palette) return;
     palette.hidden = !state.highlighterPaletteOpen;
+    palette.querySelector(".bb-highlighter-color-name").textContent = getHighlighterColorLabel(color);
 
     var disable = palette.querySelector(".bb-highlighter-disable");
     if (disable) disable.hidden = !enabled;
@@ -1295,9 +1301,10 @@
         safeStorageSet("highlighterMode", state.highlighterEnabled ? "1" : "0");
         syncHighlighterUi();
       };
-      installSharedHighlighterSelection();
+      if (!window.BBLessonHighlights) installSharedHighlighterSelection();
     }
-    installHighlightColorObserver();
+    if (window.BBLessonHighlights) window.BBLessonHighlights.init(ensureHighlighterPalette());
+    else installHighlightColorObserver();
     syncHighlighterUi();
   }
 

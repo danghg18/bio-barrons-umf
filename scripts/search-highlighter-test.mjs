@@ -107,7 +107,7 @@ try {
       await page.goto(base + file, { waitUntil: 'domcontentloaded' });
       await page.waitForFunction(() => document.body.dataset.bbSharedReady === 'true');
       const routes = await page.evaluate(phrase => {
-        const sections = [...document.querySelectorAll('.page-section')];
+        const sections = [...document.querySelectorAll('.page-section:not([data-lesson-redirect])')];
         const targets = [sections[0], sections[1]];
         // Controlled, unique text in real routes makes exact ordering/counts
         // independent of ongoing educational-content edits by other agents.
@@ -173,7 +173,7 @@ try {
       await page.keyboard.press('Escape');
       assert.equal(await page.locator('.search-found').count(), 0);
       await assertHighlights(page);
-      assert.deepEqual(await page.locator('.page-section').evaluateAll(sections => sections.map(section => section.textContent)), await page.evaluate(() => window.searchRegressionText));
+      assert.deepEqual(await page.locator('.page-section:not([data-lesson-redirect])').evaluateAll(sections => sections.map(section => section.textContent)), await page.evaluate(() => window.searchRegressionText));
 
       await page.locator('.lesson-search-trigger').click();
       for (const query of ['RegBoundaryEnd', 'RegControlEnd', 'RegBreakEnd']) await search(page, query, '0 / 0');

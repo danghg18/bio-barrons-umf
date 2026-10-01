@@ -79,7 +79,7 @@ try {
     await page.goto(`${base}${file}`, { waitUntil:'domcontentloaded' });
     await page.waitForFunction(() => document.body.dataset.bbSharedReady === 'true');
     const state = await page.evaluate(() => ({
-      routes:[...document.querySelectorAll('.page-section[id^="page-"]')].map(node => node.id.slice(5)),
+      routes:[...document.querySelectorAll('.page-section[id^="page-"]:not([data-lesson-redirect])')].map(node => node.id.slice(5)),
       defaultRoute:document.querySelector('.page-section.active')?.id.slice(5),
       activeCount:document.querySelectorAll('.page-section.active').length
     }));

@@ -13,9 +13,10 @@ try{
  const context=await browser.newContext({viewport:{width:390,height:844},serviceWorkers:'block',reducedMotion:'reduce'});const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
  const ready=()=>page.waitForFunction(()=>document.body.dataset.analyticsReady==='true');
  await page.goto(base+'testare.html');await ready();
- assert.equal(await page.locator('.testing-chapter-row:visible').count(),17,'Start with actionable tests, preserving the full curriculum behind a filter');
- await page.getByRole('button',{name:'Toate capitolele',exact:true}).click();assert.equal(await page.locator('.testing-chapter-row:visible').count(),17);
- await page.getByRole('button',{name:'Disponibile',exact:true}).click();assert.equal(await page.locator('.testing-chapter-row:visible').count(),17);
+ assert.equal(await page.locator('.testing-chapter-row:visible').count(),17,'Show all 17 chapter tests without a catalog filter');
+ assert.equal(await page.getByRole('group',{name:'Capitole afișate',exact:true}).count(),0);
+ assert.equal(await page.locator('[data-catalog-filter]').count(),0);
+ assert.equal(await page.locator('.testing-chapter-row:visible').count(),17);
  assert.equal(await page.locator('#testing-preview-summary strong').innerText(),'0');
  await page.locator('.testing-intro a[href="#lab-testing-catalog"]').click();
  assert.equal(new URL(page.url()).hash,'#lab-testing-catalog');
@@ -48,7 +49,7 @@ try{
  await historical.goto(base+'statistici.html');await historical.waitForFunction(()=>document.body.dataset.analyticsReady==='true');
  await historical.evaluate(async()=>{
   const q=BB_QUIZ_INDEX[0],a=BBQuizAnalytics;await a.recordAttempt({storageKey:q.storageKey,questionId:q.questions[0].id,attemptId:a.newAttemptId(),correct:true,selected:q.questions[0].correct});
-  await new Promise((resolve,reject)=>{const request=indexedDB.open('bb.quiz.analytics.v1',2);request.onerror=()=>reject(request.error);request.onsuccess=()=>{const db=request.result,tx=db.transaction('attempts','readwrite'),store=tx.objectStore('attempts');store.getAll().onsuccess=event=>{for(const attempt of event.target.result){const date=new Date();date.setDate(date.getDate()-45);attempt.at=date.toISOString();store.put(attempt);}};tx.oncomplete=()=>{db.close();resolve();};tx.onerror=()=>reject(tx.error);};});
+  await new Promise((resolve,reject)=>{const request=indexedDB.open('bb.quiz.analytics.v1',2);request.onerror=()=>reject(request.error);request.onsuccess=()=>{const db=request.result,tx=db.transaction('attempts','readwrite'),store=tx.objectStore('attempts');store.getAll().onsuccess=event=>{for(const attempt of event.target.result){const date=new Date();date.setDate(date.getDate()-45);attempt.at=date.toISOString();BBUserStorage.set('bb.analytics.v1:attempt:'+attempt.id,{version:1,...attempt});store.put(attempt);}};tx.oncomplete=()=>{db.close();resolve();};tx.onerror=()=>reject(tx.error);};});
  });
  await historical.goto(base+'statistici.html?perioada=30');await historical.waitForFunction(()=>document.body.dataset.analyticsReady==='true');
  assert.equal(await historical.locator('#analytics-onboarding').isVisible(),false,'Older history must not be mistaken for a new student');
@@ -59,5 +60,5 @@ try{
  assert.equal(await page.locator('#testing-activity svg').isVisible(),true,'The restored activity preview shows recorded answers');
  assert.equal(await page.locator('#testing-activity tbody tr td').first().textContent(),'1','Activity counts the real verification from this study session');
  const intro=await page.locator('.testing-intro').boundingBox(),preview=await page.locator('.testing-preview').boundingBox();assert.ok(preview.x>intro.x+intro.width,'Progress preview sits to the right of the introduction');
- assert.deepEqual(errors,[]);console.log('Study flow: available/all filters, empty/active/chapter analytics, real review links, legacy and shared lesson practice, mobile notes and responsive widths passed.');
+ assert.deepEqual(errors,[]);console.log('Study flow: unfiltered chapter catalog, empty/active/chapter analytics, real review links, legacy and shared lesson practice, mobile notes and responsive widths passed.');
 }finally{await browser.close();await new Promise(r=>server.close(r));}

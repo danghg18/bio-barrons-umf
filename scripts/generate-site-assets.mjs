@@ -4,6 +4,7 @@ import { extname, dirname } from 'node:path';
 import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
 import { loadSiteRegistry, publishedResources } from './site-registry.mjs';
+import { renderPublicMetadata } from './public-metadata.mjs';
 import { buildNotebookSections } from './notebook-sections.mjs';
 
 const root = new URL('../', import.meta.url);
@@ -79,7 +80,7 @@ async function validateTopics(quiz) {
 
 const quizOwners = chapters.concat(collections.map(item => ({...item, collection:true, resources:[item]})));
 for (const chapter of quizOwners) {
-  for (const resource of (chapter.resources || []).filter(item => item.kind === 'quiz')) {
+  for (const resource of (chapter.resources || []).filter(item => item.kind === 'quiz' && item.done !== false)) {
     const htmlUrl = new URL(resource.url, root);
     const html = await readFile(htmlUrl, 'utf8');
     const scripts = [...html.matchAll(/\bsrc=["']([^"']*grile-[^"']+-data\.js(?:\?[^"']*)?)["']/gi)];
@@ -132,6 +133,12 @@ for (const key of Object.keys(topicRegistry)) if (!storageKeys.has(key)) throw n
 if (process.argv.includes('--validate-quiz-topics')) {
   console.log(`Validated quiz topics: ${quizIndex.length} quizzes, ${quizIndex.reduce((total, quiz) => total + quiz.questions.length, 0)} questions`);
   process.exit(0);
+}
+// Reconcile public catalog availability and metadata before hashing HTML.
+for (const file of ['index.html', ...(registry.BIO_SITE.pages || []).map(p => p.url), ...chapters.map(c => c.url), ...resources.map(r => r.url)]) {
+  const html = await readFile(new URL(file, root), 'utf8');
+  const generated = renderPublicMetadata(html, file, registry, quizIndex);
+  if (generated !== html) await emit(file, generated);
 }
 for (const [path, bank] of simulationBanks) {
   const json = JSON.stringify(bank, null, 2);

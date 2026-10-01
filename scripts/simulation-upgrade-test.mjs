@@ -29,8 +29,8 @@ try{
  assert.equal(await page.evaluate(()=>!!window.__oldSimulationDependency),false);
  await page.getByLabel('Introducere în anatomie și fiziologie',{exact:true}).check();await page.getByRole('button',{name:'Începe simularea',exact:true}).click();await page.waitForURL(/simulare.html/);await page.waitForSelector('.sim-question');
  assert.equal(await page.evaluate(()=>!!window.__oldSimulationDependency),false);
- await page.evaluate(()=>{BBUserStorage.activate('upgrade-user');BBUserStorage.set('bb.simulation.v1:local-only',{example:true});BBUserStorage.hydrate({});});
- assert.equal(await page.evaluate(()=>Object.keys(BBUserStorage.snapshot().pending).some(key=>key.startsWith('bb.simulation.'))),false);
+ await page.evaluate(()=>{BBUserStorage.activate('upgrade-user');BBUserStorage.set('bb.simulation.v1:migration',{version:1,id:'migration',owner:'upgrade-user',status:'active'});BBUserStorage.hydrate({});});
+ assert.equal(await page.evaluate(()=>Object.keys(BBUserStorage.snapshot().pending).some(key=>key.startsWith('bb.simulation.'))),true);
  assert.ok(await page.evaluate(name=>caches.keys().then(keys=>keys.includes(name)),cacheName),'Original cache-first worker remains installed during first-visit verification');
- await context.close();console.log('Simulation upgrade: old installed cache-first worker cannot supply stale index/storage; local results never enter cloud outbox.');
+ await context.close();console.log('Simulation upgrade: old installed cache-first worker cannot supply stale index/storage; local results enter the new owner-scoped cloud outbox.');
 }finally{await browser.close();await new Promise(done=>server.close(done));}

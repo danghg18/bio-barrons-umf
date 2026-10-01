@@ -435,8 +435,9 @@
       '<p id="quiz-instruction" class="quiz-instruction">Bifează toate variantele care răspund cerinței.</p>' +
       '<p id="quiz-feedback-guide" class="quiz-feedback-guide">După verificare: <span class="quiz-key-selected">verde — corect bifat</span>; <span class="quiz-key-missed">galben — corect omis</span>; <span class="quiz-key-extra">roșu — bifat în plus</span>.</p>' +
       '<div id="quiz-map-key" class="quiz-map-legend"><span>○ Necompletată</span><span>◐ În lucru</span><span>✓ Corectă</span><span>× Greșită</span></div></div>';
-    root.appendChild(help);
-    document.getElementById('quiz-content').prepend(root);
+    var main = document.getElementById('quiz-content');
+    main.prepend(root);
+    main.appendChild(help);
   }
 
   function owner() { return window.BBUserStorage ? window.BBUserStorage.owner() : 'guest'; }
@@ -898,7 +899,7 @@
 
   function replacePracticeContent(html) {
     var main = document.getElementById('quiz-content');
-    main.querySelectorAll('.page-section, .quiz-overall-progress, .quiz-practice-loading').forEach(function (node) { node.remove(); });
+    main.querySelectorAll('.page-section, .quiz-overall-progress, .quiz-help, .quiz-practice-loading').forEach(function (node) { node.remove(); });
     main.insertAdjacentHTML('afterbegin', html);
   }
 

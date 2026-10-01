@@ -2,6 +2,8 @@
 (function () {
   'use strict';
   if (window.BBUserStorage) return;
+  const personal = window.BBPersonalRecords;
+  const personalKey = key => !!personal?.isKey(key);
   const index = window.BB_QUIZ_INDEX || [];
   const keys = ['bb.study.v1', ...index.map(q => q.storageKey)];
   const auxiliary = index.map(q => q.storageKey + '.attempts.v1');
@@ -111,13 +113,31 @@
   function get(key) { return clone(record(key).value); }
   function set(key, value) {
     if (read(ownerKey) && read(ownerKey) !== owner) return false;
-    const syncable = owner !== 'guest' && (keys.includes(key) || key.startsWith('note:'));
+    const syncable = owner !== 'guest' && (keys.includes(key) || key.startsWith('note:') || personalKey(key));
     // One atomic localStorage write owns one value and its pending revision.
     // Concurrent changes to distinct notes/quizzes cannot overwrite each other.
+    const old = record(key).value;
+    if (personalKey(key) && old?.deleted) value = personal.merge(key, old, value);
+    if (personalKey(key) && JSON.stringify(old) === JSON.stringify(value)) return true;
     putRecord(key, value, syncable ? revision() : null);
     mirror(key, value);
     announce('bb:cache-write', {key, owner});
     return true;
+  }
+  function importableGuestRecord(key, value, values) {
+    // A visitor's bulk clear is local to that identity. Import surviving records,
+    // never a command that would clear unrelated, already-existing account data.
+    if (key.startsWith('bb.highlight-clear.v1:') || key.startsWith('bb.analytics-clear.v1:')) return false;
+    if (value.deleted) return true;
+    const highlight = key.startsWith('bb.highlight.v1:');
+    const analytics = key.startsWith('bb.analytics.v1:');
+    if (!highlight && !analytics) return true;
+    const quiz = key.startsWith('bb.analytics.v1:metadata:') ? value.key : value.storageKey;
+    return Object.entries(values).every(([barrierKey, barrier]) => {
+      const applies = highlight ? barrierKey.startsWith('bb.highlight-clear.v1:') && (barrier.chapterNum === null || Number(barrier.chapterNum) === Number(value.chapterNum))
+        : barrierKey.startsWith('bb.analytics-clear.v1:') && (!barrier.quizKey || barrier.quizKey === quiz);
+      return !applies || (value.clearIds || []).includes(barrier.id);
+    });
   }
   function activate(id) {
     id = id || 'guest';
@@ -126,9 +146,15 @@
     const target = metadata(id);
     if (id !== 'guest' && !target.imported) {
       if (!guest.claimedBy) {
-        keys.forEach(key => {
+        const guestValues = vault('guest').values;
+        [...new Set([...keys, ...recordKeys('guest')])].forEach(key => {
           const saved = record(key, 'guest').value;
-          if (saved != null && record(key, id).value == null) putRecord(key, saved, null, id);
+          if (saved == null) return;
+          if (personalKey(key)) {
+            if (!importableGuestRecord(key,saved,guestValues)) return;
+            const imported = key.startsWith('bb.simulation.v1:') ? {...saved, owner:id} : saved;
+            putRecord(key, personal.merge(key, record(key,id).value, imported), revision(), id);
+          } else if (keys.includes(key) && record(key, id).value == null) putRecord(key, saved, null, id);
         });
         guest.claimedBy = id;
         saveMetadata(guest, 'guest');
@@ -155,10 +181,21 @@
     if (read(ownerKey) !== owner) return false;
     const all = new Set([...recordKeys(), ...Object.keys(remote)]);
     all.forEach(key => {
-      if (auxiliary.includes(key) || key.startsWith('bb.simulation.v1:')) return;
+      if (auxiliary.includes(key) || (!personalKey(key) && key.startsWith('bb.simulation.v1:'))) return;
       const incoming = remote[key];
       const saved = record(key);
       const local = saved.value;
+      if (personalKey(key)) {
+        if (local != null && local.version !== 1) { if (incoming != null) backup(key,incoming,'cloud-with-unsupported-local'); return; }
+        if (incoming != null && incoming.version !== 1) { backup(key, incoming, 'unsupported-cloud-version'); return; }
+        if (key.startsWith('bb.analytics.v1:attempt:') && local != null && incoming != null && personal.stable(local) !== personal.stable(incoming)) backup(key,local,'immutable-attempt-conflict');
+        const merged = personal.merge(key, local, incoming);
+        if (merged == null) return;
+        if (local != null && incoming != null && JSON.stringify(local) !== JSON.stringify(incoming) && key.startsWith('bb.simulation.v1:')) backup(key, local, 'device-before-merge');
+        const needsWrite = incoming == null || personal.stable(merged) !== personal.stable(incoming);
+        putRecord(key, merged, needsWrite ? (pendingRevision(key,saved) || revision()) : null);
+        return;
+      }
       if (pendingRevision(key, saved)) {
         if (incoming != null && JSON.stringify(incoming) !== JSON.stringify(local)) backup(key, incoming, 'cloud-before-pending-write');
         return;
@@ -172,6 +209,39 @@
     });
     mirrors();
     announce('bb:cache-change', {reason:'cloud'});
+  }
+  function entries(start = '') {
+    return Object.entries(vault().values).filter(([key]) => key.startsWith(start));
+  }
+  function canClaimGuestRecords() {
+    const claim = metadata('guest').claimedBy;
+    return owner !== 'guest' && read(ownerKey) === owner && (!claim || claim === owner);
+  }
+  function claimGuestRecords(records) {
+    if (!canClaimGuestRecords()) return false;
+    const guest = metadata('guest'); guest.claimedBy = owner; saveMetadata(guest,'guest');
+    const guestValues = vault('guest').values;
+    for (const [key,value] of Object.entries(records)) {
+      if (!personalKey(key) || !importableGuestRecord(key,value,guestValues)) continue;
+      const existing = get(key);
+      if (key.startsWith('bb.analytics.v1:attempt:') && existing != null) {
+        if (personal.stable(existing) !== personal.stable(value)) backup(key,value,'guest-attempt-conflict');
+        continue;
+      }
+      set(key,personal.merge(key,existing,value));
+    }
+    return true;
+  }
+  function acceptPersonal(key, value, pending) {
+    if (read(ownerKey) !== owner || !personalKey(key)) return false;
+    const saved = record(key);
+    if (key.startsWith('bb.analytics.v1:attempt:') && saved.value != null && personal.stable(saved.value) !== personal.stable(value)) backup(key,saved.value,'immutable-attempt-conflict');
+    const merged = personal.merge(key,saved.value,value);
+    const changedDuringRequest = pending && pendingRevision(key,saved) && pendingRevision(key,saved) !== pending;
+    const needsWrite = (!key.startsWith('bb.analytics.v1:attempt:') && changedDuringRequest) || personal.stable(merged) !== personal.stable(value);
+    putRecord(key, merged, needsWrite ? (pendingRevision(key,saved) || revision()) : null);
+    announce('bb:cache-change', {reason:'personal-cloud',key});
+    return true;
   }
   function acknowledge(key, pending) {
     // Acknowledgements have a separate key: a response for revision A can never
@@ -200,7 +270,7 @@
     }
   });
   window.BBUserStorage = {
-    get, set, activate, hydrate, acknowledge,
+    get, set, activate, hydrate, acknowledge, entries, canClaimGuestRecords, claimGuestRecords, acceptPersonal,
     owner: () => owner,
     snapshot: () => clone(vault()),
     canPersist: () => persistent,

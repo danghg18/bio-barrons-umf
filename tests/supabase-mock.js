@@ -23,7 +23,7 @@
     const failure = failureIndex < 0 ? null : failures.splice(failureIndex,1)[0];
     const result = state.offline || !navigator.onLine
       ? {data:null,error:{message:'mock network secret-like detail must never render',code:'NETWORK'}}
-      : failure ? {data:null,error:{message:'mock database detail must never render',code:failure.code||'42501'}} : action();
+      : failure ? {data:null,error:{message:'mock database detail must never render',code:failure.code||'42501'}} : await action();
     const delay = delays[operation+':'+table] || delays[operation] || 0;
     if(delay === 'hold') await new Promise(resolve => held.push(resolve));
     else if(delay) await new Promise(resolve => setTimeout(resolve,delay));
@@ -47,17 +47,22 @@
   const sdk = {auth,from(table) {
     return {
       select() {return {eq(column,value) {
-        record('select',table,{column,value});
-        return request('select',table,() => {
-          if(!state.user || column!=='user_id' || value!==state.user.id) return {data:null,error:{code:'42501',message:'mock RLS denial'}};
-          return {data:clone((state.tables[table]||[]).filter(row=>row.user_id===value)),error:null};
-        });
+        let first=0,last=Infinity;
+        const query={order(){return query;},range(a,b){first=a;last=b;return query;},then(resolve,reject){
+          record('select',table,{column,value});
+          return request('select',table,async() => {
+            if(!state.user || column!=='user_id' || value!==state.user.id) return {data:null,error:{code:'42501',message:'mock RLS denial'}};
+            if(table==='personal_records' && window.__sharedPersonal) return window.__sharedPersonal({type:'select',owner:value,first,last:Number.isFinite(last)?last:null});
+            return {data:clone((state.tables[table]||[]).filter(row=>row.user_id===value).sort((a,b)=>(a.record_key||'').localeCompare(b.record_key||'')).slice(first,Number.isFinite(last)?last+1:undefined)),error:null};
+          }).then(resolve,reject);
+        }};return query;
       }};},
       upsert(input,options) {
         record('upsert',table,{input,options});
         return request('upsert',table,() => {
           const rows = Array.isArray(input)?input:[input];
           if(rows.some(row=>!state.user || row.user_id!==state.user.id)) return {data:null,error:{code:'42501',message:'mock RLS denial'}};
+          state.tables[table] ||= [];
           const keys = (options?.onConflict || 'user_id').split(',');
           for(const row of rows) {
             const existing = state.tables[table].findIndex(value=>keys.every(field=>value[field]===row[field]));
@@ -70,6 +75,22 @@
       }
     };
   }};
+  sdk.rpc = async(name,args) => {
+    record('rpc',name,args);
+    return request('rpc',name,async()=>{
+      if(!state.user || args.p_owner!==state.user.id || name!=='bb_put_personal_record') return {data:null,error:{code:'42501'}};
+      if(window.__sharedPersonal) return window.__sharedPersonal({type:'put',owner:state.user.id,...args});
+      const rows=state.tables.personal_records ||= [];
+      const old=rows.find(row=>row.user_id===state.user.id && row.record_key===args.p_key);
+      if(old && old.revision!==args.p_expected) return {data:{accepted:false,record:clone(old)},error:null};
+      let payload=clone(args.p_payload);
+      if(old?.payload.deleted)payload=clone(old.payload);
+      if(old?.payload.status==='completed' && !payload.deleted)for(const field of ['status','answers','result','completedAt','submissionId','questions','deadline','startedAt','scoringVersion']){if(old.payload[field]!==undefined)payload[field]=clone(old.payload[field]);}
+      const row={user_id:state.user.id,record_key:args.p_key,payload,revision:(old?.revision||0)+1};
+      if(old)rows[rows.indexOf(old)]=row;else rows.push(row);
+      persist();return {data:{accepted:true,record:clone(row)},error:null};
+    });
+  };
   sdk.storage = {from(bucket) {return {
     async upload(path,blob) {
       record('upload',bucket,{path});

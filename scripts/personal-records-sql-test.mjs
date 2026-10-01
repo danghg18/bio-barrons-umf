@@ -1,0 +1,33 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {PGlite} from '@electric-sql/pglite';
+const db=new PGlite();
+const A='00000000-0000-4000-8000-000000000001',B='00000000-0000-4000-8000-000000000002';
+try {
+await db.exec(`create role anon;create role authenticated;create schema auth;create table auth.users(id uuid primary key);create function auth.uid() returns uuid language sql stable as $$ select nullif(current_setting('request.jwt.claim.sub',true),'')::uuid $$;grant usage on schema auth to authenticated,anon;grant execute on function auth.uid() to authenticated,anon;`);
+await db.query('insert into auth.users values ($1),($2)',[A,B]);
+await db.exec(await readFile(new URL('../supabase/migrations/20260930162516_personal_study_records.sql',import.meta.url),'utf8'));
+let activeOwner=A;
+const as=async(id,role='authenticated')=>{activeOwner=id;await db.exec('reset role');await db.query("select set_config('request.jwt.claim.sub',$1,false)",[id]);await db.exec('set role '+role);};
+const put=async(key,payload,rev=0)=>(await db.query('select public.bb_put_personal_record($1,$2::jsonb,$3,$4::uuid) as response',[key,JSON.stringify(payload),rev,activeOwner||null])).rows[0].response;
+await as(A);
+const key='bb.highlight.v1:x';
+let r=await put(key,{version:1,id:'x',color:'yellow'});assert.equal(r.accepted,true);assert.equal(r.record.revision,1);
+r=await put(key,{version:1,id:'x',color:'pink'},0);assert.equal(r.accepted,false);assert.equal(r.record.payload.color,'yellow');
+r=await put(key,{version:1,id:'x',deleted:true},1);assert.equal(r.accepted,true);
+r=await put(key,{version:1,id:'x',color:'pink'},2);assert.equal(r.record.payload.deleted,true,'Server prevents tombstone resurrection');
+await as(B);
+await assert.rejects(db.query('select public.bb_put_personal_record($1,$2::jsonb,0,$3::uuid)', ['bb.highlight.v1:stale-owner',{version:1,id:'stale-owner'},A]),e=>e.code==='42501');
+assert.equal((await db.query('select * from public.personal_records')).rows.length,0);
+await assert.rejects(db.query('insert into public.personal_records(user_id,record_key,payload) values ($1,$2,$3)',[A,'bb.highlight.v1:foreign',{version:1}]),e=>e.code==='42501');
+await put(key,{version:1,id:'x',color:'blue'});assert.equal((await db.query('select * from public.personal_records')).rows.length,1);
+await assert.rejects(db.query('update public.personal_records set user_id=$1',[A]),e=>e.code==='42501');
+await assert.rejects(db.query('delete from public.personal_records'),e=>e.code==='42501');
+await as(A);r=await put('bb.simulation.v1:test',{version:1,id:'test',status:'completed',result:{grade:8},answers:[['A']],completedAt:500,deadline:1000,startedAt:100,questions:[],scoringVersion:'old'});
+r=await put('bb.simulation.v1:test',{version:1,id:'test',status:'active',result:null,answers:[['C']]},r.record.revision);
+assert.equal(r.record.payload.result.grade,8);assert.equal(r.record.payload.completedAt,500);
+await assert.rejects(put('note:1:home',{version:1}),e=>e.code==='22023');
+await as('', 'anon');await assert.rejects(db.query('select * from public.personal_records'),e=>e.code==='42501');await assert.rejects(put(key,{version:1}),e=>e.code==='42501');
+await db.exec('reset role');const fn=(await db.query("select prosecdef,proconfig from pg_proc where proname='bb_put_personal_record'")).rows[0];assert.equal(fn.prosecdef,false);assert.ok(fn.proconfig.includes('search_path=""'));
+console.log('PASS personal SQL: CAS, stale writes, tombstones, frozen results, two-owner RLS, anonymous denial, invoker RPC');
+} finally {await db.close();}

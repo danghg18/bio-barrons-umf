@@ -45,7 +45,7 @@
     const done=run?.status==='completed';$('sim-result').hidden=!done;
     if(!done){$('sim-result').replaceChildren();return;}
     const result=run.result;
-    $('sim-result').innerHTML='<div class="sim-grade-block"><div><p class="sim-kicker">Test predat</p><h2 id="sim-result-title">Nota de antrenament — Biologie</h2><p>Algoritm UMF Cluj 2023 · Pondere egală pe întrebare</p></div><div class="sim-grade">'+ui.number(result.grade)+'<span>din 10</span></div></div><div class="sim-result-facts"><span><strong>'+ui.number(result.points)+'</strong> din 35 de puncte</span><span><strong>'+ui.duration(run.completedAt-run.startedAt)+'</strong> timp de lucru</span><span><strong>'+result.full+'</strong> integral</span><span><strong>'+result.partial+'</strong> parțial</span><span><strong>'+result.zero+'</strong> cu zero</span></div><div class="sim-result-actions"><button id="sim-repeat" type="button" class="sim-primary">Test nou cu aceleași capitole</button><a href="testare.html#simulation-history" class="sim-secondary">Istoricul simulărilor</a><button id="sim-result-export" type="button" class="sim-link-button">Exportă rezultatul</button></div>';
+    $('sim-result').innerHTML='<div class="sim-grade-block"><div><p class="sim-kicker">Test predat</p><h2 id="sim-result-title">Nota de antrenament — Biologie</h2><p>Reguli din 2023 · Ponderi egale · Formula detaliată pentru 2026 neconfirmată</p></div><div class="sim-grade">'+ui.number(result.grade)+'<span>din 10</span></div></div><div class="sim-result-facts"><span><strong>'+ui.number(result.points)+'</strong> din 35 de puncte</span><span><strong>'+ui.duration(run.completedAt-run.startedAt)+'</strong> timp de lucru</span><span><strong>'+result.full+'</strong> integral</span><span><strong>'+result.partial+'</strong> parțial</span><span><strong>'+result.zero+'</strong> cu zero</span></div><div class="sim-result-actions"><button id="sim-repeat" type="button" class="sim-primary">Test nou cu aceleași capitole</button><a href="testare.html#simulation-history" class="sim-secondary">Istoricul simulărilor</a><button id="sim-result-export" type="button" class="sim-link-button">Exportă rezultatul</button></div>';
     $('sim-result-export').addEventListener('click',()=>ui.exportRun(run));
     $('sim-repeat').addEventListener('click',async()=>{
       const ticket=epoch, previous=run, button=$('sim-repeat');button.disabled=true;message('');
@@ -66,6 +66,7 @@
     const names=[...new Set(run.questions.map(question=>question.chapterName))];
     $('sim-subtitle').textContent='35 de întrebări · '+names.join(' · ');
     renderResult();renderQuestions();persistence();tick();
+    if(run.syncConflicts?.length)message('Au existat modificări concurente pe două dispozitive. Sunt afișate răspunsurile sincronizate; variantele sunt păstrate în exportul simulării. Poți verifica răspunsurile înainte de predare.');
   }
   function edit(operation) {
     if(!run || run.status==='completed')return;
@@ -120,7 +121,7 @@
   document.addEventListener('bb:cache-owner-change',refresh);
   document.addEventListener('bb:cache-change',()=>{
     const latest=id?store.get(id):null;
-    if(latest?.revision!==run?.revision || storage.owner()!==owner){refresh();if(run)message('Testul a fost actualizat în altă filă. Sunt afișate răspunsurile salvate.');}
+    if(JSON.stringify(latest)!==JSON.stringify(run) || storage.owner()!==owner){refresh();if(run)message(run.syncConflicts?.length ? 'Modificări concurente: verifică răspunsurile afișate. Variantele sunt păstrate în exportul simulării.' : 'Testul a fost actualizat pe alt dispozitiv sau în altă filă. Sunt afișate răspunsurile salvate.');}
   });
   document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')tick();});
   window.addEventListener('pageshow',()=>{if(run)refresh();});

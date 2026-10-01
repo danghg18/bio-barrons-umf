@@ -66,7 +66,8 @@ try {
     BBUserStorage.activate('revision-alice');
     BBUserStorage.hydrate({'bb.quiz.organe-simt.v1':{version:1,questions:{'os-003':{selected:['C','D','E'],verified:true,correct:true,contentRevision:1}}}});
   });
-  assert.deepEqual(await page.evaluate(()=>BBUserStorage.snapshot().pending),{},'Reading a clean cached answer must not queue a cloud write');
+  assert.equal(await page.evaluate(()=>BBUserStorage.snapshot().pending['bb.quiz.organe-simt.v1'] ?? null),null,'Reading a clean cached answer must not queue an answer-state cloud write');
+  assert.ok(await page.evaluate(()=>Object.keys(BBUserStorage.snapshot().pending).some(key=>key.startsWith('bb.analytics.v1:attempt:'))),'Real guest history independently enters the new migration outbox');
   await page.evaluate(()=>{
     BBUserStorage.hydrate({'bb.quiz.organe-simt.v1':{version:1,questions:{'os-003':{selected:['C','E'],verified:true,correct:false,contentRevision:1}}}});
   });

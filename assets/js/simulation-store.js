@@ -1,11 +1,11 @@
-/* Local-only, identity-scoped simulation records. Web Locks serialize read/check/write
+/* Identity-scoped simulation records synchronized through the durable personal outbox. Web Locks serialize read/check/write
  * across tabs; revisions reject stale editors and completed results are immutable. */
 (function () {
   'use strict';
   const storage = window.BBUserStorage, core = window.BBSimulationCore;
   const prefix = 'bb.simulation.v1:';
   function valid(run) {
-    return run && run.version === 1 && run.scoringVersion === core.SCORING && typeof run.id === 'string' &&
+    return run && !run.deleted && run.version === 1 && run.scoringVersion === core.SCORING && typeof run.id === 'string' &&
       ['active','completed'].includes(run.status) && Array.isArray(run.questions) && run.questions.length === core.COUNT &&
       Array.isArray(run.answers) && run.answers.length === core.COUNT;
   }
@@ -45,13 +45,24 @@
       if (operation.type === 'finish' || expired) {
         run.completedAt = expired ? run.deadline : now;
         run.status = 'completed'; run.result = core.result(run);
+        run.submissionId = crypto.randomUUID();
       } else if (operation.type === 'answer') {
         if (!Number.isInteger(operation.index) || operation.index < 0 || operation.index >= core.COUNT) throw new Error('Întrebarea nu este validă.');
         run.answers[operation.index] = core.normalize(operation.selected);
+        run.answerEdits ||= {};
+        const previous = run.answerEdits[operation.index];
+        run.answerEdits[operation.index] = {id:crypto.randomUUID(), counter:(previous?.counter || 0)+1, selected:run.answers[operation.index], seen:[...new Set([...(previous?.seen || []), ...(previous ? [previous.id] : [])])]};
       } else throw new Error('Acțiunea nu este validă.');
       run.revision++;
       return save(run);
     });
   }
-  window.BBSimulationStore = {get,list,create,update};
+  function remove(id, owner) {
+    return lock(id,owner,() => {
+      const run = get(id);
+      if (!run) return;
+      save({version:1,id,owner,deleted:true});
+    });
+  }
+  window.BBSimulationStore = {get,list,create,update,remove};
 }());

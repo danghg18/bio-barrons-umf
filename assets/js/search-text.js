@@ -23,7 +23,7 @@
   }
   function index(root) {
     const runs = [];
-    root.querySelectorAll('.page-section:not([data-curriculum-excluded])').forEach(section => {
+    root.querySelectorAll('.page-section:not([data-curriculum-excluded]):not([data-lesson-redirect])').forEach(section => {
       let text = '', pieces = [];
       function flush() {
         if (text.trim()) runs.push({ text, pieces, sectionId: section.id.replace(/^page-/, ''),

@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Testare · BioMed</title>
-<meta name="description" content="Grile de biologie organizate pe capitole, cu verificare, explicații și progres salvat.">
+<meta name="description" content="17 seturi cu 1590 de grile de biologie pentru UMF Cluj 2026, cu verificare și explicații. Acces gratuit.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://danghg18.github.io/bio-barrons-umf/testare.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Testare · BioMed">
-<meta property="og:description" content="Alege capitolul și rezolvă grilele cu explicații.">
+<meta property="og:description" content="17 seturi cu 1590 de grile de biologie pentru UMF Cluj 2026, cu verificare și explicații. Acces gratuit.">
 <meta property="og:url" content="https://danghg18.github.io/bio-barrons-umf/testare.html">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" type="image/png" href="icon-192.png">
@@ -27,7 +27,7 @@
 <link rel="stylesheet" href="assets/css/site-redesign.css?v=20260926-polish1">
 <link rel="stylesheet" href="assets/css/testing-analytics.css?v=20260926-polish1">
 <link rel="stylesheet" href="assets/css/accounts.css?v=20260926-polish1">
-<link rel="stylesheet" href="assets/css/simulation.css?v=20260926-feedback1">
+<link rel="stylesheet" href="assets/css/simulation.css?v=20260930-personal1">
 </head>
 <body class="lab-testing-page bm-browse bm-catalog">
 
@@ -64,7 +64,7 @@
       <p>Alege un capitol și exersează cu explicații la fiecare răspuns.</p>
       <a class="pilot-button" href="#lab-testing-catalog">Alege un capitol <span aria-hidden="true">↓</span></a>
       <a class="sim-intro-link" href="#simulation-builder">Simulare de 35 de întrebări <span aria-hidden="true">↗</span></a>
-      <span class="testing-availability" id="lab-testing-count"></span>
+      <span class="testing-availability" id="lab-testing-count">17 seturi disponibile · 1590 de grile</span>
     </div>
     <section class="testing-preview" aria-labelledby="testing-activity-title">
       <div class="testing-preview-head"><h2 id="testing-activity-title">Progresul tău</h2><span>Toate capitolele</span></div>
@@ -77,25 +77,10 @@
   <p class="analytics-storage-note" id="analytics-storage-note" role="status" hidden></p>
   <noscript><p class="analytics-storage-note">Activează JavaScript pentru a rezolva grilele și a vedea statisticile.</p></noscript>
 
-  <section class="sim-panel sim-builder" id="simulation-builder" aria-labelledby="simulation-title">
-    <div class="sim-heading"><div><h2 id="simulation-title">Simulare admitere · Biologie</h2><p>Alege capitolele pentru 35 de întrebări. Vezi nota după predare.</p></div><a href="#simulation-history">Istoricul simulărilor</a></div>
-    <form id="simulation-form">
-      <fieldset class="sim-chapters"><legend>Alege capitolele</legend><div class="sim-selection-tools"><span id="sim-selection-count" aria-live="polite">Niciun capitol selectat</span><button type="button" class="sim-link-button" id="sim-select-all">Selectează toate</button></div><div id="sim-chapter-list"></div></fieldset>
-      <div class="sim-config-footer"><div class="sim-timer-config"><label><input type="checkbox" id="sim-timed"> Cu limită de timp</label><label id="sim-duration-wrap" hidden>Durata de antrenament <select id="sim-duration"><option value="60">60 de minute</option><option value="90">90 de minute</option><option value="120">120 de minute</option></select></label></div><div class="sim-start"><p id="sim-allocation-summary" aria-live="polite">Bifează cel puțin un capitol.</p><button class="sim-primary" type="submit" id="sim-start" disabled>Începe simularea <span aria-hidden="true">↗</span></button></div></div>
-    </form>
-    <p id="sim-builder-error" class="sim-notice" role="alert" hidden></p><button id="sim-builder-export" type="button" class="sim-secondary" hidden>Exportă testul</button>
-    <details class="sim-rules"><summary>Cum se calculează nota?</summary><p>Fiecare întrebare valorează 1 punct. Combinația exactă primește punctaj integral. Pentru o singură diferență față de barem primești 0,5 puncte dacă întrebarea are cel puțin două variante corecte; pentru două diferențe primești 0,25 puncte dacă are cel puțin trei variante corecte. În rest, punctajul este zero. Întrebările necompletate primesc zero.</p><p>Nota de antrenament = 10 × punctaj / 35, fără punct din oficiu. Folosim algoritmul documentat în <a href="https://cdn.umfcluj.ro/uploads/2023/08/Ghid-Admitere-2023-UMFDigital.pdf#page=16" target="_blank" rel="noopener">ghidul UMF Cluj din 2023, pagina 18</a>, cu pondere egală pe întrebare. Formula detaliată nu este confirmată pentru 2026. Nota evaluează numai biologia, nu examenul complet.</p></details>
-    <details class="sim-history" id="simulation-history"><summary>Istoricul simulărilor <span id="sim-history-count"></span></summary><p class="sim-muted">Salvate în acest browser, separat pentru fiecare cont.</p><div id="sim-history-list"><p>Nu ai încă simulări. Prima va apărea aici.</p></div><button id="sim-history-more" type="button" class="sim-secondary" hidden>Arată mai multe</button></details>
-  </section>
-
   <section id="lab-testing-catalog" class="lab-bento lab-testing-catalog" aria-labelledby="testing-catalog-title">
     <div class="lab-section-head">
       <div>
         <h2 class="lab-h2" id="testing-catalog-title">Alege capitolul</h2>
-      </div>
-      <div class="testing-catalog-filter" role="group" aria-label="Capitole afișate" hidden>
-        <button type="button" data-catalog-filter="available" aria-pressed="true">Disponibile</button>
-        <button type="button" data-catalog-filter="all" aria-pressed="false">Toate capitolele</button>
       </div>
 
     </div>
@@ -108,11 +93,11 @@
             <h3 class="lab-bento-cat-title">Bazele Anatomiei &amp; Fiziologiei</h3>
             <div class="lab-bento-cat-blurb">Fundamentele — organizare, chimie, celulă, țesuturi.</div>
           </div>
-          <div class="lab-bento-cat-ring"><div class="lab-bento-cat-ring-inner">1 din 2 teste disponibile</div></div>
+          <div class="lab-bento-cat-ring"><div class="lab-bento-cat-ring-inner">2 din 2 teste disponibile</div></div>
         </div>
         <div class="lab-bento-items">
-          <a class="lab-item lab-item-done" data-chapter="1" href="grile_introducere_anatomie_fiziologie.html"><span class="lab-item-num">01</span><span><span class="lab-item-title">Introducere în anatomie și fiziologie</span><span class="lab-item-tags">60 de grile · întrebările 1–60</span></span><span class="lab-item-done-mark">Rezolvă</span></a>
-          <button class="lab-item lab-item-soon" type="button" data-chapter="3" disabled><span class="lab-item-num">03</span><span><span class="lab-item-title">Celula și fiziologia celulară</span><span class="lab-item-tags">Test în pregătire</span></span><span class="lab-item-soon-mark">În curând</span></button>
+          <a class="lab-item lab-item-done" data-chapter="1" href="grile_introducere_anatomie_fiziologie.html"><span class="lab-item-num">01</span><span><span class="lab-item-title">Introducere în anatomie și fiziologie</span><span class="lab-item-tags">60 de grile</span></span><span class="lab-item-done-mark">Rezolvă</span></a>
+          <a class="lab-item lab-item-done" data-chapter="3" href="grile_celula.html"><span class="lab-item-num">03</span><span><span class="lab-item-title">Celula și fiziologia celulară</span><span class="lab-item-tags">50 de grile</span></span><span class="lab-item-done-mark">Rezolvă</span></a>
         </div>
       </div>
 
@@ -123,11 +108,11 @@
             <h3 class="lab-bento-cat-title">Tegument, Oase &amp; Mușchi</h3>
             <div class="lab-bento-cat-blurb">Piele, schelet, articulații, fibra musculară.</div>
           </div>
-          <div class="lab-bento-cat-ring"><div class="lab-bento-cat-ring-inner">0 din 2 teste disponibile</div></div>
+          <div class="lab-bento-cat-ring"><div class="lab-bento-cat-ring-inner">2 din 2 teste disponibile</div></div>
         </div>
         <div class="lab-bento-items">
-          <button class="lab-item lab-item-soon" type="button" data-chapter="6" disabled><span class="lab-item-num">06</span><span><span class="lab-item-title">Oasele și articulațiile</span><span class="lab-item-tags">Test în pregătire</span></span><span class="lab-item-soon-mark">În curând</span></button>
-          <button class="lab-item lab-item-soon" type="button" data-chapter="8" disabled><span class="lab-item-num">08</span><span><span class="lab-item-title">Țesutul muscular</span><span class="lab-item-tags">Test în pregătire</span></span><span class="lab-item-soon-mark">În curând</span></button>
+          <a class="lab-item lab-item-done" data-chapter="6" href="grile_oasele_si_articulatiile.html"><span class="lab-item-num">06</span><span><span class="lab-item-title">Oasele și articulațiile</span><span class="lab-item-tags">180 de grile</span></span><span class="lab-item-done-mark">Rezolvă</span></a>
+          <a class="lab-item lab-item-done" data-chapter="8" href="grile_tesutul_muscular.html"><span class="lab-item-num">08</span><span><span class="lab-item-title">Țesutul muscular</span><span class="lab-item-tags">155 de grile</span></span><span class="lab-item-done-mark">Rezolvă</span></a>
         </div>
       </div>
 
@@ -138,13 +123,13 @@
             <h3 class="lab-bento-cat-title">Sistem Nervos, Simțuri &amp; Endocrin</h3>
             <div class="lab-bento-cat-blurb">Neuronul, SNC/SNP, percepție, hormoni.</div>
           </div>
-          <div class="lab-bento-cat-ring"><div class="lab-bento-cat-ring-inner">2 din 4 teste disponibile</div></div>
+          <div class="lab-bento-cat-ring"><div class="lab-bento-cat-ring-inner">4 din 4 teste disponibile</div></div>
         </div>
         <div class="lab-bento-items">
-          <button class="lab-item lab-item-soon" type="button" data-chapter="10" disabled><span class="lab-item-num">10</span><span><span class="lab-item-title">Țesutul nervos</span><span class="lab-item-tags">Test în pregătire</span></span><span class="lab-item-soon-mark">În curând</span></button>
-          <a class="lab-item lab-item-done" data-chapter="11" href="grile_sistemul_nervos.html"><span class="lab-item-num">11</span><span><span class="lab-item-title">Organizarea sistemului nervos</span><span class="lab-item-tags">50 de grile · întrebările 51–100</span></span><span class="lab-item-done-mark">Rezolvă</span></a>
-          <a class="lab-item lab-item-done" data-chapter="12" href="grile_organele_de_simt.html"><span class="lab-item-num">12</span><span><span class="lab-item-title">Organele de simț</span><span class="lab-item-tags">100 de grile · întrebările 1–100</span></span><span class="lab-item-done-mark">Rezolvă</span></a>
-          <button class="lab-item lab-item-soon" type="button" data-chapter="13" disabled><span class="lab-item-num">13</span><span><span class="lab-item-title">Sistemul endocrin</span><span class="lab-item-tags">Test în pregătire</span></span><span class="lab-item-soon-mark">În curând</span></button>
+          <a class="lab-item lab-item-done" data-chapter="10" href="grile_tesutul_nervos.html"><span class="lab-item-num">10</span><span><span class="lab-item-title">Țesutul nervos</span><span class="lab-item-tags">85 de grile</span></span><span class="lab-item-done-mark">Rezolvă</span></a>
+          <a class="lab-item lab-item-done" data-chapter="11" href="grile_sistemul_nervos.html"><span class="lab-item-num">11</span><span><span class="lab-item-title">Organizarea sistemului nervos</span><span class="lab-item-tags">100 de grile</span></span><span class="lab-item-done-mark">Rezolvă</span></a>
+          <a class="lab-item lab-item-done" data-chapter="12" href="grile_organele_de_simt.html"><span class="lab-item-num">12</span><span><span class="lab-item-title">Organele de simț</span><span class="lab-item-tags">100 de grile</span></span><span class="lab-item-done-mark">Rezolvă</span></a>
+          <a class="lab-item lab-item-done" data-chapter="13" href="grile_sistemul_endocrin.html"><span class="lab-item-num">13</span><span><span class="lab-item-title">Sistemul endocrin</span><span class="lab-item-tags">105 de grile</span></span><span class="lab-item-done-mark">Rezolvă</span></a>
         </div>
       </div>
 
@@ -155,12 +140,12 @@
             <h3 class="lab-bento-cat-title">Sânge, Cardiovascular &amp; Imunitate</h3>
             <div class="lab-bento-cat-blurb">Sânge, inimă, vase, apărare imună.</div>
           </div>
-          <div class="lab-bento-cat-ring"><div class="lab-bento-cat-ring-inner">0 din 3 teste disponibile</div></div>
+          <div class="lab-bento-cat-ring"><div class="lab-bento-cat-ring-inner">3 din 3 teste disponibile</div></div>
         </div>
         <div class="lab-bento-items">
-          <button class="lab-item lab-item-soon" type="button" data-chapter="14" disabled><span class="lab-item-num">14</span><span><span class="lab-item-title">Sângele</span><span class="lab-item-tags">Test în pregătire</span></span><span class="lab-item-soon-mark">În curând</span></button>
-          <button class="lab-item lab-item-soon" type="button" data-chapter="15" disabled><span class="lab-item-num">15</span><span><span class="lab-item-title">Sistemul cardiovascular</span><span class="lab-item-tags">Test în pregătire</span></span><span class="lab-item-soon-mark">În curând</span></button>
-          <button class="lab-item lab-item-soon" type="button" data-chapter="16" disabled><span class="lab-item-num">16</span><span><span class="lab-item-title">Sistemul limfatic și imun</span><span class="lab-item-tags">Test în pregătire</span></span><span class="lab-item-soon-mark">În curând</span></button>
+          <a class="lab-item lab-item-done" data-chapter="14" href="grile_sangele.html"><span class="lab-item-num">14</span><span><span class="lab-item-title">Sângele</span><span class="lab-item-tags">80 de grile</span></span><span class="lab-item-done-mark">Rezolvă</span></a>
+          <a class="lab-item lab-item-done" data-chapter="15" href="grile_sistemul_cardiovascular.html"><span class="lab-item-num">15</span><span><span class="lab-item-title">Sistemul cardiovascular</span><span class="lab-item-tags">82 de grile</span></span><span class="lab-item-done-mark">Rezolvă</span></a>
+          <a class="lab-item lab-item-done" data-chapter="16" href="grile_sistemul_limfatic_si_imun.html"><span class="lab-item-num">16</span><span><span class="lab-item-title">Sistemul limfatic și imun</span><span class="lab-item-tags">58 de grile</span></span><span class="lab-item-done-mark">Rezolvă</span></a>
         </div>
       </div>
 
@@ -171,12 +156,12 @@
             <h3 class="lab-bento-cat-title">Respirator, Digestiv &amp; Metabolism</h3>
             <div class="lab-bento-cat-blurb">Schimb gazos, digestie, bioenergetică.</div>
           </div>
-          <div class="lab-bento-cat-ring"><div class="lab-bento-cat-ring-inner">0 din 3 teste disponibile</div></div>
+          <div class="lab-bento-cat-ring"><div class="lab-bento-cat-ring-inner">3 din 3 teste disponibile</div></div>
         </div>
         <div class="lab-bento-items">
-          <button class="lab-item lab-item-soon" type="button" data-chapter="17" disabled><span class="lab-item-num">17</span><span><span class="lab-item-title">Sistemul respirator</span><span class="lab-item-tags">Test în pregătire</span></span><span class="lab-item-soon-mark">În curând</span></button>
-          <button class="lab-item lab-item-soon" type="button" data-chapter="18" disabled><span class="lab-item-num">18</span><span><span class="lab-item-title">Sistemul digestiv</span><span class="lab-item-tags">Test în pregătire</span></span><span class="lab-item-soon-mark">În curând</span></button>
-          <button class="lab-item lab-item-soon" type="button" data-chapter="19" disabled><span class="lab-item-num">19</span><span><span class="lab-item-title">Metabolism și nutriție</span><span class="lab-item-tags">Test în pregătire</span></span><span class="lab-item-soon-mark">În curând</span></button>
+          <a class="lab-item lab-item-done" data-chapter="17" href="grile_sistemul_respirator.html"><span class="lab-item-num">17</span><span><span class="lab-item-title">Sistemul respirator</span><span class="lab-item-tags">160 de grile</span></span><span class="lab-item-done-mark">Rezolvă</span></a>
+          <a class="lab-item lab-item-done" data-chapter="18" href="grile_sistemul_digestiv.html"><span class="lab-item-num">18</span><span><span class="lab-item-title">Sistemul digestiv</span><span class="lab-item-tags">80 de grile</span></span><span class="lab-item-done-mark">Rezolvă</span></a>
+          <a class="lab-item lab-item-done" data-chapter="19" href="grile_metabolism_si_nutritie.html"><span class="lab-item-num">19</span><span><span class="lab-item-title">Metabolism și nutriție</span><span class="lab-item-tags">55 de grile</span></span><span class="lab-item-done-mark">Rezolvă</span></a>
         </div>
       </div>
 
@@ -190,7 +175,7 @@
           <div class="lab-bento-cat-ring"><div class="lab-bento-cat-ring-inner">1 din 1 test disponibil</div></div>
         </div>
         <div class="lab-bento-items">
-          <a class="lab-item lab-item-done" data-chapter="20" href="grile_sistemul_urinar.html"><span class="lab-item-num">20</span><span><span class="lab-item-title">Sistemul urinar</span><span class="lab-item-tags">80 de grile · întrebările 1–80</span></span><span class="lab-item-done-mark">Rezolvă</span></a>
+          <a class="lab-item lab-item-done" data-chapter="20" href="grile_sistemul_urinar.html"><span class="lab-item-num">20</span><span><span class="lab-item-title">Sistemul urinar</span><span class="lab-item-tags">100 de grile</span></span><span class="lab-item-done-mark">Rezolvă</span></a>
         </div>
       </div>
 
@@ -204,15 +189,26 @@
           <div class="lab-bento-cat-ring"><div class="lab-bento-cat-ring-inner">2 din 2 teste disponibile</div></div>
         </div>
         <div class="lab-bento-items">
-          <a class="lab-item lab-item-done" data-chapter="22" href="grile_sistemul_reproducator_masculin.html"><span class="lab-item-num">22</span><span><span class="lab-item-title">Sistemul reproducător masculin</span><span class="lab-item-tags">69 de grile · întrebările 1–69</span></span><span class="lab-item-done-mark">Rezolvă</span></a>
-          <a class="lab-item lab-item-done" data-chapter="23" href="grile_sistemul_reproducator_feminin.html"><span class="lab-item-num">23</span><span><span class="lab-item-title">Sistemul reproducător feminin</span><span class="lab-item-tags">42 de grile · întrebările 1–42</span></span><span class="lab-item-done-mark">Rezolvă</span></a>
+          <a class="lab-item lab-item-done" data-chapter="22" href="grile_sistemul_reproducator_masculin.html"><span class="lab-item-num">22</span><span><span class="lab-item-title">Sistemul reproducător masculin</span><span class="lab-item-tags">69 de grile</span></span><span class="lab-item-done-mark">Rezolvă</span></a>
+          <a class="lab-item lab-item-done" data-chapter="23" href="grile_sistemul_reproducator_feminin.html"><span class="lab-item-num">23</span><span><span class="lab-item-title">Sistemul reproducător feminin</span><span class="lab-item-tags">71 de grile</span></span><span class="lab-item-done-mark">Rezolvă</span></a>
         </div>
       </div>
     </div>
   </section>
+
+  <section class="sim-panel sim-builder" id="simulation-builder" aria-labelledby="simulation-title">
+    <div class="sim-heading"><div><h2 id="simulation-title">Simulare de antrenament · Biologie</h2><p>Alege capitolele pentru 35 de întrebări. Vezi nota după predare.</p></div><a href="#simulation-history">Istoricul simulărilor</a></div>
+    <form id="simulation-form">
+      <fieldset class="sim-chapters"><legend>Alege capitolele</legend><div class="sim-selection-tools"><span id="sim-selection-count" aria-live="polite">Niciun capitol selectat</span><button type="button" class="sim-link-button" id="sim-select-all">Selectează toate</button></div><div id="sim-chapter-list"></div></fieldset>
+      <div class="sim-config-footer"><div class="sim-timer-config"><label><input type="checkbox" id="sim-timed"> Cu limită de timp</label><label id="sim-duration-wrap" hidden>Durata de antrenament <select id="sim-duration"><option value="60">60 de minute</option><option value="90">90 de minute</option><option value="120">120 de minute</option></select></label></div><div class="sim-start"><p id="sim-allocation-summary" aria-live="polite">Bifează cel puțin un capitol.</p><button class="sim-primary" type="submit" id="sim-start" disabled>Începe simularea <span aria-hidden="true">↗</span></button></div></div>
+    </form>
+    <p id="sim-builder-error" class="sim-notice" role="alert" hidden></p><button id="sim-builder-export" type="button" class="sim-secondary" hidden>Exportă testul</button>
+    <details class="sim-rules"><summary>Cum se calculează nota?</summary><p>Fiecare întrebare valorează 1 punct. Combinația exactă primește punctaj integral. Pentru o singură diferență față de barem primești 0,5 puncte dacă întrebarea are cel puțin două variante corecte; pentru două diferențe primești 0,25 puncte dacă are cel puțin trei variante corecte. În rest, punctajul este zero. Întrebările necompletate primesc zero.</p><p>Nota de antrenament = 10 × punctaj / 35, fără punct din oficiu. Folosim algoritmul documentat în <a href="https://cdn.umfcluj.ro/uploads/2023/08/Ghid-Admitere-2023-UMFDigital.pdf#page=16" target="_blank" rel="noopener">ghidul UMF Cluj din 2023, pagina 18</a>, cu pondere egală pe întrebare. Verificare la 30 septembrie 2026: <a href="https://cdn.umfcluj.ro/uploads/2026/07/GHID-ADMITERE-2026.pdf#page=20" target="_blank" rel="noopener">ghidul oficial 2026, paginile 19–20 (PDF 20–21)</a>, și regulamentul 2026 nu precizează tabelul punctajelor parțiale, ponderile întrebărilor sau conversia punctajului în nota finală. Formula de mai sus rămâne una de antrenament. Evaluează doar biologia; examenul de Medicină și Medicină Dentară include și chimie. Nu reprezintă nota examenului complet.</p></details>
+    <details class="sim-history" id="simulation-history"><summary>Istoricul simulărilor <span id="sim-history-count"></span></summary><p class="sim-muted">Pentru vizitatori, simulările rămân pe acest dispozitiv. Cu un cont, se sincronizează după conectarea la internet.</p><div id="sim-history-list"><p>Nu ai încă simulări. Prima va apărea aici.</p></div><button id="sim-history-more" type="button" class="sim-secondary" hidden>Arată mai multe</button></details>
+  </section>
 </main>
 
-<footer class="lab-footer"><div class="pilot-footer-row"><a href="index.html">BioMed</a><span>Progresul grilelor se păstrează în acest browser.</span><a href="index.html#lab-tools">Despre platformă</a></div></footer>
+<footer class="lab-footer"><div class="pilot-footer-row"><a href="index.html">BioMed</a><span>Cu cont, progresul și istoricul se sincronizează. Fără cont, se păstrează pe dispozitiv.</span><a href="index.html#lab-tools">Despre platformă</a></div></footer>
 
 </div>
 
@@ -236,28 +232,30 @@
 
 <script src="assets/js/chapters-data.js?v=20260926-circulator1"></script>
 <script src="assets/js/quiz-index.js?v=20260926-circulator1"></script>
-<script src="assets/js/user-storage.js?v=20260926-simulation1"></script>
+<script src="assets/js/analytics-sync.js?v=20260930-personal1"></script>
+<script src="assets/js/personal-records.js?v=20260930-personal1"></script>
+<script src="assets/js/user-storage.js?v=20260930-personal1"></script>
 <script src="assets/js/study-state.js?v=20260911-accounts1"></script>
 <script src="assets/js/supabase-config.js?v=20260911-accounts1"></script>
 <script src="assets/js/vendor/supabase.js?v=20260911-accounts1"></script>
 <script src="assets/js/supabase-client.js?v=20260911-accounts1"></script>
 <script src="assets/js/auth-state.js?v=20260911-accounts1"></script>
 <script src="assets/js/note-media.js"></script>
-<script src="assets/js/cloud-sync.js?v=20260911-accounts1"></script>
+<script src="assets/js/cloud-sync.js?v=20260930-personal1"></script>
 <script src="assets/js/search-text.js?v=20260928-umf1"></script>
-<script src="assets/js/home.js?v=20260914-search2"></script>
+<script src="assets/js/home.js?v=20260930-personal1"></script>
 <script src="assets/js/site-redesign.js?v=20260911-accounts1"></script>
-<script src="assets/js/quiz-analytics.js?v=20260911-accounts1"></script>
+<script src="assets/js/quiz-analytics.js?v=20260930-personal1"></script>
 <script src="assets/js/analytics-charts.js?v=20260912-progress1"></script>
-<script src="assets/js/analytics-ui.js?v=20260926-polish1"></script>
-<script src="assets/js/account-ui.js?v=20260926-polish1"></script>
+<script src="assets/js/analytics-ui.js?v=20260930-personal1"></script>
+<script src="assets/js/account-ui.js?v=20260930-personal1"></script>
 <script src="assets/js/note-content.js"></script>
 <script src="assets/js/note-editor.js"></script>
 <script src="assets/js/notes.js?v=20260926-polish1"></script>
-<script src="assets/js/simulation-core.js?v=20260926-simulation1"></script>
-<script src="assets/js/simulation-store.js?v=20260926-simulation1"></script>
+<script src="assets/js/simulation-core.js?v=20260930-personal1"></script>
+<script src="assets/js/simulation-store.js?v=20260930-personal1"></script>
 <script src="assets/js/simulation-ui.js?v=20260926-local2"></script>
-<script src="assets/js/simulation-builder.js?v=20260926-polish1"></script>
+<script src="assets/js/simulation-builder.js?v=20260930-personal1"></script>
 <script src="assets/js/offline.js"></script>
 </body>
 </html>

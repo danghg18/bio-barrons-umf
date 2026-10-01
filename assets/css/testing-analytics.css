@@ -441,10 +441,6 @@ body.bm-catalog [hidden], body.bm-analytics [hidden] {display:none !important;}
 .testing-activity-head h3 {font-size:13px;font-weight:600;color:#344f40;margin:0;}
 .testing-preview .analytics-more {margin:8px 0 0;border-top:1px solid var(--analytics-line);min-height:52px;font-size:13px;}
 .testing-preview .chart-no-data {padding:20px 0;}
-.testing-catalog-filter {display:flex;flex-wrap:wrap;gap:6px;}
-.testing-catalog-filter button {min-height:44px;padding:8px 14px;border:1px solid var(--analytics-line);border-radius:7px;background:transparent;color:#4b6054;font:500 13px Figtree,system-ui,sans-serif;cursor:pointer;}
-.testing-catalog-filter button[aria-pressed="true"] {background:#254f45;border-color:#254f45;color:#fff;}
-.testing-catalog-filter button:focus-visible {outline:2px solid #254f45;outline-offset:3px;}
 .testing-unstarted {font-size:12px;color:#596b60;}
 .testing-row-first span {font-size:12px;}
 .testing-chapter-row.is-unstarted {grid-template-columns:minmax(240px,1fr) 130px 100px;}
@@ -477,8 +473,6 @@ body.bm-catalog [hidden], body.bm-analytics [hidden] {display:none !important;}
  .testing-preview .analytics-more {font-size:13px;gap:14px;min-height:52px;}
  body.bm-catalog #lab-testing-catalog {padding-top:22px;}
  body.bm-catalog .lab-section-head {display:flex;align-items:flex-start;flex-direction:column;gap:12px;margin-bottom:0;}
- .testing-catalog-filter {gap:6px;}
- .testing-catalog-filter button {padding-inline:12px;}
  .analytics-next-step {margin-bottom:18px;}
  .analytics-next-actions {flex-wrap:wrap;gap:8px 18px;}
  .analytics-onboarding {padding-top:8px;}
@@ -518,9 +512,6 @@ body.bm-catalog .testing-preview .analytics-more {min-height:44px;margin-top:4px
 body.bm-catalog #lab-testing-catalog {max-width:1040px;padding:22px 26px 10px;margin:0 auto;border:6px solid var(--ui-shell);border-radius:var(--ui-frame-radius);background:var(--ui-paper);}
 body.bm-catalog #lab-testing-catalog>.lab-section-head {display:flex;align-items:center;padding:0 0 8px;border:0;gap:14px;}
 body.bm-catalog #lab-testing-catalog>.lab-section-head h2 {font-size:20px;font-weight:550;letter-spacing:-.02em;color:var(--ui-ink);}
-body.bm-catalog .testing-catalog-filter {padding:4px;gap:3px;background:var(--ui-shell);border-radius:999px;}
-body.bm-catalog .testing-catalog-filter button {min-height:44px;padding:8px 15px;border:0;border-radius:999px;background:transparent;color:var(--ui-muted);font-size:12px;font-weight:500;}
-body.bm-catalog .testing-catalog-filter button[aria-pressed="true"] {background:var(--ui-paper);color:var(--ui-ink);box-shadow:0 3px 12px -6px #20443438;}
 body.bm-catalog .testing-category {margin:0 0 12px;}
 body.bm-catalog .testing-category-head {padding:16px 0 2px;gap:10px;}
 body.bm-catalog .testing-category-head h3 {font-size:12px;font-weight:500;color:var(--ui-muted);}

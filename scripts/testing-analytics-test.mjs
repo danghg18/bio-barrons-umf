@@ -106,7 +106,10 @@ try {
         store.getAll().onsuccess = event => {
           event.target.result.forEach((attempt, i) => {
             const day = new Date(); day.setDate(day.getDate() - (i === 0 ? 365 : i % 28));
-            attempt.at = day.toISOString(); store.put(attempt);
+            attempt.at = day.toISOString();
+            // Seed the authoritative owner record as well as its IndexedDB projection.
+            BBUserStorage.set('bb.analytics.v1:attempt:' + attempt.id, {version:1,...attempt});
+            store.put(attempt);
           });
         };
         tx.oncomplete = () => { db.close(); resolve(); };

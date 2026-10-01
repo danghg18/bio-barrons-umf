@@ -11,7 +11,6 @@
   const longDate = new Intl.DateTimeFormat('ro-RO', {day:'numeric', month:'long', year:'numeric'});
   const dateTime = new Intl.DateTimeFormat('ro-RO', {day:'2-digit', month:'short', year:'numeric', hour:'2-digit', minute:'2-digit'});
   let report;
-  let catalogFilter = 'available';
   let historyPage = 0;
   let requestId = 0;
   const escape = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
@@ -38,20 +37,6 @@
     return `<span class="analytics-progress-label"><strong>${number(current.verified)}</strong> / ${number(current.total)} verificate</span><progress class="analytics-progress" value="${current.verified}" max="${current.total || 1}" aria-label="Progres actual: ${value}%">${value}%</progress>`;
   }
 
-  function applyCatalogFilter() {
-    document.querySelectorAll('.testing-chapter-row').forEach(row => {
-      row.hidden = catalogFilter === 'available' && row.classList.contains('is-unavailable');
-    });
-    document.querySelectorAll('.testing-category').forEach(group => {
-      group.hidden = !group.querySelector('.testing-chapter-row:not([hidden])');
-    });
-    document.querySelectorAll('[data-catalog-filter]').forEach(button => {
-      button.setAttribute('aria-pressed', String(button.dataset.catalogFilter === catalogFilter));
-    });
-    const filters = document.querySelector('.testing-catalog-filter');
-    if (filters) filters.hidden = false;
-  }
-
   function renderCatalog(data, lifetime) {
     const groups = new Map();
     CHAPTERS.concat((BIO_SITE.quizCollections || []).filter(item => item.done)).forEach(chapter => {
@@ -74,12 +59,11 @@
     }).join('');
     const catalog = document.querySelector('#lab-testing-catalog .lab-bento-grid');
     if (catalog) { catalog.id = 'testing-categories'; put('testing-categories', html); }
-    applyCatalogFilter();
     const totalQuestions = lifetime.quizzes.reduce((total, quiz) => total + quiz.questions.length, 0);
     const completed = lifetime.summary.distinct;
     put('testing-preview-summary', `<div class="testing-progress-count"><strong>${number(completed)}</strong><span>din ${number(totalQuestions)} grile diferite parcurse</span></div><progress class="analytics-progress" value="${completed}" max="${totalQuestions || 1}" aria-label="${number(completed)} din ${number(totalQuestions)} grile diferite parcurse"></progress>`);
     chart('testing-activity', data.daily, 'activity', true);
-    byId('lab-testing-count').textContent = index.length + ' seturi disponibile';
+    byId('lab-testing-count').textContent = index.length + ' seturi disponibile · ' + index.reduce((sum, quiz) => sum + quiz.questions.length, 0) + ' de grile';
   }
 
   let lifetimeReport, mistakePage = 0, allTopics = false, lastOwner = null, clearOwner = null;
@@ -246,7 +230,7 @@
     const saved = report.savedResults.length;
     byId('analytics-saved-note').hidden = !saved;
     put('analytics-saved-note', saved ? `${number(saved)} grile au răspunsuri salvate fără dată. Sunt incluse în tot istoricul, fără puncte inventate în grafic.` : '');
-    byId('analytics-tracking-note').textContent = report.trackingSince ? 'Istoric în acest browser din ' + longDate.format(new Date(report.trackingSince)) + '. Reluarea testului nu șterge rezultatele.' : 'Istoricul rezultatelor se păstrează doar în acest browser.';
+    byId('analytics-tracking-note').textContent = report.trackingSince ? 'Istoric înregistrat din ' + longDate.format(new Date(report.trackingSince)) + '. Reluarea testului nu șterge rezultatele.' : 'Cu cont, istoricul se sincronizează între dispozitive. Fără cont, rămâne local.';
   }
   function renderVisibleCharts() {
     window.BBAnalyticsCharts.clear('analytics-accuracy'); window.BBAnalyticsCharts.clear('analytics-activity');
@@ -315,7 +299,7 @@
     byId('analytics-clear-start').addEventListener('click',() => {
       clearOwner = reportOwner();
       const chapter = index.find(q => q.chapterNum === getFilters().chapterNum);
-      byId('analytics-clear-description').textContent = `Ștergi definitiv istoricul ${chapter ? 'pentru „' + chapter.name + '”' : 'pentru toate capitolele'}, inclusiv parcurgerile și corectările? Răspunsurile curente rămân salvate.`;
+      byId('analytics-clear-description').textContent = `Ștergi definitiv istoricul ${chapter ? 'pentru „' + chapter.name + '”' : 'pentru toate capitolele'}, inclusiv parcurgerile și corectările, din cont și de pe dispozitivele sincronizate? Ștergerea se aplică și istoricului încă nesincronizat. Răspunsurile curente, notițele și simulările rămân salvate.`;
       byId('analytics-clear-confirmation').hidden = false; byId('analytics-clear-start').hidden = true; byId('analytics-clear-cancel').focus();
     });
     byId('analytics-clear-cancel').addEventListener('click',() => { closeClear(); byId('analytics-clear-start').focus(); });
@@ -330,10 +314,7 @@
       finally { if (reportOwner() === expectedOwner) button.disabled = false; }
     });
     applyTabs();
-  } else document.querySelector('.testing-catalog-filter')?.addEventListener('click',event => {
-    const button = event.target.closest('[data-catalog-filter]'); if (!button) return;
-    catalogFilter = button.dataset.catalogFilter; applyCatalogFilter();
-  });
+  }
   analytics.subscribe(refresh);
   window.addEventListener('pageshow',event => { if (event.persisted) refresh(); });
   refresh();

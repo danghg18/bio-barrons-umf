@@ -92,12 +92,12 @@
       <nav id="analytics-history-pages" class="analytics-pagination" aria-label="Paginile parcurgerilor"></nav>
       <details id="analytics-activity-details" class="statistics-disclosure"><summary>Activitate și rezultate</summary><p id="analytics-filter-status"></p><div id="analytics-history-totals"></div><div id="analytics-activity"></div></details>
       <details id="analytics-method" class="statistics-disclosure"><summary>Despre aceste rezultate</summary><p>Rezultatul inițial rămâne neschimbat. Corectarea greșelilor face parte din aceeași parcurgere; o nouă parcurgere începe când reiei întregul capitol.</p><p>Procentele inițiale se calculează din grilele verificate. După terminarea capitolului, procentul după corectare include grilele corectate în rundele lui.</p><p id="analytics-saved-note" class="analytics-saved-note" hidden></p><p id="analytics-tracking-note"></p></details>
-      <details id="analytics-management" class="statistics-disclosure"><summary>Gestionarea istoricului</summary><section class="analytics-data-controls" aria-label="Gestionarea istoricului"><div><strong>Istoricul tău</strong><p>Se păstrează în acest browser. Reluarea grilelor nu îl șterge.</p></div><button type="button" id="analytics-clear-start" class="analytics-text-button">Șterge istoricul</button><div id="analytics-clear-confirmation" class="analytics-clear-confirmation" hidden><p id="analytics-clear-description"></p><div><button type="button" id="analytics-clear-confirm" class="analytics-danger-button">Da, șterge istoricul</button><button type="button" id="analytics-clear-cancel" class="analytics-text-button">Anulează</button></div></div><p id="analytics-clear-status" role="status"></p></section></details>
+      <details id="analytics-management" class="statistics-disclosure"><summary>Gestionarea istoricului</summary><section class="analytics-data-controls" aria-label="Gestionarea istoricului"><div><strong>Istoricul tău</strong><p>Cu cont, istoricul se sincronizează între dispozitive. Fără cont, rămâne local. Reluarea grilelor nu îl șterge.</p></div><button type="button" id="analytics-clear-start" class="analytics-text-button">Șterge istoricul</button><div id="analytics-clear-confirmation" class="analytics-clear-confirmation" hidden><p id="analytics-clear-description"></p><div><button type="button" id="analytics-clear-confirm" class="analytics-danger-button">Da, șterge istoricul</button><button type="button" id="analytics-clear-cancel" class="analytics-text-button">Anulează</button></div></div><p id="analytics-clear-status" role="status"></p></section></details>
     </section>
   </div>
-  <noscript><p class="analytics-storage-note">Activează JavaScript pentru a vedea statisticile salvate în acest browser.</p></noscript>
+  <noscript><p class="analytics-storage-note">Activează JavaScript pentru a vedea statisticile salvate local sau sincronizate în cont.</p></noscript>
 </main>
-<footer class="lab-footer"><div class="pilot-footer-row"><a href="index.html">BioMed</a><span>Progresul grilelor se păstrează în acest browser.</span><a href="index.html#lab-tools">Despre platformă</a></div></footer>
+<footer class="lab-footer"><div class="pilot-footer-row"><a href="index.html">BioMed</a><span>Cu cont, progresul și istoricul se sincronizează. Fără cont, se păstrează pe dispozitiv.</span><a href="index.html#lab-tools">Despre platformă</a></div></footer>
 
 </div>
 
@@ -121,21 +121,23 @@
 
 <script src="assets/js/chapters-data.js?v=20260926-circulator1"></script>
 <script src="assets/js/quiz-index.js?v=20260926-circulator1"></script>
-<script src="assets/js/user-storage.js?v=20260926-simulation1"></script>
+<script src="assets/js/analytics-sync.js?v=20260930-personal1"></script>
+<script src="assets/js/personal-records.js?v=20260930-personal1"></script>
+<script src="assets/js/user-storage.js?v=20260930-personal1"></script>
 <script src="assets/js/study-state.js?v=20260911-accounts1"></script>
 <script src="assets/js/supabase-config.js?v=20260911-accounts1"></script>
 <script src="assets/js/vendor/supabase.js?v=20260911-accounts1"></script>
 <script src="assets/js/supabase-client.js?v=20260911-accounts1"></script>
 <script src="assets/js/auth-state.js?v=20260911-accounts1"></script>
 <script src="assets/js/note-media.js"></script>
-<script src="assets/js/cloud-sync.js?v=20260911-accounts1"></script>
+<script src="assets/js/cloud-sync.js?v=20260930-personal1"></script>
 <script src="assets/js/search-text.js?v=20260928-umf1"></script>
-<script src="assets/js/home.js?v=20260914-search2"></script>
+<script src="assets/js/home.js?v=20260930-personal1"></script>
 <script src="assets/js/site-redesign.js?v=20260911-accounts1"></script>
-<script src="assets/js/quiz-analytics.js?v=20260911-accounts1"></script>
+<script src="assets/js/quiz-analytics.js?v=20260930-personal1"></script>
 <script src="assets/js/analytics-charts.js?v=20260912-progress1"></script>
-<script src="assets/js/analytics-ui.js?v=20260926-polish1"></script>
-<script src="assets/js/account-ui.js?v=20260926-polish1"></script>
+<script src="assets/js/analytics-ui.js?v=20260930-personal1"></script>
+<script src="assets/js/account-ui.js?v=20260930-personal1"></script>
 <script src="assets/js/note-content.js"></script>
 <script src="assets/js/note-editor.js"></script>
 <script src="assets/js/notes.js?v=20260926-polish1"></script>

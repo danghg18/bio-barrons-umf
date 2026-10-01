@@ -481,3 +481,14 @@ The notebook now reconciles persistent section editor instances instead of switc
 ### Notebook section availability (2026-09-19)
 
 `npm run generate` now derives `assets/js/notebook-sections.js` from the registered lesson HTML and includes it in the normal freshness check and offline inventory. The notebook loads this small catalog before its controller, so every empty section is writable without a second request for the lesson document. Authored section IDs, heading text and order, including legacy sections, are retained; existing notes still use `note:<chapter>:<section>`. The obsolete section-loading error and retry loop are removed. Image movement controls and dragging are retired; image insertion, captions, resizing, removal and previously saved placement remain available. Sticky-note movement is unchanged.
+
+### Personal history and lesson annotations (2026-09-30, local implementation)
+
+The static application now synchronizes persistent lesson highlights, genuine analytics rows and simulation snapshots through the existing account/outbox boundary. `personal-records.js` owns record convergence, `analytics-sync.js` owns attempt/traversal merges, and `lesson-highlights.js` owns exact anchors and annotation controls. IndexedDB remains an owner-scoped analytics projection. The invoker RPC and per-user RLS migration use compare-and-swap, retained tombstones and clear barriers; completed simulation results and deadlines remain immutable. Public catalog metadata is generated into delivered HTML from published registry resources. See [personal synchronization](personal-study-sync.md) for migration order and [scoring verification](simulation-scoring-sources.md) for the unconfirmed 2026 formula details. This entry does not imply deployment or a production migration.
+
+
+### Direct lesson entry (2026-09-30, local implementation)
+
+Eight lessons now open directly on their first content section: introduction, cell, respiratory system, digestive system, metabolism, urinary system, and both reproductive systems. Their separate chapter landing/table-of-contents entries and previous-page links are removed from navigation. The sidebar still exposes the actual lesson sections.
+
+The old sections retain their IDs, original source blocks and notebook section keys as hidden `data-lesson-redirect` aliases. Shared `lesson.js` and the two existing legacy routers resolve those aliases to the first content section. Search and study navigation omit the aliases; stored notes and completion records are not deleted. The legacy wrapper reports the resolved active section for focus and note context. `scripts/lesson-entry-test.mjs` covers direct entry, old bookmarks, invalid hashes, reload, legacy `?goto`, programmatic routing and shared Back/Forward behavior. No router migration or publication is implied.

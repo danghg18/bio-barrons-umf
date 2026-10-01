@@ -2,6 +2,7 @@
 .sim-panel,.sim-page{color:var(--ui-ink,#23473d);font-family:Figtree,system-ui,sans-serif;font-variant-numeric:tabular-nums;}
 .sim-panel{background:#fff;border:5px solid var(--ui-shell,#e8ede9);border-radius:28px;padding:28px;}
 .sim-builder{max-width:1040px;margin:0 auto 28px;scroll-margin-top:100px;}
+#lab-testing-catalog + .sim-builder{margin-top:28px;}
 .sim-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;margin-bottom:24px;}
 .sim-heading h2{font-size:24px;line-height:1.25;font-weight:600;letter-spacing:-.02em;margin:0 0 10px;}
 .sim-heading p{margin:0;line-height:1.6;color:#566b61;font-size:14px;}
@@ -115,3 +116,9 @@ body.bm-simulation{background:var(--ui-canvas,#f5f7f5);}
 @media(max-width:600px){.sim-builder{margin:0 16px 24px;}.sim-panel{padding:18px;border-radius:24px;}.sim-heading{display:block;margin-bottom:18px;}.sim-heading h2{font-size:22px;}.sim-heading>a{display:inline-block;margin-top:8px;}.sim-chapter-row{gap:10px;grid-template-columns:18px minmax(0,1fr);}.sim-allocation{grid-column:2;font-size:12px;margin-top:-8px;}.sim-allocation:empty{display:none;}.sim-config-footer{display:block;padding-top:18px;}.sim-start{text-align:left;margin-top:20px;}.sim-start .sim-primary{width:100%;}.sim-timer-config label{flex-wrap:wrap;}.sim-selection-tools{gap:8px;font-size:12px;}.sim-link-button{font-size:13px;}.sim-history-row{gap:12px;align-items:flex-start;}.sim-history-row>span:last-child{max-width:110px;}body.bm-simulation .sim-page{padding:24px 16px 40px;}.sim-page-heading h1{font-size:28px;}.sim-question{padding:18px;}.sim-question legend{font-size:17px;}.sim-question-head{display:block;}.sim-question-head span:last-child{display:block;text-align:left;margin-top:4px;}.sim-option{padding:12px;gap:9px;font-size:15px;}.sim-explanation{margin-left:50px;}.sim-map{grid-template-columns:repeat(auto-fit,minmax(44px,1fr));}.sim-sidebar{padding:12px;}.sim-toolbar{margin-bottom:12px;}.sim-workspace{gap:16px;}.sim-instruction{margin-bottom:12px;}.sim-grade-block{align-items:flex-start;}.sim-grade-block h2{font-size:19px;}.sim-grade{font-size:42px;}.sim-grade-block>div:first-child{min-width:0;}.sim-result-actions{align-items:stretch;flex-direction:column;}.sim-dialog-actions>*{flex:1;}.sim-pagination{gap:6px;}.sim-pagination a{padding:10px 14px;}}
 @media(prefers-reduced-motion:reduce){.sim-primary,.sim-secondary,.sim-link-button{transition:none;transform:none!important;}}
 @media print{.bm-simulation .lab-topbar,.sim-sidebar,.sim-pagination,.sim-result-actions,.sim-page-heading>a,.sim-notice,.sim-dialog,.sim-source,.sim-footnote{display:none!important;}.sim-workspace{display:block;}.sim-page{max-width:none;padding:0;}.sim-question,.sim-panel{border:0;box-shadow:none;break-inside:avoid;}.sim-question{padding:10px 0;}.sim-question input:disabled{opacity:1;}}
+
+/* Separate continuation and confirmed deletion actions. */
+.sim-history-entry { display: flex; align-items: center; gap: 12px; }
+.sim-history-entry .sim-history-row { flex: 1; min-width: 0; }
+.sim-history-entry > button { flex: none; }
+@media (max-width: 480px) { .sim-history-entry { gap: 6px; } }

@@ -67,7 +67,9 @@ try{
  await page.locator('.sim-question input').nth(1).check();await page.waitForSelector('#sim-storage-error:not([hidden])');
  const downloadPromise=page.waitForEvent('download');await page.getByRole('button',{name:'Exportă testul',exact:true}).click();const download=await downloadPromise;
  const exported=JSON.parse(await readFile(await download.path(),'utf8'));assert.ok(exported.answers[0].includes('B'));
- await page.evaluate(()=>BBUserStorage.activate('alice'));await page.waitForSelector('#sim-unavailable:not([hidden])');assert.equal(await page.locator('.sim-question').count(),0,'Account switch removes previous owner content immediately');
+ await page.evaluate(()=>BBUserStorage.activate('alice'));await page.waitForSelector('.sim-question');
+ assert.ok(await page.evaluate(()=>BBSimulationStore.list().length>0),'First account imports guest simulations');
+ await page.evaluate(()=>BBUserStorage.activate('bob'));await page.waitForSelector('#sim-unavailable:not([hidden])');assert.equal(await page.locator('.sim-question').count(),0,'Account switch removes previous owner content immediately');
  assert.equal(await page.evaluate(()=>BBSimulationStore.list().length),0);
  assert.deepEqual(errors,[]);
  console.log('Simulation browser: configuration, generation, navigation, resume, submission and review passed.');

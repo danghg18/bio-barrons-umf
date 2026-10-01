@@ -3,7 +3,7 @@ window.BB_NOTEBOOK_SECTIONS = {
   "1": [
     {
       "id": "home",
-      "title": "Pagina capitolului"
+      "title": "Capitolul 1 – Introducere în anatomie și fiziologie"
     },
     {
       "id": "introducere",
@@ -29,7 +29,7 @@ window.BB_NOTEBOOK_SECTIONS = {
   "3": [
     {
       "id": "home",
-      "title": "Pagina capitolului"
+      "title": "Capitolul 3 - Celula și fiziologia celulară"
     },
     {
       "id": "introducere",
@@ -319,7 +319,7 @@ window.BB_NOTEBOOK_SECTIONS = {
   "20": [
     {
       "id": "home",
-      "title": "Pagina capitolului"
+      "title": "20. Sistemul urinar"
     },
     {
       "id": "rinichii",
@@ -345,7 +345,7 @@ window.BB_NOTEBOOK_SECTIONS = {
   "22": [
     {
       "id": "home",
-      "title": "Pagina capitolului"
+      "title": "22. Sistemul reproducător masculin"
     },
     {
       "id": "testiculele",
@@ -363,7 +363,7 @@ window.BB_NOTEBOOK_SECTIONS = {
   "23": [
     {
       "id": "home",
-      "title": "Pagina capitolului"
+      "title": "23. Sistemul reproducător feminin"
     },
     {
       "id": "intro",

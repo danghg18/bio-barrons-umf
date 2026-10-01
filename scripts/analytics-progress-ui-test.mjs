@@ -234,6 +234,10 @@ try {
 
   await captureTabs('new-run');
 
+  // Claim the guest fixture into account A first: the first account now imports
+  // real guest history. This scenario must switch between two private owners.
+  await page.evaluate(async()=>{BBUserStorage.activate('statistics-owner-review-a');await BBQuizAnalytics.ready;await BBQuizAnalytics.getReport({days:'all'});});
+  await ready();
   // An account switch closes an old confirmation before any new report resolves.
   await tab('Istoric');
   await page.locator('.analytics-run > summary').first().click();

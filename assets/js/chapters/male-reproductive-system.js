@@ -20,6 +20,8 @@ const SUB_NAVS = {
 // ════ NAVIGATION ════
 function goto(sec, anchor) {
   if (!document.getElementById('page-' + sec)) sec = 'home';
+  const redirect = document.getElementById('page-' + sec).getAttribute('data-lesson-redirect');
+  if (redirect) sec = redirect;
   document.querySelectorAll('.page-section').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('#sidenav a').forEach(a => a.classList.remove('active'));
   document.querySelectorAll('.lab-nav a').forEach(a => a.classList.remove('active'));
@@ -56,52 +58,7 @@ window.addEventListener('scroll',()=>{ document.getElementById('top').style.disp
 // ════ ACCORDION ════
 function tog(h){ h.classList.toggle('open'); h.nextElementSibling.classList.toggle('show'); }
 
-// ════ HIGHLIGHTER ════
-let hlMode = false;
-function toggleHighlighter() {
-  hlMode = !hlMode;
-  document.body.classList.toggle('hl-mode', hlMode);
-  const hlBtn = document.getElementById('hl-btn');
-  const navHlBtn = document.getElementById('nav-hl-btn');
-  const navHlLabel = document.getElementById('nav-hl-label');
-  if (hlBtn) hlBtn.classList.toggle('active', hlMode);
-  if (navHlBtn) {
-    navHlBtn.classList.toggle('hl-on', hlMode);
-    if(navHlLabel) navHlLabel.textContent = hlMode ? 'Evidențiator ON' : 'Evidențiator';
-  }
-}
-function applyHighlight(range) {
-  const ancestor = range.commonAncestorContainer;
-  const root = ancestor.nodeType === 3 ? ancestor.parentNode : ancestor;
-  const textNodes = [];
-  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
-  while (walker.nextNode()) {
-    if (range.intersectsNode(walker.currentNode)) textNodes.push(walker.currentNode);
-  }
-  textNodes.forEach(function(tn) {
-    if (tn.parentNode && tn.parentNode.classList && tn.parentNode.classList.contains('hl')) return;
-    let start = 0, end = tn.length;
-    if (tn === range.startContainer) start = range.startOffset;
-    if (tn === range.endContainer) end = range.endOffset;
-    if (start >= end) return;
-    const nr = document.createRange();
-    nr.setStart(tn, start);
-    nr.setEnd(tn, end);
-    const mark = document.createElement('mark');
-    mark.className = 'hl';
-    nr.surroundContents(mark);
-  });
-}
-
-document.addEventListener('mouseup', function(e){
-  if (!hlMode) return;
-  const sel = window.getSelection();
-  if (!sel || sel.isCollapsed || !sel.rangeCount) return;
-  const range = sel.getRangeAt(0);
-  if (!range || range.collapsed) return;
-  sel.removeAllRanges();
-  applyHighlight(range);
-});
+// The shared lesson controller owns highlighter preferences and selections.
 
 // ════ NAV MOBILE ════
 function closeNav(){
@@ -326,7 +283,7 @@ function toggleSettingsFab(){
 }
 function updateFabStates(){
   var hl = document.getElementById('sfab-hl');
-  if(hl) hl.classList.toggle('on', typeof hlMode !== 'undefined' && hlMode);
+  if(hl) hl.classList.toggle('on', document.body.classList.contains('hl-mode'));
 }
 document.addEventListener('click', function(e){
   var panel = document.getElementById('settings-panel');

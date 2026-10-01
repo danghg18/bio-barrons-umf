@@ -1,0 +1,33 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import vm from 'node:vm';
+const window={};
+try { vm.runInNewContext(await readFile(new URL('../assets/js/personal-records.js',import.meta.url),'utf8'),{window}); } catch(e) {if(e.code!=='ENOENT')throw e;}
+assert.ok(window.BBPersonalRecords,'Personal record conflict rules must exist');
+const {merge,isKey}=window.BBPersonalRecords;
+const key='bb.simulation.v1:test';
+const run={version:1,id:'test',scoringVersion:'v1',status:'active',revision:1,startedAt:100,deadline:1000,questions:[{id:'one'},{id:'two'}],answers:[[],[]],answerEdits:{}};
+const a={...run,revision:2,answers:[['A'],[]],answerEdits:{0:{id:'a',counter:1,selected:['A']}}};
+const b={...run,revision:2,answers:[[],['B']],answerEdits:{1:{id:'b',counter:1,selected:['B']}}};
+const merged=merge(key,a,b);
+assert.deepEqual(JSON.parse(JSON.stringify(merged.answers)),[['A'],['B']]);
+assert.equal(merged.deadline,1000);
+assert.deepEqual(merge(key,a,b),merge(key,b,a),'Merge is commutative');
+assert.deepEqual(merge(key,merged,a),merged,'Repeated migration is idempotent');
+const conflict={...a,answers:[['C'],[]],answerEdits:{0:{id:'c',counter:1,selected:['C']}}};
+assert.ok(merge(key,a,conflict).syncConflicts.length,'Competing answers are retained');
+// Different offline editing frequencies do not establish causal ordering.
+const twice={...a,answers:[['D'],[]],answerEdits:{0:{id:'a2',counter:2,selected:['D'],seen:['a']}}};
+const unequal=merge(key,twice,conflict);
+assert.equal(unequal.answers[0][0],'D','Higher logical counter chooses the visible answer');
+assert.ok(unequal.syncConflicts.some(c=>c.type==='answer'&&c.index===0&&c.variants.some(v=>v.id==='c')),'Unequal-counter offline answer must remain exportable');
+assert.deepEqual(unequal,merge(key,conflict,twice),'Unequal-counter merge converges in either order');
+assert.equal(merge(key,twice,a).syncConflicts.length,0,'An explicitly observed previous edit is sequential, not a conflict');
+const completed={...a,status:'completed',completedAt:900,result:{grade:4},submissionId:'s'};
+assert.equal(merge(key,b,completed).result.grade,4);
+assert.deepEqual(JSON.parse(JSON.stringify(merge(key,b,completed).answers)),[['A'],[]],'No post-submit answer mutation');
+assert.equal(merge(key,a,{...b,deleted:true}).deleted,true);
+assert.equal(merge('bb.highlight.v1:x',{id:'x',deleted:true},{id:'x',color:'pink'}).deleted,true);
+assert.equal(isKey('note:1:home'),false);
+assert.equal(isKey('bb.analytics.v1:attempt:a'),true);
+console.log('PASS personal records: convergence, independent answers, conflicts, immutable submission, tombstones');

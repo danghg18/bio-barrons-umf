@@ -14,6 +14,12 @@
     return section && section.id.indexOf("page-") === 0 ? section.id.slice(5) : "";
   }
 
+  function resolveRoute(route) {
+    var section = routes.get(route);
+    var redirect = section && section.getAttribute("data-lesson-redirect");
+    return redirect && routes.has(redirect) ? redirect : route;
+  }
+
   function routeFromHash() {
     var hash = window.location.hash.slice(1);
     if (!hash) return "";
@@ -83,6 +89,7 @@
   }
 
   function activate(route, options) {
+    route = resolveRoute(route);
     var section = routes.get(route);
     if (!section) return false;
     options = options || {};
@@ -108,6 +115,7 @@
 
   function navigate(route, options) {
     if (!initialized) init();
+    route = resolveRoute(route);
     route = routes.has(route) ? route : defaultRoute;
     options = options || {};
     var hash = "#" + encodeURIComponent(route);
@@ -122,6 +130,7 @@
   function handleLocation(source, focus) {
     var route = routeFromHash();
     if (!route) return activate(defaultRoute, { source: source, focus: focus });
+    if (resolveRoute(route) !== route) return navigate(route, { source: source, focus: focus });
     if (routes.has(route)) return activate(route, { source: source, focus: focus });
 
     // Keep valid in-page anchors (for example the skip link) outside the router.
@@ -181,7 +190,7 @@
     },
     getRoutes: function () {
       if (!initialized) init();
-      return Array.from(routes.keys());
+      return Array.from(routes.keys()).filter(function (route) { return resolveRoute(route) === route; });
     },
     getDefaultRoute: function () {
       if (!initialized) init();

@@ -1,4 +1,4 @@
-/* Local quiz history. Saved quiz answers remain owned by quiz-player.js. */
+/* Owner-scoped quiz history projection. Saved answers remain owned by quiz-player.js. */
 (function () {
   'use strict';
   if (window.BBQuizAnalytics) return;
@@ -24,6 +24,73 @@
   var serial = Promise.resolve();
   var channel = null;
   var notificationKey = 'bb.quiz.analytics.changed.v1';
+
+  var storage = window.BBUserStorage;
+  var sync = window.BBAnalyticsSync;
+  var recordPrefix = 'bb.analytics.v1:';
+  var clearPrefix = 'bb.analytics-clear.v1:';
+  var kinds = {attempts:'attempt', runs:'run', metadata:'metadata'};
+  var knownClears = [];
+  function refreshClears() { knownClears = canSync() ? storage.entries(clearPrefix).map(function (entry) { return entry[1]; }).filter(Boolean) : []; }
+  function canSync() { return !disposed && storage && sync && typeof storage.entries === 'function' && scope === (storage.owner() === 'guest' ? '' : ':' + storage.owner()); }
+  function clearIds(key) {
+    if (!canSync()) return [];
+    return knownClears.filter(function (barrier) { return !barrier.quizKey || barrier.quizKey === key; }).map(function (barrier) { return barrier.id; }).sort();
+  }
+  function survives(row, kind) {
+    return !row.deleted && clearIds(kind === 'metadata' ? row.key : row.storageKey).every(function (id) { return (row.clearIds || []).includes(id); });
+  }
+  function rowKey(kind, row) { return recordPrefix + kind + ':' + (kind === 'metadata' ? row.key : row.id); }
+  function project(state, attemptsStore, metadataStore, runsStore) {
+    if (!canSync()) return;
+    refreshClears();
+    var stores = {attempts:attemptsStore, metadata:metadataStore, runs:runsStore};
+    Object.keys(kinds).forEach(function (collection) {
+      var kind = kinds[collection], store = stores[collection];
+      var rows = new Map(state[collection].map(function (row) { return [rowKey(kind, row), row]; }));
+      storage.entries(recordPrefix + kind + ':').forEach(function (entry) {
+        var row = entry[1];
+        if (!row || row.version !== 1 || !(kind === 'metadata' ? row.key : row.id)) return;
+        rows.set(entry[0], sync.merge(entry[0], rows.get(entry[0]), row));
+      });
+      state[collection].forEach(function (row) { if (store && !survives(rows.get(rowKey(kind, row)), kind)) store.delete(kind === 'metadata' ? row.key : row.id); });
+      state[collection] = Array.from(rows.values()).filter(function (row) { return survives(row, kind); });
+      state[collection].forEach(function (row) { if (store) store.put(row); });
+    });
+    index.forEach(function (quiz) {
+      if (!state.metadata.some(function (row) { return row.key === quiz.storageKey; })) {
+        var row = baseline(quiz); state.metadata.push(row); if (metadataStore) metadataStore.put(row);
+      }
+    });
+  }
+  function synchronizeMutation(mutate) {
+    return function (state, attemptsStore, metadataStore, runsStore) {
+      project(state, attemptsStore, metadataStore, runsStore);
+      var before = new Map();
+      Object.keys(kinds).forEach(function (name) { state[name].forEach(function (row) { before.set(rowKey(kinds[name], row), JSON.stringify(row)); }); });
+      var result = mutate ? mutate(state, attemptsStore, metadataStore, runsStore) : undefined;
+      if (canSync() && mutate) Object.keys(kinds).forEach(function (name) {
+        var store = name === 'attempts' ? attemptsStore : name === 'runs' ? runsStore : metadataStore;
+        state[name].forEach(function (row) {
+          if (before.get(rowKey(kinds[name], row)) !== JSON.stringify(row)) {
+            row.syncUpdatedAt = new Date().toISOString();
+            if (store) store.put(row);
+          }
+        });
+      });
+      return result;
+    };
+  }
+  function publish() {
+    if (!canSync()) return;
+    Object.keys(kinds).forEach(function (name) {
+      snapshot[name].forEach(function (row) {
+        var key = rowKey(kinds[name], row), previous = storage.get(key);
+        var value = sync.merge(key, previous, Object.assign({version:1}, row));
+        if (sync.stable(previous) !== sync.stable(value) && !storage.set(key, value)) canPersist = false;
+      });
+    });
+  }
 
   function current(quiz) {
     if (disposed) return {};
@@ -60,7 +127,7 @@
 
   function baseline(quiz) {
     var saved = current(quiz);
-    return { key: quiz.storageKey, since: new Date().toISOString(), first: {}, unknown: quiz.questions.filter(function (question) {
+    return { key: quiz.storageKey, clearIds:clearIds(quiz.storageKey), since: new Date().toISOString(), first: {}, unknown: quiz.questions.filter(function (question) {
       return saved[question.id] && saved[question.id].verified;
     }).map(function (question) { return question.id; }) };
   }
@@ -87,10 +154,10 @@
   }
   window.addEventListener('storage', storageChanged);
 
-  function openDatabase() {
+  function openDatabase(databaseScope) {
     return new Promise(function (resolve, reject) {
       var request;
-      try { request = window.indexedDB.open('bb.quiz.analytics.v1' + scope, 2); }
+      try { request = window.indexedDB.open('bb.quiz.analytics.v1' + (databaseScope === undefined ? scope : databaseScope), 2); }
       catch (error) { reject(error); return; }
       request.onupgradeneeded = function () {
         var db = request.result;
@@ -147,8 +214,9 @@
     if (disposed) throw new Error('Identity changed');
     if (database) {
       try {
-        var result = await transaction(mutate ? 'readwrite' : 'readonly', mutate);
+        var result = await transaction(mutate || canSync() ? 'readwrite' : 'readonly', canSync() ? synchronizeMutation(mutate) : mutate);
         snapshot = result.snapshot;
+        publish();
         return result.value;
       } catch (error) {
         if (error.analyticsMutationRejected) throw error;
@@ -160,7 +228,9 @@
       }
     }
     if (disposed) throw new Error('Identity changed');
-    return mutate ? mutate(snapshot, null, null, null) : undefined;
+    var result = canSync() ? synchronizeMutation(mutate)(snapshot, null, null, null) : mutate ? mutate(snapshot, null, null, null) : undefined;
+    publish();
+    return result;
   }
 
   function enqueue(operation) {
@@ -178,6 +248,20 @@
       };
     } catch (_) { canPersist = false; }
     if (disposed) { if (database) database.close(); database = null; return; }
+    // The storage owner authorizes guest import; never inspect another account database.
+    if (canSync() && storage.canClaimGuestRecords && storage.canClaimGuestRecords()) {
+      var guestDatabase;
+      try {
+        guestDatabase = await openDatabase('');
+        var guest = (await transaction('readonly', null, guestDatabase)).snapshot;
+        if (canSync() && storage.canClaimGuestRecords()) {
+          var records = {};
+          Object.keys(kinds).forEach(function (name) { guest[name].forEach(function (row) { records[rowKey(kinds[name], row)] = Object.assign({version:1}, row); }); });
+          storage.claimGuestRecords(records);
+        }
+      } catch (_) { /* Original guest history stays intact and can be retried. */ }
+      finally { if (guestDatabase) guestDatabase.close(); }
+    }
     await access(function (state, attemptsStore, metadataStore, runsStore) {
       index.forEach(function (quiz) {
         var item = state.metadata.find(function (meta) { return meta.key === quiz.storageKey; });
@@ -212,7 +296,7 @@
 
   function makeRun(quiz, answers) {
     var initial = cleanAnswers(quiz, answers);
-    return {id:newAttemptId(),storageKey:quiz.storageKey,startedAt:Object.values(initial).some(function (answer) { return answer.verified; }) ? null : new Date().toISOString(),
+    return {id:newAttemptId(),storageKey:quiz.storageKey,clearIds:clearIds(quiz.storageKey),startedAt:Object.values(initial).some(function (answer) { return answer.verified; }) ? null : new Date().toISOString(),
       lastAt:null,completedAt:null,closedAt:null,status:'active',answers:initial,
       contentRevision:quiz.contentRevision || 0,questionIds:quiz.questions.map(function (q) { return q.id; })};
   }
@@ -363,7 +447,7 @@
   // Its ticket survives a crash between those operations and is completed on reload.
   async function durable(mutate) {
     if (database) {
-      try { var result = await transaction('readwrite', mutate); snapshot = result.snapshot; return result.value; }
+      try { var result = await transaction('readwrite', canSync() ? synchronizeMutation(mutate) : mutate); snapshot = result.snapshot; publish(); return result.value; }
       catch (error) { if (!error.analyticsMutationRejected) { canPersist = false; notify(false); } throw error; }
     }
     if (hadPersistentDatabase || !canPersist) throw new Error('Parcurgerea nu poate fi salvată. Răspunsurile sunt păstrate.');
@@ -439,7 +523,7 @@
       // An old cached player must not stamp a revised question as freshly reviewed.
       // Missing revisions remain compatible with the original content edition.
       if ((input.contentRevision || 0) !== (question.contentRevision || 0)) return false;
-      var event = {id:input.attemptId,storageKey:input.storageKey,questionId:input.questionId,correct:input.correct,
+      var event = {id:input.attemptId,storageKey:input.storageKey,clearIds:clearIds(input.storageKey),questionId:input.questionId,correct:input.correct,
         selected:Array.from(new Set(input.selected)).sort(),at:new Date().toISOString()};
       if (Array.isArray(input.answerKey)) event.answerKey = input.answerKey.slice().sort();
       event.contentRevision = question.contentRevision || 0;
@@ -726,7 +810,12 @@
       await ready;
       var quizzes = index.filter(function (quiz) { return chapterNum == null || quiz.chapterNum === Number(chapterNum); });
       var keys = new Set(quizzes.map(function (quiz) { return quiz.storageKey; }));
+      if (!quizzes.length) return;
+      refreshClears();
+      var barriers = (chapterNum == null ? [null] : quizzes.map(function (quiz) { return quiz.storageKey; })).map(function (key) { return {version:1,id:newAttemptId(),quizKey:key}; });
+      var removed = [];
       function erase(state, attemptsStore, metadataStore, runsStore) {
+        ['attempts', 'runs'].forEach(function (name) { state[name].forEach(function (row) { if (keys.has(row.storageKey)) removed.push([rowKey(kinds[name], row), Object.assign({version:1}, row, {deleted:true})]); }); });
         state.runs = state.runs.filter(function (run) { if (!keys.has(run.storageKey)) return true; if (runsStore) runsStore.delete(run.id); return false; });
         state.attempts = state.attempts.filter(function (event) {
           if (!keys.has(event.storageKey)) return true;
@@ -736,6 +825,8 @@
         state.metadata = state.metadata.filter(function (meta) { return !keys.has(meta.key); });
         quizzes.forEach(function (quiz) {
           var meta = baseline(quiz);
+          meta.clearIds = meta.clearIds.concat(barriers.filter(function (barrier) { return !barrier.quizKey || barrier.quizKey === quiz.storageKey; }).map(function (barrier) { return barrier.id; }));
+          meta.syncUpdatedAt = new Date().toISOString();
           state.metadata.push(meta);
           if (metadataStore) metadataStore.put(meta);
         });
@@ -756,12 +847,20 @@
       } else {
         erase(snapshot, null, null);
       }
+      if (canSync()) {
+        barriers.forEach(function (barrier) { storage.set(clearPrefix + barrier.id, barrier); });
+        removed.forEach(function (entry) { storage.set(entry[0], entry[1]); });
+        publish();
+      }
       notify(true);
     });
   }
 
+  function cacheChanged() { enqueue(async function () { await ready; await access(); notify(false); }).catch(function () {}); }
+  document.addEventListener('bb:cache-change', cacheChanged);
   return {dispose:function () {
     disposed = true;
+    document.removeEventListener('bb:cache-change', cacheChanged);
     listeners.clear();
     if (channel) channel.close();
     window.removeEventListener('storage', storageChanged);

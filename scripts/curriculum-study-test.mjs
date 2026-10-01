@@ -30,7 +30,7 @@ try{
  const chapters=[];
  for(const chapter of scope.chapters){
   const html=await readFile(resolve(root,chapter.url),'utf8');
-  const routes=await page.evaluate(html=>{const doc=new DOMParser().parseFromString(html,'text/html');return [...doc.querySelectorAll('.page-section[id^="page-"]')].map(s=>({id:s.id.slice(5),excluded:s.hasAttribute('data-curriculum-excluded'),home:s.classList.contains('chapter-home')}));},html);
+  const routes=await page.evaluate(html=>{const doc=new DOMParser().parseFromString(html,'text/html');return [...doc.querySelectorAll('.page-section[id^="page-"]')].map(s=>({id:s.id.slice(5),excluded:s.hasAttribute('data-curriculum-excluded'),home:s.classList.contains('chapter-home'),redirect:s.getAttribute('data-lesson-redirect')}));},html);
   for(const id of legacy[chapter.url]?.ids.filter(id=>id.startsWith('page-'))||[])assert.ok(routes.some(r=>r.id===id.slice(5)),`${chapter.url}: legacy route ${id}`);
   chapters.push({...chapter,routes});
  }
@@ -42,7 +42,7 @@ try{
  const ready=async()=>{await page.evaluate(()=>BBAuth.ready);await page.waitForFunction(()=>window.BBCloudSync?.getState().status==='synced'&&document.body.dataset.bbSharedReady==='true');};
  await ready();let count=0;
  for(const c of chapters){
-  for(const r of c.routes){
+  for(const r of c.routes.filter(route=>!route.redirect)){
    await page.goto(base+c.url+'?curriculum-study='+encodeURIComponent(r.id)+'#'+encodeURIComponent(r.id));await ready();
    assert.equal(await page.locator('.page-section.active').getAttribute('id'),'page-'+r.id,`${c.url}#${r.id}: route context`);
    await page.locator('#bb-notes-toggle').click();
@@ -50,7 +50,7 @@ try{
    await page.reload();await ready();await page.locator('#bb-notes-toggle').click();
    await page.waitForFunction(body=>document.querySelector('#bb-note-body')?.innerText===body,note(c.number,r.id));
    // Exercise the actual shared or legacy in-document router with the notes panel open.
-   const other=c.routes.find(item=>item.id!==r.id);
+   const other=c.routes.find(item=>!item.redirect&&item.id!==r.id);
    if(other){
     for(const target of [other.id,r.id]){
      await page.evaluate(id=>{if(window.BBLessonNavigation)BBLessonNavigation.navigate(id);else window.goto(id);},target);
@@ -65,7 +65,7 @@ try{
    if(r.excluded)assert.equal(await page.locator('#page-'+r.id+' .bb-section-end-sentinel').count(),0);
    count++;
   }
-  console.log(`PASS chapter ${c.number}: ${c.routes.length} route notes after navigation/reload; stored progress retained`);
+  console.log(`PASS chapter ${c.number}: ${c.routes.filter(route=>!route.redirect).length} content route notes after navigation/reload; stored progress retained`);
  }
  assert.deepEqual(errors,[],'No browser runtime errors');
  console.log(`PASS curriculum study: ${chapters.length} lessons, ${count} routes, ${notes.length} saved notes, excluded routes excluded from progress.`);

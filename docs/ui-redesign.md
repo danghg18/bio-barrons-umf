@@ -54,7 +54,7 @@ Figures preserve source URLs, image content and captions. Images fit their avail
 
 All public pages load `light-mode.js` synchronously in the head. It sets `color-scheme: light`, removes any body `dark` class at initialization, and attempts to remove only `localStorage.darkMode` inside a catch-protected block. Lessons author their shared body class so first paint uses the intended canvas without waiting for controller startup.
 
-Removed: homepage button/feature/footer entry, legacy lesson buttons and settings rows, shared generated theme controls, restore/toggle/save functions, wrapper code, old mode-specific CSS, and tests expecting a theme toggle. Manifest and HTML theme-color metadata now use the light canvas. Highlighter keys and quiz state are untouched; highlighted passages remain temporary and are not persisted.
+Removed: homepage button/feature/footer entry, legacy lesson buttons and settings rows, shared generated theme controls, restore/toggle/save functions, wrapper code, old mode-specific CSS, and tests expecting a theme toggle. Manifest and HTML theme-color metadata now use the light canvas. Highlighter preference keys and quiz state are unchanged. As of 30 September 2026, lesson passages are persisted by `lesson-highlights.js`; see `docs/lesson-highlights.md`. Quiz-page highlighting remains temporary.
 
 ## Verification performed
 

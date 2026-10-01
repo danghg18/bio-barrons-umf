@@ -13,7 +13,7 @@ assert.ok(registry, 'Every published quiz needs an explicit question-to-topic re
 const fixture = await mkdtemp(join(tmpdir(), 'bb-quiz-topics-'));
 try {
   for (const folder of ['scripts', 'data', 'assets/js']) await mkdir(join(fixture, folder), { recursive: true });
-  for (const file of ['scripts/generate-site-assets.mjs', 'scripts/site-registry.mjs', 'scripts/notebook-sections.mjs', 'scripts/html-entities.json', 'assets/js/chapters-data.js']) await cp(new URL(file, root), join(fixture, file));
+  for (const file of ['scripts/generate-site-assets.mjs', 'scripts/public-metadata.mjs', 'scripts/site-registry.mjs', 'scripts/notebook-sections.mjs', 'scripts/html-entities.json', 'assets/js/chapters-data.js']) await cp(new URL(file, root), join(fixture, file));
   for (const file of await readdir(root)) if (file.endsWith('.html')) await cp(new URL(file, root), join(fixture, file));
   for (const file of await readdir(new URL('assets/js/', root))) if (/^grile-.*-data\.js$/.test(file)) await cp(new URL('assets/js/' + file, root), join(fixture, 'assets/js', file));
   const run = async data => {

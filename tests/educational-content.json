@@ -8,7 +8,7 @@
     },
     {
       "id": "page-introducere",
-      "text": "87783207c7dd02d004f93391a59507a7051253b361136a6786052d21e978d0af",
+      "text": "43893546eab2a3ff7ebe9a86407a954c4c7ce58d0b8ab4fa410e8796c1ee9f83",
       "images": [],
       "tables": []
     },
@@ -107,7 +107,7 @@
     },
     {
       "id": "page-introducere",
-      "text": "3d005f358f6596bf3dde9c8d1f4f3bd495e3c81d5de4746f09d4a2bc4aa0ceb5",
+      "text": "a0d053f7cb89cf685b979fd991d5fb1a5e7f25c57046124d903ba057194f1024",
       "images": [],
       "tables": []
     },
@@ -140,7 +140,7 @@
     },
     {
       "id": "page-cavitati",
-      "text": "9905a210af25eb8f737589d710be2527d8d338cb1ffa29ec5f3b47b90be608d6",
+      "text": "87199a4d1446efc0341b2d4629df4a2334a729ef94087bbc5212bd2ffed168e5",
       "images": [
         "assets/images/chapters/introduction/figura-1-4-color.jpg",
         "assets/images/chapters/introduction/figura-1-5-color.jpg"
@@ -229,7 +229,7 @@
     },
     {
       "id": "page-rinichii",
-      "text": "ac4d464fc58c35da84960a62ce3484f83d0f82b5c759fd2220463eadfb8b395b",
+      "text": "3e13824f3959132d5602cc5c96e981d835a6ef0d5f01bb8444b70beb5724a565",
       "images": [
         "assets/images/chapters/renal-system/figura-20-1-color.jpg",
         "assets/images/chapters/renal-system/figura-20-2-color.jpg",
@@ -287,7 +287,7 @@
     },
     {
       "id": "page-intro",
-      "text": "3371dbf491aef82c608e3a988b50f9c30d0bee52f0673e55825769c276393b61",
+      "text": "13f69eb217a10d924c9728cc940d1d054e28949ff794ce2574a86fd9321e0c16",
       "images": [
         "assets/images/chapters/female-reproductive-system/figura-23-1-color.jpg"
       ],
@@ -330,7 +330,7 @@
     },
     {
       "id": "page-testiculele",
-      "text": "2f8e1a9bd7e9001d8847ebe2eb31cfd879522a1e936dcdffbc5b1ebcee4fc8d0",
+      "text": "6faa9ff84c6af1a86f6433d6371aa334b49e5d675e94db8f43359ca11f1f7293",
       "images": [
         "assets/images/chapters/male-reproductive-system/figura-22-1-color.jpg",
         "assets/images/chapters/male-reproductive-system/figura-22-2-color.jpg",
@@ -714,7 +714,7 @@
     },
     {
       "id": "page-anatomie",
-      "text": "bbba87ccaa924b3d5e3fa29130b27c1d752c8e3ef6c8302337994a457405fe46",
+      "text": "c7097d75eb1ca12b7e4d143344eb8fcb4826a371c3f115f6790b3df6f549c36c",
       "images": [
         "assets/images/chapters/respiratory-system/figura-17-1-color.jpg",
         "assets/images/chapters/respiratory-system/figura-17-2-color.jpg",
@@ -754,7 +754,7 @@
     },
     {
       "id": "page-tractul-gastrointestinal",
-      "text": "377e9b5245db686adca5168cac2adab9017981ce6340e691e2263a0156e744d5",
+      "text": "c10cf160b1f8b4e55f16c0d919670a7fba7bca654e66a59552c5ff52150c7e33",
       "images": [
         "assets/images/chapters/digestive-system/figura-18-1-color.jpg",
         "assets/images/chapters/digestive-system/figura-18-2-color.jpg",
@@ -808,7 +808,7 @@
     },
     {
       "id": "page-metabolismul-glucidelor",
-      "text": "244dfcbf43438bac683bf1d1635201d7e7c1ccd2b968b03114f621b500a5c499",
+      "text": "b754a39eeaa4686e528567a3df9f150ec9e148e1c3b6a32838de494f936c9ad9",
       "images": [
         "assets/images/chapters/metabolism-nutrition/figura-19-1-barrons.webp",
         "assets/images/chapters/metabolism-nutrition/figura-19-8-color.jpg"

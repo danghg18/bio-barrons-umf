@@ -9,6 +9,8 @@ const SUB_NAVS = {
 
 function goto(sec, anchor) {
   if (!document.getElementById('page-' + sec)) sec = 'home';
+  const redirect = document.getElementById('page-' + sec).getAttribute('data-lesson-redirect');
+  if (redirect) sec = redirect;
   document.querySelectorAll('.page-section').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('#sidenav a').forEach(a => a.classList.remove('active'));
   document.querySelectorAll('.lab-nav a').forEach(a => a.classList.remove('active'));
@@ -57,51 +59,7 @@ function showToast(msg){
   setTimeout(()=>t.classList.remove('show'),2500);
 }
 
-// ════ HIGHLIGHTER ════
-let hlMode = false;
-
-function toggleHighlighter() {
-  hlMode = !hlMode;
-  document.body.classList.toggle('hl-mode', hlMode);
-  var navBtn = document.getElementById('nav-hl-btn');
-  var navLbl = document.getElementById('nav-hl-label');
-  if(navBtn) navBtn.classList.toggle('hl-on', hlMode);
-  if(navLbl) navLbl.textContent = hlMode ? 'Evidențiator ON' : 'Evidențiator';
-  showToast(hlMode ? '🖊 Evidențiator activat – selectează text!' : 'Evidențiator dezactivat');
-}
-
-function applyHighlight(range) {
-  const ancestor = range.commonAncestorContainer;
-  const root = ancestor.nodeType === 3 ? ancestor.parentNode : ancestor;
-  const textNodes = [];
-  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
-  while (walker.nextNode()) {
-    if (range.intersectsNode(walker.currentNode)) textNodes.push(walker.currentNode);
-  }
-  textNodes.forEach(function(tn) {
-    if (tn.parentNode && tn.parentNode.classList && tn.parentNode.classList.contains('hl')) return;
-    let start = 0, end = tn.length;
-    if (tn === range.startContainer) start = range.startOffset;
-    if (tn === range.endContainer) end = range.endOffset;
-    if (start >= end) return;
-    const nr = document.createRange();
-    nr.setStart(tn, start);
-    nr.setEnd(tn, end);
-    const mark = document.createElement('mark');
-    mark.className = 'hl';
-    nr.surroundContents(mark);
-  });
-}
-
-document.addEventListener('mouseup', function(e) {
-  if (!hlMode) return;
-  if (e.target.closest('button, input, select, textarea, nav, #hl-btn')) return;
-  const sel = window.getSelection();
-  if (!sel || sel.isCollapsed || sel.toString().trim() === '') return;
-  const range = sel.getRangeAt(0);
-  sel.removeAllRanges();
-  applyHighlight(range);
-});
+// The shared lesson controller owns highlighter preferences and selections.
 
 var lessonSearchState = {
   term: '',
@@ -334,7 +292,7 @@ function toggleSettingsFab(){
 }
 function updateFabStates(){
   var hl = document.getElementById('sfab-hl');
-  if(hl) hl.classList.toggle('on', typeof hlMode !== 'undefined' && hlMode);
+  if(hl) hl.classList.toggle('on', document.body.classList.contains('hl-mode'));
 }
 document.addEventListener('click', function(e){
   var panel = document.getElementById('settings-panel');

@@ -2,6 +2,9 @@
 (function () {
   'use strict';
   const storage = window.BBUserStorage;
+  const personal = window.BBPersonalRecords;
+  const remoteRevisions = new Map();
+  const unsupported = new Set();
   const quizzes = new Map((window.BB_QUIZ_INDEX || []).map(q => [q.storageKey, q]));
   const messages = {
     unconfigured:'Conturile nu sunt încă disponibile. Progresul se păstrează pe acest dispozitiv.',
@@ -18,7 +21,7 @@
   let running = false;
   let again = false;
   function state() {
-    return {status, message:messages[status] + (storage.canPersist() ? '' : ' Salvarea locală nu este disponibilă; exportă datele înainte de a închide pagina.')};
+    return {status, message:messages[status] + (unsupported.size ? ' Unele date provin dintr-o versiune mai nouă. Actualizează aplicația; copiile locale sunt păstrate.' : '') + (storage.canPersist() ? '' : ' Salvarea locală nu este disponibilă; exportă datele înainte de a închide pagina.')};
   }
   function publish(next) {
     status = next;
@@ -52,6 +55,22 @@
     for (const row of results[2].data || []) {
       if (row.user_id !== id) throw Error('Invalid note owner');
       remote[noteKey(row)] = {chapter_num:row.chapter_num, section_id:row.section_id, body:row.body, created_at:row.created_at, updated_at:row.updated_at};
+    }
+    if (personal) {
+      // Supabase paginates responses: never truncate histories at the API cap.
+      for (let offset = 0; ; offset += 500) {
+        const result = await client.from('personal_records').select('*').eq('user_id',id).order('record_key').range(offset,offset + 499);
+        if (result.error) throw Error('Personal history read failed');
+        const rows = result.data || [];
+        for (const row of rows) {
+          if (row.user_id !== id) throw Error('Invalid personal record owner');
+          if (!personal.isKey(row.record_key)) continue;
+          if (row.payload?.version !== 1) unsupported.add(row.record_key); else unsupported.delete(row.record_key);
+          remote[row.record_key] = row.payload;
+          remoteRevisions.set(id + ':' + row.record_key,row.revision);
+        }
+        if (rows.length < 500) break;
+      }
     }
     return remote;
   }
@@ -91,6 +110,7 @@
           // changed/acknowledged in another tab while this SELECT was in flight.
           const afterRead = storage.snapshot();
           for (const key of Object.keys(afterRead.values)) {
+            if (personal?.isKey(key)) continue; // Merge against the actual cloud value; preserve in-flight offline edits.
             if (JSON.stringify(afterRead.values[key]) !== JSON.stringify(beforeRead.values[key]) ||
                 afterRead.pending[key] !== beforeRead.pending[key]) remote[key] = afterRead.values[key];
           }
@@ -99,9 +119,35 @@
           document.dispatchEvent(new CustomEvent("bb:cloud-hydrated"));
         }
         const data = storage.snapshot();
+        for (const [key,value] of Object.entries(data.values)) {
+          if (personal?.isKey(key) && value?.version !== 1) unsupported.add(key);
+        }
         for (const [key, revision] of Object.entries(data.pending)) {
           if (!validIdentity(id, generation) || !navigator.onLine) return;
           if (storage.snapshot().pending[key] !== revision) { again = true; continue; }
+          if (personal?.isKey(key) && data.values[key]?.version !== 1) unsupported.add(key);
+          if (unsupported.has(key)) continue;
+          if (personal?.isKey(key)) {
+            // Compare-and-swap is atomic on the server, so a second device
+            // cannot silently replace a record read before our offline edit.
+            for (let attempt = 0; attempt < 5; attempt++) {
+              if (!validIdentity(id,generation)) return;
+              const pending = storage.snapshot().pending[key];
+              if (!pending) break;
+              const value = storage.get(key);
+              const response = await client.rpc('bb_put_personal_record', {p_owner:id, p_key:key, p_payload:value, p_expected:remoteRevisions.get(id + ':' + key) || 0});
+              if (!validIdentity(id,generation)) return;
+              if (response.error || !response.data?.record) throw Error('Personal history write failed');
+              const row = response.data.record;
+              if (row.user_id !== id || row.record_key !== key) throw Error('Invalid personal response');
+              if (row.payload?.version !== 1) { unsupported.add(key); break; }
+              remoteRevisions.set(id + ':' + key,row.revision);
+              storage.acceptPersonal(key,row.payload,pending);
+              if (response.data.accepted) break;
+              if (attempt === 4) throw Error('Concurrent personal writes; retry');
+            }
+            continue;
+          }
           const record = rowFor(key, data.values[key], id);
           if (record.table === 'notes') await window.BBNoteMedia?.flush(record.row.body, id);
           if (!validIdentity(id, generation)) return;
@@ -119,8 +165,8 @@
       }
       if (navigator.locks?.request) await navigator.locks.request('bb-cloud-sync:' + id, cycle); else await cycle();
       if (validIdentity(id, generation)) {
-        const pending = Object.keys(storage.snapshot().pending).length;
-        publish(!navigator.onLine ? 'offline' : pending ? 'local' : 'synced');
+        const pending = Object.keys(storage.snapshot().pending).filter(key => !unsupported.has(key)).length;
+        publish(!navigator.onLine ? 'offline' : pending ? 'local' : unsupported.size ? 'error' : 'synced');
         if (pending && navigator.onLine) again = true;
       }
     } catch (_) {
@@ -138,7 +184,7 @@
     return synchronize();
   }
   document.addEventListener('bb:cache-owner-change', () => {
-    epoch++; loadedOwner = null; clearTimeout(timer);
+    epoch++; loadedOwner = null; remoteRevisions.clear(); unsupported.clear(); clearTimeout(timer);
     publish('signedout');
   });
   document.addEventListener('bb:auth-change', () => { setTimeout(synchronize, 0); });
@@ -158,5 +204,8 @@
       return storage.snapshot().pending[key] ? 'Se salvează…' : 'Salvat';
     }
   };
+  if (typeof setInterval === 'function') setInterval(() => {
+    if (identity() && navigator.onLine && document.visibilityState !== 'hidden' && !running) retry();
+  }, 30000);
   window.BBAuth.ready.then(synchronize);
 }());

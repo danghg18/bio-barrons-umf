@@ -1,5 +1,8 @@
-/* Pure sampling and training scores. Documented UMF Cluj 2023 algorithm;
- * equal question weights and normalization to 10 are BioMed training choices. */
+/* Pure sampling and training scores. The 2023 concordance table is retained.
+ * Official 2026 guide/regulation checked 2026-09-30 do not specify the detailed
+ * scoring table or grade conversion. This remains biology-only training; equal
+ * question weights and normalization to 10 are BioMed choices. See docs/simulation-scoring-sources.md.
+ * Keep SCORING unchanged: no formula change, no historical result migration. */
 (function () {
   'use strict';
   const COUNT = 35;

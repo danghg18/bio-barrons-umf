@@ -41,7 +41,7 @@ function loadLessonSections(chapter){
     return response.text();
   }).then(function(html){
     const doc=new DOMParser().parseFromString(html,'text/html');
-    return Array.from(doc.querySelectorAll('.page-section:not([data-curriculum-excluded])')).map(function(section){
+    return Array.from(doc.querySelectorAll('.page-section:not([data-curriculum-excluded]):not([data-lesson-redirect])')).map(function(section){
       const heading=section.querySelector('h1, h2, h3');
       return {
         id:section.id.replace(/^page-/,''),
@@ -125,13 +125,9 @@ function syncStudyHomepage(){
   syncContinueCard();
 }
 
-function quizSummary(title){
-  const range=String(title||'').match(/(\d+)\s*[–-]\s*(\d+)/);
-  if(!range)return String(title||'Grile');
-  const first=Number(range[1]);
-  const last=Number(range[2]);
-  const count=Math.max(0,last-first+1);
-  return count+' de grile · întrebările '+first+'–'+last;
+function quizSummary(resource){
+  const quiz=(window.BB_QUIZ_INDEX||[]).find(entry=>entry.url===resource.url);
+  return quiz ? quiz.questions.length+' de grile' : String(resource.title||'Grile');
 }
 
 function syncTestingCatalog(){
@@ -140,15 +136,15 @@ function syncTestingCatalog(){
   if(!catalog)return;
   const byNumber=new Map(CHAPTERS.map(chapter=>[String(chapter.num),chapter]));
   const quizzes=[];
-  CHAPTERS.forEach(function(chapter){
-    (chapter.resources||[]).filter(resource=>resource.kind==='quiz').forEach(function(resource){
+  CHAPTERS.filter(chapter=>chapter.done&&chapter.url).forEach(function(chapter){
+    (chapter.resources||[]).filter(resource=>resource.kind==='quiz'&&resource.done!==false).forEach(function(resource){
       quizzes.push({chapter:chapter,resource:resource});
     });
   });
   catalog.querySelectorAll('.lab-item[data-chapter]').forEach(function(original){
     const chapter=byNumber.get(original.dataset.chapter);
     if(!chapter)return;
-    const resource=(chapter.resources||[]).find(item=>item.kind==='quiz');
+    const resource=chapter.done&&chapter.url&&(chapter.resources||[]).find(item=>item.kind==='quiz'&&item.done!==false);
     let item=original;
     if(resource&&original.tagName==='BUTTON'){
       const link=document.createElement('a');
@@ -166,7 +162,7 @@ function syncTestingCatalog(){
     if(resource){
       item.classList.remove('lab-item-soon');
       item.classList.add('lab-item-done');
-      if(detail)detail.textContent=quizSummary(resource.title);
+      if(detail)detail.textContent=quizSummary(resource);
       if(status){status.className='lab-item-done-mark';status.textContent='Rezolvă';}
     }else{
       if(detail)detail.textContent='Test în pregătire';
@@ -179,7 +175,7 @@ function syncTestingCatalog(){
     const label=group.querySelector('.lab-bento-cat-ring-inner');
     if(label)label.textContent=available+' din '+numbers.size+' '+(numbers.size===1?'test disponibil':'teste disponibile');
   });
-  if(count)count.textContent=quizzes.length+' '+(quizzes.length===1?'test disponibil':'teste disponibile');
+  if(count)count.textContent=quizzes.length+' seturi disponibile · '+(window.BB_QUIZ_INDEX||[]).filter(entry=>quizzes.some(q=>q.resource.url===entry.url)).reduce((sum,entry)=>sum+entry.questions.length,0)+' de grile';
 }
 
 syncChapterCatalog();
