@@ -14,7 +14,9 @@ assert.match(html, /href="\.\.\/testare\.html"/);
 assert.match(html, /href="\.\.\/notite\.html"/);
 assert.match(html, /href="\.\.\/index\.html">Varianta clasică/);
 assert.doesNotMatch(html, /<style\b|<script(?![^>]*\bsrc=)[^>]*>/);
-assert.doesNotMatch(html, /src="[^\"]*(?:auth-state|cloud-sync|user-storage)/);
+for (const shared of ['user-storage', 'auth-state', 'cloud-sync', 'account-ui']) {
+  assert.match(html, new RegExp('src="\\.\\./assets/js/' + shared + '\\.js\\?'));
+}
 
 const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
 assert.equal(new Set(ids).size, ids.length, 'No duplicate IDs');

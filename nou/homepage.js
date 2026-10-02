@@ -86,6 +86,12 @@
       goToStep(next);
     });
   });
+  $$('[data-story-select]').forEach(link => link.addEventListener('click', event => {
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    goToStep(Number(link.dataset.storySelect));
+    if (!storyTrigger) $('#method').scrollIntoView({behavior: motionPreference.matches ? 'instant' : 'smooth'});
+  }));
 
   const form = $('#demo-quiz');
   const optionRows = new Map();
@@ -210,8 +216,8 @@
   if (window.gsap && window.ScrollTrigger) {
     gsap.registerPlugin(ScrollTrigger);
     const media = gsap.matchMedia();
-    media.add({desktop: '(min-width:980px) and (min-height:700px)', compact: '(min-width:641px) and (min-height:560px)', mobile: '(max-width:640px), (max-height:559px)', reduce: '(prefers-reduced-motion:reduce)'}, context => {
-      const {desktop, compact, reduce} = context.conditions;
+    media.add({phones: '(min-width:1180px) and (min-height:900px)', desktop: '(min-width:980px) and (min-height:700px)', compact: '(min-width:641px) and (min-height:560px)', mobile: '(max-width:640px), (max-height:559px)', reduce: '(prefers-reduced-motion:reduce)'}, context => {
+      const {phones, desktop, compact, reduce} = context.conditions;
       storyTrigger = null; storyTimeline = null;
       if (reduce) {
         scenes.forEach(scene => { scene.style.removeProperty('opacity'); scene.style.removeProperty('visibility'); scene.style.removeProperty('transform'); });
@@ -221,11 +227,18 @@
       gsap.set(scenes, {autoAlpha: 0, y: 0});
       gsap.set(scenes[0], {autoAlpha: 1});
       updateStep(0);
-      gsap.to('.hero-art', {y: desktop ? 100 : 35, scale: desktop ? 1.08 : 1.025, ease: 'none', scrollTrigger: {trigger: '.hero', start: 'top top', end: 'bottom top', scrub: .8}});
-      gsap.to('.hero-copy', {y: desktop ? -65 : -20, opacity: .4, ease: 'none', scrollTrigger: {trigger: '.hero', start: '25% top', end: 'bottom top', scrub: .5}});
+      gsap.from('.hero-copy > *', {y: 30, opacity: 0, duration: .8, stagger: .09, ease: 'power2.out'});
+      $$('.ambient').forEach((blob, index) => {
+        const float = gsap.fromTo(blob, {y: -10}, {y: 10, duration: 3, delay: index % 2 * .6, ease: 'sine.inOut', repeat: -1, yoyo: true, paused: true});
+        ScrollTrigger.create({trigger: blob.parentElement, start: 'top bottom', end: 'bottom top', onToggle: self => self.isActive ? float.play() : float.pause(), onRefresh: self => self.isActive ? float.play() : float.pause()});
+      });
+      $$('.situations .section-heading, .scenario, .try-intro, .quiz-surface, .included, .pricing-intro, .plan, .testimonials .section-heading, .diary-note, .faq, .closing > :not(.ambient)').forEach(element => {
+        gsap.from(element, {y: 30, opacity: 0, duration: .8, ease: 'power2.out', scrollTrigger: {trigger: element, start: 'top 94%', once: true}});
+      });
       if (desktop || compact) {
         document.body.classList.add('scroll-story');
         document.body.classList.toggle('story-compact', !desktop);
+        document.body.classList.toggle('phone-story', phones);
         // Keep the heading, steps and preview together throughout all three
         // scenes. Only the child preview animates inside the pinned section.
         const motionTarget = '.product-wrap';
@@ -233,20 +246,30 @@
         storyTimeline = gsap.timeline({defaults: {ease: 'none'},
           onUpdate() { const progress = this.progress(); updateStoryProgress(progress); const index = progress < .34 ? 0 : progress < .68 ? 1 : 2; if (index !== activeStep) updateStep(index); },
           scrollTrigger: {
-            id: 'biomed-story', trigger: '.method-layout', start: desktop ? 'top 32px' : 'top 24px', end: () => '+=' + Math.round(innerHeight * 5.4), pin: true, scrub: .45, anticipatePin: 1, invalidateOnRefresh: true
+            id: 'biomed-story', trigger: '.method-layout', start: desktop ? 'top 32px' : 'top 24px', end: () => '+=' + Math.round(innerHeight * 5.4), pin: true, scrub: .45, anticipatePin: 1, invalidateOnRefresh: true,
+            onToggle: self => document.body.classList.toggle('story-running', self.isActive)
           }
         });
-        storyTimeline.to(motionTarget, {scale: 1, y: 0, duration: .12}, 0)
-          .to(scenes[0], {autoAlpha: 0, y: -20, duration: .04}, .30)
-          .fromTo(scenes[1], {autoAlpha: 0, y: 20}, {autoAlpha: 1, y: 0, duration: .04}, .34)
-          .to(scenes[1], {autoAlpha: 0, y: -20, duration: .04}, .64)
-          .fromTo(scenes[2], {autoAlpha: 0, y: 20}, {autoAlpha: 1, y: 0, duration: .04}, .68)
-          // Leave the final explanation fully visible before releasing the pin.
-          .to({}, {duration: .28}, .72);
+        storyTimeline.to(motionTarget, {scale: 1, y: 0, duration: .12}, 0);
+        if (phones) {
+          gsap.set(scenes, {autoAlpha: .62, y: i => [24, 0, 56][i], rotation: i => [-2, 0, 2][i]});
+          gsap.set(scenes[0], {autoAlpha: 1});
+          storyTimeline.to(scenes[0], {autoAlpha: .62, y: 48, duration: .08}, .30)
+            .to(scenes[1], {autoAlpha: 1, y: -8, duration: .08}, .30)
+            .to(scenes[1], {autoAlpha: .62, y: 0, duration: .08}, .64)
+            .to(scenes[2], {autoAlpha: 1, y: 24, duration: .08}, .64);
+        } else {
+          storyTimeline.to(scenes[0], {autoAlpha: 0, y: -20, duration: .04}, .30)
+            .fromTo(scenes[1], {autoAlpha: 0, y: 20}, {autoAlpha: 1, y: 0, duration: .04}, .34)
+            .to(scenes[1], {autoAlpha: 0, y: -20, duration: .04}, .64)
+            .fromTo(scenes[2], {autoAlpha: 0, y: 20}, {autoAlpha: 1, y: 0, duration: .04}, .68);
+        }
+        // Keep the explanation fully visible before releasing the pin.
+        storyTimeline.to({}, {duration: .28}, .72);
         storyTrigger = storyTimeline.scrollTrigger;
         updateStoryProgress(storyTimeline.progress());
       }
-      return () => { storyTrigger = null; storyTimeline = null; document.body.classList.remove('scroll-story', 'story-compact'); };
+      return () => { storyTrigger = null; storyTimeline = null; document.body.classList.remove('scroll-story', 'story-compact', 'phone-story', 'story-running'); };
     });
     document.fonts.ready.then(() => ScrollTrigger.refresh());
     window.addEventListener('load', () => ScrollTrigger.refresh(), {once: true});
