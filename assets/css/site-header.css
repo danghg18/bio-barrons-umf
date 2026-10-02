@@ -65,3 +65,7 @@ body.softly-home.story-running #bb-site-header{transform:translateY(-130%);opaci
 @media(max-width:359px){#bb-site-header .lab-brand-name,#bb-site-header .brand>span{display:none!important}body #bb-site-header{padding-inline:12px!important}}
 @media(prefers-reduced-motion:reduce){body #bb-site-header,body .bb-header-cta{transition:none!important}.bb-header-dialog[open]{animation:none!important}body.softly-home #bb-site-header{transform:none!important;visibility:visible!important;opacity:1!important}}
 @media print{body #bb-site-header,.bb-header-dialog{display:none!important}body.bb-site-shell{--header-offset:0px}}
+
+/* Study pages keep account access compact; landing actions retain their labels. */
+#bb-site-header.bb-header-study .bb-header-account span{display:none!important}
+#bb-site-header.bb-header-study .bb-header-account{width:44px!important;padding:11px!important}

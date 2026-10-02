@@ -11,6 +11,9 @@
     document.body.classList.add('bb-site-shell');
     const landing = document.body.classList.contains('softly-home');
     const softly = landing || document.body.classList.contains('softly-study');
+    const file = decodeURIComponent(location.pathname.split('/').pop() || 'index.html');
+    const homepage = landing || (!softly && file === 'index.html');
+    header.classList.toggle('bb-header-study', !homepage);
     const catalog = softly ? 'lectii.html#lab-bento' : 'index.html#lab-bento';
     let inner = header.querySelector('.lab-topbar-inner');
     if (!inner) {
@@ -40,16 +43,18 @@
     }
     function accountLabel() {
       const label = account.querySelector('span');
-      if (label) label.textContent = window.BBAuth?.getState().user ? 'Contul meu' : 'Intră în cont';
+      const text = window.BBAuth?.getState().user ? 'Contul meu' : 'Intră în cont';
+      if (label) label.textContent = text;
+      account.setAttribute('aria-label', text);
+      account.title = text;
     }
     accountLabel(); document.addEventListener('bb:auth-change', accountLabel);
-    const file = decodeURIComponent(location.pathname.split('/').pop() || 'index.html');
     const chapter = typeof CHAPTERS !== 'undefined' ? CHAPTERS.find(item => item.url === file) : null;
     const quiz = chapter?.resources?.find(item => item.kind === 'quiz');
     const cta = document.createElement('a'); cta.className = 'bb-header-cta';
     cta.href = quiz?.url || (landing ? catalog : 'testare.html');
     cta.innerHTML = (landing ? 'Începe să înveți' : 'Rezolvă grile') + arrow;
-    actions.append(cta);
+    if (homepage) actions.append(cta);
     const toggle = document.createElement('button'); toggle.type = 'button'; toggle.id = 'menu-toggle';
     toggle.className = 'bb-header-menu'; toggle.setAttribute('aria-label','Deschide meniul');
     toggle.setAttribute('aria-controls','mobile-menu'); toggle.setAttribute('aria-expanded','false');
@@ -89,7 +94,9 @@
     const menuAccount = document.createElement('button'); menuAccount.type = 'button'; menuAccount.className = 'bb-header-account-action';
     menuAccount.addEventListener('click', event => { event.stopPropagation(); closeMenu(); account.click(); });
     const menuCTA = cta.cloneNode(true);
-    dialog.querySelector('.bb-header-dialog-bottom').append(menuAccount, menuCTA);
+    dialog.querySelector('.bb-header-dialog-bottom').append(menuAccount);
+    if (homepage) dialog.querySelector('.bb-header-dialog-bottom').append(menuCTA);
+    const menuLast = homepage ? menuCTA : menuAccount;
     toggle.addEventListener('click', () => {
       if (dialog.open) { closeMenu(); return; }
       window.closeNav?.();
@@ -103,8 +110,8 @@
     dialog.addEventListener('keydown', event => {
       if (event.key !== 'Tab') return;
       const first = dialog.querySelector('.bb-header-dialog-top button');
-      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); menuCTA.focus(); }
-      else if (!event.shiftKey && document.activeElement === menuCTA) { event.preventDefault(); first.focus(); }
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); menuLast.focus(); }
+      else if (!event.shiftKey && document.activeElement === menuLast) { event.preventDefault(); first.focus(); }
     });
     dialog.addEventListener('close', () => { toggle.setAttribute('aria-expanded','false'); document.body.classList.remove('bb-header-menu-open'); });
     dialog.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });

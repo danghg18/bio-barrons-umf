@@ -26,7 +26,11 @@ try{
   assert.equal(await page.locator('#bb-site-header').count(),1,file+' has one shared header');
   assert.equal(await page.locator('#bb-site-header .bb-header-account').count(),1,file+' has one account entry after all controllers mount');
   if(await page.evaluate(()=>!!window.BBAccountUI))assert.equal(await page.locator('#pilot-account-toggle.bb-header-account').count(),1,file+' reuses the real account button');
-  assert.equal(await page.locator('#bb-site-header .bb-header-cta').evaluate(n=>getComputedStyle(n).color),'rgb(255, 255, 255)',file+' CTA contrast');
+  const homepage = file === 'index.html' || file === 'nou/index.html';
+  assert.equal(await page.locator('#bb-site-header .bb-header-cta').count(), homepage ? 1 : 0, file+' homepage-only CTA');
+  if(homepage) assert.equal(await page.locator('#bb-site-header .bb-header-cta').evaluate(n=>getComputedStyle(n).color),'rgb(255, 255, 255)',file+' CTA contrast');
+  else assert.equal(await page.locator('#bb-site-header .bb-header-account span').isVisible(),false,file+' icon-only account');
+  assert.ok(await page.locator('#bb-site-header .bb-header-account').getAttribute('aria-label'),file+' accessible account name');
   for(const width of [1440,1120,1000,775,390,320]){
    await page.setViewportSize({width,height:900});
    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),file+' no overflow at '+width);
@@ -37,7 +41,7 @@ try{
   const destinations=await page.locator('#mobile-menu .bb-header-links a').evaluateAll(ns=>ns.map(n=>n.href));
   assert.equal(destinations.length,5,file+' complete mobile navigation');
   assert.ok(destinations.every(url=>url.startsWith(base+(file.startsWith('nou/')?'nou/':''))&&!url.includes('/nou/nou/')),file+' retains edition');
-  await page.locator('#mobile-menu .bb-header-cta').focus();await page.keyboard.press('Tab');
+  await page.locator(homepage ? '#mobile-menu .bb-header-cta' : '#mobile-menu .bb-header-account-action').focus();await page.keyboard.press('Tab');
   assert.equal(await page.locator('#mobile-menu').evaluate(n=>n.contains(document.activeElement)),true,file+' native dialog contains keyboard focus');
   await page.keyboard.press('Escape');
   assert.equal(await page.locator('#menu-toggle').evaluate(n=>n===document.activeElement),true,file+' restores focus');
