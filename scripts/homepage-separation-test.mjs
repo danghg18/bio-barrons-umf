@@ -9,9 +9,9 @@ const html = await readFile(pageUrl, 'utf8');
 const original = await readFile(new URL('index.html', root), 'utf8');
 assert.match(original, /id="lab-bento"/);
 assert.doesNotMatch(original, /nou\/homepage\.(?:css|js)|nou\/index\.html/);
-assert.match(html, /href="\.\.\/index\.html#lab-bento"/);
-assert.match(html, /href="\.\.\/testare\.html"/);
-assert.match(html, /href="\.\.\/notite\.html"/);
+assert.match(html, /href="lectii\.html#lab-bento"/);
+assert.match(html, /href="testare\.html"/);
+assert.match(html, /href="notite\.html"/);
 assert.match(html, /href="\.\.\/index\.html">Varianta clasică/);
 assert.doesNotMatch(html, /<style\b|<script(?![^>]*\bsrc=)[^>]*>/);
 for (const shared of ['user-storage', 'auth-state', 'cloud-sync', 'account-ui']) {

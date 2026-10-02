@@ -8,6 +8,7 @@
     return Math.floor(seconds / 60) + ':' + String(seconds % 60).padStart(2,'0');
   };
   const localLoads = new Map();
+  const assetBase = document.body?.dataset.assetBase || '';
   function registerBank(bank) {
     const pending = localLoads.get(bank.storageKey);
     if (pending) pending.bank = bank;
@@ -23,7 +24,7 @@
         if (error || !pending.bank) reject(new Error('Fișierul cu grile nu s-a putut încărca. Deschide pagina din dosarul complet al site-ului și încearcă din nou.'));
         else resolve(pending.bank);
       };
-      script.src = entry.bankUrl + '.js';
+      script.src = assetBase + entry.bankUrl + '.js';
       script.onload = () => finish(false);
       script.onerror = () => finish(true);
       document.head.append(script);
@@ -34,7 +35,7 @@
     // Browsers block fetch(file:). Generated classic scripts support direct local previews.
     if (window.location.protocol === 'file:') return loadLocalBank(entry);
     let response;
-    try { response = await fetch(entry.bankUrl); } catch (_) { throw new Error('Grilele nu sunt disponibile. Verifică conexiunea și încearcă din nou.'); }
+    try { response = await fetch(assetBase + entry.bankUrl); } catch (_) { throw new Error('Grilele nu sunt disponibile. Verifică conexiunea și încearcă din nou.'); }
     if (!response.ok) throw new Error('Grilele nu s-au putut încărca. Încearcă din nou după reconectare.');
     return response.json();
   }

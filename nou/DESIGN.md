@@ -1,23 +1,75 @@
-# BioMed × Softly
+---
+name: BioMed × Softly
+description: Warm, calm surfaces for precise biology study.
+colors:
+  green: "#295343"
+  sage: "#E8EFE8"
+  lavender: "#EFEDF4"
+  coral: "#FFB7B2"
+  paper: "#FDFCF8"
+  reading-paper: "#FFFEFB"
+  ink: "#292524"
+  muted: "#6C645E"
+  line: "#E6E1D9"
+rounded:
+  control: "16px"
+  study-panel: "32px"
+  study-frame: "38px"
+  pill: "999px"
+---
 
-This visual direction applies only to `/nou/`. The study site's existing design at the project root is unchanged.
+# Design System: BioMed × Softly
 
-## Surface and type
+## Overview
 
-- Cream `#FDFCF8`, stone `#292524`, sage `#E8EFE8`, lavender `#EFEDF4`, coral `#FFB7B2`; the BioMed identity remains green `#295343`.
-- Secondary text is `#6C645E`, slightly darker than the original brief to retain contrast on pastel surfaces. Quiz feedback keeps distinct green, yellow and red semantics.
-- Local Outfit in 400/500/600; local Reenie Beanie for brief handwritten accents only. Source licenses are in `assets/*-OFL.txt`.
-- Pill navigation and buttons; 32–64 px marketing containers, smaller controls. The static grain uses SVG turbulence at .65, opacity .35 and overlay blending, with no pointer events. Blur, texture and large radii are deliberate requirements of the approved Softly brief.
+This is the approved visual world for `/nou/`: the Softly landing page and the complete study edition. Its cream canvas, pastel surfaces, green BioMed identity, generous curves and restrained motion extend the established homepage. The classic edition keeps its existing appearance and URLs. The surface direction is recorded in `../docs/softly-platform.md`.
 
-## Motion and responsive behavior
+The landing page introduces the product; study pages prioritize reading, choosing an answer, writing and reviewing progress. Warmth comes from material and color. Authored content, figures, semantic feedback and familiar study layouts retain their meaning.
 
-- A continuous 5.4-viewport-height ScrollTrigger sequence pins the method section. Its progress bar and scroll instruction stay visible; the floating header withdraws while the section is pinned.
-- Three staggered phone frames appear side by side from 980 × 680 px. At 641–979 px wide (at least 680 px tall), the active phone comes to the center in front of the other two; this preserves the composition and a readable 300 px panel. Shorter desktop windows use a single panel; the 775 × 688 layout retains a 24 px pin offset. Below 641 px, all three phones remain visible as an overlapping stack, with selectable steps bringing the active phone forward without pinning. Other windows under 560 px tall also use unpinned steps.
-- Decorative shapes move ±10 px over a six-second cycle while in view. Scroll reveals use 30 px and .8 seconds. Interactive feedback remains immediate.
-- Reduced motion removes floating, pinning and transitions, and shows all three educational panels. Print also exposes all panels.
+## Colors
 
-## Content and controls
+Green identifies BioMed, active navigation and progress. Sage structures contents and supporting surfaces; lavender frames previews, tools and dialogs. Coral marks primary study actions. Cream and reading paper provide steady backgrounds, with stone ink and darker muted text for contrast.
 
-Efferd hero/header/pricing/auth/testimonial compositions are adapted as static HTML/CSS/JavaScript. No React, shadcn runtime, backend or payment flow is introduced. Prices and diary examples are explicitly demonstrative.
+**The Feedback Rule.** Quiz correctness keeps the shared green, yellow and red semantics: selected correct, omitted correct and extra answers remain distinguishable. User-selected highlighter colors and educational callouts keep their existing owners.
 
-The demonstration reads canonical question `sn-058` and its explanations through `home-data.js`. It never records an answer or an attempt. Authentication and synchronization belong to the existing shared controllers; `home-shell.js` only opens that interface and handles navigation. The local `/nou/cont.html` alias preserves query and fragment and immediately returns to the canonical account page.
+## Typography
+
+Local Outfit (400/500/600, with `system-ui, sans-serif` fallback) carries navigation, controls, headings and study text. Headings generally use medium weight with slightly tightened spacing (−.025em). Lesson paragraphs and lists use an open line height (1.75); answer options use 16px text with a 1.65 line height. Preserve the canonical hierarchy instead of forcing every page family into one type scale.
+
+Reenie Beanie remains a brief handwritten accent on the landing page. Notebook paper retains its existing Caveat heading and writing geometry. Font licenses are kept with the local assets; see `README.md`.
+
+## Layout
+
+The study header is a detached pill, with a measured sage selection indicator. At 760px and below it becomes two rows: identity/actions above the primary navigation, with 44px navigation targets. Content keeps the canonical page structures: complete ordered catalog, contents beside the lesson sheet, quiz map and ranges, notebook library/editor, and statistics summary/mistakes/history.
+
+Reading sheets use comfortable padding (30px 34px), reduced to 22px 20px on phones and 16px horizontal padding at 390px and below. Tables retain the shared responsive layouts and figures retain their captions. Study controls, writing surfaces and long reading passages stay still while in use.
+
+The landing method sequence retains its continuous ScrollTrigger story (5.4 viewport heights). Three phone frames sit side by side from 980 × 680px; at 641–979px and at least 680px tall, the active phone moves to the front of the stack. Shorter desktop windows use a single panel. Below 641px, all three phones form a selectable, unpinned stack; windows under 560px tall also use unpinned steps.
+
+## Elevation & Depth
+
+Sage frames and paper surfaces provide most study-page separation. A restrained shadow (0 4px 20px −2px at approximately 5% stone ink) lifts headers and previews; dialogs use stronger depth and a blurred backdrop. The landing page retains its atmospheric blur and soft shadows.
+
+**The Quiet Paper Rule.** Reuse the static grain SVG, with no pointer events. The landing uses .35 opacity with overlay blending; study pages use .045 opacity with multiply blending so texture recedes behind dense reading. Print removes grain, shadows and rounded sheet framing.
+
+## Shapes
+
+Pills identify navigation and action buttons. Study sheets and cards use the study-panel radius, with larger study frames and smaller controls. Phone sheets generally reduce to 28px. Marketing containers retain their broader 32–64px curves. Large radii, texture and blur are intentional features of this approved world.
+
+## Components
+
+- **Navigation:** a sage pill follows the selected link and is remeasured after resize and font loading. Study pages include an explicit classic-edition link; the current query and fragment are retained.
+- **Actions:** coral primary buttons use dark text, a warmer hover and brief press feedback. Sage secondary buttons retain green text. Keyboard focus uses a visible green outline (3px, offset 4px on study pages).
+- **Inputs and dialogs:** paper dialogs use curved edges and the shared account controller's native focus and keyboard behavior. Account inputs have an explicit 1px boundary, green focus and red invalid state; placeholder text remains readable.
+- **Reading and practice:** sage contents and sheet framing unify lessons and quizzes. Table headings retain their authored hierarchy and readable contrast. Answer feedback, highlights and notebook ruling are functional content, not decorative palette targets.
+- **Study motion:** GSAP reveals catalog/tool rows by 18px over .65s, quiz results by 8px over .3s, and a newly selected section heading by 8px over .28s. These movements explain entry or state changes; they do not animate the reading body or editable text.
+- **Landing motion:** in-view ambient shapes move ±10px over a six-second cycle; reveals use 30px over .8s. The method story keeps its progress bar and withdraws the header while pinned. The FAQ retains its 500ms transition.
+- **Reduced motion and print:** reduced motion disables study transitions and GSAP entrances. On the landing it also removes floating and pinning and exposes all three panels. Print exposes the landing panels, removes study navigation and texture, and uses plain paper surfaces.
+
+## Do's and Don'ts
+
+- **Do** apply study presentation through the scoped `study.css` layer and reuse the canonical layouts and behavior.
+- **Do** reuse the existing BioMed logo, textbook figures and locally licensed fonts. No new raster imagery was introduced for the study extension.
+- **Do** preserve real progress and all educational text, figures, answer keys and explanation relationships.
+- **Don't** carry the landing's stronger texture, decorative motion or oversized composition into the reading and writing surfaces.
+- **Don't** turn demonstrative landing prices, diary examples or the unsaved quiz into real purchases, testimonials or study history.

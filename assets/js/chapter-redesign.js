@@ -113,7 +113,7 @@
     if (!brand || !mark) return;
 
     mark.innerHTML =
-      '<img class="brand-logo-mark" src="assets/logo-mark.svg" alt="" width="30" height="30" decoding="async">';
+      '<img class="brand-logo-mark" src="' + (document.body.dataset.assetBase || '') + 'assets/logo-mark.svg" alt="" width="30" height="30" decoding="async">';
     brand.removeAttribute("aria-controls");
     brand.removeAttribute("aria-expanded");
     brand.setAttribute("title", "Pagina principală");

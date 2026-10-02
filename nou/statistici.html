@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Statistici · BioMed</title>
+<meta name="description" content="Statistici personale pentru grilele de biologie: activitate, rezultate și progres pe capitole.">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://danghg18.github.io/bio-barrons-umf/statistici.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Statistici · BioMed">
+<meta property="og:description" content="Urmărește rezultatele și identifică întrebările de revizuit.">
+<meta property="og:url" content="https://danghg18.github.io/bio-barrons-umf/statistici.html">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="../icon-192.png">
+<meta name="theme-color" content="#FDFCF8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="BioMed">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/css/tokens.css?v=20260926-polish1">
+<link rel="stylesheet" href="../assets/css/home.css?v=20260926-polish1">
+<script src="../assets/js/light-mode.js?v=20260909-editorial1"></script>
+<link rel="stylesheet" href="../assets/css/site-redesign.css?v=20260926-polish1">
+<link rel="stylesheet" href="../assets/css/testing-analytics.css?v=20260926-polish1">
+<link rel="stylesheet" href="../assets/css/statistics.css?v=20260926-polish1">
+<link rel="stylesheet" href="../assets/css/accounts.css?v=20260926-polish1">
+<link rel="preload" href="assets/Outfit-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="transitions.css?v=20261002-platform1">
+<link rel="stylesheet" href="study.css?v=20261002-platform1">
+</head>
+<body class="bm-browse bm-analytics softly-study" data-asset-base="../" data-softly-source="statistici.html">
+
+<div class="lab">
+
+<a class="lab-skip" href="#main-content">Sari la statistici</a>
+
+<header class="lab-topbar">
+  <div class="lab-topbar-inner">
+    <a class="lab-brand" href="index.html">
+      <div class="lab-brand-mark">
+        <img src="../assets/logo-mark.svg" alt="" width="30" height="30">
+      </div>
+      <span class="lab-brand-name">BioMed</span>
+    </a>
+    <nav class="bm-primary-nav" aria-label="Navigare principală">
+      <a href="lectii.html#lab-bento">Lecții</a>
+      <a href="testare.html" aria-current="page">Testare</a>
+    </nav>
+    <div class="lab-topbar-actions">
+      <button class="lab-search-btn" id="search-btn" aria-label="Caută capitol sau termen" aria-haspopup="dialog" aria-expanded="false" title="Caută capitol sau termen">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <span>Caută capitol, termen…</span>
+        <kbd>⌘K</kbd>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content" class="analytics-page">
+  <header class="analytics-page-head">
+    <a class="analytics-back" href="testare.html">← Înapoi la testare</a>
+    <div class="statistics-heading"><div><h1>Progresul tău</h1><p>De la primul răspuns la toate corecte.</p></div>
+      <form class="analytics-filters" aria-label="Filtre statistici"><label for="analytics-chapter">Capitol<select id="analytics-chapter" name="capitol"><option value="all">Toate capitolele</option></select></label></form>
+    </div>
+  </header>
+  <nav class="statistics-tabs" role="tablist" aria-label="Statistici">
+    <button type="button" id="analytics-tab-rezumat" role="tab" aria-selected="true" aria-controls="analytics-panel-rezumat" data-analytics-tab="rezumat">Rezumat</button>
+    <button type="button" id="analytics-tab-greseli" role="tab" aria-selected="false" aria-controls="analytics-panel-greseli" data-analytics-tab="greseli" tabindex="-1">Greșeli</button>
+    <button type="button" id="analytics-tab-istoric" role="tab" aria-selected="false" aria-controls="analytics-panel-istoric" data-analytics-tab="istoric" tabindex="-1">Istoric</button>
+  </nav>
+  <p class="analytics-storage-note" id="analytics-storage-note" role="status" hidden></p>
+  <div id="analytics-report-content">
+    <section id="analytics-panel-rezumat" class="statistics-panel" role="tabpanel" aria-labelledby="analytics-tab-rezumat" tabindex="0">
+      <section id="analytics-onboarding" class="analytics-onboarding" hidden></section>
+      <section id="analytics-metrics" aria-label="Parcurgerea curentă"><p class="analytics-loading">Se încarcă statisticile…</p></section>
+      <section id="analytics-evolution" class="statistics-frame"><div class="statistics-surface">
+        <div class="statistics-section-head"><div><h2 id="accuracy-title">Evoluția rezultatelor</h2><p>Rezultatele înregistrate, inclusiv corectările.</p></div><div id="analytics-period-summary"><label class="statistics-period" id="analytics-period-field" for="analytics-period">Perioadă<select id="analytics-period" name="perioada"><option value="7">Ultimele 7 zile</option><option value="30">Ultimele 30 de zile</option><option value="all" selected>Tot istoricul</option></select></label></div></div>
+        <div id="analytics-accuracy"></div>
+      </div></section>
+      <section id="analytics-comparison" aria-label="Progres pe capitole"></section>
+    </section>
+    <section id="analytics-panel-greseli" class="statistics-panel" role="tabpanel" aria-labelledby="analytics-tab-greseli" tabindex="0" hidden>
+      <div class="statistics-section-head"><div><h2>Ce mai ai de corectat</h2><p id="analytics-mistakes-context">Greșelile din parcurgerea curentă.</p></div><label class="statistics-period" for="analytics-review-mode">Arată<select id="analytics-review-mode"><option value="unresolved">Rămase greșite</option><option value="resolved">Corectate</option><option value="all">Greșelile inițiale</option></select></label></div>
+      <div id="analytics-topics"></div>
+      <div id="analytics-mistakes" tabindex="-1"></div>
+      <nav id="analytics-mistakes-pages" class="analytics-pagination" aria-label="Paginile greșelilor"></nav>
+    </section>
+    <section id="analytics-panel-istoric" class="statistics-panel" role="tabpanel" aria-labelledby="analytics-tab-istoric" tabindex="0" hidden>
+      <div class="statistics-section-head"><div><h2>Parcurgerile tale</h2><p id="analytics-history-count"></p></div><div id="analytics-period-history"></div></div>
+      <div id="analytics-history"></div>
+      <nav id="analytics-history-pages" class="analytics-pagination" aria-label="Paginile parcurgerilor"></nav>
+      <details id="analytics-activity-details" class="statistics-disclosure"><summary>Activitate și rezultate</summary><p id="analytics-filter-status"></p><div id="analytics-history-totals"></div><div id="analytics-activity"></div></details>
+      <details id="analytics-method" class="statistics-disclosure"><summary>Despre aceste rezultate</summary><p>Rezultatul inițial rămâne neschimbat. Corectarea greșelilor face parte din aceeași parcurgere; o nouă parcurgere începe când reiei întregul capitol.</p><p>Procentele inițiale se calculează din grilele verificate. După terminarea capitolului, procentul după corectare include grilele corectate în rundele lui.</p><p id="analytics-saved-note" class="analytics-saved-note" hidden></p><p id="analytics-tracking-note"></p></details>
+      <details id="analytics-management" class="statistics-disclosure"><summary>Gestionarea istoricului</summary><section class="analytics-data-controls" aria-label="Gestionarea istoricului"><div><strong>Istoricul tău</strong><p>Cu cont, istoricul se sincronizează între dispozitive. Fără cont, rămâne local. Reluarea grilelor nu îl șterge.</p></div><button type="button" id="analytics-clear-start" class="analytics-text-button">Șterge istoricul</button><div id="analytics-clear-confirmation" class="analytics-clear-confirmation" hidden><p id="analytics-clear-description"></p><div><button type="button" id="analytics-clear-confirm" class="analytics-danger-button">Da, șterge istoricul</button><button type="button" id="analytics-clear-cancel" class="analytics-text-button">Anulează</button></div></div><p id="analytics-clear-status" role="status"></p></section></details>
+    </section>
+  </div>
+  <noscript><p class="analytics-storage-note">Activează JavaScript pentru a vedea statisticile salvate local sau sincronizate în cont.</p></noscript>
+</main>
+<footer class="lab-footer"><div class="pilot-footer-row"><a href="lectii.html">BioMed</a><span>Cu cont, progresul și istoricul se sincronizează. Fără cont, se păstrează pe dispozitiv.</span><a href="lectii.html#lab-tools">Despre platformă</a></div></footer>
+
+</div>
+
+<div id="palette" style="display:none" onclick="closePalette()">
+  <div class="lab-palette-overlay" style="position:fixed;inset:0;z-index:1200;background:rgba(15,23,42,0.4);backdrop-filter:blur(6px);display:flex;align-items:flex-start;justify-content:center;padding-top:14vh;">
+    <div class="lab-palette" role="dialog" aria-modal="true" aria-labelledby="palette-title" onclick="event.stopPropagation()">
+      <div class="lab-palette-input">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input id="palette-input" aria-label="Caută în lecții" aria-controls="palette-list" placeholder="Caută capitol, termen, hormon…" oninput="filterPalette(this.value)">
+        <span id="palette-title" class="lab-palette-title" hidden>Căutare în lecții</span>
+        <button class="lab-palette-close" type="button" aria-label="Închide căutarea" onclick="closePalette()">×</button>
+      </div>
+      <div class="lab-palette-list" id="palette-list" aria-live="polite"></div>
+      <div class="lab-palette-foot">
+        <span><kbd>↵</kbd> deschide</span>
+        <span><kbd>esc</kbd> închide</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../assets/js/chapters-data.js?v=20260926-circulator1"></script>
+<script src="../assets/js/quiz-index.js?v=20260926-circulator1"></script>
+<script src="../assets/js/analytics-sync.js?v=20260930-personal1"></script>
+<script src="../assets/js/personal-records.js?v=20260930-personal1"></script>
+<script src="../assets/js/user-storage.js?v=20260930-personal1"></script>
+<script src="../assets/js/study-state.js?v=20260911-accounts1"></script>
+<script src="../assets/js/supabase-config.js?v=20260911-accounts1"></script>
+<script src="../assets/js/vendor/supabase.js?v=20260911-accounts1"></script>
+<script src="../assets/js/supabase-client.js?v=20260911-accounts1"></script>
+<script src="../assets/js/auth-state.js?v=20260911-accounts1"></script>
+<script src="../assets/js/note-media.js"></script>
+<script src="../assets/js/cloud-sync.js?v=20260930-personal1"></script>
+<script src="../assets/js/search-text.js?v=20260928-umf1"></script>
+<script src="../assets/js/home.js?v=20260930-personal1"></script>
+<script src="../assets/js/site-redesign.js?v=20260911-accounts1"></script>
+<script src="../assets/js/quiz-analytics.js?v=20260930-personal1"></script>
+<script src="../assets/js/analytics-charts.js?v=20260912-progress1"></script>
+<script src="../assets/js/analytics-ui.js?v=20260930-personal1"></script>
+<script src="../assets/js/account-ui.js?v=20260930-personal1"></script>
+<script src="../assets/js/note-content.js"></script>
+<script src="../assets/js/note-editor.js"></script>
+<script src="../assets/js/notes.js?v=20260926-polish1"></script>
+<script src="../assets/js/offline.js"></script>
+<footer class="softly-edition-footer"><a href="index.html">BioMed</a><a data-classic-edition href="../statistici.html">Deschide varianta clasică</a></footer>
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="study.js?v=20261002-platform1"></script>
+</body>
+</html>

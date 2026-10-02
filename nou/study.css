@@ -1,0 +1,215 @@
+/* Final, isolated BioMed × Softly presentation. Educational highlights,
+   answer-state colors, notebook ruling and editing geometry retain their owners. */
+@font-face{font-family:Outfit;src:url('./assets/Outfit-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:Outfit;src:url('./assets/Outfit-Medium.ttf') format('truetype');font-weight:500;font-display:swap}
+@font-face{font-family:Outfit;src:url('./assets/Outfit-Semibold.ttf') format('truetype');font-weight:600 900;font-display:swap}
+body.softly-study{
+ --softly-paper:#fdfcf8;--softly-ink:#292524;--softly-muted:#6c645e;--softly-green:#295343;--softly-sage:#e8efe8;--softly-lavender:#efedf4;--softly-coral:#ffb7b2;--softly-line:#e6e1d9;
+ --ui-ink:var(--softly-ink);--ui-muted:var(--softly-muted);--ui-canvas:var(--softly-paper);--ui-shell:var(--softly-sage);--ui-paper:#fffefb;--ui-soft:var(--softly-sage);--ui-line:var(--softly-line);--ui-radius:32px;--ui-frame-radius:38px;
+ --font-display:Outfit,system-ui,sans-serif;--font-body:var(--font-display);--font-editorial:var(--font-display);
+ --fg-1:var(--softly-ink);--fg-2:var(--softly-ink);--fg-3:var(--softly-muted);--fg-4:var(--softly-muted);--bg-page:var(--softly-paper);--bg-surface:#fffefb;--bg-sunken:#f6f4ef;--border:var(--softly-line);
+ --primary:var(--softly-green);--primary-dark:#1d4234;--primary-light:var(--softly-sage);
+ --bb-canvas:var(--softly-paper);--bb-surface:#fffefb;--bb-surface-subtle:#f6f4ef;--bb-surface-muted:var(--softly-sage);--bb-ink:var(--softly-ink);--bb-text:var(--softly-ink);--bb-muted:var(--softly-muted);--bb-line:var(--softly-line);--bb-action:var(--softly-green);--bb-action-hover:#1d4234;
+ --pilot-ink:var(--softly-ink);--pilot-muted:var(--softly-muted);--pilot-action:var(--softly-green);--pilot-soft:var(--softly-sage);--pilot-line:var(--softly-line);
+ --statistics-ink:var(--softly-ink);--statistics-muted:var(--softly-muted);--statistics-shell:var(--softly-sage);--statistics-paper:#fffefb;
+ background:var(--softly-paper)!important;color:var(--softly-ink);font-family:Outfit,system-ui,sans-serif!important;-webkit-font-smoothing:antialiased;
+}
+body.softly-study::after{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;background:url('./assets/grain.svg') repeat;opacity:.045;mix-blend-mode:multiply}
+body.softly-study .lab{background:transparent}
+body.softly-study :is(h1,h2,h3,h4,h5,h6,button,input,select,textarea,.page-nav a,.gbtn,.sub,.statistics-text-action,.statistics-topic button,.bb-object-menu){font-family:Outfit,system-ui,sans-serif}
+body.softly-study :is(h1,h2,h3){letter-spacing:-.025em;text-wrap:balance;font-weight:500}
+body.softly-study :is(p,li,legend){text-wrap:pretty}
+body.softly-study :focus-visible{outline:3px solid var(--softly-green);outline-offset:4px}
+body.softly-study ::selection{background:#ffc7c1;color:var(--softly-ink)}
+body.softly-study :is(input,textarea){caret-color:var(--softly-green)}
+body.softly-study :is(input,textarea)::placeholder{color:var(--softly-muted);opacity:1}
+body.softly-study [hidden]{display:none!important}
+/* Header overrides match the canonical important declarations in specificity. */
+body.softly-study.bm-browse .lab-topbar,body.softly-study.bb-chapter-redesign.bm-reader .lab-topbar{background:rgb(255 254 251 / 94%)!important;border-radius:999px!important;box-shadow:0 4px 20px -2px #2925240d!important;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+body.softly-study.bm-browse .lab-topbar-inner,body.softly-study.bb-chapter-redesign.bm-reader .lab-topbar-inner{padding-inline:22px!important;column-gap:14px!important}
+body.softly-study.bm-browse .lab-brand-name,body.softly-study.bb-chapter-redesign.bm-reader .lab-brand-name{font-weight:500!important;letter-spacing:-.025em!important;color:var(--softly-green)!important}
+body.softly-study.bm-browse .bm-primary-nav,body.softly-study.bb-chapter-redesign.bm-reader .bm-primary-nav{align-items:center;gap:8px}
+body.softly-study.bm-browse .bm-primary-nav a,body.softly-study.bb-chapter-redesign.bm-reader .bm-primary-nav a{border-radius:999px!important;min-height:42px;padding:8px 16px!important;transition:background-color 180ms var(--ui-ease),color 180ms ease}
+body.softly-study.bm-browse .bm-primary-nav a[aria-current],body.softly-study.bb-chapter-redesign.bm-reader .bm-primary-nav a[aria-current]{background:var(--softly-sage)!important;color:var(--softly-green)!important;font-weight:500!important}
+body.softly-study.bm-browse .bm-primary-nav a[aria-current]::after,body.softly-study.bb-chapter-redesign.bm-reader .bm-primary-nav a[aria-current]::after{display:none!important}
+body.softly-study.bm-browse .bm-primary-nav a:hover,body.softly-study.bb-chapter-redesign.bm-reader .bm-primary-nav a:hover{background:#f4f1eb!important;color:var(--softly-green)!important}
+body.softly-study :is(.lab-topbar-back,.bb-notes-toggle,.bb-account-trigger,.pilot-icon-button,.lab-search-btn,.lesson-search-trigger,.lab-menu-trigger,.bb-settings-toggle){border-radius:999px!important;transition:background-color 180ms var(--ui-ease),transform 160ms var(--ui-ease)}
+body.softly-study :is(.lab-topbar-back,.bb-notes-toggle,.bb-account-trigger):hover{background:var(--softly-sage)!important}
+body.softly-study :is(.lab-topbar-actions,.lab-brand,.bm-primary-nav){min-width:0}
+/* Coral actions; green remains the identity and progress color. */
+body.softly-study :is(.pilot-button,.ui-button,.statistics-button,.sim-primary,.bb-account-primary,.bb-lesson-completion-button),body.softly-study.bb-quiz-page.bm-reader.bm-quiz .quiz-check{background:var(--softly-coral);color:var(--softly-ink);border-color:transparent;border-radius:999px;font-family:Outfit,system-ui,sans-serif;font-weight:500;min-height:46px;transition:background-color 180ms ease,transform 180ms var(--ui-ease)}
+body.softly-study :is(.pilot-button,.ui-button,.statistics-button,.sim-primary,.bb-account-primary,.bb-lesson-completion-button):hover,body.softly-study.bb-quiz-page.bm-reader.bm-quiz .quiz-check:hover{background:#ffa8a2;color:var(--softly-ink)}
+body.softly-study :is(.pilot-button,.ui-button,.statistics-button,.sim-primary,.sim-secondary,.bb-account-primary,.bb-account-secondary,.quiz-actions button,.bb-lesson-completion-button):active{transform:scale(.97)}
+body.softly-study :is(.sim-secondary,.bb-account-secondary,.bb-next-lesson,.bb-practice-lesson){border-radius:999px;background:var(--softly-sage);color:var(--softly-green);border-color:transparent}
+body.softly-study :is(button,input,select,textarea):disabled{cursor:not-allowed;opacity:.6}
+body.softly-study :is(.ui-button>span[aria-hidden],.pilot-button>span[aria-hidden],.statistics-button-icon){background:#29252409}
+/* Catalog retains its anatomical preview and complete ordered chapter list. */
+body.softly-study .pilot-hero{padding-block:60px 55px;gap:52px}
+body.softly-study .pilot-hero h1{color:var(--softly-ink);font-weight:500;letter-spacing:-.03em;font-size:clamp(40px,4.9vw,64px);line-height:1.12}
+body.softly-study .pilot-hero h1 span{color:var(--softly-green)}
+body.softly-study :is(.pilot-eyebrow,.pilot-hero-note,.pilot-demo-caption,.lab-section-head p,.pilot-source-note){color:var(--softly-muted)}
+body.softly-study .pilot-demo{animation:none}
+body.softly-study .pilot-demo::before{background:var(--softly-lavender);border-radius:38px}
+body.softly-study .pilot-demo-sheet{border:0;border-radius:32px;background:#fff;box-shadow:0 4px 20px -2px #2925240d}
+body.softly-study .pilot-demo-quiz{background:var(--softly-paper);border-color:var(--softly-line)}
+body.softly-study .pilot-demo-image>a{border-radius:999px;border-color:var(--softly-line);color:var(--softly-green)}
+body.softly-study.bm-browse .lab-bento{border-color:var(--softly-line)}
+body.softly-study.bm-browse .lab-bento-cat{border-radius:32px;background:var(--softly-sage);border:0}
+body.softly-study.bm-browse .lab-bento-cat:nth-child(even){background:var(--softly-lavender)}
+body.softly-study.bm-browse :is(.lab-bento-cat-title,.lab-item-title,.lab-section-head h2){color:var(--softly-ink);font-weight:500;letter-spacing:-.025em}
+body.softly-study.bm-browse .lab-item{border-color:var(--softly-line);transition:background-color 180ms ease}
+body.softly-study.bm-browse .lab-item:hover{background:#ffffff80}
+body.softly-study :is(.lab-continue,.home-glossary-inner,.pilot-account-panel){background:var(--softly-sage);border-color:transparent;border-radius:32px}
+body.softly-study :is(.pilot-about,.home-glossary){border-color:var(--softly-line)}
+body.softly-study .home-glossary-icon{background:var(--softly-lavender);color:var(--softly-green)}
+/* Contents is sage; reading stays stable and meaningful callouts remain intact. */
+body.softly-study.bb-chapter-redesign.bm-reader #sidenav{background:var(--softly-sage)!important;border-radius:28px!important;padding:14px 10px 20px!important}
+body.softly-study.bb-chapter-redesign.bm-reader nav#sidenav .nav-chapter-title{color:var(--softly-green)!important;font-weight:500!important}
+body.softly-study.bb-chapter-redesign.bm-reader #sidenav :is(a,.nav-group-label){color:var(--softly-muted)}
+body.softly-study.bb-chapter-redesign.bm-reader #sidenav a:is(.active,[aria-current="page"]){background:#fffefb!important;color:var(--softly-green)!important;border-radius:16px!important}
+body.softly-study.bb-chapter-redesign.bm-reader #sidenav a:hover{background:#ffffff85!important}
+body.softly-study.bb-chapter-redesign.bm-reader:not(.bb-quiz-page) .page-section{background:#fffefb;border-radius:32px;padding:30px 34px;box-shadow:0 0 0 5px var(--softly-sage)}
+body.softly-study.bb-chapter-redesign.bm-reader .page-section .hero h1{font-weight:500!important;letter-spacing:-.025em!important;color:var(--softly-ink)!important;line-height:1.2!important}
+body.softly-study.bb-chapter-redesign.bm-reader :is(.card h2,.card h3){font-family:Outfit,system-ui,sans-serif;font-weight:500!important;color:var(--softly-ink)!important}
+body.softly-study.bb-chapter-redesign.bm-reader .page-section :is(p,li){font-family:Outfit,system-ui,sans-serif;line-height:1.75}
+body.softly-study.bb-chapter-redesign.bm-reader :is(.fig,.figure) img{border-color:var(--softly-line);background:white;border-radius:20px}
+body.softly-study.bb-chapter-redesign.bm-reader :is(.fig figcaption,.figure figcaption){color:var(--softly-muted);line-height:1.6}
+body.softly-study.bb-chapter-redesign.bm-reader :is(.table-wrap,.table-scroll){border-radius:18px;border-color:var(--softly-line)}
+body.softly-study.bb-chapter-redesign.bm-reader .page-section th{background:var(--softly-green);color:white}
+body.softly-study.bb-chapter-redesign.bm-reader .page-section td{border-color:var(--softly-line)}
+body.softly-study.bb-chapter-redesign.bm-reader .page-section tr:nth-child(even) td{background:#f6f5ef}
+body.softly-study.bb-chapter-redesign.bm-reader :is(.page-nav,.pilot-subtopics,.bm-legacy-subtopics){border-color:var(--softly-line)}
+body.softly-study.bb-chapter-redesign.bm-reader .bb-lesson-completion-button.is-reset{background:transparent;color:var(--softly-muted)}
+/* Shared search, preference, note and authentication overlays. */
+body.softly-study.bm-browse .lab-palette{border:5px solid var(--softly-lavender);border-radius:32px;background:#fffefb;box-shadow:0 24px 70px -24px #29252440}
+body.softly-study.bb-chapter-redesign.bm-reader .lesson-search .lesson-search-panel{border:5px solid var(--softly-lavender)!important;border-radius:26px!important;background:#fffefb!important}
+body.softly-study :is(.lab-palette-input,.lesson-search-box,.bb-account-form input,.glossary-search-shell){background:white;border-radius:16px;border-color:#d9d4ca;color:var(--softly-ink)}
+body.softly-study :is(.lab-palette-title,.lesson-search-count,.lab-palette-foot){color:var(--softly-muted)}
+body.softly-study.bb-chapter-redesign.bm-reader #bb-sidebar-settings-panel{background:#fffefb;border-color:var(--softly-line);border-radius:24px}
+body.softly-study .bb-account-dialog{border:0;border-radius:32px;background:var(--softly-paper);color:var(--softly-ink);padding:30px;font-family:Outfit,system-ui,sans-serif;box-shadow:0 25px 90px -25px #29252440}
+body.softly-study .bb-account-dialog::backdrop,body.softly-study .sim-dialog::backdrop{background:#29252445;backdrop-filter:blur(6px)}
+body.softly-study .bb-account-heading h2{font-size:28px;line-height:1.2;font-weight:500;letter-spacing:-.025em}
+body.softly-study .bb-dialog-close{border-radius:999px;background:var(--softly-sage);color:var(--softly-green)}
+body.softly-study .bb-account-form input{min-height:51px;padding:14px 16px;border:1px solid #9a968a;box-shadow:none}
+body.softly-study .bb-account-form input:focus{border-color:var(--softly-green)}
+body.softly-study .bb-account-form input[aria-invalid="true"]{border-color:#943e33}
+body.softly-study :is(.bb-account-status,.bb-account-message,.bb-account-hint,.bb-account-footnote){color:var(--softly-muted)}
+body.softly-study .bb-account-message.is-error{color:#943e33}
+body.softly-study .bb-account-link{color:var(--softly-green)}
+body.softly-study .bb-account-shell{background:var(--softly-lavender);border-radius:38px}
+body.softly-study .bb-account-inline{border-radius:32px;background:#fffefb}
+body.softly-study .bb-notes-panel{background:var(--softly-paper);color:var(--softly-ink)}
+body.softly-study .bb-notes-toolbar :is(.bb-note-tool,.bb-note-swatch){border-radius:12px}
+body.softly-study .bb-notes-toolbar .bb-note-tool:is(:hover,[aria-pressed="true"],[aria-expanded="true"]){background:var(--softly-sage);color:var(--softly-green)}
+/* Never override correct/extra/omitted backgrounds or highlight colors. */
+body.softly-study.bb-quiz-page.bm-reader.bm-quiz :is(.quiz-run-summary,.quiz-question){border-radius:32px;background:#fffefb;box-shadow:0 0 0 5px var(--softly-sage)}
+body.softly-study.bb-quiz-page.bm-reader.bm-quiz .quiz-question legend{font-family:Outfit,system-ui,sans-serif;font-weight:500;color:var(--softly-ink)}
+body.softly-study.bb-quiz-page.bm-reader.bm-quiz .quiz-option-text{font-size:16px;line-height:1.65}
+body.softly-study.bb-quiz-page.bm-reader.bm-quiz .quiz-option-wrap{border-color:var(--softly-line);border-radius:14px;transition:background-color 160ms ease}
+body.softly-study.bb-quiz-page.bm-reader.bm-quiz .quiz-option-explanation{color:var(--softly-muted);line-height:1.7}
+body.softly-study .quiz-progress-track span{background:var(--softly-green)!important}
+body.softly-study :is(.testing-preview,.sim-sidebar){background:var(--softly-lavender);border-radius:32px}
+body.softly-study :is(.testing-preview-head,.testing-preview-summary){color:var(--softly-ink)}
+body.softly-study :is(.testing-availability button,.analytics-filters button,.statistics-tabs button,.glossary-alphabet button){border-radius:999px;transition:background-color 180ms ease,color 180ms ease}
+body.softly-study :is(.testing-availability button,.analytics-filters button,.statistics-tabs button)[aria-pressed="true"]{background:var(--softly-sage);color:var(--softly-green)}
+body.softly-study :is(.sim-panel,.sim-dialog){background:#fffefb;border-color:var(--softly-line);border-radius:32px}
+body.softly-study .sim-dialog{box-shadow:0 25px 90px -25px #29252440}
+body.softly-study :is(.sim-toolbar,.sim-map){background:var(--softly-sage);border-color:var(--softly-line);border-radius:22px}
+body.softly-study :is(.sim-heading h2,.sim-page-heading h1,.testing-intro h1,.statistics-heading h1,.glossary-intro h1,.nb-heading h1){font-family:Outfit,system-ui,sans-serif;font-weight:500;letter-spacing:-.025em;color:var(--softly-ink)}
+/* Keep the original paired scores and summary/mistakes/history arrangement. */
+body.softly-study :is(.statistics-frame,.statistics-run){background:var(--softly-sage);border-radius:38px}
+body.softly-study :is(.statistics-surface,.statistics-hero){background:#fffefb;border-radius:32px}
+body.softly-study .statistics-corrected{background:var(--softly-sage);border-radius:24px}
+body.softly-study .statistics-topic button[aria-pressed="true"]{background:var(--softly-lavender)}
+body.softly-study.bm-analytics .statistics-run>summary{background:#fffefb;border-radius:32px}
+body.softly-study.bm-analytics .statistics-run-detail{background:#fffefb;border-radius:0 0 32px 32px}
+body.softly-study :is(.statistics-question-number,.statistics-run-toggle){background:var(--softly-lavender)}
+body.softly-study :is(.statistics-scores strong,.statistics-run-score>strong,.analytics-day-result>strong){font-family:Outfit,system-ui,sans-serif;font-variant-numeric:tabular-nums}
+/* Notebook materials, Caveat title, ruling and editable object geometry stay. */
+body.softly-study .glossary-browser{background:#fffefb;border-radius:32px;border-color:var(--softly-line)}
+body.softly-study .glossary-controls{background:var(--softly-lavender);border-radius:28px;border-color:transparent}
+body.softly-study :is(.glossary-entry,.glossary-results-head){border-color:var(--softly-line)}
+body.softly-study .glossary-search-shell:focus-within{outline:2px solid var(--softly-green);outline-offset:3px}
+body.softly-study .nb-grid{border-radius:32px;background:#fffefb;box-shadow:0 0 0 5px var(--softly-sage)}
+body.softly-study .nb-cover{color:var(--softly-ink)}
+body.softly-study .nb-cover-label h2{font-family:Outfit,system-ui,sans-serif;font-weight:500}
+body.softly-study .nb-cover-arrow{background:var(--softly-lavender);color:var(--softly-green)}
+body.softly-study .nb-cover:hover .nb-cover-arrow{transform:translateX(3px)}
+body.softly-study .nb-toc summary{background:var(--softly-sage);color:var(--softly-green)}
+body.softly-study .nb-paper-heading h1{font-family:Caveat,cursive;font-weight:600;letter-spacing:-.015em;color:#294535}
+body.softly-study :is(.nb-editor-toolbar,.nb-writing-toolbar){background:var(--softly-paper);border-color:var(--softly-line)}
+@media(max-width:760px){
+ body.softly-study{--bm-header-offset:124px}
+ body.softly-study.bm-browse .lab-topbar,body.softly-study.bb-chapter-redesign.bm-reader .lab-topbar{width:calc(100% - 24px);margin-top:12px;border-radius:28px!important}
+ body.softly-study.bm-browse .lab-topbar-inner,body.softly-study.bb-chapter-redesign.bm-reader .lab-topbar-inner{grid-template-columns:auto 1fr!important;grid-template-rows:44px 40px!important;height:96px!important;min-height:96px!important;padding:6px 12px!important;column-gap:4px!important}
+ body.softly-study.bm-browse .bm-primary-nav,body.softly-study.bb-chapter-redesign.bm-reader .bm-primary-nav{grid-column:1/-1!important;grid-row:2!important;height:40px;gap:12px}
+ body.softly-study.bm-browse .bm-primary-nav a,body.softly-study.bb-chapter-redesign.bm-reader .bm-primary-nav a{padding:6px 16px!important;min-height:36px;font-size:13px!important}
+ body.softly-study.bm-browse .lab-topbar-actions,body.softly-study.bb-chapter-redesign.bm-reader .lab-topbar-actions{grid-column:2!important;gap:0!important}
+ body.softly-study .pilot-hero{gap:30px;padding-block:35px 40px}
+ body.softly-study .pilot-demo::before{border-radius:32px}
+ body.softly-study.bb-chapter-redesign.bm-reader:not(.bb-quiz-page) .page-section{padding:22px 20px;border-radius:28px;box-shadow:0 0 0 4px var(--softly-sage)}
+ body.softly-study.bb-quiz-page.bm-reader.bm-quiz :is(.quiz-question,.quiz-run-summary){border-radius:28px;box-shadow:0 0 0 4px var(--softly-sage)}
+ body.softly-study .bb-account-dialog{width:calc(100vw - 24px);max-height:calc(100dvh - 24px);padding:25px;border-radius:28px}
+ body.softly-study .bb-account-heading h2{font-size:26px}
+ body.softly-study .statistics-frame{border-radius:32px}
+ body.softly-study :is(.statistics-surface,.statistics-hero,.sim-panel,.testing-preview,.glossary-browser){border-radius:28px}
+}
+@media(max-width:390px){
+ body.softly-study.bm-browse .lab-topbar-inner,body.softly-study.bb-chapter-redesign.bm-reader .lab-topbar-inner{padding-inline:9px!important}
+ body.softly-study.bm-browse .lab-brand-name,body.softly-study.bb-chapter-redesign.bm-reader .lab-brand-name{font-size:19px!important}
+ body.softly-study.bm-browse .lab-brand,body.softly-study.bb-chapter-redesign.bm-reader .lab-brand{gap:5px!important}
+ body.softly-study.bm-browse .lab-brand-mark,body.softly-study.bb-chapter-redesign.bm-reader .lab-brand-mark{width:25px!important;min-width:25px!important;height:25px!important}
+ body.softly-study.bm-browse .lab-brand-mark img,body.softly-study.bb-chapter-redesign.bm-reader .lab-brand-mark img{width:25px!important;height:25px!important}
+ body.softly-study.bb-chapter-redesign.bm-reader .lab-brand{margin-left:44px!important}
+ body.softly-study.bb-chapter-redesign.bm-reader:not(.bb-quiz-page) .page-section{padding-inline:16px}
+ body.softly-study .pilot-hero h1{font-size:39px}
+ body.softly-study .pilot-hero-actions{flex-wrap:wrap;gap:12px}
+}
+@media(prefers-reduced-motion:reduce){
+ body.softly-study *,body.softly-study *::before,body.softly-study *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+ body.softly-study [data-softly-reveal]{opacity:1!important;visibility:visible!important;transform:none!important}
+}
+@media print{
+ body.softly-study{background:white!important;color:#222!important;--ui-paper:white;--ui-shell:white;--fg-1:#222;--fg-2:#222;--bg-surface:white}
+ body.softly-study::after{display:none}
+ body.softly-study.bm-browse .lab-topbar,body.softly-study.bb-chapter-redesign.bm-reader .lab-topbar,body.softly-study #sidenav{display:none!important}
+ body.softly-study.bb-chapter-redesign.bm-reader .page-section,body.softly-study :is(.quiz-question,.quiz-run-summary,.statistics-frame,.statistics-surface,.statistics-hero,.sim-panel,.nb-grid,.glossary-browser){background:white!important;box-shadow:none!important;border-radius:0!important}
+ body.softly-study.bb-chapter-redesign.bm-reader .page-section{padding:0!important}
+ body.softly-study [data-softly-reveal]{opacity:1!important;visibility:visible!important;transform:none!important}
+ body.softly-study .pilot-demo{animation:none;transform:none}
+}
+/* The controller measures the selected nav link for this continuity pill. */
+body.softly-study{--tabs-text-muted:var(--softly-muted);--tabs-text-active:var(--softly-green);--tabs-pill-bg:var(--softly-sage);--tabs-bar-bg:transparent}
+body.softly-study .bm-primary-nav.t-tabs{position:relative}
+body.softly-study.bm-browse .bm-primary-nav.t-tabs a,body.softly-study.bb-chapter-redesign.bm-reader .bm-primary-nav.t-tabs a{height:44px;min-height:44px;z-index:1}
+body.softly-study.bm-browse .bm-primary-nav.t-tabs a[aria-current],body.softly-study.bb-chapter-redesign.bm-reader .bm-primary-nav.t-tabs a[aria-current]{background:transparent!important}
+body.softly-study .bm-primary-nav .t-tabs-pill{top:50%;height:44px;margin-top:-22px;background:var(--softly-sage)}
+body.softly-study .softly-edition-footer{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;max-width:1280px;margin:20px auto 0;padding:22px 24px;border-top:1px solid var(--softly-line);color:var(--softly-muted);font-size:13px}
+body.softly-study .softly-edition-footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--softly-green);text-underline-offset:4px}
+body.softly-study .softly-edition-footer a:hover{text-decoration:underline}
+/* Native dialog visibility wins even before the motion class is synchronized. */
+body.softly-study .bb-account-dialog.t-modal[open]{opacity:1;transform:scale(1);pointer-events:auto}
+@media(max-width:760px){
+ body.softly-study{--bm-header-offset:128px}
+ body.softly-study.bm-browse .lab-topbar-inner,body.softly-study.bb-chapter-redesign.bm-reader .lab-topbar-inner{grid-template-rows:44px 44px!important;height:100px!important;min-height:100px!important}
+ body.softly-study.bm-browse .bm-primary-nav,body.softly-study.bb-chapter-redesign.bm-reader .bm-primary-nav{height:44px}
+ body.softly-study.bm-browse .bm-primary-nav a,body.softly-study.bb-chapter-redesign.bm-reader .bm-primary-nav a{min-height:44px}
+ body.softly-study .softly-edition-footer{padding-inline:18px}
+}
+@media print{body.softly-study .softly-edition-footer{display:none!important}}
+/* Canonical progress panel is rendered outside the question ranges. */
+body.softly-study.bb-quiz-page.bm-reader.bm-quiz .quiz-progress-panel{background:#fffefb;border-radius:32px;box-shadow:0 0 0 5px var(--softly-sage)}
+body.softly-study :is(.statistics-tabs button,.analytics-filters select,.statistics-period select,.lab-brand-name,.nav-chapter-title,.nav-chapter-badge,.fc-btn-play,.fc-btn-reset,.fc-title,.fc-diamond-text,.fc-diamond-sub){font-family:Outfit,system-ui,sans-serif}
+body.softly-study .statistics-tabs button[aria-selected="true"]{background:#fffefb;color:var(--softly-green)}
+body.softly-study .glossary-search-field{background:#fffefb;border-radius:16px}
+@media(max-width:760px){body.softly-study.bb-quiz-page.bm-reader.bm-quiz .quiz-progress-panel{border-radius:28px;box-shadow:0 0 0 4px var(--softly-sage)}}
+@media print{body.softly-study.bb-quiz-page.bm-reader.bm-quiz .quiz-progress-panel{background:white!important;border-radius:0!important;box-shadow:none!important}}
+/* Measured navigation coordinates come from study.js; no second vertical offset. */
+body.softly-study .bm-primary-nav .t-tabs-pill{margin-top:0}
+/* Detach every study header, including legacy reader and statistics overrides. */
+body.softly-study.bm-browse .lab-topbar,
+body.softly-study.bb-chapter-redesign.bm-reader .lab-topbar{
+ width:min(1328px,calc(100% - 32px))!important;
+ margin:12px auto 0!important;
+ top:12px!important;
+}

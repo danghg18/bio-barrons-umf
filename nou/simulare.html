@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Simulare de biologie · BioMed</title>
+<meta name="description" content="Antrenament de biologie cu 35 de întrebări și notă orientativă. Formula detaliată de admitere pentru 2026 nu este confirmată.">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://danghg18.github.io/bio-barrons-umf/simulare.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Simulare de biologie · BioMed">
+<meta property="og:description" content="Antrenament de biologie cu 35 de întrebări și notă orientativă. Formula detaliată de admitere pentru 2026 nu este confirmată.">
+<meta property="og:url" content="https://danghg18.github.io/bio-barrons-umf/simulare.html">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="../icon-192.png">
+<meta name="theme-color" content="#FDFCF8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="BioMed">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/css/tokens.css?v=20260926-polish1">
+<link rel="stylesheet" href="../assets/css/home.css?v=20260926-polish1">
+<script src="../assets/js/light-mode.js?v=20260909-editorial1"></script>
+<link rel="stylesheet" href="../assets/css/site-redesign.css?v=20260926-polish1">
+<link rel="stylesheet" href="../assets/css/testing-analytics.css?v=20260926-polish1">
+<link rel="stylesheet" href="../assets/css/accounts.css?v=20260926-polish1">
+<link rel="stylesheet" href="../assets/css/simulation.css?v=20260930-personal1">
+<link rel="preload" href="assets/Outfit-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="transitions.css?v=20261002-platform1">
+<link rel="stylesheet" href="study.css?v=20261002-platform1">
+</head>
+<body class="bm-browse bm-simulation softly-study" data-asset-base="../" data-softly-source="simulare.html">
+<a class="lab-skip" href="#main-content">Sari la conținut</a>
+<header class="lab-topbar">
+  <div class="lab-topbar-inner">
+    <a class="lab-brand" href="index.html">
+      <div class="lab-brand-mark">
+        <img src="../assets/logo-mark.svg" alt="" width="30" height="30">
+      </div>
+      <span class="lab-brand-name">BioMed</span>
+    </a>
+    <nav class="bm-primary-nav" aria-label="Navigare principală">
+      <a href="lectii.html#lab-bento">Lecții</a>
+      <a href="testare.html" aria-current="page">Testare</a>
+    </nav>
+    <div class="lab-topbar-actions"></div>
+  </div>
+</header>
+<main class="sim-page" id="main-content" tabindex="-1">
+  <div class="sim-page-heading"><a href="testare.html#simulation-builder">← Înapoi la Testare</a><h1>Simulare de biologie</h1><p id="sim-subtitle">Se încarcă testul…</p></div>
+  <div class="sim-notice" id="sim-error" role="alert" hidden></div>
+  <div class="sim-notice" id="sim-storage-error" role="status" hidden>Ultimele modificări nu au putut fi salvate permanent. Păstrează pagina deschisă și exportă testul înainte de a ieși. <button type="button" id="sim-export" class="sim-link-button">Exportă testul</button></div>
+  <section id="sim-result" class="sim-panel sim-result" aria-labelledby="sim-result-title" tabindex="-1" hidden></section>
+  <div id="sim-workspace" class="sim-workspace" hidden>
+    <aside class="sim-sidebar" aria-label="Navigarea testului"><div class="sim-toolbar"><strong id="sim-progress"></strong><span id="sim-timer"></span></div><nav class="sim-map" aria-label="Întrebările simulării" id="sim-map"></nav><div class="sim-map-legend">Verde: completată · Contur: întrebarea curentă</div><button class="sim-primary" type="button" id="sim-submit">Predă testul</button></aside>
+    <div id="sim-player-content"><p class="sim-instruction" id="sim-instruction">Bifează variantele alese. Poți reveni la orice întrebare înainte de predare.</p><div id="sim-questions"></div><nav id="sim-pagination" class="sim-pagination" aria-label="Grupe de întrebări"></nav></div>
+  </div>
+  <section class="sim-panel sim-unavailable" id="sim-unavailable" hidden><h2>Test indisponibil</h2><p>Acest test nu este salvat în browserul și contul curent sau folosește o versiune mai nouă.</p><a class="sim-secondary" href="testare.html#simulation-builder">Creează o simulare</a></section>
+  <p class="sim-footnote">Antrenament de biologie · Reguli de punctaj din 2023, ponderi egale. Formula detaliată pentru admiterea 2026 nu este confirmată. <a href="testare.html#simulation-builder">Despre punctare</a></p>
+</main>
+<dialog id="sim-confirm" class="sim-dialog" aria-labelledby="sim-confirm-title"><h2 id="sim-confirm-title">Predai testul?</h2><p id="sim-confirm-copy"></p><p>După predare, răspunsurile și nota rămân definitive.</p><div class="sim-dialog-actions"><button type="button" id="sim-cancel" class="sim-secondary" autofocus>Continuă testul</button><button type="button" id="sim-confirm-submit" class="sim-primary">Confirmă predarea</button></div></dialog>
+<script src="../assets/js/chapters-data.js"></script>
+<script src="../assets/js/quiz-index.js?v=20260926-circulator1"></script>
+<script src="../assets/js/analytics-sync.js?v=20260930-personal1"></script>
+<script src="../assets/js/personal-records.js?v=20260930-personal1"></script>
+<script src="../assets/js/user-storage.js?v=20260930-personal1"></script>
+<script src="../assets/js/supabase-config.js"></script>
+<script src="../assets/js/vendor/supabase.js"></script>
+<script src="../assets/js/supabase-client.js"></script>
+<script src="../assets/js/auth-state.js"></script>
+<script src="../assets/js/note-media.js"></script>
+<script src="../assets/js/cloud-sync.js?v=20260930-personal1"></script>
+<script src="../assets/js/site-redesign.js"></script>
+<script src="../assets/js/account-ui.js?v=20260930-personal1"></script>
+<script src="../assets/js/simulation-core.js?v=20260930-personal1"></script>
+<script src="../assets/js/simulation-store.js?v=20260930-personal1"></script>
+<script src="../assets/js/simulation-ui.js?v=20260926-local2"></script>
+<script src="../assets/js/simulation-player.js?v=20260930-personal1"></script>
+<script src="../assets/js/offline.js"></script>
+<footer class="softly-edition-footer"><a href="index.html">BioMed</a><a data-classic-edition href="../simulare.html">Deschide varianta clasică</a></footer>
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="study.js?v=20261002-platform1"></script>
+</body>
+</html>

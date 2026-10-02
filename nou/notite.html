@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Contul tău · BioMed</title>
-<meta name="description" content="Autentificare, confirmarea contului și resetarea parolei pentru contul tău BioMed.">
+<title>Caietele mele · BioMed</title>
+<meta name="description" content="Notițele tale de biologie, organizate în caiete pe capitole.">
 <meta name="robots" content="noindex,follow">
-<link rel="canonical" href="https://danghg18.github.io/bio-barrons-umf/cont.html">
+<link rel="canonical" href="https://danghg18.github.io/bio-barrons-umf/notite.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Contul tău · BioMed">
-<meta property="og:description" content="Gestionează contul și continuă studiul pe BioMed.">
-<meta property="og:url" content="https://danghg18.github.io/bio-barrons-umf/cont.html">
+<meta property="og:title" content="Caietele mele · BioMed">
+<meta property="og:description" content="Toate notițele tale, în caiete pe capitole.">
+<meta property="og:url" content="https://danghg18.github.io/bio-barrons-umf/notite.html">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" type="image/png" href="../icon-192.png">
 <meta name="theme-color" content="#FDFCF8">
@@ -20,30 +20,26 @@
 <link rel="stylesheet" href="../assets/css/site-redesign.css?v=20260926-polish1">
 <script src="../assets/js/light-mode.js?v=20260909-editorial1"></script>
 <link rel="stylesheet" href="../assets/css/accounts.css?v=20260926-polish1">
+<link rel="stylesheet" href="../assets/css/notebooks.css?v=20260926-polish1">
 <link rel="preload" href="assets/Outfit-Regular.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="transitions.css?v=20261002-platform1">
 <link rel="stylesheet" href="study.css?v=20261002-platform1">
-<script src="auth-redirect.js?v=20261002-platform1"></script>
 </head>
-<body class="bm-browse softly-study" data-asset-base="../" data-softly-source="cont.html">
+<body class="bm-browse nb-page softly-study" data-asset-base="../" data-softly-source="notite.html">
 <div class="lab">
 <a class="lab-skip" href="#main-content">Sari la conținut</a>
 <header class="lab-topbar"><div class="lab-topbar-inner">
 <a class="lab-brand" href="index.html" aria-label="BioMed — pagina principală"><span class="lab-brand-mark"><img src="../assets/logo-mark.svg" alt="" width="32" height="32"></span><span class="lab-brand-name">BioMed</span></a>
 <nav class="bm-primary-nav" aria-label="Navigare principală"><a href="lectii.html#lab-bento">Lecții</a><a href="testare.html">Testare</a></nav>
-<div class="lab-topbar-actions"></div>
+<div class="lab-topbar-actions"><a href="notite.html" id="bb-notes-toggle" class="bb-notes-toggle bb-notes-library-toggle" aria-label="Notițe" title="Notițe" aria-current="page"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 3h14v18H5zM8 8h8M8 12h8M8 16h5"/></svg><span>Notițe</span></a></div>
 </div></header>
-<main class="bb-account-page" id="main-content">
-<header class="bb-account-intro">
-<h1>Contul tău de studiu</h1>
-<p>Progresul lecțiilor, grilele și notițele te însoțesc pe dispozitivele pe care te autentifici.</p>
-</header>
-<div class="bb-account-shell" id="bb-account-mount"></div>
-<a class="bb-account-return" href="lectii.html">Înapoi la lecții</a>
-<noscript><p>Activează JavaScript pentru a te autentifica sau a reseta parola. Poți consulta lecțiile fără cont.</p></noscript>
+<main id="main-content" class="nb-main">
+<div id="notebooks"><h1>Caietele mele</h1><p>Se deschid caietele…</p></div>
+<noscript><p>Activează JavaScript pentru a vedea notițele salvate în contul tău.</p><a href="lectii.html">Înapoi la lecții</a></noscript>
 </main>
 </div>
 <script src="../assets/js/chapters-data.js?v=20260926-circulator1"></script>
+<script src="../assets/js/notebook-sections.js"></script>
 <script src="../assets/js/quiz-index.js?v=20260926-circulator1"></script>
 <script src="../assets/js/analytics-sync.js?v=20260930-personal1"></script>
 <script src="../assets/js/personal-records.js?v=20260930-personal1"></script>
@@ -56,7 +52,11 @@
 <script src="../assets/js/note-media.js"></script>
 <script src="../assets/js/cloud-sync.js?v=20260930-personal1"></script>
 <script src="../assets/js/account-ui.js?v=20260930-personal1"></script>
-<footer class="softly-edition-footer"><a href="index.html">BioMed</a><a data-classic-edition href="../cont.html">Deschide varianta clasică</a></footer>
+<script src="../assets/js/note-content.js"></script>
+<script src="../assets/js/note-editor.js"></script>
+<script src="../assets/js/notes.js?v=20260926-polish1"></script>
+<script src="../assets/js/offline.js"></script>
+<footer class="softly-edition-footer"><a href="index.html">BioMed</a><a data-classic-edition href="../notite.html">Deschide varianta clasică</a></footer>
 <script src="assets/vendor/gsap.min.js"></script>
 <script src="assets/vendor/ScrollTrigger.min.js"></script>
 <script src="study.js?v=20261002-platform1"></script>
