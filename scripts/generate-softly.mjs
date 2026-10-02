@@ -23,6 +23,9 @@ for (const file of files) {
   let html = await readFile(new URL(file, root), 'utf8');
   html = html.replace(/<link\b[^>]*href="https:\/\/fonts\.(?:googleapis|gstatic)\.com[^>]*>\s*/g, '');
   html = html.replace(/\b(src|href|poster)=(['"])(assets\/[^'"]+|(?:icon-[^'"]+|apple-touch-icon\.png))\2/g, '$1=$2../$3$2');
+  // A previously installed classic worker may still own the first nested navigation.
+  // Give the two nesting-aware adapters fresh URLs before the Softly worker takes over.
+  html = html.replace(/(src="\.\.\/assets\/js\/(?:chapter-redesign|simulation-ui)\.js)\?[^\"]+/g, `$1?v=${version}`);
   html = html.replace(/<a\b[^>]*>/g, tag => /class="[^"]*lab-brand\b/.test(tag) ? tag : tag.replace(/href="index\.html/g, 'href="lectii.html'));
   html = html.replace(/<meta name="robots" content="[^"]+">/, '<meta name="robots" content="noindex,follow">');
   html = html.replace(/<meta name="theme-color" content="[^"]+">/, '<meta name="theme-color" content="#FDFCF8">');

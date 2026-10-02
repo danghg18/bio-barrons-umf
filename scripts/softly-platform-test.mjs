@@ -15,7 +15,8 @@ const server=http.createServer(async(req,res)=>{
     const file=resolve(root,path.slice(prefix.length)+(path.endsWith('/')?'index.html':''));
     if(!file.startsWith(root+'/'))throw Error();
     const types={'.html':'text/html','.css':'text/css','.js':'text/javascript','.json':'application/json','.svg':'image/svg+xml','.ttf':'font/ttf','.webp':'image/webp','.png':'image/png'};
-    res.writeHead(200,{'Content-Type':types[extname(file)]||'application/octet-stream'});res.end(await readFile(file));
+    const content=await readFile(file);
+    res.writeHead(200,{'Content-Type':types[extname(file)]||'application/octet-stream'});res.end(content);
   }catch{res.writeHead(404);res.end();}
 });
 await new Promise(done=>server.listen(0,'127.0.0.1',done));
@@ -96,6 +97,13 @@ try {
   const offline=await browser.newContext(), p=await offline.newPage();
   await p.goto(base+'testare.html');
   await p.waitForFunction(()=>!!navigator.serviceWorker.controller,null,{timeout:60000});
+  const classicCache=(await p.evaluate(()=>caches.keys())).find(key=>key.startsWith('biologie-atlas-'));
+  const classicLesson=await readFile(resolve(root,'sistemul_nervos.html'),'utf8');
+  const classicBridge=classicLesson.match(/src="(assets\/js\/chapter-redesign\.js[^\"]*)"/)[1];
+  const oldBridge=(await readFile(resolve(root,'assets/js/chapter-redesign.js'),'utf8')).replace("(document.body.dataset.assetBase || '') + ",'');
+  await p.evaluate(async({classicCache,url,source})=>{const cache=await caches.open(classicCache);await cache.put(url,new Response(source,{headers:{'Content-Type':'text/javascript'}}));},{classicCache,url:base+classicBridge,source:oldBridge});
+  await p.goto(base+'nou/sistemul_nervos.html');
+  assert.equal(await p.locator('.brand-logo-mark').getAttribute('src'),'../assets/logo-mark.svg','First Softly lesson bypasses the old classic bridge before its own worker activates');
   await p.goto(base+'nou/testare.html');
   await p.waitForFunction(()=>navigator.serviceWorker.controller?.scriptURL.includes('/nou/sw.js'),null,{timeout:60000});
   const cachesBefore=await p.evaluate(()=>caches.keys());

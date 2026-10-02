@@ -32,6 +32,8 @@ The edition owns `nou/manifest.json`, `nou/sw.js` and `nou/precache-manifest.js`
 
 Softly uses the content-derived `biomed-softly-` cache namespace and reads only its current cache. It preserves the established HTML/network and asset/cache strategies, exact-query behavior and supported shell fallbacks. Activation deletes only obsolete Softly caches. The classic worker/cache remains separate, and classic HTML is excluded from Softly's precache. Authentication and private API data must not enter either public cache.
 
+The nesting-aware lesson and simulation adapters have edition-versioned URLs. This also protects the first Softly navigation while an older installed classic worker still controls the browser.
+
 ## Assets and visual guidance
 
 `DESIGN.md` documents the shared Softly visual world and its calmer study expression. Existing BioMed logos, textbook figures and local fonts are reused unchanged; the study extension adds no raster artwork. Outfit and Reenie Beanie licenses are in `assets/Outfit-OFL.txt` and `assets/ReenieBeanie-OFL.txt`. The grain is the existing SVG. Older public assets remain for compatibility even when the current landing does not display them.
@@ -49,7 +51,7 @@ npm test
 
 - Generation checks compare all authored body text, IDs, figures and alt text, check local references, and ensure canonical pages do not receive the Softly layer.
 - The platform browser check visits all 41 study pages at 1440, 775, 390 and 320px through the Pages subpath. It checks local fonts, overflow, assets and in-edition navigation, plus representative shared/legacy routes, bookmarked search, omitted-answer feedback, shared quiz progress, mock account/notes persistence, simulation, reduced motion and print.
-- Offline checks install both workers, exercise both editions and prove that Softly does not read a stale shared asset from the classic cache.
+- Cache checks reproduce the first Softly lesson under an older classic adapter, then install both workers, exercise both editions offline and prove that Softly does not read stale shared assets from the classic cache.
 - Landing checks cover the unsaved demo, account flows, responsive pinning, reverse scroll, keyboard/menu/FAQ behavior, reduced motion, printing before scroll and bookmarks. Account checks inject `tests/supabase-mock.js`; live service validation is separate.
 
 Automated coverage is a verification specification, not a claim that every current run passed. Review rendered desktop, compact and phone views for readable figures/tables, focus, form boundaries and preserved answer/highlight semantics before release; record the actual run and finish-review verdict separately.
