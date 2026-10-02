@@ -1,3 +1,4 @@
+import {toggleReadingSettings} from './header-test-helpers.mjs';
 import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
 import http from 'node:http';
@@ -48,7 +49,7 @@ try{
   const beforeClear=await page.evaluate(()=>Object.values(BBUserStorage.snapshot().values).find(v=>v?.anchor&&!v.deleted));
   // Use real UI and exact confirmation, cancellation first.
   if(mobile) await page.locator('.lab-menu-trigger').click();
-  await page.locator('.bb-settings-toggle').click();
+  await toggleReadingSettings(page);
   await page.locator('#nav-hl-btn').click();
   assert.equal(await page.locator('.bb-highlight-manage').evaluate(details=>details.open),false,'bulk deletion starts collapsed');
   await page.locator('.bb-highlight-manage > summary').click();
@@ -71,7 +72,7 @@ try{
   await page.screenshot({path:`/tmp/bb-highlight-review/${mobile?'mobile':'desktop'}-${file}.png`});
   await page.getByRole('button',{name:'Închide',exact:true}).click();
   if(mobile) await page.locator('.lab-menu-trigger').click();
-  await page.locator('.bb-settings-toggle').click();
+  await toggleReadingSettings(page);
   await page.locator('#nav-hl-btn').click();
   await page.screenshot({path:`/tmp/bb-highlight-review/${mobile?'mobile':'desktop'}-palette-${file}.png`});
   await page.evaluate(()=>BBUserStorage.set('note:highlight-test:protected',{body:'Notiță protejată'}));

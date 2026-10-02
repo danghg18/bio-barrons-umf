@@ -1,3 +1,4 @@
+import {toggleReadingSettings} from './header-test-helpers.mjs';
 import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
 import http from 'node:http';
@@ -21,7 +22,7 @@ const base=`http://127.0.0.1:${server.address().port}${prefix}`;
 let browser;
 
 async function openPalette(page) {
-  if(await page.locator('#bb-sidebar-settings-panel').evaluate(panel=>panel.hidden)) await page.locator('.bb-settings-toggle').click();
+  if(await page.locator('#bb-sidebar-settings-panel').evaluate(panel=>panel.hidden)) await toggleReadingSettings(page);
   await page.locator('#nav-hl-btn').click();
   await page.locator('#bb-highlighter-palette').waitFor({state:'visible'});
   await page.locator('#bb-highlighter-palette').evaluate(async palette=>{
@@ -104,7 +105,7 @@ try {
       assert.equal(await page.evaluate(()=>document.activeElement.id),'nav-hl-btn');
       await page.keyboard.press('Escape');
       assert.equal(await page.locator('#bb-sidebar-settings-panel').isVisible(),false,label+': second Escape closes settings');
-      assert.ok(await page.locator('.bb-settings-toggle').evaluate(button=>document.activeElement===button),label+': settings Escape restores focus');
+      assert.ok(await page.locator(viewport.width<1000?'#menu-toggle':'.bb-settings-toggle').evaluate(button=>document.activeElement===button),label+': settings Escape restores focus to the visible entry');
       assert.deepEqual(errors,[],label+': no browser errors');
       console.log('PASS '+label+': compact panel, disclosure, touch targets, keyboard, color, disable');
       await context.close();

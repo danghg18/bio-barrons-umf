@@ -43,7 +43,7 @@ Primary actions are compact dark-green pills; search and frequent tools are dire
 
 ## Header and reading layout
 
-The white header is detached from viewport edges and centers the visible “Lecții” and “Testare” navigation. It remains sticky in lessons, quizzes and notebooks. Narrow pages use two compact rows for identity/tools and navigation; the approved statistics header keeps its compact single-row arrangement. Search, notes and account access remain reachable at 320px.
+The shared Efferd header-2 adaptation spans up to 1280px at the top and contracts to a 1120px white surface, offset 8px, after scrolling. It keeps BioMed, “Lecții”, “Testare”, study tools, the existing account dialog and a contextual quiz action. Below 1000px it becomes a 64px single row with a separate accessible site menu. Lesson contents and search retain their own controls; reading settings and notes remain reachable through the menu at 320px. The classic palette and 14px scrolled header radius remain distinct from Softly. See `docs/efferd-header.md`.
 
 Desktop lessons use a maximum 1328px shell with a compact 240px contents column and a single reading surface. Contents and the quiz number map start visible; retain the existing hide control and preference behavior. At 1024px and below, contents use the existing accessible drawer with Escape, focus containment and focus return. Sticky tools and anchor offsets consume the shared header offset. Tables retain their responsive scrolling or authored labelled stacking. Print excludes tools and framing while keeping educational content.
 

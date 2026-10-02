@@ -128,16 +128,23 @@ try {
       assert.ok(await page.locator('.lab-topbar .lab-brand').evaluate(n=>Boolean(n.compareDocumentPosition(document.querySelector('.bm-primary-nav')) & Node.DOCUMENT_POSITION_FOLLOWING)),file+' keyboard navigation order');
       assert.equal(await page.locator('.bm-primary-nav a[aria-current]').textContent(),file.startsWith('grile_')||file==='testare.html'?'Testare':'Lecții');
       assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),file+' overflow '+width);
-      const navRect=await page.locator('.bm-primary-nav').boundingBox();
-      assert.ok(Math.abs(navRect.x+navRect.width/2-width/2)<2,file+' navigation is not centered');
-      const actionsRect=await page.locator('.lab-topbar-actions').boundingBox();
-      const brandRect=await page.locator('.lab-topbar .lab-brand').boundingBox();
-      const separate=(a,b)=>a.x+a.width<=b.x+1||b.x+b.width<=a.x+1||a.y+a.height<=b.y+1||b.y+b.height<=a.y+1;
-      assert.ok(separate(navRect,actionsRect),file+' navigation overlaps actions');
-      assert.ok(separate(brandRect,navRect),file+' logo overlaps navigation');
-      if(file==='index.html') assert.ok(await page.locator('.lab-topbar-actions #bb-notes-toggle').isVisible(),'Homepage notes stay in the topbar');
-      for(const link of await page.locator('.bm-primary-nav a').all()) {
-        assert.ok(await link.evaluate(n=>{const r=n.getBoundingClientRect();return n.contains(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2));}),file+' navigation link is covered');
+      if (width >= 1000) {
+        const navRect=await page.locator('.bm-primary-nav').boundingBox();
+        const actionsRect=await page.locator('.lab-topbar-actions').boundingBox();
+        const brandRect=await page.locator('.lab-topbar .lab-brand').boundingBox();
+        const separate=(a,b)=>a.x+a.width<=b.x+1||b.x+b.width<=a.x+1||a.y+a.height<=b.y+1||b.y+b.height<=a.y+1;
+        assert.ok(separate(navRect,actionsRect),file+' navigation overlaps actions');
+        assert.ok(separate(brandRect,navRect),file+' logo overlaps navigation');
+        if(file==='index.html') assert.ok(await page.locator('.lab-topbar-actions #bb-notes-toggle').isVisible(),'Desktop homepage notes stay in the topbar');
+        for(const link of await page.locator('.bm-primary-nav a').all()) {
+          assert.ok(await link.evaluate(n=>{const r=n.getBoundingClientRect();return n.contains(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2));}),file+' navigation link is covered');
+        }
+      } else {
+        assert.equal(await page.locator('.bm-primary-nav').isVisible(),false);
+        await page.locator('#menu-toggle').click();
+        assert.equal(await page.locator('#mobile-menu .bb-header-links a').count(),5);
+        await page.keyboard.press('Escape');
+        assert.equal(await page.locator('#menu-toggle').getAttribute('aria-expanded'),'false');
       }
       assert.equal(await page.locator('#pilot-account-toggle').count(),1,file+' shared account scope');
       await capture(file.replace('.html','')+'-'+width);
@@ -158,7 +165,10 @@ try {
         await page.keyboard.press('Escape');
         assert.equal(await menu.evaluate(n=>n===document.activeElement),true,file+' drawer return focus');
       }
-      await page.locator('.bb-settings-toggle').click();
+      if (width < 1000) {
+        await page.locator('#menu-toggle').click();
+        await page.locator('#mobile-menu').getByRole('button',{name:'Setări de lectură',exact:true}).click();
+      } else await page.locator('.bb-settings-toggle').click();
       assert.ok(await page.locator('#bb-sidebar-settings-panel').isVisible(),file+' settings');
       await page.locator('[data-reading-size="large"]').click();
       await capture(file.replace('.html','')+'-settings-'+width);
@@ -187,9 +197,11 @@ try {
     await touch.goto(base+file);
     if(!['index.html','testare.html'].includes(file)) await touch.waitForFunction(()=>document.body.dataset.bbSharedReady==='true');
     assert.ok(await touch.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),file+' touch overflow');
-    for(const link of await touch.locator('.bm-primary-nav a').all()) {
+    await touch.locator('#menu-toggle').click();
+    for(const link of await touch.locator('#mobile-menu .bb-header-links a').all()) {
       assert.ok(await link.evaluate(n=>{const r=n.getBoundingClientRect();return n.contains(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2));}),file+' touch navigation is covered');
     }
+    await touch.keyboard.press('Escape');
   }
   await touchContext.close();
   assert.deepEqual(errors,[]);

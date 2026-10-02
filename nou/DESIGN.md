@@ -40,7 +40,7 @@ Reenie Beanie remains a brief handwritten accent on the landing page. Notebook p
 
 ## Layout
 
-The study header is a detached pill, with a measured sage selection indicator. At 760px and below it becomes two rows: identity/actions above the primary navigation, with 44px navigation targets. Content keeps the canonical page structures: complete ordered catalog, contents beside the lesson sheet, quiz map and ranges, notebook library/editor, and statistics summary/mistakes/history.
+The landing and study pages share the static Efferd header-2 adaptation. It starts at a maximum 1280px width and contracts to 1120px after scrolling, with a cream surface, 24px corners and an 8px top offset. Below 1000px a 64px single row opens a native modal menu for the complete study navigation and tools. Buttons have 44px touch targets. The landing header still gives way to the pinned method sequence. See `../docs/efferd-header.md`. Content keeps the canonical page structures: complete ordered catalog, contents beside the lesson sheet, quiz map and ranges, notebook library/editor, and statistics summary/mistakes/history.
 
 Reading sheets use comfortable padding (30px 34px), reduced to 22px 20px on phones and 16px horizontal padding at 390px and below. Tables retain the shared responsive layouts and figures retain their captions. Study controls, writing surfaces and long reading passages stay still while in use.
 

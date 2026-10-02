@@ -75,19 +75,22 @@ try {
           return {width:innerWidth, scroll:document.documentElement.scrollWidth, header:{left:box.left,right:box.right,top:box.top,bottom:box.bottom,radius:parseFloat(style.borderTopLeftRadius),position:style.position},heading:heading?.textContent.trim()};
         });
         assert.ok(geometry.scroll <= width + 1, 'Horizontal overflow: ' + JSON.stringify(geometry));
-        if (file !== 'index.html') {
-          assert.ok(geometry.header.left <= .5 && geometry.header.right >= width - .5 && geometry.header.top <= .5, 'Interior page topbar must be flush with the viewport edges: ' + JSON.stringify(geometry.header));
-          assert.equal(geometry.header.radius, 0, 'Interior page topbar must not look like a floating rounded surface');
-          assert.equal(geometry.header.position, 'sticky', 'Interior page topbar remains visible while scrolling');
-          await page.evaluate(() => scrollTo(0, Math.min(600, document.documentElement.scrollHeight - innerHeight)));
-          const scrolledTop = await page.locator('.lab-topbar').evaluate(node => node.getBoundingClientRect().top);
-          assert.ok(Math.abs(scrolledTop) <= .5, 'Interior page topbar stays attached to the viewport after scrolling');
-          if ([1440,390].includes(width) && representatives.has(file)) await capture(page, file.replace('.html','') + '-scrolled', width);
-          await page.evaluate(() => scrollTo(0, 0));
+        assert.equal(geometry.header.position, 'sticky', 'Shared header remains visible while scrolling');
+        assert.ok(Math.abs(geometry.header.top - (width >= 1000 && await page.evaluate(() => scrollY > 10) ? 8 : 0)) <= .5, 'Header starts at its scroll-aware offset');
+        if (width < 1000) {
+          assert.ok(geometry.header.left <= .5 && geometry.header.right >= width - .5, 'Mobile header spans the viewport');
+          assert.equal(geometry.header.radius, 0, 'Mobile header stays compact');
         } else {
-          assert.ok(geometry.header.left >= 8 && geometry.header.right <= width - 8 && geometry.header.top >= 8, 'The homepage header must remain detached from viewport edges: ' + JSON.stringify(geometry.header));
-          assert.ok(geometry.header.radius >= 20, 'The homepage header retains its rounded surface');
+          assert.ok(geometry.header.left >= 20 && geometry.header.right <= width - 20, 'Efferd header has desktop side margins');
         }
+        await page.evaluate(() => scrollTo(0, Math.min(600, document.documentElement.scrollHeight - innerHeight)));
+        await page.waitForFunction(() => document.querySelector('#bb-site-header').classList.contains('is-scrolled') === (scrollY > 10));
+        const scrolledTop = await page.locator('.lab-topbar').evaluate(node => node.getBoundingClientRect().top);
+        const expectedTop = width >= 1000 && await page.evaluate(() => scrollY > 10) ? 8 : 0;
+        assert.ok(Math.abs(scrolledTop - expectedTop) <= .5, 'Efferd header stays visible at its responsive scroll offset');
+        if ([1440,390].includes(width) && representatives.has(file)) await capture(page, file.replace('.html','') + '-scrolled', width);
+        await page.evaluate(() => scrollTo(0, 0));
+        await page.waitForFunction(() => !document.querySelector('#bb-site-header').classList.contains('is-scrolled'));
         assert.equal(await page.locator('.lab-topbar .lab-brand-name').textContent(), 'BioMed');
         assert.equal(await page.locator('.bm-primary-nav a').count(), 2);
         const covered = await page.locator('.lab-topbar a:visible,.lab-topbar button:visible').evaluateAll(nodes => nodes.filter(node => {
@@ -186,14 +189,15 @@ try {
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
       await capture(page, 'notite-paper', width);
       await page.evaluate(() => scrollTo(0, 600));
-      assert.ok(Math.abs(await page.locator('.lab-topbar').evaluate(node => node.getBoundingClientRect().top)) <= .5, 'Open notebooks keep the topbar attached while scrolling');
+      await page.waitForFunction(() => document.querySelector('#bb-site-header').classList.contains('is-scrolled'));
+      assert.ok(Math.abs((await page.locator('.lab-topbar').evaluate(node => node.getBoundingClientRect().top)) - (width >= 1000 ? 8 : 0)) <= .5, 'Open notebooks retain the shared sticky header');
       await capture(page, 'notite-paper-scrolled', width);
     });
     await context.close();
   }
   await writeFile(resolve(output, 'report.json'), JSON.stringify({pages:[...pages],widths:[1440,768,390,320],passed,failures}, null, 2) + '\n');
   assert.equal(failures.length, 0, 'Compact UI regressions; full details in ' + resolve(output,'report.json'));
-  console.log('Compact site UI: ' + pages.length + ' pages × 4 widths, flush interior topbars, floating homepage header, visible desktop contents, responsive homepage introduction and working demo, catalog CTA, direct resume and notebook paper passed. Captures: ' + output);
+  console.log('Compact site UI: ' + pages.length + ' pages × 4 widths, responsive Efferd headers, visible desktop contents, responsive homepage introduction and working demo, catalog CTA, direct resume and notebook paper passed. Captures: ' + output);
 } finally {
   await browser.close();
   await new Promise(done => server.close(done));

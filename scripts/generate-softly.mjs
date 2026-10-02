@@ -29,11 +29,13 @@ for (const file of files) {
   html = html.replace(/<a\b[^>]*>/g, tag => /class="[^"]*lab-brand\b/.test(tag) ? tag : tag.replace(/href="index\.html/g, 'href="lectii.html'));
   html = html.replace(/<meta name="robots" content="[^"]+">/, '<meta name="robots" content="noindex,follow">');
   html = html.replace(/<meta name="theme-color" content="[^"]+">/, '<meta name="theme-color" content="#FDFCF8">');
+  html = html.replace(/<link rel="stylesheet" href="\.\.\/assets\/css\/site-header\.css[^\"]*">\n?/g, '');
   html = html.replace(/<body class="([^"]*)"/, `<body class="$1 softly-study" data-asset-base="../" data-softly-source="${file}"`);
   html = html.replace('</head>', [
     `<link rel="preload" href="assets/Outfit-Regular.ttf" as="font" type="font/ttf" crossorigin>`,
     `<link rel="stylesheet" href="transitions.css?v=${version}">`,
     `<link rel="stylesheet" href="study.css?v=${version}">`,
+    `<link rel="stylesheet" href="../assets/css/site-header.css?v=20261002-header1">`,
     file === 'cont.html' ? `<script src="auth-redirect.js?v=${version}"></script>` : '',
     '</head>'
   ].filter(Boolean).join('\n'));

@@ -586,7 +586,7 @@ try{
       await page.screenshot({path:resolve(output,'notebooks-reading-'+width+'.png'),fullPage:true});
       await page.screenshot({path:resolve(output,'notebooks-reading-viewport-'+width+'.png')});
       assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
-      if(width<=390){await page.goto(base);const nav=await page.locator('.bm-primary-nav').boundingBox(),actions=await page.locator('.lab-topbar-actions').boundingBox();assert.ok(nav.x+nav.width<=actions.x+1||actions.x+actions.width<=nav.x+1||nav.y+nav.height<=actions.y+1||actions.y+actions.height<=nav.y+1,'Mobile navigation and account actions must not overlap');}
+      if(width<=390){await page.goto(base);assert.equal(await page.locator('.bm-primary-nav').isVisible(),false);assert.equal(await page.locator('#menu-toggle').isVisible(),true);assert.equal(await page.locator('#pilot-account-toggle').isVisible(),true,'Account remains directly reachable beside the mobile menu');}
     }
     await page.goto(base+'notite.html?capitol=3');await page.waitForSelector('.nb-entry');
     await logout(page);assert.equal(await page.locator('.nb-entry').count(),0);

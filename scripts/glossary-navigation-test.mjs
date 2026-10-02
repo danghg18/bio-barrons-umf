@@ -1,3 +1,4 @@
+import {toggleReadingSettings} from './header-test-helpers.mjs';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import http from 'node:http';
@@ -20,8 +21,8 @@ try{
  await page.goto(base+'celula_si_fiziologia_celulara.html');
  await page.waitForFunction(()=>document.body.dataset.bbSharedReady==='true');
  assert.equal(await page.locator('#nav-glossary-link').count(),1,'settings contains the glossary entry');
- async function openGlossary(){if(await page.evaluate(()=>innerWidth<768))await page.locator('.lab-menu-trigger').click();if(await page.locator('.bb-settings-toggle').getAttribute('aria-expanded')!=='true')await page.locator('.bb-settings-toggle').click();await page.locator('#nav-glossary-link').click();await page.waitForURL('**/glosar.html?context=*');}
- async function assertReturn(source,y){await page.locator('#glossary-back').click();await page.waitForURL(source);await page.waitForTimeout(1800);assert.ok(Math.abs(await page.evaluate(()=>scrollY)-y)<4,'restores the reading position after late routing');}
+ async function openGlossary(){if(await page.evaluate(()=>innerWidth<768))await page.locator('.lab-menu-trigger').click();if(await page.locator('.bb-settings-toggle').getAttribute('aria-expanded')!=='true')await toggleReadingSettings(page);await page.locator('#nav-glossary-link').click();await page.waitForURL('**/glosar.html?context=*');}
+ async function assertReturn(source,y){await page.locator('#glossary-back').click();await page.waitForURL(source);await page.waitForFunction(()=>{const token=history.state?.bbGlossary?.token;const saved=token&&JSON.parse(sessionStorage.getItem('bb.glossary.context.'+token));return saved&&saved.pending===false;},null,{timeout:8000});const actual=await page.evaluate(()=>scrollY);assert.ok(Math.abs(actual-y)<4,`restores the reading position after late routing: expected ${y}, got ${actual}`);}
  await page.evaluate(()=>{history.replaceState({other:'retained'},'');scrollTo(0,700);});
  const source=page.url(), y=await page.evaluate(()=>scrollY);
  await openGlossary();assert.equal(await page.locator('#glossary-back').textContent(),'Înapoi la lecție');
@@ -85,7 +86,7 @@ try{
  await page.setViewportSize({width:1440,height:900});
  await page.goto(base+'grile_sistemul_nervos.html?q=neuron&section=grile-51-60&hit=1#grila-53');await page.waitForTimeout(500);await page.evaluate(()=>scrollBy(0,100));
  const searched={url:page.url(),y:await page.evaluate(()=>scrollY)};await openGlossary();await assertReturn(searched.url,searched.y);
- await page.goto(base+'celula_si_fiziologia_celulara.html');await page.locator('.bb-settings-toggle').click();
+ await page.goto(base+'celula_si_fiziologia_celulara.html');await toggleReadingSettings(page);
  const modified=await page.evaluate(()=>{let prevented;document.addEventListener('click',event=>{prevented=event.defaultPrevented;event.preventDefault();},{once:true});document.getElementById('nav-glossary-link').dispatchEvent(new MouseEvent('click',{bubbles:true,cancelable:true,ctrlKey:true,button:0}));return prevented;});assert.equal(modified,false,'modified clicks stay native');
  // A width change uses a content anchor, rather than the obsolete document pixel offset.
  await page.goto(base+'grile_sistemul_nervos.html#grila-76');await page.waitForTimeout(250);await page.evaluate(()=>scrollBy(0,140));
