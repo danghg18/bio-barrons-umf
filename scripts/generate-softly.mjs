@@ -34,7 +34,7 @@ for (const file of files) {
   html = html.replace('</head>', [
     `<link rel="preload" href="assets/Outfit-Regular.ttf" as="font" type="font/ttf" crossorigin>`,
     `<link rel="stylesheet" href="transitions.css?v=${version}">`,
-    `<link rel="stylesheet" href="study.css?v=${version}">`,
+    `<link rel="stylesheet" href="study.css?v=20261002-catalog1">`,
     `<link rel="stylesheet" href="../assets/css/site-header.css?v=20261002-header1">`,
     file === 'cont.html' ? `<script src="auth-redirect.js?v=${version}"></script>` : '',
     '</head>'
