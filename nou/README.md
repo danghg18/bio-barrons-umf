@@ -24,6 +24,6 @@ npm test
 
 The dedicated browser check runs through the Pages subpath and injects `tests/supabase-mock.js`. It exercises login/logout, signup confirmation, password recovery, errors, offline state, switching accounts, demo isolation, responsive pinning, reverse scroll, keyboard navigation, menu, FAQ, reduced motion, printing before scrolling and direct bookmark navigation. It never uses the live Supabase service.
 
-Desktop and phone visual checks cover 1440, 775, 390 and 320 px. Pricing remains 49 lei/month and 490 lei/year **for presentation only**; no purchase is possible. Each diary card is separately marked as an illustrative example.
+Desktop and phone visual checks cover 1440, 1096, 980, 775, 390 and 320 px. Pricing remains 49 lei/month and 490 lei/year **for presentation only**; no purchase is possible. Each diary card is separately marked as an illustrative example.
 
 The full general suite passed on 2 October 2026. The earlier intermittent `quiz-restart-test.mjs:39` failure did not reproduce in this run; no unrelated quiz changes were made.

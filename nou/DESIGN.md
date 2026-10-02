@@ -12,7 +12,7 @@ This visual direction applies only to `/nou/`. The study site's existing design 
 ## Motion and responsive behavior
 
 - A continuous 5.4-viewport-height ScrollTrigger sequence pins the method section. Its progress bar and scroll instruction stay visible; the floating header withdraws while the section is pinned.
-- Three staggered phone frames appear only at 1180 × 900 px or larger. Smaller desktop windows use a single panel; the 775 × 688 layout retains a 24 px pin offset. Phones under 641 px and windows under 560 px tall use selectable steps without pinning.
+- Three staggered phone frames appear side by side from 980 × 680 px. At 641–979 px wide (at least 680 px tall), the active phone comes to the center in front of the other two; this preserves the composition and a readable 300 px panel. Shorter desktop windows use a single panel; the 775 × 688 layout retains a 24 px pin offset. Below 641 px, all three phones remain visible as an overlapping stack, with selectable steps bringing the active phone forward without pinning. Other windows under 560 px tall also use unpinned steps.
 - Decorative shapes move ±10 px over a six-second cycle while in view. Scroll reveals use 30 px and .8 seconds. Interactive feedback remains immediate.
 - Reduced motion removes floating, pinning and transitions, and shows all three educational panels. Print also exposes all panels.
 

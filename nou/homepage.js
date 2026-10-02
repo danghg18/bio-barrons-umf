@@ -57,6 +57,14 @@
     const old = activeStep;
     updateStep(index, motionPreference.matches);
     if (motionPreference.matches) return;
+    if (window.gsap && document.body.classList.contains('phone-stack')) {
+      scenes.forEach((scene, i) => {
+        const pose = phonePose(i, index);
+        if (instant) gsap.set(scene, pose);
+        else gsap.to(scene, {...pose, duration: .45, ease: 'power3.out', overwrite: true});
+      });
+      return;
+    }
     if (window.gsap && !instant) {
       gsap.to(scenes.filter((_, i) => i !== index), {autoAlpha: 0, y: -10, duration: .17, overwrite: true});
       gsap.fromTo(scenes[index], {autoAlpha: old === index ? 1 : 0, y: old === index ? 0 : 12}, {autoAlpha: 1, y: 0, duration: .32, ease: 'power3.out', overwrite: true});
@@ -67,6 +75,12 @@
         scene.style.transform = 'none';
       });
     }
+  }
+
+  function phonePose(index, selected) {
+    const side = index === selected ? 0 : index === (selected + 1) % 3 ? 1 : -1;
+    const offset = innerWidth <= 640 ? Math.min(74, innerWidth * .19) : 168;
+    return {autoAlpha: side ? .5 : 1, x: side * offset, y: side ? (side > 0 ? 28 : 24) : 0, scale: side ? .86 : 1, rotation: side * 6};
   }
 
   function goToStep(index) {
@@ -160,6 +174,7 @@
   });
   window.addEventListener('resize', () => {
     if (!$('#quiz-result').hidden) moveTo(explanationTabs.find(tab => tab.textContent === activeAnswer), false);
+    if (!storyTrigger && window.gsap && document.body.classList.contains('phone-stack')) scenes.forEach((scene, i) => gsap.set(scene, phonePose(i, activeStep)));
   });
   let checked = false;
   form.addEventListener('submit', event => {
@@ -216,8 +231,8 @@
   if (window.gsap && window.ScrollTrigger) {
     gsap.registerPlugin(ScrollTrigger);
     const media = gsap.matchMedia();
-    media.add({phones: '(min-width:1180px) and (min-height:900px)', desktop: '(min-width:980px) and (min-height:700px)', compact: '(min-width:641px) and (min-height:560px)', mobile: '(max-width:640px), (max-height:559px)', reduce: '(prefers-reduced-motion:reduce)'}, context => {
-      const {phones, desktop, compact, reduce} = context.conditions;
+    media.add({phones: '(min-width:641px) and (min-height:680px)', mobilePhones: '(max-width:640px)', stacked: '(max-width:979px)', short: '(max-height:899px)', desktop: '(min-width:980px) and (min-height:700px)', compact: '(min-width:641px) and (min-height:560px)', mobile: '(max-width:640px), (max-height:559px)', reduce: '(prefers-reduced-motion:reduce)'}, context => {
+      const {phones, mobilePhones, stacked, short, desktop, compact, reduce} = context.conditions;
       storyTrigger = null; storyTimeline = null;
       if (reduce) {
         scenes.forEach(scene => { scene.style.removeProperty('opacity'); scene.style.removeProperty('visibility'); scene.style.removeProperty('transform'); });
@@ -227,6 +242,9 @@
       gsap.set(scenes, {autoAlpha: 0, y: 0});
       gsap.set(scenes[0], {autoAlpha: 1});
       updateStep(0);
+      document.body.classList.toggle('phone-story', phones || mobilePhones);
+      document.body.classList.toggle('phone-stack', (phones && stacked) || mobilePhones);
+      if (mobilePhones) showStep(0, true);
       gsap.from('.hero-copy > *', {y: 30, opacity: 0, duration: .8, stagger: .09, ease: 'power2.out'});
       $$('.ambient').forEach((blob, index) => {
         const float = gsap.fromTo(blob, {y: -10}, {y: 10, duration: 3, delay: index % 2 * .6, ease: 'sine.inOut', repeat: -1, yoyo: true, paused: true});
@@ -237,8 +255,7 @@
       });
       if (desktop || compact) {
         document.body.classList.add('scroll-story');
-        document.body.classList.toggle('story-compact', !desktop);
-        document.body.classList.toggle('phone-story', phones);
+        document.body.classList.toggle('story-compact', !desktop && !phones);
         // Keep the heading, steps and preview together throughout all three
         // scenes. Only the child preview animates inside the pinned section.
         const motionTarget = '.product-wrap';
@@ -246,18 +263,25 @@
         storyTimeline = gsap.timeline({defaults: {ease: 'none'},
           onUpdate() { const progress = this.progress(); updateStoryProgress(progress); const index = progress < .34 ? 0 : progress < .68 ? 1 : 2; if (index !== activeStep) updateStep(index); },
           scrollTrigger: {
-            id: 'biomed-story', trigger: '.method-layout', start: desktop ? 'top 32px' : 'top 24px', end: () => '+=' + Math.round(innerHeight * 5.4), pin: true, scrub: .45, anticipatePin: 1, invalidateOnRefresh: true,
+            id: 'biomed-story', trigger: '.method-layout', start: phones && short && !stacked ? 'top 16px' : desktop ? 'top 32px' : 'top 24px', end: () => '+=' + Math.round(innerHeight * 5.4), pin: true, scrub: .45, anticipatePin: 1, invalidateOnRefresh: true,
             onToggle: self => document.body.classList.toggle('story-running', self.isActive)
           }
         });
         storyTimeline.to(motionTarget, {scale: 1, y: 0, duration: .12}, 0);
-        if (phones) {
-          gsap.set(scenes, {autoAlpha: .62, y: i => [24, 0, 56][i], rotation: i => [-2, 0, 2][i]});
+        if (phones && stacked) {
+          scenes.forEach((scene, i) => gsap.set(scene, phonePose(i, 0)));
+          const front = {...phonePose(0, 0), duration: .08};
+          const left = {...phonePose(2, 0), duration: .08};
+          const right = {...phonePose(1, 0), duration: .08};
+          storyTimeline.to(scenes[0], left, .30).to(scenes[1], front, .30).to(scenes[2], right, .30)
+            .to(scenes[0], right, .64).to(scenes[1], left, .64).to(scenes[2], front, .64);
+        } else if (phones) {
+          gsap.set(scenes, {autoAlpha: .62, y: i => (short ? [12, 0, 24] : [24, 0, 56])[i], rotation: i => [-2, 0, 2][i]});
           gsap.set(scenes[0], {autoAlpha: 1});
-          storyTimeline.to(scenes[0], {autoAlpha: .62, y: 48, duration: .08}, .30)
+          storyTimeline.to(scenes[0], {autoAlpha: .62, y: short ? 24 : 48, duration: .08}, .30)
             .to(scenes[1], {autoAlpha: 1, y: -8, duration: .08}, .30)
             .to(scenes[1], {autoAlpha: .62, y: 0, duration: .08}, .64)
-            .to(scenes[2], {autoAlpha: 1, y: 24, duration: .08}, .64);
+            .to(scenes[2], {autoAlpha: 1, y: short ? 12 : 24, duration: .08}, .64);
         } else {
           storyTimeline.to(scenes[0], {autoAlpha: 0, y: -20, duration: .04}, .30)
             .fromTo(scenes[1], {autoAlpha: 0, y: 20}, {autoAlpha: 1, y: 0, duration: .04}, .34)
@@ -269,7 +293,7 @@
         storyTrigger = storyTimeline.scrollTrigger;
         updateStoryProgress(storyTimeline.progress());
       }
-      return () => { storyTrigger = null; storyTimeline = null; document.body.classList.remove('scroll-story', 'story-compact', 'phone-story', 'story-running'); };
+      return () => { storyTrigger = null; storyTimeline = null; document.body.classList.remove('scroll-story', 'story-compact', 'phone-story', 'phone-stack', 'story-running'); };
     });
     document.fonts.ready.then(() => ScrollTrigger.refresh());
     window.addEventListener('load', () => ScrollTrigger.refresh(), {once: true});

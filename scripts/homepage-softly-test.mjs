@@ -62,13 +62,22 @@ try {
   await page.waitForSelector('#quiz-result:not([hidden])');
   assert.match(await page.locator('#result-title').innerText(), /Exact/);
   assert.equal(await page.evaluate(() => JSON.stringify(BBUserStorage.snapshot())), prior, 'Demo does not alter the signed-in study records');
-  for (const width of [1440,775,390,320]) {
-    await page.setViewportSize({width,height:width===1440?1000:844});
-    await page.waitForFunction(width => width === 1440 ? document.body.classList.contains('phone-story') : !document.body.classList.contains('phone-story'), width);
+  for (const width of [1440,1096,980,775,390,320]) {
+    const height = width === 1440 ? 1000 : width === 980 ? 680 : width >= 775 ? 688 : 844;
+    await page.setViewportSize({width,height});
+    await page.waitForFunction(() => document.body.classList.contains('phone-story'), null, {timeout:5000});
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `No page overflow at ${width}px`);
-    if (width === 1440) {
+    if (width >= 775) {
+      for (const [index, progress] of [[0,12],[1,50],[2,86]]) {
+        await page.locator(`#step-${index}`).click();
+        await page.waitForFunction(progress => document.querySelector('.scene-progress').getAttribute('aria-valuenow') === String(progress), progress);
+        const bottom = await page.locator('.scene-caption').evaluate(el => el.getBoundingClientRect().bottom);
+        assert.ok(bottom <= height - 5, `Progress remains visible at ${width} × ${height}: ${bottom}`);
+        assert.ok(await page.locator(`#scene-${index}`).evaluate(el => el.scrollHeight <= el.clientHeight + 1), `Active phone ${index} fits its educational content at ${width}px`);
+      }
       const boxes = await page.locator('[data-scene]').evaluateAll(elements => elements.map(el => el.getBoundingClientRect().toJSON()));
-      assert.ok(boxes[0].right < boxes[1].left && boxes[1].right < boxes[2].left, 'Three phone frames fit side by side');
+      if (width >= 980) assert.ok(boxes[0].right < boxes[1].left && boxes[1].right < boxes[2].left, 'Three phone frames fit side by side');
+      else assert.ok(Math.abs((boxes[2].left + boxes[2].right) / 2 - width / 2) < 2, 'Compact layout brings the active phone to the front and center');
     }
   }
   await page.getByRole('button', {name:'Deschide meniul',exact:true}).click();
@@ -79,6 +88,8 @@ try {
   await page.waitForFunction(() => document.querySelector('#scene-2').getAttribute('aria-hidden') === 'false');
   await page.locator('#step-2').press('ArrowLeft');
   assert.equal(await page.locator('#step-1').getAttribute('aria-selected'), 'true');
+  for (const scene of await page.locator('[data-scene]').all()) assert.equal(await scene.isVisible(), true, 'All three phone frames stay visible on mobile');
+  await page.waitForFunction(() => Math.abs(document.querySelector('#scene-1').getBoundingClientRect().left + document.querySelector('#scene-1').getBoundingClientRect().width / 2 - innerWidth / 2) < 2);
   await page.locator('#faq-question-1').click();
   await page.waitForFunction(() => document.querySelector('#faq-answer-1').getBoundingClientRect().height > 70);
   assert.equal(await page.locator('#faq-question-1').getAttribute('aria-expanded'), 'true');
@@ -136,5 +147,5 @@ try {
   await page.goto(base + 'nou/cont.html?flow=recovery#example=preserved');
   await page.waitForURL(base + 'cont.html?flow=recovery#example=preserved');
   await context.close();
-  console.log('PASS Softly: login/logout, signup confirmation, recovery callback, safe errors, offline and account change; demo isolation; forward/reverse compact pin, 3 phones, 4 widths, keyboard/menu/FAQ, reduced motion, print, direct bookmarks and demo disclosures.');
+  console.log('PASS Softly: login/logout, signup confirmation, recovery callback, safe errors, offline and account change; demo isolation; forward/reverse compact pin, 3 phones, 6 widths, keyboard/menu/FAQ, reduced motion, print, direct bookmarks and demo disclosures.');
 } finally { await browser.close(); await new Promise(done => server.close(done)); }
