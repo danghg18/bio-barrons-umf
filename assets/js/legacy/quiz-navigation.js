@@ -18,6 +18,16 @@ function quizCanonicalTarget(target) {
 }
 function quizNavigate(target, updateHash, focusDestination = true) {
   if (!document.querySelector('.page-section')) return;
+  const source = window.BB_QUIZ || window.BB_NERVOUS_QUIZ;
+  const destination = source && source.redirectRoutes && source.redirectRoutes[target];
+  if (destination) {
+    const url = new URL(destination, location.href);
+    const params = new URLSearchParams(location.search);
+    if (params.has('section')) params.set('section', url.hash.slice(1));
+    url.search = params.toString();
+    location.replace(url.href);
+    return;
+  }
   target = quizCanonicalTarget(target);
   const route = quizRouteFor(target);
   const question = /^grila-\d+$/.test(target) && document.getElementById(target);
@@ -44,7 +54,10 @@ function goto(page) { quizNavigate(page, true, false); }
 function handleHash() {
   let target;
   try { target = decodeURIComponent(location.hash.slice(1)); } catch (_) { target = ''; }
-  quizNavigate(target || quizDefaultRoute, false);
+  const section = new URLSearchParams(location.search).get('section');
+  const source = window.BB_QUIZ || window.BB_NERVOUS_QUIZ;
+  const redirectedSection = source && source.redirectRoutes && source.redirectRoutes[section] ? section : null;
+  quizNavigate(target || redirectedSection || quizDefaultRoute, false);
 }
 addEventListener('scroll', () => { const top = document.getElementById('top'); if (top) top.style.display = scrollY > 500 ? 'flex' : 'none'; });
 /* The player renders cards on DOMContentLoaded; run after those listeners. */

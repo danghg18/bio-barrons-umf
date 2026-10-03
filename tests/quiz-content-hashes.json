@@ -29,11 +29,11 @@
   },
   "grile_sistemul_endocrin.html": {
     "dataFile": "assets/js/grile-sistemul-endocrin-data.js",
-    "sha256": "86ae831b74f4a12efa26d8757072b5d0d524dd2a6d31bd77db891eb71ad87de3"
+    "sha256": "c701be56d3137aed332926e8284ef5d7924f2bc5dc61e9215b9a3c5a4e925b83"
   },
   "grile_metabolism_si_nutritie.html": {
     "dataFile": "assets/js/grile-metabolism-data.js",
-    "sha256": "c7add5daa71adbc02f4cef7c073ef7c5e1e312877436de80a264db4e4f621935"
+    "sha256": "c2ff86247e9628fd02f8675473190782884332ae2de2f6219b6708a98bb52013"
   },
   "grile_sangele.html": {
     "dataFile": "assets/js/grile-sange-data.js",

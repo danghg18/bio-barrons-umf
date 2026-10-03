@@ -123,10 +123,14 @@
     "ranges": [
       [
         1,
-        64
+        60
       ],
       [
         120,
+        149
+      ],
+      [
+        151,
         160
       ]
     ],
@@ -142,8 +146,12 @@
     "dataFile": "assets/js/grile-metabolism-data.js",
     "ranges": [
       [
-        65,
+        61,
         119
+      ],
+      [
+        150,
+        150
       ]
     ],
     "name": "Metabolism și nutriție",

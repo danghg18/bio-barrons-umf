@@ -9,8 +9,8 @@ const root=resolve(import.meta.dirname,'..');
 const key=JSON.parse(await readFile(resolve(root,'tests/endocrin-metabolism-answer-key.json'),'utf8'));
 assert.equal(key.length,160);
 const specs=[
- {file:'grile_sistemul_endocrin.html',dataFile:'grile-sistemul-endocrin-data.js',lesson:'sistemul_endocrin.html',key:'bb.quiz.sistemul-endocrin.v1',prefix:'end-',numbers:[...Array.from({length:64},(_,i)=>i+1),...Array.from({length:41},(_,i)=>i+120)],count:105,search:'insulină',searchRange:'grile-150-159'},
- {file:'grile_metabolism_si_nutritie.html',dataFile:'grile-metabolism-data.js',lesson:'metabolism_si_nutritie.html',key:'bb.quiz.metabolism.v1',prefix:'met-',numbers:Array.from({length:55},(_,i)=>i+65),count:55,search:'lipoproteine',searchRange:'grile-65-74'}
+ {file:'grile_sistemul_endocrin.html',dataFile:'grile-sistemul-endocrin-data.js',lesson:'sistemul_endocrin.html',key:'bb.quiz.sistemul-endocrin.v1',prefix:'end-',numbers:[...Array.from({length:60},(_,i)=>i+1),...Array.from({length:41},(_,i)=>i+120).filter(n=>n!==150)],count:100,search:'insulină',searchRange:'grile-150-159'},
+ {file:'grile_metabolism_si_nutritie.html',dataFile:'grile-metabolism-data.js',lesson:'metabolism_si_nutritie.html',key:'bb.quiz.metabolism.v1',prefix:'met-',numbers:[61,62,63,64,...Array.from({length:55},(_,i)=>i+65),150],count:60,search:'lipoproteine',searchRange:'grile-65-74'}
 ];
 const allNumbers=[];
 for(const spec of specs){
@@ -21,7 +21,7 @@ for(const spec of specs){
  assert.equal(spec.data.firstNumber,spec.numbers[0]);assert.equal(spec.data.storageKey,spec.key);
  assert.deepEqual(spec.data.questions.map(q=>q.number),spec.numbers);
  for(const q of spec.data.questions){
-  assert.equal(q.id,spec.prefix+String(q.number).padStart(3,'0'));
+  assert.equal(q.id,([61,62,63,64,150].includes(q.number)?'end-':spec.prefix)+String(q.number).padStart(3,'0'));
   assert.equal(q.sourceNumber,q.number);allNumbers.push(q.sourceNumber);
   assert.equal(q.correct.join(''),key[q.sourceNumber-1],`user key ${q.sourceNumber}`);
   assert.equal(q.options.map(o=>o.letter).join(''),'ABCDE');assert.ok(q.prompt.trim());
@@ -97,12 +97,12 @@ try {
   assert.equal(await page.locator('.page-section.active').getAttribute('id'),'page-'+spec.data.ranges[0].id);
  }
  // The endocrine split must neither insert metabolism numbers nor lose direct links/history.
- await page.goto(base+'grile_sistemul_endocrin.html#grila-64');
- assert.equal(await page.locator('.page-section.active').getAttribute('id'),'page-grile-61-64');
+ await page.goto(base+'grile_sistemul_endocrin.html#grila-60');
+ assert.equal(await page.locator('.page-section.active').getAttribute('id'),'page-grile-51-60');
  assert.equal(await page.locator('.quiz-question-map a[href="#grila-65"]').count(),0);
  await page.locator('.page-section.active .quiz-page-nav a[href="#grile-120-129"]').click();
  assert.equal(await page.locator('.page-section.active').getAttribute('id'),'page-grile-120-129');
- await page.goBack();assert.equal(await page.locator('.page-section.active').getAttribute('id'),'page-grile-61-64');
+ await page.goBack();assert.equal(await page.locator('.page-section.active').getAttribute('id'),'page-grile-51-60');
  await page.goForward();assert.equal(await page.locator('.page-section.active').getAttribute('id'),'page-grile-120-129');
  await page.goto(base+'grile_sistemul_endocrin.html#grila-160');await page.reload();
  assert.ok(await page.locator('#grila-160').isVisible());
@@ -131,7 +131,7 @@ try {
  for(const spec of specs)await p.goto(base+spec.file);
  const searchUrl=base+specs[1].file+'?q=lipoproteine&section=grile-65-74&hit=0';
  await p.goto(searchUrl);await offline.setOffline(true);
- for(const [file,count] of [[specs[0].file+'#grila-160',105],[specs[1].file+'#grila-119',55]]){
+ for(const [file,count] of [[specs[0].file+'#grila-160',100],[specs[1].file+'#grila-119',60]]){
   await p.goto(base+file);assert.equal(await p.locator('.quiz-question').count(),count);
  }
  await p.goto(searchUrl);assert.ok(await p.locator('.page-section.active .search-found').count());

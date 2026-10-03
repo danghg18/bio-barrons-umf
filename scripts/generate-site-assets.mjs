@@ -125,6 +125,7 @@ for (const chapter of quizOwners) {
     quizIndex.push({ bankUrl, chapterNum: chapter.num, name: chapter.name, url: resource.url, storageKey: quiz.storageKey,
       ...(chapter.collection ? {collection:true, shortLabel:chapter.shortLabel || '↔'} : {}),
       ...(quiz.retiredQuestions?.length ? {retiredQuestions:quiz.retiredQuestions} : {}),
+      ...(quiz.transferredQuestions?.length ? {transferredQuestions:quiz.transferredQuestions} : {}),
       ...(quiz.contentRevision ? {contentRevision:quiz.contentRevision, previousQuestionIds:quiz.previousQuestionIds} : {}),
       version: quiz.version, questions, ranges, topics });
   }

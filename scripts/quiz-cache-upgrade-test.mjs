@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {readFile, readdir} from 'node:fs/promises';
+import {readFile} from 'node:fs/promises';
 import http from 'node:http';
 import {extname, resolve, sep} from 'node:path';
 import {chromium} from 'playwright';
@@ -21,7 +21,13 @@ const oldAssets=[
  'assets/js/quiz-player.js?v=20260911-accounts1',
  'assets/js/chapters-data.js?v=20260925-endocrin1',
  'assets/js/quiz-index.js?v=20260926-simulation1',
- 'assets/js/quiz-player.js?v=20260925-endocrin1'
+ 'assets/js/quiz-player.js?v=20260925-endocrin1',
+ 'assets/js/quiz-player.js?v=20260926-polish1',
+ 'assets/js/quiz-index.js?v=20260926-circulator1',
+ 'assets/js/quiz-analytics.js?v=20260930-personal1',
+ 'assets/js/legacy/quiz-navigation.js?v=20260911-quiznav1',
+ 'assets/js/grile-metabolism-data.js?v=20260929-manual',
+ 'assets/js/grile-sistemul-endocrin-data.js?v=20260929-manual'
 ];
 const cacheName='biologie-atlas-upgrade-test-old';
 // Use the real cache-first worker, with the old release's exact asset URLs.
@@ -45,7 +51,7 @@ const browser=await chromium.launch({headless:true});
 try {
  // Every entry shell must request fresh registry/index/player URLs, including
  // lessons and the catalog a returning student will visit before the new quiz.
- for(const file of (await readdir(root)).filter(name=>name.endsWith('.html'))){
+ for(const file of ['index.html',...(registry.BIO_SITE.pages||[]).map(p=>p.url),...publishedResources(registry).chapters.map(c=>c.url),...published.map(r=>r.url)]){
   const html=await readFile(resolve(root,file),'utf8');
   for(const old of oldAssets)assert.ok(!html.includes(old),`${file} still requests ${old}`);
  }

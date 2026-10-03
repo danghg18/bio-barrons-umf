@@ -96,8 +96,19 @@
     if (disposed) return {};
     try {
       var saved = window.BBUserStorage ? window.BBUserStorage.get(quiz.storageKey) : JSON.parse(window.localStorage.getItem(quiz.storageKey) || 'null');
-      if (!saved || saved.version !== quiz.version || !saved.questions || typeof saved.questions !== 'object') return {};
-      return saved.questions;
+      var answers = saved && saved.version === quiz.version && saved.questions && typeof saved.questions === 'object' && !Array.isArray(saved.questions) ? saved.questions : {};
+      // A relocated question keeps its stable ID. Read only the active owner's
+      // legacy record; an explicit destination answer (even blank) takes priority.
+      (quiz.transferredQuestions || []).forEach(function (transfer) {
+        var previous = window.BBUserStorage ? window.BBUserStorage.get(transfer.storageKey) : JSON.parse(window.localStorage.getItem(transfer.storageKey) || 'null');
+        if (!previous || previous.version !== transfer.version || !previous.questions) return;
+        transfer.questionIds.forEach(function (id) {
+          if (!Object.hasOwn(answers, id) && previous.questions[id] && typeof previous.questions[id] === 'object') {
+            answers[id] = JSON.parse(JSON.stringify(previous.questions[id]));
+          }
+        });
+      });
+      return answers;
     } catch (_) {
       // Malformed saved JSON is recoverable; denied storage is reported separately.
       try { window.localStorage.getItem(quiz.storageKey); } catch (_) { canPersist = false; }
@@ -865,7 +876,7 @@
     if (channel) channel.close();
     window.removeEventListener('storage', storageChanged);
     Promise.all([serial, ready]).finally(function () { if (database) database.close(); snapshot = {attempts:[], metadata:[], runs:[]}; });
-  },ready:ready,newAttemptId:newAttemptId,recordAttempt:recordAttempt,ensureRun:ensureRun,ensurePractice:ensurePractice,prepareRestart:prepareRestart,pendingRestart:pendingRestart,finishRestart:finishRestart,getReport:getReport,clearHistory:clearHistory,
+  },ready:ready,currentAnswers:current,newAttemptId:newAttemptId,recordAttempt:recordAttempt,ensureRun:ensureRun,ensurePractice:ensurePractice,prepareRestart:prepareRestart,pendingRestart:pendingRestart,finishRestart:finishRestart,getReport:getReport,clearHistory:clearHistory,
     subscribe:function (callback) { if (typeof callback !== 'function') return function () {}; listeners.add(callback); return function () { listeners.delete(callback); }; }};
   }
   function scope() {
@@ -889,6 +900,7 @@
   document.addEventListener('bb:cache-change', announce);
   window.BBQuizAnalytics = {
     get ready() { return active.ready; },
+    currentAnswers:function (quiz) { return active.currentAnswers(quiz); },
     newAttemptId:function () { return active.newAttemptId(); },
     ensureRun:function (key) { return active.ensureRun(key); },
     ensurePractice:function (key, restart, sourceRunId) { return active.ensurePractice(key, restart, sourceRunId); },

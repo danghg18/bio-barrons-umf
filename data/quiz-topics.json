@@ -1030,10 +1030,6 @@
       "end-058": "metabolism-lipidic",
       "end-059": "paratiroide",
       "end-060": "metabolism-glucidic",
-      "end-061": "metabolism-general-metabolismul-glucidelor",
-      "end-062": "metabolism-glucidic",
-      "end-063": "metabolism-lipidic",
-      "end-064": "metabolism-glucidic",
       "end-120": "descrierea-generala-a-hormonilor",
       "end-121": "descrierea-generala-a-hormonilor",
       "end-122": "glandele-suprarenale",
@@ -1064,7 +1060,6 @@
       "end-147": "pancreasul",
       "end-148": "descrierea-generala-a-hormonilor",
       "end-149": "hipofiza-glanda-pituitara",
-      "end-150": "rata-si-temperatura",
       "end-151": "hipofiza-glanda-pituitara",
       "end-152": "stari-si-minerale",
       "end-153": "hipofiza-glanda-pituitara",
@@ -1128,6 +1123,11 @@
         "id": "stari-si-minerale",
         "label": "Stări metabolice și minerale",
         "lessonUrl": "metabolism_si_nutritie.html#stari-si-minerale"
+      },
+      {
+        "id": "metabolism-general-metabolismul-glucidelor",
+        "label": "Anabolism și catabolism",
+        "lessonUrl": "metabolism_si_nutritie.html#metabolismul-glucidelor"
       }
     ],
     "questionTopics": {
@@ -1185,7 +1185,12 @@
       "met-116": "metabolismul-glucidelor",
       "met-117": "lipide-si-proteine",
       "met-118": "lipide-si-proteine",
-      "met-119": "stari-si-minerale"
+      "met-119": "stari-si-minerale",
+      "end-061": "metabolism-general-metabolismul-glucidelor",
+      "end-062": "metabolism-glucidic",
+      "end-063": "metabolism-lipidic",
+      "end-064": "metabolism-glucidic",
+      "end-150": "rata-si-temperatura"
     }
   },
   "bb.quiz.sistemul-cardiovascular.v1": {

@@ -4,9 +4,9 @@
 
 Import din `grile-biologie-umf-cluj-paginile-109-127.pdf`, primit la 25 septembrie 2026. PDF-ul are 19 pagini scanate, cu numerele tipărite **115–133**, diferite de intervalul din numele fișierului.
 
-- **Sistemul endocrin:** 105 întrebări, numerele originale **1–64 și 120–160**; pagina `grile_sistemul_endocrin.html`, date `assets/js/grile-sistemul-endocrin-data.js`, cheia de stocare `bb.quiz.sistemul-endocrin.v1`.
-- **Metabolism și nutriție:** 55 întrebări, numerele originale **65–119**; pagina `grile_metabolism_si_nutritie.html`, date `assets/js/grile-metabolism-data.js`, cheia de stocare `bb.quiz.metabolism.v1`.
-- Împărțirea respectă cererea utilizatorului chiar pentru întrebările endocrine 61–64, 150 și 152 care tratează teme metabolice. Legăturile tematice pot trimite la lecția relevantă fără a muta întrebarea între teste.
+- **Sistemul endocrin:** 100 întrebări, numerele originale **1–60, 120–149 și 151–160**; pagina `grile_sistemul_endocrin.html`, date `assets/js/grile-sistemul-endocrin-data.js`, cheia de stocare `bb.quiz.sistemul-endocrin.v1`.
+- **Metabolism și nutriție:** 60 întrebări, numerele originale **61–119 și 150**; pagina `grile_metabolism_si_nutritie.html`, date `assets/js/grile-metabolism-data.js`, cheia de stocare `bb.quiz.metabolism.v1`.
+- La 3 octombrie 2026, utilizatorul a cerut mutarea grilelor **61–64 și 150** din setul endocrin la metabolism. Grila 152 rămâne în testul endocrin; nu face parte din această cerere.
 - Exact 160 de întrebări și 800 de variante A–E, fiecare cu explicație individuală. Numerotarea nu este refăcută.
 
 SHA-256 al PDF-ului: `ab84276e1a85269d1ef0b3fbd63458af01dd68d5e0b75d63a445ea59f28da453`.
@@ -96,3 +96,15 @@ Clasificarea proteină/peptidă/glicoproteină urmează tabelul 13.1; efectele A
 - `quiz-topics-test.mjs`, `simulation-data-test.mjs`, `umf-2026-content-test.mjs` și `umf-2026-semantic-test.mjs`: trecute.
 - `npm test`: **oprit la validare**, din cauza declarației duplicate `CHAPTERS` din fișierul local neversionat preexistent `assets/js/chapters-data 2.js`. Restul suitei generale nu a rulat prin această comandă. Duplicatul nu a fost modificat sau șters.
 - `git diff --check`: trecut. Modificările sunt locale; nu s-a făcut publicare.
+
+## Reîncadrare la metabolism — 3 octombrie 2026
+
+Cele cinci grile păstrează integral obiectele originale, inclusiv ID-urile `end-061`–`end-064` și `end-150`, numerotarea, baremul și explicațiile. Amprentele celor două seturi au fost actualizate exclusiv pentru noua împărțire; comparația tuturor celor 160 de obiecte înainte/după mutare este identică. Referințele editoriale pentru aceste ID-uri rămân în `data/endocrin-manual-review.json`.
+
+`transferredQuestions` declară sursa progresului în setul de metabolism. Playerul și statisticile folosesc aceeași citire prin `BBQuizAnalytics.currentAnswers`, cu `BBUserStorage` pentru proprietarul activ. Un răspuns existent în destinație are prioritate; resetarea salvează răspunsuri goale explicite pentru a nu recupera din nou selecțiile vechi. În sursă, `retiredQuestions` păstrează selecțiile și informațiile necesare istoricului. Revizia seturilor este 2; versiunile cheilor de stocare rămân 1. Încercările datate rămân în istoricul original, fără rescriere sau date inventate.
+
+Vechile legături `#grila-61`–`#grila-64`, `#grila-150` și `#grile-61-64` duc la testul de metabolism, inclusiv în ediția `/nou/`. Parametrii de căutare pentru intervalul mutat sunt păstrați. Intervalul endocrin `#grile-150-159` rămâne stabil și afișează grilele 151–159. Băncile de simulare, indexul, metadatele și inventarele offline se regenerează; URL-urile scripturilor modificate primesc versiuni noi pentru compatibilitatea cu workerii cache-first existenți.
+
+Testul `scripts/quiz-transfer-test.mjs` verifică distribuția progresului în statistici, salvarea în destinație, păstrarea selecțiilor sursă, resetarea/reîncărcarea, izolarea proprietarilor și legăturile vechi în ambele ediții.
+
+Verificări locale: `npm run test:endocrin-metabolism`, `npm run test:analytics`, `quiz-content-history-test.mjs`, `quiz-retired-correction-history-test.mjs`, `quiz-content-compatibility-test.mjs`, `umf-2026-content-test.mjs`, `umf-2026-semantic-test.mjs`, `simulation-data-test.mjs`, `npm run generate:check` și `git diff --check` au trecut. `npm test` s-a oprit la validare din cauza declarației duplicate `CHAPTERS` din fișierul local preexistent, neversionat, `assets/js/chapters-data 2.js`; fișierul nu a fost modificat. Modificările sunt locale, fără publicare.

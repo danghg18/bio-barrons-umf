@@ -20,6 +20,8 @@ Revizia acoperă toate cele 17 capitole publicate. Sistemul urinar și Sistemul 
 
 Fiecare audit identifică TXT-ul prin SHA-256 și conține corespondența fiecărei opțiuni cu pasajele/figurile relevante. Intervalele de rânduri permit verificarea sursei; hash-urile explicațiilor, acolo unde sunt prezente, identifică exact versiunea revizuită. Aceste verificări structurale nu înlocuiesc lectura editorială.
 
+Reîncadrarea din 3 octombrie 2026 mută grilele 61–64 și 150 la Metabolism și nutriție, fără modificarea explicațiilor. Referințele lor rămân în auditul endocrin, sub ID-urile originale `end-061`–`end-064` și `end-150`. Tabelul de mai jos reflectă distribuția actuală.
+
 ## Capitole revizuite
 
 | Lecție | Grile | Explicații A–E |
@@ -31,13 +33,13 @@ Fiecare audit identifică TXT-ul prin SHA-256 și conține corespondența fiecă
 | Țesutul nervos | 85 | 425 |
 | Organizarea sistemului nervos | 100 | 500 |
 | Organele de simț | 100 | 500 |
-| Sistemul endocrin | 105 | 525 |
+| Sistemul endocrin | 100 | 500 |
 | Sângele | 80 | 400 |
 | Sistemul cardiovascular | 82 | 410 |
 | Sistemul limfatic și imun | 58 | 290 |
 | Sistemul respirator | 160 | 800 |
 | Sistemul digestiv | 80 | 400 |
-| Metabolism și nutriție | 55 | 275 |
+| Metabolism și nutriție | 60 | 300 |
 | Sistemul urinar | 100 | 500 |
 | Sistemul reproducător masculin | 69 | 345 |
 | Sistemul reproducător feminin | 71 | 355 |

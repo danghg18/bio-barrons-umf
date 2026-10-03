@@ -10224,7 +10224,76 @@ window.BB_QUIZ_INDEX = [
     "name": "Sistemul endocrin",
     "url": "grile_sistemul_endocrin.html",
     "storageKey": "bb.quiz.sistemul-endocrin.v1",
-    "contentRevision": 1,
+    "retiredQuestions": [
+      {
+        "id": "end-061",
+        "number": 61,
+        "sourceNumber": 61,
+        "sourceChapter": "VI",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ],
+        "retired": true,
+        "topicId": "metabolism-general-metabolismul-glucidelor",
+        "replacementUrl": "grile_metabolism_si_nutritie.html#grila-61"
+      },
+      {
+        "id": "end-062",
+        "number": 62,
+        "sourceNumber": 62,
+        "sourceChapter": "VI",
+        "correct": [
+          "A",
+          "D"
+        ],
+        "retired": true,
+        "topicId": "metabolism-glucidic",
+        "replacementUrl": "grile_metabolism_si_nutritie.html#grila-62"
+      },
+      {
+        "id": "end-063",
+        "number": 63,
+        "sourceNumber": 63,
+        "sourceChapter": "VI",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ],
+        "retired": true,
+        "topicId": "metabolism-lipidic",
+        "replacementUrl": "grile_metabolism_si_nutritie.html#grila-63"
+      },
+      {
+        "id": "end-064",
+        "number": 64,
+        "sourceNumber": 64,
+        "sourceChapter": "VI",
+        "correct": [
+          "A",
+          "B"
+        ],
+        "retired": true,
+        "topicId": "metabolism-glucidic",
+        "replacementUrl": "grile_metabolism_si_nutritie.html#grila-64"
+      },
+      {
+        "id": "end-150",
+        "number": 150,
+        "sourceNumber": 150,
+        "sourceChapter": "VI",
+        "correct": [
+          "C",
+          "E"
+        ],
+        "retired": true,
+        "topicId": "rata-si-temperatura",
+        "replacementUrl": "grile_metabolism_si_nutritie.html#grila-150"
+      }
+    ],
+    "contentRevision": 2,
     "previousQuestionIds": [
       "end-001",
       "end-002",
@@ -11091,56 +11160,6 @@ window.BB_QUIZ_INDEX = [
         "sourceNumber": 60
       },
       {
-        "id": "end-061",
-        "number": 61,
-        "rangeId": "grile-61-64",
-        "correct": [
-          "A",
-          "C",
-          "E"
-        ],
-        "topicId": "metabolism-general-metabolismul-glucidelor",
-        "sourceChapter": "VI",
-        "sourceNumber": 61
-      },
-      {
-        "id": "end-062",
-        "number": 62,
-        "rangeId": "grile-61-64",
-        "correct": [
-          "A",
-          "D"
-        ],
-        "topicId": "metabolism-glucidic",
-        "sourceChapter": "VI",
-        "sourceNumber": 62
-      },
-      {
-        "id": "end-063",
-        "number": 63,
-        "rangeId": "grile-61-64",
-        "correct": [
-          "A",
-          "B",
-          "C"
-        ],
-        "topicId": "metabolism-lipidic",
-        "sourceChapter": "VI",
-        "sourceNumber": 63
-      },
-      {
-        "id": "end-064",
-        "number": 64,
-        "rangeId": "grile-61-64",
-        "correct": [
-          "A",
-          "B"
-        ],
-        "topicId": "metabolism-glucidic",
-        "sourceChapter": "VI",
-        "sourceNumber": 64
-      },
-      {
         "id": "end-120",
         "number": 120,
         "rangeId": "grile-120-129",
@@ -11522,18 +11541,6 @@ window.BB_QUIZ_INDEX = [
         "sourceNumber": 149
       },
       {
-        "id": "end-150",
-        "number": 150,
-        "rangeId": "grile-150-159",
-        "correct": [
-          "C",
-          "E"
-        ],
-        "topicId": "rata-si-temperatura",
-        "sourceChapter": "VI",
-        "sourceNumber": 150
-      },
-      {
         "id": "end-151",
         "number": 151,
         "rangeId": "grile-150-159",
@@ -11697,11 +11704,6 @@ window.BB_QUIZ_INDEX = [
         "end": 60
       },
       {
-        "id": "grile-61-64",
-        "start": 61,
-        "end": 64
-      },
-      {
         "id": "grile-120-129",
         "start": 120,
         "end": 129
@@ -11718,7 +11720,7 @@ window.BB_QUIZ_INDEX = [
       },
       {
         "id": "grile-150-159",
-        "start": 150,
+        "start": 151,
         "end": 159
       },
       {
@@ -18289,7 +18291,21 @@ window.BB_QUIZ_INDEX = [
     "name": "Metabolism și nutriție",
     "url": "grile_metabolism_si_nutritie.html",
     "storageKey": "bb.quiz.metabolism.v1",
-    "contentRevision": 1,
+    "transferredQuestions": [
+      {
+        "storageKey": "bb.quiz.sistemul-endocrin.v1",
+        "version": 1,
+        "idPrefix": "end-",
+        "questionIds": [
+          "end-061",
+          "end-062",
+          "end-063",
+          "end-064",
+          "end-150"
+        ]
+      }
+    ],
+    "contentRevision": 2,
     "previousQuestionIds": [
       "met-065",
       "met-066",
@@ -18349,6 +18365,56 @@ window.BB_QUIZ_INDEX = [
     ],
     "version": 1,
     "questions": [
+      {
+        "id": "end-061",
+        "number": 61,
+        "rangeId": "grile-61-64",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ],
+        "topicId": "metabolism-general-metabolismul-glucidelor",
+        "sourceChapter": "VI",
+        "sourceNumber": 61
+      },
+      {
+        "id": "end-062",
+        "number": 62,
+        "rangeId": "grile-61-64",
+        "correct": [
+          "A",
+          "D"
+        ],
+        "topicId": "metabolism-glucidic",
+        "sourceChapter": "VI",
+        "sourceNumber": 62
+      },
+      {
+        "id": "end-063",
+        "number": 63,
+        "rangeId": "grile-61-64",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ],
+        "topicId": "metabolism-lipidic",
+        "sourceChapter": "VI",
+        "sourceNumber": 63
+      },
+      {
+        "id": "end-064",
+        "number": 64,
+        "rangeId": "grile-61-64",
+        "correct": [
+          "A",
+          "B"
+        ],
+        "topicId": "metabolism-glucidic",
+        "sourceChapter": "VI",
+        "sourceNumber": 64
+      },
       {
         "id": "met-065",
         "number": 65,
@@ -19055,9 +19121,26 @@ window.BB_QUIZ_INDEX = [
         "topicId": "stari-si-minerale",
         "sourceChapter": "VI",
         "sourceNumber": 119
+      },
+      {
+        "id": "end-150",
+        "number": 150,
+        "rangeId": "grile-150-150",
+        "correct": [
+          "C",
+          "E"
+        ],
+        "topicId": "rata-si-temperatura",
+        "sourceChapter": "VI",
+        "sourceNumber": 150
       }
     ],
     "ranges": [
+      {
+        "id": "grile-61-64",
+        "start": 61,
+        "end": 64
+      },
       {
         "id": "grile-65-74",
         "start": 65,
@@ -19087,6 +19170,11 @@ window.BB_QUIZ_INDEX = [
         "id": "grile-115-119",
         "start": 115,
         "end": 119
+      },
+      {
+        "id": "grile-150-150",
+        "start": 150,
+        "end": 150
       }
     ],
     "topics": [
@@ -19139,6 +19227,11 @@ window.BB_QUIZ_INDEX = [
         "id": "stari-si-minerale",
         "label": "Stări metabolice și minerale",
         "lessonUrl": "metabolism_si_nutritie.html#stari-si-minerale"
+      },
+      {
+        "id": "metabolism-general-metabolismul-glucidelor",
+        "label": "Anabolism și catabolism",
+        "lessonUrl": "metabolism_si_nutritie.html#metabolismul-glucidelor"
       }
     ]
   },

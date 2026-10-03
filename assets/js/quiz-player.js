@@ -59,6 +59,11 @@
 
   function blankState(preserveHistory) {
     var empty = { version: quiz.version, questions: {} };
+    if (preserveHistory) (quiz.transferredQuestions || []).forEach(function (transfer) {
+      transfer.questionIds.forEach(function (id) {
+        empty.questions[id] = {selected:[],verified:false,correct:false};
+      });
+    });
     // A deliberate restart clears current answers, not the retained evidence
     // from removed duplicates or earlier wording of a question.
     if (preserveHistory && state && state.questions) {
@@ -79,8 +84,9 @@
     try {
       var parsed = window.BBUserStorage ? window.BBUserStorage.get(quiz.storageKey) : JSON.parse(window.localStorage.getItem(quiz.storageKey) || "null");
       if (!parsed || parsed.version !== quiz.version || !parsed.questions || typeof parsed.questions !== "object" || Array.isArray(parsed.questions)) {
-        return blankState();
+        parsed = blankState();
       }
+      if (window.BBQuizAnalytics && window.BBQuizAnalytics.currentAnswers) parsed.questions = window.BBQuizAnalytics.currentAnswers(quiz);
       var knownQuestions = new Map(quiz.questions.map(function (question) { return [question.id, question]; }));
       var retiredIds = new Set((quiz.retiredQuestions || []).map(function (question) { return question.id; }));
       // Derive current scores from the current key without creating cloud edits
@@ -296,8 +302,10 @@
     quiz.questions.forEach(function (question, index) {
       if (question.number !== expectedNumbers[index]) throw new Error("Numerotarea grilelor nu corespunde intervalelor.");
       var identityNumber = question.legacyNumber === undefined ? question.number : question.legacyNumber;
+      var transfer = (quiz.transferredQuestions || []).find(function (item) { return item.questionIds.includes(question.id); });
+      var identityPrefix = transfer ? transfer.idPrefix : idPrefix;
       if (!Number.isInteger(identityNumber) || identityNumber < 1 || questionIds.has(question.id) ||
-          question.id !== idPrefix + String(identityNumber).padStart(3, "0")) {
+          question.id !== identityPrefix + String(identityNumber).padStart(3, "0")) {
         throw new Error("ID invalid pentru grila " + question.number + ".");
       }
       questionIds.add(question.id);
