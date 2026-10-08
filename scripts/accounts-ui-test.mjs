@@ -79,7 +79,7 @@ try {
     assert.equal(await page.locator('#bb-cache-export').isVisible(), false, 'Routine backup tools start collapsed');
     await credentials(page);
     await page.getByRole('button', {name:'Autentifică-te', exact:true}).click(); await synced(page);
-    await page.evaluate(() => { __mock.failNext('upsert', 'study_state', '42501'); BBStudyState.completeSection(1, 'introducere'); });
+    await page.evaluate(() => { __mock.failNext('rpc', 'study_state', '42501'); BBStudyState.completeSection(1, 'introducere'); });
     await page.waitForFunction(() => BBCloudSync.getState().status === 'error');
     assert.equal(await page.locator('#bb-sync-retry').isVisible(), true, 'Synchronization errors can be retried while data options stay closed');
     assert.equal(await page.locator('.bb-account-options').evaluate(node => node.open), false);

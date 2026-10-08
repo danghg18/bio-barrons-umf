@@ -51,7 +51,7 @@ function attributes(openingTag) {
  * The lesson documents use explicit element/section boundaries. This is a
  * purpose-built extractor, not a replacement for a browser's HTML tree repair.
  */
-export function extractNotebookSections(source, filename = 'lesson HTML') {
+export function extractNotebookSections(source, filename = 'lesson HTML', {studyOnly = false} = {}) {
   source = source.replace(/\r\n?/g, '\n');
   const tokens = /<!--[\s\S]*?(?:-->|$)|<![^>]*>|<\?[^>]*>|<\/?[a-zA-Z](?:[^>"']|"[^"]*"|'[^']*')*>|[^<]+|</g;
   const stack = [];
@@ -94,7 +94,9 @@ export function extractNotebookSections(source, filename = 'lesson HTML') {
         const id = attrs.id.slice(5);
         if (!id || ids.has(id)) throw new Error(`Invalid or duplicate notebook section "${id}" in ${filename}`);
         ids.add(id);
-        node.section = { id };
+        node.section = { id, study: stack.some(parent => parent.tag === 'main') &&
+          !classes.includes('chapter-home') && !Object.hasOwn(attrs, 'data-curriculum-excluded') &&
+          !Object.hasOwn(attrs, 'data-lesson-redirect') };
         sections.push(node.section);
       }
     }
@@ -112,19 +114,19 @@ export function extractNotebookSections(source, filename = 'lesson HTML') {
   }
 
   if (!sections.length) throw new Error(`No notebook sections found in ${filename}`);
-  return sections.map(section => ({
+  return sections.filter(section => !studyOnly || section.study).map(section => ({
     id: section.id,
     title: ((section.id === 'home' && homeLink?.text) || section.heading?.text || section.id).trim()
   }));
 }
 
-export async function buildNotebookSections(chapters, root) {
+export async function buildNotebookSections(chapters, root, options) {
   const catalog = Object.create(null);
   for (const chapter of chapters) {
     if (!Number.isInteger(chapter.num) || chapter.num < 1 || Object.hasOwn(catalog, chapter.num)) {
       throw new Error(`Invalid or duplicate notebook chapter number: ${chapter.num}`);
     }
-    catalog[chapter.num] = extractNotebookSections(await readFile(new URL(chapter.url, root), 'utf8'), chapter.url);
+    catalog[chapter.num] = extractNotebookSections(await readFile(new URL(chapter.url, root), 'utf8'), chapter.url, options);
   }
   return catalog;
 }

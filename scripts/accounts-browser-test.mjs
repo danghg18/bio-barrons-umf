@@ -895,23 +895,23 @@ try{
     await page.waitForFunction(()=>document.querySelector('#lab-continue-link').getAttribute('href').endsWith('celula_si_fiziologia_celulara.html#membrana'));
     await context.close();
   });
-  await test('debounces rapid local changes into one upsert containing the latest state',async()=>{
+  await test('debounces rapid local changes into one CAS write containing the latest state',async()=>{
     const {page,context}=await newPage();await login(page);
     await page.evaluate(()=>{__mock.clearCalls();for(let i=0;i<20;i++)BBStudyState.recordVisit(1,'section-'+i);});
     assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('bb.study.v1')).lastVisited.sectionId),'section-19','local write is immediate');
     await synced(page);
-    const writes=await page.evaluate(()=>__mock.calls().filter(call=>call.operation==='upsert'&&call.table==='study_state'));
-    assert.equal(writes.length,1);assert.equal(writes[0].payload.input.state.lastVisited.sectionId,'section-19');
-    assert.equal(writes[0].payload.options.onConflict,'user_id');await context.close();
+    const writes=await page.evaluate(()=>__mock.calls().filter(call=>call.operation==='rpc'&&call.table==='study_state'));
+    assert.equal(writes.length,1);assert.equal(writes[0].payload.p_payload.lastVisited.sectionId,'section-19');
+    assert.equal(writes[0].payload.p_owner,A);assert.ok(Number.isInteger(writes[0].payload.p_expected));await context.close();
   });
-  await test('a slow upsert acknowledgement never discards newer local edits',async()=>{
+  await test('a slow CAS acknowledgement never discards newer local edits',async()=>{
     const {page,context}=await newPage();await login(page);
-    await page.evaluate(()=>{__mock.clearCalls();__mock.delay('upsert','study_state','hold');BBStudyState.recordVisit(1,'introducere');});
-    await page.waitForFunction(()=>__mock.calls().some(call=>call.operation==='upsert'&&call.table==='study_state'));
-    await page.evaluate(()=>{BBStudyState.recordVisit(1,'organizare');__mock.delay('upsert','study_state',0);__mock.release();});await synced(page);
+    await page.evaluate(()=>{__mock.clearCalls();__mock.delay('rpc','study_state','hold');BBStudyState.recordVisit(1,'introducere');});
+    await page.waitForFunction(()=>__mock.calls().some(call=>call.operation==='rpc'&&call.table==='study_state'));
+    await page.evaluate(()=>{BBStudyState.recordVisit(1,'organizare');__mock.delay('rpc','study_state',0);__mock.release();});await synced(page);
     assert.equal(await page.evaluate(()=>BBStudyState.getState().lastVisited.sectionId),'organizare');
     assert.equal(await page.evaluate(()=>__mock.rows('study_state')[0].state.lastVisited.sectionId),'organizare');
-    assert.equal(await page.evaluate(()=>__mock.calls().filter(call=>call.operation==='upsert'&&call.table==='study_state').length),2);
+    assert.equal(await page.evaluate(()=>__mock.calls().filter(call=>call.operation==='rpc'&&call.table==='study_state').length),2);
     await context.close();
   });
   await test('offline outbox survives refresh and retries without losing unsent progress',async()=>{
@@ -927,7 +927,7 @@ try{
   });
   await test('RLS and network failures remain recoverable and never render raw errors',async()=>{
     const {page,context,errors}=await newPage();await login(page);
-    await page.evaluate(()=>{__mock.failNext('upsert','study_state','42501');BBStudyState.completeSection(1,'termeni');});
+    await page.evaluate(()=>{__mock.failNext('rpc','study_state','42501');BBStudyState.completeSection(1,'termeni');});
     await page.waitForFunction(()=>BBCloudSync.getState().status==='error');
     assert.match(JSON.stringify(await page.evaluate(()=>BBStudyState.getState())),/termeni/);
     assert.doesNotMatch(await page.locator('body').innerText(),/mock database detail|42501/);
@@ -982,8 +982,11 @@ try{
       }
       await page.locator('.quiz-reset-start').click();await page.locator('.quiz-reset-confirm').click();
       await page.waitForFunction(()=>document.querySelectorAll('.quiz-question.is-verified').length===0);await synced(page);
-      assert.deepEqual(await page.evaluate(key=>BBUserStorage.get(key).questions,quiz.storageKey),{});
-      assert.deepEqual(await page.evaluate(key=>__mock.rows('quiz_states').find(row=>row.quiz_key===key).state.questions,quiz.storageKey),{});
+      // Transferred answers need explicit empty markers so a restart cannot
+      // reimport the old source chapter answers on the next hydration.
+      const resetMarkers=Object.fromEntries((quiz.transferredQuestions||[]).flatMap(transfer=>transfer.questionIds.map(id=>[id,{selected:[],verified:false,correct:false}])));
+      assert.deepEqual(await page.evaluate(key=>BBUserStorage.get(key).questions,quiz.storageKey),resetMarkers);
+      assert.deepEqual(await page.evaluate(key=>__mock.rows('quiz_states').find(row=>row.quiz_key===key).state.questions,quiz.storageKey),resetMarkers);
     }
     assert.equal(errors.length,0);await context.close();
   });

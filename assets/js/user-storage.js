@@ -17,6 +17,7 @@
   let owner = 'guest';
   const clone = value => value == null ? value : JSON.parse(JSON.stringify(value));
   const revision = () => Date.now().toString(36) + Math.random().toString(36).slice(2);
+  const writer = revision();
   const scoped = (base, id) => base + encodeURIComponent(id) + ':';
   const recordName = (key, id = owner) => scoped(recordPrefix, id) + encodeURIComponent(key);
   const ackName = (key, id = owner) => scoped(ackPrefix, id) + encodeURIComponent(key);
@@ -53,8 +54,8 @@
     const old = metadata(id);
     return {value:old.values?.[key] ?? null, revision:old.pending?.[key] || null};
   }
-  function putRecord(key, value, pending, id = owner) {
-    write(recordName(key, id), JSON.stringify({value:clone(value), revision:pending || null}));
+  function putRecord(key, value, pending, id = owner, base) {
+    write(recordName(key, id), JSON.stringify({value:clone(value), revision:pending || null, writer, ...(base !== undefined ? {base:clone(base)} : {})}));
   }
   function pendingRevision(key, saved, id = owner) {
     return saved.revision && read(ackName(key, id)) !== saved.revision ? saved.revision : null;
@@ -116,10 +117,17 @@
     const syncable = owner !== 'guest' && (keys.includes(key) || key.startsWith('note:') || personalKey(key));
     // One atomic localStorage write owns one value and its pending revision.
     // Concurrent changes to distinct notes/quizzes cannot overwrite each other.
-    const old = record(key).value;
+    const saved = record(key);
+    const old = saved.value;
+    // A stale consumer in another tab may submit a whole snapshot before its
+    // storage invalidation arrives. Retain the displaced pending branch before
+    // replacing it; neither a cloud CAS nor later hydration can recover it.
+    if (syncable && !personalKey(key) && pendingRevision(key,saved) && saved.writer !== writer &&
+        JSON.stringify(old) !== JSON.stringify(value)) backup(key,old,'concurrent-tab-before-write');
     if (personalKey(key) && old?.deleted) value = personal.merge(key, old, value);
     if (personalKey(key) && JSON.stringify(old) === JSON.stringify(value)) return true;
-    putRecord(key, value, syncable ? revision() : null);
+    putRecord(key, value, syncable ? revision() : null, owner,
+      personalKey(key) ? undefined : pendingRevision(key,saved) ? saved.base : old);
     mirror(key, value);
     announce('bb:cache-write', {key, owner});
     return true;
@@ -177,11 +185,11 @@
     data.backups.push({key, value:clone(value), reason, at:new Date().toISOString()});
     saveMetadata(data);
   }
-  function hydrate(remote) {
+  function hydrate(remote, skip = new Set()) {
     if (read(ownerKey) !== owner) return false;
     const all = new Set([...recordKeys(), ...Object.keys(remote)]);
     all.forEach(key => {
-      if (auxiliary.includes(key) || (!personalKey(key) && key.startsWith('bb.simulation.v1:'))) return;
+      if (skip.has(key) || auxiliary.includes(key) || (!personalKey(key) && key.startsWith('bb.simulation.v1:'))) return;
       const incoming = remote[key];
       const saved = record(key);
       const local = saved.value;
@@ -196,16 +204,7 @@
         putRecord(key, merged, needsWrite ? (pendingRevision(key,saved) || revision()) : null);
         return;
       }
-      if (pendingRevision(key, saved)) {
-        if (incoming != null && JSON.stringify(incoming) !== JSON.stringify(local)) backup(key, incoming, 'cloud-before-pending-write');
-        return;
-      }
-      if (incoming != null) {
-        if (local != null && JSON.stringify(local) !== JSON.stringify(incoming)) backup(key, local, 'local-before-cloud');
-        putRecord(key, incoming, null);
-      } else if (local != null) {
-        putRecord(key, local, revision());
-      }
+      acceptState(key, incoming ?? null, undefined, undefined, false);
     });
     mirrors();
     announce('bb:cache-change', {reason:'cloud'});
@@ -243,6 +242,59 @@
     announce('bb:cache-change', {reason:'personal-cloud',key});
     return true;
   }
+  const stable = value => value && typeof value === 'object'
+    ? Array.isArray(value) ? '[' + value.map(stable).join(',') + ']'
+      : '{' + Object.keys(value).sort().map(k => JSON.stringify(k) + ':' + stable(value[k])).join(',') + '}'
+    : JSON.stringify(value);
+  const equal = (a,b) => stable(a) === stable(b);
+  // Three-way merge only at semantic boundaries. A question's answer/verified
+  // fields and a note body are indivisible; never synthesize an unchosen answer.
+  function mergeState(key, base, local, remote) {
+    let conflict = false;
+    function merge(b,l,r,path = '') {
+      if (equal(l,r) || equal(r,b)) return clone(l);
+      if (equal(l,b)) return clone(r);
+      if (path.endsWith('.completedSections') && Array.isArray(l) && Array.isArray(r)) {
+        const previous = Array.isArray(b) ? b : [];
+        return [...new Set([...l,...r])].filter(item => !previous.includes(item) || (l.includes(item) && r.includes(item)));
+      }
+      const object = v => v && typeof v === 'object' && !Array.isArray(v);
+      const atomic = key.startsWith('note:') || /^questions\.[^.]+$/.test(path) || path === 'lastVisited';
+      if (!atomic && object(l) && object(r)) {
+        const result = {};
+        for (const k of new Set([...Object.keys(b || {}),...Object.keys(l),...Object.keys(r)])) {
+          const value = merge(b?.[k],l[k],r[k],path ? path + '.' + k : k);
+          if (value !== undefined) Object.defineProperty(result,k,{value,enumerable:true,writable:true,configurable:true});
+        }
+        return result;
+      }
+      conflict = true;
+      return clone(r); // retain the accepted cloud value; save the other branch below
+    }
+    const value = key.startsWith('note:')
+      ? {...remote,body:merge(base?.body,local?.body,remote?.body,'body')} : merge(base,local,remote);
+    if (conflict) { backup(key,local,'concurrent-local-conflict'); backup(key,remote,'concurrent-cloud-conflict'); }
+    return value;
+  }
+  function acceptState(key, incoming, pending, sent, notify = true) {
+    if (read(ownerKey) !== owner) return false;
+    const saved = record(key), local = saved.value;
+    const dirty = pendingRevision(key,saved);
+    // A successful write is the base for any edits made while it was in flight.
+    const base = sent !== undefined ? sent : saved.base;
+    let merged;
+    if (dirty) merged = incoming == null ? local : mergeState(key,base,local,incoming);
+    else if (pending && !equal(local,sent)) return false; // newer acknowledged cross-tab state
+    else {
+      merged = incoming ?? local;
+      if (local != null && incoming != null && !equal(local,incoming)) backup(key,local,'local-before-cloud');
+    }
+    if (merged == null) return true;
+    putRecord(key,merged,!equal(merged,incoming) ? (dirty || revision()) : null,owner,incoming);
+    mirror(key,merged);
+    if (notify && !equal(local,merged)) announce('bb:cache-change',{reason:'cloud',key});
+    return true;
+  }
   function acknowledge(key, pending) {
     // Acknowledgements have a separate key: a response for revision A can never
     // rewrite/delete a newer record B produced while the request was in flight.
@@ -270,7 +322,7 @@
     }
   });
   window.BBUserStorage = {
-    get, set, activate, hydrate, acknowledge, entries, canClaimGuestRecords, claimGuestRecords, acceptPersonal,
+    get, set, activate, hydrate, acknowledge, entries, canClaimGuestRecords, claimGuestRecords, acceptPersonal, acceptState,
     owner: () => owner,
     snapshot: () => clone(vault()),
     canPersist: () => persistent,

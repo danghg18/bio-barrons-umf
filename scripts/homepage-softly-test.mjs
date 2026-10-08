@@ -145,7 +145,8 @@ try {
     throw error;
   });
   await page.goto(base + 'nou/cont.html?flow=recovery#example=preserved');
-  await page.waitForURL(base + 'cont.html?flow=recovery#example=preserved');
+  await page.waitForURL(base + 'nou/cont.html?flow=recovery#example=preserved');
+  assert.equal(await page.locator('body.softly-study').count(),1);
   await context.close();
   console.log('PASS Softly: login/logout, signup confirmation, recovery callback, safe errors, offline and account change; demo isolation; forward/reverse compact pin, 3 phones, 6 widths, keyboard/menu/FAQ, reduced motion, print, direct bookmarks and demo disclosures.');
 } finally { await browser.close(); await new Promise(done => server.close(done)); }

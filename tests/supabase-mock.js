@@ -76,6 +76,22 @@
     };
   }};
   sdk.rpc = async(name,args) => {
+    if (name === 'bb_put_account_state') {
+      const table = args.p_key === 'bb.study.v1' ? 'study_state' : args.p_key.startsWith('note:') ? 'notes' : 'quiz_states';
+      record('rpc',table,args);
+      return request('rpc',table,() => {
+        if (!state.user || args.p_owner !== state.user.id) return {data:null,error:{code:'42501'}};
+        const rows = state.tables[table] ||= [];
+        const payload = args.p_payload;
+        const old = rows.find(row => row.user_id === state.user.id && (table === 'study_state' || (table === 'notes' ? row.chapter_num === payload.chapter_num && row.section_id === payload.section_id : row.quiz_key === args.p_key)));
+        if (old && old.revision !== args.p_expected) return {data:{accepted:false,record:clone(old)},error:null};
+        if (!old && args.p_expected !== 0) return {data:null,error:{code:'40001'}};
+        const row = {user_id:state.user.id,revision:(old?.revision || 0)+1,updated_at:new Date().toISOString(),
+          ...(table === 'notes' ? {chapter_num:payload.chapter_num,section_id:payload.section_id,body:payload.body,created_at:old?.created_at || new Date().toISOString()} : {version:payload.version,state:clone(payload),...(table === 'quiz_states' ? {quiz_key:args.p_key} : {})})};
+        if (old) rows[rows.indexOf(old)] = row; else rows.push(row);
+        persist(); return {data:{accepted:true,record:clone(row)},error:null};
+      });
+    }
     record('rpc',name,args);
     return request('rpc',name,async()=>{
       if(!state.user || args.p_owner!==state.user.id || name!=='bb_put_personal_record') return {data:null,error:{code:'42501'}};
@@ -111,7 +127,7 @@
   };}};
   window.__mock = {
     users,
-    seed(table,rows) {state.tables[table]=clone(rows);persist();},
+    seed(table,rows) {state.tables[table]=clone(rows).map(row=>({...row,revision:row.revision || 1}));persist();},
     rows(table) {return clone(state.tables[table]);},
     calls() {return clone(state.calls);},
     clearCalls() {state.calls=[];persist();},

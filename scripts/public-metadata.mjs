@@ -29,7 +29,31 @@ function metadata(source,kind,name,value) {
  const pattern=new RegExp(`<meta\\s+${kind}="${name}"[^>]*>`,'i');
  return pattern.test(source)?source.replace(pattern,()=>tag):source.replace('</head>',tag+'\n</head>');
 }
+// The first paint uses the same catalog structure as analytics hydration. Build
+// every row from canonical metadata so drafts and newly published sets never
+// depend on JavaScript replacing stale links in the delivered document.
+function testingCatalog(source,registry,quizzes) {
+ const groups=new Map();
+ for(const chapter of registry.CHAPTERS.concat((registry.BIO_SITE.quizCollections || []).filter(item=>item.done))) {
+  if(!groups.has(chapter.cat)) groups.set(chapter.cat,[]);
+  groups.get(chapter.cat).push(chapter);
+ }
+ let groupNumber=0;
+ const html=[...groups].map(([category,chapters])=>{
+  groupNumber++;
+  const rows=chapters.map(chapter=>{
+   const quiz=quizzes.find(item=>item.chapterNum===chapter.num);
+   const content=`<span class="lab-item-num">${escape(chapter.shortLabel || String(chapter.num).padStart(2,'0'))}</span><span class="testing-chapter-name"><span class="lab-item-title">${escape(chapter.name)}</span><span class="lab-item-tags">${quiz ? quiz.questions.length + ' de grile' : 'Test în pregătire'}</span></span>`;
+   if(!quiz) return `<div class="testing-chapter-row is-unavailable"><button type="button" class="lab-item lab-item-soon" data-chapter="${chapter.num}" disabled>${content}<span class="testing-start">În curând</span></button></div>`;
+   return `<div class="testing-chapter-row is-unstarted"><a class="lab-item lab-item-done" id="testing-quiz-${chapter.num}" data-chapter="${chapter.num}" href="${escape(quiz.url)}">${content}<span class="testing-start">Rezolvă <span aria-hidden="true">↗</span></span></a><div class="testing-row-progress"><span class="testing-unstarted">Se încarcă progresul…</span></div><a class="testing-stats-link" id="testing-stats-${chapter.num}" href="statistici.html?capitol=${chapter.num}" aria-label="Statistici: ${escape(chapter.name)}">Statistici <span aria-hidden="true">→</span></a></div>`;
+  }).join('');
+  return `<section class="testing-category" aria-labelledby="testing-category-${groupNumber}"><div class="testing-category-head"><span>${String(groupNumber).padStart(2,'0')}</span><h3 id="testing-category-${groupNumber}">${escape(category)}</h3></div>${rows}</section>`;
+ }).join('');
+ return replaceElements(source,'lab-bento-grid',node=>node.open+'\n'+html+'\n    </'+node.tag+'>');
+}
+
 function catalog(source,registry,quizzes,testing) {
+ if(testing) source=testingCatalog(source,registry,quizzes);
  const byNumber=new Map(registry.CHAPTERS.map(c=>[c.num,c]));
  source=replaceElements(source,'lab-bento-cat',group=>{
    const numbers=elements(group.body,'lab-item').map(node=>Number(node.body.match(/class="lab-item-num"[^>]*>(\d+)/)?.[1]));

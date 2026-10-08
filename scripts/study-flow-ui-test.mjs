@@ -57,7 +57,8 @@ try{
  await historicalContext.close();
  await page.setViewportSize({width:1440,height:900});await page.goto(base+'testare.html');await ready();
  assert.equal(await page.locator('#testing-preview-summary strong').innerText(),'1','Preview counts distinct verified questions');
- assert.equal(await page.locator('#testing-activity svg').isVisible(),true,'The restored activity preview shows recorded answers');
+ assert.equal(await page.locator('#testing-activity .testing-activity-strip').isVisible(),true,'The activity preview shows recorded answers');
+ assert.equal(await page.locator('#testing-activity .testing-activity-day.is-active').count(),1,'The single verification appears on its actual practice day');
  assert.equal(await page.locator('#testing-activity tbody tr td').first().textContent(),'1','Activity counts the real verification from this study session');
  const intro=await page.locator('.testing-intro').boundingBox(),preview=await page.locator('.testing-preview').boundingBox();assert.ok(preview.x>intro.x+intro.width,'Progress preview sits to the right of the introduction');
  assert.deepEqual(errors,[]);console.log('Study flow: unfiltered chapter catalog, empty/active/chapter analytics, real review links, legacy and shared lesson practice, mobile notes and responsive widths passed.');

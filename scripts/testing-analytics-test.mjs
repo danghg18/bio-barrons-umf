@@ -146,7 +146,8 @@ try {
         }));
         assert.ok(activity.expected>0,'Fixture has recent history for the restored activity preview');
         assert.equal(activity.actual,activity.expected,'The activity preview uses real recent attempts');
-        assert.equal(await page.locator('#testing-activity svg').isVisible(),true,'Activity chart remains visible in the right-hand preview');
+        assert.equal(await page.locator('#testing-activity .testing-activity-strip').isVisible(),true,'Calendar activity remains visible in the right-hand preview');
+        assert.equal(await page.locator('.testing-activity-day').count(),30,'Quiet days keep their calendar position');
       }
       if (width === 1440 || width === 390) {
         await capture(page, file.replace('.html','')+'-fixture-'+width);

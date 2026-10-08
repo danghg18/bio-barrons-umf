@@ -1409,7 +1409,7 @@
     if (!study || !chapter || !main || !nav) return;
 
     var contentSections = Array.prototype.slice.call(
-      main.querySelectorAll(".page-section[id^='page-']:not(.chapter-home):not([data-curriculum-excluded])")
+      main.querySelectorAll(".page-section[id^='page-']:not(.chapter-home):not([data-curriculum-excluded]):not([data-lesson-redirect])")
     );
     var sectionIds = contentSections.map(getStudyRoute).filter(Boolean);
     if (!sectionIds.length) return;
@@ -1458,12 +1458,24 @@
       section.appendChild(sentinel);
     });
 
+    function publishedChapterIsComplete(item) {
+      var inventory = window.BB_STUDY_SECTIONS;
+      var routes = item.num === chapter.num ? sectionIds : inventory && inventory[item.num];
+      return Array.isArray(routes) && routes.length > 0 && study.getLessonProgress(item.num, routes).isComplete;
+    }
+
     function nextPublishedChapter() {
       var currentIndex = CHAPTERS.findIndex(function (item) { return item.num === chapter.num; });
-      for (var index = currentIndex + 1; index < CHAPTERS.length; index += 1) {
-        if (CHAPTERS[index].done && CHAPTERS[index].url) return CHAPTERS[index];
+      // Continue in catalog order, wrapping when lessons were studied out of order.
+      for (var offset = 1; offset < CHAPTERS.length; offset += 1) {
+        var item = CHAPTERS[(currentIndex + offset) % CHAPTERS.length];
+        if (item.done && item.url && !publishedChapterIsComplete(item)) return item;
       }
       return null;
+    }
+
+    function allPublishedChaptersComplete() {
+      return CHAPTERS.filter(function (item) { return item.done && item.url; }).every(publishedChapterIsComplete);
     }
 
     function updateNavigation(completedSections) {
@@ -1510,7 +1522,7 @@
         nextLessonLink.hidden = true;
         nextLessonLink.removeAttribute("href");
         nextLessonLink.textContent = "";
-        if (lessonProgress.isComplete) {
+        if (lessonProgress.isComplete && allPublishedChaptersComplete()) {
           completionStatus.textContent += " Ai parcurs toate lecțiile disponibile.";
         }
       }

@@ -93,8 +93,8 @@ console.log('PASS storage: guest migration once, private cache isolation, cross-
   equal(a.adapter.snapshot().pending['bb.study.v1'] ?? null, null, 'Current acknowledgement clears pending logically');
   a.adapter.set('bb.study.v1', study('dirty'));
   for (let i = 0; i < 4; i++) a.adapter.hydrate({'bb.study.v1':study('cloud')});
-  equal(a.adapter.snapshot().backups.filter(item => item.key === 'bb.study.v1').length, 1, 'Repeated identical conflicts create one backup');
-  equal(a.adapter.get('bb.study.v1'), study('dirty'), 'Dirty local record survives cloud hydration');
+  equal(a.adapter.snapshot().backups.filter(item => item.key === 'bb.study.v1' && item.reason.endsWith('-conflict')).length, 2, 'Repeated identical conflicts retain each branch once');
+  equal(a.adapter.get('bb.study.v1'), study('cloud'), 'Ambiguous visit converges to cloud with local intent exported');
 }
 console.log('PASS storage: concurrent distinct records, delayed events, acknowledgement race, conflict deduplication');
 {

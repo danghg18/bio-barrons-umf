@@ -157,3 +157,57 @@ Pe alt dispozitiv, imaginile se descarcă prin clientul autentificat și intră 
 Contractul `notes.body` rămâne de 20.000 de caractere, cu prefixul rich existent. Clienții vechi nu cunosc figurile și sticky notes; folosește editorul actualizat pentru a păstra aceste elemente la editare. Migrarea nu modifică rândurile existente, cheile notițelor sau conținutul lecțiilor.
 
 Politicile urmează [modelul Supabase pentru accesul privat în Storage](https://supabase.com/docs/guides/storage/security/access-control). `scripts/note-media-sql-test.mjs` execută migrarea în PostgreSQL/PGlite cu schema de Storage simulată și verifică accesul între doi utilizatori; restricțiile MIME/dimensiune ale bucketului sunt verificate ca metadate, nu printr-un serviciu Storage live.
+
+### Callbackuri pentru cele două ediții (audit 8 octombrie 2026)
+
+Clientul construiește callbackul `cont.html` relativ la pagina curentă, pe aceeași
+origine: ediția clasică revine în directorul clasic, iar `/nou/` revine în
+`/nou/cont.html`. Subdirectorul instalării este păstrat. Nu există domeniu de
+producție impus în cod și nu se acceptă destinații din query/hash. Sunt permise
+HTTPS și HTTP numai pentru localhost, 127.0.0.1 și ::1. Recuperarea parolei
+adaugă doar `?flow=recovery`.
+
+După alegerea domeniului, administratorul trebuie să configureze separat Site URL
+și Redirect URLs în Supabase pentru ambele callbackuri (inclusiv variantele de
+recuperare), precum și callbackurile locale folosite la dezvoltare. Verificați
+că șabloanele email respectă RedirectTo, nu fixează revenirea la SiteURL. Folosiți
+URL-uri exacte în producție, conform
+https://supabase.com/docs/guides/auth/redirect-urls . Această schimbare locală nu
+modifică allowlistul, SMTP, șabloanele sau proiectul live. Testul automat verifică
+construirea URL-urilor; livrarea emailurilor și revenirea prin serviciul real
+rămân o verificare separată după configurare.
+
+### Concurență progres/grile/notițe — SQL pregătit, neaplicat live
+
+`supabase/pending/account-state-cas.sql` este un draft testat local cu PGlite.
+CLI Supabase nu este instalat aici; înainte de aplicare, înregistrați draftul
+printr-o migrare creată cu CLI și verificați-l în mediul de staging. Aplicarea
+live necesită aprobare separată și trebuie să preceadă publicarea clientului CAS.
+Fără RPC, noul client păstrează modificările în outbox și afișează eroare; nu
+revine la upsert nesigur. După migrare, clienții vechi fără revision nu mai pot
+suprascrie rândurile existente și trebuie reîncărcați. Ștergerile directe sunt
+revocate; resetarea progresului/grilelor și golirea notițelor sunt scrieri CAS.
+
+Clientul păstrează durabil baza ultimei editări și face merge în trei direcții:
+
+- Secțiunile parcurse și întrebările distincte se combină față de bază; resetarea
+  elimină valorile neschimbate, fără a șterge răspunsuri concurente noi.
+- Un răspuns complet la o întrebare și corpul unei notițe sunt unități atomice.
+  Dacă ambele dispozitive le schimbă incompatibil, versiunea cloud rămâne activă,
+  iar ramurile conflictuale sunt păstrate în exportul local al contului.
+- Pentru modificări vechi fără bază se aplică o politică conservatoare, cu backup.
+  Când două taburi înlocuiesc local un snapshot pending înainte de invalidare,
+  ramura deplasată este păstrată ca `concurrent-tab-before-write`; nu este
+  combinată automat în vizualizarea activă.
+
+Recuperare: „Datele tale” → „Exportă copia locală”. Backupurile sunt ale contului
+curent; aceasta nu este editare colaborativă și nu există îmbinare automată a
+textului a două notițe incompatibile. Nu curățați stocarea browserului înainte de
+export. Testele mock și PostgreSQL local nu reprezintă validarea serviciului live.
+
+Verificarea separată read-only a coordonatorului din 8 octombrie confirmă că
+proiectul live este `uqwiyawlxuyzbsjsyfoy`, iar cele trei tabele nu au încă revizii
+sau RPC CAS. `bb_put_personal_record` există deja. Registrul migrațiilor live
+nu coincide complet cu fișierele din repository: nu reaplicați în bloc migrațiile
+istorice. Reconciliați mai întâi schema/ledgerul și aplicați numai migrarea nouă
+aprobată. Allowlistul auth nu a putut fi citit prin conector și rămâne neverificat.

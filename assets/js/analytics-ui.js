@@ -62,8 +62,23 @@
     const totalQuestions = lifetime.quizzes.reduce((total, quiz) => total + quiz.questions.length, 0);
     const completed = lifetime.summary.distinct;
     put('testing-preview-summary', `<div class="testing-progress-count"><strong>${number(completed)}</strong><span>din ${number(totalQuestions)} grile diferite parcurse</span></div><progress class="analytics-progress" value="${completed}" max="${totalQuestions || 1}" aria-label="${number(completed)} din ${number(totalQuestions)} grile diferite parcurse"></progress>`);
-    chart('testing-activity', data.daily, 'activity', true);
+    renderTestingActivity(data.daily);
     byId('lab-testing-count').textContent = index.length + ' seturi disponibile · ' + index.reduce((sum, quiz) => sum + quiz.questions.length, 0) + ' de grile';
+  }
+
+  // Calendar spacing is meaningful: a quiet day must not disappear from the preview.
+  function renderTestingActivity(days) {
+    const recent = days.slice(-30);
+    const attempts = recent.reduce((sum, day) => sum + day.attempts, 0);
+    const active = recent.filter(day => day.attempts > 0);
+    if (!attempts) {
+      put('testing-activity', '<div class="chart-no-data">Nicio activitate</div>');
+      return;
+    }
+    const max = Math.max(...recent.map(day => day.attempts), 1);
+    const bars = recent.map(day => `<span class="testing-activity-day${day.attempts ? ' is-active' : ''}" style="--activity-height:${day.attempts / max * 100}%"></span>`).join('');
+    const rows = active.map(day => `<tr><th scope="row">${escape(longDate.format(dayDate(day.date)))}</th><td>${number(day.attempts)}</td><td>${number(day.correct)}</td></tr>`).join('');
+    put('testing-activity', `<div class="testing-activity-total"><span><strong>${number(attempts)}</strong> verificări</span><span>${number(active.length)} ${active.length === 1 ? 'zi activă' : 'zile active'}</span></div><div class="testing-activity-strip" aria-hidden="true">${bars}</div><div class="testing-activity-range" aria-hidden="true"><span>${escape(shortDate.format(dayDate(recent[0].date)))}</span><span>${escape(shortDate.format(dayDate(recent.at(-1).date)))}</span></div><div class="testing-activity-data analytics-sr-only"><table><caption>Verificări în ultimele 30 de zile; zilele fără activitate sunt omise.</caption><thead><tr><th scope="col">Data</th><th scope="col">Verificări</th><th scope="col">Corecte</th></tr></thead><tbody>${rows}</tbody></table></div>`);
   }
 
   let lifetimeReport, mistakePage = 0, allTopics = false, lastOwner = null, clearOwner = null;
@@ -269,6 +284,10 @@
     } catch {
       if (ownRequest !== requestId || reportOwner() !== expectedOwner) return;
       const note = byId('analytics-storage-note'); note.hidden = false;
+      if (!isReport) {
+        document.querySelectorAll('.testing-unstarted').forEach(node => { node.textContent = 'Progres indisponibil'; });
+        put('testing-activity', '<p class="analytics-loading">Activitatea nu a putut fi încărcată.</p>');
+      }
       note.textContent = 'Statisticile nu au putut fi încărcate. Reîncarcă pagina pentru a încerca din nou. Grilele rămân disponibile din Testare.';
     } finally { if (ownRequest === requestId) document.body.dataset.analyticsReady = 'true'; }
   }

@@ -46,14 +46,17 @@
     for (const row of results[0].data || []) {
       if (row.user_id !== id || row.version !== 1 || !validState('bb.study.v1', row.state)) throw Error('Invalid study state');
       remote['bb.study.v1'] = row.state;
+      remoteRevisions.set(id + ':bb.study.v1', row.revision);
     }
     for (const row of results[1].data || []) {
       if (!quizzes.has(row.quiz_key)) continue; // Future quizzes remain untouched in cloud.
       if (row.user_id !== id || row.version !== quizzes.get(row.quiz_key).version || !validState(row.quiz_key, row.state)) throw Error('Unsupported quiz state');
       remote[row.quiz_key] = row.state;
+      remoteRevisions.set(id + ':' + row.quiz_key,row.revision);
     }
     for (const row of results[2].data || []) {
       if (row.user_id !== id) throw Error('Invalid note owner');
+      remoteRevisions.set(id + ':' + noteKey(row),row.revision);
       remote[noteKey(row)] = {chapter_num:row.chapter_num, section_id:row.section_id, body:row.body, created_at:row.created_at, updated_at:row.updated_at};
     }
     if (personal) {
@@ -109,12 +112,15 @@
           // Fallback for browsers without Web Locks: don't roll back a record
           // changed/acknowledged in another tab while this SELECT was in flight.
           const afterRead = storage.snapshot();
+          const skip = new Set();
           for (const key of Object.keys(afterRead.values)) {
             if (personal?.isKey(key)) continue; // Merge against the actual cloud value; preserve in-flight offline edits.
             if (JSON.stringify(afterRead.values[key]) !== JSON.stringify(beforeRead.values[key]) ||
-                afterRead.pending[key] !== beforeRead.pending[key]) remote[key] = afterRead.values[key];
+                afterRead.pending[key] !== beforeRead.pending[key]) {
+              if (!afterRead.pending[key]) skip.add(key);
+            }
           }
-          if (storage.hydrate(remote) === false) return;
+          if (storage.hydrate(remote, skip) === false) return;
           loadedOwner = id;
           document.dispatchEvent(new CustomEvent("bb:cloud-hydrated"));
         }
@@ -148,19 +154,28 @@
             }
             continue;
           }
-          const record = rowFor(key, data.values[key], id);
-          if (record.table === 'notes') await window.BBNoteMedia?.flush(record.row.body, id);
-          if (!validIdentity(id, generation)) return;
-          const result = await client.from(record.table).upsert(record.row, {onConflict:record.conflict});
-          if (!validIdentity(id, generation)) return;
-          if (result.error) throw Error('Cloud write failed');
-          const latestValue = storage.get(key);
-          if (JSON.stringify(latestValue) !== JSON.stringify(data.values[key]) && latestValue != null) {
-            // Without Web Locks an older request can finish after a newer tab's
-            // already-acknowledged request. Requeue the latest local intent.
-            storage.set(key, latestValue);
-            again = true;
-          } else storage.acknowledge(key, revision);
+          for (let attempt = 0; attempt < 5; attempt++) {
+            const pending = storage.snapshot().pending[key];
+            if (!pending || !validIdentity(id,generation)) break;
+            const value = storage.get(key);
+            const record = rowFor(key,value,id);
+            if (record.table === 'notes') await window.BBNoteMedia?.flush(record.row.body,id);
+            if (!validIdentity(id,generation)) return;
+            const result = await client.rpc('bb_put_account_state', {p_owner:id,p_key:key,p_payload:value,p_expected:remoteRevisions.get(id + ':' + key) || 0});
+            if (!validIdentity(id,generation)) return;
+            if (result.error || !result.data?.record) throw Error('Cloud write failed');
+            const row = result.data.record;
+            if (row.user_id !== id || !Number.isSafeInteger(row.revision) || row.revision < 1 ||
+                (record.table === 'quiz_states' && row.quiz_key !== key) ||
+                (record.table === 'notes' && noteKey(row) !== key)) throw Error('Invalid cloud response');
+            const incoming = record.table === 'notes'
+              ? {chapter_num:row.chapter_num,section_id:row.section_id,body:row.body,created_at:row.created_at,updated_at:row.updated_at} : row.state;
+            if (record.table !== 'notes' && !validState(key,incoming)) throw Error('Unsupported cloud response');
+            remoteRevisions.set(id + ':' + key,row.revision);
+            storage.acceptState(key,incoming,pending,result.data.accepted ? value : undefined);
+            if (result.data.accepted) break;
+            if (attempt === 4) throw Error('Concurrent cloud writes; retry');
+          }
         }
       }
       if (navigator.locks?.request) await navigator.locks.request('bb-cloud-sync:' + id, cycle); else await cycle();

@@ -33,9 +33,15 @@
     return client;
   }
   function redirect(recovery) {
-    const local = ['localhost','127.0.0.1'].includes(location.hostname);
-    const url = local ? callback : new URL('https://danghg18.github.io/bio-barrons-umf/cont.html');
-    return url.href + (recovery ? '?flow=recovery' : '');
+    // Resolve beside the current page: preserve deployment subpath and edition.
+    // Never consume a URL supplied through query strings or auth fragments.
+    const local = ['localhost','127.0.0.1','[::1]'].includes(callback.hostname);
+    if (callback.protocol !== 'https:' && !(callback.protocol === 'http:' && local)) {
+      throw Error('Authentication callbacks require HTTPS (except local development)');
+    }
+    const url = new URL(callback.href);
+    if (recovery) url.searchParams.set('flow', 'recovery');
+    return url.href;
   }
   window.BBSupabase = {get, redirect};
 }());

@@ -36,7 +36,6 @@ for (const file of files) {
     `<link rel="stylesheet" href="transitions.css?v=${version}">`,
     `<link rel="stylesheet" href="study.css?v=20261002-catalog1">`,
     `<link rel="stylesheet" href="../assets/css/site-header.css?v=20261002-header2">`,
-    file === 'cont.html' ? `<script src="auth-redirect.js?v=${version}"></script>` : '',
     '</head>'
   ].filter(Boolean).join('\n'));
   html = html.replace('</body>', [

@@ -42,7 +42,7 @@ async function newPage(context) {
   const page = await context.newPage();
   page.on('pageerror', error => errors.push(`${page.url()}: ${error.message}`));
   page.on('console', message => {
-    if (message.type() === 'error' && !/fonts\.(googleapis|gstatic)\.com/.test(message.text())) errors.push(`${page.url()}: ${message.text()}`);
+    if (message.type() === 'error' && !/fonts\.(googleapis|gstatic)\.com/.test(message.location().url || message.text())) errors.push(`${page.url()}: ${message.text()}`);
   });
   return page;
 }
@@ -74,6 +74,19 @@ try {
   await page.goto(base+file); await page.evaluate(()=>document.fonts.ready);
   // The feedback legend is new interface copy; retain the existing educational-text baseline.
   const sections = await page.evaluate(()=>[...document.querySelectorAll('.page-section')].map(x=>{const copy=x.cloneNode(true);copy.querySelectorAll('.quiz-feedback-guide').forEach(node=>node.remove());return {id:x.id,text:copy.textContent.replace(/\s+/g,' ').trim(),images:[...x.querySelectorAll('img')].map(i=>i.getAttribute('src')),tables:[...x.querySelectorAll('table')].map(t=>t.textContent.replace(/\s+/g,' ').trim())};}));
+  // A transferred quiz range is a bookmark redirect to another document, not a
+  // local section. Sweep every local route here; transfer and worker tests follow
+  // the configured external destinations and verify their question inventories.
+  const redirects = await page.evaluate(() => {
+   const quiz = window.BB_QUIZ || window.BB_NERVOUS_QUIZ;
+   return [...document.querySelectorAll('.page-section')]
+    .filter(section => Object.hasOwn(quiz?.redirectRoutes || {}, section.id.slice(5)))
+    .map(section => ({id:section.id, destination:quiz.redirectRoutes[section.id.slice(5)],
+     questions:section.querySelectorAll('.quiz-question').length,
+     links:[...section.querySelectorAll('a')].map(link => link.getAttribute('href'))}));
+  });
+  if (redirects.some(section => section.questions || !section.links.includes(section.destination))) errors.push(file + ': malformed quiz transfer shell');
+  const localSections = sections.filter(section => !redirects.some(redirect => redirect.id === section.id));
   if (protectedQuizzes[file]) {
    const quiz = await page.evaluate(() => {
     const data = window.BB_QUIZ || window.BB_NERVOUS_QUIZ;
@@ -96,7 +109,7 @@ try {
   report.fonts[file]=font;if(!font.figtree||!font.fraunces||!font.body.includes('Figtree'))errors.push(file+': fonts did not load');
   for (const [width,height] of viewports) {
    await resize(page, {width,height});
-   for (const section of sections.length?sections:[{id:null}]) {
+   for (const section of localSections.length?localSections:[{id:null}]) {
     if(section.id)await page.evaluate(id=>{const r=id.slice(5);if(window.BBLessonNavigation)BBLessonNavigation.navigate(r,{focus:false});else window.goto(r);},section.id);
     const geometry=await page.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth+1,tableErrors:[...document.querySelectorAll('.page-section.active table')].filter(t=>{const stacked=t.classList.contains('bb-table-stacked');const wrapper=t.closest('.table-wrap');if(stacked)return innerWidth<=640?(getComputedStyle(t).display!=='block'||t.getBoundingClientRect().width>wrapper.getBoundingClientRect().width+1):getComputedStyle(t).display!=='table';return wrapper.tabIndex!==0||wrapper.getAttribute('role')!=='region'||!wrapper.getAttribute('aria-label')||(innerWidth<=640&&wrapper.scrollWidth<=wrapper.clientWidth+1);}).length,broken:[...document.querySelectorAll('img')].filter(i=>i.complete&&!i.naturalWidth).map(i=>i.src)}));
     if(geometry.overflow||geometry.tableErrors||geometry.broken.length)errors.push(file+' '+section.id+' @'+width+': '+JSON.stringify(geometry));

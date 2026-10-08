@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import vm from 'node:vm';
 
-// Stale SELECTs and late upserts must preserve another tab's acknowledged edit.
+// Stale SELECTs and late CAS responses must preserve another tab's acknowledged edit.
 // All storage, locks, and requests below are in memory; no real account is used.
 const source = await Promise.all(['user-storage', 'cloud-sync'].map(name =>
   readFile(new URL('../assets/js/' + name + '.js', import.meta.url), 'utf8')));
@@ -13,6 +13,7 @@ async function runScenario(useLocks, race = 'read') {
   const before = {version:1, lessons:{}, lastVisited:null};
   const after = {version:1, lessons:{1:{completedSections:['home'], updatedAt:'2026-09-11T12:00:00Z'}}, lastVisited:null};
   let remote = structuredClone(before);
+  let cloudRevision = 1;
   let releaseRead;
   const delayedRead = new Promise(resolve => { releaseRead = resolve; });
   let readStarted = false;
@@ -45,7 +46,7 @@ async function runScenario(useLocks, race = 'read') {
       select:() => ({eq:async (_column, id) => {
         assert.equal(id, owner);
         const data = table === 'study_state'
-          ? [{user_id:owner, version:1, state:structuredClone(remote)}] : [];
+          ? [{user_id:owner, version:1, revision:cloudRevision, state:structuredClone(remote)}] : [];
         if (table === 'study_state' && delay && race === 'read') {
           delay = false;
           readStarted = true;
@@ -53,19 +54,14 @@ async function runScenario(useLocks, race = 'read') {
         }
         return {data, error:null};
       }}),
-      upsert:async row => {
-        assert.equal(table, 'study_state');
-        assert.equal(row.user_id, owner);
-        if (delay && race === 'write') {
-          delay = false;
-          writeStarted = true;
-          await delayedRead;
-        }
-        remote = structuredClone(row.state);
-        writes++;
-        return {error:null};
-      }
     })};
+    client.rpc = async (name,args) => {
+      assert.equal(name,'bb_put_account_state'); assert.equal(args.p_owner,owner);
+      if (delay && race === 'write') { delay=false; writeStarted=true; await delayedRead; }
+      if (args.p_expected !== cloudRevision) return {data:{accepted:false,record:{user_id:owner,version:1,revision:cloudRevision,state:structuredClone(remote)}}};
+      remote=structuredClone(args.p_payload);cloudRevision++;writes++;
+      return {data:{accepted:true,record:{user_id:owner,version:1,revision:cloudRevision,state:structuredClone(remote)}}};
+    };
     // Controlled timers let the final settle drive any required repair flush.
     const context = vm.createContext({window, document, CustomEvent,
       navigator:{onLine:true, ...(useLocks ? {locks:{request:requestLock}} : {})},
@@ -100,7 +96,7 @@ async function runScenario(useLocks, race = 'read') {
     await settleUntil(() => a.BBCloudSync.getState().status === 'synced', 'Tab A should hydrate before editing');
     a.BBUserStorage.set('bb.study.v1', {...before, lastVisited:{chapterNum:1, sectionId:'intro'}});
     firstSync = a.BBCloudSync.retry();
-    await settleUntil(() => writeStarted, 'Tab A should start its delayed upsert');
+    await settleUntil(() => writeStarted, 'Tab A should start its delayed CAS write');
   }
   b.BBUserStorage.set('bb.study.v1', after);
   let secondFinished = false;

@@ -545,3 +545,20 @@ body.bm-catalog .analytics-storage-note {max-width:1040px;}
  body.bm-catalog .testing-start {font-size:0;}
  body.bm-catalog .testing-start>span {font-size:18px;display:flex;align-items:center;justify-content:center;width:28px;height:28px;background:var(--ui-soft);border-radius:50%;}
 }
+
+/* A quiet calendar of actual practice, with a text equivalent for every value. */
+body.bm-catalog .testing-preview {padding:22px 24px 8px;background:var(--ui-paper);}
+body.bm-catalog .testing-preview-head {border:0;padding-bottom:4px;}
+body.bm-catalog .testing-preview-head h2 {font-size:18px;font-weight:600;}
+body.bm-catalog .testing-preview-summary {margin:20px 0 24px;}
+body.bm-catalog .testing-progress-count {align-items:center;gap:16px;}
+body.bm-catalog .testing-progress-count strong {font-size:44px;font-variant-numeric:tabular-nums;}
+body.bm-catalog .testing-progress-count span {max-width:180px;font-size:13px;}
+body.bm-catalog .testing-preview-summary .analytics-progress {height:6px;margin-top:16px;}
+.testing-activity-total {display:flex;justify-content:space-between;gap:12px;margin:12px 0;color:var(--ui-muted);font-size:12px;font-variant-numeric:tabular-nums;}
+.testing-activity-total strong {color:var(--ui-ink);font-size:16px;font-weight:600;}
+.testing-activity-strip {display:grid;grid-template-columns:repeat(30,minmax(0,1fr));gap:4px;align-items:end;height:54px;}
+.testing-activity-day {display:block;height:3px;background:var(--ui-line);border-radius:3px;}
+.testing-activity-day.is-active {height:max(5px,var(--activity-height));background:var(--ui-accent,#426756);}
+.testing-activity-range {display:flex;justify-content:space-between;margin-top:8px;color:var(--ui-muted);font-size:11px;}
+@media(max-width:700px) {body.bm-catalog .testing-preview {padding:20px 18px 6px;}.testing-activity-strip {gap:3px;}}

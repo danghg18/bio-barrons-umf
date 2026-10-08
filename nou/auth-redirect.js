@@ -1,7 +1,2 @@
-// Local preview callbacks retain the query/fragment until the existing account page handles them.
-if (location.search || location.hash) {
-  const accountDestination = new URL('../cont.html', location.href);
-  accountDestination.search = location.search;
-  accountDestination.hash = location.hash;
-  location.replace(accountDestination.href);
-}
+// Retired compatibility asset. The Softly account page now handles its own callback.
+// Keep this URL harmless for previously cached pages that still load it.

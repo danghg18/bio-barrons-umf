@@ -489,7 +489,16 @@ try {
           storageKey:quiz?.storageKey,
           numbers:[...document.querySelectorAll('.quiz-question')].map(card => Number(card.id.slice('grila-'.length))),
           ranges:quiz?.ranges || [],
-          sectionIds:[...document.querySelectorAll('.page-section')].map(section => section.id),
+          // Published redirect shells preserve old bookmarks after a transfer;
+          // they are not ranges in this quiz and must contain no questions.
+          sectionIds:[...document.querySelectorAll('.page-section')]
+            .filter(section => !Object.hasOwn(quiz?.redirectRoutes || {}, section.id.slice(5)))
+            .map(section => section.id),
+          redirectedSections:[...document.querySelectorAll('.page-section')]
+            .filter(section => Object.hasOwn(quiz?.redirectRoutes || {}, section.id.slice(5)))
+            .map(section => ({route:section.id.slice(5), destination:quiz.redirectRoutes[section.id.slice(5)],
+              questions:section.querySelectorAll('.quiz-question').length,
+              links:[...section.querySelectorAll('a')].map(link => link.getAttribute('href'))})),
           missingWhy:[...document.querySelectorAll('.quiz-question')].filter(card => {
             const explanations = [...card.querySelectorAll('.quiz-option-explanation > p:first-of-type')];
             return explanations.length !== 5 || explanations.some(node => !node.textContent.trim());
@@ -498,6 +507,7 @@ try {
       });
       const expectedNumbers = sourceNumbers(set);
       if (state.fatal || state.storageKey !== set.storageKey || JSON.stringify(state.numbers) !== JSON.stringify(expectedNumbers)) errors.push(`${file}: updated worker offline quiz count/source numbering/storage identity differs`);
+      if (state.redirectedSections.some(section => section.questions || !section.links.includes(section.destination) || state.ranges.some(range => range.id === section.route))) errors.push(`${file}: updated worker offline redirect shell differs from configured transfer`);
       if (state.missingWhy.length) errors.push(`${file}: updated worker missing five explanations: ${state.missingWhy.join(', ')}`);
       const rangedNumbers = state.ranges.flatMap(range => Array.from({length:range.end - range.start + 1}, (_, index) => range.start + index));
       if (JSON.stringify(rangedNumbers) !== JSON.stringify(expectedNumbers) || state.ranges.some(range => range.end < range.start || range.end - range.start >= 10) || JSON.stringify(state.sectionIds) !== JSON.stringify(state.ranges.map(range => 'page-' + range.id))) errors.push(`${file}: updated worker offline ranges differ from source`);
@@ -515,6 +525,12 @@ try {
         if (index) await upgradePage.locator(`.page-section.active .quiz-page-nav a[href="#${range.id}"]`).click();
         const active = upgradePage.locator('.page-section.active');
         if (await active.getAttribute('id') !== 'page-' + range.id || await active.locator('.quiz-question').count() !== range.end - range.start + 1) errors.push(`${file}: updated worker offline navigation failed for ${range.id}`);
+      }
+      for (const section of state.redirectedSections) {
+        await upgradePage.goto(base + file + '#' + section.route, {waitUntil:'domcontentloaded'});
+        await upgradePage.waitForURL(new URL(section.destination, base + file).href);
+        await upgradePage.waitForFunction(() => document.body.dataset.bbSharedReady === 'true');
+        if (!await upgradePage.locator('.page-section.active .quiz-question').count()) errors.push(`${file}: updated worker offline redirect has no destination questions for ${section.route}`);
       }
     }
   }
