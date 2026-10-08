@@ -22,6 +22,17 @@ function notify(win, key, newValue) {
   const event = new Event('storage'); Object.assign(event, {key, newValue}); win.dispatchEvent(event);
 }
 {
+  const disk = new Map();
+  let changes = 0;
+  const options = {beforeWrite(key,value) { if (disk.get(key) !== value) changes++; }};
+  const a = browser(disk, options), b = browser(disk, options);
+  a.adapter.set('bb.study.v1', study('guest'));
+  changes = 0;
+  a.adapter.set('bb.study.v1', study('guest'));
+  b.adapter.set('bb.study.v1', study('guest'));
+  equal(changes, 0, 'Identical guest writes across tabs do not trigger storage invalidations');
+}
+{
   const disk = new Map([['bb.study.v1', JSON.stringify(study('guest'))]]);
   const a = browser(disk);
   equal(a.adapter.get('bb.study.v1'), study('guest'), 'Existing raw guest state is imported');

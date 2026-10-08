@@ -55,7 +55,10 @@
     return {value:old.values?.[key] ?? null, revision:old.pending?.[key] || null};
   }
   function putRecord(key, value, pending, id = owner, base) {
-    write(recordName(key, id), JSON.stringify({value:clone(value), revision:pending || null, writer, ...(base !== undefined ? {base:clone(base)} : {})}));
+    // Guest data has no cloud outbox. Keep its legacy record stable: adding a
+    // per-tab writer/base makes identical writes trigger storage invalidations.
+    const sync = id === 'guest' ? {} : {writer, ...(base !== undefined ? {base:clone(base)} : {})};
+    write(recordName(key, id), JSON.stringify({value:clone(value), revision:pending || null, ...sync}));
   }
   function pendingRevision(key, saved, id = owner) {
     return saved.revision && read(ackName(key, id)) !== saved.revision ? saved.revision : null;
