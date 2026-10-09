@@ -34,8 +34,8 @@ try {
   await page.goto(base + 'testare.html');
   assert.equal(await page.getByRole('link', {name:'Vezi toate statisticile', exact:true}).count(), 1, 'Testare must link its analytics preview to the full report');
   await page.waitForFunction(() => document.body.dataset.analyticsReady === 'true');
-  assert.equal(await page.locator('.testing-chapter-row').count(), 17);
-  assert.equal(await page.locator('.testing-chapter-row :disabled').count(), 0, 'All 17 chapter sets are now published');
+  assert.equal(await page.locator('.testing-chapter-row').count(), 18);
+  assert.equal(await page.locator('.testing-chapter-row :disabled').count(), 0, 'All 18 quiz sets are published');
   assert.equal(await page.locator('#testing-quiz-8').getAttribute('href'), 'grile_tesutul_muscular.html');
   assert.equal(await page.locator('#testing-activity .chart-no-data').isVisible(),true,'The restored activity preview honestly shows an empty history');
   assert.equal(await page.locator('#testing-activity svg').count(),0,'No activity is invented for a fresh student');

@@ -2345,5 +2345,866 @@
       "dg-079": "organele-anexe",
       "dg-080": "organele-anexe"
     }
+  },
+  "bb.quiz.asociative.v1": {
+    "topics": [
+      {
+        "id": "introducere-anatomie-fiziologie-topografie",
+        "label": "Topografie și termeni anatomici",
+        "lessonUrl": "introducere_anatomie_fiziologie.html#termeni"
+      },
+      {
+        "id": "introducere-anatomie-fiziologie-cavitati",
+        "label": "Cavitățile corpului",
+        "lessonUrl": "introducere_anatomie_fiziologie.html#cavitati"
+      },
+      {
+        "id": "sistemul-reproducator-masculin-masculin",
+        "label": "Reproducerea masculină și reglarea hormonală",
+        "lessonUrl": "sistemul_reproducator_masculin.html#hormoni"
+      },
+      {
+        "id": "sistemul-reproducator-masculin-spermatozoid",
+        "label": "Structura spermatozoidului",
+        "lessonUrl": "sistemul_reproducator_masculin.html#testiculele"
+      },
+      {
+        "id": "introducere-anatomie-fiziologie-functii",
+        "label": "Funcțiile organismului",
+        "lessonUrl": "introducere_anatomie_fiziologie.html#functii"
+      },
+      {
+        "id": "sistemul-reproducator-feminin-feminin",
+        "label": "Reproducerea feminină și sarcina",
+        "lessonUrl": "sistemul_reproducator_feminin.html#fiziologie"
+      },
+      {
+        "id": "organele-de-simt-ureche",
+        "label": "Urechea și auzul",
+        "lessonUrl": "organele_de_simt.html#urechea-si-auzul"
+      },
+      {
+        "id": "sistemul-digestiv-stomac",
+        "label": "Stomacul",
+        "lessonUrl": "sistemul_digestiv.html#stomacul"
+      },
+      {
+        "id": "sistemul-reproducator-feminin-uter",
+        "label": "Organele reproducătoare feminine",
+        "lessonUrl": "sistemul_reproducator_feminin.html#organe"
+      },
+      {
+        "id": "celula-si-fiziologia-celulara-celula",
+        "label": "Structura celulelor",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#structura"
+      },
+      {
+        "id": "sistemul-endocrin-calciu",
+        "label": "Calciul și reglarea endocrină",
+        "lessonUrl": "sistemul_endocrin.html#glandele-paratiroide"
+      },
+      {
+        "id": "sistemul-digestiv-digestiv",
+        "label": "Tractul gastrointestinal",
+        "lessonUrl": "sistemul_digestiv.html#tractul-gastrointestinal"
+      },
+      {
+        "id": "celula-si-fiziologia-celulara-transport",
+        "label": "Transportul prin membrane",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#transport"
+      },
+      {
+        "id": "sistemul-renal-complet-renal",
+        "label": "Rinichiul și reglarea diurezei",
+        "lessonUrl": "sistemul_renal_complet.html#hormoni"
+      },
+      {
+        "id": "celula-si-fiziologia-celulara-mitocondrii",
+        "label": "Metabolismul energetic celular",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#energie"
+      },
+      {
+        "id": "sistemul-cardiovascular-cardiac",
+        "label": "Reglarea activității cardiace",
+        "lessonUrl": "sistemul_cardiovascular.html#muschiul-cardiac"
+      },
+      {
+        "id": "sistemul-respirator-respirator",
+        "label": "Reglarea respirației și a căilor aeriene",
+        "lessonUrl": "sistemul_respirator.html#respiratie"
+      },
+      {
+        "id": "metabolism-si-nutritie-metabolism",
+        "label": "Metabolismul în stările de nutriție",
+        "lessonUrl": "metabolism_si_nutritie.html#stari-si-minerale"
+      },
+      {
+        "id": "sangele-eritrocite",
+        "label": "Eritrocitele și eritropoieza",
+        "lessonUrl": "sangele.html#globulele-rosii"
+      },
+      {
+        "id": "tesutul-nervos-sinapsa",
+        "label": "Sinapsele și neurotransmițătorii",
+        "lessonUrl": "tesutul_nervos.html#sinapsa"
+      },
+      {
+        "id": "organele-de-simt-simturi",
+        "label": "Receptori și organe de simț",
+        "lessonUrl": "organele_de_simt.html#alte-simturi"
+      },
+      {
+        "id": "tesutul-muscular-muschi",
+        "label": "Țesutul muscular și controlul său",
+        "lessonUrl": "tesutul_muscular.html#tesutul-muscular"
+      },
+      {
+        "id": "sistemul-limfatic-si-imun-limfatic",
+        "label": "Structuri limfatice și imunitate",
+        "lessonUrl": "sistemul_limfatic_si_imun.html#sistemul-limfatic"
+      },
+      {
+        "id": "sistemul-endocrin-endocrin",
+        "label": "Hormonii și mecanismele lor de acțiune",
+        "lessonUrl": "sistemul_endocrin.html#descrierea-generala-a-hormonilor"
+      },
+      {
+        "id": "sistemul-respirator-anatomie",
+        "label": "Alveolele pulmonare",
+        "lessonUrl": "sistemul_respirator.html#anatomie"
+      },
+      {
+        "id": "celula-si-fiziologia-celulara-membrana",
+        "label": "Proteinele membranei",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#membrana"
+      },
+      {
+        "id": "oasele-si-articulatiile-osul",
+        "label": "Calciul și țesutul osos",
+        "lessonUrl": "oasele_si_articulatiile.html#osul"
+      },
+      {
+        "id": "sangele-globulele-rosii",
+        "label": "Proteine care leagă oxigenul",
+        "lessonUrl": "sangele.html#globulele-rosii"
+      },
+      {
+        "id": "celula-si-fiziologia-celulara-nucleu",
+        "label": "Nucleul celular",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#nucleu"
+      },
+      {
+        "id": "sistemul-digestiv-intestinele",
+        "label": "Digestia dizaharidelor",
+        "lessonUrl": "sistemul_digestiv.html#intestinele"
+      },
+      {
+        "id": "sistemul-endocrin-glandele-paratiroide",
+        "label": "Reglarea hormonală a osului",
+        "lessonUrl": "sistemul_endocrin.html#glandele-paratiroide"
+      },
+      {
+        "id": "sistemul-reproducator-feminin-organe",
+        "label": "Funcția endocrină a gonadelor",
+        "lessonUrl": "sistemul_reproducator_feminin.html#organe"
+      },
+      {
+        "id": "introducere-anatomie-fiziologie-termeni",
+        "label": "Raporturi anatomice",
+        "lessonUrl": "introducere_anatomie_fiziologie.html#termeni"
+      },
+      {
+        "id": "sistemul-endocrin-hipofiza-glanda-pituitara",
+        "label": "GnRH și gonadotropinele",
+        "lessonUrl": "sistemul_endocrin.html#hipofiza-glanda-pituitara"
+      },
+      {
+        "id": "organele-de-simt-alte-simturi",
+        "label": "Calea gustativă",
+        "lessonUrl": "organele_de_simt.html#alte-simturi"
+      },
+      {
+        "id": "sistemul-reproducator-masculin-ducte",
+        "label": "Funcțiile organelor genitale",
+        "lessonUrl": "sistemul_reproducator_masculin.html#ducte"
+      },
+      {
+        "id": "celula-si-fiziologia-celulara-organite",
+        "label": "Organitele și funcțiile lor",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#organite"
+      },
+      {
+        "id": "sistemul-respirator-schimbul-de-gaze",
+        "label": "Bicarbonatul",
+        "lessonUrl": "sistemul_respirator.html#schimbul-de-gaze"
+      },
+      {
+        "id": "sistemul-digestiv-organele-anexe",
+        "label": "Proteazele pancreatice",
+        "lessonUrl": "sistemul_digestiv.html#organele-anexe"
+      },
+      {
+        "id": "sistemul-cardiovascular-tipuri-de-circulatie-sanguina",
+        "label": "Asocieri anatomice și endocrine",
+        "lessonUrl": "sistemul_cardiovascular.html#tipuri-de-circulatie-sanguina"
+      },
+      {
+        "id": "sistemul-nervos-sistem-nervos-central",
+        "label": "Diencefalul",
+        "lessonUrl": "sistemul_nervos.html#sistem-nervos-central"
+      },
+      {
+        "id": "metabolism-si-nutritie-rata-si-temperatura",
+        "label": "Metabolismul bazal",
+        "lessonUrl": "metabolism_si_nutritie.html#rata-si-temperatura"
+      },
+      {
+        "id": "sistemul-endocrin-descrierea-generala-a-hormonilor",
+        "label": "Mesageri hormonali",
+        "lessonUrl": "sistemul_endocrin.html#descrierea-generala-a-hormonilor"
+      },
+      {
+        "id": "sistemul-nervos-sistem-nervos-periferic",
+        "label": "Originea nervilor cranieni",
+        "lessonUrl": "sistemul_nervos.html#sistem-nervos-periferic"
+      },
+      {
+        "id": "tesutul-nervos-organizare",
+        "label": "Celule cu activitate fagocitară",
+        "lessonUrl": "tesutul_nervos.html#organizare"
+      },
+      {
+        "id": "tesutul-muscular-tesutul-muscular",
+        "label": "Localizarea mușchiului neted",
+        "lessonUrl": "tesutul_muscular.html#tesutul-muscular"
+      },
+      {
+        "id": "sistemul-nervos-sistem-nervos-autonom",
+        "label": "Sistemul parasimpatic",
+        "lessonUrl": "sistemul_nervos.html#sistem-nervos-autonom"
+      },
+      {
+        "id": "tesutul-muscular-muschiul-striat",
+        "label": "Banda I a sarcomerului",
+        "lessonUrl": "tesutul_muscular.html#muschiul-striat"
+      },
+      {
+        "id": "oasele-si-articulatiile-articulatii",
+        "label": "Mișcări articulare",
+        "lessonUrl": "oasele_si_articulatiile.html#articulatii"
+      },
+      {
+        "id": "metabolism-si-nutritie-lipide-si-proteine",
+        "label": "Ureea și metabolismul azotului",
+        "lessonUrl": "metabolism_si_nutritie.html#lipide-si-proteine"
+      },
+      {
+        "id": "metabolism-si-nutritie-metabolismul-glucidelor",
+        "label": "Roluri enzimatice",
+        "lessonUrl": "metabolism_si_nutritie.html#metabolismul-glucidelor"
+      },
+      {
+        "id": "sistemul-cardiovascular-circulatia-coronariana",
+        "label": "Circulația coronariană",
+        "lessonUrl": "sistemul_cardiovascular.html#circulatia-coronariana"
+      },
+      {
+        "id": "sistemul-renal-complet-nefron",
+        "label": "Transportul tubular renal",
+        "lessonUrl": "sistemul_renal_complet.html#nefron"
+      },
+      {
+        "id": "sangele-globulele-albe",
+        "label": "Morfologia leucocitelor",
+        "lessonUrl": "sangele.html#globulele-albe"
+      },
+      {
+        "id": "sistemul-reproducator-masculin-testiculele",
+        "label": "Scrotul",
+        "lessonUrl": "sistemul_reproducator_masculin.html#testiculele"
+      },
+      {
+        "id": "sistemul-cardiovascular-ciclul-cardiac",
+        "label": "Valvele în ciclul cardiac",
+        "lessonUrl": "sistemul_cardiovascular.html#ciclul-cardiac"
+      },
+      {
+        "id": "sistemul-limfatic-si-imun-sistemul-limfatic",
+        "label": "Capilarele limfatice",
+        "lessonUrl": "sistemul_limfatic_si_imun.html#sistemul-limfatic"
+      },
+      {
+        "id": "sistemul-limfatic-si-imun-splina",
+        "label": "Splina",
+        "lessonUrl": "sistemul_limfatic_si_imun.html#splina"
+      },
+      {
+        "id": "sistemul-renal-complet-hormoni",
+        "label": "Controlul hormonal renal",
+        "lessonUrl": "sistemul_renal_complet.html#hormoni"
+      },
+      {
+        "id": "sistemul-digestiv-stomacul",
+        "label": "Secreția și digestia gastrică",
+        "lessonUrl": "sistemul_digestiv.html#stomacul"
+      },
+      {
+        "id": "sistemul-reproducator-masculin-hormoni",
+        "label": "Hormonii sistemului reproducător masculin",
+        "lessonUrl": "sistemul_reproducator_masculin.html#hormoni"
+      },
+      {
+        "id": "sistemul-reproducator-feminin-fiziologie",
+        "label": "Hormonii sistemului reproducător feminin",
+        "lessonUrl": "sistemul_reproducator_feminin.html#fiziologie"
+      },
+      {
+        "id": "sistemul-endocrin-pancreasul",
+        "label": "Insulina",
+        "lessonUrl": "sistemul_endocrin.html#pancreasul"
+      },
+      {
+        "id": "metabolism-si-nutritie-stari-si-minerale",
+        "label": "Vitaminele",
+        "lessonUrl": "metabolism_si_nutritie.html#stari-si-minerale"
+      },
+      {
+        "id": "organele-de-simt-urechea-si-auzul",
+        "label": "Asocieri senzoriale",
+        "lessonUrl": "organele_de_simt.html#urechea-si-auzul"
+      },
+      {
+        "id": "sistemul-cardiovascular-vasele-sanguine",
+        "label": "Rolurile circulației",
+        "lessonUrl": "sistemul_cardiovascular.html#vasele-sanguine"
+      },
+      {
+        "id": "tesutul-nervos-fiziologia-nervilor",
+        "label": "Potențialul de acțiune",
+        "lessonUrl": "tesutul_nervos.html#fiziologia-nervilor"
+      },
+      {
+        "id": "sangele-coagularea-sangelui",
+        "label": "Circulația și coagularea",
+        "lessonUrl": "sangele.html#coagularea-sangelui"
+      },
+      {
+        "id": "sistemul-endocrin-glandele-suprarenale",
+        "label": "Glandele suprarenale",
+        "lessonUrl": "sistemul_endocrin.html#glandele-suprarenale"
+      },
+      {
+        "id": "sistemul-respirator-respiratie",
+        "label": "Mușchii respiratori",
+        "lessonUrl": "sistemul_respirator.html#respiratie"
+      },
+      {
+        "id": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+        "label": "Celula și fiziologia celulară",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#organite"
+      },
+      {
+        "id": "oasele-si-articulatiile-oasele-si-articulatiile",
+        "label": "Oasele și articulațiile",
+        "lessonUrl": "oasele_si_articulatiile.html#osul"
+      },
+      {
+        "id": "sistemul-reproducator-masculin-sistemul-reproducator-masculin",
+        "label": "Sistemul reproducător masculin",
+        "lessonUrl": "sistemul_reproducator_masculin.html#hormoni"
+      },
+      {
+        "id": "sistemul-digestiv-sistemul-digestiv",
+        "label": "Sistemul digestiv",
+        "lessonUrl": "sistemul_digestiv.html#intestinele"
+      },
+      {
+        "id": "organele-de-simt-organele-de-simt",
+        "label": "Organele de simț",
+        "lessonUrl": "organele_de_simt.html#alte-simturi"
+      },
+      {
+        "id": "metabolism-si-nutritie-metabolism-si-nutritie",
+        "label": "Metabolism și nutriție",
+        "lessonUrl": "metabolism_si_nutritie.html#stari-si-minerale"
+      },
+      {
+        "id": "sistemul-nervos-sistemul-nervos",
+        "label": "Sistemul nervos",
+        "lessonUrl": "sistemul_nervos.html#sistem-nervos-central"
+      },
+      {
+        "id": "sistemul-endocrin-sistemul-endocrin",
+        "label": "Sistemul endocrin",
+        "lessonUrl": "sistemul_endocrin.html#glandele-suprarenale"
+      },
+      {
+        "id": "sistemul-renal-complet-sistemul-renal-complet",
+        "label": "Sistemul urinar",
+        "lessonUrl": "sistemul_renal_complet.html#nefron"
+      },
+      {
+        "id": "introducere-anatomie-fiziologie-introducere-anatomie-fiziologie",
+        "label": "Organizarea corpului uman",
+        "lessonUrl": "introducere_anatomie_fiziologie.html#organizare"
+      },
+      {
+        "id": "sistemul-respirator-sistemul-respirator",
+        "label": "Sistemul respirator",
+        "lessonUrl": "sistemul_respirator.html#anatomie"
+      },
+      {
+        "id": "sistemul-cardiovascular-sistemul-cardiovascular",
+        "label": "Sistemul cardiovascular",
+        "lessonUrl": "sistemul_cardiovascular.html#circulatia-sangelui-prin-inima"
+      },
+      {
+        "id": "sistemul-limfatic-si-imun-sistemul-limfatic-si-imun",
+        "label": "Sistemul limfatic și imun",
+        "lessonUrl": "sistemul_limfatic_si_imun.html#splina"
+      },
+      {
+        "id": "tesutul-nervos-tesutul-nervos",
+        "label": "Țesutul nervos",
+        "lessonUrl": "tesutul_nervos.html#organizare"
+      },
+      {
+        "id": "sangele-sangele",
+        "label": "Sângele",
+        "lessonUrl": "sangele.html#coagularea-sangelui"
+      },
+      {
+        "id": "sistemul-reproducator-feminin-sistemul-reproducator-feminin",
+        "label": "Sistemul reproducător feminin",
+        "lessonUrl": "sistemul_reproducator_feminin.html#fiziologie"
+      },
+      {
+        "id": "sangele-plasma",
+        "label": "Sângele și plasma",
+        "lessonUrl": "sangele.html#plasma"
+      },
+      {
+        "id": "tesutul-muscular-energia",
+        "label": "Energia contracției musculare",
+        "lessonUrl": "tesutul_muscular.html#energia"
+      },
+      {
+        "id": "organele-de-simt-ochiul-si-vederea",
+        "label": "Ochiul și vederea",
+        "lessonUrl": "organele_de_simt.html#ochiul-si-vederea"
+      },
+      {
+        "id": "sangele-grupele-sanguine",
+        "label": "Grupele sanguine",
+        "lessonUrl": "sangele.html#grupele-sanguine"
+      },
+      {
+        "id": "sistemul-endocrin-glanda-tiroida",
+        "label": "Glanda tiroidă",
+        "lessonUrl": "sistemul_endocrin.html#glanda-tiroida"
+      }
+    ],
+    "questionTopics": {
+      "asoc-001": "introducere-anatomie-fiziologie-topografie",
+      "asoc-002": "introducere-anatomie-fiziologie-cavitati",
+      "asoc-003": "sistemul-reproducator-masculin-masculin",
+      "asoc-004": "sistemul-reproducator-masculin-spermatozoid",
+      "asoc-005": "introducere-anatomie-fiziologie-cavitati",
+      "asoc-006": "introducere-anatomie-fiziologie-functii",
+      "asoc-007": "sistemul-reproducator-feminin-feminin",
+      "asoc-008": "introducere-anatomie-fiziologie-cavitati",
+      "asoc-009": "organele-de-simt-ureche",
+      "asoc-010": "sistemul-reproducator-feminin-feminin",
+      "asoc-011": "sistemul-digestiv-stomac",
+      "asoc-012": "sistemul-reproducator-feminin-uter",
+      "asoc-013": "introducere-anatomie-fiziologie-cavitati",
+      "asoc-014": "celula-si-fiziologia-celulara-celula",
+      "asoc-015": "sistemul-reproducator-feminin-feminin",
+      "asoc-016": "sistemul-endocrin-calciu",
+      "asoc-017": "sistemul-reproducator-masculin-masculin",
+      "asoc-018": "sistemul-digestiv-digestiv",
+      "asoc-019": "sistemul-digestiv-digestiv",
+      "asoc-020": "introducere-anatomie-fiziologie-cavitati",
+      "asoc-021": "celula-si-fiziologia-celulara-transport",
+      "asoc-022": "celula-si-fiziologia-celulara-celula",
+      "asoc-023": "sistemul-digestiv-digestiv",
+      "asoc-024": "sistemul-renal-complet-renal",
+      "asoc-025": "celula-si-fiziologia-celulara-mitocondrii",
+      "asoc-026": "sistemul-digestiv-digestiv",
+      "asoc-027": "sistemul-digestiv-digestiv",
+      "asoc-028": "celula-si-fiziologia-celulara-transport",
+      "asoc-029": "introducere-anatomie-fiziologie-cavitati",
+      "asoc-030": "sistemul-cardiovascular-cardiac",
+      "asoc-031": "sistemul-cardiovascular-cardiac",
+      "asoc-032": "sistemul-respirator-respirator",
+      "asoc-033": "metabolism-si-nutritie-metabolism",
+      "asoc-034": "sistemul-digestiv-stomac",
+      "asoc-035": "sistemul-digestiv-digestiv",
+      "asoc-036": "introducere-anatomie-fiziologie-cavitati",
+      "asoc-037": "sistemul-digestiv-stomac",
+      "asoc-038": "sangele-eritrocite",
+      "asoc-039": "sistemul-digestiv-digestiv",
+      "asoc-040": "sistemul-cardiovascular-cardiac",
+      "asoc-041": "metabolism-si-nutritie-metabolism",
+      "asoc-042": "metabolism-si-nutritie-metabolism",
+      "asoc-043": "celula-si-fiziologia-celulara-transport",
+      "asoc-044": "tesutul-nervos-sinapsa",
+      "asoc-045": "tesutul-nervos-sinapsa",
+      "asoc-046": "sistemul-renal-complet-renal",
+      "asoc-047": "sangele-eritrocite",
+      "asoc-048": "organele-de-simt-simturi",
+      "asoc-049": "organele-de-simt-simturi",
+      "asoc-050": "sistemul-cardiovascular-cardiac",
+      "asoc-051": "organele-de-simt-simturi",
+      "asoc-052": "organele-de-simt-simturi",
+      "asoc-053": "introducere-anatomie-fiziologie-cavitati",
+      "asoc-054": "celula-si-fiziologia-celulara-mitocondrii",
+      "asoc-055": "introducere-anatomie-fiziologie-cavitati",
+      "asoc-056": "celula-si-fiziologia-celulara-celula",
+      "asoc-057": "celula-si-fiziologia-celulara-celula",
+      "asoc-058": "tesutul-muscular-muschi",
+      "asoc-059": "tesutul-muscular-muschi",
+      "asoc-060": "sistemul-digestiv-digestiv",
+      "asoc-061": "metabolism-si-nutritie-metabolism",
+      "asoc-062": "sistemul-cardiovascular-cardiac",
+      "asoc-063": "sistemul-limfatic-si-imun-limfatic",
+      "asoc-064": "sistemul-endocrin-endocrin",
+      "asoc-065": "sistemul-cardiovascular-cardiac",
+      "asoc-066": "sistemul-digestiv-digestiv",
+      "asoc-067": "sistemul-limfatic-si-imun-limfatic",
+      "asoc-068": "sistemul-endocrin-endocrin",
+      "asoc-069": "metabolism-si-nutritie-metabolism",
+      "asoc-070": "tesutul-muscular-muschi",
+      "asoc-071": "metabolism-si-nutritie-metabolism",
+      "asoc-072": "sangele-eritrocite",
+      "asoc-073": "sistemul-respirator-respirator",
+      "asoc-074": "sangele-eritrocite",
+      "asoc-075": "sistemul-reproducator-masculin-masculin",
+      "asoc-076": "sistemul-respirator-respirator",
+      "asoc-077": "metabolism-si-nutritie-metabolism",
+      "asoc-078": "sistemul-endocrin-endocrin",
+      "asoc-079": "sangele-eritrocite",
+      "asoc-080": "tesutul-muscular-muschi",
+      "asoc-081": "sistemul-limfatic-si-imun-limfatic",
+      "asoc-082": "sangele-eritrocite",
+      "asoc-083": "sistemul-renal-complet-renal",
+      "asoc-084": "tesutul-muscular-muschi",
+      "asoc-085": "sistemul-endocrin-endocrin",
+      "asoc-086": "tesutul-muscular-muschi",
+      "asoc-087": "sistemul-limfatic-si-imun-limfatic",
+      "asoc-088": "sistemul-endocrin-endocrin",
+      "asoc-089": "sistemul-endocrin-endocrin",
+      "asoc-090": "organele-de-simt-simturi",
+      "asoc-091": "organele-de-simt-simturi",
+      "asoc-092": "metabolism-si-nutritie-metabolism",
+      "asoc-093": "sistemul-endocrin-endocrin",
+      "asoc-094": "introducere-anatomie-fiziologie-functii",
+      "asoc-095": "introducere-anatomie-fiziologie-cavitati",
+      "asoc-096": "sistemul-endocrin-endocrin",
+      "asoc-097": "sistemul-endocrin-endocrin",
+      "asoc-098": "sistemul-limfatic-si-imun-limfatic",
+      "asoc-099": "sistemul-endocrin-calciu",
+      "asoc-100": "introducere-anatomie-fiziologie-functii",
+      "asoc-101": "sistemul-respirator-anatomie",
+      "asoc-102": "celula-si-fiziologia-celulara-membrana",
+      "asoc-103": "oasele-si-articulatiile-osul",
+      "asoc-104": "sangele-globulele-rosii",
+      "asoc-105": "celula-si-fiziologia-celulara-nucleu",
+      "asoc-106": "sistemul-digestiv-intestinele",
+      "asoc-107": "sistemul-endocrin-glandele-paratiroide",
+      "asoc-108": "sistemul-digestiv-intestinele",
+      "asoc-109": "celula-si-fiziologia-celulara-transport",
+      "asoc-110": "sistemul-reproducator-feminin-organe",
+      "asoc-111": "introducere-anatomie-fiziologie-termeni",
+      "asoc-112": "sistemul-endocrin-hipofiza-glanda-pituitara",
+      "asoc-113": "organele-de-simt-alte-simturi",
+      "asoc-114": "sistemul-reproducator-masculin-ducte",
+      "asoc-115": "celula-si-fiziologia-celulara-organite",
+      "asoc-116": "sistemul-respirator-schimbul-de-gaze",
+      "asoc-117": "sistemul-digestiv-organele-anexe",
+      "asoc-118": "celula-si-fiziologia-celulara-membrana",
+      "asoc-119": "sistemul-cardiovascular-tipuri-de-circulatie-sanguina",
+      "asoc-120": "introducere-anatomie-fiziologie-functii",
+      "asoc-121": "sistemul-nervos-sistem-nervos-central",
+      "asoc-122": "metabolism-si-nutritie-rata-si-temperatura",
+      "asoc-123": "organele-de-simt-alte-simturi",
+      "asoc-124": "sistemul-endocrin-hipofiza-glanda-pituitara",
+      "asoc-125": "sistemul-endocrin-descrierea-generala-a-hormonilor",
+      "asoc-126": "sistemul-nervos-sistem-nervos-periferic",
+      "asoc-127": "sangele-globulele-rosii",
+      "asoc-128": "sistemul-nervos-sistem-nervos-central",
+      "asoc-129": "sistemul-digestiv-organele-anexe",
+      "asoc-130": "tesutul-nervos-organizare",
+      "asoc-131": "organele-de-simt-alte-simturi",
+      "asoc-132": "tesutul-muscular-tesutul-muscular",
+      "asoc-133": "sangele-globulele-rosii",
+      "asoc-134": "celula-si-fiziologia-celulara-nucleu",
+      "asoc-135": "sistemul-nervos-sistem-nervos-autonom",
+      "asoc-136": "sistemul-nervos-sistem-nervos-central",
+      "asoc-137": "tesutul-muscular-muschiul-striat",
+      "asoc-138": "sistemul-respirator-anatomie",
+      "asoc-139": "oasele-si-articulatiile-articulatii",
+      "asoc-140": "tesutul-muscular-muschiul-striat",
+      "asoc-141": "metabolism-si-nutritie-lipide-si-proteine",
+      "asoc-142": "metabolism-si-nutritie-metabolismul-glucidelor",
+      "asoc-143": "metabolism-si-nutritie-lipide-si-proteine",
+      "asoc-144": "sistemul-digestiv-intestinele",
+      "asoc-145": "metabolism-si-nutritie-lipide-si-proteine",
+      "asoc-146": "sistemul-cardiovascular-circulatia-coronariana",
+      "asoc-147": "sistemul-renal-complet-nefron",
+      "asoc-148": "oasele-si-articulatiile-osul",
+      "asoc-149": "sistemul-endocrin-glandele-paratiroide",
+      "asoc-150": "sangele-globulele-albe",
+      "asoc-151": "sistemul-reproducator-masculin-testiculele",
+      "asoc-152": "sistemul-cardiovascular-ciclul-cardiac",
+      "asoc-153": "sistemul-limfatic-si-imun-sistemul-limfatic",
+      "asoc-154": "sistemul-limfatic-si-imun-splina",
+      "asoc-155": "sistemul-cardiovascular-tipuri-de-circulatie-sanguina",
+      "asoc-156": "oasele-si-articulatiile-osul",
+      "asoc-157": "sistemul-cardiovascular-tipuri-de-circulatie-sanguina",
+      "asoc-158": "sistemul-nervos-sistem-nervos-autonom",
+      "asoc-159": "sistemul-renal-complet-hormoni",
+      "asoc-160": "sistemul-endocrin-descrierea-generala-a-hormonilor",
+      "asoc-161": "sistemul-respirator-schimbul-de-gaze",
+      "asoc-162": "tesutul-muscular-muschiul-striat",
+      "asoc-163": "sistemul-digestiv-stomacul",
+      "asoc-164": "sistemul-renal-complet-nefron",
+      "asoc-165": "sistemul-reproducator-masculin-hormoni",
+      "asoc-166": "sistemul-reproducator-feminin-fiziologie",
+      "asoc-167": "sistemul-cardiovascular-ciclul-cardiac",
+      "asoc-168": "sistemul-limfatic-si-imun-sistemul-limfatic",
+      "asoc-169": "sistemul-endocrin-pancreasul",
+      "asoc-170": "metabolism-si-nutritie-rata-si-temperatura",
+      "asoc-171": "metabolism-si-nutritie-stari-si-minerale",
+      "asoc-172": "sistemul-endocrin-pancreasul",
+      "asoc-173": "sistemul-reproducator-feminin-fiziologie",
+      "asoc-174": "sistemul-nervos-sistem-nervos-autonom",
+      "asoc-175": "sistemul-renal-complet-hormoni",
+      "asoc-176": "sistemul-reproducator-masculin-ducte",
+      "asoc-177": "organele-de-simt-urechea-si-auzul",
+      "asoc-178": "metabolism-si-nutritie-metabolismul-glucidelor",
+      "asoc-179": "sistemul-cardiovascular-vasele-sanguine",
+      "asoc-180": "sistemul-nervos-sistem-nervos-central",
+      "asoc-181": "oasele-si-articulatiile-articulatii",
+      "asoc-182": "sistemul-reproducator-masculin-hormoni",
+      "asoc-183": "metabolism-si-nutritie-lipide-si-proteine",
+      "asoc-184": "oasele-si-articulatiile-osul",
+      "asoc-185": "organele-de-simt-alte-simturi",
+      "asoc-186": "sistemul-nervos-sistem-nervos-autonom",
+      "asoc-187": "sangele-globulele-rosii",
+      "asoc-188": "tesutul-nervos-fiziologia-nervilor",
+      "asoc-189": "sangele-coagularea-sangelui",
+      "asoc-190": "sistemul-endocrin-hipofiza-glanda-pituitara",
+      "asoc-191": "sistemul-endocrin-hipofiza-glanda-pituitara",
+      "asoc-192": "tesutul-nervos-sinapsa",
+      "asoc-193": "metabolism-si-nutritie-lipide-si-proteine",
+      "asoc-194": "metabolism-si-nutritie-stari-si-minerale",
+      "asoc-195": "celula-si-fiziologia-celulara-organite",
+      "asoc-196": "sistemul-endocrin-glandele-suprarenale",
+      "asoc-197": "sistemul-cardiovascular-tipuri-de-circulatie-sanguina",
+      "asoc-198": "sistemul-nervos-sistem-nervos-central",
+      "asoc-199": "metabolism-si-nutritie-metabolismul-glucidelor",
+      "asoc-200": "sistemul-respirator-respiratie",
+      "asoc-201": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+      "asoc-202": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+      "asoc-203": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+      "asoc-204": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+      "asoc-205": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+      "asoc-206": "oasele-si-articulatiile-oasele-si-articulatiile",
+      "asoc-207": "sistemul-reproducator-masculin-sistemul-reproducator-masculin",
+      "asoc-208": "sistemul-digestiv-sistemul-digestiv",
+      "asoc-209": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+      "asoc-210": "organele-de-simt-organele-de-simt",
+      "asoc-211": "sistemul-digestiv-sistemul-digestiv",
+      "asoc-212": "metabolism-si-nutritie-metabolism-si-nutritie",
+      "asoc-213": "metabolism-si-nutritie-metabolism-si-nutritie",
+      "asoc-214": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+      "asoc-215": "tesutul-muscular-tesutul-muscular",
+      "asoc-216": "sistemul-nervos-sistemul-nervos",
+      "asoc-217": "organele-de-simt-organele-de-simt",
+      "asoc-218": "sistemul-endocrin-sistemul-endocrin",
+      "asoc-219": "sistemul-renal-complet-sistemul-renal-complet",
+      "asoc-220": "metabolism-si-nutritie-metabolism-si-nutritie",
+      "asoc-221": "introducere-anatomie-fiziologie-introducere-anatomie-fiziologie",
+      "asoc-222": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+      "asoc-223": "introducere-anatomie-fiziologie-introducere-anatomie-fiziologie",
+      "asoc-224": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+      "asoc-225": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+      "asoc-226": "introducere-anatomie-fiziologie-introducere-anatomie-fiziologie",
+      "asoc-227": "introducere-anatomie-fiziologie-introducere-anatomie-fiziologie",
+      "asoc-228": "sistemul-digestiv-sistemul-digestiv",
+      "asoc-229": "sistemul-renal-complet-sistemul-renal-complet",
+      "asoc-230": "introducere-anatomie-fiziologie-introducere-anatomie-fiziologie",
+      "asoc-231": "sistemul-respirator-sistemul-respirator",
+      "asoc-232": "introducere-anatomie-fiziologie-introducere-anatomie-fiziologie",
+      "asoc-233": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+      "asoc-234": "metabolism-si-nutritie-metabolism-si-nutritie",
+      "asoc-235": "sistemul-endocrin-sistemul-endocrin",
+      "asoc-236": "sistemul-renal-complet-sistemul-renal-complet",
+      "asoc-237": "sistemul-nervos-sistemul-nervos",
+      "asoc-238": "sistemul-nervos-sistemul-nervos",
+      "asoc-239": "sistemul-nervos-sistemul-nervos",
+      "asoc-240": "organele-de-simt-organele-de-simt",
+      "asoc-241": "sistemul-endocrin-sistemul-endocrin",
+      "asoc-242": "sistemul-endocrin-sistemul-endocrin",
+      "asoc-243": "sistemul-cardiovascular-sistemul-cardiovascular",
+      "asoc-244": "sistemul-cardiovascular-sistemul-cardiovascular",
+      "asoc-245": "sistemul-cardiovascular-sistemul-cardiovascular",
+      "asoc-246": "sistemul-limfatic-si-imun-sistemul-limfatic-si-imun",
+      "asoc-247": "sistemul-respirator-sistemul-respirator",
+      "asoc-248": "sistemul-digestiv-sistemul-digestiv",
+      "asoc-249": "metabolism-si-nutritie-metabolism-si-nutritie",
+      "asoc-250": "sistemul-renal-complet-sistemul-renal-complet",
+      "asoc-251": "introducere-anatomie-fiziologie-introducere-anatomie-fiziologie",
+      "asoc-252": "sistemul-reproducator-masculin-sistemul-reproducator-masculin",
+      "asoc-253": "sistemul-respirator-sistemul-respirator",
+      "asoc-254": "sistemul-respirator-sistemul-respirator",
+      "asoc-255": "sistemul-respirator-sistemul-respirator",
+      "asoc-256": "sistemul-digestiv-sistemul-digestiv",
+      "asoc-257": "sistemul-digestiv-sistemul-digestiv",
+      "asoc-258": "metabolism-si-nutritie-metabolism-si-nutritie",
+      "asoc-259": "metabolism-si-nutritie-metabolism-si-nutritie",
+      "asoc-260": "metabolism-si-nutritie-metabolism-si-nutritie",
+      "asoc-261": "sistemul-renal-complet-sistemul-renal-complet",
+      "asoc-262": "sistemul-renal-complet-sistemul-renal-complet",
+      "asoc-263": "sistemul-renal-complet-sistemul-renal-complet",
+      "asoc-264": "sistemul-cardiovascular-sistemul-cardiovascular",
+      "asoc-265": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+      "asoc-266": "tesutul-muscular-tesutul-muscular",
+      "asoc-267": "tesutul-nervos-tesutul-nervos",
+      "asoc-268": "sistemul-limfatic-si-imun-sistemul-limfatic-si-imun",
+      "asoc-269": "metabolism-si-nutritie-metabolism-si-nutritie",
+      "asoc-270": "sangele-sangele",
+      "asoc-271": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+      "asoc-272": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+      "asoc-273": "oasele-si-articulatiile-oasele-si-articulatiile",
+      "asoc-274": "oasele-si-articulatiile-oasele-si-articulatiile",
+      "asoc-275": "organele-de-simt-organele-de-simt",
+      "asoc-276": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+      "asoc-277": "introducere-anatomie-fiziologie-introducere-anatomie-fiziologie",
+      "asoc-278": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+      "asoc-279": "oasele-si-articulatiile-oasele-si-articulatiile",
+      "asoc-280": "oasele-si-articulatiile-oasele-si-articulatiile",
+      "asoc-281": "oasele-si-articulatiile-oasele-si-articulatiile",
+      "asoc-282": "oasele-si-articulatiile-oasele-si-articulatiile",
+      "asoc-283": "tesutul-muscular-tesutul-muscular",
+      "asoc-284": "tesutul-muscular-tesutul-muscular",
+      "asoc-285": "tesutul-nervos-tesutul-nervos",
+      "asoc-286": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+      "asoc-287": "oasele-si-articulatiile-oasele-si-articulatiile",
+      "asoc-288": "tesutul-muscular-tesutul-muscular",
+      "asoc-289": "tesutul-nervos-tesutul-nervos",
+      "asoc-290": "sistemul-nervos-sistemul-nervos",
+      "asoc-291": "sistemul-respirator-sistemul-respirator",
+      "asoc-292": "sangele-sangele",
+      "asoc-293": "sangele-sangele",
+      "asoc-294": "sistemul-renal-complet-sistemul-renal-complet",
+      "asoc-295": "sistemul-digestiv-sistemul-digestiv",
+      "asoc-296": "sistemul-nervos-sistemul-nervos",
+      "asoc-297": "tesutul-nervos-tesutul-nervos",
+      "asoc-298": "sangele-sangele",
+      "asoc-299": "sistemul-reproducator-feminin-sistemul-reproducator-feminin",
+      "asoc-300": "sistemul-renal-complet-sistemul-renal-complet",
+      "asoc-301": "sistemul-digestiv-organele-anexe",
+      "asoc-302": "sistemul-reproducator-feminin-organe",
+      "asoc-303": "celula-si-fiziologia-celulara-organite",
+      "asoc-304": "sistemul-reproducator-feminin-organe",
+      "asoc-305": "organele-de-simt-urechea-si-auzul",
+      "asoc-306": "introducere-anatomie-fiziologie-termeni",
+      "asoc-307": "oasele-si-articulatiile-articulatii",
+      "asoc-308": "tesutul-muscular-muschiul-striat",
+      "asoc-309": "organele-de-simt-urechea-si-auzul",
+      "asoc-310": "sistemul-endocrin-hipofiza-glanda-pituitara",
+      "asoc-311": "sistemul-endocrin-descrierea-generala-a-hormonilor",
+      "asoc-312": "sistemul-endocrin-hipofiza-glanda-pituitara",
+      "asoc-313": "sangele-plasma",
+      "asoc-314": "sangele-globulele-albe",
+      "asoc-315": "sistemul-cardiovascular-ciclul-cardiac",
+      "asoc-316": "tesutul-muscular-energia",
+      "asoc-317": "tesutul-muscular-muschiul-striat",
+      "asoc-318": "tesutul-nervos-organizare",
+      "asoc-319": "sistemul-nervos-sistem-nervos-central",
+      "asoc-320": "organele-de-simt-urechea-si-auzul",
+      "asoc-321": "introducere-anatomie-fiziologie-functii",
+      "asoc-322": "tesutul-muscular-muschiul-striat",
+      "asoc-323": "tesutul-muscular-muschiul-striat",
+      "asoc-324": "sistemul-nervos-sistem-nervos-autonom",
+      "asoc-325": "oasele-si-articulatiile-osul",
+      "asoc-326": "oasele-si-articulatiile-osul",
+      "asoc-327": "organele-de-simt-ochiul-si-vederea",
+      "asoc-328": "sistemul-nervos-sistem-nervos-central",
+      "asoc-329": "tesutul-nervos-organizare",
+      "asoc-330": "organele-de-simt-ochiul-si-vederea",
+      "asoc-331": "sistemul-endocrin-pancreasul",
+      "asoc-332": "sangele-grupele-sanguine",
+      "asoc-333": "sistemul-nervos-sistem-nervos-central",
+      "asoc-334": "sistemul-nervos-sistem-nervos-central",
+      "asoc-335": "sistemul-cardiovascular-vasele-sanguine",
+      "asoc-336": "sistemul-limfatic-si-imun-sistemul-limfatic",
+      "asoc-337": "sistemul-respirator-respiratie",
+      "asoc-338": "sistemul-endocrin-descrierea-generala-a-hormonilor",
+      "asoc-339": "sistemul-renal-complet-nefron",
+      "asoc-340": "sangele-globulele-albe",
+      "asoc-341": "sangele-plasma",
+      "asoc-342": "sistemul-respirator-respiratie",
+      "asoc-343": "sistemul-reproducator-feminin-organe",
+      "asoc-344": "sangele-globulele-albe",
+      "asoc-345": "sistemul-limfatic-si-imun-sistemul-limfatic",
+      "asoc-346": "sistemul-renal-complet-nefron",
+      "asoc-347": "sistemul-reproducator-masculin-testiculele",
+      "asoc-348": "sangele-plasma",
+      "asoc-349": "sistemul-respirator-schimbul-de-gaze",
+      "asoc-350": "sistemul-limfatic-si-imun-sistemul-limfatic",
+      "asoc-351": "sistemul-respirator-respiratie",
+      "asoc-352": "sistemul-cardiovascular-vasele-sanguine",
+      "asoc-353": "sistemul-respirator-respiratie",
+      "asoc-354": "sistemul-cardiovascular-ciclul-cardiac",
+      "asoc-355": "sistemul-digestiv-organele-anexe",
+      "asoc-356": "sistemul-cardiovascular-ciclul-cardiac",
+      "asoc-357": "sistemul-reproducator-feminin-fiziologie",
+      "asoc-358": "celula-si-fiziologia-celulara-organite",
+      "asoc-359": "sangele-grupele-sanguine",
+      "asoc-360": "sistemul-cardiovascular-ciclul-cardiac",
+      "asoc-361": "sangele-plasma",
+      "asoc-362": "sistemul-cardiovascular-vasele-sanguine",
+      "asoc-363": "sistemul-digestiv-organele-anexe",
+      "asoc-364": "sistemul-reproducator-masculin-testiculele",
+      "asoc-365": "sistemul-respirator-respiratie",
+      "asoc-366": "sangele-globulele-albe",
+      "asoc-367": "sistemul-cardiovascular-ciclul-cardiac",
+      "asoc-368": "sistemul-endocrin-glanda-tiroida",
+      "asoc-369": "sangele-plasma",
+      "asoc-370": "sistemul-renal-complet-nefron",
+      "asoc-371": "sistemul-reproducator-feminin-fiziologie",
+      "asoc-372": "organele-de-simt-urechea-si-auzul",
+      "asoc-373": "sistemul-endocrin-hipofiza-glanda-pituitara",
+      "asoc-374": "sistemul-limfatic-si-imun-splina",
+      "asoc-375": "sistemul-reproducator-masculin-ducte",
+      "asoc-376": "sistemul-respirator-respiratie",
+      "asoc-377": "sistemul-reproducator-feminin-fiziologie",
+      "asoc-378": "sistemul-cardiovascular-ciclul-cardiac",
+      "asoc-379": "sistemul-endocrin-glandele-suprarenale",
+      "asoc-380": "sistemul-cardiovascular-vasele-sanguine",
+      "asoc-381": "sistemul-reproducator-feminin-organe",
+      "asoc-382": "organele-de-simt-ochiul-si-vederea",
+      "asoc-383": "introducere-anatomie-fiziologie-termeni",
+      "asoc-384": "sistemul-digestiv-organele-anexe",
+      "asoc-385": "celula-si-fiziologia-celulara-organite",
+      "asoc-386": "sistemul-cardiovascular-vasele-sanguine",
+      "asoc-387": "metabolism-si-nutritie-lipide-si-proteine",
+      "asoc-388": "sistemul-digestiv-organele-anexe",
+      "asoc-389": "sistemul-digestiv-organele-anexe",
+      "asoc-390": "sistemul-endocrin-hipofiza-glanda-pituitara",
+      "asoc-391": "oasele-si-articulatiile-osul",
+      "asoc-392": "sistemul-nervos-sistem-nervos-central",
+      "asoc-393": "sistemul-nervos-sistem-nervos-central",
+      "asoc-394": "sistemul-nervos-sistem-nervos-central",
+      "asoc-395": "sistemul-reproducator-masculin-ducte",
+      "asoc-396": "sistemul-endocrin-hipofiza-glanda-pituitara",
+      "asoc-397": "sistemul-endocrin-hipofiza-glanda-pituitara",
+      "asoc-398": "sistemul-renal-complet-nefron",
+      "asoc-399": "sistemul-digestiv-organele-anexe",
+      "asoc-400": "sistemul-nervos-sistem-nervos-central"
+    }
   }
 }

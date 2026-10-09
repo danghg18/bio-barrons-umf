@@ -6,7 +6,7 @@ Explicațiile folosesc numele lecțiilor în trimiteri, de exemplu „Sistemul e
 
 Enunțurile, variantele, cheile, numerotarea, identificatorii, datele de compatibilitate și contractele de progres nu se modifică. În băncile de grile se editează exclusiv `options[].why`. TXT-ul integral furnizat de utilizator rămâne local; auditul publicat îl identifică prin SHA-256, fără să republice manualul.
 
-Revizia acoperă toate cele 17 capitole publicate. Sistemul urinar și Sistemul reproducător masculin au fost finalizate în continuarea autorizată după prima etapă de 15 capitole.
+Revizia acoperă toate cele 17 capitole publicate și, din 9 octombrie 2026, colecția de 400 de grile asociative. Sistemul urinar și Sistemul reproducător masculin au fost finalizate în continuarea autorizată după prima etapă de 15 capitole.
 
 ## Evidența editorială
 
@@ -17,6 +17,7 @@ Revizia acoperă toate cele 17 capitole publicate. Sistemul urinar și Sistemul 
 - `data/manual-review-circulation.json`: sânge, cardiovascular, limfatic și respirator.
 - `data/manual-review-urinary.json`: sistemul urinar.
 - `data/manual-review-male.json`: sistemul reproducător masculin.
+- `data/manual-review-asociative.json`: 400 de grile asociative, cu 2.000 de explicații și amprente individuale.
 
 Fiecare audit identifică TXT-ul prin SHA-256 și conține corespondența fiecărei opțiuni cu pasajele/figurile relevante. Intervalele de rânduri permit verificarea sursei; hash-urile explicațiilor, acolo unde sunt prezente, identifică exact versiunea revizuită. Aceste verificări structurale nu înlocuiesc lectura editorială.
 
@@ -43,11 +44,16 @@ Reîncadrarea din 3 octombrie 2026 mută grilele 61–64 și 150 la Metabolism �
 | Sistemul urinar | 100 | 500 |
 | Sistemul reproducător masculin | 69 | 345 |
 | Sistemul reproducător feminin | 71 | 355 |
-| **Total revizuit** | **1.590** | **7.950** |
+| Grile asociative | 400 | 2.000 |
+| **Total revizuit** | **1.990** | **9.950** |
 
 Ultima etapă acoperă 169 de grile și 845 de explicații. În urinar, 357 de explicații au fost rescrise, iar celelalte au fost verificate și referențiate; în reproducătorul masculin au fost rescrise toate cele 345. Figurile urinare 20.1–20.9 și cele masculine 22.1–22.5 au fost verificate vizual, împreună cu figurile relevante din celelalte lecții. Limitele sursei rămân explicite, inclusiv pentru anumite raporturi anatomice, mecanismele sfincteriene și diferențele dintre barem și text.
 
-## Verificări locale
+## Integrarea asociativelor — 9 octombrie 2026
+
+Cele 2.000 de explicații asociative au fost rescrise exclusiv din TXT și figurile originale, recitite independent și integrate cu baremul existent păstrat. Auditul cuprinde 1.941 de explicații susținute, 40 de limite ale sursei și 19 discrepanțe/ambiguități explicite. Toate variantele rămân punctate după cheia utilizatorului. Sursele, integritatea, integrarea clasic/nou și verificările curente sunt în [grile-asociative.md](grile-asociative.md). Integrarea acoperă edițiile clasică și `nou/`.
+
+## Verificări locale ale etapei anterioare
 
 După ultimele două capitole au fost repetate comparația structurală cu snapshoturile, verificarea celor 7.950 de referințe, generarea, amprentele educaționale, concordanța băncilor de simulare, verificarea baremelor și compatibilității, testele pentru seturile recuperate (inclusiv toate explicațiile afișate în DOM) și verificarea vizuală a celor două pagini. Testul de compatibilitate cu workerul cache-first deja instalat a trecut pentru toate cele 17 seturi și 1.590 de grile, inclusiv încărcarea explicațiilor noi și păstrarea răspunsurilor după reîncărcare. Celelalte rezultate de mai jos provin din etapa anterioară, dacă nu sunt incluse în această enumerare.
 

@@ -13,10 +13,10 @@ try{
  const context=await browser.newContext({viewport:{width:390,height:844},serviceWorkers:'block',reducedMotion:'reduce'});const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
  const ready=()=>page.waitForFunction(()=>document.body.dataset.analyticsReady==='true');
  await page.goto(base+'testare.html');await ready();
- assert.equal(await page.locator('.testing-chapter-row:visible').count(),17,'Show all 17 chapter tests without a catalog filter');
+ assert.equal(await page.locator('.testing-chapter-row:visible').count(),18,'Show all 18 quiz sets without a catalog filter');
  assert.equal(await page.getByRole('group',{name:'Capitole afișate',exact:true}).count(),0);
  assert.equal(await page.locator('[data-catalog-filter]').count(),0);
- assert.equal(await page.locator('.testing-chapter-row:visible').count(),17);
+ assert.equal(await page.locator('.testing-chapter-row:visible').count(),18);
  assert.equal(await page.locator('#testing-preview-summary strong').innerText(),'0');
  await page.locator('.testing-intro a[href="#lab-testing-catalog"]').click();
  assert.equal(new URL(page.url()).hash,'#lab-testing-catalog');

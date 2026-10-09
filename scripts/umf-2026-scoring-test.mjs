@@ -11,7 +11,7 @@ const mapping = JSON.parse(await readFile(resolve(root, 'data/quiz-source-map.js
 const registry = await loadSiteRegistry();
 const resources = publishedResources(registry).resources.filter(r => r.kind === 'quiz');
 const availableOnly = process.argv.includes('--available');
-if (!availableOnly) assert.equal(resources.length, 17, 'All 17 thematic sets must be registered; associative publication is deferred');
+if (!availableOnly) assert.equal(resources.length, 18, 'All 17 thematic sets and the associative collection must be registered');
 const mime = {'.html':'text/html', '.js':'text/javascript', '.css':'text/css', '.json':'application/json', '.svg':'image/svg+xml'};
 const server = http.createServer(async (req, res) => {try {
   const path = new URL(req.url, 'http://localhost').pathname;
@@ -57,6 +57,6 @@ try {
     count += data.questions.length; combinations += data.questions.length * 32;
     console.log(resource.url + ': ' + data.questions.length * 32 + ' answer combinations passed');
   }
-  if (!availableOnly) { assert.equal(count, 1590); assert.equal(combinations, 50880); }
+  if (!availableOnly) { assert.equal(count, 1990); assert.equal(combinations, 63680); }
   console.log(`${count} questions, ${combinations} real-player scoring combinations passed.`);
 } finally {await browser.close(); await new Promise(r => server.close(r));}

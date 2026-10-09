@@ -66,5 +66,9 @@
   "grile_sistemul_reproducator_feminin.html": {
     "dataFile": "assets/js/grile-reproducator-feminin-data.js",
     "sha256": "14578ffcc4ac4244b5fd26bb63d1cae22593584dcc761b6a1c17236e1e04b16b"
+  },
+  "grile_asociative.html": {
+    "dataFile": "assets/js/grile-asociative-data.js",
+    "sha256": "38b529db390ba837a04cf1a8bb7040e79320c78e730a1716d1dd5ead7b4767b6"
   }
 }

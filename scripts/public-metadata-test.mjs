@@ -35,13 +35,13 @@ const withheld = structuredClone(registry); withheld.CHAPTERS[0].resources[0].do
 assert.ok(!publishedResources(withheld).resources.some(r=>r.url===registry.CHAPTERS[0].resources[0].url),'Explicit draft resources must stay excluded');
 const withoutDraft=renderPublicMetadata(testing,'testare.html',withheld,quizzes);
 assert.doesNotMatch(withoutDraft,/<a[^>]*href="grile_introducere_anatomie_fiziologie.html"/);
-assert.match(withoutDraft,/16 seturi disponibile · 1530 de grile/);
+assert.match(withoutDraft,/17 seturi disponibile · 1930 de grile/);
 assert.match(withoutDraft,/<button[^>]*data-chapter="1"[^>]*disabled>/,'Draft quizzes render a disabled modern row before JS');
 assert.equal(renderPublicMetadata(withoutDraft,'testare.html',withheld,quizzes),withoutDraft,'Draft catalog generation is idempotent');
 assert.equal(renderPublicMetadata(withoutDraft,'testare.html',registry,quizzes),testing,'Republishing restores the canonical modern catalog');
 assert.doesNotMatch(withoutDraft,/class="lab-bento-cat(?: |")/,'Generation never restores legacy colored cards');
 const shortened=structuredClone(quizzes); shortened[0].questions.splice(0,10);
-assert.match(renderPublicMetadata(homepage,'index.html',registry,shortened),/1580 de grile/);
+assert.match(renderPublicMetadata(homepage,'index.html',registry,shortened),/1980 de grile/);
 const shorterRow=renderPublicMetadata(testing,'testare.html',registry,shortened).match(/<a[^>]*id="testing-quiz-1"[\s\S]*?<\/a>/)?.[0];
 assert.match(shorterRow,/class="lab-item-tags">50 de grile/,'Static question counts follow quiz data');
 console.log(`Public metadata: delivered HTML, canonical counts, availability, drafts and idempotence passed (${chapters.length} lessons / ${quizzes.length} sets / ${count} questions).`);

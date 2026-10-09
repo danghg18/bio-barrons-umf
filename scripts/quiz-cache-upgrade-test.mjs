@@ -12,10 +12,12 @@ const [registry, sourceMap]=await Promise.all([
 const published=publishedResources(registry).resources.filter(resource=>resource.kind==='quiz');
 const sets=sourceMap.filter(set=>set.publicationStatus!=='deferred');
 const numbersFor=set=>set.ranges.flatMap(([start,end])=>Array.from({length:end-start+1},(_,index)=>start+index));
-assert.equal(sets.length,17,'Exactly 17 chapter sets are active; XIII is deferred');
-assert.equal(sets.reduce((total,set)=>total+numbersFor(set).length,0),1590);
+assert.equal(sets.length,18,'17 thematic sets and the associative collection are active');
+assert.equal(sets.reduce((total,set)=>total+numbersFor(set).length,0),1990);
 assert.deepEqual(Array.from(published,resource=>resource.url).sort(),sets.map(set=>set.url).sort(),'Registry and active source map agree');
 const oldAssets=[
+ 'assets/js/chapters-data.js?v=20260926-circulator1',
+ 'assets/js/quiz-index.js?v=20261003-quiz-transfer1',
  'assets/js/chapters-data.js?v=20260909-editorial1',
  'assets/js/quiz-index.js?v=20260911-accounts1',
  'assets/js/quiz-player.js?v=20260911-accounts1',
@@ -73,8 +75,8 @@ try {
  async function assertFreshCatalogAndIndex(){
   assert.equal(await page.evaluate(()=>!!window.__staleQuizAsset),false,'No stale registry, index or player was executed');
   const index=await page.evaluate(()=>BB_QUIZ_INDEX.map(set=>({url:set.url,storageKey:set.storageKey,numbers:set.questions.map(q=>q.number)})).sort((a,b)=>a.url.localeCompare(b.url)));
-  assert.deepEqual(index,expectedIndex,'All 17 index entries expose the current 1,590 source numbers');
-  const registered=await page.evaluate(()=>CHAPTERS.filter(chapter=>chapter.done).flatMap(chapter=>chapter.resources||[]).filter(resource=>resource.kind==='quiz').map(resource=>resource.url).sort());
+  assert.deepEqual(index,expectedIndex,'All 18 index entries expose the current 1,990 source numbers');
+  const registered=await page.evaluate(()=>CHAPTERS.filter(chapter=>chapter.done).flatMap(chapter=>chapter.resources||[]).concat((BIO_SITE.quizCollections||[]).filter(collection=>collection.done)).filter(resource=>resource.kind==='quiz').map(resource=>resource.url).sort());
   assert.deepEqual(registered,sets.map(set=>set.url).sort(),'No stale chapter registry');
  }
  await assertFreshCatalogAndIndex();
@@ -104,5 +106,5 @@ try {
   assert.equal(await page.evaluate(async()=>{const reg=await navigator.serviceWorker.getRegistration();return !!reg.active&&(await caches.keys()).includes('biologie-atlas-upgrade-test-old');}),true);
  }
  assert.deepEqual(errors,[]);await context.close();
- console.log('Existing cache-first worker: 17 active sets / 1,590 questions, fresh registry/index/player, catalog links, source numbering, backlinks, five explanations and save/reload passed before worker upgrade; XIII deferred.');
+ console.log('Existing cache-first worker: 18 active sets / 1,990 questions, fresh registry/index/player, catalog links, source numbering, backlinks, five explanations and save/reload passed before worker upgrade.');
 } finally {await browser.close();await new Promise(done=>server.close(done));}

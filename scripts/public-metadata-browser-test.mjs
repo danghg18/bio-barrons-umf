@@ -18,8 +18,8 @@ try{
   await page.goto(base+'testare.html');
   if(javaScriptEnabled)await page.waitForFunction(()=>window.BB_QUIZ_INDEX&&window.BBSimulationCore);
   assert.equal(await page.locator('[data-chapter="8"] .lab-item-tags').textContent(),'155 de grile','Discontinuous source ranges must not undercount the actual published dataset');
-  assert.equal(await page.locator('#lab-testing-count').textContent(),'17 seturi disponibile · 1590 de grile');
-  assert.equal(await page.locator('#lab-testing-catalog a.lab-item').count(),17);
+  assert.equal(await page.locator('#lab-testing-count').textContent(),'18 seturi disponibile · 1990 de grile');
+  assert.equal(await page.locator('#lab-testing-catalog a.lab-item').count(),18);
   assert.equal(await page.locator('#lab-testing-catalog button.lab-item').count(),0);
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
   await page.goto(base+'index.html');

@@ -1,0 +1,18291 @@
+/* Generated companion for direct-file previews; same content as assets/data/simulation/bb.quiz.asociative.v1.json. */
+window.BBSimulationUI.registerBank({
+  "chapterNum": 1000,
+  "name": "Grile asociative",
+  "url": "grile_asociative.html",
+  "storageKey": "bb.quiz.asociative.v1",
+  "version": 1,
+  "questions": [
+    {
+      "number": 1,
+      "sourceNumber": 1,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre următoarele afirmații sunt corecte?",
+      "correct": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "carpienele sunt situate distal față de oasele antebrațului",
+          "why": "Carpienele formează încheietura mâinii, aflată mai departe de locul de atașare al membrului decât antebrațul; acesta este sensul termenului „distal”. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Termeni direcționali; „Oasele și articulațiile”, secțiunea Osul."
+        },
+        {
+          "letter": "B",
+          "text": "rinichii sunt situați medial de coloana vertebrală",
+          "why": "Rinichii sunt situați lateral de coloana vertebrală, pe peretele abdominal posterior; „medial” indică apropierea de linia mediană. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Termeni direcționali; „Sistemul urinar”, secțiunea Rinichii."
+        },
+        {
+          "letter": "C",
+          "text": "cecul și colonul sigmoid sunt controlaterale",
+          "why": "Figura intestinului gros arată cecul la dreapta și colonul sigmoid la stânga. Structurile aflate pe părți opuse sunt controlaterale. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Termeni direcționali; „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros; „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros; figura 18.8."
+        },
+        {
+          "letter": "D",
+          "text": "ganglionul spinal și rădăcina corespunzătoare a nervului spinal sunt ipsilaterale",
+          "why": "Ganglionul se află chiar pe rădăcina dorsală a nervului spinal; cele două structuri aparțin aceleiași părți a corpului, deci sunt ipsilaterale. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Termeni direcționali; „Organizarea sistemului nervos”, secțiunea Sistemul nervos periferic."
+        },
+        {
+          "letter": "E",
+          "text": "traheea este anterior față de esofag",
+          "why": "Tabelul termenilor direcționali situează esofagul posterior față de trahee; prin urmare, traheea este anterior față de esofag. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Termeni direcționali."
+        }
+      ],
+      "sourcePages": [
+        233
+      ],
+      "topicId": "topografie",
+      "topicLabel": "Topografie și termeni anatomici",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#termeni",
+      "id": "asoc-001"
+    },
+    {
+      "number": 2,
+      "sourceNumber": 2,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele afirmații nu sunt adevărate:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": true,
+      "options": [
+        {
+          "letter": "A",
+          "text": "artera splenică se găsește în cadranul superior stâng",
+          "why": "Artera splenică ajunge la splină, localizată subdiafragmatic în partea superioară stângă a abdomenului. Afirmația este adevărată, deci nu se selectează la cerința negativă. Sursa: „Sistemul cardiovascular”, secțiunea Tipuri de circulație sanguină; figura 15.9; „Sistemul limfatic și imun”, secțiunea Splina."
+        },
+        {
+          "letter": "B",
+          "text": "bronhiolele se găsesc la nivelul mediastinului",
+          "why": "Mediastinul conține bronhiile, însă bronhiolele sunt ramificații ale arborelui bronșic din plămâni. Plămânii sunt excluși din conținutul mediastinului; afirmația se selectează ca incorectă. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului; „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "C",
+          "text": "apendicele vermiform se găsește în cadranul inferior stâng",
+          "why": "În figura intestinului gros, apendicele vermiform este atașat cecului în partea inferioară dreaptă a abdomenului, nu în cea stângă. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros; figura 18.8."
+        },
+        {
+          "letter": "D",
+          "text": "extremitatea distală a humerusului participă la formarea unei diartroze cu extremitățile distale ale oaselor antebrațului",
+          "why": "La cot, capătul distal al humerusului întâlnește capetele oaselor antebrațului apropiate de trunchi, adică proximale. Capetele distale ale antebrațului se află spre încheietura mâinii. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Termeni direcționali; „Oasele și articulațiile”, secțiunea Osul; figura 6.1."
+        },
+        {
+          "letter": "E",
+          "text": "toate sistemele de organe sunt implicate în menținerea homeostaziei",
+          "why": "Manualul precizează că toate sistemele de organe participă la homeostazie. Afirmația este adevărată și nu se selectează la această cerință negativă. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Funcții ale organismului."
+        }
+      ],
+      "sourcePages": [
+        233
+      ],
+      "topicId": "cavitati",
+      "topicLabel": "Cavitățile corpului",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#cavitati",
+      "id": "asoc-002"
+    },
+    {
+      "number": 3,
+      "sourceNumber": 3,
+      "sourceChapter": "XIII",
+      "prompt": "Se poate afirma că:",
+      "correct": [
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "LH acționează pe celule țintă din tubii seminiferi prin intermediul adenilatciclazei ca mesager secundar",
+          "why": "LH are ca țintă celulele interstițiale testiculare. În mecanismul descris, adenilat ciclaza este enzima care formează cAMP, iar cAMP este mesagerul secundar. Sursa: „Sistemul endocrin”, secțiunea Tipuri și mecanisme de acțiune ale hormonilor; „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară)."
+        },
+        {
+          "letter": "B",
+          "text": "FSH se leagă de receptori pe celulele interstițiale testiculare și determină formarea intracelulară de cAMP",
+          "why": "FSH acționează asupra tubilor seminiferi și stimulează spermatogeneza. Celulele interstițiale și secreția testosteronului sunt asociate LH-ului, nu FSH-ului. Sursa: „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară); „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "C",
+          "text": "GnRH controlează, prin feedback pozitiv, sinteza și secreția testosteronului",
+          "why": "Manualul descrie reglarea sintezei și secreției testosteronului prin feedback negativ și precizează că testosteronul inhibă producerea LH. Varianta înlocuiește negativ cu pozitiv. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "D",
+          "text": "testosteronul, prin stimularea sintezei proteice, determină creșterea masei musculare",
+          "why": "Printre efectele testosteronului sunt stimularea proceselor de sinteză a proteinelor și creșterea masei musculare. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "E",
+          "text": "hormonul sexual masculin se leagă de receptori de pe membrana celulelor ductelor sistemului reproducător masculin și își realizează efectele prin stimularea activității unor gene",
+          "why": "Testosteronul este steroid. În mecanismul prezentat, traversează membrana, se combină cu proteine în citoplasmă, iar complexul stimulează genele; receptorul membranar din variantă nu corespunde acestui mecanism. Sursa: „Sistemul endocrin”, secțiunea Tipuri și mecanisme de acțiune ale hormonilor."
+        }
+      ],
+      "sourcePages": [
+        233
+      ],
+      "topicId": "masculin",
+      "topicLabel": "Reproducerea masculină și reglarea hormonală",
+      "lessonUrl": "sistemul_reproducator_masculin.html#hormoni",
+      "id": "asoc-003"
+    },
+    {
+      "number": 4,
+      "sourceNumber": 4,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile incorecte:",
+      "correct": [
+        "B",
+        "E"
+      ],
+      "asksFalse": true,
+      "options": [
+        {
+          "letter": "A",
+          "text": "flagelii sunt formațiuni asemănătoare firului de păr",
+          "why": "Manualul descrie flagelul ca o prelungire lungă, asemănătoare unui fir de păr. Afirmația este adevărată, deci nu se selectează la cerința de afirmații incorecte. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "B",
+          "text": "spermatozoizii folosesc în special glucoză ca substrat energetic",
+          "why": "Veziculele seminale furnizează spermatozoizilor substanțe nutritive în special sub formă de fructoză. Varianta înlocuiește fructoza cu glucoza. Sursa: „Sistemul reproducător masculin”, secțiunea Ducte și organe anexe."
+        },
+        {
+          "letter": "C",
+          "text": "uretra membranoasă este cea mai scurtă porțiune a uretrei masculine",
+          "why": "Baremul nu selectează C între afirmațiile incorecte. Manualul numește uretra membranoasă un segment scurt care străbate planșeul muscular pelvian, dar nu compară lungimile celor trei porțiuni pentru a demonstra superlativul „cea mai scurtă”. Sursa: „Sistemul reproducător masculin”, secțiunea Ducte și organe anexe."
+        },
+        {
+          "letter": "D",
+          "text": "piesa intermediară a spermatozoidului conține mitocondrii dispuse la periferie",
+          "why": "Piesa intermediară are microtubuli înconjurați de filamente groase și, la exterior, un strat cu mitocondrii. Afirmația este adevărată și nu se selectează. Sursa: „Sistemul reproducător masculin”, secțiunea Testiculele; „Sistemul reproducător masculin”, secțiunea Testiculele; figura 22.3."
+        },
+        {
+          "letter": "E",
+          "text": "gâtul spermatozoidului conține microtubuli",
+          "why": "Baremul selectează E ca incorectă. Manualul descrie microtubulii în piesa intermediară și gâtul ca foarte scurt; nici textul, nici figura nu precizează compoziția microscopică a gâtului. Aceste surse nu permit demonstrarea absenței microtubulilor din gât. Sursa: „Sistemul reproducător masculin”, secțiunea Testiculele; „Sistemul reproducător masculin”, secțiunea Testiculele; figura 22.3."
+        }
+      ],
+      "sourcePages": [
+        233
+      ],
+      "topicId": "spermatozoid",
+      "topicLabel": "Structura spermatozoidului",
+      "lessonUrl": "sistemul_reproducator_masculin.html#testiculele",
+      "id": "asoc-004"
+    },
+    {
+      "number": 5,
+      "sourceNumber": 5,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre următoarele afirmații sunt corecte?",
+      "correct": [
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "nivelul crescut al glicemiei după o masă se normalizează printr-un mecanism de feed-back pozitiv",
+          "why": "Normalizarea glicemiei după masă este chiar exemplul de feedback negativ: glucoza stimulează insulina, iar scăderea glicemiei reduce apoi secreția acesteia. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Funcții ale organismului."
+        },
+        {
+          "letter": "B",
+          "text": "vezica biliară și cecul sunt ipsilaterale",
+          "why": "Vezica biliară și colonul ascendent sunt descrise la dreapta; figura arată cecul la baza colonului ascendent. Vezica biliară și cecul sunt astfel de aceeași parte, ipsilaterale. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Termeni direcționali; „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros; figura 18.8."
+        },
+        {
+          "letter": "C",
+          "text": "mediastinul conține și bronhiolele",
+          "why": "Mediastinul conține bronhii, dar bronhiolele apar prin ramificarea bronhiilor în plămâni. Plămânii nu intră în conținutul mediastinului. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului; „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "D",
+          "text": "hipogastrul conține vezica urinară",
+          "why": "Vezica urinară aparține subdiviziunii pelviene; în harta regiunilor abdomino-pelviene, zona inferioară mediană este hipogastrul. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului; „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului; figura 1.5."
+        },
+        {
+          "letter": "E",
+          "text": "cantitatea mare de lichid seros existent între foițele pleurale favorizează ventilația pulmonară",
+          "why": "Între foițele seroase există o cantitate mică de lichid lubrifiant, care permite alunecarea fără frecare. Varianta greșește prin „cantitatea mare”. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        }
+      ],
+      "sourcePages": [
+        233
+      ],
+      "topicId": "cavitati",
+      "topicLabel": "Cavitățile corpului",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#cavitati",
+      "id": "asoc-005"
+    },
+    {
+      "number": 6,
+      "sourceNumber": 6,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "correct": [
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "catabolismul reprezintă sinteza de materie organică, proces derulat cu producere de energie",
+          "why": "Catabolismul descompune materia organică, de obicei cu eliberare de energie. Sinteza materiei organice este anabolism și necesită de obicei energie. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Funcții ale organismului."
+        },
+        {
+          "letter": "B",
+          "text": "excitabilitatea reprezintă capacitatea organismului de a răspunde la stimuli",
+          "why": "Excitabilitatea este răspunsul organismului la un stimul intern sau extern, exact proprietatea din variantă. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Funcții ale organismului."
+        },
+        {
+          "letter": "C",
+          "text": "creșterea organismului reprezintă procesul de îndepărtare a deșeurilor metabolice",
+          "why": "Creșterea înseamnă mărirea dimensiunilor și masei organismului. Îndepărtarea produșilor de degradare este excreția. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Funcții ale organismului."
+        },
+        {
+          "letter": "D",
+          "text": "conductibilitatea reprezintă proprietatea unor celule de a propaga potențiale de acțiune",
+          "why": "Conductibilitatea este capacitatea unor celule, nervoase și musculare, de a transmite stimuli; propagarea potențialelor de acțiune exprimă această proprietate. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Funcții ale organismului."
+        },
+        {
+          "letter": "E",
+          "text": "la mișcare participă exclusiv mușchii, prin contracție",
+          "why": "La mișcare participă și oasele și cartilajele, care oferă locuri de atașare mușchilor. „Exclusiv mușchii” omite aceste componente. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Funcții ale organismului."
+        }
+      ],
+      "sourcePages": [
+        233
+      ],
+      "topicId": "functii",
+      "topicLabel": "Funcțiile organismului",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#functii",
+      "id": "asoc-006"
+    },
+    {
+      "number": 7,
+      "sourceNumber": 7,
+      "sourceChapter": "XIII",
+      "prompt": "Despre placentă sunt adevărate următoarele afirmații:",
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este o formațiune care nu poate fi traversată, în timpul sarcinii, de eritrocitele fătului, dar permite trecerea anticorpilor anti-Rh ai mamei",
+          "why": "Baremul include A. Manualul arată că anticorpii materni anti-Rh pot traversa placenta și descrie pătrunderea unor celule sanguine fetale în circulația mamei la naștere. Nu afirmă însă explicit imposibilitatea oricărui transfer eritrocitar în timpul sarcinii; această parte absolută a variantei rămâne insuficient documentată. Sursa: „Sângele”, secțiunea Grupele sanguine; „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie."
+        },
+        {
+          "letter": "B",
+          "text": "elimină reziduurile rezultate din metabolismul fetal și secretă trei hormoni cu rol în menținerea sarcinii",
+          "why": "Placenta transferă reziduuri între circulațiile fetală și maternă și secretă estrogeni, progesteron și hCG. hCG menține inițial corpul galben, iar hormonii ovarieni și ulterior placentari mențin sarcina. Sursa: „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie."
+        },
+        {
+          "letter": "C",
+          "text": "transferă oxigenul din sângele matern spre făt",
+          "why": "Placenta este mediul de transfer al gazelor dizolvate între sângele matern și cel embrionar, asigurând astfel aportul de oxigen către făt. Sursa: „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie."
+        },
+        {
+          "letter": "D",
+          "text": "se formează din vilozitățile coriale ale uterului",
+          "why": "Vilozitățile coriale sunt prelungiri ale blastocistului; ele se unesc cu țesuturile uterine pentru a forma placenta. Nu sunt descrise ca vilozități ale uterului. Sursa: „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie."
+        },
+        {
+          "letter": "E",
+          "text": "separă fluxul sanguin embrionar de cel matern",
+          "why": "Manualul distinge fluxul sanguin embrionar de cel matern și prezintă placenta ca mediu de transfer între ele; pătrunderea unor celule fetale în circulația mamei este descrisă la naștere. Sursa: „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie; „Sângele”, secțiunea Grupele sanguine."
+        }
+      ],
+      "sourcePages": [
+        234
+      ],
+      "topicId": "feminin",
+      "topicLabel": "Reproducerea feminină și sarcina",
+      "lessonUrl": "sistemul_reproducator_feminin.html#fiziologie",
+      "id": "asoc-007"
+    },
+    {
+      "number": 8,
+      "sourceNumber": 8,
+      "sourceChapter": "XIII",
+      "prompt": "Cavitatea toracică:",
+      "correct": [
+        "A",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este situată anterior de coloana vertebrală",
+          "why": "Cavitatea toracică aparține cavității ventrale, în timp ce canalul delimitat de vertebre aparține cavității dorsale. Toracele este astfel anterior coloanei vertebrale. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        },
+        {
+          "letter": "B",
+          "text": "se învecinează imediat inferior cu subdiviziunea pelviană a cavității ventrale",
+          "why": "Imediat sub diafragma care limitează toracele se află subdiviziunea abdominală. Subdiviziunea pelviană este partea inferioară a cavității abdomino-pelviene. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        },
+        {
+          "letter": "C",
+          "text": "conține la nivelul mediastinului și timusul, bronhiile principale, porțiunea inițială a ductului toracic",
+          "why": "Timusul și bronhiile se află în mediastin, însă ductul toracic se formează în cavitatea abdominală. Menționarea porțiunii sale inițiale ca toracică face varianta incorectă. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului; „Sistemul limfatic și imun”, secțiunea Sistemul limfatic."
+        },
+        {
+          "letter": "D",
+          "text": "conține și cavitățile pleurale și pericardică",
+          "why": "Cavitatea toracică cuprinde cele două cavități pleurale și cavitatea pericardică, situată medial între ele. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        },
+        {
+          "letter": "E",
+          "text": "este delimitată și de coaste, mușchi intercostali și diafragmă",
+          "why": "Coastele și mușchii intercostali delimitează cavitatea toracică, iar diafragma o separă inferior de cavitatea abdomino-pelviană. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        }
+      ],
+      "sourcePages": [
+        234
+      ],
+      "topicId": "cavitati",
+      "topicLabel": "Cavitățile corpului",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#cavitati",
+      "id": "asoc-008"
+    },
+    {
+      "number": 9,
+      "sourceNumber": 9,
+      "sourceChapter": "XIII",
+      "prompt": "Despre urechea medie sunt adevărate următoarele afirmații:",
+      "correct": [
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "prin intermediul trompei lui Eustachio comunică cu laringele",
+          "why": "Trompa lui Eustachio leagă urechea medie de faringe, nu de laringe. Sursa: „Organele de simț”, secțiunea Urechea și auzul."
+        },
+        {
+          "letter": "B",
+          "text": "peretele său anterior prezintă fereastra ovală și fereastra rotundă",
+          "why": "Figura plasează ferestrele ovală și rotundă la limita cu urechea internă, pe peretele medial al urechii medii. Nu sunt pe peretele anterior. Sursa: „Organele de simț”, secțiunea Urechea și auzul; figura 12.3."
+        },
+        {
+          "letter": "C",
+          "text": "conține un lanț de trei oscioare: ciocanul, scărița și nicovala, conectată cu fereastra ovală",
+          "why": "Oscioarele sunt ciocanul, nicovala și scărița, iar scărița este conectată la fereastra ovală. Varianta atribuie această legătură nicovalei. Sursa: „Organele de simț”, secțiunea Urechea și auzul."
+        },
+        {
+          "letter": "D",
+          "text": "peretele extern este reprezentat de timpan",
+          "why": "Timpanul se află la capătul canalului auditiv extern și formează limita externă a urechii medii, vizibilă în figură. Sursa: „Organele de simț”, secțiunea Urechea și auzul; „Organele de simț”, secțiunea Urechea și auzul; figura 12.3."
+        },
+        {
+          "letter": "E",
+          "text": "comunicarea sa cu nazofaringele are rolul de a egaliza presiunea pe ambele fețe ale timpanului",
+          "why": "Comunicarea prin trompa lui Eustachio permite deplasarea aerului și egalizarea presiunii de cele două părți ale timpanului. Sursa: „Organele de simț”, secțiunea Urechea și auzul."
+        }
+      ],
+      "sourcePages": [
+        234
+      ],
+      "topicId": "ureche",
+      "topicLabel": "Urechea și auzul",
+      "lessonUrl": "organele_de_simt.html#urechea-si-auzul",
+      "id": "asoc-009"
+    },
+    {
+      "number": 10,
+      "sourceNumber": 10,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la hormonii ovarieni:",
+      "correct": [
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "FSH-ul stimulează creșterea foliculului ovarian",
+          "why": "FSH stimulează creșterea foliculului ovarian, dar este produs de hipofiză. Efectul este real; varianta nu se selectează deoarece enunțul cere hormoni ovarieni. Sursa: „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie."
+        },
+        {
+          "letter": "B",
+          "text": "LH-ul stimulează ovulația",
+          "why": "LH stimulează ovulația, dar locul său de sinteză este hipofiza. Nu este hormon ovarian, categoria cerută de întrebare. Sursa: „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie."
+        },
+        {
+          "letter": "C",
+          "text": "oxitocina produce contracția uterului",
+          "why": "Oxitocina stimulează contracțiile uterine, dar este produsă de hipotalamus. Nu aparține hormonilor ovarieni ceruți. Sursa: „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie."
+        },
+        {
+          "letter": "D",
+          "text": "progesteronul are un nivel crescut în faza secretorie a ciclului menstrual",
+          "why": "În faza secretorie, zilele 15–28, corpul galben secretă progesteron; figura arată nivelul său crescut după ovulație. Sursa: „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie; „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie; figura 23.6."
+        },
+        {
+          "letter": "E",
+          "text": "secreția estrogenilor atinge un maxim înainte de ovulație",
+          "why": "Curba estrogenului din figura ciclului menstrual atinge maximul imediat înaintea momentului ovulației. Sursa: „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie; figura 23.6."
+        }
+      ],
+      "sourcePages": [
+        234
+      ],
+      "topicId": "feminin",
+      "topicLabel": "Reproducerea feminină și sarcina",
+      "lessonUrl": "sistemul_reproducator_feminin.html#fiziologie",
+      "id": "asoc-010"
+    },
+    {
+      "number": 11,
+      "sourceNumber": 11,
+      "sourceChapter": "XIII",
+      "prompt": "Stomacul are următoarele caracteristici structurale:",
+      "correct": [
+        "A",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este inervat de nervul vag",
+          "why": "Vagul inervează viscerele, iar secreția gastrică este controlată de fibre parasimpatice; aceste informații susțin inervația vagală a stomacului. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos periferic; „Sistemul digestiv”, secțiunea Stomacul."
+        },
+        {
+          "letter": "B",
+          "text": "suprafața sa medială, convexă, se numește mica curbură",
+          "why": "Mica curbură este suprafața medială concavă a stomacului. Suprafața convexă este laterală și formează marea curbură. Sursa: „Sistemul digestiv”, secțiunea Stomacul."
+        },
+        {
+          "letter": "C",
+          "text": "prezintă glande care conțin și celule parietale ce secretă enzime proteolitice",
+          "why": "Celulele parietale secretă acid clorhidric și factor intrinsec. Precursorul enzimei proteolitice, pepsinogenul, este produs de celulele principale. Sursa: „Sistemul digestiv”, secțiunea Stomacul."
+        },
+        {
+          "letter": "D",
+          "text": "celulele principale se găsesc în porțiunea inferioară a unei glande gastrice",
+          "why": "În detaliul glandei gastrice, celulele principale sunt reprezentate în porțiunea profundă, inferioară, a glandei. Sursa: „Sistemul digestiv”, secțiunea Stomacul; figura 18.5."
+        },
+        {
+          "letter": "E",
+          "text": "secretă enzime proteolitice, cea mai important dintre ele fiind pepsina",
+          "why": "Manualul numește pepsina cea mai importantă enzimă proteolitică gastrică, dar precizează că se secretă pepsinogen, activat ulterior. În plus, varianta descrie o funcție, pe când enunțul cere caracteristici structurale; baremul nu o selectează. Sursa: „Sistemul digestiv”, secțiunea Stomacul."
+        }
+      ],
+      "sourcePages": [
+        234
+      ],
+      "topicId": "stomac",
+      "topicLabel": "Stomacul",
+      "lessonUrl": "sistemul_digestiv.html#stomacul",
+      "id": "asoc-011"
+    },
+    {
+      "number": 12,
+      "sourceNumber": 12,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele afirmații referitoare la uter sunt adevărate:",
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este un organ muscular, cavitar și impar, interpus între trompele uterine și vagin",
+          "why": "Uterul este organ cavitar, median, cu perete muscular gros; trompele se unesc cu partea superioară, iar colul se deschide în vagin. Sursa: „Sistemul reproducător feminin”, secțiunea Ovarele și organele anexe."
+        },
+        {
+          "letter": "B",
+          "text": "prezintă o porțiune intermediară, istmul, care este localizată între corpul și colul uterin",
+          "why": "Corpul uterin se continuă inferior cu istmul, iar istmul cu colul uterin. Acesta este raportul din variantă. Sursa: „Sistemul reproducător feminin”, secțiunea Ovarele și organele anexe."
+        },
+        {
+          "letter": "C",
+          "text": "are un strat funcțional, perimetrul, cu modificări structurale în timpul ciclului menstrual",
+          "why": "Stratul funcțional aparține endometrului, mucoasa internă. Perimetrul este stratul extern seros al uterului. Sursa: „Sistemul reproducător feminin”, secțiunea Ovarele și organele anexe."
+        },
+        {
+          "letter": "D",
+          "text": "stratul său mijlociu, miometrul, format din mușchi neted visceral, este sensibil la acțiunea oxitocinei în timpul nașterii",
+          "why": "Miometrul este stratul mijlociu de mușchi netezi, care se contractă în travaliu. Oxitocina are drept țintă fibrele musculare netede uterine. Sursa: „Sistemul reproducător feminin”, secțiunea Ovarele și organele anexe; „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară)."
+        },
+        {
+          "letter": "E",
+          "text": "în partea superioară a corpului său se găsește o porțiune bombată, fundul uterin",
+          "why": "Fundul uterin este porțiunea superioară bombată a corpului uterin, la nivelul căreia se unesc trompele uterine. Sursa: „Sistemul reproducător feminin”, secțiunea Ovarele și organele anexe."
+        }
+      ],
+      "sourcePages": [
+        234
+      ],
+      "topicId": "uter",
+      "topicLabel": "Organele reproducătoare feminine",
+      "lessonUrl": "sistemul_reproducator_feminin.html#organe",
+      "id": "asoc-012"
+    },
+    {
+      "number": 13,
+      "sourceNumber": 13,
+      "sourceChapter": "XIII",
+      "prompt": "Regiunea epigastrică:",
+      "correct": [
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "se învecinează lateral cu regiunea iliacă dreaptă și stângă",
+          "why": "Lateral de epigastru sunt hipocondrul drept și stâng. Regiunile iliace sunt inferioare, lateral de hipogastru. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului; „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului; figura 1.5."
+        },
+        {
+          "letter": "B",
+          "text": "vine în raport inferior cu regiunea ombilicală",
+          "why": "Epigastrul este situat superior regiunii ombilicale; regiunea ombilicală este astfel vecina sa inferioară. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        },
+        {
+          "letter": "C",
+          "text": "conține stomacul",
+          "why": "Legenda figurii stomacului îl localizează în partea superioară a abdomenului, în regiunea epigastrică. Sursa: „Sistemul digestiv”, secțiunea Stomacul; figura 18.5."
+        },
+        {
+          "letter": "D",
+          "text": "conține flexura hepatică a colonului",
+          "why": "Flexura hepatică este reprezentată în partea superioară dreaptă a abdomenului, corespunzătoare hipocondrului drept, nu regiunii epigastrice mediane. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros; figura 18.8; „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului; figura 1.5."
+        },
+        {
+          "letter": "E",
+          "text": "aparține cavității ventrale a corpului",
+          "why": "Epigastrul este o regiune a cavității abdomino-pelviene, subdiviziune a cavității ventrale. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        }
+      ],
+      "sourcePages": [
+        234
+      ],
+      "topicId": "cavitati",
+      "topicLabel": "Cavitățile corpului",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#cavitati",
+      "id": "asoc-013"
+    },
+    {
+      "number": 14,
+      "sourceNumber": 14,
+      "sourceChapter": "XIII",
+      "prompt": "Sunt adevărate următoarele afirmații:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "celula adipoasă are nucleul situat periferic",
+          "why": "Figura diferitelor celule indică nucleul celulei adipoase la periferie, lângă marginea celulei. Sursa: „Celula și fiziologia celulară”, secțiunea Nucleul; figura 3.4."
+        },
+        {
+          "letter": "B",
+          "text": "nucleolii sunt formați din unirea histonelor cu ADN-ul",
+          "why": "Histonele și ADN-ul formează nucleozomi. Nucleolii sunt mase nucleare care conțin ARN și participă la producerea subunităților ribozomale. Sursa: „Celula și fiziologia celulară”, secțiunea Nucleul."
+        },
+        {
+          "letter": "C",
+          "text": "celula musculară striată scheletică prezintă mulți nuclei poziționați periferic",
+          "why": "Tabelul comparativ al țesuturilor musculare indică mulți nuclei pe fibra scheletică și poziția lor periferică. Sursa: „Țesutul muscular”, secțiunea Tipuri de țesut muscular."
+        },
+        {
+          "letter": "D",
+          "text": "limfocitul prezintă un nucleu mare înconjurat de o citoplasmă subțire",
+          "why": "Figura leucocitelor arată limfocitul cu nucleu voluminos și o margine citoplasmatică îngustă în jurul acestuia. Sursa: „Sângele”, secțiunea Globulele albe; figura 14.5."
+        },
+        {
+          "letter": "E",
+          "text": "flagelii sunt atașați corpusculilor bazali de pe suprafața membranei celulare",
+          "why": "Baremul exclude E. Textul descrie forma și rolul flagelului, iar figurile celulei și spermatozoidului nu precizează amplasarea corpusculilor bazali. Din materialul autorizat nu se poate justifica precis localizarea greșită afirmată aici. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele; „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele; figura 3.5; „Sistemul reproducător masculin”, secțiunea Testiculele; figura 22.3."
+        }
+      ],
+      "sourcePages": [
+        235
+      ],
+      "topicId": "celula",
+      "topicLabel": "Structura celulelor",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#structura",
+      "id": "asoc-014"
+    },
+    {
+      "number": 15,
+      "sourceNumber": 15,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la ovar:",
+      "correct": [
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este o glandă mixtă, pereche, care împreună cu trompa uterină, este situată în cavitatea abdominală",
+          "why": "Ovarele sunt organe pereche care produc ovule și hormoni, însă manualul le localizează în cavitatea pelviană; și trompele se deschid în cavitatea pelviană. Varianta indică abdominală. Sursa: „Sistemul reproducător feminin”, secțiunea Introducere; „Sistemul reproducător feminin”, secțiunea Ovarele și organele anexe."
+        },
+        {
+          "letter": "B",
+          "text": "are o secreție hormonală constantă, egală, pe tot parcursul ciclului menstrual",
+          "why": "Nivelurile estrogenilor și progesteronului variază cu fazele ciclului: sunt mici la menstruație, cresc ulterior și scad dacă nu apare sarcina. Secreția nu este constantă. Sursa: „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie; „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie; figura 23.6."
+        },
+        {
+          "letter": "C",
+          "text": "secretă numai hormoni de natură lipidică, derivați din colesterol",
+          "why": "În prezentarea manualului, hormonii ovarieni enumerați sunt estrogenii și progesteronul, ambele exemple de hormoni steroizi sintetizați din colesterol. În acest cadru este selectată varianta. Sursa: „Sistemul reproducător feminin”, secțiunea Ovarele și organele anexe; „Sistemul endocrin”, secțiunea Tipuri și mecanisme de acțiune ale hormonilor."
+        },
+        {
+          "letter": "D",
+          "text": "secretă estrogeni, care acționează pe celulele țintă prin intermediul mesagerilor secundari",
+          "why": "Estrogenii sunt steroizi și traversează membrana pentru a forma un complex intracelular care stimulează genele. Mecanismul cu mesager secundar cAMP este prezentat pentru majoritatea hormonilor non-steroidieni. Sursa: „Sistemul endocrin”, secțiunea Tipuri și mecanisme de acțiune ale hormonilor."
+        },
+        {
+          "letter": "E",
+          "text": "secretă progesteron, mai ales în perioada postovulatorie",
+          "why": "După ovulație, în faza secretorie, corpul galben ovarian secretă progesteron; aceasta este perioada descrisă în variantă. Sursa: „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie."
+        }
+      ],
+      "sourcePages": [
+        235
+      ],
+      "topicId": "feminin",
+      "topicLabel": "Reproducerea feminină și sarcina",
+      "lessonUrl": "sistemul_reproducator_feminin.html#fiziologie",
+      "id": "asoc-015"
+    },
+    {
+      "number": 16,
+      "sourceNumber": 16,
+      "sourceChapter": "XIII",
+      "prompt": "Despre calciu sunt adevărate următoarele afirmații:",
+      "correct": [
+        "B",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "poate fi prezent în oase doar sub formă de fosfat de calciu",
+          "why": "Matricea osoasă conține atât fosfat de calciu, cât și carbonat de calciu. Cuvântul „doar” face afirmația incorectă. Sursa: „Oasele și articulațiile”, secțiunea Osul."
+        },
+        {
+          "letter": "B",
+          "text": "participă la formarea activatorului protrombinei, care convertește protrombina în trombină",
+          "why": "Tromboplastina, ionii de calciu și alți factori formează activatorul protrombinei, care transformă protrombina în trombină. Sursa: „Sângele”, secțiunea Coagularea sângelui."
+        },
+        {
+          "letter": "C",
+          "text": "este implicat într-o singură etapă a coagulării",
+          "why": "Calciul intervine în formarea activatorilor, în conversia protrombinei și, în descrierea manualului, în formarea fibrinei. Nu participă la o singură etapă. Sursa: „Sângele”, secțiunea Coagularea sângelui."
+        },
+        {
+          "letter": "D",
+          "text": "nivelul său în sânge crește sub influența parathormonului",
+          "why": "Parathormonul reglează activitatea osteoclastelor și crește concentrația calciului în sânge. Sursa: „Sistemul endocrin”, secțiunea Principalii hormoni — tabelul 13.3."
+        },
+        {
+          "letter": "E",
+          "text": "fixarea sa în oase este stimulată de calcitonină",
+          "why": "Calcitonina stimulează depunerea calciului în oase și scade concentrația sanguină a calciului. Sursa: „Sistemul endocrin”, secțiunea Glanda tiroidă."
+        }
+      ],
+      "sourcePages": [
+        235
+      ],
+      "topicId": "calciu",
+      "topicLabel": "Calciul și reglarea endocrină",
+      "lessonUrl": "sistemul_endocrin.html#glandele-paratiroide",
+      "id": "asoc-016"
+    },
+    {
+      "number": 17,
+      "sourceNumber": 17,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre afirmațiile cu privire la hormonii gonadotropi sunt adevărate?",
+      "correct": [
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "hormonul foliculostimulant reglează secreția de estrogeni și testosteron",
+          "why": "FSH stimulează producerea estrogenilor la femeie și spermatogeneza la bărbat. Secreția testosteronului este stimulată de LH. Sursa: „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară); „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie."
+        },
+        {
+          "letter": "B",
+          "text": "sinteza și eliberarea de FSH din hipofiza anterioară sunt stimulate de GnRH",
+          "why": "GnRH hipotalamic stimulează producerea FSH și LH în hipofiză; hormonii stimulatori cresc sinteza și eliberarea hormonilor adenohipofizari. Sursa: „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară); „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie."
+        },
+        {
+          "letter": "C",
+          "text": "hormonul luteinizant stimulează secreția corpului galben și secreția de testosteron",
+          "why": "LH stimulează secreția estrogenilor și progesteronului de către corpul galben și producerea testosteronului în celulele interstițiale testiculare. Sursa: „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară)."
+        },
+        {
+          "letter": "D",
+          "text": "GnRH ajunge la hipofiza anterioară prin sistemul port hipotalamo-hipofizar",
+          "why": "Transportul hormonilor hipotalamici prin sistemul port este descris în manual, dar GnRH este hormon eliberator hipotalamic. Baremul selectează aici afirmațiile despre gonadotropii hipofizari FSH și LH, nu despre GnRH. Sursa: „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară); „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie."
+        },
+        {
+          "letter": "E",
+          "text": "hormonul eliberator de gonadotropină controlează secreția tuturor hormonilor glandulotropi",
+          "why": "GnRH stimulează FSH și LH. Manualul descrie și alți hormoni tropi, precum TSH și ACTH, fără a-i include între hormonii controlați de GnRH. Sursa: „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie; „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară)."
+        }
+      ],
+      "sourcePages": [
+        235
+      ],
+      "topicId": "masculin",
+      "topicLabel": "Reproducerea masculină și reglarea hormonală",
+      "lessonUrl": "sistemul_reproducator_masculin.html#hormoni",
+      "id": "asoc-017"
+    },
+    {
+      "number": 18,
+      "sourceNumber": 18,
+      "sourceChapter": "XIII",
+      "prompt": "Despre tractul gastrointestinal se poate afirma că:",
+      "correct": [
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "prezintă pe toată lungimea lui musculatură netedă",
+          "why": "În treimea superioară a esofagului, tunica musculară are fibre striate; numai treimea inferioară este descrisă ca exclusiv netedă. Generalizarea la toată lungimea tractului este incorectă. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "B",
+          "text": "în mucoasa sa se găsesc vase de sânge, vase limfatice și nervi",
+          "why": "Baremul exclude B, iar descrierea generală atribuie vasele și nervii submucoasei. Totuși, manualul precizează că vilozitățile sunt prelungiri ale mucoasei și conțin capilare și un vas limfatic. Nu se poate deduce că mucoasa ar fi lipsită de vase; textul autorizat nu clarifică aici componenta nervoasă. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal; „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "C",
+          "text": "glandele salivare produc enzime ce inițiază procesul de digestie a glucidelor",
+          "why": "Glandele salivare participă la digestie, însă sunt organe anexe ale sistemului digestiv, nu segmente ale tractului gastrointestinal cerut în enunț. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "D",
+          "text": "pancreasul exocrin produce o secreție alcalină, bogată în bicarbonat de sodiu",
+          "why": "Sucul pancreatic este ușor alcalin și conține bicarbonat. Pancreasul este însă organ anex, separat în manual de tractul gastrointestinal la care se referă întrebarea. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal; „Sistemul digestiv”, secțiunea Organele anexe."
+        },
+        {
+          "letter": "E",
+          "text": "primul său segment asigură și digestia mecanică a alimentelor",
+          "why": "Primul segment, cavitatea orală, asigură ingestia, digestia mecanică și amestecarea alimentelor cu saliva. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        }
+      ],
+      "sourcePages": [
+        235
+      ],
+      "topicId": "digestiv",
+      "topicLabel": "Tractul gastrointestinal",
+      "lessonUrl": "sistemul_digestiv.html#tractul-gastrointestinal",
+      "id": "asoc-018"
+    },
+    {
+      "number": 19,
+      "sourceNumber": 19,
+      "sourceChapter": "XIII",
+      "prompt": "Despre dinți sunt adevărate următoarele afirmații:",
+      "correct": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "smalțul acoperă și rădăcina dintelui",
+          "why": "Smalțul acoperă coroana; rădăcina dintelui este acoperită de cement. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "B",
+          "text": "dentina se găsește profund față de smalț",
+          "why": "Dentina se află sub smalț și înconjoară pulpa dentară, deci este situată profund față de smalț. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "C",
+          "text": "membrana periodontală se găsește la exterior față de cement",
+          "why": "În schema dintelui, membrana periodontală se află între cementul rădăcinii și osul din jur, deci la exterior față de cement. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal; figura 18.2."
+        },
+        {
+          "letter": "D",
+          "text": "cavitatea pulpară prezintă inervație și vascularizație",
+          "why": "Pulpa dentară conține vase sanguine, nervi și țesut conjunctiv; cavitatea pulpară este astfel vascularizată și inervată. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "E",
+          "text": "canalul radicular conține nervi și vase de sânge",
+          "why": "Figura arată vasele și nervii trecând prin canalul radicular către pulpa dintelui. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal; figura 18.2."
+        }
+      ],
+      "sourcePages": [
+        235
+      ],
+      "topicId": "digestiv",
+      "topicLabel": "Tractul gastrointestinal",
+      "lessonUrl": "sistemul_digestiv.html#tractul-gastrointestinal",
+      "id": "asoc-019"
+    },
+    {
+      "number": 20,
+      "sourceNumber": 20,
+      "sourceChapter": "XIII",
+      "prompt": "Hipocondrul stâng:",
+      "correct": [
+        "A",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "vine în raport medial cu regiunea epigastrică",
+          "why": "Hipocondrul stâng este lateral de epigastru; epigastrul se află deci medial față de el. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului; „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului; figura 1.5."
+        },
+        {
+          "letter": "B",
+          "text": "vine în raport inferior cu regiunea iliacă stângă",
+          "why": "Baremul exclude B. Figura arată că vecinul imediat inferior este flancul stâng, iar regiunea iliacă stângă se află și mai jos. Varianta nu spune „imediat”, astfel că poziția inferioară, în sens larg, nu este contrazisă de figură. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului; „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului; figura 1.5."
+        },
+        {
+          "letter": "C",
+          "text": "conține flexura splenică a colonului",
+          "why": "Flexura splenică este reprezentată superior în partea stângă a abdomenului, corespunzătoare hipocondrului stâng. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros; figura 18.8; „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului; figura 1.5."
+        },
+        {
+          "letter": "D",
+          "text": "conține colonul sigmoid",
+          "why": "Colonul sigmoid este ilustrat inferior, în partea stângă, spre pelvis. Nu este situat în hipocondrul stâng. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros; figura 18.8; „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului; figura 1.5."
+        },
+        {
+          "letter": "E",
+          "text": "aparține subdiviziunii pelvine",
+          "why": "Hipocondrul stâng este una dintre regiunile superioare ale abdomenului. Nu aparține subdiviziunii pelviene inferioare. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului; „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului; figura 1.5."
+        }
+      ],
+      "sourcePages": [
+        235
+      ],
+      "topicId": "cavitati",
+      "topicLabel": "Cavitățile corpului",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#cavitati",
+      "id": "asoc-020"
+    },
+    {
+      "number": 21,
+      "sourceNumber": 21,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre afirmațiile următoare sunt adevărate?",
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "într-un mediu extracelular hipoton, apa pătrunde în celulă",
+          "why": "Într-un mediu hipoton, concentrația solvitului este mai mare în celulă; apa intră prin osmoză și celula se umflă. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "B",
+          "text": "la nivelul membranei hematiei ionul HCO₃⁻ se deplasează înafara celulei, la schimb cu ionul de Cl⁻",
+          "why": "La transportul CO₂, ionii de bicarbonat trec în plasmă, iar pentru fiecare ion care iese intră un ion de clor în hematie: transferul de clor. Sursa: „Sistemul respirator”, secțiunea Schimbul de gaze."
+        },
+        {
+          "letter": "C",
+          "text": "celula musculară striată cardiacă prezintă mulți nuclei poziționați central",
+          "why": "Tabelul țesuturilor musculare indică un nucleu central pentru fibra cardiacă. Mulți nuclei sunt caracteristici fibrei scheletice. Sursa: „Țesutul muscular”, secțiunea Tipuri de țesut muscular."
+        },
+        {
+          "letter": "D",
+          "text": "receptorii celulari pot fi alcătuiți din glicolipide și glicoproteine",
+          "why": "Glicolipidele și glicoproteinele de pe suprafața externă participă la recunoașterea celulară și pot servi drept receptori pentru molecule semnalizatoare. Sursa: „Celula și fiziologia celulară”, secțiunea Membrana plasmatică."
+        },
+        {
+          "letter": "E",
+          "text": "învelișul nuclear este format dintr-o membrană dublă, fără pori",
+          "why": "Învelișul nuclear este dublu, dar prezintă pori prin care mediul nuclear comunică cu citoplasma. „Fără pori” este greșit. Sursa: „Celula și fiziologia celulară”, secțiunea Nucleul."
+        }
+      ],
+      "sourcePages": [
+        236
+      ],
+      "topicId": "transport",
+      "topicLabel": "Transportul prin membrane",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#transport",
+      "id": "asoc-021"
+    },
+    {
+      "number": 22,
+      "sourceNumber": 22,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele afirmații sunt adevărate:",
+      "correct": [
+        "A",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "fibra musculară netedă conține un nucleu situat central",
+          "why": "Fibra musculară netedă are un singur nucleu central, indicat atât în tabelul comparativ, cât și în figura tipurilor celulare. Sursa: „Țesutul muscular”, secțiunea Tipuri de țesut muscular; „Celula și fiziologia celulară”, secțiunea Nucleul; figura 3.4."
+        },
+        {
+          "letter": "B",
+          "text": "în sarcolemă se găsesc numeroase mitocondrii",
+          "why": "Numeroasele mitocondrii se găsesc în sarcoplasmă, citoplasma fibrei musculare. Sarcolema este membrana celulei, nu locul acestor organite. Sursa: „Țesutul muscular”, secțiunea Mușchiul striat scheletic; „Țesutul muscular”, secțiunea Mușchiul striat scheletic; figura 8.1."
+        },
+        {
+          "letter": "C",
+          "text": "histonele oferă un cadru de sprijin pentru ADN",
+          "why": "Histonele oferă cadrul de sprijin pentru ADN și se asociază cu acesta în nucleozomi. Sursa: „Celula și fiziologia celulară”, secțiunea Nucleul."
+        },
+        {
+          "letter": "D",
+          "text": "toate componentele citoscheletului sunt alcătuite din subunități fosfolipidice",
+          "why": "Microtubulii, microfilamentele și filamentele intermediare ale citoscheletului sunt alcătuite din subunități proteice, nu fosfolipidice. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "E",
+          "text": "membrana celulară menține forma celulei și blochează pasajul transmembranar al substanțelor",
+          "why": "Membrana este semipermeabilă: permite trecerea anumitor molecule și schimburile cu mediul. Nu blochează în totalitate pasajul transmembranar. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        }
+      ],
+      "sourcePages": [
+        236
+      ],
+      "topicId": "celula",
+      "topicLabel": "Structura celulelor",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#structura",
+      "id": "asoc-022"
+    },
+    {
+      "number": 23,
+      "sourceNumber": 23,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați enunțurile corecte corespunzând unor funcții ale dinților:",
+      "correct": [
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "incisivii sfâșie alimentele",
+          "why": "Incisivii taie alimentele mari; sfâșierea este funcția atribuită caninilor. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "B",
+          "text": "molarii taie alimentele de dimensiuni mari",
+          "why": "Molarii sunt dinți plați folosiți pentru mărunțire. Tăierea alimentelor mari este funcția incisivilor. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "C",
+          "text": "premolarii macină alimentele",
+          "why": "Premolarii au suprafețe plate și servesc la mărunțirea sau măcinarea alimentelor. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "D",
+          "text": "coletul dintelui este situat în profunzime față de coroana dintelui",
+          "why": "Coletul leagă coroana de rădăcina dintelui. Varianta descrie un raport structural, nu o funcție a dinților, cum cere enunțul. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "E",
+          "text": "participă la digestia mecanică a alimentelor la nivelul cavității orale",
+          "why": "Dinții realizează cea mai mare parte a digestiei mecanice din cavitatea orală. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        }
+      ],
+      "sourcePages": [
+        236
+      ],
+      "topicId": "digestiv",
+      "topicLabel": "Tractul gastrointestinal",
+      "lessonUrl": "sistemul_digestiv.html#tractul-gastrointestinal",
+      "id": "asoc-023"
+    },
+    {
+      "number": 24,
+      "sourceNumber": 24,
+      "sourceChapter": "XIII",
+      "prompt": "Hormonul antidiuretic are următoarele efecte asupra rinichiului:",
+      "correct": [
+        "A"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "stimulează reabsorbția apei în tubii contorți distali și colectori",
+          "why": "ADH crește permeabilitatea tubilor contorți distali și colectori pentru apă, favorizând reabsorbția acesteia din filtrat. Sursa: „Sistemul urinar”, secțiunea Activitatea hormonală și urina."
+        },
+        {
+          "letter": "B",
+          "text": "scade diureza și concentrația urinei",
+          "why": "Reabsorbția crescută a apei reduce cantitatea de apă care rămâne în urină și o concentrează. Scăderea concentrației urinei nu corespunde efectului ADH. Sursa: „Sistemul urinar”, secțiunea Activitatea hormonală și urina."
+        },
+        {
+          "letter": "C",
+          "text": "crește presiunea arterială",
+          "why": "ADH poate crește presiunea sanguină, atât prin reținerea apei, cât și prin efectul vascular descris în tabel. Baremul nu selectează C deoarece enunțul solicită efectul asupra rinichiului, iar C formulează rezultatul circulator general. Sursa: „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară)."
+        },
+        {
+          "letter": "D",
+          "text": "realizează diluarea urinei",
+          "why": "Diluarea urinei este descrisă când secreția ADH este inhibată: apa este reabsorbită mai puțin și rămâne în tubi. ADH are efectul opus. Sursa: „Sistemul urinar”, secțiunea Activitatea hormonală și urina."
+        },
+        {
+          "letter": "E",
+          "text": "stimulează reabsorbția de săruri în tubul contort proximal",
+          "why": "ADH controlează reabsorbția apei distal și în tubul colector. Reabsorbția sodiului este stimulată de aldosteron, în principal în tubul contort distal, nu proximal. Sursa: „Sistemul urinar”, secțiunea Activitatea hormonală și urina."
+        }
+      ],
+      "sourcePages": [
+        236
+      ],
+      "topicId": "renal",
+      "topicLabel": "Rinichiul și reglarea diurezei",
+      "lessonUrl": "sistemul_renal_complet.html#hormoni",
+      "id": "asoc-024"
+    },
+    {
+      "number": 25,
+      "sourceNumber": 25,
+      "sourceChapter": "XIII",
+      "prompt": "Despre mitocondrii sunt incorecte următoarele enunțuri:",
+      "correct": [
+        "B",
+        "C"
+      ],
+      "asksFalse": true,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt organitele la nivelul cărora se eliberează cea mai mare parte a energiei provenite din alimente",
+          "why": "Manualul numește mitocondria organitul unde se eliberează cea mai mare parte a energiei provenite din alimente. Afirmația este adevărată și nu se selectează la cerința negativă. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "B",
+          "text": "în absența oxigenului, nu produc deloc ATP",
+          "why": "Manualul spune că fără oxigen mitocondria produce ATP insuficient. „Nu produc deloc” transformă această insuficiență într-o absență totală și este selectată ca incorectă. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "C",
+          "text": "în interiorul lor, oxigenul se combină doar cu hidrogenul ca să formeze apa",
+          "why": "Descrierea manualului precizează combinarea oxigenului cu hidrogen și electroni pentru a forma apă. Varianta spune „doar cu hidrogenul”, omițând electronii din formularea sursei; baremul o selectează ca incorectă. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "D",
+          "text": "folosesc oxigenul din aerul inspirat",
+          "why": "Mitocondriile folosesc oxigenul provenit din aerul inspirat. Afirmația este adevărată și nu răspunde cerinței negative. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "E",
+          "text": "sunt saci membranoși cu partiție interioară",
+          "why": "Figura celulei arată mitocondriile delimitate și compartimentate prin pliurile membranei interne, corespunzând descrierii de saci membranoși cu partiție interioară. Baremul nu selectează E la cerința negativă. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele; figura 3.5."
+        }
+      ],
+      "sourcePages": [
+        236
+      ],
+      "topicId": "mitocondrii",
+      "topicLabel": "Metabolismul energetic celular",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#energie",
+      "id": "asoc-025"
+    },
+    {
+      "number": 26,
+      "sourceNumber": 26,
+      "sourceChapter": "XIII",
+      "prompt": "Despre glandele salivare sunt adevărate următoarele afirmații:",
+      "correct": [
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "glanda sublinguală prezintă un singur duct de excreție ce se deschide la nivelul planșeului oral",
+          "why": "Glandele sublinguale sunt drenate prin mai multe ducte care se deschid în planșeul oral, nu printr-un singur duct. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "B",
+          "text": "glanda submaxilară are un duct ce se deschide lateral de frâul limbii",
+          "why": "Tabelul glandelor salivare situează deschiderea ductului submandibular pe planșeul oral, lateral de frâul limbii. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "C",
+          "text": "prin secreția lor, participă la formarea bolului alimentar",
+          "why": "Saliva leagă și lubrifiază particulele alimentare; limba le transformă cu ajutorul ei în boluri alimentare. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "D",
+          "text": "glanda parotidă are un duct ce se deschide pe partea internă a obrajilor, opus celui de-al doilea molar inferior",
+          "why": "Ductul parotidian se deschide pe partea internă a obrazului opus celui de-al doilea molar superior, nu inferior. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "E",
+          "text": "asigură gustul prin mugurii gustativi pe care îi conțin",
+          "why": "Mugurii gustativi sunt în papilele limbii. Glandele salivare produc salivă, nu sunt descrise ca organe care conțin muguri gustativi. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        }
+      ],
+      "sourcePages": [
+        236
+      ],
+      "topicId": "digestiv",
+      "topicLabel": "Tractul gastrointestinal",
+      "lessonUrl": "sistemul_digestiv.html#tractul-gastrointestinal",
+      "id": "asoc-026"
+    },
+    {
+      "number": 27,
+      "sourceNumber": 27,
+      "sourceChapter": "XIII",
+      "prompt": "Despre deglutiție sunt corecte următoarele afirmații:",
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "în prima etapă, în cavitatea orală, limba se ridică spre palatul dur",
+          "why": "În etapa orală voluntară, limba se ridică, comprimă bolul de palatul dur și îl împinge spre faringe. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "B",
+          "text": "în etapa involuntară, epiglota acoperă laringele",
+          "why": "La trecerea bolului către esofag, epiglota acoperă laringele, protejând calea respiratorie. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "C",
+          "text": "în etapa desfășurată în esofag, apare peristaltismul care presupune contracția întregii musculaturi a esofagului",
+          "why": "Peristaltismul este o undă de contracții: se contractă mai întâi musculatura longitudinală, apoi cea circulară, propulsând bolul. Nu este descrisă o contracție a întregii musculaturi esofagiene ca un singur ansamblu. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "D",
+          "text": "la controlul ei participă și nervul glosofaringian",
+          "why": "Nervul glosofaringian are funcții senzoriale și motorii pentru limbă și faringe, structuri participante la deglutiție. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos periferic; „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "E",
+          "text": "centrul ei se găsește în bulbul rahidian",
+          "why": "Bulbul rahidian conține centri de control pentru deglutiție, alături de alte activități viscerale. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos central."
+        }
+      ],
+      "sourcePages": [
+        236
+      ],
+      "topicId": "digestiv",
+      "topicLabel": "Tractul gastrointestinal",
+      "lessonUrl": "sistemul_digestiv.html#tractul-gastrointestinal",
+      "id": "asoc-027"
+    },
+    {
+      "number": 28,
+      "sourceNumber": 28,
+      "sourceChapter": "XIII",
+      "prompt": "Despre mișcările moleculare realizate transmembranar se pot afirma următoarele:",
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "oxigenul trece pasiv, prin difuziune, din alveole în sângele din capilarele pulmonare",
+          "why": "Oxigenul trece prin difuziune din alveole spre sângele capilar, conform gradientului de concentrație, fără transport activ. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "B",
+          "text": "în hematii, glucoza difuzează pasiv, cu ajutorul unor cărăuși",
+          "why": "Tabelul transportului membranar dă ca exemplu de difuziune facilitată pătrunderea glucozei în hematii cu ajutorul unei proteine transportoare. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "C",
+          "text": "reabsorbția sărurilor la nivelul tubilor renali se face cu consum de energie",
+          "why": "Reabsorbția sărurilor în tubii renali este exemplul de transport activ, care folosește energia ATP. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "D",
+          "text": "hematiile preiau particule solide, străine organismului, și le distrug",
+          "why": "Ingestia bacteriilor este exemplificată prin leucocite. Hematiile sunt prezentate ca celule cu organizare redusă, fără organite, specializate în transportul gazelor. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare; „Sângele”, secțiunea Globulele roșii."
+        },
+        {
+          "letter": "E",
+          "text": "suspendarea unei hematii în soluție de 1 % sare duce la zbârcirea ei",
+          "why": "În convenția numerică a manualului, aproximativ 1% sare corespunde mediului izoton; zbârcirea este descrisă într-un mediu hiperton, cum este exemplul cu 5%. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        }
+      ],
+      "sourcePages": [
+        237
+      ],
+      "topicId": "transport",
+      "topicLabel": "Transportul prin membrane",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#transport",
+      "id": "asoc-028"
+    },
+    {
+      "number": 29,
+      "sourceNumber": 29,
+      "sourceChapter": "XIII",
+      "prompt": "Mediastinul conține:",
+      "correct": [
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "esofagul și stomacul",
+          "why": "Esofagul este în mediastin, dar stomacul este în partea superioară stângă a abdomenului. Asocierea celor două ca organe mediastinale este greșită. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului; „Sistemul digestiv”, secțiunea Stomacul."
+        },
+        {
+          "letter": "B",
+          "text": "traheea",
+          "why": "Traheea este enumerată explicit între structurile mediastinului. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        },
+        {
+          "letter": "C",
+          "text": "ductul toracic situat dorsal față de esofag",
+          "why": "Ductul toracic urcă în torace anterior de vertebre și dorsal față de esofag, conform descrierii manualului. Sursa: „Sistemul limfatic și imun”, secțiunea Sistemul limfatic."
+        },
+        {
+          "letter": "D",
+          "text": "bronhia principală stângă ce este mai largă decât cea dreaptă",
+          "why": "Bronhiile principale aparțin căilor descrise în mediastin, însă cea dreaptă este mai largă și mai verticală decât cea stângă. Comparația din variantă este inversată. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "E",
+          "text": "un organ limfatic cu structură lobulară",
+          "why": "Timusul este organ limfatic din mediastin și este împărțit în lobuli care conțin celule de suport și limfocite T. Sursa: „Sistemul endocrin”, secțiunea Alte glande endocrine; „Sistemul limfatic și imun”, secțiunea Timusul."
+        }
+      ],
+      "sourcePages": [
+        237
+      ],
+      "topicId": "cavitati",
+      "topicLabel": "Cavitățile corpului",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#cavitati",
+      "id": "asoc-029"
+    },
+    {
+      "number": 30,
+      "sourceNumber": 30,
+      "sourceChapter": "XIII",
+      "prompt": "Inervația vegetativă a inimii se realizează prin fibre:",
+      "correct": [
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "preganglionare simpatice, care transmit impulsuri ce produc scăderea contracțiilor inimii",
+          "why": "La organ ajung fibre postganglionare, iar stimularea simpatică mărește frecvența și contracția cardiacă. Varianta greșește atât tipul fibrei terminale, cât și efectul. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ); „Sistemul cardiovascular”, secțiunea Mușchiul cardiac."
+        },
+        {
+          "letter": "B",
+          "text": "preganglionare vagale, care transmit impulsuri ce produc amplificarea contracțiilor cardiace",
+          "why": "Calea vagală este parasimpatică și încetinește ritmul cardiac. La organ, neuronul care urmează ganglionului este postganglionar; amplificarea contracțiilor este efect simpatic. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ); „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ); figura 11.10."
+        },
+        {
+          "letter": "C",
+          "text": "postganglionare simpatice, provenite din lanțul ganglionar simpatic",
+          "why": "Neuronii postganglionari își trimit axonii la organe. Figura arată fibrele către inimă provenind din lanțul ganglionar simpatic. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ); „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ); figura 11.10."
+        },
+        {
+          "letter": "D",
+          "text": "postganglionare parasimpatice, ce eliberează acetilcolină",
+          "why": "Fibrele postganglionare parasimpatice sunt colinergice: eliberează acetilcolină la efector. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ)."
+        },
+        {
+          "letter": "E",
+          "text": "preganglionare simpatice, care eliberează noradrenalină",
+          "why": "Fibrele preganglionare simpatice eliberează acetilcolină. Noradrenalina este mediatorul fibrelor postganglionare simpatice. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ)."
+        }
+      ],
+      "sourcePages": [
+        237
+      ],
+      "topicId": "cardiac",
+      "topicLabel": "Reglarea activității cardiace",
+      "lessonUrl": "sistemul_cardiovascular.html#muschiul-cardiac",
+      "id": "asoc-030"
+    },
+    {
+      "number": 31,
+      "sourceNumber": 31,
+      "sourceChapter": "XIII",
+      "prompt": "Activitatea cardiacă poate fi influențată de:",
+      "correct": [
+        "A",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "fibre nervoase vegetative care pleacă de la nivelul bulbului rahidian",
+          "why": "Bulbul conține centri de control cardiac și este originea aparentă a vagului. Figura arată calea parasimpatică vagală către inimă. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos central; „Organizarea sistemului nervos”, secțiunea Sistemul nervos periferic; „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ); figura 11.10."
+        },
+        {
+          "letter": "B",
+          "text": "impulsuri transmise prin nervul X, care are originea aparentă la nivelul punții",
+          "why": "Nervul X, vag, influențează inima, dar originea sa aparentă este în bulbul rahidian, nu în punte. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos periferic."
+        },
+        {
+          "letter": "C",
+          "text": "noradrenalină, care crește forța de contracție a inimii",
+          "why": "Fibrele postganglionare simpatice secretă noradrenalină, iar stimularea simpatică mărește contracția ventriculară și frecvența cardiacă. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ); „Sistemul cardiovascular”, secțiunea Mușchiul cardiac."
+        },
+        {
+          "letter": "D",
+          "text": "prostaglandine secretate de miocard",
+          "why": "Baremul exclude D. Manualul menționează celule endocrine secretoare de prostaglandine în inimă, dar nu le identifică explicit cu miocardul și nu descrie aici efectul asupra activității cardiace. Excluderea nu poate fi justificată afirmând că inima nu secretă prostaglandine. Sursa: „Sistemul endocrin”, secțiunea Alte glande endocrine; „Sistemul cardiovascular”, secțiunea Mușchiul cardiac."
+        },
+        {
+          "letter": "E",
+          "text": "catecolamine, care accelerează ritmul cardiac",
+          "why": "Adrenalina și noradrenalina sunt catecolaminele medulosuprarenale, care acționează împreună cu sistemul simpatic și pregătesc organismul pentru efort; efectul cardiac include accelerarea ritmului. Sursa: „Sistemul endocrin”, secțiunea Glandele suprarenale; „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ)."
+        }
+      ],
+      "sourcePages": [
+        237
+      ],
+      "topicId": "cardiac",
+      "topicLabel": "Reglarea activității cardiace",
+      "lessonUrl": "sistemul_cardiovascular.html#muschiul-cardiac",
+      "id": "asoc-031"
+    },
+    {
+      "number": 32,
+      "sourceNumber": 32,
+      "sourceChapter": "XIII",
+      "prompt": "Asupra musculaturii netede a bronhiolelor acționează:",
+      "correct": [
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "centrii respiratori din bulb și punte",
+          "why": "Manualul leagă centrii bulbopontini de controlul mușchilor respiratori scheletici și al ventilației. Pentru musculatura căilor bronșice, figura prezintă controlul simpatic și parasimpatic. Sursa: „Sistemul respirator”, secțiunea Respirația; „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ); figura 11.10."
+        },
+        {
+          "letter": "B",
+          "text": "variația concentrației plasmatice a gazelor respiratorii",
+          "why": "Baremul exclude B. Sursa descrie variațiile CO₂ și O₂ în reglarea centrilor respiratori și a ventilației, nu un efect direct al gazelor plasmatice asupra mușchiului bronhiolar. Lipsa acestei descrieri nu dovedește absența oricărui efect. Sursa: „Sistemul respirator”, secțiunea Respirația; „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ); figura 11.10."
+        },
+        {
+          "letter": "C",
+          "text": "sistemul nervos simpatic care determină relaxarea acestora",
+          "why": "Peretele bronhiolelor conține mușchi neted, iar schema controlului vegetativ atribuie componentei simpatice relaxarea căilor bronșice. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ); figura 11.10; „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "D",
+          "text": "sistemul nervos parasimpatic care determină bronhoconstricție",
+          "why": "Schema controlului vegetativ atribuie parasimpaticului constricția căilor bronșice, realizată prin musculatura netedă a acestora. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ); figura 11.10; „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "E",
+          "text": "impulsuri de la chemoreceptorii situați în unele vase de sânge - arterele carotide și arcul aortic",
+          "why": "Chemoreceptorii carotidieni și aortici trimit impulsuri centrului respirator pentru modificarea frecvenței și amplitudinii respirației. Sursa nu îi prezintă ca fibre eferente care acționează direct asupra bronhiolelor. Sursa: „Sistemul respirator”, secțiunea Respirația; „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ); figura 11.10."
+        }
+      ],
+      "sourcePages": [
+        237
+      ],
+      "topicId": "respirator",
+      "topicLabel": "Reglarea respirației și a căilor aeriene",
+      "lessonUrl": "sistemul_respirator.html#respiratie",
+      "id": "asoc-032"
+    },
+    {
+      "number": 33,
+      "sourceNumber": 33,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele mecanisme se activează postprandial:",
+      "correct": [
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "secreția de glucagon și cea de insulină, care sunt crescute",
+          "why": "Manualul asociază stării postprandiale nivelul ridicat al insulinei, iar stării de post nivelul ridicat al glucagonului. Nu descrie creșterea ambilor ca mecanism caracteristic postprandial. Sursa: „Metabolism și nutriție”, secțiunea Stări metabolice și metabolismul mineralelor."
+        },
+        {
+          "letter": "B",
+          "text": "eliberarea de hormoni, cu scăderea fracției insulină/glucagon",
+          "why": "Starea postprandială este dominată de insulină și depozitarea nutrienților, pe când glucagonul este crescut în post. O scădere a raportului insulină/glucagon nu exprimă această situație. Sursa: „Metabolism și nutriție”, secțiunea Stări metabolice și metabolismul mineralelor."
+        },
+        {
+          "letter": "C",
+          "text": "procesul de glicogenogeneză în ficat, care este stimulat",
+          "why": "După masă, ficatul transformă surplusul de glucide în glicogen; formarea glicogenului reprezintă glicogenogeneza. Sursa: „Metabolism și nutriție”, secțiunea Stări metabolice și metabolismul mineralelor."
+        },
+        {
+          "letter": "D",
+          "text": "anabolismul proteic, care este stimulat",
+          "why": "În starea de absorbție, aminoacizii sunt utilizați pentru sinteza proteinelor, un proces anabolic. Sursa: „Metabolism și nutriție”, secțiunea Stări metabolice și metabolismul mineralelor."
+        },
+        {
+          "letter": "E",
+          "text": "lipogeneza, care este stimulată",
+          "why": "Excesul de glucide este transformat în lipide, apoi depozitat în țesutul adipos. Acesta este procesul de lipogeneză. Sursa: „Metabolism și nutriție”, secțiunea Stări metabolice și metabolismul mineralelor."
+        }
+      ],
+      "sourcePages": [
+        237
+      ],
+      "topicId": "metabolism",
+      "topicLabel": "Metabolismul în stările de nutriție",
+      "lessonUrl": "metabolism_si_nutritie.html#stari-si-minerale",
+      "id": "asoc-033"
+    },
+    {
+      "number": 34,
+      "sourceNumber": 34,
+      "sourceChapter": "XIII",
+      "prompt": "Despre enzimele sucului gastric sunt corecte următoarele afirmații:",
+      "correct": [
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "pepsina descompune toate tipurile de proteine în peptide",
+          "why": "Tabelul afirmă că pepsina descompune aproape toate tipurile de proteine. Varianta elimină precizarea „aproape” și generalizează la toate. Sursa: „Sistemul digestiv”, secțiunea Stomacul."
+        },
+        {
+          "letter": "B",
+          "text": "principala enzimă din această secreție se formează dintr-un precursor, în prezența acidului clorhidric",
+          "why": "Pepsina se formează din precursorul pepsinogen în prezența acidului clorhidric. Sursa: „Sistemul digestiv”, secțiunea Stomacul."
+        },
+        {
+          "letter": "C",
+          "text": "mucusul protejează mucoasa gastrică de autodigestie",
+          "why": "Mucusul protejează într-adevăr peretele gastric de autodigestie, dar nu este enzimă; enunțul cere afirmații despre enzimele sucului gastric. Sursa: „Sistemul digestiv”, secțiunea Stomacul."
+        },
+        {
+          "letter": "D",
+          "text": "acidul clorhidric este produs de celulele parietale gastrice",
+          "why": "Celulele parietale produc acid clorhidric, însă acesta nu este enzimă. Varianta nu răspunde categoriei cerute. Sursa: „Sistemul digestiv”, secțiunea Stomacul."
+        },
+        {
+          "letter": "E",
+          "text": "labfermentul facilitează digestia laptelui la sugar",
+          "why": "Manualul descrie labfermentul ca enzimă proteolitică din stomacul sugarului, cu rol în digestia laptelui. Sursa: „Sistemul digestiv”, secțiunea Stomacul."
+        }
+      ],
+      "sourcePages": [
+        237
+      ],
+      "topicId": "stomac",
+      "topicLabel": "Stomacul",
+      "lessonUrl": "sistemul_digestiv.html#stomacul",
+      "id": "asoc-034"
+    },
+    {
+      "number": 35,
+      "sourceNumber": 35,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile incorecte:",
+      "correct": [
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": true,
+      "options": [
+        {
+          "letter": "A",
+          "text": "noradrenalina stimulează slab secreția salivară",
+          "why": "Schema vegetativă atribuie simpaticului stimularea slabă a salivației, iar mediatorul său postganglionar este noradrenalina. Afirmația este adevărată, deci nu se selectează. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ); „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ); figura 11.10."
+        },
+        {
+          "letter": "B",
+          "text": "glota închide laringele în timpul deglutiției",
+          "why": "Epiglota acoperă laringele în deglutiție. Varianta o înlocuiește cu glota și este incorectă. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "C",
+          "text": "scoarța cerebrală poate controla toate etapele deglutiției",
+          "why": "Prima etapă orală este voluntară, apoi începe etapa involuntară, controlată prin nervii vegetativi. „Toate etapele” nu respectă această distincție. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "D",
+          "text": "centrul de control al deglutiției se găsește în bulbul rahidian",
+          "why": "Centrul deglutiției este în bulbul rahidian. Afirmația este adevărată și nu se selectează la cerința negativă. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos central."
+        },
+        {
+          "letter": "E",
+          "text": "contracțiile faringelui, din prima etapă a deglutiției, sunt coordonate de nervul glosofaringian",
+          "why": "Glosofaringianul deservește faringele, dar contracțiile faringiene apar în etapa involuntară, după faza orală voluntară. Varianta le plasează greșit în prima etapă. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal; „Organizarea sistemului nervos”, secțiunea Sistemul nervos periferic."
+        }
+      ],
+      "sourcePages": [
+        237,
+        238
+      ],
+      "topicId": "digestiv",
+      "topicLabel": "Tractul gastrointestinal",
+      "lessonUrl": "sistemul_digestiv.html#tractul-gastrointestinal",
+      "id": "asoc-035"
+    },
+    {
+      "number": 36,
+      "sourceNumber": 36,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele afirmații sunt false:",
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": true,
+      "options": [
+        {
+          "letter": "A",
+          "text": "planul transversal împarte corpul în două jumătăți egale",
+          "why": "Planul transversal separă o parte superioară de una inferioară, fără condiția egalității. Planul mediosagital este cel definit prin două jumătăți egale, stângă și dreaptă. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Termeni direcționali."
+        },
+        {
+          "letter": "B",
+          "text": "diafragma este un mușchi sub formă de cupolă, cu convexitatea orientată spre cavitatea abdomino-pelviană",
+          "why": "Diafragma are formă de cupolă, iar figura arată bombarea ei în sus, către torace. Varianta orientează convexitatea în sens opus. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului; „Sistemul respirator”, secțiunea Respirația; figura 17.6."
+        },
+        {
+          "letter": "C",
+          "text": "ductul toracic de la nivelul mediastinului este situat anterior de esofag",
+          "why": "Ductul toracic este dorsal, adică posterior, față de esofag, nu anterior. Sursa: „Sistemul limfatic și imun”, secțiunea Sistemul limfatic."
+        },
+        {
+          "letter": "D",
+          "text": "vezica biliară se găsește în cadranul superior drept",
+          "why": "Vezica biliară este de aceeași parte cu colonul ascendent, la dreapta, în regiunea superioară abdominală. Afirmația este adevărată și nu este selectată între cele false. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Termeni direcționali; „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros; figura 18.8; „Sistemul digestiv”, secțiunea Organele anexe."
+        },
+        {
+          "letter": "E",
+          "text": "organele retroperitoneale sunt acoperite pe fața posterioară de peritoneu",
+          "why": "Organele retroperitoneale sunt acoperite de peritoneu doar pe fața anterioară, conform definiției manualului, nu pe cea posterioară. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        }
+      ],
+      "sourcePages": [
+        238
+      ],
+      "topicId": "cavitati",
+      "topicLabel": "Cavitățile corpului",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#cavitati",
+      "id": "asoc-036"
+    },
+    {
+      "number": 37,
+      "sourceNumber": 37,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "centrul vomei se găsește în medulla oblongata",
+          "why": "Printre centrii bulbului rahidian, numit și medulla oblongata, se află și centrul vomei. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos central."
+        },
+        {
+          "letter": "B",
+          "text": "acetilcolina și gastrina controlează secreția gastrică",
+          "why": "Secreția gastrică este controlată de fibre parasimpatice, care eliberează acetilcolină, și de gastrina produsă în mucoasa stomacului. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ); „Sistemul digestiv”, secțiunea Stomacul."
+        },
+        {
+          "letter": "C",
+          "text": "colecistochinina controlează eliberarea secreției produse de ficat în duoden",
+          "why": "Bila este produsă de ficat, iar eliberarea sa în duoden este controlată de colecistochinină. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "D",
+          "text": "artera gastrică stângă este ramură directă a trunchiului celiac",
+          "why": "Artera celiacă dă naștere arterelor gastrică stângă, splenică și hepatică; figura confirmă ramificarea directă. Sursa: „Sistemul cardiovascular”, secțiunea Tipuri de circulație sanguină; figura 15.9."
+        },
+        {
+          "letter": "E",
+          "text": "pepsinogenul are rolul de a descompune proteinele mari în proteine mai mici numite peptide",
+          "why": "Pepsinogenul este precursorul inactiv; după transformarea în pepsină în mediul acid, enzima descompune proteinele în peptide. Sursa: „Sistemul digestiv”, secțiunea Stomacul."
+        }
+      ],
+      "sourcePages": [
+        238
+      ],
+      "topicId": "stomac",
+      "topicLabel": "Stomacul",
+      "lessonUrl": "sistemul_digestiv.html#stomacul",
+      "id": "asoc-037"
+    },
+    {
+      "number": 38,
+      "sourceNumber": 38,
+      "sourceChapter": "XIII",
+      "prompt": "Despre eritropoieză sunt adevărate următoarele afirmații:",
+      "correct": [
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "presupune transformarea directă a hemocitoblaștilor în hematii mature",
+          "why": "Hemocitoblaștii trec prin mai multe stadii înainte de a deveni eritrocite mature. Transformarea nu este directă. Sursa: „Sângele”, secțiunea Globulele roșii."
+        },
+        {
+          "letter": "B",
+          "text": "se produce și la nivelul unui os plat situat la nivelul toracelui",
+          "why": "Sternul este unul dintre oasele care conțin măduvă roșie hematopoietică; în aceasta se formează și hematii. Sursa: „Oasele și articulațiile”, secțiunea Osul."
+        },
+        {
+          "letter": "C",
+          "text": "se produce și la nivelul unor oase neregulate care prin suprapunere alcătuiesc o structură ce face parte din scheletul axial al corpului",
+          "why": "Manualul enumeră vertebrele între oasele cu măduvă roșie în care se formează celulele sanguine, inclusiv hematiile. Sursa: „Oasele și articulațiile”, secțiunea Osul."
+        },
+        {
+          "letter": "D",
+          "text": "are loc și la nivelul celulelor renale care secretă eritropoietină",
+          "why": "Eritrocitele se formează în măduva osoasă roșie. Celulele renale secretă eritropoietină, hormon care reglează acest proces, fără a fi sediul eritropoiezei. Sursa: „Sângele”, secțiunea Globulele roșii."
+        },
+        {
+          "letter": "E",
+          "text": "presupune transformarea, în măduva roșie, a hemocitoblaștilor în megacariocite și apoi în trombocite",
+          "why": "Formarea megacariocitelor și a plachetelor aparține producerii trombocitelor. Eritropoieza produce globule roșii. Sursa: „Sângele”, secțiunea Plachetele sanguine; „Sângele”, secțiunea Globulele roșii."
+        }
+      ],
+      "sourcePages": [
+        238
+      ],
+      "topicId": "eritrocite",
+      "topicLabel": "Eritrocitele și eritropoieza",
+      "lessonUrl": "sangele.html#globulele-rosii",
+      "id": "asoc-038"
+    },
+    {
+      "number": 39,
+      "sourceNumber": 39,
+      "sourceChapter": "XIII",
+      "prompt": "În structura tractului gastrointestinal se întâlnesc:",
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "un organ vascularizat de artera și vena mezenterică superioară",
+          "why": "Intestinul subțire este deservit de artera mezenterică superioară, iar circulația venoasă abdominală include vena mezenterică superioară. Intestinul face parte din tractul gastrointestinal. Sursa: „Sistemul cardiovascular”, secțiunea Tipuri de circulație sanguină."
+        },
+        {
+          "letter": "B",
+          "text": "duodenul, la nivelul căruia se eliberează secrețiile a două glande anexe ale tubului digestiv",
+          "why": "În duoden ajung bila și sucul pancreatic, prin căile care converg în ampula hepatopancreatică. Ficatul și pancreasul sunt cele două glande anexe implicate. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros; „Sistemul digestiv”, secțiunea Organele anexe."
+        },
+        {
+          "letter": "C",
+          "text": "un organ care are musculatură striată în treimea sa superioară",
+          "why": "Esofagul are musculatură striată în treimea sa superioară și musculatură exclusiv netedă în treimea inferioară. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "D",
+          "text": "un organ care este localizat atât în torace cât și în abdomen",
+          "why": "Esofagul se află în mediastin și traversează diafragma către stomac; astfel, traseul său include toracele și abdomenul. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului; „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "E",
+          "text": "un organ subdiafragmatic care secretă substanțe cu rol în emulsionarea lipidelor",
+          "why": "Ficatul produce bila cu săruri care emulsionează lipidele, dar este organ anex al sistemului digestiv. Enunțul cere componente ale tractului gastrointestinal. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal; „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        }
+      ],
+      "sourcePages": [
+        238
+      ],
+      "topicId": "digestiv",
+      "topicLabel": "Tractul gastrointestinal",
+      "lessonUrl": "sistemul_digestiv.html#tractul-gastrointestinal",
+      "id": "asoc-039"
+    },
+    {
+      "number": 40,
+      "sourceNumber": 40,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "miocardul are celule care prezintă autoritmicitate și celule care se contractă",
+          "why": "Țesutul excitoconductor conține celule cu autoritmicitate, iar impulsurile lui determină contracția celulelor miocardice. Sursa: „Sistemul cardiovascular”, secțiunea Mușchiul cardiac."
+        },
+        {
+          "letter": "B",
+          "text": "la nivelul inimii sunt prezente fibre postganglionare parasimpatice ce eliberează acetilcolină",
+          "why": "La organe ajung fibrele postganglionare; cele parasimpatice eliberează acetilcolină, inclusiv pe calea către inimă. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ)."
+        },
+        {
+          "letter": "C",
+          "text": "sistemul nervos vegetativ poate modifica activitatea nodului sinoatrial",
+          "why": "Nodul sinoatrial generează ritmul sinusal, iar sistemul nervos autonom poate crește sau reduce frecvența bătăilor cardiace. Sursa: „Sistemul cardiovascular”, secțiunea Mușchiul cardiac."
+        },
+        {
+          "letter": "D",
+          "text": "la nivelul inimii ajung fibre postganglionare simpatice ce eliberează noradrenalină",
+          "why": "Fibrele postganglionare simpatice eliberează noradrenalină și cresc frecvența și contracția cardiacă. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ); „Sistemul cardiovascular”, secțiunea Mușchiul cardiac."
+        },
+        {
+          "letter": "E",
+          "text": "sistemul nervos vegetativ inițiază contracția celulelor musculare cardiace",
+          "why": "Contracțiile cardiace sunt inițiate de țesutul excitoconductor propriu inimii, fără intervenție nervoasă. Sistemul vegetativ modulează activitatea, nu o inițiază. Sursa: „Sistemul cardiovascular”, secțiunea Mușchiul cardiac."
+        }
+      ],
+      "sourcePages": [
+        238
+      ],
+      "topicId": "cardiac",
+      "topicLabel": "Reglarea activității cardiace",
+      "lessonUrl": "sistemul_cardiovascular.html#muschiul-cardiac",
+      "id": "asoc-040"
+    },
+    {
+      "number": 41,
+      "sourceNumber": 41,
+      "sourceChapter": "XIII",
+      "prompt": "Despre fosfor sunt adevărate următoarele afirmații:",
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "intră în compoziția celei mai importante forme de stocare a energiei în organism",
+          "why": "Fosforul intră în ATP, molecula în care se stochează energia eliberată prin reacții metabolice și pe care manualul o numește sursă de energie imediată. Aceasta este molecula vizată de barem. Sursa: „Metabolism și nutriție”, secțiunea Stări metabolice și metabolismul mineralelor; „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "B",
+          "text": "intră în structura membranelor celulare",
+          "why": "Fosfolipidele membranei au un capăt polarizat care conține fosfor, deci fosforul participă la structura membranară. Sursa: „Celula și fiziologia celulară”, secțiunea Membrana plasmatică."
+        },
+        {
+          "letter": "C",
+          "text": "nu se elimină prin urină",
+          "why": "Urina conține fosfați printre anionii eliminați. Prin urmare, fosforul se poate elimina pe cale urinară. Sursa: „Sistemul urinar”, secțiunea Activitatea hormonală și urina."
+        },
+        {
+          "letter": "D",
+          "text": "se găsește în structuri din componența nucleului",
+          "why": "Fosforul intră în acizii nucleici, iar nucleul conține ADN. Prin această componentă, fosforul participă la alcătuirea nucleului. Sursa: „Metabolism și nutriție”, secțiunea Stări metabolice și metabolismul mineralelor; „Celula și fiziologia celulară”, secțiunea Nucleul."
+        },
+        {
+          "letter": "E",
+          "text": "sub formă de ioni de fosfat organic, participă la sarcina electrică negativă intracelulară",
+          "why": "Manualul include ionii de fosfat organic între ionii negativi din citoplasmă care contribuie la electronegativitatea intracelulară. Sursa: „Țesutul nervos”, secțiunea Fiziologia nervilor."
+        }
+      ],
+      "sourcePages": [
+        238
+      ],
+      "topicId": "metabolism",
+      "topicLabel": "Metabolismul în stările de nutriție",
+      "lessonUrl": "metabolism_si_nutritie.html#stari-si-minerale",
+      "id": "asoc-041"
+    },
+    {
+      "number": 42,
+      "sourceNumber": 42,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre următorii hormoni sunt secretați în caz de hiperglicemie:",
+      "correct": [
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "glucocorticoizii, care produc gluconeogeneză în ficat",
+          "why": "Glucocorticoizii reglează metabolismul sub control ACTH. Sursa prezintă insulina, nu glucocorticoizii, ca răspuns la glicemia crescută; producerea glucozei nu explică reducerea hiperglicemiei. Sursa: „Sistemul endocrin”, secțiunea Glandele suprarenale; „Sistemul endocrin”, secțiunea Pancreasul."
+        },
+        {
+          "letter": "B",
+          "text": "glucagonul, care produce glicogenoliză hepatică",
+          "why": "Glucagonul este eliberat la nivel scăzut al glicemiei și stimulează glicogenoliza hepatică pentru a crește glucoza sanguină. Situația din enunț este opusă. Sursa: „Sistemul endocrin”, secțiunea Pancreasul."
+        },
+        {
+          "letter": "C",
+          "text": "insulina, care stimulează transportul de glucoză în celulele organismului",
+          "why": "Creșterea glicemiei stimulează insulina, care favorizează pătrunderea glucozei în celule și reduce concentrația ei sanguină. Sursa: „Sistemul endocrin”, secțiunea Pancreasul."
+        },
+        {
+          "letter": "D",
+          "text": "hormonul produs de celulele alfa ale pancreasului endocrin",
+          "why": "Celulele alfa produc glucagon, eliberat în lipsa aportului alimentar și asociat creșterii glicemiei. Nu este hormonul răspunsului la hiperglicemie. Sursa: „Sistemul endocrin”, secțiunea Pancreasul."
+        },
+        {
+          "letter": "E",
+          "text": "TSH, care stimulează depunerea glicogenului în ficat",
+          "why": "TSH stimulează tiroida și hormonii tiroidieni. Tabelul hipofizar atribuie stimularea depunerii glicogenului în ficat ACTH-ului, nu TSH-ului. Sursa: „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară)."
+        }
+      ],
+      "sourcePages": [
+        238,
+        239
+      ],
+      "topicId": "metabolism",
+      "topicLabel": "Metabolismul în stările de nutriție",
+      "lessonUrl": "metabolism_si_nutritie.html#stari-si-minerale",
+      "id": "asoc-042"
+    },
+    {
+      "number": 43,
+      "sourceNumber": 43,
+      "sourceChapter": "XIII",
+      "prompt": "Transportul activ:",
+      "correct": [
+        "A",
+        "B"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "se poate realiza cu ajutorul pompei de sodiu-potasiu, prezentă și în membrana neuronilor",
+          "why": "Pompa sodiu-potasiu neuronală scoate trei ioni de sodiu și introduce doi de potasiu împotriva gradientelor, folosind energia ATP. Sursa: „Țesutul nervos”, secțiunea Fiziologia nervilor."
+        },
+        {
+          "letter": "B",
+          "text": "este limitat de numărul proteinelor transportoare",
+          "why": "Manualul precizează că rata transportului activ este limitată de numărul proteinelor transportoare. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "C",
+          "text": "realizează reabsorbția sărurilor și a apei în tubii renali, utilizând proteine transportoare",
+          "why": "Sărurile sunt reabsorbite prin transport activ, dar apa este reabsorbită prin osmoză. Varianta atribuie ambelor același mecanism activ. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "D",
+          "text": "implică toate procesele ce folosesc proteine transportoare membranare",
+          "why": "Și difuziunea facilitată folosește proteine transportoare, fără a fi transport activ. Prezența transportorului nu este suficientă pentru această clasificare. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "E",
+          "text": "include și ingestia bacteriilor de către macrofage, microglii și celule Kupffer",
+          "why": "Ingestia particulelor solide este fagocitoză, o formă de endocitoză. Manualul o clasifică separat de transportul activ prin proteine transportoare; această distincție nu înseamnă că fagocitoza nu necesită energie. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        }
+      ],
+      "sourcePages": [
+        239
+      ],
+      "topicId": "transport",
+      "topicLabel": "Transportul prin membrane",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#transport",
+      "id": "asoc-043"
+    },
+    {
+      "number": 44,
+      "sourceNumber": 44,
+      "sourceChapter": "XIII",
+      "prompt": "Despre funcționarea sinapsei neuro-neuronale sunt adevărate următoarele:",
+      "correct": [
+        "A",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "exocitoza neurotransmițătorului în fanta sinaptică este determinată de deschiderea canalelor de calciu din membrana presinaptică",
+          "why": "Potențialul de acțiune deschide canalele presinaptice de calciu; influxul de calciu determină exocitoza neurotransmițătorului. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii."
+        },
+        {
+          "letter": "B",
+          "text": "veziculele sinaptice se găsesc în butonii terminali ai neuronilor presinaptici",
+          "why": "Veziculele sinaptice se află într-adevăr în butonii terminali. Baremul nu selectează B în această întrebare despre funcționare, deoarece varianta formulează o localizare structurală. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii."
+        },
+        {
+          "letter": "C",
+          "text": "receptorii de la nivelul membranei postsinaptice sunt molecule proteice care pot forma canale ionice",
+          "why": "Receptorii postsinaptici sunt descriși ca molecule proteice care formează canale ionice. Enunțul cere funcționarea sinapsei, iar această variantă exprimă alcătuirea receptorilor, fiind exclusă de barem. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii."
+        },
+        {
+          "letter": "D",
+          "text": "colinesteraza degradează acetilcolina în fanta sinaptică",
+          "why": "Colinesteraza descompune acetilcolina în interiorul sinapsei, limitând durata stimulului. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii."
+        },
+        {
+          "letter": "E",
+          "text": "noradrenalina se eliberează și la nivelul sinapselor din SNC",
+          "why": "Noradrenalina este eliberată și de neuroni din encefal și măduva spinării, deci în sistemul nervos central. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii."
+        }
+      ],
+      "sourcePages": [
+        239
+      ],
+      "topicId": "sinapsa",
+      "topicLabel": "Sinapsele și neurotransmițătorii",
+      "lessonUrl": "tesutul_nervos.html#sinapsa",
+      "id": "asoc-044"
+    },
+    {
+      "number": 45,
+      "sourceNumber": 45,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la neurotransmițători:",
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "serotonina participă la reglarea ritmului circadian",
+          "why": "Tabelul neurotransmițătorilor asociază serotonina cu ritmul circadian și cu reglarea somnului și a stării de veghe. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii."
+        },
+        {
+          "letter": "B",
+          "text": "dopamina se eliberează doar la nivelul sinapselor de la nivelul encefalului",
+          "why": "În tabelul manualului, localizarea indicată pentru dopamină este encefalul, iar rolul este controlul unor funcții motorii. Aceasta este localizarea reținută de barem. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii."
+        },
+        {
+          "letter": "C",
+          "text": "norepinefrina reglează unele funcții cerebrale",
+          "why": "Noradrenalina este prezentată cu rol în reglarea activității viscerelor și a unor funcții cerebrale. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii."
+        },
+        {
+          "letter": "D",
+          "text": "se eliberează din butonii terminali prin exocitoză",
+          "why": "Neurotransmițătorii stocați în veziculele butonilor terminali sunt eliberați prin exocitoză după influxul de calciu. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii."
+        },
+        {
+          "letter": "E",
+          "text": "asigură proprietatea de conductibilitate neuronală",
+          "why": "Neurotransmițătorii transmit mesajul peste fanta sinaptică și influențează următoarea celulă. Propagarea impulsului de-a lungul neuronului depinde de modificările electrochimice ale membranei; cele două procese nu sunt identice. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii; „Țesutul nervos”, secțiunea Fiziologia nervilor."
+        }
+      ],
+      "sourcePages": [
+        239
+      ],
+      "topicId": "sinapsa",
+      "topicLabel": "Sinapsele și neurotransmițătorii",
+      "lessonUrl": "tesutul_nervos.html#sinapsa",
+      "id": "asoc-045"
+    },
+    {
+      "number": 46,
+      "sourceNumber": 46,
+      "sourceChapter": "XIII",
+      "prompt": "Hormonii care influențează reabsorbția tubulară sunt:",
+      "correct": [
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "vasopresina, care crește reabsorbția de apă la nivelul tubului contort proximal și colector al nefronului",
+          "why": "ADH sau vasopresina controlează reabsorbția apei în tubul contort distal și colector. Varianta înlocuiește distal cu proximal. Sursa: „Sistemul urinar”, secțiunea Activitatea hormonală și urina."
+        },
+        {
+          "letter": "B",
+          "text": "parathormonul, care stimulează reabsorbția calciului",
+          "why": "Parathormonul influențează reabsorbția calciului în tubii renali, contribuind la creșterea nivelului sanguin al calciului. Sursa: „Sistemul endocrin”, secțiunea Glandele paratiroide."
+        },
+        {
+          "letter": "C",
+          "text": "aldosteronul, care reabsoarbe sodiul și participă la menținerea concentrației constante a sodiului în sânge",
+          "why": "Aldosteronul stimulează reabsorbția sodiului în tubul contort distal și reglează concentrația electroliților din sânge. Sursa: „Sistemul urinar”, secțiunea Activitatea hormonală și urina; „Sistemul endocrin”, secțiunea Glandele suprarenale."
+        },
+        {
+          "letter": "D",
+          "text": "mineralocorticoizii, care participă la menținerea concentrației potasiului în sânge, prin reabsorbția lui tubulară",
+          "why": "Aldosteronul, mineralocorticoidul descris, stimulează secreția potasiului din sânge în tubul distal. Varianta confundă secreția cu reabsorbția. Sursa: „Sistemul urinar”, secțiunea Activitatea hormonală și urina."
+        },
+        {
+          "letter": "E",
+          "text": "calcitonina, care determină hipercalcemie",
+          "why": "Calcitonina scade calcemia și stimulează depunerea calciului în oase. Hipercalcemia din variantă este efectul opus. Sursa: „Sistemul endocrin”, secțiunea Glanda tiroidă."
+        }
+      ],
+      "sourcePages": [
+        239
+      ],
+      "topicId": "renal",
+      "topicLabel": "Rinichiul și reglarea diurezei",
+      "lessonUrl": "sistemul_renal_complet.html#hormoni",
+      "id": "asoc-046"
+    },
+    {
+      "number": 47,
+      "sourceNumber": 47,
+      "sourceChapter": "XIII",
+      "prompt": "Despre globulele roșii sunt adevărate următoarele afirmații:",
+      "correct": [
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "conțin un pigment de culoare roșie în care atomul de Fe, ce poate fixa oxigenul, este situat la nivelul lanțurilor polipeptidice",
+          "why": "Fierul se află în gruparea hem atașată fiecărui lanț polipeptidic, nu în lanțul polipeptidic propriu-zis. Sursa: „Sângele”, secțiunea Globulele roșii."
+        },
+        {
+          "letter": "B",
+          "text": "cele bătrâne sunt distruse doar la nivelul splinei",
+          "why": "Hematiile îmbătrânite sunt distruse în splină, ficat și măduva osoasă. „Doar splina” restrânge greșit această distribuție. Sursa: „Sângele”, secțiunea Globulele roșii."
+        },
+        {
+          "letter": "C",
+          "text": "cuprul este utilizat în producția hemoglobinei",
+          "why": "Metabolismul mineralelor precizează utilizarea cuprului în producerea hemoglobinei și a melaninei. Sursa: „Metabolism și nutriție”, secțiunea Stări metabolice și metabolismul mineralelor."
+        },
+        {
+          "letter": "D",
+          "text": "eritropoietina reglează în parte formarea lor",
+          "why": "Eritropoietina, secretată de celule renale când primesc insuficient oxigen, reglează în parte producerea eritrocitelor. Sursa: „Sângele”, secțiunea Globulele roșii."
+        },
+        {
+          "letter": "E",
+          "text": "hemul din hemoglobină este convertit la nivelul splinei în pigmenți biliari",
+          "why": "La degradarea hemoglobinei rezultă biliverdină, apoi bilirubină. Bilirubina este transportată de la splină la ficat și excretată în bilă. Sursa: „Sângele”, secțiunea Globulele roșii."
+        }
+      ],
+      "sourcePages": [
+        239
+      ],
+      "topicId": "eritrocite",
+      "topicLabel": "Eritrocitele și eritropoieza",
+      "lessonUrl": "sangele.html#globulele-rosii",
+      "id": "asoc-047"
+    },
+    {
+      "number": 48,
+      "sourceNumber": 48,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "correct": [
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "impulsurile de la receptorii olfactivi sunt transmise pe calea nervului olfactiv cortexului olfactiv temporal și parietal",
+          "why": "Manualul localizează cortexul olfactiv în lobii frontal și temporal, nu temporal și parietal. Sursa: „Organele de simț”, secțiunea Alte simțuri."
+        },
+        {
+          "letter": "B",
+          "text": "receptorii pentru simțul mirosului sunt chemoreceptori localizați în mucoasa olfactivă, care căptușește întreaga cavitate nazală",
+          "why": "Celulele olfactive sunt în mucoasa porțiunii superioare a cavității nazale. Nu căptușesc întreaga cavitate nazală. Sursa: „Organele de simț”, secțiunea Alte simțuri."
+        },
+        {
+          "letter": "C",
+          "text": "nervul olfactiv, ce transmite impulsuri de la receptorii din mugurii gustativi, devine vizibil în aceeași regiune a encefalului ca nervul optic",
+          "why": "Gustul este transmis prin ramuri faciale și glosofaringiene, nu prin nervul olfactiv. În tabel, nervul olfactiv are originea aparentă în emisferele cerebrale, iar opticul în diencefal. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos periferic; „Organele de simț”, secțiunea Alte simțuri."
+        },
+        {
+          "letter": "D",
+          "text": "celulele olfactive sunt exteroceptori ce prezintă cili la polul apical",
+          "why": "Tabelul clasifică celulele olfactive ca exteroceptori, iar legenda figurii arată că moleculele odorante ating cilii acestora. Sursa: „Organele de simț”, secțiunea Receptorii și tabelul 12.1; „Organele de simț”, secțiunea Alte simțuri."
+        },
+        {
+          "letter": "E",
+          "text": "stimulii olfactivi sunt interpretați în lobii frontal și temporal",
+          "why": "Calea olfactivă se termină în cortexul olfactiv din lobii frontal și temporal, unde sunt interpretați stimulii. Sursa: „Organele de simț”, secțiunea Alte simțuri."
+        }
+      ],
+      "sourcePages": [
+        239,
+        240
+      ],
+      "topicId": "simturi",
+      "topicLabel": "Receptori și organe de simț",
+      "lessonUrl": "organele_de_simt.html#alte-simturi",
+      "id": "asoc-048"
+    },
+    {
+      "number": 49,
+      "sourceNumber": 49,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre următoarele afirmații sunt adevărate?",
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "hipofiza este localizată posterior de chiasma optică",
+          "why": "Hipofiza este situată în șaua turcească, imediat înapoia chiasmei optice. Sursa: „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară)."
+        },
+        {
+          "letter": "B",
+          "text": "stimularea sistemului nervos parasimpatic determină constricția pupilelor",
+          "why": "Impulsurile parasimpatice determină constricția pupilelor, efect indicat și în schema vegetativă. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ); „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ); figura 11.10."
+        },
+        {
+          "letter": "C",
+          "text": "sistemul nervos simpatic determină relaxarea bronhiilor",
+          "why": "Schema sistemului autonom arată relaxarea bronhiilor sub acțiune simpatică. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ); figura 11.10."
+        },
+        {
+          "letter": "D",
+          "text": "camera posterioară a globului ocular conține umoarea vitroasă",
+          "why": "Camera posterioară, dintre iris și cristalin, conține umoare apoasă. Umoarea vitroasă se află în compartimentul posterior dintre cristalin și retină. Sursa: „Organele de simț”, secțiunea Ochiul și vederea."
+        },
+        {
+          "letter": "E",
+          "text": "cristalinul are forma unui disc transparent, biconcav",
+          "why": "Cristalinul este transparent și biconvex, nu biconcav. Sursa: „Organele de simț”, secțiunea Ochiul și vederea."
+        }
+      ],
+      "sourcePages": [
+        240
+      ],
+      "topicId": "simturi",
+      "topicLabel": "Receptori și organe de simț",
+      "lessonUrl": "organele_de_simt.html#alte-simturi",
+      "id": "asoc-049"
+    },
+    {
+      "number": 50,
+      "sourceNumber": 50,
+      "sourceChapter": "XIII",
+      "prompt": "Stimularea parasimpaticului cranian determină următoarele efecte:",
+      "correct": [
+        "A",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "stimularea puternică a secreției salivare",
+          "why": "Schema arată stimularea puternică a salivației pe căile parasimpatice craniene. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ); figura 11.10."
+        },
+        {
+          "letter": "B",
+          "text": "contracția mușchiului neted al vezicii urinare",
+          "why": "Parasimpaticul contractă vezica urinară, dar schema situează această cale în componenta sacrală. Enunțul cere parasimpaticul cranian. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ); figura 11.10."
+        },
+        {
+          "letter": "C",
+          "text": "dilatarea arteriolelor din țesutul erectil al organelor sexuale masculine",
+          "why": "Dilatarea arteriolelor erectile este parasimpatică, dar schema o leagă de componenta sacrală, nu de cea craniană cerută. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ); figura 11.10; „Sistemul reproducător masculin”, secțiunea Ducte și organe anexe."
+        },
+        {
+          "letter": "D",
+          "text": "stimularea secreției de suc gastric",
+          "why": "Calea parasimpatică craniană, vagală, stimulează activitatea stomacului, iar secreția gastrică este controlată de fibre parasimpatice. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ); figura 11.10; „Sistemul digestiv”, secțiunea Stomacul."
+        },
+        {
+          "letter": "E",
+          "text": "tahicardie și creșterea presiunii arteriale",
+          "why": "Parasimpaticul încetinește ritmul cardiac și favorizează revenirea la normal. Tahicardia este asociată componentei simpatice. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ)."
+        }
+      ],
+      "sourcePages": [
+        240
+      ],
+      "topicId": "cardiac",
+      "topicLabel": "Reglarea activității cardiace",
+      "lessonUrl": "sistemul_cardiovascular.html#muschiul-cardiac",
+      "id": "asoc-050"
+    },
+    {
+      "number": 51,
+      "sourceNumber": 51,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre afirmațiile privind receptorii sunt adevărate?",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt în relație directă cu ariile senzoriale din scoarța cerebrală",
+          "why": "Între receptori și cortex există căi neuronale și relee: de exemplu, gustul trece prin bulb și talamus, iar fotoreceptorii comunică cu neuroni bipolari și multipolari. Relația nu este directă. Sursa: „Organele de simț”, secțiunea Alte simțuri; „Organele de simț”, secțiunea Ochiul și vederea."
+        },
+        {
+          "letter": "B",
+          "text": "pot fi acoperiți de o membrana cu otoliți, ca în cazul celulelor ciliate din macule",
+          "why": "Maculele conțin celule ciliate și o membrană cu otoliți, fragmente de carbonat de calciu care se deplasează la schimbarea poziției capului. Sursa: „Organele de simț”, secțiunea Alte simțuri."
+        },
+        {
+          "letter": "C",
+          "text": "pot constitui punctul de plecare a unor reflexe ce ajustează postura corpului",
+          "why": "Stimularea receptorilor vestibulari trimite impulsuri către encefal; acesta comandă mușchilor ajustarea poziției și posturii corpului. Sursa: „Organele de simț”, secțiunea Alte simțuri."
+        },
+        {
+          "letter": "D",
+          "text": "cei prezenți în piele pot fi și mecanoreceptori",
+          "why": "Receptorii cutanați pentru presiune, atingere și vibrații detectează stimuli mecanici, fiind mecanoreceptori. Sursa: „Organele de simț”, secțiunea Receptorii și tabelul 12.1; „Organele de simț”, secțiunea Alte simțuri."
+        },
+        {
+          "letter": "E",
+          "text": "fotoreceptorii se găsesc în stratul intern al retinei propriu-zise",
+          "why": "Retina propriu-zisă are trei straturi neuronale; conurile și bastonașele sunt în stratul apropiat de coroidă, cel mai extern dintre acestea, nu în stratul intern cu neuroni multipolari. Sursa: „Organele de simț”, secțiunea Ochiul și vederea."
+        }
+      ],
+      "sourcePages": [
+        240
+      ],
+      "topicId": "simturi",
+      "topicLabel": "Receptori și organe de simț",
+      "lessonUrl": "organele_de_simt.html#alte-simturi",
+      "id": "asoc-051"
+    },
+    {
+      "number": 52,
+      "sourceNumber": 52,
+      "sourceChapter": "XIII",
+      "prompt": "Despre piele sunt adevărate următoarele afirmații:",
+      "correct": [
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "prezintă cele mai multe capilare limfatice în epiderm",
+          "why": "Vasele limfatice sunt numeroase în tegumente, în special în derm, nu în epiderm. Sursa: „Sistemul limfatic și imun”, secțiunea Sistemul limfatic."
+        },
+        {
+          "letter": "B",
+          "text": "are glande sudoripare cu rol excretor",
+          "why": "Pielea este organ excretor minor: prin sudoare elimină apă, săruri și cantități mici de amoniac, uree și acid uric. Sursa: „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii."
+        },
+        {
+          "letter": "C",
+          "text": "prezintă, în stratul superficial, corpusculi Pacini",
+          "why": "Figura plasează corpusculii Pacini în profunzimea pielii, spre țesutul subcutanat, nu în stratul superficial. Sursa: „Organele de simț”, secțiunea Alte simțuri; figura 12.7."
+        },
+        {
+          "letter": "D",
+          "text": "conține doar receptori tactili și dureroși",
+          "why": "Pielea are și receptori pentru presiune, vibrații, căldură și frig. Nu conține doar receptori tactili și dureroși. Sursa: „Organele de simț”, secțiunea Alte simțuri; „Țesutul nervos”, secțiunea Fiziologia nervilor."
+        },
+        {
+          "letter": "E",
+          "text": "are discuri Merkel în stratul superficial",
+          "why": "Discurile Merkel sunt reprezentate în zona superficială a pielii, la limita inferioară a stratului epidermic. Sursa: „Organele de simț”, secțiunea Alte simțuri; figura 12.7."
+        }
+      ],
+      "sourcePages": [
+        240
+      ],
+      "topicId": "simturi",
+      "topicLabel": "Receptori și organe de simț",
+      "lessonUrl": "organele_de_simt.html#alte-simturi",
+      "id": "asoc-052"
+    },
+    {
+      "number": 53,
+      "sourceNumber": 53,
+      "sourceChapter": "XIII",
+      "prompt": "Despre torace sunt adevărate următoarele afirmații:",
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "conține arterele și venele mari",
+          "why": "Mediastinul conține vase sanguine, iar figura toracelui arată vase mari precum aorta și vena cavă superioară. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului; „Sistemul cardiovascular”, secțiunea Structura inimii; figura 15.1."
+        },
+        {
+          "letter": "B",
+          "text": "conține un organ cavitar cu baza în sus și apexul orientat spre stânga",
+          "why": "Inima este un organ cavitar conic. Figura arată porțiunea largă superior și apexul inferior, îndreptat spre stânga. Sursa: „Sistemul cardiovascular”, secțiunea Structura inimii; „Sistemul cardiovascular”, secțiunea Structura inimii; figura 15.1."
+        },
+        {
+          "letter": "C",
+          "text": "este delimitat posterior de un singur mușchi striat",
+          "why": "Toracele este delimitat de coaste și mușchii intercostali, iar posterior se află coloana vertebrală. Diafragma formează limita inferioară, nu unicul perete posterior muscular. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului; „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului; figura 1.4."
+        },
+        {
+          "letter": "D",
+          "text": "cuprinde trei cavități delimitate de membrane",
+          "why": "Toracele cuprinde două cavități pleurale și o cavitate pericardică, delimitate de foițele membranelor seroase corespunzătoare. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        },
+        {
+          "letter": "E",
+          "text": "conține și o pompă sanguină situată anterior de trahee",
+          "why": "Baremul exclude E. Manualul confirmă că inima este pompa din torace și îi precizează raporturile cu sternul, coloana și plămânii, dar vederea frontală nu stabilește precis raportul antero-posterior față de trahee. Nu pot transforma această excludere într-un raport opus nedocumentat. Sursa: „Sistemul cardiovascular”, secțiunea Structura inimii; „Sistemul cardiovascular”, secțiunea Structura inimii; figura 15.1."
+        }
+      ],
+      "sourcePages": [
+        240
+      ],
+      "topicId": "cavitati",
+      "topicLabel": "Cavitățile corpului",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#cavitati",
+      "id": "asoc-053"
+    },
+    {
+      "number": 54,
+      "sourceNumber": 54,
+      "sourceChapter": "XIII",
+      "prompt": "Despre ATP sunt adevărate următoarele afirmații:",
+      "correct": [
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este desfăcut de o enzimă, ATP-aza, care se găsește lângă capetele filamentelor de actină",
+          "why": "ATP-aza care desface ATP se află la capetele filamentelor de miozină. Varianta o asociază actinei. Sursa: „Țesutul muscular”, secțiunea Energia necesară contracției musculare."
+        },
+        {
+          "letter": "B",
+          "text": "poate fi resintetizat cu ajutorul fosfocreatinei",
+          "why": "Fosfocreatina transferă o grupare fosfat unei molecule ADP și furnizează energia pentru regenerarea ATP. Sursa: „Țesutul muscular”, secțiunea Energia necesară contracției musculare."
+        },
+        {
+          "letter": "C",
+          "text": "poate rezulta și din glicoliza anaerobă",
+          "why": "Glicoliza anaerobă produce două molecule ATP pentru fiecare moleculă de glucoză scindată. Sursa: „Țesutul muscular”, secțiunea Energia necesară contracției musculare."
+        },
+        {
+          "letter": "D",
+          "text": "nu se formează în condiții de anaerobioză",
+          "why": "Celulele musculare pot obține ATP din faza anaerobă, chiar când oxigenul este insuficient. Absența totală a formării ATP este greșită. Sursa: „Țesutul muscular”, secțiunea Energia necesară contracției musculare."
+        },
+        {
+          "letter": "E",
+          "text": "se sintetizează în cantități mari, la nivelul mitocondriei, doar în prezența oxigenului",
+          "why": "Producerea mitocondrială adecvată de ATP necesită oxigen; fără oxigen, manualul arată că ATP-ul produs este insuficient. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele; „Țesutul muscular”, secțiunea Energia necesară contracției musculare."
+        }
+      ],
+      "sourcePages": [
+        240
+      ],
+      "topicId": "mitocondrii",
+      "topicLabel": "Metabolismul energetic celular",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#energie",
+      "id": "asoc-054"
+    },
+    {
+      "number": 55,
+      "sourceNumber": 55,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele afirmații nu sunt corecte:",
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": true,
+      "options": [
+        {
+          "letter": "A",
+          "text": "planul mediosagital împarte corpul în două părți inegale",
+          "why": "Planul mediosagital împarte corpul în două jumătăți egale. Planul parasagital determină părți inegale. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Termeni direcționali."
+        },
+        {
+          "letter": "B",
+          "text": "diafragma este un mușchi neted ce separă cavitățile toracică și abdominală",
+          "why": "Diafragma este un mușchi respirator scheletic care separă toracele de abdomen. Nu este mușchi neted. Sursa: „Sistemul respirator”, secțiunea Respirația."
+        },
+        {
+          "letter": "C",
+          "text": "venele azygos drenează mușchii pelvieni",
+          "why": "Venele azygos și hemiazygos drenează mușchii toracici, nu mușchii pelvieni. Sursa: „Sistemul cardiovascular”, secțiunea Tipuri de circulație sanguină."
+        },
+        {
+          "letter": "D",
+          "text": "splina se găsește în cadranul superior stâng",
+          "why": "Splina este localizată subdiafragmatic în partea superioară stângă a abdomenului. Afirmația este adevărată, deci nu se selectează. Sursa: „Sistemul limfatic și imun”, secțiunea Splina."
+        },
+        {
+          "letter": "E",
+          "text": "pleura este o structură fibroasă ce este dispusă parietal și visceral",
+          "why": "Pleura este o membrană seroasă cu foiță parietală și viscerală; „fibroasă” nu corespunde clasificării din manual. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        }
+      ],
+      "sourcePages": [
+        240
+      ],
+      "topicId": "cavitati",
+      "topicLabel": "Cavitățile corpului",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#cavitati",
+      "id": "asoc-055"
+    },
+    {
+      "number": 56,
+      "sourceNumber": 56,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre afirmațiile următoare sunt adevărate:",
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "funcția principală a neutrofilelor este fagocitoza",
+          "why": "Funcția principală a neutrofilelor este fagocitoza, iar acestea se acumulează rapid la locul infecției. Sursa: „Sângele”, secțiunea Globulele albe."
+        },
+        {
+          "letter": "B",
+          "text": "un organit derivat din sacii aparatului Golgi conține enzime folosite în procesele de digestie ale celulei",
+          "why": "Organitul descris este lizozomul: derivă din sacii Golgi și conține enzime pentru digestia celulară. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "C",
+          "text": "nucleul neutrofilului are de obicei între doi și cinci lobi",
+          "why": "Nucleul neutrofilului are de obicei doi până la cinci lobi, de unde denumirea de leucocit polimorfonuclear. Sursa: „Sângele”, secțiunea Globulele albe."
+        },
+        {
+          "letter": "D",
+          "text": "celula musculară netedă conține un nucleu situat periferic",
+          "why": "Nucleul unic al fibrei musculare netede este central, nu periferic. Sursa: „Țesutul muscular”, secțiunea Tipuri de țesut muscular."
+        },
+        {
+          "letter": "E",
+          "text": "cromozomii sunt segmentele funcționale ale genelor",
+          "why": "Genele sunt segmentele funcționale ale cromozomilor. Varianta inversează raportul dintre cele două. Sursa: „Celula și fiziologia celulară”, secțiunea Nucleul."
+        }
+      ],
+      "sourcePages": [
+        240,
+        241
+      ],
+      "topicId": "celula",
+      "topicLabel": "Structura celulelor",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#structura",
+      "id": "asoc-056"
+    },
+    {
+      "number": 57,
+      "sourceNumber": 57,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre afirmațiile următoare sunt adevărate?",
+      "correct": [
+        "B"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "spre deosebire de cili, flagelii sunt mai lungi și mai numeroși",
+          "why": "Flagelii sunt mai lungi, dar cilii sunt mult mai numeroși. A doua comparație din variantă este inversată. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "B",
+          "text": "dacă hematiile sunt plasate într-o soluție cu concentrație mai mică decât cea normală se poate produce hemoliza",
+          "why": "În soluții mai diluate, apa intră prin osmoză în hematii; acestea se umflă și se pot sparge, producând hemoliză. Sursa: „Sângele”, secțiunea Globulele roșii."
+        },
+        {
+          "letter": "C",
+          "text": "eozinofilele au un nucleu rotund situat central",
+          "why": "Eozinofilul este reprezentat cu un nucleu lobat, nu cu unul rotund central. Sursa: „Sângele”, secțiunea Globulele albe; figura 14.5."
+        },
+        {
+          "letter": "D",
+          "text": "în timpul exocitozei, o mică porțiune din membrana plasmatică se pliază și înglobează particule de la suprafața celulară",
+          "why": "Plierea membranei în jurul particulelor externe este endocitoză. Exocitoza eliberează la exterior conținutul veziculelor intracelulare. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "E",
+          "text": "nucleozomii sunt formați din unirea ARN-ului cu histonele",
+          "why": "Nucleozomii rezultă din asocierea ADN-ului cu histonele, nu a ARN-ului cu histonele. Sursa: „Celula și fiziologia celulară”, secțiunea Nucleul."
+        }
+      ],
+      "sourcePages": [
+        241
+      ],
+      "topicId": "celula",
+      "topicLabel": "Structura celulelor",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#structura",
+      "id": "asoc-057"
+    },
+    {
+      "number": 58,
+      "sourceNumber": 58,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele afirmații cu privire la mușchi sunt adevărate:",
+      "correct": [
+        "A",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "spasmul mușchilor netezi din pereții bronhiolelor poate determina o respirație particulară - wheezing",
+          "why": "Manualul descrie astmul prin episoade de respirație șuierătoare, wheezing, cauzate de spasmul mușchilor netezi ai arborelui bronșic. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "B",
+          "text": "în treimea superioară a esofagului predomină fibre musculare cu un nucleu situat central",
+          "why": "Treimea superioară a esofagului are musculatură striată; fibrele scheletice au mulți nuclei periferici. Un nucleu central caracterizează fibra netedă. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal; „Țesutul muscular”, secțiunea Tipuri de țesut muscular."
+        },
+        {
+          "letter": "C",
+          "text": "fibrele musculare oblice din structura stomacului sunt situate între cele longitudinale și cele circulare și sunt fibre musculare alungite, fusiforme cu capete ascuțite",
+          "why": "Forma fusiformă cu capete ascuțite corespunde fibrei netede, dar stratul oblic gastric se află între submucoasă și stratul circular, nu între cel circular și cel longitudinal. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal; „Țesutul muscular”, secțiunea Tipuri de țesut muscular."
+        },
+        {
+          "letter": "D",
+          "text": "față de fibrele musculare striate scheletice, fibrele miocardice sunt mai scurte și mai late",
+          "why": "Manualul compară explicit celulele miocardice cu cele scheletice și le descrie ca mai scurte, mai late, ramificate și interconectate. Sursa: „Sistemul cardiovascular”, secțiunea Mușchiul cardiac."
+        },
+        {
+          "letter": "E",
+          "text": "prin impulsuri propagate prin nervul sciatic se poate produce contracția unor mușchi de la nivelul membrului inferior",
+          "why": "Figura arată nervul sciatic către membrul inferior; nervii spinali conțin fibre motorii pentru mușchii scheletici și participă la mișcare. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos periferic; figura 11.9; „Organizarea sistemului nervos”, secțiunea Sistemul nervos periferic."
+        }
+      ],
+      "sourcePages": [
+        241
+      ],
+      "topicId": "muschi",
+      "topicLabel": "Țesutul muscular și controlul său",
+      "lessonUrl": "tesutul_muscular.html#tesutul-muscular",
+      "id": "asoc-058"
+    },
+    {
+      "number": 59,
+      "sourceNumber": 59,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele afirmații cu privire la mușchi sunt incorecte:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": true,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sfincterul esofagian inferior conține fibre musculare cu multipli nuclei periferici",
+          "why": "Segmentul inferior esofagian are musculatură netedă, cu un nucleu central pe fibră. Multiplii nuclei periferici sunt caracteristici fibrelor scheletice. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal; „Țesutul muscular”, secțiunea Tipuri de țesut muscular."
+        },
+        {
+          "letter": "B",
+          "text": "discurile intercalare de la nivelul miocardului conțin desmozomi și joncțiuni de tip gap",
+          "why": "Discurile intercalare conțin atât joncțiuni gap, cât și desmozomi. Afirmația este adevărată, deci nu se selectează la cerința negativă. Sursa: „Sistemul cardiovascular”, secțiunea Mușchiul cardiac."
+        },
+        {
+          "letter": "C",
+          "text": "contracțiile celulelor musculare cardiace sunt inițiate de impulsuri venite de la sistemul nervos vegetativ",
+          "why": "Impulsurile sunt inițiate în țesutul excitoconductor propriu inimii, fără intervenția sistemului nervos. Vegetativul poate modifica activitatea cardiacă. Sursa: „Sistemul cardiovascular”, secțiunea Mușchiul cardiac."
+        },
+        {
+          "letter": "D",
+          "text": "stimularea nervului abducens, ce are originea aparentă la nivelul punții, determină contracția unui mușchi format din fibre musculare striate",
+          "why": "Tabelul nervilor cranieni situează originea aparentă a abducensului între bulb și punte, nu la nivelul punții. Nervul are funcție motorie oculară, dar localizarea din variantă este cea greșită. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos periferic."
+        },
+        {
+          "letter": "E",
+          "text": "stimularea vagală determină o scădere a frecvenței de contracție a fibrelor musculare cardiace",
+          "why": "Calea vagală parasimpatică încetinește ritmul cardiac. Afirmația este adevărată și nu se selectează la cerința de afirmații incorecte. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom (vegetativ); figura 11.10; „Sistemul cardiovascular”, secțiunea Mușchiul cardiac."
+        }
+      ],
+      "sourcePages": [
+        241
+      ],
+      "topicId": "muschi",
+      "topicLabel": "Țesutul muscular și controlul său",
+      "lessonUrl": "tesutul_muscular.html#tesutul-muscular",
+      "id": "asoc-059"
+    },
+    {
+      "number": 60,
+      "sourceNumber": 60,
+      "sourceChapter": "XIII",
+      "prompt": "Despre limbă se pot afirma următoarele:",
+      "correct": [
+        "A",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este inervată de fibrele nervului hipoglos, cu origine în bulb",
+          "why": "Hipoglosul, nervul XII, are funcție motorie pentru mușchii limbii și origine aparentă în bulbul rahidian. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos periferic."
+        },
+        {
+          "letter": "B",
+          "text": "este formată din mușchi a căror celule prezintă un nucleu dispus central",
+          "why": "Limba conține mușchi striat; celulele musculare scheletice au nuclei multipli periferici, nu un nucleu central. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal; „Țesutul muscular”, secțiunea Tipuri de țesut muscular."
+        },
+        {
+          "letter": "C",
+          "text": "se află într-o cavitate delimitată superior de palatul dur și palatul moale",
+          "why": "Bolta cavității orale este formată de palatul dur anterior și palatul moale posterior; limba se găsește în această cavitate. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "D",
+          "text": "este fixată la planșeul oral prin frâul lingual care se învecinează lateral cu ductele glandelor parotide",
+          "why": "Frâul fixează limba de planșeul oral, dar lateral de acesta se deschid ductele submandibulare. Ductele parotide se deschid în obraz, opus molarului superior. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "E",
+          "text": "participă la deglutiție, împingând involuntar bolul alimentar în faringe",
+          "why": "Împingerea bolului din cavitatea orală spre faringe prin limbă aparține primei etape, voluntare, a deglutiției. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        }
+      ],
+      "sourcePages": [
+        241
+      ],
+      "topicId": "digestiv",
+      "topicLabel": "Tractul gastrointestinal",
+      "lessonUrl": "sistemul_digestiv.html#tractul-gastrointestinal",
+      "id": "asoc-060"
+    },
+    {
+      "number": 61,
+      "sourceNumber": 61,
+      "sourceChapter": "XIII",
+      "prompt": "Despre colesterol se pot afirma următoarele:",
+      "correct": [
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "prezintă risc cardiac în componența lipoproteinelor cu densitate mare",
+          "why": "Manualul asociază nivelul crescut de LDL cu riscul coronarian crescut. HDL transportă colesterolul către ficat, iar concentrația sa mare este asociată unui risc mai mic. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul lipidelor și al proteinelor."
+        },
+        {
+          "letter": "B",
+          "text": "constituie sursă pentru hormonii sintetizați de celulele interstițiale",
+          "why": "Testosteronul este un hormon steroid sintetizat din colesterol și este produs de celulele interstițiale testiculare. Sursa: „Sistemul endocrin”, secțiunea Tipuri și mecanisme de acțiune ale hormonilor; „Sistemul reproducător masculin”, secțiunea Testiculele."
+        },
+        {
+          "letter": "C",
+          "text": "prezintă o structură inelară din carbon și hidrogen",
+          "why": "Baremul include C. Manualul descrie structura inelară din carbon și hidrogen a hormonilor steroizi sintetizați din colesterol, dar pasajul nu descrie separat structura moleculei de colesterol. Nu extind această formulare la o demonstrație chimică absentă din materialul autorizat. Sursa: „Sistemul endocrin”, secțiunea Tipuri și mecanisme de acțiune ale hormonilor; „Sistemul endocrin”, secțiunea Glandele suprarenale; figura 13.8."
+        },
+        {
+          "letter": "D",
+          "text": "se absoarbe digestiv sub formă de chilomicroni ce ajung în vena portă",
+          "why": "Chilomicronii conțin și colesterol, dar intră inițial în capilarele limfatice și ulterior în sânge. Varianta îi trimite direct în vena portă. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul lipidelor și al proteinelor."
+        },
+        {
+          "letter": "E",
+          "text": "reprezintă principala sursă energetică a sistemului nervos",
+          "why": "Sistemul nervos utilizează în mod normal glucoza ca sursă principală de energie, nu colesterolul. Sursa: „Metabolism și nutriție”, secțiunea Stări metabolice și metabolismul mineralelor."
+        }
+      ],
+      "sourcePages": [
+        241
+      ],
+      "topicId": "metabolism",
+      "topicLabel": "Metabolismul în stările de nutriție",
+      "lessonUrl": "metabolism_si_nutritie.html#stari-si-minerale",
+      "id": "asoc-061"
+    },
+    {
+      "number": 62,
+      "sourceNumber": 62,
+      "sourceChapter": "XIII",
+      "prompt": "Inima:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este un organ abdominal învelit în pericard, sac cu două foițe",
+          "why": "Pericardul are două foițe, dar inima este în mediastinul toracic, nu în abdomen. Sursa: „Sistemul cardiovascular”, secțiunea Structura inimii."
+        },
+        {
+          "letter": "B",
+          "text": "trimite în circulație aproximativ 5250 ml de sânge pe minut",
+          "why": "La circa 75 de bătăi pe minut și un volum bătaie de aproximativ 70 ml, manualul indică un debit cardiac mediu de 5250 ml/minut. Sursa: „Sistemul cardiovascular”, secțiunea Ciclul cardiac."
+        },
+        {
+          "letter": "C",
+          "text": "este formată din țesut muscular cu fibre alungite, cilindrice, ramificate cu conexiuni la nivelul discurilor intercalare",
+          "why": "Fibrele cardiace sunt alungite, cilindrice și ramificate; conexiunile dintre ele se află la discurile intercalare. Sursa: „Țesutul muscular”, secțiunea Tipuri de țesut muscular; „Sistemul cardiovascular”, secțiunea Mușchiul cardiac."
+        },
+        {
+          "letter": "D",
+          "text": "prezintă o activitate controlată de sistemul nervos vegetativ",
+          "why": "Sistemul nervos autonom modifică frecvența și contracția cardiacă: simpaticul le crește, parasimpaticul le reduce. Sursa: „Sistemul cardiovascular”, secțiunea Mușchiul cardiac."
+        },
+        {
+          "letter": "E",
+          "text": "prezintă circulație venoasă ce se drenează prin sinusul coronarian în atriul stâng",
+          "why": "Venele cardiace drenează în sinusul coronarian, care se deschide în atriul drept, nu în cel stâng. Sursa: „Sistemul cardiovascular”, secțiunea Circulația coronariană."
+        }
+      ],
+      "sourcePages": [
+        241,
+        242
+      ],
+      "topicId": "cardiac",
+      "topicLabel": "Reglarea activității cardiace",
+      "lessonUrl": "sistemul_cardiovascular.html#muschiul-cardiac",
+      "id": "asoc-062"
+    },
+    {
+      "number": 63,
+      "sourceNumber": 63,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați asocierile corecte referitoare la capilare:",
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "glomerulare - între două arteriole - filtrarea glomerulară",
+          "why": "Glomerulul primește sânge prin arteriola aferentă și îl evacuează prin cea eferentă. Capilarele sale participă la filtrarea glomerulară. Sursa: „Sistemul urinar”, secțiunea Structura și fiziologia nefronului."
+        },
+        {
+          "letter": "B",
+          "text": "alveolare - circulație pulmonară - schimb de gaze respiratorii",
+          "why": "Rețeaua capilară din jurul alveolelor aparține circulației pulmonare și realizează schimbul gazos dintre sânge și aerul alveolar. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "C",
+          "text": "limfatice - pereți mai subțiri - drenarea fluidului interstițial",
+          "why": "Capilarele limfatice sunt structuri cu pereți subțiri, formate dintr-un strat endotelial; permeabilitatea lor permite drenarea fluidului interstițial. Sursa: „Sistemul limfatic și imun”, secțiunea Sistemul limfatic."
+        },
+        {
+          "letter": "D",
+          "text": "sistemului port hipotalamo-hipofizar - între hipotalamus și lobul posterior al hipofizei - transport hormoni tropi",
+          "why": "Sistemul port conduce hormonii hipotalamici stimulatori și inhibitori la adenohipofiză, lobul anterior. Hormonii neurohipofizei sunt transportați pe calea infundibulului, nu prin această asociere. Sursa: „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară)."
+        },
+        {
+          "letter": "E",
+          "text": "retiniene - la nivelul tunicii medii a globului ocular - asigură oxigenarea structurilor globului ocular",
+          "why": "Retina formează tunica internă a globului ocular; tunica mijlocie este cea vascularizată care include coroida. Varianta plasează greșit retina în tunica medie. Sursa: „Organele de simț”, secțiunea Ochiul și vederea."
+        }
+      ],
+      "sourcePages": [
+        242
+      ],
+      "topicId": "limfatic",
+      "topicLabel": "Structuri limfatice și imunitate",
+      "lessonUrl": "sistemul_limfatic_si_imun.html#sistemul-limfatic",
+      "id": "asoc-063"
+    },
+    {
+      "number": 64,
+      "sourceNumber": 64,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați rolul hormonilor secretați de glande endocrine:",
+      "correct": [
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "ADH menține volumul și presiunea sanguină",
+          "why": "ADH crește volumul și presiunea sanguină prin reabsorbția apei, dar este produs de neuroni hipotalamici și doar stocat/eliberat de neurohipofiză, care nu este glandă endocrină propriu-zisă. Baremul aplică aici restricția din enunț la hormoni secretați de glande endocrine. Sursa: „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară)."
+        },
+        {
+          "letter": "B",
+          "text": "ACTH controlează activitatea glandei corticosuprarenale",
+          "why": "ACTH adenohipofizar stimulează cortexul suprarenal, influențând creșterea tisulară și secreția glucocorticoizilor. Sursa: „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară)."
+        },
+        {
+          "letter": "C",
+          "text": "cortizolul este reglat prin mecanism feed-back negativ",
+          "why": "Reglarea cortizolului prin feedback negativ este descrisă în manual, dar varianta prezintă controlul secreției lui, nu rolul hormonului cerut de enunț. Sursa: „Sistemul endocrin”, secțiunea Glandele suprarenale."
+        },
+        {
+          "letter": "D",
+          "text": "colecistochinina controlează eliberarea bilei în duoden",
+          "why": "Colecistochinina controlează eliberarea bilei în duoden, însă provine din celule endocrine digestive, nu dintr-o glandă endocrină distinctă din categoria cerută. Sursa: „Sistemul endocrin”, secțiunea Alte glande endocrine; „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "E",
+          "text": "tiroxina intensifică metabolismul bazal",
+          "why": "Tiroxina tiroidiană accelerează metabolismul celular și crește rata metabolismului bazal. Sursa: „Sistemul endocrin”, secțiunea Glanda tiroidă."
+        }
+      ],
+      "sourcePages": [
+        242
+      ],
+      "topicId": "endocrin",
+      "topicLabel": "Hormonii și mecanismele lor de acțiune",
+      "lessonUrl": "sistemul_endocrin.html#descrierea-generala-a-hormonilor",
+      "id": "asoc-064"
+    },
+    {
+      "number": 65,
+      "sourceNumber": 65,
+      "sourceChapter": "XIII",
+      "prompt": "La nivelul atriului drept al inimii:",
+      "correct": [
+        "A",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "fibrele miocardice se fixează la nivelul scheletului fibros",
+          "why": "Scheletul fibros susține și consolidează miocardul prin rețeaua de țesut conjunctiv care interconectează celulele musculare cardiace. Sursa: „Sistemul cardiovascular”, secțiunea Structura inimii."
+        },
+        {
+          "letter": "B",
+          "text": "se golesc cele patru vene pulmonare",
+          "why": "Venele pulmonare se deschid în atriul stâng. Atriul drept primește venele cave și sinusul coronarian. Sursa: „Sistemul cardiovascular”, secțiunea Cavitățile și vasele inimii."
+        },
+        {
+          "letter": "C",
+          "text": "fibrele musculare prezintă mai mulți nuclei dispuși periferic",
+          "why": "Fibrele cardiace au un nucleu central în tabelul manualului. Nucleii multipli periferici aparțin fibrelor scheletice. Sursa: „Țesutul muscular”, secțiunea Tipuri de țesut muscular."
+        },
+        {
+          "letter": "D",
+          "text": "există o comunicare cu ventriculul drept printr-un orificiu prevăzut cu valva tricuspidă",
+          "why": "Între atriul drept și ventriculul drept se află valva atrioventriculară tricuspidă, cu trei cuspisuri. Sursa: „Sistemul cardiovascular”, secțiunea Valvele cardiace."
+        },
+        {
+          "letter": "E",
+          "text": "mușchii papilari sunt fixați valvular prin intermediul cordajelor tendinoase",
+          "why": "Mușchii papilari care ancorează valvele prin cordaje tendinoase aparțin peretelui ventricular, nu atriului drept. Sursa: „Sistemul cardiovascular”, secțiunea Valvele cardiace."
+        }
+      ],
+      "sourcePages": [
+        242
+      ],
+      "topicId": "cardiac",
+      "topicLabel": "Reglarea activității cardiace",
+      "lessonUrl": "sistemul_cardiovascular.html#muschiul-cardiac",
+      "id": "asoc-065"
+    },
+    {
+      "number": 66,
+      "sourceNumber": 66,
+      "sourceChapter": "XIII",
+      "prompt": "Vilozitatea intestinală:",
+      "correct": [
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "conține glande submucoase Brunner, secretante de mucus alcalin",
+          "why": "Glandele Brunner sunt în submucoasa duodenală. Vilozitățile sunt prelungiri ale mucoasei, deci nu conțin aceste glande submucoase. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "B",
+          "text": "participă la absorbția monozaharidelor sub formă de chilomicroni",
+          "why": "Chilomicronii transportă produși ai digestiei lipidelor către chiliferul central. Produșii glucidici sunt absorbiți în capilarele sanguine. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "C",
+          "text": "conține în axul său un capilar limfatic - chiliferul central",
+          "why": "În interiorul vilozității se află un vas limfatic central, numit chilifer central. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "D",
+          "text": "participă la creșterea suprafeței intestinale, fiind o prelungire a stratului muscular",
+          "why": "Vilozitățile măresc suprafața intestinală, dar sunt prelungiri ale mucoasei, nu ale stratului muscular. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "E",
+          "text": "prezintă celule prevăzute cu microvilozități",
+          "why": "Microvilozitățile sunt prelungiri ale membranei celulelor mucoasei, care contribuie suplimentar la creșterea suprafeței de absorbție. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        }
+      ],
+      "sourcePages": [
+        242
+      ],
+      "topicId": "digestiv",
+      "topicLabel": "Tractul gastrointestinal",
+      "lessonUrl": "sistemul_digestiv.html#tractul-gastrointestinal",
+      "id": "asoc-066"
+    },
+    {
+      "number": 67,
+      "sourceNumber": 67,
+      "sourceChapter": "XIII",
+      "prompt": "Structurile limfatice sunt organizate sub formă de:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "amigdale palatine, faringiană și linguală - aglomerări de țesut limfatic",
+          "why": "Amigdalele palatine, faringiene și linguale sunt aglomerări de țesut limfoid din regiunea cavității orale și a faringelui. Sursa: „Sistemul limfatic și imun”, secțiunea Nodulii limfatici; „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "B",
+          "text": "noduli limfatici, ce monitorizează compoziția plasmatică",
+          "why": "Nodulii limfatici filtrează limfa înainte de întoarcerea ei în sânge. Nu sunt descriși ca structuri care monitorizează direct plasma. Sursa: „Sistemul limfatic și imun”, secțiunea Nodulii limfatici."
+        },
+        {
+          "letter": "C",
+          "text": "țesut limfoid nodular, în submucoasa duodenală",
+          "why": "Manualul precizează explicit aglomerări de țesut limfoid cu dispoziție nodulară în submucoasa duodenului. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "D",
+          "text": "plăci Peyer, la nivelul ileonului",
+          "why": "Plăcile Peyer sunt aglomerări de țesut limfoid din peretele intestinal, în special din ileon. Sursa: „Sistemul limfatic și imun”, secțiunea Nodulii limfatici."
+        },
+        {
+          "letter": "E",
+          "text": "timus, ce controlează dezvoltarea și maturarea limfocitelor B",
+          "why": "Timusul controlează maturarea limfocitelor T. Varianta înlocuiește T cu B. Sursa: „Sistemul limfatic și imun”, secțiunea Timusul."
+        }
+      ],
+      "sourcePages": [
+        242
+      ],
+      "topicId": "limfatic",
+      "topicLabel": "Structuri limfatice și imunitate",
+      "lessonUrl": "sistemul_limfatic_si_imun.html#sistemul-limfatic",
+      "id": "asoc-067"
+    },
+    {
+      "number": 68,
+      "sourceNumber": 68,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați rolul hormonilor secretați de alte structuri decât glandele endocrine:",
+      "correct": [
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "secretina controlează secreția de pepsinogen, mucus și acid clorhidric la nivel gastric",
+          "why": "Gastrina controlează secreția pepsinogenului, HCl și mucusului gastric. Secretina este descrisă între hormonii intestinali care controlează secrețiile digestive anexe. Sursa: „Sistemul digestiv”, secțiunea Stomacul; „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "B",
+          "text": "oxitocina contractă musculatura striată a uterului",
+          "why": "Oxitocina stimulează mușchiul neted uterin, nu musculatură striată. Miometrul este un strat de mușchi netezi. Sursa: „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară); „Sistemul reproducător feminin”, secțiunea Ovarele și organele anexe."
+        },
+        {
+          "letter": "C",
+          "text": "melatonina poate influența ciclul zi-noapte",
+          "why": "Melatonina poate influența ciclul zi-noapte, dar este secretată de epifiză, o glandă endocrină. Enunțul cere hormoni proveniți din alte structuri. Sursa: „Sistemul endocrin”, secțiunea Alte glande endocrine."
+        },
+        {
+          "letter": "D",
+          "text": "prostaglandinele au efecte asupra țesutului muscular neted",
+          "why": "Prostaglandinele sunt secretate de celule endocrine din organe precum ficatul, rinichiul, inima și plămânii și pot produce contracția mușchiului neted. Sursa: „Sistemul endocrin”, secțiunea Alte glande endocrine."
+        },
+        {
+          "letter": "E",
+          "text": "eritropoietina stimulează formarea hematiilor în măduva roșie",
+          "why": "Celulele renale produc eritropoietină, care stimulează formarea hematiilor în măduva roșie. Sursa: „Sistemul endocrin”, secțiunea Alte glande endocrine."
+        }
+      ],
+      "sourcePages": [
+        242
+      ],
+      "topicId": "endocrin",
+      "topicLabel": "Hormonii și mecanismele lor de acțiune",
+      "lessonUrl": "sistemul_endocrin.html#descrierea-generala-a-hormonilor",
+      "id": "asoc-068"
+    },
+    {
+      "number": 69,
+      "sourceNumber": 69,
+      "sourceChapter": "XIII",
+      "prompt": "Aminoacizii pot să:",
+      "correct": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "formeze lanțuri scurte, cum sunt în structura insulinei",
+          "why": "Manualul diferențiază hormonii proteici de peptidele cu lanțuri mai scurte; insulina este inclusă la proteine și are 51 de aminoacizi în două lanțuri. Nu este exemplul de lanț peptidic scurt ales de manual. Sursa: „Sistemul endocrin”, secțiunea Tipuri și mecanisme de acțiune ale hormonilor; „Sistemul endocrin”, secțiunea Pancreasul."
+        },
+        {
+          "letter": "B",
+          "text": "se reabsoarbă din tubul contort proximal prin transport selectiv, cu consum de energie",
+          "why": "Aminoacizii sunt reabsorbiți în tubul proximal prin transportori specifici și transport activ, folosind ATP. Sursa: „Sistemul urinar”, secțiunea Structura și fiziologia nefronului."
+        },
+        {
+          "letter": "C",
+          "text": "se transforme prin gluconeogeneză hepatică în glucoză",
+          "why": "Gluconeogeneza hepatică permite sinteza glucozei din anumiți aminoacizi. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "D",
+          "text": "constituie surse pentru sinteza protrombinei și a fibrinogenului, necesare în coagulare",
+          "why": "Aminoacizii pot fi integrați în proteine; protrombina și fibrinogenul sunt proteine participante la coagulare, deci sinteza lor utilizează aminoacizi. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul lipidelor și al proteinelor; „Sângele”, secțiunea Coagularea sângelui."
+        },
+        {
+          "letter": "E",
+          "text": "se absoarbă din intestin în capilarele vilozităților intestinale",
+          "why": "Produșii digestiei proteinelor sunt aminoacizii, absorbiți din intestin; capilarele sanguine ale vilozităților îi primesc pentru transport. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros; „Metabolism și nutriție”, secțiunea Metabolismul lipidelor și al proteinelor."
+        }
+      ],
+      "sourcePages": [
+        242,
+        243
+      ],
+      "topicId": "metabolism",
+      "topicLabel": "Metabolismul în stările de nutriție",
+      "lessonUrl": "metabolism_si_nutritie.html#stari-si-minerale",
+      "id": "asoc-069"
+    },
+    {
+      "number": 70,
+      "sourceNumber": 70,
+      "sourceChapter": "XIII",
+      "prompt": "Fibrele musculare polinucleate:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "prezintă o activitate influențată de ionii de Ca, Na și K",
+          "why": "Calciul este necesar activității musculare, sodiul influențează excitabilitatea, iar potasiul intervine în contracția celulelor musculare. Sursa: „Metabolism și nutriție”, secțiunea Stări metabolice și metabolismul mineralelor."
+        },
+        {
+          "letter": "B",
+          "text": "împreună cu butonii terminali ai nervilor senzitivi formează plăci motorii",
+          "why": "Placa motorie este sinapsa dintre un neuron și fibra musculară, prin care neuronul motor declanșează contracția. Fibrele senzoriale conduc informația către SNC, nu formează ieșirea motorie la mușchi. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii."
+        },
+        {
+          "letter": "C",
+          "text": "se contractă voluntar prin stimuli inițiați la nivelul lobului frontal",
+          "why": "Mușchiul scheletic, cu fibre polinucleate, este sub control voluntar; aria motorie principală este localizată în lobul frontal. Sursa: „Țesutul muscular”, secțiunea Tipuri de țesut muscular; „Organizarea sistemului nervos”, secțiunea Sistemul nervos central."
+        },
+        {
+          "letter": "D",
+          "text": "conțin miofibrile care prezintă unități repetitive formate din filamente de miozină și actină",
+          "why": "Miofibrilele sunt organizate în sarcomere repetitive. Filamentele groase conțin miozină, iar cele subțiri actină, componentele structurale care realizează activitatea musculară. Sursa: „Țesutul muscular”, secțiunea Mușchiul striat scheletic; „Țesutul muscular”, secțiunea Mușchiul striat scheletic; figura 8.1."
+        },
+        {
+          "letter": "E",
+          "text": "în starea postabsorbtivă, utilizează ca sursă energetică proteine neesențiale",
+          "why": "Baremul exclude E. Manualul afirmă că în post țesuturile folosesc în primul rând lipide și că, în postul prelungit, organismul utilizează proteine musculare neesențiale funcționării celulare. Varianta nu precizează durata și atribuie utilizarea direct fibrelor; sursa nu susține negarea oricărei utilizări proteice în starea postabsorbtivă. Sursa: „Metabolism și nutriție”, secțiunea Stări metabolice și metabolismul mineralelor."
+        }
+      ],
+      "sourcePages": [
+        243
+      ],
+      "topicId": "muschi",
+      "topicLabel": "Țesutul muscular și controlul său",
+      "lessonUrl": "tesutul_muscular.html#tesutul-muscular",
+      "id": "asoc-070"
+    },
+    {
+      "number": 71,
+      "sourceNumber": 71,
+      "sourceChapter": "XIII",
+      "prompt": "Despre glucoză se pot afirma următoarele:",
+      "correct": [
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "crește plasmatic în perioada postabsorbtivă, declanșând secreția glucagonului",
+          "why": "Glucagonul este declanșat de nivelul scăzut al glucozei și ajută la menținerea glicemiei în post. Nu creșterea glicemiei declanșează acest hormon. Sursa: „Sistemul endocrin”, secțiunea Pancreasul; „Metabolism și nutriție”, secțiunea Stări metabolice și metabolismul mineralelor."
+        },
+        {
+          "letter": "B",
+          "text": "este utilizată ca principala sursă de energie pentru neuron",
+          "why": "Sistemul nervos folosește în mod normal glucoza ca sursă principală de energie. Sursa: „Metabolism și nutriție”, secțiunea Stări metabolice și metabolismul mineralelor."
+        },
+        {
+          "letter": "C",
+          "text": "este rezultatul transformării în ficat a fructozei și galactozei absorbite pe calea arterei hepatice",
+          "why": "Fructoza și galactoza sunt transformate în glucoză în ficat, dar ajung acolo de la intestin prin vena portă, nu prin artera hepatică. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "D",
+          "text": "traversează membrana celulelor tubului contort proximal cu consum energetic și de oxigen",
+          "why": "Reabsorbția glucozei în tubul proximal este transport activ cu consum de ATP. Oxigenul susține producerea mitocondrială de ATP necesară activității celulare; nu este prezentat ca o substanță consumată direct de transportor. Sursa: „Sistemul urinar”, secțiunea Structura și fiziologia nefronului; „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "E",
+          "text": "este depozitată celular sub formă de polimer, sub influența adrenalinei",
+          "why": "Adrenalina accelerează glicogenoliza, eliberarea glucozei din glicogen. Depozitarea postprandială în glicogen este asociată stării cu insulină crescută. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor; „Metabolism și nutriție”, secțiunea Stări metabolice și metabolismul mineralelor."
+        }
+      ],
+      "sourcePages": [
+        243
+      ],
+      "topicId": "metabolism",
+      "topicLabel": "Metabolismul în stările de nutriție",
+      "lessonUrl": "metabolism_si_nutritie.html#stari-si-minerale",
+      "id": "asoc-071"
+    },
+    {
+      "number": 72,
+      "sourceNumber": 72,
+      "sourceChapter": "XIII",
+      "prompt": "Despre proteinele plasmatice sunt adevărate afirmațiile:",
+      "correct": [
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt sintetizate exclusiv din aminoacizi esențiali",
+          "why": "Sinteza proteinelor folosește aminoacizi în secvența determinată genetic. Manualul distinge aminoacizi esențiali și neesențiali; nu limitează proteinele plasmatice la prima categorie. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul lipidelor și al proteinelor."
+        },
+        {
+          "letter": "B",
+          "text": "albuminele mențin presiunea osmotică a sângelui și contribuie la vâscozitatea acestuia",
+          "why": "Albuminele mențin presiunea osmotică și contribuie la vâscozitatea sângelui, alături de rolurile lor de transport. Sursa: „Sângele”, secțiunea Plasma."
+        },
+        {
+          "letter": "C",
+          "text": "gama globulinele sunt produse de către sistemul imun și se combină specific cu antigenele ce au stimulat formarea lor",
+          "why": "Gama globulinele sunt anticorpi produși de sistemul imun și se combină specific cu antigenele care au stimulat formarea lor. Sursa: „Sângele”, secțiunea Plasma."
+        },
+        {
+          "letter": "D",
+          "text": "fibrinogenul - 40 % dintre proteinele plasmatice - este implicat în coagulare",
+          "why": "Fibrinogenul reprezintă aproximativ 7% dintre proteinele plasmatice. Procentul de 40% este atribuit globulinelor. Sursa: „Sângele”, secțiunea Plasma."
+        },
+        {
+          "letter": "E",
+          "text": "se sintetizează la nivelul ficatului din aminoacizi, prin dezaminare",
+          "why": "Sinteza leagă aminoacizii în proteine. Dezaminarea îndepărtează gruparea amino și aparține utilizării aminoacizilor în scop energetic, nu sintezei proteinelor plasmatice. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul lipidelor și al proteinelor."
+        }
+      ],
+      "sourcePages": [
+        243
+      ],
+      "topicId": "eritrocite",
+      "topicLabel": "Eritrocitele și eritropoieza",
+      "lessonUrl": "sangele.html#globulele-rosii",
+      "id": "asoc-072"
+    },
+    {
+      "number": 73,
+      "sourceNumber": 73,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la nazofaringe:",
+      "correct": [
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este inervat de fibrele nervului X, împreună cu limba și glandele salivare",
+          "why": "Asocierea limbă–faringe–glande salivare aparține în tabel nervului IX, glosofaringian. Nervul X este vagul, descris pentru inimă, vase și viscere. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos periferic."
+        },
+        {
+          "letter": "B",
+          "text": "prezintă o legătură - tuba auditivă (trompa lui Eustachio) - cu urechea medie",
+          "why": "Trompele lui Eustachio leagă urechea medie de pereții laterali ai nazofaringelui. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "C",
+          "text": "conține amigdalele palatine a căror inflamație formează vegetațiile adenoide",
+          "why": "Vegetațiile adenoide sunt amigdala faringiană tumefiată. Amigdalele palatine sunt lateral în spatele gurii, iar inflamația lor este amigdalită. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "D",
+          "text": "este segmentul faringian în care se întretaie calea respiratorie cu cea digestivă",
+          "why": "Orofaringele, nu nazofaringele, este regiunea în care se întâlnesc căile digestive și respiratorii. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "E",
+          "text": "la nivelul peretelui posterior este prezentă amigdala faringiană",
+          "why": "Amigdala faringiană este pe peretele posterior al nazofaringelui, în regiunea medială. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        }
+      ],
+      "sourcePages": [
+        243
+      ],
+      "topicId": "respirator",
+      "topicLabel": "Reglarea respirației și a căilor aeriene",
+      "lessonUrl": "sistemul_respirator.html#respiratie",
+      "id": "asoc-073"
+    },
+    {
+      "number": 74,
+      "sourceNumber": 74,
+      "sourceChapter": "XIII",
+      "prompt": "Despre hematii se pot afirma următoarele:",
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "circulă între intestinul subțire și ficat pe calea venei porte",
+          "why": "Vena portă transportă sângele din rețelele capilare digestive la ficat; hematiile circulă odată cu acest sânge. Sursa: „Sistemul digestiv”, secțiunea Organele anexe."
+        },
+        {
+          "letter": "B",
+          "text": "fixează 4 molecule de oxigen la nivelul hemoglobinei, formând oxihemoglobină",
+          "why": "Fiecare moleculă de hemoglobină poate lega patru molecule de oxigen, rezultând oxihemoglobină. Numărul patru se referă la o moleculă de hemoglobină, nu la întreaga hematie. Sursa: „Sângele”, secțiunea Globulele roșii; „Sistemul respirator”, secțiunea Schimbul de gaze."
+        },
+        {
+          "letter": "C",
+          "text": "atunci când la nivelul membranei conține antigenele AB, sângele poate fi transfuzat la persoane de grup 0, Rh-pozitiv",
+          "why": "Hematiile AB au antigene A și B, iar primitorul cu grupa 0 are anticorpi anti-A și anti-B. Această incompatibilitate ABO rămâne chiar dacă primitorul este Rh-pozitiv. Sursa: „Sângele”, secțiunea Grupele sanguine."
+        },
+        {
+          "letter": "D",
+          "text": "eliberează hemoglobina în procesul de hemoliză, ca o consecință a ieșirii apei din celulă prin procesul de osmoză",
+          "why": "Hemoliza osmotică apare când apa intră în hematie într-un mediu mai diluat și celula se sparge. Ieșirea apei determină zbârcirea ei. Sursa: „Sângele”, secțiunea Globulele roșii."
+        },
+        {
+          "letter": "E",
+          "text": "producția lor este sub controlul eritropoietinei, hormon secretat de celulele renale care primesc oxigen insuficient",
+          "why": "Celulele renale care primesc insuficient oxigen eliberează eritropoietină, hormon care reglează producerea globulelor roșii. Sursa: „Sângele”, secțiunea Globulele roșii."
+        }
+      ],
+      "sourcePages": [
+        243
+      ],
+      "topicId": "eritrocite",
+      "topicLabel": "Eritrocitele și eritropoieza",
+      "lessonUrl": "sangele.html#globulele-rosii",
+      "id": "asoc-074"
+    },
+    {
+      "number": 75,
+      "sourceNumber": 75,
+      "sourceChapter": "XIII",
+      "prompt": "Hormonii ce intervin în controlul activității testiculare sunt:",
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "hormonul eliberator al gonadotropinelor, secretat de hipotalamus, cu acțiune asupra adenohipofizei",
+          "why": "GnRH este hormon hipotalamic care determină eliberarea FSH și LH din hipofiza anterioară, controlând astfel funcția testiculară. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "B",
+          "text": "hormonul luteinizant, ce stimulează maturarea celulelor interstițiale Leydig",
+          "why": "LH stimulează maturarea celulelor interstițiale testiculare, potrivit tabelului hormonilor masculini. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "C",
+          "text": "hormonul foliculo-stimulant, ce stimulează evoluția foliculară",
+          "why": "FSH participă la funcția testiculară prin stimularea spermatogenezei. Dezvoltarea foliculului este efectul său ovarian, care nu corespunde enunțului despre testicul. Sursa: „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară); „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "D",
+          "text": "testosteron, ce stimulează producția de spermatozoizi și inhibă producerea de LH",
+          "why": "Testosteronul stimulează producerea spermatozoizilor și inhibă producerea LH, contribuind la feedbackul negativ. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "E",
+          "text": "FSH secretat de hipotalamus, cu rol în ovulație",
+          "why": "FSH este secretat de adenohipofiză, nu de hipotalamus. Ovulația este efect atribuit LH-ului și ține de funcția ovariană. Sursa: „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară); „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        }
+      ],
+      "sourcePages": [
+        243,
+        244
+      ],
+      "topicId": "masculin",
+      "topicLabel": "Reproducerea masculină și reglarea hormonală",
+      "lessonUrl": "sistemul_reproducator_masculin.html#hormoni",
+      "id": "asoc-075"
+    },
+    {
+      "number": 76,
+      "sourceNumber": 76,
+      "sourceChapter": "XIII",
+      "prompt": "Laringele:",
+      "correct": [
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este o structură tubulară formată din mușchi striați - 1/3 superioară, și mușchi netezi - 1/3 inferioară",
+          "why": "Distribuția musculaturii striate superior și netede inferior descrie esofagul. Laringele este o structură cartilaginoasă care unește faringele și traheea. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal; „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "B",
+          "text": "asigură fonația prin corzile vocale care vibrează la trecerea aerului inspirat în plămâni",
+          "why": "Corzile vocale produc sunete când vibrează la trecerea aerului expirat din plămâni, nu a aerului inspirat. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "C",
+          "text": "este format din țesut conjunctiv ce înglobează 11 cartilaje, cel mai mare fiind cartilajul cricoid",
+          "why": "Manualul menționează 11 structuri cartilaginoase, dar cel mai mare cartilaj este tiroidul. Distractorul greșește prin numirea cricoidului drept cel mai mare. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "D",
+          "text": "la nivelul intrării laringiene se află epiglota, care închide căile respiratorii în timpul deglutiției",
+          "why": "Epiglota este la intrarea în laringe și închide calea respiratorie când alimentele sau lichidele trec spre esofag. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "E",
+          "text": "se continuă cu traheea, organ ce coboară la nivelul mediastinului",
+          "why": "Laringele se continuă cu traheea, iar traheea se numără între structurile mediastinului. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator; „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        }
+      ],
+      "sourcePages": [
+        244
+      ],
+      "topicId": "respirator",
+      "topicLabel": "Reglarea respirației și a căilor aeriene",
+      "lessonUrl": "sistemul_respirator.html#respiratie",
+      "id": "asoc-076"
+    },
+    {
+      "number": 77,
+      "sourceNumber": 77,
+      "sourceChapter": "XIII",
+      "prompt": "Despre căldură (energie calorică) se pot afirma următoarele:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "se poate pierde prin evaporare (transpirație și radiații infraroșii)",
+          "why": "Evaporarea pierde căldură prin transpirație și perspirație. Radiațiile infraroșii reprezintă un mecanism separat, radiația. Sursa: „Metabolism și nutriție”, secțiunea Rata metabolică și temperatura corporală."
+        },
+        {
+          "letter": "B",
+          "text": "este rezultatul reacțiilor catabolice cu eliberare de energie",
+          "why": "Reacțiile catabolice eliberează energie, iar consumul energetic al organismului este corelat cu producția de căldură. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor; „Metabolism și nutriție”, secțiunea Rata metabolică și temperatura corporală."
+        },
+        {
+          "letter": "C",
+          "text": "crește în cazul intensificării metabolismului bazal prin acțiunea hormonilor tiroidieni",
+          "why": "Hormonii tiroidieni intensifică metabolismul bazal, consumul de oxigen și cantitatea de căldură produsă de celule. Sursa: „Sistemul endocrin”, secțiunea Glanda tiroidă."
+        },
+        {
+          "letter": "D",
+          "text": "se pierde sub formă de conducție, transferându-se de la suprafața corporală la obiectele din jur",
+          "why": "Conducția transferă energie prin contact direct dintre suprafața corpului și obiectele din mediu. Sursa: „Metabolism și nutriție”, secțiunea Rata metabolică și temperatura corporală."
+        },
+        {
+          "letter": "E",
+          "text": "producția crește în urma acțiunii substanțelor pirogene asupra talamusului",
+          "why": "Substanțele pirogene acționează asupra hipotalamusului, crescând valoarea de referință termică. Varianta indică talamusul. Sursa: „Metabolism și nutriție”, secțiunea Rata metabolică și temperatura corporală."
+        }
+      ],
+      "sourcePages": [
+        244
+      ],
+      "topicId": "metabolism",
+      "topicLabel": "Metabolismul în stările de nutriție",
+      "lessonUrl": "metabolism_si_nutritie.html#stari-si-minerale",
+      "id": "asoc-077"
+    },
+    {
+      "number": 78,
+      "sourceNumber": 78,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați efectele corecte ale următoarelor molecule de natură proteică:",
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "calcitonina - stimulează depunerile osoase de calciu",
+          "why": "Calcitonina este inclusă între hormonii proteici și stimulează depunerea calciului în oase. Sursa: „Sistemul endocrin”, secțiunea Tipuri și mecanisme de acțiune ale hormonilor; „Sistemul endocrin”, secțiunea Glanda tiroidă."
+        },
+        {
+          "letter": "B",
+          "text": "trombina - participă la formarea fibrinei insolubile din fibrinogen",
+          "why": "Trombina este forma activă a protrombinei și funcționează ca enzimă care transformă fibrinogenul solubil în fibrină insolubilă. Sursa: „Sângele”, secțiunea Coagularea sângelui."
+        },
+        {
+          "letter": "C",
+          "text": "epinefrina - stimulează peristaltismului ureteral",
+          "why": "Epinefrina este o amină derivată dintr-un aminoacid, nu o moleculă proteică din categoria cerută de enunț. Sursa: „Sistemul endocrin”, secțiunea Tipuri și mecanisme de acțiune ale hormonilor."
+        },
+        {
+          "letter": "D",
+          "text": "gamma globulinele - participă la mecanismele primare de apărare ale organismului",
+          "why": "Gama globulinele sunt proteine anticorp; manualul le numește un mecanism primar al apărării organismului, prin legarea specifică de antigene. Sursa: „Sângele”, secțiunea Plasma."
+        },
+        {
+          "letter": "E",
+          "text": "colecistokinina - stimulează sinteza de bilă în perioadele interprandiale",
+          "why": "Colecistochinina controlează eliberarea bilei în duoden. Manualul nu îi atribuie sinteza bilei între mese; bila este produsă de ficat și depozitată în vezica biliară. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros; „Sistemul digestiv”, secțiunea Organele anexe."
+        }
+      ],
+      "sourcePages": [
+        244
+      ],
+      "topicId": "endocrin",
+      "topicLabel": "Hormonii și mecanismele lor de acțiune",
+      "lessonUrl": "sistemul_endocrin.html#descrierea-generala-a-hormonilor",
+      "id": "asoc-078"
+    },
+    {
+      "number": 79,
+      "sourceNumber": 79,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la celulele sanguine:",
+      "correct": [
+        "A",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "limfocitele T se maturizează în timus",
+          "why": "Limfocitele T tinere se maturează în timus înainte de a ajunge în nodulii limfatici. Sursa: „Sângele”, secțiunea Globulele albe."
+        },
+        {
+          "letter": "B",
+          "text": "eritrocitele conțin în citoplasmă un pigment ce fixează CO₂ la nivelul Fe",
+          "why": "Oxigenul se leagă la fierul hemului. CO₂ se leagă de hemoglobină într-un loc diferit, formând carbaminohemoglobină. Sursa: „Sângele”, secțiunea Globulele roșii; „Sistemul respirator”, secțiunea Schimbul de gaze."
+        },
+        {
+          "letter": "C",
+          "text": "monocitele traversează pereții capilarelor prin diapedeză și se transformă în macrofage",
+          "why": "Monocitele traversează pereții capilari prin diapedeză și se transformă în macrofage în țesuturi. Sursa: „Sângele”, secțiunea Globulele albe."
+        },
+        {
+          "letter": "D",
+          "text": "trombocitele, în număr insuficient, duc la tulburări de coagulare, sângerări",
+          "why": "Plachetele au rol în hemostază și coagulare, dar sunt fragmente de citoplasmă, nu celule propriu-zise. Baremul nu selectează varianta în enunțul care cere celule sanguine; excluderea nu neagă rolul lor în oprirea sângerării. Sursa: „Sângele”, secțiunea Plachetele sanguine."
+        },
+        {
+          "letter": "E",
+          "text": "leucocitele în număr mai mare decât media generală din populație se numește leucemie",
+          "why": "Creșterea leucocitelor peste medie se numește leucocitoză. Leucemia este cancerul leucocitelor, nu denumirea oricărei creșteri numerice. Sursa: „Sângele”, secțiunea Globulele albe."
+        }
+      ],
+      "sourcePages": [
+        244
+      ],
+      "topicId": "eritrocite",
+      "topicLabel": "Eritrocitele și eritropoieza",
+      "lessonUrl": "sangele.html#globulele-rosii",
+      "id": "asoc-079"
+    },
+    {
+      "number": 80,
+      "sourceNumber": 80,
+      "sourceChapter": "XIII",
+      "prompt": "Fibrele musculare cu cea mai mică viteză de contracție sunt prezente la nivelul:",
+      "correct": [
+        "B",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "rafeului, proeminență îngroșată ce delimitează cele două compartimente testiculare",
+          "why": "Rafeul este proeminența de pe suprafața scrotului care marchează separarea compartimentelor. Mușchiul neted descris aici este dartosul, aflat în straturile profunde ale pielii scrotale; nu trebuie confundat cu rafeul. Sursa: „Sistemul reproducător masculin”, secțiunea Testiculele; „Țesutul muscular”, secțiunea Tipuri de țesut muscular."
+        },
+        {
+          "letter": "B",
+          "text": "celui de-al treilea strat muscular de la nivelul organului în care enzimele proteolitice acționează în mediu acid",
+          "why": "Mușchiul neted are cea mai mică viteză de contracție; al treilea strat muscular al stomacului este cel oblic, format din fibre netede. Pepsina gastrică acționează în mediul acid. Sursa: „Țesutul muscular”, secțiunea Tipuri de țesut muscular; „Sistemul digestiv”, secțiunea Tractul gastrointestinal; „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "C",
+          "text": "structurii active a reflexului rotulian",
+          "why": "Reflexul rotulian produce extensia gambei prin mușchi scheletici. Aceștia au cea mai mare viteză de contracție în tabel, nu cea mai mică. Sursa: „Țesutul nervos”, secțiunea Fiziologia nervilor; „Țesutul muscular”, secțiunea Tipuri de țesut muscular."
+        },
+        {
+          "letter": "D",
+          "text": "peretelui intestinului subțire, fibrele circulare determinând scăderea diametrului lumenului",
+          "why": "Stratul circular al peretelui intestinal este neted; contracția lui reduce diametrul tubului digestiv. Mușchiul neted este cel mai lent în comparația manualului. Sursa: „Țesutul muscular”, secțiunea Tipuri de țesut muscular; „Sistemul digestiv”, secțiunea Tractul gastrointestinal."
+        },
+        {
+          "letter": "E",
+          "text": "structurii ce modifică diametrul pupilar în funcție de cantitatea de lumină",
+          "why": "Irisul are mușchi netezi constrictori și dilatatori ai pupilei. Aceștia aparțin tipului muscular cu cea mai mică viteză de contracție. Sursa: „Țesutul muscular”, secțiunea Tipuri de țesut muscular; „Organele de simț”, secțiunea Ochiul și vederea."
+        }
+      ],
+      "sourcePages": [
+        244
+      ],
+      "topicId": "muschi",
+      "topicLabel": "Țesutul muscular și controlul său",
+      "lessonUrl": "tesutul_muscular.html#tesutul-muscular",
+      "id": "asoc-080"
+    },
+    {
+      "number": 81,
+      "sourceNumber": 81,
+      "sourceChapter": "XIII",
+      "prompt": "Timusul:",
+      "correct": [
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "prin timozine participă la maturizarea limfocitelor B",
+          "why": "Timozinele contribuie la maturarea limfocitelor T. Varianta înlocuiește greșit limfocitele T cu limfocitele B. Sursa: „Sistemul limfatic și imun”, secțiunea Timusul."
+        },
+        {
+          "letter": "B",
+          "text": "este un organ bilobat aflat în porțiunea inferioară a toracelui",
+          "why": "Timusul este bilobat, dar se află în porțiunea superioară a toracelui, în mediastin, între plămâni și posterior sternului. Localizarea inferioară este greșită. Sursa: „Sistemul limfatic și imun”, secțiunea Timusul."
+        },
+        {
+          "letter": "C",
+          "text": "este alcătuit din măduvă roșie hematoformatoare",
+          "why": "Timusul este alcătuit din lobuli cu celule de suport și elemente limfoide, dispuse în corticală și medulară. Medulara timusului nu trebuie confundată cu măduva roșie osoasă. Sursa: „Sistemul limfatic și imun”, secțiunea Timusul."
+        },
+        {
+          "letter": "D",
+          "text": "este alcătuit din celule suport și limfocite T primitive, migrate din măduva roșie a oaselor",
+          "why": "Leucocitele se dezvoltă în măduva osoasă roșie, unele maturându-se în alt organ. Timusul conține celule de suport și limfocite T primitive, care se transformă aici în limfocite T mature. Sursa: „Sângele”, secțiunea Globulele albe; „Sistemul limfatic și imun”, secțiunea Timusul."
+        },
+        {
+          "letter": "E",
+          "text": "este foarte bine dezvoltat la sfârșitul pubertății",
+          "why": "Manualul precizează că timusul este relativ mare în perioada fetală, începe să se atrofieze după vârsta de un an și devine foarte mic la sfârșitul pubertății. Varianta afirmă contrariul ultimei precizări. Sursa: „Sistemul limfatic și imun”, secțiunea Timusul."
+        }
+      ],
+      "sourcePages": [
+        244
+      ],
+      "topicId": "limfatic",
+      "topicLabel": "Structuri limfatice și imunitate",
+      "lessonUrl": "sistemul_limfatic_si_imun.html#sistemul-limfatic",
+      "id": "asoc-081"
+    },
+    {
+      "number": 82,
+      "sourceNumber": 82,
+      "sourceChapter": "XIII",
+      "prompt": "Hematia:",
+      "correct": [
+        "A",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "se dezvoltă sub acțiunea eritropoietinei eliberate de rinichiul care nu primește oxigen suficient",
+          "why": "Eritrocitele se formează prin eritropoieză în măduva roșie osoasă. Procesul este reglat de eritropoietină, secretată de celulele renale atunci când nu primesc suficient oxigen. Sursa: „Sângele”, secțiunea Globulele roșii."
+        },
+        {
+          "letter": "B",
+          "text": "prin stimularea mecanoreceptorilor de la nivelul aortic și carotidian stimulează centrii respiratorii",
+          "why": "Reglarea respiratorie descrisă aici implică chemoreceptori carotidieni și aortici care detectează scăderea oxigenului dizolvat în sânge și stimulează centrul respirator. Nu este mecanismul de stimulare a unor mecanoreceptori de către hematii propus în variantă. Sursa: „Sistemul respirator”, secțiunea Respirația."
+        },
+        {
+          "letter": "C",
+          "text": "circulă în sânge aproximativ 180 de zile, după care este distrusă și fagocitată",
+          "why": "Eritrocitele circulă aproximativ 120 de zile, după care cele îmbătrânite sau deteriorate sunt fagocitate în splină, ficat și măduva osoasă. Numărul de 180 de zile este greșit. Sursa: „Sângele”, secțiunea Globulele roșii."
+        },
+        {
+          "letter": "D",
+          "text": "eliberează factori ce stimulează producerea coagulului la nivelul vasului lezat",
+          "why": "Manualul atribuie plachetelor rolul esențial în coagulare și participarea la hemostază, în timp ce funcțiile hematiilor sunt transportul oxigenului și al dioxidului de carbon. Varianta atribuie hematiei mecanismul plachetar descris la leziunea vasculară. Sursa: „Sângele”, secțiunea Globulele albe; „Sângele”, secțiunea Plachetele sanguine."
+        },
+        {
+          "letter": "E",
+          "text": "la nivel membranar, aproximativ 85-90 % din populația americană, prezintă antigene Rh",
+          "why": "Manualul precizează că aproximativ 85–90% din populația americană are antigenul Rh pe suprafața eritrocitelor și este Rh-pozitivă. Proporția și localizarea din variantă reproduc această precizare. Sursa: „Sângele”, secțiunea Grupele sanguine."
+        }
+      ],
+      "sourcePages": [
+        245
+      ],
+      "topicId": "eritrocite",
+      "topicLabel": "Eritrocitele și eritropoieza",
+      "lessonUrl": "sangele.html#globulele-rosii",
+      "id": "asoc-082"
+    },
+    {
+      "number": 83,
+      "sourceNumber": 83,
+      "sourceChapter": "XIII",
+      "prompt": "Despre vezica urinară se pot afirma următoarele:",
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este un organ cavitar, posterior de simfiza pubiană, în care se acumulează urina produsă renal",
+          "why": "Vezica este un sac distensibil situat posterior simfizei pubiene. Primește prin uretere urina produsă de rinichi și o acumulează până la eliminarea prin uretră. Sursa: „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii."
+        },
+        {
+          "letter": "B",
+          "text": "eliminarea urinei poate fi împiedicată prin creșterea prostatei ce înconjoară uretra, inferior vezicii urinare, la sexul masculin",
+          "why": "La bărbat, prostata înconjoară uretra și se află inferior vezicii urinare. Creșterea volumului prostatei poate împiedica fluxul normal al urinei prin uretră. Sursa: „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii; „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii; figura 20.8; „Sistemul reproducător masculin”, secțiunea Ducte și organe anexe."
+        },
+        {
+          "letter": "C",
+          "text": "este formată din mușchi neted și prezintă trei orificii - două uretrale și unul ureteral",
+          "why": "Peretele vezicii conține fibre musculare netede, însă cele trei orificii sunt două ureterale și unul uretral. Varianta inversează numărul orificiilor aferente ureterelor și uretrei. Sursa: „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii."
+        },
+        {
+          "letter": "D",
+          "text": "la sexul feminin, este localizată anterior de uter",
+          "why": "În secțiunea sagitală a tractului genital feminin, vezica urinară este reprezentată anterior uterului. Raportul poate fi urmărit direct pe figura 23.1. Sursa: „Sistemul reproducător feminin”, secțiunea Introducere; figura 23.1."
+        },
+        {
+          "letter": "E",
+          "text": "acumulează un lichid a cărui volum poate să crească în diabet, indiferent de forma acestuia",
+          "why": "Manualul descrie producerea excesivă de urină atât în diabetul insipid, prin hiposecreție de ADH, cât și în diabetul zaharat de tip 1 sau 2, când glucoza eliminată urinar antrenează eliminarea unei cantități mari de apă. Sursa: „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară); „Sistemul endocrin”, secțiunea Pancreasul."
+        }
+      ],
+      "sourcePages": [
+        245
+      ],
+      "topicId": "renal",
+      "topicLabel": "Rinichiul și reglarea diurezei",
+      "lessonUrl": "sistemul_renal_complet.html#hormoni",
+      "id": "asoc-083"
+    },
+    {
+      "number": 84,
+      "sourceNumber": 84,
+      "sourceChapter": "XIII",
+      "prompt": "Mușchii extrinseci ai globului ocular:",
+      "correct": [
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt inervați de nervii cranieni III, IV, V",
+          "why": "Nervii cranieni care realizează mișcările oculare sunt oculomotorul (III), trohlearul (IV) și abducensul (VI). Trigemenul (V) este asociat în tabel masticației și sensibilității feței, dinților și limbii. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos periferic."
+        },
+        {
+          "letter": "B",
+          "text": "sunt stimulați sinaptic prin acetilcolină",
+          "why": "Acetilcolina transmite impulsurile de la neuronii motori la celulele musculare scheletice. Acesta este mediatorul sinaptic corespunzător mușchilor extrinseci care realizează mișcările globului ocular. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii; „Organizarea sistemului nervos”, secțiunea Sistemul nervos central; „Organizarea sistemului nervos”, secțiunea Sistemul nervos periferic."
+        },
+        {
+          "letter": "C",
+          "text": "sunt formați din fibre musculare similare celor din 1/3 superioară a esofagului",
+          "why": "Treimea superioară a esofagului conține mușchi striat scheletic. Asocierea din barem privește același tip de țesut muscular care realizează mișcările ochilor prin mușchii extrinseci. Sursa: „Sistemul digestiv”, secțiunea Tractul gastrointestinal; „Organizarea sistemului nervos”, secțiunea Sistemul nervos central; „Organizarea sistemului nervos”, secțiunea Sistemul nervos periferic; „Organele de simț”, secțiunea Ochiul și vederea."
+        },
+        {
+          "letter": "D",
+          "text": "se fixează la nivelul coroidei globului ocular",
+          "why": "Tabelul structurilor ochiului precizează că mușchii extrinseci se atașează de scleră. Coroida are vase de sânge și absoarbe lumina; nu este structura de fixare indicată de manual. Sursa: „Organele de simț”, secțiunea Ochiul și vederea."
+        },
+        {
+          "letter": "E",
+          "text": "prezintă ca sursă de energie glucoza, care poate fi depozitată sub acțiunea insulinei ca glicogen",
+          "why": "Baremul include E. Manualul confirmă utilizarea glucozei pentru energie, stimularea intrării ei în celule prin insulină și depozitarea excesului ca glicogen. Pasajele și figura ilustrează explicit depozitul hepatic, fără să precizeze separat depozitarea glicogenului în mușchii extrinseci oculari; această particularizare rămâne insuficient documentată. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor; „Sistemul endocrin”, secțiunea Pancreasul; figura 13.7; „Metabolism și nutriție”, secțiunea Stări metabolice și metabolismul mineralelor."
+        }
+      ],
+      "sourcePages": [
+        245
+      ],
+      "topicId": "muschi",
+      "topicLabel": "Țesutul muscular și controlul său",
+      "lessonUrl": "tesutul_muscular.html#tesutul-muscular",
+      "id": "asoc-084"
+    },
+    {
+      "number": 85,
+      "sourceNumber": 85,
+      "sourceChapter": "XIII",
+      "prompt": "Ambele gonade îndeplinesc următoarele condiții:",
+      "correct": [
+        "B",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt sub controlul hormonilor gonadotropi secretați de hipotalamus",
+          "why": "FSH și LH sunt hormonii gonadotropi secretați de adenohipofiză. Hipotalamusul produce GnRH, care stimulează producerea lor; varianta confundă sediul gonadotropinelor cu sediul hormonului eliberator. Sursa: „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară); „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie."
+        },
+        {
+          "letter": "B",
+          "text": "sunt structuri care dezvoltă gameți, celule haploide",
+          "why": "Testiculele produc spermatozoizi, iar ovarele produc ovule. Meioza reduce numărul cromozomilor de la 46 la 23, astfel încât gameții prezintă setul haploid. Sursa: „Sistemul reproducător masculin”, secțiunea Testiculele; „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie."
+        },
+        {
+          "letter": "C",
+          "text": "sunt localizate în pelvis",
+          "why": "Ovarele se află în cavitatea pelviană, dar testiculele sunt adăpostite în scrot. Localizarea pelviană nu este comună ambelor gonade. Sursa: „Sistemul reproducător masculin”, secțiunea Testiculele; „Sistemul reproducător feminin”, secțiunea Ovarele și organele anexe."
+        },
+        {
+          "letter": "D",
+          "text": "prezintă celule secretante de hormoni, aflate sub controlul LH",
+          "why": "Tabelul hormonilor hipofizari indică drept ținte ale LH corpul galben ovarian și celulele interstițiale testiculare. LH stimulează producția progesteronului în ovar și a testosteronului în testicul. Sursa: „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară)."
+        },
+        {
+          "letter": "E",
+          "text": "prezintă o secreție hormonală proprie reglată prin mecanism de feed-back negativ",
+          "why": "Manualul descrie reglarea secreției testiculare prin feedback negativ și precizează că estrogenii ovarieni inhibă producția de FSH. Ambele gonade participă astfel la mecanisme de reglare prin inhibiție hormonală. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini; „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie."
+        }
+      ],
+      "sourcePages": [
+        245
+      ],
+      "topicId": "endocrin",
+      "topicLabel": "Hormonii și mecanismele lor de acțiune",
+      "lessonUrl": "sistemul_endocrin.html#descrierea-generala-a-hormonilor",
+      "id": "asoc-085"
+    },
+    {
+      "number": 86,
+      "sourceNumber": 86,
+      "sourceChapter": "XIII",
+      "prompt": "La nivelul membrului inferior sunt prezente:",
+      "correct": [
+        "A",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "în fosa poplitee, structuri ce generează răspuns imun",
+          "why": "Manualul precizează că nodulii limfatici se găsesc și în spatele genunchiului, în fosa poplitee. Tabelul organelor limfatice arată că în noduli se generează răspunsul imun. Sursa: „Sistemul limfatic și imun”, secțiunea Nodulii limfatici."
+        },
+        {
+          "letter": "B",
+          "text": "arterele tibiale, ramuri de bifurcație ale arterei femurale",
+          "why": "În figura arterelor, artera femurală continuă cu artera poplitee la genunchi, iar arterele tibiale se desprind inferior din traseul popliteu. Varianta sare peste artera poplitee când atribuie bifurcația direct femuralei. Sursa: „Sistemul cardiovascular”, secțiunea Tipuri de circulație sanguină; figura 15.9."
+        },
+        {
+          "letter": "C",
+          "text": "mușchi formați din fibre cilindrice, alungite, unite prin joncțiuni",
+          "why": "Fibrele musculare scheletice sunt cilindrice și alungite, dar manualul precizează că celulele musculare netede și cardiace sunt interconectate electric, spre deosebire de cele scheletice. Partea referitoare la unirea prin joncțiuni nu descrie musculatura scheletică a membrului inferior. Sursa: „Țesutul muscular”, secțiunea Tipuri de țesut muscular."
+        },
+        {
+          "letter": "D",
+          "text": "oase care cresc prin stimularea STH la nivelul cartilajului metafizar",
+          "why": "Oasele lungi se găsesc și în membrele inferioare. Creșterea lor în lungime se realizează prin zona cartilaginoasă până la osificarea acesteia, iar STH stimulează creșterea organismului; asocierea corelează creșterea osoasă cu efectul somatotropului. Sursa: „Oasele și articulațiile”, secțiunea Osul; „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară)."
+        },
+        {
+          "letter": "E",
+          "text": "structuri musculare ce se contractă voluntar, sub acțiunea stimulilor inițiați de lobul frontal",
+          "why": "Mușchii scheletici ai membrului inferior se contractă voluntar, la stimularea nervoasă. Aria motorie principală din lobul frontal inițiază impulsuri ce sunt transmise prin tractul corticospinal către musculatură. Sursa: „Țesutul muscular”, secțiunea Mușchiul striat scheletic; „Organizarea sistemului nervos”, secțiunea Sistemul nervos central."
+        }
+      ],
+      "sourcePages": [
+        245
+      ],
+      "topicId": "muschi",
+      "topicLabel": "Țesutul muscular și controlul său",
+      "lessonUrl": "tesutul_muscular.html#tesutul-muscular",
+      "id": "asoc-086"
+    },
+    {
+      "number": 87,
+      "sourceNumber": 87,
+      "sourceChapter": "XIII",
+      "prompt": "Despre limfocite se pot afirma următoarele:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "cele mature se formează în măduva roșie hematogenă",
+          "why": "Leucocitele provin din măduva roșie, dar unele își încheie maturarea în alt organ. Limfocitele T tinere se maturează în timus, astfel încât sediul medular nu poate fi generalizat la toate limfocitele mature. Sursa: „Sângele”, secțiunea Globulele albe; „Sistemul limfatic și imun”, secțiunea Timusul."
+        },
+        {
+          "letter": "B",
+          "text": "intervin în reacțiile imune ale organismului",
+          "why": "Limfocitele B se transformă în plasmocite producătoare de anticorpi, iar limfocitele T participă la distrugerea microorganismelor. Manualul le numește celule cheie ale reacțiilor imune. Sursa: „Sângele”, secțiunea Globulele albe."
+        },
+        {
+          "letter": "C",
+          "text": "formează un rezervor la nivelul splinei",
+          "why": "Printre funcțiile splinei, manualul enumeră explicit rolul de rezervor de limfocite și prezența limfocitelor B și T pentru răspunsul imun. Sursa: „Sistemul limfatic și imun”, secțiunea Splina."
+        },
+        {
+          "letter": "D",
+          "text": "au durată de viață variabilă, de la ore la luni",
+          "why": "Baremul include D. Manualul atribuie leucocitelor o durată de viață de câteva ore sau câteva luni, în funcție de tipul lor, dar nu particularizează acest interval pentru limfocite. Prin urmare, intervalul atribuit separat limfocitelor rămâne insuficient susținut de pasaj. Sursa: „Sângele”, secțiunea Globulele albe."
+        },
+        {
+          "letter": "E",
+          "text": "sunt fagocitate de monocitele circulante",
+          "why": "Baremul exclude varianta. Manualul descrie trecerea monocitelor din sânge în țesuturi, transformarea lor în macrofage și fagocitarea microorganismelor; nu descrie fagocitarea limfocitelor de către monocitele circulante. Aceste pasaje nu justifică o afirmație absolută că un asemenea proces ar fi imposibil. Sursa: „Sângele”, secțiunea Globulele albe."
+        }
+      ],
+      "sourcePages": [
+        245
+      ],
+      "topicId": "limfatic",
+      "topicLabel": "Structuri limfatice și imunitate",
+      "lessonUrl": "sistemul_limfatic_si_imun.html#sistemul-limfatic",
+      "id": "asoc-087"
+    },
+    {
+      "number": 88,
+      "sourceNumber": 88,
+      "sourceChapter": "XIII",
+      "prompt": "Hormonii:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "pot acționa ca și mesageri primari ce activează enzime membranare",
+          "why": "Majoritatea hormonilor proteici, peptidici și aminici sunt mesageri primari. Ei se leagă de receptorii membranari și intensifică activitatea unor enzime membranare, precum adenilat ciclaza. Sursa: „Sistemul endocrin”, secțiunea Tipuri și mecanisme de acțiune ale hormonilor."
+        },
+        {
+          "letter": "B",
+          "text": "prin mecanism paracrin acționează asupra tuturor celulelor corpului",
+          "why": "Mecanismul paracrin presupune acțiunea asupra celulelor din imediata vecinătate a celulei secretante. Extinderea efectului la toate celulele corpului este greșită. Sursa: „Sistemul endocrin”, secțiunea Tipuri și mecanisme de acțiune ale hormonilor."
+        },
+        {
+          "letter": "C",
+          "text": "pot controla metabolismul celular prin combinarea intracelulară cu proteine, stimulând gene care codifică mARN specific",
+          "why": "Hormonii steroizi traversează membrana, se combină cu proteine în citoplasmă și stimulează gene ce codifică ARN mesager specific. Sinteza proteică astfel declanșată modifică metabolismul celulei. Sursa: „Sistemul endocrin”, secțiunea Tipuri și mecanisme de acțiune ale hormonilor."
+        },
+        {
+          "letter": "D",
+          "text": "pot acționa prin mecanism autocrin, având efecte asupra glandei secretante",
+          "why": "În mecanismul autocrin, hormonul acționează asupra celulei care l-a secretat. Prin urmare, efectul se poate manifesta în glanda secretantă; formularea nu înseamnă că răspund obligatoriu toate celulele glandei. Sursa: „Sistemul endocrin”, secțiunea Tipuri și mecanisme de acțiune ale hormonilor."
+        },
+        {
+          "letter": "E",
+          "text": "pot acționa ca mesageri secundari ce alterează permeabilitatea membranară",
+          "why": "Hormonii descriși sunt mesageri primari. Mesagerul secundar este cAMP format după activarea adenilat ciclazei; acesta poate produce alterarea permeabilității membranare. Varianta atribuie hormonului rolul cAMP. Sursa: „Sistemul endocrin”, secțiunea Tipuri și mecanisme de acțiune ale hormonilor."
+        }
+      ],
+      "sourcePages": [
+        245,
+        246
+      ],
+      "topicId": "endocrin",
+      "topicLabel": "Hormonii și mecanismele lor de acțiune",
+      "lessonUrl": "sistemul_endocrin.html#descrierea-generala-a-hormonilor",
+      "id": "asoc-088"
+    },
+    {
+      "number": 89,
+      "sourceNumber": 89,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați asocierile corecte:",
+      "correct": [
+        "B",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "metabolism bazal - hormonii paratiroidieni",
+          "why": "Hormonii tiroidieni sunt asociați creșterii ratei metabolismului. Parathormonul, produs de paratiroide, reglează în principal nivelul sanguin al calciului, nu metabolismul bazal din asocierea propusă. Sursa: „Sistemul endocrin”, secțiunea Glanda tiroidă; „Sistemul endocrin”, secțiunea Principalii hormoni — tabelul 13.3."
+        },
+        {
+          "letter": "B",
+          "text": "glandă mamară - prolactină și oxitocină",
+          "why": "Prolactina stimulează sinteza și secreția laptelui, iar oxitocina determină ejecția lui. Ambii hormoni au astfel efecte asupra glandelor mamare, în etape distincte ale alăptării. Sursa: „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară); „Sistemul reproducător feminin”, secțiunea Ovarele și organele anexe."
+        },
+        {
+          "letter": "C",
+          "text": "gonade - FSH și prolactină",
+          "why": "Hormonii gonadotropi din manual sunt FSH și LH, cu acțiune asupra ovarelor și testiculelor. Prolactina este asociată glandelor mamare și producerii laptelui, deci perechea cerută pentru gonade este FSH–LH. Sursa: „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară)."
+        },
+        {
+          "letter": "D",
+          "text": "limfocite T - timozine",
+          "why": "Timozinele sunt secretate de timus și contribuie la maturarea limfocitelor T. Asocierea corespunde rolului endocrin al timusului. Sursa: „Sistemul limfatic și imun”, secțiunea Timusul."
+        },
+        {
+          "letter": "E",
+          "text": "tub contort distal și colector - ADH",
+          "why": "ADH crește permeabilitatea pentru apă a tubilor contorți distali și colectori. Prin aceasta favorizează reabsorbția apei și reducerea volumului de urină. Sursa: „Sistemul urinar”, secțiunea Activitatea hormonală și urina."
+        }
+      ],
+      "sourcePages": [
+        246
+      ],
+      "topicId": "endocrin",
+      "topicLabel": "Hormonii și mecanismele lor de acțiune",
+      "lessonUrl": "sistemul_endocrin.html#descrierea-generala-a-hormonilor",
+      "id": "asoc-089"
+    },
+    {
+      "number": 90,
+      "sourceNumber": 90,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele afirmații sunt corecte:",
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "proprioceptorii pot fi localizați la nivelul oaselor, mușchilor și articulațiilor",
+          "why": "Manualul definește proprioceptorii prin localizarea în mușchii scheletici, articulații sau oase și prin detectarea poziției corpului. Toate cele trei localizări din variantă sunt incluse în această definiție. Sursa: „Organele de simț”, secțiunea Receptorii și tabelul 12.1."
+        },
+        {
+          "letter": "B",
+          "text": "la nivelul pielii, corpusculii Pacini au o dispoziție mai profundă comparativ cu corpusculii Meissner",
+          "why": "Figura receptorilor cutanați prezintă corpusculii Pacini în profunzime, iar corpusculii Meissner aproape de suprafața pielii. Poziția relativă afirmată se vede direct în figură. Sursa: „Organele de simț”, secțiunea Alte simțuri; figura 12.7."
+        },
+        {
+          "letter": "C",
+          "text": "pata oarbă reprezintă locul din retină la nivelul căruia există un număr ridicat de celule cu conuri",
+          "why": "Pata oarbă este locul de ieșire al nervului optic și nu conține celule cu conuri sau bastonașe. Numărul mare de conuri caracterizează zona centrală a retinei, nu pata oarbă. Sursa: „Organele de simț”, secțiunea Ochiul și vederea."
+        },
+        {
+          "letter": "D",
+          "text": "în cazul miopiei, diametrul ochiului ocular este mai scurt decât în cazul ochiului normal",
+          "why": "Manualul asociază miopia cu alungirea globului ocular sau cu acomodarea necorespunzătoare a cristalinului. Un glob ocular prea scurt este asociat hipermetropiei, nu miopiei. Sursa: „Organele de simț”, secțiunea Ochiul și vederea."
+        },
+        {
+          "letter": "E",
+          "text": "echilibrul static este menținut prin intervenția unor structuri receptoare numite macule otolitice",
+          "why": "Maculele otolitice sunt structurile receptoare ale echilibrului static. Deplasarea otolitelor stimulează celulele ciliate și permite detectarea poziției capului în raport cu gravitația. Sursa: „Organele de simț”, secțiunea Alte simțuri."
+        }
+      ],
+      "sourcePages": [
+        246
+      ],
+      "topicId": "simturi",
+      "topicLabel": "Receptori și organe de simț",
+      "lessonUrl": "organele_de_simt.html#alte-simturi",
+      "id": "asoc-090"
+    },
+    {
+      "number": 91,
+      "sourceNumber": 91,
+      "sourceChapter": "XIII",
+      "prompt": "Care afirmații le considerați adevărate?",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "helicotrema reprezintă canalul cu endolimfă",
+          "why": "Figura 12.4 arată helicotrema la comunicarea dintre scala vestibuli și scala tympani, pe traseul perilimfei. Ductul cohlear este etichetat separat drept spațiul care conține endolimfă. Sursa: „Organele de simț”, secțiunea Urechea și auzul; „Organele de simț”, secțiunea Urechea și auzul; figura 12.4."
+        },
+        {
+          "letter": "B",
+          "text": "umoarea vitroasă menține retina atașată pe coroidă",
+          "why": "Tabelul structurilor ochiului precizează că umoarea vitroasă umple compartimentul posterior, menține presiunea și forma ochiului și păstrează retina atașată pe coroidă. Sursa: „Organele de simț”, secțiunea Ochiul și vederea."
+        },
+        {
+          "letter": "C",
+          "text": "lobul temporal intervine în memoria auditivă",
+          "why": "Figura ariilor encefalului indică explicit „Memorie vizuală și auditivă” în dreptul lobului temporal. Acesta este suportul grafic direct pentru asociere. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos central; figura 11.5."
+        },
+        {
+          "letter": "D",
+          "text": "pleoapele protejează porțiunea anterioară a ochiului",
+          "why": "Pleoapele sunt structuri accesorii ale ochiului care protejează porțiunea lui anterioară. Manualul distinge acest rol de protecția împotriva corpilor străini oferită de sprâncene și gene. Sursa: „Organele de simț”, secțiunea Ochiul și vederea."
+        },
+        {
+          "letter": "E",
+          "text": "mugurii gustativi conțin doar celule, gustative și de susținere",
+          "why": "Figura mugurelui gustativ etichetează, alături de celula gustativă și celula de susținere, și o celulă bazală. Termenul „doar” face enumerarea din variantă incompletă. Sursa: „Organele de simț”, secțiunea Alte simțuri; figura 12.5."
+        }
+      ],
+      "sourcePages": [
+        246
+      ],
+      "topicId": "simturi",
+      "topicLabel": "Receptori și organe de simț",
+      "lessonUrl": "organele_de_simt.html#alte-simturi",
+      "id": "asoc-091"
+    },
+    {
+      "number": 92,
+      "sourceNumber": 92,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre următoarele afirmații sunt corecte?",
+      "correct": [
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "secreția oxitocinei în timpul nașterii este reglată prin feed-back negativ",
+          "why": "Nașterea este exemplul de feedback pozitiv dat de manual: devierea se amplifică până la obținerea răspunsului final, expulzia fetală și placentară. Oxitocina stimulează contracțiile uterine în acest proces. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Funcții ale organismului; „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară)."
+        },
+        {
+          "letter": "B",
+          "text": "eliberarea bilei în duoden este stimulată de colecistochinină",
+          "why": "Colecistochinina controlează eliberarea bilei în duoden. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "C",
+          "text": "neuronul utilizează ca sursă energetică glucoză și aminoacizi",
+          "why": "Baremul exclude asocierea. Manualul arată că sistemul nervos folosește în mod normal glucoza drept sursă principală de energie și descrie transformarea energetică a aminoacizilor la nivel hepatic. Nu precizează însă că neuronii nu ar putea utiliza niciun aminoacid în nicio situație; o asemenea interdicție nu poate fi dedusă din text. Sursa: „Metabolism și nutriție”, secțiunea Stări metabolice și metabolismul mineralelor; „Metabolism și nutriție”, secțiunea Metabolismul lipidelor și al proteinelor."
+        },
+        {
+          "letter": "D",
+          "text": "eliminarea ureei din tubul colector favorizează deplasarea apei spre fluxul sanguin",
+          "why": "Ureea care părăsește tubul colector se acumulează în medulară și contribuie la concentrarea acesteia. Legenda mecanismului contracurent precizează explicit că eliminarea ureei favorizează deplasarea apei spre fluxul sanguin. Sursa: „Sistemul urinar”, secțiunea Structura și fiziologia nefronului."
+        },
+        {
+          "letter": "E",
+          "text": "ventilația pulmonară este asigurată de contracția diafragmei controlată de centrii din mezencefal",
+          "why": "Diafragma participă la ventilație prin contracție, dar centrii respiratori descriși de manual se află în bulb și punte. Localizarea lor în mezencefal este partea greșită. Sursa: „Sistemul respirator”, secțiunea Respirația."
+        }
+      ],
+      "sourcePages": [
+        246
+      ],
+      "topicId": "metabolism",
+      "topicLabel": "Metabolismul în stările de nutriție",
+      "lessonUrl": "metabolism_si_nutritie.html#stari-si-minerale",
+      "id": "asoc-092"
+    },
+    {
+      "number": 93,
+      "sourceNumber": 93,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre următoarele mecanisme de feed-back negativ contribuie la menținerea homeostaziei mediului intern?",
+      "correct": [
+        "A",
+        "B"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "scăderea producției de FSH sub acțiunea estrogenilor",
+          "why": "Tabelul hormonilor reproducerii feminine precizează că estrogenii inhibă producția FSH-ului. Scăderea hormonului stimulator sub acțiunea produsului gonadei este un mecanism de feedback negativ. Sursa: „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie."
+        },
+        {
+          "letter": "B",
+          "text": "inhibarea producerii de LH sub acțiunea testosteronului",
+          "why": "Testosteronul inhibă producerea LH-ului. Această inhibiție reduce stimularea testiculului și face parte din reglarea prin feedback negativ a funcției reproductive masculine. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "C",
+          "text": "acțiunea GnRH de scădere a nivelurilor de FSH și LH",
+          "why": "GnRH stimulează producerea FSH și LH de către hipofiză. Varianta inversează acest efect, prezentându-l ca scădere a celor două gonadotropine. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini; „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie."
+        },
+        {
+          "letter": "D",
+          "text": "eliberarea calcitoninei din tiroidă în condițiile scăderii nivelului sanguin al calciului",
+          "why": "Când nivelul sanguin al calciului scade, paratiroidele eliberează parathormonul (PTH), care crește calcemia. Acesta este răspunsul descris de manual; varianta îl atribuie calcitoninei. Sursa: „Sistemul endocrin”, secțiunea Glandele paratiroide."
+        },
+        {
+          "letter": "E",
+          "text": "producerea de oxitocină din neurohipofiză pentru stimularea contracțiilor uterine, ducând la expulzia fătului",
+          "why": "Contracțiile uterine și expulzia fătului apar în exemplul de feedback pozitiv al nașterii, deci nu răspund cerinței de feedback negativ. În plus, oxitocina este produsă în hipotalamus și eliberată de neurohipofiză. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Funcții ale organismului; „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară)."
+        }
+      ],
+      "sourcePages": [
+        246
+      ],
+      "topicId": "endocrin",
+      "topicLabel": "Hormonii și mecanismele lor de acțiune",
+      "lessonUrl": "sistemul_endocrin.html#descrierea-generala-a-hormonilor",
+      "id": "asoc-093"
+    },
+    {
+      "number": 94,
+      "sourceNumber": 94,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la feed-back:",
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "poate fi atât pozitiv cât și negativ",
+          "why": "Manualul descrie atât feedback negativ, care reduce abaterea și readuce sistemul la valoarea de referință, cât și feedback pozitiv, care amplifică devierea până la răspunsul final. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Funcții ale organismului."
+        },
+        {
+          "letter": "B",
+          "text": "cel negativ presupune readucerea parametrilor mediului intern la valorile lor de referință",
+          "why": "Feedbackul negativ scade producția sistemului când este necesar pentru a readuce parametrul la valoarea de referință. Astfel contribuie la menținerea homeostaziei. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Funcții ale organismului."
+        },
+        {
+          "letter": "C",
+          "text": "cel pozitiv este responsabil de devierea crescândă a unui parametru de la valoarea de referință, menținând astfel homeostazia",
+          "why": "Prima parte descrie corect amplificarea devierii prin feedback pozitiv. Manualul atribuie însă menținerea obișnuită a homeostaziei feedbackului negativ; cel pozitiv continuă devierea până la un rezultat final precum oprirea hemoragiei sau nașterea. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Funcții ale organismului."
+        },
+        {
+          "letter": "D",
+          "text": "mecanismele de feedback presupun existența unor senzori care monitorizează parametrii mediului intern în raport cu valoarea de referință",
+          "why": "Senzorul sau receptorul detectează devierea de la valoarea de referință. Centrul de control integrează informațiile și stabilește răspunsul, realizat apoi de efectori. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Funcții ale organismului."
+        },
+        {
+          "letter": "E",
+          "text": "efectorii feedbackului negativ sunt responsabili de producerea răspunsului care alterează homeostazia",
+          "why": "Efectorii produc răspunsul care readuce organismul la homeostazie. În feedbackul negativ, ei contracarează abaterea; varianta inversează rezultatul prin afirmația că alterează homeostazia. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Funcții ale organismului."
+        }
+      ],
+      "sourcePages": [
+        246
+      ],
+      "topicId": "functii",
+      "topicLabel": "Funcțiile organismului",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#functii",
+      "id": "asoc-094"
+    },
+    {
+      "number": 95,
+      "sourceNumber": 95,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "correct": [
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "în cavitatea medulară a oaselor lungi ale adultului se găsește țesut osos spongios",
+          "why": "Cavitatea medulară din diafiza unui os lung conține măduvă galbenă. Este o cavitate căptușită de endost, nu o regiune umplută cu țesut osos spongios. Sursa: „Oasele și articulațiile”, secțiunea Osul."
+        },
+        {
+          "letter": "B",
+          "text": "oasele carpiene, oase de tip scurt, se găsesc la nivelul mâinii",
+          "why": "Oasele carpiene sunt oasele încheieturii mâinii și aparțin categoriei oaselor scurte. Atât forma, cât și localizarea sunt corecte. Sursa: „Oasele și articulațiile”, secțiunea Osul."
+        },
+        {
+          "letter": "C",
+          "text": "lama ciuruită a osului etmoid permite trecerea nervilor olfactivi din cavitățile nazale în cutia craniană",
+          "why": "Nervul olfactiv pătrunde în cutia craniană prin lama ciuruită a etmoidului, apoi trece prin bulbii și tractul olfactiv către ariile corticale. Varianta identifică corect această cale dinspre cavitatea nazală. Sursa: „Organele de simț”, secțiunea Alte simțuri."
+        },
+        {
+          "letter": "D",
+          "text": "foramen magnum a osului occipital și discul intervertebral dintre primele două vertebre toracice reprezintă limitele măduvei spinării",
+          "why": "Limita superioară este la foramen magnum al osului occipital, dar capătul inferior se află în apropierea discului dintre prima și a doua vertebră lombară. Varianta înlocuiește greșit vertebrele lombare cu cele toracice. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos central."
+        },
+        {
+          "letter": "E",
+          "text": "coastele, prin coborâre și rotație spre exterior, participă la inspirație",
+          "why": "În inspirație, contracția mușchilor intercostali ridică coastele în sus și spre exterior, mărind volumul toracelui. Coborârea coastelor nu este mișcarea inspiratorie descrisă. Sursa: „Sistemul respirator”, secțiunea Respirația."
+        }
+      ],
+      "sourcePages": [
+        246,
+        247
+      ],
+      "topicId": "cavitati",
+      "topicLabel": "Cavitățile corpului",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#cavitati",
+      "id": "asoc-095"
+    },
+    {
+      "number": 96,
+      "sourceNumber": 96,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați efectele corecte ale hormonilor produși de glande endocrine:",
+      "correct": [
+        "A",
+        "B"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "estrogenii îngroașă mucoasa uterină și inhibă hormonul foliculostimulant",
+          "why": "Estrogenii produși de ovar îngroașă mucoasa uterină și inhibă producerea FSH. Ambele efecte sunt enumerate împreună în tabelul hormonilor reproducerii feminine. Sursa: „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie."
+        },
+        {
+          "letter": "B",
+          "text": "glucocorticoizii produc catabolism proteic",
+          "why": "Glucocorticoizii sunt produși de corticala suprarenală. În reglarea metabolismului proteinelor, manualul precizează că ei favorizează degradarea proteinelor în celule, adică un efect catabolic. Sursa: „Sistemul endocrin”, secțiunea Glandele suprarenale; „Metabolism și nutriție”, secțiunea Metabolismul lipidelor și al proteinelor."
+        },
+        {
+          "letter": "C",
+          "text": "vasopresina stimulează reabsorbția apei în tubii renalii",
+          "why": "Efectul afirmat este corect: ADH stimulează reabsorbția apei în rinichi. Excluderea din barem se corelează cu cerința despre hormoni produși de glande endocrine: manualul precizează că vasopresina este produsă de hipotalamus și doar eliberată de neurohipofiză. Sursa: „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară)."
+        },
+        {
+          "letter": "D",
+          "text": "oxitocina stimulează ejecția laptelui",
+          "why": "Oxitocina stimulează într-adevăr ejecția laptelui. În raport cu cerința și baremul, trebuie deosebită producerea hormonului în hipotalamus de eliberarea sa prin neurohipofiză; efectul asupra glandei mamare nu este fals. Sursa: „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară)."
+        },
+        {
+          "letter": "E",
+          "text": "eritropoietina stimulează eritropoieza în măduva roșie osoasă",
+          "why": "Eritropoietina stimulează într-adevăr producerea eritrocitelor în măduva osoasă. Manualul o atribuie celulelor renale, în categoria altor organe cu funcție endocrină; excluderea din barem se referă la categoria de producători cerută, nu la infirmarea efectului eritropoietinei. Sursa: „Sistemul endocrin”, secțiunea Tipuri și mecanisme de acțiune ale hormonilor; „Sistemul endocrin”, secțiunea Alte glande endocrine; „Sângele”, secțiunea Globulele roșii."
+        }
+      ],
+      "sourcePages": [
+        247
+      ],
+      "topicId": "endocrin",
+      "topicLabel": "Hormonii și mecanismele lor de acțiune",
+      "lessonUrl": "sistemul_endocrin.html#descrierea-generala-a-hormonilor",
+      "id": "asoc-096"
+    },
+    {
+      "number": 97,
+      "sourceNumber": 97,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "correct": [
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "timozina - hormon secretat de glanda tiroidă - intervine în dezvoltarea limfocitelor T",
+          "why": "Timozinele sunt produse și secretate de timus și contribuie la maturarea limfocitelor T. Glanda tiroidă este sediul greșit din asociere. Sursa: „Sistemul limfatic și imun”, secțiunea Timusul."
+        },
+        {
+          "letter": "B",
+          "text": "gastrina - hormon secretat de celulele endocrine digestive - stimulează hematopoieza",
+          "why": "Gastrina este hormonul celulelor endocrine digestive care stimulează secreția sucului gastric. Eritropoietina renală stimulează producerea eritrocitelor; hematopoieza nu este efectul atribuit gastrinei în manual. Sursa: „Sistemul digestiv”, secțiunea Stomacul; „Sângele”, secțiunea Globulele roșii."
+        },
+        {
+          "letter": "C",
+          "text": "HGH - hormon adenohipofizar proteic - promovează sinteza celulară de proteine",
+          "why": "HGH este hormonul de creștere secretat de adenohipofiză, numit și STH. Este o proteină de 191 de aminoacizi și promovează sinteza proteică, deci toate elementele asocierii sunt susținute. Sursa: „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară)."
+        },
+        {
+          "letter": "D",
+          "text": "GnRH - hormon eliberator produs de hipotalamus - stimulează producerea de FSH și ACTH de către hipofiză",
+          "why": "GnRH este produs de hipotalamus și stimulează hipofiza să producă FSH și LH. ACTH, care stimulează corticala suprarenală, nu este al doilea hormon al perechii controlate prin GnRH din tabel. Sursa: „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie; „Sistemul endocrin”, secțiunea Hipofiza (glanda pituitară)."
+        },
+        {
+          "letter": "E",
+          "text": "parathormonul - hormon produs de glandele paratiroide - crește concentrația sanguină a Ca²⁺",
+          "why": "Glandele paratiroide secretă parathormonul, care crește concentrația calciului sanguin. Manualul corelează acest efect cu mobilizarea calciului din oase și cu sporirea reabsorbției renale și absorbției intestinale. Sursa: „Sistemul endocrin”, secțiunea Principalii hormoni — tabelul 13.3; „Sistemul endocrin”, secțiunea Glandele paratiroide."
+        }
+      ],
+      "sourcePages": [
+        247
+      ],
+      "topicId": "endocrin",
+      "topicLabel": "Hormonii și mecanismele lor de acțiune",
+      "lessonUrl": "sistemul_endocrin.html#descrierea-generala-a-hormonilor",
+      "id": "asoc-097"
+    },
+    {
+      "number": 98,
+      "sourceNumber": 98,
+      "sourceChapter": "XIII",
+      "prompt": "Pornind de la nivelul unui nodul limfatic inghinal drept, un limfocit poate parcurge următorul traseu până în atriul stâng:",
+      "correct": [
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "limfatice regionale - duct limfatic drept - vena subclaviculară dreaptă - vena brahiocefalică dreaptă - vena cavă superioară - atriul drept - arteră pulmonară - plămân - venă pulmonară - atriul stâng",
+          "why": "Limfa dintr-un nodul inghinal aparține teritoriului subdiafragmatic, drenat prin ductul toracic spre vena subclaviculară stângă. Ductul limfatic drept drenează jumătatea dreaptă supradiafragmatică, deci traseul începe greșit. Sursa: „Sistemul limfatic și imun”, secțiunea Sistemul limfatic."
+        },
+        {
+          "letter": "B",
+          "text": "limfatice regionale - duct toracic - vena subclaviculară stângă - vena brahiocefalică stângă - vena cavă superioară - atriul drept - valva mitrală - arteră pulmonară - plămân - venă pulmonară - atriul stâng",
+          "why": "După atriul drept, circulația continuă prin valva tricuspidă și ventriculul drept spre artera pulmonară. Valva mitrală este între atriul stâng și ventriculul stâng, deci nu poate ocupa poziția propusă în traseu. Sursa: „Sistemul cardiovascular”, secțiunea Valvele cardiace."
+        },
+        {
+          "letter": "C",
+          "text": "limfatice regionale - duct limfatic drept - vena subclaviculară stângă - vena brahiocefalică stângă - vena cavă superioară - atriul drept - arteră pulmonară - plămân - venă pulmonară - atriul stâng",
+          "why": "Varianta asociază greșit ductul limfatic drept cu vena subclaviculară stângă. Ductul drept se varsă în vena subclaviculară dreaptă, iar limfa inghinală ajunge la ductul toracic și apoi la vena subclaviculară stângă. Sursa: „Sistemul limfatic și imun”, secțiunea Sistemul limfatic."
+        },
+        {
+          "letter": "D",
+          "text": "limfatice regionale - duct toracic - vena subclaviculară stângă - vena brahiocefalică stângă - vena cavă superioară - atriul drept - arteră pulmonară - plămân - venă pulmonară - atriul stâng",
+          "why": "Traseul schematic din barem leagă teritoriul inghinal de ductul toracic, vena subclaviculară stângă, vena brahiocefalică stângă, vena cavă superioară și atriul drept, apoi de circulația pulmonară și atriul stâng. Între atriul drept și artera pulmonară se interpun valva tricuspidă și ventriculul drept; acestea sunt omise din enumerarea schematică. Sursa: „Sistemul limfatic și imun”, secțiunea Sistemul limfatic; „Sistemul cardiovascular”, secțiunea Tipuri de circulație sanguină; figura 15.10; „Sistemul cardiovascular”, secțiunea Cavitățile și vasele inimii; „Sistemul cardiovascular”, secțiunea Valvele cardiace."
+        },
+        {
+          "letter": "E",
+          "text": "limfatice regionale - duct toracic - vena subclaviculară stângă - vena brahiocefalică stângă - vena cavă superioară - sinus coronarian - atriul drept - arteră pulmonară - plămân - venă pulmonară - atriul stâng",
+          "why": "Vena cavă superioară se varsă în atriul drept. Sinusul coronarian aduce separat sângele venos al inimii în același atriu; el nu este o porțiune interpusă între vena cavă superioară și atriul drept. Sursa: „Sistemul cardiovascular”, secțiunea Cavitățile și vasele inimii; „Sistemul cardiovascular”, secțiunea Circulația coronariană."
+        }
+      ],
+      "sourcePages": [
+        247
+      ],
+      "topicId": "limfatic",
+      "topicLabel": "Structuri limfatice și imunitate",
+      "lessonUrl": "sistemul_limfatic_si_imun.html#sistemul-limfatic",
+      "id": "asoc-098"
+    },
+    {
+      "number": 99,
+      "sourceNumber": 99,
+      "sourceChapter": "XIII",
+      "prompt": "Despre minerale sunt adevărate următoarele afirmații:",
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "calciul este implicat în mecanismul transmiterii sinaptice",
+          "why": "Creșterea permeabilității terminației presinaptice pentru calciu determină eliberarea mediatorului din vezicule. Calciul participă astfel la transmiterea sinaptică. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii."
+        },
+        {
+          "letter": "B",
+          "text": "sodiul este esențial pentru țesuturile excitabile",
+          "why": "Sodiul este principalul cation extracelular și are rol în excitabilitatea mușchilor, nervilor și țesutului cardiac. Asocierea cu țesuturile excitabile este explicită în manual. Sursa: „Metabolism și nutriție”, secțiunea Stări metabolice și metabolismul mineralelor."
+        },
+        {
+          "letter": "C",
+          "text": "potasiul este cel mai întâlnit ion extracelular și influențează transmiterea impulsurilor nervoase",
+          "why": "Potasiul influențează transmiterea impulsurilor nervoase, dar este cel mai frecvent cation intracelular. Cel mai frecvent cation extracelular este sodiul; varianta inversează distribuția. Sursa: „Metabolism și nutriție”, secțiunea Stări metabolice și metabolismul mineralelor."
+        },
+        {
+          "letter": "D",
+          "text": "proteinele mențin presiunea osmotică a sângelui",
+          "why": "Proteinele plasmatice, în special albuminele, contribuie la menținerea presiunii osmotice a sângelui. Efectul este real, însă proteinele sunt compuși organici și nu aparțin mineralelor, categoria cerută de enunț. Sursa: „Sângele”, secțiunea Plasma; „Metabolism și nutriție”, secțiunea Stări metabolice și metabolismul mineralelor."
+        },
+        {
+          "letter": "E",
+          "text": "fierul și cuprul sunt necesari pentru producerea de hemoglobină",
+          "why": "Fierul intră în gruparea hem a hemoglobinei. Manualul precizează separat că și cuprul este utilizat în producerea hemoglobinei; asocierea ambelor minerale este susținută. Sursa: „Sângele”, secțiunea Globulele roșii; „Metabolism și nutriție”, secțiunea Stări metabolice și metabolismul mineralelor."
+        }
+      ],
+      "sourcePages": [
+        247
+      ],
+      "topicId": "calciu",
+      "topicLabel": "Calciul și reglarea endocrină",
+      "lessonUrl": "sistemul_endocrin.html#glandele-paratiroide",
+      "id": "asoc-099"
+    },
+    {
+      "number": 100,
+      "sourceNumber": 100,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte privind funcțiile organismului uman:",
+      "correct": [
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "conductibilitatea reprezintă capacitatea de a răspunde la stimuli interni sau externi",
+          "why": "Capacitatea de a răspunde la stimuli interni sau externi este excitabilitatea. Conductibilitatea este proprietatea de a transmite stimulii dintr-o parte în alta a corpului. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Funcții ale organismului."
+        },
+        {
+          "letter": "B",
+          "text": "reproducerea asexuată constă în contopirea ovulului cu spermatozoidul pentru a forma zigotul",
+          "why": "Contopirea spermatozoidului cu ovulul aparține reproducerii sexuate. Reproducerea asexuată descrisă de manual constă în diviziunea unei singure celule, cu formarea a două celule fiice identice. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Funcții ale organismului."
+        },
+        {
+          "letter": "C",
+          "text": "motilitatea voluntară reprezintă una dintre caracteristicile miocardului și ale mușchilor netezi",
+          "why": "Mușchiul cardiac și mușchii netezi au contracții involuntare. Mișcarea voluntară este caracteristică mușchilor striați scheletici. Sursa: „Țesutul muscular”, secțiunea Tipuri de țesut muscular."
+        },
+        {
+          "letter": "D",
+          "text": "creșterea organismului se realizează prin diviziune celulară cu formare de celule fiice identice",
+          "why": "Manualul include formarea de noi celule identice prin diviziune în procesele de creștere și reparare. Acest mecanism contribuie la creșterea organismului, alături de primirea substanțelor și mărirea masei sale. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Funcții ale organismului."
+        },
+        {
+          "letter": "E",
+          "text": "prin excreție urinară sunt îndepărtați din sânge produșii metabolici de degradare",
+          "why": "Excreția îndepărtează produșii de degradare ai organismului. De exemplu, ureea formată din metabolismul aminoacizilor ajunge în sânge și este eliminată de rinichi în urină. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Funcții ale organismului; „Metabolism și nutriție”, secțiunea Metabolismul lipidelor și al proteinelor; „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii."
+        }
+      ],
+      "sourcePages": [
+        247,
+        248
+      ],
+      "topicId": "functii",
+      "topicLabel": "Funcțiile organismului",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#functii",
+      "id": "asoc-100"
+    },
+    {
+      "number": 101,
+      "sourceNumber": 101,
+      "sourceChapter": "XIII",
+      "prompt": "Alveolele pulmonare:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "fac parte din structura plămânului",
+          "why": "Alveolele, bronhiile și bronhiolele sunt organizate în cei doi plămâni; alveolele reprezintă porțiunea respiratorie a acestora. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "B",
+          "text": "facilitează schimburile de O₂ și CO₂ între aerul alveolar și sângele bogat în O₂ și CO₂ care părăsește plămânii prin venele pulmonare",
+          "why": "Sângele care pleacă prin venele pulmonare este bogat în O₂, dar are concentrație scăzută de CO₂. Varianta îl descrie greșit ca bogat în ambele gaze. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "C",
+          "text": "sunt înconjurate de capilare pulmonare",
+          "why": "Membranele subțiri ale alveolelor sunt acoperite de rețeaua capilară a circulației pulmonare, care permite schimbul de gaze cu sângele. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "D",
+          "text": "asigură o suprafață mare de schimb pentru gazele respiratorii",
+          "why": "Manualul precizează că alveolele oferă o suprafață mare pentru schimbul de O₂ și CO₂ prin difuziune. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "E",
+          "text": "au un perete alcătuit dintr-o membrană foarte groasă, care facilitează schimburile alveolo-capilare",
+          "why": "Bariera respiratorie alveolară este extrem de subțire, nu foarte groasă; prin ea difuzează gazele respiratorii. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        }
+      ],
+      "sourcePages": [
+        248
+      ],
+      "topicId": "anatomie",
+      "topicLabel": "Alveolele pulmonare",
+      "lessonUrl": "sistemul_respirator.html#anatomie",
+      "id": "asoc-101"
+    },
+    {
+      "number": 102,
+      "sourceNumber": 102,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre următoarele afirmații privind proteinele membranei plasmatice sunt corecte?",
+      "correct": [
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "glicoproteinele sunt proteine periferice cu rol în transportul transmembranar al unor molecule mari",
+          "why": "Glicoproteinele sunt proteine asociate cu glucide spre exteriorul celulei. Transportul moleculelor organice este atribuit proteinelor transmembranare, nu unei categorii de glicoproteine periferice. Sursa: „Celula și fiziologia celulară”, secțiunea Membrana plasmatică."
+        },
+        {
+          "letter": "B",
+          "text": "lipoproteinele membranare împiedică recunoașterea reciprocă a celulelor",
+          "why": "Recunoașterea celulară este favorizată de glicolipidele și glicoproteinele din exteriorul membranei. Împiedicarea recunoașterii nu este funcția descrisă în manual. Sursa: „Celula și fiziologia celulară”, secțiunea Membrana plasmatică."
+        },
+        {
+          "letter": "C",
+          "text": "proteinele situate la exteriorul celulelor se pot asocia cu molecule de glucide",
+          "why": "Glucidele se asociază de obicei cu proteinele orientate spre mediul extern; astfel se formează glicoproteinele membranare. Sursa: „Celula și fiziologia celulară”, secțiunea Membrana plasmatică."
+        },
+        {
+          "letter": "D",
+          "text": "proteine periferice permit moleculelor organice traversarea membranei celulare",
+          "why": "Proteinele transmembranare traversează grosimea membranei și pot transporta molecule organice. Proteinele periferice sunt atașate suprafeței membranei. Sursa: „Celula și fiziologia celulară”, secțiunea Membrana plasmatică."
+        },
+        {
+          "letter": "E",
+          "text": "canalele ionice voltaj-dependente sunt proteine transmembranare care, atunci când sunt deschise, permit difuziunea ionilor conform gradientului de concentrație",
+          "why": "Canalele sunt alcătuite din proteine membranare. Deschiderea celor voltaj-dependente permite deplasarea ionilor conform gradientului, ca în intrarea Na⁺ la depolarizare. Sursa: „Celula și fiziologia celulară”, secțiunea Membrana plasmatică / „Țesutul nervos”, secțiunea Impulsul nervos."
+        }
+      ],
+      "sourcePages": [
+        248
+      ],
+      "topicId": "membrana",
+      "topicLabel": "Proteinele membranei",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#membrana",
+      "id": "asoc-102"
+    },
+    {
+      "number": 103,
+      "sourceNumber": 103,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la ionii de calciu:",
+      "correct": [
+        "A",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sub formă de hidroxizi, carbonați sau fosfați, intră în alcătuirea țesutului osos",
+          "why": "Manualul descrie fosfat de calciu combinat cu mici cantități de hidroxid și carbonat de calciu în componenta minerală a osului. Sursa: „Oasele și articulațiile”, secțiunea Țesutul osos."
+        },
+        {
+          "letter": "B",
+          "text": "lipsesc din plasma sanguină",
+          "why": "Calciul este menționat explicit printre ionii plasmei; nu lipsește din aceasta. Sursa: „Sângele”, secțiunea Plasma."
+        },
+        {
+          "letter": "C",
+          "text": "sunt întâlniți și în structura smalțului dentar",
+          "why": "Smalțul dentar este alcătuit în principal din săruri de calciu, componente ale hidroxiapatitei. Sursa: „Sistemul digestiv”, secțiunea Cavitatea orală și dinții."
+        },
+        {
+          "letter": "D",
+          "text": "sunt reabsorbiți la nivel intestinal sub acțiunea directă a parathormonului",
+          "why": "PTH stimulează activarea vitaminei D în rinichi, iar vitamina D reglează absorbția intestinală a calciului. Această succesiune nu susține calificarea acțiunii intestinale drept directă. Sursa: „Sistemul endocrin”, secțiunea Glandele paratiroide."
+        },
+        {
+          "letter": "E",
+          "text": "joacă un rol important în coagularea sângelui",
+          "why": "Ionii de calciu participă la activarea factorilor coagulării și sunt esențiali pentru transformarea protrombinei în trombină. Sursa: „Sângele”, secțiunea Coagularea sângelui."
+        }
+      ],
+      "sourcePages": [
+        248
+      ],
+      "topicId": "osul",
+      "topicLabel": "Calciul și țesutul osos",
+      "lessonUrl": "oasele_si_articulatiile.html#osul",
+      "id": "asoc-103"
+    },
+    {
+      "number": 104,
+      "sourceNumber": 104,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele proteine pot lega O₂:",
+      "correct": [
+        "A",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "mioglobina",
+          "why": "Mioglobina din fibrele musculare leagă molecule de oxigen și le depozitează temporar. Sursa: „Țesutul muscular”, secțiunea Energia necesară contracției musculare."
+        },
+        {
+          "letter": "B",
+          "text": "actina",
+          "why": "Actina formează filamentele subțiri contractile. Pigmentul muscular care leagă și depozitează O₂ este mioglobina. Sursa: „Țesutul muscular”, secțiunea Structura celulei musculare / „Țesutul muscular”, secțiunea Energia necesară contracției musculare."
+        },
+        {
+          "letter": "C",
+          "text": "miozina",
+          "why": "Miozina formează filamentele groase ale aparatului contractil; legarea oxigenului este atribuită mioglobinei, nu miozinei. Sursa: „Țesutul muscular”, secțiunea Structura celulei musculare / „Țesutul muscular”, secțiunea Energia necesară contracției musculare."
+        },
+        {
+          "letter": "D",
+          "text": "hemoglobina",
+          "why": "O₂ se leagă slab de fierul grupărilor hem; o moleculă de hemoglobină poate transporta patru molecule de oxigen. Sursa: „Sângele”, secțiunea Hemoglobina."
+        },
+        {
+          "letter": "E",
+          "text": "anhidraza carbonică",
+          "why": "Anhidraza carbonică este enzima care catalizează formarea acidului carbonic din CO₂ și apă. Ea nu este prezentată ca proteină transportoare de O₂. Sursa: „Sistemul respirator”, secțiunea Schimbul de gaze."
+        }
+      ],
+      "sourcePages": [
+        248
+      ],
+      "topicId": "globulele-rosii",
+      "topicLabel": "Proteine care leagă oxigenul",
+      "lessonUrl": "sangele.html#globulele-rosii",
+      "id": "asoc-104"
+    },
+    {
+      "number": 105,
+      "sourceNumber": 105,
+      "sourceChapter": "XIII",
+      "prompt": "Referitor la nucleul celulei se poate afirma că:",
+      "correct": [
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "în fibra musculară netedă este unic și ocupă o poziție periferică",
+          "why": "Fibra musculară netedă are un singur nucleu, dar acesta este central. Poziția periferică face varianta greșită. Sursa: „Țesutul muscular”, secțiunea Tabelul 8.1."
+        },
+        {
+          "letter": "B",
+          "text": "este prezent la nivelul tuturor celulelor organismului",
+          "why": "Manualul precizează excepția eritrocitelor, care nu au nucleu; afirmația despre toate celulele nu se susține. Sursa: „Celula și fiziologia celulară”, secțiunea Nucleul."
+        },
+        {
+          "letter": "C",
+          "text": "ocupă o poziție periferică în celulele adipoase",
+          "why": "În celula adipoasă ilustrată, nucleul este situat la periferie, lângă marginea celulei. Sursa: „Celula și fiziologia celulară”, figura 3.4."
+        },
+        {
+          "letter": "D",
+          "text": "prezintă învelișul nuclear și conține material genetic",
+          "why": "Nucleul conține ADN organizat în cromozomi și este delimitat de un înveliș nuclear dublu. Sursa: „Celula și fiziologia celulară”, secțiunea Nucleul."
+        },
+        {
+          "letter": "E",
+          "text": "comunică cu citoplasma prin intermediul porilor membranei nucleare",
+          "why": "Porii învelișului nuclear permit comunicarea dintre mediul intern al nucleului și citoplasma celulei. Sursa: „Celula și fiziologia celulară”, secțiunea Nucleul."
+        }
+      ],
+      "sourcePages": [
+        248
+      ],
+      "topicId": "nucleu",
+      "topicLabel": "Nucleul celular",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#nucleu",
+      "id": "asoc-105"
+    },
+    {
+      "number": 106,
+      "sourceNumber": 106,
+      "sourceChapter": "XIII",
+      "prompt": "Digestia intestinală a dizaharidelor se realizează sub acțiunea:",
+      "correct": [
+        "A",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "maltazei",
+          "why": "Maltaza intestinală hidrolizează maltoza, un dizaharid, până la glucoză. Sursa: „Sistemul digestiv”, secțiunea Tabelul 18.4."
+        },
+        {
+          "letter": "B",
+          "text": "nucleazei",
+          "why": "Nucleaza descompune ADN și ARN în nucleotide; substratul ei nu este un dizaharid. Sursa: „Sistemul digestiv”, secțiunea Tabelul 18.4."
+        },
+        {
+          "letter": "C",
+          "text": "lactazei",
+          "why": "Lactaza intestinală descompune dizaharidul lactoză în glucoză și galactoză. Sursa: „Sistemul digestiv”, secțiunea Tabelul 18.4."
+        },
+        {
+          "letter": "D",
+          "text": "amilazei",
+          "why": "Amilaza pancreatică acționează asupra amidonului și produce maltoză; nu realizează etapa de descompunere a dizaharidelor. Sursa: „Sistemul digestiv”, secțiunea Tabelul 18.4."
+        },
+        {
+          "letter": "E",
+          "text": "zaharazei",
+          "why": "Zaharaza descompune zaharoza în glucoză și fructoză, la nivelul intestinului subțire. Sursa: „Sistemul digestiv”, secțiunea Tabelul 18.4."
+        }
+      ],
+      "sourcePages": [
+        248
+      ],
+      "topicId": "intestinele",
+      "topicLabel": "Digestia dizaharidelor",
+      "lessonUrl": "sistemul_digestiv.html#intestinele",
+      "id": "asoc-106"
+    },
+    {
+      "number": 107,
+      "sourceNumber": 107,
+      "sourceChapter": "XIII",
+      "prompt": "Asupra oaselor acționează următorii hormoni:",
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "parathormonul",
+          "why": "Parathormonul stimulează activitatea osteoclastelor și resorbția calciului din os, crescând calcemia. Sursa: „Sistemul endocrin”, secțiunea Glandele paratiroide."
+        },
+        {
+          "letter": "B",
+          "text": "calcitonina",
+          "why": "Calcitonina scade calcemia și favorizează depunerea calciului în oase. Sursa: „Sistemul endocrin”, secțiunea Glanda tiroidă."
+        },
+        {
+          "letter": "C",
+          "text": "somatotropul",
+          "why": "Somatotropul stimulează creșterea; manualul leagă excesul său la adult de îngroșarea oaselor și creșterea țesuturilor moi. Sursa: „Sistemul endocrin”, secțiunea Hipofiza."
+        },
+        {
+          "letter": "D",
+          "text": "aldosteronul",
+          "why": "Aldosteronul este descris prin reglarea electroliților și efectele asupra tubilor renali. Baremul îl exclude; sursa disponibilă nu descrie o acțiune osoasă care să permită evaluarea mai largă a variantei. Sursa: „Sistemul endocrin”, secțiunea Glandele suprarenale / „Sistemul urinar”, secțiunea Reglarea funcției renale."
+        },
+        {
+          "letter": "E",
+          "text": "oxitocina",
+          "why": "Manualul atribuie oxitocinei acțiuni asupra uterului și glandelor mamare. Baremul o exclude, iar materialul autorizat nu explică eventuale acțiuni osoase; absența lor din prezentare nu dovedește inexistența lor. Sursa: „Sistemul endocrin”, secțiunea Hipofiza / „Sistemul endocrin”, secțiunea Tabelul 13.2."
+        }
+      ],
+      "sourcePages": [
+        248
+      ],
+      "topicId": "glandele-paratiroide",
+      "topicLabel": "Reglarea hormonală a osului",
+      "lessonUrl": "sistemul_endocrin.html#glandele-paratiroide",
+      "id": "asoc-107"
+    },
+    {
+      "number": 108,
+      "sourceNumber": 108,
+      "sourceChapter": "XIII",
+      "prompt": "Prin acțiunea lactazei asupra lactozei se formează:",
+      "correct": [
+        "A",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "glucoză",
+          "why": "Glucoza este unul dintre cei doi produși ai hidrolizei lactozei sub acțiunea lactazei. Sursa: „Sistemul digestiv”, secțiunea Tabelul 18.4."
+        },
+        {
+          "letter": "B",
+          "text": "fructoză",
+          "why": "Fructoza rezultă din descompunerea zaharozei prin zaharază. Lactaza produce glucoză și galactoză. Sursa: „Sistemul digestiv”, secțiunea Tabelul 18.4."
+        },
+        {
+          "letter": "C",
+          "text": "galactoză",
+          "why": "Galactoza este produsă alături de glucoză prin acțiunea lactazei asupra lactozei. Sursa: „Sistemul digestiv”, secțiunea Tabelul 18.4."
+        },
+        {
+          "letter": "D",
+          "text": "maltoză",
+          "why": "Maltoza rezultă din digestia amidonului sub acțiunea amilazei; nu este produsul digestiei lactozei. Sursa: „Sistemul digestiv”, secțiunea Tabelul 18.4."
+        },
+        {
+          "letter": "E",
+          "text": "zaharoză",
+          "why": "Zaharoza este substrat pentru zaharază, nu produs al lactazei. Produșii lactazei sunt glucoza și galactoza. Sursa: „Sistemul digestiv”, secțiunea Tabelul 18.4."
+        }
+      ],
+      "sourcePages": [
+        248
+      ],
+      "topicId": "intestinele",
+      "topicLabel": "Hidroliza lactozei",
+      "lessonUrl": "sistemul_digestiv.html#intestinele",
+      "id": "asoc-108"
+    },
+    {
+      "number": 109,
+      "sourceNumber": 109,
+      "sourceChapter": "XIII",
+      "prompt": "Endocitoza este forma de transport transmembranar prin care:",
+      "correct": [
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sărurile minerale sunt reabsorbite activ la nivelul tubilor renali",
+          "why": "Reabsorbția sărurilor în tubii renali este exemplul de transport activ din tabel, nu de endocitoză. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "B",
+          "text": "glucoza pătrunde în hematii",
+          "why": "Pătrunderea glucozei în hematii este prezentată ca difuziune facilitată, printr-o proteină transportoare. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "C",
+          "text": "leucocitele pot ingera agenți patogeni, participând la apărarea împotriva infecțiilor",
+          "why": "Leucocitele înglobează microorganisme prin endocitoză; preluarea particulelor solide se numește fagocitoză și contribuie la apărare. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "D",
+          "text": "volumul eritrocitelor scade atunci când sunt introduse într-o soluție hipertonă",
+          "why": "În mediul hiperton, apa iese prin osmoză și eritrocitul se micșorează. Nu are loc înglobarea particulelor în vezicule. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "E",
+          "text": "sunt eliberați din celulă hormoni sau neurotransmițători",
+          "why": "Eliberarea hormonilor și neurotransmițătorilor în exteriorul celulei este exocitoză, proces opus endocitozei. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        }
+      ],
+      "sourcePages": [
+        249
+      ],
+      "topicId": "transport",
+      "topicLabel": "Endocitoza",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#transport",
+      "id": "asoc-109"
+    },
+    {
+      "number": 110,
+      "sourceNumber": 110,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre următoarele structuri ale gonadelor produc hormoni?",
+      "correct": [
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "celulele prezente în interstițiul testiculelor - produc GnRH",
+          "why": "Celulele interstițiale testiculare produc testosteron. GnRH are origine hipotalamică. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "B",
+          "text": "foliculii ovarieni - sunt responsabili de secreția de estrogeni",
+          "why": "Foliculul ovarian produce estrogeni, sub influența gonadotropinelor; este o structură a ovarului, gonada feminină. Sursa: „Sistemul reproducător feminin”, secțiunea Hormonii și dezvoltarea feminină."
+        },
+        {
+          "letter": "C",
+          "text": "celulele interstițiale Leydig - secretă testosteron",
+          "why": "Celulele interstițiale ale testiculului produc testosteron, sinteza fiind stimulată de LH. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "D",
+          "text": "corpul galben - secretă progesteron și LH",
+          "why": "Corpul galben produce progesteron și estrogeni. LH este hormon hipofizar, nu produs al corpului galben. Sursa: „Sistemul reproducător feminin”, secțiunea Hormonii și dezvoltarea feminină."
+        },
+        {
+          "letter": "E",
+          "text": "placenta - secretă estrogeni și progesteron responsabili de menținerea sarcinii",
+          "why": "Placenta produce estrogeni și progesteron pentru menținerea sarcinii, dar nu este gonadă. Enunțul cere structuri ale gonadelor, adică ovare și testicule. Sursa: „Sistemul reproducător masculin”, secțiunea Testiculele / „Sistemul reproducător feminin”, secțiunea Fecundația și sarcina."
+        }
+      ],
+      "sourcePages": [
+        249
+      ],
+      "topicId": "organe",
+      "topicLabel": "Funcția endocrină a gonadelor",
+      "lessonUrl": "sistemul_reproducator_feminin.html#organe",
+      "id": "asoc-110"
+    },
+    {
+      "number": 111,
+      "sourceNumber": 111,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile greșite:",
+      "correct": [
+        "A",
+        "C",
+        "E"
+      ],
+      "asksFalse": true,
+      "options": [
+        {
+          "letter": "A",
+          "text": "antebrațul este situat proximal față de braț",
+          "why": "Afirmația trebuie selectată ca greșită: antebrațul este mai departe de atașarea membrului la trunchi decât brațul, deci este distal față de acesta. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Termeni de orientare."
+        },
+        {
+          "letter": "B",
+          "text": "planul parasagital împarte corpul în două părți asimetrice",
+          "why": "Planul parasagital separă corpul în părți dreaptă și stângă inegale. Afirmația este adevărată și nu se selectează într-o întrebare despre afirmațiile greșite. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Planurile corpului."
+        },
+        {
+          "letter": "C",
+          "text": "scheletul acoperă și protejează corpul",
+          "why": "Acoperirea și protejarea corpului sunt atribuite tegumentului; scheletul asigură suport și protejează organe. De aceea formularea despre acoperirea corpului se selectează ca greșită. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Organizarea corpului uman / „Oasele și articulațiile”, secțiunea Funcțiile oaselor."
+        },
+        {
+          "letter": "D",
+          "text": "pia mater este situată profund față de arahnoidă",
+          "why": "Pia mater este în profunzimea arahnoidei, între ele aflându-se spațiul subarahnoidian. Afirmația este adevărată, deci nu se selectează. Sursa: „Organizarea sistemului nervos”, secțiunea Măduva spinării și meningele."
+        },
+        {
+          "letter": "E",
+          "text": "vezica urinară este situată la nivelul epigastrului",
+          "why": "Vezica urinară se află în subdiviziunea pelviană. Epigastrul este regiunea abdominală superioară; localizarea propusă este greșită și trebuie selectată. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile corpului."
+        }
+      ],
+      "sourcePages": [
+        249
+      ],
+      "topicId": "termeni",
+      "topicLabel": "Raporturi anatomice",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#termeni",
+      "id": "asoc-111"
+    },
+    {
+      "number": 112,
+      "sourceNumber": 112,
+      "sourceChapter": "XIII",
+      "prompt": "Referitor la GnRH se poate afirma că:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este secretat de lobul anterior al hipofizei",
+          "why": "GnRH este produs de hipotalamus. Adenohipofiza este ținta sa și produce gonadotropinele FSH și LH. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "B",
+          "text": "stimulează sinteza și eliberarea de gonadotropine de la nivelul hipofizei anterioare",
+          "why": "Hormonii stimulatori hipotalamici cresc sinteza și eliberarea hormonilor adenohipofizari; GnRH stimulează producția de FSH și LH. Sursa: „Sistemul endocrin”, secțiunea Hipofiza / „Sistemul reproducător feminin”, secțiunea Hormonii și dezvoltarea feminină."
+        },
+        {
+          "letter": "C",
+          "text": "ajunge la adenohipofiză prin sistemul port hipotalamo-hipofizar",
+          "why": "Hormonii hipotalamici ajung la adenohipofiză prin vasele sistemului port hipotalamo-hipofizar. Sursa: „Sistemul endocrin”, secțiunea Hipofiza."
+        },
+        {
+          "letter": "D",
+          "text": "crește nivelul sanguin al FSH și LH",
+          "why": "Tabelul indică explicit creșterea nivelurilor sanguine de FSH și LH sub acțiunea GnRH. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "E",
+          "text": "sinteza sa este reglată prin feedback pozitiv",
+          "why": "Sursa descrie participarea GnRH la un mecanism de feedback negativ în controlul testosteronului, dar nu descrie reglarea pozitivă a sintezei GnRH. Baremul exclude E; nu se poate adăuga o justificare despre această sinteză din surse externe. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini / „Sistemul reproducător feminin”, secțiunea Hormonii și dezvoltarea feminină."
+        }
+      ],
+      "sourcePages": [
+        249
+      ],
+      "topicId": "hipofiza-glanda-pituitara",
+      "topicLabel": "GnRH și gonadotropinele",
+      "lessonUrl": "sistemul_endocrin.html#hipofiza-glanda-pituitara",
+      "id": "asoc-112"
+    },
+    {
+      "number": 113,
+      "sourceNumber": 113,
+      "sourceChapter": "XIII",
+      "prompt": "Calea senzorială gustativă:",
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "are în alcătuirea sa trei neuroni situați în ganglionii de pe traiectul nervilor VII și IX, în bulbul rahidian și în talamus",
+          "why": "Traseul descris leagă fibrele VII și IX, ai căror neuroni senzoriali au corpi în ganglioni, de releul bulbar și apoi de neuronii talamici. Sursa: „Organele de simț”, secțiunea Gustul / „Organizarea sistemului nervos”, secțiunea Nervii cranieni și spinali."
+        },
+        {
+          "letter": "B",
+          "text": "se termină la nivelul lobului parietal, posterior de șanțul central",
+          "why": "Manualul situează interpretarea gustului în lobul parietal, iar figura arată reprezentarea senzorială a limbii posterior de șanțul central. Figura nu etichetează însă explicit aria gustativă; baremul acceptă localizarea, dar această precizare exactă are sprijin numai indirect în materialul furnizat. Sursa: „Organele de simț”, secțiunea Gustul / „Organizarea sistemului nervos”, figura 11.5."
+        },
+        {
+          "letter": "C",
+          "text": "are originea la nivelul mugurilor gustativi din structura mucoasei linguale",
+          "why": "Moleculele dizolvate stimulează celulele din mugurii gustativi ai limbii, de unde pornesc impulsurile căii gustative. Sursa: „Organele de simț”, secțiunea Gustul."
+        },
+        {
+          "letter": "D",
+          "text": "se proiectează profund, în interiorul emisferelor cerebrale, la nivelul lobilor temporal și frontal",
+          "why": "Proiecția în lobii frontal și temporal este descrisă pentru miros; pentru gust manualul indică lobul parietal. Sursa: „Organele de simț”, secțiunea Gustul / „Organele de simț”, secțiunea Mirosul."
+        },
+        {
+          "letter": "E",
+          "text": "include fibre ale nervului cranian XII, intervenind în motilitatea limbii",
+          "why": "Nervul hipoglos, XII, este motor pentru mușchii limbii. Calea gustativă descrisă utilizează facialul și glosofaringianul. Sursa: „Organizarea sistemului nervos”, secțiunea Tabelul 11.3 / „Organele de simț”, secțiunea Gustul."
+        }
+      ],
+      "sourcePages": [
+        249
+      ],
+      "topicId": "alte-simturi",
+      "topicLabel": "Calea gustativă",
+      "lessonUrl": "organele_de_simt.html#alte-simturi",
+      "id": "asoc-113"
+    },
+    {
+      "number": 114,
+      "sourceNumber": 114,
+      "sourceChapter": "XIII",
+      "prompt": "Referitor la fiziologia organelor genitale se poate afirma că:",
+      "correct": [
+        "A",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sistemul nervos parasimpatic produce vasodilatație arteriolară la nivelul corpilor cavernoși și la nivelul corpului spongios de la nivelul penisului",
+          "why": "Impulsurile parasimpatice dilată arteriolele țesutului erectil din corpii cavernoși și corpul spongios, crescând fluxul de sânge și producând erecția. Sursa: „Sistemul reproducător masculin”, secțiunea Ducte și organe anexe."
+        },
+        {
+          "letter": "B",
+          "text": "clitorisul este situat la nivelul vestibulului vaginal",
+          "why": "Manualul descrie clitorisul ca proeminând în vestibul. Este o afirmație anatomică, pe când întrebarea cere fiziologia organelor; excluderea din barem nu face localizarea falsă. Sursa: „Sistemul reproducător feminin”, secțiunea Organele genitale externe."
+        },
+        {
+          "letter": "C",
+          "text": "organul erectil masculin conține canale vasculare separate prin țesut conjunctiv și fibre musculare netede",
+          "why": "Structura canalelor vasculare separate de țesut conjunctiv și mușchi neted este confirmată. Varianta descrie anatomia, nu activitatea fiziologică solicitată în enunț. Sursa: „Sistemul reproducător masculin”, secțiunea Ducte și organe anexe."
+        },
+        {
+          "letter": "D",
+          "text": "glandele Bartholin și glandele Skene secretă un fluid cu rol de lubrifiere, similar celui produs de glandelor bulbouretrale",
+          "why": "Glandele Bartholin și Skene secretă lichide lubrifiante, iar glandele bulbouretrale secretă mucus lubrifiant. Asocierea privește funcția secrețiilor. Sursa: „Sistemul reproducător feminin”, secțiunea Organele genitale externe / „Sistemul reproducător masculin”, secțiunea Ducte și organe anexe."
+        },
+        {
+          "letter": "E",
+          "text": "uretra masculină este mai lungă decât uretra feminină",
+          "why": "Manualul dă aproximativ 15 cm pentru uretra masculină și 5 cm pentru cea feminină. Comparația anatomică este adevărată, dar nu răspunde cerinței despre fiziologie. Sursa: „Sistemul urinar”, secțiunea Ureterele, vezica urinară și uretra."
+        }
+      ],
+      "sourcePages": [
+        249
+      ],
+      "topicId": "ducte",
+      "topicLabel": "Funcțiile organelor genitale",
+      "lessonUrl": "sistemul_reproducator_masculin.html#ducte",
+      "id": "asoc-114"
+    },
+    {
+      "number": 115,
+      "sourceNumber": 115,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați asocierile corecte dintre organitele celulare și rolul lor:",
+      "correct": [
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "reticulul endoplasmatic neted - sinteză de proteine",
+          "why": "Reticulul neted participă la sinteza lipidelor și la depozitarea calciului. Sinteza proteinelor este atribuită ribozomilor și reticulului rugos. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "B",
+          "text": "centriolii - procesarea și împachetarea proteinelor și lipidelor celulare",
+          "why": "Procesarea și împachetarea proteinelor și lipidelor în vezicule sunt funcții ale aparatului Golgi, nu ale centriolilor. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "C",
+          "text": "ribozomii - sinteză de proteine celulare",
+          "why": "În ribozomi, aminoacizii sunt combinați pentru a forma proteine; asocierea este explicită în manual. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "D",
+          "text": "lizozomii - producere de energie celulară pornind de la lipide, glucide sau proteine",
+          "why": "Lizozomii conțin enzime pentru digestia celulară. Producerea majorității energiei și formarea ATP sunt atribuite mitocondriilor. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "E",
+          "text": "mitocondriile - sediul respirației celulare și sursă de energie pentru contracția musculară",
+          "why": "Mitocondriile participă la respirația celulară, iar cele din sarcoplasmă furnizează ATP pentru contracția miofibrilelor. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele / „Țesutul muscular”, secțiunea Structura celulei musculare."
+        }
+      ],
+      "sourcePages": [
+        249
+      ],
+      "topicId": "organite",
+      "topicLabel": "Organitele și funcțiile lor",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#organite",
+      "id": "asoc-115"
+    },
+    {
+      "number": 116,
+      "sourceNumber": 116,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la ionii HCO₃⁻:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "se întâlnesc în compoziția sucului pancreatic și a sucului gastric",
+          "why": "Bicarbonatul este menționat explicit în sucul pancreatic; descrierea sucului gastric enumeră HCl, factor intrinsec, mucus și enzime. Baremul exclude asocierea, dar textul disponibil nu precizează complet compoziția ionică a mucusului gastric. Sursa: „Sistemul digestiv”, secțiunea Stomacul / „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "B",
+          "text": "în eritrocitele din capilarele circulației mari, bicarbonatul rezultă prin disocierea acidului carbonic format printr-o reacție catalizată de anhidraza carbonică",
+          "why": "În eritrocite, anhidraza carbonică facilitează formarea acidului carbonic din CO₂ și apă; acidul disociază apoi în H⁺ și HCO₃⁻. Sursa: „Sistemul respirator”, secțiunea Schimbul de gaze."
+        },
+        {
+          "letter": "C",
+          "text": "participă la neutralizarea HCl ajuns în intestinul subțire",
+          "why": "Ionii de bicarbonat din sucul pancreatic neutralizează aciditatea chimului gastric și cresc pH-ul mediului intestinal. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "D",
+          "text": "este prezent în plasma sanguină, alături de alți anioni: fosfați, sulfați și cloruri",
+          "why": "Prezența bicarbonatului și a clorului în plasmă este explicită. Fosfații și sulfații sunt numiți anioni în descrierea urinei, dar lista plasmatică din TXT nu îi enumeră; baremul acceptă integral D, iar această parte rămâne insuficient documentată aici. Sursa: „Sângele”, secțiunea Plasma / „Sistemul urinar”, secțiunea Urina."
+        },
+        {
+          "letter": "E",
+          "text": "acționează asupra corpusculilor carotidieni și aortici, permițând reglarea respirației",
+          "why": "Chemoreceptorii carotidieni și aortici monitorizează oxigenul dizolvat. Stimularea prin H⁺ este descrisă la centrul respirator; manualul nu atribuie bicarbonatului mecanismul propus. Sursa: „Sistemul respirator”, secțiunea Controlul respirației."
+        }
+      ],
+      "sourcePages": [
+        250
+      ],
+      "topicId": "schimbul-de-gaze",
+      "topicLabel": "Bicarbonatul",
+      "lessonUrl": "sistemul_respirator.html#schimbul-de-gaze",
+      "id": "asoc-116"
+    },
+    {
+      "number": 117,
+      "sourceNumber": 117,
+      "sourceChapter": "XIII",
+      "prompt": "La digestia intestinală a proteinelor participă următoarele enzime pancreatice:",
+      "correct": [
+        "A",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "tripsina",
+          "why": "Tripsina este produsă de pancreas, ajunge în sucul pancreatic și degradează proteinele în intestinul subțire. Sursa: „Sistemul digestiv”, secțiunea Tabelul 18.4."
+        },
+        {
+          "letter": "B",
+          "text": "pepsina",
+          "why": "Pepsina aparține sucului gastric și acționează în stomac; nu este enzimă pancreatică. Sursa: „Sistemul digestiv”, secțiunea Tabelul 18.4."
+        },
+        {
+          "letter": "C",
+          "text": "aminopeptidaza",
+          "why": "Aminopeptidaza participă la digestia intestinală, dar este produsă de intestinul subțire, nu de pancreas. Sursa: „Sistemul digestiv”, secțiunea Tabelul 18.4."
+        },
+        {
+          "letter": "D",
+          "text": "chimotripsina",
+          "why": "Chimotripsina este protează din sucul pancreatic, cu loc de acțiune în intestinul subțire. Sursa: „Sistemul digestiv”, secțiunea Tabelul 18.4."
+        },
+        {
+          "letter": "E",
+          "text": "carboxipeptidaza",
+          "why": "Carboxipeptidaza este enumerată printre enzimele pancreatice care acționează asupra proteinelor în intestinul subțire. Sursa: „Sistemul digestiv”, secțiunea Tabelul 18.4."
+        }
+      ],
+      "sourcePages": [
+        250
+      ],
+      "topicId": "organele-anexe",
+      "topicLabel": "Proteazele pancreatice",
+      "lessonUrl": "sistemul_digestiv.html#organele-anexe",
+      "id": "asoc-117"
+    },
+    {
+      "number": 118,
+      "sourceNumber": 118,
+      "sourceChapter": "XIII",
+      "prompt": "Microvilozitățile pot fi prezente la nivelul membranei plasmatice a:",
+      "correct": [
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "dendritelor celulelor receptoare ale analizatorului olfactiv",
+          "why": "Prelungirile de contact ale celulelor olfactive sunt numite cili în manual; nu sunt prezentate ca microvilozități. Sursa: „Organele de simț”, secțiunea Mirosul."
+        },
+        {
+          "letter": "B",
+          "text": "celulelor senzoriale din structura organului Corti",
+          "why": "Manualul descrie celulele receptoare ale organului Corti drept celule ciliate. Nu le identifică prin microvilozitățile cerute în întrebare. Sursa: „Organele de simț”, secțiunea Fiziologia auzului."
+        },
+        {
+          "letter": "C",
+          "text": "unor celule epiteliale situate la nivelul intestinului subțire și în tubul contort proximal",
+          "why": "Microvilozitățile măresc suprafața membranei epiteliului intestinal și sunt menționate explicit și în peretele tubului contort proximal. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros / „Sistemul urinar”, secțiunea Reabsorbția."
+        },
+        {
+          "letter": "D",
+          "text": "celulelor senzoriale din structura mugurilor gustativi",
+          "why": "Figura mugurelui gustativ etichetează explicit microvilozitățile situate la polul apical al celulelor gustative. Sursa: „Organele de simț”, figura 12.5."
+        },
+        {
+          "letter": "E",
+          "text": "neuronilor pseudounipolari din ganglionul rădăcinii posterioare",
+          "why": "Neuronii pseudounipolari sunt descriși prin prelungirea care se divide și prin localizarea corpurilor senzoriale în ganglionul dorsal. Baremul exclude E; sursa nu le atribuie microvilozități, fără a demonstra astfel o absență universală. Sursa: „Țesutul nervos”, secțiunea Neuronii / „Organizarea sistemului nervos”, secțiunea Nervii cranieni și spinali."
+        }
+      ],
+      "sourcePages": [
+        250
+      ],
+      "topicId": "membrana",
+      "topicLabel": "Specializările membranei",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#membrana",
+      "id": "asoc-118"
+    },
+    {
+      "number": 119,
+      "sourceNumber": 119,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "correct": [
+        "A",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "trunchiul celiac emerge din aorta abdominală inferior de diafragmă",
+          "why": "Trunchiul celiac este ilustrat ca ramură a aortei abdominale, sub diafragmă, și dă arterele gastrică stângă, splenică și hepatică. Sursa: „Sistemul cardiovascular”, secțiunea Tipuri de circulație sanguină / „Sistemul cardiovascular”, figura 15.9."
+        },
+        {
+          "letter": "B",
+          "text": "TSH-ul stimulează activitatea exocrină a glandei tiroide",
+          "why": "TSH controlează captarea iodului și sinteza și eliberarea hormonilor tiroidieni. Aceasta este activitate endocrină, nu exocrină. Sursa: „Sistemul endocrin”, secțiunea Hipofiza."
+        },
+        {
+          "letter": "C",
+          "text": "splina este vascularizată arterial de artera splenică",
+          "why": "Sângele arterial pătrunde în splină prin artera splenică. Sursa: „Sistemul limfatic și imun”, secțiunea Splina."
+        },
+        {
+          "letter": "D",
+          "text": "regiunea medulară a glandei suprarenale secretă doi hormoni steroizi a căror structură se deosebește prin prezența unei grupări metil",
+          "why": "Adrenalina și noradrenalina medulosuprarenalei sunt hormoni aminici, catecolamine, nu hormoni steroizi; astfel asocierea este greșită. Sursa: „Sistemul endocrin”, secțiunea Glandele suprarenale / „Sistemul endocrin”, secțiunea Descrierea generală a hormonilor."
+        },
+        {
+          "letter": "E",
+          "text": "timusul realizează raporturi anatomice cu vena jugulară internă dreaptă",
+          "why": "Timusul este retrosternal, în mediastinul superior; figura indică vena brahiocefalică dreaptă în vecinătatea sa și jugulara internă mai sus. Nu oferă dovadă suficientă pentru raportul direct cu jugulara formulat aici; baremul exclude E. Sursa: „Sistemul endocrin”, secțiunea Alte glande endocrine / „Sistemul endocrin”, figura 13.9."
+        }
+      ],
+      "sourcePages": [
+        250
+      ],
+      "topicId": "tipuri-de-circulatie-sanguina",
+      "topicLabel": "Asocieri anatomice și endocrine",
+      "lessonUrl": "sistemul_cardiovascular.html#tipuri-de-circulatie-sanguina",
+      "id": "asoc-119"
+    },
+    {
+      "number": 120,
+      "sourceNumber": 120,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele afirmații sunt corecte:",
+      "correct": [
+        "A",
+        "B"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "la nivelul tegumentului sunt prezente glande sudoripare implicate în excreție",
+          "why": "Glandele sudoripare aparțin tegumentului, iar sudoarea elimină apă, săruri și produși de metabolism; pielea este astfel organ excretor minor. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Organizarea corpului uman / „Sistemul urinar”, secțiunea Alte organe excretorii."
+        },
+        {
+          "letter": "B",
+          "text": "sistemul nervos simpatic și parasimpatic au efecte antagonice asupra ritmului cardiac",
+          "why": "Impulsurile simpatice cresc frecvența cardiacă, iar cele parasimpatice o diminuează; efectele asupra ritmului sunt antagonice. Sursa: „Sistemul cardiovascular”, secțiunea Mușchiul cardiac."
+        },
+        {
+          "letter": "C",
+          "text": "zona H conține filamente de actină și de miozină",
+          "why": "Zona H conține numai filamente de miozină. Asocierea cu actina în aceeași zonă este greșită. Sursa: „Țesutul muscular”, secțiunea Structura celulei musculare."
+        },
+        {
+          "letter": "D",
+          "text": "neuronii bipolari sunt prezenți la nivelul retinei, ganglionilor de pe traiectul nervului VIII și în mucoasa linguală",
+          "why": "Manualul enumeră retina, urechea internă și mucoasa olfactivă drept localizări ale neuronilor bipolari. Varianta înlocuiește greșit mucoasa olfactivă cu cea linguală. Sursa: „Țesutul nervos”, secțiunea Neuronii."
+        },
+        {
+          "letter": "E",
+          "text": "dintele este implantat la nivelul alveolei dentară printr-o articulație semimobilă",
+          "why": "Implantarea dintelui în alveolă formează o gomfoză, exemplu de sinartroză imobilă, nu articulație semimobilă. Sursa: „Oasele și articulațiile”, secțiunea Sinartrozele."
+        }
+      ],
+      "sourcePages": [
+        250
+      ],
+      "topicId": "functii",
+      "topicLabel": "Asocieri funcționale",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#functii",
+      "id": "asoc-120"
+    },
+    {
+      "number": 121,
+      "sourceNumber": 121,
+      "sourceChapter": "XIII",
+      "prompt": "Despre diencefal se pot afirma următoarele:",
+      "correct": [
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este localizat inferior de mezencefal",
+          "why": "Diencefalul este situat deasupra mezencefalului. Legenda figurii enumeră descendent diencefalul, mezencefalul, puntea și bulbul, deci „inferior” inversează raportul. Sursa: „Organizarea sistemului nervos”, secțiunea Diencefalul / „Organizarea sistemului nervos”, secțiunea Trunchiul cerebral."
+        },
+        {
+          "letter": "B",
+          "text": "prin talamus direcționează majoritatea semnalelor senzoriale către cortexul cerebral",
+          "why": "Talamusul primește și transmite cortexului informații senzoriale. Tabelul manualului precizează și excepții, astfel că formularea „majoritatea”, fără a pretinde toate semnalele, corespunde rolului său de releu. Sursa: „Organizarea sistemului nervos”, secțiunea Tabelul 11.2."
+        },
+        {
+          "letter": "C",
+          "text": "prin hipotalamus controlează activitatea vegetativă",
+          "why": "Hipotalamusul este centru de control al sistemului nervos autonom; manualul leagă de el și reglarea temperaturii, aportului alimentar și echilibrului hidric. Sursa: „Organizarea sistemului nervos”, secțiunea Tabelul 11.2 / „Organizarea sistemului nervos”, secțiunea Diencefalul."
+        },
+        {
+          "letter": "D",
+          "text": "controlează mișcările reflexe ale capului și trunchiului la stimuli acustici",
+          "why": "Reflexele de orientare a capului și trunchiului la stimuli acustici sunt atribuite mezencefalului, nu diencefalului. Sursa: „Organizarea sistemului nervos”, secțiunea Tabelul 11.2."
+        },
+        {
+          "letter": "E",
+          "text": "prin hipotalamus controlează activitatea glandei epifize",
+          "why": "Manualul descrie controlul hipotalamic asupra hipofizei și prezintă epifiza ca glandă care secretă melatonină. Aceste pasaje nu stabilesc controlul hipotalamic asupra epifizei; baremul exclude varianta, dar sursa nu permite o justificare mai precisă a acestei excluderi. Sursa: „Organizarea sistemului nervos”, secțiunea Tabelul 11.2 / „Sistemul endocrin”, secțiunea Alte glande endocrine."
+        }
+      ],
+      "sourcePages": [
+        250
+      ],
+      "topicId": "sistem-nervos-central",
+      "topicLabel": "Diencefalul",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-central",
+      "id": "asoc-121"
+    },
+    {
+      "number": 122,
+      "sourceNumber": 122,
+      "sourceChapter": "XIII",
+      "prompt": "Rata metabolismului bazal poate fi influențată de:",
+      "correct": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "factori umorali, tiroxina",
+          "why": "Tiroxina stimulează metabolismul celular și producerea de căldură; manualul o leagă explicit de creșterea ratei metabolice bazale. Sursa: „Sistemul endocrin”, secțiunea Glanda tiroidă."
+        },
+        {
+          "letter": "B",
+          "text": "suprafața corporală, direct proporțional",
+          "why": "Manualul arată că rata metabolică bazală exprimată pentru masa corporală scade odată cu creșterea dimensiunilor corpului. Relația direct proporțională enunțată aici nu corespunde comparației prezentate în sursă. Sursa: „Metabolism și nutriție”, secțiunea Rata metabolică și temperatura corporală."
+        },
+        {
+          "letter": "C",
+          "text": "vârstă, invers proporțional",
+          "why": "Copiii au o rată metabolică bazală mai mare decât adulții. Varianta exprimă scăderea cu vârsta din comparația manualului, fără ca textul să formuleze o lege matematică exactă de proporționalitate inversă. Sursa: „Metabolism și nutriție”, secțiunea Rata metabolică și temperatura corporală."
+        },
+        {
+          "letter": "D",
+          "text": "sex, mai crescută la bărbați",
+          "why": "Manualul precizează că rata metabolică bazală este mai mare la bărbați decât la femei. Sursa: „Metabolism și nutriție”, secțiunea Rata metabolică și temperatura corporală."
+        },
+        {
+          "letter": "E",
+          "text": "factori fizici, temperatura corporală",
+          "why": "Creșterea temperaturii corpului accelerează procesele metabolice; temperatura este unul dintre factorii enumerați pentru rata metabolică bazală. Sursa: „Metabolism și nutriție”, secțiunea Rata metabolică și temperatura corporală."
+        }
+      ],
+      "sourcePages": [
+        250
+      ],
+      "topicId": "rata-si-temperatura",
+      "topicLabel": "Metabolismul bazal",
+      "lessonUrl": "metabolism_si_nutritie.html#rata-si-temperatura",
+      "id": "asoc-122"
+    },
+    {
+      "number": 123,
+      "sourceNumber": 123,
+      "sourceChapter": "XIII",
+      "prompt": "Inervația senzorială a limbii este realizată de următorii nervi, cu excepția:",
+      "correct": [
+        "B",
+        "D"
+      ],
+      "asksFalse": true,
+      "options": [
+        {
+          "letter": "A",
+          "text": "glosofaringian",
+          "why": "Glosofaringianul conduce sensibilitatea gustativă de la limbă. Afirmația descrie o inervație senzorială reală și nu se selectează la cerința „cu excepția”. Sursa: „Organizarea sistemului nervos”, secțiunea Tabelul 11.3 / „Organele de simț”, secțiunea Gustul."
+        },
+        {
+          "letter": "B",
+          "text": "hipoglos",
+          "why": "Hipoglosul comandă mușchii limbii, fiind prezentat drept nerv motor. Nu realizează inervația senzorială cerută; de aceea este una dintre excepții. Sursa: „Organizarea sistemului nervos”, secțiunea Tabelul 11.3."
+        },
+        {
+          "letter": "C",
+          "text": "trigemen",
+          "why": "Tabelul nervilor cranieni atribuie trigemenului informații senzoriale de la față, dinți și limbă. Nu este o excepție, chiar dacă gustul este prezentat separat prin facial și glosofaringian. Sursa: „Organizarea sistemului nervos”, secțiunea Tabelul 11.3."
+        },
+        {
+          "letter": "D",
+          "text": "accesor",
+          "why": "Accesorul are rol motor pentru mușchii gâtului. Nu asigură sensibilitatea limbii și se selectează ca excepție. Sursa: „Organizarea sistemului nervos”, secțiunea Tabelul 11.3."
+        },
+        {
+          "letter": "E",
+          "text": "facial",
+          "why": "Facialul participă la transmiterea informațiilor gustative de la limbă. Fiind cerute excepțiile, această asociere corectă nu se selectează. Sursa: „Organizarea sistemului nervos”, secțiunea Tabelul 11.3 / „Organele de simț”, secțiunea Gustul."
+        }
+      ],
+      "sourcePages": [
+        250
+      ],
+      "topicId": "alte-simturi",
+      "topicLabel": "Inervația limbii",
+      "lessonUrl": "organele_de_simt.html#alte-simturi",
+      "id": "asoc-123"
+    },
+    {
+      "number": 124,
+      "sourceNumber": 124,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la MSH:",
+      "correct": [
+        "A",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "stimulează melanocitele cutanate",
+          "why": "MSH stimulează melanocitele pielii și pigmentarea, conform tabelului hormonilor hipofizari. Sursa: „Sistemul endocrin”, secțiunea Tabelul 13.2."
+        },
+        {
+          "letter": "B",
+          "text": "are structură lipidică",
+          "why": "MSH este un hormon hipofizar; manualul include hormonii hipofizari în categoria non-steroidienilor cu structură proteică. Nu îi atribuie structură lipidică. Sursa: „Sistemul endocrin”, secțiunea Descrierea generală a hormonilor / „Sistemul endocrin”, secțiunea Tabelul 13.2."
+        },
+        {
+          "letter": "C",
+          "text": "este secretat de hipotalamusul anterior",
+          "why": "Tabelul îl include între hormonii hipofizei anterioare. Varianta înlocuiește această origine cu hipotalamusul anterior. Sursa: „Sistemul endocrin”, secțiunea Tabelul 13.2."
+        },
+        {
+          "letter": "D",
+          "text": "este eliberat de neurohipofiză",
+          "why": "MSH aparține hipofizei anterioare. Hormonii eliberați de lobul posterior în tabel sunt ADH și oxitocina, nu MSH. Sursa: „Sistemul endocrin”, secțiunea Tabelul 13.2."
+        },
+        {
+          "letter": "E",
+          "text": "este un hormon non-steroidian",
+          "why": "Prin apartenența la hormonii hipofizari proteici, MSH intră în categoria hormonilor non-steroidieni descrisă de manual. Sursa: „Sistemul endocrin”, secțiunea Descrierea generală a hormonilor / „Sistemul endocrin”, secțiunea Tabelul 13.2."
+        }
+      ],
+      "sourcePages": [
+        251
+      ],
+      "topicId": "hipofiza-glanda-pituitara",
+      "topicLabel": "Hormonul melanocitostimulator",
+      "lessonUrl": "sistemul_endocrin.html#hipofiza-glanda-pituitara",
+      "id": "asoc-124"
+    },
+    {
+      "number": 125,
+      "sourceNumber": 125,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre următoarele proteine pot acționa ca mesageri primari?",
+      "correct": [
+        "A",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "insulina",
+          "why": "Insulina este exemplul de hormon proteic non-steroidian. În mecanismul descris pentru această categorie, hormonul reprezintă mesagerul primar care se leagă de receptorul membranar. Sursa: „Sistemul endocrin”, secțiunea Descrierea generală a hormonilor."
+        },
+        {
+          "letter": "B",
+          "text": "AMP ciclic",
+          "why": "AMP ciclic este mesagerul secundar format în interiorul celulei după acțiunea hormonului. Nu este proteina hormonală care funcționează ca mesager primar. Sursa: „Sistemul endocrin”, secțiunea Descrierea generală a hormonilor."
+        },
+        {
+          "letter": "C",
+          "text": "adenilat ciclaza",
+          "why": "Adenilat ciclaza este enzima activată în mecanismul care produce AMP ciclic. Mesagerul primar este hormonul, nu această enzimă. Sursa: „Sistemul endocrin”, secțiunea Descrierea generală a hormonilor."
+        },
+        {
+          "letter": "D",
+          "text": "anhidraza carbonică",
+          "why": "Anhidraza carbonică este enzima care catalizează transformarea dioxidului de carbon și a apei în acid carbonic în globulele roșii. Rolul descris nu este cel de mesager hormonal primar. Sursa: „Sistemul respirator”, secțiunea Schimbul de gaze."
+        },
+        {
+          "letter": "E",
+          "text": "calcitonina",
+          "why": "Calcitonina este enumerată între hormonii proteici non-steroidieni. În schema acestora, hormonul care se leagă de receptorul celular este mesagerul primar. Sursa: „Sistemul endocrin”, secțiunea Descrierea generală a hormonilor."
+        }
+      ],
+      "sourcePages": [
+        251
+      ],
+      "topicId": "descrierea-generala-a-hormonilor",
+      "topicLabel": "Mesageri hormonali",
+      "lessonUrl": "sistemul_endocrin.html#descrierea-generala-a-hormonilor",
+      "id": "asoc-125"
+    },
+    {
+      "number": 126,
+      "sourceNumber": 126,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre asocierile privind originea aparentă a nervilor cranieni micști sunt corecte?",
+      "correct": [
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "trigemen - mezencefal",
+          "why": "Trigeminalul este un nerv mixt, dar originea ilustrată și indicată în tabel este la nivelul punții, nu al mezencefalului. Sursa: „Organizarea sistemului nervos”, secțiunea Tabelul 11.3 / „Organizarea sistemului nervos”, figura 11.8."
+        },
+        {
+          "letter": "B",
+          "text": "glosofaringian - la nivelul bulbului rahidian",
+          "why": "Glosofaringianul are funcții senzoriale și motorii, iar originea sa este la nivelul bulbului rahidian. Asocierea îndeplinește ambele condiții ale cerinței. Sursa: „Organizarea sistemului nervos”, secțiunea Tabelul 11.3 / „Organizarea sistemului nervos”, figura 11.8."
+        },
+        {
+          "letter": "C",
+          "text": "facial - între bulb și punte, lateral față de abducens",
+          "why": "Facialul este mixt. Figura cu originea nervilor cranieni îl arată între bulb și punte, lateral de abducens. Sursa: „Organizarea sistemului nervos”, secțiunea Tabelul 11.3 / „Organizarea sistemului nervos”, figura 11.8."
+        },
+        {
+          "letter": "D",
+          "text": "vag - între bulb și punte",
+          "why": "Vagul este mixt, însă tabelul și figura îi plasează originea la nivelul bulbului rahidian. Asocierea cu limita dintre bulb și punte este greșită. Sursa: „Organizarea sistemului nervos”, secțiunea Tabelul 11.3 / „Organizarea sistemului nervos”, figura 11.8."
+        },
+        {
+          "letter": "E",
+          "text": "vestibulocohlear - între bulb și punte, lateral față de facial",
+          "why": "Figura arată vestibulocohlearul lateral de facial, la limita bulb–punte, dar tabelul îl clasifică drept nerv senzorial. Cerința privește nervii micști, astfel că localizarea singură nu face varianta eligibilă. Sursa: „Organizarea sistemului nervos”, secțiunea Tabelul 11.3 / „Organizarea sistemului nervos”, figura 11.8."
+        }
+      ],
+      "sourcePages": [
+        251
+      ],
+      "topicId": "sistem-nervos-periferic",
+      "topicLabel": "Originea nervilor cranieni",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-periferic",
+      "id": "asoc-126"
+    },
+    {
+      "number": 127,
+      "sourceNumber": 127,
+      "sourceChapter": "XIII",
+      "prompt": "Hemoglobina:",
+      "correct": [
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "are în structura sa lanțuri α și β, cu rol în determinarea grupelor sanguine",
+          "why": "Lanțurile alfa și beta intră în structura hemoglobinei, însă grupele sanguine sunt determinate de antigenele de pe membrana eritrocitelor. Varianta atribuie lanțurilor hemoglobinei rolul acestor antigene. Sursa: „Sângele”, secțiunea Hemoglobina / „Sângele”, secțiunea Grupele sanguine."
+        },
+        {
+          "letter": "B",
+          "text": "similar mioglobinei și citocromilor, conține în structura sa fier",
+          "why": "Manualul enumeră fierul ca element al hemoglobinei, mioglobinei și citocromilor; asocierea celor trei este explicită. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul mineralelor."
+        },
+        {
+          "letter": "C",
+          "text": "este alcătuită din patru lanțuri polipeptidice care au atașată câte o grupare hem",
+          "why": "Hemoglobina conține patru lanțuri polipeptidice, fiecare asociat cu o grupare hem care conține fier. Sursa: „Sângele”, secțiunea Hemoglobina."
+        },
+        {
+          "letter": "D",
+          "text": "participă la transportul monoxidului de carbon, cu care formează carbaminohemoglobina",
+          "why": "Carbaminohemoglobina rezultă din asocierea hemoglobinei cu dioxidul de carbon. Monoxidul de carbon se leagă puternic de fier și reduce cantitatea de oxigen transportată de hemoglobină. Sursa: „Sângele”, secțiunea Hemoglobina."
+        },
+        {
+          "letter": "E",
+          "text": "prin degradare eliberează hemul care este transformat la nivelul intestinului gros în biliverdină",
+          "why": "Hemul este degradat după îndepărtarea eritrocitelor îmbătrânite; biliverdina se transformă în bilirubină, care ajunge prin bilă în intestin. Varianta mută formarea biliverdinei în intestinul gros, confundând etapele descrise. Sursa: „Sângele”, secțiunea Distrugerea globulelor roșii."
+        }
+      ],
+      "sourcePages": [
+        251
+      ],
+      "topicId": "globulele-rosii",
+      "topicLabel": "Hemoglobina",
+      "lessonUrl": "sangele.html#globulele-rosii",
+      "id": "asoc-127"
+    },
+    {
+      "number": 128,
+      "sourceNumber": 128,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la formațiunea reticulată:",
+      "correct": [
+        "A",
+        "B"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "poate fi observată și pe o secțiunea sagitală la nivelul trunchiului cerebral",
+          "why": "Figura în secțiune sagitală a trunchiului cerebral reprezintă formațiunea reticulată; textul o descrie în bulb, cu prelungire în punte și mezencefal. Sursa: „Organizarea sistemului nervos”, figura 11.7 / „Organizarea sistemului nervos”, secțiunea Trunchiul cerebral."
+        },
+        {
+          "letter": "B",
+          "text": "transmite informații care pregătesc scoarța cerebrală pentru interpretarea impulsurilor senzoriale",
+          "why": "Formațiunea reticulată activează cortexul la primirea impulsurilor senzoriale și îl pregătește pentru interpretarea lor. Acesta este rolul explicit descris în manual. Sursa: „Organizarea sistemului nervos”, secțiunea Trunchiul cerebral."
+        },
+        {
+          "letter": "C",
+          "text": "conține centrii implicați exclusiv în starea de veghe",
+          "why": "Tabelul asociază formațiunea reticulată cu stările de somn și de veghe. Restrângerea la „exclusiv” starea de veghe elimină una dintre funcțiile menționate. Sursa: „Organizarea sistemului nervos”, secțiunea Tabelul 11.2."
+        },
+        {
+          "letter": "D",
+          "text": "este situată și la nivelul bulbului rahidian, intervenind în activarea cortexului cerebral la primirea impulsurilor senzoriale",
+          "why": "Manualul spune explicit că bulbul conține formațiunea reticulată și că aceasta activează cortexul la primirea impulsurilor senzoriale. Afirmația este susținută de sursă, dar baremul punctează numai A și B; D rămâne exclusă din cheia păstrată, cu această discrepanță semnalată. Sursa: „Organizarea sistemului nervos”, secțiunea Trunchiul cerebral."
+        },
+        {
+          "letter": "E",
+          "text": "face parte din sistemul nervos periferic, putând fi observată în structura ganglionilor vegetativi",
+          "why": "Formațiunea reticulată aparține trunchiului cerebral, deci sistemului nervos central. Nu este o componentă a ganglionilor vegetativi periferici. Sursa: „Țesutul nervos”, secțiunea Organizarea sistemului nervos / „Organizarea sistemului nervos”, secțiunea Trunchiul cerebral."
+        }
+      ],
+      "sourcePages": [
+        251
+      ],
+      "topicId": "sistem-nervos-central",
+      "topicLabel": "Formațiunea reticulată",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-central",
+      "id": "asoc-128"
+    },
+    {
+      "number": 129,
+      "sourceNumber": 129,
+      "sourceChapter": "XIII",
+      "prompt": "Ficatul asigură:",
+      "correct": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "îndepărtarea medicamentelor din sânge, excretându-le prin bilă",
+          "why": "Ficatul îndepărtează medicamente și alte substanțe din sânge și le excretă prin bilă, conform funcțiilor enumerate în manual. Sursa: „Sistemul digestiv”, secțiunea Ficatul."
+        },
+        {
+          "letter": "B",
+          "text": "refacerea structurii chimice a unor hormoni steroizi",
+          "why": "Manualul descrie modificarea structurii chimice a hormonilor steroizi de către ficat. Nu descrie refacerea structurii lor, formularea folosită în variantă. Sursa: „Sistemul digestiv”, secțiunea Ficatul."
+        },
+        {
+          "letter": "C",
+          "text": "depozitarea unor vitamine: A, D, E, K, B₁₂",
+          "why": "Lista vitaminelor depozitate hepatic din manual cuprinde A, B₁₂, D, E și K, aceleași vitamine ca în variantă. Sursa: „Sistemul digestiv”, secțiunea Ficatul."
+        },
+        {
+          "letter": "D",
+          "text": "depozitarea feritinei, forma de depozit hepatic a fierului",
+          "why": "Fierul este depozitat în ficat sub formă de feritină. Varianta redă această funcție de stocare. Sursa: „Sistemul digestiv”, secțiunea Ficatul."
+        },
+        {
+          "letter": "E",
+          "text": "fagocitarea celulelor roșii bătrâne prin acțiunea celulelor Kupffer",
+          "why": "Celulele Kupffer sunt macrofage hepatice și fagocitează globulele roșii bătrâne, contribuind la îndepărtarea lor din circulație. Sursa: „Sistemul digestiv”, secțiunea Ficatul."
+        }
+      ],
+      "sourcePages": [
+        251
+      ],
+      "topicId": "organele-anexe",
+      "topicLabel": "Funcțiile ficatului",
+      "lessonUrl": "sistemul_digestiv.html#organele-anexe",
+      "id": "asoc-129"
+    },
+    {
+      "number": 130,
+      "sourceNumber": 130,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre următoarele celule au rol fagocitar?",
+      "correct": [
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "neuronul",
+          "why": "Neuronului îi sunt atribuite recepția și transmiterea impulsurilor nervoase. În țesutul nervos, celulele indicate pentru fagocitoză sunt microgliile, nu neuronii. Sursa: „Țesutul nervos”, secțiunea Celulele gliale / „Țesutul nervos”, secțiunea Neuronii."
+        },
+        {
+          "letter": "B",
+          "text": "astroglia",
+          "why": "Astrocitele susțin neuronii, contribuie la bariera hematoencefalică și izolează leziunile. Manualul atribuie funcția fagocitară microgliei, nu astrogliei. Sursa: „Țesutul nervos”, secțiunea Celulele gliale."
+        },
+        {
+          "letter": "C",
+          "text": "celula Kupffer",
+          "why": "Celulele Kupffer sunt macrofage ale ficatului; ele fagocitează celulele roșii îmbătrânite. Sursa: „Sistemul digestiv”, secțiunea Ficatul."
+        },
+        {
+          "letter": "D",
+          "text": "microglia",
+          "why": "Microgliile sunt celulele gliale cu activitate fagocitară descrise de manual; în inflamații și leziuni devin mobile și fagocitează microorganismele care au invadat țesutul nervos. Sursa: „Țesutul nervos”, secțiunea Celulele gliale."
+        },
+        {
+          "letter": "E",
+          "text": "macrofagul",
+          "why": "Monocitele ajunse în țesuturi se transformă în macrofage, celule cu activitate fagocitară. Rolul cerut aparține explicit macrofagului. Sursa: „Sângele”, secțiunea Globulele albe."
+        }
+      ],
+      "sourcePages": [
+        251
+      ],
+      "topicId": "organizare",
+      "topicLabel": "Celule cu activitate fagocitară",
+      "lessonUrl": "tesutul_nervos.html#organizare",
+      "id": "asoc-130"
+    },
+    {
+      "number": 131,
+      "sourceNumber": 131,
+      "sourceChapter": "XIII",
+      "prompt": "Organele de simț ce conțin celule de susținere sunt:",
+      "correct": [
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "mucoasa olfactivă situată în zona cornetului nazal inferior",
+          "why": "Manualul situează mucoasa olfactivă în partea superioară a cavității nazale. Localizarea la cornetul inferior face asocierea incorectă, indiferent de componenta celulară menționată. Sursa: „Organele de simț”, secțiunea Mirosul."
+        },
+        {
+          "letter": "B",
+          "text": "organul Corti din interiorul ductului cohlear, implicat în perceperea echilibrului static",
+          "why": "Organul Corti participă la auz. Echilibrul static este atribuit maculelor din utriculă și saculă, nu organului Corti. Sursa: „Organele de simț”, secțiunea Fiziologia auzului / „Organele de simț”, secțiunea Echilibrul / „Organele de simț”, figura 12.4."
+        },
+        {
+          "letter": "C",
+          "text": "mugurele din structura papilelor gustative",
+          "why": "Mugurele gustativ cuprinde celule gustative, de susținere și bazale, reprezentate distinct în figura manualului. Sursa: „Organele de simț”, secțiunea Gustul / „Organele de simț”, figura 12.5."
+        },
+        {
+          "letter": "D",
+          "text": "maculele situate la nivelul ampulelor ductelor semicirculare",
+          "why": "Maculele sunt situate în utriculă și saculă și participă la echilibrul static. Ampulele ductelor semicirculare au receptorii pentru echilibrul dinamic; varianta combină cele două localizări. Sursa: „Organele de simț”, secțiunea Echilibrul."
+        },
+        {
+          "letter": "E",
+          "text": "pupila, situată în centrul irisului",
+          "why": "Pupila este orificiul central al irisului prin care pătrunde lumina. Nu este un organ receptor alcătuit din celule senzoriale și de susținere. Sursa: „Organele de simț”, secțiunea Ochiul și vederea."
+        }
+      ],
+      "sourcePages": [
+        251
+      ],
+      "topicId": "alte-simturi",
+      "topicLabel": "Celule de susținere senzoriale",
+      "lessonUrl": "organele_de_simt.html#alte-simturi",
+      "id": "asoc-131"
+    },
+    {
+      "number": 132,
+      "sourceNumber": 132,
+      "sourceChapter": "XIII",
+      "prompt": "Fibrele musculare netede pot fi întâlnite în structura:",
+      "correct": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "tunicii mijlocii a globului ocular",
+          "why": "Tunica mijlocie include irisul și corpul ciliar; manualul descrie mușchii netezi ai irisului și mușchiul ciliar. Sursa: „Organele de simț”, secțiunea Ochiul și vederea."
+        },
+        {
+          "letter": "B",
+          "text": "tuturor tipurilor de vase sanguine",
+          "why": "Afirmația „tuturor” este infirmată de capilare: peretele lor este format dintr-un singur strat de celule endoteliale, fără strat muscular. Sursa: „Sistemul cardiovascular”, secțiunea Vasele sanguine."
+        },
+        {
+          "letter": "C",
+          "text": "peretelui intestinului subțire",
+          "why": "Peretele tubului digestiv include straturi de musculatură netedă care asigură deplasarea conținutului. Intestinul subțire face parte din acest tub. Sursa: „Sistemul digestiv”, secțiunea Organizarea sistemului digestiv."
+        },
+        {
+          "letter": "D",
+          "text": "vezicii urinare",
+          "why": "Vezica urinară este descrisă ca un organ cu perete muscular neted, care permite depozitarea și evacuarea urinei. Sursa: „Sistemul urinar”, secțiunea Ureterele, vezica urinară și uretra."
+        },
+        {
+          "letter": "E",
+          "text": "bronhiolelor",
+          "why": "Manualul precizează că peretele bronhiolelor este alcătuit din mușchi netezi susținuți de țesut conjunctiv. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        }
+      ],
+      "sourcePages": [
+        251,
+        252
+      ],
+      "topicId": "tesutul-muscular",
+      "topicLabel": "Localizarea mușchiului neted",
+      "lessonUrl": "tesutul_muscular.html#tesutul-muscular",
+      "id": "asoc-132"
+    },
+    {
+      "number": 133,
+      "sourceNumber": 133,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la fier:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "formează, în structura oxihemoglobinei, legături puternice cu oxigenul molecular",
+          "why": "Legătura dintre oxigen și fierul hemoglobinei este slabă, reversibilă, permițând cedarea oxigenului. Varianta o descrie greșit drept puternică. Sursa: „Sângele”, secțiunea Hemoglobina."
+        },
+        {
+          "letter": "B",
+          "text": "în urma hemolizei, este eliberat din structura hemului, pentru a putea fi reutilizat la nivelul măduvei osoase roșii",
+          "why": "La degradarea eritrocitelor, fierul este recuperat și transportat pentru reutilizare, inclusiv la măduva osoasă unde se formează noi globule roșii. Sursa: „Sângele”, secțiunea Distrugerea globulelor roșii."
+        },
+        {
+          "letter": "C",
+          "text": "poate fi stocat la nivel hepatic sub formă de feritină",
+          "why": "Ficatul depozitează fierul sub formă de feritină, conform listei funcțiilor hepatice. Sursa: „Sistemul digestiv”, secțiunea Ficatul."
+        },
+        {
+          "letter": "D",
+          "text": "fierul din structura hemoglobinei nu se combină cu CO₂",
+          "why": "Dioxidul de carbon se leagă de o altă parte a hemoglobinei decât oxigenul; manualul precizează că nu se fixează pe fierul hemului. Sursa: „Sângele”, secțiunea Hemoglobina / „Sistemul respirator”, secțiunea Schimbul de gaze."
+        },
+        {
+          "letter": "E",
+          "text": "este un component al vitaminei B₁₂ și are rol în procesul maturării hematiilor",
+          "why": "Elementul mineral din vitamina B₁₂ este cobaltul. Varianta îl înlocuiește cu fierul, deși și fierul are rol în formarea hemoglobinei. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul mineralelor."
+        }
+      ],
+      "sourcePages": [
+        252
+      ],
+      "topicId": "globulele-rosii",
+      "topicLabel": "Fierul și hemoglobina",
+      "lessonUrl": "sangele.html#globulele-rosii",
+      "id": "asoc-133"
+    },
+    {
+      "number": 134,
+      "sourceNumber": 134,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele celule pot avea nucleul situat central:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "fibra musculară netedă",
+          "why": "Fibra musculară netedă are un singur nucleu central, conform tabelului comparativ și reprezentării celulei musculare netede. Sursa: „Țesutul muscular”, secțiunea Tabelul 8.1 / „Celula și fiziologia celulară”, figura 3.4."
+        },
+        {
+          "letter": "B",
+          "text": "celula adipoasă",
+          "why": "În figura celulei adipoase, picătura lipidică ocupă cea mai mare parte a celulei, iar nucleul este reprezentat periferic. Nu corespunde exemplului de nucleu central cerut. Sursa: „Celula și fiziologia celulară”, figura 3.4."
+        },
+        {
+          "letter": "C",
+          "text": "fibra musculară miocardică",
+          "why": "Pentru fibra musculară cardiacă, tabelul manualului indică poziția centrală a nucleului. Sursa: „Țesutul muscular”, secțiunea Tabelul 8.1."
+        },
+        {
+          "letter": "D",
+          "text": "neuronul",
+          "why": "Figura comparativă reprezintă nucleul neuronului în centrul corpului celular; acesta este compartimentul care conține nucleul și organitele neuronale. Sursa: „Celula și fiziologia celulară”, figura 3.4 / „Țesutul nervos”, secțiunea Neuronii."
+        },
+        {
+          "letter": "E",
+          "text": "fibra musculară striată scheletică",
+          "why": "Tabelul descrie fibra musculară striată scheletică prin nuclei multipli situați periferic, nu central. Sursa: „Țesutul muscular”, secțiunea Tabelul 8.1."
+        }
+      ],
+      "sourcePages": [
+        252
+      ],
+      "topicId": "nucleu",
+      "topicLabel": "Poziția nucleului",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#nucleu",
+      "id": "asoc-134"
+    },
+    {
+      "number": 135,
+      "sourceNumber": 135,
+      "sourceChapter": "XIII",
+      "prompt": "Sistemul nervos parasimpatic:",
+      "correct": [
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "utilizează fibre nervoase preganglionare colinergice anexate nervilor cranieni III, VII, IX și XI",
+          "why": "Fibrele parasimpatice preganglionare sunt colinergice, dar nervii cranieni enumerați de manual sunt III, VII, IX și X. Înlocuirea lui X cu XI face varianta greșită. Sursa: „Organizarea sistemului nervos”, secțiunea Tabelul 11.5 / „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom."
+        },
+        {
+          "letter": "B",
+          "text": "produce bradicardie",
+          "why": "Parasimpaticul reduce frecvența cardiacă; efectul de încetinire a bătăilor inimii corespunde bradicardiei. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom / „Organizarea sistemului nervos”, figura 11.10."
+        },
+        {
+          "letter": "C",
+          "text": "stimulează digestia",
+          "why": "Parasimpaticul stimulează activitățile digestive, fiind asociat cu funcționarea obișnuită de întreținere a organismului. Sursa: „Țesutul nervos”, secțiunea Organizarea sistemului nervos / „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom."
+        },
+        {
+          "letter": "D",
+          "text": "are efecte adecvate situațiilor de criză",
+          "why": "Adaptarea la stres și situații de criză este atribuită simpaticului. Parasimpaticul predomină în condițiile normale descrise de manual. Sursa: „Organizarea sistemului nervos”, secțiunea Tabelul 11.5."
+        },
+        {
+          "letter": "E",
+          "text": "include fibre nervoase din structura nervilor spinali lombari",
+          "why": "Originea parasimpatică este craniană și sacrală. Componenta lombară aparține organizării simpatice, nu celei parasimpatice. Sursa: „Organizarea sistemului nervos”, secțiunea Tabelul 11.5."
+        }
+      ],
+      "sourcePages": [
+        252
+      ],
+      "topicId": "sistem-nervos-autonom",
+      "topicLabel": "Sistemul parasimpatic",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-autonom",
+      "id": "asoc-135"
+    },
+    {
+      "number": 136,
+      "sourceNumber": 136,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la ventriculii cerebrali:",
+      "correct": [
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "ventriculii laterali comunică cu ventriculul diencefalic prin apeductul cerebral",
+          "why": "Figura arată comunicarea ventriculilor laterali cu ventriculul III prin orificiile interventriculare. Apeductul cerebral leagă ventriculul III de IV, nu ventriculii laterali de III. Sursa: „Organizarea sistemului nervos”, secțiunea Emisferele cerebrale / „Organizarea sistemului nervos”, figura 11.6."
+        },
+        {
+          "letter": "B",
+          "text": "ventriculul IV este înconjurat de substanța albă intraemisferică a emisferelor cerebrale",
+          "why": "Ventriculul IV este situat între trunchiul cerebral și cerebel. Ventriculii laterali sunt cei aflați în emisferele cerebrale. Sursa: „Organizarea sistemului nervos”, secțiunea Emisferele cerebrale / „Organizarea sistemului nervos”, figura 11.6."
+        },
+        {
+          "letter": "C",
+          "text": "ventriculul III este situat la nivelul diencefalului",
+          "why": "Manualul situează ventriculul III în diencefal, între structurile acestei regiuni. Sursa: „Organizarea sistemului nervos”, secțiunea Emisferele cerebrale."
+        },
+        {
+          "letter": "D",
+          "text": "conțin lichid cefalorahidian prin intermediul căruia dioxidul de carbon poate ajunge la nivelul centrilor respiratori de la nivelul trunchiului cerebral",
+          "why": "Ventriculii conțin lichid cefalorahidian. Manualul explică pătrunderea dioxidului de carbon în acest lichid și influențarea centrilor respiratori prin modificarea concentrației ionilor de hidrogen. Sursa: „Organizarea sistemului nervos”, secțiunea Măduva spinării și meningele / „Sistemul respirator”, secțiunea Controlul respirației."
+        },
+        {
+          "letter": "E",
+          "text": "ventriculul IV comunică inferior cu canalul epididimar",
+          "why": "Continuarea inferioară reprezentată pentru ventriculul IV este canalul central al măduvei, numit și ependimar. Canalul epididimar aparține aparatului reproducător masculin și nu acestei căi a lichidului cefalorahidian. Sursa: „Organizarea sistemului nervos”, secțiunea Măduva spinării și meningele / „Organizarea sistemului nervos”, figura 11.6."
+        }
+      ],
+      "sourcePages": [
+        252
+      ],
+      "topicId": "sistem-nervos-central",
+      "topicLabel": "Ventriculii cerebrali",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-central",
+      "id": "asoc-136"
+    },
+    {
+      "number": 137,
+      "sourceNumber": 137,
+      "sourceChapter": "XIII",
+      "prompt": "Banda I din structura miofibrilelor din mușchiul striat scheletic:",
+      "correct": [
+        "A",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este alcătuită din filamente subțiri",
+          "why": "Banda I este banda clară care conține filamente subțiri de actină, conform descrierii sarcomerului. Sursa: „Țesutul muscular”, secțiunea Structura celulei musculare / „Țesutul muscular”, figura 8.1."
+        },
+        {
+          "letter": "B",
+          "text": "conțin exclusiv miozină",
+          "why": "Filamentele subțiri ale benzii I sunt de actină. Miozina alcătuiește filamentele groase, deci nu poate fi constituentul exclusiv al benzii I. Sursa: „Țesutul muscular”, secțiunea Structura celulei musculare / „Țesutul muscular”, figura 8.1."
+        },
+        {
+          "letter": "C",
+          "text": "este situată în centrul sarcomerului",
+          "why": "Banda I se găsește de o parte și de alta a liniei Z, la marginile sarcomerului. Regiunea centrală este ocupată de banda A și zona H. Sursa: „Țesutul muscular”, secțiunea Structura celulei musculare / „Țesutul muscular”, figura 8.1."
+        },
+        {
+          "letter": "D",
+          "text": "prezintă, în regiunea periferică, zona H",
+          "why": "Zona H este porțiunea centrală a benzii A, cu filamente groase fără suprapunere cu cele subțiri. Nu este o regiune periferică a benzii I. Sursa: „Țesutul muscular”, secțiunea Structura celulei musculare."
+        },
+        {
+          "letter": "E",
+          "text": "este străbătută în centru de linia Z",
+          "why": "Linia Z traversează centrul benzii I și delimitează sarcomerele succesive. Sursa: „Țesutul muscular”, secțiunea Structura celulei musculare."
+        }
+      ],
+      "sourcePages": [
+        252
+      ],
+      "topicId": "muschiul-striat",
+      "topicLabel": "Banda I a sarcomerului",
+      "lessonUrl": "tesutul_muscular.html#muschiul-striat",
+      "id": "asoc-137"
+    },
+    {
+      "number": 138,
+      "sourceNumber": 138,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la arborele bronșic:",
+      "correct": [
+        "A",
+        "B"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "permite conducerea aerului atmosferic spre alveolele pulmonare",
+          "why": "Arborele bronșic este sistemul de căi ramificate care conduce aerul de la trahee către alveole, unde se realizează schimburile gazoase. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "B",
+          "text": "ia naștere prin ramificarea traheei",
+          "why": "Traheea se împarte în două bronhii principale; ramificarea lor în bronhii mai mici și bronhiole constituie arborele bronșic. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "C",
+          "text": "include trei bronhii principale pentru plămânul stâng și două pentru plămânul drept",
+          "why": "Există două bronhii principale, câte una pentru fiecare plămân. Cifrele trei și două descriu lobii plămânului drept, respectiv stâng, nu numărul bronhiilor principale; varianta inversează și părțile. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "D",
+          "text": "interiorul traheei este tapetat un epiteliu ciliat care împinge particulele inhalate spre alveole",
+          "why": "Cilii traheali deplasează particulele captate în mucus spre faringe, pentru a fi înghițite. Direcția spre alveole este opusă celei descrise în manual. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "E",
+          "text": "ca urmare a prezenței fibrelor musculare netede, peretele bronhiolelor este semirigid",
+          "why": "Semirigiditatea traheei este legată de susținerea cartilaginoasă. Bronhiolele nu mai conțin cartilaj; manualul le descrie peretele muscular neted susținut de țesut conjunctiv, fără a atribui mușchilor o rigiditate cartilaginoasă. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        }
+      ],
+      "sourcePages": [
+        252
+      ],
+      "topicId": "anatomie",
+      "topicLabel": "Arborele bronșic",
+      "lessonUrl": "sistemul_respirator.html#anatomie",
+      "id": "asoc-138"
+    },
+    {
+      "number": 139,
+      "sourceNumber": 139,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la mișcările articulare:",
+      "correct": [
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "ridicarea umerilor se face prin adducție",
+          "why": "Ridicarea umerilor este elevație. Adducția înseamnă apropierea unui segment de linia mediană, nu ridicarea lui. Sursa: „Oasele și articulațiile”, secțiunea Mișcările articulare."
+        },
+        {
+          "letter": "B",
+          "text": "prin protracție, mandibula se deplasează înainte",
+          "why": "Protracția este deplasarea înainte a unei structuri; mandibula este exemplul indicat de manual. Sursa: „Oasele și articulațiile”, secțiunea Mișcările articulare."
+        },
+        {
+          "letter": "C",
+          "text": "rotirea spre interior a tălpii piciorului se face prin flexie plantară",
+          "why": "Rotirea tălpii spre interior este inversie. Flexia plantară reprezintă o altă mișcare a piciorului, nu această rotație. Sursa: „Oasele și articulațiile”, secțiunea Mișcările articulare."
+        },
+        {
+          "letter": "D",
+          "text": "supinația și pronația sunt mișcări antagoniste realizate la nivelul sinartrozelor",
+          "why": "Supinația și pronația sunt antagoniste, însă sinartrozele sunt articulații cu mobilitate foarte redusă sau absentă. Asocierea acestor mișcări cu sinartrozele este partea greșită. Sursa: „Oasele și articulațiile”, secțiunea Sinartrozele / „Oasele și articulațiile”, secțiunea Mișcările articulare."
+        },
+        {
+          "letter": "E",
+          "text": "rotirea tălpii spre exterior este antagonistă inversiei",
+          "why": "Eversia rotește talpa spre exterior, iar inversia spre interior. Cele două mișcări au direcții opuse. Sursa: „Oasele și articulațiile”, secțiunea Mișcările articulare."
+        }
+      ],
+      "sourcePages": [
+        252
+      ],
+      "topicId": "articulatii",
+      "topicLabel": "Mișcări articulare",
+      "lessonUrl": "oasele_si_articulatiile.html#articulatii",
+      "id": "asoc-139"
+    },
+    {
+      "number": 140,
+      "sourceNumber": 140,
+      "sourceChapter": "XIII",
+      "prompt": "Țesutul conjunctiv:",
+      "correct": [
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "intră în alcătuirea corpului muscular al mușchiului striat scheletic formând succesiv: perimisiumul, epimisiumul și endomisiumul",
+          "why": "Manualul descrie endomisiumul în jurul fibrei, perimisiumul în jurul fasciculului și epimisiumul în jurul mușchiului. Șirul propus nu respectă această organizare succesivă de la fibră la întregul mușchi. Sursa: „Țesutul muscular”, secțiunea Structura țesutului muscular striat scheletic."
+        },
+        {
+          "letter": "B",
+          "text": "fibros formează membrane prin osificarea cărora se formează oase plate",
+          "why": "Oasele plate se pot forma prin osificare intramembranoasă, pornind din membrane de țesut conjunctiv fibros. Sursa: „Oasele și articulațiile”, secțiunea Formarea osului."
+        },
+        {
+          "letter": "C",
+          "text": "intră în alcătuirea tendoanelor care învelesc la exterior corpul muscular",
+          "why": "Învelișul conjunctiv extern al corpului muscular este epimisiumul. Tendoanele sunt continuările țesutului conjunctiv dincolo de corpul muscular, prin care mușchiul se fixează de os. Sursa: „Țesutul muscular”, secțiunea Structura țesutului muscular striat scheletic."
+        },
+        {
+          "letter": "D",
+          "text": "formează epinervul și perinervul care, la nivelul sistemului nervos periferic, protejează fibrele nervoase din structura nervilor",
+          "why": "Perinervul învelește fasciculele de fibre nervoase, iar epinervul învelește întregul nerv. Ambele sunt învelișuri conjunctive protectoare ale nervilor periferici. Sursa: „Țesutul nervos”, secțiunea Nervii și ganglionii."
+        },
+        {
+          "letter": "E",
+          "text": "fibros, rezistent, gros, foarte bine vascularizat se întâlnește în structura pia mater",
+          "why": "Pia mater este descrisă ca membrana subțire și vascularizată aderentă la țesutul nervos. Învelișul fibros gros și rezistent este dura mater, astfel că varianta combină trăsăturile lor. Sursa: „Organizarea sistemului nervos”, secțiunea Măduva spinării și meningele."
+        }
+      ],
+      "sourcePages": [
+        252,
+        253
+      ],
+      "topicId": "muschiul-striat",
+      "topicLabel": "Învelișuri conjunctive",
+      "lessonUrl": "tesutul_muscular.html#muschiul-striat",
+      "id": "asoc-140"
+    },
+    {
+      "number": 141,
+      "sourceNumber": 141,
+      "sourceChapter": "XIII",
+      "prompt": "Ureea este:",
+      "correct": [
+        "A",
+        "B"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "eliminată în cantități mici prin transpirație",
+          "why": "Pielea elimină prin transpirație apă și săruri, dar și cantități mici de deșeuri azotate, între care manualul enumeră ureea. Sursa: „Sistemul urinar”, secțiunea Alte organe excretorii."
+        },
+        {
+          "letter": "B",
+          "text": "sintetizată hepatic prin îndepărtarea grupării amino din molecula aminoacizilor, prin dezaminare",
+          "why": "Ficatul îndepărtează grupările amino prin dezaminare și transformă amoniacul rezultat în uree. Varianta rezumă această succesiune hepatică, nu o conversie directă a întregului aminoacid în uree. Sursa: „Sistemul digestiv”, secțiunea Ficatul / „Metabolism și nutriție”, secțiunea Metabolismul proteinelor."
+        },
+        {
+          "letter": "C",
+          "text": "formată prin reacția dintre o grupare carboxil, o grupare amino și CO₂",
+          "why": "Manualul leagă formarea ureei de grupările amino și de dioxidul de carbon, în ciclul ornitinei. Nu descrie combinarea unei grupări carboxil cu una amino, așa cum propune varianta. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul proteinelor / „Sistemul urinar”, secțiunea Urina."
+        },
+        {
+          "letter": "D",
+          "text": "produsă în urma decarboxilării aminoacizilor",
+          "why": "Etapa indicată pentru eliminarea azotului din aminoacizi este dezaminarea, adică îndepărtarea grupării amino. Decarboxilarea nu este procesul prin care sursa explică formarea ureei. Sursa: „Sistemul digestiv”, secțiunea Ficatul / „Sistemul urinar”, secțiunea Urina."
+        },
+        {
+          "letter": "E",
+          "text": "sintetizată hepatic la nivelul ciclului Krebs",
+          "why": "Ureea se formează în ciclul ornitinei. Ciclul Krebs este o cale a metabolismului energetic, nu ciclul de sinteză a ureei descris în manual. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul proteinelor / „Sistemul urinar”, secțiunea Urina."
+        }
+      ],
+      "sourcePages": [
+        253
+      ],
+      "topicId": "lipide-si-proteine",
+      "topicLabel": "Ureea și metabolismul azotului",
+      "lessonUrl": "metabolism_si_nutritie.html#lipide-si-proteine",
+      "id": "asoc-141"
+    },
+    {
+      "number": 142,
+      "sourceNumber": 142,
+      "sourceChapter": "XIII",
+      "prompt": "Enzimele pot interveni în:",
+      "correct": [
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "depolarizarea axolemei",
+          "why": "Depolarizarea axolemei este explicată prin deschiderea canalelor și intrarea ionilor de sodiu; pompa de sodiu–potasiu întreține dezechilibrul ionic. Baremul nu selectează A, dar pasajul nu permite afirmarea generală că nicio enzimă nu poate interveni indirect; susține doar mecanismul direct prin canale. Sursa: „Țesutul nervos”, secțiunea Impulsul nervos."
+        },
+        {
+          "letter": "B",
+          "text": "transportul sanguin al monoxidului de carbon",
+          "why": "Monoxidul de carbon se fixează puternic pe fierul hemoglobinei; pasajul nu descrie acest mecanism drept o reacție catalizată enzimatic. Sursa: „Sângele”, secțiunea Hemoglobina."
+        },
+        {
+          "letter": "C",
+          "text": "sinteza unor mesageri secundari ai hormonilor",
+          "why": "Adenilat ciclaza este o enzimă care transformă ATP în AMP ciclic. Acesta este mesagerul secundar din mecanismul hormonal descris. Sursa: „Sistemul endocrin”, secțiunea Descrierea generală a hormonilor."
+        },
+        {
+          "letter": "D",
+          "text": "transportul sanguin al O₂",
+          "why": "Oxigenul este transportat în principal prin legarea reversibilă de hemoglobină. Hemoglobina are rol de transportor în acest pasaj, nu de enzimă care catalizează transportul. Sursa: „Sângele”, secțiunea Hemoglobina / „Sistemul respirator”, secțiunea Schimbul de gaze."
+        },
+        {
+          "letter": "E",
+          "text": "glicoliză",
+          "why": "Glicoliza este o cale catabolică, iar tabelul precizează că reacțiile catabolice sunt mediate de enzime. Prin această cale glucoza este transformată în acid piruvic. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        }
+      ],
+      "sourcePages": [
+        253
+      ],
+      "topicId": "metabolismul-glucidelor",
+      "topicLabel": "Roluri enzimatice",
+      "lessonUrl": "metabolism_si_nutritie.html#metabolismul-glucidelor",
+      "id": "asoc-142"
+    },
+    {
+      "number": 143,
+      "sourceNumber": 143,
+      "sourceChapter": "XIII",
+      "prompt": "Acidul arahidonic:",
+      "correct": [
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este un aminoacid esențial",
+          "why": "Manualul include acidul arahidonic între acizii grași esențiali. Este un acid gras, nu un aminoacid. Sursa: „Metabolism și nutriție”, secțiunea Anabolismul lipidelor."
+        },
+        {
+          "letter": "B",
+          "text": "nu poate fi sintetizat la nivelul organismul",
+          "why": "În clasificarea manualului, acidul arahidonic este un acid gras esențial pe care organismul nu îl poate sintetiza. Explicația urmează această clasificare a sursei autorizate. Sursa: „Metabolism și nutriție”, secțiunea Anabolismul lipidelor."
+        },
+        {
+          "letter": "C",
+          "text": "trebuie obținut din dietă",
+          "why": "Fiind încadrat de manual între acizii grași esențiali, acidul arahidonic trebuie obținut prin alimentație. Sursa: „Metabolism și nutriție”, secțiunea Anabolismul lipidelor."
+        },
+        {
+          "letter": "D",
+          "text": "poate fi sintetizat pornind de la glucoză",
+          "why": "Manualul îl diferențiază de acizii grași pe care organismul îi poate sintetiza din alte substanțe: îl consideră esențial, deci nu susține sinteza lui pornind de la glucoză. Sursa: „Metabolism și nutriție”, secțiunea Anabolismul lipidelor."
+        },
+        {
+          "letter": "E",
+          "text": "este un acid gras saturat",
+          "why": "Acidul arahidonic este enumerat de manual între acizii grași nesaturați esențiali, nu între cei saturați. Sursa: „Metabolism și nutriție”, secțiunea Anabolismul lipidelor."
+        }
+      ],
+      "sourcePages": [
+        253
+      ],
+      "topicId": "lipide-si-proteine",
+      "topicLabel": "Acidul arahidonic",
+      "lessonUrl": "metabolism_si_nutritie.html#lipide-si-proteine",
+      "id": "asoc-143"
+    },
+    {
+      "number": 144,
+      "sourceNumber": 144,
+      "sourceChapter": "XIII",
+      "prompt": "Amidonul din alimente este digerat sub acțiunea:",
+      "correct": [
+        "A",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "amilazelor",
+          "why": "Amilaza salivară și amilaza pancreatică acționează asupra amidonului, conform tabelului enzimelor digestive. Sursa: „Sistemul digestiv”, secțiunea Tabelul 18.4."
+        },
+        {
+          "letter": "B",
+          "text": "unor enzime din sucul intestinal",
+          "why": "Pentru sucul intestinal, tabelul descrie enzime precum maltaza, lactaza, zaharaza și peptidaze, cu alte substraturi. Digestia amidonului este atribuită amilazelor salivară și pancreatică. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros / „Sistemul digestiv”, secțiunea Tabelul 18.4."
+        },
+        {
+          "letter": "C",
+          "text": "sărurilor biliare",
+          "why": "Sărurile biliare facilitează digestia și absorbția lipidelor. Nu sunt enzime care hidrolizează amidonul. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "D",
+          "text": "unei enzime din produsul de secreție exocrină a pancreasului",
+          "why": "Secreția exocrină a pancreasului conține amilază pancreatică, enzimă care digeră amidonul. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros / „Sistemul digestiv”, secțiunea Tabelul 18.4."
+        },
+        {
+          "letter": "E",
+          "text": "maltazei",
+          "why": "Maltaza descompune maltoza în glucoză. Substratul său nu este amidonul, chiar dacă maltoza poate rezulta anterior din digestia acestuia. Sursa: „Sistemul digestiv”, secțiunea Tabelul 18.4."
+        }
+      ],
+      "sourcePages": [
+        253
+      ],
+      "topicId": "intestinele",
+      "topicLabel": "Digestia amidonului",
+      "lessonUrl": "sistemul_digestiv.html#intestinele",
+      "id": "asoc-144"
+    },
+    {
+      "number": 145,
+      "sourceNumber": 145,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la aminoacizi:",
+      "correct": [
+        "A",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "pot fi esențiali sau ne-esențiali",
+          "why": "Manualul împarte aminoacizii în esențiali, necesari din dietă, și neesențiali, pe care organismul îi poate sintetiza. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul proteinelor."
+        },
+        {
+          "letter": "B",
+          "text": "cei esențiali pot fi sintetizați la nivel hepatic prin transaminare",
+          "why": "Transaminarea este legată de sinteza aminoacizilor neesențiali. Aminoacizii esențiali sunt cei care trebuie furnizați prin dietă, potrivit manualului. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul proteinelor."
+        },
+        {
+          "letter": "C",
+          "text": "prin dezaminare eliberează CO₂",
+          "why": "Dezaminarea îndepărtează gruparea amino și produce amoniac; dioxidul de carbon este implicat ulterior în formarea ureei. Varianta confundă eliminarea grupării amino cu eliminarea dioxidului de carbon. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul proteinelor."
+        },
+        {
+          "letter": "D",
+          "text": "pentru cei esențiali este necesar aportul prin dietă",
+          "why": "Aminoacizii esențiali trebuie obținuți prin dietă, deoarece manualul precizează că organismul nu îi poate sintetiza. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul proteinelor."
+        },
+        {
+          "letter": "E",
+          "text": "cei esențiali lipsesc din proteinele complete, de origine animală",
+          "why": "Proteinele complete conțin toți aminoacizii esențiali și sunt asociate în manual cu sursele animale. Varianta afirmă exact lipsa care caracterizează proteinele incomplete. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul proteinelor."
+        }
+      ],
+      "sourcePages": [
+        253
+      ],
+      "topicId": "lipide-si-proteine",
+      "topicLabel": "Aminoacizii",
+      "lessonUrl": "metabolism_si_nutritie.html#lipide-si-proteine",
+      "id": "asoc-145"
+    },
+    {
+      "number": 146,
+      "sourceNumber": 146,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la vascularizația inimii:",
+      "correct": [
+        "A",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "orificiile arterelor coronare sunt situate la nivelul aortei ascendente în imediata vecinătate a valvei aortice",
+          "why": "Figura cu valvele cardiace arată orificiile arterelor coronare lângă valva aortică; textul le situează la începutul aortei, imediat după ieșirea acesteia din ventriculul stâng. Sursa: „Sistemul cardiovascular”, figura 15.4 / „Sistemul cardiovascular”, secțiunea Tipuri de circulație sanguină."
+        },
+        {
+          "letter": "B",
+          "text": "artera coronară dreaptă vascularizează atriile, iar cea stângă, ventriculii",
+          "why": "Manualul atribuie arterelor coronare vascularizația mușchiului cardiac. Figura arată inclusiv ramuri ale coronarei drepte pe suprafața ventriculară, contrazicând separarea simplă „dreapta pentru atrii, stânga pentru ventriculi”. Sursa: „Sistemul cardiovascular”, secțiunea Circulația coronariană / „Sistemul cardiovascular”, figura 15.5."
+        },
+        {
+          "letter": "C",
+          "text": "venele pulmonare se deschid în atriul stâng",
+          "why": "Venele pulmonare se deschid într-adevăr în atriul stâng, însă aparțin circulației dintre plămâni și inimă. Cerința privește vascularizația proprie a inimii, realizată de vasele coronare; de aceea baremul nu selectează această afirmație adevărată despre circulația pulmonară. Sursa: „Sistemul cardiovascular”, secțiunea Circulația pulmonară și sistemică / „Sistemul cardiovascular”, secțiunea Circulația coronariană."
+        },
+        {
+          "letter": "D",
+          "text": "venele cardiace se drenează, prin intermediul sinusului coronarian, în atriul stâng",
+          "why": "Venele cardiace conduc sângele spre sinusul coronarian, care se varsă în atriul drept. Varianta indică greșit atriul stâng. Sursa: „Sistemul cardiovascular”, secțiunea Circulația coronariană."
+        },
+        {
+          "letter": "E",
+          "text": "sinusul coronarian este situat în apropierea venelor cave, superioară și inferioară",
+          "why": "Legenda figurii manualului precizează că sinusul coronarian este situat aproape de venele cave și se golește în atriul drept împreună cu acestea. Varianta urmează această descriere. Sursa: „Sistemul cardiovascular”, secțiunea Circulația coronariană."
+        }
+      ],
+      "sourcePages": [
+        253
+      ],
+      "topicId": "circulatia-coronariana",
+      "topicLabel": "Circulația coronariană",
+      "lessonUrl": "sistemul_cardiovascular.html#circulatia-coronariana",
+      "id": "asoc-146"
+    },
+    {
+      "number": 147,
+      "sourceNumber": 147,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la procesele suferite de substanțele anorganice la nivelul sistemului tubular al nefronului:",
+      "correct": [
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "Na⁺ este secretat activ la nivelul tubului contort proximal",
+          "why": "Sodiul este reabsorbit activ în tubul contort proximal, adică trece din filtrat spre sânge. Varianta inversează procesul numindu-l secreție. Sursa: „Sistemul urinar”, secțiunea Tabelul 20.1 / „Sistemul urinar”, secțiunea Reabsorbția sărurilor și a apei."
+        },
+        {
+          "letter": "B",
+          "text": "NH₃ este reabsorbit la nivelul tubului distal",
+          "why": "Amoniacul este inclus între substanțele secretate în tubul distal. Nu este descris ca substanță reabsorbită în această porțiune. Sursa: „Sistemul urinar”, secțiunea Tabelul 20.1 / „Sistemul urinar”, secțiunea Secreția tubulară."
+        },
+        {
+          "letter": "C",
+          "text": "H⁺ este secretat activ la nivelul tubului distal",
+          "why": "Manualul descrie secreția activă a ionilor de hidrogen în tubul distal, contribuind la eliminarea lor prin urină. Sursa: „Sistemul urinar”, secțiunea Secreția tubulară."
+        },
+        {
+          "letter": "D",
+          "text": "glucoza este reabsorbită activ la nivelul tubului contort proximal",
+          "why": "Glucoza este reabsorbită activ în tubul contort proximal, dar este o substanță organică. Afirmația nu răspunde categoriei de substanțe anorganice cerute și este exclusă din barem din acest motiv de încadrare. Sursa: „Sistemul urinar”, secțiunea Tabelul 20.1 / „Sistemul urinar”, secțiunea Reabsorbția."
+        },
+        {
+          "letter": "E",
+          "text": "H₂O este reabsorbită pasiv, prin osmoză, la nivelul tubului contort proximal",
+          "why": "Apa trece pasiv din filtrat prin osmoză în tubul contort proximal, urmând reabsorbția substanțelor dizolvate. Sursa: „Sistemul urinar”, secțiunea Tabelul 20.1 / „Sistemul urinar”, secțiunea Reabsorbția sărurilor și a apei."
+        }
+      ],
+      "sourcePages": [
+        253
+      ],
+      "topicId": "nefron",
+      "topicLabel": "Transportul tubular renal",
+      "lessonUrl": "sistemul_renal_complet.html#nefron",
+      "id": "asoc-147"
+    },
+    {
+      "number": 148,
+      "sourceNumber": 148,
+      "sourceChapter": "XIII",
+      "prompt": "Țesutul cartilaginos:",
+      "correct": [
+        "A"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "reprezintă țesutul precursor pentru formarea endocondrală a țesutului osos",
+          "why": "Osificarea endocondrală pornește de la un model cartilaginos care este înlocuit cu țesut osos. Sursa: „Oasele și articulațiile”, secțiunea Formarea osului."
+        },
+        {
+          "letter": "B",
+          "text": "intră în alcătuirea discurilor intervertebrale situate între arcurile vertebrale",
+          "why": "Discurile sunt fibrocartilaginoase, dar figura le arată între porțiunile masive ale vertebrelor, nu între arcurile posterioare. Localizarea din variantă este partea greșită. Sursa: „Oasele și articulațiile”, secțiunea Amfiartrozele / „Oasele și articulațiile”, figura 6.4."
+        },
+        {
+          "letter": "C",
+          "text": "poate fi întâlnit la nivelul cavității articulare a sinartrozelor",
+          "why": "Cavitatea articulară este caracteristica diartrozelor sinoviale descrise în manual. Sinartrozele nu sunt prezentate cu o asemenea cavitate; varianta combină două tipuri de articulații. Sursa: „Oasele și articulațiile”, secțiunea Articulațiile / „Oasele și articulațiile”, secțiunea Diartrozele."
+        },
+        {
+          "letter": "D",
+          "text": "poate fi întâlnit sub formă de insule în structura membranelor fibroase care reprezintă precursorul oaselor lungi",
+          "why": "Membranele fibroase cu insule cartilaginoase sunt descrise în dezvoltarea oaselor plate. Pentru oasele lungi, manualul descrie modele cartilaginoase alungite și osificare endocondrală. Sursa: „Oasele și articulațiile”, secțiunea Formarea osului."
+        },
+        {
+          "letter": "E",
+          "text": "poate fi întâlnit la nivelul laringelui și esofagului",
+          "why": "Laringele este o structură cartilaginoasă, în timp ce esofagul este descris drept un tub muscular. Asocierea adaugă esofagul categoriei de structuri cartilaginoase fără sprijin în descrierea manualului. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator / „Sistemul digestiv”, secțiunea Esofagul."
+        }
+      ],
+      "sourcePages": [
+        254
+      ],
+      "topicId": "osul",
+      "topicLabel": "Cartilajul și osificarea",
+      "lessonUrl": "oasele_si_articulatiile.html#osul",
+      "id": "asoc-148"
+    },
+    {
+      "number": 149,
+      "sourceNumber": 149,
+      "sourceChapter": "XIII",
+      "prompt": "La menținerea concentrației sanguine a calciului participă:",
+      "correct": [
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "factori endocrini: parathormonul și tiroxina",
+          "why": "Perechea de hormoni cu acțiuni antagoniste asupra calcemiei este calcitonină–parathormon. Tiroxina nu înlocuiește calcitonina în mecanismul prezentat. Sursa: „Sistemul endocrin”, secțiunea Tabelul 13.3 / „Sistemul endocrin”, secțiunea Glandele paratiroide."
+        },
+        {
+          "letter": "B",
+          "text": "reabsorbția intestinală și renală",
+          "why": "Baremul exclude B. Totuși, pasajul despre parathormon folosește chiar formularea „reabsorbția calciului” pentru tubii renali și mucoasa intestinală, iar apoi vorbește despre absorbția intestinală. Manualul susține participarea ambelor procese la calcemie; diferența terminologică nu justifică fără rezervă excluderea variantei. Sursa: „Sistemul endocrin”, secțiunea Glandele paratiroide."
+        },
+        {
+          "letter": "C",
+          "text": "hormoni secretați de glandele tiroidă și paratiroide",
+          "why": "Tiroida secretă calcitonină, iar paratiroidele parathormon. Manualul le atribuie efecte antagoniste care contribuie la controlul concentrației sanguine a calciului. Sursa: „Sistemul endocrin”, secțiunea Tabelul 13.3 / „Sistemul endocrin”, secțiunea Glandele paratiroide."
+        },
+        {
+          "letter": "D",
+          "text": "activitatea unor celule din structura osului",
+          "why": "Celulele osoase participă la depunerea și resorbția osului. Stimularea osteoclastelor prin parathormon mobilizează calciul din os spre sânge. Sursa: „Oasele și articulațiile”, secțiunea Formarea osului / „Sistemul endocrin”, secțiunea Glandele paratiroide."
+        },
+        {
+          "letter": "E",
+          "text": "o vitamină liposolubilă activată la nivelul rinichiului",
+          "why": "Vitamina D este activată la nivel renal sub influența parathormonului și reglează absorbția intestinală a calciului. Manualul o include între vitaminele liposolubile. Sursa: „Sistemul endocrin”, secțiunea Glandele paratiroide / „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        }
+      ],
+      "sourcePages": [
+        254
+      ],
+      "topicId": "glandele-paratiroide",
+      "topicLabel": "Homeostazia calciului",
+      "lessonUrl": "sistemul_endocrin.html#glandele-paratiroide",
+      "id": "asoc-149"
+    },
+    {
+      "number": 150,
+      "sourceNumber": 150,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre următoarele tipuri de leucocite au nucleul polilobat:",
+      "correct": [
+        "A",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "neutrofile",
+          "why": "Neutrofilele au nucleu cu mai mulți lobi; manualul le numește și leucocite polimorfonucleare. Sursa: „Sângele”, secțiunea Globulele albe."
+        },
+        {
+          "letter": "B",
+          "text": "limfocitele",
+          "why": "Limfocitele au un nucleu mare, iar descrierea lor nu indică segmentarea în lobi caracteristică neutrofilelor și eozinofilelor. Sursa: „Sângele”, secțiunea Globulele albe."
+        },
+        {
+          "letter": "C",
+          "text": "eozinofile",
+          "why": "Tabelul descrie nucleul eozinofilului cu doi lobi. Baremul include această variantă în categoria nucleilor lobați; particularitatea de reținut este că eozinofilul este bilobat. Sursa: „Sângele”, secțiunea Globulele albe."
+        },
+        {
+          "letter": "D",
+          "text": "eritrocitele",
+          "why": "Eritrocitele mature nu au nucleu și nici nu sunt leucocite. Nu pot constitui un exemplu de leucocit cu nucleu polilobat. Sursa: „Sângele”, secțiunea Globulele roșii."
+        },
+        {
+          "letter": "E",
+          "text": "monocitele",
+          "why": "Nucleul monocitului este descris ca reniform sau în formă de potcoavă, nu segmentat în mai mulți lobi. Sursa: „Sângele”, secțiunea Globulele albe."
+        }
+      ],
+      "sourcePages": [
+        254
+      ],
+      "topicId": "globulele-albe",
+      "topicLabel": "Morfologia leucocitelor",
+      "lessonUrl": "sangele.html#globulele-albe",
+      "id": "asoc-150"
+    },
+    {
+      "number": 151,
+      "sourceNumber": 151,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre afirmațiile referitoare la scrot sunt adevărate?",
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "în straturile profunde conține mușchiul dartos",
+          "why": "Manualul situează mușchiul dartos în straturile profunde ale pielii scrotului și îl descrie ca mușchi neted subțire. Sursa: „Sistemul reproducător masculin”, secțiunea Testiculele."
+        },
+        {
+          "letter": "B",
+          "text": "este acoperit, la exterior, de tegument",
+          "why": "Descrierea pielii scrotale și a aspectului ei încrețit la contracția dartosului confirmă învelișul cutanat extern. Sursa: „Sistemul reproducător masculin”, secțiunea Testiculele."
+        },
+        {
+          "letter": "C",
+          "text": "conține în structura sa un strat de mușchi striat scheletic, inervat de nervii spinali",
+          "why": "Textul identifică în peretele scrotal mușchiul neted dartos, iar figura nu individualizează un strat muscular striat sau inervația lui spinală. Baremul exclude C; sursa disponibilă nu permite detalierea suplimentară a acestei structuri pentru a demonstra afirmația sau a o respinge anatomic în toate sensurile. Sursa: „Sistemul reproducător masculin”, secțiunea Testiculele / „Sistemul reproducător masculin”, figura 22.1."
+        },
+        {
+          "letter": "D",
+          "text": "are un perete unistratificat, protejând testiculele",
+          "why": "Scrotul este descris explicit ca structură cu pereți groși, multistratificați. „Unistratificat” contrazice această descriere. Sursa: „Sistemul reproducător masculin”, secțiunea Testiculele."
+        },
+        {
+          "letter": "E",
+          "text": "are în alcătuirea sa fibre musculare netede inervate de sistemul nervos autonom",
+          "why": "Dartosul este mușchi neted; manualul atribuie controlul mușchilor netezi sistemului nervos autonom. Prin corelarea celor două pasaje rezultă încadrarea din variantă. Sursa: „Sistemul reproducător masculin”, secțiunea Testiculele / „Țesutul nervos”, secțiunea Organizarea sistemului nervos."
+        }
+      ],
+      "sourcePages": [
+        254
+      ],
+      "topicId": "testiculele",
+      "topicLabel": "Scrotul",
+      "lessonUrl": "sistemul_reproducator_masculin.html#testiculele",
+      "id": "asoc-151"
+    },
+    {
+      "number": 152,
+      "sourceNumber": 152,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la poziția valvelor în timpul ciclului cardiac:",
+      "correct": [
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "valvele aortică și pulmonară sunt deschise în timpul diastolei ventriculare, împiedicând refluxul sângelui din marile artere în ventricule",
+          "why": "În diastola ventriculară, valvele semilunare sunt închise și astfel împiedică întoarcerea sângelui din artere. Varianta le descrie greșit ca deschise. Sursa: „Sistemul cardiovascular”, secțiunea Valvele cardiace."
+        },
+        {
+          "letter": "B",
+          "text": "în timpul sistolei ventriculare toate valvele cardiace sunt închise",
+          "why": "În faza de ejecție a sistolei ventriculare, sângele trece prin valvele semilunare deschise. Prin urmare, toate valvele nu rămân închise pe întreaga sistolă. Sursa: „Sistemul cardiovascular”, secțiunea Valvele cardiace / „Sistemul cardiovascular”, secțiunea Ciclul cardiac."
+        },
+        {
+          "letter": "C",
+          "text": "umplerea ventriculelor cu sânge are loc după ce valvele atrioventriculare se deschid ca urmare a creșterii presiunii din atrii la o valoare superioară celei din ventricule",
+          "why": "Când presiunea atrială o depășește pe cea ventriculară, valvele atrioventriculare se deschid și permit umplerea ventriculelor. Sursa: „Sistemul cardiovascular”, secțiunea Ciclul cardiac."
+        },
+        {
+          "letter": "D",
+          "text": "în timpul umplerii ventriculelor, atât valvele atrioventriculare cât și cele semilunare sunt închise",
+          "why": "Umplerea ventriculelor presupune valve atrioventriculare deschise, prin care sângele vine din atrii. Afirmația că toate valvele sunt închise nu corespunde acestei faze. Sursa: „Sistemul cardiovascular”, secțiunea Valvele cardiace / „Sistemul cardiovascular”, secțiunea Ciclul cardiac."
+        },
+        {
+          "letter": "E",
+          "text": "în timpul sistolei ventriculare, atunci când sângele este pompat în aortă și în trunchiul pulmonar, valvele atrioventriculare sunt închise, iar valvele semilunare sunt deschise",
+          "why": "În timpul ejecției, valvele atrioventriculare sunt închise, împiedicând refluxul spre atrii, iar valvele semilunare sunt deschise spre aortă și trunchiul pulmonar. Sursa: „Sistemul cardiovascular”, secțiunea Valvele cardiace / „Sistemul cardiovascular”, secțiunea Ciclul cardiac."
+        }
+      ],
+      "sourcePages": [
+        254
+      ],
+      "topicId": "ciclul-cardiac",
+      "topicLabel": "Valvele în ciclul cardiac",
+      "lessonUrl": "sistemul_cardiovascular.html#ciclul-cardiac",
+      "id": "asoc-152"
+    },
+    {
+      "number": 153,
+      "sourceNumber": 153,
+      "sourceChapter": "XIII",
+      "prompt": "Capilarele limfatice:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "au o structură asemănătoare arterelor",
+          "why": "Capilarul limfatic are perete subțire endotelial. Arterele sunt descrise cu trei tunici, astfel că nu au aceeași organizare structurală. Sursa: „Sistemul limfatic și imun”, secțiunea Vasele limfatice / „Sistemul cardiovascular”, secțiunea Vasele sanguine."
+        },
+        {
+          "letter": "B",
+          "text": "permit absorbția intestinală a lipidelor",
+          "why": "Capilarele limfatice intestinale preiau lipidele absorbite, transportate sub formă de chilomicroni. Această funcție explică aspectul bogat în lipide al limfei intestinale. Sursa: „Sistemul limfatic și imun”, secțiunea Limfa / „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "C",
+          "text": "prezintă un perete subțire, alcătuit din endoteliu",
+          "why": "Peretele capilarelor limfatice este descris ca un strat subțire de celule endoteliale. Sursa: „Sistemul limfatic și imun”, secțiunea Vasele limfatice."
+        },
+        {
+          "letter": "D",
+          "text": "sunt situate la nivelul țesuturilor",
+          "why": "Capilarele limfatice încep în țesuturi și colectează lichidul interstițial care formează limfa. Sursa: „Sistemul limfatic și imun”, secțiunea Vasele limfatice."
+        },
+        {
+          "letter": "E",
+          "text": "din regiunea supradiafragmatică dreaptă, conțin cantități crescute de lipide absorbite din intestinul subțire",
+          "why": "Lipidele intestinale sunt colectate de limfaticele intestinului și ajung pe calea ductului toracic. Limfa regiunii superioare drepte este drenată separat prin ductul limfatic drept; varianta îi atribuie încărcarea lipidică intestinală. Sursa: „Sistemul limfatic și imun”, secțiunea Vasele limfatice / „Sistemul limfatic și imun”, secțiunea Limfa."
+        }
+      ],
+      "sourcePages": [
+        254
+      ],
+      "topicId": "sistemul-limfatic",
+      "topicLabel": "Capilarele limfatice",
+      "lessonUrl": "sistemul_limfatic_si_imun.html#sistemul-limfatic",
+      "id": "asoc-153"
+    },
+    {
+      "number": 154,
+      "sourceNumber": 154,
+      "sourceChapter": "XIII",
+      "prompt": "Splina:",
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este vascularizată arterial de o ramură din trunchiul celiac",
+          "why": "Artera splenică se desprinde din trunchiul celiac, așa cum arată schema principalelor artere și descrierea ramurilor abdominale. Sursa: „Sistemul cardiovascular”, secțiunea Tipuri de circulație sanguină / „Sistemul cardiovascular”, figura 15.9."
+        },
+        {
+          "letter": "B",
+          "text": "intervine în metabolismul fierului",
+          "why": "Splina îndepărtează eritrocite îmbătrânite și recuperează fierul din hemoglobină, participând astfel la metabolismul fierului. Sursa: „Sistemul limfatic și imun”, secțiunea Splina / „Sângele”, secțiunea Distrugerea globulelor roșii."
+        },
+        {
+          "letter": "C",
+          "text": "participă la răspunsul imun prin limfocitele B și T pe care le conține",
+          "why": "Manualul descrie limfocitele B și T din splină și participarea lor la răspunsurile imune. Sursa: „Sistemul limfatic și imun”, secțiunea Splina."
+        },
+        {
+          "letter": "D",
+          "text": "este situată subdiafragmatic, la nivelul hipocondrului stâng",
+          "why": "Splina este situată în partea stângă superioară a abdomenului, sub diafragmă, corespunzător hipocondrului stâng. Sursa: „Sistemul limfatic și imun”, secțiunea Splina."
+        },
+        {
+          "letter": "E",
+          "text": "realizează raporturi anatomice cu stomacul, rinichiul drept și intestinul gros",
+          "why": "Raporturile descrise sunt cu stomacul, rinichiul stâng și intestinul gros. Varianta înlocuiește rinichiul stâng cu cel drept. Sursa: „Sistemul limfatic și imun”, secțiunea Splina."
+        }
+      ],
+      "sourcePages": [
+        254
+      ],
+      "topicId": "splina",
+      "topicLabel": "Splina",
+      "lessonUrl": "sistemul_limfatic_si_imun.html#splina",
+      "id": "asoc-154"
+    },
+    {
+      "number": 155,
+      "sourceNumber": 155,
+      "sourceChapter": "XIII",
+      "prompt": "Prima ramură care se desprinde din arcul aortic este:",
+      "correct": [
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "artera carotidă comună stângă",
+          "why": "Figura arcului aortic arată carotida comună stângă după trunchiul brahiocefalic. Nu este prima ramură. Sursa: „Sistemul cardiovascular”, figura 15.9."
+        },
+        {
+          "letter": "B",
+          "text": "trunchiul brahiocefalic drept",
+          "why": "Baremul punctează numai D, iar figura numește prima ramură „trunchiul brahiocefalic”. Totuși, vasul desenat se îndreaptă spre partea dreaptă; sursa nu demonstrează că adăugarea adjectivului „drept” ar desemna obligatoriu alt vas. Păstrăm excluderea din barem și semnalăm ambiguitatea de denumire. Sursa: „Sistemul cardiovascular”, figura 15.9."
+        },
+        {
+          "letter": "C",
+          "text": "artera carotidă comună dreaptă",
+          "why": "Carotida comună dreaptă se desprinde din trunchiul brahiocefalic în schemă. Nu este reprezentată ca prima ramură directă a arcului aortic. Sursa: „Sistemul cardiovascular”, figura 15.9."
+        },
+        {
+          "letter": "D",
+          "text": "trunchiul brahiocefalic",
+          "why": "Trunchiul brahiocefalic este prima ramură a arcului aortic în figura manualului și este denumirea punctată de barem. Sursa: „Sistemul cardiovascular”, figura 15.9."
+        },
+        {
+          "letter": "E",
+          "text": "artera subclaviculară stângă",
+          "why": "Subclaviculara stângă apare după trunchiul brahiocefalic și carotida comună stângă, deci nu este prima ramură a arcului. Sursa: „Sistemul cardiovascular”, figura 15.9."
+        }
+      ],
+      "sourcePages": [
+        254,
+        255
+      ],
+      "topicId": "tipuri-de-circulatie-sanguina",
+      "topicLabel": "Ramurile arcului aortic",
+      "lessonUrl": "sistemul_cardiovascular.html#tipuri-de-circulatie-sanguina",
+      "id": "asoc-155"
+    },
+    {
+      "number": 156,
+      "sourceNumber": 156,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la structura osului:",
+      "correct": [
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "la nivelul lamelelor osoase se găsesc lacune care conțin osteocite, osteoblaste și osteoclaste",
+          "why": "Lacunele lamelelor osoase adăpostesc osteocite. Osteoblastele și osteoclastele au funcții distincte în formarea și resorbția osului; manualul nu le enumeră ca locatari obișnuiți ai acelorași lacune. Sursa: „Oasele și articulațiile”, secțiunea Structura oaselor lungi / „Oasele și articulațiile”, secțiunea Formarea osului."
+        },
+        {
+          "letter": "B",
+          "text": "în spațiile situate între traveele din structura osului compact se găsesc lamele interstițiale",
+          "why": "Trabeculele caracterizează osul spongios, iar spațiile lor conțin măduvă. Lamelele interstițiale sunt situate între osteonii osului compact, nu între „traveele osului compact”. Sursa: „Oasele și articulațiile”, secțiunea Structura oaselor lungi."
+        },
+        {
+          "letter": "C",
+          "text": "canalele centrale leagă canalele perforante ale osteonului între ele",
+          "why": "Manualul formulează relația astfel: canalele perforante conectează canalele centrale. Varianta inversează rolul de legătură atribuit celor două tipuri de canale. Sursa: „Oasele și articulațiile”, secțiunea Structura oaselor lungi."
+        },
+        {
+          "letter": "D",
+          "text": "spațiile situate între trabeculele osului spongios conțin măduvă roșie formatoare de elemente figurate sanguine",
+          "why": "Spațiile dintre trabeculele osului spongios conțin măduvă roșie, căreia manualul îi atribuie formarea elementelor figurate sanguine. Sursa: „Oasele și articulațiile”, secțiunea Structura oaselor lungi / „Oasele și articulațiile”, secțiunea Țesutul osos."
+        },
+        {
+          "letter": "E",
+          "text": "la nivelul canalului central al osteonului există nervi și capilare sanguine",
+          "why": "Canalul central al osteonului conține capilare sanguine și fibre nervoase, potrivit descrierii osului compact. Sursa: „Oasele și articulațiile”, secțiunea Structura oaselor lungi."
+        }
+      ],
+      "sourcePages": [
+        255
+      ],
+      "topicId": "osul",
+      "topicLabel": "Structura țesutului osos",
+      "lessonUrl": "oasele_si_articulatiile.html#osul",
+      "id": "asoc-156"
+    },
+    {
+      "number": 157,
+      "sourceNumber": 157,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "correct": [
+        "A",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "la nivelul gambei pot fi observate venele tibiale și vena peronieră",
+          "why": "Schema principalelor vene etichetează venele tibiale și vena peronieră în regiunea gambei. Sursa: „Sistemul cardiovascular”, figura 15.10."
+        },
+        {
+          "letter": "B",
+          "text": "venele brahiocefalice dreaptă și stângă corespund trunchiurilor arteriale brahiocefalice omonime",
+          "why": "Schema venoasă are două vene brahiocefalice, dreaptă și stângă, dar schema arterială prezintă un singur trunchi brahiocefalic. Nu există corespondența bilaterală propusă. Sursa: „Sistemul cardiovascular”, figura 15.9 / „Sistemul cardiovascular”, figura 15.10."
+        },
+        {
+          "letter": "C",
+          "text": "prin bifurcație, vena cavă inferioară dă naștere venelor iliace comune",
+          "why": "Sensul circulației venoase este din venele iliace comune spre vena cavă inferioară, care primește sângele lor. „Dă naștere prin bifurcație” inversează sensul de constituire și de curgere descris. Sursa: „Sistemul cardiovascular”, secțiunea Tipuri de circulație sanguină / „Sistemul cardiovascular”, figura 15.10."
+        },
+        {
+          "letter": "D",
+          "text": "în timpul măsurării presiunii arteriale, zgomotele lui Korotkoff pot fi auzite atunci când presiunea din sfigmomanometru este superioară presiunii sistolice",
+          "why": "Zgomotele apar când presiunea manșetei scade suficient pentru ca sângele să înceapă să treacă prin arteră. Cât timp presiunea depășește valoarea sistolică și artera rămâne comprimată, nu este faza de auscultare descrisă. Sursa: „Sistemul cardiovascular”, secțiunea Presiunea arterială și pulsul."
+        },
+        {
+          "letter": "E",
+          "text": "artera iliacă externă transportă sânge arterial spre membrul inferior",
+          "why": "Artera iliacă externă continuă traseul arterial spre membrul inferior, conform textului și schemei arteriale. Sursa: „Sistemul cardiovascular”, secțiunea Tipuri de circulație sanguină / „Sistemul cardiovascular”, figura 15.9."
+        }
+      ],
+      "sourcePages": [
+        255
+      ],
+      "topicId": "tipuri-de-circulatie-sanguina",
+      "topicLabel": "Vasele mari și presiunea arterială",
+      "lessonUrl": "sistemul_cardiovascular.html#tipuri-de-circulatie-sanguina",
+      "id": "asoc-157"
+    },
+    {
+      "number": 158,
+      "sourceNumber": 158,
+      "sourceChapter": "XIII",
+      "prompt": "Sistemul nervos vegetativ simpatic:",
+      "correct": [
+        "A",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "pregătește organismul pentru situații stresante",
+          "why": "Simpaticul este asociat cu adaptarea organismului la stres și la situații de criză. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom / „Organizarea sistemului nervos”, secțiunea Tabelul 11.5."
+        },
+        {
+          "letter": "B",
+          "text": "stimulează puternic secreția salivară a glandelor parotide, sublinguale și submandibulare",
+          "why": "Figura comparativă atribuie stimularea puternică a secreției salivare parasimpaticului. Pentru simpatic este reprezentată o secreție salivară slabă. Sursa: „Organizarea sistemului nervos”, figura 11.10."
+        },
+        {
+          "letter": "C",
+          "text": "inervează mușchiul constrictor al pupilei, diminuând diametrul acesteia",
+          "why": "Simpaticul dilată pupila, în timp ce constricția pupilei este reprezentată pentru parasimpatic. Varianta atribuie simpaticului efectul opus. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom / „Organizarea sistemului nervos”, figura 11.10."
+        },
+        {
+          "letter": "D",
+          "text": "prin fibrele provenite din ganglionul celiac relaxează vezica urinară",
+          "why": "Figura arată calea din ganglionul celiac către viscerele abdominale superioare, iar conexiunea simpatică a vezicii urmează alt traseu inferior. Efectul de relaxare a vezicii nu validează originea celiacă propusă. Sursa: „Organizarea sistemului nervos”, figura 11.10."
+        },
+        {
+          "letter": "E",
+          "text": "accelerează degradarea lipidelor la nivelul țesutului adipos",
+          "why": "Manualul include impulsurile simpatice printre stimulii care cresc degradarea lipidelor și eliberarea acizilor grași din țesutul adipos. Sursa: „Metabolism și nutriție”, secțiunea Anabolismul lipidelor."
+        }
+      ],
+      "sourcePages": [
+        255
+      ],
+      "topicId": "sistem-nervos-autonom",
+      "topicLabel": "Sistemul simpatic",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-autonom",
+      "id": "asoc-158"
+    },
+    {
+      "number": 159,
+      "sourceNumber": 159,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la acțiunile hormonilor realizate la nivelul rinichiului:",
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "hormonul antidiuretic - stimulează reabsorbția apei",
+          "why": "ADH crește permeabilitatea tubilor pentru apă, permițând reabsorbția unei cantități mai mari și reducând volumul urinar. Sursa: „Sistemul urinar”, secțiunea Reglarea funcției renale."
+        },
+        {
+          "letter": "B",
+          "text": "parathormonul determină activarea vitaminei D",
+          "why": "Manualul atribuie parathormonului stimularea activării vitaminei D la nivel renal. Sursa: „Sistemul endocrin”, secțiunea Glandele paratiroide."
+        },
+        {
+          "letter": "C",
+          "text": "calcitonina diminuă calcemia",
+          "why": "Calcitonina scade calcemia, dar mecanismul descris aici este depunerea calciului în os. Enunțul nu identifică o acțiune renală, categorie cerută de întrebare, astfel că baremul nu îl selectează. Sursa: „Sistemul endocrin”, secțiunea Tabelul 13.3 / „Sistemul endocrin”, secțiunea Glandele paratiroide."
+        },
+        {
+          "letter": "D",
+          "text": "aldosteronul - stimulează reabsorbția Na⁺ și secreția K⁺",
+          "why": "La nivel renal, aldosteronul favorizează reabsorbția sodiului și secreția potasiului; apa însoțește reabsorbția sodiului. Sursa: „Sistemul urinar”, secțiunea Reglarea funcției renale."
+        },
+        {
+          "letter": "E",
+          "text": "parathormonul scade reabsorbția de calciu",
+          "why": "Parathormonul contribuie la creșterea calcemiei prin efectele asupra osului, intestinului și tubilor renali. Varianta îi atribuie scăderea reabsorbției renale de calciu, sens opus conservării calciului descrise în acest mecanism. Sursa: „Sistemul endocrin”, secțiunea Glandele paratiroide."
+        }
+      ],
+      "sourcePages": [
+        255
+      ],
+      "topicId": "hormoni",
+      "topicLabel": "Controlul hormonal renal",
+      "lessonUrl": "sistemul_renal_complet.html#hormoni",
+      "id": "asoc-159"
+    },
+    {
+      "number": 160,
+      "sourceNumber": 160,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "majoritatea hormonilor peptidici acționează ca mesageri secundari",
+          "why": "Majoritatea hormonilor peptidici sunt mesageri primari care se leagă de receptori membranari. AMP ciclic produs în celulă este exemplul de mesager secundar. Sursa: „Sistemul endocrin”, secțiunea Descrierea generală a hormonilor."
+        },
+        {
+          "letter": "B",
+          "text": "FSH este o glicoproteină",
+          "why": "Manualul enumeră FSH între hormonii glicoproteici, alături de LH și TSH. Sursa: „Sistemul endocrin”, secțiunea Descrierea generală a hormonilor."
+        },
+        {
+          "letter": "C",
+          "text": "formarea cAMP, ca urmare a legării unor tipuri de hormoni de receptorii situați pe membrana celulelor țintă, poate determina un răspuns de tip contracție musculară",
+          "why": "Schema mecanismului prin AMP ciclic include contracția musculară printre răspunsurile celulare posibile după legarea hormonului de receptorul membranar. Sursa: „Sistemul endocrin”, secțiunea Descrierea generală a hormonilor / „Sistemul endocrin”, figura 13.1."
+        },
+        {
+          "letter": "D",
+          "text": "mecanismul paracrin reprezintă acțiunea hormonilor asupra celulelor aflate în vecinătatea celulei care i-a secretat",
+          "why": "Acțiunea paracrină vizează celule aflate în vecinătatea celulei secretante, conform definiției din manual. Sursa: „Sistemul endocrin”, secțiunea Descrierea generală a hormonilor."
+        },
+        {
+          "letter": "E",
+          "text": "hormonii steroizi sunt derivați din aminoacizi",
+          "why": "Hormonii steroizi sunt derivați din colesterol. Derivarea din aminoacizi nu este caracteristica acestei clase hormonale. Sursa: „Sistemul endocrin”, secțiunea Descrierea generală a hormonilor."
+        }
+      ],
+      "sourcePages": [
+        255
+      ],
+      "topicId": "descrierea-generala-a-hormonilor",
+      "topicLabel": "Semnalizarea hormonală",
+      "lessonUrl": "sistemul_endocrin.html#descrierea-generala-a-hormonilor",
+      "id": "asoc-160"
+    },
+    {
+      "number": 161,
+      "sourceNumber": 161,
+      "sourceChapter": "XIII",
+      "prompt": "Legat de transportul gazelor și mecanismul lor de schimb în corpul uman, sunt adevărate următoarele:",
+      "correct": [
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "la nivel alveolar, CO₂ difuzează în sânge",
+          "why": "La plămâni, dioxidul de carbon trece din sânge în aerul alveolar pentru a fi eliminat. Varianta inversează sensul schimbului. Sursa: „Sistemul respirator”, secțiunea Schimbul de gaze."
+        },
+        {
+          "letter": "B",
+          "text": "la nivel celular, O₂ este preluat în sistemul circulator",
+          "why": "La nivelul țesuturilor, oxigenul părăsește sângele și difuzează către celule. Preluarea oxigenului în sânge are loc la plămâni, nu la celulele consumatoare. Sursa: „Sistemul respirator”, secțiunea Schimbul de gaze."
+        },
+        {
+          "letter": "C",
+          "text": "O₂ este transportat sub formă legată de hemoglobină",
+          "why": "Cea mai mare parte a oxigenului sanguin este legată de hemoglobină sub formă de oxihemoglobină; manualul indică aproximativ 98%. Sursa: „Sistemul respirator”, secțiunea Schimbul de gaze."
+        },
+        {
+          "letter": "D",
+          "text": "formarea Hb - CO₂ are loc în aerul alveolar",
+          "why": "Carbaminohemoglobina se formează prin legarea dioxidului de carbon de hemoglobina din globulele roșii. Hemoglobina nu se află în aerul alveolar, astfel că localizarea propusă este greșită. Sursa: „Sistemul respirator”, secțiunea Schimbul de gaze."
+        },
+        {
+          "letter": "E",
+          "text": "transferul de clorură în capilarele periferice este necesar pentru transportul CO₂",
+          "why": "La țesuturi, bicarbonatul format în eritrocite trece în plasmă, iar ionii de clor intră în eritrocite. Acest schimb de clorură însoțește transportul dioxidului de carbon sub formă de bicarbonat. Sursa: „Sistemul respirator”, secțiunea Schimbul de gaze."
+        }
+      ],
+      "sourcePages": [
+        255
+      ],
+      "topicId": "schimbul-de-gaze",
+      "topicLabel": "Transportul gazelor respiratorii",
+      "lessonUrl": "sistemul_respirator.html#schimbul-de-gaze",
+      "id": "asoc-161"
+    },
+    {
+      "number": 162,
+      "sourceNumber": 162,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre următoarele afirmații sunt adevărate?",
+      "correct": [
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "mușchiul scheletic se află sub control predominant automat",
+          "why": "Mușchiul scheletic este descris ca fiind sub control voluntar. Controlul automat caracterizează în principal musculatura netedă și cardiacă din comparația manualului. Sursa: „Țesutul muscular”, secțiunea Țesutul muscular / „Țesutul muscular”, secțiunea Structura celulei musculare."
+        },
+        {
+          "letter": "B",
+          "text": "miofibrilele sunt dispuse paralel unele față de altele și perpendicular pe axul celulei musculare striate",
+          "why": "Figura fibrei musculare arată miofibrilele dispuse longitudinal în celulă, paralele cu axul ei. Varianta le orientează greșit perpendicular pe acest ax. Sursa: „Țesutul muscular”, secțiunea Structura celulei musculare / „Țesutul muscular”, figura 8.1."
+        },
+        {
+          "letter": "C",
+          "text": "banda A conține exclusiv filamente groase",
+          "why": "Banda A cuprinde filamente groase și porțiuni în care acestea se suprapun cu filamentele subțiri. Numai zona H are exclusiv filamente groase. Sursa: „Țesutul muscular”, secțiunea Structura celulei musculare."
+        },
+        {
+          "letter": "D",
+          "text": "banda I conține exclusiv filamente subțiri",
+          "why": "Banda I conține exclusiv filamente subțiri de actină, fiind banda clară a miofibrilei. Sursa: „Țesutul muscular”, secțiunea Structura celulei musculare / „Țesutul muscular”, figura 8.1."
+        },
+        {
+          "letter": "E",
+          "text": "aspectul striat al miofibrilelor din mușchii striați este dat de repetiția benzilor A și I",
+          "why": "Alternanța repetată a benzilor A întunecate și I clare produce aspectul striat descris pentru miofibrile. Sursa: „Țesutul muscular”, secțiunea Structura celulei musculare."
+        }
+      ],
+      "sourcePages": [
+        255,
+        256
+      ],
+      "topicId": "muschiul-striat",
+      "topicLabel": "Organizarea mușchiului striat",
+      "lessonUrl": "tesutul_muscular.html#muschiul-striat",
+      "id": "asoc-162"
+    },
+    {
+      "number": 163,
+      "sourceNumber": 163,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "correct": [
+        "B",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "cea mai importantă enzimă proteolitică din stomac este factorul intrinsec",
+          "why": "Factorul intrinsec este necesar absorbției vitaminei B₁₂; enzima proteolitică gastrică prezentată ca principală este pepsina. Varianta confundă două componente ale sucului gastric. Sursa: „Sistemul digestiv”, secțiunea Stomacul."
+        },
+        {
+          "letter": "B",
+          "text": "digestia laptelui la sugari este ajutată de labferment, enzimă proteolitică produsă la nivelul stomacului",
+          "why": "Manualul descrie labfermentul ca enzimă gastrică a sugarilor, care contribuie la digestia laptelui. Sursa: „Sistemul digestiv”, secțiunea Stomacul."
+        },
+        {
+          "letter": "C",
+          "text": "pepsinogenul formează un strat vâscos, alcalin, ce protejează peretele stomacului",
+          "why": "Stratul protector vâscos și alcalin este format de mucus. Pepsinogenul este precursorul pepsinei, nu componenta care formează acest înveliș. Sursa: „Sistemul digestiv”, secțiunea Stomacul."
+        },
+        {
+          "letter": "D",
+          "text": "sistemul nervos parasimpatic și secreția celulelor enteroendocrine intervin în reglarea secreției de suc gastric",
+          "why": "Secreția gastrică este stimulată prin activitatea parasimpatică și prin gastrina produsă de celulele enteroendocrine ale stomacului. Sursa: „Sistemul digestiv”, secțiunea Stomacul."
+        },
+        {
+          "letter": "E",
+          "text": "cantități mici de apă, glucoză, ioni și alcool se pot absorbi la nivelul mucoasei gastrice",
+          "why": "Manualul precizează că în stomac se absorb cantități mici de apă, glucoză, ioni și alcool, chiar dacă cea mai mare parte a absorbției digestive se realizează ulterior. Sursa: „Sistemul digestiv”, secțiunea Stomacul."
+        }
+      ],
+      "sourcePages": [
+        256
+      ],
+      "topicId": "stomacul",
+      "topicLabel": "Secreția și digestia gastrică",
+      "lessonUrl": "sistemul_digestiv.html#stomacul",
+      "id": "asoc-163"
+    },
+    {
+      "number": 164,
+      "sourceNumber": 164,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre afirmațiile de mai jos, referitoare la fiziologia nefronului, sunt adevărate?",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "reabsorbția apei sub influența ADH-ului se realizează la nivelul tubilor contorți distali",
+          "why": "Tabelul nefronului atribuie tubilor distali reabsorbția apei prin osmoză sub influența ADH; hormonul crește permeabilitatea pentru apă. Sursa: „Sistemul urinar”, secțiunea Tabelul 20.1 / „Sistemul urinar”, secțiunea Reglarea funcției renale."
+        },
+        {
+          "letter": "B",
+          "text": "filtrarea plasmei sanguine se realizează la nivelul ramurii descendente a ansei Henle",
+          "why": "Filtrarea plasmei are loc la nivelul glomerulului și al capsulei glomerulare. Ramura descendentă a ansei Henle este o porțiune tubulară ulterioară filtrării. Sursa: „Sistemul urinar”, secțiunea Tabelul 20.1."
+        },
+        {
+          "letter": "C",
+          "text": "la nivelul tubilor proximali se realizează reabsorbția glucozei",
+          "why": "Tubii proximali reabsorb activ glucoza din filtrat, conform tabelului și descrierii reabsorbției. Sursa: „Sistemul urinar”, secțiunea Tabelul 20.1 / „Sistemul urinar”, secțiunea Reabsorbția."
+        },
+        {
+          "letter": "D",
+          "text": "filtratul glomerular este reprezentat de fluidul care trece în interiorul capsulei glomerulare",
+          "why": "Filtratul glomerular este fluidul rezultat prin trecerea apei și a substanțelor filtrabile din sângele glomerular în interiorul capsulei glomerulare. Sursa: „Sistemul urinar”, secțiunea Filtrarea."
+        },
+        {
+          "letter": "E",
+          "text": "reabsorbția ionilor de Cl⁻ prin difuziune facilitată se realizează la nivelul ramurii ascendente a ansei Henle",
+          "why": "Tabelul atribuie difuziunea facilitată a clorului tubilor proximali. Pentru ramura ascendentă indică reabsorbția clorurii de sodiu prin transport activ, deci varianta schimbă atât segmentul, cât și mecanismul prezentat. Sursa: „Sistemul urinar”, secțiunea Tabelul 20.1."
+        }
+      ],
+      "sourcePages": [
+        256
+      ],
+      "topicId": "nefron",
+      "topicLabel": "Procesele nefronului",
+      "lessonUrl": "sistemul_renal_complet.html#nefron",
+      "id": "asoc-164"
+    },
+    {
+      "number": 165,
+      "sourceNumber": 165,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile adevărate legate de hormonii sintetizați de sistemul reproducător masculin:",
+      "correct": [
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "GnRH stimulează maturarea tubilor seminiferi și producerea spermei",
+          "why": "GnRH este sintetizat în hipotalamus și stimulează eliberarea FSH și LH. Maturarea tubilor seminiferi și producerea spermei sunt efectele atribuite FSH; varianta nu respectă nici originea cerută, nici hormonul cu acțiunea directă din tabel. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "B",
+          "text": "LH stimulează maturarea celulelor interstițiale",
+          "why": "LH stimulează maturarea celulelor interstițiale, însă este sintetizat în hipofiză. Afirmația despre efect este adevărată, dar hormonul nu este produs de sistemul reproducător masculin, condiție impusă de cerință. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "C",
+          "text": "testosteronul inhibă producerea de LH",
+          "why": "Testosteronul este produs în testicule și inhibă producerea LH. Atât originea, cât și efectul din variantă corespund tabelului. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "D",
+          "text": "FSH stimulează producerea spermatozoizilor",
+          "why": "FSH stimulează spermatogeneza, dar este un hormon al hipofizei anterioare. Nu se selectează aici deoarece cerința restrânge răspunsurile la hormonii sintetizați de sistemul reproducător masculin. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "E",
+          "text": "GnRH menține caracterele sexuale masculine",
+          "why": "Menținerea caracterelor sexuale masculine este atribuită testosteronului. GnRH are origine hipotalamică și stimulează gonadotropinele hipofizare, nu este hormonul testicular descris de cerință. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        }
+      ],
+      "sourcePages": [
+        256
+      ],
+      "topicId": "hormoni",
+      "topicLabel": "Hormonii sistemului reproducător masculin",
+      "lessonUrl": "sistemul_reproducator_masculin.html#hormoni",
+      "id": "asoc-165"
+    },
+    {
+      "number": 166,
+      "sourceNumber": 166,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre afirmațiile următoare, legate de hormonii sintetizați de sistemul reproducător feminin, sunt corecte?",
+      "correct": [
+        "B"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "LH stimulează creșterea foliculului ovarian",
+          "why": "Creșterea foliculului ovarian este atribuită FSH în tabel, iar LH are origine hipofizară. Varianta nu corespunde nici asocierii directe din tabel, nici originii în sistemul reproducător cerute. Sursa: „Sistemul reproducător feminin”, secțiunea Hormonii și dezvoltarea feminină."
+        },
+        {
+          "letter": "B",
+          "text": "estrogenii îngroașă mucoasa uterului",
+          "why": "Estrogenii sunt produși în ovar și stimulează îngroșarea mucoasei uterine. Ambele aspecte răspund cerinței. Sursa: „Sistemul reproducător feminin”, secțiunea Hormonii și dezvoltarea feminină."
+        },
+        {
+          "letter": "C",
+          "text": "prolactina stimulează producția de FSH și LH",
+          "why": "Prolactina este produsă de hipofiză și stimulează secreția laptelui. Stimularea FSH și LH este rolul GnRH hipotalamic, nu al prolactinei. Sursa: „Sistemul reproducător feminin”, secțiunea Hormonii și dezvoltarea feminină."
+        },
+        {
+          "letter": "D",
+          "text": "oxitocina stimulează contracțiile uterine în timpul nașterii",
+          "why": "Oxitocina stimulează contracțiile uterine la naștere, dar locul sintezei indicat în tabel este hipotalamusul. Afirmația funcțională este adevărată și totuși nu îndeplinește condiția originii în sistemul reproducător feminin. Sursa: „Sistemul reproducător feminin”, secțiunea Hormonii și dezvoltarea feminină."
+        },
+        {
+          "letter": "E",
+          "text": "LH stimulează producția de progesteron și ovulația",
+          "why": "LH stimulează producția de progesteron și ovulația, însă este produs în hipofiză. Excluderea privește originea hormonală cerută, nu falsitatea efectelor enumerate. Sursa: „Sistemul reproducător feminin”, secțiunea Hormonii și dezvoltarea feminină."
+        }
+      ],
+      "sourcePages": [
+        256
+      ],
+      "topicId": "fiziologie",
+      "topicLabel": "Hormonii sistemului reproducător feminin",
+      "lessonUrl": "sistemul_reproducator_feminin.html#fiziologie",
+      "id": "asoc-166"
+    },
+    {
+      "number": 167,
+      "sourceNumber": 167,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre următoarele afirmații legate de ciclul cardiac sunt adevărate?",
+      "correct": [
+        "A",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "volumul bătaie este definit prin cantitatea de sânge care este pompată de un ventricul în timpul fiecărei sistole",
+          "why": "Volumul bătaie este cantitatea de sânge ejectată de un ventricul la fiecare contracție sistolică. Sursa: „Sistemul cardiovascular”, secțiunea Ciclul cardiac."
+        },
+        {
+          "letter": "B",
+          "text": "un ciclu cardiac are durata de minim 5 secunde",
+          "why": "Manualul descrie un ciclu cardiac cu durată mai mică de o secundă la aproximativ 70 de bătăi pe minut. Un minim de cinci secunde nu corespunde acestei descrieri. Sursa: „Sistemul cardiovascular”, secțiunea Ciclul cardiac."
+        },
+        {
+          "letter": "C",
+          "text": "depolarizarea atrială este redată pe electrocardiogramă prin unda P",
+          "why": "Unda P a electrocardiogramei reprezintă depolarizarea atrială, conform prezentării activității electrice cardiace. Sursa: „Sistemul cardiovascular”, secțiunea Mușchiul cardiac."
+        },
+        {
+          "letter": "D",
+          "text": "impulsurile de la nodul sinoatrial sunt transmise direct fibrelor rețelei Purkinje",
+          "why": "Impulsul parcurge sistemul de conducere prin nodul atrioventricular și fasciculul atrioventricular înainte de rețeaua Purkinje. Nu este transmis direct de la nodul sinoatrial la această rețea. Sursa: „Sistemul cardiovascular”, secțiunea Mușchiul cardiac."
+        },
+        {
+          "letter": "E",
+          "text": "fibrilația este caracterizată printr-un ritm rapid și regulat al bătăilor inimii",
+          "why": "Fibrilația este descrisă prin activitate rapidă și neregulată. Cuvântul „regulat” contrazice caracteristica din manual. Sursa: „Sistemul cardiovascular”, secțiunea Mușchiul cardiac."
+        }
+      ],
+      "sourcePages": [
+        256
+      ],
+      "topicId": "ciclul-cardiac",
+      "topicLabel": "Ciclul cardiac și electrocardiograma",
+      "lessonUrl": "sistemul_cardiovascular.html#ciclul-cardiac",
+      "id": "asoc-167"
+    },
+    {
+      "number": 168,
+      "sourceNumber": 168,
+      "sourceChapter": "XIII",
+      "prompt": "Legat de sistemul limfatic, care dintre următoarele afirmații sunt adevărate?",
+      "correct": [
+        "A",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "plăcile lui Peyer sunt aglomerări de țesut limfoid în peretele tractului intestinal",
+          "why": "Plăcile Peyer sunt aglomerări de țesut limfoid din peretele intestinal, în special din ileon, conform manualului. Sursa: „Sistemul limfatic și imun”, secțiunea Nodulii limfatici."
+        },
+        {
+          "letter": "B",
+          "text": "sistemul limfatic prezintă curgere bidirecțională",
+          "why": "Curgerea limfei este unidirecțională, către revenirea în circulația venoasă. Varianta afirmă greșit două sensuri de curgere. Sursa: „Sistemul limfatic și imun”, secțiunea Vasele limfatice."
+        },
+        {
+          "letter": "C",
+          "text": "timusul controlează dezvoltarea și maturarea limfocitelor T",
+          "why": "Timusul este organul în care se desfășoară dezvoltarea și maturarea limfocitelor T. Sursa: „Sistemul limfatic și imun”, secțiunea Timusul."
+        },
+        {
+          "letter": "D",
+          "text": "nodulii limfatici transportă limfa de la țesuturile periferice la venele sistemului cardiovascular",
+          "why": "Transportul limfei de la țesuturi la vene este funcția vaselor limfatice. Nodulii aflați pe traseu filtrează și monitorizează limfa; varianta confundă structurile și rolurile lor. Sursa: „Sistemul limfatic și imun”, secțiunea Nodulii limfatici."
+        },
+        {
+          "letter": "E",
+          "text": "la nivelul splinei este monitorizat sângele circulant",
+          "why": "Splina monitorizează sângele circulant și participă la îndepărtarea celulelor îmbătrânite și la răspunsurile imune. Sursa: „Sistemul limfatic și imun”, secțiunea Nodulii limfatici / „Sistemul limfatic și imun”, secțiunea Splina."
+        }
+      ],
+      "sourcePages": [
+        256,
+        257
+      ],
+      "topicId": "sistemul-limfatic",
+      "topicLabel": "Sistemul limfatic",
+      "lessonUrl": "sistemul_limfatic_si_imun.html#sistemul-limfatic",
+      "id": "asoc-168"
+    },
+    {
+      "number": 169,
+      "sourceNumber": 169,
+      "sourceChapter": "XIII",
+      "prompt": "Insulina:",
+      "correct": [
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este un hormon steroid",
+          "why": "Insulina este un hormon proteic non-steroidian, nu un hormon derivat din colesterol. Sursa: „Sistemul endocrin”, secțiunea Descrierea generală a hormonilor."
+        },
+        {
+          "letter": "B",
+          "text": "este sintetizată de celulele alfa și beta din pancreas",
+          "why": "Celulele beta pancreatice produc insulină, iar celulele alfa produc glucagon. Varianta atribuie insulina ambelor tipuri de celule. Sursa: „Sistemul endocrin”, secțiunea Pancreasul."
+        },
+        {
+          "letter": "C",
+          "text": "este produsă ca răspuns al pancreasului la ingestia de alimente",
+          "why": "După ingestia de alimente și creșterea disponibilității glucozei, pancreasul eliberează insulină, hormonul caracteristic stării postprandiale descrise. Sursa: „Sistemul endocrin”, secțiunea Pancreasul / „Metabolism și nutriție”, secțiunea Stări metabolice."
+        },
+        {
+          "letter": "D",
+          "text": "permite stocarea glucozei sub formă de glicogen hepatic",
+          "why": "Insulina favorizează utilizarea și depozitarea glucozei, inclusiv formarea glicogenului hepatic după masă. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor / „Metabolism și nutriție”, secțiunea Stări metabolice."
+        },
+        {
+          "letter": "E",
+          "text": "inhibă lipazele",
+          "why": "Manualul afirmă explicit că insulina previne degradarea lipidelor prin inhibarea lipazelor. Sursa: „Metabolism și nutriție”, secțiunea Anabolismul lipidelor."
+        }
+      ],
+      "sourcePages": [
+        257
+      ],
+      "topicId": "pancreasul",
+      "topicLabel": "Insulina",
+      "lessonUrl": "sistemul_endocrin.html#pancreasul",
+      "id": "asoc-169"
+    },
+    {
+      "number": 170,
+      "sourceNumber": 170,
+      "sourceChapter": "XIII",
+      "prompt": "Temperatura corpului:",
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este reglată în principal de hipotalamus",
+          "why": "Centrul termoreglator hipotalamic compară temperatura cu valoarea de referință și comandă conservarea sau pierderea căldurii. Sursa: „Metabolism și nutriție”, secțiunea Reglarea temperaturii corporale."
+        },
+        {
+          "letter": "B",
+          "text": "poate fi scăzută prin evaporarea din timpul transpirației",
+          "why": "Evaporarea apei în timpul transpirației este unul dintre mecanismele de pierdere a căldurii enumerate de manual. Sursa: „Metabolism și nutriție”, secțiunea Reglarea temperaturii corporale."
+        },
+        {
+          "letter": "C",
+          "text": "este crescută prin procesul de convecție",
+          "why": "În mecanismul descris de manual, convecția îndepărtează aerul încălzit la suprafața corpului și îl înlocuiește cu alt aer, favorizând pierderea căldurii. Nu este prezentată ca mecanism de creștere a temperaturii corporale. Sursa: „Metabolism și nutriție”, secțiunea Reglarea temperaturii corporale."
+        },
+        {
+          "letter": "D",
+          "text": "este reglată și cu ajutorul calcitoninei",
+          "why": "Calcitonina reglează calcemia prin efectul asupra osului. Hormonul tiroidian asociat în manual cu metabolismul și producerea de căldură este tiroxina, nu calcitonina. Sursa: „Sistemul endocrin”, secțiunea Tabelul 13.3 / „Sistemul endocrin”, secțiunea Glanda tiroidă."
+        },
+        {
+          "letter": "E",
+          "text": "poate fi influențată de impulsuri provenite de la receptori termici localizați în măduva spinării",
+          "why": "Manualul include măduva spinării între sediile receptorilor termici centrali, ale căror informații contribuie la reglarea temperaturii. Sursa: „Metabolism și nutriție”, secțiunea Reglarea temperaturii corporale."
+        }
+      ],
+      "sourcePages": [
+        257
+      ],
+      "topicId": "rata-si-temperatura",
+      "topicLabel": "Termoreglarea",
+      "lessonUrl": "metabolism_si_nutritie.html#rata-si-temperatura",
+      "id": "asoc-170"
+    },
+    {
+      "number": 171,
+      "sourceNumber": 171,
+      "sourceChapter": "XIII",
+      "prompt": "Precizați informațiile corecte referitoare la vitamine:",
+      "correct": [
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "vitamina B₁₂ este secretată în intestin ca urmare a prezenței factorului intrinsec",
+          "why": "Factorul intrinsec este necesar absorbției vitaminei B₁₂ în intestinul subțire. Nu determină secreția intestinală a vitaminei, așa cum afirmă varianta. Sursa: „Sistemul digestiv”, secțiunea Stomacul."
+        },
+        {
+          "letter": "B",
+          "text": "vitamina D este activată la nivelul rinichilor de către parathormon",
+          "why": "Parathormonul stimulează activarea renală a vitaminei D, care apoi contribuie la reglarea absorbției intestinale a calciului. Sursa: „Sistemul endocrin”, secțiunea Glandele paratiroide."
+        },
+        {
+          "letter": "C",
+          "text": "vitamina A, la fel ca și vitamina D, este absorbită mai ușor datorită secreției biliare",
+          "why": "Bila crește absorbția vitaminelor liposolubile, iar manualul dă explicit vitaminele A și D printre exemple. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "D",
+          "text": "vitamina C este absorbită din intestinul subțire prin intermediul venei mezenterice superioare, afluent direct al venei cave inferioare",
+          "why": "Substanțele absorbite în capilarele intestinale ajung pe calea sistemului port la ficat. Figura arată vena mezenterică superioară în sistemul port, nu ca afluent direct al cavei inferioare; acesta este raportul greșit din variantă. Sursa: „Sistemul digestiv”, secțiunea Absorbția intestinală / „Sistemul digestiv”, secțiunea Ficatul / „Sistemul cardiovascular”, figura 15.11."
+        },
+        {
+          "letter": "E",
+          "text": "vitamina E este liposolubilă",
+          "why": "Baremul punctează clasificarea vitaminei E ca liposolubilă. TXT-ul menționează depozitarea ei hepatică, dar exemplele explicite de vitamine liposolubile sunt A, D și K; pasajele și figurile relevante disponibile nu fundamentează separat clasificarea lui E. Păstrăm cheia și marcăm această limită a sursei furnizate. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros / „Sistemul digestiv”, secțiunea Ficatul."
+        }
+      ],
+      "sourcePages": [
+        257
+      ],
+      "topicId": "stari-si-minerale",
+      "topicLabel": "Vitaminele",
+      "lessonUrl": "metabolism_si_nutritie.html#stari-si-minerale",
+      "id": "asoc-171"
+    },
+    {
+      "number": 172,
+      "sourceNumber": 172,
+      "sourceChapter": "XIII",
+      "prompt": "Glucagonul:",
+      "correct": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sintetizat în cantități mici, poate fi considerat un agonist al insulinei",
+          "why": "Manualul prezintă insulina și glucagonul ca hormoni cu efecte opuse asupra glicemiei. Nu descrie transformarea glucagonului în agonist al insulinei la cantități mici. Sursa: „Sistemul endocrin”, secțiunea Pancreasul."
+        },
+        {
+          "letter": "B",
+          "text": "acționează la nivelul ficatului stimulând glicogenoliza",
+          "why": "Glucagonul stimulează degradarea glicogenului hepatic, eliberând glucoză în sânge prin glicogenoliză. Sursa: „Sistemul endocrin”, secțiunea Pancreasul / „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "C",
+          "text": "activează gluconeogeneza hepatică",
+          "why": "Glucagonul stimulează gluconeogeneza hepatică, prin care ficatul formează glucoză din precursori neglucidici. Sursa: „Sistemul endocrin”, secțiunea Pancreasul / „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "D",
+          "text": "la fel ca și epinefrina, produce creșterea nivelului glicemiei",
+          "why": "Glucagonul și epinefrina sunt enumerați împreună ca hormoni care accelerează glicogenoliza și produc creșterea glicemiei. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "E",
+          "text": "produce creșterea nivelului de acizi grași în sânge",
+          "why": "Glucagonul este enumerat printre hormonii care stimulează eliberarea acizilor grași din țesutul adipos, crescând disponibilitatea lor în sânge. Sursa: „Metabolism și nutriție”, secțiunea Anabolismul lipidelor."
+        }
+      ],
+      "sourcePages": [
+        257
+      ],
+      "topicId": "pancreasul",
+      "topicLabel": "Glucagonul",
+      "lessonUrl": "sistemul_endocrin.html#pancreasul",
+      "id": "asoc-172"
+    },
+    {
+      "number": 173,
+      "sourceNumber": 173,
+      "sourceChapter": "XIII",
+      "prompt": "Estrogenii:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt produși și de placentă, pe durata sarcinii",
+          "why": "Pe durata sarcinii, placenta secretă estrogeni și progesteron, conform descrierii funcției sale endocrine. Sursa: „Sistemul reproducător feminin”, secțiunea Fecundația și sarcina."
+        },
+        {
+          "letter": "B",
+          "text": "pot fi produși în cantități mici la nivelul hipofizei anterioare",
+          "why": "Manualul atribuie producția estrogenilor ovarelor și, în sarcină, placentei. În tabel, hipofiza produce hormoni care controlează ovarul, nu este prezentată ca sursă de estrogeni. Sursa: „Sistemul endocrin”, secțiunea Alte glande endocrine / „Sistemul reproducător feminin”, secțiunea Hormonii și dezvoltarea feminină / „Sistemul reproducător feminin”, secțiunea Fecundația și sarcina."
+        },
+        {
+          "letter": "C",
+          "text": "sunt importanți pentru dezvoltarea caracterelor sexuale feminine",
+          "why": "Estrogenii stimulează dezvoltarea caracterelor sexuale feminine, rol menționat explicit în tabel. Sursa: „Sistemul reproducător feminin”, secțiunea Hormonii și dezvoltarea feminină."
+        },
+        {
+          "letter": "D",
+          "text": "sunt sintetizați sub control hipotalamic",
+          "why": "Hipotalamusul secretă GnRH, care stimulează gonadotropinele hipofizare; acestea controlează ovarul și producția estrogenilor. Controlul hipotalamic este astfel realizat prin această succesiune hormonală. Sursa: „Sistemul reproducător feminin”, secțiunea Hormonii și dezvoltarea feminină."
+        },
+        {
+          "letter": "E",
+          "text": "sunt produși în ovar sub controlul hormonului tireotrop",
+          "why": "Hormonul tireotrop stimulează tiroida. Producția ovariană de estrogeni este legată în tabel de FSH, nu de TSH. Sursa: „Sistemul endocrin”, secțiunea Hipofiza / „Sistemul reproducător feminin”, secțiunea Hormonii și dezvoltarea feminină."
+        }
+      ],
+      "sourcePages": [
+        257
+      ],
+      "topicId": "fiziologie",
+      "topicLabel": "Estrogenii",
+      "lessonUrl": "sistemul_reproducator_feminin.html#fiziologie",
+      "id": "asoc-173"
+    },
+    {
+      "number": 174,
+      "sourceNumber": 174,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați noțiunile corecte referitoare la sistemul nervos autonom:",
+      "correct": [
+        "A",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "neuronii postganglionari ai componentei simpatice transmit impulsuri care provoacă, la nivel ocular, dilatarea pupilelor",
+          "why": "Fibrele postganglionare ajung la organe, iar schema arată dilatarea pupilei ca efect simpatic la nivel ocular. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom / „Organizarea sistemului nervos”, figura 11.10."
+        },
+        {
+          "letter": "B",
+          "text": "componenta simpatică, prin neuronul preganglionar cu axon ce ajunge la nivelul organelor, modulează activitatea acestora",
+          "why": "În organizarea autonomă descrisă, axonul preganglionar ajunge la ganglion. Neuronul postganglionar este cel al cărui axon ajunge la organ; varianta inversează aceste segmente. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom."
+        },
+        {
+          "letter": "C",
+          "text": "sistemul nervos simpatic este necesar în răspunsul organismului la situații urgente",
+          "why": "Simpaticul pregătește organismul pentru urgențe și stres, conform comparației dintre componentele autonome. Sursa: „Organizarea sistemului nervos”, secțiunea Tabelul 11.5."
+        },
+        {
+          "letter": "D",
+          "text": "acetilcolina este neurotransmițătorul implicat în modularea activității organelor, fiind parte doar a componentei parasimpatice",
+          "why": "Acetilcolina nu aparține exclusiv parasimpaticului: manualul o atribuie fibrelor preganglionare ale ambelor componente, precum și fibrelor postganglionare parasimpatice. Restricția „doar” este greșită. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom."
+        },
+        {
+          "letter": "E",
+          "text": "componenta parasimpatică a sistemului autonom menține funcțiile normale ale organismului",
+          "why": "Parasimpaticul susține funcțiile normale de întreținere și readuce organismul spre starea obișnuită după activarea simpatică. Sursa: „Organizarea sistemului nervos”, secțiunea Tabelul 11.5."
+        }
+      ],
+      "sourcePages": [
+        257
+      ],
+      "topicId": "sistem-nervos-autonom",
+      "topicLabel": "Organizarea autonomă",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-autonom",
+      "id": "asoc-174"
+    },
+    {
+      "number": 175,
+      "sourceNumber": 175,
+      "sourceChapter": "XIII",
+      "prompt": "Hormonul antidiuretic:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este sintetizat în neurohipofiză",
+          "why": "ADH este sintetizat în hipotalamus și transportat spre lobul posterior hipofizar. Neurohipofiza îl depozitează și îl eliberează, dar nu este locul sintezei. Sursa: „Sistemul endocrin”, secțiunea Hipofiza / „Sistemul endocrin”, secțiunea Tabelul 13.2."
+        },
+        {
+          "letter": "B",
+          "text": "poate modifica tonusul musculaturii arteriolelor",
+          "why": "Tabelul atribuie ADH și acțiune asupra musculaturii netede a arteriolelor, de unde posibilitatea modificării tonusului vascular. Sursa: „Sistemul endocrin”, secțiunea Tabelul 13.2."
+        },
+        {
+          "letter": "C",
+          "text": "reduce diureza",
+          "why": "Prin creșterea reabsorbției apei, ADH reduce cantitatea de apă eliminată și volumul urinei, adică diureza. Sursa: „Sistemul endocrin”, secțiunea Hipofiza / „Sistemul urinar”, secțiunea Reglarea funcției renale."
+        },
+        {
+          "letter": "D",
+          "text": "este eliberat în circulație de către lobul posterior al hipofizei",
+          "why": "După sinteza hipotalamică și transport, ADH este eliberat în circulație din lobul posterior al hipofizei. Sursa: „Sistemul endocrin”, secțiunea Hipofiza / „Sistemul endocrin”, secțiunea Tabelul 13.2."
+        },
+        {
+          "letter": "E",
+          "text": "reduce permeabilitatea membranei celulelor tubilor renali în scopul păstrării apei în țesuturi",
+          "why": "ADH crește permeabilitatea tubulară pentru apă și permite o reabsorbție mai mare. Varianta inversează efectul asupra permeabilității. Sursa: „Sistemul urinar”, secțiunea Reglarea funcției renale."
+        }
+      ],
+      "sourcePages": [
+        257,
+        258
+      ],
+      "topicId": "hormoni",
+      "topicLabel": "Hormonul antidiuretic",
+      "lessonUrl": "sistemul_renal_complet.html#hormoni",
+      "id": "asoc-175"
+    },
+    {
+      "number": 176,
+      "sourceNumber": 176,
+      "sourceChapter": "XIII",
+      "prompt": "Glandele:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "parotide secretă amilaza și maltaza",
+          "why": "Amilaza este enzimă salivară, în timp ce maltaza este atribuită celulelor intestinului subțire. Varianta le atribuie pe amândouă parotidei. Sursa: „Sistemul digestiv”, secțiunea Tabelul 18.4."
+        },
+        {
+          "letter": "B",
+          "text": "vestibulare Bartholin lubrifiază vaginul",
+          "why": "Glandele vestibulare Bartholin secretă mucus cu rol de lubrifiere, descris de manual în cadrul organelor genitale externe feminine. Sursa: „Sistemul reproducător feminin”, secțiunea Organele genitale externe."
+        },
+        {
+          "letter": "C",
+          "text": "bulbouretrale secretă substanțe care activează spermatozoizii",
+          "why": "Manualul atribuie secrețiilor bulbouretrale atât lubrifierea, cât și neutralizarea acidității vaginale și activarea spermatozoizilor. Varianta urmează explicit această descriere. Sursa: „Sistemul reproducător masculin”, secțiunea Ducte și organe anexe."
+        },
+        {
+          "letter": "D",
+          "text": "suprarenale secretă și hormoni sintetizați din colesterol",
+          "why": "Corticosuprarenala produce hormoni steroizi, inclusiv aldosteron și glucocorticoizi. Hormonii steroizi sunt derivați din colesterol. Sursa: „Sistemul endocrin”, secțiunea Descrierea generală a hormonilor / „Sistemul endocrin”, secțiunea Glandele suprarenale."
+        },
+        {
+          "letter": "E",
+          "text": "paratiroide secretă parathormonul și calcitonina",
+          "why": "Paratiroidele secretă parathormon. Calcitonina este produsă de tiroidă, deci varianta atribuie unei singure glande hormonii a două glande diferite. Sursa: „Sistemul endocrin”, secțiunea Tabelul 13.3 / „Sistemul endocrin”, secțiunea Glandele paratiroide."
+        }
+      ],
+      "sourcePages": [
+        258
+      ],
+      "topicId": "ducte",
+      "topicLabel": "Asocieri glandă–secreție",
+      "lessonUrl": "sistemul_reproducator_masculin.html#ducte",
+      "id": "asoc-176"
+    },
+    {
+      "number": 177,
+      "sourceNumber": 177,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați enunțurile corecte:",
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "organul lui Corti conține dendrite ale neuronilor ai căror axoni formează ramura cohleară a nervului VIII",
+          "why": "Celulele receptoare ale organului Corti sunt asociate cu dendrite neuronale; axonii acestor neuroni formează ramura cohleară a nervului vestibulocohlear. Sursa: „Organele de simț”, secțiunea Fiziologia auzului."
+        },
+        {
+          "letter": "B",
+          "text": "cortexul lobilor occipitali integrează informațiile primite de la nivelul retinei",
+          "why": "Impulsurile produse după stimularea receptorilor retinieni ajung la cortexul vizual al lobilor occipitali, unde imaginea este interpretată. Sursa: „Organele de simț”, secțiunea Fiziologia vederii."
+        },
+        {
+          "letter": "C",
+          "text": "nervul trigemen, cu origine aparentă la nivelul punții, are funcție și în mișcările oculare",
+          "why": "Trigeminalul are originea la punte, dar funcția motorie prezentată este pentru masticație. Mișcările globului ocular sunt atribuite oculomotorului, trohlearului și abducensului, nu trigemenului. Sursa: „Organizarea sistemului nervos”, secțiunea Tabelul 11.3."
+        },
+        {
+          "letter": "D",
+          "text": "mucoasa olfactivă conține celule care prezintă receptori ce vin în contact direct cu moleculele substanțelor detectate",
+          "why": "Receptorii olfactivi intră în contact cu moleculele odorante ajunse la suprafața mucoasei; manualul descrie acest contact la nivelul cililor celulelor receptoare. Sursa: „Organele de simț”, secțiunea Mirosul."
+        },
+        {
+          "letter": "E",
+          "text": "receptorii de temperatură există doar la nivelul pielii",
+          "why": "Receptorii termici nu sunt exclusiv cutanați. Manualul îi descrie și în hipotalamus, măduva spinării, organele abdominale și alte structuri interne. Sursa: „Metabolism și nutriție”, secțiunea Reglarea temperaturii corporale."
+        }
+      ],
+      "sourcePages": [
+        258
+      ],
+      "topicId": "urechea-si-auzul",
+      "topicLabel": "Asocieri senzoriale",
+      "lessonUrl": "organele_de_simt.html#urechea-si-auzul",
+      "id": "asoc-177"
+    },
+    {
+      "number": 178,
+      "sourceNumber": 178,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile adevărate:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "eliberarea grupului fosfat terminal al ATP-ului, cu formarea de ADP și fosfat, este însoțită de eliberare de energie",
+          "why": "Îndepărtarea grupării fosfat terminale transformă ATP în ADP și fosfat, eliberând energia utilizabilă de celulă. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "B",
+          "text": "sinteza moleculelor complexe poartă numele de catabolism",
+          "why": "Sinteza moleculelor complexe se numește anabolism. Catabolismul reprezintă degradarea acestora. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "C",
+          "text": "reacția prin care substratul cedează electroni se numește oxidare",
+          "why": "Oxidarea este definită ca pierdere de electroni de către substrat. Varianta redă această definiție. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "D",
+          "text": "reacțiile de reducere pot însemna acceptarea unui atom de hidrogen",
+          "why": "Manualul precizează că reducerea poate implica acceptarea unui atom de hidrogen, pe lângă formularea ei în termeni de acceptare de electroni. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "E",
+          "text": "din reacțiile de oxido-reducere rezultă doi compuși oxidați",
+          "why": "Într-un transfer de electroni, compusul care cedează electroni se oxidează, iar cel care îi primește se reduce. Nu rezultă doi compuși oxidați. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        }
+      ],
+      "sourcePages": [
+        258
+      ],
+      "topicId": "metabolismul-glucidelor",
+      "topicLabel": "ATP și oxidoreducere",
+      "lessonUrl": "metabolism_si_nutritie.html#metabolismul-glucidelor",
+      "id": "asoc-178"
+    },
+    {
+      "number": 179,
+      "sourceNumber": 179,
+      "sourceChapter": "XIII",
+      "prompt": "Circulația sanguină:",
+      "correct": [
+        "A",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "capilară, preia substanțele de catabolism de la țesuturi",
+          "why": "Prin pereții capilarelor se schimbă substanțe între sânge și țesuturi, inclusiv preluarea deșeurilor rezultate din metabolismul celular. Sursa: „Sistemul cardiovascular”, secțiunea Vasele sanguine / „Sistemul cardiovascular”, secțiunea Arteriole, capilare și venule."
+        },
+        {
+          "letter": "B",
+          "text": "coronariană, are ramuri care irigă și țesutul pulmonar",
+          "why": "Circulația coronariană asigură sângele necesar mușchiului cardiac. Manualul nu atribuie ramurilor coronare irigarea țesutului pulmonar. Sursa: „Sistemul cardiovascular”, secțiunea Circulația coronariană."
+        },
+        {
+          "letter": "C",
+          "text": "arteriolară, poate modifica presiunea arterială",
+          "why": "Modificarea diametrului arteriolelor prin contracția sau relaxarea musculaturii lor schimbă rezistența la curgere și presiunea arterială. Sursa: „Sistemul cardiovascular”, secțiunea Arteriole, capilare și venule / „Sistemul cardiovascular”, secțiunea Presiunea arterială și pulsul."
+        },
+        {
+          "letter": "D",
+          "text": "venoasă, este implicată direct în răspunsul imunitar",
+          "why": "Manualul atribuie venelor întoarcerea sângelui și descrie apărarea imună prin celule, anticorpi și organe precum splina. Baremul exclude D, dar formularea generală „implicată direct” nu este definită de sursă; nu rezultă că sângele venos ar fi lipsit de componente imune. Sursa: „Sistemul cardiovascular”, secțiunea Tipuri de circulație sanguină / „Sângele”, secțiunea Plasma / „Sistemul limfatic și imun”, secțiunea Nodulii limfatici."
+        },
+        {
+          "letter": "E",
+          "text": "de la nivel intestinal, preia majoritatea lipidelor absorbite",
+          "why": "Majoritatea produșilor lipidici sunt reasamblați în trigliceride și preluați ca chilomicroni în limfaticele vilozităților. Capilarele sanguine preiau alte substanțe și acizii grași cu lanț scurt, nu majoritatea lipidelor în acest traseu. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros / „Sistemul digestiv”, secțiunea Absorbția intestinală."
+        }
+      ],
+      "sourcePages": [
+        258
+      ],
+      "topicId": "vasele-sanguine",
+      "topicLabel": "Rolurile circulației",
+      "lessonUrl": "sistemul_cardiovascular.html#vasele-sanguine",
+      "id": "asoc-179"
+    },
+    {
+      "number": 180,
+      "sourceNumber": 180,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele informații sunt adevărate:",
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sistemul limbic este format din structuri localizate în jurul corpului calos",
+          "why": "Manualul descrie sistemul limbic ca ansamblu de structuri dispuse în jurul corpului calos. Sursa: „Organizarea sistemului nervos”, secțiunea Diencefalul."
+        },
+        {
+          "letter": "B",
+          "text": "cerebelul coordonează activitatea musculaturii scheletice",
+          "why": "Cerebelul coordonează activitatea musculaturii scheletice și contribuie la postura și echilibrul corpului. Sursa: „Organizarea sistemului nervos”, secțiunea Cerebelul."
+        },
+        {
+          "letter": "C",
+          "text": "lobii occipitali ai emisferelor cerebrale interpretează imaginile recepționate la nivelul retinei",
+          "why": "Interpretarea informației vizuale provenite de la retină are loc în cortexul occipital, conform lecțiilor despre encefal și vedere. Sursa: „Organizarea sistemului nervos”, secțiunea Emisferele cerebrale / „Organele de simț”, secțiunea Fiziologia vederii."
+        },
+        {
+          "letter": "D",
+          "text": "noradrenalina este neurotransmițătorul secretat la nivelul fibrelor preganglionare și postganglionare simpatice",
+          "why": "Fibrele preganglionare simpatice secretă acetilcolină. Noradrenalina este atribuită de manual fibrelor postganglionare simpatice, deci nu ambelor segmente. Sursa: „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom."
+        },
+        {
+          "letter": "E",
+          "text": "măduva spinării conectează sistemul nervos periferic cu encefalul",
+          "why": "Măduva spinării realizează legătura dintre sistemul nervos periferic și encefal, conducând informații senzoriale și comenzi motorii. Sursa: „Organizarea sistemului nervos”, secțiunea Măduva spinării și meningele."
+        }
+      ],
+      "sourcePages": [
+        258
+      ],
+      "topicId": "sistem-nervos-central",
+      "topicLabel": "Funcțiile structurilor nervoase",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-central",
+      "id": "asoc-180"
+    },
+    {
+      "number": 181,
+      "sourceNumber": 181,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la mișcările articulare:",
+      "correct": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "elevația reprezintă ridicarea unei părți a corpului",
+          "why": "Elevația este ridicarea unei părți a corpului; manualul dă ca exemplu ridicarea umerilor. Sursa: „Oasele și articulațiile”, secțiunea Mișcările articulare."
+        },
+        {
+          "letter": "B",
+          "text": "extensia reduce unghiul dintre două oase",
+          "why": "Extensia mărește unghiul dintre oase. Reducerea lui definește flexia, mișcarea opusă. Sursa: „Oasele și articulațiile”, secțiunea Mișcările articulare."
+        },
+        {
+          "letter": "C",
+          "text": "protracția reprezintă deplasarea înainte a unei părți a corpului",
+          "why": "Protracția reprezintă deplasarea înainte a unei structuri, de exemplu a mandibulei. Sursa: „Oasele și articulațiile”, secțiunea Mișcările articulare."
+        },
+        {
+          "letter": "D",
+          "text": "adducția apropie un membru de linia mediană a corpului",
+          "why": "Adducția apropie un membru de linia mediană a corpului, spre deosebire de abducție, care îl îndepărtează. Sursa: „Oasele și articulațiile”, secțiunea Mișcările articulare."
+        },
+        {
+          "letter": "E",
+          "text": "eversia reprezintă rotirea tălpii spre exterior",
+          "why": "Eversia rotește talpa spre exterior. Inversia este rotația în sensul opus, spre interior. Sursa: „Oasele și articulațiile”, secțiunea Mișcările articulare."
+        }
+      ],
+      "sourcePages": [
+        258
+      ],
+      "topicId": "articulatii",
+      "topicLabel": "Termenii mișcărilor articulare",
+      "lessonUrl": "oasele_si_articulatiile.html#articulatii",
+      "id": "asoc-181"
+    },
+    {
+      "number": 182,
+      "sourceNumber": 182,
+      "sourceChapter": "XIII",
+      "prompt": "Testosteronul:",
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este sintetizat de către celulele interstițiale testiculare",
+          "why": "Celulele interstițiale ale testiculelor produc testosteron, conform descrierii țesutului testicular și hormonilor masculini. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini / „Sistemul reproducător masculin”, secțiunea Spermatogeneza."
+        },
+        {
+          "letter": "B",
+          "text": "stimulează spermatogeneza",
+          "why": "Testosteronul susține producerea și maturarea spermatozoizilor, rol indicat explicit în tabel și în text. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "C",
+          "text": "este sintetizat sub control hipotalamo-hipofizar",
+          "why": "GnRH hipotalamic controlează eliberarea gonadotropinelor hipofizare, iar LH stimulează secreția testiculară de testosteron. Producția este astfel sub control hipotalamo-hipofizar. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "D",
+          "text": "este sintetizat ca urmare a stimulării testiculelor de către FSH",
+          "why": "LH stimulează celulele interstițiale să producă testosteron. FSH este asociat cu spermatogeneza, astfel că varianta schimbă gonadotropina care controlează secreția testosteronului. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini / „Sistemul endocrin”, secțiunea Hipofiza."
+        },
+        {
+          "letter": "E",
+          "text": "stimulează anabolismul proteinelor",
+          "why": "Testosteronul stimulează sinteza proteinelor și creșterea depozitelor proteice și a masei musculare, adică procese anabolice proteice. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul proteinelor / „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        }
+      ],
+      "sourcePages": [
+        258
+      ],
+      "topicId": "hormoni",
+      "topicLabel": "Testosteronul",
+      "lessonUrl": "sistemul_reproducator_masculin.html#hormoni",
+      "id": "asoc-182"
+    },
+    {
+      "number": 183,
+      "sourceNumber": 183,
+      "sourceChapter": "XIII",
+      "prompt": "Acizii grași:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt metabolizați prin β-oxidare",
+          "why": "Acizii grași sunt degradați în mitocondrie prin beta-oxidare, cu desprinderea de fragmente cu câte doi atomi de carbon. Sursa: „Metabolism și nutriție”, secțiunea Catabolismul lipidelor."
+        },
+        {
+          "letter": "B",
+          "text": "sunt transportați în sânge legați de chilomicroni",
+          "why": "Manualul descrie acizii grași transportați legați de albumină, iar chilomicronii conțin trigliceride, colesterol și fosfolipide. Distincția este între acizii grași liberi și lipidele din particule; nu înseamnă că trigliceridele chilomicronilor nu au acizi grași în structura lor. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul lipidelor și al proteinelor."
+        },
+        {
+          "letter": "C",
+          "text": "pot fi transformați în acetil-CoA",
+          "why": "Beta-oxidarea transformă acizii grași în unități de acetil-CoA, care pot intra apoi în ciclul Krebs. Sursa: „Metabolism și nutriție”, secțiunea Catabolismul lipidelor."
+        },
+        {
+          "letter": "D",
+          "text": "reprezintă o sursă importantă de energie",
+          "why": "Degradarea acizilor grași produce o cantitate importantă de ATP. Manualul îi prezintă drept o sursă majoră de energie pentru celule. Sursa: „Metabolism și nutriție”, secțiunea Catabolismul lipidelor."
+        },
+        {
+          "letter": "E",
+          "text": "sunt metabolizați în citoplasma celulelor",
+          "why": "Manualul precizează sediul mitocondrial al metabolizării acizilor grași, iar baremul exclude E. Tot manualul arată că citoplasma conține organitele, inclusiv mitocondriile; formularea „în citoplasmă” este astfel ambiguă. Excluderea se înțelege dacă termenul desemnează aici mediul din afara mitocondriilor, fără a nega localizarea citoplasmatică a organitelor. Sursa: „Metabolism și nutriție”, secțiunea Catabolismul lipidelor / „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        }
+      ],
+      "sourcePages": [
+        258,
+        259
+      ],
+      "topicId": "lipide-si-proteine",
+      "topicLabel": "Metabolismul acizilor grași",
+      "lessonUrl": "metabolism_si_nutritie.html#lipide-si-proteine",
+      "id": "asoc-183"
+    },
+    {
+      "number": 184,
+      "sourceNumber": 184,
+      "sourceChapter": "XIII",
+      "prompt": "Calciul:",
+      "correct": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este depozitat în os și poate fi transferat în sânge sub acțiunea PTH",
+          "why": "Osul constituie o rezervă de calciu. Parathormonul stimulează resorbția osoasă și crește trecerea calciului din os în sânge. Sursa: „Oasele și articulațiile”, secțiunea Țesutul osos / „Sistemul endocrin”, secțiunea Glandele paratiroide."
+        },
+        {
+          "letter": "B",
+          "text": "este eliberat din oase prin stimularea activității osteoblastelor",
+          "why": "Osteoclastele resorb osul și eliberează calciu. Osteoblastele sunt celulele formatoare de os, deci varianta atribuie eliberarea tipului celular opus. Sursa: „Oasele și articulațiile”, secțiunea Formarea osului / „Oasele și articulațiile”, secțiunea Remodelarea osoasă."
+        },
+        {
+          "letter": "C",
+          "text": "administrat ca supliment alimentar, împreună cu activitatea fizică, poate preveni resorbția osoasă",
+          "why": "Manualul asociază creșterea aportului de calciu și activitatea fizică cu prevenirea osteoporozei. Exercițiul stimulează formarea osului, contracarând pierderea osoasă descrisă. Sursa: „Oasele și articulațiile”, secțiunea Remodelarea osoasă."
+        },
+        {
+          "letter": "D",
+          "text": "este depozitat sub influența calcitoninei",
+          "why": "Calcitonina stimulează depunerea calciului în os și favorizează creșterea osoasă, contribuind la scăderea calcemiei. Sursa: „Sistemul endocrin”, secțiunea Tabelul 13.3 / „Sistemul endocrin”, secțiunea Glandele paratiroide."
+        },
+        {
+          "letter": "E",
+          "text": "este necesar pentru formarea trombinei",
+          "why": "Ionii de calciu sunt esențiali în mecanismele care activează protrombina și o transformă în trombină, potrivit descrierii coagulării. Sursa: „Sângele”, secțiunea Coagularea sângelui."
+        }
+      ],
+      "sourcePages": [
+        259
+      ],
+      "topicId": "osul",
+      "topicLabel": "Calciul și remodelarea osoasă",
+      "lessonUrl": "oasele_si_articulatiile.html#osul",
+      "id": "asoc-184"
+    },
+    {
+      "number": 185,
+      "sourceNumber": 185,
+      "sourceChapter": "XIII",
+      "prompt": "Receptorii:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "pentru gustul umami, sunt localizați în zona antero-laterală a limbii",
+          "why": "Manualul plasează receptorii pentru umami în regiunea faringiană. Zona anterolaterală a limbii este asociată în aceeași descriere cu gustul acru, nu cu umami. Sursa: „Organele de simț”, secțiunea Gustul."
+        },
+        {
+          "letter": "B",
+          "text": "denumiți corpusculi Pacini, sunt implicați în detectarea vibrațiilor la nivelul pielii",
+          "why": "Corpusculii Pacini sunt receptori pentru presiune puternică și vibrații, conform lecției despre sensibilitatea cutanată. Sursa: „Organele de simț”, secțiunea Simțul tactil și simțurile înrudite."
+        },
+        {
+          "letter": "C",
+          "text": "urechii interne sunt celule ciliate care răspund la stimuli mecanici",
+          "why": "În urechea internă, deplasarea mecanică a structurilor și lichidelor îndoaie prelungirile celulelor receptoare ciliate, atât în auz, cât și în echilibru. Sursa: „Organele de simț”, secțiunea Fiziologia auzului / „Organele de simț”, secțiunea Echilibrul."
+        },
+        {
+          "letter": "D",
+          "text": "localizați la nivelul cavității nazale sunt celule ciliate care intră în contact cu moleculele din aer",
+          "why": "Celulele receptoare olfactive au cili care intră în contact cu moleculele substanțelor odorante ajunse în mucoasa nazală. Sursa: „Organele de simț”, secțiunea Mirosul."
+        },
+        {
+          "letter": "E",
+          "text": "retinieni, în cea mai mare parte, sunt celule cu conuri",
+          "why": "Manualul indică aproximativ 120 de milioane de bastonașe și doar 6–7 milioane de conuri. Majoritatea receptorilor retinieni sunt deci bastonașe. Sursa: „Organele de simț”, secțiunea Ochiul și vederea."
+        }
+      ],
+      "sourcePages": [
+        259
+      ],
+      "topicId": "alte-simturi",
+      "topicLabel": "Receptorii senzoriali",
+      "lessonUrl": "organele_de_simt.html#alte-simturi",
+      "id": "asoc-185"
+    },
+    {
+      "number": 186,
+      "sourceNumber": 186,
+      "sourceChapter": "XIII",
+      "prompt": "Impulsurile:",
+      "correct": [
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "parasimpatice reduc activitatea sistemului digestiv",
+          "why": "Parasimpaticul stimulează activitatea digestivă. Varianta îi atribuie reducerea acesteia, efect opus celui descris. Sursa: „Țesutul nervos”, secțiunea Organizarea sistemului nervos / „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom."
+        },
+        {
+          "letter": "B",
+          "text": "nervoase senzoriale sunt transmise de către sistemul nervos central spre efectori",
+          "why": "Impulsurile senzoriale sunt aferente, orientate spre sistemul nervos central. Semnalele din centru spre efectori sunt eferente, motorii. Sursa: „Țesutul nervos”, secțiunea Organizarea sistemului nervos / „Organizarea sistemului nervos”, secțiunea Sistemul nervos periferic."
+        },
+        {
+          "letter": "C",
+          "text": "transmise de către cerebel ajustează postura",
+          "why": "Cerebelul coordonează contracțiile musculare necesare posturii și echilibrului, ajustând poziția corpului. Sursa: „Organizarea sistemului nervos”, secțiunea Cerebelul."
+        },
+        {
+          "letter": "D",
+          "text": "de la nivelul mugurilor gustativi sunt transmise prin talamus la lobul temporal pentru a fi interpretate",
+          "why": "Manualul descrie transmiterea gustului prin nervii cranieni, bulb și talamus către lobul parietal. Varianta înlocuiește destinația parietală cu lobul temporal. Sursa: „Organele de simț”, secțiunea Gustul."
+        },
+        {
+          "letter": "E",
+          "text": "nervoase pot iniția contracția celulelor musculare cardiace",
+          "why": "Manualul precizează că inițierea contracțiilor cardiace aparține țesutului excitoconductor, fără impulsuri inițiatoare venite din sistemul nervos. Controlul nervos autonom modulează frecvența și forța, fiind distinct de această inițiere. Sursa: „Sistemul cardiovascular”, secțiunea Mușchiul cardiac."
+        }
+      ],
+      "sourcePages": [
+        259
+      ],
+      "topicId": "sistem-nervos-autonom",
+      "topicLabel": "Impulsuri nervoase și efectori",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-autonom",
+      "id": "asoc-186"
+    },
+    {
+      "number": 187,
+      "sourceNumber": 187,
+      "sourceChapter": "XIII",
+      "prompt": "Alegeți informațiile corecte:",
+      "correct": [
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "la nivelul urechii interne, labirintul osos conține endolimfa care are rol în echilibrul dinamic",
+          "why": "Labirintul osos conține perilimfă, iar labirintul membranos conține endolimfă. Varianta atribuie endolimfa compartimentului osos. Sursa: „Organele de simț”, secțiunea Echilibrul."
+        },
+        {
+          "letter": "B",
+          "text": "fibrinogenul, proteină plasmatică produsă de ficat, poate fi convertit în fibrină, în procesul de agregare eritrocitară",
+          "why": "Transformarea fibrinogenului în fibrină aparține coagulării sângelui și formării cheagului. „Agregarea eritrocitară” nu este denumirea acestui mecanism în manual. Sursa: „Sângele”, secțiunea Coagularea sângelui."
+        },
+        {
+          "letter": "C",
+          "text": "splina stochează limfocite",
+          "why": "Splina conține și depozitează limfocite, care contribuie la funcția sa imună. Sursa: „Sistemul limfatic și imun”, secțiunea Splina."
+        },
+        {
+          "letter": "D",
+          "text": "carbaminohemoglobina este un mod de transport al CO₂ în sânge",
+          "why": "O parte a dioxidului de carbon sanguin este legată de hemoglobină sub formă de carbaminohemoglobină. Sursa: „Sistemul respirator”, secțiunea Schimbul de gaze."
+        },
+        {
+          "letter": "E",
+          "text": "într-un mediu hipoton, celula se zbârcește",
+          "why": "În mediu hipoton apa intră în celulă, care se umflă. Zbârcirea este efectul pierderii apei într-un mediu hiperton. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        }
+      ],
+      "sourcePages": [
+        259
+      ],
+      "topicId": "globulele-rosii",
+      "topicLabel": "Asocieri funcționale",
+      "lessonUrl": "sangele.html#globulele-rosii",
+      "id": "asoc-187"
+    },
+    {
+      "number": 188,
+      "sourceNumber": 188,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre următoarele afirmații privind fiziologia neuronilor sunt corecte ?",
+      "correct": [
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "pompa de sodiu-potasiu este responsabilă pentru producerea depolarizării",
+          "why": "Pompa de sodiu–potasiu menține dezechilibrul ionic prin transport activ. Depolarizarea este explicată prin deschiderea canalelor de sodiu și influxul ionilor, nu prin acțiunea directă a pompei. Sursa: „Țesutul nervos”, secțiunea Impulsul nervos."
+        },
+        {
+          "letter": "B",
+          "text": "în fibrele acoperite de teaca de mielină, conducerea impulsului nervos este continuă",
+          "why": "În fibrele mielinizate, impulsul sare între nodurile Ranvier, realizând conducere saltatorie. Conducerea continuă nu este mecanismul descris pentru acestea. Sursa: „Țesutul nervos”, secțiunea Impulsul nervos."
+        },
+        {
+          "letter": "C",
+          "text": "intensitatea prag a unui impuls nervos este -55 mV",
+          "why": "Manualul indică aproximativ −55 mV ca valoare de prag la care se deschid canalele de sodiu voltaj-dependente și se declanșează potențialul de acțiune. Varianta urmează valoarea din sursă. Sursa: „Țesutul nervos”, secțiunea Impulsul nervos."
+        },
+        {
+          "letter": "D",
+          "text": "în repaus, concentrația ionilor de sodiu este de 10 ori mai mare la exteriorul celulei, comparativ cu interiorul ei",
+          "why": "Baremul acceptă raportul de 10 ori, iar manualul formulează mai precis „de peste 10 ori” pentru concentrația extracelulară a sodiului. Se păstrează răspunsul oficial; cifra din variantă trebuie citită ca aproximare, nu ca egalitate exactă susținută de text. Sursa: „Țesutul nervos”, secțiunea Impulsul nervos."
+        },
+        {
+          "letter": "E",
+          "text": "celula nervoasă nu urmează legea „tot sau nimic”",
+          "why": "Manualul afirmă explicit că neuronul urmează legea „totul sau nimic”: atingerea pragului produce impulsul, iar intensitatea acestuia nu crește odată cu intensitatea stimulului. Sursa: „Țesutul nervos”, secțiunea Impulsul nervos."
+        }
+      ],
+      "sourcePages": [
+        259
+      ],
+      "topicId": "fiziologia-nervilor",
+      "topicLabel": "Potențialul de acțiune",
+      "lessonUrl": "tesutul_nervos.html#fiziologia-nervilor",
+      "id": "asoc-188"
+    },
+    {
+      "number": 189,
+      "sourceNumber": 189,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele afirmații sunt corecte:",
+      "correct": [
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "primul zgomot cardiac este produs de închiderea valvelor semilunare",
+          "why": "Primul zgomot cardiac corespunde închiderii valvelor atrioventriculare. Închiderea semilunarelor produce al doilea zgomot. Sursa: „Sistemul cardiovascular”, secțiunea Ciclul cardiac."
+        },
+        {
+          "letter": "B",
+          "text": "pulsul arterial reprezintă unda de presiune generată de sângele evacuat din ventricul, în timpul sistolei ventriculare",
+          "why": "Pulsul este unda de presiune produsă în artere de sângele împins de ventricul în timpul contracției. Sursa: „Sistemul cardiovascular”, secțiunea Presiunea arterială și pulsul."
+        },
+        {
+          "letter": "C",
+          "text": "în splină, sunt stocate și limfocite T care sunt de fapt granulocite ce sintetizează anticorpi",
+          "why": "Splina conține limfocite T, dar limfocitele aparțin agranulocitelor, nu granulocitelor. Producția de anticorpi este descrisă prin transformarea limfocitelor B în plasmocite; varianta combină clasificări și roluri diferite. Sursa: „Sângele”, secțiunea Globulele albe / „Sistemul limfatic și imun”, secțiunea Splina."
+        },
+        {
+          "letter": "D",
+          "text": "plachetele sanguine sunt implicate în activarea căii intrinseci a coagulării",
+          "why": "Calea intrinsecă implică factorul plachetar eliberat de plachetele sanguine, împreună cu calciul și alți factori de coagulare. Sursa: „Sângele”, secțiunea Coagularea sângelui."
+        },
+        {
+          "letter": "E",
+          "text": "CO₂ este transportat în sânge, în principal, ca și carbaminohemoglobină",
+          "why": "Carbaminohemoglobina transportă numai o parte a dioxidului de carbon. Forma predominantă descrisă de manual este transportul sub formă de bicarbonat. Sursa: „Sistemul respirator”, secțiunea Schimbul de gaze."
+        }
+      ],
+      "sourcePages": [
+        259
+      ],
+      "topicId": "coagularea-sangelui",
+      "topicLabel": "Circulația și coagularea",
+      "lessonUrl": "sangele.html#coagularea-sangelui",
+      "id": "asoc-189"
+    },
+    {
+      "number": 190,
+      "sourceNumber": 190,
+      "sourceChapter": "XIII",
+      "prompt": "Alegeți afirmațiile corecte referitoare la hipofiză:",
+      "correct": [
+        "B",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "lobul posterior sintetizează oxitocină și hormon antidiuretic",
+          "why": "ADH și oxitocina sunt sintetizate în hipotalamus. Lobul posterior hipofizar le depozitează și le eliberează în sânge. Sursa: „Sistemul endocrin”, secțiunea Hipofiza / „Sistemul endocrin”, secțiunea Tabelul 13.2."
+        },
+        {
+          "letter": "B",
+          "text": "lobul anterior sintetizează TSH, hormon necesar tiroidei pentru captarea iodului",
+          "why": "TSH este secretat de adenohipofiză și stimulează captarea iodului și sinteza hormonilor tiroidieni. Sursa: „Sistemul endocrin”, secțiunea Hipofiza."
+        },
+        {
+          "letter": "C",
+          "text": "FSH-ul este important pentru sinteza de testosteron în testicul",
+          "why": "Manualul atribuie FSH stimularea spermatogenezei, iar LH stimularea producției testiculare de testosteron. Varianta substituie FSH hormonului LH în această relație. Sursa: „Sistemul endocrin”, secțiunea Hipofiza / „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "D",
+          "text": "hormonul melanocitostimulator (MSH) produs în hipofiză este necesar pigmentării pielii",
+          "why": "MSH stimulează melanocitele pielii și pigmentarea cutanată, conform tabelului hormonilor hipofizari. Sursa: „Sistemul endocrin”, secțiunea Tabelul 13.2."
+        },
+        {
+          "letter": "E",
+          "text": "lobul anterior produce și hormoni tropi",
+          "why": "Adenohipofiza produce hormoni tropi care acționează asupra altor glande endocrine, între care TSH, ACTH, FSH și LH. Sursa: „Sistemul endocrin”, secțiunea Hipofiza."
+        }
+      ],
+      "sourcePages": [
+        260
+      ],
+      "topicId": "hipofiza-glanda-pituitara",
+      "topicLabel": "Hormonii hipofizari",
+      "lessonUrl": "sistemul_endocrin.html#hipofiza-glanda-pituitara",
+      "id": "asoc-190"
+    },
+    {
+      "number": 191,
+      "sourceNumber": 191,
+      "sourceChapter": "XIII",
+      "prompt": "Hormonul de creștere:",
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "Stimulează eliberarea acizilor grași din țesutul adipos",
+          "why": "Hormonul de creștere mobilizează lipidele și este enumerat printre hormonii care stimulează eliberarea acizilor grași din țesutul adipos. Sursa: „Sistemul endocrin”, secțiunea Hipofiza / „Metabolism și nutriție”, secțiunea Anabolismul lipidelor."
+        },
+        {
+          "letter": "B",
+          "text": "acționează asupra țesuturilor din întregul organism",
+          "why": "Tabelul hormonilor hipofizari indică țesuturile întregului organism drept ținte ale hormonului de creștere. Sursa: „Sistemul endocrin”, secțiunea Tabelul 13.2."
+        },
+        {
+          "letter": "C",
+          "text": "este un hormon peptidic sintetizat de hipotalamus",
+          "why": "Hormonul de creștere este o proteină de 191 de aminoacizi, dar este sintetizat de adenohipofiză. Varianta atribuie greșit sinteza hipotalamusului. Sursa: „Sistemul endocrin”, secțiunea Hipofiza."
+        },
+        {
+          "letter": "D",
+          "text": "stimulează transportul activ al aminoacizilor în celule",
+          "why": "Hormonul de creștere stimulează transportul activ al aminoacizilor în celule și utilizarea lor pentru sinteza proteică. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul proteinelor."
+        },
+        {
+          "letter": "E",
+          "text": "este un hormon trop care controlează secreția altor glande endocrine",
+          "why": "Manualul descrie efectele hormonului de creștere asupra țesuturilor organismului. Acțiunea de control al secreției altor glande definește hormonii tropi precum TSH sau ACTH, nu rolul atribuit aici hormonului de creștere. Sursa: „Sistemul endocrin”, secțiunea Hipofiza / „Sistemul endocrin”, secțiunea Tabelul 13.2."
+        }
+      ],
+      "sourcePages": [
+        260
+      ],
+      "topicId": "hipofiza-glanda-pituitara",
+      "topicLabel": "Hormonul de creștere",
+      "lessonUrl": "sistemul_endocrin.html#hipofiza-glanda-pituitara",
+      "id": "asoc-191"
+    },
+    {
+      "number": 192,
+      "sourceNumber": 192,
+      "sourceChapter": "XIII",
+      "prompt": "Neurotransmițătorul:",
+      "correct": [
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este sintetizat de mitocondrii",
+          "why": "Manualul descrie sinteza continuă și depozitarea neurotransmițătorilor în vezicule sinaptice, iar mitocondriilor le atribuie producerea de ATP. Baremul exclude originea mitocondrială; sursa nu detaliază însă sediile sintezei fiecărui neurotransmițător, deci nu adăugăm o regulă universală nesusținută. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii / „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "B",
+          "text": "prin cuplare cu receptorii membranei postsinaptice poate determina deschiderea sau păstrarea închisă a canalelor de poartă pentru K",
+          "why": "Mecanismul prezentat de manual se referă la canalele de sodiu: deschiderea lor favorizează excitația, iar menținerea lor închisă inhibă impulsul. Varianta înlocuiește sodiul cu potasiul în această descriere, fără ca sursa să susțină substituția. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii."
+        },
+        {
+          "letter": "C",
+          "text": "în sinapsa neuro-motorie simpatică este reprezentat de acetilcolină",
+          "why": "La joncțiunea cu mușchiul scheletic, acetilcolina aparține comenzii motorii somatice. Pentru fibrele simpatice postganglionare, manualul indică noradrenalină; varianta amestecă cele două tipuri de inervație. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii / „Organizarea sistemului nervos”, secțiunea Sistemul nervos autonom."
+        },
+        {
+          "letter": "D",
+          "text": "poate fi implicat în funcții mentale, cum este serotonina",
+          "why": "Tabelul neurotransmițătorilor menționează serotonina ca posibil implicată în funcții mentale, precum și în ritmul circadian și somn. Sursa: „Țesutul nervos”, secțiunea Tabelul 10.2."
+        },
+        {
+          "letter": "E",
+          "text": "eliberat la nivelul sinapselor vegetative reglează activitatea viscerelor",
+          "why": "Neurotransmițătorii sistemului vegetativ transmit comenzi către viscere, mușchi netezi, mușchi cardiac și glande, reglându-le activitatea. Sursa: „Țesutul nervos”, secțiunea Tabelul 10.2 / „Țesutul nervos”, secțiunea Organizarea sistemului nervos."
+        }
+      ],
+      "sourcePages": [
+        260
+      ],
+      "topicId": "sinapsa",
+      "topicLabel": "Neurotransmițătorii",
+      "lessonUrl": "tesutul_nervos.html#sinapsa",
+      "id": "asoc-192"
+    },
+    {
+      "number": 193,
+      "sourceNumber": 193,
+      "sourceChapter": "XIII",
+      "prompt": "Aminoacizii:",
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt utilizați în sinteza proteinelor, conform codului genetic din ADN-ul celular",
+          "why": "Aminoacizii sunt reuniți în proteine într-o secvență care reflectă codul genetic din ADN-ul celulei, conform manualului. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul proteinelor."
+        },
+        {
+          "letter": "B",
+          "text": "sunt introduși în celule sub acțiunea hormonului de creștere",
+          "why": "Hormonul de creștere stimulează transportul activ al aminoacizilor în celule, unde pot fi utilizați la sinteza proteinelor. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul proteinelor."
+        },
+        {
+          "letter": "C",
+          "text": "sunt absorbiți digestiv și ajung pe calea venei porte la ficat",
+          "why": "După absorbția intestinală, aminoacizii sunt transportați la ficat; sistemul port hepatic este calea sanguină care aduce nutrienții din tubul digestiv la acest organ. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul proteinelor / „Sistemul digestiv”, secțiunea Ficatul."
+        },
+        {
+          "letter": "D",
+          "text": "pot proveni din proteinele complete vegetale",
+          "why": "Baremul exclude D, dar manualul spune că din proteinele vegetale lipsesc „frecvent” unii aminoacizi esențiali. Această formulare nu afirmă că toate proteinele vegetale sunt incomplete și nu demonstrează imposibilitatea sugerată de excludere. Cheia se păstrează, iar generalizarea rămâne o ambiguitate a grilei. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul proteinelor."
+        },
+        {
+          "letter": "E",
+          "text": "pot fi sursă de sinteză proteică sub acțiunea testosteronului",
+          "why": "Testosteronul stimulează sinteza proteinelor și depozitarea lor în țesuturi; aminoacizii constituie materialul utilizat pentru această sinteză. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul proteinelor."
+        }
+      ],
+      "sourcePages": [
+        260
+      ],
+      "topicId": "lipide-si-proteine",
+      "topicLabel": "Aminoacizii și sinteza proteică",
+      "lessonUrl": "metabolism_si_nutritie.html#lipide-si-proteine",
+      "id": "asoc-193"
+    },
+    {
+      "number": 194,
+      "sourceNumber": 194,
+      "sourceChapter": "XIII",
+      "prompt": "Calciul:",
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este cel mai des întâlnite în organism",
+          "why": "Manualul precizează că este cel mai des întâlnit element mineral din organism. Acesta este sensul în care baremul acceptă formularea incompletă din variantă; sursa nu îl numește cel mai abundent dintre toate elementele chimice. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul mineralelor."
+        },
+        {
+          "letter": "B",
+          "text": "este necesar coagulării sângelui",
+          "why": "Calciul participă la mecanismele coagulării, inclusiv la conversia protrombinei în trombină; rolul este menționat și în lista mineralelor. Sursa: „Sângele”, secțiunea Coagularea sângelui / „Metabolism și nutriție”, secțiunea Metabolismul mineralelor."
+        },
+        {
+          "letter": "C",
+          "text": "este prezent în structura oaselor și a dinților, asigurând flexibilitatea acestora",
+          "why": "Sărurile minerale cu calciu contribuie la rezistența osului. Flexibilitatea este legată de componenta organică, inclusiv colagenul, astfel că varianta atribuie calciului proprietatea acesteia. Sursa: „Oasele și articulațiile”, secțiunea Țesutul osos."
+        },
+        {
+          "letter": "D",
+          "text": "pătrunde în butonul terminal al neuronului determinând exocitoza veziculei cu neurotransmițător",
+          "why": "Sosirea impulsului deschide canalele de calciu din butonul terminal. Intrarea calciului declanșează exocitoza neurotransmițătorilor din veziculele sinaptice. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii."
+        },
+        {
+          "letter": "E",
+          "text": "este necesar activității musculare și articulare",
+          "why": "Manualul formulează rolul calciului în activitatea „musculară și nervoasă” și în structura osului; baremul exclude asocierea „musculară și articulară”. Nu rezultă din aceste pasaje o demonstrație că funcția articulară nu ar depinde indirect de calciu, astfel că păstrăm cheia și limităm explicația la formularea exactă susținută. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul mineralelor / „Oasele și articulațiile”, secțiunea Remodelarea osoasă / „Oasele și articulațiile”, secțiunea Diartrozele."
+        }
+      ],
+      "sourcePages": [
+        260
+      ],
+      "topicId": "stari-si-minerale",
+      "topicLabel": "Rolurile calciului",
+      "lessonUrl": "metabolism_si_nutritie.html#stari-si-minerale",
+      "id": "asoc-194"
+    },
+    {
+      "number": 195,
+      "sourceNumber": 195,
+      "sourceChapter": "XIII",
+      "prompt": "Mitocondriile:",
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt organite comune prezente în sarcoplasmă",
+          "why": "Sarcoplasma fibrei musculare conține numeroase mitocondrii care furnizează ATP pentru contracția miofibrilelor. Sursa: „Țesutul muscular”, secțiunea Structura celulei musculare."
+        },
+        {
+          "letter": "B",
+          "text": "sunt formate din saci membranoși cu partiție internă",
+          "why": "Figura celulei reprezintă mitocondriile ca organite delimitate de membrane, cu pliuri membranare în interior. Acesta este suportul vizual pentru descrierea lor ca saci membranoși cu compartimentare internă, acceptată de barem. Sursa: „Celula și fiziologia celulară”, figura 3.5 / „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "C",
+          "text": "reprezintă sediul reacțiilor ciclului Krebs",
+          "why": "Manualul situează transformarea acizilor grași în acetil-CoA în mitocondrie și continuă cu intrarea acestuia în ciclul Krebs. Corelat cu prezentarea etapelor respirației celulare, pasajul susține sediul mitocondrial al ciclului. Sursa: „Metabolism și nutriție”, secțiunea Catabolismul lipidelor / „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "D",
+          "text": "sunt prezente în toate celulele sanguine",
+          "why": "Eritrocitele mature sunt descrise ca lipsite de nucleu și organite. Prin urmare, afirmația că toate celulele sanguine au mitocondrii este greșită. Sursa: „Sângele”, secțiunea Globulele roșii."
+        },
+        {
+          "letter": "E",
+          "text": "sunt sediul reacțiilor de respirație celulară, cu consum de oxigen",
+          "why": "Mitocondriile folosesc oxigenul în respirația celulară pentru obținerea ATP; manualul leagă consumul de oxigen de formarea apei în etapa finală. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        }
+      ],
+      "sourcePages": [
+        260
+      ],
+      "topicId": "organite",
+      "topicLabel": "Mitocondriile",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#organite",
+      "id": "asoc-195"
+    },
+    {
+      "number": 196,
+      "sourceNumber": 196,
+      "sourceChapter": "XIII",
+      "prompt": "Glanda suprarenală:",
+      "correct": [
+        "A",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "conține în zona medulară un ganglion simpatic",
+          "why": "Baremul punctează A. Textul și figurile leagă medulara suprarenalei de acțiunea simpatică și de secreția catecolaminelor, însă nu o identifică explicit drept un ganglion simpatic. Păstrăm răspunsul oficial și nu completăm această limită cu explicații din surse externe. Sursa: „Sistemul endocrin”, secțiunea Glandele suprarenale / „Organizarea sistemului nervos”, figura 11.10 / „Sistemul endocrin”, figura 13.8."
+        },
+        {
+          "letter": "B",
+          "text": "este localizată la polul superior al unui organ intraperitoneal",
+          "why": "Suprarenala se află la polul superior al rinichiului, însă rinichiul este retroperitoneal. Cuvântul „intraperitoneal” face asocierea greșită. Sursa: „Sistemul endocrin”, secțiunea Glandele suprarenale / „Sistemul urinar”, secțiunea Rinichii."
+        },
+        {
+          "letter": "C",
+          "text": "cortical, sintetizează din colesterol hormoni ce vor trece transmembranar prin difuziune facilitată",
+          "why": "Hormonii corticali steroizi derivă din colesterol și se dizolvă în fosfolipidele membranei, traversând-o cu ușurință. Manualul nu îi descrie prin transport facilitat de proteine; varianta atribuie mecanismul greșit hormonilor liposolubili. Sursa: „Sistemul endocrin”, secțiunea Descrierea generală a hormonilor."
+        },
+        {
+          "letter": "D",
+          "text": "prin secreția de aldosteron intervine în reglarea echilibrului electrolitic",
+          "why": "Aldosteronul reglează concentrațiile de electroliți, în special sodiu și potasiu, prin efectele asupra reabsorbției și secreției renale. Sursa: „Sistemul endocrin”, secțiunea Glandele suprarenale / „Sistemul urinar”, secțiunea Reglarea funcției renale."
+        },
+        {
+          "letter": "E",
+          "text": "la nivel medular, activitatea este sub controlul ACTH",
+          "why": "ACTH controlează secreția glucocorticoizilor din corticala suprarenalei. Varianta mută acest control la zona medulară. Sursa: „Sistemul endocrin”, secțiunea Hipofiza / „Sistemul endocrin”, secțiunea Glandele suprarenale."
+        }
+      ],
+      "sourcePages": [
+        260
+      ],
+      "topicId": "glandele-suprarenale",
+      "topicLabel": "Glandele suprarenale",
+      "lessonUrl": "sistemul_endocrin.html#glandele-suprarenale",
+      "id": "asoc-196"
+    },
+    {
+      "number": 197,
+      "sourceNumber": 197,
+      "sourceChapter": "XIII",
+      "prompt": "Vena portă:",
+      "correct": [
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "aparține de circulația sistemice, ca și arterele pulmonare",
+          "why": "Vena portă aparține circuitului hepatic, în timp ce arterele pulmonare sunt componente ale circulației pulmonare. Asocierea lor în aceeași circulație sistemică este greșită. Sursa: „Sistemul cardiovascular”, secțiunea Tipuri de circulație sanguină."
+        },
+        {
+          "letter": "B",
+          "text": "se formează prin confluența venelor splenică cu cele mezenterice",
+          "why": "Figura sistemului port arată venele splenică și mezenterice care converg în traseul venos portal spre ficat. Sursa: „Sistemul cardiovascular”, figura 15.11 / „Sistemul cardiovascular”, secțiunea Tipuri de circulație sanguină."
+        },
+        {
+          "letter": "C",
+          "text": "transportă nutrimentele absorbite din intestinul subțire",
+          "why": "Vena portă transportă sângele cu nutrienți absorbiți din tractul digestiv către ficat, unde aceștia sunt prelucrați. Sursa: „Sistemul cardiovascular”, secțiunea Tipuri de circulație sanguină / „Sistemul digestiv”, secțiunea Ficatul."
+        },
+        {
+          "letter": "D",
+          "text": "conține oxihemoglobină în procent de 98 %",
+          "why": "Sângele portal este descris ca sărac în oxigen după trecerea prin țesuturile digestive. Procentul de 98% din lecția respiratorie desemnează proporția oxigenului transportat legat de hemoglobină, nu o concentrație de oxihemoglobină specifică venei porte. Sursa: „Sistemul cardiovascular”, secțiunea Tipuri de circulație sanguină / „Sistemul respirator”, secțiunea Schimbul de gaze."
+        },
+        {
+          "letter": "E",
+          "text": "transportă aminoacizi și chilomicroni",
+          "why": "Aminoacizii ajung la ficat pe cale portală, dar chilomicronii sunt preluați inițial de capilarele limfatice intestinale. Varianta combină două căi de absorbție diferite. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros / „Sistemul digestiv”, secțiunea Absorbția intestinală / „Metabolism și nutriție”, secțiunea Metabolismul proteinelor."
+        }
+      ],
+      "sourcePages": [
+        260
+      ],
+      "topicId": "tipuri-de-circulatie-sanguina",
+      "topicLabel": "Circulația portală hepatică",
+      "lessonUrl": "sistemul_cardiovascular.html#tipuri-de-circulatie-sanguina",
+      "id": "asoc-197"
+    },
+    {
+      "number": 198,
+      "sourceNumber": 198,
+      "sourceChapter": "XIII",
+      "prompt": "Diencefalul prezintă:",
+      "correct": [
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "hipotalamusul - care prin conexiunea cu epifiza, controlează metabolismul celular",
+          "why": "Manualul descrie conexiunea hipotalamusului cu hipofiza pentru controlul endocrin. Epifiza, prezentată separat ca sursă de melatonină, nu este glanda din această relație de control. Sursa: „Organizarea sistemului nervos”, secțiunea Tabelul 11.2 / „Sistemul endocrin”, secțiunea Hipofiza / „Sistemul endocrin”, secțiunea Alte glande endocrine."
+        },
+        {
+          "letter": "B",
+          "text": "o cavitate ce comunică cu ventriculul IV prin apeductul cerebral",
+          "why": "Ventriculul III este cavitatea diencefalică, iar figura arată comunicarea sa cu ventriculul IV prin apeductul cerebral. Sursa: „Organizarea sistemului nervos”, secțiunea Emisferele cerebrale / „Organizarea sistemului nervos”, figura 11.6."
+        },
+        {
+          "letter": "C",
+          "text": "nuclei - care secretă hormoni depozitați în neurohipofiză",
+          "why": "Nucleii hipotalamici sintetizează ADH și oxitocină, care sunt transportate, depozitate și apoi eliberate de neurohipofiză. Hipotalamusul este componentă a diencefalului. Sursa: „Sistemul endocrin”, secțiunea Hipofiza / „Sistemul endocrin”, secțiunea Tabelul 13.2."
+        },
+        {
+          "letter": "D",
+          "text": "talamusul - prin care trec căi ascendente (calea vizuală, calea acustică) ce se proiectează cortical, dezvoltând senzații",
+          "why": "Tabelul manualului exclude explicit vederea și auzul din informațiile senzoriale transmise prin talamus, alături de miros. Excluderea variantei urmează această formulare a sursei autorizate, fără a introduce alte descrieri anatomice. Sursa: „Organizarea sistemului nervos”, secțiunea Tabelul 11.2."
+        },
+        {
+          "letter": "E",
+          "text": "hipotalamusul - care prezintă centrii pentru senzația de foame și reglarea greutății",
+          "why": "Hipotalamusul conține centri implicați în senzația de foame și în reglarea aportului alimentar și a greutății corpului. Sursa: „Organizarea sistemului nervos”, secțiunea Diencefalul."
+        }
+      ],
+      "sourcePages": [
+        261
+      ],
+      "topicId": "sistem-nervos-central",
+      "topicLabel": "Structurile diencefalului",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-central",
+      "id": "asoc-198"
+    },
+    {
+      "number": 199,
+      "sourceNumber": 199,
+      "sourceChapter": "XIII",
+      "prompt": "Despre metabolism sunt adevărate afirmațiile:",
+      "correct": [
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "catabolismul degradează moleculele mari cu consum de energie",
+          "why": "Catabolismul degradează molecule complexe și eliberează energie. Consumul energetic pentru sinteză este caracteristic anabolismului în comparația manualului. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "B",
+          "text": "sinteza de glicogen, trigliceride și proteine necesită energie",
+          "why": "Sinteza glicogenului, trigliceridelor și proteinelor este inclusă între procesele anabolice, care necesită energie. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "C",
+          "text": "reacțiile anabolice diverg de la căile metabolice principale",
+          "why": "Tabelul comparativ afirmă că reacțiile anabolice diverg de la căile metabolice principale, în timp ce cele catabolice converg către acestea. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "D",
+          "text": "glicoliza, ciclul Krebs și sistemul transportor de electroni necesită oxigen",
+          "why": "Manualul descrie obținerea energiei din glucoză și fără oxigen în mușchi, iar glicoliza este prima etapă a degradării glucozei. Prin urmare, necesitatea oxigenului nu poate fi atribuită în bloc tuturor celor trei procese enumerate, inclusiv glicolizei. Sursa: „Țesutul muscular”, secțiunea Energia necesară contracției musculare / „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "E",
+          "text": "reacțiile de oxidare constau în cedarea de electroni cu obținerea formei reduse",
+          "why": "Cedarea de electroni produce forma oxidată a substratului. Forma redusă rezultă prin primire de electroni, deci varianta inversează rezultatul oxidării. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        }
+      ],
+      "sourcePages": [
+        261
+      ],
+      "topicId": "metabolismul-glucidelor",
+      "topicLabel": "Anabolism și catabolism",
+      "lessonUrl": "metabolism_si_nutritie.html#metabolismul-glucidelor",
+      "id": "asoc-199"
+    },
+    {
+      "number": 200,
+      "sourceNumber": 200,
+      "sourceChapter": "XIII",
+      "prompt": "Despre mușchii intercostali externi se pot afirma următoarele:",
+      "correct": [
+        "A",
+        "B"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "la scăderea concentrației de oxigen plasmatic, sunt stimulați de centrul de control respirator",
+          "why": "Scăderea oxigenului dizolvat stimulează chemoreceptorii carotidieni și aortici, care activează centrul respirator; acesta trimite comenzi mușchilor respiratori pentru creșterea ventilației. Sursa: „Sistemul respirator”, secțiunea Controlul respirației."
+        },
+        {
+          "letter": "B",
+          "text": "pot să fie controlați și prin impulsuri cu origine în lobul frontal",
+          "why": "Manualul descrie controlul voluntar cortical al respirației și localizează aria motorie în lobul frontal. Corelarea acestor pasaje susține posibilitatea unei comenzi voluntare asupra mușchilor respiratori. Sursa: „Sistemul respirator”, secțiunea Controlul respirației / „Organizarea sistemului nervos”, secțiunea Emisferele cerebrale."
+        },
+        {
+          "letter": "C",
+          "text": "sunt inervați de nervii intercostali, fibre ale plexului toracic",
+          "why": "Manualul enumeră plexurile cervical, brahial, lombar și sacral, iar figura arată separat nervii toracici, fără rețeaua unui plex toracic. Încadrarea nervilor intercostali într-un astfel de plex este partea greșită a variantei. Sursa: „Organizarea sistemului nervos”, secțiunea Nervii cranieni și spinali / „Organizarea sistemului nervos”, figura 11.9."
+        },
+        {
+          "letter": "D",
+          "text": "structural, sunt formați din celule fusiforme contractile",
+          "why": "Mușchii intercostali mobilizează coastele și se încadrează în musculatura scheletică; tabelul descrie fibrele scheletice alungite și cilindrice. Forma fusiformă aparține fibrelor musculare netede. Sursa: „Țesutul muscular”, secțiunea Tabelul 8.1 / „Sistemul respirator”, secțiunea Ventilația."
+        },
+        {
+          "letter": "E",
+          "text": "utilizează energie eliberată prin reacțiile sistemului transportor de electroni și ale chemiosmozei desfășurate citoplasmatic",
+          "why": "Manualul distinge reacțiile respiratorii din citoplasmă de cele mitocondriale și leagă finalizarea cu oxigen și producerea ATP de mitocondrii. Baremul exclude localizarea „citoplasmatică” a etapelor indicate. Termenul rămâne ambiguu, fiindcă organitele sunt în citoplasmă; excluderea corespunde sensului de mediu extramitocondrial, nu negării sediului mitocondriilor în celulă. Sursa: „Țesutul muscular”, secțiunea Energia necesară contracției musculare / „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        }
+      ],
+      "sourcePages": [
+        261
+      ],
+      "topicId": "respiratie",
+      "topicLabel": "Mușchii respiratori",
+      "lessonUrl": "sistemul_respirator.html#respiratie",
+      "id": "asoc-200"
+    },
+    {
+      "number": 201,
+      "sourceNumber": 201,
+      "sourceChapter": "XIII",
+      "prompt": "Citoscheletul:",
+      "correct": [
+        "A",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "conține microtubuli, microfilamente și filamente intermediare",
+          "why": "Microtubulii, microfilamentele și filamentele intermediare sunt cele trei componente principale enumerate ale citoscheletului; toate au subunități proteice. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "B",
+          "text": "intervine în respirația celulară",
+          "why": "Manualul atribuie citoscheletului susținerea celulei, iar mitocondriilor etape ale respirației celulare și producerea ATP. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "C",
+          "text": "are rol de suport celular",
+          "why": "Rețeaua interconectată de fibre și filamente servește explicit drept structură de suport a celulei. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "D",
+          "text": "participă la procesarea lipidelor și proteinelor celulare",
+          "why": "Procesarea și împachetarea proteinelor și lipidelor sunt funcții ale aparatului Golgi; citoscheletul este descris ca suport celular. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "E",
+          "text": "asigură mișcarea spermatozoizilor",
+          "why": "Baremul exclude E. Manualul atribuie mișcarea spermatozoidului flagelului și enumeră separat componentele citoscheletului. Lecția despre reproducerea masculină descrie microtubuli în piesa intermediară și filamente în coadă, fără să lege explicit mișcarea flagelului de citoschelet. Sursele nu justifică negarea categorică a unei asemenea legături. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele / „Sistemul reproducător masculin”, secțiunea Anatomia sistemului reproducător masculin / „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele (figura 3.5)."
+        }
+      ],
+      "sourcePages": [
+        261
+      ],
+      "topicId": "celula-si-fiziologia-celulara",
+      "topicLabel": "Celula și fiziologia celulară",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#organite",
+      "id": "asoc-201"
+    },
+    {
+      "number": 202,
+      "sourceNumber": 202,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați relațiile corecte dintre organitele celulare și rolul lor:",
+      "correct": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "reticul endoplasmatic rugos - sinteză de proteine",
+          "why": "Reticulul rugos are ribozomi atașați; aceștia combină aminoacizii pentru a forma proteine. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "B",
+          "text": "aparat Golgi - procesarea glucidelor, lipidelor și proteinelor în vezicule",
+          "why": "Baremul exclude B. Pasajul despre Golgi menționează procesarea și împachetarea proteinelor și lipidelor în vezicule, fără a atribui explicit și procesarea glucidelor. Absența acestei precizări nu dovedește că Golgi nu poate interveni asupra glucidelor; nu adăugăm un mecanism nespecificat de manual. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "C",
+          "text": "reticul endoplasmatic neted - depozitarea ionilor de calciu",
+          "why": "Depozitarea calciului este enumerată printre funcțiile reticulului endoplasmatic neted. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "D",
+          "text": "lizozomii - digestie celulară",
+          "why": "Lizozomul conține enzime pentru digestia celulară, care degradează particule nutritive și eliberează produșii finali. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "E",
+          "text": "reticul endoplasmatic neted - sinteză de lipide",
+          "why": "Reticulul endoplasmatic neted este sediul sintezei lipidelor și a membranei, conform descrierii organitelor. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        }
+      ],
+      "sourcePages": [
+        261
+      ],
+      "topicId": "celula-si-fiziologia-celulara",
+      "topicLabel": "Celula și fiziologia celulară",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#organite",
+      "id": "asoc-202"
+    },
+    {
+      "number": 203,
+      "sourceNumber": 203,
+      "sourceChapter": "XIII",
+      "prompt": "Referitor la nucleul celulei se poate afirma că:",
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "prezintă o membrană nucleară dublă",
+          "why": "Învelișul nuclear este o structură membranară dublă, descrisă prin două bistraturi fosfolipidice. Sursa: „Celula și fiziologia celulară”, secțiunea Nucleul."
+        },
+        {
+          "letter": "B",
+          "text": "este absent la nivelul eritrocitelor",
+          "why": "Globulele roșii reprezintă excepția indicată de manual de la prezența nucleului în celulele umane. Sursa: „Celula și fiziologia celulară”, secțiunea Nucleul."
+        },
+        {
+          "letter": "C",
+          "text": "la nivelul învelișului nuclear prezintă pori",
+          "why": "Porii învelișului nuclear permit comunicarea dintre mediul intern al nucleului și citoplasmă. Sursa: „Celula și fiziologia celulară”, secțiunea Nucleul."
+        },
+        {
+          "letter": "D",
+          "text": "conține materialul genetic",
+          "why": "ADN-ul nuclear este organizat în cromozomi, ale căror segmente funcționale sunt genele. Sursa: „Celula și fiziologia celulară”, secțiunea Nucleul."
+        },
+        {
+          "letter": "E",
+          "text": "poate prezenta unul sau mai mulți nucleoli",
+          "why": "Baremul exclude E, dar manualul precizează că în nucleu există „două sau mai multe” mase numite nucleoli. Aceasta confirmă partea „mai mulți” a variantei; formularea mai largă „unul sau mai mulți” nu poate fi respinsă integral doar prin pasajul citat. Figura etichetează nucleolul, fără a stabili o regulă numerică. Sursa: „Celula și fiziologia celulară”, secțiunea Nucleul / „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele (figura 3.5)."
+        }
+      ],
+      "sourcePages": [
+        261
+      ],
+      "topicId": "celula-si-fiziologia-celulara",
+      "topicLabel": "Celula și fiziologia celulară",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#nucleu",
+      "id": "asoc-203"
+    },
+    {
+      "number": 204,
+      "sourceNumber": 204,
+      "sourceChapter": "XIII",
+      "prompt": "Despre transportul la nivelul membranei celulare se pot afirma următoarele:",
+      "correct": [
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "necesită consum de energie provenită din ATP - transportul pasiv",
+          "why": "Consumul de ATP este atribuit transportului activ împotriva gradientului; difuziunea, mecanism pasiv, se desfășoară conform gradientului. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "B",
+          "text": "se realizează cu consum energetic pentru difuziunea apei",
+          "why": "Difuziunea apei este osmoza. Manualul o separă de transportul activ care folosește ATP. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "C",
+          "text": "se desfășoară conform gradientului de concentrație pentru moleculele de apă în procesul de osmoză",
+          "why": "Apa trece spre mediul cu concentrație mai mare de solvit, deci dinspre concentrația mai mare de apă spre cea mai mică. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "D",
+          "text": "este limitat de numărul proteinelor transportoare în difuziunea facilitată",
+          "why": "Numărul proteinelor transportoare determină rata difuziunii facilitate și limitează capacitatea acestui transport. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "E",
+          "text": "pentru Na și K se realizează întotdeauna prin difuziune",
+          "why": "Sodiul poate fi transportat activ, iar secreția renală a potasiului este reglată de aldosteron. Formularea „întotdeauna prin difuziune” este infirmată de transportul activ al sodiului. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare / „Sistemul urinar”, secțiunea Activitatea hormonală și urina."
+        }
+      ],
+      "sourcePages": [
+        261
+      ],
+      "topicId": "celula-si-fiziologia-celulara",
+      "topicLabel": "Celula și fiziologia celulară",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#transport",
+      "id": "asoc-204"
+    },
+    {
+      "number": 205,
+      "sourceNumber": 205,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați asocierile corecte referitoare la transportul transmembranar:",
+      "correct": [
+        "B",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "transport conform gradientului de concentrație, cu consum de ATP - lipidele",
+          "why": "Lipidele pot trece prin membrană prin difuziune; consumul de ATP și deplasarea împotriva gradientului caracterizează transportul activ. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "B",
+          "text": "exocitoză la nivelul butonilor terminali ai neuronului - vezicula cu mediator",
+          "why": "La sosirea impulsului, calciul pătrunde în butonul terminal și determină eliberarea mediatorului din vezicule prin exocitoză. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii."
+        },
+        {
+          "letter": "C",
+          "text": "fagocitoza microbilor din circulație - celulele roșii",
+          "why": "Manualul atribuie îndepărtarea microbilor din circulație globulelor albe prin fagocitoză, nu globulelor roșii. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "D",
+          "text": "difuziunea și osmoza se realizează conform gradientului de concentrație",
+          "why": "Difuziunea urmează gradientul moleculelor; osmoza este difuziunea apei spre mediul cu mai mult solvit. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "E",
+          "text": "difuziune facilitată la nivelul membranei hematiei - glucoza",
+          "why": "Tabelul mecanismelor membranare oferă glucoza care intră în hematii ca exemplu de difuziune facilitată. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        }
+      ],
+      "sourcePages": [
+        261,
+        262
+      ],
+      "topicId": "celula-si-fiziologia-celulara",
+      "topicLabel": "Celula și fiziologia celulară",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#transport",
+      "id": "asoc-205"
+    },
+    {
+      "number": 206,
+      "sourceNumber": 206,
+      "sourceChapter": "XIII",
+      "prompt": "Osul compact:",
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "are lamele osoase, cu lacune în care se află osteocite",
+          "why": "Lamelele osoase din jurul canalului central conțin lacune, iar osteocitele sunt situate în aceste lacune. Sursa: „Oasele și articulațiile”, secțiunea Structura histologică a osului."
+        },
+        {
+          "letter": "B",
+          "text": "prezintă lamele interstițiale în spațiile dintre osteoane",
+          "why": "Între osteoane se găsesc lamele interstițiale, descrise ca osteoane incomplete. Sursa: „Oasele și articulațiile”, secțiunea Structura histologică a osului."
+        },
+        {
+          "letter": "C",
+          "text": "este format din osteoane în mijlocul cărora se găsește câte un canal central, cu nervi și capilare sanguine",
+          "why": "Unitățile osului compact sunt osteoanele; canalul central al fiecăruia conține nervi și capilare sanguine. Sursa: „Oasele și articulațiile”, secțiunea Structura histologică a osului."
+        },
+        {
+          "letter": "D",
+          "text": "conține măduvă osoasă roșie în diafiza humerusului și femurului",
+          "why": "Manualul localizează măduva roșie în osul spongios, inclusiv la capetele humerusului și femurului. Cavitatea diafizei este descrisă cu măduvă galbenă. Sursa: „Oasele și articulațiile”, secțiunea Țesutul osos / „Oasele și articulațiile”, secțiunea Structura oaselor lungi."
+        },
+        {
+          "letter": "E",
+          "text": "prezintă canale perforante ce leagă canalele centrale între ele",
+          "why": "Canalele perforante realizează legături între canalele centrale ale osteoanelor. Sursa: „Oasele și articulațiile”, secțiunea Structura histologică a osului."
+        }
+      ],
+      "sourcePages": [
+        262
+      ],
+      "topicId": "oasele-si-articulatiile",
+      "topicLabel": "Oasele și articulațiile",
+      "lessonUrl": "oasele_si_articulatiile.html#osul",
+      "id": "asoc-206"
+    },
+    {
+      "number": 207,
+      "sourceNumber": 207,
+      "sourceChapter": "XIII",
+      "prompt": "Activitatea testiculului este controlată de:",
+      "correct": [
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "hormonul eliberator al gonadotropinelor, transportat de-a lungul infundibulului în neurohipofiză",
+          "why": "GnRH controlează eliberarea FSH și LH din adenohipofiză; hormonii hipotalamici care o controlează ajung prin sistemul port hipotalamo-hipofizar. Traseul spre neurohipofiză nu descrie această reglare. Sursa: „Sistemul endocrin”, secțiunea Hipofiza / „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "B",
+          "text": "FSH, eliberat de hipofiza anterioară, care induce spermatogeneza în tubii seminiferi",
+          "why": "FSH este eliberat de hipofiza anterioară și induce spermatogeneza în tubii seminiferi. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "C",
+          "text": "hormonul luteinizant, care stimulează producția de testosteron din celulele interstițiale",
+          "why": "LH stimulează producția de testosteron în celulele interstițiale testiculare. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "D",
+          "text": "testosteron, care inhibă producerea de LH și de spermatozoizi",
+          "why": "Testosteronul inhibă producerea de LH, dar stimulează producerea spermatozoizilor, conform tabelului; a doua parte a variantei inversează efectul. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "E",
+          "text": "LH, eliberat de adenohipofiză, care stimulează maturarea celulelor interstițiale",
+          "why": "LH provine din hipofiza anterioară, iar tabelul îi atribuie stimularea maturării celulelor interstițiale. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        }
+      ],
+      "sourcePages": [
+        262
+      ],
+      "topicId": "sistemul-reproducator-masculin",
+      "topicLabel": "Sistemul reproducător masculin",
+      "lessonUrl": "sistemul_reproducator_masculin.html#hormoni",
+      "id": "asoc-207"
+    },
+    {
+      "number": 208,
+      "sourceNumber": 208,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la absorbția intestinală:",
+      "correct": [
+        "A",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "aminoacizii și produșii de digestie ai acizilor nucleici ajung în capilarele sanguine ale vilozităților intestinale",
+          "why": "Capilarele vilozităților primesc produșii digestiei proteinelor și acizilor nucleici; chiliferul central primește produșii digestiei lipidelor. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "B",
+          "text": "glucoza este absorbită împreună cu ionii de sodiu în chiliferul central",
+          "why": "Glucoza și ionii de sodiu ajung în capilarele sanguine. Chiliferul central este calea indicată pentru produșii lipidici, nu pentru glucoză. Sursa: „Sistemul digestiv”, secțiunea Absorbția intestinală."
+        },
+        {
+          "letter": "C",
+          "text": "lipidele se absorb în principal prin transport activ",
+          "why": "Pentru lipide, manualul numește difuziunea drept principal mecanism de absorbție, nu transportul activ. Sursa: „Sistemul digestiv”, secțiunea Absorbția intestinală."
+        },
+        {
+          "letter": "D",
+          "text": "acizii grași cu lanț lung se absorb prin difuziune facilitată",
+          "why": "Baremul exclude D. Manualul descrie absorbția lipidelor prin difuziune și resinteza acizilor grași cu lanț lung în trigliceride; nu precizează o difuziune facilitată pentru acești acizi grași. Nu se poate deduce din această omisiune o interdicție generală a participării proteinelor transportoare. Sursa: „Sistemul digestiv”, secțiunea Absorbția intestinală."
+        },
+        {
+          "letter": "E",
+          "text": "apa și ionul de sodiu se pot absorbi și în intestinul gros",
+          "why": "Intestinul gros absoarbe apă și ioni, sodiul fiind principalul ion absorbit menționat. Sursa: „Sistemul digestiv”, secțiunea Intestinul gros."
+        }
+      ],
+      "sourcePages": [
+        262
+      ],
+      "topicId": "sistemul-digestiv",
+      "topicLabel": "Sistemul digestiv",
+      "lessonUrl": "sistemul_digestiv.html#intestinele",
+      "id": "asoc-208"
+    },
+    {
+      "number": 209,
+      "sourceNumber": 209,
+      "sourceChapter": "XIII",
+      "prompt": "În organism, enzimele pot determina:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "descompunerea acetilcolinei, după legarea acesteia de receptorul de pe membrana postsinaptică",
+          "why": "După legarea acetilcolinei de receptori, colinesteraza o descompune în sinapsă și limitează durata stimulului. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii."
+        },
+        {
+          "letter": "B",
+          "text": "neutralizarea acidității chimului gastric",
+          "why": "Neutralizarea acidității chimului este atribuită bicarbonatului din sucul pancreatic și bilă, nu unei acțiuni enzimatice digestive. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "C",
+          "text": "formarea acidului carbonic în eritrocite",
+          "why": "Anhidraza carbonică din globulele roșii catalizează combinarea dioxidului de carbon cu apa, rezultând acid carbonic. Sursa: „Sistemul respirator”, secțiunea Schimbul de gaze."
+        },
+        {
+          "letter": "D",
+          "text": "descompunerea trigliceridelor cu eliberare de acizi grași și glicerol",
+          "why": "Lipazele descompun trigliceridele și eliberează acizi grași și glicerol, produși enumerați și în tabelul enzimelor digestive. Sursa: „Sistemul digestiv”, secțiunea Enzimele digestive; tabelul 18.4 / „Metabolism și nutriție”, secțiunea Metabolismul lipidelor și al proteinelor."
+        },
+        {
+          "letter": "E",
+          "text": "emulsionarea lipidelor în lumenul intestinului subțire",
+          "why": "Emulsionarea este realizată de sărurile biliare, despre care manualul precizează că nu sunt enzime. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros / „Sistemul digestiv”, secțiunea Enzimele digestive; tabelul 18.4."
+        }
+      ],
+      "sourcePages": [
+        262
+      ],
+      "topicId": "celula-si-fiziologia-celulara",
+      "topicLabel": "Celula și fiziologia celulară",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#organite",
+      "id": "asoc-209"
+    },
+    {
+      "number": 210,
+      "sourceNumber": 210,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele afirmații sunt corecte:",
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "în mugurele gustativ și în mucoasa olfactivă se găsesc chemoreceptori",
+          "why": "Mucoasa olfactivă și mugurele gustativ au chemoreceptori care detectează substanțe chimice. Sursa: „Organele de simț”, secțiunea Receptorii; tabelul 12.1."
+        },
+        {
+          "letter": "B",
+          "text": "discurile Merkel din piele detectează stimuli tactili",
+          "why": "Discurile Merkel sunt receptori cutanați pentru stimuli tactili, conform listei receptorilor. Sursa: „Organele de simț”, secțiunea Simțul tactil."
+        },
+        {
+          "letter": "C",
+          "text": "pata oarbă nu conține receptori vizuali",
+          "why": "Discul optic, numit pata oarbă, este locul de origine al nervului optic și nu conține receptori vizuali. Sursa: „Organele de simț”, secțiunea Fiziologia vederii."
+        },
+        {
+          "letter": "D",
+          "text": "în hipermetropie, imaginea se formează în fața retinei",
+          "why": "În hipermetropie imaginea se formează în spatele retinei. Formarea în fața retinei caracterizează miopia. Sursa: „Organele de simț”, secțiunea Tulburările de vedere."
+        },
+        {
+          "letter": "E",
+          "text": "echilibrul dinamic este menținut prin intervenția maculelor din utriculă și saculă",
+          "why": "Manualul asociază maculele utriculei și saculei echilibrului static; pentru echilibrul dinamic descrie celulele ciliate din ampulele canalelor semicirculare. Sursa: „Organele de simț”, secțiunea Echilibrul."
+        }
+      ],
+      "sourcePages": [
+        262
+      ],
+      "topicId": "organele-de-simt",
+      "topicLabel": "Organele de simț",
+      "lessonUrl": "organele_de_simt.html#alte-simturi",
+      "id": "asoc-210"
+    },
+    {
+      "number": 211,
+      "sourceNumber": 211,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "celulele parietale ale glandelor gastrice secretă acid clorhidric, proces controlat de gastrină",
+          "why": "Celulele parietale secretă HCl, iar gastrina din mucoasa gastrică controlează această secreție. Sursa: „Sistemul digestiv”, secțiunea Stomacul."
+        },
+        {
+          "letter": "B",
+          "text": "sucul pancreatic conține lipaza pancreatică ce descompune lipide emulsionate în prealabil",
+          "why": "Lipaza pancreatică descompune lipidele după emulsionarea lor de către sărurile biliare. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "C",
+          "text": "gastrina din sucul pancreatic stimulează eliberarea acestuia în duoden",
+          "why": "Gastrina este hormon produs în mucoasa stomacului. Eliberarea sucului pancreatic este controlată de secretină și colecistochinină, nu de gastrină aflată în acest suc. Sursa: „Sistemul digestiv”, secțiunea Stomacul / „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "D",
+          "text": "peptidazele produse de celulele intestinului subțire transformă glicogenul în aminoacizi liberi",
+          "why": "Peptidazele acționează asupra produșilor proteici, formând aminoacizi; glicogenul este un glucid, nu substratul lor. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "E",
+          "text": "bila și sucul pancreatic conțin bicarbonat cu rol în neutralizarea acidității gastrice",
+          "why": "Atât sucul pancreatic, cât și bila conțin bicarbonat care neutralizează aciditatea conținutului venit din stomac. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        }
+      ],
+      "sourcePages": [
+        262
+      ],
+      "topicId": "sistemul-digestiv",
+      "topicLabel": "Sistemul digestiv",
+      "lessonUrl": "sistemul_digestiv.html#organele-anexe",
+      "id": "asoc-211"
+    },
+    {
+      "number": 212,
+      "sourceNumber": 212,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele noțiuni sunt adevărate:",
+      "correct": [
+        "A",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "epinefrina stimulează eliberarea acizilor grași din țesutul adipos",
+          "why": "Epinefrina este enumerată între hormonii care stimulează eliberarea acizilor grași din țesutul adipos. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul lipidelor și al proteinelor."
+        },
+        {
+          "letter": "B",
+          "text": "hormonii sexuali inhibă sinteza proteică",
+          "why": "Testosteronul și estrogenii stimulează sinteza proteică și depozitarea proteinelor; varianta inversează efectul descris. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul lipidelor și al proteinelor."
+        },
+        {
+          "letter": "C",
+          "text": "zincul este esențial pentru creșterea normală",
+          "why": "Zincul intră în structura mai multor enzime și este prezentat drept esențial pentru creșterea normală. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul mineralelor."
+        },
+        {
+          "letter": "D",
+          "text": "în starea postabsorbtivă, se eliberează cantități mari de insulină din celulele beta pancreatice",
+          "why": "Insulina este crescută în starea de absorbție. În starea postabsorbtivă, manualul descrie un nivel ridicat al glucagonului. Sursa: „Metabolism și nutriție”, secțiunea Stări metabolice."
+        },
+        {
+          "letter": "E",
+          "text": "nivelul corpilor cetonici în sânge este crescut atunci când dieta este bogată în lipide și săracă în glucide",
+          "why": "Manualul leagă dieta bogată în lipide și săracă în glucide de acumularea corpilor cetonici, prin accelerarea catabolismului lipidic. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul lipidelor și al proteinelor."
+        }
+      ],
+      "sourcePages": [
+        262,
+        263
+      ],
+      "topicId": "metabolism-si-nutritie",
+      "topicLabel": "Metabolism și nutriție",
+      "lessonUrl": "metabolism_si_nutritie.html#stari-si-minerale",
+      "id": "asoc-212"
+    },
+    {
+      "number": 213,
+      "sourceNumber": 213,
+      "sourceChapter": "XIII",
+      "prompt": "Glucoza:",
+      "correct": [
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este absorbită din stomac și intestinul gros",
+          "why": "Manualul admite absorbția unor cantități mici de glucoză din stomac, dar plasează absorbția monozaharidelor în intestinul subțire; pentru colon enumeră apa și ionii. Asocierea stomac–intestin gros nu redă sediile descrise pentru glucoză. Sursa: „Sistemul digestiv”, secțiunea Stomacul / „Sistemul digestiv”, secțiunea Absorbția intestinală / „Sistemul digestiv”, secțiunea Intestinul gros."
+        },
+        {
+          "letter": "B",
+          "text": "poate fi stocată la nivel hepatic sub formă de glicogen",
+          "why": "Când glicemia este ridicată, glucoza este stocată în ficat ca glicogen prin glicogenogeneză. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "C",
+          "text": "reprezintă principala sursă de energie pentru sistemul nervos",
+          "why": "Sistemul nervos folosește în mod normal glucoza ca principală sursă energetică, motiv pentru care alte țesuturi o economisesc în post. Sursa: „Metabolism și nutriție”, secțiunea Stări metabolice."
+        },
+        {
+          "letter": "D",
+          "text": "constituie produsul final al degradării amidonului sub acțiunea amilazei pancreatice",
+          "why": "Amilaza pancreatică transformă amidonul în maltoză; maltaza formează ulterior glucoza din maltoză. Sursa: „Sistemul digestiv”, secțiunea Enzimele digestive; tabelul 18.4."
+        },
+        {
+          "letter": "E",
+          "text": "este reabsorbită prin transport activ la nivelul tubului contort proximal al nefronului",
+          "why": "Tubul proximal reabsoarbe glucoza prin transport activ cu transportori specifici și energie din ATP. Sursa: „Sistemul urinar”, secțiunea Structura și fiziologia nefronului."
+        }
+      ],
+      "sourcePages": [
+        263
+      ],
+      "topicId": "metabolism-si-nutritie",
+      "topicLabel": "Metabolism și nutriție",
+      "lessonUrl": "metabolism_si_nutritie.html#metabolismul-glucidelor",
+      "id": "asoc-213"
+    },
+    {
+      "number": 214,
+      "sourceNumber": 214,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "moleculele de apă se reabsorb prin osmoză din ramura descendentă a ansei Henle",
+          "why": "Sarea acumulată în interstițiul medular creează gradientul osmotic care atrage apa din ramura descendentă a ansei Henle. Sursa: „Sistemul urinar”, secțiunea Structura și fiziologia nefronului."
+        },
+        {
+          "letter": "B",
+          "text": "vezicule cu substanțe solide ajung în celule prin pinocitoză",
+          "why": "Preluarea materialului solid este fagocitoză; pinocitoza se referă la picături de lichid. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "C",
+          "text": "ionii de sodiu sunt reabsorbiți activ din fluidul tubular",
+          "why": "Sodiul este transportat activ din fluidul tubular spre sânge, proces descris pentru tubul proximal și distal. Sursa: „Sistemul urinar”, secțiunea Structura și fiziologia nefronului."
+        },
+        {
+          "letter": "D",
+          "text": "rata difuziunii facilitate depinde de numărul moleculelor transportoare",
+          "why": "Rata difuziunii facilitate este determinată de numărul proteinelor transportoare disponibile. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "E",
+          "text": "lipidele sunt absorbite din tubul digestiv cu ajutorul energiei furnizate de ATP",
+          "why": "Manualul descrie difuziunea drept principal mecanism de absorbție a lipidelor; folosirea ATP caracterizează transportul activ. Sursa: „Sistemul digestiv”, secțiunea Absorbția intestinală."
+        }
+      ],
+      "sourcePages": [
+        263
+      ],
+      "topicId": "celula-si-fiziologia-celulara",
+      "topicLabel": "Celula și fiziologia celulară",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#transport",
+      "id": "asoc-214"
+    },
+    {
+      "number": 215,
+      "sourceNumber": 215,
+      "sourceChapter": "XIII",
+      "prompt": "Fibre musculare cu un singur nucleu central se găsesc:",
+      "correct": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "într-un mușchi circular, situat la extremitatea superioară a stomacului",
+          "why": "Mușchiul circular de la intrarea în stomac este sfincterul esofagian inferior, în contextul musculaturii netede. Fibrele netede au un nucleu central. Sursa: „Sistemul digestiv”, secțiunea Esofagul / „Țesutul muscular”, secțiunea Tipurile de țesut muscular; tabelul 8.1."
+        },
+        {
+          "letter": "B",
+          "text": "în mușchii ce răspund la stimularea transmisă prin nervul frenic",
+          "why": "Mușchii respiratori sunt descriși ca mușchi scheletici; aceștia au numeroși nuclei periferici, nu un singur nucleu central. Sursa: „Sistemul respirator”, secțiunea Respirația / „Țesutul muscular”, secțiunea Tipurile de țesut muscular; tabelul 8.1."
+        },
+        {
+          "letter": "C",
+          "text": "în structura unor glande de tip alveolar, situate în regiunea toracică anterioară",
+          "why": "Glandele alveolare din regiunea toracică anterioară sunt glandele mamare. Manualul numește celulele lor țintă pentru oxitocină fibre musculare netede, iar tabelul muscular le atribuie un nucleu central. Sursa: „Sistemul reproducător feminin”, secțiunea Glandele mamare / „Sistemul endocrin”, secțiunea Hipofiza / „Țesutul muscular”, secțiunea Tipurile de țesut muscular; tabelul 8.1."
+        },
+        {
+          "letter": "D",
+          "text": "în peretele unui sac distensibil situat posterior de simfiza pubiană",
+          "why": "Sacul distensibil posterior de simfiza pubiană este vezica urinară; pereții ei au fibre musculare netede cu un nucleu central. Sursa: „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii / „Țesutul muscular”, secțiunea Tipurile de țesut muscular; tabelul 8.1."
+        },
+        {
+          "letter": "E",
+          "text": "în stratul mijlociu al peretelui unui organ cavitar, situat în mediastin",
+          "why": "Organul cavitar din mediastin este inima. Tabelul muscular descrie fibrele cardiace cu un singur nucleu central, conform modelului din manual. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului / „Sistemul cardiovascular”, secțiunea Inima / „Țesutul muscular”, secțiunea Tipurile de țesut muscular; tabelul 8.1."
+        }
+      ],
+      "sourcePages": [
+        263
+      ],
+      "topicId": "tesutul-muscular",
+      "topicLabel": "Țesutul muscular",
+      "lessonUrl": "tesutul_muscular.html#tesutul-muscular",
+      "id": "asoc-215"
+    },
+    {
+      "number": 216,
+      "sourceNumber": 216,
+      "sourceChapter": "XIII",
+      "prompt": "Despre formațiunea reticulată sunt corecte următoarele afirmații:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "conține grupuri de nuclei localizați la nivelul cortexului cerebral",
+          "why": "Formațiunea reticulară este descrisă ca grupuri de nuclei din bulb, extinse în punte și mezencefal, nu din cortexul cerebral. Sursa: „Sistemul nervos”, secțiunea Trunchiul cerebral."
+        },
+        {
+          "letter": "B",
+          "text": "este implicată în starea de veghe și somn",
+          "why": "Tabelul funcțiilor encefalului asociază formațiunea reticulară cu starea de veghe și somn. Sursa: „Sistemul nervos”, secțiunea Diencefalul; tabelul 11.2."
+        },
+        {
+          "letter": "C",
+          "text": "este răspunzătoare pentru activarea cortexului cerebral la primirea impulsurilor senzoriale",
+          "why": "Formațiunea reticulară activează cortexul la primirea impulsurilor senzoriale și îl pregătește pentru interpretarea lor. Sursa: „Sistemul nervos”, secțiunea Trunchiul cerebral."
+        },
+        {
+          "letter": "D",
+          "text": "stimulează procesele cognitive",
+          "why": "Stimularea proceselor cognitive este menționată explicit ca efect al activării corticale prin formațiunea reticulară. Sursa: „Sistemul nervos”, secțiunea Trunchiul cerebral."
+        },
+        {
+          "letter": "E",
+          "text": "controlează activitatea sistemului nervos periferic",
+          "why": "Controlul general și integrarea informației sunt atribuite sistemului nervos central. Funcția specifică descrisă a formațiunii reticulare este activarea cortexului, nu controlul întregului sistem nervos periferic. Sursa: „Țesutul nervos”, secțiunea Organizarea sistemului nervos / „Sistemul nervos”, secțiunea Trunchiul cerebral."
+        }
+      ],
+      "sourcePages": [
+        263
+      ],
+      "topicId": "sistemul-nervos",
+      "topicLabel": "Sistemul nervos",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-central",
+      "id": "asoc-216"
+    },
+    {
+      "number": 217,
+      "sourceNumber": 217,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte cu privire la auz:",
+      "correct": [
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "implică transformarea impulsurilor mecanice în unde sonore",
+          "why": "Sensul este inversat: undele sonore produc mișcări mecanice, iar în urechea internă stimularea se transformă în impulsuri nervoase. Sursa: „Organele de simț”, secțiunea Urechea și auzul."
+        },
+        {
+          "letter": "B",
+          "text": "reprezintă percepția vibrațiilor sonore din mediul înconjurător",
+          "why": "Auzul este definit ca percepția vibrațiilor sonore produse de un obiect și propagate prin mediu. Sursa: „Organele de simț”, secțiunea Urechea și auzul."
+        },
+        {
+          "letter": "C",
+          "text": "necesită vibrația timpanului, provocată de energia undelor sonore",
+          "why": "În traseul auzului descris în manual, energia undelor sonore provoacă vibrația timpanului, transmisă apoi oscioarelor. Sursa: „Organele de simț”, secțiunea Urechea și auzul."
+        },
+        {
+          "letter": "D",
+          "text": "implică vibrația scăriței ce determină vibrația perilimfei din canalul cohlear",
+          "why": "Scărița transmite vibrațiile ferestrei ovale și perilimfei; figura arată că ductul cohlear conține endolimfă, nu perilimfă. Sursa: „Organele de simț”, secțiunea Urechea și auzul / „Organele de simț”, secțiunea Urechea și auzul (figura 12.4)."
+        },
+        {
+          "letter": "E",
+          "text": "necesită vibrația ferestrei ovale transmisă membranei timpanului",
+          "why": "Vibrația circulă de la timpan prin ciocan, nicovală și scăriță către fereastra ovală; varianta inversează traseul. Sursa: „Organele de simț”, secțiunea Urechea și auzul."
+        }
+      ],
+      "sourcePages": [
+        263
+      ],
+      "topicId": "organele-de-simt",
+      "topicLabel": "Organele de simț",
+      "lessonUrl": "organele_de_simt.html#urechea-si-auzul",
+      "id": "asoc-217"
+    },
+    {
+      "number": 218,
+      "sourceNumber": 218,
+      "sourceChapter": "XIII",
+      "prompt": "Despre glucocorticoizi sunt corecte următoarele afirmații:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "secreția lor este stimulată de hormonul adrenocorticotrop",
+          "why": "ACTH-ul adenohipofizar stimulează secreția de glucocorticoizi din corticala suprarenalei. Sursa: „Sistemul endocrin”, secțiunea Hipofiza / „Sistemul endocrin”, secțiunea Glandele suprarenale."
+        },
+        {
+          "letter": "B",
+          "text": "stimulează vasodilatația",
+          "why": "Manualul atribuie glucocorticoizilor stimularea vasoconstricției, nu a vasodilatației. Sursa: „Sistemul endocrin”, secțiunea Glandele suprarenale."
+        },
+        {
+          "letter": "C",
+          "text": "au efecte asupra metabolismului carbohidraților, proteinelor și lipidelor",
+          "why": "Efectele asupra metabolismului carbohidraților, proteinelor și lipidelor sunt enumerate explicit pentru glucocorticoizi. Sursa: „Sistemul endocrin”, secțiunea Glandele suprarenale."
+        },
+        {
+          "letter": "D",
+          "text": "au rol antiinflamator",
+          "why": "Rolul antiinflamator este indicat alături de efectele metabolice ale glucocorticoizilor. Sursa: „Sistemul endocrin”, secțiunea Glandele suprarenale."
+        },
+        {
+          "letter": "E",
+          "text": "facilitează pătrunderea glucozei în celule, în special la nivel hepatic",
+          "why": "Facilitarea pătrunderii glucozei în celule, în special hepatice, este atribuită insulinei în tabelul hormonilor, nu glucocorticoizilor. Sursa: „Sistemul endocrin”, secțiunea Principalii hormoni; tabelul 13.3 / „Sistemul endocrin”, secțiunea Glandele suprarenale."
+        }
+      ],
+      "sourcePages": [
+        263
+      ],
+      "topicId": "sistemul-endocrin",
+      "topicLabel": "Sistemul endocrin",
+      "lessonUrl": "sistemul_endocrin.html#glandele-suprarenale",
+      "id": "asoc-218"
+    },
+    {
+      "number": 219,
+      "sourceNumber": 219,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele noțiuni referitoare la ansa Henle sunt corecte:",
+      "correct": [
+        "A",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "are o ramură descendentă, ce coboară spre profunzimea medularei renale",
+          "why": "Ramura descendentă coboară dinspre cortex spre profunzimea medularei, unde se află ansa propriu-zisă. Sursa: „Sistemul urinar”, secțiunea Structura și fiziologia nefronului."
+        },
+        {
+          "letter": "B",
+          "text": "face legătura între capsula Bowman și tubul contort distal",
+          "why": "Traseul este capsula Bowman → tubul contort proximal → ansa Henle → tubul contort distal. Baremul exclude B, ceea ce corespunde interpretării unei legături directe între capsulă și tubul distal. Varianta nu precizează însă că legătura ar fi directă; această formulare rămâne ambiguă. Sursa: „Sistemul urinar”, secțiunea Structura și fiziologia nefronului."
+        },
+        {
+          "letter": "C",
+          "text": "este înconjurată de o rețea de capilare glomerulare",
+          "why": "În jurul tubilor se află capilare peritubulare provenite din arteriola eferentă; capilarele glomerulare alcătuiesc glomerulul. Sursa: „Sistemul urinar”, secțiunea Structura și fiziologia nefronului."
+        },
+        {
+          "letter": "D",
+          "text": "are o ramură ascendentă, din care sunt reabsorbiți ioni de sodiu și clor",
+          "why": "Din ramura ascendentă ies sodiu și clor spre interstițiul medular, contribuind la gradientul osmotic. Sursa: „Sistemul urinar”, secțiunea Structura și fiziologia nefronului."
+        },
+        {
+          "letter": "E",
+          "text": "permite ieșirea ureei în medulară și intrarea ei în porțiunea profundă a tubului colector",
+          "why": "Sensul inițial este inversat: ureea părăsește porțiunea profundă a tubului colector, se acumulează în medulară și reintră în ansa Henle. Sursa: „Sistemul urinar”, secțiunea Structura și fiziologia nefronului."
+        }
+      ],
+      "sourcePages": [
+        263,
+        264
+      ],
+      "topicId": "sistemul-renal-complet",
+      "topicLabel": "Sistemul urinar",
+      "lessonUrl": "sistemul_renal_complet.html#nefron",
+      "id": "asoc-219"
+    },
+    {
+      "number": 220,
+      "sourceNumber": 220,
+      "sourceChapter": "XIII",
+      "prompt": "La nivelul ficatului au loc următoarele procese metabolice:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "glicogenogeneză, când nivelul de glucoză în sânge este scăzut",
+          "why": "Glicogenogeneza are loc când glucoza sanguină este ridicată; când glicemia scade, ficatul degradează glicogenul. Sursa: „Sistemul digestiv”, secțiunea Organele anexe; ficatul."
+        },
+        {
+          "letter": "B",
+          "text": "gluconeogeneză, prin sinteza glucozei din anumiți aminoacizi",
+          "why": "Gluconeogeneza hepatică produce glucoză din anumiți aminoacizi atunci când disponibilitatea glucidelor este redusă. Sursa: „Sistemul digestiv”, secțiunea Organele anexe; ficatul."
+        },
+        {
+          "letter": "C",
+          "text": "glicogenoliză, când nivelul glicemiei este scăzut",
+          "why": "La glicemie scăzută, enzimele hepatice transformă glicogenul în glucoză prin glicogenoliză. Sursa: „Sistemul digestiv”, secțiunea Organele anexe; ficatul."
+        },
+        {
+          "letter": "D",
+          "text": "sinteză de proteine plasmatice",
+          "why": "Ficatul sintetizează majoritatea proteinelor plasmatice, inclusiv albumina, protrombina și fibrinogenul. Sursa: „Sistemul digestiv”, secțiunea Organele anexe; ficatul."
+        },
+        {
+          "letter": "E",
+          "text": "dezaminarea acizilor grași",
+          "why": "Dezaminarea îndepărtează gruparea amino din aminoacizi. Acizii grași sunt descompuși pe alte căi, descrise separat. Sursa: „Sistemul digestiv”, secțiunea Organele anexe; ficatul."
+        }
+      ],
+      "sourcePages": [
+        264
+      ],
+      "topicId": "metabolism-si-nutritie",
+      "topicLabel": "Metabolism și nutriție",
+      "lessonUrl": "metabolism_si_nutritie.html#metabolismul-glucidelor",
+      "id": "asoc-220"
+    },
+    {
+      "number": 221,
+      "sourceNumber": 221,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele enunțuri sunt corecte:",
+      "correct": [
+        "A",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sistemele de organe sunt compuse din mai multe organe cu funcții complementare",
+          "why": "Un sistem de organe reunește mai multe organe cu funcții complementare; sistemele formează împreună organismul. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Niveluri de organizare structurală."
+        },
+        {
+          "letter": "B",
+          "text": "cavitatea ventrală a organismului are și subdiviziunile abdominală și pelviană, ambele aparținând cavității toracice",
+          "why": "Abdomenul și pelvisul sunt subdiviziuni ale cavității abdomino-pelviene; aceasta este separată de cavitatea toracică prin diafragmă. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        },
+        {
+          "letter": "C",
+          "text": "mediastinul ocupă o poziție laterală față de plămâni",
+          "why": "Mediastinul se află medial față de plămâni și cuprinde inima și alte structuri toracice. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        },
+        {
+          "letter": "D",
+          "text": "difuziunea facilitată necesită proteine transportoare",
+          "why": "Difuziunea facilitată este asistată de proteine membranare care permit trecerea selectivă a moleculelor. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "E",
+          "text": "ribozomii sunt alcătuiți din subunități în a căror sinteză a intervenit ARN-ul din nucleoli",
+          "why": "ARN-ul din nucleoli participă la producerea subunităților ribozomale; acestea se asamblează apoi în citoplasmă. Sursa: „Celula și fiziologia celulară”, secțiunea Nucleul."
+        }
+      ],
+      "sourcePages": [
+        264
+      ],
+      "topicId": "introducere-anatomie-fiziologie",
+      "topicLabel": "Organizarea corpului uman",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#organizare",
+      "id": "asoc-221"
+    },
+    {
+      "number": 222,
+      "sourceNumber": 222,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre următoarele enunțuri privind funcțiile organitelor celulare sunt corecte?",
+      "correct": [
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "ribozomii sunt particule submicroscopice",
+          "why": "Descrierea ribozomilor ca particule submicroscopice este adevărată în manual, dar reprezintă o caracteristică structurală, nu funcția cerută de enunț; baremul o exclude. Sursa: „Celula și fiziologia celulară”, secțiunea Nucleul / „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "B",
+          "text": "reticulul endoplasmatic neted depozitează calciul",
+          "why": "Reticulul endoplasmatic neted depozitează calciul, funcție menționată explicit alături de sinteza lipidelor. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "C",
+          "text": "aparatul Golgi procesează și împachetează proteinele și lipidele celulare",
+          "why": "Aparatul Golgi procesează și împachetează proteinele și lipidele în vezicule înaintea transportului către destinație. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "D",
+          "text": "mitocondriile intervin în respirația celulară anaerobă",
+          "why": "Mitocondriile folosesc oxigen în respirația celulară; glicoliza anaerobă este etapa descrisă separat, nu funcția mitocondrială din variantă. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele / „Țesutul muscular”, secțiunea Energia necesară contracției musculare."
+        },
+        {
+          "letter": "E",
+          "text": "lizozomii conțin enzime cu rol în digestia intracelulară a cationilor de Ca²⁺ și Na⁺",
+          "why": "Enzimele lizozomale digeră particule nutritive; calciul și sodiul sunt ioni, nu particulele nutritive degradate prin digestia lizozomală descrisă. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        }
+      ],
+      "sourcePages": [
+        264
+      ],
+      "topicId": "celula-si-fiziologia-celulara",
+      "topicLabel": "Celula și fiziologia celulară",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#organite",
+      "id": "asoc-222"
+    },
+    {
+      "number": 223,
+      "sourceNumber": 223,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați enunțurile greșite:",
+      "correct": [
+        "C",
+        "E"
+      ],
+      "asksFalse": true,
+      "options": [
+        {
+          "letter": "A",
+          "text": "inima ocupă o poziție superioară comparativ cu ficatul",
+          "why": "Enunțul este adevărat și nu se selectează: tabelul termenilor direcționali arată că inima este superioară ficatului. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Termeni direcționali."
+        },
+        {
+          "letter": "B",
+          "text": "mediastinul este situat superior față de diafragmă",
+          "why": "Enunțul este adevărat: mediastinul aparține toracelui, situat deasupra diafragmei care îl separă de cavitatea abdomino-pelviană. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        },
+        {
+          "letter": "C",
+          "text": "cavitatea ventrală a organismului conține, la nivelul canalului rahidian, măduva spinării",
+          "why": "Enunțul este greșit: canalul rahidian și măduva spinării aparțin cavității dorsale, nu celei ventrale. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        },
+        {
+          "letter": "D",
+          "text": "regiunea epigastrică face parte din etajul superior al cavității abdomino-pelviene",
+          "why": "Enunțul este adevărat: regiunea epigastrică se află superior regiunii ombilicale și între cele două hipocondre. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        },
+        {
+          "letter": "E",
+          "text": "în poziție anatomică, membrele inferioare sunt situate lângă corp, cu palmele înainte",
+          "why": "Enunțul este greșit: poziția cu palmele înainte descrie membrele superioare; membrele inferioare nu au palme. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Termeni direcționali."
+        }
+      ],
+      "sourcePages": [
+        264
+      ],
+      "topicId": "introducere-anatomie-fiziologie",
+      "topicLabel": "Organizarea corpului uman",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#termeni",
+      "id": "asoc-223"
+    },
+    {
+      "number": 224,
+      "sourceNumber": 224,
+      "sourceChapter": "XIII",
+      "prompt": "Se poate afirma că:",
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "nucleozomii au dimensiuni electronomicroscopice",
+          "why": "ADN-ul și histonele formează nucleozomi, descriși explicit ca structuri de dimensiuni electronomicroscopice. Sursa: „Celula și fiziologia celulară”, secțiunea Nucleul."
+        },
+        {
+          "letter": "B",
+          "text": "sistemele de organe funcționează împreună, alcătuind organismul",
+          "why": "Sistemele de organe funcționează împreună și alcătuiesc organismul, cel mai înalt nivel al organizării descrise. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Niveluri de organizare structurală."
+        },
+        {
+          "letter": "C",
+          "text": "ribozomii pot fi atașați la suprafața lizozomilor",
+          "why": "Ribozomii sunt atașați reticulului endoplasmatic rugos; lizozomii sunt vezicule cu enzime digestive derivate din Golgi. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "D",
+          "text": "seroasele secretă un lichid care facilitează alunecarea foițelor, fără frecare",
+          "why": "Foițele seroase secretă lichid seros lubrifiant, care permite alunecarea organelor și a suprafețelor fără frecare. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        },
+        {
+          "letter": "E",
+          "text": "transportul activ are o rată limitată de numărul de proteine transportoare",
+          "why": "Ca și difuziunea facilitată, transportul activ are rata limitată de numărul proteinelor transportoare. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        }
+      ],
+      "sourcePages": [
+        264
+      ],
+      "topicId": "celula-si-fiziologia-celulara",
+      "topicLabel": "Celula și fiziologia celulară",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#structura",
+      "id": "asoc-224"
+    },
+    {
+      "number": 225,
+      "sourceNumber": 225,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la transportul prin membrana celulară:",
+      "correct": [
+        "A",
+        "B"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "difuziunea facilitată se face dinspre o zonă cu concentrație mare spre o zonă cu concentrație mai mică",
+          "why": "Proteinele transportoare facilitează trecerea moleculelor din zona cu concentrație mare spre cea cu concentrație mică. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "B",
+          "text": "transportul activ este implicat în reabsorbția sărurilor la nivelul tubilor renali",
+          "why": "Reabsorbția sărurilor din tubii renali este exemplul dat pentru transport activ; sodiul este transportat activ spre capilarele peritubulare. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare / „Sistemul urinar”, secțiunea Structura și fiziologia nefronului."
+        },
+        {
+          "letter": "C",
+          "text": "endocitoza reprezintă mecanismul principal utilizat de celulele endocrine pentru a secreta hormoni",
+          "why": "Celulele endocrine folosesc exocitoza pentru secreția hormonilor; endocitoza aduce material în celulă. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "D",
+          "text": "pinocitoza este un mecanism utilizat de leucocite pentru a îndepărta microbii din circulația sanguină",
+          "why": "Înglobarea microbilor solizi de către leucocite este fagocitoză; pinocitoza înglobează picături de lichid. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "E",
+          "text": "osmoza este utilizată pentru trecerea oxigenului din plămâni în capilare",
+          "why": "Oxigenul trece prin difuziune; osmoza se referă la difuziunea apei, nu a oxigenului. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        }
+      ],
+      "sourcePages": [
+        264
+      ],
+      "topicId": "celula-si-fiziologia-celulara",
+      "topicLabel": "Celula și fiziologia celulară",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#transport",
+      "id": "asoc-225"
+    },
+    {
+      "number": 226,
+      "sourceNumber": 226,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre următoarele caracteristici ale viscerelor abdominale sunt corecte?",
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "duodenul primește conținutul gastric, bila și sucul pancreatic",
+          "why": "Duodenul primește conținutul gastric, bila și sucul pancreatic; este un segment digestiv abdominal. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "B",
+          "text": "rinichii intervin în excreție",
+          "why": "Rinichii, situați retroperitoneal, elimină prin urină produșii reziduali filtrați din sânge. Sursa: „Sistemul urinar”, secțiunea Rinichii."
+        },
+        {
+          "letter": "C",
+          "text": "ficatul sintetizează și proteine care participă la căile coagulării",
+          "why": "Ficatul sintetizează proteine plasmatice, între care fibrinogenul și protrombina, implicate în coagulare. Sursa: „Sistemul digestiv”, secțiunea Organele anexe; ficatul."
+        },
+        {
+          "letter": "D",
+          "text": "splina nu participă la hemoliză",
+          "why": "Splina participă la degradarea eritrocitelor îmbătrânite și reciclează fierul; negarea acestui rol este greșită. Sursa: „Sistemul limfatic și imun”, secțiunea Splina."
+        },
+        {
+          "letter": "E",
+          "text": "prostata înconjoară uretra masculină",
+          "why": "Uretra masculină traversează prostata, dar aceasta este un organ pelvian. Relația anatomică nu o încadrează între viscerele abdominale cerute. Sursa: „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii / „Sistemul reproducător masculin”, secțiunea Ducte și organe anexe."
+        }
+      ],
+      "sourcePages": [
+        264,
+        265
+      ],
+      "topicId": "introducere-anatomie-fiziologie",
+      "topicLabel": "Organizarea corpului uman",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#cavitati",
+      "id": "asoc-226"
+    },
+    {
+      "number": 227,
+      "sourceNumber": 227,
+      "sourceChapter": "XIII",
+      "prompt": "Alegeți afirmațiile corecte:",
+      "correct": [
+        "A",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "feedbackul negativ are capacitatea de a readuce parametrii organismului la o valoare de referință",
+          "why": "Feedbackul negativ readuce o variabilă spre valoarea normală, așa cum este exemplificat prin reglarea glicemiei. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Funcții ale organismului."
+        },
+        {
+          "letter": "B",
+          "text": "esofagul este situat anterior față de trahee",
+          "why": "Manualul situează esofagul posterior de trahee, nu anterior. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Termeni direcționali."
+        },
+        {
+          "letter": "C",
+          "text": "o soluție hipotonă are o concentrație mai mică decât citoplasma celulelor",
+          "why": "O soluție hipotonă are concentrația substanțelor dizolvate mai mică decât interiorul celulei, iar apa intră în celulă. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "D",
+          "text": "histonele și ADN-ul au în structura lor nucleozomi",
+          "why": "Nucleozomul rezultă din asocierea ADN-ului cu proteinele histone. Histonele nu conțin nucleozomi; afirmația inversează relația structurală. Sursa: „Celula și fiziologia celulară”, secțiunea Nucleul."
+        },
+        {
+          "letter": "E",
+          "text": "citoscheletul reprezintă structura de suport a celulei",
+          "why": "Citoscheletul susține celula și îi menține forma prin microtubuli, microfilamente și filamente intermediare. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        }
+      ],
+      "sourcePages": [
+        265
+      ],
+      "topicId": "introducere-anatomie-fiziologie",
+      "topicLabel": "Organizarea corpului uman",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#functii",
+      "id": "asoc-227"
+    },
+    {
+      "number": 228,
+      "sourceNumber": 228,
+      "sourceChapter": "XIII",
+      "prompt": "Ficatul:",
+      "correct": [
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "ocupă hipocondrul stâng",
+          "why": "Ficatul ocupă în principal hipocondrul drept, nu pe cel stâng. Sursa: „Sistemul digestiv”, secțiunea Organele anexe; ficatul."
+        },
+        {
+          "letter": "B",
+          "text": "primește sânge venos prin vena portă și sânge arterial prin artera hepatică",
+          "why": "Ficatul primește sânge prin vena portă și artera hepatică; acestea sunt cele două surse de vascularizație descrise. Sursa: „Sistemul digestiv”, secțiunea Organele anexe; ficatul."
+        },
+        {
+          "letter": "C",
+          "text": "sintetizează toate proteinele plasmatice",
+          "why": "Ficatul produce majoritatea proteinelor plasmatice, nu toate. Gama-globulinele cu rol de anticorpi sunt atribuite sistemului imun. Sursa: „Sistemul digestiv”, secțiunea Organele anexe; ficatul / „Sângele”, secțiunea Plasma."
+        },
+        {
+          "letter": "D",
+          "text": "are și rolul de a produce bilă, pe care o eliberează direct în jejun sub acțiunea colecistochininei",
+          "why": "Bila ajunge în duoden. Colecistokinina favorizează evacuarea vezicii biliare, dar destinația nu este direct jejunul. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros / „Sistemul digestiv”, secțiunea Organele anexe; ficatul."
+        },
+        {
+          "letter": "E",
+          "text": "participă și la metabolismele glucidic și proteic",
+          "why": "Ficatul participă atât la metabolismul glucidelor, inclusiv depozitarea glicogenului, cât și la metabolismul proteinelor. Sursa: „Sistemul digestiv”, secțiunea Organele anexe; ficatul."
+        }
+      ],
+      "sourcePages": [
+        265
+      ],
+      "topicId": "sistemul-digestiv",
+      "topicLabel": "Sistemul digestiv",
+      "lessonUrl": "sistemul_digestiv.html#organele-anexe",
+      "id": "asoc-228"
+    },
+    {
+      "number": 229,
+      "sourceNumber": 229,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați informațiile corecte referitoare la ionul Na⁺:",
+      "correct": [
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este responsabil de repolarizarea axolemei",
+          "why": "Intrarea sodiului este asociată depolarizării. Repolarizarea este prezentată prin ieșirea potasiului, nu prin intrarea sodiului. Sursa: „Țesutul nervos”, secțiunea Fiziologia nervilor."
+        },
+        {
+          "letter": "B",
+          "text": "se secretă prin transport activ la nivelul tubului contort distal al nefronului",
+          "why": "Aldosteronul stimulează reabsorbția sodiului la nivel distal și secreția potasiului; varianta atribuie sodiului procesul invers. Sursa: „Sistemul urinar”, secțiunea Activitatea hormonală și urina."
+        },
+        {
+          "letter": "C",
+          "text": "este prezent în plasma sanguină în cantitate mai mare decât K⁺",
+          "why": "Sodiul predomină în lichidul extracelular, iar potasiul în interiorul celulelor; plasma aparține compartimentului extracelular. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul mineralelor."
+        },
+        {
+          "letter": "D",
+          "text": "la nivelul membranei luminale a celulelor epiteliale din mucoasa intestinală este absorbit activ împreună cu glucoza",
+          "why": "Figura absorbției intestinale arată trecerea împreună a sodiului și glucozei printr-o moleculă de transport, iar textul include transportul activ între mecanismele absorbției. Sursa: „Sistemul digestiv”, secțiunea Absorbția intestinală / „Sistemul digestiv”, secțiunea Absorbția intestinală (figura 18.7)."
+        },
+        {
+          "letter": "E",
+          "text": "concentrația sa plasmatică este reglată în special de un hormon secretat de regiunea corticală a glandei suprarenale",
+          "why": "Aldosteronul este secretat de corticosuprarenală și controlează reabsorbția renală a sodiului, influențând nivelul său în organism. Sursa: „Sistemul endocrin”, secțiunea Glandele suprarenale / „Sistemul urinar”, secțiunea Activitatea hormonală și urina."
+        }
+      ],
+      "sourcePages": [
+        265
+      ],
+      "topicId": "sistemul-renal-complet",
+      "topicLabel": "Sistemul urinar",
+      "lessonUrl": "sistemul_renal_complet.html#hormoni",
+      "id": "asoc-229"
+    },
+    {
+      "number": 230,
+      "sourceNumber": 230,
+      "sourceChapter": "XIII",
+      "prompt": "La nivelul cutiei toracice există:",
+      "correct": [
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "membrane seroase: pleura, pericardul și peritoneul",
+          "why": "Pleura și pericardul aparțin cavității toracice, dar peritoneul este seroasa cavității abdominopelviene. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        },
+        {
+          "letter": "B",
+          "text": "două organe pereche alcătuite din milioane de alveole",
+          "why": "Cavitatea toracică adăpostește cei doi plămâni, în care se găsesc alveolele implicate în schimburile gazoase. Sursa: „Sistemul respirator”, secțiunea Plămânii."
+        },
+        {
+          "letter": "C",
+          "text": "traheea, situată anterior de esofag și posterior față de inimă",
+          "why": "Manualul confirmă că traheea este anterior de esofag. Textul și vederea anterioară a inimii nu stabilesc suficient relația „posterior de inimă” pentru întreaga trahee; baremul exclude varianta, dar motivul complet al excluderii nu poate fi demonstrat din aceste surse. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Termeni direcționali / „Sistemul cardiovascular”, secțiunea Inima (figura 15.1) / „Sistemul respirator”, secțiunea Traheea, bronhiile și bronhiolele."
+        },
+        {
+          "letter": "D",
+          "text": "timusul, organ limfoid, cu rol important în producerea limfocitelor T și B",
+          "why": "Timusul, situat în torace, asigură maturarea limfocitelor T. Manualul nu îi atribuie maturarea ambelor tipuri, B și T. Sursa: „Sistemul limfatic și imun”, secțiunea Timusul."
+        },
+        {
+          "letter": "E",
+          "text": "esofagul, un viscer al sistemului digestiv, care prezintă în structura peretelui său atât fibre musculare netede cât și striate",
+          "why": "Esofagul conține musculatură striată în porțiunea superioară și musculatură netedă în porțiunea inferioară. Sursa: „Sistemul digestiv”, secțiunea Esofagul."
+        }
+      ],
+      "sourcePages": [
+        265
+      ],
+      "topicId": "introducere-anatomie-fiziologie",
+      "topicLabel": "Organizarea corpului uman",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#cavitati",
+      "id": "asoc-230"
+    },
+    {
+      "number": 231,
+      "sourceNumber": 231,
+      "sourceChapter": "XIII",
+      "prompt": "Corzile vocale:",
+      "correct": [
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "false sunt situate caudal față de cele adevărate",
+          "why": "În secțiunea sagitală a laringelui, coarda vocală falsă este deasupra celei adevărate, nu caudal față de aceasta. Sursa: „Sistemul respirator”, secțiunea Laringele (figura 17.4)."
+        },
+        {
+          "letter": "B",
+          "text": "au o lungime variabilă în funcție de sex și de vârstă, determinând tonalitatea sunetelor",
+          "why": "Lungimea corzilor vocale variază cu vârsta și sexul; corzile mai scurte la copii și femei produc sunete mai înalte. Sursa: „Sistemul respirator”, secțiunea Laringele."
+        },
+        {
+          "letter": "C",
+          "text": "se găsesc posterior față de cartilajul tiroid",
+          "why": "Figura laringelui arată corzile vocale posterior de cartilajul tiroid, în interiorul laringelui. Sursa: „Sistemul respirator”, secțiunea Laringele (figura 17.4)."
+        },
+        {
+          "letter": "D",
+          "text": "sunt pliuri de țesut situate în interiorul faringelui",
+          "why": "Corzile vocale sunt situate în laringe, nu în faringe. Sursa: „Sistemul respirator”, secțiunea Laringele."
+        },
+        {
+          "letter": "E",
+          "text": "în timpul expirației vibrează și produc sunete",
+          "why": "Aerul expirat pune în vibrație corzile vocale, producând sunetele. Sursa: „Sistemul respirator”, secțiunea Laringele."
+        }
+      ],
+      "sourcePages": [
+        265
+      ],
+      "topicId": "sistemul-respirator",
+      "topicLabel": "Sistemul respirator",
+      "lessonUrl": "sistemul_respirator.html#anatomie",
+      "id": "asoc-231"
+    },
+    {
+      "number": 232,
+      "sourceNumber": 232,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la ligamente:",
+      "correct": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "ligamentul falciform este situat între lobii drept și stâng ai ficatului",
+          "why": "Figura organelor anexe etichetează ligamentul falciform între cele două porțiuni mari ale ficatului, corespunzătoare lobilor drept și stâng. Sursa: „Sistemul digestiv”, secțiunea Organele anexe; ficatul (figura 18.10)."
+        },
+        {
+          "letter": "B",
+          "text": "în structura ochiului, ligamentul suspensor ancorează ferm cristalinul de iris",
+          "why": "Cristalinul este legat prin ligamentele suspensoare de corpul ciliar, nu de iris. Sursa: „Organele de simț”, secțiunea Ochiul."
+        },
+        {
+          "letter": "C",
+          "text": "la nivelul diartrozelor, ligamentele sunt alcătuite din fascicule groase provenite din capsula articulară",
+          "why": "La unele articulații sinoviale, fasciculele îngroșate ale capsulei formează ligamente care întăresc articulația. Sursa: „Oasele și articulațiile”, secțiunea Articulațiile."
+        },
+        {
+          "letter": "D",
+          "text": "ligamentul ovarian leagă ovarul de uter și participă, alături de ligamentul suspensor, la susținerea ovarului",
+          "why": "Figura arată ligamentul ovarian între ovar și uter, iar textul descrie ligamentele ovariene și suspensoare ca structuri de susținere a ovarelor. Sursa: „Sistemul reproducător feminin”, secțiunea Ovarele și organele anexe (figura 23.2)."
+        },
+        {
+          "letter": "E",
+          "text": "ligamentele se pot ancora de prelungiri cu aspect de contrafort ale vertebrelor",
+          "why": "Prelungirile vertebrelor oferă puncte de ancorare pentru tendoane și ligamente. Sursa: „Oasele și articulațiile”, secțiunea Clasificarea oaselor."
+        }
+      ],
+      "sourcePages": [
+        265
+      ],
+      "topicId": "introducere-anatomie-fiziologie",
+      "topicLabel": "Organizarea corpului uman",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#organizare",
+      "id": "asoc-232"
+    },
+    {
+      "number": 233,
+      "sourceNumber": 233,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre enunțurile următoare sunt false?",
+      "correct": [
+        "B",
+        "D"
+      ],
+      "asksFalse": true,
+      "options": [
+        {
+          "letter": "A",
+          "text": "cavitatea ventrală a organismului conține organe interne aparținând sistemelor respirator, circulator, digestiv și excretor",
+          "why": "Afirmația este adevărată: cavitatea ventrală adăpostește inima, plămânii, organe digestive precum stomacul și intestinele, precum și vezica urinară în subdiviziunea pelviană. Sunt astfel reprezentate toate cele patru sisteme enumerate. Grila cere variante false, deci A nu se selectează. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        },
+        {
+          "letter": "B",
+          "text": "înainte de a ajunge în citoplasmă, subunitățile ribozomale sunt asamblate în nucleu",
+          "why": "Afirmația este falsă în formularea manualului: nucleolii produc subunitățile ribozomale, care sunt asamblate în citoplasmă. De aceea B se selectează la cerința negativă. Sursa: „Celula și fiziologia celulară”, secțiunea Nucleul."
+        },
+        {
+          "letter": "C",
+          "text": "în torace, plămânii sunt situați profund față de coaste și superior față de diafragmă",
+          "why": "Plămânii sunt în torace, profund față de coaste și superior de diafragmă. Fiind adevărată, afirmația nu răspunde cerinței negative. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului / „Sistemul respirator”, secțiunea Plămânii."
+        },
+        {
+          "letter": "D",
+          "text": "difuziunea facilitată este o formă de transport a moleculelor de apă prin membrana celulară",
+          "why": "Manualul numește transportul apei osmoză și exemplifică difuziunea facilitată prin transportul glucozei cu ajutorul proteinelor membranare. D este selectată în baremul grilei negative, conform acestei distincții didactice. Totuși, exemplul glucozei nu este declarat exhaustiv, iar textul despre osmoză și porii controlați de ADH nu demonstrează că transportul apei și participarea proteinelor membranare se exclud. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare / „Sistemul urinar”, secțiunea Activitatea hormonală și urina."
+        },
+        {
+          "letter": "E",
+          "text": "poziția anatomică reprezintă poziția față de care se exprimă întreaga terminologie direcțională",
+          "why": "Poziția anatomică standard este reperul termenilor direcționali. Afirmația este adevărată și nu se selectează când sunt cerute cele false. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Termeni direcționali."
+        }
+      ],
+      "sourcePages": [
+        265,
+        266
+      ],
+      "topicId": "celula-si-fiziologia-celulara",
+      "topicLabel": "Celula și fiziologia celulară",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#transport",
+      "id": "asoc-233"
+    },
+    {
+      "number": 234,
+      "sourceNumber": 234,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați reacțiile metabolice corecte:",
+      "correct": [
+        "A",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "glucozo-6-fosfatul se poate transforma în glucoză, în glucozo-1-fosfat și în fructozo-6-fosfat",
+          "why": "Schema căilor metabolice arată legăturile glucozo-6-fosfatului cu glucoza, glucozo-1-fosfatul și fructozo-6-fosfatul, susținând transformările indicate. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul lipidelor și al proteinelor (figura 19.9)."
+        },
+        {
+          "letter": "B",
+          "text": "prin β-oxidare, acizii grași sunt convertiți în fragmente care conțin trei atomi de carbon",
+          "why": "Beta-oxidarea îndepărtează din acizii grași fragmente cu doi atomi de carbon, nu cu trei. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul lipidelor și al proteinelor."
+        },
+        {
+          "letter": "C",
+          "text": "reacția de oxidare constă în cedarea de electroni de către un substrat",
+          "why": "Oxidarea implică pierderea electronilor, pe când reducerea implică acceptarea lor. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "D",
+          "text": "prin reacția de transaminare, o enzimă desprinde gruparea amino din structura unui aminoacid și o transformă în amoniac",
+          "why": "Îndepărtarea grupării amino este dezaminare. Varianta îi atribuie greșit această definiție transaminării. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul lipidelor și al proteinelor."
+        },
+        {
+          "letter": "E",
+          "text": "sub acțiunea enzimelor hepatice, unii aminoacizi pot fi convertiți în glucoză atunci când nivelul sanguin al glucidelor este crescut",
+          "why": "Gluconeogeneza produce glucoză din surse neglucidice și este asociată stării postabsorbtive, când trebuie menținută glicemia, nu stării cu glicemie crescută. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor / „Metabolism și nutriție”, secțiunea Stări metabolice."
+        }
+      ],
+      "sourcePages": [
+        266
+      ],
+      "topicId": "metabolism-si-nutritie",
+      "topicLabel": "Metabolism și nutriție",
+      "lessonUrl": "metabolism_si_nutritie.html#metabolismul-glucidelor",
+      "id": "asoc-234"
+    },
+    {
+      "number": 235,
+      "sourceNumber": 235,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "celulele cu conuri sunt mai numeroase în fovea centrală decât la periferia retinei",
+          "why": "Conurile sunt concentrate în fovea centrală, regiunea retinei cu vederea cea mai precisă. Sursa: „Organele de simț”, secțiunea Fiziologia vederii."
+        },
+        {
+          "letter": "B",
+          "text": "adenohipofiza secretă hormoni tropi pentru tiroidă, paratiroide și gonade",
+          "why": "Hormonii tropi enumerați controlează tiroida, corticosuprarenala și gonadele. Secreția parathormonului este legată de nivelul calciului, nu de un hormon trop hipofizar descris aici. Sursa: „Sistemul endocrin”, secțiunea Hipofiza / „Sistemul endocrin”, secțiunea Glandele paratiroide."
+        },
+        {
+          "letter": "C",
+          "text": "insulele Langerhans sunt componenta endocrină a unui organ abdominal retroperitoneal",
+          "why": "Pancreasul are componenta endocrină în insulele pancreatice și este descris posterior de stomac și peritoneu. Sursa: „Sistemul endocrin”, secțiunea Pancreasul."
+        },
+        {
+          "letter": "D",
+          "text": "hormonul adrenocorticotrop crește rata metabolismului",
+          "why": "Tabelul hormonilor hipofizari atribuie ACTH stimularea corticosuprarenalei și creșterea ratei metabolismului; explicația urmează această formulare a manualului. Sursa: „Sistemul endocrin”, secțiunea Hormonii glandei hipofize; tabelul 13.2."
+        },
+        {
+          "letter": "E",
+          "text": "ficatul participă, alături de rinichi, la inactivarea vitaminei D",
+          "why": "Manualul descrie activarea vitaminei D prin intervenția ficatului și rinichilor, nu inactivarea ei. Sursa: „Sistemul endocrin”, secțiunea Glandele paratiroide / „Sistemul digestiv”, secțiunea Organele anexe; ficatul."
+        }
+      ],
+      "sourcePages": [
+        266
+      ],
+      "topicId": "sistemul-endocrin",
+      "topicLabel": "Sistemul endocrin",
+      "lessonUrl": "sistemul_endocrin.html#hipofiza-glanda-pituitara",
+      "id": "asoc-235"
+    },
+    {
+      "number": 236,
+      "sourceNumber": 236,
+      "sourceChapter": "XIII",
+      "prompt": "Ionii de sodiu trec din tubul urinifer în capilarele peritubulare la nivelul:",
+      "correct": [
+        "A"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "tubului contort proximal, prin transport activ",
+          "why": "Sodiul este reabsorbit activ din tubul proximal; apa îl urmează osmotic. Sursa: „Sistemul urinar”, secțiunea Structura și fiziologia nefronului."
+        },
+        {
+          "letter": "B",
+          "text": "ramurii ascendente a ansei Henle, împreună cu ionii de clor și mari cantități de apă",
+          "why": "Ramura ascendentă a ansei Henle este impermeabilă pentru apă, astfel încât nu realizează reabsorbția apei propusă. Sursa: „Sistemul urinar”, secțiunea Structura și fiziologia nefronului."
+        },
+        {
+          "letter": "C",
+          "text": "tubului contort distal, sub acțiunea unui hormon steroidian produs de medulara glandelor suprarenale",
+          "why": "Aldosteronul acționează asupra tubului distal, dar provine din cortexul suprarenal, nu din medulosuprarenală. Sursa: „Sistemul urinar”, secțiunea Activitatea hormonală și urina."
+        },
+        {
+          "letter": "D",
+          "text": "ramurii descendente a ansei Henle, cu energie furnizată de ATP",
+          "why": "Pentru ramura descendentă, manualul indică intrarea sodiului prin difuziune facilitată, nu transportul activ propus. Sursa: „Sistemul urinar”, secțiunea Structura și fiziologia nefronului."
+        },
+        {
+          "letter": "E",
+          "text": "tubului colector, sub acțiunea unui neurohormon care produce și vasoconstricția arteriolelor, eliberat de adenohipofiză",
+          "why": "ADH favorizează reabsorbția apei în tubul distal și colector, dar este eliberat de hipofiza posterioară, nu de cea anterioară. Sursa: „Sistemul urinar”, secțiunea Activitatea hormonală și urina."
+        }
+      ],
+      "sourcePages": [
+        266
+      ],
+      "topicId": "sistemul-renal-complet",
+      "topicLabel": "Sistemul urinar",
+      "lessonUrl": "sistemul_renal_complet.html#nefron",
+      "id": "asoc-236"
+    },
+    {
+      "number": 237,
+      "sourceNumber": 237,
+      "sourceChapter": "XIII",
+      "prompt": "Mușchiul neted se contractă ca urmare a acțiunii:",
+      "correct": [
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "noradrenalinei eliberate de fibrele preganglionare ale sistemului nervos simpatic",
+          "why": "Fibrele preganglionare autonome eliberează acetilcolină, nu noradrenalină. Sursa: „Sistemul nervos”, secțiunea Sistemul nervos autonom."
+        },
+        {
+          "letter": "B",
+          "text": "impulsurilor venite de la centrii respiratori din bulb și punte",
+          "why": "Centrul respirator comandă diafragma și mușchii intercostali, care sunt mușchi scheletici; această comandă nu este exemplul de contracție a musculaturii netede cerut. Sursa: „Sistemul respirator”, secțiunea Respirația."
+        },
+        {
+          "letter": "C",
+          "text": "hormonilor eliberați de neurohipofiză",
+          "why": "ADH produce contracția musculaturii netede arteriolare, iar oxitocina stimulează musculatura uterină și mamară; ambii sunt eliberați de neurohipofiză. Sursa: „Sistemul endocrin”, secțiunea Hormonii glandei hipofize; tabelul 13.2."
+        },
+        {
+          "letter": "D",
+          "text": "unor hormoni steroizi secretați de rinichi",
+          "why": "Aldosteronul este secretat de cortexul glandelor suprarenale și acționează asupra rinichiului; rinichiul nu este sursa acestui hormon. Varianta confundă organul asupra căruia acționează hormonul cu glanda care îl secretă. Sursa: „Sistemul urinar”, secțiunea Activitatea hormonală și urina."
+        },
+        {
+          "letter": "E",
+          "text": "acetilcolinei eliberate din fibrele postganglionare ale sistemului nervos parasimpatic",
+          "why": "Fibrele postganglionare parasimpatice eliberează acetilcolină, neurotransmițător prin care sistemul autonom acționează asupra organelor cu musculatură netedă. Sursa: „Sistemul nervos”, secțiunea Sistemul nervos autonom."
+        }
+      ],
+      "sourcePages": [
+        266
+      ],
+      "topicId": "sistemul-nervos",
+      "topicLabel": "Sistemul nervos",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-autonom",
+      "id": "asoc-237"
+    },
+    {
+      "number": 238,
+      "sourceNumber": 238,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați asocierile corecte:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "aria Broca - lob frontal",
+          "why": "Aria Broca este localizată în lobul frontal și participă la vorbire. Sursa: „Sistemul nervos”, secțiunea Emisferele cerebrale."
+        },
+        {
+          "letter": "B",
+          "text": "auz - lob parietal",
+          "why": "Aria auditivă este localizată în lobul temporal, nu în cel parietal. Sursa: „Sistemul nervos”, secțiunea Emisferele cerebrale."
+        },
+        {
+          "letter": "C",
+          "text": "văz - lob occipital",
+          "why": "Aria vizuală este situată în lobul occipital. Sursa: „Sistemul nervos”, secțiunea Emisferele cerebrale."
+        },
+        {
+          "letter": "D",
+          "text": "miros - interiorul emisferelor cerebrale",
+          "why": "Manualul situează aria olfactivă profund în cortex, în partea internă a emisferelor. Sursa: „Sistemul nervos”, secțiunea Emisferele cerebrale."
+        },
+        {
+          "letter": "E",
+          "text": "tract cortico-spinal încrucișat - aria motorie cu neuroni piramidali de talie mică",
+          "why": "Aria motorie este descrisă prin celule piramidale mari; varianta le numește mici. Sursa: „Sistemul nervos”, secțiunea Emisferele cerebrale."
+        }
+      ],
+      "sourcePages": [
+        266
+      ],
+      "topicId": "sistemul-nervos",
+      "topicLabel": "Sistemul nervos",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-central",
+      "id": "asoc-238"
+    },
+    {
+      "number": 239,
+      "sourceNumber": 239,
+      "sourceChapter": "XIII",
+      "prompt": "Despre substanța albă a sistemului nervos sunt adevărate afirmațiile:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este formată din corpi neuronali și axoni mielinici",
+          "why": "Corpii neuronali caracterizează substanța cenușie, nu substanța albă. Sursa: „Sistemul nervos”, secțiunea Encefalul."
+        },
+        {
+          "letter": "B",
+          "text": "formează corpul calos care unește emisferele cerebrale",
+          "why": "Corpul calos este puntea de fibre nervoase care leagă emisferele cerebrale și reprezintă substanță albă. Sursa: „Sistemul nervos”, secțiunea Emisferele cerebrale."
+        },
+        {
+          "letter": "C",
+          "text": "este prezentă în cerebel și emisferele cerebrale",
+          "why": "Cerebelul este descris explicit ca o masă de substanță cenușie și albă. În emisferele cerebrale, zonele de substanță cenușie sunt conectate prin axoni mielinici, adică substanță albă; corpul calos este puntea de fibre nervoase care unește cele două emisfere cerebrale. Ambele componente ale variantei sunt astfel susținute. Sursa: „Sistemul nervos”, secțiunea Encefalul / „Sistemul nervos”, secțiunea Emisferele cerebrale / „Sistemul nervos”, secțiunea Cerebelul."
+        },
+        {
+          "letter": "D",
+          "text": "cuprinde tracturi nervoase ascendente și descendente în măduva spinării",
+          "why": "Substanța albă a măduvei conține tracturi ascendente și descendente care transmit informația. Sursa: „Sistemul nervos”, secțiunea Măduva spinării și meningele."
+        },
+        {
+          "letter": "E",
+          "text": "este dispusă în cordoane înconjurate de substanță cenușie, la nivel medular",
+          "why": "În măduva spinării, substanța albă este periferică, iar cea cenușie este centrală; varianta inversează raportul. Sursa: „Sistemul nervos”, secțiunea Măduva spinării și meningele."
+        }
+      ],
+      "sourcePages": [
+        266
+      ],
+      "topicId": "sistemul-nervos",
+      "topicLabel": "Sistemul nervos",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-central",
+      "id": "asoc-239"
+    },
+    {
+      "number": 240,
+      "sourceNumber": 240,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați enunțurile corecte:",
+      "correct": [
+        "A",
+        "B"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "undele sonore sunt captate de pavilionul urechii",
+          "why": "Pavilionul urechii colectează undele sonore și le dirijează spre conductul auditiv extern. Sursa: „Organele de simț”, secțiunea Urechea și auzul."
+        },
+        {
+          "letter": "B",
+          "text": "receptorii gustativi sunt stimulați chimic de substanțe sapide",
+          "why": "Receptorii gustativi detectează substanțe chimice și sunt chemoreceptori. Sursa: „Organele de simț”, secțiunea Receptorii; tabelul 12.1."
+        },
+        {
+          "letter": "C",
+          "text": "maculele utriculară și saculară sunt localizate în cohlee",
+          "why": "Maculele aparțin utriculei și saculei, nu cohleei. Sursa: „Organele de simț”, secțiunea Echilibrul."
+        },
+        {
+          "letter": "D",
+          "text": "mucoasa olfactivă este localizată în partea inferioară a cavității nazale",
+          "why": "Receptorii olfactivi se află în partea superioară a cavității nazale, nu în cea inferioară. Sursa: „Organele de simț”, secțiunea Mirosul."
+        },
+        {
+          "letter": "E",
+          "text": "corpusculii Meissner detectează presiunile și vibrațiile puternice",
+          "why": "Corpusculii Meissner detectează atingerea ușoară; presiunea puternică este asociată corpusculilor Pacini. Sursa: „Organele de simț”, secțiunea Simțul tactil."
+        }
+      ],
+      "sourcePages": [
+        266,
+        267
+      ],
+      "topicId": "organele-de-simt",
+      "topicLabel": "Organele de simț",
+      "lessonUrl": "organele_de_simt.html#urechea-si-auzul",
+      "id": "asoc-240"
+    },
+    {
+      "number": 241,
+      "sourceNumber": 241,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați variantele corecte:",
+      "correct": [
+        "A",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "TSH controlează sinteza hormonilor tiroidieni",
+          "why": "TSH stimulează activitatea glandei tiroide. Sursa: „Sistemul endocrin”, secțiunea Hipofiza."
+        },
+        {
+          "letter": "B",
+          "text": "glucocorticoizii reglează echilibrul sodiului și al electroliților",
+          "why": "Controlul sodiului și potasiului revine mineralocorticoizilor, în special aldosteronului, nu glucocorticoizilor. Sursa: „Sistemul endocrin”, secțiunea Glandele suprarenale."
+        },
+        {
+          "letter": "C",
+          "text": "FSH transformă foliculul ovarian în corp galben",
+          "why": "FSH stimulează dezvoltarea foliculilor. Ovulația și formarea corpului galben sunt asociate LH, nu efectului atribuit aici FSH. Sursa: „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie."
+        },
+        {
+          "letter": "D",
+          "text": "glucagonul facilitează degradarea glicogenului din ficat",
+          "why": "Glucagonul crește glicemia prin mobilizarea glicogenului și prin stimularea formării glucozei. Sursa: „Sistemul endocrin”, secțiunea Pancreasul."
+        },
+        {
+          "letter": "E",
+          "text": "LH stimulează ovulația",
+          "why": "Creșterea secreției LH declanșează ovulația. Sursa: „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie."
+        }
+      ],
+      "sourcePages": [
+        267
+      ],
+      "topicId": "sistemul-endocrin",
+      "topicLabel": "Sistemul endocrin",
+      "lessonUrl": "sistemul_endocrin.html#hipofiza-glanda-pituitara",
+      "id": "asoc-241"
+    },
+    {
+      "number": 242,
+      "sourceNumber": 242,
+      "sourceChapter": "XIII",
+      "prompt": "Aldosteronul:",
+      "correct": [
+        "A",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este un hormon sterolic",
+          "why": "Aldosteronul este un hormon steroid, din grupa mineralocorticoizilor. Sursa: „Sistemul endocrin”, secțiunea Descrierea generală a hormonilor / „Sistemul endocrin”, secțiunea Glandele suprarenale."
+        },
+        {
+          "letter": "B",
+          "text": "este sintetizat de medulosuprarenală",
+          "why": "Aldosteronul este produs de corticosuprarenală, nu de medulosuprarenală. Sursa: „Sistemul endocrin”, secțiunea Glandele suprarenale."
+        },
+        {
+          "letter": "C",
+          "text": "acționează pe tubul contort distal",
+          "why": "Tubul distal al nefronului este o țintă renală a aldosteronului. Sursa: „Sistemul urinar”, secțiunea Activitatea hormonală și urina."
+        },
+        {
+          "letter": "D",
+          "text": "asigură reabsorbția de K și secreția de Na",
+          "why": "Aldosteronul stimulează reabsorbția sodiului și secreția potasiului, nu reabsorbția potasiului cu secreția sodiului. Sursa: „Sistemul urinar”, secțiunea Activitatea hormonală și urina."
+        },
+        {
+          "letter": "E",
+          "text": "stimulează și reabsorbția apei",
+          "why": "Apa este reabsorbită împreună cu sodiul, astfel încât aldosteronul favorizează reținerea apei. Sursa: „Sistemul urinar”, secțiunea Activitatea hormonală și urina."
+        }
+      ],
+      "sourcePages": [
+        267
+      ],
+      "topicId": "sistemul-endocrin",
+      "topicLabel": "Sistemul endocrin",
+      "lessonUrl": "sistemul_endocrin.html#glandele-suprarenale",
+      "id": "asoc-242"
+    },
+    {
+      "number": 243,
+      "sourceNumber": 243,
+      "sourceChapter": "XIII",
+      "prompt": "Despre circulația sângelui sunt adevărate afirmațiile:",
+      "correct": [
+        "A",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sângele este pompat de ventriculul drept în trunchiul pulmonar",
+          "why": "Ventriculul drept trimite sângele în trunchiul pulmonar, care îl conduce spre plămâni. Sursa: „Sistemul cardiovascular”, secțiunea Circulația sângelui prin inimă."
+        },
+        {
+          "letter": "B",
+          "text": "ventriculul stâng pompează sângele sărac în oxigen în artera aortă",
+          "why": "Ventriculul stâng trimite în aortă sânge bogat în oxigen, nu sânge sărac în oxigen. Sursa: „Sistemul cardiovascular”, secțiunea Circulația sângelui prin inimă."
+        },
+        {
+          "letter": "C",
+          "text": "sângele oxigenat se întoarce de la plămâni în atriul stâng, prin vena cavă superioară",
+          "why": "Sângele din circulația pulmonară revine în atriul stâng prin venele pulmonare; vena cavă superioară aduce sânge sistemic în atriul drept. Sursa: „Sistemul cardiovascular”, secțiunea Cavitățile și vasele inimii / „Sistemul cardiovascular”, secțiunea Circulația sângelui prin inimă."
+        },
+        {
+          "letter": "D",
+          "text": "venele sistemice aduc sângele cu dioxid de carbon în atriul drept",
+          "why": "Sângele venos al circulației sistemice revine în atriul drept prin venele cave. Sursa: „Sistemul cardiovascular”, secțiunea Circulația sângelui prin inimă."
+        },
+        {
+          "letter": "E",
+          "text": "presiunea medie pe care o exercită asupra pereților aortei este de 120/80 mmHg",
+          "why": "Baremul urmează expresia „presiunea arterială medie” folosită în manual pentru 120/80 mmHg. Același pasaj precizează că 120 este valoarea sistolică, iar 80 cea diastolică; acestea sunt cele două valori ale notației. Sursa: „Sistemul cardiovascular”, secțiunea Presiunea arterială."
+        }
+      ],
+      "sourcePages": [
+        267
+      ],
+      "topicId": "sistemul-cardiovascular",
+      "topicLabel": "Sistemul cardiovascular",
+      "lessonUrl": "sistemul_cardiovascular.html#circulatia-sangelui-prin-inima",
+      "id": "asoc-243"
+    },
+    {
+      "number": 244,
+      "sourceNumber": 244,
+      "sourceChapter": "XIII",
+      "prompt": "În configurația inimii se descriu:",
+      "correct": [
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "septul cardiac, ce separă transversal inima",
+          "why": "Septul care separă jumătățile dreaptă și stângă ale inimii este longitudinal, nu transversal. Sursa: „Sistemul cardiovascular”, secțiunea Cavitățile și vasele inimii."
+        },
+        {
+          "letter": "B",
+          "text": "valva bicuspidă, situată în dreapta, și valva tricuspidă, în stânga",
+          "why": "Valva tricuspidă este la dreapta, iar valva bicuspidă la stânga; varianta le inversează. Sursa: „Sistemul cardiovascular”, secțiunea Valvele cardiace."
+        },
+        {
+          "letter": "C",
+          "text": "septul interventricular, ce separă cavitățile cu rol de pompă",
+          "why": "Ventriculele sunt separate prin septul interventricular și constituie camerele care pompează sângele din inimă. Sursa: „Sistemul cardiovascular”, secțiunea Inima / „Sistemul cardiovascular”, secțiunea Cavitățile și vasele inimii."
+        },
+        {
+          "letter": "D",
+          "text": "auricula, prelungire a atriului ce crește capacitatea atrială",
+          "why": "Auriculele măresc capacitatea atriilor de a primi sânge. Sursa: „Sistemul cardiovascular”, secțiunea Cavitățile și vasele inimii."
+        },
+        {
+          "letter": "E",
+          "text": "septul interatrial, ce separă cavitățile de umplere",
+          "why": "Atriile sunt camerele de primire a sângelui și sunt separate prin septul interatrial. Sursa: „Sistemul cardiovascular”, secțiunea Inima / „Sistemul cardiovascular”, secțiunea Cavitățile și vasele inimii."
+        }
+      ],
+      "sourcePages": [
+        267
+      ],
+      "topicId": "sistemul-cardiovascular",
+      "topicLabel": "Sistemul cardiovascular",
+      "lessonUrl": "sistemul_cardiovascular.html#cavitatile-si-vasele-inimii",
+      "id": "asoc-244"
+    },
+    {
+      "number": 245,
+      "sourceNumber": 245,
+      "sourceChapter": "XIII",
+      "prompt": "Pulsul:",
+      "correct": [
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este mai slab lângă inimă și crește pe măsură ce se îndepărtează de inimă",
+          "why": "Manualul descrie pulsul ca fiind mai puternic aproape de inimă și mai slab la distanță; afirmația inversează variația. Sursa: „Sistemul cardiovascular”, secțiunea Presiunea arterială."
+        },
+        {
+          "letter": "B",
+          "text": "prezintă o frecvență crescută în bradicardie",
+          "why": "Bradicardia înseamnă ritm cardiac mai lent, nu creșterea frecvenței. Sursa: „Sistemul cardiovascular”, secțiunea Presiunea arterială."
+        },
+        {
+          "letter": "C",
+          "text": "se poate măsura pe artera radială, carotidă și poplitee",
+          "why": "Arterele radială, carotidă și poplitee sunt indicate ca locuri unde poate fi perceput pulsul. Sursa: „Sistemul cardiovascular”, secțiunea Presiunea arterială."
+        },
+        {
+          "letter": "D",
+          "text": "este scăzut în tahicardie",
+          "why": "Tahicardia înseamnă ritm cardiac accelerat, nu scăderea frecvenței. Sursa: „Sistemul cardiovascular”, secțiunea Presiunea arterială."
+        },
+        {
+          "letter": "E",
+          "text": "reprezintă o undă de presiune în artere",
+          "why": "Pulsul este unda de presiune produsă de contracțiile inimii și propagată în artere. Sursa: „Sistemul cardiovascular”, secțiunea Presiunea arterială."
+        }
+      ],
+      "sourcePages": [
+        267
+      ],
+      "topicId": "sistemul-cardiovascular",
+      "topicLabel": "Sistemul cardiovascular",
+      "lessonUrl": "sistemul_cardiovascular.html#vasele-sanguine",
+      "id": "asoc-245"
+    },
+    {
+      "number": 246,
+      "sourceNumber": 246,
+      "sourceChapter": "XIII",
+      "prompt": "Splina:",
+      "correct": [
+        "A",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este localizată în stânga cavității abdominale, subdiafragmatic",
+          "why": "Splina se află în partea stângă a abdomenului, sub diafragmă. Sursa: „Sistemul limfatic și imun”, secțiunea Splina."
+        },
+        {
+          "letter": "B",
+          "text": "prezintă o față convexă în raport cu rinichiul stâng",
+          "why": "Suprafața în contact cu rinichiul stâng este concavă; convexitatea este orientată spre diafragmă. Sursa: „Sistemul limfatic și imun”, secțiunea Splina."
+        },
+        {
+          "letter": "C",
+          "text": "este vascularizată de vase care intră sau ies la nivelul hilului",
+          "why": "Vasele sanguine pătrund și ies la nivelul hilului splenic. Sursa: „Sistemul limfatic și imun”, secțiunea Splina."
+        },
+        {
+          "letter": "D",
+          "text": "prezintă o formă care influențează configurația organelor vecine",
+          "why": "Manualul spune că forma splinei urmează forma organelor învecinate, nu că splina le determină acestora forma. Sursa: „Sistemul limfatic și imun”, secțiunea Splina."
+        },
+        {
+          "letter": "E",
+          "text": "este drenată de o venă ce participă la formarea venei porte",
+          "why": "Figura circulației portale arată vena splenică participând la sistemul venei porte, care conduce sângele spre ficat. Sursa: „Sistemul cardiovascular”, secțiunea Tipuri de circulație sanguină (figura 15.11)."
+        }
+      ],
+      "sourcePages": [
+        267
+      ],
+      "topicId": "sistemul-limfatic-si-imun",
+      "topicLabel": "Sistemul limfatic și imun",
+      "lessonUrl": "sistemul_limfatic_si_imun.html#splina",
+      "id": "asoc-246"
+    },
+    {
+      "number": 247,
+      "sourceNumber": 247,
+      "sourceChapter": "XIII",
+      "prompt": "Despre pleură se pot afirma următoarele:",
+      "correct": [
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este o membrană fibroasă, dublu stratificată",
+          "why": "Pleura este o membrană seroasă, nu învelișul fibros propus. Sursa: „Sistemul respirator”, secțiunea Plămânii."
+        },
+        {
+          "letter": "B",
+          "text": "pleura viscerală pătrunde prin fisurile dintre lobi",
+          "why": "Pleura viscerală acoperă plămânul și pătrunde în fisurile dintre lobi. Sursa: „Sistemul respirator”, secțiunea Plămânii."
+        },
+        {
+          "letter": "C",
+          "text": "cavitatea pleurală conține lichid pleural",
+          "why": "Lichidul pleural dintre foițe reduce frecarea în timpul mișcărilor respiratorii. Sursa: „Sistemul respirator”, secțiunea Plămânii."
+        },
+        {
+          "letter": "D",
+          "text": "pleura parietală acoperă suprafața externă a toracelui",
+          "why": "Pleura parietală căptușește interiorul peretelui toracic, nu suprafața externă a toracelui. Sursa: „Sistemul respirator”, secțiunea Plămânii."
+        },
+        {
+          "letter": "E",
+          "text": "este o structură seroasă, similar peritoneului",
+          "why": "Atât pleura, cât și peritoneul sunt membrane seroase, asociate unor cavități diferite. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului / „Sistemul respirator”, secțiunea Plămânii."
+        }
+      ],
+      "sourcePages": [
+        267
+      ],
+      "topicId": "sistemul-respirator",
+      "topicLabel": "Sistemul respirator",
+      "lessonUrl": "sistemul_respirator.html#anatomie",
+      "id": "asoc-247"
+    },
+    {
+      "number": 248,
+      "sourceNumber": 248,
+      "sourceChapter": "XIII",
+      "prompt": "La nivelul cavității orale sunt descrise:",
+      "correct": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "digestia mecanică asigurată prin acțiunea dinților",
+          "why": "Dinții realizează fragmentarea mecanică a alimentelor în cavitatea orală. Sursa: „Sistemul digestiv”, secțiunea Cavitatea orală."
+        },
+        {
+          "letter": "B",
+          "text": "funcția gustativă transmisă prin nervii cranieni V și VII",
+          "why": "Manualul indică nervii facial VII și glosofaringian IX pentru transmiterea gustului; combinația V și VII nu corespunde. Sursa: „Organele de simț”, secțiunea Gustul / „Sistemul nervos”, secțiunea Nervii cranieni; tabelul 11.3."
+        },
+        {
+          "letter": "C",
+          "text": "digestia enzimatică asigurată de amilazele din secreția glandelor salivare",
+          "why": "Amilaza salivară începe digestia amidonului și glicogenului, cu formare de maltoză. Sursa: „Sistemul digestiv”, secțiunea Cavitatea orală."
+        },
+        {
+          "letter": "D",
+          "text": "limba, care se aplică pe palat pentru a împinge bolul alimentar în faringe",
+          "why": "În deglutiție, limba comprimă bolul alimentar de palatul dur și îl împinge spre faringe. Sursa: „Sistemul digestiv”, secțiunea Esofagul."
+        },
+        {
+          "letter": "E",
+          "text": "orificiile glandelor submandibulare care se deschid lateral de frâul limbii",
+          "why": "Ductele glandelor submandibulare se deschid în cavitatea orală de o parte și de alta a frenului limbii. Sursa: „Sistemul digestiv”, secțiunea Cavitatea orală."
+        }
+      ],
+      "sourcePages": [
+        267,
+        268
+      ],
+      "topicId": "sistemul-digestiv",
+      "topicLabel": "Sistemul digestiv",
+      "lessonUrl": "sistemul_digestiv.html#tractul-gastrointestinal",
+      "id": "asoc-248"
+    },
+    {
+      "number": 249,
+      "sourceNumber": 249,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele variante sunt corecte:",
+      "correct": [
+        "A",
+        "B"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "lipoproteinele cu densitate mică, prezente în cantitate mare, sunt factor de risc pentru boli coronariene",
+          "why": "Manualul asociază LDL cu transportul colesterolului și cu creșterea riscului depunerilor la nivelul vaselor. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul lipidelor și al proteinelor."
+        },
+        {
+          "letter": "B",
+          "text": "glicoliza duce la transformarea glucozei în acid piruvic",
+          "why": "Glicoliza transformă glucoza în acid piruvic, reprezentând prima etapă a degradării sale în respirația celulară. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "C",
+          "text": "acizii grași sunt metabolizați în ribozomi prin beta-oxidare",
+          "why": "Beta-oxidarea acizilor grași are loc în mitocondrii, nu la nivelul ribozomilor. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul lipidelor și al proteinelor."
+        },
+        {
+          "letter": "D",
+          "text": "aminoacizii esențiali sunt sintetizați în ficat",
+          "why": "Aminoacizii esențiali trebuie obținuți din alimentație; ficatul nu asigură sinteza lor în sensul afirmat. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul lipidelor și al proteinelor."
+        },
+        {
+          "letter": "E",
+          "text": "starea de absorbție este caracterizată de creșterea secreției de glucagon",
+          "why": "Starea de absorbție după masă este dominată de insulină; glucagonul predomină în starea postabsorbtivă. Sursa: „Metabolism și nutriție”, secțiunea Stări metabolice."
+        }
+      ],
+      "sourcePages": [
+        268
+      ],
+      "topicId": "metabolism-si-nutritie",
+      "topicLabel": "Metabolism și nutriție",
+      "lessonUrl": "metabolism_si_nutritie.html#lipide-si-proteine",
+      "id": "asoc-249"
+    },
+    {
+      "number": 250,
+      "sourceNumber": 250,
+      "sourceChapter": "XIII",
+      "prompt": "Căile urinare sunt formate din:",
+      "correct": [
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "calice mici și calice mari aflate în corticala rinichiului",
+          "why": "Calicele primesc urina de la vârfurile piramidelor și o conduc spre pelvisul renal; nu sunt localizate în cortexul renal. Sursa: „Sistemul urinar”, secțiunea Rinichii."
+        },
+        {
+          "letter": "B",
+          "text": "tubi colectori în care se găsește filtrat glomerular",
+          "why": "Tuburile colectoare conduc lichidul rezultat după prelucrările tubulare spre căile de eliminare a urinei. Filtrarea inițială se produce la glomerul, în capsula Bowman. Sursa: „Sistemul urinar”, secțiunea Structura și fiziologia nefronului."
+        },
+        {
+          "letter": "C",
+          "text": "vezica urinară în care se acumulează urină între micțiuni",
+          "why": "Vezica urinară depozitează urina până la eliminarea ei prin micțiune. Sursa: „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii."
+        },
+        {
+          "letter": "D",
+          "text": "uretră care, la sexul feminin, se deschide în vestibulul vaginal",
+          "why": "Uretra feminină se deschide în vestibul, anterior de orificiul vaginal. Sursa: „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii / „Sistemul reproducător feminin”, secțiunea Ovarele și organele anexe."
+        },
+        {
+          "letter": "E",
+          "text": "bazinet care, prin acumularea de urină, stimulează peristaltismul musculaturii striate a ureterelor",
+          "why": "Transportul urinei prin uretere se realizează prin peristaltismul musculaturii netede; varianta atribuie greșit acest mecanism musculaturii striate. Sursa: „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii / „Țesutul muscular”, secțiunea Tipurile de țesut muscular; tabelul 8.1."
+        }
+      ],
+      "sourcePages": [
+        268
+      ],
+      "topicId": "sistemul-renal-complet",
+      "topicLabel": "Sistemul urinar",
+      "lessonUrl": "sistemul_renal_complet.html#anexe",
+      "id": "asoc-250"
+    },
+    {
+      "number": 251,
+      "sourceNumber": 251,
+      "sourceChapter": "XIII",
+      "prompt": "Despre excreție sunt adevărate afirmațiile:",
+      "correct": [
+        "A",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "asigură eliminarea produșilor de degradare metabolică",
+          "why": "Excreția elimină produși rezultați din metabolism; această origine a substanțelor eliminate o deosebește de eliminarea alimentelor nedigerate. Sursa: „Sistemul urinar”, secțiunea Rinichii / „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii."
+        },
+        {
+          "letter": "B",
+          "text": "este asigurată doar de rinichi",
+          "why": "Pe lângă rinichi, manualul include ficatul, plămânii, intestinul și pielea între organele cu funcție excretorie. Sursa: „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii."
+        },
+        {
+          "letter": "C",
+          "text": "asigură eliminarea unor cantități crescute de săruri, amoniac, uree și acid uric prin piele",
+          "why": "Pielea este un organ excretor minor. Sudoarea conține mici cantități de săruri și anumite cantități de amoniac, uree și acid uric; formularea „cantități crescute” nu corespunde descrierii. Sursa: „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii."
+        },
+        {
+          "letter": "D",
+          "text": "este asigurată și prin eliminarea materialelor nedigerate din tubul digestiv",
+          "why": "Eliminarea materialelor nedigerate prin defecație nu este considerată excreție, deoarece acestea nu sunt produși de degradare metabolică. Sursa: „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii."
+        },
+        {
+          "letter": "E",
+          "text": "asigură eliminarea de CO₂ prin cele mai mari organe din torace",
+          "why": "Plămânii, cele mai mari organe toracice descrise, elimină dioxidul de carbon și au astfel rol excretor. Sursa: „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii / „Sistemul respirator”, secțiunea Plămânii."
+        }
+      ],
+      "sourcePages": [
+        268
+      ],
+      "topicId": "introducere-anatomie-fiziologie",
+      "topicLabel": "Organizarea corpului uman",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#functii",
+      "id": "asoc-251"
+    },
+    {
+      "number": 252,
+      "sourceNumber": 252,
+      "sourceChapter": "XIII",
+      "prompt": "Testosteronul:",
+      "correct": [
+        "B",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este un hormon sintetizat din aminoacizi",
+          "why": "Testosteronul aparține hormonilor steroizi, sintetizați din colesterol; nu este hormonul derivat din aminoacizi propus. Sursa: „Sistemul endocrin”, secțiunea Descrierea generală a hormonilor."
+        },
+        {
+          "letter": "B",
+          "text": "asigură creșterea depozitelor de proteine din țesuturi",
+          "why": "Testosteronul stimulează sinteza proteinelor și creșterea masei musculare, favorizând acumularea proteinelor în țesuturi. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul lipidelor și al proteinelor / „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "C",
+          "text": "este secretat sub control neurohipofizar, prin intermediul LH-ului",
+          "why": "LH controlează producția de testosteron, dar LH este secretat de hipofiza anterioară, nu de neurohipofiză. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "D",
+          "text": "induce maturarea spermatozoizilor, după pubertate",
+          "why": "Printre efectele testosteronului după pubertate, manualul enumeră inducerea maturării spermatozoizilor. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        },
+        {
+          "letter": "E",
+          "text": "controlează diferențierea țesuturilor specifice sexului masculin la făt",
+          "why": "La făt, testosteronul controlează diferențierea țesuturilor specifice sexului masculin. Sursa: „Sistemul reproducător masculin”, secțiunea Hormonii masculini."
+        }
+      ],
+      "sourcePages": [
+        268
+      ],
+      "topicId": "sistemul-reproducator-masculin",
+      "topicLabel": "Sistemul reproducător masculin",
+      "lessonUrl": "sistemul_reproducator_masculin.html#hormoni",
+      "id": "asoc-252"
+    },
+    {
+      "number": 253,
+      "sourceNumber": 253,
+      "sourceChapter": "XIII",
+      "prompt": "Cavitățile nazale:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt căptușite de o mucoasă",
+          "why": "Cavitățile nazale sunt căptușite cu mucoasă. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "B",
+          "text": "se deschid spre mediul extern prin coane",
+          "why": "Deschiderile spre exterior sunt narinele externe, adică nările. Comunicarea posterioară duce spre nazofaringe, astfel că varianta confundă deschiderile. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "C",
+          "text": "sunt separate de un sept median",
+          "why": "Septul nazal împarte median cavitatea nazală în cele două cavități. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "D",
+          "text": "prezintă deschiderile sinusurilor",
+          "why": "Sinusurile frontal, sfenoidal, etmoidal și maxilar se deschid în cavitățile nazale. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "E",
+          "text": "comunică cu orofaringele",
+          "why": "Cavitățile nazale comunică direct cu nazofaringele. Orofaringele este segmentul inferior, situat posterior de cavitatea orală. Sursa: „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        }
+      ],
+      "sourcePages": [
+        268
+      ],
+      "topicId": "sistemul-respirator",
+      "topicLabel": "Sistemul respirator",
+      "lessonUrl": "sistemul_respirator.html#anatomie",
+      "id": "asoc-253"
+    },
+    {
+      "number": 254,
+      "sourceNumber": 254,
+      "sourceChapter": "XIII",
+      "prompt": "Plămânii sunt organe care:",
+      "correct": [
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "conțin 900 de milioane de alveole",
+          "why": "Manualul indică aproximativ 300 de milioane de alveole în fiecare plămân, nu 900 de milioane pentru cei doi plămâni. Sursa: „Sistemul respirator”, secțiunea Plămânii."
+        },
+        {
+          "letter": "B",
+          "text": "delimitează mediastinul, în care se găsește inima",
+          "why": "Între cei doi plămâni se află mediastinul, regiune care conține inima. Sursa: „Sistemul respirator”, secțiunea Plămânii / „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        },
+        {
+          "letter": "C",
+          "text": "în timpul respirației normale permit intrarea/ieșirea a 500 mililitri de aer",
+          "why": "Volumul curent al unei respirații normale este de aproximativ 500 ml de aer inspirat și expirat. Sursa: „Sistemul respirator”, secțiunea Volumele pulmonare."
+        },
+        {
+          "letter": "D",
+          "text": "sunt împărțiți în trei lobi - cel stâng, și doi lobi - cel drept",
+          "why": "Plămânul drept are trei lobi, iar cel stâng doi; varianta inversează distribuția. Sursa: „Sistemul respirator”, secțiunea Plămânii."
+        },
+        {
+          "letter": "E",
+          "text": "prezintă lobuli deserviți de câte o bronhiolă",
+          "why": "Plămânii sunt împărțiți în lobuli, fiecare fiind deservit de o bronhiolă. Sursa: „Sistemul respirator”, secțiunea Plămânii."
+        }
+      ],
+      "sourcePages": [
+        268
+      ],
+      "topicId": "sistemul-respirator",
+      "topicLabel": "Sistemul respirator",
+      "lessonUrl": "sistemul_respirator.html#anatomie",
+      "id": "asoc-254"
+    },
+    {
+      "number": 255,
+      "sourceNumber": 255,
+      "sourceChapter": "XIII",
+      "prompt": "Sângele din venele pulmonare conține:",
+      "correct": [
+        "A",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "O₂ transportat în proporție de 98 % sub formă de oxihemoglobină",
+          "why": "Aproximativ 98% din oxigen este transportat legat de hemoglobină, sub formă de oxihemoglobină. Sursa: „Sistemul respirator”, secțiunea Schimbul de gaze."
+        },
+        {
+          "letter": "B",
+          "text": "CO₂ transportat sub formă de carbaminohemoglobină în proporție de 25-30 %",
+          "why": "Manualul atribuie carbaminohemoglobinei 25–30% din transportul dioxidului de carbon și precizează că venele pulmonare au concentrație mai mică de CO₂. Nu oferă o repartiție separată a formelor de transport în aceste vene, care să justifice sigur excluderea variantei B din barem. Sursa: „Sistemul respirator”, secțiunea Schimbul de gaze / „Sistemul respirator”, secțiunea Anatomia sistemului respirator."
+        },
+        {
+          "letter": "C",
+          "text": "O₂ fixat la nivelul Fe din hemoglobină",
+          "why": "Oxigenul se leagă de fierul din molecula de hemoglobină, formând oxihemoglobina. Sursa: „Sângele”, secțiunea Globulele roșii."
+        },
+        {
+          "letter": "D",
+          "text": "NaHCO₃, formă de transport a monoxidului de carbon",
+          "why": "Bicarbonatul de sodiu reprezintă o formă de transport a dioxidului de carbon, nu a monoxidului de carbon. Sursa: „Sistemul respirator”, secțiunea Schimbul de gaze."
+        },
+        {
+          "letter": "E",
+          "text": "O₂ dizolvat în citoplasma hematiilor în proporție de 2 %",
+          "why": "Procentul de 2% este atribuit împreună oxigenului dizolvat în plasmă sau în citoplasma eritrocitelor. Varianta îl atribuie numai citoplasmei hematiilor și nu reproduce repartiția din manual. Sursa: „Sistemul respirator”, secțiunea Schimbul de gaze."
+        }
+      ],
+      "sourcePages": [
+        268
+      ],
+      "topicId": "sistemul-respirator",
+      "topicLabel": "Sistemul respirator",
+      "lessonUrl": "sistemul_respirator.html#schimbul-de-gaze",
+      "id": "asoc-255"
+    },
+    {
+      "number": 256,
+      "sourceNumber": 256,
+      "sourceChapter": "XIII",
+      "prompt": "Organele sistemului digestiv prezintă următoarele funcții:",
+      "correct": [
+        "B",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "ficatul secretă acid clorhidric necesar digestiei proteinelor",
+          "why": "Acidul clorhidric este secretat de stomac. Ficatul secretă bila, nu acid clorhidric pentru digestia proteinelor. Sursa: „Sistemul digestiv”, secțiunea Cavitatea orală."
+        },
+        {
+          "letter": "B",
+          "text": "intestinul subțire absoarbe nutrienți",
+          "why": "Intestinul subțire are rol major în absorbția nutrienților rezultați prin digestie. Sursa: „Sistemul digestiv”, secțiunea Cavitatea orală."
+        },
+        {
+          "letter": "C",
+          "text": "glandele salivare secretă amilază, ce inițiază degradarea lipidelor",
+          "why": "Amilaza salivară inițiază degradarea amidonului și glicogenului, deci a glucidelor, nu a lipidelor. Sursa: „Sistemul digestiv”, secțiunea Cavitatea orală."
+        },
+        {
+          "letter": "D",
+          "text": "vezica biliară depozitează și eliberează bila în intestinul subțire",
+          "why": "Vezica biliară depozitează bila și o eliberează în intestinul subțire. Sursa: „Sistemul digestiv”, secțiunea Cavitatea orală."
+        },
+        {
+          "letter": "E",
+          "text": "esofagul transportă alimentele spre stomac",
+          "why": "Esofagul transportă alimentele spre stomac prin mișcările sale peristaltice. Sursa: „Sistemul digestiv”, secțiunea Cavitatea orală."
+        }
+      ],
+      "sourcePages": [
+        268,
+        269
+      ],
+      "topicId": "sistemul-digestiv",
+      "topicLabel": "Sistemul digestiv",
+      "lessonUrl": "sistemul_digestiv.html#organele-anexe",
+      "id": "asoc-256"
+    },
+    {
+      "number": 257,
+      "sourceNumber": 257,
+      "sourceChapter": "XIII",
+      "prompt": "Despre duoden se pot afirma următoarele:",
+      "correct": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este porțiunea din intestinul subțire în care este evacuat chimul gastric prin sfincterul piloric",
+          "why": "Chimul gastric este evacuat prin sfincterul piloric în duoden, prima porțiune a intestinului subțire. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "B",
+          "text": "măsoară aproximativ 55 cm",
+          "why": "Lungimea duodenului indicată în manual este de aproximativ 25 cm, nu 55 cm. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "C",
+          "text": "primește, prin ampula hepatopancreatică, secrețiile aduse de ductul pancreatic și ductul biliar",
+          "why": "Ductul pancreatic și calea biliară conduc secrețiile spre duoden prin ampula hepatopancreatică, așa cum arată și figura. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros (figura 18.10)."
+        },
+        {
+          "letter": "D",
+          "text": "conține, în submucoasă, aglomerări de țesut limfoid",
+          "why": "Manualul precizează că submucoasa duodenală conține aglomerări nodulare de țesut limfoid, similare plăcilor Peyer din ileon. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        },
+        {
+          "letter": "E",
+          "text": "contribuie, prin secreția glandelor Brunner, la neutralizarea acidității chimului gastric",
+          "why": "Glandele Brunner din submucoasă produc mucus alcalin, care contribuie la neutralizarea chimului gastric acid. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        }
+      ],
+      "sourcePages": [
+        269
+      ],
+      "topicId": "sistemul-digestiv",
+      "topicLabel": "Sistemul digestiv",
+      "lessonUrl": "sistemul_digestiv.html#intestinele",
+      "id": "asoc-257"
+    },
+    {
+      "number": 258,
+      "sourceNumber": 258,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la metabolism:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "reacțiile anabolice converg spre căile metabolice principale",
+          "why": "Tabelul comparativ atribuie convergența căilor catabolismului; reacțiile anabolice diverg de la căile metabolice principale. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "B",
+          "text": "energia este eliberată din ATP când se îndepărtează grupul fosfat terminal",
+          "why": "Energia este eliberată când ATP-aza îndepărtează gruparea fosfat terminală a ATP, rezultând ADP și fosfat. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "C",
+          "text": "degradarea moleculelor mari este însoțită de eliberarea de energie",
+          "why": "Degradarea moleculelor complexe constituie catabolismul și eliberează energie. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "D",
+          "text": "sintezele de glicogen, trigliceride și proteine sunt mediate enzimatic",
+          "why": "Tabelul metabolismului indică medierea enzimatică a reacțiilor anabolice și dă drept exemple sintezele de glicogen, trigliceride și proteine. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "E",
+          "text": "compusul care cedează doi electroni devine redus",
+          "why": "Compusul care cedează electroni se oxidează. Reducerea revine compusului care acceptă electronii. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        }
+      ],
+      "sourcePages": [
+        269
+      ],
+      "topicId": "metabolism-si-nutritie",
+      "topicLabel": "Metabolism și nutriție",
+      "lessonUrl": "metabolism_si_nutritie.html#metabolismul-glucidelor",
+      "id": "asoc-258"
+    },
+    {
+      "number": 259,
+      "sourceNumber": 259,
+      "sourceChapter": "XIII",
+      "prompt": "Moleculele de glucoză:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt stocate sub formă de glicogen când nivelul glicemiei este crescut",
+          "why": "Când glicemia este ridicată, glucoza poate fi depozitată sub formă de glicogen. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "B",
+          "text": "se descompun prin chemiosmoză, prima etapă a respirației celulare",
+          "why": "Prima etapă este glicoliza, care produce acid piruvic. Chemiosmoza este prezentată într-o etapă ulterioară, nu ca început al descompunerii glucozei. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "C",
+          "text": "sunt rezultatul procesului de glicogenoliză, cu eliberarea lor în fluxul sanguin",
+          "why": "Glicogenoliza descompune glicogenul și permite eliberarea glucozei în sânge pentru menținerea glicemiei. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "D",
+          "text": "pot fi sintetizate în ficat din surse non-glucidice prin procesul de gluconeogeneză",
+          "why": "Gluconeogeneza hepatică formează glucoză din surse neglucidice, precum aminoacizi, glicerol și acid lactic. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "E",
+          "text": "sunt rezultatul acțiunii dizaharidelor asupra dizaharidazelor",
+          "why": "Dizaharidazele sunt enzimele care descompun dizaharidele, eliberând monozaharide. Varianta inversează enzima și substratul asupra căruia acționează. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros / „Sistemul digestiv”, secțiunea Enzimele digestive; tabelul 18.4."
+        }
+      ],
+      "sourcePages": [
+        269
+      ],
+      "topicId": "metabolism-si-nutritie",
+      "topicLabel": "Metabolism și nutriție",
+      "lessonUrl": "metabolism_si_nutritie.html#metabolismul-glucidelor",
+      "id": "asoc-259"
+    },
+    {
+      "number": 260,
+      "sourceNumber": 260,
+      "sourceChapter": "XIII",
+      "prompt": "Starea postprandială este caracterizată prin:",
+      "correct": [
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "nivel scăzut de glucoză",
+          "why": "După masă, nutrienții sunt absorbiți și glicemia crește; nu este starea caracterizată prin nivel scăzut al glucozei. Sursa: „Metabolism și nutriție”, secțiunea Stări metabolice."
+        },
+        {
+          "letter": "B",
+          "text": "creșterea secreției de glucagon",
+          "why": "Starea postprandială favorizează secreția de insulină; creșterea glucagonului este asociată stării postabsorbtive. Sursa: „Metabolism și nutriție”, secțiunea Stări metabolice."
+        },
+        {
+          "letter": "C",
+          "text": "formarea de glicogen, lipide și proteine",
+          "why": "Insulina favorizează depozitarea nutrienților prin formarea glicogenului, lipidelor și proteinelor. Sursa: „Metabolism și nutriție”, secțiunea Stări metabolice."
+        },
+        {
+          "letter": "D",
+          "text": "creșterea fracției insulină/glucagon",
+          "why": "Predominanța insulinei după masă corespunde creșterii raportului insulină/glucagon. Sursa: „Metabolism și nutriție”, secțiunea Stări metabolice."
+        },
+        {
+          "letter": "E",
+          "text": "intensificarea proceselor de gluconeogeneză",
+          "why": "Intensificarea gluconeogenezei este atribuită stării postabsorbtive, pentru menținerea glucozei sanguine, nu stării postprandiale. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor / „Metabolism și nutriție”, secțiunea Stări metabolice."
+        }
+      ],
+      "sourcePages": [
+        269
+      ],
+      "topicId": "metabolism-si-nutritie",
+      "topicLabel": "Metabolism și nutriție",
+      "lessonUrl": "metabolism_si_nutritie.html#stari-si-minerale",
+      "id": "asoc-260"
+    },
+    {
+      "number": 261,
+      "sourceNumber": 261,
+      "sourceChapter": "XIII",
+      "prompt": "Despre rinichi se pot afirma următoarele:",
+      "correct": [
+        "A",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt localizați retroperitoneal",
+          "why": "Rinichii se află pe peretele abdominal posterior, în afara peritoneului, deci retroperitoneal. Sursa: „Sistemul urinar”, secțiunea Rinichii."
+        },
+        {
+          "letter": "B",
+          "text": "cântăresc împreună 175 de grame",
+          "why": "Masa medie de 175 g este indicată pentru fiecare rinichi, nu pentru cei doi împreună. Sursa: „Sistemul urinar”, secțiunea Rinichii."
+        },
+        {
+          "letter": "C",
+          "text": "prezintă hilul pe suprafața medială",
+          "why": "Hilul este depresiunea concavă de pe suprafața medială a rinichiului. Sursa: „Sistemul urinar”, secțiunea Rinichii."
+        },
+        {
+          "letter": "D",
+          "text": "eliberează urina prin pelvisul renal în vezica urinară",
+          "why": "Urina trece din pelvisul renal în ureter și apoi în vezica urinară. Baremul exclude D, ceea ce corespunde interpretării unei comunicări directe între pelvis și vezică. Varianta nu spune însă „direct”; omiterea ureterului lasă ambiguă descrierea traseului, fără să demonstreze singură o comunicare directă. Sursa: „Sistemul urinar”, secțiunea Rinichii."
+        },
+        {
+          "letter": "E",
+          "text": "conțin piramide renale în corticală",
+          "why": "Piramidele renale constituie medulara, nu corticala renală. Sursa: „Sistemul urinar”, secțiunea Rinichii."
+        }
+      ],
+      "sourcePages": [
+        269
+      ],
+      "topicId": "sistemul-renal-complet",
+      "topicLabel": "Sistemul urinar",
+      "lessonUrl": "sistemul_renal_complet.html#rinichii",
+      "id": "asoc-261"
+    },
+    {
+      "number": 262,
+      "sourceNumber": 262,
+      "sourceChapter": "XIII",
+      "prompt": "Despre uretere se pot afirma următoarele:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "transportă urina din pelvisul renal la vezica urinară",
+          "why": "Ureterele continuă pelvisul renal și transportă urina spre vezica urinară. Sursa: „Sistemul urinar”, secțiunea Rinichii / „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii."
+        },
+        {
+          "letter": "B",
+          "text": "prezintă în structura pereților mușchi cu o viteză de contracție rapidă",
+          "why": "Transportul prin uretere se face prin musculatură netedă, caracterizată în tabel prin contracție lentă, nu rapidă. Sursa: „Țesutul muscular”, secțiunea Tipurile de țesut muscular; tabelul 8.1 / „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii."
+        },
+        {
+          "letter": "C",
+          "text": "au o lungime de aproximativ 25 - 30 cm",
+          "why": "Lungimea ureterelor este de aproximativ 25–30 cm. Sursa: „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii."
+        },
+        {
+          "letter": "D",
+          "text": "asigură un flux de intrare în vezica urinară de 5 ml/minut",
+          "why": "Manualul indică jeturi de urină care realizează un flux de intrare în vezică de 5 ml pe minut. Sursa: „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii."
+        },
+        {
+          "letter": "E",
+          "text": "sunt organe tubulare ce se deschid în vezica urinară prin două orificii situate în partea inferioară a acesteia",
+          "why": "Textul confirmă două orificii ureterale, iar figura le desenează în regiunea inferioară a vezicii, deasupra colului. Baremul exclude E; această excludere nu este susținută clar de text și imagine și nu justifică declararea celor două orificii ca fiind superioare. Sursa: „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii (figura 20.8)."
+        }
+      ],
+      "sourcePages": [
+        269
+      ],
+      "topicId": "sistemul-renal-complet",
+      "topicLabel": "Sistemul urinar",
+      "lessonUrl": "sistemul_renal_complet.html#anexe",
+      "id": "asoc-262"
+    },
+    {
+      "number": 263,
+      "sourceNumber": 263,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la rinichi:",
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt organe retroperitoneale susținute în poziție de țesut adipos și conjunctiv",
+          "why": "Rinichii sunt retroperitoneali și sunt menținuți în poziție de țesut adipos și conjunctiv. Sursa: „Sistemul urinar”, secțiunea Rinichii."
+        },
+        {
+          "letter": "B",
+          "text": "pe o secțiune frontală, prezintă o regiune externă numită cortex și o regiune profundă numită medulară",
+          "why": "Secțiunea frontală arată cortexul la exterior și medulara în profunzime. Sursa: „Sistemul urinar”, secțiunea Rinichii."
+        },
+        {
+          "letter": "C",
+          "text": "primesc sânge prin arterele renale, ramuri din aorta abdominală",
+          "why": "Arterele renale provin din aorta abdominală și aduc sânge rinichilor. Sursa: „Sistemul cardiovascular”, secțiunea Tipuri de circulație sanguină / „Sistemul urinar”, secțiunea Nefronul."
+        },
+        {
+          "letter": "D",
+          "text": "au ca unitate morfofuncțională nefronul, alcătuit din glomerul și capsula Bowman",
+          "why": "Glomerulul și capsula Bowman nu epuizează structura nefronului: acesta include și tubul proximal, ansa Henle și tubul distal. Sursa: „Sistemul urinar”, secțiunea Structura și fiziologia nefronului."
+        },
+        {
+          "letter": "E",
+          "text": "cel stâng are marginea laterală acoperită în cea mai mare parte de coaste",
+          "why": "În figura poziției rinichilor, rinichiul stâng, aflat în dreapta imaginii frontale, are cea mai mare parte a marginii laterale proiectată sub coaste. Sursa: „Sistemul urinar”, secțiunea Rinichii (figura 20.1)."
+        }
+      ],
+      "sourcePages": [
+        269
+      ],
+      "topicId": "sistemul-renal-complet",
+      "topicLabel": "Sistemul urinar",
+      "lessonUrl": "sistemul_renal_complet.html#rinichii",
+      "id": "asoc-263"
+    },
+    {
+      "number": 264,
+      "sourceNumber": 264,
+      "sourceChapter": "XIII",
+      "prompt": "Presiunea arterială:",
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "reprezintă presiunea exercitată de sânge asupra pereților vasculari",
+          "why": "Presiunea arterială reprezintă presiunea exercitată de sânge asupra pereților vasculari. Sursa: „Sistemul cardiovascular”, secțiunea Presiunea arterială."
+        },
+        {
+          "letter": "B",
+          "text": "depinde de rezistența la fluxul sanguin",
+          "why": "Rezistența întâmpinată de fluxul sanguin este unul dintre factorii care influențează presiunea arterială. Sursa: „Sistemul cardiovascular”, secțiunea Presiunea arterială."
+        },
+        {
+          "letter": "C",
+          "text": "este influențată de vâscozitatea sângelui, de lungimea vaselor sanguine și de diametrul acestora",
+          "why": "Manualul enumeră vâscozitatea sângelui, lungimea vaselor și diametrul acestora ca factori ai rezistenței vasculare și ai presiunii. Sursa: „Sistemul cardiovascular”, secțiunea Presiunea arterială."
+        },
+        {
+          "letter": "D",
+          "text": "are valoarea de aproximativ 80 mmHg în diastolă",
+          "why": "Valoarea diastolică de referință indicată este aproximativ 80 mmHg. Sursa: „Sistemul cardiovascular”, secțiunea Presiunea arterială."
+        },
+        {
+          "letter": "E",
+          "text": "nu este modificată de scăderea volumului de sânge din circulație",
+          "why": "Pierderea volumului de sânge determină scăderea presiunii; aceasta nu rămâne nemodificată. Sursa: „Sistemul cardiovascular”, secțiunea Presiunea arterială."
+        }
+      ],
+      "sourcePages": [
+        270
+      ],
+      "topicId": "sistemul-cardiovascular",
+      "topicLabel": "Sistemul cardiovascular",
+      "lessonUrl": "sistemul_cardiovascular.html#vasele-sanguine",
+      "id": "asoc-264"
+    },
+    {
+      "number": 265,
+      "sourceNumber": 265,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la membrana celulară:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este alcătuită în principal din proteine și fosfolipide",
+          "why": "Membrana este alcătuită în principal dintr-un strat dublu de fosfolipide și proteine asociate. Sursa: „Celula și fiziologia celulară”, secțiunea Membrana plasmatică."
+        },
+        {
+          "letter": "B",
+          "text": "are structură de mozaic rigid",
+          "why": "Modelul membranei este numit mozaic fluid, nu rigid. Sursa: „Celula și fiziologia celulară”, secțiunea Membrana plasmatică."
+        },
+        {
+          "letter": "C",
+          "text": "conține proteine transmembranare cu rol de canale pentru transportul membranar",
+          "why": "Proteinele transmembranare pot forma canale prin care trec substanțe prin membrană. Sursa: „Celula și fiziologia celulară”, secțiunea Membrana plasmatică."
+        },
+        {
+          "letter": "D",
+          "text": "glicolipidele și glicoproteinele situate înspre mediul extern au rol de receptori pentru hormoni",
+          "why": "Glicolipidele și glicoproteinele orientate spre exterior pot avea rol de receptori, inclusiv pentru hormoni. Sursa: „Celula și fiziologia celulară”, secțiunea Membrana plasmatică."
+        },
+        {
+          "letter": "E",
+          "text": "este permeabilă pentru toate moleculele, indiferent de dimensiune",
+          "why": "Membrana este semipermeabilă și selectivă; nu permite trecerea tuturor moleculelor indiferent de dimensiune. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        }
+      ],
+      "sourcePages": [
+        270
+      ],
+      "topicId": "celula-si-fiziologia-celulara",
+      "topicLabel": "Celula și fiziologia celulară",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#membrana",
+      "id": "asoc-265"
+    },
+    {
+      "number": 266,
+      "sourceNumber": 266,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre următoarele afirmații referitoare la țesutul muscular striat sunt corecte:",
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este alcătuit din celule musculare ce prezintă în sarcoplasmă miofibrile și mitocondrii",
+          "why": "Sarcoplasma fibrelor musculare conține miofibrile și numeroase mitocondrii care furnizează ATP. Sursa: „Țesutul muscular”, secțiunea Structura celulei musculare."
+        },
+        {
+          "letter": "B",
+          "text": "are în structură miofibrile organizate în sarcomere, formate din filamente subțiri și groase, dispuse în paralel",
+          "why": "Miofibrilele sunt organizate în sarcomere cu filamente subțiri de actină și groase de miozină, dispuse paralel. Sursa: „Țesutul muscular”, secțiunea Structura celulei musculare."
+        },
+        {
+          "letter": "C",
+          "text": "este alcătuit din fibre musculare învelite de epimisium",
+          "why": "Fibra individuală este învelită de endomisium. Epimisiumul învelește întregul mușchi. Sursa: „Țesutul muscular”, secțiunea Structura țesutului muscular striat scheletic."
+        },
+        {
+          "letter": "D",
+          "text": "conține, în mijlocul sarcomerului, banda A formată doar din filamente de miozină",
+          "why": "Banda A include filamente groase și zone de suprapunere cu filamente subțiri. Numai banda H conține exclusiv miozină. Sursa: „Țesutul muscular”, secțiunea Structura celulei musculare."
+        },
+        {
+          "letter": "E",
+          "text": "este format din fibre alungite, cilindrice, controlate voluntar",
+          "why": "Țesutul striat scheletic are fibre alungite, cilindrice, a căror contracție este controlată voluntar. Sursa: „Țesutul muscular”, secțiunea Tipurile de țesut muscular; tabelul 8.1."
+        }
+      ],
+      "sourcePages": [
+        270
+      ],
+      "topicId": "tesutul-muscular",
+      "topicLabel": "Țesutul muscular",
+      "lessonUrl": "tesutul_muscular.html#muschiul-striat",
+      "id": "asoc-266"
+    },
+    {
+      "number": 267,
+      "sourceNumber": 267,
+      "sourceChapter": "XIII",
+      "prompt": "Despre teaca de mielină se pot afirma următoarele:",
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este sintetizată în sistemul nervos periferic de celulele Schwann",
+          "why": "În sistemul nervos periferic, celulele Schwann formează teaca de mielină. Sursa: „Țesutul nervos”, secțiunea Teaca de mielină."
+        },
+        {
+          "letter": "B",
+          "text": "prezența ei crește viteza de conducere a impulsului nervos de-a lungul axonului sau dendritelor",
+          "why": "Manualul atribuie mielinei creșterea vitezei de transmitere de-a lungul axonilor și/sau dendritelor mielinizate, prin conducere saltatorie. Sursa: „Țesutul nervos”, secțiunea Fiziologia nervilor."
+        },
+        {
+          "letter": "C",
+          "text": "este prezentă și la nivelul butonilor terminali ai axonilor",
+          "why": "Figura neuronului arată mielina pe prelungire și terminațiile axonale ramificate fără acest înveliș; butonii terminali nu sunt prezentați ca segmente mielinizate. Sursa: „Țesutul nervos”, secțiunea Neuronii / „Țesutul nervos”, secțiunea Neuronii (figura 10.3)."
+        },
+        {
+          "letter": "D",
+          "text": "partea ei externă, care înconjoară axonii sau dendritele, formează neurilema",
+          "why": "Manualul numește neurilemă partea externă care înconjoară prelungirea nervoasă; figura diferențiază eticheta neurilemă de straturile interne de mielină. Sursa: „Țesutul nervos”, secțiunea Teaca de mielină (figura 10.4)."
+        },
+        {
+          "letter": "E",
+          "text": "nu este prezentă la nivelul nodurilor Ranvier",
+          "why": "Nodurile Ranvier sunt întreruperi între segmentele tecii de mielină, unde mielina lipsește. Sursa: „Țesutul nervos”, secțiunea Teaca de mielină."
+        }
+      ],
+      "sourcePages": [
+        270
+      ],
+      "topicId": "tesutul-nervos",
+      "topicLabel": "Țesutul nervos",
+      "lessonUrl": "tesutul_nervos.html#organizare",
+      "id": "asoc-267"
+    },
+    {
+      "number": 268,
+      "sourceNumber": 268,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la splină:",
+      "correct": [
+        "A",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "reprezintă un rezervor de limfocite pentru organism",
+          "why": "Splina este descrisă ca rezervor de limfocite al organismului. Sursa: „Sistemul limfatic și imun”, secțiunea Splina."
+        },
+        {
+          "letter": "B",
+          "text": "este compartimentată în lobuli înconjurați de o capsulă de țesut conjunctiv",
+          "why": "Splina are capsulă conjunctivă, dar manualul precizează că nu este compartimentată în lobuli. Sursa: „Sistemul limfatic și imun”, secțiunea Splina."
+        },
+        {
+          "letter": "C",
+          "text": "reciclează fierul și îl trimite la ficat",
+          "why": "Prin degradarea eritrocitelor îmbătrânite, splina recuperează fierul și îl trimite la ficat. Sursa: „Sistemul limfatic și imun”, secțiunea Splina."
+        },
+        {
+          "letter": "D",
+          "text": "este concavă la contactul cu rinichiul stâng, stomacul și diafragma",
+          "why": "Suprafața în contact cu diafragma este convexă. Concavitățile corespund rinichiului stâng, stomacului și colonului, nu diafragmei. Sursa: „Sistemul limfatic și imun”, secțiunea Splina."
+        },
+        {
+          "letter": "E",
+          "text": "conține limfocite B și T pentru răspunsul imun",
+          "why": "Splina conține limfocite B și T care contribuie la răspunsul imun. Sursa: „Sistemul limfatic și imun”, secțiunea Splina."
+        }
+      ],
+      "sourcePages": [
+        270
+      ],
+      "topicId": "sistemul-limfatic-si-imun",
+      "topicLabel": "Sistemul limfatic și imun",
+      "lessonUrl": "sistemul_limfatic_si_imun.html#splina",
+      "id": "asoc-268"
+    },
+    {
+      "number": 269,
+      "sourceNumber": 269,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "hipotalamusul are neuroni ce funcționează ca un termostat și intervine în reglarea temperaturii corpului",
+          "why": "Hipotalamusul conține neuroni care funcționează asemenea unui termostat și contribuie la reglarea temperaturii corporale. Sursa: „Metabolism și nutriție”, secțiunea Rata metabolică și temperatura corporală."
+        },
+        {
+          "letter": "B",
+          "text": "activitatea normală a sistemului nervos necesită prezența calciului, sodiului, potasiului, magneziului",
+          "why": "Manualul leagă activitatea normală nervoasă de calciu, sodiu, potasiu și magneziu, minerale cu rol în funcționarea celulelor. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul mineralelor."
+        },
+        {
+          "letter": "C",
+          "text": "catabolismul realizează sinteza moleculelor complexe",
+          "why": "Catabolismul degradează molecule complexe. Sinteza acestora este anabolism. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul glucidelor."
+        },
+        {
+          "letter": "D",
+          "text": "glicemia crescută postprandial revine la normal printr-un mecanism de feedback negativ",
+          "why": "Revenirea glicemiei crescute după masă spre normal este exemplul de reglare prin feedback negativ dat în manual. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Funcții ale organismului."
+        },
+        {
+          "letter": "E",
+          "text": "conductibilitatea este proprietatea unor celule de a răspunde la stimuli interni sau externi",
+          "why": "Conductibilitatea înseamnă transmiterea semnalelor. Capacitatea de a răspunde la stimuli este excitabilitatea. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Funcții ale organismului."
+        }
+      ],
+      "sourcePages": [
+        270
+      ],
+      "topicId": "metabolism-si-nutritie",
+      "topicLabel": "Metabolism și nutriție",
+      "lessonUrl": "metabolism_si_nutritie.html#rata-si-temperatura",
+      "id": "asoc-269"
+    },
+    {
+      "number": 270,
+      "sourceNumber": 270,
+      "sourceChapter": "XIII",
+      "prompt": "Calciul:",
+      "correct": [
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "se fixează în oase sub acțiunea parathormonului",
+          "why": "Parathormonul favorizează mobilizarea calciului din os și creșterea calcemiei, nu fixarea lui în os. Sursa: „Sistemul endocrin”, secțiunea Glandele paratiroide."
+        },
+        {
+          "letter": "B",
+          "text": "intră în structura oaselor, în special sub formă de fosfat de calciu",
+          "why": "Osul conține săruri de calciu, predominant fosfat de calciu, integrate în hidroxiapatită. Sursa: „Oasele și articulațiile”, secțiunea Țesutul osos."
+        },
+        {
+          "letter": "C",
+          "text": "crește în sânge sub acțiunea unui hormon secretat de foliculii tiroidieni",
+          "why": "Hormonul care crește calcemia este parathormonul produs de paratiroide. Calcitonina tiroidiană are efectul opus, scăzând calcemia; asocierea din variantă nu corespunde acestor efecte. Sursa: „Sistemul endocrin”, secțiunea Glanda tiroidă / „Sistemul endocrin”, secțiunea Glandele paratiroide."
+        },
+        {
+          "letter": "D",
+          "text": "intervine în calea extrinsecă a coagulării",
+          "why": "Calea extrinsecă a coagulării implică ionii de calciu în formarea activatorului protrombinei. Sursa: „Sângele”, secțiunea Coagularea sângelui."
+        },
+        {
+          "letter": "E",
+          "text": "participă la formarea activatorului protrombinei, care convertește protrombina în fibrină",
+          "why": "Activatorul protrombinei transformă protrombina în trombină; apoi trombina transformă fibrinogenul în fibrină. Varianta unește greșit două etape. Sursa: „Sângele”, secțiunea Coagularea sângelui."
+        }
+      ],
+      "sourcePages": [
+        270,
+        271
+      ],
+      "topicId": "sangele",
+      "topicLabel": "Sângele",
+      "lessonUrl": "sangele.html#coagularea-sangelui",
+      "id": "asoc-270"
+    },
+    {
+      "number": 271,
+      "sourceNumber": 271,
+      "sourceChapter": "XIII",
+      "prompt": "Transportul prin membrană:",
+      "correct": [
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "se realizează întotdeauna cu ajutorul proteinelor prezente în membrană",
+          "why": "Difuziunea simplă a unor molecule nu presupune obligatoriu proteine transportoare; de aceea „întotdeauna” este incorect. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "B",
+          "text": "permite trecerea oxigenului din capilarele circulației mici în alveolele pulmonare",
+          "why": "În plămân, oxigenul difuzează din alveole în sângele capilar, nu din capilare spre alveole. Sursa: „Sistemul respirator”, secțiunea Schimbul de gaze."
+        },
+        {
+          "letter": "C",
+          "text": "asigură reabsorbția apei la nivelul tubului proximal al nefronului",
+          "why": "Apa este reabsorbită din tubul proximal prin osmoză, după reabsorbția substanțelor dizolvate. Sursa: „Sistemul urinar”, secțiunea Structura și fiziologia nefronului."
+        },
+        {
+          "letter": "D",
+          "text": "permite absorbția lipidelor la nivelul intestinului subțire",
+          "why": "Produșii digestiei lipidelor traversează epiteliul intestinului subțire, în principal prin difuziune, pentru a fi absorbiți. Sursa: „Sistemul digestiv”, secțiunea Absorbția intestinală."
+        },
+        {
+          "letter": "E",
+          "text": "asigură pătrunderea glucozei în hematii",
+          "why": "Pătrunderea glucozei în eritrocite este exemplul de difuziune facilitată din manual. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        }
+      ],
+      "sourcePages": [
+        271
+      ],
+      "topicId": "celula-si-fiziologia-celulara",
+      "topicLabel": "Celula și fiziologia celulară",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#transport",
+      "id": "asoc-271"
+    },
+    {
+      "number": 272,
+      "sourceNumber": 272,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "neutrofilele, microgliile și celulele Kupffer sunt celule fagocitare",
+          "why": "Neutrofilele realizează fagocitoza, microgliile fagocitează microorganismele care au invadat țesutul nervos, iar celulele Kupffer sunt macrofage ale ficatului. Sursa: „Sângele”, secțiunea Globulele albe / „Țesutul nervos”, secțiunea Celulele gliale / „Sistemul digestiv”, secțiunea Organele anexe; ficatul."
+        },
+        {
+          "letter": "B",
+          "text": "lizozomii derivați din sacii aparatului Golgi conțin enzime pentru procesele de digestie intracelulară",
+          "why": "Lizozomii provin din sacii aparatului Golgi și conțin enzime pentru digestia intracelulară. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "C",
+          "text": "ATP-ul poate fi regenerat din creatin-fosfat",
+          "why": "Creatin-fosfatul contribuie la regenerarea ATP necesar contracției musculare. Sursa: „Țesutul muscular”, secțiunea Energia necesară contracției musculare."
+        },
+        {
+          "letter": "D",
+          "text": "celula adipoasă are un nucleu situat periferic, sub membrana plasmatică",
+          "why": "Figura cu tipuri de celule arată nucleul celulei adipoase împins la periferie, imediat sub membrana plasmatică. Sursa: „Celula și fiziologia celulară”, secțiunea Nucleul (figura 3.4)."
+        },
+        {
+          "letter": "E",
+          "text": "limba este inervată de fibrele nervului glosofaringian, cu origine aparentă în punte",
+          "why": "Nervul glosofaringian inervează și limba, dar originea sa este în bulb, nu în punte. Sursa: „Sistemul nervos”, secțiunea Nervii cranieni; tabelul 11.3."
+        }
+      ],
+      "sourcePages": [
+        271
+      ],
+      "topicId": "celula-si-fiziologia-celulara",
+      "topicLabel": "Celula și fiziologia celulară",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#organite",
+      "id": "asoc-272"
+    },
+    {
+      "number": 273,
+      "sourceNumber": 273,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele afirmații referitoare la oase sunt corecte:",
+      "correct": [
+        "A",
+        "B"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "cele lungi se întâlnesc în componența membrelor superioare și inferioare",
+          "why": "Oasele lungi intră în alcătuirea membrelor superioare și inferioare. Sursa: „Oasele și articulațiile”, secțiunea Clasificarea oaselor."
+        },
+        {
+          "letter": "B",
+          "text": "vertebrele prezintă prelungiri ce servesc drept puncte de ancorare pentru tendoane și ligamente",
+          "why": "Prelungirile vertebrelor sunt puncte de ancorare pentru tendoane și ligamente. Sursa: „Oasele și articulațiile”, secțiunea Clasificarea oaselor."
+        },
+        {
+          "letter": "C",
+          "text": "sunt alcătuite dintr-o substanță fundamentală, nemineralizată",
+          "why": "Țesutul osos are o matrice mineralizată cu săruri de calciu; nu o substanță fundamentală nemineralizată. Sursa: „Oasele și articulațiile”, secțiunea Osul / „Oasele și articulațiile”, secțiunea Țesutul osos."
+        },
+        {
+          "letter": "D",
+          "text": "patelele au formă neregulată și se găsesc la nivelul unor amfiartroze",
+          "why": "Patelele sunt sesamoide, incluse de manual între oasele neregulate, dar genunchiul este o diartroză. Asocierea cu amfiartrozele face varianta greșită. Sursa: „Oasele și articulațiile”, secțiunea Clasificarea oaselor / „Oasele și articulațiile”, secțiunea Articulațiile."
+        },
+        {
+          "letter": "E",
+          "text": "carpienele au formă plată și suportă greutăți",
+          "why": "Carpienele sunt oase scurte, cu formă aproximativ cuboidală, nu oase plate. Sursa: „Oasele și articulațiile”, secțiunea Clasificarea oaselor."
+        }
+      ],
+      "sourcePages": [
+        271
+      ],
+      "topicId": "oasele-si-articulatiile",
+      "topicLabel": "Oasele și articulațiile",
+      "lessonUrl": "oasele_si_articulatiile.html#osul",
+      "id": "asoc-273"
+    },
+    {
+      "number": 274,
+      "sourceNumber": 274,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la țesutul osos:",
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "conține diferite săruri de calciu",
+          "why": "Țesutul osos conține fosfat de calciu și alte săruri de calciu, care contribuie la duritatea sa. Sursa: „Oasele și articulațiile”, secțiunea Țesutul osos."
+        },
+        {
+          "letter": "B",
+          "text": "are în structură osteoblaste, osteocite și osteoclaste",
+          "why": "Osteoblastele formează os, osteocitele îl întrețin, iar osteoclastele îl resorb; toate sunt celule ale țesutului osos. Sursa: „Oasele și articulațiile”, secțiunea Formarea osului."
+        },
+        {
+          "letter": "C",
+          "text": "componentele sale, colagenul și hidroxiapatita, sunt sintetizate de osteoblaste",
+          "why": "Manualul atribuie osteoblastelor producerea componentelor osoase, colagen și hidroxiapatită. Sursa: „Oasele și articulațiile”, secțiunea Țesutul osos."
+        },
+        {
+          "letter": "D",
+          "text": "matricea sa este alcătuită din hidroxiapatită",
+          "why": "Hidroxiapatita este componenta minerală încorporată într-o matrice de colagen. Afirmația reduce matricea la hidroxiapatită și omite componenta colagenică descrisă. Sursa: „Oasele și articulațiile”, secțiunea Țesutul osos."
+        },
+        {
+          "letter": "E",
+          "text": "poate fi de tip compact sau de tip hialin",
+          "why": "Cele două forme de țesut osos sunt compact și spongios. Hialin este un tip de cartilaj, întâlnit la suprafețele articulare, nu al doilea tip de os. Sursa: „Oasele și articulațiile”, secțiunea Structura oaselor lungi / „Oasele și articulațiile”, secțiunea Structura histologică a osului."
+        }
+      ],
+      "sourcePages": [
+        271
+      ],
+      "topicId": "oasele-si-articulatiile",
+      "topicLabel": "Oasele și articulațiile",
+      "lessonUrl": "oasele_si_articulatiile.html#osul",
+      "id": "asoc-274"
+    },
+    {
+      "number": 275,
+      "sourceNumber": 275,
+      "sourceChapter": "XIII",
+      "prompt": "Alegeți afirmațiile corecte despre retină:",
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este stratul cel mai intern al globului ocular",
+          "why": "Retina este stratul cel mai intern al globului ocular. Sursa: „Organele de simț”, secțiunea Ochiul."
+        },
+        {
+          "letter": "B",
+          "text": "prezintă un strat extern aderent de coroidă",
+          "why": "Stratul extern pigmentat al retinei aderă la coroidă. Sursa: „Organele de simț”, secțiunea Ochiul."
+        },
+        {
+          "letter": "C",
+          "text": "neuronii receptori din structura sa se află în vecinătatea unui strat pigmentat, ce conține melanină",
+          "why": "Bastonașele și conurile sunt situate lângă stratul pigmentat cu melanină. Sursa: „Organele de simț”, secțiunea Ochiul."
+        },
+        {
+          "letter": "D",
+          "text": "retina propriu-zisă are neuroni multipolari, ale căror dendrite formează nervul optic",
+          "why": "Axonii neuronilor multipolari formează nervul optic, nu dendritele lor. Sursa: „Organele de simț”, secțiunea Ochiul."
+        },
+        {
+          "letter": "E",
+          "text": "neuronii săi bipolari recepționează impulsurile generate de neuronii multipolari",
+          "why": "Neuronii bipolari primesc semnalele de la receptori și le transmit neuronilor multipolari; varianta inversează succesiunea. Sursa: „Organele de simț”, secțiunea Ochiul."
+        }
+      ],
+      "sourcePages": [
+        271
+      ],
+      "topicId": "organele-de-simt",
+      "topicLabel": "Organele de simț",
+      "lessonUrl": "organele_de_simt.html#ochiul-si-vederea",
+      "id": "asoc-275"
+    },
+    {
+      "number": 276,
+      "sourceNumber": 276,
+      "sourceChapter": "XIII",
+      "prompt": "La nivel celular se descriu următoarele organite:",
+      "correct": [
+        "A",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "mitocondriile - care furnizează energie",
+          "why": "Mitocondriile produc ATP prin respirație celulară, furnizând energie pentru activitatea celulei. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "B",
+          "text": "lizozomii - vezicule separate din ribozomi",
+          "why": "Lizozomii provin din sacii aparatului Golgi, nu din ribozomi. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "C",
+          "text": "nucleul - care prezintă membrană poroasă",
+          "why": "Membrana nucleară are într-adevăr pori. În plus, lecția despre țesutul nervos menționează nucleul și „multe alte organite”, astfel încât simpla excludere a nucleului din categoria organitelor nu justifică baremul. C este exclusă din cheia păstrată, deși proprietatea afirmată este susținută de manual. Sursa: „Celula și fiziologia celulară”, secțiunea Nucleul / „Țesutul nervos”, secțiunea Neuronii / „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "D",
+          "text": "aparatul Golgi - care împachetează proteinele și lipidele",
+          "why": "Aparatul Golgi procesează și împachetează proteinele și lipidele în vezicule pentru transport. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "E",
+          "text": "ribozomii - care sintetizează glucide",
+          "why": "Ribozomii unesc aminoacizi pentru a forma proteine, nu glucide. Sursa: „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        }
+      ],
+      "sourcePages": [
+        271
+      ],
+      "topicId": "celula-si-fiziologia-celulara",
+      "topicLabel": "Celula și fiziologia celulară",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#organite",
+      "id": "asoc-276"
+    },
+    {
+      "number": 277,
+      "sourceNumber": 277,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele variante sunt corecte:",
+      "correct": [
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "cavitatea abdominală este localizată superior de cavitatea toracică și inferior de cavitatea pelviană",
+          "why": "Abdomenul este inferior față de torace și superior față de pelvis; varianta inversează ambele poziții. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        },
+        {
+          "letter": "B",
+          "text": "cavitatea mediastinală este localizată medial de plămâni",
+          "why": "Mediastinul este regiunea medială dintre cei doi plămâni. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        },
+        {
+          "letter": "C",
+          "text": "cavitatea pelviană este separată de torace prin diafragmă",
+          "why": "Diafragma separă toracele de cavitatea abdominopelviană, iar pelvisul este subdiviziunea inferioară a acesteia. Baremul exclude C, ceea ce corespunde interpretării unei limite directe între torace și pelvis. Varianta nu precizează însă „imediat”; relația generală dintre compartimente rămâne ambiguă în această formulare. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        },
+        {
+          "letter": "D",
+          "text": "cavitatea mediastinală conține inima învelită în pericard, structură seroasă",
+          "why": "Inima se găsește în mediastin și este învelită de pericard, membrană seroasă. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        },
+        {
+          "letter": "E",
+          "text": "cavitatea abdominală conține viscere învelite de pleură",
+          "why": "Seroasa abdominală este peritoneul. Pleura aparține plămânilor și cavității toracice. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Cavitățile și regiunile corpului."
+        }
+      ],
+      "sourcePages": [
+        271
+      ],
+      "topicId": "introducere-anatomie-fiziologie",
+      "topicLabel": "Organizarea corpului uman",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#cavitati",
+      "id": "asoc-277"
+    },
+    {
+      "number": 278,
+      "sourceNumber": 278,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele asocieri sunt corecte:",
+      "correct": [
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "transport cu consum de ATP - absorbție intestinală de lipide",
+          "why": "Manualul descrie absorbția intestinală a lipidelor în principal prin difuziune, nu prin transport cu consum de ATP. Sursa: „Sistemul digestiv”, secțiunea Absorbția intestinală."
+        },
+        {
+          "letter": "B",
+          "text": "osmoză - apă",
+          "why": "Osmoza reprezintă deplasarea apei printr-o membrană semipermeabilă în funcție de diferența de concentrație a soluțiilor. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "C",
+          "text": "difuziune facilitată - glucoza care intră în eritrocite",
+          "why": "Intrarea glucozei în eritrocite este exemplul dat pentru difuziunea facilitată, realizată cu ajutorul transportorilor membranari. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "D",
+          "text": "fagocitoză - ingestie de picături de lichid",
+          "why": "Ingestia lichidelor este pinocitoză. Fagocitoza înglobează particule solide. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        },
+        {
+          "letter": "E",
+          "text": "exocitoză - eliberare de molecule sintetizate de celule",
+          "why": "Exocitoza eliberează în exterior molecule produse de celulă, prin fuziunea veziculelor cu membrana plasmatică. Sursa: „Celula și fiziologia celulară”, secțiunea Mișcările moleculare."
+        }
+      ],
+      "sourcePages": [
+        272
+      ],
+      "topicId": "celula-si-fiziologia-celulara",
+      "topicLabel": "Celula și fiziologia celulară",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#transport",
+      "id": "asoc-278"
+    },
+    {
+      "number": 279,
+      "sourceNumber": 279,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte despre schelet:",
+      "correct": [
+        "A",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "conține depozite de minerale",
+          "why": "Oasele sunt depozite de minerale, în special săruri de calciu. Sursa: „Oasele și articulațiile”, secțiunea Funcțiile oaselor / „Oasele și articulațiile”, secțiunea Țesutul osos."
+        },
+        {
+          "letter": "B",
+          "text": "este format dintr-un tip de țesut epitelial",
+          "why": "Țesutul osos este țesut conjunctiv specializat, nu țesut epitelial. Sursa: „Oasele și articulațiile”, secțiunea Osul."
+        },
+        {
+          "letter": "C",
+          "text": "cuprinde și oase lungi, la nivelul membrelor",
+          "why": "Oasele lungi, precum cele ale membrelor, fac parte din schelet. Sursa: „Oasele și articulațiile”, secțiunea Clasificarea oaselor."
+        },
+        {
+          "letter": "D",
+          "text": "asigură protecție pentru toate viscerele organismului",
+          "why": "Manualul descrie protecția encefalului și a organelor toracice prin oase. Nu atribuie scheletului protecția tuturor viscerelor, formulare prea largă. Sursa: „Oasele și articulațiile”, secțiunea Funcțiile oaselor / „Oasele și articulațiile”, secțiunea Clasificarea oaselor."
+        },
+        {
+          "letter": "E",
+          "text": "conține măduvă roșie la nivelul oaselor plate",
+          "why": "Oasele plate au țesut spongios între lamele compacte, iar măduva roșie se află în țesutul spongios, inclusiv în stern. Sursa: „Oasele și articulațiile”, secțiunea Clasificarea oaselor / „Oasele și articulațiile”, secțiunea Țesutul osos."
+        }
+      ],
+      "sourcePages": [
+        272
+      ],
+      "topicId": "oasele-si-articulatiile",
+      "topicLabel": "Oasele și articulațiile",
+      "lessonUrl": "oasele_si_articulatiile.html#osul",
+      "id": "asoc-279"
+    },
+    {
+      "number": 280,
+      "sourceNumber": 280,
+      "sourceChapter": "XIII",
+      "prompt": "Diartrozele sunt prezente la nivelul:",
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "umărului",
+          "why": "Articulația umărului este enumerată printre diartroze, articulații cu mobilitate mare. Sursa: „Oasele și articulațiile”, secțiunea Articulațiile."
+        },
+        {
+          "letter": "B",
+          "text": "gleznei",
+          "why": "Glezna este un exemplu de diartroză din manual. Sursa: „Oasele și articulațiile”, secțiunea Articulațiile."
+        },
+        {
+          "letter": "C",
+          "text": "corpilor vertebrali",
+          "why": "Articulațiile dintre corpii vertebrali sunt amfiartroze, nu diartroze. Sursa: „Oasele și articulațiile”, secțiunea Articulațiile."
+        },
+        {
+          "letter": "D",
+          "text": "genunchilor",
+          "why": "Genunchiul este o diartroză, cu structură de articulație sinovială. Sursa: „Oasele și articulațiile”, secțiunea Articulațiile."
+        },
+        {
+          "letter": "E",
+          "text": "articulației os-dinte",
+          "why": "Articulația dintre dinte și os este gomfoză, încadrată între sinartroze. Sursa: „Oasele și articulațiile”, secțiunea Articulațiile."
+        }
+      ],
+      "sourcePages": [
+        272
+      ],
+      "topicId": "oasele-si-articulatiile",
+      "topicLabel": "Oasele și articulațiile",
+      "lessonUrl": "oasele_si_articulatiile.html#articulatii",
+      "id": "asoc-280"
+    },
+    {
+      "number": 281,
+      "sourceNumber": 281,
+      "sourceChapter": "XIII",
+      "prompt": "Osteocitele:",
+      "correct": [
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt celule localizate în canalele centrale ale osteonului",
+          "why": "Osteocitele sunt în lacunele dintre lamelele osoase. Canalul central conține capilare și nervi, nu reprezintă sediul lor. Sursa: „Oasele și articulațiile”, secțiunea Structura histologică a osului."
+        },
+        {
+          "letter": "B",
+          "text": "îndepărtează produșii reziduali de la nivelul osului",
+          "why": "Osteocitele întrețin osul și îndepărtează produșii reziduali, conform descrierii manualului. Sursa: „Oasele și articulațiile”, secțiunea Structura histologică a osului."
+        },
+        {
+          "letter": "C",
+          "text": "se dezvoltă din osteoblaste, pe măsură ce acestea se înconjoară de țesutul osos pe care îl produc",
+          "why": "Osteoblastele devin osteocite când sunt înconjurate de țesutul osos pe care l-au format. Sursa: „Oasele și articulațiile”, secțiunea Structura histologică a osului."
+        },
+        {
+          "letter": "D",
+          "text": "participă la dizolvarea osului cu eliberarea de calciu și fosfat",
+          "why": "Dizolvarea osului și eliberarea calciului și fosfatului sunt atribuite osteoclastelor, nu osteocitelor. Sursa: „Oasele și articulațiile”, secțiunea Remodelarea osoasă."
+        },
+        {
+          "letter": "E",
+          "text": "sunt prezente în interiorul canalelor perforante",
+          "why": "Canalele perforante asigură legături vasculare între canalele centrale. Osteocitele ocupă lacune și comunică prin canalicule. Sursa: „Oasele și articulațiile”, secțiunea Structura histologică a osului."
+        }
+      ],
+      "sourcePages": [
+        272
+      ],
+      "topicId": "oasele-si-articulatiile",
+      "topicLabel": "Oasele și articulațiile",
+      "lessonUrl": "oasele_si_articulatiile.html#osul",
+      "id": "asoc-281"
+    },
+    {
+      "number": 282,
+      "sourceNumber": 282,
+      "sourceChapter": "XIII",
+      "prompt": "Femurul:",
+      "correct": [
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "se formează prin invadarea membranelor fibroase de către osteoblaste",
+          "why": "Invadarea unei membrane fibroase caracterizează osificarea intramembranoasă a oaselor plate. Femurul, os lung, se formează pe model cartilaginos. Sursa: „Oasele și articulațiile”, secțiunea Formarea osului."
+        },
+        {
+          "letter": "B",
+          "text": "este localizat proximal de tibie",
+          "why": "Femurul este mai aproape de trunchi decât tibia, deci este proximal față de aceasta. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Termeni direcționali."
+        },
+        {
+          "letter": "C",
+          "text": "se formează prin osificare endocondrală",
+          "why": "Oasele lungi, între care femurul, se formează prin osificare endocondrală. Sursa: „Oasele și articulațiile”, secțiunea Formarea osului."
+        },
+        {
+          "letter": "D",
+          "text": "prezintă cartilaje metafizare active, la adulți",
+          "why": "După pubertate, cartilajele de creștere se înlocuiesc cu os; manualul nu descrie cartilaje metafizare active la adult. Sursa: „Oasele și articulațiile”, secțiunea Formarea osului."
+        },
+        {
+          "letter": "E",
+          "text": "este vascularizat de artera peronieră",
+          "why": "Manualul și figura arterelor localizează artera femurală la coapsă, dar nu identifică artera peronieră și nu descriu vascularizația osoasă a femurului. Baremul exclude E; sursa autorizată nu permite justificarea vasculară completă fără informații suplimentare. Sursa: „Sistemul cardiovascular”, secțiunea Tipuri de circulație sanguină / „Sistemul cardiovascular”, secțiunea Tipuri de circulație sanguină (figura 15.9)."
+        }
+      ],
+      "sourcePages": [
+        272
+      ],
+      "topicId": "oasele-si-articulatiile",
+      "topicLabel": "Oasele și articulațiile",
+      "lessonUrl": "oasele_si_articulatiile.html#osul",
+      "id": "asoc-282"
+    },
+    {
+      "number": 283,
+      "sourceNumber": 283,
+      "sourceChapter": "XIII",
+      "prompt": "Despre țesutul muscular se pot afirma următoarele:",
+      "correct": [
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "reprezintă o varietate de țesut conjunctiv",
+          "why": "Manualul diferențiază țesutul muscular de țesutul conjunctiv; nu îl prezintă ca varietate a acestuia. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Niveluri de organizare structurală / „Țesutul muscular”, secțiunea Tipurile de țesut muscular; tabelul 8.1."
+        },
+        {
+          "letter": "B",
+          "text": "pentru cel miocardic, contracția sa este inițiată de un stimul nervos",
+          "why": "Inima își generează propriile impulsuri care inițiază contracția. Nervii îi modifică activitatea, dar nu sunt sursa obligatorie a fiecărei contracții. Sursa: „Sistemul cardiovascular”, secțiunea Mușchiul cardiac."
+        },
+        {
+          "letter": "C",
+          "text": "cel neted prezintă o contracție lentă",
+          "why": "În comparația tipurilor de țesut muscular, contracția mușchiului neted este lentă. Sursa: „Țesutul muscular”, secțiunea Tipurile de țesut muscular; tabelul 8.1."
+        },
+        {
+          "letter": "D",
+          "text": "la nivelul uterului, se contractă sub acțiunea oxitocinei",
+          "why": "Oxitocina stimulează contracția musculaturii netede uterine. Sursa: „Sistemul endocrin”, secțiunea Hipofiza."
+        },
+        {
+          "letter": "E",
+          "text": "cel striat scheletic și cel neted coexistă la nivelul esofagului",
+          "why": "Esofagul are musculatură striată în partea superioară și netedă în partea inferioară. Sursa: „Sistemul digestiv”, secțiunea Esofagul."
+        }
+      ],
+      "sourcePages": [
+        272
+      ],
+      "topicId": "tesutul-muscular",
+      "topicLabel": "Țesutul muscular",
+      "lessonUrl": "tesutul_muscular.html#tesutul-muscular",
+      "id": "asoc-283"
+    },
+    {
+      "number": 284,
+      "sourceNumber": 284,
+      "sourceChapter": "XIII",
+      "prompt": "Fibra musculară striată scheletică:",
+      "correct": [
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este prezentă la nivelul sfincterelor interne",
+          "why": "Manualul descrie musculatura netedă a pereților viscerali și a regiunii esofagiene inferioare, în acord cu excluderea din barem. Totuși, nu oferă o clasificare explicită a tuturor „sfincterelor interne”; din sursa disponibilă nu se poate formula o justificare generală mai precisă. Sursa: „Țesutul muscular”, secțiunea Tipurile de țesut muscular; tabelul 8.1 / „Sistemul digestiv”, secțiunea Esofagul / „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii."
+        },
+        {
+          "letter": "B",
+          "text": "primește stimuli de la fibre nervoase somatomotorii",
+          "why": "Componenta somatică motorie controlează mușchii scheletici și le transmite stimuli pentru contracție. Sursa: „Țesutul nervos”, secțiunea Organizarea sistemului nervos."
+        },
+        {
+          "letter": "C",
+          "text": "conține miofibrile la nivelul cărora sunt prezente sarcomerele",
+          "why": "Fibra musculară conține miofibrile, iar sarcomerele sunt unitățile organizării acestora. Sursa: „Țesutul muscular”, secțiunea Structura celulei musculare."
+        },
+        {
+          "letter": "D",
+          "text": "prezintă rezerve de energie sub formă de mioglobină",
+          "why": "Mioglobina stochează oxigen. Rezerva care contribuie direct la refacerea ATP este creatin-fosfatul, nu mioglobina. Sursa: „Țesutul muscular”, secțiunea Energia necesară contracției musculare."
+        },
+        {
+          "letter": "E",
+          "text": "este înconjurată de epimisium",
+          "why": "Endomisiumul înconjoară fiecare fibră musculară; epimisiumul înconjoară mușchiul întreg. Sursa: „Țesutul muscular”, secțiunea Structura țesutului muscular striat scheletic."
+        }
+      ],
+      "sourcePages": [
+        272
+      ],
+      "topicId": "tesutul-muscular",
+      "topicLabel": "Țesutul muscular",
+      "lessonUrl": "tesutul_muscular.html#muschiul-striat",
+      "id": "asoc-284"
+    },
+    {
+      "number": 285,
+      "sourceNumber": 285,
+      "sourceChapter": "XIII",
+      "prompt": "Țesutul nervos:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este prezent în interiorul cutiei craniene, în canalul vertebral, dar și în afara acestor structuri",
+          "why": "Țesutul nervos formează SNC în craniu și canalul vertebral, precum și structurile sistemului nervos periferic din afara acestora. Sursa: „Țesutul nervos”, secțiunea Organizarea sistemului nervos."
+        },
+        {
+          "letter": "B",
+          "text": "conține celule gliale care sunt responsabile de generarea potențialelor de acțiune",
+          "why": "Neuronii generează și transmit impulsurile nervoase. Celulele gliale au roluri de susținere, protecție și întreținere, nu rolul atribuit aici. Sursa: „Țesutul nervos”, secțiunea Celulele gliale / „Țesutul nervos”, secțiunea Fiziologia nervilor."
+        },
+        {
+          "letter": "C",
+          "text": "prin neuroni, se organizează sub formă de circuite",
+          "why": "Neuronii se organizează în circuite, transmițând informația prin succesiuni de conexiuni sinaptice. Sursa: „Țesutul nervos”, secțiunea Fiziologia nervilor."
+        },
+        {
+          "letter": "D",
+          "text": "formează tracturi ascendente și descendente, sistem bidirecțional de transmitere a informației",
+          "why": "Tracturile ascendente și descendente ale măduvei permit transmiterea informației în ambele sensuri între periferie și encefal. Sursa: „Sistemul nervos”, secțiunea Măduva spinării și meningele."
+        },
+        {
+          "letter": "E",
+          "text": "prin celulele Schwann și astrocite asigură sinteza mielinei",
+          "why": "Mielina este produsă de oligodendrocite în SNC și de celulele Schwann în SNP. Astrocitele nu înlocuiesc oligodendrocitele în această funcție. Sursa: „Țesutul nervos”, secțiunea Celulele gliale / „Țesutul nervos”, secțiunea Teaca de mielină."
+        }
+      ],
+      "sourcePages": [
+        272
+      ],
+      "topicId": "tesutul-nervos",
+      "topicLabel": "Țesutul nervos",
+      "lessonUrl": "tesutul_nervos.html#organizare",
+      "id": "asoc-285"
+    },
+    {
+      "number": 286,
+      "sourceNumber": 286,
+      "sourceChapter": "XIII",
+      "prompt": "Despre celule se pot afirma următoarele:",
+      "correct": [
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "se multiplică prin meioză, pentru a asigura creșterea și repararea țesuturilor",
+          "why": "Manualul indică mitoza pentru diviziunea celulelor eucariote și meioza în formarea gameților, cu reducerea numărului de cromozomi. Meioza nu este procesul general de creștere și reparare tisulară propus. Sursa: „Celula și fiziologia celulară”, secțiunea Introducere / „Sistemul reproducător masculin”, secțiunea Anatomia sistemului reproducător masculin."
+        },
+        {
+          "letter": "B",
+          "text": "prezintă o membrană fosfolipidică dispusă în patru straturi",
+          "why": "Fosfolipidele membranei sunt dispuse în două straturi, nu în patru. Sursa: „Celula și fiziologia celulară”, secțiunea Membrana plasmatică."
+        },
+        {
+          "letter": "C",
+          "text": "conțin citoplasmă și structuri subcelulare",
+          "why": "Citoplasma este o componentă principală a celulei și conține structuri subcelulare specializate. Sursa: „Celula și fiziologia celulară”, secțiunea Structura celulei / „Celula și fiziologia celulară”, secțiunea Citoplasma și organitele."
+        },
+        {
+          "letter": "D",
+          "text": "se grupează pentru a forma țesuturi, atunci când au formă identică și funcții diferite",
+          "why": "Țesuturile sunt grupări de celule asemănătoare structural și funcțional; varianta le atribuie funcții diferite. Sursa: „Introducere în anatomie și fiziologie”, secțiunea Niveluri de organizare structurală."
+        },
+        {
+          "letter": "E",
+          "text": "conțin ADN la nivelul nucleului",
+          "why": "Nucleul conține ADN asociat cu proteine; această localizare este descrisă pentru celula umană tipică. Sursa: „Celula și fiziologia celulară”, secțiunea Nucleul."
+        }
+      ],
+      "sourcePages": [
+        272,
+        273
+      ],
+      "topicId": "celula-si-fiziologia-celulara",
+      "topicLabel": "Celula și fiziologia celulară",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#structura",
+      "id": "asoc-286"
+    },
+    {
+      "number": 287,
+      "sourceNumber": 287,
+      "sourceChapter": "XIII",
+      "prompt": "Osul lung:",
+      "correct": [
+        "A",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "prezintă un ax, numit diafiză, și două epifize",
+          "why": "Osul lung are diafiză, care formează axul, și două extremități numite epifize. Sursa: „Oasele și articulațiile”, secțiunea Clasificarea oaselor / „Oasele și articulațiile”, secțiunea Structura oaselor lungi."
+        },
+        {
+          "letter": "B",
+          "text": "are flexibilitate conferită de hidroxiapatită",
+          "why": "Colagenul asigură flexibilitatea, iar hidroxiapatita conferă duritate; varianta atribuie hidroxiapatitei rolul colagenului. Sursa: „Oasele și articulațiile”, secțiunea Țesutul osos."
+        },
+        {
+          "letter": "C",
+          "text": "conține măduvă roșie la nivelul diafizei",
+          "why": "Manualul situează măduva roșie în țesutul spongios epifizar și măduva galbenă în cavitatea diafizei. Sursa: „Oasele și articulațiile”, secțiunea Structura oaselor lungi."
+        },
+        {
+          "letter": "D",
+          "text": "poate fi localizat la nivelul membrelor",
+          "why": "Oasele lungi se întâlnesc în membrele superioare și inferioare. Sursa: „Oasele și articulațiile”, secțiunea Clasificarea oaselor."
+        },
+        {
+          "letter": "E",
+          "text": "prezintă cartilaj articular la nivelul epifizelor",
+          "why": "Suprafețele epifizare care participă la articulații sunt acoperite de cartilaj articular hialin. Sursa: „Oasele și articulațiile”, secțiunea Structura oaselor lungi."
+        }
+      ],
+      "sourcePages": [
+        273
+      ],
+      "topicId": "oasele-si-articulatiile",
+      "topicLabel": "Oasele și articulațiile",
+      "lessonUrl": "oasele_si_articulatiile.html#osul",
+      "id": "asoc-287"
+    },
+    {
+      "number": 288,
+      "sourceNumber": 288,
+      "sourceChapter": "XIII",
+      "prompt": "Mușchiul:",
+      "correct": [
+        "A",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "striat scheletic se contractă voluntar",
+          "why": "Contracția mușchiului striat scheletic este voluntară. Sursa: „Țesutul muscular”, secțiunea Tipurile de țesut muscular; tabelul 8.1."
+        },
+        {
+          "letter": "B",
+          "text": "neted prezintă striații",
+          "why": "Țesutul muscular neted nu prezintă striațiile caracteristice celui scheletic și cardiac. Sursa: „Țesutul muscular”, secțiunea Tipurile de țesut muscular; tabelul 8.1."
+        },
+        {
+          "letter": "C",
+          "text": "cardiac conține, la nivelul fibrelor, mai mulți nuclei",
+          "why": "Tabelul manualului atribuie fibrei cardiace un singur nucleu, iar fibrei scheletice mai mulți nuclei. Sursa: „Țesutul muscular”, secțiunea Tipurile de țesut muscular; tabelul 8.1."
+        },
+        {
+          "letter": "D",
+          "text": "striat scheletic se contractă cel mai rapid",
+          "why": "În tabelul comparativ, mușchiul striat scheletic are contracția cea mai rapidă dintre cele trei tipuri. Sursa: „Țesutul muscular”, secțiunea Tipurile de țesut muscular; tabelul 8.1."
+        },
+        {
+          "letter": "E",
+          "text": "neted formează peretele inimii",
+          "why": "Peretele muscular al inimii este alcătuit din țesut muscular cardiac, nu din țesut muscular neted. Sursa: „Țesutul muscular”, secțiunea Tipurile de țesut muscular; tabelul 8.1 / „Sistemul cardiovascular”, secțiunea Inima."
+        }
+      ],
+      "sourcePages": [
+        273
+      ],
+      "topicId": "tesutul-muscular",
+      "topicLabel": "Țesutul muscular",
+      "lessonUrl": "tesutul_muscular.html#tesutul-muscular",
+      "id": "asoc-288"
+    },
+    {
+      "number": 289,
+      "sourceNumber": 289,
+      "sourceChapter": "XIII",
+      "prompt": "Din punct de vedere structural, neuronii se clasifică în:",
+      "correct": [
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "neuroni bipolari, prezenți în ganglionul spinal",
+          "why": "Neuronii bipolari sunt exemplificați în retină, urechea internă și regiunea olfactivă; ganglionii spinali conțin neuroni senzoriali pseudounipolari. Sursa: „Țesutul nervos”, secțiunea Neuronii / „Sistemul nervos”, secțiunea Nervii spinali."
+        },
+        {
+          "letter": "B",
+          "text": "neuroni cu o singură prelungire, care se divide în axon și dendrită",
+          "why": "Neuronii pseudounipolari au o singură prelungire care se divide în două ramuri, descrise de manual ca axon și dendrită. Sursa: „Țesutul nervos”, secțiunea Neuronii."
+        },
+        {
+          "letter": "C",
+          "text": "neuroni multipolari, care reprezintă majoritatea neuronilor senzoriali",
+          "why": "Majoritatea neuronilor senzoriali sunt pseudounipolari, nu multipolari. Sursa: „Țesutul nervos”, secțiunea Neuronii."
+        },
+        {
+          "letter": "D",
+          "text": "interneuroni, care se găsesc doar în sistemul nervos central",
+          "why": "Interneuronii sunt o categorie funcțională, descrisă în SNC. Afirmația nu răspunde clasificării structurale cerute, fără ca localizarea din manual să devină falsă. Sursa: „Țesutul nervos”, secțiunea Neuronii."
+        },
+        {
+          "letter": "E",
+          "text": "neuroni cu mai multe dendrite, prezenți în sistemul nervos central",
+          "why": "Neuronii multipolari au mai multe dendrite și sunt numeroși în sistemul nervos central. Sursa: „Țesutul nervos”, secțiunea Neuronii."
+        }
+      ],
+      "sourcePages": [
+        273
+      ],
+      "topicId": "tesutul-nervos",
+      "topicLabel": "Țesutul nervos",
+      "lessonUrl": "tesutul_nervos.html#organizare",
+      "id": "asoc-289"
+    },
+    {
+      "number": 290,
+      "sourceNumber": 290,
+      "sourceChapter": "XIII",
+      "prompt": "Despre meninge și spațiile delimitate de acestea se pot afirma următoarele:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "arahnoida este o structură groasă, cu aspect de rețea",
+          "why": "Arahnoida are aspect de rețea, dar este descrisă ca subțire, nu groasă. Sursa: „Sistemul nervos”, secțiunea Măduva spinării și meningele."
+        },
+        {
+          "letter": "B",
+          "text": "pia mater este foarte bine vascularizată",
+          "why": "Pia mater este foița meningeală subțire, foarte bine vascularizată, aderentă la țesutul nervos. Sursa: „Sistemul nervos”, secțiunea Măduva spinării și meningele."
+        },
+        {
+          "letter": "C",
+          "text": "dura mater este formată din țesut fibros rezistent, cu multe vase și nervi",
+          "why": "Dura mater este alcătuită din țesut fibros rezistent și conține multe vase și nervi. Sursa: „Sistemul nervos”, secțiunea Măduva spinării și meningele."
+        },
+        {
+          "letter": "D",
+          "text": "spațiul subarahnoidian conține lichid cefalorahidian",
+          "why": "Spațiul subarahnoidian conține lichid cefalorahidian. Sursa: „Sistemul nervos”, secțiunea Măduva spinării și meningele."
+        },
+        {
+          "letter": "E",
+          "text": "pia mater prezintă structuri de absorbție ale lichidului cefalorahidian",
+          "why": "Structurile care reabsorb lichidul cefalorahidian sunt atribuite arahnoidei, nu piei mater. Sursa: „Sistemul nervos”, secțiunea Măduva spinării și meningele."
+        }
+      ],
+      "sourcePages": [
+        273
+      ],
+      "topicId": "sistemul-nervos",
+      "topicLabel": "Sistemul nervos",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-central",
+      "id": "asoc-290"
+    },
+    {
+      "number": 291,
+      "sourceNumber": 291,
+      "sourceChapter": "XIII",
+      "prompt": "Precizați noțiunile corecte:",
+      "correct": [
+        "A",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "la nivelul membranei respiratorii, oxigenul difuzează din aerul atmosferic în sânge",
+          "why": "Oxigenul din aerul ajuns în alveole traversează membrana respiratorie și difuzează în sânge. Sursa: „Sistemul respirator”, secțiunea Schimbul de gaze."
+        },
+        {
+          "letter": "B",
+          "text": "eritrocitele preiau și catabolizează complet antigene străine organismului",
+          "why": "Eritrocitele sunt specializate în transportul gazelor prin hemoglobină. Înglobarea și degradarea agenților străini sunt funcții ale celulelor fagocitare, precum neutrofilele. Sursa: „Sângele”, secțiunea Globulele roșii / „Sângele”, secțiunea Globulele albe."
+        },
+        {
+          "letter": "C",
+          "text": "reabsorbția apei la nivelul nefronului se realizează prin procese active, sub influența ADH-ului",
+          "why": "Apa se reabsoarbe prin osmoză, proces pasiv. ADH modifică permeabilitatea segmentelor sale țintă, fără a transforma deplasarea apei în transport activ. Sursa: „Sistemul urinar”, secțiunea Structura și fiziologia nefronului / „Sistemul urinar”, secțiunea Activitatea hormonală și urina."
+        },
+        {
+          "letter": "D",
+          "text": "ionul de sodiu poate fi absorbit și la nivelul colonului",
+          "why": "Colonul absoarbe apă și ioni, inclusiv sodiu. Sursa: „Sistemul digestiv”, secțiunea Intestinul gros."
+        },
+        {
+          "letter": "E",
+          "text": "secreția sucului pancreatic este controlată și de secretină",
+          "why": "Secretina, alături de colecistokinină, este un hormon intestinal care controlează eliberarea sucului pancreatic. Sursa: „Sistemul digestiv”, secțiunea Intestinul subțire și intestinul gros."
+        }
+      ],
+      "sourcePages": [
+        273
+      ],
+      "topicId": "sistemul-respirator",
+      "topicLabel": "Sistemul respirator",
+      "lessonUrl": "sistemul_respirator.html#schimbul-de-gaze",
+      "id": "asoc-291"
+    },
+    {
+      "number": 292,
+      "sourceNumber": 292,
+      "sourceChapter": "XIII",
+      "prompt": "Eritrocitele:",
+      "correct": [
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "transportă maxim 2 % din oxigenul inspirat, deoarece este rapid cedat țesuturilor",
+          "why": "Aproximativ 98% din oxigen este legat de hemoglobina eritrocitară; cei 2% reprezintă fracția dizolvată, nu capacitatea maximă de transport a eritrocitelor. Sursa: „Sistemul respirator”, secțiunea Schimbul de gaze."
+        },
+        {
+          "letter": "B",
+          "text": "pot declanșa reacții imune deoarece conțin anticorpi anti-A pe membranele lor",
+          "why": "Membrana eritrocitară poartă antigenele de grup sanguin. Anticorpii anti-A sunt în ser/plasmă, nu pe membrana hematiilor în sensul propus. Sursa: „Sângele”, secțiunea Grupele sanguine."
+        },
+        {
+          "letter": "C",
+          "text": "sunt celule anucleate formate la nivelul măduvei roșii osoase",
+          "why": "Eritrocitele mature nu au nucleu și sunt formate în măduva roșie osoasă. Sursa: „Sângele”, secțiunea Globulele roșii."
+        },
+        {
+          "letter": "D",
+          "text": "transportă vitamina D absorbită de la nivelul tubului digestiv",
+          "why": "Transportul vitaminelor este atribuit proteinelor plasmatice, inclusiv globulinelor. Eritrocitele sunt descrise ca transportori ai gazelor prin hemoglobină. Sursa: „Sângele”, secțiunea Plasma / „Sângele”, secțiunea Globulele roșii."
+        },
+        {
+          "letter": "E",
+          "text": "pot sintetiza leucină și izoleucină",
+          "why": "Leucina și izoleucina sunt aminoacizi esențiali care trebuie furnizați prin hrană; eritrocitele nu îi sintetizează. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul lipidelor și al proteinelor / „Sângele”, secțiunea Globulele roșii."
+        }
+      ],
+      "sourcePages": [
+        273
+      ],
+      "topicId": "sangele",
+      "topicLabel": "Sângele",
+      "lessonUrl": "sangele.html#globulele-rosii",
+      "id": "asoc-292"
+    },
+    {
+      "number": 293,
+      "sourceNumber": 293,
+      "sourceChapter": "XIII",
+      "prompt": "Calciul:",
+      "correct": [
+        "A",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "face parte din structura otoliților",
+          "why": "Otoliții conțin carbonat de calciu, fiind particulele care contribuie la stimularea receptorilor echilibrului static. Sursa: „Organele de simț”, secțiunea Echilibrul."
+        },
+        {
+          "letter": "B",
+          "text": "participă la coagulare, numai în calea extrinsecă",
+          "why": "Calciul participă atât în calea intrinsecă, cât și în cea extrinsecă; termenul „numai” face afirmația greșită. Sursa: „Sângele”, secțiunea Coagularea sângelui."
+        },
+        {
+          "letter": "C",
+          "text": "intervine în transmiterea impulsului nervos, fiind necesar pentru declanșarea exocitozei neurotransmițătorului de la nivelul membranei postsinaptice",
+          "why": "Calciul pătrunde în butonul presinaptic și declanșează exocitoza la membrana presinaptică, nu la cea postsinaptică. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii."
+        },
+        {
+          "letter": "D",
+          "text": "este necesar pentru activitatea musculară normală",
+          "why": "Calciul este necesar activității musculare normale, conform rolurilor mineralelor din manual. Sursa: „Metabolism și nutriție”, secțiunea Metabolismul mineralelor."
+        },
+        {
+          "letter": "E",
+          "text": "intră în structura dinților",
+          "why": "Smalțul dentar conține în principal săruri de calciu, ca parte a hidroxiapatitei. Sursa: „Sistemul digestiv”, secțiunea Cavitatea orală."
+        }
+      ],
+      "sourcePages": [
+        273
+      ],
+      "topicId": "sangele",
+      "topicLabel": "Sângele",
+      "lessonUrl": "sangele.html#coagularea-sangelui",
+      "id": "asoc-293"
+    },
+    {
+      "number": 294,
+      "sourceNumber": 294,
+      "sourceChapter": "XIII",
+      "prompt": "ADH-ul:",
+      "correct": [
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "are efecte asupra tuturor segmentelor tubilor uriniferi",
+          "why": "Manualul localizează efectul ADH asupra apei la nivelul tubului distal și colector, nu la toate segmentele tubulare. Sursa: „Sistemul urinar”, secțiunea Activitatea hormonală și urina."
+        },
+        {
+          "letter": "B",
+          "text": "stimulează reabsorbția apei la nivel renal",
+          "why": "ADH crește reabsorbția renală a apei și contribuie la reducerea pierderilor urinare de apă. Sursa: „Sistemul endocrin”, secțiunea Hipofiza / „Sistemul urinar”, secțiunea Activitatea hormonală și urina."
+        },
+        {
+          "letter": "C",
+          "text": "acționează ca hormon trop asupra glandelor suprarenale",
+          "why": "ACTH este hormonul trop pentru corticosuprarenală. ADH acționează asupra reabsorbției apei și asupra musculaturii arteriolare. Sursa: „Sistemul endocrin”, secțiunea Hipofiza / „Sistemul endocrin”, secțiunea Hormonii glandei hipofize; tabelul 13.2."
+        },
+        {
+          "letter": "D",
+          "text": "este produs în hipofiza posterioară",
+          "why": "ADH este produs în hipotalamus, apoi transportat, depozitat și eliberat prin hipofiza posterioară. Sursa: „Sistemul endocrin”, secțiunea Hipofiza."
+        },
+        {
+          "letter": "E",
+          "text": "determină contracția musculaturii netede a arteriolelor",
+          "why": "ADH determină contracția musculaturii netede arteriolare, efect vasoconstrictor descris în tabel. Sursa: „Sistemul endocrin”, secțiunea Hormonii glandei hipofize; tabelul 13.2."
+        }
+      ],
+      "sourcePages": [
+        273,
+        274
+      ],
+      "topicId": "sistemul-renal-complet",
+      "topicLabel": "Sistemul urinar",
+      "lessonUrl": "sistemul_renal_complet.html#hormoni",
+      "id": "asoc-294"
+    },
+    {
+      "number": 295,
+      "sourceNumber": 295,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați acțiunile care aparțin unor enzime digestive:",
+      "correct": [
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "pepsinogenul descompune proteinele mari în peptide",
+          "why": "Pepsinogenul este precursorul inactiv. Pepsina rezultată prin activare este enzima care descompune proteinele în peptide. Sursa: „Sistemul digestiv”, secțiunea Stomacul."
+        },
+        {
+          "letter": "B",
+          "text": "amilaza pancreatică, similar amilazei salivare, descompune amidonul în maltoză",
+          "why": "Atât amilaza salivară, cât și cea pancreatică descompun amidonul cu formare de maltoză. Sursa: „Sistemul digestiv”, secțiunea Cavitatea orală / „Sistemul digestiv”, secțiunea Enzimele digestive; tabelul 18.4."
+        },
+        {
+          "letter": "C",
+          "text": "trombina convertește fibrinogenul în fibrină, în prezența ionilor de calciu",
+          "why": "Transformarea fibrinogenului în fibrină aparține coagulării sângelui. Trombina nu este enzimă digestivă și nu răspunde cerinței acestei grile. Sursa: „Sângele”, secțiunea Coagularea sângelui."
+        },
+        {
+          "letter": "D",
+          "text": "zaharaza descompune zaharoza în glucoză și fructoză",
+          "why": "Zaharaza descompune zaharoza în glucoză și fructoză. Sursa: „Sistemul digestiv”, secțiunea Enzimele digestive; tabelul 18.4."
+        },
+        {
+          "letter": "E",
+          "text": "sărurile biliare emulsionează picăturile mari de lipide",
+          "why": "Sărurile biliare emulsionează lipidele, dar nu sunt enzime. Efectul lor nu este o acțiune a unei enzime digestive. Sursa: „Sistemul digestiv”, secțiunea Enzimele digestive; tabelul 18.4."
+        }
+      ],
+      "sourcePages": [
+        274
+      ],
+      "topicId": "sistemul-digestiv",
+      "topicLabel": "Sistemul digestiv",
+      "lessonUrl": "sistemul_digestiv.html#intestinele",
+      "id": "asoc-295"
+    },
+    {
+      "number": 296,
+      "sourceNumber": 296,
+      "sourceChapter": "XIII",
+      "prompt": "O secțiune transversală prin măduva spinării evidențiază următoarele componente ale acesteia:",
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "substanța albă, în care se găsesc fibre mielinice grupate în tracturi ascendente și descendente",
+          "why": "Substanța albă medulară conține fibre mielinizate organizate în tracturi ascendente și descendente. Sursa: „Sistemul nervos”, secțiunea Măduva spinării și meningele."
+        },
+        {
+          "letter": "B",
+          "text": "canalul central, cu lichid cefalorahidian, care se continuă cu ventriculul IV",
+          "why": "Canalul central conține lichid cefalorahidian, iar figura ventriculilor arată continuarea ventriculului IV către canalul central al măduvei. Sursa: „Sistemul nervos”, secțiunea Măduva spinării și meningele / „Sistemul nervos”, secțiunea Emisferele cerebrale (figura 11.6)."
+        },
+        {
+          "letter": "C",
+          "text": "substanța cenușie, organizată în coarne, alcătuită în principal din corpi neuronali și interneuroni amielinici",
+          "why": "Substanța cenușie medulară este organizată în coarne și este descrisă prin corpi neuronali și interneuroni amielinici. Sursa: „Sistemul nervos”, secțiunea Măduva spinării și meningele."
+        },
+        {
+          "letter": "D",
+          "text": "arahnoida, stratul extern al meningelui, format din țesut conjunctiv fibros",
+          "why": "Stratul extern fibros este dura mater. Arahnoida este stratul mijlociu, subțire, cu aspect de rețea. Sursa: „Sistemul nervos”, secțiunea Măduva spinării și meningele."
+        },
+        {
+          "letter": "E",
+          "text": "ganglionul rădăcinii anterioare, prin care sunt transmise informațiile senzoriale provenite de la receptori",
+          "why": "Ganglionul senzorial este pe rădăcina posterioară. Rădăcina anterioară este motorie și nu are ganglionul senzorial descris. Sursa: „Sistemul nervos”, secțiunea Măduva spinării și meningele / „Sistemul nervos”, secțiunea Nervii spinali."
+        }
+      ],
+      "sourcePages": [
+        274
+      ],
+      "topicId": "sistemul-nervos",
+      "topicLabel": "Sistemul nervos",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-central",
+      "id": "asoc-296"
+    },
+    {
+      "number": 297,
+      "sourceNumber": 297,
+      "sourceChapter": "XIII",
+      "prompt": "Despre funcționarea plăcii motorii sunt adevărate următoarele:",
+      "correct": [
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "deschiderea canalelor de sodiu voltaj-dependente ale butonului terminal determină exocitoza neurotransmițătorului în fanta sinaptică",
+          "why": "Exocitoza este declanșată de intrarea calciului prin canale de calciu voltaj-dependente ale butonului terminal, nu de canalele de sodiu propuse. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii."
+        },
+        {
+          "letter": "B",
+          "text": "butonul terminal al axonului presinaptic conține mitocondrii și vezicule sinaptice",
+          "why": "Figura confirmă mitocondriile și veziculele sinaptice în butonul terminal. Baremul exclude B în cerința despre funcționarea plăcii motorii: este o descriere structurală, nu un pas al mecanismului cerut; prezența acestor structuri nu este falsă. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii / „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii (figura 10.9)."
+        },
+        {
+          "letter": "C",
+          "text": "acetilcolina eliberată în fanta sinaptică acționează pe receptorii de pe membrana celulei musculare",
+          "why": "La placa motorie, acetilcolina eliberată în fantă se leagă de receptorii membranei celulei musculare și declanșează contracția. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii."
+        },
+        {
+          "letter": "D",
+          "text": "veziculele cu neurotransmițător traversează fanta sinaptică",
+          "why": "Moleculele de neurotransmițător traversează fanta după exocitoză. Veziculele nu traversează fanta sinaptică. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii."
+        },
+        {
+          "letter": "E",
+          "text": "adrenalina se leagă de receptorii de pe membrana postsinaptică și determină deschiderea canalelor de sodiu",
+          "why": "Neurotransmițătorul plăcii motorii descris în manual este acetilcolina, nu adrenalina. Sursa: „Țesutul nervos”, secțiunea Sinapsa și neurotransmițătorii."
+        }
+      ],
+      "sourcePages": [
+        274
+      ],
+      "topicId": "tesutul-nervos",
+      "topicLabel": "Țesutul nervos",
+      "lessonUrl": "tesutul_nervos.html#sinapsa",
+      "id": "asoc-297"
+    },
+    {
+      "number": 298,
+      "sourceNumber": 298,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte despre următoarele componente ale plasmei sanguine:",
+      "correct": [
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "eritrocitele conțin în citoplasmă un pigment care leagă și dioxidul de carbon",
+          "why": "Hemoglobina eritrocitară poate lega și CO₂, dar eritrocitele sunt elemente celulare ale sângelui, nu componente ale plasmei cerute în enunț. Sursa: „Sângele”, secțiunea Funcțiile sângelui / „Sângele”, secțiunea Globulele roșii."
+        },
+        {
+          "letter": "B",
+          "text": "oxigenul dizolvat este monitorizat de chemoreceptorii din arcul aortic și arterele carotide",
+          "why": "Oxigenul dizolvat în sânge este urmărit de chemoreceptorii din arcul aortic și arterele carotide; gazele dizolvate sunt componente plasmatice. Sursa: „Sistemul respirator”, secțiunea Controlul respirației / „Sistemul respirator”, secțiunea Schimbul de gaze."
+        },
+        {
+          "letter": "C",
+          "text": "eozinofilele intervin în reacții alergice",
+          "why": "Eozinofilele participă la reacții alergice, dar sunt leucocite, deci elemente celulare ale sângelui și nu componente ale plasmei. Sursa: „Sângele”, secțiunea Funcțiile sângelui / „Sângele”, secțiunea Globulele albe."
+        },
+        {
+          "letter": "D",
+          "text": "ionul de bicarbonat se combină cu ionii de sodiu pentru a forma bicarbonatul de sodiu",
+          "why": "În descrierea manualului, ionii de bicarbonat trecuți în plasmă se combină cu ionii de sodiu, formând bicarbonatul de sodiu. Sursa: „Sistemul respirator”, secțiunea Schimbul de gaze."
+        },
+        {
+          "letter": "E",
+          "text": "gama-globulinele sunt antigene care se combină specific cu anticorpii",
+          "why": "Gama-globulinele sunt anticorpi, nu antigene. Ele se leagă specific de antigenele care au stimulat formarea lor. Sursa: „Sângele”, secțiunea Plasma."
+        }
+      ],
+      "sourcePages": [
+        274
+      ],
+      "topicId": "sangele",
+      "topicLabel": "Sângele",
+      "lessonUrl": "sangele.html#plasma",
+      "id": "asoc-298"
+    },
+    {
+      "number": 299,
+      "sourceNumber": 299,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele structuri de la nivelul gonadelor produc hormoni:",
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "celulele interstițiale testiculare produc hormoni sexuali masculini, inclusiv testosteron",
+          "why": "Celulele interstițiale testiculare produc hormoni sexuali masculini, inclusiv testosteron. Sursa: „Sistemul reproducător masculin”, secțiunea Anatomia sistemului reproducător masculin."
+        },
+        {
+          "letter": "B",
+          "text": "foliculii ovarieni secretă estrogeni înainte de ovulație",
+          "why": "Foliculii ovarieni în dezvoltare secretă estrogeni înainte de ovulație. Sursa: „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie."
+        },
+        {
+          "letter": "C",
+          "text": "corpul galben produce estrogeni și progesteron",
+          "why": "Corpul galben produce progesteron și estrogeni după ovulație. Sursa: „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie."
+        },
+        {
+          "letter": "D",
+          "text": "placenta produce gonadotropină corionică umană după implantarea blastocistului",
+          "why": "Producerea hCG de către celulele placentare după implantare este confirmată în manual. Varianta este exclusă deoarece placenta nu este o structură a gonadelor; cerința se limitează la testicule și ovare. Sursa: „Sistemul reproducător feminin”, secțiunea Anatomia sistemului reproducător feminin / „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie."
+        },
+        {
+          "letter": "E",
+          "text": "corpul alb secretă progesteron și estrogeni în primele trei luni de sarcină",
+          "why": "Corpul alb apare prin regresia corpului galben și nu îi continuă secreția. În primele aproximativ trei luni de sarcină, corpul galben menținut de hCG este cel care produce hormonii. Sursa: „Sistemul reproducător feminin”, secțiunea Ovarele și organele anexe / „Sistemul reproducător feminin”, secțiunea Fiziologia reproducerii la femeie."
+        }
+      ],
+      "sourcePages": [
+        274
+      ],
+      "topicId": "sistemul-reproducator-feminin",
+      "topicLabel": "Sistemul reproducător feminin",
+      "lessonUrl": "sistemul_reproducator_feminin.html#fiziologie",
+      "id": "asoc-299"
+    },
+    {
+      "number": 300,
+      "sourceNumber": 300,
+      "sourceChapter": "XIII",
+      "prompt": "Vezica urinară:",
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "prezintă un perete format din mușchi neted",
+          "why": "Peretele vezicii urinare conține fibre musculare netede. Sursa: „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii."
+        },
+        {
+          "letter": "B",
+          "text": "este localizată posterior de simfiza pubiană",
+          "why": "Vezica urinară este localizată posterior de simfiza pubiană. Sursa: „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii."
+        },
+        {
+          "letter": "C",
+          "text": "prezintă trei orificii - 2 uretrale și 1 ureteral",
+          "why": "Cele trei orificii sunt două ureterale și unul uretral; varianta inversează numărul lor. Sursa: „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii."
+        },
+        {
+          "letter": "D",
+          "text": "se evacuează prin micțiune",
+          "why": "Evacuarea urinei din vezică prin uretră poartă numele de micțiune. Sursa: „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii."
+        },
+        {
+          "letter": "E",
+          "text": "poate conține maxim 400 ml de urină",
+          "why": "Manualul indică acumularea a până la 600 ml de urină; valoarea maximă de 400 ml nu corespunde sursei. Sursa: „Sistemul urinar”, secțiunea Structuri anexe și alte organe excretorii."
+        }
+      ],
+      "sourcePages": [
+        274
+      ],
+      "topicId": "sistemul-renal-complet",
+      "topicLabel": "Sistemul urinar",
+      "lessonUrl": "sistemul_renal_complet.html#anexe",
+      "id": "asoc-300"
+    },
+    {
+      "number": 301,
+      "sourceNumber": 301,
+      "sourceChapter": "XIII",
+      "prompt": "Despre enzimele digestive sunt corecte afirmațiile:",
+      "correct": [
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "pepsinogenul se formează prin acțiunea HCl asupra pepsinei",
+          "why": "Raportul este inversat: în prezența HCl, pepsinogenul se transformă în pepsină, enzima care descompune proteinele în peptide. Sursa: „Sistemul digestiv”, sucul gastric și tabelul 18.3."
+        },
+        {
+          "letter": "B",
+          "text": "lipaza pancreatică necesită prezența sărurilor biliare",
+          "why": "Manualul descrie acțiunea lipazei pancreatice asupra grăsimilor emulsionate în prealabil de sărurile biliare. Acestea transformă globulele mari în globule mici, ușor digerate de lipaze. Sursa: „Sistemul digestiv”, digestia duodenală."
+        },
+        {
+          "letter": "C",
+          "text": "zaharaza descompune zaharoza în glucoză și galactoză",
+          "why": "Zaharaza descompune zaharoza în glucoză și fructoză. Glucoza și galactoza sunt produșii digestiei lactozei sub acțiunea lactazei. Sursa: „Sistemul digestiv”, tabelul 18.4."
+        },
+        {
+          "letter": "D",
+          "text": "nucleaza transformă ADN și ARN în nucleotide",
+          "why": "Tabelul enzimelor digestive indică nucleaza intestinală, cu ADN și ARN ca substrat și nucleotide ca produși. Sursa: „Sistemul digestiv”, tabelul 18.4."
+        },
+        {
+          "letter": "E",
+          "text": "sărurile biliare transformă picăturile mari de lipide în picături mici",
+          "why": "Emulsionarea este descrisă în manual, dar sărurile biliare sunt marcate explicit ca substanțe care nu sunt enzime. De aceea varianta nu este inclusă în baremul cerinței despre enzime digestive. Sursa: „Sistemul digestiv”, bila și tabelul 18.4."
+        }
+      ],
+      "sourcePages": [
+        274,
+        275
+      ],
+      "topicId": "organele-anexe",
+      "topicLabel": "Digestia și enzimele digestive",
+      "lessonUrl": "sistemul_digestiv.html#organele-anexe",
+      "id": "asoc-301"
+    },
+    {
+      "number": 302,
+      "sourceNumber": 302,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la gonade:",
+      "correct": [
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt situate la nivelul cavității pelviene",
+          "why": "Localizarea pelviană este indicată pentru ovare; testiculele se găsesc în scrot. Varianta nu poate fi aplicată ambelor tipuri de gonade. Sursa: „Sistemul reproducător masculin”; „Sistemul reproducător feminin”, localizarea gonadelor."
+        },
+        {
+          "letter": "B",
+          "text": "secretă hormoni sexuali",
+          "why": "Gonadele produc hormoni: testiculele au funcție hormonală, iar ovarele secretă estrogeni și progesteron. Sursa: „Sistemul reproducător masculin”; „Sistemul reproducător feminin”, funcțiile gonadelor."
+        },
+        {
+          "letter": "C",
+          "text": "sunt organe nepereche care produc celule haploide",
+          "why": "Manualul descrie două gonade și precizează că ovarele sunt organe pereche. Formarea gameților nu face corect termenul „nepereche”. Sursa: „Sistemul reproducător masculin”; „Sistemul reproducător feminin”, gonadele și formarea gameților."
+        },
+        {
+          "letter": "D",
+          "text": "produc gameți",
+          "why": "Gonadele produc celulele reproducătoare: spermatozoizii în testicule și ovulele în ovare. Sursa: „Sistemul reproducător masculin”; „Sistemul reproducător feminin”, producerea gameților."
+        },
+        {
+          "letter": "E",
+          "text": "sunt controlate de FSH și LH secretate de hipotalamus",
+          "why": "FSH și LH sunt secretați de adenohipofiză. Hipotalamusul secretă hormoni care controlează hipofiza; nu este locul secreției FSH și LH. Sursa: „Sistemul endocrin”; „Sistemul reproducător feminin”, hormonii gonadotropi."
+        }
+      ],
+      "sourcePages": [
+        275
+      ],
+      "topicId": "organe",
+      "topicLabel": "Gonadele și organele reproducătoare",
+      "lessonUrl": "sistemul_reproducator_feminin.html#organe",
+      "id": "asoc-302"
+    },
+    {
+      "number": 303,
+      "sourceNumber": 303,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la funcția ribozomilor:",
+      "correct": [
+        "A",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt responsabili pentru sinteza proteinelor",
+          "why": "Ribozomii sunt corpusculii în care aminoacizii sunt combinați pentru formarea proteinelor; aceasta este funcția cerută. Sursa: „Celula și fiziologia celulară”, citoplasma și organitele."
+        },
+        {
+          "letter": "B",
+          "text": "realizează împachetarea proteinelor",
+          "why": "Procesarea și împachetarea proteinelor în vezicule sunt descrise la aparatul Golgi. Ribozomilor le este atribuită formarea proteinelor din aminoacizi. Sursa: „Celula și fiziologia celulară”, citoplasma și organitele."
+        },
+        {
+          "letter": "C",
+          "text": "sunt asamblați în citoplasmă din subunități microscopice",
+          "why": "Textul descrie subunitățile ribozomale ca submicroscopice, produse cu participarea nucleolilor și apoi asamblate în citoplasmă. În plus, asamblarea descrie formarea ribozomului, nu funcția sa de sinteză proteică. Sursa: „Celula și fiziologia celulară”, nucleolii și ribozomii."
+        },
+        {
+          "letter": "D",
+          "text": "combină chimic aminoacizii pentru a obține moleculele mari, complexe",
+          "why": "Manualul precizează că în ribozomi aminoacizii sunt combinați chimic pentru a forma proteine; varianta exprimă această funcție. Sursa: „Celula și fiziologia celulară”, citoplasma și organitele."
+        },
+        {
+          "letter": "E",
+          "text": "sunt formați din ARN și proteine",
+          "why": "Enunțul cere funcția ribozomilor. O descriere a compoziției lor nu răspunde acestei cerințe; funcția prezentată în text este combinarea aminoacizilor pentru formarea proteinelor. Sursa: „Celula și fiziologia celulară”, nucleolii și ribozomii."
+        }
+      ],
+      "sourcePages": [
+        275
+      ],
+      "topicId": "organite",
+      "topicLabel": "Organitele celulare",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#organite",
+      "id": "asoc-303"
+    },
+    {
+      "number": 304,
+      "sourceNumber": 304,
+      "sourceChapter": "XIII",
+      "prompt": "Gonada feminină:",
+      "correct": [
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "secretă estrogeni care prin feed-back negativ controlează eliberarea de hormoni gonadotropi din hipotalamus",
+          "why": "Gonadotropinele FSH și LH sunt hormoni adenohipofizari. Tabelul feminin arată inhibarea FSH de către estrogeni, dar nu localizează secreția gonadotropinelor în hipotalamus. Sursa: „Sistemul endocrin”; „Sistemul reproducător feminin”, gonadotropinele și tabelul 23.2."
+        },
+        {
+          "letter": "B",
+          "text": "formează zigotul pe care îl eliberează în cavitatea abdominală în ziua a 14-a a ciclului ovarian",
+          "why": "La ovulație este eliberat oocitul, nu zigotul. Zigotul rezultă din unirea gameților prin fecundație. Sursa: „Sistemul reproducător feminin”, ovulația și fecundația."
+        },
+        {
+          "letter": "C",
+          "text": "secretă estrogen atât în faza proliferativă cât și în cea secretorie a ciclului menstrual",
+          "why": "În faza proliferativă crește nivelul estrogenilor, iar în faza secretorie corpul galben secretă progesteron și cantități mici de estrogeni. Secreția estrogenică este prezentă în ambele faze. Sursa: „Sistemul reproducător feminin”, ciclul menstrual."
+        },
+        {
+          "letter": "D",
+          "text": "determină, prin sinteza de progesteron, creșterea depozitelor de proteine din țesuturi",
+          "why": "Creșterea depozitelor proteice din țesuturi este atribuită în manual testosteronului și estrogenilor, care stimulează sinteza proteică. Varianta înlocuiește estrogenii cu progesteronul. Sursa: „Metabolism și nutriție”, metabolismul proteinelor."
+        },
+        {
+          "letter": "E",
+          "text": "este organ pereche situat în cavitatea peritoneală",
+          "why": "Manualul descrie ovarele ca organe pereche situate lângă pereții laterali ai cavității pelviene și le numește „retroperitoneale”. Acesta este reperul textual al baremului, care exclude localizarea formulată în variantă. Sursa: „Sistemul reproducător feminin”, ovarele."
+        }
+      ],
+      "sourcePages": [
+        275
+      ],
+      "topicId": "organe",
+      "topicLabel": "Gonadele și organele reproducătoare",
+      "lessonUrl": "sistemul_reproducator_feminin.html#organe",
+      "id": "asoc-304"
+    },
+    {
+      "number": 305,
+      "sourceNumber": 305,
+      "sourceChapter": "XIII",
+      "prompt": "Urechea medie:",
+      "correct": [
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "comunică cu orofaringele prin trompa lui Eustachio",
+          "why": "Trompele lui Eustachio se deschid în pereții laterali ai nazofaringelui, nu în orofaringe. Sursa: „Sistemul respirator”, faringele și trompele lui Eustachio."
+        },
+        {
+          "letter": "B",
+          "text": "prezintă 3 oase care transmit vibrațiile de la fereastra ovală la timpan",
+          "why": "Sensul este inversat: vibrațiile trec de la timpan la ciocan, nicovală și scăriță, apoi la fereastra ovală. Sursa: „Organele de simț”, fiziologia auzului."
+        },
+        {
+          "letter": "C",
+          "text": "conține o structură osoasă, cohleea, în interiorul căreia se găsește perilimfă",
+          "why": "Cohleea și perilimfa sunt descrise la urechea internă, nu la urechea medie. Sursa: „Organele de simț”, anatomia urechii."
+        },
+        {
+          "letter": "D",
+          "text": "are un perete intern, situat medial, care prezintă fereastra ovală superior de fereastra rotundă",
+          "why": "În figura urechii, fereastra ovală, în contact cu scărița, este deasupra ferestrei rotunde, la limita dintre urechea medie și cea internă. Sursa: „Organele de simț”, figura 12.3."
+        },
+        {
+          "letter": "E",
+          "text": "conține 2 tipuri de lichide, unul asemănător lichidului interstițial, celălalt asemănător lichidului cefalorahidian",
+          "why": "Textul discută aerul din urechea medie și egalizarea presiunii sale prin trompa lui Eustachio. Perilimfa și endolimfa sunt prezentate în cohlee, parte a urechii interne. Sursa: „Organele de simț”, anatomia și fiziologia urechii."
+        }
+      ],
+      "sourcePages": [
+        275
+      ],
+      "topicId": "urechea-si-auzul",
+      "topicLabel": "Urechea și auzul",
+      "lessonUrl": "organele_de_simt.html#urechea-si-auzul",
+      "id": "asoc-305"
+    },
+    {
+      "number": 306,
+      "sourceNumber": 306,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele variante sunt corecte:",
+      "correct": [
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "cavitatea posterioară a corpului conține mediastinul",
+          "why": "Cavitatea posterioară cuprinde cavitatea craniană și canalul rahidian. Mediastinul aparține cavității toracice, subdiviziune a cavității anterioare. Sursa: „Introducere în anatomie și fiziologie”, cavitățile corpului."
+        },
+        {
+          "letter": "B",
+          "text": "pleura este o structură seroasă ce acoperă plămânul prin foița parietală",
+          "why": "Foița viscerală învelește organul, iar cea parietală căptușește cavitatea. Varianta inversează rolul foiței care acoperă plămânul. Sursa: „Introducere în anatomie și fiziologie”, membranele seroase."
+        },
+        {
+          "letter": "C",
+          "text": "falangele sunt situate distal față de carpiene",
+          "why": "Tabelul termenilor anatomici dă chiar acest exemplu pentru „distal”: falangele se află mai departe de locul de atașare a membrului decât carpienele. Sursa: „Introducere în anatomie și fiziologie”, tabelul termenilor direcționali."
+        },
+        {
+          "letter": "D",
+          "text": "sternul este situat anterior față de inimă",
+          "why": "Sternul anterior față de inimă este exemplul dat în tabel pentru termenul „anterior”. Lecția cardiovasculară confirmă că inima se află posterior de stern. Sursa: „Introducere în anatomie și fiziologie”; „Sistemul cardiovascular”, termenii direcționali și poziția inimii."
+        },
+        {
+          "letter": "E",
+          "text": "ulna se află în partea laterală a antebrațului",
+          "why": "Tabelul termenilor anatomici precizează că ulna se află în partea medială a antebrațului, nu laterală. Sursa: „Introducere în anatomie și fiziologie”, tabelul termenilor direcționali."
+        }
+      ],
+      "sourcePages": [
+        275
+      ],
+      "topicId": "termeni",
+      "topicLabel": "Raporturi anatomice",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#termeni",
+      "id": "asoc-306"
+    },
+    {
+      "number": 307,
+      "sourceNumber": 307,
+      "sourceChapter": "XIII",
+      "prompt": "Diartrozele sunt articulații care:",
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "prezintă o cavitate sinovială",
+          "why": "Diartrozele sunt numite și articulații sinoviale deoarece capetele osoase sunt cuprinse într-o cavitate sinovială. Sursa: „Oasele și articulațiile”, diartrozele."
+        },
+        {
+          "letter": "B",
+          "text": "în anumite cazuri, prezintă cavitatea articulară divizată de discuri cartilaginoase",
+          "why": "În unele diartroze, cavitatea articulară este divizată parțial sau complet de discuri cartilaginoase; manualul exemplifică prin meniscurile genunchiului. Sursa: „Oasele și articulațiile”, diartrozele."
+        },
+        {
+          "letter": "C",
+          "text": "permit mișcări reduse, înainte și înapoi",
+          "why": "Manualul descrie diartrozele drept articulații care permit mișcări libere. Mobilitatea limitată este caracteristică amfiartrozelor în clasificarea prezentată. Sursa: „Oasele și articulațiile”, amfiartrozele și diartrozele."
+        },
+        {
+          "letter": "D",
+          "text": "sunt prezente la nivelul corpilor vertebrali",
+          "why": "Între corpurile vertebrale se găsesc discuri cartilaginoase, descrise la amfiartroze. Diartrozele vertebrale sunt situate la nivelul proceselor articulare. Sursa: „Oasele și articulațiile”, articulațiile vertebrelor."
+        },
+        {
+          "letter": "E",
+          "text": "au capsulă fibroasă, care învelește capetele osoase",
+          "why": "Cele două capete osoase ale articulației sinoviale sunt învelite de o capsulă fibroasă; în interior se află cavitatea sinovială. Sursa: „Oasele și articulațiile”, diartrozele."
+        }
+      ],
+      "sourcePages": [
+        275
+      ],
+      "topicId": "articulatii",
+      "topicLabel": "Articulațiile",
+      "lessonUrl": "oasele_si_articulatiile.html#articulatii",
+      "id": "asoc-307"
+    },
+    {
+      "number": 308,
+      "sourceNumber": 308,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați variantele corecte:",
+      "correct": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "fibrele musculare sunt organizate în fascicule",
+          "why": "Mușchiul scheletic este alcătuit din fascicule de fibre musculare; perimisiumul învelește fiecare asemenea pachet. Sursa: „Țesutul muscular”, structura mușchiului striat scheletic."
+        },
+        {
+          "letter": "B",
+          "text": "endomisiumul învelește fiecare pachet de fibre musculare",
+          "why": "Endomisiumul învelește fiecare fibră musculară. Învelișul unui pachet de fibre, adică al unui fascicul, este perimisiumul. Sursa: „Țesutul muscular”, învelișurile conjunctive."
+        },
+        {
+          "letter": "C",
+          "text": "tendonul este format din continuarea structurilor conjunctive ale mușchiului",
+          "why": "Endomisiumul, perimisiumul, epimisiumul și fascia se continuă dincolo de corpul mușchiului și formează tendonul. Sursa: „Țesutul muscular”, învelișurile conjunctive."
+        },
+        {
+          "letter": "D",
+          "text": "sarcomerul reprezintă unitatea funcțională a mușchiului striat scheletic",
+          "why": "Sarcomerul este numit explicit unitatea funcțională a mușchiului striat scheletic; miofibrilele sunt organizate în sarcomere repetate. Sursa: „Țesutul muscular”, sarcomerul."
+        },
+        {
+          "letter": "E",
+          "text": "mușchiul se contractă utilizând energia furnizată de mitocondriile prezente în sarcoplasmă",
+          "why": "Sarcoplasma conține numeroase mitocondrii care furnizează ATP pentru contracția miofibrilelor. Sursa: „Țesutul muscular”, sarcoplasma și energia contracției."
+        }
+      ],
+      "sourcePages": [
+        275
+      ],
+      "topicId": "muschiul-striat",
+      "topicLabel": "Mușchiul striat",
+      "lessonUrl": "tesutul_muscular.html#muschiul-striat",
+      "id": "asoc-308"
+    },
+    {
+      "number": 309,
+      "sourceNumber": 309,
+      "sourceChapter": "XIII",
+      "prompt": "Undele sonore se caracterizează prin:",
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "frecvență - ce reprezintă numărul de vibrații ale aerului într-o unitate de timp",
+          "why": "Frecvența este definită ca numărul de vibrații ale aerului într-o unitate de timp, exprimat deseori în cicli pe secundă sau hertzi. Sursa: „Organele de simț”, fiziologia auzului."
+        },
+        {
+          "letter": "B",
+          "text": "timbru - care variază în funcție de obiectul care a produs sunetul",
+          "why": "Timbrul depinde de armonicele tonale, iar acestea variază în funcție de obiectul care produce sunetul. Sursa: „Organele de simț”, fiziologia auzului."
+        },
+        {
+          "letter": "C",
+          "text": "frecvență - ce reprezintă amplitudinea undei sonore",
+          "why": "Frecvența reprezintă numărul vibrațiilor pe unitatea de timp. Amplitudinea undei este legată în manual de intensitatea sunetului. Sursa: „Organele de simț”, fiziologia auzului."
+        },
+        {
+          "letter": "D",
+          "text": "intensitate - care se măsoară în decibeli",
+          "why": "Manualul exprimă intensitatea sunetului în decibeli și precizează că ea variază în funcție de amplitudinea undei sonore. Sursa: „Organele de simț”, fiziologia auzului."
+        },
+        {
+          "letter": "E",
+          "text": "timbru - care reprezintă calitatea sunetului, ce depinde de armonicele tonale",
+          "why": "Timbrul este numit calitatea sunetului și este legat de armonicele tonale ale acestuia. Sursa: „Organele de simț”, fiziologia auzului."
+        }
+      ],
+      "sourcePages": [
+        276
+      ],
+      "topicId": "urechea-si-auzul",
+      "topicLabel": "Urechea și auzul",
+      "lessonUrl": "organele_de_simt.html#urechea-si-auzul",
+      "id": "asoc-309"
+    },
+    {
+      "number": 310,
+      "sourceNumber": 310,
+      "sourceChapter": "XIII",
+      "prompt": "Hormonul de creștere:",
+      "correct": [
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este un hormon glandulotrop secretat de adenohipofiză",
+          "why": "STH este adenohipofizar, însă tabelul îi indică drept țintă țesuturile întregului organism. Hormonii tropi controlează alte glande endocrine; acesta nu este efectul atribuit STH în tabel. Sursa: „Sistemul endocrin”, hipofiza și tabelul 13.2."
+        },
+        {
+          "letter": "B",
+          "text": "stimulează introducerea acizilor grași și a lipidelor în celule",
+          "why": "Efectele descrise sunt introducerea aminoacizilor și proteinelor în celule, sinteza proteică și mobilizarea grăsimilor. Varianta înlocuiește substanțele a căror introducere este stimulată. Sursa: „Sistemul endocrin”, hormonul somatotrop."
+        },
+        {
+          "letter": "C",
+          "text": "este format din 191 de aminoacizi",
+          "why": "Manualul precizează că hormonul somatotrop este o proteină alcătuită din 191 de aminoacizi. Sursa: „Sistemul endocrin”, hormonul somatotrop."
+        },
+        {
+          "letter": "D",
+          "text": "promovează sinteza proteică",
+          "why": "Promovarea sintezei proteice este unul dintre efectele prin care hormonul somatotrop accelerează creșterea organismului. Sursa: „Sistemul endocrin”, hormonul somatotrop."
+        },
+        {
+          "letter": "E",
+          "text": "secretat în exces, în perioada adultă, determină gigantism",
+          "why": "Excesul de STH în copilărie produce gigantism; la adult, manualul indică acromegalia. Sursa: „Sistemul endocrin”, tulburările secreției de STH."
+        }
+      ],
+      "sourcePages": [
+        276
+      ],
+      "topicId": "hipofiza-glanda-pituitara",
+      "topicLabel": "Hipofiza și hormonii",
+      "lessonUrl": "sistemul_endocrin.html#hipofiza-glanda-pituitara",
+      "id": "asoc-310"
+    },
+    {
+      "number": 311,
+      "sourceNumber": 311,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați asocierile corecte referitoare la hormoni:",
+      "correct": [
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "hormonii steroidieni - sintetizați din trigliceride",
+          "why": "Hormonii steroidieni sunt sintetizați din colesterol, nu din trigliceride. Sursa: „Sistemul endocrin”, clasificarea hormonilor."
+        },
+        {
+          "letter": "B",
+          "text": "hormonii peptidici - formați din lanțuri scurte de aminoacizi",
+          "why": "Hormonii peptidici conțin lanțuri mai scurte de aminoacizi; exemplele din manual sunt ADH și oxitocina. Sursa: „Sistemul endocrin”, clasificarea hormonilor."
+        },
+        {
+          "letter": "C",
+          "text": "hormonii proteici - numiți mesageri de ordinul II",
+          "why": "Majoritatea hormonilor proteici acționează ca mesageri primari. Moleculele de cAMP formate în celulă sunt numite mesageri secundari. Sursa: „Sistemul endocrin”, mecanismul hormonal cu mesager secundar."
+        },
+        {
+          "letter": "D",
+          "text": "hormonii cu structură inelară, complexă - difuziune prin membrana celulară",
+          "why": "Structura inelară complexă descrie hormonii steroidieni. Aceștia se dizolvă în fosfolipide și trec prin membrana celulară. Sursa: „Sistemul endocrin”, hormonii steroidieni."
+        },
+        {
+          "letter": "E",
+          "text": "hormonii glicoproteici - acțiune asupra celulei ce i-a secretat",
+          "why": "Acțiunea asupra celulei care a secretat hormonul definește mecanismul autocrin. „Glicoproteic” descrie o categorie structurală; tabelul o exemplifică prin FSH, LH și TSH. Sursa: „Sistemul endocrin”, tabelul 13.1 și mecanismul autocrin."
+        }
+      ],
+      "sourcePages": [
+        276
+      ],
+      "topicId": "descrierea-generala-a-hormonilor",
+      "topicLabel": "Hormonii",
+      "lessonUrl": "sistemul_endocrin.html#descrierea-generala-a-hormonilor",
+      "id": "asoc-311"
+    },
+    {
+      "number": 312,
+      "sourceNumber": 312,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați variantele corecte:",
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "TSH, hormon trop, reglează dezvoltarea glandei tiroide",
+          "why": "TSH reglează dezvoltarea glandei tiroide și controlează sinteza și eliberarea hormonilor tiroidieni, fiind numit hormon trop. Sursa: „Sistemul endocrin”, hormonul stimulator tiroidian."
+        },
+        {
+          "letter": "B",
+          "text": "hormonul de creștere accelerează introducerea aminoacizilor în celule",
+          "why": "STH stimulează introducerea aminoacizilor în celule și promovează sinteza proteică. Sursa: „Sistemul endocrin”, hormonul somatotrop."
+        },
+        {
+          "letter": "C",
+          "text": "glucocorticoizii reglează concentrația sodiului și electroliților din sânge",
+          "why": "Reglarea concentrației electroliților, în special sodiu și potasiu, este atribuită mineralocorticoizilor. Glucocorticoizii sunt prezentați prin efectele asupra metabolismului glucidelor, proteinelor și lipidelor. Sursa: „Sistemul endocrin”, hormonii cortexului suprarenal."
+        },
+        {
+          "letter": "D",
+          "text": "FSH transformă foliculul ovarian în corp galben",
+          "why": "LH stimulează formarea corpului galben din folicul; FSH stimulează creșterea foliculilor. Varianta atribuie FSH efectul LH. Sursa: „Sistemul endocrin”; „Sistemul reproducător feminin”, tabelul 13.2 și formarea corpului galben."
+        },
+        {
+          "letter": "E",
+          "text": "glucagonul stimulează degradarea glicogenului din ficat",
+          "why": "Glucagonul stimulează glicogenoliza hepatică: glicogenul este degradat, iar glucoza rezultată este eliberată în sânge. Sursa: „Sistemul endocrin”, hormonii pancreatici."
+        }
+      ],
+      "sourcePages": [
+        276
+      ],
+      "topicId": "hipofiza-glanda-pituitara",
+      "topicLabel": "Hipofiza și hormonii",
+      "lessonUrl": "sistemul_endocrin.html#hipofiza-glanda-pituitara",
+      "id": "asoc-312"
+    },
+    {
+      "number": 313,
+      "sourceNumber": 313,
+      "sourceChapter": "XIII",
+      "prompt": "Proteinele plasmatice includ:",
+      "correct": [
+        "A",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "fibrinogenul, care se transformă în fibrină în procesul de coagulare",
+          "why": "Trombina transformă fibrinogenul dizolvat în plasmă în fibrină insolubilă; filamentele acesteia participă la formarea cheagului. Sursa: „Sângele”, coagularea sângelui."
+        },
+        {
+          "letter": "B",
+          "text": "albuminele, cu rol enzimatic în scindarea fibrinogenului",
+          "why": "Albuminele mențin presiunea osmotică și transportă substanțe. Enzima care transformă fibrinogenul în fibrină este trombina. Sursa: „Sângele”, plasma și coagularea."
+        },
+        {
+          "letter": "C",
+          "text": "proteine ce rămân în fluxul sanguin și favorizează osmoza apei din fluidele tisulare în sânge",
+          "why": "Proteinele plasmatice rămân în general în fluxul sanguin și favorizează osmoza apei din fluidele tisulare în sânge, conform textului. Sursa: „Sângele”, proteinele plasmatice."
+        },
+        {
+          "letter": "D",
+          "text": "γ-globuline sintetizate de ficat, reprezentând 40 % din totalul proteinelor plasmatice",
+          "why": "Procentul de aproximativ 40% se referă la toate globulinele. Gama globulinele sunt anticorpi produși de sistemul imun, nu sunt identificate în text ca întreaga fracțiune de 40% sintetizată hepatic. Sursa: „Sângele”, globulinele plasmatice."
+        },
+        {
+          "letter": "E",
+          "text": "tromboplastina, cu acțiune asupra trombinei plasmatice",
+          "why": "În schema coagulării din manual, tromboplastina participă la activarea protrombinei, care devine trombină. Varianta indică drept țintă trombina deja formată. Sursa: „Sângele”, coagularea sângelui."
+        }
+      ],
+      "sourcePages": [
+        276
+      ],
+      "topicId": "plasma",
+      "topicLabel": "Sângele și plasma",
+      "lessonUrl": "sangele.html#plasma",
+      "id": "asoc-313"
+    },
+    {
+      "number": 314,
+      "sourceNumber": 314,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la elementele figurate sanguine:",
+      "correct": [
+        "A",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "globulele roșii, după 120 de zile, sunt distruse de macrofage din ficat, splină, măduvă osoasă",
+          "why": "Textul indică aproximativ 120 de zile de circulație a eritrocitelor și distrugerea celor îmbătrânite sau deteriorate de macrofagele din splină, ficat și măduva osoasă. Sursa: „Sângele”, durata de viață a eritrocitelor."
+        },
+        {
+          "letter": "B",
+          "text": "toate leucocitele prezintă granulații citoplasmatice",
+          "why": "Manualul împarte leucocitele în granulocite și agranulocite. Monocitele și limfocitele sunt grupate la agranulocite, descrise fără granulații citoplasmatice în această clasificare. Sursa: „Sângele”, clasificarea leucocitelor."
+        },
+        {
+          "letter": "C",
+          "text": "eritrocitele conțin, la nivelul membranei, molecule sub formă de anticorpi A, B și 0",
+          "why": "Moleculele A și B de pe eritrocite sunt antigene. Anticorpii anti-A și anti-B sunt descriși în ser; grupa 0 nu are antigenele eritrocitare A și B. Sursa: „Sângele”, grupele sanguine."
+        },
+        {
+          "letter": "D",
+          "text": "limfocitele atipice apar în mononucleoza infecțioasă",
+          "why": "Tabelul elementelor figurate menționează explicit apariția limfocitelor atipice în mononucleoza infecțioasă. Sursa: „Sângele”, tabelul 14.3."
+        },
+        {
+          "letter": "E",
+          "text": "trombocitele sunt esențiale pentru coagulare",
+          "why": "Trombocitele sunt numite esențiale pentru coagulare. Ele formează agregate la locul leziunii și participă la mecanismul coagulării. Sursa: „Sângele”, tabelul 14.3 și plachetele sanguine."
+        }
+      ],
+      "sourcePages": [
+        276
+      ],
+      "topicId": "globulele-albe",
+      "topicLabel": "Elementele figurate",
+      "lessonUrl": "sangele.html#globulele-albe",
+      "id": "asoc-314"
+    },
+    {
+      "number": 315,
+      "sourceNumber": 315,
+      "sourceChapter": "XIII",
+      "prompt": "Inima prezintă:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "debit cardiac mediu de aproximativ 5250 ml de sânge/minut",
+          "why": "Manualul indică un volum-bătaie mediu de aproximativ 70 ml și un debit cardiac de aproximativ 5.250 ml/minut; 75 bătăi/minut × 70 ml/bătaie dau această valoare. Sursa: „Sistemul cardiovascular”, ciclul cardiac."
+        },
+        {
+          "letter": "B",
+          "text": "sistola ventriculară, care produce deschiderea valvelor atrio-ventriculare",
+          "why": "Valvele atrioventriculare împiedică refluxul sângelui în atrii în timpul contracției ventriculare. Ele nu se deschid pentru a permite acest reflux. Sursa: „Sistemul cardiovascular”, valvele atrioventriculare."
+        },
+        {
+          "letter": "C",
+          "text": "vascularizație venoasă, drenată în atriul drept prin sinusul coronarian",
+          "why": "Venele cardiace conduc sângele în sinusul coronarian, iar sinusul îl trimite în atriul drept. Sursa: „Sistemul cardiovascular”, circulația coronariană."
+        },
+        {
+          "letter": "D",
+          "text": "nodulul sinoatrial, cu rol de pace-maker ce se depolarizează de 70-80 de ori/minut",
+          "why": "Nodul sinoatrial este descris ca stimulator cardiac sau pace-maker și se depolarizează de 70–80 de ori pe minut. Sursa: „Sistemul cardiovascular”, țesutul excitoconductor."
+        },
+        {
+          "letter": "E",
+          "text": "depolarizare ventriculară, care produce pe electrocardiogramă unda T",
+          "why": "Complexul QRS reflectă depolarizarea ventriculelor; unda T reprezintă repolarizarea ventriculară. Sursa: „Sistemul cardiovascular”, electrocardiograma."
+        }
+      ],
+      "sourcePages": [
+        276
+      ],
+      "topicId": "ciclul-cardiac",
+      "topicLabel": "Inima și ciclul cardiac",
+      "lessonUrl": "sistemul_cardiovascular.html#ciclul-cardiac",
+      "id": "asoc-315"
+    },
+    {
+      "number": 316,
+      "sourceNumber": 316,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați sursele corecte de energie necesare contracției musculare:",
+      "correct": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "glicoliza",
+          "why": "Glicoliza este enumerată între procesele metabolismului glucidic care furnizează energie contracției. Manualul arată că glicoliza anaerobă furnizează două molecule de ATP pentru fiecare glucoză scindată. Sursa: „Țesutul muscular”, energia necesară contracției."
+        },
+        {
+          "letter": "B",
+          "text": "sistemul transportor de protoni",
+          "why": "Denumirea din enumerarea manualului este „sistemul transportor de electroni”, alături de glicoliză, ciclul Krebs și chemiosmoză. Varianta înlocuiește electronii cu protonii. Sursa: „Țesutul muscular”, energia necesară contracției."
+        },
+        {
+          "letter": "C",
+          "text": "chemiosmoza",
+          "why": "Chemiosmoza este enumerată explicit între procesele respirației celulare care contribuie la furnizarea energiei pentru celula musculară. Sursa: „Țesutul muscular”, energia necesară contracției."
+        },
+        {
+          "letter": "D",
+          "text": "ciclul Krebs",
+          "why": "Ciclul Krebs face parte din procesele metabolismului glucidic enumerate pentru refacerea ATP-ului necesar contracției. Sursa: „Țesutul muscular”, energia necesară contracției."
+        },
+        {
+          "letter": "E",
+          "text": "reacții care necesită oxigen",
+          "why": "Manualul precizează că reacțiile respirației celulare care furnizează ATP necesită oxigen pentru finalizare. Tot el descrie separat și producerea anaerobă de ATP când oxigenul este insuficient. Sursa: „Țesutul muscular”, energia necesară contracției."
+        }
+      ],
+      "sourcePages": [
+        276,
+        277
+      ],
+      "topicId": "energia",
+      "topicLabel": "Energia contracției musculare",
+      "lessonUrl": "tesutul_muscular.html#energia",
+      "id": "asoc-316"
+    },
+    {
+      "number": 317,
+      "sourceNumber": 317,
+      "sourceChapter": "XIII",
+      "prompt": "Fibra musculară netedă:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "se contractă sub acțiunea stimulilor vegetativi",
+          "why": "Mușchiul neted este sub control involuntar, iar sistemul nervos autonom coordonează funcțiile sale. Sursa: „Țesutul muscular”; „Organizarea sistemului nervos”, mușchiul neted și controlul autonom."
+        },
+        {
+          "letter": "B",
+          "text": "are formă fusiformă, cilindrică",
+          "why": "Fibrele netede sunt alungite, fusiforme, cu capete ascuțite. Forma cilindrică este trecută în tabel la fibrele striate scheletice și cardiace. Sursa: „Țesutul muscular”, tabelul 8.1."
+        },
+        {
+          "letter": "C",
+          "text": "participă la formarea peretelui vaselor de sânge",
+          "why": "Vasele de sânge sunt enumerate între structurile al căror perete conține mușchi neted. Sursa: „Țesutul muscular”, localizarea mușchiului neted."
+        },
+        {
+          "letter": "D",
+          "text": "prezintă o viteză scăzută de contracție",
+          "why": "Tabelul comparativ atribuie mușchiului neted cea mai lentă contracție dintre cele trei tipuri musculare. Sursa: „Țesutul muscular”, tabelul 8.1."
+        },
+        {
+          "letter": "E",
+          "text": "are striații repetitive",
+          "why": "Striațiile sunt absente la mușchiul neted și prezente la mușchiul scheletic și la cel cardiac. Sursa: „Țesutul muscular”, tabelul 8.1."
+        }
+      ],
+      "sourcePages": [
+        277
+      ],
+      "topicId": "muschiul-striat",
+      "topicLabel": "Mușchiul striat",
+      "lessonUrl": "tesutul_muscular.html#muschiul-striat",
+      "id": "asoc-317"
+    },
+    {
+      "number": 318,
+      "sourceNumber": 318,
+      "sourceChapter": "XIII",
+      "prompt": "Mielina:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "izolează axonul, conducând la creșterea vitezei de transmitere a impulsului nervos",
+          "why": "Teaca de mielină izolează axonul; textul precizează că fibrele mielinice conduc impulsurile rapid, față de conducerea mai lentă prin fibrele amielinice. Sursa: „Țesutul nervos”, teaca de mielină."
+        },
+        {
+          "letter": "B",
+          "text": "este prezentă la toate fibrele din SNC",
+          "why": "În sistemul nervos central există atât axoni mielinici, cât și axoni amielinici. Mielina nu este prezentă la toate fibrele. Sursa: „Țesutul nervos”, teaca de mielină."
+        },
+        {
+          "letter": "C",
+          "text": "poate duce la apariția sclerozei multiple, atunci când este deteriorată în SNC",
+          "why": "Deteriorarea mielinei în sistemul nervos central este legată explicit în manual de apariția sclerozei multiple. Sursa: „Țesutul nervos”, teaca de mielină."
+        },
+        {
+          "letter": "D",
+          "text": "lipsește la nivelul nodurilor Ranvier",
+          "why": "Nodurile Ranvier sunt spațiile dintre învelișuri succesive; la nivelul lor, axonul nu prezintă mielină. Sursa: „Țesutul nervos”, nodurile Ranvier."
+        },
+        {
+          "letter": "E",
+          "text": "este produsă de celule Schwann în periferie și astrocite în SNC",
+          "why": "În sistemul periferic mielina este produsă de celulele Schwann, iar în sistemul central de oligodendrocite. Varianta înlocuiește oligodendrocitele cu astrocitele. Sursa: „Țesutul nervos”, formarea tecii de mielină."
+        }
+      ],
+      "sourcePages": [
+        277
+      ],
+      "topicId": "organizare",
+      "topicLabel": "Neuronii și neuroglia",
+      "lessonUrl": "tesutul_nervos.html#organizare",
+      "id": "asoc-318"
+    },
+    {
+      "number": 319,
+      "sourceNumber": 319,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "leziunea rădăcinii posterioare a nervului spinal determină pierderea senzațiilor provenite de la efectori",
+          "why": "Textul leagă lezarea rădăcinilor dorsale de pierderea senzațiilor provenite de la receptori. Efectorii, precum mușchii și glandele, primesc răspunsurile; varianta substituie efectorii receptorilor. Sursa: „Organizarea sistemului nervos”, rădăcinile nervilor spinali."
+        },
+        {
+          "letter": "B",
+          "text": "rădăcina ventrală a nervului spinal ia naștere din coarnele anterioare ale măduvei spinării",
+          "why": "Manualul precizează că rădăcinile ventrale iau naștere din coarnele anterioare ale măduvei și conțin axonii neuronilor motori. Sursa: „Organizarea sistemului nervos”, rădăcinile nervilor spinali."
+        },
+        {
+          "letter": "C",
+          "text": "leziunea axonilor neuronilor ce pleacă de la nivelul măduvei determină paralizie",
+          "why": "Rădăcinile ventrale conțin axonii motori care pleacă din măduvă. Lezarea lor este asociată în text cu incapacitatea de a răspunde la stimuli, adică paralizia. Sursa: „Organizarea sistemului nervos”, rădăcinile nervilor spinali."
+        },
+        {
+          "letter": "D",
+          "text": "rădăcina dorsală a nervului spinal este formată din neuroni senzoriali",
+          "why": "Rădăcina dorsală conține componentele senzoriale; ganglionul său adăpostește corpii celulari ai neuronilor senzoriali. Sursa: „Organizarea sistemului nervos”, rădăcinile nervilor spinali."
+        },
+        {
+          "letter": "E",
+          "text": "nervii spinali care conțin fibre parasimpatice au originea la nivel cervico-toraco-lombar",
+          "why": "Tabelul comparativ atribuie originea cranio-sacrală parasimpaticului. Originea cervico-toraco-lombară este trecută la simpatic. Sursa: „Organizarea sistemului nervos”, tabelul comparativ al sistemelor vegetative."
+        }
+      ],
+      "sourcePages": [
+        277
+      ],
+      "topicId": "sistem-nervos-central",
+      "topicLabel": "Sistemul nervos central",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-central",
+      "id": "asoc-319"
+    },
+    {
+      "number": 320,
+      "sourceNumber": 320,
+      "sourceChapter": "XIII",
+      "prompt": "Organul Corti:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este localizat în interiorul cohleei",
+          "why": "Organul lui Corti este localizat în interiorul cohleei, unde primește vibrațiile transmise prin lichidele urechii interne. Sursa: „Organele de simț”, fiziologia auzului."
+        },
+        {
+          "letter": "B",
+          "text": "conține neuroni ale căror dendrite vin în contact cu celulele ciliate",
+          "why": "Textul precizează că organul Corti conține dendritele neuronilor care vin în contact cu celulele ciliate. Nu spune că neuronii întregi sunt localizați în acest organ; baremul păstrează această distincție. Sursa: „Organele de simț”, organul lui Corti."
+        },
+        {
+          "letter": "C",
+          "text": "detectează modificările de presiune ale endolimfei prin intermediul membranei tectoria",
+          "why": "Legenda figurii arată că modificarea presiunii endolimfei mișcă membrana tectoria, iar mișcarea este detectată de celulele ciliate ale organului Corti. Sursa: „Organele de simț”, figura 12.4."
+        },
+        {
+          "letter": "D",
+          "text": "conține dendritele neuronilor ai căror axoni formează ramura cohleară a nervului VIII",
+          "why": "Organul Corti conține dendritele neuronilor ale căror axoni formează ramura cohleară a nervilor vestibulocohleari. Sursa: „Organele de simț”, organul lui Corti."
+        },
+        {
+          "letter": "E",
+          "text": "are un rol esențial în menținerea echilibrului",
+          "why": "Organul Corti este descris în mecanismul auzului, prin transmiterea impulsurilor pentru interpretarea sunetului. Structurile pentru echilibru sunt prezentate separat, în labirintul urechii interne. Sursa: „Organele de simț”, auzul și echilibrul."
+        }
+      ],
+      "sourcePages": [
+        277
+      ],
+      "topicId": "urechea-si-auzul",
+      "topicLabel": "Urechea și auzul",
+      "lessonUrl": "organele_de_simt.html#urechea-si-auzul",
+      "id": "asoc-320"
+    },
+    {
+      "number": 321,
+      "sourceNumber": 321,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "homeostazia implică mecanisme de feedback negativ ce mențin în limite normale parametrii mediului intern",
+          "why": "Homeostazia menține parametrii mediului intern în limite normale. Feed-back-ul negativ este prezentat ca mijlocul principal prin care organismul revine la valorile de referință. Sursa: „Introducere în anatomie și fiziologie”, homeostazia și feed-back-ul negativ."
+        },
+        {
+          "letter": "B",
+          "text": "conductibilitatea asigură propagarea impulsului de la o celulă miocardică la alta prin joncțiuni de tip gap",
+          "why": "Conductibilitatea este transmiterea stimulilor; în miocard, impulsurile se răspândesc de la o celulă la alta prin joncțiunile gap ale discurilor intercalare. Sursa: „Introducere în anatomie și fiziologie”; „Sistemul cardiovascular”, conductibilitatea și conducerea cardiacă."
+        },
+        {
+          "letter": "C",
+          "text": "mișcarea voluntară apare la nivelul mușchiului scheletic stimulat de un impuls nervos",
+          "why": "Mușchiul scheletic se află sub control voluntar și, de regulă, se contractă când este stimulat de un impuls nervos. Sursa: „Țesutul muscular”, mușchiul striat scheletic."
+        },
+        {
+          "letter": "D",
+          "text": "catabolismul și anabolismul sunt procese chimice care necesită energie",
+          "why": "Catabolismul descompune materia organică, de obicei cu producere de energie; anabolismul sintetizează materie organică și necesită energie. Varianta nu respectă această diferență. Sursa: „Introducere în anatomie și fiziologie”, metabolismul."
+        },
+        {
+          "letter": "E",
+          "text": "ficatul excretă unii produși rezultați din degradarea hemoglobinei sub formă de pigmenți biliari",
+          "why": "Hemul hemoglobinei este transformat în biliverdină și apoi bilirubină. Bilirubina ajunge la ficat și este excretată în bilă. Sursa: „Sângele”; „Sistemul digestiv”, degradarea hemoglobinei și bila."
+        }
+      ],
+      "sourcePages": [
+        277
+      ],
+      "topicId": "functii",
+      "topicLabel": "Funcțiile organismului",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#functii",
+      "id": "asoc-321"
+    },
+    {
+      "number": 322,
+      "sourceNumber": 322,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la mușchiul cardiac:",
+      "correct": [
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este alcătuit din fibre musculare striate cu numeroși nuclei situați sub sarcolemă",
+          "why": "Mușchiul cardiac este striat, dar tabelul îi atribuie un nucleu central. Numeroșii nuclei periferici sunt caracteristici fibrei striate scheletice. Sursa: „Țesutul muscular”, tabelul 8.1."
+        },
+        {
+          "letter": "B",
+          "text": "are viteză de contracție intermediară între a mușchiului neted și cea a mușchiului striat scheletic",
+          "why": "Tabelul comparativ indică o viteză intermediară a contracției cardiace, între mușchiul scheletic, cel mai rapid, și cel neted, cel mai lent. Sursa: „Țesutul muscular”, tabelul 8.1."
+        },
+        {
+          "letter": "C",
+          "text": "este influențat de impulsuri venite prin sistemul nervos autonom",
+          "why": "Impulsurile simpatice cresc ritmul cardiac, iar cele parasimpatice îl încetinesc; sistemul autonom influențează astfel activitatea inimii. Sursa: „Organizarea sistemului nervos”, controlul autonom al inimii."
+        },
+        {
+          "letter": "D",
+          "text": "are cea mai mare capacitate de a rămâne contractat",
+          "why": "Capacitatea cea mai mare de a rămâne contractat este atribuită mușchiului neted. Mușchiul cardiac ocupă poziția intermediară. Sursa: „Țesutul muscular”, tabelul 8.1."
+        },
+        {
+          "letter": "E",
+          "text": "se contractă sub acțiunea impulsurilor inițiate în țesutul excitoconductor",
+          "why": "Inima inițiază și distribuie impulsurile necesare contracției prin țesutul excitoconductor, începând cu nodul sinoatrial. Sursa: „Sistemul cardiovascular”, țesutul excitoconductor."
+        }
+      ],
+      "sourcePages": [
+        277
+      ],
+      "topicId": "muschiul-striat",
+      "topicLabel": "Mușchiul striat",
+      "lessonUrl": "tesutul_muscular.html#muschiul-striat",
+      "id": "asoc-322"
+    },
+    {
+      "number": 323,
+      "sourceNumber": 323,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "correct": [
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "peretele esofagului este alcătuit exclusiv din celule musculare lipsite de striații",
+          "why": "În treimea superioară a esofagului tunica musculară conține fibre striate; numai în treimea inferioară este descrisă ca exclusiv netedă. Peretele mai conține și alte tunici. Sursa: „Sistemul digestiv”, peretele tractului digestiv și esofagul."
+        },
+        {
+          "letter": "B",
+          "text": "miofibrilele din mușchiul striat scheletic sunt filamente filiforme organizate în sarcomere",
+          "why": "Textul descrie miofibrilele ca filamente filiforme din fibrele musculare și precizează organizarea lor longitudinală în sarcomere. Sursa: „Țesutul muscular”, structura celulei musculare."
+        },
+        {
+          "letter": "C",
+          "text": "citoplasma a două fibre musculare cardiace învecinate comunică prin desmozomii din discurile intercalare",
+          "why": "Comunicarea citoplasmelor celulelor cardiace învecinate este atribuită joncțiunilor gap. Desmozomii formează o legătură strânsă între celule, fără a fi numiți calea acestei comunicări. Sursa: „Sistemul cardiovascular”, discurile intercalare."
+        },
+        {
+          "letter": "D",
+          "text": "mușchiul neted se contractă numai când este stimulat de un impuls nervos provenit din aria motorie principală a lobului frontal",
+          "why": "Mușchiul neted este sub control involuntar și este coordonat de sistemul nervos autonom. Aria motorie frontală este descrisă în controlul răspunsurilor voluntare. Sursa: „Țesutul muscular”; „Organizarea sistemului nervos”, controlul motor și mușchiul neted."
+        },
+        {
+          "letter": "E",
+          "text": "miometrul este alcătuit din celule cu un singur nucleu dispus central",
+          "why": "Miometrul este stratul de mușchi netezi al peretelui uterin. Tabelul muscular atribuie fibrei netede un singur nucleu, central. Sursa: „Sistemul reproducător feminin”; „Țesutul muscular”, peretele uterin și tabelul 8.1."
+        }
+      ],
+      "sourcePages": [
+        277,
+        278
+      ],
+      "topicId": "muschiul-striat",
+      "topicLabel": "Mușchiul striat",
+      "lessonUrl": "tesutul_muscular.html#muschiul-striat",
+      "id": "asoc-323"
+    },
+    {
+      "number": 324,
+      "sourceNumber": 324,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați asocierile corecte între componentele sistemului nervos autonom și efectele lor:",
+      "correct": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "parasimpatic - contracția pupilelor și a bronhiilor",
+          "why": "Figura sistemului vegetativ indică în partea parasimpatică micșorarea pupilei și constricția bronhiilor. Sursa: „Organizarea sistemului nervos”, figura 11.10."
+        },
+        {
+          "letter": "B",
+          "text": "simpatic - contracția vezicii urinare",
+          "why": "Figura atribuie simpaticului relaxarea vezicii urinare, iar parasimpaticului contracția acesteia. Asocierea din variantă este inversată. Sursa: „Organizarea sistemului nervos”, figura 11.10."
+        },
+        {
+          "letter": "C",
+          "text": "parasimpatic - stimularea digestiei și a salivației",
+          "why": "Textul descrie stimularea digestiei prin parasimpatic, iar figura adaugă stimularea puternică a salivației. Sursa: „Organizarea sistemului nervos”, controlul vegetativ și figura 11.10."
+        },
+        {
+          "letter": "D",
+          "text": "simpatic - creșterea ritmului cardiac și vasoconstricție",
+          "why": "Creșterea ritmului cardiac și vasoconstricția sunt efecte simpatice enumerate în text pentru pregătirea organismului în situații de urgență. Sursa: „Organizarea sistemului nervos”, sistemul nervos vegetativ."
+        },
+        {
+          "letter": "E",
+          "text": "parasimpatic - stimularea eliberării sucului pancreatic",
+          "why": "Manualul atribuie eliberării sucului pancreatic control nervos prin ramurile unui nerv cranian, alături de controlul hormonal; schema parasimpaticului arată stimularea organelor digestive. Sursa: „Organizarea sistemului nervos”; „Sistemul digestiv”, controlul parasimpatic și secrețiile digestive."
+        }
+      ],
+      "sourcePages": [
+        278
+      ],
+      "topicId": "sistem-nervos-autonom",
+      "topicLabel": "Sistemul nervos autonom",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-autonom",
+      "id": "asoc-324"
+    },
+    {
+      "number": 325,
+      "sourceNumber": 325,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte despre oase:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "fibrele de colagen sunt răspunzătoare de flexibilitatea lor",
+          "why": "Hidroxiapatita conferă osului duritate, iar fibrele de colagen sunt răspunzătoare de flexibilitatea lui. Sursa: „Oasele și articulațiile”, țesutul osos."
+        },
+        {
+          "letter": "B",
+          "text": "conțin o matrice alcătuită din cristale de hidroxiapatită",
+          "why": "Textul descrie cristalele de hidroxiapatită înglobate într-o matrice alcătuită din fibre de colagen. Varianta înlocuiește componenta descrisă drept matrice cu cristalele înglobate în ea. Sursa: „Oasele și articulațiile”, țesutul osos."
+        },
+        {
+          "letter": "C",
+          "text": "depozitează calciu și fosfați",
+          "why": "Calciul și fosfații sunt depozitați în os când sunt disponibili în cantitate suficientă și sunt eliberați când organismul are nevoie de ei. Sursa: „Oasele și articulațiile”, depozitarea mineralelor."
+        },
+        {
+          "letter": "D",
+          "text": "creșterea lor în lungime se realizează pe seama depunerii de cartilaj la nivelul plăcii epifizare",
+          "why": "Placa epifizară este zona activă de cartilaj de la joncțiunea diafizei cu epifiza. Depunerea cartilajului aici îndepărtează capetele osului și permite creșterea în lungime. Sursa: „Oasele și articulațiile”, structura oaselor lungi."
+        },
+        {
+          "letter": "E",
+          "text": "cartilajul lor metafizar formează o suprafață ce facilitează deplasarea fără frecare a oaselor adiacente",
+          "why": "Suprafața care permite alunecarea fără frecare este cartilajul articular de la extremitatea epifizei. Cartilajul metafizar al plăcii epifizare are rol în creșterea în lungime. Sursa: „Oasele și articulațiile”, cartilajul articular și placa epifizară."
+        }
+      ],
+      "sourcePages": [
+        278
+      ],
+      "topicId": "osul",
+      "topicLabel": "Structura și funcțiile oaselor",
+      "lessonUrl": "oasele_si_articulatiile.html#osul",
+      "id": "asoc-325"
+    },
+    {
+      "number": 326,
+      "sourceNumber": 326,
+      "sourceChapter": "XIII",
+      "prompt": "Oasele au următoarele funcții:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "asigură protecția plămânilor și a altor organe",
+          "why": "Tabelul funcțiilor oaselor include protecția encefalului, a plămânilor și a altor organe. Sursa: „Oasele și articulațiile”, tabelul 6.1."
+        },
+        {
+          "letter": "B",
+          "text": "împreună cu mușchii netezi, schimbă poziția organismului",
+          "why": "Menținerea sau schimbarea poziției organismului se realizează împreună cu mușchii scheletici, nu cu mușchii netezi. Sursa: „Oasele și articulațiile”, tabelul 6.1."
+        },
+        {
+          "letter": "C",
+          "text": "servesc drept depozit de minerale",
+          "why": "Stocarea mineralelor este una dintre funcțiile oaselor; textul exemplifică prin calciu și fosfați. Sursa: „Oasele și articulațiile”, tabelul 6.1 și țesutul osos."
+        },
+        {
+          "letter": "D",
+          "text": "ancorează mușchii scheletici",
+          "why": "Oasele asigură suport și ancorare pentru mușchi; mișcarea este realizată în asociere cu mușchii scheletici. Sursa: „Oasele și articulațiile”, tabelul 6.1."
+        },
+        {
+          "letter": "E",
+          "text": "ajută, în mod direct, la menținerea echilibrului hidric al organismului",
+          "why": "Tabelul precizează că oasele ajută indirect la menținerea echilibrului hidric, prin rolul lor de depozit mineral. Varianta schimbă „indirect” în „direct”. Sursa: „Oasele și articulațiile”, tabelul 6.1."
+        }
+      ],
+      "sourcePages": [
+        278
+      ],
+      "topicId": "osul",
+      "topicLabel": "Structura și funcțiile oaselor",
+      "lessonUrl": "oasele_si_articulatiile.html#osul",
+      "id": "asoc-326"
+    },
+    {
+      "number": 327,
+      "sourceNumber": 327,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "correct": [
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "compartimentul anterior al ochiului refractă lumina prin intermediul umorii vitroase",
+          "why": "Compartimentul anterior conține umoare apoasă. Umoarea vitroasă se află în compartimentul posterior, între cristalin și retină. Sursa: „Organele de simț”, compartimentele ochiului."
+        },
+        {
+          "letter": "B",
+          "text": "camera anterioară a ochiului se află între iris și cornee",
+          "why": "Camera anterioară este regiunea compartimentului anterior situată între iris și cornee. Sursa: „Organele de simț”, camerele ochiului."
+        },
+        {
+          "letter": "C",
+          "text": "miopia se corectează prin utilizarea ochelarilor cu lentile biconcave",
+          "why": "În miopie imaginea se formează în fața retinei; manualul indică lentile biconcave pentru focalizarea imaginii pe retină. Sursa: „Organele de simț”, tulburările de vedere."
+        },
+        {
+          "letter": "D",
+          "text": "irisul este alcătuit din două straturi de mușchi striați",
+          "why": "Irisul conține două straturi de mușchi netezi, constrictor și dilatator, nu mușchi striați. Sursa: „Organele de simț”, irisul."
+        },
+        {
+          "letter": "E",
+          "text": "stratul mijlociu al globului ocular este avascular, fiind reprezentat de coroidă",
+          "why": "Stratul mijlociu este bogat vascularizat și cuprinde coroida, irisul și corpii ciliari. „Avascular” contrazice descrierea sa. Sursa: „Organele de simț”, tunica mijlocie a ochiului."
+        }
+      ],
+      "sourcePages": [
+        278
+      ],
+      "topicId": "ochiul-si-vederea",
+      "topicLabel": "Ochiul și vederea",
+      "lessonUrl": "organele_de_simt.html#ochiul-si-vederea",
+      "id": "asoc-327"
+    },
+    {
+      "number": 328,
+      "sourceNumber": 328,
+      "sourceChapter": "XIII",
+      "prompt": "La nivelul bulbului rahidian există:",
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "fibre descendente, dintre care unele formează decusația piramidală",
+          "why": "Toate fibrele descendente trec prin bulb, iar unele se încrucișează și formează decusația piramidală. Sursa: „Organizarea sistemului nervos”, bulbul rahidian."
+        },
+        {
+          "letter": "B",
+          "text": "centri de control ai frecvenței cardiace și vasoconstricției",
+          "why": "Nucleii bulbari sunt prezentați drept centri de control pentru frecvența cardiacă, vasoconstricție și alte activități. Sursa: „Organizarea sistemului nervos”, bulbul rahidian."
+        },
+        {
+          "letter": "C",
+          "text": "formațiunea reticulată, ce se extinde pe toată lungimea măduvei spinării",
+          "why": "Manualul descrie formațiunea reticulară din bulb ca extinzându-se în punte și mezencefal. Nu îi atribuie aici extinderea pe toată lungimea măduvei din variantă. Sursa: „Organizarea sistemului nervos”, formațiunea reticulară."
+        },
+        {
+          "letter": "D",
+          "text": "arii senzoriale care analizează stimulii periferici",
+          "why": "Ariile senzoriale care interpretează impulsurile sunt descrise la emisferele cerebrale. Formațiunea reticulară bulbară pregătește cortexul pentru această interpretare. Sursa: „Organizarea sistemului nervos”, ariile senzoriale și formațiunea reticulară."
+        },
+        {
+          "letter": "E",
+          "text": "originea aparentă a nervilor cranieni IX, X, XI, XII",
+          "why": "Tabelul nervilor cranieni indică bulbul rahidian ca origine pentru glosofaringian (IX), vag (X), accesor (XI) și hipoglos (XII). Sursa: „Organizarea sistemului nervos”, tabelul nervilor cranieni."
+        }
+      ],
+      "sourcePages": [
+        278
+      ],
+      "topicId": "sistem-nervos-central",
+      "topicLabel": "Sistemul nervos central",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-central",
+      "id": "asoc-328"
+    },
+    {
+      "number": 329,
+      "sourceNumber": 329,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la neuroni:",
+      "correct": [
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "formează rădăcina posterioară, motorie, a nervului spinal",
+          "why": "Rădăcina posterioară este senzorială, iar rădăcina anterioară este motorie. Varianta numește greșit rădăcina posterioară „motorie”. Sursa: „Organizarea sistemului nervos”, rădăcinile nervilor spinali."
+        },
+        {
+          "letter": "B",
+          "text": "este bipolar atunci când are două prelungiri - o dendrită și un axon",
+          "why": "Neuronul bipolar are un axon și o singură dendrită, deci două prelungiri. Sursa: „Țesutul nervos”, clasificarea structurală a neuronilor."
+        },
+        {
+          "letter": "C",
+          "text": "conține vezicule cu neurotransmițători la nivelul corpului neuronal",
+          "why": "Veziculele sinaptice cu neurotransmițători sunt localizate în manual în butonii terminali ai axonului. Acesta este reperul folosit de barem, care exclude localizarea din variantă. Sursa: „Țesutul nervos”, corpul neuronal și butonii terminali."
+        },
+        {
+          "letter": "D",
+          "text": "potențialul său de repaus este menținut și prin acțiunea pompei de sodiu-potasiu",
+          "why": "Pompa sodiu-potasiu scoate trei ioni de sodiu și introduce doi ioni de potasiu, folosind ATP. Ea contribuie la dezechilibrul ionic și la potențialul negativ intracelular. Sursa: „Țesutul nervos”, potențialul membranei neuronale."
+        },
+        {
+          "letter": "E",
+          "text": "poate forma o sinapsă cu efectorii în sistemul nervos central",
+          "why": "Manualul definește efectorii ca mușchi și glande și arată că mesajele ajung la ei prin sistemul periferic. Sinapsa cu efectorul nu este localizată în sistemul central în această schemă. Sursa: „Țesutul nervos”; „Organizarea sistemului nervos”, sinapsa și sistemul nervos periferic."
+        }
+      ],
+      "sourcePages": [
+        278
+      ],
+      "topicId": "organizare",
+      "topicLabel": "Neuronii și neuroglia",
+      "lessonUrl": "tesutul_nervos.html#organizare",
+      "id": "asoc-329"
+    },
+    {
+      "number": 330,
+      "sourceNumber": 330,
+      "sourceChapter": "XIII",
+      "prompt": "Globul ocular prezintă următoarele tunici:",
+      "correct": [
+        "A",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "tunica internă, care conține fotoreceptorii",
+          "why": "Tunica internă este retina, care conține receptorii vizuali: celulele cu conuri și cu bastonașe. Sursa: „Organele de simț”, tunica internă a globului ocular."
+        },
+        {
+          "letter": "B",
+          "text": "tunica ciliară, ce conține corpul ciliar",
+          "why": "Manualul distinge tunica externă fibroasă, tunica mijlocie vascularizată și retina. Corpul ciliar aparține tunicii mijlocii; nu definește o tunică separată numită „ciliară”. Sursa: „Organele de simț”, tunicile globului ocular."
+        },
+        {
+          "letter": "C",
+          "text": "tunica fibroasă, ce prezintă anterior o lentilă concavă",
+          "why": "Tunica fibroasă cuprinde sclera și corneea. Figura arată corneea proeminând anterior; cristalinul, lentila descrisă în text, este biconvex și se află în spatele irisului, nu în tunica fibroasă. Sursa: „Organele de simț”, anatomia ochiului și figura 12.1."
+        },
+        {
+          "letter": "D",
+          "text": "tunica bogat vascularizată, care conține coroida",
+          "why": "Coroida este una dintre componentele stratului mijlociu bogat vascularizat al globului ocular. Sursa: „Organele de simț”, tunica mijlocie a globului ocular."
+        },
+        {
+          "letter": "E",
+          "text": "tunica fibroasă, ce prezintă corneea de care se atașează mușchii responsabili de mișcările globilor oculari",
+          "why": "Mușchii extrinseci ai ochiului se atașează de scleră, potrivit tabelului, nu de cornee. Sursa: „Organele de simț”, tabelul 12.2."
+        }
+      ],
+      "sourcePages": [
+        278
+      ],
+      "topicId": "ochiul-si-vederea",
+      "topicLabel": "Ochiul și vederea",
+      "lessonUrl": "organele_de_simt.html#ochiul-si-vederea",
+      "id": "asoc-330"
+    },
+    {
+      "number": 331,
+      "sourceNumber": 331,
+      "sourceChapter": "XIII",
+      "prompt": "Secreția endocrină a pancreasului conține:",
+      "correct": [
+        "B",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "glucagon, ce facilitează introducerea glucozei în celule",
+          "why": "Insulina stimulează introducerea glucozei în celule. Glucagonul stimulează degradarea glicogenului hepatic și crește glicemia. Sursa: „Sistemul endocrin”, hormonii pancreatici."
+        },
+        {
+          "letter": "B",
+          "text": "insulină, ce duce la scăderea cantității de glucoză în sânge",
+          "why": "Prin stimularea intrării glucozei în celule, insulina scade nivelul sanguin al glucozei. Sursa: „Sistemul endocrin”, insulina."
+        },
+        {
+          "letter": "C",
+          "text": "hormoni a căror secreție este stimulată de adenohipofiză",
+          "why": "Reglarea descrisă pentru hormonii pancreatici este legată de aportul alimentar și de glicemie. Lista hormonilor tropi adenohipofizari prezintă tiroida, corticosuprarenala și gonadele, nu stimularea secreției endocrine pancreatice. Sursa: „Sistemul endocrin”, hormonii hipofizari și pancreatici."
+        },
+        {
+          "letter": "D",
+          "text": "un hormon proteic format din 51 de aminoacizi",
+          "why": "Insulina este o proteină alcătuită din 51 de aminoacizi, organizați în două lanțuri. Sursa: „Sistemul endocrin”, insulina."
+        },
+        {
+          "letter": "E",
+          "text": "hormoni secretați de celulele alfa și beta din insulele Langerhans",
+          "why": "Insulina este produsă de celulele beta, iar glucagonul de celulele alfa ale insulelor Langerhans. Sursa: „Sistemul endocrin”, insulele Langerhans."
+        }
+      ],
+      "sourcePages": [
+        278,
+        279
+      ],
+      "topicId": "pancreasul",
+      "topicLabel": "Pancreasul endocrin",
+      "lessonUrl": "sistemul_endocrin.html#pancreasul",
+      "id": "asoc-331"
+    },
+    {
+      "number": 332,
+      "sourceNumber": 332,
+      "sourceChapter": "XIII",
+      "prompt": "Grupele sanguine se caracterizează prin:",
+      "correct": [
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "anticorpi anti-A și anti-B pe membrana hematiei persoanelor de grupă AB",
+          "why": "Eritrocitele grupei AB au antigenele A și B pe membrană. Anticorpii anti-A și anti-B nu sunt aceste molecule, iar persoanele AB nu îi au în ser. Sursa: „Sângele”, grupele sanguine ABO."
+        },
+        {
+          "letter": "B",
+          "text": "antigen A în plasma persoanelor de grupă A",
+          "why": "În prezentarea grupelor ABO, antigenul A este localizat pe suprafața eritrocitelor persoanelor de grupă A, nu în plasmă. Sursa: „Sângele”, grupele sanguine ABO."
+        },
+        {
+          "letter": "C",
+          "text": "anticorpi naturali anti-Rh în sângele persoanelor de grupă 0, Rh⁺",
+          "why": "Rh-pozitiv înseamnă prezența antigenului Rh pe eritrocite. Manualul descrie formarea anticorpilor anti-Rh după stimularea sistemului imun de către celule Rh-pozitive, nu drept anticorpi naturali ai grupei 0 Rh-pozitiv. Sursa: „Sângele”, factorul Rh."
+        },
+        {
+          "letter": "D",
+          "text": "lipsa antigenelor A și B pe membrana hematiei în sângele persoanelor de grupă 0",
+          "why": "Grupa 0 este definită prin lipsa antigenelor A și B de pe eritrocite. Sursa: „Sângele”, grupele sanguine ABO."
+        },
+        {
+          "letter": "E",
+          "text": "anticorpi anti-B în sângele persoanelor de grupă B",
+          "why": "Persoanele de grupă B au anticorpi anti-A. Anticorpii anti-B sunt descriși la grupa A și la grupa 0. Sursa: „Sângele”, grupele sanguine ABO."
+        }
+      ],
+      "sourcePages": [
+        279
+      ],
+      "topicId": "grupele-sanguine",
+      "topicLabel": "Grupele sanguine",
+      "lessonUrl": "sangele.html#grupele-sanguine",
+      "id": "asoc-332"
+    },
+    {
+      "number": 333,
+      "sourceNumber": 333,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați răspunsurile corecte:",
+      "correct": [
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "neuronii motori, senzitivi și de asociație sunt prezenți atât în sistemul nervos central cât și în cel periferic",
+          "why": "Manualul precizează explicit că interneuronii, sau neuronii de asociație, se găsesc numai în sistemul nervos central. Varianta îi plasează și în periferie. Sursa: „Țesutul nervos”, clasificarea funcțională a neuronilor."
+        },
+        {
+          "letter": "B",
+          "text": "ganglionii nervilor spinali formează lanțul ganglionar localizat lateral de coloana vertebrală",
+          "why": "Ganglionii rădăcinilor dorsale conțin corpii neuronilor senzoriali. Lanțurile ganglionare sunt descrise separat la componenta simpatică a sistemului vegetativ. Sursa: „Organizarea sistemului nervos”, ganglionii spinali și simpatici."
+        },
+        {
+          "letter": "C",
+          "text": "sistemul parasimpatic are origine la nivel cranio-sacral",
+          "why": "Originea parasimpaticului este indicată în tabel ca fiind cranio-sacrală, din trunchiul cerebral și măduva spinării. Sursa: „Organizarea sistemului nervos”, tabelul 11.5."
+        },
+        {
+          "letter": "D",
+          "text": "nervii cranieni prezintă fiecare câte o rădăcină senzitivă și una motorie",
+          "why": "Nervii cranieni pot fi senzoriali, motori sau micști. Nu fiecare are simultan o componentă senzorială și una motorie ca în formularea variantei. Sursa: „Organizarea sistemului nervos”, comparația nervilor cranieni și spinali."
+        },
+        {
+          "letter": "E",
+          "text": "impulsurile nervoase transmise prin fibre motorii pot controla mușchii striați și mușchii netezi",
+          "why": "Fibrele eferente somatice inervează mușchii scheletici, iar cele autonome inervează mușchii netezi, miocardul și glandele. Sursa: „Organizarea sistemului nervos”, fibrele nervoase eferente."
+        }
+      ],
+      "sourcePages": [
+        279
+      ],
+      "topicId": "sistem-nervos-central",
+      "topicLabel": "Sistemul nervos central",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-central",
+      "id": "asoc-333"
+    },
+    {
+      "number": 334,
+      "sourceNumber": 334,
+      "sourceChapter": "XIII",
+      "prompt": "Componentele sistemului nervos central au următoarele caracteristici morfologice:",
+      "correct": [
+        "A",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "encefalul și măduva spinării sunt învelite de trei straturi meningeale",
+          "why": "Măduva spinării este învelită de dura mater, arahnoidă și pia mater. Encefalul este, la rândul său, acoperit de meninge. Sursa: „Organizarea sistemului nervos”, meningele."
+        },
+        {
+          "letter": "B",
+          "text": "măduva spinării transmite informații mușchilor striați prin rădăcina anterioară",
+          "why": "Afirmația descrie transmiterea comenzilor motorii, deci o funcție. Enunțul cere caracteristici morfologice; aceasta explică excluderea sa din barem, fără a nega rolul rădăcinii anterioare. Sursa: „Organizarea sistemului nervos”, rădăcinile nervilor spinali."
+        },
+        {
+          "letter": "C",
+          "text": "encefalul dispune de o rețea bogată de capilare",
+          "why": "Encefalul dispune de o vastă rețea de capilare, implicată în schimburile nutritive și gazoase și în îndepărtarea produșilor reziduali. Sursa: „Organizarea sistemului nervos”, encefalul."
+        },
+        {
+          "letter": "D",
+          "text": "trunchiul cerebral este localizat posterior de cerebel, fiind separați prin ventriculul IV",
+          "why": "Raportul este inversat: cerebelul este situat înapoia trunchiului cerebral, conform textului. Sursa: „Organizarea sistemului nervos”, cerebelul."
+        },
+        {
+          "letter": "E",
+          "text": "encefalul consumă 25 % din cantitatea totală de oxigen",
+          "why": "Manualul indică aproximativ 25% din consumul total de oxigen pentru encefal. Aceasta este însă o caracteristică funcțională/metabolică, nu una morfologică, iar baremul cerinței o exclude. Sursa: „Organizarea sistemului nervos”, encefalul."
+        }
+      ],
+      "sourcePages": [
+        279
+      ],
+      "topicId": "sistem-nervos-central",
+      "topicLabel": "Sistemul nervos central",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-central",
+      "id": "asoc-334"
+    },
+    {
+      "number": 335,
+      "sourceNumber": 335,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați asocierile corecte:",
+      "correct": [
+        "A",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "artera aortă - presiune sanguină 120/80 mm Hg",
+          "why": "Manualul prezintă valorile de aproximativ 120 mmHg în sistolă și 80 mmHg în diastolă pentru presiunea arterială. Baremul include asocierea cu aorta, artera care primește sângele din ventriculul stâng. Sursa: „Sistemul cardiovascular”, presiunea arterială și aorta."
+        },
+        {
+          "letter": "B",
+          "text": "vena portă - sânge cu cantități crescute de oxigen și nutrienți absorbiți intestinal",
+          "why": "Vena portă transportă nutrienții absorbiți intestinal la ficat, după trecerea sângelui prin capilarele digestive. Aportul hepatic de oxigen este prezentat separat prin artera hepatică; varianta asociază greșit vena portă cu sângele bogat în oxigen. Sursa: „Sistemul digestiv”, circulația hepatică."
+        },
+        {
+          "letter": "C",
+          "text": "artera carotidă comună dreaptă - origine în trunchiul brahiocefalic",
+          "why": "Figura arterelor arată trunchiul brahiocefalic împărțindu-se către cap și membrul superior drept; carotida comună stângă pornește separat din arcul aortic. Sursa: „Sistemul cardiovascular”, figura 15.9."
+        },
+        {
+          "letter": "D",
+          "text": "vena subclaviculară dreaptă - drenajul ductului toracic",
+          "why": "Ductul toracic se varsă în vena subclaviculară stângă. În dreapta se varsă ductul limfatic drept. Sursa: „Sistemul limfatic și imun”, ductele limfatice."
+        },
+        {
+          "letter": "E",
+          "text": "vena renală stângă - drenajul venei gonadale stângi",
+          "why": "În schema venelor, vena gonadală stângă se unește cu vena renală stângă înainte ca sângele să ajungă în vena cavă inferioară. Sursa: „Sistemul cardiovascular”, figura 15.10."
+        }
+      ],
+      "sourcePages": [
+        279
+      ],
+      "topicId": "vasele-sanguine",
+      "topicLabel": "Vasele sanguine",
+      "lessonUrl": "sistemul_cardiovascular.html#vasele-sanguine",
+      "id": "asoc-335"
+    },
+    {
+      "number": 336,
+      "sourceNumber": 336,
+      "sourceChapter": "XIII",
+      "prompt": "Alegeți enunțurile corecte referitoare la structurile limfatice:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "vena limfatică dreaptă drenează sfertul inferior drept al organismului",
+          "why": "Ductul limfatic drept drenează jumătatea dreaptă supradiafragmatică. Regiunea inferioară a corpului este drenată de ductul toracic. Sursa: „Sistemul limfatic și imun”, ductele limfatice."
+        },
+        {
+          "letter": "B",
+          "text": "vasele limfatice transportă limfa de la țesuturi spre sistemul venos",
+          "why": "Tabelul atribuie vaselor limfatice transportul limfei de la țesuturile periferice la venele sistemului cardiovascular. Sursa: „Sistemul limfatic și imun”, tabelul 16.1."
+        },
+        {
+          "letter": "C",
+          "text": "nodulii limfatici sunt stații obligatorii pentru circulația limfei",
+          "why": "Manualul precizează că, înainte de întoarcerea în circulație, limfa trece prin nodulii limfatici pentru filtrare. Sursa: „Sistemul limfatic și imun”, nodulii limfatici."
+        },
+        {
+          "letter": "D",
+          "text": "timusul asigură maturarea limfocitelor T prin intermediul timozinelor",
+          "why": "Timusul produce timozine, hormoni care contribuie la maturarea limfocitelor T. Sursa: „Sistemul limfatic și imun”, timusul."
+        },
+        {
+          "letter": "E",
+          "text": "splina monitorizează compoziția limfei",
+          "why": "Splina monitorizează sângele circulant. Monitorizarea compoziției limfei este atribuită nodulilor limfatici. Sursa: „Sistemul limfatic și imun”, tabelul 16.1."
+        }
+      ],
+      "sourcePages": [
+        279
+      ],
+      "topicId": "sistemul-limfatic",
+      "topicLabel": "Sistemul limfatic",
+      "lessonUrl": "sistemul_limfatic_si_imun.html#sistemul-limfatic",
+      "id": "asoc-336"
+    },
+    {
+      "number": 337,
+      "sourceNumber": 337,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la volumele pulmonare:",
+      "correct": [
+        "A",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "volumul curent este de aproximativ 500 ml aer",
+          "why": "Volumul curent reprezintă aproximativ 500 ml de aer care intră și ies din plămâni în repaus, la respirația normală. Sursa: „Sistemul respirator”, volumele pulmonare."
+        },
+        {
+          "letter": "B",
+          "text": "prin inspirație forțată se mai pot introduce în plămâni aproximativ 2500-3500 ml oxigen",
+          "why": "Manualul indică 2.500–3.500 ml de aer suplimentar la inspirația forțată, nu acest volum de oxigen. Varianta înlocuiește aerul cu un singur component al său. Sursa: „Sistemul respirator”, volumele pulmonare."
+        },
+        {
+          "letter": "C",
+          "text": "volumul rezidual reprezintă aproximativ 2000 ml de aer",
+          "why": "Volumul rezidual indicat în manual este de aproximativ 1.000 ml de aer, nu 2.000 ml. Sursa: „Sistemul respirator”, volumele pulmonare."
+        },
+        {
+          "letter": "D",
+          "text": "după o expirație forțată, în plămâni rămân 3000 ml de aer",
+          "why": "După expirația forțată rămân aproximativ 1.000 ml de aer, volumul rezidual. Valoarea de 3.000 ml nu corespunde textului. Sursa: „Sistemul respirator”, volumele pulmonare."
+        },
+        {
+          "letter": "E",
+          "text": "volumul maxim de aer ce poate fi schimbat la nivel pulmonar reprezintă capacitatea vitală pulmonară",
+          "why": "Capacitatea vitală este definită ca volumul maxim de aer care poate fi schimbat la nivel pulmonar, prin inspirație și expirație forțată. Sursa: „Sistemul respirator”, volumele pulmonare."
+        }
+      ],
+      "sourcePages": [
+        279
+      ],
+      "topicId": "respiratie",
+      "topicLabel": "Ventilația și volumele pulmonare",
+      "lessonUrl": "sistemul_respirator.html#respiratie",
+      "id": "asoc-337"
+    },
+    {
+      "number": 338,
+      "sourceNumber": 338,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați asocierile corecte dintre structurile proteice și rolul lor:",
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "hemoglobina - transportul de O₂",
+          "why": "Hemoglobina este pigmentul eritrocitar care leagă oxigenul și îl transportă spre țesuturi, inclusiv spre fibrele musculare. Sursa: „Sângele”; „Țesutul muscular”, hemoglobina și aportul muscular de oxigen."
+        },
+        {
+          "letter": "B",
+          "text": "STH - favorizarea creșterii organismului prin stimularea sintezei de proteine",
+          "why": "Hormonul somatotrop stimulează introducerea aminoacizilor în celule și sinteza proteică, accelerând creșterea organismului. Sursa: „Sistemul endocrin”, hormonul de creștere."
+        },
+        {
+          "letter": "C",
+          "text": "trombina - convertirea fibrinei în fibrinogen",
+          "why": "Sensul transformării este inversat: trombina convertește fibrinogenul în fibrină. Sursa: „Sângele”, coagularea sângelui."
+        },
+        {
+          "letter": "D",
+          "text": "mioglobina - fixarea CO",
+          "why": "Rolul atribuit mioglobinei în manual este legarea și depozitarea temporară a oxigenului în fibra musculară, nu fixarea monoxidului de carbon. Sursa: „Țesutul muscular”, mioglobina."
+        },
+        {
+          "letter": "E",
+          "text": "insulina - singurul hormon ce scade glicemia",
+          "why": "Insulina favorizează intrarea glucozei în celule și scade glicemia. Manualul o opune glucagonului, care crește glicemia; baremul include E. Aceste pasaje susțin efectul insulinei, dar nu demonstrează separat termenul absolut „singurul”, folosit în variantă. Sursa: „Sistemul endocrin”, controlul hormonal al glicemiei."
+        }
+      ],
+      "sourcePages": [
+        279,
+        280
+      ],
+      "topicId": "descrierea-generala-a-hormonilor",
+      "topicLabel": "Hormonii",
+      "lessonUrl": "sistemul_endocrin.html#descrierea-generala-a-hormonilor",
+      "id": "asoc-338"
+    },
+    {
+      "number": 339,
+      "sourceNumber": 339,
+      "sourceChapter": "XIII",
+      "prompt": "Nefronul prezintă:",
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "o parte în corticala renală, alta în medulară",
+          "why": "Legenda structurii renale arată că tubii coboară în medulară și se întorc în cortex; nefronul are porțiuni în ambele regiuni. Sursa: „Sistemul urinar”, figurile 20.2 și 20.4, legende."
+        },
+        {
+          "letter": "B",
+          "text": "glomerulul înconjurat de capsula Bowman",
+          "why": "Capsula glomerulară, sau Bowman, înconjoară glomerulul; manualul ilustrează relația prin comparația cu un pumn împins într-un balon. Sursa: „Sistemul urinar”, structura nefronului."
+        },
+        {
+          "letter": "C",
+          "text": "ansa Henle ce pătrunde profund în corticala renală",
+          "why": "Ansa și tubii coboară în medulara rinichiului și se întorc spre cortex. Varianta inversează regiunea în care ansa pătrunde profund. Sursa: „Sistemul urinar”, figurile 20.2 și 20.4, legende."
+        },
+        {
+          "letter": "D",
+          "text": "tub contort proximal la nivelul căruia acționează aldosteronul și ADH-ul",
+          "why": "ADH controlează reabsorbția apei în tubul distal și colector, iar aldosteronul acționează în principal asupra tubului distal. Varianta indică greșit tubul proximal. Sursa: „Sistemul urinar”, activitatea hormonală renală."
+        },
+        {
+          "letter": "E",
+          "text": "sistem tubular înconjurat de rețea capilară peritubulară",
+          "why": "Arteriola eferentă formează rețeaua capilarelor peritubulare, dispusă în jurul tubilor nefronului. Sursa: „Sistemul urinar”, circulația nefronului."
+        }
+      ],
+      "sourcePages": [
+        280
+      ],
+      "topicId": "nefron",
+      "topicLabel": "Nefronul și formarea urinei",
+      "lessonUrl": "sistemul_renal_complet.html#nefron",
+      "id": "asoc-339"
+    },
+    {
+      "number": 340,
+      "sourceNumber": 340,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați asocierile corecte:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "anticorpii de grup sanguin anti-A și anti-B - prezenți pe suprafața hematiilor",
+          "why": "Anticorpii anti-A și anti-B sunt descriși în ser. Pe eritrocite se găsesc antigenele de grup sanguin, nu acești anticorpi. Sursa: „Sângele”, grupele sanguine."
+        },
+        {
+          "letter": "B",
+          "text": "macrofagele - celule fagocitare",
+          "why": "Monocitele se transformă în țesuturi în macrofage, celule fagocitare mari care înglobează microorganisme. Sursa: „Sângele”, monocitele și macrofagele."
+        },
+        {
+          "letter": "C",
+          "text": "trombocitele - rol în hemostază și coagulare",
+          "why": "Plachetele formează agregate la nivelul leziunilor vasculare și participă la mecanismul coagulării. Sursa: „Sângele”, plachetele sanguine."
+        },
+        {
+          "letter": "D",
+          "text": "limfocitele - celule cheie în reacțiile complexe ale sistemului imun",
+          "why": "Manualul numește limfocitele celule cheie în reacțiile complexe ale sistemului imun. Sursa: „Sângele”, limfocitele."
+        },
+        {
+          "letter": "E",
+          "text": "eritrocitele - elemente figurate fără nucleu, ca și leucocitele",
+          "why": "Eritrocitele mature își pierd nucleul în cursul formării. Leucocitele nu împărtășesc această caracteristică: textul descrie, de exemplu, nucleul mare al monocitelor. Sursa: „Sângele”, eritrocitele și monocitele."
+        }
+      ],
+      "sourcePages": [
+        280
+      ],
+      "topicId": "globulele-albe",
+      "topicLabel": "Elementele figurate",
+      "lessonUrl": "sangele.html#globulele-albe",
+      "id": "asoc-340"
+    },
+    {
+      "number": 341,
+      "sourceNumber": 341,
+      "sourceChapter": "XIII",
+      "prompt": "Fibrinogenul:",
+      "correct": [
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este o proteină prezentă în serul sanguin",
+          "why": "Fibrinogenul este o proteină plasmatică implicată în coagulare. Serul este lichidul rămas după formarea cheagului, din care fibrinogenul a fost îndepărtat. Sursa: „Sângele”, plasma și coagularea."
+        },
+        {
+          "letter": "B",
+          "text": "reprezintă aproximativ 40 % din totalul proteinelor plasmatice",
+          "why": "Fibrinogenul reprezintă aproximativ 7% din proteinele plasmatice. Proporția de 40% este atribuită globulinelor. Sursa: „Sângele”, proteinele plasmatice."
+        },
+        {
+          "letter": "C",
+          "text": "este sintetizat de ficat",
+          "why": "Manualul precizează că fibrinogenul este produs de ficat. Sursa: „Sângele”, fibrinogenul."
+        },
+        {
+          "letter": "D",
+          "text": "participă la procesul de coagulare, transformându-se în fibrină insolubilă",
+          "why": "Trombina transformă fibrinogenul solubil în fibrină fibrilară, insolubilă, ale cărei filamente participă la formarea cheagului. Sursa: „Sângele”, coagularea sângelui."
+        },
+        {
+          "letter": "E",
+          "text": "este o proteină plasmatică ce transportă hormoni și acizi grași",
+          "why": "Transportul acizilor grași și al hormonilor este atribuit albuminelor, nu fibrinogenului. Sursa: „Sângele”, proteinele plasmatice."
+        }
+      ],
+      "sourcePages": [
+        280
+      ],
+      "topicId": "plasma",
+      "topicLabel": "Sângele și plasma",
+      "lessonUrl": "sangele.html#plasma",
+      "id": "asoc-341"
+    },
+    {
+      "number": 342,
+      "sourceNumber": 342,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele afirmații cu privire la sistemul respirator sunt corecte:",
+      "correct": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "asigură schimbul de oxigen și dioxid de carbon între celulele corpului și mediul extern",
+          "why": "Manualul definește rolul sistemului respirator prin schimbul de oxigen și dioxid de carbon între celulele organismului și mediul extern. Sursa: „Sistemul respirator”, rolul sistemului respirator."
+        },
+        {
+          "letter": "B",
+          "text": "porțiunea sa respiratorie este formată din cavități nazale și trahee",
+          "why": "Cavitățile nazale și traheea conduc aerul. Schimburile de gaze ale porțiunii respiratorii au loc la nivelul alveolelor. Sursa: „Sistemul respirator”, porțiunile sistemului respirator."
+        },
+        {
+          "letter": "C",
+          "text": "asigură oxigenarea sângelui ce părăsește plămânii prin venele pulmonare",
+          "why": "Venele pulmonare transportă de la plămâni spre inimă sângele îmbogățit în oxigen. Sursa: „Sistemul respirator”, circulația pulmonară."
+        },
+        {
+          "letter": "D",
+          "text": "suprafața fiecărui plămân este acoperită de stratul intern al pleurei",
+          "why": "Pleura viscerală este stratul intern care acoperă suprafața fiecărui plămân și pătrunde în fisurile dintre lobi. Sursa: „Sistemul respirator”, pleura."
+        },
+        {
+          "letter": "E",
+          "text": "bronhia dreaptă are o poziție mai verticală comparativ cu cea stângă",
+          "why": "Textul descrie bronhia dreaptă ca fiind mai verticală decât cea stângă. Sursa: „Sistemul respirator”, traheea și bronhiile."
+        }
+      ],
+      "sourcePages": [
+        280
+      ],
+      "topicId": "respiratie",
+      "topicLabel": "Ventilația și controlul respirației",
+      "lessonUrl": "sistemul_respirator.html#respiratie",
+      "id": "asoc-342"
+    },
+    {
+      "number": 343,
+      "sourceNumber": 343,
+      "sourceChapter": "XIII",
+      "prompt": "Alegeți afirmațiile corecte despre funcțiile sistemului reproducător feminin:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "uterul secretă concentrații importante de progesteron în timpul sarcinii",
+          "why": "În sarcină, secreția de progesteron este atribuită corpului galben și ulterior placentei. Uterul are rol de protecție și susținere a dezvoltării embrionare, nu este glanda indicată pentru această secreție. Sursa: „Sistemul reproducător feminin”, uterul și menținerea sarcinii."
+        },
+        {
+          "letter": "B",
+          "text": "trompele uterine captează oocitele eliberate din foliculii ovarieni",
+          "why": "Fimbriile mobile dirijează oocitul eliberat la ovulație în trompa uterină. Sursa: „Sistemul reproducător feminin”, ovulația."
+        },
+        {
+          "letter": "C",
+          "text": "vaginul elimină stratul funcțional al endometrului în timpul menstruației",
+          "why": "Tabelul atribuie vaginului rolul de cale de eliminare a țesuturilor endometriale și a sângelui menstrual. Sursa: „Sistemul reproducător feminin”, tabelul 23.1."
+        },
+        {
+          "letter": "D",
+          "text": "uterul asigură protecția mecanică a fătului",
+          "why": "Uterul asigură protecția mecanică a embrionului și fătului, conform tabelului funcțiilor organelor reproducătoare. Sursa: „Sistemul reproducător feminin”, tabelul 23.1."
+        },
+        {
+          "letter": "E",
+          "text": "ovarele secretă FSH și LH",
+          "why": "FSH și LH sunt produși de hipofiză, iar ovarele produc estrogeni și progesteron. Sursa: „Sistemul reproducător feminin”, hormonii ciclului reproducător."
+        }
+      ],
+      "sourcePages": [
+        280
+      ],
+      "topicId": "organe",
+      "topicLabel": "Gonadele și organele reproducătoare",
+      "lessonUrl": "sistemul_reproducator_feminin.html#organe",
+      "id": "asoc-343"
+    },
+    {
+      "number": 344,
+      "sourceNumber": 344,
+      "sourceChapter": "XIII",
+      "prompt": "Despre funcțiile elementelor figurate ale sângelui sunt adevărate următoarele:",
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "neutrofilele asigură fagocitoza la locul infecției",
+          "why": "Funcția principală atribuită neutrofilelor este fagocitoza; ele se adună rapid la locul infecției. Sursa: „Sângele”, neutrofilele."
+        },
+        {
+          "letter": "B",
+          "text": "plachetele sanguine intervin în hemostază și coagulare",
+          "why": "Plachetele formează agregate la leziunile vasculare și participă la coagulare, contribuind la oprirea sângerării. Sursa: „Sângele”, plachetele sanguine."
+        },
+        {
+          "letter": "C",
+          "text": "eritrocitele transportă oxigen și dioxid de carbon",
+          "why": "Eritrocitele transportă oxigenul prin hemoglobină; o parte din dioxidul de carbon este transportată legată de aceasta ca carbaminohemoglobină. Sursa: „Sângele”; „Sistemul respirator”, hemoglobina și transportul gazelor."
+        },
+        {
+          "letter": "D",
+          "text": "eozinofilele sunt celule bilobate, cu granulații roșii în citoplasmă",
+          "why": "Descrierea nucleului și a granulațiilor este morfologică. Cerința solicită funcțiile elementelor figurate, astfel că baremul exclude această descriere structurală. Sursa: „Sângele”, granulocitele."
+        },
+        {
+          "letter": "E",
+          "text": "bazofilele produc anticorpi",
+          "why": "Anticorpii sunt produși de plasmocitele provenite din limfocite B. Bazofilele sunt prezentate în legătură cu reacțiile alergice și inflamația. Sursa: „Sângele”, bazofilele și limfocitele B."
+        }
+      ],
+      "sourcePages": [
+        280
+      ],
+      "topicId": "globulele-albe",
+      "topicLabel": "Elementele figurate",
+      "lessonUrl": "sangele.html#globulele-albe",
+      "id": "asoc-344"
+    },
+    {
+      "number": 345,
+      "sourceNumber": 345,
+      "sourceChapter": "XIII",
+      "prompt": "Circulația limfatică este caracterizată de:",
+      "correct": [
+        "B",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "drenajul jumătății stângi supradiafragmatice prin ductul limfatic stâng",
+          "why": "Manualul numește vasul care drenează această regiune „duct toracic”, nu „duct limfatic stâng”. Baremul exclude formularea variantei; se păstrează denumirea folosită în sursă. Sursa: „Sistemul limfatic și imun”, ductele limfatice."
+        },
+        {
+          "letter": "B",
+          "text": "circulația limfei prin vase cu numeroase valve",
+          "why": "Vasele limfatice au numeroase valve care favorizează curgerea într-o singură direcție. Sursa: „Sistemul limfatic și imun”, circulația limfei."
+        },
+        {
+          "letter": "C",
+          "text": "prezența unor noduli ce asigură filtrarea sângelui",
+          "why": "Nodulii limfatici filtrează limfa. Monitorizarea sângelui este atribuită splinei. Sursa: „Sistemul limfatic și imun”, nodulii limfatici și splina."
+        },
+        {
+          "letter": "D",
+          "text": "drenajul celei mai mari părți a organismului prin ductul toracic",
+          "why": "Ductul toracic drenează regiunea subdiafragmatică și partea stângă supradiafragmatică, adică cea mai mare parte a organismului. Sursa: „Sistemul limfatic și imun”, ductele limfatice."
+        },
+        {
+          "letter": "E",
+          "text": "prezența unor structuri care drenează spațiile intercelulare",
+          "why": "Lichidul dintre celule pătrunde în capilarele limfatice și este readus spre circulația sanguină. Sursa: „Sistemul limfatic și imun”, figura 16.1, legendă."
+        }
+      ],
+      "sourcePages": [
+        280
+      ],
+      "topicId": "sistemul-limfatic",
+      "topicLabel": "Sistemul limfatic",
+      "lessonUrl": "sistemul_limfatic_si_imun.html#sistemul-limfatic",
+      "id": "asoc-345"
+    },
+    {
+      "number": 346,
+      "sourceNumber": 346,
+      "sourceChapter": "XIII",
+      "prompt": "La nivelul nefronului se asigură:",
+      "correct": [
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "secreția medicamentelor în tubii proximali",
+          "why": "În descrierea manualului, secreția medicamentelor, inclusiv a unor antibiotice, este atribuită tubului distal. Varianta o localizează în tubul proximal. Sursa: „Sistemul urinar”, secreția tubulară."
+        },
+        {
+          "letter": "B",
+          "text": "filtrarea plasmei sanguine la nivelul glomerulului și a capsulei glomerulare",
+          "why": "Presiunea sângelui determină filtrarea din capilarele glomerulare în capsula Bowman, prima etapă a formării urinei. Sursa: „Sistemul urinar”, filtrarea glomerulară."
+        },
+        {
+          "letter": "C",
+          "text": "reabsorbția pasivă a ionilor de sodiu la nivelul tubilor proximali",
+          "why": "În tubul proximal, manualul descrie transportul activ al ionilor de sodiu, nu reabsorbția pasivă formulată aici. Sursa: „Sistemul urinar”, reabsorbția tubulară."
+        },
+        {
+          "letter": "D",
+          "text": "secreția amoniacului în ansa Henle",
+          "why": "Secreția amoniacului este descrisă la tubul distal, nu la ansa Henle. Sursa: „Sistemul urinar”, secreția tubulară."
+        },
+        {
+          "letter": "E",
+          "text": "reabsorbția activă a glucozei și aminoacizilor la nivelul tubilor proximali",
+          "why": "La nivel proximal, glucoza și aminoacizii sunt reabsorbiți prin transport activ. Sursa: „Sistemul urinar”, reabsorbția tubulară."
+        }
+      ],
+      "sourcePages": [
+        281
+      ],
+      "topicId": "nefron",
+      "topicLabel": "Nefronul și formarea urinei",
+      "lessonUrl": "sistemul_renal_complet.html#nefron",
+      "id": "asoc-346"
+    },
+    {
+      "number": 347,
+      "sourceNumber": 347,
+      "sourceChapter": "XIII",
+      "prompt": "Testiculele:",
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt localizate în scrot, structură saciformă",
+          "why": "Testiculele sunt localizate în scrot, descris ca structură saciformă. Sursa: „Sistemul reproducător masculin”, testiculele și scrotul."
+        },
+        {
+          "letter": "B",
+          "text": "asigură secreția testosteronului prin celulele interstițiale",
+          "why": "Celulele interstițiale ale testiculelor secretă testosteron. Sursa: „Sistemul reproducător masculin”, structura testiculelor."
+        },
+        {
+          "letter": "C",
+          "text": "prezintă, pe marginea posterioară, ductul deferent",
+          "why": "Structura de pe marginea posterioară a testiculului este epididimul. Ductul deferent continuă epididimul. Sursa: „Sistemul reproducător masculin”, căile genitale masculine."
+        },
+        {
+          "letter": "D",
+          "text": "asigură spermatogeneza, prin care se formează gameții masculini, celule haploide",
+          "why": "Spermatogeneza produce gameți haploizi, cu 23 de cromozomi, pornind de la celule diploide. Sursa: „Sistemul reproducător masculin”, spermatogeneza."
+        },
+        {
+          "letter": "E",
+          "text": "sunt vascularizate de o ramură din aorta abdominală",
+          "why": "Figura arterelor corpului arată arterele gonadale ca ramuri ale aortei abdominale, susținând asocierea vasculară din barem. Sursa: „Sistemul cardiovascular”, figura 15.9."
+        }
+      ],
+      "sourcePages": [
+        281
+      ],
+      "topicId": "testiculele",
+      "topicLabel": "Testiculele",
+      "lessonUrl": "sistemul_reproducator_masculin.html#testiculele",
+      "id": "asoc-347"
+    },
+    {
+      "number": 348,
+      "sourceNumber": 348,
+      "sourceChapter": "XIII",
+      "prompt": "Albuminele:",
+      "correct": [
+        "A",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "mențin presiunea osmotică a sângelui",
+          "why": "Albuminele mențin presiunea osmotică a sângelui. Sursa: „Sângele”, proteinele plasmatice."
+        },
+        {
+          "letter": "B",
+          "text": "sunt sintetizate de plasmocite",
+          "why": "Sinteza albuminei este atribuită ficatului. Plasmocitele produc anticorpi. Sursa: „Sistemul digestiv”; „Sângele”, proteinele hepatice și plasmocitele."
+        },
+        {
+          "letter": "C",
+          "text": "transportă acizi grași și hormoni",
+          "why": "Manualul precizează că albuminele transportă acizi grași și hormoni. Sursa: „Sângele”, proteinele plasmatice."
+        },
+        {
+          "letter": "D",
+          "text": "sunt implicate în procesul de coagulare",
+          "why": "Proteinele implicate în coagulare sunt prezentate prin protrombină și fibrinogen. Albuminele sunt descrise prin rol osmotic și de transport. Sursa: „Sângele”; „Sistemul digestiv”, proteinele plasmatice."
+        },
+        {
+          "letter": "E",
+          "text": "pot participa la răspunsul imun",
+          "why": "În clasificarea manualului, rolul imun este atribuit gamma-globulinelor, anticorpi, iar albuminelor le sunt atribuite roluri osmotice și de transport. Sursa: „Sângele”, proteinele plasmatice."
+        }
+      ],
+      "sourcePages": [
+        281
+      ],
+      "topicId": "plasma",
+      "topicLabel": "Sângele și plasma",
+      "lessonUrl": "sangele.html#plasma",
+      "id": "asoc-348"
+    },
+    {
+      "number": 349,
+      "sourceNumber": 349,
+      "sourceChapter": "XIII",
+      "prompt": "Despre CO₂ sunt adevărate următoarele:",
+      "correct": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este adus de sângele venelor pulmonare în partea dreaptă a inimii",
+          "why": "Venele pulmonare aduc sânge oxigenat la partea stângă a inimii. Sângele bogat în CO₂ ajunge la plămâni prin arterele pulmonare. Sursa: „Sistemul respirator”, circulația pulmonară."
+        },
+        {
+          "letter": "B",
+          "text": "nivelul său din sânge este monitorizat indirect de centrii respiratori din trunchiul cerebral",
+          "why": "Centrii respiratori urmăresc indirect nivelul CO₂ prin modificarea acidității lichidului cefalorahidian. Sursa: „Sistemul respirator”, controlul respirației."
+        },
+        {
+          "letter": "C",
+          "text": "este transportat sub formă de carbaminohemoglobină",
+          "why": "O parte a CO₂ se leagă de hemoglobină și este transportată sub formă de carbaminohemoglobină. Sursa: „Sistemul respirator”, transportul dioxidului de carbon."
+        },
+        {
+          "letter": "D",
+          "text": "creșterea concentrației sale în lichidul cefalorahidian determină creșterea acidității acestuia",
+          "why": "Creșterea CO₂ determină creșterea acidității lichidului cefalorahidian, stimul care intensifică respirația. Sursa: „Sistemul respirator”, controlul respirației."
+        },
+        {
+          "letter": "E",
+          "text": "este transportat în sânge și sub formă de bicarbonat de sodiu",
+          "why": "Manualul descrie transportul CO₂ și sub formă de bicarbonat de sodiu în plasmă. Sursa: „Sistemul respirator”, transportul dioxidului de carbon."
+        }
+      ],
+      "sourcePages": [
+        281
+      ],
+      "topicId": "schimbul-de-gaze",
+      "topicLabel": "Transportul gazelor respiratorii",
+      "lessonUrl": "sistemul_respirator.html#schimbul-de-gaze",
+      "id": "asoc-349"
+    },
+    {
+      "number": 350,
+      "sourceNumber": 350,
+      "sourceChapter": "XIII",
+      "prompt": "Nodulii limfatici:",
+      "correct": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt prezenți în tot organismul",
+          "why": "Nodulii limfatici sunt descriși ca prezenți peste tot în organism. Sursa: „Sistemul limfatic și imun”, distribuția nodulilor limfatici."
+        },
+        {
+          "letter": "B",
+          "text": "prezintă vase limfatice aferente și eferente",
+          "why": "Vasele aferente aduc limfa în nodul, iar cele eferente o drenează din nodul. Sursa: „Sistemul limfatic și imun”, nodulii limfatici."
+        },
+        {
+          "letter": "C",
+          "text": "sunt localizați de-a lungul vaselor mari de sânge din abdomen",
+          "why": "Textul menționează explicit noduli situați de-a lungul marilor vase sanguine din cavitatea abdominală. Sursa: „Sistemul limfatic și imun”, distribuția nodulilor limfatici."
+        },
+        {
+          "letter": "D",
+          "text": "monitorizează compoziția sângelui",
+          "why": "Nodulii monitorizează compoziția limfei; splina monitorizează sângele circulant. Sursa: „Sistemul limfatic și imun”, tabelul 16.1."
+        },
+        {
+          "letter": "E",
+          "text": "conțin limfocite B și T",
+          "why": "Nodulii conțin limfocite B și T; în foliculii corticali predomină limfocitele B. Sursa: „Sistemul limfatic și imun”, structura nodulilor limfatici."
+        }
+      ],
+      "sourcePages": [
+        281
+      ],
+      "topicId": "sistemul-limfatic",
+      "topicLabel": "Sistemul limfatic",
+      "lessonUrl": "sistemul_limfatic_si_imun.html#sistemul-limfatic",
+      "id": "asoc-350"
+    },
+    {
+      "number": 351,
+      "sourceNumber": 351,
+      "sourceChapter": "XIII",
+      "prompt": "Structurile respiratorii prezintă următoarele roluri:",
+      "correct": [
+        "A",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "cavitatea nazală filtrează, încălzește și umezește aerul inspirat",
+          "why": "Tabelul funcțiilor structurilor respiratorii atribuie cavității nazale filtrarea, încălzirea și umezirea aerului inspirat. Sursa: „Sistemul respirator”, tabelul structurilor respiratorii."
+        },
+        {
+          "letter": "B",
+          "text": "traheea filtrează aerul și îl conduce de la faringe la bronhiile principale",
+          "why": "Traheea conduce aerul de la laringe spre bronhii. Varianta înlocuiește laringele cu faringele. Sursa: „Sistemul respirator”, tabelul structurilor respiratorii."
+        },
+        {
+          "letter": "C",
+          "text": "laringele este format din 11 cartilaje și țesut conjunctiv",
+          "why": "Manualul descrie cele 11 cartilaje și țesutul conjunctiv ale laringelui, dar aceasta este o caracteristică structurală. Cerința solicită roluri, de aceea baremul nu o include. Sursa: „Sistemul respirator”, laringele."
+        },
+        {
+          "letter": "D",
+          "text": "arborele bronșic transportă aerul inspirat spre alveole",
+          "why": "Arborele bronșic conduce aerul inspirat spre alveole, locul schimburilor gazoase. Sursa: „Sistemul respirator”, tabelul structurilor respiratorii."
+        },
+        {
+          "letter": "E",
+          "text": "alveolele permit schimbul gazelor respiratorii cu sângele capilarelor din circulația sistemică",
+          "why": "Schimbul de gaze alveolar se face cu sângele circulației pulmonare. Varianta îl atribuie circulației sistemice. Sursa: „Sistemul respirator”, circulația pulmonară și alveolele."
+        }
+      ],
+      "sourcePages": [
+        281
+      ],
+      "topicId": "respiratie",
+      "topicLabel": "Ventilația și controlul respirației",
+      "lessonUrl": "sistemul_respirator.html#respiratie",
+      "id": "asoc-351"
+    },
+    {
+      "number": 352,
+      "sourceNumber": 352,
+      "sourceChapter": "XIII",
+      "prompt": "Despre vasele de sânge sunt corecte variantele:",
+      "correct": [
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "arterele conțin țesut elastic în cantități scăzute și mușchi neted în cantități crescute",
+          "why": "Manualul descrie în pereții arteriali țesut elastic, care permite destinderea și revenirea vasului, precum și mușchi neted. Nu susține caracterizarea generală printr-o cantitate scăzută de țesut elastic. Sursa: „Sistemul cardiovascular”, arterele."
+        },
+        {
+          "letter": "B",
+          "text": "capilarele prezintă pereți care se comportă ca o membrană semipermeabilă",
+          "why": "Tabelul descrie peretele capilar ca membrană semipermeabilă prin care se schimbă nutrienți, gaze și reziduuri. Sursa: „Sistemul cardiovascular”, tabelul 15.2."
+        },
+        {
+          "letter": "C",
+          "text": "venele prezintă perete mai gros ca arterele",
+          "why": "Pereții venelor sunt mai subțiri decât cei arteriali, iar tunica medie venoasă este mai slab dezvoltată. Sursa: „Sistemul cardiovascular”, tabelul 15.2 și venele."
+        },
+        {
+          "letter": "D",
+          "text": "arteriolele contribuie la ajustarea fluxului sanguin prin vasoconstricție sau vasodilatație",
+          "why": "Arteriolele ajustează fluxul sanguin prin vasoconstricție și vasodilatație. Sursa: „Sistemul cardiovascular”, arteriolele."
+        },
+        {
+          "letter": "E",
+          "text": "venulele leagă venele de capilare",
+          "why": "Baremul exclude E. Manualul spune că venulele leagă capilarele de vene și transportă sângele în această direcție. Formularea variantei inversează ordinea termenilor, dar nu indică explicit sensul curgerii: ca simplă legătură anatomică, nu poate fi respinsă fără această precizare. Se păstrează baremul. Sursa: „Sistemul cardiovascular”, tabelul 15.2 și venulele."
+        }
+      ],
+      "sourcePages": [
+        281
+      ],
+      "topicId": "vasele-sanguine",
+      "topicLabel": "Vasele sanguine",
+      "lessonUrl": "sistemul_cardiovascular.html#vasele-sanguine",
+      "id": "asoc-352"
+    },
+    {
+      "number": 353,
+      "sourceNumber": 353,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte despre controlul respirației:",
+      "correct": [
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "chemoreceptorii carotidieni monitorizează conținutul de dioxid de carbon dizolvat în sânge",
+          "why": "În prezentarea manualului, chemoreceptorii carotidieni monitorizează oxigenul sanguin; CO₂ este urmărit indirect de centrul respirator prin aciditatea lichidului cefalorahidian. Sursa: „Sistemul respirator”, controlul respirației."
+        },
+        {
+          "letter": "B",
+          "text": "cortexul cerebral poate opri voluntar respirația în timpul înotului",
+          "why": "Cortexul cerebral poate opri voluntar respirația, manualul folosind exemplul înotului. Sursa: „Sistemul respirator”, controlul voluntar al respirației."
+        },
+        {
+          "letter": "C",
+          "text": "centrul de control respirator din trunchiul cerebral monitorizează nivelul de oxigen din sânge",
+          "why": "Centrul respirator monitorizează indirect CO₂, prin aciditatea lichidului cefalorahidian. Monitorizarea oxigenului este atribuită chemoreceptorilor carotidieni și aortici. Sursa: „Sistemul respirator”, controlul respirației."
+        },
+        {
+          "letter": "D",
+          "text": "corpusculii aortici sunt stimulați de scăderea presiunii dioxidului de carbon dizolvat în sânge",
+          "why": "Manualul leagă stimularea corpusculilor aortici de scăderea oxigenului dizolvat, nu de scăderea CO₂. Sursa: „Sistemul respirator”, chemoreceptorii periferici."
+        },
+        {
+          "letter": "E",
+          "text": "creșterea acidității lichidului cefalorahidian determină creșterea frecvenței și amplitudinii respirației",
+          "why": "Creșterea acidității lichidului cefalorahidian stimulează centrul respirator, crescând frecvența și amplitudinea respirației. Sursa: „Sistemul respirator”, controlul respirației."
+        }
+      ],
+      "sourcePages": [
+        281,
+        282
+      ],
+      "topicId": "respiratie",
+      "topicLabel": "Ventilația și controlul respirației",
+      "lessonUrl": "sistemul_respirator.html#respiratie",
+      "id": "asoc-353"
+    },
+    {
+      "number": 354,
+      "sourceNumber": 354,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la fiziologia inimii:",
+      "correct": [
+        "A",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "atriile se relaxează și se umplu cu sânge în timpul sistolei ventriculare",
+          "why": "În timpul sistolei ventriculare, atriile sunt în diastolă și se umplu cu sânge. Sursa: „Sistemul cardiovascular”, ciclul cardiac."
+        },
+        {
+          "letter": "B",
+          "text": "inima este învelită de două foițe care delimitează cavitatea pericardică",
+          "why": "Descrierea foițelor pericardice este anatomică. Baremul cerinței despre fiziologie o exclude fără a nega existența acestor foițe. Sursa: „Sistemul cardiovascular”, pericardul."
+        },
+        {
+          "letter": "C",
+          "text": "valvele atrioventriculare sunt ancorate de cordajele tendinoase din ventricule",
+          "why": "Ancorarea valvelor prin cordaje este o relație anatomică. Cerința privește fiziologia inimii, de aceea descrierea structurală nu este punctată. Sursa: „Sistemul cardiovascular”, valvele atrioventriculare."
+        },
+        {
+          "letter": "D",
+          "text": "impulsurile generate de nodul sinoatrial se propagă în țesutul atrial",
+          "why": "Impulsurile inițiate în nodul sinoatrial se propagă în țesutul atrial, declanșând contracția atriilor. Sursa: „Sistemul cardiovascular”, conducerea impulsului cardiac."
+        },
+        {
+          "letter": "E",
+          "text": "valva pulmonară previne refluxul sângelui din artera pulmonară în ventriculul drept, în timpul sistolei ventriculare",
+          "why": "În sistola ventriculară sângele este expulzat prin valva pulmonară. Închiderea valvei semilunare previne revenirea lui după această expulzare; varianta plasează greșit protecția prin închidere în timpul sistolei. Sursa: „Sistemul cardiovascular”, valvele semilunare și ciclul cardiac."
+        }
+      ],
+      "sourcePages": [
+        282
+      ],
+      "topicId": "ciclul-cardiac",
+      "topicLabel": "Inima și ciclul cardiac",
+      "lessonUrl": "sistemul_cardiovascular.html#ciclul-cardiac",
+      "id": "asoc-354"
+    },
+    {
+      "number": 355,
+      "sourceNumber": 355,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "correct": [
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "celulele parietale gastrice produc factor intrinsec, necesar pentru absorbția vitaminei E",
+          "why": "Factorul intrinsec secretat de celulele parietale este necesar absorbției vitaminei B₁₂, nu vitaminei E. Sursa: „Sistemul digestiv”, glandele gastrice."
+        },
+        {
+          "letter": "B",
+          "text": "colecistokinina controlează eliberarea bilei în duoden",
+          "why": "Colecistokinina controlează eliberarea bilei în duoden. Sursa: „Sistemul digestiv”, controlul secrețiilor digestive."
+        },
+        {
+          "letter": "C",
+          "text": "zaharaza descompune zaharoza în glucoză și fructoză, la nivelul intestinului subțire",
+          "why": "Zaharaza intestinală descompune zaharoza în glucoză și fructoză. Sursa: „Sistemul digestiv”, tabelul 18.4."
+        },
+        {
+          "letter": "D",
+          "text": "bila are un pH acid",
+          "why": "Bila este alcalină, cu pH-ul indicat între 7,6 și 8,6, nu acidă. Sursa: „Sistemul digestiv”, bila."
+        },
+        {
+          "letter": "E",
+          "text": "vitaminele pot fi absorbite și în intestinul gros",
+          "why": "Absorbția vitaminelor este prezentată ca funcție a intestinului gros; unele vitamine sunt produse de bacteriile intestinale. Sursa: „Sistemul digestiv”, funcțiile intestinului gros."
+        }
+      ],
+      "sourcePages": [
+        282
+      ],
+      "topicId": "organele-anexe",
+      "topicLabel": "Digestia și enzimele digestive",
+      "lessonUrl": "sistemul_digestiv.html#organele-anexe",
+      "id": "asoc-355"
+    },
+    {
+      "number": 356,
+      "sourceNumber": 356,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați noțiunile corecte:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "epicardul acoperă valvele cardiace",
+          "why": "Endocardul căptușește inima și acoperă valvele cardiace. Varianta îl înlocuiește cu epicardul. Sursa: „Sistemul cardiovascular”, endocardul."
+        },
+        {
+          "letter": "B",
+          "text": "contracția celulelor miocardice este influențată de activitatea nodului sinoatrial",
+          "why": "Nodul sinoatrial este pacemakerul inimii, care inițiază impulsurile conduse spre celulele miocardice. Sursa: „Sistemul cardiovascular”, sistemul de conducere cardiac."
+        },
+        {
+          "letter": "C",
+          "text": "unda P pe ECG indică depolarizarea atriilor",
+          "why": "Unda P a electrocardiogramei reprezintă depolarizarea atrială. Sursa: „Sistemul cardiovascular”, electrocardiograma."
+        },
+        {
+          "letter": "D",
+          "text": "ventriculele au rol de pompă",
+          "why": "Ventriculele pompează sângele în artera pulmonară și aortă în timpul sistolei. Sursa: „Sistemul cardiovascular”, ciclul cardiac."
+        },
+        {
+          "letter": "E",
+          "text": "valva mitrală este situată între atriul drept și ventriculul drept",
+          "why": "Valva mitrală, bicuspidă, se află între atriul stâng și ventriculul stâng; în dreapta se află valva tricuspidă. Sursa: „Sistemul cardiovascular”, valvele atrioventriculare."
+        }
+      ],
+      "sourcePages": [
+        282
+      ],
+      "topicId": "ciclul-cardiac",
+      "topicLabel": "Inima și ciclul cardiac",
+      "lessonUrl": "sistemul_cardiovascular.html#ciclul-cardiac",
+      "id": "asoc-356"
+    },
+    {
+      "number": 357,
+      "sourceNumber": 357,
+      "sourceChapter": "XIII",
+      "prompt": "Ciclul menstrual include:",
+      "correct": [
+        "A",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "faza menstruală, care începe în prima zi a ciclului",
+          "why": "Prima zi a ciclului menstrual este prima zi a menstruației; faza menstruală este descrisă pentru zilele 1–5. Sursa: „Sistemul reproducător feminin”, ciclul menstrual."
+        },
+        {
+          "letter": "B",
+          "text": "faza proliferativă, zilele 14-28, când crește secreția hormonală",
+          "why": "Faza proliferativă corespunde zilelor 6–14. Zilele 15–28 sunt atribuite fazei secretorii. Sursa: „Sistemul reproducător feminin”, ciclul menstrual."
+        },
+        {
+          "letter": "C",
+          "text": "ovulația în ziua 14, sub acțiunea FSH-ului",
+          "why": "Ovulația este stimulată de creșterea bruscă a LH, nu este atribuită FSH în această etapă. Sursa: „Sistemul reproducător feminin”, ovulația."
+        },
+        {
+          "letter": "D",
+          "text": "formarea corpului galben post-ovulator",
+          "why": "După ovulație, celulele foliculare rămase în ovar se transformă în corp galben sub controlul LH. Sursa: „Sistemul reproducător feminin”, corpul galben."
+        },
+        {
+          "letter": "E",
+          "text": "transformarea corpului alb în corp galben, sub acțiunea LH-ului",
+          "why": "Corpul galben provine din foliculul rămas după ovulație. Corpul alb apare ulterior prin regresia corpului galben, nu este precursorul său. Sursa: „Sistemul reproducător feminin”, evoluția foliculului ovarian."
+        }
+      ],
+      "sourcePages": [
+        282
+      ],
+      "topicId": "fiziologie",
+      "topicLabel": "Ciclul ovarian și uterin",
+      "lessonUrl": "sistemul_reproducator_feminin.html#fiziologie",
+      "id": "asoc-357"
+    },
+    {
+      "number": 358,
+      "sourceNumber": 358,
+      "sourceChapter": "XIII",
+      "prompt": "Celula prezintă:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "nucleu în care ADN-ul este organizat sub formă de cromozomi",
+          "why": "ADN-ul nuclear este organizat în cromozomi. Sursa: „Celula și fiziologia celulară”, nucleul."
+        },
+        {
+          "letter": "B",
+          "text": "lizozomi care împachetează proteine și glucide",
+          "why": "Lizozomii realizează digestia intracelulară. Procesarea și împachetarea proteinelor și lipidelor sunt atribuite aparatului Golgi. Sursa: „Celula și fiziologia celulară”, organitele celulare."
+        },
+        {
+          "letter": "C",
+          "text": "reticul endoplasmatic alcătuit din membrane ce se extind intracitoplasmatic",
+          "why": "Reticulul endoplasmatic este descris ca sistem de membrane care se extind în citoplasmă. Sursa: „Celula și fiziologia celulară”, reticulul endoplasmatic."
+        },
+        {
+          "letter": "D",
+          "text": "mitocondrii, care asigură energie prin respirație celulară",
+          "why": "Mitocondriile participă la respirația celulară și la formarea ATP-ului care furnizează energie celulei. Sursa: „Celula și fiziologia celulară”, mitocondriile."
+        },
+        {
+          "letter": "E",
+          "text": "citoschelet, rețea interconectată de fibre fosfolipidice",
+          "why": "Citoscheletul este alcătuit din elemente proteice, nu din fibre fosfolipidice. Sursa: „Celula și fiziologia celulară”, citoscheletul."
+        }
+      ],
+      "sourcePages": [
+        282
+      ],
+      "topicId": "organite",
+      "topicLabel": "Organitele celulare",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#organite",
+      "id": "asoc-358"
+    },
+    {
+      "number": 359,
+      "sourceNumber": 359,
+      "sourceChapter": "XIII",
+      "prompt": "Despre grupele sanguine sunt adevărate afirmațiile:",
+      "correct": [
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "grupa 0 - prezintă antigene A și B pe hematie",
+          "why": "Eritrocitele grupei 0 nu au antigenele A și B; ambele antigene sunt prezente la grupa AB. Sursa: „Sângele”, grupele ABO."
+        },
+        {
+          "letter": "B",
+          "text": "grupa A - poate dona grupei B pentru că au antigene diferite",
+          "why": "Persoana de grupă B are anticorpi anti-A, care reacționează cu antigenul A de pe eritrocitele grupei A. Diferența antigenică nu permite asocierea propusă. Sursa: „Sângele”, grupele ABO și aglutinarea."
+        },
+        {
+          "letter": "C",
+          "text": "grupa AB - nu prezintă anticorpi plasmatici anti-A și anti-B",
+          "why": "Persoanele de grupă AB nu au în ser anticorpi anti-A și anti-B. Sursa: „Sângele”, grupele ABO."
+        },
+        {
+          "letter": "D",
+          "text": "grupa B - poate dona grupelor B și AB",
+          "why": "În schema ABO din manual, grupa B poate dona grupelor B și AB: acestea nu au anticorpi anti-B care să reacționeze cu antigenul B. Sursa: „Sângele”, compatibilitatea ABO."
+        },
+        {
+          "letter": "E",
+          "text": "grupa 0 - nu prezintă anticorpi în plasmă",
+          "why": "Grupa 0 are anticorpi anti-A și anti-B în ser; lipsesc antigenele A și B de pe eritrocite, nu anticorpii. Sursa: „Sângele”, grupele ABO."
+        }
+      ],
+      "sourcePages": [
+        282
+      ],
+      "topicId": "grupele-sanguine",
+      "topicLabel": "Grupele sanguine",
+      "lessonUrl": "sangele.html#grupele-sanguine",
+      "id": "asoc-359"
+    },
+    {
+      "number": 360,
+      "sourceNumber": 360,
+      "sourceChapter": "XIII",
+      "prompt": "Inima produce:",
+      "correct": [
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "zgomotul I - determinat de deschiderea valvelor atrioventriculare",
+          "why": "Primul zgomot cardiac este produs la închiderea valvelor atrioventriculare, nu la deschiderea lor. Sursa: „Sistemul cardiovascular”, zgomotele cardiace."
+        },
+        {
+          "letter": "B",
+          "text": "zgomotul II - determinat de închiderea valvelor ce sunt deschise în timpul sistolei atriale",
+          "why": "Zgomotul II este legat de închiderea valvelor semilunare. Valvele prin care sângele trece din atrii în ventricule sunt atrioventriculare și închiderea lor produce zgomotul I. Sursa: „Sistemul cardiovascular”, ciclul și zgomotele cardiace."
+        },
+        {
+          "letter": "C",
+          "text": "în condiții patologice tulburări de ritm - fibrilația",
+          "why": "Manualul descrie fibrilația ca tulburare a ritmului în care inima se contractă rapid și neregulat. Sursa: „Sistemul cardiovascular”, aritmiile."
+        },
+        {
+          "letter": "D",
+          "text": "zgomotul II - determinat de închiderea valvelor atrioventriculare",
+          "why": "Închiderea valvelor atrioventriculare produce zgomotul I; zgomotul II provine de la închiderea valvelor semilunare. Sursa: „Sistemul cardiovascular”, zgomotele cardiace."
+        },
+        {
+          "letter": "E",
+          "text": "zgomotul I - determinat de închiderea valvelor ce sunt prinse de mușchii papilari prin intermediul cordajelor tendinoase",
+          "why": "Valvele atrioventriculare sunt ancorate prin cordaje de mușchii papilari. Închiderea acestor valve produce primul zgomot cardiac. Sursa: „Sistemul cardiovascular”, valvele și zgomotele cardiace."
+        }
+      ],
+      "sourcePages": [
+        282
+      ],
+      "topicId": "ciclul-cardiac",
+      "topicLabel": "Inima și ciclul cardiac",
+      "lessonUrl": "sistemul_cardiovascular.html#ciclul-cardiac",
+      "id": "asoc-360"
+    },
+    {
+      "number": 361,
+      "sourceNumber": 361,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "excesul de fier rezultat din distrugerea hematiilor îmbătrânite este depozitat în ficat",
+          "why": "Fierul recuperat din hemoglobina eritrocitelor distruse este refolosit în măduva osoasă, iar excesul este stocat în ficat. Sursa: „Sângele”, distrugerea globulelor roșii."
+        },
+        {
+          "letter": "B",
+          "text": "fibrinogenul este un produs al ficatului, alături de alte proteine implicate în coagulare",
+          "why": "Ficatul produce fibrinogen și protrombină, proteine implicate în coagulare. Sursa: „Sistemul digestiv”, metabolismul hepatic al proteinelor."
+        },
+        {
+          "letter": "C",
+          "text": "CO fixat pe hematie crește cantitatea de oxigen transportată de sânge",
+          "why": "Monoxidul de carbon ocupă pe hemoglobină locurile destinate oxigenului și reduce cantitatea de oxigen transportată. Sursa: „Sângele”, hemoglobina și monoxidul de carbon."
+        },
+        {
+          "letter": "D",
+          "text": "eritropoieza este stimulată de renina secretată de rinichi",
+          "why": "Hormonul renal care stimulează producerea eritrocitelor este eritropoetina, nu renina. Sursa: „Sângele”, eritropoieza."
+        },
+        {
+          "letter": "E",
+          "text": "mioglobina, pigment prezent în fibrele musculare, depozitează temporar O₂",
+          "why": "Mioglobina leagă și depozitează temporar oxigenul în fibrele musculare. Sursa: „Țesutul muscular”, mioglobina."
+        }
+      ],
+      "sourcePages": [
+        283
+      ],
+      "topicId": "plasma",
+      "topicLabel": "Sângele și plasma",
+      "lessonUrl": "sangele.html#plasma",
+      "id": "asoc-361"
+    },
+    {
+      "number": 362,
+      "sourceNumber": 362,
+      "sourceChapter": "XIII",
+      "prompt": "Este adevărat că:",
+      "correct": [
+        "A"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "vena portă transportă sângele din rețelele capilare ale sistemului digestiv la ficat",
+          "why": "Vena portă conduce spre ficat sângele care a deservit tractul gastrointestinal, transportând nutrienții absorbiți. Sursa: „Sistemul cardiovascular”, sistemul port hepatic."
+        },
+        {
+          "letter": "B",
+          "text": "arterele carotide se desprind din arcul aortic",
+          "why": "Figura arată carotida comună stângă pornind din arcul aortic, iar pe cea dreaptă din trunchiul brahiocefalic. Afirmația generalizează originea directă din arc. Sursa: „Sistemul cardiovascular”, figura 15.9."
+        },
+        {
+          "letter": "C",
+          "text": "venele tibiale și vena peronieră se observă la nivelul membrului superior",
+          "why": "Venele tibiale și peronieră sunt reprezentate în membrul inferior, nu în membrul superior. Sursa: „Sistemul cardiovascular”, figura 15.10."
+        },
+        {
+          "letter": "D",
+          "text": "inima primește sânge oxigenat prin arterele coronare, care se varsă în sinusul coronarian",
+          "why": "Arterele coronare aduc sângele oxigenat la miocard; sângele este apoi colectat prin venele cardiace în sinusul coronarian. Arterele nu se varsă direct în sinus. Sursa: „Sistemul cardiovascular”, circulația coronariană."
+        },
+        {
+          "letter": "E",
+          "text": "venele azygos și hemiazygos culeg sângele de la nivelul mușchilor abdominali",
+          "why": "Textul indică venele azygos și hemiazygos ca drenând mușchii toracici, nu abdominali. Sursa: „Sistemul cardiovascular”, principalele vene."
+        }
+      ],
+      "sourcePages": [
+        283
+      ],
+      "topicId": "vasele-sanguine",
+      "topicLabel": "Vasele sanguine",
+      "lessonUrl": "sistemul_cardiovascular.html#vasele-sanguine",
+      "id": "asoc-362"
+    },
+    {
+      "number": 363,
+      "sourceNumber": 363,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele enunțuri sunt corecte:",
+      "correct": [
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "ambele ducte ale pancreasului se deschid în jejun, la o distanță de 2,5 cm unul de altul",
+          "why": "Ductele pancreasului se deschid în duoden. Ductul accesoriu se deschide cu aproximativ 2,5 cm deasupra ampulei hepatopancreatice. Sursa: „Sistemul digestiv”, ductele pancreatice."
+        },
+        {
+          "letter": "B",
+          "text": "chilomicronii ajunși în chiliferul central conțin și trigliceride",
+          "why": "Chilomicronii transportați în chiliferul central conțin trigliceride, împreună cu colesterol și fosfolipide. Sursa: „Sistemul digestiv”; „Metabolism și nutriție”, absorbția și transportul lipidelor."
+        },
+        {
+          "letter": "C",
+          "text": "duodenul se întinde de la sfincterul piloric până la valva ileocecală",
+          "why": "Întregul intestin subțire se întinde de la sfincterul piloric la cel ileocecal. Duodenul este doar prima sa porțiune, urmată de jejun și ileon. Sursa: „Sistemul digestiv”, intestinul subțire."
+        },
+        {
+          "letter": "D",
+          "text": "cel mai mare organ anex al tractului gastrointestinal este localizat în hipocondrul stâng",
+          "why": "Ficatul este cel mai mare organ anex descris. Figura arată poziția lui predominant în dreapta, sub diafragmă, nu în hipocondrul stâng. Sursa: „Sistemul digestiv”, anatomia ficatului și figura 18.9."
+        },
+        {
+          "letter": "E",
+          "text": "ductele sublinguale se deschid la nivelul planșeului oral",
+          "why": "Ductele sublinguale se deschid la nivelul planșeului oral, sub limbă. Sursa: „Sistemul digestiv”, glandele salivare."
+        }
+      ],
+      "sourcePages": [
+        283
+      ],
+      "topicId": "organele-anexe",
+      "topicLabel": "Digestia și enzimele digestive",
+      "lessonUrl": "sistemul_digestiv.html#organele-anexe",
+      "id": "asoc-363"
+    },
+    {
+      "number": 364,
+      "sourceNumber": 364,
+      "sourceChapter": "XIII",
+      "prompt": "La nivelul testiculului întâlnim următoarele tipuri de celule:",
+      "correct": [
+        "A",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "spermatozoizi - prezenți în lumenul tubilor seminiferi",
+          "why": "La finalul spermatogenezei, spermatozoizii sunt prezenți în lumenul tubilor seminiferi. Sursa: „Sistemul reproducător masculin”, spermatogeneza."
+        },
+        {
+          "letter": "B",
+          "text": "celule de susținere - facilitează contactul dintre spermatozoizi și sistemul imun",
+          "why": "Celulele de susținere protejează spermatozoizii în dezvoltare de sistemul imun, formând o barieră; nu facilitează contactul propus. Sursa: „Sistemul reproducător masculin”, celulele sustentaculare."
+        },
+        {
+          "letter": "C",
+          "text": "celule interstițiale - secretă testosteron sub acțiunea hormonului luteinizant",
+          "why": "LH stimulează producerea testosteronului de către celulele interstițiale. Sursa: „Sistemul reproducător masculin”, celulele interstițiale și hormonii masculini."
+        },
+        {
+          "letter": "D",
+          "text": "celule primordiale - formează spermatogonii prin diviziuni meiotice succesive",
+          "why": "Spermatogoniile sunt celulele primordiale care produc prin mitoză celulele viitoare. Meioza începe la spermatocitele primare. Sursa: „Sistemul reproducător masculin”, spermatogeneza."
+        },
+        {
+          "letter": "E",
+          "text": "celule sustentaculare - funcționează ca o barieră între vasele de sânge și tubii seminiferi",
+          "why": "Celulele sustentaculare formează o barieră între vasele sanguine și tubii seminiferi, protejând spermatozoizii în dezvoltare. Sursa: „Sistemul reproducător masculin”, celulele sustentaculare."
+        }
+      ],
+      "sourcePages": [
+        283
+      ],
+      "topicId": "testiculele",
+      "topicLabel": "Testiculele",
+      "lessonUrl": "sistemul_reproducator_masculin.html#testiculele",
+      "id": "asoc-364"
+    },
+    {
+      "number": 365,
+      "sourceNumber": 365,
+      "sourceChapter": "XIII",
+      "prompt": "Alegeți afirmațiile corecte:",
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "controlul voluntar al respirației se desfășoară și în timpul înotului",
+          "why": "Controlul cortical voluntar poate opri respirația în timpul înotului, exemplu oferit în manual. Sursa: „Sistemul respirator”, controlul voluntar al respirației."
+        },
+        {
+          "letter": "B",
+          "text": "volumul cavității toracice crește în timpul inspirației",
+          "why": "Contracția diafragmei și a intercostalilor externi crește volumul toracelui în inspirație. Sursa: „Sistemul respirator”, mecanismul inspirației."
+        },
+        {
+          "letter": "C",
+          "text": "cavitățile nazale încălzesc, umidifică și filtrează aerul inspirat",
+          "why": "Cavitatea nazală filtrează, încălzește și umezește aerul inspirat. Sursa: „Sistemul respirator”, tabelul structurilor respiratorii."
+        },
+        {
+          "letter": "D",
+          "text": "expirația se realizează prin contracția mușchilor intercostali externi",
+          "why": "În expirația descrisă în manual, intercostalii externi și diafragma se relaxează; contracția lor participă la inspirație. Sursa: „Sistemul respirator”, ventilația pulmonară."
+        },
+        {
+          "letter": "E",
+          "text": "chemoreceptorii carotidieni și aortici sunt stimulați de nivelul de dioxid de carbon din sânge",
+          "why": "Manualul atribuie chemoreceptorilor carotidieni și aortici monitorizarea oxigenului. CO₂ este urmărit indirect de centrul respirator prin aciditatea lichidului cefalorahidian. Sursa: „Sistemul respirator”, controlul respirației."
+        }
+      ],
+      "sourcePages": [
+        283
+      ],
+      "topicId": "respiratie",
+      "topicLabel": "Ventilația și controlul respirației",
+      "lessonUrl": "sistemul_respirator.html#respiratie",
+      "id": "asoc-365"
+    },
+    {
+      "number": 366,
+      "sourceNumber": 366,
+      "sourceChapter": "XIII",
+      "prompt": "Despre elementele figurate ale sângelui sunt corecte variantele:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "eozinofilele sunt agranulocite ce intervin în reacțiile alergice",
+          "why": "Eozinofilele sunt granulocite; asocierea cu reacțiile alergice nu face corectă clasificarea lor ca agranulocite. Sursa: „Sângele”, leucocitele."
+        },
+        {
+          "letter": "B",
+          "text": "plachetele intervin în hemostază și eliberează factori ce inițiază coagularea",
+          "why": "Plachetele se agregă la leziunea vasculară și eliberează factori care participă la inițierea coagulării. Sursa: „Sângele”, plachetele și hemostaza."
+        },
+        {
+          "letter": "C",
+          "text": "monocitele se diferențiază în țesuturi și formează macrofage",
+          "why": "Monocitele se diferențiază în țesuturi pentru a forma macrofage. Sursa: „Sângele”, monocitele."
+        },
+        {
+          "letter": "D",
+          "text": "numărul eritrocitelor scade în anemie",
+          "why": "Tabelul asociază un număr prea mic de eritrocite cu anemia. Sursa: „Sângele”, tabelul 14.3."
+        },
+        {
+          "letter": "E",
+          "text": "creșterea numărului de limfocite produce tulburări de coagulare",
+          "why": "Tabelul asociază tulburările de coagulare cu scăderea plachetelor. Creșterea limfocitelor este menționată în legătură cu leucemiile, nu ca explicație directă a tulburărilor de coagulare. Sursa: „Sângele”, tabelul 14.3."
+        }
+      ],
+      "sourcePages": [
+        283
+      ],
+      "topicId": "globulele-albe",
+      "topicLabel": "Elementele figurate",
+      "lessonUrl": "sangele.html#globulele-albe",
+      "id": "asoc-366"
+    },
+    {
+      "number": 367,
+      "sourceNumber": 367,
+      "sourceChapter": "XIII",
+      "prompt": "Inima prezintă:",
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "ventriculul stâng, având rolul de a pompa sânge în circulația mare",
+          "why": "Ventriculul stâng pompează sângele în aortă și în circulația sistemică. Sursa: „Sistemul cardiovascular”, ventriculele și circulația sistemică."
+        },
+        {
+          "letter": "B",
+          "text": "orificii de deschidere ale venelor cave la nivelul atriului drept",
+          "why": "Cele două vene cave aduc sângele în atriul drept. Sursa: „Sistemul cardiovascular”, întoarcerea venoasă."
+        },
+        {
+          "letter": "C",
+          "text": "ventriculul drept, în care se deschid venele pulmonare",
+          "why": "Venele pulmonare se întorc la partea stângă a inimii, în atriul stâng, nu în ventriculul drept. Sursa: „Sistemul cardiovascular”, circulația pulmonară."
+        },
+        {
+          "letter": "D",
+          "text": "atriul drept care trimite sânge prin valva mitrală",
+          "why": "Sângele din atriul drept trece prin valva tricuspidă. Valva mitrală se află între atriul și ventriculul stâng. Sursa: „Sistemul cardiovascular”, valvele atrioventriculare."
+        },
+        {
+          "letter": "E",
+          "text": "un sept interventricular ce conține fasciculul His",
+          "why": "Fasciculul atrioventricular, His, conduce impulsurile prin septul interventricular spre ramurile sale. Sursa: „Sistemul cardiovascular”, sistemul de conducere cardiac."
+        }
+      ],
+      "sourcePages": [
+        283
+      ],
+      "topicId": "ciclul-cardiac",
+      "topicLabel": "Inima și ciclul cardiac",
+      "lessonUrl": "sistemul_cardiovascular.html#ciclul-cardiac",
+      "id": "asoc-367"
+    },
+    {
+      "number": 368,
+      "sourceNumber": 368,
+      "sourceChapter": "XIII",
+      "prompt": "Tiroida sintetizează hormoni care conțin iod, cu următoarele acțiuni metabolice:",
+      "correct": [
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "Scăderea nivelului calciului din sânge, efect antagonic cu al parathormonului",
+          "why": "Scăderea calciului sanguin este atribuită calcitoninei. Cerința privește hormonii tiroidieni care conțin iod, tiroxina și triiodotironina. Sursa: „Sistemul endocrin”, hormonii tiroidieni."
+        },
+        {
+          "letter": "B",
+          "text": "Creșterea numărului de receptori din vasele de sânge, cu rol în menținerea presiunii arteriale",
+          "why": "Manualul atribuie hormonilor tiroidieni creșterea receptorilor vasculari și menținerea presiunii. Baremul nu o punctează în cerința limitată la acțiunile metabolice; acesta este un efect vascular. Sursa: „Sistemul endocrin”, acțiunile hormonilor tiroidieni."
+        },
+        {
+          "letter": "C",
+          "text": "Stimularea eliberării acizilor grași din țesutul adipos, similar adrenalinei, STH-ului, hormonului adrenocorticotrop și glucagonului",
+          "why": "Tiroxina este enumerată alături de adrenalină, hormonul de creștere, glucagon și ACTH printre hormonii care eliberează acizi grași din țesutul adipos. Sursa: „Metabolism și nutriție”, reglarea metabolismului lipidic."
+        },
+        {
+          "letter": "D",
+          "text": "Creșterea consumului de oxigen de către celule și, prin urmare, scăderea ratei metabolismului bazal",
+          "why": "Hormonii tiroidieni cresc atât consumul de oxigen, cât și rata metabolismului bazal. Varianta scade în mod greșit această rată. Sursa: „Sistemul endocrin”, acțiunile hormonilor tiroidieni."
+        },
+        {
+          "letter": "E",
+          "text": "Stimularea maturării sistemului nervos central, cu rol în dezvoltarea organismului",
+          "why": "Manualul atribuie hormonilor tiroidieni stimularea maturării sistemului nervos la tineri. Aceasta este o acțiune de dezvoltare; cerința solicită acțiuni metabolice, iar baremul exclude E în acest context. Sursa: „Sistemul endocrin”, acțiunile hormonilor tiroidieni."
+        }
+      ],
+      "sourcePages": [
+        284
+      ],
+      "topicId": "glanda-tiroida",
+      "topicLabel": "Glanda tiroidă",
+      "lessonUrl": "sistemul_endocrin.html#glanda-tiroida",
+      "id": "asoc-368"
+    },
+    {
+      "number": 369,
+      "sourceNumber": 369,
+      "sourceChapter": "XIII",
+      "prompt": "Gama-globulinele:",
+      "correct": [
+        "A",
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "fac parte dintre componentele organice ale sângelui",
+          "why": "Gamma-globulinele sunt proteine plasmatice, deci componente organice ale sângelui. Sursa: „Sângele”, proteinele plasmatice."
+        },
+        {
+          "letter": "B",
+          "text": "reprezintă un mecanism primar al apărării organismului",
+          "why": "Manualul le descrie drept anticorpi care se combină specific cu antigenele și reprezintă un mecanism primar al apărării. Sursa: „Sângele”, gamma-globulinele."
+        },
+        {
+          "letter": "C",
+          "text": "fagocitează microorganismele, la fel ca neutrofilele și macrofagele",
+          "why": "Gamma-globulinele sunt molecule de anticorpi, nu celule fagocitare. Fagocitoza este descrisă la neutrofile și macrofage. Sursa: „Sângele”, anticorpii și fagocitele."
+        },
+        {
+          "letter": "D",
+          "text": "sunt sintetizate de plasmocite, provenite din proliferarea limfocitelor T stimulate de antigenele microbiene",
+          "why": "Plasmocitele provin din limfocite B stimulate antigenic, nu din limfocite T. Sursa: „Sângele”, limfocitele B și plasmocitele."
+        },
+        {
+          "letter": "E",
+          "text": "se găsesc atât în plasmă, cât și în ser",
+          "why": "Gamma-globulinele sunt prezentate ca proteine plasmatice și anticorpi. Secțiunea ABO descrie explicit anticorpi în ser, ceea ce susține includerea variantei în barem. Caseta din lecție care spune că serul nu conține proteine nu concordă cu acest pasaj; se păstrează baremul. Sursa: „Sângele”, proteinele plasmatice și grupele ABO."
+        }
+      ],
+      "sourcePages": [
+        284
+      ],
+      "topicId": "plasma",
+      "topicLabel": "Sângele și plasma",
+      "lessonUrl": "sangele.html#plasma",
+      "id": "asoc-369"
+    },
+    {
+      "number": 370,
+      "sourceNumber": 370,
+      "sourceChapter": "XIII",
+      "prompt": "Este adevărat că:",
+      "correct": [
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "ADH-ul stimulează reabsorbția apei, astfel încât urina eliminată din tubul colector este mai redusă cantitativ și mai diluată",
+          "why": "ADH favorizează reabsorbția apei, reducând apa rămasă în urină. Diluarea este descrisă în situația opusă, când secreția de ADH este inhibată. Sursa: „Sistemul urinar”, activitatea ADH."
+        },
+        {
+          "letter": "B",
+          "text": "în ramura ascendentă a ansei Henle se reabsorb activ Na⁺, Cl⁻ și, consecutiv, apă",
+          "why": "Ramura ascendentă reabsoarbe NaCl, dar manualul o descrie ca impermeabilă pentru apă sau cu reabsorbție foarte mică. Apa nu urmează aici obligatoriu ionii ca în variantă. Sursa: „Sistemul urinar”, mecanismul contracurent."
+        },
+        {
+          "letter": "C",
+          "text": "filtrarea glomerulară este favorizată de presiunea sanguină mai mare în capilarele glomerulare decât în alte capilare din organism",
+          "why": "Presiunea crescută în capilarele glomerulare favorizează trecerea filtratului în capsula glomerulară. Sursa: „Sistemul urinar”, filtrarea glomerulară."
+        },
+        {
+          "letter": "D",
+          "text": "ureea reabsorbită în porțiunea profundă a tubului colector contribuie la creșterea concentrației moleculelor organice în corticala renală",
+          "why": "Ureea contribuie la concentrația moleculelor organice din profunzimea medularei, nu din corticală. Sursa: „Sistemul urinar”, concentrarea urinei."
+        },
+        {
+          "letter": "E",
+          "text": "secreția potasiului din sânge în fluidul tubului contort distal este stimulată de corticoizi secretați de medulara glandelor suprarenale",
+          "why": "Aldosteronul stimulează secreția potasiului în tubul distal și este secretat de cortexul suprarenal, nu de medulară. Sursa: „Sistemul urinar”, aldosteronul."
+        }
+      ],
+      "sourcePages": [
+        284
+      ],
+      "topicId": "nefron",
+      "topicLabel": "Nefronul și formarea urinei",
+      "lessonUrl": "sistemul_renal_complet.html#nefron",
+      "id": "asoc-370"
+    },
+    {
+      "number": 371,
+      "sourceNumber": 371,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte cu privire la efectele LH-ului:",
+      "correct": [
+        "A",
+        "B"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "stimulează eliberarea oocitului secundar din foliculul matur",
+          "why": "Creșterea bruscă a LH stimulează ovulația, eliberarea oocitului din foliculul matur. Sursa: „Sistemul reproducător feminin”, ovulația."
+        },
+        {
+          "letter": "B",
+          "text": "este responsabil de formarea corpului luteal",
+          "why": "Celulele foliculare rămase după ovulație formează corpul galben sub controlul LH. Sursa: „Sistemul reproducător feminin”, corpul galben."
+        },
+        {
+          "letter": "C",
+          "text": "controlează, prin mecanism de feedback negativ, secreția laptelui",
+          "why": "Secreția laptelui este atribuită prolactinei, nu LH. Sursa: „Sistemul reproducător feminin”, tabelul 23.2."
+        },
+        {
+          "letter": "D",
+          "text": "susține contracțiile uterine în timpul nașterii, împreună cu FSH-ul",
+          "why": "Contracțiile uterine din timpul nașterii sunt stimulate de oxitocină, nu de asocierea LH–FSH. Sursa: „Sistemul reproducător feminin”, tabelul 23.2."
+        },
+        {
+          "letter": "E",
+          "text": "induce spermatogeneza în celulele interstițiale",
+          "why": "FSH induce spermatogeneza în tubii seminiferi. LH stimulează testosteronul în celulele interstițiale; acestea nu sunt locul spermatogenezei. Sursa: „Sistemul reproducător masculin”, hormonii masculini."
+        }
+      ],
+      "sourcePages": [
+        284
+      ],
+      "topicId": "fiziologie",
+      "topicLabel": "Ciclul ovarian și uterin",
+      "lessonUrl": "sistemul_reproducator_feminin.html#fiziologie",
+      "id": "asoc-371"
+    },
+    {
+      "number": 372,
+      "sourceNumber": 372,
+      "sourceChapter": "XIII",
+      "prompt": "Despre receptorul auditiv se poate afirma că:",
+      "correct": [
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este situat în interiorul canalelor semicirculare",
+          "why": "Receptorul auditiv, organul Corti, se află în cohlee. Canalele semicirculare sunt descrise la simțul echilibrului. Sursa: „Organele de simț”, cohleea și echilibrul."
+        },
+        {
+          "letter": "B",
+          "text": "conține dendritele neuronilor ai căror axoni formează ramura vestibulară a nervului VIII",
+          "why": "Impulsurile auditive sunt conduse prin ramura cohleară a nervului VIII. Ramura vestibulară aparține informației despre echilibru. Sursa: „Organele de simț”, auzul și echilibrul."
+        },
+        {
+          "letter": "C",
+          "text": "împreună cu cele trei oscioare formează urechea medie",
+          "why": "Organul Corti se află în urechea internă; cele trei oscioare se găsesc în urechea medie. Sursa: „Organele de simț”, urechea medie și internă."
+        },
+        {
+          "letter": "D",
+          "text": "prezintă celule ciliate care detectează mișcarea membranei tectoria",
+          "why": "Celulele ciliate ale organului Corti răspund mișcării membranei tectoria, declanșând impulsuri în neuronii asociați. Sursa: „Organele de simț”, fiziologia auzului și figura 12.4."
+        },
+        {
+          "letter": "E",
+          "text": "este situat pe membrana vestibulară și este scăldat de endolimfa din ductul cohlear",
+          "why": "Figura receptorului arată organul Corti pe membrana bazilară. Membrana vestibulară delimitează superior ductul cohlear și nu este suportul receptorului. Sursa: „Organele de simț”, figura 12.4."
+        }
+      ],
+      "sourcePages": [
+        284
+      ],
+      "topicId": "urechea-si-auzul",
+      "topicLabel": "Urechea și auzul",
+      "lessonUrl": "organele_de_simt.html#urechea-si-auzul",
+      "id": "asoc-372"
+    },
+    {
+      "number": 373,
+      "sourceNumber": 373,
+      "sourceChapter": "XIII",
+      "prompt": "Hormonul somatotrop:",
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "accelerează creșterea organismului",
+          "why": "Hormonul somatotrop accelerează creșterea organismului prin stimularea sintezei proteice. Sursa: „Sistemul endocrin”, hormonul de creștere."
+        },
+        {
+          "letter": "B",
+          "text": "este o proteină alcătuită din 191 de aminoacizi",
+          "why": "Manualul descrie STH ca proteină alcătuită din 191 de aminoacizi. Sursa: „Sistemul endocrin”, hormonul de creștere."
+        },
+        {
+          "letter": "C",
+          "text": "stimulează mobilizarea grăsimilor",
+          "why": "STH stimulează mobilizarea grăsimilor, efect menționat și în reglarea metabolismului lipidic. Sursa: „Sistemul endocrin”; „Metabolism și nutriție”, STH și metabolismul lipidic."
+        },
+        {
+          "letter": "D",
+          "text": "secreția sa în exces determină boala Graves",
+          "why": "Excesul de STH produce gigantism la copil și acromegalie la adult. Boala Graves este asociată excesului hormonilor tiroidieni. Sursa: „Sistemul endocrin”, hipersecrețiile hormonale."
+        },
+        {
+          "letter": "E",
+          "text": "este un hormon trop adenohipofizar",
+          "why": "Manualul definește hormonii tropi prin acțiunea asupra altor glande endocrine. STH acționează asupra creșterii țesuturilor; originea adenohipofizară nu îl face hormon trop în această clasificare. Sursa: „Sistemul endocrin”, hormonii hipofizari."
+        }
+      ],
+      "sourcePages": [
+        284
+      ],
+      "topicId": "hipofiza-glanda-pituitara",
+      "topicLabel": "Hipofiza și hormonii",
+      "lessonUrl": "sistemul_endocrin.html#hipofiza-glanda-pituitara",
+      "id": "asoc-373"
+    },
+    {
+      "number": 374,
+      "sourceNumber": 374,
+      "sourceChapter": "XIII",
+      "prompt": "Despre splină se pot afirma următoarele:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este un organ limfoid",
+          "why": "Splina este descrisă explicit ca organ limfoid, conținând celule limfoide. Sursa: „Sistemul limfatic și imun”, splina."
+        },
+        {
+          "letter": "B",
+          "text": "are localizare supradiafragmatică",
+          "why": "Splina este situată sub diafragmă, în partea superioară stângă a cavității abdominale, nu supradiafragmatic. Sursa: „Sistemul limfatic și imun”, localizarea splinei."
+        },
+        {
+          "letter": "C",
+          "text": "distruge eritrocite îmbătrânite",
+          "why": "Macrofagele splenice fagocitează eritrocitele îmbătrânite sau distruse, iar componentele lor sunt reciclate. Sursa: „Sistemul limfatic și imun”; „Sângele”, splina și distrugerea eritrocitelor."
+        },
+        {
+          "letter": "D",
+          "text": "este vascularizată de artera splenică",
+          "why": "Sângele pătrunde în splină prin artera splenică. Sursa: „Sistemul limfatic și imun”, vascularizația splinei."
+        },
+        {
+          "letter": "E",
+          "text": "reprezintă un rezervor de trombocite pentru organism",
+          "why": "Manualul numește splina rezervor de limfocite și depozit de sânge. Nu formulează aici rolul specific de rezervor de trombocite; baremul exclude E. Nu se adaugă o justificare din alte surse. Sursa: „Sistemul limfatic și imun”, funcțiile splinei."
+        }
+      ],
+      "sourcePages": [
+        284
+      ],
+      "topicId": "splina",
+      "topicLabel": "Splina",
+      "lessonUrl": "sistemul_limfatic_si_imun.html#splina",
+      "id": "asoc-374"
+    },
+    {
+      "number": 375,
+      "sourceNumber": 375,
+      "sourceChapter": "XIII",
+      "prompt": "La formarea lichidului seminal contribuie secrețiile produse de:",
+      "correct": [
+        "B",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "ductul deferent - lichid acid",
+          "why": "Ductul deferent propulsează și conduce lichidul seminal din epididim. pH-ul acid și adăugarea secrețiilor sunt descrise la epididim. Sursa: „Sistemul reproducător masculin”, căile genitale masculine."
+        },
+        {
+          "letter": "B",
+          "text": "glandele bulbo-uretrale - lichid alcalin",
+          "why": "Glandele bulbouretrale secretă mucus și substanțe alcaline, care contribuie la formarea spermei. Sursa: „Sistemul reproducător masculin”, glandele bulbouretrale."
+        },
+        {
+          "letter": "C",
+          "text": "prostată - lichid acid",
+          "why": "Manualul descrie secreția prostatei ca ușor alcalină, nu acidă. Sursa: „Sistemul reproducător masculin”, prostata."
+        },
+        {
+          "letter": "D",
+          "text": "veziculele seminale - 60 % din volumul total al lichidului seminal",
+          "why": "Secreția veziculelor seminale reprezintă aproximativ 60% din volumul lichidului seminal. Sursa: „Sistemul reproducător masculin”, veziculele seminale."
+        },
+        {
+          "letter": "E",
+          "text": "epididim - lichid acid",
+          "why": "Celulele epididimului adaugă secreții lichidului spermatic; textul precizează că lichidul are pH acid din cauza produșilor de degradare ai spermei stocate. Sursa: „Sistemul reproducător masculin”, epididimul."
+        }
+      ],
+      "sourcePages": [
+        285
+      ],
+      "topicId": "ducte",
+      "topicLabel": "Secrețiile aparatului reproducător masculin",
+      "lessonUrl": "sistemul_reproducator_masculin.html#ducte",
+      "id": "asoc-375"
+    },
+    {
+      "number": 376,
+      "sourceNumber": 376,
+      "sourceChapter": "XIII",
+      "prompt": "Mușchii respiratori:",
+      "correct": [
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt mușchi ce se contractă doar voluntar",
+          "why": "Respirația are mecanisme de control involuntar și poate fi modificată parțial voluntar. Mușchii respiratori nu se contractă doar voluntar. Sursa: „Sistemul respirator”, controlul respirației."
+        },
+        {
+          "letter": "B",
+          "text": "prin relaxare scad presiunea din interiorul alveolelor",
+          "why": "Relaxarea mușchilor respiratori reduce volumul toracic și crește presiunea aerului alveolar, determinând expirația. Sursa: „Sistemul respirator”, expirația."
+        },
+        {
+          "letter": "C",
+          "text": "în contracție, consumă energie eliberată din ATP",
+          "why": "Mușchii respiratori sunt mușchi scheletici, iar contracția musculară consumă energia furnizată de ATP. Sursa: „Sistemul respirator”; „Țesutul muscular”, mușchii respiratori și energia contracției."
+        },
+        {
+          "letter": "D",
+          "text": "prin contracție, mușchii intercostali externi măresc diametrul longitudinal al toracelui",
+          "why": "Intercostalii externi ridică coastele în sus și spre exterior. Creșterea dimensiunii verticale este legată de coborârea diafragmei, nu de mecanismul formulat pentru intercostali. Sursa: „Sistemul respirator”, inspirația."
+        },
+        {
+          "letter": "E",
+          "text": "sunt drenați, cei toracici, prin venele azygos și hemiazygos",
+          "why": "Manualul menționează venele azygos și hemiazygos ca vase care colectează sângele de la mușchii toracici. Sursa: „Sistemul cardiovascular”, principalele vene."
+        }
+      ],
+      "sourcePages": [
+        285
+      ],
+      "topicId": "respiratie",
+      "topicLabel": "Mecanica respirației",
+      "lessonUrl": "sistemul_respirator.html#respiratie",
+      "id": "asoc-376"
+    },
+    {
+      "number": 377,
+      "sourceNumber": 377,
+      "sourceChapter": "XIII",
+      "prompt": "Corpul galben ovarian:",
+      "correct": [
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "involuează în prezența hCG",
+          "why": "hCG împiedică degenerarea corpului galben și îi menține secreția hormonală în primele luni de sarcină. Sursa: „Sistemul reproducător feminin”, menținerea corpului galben."
+        },
+        {
+          "letter": "B",
+          "text": "se formează din celulele foliculare reziduale, sub acțiunea LH",
+          "why": "Corpul galben se formează din celulele foliculare reziduale, prin modificări controlate de LH. Sursa: „Sistemul reproducător feminin”, formarea corpului galben."
+        },
+        {
+          "letter": "C",
+          "text": "dacă nu are loc fecundația, timp de aproximativ 12 zile, produce progesteron și estrogeni",
+          "why": "În absența fecundației, corpul galben rămâne activ aproximativ 12 zile, producând progesteron și estrogeni înainte de degenerare. Sursa: „Sistemul reproducător feminin”, corpul galben."
+        },
+        {
+          "letter": "D",
+          "text": "involuează și se transformă în corp alb, dacă fecundația a avut loc",
+          "why": "Baremul exclude D: după fecundație, corpul galben este menținut prin hCG și continuă secreția hormonală. Totuși, manualul precizează că ulterior, după aproximativ trei luni, degenerează. Varianta nu precizează momentul, astfel că explicația trebuie raportată la menținerea inițială a corpului galben în sarcină. Sursa: „Sistemul reproducător feminin”, corpul galben în sarcină."
+        },
+        {
+          "letter": "E",
+          "text": "prin hormonii secretați, determină eliminarea mucoasei endometriale la aproximativ 5 zile după fecundație",
+          "why": "Progesteronul corpului galben împiedică eliminarea mucoasei endometriale după fecundație; astfel este favorizată implantarea, nu eliminarea endometrului. Sursa: „Sistemul reproducător feminin”, implantarea."
+        }
+      ],
+      "sourcePages": [
+        285
+      ],
+      "topicId": "fiziologie",
+      "topicLabel": "Ciclul ovarian",
+      "lessonUrl": "sistemul_reproducator_feminin.html#fiziologie",
+      "id": "asoc-377"
+    },
+    {
+      "number": 378,
+      "sourceNumber": 378,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele afirmații sunt corecte:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "valvele bicuspidă și tricuspidă previn refluxul sângelui venos în special la nivelul membrelor inferioare",
+          "why": "Bicuspida și tricuspida sunt valvele atrioventriculare. Valvele din vene previn refluxul venos, în special la membrele inferioare. Sursa: „Sistemul cardiovascular”, valvele cardiace și venoase."
+        },
+        {
+          "letter": "B",
+          "text": "fibrele Purkinje transmit impulsuri spre miocardul ventricular inițiind contracția acestuia",
+          "why": "Fibrele Purkinje conduc impulsul în miocardul ventricular, inițiind contracția acestuia. Sursa: „Sistemul cardiovascular”, conducerea cardiacă."
+        },
+        {
+          "letter": "C",
+          "text": "debitul cardiac depinde de frecvența cardiacă și de volumul bătaie",
+          "why": "Debitul cardiac este cantitatea pompată pe minut și rezultă din volumul bătaie și frecvența cardiacă; exemplul manualului folosește aproximativ 70 ml și 70–75 bătăi/minut. Sursa: „Sistemul cardiovascular”, debitul cardiac."
+        },
+        {
+          "letter": "D",
+          "text": "fluxul sanguin în capilare depinde de contracția fibrelor musculare din structura sfincterului precapilar",
+          "why": "Sfincterele precapilare sunt mușchi circulari care se deschid sau se închid pentru a regla intrarea sângelui în patul capilar. Sursa: „Sistemul cardiovascular”, capilarele."
+        },
+        {
+          "letter": "E",
+          "text": "presiunea arterială scade semnificativ la îngustarea lumenului arterial",
+          "why": "Textul precizează că îngustarea lumenului arterial poate crește semnificativ presiunea arterială, nu o scade. Sursa: „Sistemul cardiovascular”, presiunea arterială."
+        }
+      ],
+      "sourcePages": [
+        285
+      ],
+      "topicId": "ciclul-cardiac",
+      "topicLabel": "Inima și ciclul cardiac",
+      "lessonUrl": "sistemul_cardiovascular.html#ciclul-cardiac",
+      "id": "asoc-378"
+    },
+    {
+      "number": 379,
+      "sourceNumber": 379,
+      "sourceChapter": "XIII",
+      "prompt": "Aldosteronul:",
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este un hormon secretat de corticala glandelor suprarenale",
+          "why": "Aldosteronul este un mineralocorticoid produs de corticala suprarenalei. Sursa: „Sistemul endocrin”, corticosuprarenala."
+        },
+        {
+          "letter": "B",
+          "text": "reglează concentrația sanguină a ionilor de sodiu și potasiu",
+          "why": "Mineralocorticoizii reglează concentrațiile de electroliți, mai ales sodiu și potasiu, în sânge și lichidele corpului. Sursa: „Sistemul endocrin”, aldosteronul."
+        },
+        {
+          "letter": "C",
+          "text": "este un hormon steroidian",
+          "why": "Legenda figurii suprarenalei identifică aldosteronul și cortizolul drept hormoni steroizi. Sursa: „Sistemul endocrin”, figura 13.8, legendă."
+        },
+        {
+          "letter": "D",
+          "text": "are efect vasoconstrictor și antiinflamator",
+          "why": "Vasoconstricția și efectul antiinflamator sunt atribuite glucocorticoizilor. Aldosteronul aparține mineralocorticoizilor. Sursa: „Sistemul endocrin”, hormonii corticosuprarenali."
+        },
+        {
+          "letter": "E",
+          "text": "secreția sa este controlată de TSH",
+          "why": "Manualul leagă secreția mineralocorticoizilor de concentrația sanguină a electroliților. TSH stimulează tiroida. Sursa: „Sistemul endocrin”, controlul secrețiilor hormonale."
+        }
+      ],
+      "sourcePages": [
+        285
+      ],
+      "topicId": "glandele-suprarenale",
+      "topicLabel": "Glandele suprarenale",
+      "lessonUrl": "sistemul_endocrin.html#glandele-suprarenale",
+      "id": "asoc-379"
+    },
+    {
+      "number": 380,
+      "sourceNumber": 380,
+      "sourceChapter": "XIII",
+      "prompt": "Circulația sângelui este asigurată de:",
+      "correct": [
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "artere care conectează capilarele de arteriole",
+          "why": "Arteriolele leagă arterele de capilare. Varianta atribuie această legătură arterelor. Sursa: „Sistemul cardiovascular”, tipurile de vase sanguine."
+        },
+        {
+          "letter": "B",
+          "text": "venule care conțin țesut muscular neted mai puțin decât arteriolele",
+          "why": "Tabelul descrie venulele ca având mai puțin țesut muscular neted și elastic decât arteriolele. Sursa: „Sistemul cardiovascular”, tabelul 15.2."
+        },
+        {
+          "letter": "C",
+          "text": "artere care pleacă din ventriculele inimii",
+          "why": "Artera pulmonară pleacă din ventriculul drept, iar aorta din ventriculul stâng. Sursa: „Sistemul cardiovascular”, circulațiile pulmonară și sistemică."
+        },
+        {
+          "letter": "D",
+          "text": "vene, la nivelul cărora presiunea sângelui poate fi măsurată cu sfigmomanometrul",
+          "why": "Sfigmomanometrul măsoară presiunea arterială. Descrierea măsurării din manual se referă la curgerea prin artere, nu prin vene. Sursa: „Sistemul cardiovascular”, măsurarea presiunii arteriale."
+        },
+        {
+          "letter": "E",
+          "text": "capilare formate dintr-un strat de epiteliu pavimentos",
+          "why": "Peretele capilar este format dintr-un singur strat de epiteliu pavimentos. Sursa: „Sistemul cardiovascular”, tabelul 15.2."
+        }
+      ],
+      "sourcePages": [
+        285
+      ],
+      "topicId": "vasele-sanguine",
+      "topicLabel": "Vasele sanguine",
+      "lessonUrl": "sistemul_cardiovascular.html#vasele-sanguine",
+      "id": "asoc-380"
+    },
+    {
+      "number": 381,
+      "sourceNumber": 381,
+      "sourceChapter": "XIII",
+      "prompt": "Despre uter se poate afirma că:",
+      "correct": [
+        "A",
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este susținut de ligamentele largi",
+          "why": "Uterul este susținut de ligamentul larg, conform textului și figurii anatomice. Sursa: „Sistemul reproducător feminin”, uterul."
+        },
+        {
+          "letter": "B",
+          "text": "asigură protecția și aportul nutritiv pentru dezvoltarea embrionului și fătului",
+          "why": "Manualul atribuie uterului protecția mecanică și aportul nutritiv pentru dezvoltarea embrionului și fătului. Sursa: „Sistemul reproducător feminin”, funcțiile uterului."
+        },
+        {
+          "letter": "C",
+          "text": "este localizat în porțiunea posterioară a cavității pelviene",
+          "why": "Uterul este descris median, în porțiunea anterioară a cavității pelviene, nu în porțiunea posterioară. Sursa: „Sistemul reproducător feminin”, localizarea uterului."
+        },
+        {
+          "letter": "D",
+          "text": "la nivelul fundului se unește cu trompele uterine",
+          "why": "Fundul uterin este porțiunea superioară bombată, la nivelul căreia uterul se unește cu trompele. Sursa: „Sistemul reproducător feminin”, anatomia uterului."
+        },
+        {
+          "letter": "E",
+          "text": "se deschide în porțiunea posterioară a vestibulului vaginal",
+          "why": "Canalul cervical se deschide în vagin. Vaginul este cel care se întinde până la orificiul de la nivelul vestibulului. Sursa: „Sistemul reproducător feminin”, uterul și vaginul."
+        }
+      ],
+      "sourcePages": [
+        285
+      ],
+      "topicId": "organe",
+      "topicLabel": "Gonadele și organele reproducătoare",
+      "lessonUrl": "sistemul_reproducator_feminin.html#organe",
+      "id": "asoc-381"
+    },
+    {
+      "number": 382,
+      "sourceNumber": 382,
+      "sourceChapter": "XIII",
+      "prompt": "Ochiul conține:",
+      "correct": [
+        "A",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "Retina, care este tunica nervoasă la nivelul căreia se formează imaginea",
+          "why": "Retina este stratul intern receptor al ochiului, unde se formează imaginea transformată apoi în impulsuri nervoase. Sursa: „Organele de simț”, retina."
+        },
+        {
+          "letter": "B",
+          "text": "Umoarea apoasă, care circulă prin pupilă dinspre compartimentul posterior spre cel anterior",
+          "why": "Manualul distinge camerele anterioară și posterioară ale compartimentului anterior, ambele cu umoare apoasă. Compartimentul posterior conține umoare vitroasă. Varianta confundă camerele cu compartimentele. Sursa: „Organele de simț”, compartimentele ochiului."
+        },
+        {
+          "letter": "C",
+          "text": "Irisul, care este format din mușchi neted, constrictor și dilatator",
+          "why": "Irisul conține mușchi netezi constrictor și dilatator, care modifică diametrul pupilei. Sursa: „Organele de simț”, irisul."
+        },
+        {
+          "letter": "D",
+          "text": "Cristalinul, care este ancorat la coroidă prin ligamentul suspensor",
+          "why": "Ligamentul suspensor ancorează cristalinul de corpii ciliari, nu de coroidă. Sursa: „Organele de simț”, cristalinul."
+        },
+        {
+          "letter": "E",
+          "text": "Sclera, care dă inserție mușchilor netezi ai globului ocular",
+          "why": "Sclera dă inserție mușchilor extrinseci ai ochiului. Mușchii netezi sunt descriși în iris și corpul ciliar, nu ca mușchii extrinseci inserați pe scleră. Sursa: „Organele de simț”, mușchii ochiului."
+        }
+      ],
+      "sourcePages": [
+        285
+      ],
+      "topicId": "ochiul-si-vederea",
+      "topicLabel": "Ochiul și vederea",
+      "lessonUrl": "organele_de_simt.html#ochiul-si-vederea",
+      "id": "asoc-382"
+    },
+    {
+      "number": 383,
+      "sourceNumber": 383,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele raporturi anatomice sunt corecte:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "vezica urinară este situată posterior de simfiza pubiană, la ambele sexe",
+          "why": "Figurile sagitale ale pelvisului masculin și feminin arată vezica urinară înapoia regiunii pubiene anterioare, raport păstrat la ambele sexe. Sursa: „Sistemul reproducător masculin”; „Sistemul reproducător feminin”, figurile 22.1 și 23.1."
+        },
+        {
+          "letter": "B",
+          "text": "uterul este situat posterior de rect, la sexul feminin",
+          "why": "În figura sagitală, uterul este anterior de rect. Varianta inversează raportul. Sursa: „Sistemul reproducător feminin”, figura 23.1."
+        },
+        {
+          "letter": "C",
+          "text": "orificiul vaginal este situat posterior de orificiul uretrei, la sexul feminin",
+          "why": "Figura vulvei arată orificiul uretral anterior de orificiul vaginal; acesta din urmă este posterior față de uretră. Sursa: „Sistemul reproducător feminin”, figura 23.4."
+        },
+        {
+          "letter": "D",
+          "text": "rectul este situat posterior de vezica urinară și prostată, la sexul masculin",
+          "why": "Figura sagitală masculină arată rectul posterior de vezica urinară și de prostată. Sursa: „Sistemul reproducător masculin”, figura 22.1."
+        },
+        {
+          "letter": "E",
+          "text": "ovarul este în raport cu extremitatea medială a trompei uterine",
+          "why": "Capătul trompei din apropierea ovarului este cel cu infundibul și fimbrii, situat lateral. Capătul medial se continuă spre uter. Sursa: „Sistemul reproducător feminin”, trompele uterine și figura 23.2."
+        }
+      ],
+      "sourcePages": [
+        286
+      ],
+      "topicId": "termeni",
+      "topicLabel": "Raporturi anatomice",
+      "lessonUrl": "introducere_anatomie_fiziologie.html#termeni",
+      "id": "asoc-383"
+    },
+    {
+      "number": 384,
+      "sourceNumber": 384,
+      "sourceChapter": "XIII",
+      "prompt": "Despre glandele salivare și ductele lor sunt adevărate următoarele:",
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "ductele submandibulare se deschid lateral de frâul limbii",
+          "why": "Tabelul glandelor salivare indică deschiderea ductului submandibular în planșeul oral, lateral de frâul limbii. Sursa: „Sistemul digestiv”, tabelul 18.2."
+        },
+        {
+          "letter": "B",
+          "text": "glandele parotide sunt situate în țesuturile profunde din regiunea feței, în vecinătatea urechilor",
+          "why": "Glandele parotide sunt situate în vecinătatea urechilor, în țesuturile profunde ale feței. Sursa: „Sistemul digestiv”, glandele salivare."
+        },
+        {
+          "letter": "C",
+          "text": "ductele parotidiene se deschid, pe partea internă a obrajilor, opus celui de-al doilea molar superior",
+          "why": "Ductul parotidian se deschide pe partea internă a obrazului, opus celui de-al doilea molar superior. Sursa: „Sistemul digestiv”, tabelul 18.2."
+        },
+        {
+          "letter": "D",
+          "text": "produc o enzimă cu rol proteolitic",
+          "why": "Enzima salivară descrisă este amilaza, care digeră amidonul și glicogenul. Acesta este un rol în digestia glucidelor, nu un rol proteolitic. Sursa: „Sistemul digestiv”, saliva."
+        },
+        {
+          "letter": "E",
+          "text": "celulele lor seroase produc mucus, care leagă particulele alimentare",
+          "why": "Celulele seroase produc amilază; celulele mucoase produc mucusul care leagă particulele alimentare. Sursa: „Sistemul digestiv”, celulele glandelor salivare."
+        }
+      ],
+      "sourcePages": [
+        286
+      ],
+      "topicId": "organele-anexe",
+      "topicLabel": "Digestia și enzimele digestive",
+      "lessonUrl": "sistemul_digestiv.html#organele-anexe",
+      "id": "asoc-384"
+    },
+    {
+      "number": 385,
+      "sourceNumber": 385,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte referitoare la membrana celulară:",
+      "correct": [
+        "A",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "membrana celulelor Schwann conține o substanță de culoare albă numită mielină",
+          "why": "Mielina este descrisă ca substanță lipidică albă și componentă principală a membranei celulelor Schwann și oligodendrocitelor. Sursa: „Țesutul nervos”, teaca de mielină."
+        },
+        {
+          "letter": "B",
+          "text": "membrana presinaptică prezintă receptori pentru neurotransmițători",
+          "why": "În sinapsa descrisă, neurotransmițătorii sunt eliberați presinaptic și se leagă de receptorii membranei postsinaptice. Sursa: „Țesutul nervos”, transmiterea sinaptică."
+        },
+        {
+          "letter": "C",
+          "text": "membrana unor celule endocrine prezintă în structura sa enzime care transformă ATP-ul în AMP ciclic, cu rol de mesager secundar",
+          "why": "Adenilat ciclaza transformă ATP în AMP ciclic, mesager secundar al celulei țintă. Manualul descrie și acțiunea autocrină/paracrină, prin care o celulă endocrină poate fi la rândul ei țintă hormonală. Sursa: „Sistemul endocrin”, mesagerul secundar și acțiunea autocrină."
+        },
+        {
+          "letter": "D",
+          "text": "are în structura sa două straturi duble lipidice",
+          "why": "Membrana plasmatică are un singur bistrat lipidic. Două bistraturi sunt descrise pentru învelișul nuclear. Sursa: „Celula și fiziologia celulară”, membrana plasmatică și învelișul nuclear."
+        },
+        {
+          "letter": "E",
+          "text": "sarcolema permite difuzarea unei părți din acidul lactic format în timpul glicolizei anaerobe în afara celulei",
+          "why": "Manualul precizează că o mare parte din acidul lactic muscular difuzează în afara celulei și este transportat de sânge la ficat. Sursa: „Țesutul muscular”, metabolismul muscular anaerob."
+        }
+      ],
+      "sourcePages": [
+        286
+      ],
+      "topicId": "organite",
+      "topicLabel": "Organitele celulare",
+      "lessonUrl": "celula_si_fiziologia_celulara.html#organite",
+      "id": "asoc-385"
+    },
+    {
+      "number": 386,
+      "sourceNumber": 386,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați noțiunile corecte:",
+      "correct": [
+        "B",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sistemul port hepatic transportă sângele bidirecțional între intestin și ficat",
+          "why": "Circulația portă hepatică este descrisă explicit ca unidirecțională, din tractul gastrointestinal spre ficat. Sursa: „Sistemul cardiovascular”, circulația portă hepatică."
+        },
+        {
+          "letter": "B",
+          "text": "vasele ce pornesc din poligonul Willis transportă sânge oxigenat spre emisferele cerebrale",
+          "why": "Poligonul Willis formează o rețea arterială la baza encefalului, iar arterele sale irigă encefalul. Sursa: „Sistemul cardiovascular”, circulația cerebrală."
+        },
+        {
+          "letter": "C",
+          "text": "arterele pulmonare transportă sânge oxigenat de la plămâni spre țesuturi",
+          "why": "Arterele pulmonare duc sângele sărac în oxigen de la ventriculul drept spre plămâni. Venele pulmonare readuc sângele oxigenat la inimă. Sursa: „Sistemul cardiovascular”, circulația pulmonară."
+        },
+        {
+          "letter": "D",
+          "text": "venele iliace comune transportă sângele de la nivelul membrelor inferioare",
+          "why": "Venele iliace comune sunt menționate între principalele vene care colectează sângele de la membrele inferioare. Sursa: „Sistemul cardiovascular”, principalele vene."
+        },
+        {
+          "letter": "E",
+          "text": "arterele coronare transportă sângele de la inimă spre aortă",
+          "why": "Arterele coronare furnizează sânge oxigenat miocardului. Ele nu reprezintă calea de evacuare a sângelui din inimă în aortă. Sursa: „Sistemul cardiovascular”, circulația coronariană."
+        }
+      ],
+      "sourcePages": [
+        286
+      ],
+      "topicId": "vasele-sanguine",
+      "topicLabel": "Vasele sanguine",
+      "lessonUrl": "sistemul_cardiovascular.html#vasele-sanguine",
+      "id": "asoc-386"
+    },
+    {
+      "number": 387,
+      "sourceNumber": 387,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "correct": [
+        "A",
+        "B",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "catabolismul lipidelor produce, în condiții normale, cantități reduse de corpi cetonici",
+          "why": "În condiții normale, nivelul corpilor cetonici proveniți din catabolismul lipidic rămâne scăzut, deoarece sunt rapid convertiți în acetil-CoA. Sursa: „Metabolism și nutriție”, catabolismul lipidelor."
+        },
+        {
+          "letter": "B",
+          "text": "epinefrina produce hiperglicemie",
+          "why": "Epinefrina accelerează glicogenoliza și produce hiperglicemie. Sursa: „Metabolism și nutriție”, reglarea glicemiei."
+        },
+        {
+          "letter": "C",
+          "text": "gluconeogeneza poate utiliza acid lactic",
+          "why": "Textul precizează că acidul lactic și glicerolul pot fi transformate în glucoză prin gluconeogeneză. Sursa: „Metabolism și nutriție”, gluconeogeneza."
+        },
+        {
+          "letter": "D",
+          "text": "energia este furnizată prin beta oxidare în citoplasma celulelor",
+          "why": "Beta-oxidarea acizilor grași este localizată în mitocondrii, nu în citoplasmă. Sursa: „Metabolism și nutriție”, catabolismul acizilor grași."
+        },
+        {
+          "letter": "E",
+          "text": "glucocorticoizii stimulează sinteza proteinelor celulare",
+          "why": "Glucocorticoizii favorizează degradarea proteinelor celulare. Sinteza proteică este stimulată de alți hormoni enumerați, precum STH și hormonii sexuali. Sursa: „Metabolism și nutriție”, reglarea metabolismului proteic."
+        }
+      ],
+      "sourcePages": [
+        286
+      ],
+      "topicId": "lipide-si-proteine",
+      "topicLabel": "Metabolismul",
+      "lessonUrl": "metabolism_si_nutritie.html#lipide-si-proteine",
+      "id": "asoc-387"
+    },
+    {
+      "number": 388,
+      "sourceNumber": 388,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "correct": [
+        "A",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "gastrina controlează secreția de pepsinogen la nivelul stomacului",
+          "why": "Gastrina controlează secreția de pepsinogen, HCl și mucus la nivel gastric. Sursa: „Sistemul digestiv”, controlul secreției gastrice."
+        },
+        {
+          "letter": "B",
+          "text": "amilaza pancreatică transformă amidonul în glucoză",
+          "why": "Amilaza pancreatică transformă amidonul în maltoză, nu direct în glucoză. Sursa: „Sistemul digestiv”, enzimele pancreatice."
+        },
+        {
+          "letter": "C",
+          "text": "bila stimulează absorbția vitaminei K",
+          "why": "Bila crește absorbția vitaminelor liposolubile; manualul enumeră A, D și K. Sursa: „Sistemul digestiv”, rolurile bilei."
+        },
+        {
+          "letter": "D",
+          "text": "amilaza salivară transformă amidonul în maltoză",
+          "why": "Amilaza salivară descompune amidonul, producând maltoză. Sursa: „Sistemul digestiv”, saliva."
+        },
+        {
+          "letter": "E",
+          "text": "nucleaza, enzimă produsă de pancreasul exocrin, transformă ADN-ul în nucleotide",
+          "why": "Manualul atribuie nucleazele prezentate celulelor intestinului subțire și le indică în tabel ca enzime intestinale. Baremul exclude atribuirea către pancreas; explicația respectă localizarea din sursa autorizată. Sursa: „Sistemul digestiv”, nucleazele și tabelul 18.4."
+        }
+      ],
+      "sourcePages": [
+        286
+      ],
+      "topicId": "organele-anexe",
+      "topicLabel": "Digestia și enzimele digestive",
+      "lessonUrl": "sistemul_digestiv.html#organele-anexe",
+      "id": "asoc-388"
+    },
+    {
+      "number": 389,
+      "sourceNumber": 389,
+      "sourceChapter": "XIII",
+      "prompt": "Glucoza:",
+      "correct": [
+        "B",
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "este eliberată din dizaharide sub acțiunea dizaharidazelor, la nivelul stomacului",
+          "why": "Dizaharidazele sunt produse de celulele intestinului subțire. Ele descompun dizaharidele în monozaharide la acest nivel, nu în stomac. Sursa: „Sistemul digestiv”, enzimele intestinale."
+        },
+        {
+          "letter": "B",
+          "text": "se absoarbe, în cantități mici, în stomac",
+          "why": "Mucoasa gastrică poate absorbi cantități mici de glucoză, apă, ioni și alcool. Sursa: „Sistemul digestiv”, absorbția gastrică."
+        },
+        {
+          "letter": "C",
+          "text": "este stocată în ficat sub formă de glicogen",
+          "why": "Când glicemia este ridicată, ficatul stochează glucoza sub formă de glicogen prin glicogenogeneză. Sursa: „Sistemul digestiv”, metabolismul hepatic al glucidelor."
+        },
+        {
+          "letter": "D",
+          "text": "reprezintă sursă de energie pentru fibra musculară",
+          "why": "Celula musculară utilizează glucoza pentru a produce ATP prin respirație celulară, inclusiv prin glicoliză. Sursa: „Țesutul muscular”, energia musculară."
+        },
+        {
+          "letter": "E",
+          "text": "este reabsorbită la nivel renal prin mecanisme pasive",
+          "why": "Glucoza este reabsorbită în tubii proximali prin transport activ, nu prin mecanisme pasive. Sursa: „Sistemul urinar”, reabsorbția tubulară."
+        }
+      ],
+      "sourcePages": [
+        286
+      ],
+      "topicId": "organele-anexe",
+      "topicLabel": "Digestia și enzimele digestive",
+      "lessonUrl": "sistemul_digestiv.html#organele-anexe",
+      "id": "asoc-389"
+    },
+    {
+      "number": 390,
+      "sourceNumber": 390,
+      "sourceChapter": "XIII",
+      "prompt": "Hipofiza anterioară:",
+      "correct": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sintetizează oxitocină",
+          "why": "Oxitocina este sintetizată de celulele neurosecretoare hipotalamice și eliberată de neurohipofiză, nu sintetizată de adenohipofiză. Sursa: „Sistemul endocrin”, neurohipofiza."
+        },
+        {
+          "letter": "B",
+          "text": "produce prolactină",
+          "why": "Prolactina este un hormon al hipofizei anterioare, cu rol în sinteza laptelui. Sursa: „Sistemul endocrin”; „Sistemul reproducător feminin”, prolactina."
+        },
+        {
+          "letter": "C",
+          "text": "este controlată de hipotalamus",
+          "why": "Hipotalamusul controlează adenohipofiza prin hormoni stimulatori și inhibitori transportați prin sistemul port. Sursa: „Sistemul endocrin”, controlul adenohipofizei."
+        },
+        {
+          "letter": "D",
+          "text": "contribuie la creșterea ratei metabolismului celular, prin ACTH",
+          "why": "Tabelul hormonilor adenohipofizari atribuie explicit ACTH-ului creșterea ratei metabolismului, alături de stimularea secreției corticosteroizilor. Aceasta susține includerea variantei în barem. Sursa: „Sistemul endocrin”, tabelul 13.2."
+        },
+        {
+          "letter": "E",
+          "text": "asigură controlul gonadelor",
+          "why": "FSH și LH adenohipofizari controlează gonadele, participând la producerea gameților și a hormonilor sexuali. Sursa: „Sistemul endocrin”, gonadotropinele."
+        }
+      ],
+      "sourcePages": [
+        286,
+        287
+      ],
+      "topicId": "hipofiza-glanda-pituitara",
+      "topicLabel": "Hipofiza și hormonii",
+      "lessonUrl": "sistemul_endocrin.html#hipofiza-glanda-pituitara",
+      "id": "asoc-390"
+    },
+    {
+      "number": 391,
+      "sourceNumber": 391,
+      "sourceChapter": "XIII",
+      "prompt": "Osteoclastele:",
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt activate de PTH",
+          "why": "Parathormonul stimulează activitatea osteoclastelor, crescând resorbția calciului din oase. Sursa: „Sistemul endocrin”, parathormonul."
+        },
+        {
+          "letter": "B",
+          "text": "contribuie la menținerea concentrației calciului în sânge",
+          "why": "Osteoclastele dizolvă osul, eliberând calciu și fosfat; această acțiune participă la menținerea calciului sanguin. Sursa: „Oasele și articulațiile”; „Sistemul endocrin”, remodelarea osoasă și calcemia."
+        },
+        {
+          "letter": "C",
+          "text": "stimulează creșterea osoasă",
+          "why": "Osteoclastele resorb osul, în timp ce osteoblastele sunt celulele formatoare de os. Sursa: „Oasele și articulațiile”, remodelarea osoasă."
+        },
+        {
+          "letter": "D",
+          "text": "pot fi influențate de hormonii sexuali",
+          "why": "Echilibrul activității osteoblastelor și osteoclastelor poate fi influențat de hormoni, inclusiv de hormonii sexuali. Sursa: „Oasele și articulațiile”, remodelarea osoasă."
+        },
+        {
+          "letter": "E",
+          "text": "au rol în remodelarea osoasă",
+          "why": "Remodelarea osoasă continuă toată viața prin interacțiunea osteoblastelor formatoare și osteoclastelor resorbante. Sursa: „Oasele și articulațiile”, remodelarea osoasă."
+        }
+      ],
+      "sourcePages": [
+        287
+      ],
+      "topicId": "osul",
+      "topicLabel": "Țesutul osos",
+      "lessonUrl": "oasele_si_articulatiile.html#osul",
+      "id": "asoc-391"
+    },
+    {
+      "number": 392,
+      "sourceNumber": 392,
+      "sourceChapter": "XIII",
+      "prompt": "Care dintre următoarele afirmații sunt corecte?",
+      "correct": [
+        "A",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "lichidul cefalorahidian asigură nutrienții necesari celulei nervoase",
+          "why": "Lichidul cefalorahidian este descris ca servind nevoilor nutriționale ale celulelor nervoase. Sursa: „Organizarea sistemului nervos”, ventriculii și lichidul cefalorahidian."
+        },
+        {
+          "letter": "B",
+          "text": "ariile senzoriale sunt localizate doar în lobii temporali",
+          "why": "Ariile senzoriale se găsesc în mai mulți lobi: de exemplu, auzul în lobii temporali și văzul în lobii occipitali. Sursa: „Organizarea sistemului nervos”, ariile corticale."
+        },
+        {
+          "letter": "C",
+          "text": "cerebelul, masă de substanță cenușie, este interconectat cu emisferele cerebrale și receptori senzoriali",
+          "why": "Cerebelul conține atât substanță cenușie, cât și substanță albă. Legăturile cu emisferele și receptorii sunt descrise, dar caracterizarea doar prin substanță cenușie este incompletă. Sursa: „Organizarea sistemului nervos”, cerebelul."
+        },
+        {
+          "letter": "D",
+          "text": "mișcările voluntare se află și sub controlul nucleilor bazali",
+          "why": "Tabelul atribuie nucleilor bazali controlul tonusului muscular și coordonarea mișcărilor voluntare. Sursa: „Organizarea sistemului nervos”, tabelul 11.2."
+        },
+        {
+          "letter": "E",
+          "text": "hipotalamusul este implicat în homeostazia organismului",
+          "why": "Hipotalamusul participă la controlul visceral și endocrin, menținând homeostazia, inclusiv echilibrul hidric și temperatura corporală. Sursa: „Organizarea sistemului nervos”, hipotalamusul."
+        }
+      ],
+      "sourcePages": [
+        287
+      ],
+      "topicId": "sistem-nervos-central",
+      "topicLabel": "Sistemul nervos central",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-central",
+      "id": "asoc-392"
+    },
+    {
+      "number": 393,
+      "sourceNumber": 393,
+      "sourceChapter": "XIII",
+      "prompt": "Următoarele afirmații sunt corecte:",
+      "correct": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "acetilcolina este secretată de toate fibrele preganglionare",
+          "why": "Fibrele preganglionare ale ambelor componente vegetative secretă acetilcolină, conform manualului. Sursa: „Organizarea sistemului nervos”, neurotransmițătorii vegetativi."
+        },
+        {
+          "letter": "B",
+          "text": "fibrele adrenergice eliberează, de obicei, noradrenalină",
+          "why": "Fibrele postganglionare simpatice sunt numite adrenergice deoarece secretă noradrenalină. Sursa: „Organizarea sistemului nervos”, neurotransmițătorii vegetativi."
+        },
+        {
+          "letter": "C",
+          "text": "nervii spinali sunt nervi micști, implicați în interpretarea imaginilor vizuale, dar și în mișcările oculare",
+          "why": "Nervii spinali sunt micști, dar funcțiile vizuale și mișcările oculare sunt asociate nervilor cranieni și ariilor encefalice. Interpretarea imaginilor are loc în lobii occipitali. Sursa: „Organizarea sistemului nervos”, nervii cranieni, spinali și ariile corticale."
+        },
+        {
+          "letter": "D",
+          "text": "frecvența cardiacă poate fi modulată de centrii localizați în bulbul rahidian",
+          "why": "Bulbul rahidian conține centri care reglează activitatea cardiacă, inclusiv frecvența bătăilor. Sursa: „Organizarea sistemului nervos”, bulbul rahidian."
+        },
+        {
+          "letter": "E",
+          "text": "aria lui Broca este implicată în vorbire",
+          "why": "Aria Broca este răspunzătoare de activitatea motorie legată de vorbire și de planificarea vorbirii. Sursa: „Organizarea sistemului nervos”, aria Broca."
+        }
+      ],
+      "sourcePages": [
+        287
+      ],
+      "topicId": "sistem-nervos-central",
+      "topicLabel": "Sistemul nervos central",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-central",
+      "id": "asoc-393"
+    },
+    {
+      "number": 394,
+      "sourceNumber": 394,
+      "sourceChapter": "XIII",
+      "prompt": "Lobul",
+      "correct": [
+        "A"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "parietal este implicat în înțelegerea vorbirii",
+          "why": "Manualul atribuie unor regiuni parietale înțelegerea vorbirii și exprimarea ideilor. Sursa: „Organizarea sistemului nervos”, lobii cerebrali."
+        },
+        {
+          "letter": "B",
+          "text": "occipital este asociat cu anticiparea și creativitatea",
+          "why": "Anticiparea și creativitatea sunt asociate mai ales ariilor frontale. Lobii occipitali interpretează senzațiile vizuale. Sursa: „Organizarea sistemului nervos”, lobii cerebrali."
+        },
+        {
+          "letter": "C",
+          "text": "temporal controlează percepția imaginilor",
+          "why": "Percepția și interpretarea vizuală sunt localizate în lobii occipitali; lobii temporali conțin ariile auditive. Sursa: „Organizarea sistemului nervos”, ariile senzoriale."
+        },
+        {
+          "letter": "D",
+          "text": "frontal este implicat în auz",
+          "why": "Auzul este asociat lobilor temporali. Lobul frontal conține, între altele, aria motorie și aria Broca. Sursa: „Organizarea sistemului nervos”, ariile corticale."
+        },
+        {
+          "letter": "E",
+          "text": "insular este implicat în elaborarea gândirii",
+          "why": "Manualul descrie localizarea insulei, dar atribuie rațiunea și alte funcții mentale complexe emisferelor, cu roluri importante ale ariilor frontale. Nu oferă o atribuire specifică a elaborării gândirii lobului insular; baremul exclude E. Sursa: „Organizarea sistemului nervos”, emisferele cerebrale."
+        }
+      ],
+      "sourcePages": [
+        287
+      ],
+      "topicId": "sistem-nervos-central",
+      "topicLabel": "Sistemul nervos central",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-central",
+      "id": "asoc-394"
+    },
+    {
+      "number": 395,
+      "sourceNumber": 395,
+      "sourceChapter": "XIII",
+      "prompt": "Alegeți afirmațiile corecte despre ductul deferent:",
+      "correct": [
+        "A",
+        "C"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "reprezintă o extensie tubulară a epididimului care traversează canalul inghinal înspre cavitatea abdominală",
+          "why": "Ductul deferent continuă epididimul și traversează canalul inghinal spre cavitatea abdominală. Sursa: „Sistemul reproducător masculin”, ductul deferent."
+        },
+        {
+          "letter": "B",
+          "text": "trece medial de vezica urinară, în cavitatea abdominală",
+          "why": "Ductul deferent trece lateral de vezica urinară, nu medial. Sursa: „Sistemul reproducător masculin”, traiectul ductului deferent."
+        },
+        {
+          "letter": "C",
+          "text": "prezintă o porțiune care se lărgește, denumită ampulă",
+          "why": "Înainte de a ajunge la prostată, ductul deferent se lărgește într-o ampulă. Sursa: „Sistemul reproducător masculin”, ductul deferent."
+        },
+        {
+          "letter": "D",
+          "text": "formează ductul ejaculator prin unirea cu ductul glandei bulbouretrale",
+          "why": "Ductul ejaculator se formează prin unirea ductului deferent cu ductul veziculei seminale, nu cu cel bulbouretral. Sursa: „Sistemul reproducător masculin”, ductul ejaculator."
+        },
+        {
+          "letter": "E",
+          "text": "are rol în transportul spermatozoizilor spre testicul",
+          "why": "Ductul deferent conduce lichidul seminal de la epididim spre ductul ejaculator și uretră. Varianta inversează direcția spre testicul. Sursa: „Sistemul reproducător masculin”, căile genitale masculine."
+        }
+      ],
+      "sourcePages": [
+        287
+      ],
+      "topicId": "ducte",
+      "topicLabel": "Secrețiile aparatului reproducător masculin",
+      "lessonUrl": "sistemul_reproducator_masculin.html#ducte",
+      "id": "asoc-395"
+    },
+    {
+      "number": 396,
+      "sourceNumber": 396,
+      "sourceChapter": "XIII",
+      "prompt": "Alegeți afirmațiile corecte despre hormonii secretați la nivelul nucleilor hipotalamici și eliberați de neurohipofiză:",
+      "correct": [
+        "A",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "sunt sintetizați de celule neurosecretoare",
+          "why": "Neurohormonii sunt sintetizați de celulele neurosecretoare din hipotalamus. Sursa: „Sistemul endocrin”, hipotalamusul și neurohipofiza."
+        },
+        {
+          "letter": "B",
+          "text": "inhibă contracțiile uterine în timpul nașterii",
+          "why": "Oxitocina stimulează contracțiile uterine din timpul nașterii, nu le inhibă. Sursa: „Sistemul endocrin”; „Sistemul reproducător feminin”, oxitocina."
+        },
+        {
+          "letter": "C",
+          "text": "sunt transportați de-a lungul infundibulului în lobul anterior al hipofizei",
+          "why": "Hormonii sunt transportați prin infundibul în neurohipofiză, lobul posterior, nu în lobul anterior. Sursa: „Sistemul endocrin”, neurohipofiza."
+        },
+        {
+          "letter": "D",
+          "text": "au structură lipidică, fiind sintetizați din colesterol",
+          "why": "ADH și oxitocina sunt hormoni peptidici, nu steroizi sintetizați din colesterol. Sursa: „Sistemul endocrin”, clasificarea hormonilor."
+        },
+        {
+          "letter": "E",
+          "text": "sunt eliberați ca răspuns la stimularea neuronilor hipotalamici",
+          "why": "Neurohipofiza eliberează hormonii stocați ca răspuns la stimulii proveniți de la neuronii hipotalamici. Sursa: „Sistemul endocrin”, neurohipofiza."
+        }
+      ],
+      "sourcePages": [
+        287
+      ],
+      "topicId": "hipofiza-glanda-pituitara",
+      "topicLabel": "Hipofiza și hormonii",
+      "lessonUrl": "sistemul_endocrin.html#hipofiza-glanda-pituitara",
+      "id": "asoc-396"
+    },
+    {
+      "number": 397,
+      "sourceNumber": 397,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte:",
+      "correct": [
+        "A",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "deficitul de STH în copilărie determină nanism hipofizar",
+          "why": "Deficitul de STH în copilărie cauzează nanism hipofizar. Sursa: „Sistemul endocrin”, hormonul de creștere."
+        },
+        {
+          "letter": "B",
+          "text": "hipersecreția de parathormon are ca rezultat creșterea densității oaselor",
+          "why": "Hipersecreția de PTH este asociată deformărilor și scăderii densității osoase, nu creșterii acesteia. Sursa: „Sistemul endocrin”, hipersecreția parathormonului."
+        },
+        {
+          "letter": "C",
+          "text": "boala Addison este însoțită de un dezechilibru al sodiului și potasiului",
+          "why": "Boala Addison apare prin hiposecreția hormonilor corticali și este însoțită de dezechilibre ale sodiului și potasiului. Sursa: „Sistemul endocrin”, boala Addison."
+        },
+        {
+          "letter": "D",
+          "text": "inactivarea celulelor alfa din insulele Langerhans determină apariția diabetului zaharat",
+          "why": "Celulele alfa produc glucagon. Diabetul zaharat este descris în relație cu deficitul de insulină produsă de celulele beta. Sursa: „Sistemul endocrin”, hormonii pancreatici."
+        },
+        {
+          "letter": "E",
+          "text": "boala Graves se datorează unui exces de tiroxină și triiodotironină",
+          "why": "Excesul de tiroxină și triiodotironină duce la boala Graves. Sursa: „Sistemul endocrin”, hipersecreția tiroidiană."
+        }
+      ],
+      "sourcePages": [
+        287
+      ],
+      "topicId": "hipofiza-glanda-pituitara",
+      "topicLabel": "Hipofiza și hormonii",
+      "lessonUrl": "sistemul_endocrin.html#hipofiza-glanda-pituitara",
+      "id": "asoc-397"
+    },
+    {
+      "number": 398,
+      "sourceNumber": 398,
+      "sourceChapter": "XIII",
+      "prompt": "Selectați afirmațiile corecte privind filtrarea glomerulară:",
+      "correct": [
+        "B",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "presupune trecerea plasmei sanguine prin pereții capilarelor glomerulare în arteriola eferentă",
+          "why": "Filtratul trece din capilarele glomerulare în capsula glomerulară, nu în arteriola eferentă. Sursa: „Sistemul urinar”, filtrarea glomerulară."
+        },
+        {
+          "letter": "B",
+          "text": "se datorează unei presiuni mai mari în capilarele glomerulare comparativ cu alte capilare din organism",
+          "why": "Presiunea sanguină glomerulară este mai mare decât în alte capilare și favorizează filtrarea. Sursa: „Sistemul urinar”, filtrarea glomerulară."
+        },
+        {
+          "letter": "C",
+          "text": "este favorizată de diametrul mai mic al arteriolei aferente comparativ cu cea eferentă",
+          "why": "Manualul explică presiunea crescută prin diametrul mai mic al arteriolei eferente față de cea aferentă. Varianta inversează comparația. Sursa: „Sistemul urinar”, presiunea glomerulară."
+        },
+        {
+          "letter": "D",
+          "text": "presupune trecerea proteinelor, ionilor și glucozei din plasma sanguină în filtratul glomerular",
+          "why": "Proteinele mari și celulele sanguine rămân în sânge. În filtrat ajung ionii și moleculele mici, precum glucoza. Sursa: „Sistemul urinar”, compoziția filtratului glomerular."
+        },
+        {
+          "letter": "E",
+          "text": "este influențată de permeabilitatea crescută a capilarelor glomerulare",
+          "why": "Permeabilitatea capilarelor glomerulare este mai mare decât a altor capilare, contribuind la filtrare. Sursa: „Sistemul urinar”, filtrarea glomerulară."
+        }
+      ],
+      "sourcePages": [
+        287,
+        288
+      ],
+      "topicId": "nefron",
+      "topicLabel": "Nefronul",
+      "lessonUrl": "sistemul_renal_complet.html#nefron",
+      "id": "asoc-398"
+    },
+    {
+      "number": 399,
+      "sourceNumber": 399,
+      "sourceChapter": "XIII",
+      "prompt": "Ficatul:",
+      "correct": [
+        "B",
+        "C",
+        "E"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "primește oxigen și substanțe nutritive prin artera hepatică, desprinsă din aorta abdominală superior de pilierii diafragmatici",
+          "why": "Artera hepatică furnizează ficatului oxigen și nutrienți, iar schema o situează între ramurile abdominale. Baremul exclude A. Raportul exact față de pilierii diafragmatici nu este etichetat în figură și nu este precizat în pasajul disponibil; această parte a formulării nu poate fi justificată mai exact din sursele autorizate. Sursa: „Sistemul digestiv”; „Sistemul cardiovascular”, circulația hepatică și figura 15.9."
+        },
+        {
+          "letter": "B",
+          "text": "sintetizează cantități extrem de mici de hormoni non-steroizi",
+          "why": "Manualul include ficatul între organele cu celule endocrine care secretă cantități foarte mici de hormoni non-steroizi, numiți prostaglandine. Sursa: „Sistemul endocrin”, alte țesuturi endocrine."
+        },
+        {
+          "letter": "C",
+          "text": "are sinusoide hepatice prin care circulă sânge sărac în oxigen",
+          "why": "Sângele din sistemul port hepatic este sărac în oxigen, deoarece a deservit tractul gastrointestinal. Vena portă se ramifică în rețeaua capilară hepatică; acesta este traseul sanguin susținut de text și punctat de barem. Sursa: „Sistemul cardiovascular”; „Sistemul digestiv”, sistemul port hepatic."
+        },
+        {
+          "letter": "D",
+          "text": "asigură sinteza de aminoacizi din glucoză, în condiții de hipoglicemie",
+          "why": "În hipoglicemie, ficatul poate forma glucide din aminoacizi prin gluconeogeneză. Varianta inversează transformarea, propunând aminoacizi din glucoză. Sursa: „Sistemul digestiv”, metabolismul hepatic."
+        },
+        {
+          "letter": "E",
+          "text": "conține enzime care pot altera structura chimică a aldosteronului",
+          "why": "Enzimele hepatice pot altera structura unor hormoni steroizi; manualul dă ca exemple estrogenii și aldosteronul. Sursa: „Sistemul digestiv”, inactivarea hepatică a hormonilor."
+        }
+      ],
+      "sourcePages": [
+        288
+      ],
+      "topicId": "organele-anexe",
+      "topicLabel": "Digestia și enzimele digestive",
+      "lessonUrl": "sistemul_digestiv.html#organele-anexe",
+      "id": "asoc-399"
+    },
+    {
+      "number": 400,
+      "sourceNumber": 400,
+      "sourceChapter": "XIII",
+      "prompt": "Diencefalul:",
+      "correct": [
+        "C",
+        "D"
+      ],
+      "asksFalse": false,
+      "options": [
+        {
+          "letter": "A",
+          "text": "are în interior ventriculul III care comunică superior, prin apeductul cerebral, cu ventriculul IV",
+          "why": "Figura ventriculilor arată apeductul cerebral coborând de la ventriculul III spre ventriculul IV. Relația „superior” din variantă este inversată. Sursa: „Organizarea sistemului nervos”, figura 11.6."
+        },
+        {
+          "letter": "B",
+          "text": "este format din mase de substanță albă numite nuclei",
+          "why": "Nucleii diencefalului sunt mase de substanță cenușie, nu albă. Sursa: „Organizarea sistemului nervos”, diencefalul."
+        },
+        {
+          "letter": "C",
+          "text": "cuprinde un centru integrativ al majorității impulsurilor senzoriale",
+          "why": "Talamusul este un centru integrativ al impulsurilor senzoriale și o componentă a diencefalului. Sursa: „Organizarea sistemului nervos”, diencefalul și talamusul."
+        },
+        {
+          "letter": "D",
+          "text": "are o componentă ce intervine în reglarea greutății corporale",
+          "why": "Hipotalamusul participă la senzația de foame și la reglarea greutății corporale. Sursa: „Organizarea sistemului nervos”, hipotalamusul."
+        },
+        {
+          "letter": "E",
+          "text": "include o structură care secretă hormoni transportați prin vasele sistemului port până la neurohipofiză",
+          "why": "Hormonii hipotalamici transportați prin sistemul port controlează adenohipofiza. Hormonii destinați neurohipofizei sunt transportați de-a lungul infundibulului, nu pe această cale vasculară. Sursa: „Sistemul endocrin”, controlul hipofizei."
+        }
+      ],
+      "sourcePages": [
+        288
+      ],
+      "topicId": "sistem-nervos-central",
+      "topicLabel": "Sistemul nervos central",
+      "lessonUrl": "sistemul_nervos.html#sistem-nervos-central",
+      "id": "asoc-400"
+    }
+  ]
+});

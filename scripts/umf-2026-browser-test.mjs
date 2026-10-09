@@ -6,7 +6,7 @@ import vm from 'node:vm';
 import {chromium} from 'playwright';
 import {loadSiteRegistry, publishedResources} from './site-registry.mjs';
 
-// Release gate for the 17 chapter sets (1,590 items). XIII is intentionally deferred.
+// Release gate for 17 chapter sets and the associative collection (1,990 items).
 // Run: node scripts/umf-2026-browser-test.mjs
 // Screenshots + evidence: tmp/umf-2026/browser-qa/ (override BB_UMF_BROWSER_OUTPUT).
 // No quiz data, expected answer or question count is replaced in the served site.
@@ -18,13 +18,13 @@ const [sourceMap, fixture, decisions, registry] = await Promise.all([
   readJSON('data/quiz-source-map.json'), readJSON('tests/umf-cluj-2026-answer-key.json'),
   readJSON('data/umf-2026-semantic-revisions.json'), loadSiteRegistry()
 ]);
-const sets = sourceMap.filter(set => set.sourceChapter !== 'XIII');
+const sets = sourceMap.filter(set => set.publicationStatus !== 'deferred');
 const numbersFor = set => set.ranges.flatMap(([start, end]) => Array.from({length:end - start + 1}, (_, i) => start + i));
 const lettersFor = (set, number) => [...new Set(fixture.chapters[set.sourceChapter].answers[number].printed)].sort();
 const published = publishedResources(registry).resources.filter(resource => resource.kind === 'quiz');
-assert.equal(sets.length, 17, 'This release contains exactly 17 chapter sets');
-assert.equal(sets.reduce((sum, set) => sum + numbersFor(set).length, 0), 1590);
-assert.deepEqual(Array.from(published, item => item.url).sort(), sets.map(set => set.url).sort(), 'Only the 17 approved sets are published');
+assert.equal(sets.length, 18, 'This release contains 17 chapter sets and one associative collection');
+assert.equal(sets.reduce((sum, set) => sum + numbersFor(set).length, 0), 1990);
+assert.deepEqual(Array.from(published, item => item.url).sort(), sets.map(set => set.url).sort(), 'All 18 approved sets are published');
 const coverage = new Set();
 for (const set of sets) {
   const sandbox = {window:{}};
@@ -47,11 +47,11 @@ for (const set of sets) {
     if (decision) assert.equal(q.contentRevision || 0, decision.requiresReverification ? 1 : 0, 'Reviewed semantic revision: ' + identity);
   }
 }
-assert.equal(coverage.size, 1590);
+assert.equal(coverage.size, 1990);
 await mkdir(output, {recursive:true});
 const evidence = {
-  status:'running', startedAt:new Date().toISOString(), prefix, sets:17, questions:1590,
-  scope:'I–XII only; XIII remains unpublished', screenshots:[], results:[],
+  status:'running', startedAt:new Date().toISOString(), prefix, sets:18, questions:1990,
+  scope:'I–XIII, including the associative collection', screenshots:[], results:[],
   additionalExistingCoverage:{
     'scripts/quiz-mistakes-test.mjs':'Completed initial run, original IDs, correction rounds, corrected-question removal, source-run isolation and visible search.',
     'scripts/quiz-content-compatibility-test.mjs':'Old hashes, stable IDs, retired answers, semantic reverification and retained priorResults.',
@@ -144,10 +144,10 @@ try {
       evidence.current = {device:device.name, chapterNum:set.chapterNum, url:set.url};
       await page.goto(base + 'testare.html');
       await page.waitForFunction(() => document.body?.dataset.analyticsReady === 'true');
-      assert.equal(await page.locator('#lab-testing-catalog a[id^="testing-quiz-"]').count(), 17);
-      assert.match(await page.locator('#lab-testing-count').innerText(), /17/);
+      assert.equal(await page.locator('#lab-testing-catalog a[id^="testing-quiz-"]').count(), 18);
+      assert.match(await page.locator('#lab-testing-count').innerText(), /18/);
       assert.deepEqual(await page.locator('#lab-testing-catalog a[id^="testing-quiz-"]').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')).sort()), sets.map(item => item.url).sort());
-      assert.equal(await page.locator('.testing-progress-count + progress').getAttribute('max'), '1590');
+      assert.equal(await page.locator('.testing-progress-count + progress').getAttribute('max'), '1990');
       if (set === sets[0]) { await noOverflow(page, device.name + ' catalog'); await capture(page, device.name + '-catalog'); }
       await page.locator('#testing-quiz-' + set.chapterNum).click(); await ready(page);
       assert.equal(new URL(page.url()).pathname, prefix + set.url);
@@ -164,8 +164,8 @@ try {
       assert.deepEqual(runtime.revisions, set.quiz.questions.map(q => q.contentRevision || 0)); assert.deepEqual(runtime.indexedRevisions, runtime.revisions);
       assert.equal(await page.locator('.lab-topbar-back').getAttribute('href'), set.lessonUrl);
       if (phone) await page.locator('.lab-menu-trigger').click();
-      await page.locator('#sidenav').getByRole('link', {name:'Lecția', exact:true}).click();
-      assert.equal(new URL(page.url()).pathname, prefix + set.lessonUrl, 'Back link opens the parent lesson');
+      await page.locator('#sidenav').getByRole('link', {name:set.sourceChapter === 'XIII' ? '← Toate testele' : 'Lecția', exact:true}).click();
+      assert.equal(new URL(page.url()).pathname, prefix + set.lessonUrl, 'Back link opens the parent lesson or collection catalog');
       await page.goBack(); await ready(page);
       const boundaries = [];
       for (const range of set.quiz.ranges) {
@@ -207,10 +207,10 @@ try {
     }
     evidence.current = {device:device.name, surface:'statistics-and-simulation'};
     await page.goto(base + 'statistici.html'); await page.waitForFunction(() => document.body?.dataset.analyticsReady === 'true');
-    assert.equal(await page.locator('#analytics-chapter option').count(), 18, 'All + exactly 17 chapter filters');
+    assert.equal(await page.locator('#analytics-chapter option').count(), 19, 'All + 18 quiz filters');
     const report = await page.evaluate(() => BBQuizAnalytics.getReport({days:'all'}));
-    assert.equal(report.quizzes.length, 17); assert.equal(report.history.length, 51);
-    assert.equal(report.quizzes.reduce((sum, quiz) => sum + quiz.current.total, 0), 1590);
+    assert.equal(report.quizzes.length, 18); assert.equal(report.history.length, 54);
+    assert.equal(report.quizzes.reduce((sum, quiz) => sum + quiz.current.total, 0), 1990);
     for (const set of sets) {
       const result = evidence.results.find(item => item.device === device.name && item.chapterNum === set.chapterNum);
       assert.ok(report.mistakes.some(item => item.chapterNum === set.chapterNum && item.number === result.wrong), 'Mistakes retain original source numbers');
@@ -222,7 +222,7 @@ try {
     await page.goto(base + 'testare.html'); await page.waitForFunction(() => document.body?.dataset.analyticsReady === 'true');
     assert.deepEqual(await page.locator('[name="simulation-chapter"]').evaluateAll(nodes => nodes.map(node => Number(node.value)).sort((a,b) => a-b)), sets.map(set => set.chapterNum).sort((a,b) => a-b));
     await page.getByRole('button', {name:'Selectează toate', exact:true}).click();
-    assert.equal(await page.locator('[name="simulation-chapter"]:checked').count(), 17);
+    assert.equal(await page.locator('[name="simulation-chapter"]:checked').count(), 18);
     assert.equal((await page.locator('[data-allocation]').allTextContents()).reduce((sum, value) => sum + (parseInt(value) || 0), 0), 35);
     await page.getByRole('button', {name:'Începe simularea', exact:true}).click();
     await page.waitForURL(/simulare.html\?test=/); await page.waitForSelector('.sim-question');
@@ -240,9 +240,9 @@ try {
     assert.deepEqual(errors, [], 'No JavaScript errors'); assert.deepEqual(failedLocalRequests, [], 'No failed local assets');
     await context.close();
   }
-  assert.equal(evidence.results.length, 34);
+  assert.equal(evidence.results.length, sets.length * 2);
   evidence.status = 'passed'; delete evidence.current; evidence.completedAt = new Date().toISOString(); await saveEvidence();
-  console.log(`PASS: 17 sets / 1,590 items on desktop and phone; independent scoring, revisions, ranges, search, persistence, statistics and all-chapter simulation. Captures: ${output}`);
+  console.log(`PASS: 18 sets / 1,990 items on desktop and phone; independent scoring, revisions, ranges, search, persistence, statistics and all-chapter simulation. Captures: ${output}`);
 } catch (error) {
   if (activePage && !activePage.isClosed()) {
     await activePage.screenshot({path:resolve(output, 'failure.png')}).catch(() => {});

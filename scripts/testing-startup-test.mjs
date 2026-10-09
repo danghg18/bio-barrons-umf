@@ -38,7 +38,7 @@ try {
     await page.goto(base + edition + 'testare.html', {waitUntil:'commit'});
     await page.locator('#testing-quiz-1').waitFor();
     assert.equal(await page.locator('#lab-testing-catalog .lab-bento-cat').count(), 0, 'No legacy colored cards before analytics loads');
-    assert.equal(await page.locator('.testing-chapter-row').count(), 17);
+    assert.equal(await page.locator('.testing-chapter-row').count(), 18);
     assert.equal(await page.locator('.testing-unstarted').first().innerText(), 'Se încarcă progresul…');
     await capture(page, `after-${name}-startup`);
     release();

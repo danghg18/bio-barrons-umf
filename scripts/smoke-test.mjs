@@ -465,7 +465,7 @@ try {
   const activeQuizSets = sourceMap.filter(set => set.publicationStatus !== 'deferred');
   const quizFiles = resources.filter(resource => resource.kind === 'quiz').map(resource => resource.url);
   const sourceNumbers = set => set.ranges.flatMap(([start, end]) => Array.from({length:end - start + 1}, (_, index) => start + index));
-  if (activeQuizSets.length !== 17 || activeQuizSets.reduce((total, set) => total + sourceNumbers(set).length, 0) !== 1590) errors.push('updated worker release scope must contain 17 active sets / 1,590 questions');
+  if (activeQuizSets.length !== 18 || activeQuizSets.reduce((total, set) => total + sourceNumbers(set).length, 0) !== 1990) errors.push('updated worker release scope must contain 18 active sets / 1,990 questions');
   if (JSON.stringify([...quizFiles].sort()) !== JSON.stringify(activeQuizSets.map(set => set.url).sort())) errors.push('updated worker registry/source-map quiz coverage differs');
   for (const file of [...lessonFiles, ...quizFiles, 'testare.html']) {
     const response = await upgradePage.goto(base+file, {waitUntil:'domcontentloaded'});

@@ -22,7 +22,7 @@ try {
   };
   let result = await run(registry);
   assert.equal(result.status, 0, result.stderr);
-  assert.match(result.stdout, /Validated quiz topics: 17 quizzes, 1590 questions/);
+  assert.match(result.stdout, /Validated quiz topics: 18 quizzes, 1990 questions/);
   const expectedTopics = [
     ['bb.quiz.celula.v1', 'cel-061', 'membrana'],
     ['bb.quiz.celula.v1', 'cel-076', 'transport'],

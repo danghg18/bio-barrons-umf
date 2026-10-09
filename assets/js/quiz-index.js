@@ -22743,5 +22743,5721 @@ window.BB_QUIZ_INDEX = [
         "lessonUrl": "sistemul_reproducator_masculin.html#ducte"
       }
     ]
+  },
+  {
+    "bankUrl": "assets/data/simulation/bb.quiz.asociative.v1.json",
+    "chapterNum": 1000,
+    "name": "Grile asociative",
+    "url": "grile_asociative.html",
+    "storageKey": "bb.quiz.asociative.v1",
+    "collection": true,
+    "shortLabel": "↔",
+    "version": 1,
+    "questions": [
+      {
+        "id": "asoc-001",
+        "number": 1,
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-topografie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 1
+      },
+      {
+        "id": "asoc-002",
+        "number": 2,
+        "rangeId": "grile-1-10",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-cavitati",
+        "sourceChapter": "XIII",
+        "sourceNumber": 2
+      },
+      {
+        "id": "asoc-003",
+        "number": 3,
+        "rangeId": "grile-1-10",
+        "correct": [
+          "D"
+        ],
+        "topicId": "sistemul-reproducator-masculin-masculin",
+        "sourceChapter": "XIII",
+        "sourceNumber": 3
+      },
+      {
+        "id": "asoc-004",
+        "number": 4,
+        "rangeId": "grile-1-10",
+        "correct": [
+          "B",
+          "E"
+        ],
+        "topicId": "sistemul-reproducator-masculin-spermatozoid",
+        "sourceChapter": "XIII",
+        "sourceNumber": 4
+      },
+      {
+        "id": "asoc-005",
+        "number": 5,
+        "rangeId": "grile-1-10",
+        "correct": [
+          "B",
+          "D"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-cavitati",
+        "sourceChapter": "XIII",
+        "sourceNumber": 5
+      },
+      {
+        "id": "asoc-006",
+        "number": 6,
+        "rangeId": "grile-1-10",
+        "correct": [
+          "B",
+          "D"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-functii",
+        "sourceChapter": "XIII",
+        "sourceNumber": 6
+      },
+      {
+        "id": "asoc-007",
+        "number": 7,
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-reproducator-feminin-feminin",
+        "sourceChapter": "XIII",
+        "sourceNumber": 7
+      },
+      {
+        "id": "asoc-008",
+        "number": 8,
+        "rangeId": "grile-1-10",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-cavitati",
+        "sourceChapter": "XIII",
+        "sourceNumber": 8
+      },
+      {
+        "id": "asoc-009",
+        "number": 9,
+        "rangeId": "grile-1-10",
+        "correct": [
+          "D",
+          "E"
+        ],
+        "topicId": "organele-de-simt-ureche",
+        "sourceChapter": "XIII",
+        "sourceNumber": 9
+      },
+      {
+        "id": "asoc-010",
+        "number": 10,
+        "rangeId": "grile-1-10",
+        "correct": [
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-reproducator-feminin-feminin",
+        "sourceChapter": "XIII",
+        "sourceNumber": 10
+      },
+      {
+        "id": "asoc-011",
+        "number": 11,
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "D"
+        ],
+        "topicId": "sistemul-digestiv-stomac",
+        "sourceChapter": "XIII",
+        "sourceNumber": 11
+      },
+      {
+        "id": "asoc-012",
+        "number": 12,
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-reproducator-feminin-uter",
+        "sourceChapter": "XIII",
+        "sourceNumber": 12
+      },
+      {
+        "id": "asoc-013",
+        "number": 13,
+        "rangeId": "grile-11-20",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-cavitati",
+        "sourceChapter": "XIII",
+        "sourceNumber": 13
+      },
+      {
+        "id": "asoc-014",
+        "number": 14,
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-celula",
+        "sourceChapter": "XIII",
+        "sourceNumber": 14
+      },
+      {
+        "id": "asoc-015",
+        "number": 15,
+        "rangeId": "grile-11-20",
+        "correct": [
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-reproducator-feminin-feminin",
+        "sourceChapter": "XIII",
+        "sourceNumber": 15
+      },
+      {
+        "id": "asoc-016",
+        "number": 16,
+        "rangeId": "grile-11-20",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-endocrin-calciu",
+        "sourceChapter": "XIII",
+        "sourceNumber": 16
+      },
+      {
+        "id": "asoc-017",
+        "number": 17,
+        "rangeId": "grile-11-20",
+        "correct": [
+          "B",
+          "C"
+        ],
+        "topicId": "sistemul-reproducator-masculin-masculin",
+        "sourceChapter": "XIII",
+        "sourceNumber": 17
+      },
+      {
+        "id": "asoc-018",
+        "number": 18,
+        "rangeId": "grile-11-20",
+        "correct": [
+          "E"
+        ],
+        "topicId": "sistemul-digestiv-digestiv",
+        "sourceChapter": "XIII",
+        "sourceNumber": 18
+      },
+      {
+        "id": "asoc-019",
+        "number": 19,
+        "rangeId": "grile-11-20",
+        "correct": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-digestiv-digestiv",
+        "sourceChapter": "XIII",
+        "sourceNumber": 19
+      },
+      {
+        "id": "asoc-020",
+        "number": 20,
+        "rangeId": "grile-11-20",
+        "correct": [
+          "A",
+          "C"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-cavitati",
+        "sourceChapter": "XIII",
+        "sourceNumber": 20
+      },
+      {
+        "id": "asoc-021",
+        "number": 21,
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-transport",
+        "sourceChapter": "XIII",
+        "sourceNumber": 21
+      },
+      {
+        "id": "asoc-022",
+        "number": 22,
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "C"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-celula",
+        "sourceChapter": "XIII",
+        "sourceNumber": 22
+      },
+      {
+        "id": "asoc-023",
+        "number": 23,
+        "rangeId": "grile-21-30",
+        "correct": [
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-digestiv-digestiv",
+        "sourceChapter": "XIII",
+        "sourceNumber": 23
+      },
+      {
+        "id": "asoc-024",
+        "number": 24,
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A"
+        ],
+        "topicId": "sistemul-renal-complet-renal",
+        "sourceChapter": "XIII",
+        "sourceNumber": 24
+      },
+      {
+        "id": "asoc-025",
+        "number": 25,
+        "rangeId": "grile-21-30",
+        "correct": [
+          "B",
+          "C"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-mitocondrii",
+        "sourceChapter": "XIII",
+        "sourceNumber": 25
+      },
+      {
+        "id": "asoc-026",
+        "number": 26,
+        "rangeId": "grile-21-30",
+        "correct": [
+          "B",
+          "C"
+        ],
+        "topicId": "sistemul-digestiv-digestiv",
+        "sourceChapter": "XIII",
+        "sourceNumber": 26
+      },
+      {
+        "id": "asoc-027",
+        "number": 27,
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-digestiv-digestiv",
+        "sourceChapter": "XIII",
+        "sourceNumber": 27
+      },
+      {
+        "id": "asoc-028",
+        "number": 28,
+        "rangeId": "grile-21-30",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-transport",
+        "sourceChapter": "XIII",
+        "sourceNumber": 28
+      },
+      {
+        "id": "asoc-029",
+        "number": 29,
+        "rangeId": "grile-21-30",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-cavitati",
+        "sourceChapter": "XIII",
+        "sourceNumber": 29
+      },
+      {
+        "id": "asoc-030",
+        "number": 30,
+        "rangeId": "grile-21-30",
+        "correct": [
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-cardiovascular-cardiac",
+        "sourceChapter": "XIII",
+        "sourceNumber": 30
+      },
+      {
+        "id": "asoc-031",
+        "number": 31,
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-cardiovascular-cardiac",
+        "sourceChapter": "XIII",
+        "sourceNumber": 31
+      },
+      {
+        "id": "asoc-032",
+        "number": 32,
+        "rangeId": "grile-31-40",
+        "correct": [
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-respirator-respirator",
+        "sourceChapter": "XIII",
+        "sourceNumber": 32
+      },
+      {
+        "id": "asoc-033",
+        "number": 33,
+        "rangeId": "grile-31-40",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "metabolism-si-nutritie-metabolism",
+        "sourceChapter": "XIII",
+        "sourceNumber": 33
+      },
+      {
+        "id": "asoc-034",
+        "number": 34,
+        "rangeId": "grile-31-40",
+        "correct": [
+          "B",
+          "E"
+        ],
+        "topicId": "sistemul-digestiv-stomac",
+        "sourceChapter": "XIII",
+        "sourceNumber": 34
+      },
+      {
+        "id": "asoc-035",
+        "number": 35,
+        "rangeId": "grile-31-40",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-digestiv-digestiv",
+        "sourceChapter": "XIII",
+        "sourceNumber": 35
+      },
+      {
+        "id": "asoc-036",
+        "number": 36,
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-cavitati",
+        "sourceChapter": "XIII",
+        "sourceNumber": 36
+      },
+      {
+        "id": "asoc-037",
+        "number": 37,
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-digestiv-stomac",
+        "sourceChapter": "XIII",
+        "sourceNumber": 37
+      },
+      {
+        "id": "asoc-038",
+        "number": 38,
+        "rangeId": "grile-31-40",
+        "correct": [
+          "B",
+          "C"
+        ],
+        "topicId": "sangele-eritrocite",
+        "sourceChapter": "XIII",
+        "sourceNumber": 38
+      },
+      {
+        "id": "asoc-039",
+        "number": 39,
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-digestiv-digestiv",
+        "sourceChapter": "XIII",
+        "sourceNumber": 39
+      },
+      {
+        "id": "asoc-040",
+        "number": 40,
+        "rangeId": "grile-31-40",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-cardiovascular-cardiac",
+        "sourceChapter": "XIII",
+        "sourceNumber": 40
+      },
+      {
+        "id": "asoc-041",
+        "number": 41,
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ],
+        "topicId": "metabolism-si-nutritie-metabolism",
+        "sourceChapter": "XIII",
+        "sourceNumber": 41
+      },
+      {
+        "id": "asoc-042",
+        "number": 42,
+        "rangeId": "grile-41-50",
+        "correct": [
+          "C"
+        ],
+        "topicId": "metabolism-si-nutritie-metabolism",
+        "sourceChapter": "XIII",
+        "sourceNumber": 42
+      },
+      {
+        "id": "asoc-043",
+        "number": 43,
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "B"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-transport",
+        "sourceChapter": "XIII",
+        "sourceNumber": 43
+      },
+      {
+        "id": "asoc-044",
+        "number": 44,
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ],
+        "topicId": "tesutul-nervos-sinapsa",
+        "sourceChapter": "XIII",
+        "sourceNumber": 44
+      },
+      {
+        "id": "asoc-045",
+        "number": 45,
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "tesutul-nervos-sinapsa",
+        "sourceChapter": "XIII",
+        "sourceNumber": 45
+      },
+      {
+        "id": "asoc-046",
+        "number": 46,
+        "rangeId": "grile-41-50",
+        "correct": [
+          "B",
+          "C"
+        ],
+        "topicId": "sistemul-renal-complet-renal",
+        "sourceChapter": "XIII",
+        "sourceNumber": 46
+      },
+      {
+        "id": "asoc-047",
+        "number": 47,
+        "rangeId": "grile-41-50",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "sangele-eritrocite",
+        "sourceChapter": "XIII",
+        "sourceNumber": 47
+      },
+      {
+        "id": "asoc-048",
+        "number": 48,
+        "rangeId": "grile-41-50",
+        "correct": [
+          "D",
+          "E"
+        ],
+        "topicId": "organele-de-simt-simturi",
+        "sourceChapter": "XIII",
+        "sourceNumber": 48
+      },
+      {
+        "id": "asoc-049",
+        "number": 49,
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ],
+        "topicId": "organele-de-simt-simturi",
+        "sourceChapter": "XIII",
+        "sourceNumber": 49
+      },
+      {
+        "id": "asoc-050",
+        "number": 50,
+        "rangeId": "grile-41-50",
+        "correct": [
+          "A",
+          "D"
+        ],
+        "topicId": "sistemul-cardiovascular-cardiac",
+        "sourceChapter": "XIII",
+        "sourceNumber": 50
+      },
+      {
+        "id": "asoc-051",
+        "number": 51,
+        "rangeId": "grile-51-60",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "organele-de-simt-simturi",
+        "sourceChapter": "XIII",
+        "sourceNumber": 51
+      },
+      {
+        "id": "asoc-052",
+        "number": 52,
+        "rangeId": "grile-51-60",
+        "correct": [
+          "B",
+          "E"
+        ],
+        "topicId": "organele-de-simt-simturi",
+        "sourceChapter": "XIII",
+        "sourceNumber": 52
+      },
+      {
+        "id": "asoc-053",
+        "number": 53,
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-cavitati",
+        "sourceChapter": "XIII",
+        "sourceNumber": 53
+      },
+      {
+        "id": "asoc-054",
+        "number": 54,
+        "rangeId": "grile-51-60",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-mitocondrii",
+        "sourceChapter": "XIII",
+        "sourceNumber": 54
+      },
+      {
+        "id": "asoc-055",
+        "number": 55,
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-cavitati",
+        "sourceChapter": "XIII",
+        "sourceNumber": 55
+      },
+      {
+        "id": "asoc-056",
+        "number": 56,
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-celula",
+        "sourceChapter": "XIII",
+        "sourceNumber": 56
+      },
+      {
+        "id": "asoc-057",
+        "number": 57,
+        "rangeId": "grile-51-60",
+        "correct": [
+          "B"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-celula",
+        "sourceChapter": "XIII",
+        "sourceNumber": 57
+      },
+      {
+        "id": "asoc-058",
+        "number": 58,
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ],
+        "topicId": "tesutul-muscular-muschi",
+        "sourceChapter": "XIII",
+        "sourceNumber": 58
+      },
+      {
+        "id": "asoc-059",
+        "number": 59,
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "tesutul-muscular-muschi",
+        "sourceChapter": "XIII",
+        "sourceNumber": 59
+      },
+      {
+        "id": "asoc-060",
+        "number": 60,
+        "rangeId": "grile-51-60",
+        "correct": [
+          "A",
+          "C"
+        ],
+        "topicId": "sistemul-digestiv-digestiv",
+        "sourceChapter": "XIII",
+        "sourceNumber": 60
+      },
+      {
+        "id": "asoc-061",
+        "number": 61,
+        "rangeId": "grile-61-70",
+        "correct": [
+          "B",
+          "C"
+        ],
+        "topicId": "metabolism-si-nutritie-metabolism",
+        "sourceChapter": "XIII",
+        "sourceNumber": 61
+      },
+      {
+        "id": "asoc-062",
+        "number": 62,
+        "rangeId": "grile-61-70",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-cardiovascular-cardiac",
+        "sourceChapter": "XIII",
+        "sourceNumber": 62
+      },
+      {
+        "id": "asoc-063",
+        "number": 63,
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ],
+        "topicId": "sistemul-limfatic-si-imun-limfatic",
+        "sourceChapter": "XIII",
+        "sourceNumber": 63
+      },
+      {
+        "id": "asoc-064",
+        "number": 64,
+        "rangeId": "grile-61-70",
+        "correct": [
+          "B",
+          "E"
+        ],
+        "topicId": "sistemul-endocrin-endocrin",
+        "sourceChapter": "XIII",
+        "sourceNumber": 64
+      },
+      {
+        "id": "asoc-065",
+        "number": 65,
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A",
+          "D"
+        ],
+        "topicId": "sistemul-cardiovascular-cardiac",
+        "sourceChapter": "XIII",
+        "sourceNumber": 65
+      },
+      {
+        "id": "asoc-066",
+        "number": 66,
+        "rangeId": "grile-61-70",
+        "correct": [
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-digestiv-digestiv",
+        "sourceChapter": "XIII",
+        "sourceNumber": 66
+      },
+      {
+        "id": "asoc-067",
+        "number": 67,
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-limfatic-si-imun-limfatic",
+        "sourceChapter": "XIII",
+        "sourceNumber": 67
+      },
+      {
+        "id": "asoc-068",
+        "number": 68,
+        "rangeId": "grile-61-70",
+        "correct": [
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-endocrin-endocrin",
+        "sourceChapter": "XIII",
+        "sourceNumber": 68
+      },
+      {
+        "id": "asoc-069",
+        "number": 69,
+        "rangeId": "grile-61-70",
+        "correct": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "metabolism-si-nutritie-metabolism",
+        "sourceChapter": "XIII",
+        "sourceNumber": 69
+      },
+      {
+        "id": "asoc-070",
+        "number": 70,
+        "rangeId": "grile-61-70",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "tesutul-muscular-muschi",
+        "sourceChapter": "XIII",
+        "sourceNumber": 70
+      },
+      {
+        "id": "asoc-071",
+        "number": 71,
+        "rangeId": "grile-71-80",
+        "correct": [
+          "B",
+          "D"
+        ],
+        "topicId": "metabolism-si-nutritie-metabolism",
+        "sourceChapter": "XIII",
+        "sourceNumber": 71
+      },
+      {
+        "id": "asoc-072",
+        "number": 72,
+        "rangeId": "grile-71-80",
+        "correct": [
+          "B",
+          "C"
+        ],
+        "topicId": "sangele-eritrocite",
+        "sourceChapter": "XIII",
+        "sourceNumber": 72
+      },
+      {
+        "id": "asoc-073",
+        "number": 73,
+        "rangeId": "grile-71-80",
+        "correct": [
+          "B",
+          "E"
+        ],
+        "topicId": "sistemul-respirator-respirator",
+        "sourceChapter": "XIII",
+        "sourceNumber": 73
+      },
+      {
+        "id": "asoc-074",
+        "number": 74,
+        "rangeId": "grile-71-80",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ],
+        "topicId": "sangele-eritrocite",
+        "sourceChapter": "XIII",
+        "sourceNumber": 74
+      },
+      {
+        "id": "asoc-075",
+        "number": 75,
+        "rangeId": "grile-71-80",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ],
+        "topicId": "sistemul-reproducator-masculin-masculin",
+        "sourceChapter": "XIII",
+        "sourceNumber": 75
+      },
+      {
+        "id": "asoc-076",
+        "number": 76,
+        "rangeId": "grile-71-80",
+        "correct": [
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-respirator-respirator",
+        "sourceChapter": "XIII",
+        "sourceNumber": 76
+      },
+      {
+        "id": "asoc-077",
+        "number": 77,
+        "rangeId": "grile-71-80",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "metabolism-si-nutritie-metabolism",
+        "sourceChapter": "XIII",
+        "sourceNumber": 77
+      },
+      {
+        "id": "asoc-078",
+        "number": 78,
+        "rangeId": "grile-71-80",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ],
+        "topicId": "sistemul-endocrin-endocrin",
+        "sourceChapter": "XIII",
+        "sourceNumber": 78
+      },
+      {
+        "id": "asoc-079",
+        "number": 79,
+        "rangeId": "grile-71-80",
+        "correct": [
+          "A",
+          "C"
+        ],
+        "topicId": "sangele-eritrocite",
+        "sourceChapter": "XIII",
+        "sourceNumber": 79
+      },
+      {
+        "id": "asoc-080",
+        "number": 80,
+        "rangeId": "grile-71-80",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ],
+        "topicId": "tesutul-muscular-muschi",
+        "sourceChapter": "XIII",
+        "sourceNumber": 80
+      },
+      {
+        "id": "asoc-081",
+        "number": 81,
+        "rangeId": "grile-81-90",
+        "correct": [
+          "D"
+        ],
+        "topicId": "sistemul-limfatic-si-imun-limfatic",
+        "sourceChapter": "XIII",
+        "sourceNumber": 81
+      },
+      {
+        "id": "asoc-082",
+        "number": 82,
+        "rangeId": "grile-81-90",
+        "correct": [
+          "A",
+          "E"
+        ],
+        "topicId": "sangele-eritrocite",
+        "sourceChapter": "XIII",
+        "sourceNumber": 82
+      },
+      {
+        "id": "asoc-083",
+        "number": 83,
+        "rangeId": "grile-81-90",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-renal-complet-renal",
+        "sourceChapter": "XIII",
+        "sourceNumber": 83
+      },
+      {
+        "id": "asoc-084",
+        "number": 84,
+        "rangeId": "grile-81-90",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "tesutul-muscular-muschi",
+        "sourceChapter": "XIII",
+        "sourceNumber": 84
+      },
+      {
+        "id": "asoc-085",
+        "number": 85,
+        "rangeId": "grile-81-90",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-endocrin-endocrin",
+        "sourceChapter": "XIII",
+        "sourceNumber": 85
+      },
+      {
+        "id": "asoc-086",
+        "number": 86,
+        "rangeId": "grile-81-90",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ],
+        "topicId": "tesutul-muscular-muschi",
+        "sourceChapter": "XIII",
+        "sourceNumber": 86
+      },
+      {
+        "id": "asoc-087",
+        "number": 87,
+        "rangeId": "grile-81-90",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-limfatic-si-imun-limfatic",
+        "sourceChapter": "XIII",
+        "sourceNumber": 87
+      },
+      {
+        "id": "asoc-088",
+        "number": 88,
+        "rangeId": "grile-81-90",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-endocrin-endocrin",
+        "sourceChapter": "XIII",
+        "sourceNumber": 88
+      },
+      {
+        "id": "asoc-089",
+        "number": 89,
+        "rangeId": "grile-81-90",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-endocrin-endocrin",
+        "sourceChapter": "XIII",
+        "sourceNumber": 89
+      },
+      {
+        "id": "asoc-090",
+        "number": 90,
+        "rangeId": "grile-81-90",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ],
+        "topicId": "organele-de-simt-simturi",
+        "sourceChapter": "XIII",
+        "sourceNumber": 90
+      },
+      {
+        "id": "asoc-091",
+        "number": 91,
+        "rangeId": "grile-91-100",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "organele-de-simt-simturi",
+        "sourceChapter": "XIII",
+        "sourceNumber": 91
+      },
+      {
+        "id": "asoc-092",
+        "number": 92,
+        "rangeId": "grile-91-100",
+        "correct": [
+          "B",
+          "D"
+        ],
+        "topicId": "metabolism-si-nutritie-metabolism",
+        "sourceChapter": "XIII",
+        "sourceNumber": 92
+      },
+      {
+        "id": "asoc-093",
+        "number": 93,
+        "rangeId": "grile-91-100",
+        "correct": [
+          "A",
+          "B"
+        ],
+        "topicId": "sistemul-endocrin-endocrin",
+        "sourceChapter": "XIII",
+        "sourceNumber": 93
+      },
+      {
+        "id": "asoc-094",
+        "number": 94,
+        "rangeId": "grile-91-100",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-functii",
+        "sourceChapter": "XIII",
+        "sourceNumber": 94
+      },
+      {
+        "id": "asoc-095",
+        "number": 95,
+        "rangeId": "grile-91-100",
+        "correct": [
+          "B",
+          "C"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-cavitati",
+        "sourceChapter": "XIII",
+        "sourceNumber": 95
+      },
+      {
+        "id": "asoc-096",
+        "number": 96,
+        "rangeId": "grile-91-100",
+        "correct": [
+          "A",
+          "B"
+        ],
+        "topicId": "sistemul-endocrin-endocrin",
+        "sourceChapter": "XIII",
+        "sourceNumber": 96
+      },
+      {
+        "id": "asoc-097",
+        "number": 97,
+        "rangeId": "grile-91-100",
+        "correct": [
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-endocrin-endocrin",
+        "sourceChapter": "XIII",
+        "sourceNumber": 97
+      },
+      {
+        "id": "asoc-098",
+        "number": 98,
+        "rangeId": "grile-91-100",
+        "correct": [
+          "D"
+        ],
+        "topicId": "sistemul-limfatic-si-imun-limfatic",
+        "sourceChapter": "XIII",
+        "sourceNumber": 98
+      },
+      {
+        "id": "asoc-099",
+        "number": 99,
+        "rangeId": "grile-91-100",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ],
+        "topicId": "sistemul-endocrin-calciu",
+        "sourceChapter": "XIII",
+        "sourceNumber": 99
+      },
+      {
+        "id": "asoc-100",
+        "number": 100,
+        "rangeId": "grile-91-100",
+        "correct": [
+          "D",
+          "E"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-functii",
+        "sourceChapter": "XIII",
+        "sourceNumber": 100
+      },
+      {
+        "id": "asoc-101",
+        "number": 101,
+        "rangeId": "grile-101-110",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-respirator-anatomie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 101
+      },
+      {
+        "id": "asoc-102",
+        "number": 102,
+        "rangeId": "grile-101-110",
+        "correct": [
+          "C",
+          "E"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-membrana",
+        "sourceChapter": "XIII",
+        "sourceNumber": 102
+      },
+      {
+        "id": "asoc-103",
+        "number": 103,
+        "rangeId": "grile-101-110",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ],
+        "topicId": "oasele-si-articulatiile-osul",
+        "sourceChapter": "XIII",
+        "sourceNumber": 103
+      },
+      {
+        "id": "asoc-104",
+        "number": 104,
+        "rangeId": "grile-101-110",
+        "correct": [
+          "A",
+          "D"
+        ],
+        "topicId": "sangele-globulele-rosii",
+        "sourceChapter": "XIII",
+        "sourceNumber": 104
+      },
+      {
+        "id": "asoc-105",
+        "number": 105,
+        "rangeId": "grile-101-110",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-nucleu",
+        "sourceChapter": "XIII",
+        "sourceNumber": 105
+      },
+      {
+        "id": "asoc-106",
+        "number": 106,
+        "rangeId": "grile-101-110",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-digestiv-intestinele",
+        "sourceChapter": "XIII",
+        "sourceNumber": 106
+      },
+      {
+        "id": "asoc-107",
+        "number": 107,
+        "rangeId": "grile-101-110",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ],
+        "topicId": "sistemul-endocrin-glandele-paratiroide",
+        "sourceChapter": "XIII",
+        "sourceNumber": 107
+      },
+      {
+        "id": "asoc-108",
+        "number": 108,
+        "rangeId": "grile-101-110",
+        "correct": [
+          "A",
+          "C"
+        ],
+        "topicId": "sistemul-digestiv-intestinele",
+        "sourceChapter": "XIII",
+        "sourceNumber": 108
+      },
+      {
+        "id": "asoc-109",
+        "number": 109,
+        "rangeId": "grile-101-110",
+        "correct": [
+          "C"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-transport",
+        "sourceChapter": "XIII",
+        "sourceNumber": 109
+      },
+      {
+        "id": "asoc-110",
+        "number": 110,
+        "rangeId": "grile-101-110",
+        "correct": [
+          "B",
+          "C"
+        ],
+        "topicId": "sistemul-reproducator-feminin-organe",
+        "sourceChapter": "XIII",
+        "sourceNumber": 110
+      },
+      {
+        "id": "asoc-111",
+        "number": 111,
+        "rangeId": "grile-111-120",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-termeni",
+        "sourceChapter": "XIII",
+        "sourceNumber": 111
+      },
+      {
+        "id": "asoc-112",
+        "number": 112,
+        "rangeId": "grile-111-120",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-endocrin-hipofiza-glanda-pituitara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 112
+      },
+      {
+        "id": "asoc-113",
+        "number": 113,
+        "rangeId": "grile-111-120",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ],
+        "topicId": "organele-de-simt-alte-simturi",
+        "sourceChapter": "XIII",
+        "sourceNumber": 113
+      },
+      {
+        "id": "asoc-114",
+        "number": 114,
+        "rangeId": "grile-111-120",
+        "correct": [
+          "A",
+          "D"
+        ],
+        "topicId": "sistemul-reproducator-masculin-ducte",
+        "sourceChapter": "XIII",
+        "sourceNumber": 114
+      },
+      {
+        "id": "asoc-115",
+        "number": 115,
+        "rangeId": "grile-111-120",
+        "correct": [
+          "C",
+          "E"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-organite",
+        "sourceChapter": "XIII",
+        "sourceNumber": 115
+      },
+      {
+        "id": "asoc-116",
+        "number": 116,
+        "rangeId": "grile-111-120",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-respirator-schimbul-de-gaze",
+        "sourceChapter": "XIII",
+        "sourceNumber": 116
+      },
+      {
+        "id": "asoc-117",
+        "number": 117,
+        "rangeId": "grile-111-120",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-digestiv-organele-anexe",
+        "sourceChapter": "XIII",
+        "sourceNumber": 117
+      },
+      {
+        "id": "asoc-118",
+        "number": 118,
+        "rangeId": "grile-111-120",
+        "correct": [
+          "C",
+          "D"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-membrana",
+        "sourceChapter": "XIII",
+        "sourceNumber": 118
+      },
+      {
+        "id": "asoc-119",
+        "number": 119,
+        "rangeId": "grile-111-120",
+        "correct": [
+          "A",
+          "C"
+        ],
+        "topicId": "sistemul-cardiovascular-tipuri-de-circulatie-sanguina",
+        "sourceChapter": "XIII",
+        "sourceNumber": 119
+      },
+      {
+        "id": "asoc-120",
+        "number": 120,
+        "rangeId": "grile-111-120",
+        "correct": [
+          "A",
+          "B"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-functii",
+        "sourceChapter": "XIII",
+        "sourceNumber": 120
+      },
+      {
+        "id": "asoc-121",
+        "number": 121,
+        "rangeId": "grile-121-130",
+        "correct": [
+          "B",
+          "C"
+        ],
+        "topicId": "sistemul-nervos-sistem-nervos-central",
+        "sourceChapter": "XIII",
+        "sourceNumber": 121
+      },
+      {
+        "id": "asoc-122",
+        "number": 122,
+        "rangeId": "grile-121-130",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "metabolism-si-nutritie-rata-si-temperatura",
+        "sourceChapter": "XIII",
+        "sourceNumber": 122
+      },
+      {
+        "id": "asoc-123",
+        "number": 123,
+        "rangeId": "grile-121-130",
+        "correct": [
+          "B",
+          "D"
+        ],
+        "topicId": "organele-de-simt-alte-simturi",
+        "sourceChapter": "XIII",
+        "sourceNumber": 123
+      },
+      {
+        "id": "asoc-124",
+        "number": 124,
+        "rangeId": "grile-121-130",
+        "correct": [
+          "A",
+          "E"
+        ],
+        "topicId": "sistemul-endocrin-hipofiza-glanda-pituitara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 124
+      },
+      {
+        "id": "asoc-125",
+        "number": 125,
+        "rangeId": "grile-121-130",
+        "correct": [
+          "A",
+          "E"
+        ],
+        "topicId": "sistemul-endocrin-descrierea-generala-a-hormonilor",
+        "sourceChapter": "XIII",
+        "sourceNumber": 125
+      },
+      {
+        "id": "asoc-126",
+        "number": 126,
+        "rangeId": "grile-121-130",
+        "correct": [
+          "B",
+          "C"
+        ],
+        "topicId": "sistemul-nervos-sistem-nervos-periferic",
+        "sourceChapter": "XIII",
+        "sourceNumber": 126
+      },
+      {
+        "id": "asoc-127",
+        "number": 127,
+        "rangeId": "grile-121-130",
+        "correct": [
+          "B",
+          "C"
+        ],
+        "topicId": "sangele-globulele-rosii",
+        "sourceChapter": "XIII",
+        "sourceNumber": 127
+      },
+      {
+        "id": "asoc-128",
+        "number": 128,
+        "rangeId": "grile-121-130",
+        "correct": [
+          "A",
+          "B"
+        ],
+        "topicId": "sistemul-nervos-sistem-nervos-central",
+        "sourceChapter": "XIII",
+        "sourceNumber": 128
+      },
+      {
+        "id": "asoc-129",
+        "number": 129,
+        "rangeId": "grile-121-130",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-digestiv-organele-anexe",
+        "sourceChapter": "XIII",
+        "sourceNumber": 129
+      },
+      {
+        "id": "asoc-130",
+        "number": 130,
+        "rangeId": "grile-121-130",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "tesutul-nervos-organizare",
+        "sourceChapter": "XIII",
+        "sourceNumber": 130
+      },
+      {
+        "id": "asoc-131",
+        "number": 131,
+        "rangeId": "grile-131-140",
+        "correct": [
+          "C"
+        ],
+        "topicId": "organele-de-simt-alte-simturi",
+        "sourceChapter": "XIII",
+        "sourceNumber": 131
+      },
+      {
+        "id": "asoc-132",
+        "number": 132,
+        "rangeId": "grile-131-140",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "tesutul-muscular-tesutul-muscular",
+        "sourceChapter": "XIII",
+        "sourceNumber": 132
+      },
+      {
+        "id": "asoc-133",
+        "number": 133,
+        "rangeId": "grile-131-140",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sangele-globulele-rosii",
+        "sourceChapter": "XIII",
+        "sourceNumber": 133
+      },
+      {
+        "id": "asoc-134",
+        "number": 134,
+        "rangeId": "grile-131-140",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-nucleu",
+        "sourceChapter": "XIII",
+        "sourceNumber": 134
+      },
+      {
+        "id": "asoc-135",
+        "number": 135,
+        "rangeId": "grile-131-140",
+        "correct": [
+          "B",
+          "C"
+        ],
+        "topicId": "sistemul-nervos-sistem-nervos-autonom",
+        "sourceChapter": "XIII",
+        "sourceNumber": 135
+      },
+      {
+        "id": "asoc-136",
+        "number": 136,
+        "rangeId": "grile-131-140",
+        "correct": [
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-nervos-sistem-nervos-central",
+        "sourceChapter": "XIII",
+        "sourceNumber": 136
+      },
+      {
+        "id": "asoc-137",
+        "number": 137,
+        "rangeId": "grile-131-140",
+        "correct": [
+          "A",
+          "E"
+        ],
+        "topicId": "tesutul-muscular-muschiul-striat",
+        "sourceChapter": "XIII",
+        "sourceNumber": 137
+      },
+      {
+        "id": "asoc-138",
+        "number": 138,
+        "rangeId": "grile-131-140",
+        "correct": [
+          "A",
+          "B"
+        ],
+        "topicId": "sistemul-respirator-anatomie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 138
+      },
+      {
+        "id": "asoc-139",
+        "number": 139,
+        "rangeId": "grile-131-140",
+        "correct": [
+          "B",
+          "E"
+        ],
+        "topicId": "oasele-si-articulatiile-articulatii",
+        "sourceChapter": "XIII",
+        "sourceNumber": 139
+      },
+      {
+        "id": "asoc-140",
+        "number": 140,
+        "rangeId": "grile-131-140",
+        "correct": [
+          "B",
+          "D"
+        ],
+        "topicId": "tesutul-muscular-muschiul-striat",
+        "sourceChapter": "XIII",
+        "sourceNumber": 140
+      },
+      {
+        "id": "asoc-141",
+        "number": 141,
+        "rangeId": "grile-141-150",
+        "correct": [
+          "A",
+          "B"
+        ],
+        "topicId": "metabolism-si-nutritie-lipide-si-proteine",
+        "sourceChapter": "XIII",
+        "sourceNumber": 141
+      },
+      {
+        "id": "asoc-142",
+        "number": 142,
+        "rangeId": "grile-141-150",
+        "correct": [
+          "C",
+          "E"
+        ],
+        "topicId": "metabolism-si-nutritie-metabolismul-glucidelor",
+        "sourceChapter": "XIII",
+        "sourceNumber": 142
+      },
+      {
+        "id": "asoc-143",
+        "number": 143,
+        "rangeId": "grile-141-150",
+        "correct": [
+          "B",
+          "C"
+        ],
+        "topicId": "metabolism-si-nutritie-lipide-si-proteine",
+        "sourceChapter": "XIII",
+        "sourceNumber": 143
+      },
+      {
+        "id": "asoc-144",
+        "number": 144,
+        "rangeId": "grile-141-150",
+        "correct": [
+          "A",
+          "D"
+        ],
+        "topicId": "sistemul-digestiv-intestinele",
+        "sourceChapter": "XIII",
+        "sourceNumber": 144
+      },
+      {
+        "id": "asoc-145",
+        "number": 145,
+        "rangeId": "grile-141-150",
+        "correct": [
+          "A",
+          "D"
+        ],
+        "topicId": "metabolism-si-nutritie-lipide-si-proteine",
+        "sourceChapter": "XIII",
+        "sourceNumber": 145
+      },
+      {
+        "id": "asoc-146",
+        "number": 146,
+        "rangeId": "grile-141-150",
+        "correct": [
+          "A",
+          "E"
+        ],
+        "topicId": "sistemul-cardiovascular-circulatia-coronariana",
+        "sourceChapter": "XIII",
+        "sourceNumber": 146
+      },
+      {
+        "id": "asoc-147",
+        "number": 147,
+        "rangeId": "grile-141-150",
+        "correct": [
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-renal-complet-nefron",
+        "sourceChapter": "XIII",
+        "sourceNumber": 147
+      },
+      {
+        "id": "asoc-148",
+        "number": 148,
+        "rangeId": "grile-141-150",
+        "correct": [
+          "A"
+        ],
+        "topicId": "oasele-si-articulatiile-osul",
+        "sourceChapter": "XIII",
+        "sourceNumber": 148
+      },
+      {
+        "id": "asoc-149",
+        "number": 149,
+        "rangeId": "grile-141-150",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-endocrin-glandele-paratiroide",
+        "sourceChapter": "XIII",
+        "sourceNumber": 149
+      },
+      {
+        "id": "asoc-150",
+        "number": 150,
+        "rangeId": "grile-141-150",
+        "correct": [
+          "A",
+          "C"
+        ],
+        "topicId": "sangele-globulele-albe",
+        "sourceChapter": "XIII",
+        "sourceNumber": 150
+      },
+      {
+        "id": "asoc-151",
+        "number": 151,
+        "rangeId": "grile-151-160",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ],
+        "topicId": "sistemul-reproducator-masculin-testiculele",
+        "sourceChapter": "XIII",
+        "sourceNumber": 151
+      },
+      {
+        "id": "asoc-152",
+        "number": 152,
+        "rangeId": "grile-151-160",
+        "correct": [
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-cardiovascular-ciclul-cardiac",
+        "sourceChapter": "XIII",
+        "sourceNumber": 152
+      },
+      {
+        "id": "asoc-153",
+        "number": 153,
+        "rangeId": "grile-151-160",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-limfatic-si-imun-sistemul-limfatic",
+        "sourceChapter": "XIII",
+        "sourceNumber": 153
+      },
+      {
+        "id": "asoc-154",
+        "number": 154,
+        "rangeId": "grile-151-160",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-limfatic-si-imun-splina",
+        "sourceChapter": "XIII",
+        "sourceNumber": 154
+      },
+      {
+        "id": "asoc-155",
+        "number": 155,
+        "rangeId": "grile-151-160",
+        "correct": [
+          "D"
+        ],
+        "topicId": "sistemul-cardiovascular-tipuri-de-circulatie-sanguina",
+        "sourceChapter": "XIII",
+        "sourceNumber": 155
+      },
+      {
+        "id": "asoc-156",
+        "number": 156,
+        "rangeId": "grile-151-160",
+        "correct": [
+          "D",
+          "E"
+        ],
+        "topicId": "oasele-si-articulatiile-osul",
+        "sourceChapter": "XIII",
+        "sourceNumber": 156
+      },
+      {
+        "id": "asoc-157",
+        "number": 157,
+        "rangeId": "grile-151-160",
+        "correct": [
+          "A",
+          "E"
+        ],
+        "topicId": "sistemul-cardiovascular-tipuri-de-circulatie-sanguina",
+        "sourceChapter": "XIII",
+        "sourceNumber": 157
+      },
+      {
+        "id": "asoc-158",
+        "number": 158,
+        "rangeId": "grile-151-160",
+        "correct": [
+          "A",
+          "E"
+        ],
+        "topicId": "sistemul-nervos-sistem-nervos-autonom",
+        "sourceChapter": "XIII",
+        "sourceNumber": 158
+      },
+      {
+        "id": "asoc-159",
+        "number": 159,
+        "rangeId": "grile-151-160",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ],
+        "topicId": "sistemul-renal-complet-hormoni",
+        "sourceChapter": "XIII",
+        "sourceNumber": 159
+      },
+      {
+        "id": "asoc-160",
+        "number": 160,
+        "rangeId": "grile-151-160",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-endocrin-descrierea-generala-a-hormonilor",
+        "sourceChapter": "XIII",
+        "sourceNumber": 160
+      },
+      {
+        "id": "asoc-161",
+        "number": 161,
+        "rangeId": "grile-161-170",
+        "correct": [
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-respirator-schimbul-de-gaze",
+        "sourceChapter": "XIII",
+        "sourceNumber": 161
+      },
+      {
+        "id": "asoc-162",
+        "number": 162,
+        "rangeId": "grile-161-170",
+        "correct": [
+          "D",
+          "E"
+        ],
+        "topicId": "tesutul-muscular-muschiul-striat",
+        "sourceChapter": "XIII",
+        "sourceNumber": 162
+      },
+      {
+        "id": "asoc-163",
+        "number": 163,
+        "rangeId": "grile-161-170",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-digestiv-stomacul",
+        "sourceChapter": "XIII",
+        "sourceNumber": 163
+      },
+      {
+        "id": "asoc-164",
+        "number": 164,
+        "rangeId": "grile-161-170",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-renal-complet-nefron",
+        "sourceChapter": "XIII",
+        "sourceNumber": 164
+      },
+      {
+        "id": "asoc-165",
+        "number": 165,
+        "rangeId": "grile-161-170",
+        "correct": [
+          "C"
+        ],
+        "topicId": "sistemul-reproducator-masculin-hormoni",
+        "sourceChapter": "XIII",
+        "sourceNumber": 165
+      },
+      {
+        "id": "asoc-166",
+        "number": 166,
+        "rangeId": "grile-161-170",
+        "correct": [
+          "B"
+        ],
+        "topicId": "sistemul-reproducator-feminin-fiziologie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 166
+      },
+      {
+        "id": "asoc-167",
+        "number": 167,
+        "rangeId": "grile-161-170",
+        "correct": [
+          "A",
+          "C"
+        ],
+        "topicId": "sistemul-cardiovascular-ciclul-cardiac",
+        "sourceChapter": "XIII",
+        "sourceNumber": 167
+      },
+      {
+        "id": "asoc-168",
+        "number": 168,
+        "rangeId": "grile-161-170",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-limfatic-si-imun-sistemul-limfatic",
+        "sourceChapter": "XIII",
+        "sourceNumber": 168
+      },
+      {
+        "id": "asoc-169",
+        "number": 169,
+        "rangeId": "grile-161-170",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-endocrin-pancreasul",
+        "sourceChapter": "XIII",
+        "sourceNumber": 169
+      },
+      {
+        "id": "asoc-170",
+        "number": 170,
+        "rangeId": "grile-161-170",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ],
+        "topicId": "metabolism-si-nutritie-rata-si-temperatura",
+        "sourceChapter": "XIII",
+        "sourceNumber": 170
+      },
+      {
+        "id": "asoc-171",
+        "number": 171,
+        "rangeId": "grile-171-180",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "metabolism-si-nutritie-stari-si-minerale",
+        "sourceChapter": "XIII",
+        "sourceNumber": 171
+      },
+      {
+        "id": "asoc-172",
+        "number": 172,
+        "rangeId": "grile-171-180",
+        "correct": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-endocrin-pancreasul",
+        "sourceChapter": "XIII",
+        "sourceNumber": 172
+      },
+      {
+        "id": "asoc-173",
+        "number": 173,
+        "rangeId": "grile-171-180",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-reproducator-feminin-fiziologie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 173
+      },
+      {
+        "id": "asoc-174",
+        "number": 174,
+        "rangeId": "grile-171-180",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-nervos-sistem-nervos-autonom",
+        "sourceChapter": "XIII",
+        "sourceNumber": 174
+      },
+      {
+        "id": "asoc-175",
+        "number": 175,
+        "rangeId": "grile-171-180",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-renal-complet-hormoni",
+        "sourceChapter": "XIII",
+        "sourceNumber": 175
+      },
+      {
+        "id": "asoc-176",
+        "number": 176,
+        "rangeId": "grile-171-180",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-reproducator-masculin-ducte",
+        "sourceChapter": "XIII",
+        "sourceNumber": 176
+      },
+      {
+        "id": "asoc-177",
+        "number": 177,
+        "rangeId": "grile-171-180",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ],
+        "topicId": "organele-de-simt-urechea-si-auzul",
+        "sourceChapter": "XIII",
+        "sourceNumber": 177
+      },
+      {
+        "id": "asoc-178",
+        "number": 178,
+        "rangeId": "grile-171-180",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "metabolism-si-nutritie-metabolismul-glucidelor",
+        "sourceChapter": "XIII",
+        "sourceNumber": 178
+      },
+      {
+        "id": "asoc-179",
+        "number": 179,
+        "rangeId": "grile-171-180",
+        "correct": [
+          "A",
+          "C"
+        ],
+        "topicId": "sistemul-cardiovascular-vasele-sanguine",
+        "sourceChapter": "XIII",
+        "sourceNumber": 179
+      },
+      {
+        "id": "asoc-180",
+        "number": 180,
+        "rangeId": "grile-171-180",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-nervos-sistem-nervos-central",
+        "sourceChapter": "XIII",
+        "sourceNumber": 180
+      },
+      {
+        "id": "asoc-181",
+        "number": 181,
+        "rangeId": "grile-181-190",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "oasele-si-articulatiile-articulatii",
+        "sourceChapter": "XIII",
+        "sourceNumber": 181
+      },
+      {
+        "id": "asoc-182",
+        "number": 182,
+        "rangeId": "grile-181-190",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-reproducator-masculin-hormoni",
+        "sourceChapter": "XIII",
+        "sourceNumber": 182
+      },
+      {
+        "id": "asoc-183",
+        "number": 183,
+        "rangeId": "grile-181-190",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "metabolism-si-nutritie-lipide-si-proteine",
+        "sourceChapter": "XIII",
+        "sourceNumber": 183
+      },
+      {
+        "id": "asoc-184",
+        "number": 184,
+        "rangeId": "grile-181-190",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "oasele-si-articulatiile-osul",
+        "sourceChapter": "XIII",
+        "sourceNumber": 184
+      },
+      {
+        "id": "asoc-185",
+        "number": 185,
+        "rangeId": "grile-181-190",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "organele-de-simt-alte-simturi",
+        "sourceChapter": "XIII",
+        "sourceNumber": 185
+      },
+      {
+        "id": "asoc-186",
+        "number": 186,
+        "rangeId": "grile-181-190",
+        "correct": [
+          "C"
+        ],
+        "topicId": "sistemul-nervos-sistem-nervos-autonom",
+        "sourceChapter": "XIII",
+        "sourceNumber": 186
+      },
+      {
+        "id": "asoc-187",
+        "number": 187,
+        "rangeId": "grile-181-190",
+        "correct": [
+          "C",
+          "D"
+        ],
+        "topicId": "sangele-globulele-rosii",
+        "sourceChapter": "XIII",
+        "sourceNumber": 187
+      },
+      {
+        "id": "asoc-188",
+        "number": 188,
+        "rangeId": "grile-181-190",
+        "correct": [
+          "C",
+          "D"
+        ],
+        "topicId": "tesutul-nervos-fiziologia-nervilor",
+        "sourceChapter": "XIII",
+        "sourceNumber": 188
+      },
+      {
+        "id": "asoc-189",
+        "number": 189,
+        "rangeId": "grile-181-190",
+        "correct": [
+          "B",
+          "D"
+        ],
+        "topicId": "sangele-coagularea-sangelui",
+        "sourceChapter": "XIII",
+        "sourceNumber": 189
+      },
+      {
+        "id": "asoc-190",
+        "number": 190,
+        "rangeId": "grile-181-190",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-endocrin-hipofiza-glanda-pituitara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 190
+      },
+      {
+        "id": "asoc-191",
+        "number": 191,
+        "rangeId": "grile-191-200",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ],
+        "topicId": "sistemul-endocrin-hipofiza-glanda-pituitara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 191
+      },
+      {
+        "id": "asoc-192",
+        "number": 192,
+        "rangeId": "grile-191-200",
+        "correct": [
+          "D",
+          "E"
+        ],
+        "topicId": "tesutul-nervos-sinapsa",
+        "sourceChapter": "XIII",
+        "sourceNumber": 192
+      },
+      {
+        "id": "asoc-193",
+        "number": 193,
+        "rangeId": "grile-191-200",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "metabolism-si-nutritie-lipide-si-proteine",
+        "sourceChapter": "XIII",
+        "sourceNumber": 193
+      },
+      {
+        "id": "asoc-194",
+        "number": 194,
+        "rangeId": "grile-191-200",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ],
+        "topicId": "metabolism-si-nutritie-stari-si-minerale",
+        "sourceChapter": "XIII",
+        "sourceNumber": 194
+      },
+      {
+        "id": "asoc-195",
+        "number": 195,
+        "rangeId": "grile-191-200",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-organite",
+        "sourceChapter": "XIII",
+        "sourceNumber": 195
+      },
+      {
+        "id": "asoc-196",
+        "number": 196,
+        "rangeId": "grile-191-200",
+        "correct": [
+          "A",
+          "D"
+        ],
+        "topicId": "sistemul-endocrin-glandele-suprarenale",
+        "sourceChapter": "XIII",
+        "sourceNumber": 196
+      },
+      {
+        "id": "asoc-197",
+        "number": 197,
+        "rangeId": "grile-191-200",
+        "correct": [
+          "B",
+          "C"
+        ],
+        "topicId": "sistemul-cardiovascular-tipuri-de-circulatie-sanguina",
+        "sourceChapter": "XIII",
+        "sourceNumber": 197
+      },
+      {
+        "id": "asoc-198",
+        "number": 198,
+        "rangeId": "grile-191-200",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-nervos-sistem-nervos-central",
+        "sourceChapter": "XIII",
+        "sourceNumber": 198
+      },
+      {
+        "id": "asoc-199",
+        "number": 199,
+        "rangeId": "grile-191-200",
+        "correct": [
+          "B",
+          "C"
+        ],
+        "topicId": "metabolism-si-nutritie-metabolismul-glucidelor",
+        "sourceChapter": "XIII",
+        "sourceNumber": 199
+      },
+      {
+        "id": "asoc-200",
+        "number": 200,
+        "rangeId": "grile-191-200",
+        "correct": [
+          "A",
+          "B"
+        ],
+        "topicId": "sistemul-respirator-respiratie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 200
+      },
+      {
+        "id": "asoc-201",
+        "number": 201,
+        "rangeId": "grile-201-210",
+        "correct": [
+          "A",
+          "C"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 201
+      },
+      {
+        "id": "asoc-202",
+        "number": 202,
+        "rangeId": "grile-201-210",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 202
+      },
+      {
+        "id": "asoc-203",
+        "number": 203,
+        "rangeId": "grile-201-210",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 203
+      },
+      {
+        "id": "asoc-204",
+        "number": 204,
+        "rangeId": "grile-201-210",
+        "correct": [
+          "C",
+          "D"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 204
+      },
+      {
+        "id": "asoc-205",
+        "number": 205,
+        "rangeId": "grile-201-210",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 205
+      },
+      {
+        "id": "asoc-206",
+        "number": 206,
+        "rangeId": "grile-201-210",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "oasele-si-articulatiile-oasele-si-articulatiile",
+        "sourceChapter": "XIII",
+        "sourceNumber": 206
+      },
+      {
+        "id": "asoc-207",
+        "number": 207,
+        "rangeId": "grile-201-210",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-reproducator-masculin-sistemul-reproducator-masculin",
+        "sourceChapter": "XIII",
+        "sourceNumber": 207
+      },
+      {
+        "id": "asoc-208",
+        "number": 208,
+        "rangeId": "grile-201-210",
+        "correct": [
+          "A",
+          "E"
+        ],
+        "topicId": "sistemul-digestiv-sistemul-digestiv",
+        "sourceChapter": "XIII",
+        "sourceNumber": 208
+      },
+      {
+        "id": "asoc-209",
+        "number": 209,
+        "rangeId": "grile-201-210",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 209
+      },
+      {
+        "id": "asoc-210",
+        "number": 210,
+        "rangeId": "grile-201-210",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ],
+        "topicId": "organele-de-simt-organele-de-simt",
+        "sourceChapter": "XIII",
+        "sourceNumber": 210
+      },
+      {
+        "id": "asoc-211",
+        "number": 211,
+        "rangeId": "grile-211-220",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ],
+        "topicId": "sistemul-digestiv-sistemul-digestiv",
+        "sourceChapter": "XIII",
+        "sourceNumber": 211
+      },
+      {
+        "id": "asoc-212",
+        "number": 212,
+        "rangeId": "grile-211-220",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ],
+        "topicId": "metabolism-si-nutritie-metabolism-si-nutritie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 212
+      },
+      {
+        "id": "asoc-213",
+        "number": 213,
+        "rangeId": "grile-211-220",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "metabolism-si-nutritie-metabolism-si-nutritie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 213
+      },
+      {
+        "id": "asoc-214",
+        "number": 214,
+        "rangeId": "grile-211-220",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 214
+      },
+      {
+        "id": "asoc-215",
+        "number": 215,
+        "rangeId": "grile-211-220",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "tesutul-muscular-tesutul-muscular",
+        "sourceChapter": "XIII",
+        "sourceNumber": 215
+      },
+      {
+        "id": "asoc-216",
+        "number": 216,
+        "rangeId": "grile-211-220",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-nervos-sistemul-nervos",
+        "sourceChapter": "XIII",
+        "sourceNumber": 216
+      },
+      {
+        "id": "asoc-217",
+        "number": 217,
+        "rangeId": "grile-211-220",
+        "correct": [
+          "B",
+          "C"
+        ],
+        "topicId": "organele-de-simt-organele-de-simt",
+        "sourceChapter": "XIII",
+        "sourceNumber": 217
+      },
+      {
+        "id": "asoc-218",
+        "number": 218,
+        "rangeId": "grile-211-220",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-endocrin-sistemul-endocrin",
+        "sourceChapter": "XIII",
+        "sourceNumber": 218
+      },
+      {
+        "id": "asoc-219",
+        "number": 219,
+        "rangeId": "grile-211-220",
+        "correct": [
+          "A",
+          "D"
+        ],
+        "topicId": "sistemul-renal-complet-sistemul-renal-complet",
+        "sourceChapter": "XIII",
+        "sourceNumber": 219
+      },
+      {
+        "id": "asoc-220",
+        "number": 220,
+        "rangeId": "grile-211-220",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "metabolism-si-nutritie-metabolism-si-nutritie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 220
+      },
+      {
+        "id": "asoc-221",
+        "number": 221,
+        "rangeId": "grile-221-230",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-introducere-anatomie-fiziologie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 221
+      },
+      {
+        "id": "asoc-222",
+        "number": 222,
+        "rangeId": "grile-221-230",
+        "correct": [
+          "B",
+          "C"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 222
+      },
+      {
+        "id": "asoc-223",
+        "number": 223,
+        "rangeId": "grile-221-230",
+        "correct": [
+          "C",
+          "E"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-introducere-anatomie-fiziologie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 223
+      },
+      {
+        "id": "asoc-224",
+        "number": 224,
+        "rangeId": "grile-221-230",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 224
+      },
+      {
+        "id": "asoc-225",
+        "number": 225,
+        "rangeId": "grile-221-230",
+        "correct": [
+          "A",
+          "B"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 225
+      },
+      {
+        "id": "asoc-226",
+        "number": 226,
+        "rangeId": "grile-221-230",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-introducere-anatomie-fiziologie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 226
+      },
+      {
+        "id": "asoc-227",
+        "number": 227,
+        "rangeId": "grile-221-230",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-introducere-anatomie-fiziologie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 227
+      },
+      {
+        "id": "asoc-228",
+        "number": 228,
+        "rangeId": "grile-221-230",
+        "correct": [
+          "B",
+          "E"
+        ],
+        "topicId": "sistemul-digestiv-sistemul-digestiv",
+        "sourceChapter": "XIII",
+        "sourceNumber": 228
+      },
+      {
+        "id": "asoc-229",
+        "number": 229,
+        "rangeId": "grile-221-230",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-renal-complet-sistemul-renal-complet",
+        "sourceChapter": "XIII",
+        "sourceNumber": 229
+      },
+      {
+        "id": "asoc-230",
+        "number": 230,
+        "rangeId": "grile-221-230",
+        "correct": [
+          "B",
+          "E"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-introducere-anatomie-fiziologie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 230
+      },
+      {
+        "id": "asoc-231",
+        "number": 231,
+        "rangeId": "grile-231-240",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-respirator-sistemul-respirator",
+        "sourceChapter": "XIII",
+        "sourceNumber": 231
+      },
+      {
+        "id": "asoc-232",
+        "number": 232,
+        "rangeId": "grile-231-240",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-introducere-anatomie-fiziologie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 232
+      },
+      {
+        "id": "asoc-233",
+        "number": 233,
+        "rangeId": "grile-231-240",
+        "correct": [
+          "B",
+          "D"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 233
+      },
+      {
+        "id": "asoc-234",
+        "number": 234,
+        "rangeId": "grile-231-240",
+        "correct": [
+          "A",
+          "C"
+        ],
+        "topicId": "metabolism-si-nutritie-metabolism-si-nutritie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 234
+      },
+      {
+        "id": "asoc-235",
+        "number": 235,
+        "rangeId": "grile-231-240",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-endocrin-sistemul-endocrin",
+        "sourceChapter": "XIII",
+        "sourceNumber": 235
+      },
+      {
+        "id": "asoc-236",
+        "number": 236,
+        "rangeId": "grile-231-240",
+        "correct": [
+          "A"
+        ],
+        "topicId": "sistemul-renal-complet-sistemul-renal-complet",
+        "sourceChapter": "XIII",
+        "sourceNumber": 236
+      },
+      {
+        "id": "asoc-237",
+        "number": 237,
+        "rangeId": "grile-231-240",
+        "correct": [
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-nervos-sistemul-nervos",
+        "sourceChapter": "XIII",
+        "sourceNumber": 237
+      },
+      {
+        "id": "asoc-238",
+        "number": 238,
+        "rangeId": "grile-231-240",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-nervos-sistemul-nervos",
+        "sourceChapter": "XIII",
+        "sourceNumber": 238
+      },
+      {
+        "id": "asoc-239",
+        "number": 239,
+        "rangeId": "grile-231-240",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-nervos-sistemul-nervos",
+        "sourceChapter": "XIII",
+        "sourceNumber": 239
+      },
+      {
+        "id": "asoc-240",
+        "number": 240,
+        "rangeId": "grile-231-240",
+        "correct": [
+          "A",
+          "B"
+        ],
+        "topicId": "organele-de-simt-organele-de-simt",
+        "sourceChapter": "XIII",
+        "sourceNumber": 240
+      },
+      {
+        "id": "asoc-241",
+        "number": 241,
+        "rangeId": "grile-241-250",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-endocrin-sistemul-endocrin",
+        "sourceChapter": "XIII",
+        "sourceNumber": 241
+      },
+      {
+        "id": "asoc-242",
+        "number": 242,
+        "rangeId": "grile-241-250",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-endocrin-sistemul-endocrin",
+        "sourceChapter": "XIII",
+        "sourceNumber": 242
+      },
+      {
+        "id": "asoc-243",
+        "number": 243,
+        "rangeId": "grile-241-250",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-cardiovascular-sistemul-cardiovascular",
+        "sourceChapter": "XIII",
+        "sourceNumber": 243
+      },
+      {
+        "id": "asoc-244",
+        "number": 244,
+        "rangeId": "grile-241-250",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-cardiovascular-sistemul-cardiovascular",
+        "sourceChapter": "XIII",
+        "sourceNumber": 244
+      },
+      {
+        "id": "asoc-245",
+        "number": 245,
+        "rangeId": "grile-241-250",
+        "correct": [
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-cardiovascular-sistemul-cardiovascular",
+        "sourceChapter": "XIII",
+        "sourceNumber": 245
+      },
+      {
+        "id": "asoc-246",
+        "number": 246,
+        "rangeId": "grile-241-250",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-limfatic-si-imun-sistemul-limfatic-si-imun",
+        "sourceChapter": "XIII",
+        "sourceNumber": 246
+      },
+      {
+        "id": "asoc-247",
+        "number": 247,
+        "rangeId": "grile-241-250",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-respirator-sistemul-respirator",
+        "sourceChapter": "XIII",
+        "sourceNumber": 247
+      },
+      {
+        "id": "asoc-248",
+        "number": 248,
+        "rangeId": "grile-241-250",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-digestiv-sistemul-digestiv",
+        "sourceChapter": "XIII",
+        "sourceNumber": 248
+      },
+      {
+        "id": "asoc-249",
+        "number": 249,
+        "rangeId": "grile-241-250",
+        "correct": [
+          "A",
+          "B"
+        ],
+        "topicId": "metabolism-si-nutritie-metabolism-si-nutritie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 249
+      },
+      {
+        "id": "asoc-250",
+        "number": 250,
+        "rangeId": "grile-241-250",
+        "correct": [
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-renal-complet-sistemul-renal-complet",
+        "sourceChapter": "XIII",
+        "sourceNumber": 250
+      },
+      {
+        "id": "asoc-251",
+        "number": 251,
+        "rangeId": "grile-251-260",
+        "correct": [
+          "A",
+          "E"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-introducere-anatomie-fiziologie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 251
+      },
+      {
+        "id": "asoc-252",
+        "number": 252,
+        "rangeId": "grile-251-260",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-reproducator-masculin-sistemul-reproducator-masculin",
+        "sourceChapter": "XIII",
+        "sourceNumber": 252
+      },
+      {
+        "id": "asoc-253",
+        "number": 253,
+        "rangeId": "grile-251-260",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-respirator-sistemul-respirator",
+        "sourceChapter": "XIII",
+        "sourceNumber": 253
+      },
+      {
+        "id": "asoc-254",
+        "number": 254,
+        "rangeId": "grile-251-260",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-respirator-sistemul-respirator",
+        "sourceChapter": "XIII",
+        "sourceNumber": 254
+      },
+      {
+        "id": "asoc-255",
+        "number": 255,
+        "rangeId": "grile-251-260",
+        "correct": [
+          "A",
+          "C"
+        ],
+        "topicId": "sistemul-respirator-sistemul-respirator",
+        "sourceChapter": "XIII",
+        "sourceNumber": 255
+      },
+      {
+        "id": "asoc-256",
+        "number": 256,
+        "rangeId": "grile-251-260",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-digestiv-sistemul-digestiv",
+        "sourceChapter": "XIII",
+        "sourceNumber": 256
+      },
+      {
+        "id": "asoc-257",
+        "number": 257,
+        "rangeId": "grile-251-260",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-digestiv-sistemul-digestiv",
+        "sourceChapter": "XIII",
+        "sourceNumber": 257
+      },
+      {
+        "id": "asoc-258",
+        "number": 258,
+        "rangeId": "grile-251-260",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "metabolism-si-nutritie-metabolism-si-nutritie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 258
+      },
+      {
+        "id": "asoc-259",
+        "number": 259,
+        "rangeId": "grile-251-260",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "metabolism-si-nutritie-metabolism-si-nutritie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 259
+      },
+      {
+        "id": "asoc-260",
+        "number": 260,
+        "rangeId": "grile-251-260",
+        "correct": [
+          "C",
+          "D"
+        ],
+        "topicId": "metabolism-si-nutritie-metabolism-si-nutritie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 260
+      },
+      {
+        "id": "asoc-261",
+        "number": 261,
+        "rangeId": "grile-261-270",
+        "correct": [
+          "A",
+          "C"
+        ],
+        "topicId": "sistemul-renal-complet-sistemul-renal-complet",
+        "sourceChapter": "XIII",
+        "sourceNumber": 261
+      },
+      {
+        "id": "asoc-262",
+        "number": 262,
+        "rangeId": "grile-261-270",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-renal-complet-sistemul-renal-complet",
+        "sourceChapter": "XIII",
+        "sourceNumber": 262
+      },
+      {
+        "id": "asoc-263",
+        "number": 263,
+        "rangeId": "grile-261-270",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-renal-complet-sistemul-renal-complet",
+        "sourceChapter": "XIII",
+        "sourceNumber": 263
+      },
+      {
+        "id": "asoc-264",
+        "number": 264,
+        "rangeId": "grile-261-270",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-cardiovascular-sistemul-cardiovascular",
+        "sourceChapter": "XIII",
+        "sourceNumber": 264
+      },
+      {
+        "id": "asoc-265",
+        "number": 265,
+        "rangeId": "grile-261-270",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 265
+      },
+      {
+        "id": "asoc-266",
+        "number": 266,
+        "rangeId": "grile-261-270",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ],
+        "topicId": "tesutul-muscular-tesutul-muscular",
+        "sourceChapter": "XIII",
+        "sourceNumber": 266
+      },
+      {
+        "id": "asoc-267",
+        "number": 267,
+        "rangeId": "grile-261-270",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ],
+        "topicId": "tesutul-nervos-tesutul-nervos",
+        "sourceChapter": "XIII",
+        "sourceNumber": 267
+      },
+      {
+        "id": "asoc-268",
+        "number": 268,
+        "rangeId": "grile-261-270",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-limfatic-si-imun-sistemul-limfatic-si-imun",
+        "sourceChapter": "XIII",
+        "sourceNumber": 268
+      },
+      {
+        "id": "asoc-269",
+        "number": 269,
+        "rangeId": "grile-261-270",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ],
+        "topicId": "metabolism-si-nutritie-metabolism-si-nutritie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 269
+      },
+      {
+        "id": "asoc-270",
+        "number": 270,
+        "rangeId": "grile-261-270",
+        "correct": [
+          "B",
+          "D"
+        ],
+        "topicId": "sangele-sangele",
+        "sourceChapter": "XIII",
+        "sourceNumber": 270
+      },
+      {
+        "id": "asoc-271",
+        "number": 271,
+        "rangeId": "grile-271-280",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 271
+      },
+      {
+        "id": "asoc-272",
+        "number": 272,
+        "rangeId": "grile-271-280",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 272
+      },
+      {
+        "id": "asoc-273",
+        "number": 273,
+        "rangeId": "grile-271-280",
+        "correct": [
+          "A",
+          "B"
+        ],
+        "topicId": "oasele-si-articulatiile-oasele-si-articulatiile",
+        "sourceChapter": "XIII",
+        "sourceNumber": 273
+      },
+      {
+        "id": "asoc-274",
+        "number": 274,
+        "rangeId": "grile-271-280",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ],
+        "topicId": "oasele-si-articulatiile-oasele-si-articulatiile",
+        "sourceChapter": "XIII",
+        "sourceNumber": 274
+      },
+      {
+        "id": "asoc-275",
+        "number": 275,
+        "rangeId": "grile-271-280",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ],
+        "topicId": "organele-de-simt-organele-de-simt",
+        "sourceChapter": "XIII",
+        "sourceNumber": 275
+      },
+      {
+        "id": "asoc-276",
+        "number": 276,
+        "rangeId": "grile-271-280",
+        "correct": [
+          "A",
+          "D"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 276
+      },
+      {
+        "id": "asoc-277",
+        "number": 277,
+        "rangeId": "grile-271-280",
+        "correct": [
+          "B",
+          "D"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-introducere-anatomie-fiziologie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 277
+      },
+      {
+        "id": "asoc-278",
+        "number": 278,
+        "rangeId": "grile-271-280",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 278
+      },
+      {
+        "id": "asoc-279",
+        "number": 279,
+        "rangeId": "grile-271-280",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ],
+        "topicId": "oasele-si-articulatiile-oasele-si-articulatiile",
+        "sourceChapter": "XIII",
+        "sourceNumber": 279
+      },
+      {
+        "id": "asoc-280",
+        "number": 280,
+        "rangeId": "grile-271-280",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ],
+        "topicId": "oasele-si-articulatiile-oasele-si-articulatiile",
+        "sourceChapter": "XIII",
+        "sourceNumber": 280
+      },
+      {
+        "id": "asoc-281",
+        "number": 281,
+        "rangeId": "grile-281-290",
+        "correct": [
+          "B",
+          "C"
+        ],
+        "topicId": "oasele-si-articulatiile-oasele-si-articulatiile",
+        "sourceChapter": "XIII",
+        "sourceNumber": 281
+      },
+      {
+        "id": "asoc-282",
+        "number": 282,
+        "rangeId": "grile-281-290",
+        "correct": [
+          "B",
+          "C"
+        ],
+        "topicId": "oasele-si-articulatiile-oasele-si-articulatiile",
+        "sourceChapter": "XIII",
+        "sourceNumber": 282
+      },
+      {
+        "id": "asoc-283",
+        "number": 283,
+        "rangeId": "grile-281-290",
+        "correct": [
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "tesutul-muscular-tesutul-muscular",
+        "sourceChapter": "XIII",
+        "sourceNumber": 283
+      },
+      {
+        "id": "asoc-284",
+        "number": 284,
+        "rangeId": "grile-281-290",
+        "correct": [
+          "B",
+          "C"
+        ],
+        "topicId": "tesutul-muscular-tesutul-muscular",
+        "sourceChapter": "XIII",
+        "sourceNumber": 284
+      },
+      {
+        "id": "asoc-285",
+        "number": 285,
+        "rangeId": "grile-281-290",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "tesutul-nervos-tesutul-nervos",
+        "sourceChapter": "XIII",
+        "sourceNumber": 285
+      },
+      {
+        "id": "asoc-286",
+        "number": 286,
+        "rangeId": "grile-281-290",
+        "correct": [
+          "C",
+          "E"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 286
+      },
+      {
+        "id": "asoc-287",
+        "number": 287,
+        "rangeId": "grile-281-290",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ],
+        "topicId": "oasele-si-articulatiile-oasele-si-articulatiile",
+        "sourceChapter": "XIII",
+        "sourceNumber": 287
+      },
+      {
+        "id": "asoc-288",
+        "number": 288,
+        "rangeId": "grile-281-290",
+        "correct": [
+          "A",
+          "D"
+        ],
+        "topicId": "tesutul-muscular-tesutul-muscular",
+        "sourceChapter": "XIII",
+        "sourceNumber": 288
+      },
+      {
+        "id": "asoc-289",
+        "number": 289,
+        "rangeId": "grile-281-290",
+        "correct": [
+          "B",
+          "E"
+        ],
+        "topicId": "tesutul-nervos-tesutul-nervos",
+        "sourceChapter": "XIII",
+        "sourceNumber": 289
+      },
+      {
+        "id": "asoc-290",
+        "number": 290,
+        "rangeId": "grile-281-290",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-nervos-sistemul-nervos",
+        "sourceChapter": "XIII",
+        "sourceNumber": 290
+      },
+      {
+        "id": "asoc-291",
+        "number": 291,
+        "rangeId": "grile-291-300",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-respirator-sistemul-respirator",
+        "sourceChapter": "XIII",
+        "sourceNumber": 291
+      },
+      {
+        "id": "asoc-292",
+        "number": 292,
+        "rangeId": "grile-291-300",
+        "correct": [
+          "C"
+        ],
+        "topicId": "sangele-sangele",
+        "sourceChapter": "XIII",
+        "sourceNumber": 292
+      },
+      {
+        "id": "asoc-293",
+        "number": 293,
+        "rangeId": "grile-291-300",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ],
+        "topicId": "sangele-sangele",
+        "sourceChapter": "XIII",
+        "sourceNumber": 293
+      },
+      {
+        "id": "asoc-294",
+        "number": 294,
+        "rangeId": "grile-291-300",
+        "correct": [
+          "B",
+          "E"
+        ],
+        "topicId": "sistemul-renal-complet-sistemul-renal-complet",
+        "sourceChapter": "XIII",
+        "sourceNumber": 294
+      },
+      {
+        "id": "asoc-295",
+        "number": 295,
+        "rangeId": "grile-291-300",
+        "correct": [
+          "B",
+          "D"
+        ],
+        "topicId": "sistemul-digestiv-sistemul-digestiv",
+        "sourceChapter": "XIII",
+        "sourceNumber": 295
+      },
+      {
+        "id": "asoc-296",
+        "number": 296,
+        "rangeId": "grile-291-300",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ],
+        "topicId": "sistemul-nervos-sistemul-nervos",
+        "sourceChapter": "XIII",
+        "sourceNumber": 296
+      },
+      {
+        "id": "asoc-297",
+        "number": 297,
+        "rangeId": "grile-291-300",
+        "correct": [
+          "C"
+        ],
+        "topicId": "tesutul-nervos-tesutul-nervos",
+        "sourceChapter": "XIII",
+        "sourceNumber": 297
+      },
+      {
+        "id": "asoc-298",
+        "number": 298,
+        "rangeId": "grile-291-300",
+        "correct": [
+          "B",
+          "D"
+        ],
+        "topicId": "sangele-sangele",
+        "sourceChapter": "XIII",
+        "sourceNumber": 298
+      },
+      {
+        "id": "asoc-299",
+        "number": 299,
+        "rangeId": "grile-291-300",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ],
+        "topicId": "sistemul-reproducator-feminin-sistemul-reproducator-feminin",
+        "sourceChapter": "XIII",
+        "sourceNumber": 299
+      },
+      {
+        "id": "asoc-300",
+        "number": 300,
+        "rangeId": "grile-291-300",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ],
+        "topicId": "sistemul-renal-complet-sistemul-renal-complet",
+        "sourceChapter": "XIII",
+        "sourceNumber": 300
+      },
+      {
+        "id": "asoc-301",
+        "number": 301,
+        "rangeId": "grile-301-310",
+        "correct": [
+          "B",
+          "D"
+        ],
+        "topicId": "sistemul-digestiv-organele-anexe",
+        "sourceChapter": "XIII",
+        "sourceNumber": 301
+      },
+      {
+        "id": "asoc-302",
+        "number": 302,
+        "rangeId": "grile-301-310",
+        "correct": [
+          "B",
+          "D"
+        ],
+        "topicId": "sistemul-reproducator-feminin-organe",
+        "sourceChapter": "XIII",
+        "sourceNumber": 302
+      },
+      {
+        "id": "asoc-303",
+        "number": 303,
+        "rangeId": "grile-301-310",
+        "correct": [
+          "A",
+          "D"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-organite",
+        "sourceChapter": "XIII",
+        "sourceNumber": 303
+      },
+      {
+        "id": "asoc-304",
+        "number": 304,
+        "rangeId": "grile-301-310",
+        "correct": [
+          "C"
+        ],
+        "topicId": "sistemul-reproducator-feminin-organe",
+        "sourceChapter": "XIII",
+        "sourceNumber": 304
+      },
+      {
+        "id": "asoc-305",
+        "number": 305,
+        "rangeId": "grile-301-310",
+        "correct": [
+          "D"
+        ],
+        "topicId": "organele-de-simt-urechea-si-auzul",
+        "sourceChapter": "XIII",
+        "sourceNumber": 305
+      },
+      {
+        "id": "asoc-306",
+        "number": 306,
+        "rangeId": "grile-301-310",
+        "correct": [
+          "C",
+          "D"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-termeni",
+        "sourceChapter": "XIII",
+        "sourceNumber": 306
+      },
+      {
+        "id": "asoc-307",
+        "number": 307,
+        "rangeId": "grile-301-310",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ],
+        "topicId": "oasele-si-articulatiile-articulatii",
+        "sourceChapter": "XIII",
+        "sourceNumber": 307
+      },
+      {
+        "id": "asoc-308",
+        "number": 308,
+        "rangeId": "grile-301-310",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "tesutul-muscular-muschiul-striat",
+        "sourceChapter": "XIII",
+        "sourceNumber": 308
+      },
+      {
+        "id": "asoc-309",
+        "number": 309,
+        "rangeId": "grile-301-310",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ],
+        "topicId": "organele-de-simt-urechea-si-auzul",
+        "sourceChapter": "XIII",
+        "sourceNumber": 309
+      },
+      {
+        "id": "asoc-310",
+        "number": 310,
+        "rangeId": "grile-301-310",
+        "correct": [
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-endocrin-hipofiza-glanda-pituitara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 310
+      },
+      {
+        "id": "asoc-311",
+        "number": 311,
+        "rangeId": "grile-311-320",
+        "correct": [
+          "B",
+          "D"
+        ],
+        "topicId": "sistemul-endocrin-descrierea-generala-a-hormonilor",
+        "sourceChapter": "XIII",
+        "sourceNumber": 311
+      },
+      {
+        "id": "asoc-312",
+        "number": 312,
+        "rangeId": "grile-311-320",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ],
+        "topicId": "sistemul-endocrin-hipofiza-glanda-pituitara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 312
+      },
+      {
+        "id": "asoc-313",
+        "number": 313,
+        "rangeId": "grile-311-320",
+        "correct": [
+          "A",
+          "C"
+        ],
+        "topicId": "sangele-plasma",
+        "sourceChapter": "XIII",
+        "sourceNumber": 313
+      },
+      {
+        "id": "asoc-314",
+        "number": 314,
+        "rangeId": "grile-311-320",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ],
+        "topicId": "sangele-globulele-albe",
+        "sourceChapter": "XIII",
+        "sourceNumber": 314
+      },
+      {
+        "id": "asoc-315",
+        "number": 315,
+        "rangeId": "grile-311-320",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-cardiovascular-ciclul-cardiac",
+        "sourceChapter": "XIII",
+        "sourceNumber": 315
+      },
+      {
+        "id": "asoc-316",
+        "number": 316,
+        "rangeId": "grile-311-320",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "tesutul-muscular-energia",
+        "sourceChapter": "XIII",
+        "sourceNumber": 316
+      },
+      {
+        "id": "asoc-317",
+        "number": 317,
+        "rangeId": "grile-311-320",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "tesutul-muscular-muschiul-striat",
+        "sourceChapter": "XIII",
+        "sourceNumber": 317
+      },
+      {
+        "id": "asoc-318",
+        "number": 318,
+        "rangeId": "grile-311-320",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "tesutul-nervos-organizare",
+        "sourceChapter": "XIII",
+        "sourceNumber": 318
+      },
+      {
+        "id": "asoc-319",
+        "number": 319,
+        "rangeId": "grile-311-320",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-nervos-sistem-nervos-central",
+        "sourceChapter": "XIII",
+        "sourceNumber": 319
+      },
+      {
+        "id": "asoc-320",
+        "number": 320,
+        "rangeId": "grile-311-320",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "organele-de-simt-urechea-si-auzul",
+        "sourceChapter": "XIII",
+        "sourceNumber": 320
+      },
+      {
+        "id": "asoc-321",
+        "number": 321,
+        "rangeId": "grile-321-330",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-functii",
+        "sourceChapter": "XIII",
+        "sourceNumber": 321
+      },
+      {
+        "id": "asoc-322",
+        "number": 322,
+        "rangeId": "grile-321-330",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "tesutul-muscular-muschiul-striat",
+        "sourceChapter": "XIII",
+        "sourceNumber": 322
+      },
+      {
+        "id": "asoc-323",
+        "number": 323,
+        "rangeId": "grile-321-330",
+        "correct": [
+          "B",
+          "E"
+        ],
+        "topicId": "tesutul-muscular-muschiul-striat",
+        "sourceChapter": "XIII",
+        "sourceNumber": 323
+      },
+      {
+        "id": "asoc-324",
+        "number": 324,
+        "rangeId": "grile-321-330",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-nervos-sistem-nervos-autonom",
+        "sourceChapter": "XIII",
+        "sourceNumber": 324
+      },
+      {
+        "id": "asoc-325",
+        "number": 325,
+        "rangeId": "grile-321-330",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "oasele-si-articulatiile-osul",
+        "sourceChapter": "XIII",
+        "sourceNumber": 325
+      },
+      {
+        "id": "asoc-326",
+        "number": 326,
+        "rangeId": "grile-321-330",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "oasele-si-articulatiile-osul",
+        "sourceChapter": "XIII",
+        "sourceNumber": 326
+      },
+      {
+        "id": "asoc-327",
+        "number": 327,
+        "rangeId": "grile-321-330",
+        "correct": [
+          "B",
+          "C"
+        ],
+        "topicId": "organele-de-simt-ochiul-si-vederea",
+        "sourceChapter": "XIII",
+        "sourceNumber": 327
+      },
+      {
+        "id": "asoc-328",
+        "number": 328,
+        "rangeId": "grile-321-330",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ],
+        "topicId": "sistemul-nervos-sistem-nervos-central",
+        "sourceChapter": "XIII",
+        "sourceNumber": 328
+      },
+      {
+        "id": "asoc-329",
+        "number": 329,
+        "rangeId": "grile-321-330",
+        "correct": [
+          "B",
+          "D"
+        ],
+        "topicId": "tesutul-nervos-organizare",
+        "sourceChapter": "XIII",
+        "sourceNumber": 329
+      },
+      {
+        "id": "asoc-330",
+        "number": 330,
+        "rangeId": "grile-321-330",
+        "correct": [
+          "A",
+          "D"
+        ],
+        "topicId": "organele-de-simt-ochiul-si-vederea",
+        "sourceChapter": "XIII",
+        "sourceNumber": 330
+      },
+      {
+        "id": "asoc-331",
+        "number": 331,
+        "rangeId": "grile-331-340",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-endocrin-pancreasul",
+        "sourceChapter": "XIII",
+        "sourceNumber": 331
+      },
+      {
+        "id": "asoc-332",
+        "number": 332,
+        "rangeId": "grile-331-340",
+        "correct": [
+          "D"
+        ],
+        "topicId": "sangele-grupele-sanguine",
+        "sourceChapter": "XIII",
+        "sourceNumber": 332
+      },
+      {
+        "id": "asoc-333",
+        "number": 333,
+        "rangeId": "grile-331-340",
+        "correct": [
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-nervos-sistem-nervos-central",
+        "sourceChapter": "XIII",
+        "sourceNumber": 333
+      },
+      {
+        "id": "asoc-334",
+        "number": 334,
+        "rangeId": "grile-331-340",
+        "correct": [
+          "A",
+          "C"
+        ],
+        "topicId": "sistemul-nervos-sistem-nervos-central",
+        "sourceChapter": "XIII",
+        "sourceNumber": 334
+      },
+      {
+        "id": "asoc-335",
+        "number": 335,
+        "rangeId": "grile-331-340",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-cardiovascular-vasele-sanguine",
+        "sourceChapter": "XIII",
+        "sourceNumber": 335
+      },
+      {
+        "id": "asoc-336",
+        "number": 336,
+        "rangeId": "grile-331-340",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-limfatic-si-imun-sistemul-limfatic",
+        "sourceChapter": "XIII",
+        "sourceNumber": 336
+      },
+      {
+        "id": "asoc-337",
+        "number": 337,
+        "rangeId": "grile-331-340",
+        "correct": [
+          "A",
+          "E"
+        ],
+        "topicId": "sistemul-respirator-respiratie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 337
+      },
+      {
+        "id": "asoc-338",
+        "number": 338,
+        "rangeId": "grile-331-340",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ],
+        "topicId": "sistemul-endocrin-descrierea-generala-a-hormonilor",
+        "sourceChapter": "XIII",
+        "sourceNumber": 338
+      },
+      {
+        "id": "asoc-339",
+        "number": 339,
+        "rangeId": "grile-331-340",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ],
+        "topicId": "sistemul-renal-complet-nefron",
+        "sourceChapter": "XIII",
+        "sourceNumber": 339
+      },
+      {
+        "id": "asoc-340",
+        "number": 340,
+        "rangeId": "grile-331-340",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sangele-globulele-albe",
+        "sourceChapter": "XIII",
+        "sourceNumber": 340
+      },
+      {
+        "id": "asoc-341",
+        "number": 341,
+        "rangeId": "grile-341-350",
+        "correct": [
+          "C",
+          "D"
+        ],
+        "topicId": "sangele-plasma",
+        "sourceChapter": "XIII",
+        "sourceNumber": 341
+      },
+      {
+        "id": "asoc-342",
+        "number": 342,
+        "rangeId": "grile-341-350",
+        "correct": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-respirator-respiratie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 342
+      },
+      {
+        "id": "asoc-343",
+        "number": 343,
+        "rangeId": "grile-341-350",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-reproducator-feminin-organe",
+        "sourceChapter": "XIII",
+        "sourceNumber": 343
+      },
+      {
+        "id": "asoc-344",
+        "number": 344,
+        "rangeId": "grile-341-350",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ],
+        "topicId": "sangele-globulele-albe",
+        "sourceChapter": "XIII",
+        "sourceNumber": 344
+      },
+      {
+        "id": "asoc-345",
+        "number": 345,
+        "rangeId": "grile-341-350",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-limfatic-si-imun-sistemul-limfatic",
+        "sourceChapter": "XIII",
+        "sourceNumber": 345
+      },
+      {
+        "id": "asoc-346",
+        "number": 346,
+        "rangeId": "grile-341-350",
+        "correct": [
+          "B",
+          "E"
+        ],
+        "topicId": "sistemul-renal-complet-nefron",
+        "sourceChapter": "XIII",
+        "sourceNumber": 346
+      },
+      {
+        "id": "asoc-347",
+        "number": 347,
+        "rangeId": "grile-341-350",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-reproducator-masculin-testiculele",
+        "sourceChapter": "XIII",
+        "sourceNumber": 347
+      },
+      {
+        "id": "asoc-348",
+        "number": 348,
+        "rangeId": "grile-341-350",
+        "correct": [
+          "A",
+          "C"
+        ],
+        "topicId": "sangele-plasma",
+        "sourceChapter": "XIII",
+        "sourceNumber": 348
+      },
+      {
+        "id": "asoc-349",
+        "number": 349,
+        "rangeId": "grile-341-350",
+        "correct": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-respirator-schimbul-de-gaze",
+        "sourceChapter": "XIII",
+        "sourceNumber": 349
+      },
+      {
+        "id": "asoc-350",
+        "number": 350,
+        "rangeId": "grile-341-350",
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-limfatic-si-imun-sistemul-limfatic",
+        "sourceChapter": "XIII",
+        "sourceNumber": 350
+      },
+      {
+        "id": "asoc-351",
+        "number": 351,
+        "rangeId": "grile-351-360",
+        "correct": [
+          "A",
+          "D"
+        ],
+        "topicId": "sistemul-respirator-respiratie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 351
+      },
+      {
+        "id": "asoc-352",
+        "number": 352,
+        "rangeId": "grile-351-360",
+        "correct": [
+          "B",
+          "D"
+        ],
+        "topicId": "sistemul-cardiovascular-vasele-sanguine",
+        "sourceChapter": "XIII",
+        "sourceNumber": 352
+      },
+      {
+        "id": "asoc-353",
+        "number": 353,
+        "rangeId": "grile-351-360",
+        "correct": [
+          "B",
+          "E"
+        ],
+        "topicId": "sistemul-respirator-respiratie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 353
+      },
+      {
+        "id": "asoc-354",
+        "number": 354,
+        "rangeId": "grile-351-360",
+        "correct": [
+          "A",
+          "D"
+        ],
+        "topicId": "sistemul-cardiovascular-ciclul-cardiac",
+        "sourceChapter": "XIII",
+        "sourceNumber": 354
+      },
+      {
+        "id": "asoc-355",
+        "number": 355,
+        "rangeId": "grile-351-360",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-digestiv-organele-anexe",
+        "sourceChapter": "XIII",
+        "sourceNumber": 355
+      },
+      {
+        "id": "asoc-356",
+        "number": 356,
+        "rangeId": "grile-351-360",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-cardiovascular-ciclul-cardiac",
+        "sourceChapter": "XIII",
+        "sourceNumber": 356
+      },
+      {
+        "id": "asoc-357",
+        "number": 357,
+        "rangeId": "grile-351-360",
+        "correct": [
+          "A",
+          "D"
+        ],
+        "topicId": "sistemul-reproducator-feminin-fiziologie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 357
+      },
+      {
+        "id": "asoc-358",
+        "number": 358,
+        "rangeId": "grile-351-360",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-organite",
+        "sourceChapter": "XIII",
+        "sourceNumber": 358
+      },
+      {
+        "id": "asoc-359",
+        "number": 359,
+        "rangeId": "grile-351-360",
+        "correct": [
+          "C",
+          "D"
+        ],
+        "topicId": "sangele-grupele-sanguine",
+        "sourceChapter": "XIII",
+        "sourceNumber": 359
+      },
+      {
+        "id": "asoc-360",
+        "number": 360,
+        "rangeId": "grile-351-360",
+        "correct": [
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-cardiovascular-ciclul-cardiac",
+        "sourceChapter": "XIII",
+        "sourceNumber": 360
+      },
+      {
+        "id": "asoc-361",
+        "number": 361,
+        "rangeId": "grile-361-370",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ],
+        "topicId": "sangele-plasma",
+        "sourceChapter": "XIII",
+        "sourceNumber": 361
+      },
+      {
+        "id": "asoc-362",
+        "number": 362,
+        "rangeId": "grile-361-370",
+        "correct": [
+          "A"
+        ],
+        "topicId": "sistemul-cardiovascular-vasele-sanguine",
+        "sourceChapter": "XIII",
+        "sourceNumber": 362
+      },
+      {
+        "id": "asoc-363",
+        "number": 363,
+        "rangeId": "grile-361-370",
+        "correct": [
+          "B",
+          "E"
+        ],
+        "topicId": "sistemul-digestiv-organele-anexe",
+        "sourceChapter": "XIII",
+        "sourceNumber": 363
+      },
+      {
+        "id": "asoc-364",
+        "number": 364,
+        "rangeId": "grile-361-370",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-reproducator-masculin-testiculele",
+        "sourceChapter": "XIII",
+        "sourceNumber": 364
+      },
+      {
+        "id": "asoc-365",
+        "number": 365,
+        "rangeId": "grile-361-370",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ],
+        "topicId": "sistemul-respirator-respiratie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 365
+      },
+      {
+        "id": "asoc-366",
+        "number": 366,
+        "rangeId": "grile-361-370",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sangele-globulele-albe",
+        "sourceChapter": "XIII",
+        "sourceNumber": 366
+      },
+      {
+        "id": "asoc-367",
+        "number": 367,
+        "rangeId": "grile-361-370",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ],
+        "topicId": "sistemul-cardiovascular-ciclul-cardiac",
+        "sourceChapter": "XIII",
+        "sourceNumber": 367
+      },
+      {
+        "id": "asoc-368",
+        "number": 368,
+        "rangeId": "grile-361-370",
+        "correct": [
+          "C"
+        ],
+        "topicId": "sistemul-endocrin-glanda-tiroida",
+        "sourceChapter": "XIII",
+        "sourceNumber": 368
+      },
+      {
+        "id": "asoc-369",
+        "number": 369,
+        "rangeId": "grile-361-370",
+        "correct": [
+          "A",
+          "B",
+          "E"
+        ],
+        "topicId": "sangele-plasma",
+        "sourceChapter": "XIII",
+        "sourceNumber": 369
+      },
+      {
+        "id": "asoc-370",
+        "number": 370,
+        "rangeId": "grile-361-370",
+        "correct": [
+          "C"
+        ],
+        "topicId": "sistemul-renal-complet-nefron",
+        "sourceChapter": "XIII",
+        "sourceNumber": 370
+      },
+      {
+        "id": "asoc-371",
+        "number": 371,
+        "rangeId": "grile-371-380",
+        "correct": [
+          "A",
+          "B"
+        ],
+        "topicId": "sistemul-reproducator-feminin-fiziologie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 371
+      },
+      {
+        "id": "asoc-372",
+        "number": 372,
+        "rangeId": "grile-371-380",
+        "correct": [
+          "D"
+        ],
+        "topicId": "organele-de-simt-urechea-si-auzul",
+        "sourceChapter": "XIII",
+        "sourceNumber": 372
+      },
+      {
+        "id": "asoc-373",
+        "number": 373,
+        "rangeId": "grile-371-380",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ],
+        "topicId": "sistemul-endocrin-hipofiza-glanda-pituitara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 373
+      },
+      {
+        "id": "asoc-374",
+        "number": 374,
+        "rangeId": "grile-371-380",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-limfatic-si-imun-splina",
+        "sourceChapter": "XIII",
+        "sourceNumber": 374
+      },
+      {
+        "id": "asoc-375",
+        "number": 375,
+        "rangeId": "grile-371-380",
+        "correct": [
+          "B",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-reproducator-masculin-ducte",
+        "sourceChapter": "XIII",
+        "sourceNumber": 375
+      },
+      {
+        "id": "asoc-376",
+        "number": 376,
+        "rangeId": "grile-371-380",
+        "correct": [
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-respirator-respiratie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 376
+      },
+      {
+        "id": "asoc-377",
+        "number": 377,
+        "rangeId": "grile-371-380",
+        "correct": [
+          "B",
+          "C"
+        ],
+        "topicId": "sistemul-reproducator-feminin-fiziologie",
+        "sourceChapter": "XIII",
+        "sourceNumber": 377
+      },
+      {
+        "id": "asoc-378",
+        "number": 378,
+        "rangeId": "grile-371-380",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-cardiovascular-ciclul-cardiac",
+        "sourceChapter": "XIII",
+        "sourceNumber": 378
+      },
+      {
+        "id": "asoc-379",
+        "number": 379,
+        "rangeId": "grile-371-380",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ],
+        "topicId": "sistemul-endocrin-glandele-suprarenale",
+        "sourceChapter": "XIII",
+        "sourceNumber": 379
+      },
+      {
+        "id": "asoc-380",
+        "number": 380,
+        "rangeId": "grile-371-380",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-cardiovascular-vasele-sanguine",
+        "sourceChapter": "XIII",
+        "sourceNumber": 380
+      },
+      {
+        "id": "asoc-381",
+        "number": 381,
+        "rangeId": "grile-381-390",
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ],
+        "topicId": "sistemul-reproducator-feminin-organe",
+        "sourceChapter": "XIII",
+        "sourceNumber": 381
+      },
+      {
+        "id": "asoc-382",
+        "number": 382,
+        "rangeId": "grile-381-390",
+        "correct": [
+          "A",
+          "C"
+        ],
+        "topicId": "organele-de-simt-ochiul-si-vederea",
+        "sourceChapter": "XIII",
+        "sourceNumber": 382
+      },
+      {
+        "id": "asoc-383",
+        "number": 383,
+        "rangeId": "grile-381-390",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "introducere-anatomie-fiziologie-termeni",
+        "sourceChapter": "XIII",
+        "sourceNumber": 383
+      },
+      {
+        "id": "asoc-384",
+        "number": 384,
+        "rangeId": "grile-381-390",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ],
+        "topicId": "sistemul-digestiv-organele-anexe",
+        "sourceChapter": "XIII",
+        "sourceNumber": 384
+      },
+      {
+        "id": "asoc-385",
+        "number": 385,
+        "rangeId": "grile-381-390",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ],
+        "topicId": "celula-si-fiziologia-celulara-organite",
+        "sourceChapter": "XIII",
+        "sourceNumber": 385
+      },
+      {
+        "id": "asoc-386",
+        "number": 386,
+        "rangeId": "grile-381-390",
+        "correct": [
+          "B",
+          "D"
+        ],
+        "topicId": "sistemul-cardiovascular-vasele-sanguine",
+        "sourceChapter": "XIII",
+        "sourceNumber": 386
+      },
+      {
+        "id": "asoc-387",
+        "number": 387,
+        "rangeId": "grile-381-390",
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ],
+        "topicId": "metabolism-si-nutritie-lipide-si-proteine",
+        "sourceChapter": "XIII",
+        "sourceNumber": 387
+      },
+      {
+        "id": "asoc-388",
+        "number": 388,
+        "rangeId": "grile-381-390",
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-digestiv-organele-anexe",
+        "sourceChapter": "XIII",
+        "sourceNumber": 388
+      },
+      {
+        "id": "asoc-389",
+        "number": 389,
+        "rangeId": "grile-381-390",
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-digestiv-organele-anexe",
+        "sourceChapter": "XIII",
+        "sourceNumber": 389
+      },
+      {
+        "id": "asoc-390",
+        "number": 390,
+        "rangeId": "grile-381-390",
+        "correct": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-endocrin-hipofiza-glanda-pituitara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 390
+      },
+      {
+        "id": "asoc-391",
+        "number": 391,
+        "rangeId": "grile-391-400",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ],
+        "topicId": "oasele-si-articulatiile-osul",
+        "sourceChapter": "XIII",
+        "sourceNumber": 391
+      },
+      {
+        "id": "asoc-392",
+        "number": 392,
+        "rangeId": "grile-391-400",
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-nervos-sistem-nervos-central",
+        "sourceChapter": "XIII",
+        "sourceNumber": 392
+      },
+      {
+        "id": "asoc-393",
+        "number": 393,
+        "rangeId": "grile-391-400",
+        "correct": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ],
+        "topicId": "sistemul-nervos-sistem-nervos-central",
+        "sourceChapter": "XIII",
+        "sourceNumber": 393
+      },
+      {
+        "id": "asoc-394",
+        "number": 394,
+        "rangeId": "grile-391-400",
+        "correct": [
+          "A"
+        ],
+        "topicId": "sistemul-nervos-sistem-nervos-central",
+        "sourceChapter": "XIII",
+        "sourceNumber": 394
+      },
+      {
+        "id": "asoc-395",
+        "number": 395,
+        "rangeId": "grile-391-400",
+        "correct": [
+          "A",
+          "C"
+        ],
+        "topicId": "sistemul-reproducator-masculin-ducte",
+        "sourceChapter": "XIII",
+        "sourceNumber": 395
+      },
+      {
+        "id": "asoc-396",
+        "number": 396,
+        "rangeId": "grile-391-400",
+        "correct": [
+          "A",
+          "E"
+        ],
+        "topicId": "sistemul-endocrin-hipofiza-glanda-pituitara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 396
+      },
+      {
+        "id": "asoc-397",
+        "number": 397,
+        "rangeId": "grile-391-400",
+        "correct": [
+          "A",
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-endocrin-hipofiza-glanda-pituitara",
+        "sourceChapter": "XIII",
+        "sourceNumber": 397
+      },
+      {
+        "id": "asoc-398",
+        "number": 398,
+        "rangeId": "grile-391-400",
+        "correct": [
+          "B",
+          "E"
+        ],
+        "topicId": "sistemul-renal-complet-nefron",
+        "sourceChapter": "XIII",
+        "sourceNumber": 398
+      },
+      {
+        "id": "asoc-399",
+        "number": 399,
+        "rangeId": "grile-391-400",
+        "correct": [
+          "B",
+          "C",
+          "E"
+        ],
+        "topicId": "sistemul-digestiv-organele-anexe",
+        "sourceChapter": "XIII",
+        "sourceNumber": 399
+      },
+      {
+        "id": "asoc-400",
+        "number": 400,
+        "rangeId": "grile-391-400",
+        "correct": [
+          "C",
+          "D"
+        ],
+        "topicId": "sistemul-nervos-sistem-nervos-central",
+        "sourceChapter": "XIII",
+        "sourceNumber": 400
+      }
+    ],
+    "ranges": [
+      {
+        "id": "grile-1-10",
+        "start": 1,
+        "end": 10
+      },
+      {
+        "id": "grile-11-20",
+        "start": 11,
+        "end": 20
+      },
+      {
+        "id": "grile-21-30",
+        "start": 21,
+        "end": 30
+      },
+      {
+        "id": "grile-31-40",
+        "start": 31,
+        "end": 40
+      },
+      {
+        "id": "grile-41-50",
+        "start": 41,
+        "end": 50
+      },
+      {
+        "id": "grile-51-60",
+        "start": 51,
+        "end": 60
+      },
+      {
+        "id": "grile-61-70",
+        "start": 61,
+        "end": 70
+      },
+      {
+        "id": "grile-71-80",
+        "start": 71,
+        "end": 80
+      },
+      {
+        "id": "grile-81-90",
+        "start": 81,
+        "end": 90
+      },
+      {
+        "id": "grile-91-100",
+        "start": 91,
+        "end": 100
+      },
+      {
+        "id": "grile-101-110",
+        "start": 101,
+        "end": 110
+      },
+      {
+        "id": "grile-111-120",
+        "start": 111,
+        "end": 120
+      },
+      {
+        "id": "grile-121-130",
+        "start": 121,
+        "end": 130
+      },
+      {
+        "id": "grile-131-140",
+        "start": 131,
+        "end": 140
+      },
+      {
+        "id": "grile-141-150",
+        "start": 141,
+        "end": 150
+      },
+      {
+        "id": "grile-151-160",
+        "start": 151,
+        "end": 160
+      },
+      {
+        "id": "grile-161-170",
+        "start": 161,
+        "end": 170
+      },
+      {
+        "id": "grile-171-180",
+        "start": 171,
+        "end": 180
+      },
+      {
+        "id": "grile-181-190",
+        "start": 181,
+        "end": 190
+      },
+      {
+        "id": "grile-191-200",
+        "start": 191,
+        "end": 200
+      },
+      {
+        "id": "grile-201-210",
+        "start": 201,
+        "end": 210
+      },
+      {
+        "id": "grile-211-220",
+        "start": 211,
+        "end": 220
+      },
+      {
+        "id": "grile-221-230",
+        "start": 221,
+        "end": 230
+      },
+      {
+        "id": "grile-231-240",
+        "start": 231,
+        "end": 240
+      },
+      {
+        "id": "grile-241-250",
+        "start": 241,
+        "end": 250
+      },
+      {
+        "id": "grile-251-260",
+        "start": 251,
+        "end": 260
+      },
+      {
+        "id": "grile-261-270",
+        "start": 261,
+        "end": 270
+      },
+      {
+        "id": "grile-271-280",
+        "start": 271,
+        "end": 280
+      },
+      {
+        "id": "grile-281-290",
+        "start": 281,
+        "end": 290
+      },
+      {
+        "id": "grile-291-300",
+        "start": 291,
+        "end": 300
+      },
+      {
+        "id": "grile-301-310",
+        "start": 301,
+        "end": 310
+      },
+      {
+        "id": "grile-311-320",
+        "start": 311,
+        "end": 320
+      },
+      {
+        "id": "grile-321-330",
+        "start": 321,
+        "end": 330
+      },
+      {
+        "id": "grile-331-340",
+        "start": 331,
+        "end": 340
+      },
+      {
+        "id": "grile-341-350",
+        "start": 341,
+        "end": 350
+      },
+      {
+        "id": "grile-351-360",
+        "start": 351,
+        "end": 360
+      },
+      {
+        "id": "grile-361-370",
+        "start": 361,
+        "end": 370
+      },
+      {
+        "id": "grile-371-380",
+        "start": 371,
+        "end": 380
+      },
+      {
+        "id": "grile-381-390",
+        "start": 381,
+        "end": 390
+      },
+      {
+        "id": "grile-391-400",
+        "start": 391,
+        "end": 400
+      }
+    ],
+    "topics": [
+      {
+        "id": "introducere-anatomie-fiziologie-topografie",
+        "label": "Topografie și termeni anatomici",
+        "lessonUrl": "introducere_anatomie_fiziologie.html#termeni"
+      },
+      {
+        "id": "introducere-anatomie-fiziologie-cavitati",
+        "label": "Cavitățile corpului",
+        "lessonUrl": "introducere_anatomie_fiziologie.html#cavitati"
+      },
+      {
+        "id": "sistemul-reproducator-masculin-masculin",
+        "label": "Reproducerea masculină și reglarea hormonală",
+        "lessonUrl": "sistemul_reproducator_masculin.html#hormoni"
+      },
+      {
+        "id": "sistemul-reproducator-masculin-spermatozoid",
+        "label": "Structura spermatozoidului",
+        "lessonUrl": "sistemul_reproducator_masculin.html#testiculele"
+      },
+      {
+        "id": "introducere-anatomie-fiziologie-functii",
+        "label": "Funcțiile organismului",
+        "lessonUrl": "introducere_anatomie_fiziologie.html#functii"
+      },
+      {
+        "id": "sistemul-reproducator-feminin-feminin",
+        "label": "Reproducerea feminină și sarcina",
+        "lessonUrl": "sistemul_reproducator_feminin.html#fiziologie"
+      },
+      {
+        "id": "organele-de-simt-ureche",
+        "label": "Urechea și auzul",
+        "lessonUrl": "organele_de_simt.html#urechea-si-auzul"
+      },
+      {
+        "id": "sistemul-digestiv-stomac",
+        "label": "Stomacul",
+        "lessonUrl": "sistemul_digestiv.html#stomacul"
+      },
+      {
+        "id": "sistemul-reproducator-feminin-uter",
+        "label": "Organele reproducătoare feminine",
+        "lessonUrl": "sistemul_reproducator_feminin.html#organe"
+      },
+      {
+        "id": "celula-si-fiziologia-celulara-celula",
+        "label": "Structura celulelor",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#structura"
+      },
+      {
+        "id": "sistemul-endocrin-calciu",
+        "label": "Calciul și reglarea endocrină",
+        "lessonUrl": "sistemul_endocrin.html#glandele-paratiroide"
+      },
+      {
+        "id": "sistemul-digestiv-digestiv",
+        "label": "Tractul gastrointestinal",
+        "lessonUrl": "sistemul_digestiv.html#tractul-gastrointestinal"
+      },
+      {
+        "id": "celula-si-fiziologia-celulara-transport",
+        "label": "Transportul prin membrane",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#transport"
+      },
+      {
+        "id": "sistemul-renal-complet-renal",
+        "label": "Rinichiul și reglarea diurezei",
+        "lessonUrl": "sistemul_renal_complet.html#hormoni"
+      },
+      {
+        "id": "celula-si-fiziologia-celulara-mitocondrii",
+        "label": "Metabolismul energetic celular",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#energie"
+      },
+      {
+        "id": "sistemul-cardiovascular-cardiac",
+        "label": "Reglarea activității cardiace",
+        "lessonUrl": "sistemul_cardiovascular.html#muschiul-cardiac"
+      },
+      {
+        "id": "sistemul-respirator-respirator",
+        "label": "Reglarea respirației și a căilor aeriene",
+        "lessonUrl": "sistemul_respirator.html#respiratie"
+      },
+      {
+        "id": "metabolism-si-nutritie-metabolism",
+        "label": "Metabolismul în stările de nutriție",
+        "lessonUrl": "metabolism_si_nutritie.html#stari-si-minerale"
+      },
+      {
+        "id": "sangele-eritrocite",
+        "label": "Eritrocitele și eritropoieza",
+        "lessonUrl": "sangele.html#globulele-rosii"
+      },
+      {
+        "id": "tesutul-nervos-sinapsa",
+        "label": "Sinapsele și neurotransmițătorii",
+        "lessonUrl": "tesutul_nervos.html#sinapsa"
+      },
+      {
+        "id": "organele-de-simt-simturi",
+        "label": "Receptori și organe de simț",
+        "lessonUrl": "organele_de_simt.html#alte-simturi"
+      },
+      {
+        "id": "tesutul-muscular-muschi",
+        "label": "Țesutul muscular și controlul său",
+        "lessonUrl": "tesutul_muscular.html#tesutul-muscular"
+      },
+      {
+        "id": "sistemul-limfatic-si-imun-limfatic",
+        "label": "Structuri limfatice și imunitate",
+        "lessonUrl": "sistemul_limfatic_si_imun.html#sistemul-limfatic"
+      },
+      {
+        "id": "sistemul-endocrin-endocrin",
+        "label": "Hormonii și mecanismele lor de acțiune",
+        "lessonUrl": "sistemul_endocrin.html#descrierea-generala-a-hormonilor"
+      },
+      {
+        "id": "sistemul-respirator-anatomie",
+        "label": "Alveolele pulmonare",
+        "lessonUrl": "sistemul_respirator.html#anatomie"
+      },
+      {
+        "id": "celula-si-fiziologia-celulara-membrana",
+        "label": "Proteinele membranei",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#membrana"
+      },
+      {
+        "id": "oasele-si-articulatiile-osul",
+        "label": "Calciul și țesutul osos",
+        "lessonUrl": "oasele_si_articulatiile.html#osul"
+      },
+      {
+        "id": "sangele-globulele-rosii",
+        "label": "Proteine care leagă oxigenul",
+        "lessonUrl": "sangele.html#globulele-rosii"
+      },
+      {
+        "id": "celula-si-fiziologia-celulara-nucleu",
+        "label": "Nucleul celular",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#nucleu"
+      },
+      {
+        "id": "sistemul-digestiv-intestinele",
+        "label": "Digestia dizaharidelor",
+        "lessonUrl": "sistemul_digestiv.html#intestinele"
+      },
+      {
+        "id": "sistemul-endocrin-glandele-paratiroide",
+        "label": "Reglarea hormonală a osului",
+        "lessonUrl": "sistemul_endocrin.html#glandele-paratiroide"
+      },
+      {
+        "id": "sistemul-reproducator-feminin-organe",
+        "label": "Funcția endocrină a gonadelor",
+        "lessonUrl": "sistemul_reproducator_feminin.html#organe"
+      },
+      {
+        "id": "introducere-anatomie-fiziologie-termeni",
+        "label": "Raporturi anatomice",
+        "lessonUrl": "introducere_anatomie_fiziologie.html#termeni"
+      },
+      {
+        "id": "sistemul-endocrin-hipofiza-glanda-pituitara",
+        "label": "GnRH și gonadotropinele",
+        "lessonUrl": "sistemul_endocrin.html#hipofiza-glanda-pituitara"
+      },
+      {
+        "id": "organele-de-simt-alte-simturi",
+        "label": "Calea gustativă",
+        "lessonUrl": "organele_de_simt.html#alte-simturi"
+      },
+      {
+        "id": "sistemul-reproducator-masculin-ducte",
+        "label": "Funcțiile organelor genitale",
+        "lessonUrl": "sistemul_reproducator_masculin.html#ducte"
+      },
+      {
+        "id": "celula-si-fiziologia-celulara-organite",
+        "label": "Organitele și funcțiile lor",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#organite"
+      },
+      {
+        "id": "sistemul-respirator-schimbul-de-gaze",
+        "label": "Bicarbonatul",
+        "lessonUrl": "sistemul_respirator.html#schimbul-de-gaze"
+      },
+      {
+        "id": "sistemul-digestiv-organele-anexe",
+        "label": "Proteazele pancreatice",
+        "lessonUrl": "sistemul_digestiv.html#organele-anexe"
+      },
+      {
+        "id": "sistemul-cardiovascular-tipuri-de-circulatie-sanguina",
+        "label": "Asocieri anatomice și endocrine",
+        "lessonUrl": "sistemul_cardiovascular.html#tipuri-de-circulatie-sanguina"
+      },
+      {
+        "id": "sistemul-nervos-sistem-nervos-central",
+        "label": "Diencefalul",
+        "lessonUrl": "sistemul_nervos.html#sistem-nervos-central"
+      },
+      {
+        "id": "metabolism-si-nutritie-rata-si-temperatura",
+        "label": "Metabolismul bazal",
+        "lessonUrl": "metabolism_si_nutritie.html#rata-si-temperatura"
+      },
+      {
+        "id": "sistemul-endocrin-descrierea-generala-a-hormonilor",
+        "label": "Mesageri hormonali",
+        "lessonUrl": "sistemul_endocrin.html#descrierea-generala-a-hormonilor"
+      },
+      {
+        "id": "sistemul-nervos-sistem-nervos-periferic",
+        "label": "Originea nervilor cranieni",
+        "lessonUrl": "sistemul_nervos.html#sistem-nervos-periferic"
+      },
+      {
+        "id": "tesutul-nervos-organizare",
+        "label": "Celule cu activitate fagocitară",
+        "lessonUrl": "tesutul_nervos.html#organizare"
+      },
+      {
+        "id": "tesutul-muscular-tesutul-muscular",
+        "label": "Localizarea mușchiului neted",
+        "lessonUrl": "tesutul_muscular.html#tesutul-muscular"
+      },
+      {
+        "id": "sistemul-nervos-sistem-nervos-autonom",
+        "label": "Sistemul parasimpatic",
+        "lessonUrl": "sistemul_nervos.html#sistem-nervos-autonom"
+      },
+      {
+        "id": "tesutul-muscular-muschiul-striat",
+        "label": "Banda I a sarcomerului",
+        "lessonUrl": "tesutul_muscular.html#muschiul-striat"
+      },
+      {
+        "id": "oasele-si-articulatiile-articulatii",
+        "label": "Mișcări articulare",
+        "lessonUrl": "oasele_si_articulatiile.html#articulatii"
+      },
+      {
+        "id": "metabolism-si-nutritie-lipide-si-proteine",
+        "label": "Ureea și metabolismul azotului",
+        "lessonUrl": "metabolism_si_nutritie.html#lipide-si-proteine"
+      },
+      {
+        "id": "metabolism-si-nutritie-metabolismul-glucidelor",
+        "label": "Roluri enzimatice",
+        "lessonUrl": "metabolism_si_nutritie.html#metabolismul-glucidelor"
+      },
+      {
+        "id": "sistemul-cardiovascular-circulatia-coronariana",
+        "label": "Circulația coronariană",
+        "lessonUrl": "sistemul_cardiovascular.html#circulatia-coronariana"
+      },
+      {
+        "id": "sistemul-renal-complet-nefron",
+        "label": "Transportul tubular renal",
+        "lessonUrl": "sistemul_renal_complet.html#nefron"
+      },
+      {
+        "id": "sangele-globulele-albe",
+        "label": "Morfologia leucocitelor",
+        "lessonUrl": "sangele.html#globulele-albe"
+      },
+      {
+        "id": "sistemul-reproducator-masculin-testiculele",
+        "label": "Scrotul",
+        "lessonUrl": "sistemul_reproducator_masculin.html#testiculele"
+      },
+      {
+        "id": "sistemul-cardiovascular-ciclul-cardiac",
+        "label": "Valvele în ciclul cardiac",
+        "lessonUrl": "sistemul_cardiovascular.html#ciclul-cardiac"
+      },
+      {
+        "id": "sistemul-limfatic-si-imun-sistemul-limfatic",
+        "label": "Capilarele limfatice",
+        "lessonUrl": "sistemul_limfatic_si_imun.html#sistemul-limfatic"
+      },
+      {
+        "id": "sistemul-limfatic-si-imun-splina",
+        "label": "Splina",
+        "lessonUrl": "sistemul_limfatic_si_imun.html#splina"
+      },
+      {
+        "id": "sistemul-renal-complet-hormoni",
+        "label": "Controlul hormonal renal",
+        "lessonUrl": "sistemul_renal_complet.html#hormoni"
+      },
+      {
+        "id": "sistemul-digestiv-stomacul",
+        "label": "Secreția și digestia gastrică",
+        "lessonUrl": "sistemul_digestiv.html#stomacul"
+      },
+      {
+        "id": "sistemul-reproducator-masculin-hormoni",
+        "label": "Hormonii sistemului reproducător masculin",
+        "lessonUrl": "sistemul_reproducator_masculin.html#hormoni"
+      },
+      {
+        "id": "sistemul-reproducator-feminin-fiziologie",
+        "label": "Hormonii sistemului reproducător feminin",
+        "lessonUrl": "sistemul_reproducator_feminin.html#fiziologie"
+      },
+      {
+        "id": "sistemul-endocrin-pancreasul",
+        "label": "Insulina",
+        "lessonUrl": "sistemul_endocrin.html#pancreasul"
+      },
+      {
+        "id": "metabolism-si-nutritie-stari-si-minerale",
+        "label": "Vitaminele",
+        "lessonUrl": "metabolism_si_nutritie.html#stari-si-minerale"
+      },
+      {
+        "id": "organele-de-simt-urechea-si-auzul",
+        "label": "Asocieri senzoriale",
+        "lessonUrl": "organele_de_simt.html#urechea-si-auzul"
+      },
+      {
+        "id": "sistemul-cardiovascular-vasele-sanguine",
+        "label": "Rolurile circulației",
+        "lessonUrl": "sistemul_cardiovascular.html#vasele-sanguine"
+      },
+      {
+        "id": "tesutul-nervos-fiziologia-nervilor",
+        "label": "Potențialul de acțiune",
+        "lessonUrl": "tesutul_nervos.html#fiziologia-nervilor"
+      },
+      {
+        "id": "sangele-coagularea-sangelui",
+        "label": "Circulația și coagularea",
+        "lessonUrl": "sangele.html#coagularea-sangelui"
+      },
+      {
+        "id": "sistemul-endocrin-glandele-suprarenale",
+        "label": "Glandele suprarenale",
+        "lessonUrl": "sistemul_endocrin.html#glandele-suprarenale"
+      },
+      {
+        "id": "sistemul-respirator-respiratie",
+        "label": "Mușchii respiratori",
+        "lessonUrl": "sistemul_respirator.html#respiratie"
+      },
+      {
+        "id": "celula-si-fiziologia-celulara-celula-si-fiziologia-celulara",
+        "label": "Celula și fiziologia celulară",
+        "lessonUrl": "celula_si_fiziologia_celulara.html#organite"
+      },
+      {
+        "id": "oasele-si-articulatiile-oasele-si-articulatiile",
+        "label": "Oasele și articulațiile",
+        "lessonUrl": "oasele_si_articulatiile.html#osul"
+      },
+      {
+        "id": "sistemul-reproducator-masculin-sistemul-reproducator-masculin",
+        "label": "Sistemul reproducător masculin",
+        "lessonUrl": "sistemul_reproducator_masculin.html#hormoni"
+      },
+      {
+        "id": "sistemul-digestiv-sistemul-digestiv",
+        "label": "Sistemul digestiv",
+        "lessonUrl": "sistemul_digestiv.html#intestinele"
+      },
+      {
+        "id": "organele-de-simt-organele-de-simt",
+        "label": "Organele de simț",
+        "lessonUrl": "organele_de_simt.html#alte-simturi"
+      },
+      {
+        "id": "metabolism-si-nutritie-metabolism-si-nutritie",
+        "label": "Metabolism și nutriție",
+        "lessonUrl": "metabolism_si_nutritie.html#stari-si-minerale"
+      },
+      {
+        "id": "sistemul-nervos-sistemul-nervos",
+        "label": "Sistemul nervos",
+        "lessonUrl": "sistemul_nervos.html#sistem-nervos-central"
+      },
+      {
+        "id": "sistemul-endocrin-sistemul-endocrin",
+        "label": "Sistemul endocrin",
+        "lessonUrl": "sistemul_endocrin.html#glandele-suprarenale"
+      },
+      {
+        "id": "sistemul-renal-complet-sistemul-renal-complet",
+        "label": "Sistemul urinar",
+        "lessonUrl": "sistemul_renal_complet.html#nefron"
+      },
+      {
+        "id": "introducere-anatomie-fiziologie-introducere-anatomie-fiziologie",
+        "label": "Organizarea corpului uman",
+        "lessonUrl": "introducere_anatomie_fiziologie.html#organizare"
+      },
+      {
+        "id": "sistemul-respirator-sistemul-respirator",
+        "label": "Sistemul respirator",
+        "lessonUrl": "sistemul_respirator.html#anatomie"
+      },
+      {
+        "id": "sistemul-cardiovascular-sistemul-cardiovascular",
+        "label": "Sistemul cardiovascular",
+        "lessonUrl": "sistemul_cardiovascular.html#circulatia-sangelui-prin-inima"
+      },
+      {
+        "id": "sistemul-limfatic-si-imun-sistemul-limfatic-si-imun",
+        "label": "Sistemul limfatic și imun",
+        "lessonUrl": "sistemul_limfatic_si_imun.html#splina"
+      },
+      {
+        "id": "tesutul-nervos-tesutul-nervos",
+        "label": "Țesutul nervos",
+        "lessonUrl": "tesutul_nervos.html#organizare"
+      },
+      {
+        "id": "sangele-sangele",
+        "label": "Sângele",
+        "lessonUrl": "sangele.html#coagularea-sangelui"
+      },
+      {
+        "id": "sistemul-reproducator-feminin-sistemul-reproducator-feminin",
+        "label": "Sistemul reproducător feminin",
+        "lessonUrl": "sistemul_reproducator_feminin.html#fiziologie"
+      },
+      {
+        "id": "sangele-plasma",
+        "label": "Sângele și plasma",
+        "lessonUrl": "sangele.html#plasma"
+      },
+      {
+        "id": "tesutul-muscular-energia",
+        "label": "Energia contracției musculare",
+        "lessonUrl": "tesutul_muscular.html#energia"
+      },
+      {
+        "id": "organele-de-simt-ochiul-si-vederea",
+        "label": "Ochiul și vederea",
+        "lessonUrl": "organele_de_simt.html#ochiul-si-vederea"
+      },
+      {
+        "id": "sangele-grupele-sanguine",
+        "label": "Grupele sanguine",
+        "lessonUrl": "sangele.html#grupele-sanguine"
+      },
+      {
+        "id": "sistemul-endocrin-glanda-tiroida",
+        "label": "Glanda tiroidă",
+        "lessonUrl": "sistemul_endocrin.html#glanda-tiroida"
+      }
+    ]
   }
 ];

@@ -1,5 +1,7 @@
 # Asociative UMF Cluj 2026 — progres păstrat, publicare amânată
 
+> **Reluare la 9 octombrie 2026:** utilizatorul a cerut integrarea celor 400 de asociative. Explicațiile au fost rescrise exclusiv din TXT-ul furnizat și figurile originale, apoi recenzate independent. Banca integrată și auditul curent sunt documentate în [grile-asociative.md](../../../grile-asociative.md). Arhiva de mai jos păstrează starea istorică din septembrie; explicațiile sale nu sunt sursa băncii curente. Integrarea locală nu confirmă publicarea pe server.
+
 La cererea explicită din 28 septembrie 2026, cele 400 de asociative NU se publică în această versiune. Cele patru drafturi conțin 100 de întrebări și 500 de explicații fiecare (400/2.000 în total); sunt variante de lucru, nu conținut acceptat pentru site.
 
 - **1–100**: autorare completă; copie de recenzie în `reviews/XIII-001-100.json`, `review.status=needs-review`. Recitirea finală a modificărilor și raportul de acceptare rămân deschise.

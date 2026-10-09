@@ -156,7 +156,8 @@ try {
   const sandbox={window:{}};
   vm.runInNewContext(indexSource,sandbox);
   const registry=await loadSiteRegistry(root);
-  const expected=registry.CHAPTERS.filter(c=>c.done).flatMap(c=>(c.resources||[]).filter(r=>r.kind==='quiz').map(r=>({chapter:c,resource:r})));
+  const expected=registry.CHAPTERS.filter(c=>c.done).flatMap(c=>(c.resources||[]).filter(r=>r.kind==='quiz').map(r=>({chapter:c,resource:r})))
+    .concat((registry.BIO_SITE.quizCollections||[]).filter(c=>c.done).map(c=>({chapter:c,resource:c})));
   assert.equal(sandbox.window.BB_QUIZ_INDEX.length,expected.length);
   for (const {chapter,resource} of expected) {
     const entry=sandbox.window.BB_QUIZ_INDEX.find(q=>q.url===resource.url);

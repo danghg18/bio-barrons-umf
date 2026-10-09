@@ -312,7 +312,6 @@
   {
     "chapterNum": 1000,
     "sourceChapter": "XIII",
-    "publicationStatus": "deferred",
     "storageKey": "bb.quiz.asociative.v1",
     "dataFile": "assets/js/grile-asociative-data.js",
     "ranges": [
@@ -324,6 +323,6 @@
     "name": "Întrebări asociative",
     "lessonUrl": "testare.html",
     "url": "grile_asociative.html",
-    "idPrefix": "as-"
+    "idPrefix": "asoc-"
   }
 ]

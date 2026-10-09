@@ -19,8 +19,7 @@ for (const set of sets) {
     partitions.add(identity);
     if (set.publicationStatus !== 'deferred') activePartitions.add(identity);
   }
-  // XIII remains fully mapped to the independent key, but its unfinished
-  // editorial review was explicitly deferred by the user for this release.
+  // Publication status remains explicit for any future editorial hold.
   if (set.publicationStatus === 'deferred') {
     assert.equal(set.sourceChapter, 'XIII', 'Only the associative set is deferred');
     continue;
@@ -55,13 +54,13 @@ for (const set of sets) {
 }
 assert.equal(partitions.size, 1990, 'The approved partitions cover the complete book exactly once');
 for (const identity of activePartitions) if (!coverage.has(identity)) errors.push('Missing question: ' + identity);
-assert.equal(activePartitions.size, 1590);
-assert.equal(sets.filter(s => s.publicationStatus !== 'deferred').length, 17);
-console.log(JSON.stringify({publishedSets:17, deferredSets:1, questions, explanations, errors:errors.length}, null, 2));
+assert.equal(activePartitions.size, 1990);
+assert.equal(sets.filter(s => s.publicationStatus !== 'deferred').length, 18);
+console.log(JSON.stringify({publishedSets:18, deferredSets:0, questions, explanations, errors:errors.length}, null, 2));
 if (errors.length) {
   console.error(errors.slice(0, 25).join('\n') + (errors.length > 25 ? `\n… ${errors.length - 25} more errors` : ''));
   process.exitCode = 1;
 } else {
-  assert.equal(questions, 1590); assert.equal(explanations, 7950);
-  console.log('All 1,590 published questions match the printed key, with 7,950 option explanations. The 400 associative questions remain deferred.');
+  assert.equal(questions, 1990); assert.equal(explanations, 9950);
+  console.log('All 1,990 published questions match the printed key, with 9,950 option explanations, including 400 associative questions.');
 }
