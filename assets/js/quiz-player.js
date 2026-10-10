@@ -24,6 +24,7 @@
   var storageAvailable = true;
   var analyticsAvailable = true;
   var state = loadState();
+  var stateOwner = owner();
   var pendingChecks = new Set();
   var resetGeneration = 0;
   var resetBusy = false;
@@ -55,6 +56,16 @@
     return a.length === b.length && a.every(function (letter, index) {
       return letter === b[index];
     });
+  }
+
+  function answerStateSignature(value) {
+    // Rendering creates empty in-memory answers. Treat them like absent saved
+    // answers, and compare fields in a fixed order across cloud serializations.
+    return JSON.stringify(quiz.questions.map(function (question) {
+      var answer = value.questions[question.id] || {};
+      return [normalizeLetters(answer.selected), !!answer.verified, !!answer.correct,
+        answer.contentRevision || 0, !!answer.requiresReview, answer.priorResults || []];
+    }));
   }
 
   function blankState(preserveHistory) {
@@ -857,9 +868,16 @@
         }
         return;
       }
+      var currentOwner = owner();
+      // Upload acknowledgements and changes to notes/history are invalidations,
+      // not quiz resets. Cancelling here after recordAttempt has committed would
+      // leave history verified while the answer card stays unverified.
+      var latest = loadState();
+      if (currentOwner === stateOwner && answerStateSignature(latest) === answerStateSignature(state)) return;
       resetGeneration += 1;
       memoryAttempts = {};
-      state = loadState();
+      stateOwner = currentOwner;
+      state = latest;
       syncAllQuestionCards();
       syncProgress();
       bootstrapSavedRun();

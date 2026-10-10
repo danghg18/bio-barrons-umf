@@ -50,6 +50,8 @@ A traversal row shows its whole result, even when only some of its activity fall
 
 Quota/denied storage is visibly reported. Normal verification can use the existing session fallback; restart conservatively refuses to clear answers when it cannot guarantee the archived traversal is durable. IndexedDB remains an owner-isolated local projection and works offline; the durable owner vault supplies the synchronization outbox. Guest history remains local until its authorized account import.
 
+Cache invalidations from cloud acknowledgements, hydration and other tabs do not themselves cancel an in-flight verification. The player reloads the current owner's answers and advances its reset generation only when that owner or the displayed answer state changes. Unsaved empty cards and JSON field order are equivalent to the same saved answers. This prevents a committed history attempt from losing its answer-card update during unrelated synchronization, while actual resets and identity changes retain their guards. `node scripts/quiz-sync-verification-test.mjs` (included in `test:accounts`) reproduces that overlap in both site editions, checks reload without duplicate history and confirms a real concurrent reset still cancels the pending answer.
+
 ## Verification and release
 
 `npm run test:analytics` covers taxonomy + data hashes, old-data compatibility, real IndexedDB, run completion/partial archive, recoverable restart, immutable snapshots, rejected writes, counts, diagnostics, topics, filters, pagination, grouping and tooltips. Existing smoke, recovered, cell, sense and account suites now check verified state and shared restart instead of removed retry buttons.
